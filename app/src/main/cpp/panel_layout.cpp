@@ -24,6 +24,7 @@ PanelMetrics panel_metrics(PanelKind kind) {
     case PanelKind::Browser:  return {1536, 1536, 1.20f, 1.20f};
     case PanelKind::Layers:   return {1120, 1280, 0.88f, 0.88f * (1280.0f / 1120.0f)};
     case PanelKind::Settings: return {1280, 2176, 1.10f, 1.10f * (2176.0f / 1280.0f)};
+    case PanelKind::SaveStates: return {1280, 1280, 1.10f, 1.10f};
     case PanelKind::Code:     return {1536,  768, 1.20f, 0.60f};
     case PanelKind::CtrlMap:  return {1408, 1536, 1.20f, 1.20f * (1536.0f / 1408.0f)};
     case PanelKind::Help:     return {1024, 1536, 0.82f, 1.23f};
@@ -115,6 +116,25 @@ PanelLayout make_code_layout() {
             layout.items.push_back({{col * col_w, title_v + row * row_h, (col + 1) * col_w, title_v + (row + 1) * row_h}, row, key, PanelRole::Key});
         }
     }
+    return layout;
+}
+
+PanelLayout make_save_state_layout() {
+    PanelLayout layout;
+    layout.kind = PanelKind::SaveStates;
+    const auto m = panel_metrics(layout.kind);
+    const float title_v = 88.0f / (float)m.tex_h;
+    const float row_h = (1.0f - title_v) / 4.0f;
+    const float col_w = 1.0f / 3.0f;
+    for (int row = 0; row < 2; ++row) {
+        for (int col = 0; col < 3; ++col) {
+            const int id = row * 3 + col;
+            const PanelRole role = row == 0 ? PanelRole::SaveLoadSlot : PanelRole::SaveSaveSlot;
+            layout.items.push_back({{col * col_w, title_v + row * row_h, (col + 1) * col_w, title_v + (row + 1) * row_h}, row, id, role});
+        }
+    }
+    layout.items.push_back({{0.0f, title_v + 2.0f * row_h, 1.0f, title_v + 3.0f * row_h}, 2, 6, PanelRole::SaveAutosaveOption});
+    layout.items.push_back({{0.0f, title_v + 3.0f * row_h, 1.0f, 1.0f}, 3, 7, PanelRole::SaveAutoloadOption});
     return layout;
 }
 

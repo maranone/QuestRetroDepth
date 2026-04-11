@@ -20,6 +20,7 @@
 #include <memory>
 #include <mutex>
 #include <random>
+#include <cstdint>
 #include <string>
 #include <thread>
 #include <vector>
@@ -48,15 +49,24 @@ enum class LayerFilterMode {
     Hybrid  = 3,
 };
 
+struct SaveStateSlotInfo {
+    bool occupied = false;
+    std::string label;
+    std::uint64_t timestamp_epoch_seconds = 0;
+};
+
 class OpenXrShell {
 public:
     OpenXrShell() = default;
     ~OpenXrShell();
 
-    bool start(JavaVM* vm, JNIEnv* env, jobject activity, std::string& status_out);
+    bool start(JavaVM* vm, JNIEnv* env, jobject activity, bool open_menu_on_startup,
+               int autosave_interval_seconds, bool load_last_save_enabled,
+               std::string& status_out);
     void stop(JNIEnv* env);
     std::string status() const;
     void set_frame_provider(FrameProvider provider);
+    void request_open_main_menu();
 
     // Thread-safe: schedule a randomise on the next XR frame
     void randomize();
@@ -94,6 +104,16 @@ public:
     void set_layer_capture_mask_ctrl(LayerCaptureMaskCtrl fn) {
         std::lock_guard<std::mutex> lk(m_mutex);
         m_layer_capture_mask_ctrl = std::move(fn);
+    }
+    using SaveStateCapture = std::function<bool(std::vector<uint8_t>&, std::string&)>;
+    using SaveStateApply = std::function<bool(const void*, std::size_t, std::string&)>;
+    void set_save_state_capture(SaveStateCapture fn) {
+        std::lock_guard<std::mutex> lk(m_mutex);
+        m_save_state_capture = std::move(fn);
+    }
+    void set_save_state_apply(SaveStateApply fn) {
+        std::lock_guard<std::mutex> lk(m_mutex);
+        m_save_state_apply = std::move(fn);
     }
     using VrStateChanged = std::function<void(bool auto_frame_skip)>;
     void set_on_vr_state_changed(VrStateChanged fn) {
@@ -141,6 +161,7 @@ private:
     void rebuild_main_menu_texture();          // call Kotlin → upload GL texture for main menu
     void rebuild_layer_panel_texture();        // call Kotlin → upload GL texture
     void rebuild_settings_panel_texture();     // call Kotlin → upload GL texture
+    void rebuild_save_state_panel_texture();   // call Kotlin → upload GL texture
     void rebuild_code_panel_texture();         // call Kotlin → upload GL texture
     void rebuild_ctrlmap_panel_texture();      // call Kotlin → upload GL texture
     void rebuild_help_panel_texture();         // call Kotlin → upload GL texture
@@ -150,6 +171,14 @@ private:
     void reset_settings();                     // reset to hardcoded defaults
     void apply_layer_filter_mode(LayerFilterMode mode, bool restore_saved_state);
     void sync_layer_capture_mask();
+    void refresh_save_state_slots();
+    bool save_state_to_slot(int slot, std::string& error_out);
+    bool load_state_from_slot(int slot, std::string& error_out);
+    bool save_state_to_path(const std::string& path, std::string& error_out);
+    bool load_state_from_path(const std::string& path, std::string& error_out);
+    bool try_load_latest_state(std::string& loaded_name_out, std::string& error_out, bool& found_any);
+    void persist_save_automation_settings();
+    void maybe_run_autosave();
     void flush_pending_haptics();
     // right=true → right controller, false → left; amplitude 0-1, duration_ms
     void fire_haptic(bool right, float amplitude = 0.4f, int duration_ms = 40);
@@ -206,18 +235,20 @@ private:
     static constexpr int k_panel_layers     = 1;
     static constexpr int k_panel_browser    = 2;
     static constexpr int k_panel_settings   = 3;
-    static constexpr int k_panel_code       = 4;
-    static constexpr int k_panel_ctrlmap    = 5;
+    static constexpr int k_panel_save_state = 4;
+    static constexpr int k_panel_code       = 5;
+    static constexpr int k_panel_ctrlmap    = 6;
     XrPosef m_main_menu_pose       = {{0,0,0,1},{0,0,-1}};
     XrPosef m_panel_pose           = {{0,0,0,1},{0,0,-1}}; // browser (centre)
     XrPosef m_layer_panel_pose     = {{0,0,0,1},{0,0,-1}};
     XrPosef m_settings_panel_pose  = {{0,0,0,1},{0,0,-1}};
+    XrPosef m_save_state_panel_pose = {{0,0,0,1},{0,0,-1}};
     XrPosef m_code_panel_pose      = {{0,0,0,1},{0,0,-1}};
     XrPosef m_ctrlmap_panel_pose   = {{0,0,0,1},{0,0,-1}};
     bool    m_ctrlmap_mode         = false; // true = showing ctrlmap panel only
 
     // Main menu sub-panel tracking: which secondary panel is currently open
-    // 0 = main menu showing, 1 = browser, 2 = layers, 3 = settings, 4 = code, 5 = ctrlmap
+    // 0 = main menu, 1 = browser, 2 = layers, 3 = settings, 4 = save states, 5 = code, 6 = ctrlmap
     int     m_active_sub_panel     = 0;
 
     // Multi-panel laser state (menu mode — right controller)
@@ -232,6 +263,7 @@ private:
     PanelLayout m_main_menu_layout;
     PanelLayout m_layer_panel_layout;
     PanelLayout m_settings_panel_layout;
+    PanelLayout m_save_state_panel_layout;
     PanelLayout m_code_panel_layout;
     PanelLayout m_ctrlmap_panel_layout;
 
@@ -282,6 +314,15 @@ private:
     XrTime  m_last_settings_fire     = 0;
     std::vector<QueuedHapticEvent> m_pending_haptics;
 
+    // ---------- Save-state panel ----------
+    GLuint  m_save_state_panel_tex     = 0;
+    bool    m_save_state_panel_dirty   = true;
+    int     m_save_state_panel_hovered = -1; // 0-7 interactive cell/row
+    std::vector<SaveStateSlotInfo> m_save_state_slots;
+    int     m_autosave_interval_seconds = 0;
+    bool    m_load_last_save_enabled = false;
+    std::uint64_t m_last_autosave_time_ms = 0;
+
     // ---------- Code-input panel (floats above ROM browser) ----------
     GLuint      m_code_panel_tex     = 0;
     bool        m_code_panel_dirty   = true;
@@ -306,6 +347,8 @@ private:
     EmuFreezeCtrl m_emu_freeze_ctrl;
     EmuStepOne    m_emu_step_one;
     LayerCaptureMaskCtrl m_layer_capture_mask_ctrl;
+    SaveStateCapture m_save_state_capture;
+    SaveStateApply   m_save_state_apply;
 
     // Pending changes requested from JNI thread
     std::atomic<bool> m_randomize_pending{false};
@@ -322,6 +365,8 @@ private:
     std::atomic<bool> m_open_menu_on_startup{false};
     // Flag: load game settings for the newly set ROM (set by set_current_rom)
     std::atomic<bool> m_load_game_pending{false};
+    std::atomic<bool> m_autoload_latest_save_pending{false};
+    std::atomic<bool> m_request_open_menu{false};
 
     // Controller-driven input (written by XR thread, consumed by frame provider)
     std::mutex         m_input_mutex;

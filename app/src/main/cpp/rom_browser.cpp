@@ -123,10 +123,15 @@ bool RomBrowser::set_hover_uv(float /*u*/, float v) {
 }
 
 void RomBrowser::scroll(int delta) {
-    int n_visible = (kTexH - kTitleH) / kRowH;
+    int n_visible = visible_rows();
     m_scroll = std::max(0, std::min(m_scroll + delta,
                                     std::max(0, (int)m_entries.size() - n_visible)));
     m_dirty = true;
+}
+
+void RomBrowser::scroll_page(int pages) {
+    if (pages == 0) return;
+    scroll(pages * visible_rows());
 }
 
 const std::string& RomBrowser::hovered_path() const {

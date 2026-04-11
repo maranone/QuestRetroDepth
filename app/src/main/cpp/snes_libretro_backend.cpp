@@ -276,6 +276,47 @@ const FrameOutput& SnesLibretroBackend::frame_output() const {
     return m_frame;
 }
 
+bool SnesLibretroBackend::save_state(std::vector<uint8_t>& out, std::string& error_out) {
+    if (!m_game_loaded) {
+        error_out = "Snes9x: no ROM loaded.";
+        return false;
+    }
+
+    const std::size_t size = retro_serialize_size();
+    if (size == 0) {
+        error_out = "Snes9x: core reported zero savestate size.";
+        return false;
+    }
+
+    out.assign(size, 0);
+    if (!retro_serialize(out.data(), out.size())) {
+        out.clear();
+        error_out = "Snes9x: retro_serialize failed.";
+        return false;
+    }
+
+    error_out.clear();
+    return true;
+}
+
+bool SnesLibretroBackend::load_state(const void* data, std::size_t size, std::string& error_out) {
+    if (!m_game_loaded) {
+        error_out = "Snes9x: no ROM loaded.";
+        return false;
+    }
+    if (!data || size == 0) {
+        error_out = "Snes9x: savestate data is empty.";
+        return false;
+    }
+    if (!retro_unserialize(data, size)) {
+        error_out = "Snes9x: retro_unserialize failed.";
+        return false;
+    }
+
+    error_out.clear();
+    return true;
+}
+
 bool SnesLibretroBackend::handle_environment(unsigned cmd, void* data) {
     switch (cmd) {
     case RETRO_ENVIRONMENT_GET_LOG_INTERFACE: {

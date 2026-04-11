@@ -119,9 +119,17 @@ class QuestVrActivity : Activity() {
         }
         if (!vrStarted) {
             vrStarted = true
-            statusView.text = nativeStartVr(this)
-            if (ENABLE_STARTUP_AUTO_LOAD) {
-                autoLoadFirstRom()
+            val startupPrefs = readSaveAutomationPrefs()
+            val startupCandidate = if (startupPrefs.loadLastSaveEnabled) findStartupRomCandidate() else null
+            val openMenuOnStartup = !startupPrefs.loadLastSaveEnabled || startupCandidate == null
+            statusView.text = nativeStartVr(
+                this,
+                openMenuOnStartup,
+                startupPrefs.autosaveIntervalSeconds,
+                startupPrefs.loadLastSaveEnabled
+            )
+            if (startupPrefs.loadLastSaveEnabled && startupCandidate != null) {
+                autoLoadStartupRom(startupCandidate)
             }
         }
         handler.post(statusPoll)
@@ -160,11 +168,10 @@ class QuestVrActivity : Activity() {
         if (requestCode == 1001) onResume()
     }
 
-    private fun autoLoadFirstRom() {
+    private fun findStartupRomCandidate(): File? {
         val lastRomPath = prefs.getString("last_rom_path", null)
-
         val romDir = File(getRomDirectory())
-        Log.i("QuestRetroDepthXR", "autoLoadFirstRom: dir=${romDir.absolutePath} exists=${romDir.exists()}")
+        Log.i("QuestRetroDepthXR", "findStartupRomCandidate: dir=${romDir.absolutePath} exists=${romDir.exists()}")
 
         // Collect all ROM/archive files from romDir and one level of subdirectories.
         val allFiles = mutableListOf<File>()
@@ -176,34 +183,65 @@ class QuestVrActivity : Activity() {
                     ?.let { allFiles += it }
             }
         }
-        Log.i("QuestRetroDepthXR", "autoLoadFirstRom: found ${allFiles.size} ROM(s)")
+        Log.i("QuestRetroDepthXR", "findStartupRomCandidate: found ${allFiles.size} ROM(s)")
 
         // Prefer the last successfully played ROM (stored as filename only); fall back to first alphabetically.
-        val candidate = if (lastRomPath != null) {
+        return if (lastRomPath != null) {
             val lastName = lastRomPath.substringAfterLast('/')
             allFiles.firstOrNull { it.name == lastName }
                 ?: allFiles.minByOrNull { it.name.lowercase(Locale.US) }
         } else {
             allFiles.minByOrNull { it.name.lowercase(Locale.US) }
         }
+    }
 
-        Log.i("QuestRetroDepthXR", "autoLoadFirstRom: chosen=${candidate?.name ?: "none"} (last=$lastRomPath)")
-        if (candidate == null) return
+    private fun autoLoadStartupRom(candidate: File) {
+        Log.i("QuestRetroDepthXR", "autoLoadStartupRom: chosen=${candidate.name}")
 
         val romFile = runCatching { prepareRomFile(candidate) }.getOrElse {
-            Log.e("QuestRetroDepthXR", "autoLoadFirstRom: extraction failed", it)
+            Log.e("QuestRetroDepthXR", "autoLoadStartupRom: extraction failed", it)
             statusView.text = "ROM extract failed: ${it.message}"
+            nativeOpenMainMenu()
             return
         }
 
-        Log.i("QuestRetroDepthXR", "autoLoadFirstRom: loading ${romFile.absolutePath}")
-        val result = nativeLoadRom(romFile.absolutePath)
-        Log.i("QuestRetroDepthXR", "autoLoadFirstRom: result=$result")
+        Log.i("QuestRetroDepthXR", "autoLoadStartupRom: loading ${romFile.absolutePath}")
+        val result = nativeLoadRom(romFile.absolutePath, candidate.name)
+        Log.i("QuestRetroDepthXR", "autoLoadStartupRom: result=$result")
         statusView.text = result
         if (!result.startsWith("ROM load failed")) {
             lastSavedRomFilename = candidate.name
             prefs.edit().putString("last_rom_path", candidate.name).apply()
+        } else {
+            nativeOpenMainMenu()
         }
+    }
+
+    private fun readSaveAutomationPrefs(): SaveAutomationPrefs {
+        val file = File(getSettingsDirectory(), SAVE_AUTOMATION_FILE_NAME)
+        if (!file.isFile) return SaveAutomationPrefs()
+
+        var autosaveIntervalSeconds = 0
+        var loadLastSaveEnabled = false
+        runCatching {
+            file.forEachLine { raw ->
+                val line = raw.trim()
+                if (line.isEmpty() || line.startsWith("#")) return@forEachLine
+                val sep = line.indexOf('=')
+                if (sep <= 0) return@forEachLine
+                val key = line.substring(0, sep).trim()
+                val value = line.substring(sep + 1).trim()
+                when (key) {
+                    "autosave_interval_seconds" -> {
+                        autosaveIntervalSeconds = value.toIntOrNull()
+                            ?.takeIf { it in VALID_AUTOSAVE_INTERVALS }
+                            ?: autosaveIntervalSeconds
+                    }
+                    "load_last_save" -> loadLastSaveEnabled = value == "1"
+                }
+            }
+        }
+        return SaveAutomationPrefs(autosaveIntervalSeconds, loadLastSaveEnabled)
     }
 
     /** If the file is a raw ROM, return it as-is. If it's an archive, extract the ROM inside. */
@@ -316,16 +354,22 @@ class QuestVrActivity : Activity() {
         super.onDestroy()
     }
 
-    private external fun nativeStartVr(activity: Activity): String
+    private external fun nativeStartVr(
+        activity: Activity,
+        openMenuOnStartup: Boolean,
+        autosaveIntervalSeconds: Int,
+        loadLastSaveEnabled: Boolean
+    ): String
     private external fun nativeGetVrStatus(): String
     private external fun nativeStopVr()
     private external fun nativeRandomize()
     private external fun nativeLoadPreset(idx: Int)
     private external fun nativeSavePreset(idx: Int)
     private external fun nativeGetVrStateSummary(): String
-    private external fun nativeLoadRom(path: String): String
+    private external fun nativeLoadRom(path: String, sourceName: String): String
     private external fun nativeGetLastLoadedRomFilename(): String
     private external fun nativeApplyStateCode(code: String): Boolean
+    private external fun nativeOpenMainMenu()
 
     // -----------------------------------------------------------------------
     // Called from C++ GL thread to render the ROM browser panel texture.
@@ -640,6 +684,7 @@ class QuestVrActivity : Activity() {
             paint.textSize = rowH * 0.44f
 
             val isAction = (value == "ACTION")
+            val isDisabledAction = (value == "DISABLED")
 
             // Draw separator before action buttons (row 12)
             if (i == 12) {
@@ -666,6 +711,15 @@ class QuestVrActivity : Activity() {
                 paint.color = android.graphics.Color.WHITE
                 paint.textSize = rowH * 0.46f
                 canvas.drawText(if (i < names.size) names[i] else "", 18f, y + rowH * 0.68f, paint)
+            } else if (isDisabledAction) {
+                paint.color = android.graphics.Color.argb(95, 58, 60, 68)
+                canvas.drawRoundRect(6f, y + rowH * 0.12f, width - 6f, y + rowH * 0.88f, 8f, 8f, paint)
+                paint.color = android.graphics.Color.argb(175, 168, 174, 188)
+                paint.textSize = rowH * 0.42f
+                canvas.drawText(if (i < names.size) names[i] else "", 18f, y + rowH * 0.56f, paint)
+                paint.color = android.graphics.Color.argb(145, 138, 146, 160)
+                paint.textSize = rowH * 0.22f
+                canvas.drawText("LOAD A ROM FIRST", 18f, y + rowH * 0.82f, paint)
             } else if (isBool) {
                 // Name on left
                 paint.color = android.graphics.Color.argb(215, 190, 200, 220)
@@ -708,6 +762,159 @@ class QuestVrActivity : Activity() {
                 paint.textSize = rowH * 0.54f
                 canvas.drawText("+", width - btnW + btnW * 0.22f, y + rowH * 0.70f, paint)
             }
+        }
+
+        val pixels = IntArray(width * height)
+        bmp.getPixels(pixels, 0, width, 0, 0, width, height)
+        bmp.recycle()
+        return pixels
+    }
+
+    fun renderSaveStatePanelBitmap(
+        romName: String,
+        loadLabels: Array<String>,
+        loadEnabled: BooleanArray,
+        saveLabels: Array<String>,
+        autosaveLabel: String,
+        autoloadLabel: String,
+        hoveredCell: Int,
+        width: Int,
+        height: Int
+    ): IntArray {
+        val bmp = android.graphics.Bitmap.createBitmap(width, height, android.graphics.Bitmap.Config.ARGB_8888)
+        val canvas = android.graphics.Canvas(bmp)
+        val paint = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG)
+
+        paint.color = android.graphics.Color.argb(238, 10, 12, 22)
+        canvas.drawRect(0f, 0f, width.toFloat(), height.toFloat(), paint)
+
+        val titleH = 88f
+        paint.color = android.graphics.Color.argb(255, 28, 62, 92)
+        canvas.drawRect(0f, 0f, width.toFloat(), titleH, paint)
+        paint.color = android.graphics.Color.WHITE
+        paint.textSize = 46f
+        paint.isFakeBoldText = true
+        canvas.drawText("Save States", 16f, 60f, paint)
+        paint.isFakeBoldText = false
+        val hasActiveRom = romName.isNotEmpty()
+        if (hasActiveRom) {
+            paint.textSize = 26f
+            paint.color = android.graphics.Color.argb(210, 120, 210, 255)
+            val tw = paint.measureText(romName)
+            canvas.drawText(romName, width - tw - 12f, 56f, paint)
+        } else {
+            paint.textSize = 24f
+            paint.color = android.graphics.Color.argb(180, 150, 158, 176)
+            val note = "No ROM loaded"
+            val tw = paint.measureText(note)
+            canvas.drawText(note, width - tw - 12f, 56f, paint)
+        }
+
+        val top = titleH + 24f
+        val bottom = height - 24f
+        val totalRows = 4
+        val rowH = (bottom - top) / totalRows.toFloat()
+        val colW = width / 3f
+
+        for (row in 0 until 2) {
+            for (col in 0 until 3) {
+                val idx = row * 3 + col
+                val x0 = col * colW + 12f
+                val x1 = (col + 1) * colW - 12f
+                val y0 = top + row * rowH + 10f
+                val y1 = top + (row + 1) * rowH - 10f
+                val isLoad = row == 0
+                val enabled = if (!hasActiveRom) {
+                    false
+                } else if (isLoad) {
+                    idx < loadEnabled.size && loadEnabled[idx]
+                } else {
+                    true
+                }
+                val label = if (isLoad) {
+                    if (idx < loadLabels.size) loadLabels[idx] else "LOAD ${idx + 1}"
+                } else {
+                    val sidx = idx - 3
+                    if (sidx in saveLabels.indices) saveLabels[sidx] else "SAVE ${sidx + 1}"
+                }
+
+                paint.color = when {
+                    isLoad && enabled -> android.graphics.Color.argb(170, 26, 96, 144)
+                    isLoad -> android.graphics.Color.argb(110, 42, 48, 64)
+                    enabled -> android.graphics.Color.argb(180, 34, 124, 66)
+                    else -> android.graphics.Color.argb(110, 48, 54, 60)
+                }
+                canvas.drawRoundRect(x0, y0, x1, y1, 18f, 18f, paint)
+
+                if (idx == hoveredCell) {
+                    paint.style = android.graphics.Paint.Style.STROKE
+                    paint.strokeWidth = 4f
+                    paint.color = android.graphics.Color.argb(210, 180, 220, 255)
+                    canvas.drawRoundRect(x0 + 2f, y0 + 2f, x1 - 2f, y1 - 2f, 16f, 16f, paint)
+                    paint.style = android.graphics.Paint.Style.FILL
+                    paint.strokeWidth = 0f
+                }
+
+                paint.textAlign = android.graphics.Paint.Align.CENTER
+                paint.color = if (!enabled) {
+                    android.graphics.Color.argb(170, 170, 176, 190)
+                } else {
+                    android.graphics.Color.WHITE
+                }
+                paint.textSize = if (label.length > 14) rowH * 0.18f else rowH * 0.22f
+                canvas.drawText(label, (x0 + x1) * 0.5f, y0 + (y1 - y0) * 0.60f, paint)
+
+                paint.textSize = rowH * 0.14f
+                paint.color = if (isLoad) {
+                    if (enabled) android.graphics.Color.argb(190, 170, 225, 255)
+                    else android.graphics.Color.argb(150, 138, 146, 160)
+                } else if (enabled) {
+                    android.graphics.Color.argb(190, 180, 240, 195)
+                } else {
+                    android.graphics.Color.argb(150, 138, 146, 160)
+                }
+                canvas.drawText(if (isLoad) "LOAD" else "SAVE", (x0 + x1) * 0.5f, y0 + (y1 - y0) * 0.82f, paint)
+                paint.textAlign = android.graphics.Paint.Align.LEFT
+            }
+        }
+
+        val optionLabels = arrayOf(
+            "Autosave Every",
+            "Load Last Save"
+        )
+        val optionValues = arrayOf(autosaveLabel, autoloadLabel)
+        for (row in 0 until 2) {
+            val cellId = 6 + row
+            val x0 = 12f
+            val x1 = width - 12f
+            val y0 = top + (row + 2) * rowH + 10f
+            val y1 = top + (row + 3) * rowH - 10f
+
+            paint.color = android.graphics.Color.argb(170, 42, 54, 88)
+            canvas.drawRoundRect(x0, y0, x1, y1, 18f, 18f, paint)
+
+            if (hoveredCell == cellId) {
+                paint.style = android.graphics.Paint.Style.STROKE
+                paint.strokeWidth = 4f
+                paint.color = android.graphics.Color.argb(210, 180, 220, 255)
+                canvas.drawRoundRect(x0 + 2f, y0 + 2f, x1 - 2f, y1 - 2f, 16f, 16f, paint)
+                paint.style = android.graphics.Paint.Style.FILL
+                paint.strokeWidth = 0f
+            }
+
+            paint.color = android.graphics.Color.argb(215, 196, 208, 228)
+            paint.textSize = rowH * 0.22f
+            canvas.drawText(optionLabels[row], x0 + 24f, y0 + (y1 - y0) * 0.45f, paint)
+
+            paint.textAlign = android.graphics.Paint.Align.RIGHT
+            paint.color = android.graphics.Color.argb(230, 120, 210, 255)
+            paint.textSize = rowH * 0.26f
+            canvas.drawText(optionValues[row], x1 - 24f, y0 + (y1 - y0) * 0.58f, paint)
+
+            paint.textAlign = android.graphics.Paint.Align.LEFT
+            paint.color = android.graphics.Color.argb(165, 170, 196, 220)
+            paint.textSize = rowH * 0.14f
+            canvas.drawText("TRIGGER TO CYCLE", x0 + 24f, y0 + (y1 - y0) * 0.78f, paint)
         }
 
         val pixels = IntArray(width * height)
@@ -1158,9 +1365,15 @@ class QuestVrActivity : Activity() {
     }
 
     companion object {
-        private const val ENABLE_STARTUP_AUTO_LOAD = false
+        private const val SAVE_AUTOMATION_FILE_NAME = "save_automation.ini"
+        private val VALID_AUTOSAVE_INTERVALS = setOf(0, 5, 30, 60, 300)
         init { System.loadLibrary("questretrodepth_native") }
     }
+
+    private data class SaveAutomationPrefs(
+        val autosaveIntervalSeconds: Int = 0,
+        val loadLastSaveEnabled: Boolean = false
+    )
 
     private enum class RomFamily {
         Snes,

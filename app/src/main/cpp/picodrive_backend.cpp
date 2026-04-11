@@ -40,6 +40,7 @@ void picodrive_rd_set_capture_mask(uint32_t mask);
 uint32_t picodrive_rd_get_capture_mask(void);
 int picodrive_rd_get_layer_count(void);
 const uint32_t* picodrive_rd_get_layer_rgba(int layer, unsigned* out_width, unsigned* out_height);
+const uint8_t* picodrive_rd_get_visible_source(unsigned* out_width, unsigned* out_height);
 }
 
 namespace qrd {
@@ -286,6 +287,47 @@ const FrameOutput& PicoDriveBackend::frame_output() const {
     return m_frame;
 }
 
+bool PicoDriveBackend::save_state(std::vector<uint8_t>& out, std::string& error_out) {
+    if (!m_game_loaded) {
+        error_out = "PicoDrive: no ROM loaded.";
+        return false;
+    }
+
+    const std::size_t size = picodrive_retro_serialize_size();
+    if (size == 0) {
+        error_out = "PicoDrive: core reported zero savestate size.";
+        return false;
+    }
+
+    out.assign(size, 0);
+    if (!picodrive_retro_serialize(out.data(), out.size())) {
+        out.clear();
+        error_out = "PicoDrive: retro_serialize failed.";
+        return false;
+    }
+
+    error_out.clear();
+    return true;
+}
+
+bool PicoDriveBackend::load_state(const void* data, std::size_t size, std::string& error_out) {
+    if (!m_game_loaded) {
+        error_out = "PicoDrive: no ROM loaded.";
+        return false;
+    }
+    if (!data || size == 0) {
+        error_out = "PicoDrive: savestate data is empty.";
+        return false;
+    }
+    if (!picodrive_retro_unserialize(data, size)) {
+        error_out = "PicoDrive: retro_unserialize failed.";
+        return false;
+    }
+
+    error_out.clear();
+    return true;
+}
+
 bool PicoDriveBackend::handle_environment(unsigned cmd, void* data) {
     switch (cmd) {
     case RETRO_ENVIRONMENT_GET_LOG_INTERFACE: {
@@ -396,6 +438,14 @@ void PicoDriveBackend::handle_video_frame(const void* data, unsigned width, unsi
     else
         write_rgb565_frame(static_cast<const uint16_t*>(data), width, height, pitch);
 
+    unsigned owner_w = 0;
+    unsigned owner_h = 0;
+    const uint8_t* owner = picodrive_rd_get_visible_source(&owner_w, &owner_h);
+    if (owner && owner_w == width && owner_h == height &&
+        m_frame.visible_source_id.size() == static_cast<std::size_t>(width) * height) {
+        std::memcpy(m_frame.visible_source_id.data(), owner, m_frame.visible_source_id.size());
+    }
+
     update_layer_captures(width, height);
 }
 
@@ -452,7 +502,7 @@ void PicoDriveBackend::ensure_frame_size(unsigned width, unsigned height) {
     const std::size_t npix = static_cast<std::size_t>(safe_width) * safe_height;
     m_frame.rgba8888.assign(npix, 0xFF000000u);
     m_frame.zbuffer.clear();
-    m_frame.visible_source_id.clear();
+    m_frame.visible_source_id.assign(npix, 0xFFu);
     m_frame.layers.resize(kGenesisLayerCount);
     for (auto& layer : m_frame.layers) layer.rgba.clear();
 }

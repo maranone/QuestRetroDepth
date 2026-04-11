@@ -103,6 +103,10 @@ void LayerProcessor::process_into(std::vector<LayerFrame>& result,
             fill_visible_source_final(out, lc, src, frame, w, h);
             break;
         }
+        case ExtractionType::VisibleSourceHybrid: {
+            fill_visible_source_hybrid(out, lc, src, frame, w, h);
+            break;
+        }
         }
     }
 
@@ -170,6 +174,44 @@ LayerFrame LayerProcessor::extract_visible_source_final(
 {
     LayerFrame f;
     fill_visible_source_final(f, lc, src, frame, w, h);
+    finalize_frame(f);
+    return f;
+}
+
+void LayerProcessor::fill_visible_source_hybrid(
+    LayerFrame& f,
+    const LayerConfig& lc, const uint32_t* src, const qrd::FrameOutput* frame, int w, int h)
+{
+    prepare_frame(f, lc, w, h, true);
+
+    const int li = lc.layer_index;
+    const std::size_t npix = static_cast<std::size_t>(w) * h;
+
+    if (frame && li >= 0 && li < (int)frame->layers.size() && !frame->layers[li].rgba.empty()) {
+        const auto& src_rgba = frame->layers[li].rgba;
+        const std::size_t copy_pix = std::min(npix, src_rgba.size());
+        if (copy_pix > 0) {
+            std::memcpy(f.rgba.data(), src_rgba.data(), copy_pix * sizeof(uint32_t));
+        }
+    }
+
+    if (!src || !frame || frame->visible_source_id.size() < npix) {
+        return;
+    }
+
+    const uint8_t wanted = static_cast<uint8_t>(li);
+    for (std::size_t i = 0; i < npix; ++i) {
+        if (frame->visible_source_id[i] != wanted) continue;
+        to_rgba(src[i], &f.rgba[i * 4]);
+        f.rgba[i * 4 + 3] = 255;
+    }
+}
+
+LayerFrame LayerProcessor::extract_visible_source_hybrid(
+    const LayerConfig& lc, const uint32_t* src, const qrd::FrameOutput* frame, int w, int h)
+{
+    LayerFrame f;
+    fill_visible_source_hybrid(f, lc, src, frame, w, h);
     finalize_frame(f);
     return f;
 }

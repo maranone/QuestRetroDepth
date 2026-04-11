@@ -57,6 +57,10 @@ private:
                                    const uint32_t* src,
                                    const qrd::FrameOutput* frame,
                                    int w, int h);
+    void fill_visible_source_hybrid(LayerFrame& f, const LayerConfig& lc,
+                                    const uint32_t* src,
+                                    const qrd::FrameOutput* frame,
+                                    int w, int h);
 
     LayerFrame extract_full_frame    (const LayerConfig& lc, const uint32_t* src, int w, int h);
     LayerFrame extract_region        (const LayerConfig& lc, const uint32_t* src, int w, int h);
@@ -76,6 +80,10 @@ private:
                                             const uint32_t* src,
                                             const qrd::FrameOutput* frame,
                                             int w, int h);
+    LayerFrame extract_visible_source_hybrid(const LayerConfig& lc,
+                                             const uint32_t* src,
+                                             const qrd::FrameOutput* frame,
+                                             int w, int h);
 
     // Convert one source pixel to RGBA bytes
     static void to_rgba(uint32_t src_pixel, uint8_t* out_rgba);

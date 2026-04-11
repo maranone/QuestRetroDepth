@@ -124,12 +124,19 @@ enum
 static uint32_t s_rd_gen_capture_mask = (1u << RD_GEN_BUCKETS) - 1u;
 static uint32_t s_rd_gen_layers[RD_GEN_BUCKETS][320 * 240];
 static unsigned char s_rd_gen_layer_indices[RD_GEN_BUCKETS][320 * 240];
+static unsigned char s_rd_gen_visible_source[320 * 240];
 static unsigned s_rd_gen_width = 320;
 static unsigned s_rd_gen_height = 224;
+static int s_rd_gen_current_bucket = -1;
 
 static inline int rd_capture_enabled(void)
 {
   return s_rd_gen_capture_mask != 0 && !(PicoIn.AHW & PAHW_8BIT);
+}
+
+static inline int rd_owner_enabled(void)
+{
+  return !(PicoIn.AHW & PAHW_8BIT);
 }
 
 static inline uint32_t rd_rgba_from_rgb565(uint16_t pixel)
@@ -146,6 +153,29 @@ static inline void rd_store_pixel(int bucket, int x, int y, unsigned char pal_in
   if ((s_rd_gen_capture_mask & (1u << bucket)) == 0) return;
   if ((unsigned)x >= s_rd_gen_width || (unsigned)y >= s_rd_gen_height) return;
   s_rd_gen_layer_indices[bucket][(unsigned)y * s_rd_gen_width + (unsigned)x] = pal_index;
+}
+
+static inline void rd_set_current_bucket(int bucket)
+{
+  s_rd_gen_current_bucket = bucket;
+}
+
+static inline void rd_write_visible_source(unsigned char *pd, int x)
+{
+  int screen_x;
+  unsigned line;
+
+  if (!rd_owner_enabled()) return;
+  if ((unsigned)s_rd_gen_current_bucket >= RD_GEN_BUCKETS) return;
+
+  line = (unsigned)Pico.est.DrawScanline;
+  if (line >= s_rd_gen_height) return;
+
+  screen_x = (int)(pd - (Pico.est.HighCol + 8)) + x;
+  if ((unsigned)screen_x >= s_rd_gen_width) return;
+
+  s_rd_gen_visible_source[line * s_rd_gen_width + (unsigned)screen_x] =
+    (unsigned char)s_rd_gen_current_bucket;
 }
 
 static inline void rd_capture_packed_tile(int bucket, int dx, int y,
@@ -200,10 +230,14 @@ static inline void rd_begin_frame(struct PicoEState *est)
 {
   int li;
 
-  if (!rd_capture_enabled()) return;
-
   s_rd_gen_width = (est->rendstatus & PDRAW_32_COLS) ? 256 : 320;
   s_rd_gen_height = (est->rendstatus & PDRAW_30_ROWS) ? 240 : 224;
+  s_rd_gen_current_bucket = -1;
+
+  if (rd_owner_enabled())
+    memset(s_rd_gen_visible_source, 0xff, s_rd_gen_width * s_rd_gen_height);
+
+  if (!rd_capture_enabled()) return;
 
   for (li = 0; li < RD_GEN_BUCKETS; li++) {
     if ((s_rd_gen_capture_mask & (1u << li)) == 0) continue;
@@ -226,7 +260,7 @@ static inline void rd_finalize_scanline(struct PicoEState *est, int line, int wi
     for (x = 0; x < width; x++) {
       const unsigned char idx = s_rd_gen_layer_indices[li][base + (unsigned)x];
       s_rd_gen_layers[li][base + (unsigned)x] =
-        (idx || li == RD_GEN_BG) ? rd_rgba_from_rgb565(est->HighPal[idx]) : 0;
+      (idx || li == RD_GEN_BG) ? rd_rgba_from_rgb565(est->HighPal[idx]) : 0;
     }
   }
 }
@@ -252,6 +286,13 @@ const uint32_t *picodrive_rd_get_layer_rgba(int layer, unsigned *out_width, unsi
   if (out_height) *out_height = s_rd_gen_height;
   if (layer < 0 || layer >= RD_GEN_BUCKETS) return NULL;
   return s_rd_gen_layers[layer];
+}
+
+const unsigned char *picodrive_rd_get_visible_source(unsigned *out_width, unsigned *out_height)
+{
+  if (out_width) *out_width = s_rd_gen_width;
+  if (out_height) *out_height = s_rd_gen_height;
+  return s_rd_gen_visible_source;
 }
 
 struct TileStrip
@@ -340,7 +381,10 @@ TileFlipMaker_(pix_func,m)
 
 // draw layer or non-s/h sprite pixels (no operator colors)
 #define pix_just_write(x) \
-  if (likely(t)) pd[x]=pal|t
+  if (likely(t)) { \
+    pd[x]=pal|t; \
+    rd_write_visible_source(pd, x); \
+  }
 
 TileNormMaker(TileNorm, pix_just_write)
 TileFlipMaker(TileFlip, pix_just_write)
@@ -351,6 +395,7 @@ TileFlipMaker(TileFlip, pix_just_write)
 #define pix_nonsh(x) \
   if (likely(t)) { \
     pd[x]=pal|t; \
+    rd_write_visible_source(pd, x); \
     if (unlikely(t==0xe)) pd[x]&=~0x80; /* disable shadow for color 14 (hw bug?) */ \
   }
 
@@ -359,16 +404,28 @@ TileFlipMaker(TileFlipNonSH, pix_nonsh)
 
 // draw sprite pixels, process operator colors
 #define pix_sh(x) \
-  if (likely(t)) \
-    pd[x]=(likely(t<0xe) ? pal|t : pd[x]|((t-1)<<6))
+  if (likely(t)) { \
+    if (likely(t<0xe)) { \
+      pd[x]=pal|t; \
+      rd_write_visible_source(pd, x); \
+    } else { \
+      pd[x]=pd[x]|((t-1)<<6); \
+    } \
+  }
 
 TileNormMaker(TileNormSH, pix_sh)
 TileFlipMaker(TileFlipSH, pix_sh)
 
 // draw sprite pixels, mark but don't process operator colors
 #define pix_sh_markop(x) \
-  if (likely(t)) \
-    pd[x]=(likely(t<0xe) ? pal|t : pd[x]|0x40)
+  if (likely(t)) { \
+    if (likely(t<0xe)) { \
+      pd[x]=pal|t; \
+      rd_write_visible_source(pd, x); \
+    } else { \
+      pd[x]=pd[x]|0x40; \
+    } \
+  }
 
 TileNormMaker(TileNormSH_markop, pix_sh_markop)
 TileFlipMaker(TileFlipSH_markop, pix_sh_markop)
@@ -391,8 +448,11 @@ TileFlipMaker(TileFlipSH_onlyop_lp, pix_sh_onlyop)
 
 // draw high prio sprite pixels (AS)
 #define pix_as(x) \
-  if (likely(t && (m & (1<<(x+8))))) \
-    m &= ~(1<<(x+8)), pd[x] = pal|t
+  if (likely(t && (m & (1<<(x+8))))) { \
+    m &= ~(1<<(x+8)); \
+    pd[x] = pal|t; \
+    rd_write_visible_source(pd, x); \
+  }
 
 TileNormMakerAS(TileNormAS, pix_as)
 TileFlipMakerAS(TileFlipAS, pix_as)
@@ -402,7 +462,12 @@ TileFlipMakerAS(TileFlipAS, pix_as)
 #define pix_sh_as(x) \
   if (likely(t && (m & (1<<(x+8))))) { \
     m &= ~(1<<(x+8)); \
-    pd[x]=(likely(t<0xe) ? pal|t : (pd[x]&~0x40)|((t-1)<<6)); \
+    if (likely(t<0xe)) { \
+      pd[x]=pal|t; \
+      rd_write_visible_source(pd, x); \
+    } else { \
+      pd[x]=(pd[x]&~0x40)|((t-1)<<6); \
+    } \
   }
 
 TileNormMakerAS(TileNormSH_AS, pix_sh_as)
@@ -429,7 +494,10 @@ TileFlipMakerAS(TileFlipAS_onlymark, pix_sh_as_onlymark)
 // NB s/h already resolved by non-forced drawing
 // forced both layer draw (through debug reg)
 #define pix_and(x) \
-  pd[x] &= pal|t
+  do { \
+    pd[x] &= pal|t; \
+    if (t) rd_write_visible_source(pd, x); \
+  } while (0)
 
 TileNormMaker(TileNorm_and, pix_and)
 TileFlipMaker(TileFlip_and, pix_and)
@@ -440,6 +508,7 @@ TileFlipMaker(TileFlip_and, pix_and)
     m &= ~(1<<(x+8)); \
     /* if (!t) pd[x] |= 0x40; as per titan hw notes? */ \
     pd[x] &= pal|t; \
+    if (t) rd_write_visible_source(pd, x); \
   }
 
 TileNormMakerAS(TileNormSH_AS_and, pix_sh_as_and)
@@ -469,17 +538,19 @@ TileFlipMakerAS(TileFlipSH_AS_and, pix_sh_as_and)
       if (pack & mask)							\
         rd_capture_packed_tile(rd_bucket_for_plane_tile(lflags, code),	\
           dx, Pico.est.DrawScanline, pack&mask, pal, !!(code & 0x0800));	\
-      code = hpcode | (dx<<16);						\
+      code = hpcode | (dx<<16) | ((lflags & LF_PLANE) ? 0x80000000u : 0u);	\
       if (code & 0x1000) code ^= ymask<<(26+1); /* Y-flip */		\
       *hc++ = code; *hc++ = pack&mask; /* cache it */			\
     }									\
   } else {								\
     if (cache) lflags |= LF_LPRIO;					\
     if (pack&mask) {							\
-      rd_capture_packed_tile(rd_bucket_for_plane_tile(lflags, code),		\
-        dx, Pico.est.DrawScanline, pack&mask, pal, !!(code & 0x0800));	\
+      int rd_bucket = rd_bucket_for_plane_tile(lflags, code);		\
+      rd_capture_packed_tile(rd_bucket, dx, Pico.est.DrawScanline, pack&mask, pal, !!(code & 0x0800)); \
+      rd_set_current_bucket(rd_bucket);					\
       if (code & 0x0800) TileFlip(pd + dx, pack&mask, pal);		\
       else               TileNorm(pd + dx, pack&mask, pal);		\
+      rd_set_current_bucket(-1);						\
     }									\
   }									\
 }
@@ -852,22 +923,28 @@ static void DrawTilesFromCache(u32 *hc, int sh, int rlim, struct PicoEState *est
   if (!sh)
   {
     while ((code=*hc++)) {
+      int rd_bucket;
       pack = *hc++;
       dx = (code >> 16) & 0x1ff;
       pal = ((code >> 9) & 0x30);
+      rd_bucket = rd_bucket_for_plane_tile((code & 0x80000000u) ? LF_PLANE : 0, code);
 
+      rd_set_current_bucket(rd_bucket);
       if (code & 0x0800) TileFlip(pd + dx, pack, pal);
       else               TileNorm(pd + dx, pack, pal);
+      rd_set_current_bucket(-1);
     }
   }
   else
   {
     while ((code=*hc++)) {
+      int rd_bucket;
       unsigned char *zb;
 
       pack = *hc++;
       dx = (code >> 16) & 0x1ff;
       pal = ((code >> 9) & 0x30);
+      rd_bucket = rd_bucket_for_plane_tile((code & 0x80000000u) ? LF_PLANE : 0, code);
 
       zb = est->HighCol+dx;
       if (likely(~code & (1<<25))) {
@@ -890,8 +967,10 @@ static void DrawTilesFromCache(u32 *hc, int sh, int rlim, struct PicoEState *est
       }
 
       if (pack) {
+        rd_set_current_bucket(rd_bucket);
         if (code & 0x0800) TileFlip(pd + dx, pack, pal);
         else               TileNorm(pd + dx, pack, pal);
+        rd_set_current_bucket(-1);
       }
     }
   }
@@ -949,15 +1028,19 @@ static void DrawSprite(s32 *sprite, int sh, int w)
   if (w) width = w; // tile limit
   for (; width; width--,sx+=8,tile+=delta)
   {
+    int rd_bucket;
     unsigned int pack;
 
     if(sx<=0)   continue;
     if(sx>=328) break; // Offscreen
 
     pack = CPU_LE2(*(u32 *)(PicoMem.vram + (tile & 0x7fff)));
-    rd_capture_packed_tile(rd_bucket_for_sprite_code(code),
+    rd_bucket = rd_bucket_for_sprite_code(code);
+    rd_capture_packed_tile(rd_bucket,
       sx, Pico.est.DrawScanline, pack, pal, !!(code & 0x0800));
+    rd_set_current_bucket(rd_bucket);
     fTileFunc(pd + sx, pack, pal);
+    rd_set_current_bucket(-1);
   }
 }
 #endif
@@ -997,16 +1080,20 @@ static void DrawSpriteInterlace(u32 *sprite)
 
   for (; width; width--,sx+=8,tile+=delta)
   {
+    int rd_bucket;
     unsigned int pack;
 
     if(sx<=0)   continue;
     if(sx>=328) break; // Offscreen
 
     pack = CPU_LE2(*(u32 *)(PicoMem.vram + (tile & 0x7fff)));
-    rd_capture_packed_tile(rd_bucket_for_sprite_code(code),
+    rd_bucket = rd_bucket_for_sprite_code(code);
+    rd_capture_packed_tile(rd_bucket,
       sx, Pico.est.DrawScanline, pack, pal, !!(code & 0x0800));
+    rd_set_current_bucket(rd_bucket);
     if (code & 0x0800) TileFlip(pd + sx, pack, pal);
     else               TileNorm(pd + sx, pack, pal);
+    rd_set_current_bucket(-1);
   }
 }
 
@@ -1122,15 +1209,19 @@ static void DrawSpritesSHi(unsigned char *sprited, const struct PicoEState *est)
     if (w) width = w; // tile limit
     for (; width; width--,sx+=8,tile+=delta)
     {
+      int rd_bucket;
       unsigned int pack;
 
       if(sx<=0)   continue;
       if(sx>=328) break; // Offscreen
 
       pack = CPU_LE2(*(u32 *)(PicoMem.vram + (tile & 0x7fff)));
-      rd_capture_packed_tile(rd_bucket_for_sprite_code(code),
+      rd_bucket = rd_bucket_for_sprite_code(code);
+      rd_capture_packed_tile(rd_bucket,
         sx, est->DrawScanline, pack, pal, !!(code & 0x0800));
+      rd_set_current_bucket(rd_bucket);
       fTileFunc(pd + sx, pack, pal);
+      rd_set_current_bucket(-1);
     }
   }
 }
@@ -1194,17 +1285,21 @@ static void DrawSpritesHiAS(unsigned char *sprited, int sh)
     mp = mb+(sx>>3);
     for (m = *mp; width; width--, sx+=8, tile+=delta, *mp++ = m, m >>= 8)
     {
+      int rd_bucket;
       unsigned int pack;
 
       if(sx>=328) break; // Offscreen
 
       pack = CPU_LE2(*(u32 *)(PicoMem.vram + (tile & 0x7fff)));
-      rd_capture_packed_tile(rd_bucket_for_sprite_code(code),
+      rd_bucket = rd_bucket_for_sprite_code(code);
+      rd_capture_packed_tile(rd_bucket,
         sx, Pico.est.DrawScanline, pack, pal, !!(code & 0x0800));
 
       m |= mp[1] << 8; // next mask byte
       // shift mask bits to bits 8-15 for easier load/store handling
+      rd_set_current_bucket(rd_bucket);
       m = fTileFunc(m << (8-(sx&0x7)), pd + sx, pack, pal) >> (8-(sx&0x7));
+      rd_set_current_bucket(-1);
     } 
     *mp = m; // write last mask byte
   }
@@ -1519,6 +1614,13 @@ void BackFill(int bgc, int sh, struct PicoEState *est)
   back|=back<<16;
 
   memset32((int *)(est->HighCol+8), back, 320/4);
+
+  if (rd_owner_enabled() && (unsigned)est->DrawScanline < s_rd_gen_height) {
+    unsigned char *dst = s_rd_gen_visible_source + (unsigned)est->DrawScanline * s_rd_gen_width;
+    int x;
+    for (x = 0; x < width && (unsigned)x < s_rd_gen_width; x++)
+      dst[x] = RD_GEN_BG;
+  }
 
   if (rd_capture_enabled() && (s_rd_gen_capture_mask & (1u << RD_GEN_BG)) != 0 &&
       (unsigned)est->DrawScanline < s_rd_gen_height) {
@@ -2024,10 +2126,21 @@ static void PicoLine(int line, int offs, int sh, int bgc, int off, int on)
     DrawDisplay(sh);
     // partial line blanking (display on or off inside the line)
     if (unlikely(off|on)) {
-      if (off > 0)
+      if (off > 0) {
+        unsigned blank_start = (unsigned)((off < 0) ? 0 : off);
+        unsigned blank_count = (blank_start < s_rd_gen_width) ? (s_rd_gen_width - blank_start) : 0;
         memset(est->HighCol+8 + off, bgc, width-off);
-      if (on > 0)
+        if (rd_owner_enabled() && (unsigned)line < s_rd_gen_height && blank_count > 0)
+          memset(s_rd_gen_visible_source + (unsigned)line * s_rd_gen_width + blank_start,
+            RD_GEN_BG, blank_count);
+      }
+      if (on > 0) {
+        unsigned blank_count = ((unsigned)on < s_rd_gen_width) ? (unsigned)on : s_rd_gen_width;
         memset(est->HighCol+8, bgc, on);
+        if (rd_owner_enabled() && (unsigned)line < s_rd_gen_height && blank_count > 0)
+          memset(s_rd_gen_visible_source + (unsigned)line * s_rd_gen_width,
+            RD_GEN_BG, blank_count);
+      }
     }
   }
 

@@ -19,6 +19,8 @@ public:
     bool load_content(const std::string& rom_path, std::string& error_out) override;
     bool step_frame(const EmulatorInputState& input, std::string& error_out) override;
     const FrameOutput& frame_output() const override;
+    bool save_state(std::vector<uint8_t>& out, std::string& error_out) override;
+    bool load_state(const void* data, std::size_t size, std::string& error_out) override;
 
     bool handle_environment(unsigned cmd, void* data);
     void handle_video_frame(const void* data, unsigned width, unsigned height, std::size_t pitch);

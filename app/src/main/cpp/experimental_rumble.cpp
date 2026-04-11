@@ -24,6 +24,16 @@ namespace {
 constexpr float k_runtime_amplitude_scale = 2.0f;
 constexpr int k_runtime_duration_scale = 2;
 
+std::size_t alias_match_score(const std::string& alias, const std::string& normalized_name) {
+    if (alias.empty() || normalized_name.empty()) return 0;
+    if (normalized_name == alias) return alias.size();
+    if (normalized_name.size() > alias.size() &&
+        normalized_name.compare(0, alias.size(), alias) == 0) {
+        return alias.size();
+    }
+    return 0;
+}
+
 std::vector<std::string> split(const std::string& text, char delim) {
     std::vector<std::string> out;
     std::stringstream ss(text);
@@ -515,6 +525,8 @@ bool ExperimentalRumbleManager::find_matching_user_profile(BackendKind backend_k
 
     bool saw_broken_match = false;
     std::string broken_error;
+    std::size_t best_match_score = 0;
+    Profile best_profile;
     dirent* entry = nullptr;
     while ((entry = readdir(dir)) != nullptr) {
         std::string name = entry->d_name;
@@ -532,22 +544,22 @@ bool ExperimentalRumbleManager::find_matching_user_profile(BackendKind backend_k
             }
             continue;
         }
-        bool matches = false;
+        std::size_t candidate_score = 0;
         for (const std::string& alias : candidate.aliases) {
-            if ((!normalized_header.empty() && alias == normalized_header) ||
-                (!normalized_rom.empty() && alias == normalized_rom)) {
-                matches = true;
-                break;
-            }
+            candidate_score = std::max(candidate_score, alias_match_score(alias, normalized_header));
+            candidate_score = std::max(candidate_score, alias_match_score(alias, normalized_rom));
         }
-        if (!matches) continue;
-        closedir(dir);
-        profile_out = std::move(candidate);
-        RLOGI("user csv matched: %s aliases=%zu triggers=%zu",
-              path.c_str(), profile_out.aliases.size(), profile_out.triggers.size());
-        return true;
+        if (candidate_score == 0 || candidate_score < best_match_score) continue;
+        best_match_score = candidate_score;
+        best_profile = std::move(candidate);
     }
     closedir(dir);
+    if (best_match_score > 0) {
+        profile_out = std::move(best_profile);
+        RLOGI("user csv matched: aliases=%zu triggers=%zu score=%zu",
+              profile_out.aliases.size(), profile_out.triggers.size(), best_match_score);
+        return true;
+    }
     if (saw_broken_match) error_out = broken_error;
     return false;
 }
@@ -604,21 +616,26 @@ void ExperimentalRumbleManager::on_rom_loaded(AAssetManager* asset_manager,
     }
 
     const CatalogEntry* matched = nullptr;
+    std::size_t best_match_score = 0;
     for (const auto& entry : m_catalog) {
         if (entry.backend_kind != backend_kind) continue;
-        if (!normalized_header.empty() &&
-            std::find(entry.aliases.begin(), entry.aliases.end(), normalized_header) != entry.aliases.end()) {
-            matched = &entry;
-            break;
+        for (const std::string& alias : entry.aliases) {
+            const std::size_t score = alias_match_score(alias, normalized_header);
+            if (score > best_match_score) {
+                matched = &entry;
+                best_match_score = score;
+            }
         }
     }
     if (!matched) {
         for (const auto& entry : m_catalog) {
             if (entry.backend_kind != backend_kind) continue;
-            if (!normalized_rom.empty() &&
-                std::find(entry.aliases.begin(), entry.aliases.end(), normalized_rom) != entry.aliases.end()) {
-                matched = &entry;
-                break;
+            for (const std::string& alias : entry.aliases) {
+                const std::size_t score = alias_match_score(alias, normalized_rom);
+                if (score > best_match_score) {
+                    matched = &entry;
+                    best_match_score = score;
+                }
             }
         }
     }

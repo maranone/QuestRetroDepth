@@ -21,6 +21,9 @@ enum class ExtractionType {
     // Use final composited frame colour, masked by the main-screen visible source id.
     // layer_index selects which source won the final pixel: 0-3=BG0-BG3, 4=OBJ, 5=backdrop.
     VisibleSourceFinal,
+    // Start with a raw layer capture, then replace the pixels that actually win the
+    // final composite with the final frame colour for that source id.
+    VisibleSourceHybrid,
 };
 
 struct LayerConfig {

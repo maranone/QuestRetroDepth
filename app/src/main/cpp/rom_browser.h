@@ -31,6 +31,7 @@ public:
 
     // Scroll visible window by +/- rows.
     void scroll(int delta);
+    void scroll_page(int pages);
 
     int                 hovered_index()  const { return m_hovered; }
     const std::string&  hovered_path()   const;

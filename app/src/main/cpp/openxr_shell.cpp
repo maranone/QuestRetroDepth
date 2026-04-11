@@ -11,9 +11,12 @@
 #include <cstring>
 #include <string_view>
 #include <algorithm>
+#include <array>
 #include <cctype>
 #include <cmath>
 #include <climits>
+#include <ctime>
+#include <fstream>
 #include <sys/stat.h>
 #include <dirent.h>
 
@@ -27,6 +30,9 @@ namespace {
 
 constexpr float k_min_vr_resolution_scale = 0.25f;
 constexpr float k_max_vr_resolution_scale = 4.0f;
+constexpr int k_save_state_slot_count = 3;
+constexpr const char* k_autosave_file_name = "autosave.state";
+constexpr const char* k_save_automation_file_name = "save_automation.ini";
 
 static float clamp_vr_resolution_scale(float scale) {
     return std::clamp(scale, k_min_vr_resolution_scale, k_max_vr_resolution_scale);
@@ -40,6 +46,62 @@ static float snap_vr_resolution_scale(float scale) {
 static uint32_t scaled_eye_extent(uint32_t recommended, float scale) {
     const float scaled = std::round((float)recommended * snap_vr_resolution_scale(scale));
     return std::max<uint32_t>(1u, (uint32_t)scaled);
+}
+
+static const char* backend_storage_subdir(BackendKind kind) {
+    return kind == BackendKind::Genesis ? "genesis" : "snes";
+}
+
+static std::uint64_t monotonic_time_ms() {
+    using Clock = std::chrono::steady_clock;
+    return (std::uint64_t)std::chrono::duration_cast<std::chrono::milliseconds>(
+        Clock::now().time_since_epoch()).count();
+}
+
+static std::string save_state_default_label(int slot) {
+    char label[16];
+    std::snprintf(label, sizeof(label), "LOAD %d", slot + 1);
+    return label;
+}
+
+static std::string autosave_interval_label(int seconds) {
+    switch (seconds) {
+        case 300: return "5m";
+        case 60: return "1m";
+        case 30: return "30s";
+        case 5: return "5s";
+        default: return "Off";
+    }
+}
+
+static int next_autosave_interval_seconds(int current) {
+    switch (current) {
+        case 0: return 300;
+        case 300: return 60;
+        case 60: return 30;
+        case 30: return 5;
+        default: return 0;
+    }
+}
+
+static std::string compact_settings_target(std::string name, std::size_t max_len = 18) {
+    while (!name.empty() && name.back() == ' ') name.pop_back();
+    if (name.size() <= max_len) return name;
+    if (max_len <= 3) return name.substr(0, max_len);
+    return name.substr(0, max_len - 3) + "...";
+}
+
+static std::string format_save_state_timestamp(std::time_t ts) {
+    if (ts <= 0) return {};
+    std::tm local_tm{};
+#if defined(_WIN32)
+    localtime_s(&local_tm, &ts);
+#else
+    localtime_r(&ts, &local_tm);
+#endif
+    char buf[32];
+    if (std::strftime(buf, sizeof(buf), "%Y%m%d-%H:%M", &local_tm) == 0) return {};
+    return buf;
 }
 
 } // namespace
@@ -400,7 +462,7 @@ static HelpModel build_help_model(bool menu_open,
     }
 
     if (menu_open) {
-        if (ctrlmap_mode || active_sub_panel == 5) {
+        if (ctrlmap_mode || active_sub_panel == 6) {
             model.title = "Mapping controls";
             add_help(model, "Right controller aim", "Point at a button row or action row.");
             add_help(model, "Right trigger", "Select or activate the pointed row.");
@@ -420,13 +482,15 @@ static HelpModel build_help_model(bool menu_open,
             add_help(model, "Open ROM", "Show the ROM browser.");
             add_help(model, "Settings", "Show visual and performance settings.");
             add_help(model, "Mappings", "Show controller mappings.");
+            add_help(model, "Save States", "Open the per-game save-state panel.");
             add_help(model, "Left menu button", "Close the menu and return to the game.");
             break;
         case 1:
             model.title = "ROM browser controls";
             add_help(model, "Right controller aim", "Point at a folder or ROM.");
             add_help(model, "Right trigger", "Open the pointed folder or load the pointed ROM.");
-            add_help(model, "Right stick Y", "Scroll the ROM list.");
+            add_help(model, "Either stick Y", "Scroll the ROM list one row at a time.");
+            add_help(model, "Either stick X", "Jump one page through the ROM list.");
             add_help(model, "Code panel", "Point and trigger alphanumeric keys to enter a share code.");
             add_help(model, "Left menu button", "Return to the main menu.");
             break;
@@ -445,10 +509,19 @@ static HelpModel build_help_model(bool menu_open,
             add_help(model, "Right controller aim", "Point at a setting or action row.");
             add_help(model, "Right trigger", "Toggle bool rows or press the pointed minus/plus/action zone.");
             add_help(model, "Hold right trigger + right stick X", "Continuously adjust numeric rows.");
-            add_help(model, "Reset/Save/Load rows", "Run the named settings action.");
+            add_help(model, "Settings action rows", "Run the named settings save/load/reset action.");
             add_help(model, "Back row or left menu", "Return to the main menu.");
             break;
         case 4:
+            model.title = "Save-state controls";
+            add_help(model, "Right controller aim", "Point at a save slot or automation row.");
+            add_help(model, "Right trigger", "Load the selected top-row slot, save into the selected bottom-row slot, or cycle the pointed automation row.");
+            add_help(model, "Top row", "Shows timestamp labels for occupied slots and disabled LOAD labels for empty slots.");
+            add_help(model, "Bottom row", "Always overwrites SAVE 1, SAVE 2, or SAVE 3 immediately.");
+            add_help(model, "Autosave / Load Last Save rows", "Change global startup and autosave behavior.");
+            add_help(model, "Left menu button", "Return to the main menu.");
+            break;
+        case 5:
             model.title = "Code entry controls";
             add_help(model, "Right controller aim", "Point at a key.");
             add_help(model, "Right trigger", "Type the pointed key.");
@@ -632,7 +705,8 @@ static uint32_t layer_capture_mask_for_config(const GameConfig& config,
     for (int i = 0; i < (int)config.layers.size(); ++i) {
         if (enabled && i < (int)enabled->size() && !(*enabled)[i]) continue;
         const auto& layer = config.layers[i];
-        if (layer.extraction_type != ExtractionType::PerLayerCapture) continue;
+        if (layer.extraction_type != ExtractionType::PerLayerCapture &&
+            layer.extraction_type != ExtractionType::VisibleSourceHybrid) continue;
         if (layer.layer_index < 0 || layer.layer_index >= 32) continue;
         mask |= (1u << layer.layer_index);
     }
@@ -740,7 +814,33 @@ static void ensure_layer_runtime_state_matches_config(const GameConfig& config,
         layer_names.push_back(lc.id.empty() ? "Layer" : lc.id);
 
     std::vector<int> default_order = default_layer_order_for_config(config);
-    if ((int)layer_order.size() != n) {
+    bool needs_order_repair = ((int)layer_order.size() != n);
+    if (!needs_order_repair) {
+        std::vector<bool> seen(n, false);
+        for (int idx : layer_order) {
+            if (idx < 0 || idx >= n || seen[idx]) {
+                needs_order_repair = true;
+                break;
+            }
+            seen[idx] = true;
+        }
+    }
+
+    // Genesis previously persisted the raw config index order (far -> near) in some
+    // paths. The current UI/render contract is display order = near -> far, so
+    // migrate that legacy identity order back to the canonical default order.
+    if (!needs_order_repair && config.game == "genesis" && n > 1) {
+        bool is_identity = true;
+        for (int i = 0; i < n; ++i) {
+            if (layer_order[i] != i) {
+                is_identity = false;
+                break;
+            }
+        }
+        if (is_identity) {
+            layer_order = default_order;
+        }
+    } else if (needs_order_repair) {
         std::vector<int> merged;
         merged.reserve(n);
         std::vector<bool> seen(n, false);
@@ -1111,7 +1211,9 @@ void OpenXrShell::apply_layer_filter_mode(LayerFilterMode mode, bool restore_sav
     m_layer_panel_dirty = true;
 }
 
-bool OpenXrShell::start(JavaVM* vm, JNIEnv* env, jobject activity, std::string& status_out) {
+bool OpenXrShell::start(JavaVM* vm, JNIEnv* env, jobject activity, bool open_menu_on_startup,
+                        int autosave_interval_seconds, bool load_last_save_enabled,
+                        std::string& status_out) {
     stop(env);
     if (!vm || !env || !activity) {
         status_out = "OpenXR start failed: invalid Android context.";
@@ -1133,8 +1235,13 @@ bool OpenXrShell::start(JavaVM* vm, JNIEnv* env, jobject activity, std::string& 
     m_config      = default_config_for_backend(m_current_backend_kind, m_layer_filter_mode);
     m_presets     = make_default_vr_presets();
     m_button_map  = default_button_map_for_backend(m_current_backend_kind);
+    m_autosave_interval_seconds = autosave_interval_seconds;
+    m_load_last_save_enabled = load_last_save_enabled;
+    m_last_autosave_time_ms = monotonic_time_ms();
     m_load_global_pending = true; // load global settings on first XR frame
-    m_open_menu_on_startup = true; // show main menu on startup
+    m_open_menu_on_startup = open_menu_on_startup;
+    m_autoload_latest_save_pending = false;
+    m_request_open_menu = false;
     ensure_layer_runtime_state_matches_config(
         m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     sync_layer_capture_mask();
@@ -1143,6 +1250,10 @@ bool OpenXrShell::start(JavaVM* vm, JNIEnv* env, jobject activity, std::string& 
     m_thread = std::thread([this]() { run(); });
     status_out = status();
     return true;
+}
+
+void OpenXrShell::request_open_main_menu() {
+    m_request_open_menu = true;
 }
 
 void OpenXrShell::stop(JNIEnv* env) {
@@ -2040,12 +2151,24 @@ void OpenXrShell::rebuild_settings_panel_texture() {
         {"VR Res Scale",  false},
         // Action buttons (rows 12-17) — rendered specially in Kotlin
         {"Reset Settings",  false},
-        {"Save Game",       false},
-        {"Save Global",     false},
-        {"Load Game",       false},
-        {"Load Global",     false},
+        {"",       false},
+        {"",       false},
+        {"",       false},
+        {"",       false},
         {"← Back",          false},
     };
+
+    const std::string game_target = compact_settings_target(
+        !m_current_game_name.empty() ? m_current_game_name
+                                     : (!m_current_rom_name.empty() ? m_current_rom_name : "Game"));
+    const std::string backend_target = compact_settings_target(std::string(backend_kind_name(m_current_backend_kind)));
+    const bool has_active_rom = !m_current_rom_name.empty();
+    std::array<std::string, k_settings_row_count> dynamic_names;
+    for (int i = 0; i < k_settings_row_count; ++i) dynamic_names[i] = defs[i].name;
+    dynamic_names[13] = "Save " + game_target + " Settings";
+    dynamic_names[14] = "Save " + backend_target + " Global Settings";
+    dynamic_names[15] = "Load " + game_target + " Settings";
+    dynamic_names[16] = "Load " + backend_target + " Global Settings";
 
     // Determine display refresh rate label
     char refresh_label[32];
@@ -2085,10 +2208,10 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     snprintf(val_bufs[11], sizeof(val_bufs[11]), "%.2fx", m_vr_state.vr_resolution_scale);
     // Action button rows 12-17
     snprintf(val_bufs[12], sizeof(val_bufs[12]), "ACTION"); // Reset
-    snprintf(val_bufs[13], sizeof(val_bufs[13]), "ACTION"); // Save Game
-    snprintf(val_bufs[14], sizeof(val_bufs[14]), "ACTION"); // Save Global
-    snprintf(val_bufs[15], sizeof(val_bufs[15]), "ACTION"); // Load Game
-    snprintf(val_bufs[16], sizeof(val_bufs[16]), "ACTION"); // Load Global
+    snprintf(val_bufs[13], sizeof(val_bufs[13]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Save Game
+    snprintf(val_bufs[14], sizeof(val_bufs[14]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Save Global
+    snprintf(val_bufs[15], sizeof(val_bufs[15]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Load Game
+    snprintf(val_bufs[16], sizeof(val_bufs[16]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Load Global
     snprintf(val_bufs[17], sizeof(val_bufs[17]), "ACTION"); // Back
 
     jclass str_cls = env->FindClass("java/lang/String");
@@ -2098,7 +2221,8 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     jbooleanArray bool_arr  = env->NewBooleanArray(k_settings_row_count);
     std::vector<jboolean> bv(k_settings_row_count);
     for (int i = 0; i < k_settings_row_count; ++i) {
-        jstring jn = env->NewStringUTF(defs[i].name);
+        const char* name_ptr = dynamic_names[i].empty() ? defs[i].name : dynamic_names[i].c_str();
+        jstring jn = env->NewStringUTF(name_ptr);
         jstring jv = env->NewStringUTF(val_bufs[i]);
         env->SetObjectArrayElement(names_arr, i, jn);
         env->SetObjectArrayElement(values_arr, i, jv);
@@ -2138,6 +2262,95 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     env->DeleteLocalRef(names_arr);
     env->DeleteLocalRef(values_arr);
     env->DeleteLocalRef(bool_arr);
+    if (detach) m_vm->DetachCurrentThread();
+}
+
+// ============================================================
+// rebuild_save_state_panel_texture
+// ============================================================
+void OpenXrShell::rebuild_save_state_panel_texture() {
+    if (!m_vm || !m_activity_global) return;
+
+    JNIEnv* env = nullptr;
+    bool detach = false;
+    if (m_vm->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6) == JNI_EDETACHED) {
+        if (m_vm->AttachCurrentThread(&env, nullptr) == JNI_OK) detach = true;
+    }
+    if (!env) return;
+
+    refresh_save_state_slots();
+    const PanelMetrics metrics = panel_metrics(PanelKind::SaveStates);
+    m_save_state_panel_layout = make_save_state_layout();
+
+    jclass str_cls = env->FindClass("java/lang/String");
+    jobjectArray load_labels = env->NewObjectArray(k_save_state_slot_count, str_cls, nullptr);
+    jobjectArray save_labels = env->NewObjectArray(k_save_state_slot_count, str_cls, nullptr);
+    jbooleanArray load_enabled = env->NewBooleanArray(k_save_state_slot_count);
+    std::vector<jboolean> enabled(k_save_state_slot_count, JNI_FALSE);
+
+    for (int i = 0; i < k_save_state_slot_count; ++i) {
+        const std::string load_label =
+            (i < (int)m_save_state_slots.size()) ? m_save_state_slots[i].label : save_state_default_label(i);
+        jstring jl = env->NewStringUTF(load_label.c_str());
+        jstring js = env->NewStringUTF((std::string("SAVE ") + std::to_string(i + 1)).c_str());
+        env->SetObjectArrayElement(load_labels, i, jl);
+        env->SetObjectArrayElement(save_labels, i, js);
+        env->DeleteLocalRef(jl);
+        env->DeleteLocalRef(js);
+        enabled[i] = (i < (int)m_save_state_slots.size() && m_save_state_slots[i].occupied) ? JNI_TRUE : JNI_FALSE;
+    }
+    env->SetBooleanArrayRegion(load_enabled, 0, k_save_state_slot_count, enabled.data());
+    env->DeleteLocalRef(str_cls);
+
+    jclass cls = env->GetObjectClass(m_activity_global);
+    jmethodID mid = env->GetMethodID(cls, "renderSaveStatePanelBitmap",
+        "(Ljava/lang/String;[Ljava/lang/String;[Z[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;III)[I");
+    env->DeleteLocalRef(cls);
+    if (!mid) {
+        env->ExceptionClear();
+        env->DeleteLocalRef(load_labels);
+        env->DeleteLocalRef(load_enabled);
+        env->DeleteLocalRef(save_labels);
+        if (detach) m_vm->DetachCurrentThread();
+        return;
+    }
+
+    jstring title = env->NewStringUTF(m_current_rom_name.c_str());
+    jstring autosave = env->NewStringUTF(autosave_interval_label(m_autosave_interval_seconds).c_str());
+    jstring autoload = env->NewStringUTF(m_load_last_save_enabled ? "On" : "Off");
+    jintArray pixels = (jintArray)env->CallObjectMethod(
+        m_activity_global, mid, title, load_labels, load_enabled, save_labels, autosave, autoload,
+        (jint)m_save_state_panel_hovered, (jint)metrics.tex_w, (jint)metrics.tex_h);
+
+    env->DeleteLocalRef(title);
+    env->DeleteLocalRef(autosave);
+    env->DeleteLocalRef(autoload);
+    env->DeleteLocalRef(load_labels);
+    env->DeleteLocalRef(load_enabled);
+    env->DeleteLocalRef(save_labels);
+
+    if (pixels && !env->ExceptionCheck()) {
+        jsize count = env->GetArrayLength(pixels);
+        if (count == metrics.tex_w * metrics.tex_h) {
+            jint* raw = env->GetIntArrayElements(pixels, nullptr);
+            if (raw) {
+                std::vector<uint8_t> rgba(count * 4);
+                for (jsize i = 0; i < count; ++i) {
+                    jint a = raw[i];
+                    rgba[i * 4 + 0] = (a >> 16) & 0xFF;
+                    rgba[i * 4 + 1] = (a >> 8) & 0xFF;
+                    rgba[i * 4 + 2] = a & 0xFF;
+                    rgba[i * 4 + 3] = (a >> 24) & 0xFF;
+                }
+                upload_panel_texture(m_save_state_panel_tex, metrics.tex_w, metrics.tex_h, rgba);
+                env->ReleaseIntArrayElements(pixels, raw, JNI_ABORT);
+            }
+        }
+        m_save_state_panel_dirty = false;
+    } else if (env->ExceptionCheck()) {
+        env->ExceptionClear();
+    }
+    if (pixels) env->DeleteLocalRef(pixels);
     if (detach) m_vm->DetachCurrentThread();
 }
 
@@ -2388,11 +2601,12 @@ void OpenXrShell::rebuild_main_menu_texture() {
     const PanelMetrics metrics = panel_metrics(PanelKind::MainMenu);
     static const char* k_menu_items[] = {
         "Open ROM",
+        "Save States",
         "Settings",
         "Mappings",
         "Exit"
     };
-    constexpr int k_item_count = 4;
+    constexpr int k_item_count = 5;
     m_main_menu_layout = make_main_menu_layout(k_item_count);
 
     jclass str_cls = env->FindClass("java/lang/String");
@@ -2480,6 +2694,18 @@ std::string OpenXrShell::get_settings_dir() {
     return m_settings_dir;
 }
 
+void OpenXrShell::persist_save_automation_settings() {
+    const std::string dir = get_settings_dir();
+    if (dir.empty()) return;
+    mkdir(dir.c_str(), 0755);
+    const std::string path = dir + "/" + k_save_automation_file_name;
+    FILE* f = fopen(path.c_str(), "w");
+    if (!f) return;
+    std::fprintf(f, "autosave_interval_seconds=%d\n", m_autosave_interval_seconds);
+    std::fprintf(f, "load_last_save=%d\n", m_load_last_save_enabled ? 1 : 0);
+    fclose(f);
+}
+
 void OpenXrShell::set_current_rom(const std::string& rom_filename) {
     // Strip extension to get a clean stem for use as settings filename
     m_current_rom_name = rom_filename;
@@ -2490,7 +2716,11 @@ void OpenXrShell::set_current_rom(const std::string& rom_filename) {
         if (c == '/' || c == '\\' || c == ':' || c == '*' || c == '?' || c == '"' || c == '<' || c == '>' || c == '|')
             c = '_';
     m_current_game_name.clear();
+    refresh_save_state_slots();
+    m_save_state_panel_dirty = true;
+    m_last_autosave_time_ms = monotonic_time_ms();
     m_load_game_pending = true;
+    m_autoload_latest_save_pending = m_load_last_save_enabled;
 }
 
 void OpenXrShell::set_current_backend_kind(BackendKind kind) {
@@ -2509,6 +2739,8 @@ void OpenXrShell::set_current_backend_kind(BackendKind kind) {
     sync_layer_capture_mask();
     m_layer_panel_dirty = true;
     m_settings_panel_dirty = true;
+    refresh_save_state_slots();
+    m_save_state_panel_dirty = true;
 }
 
 void OpenXrShell::set_current_game_name(const std::string& name) {
@@ -2572,6 +2804,9 @@ void OpenXrShell::reset_settings() {
     m_settings_panel_dirty = true;
     m_layer_panel_dirty    = true;
     m_ctrlmap_panel_dirty  = true;
+    refresh_save_state_slots();
+    m_save_state_panel_dirty = true;
+    persist_save_automation_settings();
     if (std::abs(prev_vr_scale - m_vr_state.vr_resolution_scale) > 0.001f) destroy_swapchains();
 }
 
@@ -2766,8 +3001,226 @@ void OpenXrShell::load_settings(bool game_scope) {
     m_settings_panel_dirty  = true;
     m_layer_panel_dirty     = true;
     m_ctrlmap_panel_dirty   = true;
+    m_save_state_panel_dirty = true;
     if (std::abs(prev_vr_scale - m_vr_state.vr_resolution_scale) > 0.001f) destroy_swapchains();
     set_status(std::string(game_scope ? "Game" : "Global") + " settings loaded.");
+}
+
+void OpenXrShell::refresh_save_state_slots() {
+    m_save_state_slots.assign(k_save_state_slot_count, {});
+    for (int i = 0; i < k_save_state_slot_count; ++i) {
+        m_save_state_slots[i].label = save_state_default_label(i);
+    }
+
+    if (m_settings_dir.empty()) {
+        m_settings_dir = get_settings_dir();
+    }
+    if (m_settings_dir.empty() || m_current_rom_name.empty()) return;
+
+    const std::string root_dir = m_settings_dir + "/" + backend_storage_subdir(m_current_backend_kind);
+    const std::string state_dir = root_dir + "/savestates/" + m_current_rom_name;
+    for (int i = 0; i < k_save_state_slot_count; ++i) {
+        const std::string path = state_dir + "/slot" + std::to_string(i + 1) + ".state";
+        struct stat st{};
+        if (stat(path.c_str(), &st) != 0 || st.st_size <= 0) continue;
+        m_save_state_slots[i].occupied = true;
+        m_save_state_slots[i].timestamp_epoch_seconds = (std::uint64_t)st.st_mtime;
+        const std::string label = format_save_state_timestamp(st.st_mtime);
+        if (!label.empty()) m_save_state_slots[i].label = label;
+    }
+}
+
+bool OpenXrShell::save_state_to_slot(int slot, std::string& error_out) {
+    if (slot < 0 || slot >= k_save_state_slot_count) {
+        error_out = "Invalid save slot.";
+        return false;
+    }
+    if (m_current_rom_name.empty()) {
+        error_out = "Load a ROM before using save states.";
+        return false;
+    }
+    const std::string dir = get_settings_dir();
+    if (dir.empty()) {
+        error_out = "Settings directory unavailable.";
+        return false;
+    }
+    const std::string path =
+        dir + "/" + backend_storage_subdir(m_current_backend_kind) + "/savestates/" +
+        m_current_rom_name + "/slot" + std::to_string(slot + 1) + ".state";
+    return save_state_to_path(path, error_out);
+}
+
+bool OpenXrShell::load_state_from_slot(int slot, std::string& error_out) {
+    if (slot < 0 || slot >= k_save_state_slot_count) {
+        error_out = "Invalid save slot.";
+        return false;
+    }
+    if (m_current_rom_name.empty()) {
+        error_out = "Load a ROM before using save states.";
+        return false;
+    }
+    const std::string dir = get_settings_dir();
+    if (dir.empty()) {
+        error_out = "Settings directory unavailable.";
+        return false;
+    }
+    const std::string path =
+        dir + "/" + backend_storage_subdir(m_current_backend_kind) + "/savestates/" +
+        m_current_rom_name + "/slot" + std::to_string(slot + 1) + ".state";
+    return load_state_from_path(path, error_out);
+}
+
+bool OpenXrShell::save_state_to_path(const std::string& path, std::string& error_out) {
+    SaveStateCapture capture;
+    {
+        std::lock_guard<std::mutex> lk(m_mutex);
+        capture = m_save_state_capture;
+    }
+    if (!capture) {
+        error_out = "Save-state capture unavailable.";
+        return false;
+    }
+
+    std::vector<uint8_t> bytes;
+    if (!capture(bytes, error_out)) return false;
+    if (bytes.empty()) {
+        error_out = "Savestate capture returned no data.";
+        return false;
+    }
+
+    if (!m_current_rom_name.empty()) {
+        const std::string dir = get_settings_dir();
+        if (!dir.empty()) {
+            const std::string backend_dir = dir + "/" + backend_storage_subdir(m_current_backend_kind);
+            const std::string save_root = backend_dir + "/savestates";
+            const std::string rom_dir = save_root + "/" + m_current_rom_name;
+            mkdir(backend_dir.c_str(), 0755);
+            mkdir(save_root.c_str(), 0755);
+            mkdir(rom_dir.c_str(), 0755);
+        }
+    }
+
+    std::ofstream out(path, std::ios::binary | std::ios::trunc);
+    if (!out) {
+        error_out = "Failed to open savestate file for writing.";
+        return false;
+    }
+    out.write(reinterpret_cast<const char*>(bytes.data()), (std::streamsize)bytes.size());
+    out.close();
+    if (!out) {
+        error_out = "Failed to write savestate file.";
+        return false;
+    }
+
+    refresh_save_state_slots();
+    m_save_state_panel_dirty = true;
+    error_out.clear();
+    return true;
+}
+
+bool OpenXrShell::load_state_from_path(const std::string& path, std::string& error_out) {
+    struct stat st{};
+    if (stat(path.c_str(), &st) != 0 || st.st_size <= 0) {
+        error_out = "Savestate file is missing or empty.";
+        return false;
+    }
+
+    std::ifstream in(path, std::ios::binary | std::ios::ate);
+    if (!in) {
+        error_out = "Failed to open savestate file.";
+        return false;
+    }
+    const std::streamsize size = in.tellg();
+    if (size <= 0) {
+        error_out = "Savestate file is empty.";
+        return false;
+    }
+    std::vector<uint8_t> bytes((std::size_t)size, 0);
+    in.seekg(0, std::ios::beg);
+    if (!in.read(reinterpret_cast<char*>(bytes.data()), size)) {
+        error_out = "Failed to read savestate file.";
+        return false;
+    }
+
+    SaveStateApply apply;
+    {
+        std::lock_guard<std::mutex> lk(m_mutex);
+        apply = m_save_state_apply;
+    }
+    if (!apply) {
+        error_out = "Save-state load unavailable.";
+        return false;
+    }
+    if (!apply(bytes.data(), bytes.size(), error_out)) return false;
+
+    refresh_save_state_slots();
+    m_save_state_panel_dirty = true;
+    error_out.clear();
+    return true;
+}
+
+bool OpenXrShell::try_load_latest_state(std::string& loaded_name_out, std::string& error_out, bool& found_any) {
+    found_any = false;
+    loaded_name_out.clear();
+    if (m_current_rom_name.empty()) {
+        error_out = "Load a ROM before using save states.";
+        return false;
+    }
+
+    const std::string dir = get_settings_dir();
+    if (dir.empty()) {
+        error_out = "Settings directory unavailable.";
+        return false;
+    }
+    const std::string state_dir =
+        dir + "/" + backend_storage_subdir(m_current_backend_kind) + "/savestates/" + m_current_rom_name;
+
+    std::string best_path;
+    std::string best_name;
+    std::time_t best_mtime = 0;
+    auto consider = [&](const std::string& name) {
+        const std::string path = state_dir + "/" + name;
+        struct stat st{};
+        if (stat(path.c_str(), &st) != 0 || st.st_size <= 0) return;
+        if (!found_any || st.st_mtime > best_mtime) {
+            found_any = true;
+            best_mtime = st.st_mtime;
+            best_path = path;
+            best_name = name;
+        }
+    };
+
+    consider(k_autosave_file_name);
+    for (int i = 0; i < k_save_state_slot_count; ++i) {
+        consider("slot" + std::to_string(i + 1) + ".state");
+    }
+
+    if (!found_any) {
+        error_out.clear();
+        return false;
+    }
+    if (!load_state_from_path(best_path, error_out)) return false;
+    loaded_name_out = best_name;
+    return true;
+}
+
+void OpenXrShell::maybe_run_autosave() {
+    if (m_autosave_interval_seconds <= 0 || m_current_rom_name.empty()) return;
+    if (m_menu_open || m_emu_frozen_display) return;
+
+    const std::uint64_t now_ms = monotonic_time_ms();
+    const std::uint64_t interval_ms = (std::uint64_t)m_autosave_interval_seconds * 1000ull;
+    if (m_last_autosave_time_ms != 0 && (now_ms - m_last_autosave_time_ms) < interval_ms) return;
+
+    const std::string dir = get_settings_dir();
+    if (dir.empty()) return;
+    const std::string path =
+        dir + "/" + backend_storage_subdir(m_current_backend_kind) + "/savestates/" +
+        m_current_rom_name + "/" + k_autosave_file_name;
+    std::string err;
+    if (save_state_to_path(path, err)) {
+        m_last_autosave_time_ms = now_ms;
+    }
 }
 
 // ============================================================
@@ -2838,6 +3291,12 @@ void OpenXrShell::open_rom_menu() {
     m_settings_panel_pose.position    = { cx, cy, cz };
     m_settings_panel_pose.orientation = orient;
     m_settings_panel_dirty            = true;
+
+    m_save_state_panel_pose.position    = { cx, cy, cz };
+    m_save_state_panel_pose.orientation = orient;
+    m_save_state_panel_dirty            = true;
+    m_save_state_panel_hovered          = -1;
+    refresh_save_state_slots();
 
     // Code panel — above the main menu position
     const float hh_menu = main_metrics.world_h * 0.5f;
@@ -2984,6 +3443,7 @@ void OpenXrShell::poll_actions() {
                 EmuFreezeCtrl freeze_fn;
                 { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
                 if (freeze_fn) freeze_fn(false);
+                m_emu_frozen_display = false;
             }
         } else {
             m_edit_mode = false; // exit edit mode when entering menu
@@ -3019,6 +3479,7 @@ void OpenXrShell::poll_actions() {
             const PanelMetrics browser_metrics  = panel_metrics(PanelKind::Browser);
             const PanelMetrics layer_metrics    = panel_metrics(PanelKind::Layers);
             const PanelMetrics settings_metrics = panel_metrics(PanelKind::Settings);
+            const PanelMetrics save_state_metrics = panel_metrics(PanelKind::SaveStates);
             const PanelMetrics code_metrics     = panel_metrics(PanelKind::Code);
             const PanelMetrics ctrlmap_metrics  = panel_metrics(PanelKind::CtrlMap);
 
@@ -3059,6 +3520,9 @@ void OpenXrShell::poll_actions() {
                 static PanelDesc descs_settings[1] = {
                     { &m_settings_panel_pose, 0.0f, 0.0f, k_panel_settings },
                 };
+                static PanelDesc descs_save_state[1] = {
+                    { &m_save_state_panel_pose, 0.0f, 0.0f, k_panel_save_state },
+                };
                 static PanelDesc descs_ctrlmap_sub[1] = {
                     { &m_ctrlmap_panel_pose,  0.0f, 0.0f, k_panel_ctrlmap  },
                 };
@@ -3074,6 +3538,8 @@ void OpenXrShell::poll_actions() {
                 descs_layers[0].h = layer_metrics.world_h;
                 descs_settings[0].w = settings_metrics.world_w;
                 descs_settings[0].h = settings_metrics.world_h;
+                descs_save_state[0].w = save_state_metrics.world_w;
+                descs_save_state[0].h = save_state_metrics.world_h;
                 descs_ctrlmap_sub[0].w = ctrlmap_metrics.world_w;
                 descs_ctrlmap_sub[0].h = ctrlmap_metrics.world_h;
                 descs_code[0].w = code_metrics.world_w;
@@ -3083,8 +3549,9 @@ void OpenXrShell::poll_actions() {
                     case 1: descs = descs_browser;   descs_count = 2; break;
                     case 2: descs = descs_layers;    descs_count = 1; break;
                     case 3: descs = descs_settings;  descs_count = 1; break;
-                    case 4: descs = descs_code;      descs_count = 1; break;
-                    case 5: descs = descs_ctrlmap_sub; descs_count = 1; break;
+                    case 4: descs = descs_save_state; descs_count = 1; break;
+                    case 5: descs = descs_code;      descs_count = 1; break;
+                    case 6: descs = descs_ctrlmap_sub; descs_count = 1; break;
                     default: break;
                 }
             }
@@ -3154,7 +3621,7 @@ void OpenXrShell::poll_actions() {
             };
 
             if (best_panel == k_panel_main_menu) {
-                if (m_main_menu_layout.items.empty()) m_main_menu_layout = make_main_menu_layout(4);
+                if (m_main_menu_layout.items.empty()) m_main_menu_layout = make_main_menu_layout(5);
                 const PanelLayoutItem* item = assign_hit(m_main_menu_layout);
                 int row = item ? item->row : -1;
                 if (row != m_main_menu_hovered) m_main_menu_hovered = row;
@@ -3178,6 +3645,11 @@ void OpenXrShell::poll_actions() {
                     m_settings_panel_hovered = row;
                     m_settings_panel_area = area;
                 }
+            } else if (best_panel == k_panel_save_state) {
+                if (m_save_state_panel_layout.items.empty()) m_save_state_panel_layout = make_save_state_layout();
+                const PanelLayoutItem* item = assign_hit(m_save_state_panel_layout);
+                const int cell = item ? item->id : -1;
+                if (cell != m_save_state_panel_hovered) m_save_state_panel_hovered = cell;
             } else if (best_panel == k_panel_ctrlmap) {
                 if (m_ctrlmap_panel_layout.items.empty()) m_ctrlmap_panel_layout = make_ctrlmap_layout(SNES_BUTTON_COUNT, 6);
                 const PanelLayoutItem* item = assign_hit(m_ctrlmap_panel_layout);
@@ -3369,10 +3841,9 @@ void OpenXrShell::poll_actions() {
         }
 
         // Right stick X → spread
-        float rx = 0, ry = 0;
-        get_vec2(m_impl->act_rstick, rx, ry);
-        float lx = 0, ly = 0;
+        float lx = 0, ly = 0, rx = 0, ry = 0;
         get_vec2(m_impl->act_lstick, lx, ly);
+        get_vec2(m_impl->act_rstick, rx, ry);
         constexpr float k_adj_thresh = 0.3f;
         if (std::abs(rx) > k_adj_thresh && (now - m_last_depth_fire > k_fire_interval)) {
             m_last_depth_fire = now;
@@ -3453,7 +3924,8 @@ void OpenXrShell::poll_actions() {
         float rtrig     = get_float(m_impl->act_rtrig);
         bool  rtrig_now = rtrig > 0.5f;
         bool  rtrig_rising = rtrig_now && !m_rtrig_prev;
-        float rx = 0, ry = 0;
+        float lx = 0, ly = 0, rx = 0, ry = 0;
+        get_vec2(m_impl->act_lstick, lx, ly);
         get_vec2(m_impl->act_rstick, rx, ry);
 
         XrTime now_panel = (XrTime)std::chrono::duration_cast<std::chrono::nanoseconds>(
@@ -3473,21 +3945,30 @@ void OpenXrShell::poll_actions() {
                         m_panel_pose = m_main_menu_pose;
                         m_rom_browser.dirty(); // ensure browser is refreshed
                         break;
-                    case 1: // Settings → show settings panel (centered, no main menu)
+                    case 1: // Save States
+                        m_active_sub_panel = 4;
+                        m_ctrlmap_mode = false;
+                        m_save_state_panel_pose = m_main_menu_pose;
+                        m_save_state_panel_hovered = -1;
+                        refresh_save_state_slots();
+                        m_save_state_panel_dirty = true;
+                        rebuild_save_state_panel_texture();
+                        break;
+                    case 2: // Settings → show settings panel (centered, no main menu)
                         m_active_sub_panel = 3;
                         m_ctrlmap_mode = false;
                         m_settings_panel_pose = m_main_menu_pose;
                         m_settings_panel_dirty = true;
                         rebuild_settings_panel_texture();
                         break;
-                    case 2: // Mappings → show ctrlmap panel
-                        m_active_sub_panel = 5;
+                    case 3: // Mappings → show ctrlmap panel
+                        m_active_sub_panel = 6;
                         m_ctrlmap_mode = true;
                         m_ctrlmap_panel_dirty = true;
                         m_ctrlmap_selected_row = -1;
                         m_ctrlmap_panel_hovered = -1;
                         break;
-                    case 3: { // Exit → close app
+                    case 4: { // Exit → close app
                         m_menu_open     = false;
                         m_ctrlmap_mode  = false;
                         m_active_sub_panel = 0;
@@ -3495,6 +3976,7 @@ void OpenXrShell::poll_actions() {
                         EmuFreezeCtrl freeze_fn;
                         { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
                         if (freeze_fn) freeze_fn(false);
+                        m_emu_frozen_display = false;
                         // Call exitApp on Kotlin side
                         if (m_vm && m_activity_global) {
                             JNIEnv* env = nullptr;
@@ -3542,13 +4024,20 @@ void OpenXrShell::poll_actions() {
                         EmuFreezeCtrl freeze_fn;
                         { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
                         if (freeze_fn) freeze_fn(false);
+                        m_emu_frozen_display = false;
                     }
                 }
             }
-            // Scroll with stick Y
-            if (std::abs(ry) > 0.6f && now_panel - m_last_depth_fire > k_scroll_interval) {
+            const float scroll_y = (std::abs(ry) >= std::abs(ly)) ? ry : ly;
+            const float scroll_x = (std::abs(rx) >= std::abs(lx)) ? rx : lx;
+
+            // Vertical = row scroll, horizontal = page scroll.
+            if (std::abs(scroll_y) > 0.6f && now_panel - m_last_depth_fire > k_scroll_interval) {
                 m_last_depth_fire = now_panel;
-                m_rom_browser.scroll(ry > 0 ? -1 : 1);
+                m_rom_browser.scroll(scroll_y > 0 ? -1 : 1);
+            } else if (std::abs(scroll_x) > 0.6f && now_panel - m_last_depth_fire > k_scroll_interval) {
+                m_last_depth_fire = now_panel;
+                m_rom_browser.scroll_page(scroll_x > 0 ? 1 : -1);
             }
 
         } else if (m_laser_panel == k_panel_layers) {
@@ -3748,10 +4237,34 @@ void OpenXrShell::poll_actions() {
                     // Action buttons (rows 12-17)
                     switch (row) {
                         case 12: m_settings_action_pending = 5; break; // Reset
-                        case 13: m_settings_action_pending = 1; break; // Save Game
-                        case 14: m_settings_action_pending = 2; break; // Save Global
-                        case 15: m_settings_action_pending = 3; break; // Load Game
-                        case 16: m_settings_action_pending = 4; break; // Load Global
+                        case 13:
+                            if (m_current_rom_name.empty()) {
+                                set_status("Load a ROM before saving game settings.");
+                                fire_haptic(true, 0.2f, 20);
+                                break;
+                            }
+                            m_settings_action_pending = 1; break; // Save Game
+                        case 14:
+                            if (m_current_rom_name.empty()) {
+                                set_status("Load a ROM before saving global settings.");
+                                fire_haptic(true, 0.2f, 20);
+                                break;
+                            }
+                            m_settings_action_pending = 2; break; // Save Global
+                        case 15:
+                            if (m_current_rom_name.empty()) {
+                                set_status("Load a ROM before loading game settings.");
+                                fire_haptic(true, 0.2f, 20);
+                                break;
+                            }
+                            m_settings_action_pending = 3; break; // Load Game
+                        case 16:
+                            if (m_current_rom_name.empty()) {
+                                set_status("Load a ROM before loading global settings.");
+                                fire_haptic(true, 0.2f, 20);
+                                break;
+                            }
+                            m_settings_action_pending = 4; break; // Load Global
                         case 17: // Back → return to main menu
                             m_active_sub_panel        = 0;
                             m_settings_panel_hovered = -1;
@@ -3769,6 +4282,55 @@ void OpenXrShell::poll_actions() {
                 m_last_settings_fire = now_panel;
                 adjust_setting(row, rx > 0 ? 1 : -1);
                 do_step_one();
+            }
+        } else if (m_laser_panel == k_panel_save_state) {
+            int cell = m_save_state_panel_hovered;
+            if (rtrig_rising && m_laser_hit && cell >= 0) {
+                std::string err;
+                if (cell < (k_save_state_slot_count * 2)) {
+                    const int slot = cell % k_save_state_slot_count;
+                    if (cell < k_save_state_slot_count) {
+                        if (slot >= (int)m_save_state_slots.size() || !m_save_state_slots[slot].occupied) {
+                            set_status("Slot " + std::to_string(slot + 1) + " is empty.");
+                            fire_haptic(true, 0.2f, 20);
+                        } else if (load_state_from_slot(slot, err)) {
+                            set_status("Loaded state " + std::to_string(slot + 1) + ".");
+                            m_menu_open = false;
+                            m_ctrlmap_mode = false;
+                            m_active_sub_panel = 0;
+                            m_laser_hit = false;
+                            EmuFreezeCtrl freeze_fn;
+                            { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
+                            if (freeze_fn) freeze_fn(false);
+                            m_emu_frozen_display = false;
+                            fire_haptic(true, 0.45f, 50);
+                        } else {
+                            set_status("Load failed: " + err);
+                            fire_haptic(true, 0.2f, 20);
+                        }
+                    } else {
+                        if (save_state_to_slot(slot, err)) {
+                            set_status("Saved state " + std::to_string(slot + 1) + ".");
+                            fire_haptic(true, 0.35f, 40);
+                        } else {
+                            set_status("Save failed: " + err);
+                            fire_haptic(true, 0.2f, 20);
+                        }
+                    }
+                } else if (cell == 6) {
+                    m_autosave_interval_seconds = next_autosave_interval_seconds(m_autosave_interval_seconds);
+                    m_last_autosave_time_ms = monotonic_time_ms();
+                    persist_save_automation_settings();
+                    m_save_state_panel_dirty = true;
+                    set_status("Autosave every " + autosave_interval_label(m_autosave_interval_seconds) + ".");
+                    fire_haptic(true, 0.3f, 30);
+                } else if (cell == 7) {
+                    m_load_last_save_enabled = !m_load_last_save_enabled;
+                    persist_save_automation_settings();
+                    m_save_state_panel_dirty = true;
+                    set_status(std::string("Load last save ") + (m_load_last_save_enabled ? "ON." : "OFF."));
+                    fire_haptic(true, 0.3f, 30);
+                }
             }
         } else if (m_laser_panel == k_panel_ctrlmap) {
             // ---- Controller map panel ---------------------------------------
@@ -3990,6 +4552,14 @@ void OpenXrShell::poll_actions() {
 // ============================================================
 void OpenXrShell::apply_pending_vr_changes() {
     bool visual_change = false;
+    if (m_request_open_menu.exchange(false)) {
+        open_rom_menu();
+        EmuFreezeCtrl freeze_fn;
+        { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
+        if (freeze_fn) freeze_fn(true);
+        m_emu_frozen_display = true;
+        visual_change = true;
+    }
     if (m_randomize_pending.exchange(false)) {
         m_vr_state.randomize(m_config, m_rng);
         m_vr_state.vr_resolution_scale = snap_vr_resolution_scale(m_vr_state.vr_resolution_scale);
@@ -4075,6 +4645,19 @@ void OpenXrShell::apply_pending_vr_changes() {
     if (m_load_game_pending.exchange(false)) {
         load_settings(true); // silently skips if no file
     }
+    if (m_autoload_latest_save_pending.exchange(false)) {
+        std::string loaded_name;
+        std::string err;
+        bool found_any = false;
+        if (try_load_latest_state(loaded_name, err, found_any)) {
+            const std::string display = (loaded_name == k_autosave_file_name) ? "autosave" : loaded_name;
+            set_status("Loaded " + display + ".");
+            visual_change = true;
+        } else if (found_any) {
+            set_status("Autoload failed: " + err);
+        }
+    }
+    maybe_run_autosave();
     sync_passthrough_state();
     // Apply requested display refresh rate
     if (m_apply_refresh_pending.exchange(false)) {
@@ -4188,6 +4771,47 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
             (int)m_cached_frame_out.height,
             zbuf,
             &m_cached_frame_out);
+
+        if (m_current_backend_kind == BackendKind::Genesis &&
+            !m_cached_layer_frames.empty() &&
+            m_cached_layer_frames[0].has_pixels) {
+            bool have_non_backdrop_pixels = false;
+            for (std::size_t i = 1; i < m_cached_layer_frames.size(); ++i) {
+                if (m_cached_layer_frames[i].has_pixels) {
+                    have_non_backdrop_pixels = true;
+                    break;
+                }
+            }
+            if (!have_non_backdrop_pixels) {
+                GameConfig fallback_cfg = GameConfig::make_flat();
+                fallback_cfg.layers[0].id = m_cached_layer_frames[0].id;
+                fallback_cfg.layers[0].depth_meters = m_cached_layer_frames[0].depth_meters;
+                fallback_cfg.layers[0].quad_width_meters = m_cached_layer_frames[0].quad_width_meters;
+                fallback_cfg.layers[0].copies = m_cached_layer_frames[0].copies;
+
+                std::vector<LayerFrame> fallback_frames;
+                LayerProcessor fallback_proc(fallback_cfg);
+                fallback_proc.process_into(
+                    fallback_frames,
+                    m_cached_frame_out.rgba8888.data(),
+                    (int)m_cached_frame_out.width,
+                    (int)m_cached_frame_out.height,
+                    nullptr,
+                    &m_cached_frame_out);
+
+                if (!fallback_frames.empty()) {
+                    m_cached_layer_frames[0] = std::move(fallback_frames[0]);
+                    for (std::size_t i = 1; i < m_cached_layer_frames.size(); ++i) {
+                        m_cached_layer_frames[i].has_pixels = false;
+                        m_cached_layer_frames[i].wedge_eligible = false;
+                        std::fill(m_cached_layer_frames[i].rgba.begin(),
+                                  m_cached_layer_frames[i].rgba.end(), 0u);
+                    }
+                    LOGI("Genesis render fallback engaged: backdrop-only extraction for %ux%u frame",
+                         m_cached_frame_out.width, m_cached_frame_out.height);
+                }
+            }
+        }
     }
 
     sync_cached_layer_geometry_from_config(m_cached_layer_frames, m_config);
@@ -4287,13 +4911,20 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
                 m_last_settings_fire = m_frame_predicted_time;
             }
         } else if (m_active_sub_panel == 4) {
+            // Save-state sub-panel
+            if (m_save_state_panel_dirty &&
+                (m_frame_predicted_time - m_last_settings_fire) >= k_panel_rebuild_interval) {
+                rebuild_save_state_panel_texture();
+                m_last_settings_fire = m_frame_predicted_time;
+            }
+        } else if (m_active_sub_panel == 5) {
             // Code panel (standalone)
             if (m_code_panel_dirty &&
                 (m_frame_predicted_time - m_last_code_fire) >= k_panel_rebuild_interval) {
                 rebuild_code_panel_texture();
                 m_last_code_fire = m_frame_predicted_time;
             }
-        } else if (m_active_sub_panel == 5) {
+        } else if (m_active_sub_panel == 6) {
             // Ctrlmap sub-panel
             if (m_ctrlmap_panel_dirty &&
                 (m_frame_predicted_time - m_last_code_fire) >= k_panel_rebuild_interval) {
@@ -4309,6 +4940,7 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
     const PanelMetrics browser_metrics  = panel_metrics(PanelKind::Browser);
     const PanelMetrics layer_metrics    = panel_metrics(PanelKind::Layers);
     const PanelMetrics settings_metrics = panel_metrics(PanelKind::Settings);
+    const PanelMetrics save_state_metrics = panel_metrics(PanelKind::SaveStates);
     const PanelMetrics code_metrics     = panel_metrics(PanelKind::Code);
     const PanelMetrics ctrlmap_metrics  = panel_metrics(PanelKind::CtrlMap);
     const PanelMetrics help_metrics     = panel_metrics(PanelKind::Help);
@@ -4381,6 +5013,18 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
                     set_hover_highlight(overlay, 0, m_laser_hit_item, 0.16f, 0.24f, 0.39f, 0.35f);
                 }
             } else if (m_active_sub_panel == 4) {
+                // Save-state panel
+                auto& ssp = overlay.panels[0];
+                ssp.tex   = m_save_state_panel_tex;
+                ssp.pose  = m_save_state_panel_pose;
+                ssp.w     = save_state_metrics.world_w;
+                ssp.h     = save_state_metrics.world_h;
+                overlay.panel_count = 1;
+
+                if (m_laser_panel == k_panel_save_state && m_laser_hit_has_item) {
+                    set_hover_highlight(overlay, 0, m_laser_hit_item, 0.18f, 0.39f, 0.75f, 0.35f);
+                }
+            } else if (m_active_sub_panel == 5) {
                 // Code panel (standalone, taller - shows code + keyboard)
                 auto& cp = overlay.panels[0];
                 cp.tex   = m_code_panel_tex;
@@ -4393,7 +5037,7 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
                 if (m_laser_panel == k_panel_code && m_laser_hit_has_item) {
                     set_hover_highlight(overlay, 0, m_laser_hit_item, 0.20f, 0.51f, 0.82f, 0.45f);
                 }
-            } else if (m_active_sub_panel == 5) {
+            } else if (m_active_sub_panel == 6) {
                 // Ctrlmap panel
                 auto& cm = overlay.panels[0];
                 cm.tex   = m_ctrlmap_panel_tex;
@@ -4540,6 +5184,7 @@ void OpenXrShell::shutdown() {
     if (m_main_menu_tex)      { glDeleteTextures(1, &m_main_menu_tex);      m_main_menu_tex      = 0; }
     if (m_layer_panel_tex)    { glDeleteTextures(1, &m_layer_panel_tex);    m_layer_panel_tex    = 0; }
     if (m_settings_panel_tex) { glDeleteTextures(1, &m_settings_panel_tex); m_settings_panel_tex = 0; }
+    if (m_save_state_panel_tex) { glDeleteTextures(1, &m_save_state_panel_tex); m_save_state_panel_tex = 0; }
     if (m_code_panel_tex)     { glDeleteTextures(1, &m_code_panel_tex);     m_code_panel_tex     = 0; }
     if (m_ctrlmap_panel_tex)  { glDeleteTextures(1, &m_ctrlmap_panel_tex);  m_ctrlmap_panel_tex  = 0; }
     if (m_help_panel_tex)     { glDeleteTextures(1, &m_help_panel_tex);     m_help_panel_tex     = 0; }

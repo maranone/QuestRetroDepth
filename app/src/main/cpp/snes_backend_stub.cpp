@@ -52,6 +52,29 @@ const FrameOutput& SnesBackendStub::frame_output() const {
     return m_frame;
 }
 
+bool SnesBackendStub::save_state(std::vector<uint8_t>& out, std::string& error_out) {
+    if (m_loaded_rom_path.empty()) {
+        error_out = "SNES stub: no ROM has been loaded.";
+        return false;
+    }
+    out.assign(16, 0);
+    error_out.clear();
+    return true;
+}
+
+bool SnesBackendStub::load_state(const void* data, std::size_t size, std::string& error_out) {
+    if (m_loaded_rom_path.empty()) {
+        error_out = "SNES stub: no ROM has been loaded.";
+        return false;
+    }
+    if (!data || size == 0) {
+        error_out = "SNES stub: savestate data is empty.";
+        return false;
+    }
+    error_out.clear();
+    return true;
+}
+
 RomHeaderInfo SnesBackendStub::get_rom_header_info() const {
     RomHeaderInfo info;
     return info;

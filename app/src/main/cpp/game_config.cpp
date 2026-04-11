@@ -171,7 +171,7 @@ GameConfig GameConfig::make_default_genesis() {
         lc.id               = s.id;
         lc.depth_meters     = s.depth;
         lc.quad_width_meters = s.width;
-        lc.extraction_type  = ExtractionType::PerLayerCapture;
+        lc.extraction_type  = ExtractionType::VisibleSourceHybrid;
         lc.layer_index      = s.layer_index;
         cfg.layers.push_back(std::move(lc));
     }

@@ -49,7 +49,10 @@ struct FrameOutput {
     // Each non-transparent pixel carries the raw layer color. Empty when not available.
     std::vector<LayerCapture> layers;
     // Main-screen ownership of the final visible pixel.
-    // 0-3 = BG0-BG3, 4 = OBJ, 5 = backdrop, 255 = none.
+    // SNES: 0-3 = BG0-BG3, 4 = OBJ, 5 = backdrop.
+    // Genesis: 0 = background, 1/2 = plane B low/high,
+    // 3/4 = plane A+window low/high, 5/6 = sprites low/high.
+    // 255 = none / unavailable.
     std::vector<uint8_t> visible_source_id;
 };
 
@@ -66,6 +69,8 @@ public:
     virtual bool load_content(const std::string& rom_path, std::string& error_out) = 0;
     virtual bool step_frame(const EmulatorInputState& input, std::string& error_out) = 0;
     virtual const FrameOutput& frame_output() const = 0;
+    virtual bool save_state(std::vector<uint8_t>& out, std::string& error_out) = 0;
+    virtual bool load_state(const void* data, std::size_t size, std::string& error_out) = 0;
     virtual void set_auto_frame_skip(bool enabled) = 0;
     virtual void set_layer_capture_mask(uint32_t mask) = 0;
     virtual RomHeaderInfo get_rom_header_info() const = 0;

@@ -12,6 +12,8 @@ public:
     bool load_content(const std::string& rom_path, std::string& error_out) override;
     bool step_frame(const EmulatorInputState& input, std::string& error_out) override;
     const FrameOutput& frame_output() const override;
+    bool save_state(std::vector<uint8_t>& out, std::string& error_out) override;
+    bool load_state(const void* data, std::size_t size, std::string& error_out) override;
     void set_auto_frame_skip(bool enabled) override {}
     void set_layer_capture_mask(uint32_t mask) override {}
     RomHeaderInfo get_rom_header_info() const override;

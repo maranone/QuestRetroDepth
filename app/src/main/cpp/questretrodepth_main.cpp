@@ -26,6 +26,7 @@ std::optional<qrd::BackendKind>    g_backend_kind;
 qrd::OpenXrShell                   g_openxr_shell;
 std::string                        g_last_status;
 std::string                        g_last_loaded_rom_filename; // filename only, for prefs persistence
+std::string                        g_last_loaded_rom_prefs_name;
 std::string                        g_last_loaded_game_name;
 std::string                        g_last_working_rom_path;   // full path of last successful load
 std::optional<qrd::BackendKind>    g_last_working_backend_kind;
@@ -371,7 +372,8 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeGetLastStatus(
 
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeStartVr(
-    JNIEnv* env, jobject, jobject activity)
+    JNIEnv* env, jobject, jobject activity, jboolean open_menu_on_startup,
+    jint autosave_interval_seconds, jboolean load_last_save_enabled)
 {
     JavaVM* vm = nullptr;
     env->GetJavaVM(&vm);
@@ -444,6 +446,24 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeStartVr(
         auto* backend = ensure_backend(g_backend_kind.value_or(qrd::BackendKind::Snes));
         if (backend) backend->set_layer_capture_mask(mask);
     });
+    g_openxr_shell.set_save_state_capture([](std::vector<uint8_t>& out, std::string& err) {
+        std::lock_guard<std::mutex> lock(g_backend_mutex);
+        auto* backend = ensure_backend(g_backend_kind.value_or(qrd::BackendKind::Snes));
+        if (!backend) {
+            err = "Backend unavailable";
+            return false;
+        }
+        return backend->save_state(out, err);
+    });
+    g_openxr_shell.set_save_state_apply([](const void* data, std::size_t size, std::string& err) {
+        std::lock_guard<std::mutex> lock(g_backend_mutex);
+        auto* backend = ensure_backend(g_backend_kind.value_or(qrd::BackendKind::Snes));
+        if (!backend) {
+            err = "Backend unavailable";
+            return false;
+        }
+        return backend->load_state(data, size, err);
+    });
 
     // Give the shell a ROM loader so it can load ROMs from the browser.
     // Extracts archives via Kotlin, restores the previous ROM if load fails
@@ -479,6 +499,7 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeStartVr(
             g_last_working_rom_path    = path;
             g_last_working_backend_kind = wanted_kind;
             g_last_loaded_rom_filename = basename_from_path(path);
+            g_last_loaded_rom_prefs_name = basename_from_path(raw_path);
             auto info = backend->get_rom_header_info();
             if (info.has_header && !info.game_name.empty()) {
                 game_name = info.game_name;
@@ -501,7 +522,11 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeStartVr(
     });
 
     std::string status;
-    g_openxr_shell.start(vm, env, activity, status);
+    g_openxr_shell.start(vm, env, activity,
+                         open_menu_on_startup == JNI_TRUE,
+                         (int)autosave_interval_seconds,
+                         load_last_save_enabled == JNI_TRUE,
+                         status);
     return make_jstring(env, status);
 }
 
@@ -510,6 +535,13 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeGetVrStatus(
     JNIEnv* env, jobject)
 {
     return make_jstring(env, g_openxr_shell.status());
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeOpenMainMenu(
+    JNIEnv*, jobject)
+{
+    g_openxr_shell.request_open_main_menu();
 }
 
 extern "C" JNIEXPORT void JNICALL
@@ -551,11 +583,14 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeGetVrStateSummary(
 
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeLoadRom(
-    JNIEnv* env, jobject, jstring path)
+    JNIEnv* env, jobject, jstring path, jstring source_name)
 {
     const char* raw = env->GetStringUTFChars(path, nullptr);
     std::string rom_path = raw ? raw : "";
     env->ReleaseStringUTFChars(path, raw);
+    const char* raw_source = source_name ? env->GetStringUTFChars(source_name, nullptr) : nullptr;
+    std::string prefs_name = raw_source ? raw_source : "";
+    if (source_name && raw_source) env->ReleaseStringUTFChars(source_name, raw_source);
 
     const auto wanted_kind = detect_backend_kind_from_path(rom_path);
     std::string game_name;
@@ -578,6 +613,7 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeLoadRom(
         g_last_working_rom_path = rom_path;
         g_last_working_backend_kind = wanted_kind;
         g_last_loaded_rom_filename = basename_from_path(rom_path);
+        g_last_loaded_rom_prefs_name = prefs_name.empty() ? g_last_loaded_rom_filename : prefs_name;
         auto info = backend->get_rom_header_info();
         if (info.has_header && !info.game_name.empty()) {
             game_name = info.game_name;
@@ -601,7 +637,8 @@ extern "C" JNIEXPORT jstring JNICALL
 Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeGetLastLoadedRomFilename(
     JNIEnv* env, jobject)
 {
-    return make_jstring(env, g_last_loaded_rom_filename);
+    return make_jstring(env, g_last_loaded_rom_prefs_name.empty() ? g_last_loaded_rom_filename
+                                                                  : g_last_loaded_rom_prefs_name);
 }
 
 extern "C" JNIEXPORT jstring JNICALL
