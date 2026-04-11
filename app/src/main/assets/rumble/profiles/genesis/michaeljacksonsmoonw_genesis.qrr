@@ -1,6 +1,0 @@
-game_name=MichaelJacksonsMoonw
-game_key=MichaelJacksonsMoonw-Genesis
-system=genesis
-integration_tier=manual
-trigger	damage_taken_0_de46	damage_taken	0xFFDE46	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	enemy_defeated_1_de4d	enemy_defeated	0xFFDE4D	1	uint	native	prev != curr	0.7	1	left:0.510:100

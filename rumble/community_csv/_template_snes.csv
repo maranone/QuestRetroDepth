@@ -1,0 +1,7 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Example SNES Game
+# match_names=example snes game|examplesnesgame
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+pickup_event,0x7E1234,1,uint,prev_lt_curr,,right,0.30,normal,0,24,30,20,Value increased
+damage_taken,0x7E1235,1,uint,prev_gt_curr,,left,0.80,fade_out,0,80,100,70,Value decreased
+life_lost,0x7E1236,1,uint,prev_gt_curr,,both,1.00,fade_in_out,0,220,250,90,Life count decreased

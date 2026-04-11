@@ -1,0 +1,6 @@
+# schema=qrd_rumble_csv_v1
+# game_name=PsychoDream
+# match_names=psychodream|psychodreamsnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+damage_taken_0_1e40,0x7E1E40,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
+score_3_aee,0x7E0AEE,1,uint,prev_lt_curr,,left,0.300,normal,0,80,50,10,

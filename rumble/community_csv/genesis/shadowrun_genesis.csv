@@ -1,0 +1,5 @@
+# schema=qrd_rumble_csv_v1
+# game_name=ShadowRun
+# match_names=shadowrun|shadowrungenesis
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+damage_taken_0_19d,0xFF019D,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,

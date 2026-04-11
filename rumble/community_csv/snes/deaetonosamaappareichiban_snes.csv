@@ -1,0 +1,8 @@
+# schema=qrd_rumble_csv_v1
+# game_name=DeaeTonosamaAppareIchiban
+# match_names=deaetonosamaappareichiban|deaetonosamaappareichibansnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+damage_taken_0_241,0x7E0241,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
+enemy_defeated_1_228,0x7E0228,1,uint,changed,,left,0.510,normal,0,100,75,30,
+damage_taken_2_341,0x7E0341,1,uint,prev_gt_curr,,right,0.750,normal,0,180,100,70,
+enemy_defeated_3_328,0x7E0328,1,uint,changed,,right,0.510,normal,0,100,75,30,

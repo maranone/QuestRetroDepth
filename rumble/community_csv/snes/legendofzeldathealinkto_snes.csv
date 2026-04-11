@@ -1,0 +1,6 @@
+# schema=qrd_rumble_csv_v1
+# game_name=LegendOfZeldaTheALinkTo
+# match_names=legendofzeldathealinkto|legendofzeldathealinktosnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+death_1_cfb,0x7E0CFB,1,uint,became_zero,,both,1.000,normal,0,500,400,90,
+damage_taken_2_f36d,0x7EF36D,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,

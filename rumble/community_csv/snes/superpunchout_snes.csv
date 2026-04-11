@@ -1,0 +1,7 @@
+# schema=qrd_rumble_csv_v1
+# game_name=SuperPunchOut
+# match_names=superpunchout|superpunchoutsnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+damage_taken_0_88f,0x7E088F,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
+enemy_defeated_1_98f,0x7E098F,1,uint,changed,,left,0.510,normal,0,100,75,30,
+enemy_defeated_3_b9b,0x7E0B9B,1,uint,changed,,left,0.510,normal,0,100,75,30,

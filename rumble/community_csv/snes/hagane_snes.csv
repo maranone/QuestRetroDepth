@@ -1,0 +1,6 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Hagane
+# match_names=hagane|haganesnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+enemy_defeated_0_516,0x7E0516,1,uint,changed,,left,0.510,normal,0,100,75,30,
+damage_taken_1_514,0x7E0514,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,

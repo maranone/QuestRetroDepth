@@ -1,0 +1,6 @@
+# schema=qrd_rumble_csv_v1
+# game_name=StreetFighterIiTheWorldWarrior
+# match_names=streetfighteriitheworldwarrior|streetfighteriitheworldwarriorsnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+damage_taken_0_c2b,0x7E0C2B,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
+damage_taken_1_e2b,0x7E0E2B,1,uint,prev_gt_curr,,right,0.750,normal,0,180,100,70,

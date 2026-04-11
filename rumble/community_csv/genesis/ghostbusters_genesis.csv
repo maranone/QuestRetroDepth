@@ -1,0 +1,6 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Ghostbusters
+# match_names=ghostbusters|ghostbustersgenesis
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+damage_taken_0_fe2d,0xFFFE2D,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
+powerup_lost_1_fe1c,0xFFFE1C,1,uint,prev_gt_curr,,left,1.000,normal,0,250,75,40,

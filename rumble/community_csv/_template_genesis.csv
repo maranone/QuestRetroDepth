@@ -1,0 +1,7 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Example Genesis Game
+# match_names=example genesis game|examplegenesisgame
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+pickup_event,0xFFFE20,2,uint,prev_lt_curr,,right,0.35,normal,0,30,35,20,Value increased
+damage_taken,0xFFFE12,1,uint,prev_gt_curr,,left,0.85,fade_out,0,90,110,70,Player took damage
+death_event,0xFFFE10,1,uint,became_zero,,both,1.00,fade_in_out,0,260,300,95,Death or critical state

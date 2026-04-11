@@ -1,0 +1,7 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Skyblazer
+# match_names=skyblazer|skyblazersnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+enemy_defeated_0_f002,0x7EF002,1,uint,changed,,left,0.510,normal,0,100,75,30,
+death_2_168,0x7E0168,1,uint,became_zero,,both,1.000,normal,0,500,400,90,
+damage_taken_3_200a,0x7E200A,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,

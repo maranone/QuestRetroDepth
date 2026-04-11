@@ -1,0 +1,10 @@
+# schema=qrd_rumble_csv_v1
+# game_name=PockyandRocky
+# match_names=pockyandrocky|pockyandrockysnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+enemy_defeated_0_f3c,0x7E0F3C,1,uint,changed,,left,0.510,normal,0,100,75,30,
+damage_taken_1_68,0x7E0068,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
+score_2_135,0x7E0135,1,uint,prev_lt_curr,,left,0.300,normal,0,80,50,10,
+enemy_defeated_3_f3e,0x7E0F3E,1,uint,changed,,right,0.510,normal,0,100,75,30,
+damage_taken_4_69,0x7E0069,1,uint,prev_gt_curr,,right,0.750,normal,0,180,100,70,
+score_5_139,0x7E0139,1,uint,prev_lt_curr,,right,0.300,normal,0,80,50,10,

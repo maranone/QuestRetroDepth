@@ -1,0 +1,5 @@
+# schema=qrd_rumble_csv_v1
+# game_name=E
+# match_names=e|esnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+damage_taken_0_c5,0x7E00C5,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,

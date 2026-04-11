@@ -1,0 +1,5 @@
+# schema=qrd_rumble_csv_v1
+# game_name=DoReMiFantasyMilonNoDokidokiD
+# match_names=doremifantasymilonnodokidokid|doremifantasymilonnodokidokidsnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+enemy_defeated_1_6a,0x7E006A,1,uint,changed,,left,0.510,normal,0,100,75,30,

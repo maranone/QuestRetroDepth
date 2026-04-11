@@ -1,6 +1,0 @@
-game_name=AddamsFamilyPugsleysScavengerHuntThe
-game_key=AddamsFamilyPugsleysScavengerHuntThe-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_95	damage_taken	0x7E0095	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	pickup_1_4e	pickup	0x7E004E	1	uint	native	prev != curr	0.7	1	left:0.220:80
