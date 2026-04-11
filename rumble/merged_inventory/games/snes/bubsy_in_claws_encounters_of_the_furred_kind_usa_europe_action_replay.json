@@ -1,0 +1,55 @@
+{
+  "system": "snes",
+  "normalized_title": "bubsyinclawsencountersoffurredkind",
+  "display_name": "Bubsy in Claws Encounters of the Furred Kind (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Bubsy in - Claws Encounters of the Furred Kind (USA)",
+    "Bubsy in Claws Encounters of the Furred Kind (USA) (Beta 2)",
+    "Bubsy in Claws Encounters of the Furred Kind (USA, Europe) (Action Replay)",
+    "Bubsy in Claws Encounters of the Furred Kind (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\bubsyinclawsencountersofthefurredkind_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0077",
+        "0x7E020D"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BubsyInClawsEncountersOfTheFurredKind-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E020D",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0077",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bubsy in Claws Encounters of the Furred Kind (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "libblerabble",
+  "display_name": "Libble Rabble (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Libble Rabble (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E00DE03",
+          "desc": "Infinite Lives",
+          "address": "0x7E00DE"
+        },
+        {
+          "code": "7E190200",
+          "desc": "Make Any Shape To Finish The Stage",
+          "address": "0x7E1902"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

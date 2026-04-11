@@ -1,0 +1,79 @@
+{
+  "system": "genesis",
+  "normalized_title": "heavynova",
+  "display_name": "Heavy Nova (USA) (Action Replay)",
+  "aliases": [
+    "Heavy Nova (USA) (Action Replay)",
+    "Heavy Nova (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\heavynova_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFF246",
+        "0xFFF270"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\HeavyNova-Genesis-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFF246",
+          "type": ">i2"
+        },
+        {
+          "name": "other_robots_killed",
+          "address": "0xFFCBB1",
+          "type": ">d2"
+        },
+        {
+          "name": "robots_killed",
+          "address": "0xFFCBAD",
+          "type": ">d2"
+        },
+        {
+          "name": "rocks_killed",
+          "address": "0xFFCBB7",
+          "type": ">d2"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF270",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Heavy Nova (USA).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFF026:00FF",
+          "desc": "Infinite Health P1",
+          "address": "0xFFF026"
+        },
+        {
+          "code": "FFCB7D:0010",
+          "desc": "Invincibility",
+          "address": "0xFFCB7D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

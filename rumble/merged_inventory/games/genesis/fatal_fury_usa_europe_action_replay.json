@@ -1,0 +1,132 @@
+{
+  "system": "genesis",
+  "normalized_title": "fatalfury",
+  "display_name": "Fatal Fury (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Fatal Fury (USA)",
+    "Fatal Fury (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\fatalfury_genesis.json",
+      "trigger_count": 2,
+      "field_names": [
+        "health"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFD816"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FatalFury-Genesis-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "enemy_matches_won",
+          "address": "0xFFD8CD",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFFD816",
+          "type": "|u1"
+        },
+        {
+          "name": "health_enemy",
+          "address": "0xFFD896",
+          "type": "|u1"
+        },
+        {
+          "name": "matches_won",
+          "address": "0xFFD84D",
+          "type": "|u1"
+        },
+        {
+          "name": "time",
+          "address": "0xFF00BF",
+          "type": "|d1"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Fatal Fury (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FFD816:58",
+          "desc": "P1 Infinite Health",
+          "address": "0xFFD816"
+        },
+        {
+          "code": "FFD817:XX",
+          "desc": "P1 Fake Health Modifier",
+          "address": "0xFFD817"
+        },
+        {
+          "code": "FFD896:XX",
+          "desc": "P2 Health Modifier",
+          "address": "0xFFD896"
+        },
+        {
+          "code": "FFD897:XX",
+          "desc": "P2 Fake Health Modifier",
+          "address": "0xFFD897"
+        },
+        {
+          "code": "FF00BF:60",
+          "desc": "Infinite Time",
+          "address": "0xFF00BF"
+        },
+        {
+          "code": "FFD845:XX",
+          "desc": "P1 Wins Modifier (1P Mode)",
+          "address": "0xFFD845"
+        },
+        {
+          "code": "FFD84D:XX",
+          "desc": "P1 Wins Modifier (VS Mode)",
+          "address": "0xFFD84D"
+        },
+        {
+          "code": "FFD8CD:XX",
+          "desc": "P2 Wins Modifier (VS Mode)",
+          "address": "0xFFD8CD"
+        },
+        {
+          "code": "FF0061:XX",
+          "desc": "Character Select P1 (1P Mode)",
+          "address": "0xFF0061"
+        },
+        {
+          "code": "FF0079:XX",
+          "desc": "Opponent Modifier (1P Mode)",
+          "address": "0xFF0079"
+        },
+        {
+          "code": "FFD803:XX",
+          "desc": "P1 Character Modifier (VS Mode)",
+          "address": "0xFFD803"
+        },
+        {
+          "code": "FFD883:XX",
+          "desc": "P2 Character Modifier (VS Mode)",
+          "address": "0xFFD883"
+        },
+        {
+          "code": "FF202B:XX",
+          "desc": "Level Modifier",
+          "address": "0xFF202B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

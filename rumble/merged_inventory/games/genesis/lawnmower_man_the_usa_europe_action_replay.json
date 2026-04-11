@@ -1,0 +1,84 @@
+{
+  "system": "genesis",
+  "normalized_title": "lawnmowerman",
+  "display_name": "Lawnmower Man, The (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Lawnmower Man, The (USA, Europe) (Action Replay)",
+    "Lawnmower Man, The (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\lawnmowerman_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF3591",
+        "0xFF35E6"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\LawnmowerMan-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "energy",
+          "address": "0xFF3876",
+          "type": ">u2"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF3591",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF35E6",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Lawnmower Man, The (USA, Europe).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF3876:0004",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF3876"
+        },
+        {
+          "code": "FF3590:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF3590"
+        },
+        {
+          "code": "FF35DE:0001",
+          "desc": "Invinicible P1 (Sidescrolling Levels)",
+          "address": "0xFF35DE"
+        },
+        {
+          "code": "FF35DE:0010",
+          "desc": "Invincibility",
+          "address": "0xFF35DE"
+        },
+        {
+          "code": "FF58B6:0010",
+          "desc": "Invincibility",
+          "address": "0xFF58B6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

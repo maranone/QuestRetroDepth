@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "batmanforever",
+  "display_name": "Batman Forever (World) (Action Replay)",
+  "aliases": [
+    "Batman Forever (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Batman Forever (World).cht",
+      "total_cheat_rows": 44,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFD9D4:0006",
+          "desc": "Infinite Lives",
+          "address": "0xFFD9D4"
+        },
+        {
+          "code": "FFE916:0050",
+          "desc": "Infinite Energy",
+          "address": "0xFFE916"
+        },
+        {
+          "code": "FFE578:0000",
+          "desc": "Some Enemies Automatically Die",
+          "address": "0xFFE578"
+        },
+        {
+          "code": "FFE9CE:0000",
+          "desc": "Some Enemies Automatically Die",
+          "address": "0xFFE9CE"
+        },
+        {
+          "code": "FFE6FC:0000",
+          "desc": "Fake Infinite Health P1",
+          "address": "0xFFE6FC"
+        },
+        {
+          "code": "FFE7B7:0061",
+          "desc": "Freeze Time In Training Mode",
+          "address": "0xFFE7B7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

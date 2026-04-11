@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "awspromovessoccer",
+  "display_name": "AWS Pro Moves Soccer (USA) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\AWS Pro Moves Soccer (USA) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF1295:XX",
+          "desc": "Time Modifier (One's Digit)",
+          "address": "0xFF1295"
+        },
+        {
+          "code": "FF1299:XX",
+          "desc": "2P Team Score Modifier",
+          "address": "0xFF1299"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

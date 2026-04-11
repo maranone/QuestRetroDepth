@@ -1,0 +1,45 @@
+{
+  "system": "snes",
+  "normalized_title": "bishindensetsuzoku",
+  "display_name": "Bishin Densetsu Zoku (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bishin Densetsu Zoku (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E0C9600",
+          "desc": "Infinite Time",
+          "address": "0x7E0C96"
+        },
+        {
+          "code": "7E167900",
+          "desc": "Infinte Time",
+          "address": "0x7E1679"
+        },
+        {
+          "code": "7E0D9B3C",
+          "desc": "No Car Damage",
+          "address": "0x7E0D9B"
+        },
+        {
+          "code": "7E122C50",
+          "desc": "Infinite Health",
+          "address": "0x7E122C"
+        },
+        {
+          "code": "7E124E01",
+          "desc": "Untouchable",
+          "address": "0x7E124E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

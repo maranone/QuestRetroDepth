@@ -1,0 +1,83 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "SuperStreetFighterIi",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Super Street Fighter Ii (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "SuperStreetFighterIi-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_0_530",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E0530",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0530",
+          "bank": "7E",
+          "wram_offset": 1328
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss (player 1)",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_player_1",
+          "address": "0x7E0530",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_1_770",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E0770",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0770",
+          "bank": "7E",
+          "wram_offset": 1904
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss (player 2)",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_player_2",
+          "address": "0x7E0770",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

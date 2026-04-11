@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "jetsonsinvasionoftheplanetpirates",
+  "display_name": "JetsonsInvasionOfThePlanetPirates",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\jetsonsinvasionoftheplanetpirates_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E1093",
+        "0x7E1099",
+        "0x7E109D"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JetsonsInvasionOfThePlanetPirates-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E109D",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E1099",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E1093",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 3
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

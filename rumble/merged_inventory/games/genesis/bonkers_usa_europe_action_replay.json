@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "bonkers",
+  "display_name": "Bonkers (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Bonkers (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Bonkers (USA, Europe).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF8B94:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFF8B94"
+        },
+        {
+          "code": "FF8B34:00AA",
+          "desc": "Infinite Energy",
+          "address": "0xFF8B34"
+        },
+        {
+          "code": "FF8D94:0000",
+          "desc": "Level Highlighter",
+          "address": "0xFF8D94"
+        },
+        {
+          "code": "FF892A:0080",
+          "desc": "Infinite Bomb Time",
+          "address": "0xFF892A"
+        },
+        {
+          "code": "FF898A:0000",
+          "desc": "No Rats Remaining In Museum &amp; No Cars In Ma Tow Truck Stage",
+          "address": "0xFF898A"
+        },
+        {
+          "code": "FF8736:0063",
+          "desc": "Infinite Pink Balls",
+          "address": "0xFF8736"
+        },
+        {
+          "code": "FF8732:0063",
+          "desc": "Infinite Oil Spills",
+          "address": "0xFF8732"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

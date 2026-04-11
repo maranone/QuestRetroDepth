@@ -1,0 +1,53 @@
+{
+  "system": "genesis",
+  "normalized_title": "afterburnerii",
+  "display_name": "After Burner II (World) (Action Replay)",
+  "aliases": [
+    "After Burner II (USA, Europe)",
+    "After Burner II (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\afterburnerii_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF06C3",
+        "0xFF06DE"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AfterBurnerII-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF06C3",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF06DE",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\After Burner II (World) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

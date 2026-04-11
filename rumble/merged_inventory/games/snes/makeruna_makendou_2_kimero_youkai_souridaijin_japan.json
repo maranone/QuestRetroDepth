@@ -1,0 +1,85 @@
+{
+  "system": "snes",
+  "normalized_title": "makerunamakendou2kimeroyoukaisouridaijin",
+  "display_name": "Makeruna! Makendou 2 - Kimero! Youkai Souridaijin (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Makeruna! Makendou 2 - Kimero! Youkai Souridaijin (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "7E078899",
+          "desc": "Infinite Time",
+          "address": "0x7E0788"
+        },
+        {
+          "code": "7E080540",
+          "desc": "Infinite Health",
+          "address": "0x7E0805"
+        },
+        {
+          "code": "7E080000",
+          "desc": "Character Modifier",
+          "address": "0x7E0800"
+        },
+        {
+          "code": "7E086000",
+          "desc": "Opponent Modifier",
+          "address": "0x7E0860"
+        },
+        {
+          "code": "7E078C01",
+          "desc": "Battleground Modifier",
+          "address": "0x7E078C"
+        },
+        {
+          "code": "7E085C18",
+          "desc": "Costume Modifier",
+          "address": "0x7E085C"
+        },
+        {
+          "code": "7E08BC18",
+          "desc": "Opponent Costume Modifier",
+          "address": "0x7E08BC"
+        },
+        {
+          "code": "7E086501",
+          "desc": "1 Hit Kill / Opponent Health",
+          "address": "0x7E0865"
+        },
+        {
+          "code": "7E0D1802",
+          "desc": "One Round to Win Match / Point Mod",
+          "address": "0x7E0D18"
+        },
+        {
+          "code": "7E0D7800",
+          "desc": "Opponent Never Wins Match / Point Mod",
+          "address": "0x7E0D78"
+        },
+        {
+          "code": "7E081562",
+          "desc": "Level 99",
+          "address": "0x7E0815"
+        },
+        {
+          "code": "7E081600",
+          "desc": "Exp Modifier",
+          "address": "0x7E0816"
+        },
+        {
+          "code": "7E081700",
+          "desc": "Exp Modifier",
+          "address": "0x7E0817"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "system": "snes",
+  "normalized_title": "nbalive98",
+  "display_name": "NBA Live 98 (USA) (Action Replay)",
+  "aliases": [
+    "NBA Live 98 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\NBA Live 98 (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E461D00",
+          "desc": "Team 1 Points Modifier",
+          "address": "0x7E461D"
+        },
+        {
+          "code": "7E468300",
+          "desc": "Team 2 Points Modifier",
+          "address": "0x7E4683"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

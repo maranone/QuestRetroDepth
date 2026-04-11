@@ -1,0 +1,38 @@
+{
+  "system": "genesis",
+  "normalized_title": "donaldinmauimallard",
+  "display_name": "Donald in Maui Mallard (Europe, Brazil) (Action Replay)",
+  "aliases": [
+    "Donald in Maui Mallard (Europe) (Rev A)",
+    "Donald in Maui Mallard (Europe, Brazil) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Donald in Maui Mallard (Europe, Brazil) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF1345:09",
+          "desc": "Infinite Lives",
+          "address": "0xFF1345"
+        },
+        {
+          "code": "FF1346:01",
+          "desc": "Infinite Energy",
+          "address": "0xFF1346"
+        },
+        {
+          "code": "FF1347:00",
+          "desc": "Infinite Energy",
+          "address": "0xFF1347"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

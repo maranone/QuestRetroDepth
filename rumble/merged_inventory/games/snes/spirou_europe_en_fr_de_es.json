@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "spirou",
+  "display_name": "Spirou (Europe) (En,Fr,De,Es)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Spirou (Europe) (En,Fr,De,Es).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E064005",
+          "desc": "Infinite Health",
+          "address": "0x7E0640"
+        },
+        {
+          "code": "7E064C09",
+          "desc": "Infinite Lives",
+          "address": "0x7E064C"
+        },
+        {
+          "code": "7E06429C",
+          "desc": "Infinite Piccolo Hats",
+          "address": "0x7E0642"
+        },
+        {
+          "code": "7E05D800",
+          "desc": "Stage Text Modifier",
+          "address": "0x7E05D8"
+        },
+        {
+          "code": "7E0EF401",
+          "desc": "Debug Menu",
+          "address": "0x7E0EF4"
+        },
+        {
+          "code": "7E0476BE",
+          "desc": "Invincible",
+          "address": "0x7E0476"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

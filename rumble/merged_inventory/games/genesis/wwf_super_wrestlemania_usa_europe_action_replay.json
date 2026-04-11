@@ -1,0 +1,37 @@
+{
+  "system": "genesis",
+  "normalized_title": "wwfsuperwrestlemania",
+  "display_name": "WWF Super WrestleMania (USA, Europe) (Action Replay)",
+  "aliases": [
+    "WWF Super WrestleMania (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\WWF Super WrestleMania (USA, Europe).cht",
+      "total_cheat_rows": 41,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFB8BE:0000",
+          "desc": "Character Modifier P1 (Alternate)",
+          "address": "0xFFB8BE"
+        },
+        {
+          "code": "FFB8C8:0000",
+          "desc": "Character Modifier P2/CPU (Alternate)",
+          "address": "0xFFB8C8"
+        },
+        {
+          "code": "FFB8FA:0032",
+          "desc": "Infinite Health P1",
+          "address": "0xFFB8FA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

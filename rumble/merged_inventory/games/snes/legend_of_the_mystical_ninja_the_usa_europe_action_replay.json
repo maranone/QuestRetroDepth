@@ -1,0 +1,47 @@
+{
+  "system": "snes",
+  "normalized_title": "legendofmysticalninja",
+  "display_name": "Legend of The Mystical Ninja, The (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Legend of The Mystical Ninja, The (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Legend of The Mystical Ninja, The (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E1AB004",
+          "desc": "Infinite Lives P1",
+          "address": "0x7E1AB0"
+        },
+        {
+          "code": "7E1AB210",
+          "desc": "Infinite Energy P1",
+          "address": "0x7E1AB2"
+        },
+        {
+          "code": "7E1AA810",
+          "desc": "Max Energy P1",
+          "address": "0x7E1AA8"
+        },
+        {
+          "code": "7E1AAD99",
+          "desc": "Lots of Money P1",
+          "address": "0x7E1AAD"
+        },
+        {
+          "code": "7E059202",
+          "desc": "Invincibility P1",
+          "address": "0x7E0592"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

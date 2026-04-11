@@ -1,0 +1,73 @@
+{
+  "system": "genesis",
+  "normalized_title": "alienstorm",
+  "display_name": "Alien Storm (World) (Action Replay)",
+  "aliases": [
+    "Alien Storm (World) (Action Replay)",
+    "Alien Storm (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Alien Storm (World).cht",
+      "total_cheat_rows": 42,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FFF312:0300",
+          "desc": "Infinite Credits",
+          "address": "0xFFF312"
+        },
+        {
+          "code": "FFCE0C:7FFF",
+          "desc": "Infinite Special",
+          "address": "0xFFCE0C"
+        },
+        {
+          "code": "FFCE0A:0060",
+          "desc": "Infinite Energy",
+          "address": "0xFFCE0A"
+        },
+        {
+          "code": "FFCE0B:0060",
+          "desc": "Infinite Lives P1",
+          "address": "0xFFCE0B"
+        },
+        {
+          "code": "FFCE0C:0080",
+          "desc": "Unlimited Energy P1",
+          "address": "0xFFCE0C"
+        },
+        {
+          "code": "FFCE8B:0060",
+          "desc": "Infinite Lives P2",
+          "address": "0xFFCE8B"
+        },
+        {
+          "code": "FFCE8C:0080",
+          "desc": "Unlimited Energy P2",
+          "address": "0xFFCE8C"
+        },
+        {
+          "code": "FFCE1C:0009",
+          "desc": "Freeze Time Continue",
+          "address": "0xFFCE1C"
+        },
+        {
+          "code": "FFCF61:0010",
+          "desc": "Invincibility",
+          "address": "0xFFCF61"
+        },
+        {
+          "code": "FFCF25:0010",
+          "desc": "Invincibility",
+          "address": "0xFFCF25"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

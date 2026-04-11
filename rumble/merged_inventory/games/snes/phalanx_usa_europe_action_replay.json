@@ -1,0 +1,60 @@
+{
+  "system": "snes",
+  "normalized_title": "phalanx",
+  "display_name": "Phalanx (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Phalanx (USA)",
+    "Phalanx (USA, Europe) (Action Replay)",
+    "Phalanx (USA, Europe) (Game Genie)",
+    "Phalanx"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\phalanx_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E08E0",
+        "0x7E08F8"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Phalanx-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E08E0",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E08F8",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Phalanx (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 28,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "PHALANX"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

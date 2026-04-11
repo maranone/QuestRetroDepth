@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "toddsadventuresinslimeworld",
+  "display_name": "Todd's Adventures in Slime World (USA) (Action Replay)",
+  "aliases": [
+    "Todd's Adventures in Slime World (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Todd's Adventures in Slime World (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF66C6:0000",
+          "desc": "Infinite Energy",
+          "address": "0xFF66C6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

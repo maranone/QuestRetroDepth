@@ -1,0 +1,87 @@
+{
+  "system": "genesis",
+  "normalized_title": "championshipbowling",
+  "display_name": "Championship Bowling (USA) (Action Replay)",
+  "aliases": [
+    "Championship Bowling (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Championship Bowling (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FFF7D8:0000",
+          "desc": "Character Modifier P1",
+          "address": "0xFFF7D8"
+        },
+        {
+          "code": "FFF7DA:0000",
+          "desc": "Bowling Ball P1 Modifier",
+          "address": "0xFFF7DA"
+        },
+        {
+          "code": "FFFA68:0000",
+          "desc": "Alley Modifier",
+          "address": "0xFFFA68"
+        },
+        {
+          "code": "FFF824:000A",
+          "desc": "First Ball Always Gets A Strike P1",
+          "address": "0xFFF824"
+        },
+        {
+          "code": "FFF828:000A",
+          "desc": "Second Ball Always Gets A Strike P1",
+          "address": "0xFFF828"
+        },
+        {
+          "code": "FFF82C:000A",
+          "desc": "Third Ball Always Gets A Strike P1",
+          "address": "0xFFF82C"
+        },
+        {
+          "code": "FFF830:000A",
+          "desc": "Fourth Ball Always Gets A Strike P1",
+          "address": "0xFFF830"
+        },
+        {
+          "code": "FFF834:000A",
+          "desc": "Fifth Ball Always Gets A Strike P1",
+          "address": "0xFFF834"
+        },
+        {
+          "code": "FFF838:000A",
+          "desc": "Sixth Ball Always Gets A Strike P1",
+          "address": "0xFFF838"
+        },
+        {
+          "code": "FFF83C:000A",
+          "desc": "Seventh Ball Always Gets A Strike P1",
+          "address": "0xFFF83C"
+        },
+        {
+          "code": "FFF840:000A",
+          "desc": "Eighth Ball Always Gets A Strike P1",
+          "address": "0xFFF840"
+        },
+        {
+          "code": "FFF844:000A",
+          "desc": "Nineth Ball Always Gets A Strike P1",
+          "address": "0xFFF844"
+        },
+        {
+          "code": "FFF848:000A",
+          "desc": "Tenth Ball Always Gets A Strike P1",
+          "address": "0xFFF848"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

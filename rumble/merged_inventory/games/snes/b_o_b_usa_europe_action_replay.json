@@ -1,0 +1,122 @@
+{
+  "system": "snes",
+  "normalized_title": "bob",
+  "display_name": "B.O.B. (USA, Europe) (Action Replay)",
+  "aliases": [
+    "B.O.B. (USA)",
+    "B.O.B. (USA, Europe) (Action Replay)",
+    "B.O.B. (USA, Europe) (Game Genie)",
+    "Bob (Rumbles)",
+    "B.O.B."
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\bob_snes.json",
+      "trigger_count": 12,
+      "field_names": [
+        "health",
+        "lives",
+        "score0",
+        "score1",
+        "score2",
+        "score3",
+        "score4",
+        "score5",
+        "score6",
+        "score7"
+      ],
+      "field_count": 10,
+      "distinct_addresses": [
+        "0x7E0221",
+        "0x7E022D",
+        "0x7E0D9E",
+        "0x7E0DA0",
+        "0x7E0DA2",
+        "0x7E0DA3",
+        "0x7E0DA5",
+        "0x7E0DA7",
+        "0x7E0DA9",
+        "0x7E0DAB"
+      ],
+      "distinct_address_count": 10
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BOB-Snes-v0\\data.json",
+      "field_count": 11,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E0221",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E022D",
+          "type": "|i1"
+        },
+        {
+          "name": "score0",
+          "address": "0x7E0DAB",
+          "type": "|n1"
+        },
+        {
+          "name": "score1",
+          "address": "0x7E0DA9",
+          "type": "|n1"
+        },
+        {
+          "name": "score2",
+          "address": "0x7E0DA7",
+          "type": "|n1"
+        },
+        {
+          "name": "score3",
+          "address": "0x7E0DA5",
+          "type": "|n1"
+        },
+        {
+          "name": "score4",
+          "address": "0x7E0DA3",
+          "type": "|n1"
+        },
+        {
+          "name": "score5",
+          "address": "0x7E0DA2",
+          "type": "|n1"
+        },
+        {
+          "name": "score6",
+          "address": "0x7E0DA0",
+          "type": "|n1"
+        },
+        {
+          "name": "score7",
+          "address": "0x7E0D9E",
+          "type": "|n1"
+        },
+        {
+          "name": "score_full",
+          "address": "0x7E0DA2",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 10
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bob (Rumbles).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 15,
+      "mk3_label": "B.O.B."
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

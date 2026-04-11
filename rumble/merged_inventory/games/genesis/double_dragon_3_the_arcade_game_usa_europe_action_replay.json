@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "doubledragon3arcadegame",
+  "display_name": "Double Dragon 3_ The Arcade Game (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Double Dragon 3_ The Arcade Game (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Double Dragon 3_ The Arcade Game (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FF2338:03E7",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF2338"
+        },
+        {
+          "code": "FF23F2:03E7",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF23F2"
+        },
+        {
+          "code": "FF00EB:63",
+          "desc": "Infinite Coins",
+          "address": "0xFF00EB"
+        },
+        {
+          "code": "FF2341:01",
+          "desc": "Have Tricks P1",
+          "address": "0xFF2341"
+        },
+        {
+          "code": "FF23FB:01",
+          "desc": "Have Tricks P2",
+          "address": "0xFF23FB"
+        },
+        {
+          "code": "FF23C5:01",
+          "desc": "Always Running P1",
+          "address": "0xFF23C5"
+        },
+        {
+          "code": "FF247F:01",
+          "desc": "Always Running P2",
+          "address": "0xFF247F"
+        },
+        {
+          "code": "FF2339:00FA",
+          "desc": "Untouchable P1",
+          "address": "0xFF2339"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "system": "snes",
+  "normalized_title": "lawares",
+  "display_name": "La Wares (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\La Wares (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "7E1183FF",
+          "desc": "Super experience",
+          "address": "0x7E1183"
+        },
+        {
+          "code": "7E0905FF",
+          "desc": "Max Strength",
+          "address": "0x7E0905"
+        },
+        {
+          "code": "7E0901FF",
+          "desc": "Max Attack",
+          "address": "0x7E0901"
+        },
+        {
+          "code": "7E0921FF",
+          "desc": "Max Endurance",
+          "address": "0x7E0921"
+        },
+        {
+          "code": "7E0909FF",
+          "desc": "Max Speed",
+          "address": "0x7E0909"
+        },
+        {
+          "code": "7E0911FF",
+          "desc": "Max Wisdom",
+          "address": "0x7E0911"
+        },
+        {
+          "code": "7E093801",
+          "desc": "Item Slot 1",
+          "address": "0x7E0938"
+        },
+        {
+          "code": "7E093901",
+          "desc": "Item Slot 2",
+          "address": "0x7E0939"
+        },
+        {
+          "code": "7E093A01",
+          "desc": "Item Slot 3",
+          "address": "0x7E093A"
+        },
+        {
+          "code": "7E09353F",
+          "desc": "Max Gold",
+          "address": "0x7E0935"
+        },
+        {
+          "code": "7E093642",
+          "desc": "Max Gold",
+          "address": "0x7E0936"
+        },
+        {
+          "code": "7E09370F",
+          "desc": "Max Gold",
+          "address": "0x7E0937"
+        },
+        {
+          "code": "7E1182FF",
+          "desc": "255 Exp After Battle",
+          "address": "0x7E1182"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

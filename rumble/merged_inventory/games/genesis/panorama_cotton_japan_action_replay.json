@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "panoramacotton",
+  "display_name": "Panorama Cotton (Japan) (Action Replay)",
+  "aliases": [
+    "Panorama Cotton (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Panorama Cotton (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFF370:003C",
+          "desc": "Infinite Energy",
+          "address": "0xFFF370"
+        },
+        {
+          "code": "FFF31F:0005",
+          "desc": "Infinite Credits",
+          "address": "0xFFF31F"
+        },
+        {
+          "code": "FFF3A9:0009",
+          "desc": "Infinite Credit - Panorama Cotton (Japan) (Beta) (1993-11-27)",
+          "address": "0xFFF3A9"
+        },
+        {
+          "code": "FFF3EB:0028",
+          "desc": "Infinite Life - Panorama Cotton (Japan) (Beta) (1993-11-27)",
+          "address": "0xFFF3EB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

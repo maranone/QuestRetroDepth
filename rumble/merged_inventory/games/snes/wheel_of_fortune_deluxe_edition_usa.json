@@ -1,0 +1,65 @@
+{
+  "system": "snes",
+  "normalized_title": "wheeloffortunedeluxeedition",
+  "display_name": "Wheel of Fortune - Deluxe Edition (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Wheel of Fortune - Deluxe Edition (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 9,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E08E900",
+          "desc": "Player 1 Modifier",
+          "address": "0x7E08E9"
+        },
+        {
+          "code": "7E08EA00",
+          "desc": "Player 1 Modifier",
+          "address": "0x7E08EA"
+        },
+        {
+          "code": "7E08E900",
+          "desc": "Player 2 Modifier",
+          "address": "0x7E08E9"
+        },
+        {
+          "code": "7E08EA00",
+          "desc": "Player 2 Modifier",
+          "address": "0x7E08EA"
+        },
+        {
+          "code": "7E08E900",
+          "desc": "Player 3 Modifier",
+          "address": "0x7E08E9"
+        },
+        {
+          "code": "7E08EA00",
+          "desc": "Player 3 Modifier",
+          "address": "0x7E08EA"
+        },
+        {
+          "code": "7E052D27",
+          "desc": "Infinite Time",
+          "address": "0x7E052D"
+        },
+        {
+          "code": "7E052A88",
+          "desc": "Always Spin $5000",
+          "address": "0x7E052A"
+        },
+        {
+          "code": "7E052B13",
+          "desc": "Always Spin $5000",
+          "address": "0x7E052B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "system": "genesis",
+  "normalized_title": "boogiewoogiebowling",
+  "display_name": "BoogieWoogieBowling",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\boogiewoogiebowling_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BoogieWoogieBowling-Genesis-v0\\data.json",
+      "field_count": 21,
+      "fields": [
+        {
+          "name": "frame",
+          "address": "0xFFF983",
+          "type": "|u1"
+        },
+        {
+          "name": "opponent_final",
+          "address": "0xFFF70C",
+          "type": ">u2"
+        },
+        {
+          "name": "opponentf1",
+          "address": "0xFFF6FB",
+          "type": "|u1"
+        },
+        {
+          "name": "opponentf2",
+          "address": "0xFFF6FD",
+          "type": "|u1"
+        },
+        {
+          "name": "opponentf3",
+          "address": "0xFFF6FF",
+          "type": "|u1"
+        },
+        {
+          "name": "opponentf4",
+          "address": "0xFFF701",
+          "type": "|u1"
+        },
+        {
+          "name": "opponentf5",
+          "address": "0xFFF703",
+          "type": "|u1"
+        },
+        {
+          "name": "opponentf6",
+          "address": "0xFFF705",
+          "type": "|u1"
+        },
+        {
+          "name": "opponentf7",
+          "address": "0xFFF707",
+          "type": "|u1"
+        },
+        {
+          "name": "opponentf8",
+          "address": "0xFFF709",
+          "type": "|u1"
+        },
+        {
+          "name": "opponentf9",
+          "address": "0xFFF70B",
+          "type": "|u1"
+        },
+        {
+          "name": "p1_final",
+          "address": "0xFFF788",
+          "type": ">u2"
+        },
+        {
+          "name": "p1f1",
+          "address": "0xFFF777",
+          "type": "|u1"
+        },
+        {
+          "name": "p1f2",
+          "address": "0xFFF779",
+          "type": "|u1"
+        },
+        {
+          "name": "p1f3",
+          "address": "0xFFF77B",
+          "type": "|u1"
+        },
+        {
+          "name": "p1f4",
+          "address": "0xFFF77D",
+          "type": "|u1"
+        },
+        {
+          "name": "p1f5",
+          "address": "0xFFF77F",
+          "type": "|u1"
+        },
+        {
+          "name": "p1f6",
+          "address": "0xFFF781",
+          "type": "|u1"
+        },
+        {
+          "name": "p1f7",
+          "address": "0xFFF783",
+          "type": "|u1"
+        },
+        {
+          "name": "p1f8",
+          "address": "0xFFF785",
+          "type": "|u1"
+        },
+        {
+          "name": "p1f9",
+          "address": "0xFFF787",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 21
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

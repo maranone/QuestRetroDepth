@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "nhl95",
+  "display_name": "NHL 95 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "NHL 95 (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NHL 95 (USA, Europe).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFC022:0009",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFC022"
+        },
+        {
+          "code": "FFC022:0063",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFC022"
+        },
+        {
+          "code": "FFC5FA:0000",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFFC5FA"
+        },
+        {
+          "code": "FFC294:0000",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFFC294"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

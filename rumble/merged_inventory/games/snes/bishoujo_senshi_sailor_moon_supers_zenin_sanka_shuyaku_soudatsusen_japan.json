@@ -1,0 +1,60 @@
+{
+  "system": "snes",
+  "normalized_title": "bishoujosenshisailormoonsuperszeninsankashuyakusoudatsusen",
+  "display_name": "Bishoujo Senshi Sailor Moon SuperS - Zenin Sanka!! Shuyaku Soudatsusen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bishoujo Senshi Sailor Moon SuperS - Zenin Sanka!! Shuyaku Soudatsusen (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E100000",
+          "desc": "P1 Character Modifier",
+          "address": "0x7E1000"
+        },
+        {
+          "code": "7E108000",
+          "desc": "P2 Character Modifier",
+          "address": "0x7E1080"
+        },
+        {
+          "code": "7E1B4000",
+          "desc": "P1 Character Select",
+          "address": "0x7E1B40"
+        },
+        {
+          "code": "7E1B8000",
+          "desc": "P2 Character Select",
+          "address": "0x7E1B80"
+        },
+        {
+          "code": "7E104900",
+          "desc": "P1 HP Modifier",
+          "address": "0x7E1049"
+        },
+        {
+          "code": "7E10C900",
+          "desc": "P2 HP Modifier",
+          "address": "0x7E10C9"
+        },
+        {
+          "code": "7E1E0200",
+          "desc": "P1 Win Modifier",
+          "address": "0x7E1E02"
+        },
+        {
+          "code": "7E1E0300",
+          "desc": "P2 Wins Modifier",
+          "address": "0x7E1E03"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

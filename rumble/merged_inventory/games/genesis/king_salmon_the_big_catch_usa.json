@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "kingsalmonbigcatch",
+  "display_name": "King Salmon - The Big Catch (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\King Salmon - The Big Catch (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFA8AE:0000",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFA8AE"
+        },
+        {
+          "code": "FFA8AC:0007",
+          "desc": "Infinite Time (Hours)",
+          "address": "0xFFA8AC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

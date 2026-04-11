@@ -1,0 +1,35 @@
+{
+  "system": "genesis",
+  "normalized_title": "toyslettoywarsbegin",
+  "display_name": "Toys - Let the Toy Wars begin! (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Toys - Let the Toy Wars begin! (USA).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF00EC:0006",
+          "desc": "Infinite Power (Health)",
+          "address": "0xFF00EC"
+        },
+        {
+          "code": "FF00EA:0006",
+          "desc": "Infinite Lives",
+          "address": "0xFF00EA"
+        },
+        {
+          "code": "FFBC60:0010",
+          "desc": "Invincibility Airplane",
+          "address": "0xFFBC60"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,11 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Cutthroat Island (USA, Europe) (Action Replay)
+# match_names=cutthroatisland|cutthroatislandgenesis
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+life_lost_lives_ff20e5,0xFF20E5,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
+life_gained_lives_ff20e5,0xFF20E5,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,
+score_score0_ff20cd,0xFF20CD,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score1_ff20cf,0xFF20CF,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score2_ff20d1,0xFF20D1,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score3_ff20d3,0xFF20D3,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score4_ff20d5,0xFF20D5,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,

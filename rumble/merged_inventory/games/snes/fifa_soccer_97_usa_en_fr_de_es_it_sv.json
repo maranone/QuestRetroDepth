@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "fifasoccer97",
+  "display_name": "FIFA Soccer 97 (USA) (En,Fr,De,Es,It,Sv)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\FIFA Soccer 97 (USA) (En,Fr,De,Es,It,Sv).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E18D700",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0x7E18D7"
+        },
+        {
+          "code": "7E18D600",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0x7E18D6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

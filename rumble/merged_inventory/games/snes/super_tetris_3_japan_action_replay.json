@@ -1,0 +1,62 @@
+{
+  "system": "snes",
+  "normalized_title": "supertetris3",
+  "display_name": "Super Tetris 3 (Japan) (Action Replay)",
+  "aliases": [
+    "Super Tetris 3 (Japan) (En)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Tetris 3 (Japan) (En).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E150800",
+          "desc": "Automatic Win in Standard Mode for Tetris and Magicaliss",
+          "address": "0x7E1508"
+        },
+        {
+          "code": "7E153E18",
+          "desc": "Automatic Win in Sparkliss Contest Mode",
+          "address": "0x7E153E"
+        },
+        {
+          "code": "7E151600",
+          "desc": "Tetris Piece Modifier (Tetris)",
+          "address": "0x7E1516"
+        },
+        {
+          "code": "7E154200",
+          "desc": "Tetris Piece Modifier (Magicaliss/Sparkliss)",
+          "address": "0x7E1542"
+        },
+        {
+          "code": "7E150000",
+          "desc": "Stage Select (Sparkliss)",
+          "address": "0x7E1500"
+        },
+        {
+          "code": "7E150C7F",
+          "desc": "Set Max. Score (Tetris)",
+          "address": "0x7E150C"
+        },
+        {
+          "code": "7E150D96",
+          "desc": "Set Max. Score (Tetris)",
+          "address": "0x7E150D"
+        },
+        {
+          "code": "7E150E98",
+          "desc": "Set Max. Score (Tetris)",
+          "address": "0x7E150E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

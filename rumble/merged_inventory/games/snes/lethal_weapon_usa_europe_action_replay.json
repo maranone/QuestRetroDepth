@@ -1,0 +1,75 @@
+{
+  "system": "snes",
+  "normalized_title": "lethalweapon",
+  "display_name": "Lethal Weapon (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Lethal Weapon (Rumbles)",
+    "Lethal Weapon (USA)",
+    "Lethal Weapon (USA, Europe) (Action Replay)",
+    "Lethal Weapon (USA, Europe) (Game Genie)",
+    "Lethal Weapon"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\lethalweapon_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "gameover",
+        "health",
+        "score0",
+        "score1"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0x7E0029",
+        "0x7E0226",
+        "0x7E0268",
+        "0x7E026A"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\LethalWeapon-Snes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0x7E0029",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0x7E0226",
+          "type": "|i1"
+        },
+        {
+          "name": "score0",
+          "address": "0x7E026A",
+          "type": "<d2"
+        },
+        {
+          "name": "score1",
+          "address": "0x7E0268",
+          "type": "|d1"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Lethal Weapon (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 4,
+      "mk3_label": "LETHAL WEAPON"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

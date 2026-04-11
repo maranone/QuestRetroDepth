@@ -1,0 +1,5 @@
+game_name=California Games (USA, Europe) (Action Replay)
+game_key=CaliforniaGames-Genesis
+system=genesis
+integration_tier=stable
+trigger	score_score_fffcc0	score	0xFFFCC0	4	uint	big	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,151 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "TeenageMutantNinjaTurtlesIv",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Teenage Mutant Ninja Turtles Iv (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "TeenageMutantNinjaTurtlesIv-Snes"
+  },
+  "triggers": [
+    {
+      "id": "enemy_defeated_1_5d0",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0x7E05D0",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x05D0",
+          "bank": "7E",
+          "wram_offset": 1488
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.51,
+          "duration_ms": 100
+        }
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on attacks (player 1)",
+      "source_fields": [
+        {
+          "name": "rumble_on_attacks_player_1",
+          "address": "0x7E05D0",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_2_44a",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E044A",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x044A",
+          "bank": "7E",
+          "wram_offset": 1098
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumbles on energy loss (player 1)",
+      "source_fields": [
+        {
+          "name": "rumbles_on_energy_loss_player_1",
+          "address": "0x7E044A",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_4_6ac",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0x7E06AC",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x06AC",
+          "bank": "7E",
+          "wram_offset": 1708
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.51,
+          "duration_ms": 100
+        }
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on attacks (player 2)",
+      "source_fields": [
+        {
+          "name": "rumble_on_attacks_player_2",
+          "address": "0x7E06AC",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_5_1ae2",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E1AE2",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x1AE2",
+          "bank": "7E",
+          "wram_offset": 6882
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumbles on energy loss (player 2)",
+      "source_fields": [
+        {
+          "name": "rumbles_on_energy_loss_player_2",
+          "address": "0x7E1AE2",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "talmitsadventure",
+  "display_name": "Talmit's Adventure (Europe) (Action Replay)",
+  "aliases": [
+    "Talmit's Adventure (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Talmit's Adventure (Europe).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFF746:0063",
+          "desc": "Infinite Lives",
+          "address": "0xFFF746"
+        },
+        {
+          "code": "FFF788:0020",
+          "desc": "Infinite Time",
+          "address": "0xFFF788"
+        },
+        {
+          "code": "FFF74A:000F",
+          "desc": "Have Clone Powerup",
+          "address": "0xFFF74A"
+        },
+        {
+          "code": "FFF748:0007",
+          "desc": "Have Dragon Wing Powerup",
+          "address": "0xFFF748"
+        },
+        {
+          "code": "FFF60C:0008",
+          "desc": "Area Modifier",
+          "address": "0xFFF60C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

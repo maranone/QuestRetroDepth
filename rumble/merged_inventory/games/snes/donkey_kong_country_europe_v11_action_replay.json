@@ -1,0 +1,195 @@
+{
+  "system": "snes",
+  "normalized_title": "donkeykongcountry",
+  "display_name": "Donkey Kong Country (Europe v11) (Action Replay)",
+  "aliases": [
+    "Donkey Kong Country (Europe v11) (Action Replay)",
+    "Donkey Kong Country (Europe v11) (Game Genie)",
+    "Donkey Kong Country (Europe) (Action Replay)",
+    "Donkey Kong Country (Europe) (En,Fr,De) (Rev 1)",
+    "Donkey Kong Country (Europe) (En,Fr,De)",
+    "Donkey Kong Country (Europe) (Game Genie)",
+    "Donkey Kong Country (Rumbles)",
+    "Donkey Kong Country (USA) (Action Replay)",
+    "Donkey Kong Country (USA) (Game Genie)",
+    "Donkey Kong Country (USA) (Rev 1)",
+    "Donkey Kong Country (USA) (Rev 2)",
+    "Donkey Kong Country (USA)",
+    "Donkey Kong Country (`UK`)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\donkeykongcountry_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0529",
+        "0x7E0575"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DonkeyKongCountry-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0575",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0529",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Donkey Kong Country (USA).cht",
+      "total_cheat_rows": 162,
+      "raw_entry_count": 65,
+      "distinct_address_count": 53,
+      "sample_raw_entries": [
+        {
+          "code": "7E137F00",
+          "desc": "Infinite time",
+          "address": "0x7E137F"
+        },
+        {
+          "code": "7E057708",
+          "desc": "Infinite lives",
+          "address": "0x7E0577"
+        },
+        {
+          "code": "7E12A911",
+          "desc": "Drop slowly",
+          "address": "0x7E12A9"
+        },
+        {
+          "code": "7E003E01",
+          "desc": "Level Mod",
+          "address": "0x7E003E"
+        },
+        {
+          "code": "7E057901",
+          "desc": "Infinite Health",
+          "address": "0x7E0579"
+        },
+        {
+          "code": "7E0EF380",
+          "desc": "Moon Jump",
+          "address": "0x7E0EF3"
+        },
+        {
+          "code": "7E052B09",
+          "desc": "Moon Jump",
+          "address": "0x7E052B"
+        },
+        {
+          "code": "7E052C09",
+          "desc": "Have 999 Bananas",
+          "address": "0x7E052C"
+        },
+        {
+          "code": "7E052D09",
+          "desc": "Have 999 Bananas",
+          "address": "0x7E052D"
+        },
+        {
+          "code": "7E057763",
+          "desc": "Infinite Lives",
+          "address": "0x7E0577"
+        },
+        {
+          "code": "7E0EF200",
+          "desc": "Donkey Kong Moon Jump",
+          "address": "0x7E0EF2"
+        },
+        {
+          "code": "7E0EF36C",
+          "desc": "Donkey Kong Moon Jump",
+          "address": "0x7E0EF3"
+        },
+        {
+          "code": "7E102B01",
+          "desc": "Donkey Kong Can't Jump",
+          "address": "0x7E102B"
+        },
+        {
+          "code": "7E16E504",
+          "desc": "Donkey Kong Can't Roll",
+          "address": "0x7E16E5"
+        },
+        {
+          "code": "7E16E500",
+          "desc": "Donkey Kong Infinite Rolls",
+          "address": "0x7E16E5"
+        },
+        {
+          "code": "7E102B00",
+          "desc": "Donkey Kong Has Slight Pause Before Jump",
+          "address": "0x7E102B"
+        },
+        {
+          "code": "7E102D01",
+          "desc": "Diddy Kong Can't Jump",
+          "address": "0x7E102D"
+        },
+        {
+          "code": "7E1636FE",
+          "desc": "Diddy Kong Can't Roll or Jump",
+          "address": "0x7E1636"
+        },
+        {
+          "code": "7E16D5FF",
+          "desc": "Invincibility (Donkey Kong)",
+          "address": "0x7E16D5"
+        },
+        {
+          "code": "7E16D7FF",
+          "desc": "Invincibility (Diddy Kong)",
+          "address": "0x7E16D7"
+        },
+        {
+          "code": "7E002A01",
+          "desc": "Continous Roll (Donkey Kong)",
+          "address": "0x7E002A"
+        },
+        {
+          "code": "7E002801",
+          "desc": "Continous Cartwheel (Diddy Kong)",
+          "address": "0x7E0028"
+        },
+        {
+          "code": "7E057B63",
+          "desc": "Set 99 Bananas",
+          "address": "0x7E057B"
+        },
+        {
+          "code": "7E057509",
+          "desc": "Infinite Lives",
+          "address": "0x7E0575"
+        },
+        {
+          "code": "7E057F07",
+          "desc": "Only Need Icon &quot;K&quot; of &quot;KONG&quot; For 1-UP",
+          "address": "0x7E057F"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 15,
+      "mk3_label": "DONKEY KONG COUNTRY UK"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

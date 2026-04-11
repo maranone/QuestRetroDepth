@@ -1,4 +1,5 @@
 #include "rom_browser.h"
+#include "panel_layout.h"
 #include <dirent.h>
 #include <sys/stat.h>
 #include <cctype>
@@ -107,18 +108,13 @@ void RomBrowser::scan_impl(const std::string& dir) {
 
 bool RomBrowser::set_hover_uv(float /*u*/, float v) {
     if (m_entries.empty()) return false;
-    // v = 0 → top of texture. Title bar takes kTitleH/kTexH fraction.
-    float content_v0 = (float)kTitleH / (float)kTexH;
-    float content_v  = (v - content_v0) / (1.0f - content_v0);
-    if (content_v < 0.0f) return false; // hovering title bar
-
-    // Use actual visible count (set by rebuild_texture) to match Kotlin's layout
-    // If not yet rendered (0), fall back to fixed row calculation
     int n_in_view = m_visible_count > 0 ? m_visible_count
                                         : std::min((kTexH - kTitleH) / kRowH,
                                                    std::max(1, (int)m_entries.size() - m_scroll));
-    int row_in_view = (int)(content_v * n_in_view);
-    int abs_row = m_scroll + row_in_view;
+    PanelLayout layout = make_browser_layout(n_in_view, m_scroll);
+    const PanelLayoutItem* item = layout.hit(0.5f, v);
+    if (!item) return false;
+    int abs_row = item->id;
     abs_row = std::max(0, std::min(abs_row, (int)m_entries.size() - 1));
     if (abs_row == m_hovered) return false;
     m_hovered = abs_row;

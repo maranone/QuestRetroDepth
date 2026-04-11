@@ -1,0 +1,65 @@
+{
+  "system": "snes",
+  "normalized_title": "dossungansekibattle",
+  "display_name": "Dossun! Ganseki Battle (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Dossun! Ganseki Battle (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E078A00",
+          "desc": "Difficulty Modifier",
+          "address": "0x7E078A"
+        },
+        {
+          "code": "7E07B703",
+          "desc": "Infinite Continues",
+          "address": "0x7E07B7"
+        },
+        {
+          "code": "7E31A030",
+          "desc": "Infinite Hp",
+          "address": "0x7E31A0"
+        },
+        {
+          "code": "7E387700",
+          "desc": "1 Hit Win / Enemy Hp",
+          "address": "0x7E3877"
+        },
+        {
+          "code": "7E344901",
+          "desc": "Use Special Anytime",
+          "address": "0x7E3449"
+        },
+        {
+          "code": "7E3B2000",
+          "desc": "Enemy Can't Use Special",
+          "address": "0x7E3B20"
+        },
+        {
+          "code": "7E06DA00",
+          "desc": "Stage Modifier",
+          "address": "0x7E06DA"
+        },
+        {
+          "code": "7E345200",
+          "desc": "Character Modifier",
+          "address": "0x7E3452"
+        },
+        {
+          "code": "7E3B2900",
+          "desc": "Enemy Modifier",
+          "address": "0x7E3B29"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

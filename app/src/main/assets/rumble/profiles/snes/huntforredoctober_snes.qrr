@@ -1,0 +1,7 @@
+game_name=Hunt For Red October (Rumbles)
+game_key=HuntForRedOctober-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_damage_14e5	damage_taken	0x7E14E5	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_damage_14e5	death	0x7E14E5	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_1ed1	level_complete	0x7E1ED1	1	uint	native	prev != curr	0.65	1	left:0.800:400;right:0.800:400

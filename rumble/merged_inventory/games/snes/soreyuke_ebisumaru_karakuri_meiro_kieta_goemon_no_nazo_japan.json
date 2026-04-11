@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "soreyukeebisumarukarakurimeirokietagoemonnonazo",
+  "display_name": "Soreyuke Ebisumaru Karakuri Meiro - Kieta Goemon no Nazo!! (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Soreyuke Ebisumaru Karakuri Meiro - Kieta Goemon no Nazo!! (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E008063",
+          "desc": "Infinite Lives",
+          "address": "0x7E0080"
+        },
+        {
+          "code": "7E00B099",
+          "desc": "Infinite Time",
+          "address": "0x7E00B0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

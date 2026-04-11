@@ -1,0 +1,72 @@
+{
+  "system": "snes",
+  "normalized_title": "imperium",
+  "display_name": "Imperium (USA) (Action Replay)",
+  "aliases": [
+    "Imperium (Rumbles)",
+    "Imperium (USA) (Action Replay)",
+    "Imperium (USA) (Game Genie)",
+    "Imperium (USA)",
+    "Imperium"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\imperium_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0AA8",
+        "0x7E0ABE"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Imperium-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E0AA8",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0ABE",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Imperium (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E0A2F09",
+          "desc": "Infinite Bombs",
+          "address": "0x7E0A2F"
+        },
+        {
+          "code": "7E0AD600",
+          "desc": "Quick Level Up",
+          "address": "0x7E0AD6"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 6,
+      "mk3_label": "IMPERIUM"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

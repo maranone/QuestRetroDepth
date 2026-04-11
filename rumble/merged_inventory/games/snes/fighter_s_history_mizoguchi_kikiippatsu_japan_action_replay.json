@@ -1,0 +1,127 @@
+{
+  "system": "snes",
+  "normalized_title": "fightershistorymizoguchikikiippatsu",
+  "display_name": "Fighter's History - Mizoguchi Kikiippatsu!! (Japan) (Action Replay)",
+  "aliases": [
+    "Fighter's History - Mizoguchi Kikiippatsu!! (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Fighter's History - Mizoguchi Kikiippatsu!! (Japan).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 21,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "7E080400",
+          "desc": "Enable Chelnov",
+          "address": "0x7E0804"
+        },
+        {
+          "code": "7E0AA800",
+          "desc": "Player 1's win modifier",
+          "address": "0x7E0AA8"
+        },
+        {
+          "code": "7E0CA800",
+          "desc": "Player 2's win modifier",
+          "address": "0x7E0CA8"
+        },
+        {
+          "code": "7E0AA104",
+          "desc": "Player 1's weakness item cannot be dropped so easily",
+          "address": "0x7E0AA1"
+        },
+        {
+          "code": "7E0CA104",
+          "desc": "Player 2's weakness item cannot be dropped so easily",
+          "address": "0x7E0CA1"
+        },
+        {
+          "code": "7E0AA700",
+          "desc": "Player 1's Costume Color Modifier",
+          "address": "0x7E0AA7"
+        },
+        {
+          "code": "7E0CA700",
+          "desc": "Player 2's Costume Color Modifier",
+          "address": "0x7E0CA7"
+        },
+        {
+          "code": "7E0A6886",
+          "desc": "Player 1 9999900 Score Modifier",
+          "address": "0x7E0A68"
+        },
+        {
+          "code": "7E0A699F",
+          "desc": "Player 1 9999900 Score Modifier",
+          "address": "0x7E0A69"
+        },
+        {
+          "code": "7E0A6A01",
+          "desc": "Player 1 9999900 Score Modifier",
+          "address": "0x7E0A6A"
+        },
+        {
+          "code": "7E0C6886",
+          "desc": "Player 2 9999900 Score Modifier",
+          "address": "0x7E0C68"
+        },
+        {
+          "code": "7E0C699F",
+          "desc": "Player 2 9999900 Score Modifier",
+          "address": "0x7E0C69"
+        },
+        {
+          "code": "7E0C6A01",
+          "desc": "Player 2 9999900 Score Modifier",
+          "address": "0x7E0C6A"
+        },
+        {
+          "code": "7E0A8D00",
+          "desc": "Player 1 Remove Weakness Item",
+          "address": "0x7E0A8D"
+        },
+        {
+          "code": "7E0C8D00",
+          "desc": "Player 2 Remove Weakness Item",
+          "address": "0x7E0C8D"
+        },
+        {
+          "code": "7E00B563",
+          "desc": "Infinite Time",
+          "address": "0x7E00B5"
+        },
+        {
+          "code": "7E0AA0FF",
+          "desc": "Infinite Health",
+          "address": "0x7E0AA0"
+        },
+        {
+          "code": "7E0CA001",
+          "desc": "1 Hit Win (Player 2's Health)",
+          "address": "0x7E0CA0"
+        },
+        {
+          "code": "7E094C00",
+          "desc": "Stage Modifier",
+          "address": "0x7E094C"
+        },
+        {
+          "code": "7E0A0000",
+          "desc": "Character Modifier P1",
+          "address": "0x7E0A00"
+        },
+        {
+          "code": "7E0C0000",
+          "desc": "Character Modifier P2",
+          "address": "0x7E0C00"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

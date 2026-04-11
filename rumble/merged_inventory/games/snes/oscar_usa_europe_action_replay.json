@@ -1,0 +1,38 @@
+{
+  "system": "snes",
+  "normalized_title": "oscar",
+  "display_name": "Oscar (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Oscar (USA)",
+    "Oscar (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Oscar (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E032003",
+          "desc": "Invincible",
+          "address": "0x7E0320"
+        },
+        {
+          "code": "7E032400",
+          "desc": "Oscars Found",
+          "address": "0x7E0324"
+        },
+        {
+          "code": "7E032209",
+          "desc": "Infinite Lives",
+          "address": "0x7E0322"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

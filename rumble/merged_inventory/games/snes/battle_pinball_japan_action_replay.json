@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "battlepinball",
+  "display_name": "Battle Pinball (Japan) (Action Replay)",
+  "aliases": [
+    "Battle Pinball (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Battle Pinball (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E044663",
+          "desc": "Bonus Modifier",
+          "address": "0x7E0446"
+        },
+        {
+          "code": "7E047B00",
+          "desc": "Field Bonus Modifier",
+          "address": "0x7E047B"
+        },
+        {
+          "code": "7E044403",
+          "desc": "Infinite Balls (Turn Off When You Want To Finish The Game)",
+          "address": "0x7E0444"
+        },
+        {
+          "code": "7E098F06",
+          "desc": "Press Select on Title Screen for Configuration Menu",
+          "address": "0x7E098F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

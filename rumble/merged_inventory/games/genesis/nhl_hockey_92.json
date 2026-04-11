@@ -1,0 +1,40 @@
+{
+  "system": "genesis",
+  "normalized_title": "nhlhockey92",
+  "display_name": "NHL Hockey '92",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NHL Hockey '92.cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFD8E8:0009",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFD8E8"
+        },
+        {
+          "code": "FFD8E8:0079",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFD8E8"
+        },
+        {
+          "code": "FFD902:0063",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFFD902"
+        },
+        {
+          "code": "FFD98A:0000",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFFD98A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

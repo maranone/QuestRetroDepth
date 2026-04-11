@@ -1,0 +1,464 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "ff3",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\ff3.cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [
+    {
+      "id": "enemy_defeated_3bfc",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x3BFC",
+          "wram_offset": 15356,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Enemy health set to 0, indicating defeat",
+      "source_cheats": [
+        {
+          "code": "7E3BFC00",
+          "desc": "Enemy 1 No Health"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_3bfd",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x3BFD",
+          "wram_offset": 15357,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Enemy health set to 0, indicating defeat",
+      "source_cheats": [
+        {
+          "code": "7E3BFD00",
+          "desc": "Enemy 1 No Health"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_3bfe",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x3BFE",
+          "wram_offset": 15358,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Enemy health set to 0, indicating defeat",
+      "source_cheats": [
+        {
+          "code": "7E3BFE00",
+          "desc": "Enemy 2 No Health"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_3bff",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x3BFF",
+          "wram_offset": 15359,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Enemy health set to 0, indicating defeat",
+      "source_cheats": [
+        {
+          "code": "7E3BFF00",
+          "desc": "Enemy 2 No Health"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_3c00",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x3C00",
+          "wram_offset": 15360,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Enemy health set to 0, indicating defeat",
+      "source_cheats": [
+        {
+          "code": "7E3C0000",
+          "desc": "Enemy 3 No Health"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_3c01",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x3C01",
+          "wram_offset": 15361,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Enemy health set to 0, indicating defeat",
+      "source_cheats": [
+        {
+          "code": "7E3C0100",
+          "desc": "Enemy 3 No Health"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_3c02",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x3C02",
+          "wram_offset": 15362,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Enemy health set to 0, indicating defeat",
+      "source_cheats": [
+        {
+          "code": "7E3C0200",
+          "desc": "Enemy 4 No Health"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_3c03",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x3C03",
+          "wram_offset": 15363,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Enemy health set to 0, indicating defeat",
+      "source_cheats": [
+        {
+          "code": "7E3C0300",
+          "desc": "Enemy 4 No Health"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_3c04",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x3C04",
+          "wram_offset": 15364,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Enemy health set to 0, indicating defeat",
+      "source_cheats": [
+        {
+          "code": "7E3C0400",
+          "desc": "Enemy 5 No Health"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_3c05",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x3C05",
+          "wram_offset": 15365,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Enemy health set to 0, indicating defeat",
+      "source_cheats": [
+        {
+          "code": "7E3C0500",
+          "desc": "Enemy 5 No Health"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_3c06",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x3C06",
+          "wram_offset": 15366,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Enemy health set to 0, indicating defeat",
+      "source_cheats": [
+        {
+          "code": "7E3C0600",
+          "desc": "Enemy 6 No Health"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_3c07",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x3C07",
+          "wram_offset": 15367,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Enemy health set to 0, indicating defeat",
+      "source_cheats": [
+        {
+          "code": "7E3C0700",
+          "desc": "Enemy 6 No Health"
+        }
+      ]
+    },
+    {
+      "id": "pickup_1fd0",
+      "event": "pickup",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x1FD0",
+          "wram_offset": 8144,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.25,
+          "duration_ms": 18
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Sets a value that may represent a pickup count",
+      "source_cheats": [
+        {
+          "code": "7E1FD063",
+          "desc": "Have 99 Pieces of Coral"
+        }
+      ]
+    },
+    {
+      "id": "powerup_gained_1ede",
+      "event": "powerup_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x1EDE",
+          "wram_offset": 7902,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.6,
+          "duration_ms": 120
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Enables all characters, which may be a powerup",
+      "source_cheats": [
+        {
+          "code": "7E1EDEFF",
+          "desc": "Enable All Characters"
+        }
+      ]
+    },
+    {
+      "id": "powerup_gained_1edf",
+      "event": "powerup_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x1EDF",
+          "wram_offset": 7903,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.6,
+          "duration_ms": 120
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Enables all characters, which may be a powerup",
+      "source_cheats": [
+        {
+          "code": "7E1EDFFF",
+          "desc": "Enable All Characters"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

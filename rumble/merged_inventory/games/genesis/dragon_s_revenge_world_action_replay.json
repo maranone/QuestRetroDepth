@@ -1,0 +1,111 @@
+{
+  "system": "genesis",
+  "normalized_title": "dragonsrevenge",
+  "display_name": "Dragon's Revenge (World) (Action Replay)",
+  "aliases": [
+    "Dragon's Revenge (USA, Europe)",
+    "Dragon's Revenge (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\dragonsrevenge_genesis.json",
+      "trigger_count": 8,
+      "field_names": [
+        "score0",
+        "score1",
+        "score2",
+        "score3",
+        "score4",
+        "score5",
+        "score6",
+        "score7"
+      ],
+      "field_count": 8,
+      "distinct_addresses": [
+        "0xFFD71D",
+        "0xFFD71F",
+        "0xFFD721",
+        "0xFFD723",
+        "0xFFD725",
+        "0xFFD727",
+        "0xFFD729",
+        "0xFFD72B"
+      ],
+      "distinct_address_count": 8
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DragonsRevenge-Genesis-v0\\data.json",
+      "field_count": 9,
+      "fields": [
+        {
+          "name": "balls_left",
+          "address": "0xFFD72F",
+          "type": "|i1"
+        },
+        {
+          "name": "score0",
+          "address": "0xFFD72B",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0xFFD729",
+          "type": "|u1"
+        },
+        {
+          "name": "score2",
+          "address": "0xFFD727",
+          "type": "|u1"
+        },
+        {
+          "name": "score3",
+          "address": "0xFFD725",
+          "type": "|u1"
+        },
+        {
+          "name": "score4",
+          "address": "0xFFD723",
+          "type": "|u1"
+        },
+        {
+          "name": "score5",
+          "address": "0xFFD721",
+          "type": "|u1"
+        },
+        {
+          "name": "score6",
+          "address": "0xFFD71F",
+          "type": "|u1"
+        },
+        {
+          "name": "score7",
+          "address": "0xFFD71D",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 9
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Dragon's Revenge (World) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFD72F:09",
+          "desc": "Infinite Balls P1",
+          "address": "0xFFD72F"
+        },
+        {
+          "code": "FFD81D:09",
+          "desc": "Infinite Balls P2",
+          "address": "0xFFD81D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -71,6 +71,8 @@ public:
     virtual RomHeaderInfo get_rom_header_info() const = 0;
     // Get z-buffer histogram. Returns nullptr if histogram not available.
     virtual const uint32_t* get_z_histogram() const = 0;
+    virtual const uint8_t* system_ram_data() const = 0;
+    virtual std::size_t system_ram_size() const = 0;
 };
 
 std::unique_ptr<EmulatorBackend> create_backend(BackendKind kind);

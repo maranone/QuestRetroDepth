@@ -1,0 +1,109 @@
+{
+  "system": "genesis",
+  "normalized_title": "clayfighter",
+  "display_name": "Clay Fighter (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Clay Fighter (USA, Europe) (Action Replay)",
+    "ClayFighter (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\clayfighter_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF199B",
+        "0xFF41C2"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ClayFighter-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF41C2",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF199B",
+          "type": ">d5"
+        },
+        {
+          "name": "wins",
+          "address": "0xFF19A8",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\ClayFighter (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "FF47B4:33FC",
+          "desc": "Infinite Energy",
+          "address": "0xFF47B4"
+        },
+        {
+          "code": "FF47B6:6868",
+          "desc": "Infinite Energy",
+          "address": "0xFF47B6"
+        },
+        {
+          "code": "FF47B8:00FF",
+          "desc": "Infinite Energy",
+          "address": "0xFF47B8"
+        },
+        {
+          "code": "FF47BA:41C2",
+          "desc": "Infinite Energy",
+          "address": "0xFF47BA"
+        },
+        {
+          "code": "FF8E4A:0000",
+          "desc": "Character Modifier P1",
+          "address": "0xFF8E4A"
+        },
+        {
+          "code": "FF8E0A:0000",
+          "desc": "Character Modifier P2",
+          "address": "0xFF8E0A"
+        },
+        {
+          "code": "FF19A8:0000",
+          "desc": "CPU/P2's Number of Rounds Won Modifier",
+          "address": "0xFF19A8"
+        },
+        {
+          "code": "FF41C2:0045",
+          "desc": "Fake Infinite Health P1",
+          "address": "0xFF41C2"
+        },
+        {
+          "code": "FF08B0:0000",
+          "desc": "Stage Modifier",
+          "address": "0xFF08B0"
+        },
+        {
+          "code": "FF56FA:001D",
+          "desc": "Infinite Time",
+          "address": "0xFF56FA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

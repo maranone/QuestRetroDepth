@@ -1,0 +1,29 @@
+{
+  "system": "snes",
+  "normalized_title": "lionking",
+  "display_name": "Lion King, The (World) (Action Replay)",
+  "aliases": [
+    "Lion King, The (USA)",
+    "Lion King, The (World) (Action Replay)",
+    "Lion King, The (World) (Game Genie)",
+    "The Lion King"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Lion King, The (World) (Game Genie).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 5,
+      "mk3_label": "LION KING"
+    }
+  },
+  "recommended_primary_source": "action_replay_mk_iii",
+  "notes": [
+    "SNES built-in cheat count present, but raw codes are not machine-readable here."
+  ]
+}

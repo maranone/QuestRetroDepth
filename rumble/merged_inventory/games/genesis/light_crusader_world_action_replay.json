@@ -1,0 +1,40 @@
+{
+  "system": "genesis",
+  "normalized_title": "lightcrusader",
+  "display_name": "Light Crusader (World) (Action Replay)",
+  "aliases": [
+    "Light Crusader (Japan)",
+    "Light Crusader (Korea) (En,Ko)",
+    "Light Crusader (USA)",
+    "Light Crusader (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Light Crusader (World) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFAA01:FF",
+          "desc": "Fake Infinite Health",
+          "address": "0xFFAA01"
+        },
+        {
+          "code": "FFD059:FF",
+          "desc": "Infinite Health",
+          "address": "0xFFD059"
+        },
+        {
+          "code": "FFAA03:00",
+          "desc": "Fake No Health Some Enemies",
+          "address": "0xFFAA03"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

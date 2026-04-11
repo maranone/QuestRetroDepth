@@ -1,0 +1,8 @@
+game_name=Bimini Run (USA) (Action Replay)
+game_key=BiminiRun-Genesis
+system=genesis
+integration_tier=stable
+trigger	game_over_gameover_ff10fd	game_over	0xFF10FD	1	int	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	life_lost_lives_ff3bb3	life_lost	0xFF3BB3	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff3bb3	life_gained	0xFF3BB3	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ff3bad	score	0xFF3BAD	3	uint	big	prev < curr	0.8	1	right:0.350:60

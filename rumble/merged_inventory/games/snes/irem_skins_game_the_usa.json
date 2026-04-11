@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "iremskinsgame",
+  "display_name": "Irem Skins Game, The (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Irem Skins Game, The (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E816801",
+          "desc": "P1 Always on 1st Stroke",
+          "address": "0x7E8168"
+        },
+        {
+          "code": "7EBCEE00",
+          "desc": "No Wind",
+          "address": "0x7EBCEE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

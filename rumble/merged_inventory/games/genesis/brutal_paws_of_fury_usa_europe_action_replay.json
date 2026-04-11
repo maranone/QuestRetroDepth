@@ -1,0 +1,38 @@
+{
+  "system": "genesis",
+  "normalized_title": "brutalpawsoffury",
+  "display_name": "Brutal - Paws of Fury (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Brutal - Paws of Fury (USA)",
+    "Brutal - Paws of Fury (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Brutal - Paws of Fury (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF02F6:4000",
+          "desc": "Enable Dali Llama",
+          "address": "0xFF02F6"
+        },
+        {
+          "code": "FF03A2:0060",
+          "desc": "Infinite Health P1",
+          "address": "0xFF03A2"
+        },
+        {
+          "code": "FF0416:0000",
+          "desc": "Instant Death P2",
+          "address": "0xFF0416"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

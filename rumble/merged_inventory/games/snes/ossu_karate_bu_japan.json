@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "ossukaratebu",
+  "display_name": "Ossu!! Karate-bu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ossu!! Karate-bu (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E0A15A0",
+          "desc": "Inf.Health",
+          "address": "0x7E0A15"
+        },
+        {
+          "code": "7E0A1460",
+          "desc": "Inf.Special",
+          "address": "0x7E0A14"
+        },
+        {
+          "code": "7E085800",
+          "desc": "Character Modifier",
+          "address": "0x7E0858"
+        },
+        {
+          "code": "7E0878BE",
+          "desc": "Opponent Modifier",
+          "address": "0x7E0878"
+        },
+        {
+          "code": "7E0A3400",
+          "desc": "Opponent No Special",
+          "address": "0x7E0A34"
+        },
+        {
+          "code": "7E0F0901",
+          "desc": "Enable Takagi and Chiyo Moyo Cheat",
+          "address": "0x7E0F09"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

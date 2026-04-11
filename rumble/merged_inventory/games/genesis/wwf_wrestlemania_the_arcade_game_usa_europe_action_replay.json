@@ -1,0 +1,60 @@
+{
+  "system": "genesis",
+  "normalized_title": "wwfwrestlemaniaarcadegame",
+  "display_name": "WWF WrestleMania - The Arcade Game (USA, Europe) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\WWF WrestleMania - The Arcade Game (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFB313:A4",
+          "desc": "Infinite Energy P1",
+          "address": "0xFFB313"
+        },
+        {
+          "code": "FFB321:A4",
+          "desc": "Infinite Energy P2",
+          "address": "0xFFB321"
+        },
+        {
+          "code": "FFB313:00",
+          "desc": "No Energy P1",
+          "address": "0xFFB313"
+        },
+        {
+          "code": "FFB321:00",
+          "desc": "No Energy P2",
+          "address": "0xFFB321"
+        },
+        {
+          "code": "FFB31D:10",
+          "desc": "Combo Meter Fills One Hit P1",
+          "address": "0xFFB31D"
+        },
+        {
+          "code": "FFB32B:10",
+          "desc": "Combo Meter Fills One Hit P2",
+          "address": "0xFFB32B"
+        },
+        {
+          "code": "FFB31D:00",
+          "desc": "Combo Meter Doesn't Fill P1",
+          "address": "0xFFB31D"
+        },
+        {
+          "code": "FFB32B:00",
+          "desc": "Combo Meter Doesn't Fill P2",
+          "address": "0xFFB32B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

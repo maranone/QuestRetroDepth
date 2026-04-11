@@ -1,0 +1,57 @@
+{
+  "system": "snes",
+  "normalized_title": "castlevaniavampireskiss",
+  "display_name": "Castlevania - Vampire's Kiss (Europe) (Action Replay)",
+  "aliases": [
+    "Castlevania - Vampire's Kiss (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Castlevania - Vampire's Kiss (Europe).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E009E99",
+          "desc": "Infinite 99 Lives Left",
+          "address": "0x7E009E"
+        },
+        {
+          "code": "7E00A099",
+          "desc": "Score Always 9999",
+          "address": "0x7E00A0"
+        },
+        {
+          "code": "7E00A199",
+          "desc": "Score Always 9999",
+          "address": "0x7E00A1"
+        },
+        {
+          "code": "7E00A299",
+          "desc": "Always Have 99 Hearts",
+          "address": "0x7E00A2"
+        },
+        {
+          "code": "7E00A840",
+          "desc": "Infinite Life",
+          "address": "0x7E00A8"
+        },
+        {
+          "code": "7E00A400",
+          "desc": "Always Have Item",
+          "address": "0x7E00A4"
+        },
+        {
+          "code": "7E00DE0A",
+          "desc": "Untouchable",
+          "address": "0x7E00DE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

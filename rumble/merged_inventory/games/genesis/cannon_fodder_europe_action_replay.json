@@ -1,0 +1,98 @@
+{
+  "system": "genesis",
+  "normalized_title": "cannonfodder",
+  "display_name": "Cannon Fodder (Europe) (Action Replay)",
+  "aliases": [
+    "Cannon Fodder (Europe) (Action Replay)",
+    "Cannon Fodder (Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\cannonfodder_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CannonFodder-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "enemies_killed",
+          "address": "0xFF211C",
+          "type": ">i2"
+        },
+        {
+          "name": "own_soldiers_alive",
+          "address": "0xFF2990",
+          "type": "|u1"
+        },
+        {
+          "name": "recruits_remaining",
+          "address": "0xFF1D78",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Cannon Fodder (Europe).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FF1D66:0000",
+          "desc": "Mission Select",
+          "address": "0xFF1D66"
+        },
+        {
+          "code": "FF1D79:0032",
+          "desc": "Infinite Recruits",
+          "address": "0xFF1D79"
+        },
+        {
+          "code": "FF3911:0063",
+          "desc": "Infinite Grenades - Unit 1",
+          "address": "0xFF3911"
+        },
+        {
+          "code": "FF3913:0063",
+          "desc": "Infinite Grenades - Unit 2",
+          "address": "0xFF3913"
+        },
+        {
+          "code": "FF3915:0063",
+          "desc": "Infinite Grenades - Unit 3",
+          "address": "0xFF3915"
+        },
+        {
+          "code": "FF3917:0063",
+          "desc": "Infinite Rockets - Unit 1",
+          "address": "0xFF3917"
+        },
+        {
+          "code": "FF3919:0063",
+          "desc": "Infinite Rockets - Unit 2",
+          "address": "0xFF3919"
+        },
+        {
+          "code": "FF391B:0063",
+          "desc": "Infinite Rockets - Unit 3",
+          "address": "0xFF391B"
+        },
+        {
+          "code": "FF280A:00FF",
+          "desc": "Skip Mission In Pause Put Your Cursor On The White Flag And Press AA",
+          "address": "0xFF280A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

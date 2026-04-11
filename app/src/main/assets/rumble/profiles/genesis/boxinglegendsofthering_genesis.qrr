@@ -1,0 +1,6 @@
+game_name=Boxing Legends of the Ring (USA) (Action Replay)
+game_key=BoxingLegendsOfTheRing-Genesis
+system=genesis
+integration_tier=stable
+trigger	game_over_gameover_ffc04d	game_over	0xFFC04D	1	uint	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	score_score_ffb461	score	0xFFB461	1	uint	native	prev < curr	0.8	1	right:0.350:60

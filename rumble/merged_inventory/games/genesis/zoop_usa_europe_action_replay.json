@@ -1,0 +1,28 @@
+{
+  "system": "genesis",
+  "normalized_title": "zoop",
+  "display_name": "Zoop (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Zoop (USA)",
+    "Zoop (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Zoop (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF987F:XX",
+          "desc": "Level Modifier",
+          "address": "0xFF987F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

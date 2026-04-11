@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "otobokeninjacolosseum",
+  "display_name": "Otoboke Ninja Colosseum (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Otoboke Ninja Colosseum (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E0CF006",
+          "desc": "Infinite Lives",
+          "address": "0x7E0CF0"
+        },
+        {
+          "code": "7E074C59",
+          "desc": "Invincible",
+          "address": "0x7E074C"
+        },
+        {
+          "code": "7E07920A",
+          "desc": "Have 10 Shurikens",
+          "address": "0x7E0792"
+        },
+        {
+          "code": "7E076002",
+          "desc": "Always Move Faster",
+          "address": "0x7E0760"
+        },
+        {
+          "code": "7E076AFF",
+          "desc": "Enemies Are Always Frozen",
+          "address": "0x7E076A"
+        },
+        {
+          "code": "7E072509",
+          "desc": "Infinite Time",
+          "address": "0x7E0725"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

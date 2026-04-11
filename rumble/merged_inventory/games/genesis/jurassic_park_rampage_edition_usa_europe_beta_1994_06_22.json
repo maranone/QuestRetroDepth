@@ -1,0 +1,43 @@
+{
+  "system": "genesis",
+  "normalized_title": "jurassicparkrampageedition",
+  "display_name": "Jurassic Park - Rampage Edition (USA, Europe) (Beta) (1994-06-22)",
+  "aliases": [
+    "Jurassic Park - Rampage Edition (USA, Europe) (Beta) (1994-06-22)",
+    "Jurassic Park - Rampage Edition (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Jurassic Park - Rampage Edition (USA, Europe).cht",
+      "total_cheat_rows": 38,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFC968:00FF",
+          "desc": "Infinite Health (Grant)",
+          "address": "0xFFC968"
+        },
+        {
+          "code": "FFC294:00FF",
+          "desc": "Infinite Health (Raptor)",
+          "address": "0xFFC294"
+        },
+        {
+          "code": "FFC968:0009",
+          "desc": "Infinite Lives (Grant &amp; Raptor)",
+          "address": "0xFFC968"
+        },
+        {
+          "code": "FF98B2:0000",
+          "desc": "Level Highlighter Modifier",
+          "address": "0xFF98B2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "system": "genesis",
+  "normalized_title": "dukenukem3d",
+  "display_name": "Duke Nukem 3D (Brazil) (Action Replay)",
+  "aliases": [
+    "Duke Nukem 3D (Brazil)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Duke Nukem 3D (Brazil).cht",
+      "total_cheat_rows": 31,
+      "raw_entry_count": 16,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FF5572:00C8",
+          "desc": "Infinite Energy",
+          "address": "0xFF5572"
+        },
+        {
+          "code": "FF5566:0063",
+          "desc": "Infinite Ammo Wp2",
+          "address": "0xFF5566"
+        },
+        {
+          "code": "FF5568:0063",
+          "desc": "Infinite Ammo Wp3",
+          "address": "0xFF5568"
+        },
+        {
+          "code": "FF556A:0063",
+          "desc": "Infinite Ammo Wp4",
+          "address": "0xFF556A"
+        },
+        {
+          "code": "FF556C:0063",
+          "desc": "Infinite Ammo Wp5",
+          "address": "0xFF556C"
+        },
+        {
+          "code": "FF556E:0063",
+          "desc": "Infinite Ammo Wp6",
+          "address": "0xFF556E"
+        },
+        {
+          "code": "FF5570:0063",
+          "desc": "Infinite Ammo Wp7",
+          "address": "0xFF5570"
+        },
+        {
+          "code": "FF5572:0064",
+          "desc": "Infinite Health",
+          "address": "0xFF5572"
+        },
+        {
+          "code": "FF5540:0000",
+          "desc": "Run Mode Toggle (0-1)",
+          "address": "0xFF5540"
+        },
+        {
+          "code": "FF5596:0000",
+          "desc": "Weapon Effect Modifier",
+          "address": "0xFF5596"
+        },
+        {
+          "code": "FF5566:0064",
+          "desc": "Infinite Ammo: Pistol",
+          "address": "0xFF5566"
+        },
+        {
+          "code": "FF5568:0064",
+          "desc": "Infinite Ammo: Shotgun",
+          "address": "0xFF5568"
+        },
+        {
+          "code": "FF556A:0064",
+          "desc": "Infinite Ammo: Triple Shotgun",
+          "address": "0xFF556A"
+        },
+        {
+          "code": "FF556C:0064",
+          "desc": "Infinite Ammo: Rocket Launcher",
+          "address": "0xFF556C"
+        },
+        {
+          "code": "FF556E:0064",
+          "desc": "Infinite Ammo: Pipe Bombs",
+          "address": "0xFF556E"
+        },
+        {
+          "code": "FF5570:0064",
+          "desc": "Infinite Ammo: Rocket Launcher 2x?",
+          "address": "0xFF5570"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

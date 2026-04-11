@@ -1,0 +1,92 @@
+{
+  "system": "genesis",
+  "normalized_title": "beyondzerotolerance",
+  "display_name": "Beyond Zero Tolerance (USA) (Action Replay)",
+  "aliases": [
+    "Beyond Zero Tolerance (USA) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Beyond Zero Tolerance (USA) (Proto).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 14,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "FF2BAC:0001",
+          "desc": "Kirsten Holdsted Never Deceased",
+          "address": "0xFF2BAC"
+        },
+        {
+          "code": "FF2BAC:0001",
+          "desc": "Chris Olsen Never Deceased",
+          "address": "0xFF2BAC"
+        },
+        {
+          "code": "FF2BAE:0001",
+          "desc": "Victor Reisen Never Deceased",
+          "address": "0xFF2BAE"
+        },
+        {
+          "code": "FF2BAE:0001",
+          "desc": "Erich Hershel Never Deceased",
+          "address": "0xFF2BAE"
+        },
+        {
+          "code": "FF2BB0:0001",
+          "desc": "Verner Romberg Never Deceased",
+          "address": "0xFF2BB0"
+        },
+        {
+          "code": "FF105C:0063",
+          "desc": "Infinite Ammo Slot 1",
+          "address": "0xFF105C"
+        },
+        {
+          "code": "FF1060:0063",
+          "desc": "Infinite Ammo Slot 2",
+          "address": "0xFF1060"
+        },
+        {
+          "code": "FF1064:0063",
+          "desc": "Infinite Ammo Slot 3",
+          "address": "0xFF1064"
+        },
+        {
+          "code": "FF1068:0063",
+          "desc": "Infinite Ammo Slot 4",
+          "address": "0xFF1068"
+        },
+        {
+          "code": "FF106C:0063",
+          "desc": "Infinite Ammo Slot 5",
+          "address": "0xFF106C"
+        },
+        {
+          "code": "FF1070:000A",
+          "desc": "Infinite Accessory Slot 1",
+          "address": "0xFF1070"
+        },
+        {
+          "code": "FF1074:000A",
+          "desc": "Infinite Accessory Slot 2",
+          "address": "0xFF1074"
+        },
+        {
+          "code": "FF1078:000A",
+          "desc": "Infinite Accessory Slot 3",
+          "address": "0xFF1078"
+        },
+        {
+          "code": "FF0DEC:0064",
+          "desc": "Infinite Energy",
+          "address": "0xFF0DEC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

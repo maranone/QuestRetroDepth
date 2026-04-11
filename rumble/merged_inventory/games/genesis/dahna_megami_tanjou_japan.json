@@ -1,0 +1,50 @@
+{
+  "system": "genesis",
+  "normalized_title": "dahnamegamitanjou",
+  "display_name": "Dahna - Megami Tanjou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Dahna - Megami Tanjou (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF055A:0008",
+          "desc": "Infinite HP",
+          "address": "0xFF055A"
+        },
+        {
+          "code": "FF6B44:0008",
+          "desc": "Infinite HP",
+          "address": "0xFF6B44"
+        },
+        {
+          "code": "FF0562:0016",
+          "desc": "Full Magic Meter",
+          "address": "0xFF0562"
+        },
+        {
+          "code": "FF0C6A:0001",
+          "desc": "Always High Jump",
+          "address": "0xFF0C6A"
+        },
+        {
+          "code": "FF056A:0000",
+          "desc": "Stage Modifier",
+          "address": "0xFF056A"
+        },
+        {
+          "code": "FF6AE9:0001",
+          "desc": "Enable Stage And Scene Select In Options Hold A+C Start On Line Game Start",
+          "address": "0xFF6AE9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

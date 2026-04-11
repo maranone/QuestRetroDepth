@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "supersoccerchamp",
+  "display_name": "Super Soccer Champ (USA) (Game Genie)",
+  "aliases": [
+    "Super Soccer Champ (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Soccer Champ (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E1F1200",
+          "desc": "Time Modifier",
+          "address": "0x7E1F12"
+        },
+        {
+          "code": "7E1F1300",
+          "desc": "Time Modifier",
+          "address": "0x7E1F13"
+        },
+        {
+          "code": "7E12D400",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0x7E12D4"
+        },
+        {
+          "code": "7E12D600",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0x7E12D6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=General Chaos (USA, Europe) (Action Replay)
+game_key=GeneralChaos-Genesis
+system=genesis
+integration_tier=stable
+trigger	game_over_gameover_ff02fe	game_over	0xFF02FE	1	uint	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	score_score_ffe55c	score	0xFFE55C	4	uint	big	prev < curr	0.8	1	right:0.350:60

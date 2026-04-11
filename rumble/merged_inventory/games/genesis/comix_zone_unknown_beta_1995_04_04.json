@@ -1,0 +1,101 @@
+{
+  "system": "genesis",
+  "normalized_title": "comixzone",
+  "display_name": "Comix Zone (Unknown) (Beta) (1995-04-04)",
+  "aliases": [
+    "Comix Zone (Europe) (En,Fr,De,Es)",
+    "Comix Zone (Japan) (En,Ja)",
+    "Comix Zone (Rumbles)",
+    "Comix Zone (Unknown) (Beta) (1995-04-04)",
+    "Comix Zone (USA) (GameGenie)",
+    "Comix Zone (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\comixzone_genesis.json",
+      "trigger_count": 2,
+      "field_names": [
+        "health"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFBF04"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ComixZone-Genesis-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "combos",
+          "address": "0xFFBF00",
+          "type": ">u2"
+        },
+        {
+          "name": "finalscore",
+          "address": "0xFFBEF4",
+          "type": ">u2"
+        },
+        {
+          "name": "finishes",
+          "address": "0xFFBF02",
+          "type": ">u2"
+        },
+        {
+          "name": "health",
+          "address": "0xFFBF04",
+          "type": ">i2"
+        },
+        {
+          "name": "progress",
+          "address": "0xFFBEF8",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Comix Zone (USA).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFBF02:04FF",
+          "desc": "Infinite Health P1",
+          "address": "0xFFBF02"
+        },
+        {
+          "code": "FFBF1E:0000",
+          "desc": "Level Modifier",
+          "address": "0xFFBF1E"
+        },
+        {
+          "code": "FFBFCC:0000",
+          "desc": "Buttons (Options)",
+          "address": "0xFFBFCC"
+        },
+        {
+          "code": "FFBFCE:0000",
+          "desc": "Custom (Options)",
+          "address": "0xFFBFCE"
+        },
+        {
+          "code": "FFBEE7:00FF",
+          "desc": "Enable Infinite Health Cheat",
+          "address": "0xFFBEE7"
+        },
+        {
+          "code": "FFBEE7:0000",
+          "desc": "Disable Infinite Health Cheat",
+          "address": "0xFFBEE7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

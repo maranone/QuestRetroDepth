@@ -1,0 +1,9 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Mighty Morphin Power Rangers - The Movie (USA, Europe) (Action Replay) (diff)
+# match_names=mightymorphinpowerrangersthemovie|mightymorphinpowerrangersthemoviesnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+damage_taken_health_0628,0x7E0628,1,int,prev_gt_curr,,left,0.850,normal,0,90,100,70,
+death_health_0628,0x7E0628,1,int,became_zero,,both,1.000,normal,0,600,400,90,
+life_lost_lives_060a,0x7E060A,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
+life_gained_lives_060a,0x7E060A,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,
+score_score_0610,0x7E0610,4,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,

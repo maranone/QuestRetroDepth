@@ -1,0 +1,108 @@
+{
+  "system": "snes",
+  "normalized_title": "flyingherobugyurunodaibouken",
+  "display_name": "Flying Hero - Bugyuru no Daibouken (Japan)",
+  "aliases": [
+    "Flying Hero - Bugyuru no Daibouken (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\flyingherobugyurunodaibouken_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0055",
+        "0x7E0059"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FlyingHeroBugyuruNoDaibouken-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0059",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0055",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Flying Hero - Bugyuru no Daibouken (Japan).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "7E005909",
+          "desc": "Infinite Lives",
+          "address": "0x7E0059"
+        },
+        {
+          "code": "7E103F01",
+          "desc": "Invincible",
+          "address": "0x7E103F"
+        },
+        {
+          "code": "7E005A09",
+          "desc": "Infinite Bombs",
+          "address": "0x7E005A"
+        },
+        {
+          "code": "7E005D02",
+          "desc": "Instant Weapon Powerup",
+          "address": "0x7E005D"
+        },
+        {
+          "code": "7E005002",
+          "desc": "Max Firepower",
+          "address": "0x7E0050"
+        },
+        {
+          "code": "7E005102",
+          "desc": "Max Firepower",
+          "address": "0x7E0051"
+        },
+        {
+          "code": "7E005202",
+          "desc": "Max Firepower",
+          "address": "0x7E0052"
+        },
+        {
+          "code": "7E005303",
+          "desc": "Max Firepower",
+          "address": "0x7E0053"
+        },
+        {
+          "code": "7E004F00",
+          "desc": "Weapon Type Modifier",
+          "address": "0x7E004F"
+        },
+        {
+          "code": "7E005401",
+          "desc": "Act Modifier",
+          "address": "0x7E0054"
+        },
+        {
+          "code": "7E007FFF",
+          "desc": "Fast Scrolling",
+          "address": "0x7E007F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

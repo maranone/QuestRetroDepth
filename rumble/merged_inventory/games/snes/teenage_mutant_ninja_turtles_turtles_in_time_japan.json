@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "teenagemutantninjaturtlesturtlesintime",
+  "display_name": "Teenage Mutant Ninja Turtles - Turtles in Time (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Teenage Mutant Ninja Turtles - Turtles in Time (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E1F9001",
+          "desc": "Enables stage select cheat",
+          "address": "0x7E1F90"
+        },
+        {
+          "code": "7E1FFA01",
+          "desc": "Enables 10 lives cheat",
+          "address": "0x7E1FFA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "barkleyshutupandjam",
+  "display_name": "Barkley Shut Up and Jam! (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Barkley Shut Up and Jam! (USA, Europe) (Action Replay)",
+    "Barkley Shut Up and Jam! (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\barkleyshutupandjam_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFC8E8"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BarkleyShutUpAndJam-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "opponent_score",
+          "address": "0xFFC8EA",
+          "type": ">d2"
+        },
+        {
+          "name": "quarter",
+          "address": "0xFFC8DD",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFC8E8",
+          "type": ">d2"
+        },
+        {
+          "name": "time",
+          "address": "0xFFC8CC",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Barkley Shut Up and Jam! (USA, Europe).cht",
+      "total_cheat_rows": 54,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFC8E9:0000",
+          "desc": "Number Of Points Modifier",
+          "address": "0xFFC8E9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

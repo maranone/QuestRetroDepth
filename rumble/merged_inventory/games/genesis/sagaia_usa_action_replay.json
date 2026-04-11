@@ -1,0 +1,84 @@
+{
+  "system": "genesis",
+  "normalized_title": "sagaia",
+  "display_name": "Sagaia (USA) (Action Replay)",
+  "aliases": [
+    "Sagaia (USA) (Action Replay)",
+    "Sagaia (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\sagaia_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF0872",
+        "0xFF0B46"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Sagaia-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF0872",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF0B46",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sagaia (USA).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF0872:0009",
+          "desc": "Infinite Ships P1",
+          "address": "0xFF0872"
+        },
+        {
+          "code": "FF0976:0010",
+          "desc": "1 Hit Invincibility",
+          "address": "0xFF0976"
+        },
+        {
+          "code": "FF0873:0001",
+          "desc": "Always Power Of Weapon",
+          "address": "0xFF0873"
+        },
+        {
+          "code": "FF0875:0001",
+          "desc": "Always Power Of Weapon",
+          "address": "0xFF0875"
+        },
+        {
+          "code": "FF4B29:0001",
+          "desc": "Enabled Sound Test",
+          "address": "0xFF4B29"
+        },
+        {
+          "code": "FF0877:0003",
+          "desc": "Infinite Shield",
+          "address": "0xFF0877"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

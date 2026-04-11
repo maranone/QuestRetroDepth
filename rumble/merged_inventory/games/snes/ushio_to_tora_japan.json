@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "ushiototora",
+  "display_name": "Ushio to Tora (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ushio to Tora (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E021E40",
+          "desc": "Infinite Health",
+          "address": "0x7E021E"
+        },
+        {
+          "code": "7E022226",
+          "desc": "Untouchable",
+          "address": "0x7E0222"
+        },
+        {
+          "code": "7E060863",
+          "desc": "Infinite Lives",
+          "address": "0x7E0608"
+        },
+        {
+          "code": "7E084400",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x7E0844"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

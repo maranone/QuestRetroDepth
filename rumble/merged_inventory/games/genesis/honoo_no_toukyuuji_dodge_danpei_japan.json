@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "honoonotoukyuujidodgedanpei",
+  "display_name": "Honoo no Toukyuuji - Dodge Danpei (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Honoo no Toukyuuji - Dodge Danpei (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFE757:0007",
+          "desc": "Inf Team Players",
+          "address": "0xFFE757"
+        },
+        {
+          "code": "FFE7D7:0000",
+          "desc": "No Team CP",
+          "address": "0xFFE7D7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

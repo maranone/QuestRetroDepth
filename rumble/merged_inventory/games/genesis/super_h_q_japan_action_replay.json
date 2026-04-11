@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "superhq",
+  "display_name": "Super H.Q. (Japan) (Action Replay)",
+  "aliases": [
+    "Super H.Q. (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Super H.Q. (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFBCD0:0057",
+          "desc": "Fake Infinite Time",
+          "address": "0xFFBCD0"
+        },
+        {
+          "code": "FFBC58:00FF",
+          "desc": "Good Acceleration P1",
+          "address": "0xFFBC58"
+        },
+        {
+          "code": "FFBC4E:0039",
+          "desc": "Infinite Time",
+          "address": "0xFFBC4E"
+        },
+        {
+          "code": "FFD5A3:0001",
+          "desc": "Enable Stage Select in Options Menu",
+          "address": "0xFFD5A3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

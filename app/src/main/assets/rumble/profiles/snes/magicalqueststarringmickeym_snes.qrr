@@ -1,0 +1,6 @@
+game_name=MagicalQuestStarringMickeyM
+game_key=MagicalQuestStarringMickeyM-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_1_2b1	damage_taken	0x7E02B1	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	score_3_366	score	0x7E0366	1	uint	native	prev < curr	0.7	1	left:0.300:80

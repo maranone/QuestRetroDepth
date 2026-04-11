@@ -1,0 +1,72 @@
+{
+  "system": "snes",
+  "normalized_title": "kikoukeisatsumetaljack",
+  "display_name": "Kikou Keisatsu Metal Jack (Japan) (Action Replay)",
+  "aliases": [
+    "Kikou Keisatsu Metal Jack (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Kikou Keisatsu Metal Jack (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "7E006702",
+          "desc": "Invincible After 1 Hit",
+          "address": "0x7E0067"
+        },
+        {
+          "code": "7E001801",
+          "desc": "Level Modifier",
+          "address": "0x7E0018"
+        },
+        {
+          "code": "7E003106",
+          "desc": "Infinite Time",
+          "address": "0x7E0031"
+        },
+        {
+          "code": "7E003200",
+          "desc": "Infinite Time",
+          "address": "0x7E0032"
+        },
+        {
+          "code": "7E006031",
+          "desc": "Infinite Health",
+          "address": "0x7E0060"
+        },
+        {
+          "code": "7E006109",
+          "desc": "Infinite Lives",
+          "address": "0x7E0061"
+        },
+        {
+          "code": "7E006B63",
+          "desc": "Infinite Ammo",
+          "address": "0x7E006B"
+        },
+        {
+          "code": "7E005F01",
+          "desc": "Moon Jump",
+          "address": "0x7E005F"
+        },
+        {
+          "code": "7E007220",
+          "desc": "Moon Jump When Attacking",
+          "address": "0x7E0072"
+        },
+        {
+          "code": "7E006C03",
+          "desc": "Can't Walk",
+          "address": "0x7E006C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

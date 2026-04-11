@@ -1,0 +1,62 @@
+{
+  "system": "snes",
+  "normalized_title": "gp1partii",
+  "display_name": "GP-1 - Part II (USA) (Action Replay)",
+  "aliases": [
+    "GP-1 - Part II (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\GP-1 - Part II (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E04AC3F",
+          "desc": "Auto Race At 199 MPH (Player 1)",
+          "address": "0x7E04AC"
+        },
+        {
+          "code": "7E04AD01",
+          "desc": "Auto Race At 199 MPH (Player 1)",
+          "address": "0x7E04AD"
+        },
+        {
+          "code": "7E042C3F",
+          "desc": "Auto Race At 199 MPH (Player 2) (See Above Note)",
+          "address": "0x7E042C"
+        },
+        {
+          "code": "7E042D01",
+          "desc": "Auto Race At 199 MPH (Player 2) (See Above Note)",
+          "address": "0x7E042D"
+        },
+        {
+          "code": "7E485100",
+          "desc": "Set Low Total Time (Seconds)",
+          "address": "0x7E4851"
+        },
+        {
+          "code": "7E485200",
+          "desc": "Set Low Total Time (Miliseconds)",
+          "address": "0x7E4852"
+        },
+        {
+          "code": "7E4D8100",
+          "desc": "Set Low Lap Time (Seconds)",
+          "address": "0x7E4D81"
+        },
+        {
+          "code": "7E4D8200",
+          "desc": "Set Low Lap Time (Miliseconds)",
+          "address": "0x7E4D82"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

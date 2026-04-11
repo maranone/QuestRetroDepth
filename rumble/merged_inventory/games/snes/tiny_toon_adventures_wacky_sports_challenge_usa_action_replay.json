@@ -1,0 +1,112 @@
+{
+  "system": "snes",
+  "normalized_title": "tinytoonadventureswackysportschallenge",
+  "display_name": "Tiny Toon Adventures - Wacky Sports Challenge (USA) (Action Replay)",
+  "aliases": [
+    "Tiny Toon Adventures - Wacky Sports Challenge (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Tiny Toon Adventures - Wacky Sports Challenge (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 18,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "7E187799",
+          "desc": "Player 1 Max Score (999 Points)",
+          "address": "0x7E1877"
+        },
+        {
+          "code": "7E187809",
+          "desc": "Player 1 Max Score (999 Points)",
+          "address": "0x7E1878"
+        },
+        {
+          "code": "7E198D01",
+          "desc": "Game Select Enabled",
+          "address": "0x7E198D"
+        },
+        {
+          "code": "7E187900",
+          "desc": "Player 2 No Score",
+          "address": "0x7E1879"
+        },
+        {
+          "code": "7E187A00",
+          "desc": "Player 2 No Score",
+          "address": "0x7E187A"
+        },
+        {
+          "code": "7E187B00",
+          "desc": "Player 3 No Score",
+          "address": "0x7E187B"
+        },
+        {
+          "code": "7E187C00",
+          "desc": "Player 3 No Score",
+          "address": "0x7E187C"
+        },
+        {
+          "code": "7E187D00",
+          "desc": "Player 4 No Score",
+          "address": "0x7E187D"
+        },
+        {
+          "code": "7E187E00",
+          "desc": "Player 4 No Score",
+          "address": "0x7E187E"
+        },
+        {
+          "code": "7E186D00",
+          "desc": "Time Modifier",
+          "address": "0x7E186D"
+        },
+        {
+          "code": "7E18BCDC",
+          "desc": "Player 1 Instantly Lifts Weights",
+          "address": "0x7E18BC"
+        },
+        {
+          "code": "7E18A764",
+          "desc": "Player 1's Power Gauge is Full (Red)",
+          "address": "0x7E18A7"
+        },
+        {
+          "code": "7E18BF00",
+          "desc": "Player 2's Power Gauge is Empty (Blue)",
+          "address": "0x7E18BF"
+        },
+        {
+          "code": "7E18D700",
+          "desc": "Player 3's Power Gauge is Empty (Blue)",
+          "address": "0x7E18D7"
+        },
+        {
+          "code": "7E18EF00",
+          "desc": "Player 4's Power Gauge is Empty (Blue)",
+          "address": "0x7E18EF"
+        },
+        {
+          "code": "7E05DA1D",
+          "desc": "Player One is Untouchable",
+          "address": "0x7E05DA"
+        },
+        {
+          "code": "7E0DA100",
+          "desc": "Timer At 00:00",
+          "address": "0x7E0DA1"
+        },
+        {
+          "code": "7E00D403",
+          "desc": "Infinite Continues",
+          "address": "0x7E00D4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

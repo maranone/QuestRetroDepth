@@ -1,0 +1,7 @@
+game_name=Justice League Task Force (World) (Action Replay)
+game_key=JusticeLeagueTaskForce-Genesis
+system=genesis
+integration_tier=stable
+trigger	enemy_defeated_enemy_health_ff13fb	enemy_defeated	0xFF13FB	1	uint	native	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_ff11a1	damage_taken	0xFF11A1	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff11a1	death	0xFF11A1	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

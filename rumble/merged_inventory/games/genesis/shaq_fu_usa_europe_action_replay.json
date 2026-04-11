@@ -1,0 +1,96 @@
+{
+  "system": "genesis",
+  "normalized_title": "shaqfu",
+  "display_name": "Shaq-Fu (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Shaq-Fu (USA, Europe) (Action Replay)",
+    "Shaq-Fu (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\shaqfu_genesis.json",
+      "trigger_count": 4,
+      "field_names": [
+        "enemy_health",
+        "health",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF80C9",
+        "0xFF81E1",
+        "0xFFEA59"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ShaqFu-Genesis-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "enemy_health",
+          "address": "0xFF81E1",
+          "type": "|d1"
+        },
+        {
+          "name": "enemy_matches_won",
+          "address": "0xFFEA12",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFF80C9",
+          "type": "|d1"
+        },
+        {
+          "name": "matches_won",
+          "address": "0xFFEA11",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFEA59",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Shaq-Fu (USA, Europe).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF9478:0000",
+          "desc": "Character Modifier P1",
+          "address": "0xFF9478"
+        },
+        {
+          "code": "FF9480:0000",
+          "desc": "Character Highlighter Modifier P1",
+          "address": "0xFF9480"
+        },
+        {
+          "code": "FF80C8:0063",
+          "desc": "Infinite Health P1",
+          "address": "0xFF80C8"
+        },
+        {
+          "code": "FF81E0:0000",
+          "desc": "No Health P2",
+          "address": "0xFF81E0"
+        },
+        {
+          "code": "FFEA06:0009",
+          "desc": "Infinite Credits",
+          "address": "0xFFEA06"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

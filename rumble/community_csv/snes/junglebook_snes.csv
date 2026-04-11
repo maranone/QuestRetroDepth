@@ -1,0 +1,10 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Jungle Book (Rumbles)
+# match_names=junglebook|junglebooksnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+damage_taken_health_010b,0x7E010B,1,int,prev_gt_curr,,left,0.850,normal,0,90,100,70,
+death_health_010b,0x7E010B,1,int,became_zero,,both,1.000,normal,0,600,400,90,
+life_lost_lives_0104,0x7E0104,1,int,prev_gt_curr,,both,0.900,normal,0,300,160,80,
+life_gained_lives_0104,0x7E0104,1,int,prev_lt_curr,,both,0.750,normal,0,180,160,50,
+score_score0_015d,0x7E015D,1,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score1_015e,0x7E015E,1,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,

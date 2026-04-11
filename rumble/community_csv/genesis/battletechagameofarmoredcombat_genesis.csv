@@ -1,0 +1,6 @@
+# schema=qrd_rumble_csv_v1
+# game_name=BattleTechAGameOfArmoredCombat
+# match_names=battletechagameofarmoredcombat|battletechagameofarmoredcombatgenesis
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+life_lost_lives_ffcac7,0xFFCAC7,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
+life_gained_lives_ffcac7,0xFFCAC7,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,

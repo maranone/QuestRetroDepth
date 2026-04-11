@@ -1,0 +1,85 @@
+{
+  "system": "snes",
+  "normalized_title": "natsukicrisisbattle",
+  "display_name": "Natsuki Crisis Battle (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Natsuki Crisis Battle (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 13,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "7E091200",
+          "desc": "Player Modifier",
+          "address": "0x7E0912"
+        },
+        {
+          "code": "7E095FFF",
+          "desc": "Player Health",
+          "address": "0x7E095F"
+        },
+        {
+          "code": "7E096802",
+          "desc": "Player One Round to Win",
+          "address": "0x7E0968"
+        },
+        {
+          "code": "7E0A5F00",
+          "desc": "Opponent Modifier",
+          "address": "0x7E0A5F"
+        },
+        {
+          "code": "7E0A5F00",
+          "desc": "Opponent Health",
+          "address": "0x7E0A5F"
+        },
+        {
+          "code": "7E0A6800",
+          "desc": "Opponent Never Wins (Point Mod)",
+          "address": "0x7E0A68"
+        },
+        {
+          "code": "7E0F5900",
+          "desc": "Background Modifier",
+          "address": "0x7E0F59"
+        },
+        {
+          "code": "7E0F5A00",
+          "desc": "Fight Modifier",
+          "address": "0x7E0F5A"
+        },
+        {
+          "code": "7E0F6463",
+          "desc": "Infinite Time",
+          "address": "0x7E0F64"
+        },
+        {
+          "code": "7E095F00",
+          "desc": "Infinite Health P1",
+          "address": "0x7E095F"
+        },
+        {
+          "code": "7E096001",
+          "desc": "Infinite Health P1",
+          "address": "0x7E0960"
+        },
+        {
+          "code": "7E096100",
+          "desc": "Infinite Power Gauge P1",
+          "address": "0x7E0961"
+        },
+        {
+          "code": "7E096202",
+          "desc": "Infinite Power Gauge P1",
+          "address": "0x7E0962"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "system": "genesis",
+  "normalized_title": "instrumentsofchaosstarringyoungindianajones",
+  "display_name": "Instruments of Chaos Starring Young Indiana Jones (USA) (Beta) (July, 1992)",
+  "aliases": [
+    "Instruments of Chaos Starring Young Indiana Jones (USA) (Beta) (July, 1992)",
+    "Instruments of Chaos Starring Young Indiana Jones (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Instruments of Chaos Starring Young Indiana Jones (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFF08A:0000",
+          "desc": "Infinite Energy",
+          "address": "0xFFF08A"
+        },
+        {
+          "code": "FFF08C:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFF08C"
+        },
+        {
+          "code": "FFF090:0063",
+          "desc": "Infinite Ammo",
+          "address": "0xFFF090"
+        },
+        {
+          "code": "FFF08E:0063",
+          "desc": "Infinite Grenade",
+          "address": "0xFFF08E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

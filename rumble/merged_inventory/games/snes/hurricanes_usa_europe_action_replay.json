@@ -1,0 +1,77 @@
+{
+  "system": "snes",
+  "normalized_title": "hurricanes",
+  "display_name": "Hurricanes (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Hurricanes (Rumbles)",
+    "Hurricanes (USA)",
+    "Hurricanes (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\hurricanes_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E0CCD",
+        "0x7E0D0E",
+        "0x7E0D16"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Hurricanes-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E0D0E",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E0D16",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0CCD",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Hurricanes (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E125209",
+          "desc": "Infinite Time",
+          "address": "0x7E1252"
+        },
+        {
+          "code": "7E0D0E2C",
+          "desc": "Infinite Health",
+          "address": "0x7E0D0E"
+        },
+        {
+          "code": "7E0D1609",
+          "desc": "Infinite Lives",
+          "address": "0x7E0D16"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

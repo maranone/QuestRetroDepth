@@ -1,0 +1,47 @@
+{
+  "system": "snes",
+  "normalized_title": "warioswoods",
+  "display_name": "Wario's Woods (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Wario's Woods (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Wario's Woods (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E1B8B63",
+          "desc": "Get One Coin To Gain A Life",
+          "address": "0x7E1B8B"
+        },
+        {
+          "code": "7F24FC09",
+          "desc": "Infinite Lives",
+          "address": "0x7F24FC"
+        },
+        {
+          "code": "7E184911",
+          "desc": "Keeps Wario From Dropping The Giant Brick On You",
+          "address": "0x7E1849"
+        },
+        {
+          "code": "7E1B8800",
+          "desc": "CPU Will Never Score A Win",
+          "address": "0x7E1B88"
+        },
+        {
+          "code": "7E1B8703",
+          "desc": "Even If You Lose, You Win",
+          "address": "0x7E1B87"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

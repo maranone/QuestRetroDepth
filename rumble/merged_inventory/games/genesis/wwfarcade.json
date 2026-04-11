@@ -1,0 +1,49 @@
+{
+  "system": "genesis",
+  "normalized_title": "wwfarcade",
+  "display_name": "WWFArcade",
+  "aliases": [],
+  "sources": {
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\WWFArcade-Genesis-v0\\data.json",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "enemy2_health",
+          "address": "0xFFB33C",
+          "type": ">u2"
+        },
+        {
+          "name": "enemy3_health",
+          "address": "0xFFB34A",
+          "type": ">u2"
+        },
+        {
+          "name": "enemy_health",
+          "address": "0xFFB32E",
+          "type": ">u2"
+        },
+        {
+          "name": "enemy_wons",
+          "address": "0xFFAB02",
+          "type": ">u2"
+        },
+        {
+          "name": "health",
+          "address": "0xFFB312",
+          "type": ">u2"
+        },
+        {
+          "name": "won_rounds",
+          "address": "0xFFAB00",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 6
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

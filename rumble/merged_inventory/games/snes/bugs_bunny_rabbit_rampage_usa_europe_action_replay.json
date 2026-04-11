@@ -1,0 +1,29 @@
+{
+  "system": "snes",
+  "normalized_title": "bugsbunnyrabbitrampage",
+  "display_name": "Bugs Bunny - Rabbit Rampage (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Bugs Bunny - Rabbit Rampage (USA)",
+    "Bugs Bunny - Rabbit Rampage (USA, Europe) (Action Replay)",
+    "Bugs Bunny - Rabbit Rampage (USA, Europe) (Game Genie)",
+    "Bugs Bunny Rabbit Rampage"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bugs Bunny - Rabbit Rampage (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "BUGS BUNNY RAMPAGE"
+    }
+  },
+  "recommended_primary_source": "action_replay_mk_iii",
+  "notes": [
+    "SNES built-in cheat count present, but raw codes are not machine-readable here."
+  ]
+}

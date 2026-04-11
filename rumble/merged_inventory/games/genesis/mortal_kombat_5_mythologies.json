@@ -1,0 +1,55 @@
+{
+  "system": "genesis",
+  "normalized_title": "mortalkombat5mythologies",
+  "display_name": "Mortal Kombat 5 - Mythologies",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mortal Kombat 5 - Mythologies.cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF0212:0068",
+          "desc": "Infinite Energy (Do Not Use Around Traps That Crush You)",
+          "address": "0xFF0212"
+        },
+        {
+          "code": "FF02FC:0038",
+          "desc": "Infinite Freeze Meter",
+          "address": "0xFF02FC"
+        },
+        {
+          "code": "FF020C:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF020C"
+        },
+        {
+          "code": "FF0412:0000",
+          "desc": "Enemies Killed In One Hit",
+          "address": "0xFF0412"
+        },
+        {
+          "code": "FF062E:0001",
+          "desc": "Level Modifier",
+          "address": "0xFF062E"
+        },
+        {
+          "code": "FFE02D:0009",
+          "desc": "Freeze Time Continue",
+          "address": "0xFFE02D"
+        },
+        {
+          "code": "FF0699:0001",
+          "desc": "Infinite Credit",
+          "address": "0xFF0699"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

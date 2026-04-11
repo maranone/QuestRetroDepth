@@ -1,0 +1,87 @@
+{
+  "system": "snes",
+  "normalized_title": "jetsonsinvasionofplanetpirates",
+  "display_name": "Jetsons, The - Invasion of the Planet Pirates (USA) (Action Replay)",
+  "aliases": [
+    "Jetsons, The - Invasion of the Planet Pirates (USA) (Action Replay)",
+    "Jetsons, The - Invasion of the Planet Pirates (USA) (Game Genie)",
+    "Jetsons, The - Invasion of the Planet Pirates (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\jetsonsinvasionoftheplanetpirates_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E1093",
+        "0x7E1099",
+        "0x7E109D"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JetsonsInvasionOfThePlanetPirates-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E109D",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E1099",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E1093",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Jetsons, The - Invasion of the Planet Pirates (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E0C7032",
+          "desc": "Invincible (May Become Invisible At Times)",
+          "address": "0x7E0C70"
+        },
+        {
+          "code": "7E109D03",
+          "desc": "Infinite Health",
+          "address": "0x7E109D"
+        },
+        {
+          "code": "7E008404",
+          "desc": "Max Vacuum Power",
+          "address": "0x7E0084"
+        },
+        {
+          "code": "7E109909",
+          "desc": "Infinite Lives",
+          "address": "0x7E1099"
+        },
+        {
+          "code": "7E10969A",
+          "desc": "Infinite Time",
+          "address": "0x7E1096"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

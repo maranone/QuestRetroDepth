@@ -1,0 +1,73 @@
+{
+  "system": "snes",
+  "normalized_title": "sidmeierscivilization",
+  "display_name": "Sid Meier's Civilization (USA) (Action Replay)",
+  "aliases": [
+    "Sid Meier's Civilization (USA) (Game Genie)",
+    "Sid Meier's Civilization (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Sid Meier's Civilization (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "7E7630FF",
+          "desc": "Maxed Income",
+          "address": "0x7E7630"
+        },
+        {
+          "code": "7E75D700",
+          "desc": "Infinite Time",
+          "address": "0x7E75D7"
+        },
+        {
+          "code": "7E784A01",
+          "desc": "Population Mod, City 1",
+          "address": "0x7E784A"
+        },
+        {
+          "code": "7E796900",
+          "desc": "Population Mod, City 2",
+          "address": "0x7E7969"
+        },
+        {
+          "code": "7E764F02",
+          "desc": "Instant Learn",
+          "address": "0x7E764F"
+        },
+        {
+          "code": "7E765102",
+          "desc": "Instant Learn",
+          "address": "0x7E7651"
+        },
+        {
+          "code": "7E765200",
+          "desc": "Instant Learn",
+          "address": "0x7E7652"
+        },
+        {
+          "code": "7E785805",
+          "desc": "City 1 Turbo Build",
+          "address": "0x7E7858"
+        },
+        {
+          "code": "7E02CB10",
+          "desc": "10,000 Infinite Gold",
+          "address": "0x7E02CB"
+        },
+        {
+          "code": "7E02CC27",
+          "desc": "10,000 Infinite Gold",
+          "address": "0x7E02CC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

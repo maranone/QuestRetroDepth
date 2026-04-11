@@ -1,0 +1,7 @@
+game_name=King of the Monsters 2 (USA) (Action Replay)
+game_key=KingOfTheMonsters2-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ff0993	damage_taken	0xFF0993	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff0993	death	0xFF0993	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_ff0528	score	0xFF0528	4	bcd	big	prev < curr	0.8	1	right:0.350:60

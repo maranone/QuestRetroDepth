@@ -1,0 +1,28 @@
+{
+  "system": "snes",
+  "normalized_title": "wcwsuperbrawlwrestling",
+  "display_name": "WCW Super Brawl Wrestling (USA) (Action Replay)",
+  "aliases": [
+    "WCW Super Brawl Wrestling (USA) (Action Replay)",
+    "WCW Super Brawl Wrestling (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\WCW Super Brawl Wrestling (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "7E12960F",
+          "desc": "Infinite Energy P1",
+          "address": "0x7E1296"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

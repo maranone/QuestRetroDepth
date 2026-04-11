@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "bishoujojanshisuchiepai",
+  "display_name": "Bishoujo Janshi Suchie-Pai (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bishoujo Janshi Suchie-Pai (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E007590",
+          "desc": "Always Win",
+          "address": "0x7E0075"
+        },
+        {
+          "code": "7E014D36",
+          "desc": "Always Draw Green Dragon Tiles",
+          "address": "0x7E014D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

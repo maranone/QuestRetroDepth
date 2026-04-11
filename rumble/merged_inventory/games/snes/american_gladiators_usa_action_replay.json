@@ -1,0 +1,47 @@
+{
+  "system": "snes",
+  "normalized_title": "americangladiators",
+  "display_name": "American Gladiators (USA) (Action Replay)",
+  "aliases": [
+    "American Gladiators (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\American Gladiators (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E00B259",
+          "desc": "Infinite Time",
+          "address": "0x7E00B2"
+        },
+        {
+          "code": "7E030409",
+          "desc": "P1 Always Has 9 Points In Ball Game",
+          "address": "0x7E0304"
+        },
+        {
+          "code": "7E042600",
+          "desc": "P2 Doesn't Score In Ball Game",
+          "address": "0x7E0426"
+        },
+        {
+          "code": "7E030600",
+          "desc": "1st Player Overall Score Modifier",
+          "address": "0x7E0306"
+        },
+        {
+          "code": "7E042800",
+          "desc": "2nd Player Overall Score Modifier",
+          "address": "0x7E0428"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

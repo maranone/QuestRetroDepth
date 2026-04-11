@@ -1,0 +1,62 @@
+{
+  "system": "snes",
+  "normalized_title": "akazukinchacha",
+  "display_name": "Akazukin Chacha (Japan) (Action Replay)",
+  "aliases": [
+    "Akazukin Chacha (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Akazukin Chacha (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E0356FF",
+          "desc": "Infinite HP Character 1",
+          "address": "0x7E0356"
+        },
+        {
+          "code": "7E0358FF",
+          "desc": "Infinite MP Character 1",
+          "address": "0x7E0358"
+        },
+        {
+          "code": "7E0376FF",
+          "desc": "Infinite HP Character 2",
+          "address": "0x7E0376"
+        },
+        {
+          "code": "7E0378FF",
+          "desc": "Infinite MP Character 2",
+          "address": "0x7E0378"
+        },
+        {
+          "code": "7E0396FF",
+          "desc": "Infinite HP Character 3",
+          "address": "0x7E0396"
+        },
+        {
+          "code": "7E0398FF",
+          "desc": "Infinite MP Character 3",
+          "address": "0x7E0398"
+        },
+        {
+          "code": "7E03B6FF",
+          "desc": "Infinite HP Character 4",
+          "address": "0x7E03B6"
+        },
+        {
+          "code": "7E03B8FF",
+          "desc": "Infinite MP Character 4",
+          "address": "0x7E03B8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

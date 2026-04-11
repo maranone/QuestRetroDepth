@@ -1,0 +1,147 @@
+{
+  "system": "snes",
+  "normalized_title": "powermoves",
+  "display_name": "Power Moves (Rumbles)",
+  "aliases": [
+    "Power Moves (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Power Moves (USA).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 27,
+      "distinct_address_count": 27,
+      "sample_raw_entries": [
+        {
+          "code": "7EF048FF",
+          "desc": "Easy Win",
+          "address": "0x7EF048"
+        },
+        {
+          "code": "7E08EB40",
+          "desc": "P1 Infinite Health",
+          "address": "0x7E08EB"
+        },
+        {
+          "code": "7E087800",
+          "desc": "Character Modifier  P1",
+          "address": "0x7E0878"
+        },
+        {
+          "code": "7E087900",
+          "desc": "Character Modifier P2",
+          "address": "0x7E0879"
+        },
+        {
+          "code": "7E084101",
+          "desc": "85 Credits in Options",
+          "address": "0x7E0841"
+        },
+        {
+          "code": "7E084409",
+          "desc": "Enable Ranker to be Selected as an Opponent",
+          "address": "0x7E0844"
+        },
+        {
+          "code": "7E089609",
+          "desc": "Infinite Time to Continue",
+          "address": "0x7E0896"
+        },
+        {
+          "code": "7E088740",
+          "desc": "Player 1 Has Max Speed",
+          "address": "0x7E0887"
+        },
+        {
+          "code": "7E088940",
+          "desc": "Player 1 Has Max Jump",
+          "address": "0x7E0889"
+        },
+        {
+          "code": "7E088B40",
+          "desc": "Player 1 Has Max Strength",
+          "address": "0x7E088B"
+        },
+        {
+          "code": "7E088D40",
+          "desc": "Player 1 Has Max Defense",
+          "address": "0x7E088D"
+        },
+        {
+          "code": "7E088F40",
+          "desc": "Player 1 Has Max Life",
+          "address": "0x7E088F"
+        },
+        {
+          "code": "7E088800",
+          "desc": "Player 2 Has No Speed",
+          "address": "0x7E0888"
+        },
+        {
+          "code": "7E088A00",
+          "desc": "Player 2 Has No Jump",
+          "address": "0x7E088A"
+        },
+        {
+          "code": "7E088C00",
+          "desc": "Player 2 Has No Strength",
+          "address": "0x7E088C"
+        },
+        {
+          "code": "7E088E00",
+          "desc": "Player 2 Has No Defense",
+          "address": "0x7E088E"
+        },
+        {
+          "code": "7E089000",
+          "desc": "Player 2 Has No Life",
+          "address": "0x7E0890"
+        },
+        {
+          "code": "7E08D501",
+          "desc": "Player 1 Has Faster Attacks",
+          "address": "0x7E08D5"
+        },
+        {
+          "code": "7E08D601",
+          "desc": "Player 2 Has Faster Attacks",
+          "address": "0x7E08D6"
+        },
+        {
+          "code": "7E08EA01",
+          "desc": "Player 2 Controls the Computer Controlled Opponents",
+          "address": "0x7E08EA"
+        },
+        {
+          "code": "7E090701",
+          "desc": "Player 2 Automatically Takes Damage & Dies",
+          "address": "0x7E0907"
+        },
+        {
+          "code": "7E091202",
+          "desc": "Player 1 Wins All Fights",
+          "address": "0x7E0912"
+        },
+        {
+          "code": "7E091300",
+          "desc": "Player 2 Can't Win Rounds",
+          "address": "0x7E0913"
+        },
+        {
+          "code": "7E091D01",
+          "desc": "Player 2 Performs the Same Attack Repeatedly",
+          "address": "0x7E091D"
+        },
+        {
+          "code": "7E092701",
+          "desc": "Computer Controlled Opponents Just Stand Still",
+          "address": "0x7E0927"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

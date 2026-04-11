@@ -1,0 +1,101 @@
+{
+  "system": "genesis",
+  "normalized_title": "fatalrewind",
+  "display_name": "Fatal Rewind (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Fatal Rewind (USA, Europe) (Action Replay)",
+    "Fatal Rewind (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\fatalrewind_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFE021",
+        "0xFFE029",
+        "0xFFE0EA"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FatalRewind-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFE029",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFE021",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFE0EA",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Fatal Rewind (USA, Europe).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FFE020:0002",
+          "desc": "Infinite Lives",
+          "address": "0xFFE020"
+        },
+        {
+          "code": "FFE028:001B",
+          "desc": "Infinite Energy",
+          "address": "0xFFE028"
+        },
+        {
+          "code": "FFE00F:0000",
+          "desc": "Level Modifier (Options Menu)",
+          "address": "0xFFE00F"
+        },
+        {
+          "code": "FFE011:0000",
+          "desc": "Part Modifier (Options Menu)",
+          "address": "0xFFE011"
+        },
+        {
+          "code": "FFDF17:0000",
+          "desc": "Options Menu Cursor Highlighting Modifier",
+          "address": "0xFFDF17"
+        },
+        {
+          "code": "FF4B47:004B",
+          "desc": "Infinite Secondary Weapon",
+          "address": "0xFF4B47"
+        },
+        {
+          "code": "FFE018:00FF",
+          "desc": "Enabled Cheat Code Level Select In Options",
+          "address": "0xFFE018"
+        },
+        {
+          "code": "FFE019:00FF",
+          "desc": "Enabled Cheat Code Level Select In Options",
+          "address": "0xFFE019"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

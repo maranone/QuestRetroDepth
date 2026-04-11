@@ -1,0 +1,88 @@
+{
+  "system": "snes",
+  "normalized_title": "wolfchild",
+  "display_name": "Wolfchild (USA) (Action Replay)",
+  "aliases": [
+    "Wolf Child (Rumbles)",
+    "Wolfchild (USA) (Action Replay)",
+    "Wolfchild (USA) (Game Genie)",
+    "Wolfchild (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\wolfchild_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E029A",
+        "0x7E0636",
+        "0x7E0676"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Wolfchild-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E0636",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E029A",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0676",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Wolfchild (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E0DB4DF",
+          "desc": "Stage Select",
+          "address": "0x7E0DB4"
+        },
+        {
+          "code": "7E0029A0",
+          "desc": "Infinite Lives",
+          "address": "0x7E0029"
+        },
+        {
+          "code": "7E002980",
+          "desc": "Infinite Bombs",
+          "address": "0x7E0029"
+        },
+        {
+          "code": "7E006360",
+          "desc": "Infinite Health",
+          "address": "0x7E0063"
+        },
+        {
+          "code": "7E1C34FF",
+          "desc": "Invincibility",
+          "address": "0x7E1C34"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "system": "snes",
+  "normalized_title": "hammerlockwrestling",
+  "display_name": "Hammer Lock Wrestling (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Hammer Lock Wrestling (USA).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 16,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "7E0FAC01",
+          "desc": "Player 1 Teleports Out of the Ring when Knocked Down",
+          "address": "0x7E0FAC"
+        },
+        {
+          "code": "7E102901",
+          "desc": "Player 2 Teleports Out of the Ring when Knocked Down",
+          "address": "0x7E1029"
+        },
+        {
+          "code": "7E10A601",
+          "desc": "Player 3 Teleports Out of the Ring when Knocked Down",
+          "address": "0x7E10A6"
+        },
+        {
+          "code": "7E112301",
+          "desc": "Player 4 Teleports Out of the Ring when Knocked Down",
+          "address": "0x7E1123"
+        },
+        {
+          "code": "7E0FB901",
+          "desc": "Player 1 is Dizzy After Knockdown",
+          "address": "0x7E0FB9"
+        },
+        {
+          "code": "7E103601",
+          "desc": "Player 2 is Dizzy After Knockdown",
+          "address": "0x7E1036"
+        },
+        {
+          "code": "7E10B301",
+          "desc": "Player 3 is Dizzy After Knockdown",
+          "address": "0x7E10B3"
+        },
+        {
+          "code": "7E113001",
+          "desc": "Player 4 is Dizzy After Knockdown",
+          "address": "0x7E1130"
+        },
+        {
+          "code": "7E0FBB01",
+          "desc": "Player 1 Stays Dizzy Until After He's Hit",
+          "address": "0x7E0FBB"
+        },
+        {
+          "code": "7E103801",
+          "desc": "Player 2 Stays Dizzy Until After He's Hit",
+          "address": "0x7E1038"
+        },
+        {
+          "code": "7E10B501",
+          "desc": "Player 3 Stays Dizzy Until After He's Hit",
+          "address": "0x7E10B5"
+        },
+        {
+          "code": "7E113201",
+          "desc": "Player 4 Stays Dizzy Until After He's Hit",
+          "address": "0x7E1132"
+        },
+        {
+          "code": "7E0FD001",
+          "desc": "Player 1 Can't Get Knocked Down With Strike Attacks",
+          "address": "0x7E0FD0"
+        },
+        {
+          "code": "7E104D01",
+          "desc": "Player 2 Can't Get Knocked Down With Strike Attacks",
+          "address": "0x7E104D"
+        },
+        {
+          "code": "7E10CA01",
+          "desc": "Player 3 Can't Get Knocked Down With Strike Attacks",
+          "address": "0x7E10CA"
+        },
+        {
+          "code": "7E114701",
+          "desc": "Player 4 Can't Get Knocked Down With Strike Attacks",
+          "address": "0x7E1147"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

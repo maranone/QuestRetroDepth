@@ -1,0 +1,190 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "FinalFantasyIiiViInJapan",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Final Fantasy Iii (Vi In Japan) (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "FinalFantasyIiiViInJapan-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_0_2ed5",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E2ED5",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x2ED5",
+          "bank": "7E",
+          "wram_offset": 11989
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss character 1",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_character_1",
+          "address": "0x7E2ED5",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_1_2ef5",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E2EF5",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x2EF5",
+          "bank": "7E",
+          "wram_offset": 12021
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss character 2",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_character_2",
+          "address": "0x7E2EF5",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_2_2eb5",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E2EB5",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x2EB5",
+          "bank": "7E",
+          "wram_offset": 11957
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss character 3",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_character_3",
+          "address": "0x7E2EB5",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_3_2f15",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E2F15",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x2F15",
+          "bank": "7E",
+          "wram_offset": 12053
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss character 4",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_character_4",
+          "address": "0x7E2F15",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "death_4_3a77",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0x7E3A77",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x3A77",
+          "bank": "7E",
+          "wram_offset": 14967
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 500
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 500
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on enemy death",
+      "source_fields": [
+        {
+          "name": "rumble_on_enemy_death",
+          "address": "0x7E3A77",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

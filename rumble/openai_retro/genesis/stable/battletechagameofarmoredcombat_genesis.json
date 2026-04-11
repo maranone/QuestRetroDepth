@@ -1,0 +1,116 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "BattleTechAGameOfArmoredCombat",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "third_party\\openai-retro\\retro\\data\\stable\\BattleTechAGameOfArmoredCombat-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "BattleTechAGameOfArmoredCombat-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "life_lost_lives_ffcac7",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0xFFCAC7",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFCAC7",
+          "ram_offset": 51911
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xFFCAC7",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_ffcac7",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0xFFCAC7",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFCAC7",
+          "ram_offset": 51911
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xFFCAC7",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "buildings_destroyed",
+      "meta": {
+        "address": 16763520,
+        "type": ">u2"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "enemies_destroyed",
+      "meta": {
+        "address": 16763517,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "enemy_mechs_destroyed",
+      "meta": {
+        "address": 16763519,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

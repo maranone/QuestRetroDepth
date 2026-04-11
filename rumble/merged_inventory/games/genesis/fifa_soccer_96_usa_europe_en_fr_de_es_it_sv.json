@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "fifasoccer96",
+  "display_name": "FIFA Soccer 96 (USA, Europe) (En,Fr,De,Es,It,Sv)",
+  "aliases": [
+    "FIFA Soccer 96 (USA, Europe) (En,Fr,De,Es,It,Sv)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\FIFA Soccer 96 (USA, Europe) (En,Fr,De,Es,It,Sv).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFE1E2:00FF",
+          "desc": "Unlock All Cheats",
+          "address": "0xFFE1E2"
+        },
+        {
+          "code": "FFE1E2:0003",
+          "desc": "Unlock All Cheats",
+          "address": "0xFFE1E2"
+        },
+        {
+          "code": "FFF8B4:0000",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFF8B4"
+        },
+        {
+          "code": "FFF8B6:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFF8B6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "system": "snes",
+  "normalized_title": "rockosmodernlifespunkysdangerousday",
+  "display_name": "Rocko's Modern Life - Spunky's Dangerous Day (USA) (Action Replay)",
+  "aliases": [
+    "Rocko's Modern Life - Spunky's Dangerous Day (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Rocko's Modern Life - Spunky's Dangerous Day (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E02041A",
+          "desc": "Infinite Life Spunky",
+          "address": "0x7E0204"
+        },
+        {
+          "code": "7E391036",
+          "desc": "Can't Touch Spunky",
+          "address": "0x7E3910"
+        },
+        {
+          "code": "7E020209",
+          "desc": "Infinite Lives",
+          "address": "0x7E0202"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "greatbattleiii",
+  "display_name": "Great Battle III, The (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Great Battle III, The (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E046448",
+          "desc": "Infinite Energy",
+          "address": "0x7E0464"
+        },
+        {
+          "code": "7E00E403",
+          "desc": "Infinite Lives",
+          "address": "0x7E00E4"
+        },
+        {
+          "code": "7E00D403",
+          "desc": "Invincibility",
+          "address": "0x7E00D4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

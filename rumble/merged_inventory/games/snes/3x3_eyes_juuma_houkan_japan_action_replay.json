@@ -1,0 +1,62 @@
+{
+  "system": "snes",
+  "normalized_title": "3x3eyesjuumahoukan",
+  "display_name": "3x3 Eyes - Juuma Houkan (Japan) (Action Replay)",
+  "aliases": [
+    "3x3 Eyes - Juuma Houkan (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\3x3 Eyes - Juuma Houkan (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E103812",
+          "desc": "Hold Jump to Rise",
+          "address": "0x7E1038"
+        },
+        {
+          "code": "7E177051",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E1770"
+        },
+        {
+          "code": "7E102040",
+          "desc": "Always Run",
+          "address": "0x7E1020"
+        },
+        {
+          "code": "7E109664",
+          "desc": "Infinite Health",
+          "address": "0x7E1096"
+        },
+        {
+          "code": "7E10A764",
+          "desc": "Infinite Health",
+          "address": "0x7E10A7"
+        },
+        {
+          "code": "7E101E06",
+          "desc": "Hover",
+          "address": "0x7E101E"
+        },
+        {
+          "code": "7E929200",
+          "desc": "Blue Papers",
+          "address": "0x7E9292"
+        },
+        {
+          "code": "7E928200",
+          "desc": "Bombs",
+          "address": "0x7E9282"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

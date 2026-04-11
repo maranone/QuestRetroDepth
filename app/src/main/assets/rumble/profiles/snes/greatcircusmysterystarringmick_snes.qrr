@@ -1,0 +1,7 @@
+game_name=GreatCircusMysteryStarringMick
+game_key=GreatCircusMysteryStarringMick-Snes
+system=snes
+integration_tier=manual
+trigger	enemy_defeated_0_276	enemy_defeated	0x7E0276	1	uint	native	prev != curr	0.55	1	left:0.510:100
+trigger	life_lost_1_220	life_lost	0x7E0220	1	uint	native	prev > curr	0.9	1	left:0.630:250
+trigger	life_lost_3_320	life_lost	0x7E0320	1	uint	native	prev > curr	0.9	1	right:0.630:250

@@ -1,0 +1,98 @@
+{
+  "system": "snes",
+  "normalized_title": "kendorage",
+  "display_name": "Kendo Rage (USA) (Action Replay)",
+  "aliases": [
+    "Kendo Rage (USA) (Action Replay)",
+    "Kendo Rage (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Kendo Rage (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 15,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "7E148E40",
+          "desc": "Infinite HP",
+          "address": "0x7E148E"
+        },
+        {
+          "code": "7E148C40",
+          "desc": "Always full Psy power",
+          "address": "0x7E148C"
+        },
+        {
+          "code": "7E148A40",
+          "desc": "Always full Psy power",
+          "address": "0x7E148A"
+        },
+        {
+          "code": "7E0CE209",
+          "desc": "Infinite Lives",
+          "address": "0x7E0CE2"
+        },
+        {
+          "code": "7E147603",
+          "desc": "Walk through enemies",
+          "address": "0x7E1476"
+        },
+        {
+          "code": "7E149409",
+          "desc": "9 Yellow balls",
+          "address": "0x7E1494"
+        },
+        {
+          "code": "7E149200",
+          "desc": "Weapon Modifier",
+          "address": "0x7E1492"
+        },
+        {
+          "code": "7E0CE400",
+          "desc": "Level Modifier",
+          "address": "0x7E0CE4"
+        },
+        {
+          "code": "7E14763A",
+          "desc": "Walkthru Enemies",
+          "address": "0x7E1476"
+        },
+        {
+          "code": "7E148A40",
+          "desc": "Infinite PSY",
+          "address": "0x7E148A"
+        },
+        {
+          "code": "7E148C40",
+          "desc": "Infinite PSY",
+          "address": "0x7E148C"
+        },
+        {
+          "code": "7E0CE205",
+          "desc": "Infinite Lives",
+          "address": "0x7E0CE2"
+        },
+        {
+          "code": "7E149409",
+          "desc": "Infinite Block",
+          "address": "0x7E1494"
+        },
+        {
+          "code": "7E13D600",
+          "desc": "Easy Boss",
+          "address": "0x7E13D6"
+        },
+        {
+          "code": "7E13D800",
+          "desc": "Easy Boss",
+          "address": "0x7E13D8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

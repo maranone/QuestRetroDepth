@@ -1,0 +1,68 @@
+{
+  "system": "snes",
+  "normalized_title": "operationthunderbolt",
+  "display_name": "Operation Thunderbolt (USA) (Action Replay)",
+  "aliases": [
+    "Operation Thunderbolt (USA) (Action Replay)",
+    "Operation Thunderbolt (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Operation Thunderbolt (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E36EA63",
+          "desc": "Infinite Health",
+          "address": "0x7E36EA"
+        },
+        {
+          "code": "7E36ED09",
+          "desc": "Infinite Bullets",
+          "address": "0x7E36ED"
+        },
+        {
+          "code": "7E36EF09",
+          "desc": "Infinite Rockets",
+          "address": "0x7E36EF"
+        },
+        {
+          "code": "7E36EE09",
+          "desc": "Infinite Clips",
+          "address": "0x7E36EE"
+        },
+        {
+          "code": "7E36EB01",
+          "desc": "Always Have Bullet Proof Vest",
+          "address": "0x7E36EB"
+        },
+        {
+          "code": "7E36E801",
+          "desc": "When prompted to continue enemies still fire at you",
+          "address": "0x7E36E8"
+        },
+        {
+          "code": "7E36F301",
+          "desc": "Enable Rapid Firing",
+          "address": "0x7E36F3"
+        },
+        {
+          "code": "7E36F401",
+          "desc": "Cursor Automatically Kills or Damages Enemies",
+          "address": "0x7E36F4"
+        },
+        {
+          "code": "7E370501",
+          "desc": "More Power-Ups Available",
+          "address": "0x7E3705"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

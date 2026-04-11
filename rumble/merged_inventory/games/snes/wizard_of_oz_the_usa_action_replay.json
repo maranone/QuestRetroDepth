@@ -1,0 +1,83 @@
+{
+  "system": "snes",
+  "normalized_title": "wizardofoz",
+  "display_name": "Wizard of Oz, The (USA) (Action Replay)",
+  "aliases": [
+    "Wizard of Oz, The (USA)",
+    "The Wizard of Oz"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Wizard of Oz, The (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "7E01E500",
+          "desc": "Infinite Energy (Dorothy)",
+          "address": "0x7E01E5"
+        },
+        {
+          "code": "7E01E700",
+          "desc": "Infinite Energy (Scarecrow)",
+          "address": "0x7E01E7"
+        },
+        {
+          "code": "7E01E900",
+          "desc": "Infinite Energy (Tinman)",
+          "address": "0x7E01E9"
+        },
+        {
+          "code": "7E01EB00",
+          "desc": "Infinite Energy (Lion)",
+          "address": "0x7E01EB"
+        },
+        {
+          "code": "7E01DD09",
+          "desc": "Infinite Lives (Dorothy)",
+          "address": "0x7E01DD"
+        },
+        {
+          "code": "7E01DF09",
+          "desc": "Infinite Lives (Scarecrow)",
+          "address": "0x7E01DF"
+        },
+        {
+          "code": "7E01E109",
+          "desc": "Infinite Lives (Tinman)",
+          "address": "0x7E01E1"
+        },
+        {
+          "code": "7E01E309",
+          "desc": "Infinite Lives (Lion)",
+          "address": "0x7E01E3"
+        },
+        {
+          "code": "7E01DB09",
+          "desc": "Infinite Star Shot (Dorothy)",
+          "address": "0x7E01DB"
+        },
+        {
+          "code": "7E01D109",
+          "desc": "Infinite Throwing Rocks (All)",
+          "address": "0x7E01D1"
+        },
+        {
+          "code": "7E01D301",
+          "desc": "Have Flight Shoes",
+          "address": "0x7E01D3"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 3,
+      "mk3_label": "WIZARD OF OZ"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

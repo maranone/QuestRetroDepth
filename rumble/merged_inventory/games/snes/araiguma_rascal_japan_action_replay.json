@@ -1,0 +1,37 @@
+{
+  "system": "snes",
+  "normalized_title": "araigumarascal",
+  "display_name": "Araiguma Rascal (Japan) (Action Replay)",
+  "aliases": [
+    "Araiguma Rascal (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Araiguma Rascal (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E08BA30",
+          "desc": "Quickly Finish Stages",
+          "address": "0x7E08BA"
+        },
+        {
+          "code": "7E081B00",
+          "desc": "Score Modifier Rascal",
+          "address": "0x7E081B"
+        },
+        {
+          "code": "7E181C00",
+          "desc": "Score Modifier Rascal",
+          "address": "0x7E181C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

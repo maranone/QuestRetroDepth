@@ -1,0 +1,91 @@
+{
+  "system": "genesis",
+  "normalized_title": "aladdin",
+  "display_name": "Aladdin (USA) (Beta) (August, 1993)",
+  "aliases": [
+    "Aladdin (Japan)",
+    "Aladdin (Rumbles)",
+    "Aladdin (USA) (Beta) (August, 1993)",
+    "Aladdin (USA)",
+    "Aladdin (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Aladdin (World) (Action Replay).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FFEFFA:03",
+          "desc": "Infinite Health",
+          "address": "0xFFEFFA"
+        },
+        {
+          "code": "FF7E3C:39",
+          "desc": "Set Infinite Lives (9)",
+          "address": "0xFF7E3C"
+        },
+        {
+          "code": "FFEFE1:32",
+          "desc": "Set Infinite Apples (20)",
+          "address": "0xFFEFE1"
+        },
+        {
+          "code": "FFEFE2:32",
+          "desc": "Set Infinite Gems (20)",
+          "address": "0xFFEFE2"
+        },
+        {
+          "code": "FFF003:09",
+          "desc": "Infinite Genie Bonus Icons",
+          "address": "0xFFF003"
+        },
+        {
+          "code": "FFF0F2:80",
+          "desc": "Invincibility",
+          "address": "0xFFF0F2"
+        },
+        {
+          "code": "FF7E20:FF",
+          "desc": "Enable Cheat Mode (Invincibility)",
+          "address": "0xFF7E20"
+        },
+        {
+          "code": "FF7E25:FF",
+          "desc": "Enable Freezability Mode",
+          "address": "0xFF7E25"
+        },
+        {
+          "code": "FF7273:FF",
+          "desc": "Enable Map View Mode",
+          "address": "0xFF7273"
+        },
+        {
+          "code": "FF7E5B:80",
+          "desc": "Switch F/X On For Levitate Jump",
+          "address": "0xFF7E5B"
+        },
+        {
+          "code": "FFF09F:00",
+          "desc": "Hyper Mode (Sky)",
+          "address": "0xFFF09F"
+        },
+        {
+          "code": "FFF0E6:00",
+          "desc": "Disable Death",
+          "address": "0xFFF0E6"
+        },
+        {
+          "code": "FFF0E9:20",
+          "desc": "Level Skip (Abu Version)",
+          "address": "0xFFF0E9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

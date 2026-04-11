@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "gargoyles",
+  "display_name": "Gargoyles (USA) (Action Replay)",
+  "aliases": [
+    "Gargoyles (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Gargoyles (USA).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF16B2:0000",
+          "desc": "Fly",
+          "address": "0xFF16B2"
+        },
+        {
+          "code": "FF0078:00FF",
+          "desc": "Alternative Fly",
+          "address": "0xFF0078"
+        },
+        {
+          "code": "FFEEF2:000A",
+          "desc": "Pause Code Modifier",
+          "address": "0xFFEEF2"
+        },
+        {
+          "code": "FFEEF0:000C",
+          "desc": "Add to Pause Code Modifier Invincibility",
+          "address": "0xFFEEF0"
+        },
+        {
+          "code": "FF007C:0046",
+          "desc": "Infinite Energy",
+          "address": "0xFF007C"
+        },
+        {
+          "code": "FF00DA:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF00DA"
+        },
+        {
+          "code": "FF16D2:0010",
+          "desc": "Invincibility",
+          "address": "0xFF16D2"
+        },
+        {
+          "code": "FF0078:0001",
+          "desc": "Enabled Map Mode In Game Hold A + B + C And Gargoyles Move The D-Pad",
+          "address": "0xFF0078"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

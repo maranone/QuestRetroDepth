@@ -1,0 +1,6 @@
+game_name=Columns (World) (Action Replay)
+game_key=Columns-Genesis
+system=genesis
+integration_tier=stable
+trigger	game_over_gameover_ffc840	game_over	0xFFC840	1	uint	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	score_score_ffc81c	score	0xFFC81C	4	uint	big	prev < curr	0.8	1	right:0.350:60

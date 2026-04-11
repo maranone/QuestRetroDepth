@@ -1,0 +1,59 @@
+{
+  "system": "genesis",
+  "normalized_title": "goldenaxeiii",
+  "display_name": "Golden Axe III (Japan) (Action Replay)",
+  "aliases": [
+    "Golden Axe III (Japan) (Action Replay)",
+    "Golden Axe III (Japan) (En)",
+    "Golden Axe Iii (Rumbles)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\goldenaxeiii_genesis.json",
+      "trigger_count": 4,
+      "field_names": [
+        "health",
+        "lives"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFC8E0",
+        "0xFFC8E6"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GoldenAxeIII-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFC8E6",
+          "type": "|u1"
+        },
+        {
+          "name": "level_score",
+          "address": "0xFFC73C",
+          "type": ">u2"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFC8E0",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Golden Axe Iii (Rumbles).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

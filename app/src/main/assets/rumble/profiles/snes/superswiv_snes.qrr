@@ -1,0 +1,8 @@
+game_name=Super SWIV (Europe)
+game_key=SuperSWIV-Snes
+system=snes
+integration_tier=stable
+trigger	life_lost_lives_609a	life_lost	0x7E609A	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_609a	life_gained	0x7E609A	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_611a	score	0x7E611A	2	bcd	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_611e	score	0x7E611E	2	bcd	little	prev < curr	0.8	1	right:0.350:60

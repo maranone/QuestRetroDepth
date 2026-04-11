@@ -1,0 +1,35 @@
+{
+  "system": "genesis",
+  "normalized_title": "mrnutzhoppinmad",
+  "display_name": "Mr. Nutz - Hoppin' Mad (Europe) (Proto)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mr. Nutz - Hoppin' Mad (Europe) (Proto).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF082B:0010",
+          "desc": "Invincibility",
+          "address": "0xFF082B"
+        },
+        {
+          "code": "FF00B5:0099",
+          "desc": "Infinite Lives",
+          "address": "0xFF00B5"
+        },
+        {
+          "code": "FF0835:0004",
+          "desc": "Infinite Health",
+          "address": "0xFF0835"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

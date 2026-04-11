@@ -1,0 +1,137 @@
+{
+  "system": "genesis",
+  "normalized_title": "marko",
+  "display_name": "Marko (USA)",
+  "aliases": [
+    "Marko (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\marko_genesis.json",
+      "trigger_count": 11,
+      "field_names": [
+        "health",
+        "lives",
+        "score0",
+        "score1",
+        "score2",
+        "score3",
+        "score4",
+        "score5",
+        "score6"
+      ],
+      "field_count": 9,
+      "distinct_addresses": [
+        "0xFF8CFF",
+        "0xFF8D01",
+        "0xFF8D03",
+        "0xFF8D05",
+        "0xFF8D07",
+        "0xFF8D09",
+        "0xFF8D0B",
+        "0xFF8D25",
+        "0xFF8D29"
+      ],
+      "distinct_address_count": 9
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Marko-Genesis-v0\\data.json",
+      "field_count": 9,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF8D29",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF8D25",
+          "type": "|i1"
+        },
+        {
+          "name": "score0",
+          "address": "0xFF8D0B",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0xFF8D09",
+          "type": "|u1"
+        },
+        {
+          "name": "score2",
+          "address": "0xFF8D07",
+          "type": "|u1"
+        },
+        {
+          "name": "score3",
+          "address": "0xFF8D05",
+          "type": "|u1"
+        },
+        {
+          "name": "score4",
+          "address": "0xFF8D03",
+          "type": "|u1"
+        },
+        {
+          "name": "score5",
+          "address": "0xFF8D01",
+          "type": "|u1"
+        },
+        {
+          "name": "score6",
+          "address": "0xFF8CFF",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 9
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Marko (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF8D28:0005",
+          "desc": "Infinite Health",
+          "address": "0xFF8D28"
+        },
+        {
+          "code": "FF8D24:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF8D24"
+        },
+        {
+          "code": "FF8D1A:0009",
+          "desc": "Infinite Soda Cans",
+          "address": "0xFF8D1A"
+        },
+        {
+          "code": "FF8D1C:0009",
+          "desc": "Infinite Soda Cans",
+          "address": "0xFF8D1C"
+        },
+        {
+          "code": "FF8D2A:0009",
+          "desc": "Infinite White Stars",
+          "address": "0xFF8D2A"
+        },
+        {
+          "code": "FF8D2C:0009",
+          "desc": "Infinite White Stars",
+          "address": "0xFF8D2C"
+        },
+        {
+          "code": "FFCFD0:0010",
+          "desc": "Invincible",
+          "address": "0xFFCFD0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

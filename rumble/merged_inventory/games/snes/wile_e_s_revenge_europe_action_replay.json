@@ -1,0 +1,32 @@
+{
+  "system": "snes",
+  "normalized_title": "wileesrevenge",
+  "display_name": "Wile E's Revenge (Europe) (Action Replay)",
+  "aliases": [
+    "Wile E's Revenge (Europe) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Wile E's Revenge (Europe) (Proto).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E08D240",
+          "desc": "Infinite Energy",
+          "address": "0x7E08D2"
+        },
+        {
+          "code": "7E093C09",
+          "desc": "Infinite Lives",
+          "address": "0x7E093C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "system": "genesis",
+  "normalized_title": "turrican",
+  "display_name": "Turrican (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Turrican (USA, Europe) (Action Replay)",
+    "Turrican (USA, Europe) (Unl)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\turrican_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF03A9",
+        "0xFF03C2",
+        "0xFF0492"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Turrican-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF03A9",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF0492",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF03C2",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Turrican (USA, Europe) (Unl).cht",
+      "total_cheat_rows": 78,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF0492:0099",
+          "desc": "Infinite Lives",
+          "address": "0xFF0492"
+        },
+        {
+          "code": "FF03A8:0063",
+          "desc": "Infinite Health",
+          "address": "0xFF03A8"
+        },
+        {
+          "code": "FF03D4:00FF",
+          "desc": "Infinite Time",
+          "address": "0xFF03D4"
+        },
+        {
+          "code": "FF03CC:00FF",
+          "desc": "Infinite Grey Crystals (1st Weapon On HUD)",
+          "address": "0xFF03CC"
+        },
+        {
+          "code": "FF03CE:00FF",
+          "desc": "Infinite Explosions (2nd Weapon On HUD)",
+          "address": "0xFF03CE"
+        },
+        {
+          "code": "FF03D0:00FF",
+          "desc": "Infinite Grey Object (3rd Weapon On HUD)",
+          "address": "0xFF03D0"
+        },
+        {
+          "code": "FF03D2:00FF",
+          "desc": "Infinite Wave Blasts (4th Weapon On HUD)",
+          "address": "0xFF03D2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

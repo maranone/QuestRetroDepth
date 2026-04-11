@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "killinggameshow",
+  "display_name": "Killing Game Show, The (Japan) (Action Replay)",
+  "aliases": [
+    "Killing Game Show, The (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Killing Game Show, The (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFE028:001B",
+          "desc": "Infinite Energy (Can Still Die In Lava)",
+          "address": "0xFFE028"
+        },
+        {
+          "code": "FFE020:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFE020"
+        },
+        {
+          "code": "FFE02C:0010",
+          "desc": "Untouchable",
+          "address": "0xFFE02C"
+        },
+        {
+          "code": "FF5B49:0046",
+          "desc": "Infinite Secondary Weapon",
+          "address": "0xFF5B49"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

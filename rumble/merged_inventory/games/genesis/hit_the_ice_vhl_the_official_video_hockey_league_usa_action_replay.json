@@ -1,0 +1,37 @@
+{
+  "system": "genesis",
+  "normalized_title": "hiticevhlofficialvideohockeyleague",
+  "display_name": "Hit the Ice - VHL - The Official Video Hockey League (USA) (Action Replay)",
+  "aliases": [
+    "Hit the Ice - VHL - The Official Video Hockey League (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Hit the Ice - VHL - The Official Video Hockey League (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFFA64:0059",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFFA64"
+        },
+        {
+          "code": "FFD02C:0000",
+          "desc": "Team 2 Score Modifier (P1 - Home Team)",
+          "address": "0xFFD02C"
+        },
+        {
+          "code": "FFD302:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU - Away Team)",
+          "address": "0xFFD302"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

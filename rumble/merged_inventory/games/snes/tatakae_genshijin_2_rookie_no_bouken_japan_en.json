@@ -1,0 +1,70 @@
+{
+  "system": "snes",
+  "normalized_title": "tatakaegenshijin2rookienobouken",
+  "display_name": "Tatakae Genshijin 2 - Rookie no Bouken (Japan) (En)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Tatakae Genshijin 2 - Rookie no Bouken (Japan) (En).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E003C99",
+          "desc": "99 Gems / Every gem gives 1UP",
+          "address": "0x7E003C"
+        },
+        {
+          "code": "7E004299",
+          "desc": "99 Lives",
+          "address": "0x7E0042"
+        },
+        {
+          "code": "7E002082",
+          "desc": "Invincible",
+          "address": "0x7E0020"
+        },
+        {
+          "code": "7E003303",
+          "desc": "Invincible",
+          "address": "0x7E0033"
+        },
+        {
+          "code": "7E002081",
+          "desc": "Start as Monkey w/ walkthrough enemies",
+          "address": "0x7E0020"
+        },
+        {
+          "code": "7E003BC0",
+          "desc": "Start as Monkey w/ walkthrough enemies",
+          "address": "0x7E003B"
+        },
+        {
+          "code": "7E002107",
+          "desc": "Invulnerable",
+          "address": "0x7E0021"
+        },
+        {
+          "code": "7E0037FE",
+          "desc": "Rise into the Sky",
+          "address": "0x7E0037"
+        },
+        {
+          "code": "7E111D00",
+          "desc": "Bosses Die 1 Hit",
+          "address": "0x7E111D"
+        },
+        {
+          "code": "7E054400",
+          "desc": "Level Modifier",
+          "address": "0x7E0544"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

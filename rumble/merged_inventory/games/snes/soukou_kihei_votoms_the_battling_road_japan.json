@@ -1,0 +1,60 @@
+{
+  "system": "snes",
+  "normalized_title": "soukoukiheivotomsbattlingroad",
+  "display_name": "Soukou Kihei Votoms - The Battling Road (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Soukou Kihei Votoms - The Battling Road (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E03AA00",
+          "desc": "INFINITE HEALTH",
+          "address": "0x7E03AA"
+        },
+        {
+          "code": "7E044A00",
+          "desc": "Infinite Health",
+          "address": "0x7E044A"
+        },
+        {
+          "code": "7E03C663",
+          "desc": "Infinite Ammo",
+          "address": "0x7E03C6"
+        },
+        {
+          "code": "7E044AFF",
+          "desc": "Automatically Finish Stages",
+          "address": "0x7E044A"
+        },
+        {
+          "code": "7E04EAFF",
+          "desc": "Automatically Finish Stages",
+          "address": "0x7E04EA"
+        },
+        {
+          "code": "7E058AFF",
+          "desc": "Automatically Finish Stages",
+          "address": "0x7E058A"
+        },
+        {
+          "code": "7E03C60A",
+          "desc": "Infinite Missiles Once Gained P1 (in Both Arena & Rail Stages)",
+          "address": "0x7E03C6"
+        },
+        {
+          "code": "7E04660A",
+          "desc": "Infinite Missiles Once Gained P1 (in Both Arena & Rail Stages)",
+          "address": "0x7E0466"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

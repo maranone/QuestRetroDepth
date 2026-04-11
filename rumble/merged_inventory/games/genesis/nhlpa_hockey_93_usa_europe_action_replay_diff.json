@@ -1,0 +1,43 @@
+{
+  "system": "genesis",
+  "normalized_title": "nhlpahockey93",
+  "display_name": "NHLPA Hockey 93 (USA, Europe) (Action Replay) (diff)",
+  "aliases": [
+    "NHLPA Hockey 93 (USA, Europe) (Action Replay)",
+    "NHLPA Hockey 93 (USA, Europe) (Rev A)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NHLPA Hockey 93 (USA, Europe) (Rev A).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFC334:0009",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFC334"
+        },
+        {
+          "code": "FFC334:0044",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFC334"
+        },
+        {
+          "code": "FFC4F2:0063",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFFC4F2"
+        },
+        {
+          "code": "FFC694:0000",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFFC694"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

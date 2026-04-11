@@ -1,0 +1,97 @@
+{
+  "system": "genesis",
+  "normalized_title": "weaponlord",
+  "display_name": "WeaponLord (USA) (Action Replay)",
+  "aliases": [
+    "WeaponLord (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\WeaponLord (USA).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "FF17FE:00C8",
+          "desc": "Infinite Hp P1",
+          "address": "0xFF17FE"
+        },
+        {
+          "code": "FF17FE:00C0",
+          "desc": "Take Less Damage P1",
+          "address": "0xFF17FE"
+        },
+        {
+          "code": "FF18CE:00C0",
+          "desc": "Take Less Damage P2",
+          "address": "0xFF18CE"
+        },
+        {
+          "code": "FF00A0:0063",
+          "desc": "Infinite Time",
+          "address": "0xFF00A0"
+        },
+        {
+          "code": "FF1802:0078",
+          "desc": "Fake Infinite Health P1",
+          "address": "0xFF1802"
+        },
+        {
+          "code": "FF1800:0078",
+          "desc": "Fake Infinite Health P1",
+          "address": "0xFF1800"
+        },
+        {
+          "code": "FF2C66:0009",
+          "desc": "Infinite Time To Continue",
+          "address": "0xFF2C66"
+        },
+        {
+          "code": "FF17F0:0000",
+          "desc": "P1 Wins Modifier",
+          "address": "0xFF17F0"
+        },
+        {
+          "code": "FF18C0:0000",
+          "desc": "P2 Wins Modifier",
+          "address": "0xFF18C0"
+        },
+        {
+          "code": "FF1852:0000",
+          "desc": "Character Modifier P1 (All Modes)",
+          "address": "0xFF1852"
+        },
+        {
+          "code": "FF1922:0000",
+          "desc": "Character Modifier P2 (All Modes)",
+          "address": "0xFF1922"
+        },
+        {
+          "code": "FF010C:0000",
+          "desc": "P2 Losses Modifier",
+          "address": "0xFF010C"
+        },
+        {
+          "code": "FF2CD5:0002",
+          "desc": "Infinite Continue",
+          "address": "0xFF2CD5"
+        },
+        {
+          "code": "FF2C67:000A",
+          "desc": "Freeze Time Continue",
+          "address": "0xFF2C67"
+        },
+        {
+          "code": "FF0301:000A",
+          "desc": "Freeze Time On Screen Select Characters",
+          "address": "0xFF0301"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

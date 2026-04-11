@@ -1,0 +1,7 @@
+game_name=WWFArcade
+game_key=WWFArcade-Genesis
+system=genesis
+integration_tier=stable
+trigger	enemy_defeated_enemy_health_ffb32e	enemy_defeated	0xFFB32E	2	uint	big	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_ffb312	damage_taken	0xFFB312	2	uint	big	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffb312	death	0xFFB312	2	uint	big	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

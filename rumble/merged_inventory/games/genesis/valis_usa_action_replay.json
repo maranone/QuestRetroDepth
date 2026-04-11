@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "valis",
+  "display_name": "Valis (USA) (Action Replay)",
+  "aliases": [
+    "Valis (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Valis (USA).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFF410:0000",
+          "desc": "Stage Modifier",
+          "address": "0xFFF410"
+        },
+        {
+          "code": "FFF442:0020",
+          "desc": "Infinite Energy",
+          "address": "0xFFF442"
+        },
+        {
+          "code": "FFF446:0018",
+          "desc": "Infinite Magic",
+          "address": "0xFFF446"
+        },
+        {
+          "code": "FFF454:0003",
+          "desc": "Have Full Powered Sword Shot",
+          "address": "0xFFF454"
+        },
+        {
+          "code": "FFF45E:0006",
+          "desc": "Have All Magic",
+          "address": "0xFFF45E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

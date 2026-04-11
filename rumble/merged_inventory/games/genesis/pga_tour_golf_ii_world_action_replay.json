@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "pgatourgolfii",
+  "display_name": "PGA Tour Golf II (World) (Action Replay)",
+  "aliases": [
+    "PGA Tour Golf II (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\PGA Tour Golf II (World) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF4841:00",
+          "desc": "Always On 1st Stroke P1",
+          "address": "0xFF4841"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

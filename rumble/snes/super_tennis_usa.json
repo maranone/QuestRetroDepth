@@ -1,0 +1,584 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Super Tennis (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Super Tennis (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Matt)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Matt)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD24-07A5",
+      "desc": "Super Speed (Matt)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Amy)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Amy)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD24-A7A5",
+      "desc": "Super Speed (Amy)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Brian)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Brian)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD27-07A5",
+      "desc": "Super Speed (Brian)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Ki)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Ki)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD27-A7A5",
+      "desc": "Super Speed (Ki)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Phil)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Phil)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD20-07A5",
+      "desc": "Super Speed (Phil)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Lisa)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Lisa)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD20-A7A5",
+      "desc": "Super Speed (Lisa)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (John)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (John)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD29-07A5",
+      "desc": "Super Speed (John)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Erin)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Erin)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD29-A7A5",
+      "desc": "Super Speed (Erin)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Meyer)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Meyer)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD21-07A5",
+      "desc": "Super Speed (Meyer)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Donna)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Donna)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD21-A7A5",
+      "desc": "Super Speed (Donna)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Rich)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Rich)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD25-07A5",
+      "desc": "Super Speed (Rich)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Debbie)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Debbie)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD25-A7A5",
+      "desc": "Super Speed (Debbie)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Hiro)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Hiro)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD26-07A5",
+      "desc": "Super Speed (Hiro)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Colette)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Colette)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD26-A7A5",
+      "desc": "Super Speed (Colette)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Steve)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Steve)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD2B-07A5",
+      "desc": "Super Speed (Steve)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Nancy)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Nancy)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD2B-A7A5",
+      "desc": "Super Speed (Nancy)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Rob)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Rob)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD2C-07A5",
+      "desc": "Super Speed (Rob)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Yuka)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Yuka)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD2C-A7A5",
+      "desc": "Super Speed (Yuka)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Mar)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Mar)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD28-07A5",
+      "desc": "Super Speed (Mar)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D060-AFAF",
+      "desc": "Super Speed (Barb)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-AFAF",
+      "desc": "Super Speed (Barb)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD28-A7A5",
+      "desc": "Super Speed (Barb)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F060-AFAF",
+      "desc": "Mega Speed Donna",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F761-AFAF",
+      "desc": "Mega Speed Donna",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD21-A7A5",
+      "desc": "Mega Speed Donna",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4060-AFAF",
+      "desc": "Ultra Speed Donna",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4761-AFAF",
+      "desc": "Ultra Speed Donna",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD21-A7A5",
+      "desc": "Ultra Speed Donna",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4060-AFAF",
+      "desc": "Ultra Speed Nancy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4761-AFAF",
+      "desc": "Ultra Speed Nancy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD2B-A7A5",
+      "desc": "Ultra Speed Nancy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F060-AFAF",
+      "desc": "Mega Speed Nancy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F761-AFAF",
+      "desc": "Mega Speed Nancy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD2B-A7A5",
+      "desc": "Mega Speed Nancy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F060-AFAF",
+      "desc": "Mega Speed Matt",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F761-AFAF",
+      "desc": "Mega Speed Matt",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD24-07A5",
+      "desc": "Mega Speed Matt",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4060-AFAF",
+      "desc": "Ultra Speed Matt",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4761-AFAF",
+      "desc": "Ultra Speed Matt",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD24-07A5",
+      "desc": "Ultra Speed Matt",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F060-AFAF",
+      "desc": "Mega Speed Barb",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F761-AFAF",
+      "desc": "Mega Speed Barb",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD28-A7A5",
+      "desc": "Mega Speed Barb",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4060-AFAF",
+      "desc": "Ultra Speed Barb",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4761-AFAF",
+      "desc": "Ultra Speed Barb",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD28-A7A5",
+      "desc": "Ultra Speed Barb",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F060-AFAF",
+      "desc": "Mega Speed Debbie",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F761-AFAF",
+      "desc": "Mega Speed Debbie",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD25-A7A5",
+      "desc": "Mega Speed Debbie",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4060-AFAF",
+      "desc": "Mega Speed Debbie #2",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4761-AFAF",
+      "desc": "Mega Speed Debbie #2",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD25-A7A5",
+      "desc": "Mega Speed Debbie #2",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4060-AFAF",
+      "desc": "Ultra Speed Debbie",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4761-AFAF",
+      "desc": "Ultra Speed Debbie",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD25-A7A5",
+      "desc": "Ultra Speed Debbie",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F060-AFAF",
+      "desc": "Mega Speed Kim",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F761-AFAF",
+      "desc": "Mega Speed Kim",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD27-A7A5",
+      "desc": "Mega Speed Kim",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4060-AFAF",
+      "desc": "Ultra Speed Kim",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4761-AFAF",
+      "desc": "Ultra Speed Kim",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD27-A7A5",
+      "desc": "Ultra Speed Kim",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F060-AFAF",
+      "desc": "Mega Speed Phil",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F761-AFAF",
+      "desc": "Mega Speed Phil",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD20-07A5",
+      "desc": "Mega Speed Phil",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4060-AFAF",
+      "desc": "Ultra Speed Phil",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4761-AFAF",
+      "desc": "Ultra Speed Phil",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD20-07A5",
+      "desc": "Ultra Speed Phil",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F060-AFAF",
+      "desc": "Mega Speed Amy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F761-AFAF",
+      "desc": "Mega Speed Amy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD24-A7A5",
+      "desc": "Mega Speed Amy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4060-AFAF",
+      "desc": "Ultra Speed Amy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4761-AFAF",
+      "desc": "Ultra Speed Amy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD24-A7A5",
+      "desc": "Ultra Speed Amy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F060-AFAF",
+      "desc": "Mega Speed Lisa",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F761-AFAF",
+      "desc": "Mega Speed Lisa",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD20-A7A5",
+      "desc": "Mega Speed Lisa",
+      "kind": "game_genie"
+    }
+  ]
+}

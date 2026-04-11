@@ -1,0 +1,113 @@
+{
+  "system": "snes",
+  "normalized_title": "incantation",
+  "display_name": "Incantation (Rumbles)",
+  "aliases": [
+    "Incantation (Rumbles)",
+    "Incantation (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\incantation_snes.json",
+      "trigger_count": 6,
+      "field_names": [
+        "health",
+        "lives",
+        "score0",
+        "score1"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0x7E083C",
+        "0x7E083E",
+        "0x7E0846",
+        "0x7E1115"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Incantation-Snes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E1115",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E0846",
+          "type": "|u1"
+        },
+        {
+          "name": "score0",
+          "address": "0x7E083C",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0x7E083E",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Incantation (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E111530",
+          "desc": "Infinite Energy",
+          "address": "0x7E1115"
+        },
+        {
+          "code": "7E084664",
+          "desc": "Infinite Lives",
+          "address": "0x7E0846"
+        },
+        {
+          "code": "7E083C5A",
+          "desc": "Maximum Bonus",
+          "address": "0x7E083C"
+        },
+        {
+          "code": "7E083E63",
+          "desc": "Maximum Bonus",
+          "address": "0x7E083E"
+        },
+        {
+          "code": "7E163D00",
+          "desc": "Super Jump w/ Lunar descent",
+          "address": "0x7E163D"
+        },
+        {
+          "code": "7E07FC5F",
+          "desc": "Walk through enemies",
+          "address": "0x7E07FC"
+        },
+        {
+          "code": "7E0E6903",
+          "desc": "3 wheat for toll",
+          "address": "0x7E0E69"
+        },
+        {
+          "code": "7E07EA1A",
+          "desc": "Have larger Shot",
+          "address": "0x7E07EA"
+        },
+        {
+          "code": "7E07E8D4",
+          "desc": "Have larger Shot",
+          "address": "0x7E07E8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

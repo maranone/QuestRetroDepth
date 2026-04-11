@@ -1,0 +1,72 @@
+{
+  "system": "genesis",
+  "normalized_title": "snakerattlenroll",
+  "display_name": "Snake Rattle n Roll (Europe) (Action Replay)",
+  "aliases": [
+    "Snake Rattle n Roll (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Snake Rattle n Roll (Europe).cht",
+      "total_cheat_rows": 39,
+      "raw_entry_count": 10,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF0BC0:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF0BC0"
+        },
+        {
+          "code": "FF0BC0:0009",
+          "desc": "Infinite Credits",
+          "address": "0xFF0BC0"
+        },
+        {
+          "code": "FF0BE4:00FF",
+          "desc": "Invincibility",
+          "address": "0xFF0BE4"
+        },
+        {
+          "code": "FF0A94:0009",
+          "desc": "Infinite Time - Seconds",
+          "address": "0xFF0A94"
+        },
+        {
+          "code": "FF0A94:0009",
+          "desc": "Infinite Time - Minutes",
+          "address": "0xFF0A94"
+        },
+        {
+          "code": "FF0B8C:0000",
+          "desc": "Shark Never Comes",
+          "address": "0xFF0B8C"
+        },
+        {
+          "code": "FF0BC2:0009",
+          "desc": "Infinite Credits (Continues) P2",
+          "address": "0xFF0BC2"
+        },
+        {
+          "code": "FF0BC2:0009",
+          "desc": "Infinite Lives P2",
+          "address": "0xFF0BC2"
+        },
+        {
+          "code": "FF0B54:0035",
+          "desc": "Have Long Tail P1",
+          "address": "0xFF0B54"
+        },
+        {
+          "code": "FF0B56:0035",
+          "desc": "Have Long Tail P2",
+          "address": "0xFF0B56"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

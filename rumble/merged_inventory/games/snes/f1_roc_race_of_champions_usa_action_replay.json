@@ -1,0 +1,148 @@
+{
+  "system": "snes",
+  "normalized_title": "f1rocraceofchampions",
+  "display_name": "F1 ROC - Race of Champions (USA) (Action Replay)",
+  "aliases": [
+    "F1 ROC - Race of Champions (USA) (Game Genie)",
+    "F1 ROC - Race of Champions (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\F1 ROC - Race of Champions (USA).cht",
+      "total_cheat_rows": 51,
+      "raw_entry_count": 25,
+      "distinct_address_count": 25,
+      "sample_raw_entries": [
+        {
+          "code": "7E13E2FF",
+          "desc": "Set Money To 655,350 (Infinite Money)",
+          "address": "0x7E13E2"
+        },
+        {
+          "code": "7E13E3FF",
+          "desc": "Set Money To 655,350 (Infinite Money)",
+          "address": "0x7E13E3"
+        },
+        {
+          "code": "7E05C6FF",
+          "desc": "Infinite Nitro",
+          "address": "0x7E05C6"
+        },
+        {
+          "code": "7E007600",
+          "desc": "Take No Damage",
+          "address": "0x7E0076"
+        },
+        {
+          "code": "7E00AE00",
+          "desc": "Set Lower Time (Seconds)",
+          "address": "0x7E00AE"
+        },
+        {
+          "code": "7E00AD00",
+          "desc": "Set Lower Time (Minutes)",
+          "address": "0x7E00AD"
+        },
+        {
+          "code": "7E059B02",
+          "desc": "Set Chassis Type 3",
+          "address": "0x7E059B"
+        },
+        {
+          "code": "7E059C03",
+          "desc": "Set 7 Speed Transmission",
+          "address": "0x7E059C"
+        },
+        {
+          "code": "7E059D02",
+          "desc": "Set Antilock Brakes",
+          "address": "0x7E059D"
+        },
+        {
+          "code": "7E059E02",
+          "desc": "Set Active Suspension",
+          "address": "0x7E059E"
+        },
+        {
+          "code": "7E059F03",
+          "desc": "Set Special Diffuser",
+          "address": "0x7E059F"
+        },
+        {
+          "code": "7E05A004",
+          "desc": "Set Special W Front Wing",
+          "address": "0x7E05A0"
+        },
+        {
+          "code": "7E05A102",
+          "desc": "Set Hi Def Rear Wing",
+          "address": "0x7E05A1"
+        },
+        {
+          "code": "7E05A204",
+          "desc": "Set Special Tires",
+          "address": "0x7E05A2"
+        },
+        {
+          "code": "7E05A305",
+          "desc": "Set Honda V12 Engine",
+          "address": "0x7E05A3"
+        },
+        {
+          "code": "7E1468FF",
+          "desc": "Set Race Points To 255",
+          "address": "0x7E1468"
+        },
+        {
+          "code": "7E005D90",
+          "desc": "Auto Race At 350 MPH",
+          "address": "0x7E005D"
+        },
+        {
+          "code": "7E005E01",
+          "desc": "Auto Race At 350 MPH",
+          "address": "0x7E005E"
+        },
+        {
+          "code": "7E069D00",
+          "desc": "Freeze CPU Cars",
+          "address": "0x7E069D"
+        },
+        {
+          "code": "7E069F00",
+          "desc": "Freeze CPU Cars",
+          "address": "0x7E069F"
+        },
+        {
+          "code": "7E06A100",
+          "desc": "Freeze CPU Cars",
+          "address": "0x7E06A1"
+        },
+        {
+          "code": "7E06A300",
+          "desc": "Freeze CPU Cars",
+          "address": "0x7E06A3"
+        },
+        {
+          "code": "7E06A500",
+          "desc": "Freeze CPU Cars",
+          "address": "0x7E06A5"
+        },
+        {
+          "code": "7E069A00",
+          "desc": "Freeze CPU Cars",
+          "address": "0x7E069A"
+        },
+        {
+          "code": "7E069900",
+          "desc": "Freeze CPU Cars",
+          "address": "0x7E0699"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

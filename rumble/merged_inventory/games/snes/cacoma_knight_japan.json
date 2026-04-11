@@ -1,0 +1,75 @@
+{
+  "system": "snes",
+  "normalized_title": "cacomaknight",
+  "display_name": "Cacoma Knight (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Cacoma Knight (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "7E0E5499",
+          "desc": "P1 Picture Complete",
+          "address": "0x7E0E54"
+        },
+        {
+          "code": "7E0E5509",
+          "desc": "P1 Picture Complete",
+          "address": "0x7E0E55"
+        },
+        {
+          "code": "7E0E2E18",
+          "desc": "Final Stage Glitch",
+          "address": "0x7E0E2E"
+        },
+        {
+          "code": "7E0E2F00",
+          "desc": "Final Stage Glitch",
+          "address": "0x7E0E2F"
+        },
+        {
+          "code": "7E12DE09",
+          "desc": "P1 Infinite Credits",
+          "address": "0x7E12DE"
+        },
+        {
+          "code": "7E0E4C09",
+          "desc": "P1 Infinite Lives/Resistance",
+          "address": "0x7E0E4C"
+        },
+        {
+          "code": "7E0E2200",
+          "desc": "Infinite Game Time",
+          "address": "0x7E0E22"
+        },
+        {
+          "code": "7E0E1A66",
+          "desc": "Infinite Game Time",
+          "address": "0x7E0E1A"
+        },
+        {
+          "code": "7E070D81",
+          "desc": "P1 Invulnerability",
+          "address": "0x7E070D"
+        },
+        {
+          "code": "7E0E1700",
+          "desc": "P1 Minimum Rate",
+          "address": "0x7E0E17"
+        },
+        {
+          "code": "7E0E1600",
+          "desc": "P1 Minimum Rate",
+          "address": "0x7E0E16"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

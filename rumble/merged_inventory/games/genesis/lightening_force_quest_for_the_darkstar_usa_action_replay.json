@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "lighteningforcequestfordarkstar",
+  "display_name": "Lightening Force - Quest for the Darkstar (USA) (Action Replay)",
+  "aliases": [
+    "Lightening Force - Quest for the Darkstar (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Lightening Force - Quest for the Darkstar (USA).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFF2F1:0003",
+          "desc": "Unlimited Men",
+          "address": "0xFFF2F1"
+        },
+        {
+          "code": "FFF164:0099",
+          "desc": "Infinite Time To Continue",
+          "address": "0xFFF164"
+        },
+        {
+          "code": "FFF2D4:0009",
+          "desc": "Infinite Continues",
+          "address": "0xFFF2D4"
+        },
+        {
+          "code": "FFF2DA:0000",
+          "desc": "Weapon Highlighter Modifier",
+          "address": "0xFFF2DA"
+        },
+        {
+          "code": "FFF2DC:0000",
+          "desc": "Weapon Modifier",
+          "address": "0xFFF2DC"
+        },
+        {
+          "code": "FFF339:0001",
+          "desc": "Enable Have all Weapons Cheat (Pause the game and Press Up)",
+          "address": "0xFFF339"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

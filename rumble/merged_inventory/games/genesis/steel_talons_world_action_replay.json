@@ -1,0 +1,64 @@
+{
+  "system": "genesis",
+  "normalized_title": "steeltalons",
+  "display_name": "Steel Talons (World) (Action Replay)",
+  "aliases": [
+    "Steel Talons (USA, Europe)",
+    "Steel Talons (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\steeltalons_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFEB9A",
+        "0xFFED14"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SteelTalons-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFED14",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFEB9A",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Steel Talons (World) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF0B8D:FF",
+          "desc": "Infinite Missiles",
+          "address": "0xFF0B8D"
+        },
+        {
+          "code": "FFED14:09",
+          "desc": "Infinite Lives (Ignore HUD)",
+          "address": "0xFFED14"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

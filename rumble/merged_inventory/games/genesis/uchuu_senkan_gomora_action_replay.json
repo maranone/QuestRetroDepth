@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "uchuusenkangomora",
+  "display_name": "Uchuu Senkan Gomora (Action Replay)",
+  "aliases": [
+    "Uchuu Senkan Gomora (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Uchuu Senkan Gomora (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFF2E8:0002",
+          "desc": "Infinite Lives",
+          "address": "0xFFF2E8"
+        },
+        {
+          "code": "FF9824:0008",
+          "desc": "Infinite Energy",
+          "address": "0xFF9824"
+        },
+        {
+          "code": "FFF24A:0001",
+          "desc": "Invincibility",
+          "address": "0xFFF24A"
+        },
+        {
+          "code": "FFF2EA:0004",
+          "desc": "Ship &quot;Expands&quot; When Hit",
+          "address": "0xFFF2EA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

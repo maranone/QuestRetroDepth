@@ -64,6 +64,21 @@ android {
     }
 }
 
+def rumbleSourceDir = rootProject.file('rumble/merged_inventory')
+def rumbleAssetScript = rootProject.file('scripts/package_rumble_assets.py')
+
+tasks.register('packageRumbleAssets', Exec) {
+    workingDir rootProject.projectDir
+    commandLine 'python', rumbleAssetScript.absolutePath
+    inputs.dir(rumbleSourceDir)
+    inputs.file(rumbleAssetScript)
+    outputs.dir(file('src/main/assets/rumble'))
+}
+
+tasks.named('preBuild').configure {
+    dependsOn(tasks.named('packageRumbleAssets'))
+}
+
 dependencies {
     implementation 'org.khronos.openxr:openxr_loader_for_android:1.1.58'
     implementation 'org.apache.commons:commons-compress:1.28.0'

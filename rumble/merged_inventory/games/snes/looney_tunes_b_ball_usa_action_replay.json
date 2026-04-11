@@ -1,0 +1,107 @@
+{
+  "system": "snes",
+  "normalized_title": "looneytunesbball",
+  "display_name": "Looney Tunes B-Ball (USA) (Action Replay)",
+  "aliases": [
+    "Looney Tunes B-Ball (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Looney Tunes B-Ball (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 17,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "7E0D4300",
+          "desc": "Points mod left side of score board",
+          "address": "0x7E0D43"
+        },
+        {
+          "code": "7E0D4700",
+          "desc": "Points mod left side of score board",
+          "address": "0x7E0D47"
+        },
+        {
+          "code": "7E0D4500",
+          "desc": "Points mod right side of score board",
+          "address": "0x7E0D45"
+        },
+        {
+          "code": "7E0D4900",
+          "desc": "Points mod right side of score board",
+          "address": "0x7E0D49"
+        },
+        {
+          "code": "7E0DA100",
+          "desc": "Timer at 00:00",
+          "address": "0x7E0DA1"
+        },
+        {
+          "code": "7E149A00",
+          "desc": "P1 Player Highlighter Code",
+          "address": "0x7E149A"
+        },
+        {
+          "code": "7E0DA190",
+          "desc": "Modify Timer",
+          "address": "0x7E0DA1"
+        },
+        {
+          "code": "7E0CF5FF",
+          "desc": "Infinite Money Team 1",
+          "address": "0x7E0CF5"
+        },
+        {
+          "code": "7E0CF700",
+          "desc": "No Money Team 2",
+          "address": "0x7E0CF7"
+        },
+        {
+          "code": "7E0D43FF",
+          "desc": "Max Score Team 1",
+          "address": "0x7E0D43"
+        },
+        {
+          "code": "7E0D47FF",
+          "desc": "Max Score Team 1",
+          "address": "0x7E0D47"
+        },
+        {
+          "code": "7E0D4500",
+          "desc": "No Score Team 2",
+          "address": "0x7E0D45"
+        },
+        {
+          "code": "7E0D4900",
+          "desc": "No Score Team 2",
+          "address": "0x7E0D49"
+        },
+        {
+          "code": "7E087800",
+          "desc": "Character Modifier - Player 1 Team 1",
+          "address": "0x7E0878"
+        },
+        {
+          "code": "7E087000",
+          "desc": "Character Modifier - Player 2 Team 1",
+          "address": "0x7E0870"
+        },
+        {
+          "code": "7E087200",
+          "desc": "Character Modifier - Player 1 Team 2",
+          "address": "0x7E0872"
+        },
+        {
+          "code": "7E087E00",
+          "desc": "Character Modifier - Player 1 Team 2",
+          "address": "0x7E087E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

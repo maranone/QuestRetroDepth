@@ -1,0 +1,130 @@
+{
+  "system": "genesis",
+  "normalized_title": "terminator",
+  "display_name": "Terminator, The (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Terminator (Rumbles)",
+    "Terminator, The (USA)",
+    "Terminator, The (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\terminator_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF147D",
+        "0xFF14B8"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Terminator-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF147D",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF14B8",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Terminator, The (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "FFFF20:0400",
+          "desc": "Unlimited Bombs",
+          "address": "0xFFFF20"
+        },
+        {
+          "code": "FF147C:001F",
+          "desc": "Unlimited Health",
+          "address": "0xFF147C"
+        },
+        {
+          "code": "FF147D:001F",
+          "desc": "Infinite Health (Official Code)",
+          "address": "0xFF147D"
+        },
+        {
+          "code": "FFFE34:01",
+          "desc": "Have Machine Gun (Future)",
+          "address": "0xFFFE34"
+        },
+        {
+          "code": "FF1475:1F",
+          "desc": "Infinite Energy",
+          "address": "0xFF1475"
+        },
+        {
+          "code": "FFFF20:09",
+          "desc": "Infinite Bombs",
+          "address": "0xFFFF20"
+        },
+        {
+          "code": "FF1855:0A",
+          "desc": "Super Jump",
+          "address": "0xFF1855"
+        },
+        {
+          "code": "FF1856:BD",
+          "desc": "Super Jump",
+          "address": "0xFF1856"
+        },
+        {
+          "code": "FF1857:04",
+          "desc": "Super Jump",
+          "address": "0xFF1857"
+        },
+        {
+          "code": "FFFF04:0F",
+          "desc": "Super Jump",
+          "address": "0xFFFF04"
+        },
+        {
+          "code": "FF1869:00",
+          "desc": "Enemies Die In 1 Hit",
+          "address": "0xFF1869"
+        },
+        {
+          "code": "FF1889:00",
+          "desc": "Enemies Die In 1 Hit",
+          "address": "0xFF1889"
+        },
+        {
+          "code": "FF18A9:00",
+          "desc": "Enemies Die In 1 Hit",
+          "address": "0xFF18A9"
+        },
+        {
+          "code": "FFFE2C:000X",
+          "desc": "Stage Select (Use 0-5)",
+          "address": "0xFFFE2C"
+        },
+        {
+          "code": "FFFE31:01",
+          "desc": "The Title Screen Is Displayed Differently",
+          "address": "0xFFFE31"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

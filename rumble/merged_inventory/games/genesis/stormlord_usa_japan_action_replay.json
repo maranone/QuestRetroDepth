@@ -1,0 +1,70 @@
+{
+  "system": "genesis",
+  "normalized_title": "stormlord",
+  "display_name": "Stormlord (USA, Japan) (Action Replay)",
+  "aliases": [
+    "Stormlord (Japan)",
+    "Stormlord (USA)",
+    "Stormlord (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\stormlord_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF0025",
+        "0xFF002F"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Stormlord-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF0025",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF002F",
+          "type": ">d3"
+        },
+        {
+          "name": "time0",
+          "address": "0xFF00A4",
+          "type": ">u2"
+        },
+        {
+          "name": "time1",
+          "address": "0xFF05D7",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Stormlord (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF0255:0005",
+          "desc": "Infinite Lives",
+          "address": "0xFF0255"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

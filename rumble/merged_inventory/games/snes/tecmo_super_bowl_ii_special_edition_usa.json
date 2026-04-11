@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "tecmosuperbowliispecialedition",
+  "display_name": "Tecmo Super Bowl II - Special Edition (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Tecmo Super Bowl II - Special Edition (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E0A1F00",
+          "desc": "Time Modifier",
+          "address": "0x7E0A1F"
+        },
+        {
+          "code": "7E0A2000",
+          "desc": "Time Modifier",
+          "address": "0x7E0A20"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

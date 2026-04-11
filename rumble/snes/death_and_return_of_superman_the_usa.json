@@ -1,0 +1,29 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Death and Return of Superman, The (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Death and Return of Superman, The (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "3324-3F6D",
+      "desc": "Infinite Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "3323-C76D",
+      "desc": "Infinite Special Attacks",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D323-C7AD",
+      "desc": "Infinite Special Attacks",
+      "kind": "game_genie"
+    }
+  ]
+}

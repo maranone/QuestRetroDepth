@@ -1,0 +1,65 @@
+{
+  "system": "snes",
+  "normalized_title": "cyborg009",
+  "display_name": "Cyborg 009 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Cyborg 009 (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E0AE33C",
+          "desc": "Infinite Sp",
+          "address": "0x7E0AE3"
+        },
+        {
+          "code": "7E0AE13C",
+          "desc": "Infinite Hp",
+          "address": "0x7E0AE1"
+        },
+        {
+          "code": "7E1A3109",
+          "desc": "Infinite Lives",
+          "address": "0x7E1A31"
+        },
+        {
+          "code": "7E0AB500",
+          "desc": "Character Modifier",
+          "address": "0x7E0AB5"
+        },
+        {
+          "code": "7E1A0D50",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E1A0D"
+        },
+        {
+          "code": "7E0ABD00",
+          "desc": "Keep Jumping To Desired Height",
+          "address": "0x7E0ABD"
+        },
+        {
+          "code": "7E0ABF00",
+          "desc": "Rise Into Sky",
+          "address": "0x7E0ABF"
+        },
+        {
+          "code": "7E1A1301",
+          "desc": "Have Map",
+          "address": "0x7E1A13"
+        },
+        {
+          "code": "7E0A0900",
+          "desc": "Area / Level Modifier",
+          "address": "0x7E0A09"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

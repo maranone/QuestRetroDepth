@@ -1,0 +1,5 @@
+game_name=BubsyInClawsEncounters
+game_key=BubsyInClawsEncounters-Snes
+system=snes
+integration_tier=manual
+trigger	score_0_219	score	0x7E0219	1	uint	native	prev < curr	0.7	1	left:0.300:80

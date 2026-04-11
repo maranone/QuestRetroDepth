@@ -1,0 +1,45 @@
+{
+  "system": "genesis",
+  "normalized_title": "arcadeclassics",
+  "display_name": "Arcade Classics (USA, Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Arcade Classics (USA, Europe).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF0006:0000",
+          "desc": "1P Score Modifier (Both Versions - Pong &amp; Hockey Modes)",
+          "address": "0xFF0006"
+        },
+        {
+          "code": "FF0006:0000",
+          "desc": "Opponent Score Modifier (Both Versions - Pong &amp; Hockey Modes)",
+          "address": "0xFF0006"
+        },
+        {
+          "code": "FF375A:0007",
+          "desc": "Infinite Lives P1 (SEGA Version)",
+          "address": "0xFF375A"
+        },
+        {
+          "code": "FF0B46:0007",
+          "desc": "Infinite Lives P1 (Original Version)",
+          "address": "0xFF0B46"
+        },
+        {
+          "code": "FF01BA:0009",
+          "desc": "Always Have Missiles Available (Both Versions)",
+          "address": "0xFF01BA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

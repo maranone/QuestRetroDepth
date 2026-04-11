@@ -1,0 +1,55 @@
+{
+  "system": "snes",
+  "normalized_title": "garoudensetsuspecial",
+  "display_name": "Garou Densetsu Special (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Garou Densetsu Special (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7FFCC163",
+          "desc": "Infinite Time",
+          "address": "0x7FFCC1"
+        },
+        {
+          "code": "7FF7615F",
+          "desc": "Player 1 Infinite Health",
+          "address": "0x7FF761"
+        },
+        {
+          "code": "7FF7635F",
+          "desc": "Player 1 Infinite Health",
+          "address": "0x7FF763"
+        },
+        {
+          "code": "7FF6730F",
+          "desc": "Play As Ryo Sakazaki",
+          "address": "0x7FF673"
+        },
+        {
+          "code": "7FF7611E",
+          "desc": "Player 1 Infinite Health",
+          "address": "0x7FF761"
+        },
+        {
+          "code": "7FF7631E",
+          "desc": "Player 1 Infinite Health",
+          "address": "0x7FF763"
+        },
+        {
+          "code": "7FF71101",
+          "desc": "Player 1 Has Player 2's Pallette.",
+          "address": "0x7FF711"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

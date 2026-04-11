@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "gegegenokitaroufukkatsutenmadaiou",
+  "display_name": "Gegege no Kitarou - Fukkatsu! Tenma Daiou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Gegege no Kitarou - Fukkatsu! Tenma Daiou (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E004E64",
+          "desc": "Infinite Health",
+          "address": "0x7E004E"
+        },
+        {
+          "code": "7E075113",
+          "desc": "Walk thru enemies / must get hit once",
+          "address": "0x7E0751"
+        },
+        {
+          "code": "7E11C563",
+          "desc": "Use item anytime",
+          "address": "0x7E11C5"
+        },
+        {
+          "code": "7E11BD00",
+          "desc": "Level Modifier",
+          "address": "0x7E11BD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

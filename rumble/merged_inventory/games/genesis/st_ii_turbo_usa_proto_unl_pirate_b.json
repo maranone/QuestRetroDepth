@@ -1,0 +1,45 @@
+{
+  "system": "genesis",
+  "normalized_title": "stiiturbob",
+  "display_name": "ST II' Turbo (USA) (Proto) (Unl) (Pirate) [b]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\ST II' Turbo (USA) (Proto) (Unl) (Pirate) [b].cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF83E8:0090",
+          "desc": "P1 Infinite Health",
+          "address": "0xFF83E8"
+        },
+        {
+          "code": "FF83E8:0000",
+          "desc": "P1 One Hit To Kill",
+          "address": "0xFF83E8"
+        },
+        {
+          "code": "FF86E8:0090",
+          "desc": "P2 Infinite Health",
+          "address": "0xFF86E8"
+        },
+        {
+          "code": "FF86E8:0000",
+          "desc": "P2 One Hit To Kill",
+          "address": "0xFF86E8"
+        },
+        {
+          "code": "FF8A6A:0099",
+          "desc": "Infinite Time",
+          "address": "0xFF8A6A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

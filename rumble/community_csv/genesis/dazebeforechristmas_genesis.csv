@@ -1,0 +1,9 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Daze Before Christmas (Australia) (Action Replay)
+# match_names=dazebeforechristmas|dazebeforechristmasgenesis
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+damage_taken_health_ff0fb1,0xFF0FB1,1,bcd,prev_gt_curr,,left,0.850,normal,0,90,100,70,
+death_health_ff0fb1,0xFF0FB1,1,bcd,became_zero,,both,1.000,normal,0,600,400,90,
+life_lost_lives_ff002c,0xFF002C,1,int,prev_gt_curr,,both,0.900,normal,0,300,160,80,
+life_gained_lives_ff002c,0xFF002C,1,int,prev_lt_curr,,both,0.750,normal,0,180,160,50,
+score_score_ff005c,0xFF005C,4,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,

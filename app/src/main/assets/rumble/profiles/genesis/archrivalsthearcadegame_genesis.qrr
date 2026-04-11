@@ -1,0 +1,5 @@
+game_name=Arch Rivals - The Arcade Game (USA) (Action Replay)
+game_key=ArchRivalsTheArcadeGame-Genesis
+system=genesis
+integration_tier=stable
+trigger	score_score_ff0098	score	0xFF0098	2	uint	big	prev < curr	0.8	1	right:0.350:60

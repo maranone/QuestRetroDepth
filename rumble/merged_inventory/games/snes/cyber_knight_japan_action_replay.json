@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "cyberknight",
+  "display_name": "Cyber Knight (Japan) (Action Replay)",
+  "aliases": [
+    "Cyber Knight (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Cyber Knight (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E020809",
+          "desc": "Infinite Character Creation Points",
+          "address": "0x7E0208"
+        },
+        {
+          "code": "7E200663",
+          "desc": "Max Power Commander",
+          "address": "0x7E2006"
+        },
+        {
+          "code": "7E200763",
+          "desc": "Max IQ Commander",
+          "address": "0x7E2007"
+        },
+        {
+          "code": "7E200863",
+          "desc": "Max Speed Commander",
+          "address": "0x7E2008"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

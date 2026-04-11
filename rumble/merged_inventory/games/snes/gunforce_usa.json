@@ -1,0 +1,82 @@
+{
+  "system": "snes",
+  "normalized_title": "gunforce",
+  "display_name": "GunForce (USA)",
+  "aliases": [
+    "GunForce"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\GunForce (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "7E0055B1",
+          "desc": "Invincibility",
+          "address": "0x7E0055"
+        },
+        {
+          "code": "7E002809",
+          "desc": "Infinite Time",
+          "address": "0x7E0028"
+        },
+        {
+          "code": "7E002909",
+          "desc": "Infinite Time",
+          "address": "0x7E0029"
+        },
+        {
+          "code": "7E005109",
+          "desc": "Infinite Lives (Player 1)",
+          "address": "0x7E0051"
+        },
+        {
+          "code": "7E005309",
+          "desc": "Infinite Continues (Player 1)",
+          "address": "0x7E0053"
+        },
+        {
+          "code": "7E0057FF",
+          "desc": "Always Have Rapid Fire",
+          "address": "0x7E0057"
+        },
+        {
+          "code": "7E901501",
+          "desc": "Always Have Weapon",
+          "address": "0x7E9015"
+        },
+        {
+          "code": "7E9018E7",
+          "desc": "Infinite Ammo",
+          "address": "0x7E9018"
+        },
+        {
+          "code": "7E901903",
+          "desc": "Infinite Ammo",
+          "address": "0x7E9019"
+        },
+        {
+          "code": "7E005209",
+          "desc": "Infinite Lives (Player 2)",
+          "address": "0x7E0052"
+        },
+        {
+          "code": "7E005409",
+          "desc": "Infinite Continues (Player 2)",
+          "address": "0x7E0054"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "GUN FORCE"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

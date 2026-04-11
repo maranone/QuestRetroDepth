@@ -1,0 +1,7 @@
+game_name=Chiki Chiki Boys (World) (Action Replay)
+game_key=ChikiChikiBoys-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ff9ee1	damage_taken	0xFF9EE1	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff9ee1	death	0xFF9EE1	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_ff8253	score	0xFF8253	3	bcd	big	prev < curr	0.8	1	right:0.350:60

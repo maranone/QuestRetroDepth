@@ -1,0 +1,65 @@
+{
+  "system": "genesis",
+  "normalized_title": "goofyshystericalhistorytour",
+  "display_name": "Goofy's Hysterical History Tour (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Goofy's Hysterical History Tour (USA).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FFB10E:0009",
+          "desc": "Hyper Goofy",
+          "address": "0xFFB10E"
+        },
+        {
+          "code": "FF01C2:0005",
+          "desc": "Infinite Health Goofy",
+          "address": "0xFF01C2"
+        },
+        {
+          "code": "FF0550:0083",
+          "desc": "Infinite Blue Balls (Ignore HUD)",
+          "address": "0xFF0550"
+        },
+        {
+          "code": "FF057A:004F",
+          "desc": "Infinite Lives",
+          "address": "0xFF057A"
+        },
+        {
+          "code": "FF04F8:0078",
+          "desc": "Infinite Yellow Balloons",
+          "address": "0xFF04F8"
+        },
+        {
+          "code": "FF0650:0009",
+          "desc": "Infinite Continues (Ignore Continue Screen)",
+          "address": "0xFF0650"
+        },
+        {
+          "code": "FF060C:0010",
+          "desc": "Invincibility",
+          "address": "0xFF060C"
+        },
+        {
+          "code": "FF0615:0003",
+          "desc": "Infinite Continue",
+          "address": "0xFF0615"
+        },
+        {
+          "code": "FF01C3:0005",
+          "desc": "Infinite Health",
+          "address": "0xFF01C3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

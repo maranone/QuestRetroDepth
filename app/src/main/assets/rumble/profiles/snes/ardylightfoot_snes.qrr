@@ -1,0 +1,7 @@
+game_name=Ardy Lightfoot (World) (Action Replay)
+game_key=ArdyLightfoot-Snes
+system=snes
+integration_tier=stable
+trigger	life_lost_lives_0c36	life_lost	0x7F0C36	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0c36	life_gained	0x7F0C36	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0c34	score	0x7F0C34	1	int	native	prev < curr	0.8	1	right:0.350:60

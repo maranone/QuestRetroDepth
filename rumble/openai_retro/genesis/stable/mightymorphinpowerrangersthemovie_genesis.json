@@ -1,0 +1,128 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "MightyMorphinPowerRangersTheMovie",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "third_party\\openai-retro\\retro\\data\\stable\\MightyMorphinPowerRangersTheMovie-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "MightyMorphinPowerRangersTheMovie-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_health_ff414c",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0xFF414C",
+          "size": 2,
+          "value_type": "uint",
+          "byte_order": "big",
+          "raw_type": ">u2",
+          "address": "0xFF414C",
+          "ram_offset": 16716
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFF414C",
+          "raw_type": ">u2"
+        }
+      ]
+    },
+    {
+      "id": "death_health_ff414c",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0xFF414C",
+          "size": 2,
+          "value_type": "uint",
+          "byte_order": "big",
+          "raw_type": ">u2",
+          "address": "0xFF414C",
+          "ram_offset": 16716
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFF414C",
+          "raw_type": ">u2"
+        }
+      ]
+    },
+    {
+      "id": "score_score_ff40b0",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xFF40B0",
+          "size": 4,
+          "value_type": "uint",
+          "byte_order": "big",
+          "raw_type": ">u4",
+          "address": "0xFF40B0",
+          "ram_offset": 16560
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xFF40B0",
+          "raw_type": ">u4"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "time",
+      "meta": {
+        "address": 16741693,
+        "type": ">n3"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

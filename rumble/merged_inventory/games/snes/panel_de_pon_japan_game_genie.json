@@ -1,0 +1,57 @@
+{
+  "system": "snes",
+  "normalized_title": "paneldepon",
+  "display_name": "Panel de Pon (Japan) (Game Genie)",
+  "aliases": [
+    "Panel de Pon (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Panel de Pon (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E114480",
+          "desc": "Release Date",
+          "address": "0x7E1144"
+        },
+        {
+          "code": "7E5BBD01",
+          "desc": "Stop Blocks From Moving Up",
+          "address": "0x7E5BBD"
+        },
+        {
+          "code": "7EE82F00",
+          "desc": "The Computer Becomes Ineffective",
+          "address": "0x7EE82F"
+        },
+        {
+          "code": "7E033800",
+          "desc": "Freeze The Time At The Start",
+          "address": "0x7E0338"
+        },
+        {
+          "code": "7E05BA63",
+          "desc": "You Always Throw A Lot of Attacks Even With Small Chains",
+          "address": "0x7E05BA"
+        },
+        {
+          "code": "7E033800",
+          "desc": "Freeze Timer",
+          "address": "0x7E0338"
+        },
+        {
+          "code": "7E02BE00",
+          "desc": "Character Modifier",
+          "address": "0x7E02BE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

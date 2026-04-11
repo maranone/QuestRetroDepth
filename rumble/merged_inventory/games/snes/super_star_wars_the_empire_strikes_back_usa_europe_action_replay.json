@@ -1,0 +1,103 @@
+{
+  "system": "snes",
+  "normalized_title": "superstarwarsempirestrikesback",
+  "display_name": "Super Star Wars - The Empire Strikes Back (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Super Star Wars - The Empire Strikes Back (USA)",
+    "Super Star Wars - The Empire Strikes Back (USA, Europe) (Action Replay)",
+    "Super Star Wars - The Empire Strikes Back (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\superstarwarstheempirestrikesback_snes.json",
+      "trigger_count": 11,
+      "field_names": [
+        "health",
+        "lives",
+        "score0",
+        "score1",
+        "score2",
+        "score3",
+        "score4",
+        "score5",
+        "score6"
+      ],
+      "field_count": 9,
+      "distinct_addresses": [
+        "0x7E019A",
+        "0x7E019C",
+        "0x7E019E",
+        "0x7E01A0",
+        "0x7E01A2",
+        "0x7E01A4",
+        "0x7E01A6",
+        "0x7E01AC",
+        "0x7E01B0"
+      ],
+      "distinct_address_count": 9
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperStarWarsTheEmpireStrikesBack-Snes-v0\\data.json",
+      "field_count": 9,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E01B0",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E01AC",
+          "type": "|i1"
+        },
+        {
+          "name": "score0",
+          "address": "0x7E019A",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0x7E019C",
+          "type": "|u1"
+        },
+        {
+          "name": "score2",
+          "address": "0x7E019E",
+          "type": "|u1"
+        },
+        {
+          "name": "score3",
+          "address": "0x7E01A0",
+          "type": "|u1"
+        },
+        {
+          "name": "score4",
+          "address": "0x7E01A2",
+          "type": "|u1"
+        },
+        {
+          "name": "score5",
+          "address": "0x7E01A4",
+          "type": "|u1"
+        },
+        {
+          "name": "score6",
+          "address": "0x7E01A6",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 9
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Star Wars - The Empire Strikes Back (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 55,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "system": "snes",
+  "normalized_title": "mazingerz",
+  "display_name": "Mazinger Z (Japan) (Action Replay)",
+  "aliases": [
+    "Mazinger Z (Japan) (Putative Beta)",
+    "Mazinger Z (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Mazinger Z (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E072E7F",
+          "desc": "Infinite Health",
+          "address": "0x7E072E"
+        },
+        {
+          "code": "7E072F02",
+          "desc": "Infinite Health",
+          "address": "0x7E072F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

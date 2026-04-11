@@ -1,0 +1,62 @@
+{
+  "system": "snes",
+  "normalized_title": "pinocchio",
+  "display_name": "Pinocchio (Rumbles)",
+  "aliases": [
+    "Pinocchio (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Pinocchio (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E00AC18",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E00AC"
+        },
+        {
+          "code": "7E037A00",
+          "desc": "Level Modifier",
+          "address": "0x7E037A"
+        },
+        {
+          "code": "7E200A00",
+          "desc": "Alternate Level Modifier",
+          "address": "0x7E200A"
+        },
+        {
+          "code": "7E03D201",
+          "desc": "Moon Jump",
+          "address": "0x7E03D2"
+        },
+        {
+          "code": "7E03D501",
+          "desc": "Slow Descent",
+          "address": "0x7E03D5"
+        },
+        {
+          "code": "7E03D864",
+          "desc": "Infinite Health",
+          "address": "0x7E03D8"
+        },
+        {
+          "code": "7E03DE09",
+          "desc": "Infinite Lives",
+          "address": "0x7E03DE"
+        },
+        {
+          "code": "7E201CFF",
+          "desc": "Enable Level Select Cheat (from Start Menu)",
+          "address": "0x7E201C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

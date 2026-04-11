@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "beethovenultimatecaninecaper",
+  "display_name": "Beethoven - The Ultimate Canine Caper! (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Beethoven - The Ultimate Canine Caper! (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E15C409",
+          "desc": "9 Lives",
+          "address": "0x7E15C4"
+        },
+        {
+          "code": "7E162804",
+          "desc": "Infinite Energy",
+          "address": "0x7E1628"
+        },
+        {
+          "code": "7E15C609",
+          "desc": "Infinite Lives",
+          "address": "0x7E15C6"
+        },
+        {
+          "code": "7E165463",
+          "desc": "Infinite Time",
+          "address": "0x7E1654"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

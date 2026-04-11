@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "kamenrider",
+  "display_name": "Kamen Rider (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Kamen Rider (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E0C6A40",
+          "desc": "Infinite Energy",
+          "address": "0x7E0C6A"
+        },
+        {
+          "code": "7E003802",
+          "desc": "Infinite Lives",
+          "address": "0x7E0038"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

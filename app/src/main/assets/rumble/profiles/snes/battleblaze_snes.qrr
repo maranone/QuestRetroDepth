@@ -1,0 +1,5 @@
+game_name=BattleBlaze
+game_key=BattleBlaze-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_6dc	damage_taken	0x7E06DC	1	uint	native	prev > curr	0.85	1	left:0.750:180

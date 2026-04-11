@@ -1,0 +1,83 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Actraiser",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Actraiser (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "Actraiser-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_0_1d",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E001D",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x001D",
+          "bank": "7E",
+          "wram_offset": 29
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss",
+          "address": "0x7E001D",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_1_1f",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0x7E001F",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x001F",
+          "bank": "7E",
+          "wram_offset": 31
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.51,
+          "duration_ms": 100
+        }
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble when enemy hit",
+      "source_fields": [
+        {
+          "name": "rumble_when_enemy_hit",
+          "address": "0x7E001F",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

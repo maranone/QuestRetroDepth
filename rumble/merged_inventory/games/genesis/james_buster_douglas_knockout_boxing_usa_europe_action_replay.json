@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "jamesbusterdouglasknockoutboxing",
+  "display_name": "James 'Buster' Douglas Knockout Boxing (USA, Europe) (Action Replay)",
+  "aliases": [
+    "James 'Buster' Douglas Knockout Boxing (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\James 'Buster' Douglas Knockout Boxing (USA, Europe).cht",
+      "total_cheat_rows": 33,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF84BC:00FF",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF84BC"
+        },
+        {
+          "code": "FF853C:00FF",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF853C"
+        },
+        {
+          "code": "FF84BC:0000",
+          "desc": "No Energy P1",
+          "address": "0xFF84BC"
+        },
+        {
+          "code": "FF853C:0000",
+          "desc": "No Energy P2",
+          "address": "0xFF853C"
+        },
+        {
+          "code": "FF85D5:0009",
+          "desc": "Instant KO on knockdown",
+          "address": "0xFF85D5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

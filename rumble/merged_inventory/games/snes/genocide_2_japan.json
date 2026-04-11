@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "genocide2",
+  "display_name": "Genocide 2 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Genocide 2 (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E8CDDB4",
+          "desc": "Infinite Shield",
+          "address": "0x7E8CDD"
+        },
+        {
+          "code": "7E1FDDAF",
+          "desc": "Infinite Betty",
+          "address": "0x7E1FDD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

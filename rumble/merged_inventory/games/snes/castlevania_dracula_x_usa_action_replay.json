@@ -1,0 +1,193 @@
+{
+  "system": "snes",
+  "normalized_title": "castlevaniadraculax",
+  "display_name": "Castlevania - Dracula X (USA) (Action Replay)",
+  "aliases": [
+    "Castlevania - Dracula X (Rumbles)",
+    "Castlevania - Dracula X (USA) (Action Replay)",
+    "Castlevania - Dracula X (USA) (Game Genie)",
+    "Castlevania - Dracula X (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\castlevaniadraculax_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E009E",
+        "0x7E00A0",
+        "0x7E00AA"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CastlevaniaDraculaX-Snes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E00AA",
+          "type": "|i1"
+        },
+        {
+          "name": "hearts",
+          "address": "0x7E00A2",
+          "type": "|d1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E009E",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E00A0",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Castlevania - Dracula X (USA).cht",
+      "total_cheat_rows": 83,
+      "raw_entry_count": 40,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "7E00A840",
+          "desc": "Take No Damage From Enemies [Infinite Health]",
+          "address": "0x7E00A8"
+        },
+        {
+          "code": "7E00A299",
+          "desc": "Start With And Keep 99 Hearts [Infinite Hearts]",
+          "address": "0x7E00A2"
+        },
+        {
+          "code": "7E00A400",
+          "desc": "Subweapon mod.",
+          "address": "0x7E00A4"
+        },
+        {
+          "code": "7E007800",
+          "desc": "Starting Level Mod",
+          "address": "0x7E0078"
+        },
+        {
+          "code": "7E007A00",
+          "desc": "Sub Level mod",
+          "address": "0x7E007A"
+        },
+        {
+          "code": "7E04A501",
+          "desc": "Mega Jump",
+          "address": "0x7E04A5"
+        },
+        {
+          "code": "7E04A201",
+          "desc": "Mega-Jump With Lunar Descent!",
+          "address": "0x7E04A2"
+        },
+        {
+          "code": "7E04A205",
+          "desc": "Mega-Jump [Alternate Code]",
+          "address": "0x7E04A2"
+        },
+        {
+          "code": "7E04A596",
+          "desc": "Slow Mega-Jump",
+          "address": "0x7E04A5"
+        },
+        {
+          "code": "7E04AA01",
+          "desc": "Glide Walk",
+          "address": "0x7E04AA"
+        },
+        {
+          "code": "7E128E01",
+          "desc": "1st Boss Easy",
+          "address": "0x7E128E"
+        },
+        {
+          "code": "7E04982F",
+          "desc": "Fly With Using Whip [Sort Of]",
+          "address": "0x7E0498"
+        },
+        {
+          "code": "7E04A900",
+          "desc": "Jump Much Further With Using Whip In Mid-Air",
+          "address": "0x7E04A9"
+        },
+        {
+          "code": "7E00DE64",
+          "desc": "Invincibile",
+          "address": "0x7E00DE"
+        },
+        {
+          "code": "7E009E99",
+          "desc": "Infinite Lives",
+          "address": "0x7E009E"
+        },
+        {
+          "code": "7E060011",
+          "desc": "Fire Whip",
+          "address": "0x7E0600"
+        },
+        {
+          "code": "7E00A400",
+          "desc": "No Sub Weapon",
+          "address": "0x7E00A4"
+        },
+        {
+          "code": "7E00A403",
+          "desc": "No Sub Weapon",
+          "address": "0x7E00A4"
+        },
+        {
+          "code": "7E00A8FF",
+          "desc": "Infinite Health",
+          "address": "0x7E00A8"
+        },
+        {
+          "code": "7E00AAFF",
+          "desc": "Infinite Health",
+          "address": "0x7E00AA"
+        },
+        {
+          "code": "7E00A263",
+          "desc": "Infinite Hearts",
+          "address": "0x7E00A2"
+        },
+        {
+          "code": "7E00A400",
+          "desc": "Weapon Modifier",
+          "address": "0x7E00A4"
+        },
+        {
+          "code": "7E00DF01",
+          "desc": "Most Enemies Can't Hurt You and Walk Through You",
+          "address": "0x7E00DF"
+        },
+        {
+          "code": "7E00A407",
+          "desc": "Your Secondary Weapon Is A Roast",
+          "address": "0x7E00A4"
+        },
+        {
+          "code": "7E00A607",
+          "desc": "Your Secondary Weapon Is A Roast",
+          "address": "0x7E00A6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

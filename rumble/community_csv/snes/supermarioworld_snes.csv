@@ -1,0 +1,8 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Super Mario World (World) (Action Replay)
+# match_names=supermarioworld|supermarioworldsnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+pickup_coins_0dbf,0x7E0DBF,1,uint,changed,,right,0.250,normal,0,18,35,20,
+life_lost_lives_0dbe,0x7E0DBE,1,int,prev_gt_curr,,both,0.900,normal,0,300,160,80,
+life_gained_lives_0dbe,0x7E0DBE,1,int,prev_lt_curr,,both,0.750,normal,0,180,160,50,
+score_score_0f34,0x7E0F34,4,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,

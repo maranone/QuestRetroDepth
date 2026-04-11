@@ -1,0 +1,53 @@
+{
+  "system": "snes",
+  "normalized_title": "kengriffeyjrpresentsmajorleaguebaseball",
+  "display_name": "Ken Griffey Jr. Presents Major League Baseball (USA) (Action Replay)",
+  "aliases": [
+    "Ken Griffey Jr. Presents Major League Baseball (USA) (Game Genie)",
+    "Ken Griffey Jr. Presents Major League Baseball (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ken Griffey Jr. Presents Major League Baseball (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E134B00",
+          "desc": "Ball Modifier",
+          "address": "0x7E134B"
+        },
+        {
+          "code": "7E134D00",
+          "desc": "Strike Modifier",
+          "address": "0x7E134D"
+        },
+        {
+          "code": "7E134F00",
+          "desc": "Out Modifier",
+          "address": "0x7E134F"
+        },
+        {
+          "code": "7E134900",
+          "desc": "Inning Modifier",
+          "address": "0x7E1349"
+        },
+        {
+          "code": "7E135400",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0x7E1354"
+        },
+        {
+          "code": "7E136300",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0x7E1363"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

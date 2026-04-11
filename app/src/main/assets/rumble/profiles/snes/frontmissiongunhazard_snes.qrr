@@ -1,0 +1,6 @@
+game_name=FrontMissionGunHazard
+game_key=FrontMissionGunHazard-Snes
+system=snes
+integration_tier=manual
+trigger	enemy_defeated_0_fa4	enemy_defeated	0x7E0FA4	1	uint	native	prev != curr	0.7	1	left:0.510:100
+trigger	damage_taken_1_d6	damage_taken	0x7E00D6	1	uint	native	prev > curr	0.85	1	left:0.750:180

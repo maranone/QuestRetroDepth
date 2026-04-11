@@ -1,0 +1,8 @@
+game_name=Street Fighter II' - Special Champion Edition (USA, Europe) (Action Replay)
+game_key=StreetFighterIISpecialChampionEdition-Genesis
+system=genesis
+integration_tier=stable
+trigger	enemy_defeated_enemy_health_ff82c2	enemy_defeated	0xFF82C2	2	int	big	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_ff8042	damage_taken	0xFF8042	2	int	big	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff8042	death	0xFF8042	2	int	big	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_ff81e8	score	0xFF81E8	4	bcd	big	prev < curr	0.8	1	right:0.350:60

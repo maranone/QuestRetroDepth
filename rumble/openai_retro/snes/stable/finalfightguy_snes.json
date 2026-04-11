@@ -1,0 +1,200 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "FinalFightGuy",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "third_party\\openai-retro\\retro\\data\\stable\\FinalFightGuy-Snes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "FinalFightGuy-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_health_0d14",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E0D14",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "bank": "7E",
+          "address": "0x0D14",
+          "wram_offset": 3348
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0x7E0D14",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_0d14",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0x7E0D14",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "bank": "7E",
+          "address": "0x0D14",
+          "wram_offset": 3348
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0x7E0D14",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_lives_2456",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0x7E2456",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "bank": "7E",
+          "address": "0x2456",
+          "wram_offset": 9302
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x7E2456",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_2456",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0x7E2456",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "bank": "7E",
+          "address": "0x2456",
+          "wram_offset": 9302
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x7E2456",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_0c90",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E0C90",
+          "size": 8,
+          "value_type": "nibble",
+          "byte_order": "big",
+          "raw_type": ">n8",
+          "bank": "7E",
+          "address": "0x0C90",
+          "wram_offset": 3216
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0x7E0C90",
+          "raw_type": ">n8"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

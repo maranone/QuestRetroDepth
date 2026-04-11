@@ -1,0 +1,45 @@
+{
+  "system": "genesis",
+  "normalized_title": "kingoffighters98",
+  "display_name": "King of Fighters '98",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\King of Fighters '98.cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF0212:0050",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF0212"
+        },
+        {
+          "code": "FF0412:0050",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF0412"
+        },
+        {
+          "code": "FF0212:0000",
+          "desc": "No Energy P1",
+          "address": "0xFF0212"
+        },
+        {
+          "code": "FF0412:0000",
+          "desc": "No Energy P2",
+          "address": "0xFF0412"
+        },
+        {
+          "code": "FF0708:0063",
+          "desc": "Infinite Time",
+          "address": "0xFF0708"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "system": "genesis",
+  "normalized_title": "iraqwar2003",
+  "display_name": "Iraq War 2003 (China) (Action Replay)",
+  "aliases": [
+    "Iraq War 2003"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Iraq War 2003.cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF017A:00C8",
+          "desc": "Infinite Ammo",
+          "address": "0xFF017A"
+        },
+        {
+          "code": "FF0186:0006",
+          "desc": "Infinite Rockets",
+          "address": "0xFF0186"
+        },
+        {
+          "code": "FF017F:00B2",
+          "desc": "Infinite Shield",
+          "address": "0xFF017F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

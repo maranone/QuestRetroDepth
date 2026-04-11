@@ -1,0 +1,106 @@
+{
+  "system": "genesis",
+  "normalized_title": "dazebeforechristmas",
+  "display_name": "Daze Before Christmas (Australia) (Action Replay)",
+  "aliases": [
+    "Daze Before Christmas (Australia) (Action Replay)",
+    "Daze Before Christmas (Australia)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\dazebeforechristmas_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF002C",
+        "0xFF005C",
+        "0xFF0FB1"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DazeBeforeChristmas-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF0FB1",
+          "type": "|d1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF002C",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF005C",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Daze Before Christmas (Australia).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FF0064:0009",
+          "desc": "Infinite Presents (Hundred Digit) P1",
+          "address": "0xFF0064"
+        },
+        {
+          "code": "FF0064:0099",
+          "desc": "Infinite Presents (Tens &amp; Ones Digits) P1",
+          "address": "0xFF0064"
+        },
+        {
+          "code": "FF003A:0007",
+          "desc": "Fake Infinite Santa Hats (Health Bar) P1",
+          "address": "0xFF003A"
+        },
+        {
+          "code": "FF002C:0009",
+          "desc": "Infinite Santas (Lives) P1",
+          "address": "0xFF002C"
+        },
+        {
+          "code": "FF0FB0:0007",
+          "desc": "Infinite Health Santa P1",
+          "address": "0xFF0FB0"
+        },
+        {
+          "code": "FF0054:0000",
+          "desc": "Level Modifier",
+          "address": "0xFF0054"
+        },
+        {
+          "code": "FF0FF8:0000",
+          "desc": "1 Shot Kill Bosses",
+          "address": "0xFF0FF8"
+        },
+        {
+          "code": "FF2CBE:00FF",
+          "desc": "Enable Level Select",
+          "address": "0xFF2CBE"
+        },
+        {
+          "code": "FF0FB1:00FF",
+          "desc": "1 Hit Invincible",
+          "address": "0xFF0FB1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

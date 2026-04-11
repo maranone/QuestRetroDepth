@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "seaquestdsv",
+  "display_name": "SeaQuest DSV (USA, Europe) (Action Replay)",
+  "aliases": [
+    "SeaQuest DSV (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\SeaQuest DSV (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF0A8E:FF",
+          "desc": "Infinite Missiles",
+          "address": "0xFF0A8E"
+        },
+        {
+          "code": "FF0A97:FF",
+          "desc": "Infinite Mines",
+          "address": "0xFF0A97"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

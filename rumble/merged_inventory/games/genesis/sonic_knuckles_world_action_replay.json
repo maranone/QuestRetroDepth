@@ -1,0 +1,147 @@
+{
+  "system": "genesis",
+  "normalized_title": "sonicknuckles",
+  "display_name": "Sonic _ Knuckles (World) (Action Replay)",
+  "aliases": [
+    "Sonic _ Knuckles (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sonic _ Knuckles (World).cht",
+      "total_cheat_rows": 305,
+      "raw_entry_count": 38,
+      "distinct_address_count": 30,
+      "sample_raw_entries": [
+        {
+          "code": "FFFE20:00C8",
+          "desc": "Infinite Rings",
+          "address": "0xFFFE20"
+        },
+        {
+          "code": "FFFE12:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFFE12"
+        },
+        {
+          "code": "FFFE18:0009",
+          "desc": "Infinite Continues",
+          "address": "0xFFFE18"
+        },
+        {
+          "code": "FFE438:0001",
+          "desc": "Only Need 1 Blue Sphere For Chaos Emerald",
+          "address": "0xFFE438"
+        },
+        {
+          "code": "FFE439:0001",
+          "desc": "Only Need 1 Blue Sphere For Chaos Emerald  (On An Actual System)",
+          "address": "0xFFE439"
+        },
+        {
+          "code": "FFFE10:0004",
+          "desc": "Stage/Act Modifier",
+          "address": "0xFFFE10"
+        },
+        {
+          "code": "FFB02A:0002",
+          "desc": "Invincible (Only Tested On Sonic &amp; Knuckles With Sonic 2)",
+          "address": "0xFFB02A"
+        },
+        {
+          "code": "FFFFE0:0001",
+          "desc": "Stage Select (Press A + Start)",
+          "address": "0xFFFFE0"
+        },
+        {
+          "code": "FFFE24:0005",
+          "desc": "Infinite Time",
+          "address": "0xFFFE24"
+        },
+        {
+          "code": "FFFFB1:0007",
+          "desc": "Have All Emeralds",
+          "address": "0xFFFFB1"
+        },
+        {
+          "code": "FFB01A:00FE",
+          "desc": "Switch F/X On For Levitate Jump For Sonic Or Knuckles",
+          "address": "0xFFB01A"
+        },
+        {
+          "code": "FFFF0A:0003",
+          "desc": "Play As Knuckles",
+          "address": "0xFFFF0A"
+        },
+        {
+          "code": "FFFF0A:0002",
+          "desc": "Play As Tails",
+          "address": "0xFFFF0A"
+        },
+        {
+          "code": "FFFF0A:0001",
+          "desc": "Play As Sonic",
+          "address": "0xFFFF0A"
+        },
+        {
+          "code": "FFB038:0002",
+          "desc": "Knuckles Level Layout",
+          "address": "0xFFB038"
+        },
+        {
+          "code": "FFB038:0001",
+          "desc": "Tails Level Layout",
+          "address": "0xFFB038"
+        },
+        {
+          "code": "FFB038:0000",
+          "desc": "Sonic Level Layout",
+          "address": "0xFFB038"
+        },
+        {
+          "code": "FFFC0C:0000",
+          "desc": "Sonic, Tails, and Knuckles Shoe Color Modifier (Base Color)",
+          "address": "0xFFFC0C"
+        },
+        {
+          "code": "FFB029:6600",
+          "desc": "Ultimate Invincibility!",
+          "address": "0xFFB029"
+        },
+        {
+          "code": "FFB02B:0066",
+          "desc": "Ultimate Invincibility! (On An Actual System)",
+          "address": "0xFFB02B"
+        },
+        {
+          "code": "FFF761:6419",
+          "desc": "Super Speed! (Sonic &amp; Knuckles)",
+          "address": "0xFFF761"
+        },
+        {
+          "code": "FFFEC1:6419",
+          "desc": "Super Speed! (Tails)",
+          "address": "0xFFFEC1"
+        },
+        {
+          "code": "FFF65D:FF00",
+          "desc": "Flashing As If Super Powered",
+          "address": "0xFFF65D"
+        },
+        {
+          "code": "FFF710:0000",
+          "desc": "HUD Display Modifier",
+          "address": "0xFFF710"
+        },
+        {
+          "code": "FFF730:0000",
+          "desc": "Disable Water",
+          "address": "0xFFF730"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

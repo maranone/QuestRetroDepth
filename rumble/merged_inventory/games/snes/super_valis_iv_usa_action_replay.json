@@ -1,0 +1,162 @@
+{
+  "system": "snes",
+  "normalized_title": "supervalisiv",
+  "display_name": "Super Valis IV (USA) (Action Replay)",
+  "aliases": [
+    "Super Valis Iv (Rumbles)",
+    "Super Valis IV (USA) (Action Replay)",
+    "Super Valis IV (USA) (Game Genie)",
+    "Super Valis IV (USA)",
+    "Super Valis IV"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\supervalisiv_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0FB5",
+        "0x7E0FBC"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperValisIV-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E0FB5",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0FBC",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Valis IV (USA).cht",
+      "total_cheat_rows": 44,
+      "raw_entry_count": 20,
+      "distinct_address_count": 20,
+      "sample_raw_entries": [
+        {
+          "code": "7E0FA701",
+          "desc": "Have All Items",
+          "address": "0x7E0FA7"
+        },
+        {
+          "code": "7E0FA802",
+          "desc": "Have All Items",
+          "address": "0x7E0FA8"
+        },
+        {
+          "code": "7E0FA903",
+          "desc": "Have All Items",
+          "address": "0x7E0FA9"
+        },
+        {
+          "code": "7E0FAA04",
+          "desc": "Have All Items",
+          "address": "0x7E0FAA"
+        },
+        {
+          "code": "7E0FAB05",
+          "desc": "Have All Items",
+          "address": "0x7E0FAB"
+        },
+        {
+          "code": "7E0FAC06",
+          "desc": "Have All Items",
+          "address": "0x7E0FAC"
+        },
+        {
+          "code": "7E0FAE09",
+          "desc": "Infinite Item Uses",
+          "address": "0x7E0FAE"
+        },
+        {
+          "code": "7E0FB640",
+          "desc": "Highest Maximum Health",
+          "address": "0x7E0FB6"
+        },
+        {
+          "code": "7E0FB540",
+          "desc": "Infinite Maximum Health",
+          "address": "0x7E0FB5"
+        },
+        {
+          "code": "7E068E20",
+          "desc": "Armor Always Active(Invincible)",
+          "address": "0x7E068E"
+        },
+        {
+          "code": "7E0FB905",
+          "desc": "Always 5 Hits Left On Armor",
+          "address": "0x7E0FB9"
+        },
+        {
+          "code": "7E0F5D00",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E0F5D"
+        },
+        {
+          "code": "7E0FC650",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E0FC6"
+        },
+        {
+          "code": "7E066318",
+          "desc": "Speed Modifier",
+          "address": "0x7E0663"
+        },
+        {
+          "code": "7E0666D0",
+          "desc": "Rise to Ceiling",
+          "address": "0x7E0666"
+        },
+        {
+          "code": "7E07D7FF",
+          "desc": "Most Enemies Die On Sight Including Bosses",
+          "address": "0x7E07D7"
+        },
+        {
+          "code": "7E0FBC99",
+          "desc": "999900 Score Modifier",
+          "address": "0x7E0FBC"
+        },
+        {
+          "code": "7E0FBD99",
+          "desc": "999900 Score Modifier",
+          "address": "0x7E0FBD"
+        },
+        {
+          "code": "7E069300",
+          "desc": "Act Modifier",
+          "address": "0x7E0693"
+        },
+        {
+          "code": "7E0FB700",
+          "desc": "Bosses Die Quickly",
+          "address": "0x7E0FB7"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "SUPER VALIS IV"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

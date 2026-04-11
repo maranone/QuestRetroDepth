@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "rogerclemensmvpbaseball",
+  "display_name": "Roger Clemens' MVP Baseball (USA) (Action Replay)",
+  "aliases": [
+    "Roger Clemens' MVP Baseball (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Roger Clemens' MVP Baseball (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF8BE0:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFF8BE0"
+        },
+        {
+          "code": "FF8BE2:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFF8BE2"
+        },
+        {
+          "code": "FF8BE4:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFF8BE4"
+        },
+        {
+          "code": "FF8BEE:0000",
+          "desc": "Team 1 Runs Modifier",
+          "address": "0xFF8BEE"
+        },
+        {
+          "code": "FF8BF0:0000",
+          "desc": "Team 2 Runs Modifier",
+          "address": "0xFF8BF0"
+        },
+        {
+          "code": "FF8C18:0000",
+          "desc": "Team 1 Score Total Modifier",
+          "address": "0xFF8C18"
+        },
+        {
+          "code": "FF8C16:0000",
+          "desc": "Team 2 Score Total Modifier",
+          "address": "0xFF8C16"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

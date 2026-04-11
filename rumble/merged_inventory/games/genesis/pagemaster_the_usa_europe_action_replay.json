@@ -1,0 +1,34 @@
+{
+  "system": "genesis",
+  "normalized_title": "pagemaster",
+  "display_name": "Pagemaster, The (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Pagemaster, The (USA) (Beta)",
+    "Pagemaster, The (USA)",
+    "Pagemaster, The (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Pagemaster, The (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFFAF7:09",
+          "desc": "Infinite Lives",
+          "address": "0xFFFAF7"
+        },
+        {
+          "code": "FFFAF5:01",
+          "desc": "Infinite Energy",
+          "address": "0xFFFAF5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

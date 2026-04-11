@@ -1,0 +1,27 @@
+{
+  "system": "snes",
+  "normalized_title": "acmeanimationfactory",
+  "display_name": "ACME Animation Factory (USA, Europe) (Action Replay)",
+  "aliases": [
+    "ACME Animation Factory (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\ACME Animation Factory (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "7E1BA43C",
+          "desc": "Infinite Time In Game Mode",
+          "address": "0x7E1BA4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

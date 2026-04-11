@@ -1,0 +1,27 @@
+{
+  "system": "snes",
+  "normalized_title": "superfireprowrestlingxpremium",
+  "display_name": "Super Fire Pro Wrestling X Premium (Japan) (Game Genie)",
+  "aliases": [
+    "Super Fire Pro Wrestling X Premium (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Fire Pro Wrestling X Premium (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "7E16BE00",
+          "desc": "Infinite Attribute Points in Wrestler Edit (Ignore Display)",
+          "address": "0x7E16BE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

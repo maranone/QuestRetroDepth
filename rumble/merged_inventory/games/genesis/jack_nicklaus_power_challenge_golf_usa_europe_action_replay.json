@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "jacknicklauspowerchallengegolf",
+  "display_name": "Jack Nicklaus' Power Challenge Golf (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Jack Nicklaus' Power Challenge Golf (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Jack Nicklaus' Power Challenge Golf (USA, Europe).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF2C04:0000",
+          "desc": "Always On 1st Stroke P1",
+          "address": "0xFF2C04"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

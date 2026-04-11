@@ -1,0 +1,76 @@
+{
+  "system": "genesis",
+  "normalized_title": "frankthomasbighurtbaseball",
+  "display_name": "Frank Thomas Big Hurt Baseball (USA, Europe)",
+  "aliases": [
+    "Frank Thomas Big Hurt Baseball (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\frankthomasbighurtbaseball_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FrankThomasBigHurtBaseball-Genesis-v0\\data.json",
+      "field_count": 8,
+      "fields": [
+        {
+          "name": "at_bat",
+          "address": "0xFF2171",
+          "type": "|u1"
+        },
+        {
+          "name": "hits",
+          "address": "0xFF2403",
+          "type": "|u1"
+        },
+        {
+          "name": "hits_opponent",
+          "address": "0xFF2405",
+          "type": "|u1"
+        },
+        {
+          "name": "inning",
+          "address": "0xFF2426",
+          "type": "|u1"
+        },
+        {
+          "name": "outs",
+          "address": "0xFF22D7",
+          "type": "|u1"
+        },
+        {
+          "name": "runs",
+          "address": "0xFF23FB",
+          "type": "|u1"
+        },
+        {
+          "name": "runs_opponent",
+          "address": "0xFF23FD",
+          "type": "|u1"
+        },
+        {
+          "name": "strikes",
+          "address": "0xFF22D8",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 8
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Frank Thomas Big Hurt Baseball (USA, Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

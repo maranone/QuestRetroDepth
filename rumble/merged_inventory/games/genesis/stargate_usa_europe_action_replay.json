@@ -1,0 +1,77 @@
+{
+  "system": "genesis",
+  "normalized_title": "stargate",
+  "display_name": "Stargate (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Stargate (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Stargate (USA, Europe).cht",
+      "total_cheat_rows": 46,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FFC890:0063",
+          "desc": "Infinite Grenades",
+          "address": "0xFFC890"
+        },
+        {
+          "code": "FFFC64:0000",
+          "desc": "Gun Never Heats Up",
+          "address": "0xFFFC64"
+        },
+        {
+          "code": "FFC934:0063",
+          "desc": "Turbo Mode",
+          "address": "0xFFC934"
+        },
+        {
+          "code": "FFFFA4:0000",
+          "desc": "Level Modifier",
+          "address": "0xFFFFA4"
+        },
+        {
+          "code": "FFC892:000A",
+          "desc": "Infinite Alien Grenades",
+          "address": "0xFFC892"
+        },
+        {
+          "code": "FFFC62:0340",
+          "desc": "Infinite Energy",
+          "address": "0xFFFC62"
+        },
+        {
+          "code": "FFC86F:0063",
+          "desc": "Infinite Grenades - Stargate (Europe) (Beta)",
+          "address": "0xFFC86F"
+        },
+        {
+          "code": "FFFC53:0006",
+          "desc": "Infinite Lives - Stargate (Europe) (Beta)",
+          "address": "0xFFFC53"
+        },
+        {
+          "code": "FFFC79:0006",
+          "desc": "Infinite Lives",
+          "address": "0xFFFC79"
+        },
+        {
+          "code": "FFFC43:0000",
+          "desc": "Weapon Does Not Overheat - Stargate (Europe) (Beta)",
+          "address": "0xFFFC43"
+        },
+        {
+          "code": "FFFC40:0340",
+          "desc": "Infinite Energy - Stargate (Europe) (Beta)",
+          "address": "0xFFFC40"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

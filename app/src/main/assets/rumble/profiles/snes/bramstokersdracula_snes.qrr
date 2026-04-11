@@ -1,0 +1,9 @@
+game_name=Bram Stoker's Dracula (USA, Europe) (Game Genie)
+game_key=BramStokersDracula-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_01f4	damage_taken	0x7E01F4	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_01f4	death	0x7E01F4	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_01e6	life_lost	0x7E01E6	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_01e6	life_gained	0x7E01E6	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_01e8	score	0x7E01E8	4	uint	little	prev < curr	0.8	1	right:0.350:60

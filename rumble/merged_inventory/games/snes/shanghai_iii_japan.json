@@ -1,0 +1,55 @@
+{
+  "system": "snes",
+  "normalized_title": "shanghaiiii",
+  "display_name": "Shanghai III (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Shanghai III (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E496C60",
+          "desc": "Infinite Time",
+          "address": "0x7E496C"
+        },
+        {
+          "code": "7E075703",
+          "desc": "Infinite Help P1",
+          "address": "0x7E0757"
+        },
+        {
+          "code": "7E075803",
+          "desc": "Infinite Peep P1",
+          "address": "0x7E0758"
+        },
+        {
+          "code": "7E43EA03",
+          "desc": "Infinite Miss (Bonus Stage) P1",
+          "address": "0x7E43EA"
+        },
+        {
+          "code": "7E075A03",
+          "desc": "Infinite Help P2",
+          "address": "0x7E075A"
+        },
+        {
+          "code": "7E075B03",
+          "desc": "Infinite Peep P2",
+          "address": "0x7E075B"
+        },
+        {
+          "code": "7E43EB03",
+          "desc": "Infinite Miss (Bonus Stage) P2",
+          "address": "0x7E43EB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

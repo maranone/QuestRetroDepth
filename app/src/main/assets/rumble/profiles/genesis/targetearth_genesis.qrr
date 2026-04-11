@@ -1,0 +1,7 @@
+game_name=Target Earth (USA) (Action Replay)
+game_key=TargetEarth-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ffb044	damage_taken	0xFFB044	1	int	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffb044	death	0xFFB044	1	int	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_ff808e	score	0xFF808E	4	bcd	big	prev < curr	0.8	1	right:0.350:60

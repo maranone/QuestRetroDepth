@@ -1,0 +1,6 @@
+game_name=AdventuresOfRockyAndBullwinkle
+game_key=AdventuresOfRockyAndBullwinkle-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_5cb	damage_taken	0x7E05CB	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	score_1_5c2	score	0x7E05C2	1	uint	native	prev < curr	0.7	1	left:0.300:80

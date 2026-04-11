@@ -1,0 +1,145 @@
+{
+  "system": "snes",
+  "normalized_title": "mysticark",
+  "display_name": "Mystic Ark (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Mystic Ark (Japan).cht",
+      "total_cheat_rows": 45,
+      "raw_entry_count": 52,
+      "distinct_address_count": 49,
+      "sample_raw_entries": [
+        {
+          "code": "7EB0040F",
+          "desc": "999 Hp For Hero",
+          "address": "0x7EB004"
+        },
+        {
+          "code": "7EB00527",
+          "desc": "999 Hp For Hero",
+          "address": "0x7EB005"
+        },
+        {
+          "code": "7EB008E7",
+          "desc": "999 Mp For Hero",
+          "address": "0x7EB008"
+        },
+        {
+          "code": "7EB00903",
+          "desc": "999 Mp For Hero",
+          "address": "0x7EB009"
+        },
+        {
+          "code": "7EB120FF",
+          "desc": "Have Enough Gold",
+          "address": "0x7EB120"
+        },
+        {
+          "code": "7EB121FF",
+          "desc": "Have Enough Gold",
+          "address": "0x7EB121"
+        },
+        {
+          "code": "7E0551FF",
+          "desc": "Quick Gain Exp",
+          "address": "0x7E0551"
+        },
+        {
+          "code": "7E0552FF",
+          "desc": "Quick Gain Exp",
+          "address": "0x7E0552"
+        },
+        {
+          "code": "7EB00CE7",
+          "desc": "Power",
+          "address": "0x7EB00C"
+        },
+        {
+          "code": "7EB00D03",
+          "desc": "Power",
+          "address": "0x7EB00D"
+        },
+        {
+          "code": "7EB00EE7",
+          "desc": "Guard",
+          "address": "0x7EB00E"
+        },
+        {
+          "code": "7EB00F03",
+          "desc": "Guard",
+          "address": "0x7EB00F"
+        },
+        {
+          "code": "7EB010E7",
+          "desc": "Speed",
+          "address": "0x7EB010"
+        },
+        {
+          "code": "7EB01103",
+          "desc": "Speed",
+          "address": "0x7EB011"
+        },
+        {
+          "code": "7EB012E7",
+          "desc": "Magic",
+          "address": "0x7EB012"
+        },
+        {
+          "code": "7EB01303",
+          "desc": "Magic",
+          "address": "0x7EB013"
+        },
+        {
+          "code": "7E0BA000",
+          "desc": "Items/weapon slots",
+          "address": "0x7E0BA0"
+        },
+        {
+          "code": "7E0BA200",
+          "desc": "Items/weapon slots",
+          "address": "0x7E0BA2"
+        },
+        {
+          "code": "7E0BA400",
+          "desc": "Items/weapon slots",
+          "address": "0x7E0BA4"
+        },
+        {
+          "code": "7E0BA101",
+          "desc": "Type of Item",
+          "address": "0x7E0BA1"
+        },
+        {
+          "code": "7E0BA301",
+          "desc": "Type of Item",
+          "address": "0x7E0BA3"
+        },
+        {
+          "code": "7E0BA501",
+          "desc": "Type of Item",
+          "address": "0x7E0BA5"
+        },
+        {
+          "code": "7E0BA101",
+          "desc": "Digits for Item slots",
+          "address": "0x7E0BA1"
+        },
+        {
+          "code": "7E0BA301",
+          "desc": "Digits for Item slots",
+          "address": "0x7E0BA3"
+        },
+        {
+          "code": "7E0BA501",
+          "desc": "Digits for Item slots",
+          "address": "0x7E0BA5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

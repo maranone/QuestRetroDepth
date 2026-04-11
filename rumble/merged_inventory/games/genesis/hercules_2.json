@@ -1,0 +1,35 @@
+{
+  "system": "genesis",
+  "normalized_title": "hercules2",
+  "display_name": "Hercules 2",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Hercules 2.cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFE372:0010",
+          "desc": "Infinite Hearts",
+          "address": "0xFFE372"
+        },
+        {
+          "code": "FFE370:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFE370"
+        },
+        {
+          "code": "FFE372:0028",
+          "desc": "Infinite Energy",
+          "address": "0xFFE372"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

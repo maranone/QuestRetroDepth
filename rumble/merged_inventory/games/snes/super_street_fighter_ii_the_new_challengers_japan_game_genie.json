@@ -1,0 +1,117 @@
+{
+  "system": "snes",
+  "normalized_title": "superstreetfighteriinewchallengers",
+  "display_name": "Super Street Fighter II - The New Challengers (Japan) (Game Genie)",
+  "aliases": [
+    "Super Street Fighter II - The New Challengers (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Street Fighter II - The New Challengers (Japan).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 19,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "7E1D4008",
+          "desc": "Choose Same Character up to 8 Times in Group Mode",
+          "address": "0x7E1D40"
+        },
+        {
+          "code": "7E0531B0",
+          "desc": "P1 Inf Health",
+          "address": "0x7E0531"
+        },
+        {
+          "code": "7E0530B0",
+          "desc": "P1 Inf Health",
+          "address": "0x7E0530"
+        },
+        {
+          "code": "7E053100",
+          "desc": "P1 No Health",
+          "address": "0x7E0531"
+        },
+        {
+          "code": "7E053000",
+          "desc": "P1 No Health",
+          "address": "0x7E0530"
+        },
+        {
+          "code": "7E066E00",
+          "desc": "P1 Never Dizzies",
+          "address": "0x7E066E"
+        },
+        {
+          "code": "7E05EA00",
+          "desc": "P1 Can Perform Special Moves in Mid-Air",
+          "address": "0x7E05EA"
+        },
+        {
+          "code": "7E05A800",
+          "desc": "P1 Balrog never loses his Claw",
+          "address": "0x7E05A8"
+        },
+        {
+          "code": "7E05DD00",
+          "desc": "P1 Color Modifier",
+          "address": "0x7E05DD"
+        },
+        {
+          "code": "7E0771B0",
+          "desc": "P2 Inf Health",
+          "address": "0x7E0771"
+        },
+        {
+          "code": "7E0770B0",
+          "desc": "P2 Inf Health",
+          "address": "0x7E0770"
+        },
+        {
+          "code": "7E077100",
+          "desc": "P2 No Health",
+          "address": "0x7E0771"
+        },
+        {
+          "code": "7E077000",
+          "desc": "P2 No Health",
+          "address": "0x7E0770"
+        },
+        {
+          "code": "7E08AE00",
+          "desc": "P2 Never Dizzies",
+          "address": "0x7E08AE"
+        },
+        {
+          "code": "7E082A00",
+          "desc": "P2 Can Perform Special Moves in Mid-Air",
+          "address": "0x7E082A"
+        },
+        {
+          "code": "7E07E800",
+          "desc": "P2 Balrog never loses his Claw",
+          "address": "0x7E07E8"
+        },
+        {
+          "code": "7E081D00",
+          "desc": "P2 Color Modifier",
+          "address": "0x7E081D"
+        },
+        {
+          "code": "7E192828",
+          "desc": "Freeze Timer",
+          "address": "0x7E1928"
+        },
+        {
+          "code": "7E00F000",
+          "desc": "Game Speed Modifier",
+          "address": "0x7E00F0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

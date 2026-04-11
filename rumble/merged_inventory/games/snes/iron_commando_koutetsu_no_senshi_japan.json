@@ -1,0 +1,45 @@
+{
+  "system": "snes",
+  "normalized_title": "ironcommandokoutetsunosenshi",
+  "display_name": "Iron Commando - Koutetsu no Senshi (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Iron Commando - Koutetsu no Senshi (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E16EC50",
+          "desc": "Infinite Energy",
+          "address": "0x7E16EC"
+        },
+        {
+          "code": "7E16E804",
+          "desc": "Infinite Lives",
+          "address": "0x7E16E8"
+        },
+        {
+          "code": "7E16F403",
+          "desc": "Infinite Granades",
+          "address": "0x7E16F4"
+        },
+        {
+          "code": "7E17D405",
+          "desc": "Infinite Ammo",
+          "address": "0x7E17D4"
+        },
+        {
+          "code": "7E182400",
+          "desc": "Invincibility",
+          "address": "0x7E1824"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

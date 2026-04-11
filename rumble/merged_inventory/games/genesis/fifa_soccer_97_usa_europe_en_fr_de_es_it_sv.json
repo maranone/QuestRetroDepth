@@ -1,0 +1,25 @@
+{
+  "system": "genesis",
+  "normalized_title": "fifasoccer97",
+  "display_name": "FIFA Soccer 97 (USA, Europe) (En,Fr,De,Es,It,Sv)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\FIFA Soccer 97 (USA, Europe) (En,Fr,De,Es,It,Sv).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFF8A2:0000",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFF8A2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

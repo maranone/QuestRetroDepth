@@ -1,0 +1,106 @@
+{
+  "system": "genesis",
+  "normalized_title": "tazmania",
+  "display_name": "Taz-Mania (World) (Action Replay)",
+  "aliases": [
+    "Taz-Mania (World) (Action Replay)",
+    "Taz-Mania (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\tazmania_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFD456",
+        "0xFFD45B",
+        "0xFFD4BC"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TazMania-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFD4BC",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFD45B",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFD456",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Taz-Mania (World).cht",
+      "total_cheat_rows": 71,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FFD534:0000",
+          "desc": "Hyper Taz",
+          "address": "0xFFD534"
+        },
+        {
+          "code": "FFD4CA:0070",
+          "desc": "Ghost Taz",
+          "address": "0xFFD4CA"
+        },
+        {
+          "code": "FFD4D6:00AC",
+          "desc": "Moon Jump",
+          "address": "0xFFD4D6"
+        },
+        {
+          "code": "FFD4DE:0000",
+          "desc": "Taz Jump Height Modifier",
+          "address": "0xFFD4DE"
+        },
+        {
+          "code": "FFD036:0005",
+          "desc": "Fire Breathing Taz",
+          "address": "0xFFD036"
+        },
+        {
+          "code": "FFD01C:0001",
+          "desc": "Restart Point Modifier",
+          "address": "0xFFD01C"
+        },
+        {
+          "code": "FF18E2:0000",
+          "desc": "1-Hit Death Bird Boss",
+          "address": "0xFF18E2"
+        },
+        {
+          "code": "FFCFFC:0001",
+          "desc": "Enable Debug Menu. See Note",
+          "address": "0xFFCFFC"
+        },
+        {
+          "code": "FFD4CA:0010",
+          "desc": "Invincibility",
+          "address": "0xFFD4CA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

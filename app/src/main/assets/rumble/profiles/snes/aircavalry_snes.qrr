@@ -1,0 +1,7 @@
+game_name=Air Cavalry (USA, Europe) (Game Genie)
+game_key=AirCavalry-Snes
+system=snes
+integration_tier=stable
+trigger	life_lost_lives_01ec	life_lost	0x7E01EC	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_01ec	life_gained	0x7E01EC	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_01f0	score	0x7E01F0	2	uint	little	prev < curr	0.8	1	right:0.350:60

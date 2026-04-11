@@ -1,0 +1,5 @@
+game_name=Combat Cars (USA, Europe) (Action Replay)
+game_key=CombatCars-Genesis
+system=genesis
+integration_tier=stable
+trigger	score_score_ff0020	score	0xFF0020	2	uint	big	prev < curr	0.8	1	right:0.350:60

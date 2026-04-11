@@ -1,0 +1,103 @@
+{
+  "system": "snes",
+  "normalized_title": "superstarwarsreturnofjedi",
+  "display_name": "Super Star Wars - Return of the Jedi (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Super Star Wars - Return of the Jedi (USA)",
+    "Super Star Wars - Return of the Jedi (USA, Europe) (Action Replay)",
+    "Super Star Wars - Return of the Jedi (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\superstarwarsreturnofthejedi_snes.json",
+      "trigger_count": 11,
+      "field_names": [
+        "health",
+        "lives",
+        "score0",
+        "score1",
+        "score2",
+        "score3",
+        "score4",
+        "score5",
+        "score6"
+      ],
+      "field_count": 9,
+      "distinct_addresses": [
+        "0x7E01A0",
+        "0x7E01A2",
+        "0x7E01A4",
+        "0x7E01A6",
+        "0x7E01A8",
+        "0x7E01AA",
+        "0x7E01AC",
+        "0x7E01B2",
+        "0x7E01B6"
+      ],
+      "distinct_address_count": 9
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperStarWarsReturnOfTheJedi-Snes-v0\\data.json",
+      "field_count": 9,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E01B6",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E01B2",
+          "type": "|i1"
+        },
+        {
+          "name": "score0",
+          "address": "0x7E01A0",
+          "type": "|n1"
+        },
+        {
+          "name": "score1",
+          "address": "0x7E01A2",
+          "type": "|n1"
+        },
+        {
+          "name": "score2",
+          "address": "0x7E01A4",
+          "type": "|n1"
+        },
+        {
+          "name": "score3",
+          "address": "0x7E01A6",
+          "type": "|n1"
+        },
+        {
+          "name": "score4",
+          "address": "0x7E01A8",
+          "type": "|n1"
+        },
+        {
+          "name": "score5",
+          "address": "0x7E01AA",
+          "type": "|n1"
+        },
+        {
+          "name": "score6",
+          "address": "0x7E01AC",
+          "type": "|n1"
+        }
+      ],
+      "distinct_address_count": 9
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Star Wars - Return of the Jedi (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

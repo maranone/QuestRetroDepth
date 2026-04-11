@@ -1,0 +1,113 @@
+{
+  "system": "genesis",
+  "normalized_title": "yuyuhakushogaiden",
+  "display_name": "Yu Yu Hakusho Gaiden (Japan) (Action Replay) (diff)",
+  "aliases": [
+    "Yu Yu Hakusho Gaiden (Japan) (Action Replay)",
+    "Yu Yu Hakusho Gaiden (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Yu Yu Hakusho Gaiden (Japan).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 18,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FF4AC0:FFFF",
+          "desc": "All Characters always have 65536 HP",
+          "address": "0xFF4AC0"
+        },
+        {
+          "code": "FF4AC2:FFFF",
+          "desc": "All Characters always have 65536 RP",
+          "address": "0xFF4AC2"
+        },
+        {
+          "code": "FF8478:00DF",
+          "desc": "Max Infinite Health P1",
+          "address": "0xFF8478"
+        },
+        {
+          "code": "FF8478:006F",
+          "desc": "Medium Infinite Health P1 (Enable Special)",
+          "address": "0xFF8478"
+        },
+        {
+          "code": "FF84B8:00DF",
+          "desc": "Infinite Special P1",
+          "address": "0xFF84B8"
+        },
+        {
+          "code": "FF8878:00DF",
+          "desc": "Infinite Health P2",
+          "address": "0xFF8878"
+        },
+        {
+          "code": "FF88B8:00DF",
+          "desc": "Infinite Special P2",
+          "address": "0xFF88B8"
+        },
+        {
+          "code": "FF88B8:0000",
+          "desc": "No Special P2",
+          "address": "0xFF88B8"
+        },
+        {
+          "code": "FF8C78:00DF",
+          "desc": "Infinite Health P3",
+          "address": "0xFF8C78"
+        },
+        {
+          "code": "FF8CB8:00DF",
+          "desc": "Infinite Special P3",
+          "address": "0xFF8CB8"
+        },
+        {
+          "code": "FF8CB8:0000",
+          "desc": "No Special P3",
+          "address": "0xFF8CB8"
+        },
+        {
+          "code": "FF9078:00DF",
+          "desc": "Infinite Health P4",
+          "address": "0xFF9078"
+        },
+        {
+          "code": "FF90B8:00DF",
+          "desc": "Infinite Special P4",
+          "address": "0xFF90B8"
+        },
+        {
+          "code": "FF90B8:0000",
+          "desc": "No Special P4",
+          "address": "0xFF90B8"
+        },
+        {
+          "code": "FF847C:00FF",
+          "desc": "Special Skill Always Full Loaded P1 (Example: Reigun)",
+          "address": "0xFF847C"
+        },
+        {
+          "code": "FF8486:0000",
+          "desc": "Infinite Double Jump P1",
+          "address": "0xFF8486"
+        },
+        {
+          "code": "FF8448:0001",
+          "desc": "Infinite Special Time (Toguro Ani)",
+          "address": "0xFF8448"
+        },
+        {
+          "code": "FF4AC0:00E7",
+          "desc": "Infinite Energy",
+          "address": "0xFF4AC0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "tintinintibet",
+  "display_name": "Tintin in Tibet (Europe) (En,Fr,De,Es,Nl,Sv)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tintin in Tibet (Europe) (En,Fr,De,Es,Nl,Sv).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF657C:0007",
+          "desc": "Infinite Health (Ignore Scroll HUD)",
+          "address": "0xFF657C"
+        },
+        {
+          "code": "FF657A:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF657A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

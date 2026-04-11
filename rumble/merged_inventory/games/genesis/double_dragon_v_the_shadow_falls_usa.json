@@ -1,0 +1,140 @@
+{
+  "system": "genesis",
+  "normalized_title": "doubledragonvshadowfalls",
+  "display_name": "Double Dragon V - The Shadow Falls (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Double Dragon V - The Shadow Falls (USA).cht",
+      "total_cheat_rows": 58,
+      "raw_entry_count": 24,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "FFE0AD:0063",
+          "desc": "Infinite Attribute Points",
+          "address": "0xFFE0AD"
+        },
+        {
+          "code": "FF0164:0050",
+          "desc": "P1 Infinite Health",
+          "address": "0xFF0164"
+        },
+        {
+          "code": "FF047E:0050",
+          "desc": "P2 Infinite Health",
+          "address": "0xFF047E"
+        },
+        {
+          "code": "FF2E8A:0000",
+          "desc": "Freeze Time",
+          "address": "0xFF2E8A"
+        },
+        {
+          "code": "FF2E8A:0009",
+          "desc": "Freeze Time",
+          "address": "0xFF2E8A"
+        },
+        {
+          "code": "FF00AC:0000",
+          "desc": "Player 1 palette modifier",
+          "address": "0xFF00AC"
+        },
+        {
+          "code": "FF03C6:0000",
+          "desc": "Player 2 palette modifier",
+          "address": "0xFF03C6"
+        },
+        {
+          "code": "FFE090:0000",
+          "desc": "P1 Fighter Modifier",
+          "address": "0xFFE090"
+        },
+        {
+          "code": "FFE092:0000",
+          "desc": "P2 Fighter Modifier",
+          "address": "0xFFE092"
+        },
+        {
+          "code": "FF024E:0000",
+          "desc": "Never Stunned",
+          "address": "0xFF024E"
+        },
+        {
+          "code": "FF0568:0015",
+          "desc": "Opponent Always Stunned",
+          "address": "0xFF0568"
+        },
+        {
+          "code": "FFE08E:0000",
+          "desc": "Location Modifier",
+          "address": "0xFFE08E"
+        },
+        {
+          "code": "FFF0BE:00FF",
+          "desc": "Bosses Selectable in Vs. Mode",
+          "address": "0xFFF0BE"
+        },
+        {
+          "code": "FF0164:0063",
+          "desc": "Infinite Health",
+          "address": "0xFF0164"
+        },
+        {
+          "code": "FFE0A0:0000",
+          "desc": "Character Attribute Stats - Strength Modifier",
+          "address": "0xFFE0A0"
+        },
+        {
+          "code": "FFE0A4:0000",
+          "desc": "Character Attribute Stats - Defense Modifier",
+          "address": "0xFFE0A4"
+        },
+        {
+          "code": "FFE0A8:0000",
+          "desc": "Character Attribute Stats - Special Modifier",
+          "address": "0xFFE0A8"
+        },
+        {
+          "code": "FFE0AC:0063",
+          "desc": "Have 63 Attributes In Reserve",
+          "address": "0xFFE0AC"
+        },
+        {
+          "code": "FF0336:0002",
+          "desc": "Fake Have Two Rounds Won",
+          "address": "0xFF0336"
+        },
+        {
+          "code": "FF047E:0000",
+          "desc": "No Health P2/CPU",
+          "address": "0xFF047E"
+        },
+        {
+          "code": "FFE0A2:0000",
+          "desc": "Character Attribute Stats - Strength",
+          "address": "0xFFE0A2"
+        },
+        {
+          "code": "FFE0A6:0000",
+          "desc": "Character Attribute Stats - Defense",
+          "address": "0xFFE0A6"
+        },
+        {
+          "code": "FFE0AA:0000",
+          "desc": "Character Attribute Stats - Special",
+          "address": "0xFFE0AA"
+        },
+        {
+          "code": "FFE0AE:0000",
+          "desc": "Character Attribute Stats - Attributes In Reserve",
+          "address": "0xFFE0AE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

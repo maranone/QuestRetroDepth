@@ -1,0 +1,10 @@
+game_name=Super Turrican 2 (USA, Europe) (Action Replay)
+game_key=SuperTurrican2-Snes
+system=snes
+integration_tier=stable
+trigger	game_over_gameover_18a6	game_over	0x7E18A6	1	int	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	damage_taken_health_0aee	damage_taken	0x7E0AEE	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0aee	death	0x7E0AEE	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_0af2	life_lost	0x7E0AF2	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0af2	life_gained	0x7E0AF2	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_1016	score	0x7E1016	6	nibble	big	prev < curr	0.8	1	right:0.350:60

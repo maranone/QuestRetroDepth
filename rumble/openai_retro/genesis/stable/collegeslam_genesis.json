@@ -1,0 +1,71 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "CollegeSlam",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "third_party\\openai-retro\\retro\\data\\stable\\CollegeSlam-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "CollegeSlam-Genesis"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "name": "alabama_score0",
+      "meta": {
+        "address": 16727524,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "alabama_score1",
+      "meta": {
+        "address": 16727523,
+        "type": "|d1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "half",
+      "meta": {
+        "address": 16727483,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "penn_state_score0",
+      "meta": {
+        "address": 16727527,
+        "type": "|d1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "penn_state_score1",
+      "meta": {
+        "address": 16727526,
+        "type": "|d1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time_minutes",
+      "meta": {
+        "address": 16728567,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time_seconds",
+      "meta": {
+        "address": 16728565,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

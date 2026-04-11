@@ -1,0 +1,25 @@
+{
+  "system": "genesis",
+  "normalized_title": "starcontrol",
+  "display_name": "Star Control (USA, Europe) (Unl)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Star Control (USA, Europe) (Unl).cht",
+      "total_cheat_rows": 46,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF6F18:0025",
+          "desc": "Infinite Health P1's Ship",
+          "address": "0xFF6F18"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

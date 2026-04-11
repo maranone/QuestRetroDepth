@@ -1,0 +1,33 @@
+{
+  "system": "snes",
+  "normalized_title": "fushiginodungeon2fuurainoshiren",
+  "display_name": "Fushigi no Dungeon 2 - Fuurai no Shiren (Japan) (Action Replay)",
+  "aliases": [
+    "Fushigi no Dungeon 2 - Fuurai no Shiren (Japan) (Game Genie)",
+    "Fushigi no Dungeon 2 - Fuurai no Shiren (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Fushigi no Dungeon 2 - Fuurai no Shiren (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E0A3600",
+          "desc": "",
+          "address": "0x7E0A36"
+        },
+        {
+          "code": "7E8604FF",
+          "desc": "Infinite HP Shiren",
+          "address": "0x7E8604"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

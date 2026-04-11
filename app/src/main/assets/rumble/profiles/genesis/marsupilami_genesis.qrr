@@ -1,0 +1,7 @@
+game_name=Marsupilami (USA, Europe) (Action Replay)
+game_key=Marsupilami-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_fff9d1	life_lost	0xFFF9D1	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff9d1	life_gained	0xFFF9D1	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_fff9f1	score	0xFFF9F1	1	uint	native	prev < curr	0.8	1	right:0.350:60

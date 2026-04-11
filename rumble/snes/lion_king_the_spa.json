@@ -1,0 +1,39 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Lion King, The SPA",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Lion King, The SPA.cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "C291-5763",
+      "desc": "Roaring Doesn't Decrease Your Roar Meter",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C289-5D6F",
+      "desc": "Roar Meter Doesn't Fill Up With Time",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C293-E703",
+      "desc": "Don't Lose Roar Power When You Get Hit",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C298-7DDE",
+      "desc": "Almost Infinite Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CE6E-8464",
+      "desc": "Infinite Lives",
+      "kind": "game_genie"
+    }
+  ]
+}

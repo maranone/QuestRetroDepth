@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "lostworldjurassicpark",
+  "display_name": "Lost World, The - Jurassic Park (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Lost World, The - Jurassic Park (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Lost World, The - Jurassic Park (USA, Europe).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF00DA:00FD",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF00DA"
+        },
+        {
+          "code": "FFC242:0009",
+          "desc": "Infinite Gun P1",
+          "address": "0xFFC242"
+        },
+        {
+          "code": "FF01BE:00FD",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF01BE"
+        },
+        {
+          "code": "FFC262:0009",
+          "desc": "Infinite Gun P2",
+          "address": "0xFFC262"
+        },
+        {
+          "code": "FFA848:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFA848"
+        },
+        {
+          "code": "FFFE14:0001",
+          "desc": "Enable Level Select In Option Menu",
+          "address": "0xFFFE14"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

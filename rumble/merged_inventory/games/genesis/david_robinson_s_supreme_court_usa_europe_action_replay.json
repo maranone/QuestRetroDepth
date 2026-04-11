@@ -1,0 +1,97 @@
+{
+  "system": "genesis",
+  "normalized_title": "davidrobinsonssupremecourt",
+  "display_name": "David Robinson's Supreme Court (USA, Europe) (Action Replay)",
+  "aliases": [
+    "David Robinson's Supreme Court (USA, Europe) (Action Replay)",
+    "David Robinson's Supreme Court (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\davidrobinsonssupremecourt_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFF91D8"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DavidRobinsonsSupremeCourt-Genesis-v0\\data.json",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "opponent_score",
+          "address": "0xFF91DA",
+          "type": ">u2"
+        },
+        {
+          "name": "quarter",
+          "address": "0xFF90F5",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF91D8",
+          "type": ">u2"
+        },
+        {
+          "name": "time_minutes",
+          "address": "0xFF90FD",
+          "type": "|u1"
+        },
+        {
+          "name": "time_seconds",
+          "address": "0xFF90FF",
+          "type": "|u1"
+        },
+        {
+          "name": "total_time_seconds",
+          "address": "0xFF90F6",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 6
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\David Robinson's Supreme Court (USA, Europe).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF90F6:0063",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFF90F6"
+        },
+        {
+          "code": "FF90F6:0073",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFF90F6"
+        },
+        {
+          "code": "FF90FE:0059",
+          "desc": "Fake Infinite Time",
+          "address": "0xFF90FE"
+        },
+        {
+          "code": "FF91D8:0000",
+          "desc": "Score Modifier P1",
+          "address": "0xFF91D8"
+        },
+        {
+          "code": "FF91DA:0000",
+          "desc": "Score Modifier P2/CPU",
+          "address": "0xFF91DA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

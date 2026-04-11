@@ -1,0 +1,7 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Chester Cheetah - Too Cool to Fool (USA) (Action Replay)
+# match_names=chestercheetahtoocooltofool|chestercheetahtoocooltofoolgenesis
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+damage_taken_health_fff81e,0xFFF81E,1,int,prev_gt_curr,,left,0.850,normal,0,90,100,70,
+death_health_fff81e,0xFFF81E,1,int,became_zero,,both,1.000,normal,0,600,400,90,
+score_score_fff821,0xFFF821,1,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,

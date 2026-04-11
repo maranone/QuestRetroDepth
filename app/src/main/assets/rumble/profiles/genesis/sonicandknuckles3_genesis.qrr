@@ -1,0 +1,11 @@
+game_name=SonicAndKnuckles3
+game_key=SonicAndKnuckles3-Genesis
+system=genesis
+integration_tier=stable
+trigger	level_complete_act_fffe11	level_complete	0xFFFE11	1	uint	native	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_end_bonus_fffaa8	level_complete	0xFFFAA8	1	uint	native	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_fffe12	life_lost	0xFFFE12	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fffe12	life_gained	0xFFFE12	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_rings_fffe20	pickup	0xFFFE20	2	uint	big	prev != curr	0.8	1	right:0.250:18
+trigger	score_score_fffe26	score	0xFFFE26	4	uint	big	prev < curr	0.8	1	right:0.350:60
+trigger	level_complete_zone_fffe10	level_complete	0xFFFE10	1	uint	native	prev != curr	0.65	1	left:0.800:400;right:0.800:400

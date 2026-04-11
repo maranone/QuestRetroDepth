@@ -1,0 +1,8 @@
+game_name=Samurai Shodown (USA, Europe) (Action Replay)
+game_key=SamuraiShodown-Genesis
+system=genesis
+integration_tier=stable
+trigger	enemy_defeated_enemy_health_ff498f	enemy_defeated	0xFF498F	1	uint	native	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_ff483f	damage_taken	0xFF483F	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff483f	death	0xFF483F	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_ff4836	score	0xFF4836	4	bcd	big	prev < curr	0.8	1	right:0.350:60

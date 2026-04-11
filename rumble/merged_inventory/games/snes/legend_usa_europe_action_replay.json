@@ -1,0 +1,55 @@
+{
+  "system": "snes",
+  "normalized_title": "legend",
+  "display_name": "Legend (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Legend (Europe)",
+    "Legend (Rumbles)",
+    "Legend (USA)",
+    "Legend (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\legend_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E12A5",
+        "0x7E1309"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Legend-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E1309",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E12A5",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Legend (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

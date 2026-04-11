@@ -1,0 +1,1924 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Lemmings (USA) (Rev 1)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Lemmings (USA) (Rev 1).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "C984-A467",
+      "desc": "Infinite Climbers If You Start With At Least 1",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C98F-AD07",
+      "desc": "Infinite Floaters If You Start With At Least 1",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C987-A407",
+      "desc": "Infinite Bombers If You Start With At Least 1",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C984-6DA7",
+      "desc": "Infinite Blockers If You Start With At Least 1",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C98E-6D07",
+      "desc": "Infinite Builders If You Start With At Least 1",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C982-6FD7",
+      "desc": "Infinite Bashers If You Start With At Least 1",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C981-67D7",
+      "desc": "Infinite Miners If You Start With At Least 1",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C98B-64A7",
+      "desc": "Infinite Diggers If You Start With At Least 1",
+      "kind": "game_genie"
+    },
+    {
+      "code": "31B6-6FAF",
+      "desc": "Each Saved Lemming Counts As Two",
+      "kind": "game_genie"
+    },
+    {
+      "code": "18B6-64DF",
+      "desc": "Each Saved Lemming Counts As Two",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 2; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DFCC-DD65",
+      "desc": "Start On Level 2; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 2; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 3; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D4CC-DD65",
+      "desc": "Start On Level 3; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 3; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 4; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D7CC-DD65",
+      "desc": "Start On Level 4; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 4; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 5; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D0CC-DD65",
+      "desc": "Start On Level 5; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 5; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 6; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D9CC-DD65",
+      "desc": "Start On Level 6; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 6; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 7; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D1CC-DD65",
+      "desc": "Start On Level 7; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 7; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 8; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D5CC-DD65",
+      "desc": "Start On Level 8; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 8; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 9; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D6CC-DD65",
+      "desc": "Start On Level 9; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 9; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 10; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DBCC-DD65",
+      "desc": "Start On Level 10; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 10; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 11; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DCCC-DD65",
+      "desc": "Start On Level 11; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 11; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 12; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D8CC-DD65",
+      "desc": "Start On Level 12; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 12; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 13; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DACC-DD65",
+      "desc": "Start On Level 13; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 13; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 14; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D2CC-DD65",
+      "desc": "Start On Level 14; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 14; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 15; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D3CC-DD65",
+      "desc": "Start On Level 15; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 15; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 16; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DECC-DD65",
+      "desc": "Start On Level 16; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 16; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 17; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDCC-DD65",
+      "desc": "Start On Level 17; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 17; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 18; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FFCC-DD65",
+      "desc": "Start On Level 18; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 18; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 19; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F4CC-DD65",
+      "desc": "Start On Level 19; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 19; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 20; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F7CC-DD65",
+      "desc": "Start On Level 20; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 20; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 21; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F0CC-DD65",
+      "desc": "Start On Level 21; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 21; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 22; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F9CC-DD65",
+      "desc": "Start On Level 22; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 22; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 23; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F1CC-DD65",
+      "desc": "Start On Level 23; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 23; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 24; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F5CC-DD65",
+      "desc": "Start On Level 24; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 24; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 25; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F6CC-DD65",
+      "desc": "Start On Level 25; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 25; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 26; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FBCC-DD65",
+      "desc": "Start On Level 26; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 26; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 27; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FCCC-DD65",
+      "desc": "Start On Level 27; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 27; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 28; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F8CC-DD65",
+      "desc": "Start On Level 28; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 28; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 29; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FACC-DD65",
+      "desc": "Start On Level 29; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 29; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 30; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F2CC-DD65",
+      "desc": "Start On Level 30; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 30; Rating: Fun",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 1; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F3CC-DD65",
+      "desc": "Start On Level 1; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 1; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 2; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FECC-DD65",
+      "desc": "Start On Level 2; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 2; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 3; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4DCC-DD65",
+      "desc": "Start On Level 3; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 3; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 4; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4FCC-DD65",
+      "desc": "Start On Level 4; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 4; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 5; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "44CC-DD65",
+      "desc": "Start On Level 5; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 5; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 6; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "47CC-DD65",
+      "desc": "Start On Level 6; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 6; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 7; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "40CC-DD65",
+      "desc": "Start On Level 7; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 7; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 8; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "49CC-DD65",
+      "desc": "Start On Level 8; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 8; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 9; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "41CC-DD65",
+      "desc": "Start On Level 9; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 9; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 10; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "45CC-DD65",
+      "desc": "Start On Level 10; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 10; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 11; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "46CC-DD65",
+      "desc": "Start On Level 11; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 11; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 12; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4BCC-DD65",
+      "desc": "Start On Level 12; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 12; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 13; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4CCC-DD65",
+      "desc": "Start On Level 13; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 13; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 14; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "48CC-DD65",
+      "desc": "Start On Level 14; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 14; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 15; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4ACC-DD65",
+      "desc": "Start On Level 15; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 15; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 16; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "42CC-DD65",
+      "desc": "Start On Level 16; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 16; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 17; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "43CC-DD65",
+      "desc": "Start On Level 17; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 17; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 18; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4ECC-DD65",
+      "desc": "Start On Level 18; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 18; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 19; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7DCC-DD65",
+      "desc": "Start On Level 19; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 19; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 20; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7FCC-DD65",
+      "desc": "Start On Level 20; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 20; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 21; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "74CC-DD65",
+      "desc": "Start On Level 21; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 21; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 22; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "77CC-DD65",
+      "desc": "Start On Level 22; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 22; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 23; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "70CC-DD65",
+      "desc": "Start On Level 23; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 23; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 24; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "79CC-DD65",
+      "desc": "Start On Level 24; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 24; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 25; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "71CC-DD65",
+      "desc": "Start On Level 25; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 25; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 26; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "75CC-DD65",
+      "desc": "Start On Level 26; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 26; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 27; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "76CC-DD65",
+      "desc": "Start On Level 27; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 27; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 28; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7BCC-DD65",
+      "desc": "Start On Level 28; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 28; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 29; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7CCC-DD65",
+      "desc": "Start On Level 29; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 29; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 30; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "78CC-DD65",
+      "desc": "Start On Level 30; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 30; Rating: Tricky",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 1; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7ACC-DD65",
+      "desc": "Start On Level 1; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 1; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 2; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "72CC-DD65",
+      "desc": "Start On Level 2; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 2; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 3; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "73CC-DD65",
+      "desc": "Start On Level 3; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 3; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 4; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7ECC-DD65",
+      "desc": "Start On Level 4; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 4; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 5; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0DCC-DD65",
+      "desc": "Start On Level 5; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 5; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 6; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0FCC-DD65",
+      "desc": "Start On Level 6; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 6; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 7; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "04CC-DD65",
+      "desc": "Start On Level 7; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 7; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 8; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "07CC-DD65",
+      "desc": "Start On Level 8; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 8; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 9; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "00CC-DD65",
+      "desc": "Start On Level 9; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 9; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 10; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "09CC-DD65",
+      "desc": "Start On Level 10; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 10; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 11; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "01CC-DD65",
+      "desc": "Start On Level 11; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 11; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 12; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "05CC-DD65",
+      "desc": "Start On Level 12; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 12; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 13; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "06CC-DD65",
+      "desc": "Start On Level 13; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 13; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 14; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0BCC-DD65",
+      "desc": "Start On Level 14; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 14; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 15; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0CCC-DD65",
+      "desc": "Start On Level 15; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 15; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 16; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "08CC-DD65",
+      "desc": "Start On Level 16; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 16; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 17; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0ACC-DD65",
+      "desc": "Start On Level 17; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 17; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 18; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "02CC-DD65",
+      "desc": "Start On Level 18; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 18; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 19; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "03CC-DD65",
+      "desc": "Start On Level 19; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 19; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 20; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0ECC-DD65",
+      "desc": "Start On Level 20; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 20; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 21; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9DCC-DD65",
+      "desc": "Start On Level 21; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 21; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 22; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9FCC-DD65",
+      "desc": "Start On Level 22; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 22; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 23; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "94CC-DD65",
+      "desc": "Start On Level 23; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 23; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 24; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "97CC-DD65",
+      "desc": "Start On Level 24; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 24; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 25; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "90CC-DD65",
+      "desc": "Start On Level 25; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 25; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 26; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "99CC-DD65",
+      "desc": "Start On Level 26; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 26; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 27; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "91CC-DD65",
+      "desc": "Start On Level 27; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 27; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 28; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "95CC-DD65",
+      "desc": "Start On Level 28; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 28; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 29; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "96CC-DD65",
+      "desc": "Start On Level 29; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 29; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 30; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9BCC-DD65",
+      "desc": "Start On Level 30; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 30; Rating: Taxing",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 1; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9CCC-DD65",
+      "desc": "Start On Level 1; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 1; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 2; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "98CC-DD65",
+      "desc": "Start On Level 2; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 2; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 3; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9ACC-DD65",
+      "desc": "Start On Level 3; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 3; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 4; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "92CC-DD65",
+      "desc": "Start On Level 4; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 4; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 5; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "93CC-DD65",
+      "desc": "Start On Level 5; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 5; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 6; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9ECC-DD65",
+      "desc": "Start On Level 6; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 6; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 7; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1DCC-DD65",
+      "desc": "Start On Level 7; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 7; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 8; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1FCC-DD65",
+      "desc": "Start On Level 8; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 8; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 9; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "14CC-DD65",
+      "desc": "Start On Level 9; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 9; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 10; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "17CC-DD65",
+      "desc": "Start On Level 10; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 10; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 11; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "10CC-DD65",
+      "desc": "Start On Level 11; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 11; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 12; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "19CC-DD65",
+      "desc": "Start On Level 12; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 12; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 13; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "11CC-DD65",
+      "desc": "Start On Level 13; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 13; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 14; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "15CC-DD65",
+      "desc": "Start On Level 14; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 14; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 15; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "16CC-DD65",
+      "desc": "Start On Level 15; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 15; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 16; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1BCC-DD65",
+      "desc": "Start On Level 16; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 16; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 17; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1CCC-DD65",
+      "desc": "Start On Level 17; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 17; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 18; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "18CC-DD65",
+      "desc": "Start On Level 18; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 18; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 19; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1ACC-DD65",
+      "desc": "Start On Level 19; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 19; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 20; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "12CC-DD65",
+      "desc": "Start On Level 20; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 20; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 21; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "13CC-DD65",
+      "desc": "Start On Level 21; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 21; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 22; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1ECC-DD65",
+      "desc": "Start On Level 22; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 22; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 23; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "5DCC-DD65",
+      "desc": "Start On Level 23; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 23; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 24; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "5FCC-DD65",
+      "desc": "Start On Level 24; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 24; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 25; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "54CC-DD65",
+      "desc": "Start On Level 25; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 25; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 26; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "57CC-DD65",
+      "desc": "Start On Level 26; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 26; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 27; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "50CC-DD65",
+      "desc": "Start On Level 27; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 27; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 28; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "59CC-DD65",
+      "desc": "Start On Level 28; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 28; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 29; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "51CC-DD65",
+      "desc": "Start On Level 29; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 29; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 30; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "55CC-DD65",
+      "desc": "Start On Level 30; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 30; Rating: Mayhem",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 1; Rating: Sunsoft",
+      "kind": "game_genie"
+    },
+    {
+      "code": "56CC-DD65",
+      "desc": "Start On Level 1; Rating: Sunsoft",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 1; Rating: Sunsoft",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 2; Rating: Sunsoft",
+      "kind": "game_genie"
+    },
+    {
+      "code": "5BCC-DD65",
+      "desc": "Start On Level 2; Rating: Sunsoft",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 2; Rating: Sunsoft",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 3; Rating: Sunsoft",
+      "kind": "game_genie"
+    },
+    {
+      "code": "5CCC-DD65",
+      "desc": "Start On Level 3; Rating: Sunsoft",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 3; Rating: Sunsoft",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 4; Rating: Sunsoft",
+      "kind": "game_genie"
+    },
+    {
+      "code": "58CC-DD65",
+      "desc": "Start On Level 4; Rating: Sunsoft",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 4; Rating: Sunsoft",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBCC-DD05",
+      "desc": "Start On Level 5; Rating: Sunsoft",
+      "kind": "game_genie"
+    },
+    {
+      "code": "5ACC-DD65",
+      "desc": "Start On Level 5; Rating: Sunsoft",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9C8-0FD5",
+      "desc": "Start On Level 5; Rating: Sunsoft",
+      "kind": "game_genie"
+    }
+  ]
+}

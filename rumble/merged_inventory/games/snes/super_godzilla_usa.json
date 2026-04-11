@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "supergodzilla",
+  "display_name": "Super Godzilla (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Godzilla (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E0E7158",
+          "desc": "Infinite Energy (In Battle)",
+          "address": "0x7E0E71"
+        },
+        {
+          "code": "7E0E7202",
+          "desc": "Infinite Energy (In Battle)",
+          "address": "0x7E0E72"
+        },
+        {
+          "code": "7E073D00",
+          "desc": "One Hit Kill",
+          "address": "0x7E073D"
+        },
+        {
+          "code": "7E1D6C00",
+          "desc": "Enemies Can't Use Their Attacks",
+          "address": "0x7E1D6C"
+        },
+        {
+          "code": "7E1D6AE1",
+          "desc": "Always Have Most Powerful Attack",
+          "address": "0x7E1D6A"
+        },
+        {
+          "code": "7E0E2BAE",
+          "desc": "Infinite Time During Battle",
+          "address": "0x7E0E2B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

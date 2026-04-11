@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "soniccrackers",
+  "display_name": "Sonic Crackers (Japan) (Action Replay)",
+  "aliases": [
+    "Sonic Crackers (Japan) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sonic Crackers (Japan) (Proto).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFB0AC:0000",
+          "desc": "Freeze Timer",
+          "address": "0xFFB0AC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

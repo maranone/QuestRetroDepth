@@ -1,0 +1,28 @@
+{
+  "system": "snes",
+  "normalized_title": "andreagassitennis",
+  "display_name": "Andre Agassi Tennis (USA, Japan) (Action Replay)",
+  "aliases": [
+    "Andre Agassi Tennis (USA)",
+    "Andre Agassi Tennis (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Andre Agassi Tennis (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "7E048700",
+          "desc": "P2 Never Scores",
+          "address": "0x7E0487"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

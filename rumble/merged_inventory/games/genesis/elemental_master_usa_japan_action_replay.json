@@ -1,0 +1,59 @@
+{
+  "system": "genesis",
+  "normalized_title": "elementalmaster",
+  "display_name": "Elemental Master (USA, Japan) (Action Replay)",
+  "aliases": [
+    "Elemental Master (USA)",
+    "Elemental Master (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\elementalmaster_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFF2E6",
+        "0xFFF2F9"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ElementalMaster-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFF2F9",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF2E6",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Elemental Master (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFF2F9:0004",
+          "desc": "Infinite Health",
+          "address": "0xFFF2F9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

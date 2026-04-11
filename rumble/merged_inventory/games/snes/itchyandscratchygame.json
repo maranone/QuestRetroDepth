@@ -1,0 +1,64 @@
+{
+  "system": "snes",
+  "normalized_title": "itchyandscratchygame",
+  "display_name": "ItchyAndScratchyGame",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\itchyandscratchygame_snes.json",
+      "trigger_count": 7,
+      "field_names": [
+        "gameover",
+        "health",
+        "lives",
+        "score1",
+        "score2"
+      ],
+      "field_count": 5,
+      "distinct_addresses": [
+        "0x7E022B",
+        "0x7E023A",
+        "0x7E023B",
+        "0x7E023C",
+        "0x7E052A"
+      ],
+      "distinct_address_count": 5
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ItchyAndScratchyGame-Snes-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0x7E052A",
+          "type": "|i1"
+        },
+        {
+          "name": "health",
+          "address": "0x7E022B",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E023A",
+          "type": "|i1"
+        },
+        {
+          "name": "score1",
+          "address": "0x7E023B",
+          "type": "|u1"
+        },
+        {
+          "name": "score2",
+          "address": "0x7E023C",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 5
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

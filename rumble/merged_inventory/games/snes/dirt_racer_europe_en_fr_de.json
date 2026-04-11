@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "dirtracer",
+  "display_name": "Dirt Racer (Europe) (En,Fr,De)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Dirt Racer (Europe) (En,Fr,De).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E1E40C9",
+          "desc": "Freeze CPU Car",
+          "address": "0x7E1E40"
+        },
+        {
+          "code": "7E03FA09",
+          "desc": "Infinite Lives",
+          "address": "0x7E03FA"
+        },
+        {
+          "code": "7E005600",
+          "desc": "Infinite Time",
+          "address": "0x7E0056"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

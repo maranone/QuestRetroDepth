@@ -1,0 +1,7 @@
+game_name=Super Valis IV (USA) (Action Replay)
+game_key=SuperValisIV-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_0fb5	damage_taken	0x7E0FB5	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0fb5	death	0x7E0FB5	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_0fbc	score	0x7E0FBC	2	bcd	little	prev < curr	0.8	1	right:0.350:60

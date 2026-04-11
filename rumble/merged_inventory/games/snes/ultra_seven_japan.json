@@ -1,0 +1,65 @@
+{
+  "system": "snes",
+  "normalized_title": "ultraseven",
+  "display_name": "Ultra Seven (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ultra Seven (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E009400",
+          "desc": "Character Modifier",
+          "address": "0x7E0094"
+        },
+        {
+          "code": "7E009600",
+          "desc": "Opponent Modifier",
+          "address": "0x7E0096"
+        },
+        {
+          "code": "7E0E4505",
+          "desc": "Infinite Lives",
+          "address": "0x7E0E45"
+        },
+        {
+          "code": "7E1018C7",
+          "desc": "Infinite Time",
+          "address": "0x7E1018"
+        },
+        {
+          "code": "7E112200",
+          "desc": "Stage Modifier",
+          "address": "0x7E1122"
+        },
+        {
+          "code": "7E147A9F",
+          "desc": "Infinite Health",
+          "address": "0x7E147A"
+        },
+        {
+          "code": "7E147C20",
+          "desc": "Infinite Power",
+          "address": "0x7E147C"
+        },
+        {
+          "code": "7E14D800",
+          "desc": "Opponent Health",
+          "address": "0x7E14D8"
+        },
+        {
+          "code": "7E181220",
+          "desc": "Can't Be Hit On Bonus Round",
+          "address": "0x7E1812"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

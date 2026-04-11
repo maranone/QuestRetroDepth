@@ -1,0 +1,43 @@
+{
+  "system": "snes",
+  "normalized_title": "ultimatefighter",
+  "display_name": "Ultimate Fighter (USA) (Action Replay)",
+  "aliases": [
+    "Ultimate Fighter (USA) (Action Replay)",
+    "Ultimate Fighter (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ultimate Fighter (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E1402C8",
+          "desc": "Infinite Health",
+          "address": "0x7E1402"
+        },
+        {
+          "code": "7E09B960",
+          "desc": "Start With 60,000 Score",
+          "address": "0x7E09B9"
+        },
+        {
+          "code": "7E09BAEA",
+          "desc": "Start With 60,000 Score",
+          "address": "0x7E09BA"
+        },
+        {
+          "code": "7E09C963",
+          "desc": "Infinite Lives In Story Mode",
+          "address": "0x7E09C9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "system": "snes",
+  "normalized_title": "ganbaregoemon2kiteretsushougunmagginesu",
+  "display_name": "Ganbare Goemon 2 - Kiteretsu Shougun Magginesu (Japan) (Action Replay)",
+  "aliases": [
+    "Ganbare Goemon 2 - Kiteretsu Shougun Magginesu (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ganbare Goemon 2 - Kiteretsu Shougun Magginesu (Japan).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 13,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "7E049805",
+          "desc": "Infinite Lives",
+          "address": "0x7E0498"
+        },
+        {
+          "code": "7E046609",
+          "desc": "Invincibility",
+          "address": "0x7E0466"
+        },
+        {
+          "code": "7E047599",
+          "desc": "Max Cash",
+          "address": "0x7E0475"
+        },
+        {
+          "code": "7E1B4909",
+          "desc": "Infinite Energy",
+          "address": "0x7E1B49"
+        },
+        {
+          "code": "7E05C600",
+          "desc": "Last Boss Has No Energy",
+          "address": "0x7E05C6"
+        },
+        {
+          "code": "7E00AEFF",
+          "desc": "Infinite Time",
+          "address": "0x7E00AE"
+        },
+        {
+          "code": "7E044606",
+          "desc": "Infinite Health",
+          "address": "0x7E0446"
+        },
+        {
+          "code": "7E0474FF",
+          "desc": "Infinite Money (To Throw Only)",
+          "address": "0x7E0474"
+        },
+        {
+          "code": "7E049863",
+          "desc": "Infinite Lives",
+          "address": "0x7E0498"
+        },
+        {
+          "code": "7E041801",
+          "desc": "Character Modifier",
+          "address": "0x7E0418"
+        },
+        {
+          "code": "7E045C70",
+          "desc": "Jump Midair",
+          "address": "0x7E045C"
+        },
+        {
+          "code": "7E046000",
+          "desc": "Weapon Modifier",
+          "address": "0x7E0460"
+        },
+        {
+          "code": "7E0464FF",
+          "desc": "Always Fire Charged Shots",
+          "address": "0x7E0464"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

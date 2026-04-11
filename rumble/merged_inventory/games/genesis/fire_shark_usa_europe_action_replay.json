@@ -1,0 +1,33 @@
+{
+  "system": "genesis",
+  "normalized_title": "fireshark",
+  "display_name": "Fire Shark (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Fire Shark (USA)",
+    "Fire Shark (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Fire Shark (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF0287:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFF0287"
+        },
+        {
+          "code": "FF042B:0003",
+          "desc": "Infinite Bombs",
+          "address": "0xFF042B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

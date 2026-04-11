@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "gauntletiv",
+  "display_name": "Gauntlet IV (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Gauntlet IV (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Gauntlet IV (USA, Europe).cht",
+      "total_cheat_rows": 42,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF00F8:270F",
+          "desc": "Infinite Health",
+          "address": "0xFF00F8"
+        },
+        {
+          "code": "FF010C:0001",
+          "desc": "Infinite Keys",
+          "address": "0xFF010C"
+        },
+        {
+          "code": "FF00F8:00CF",
+          "desc": "Infinite Health P1",
+          "address": "0xFF00F8"
+        },
+        {
+          "code": "FF0108:0000",
+          "desc": "Score Modifiers P1",
+          "address": "0xFF0108"
+        },
+        {
+          "code": "FF0108:0000",
+          "desc": "Score Modifiers P1",
+          "address": "0xFF0108"
+        },
+        {
+          "code": "FF03BC:00CF",
+          "desc": "Infinite Health P2",
+          "address": "0xFF03BC"
+        },
+        {
+          "code": "FFE772:0063",
+          "desc": "Infinite Credits (All Players)",
+          "address": "0xFFE772"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

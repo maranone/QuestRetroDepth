@@ -1,0 +1,264 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Castlevania - Dracula X (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Castlevania - Dracula X (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "C96D-17FF",
+      "desc": "Infinite Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4D21-1707",
+      "desc": "Start With Half Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F421-1707",
+      "desc": "Start With 1/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7D21-1707",
+      "desc": "Start With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD29-1763",
+      "desc": "Small Hearts Worth 0",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FD29-1763",
+      "desc": "Small Hearts Worth 10",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4929-1763",
+      "desc": "Small Hearts Worth 25",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9A6-3D94",
+      "desc": "Item Crash Doesn't Use Hearts",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6D81-170F",
+      "desc": "Start With 99 Hearts",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9D81-170F",
+      "desc": "Start With 50 Hearts",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4981-170F",
+      "desc": "Start With 25 Hearts",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD85-1D6F",
+      "desc": "Start With 1 Life",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DB85-1D6F",
+      "desc": "Start With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4085-1D6F",
+      "desc": "Start With 25 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0B85-1D6F",
+      "desc": "Start With 50 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "BB85-1D6F",
+      "desc": "Start With 99 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9AF-47A7",
+      "desc": "Infinite Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "49A4-44D7",
+      "desc": "Start With 25 Hearts After You Die",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9DA4-44D7",
+      "desc": "Start With 50 Hearts After You Die",
+      "kind": "game_genie"
+    },
+    {
+      "code": "BBA4-44D7",
+      "desc": "Start With 99 Hearts After You Die",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD6F-CFBF",
+      "desc": "No Invincibility After Getting Hit",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE6F-CFBF",
+      "desc": "More Invincibility After Getting Hit",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C969-CD2D",
+      "desc": "1 Hit And You're Invincible",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DF85-1D6F",
+      "desc": "Start With 2 Lives And The Axe",
+      "kind": "game_genie"
+    },
+    {
+      "code": "B385-14AF",
+      "desc": "Start With 2 Lives And The Axe",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D485-1D6F",
+      "desc": "Start With 3 Lives And The Boomerang",
+      "kind": "game_genie"
+    },
+    {
+      "code": "B385-14AF",
+      "desc": "Start With 3 Lives And The Boomerang",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D785-1D6F",
+      "desc": "Start With 4 Lives And The Holy Water",
+      "kind": "game_genie"
+    },
+    {
+      "code": "B385-14AF",
+      "desc": "Start With 4 Lives And The Holy Water",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D085-1D6F",
+      "desc": "Start With 5 Lives And The Dagger",
+      "kind": "game_genie"
+    },
+    {
+      "code": "B385-14AF",
+      "desc": "Start With 5 Lives And The Dagger",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D985-1D6F",
+      "desc": "Start With 6 Lives And The Stop Watch",
+      "kind": "game_genie"
+    },
+    {
+      "code": "B385-14AF",
+      "desc": "Start With 6 Lives And The Stop Watch",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D185-1D6F",
+      "desc": "Start With 7 Lives And",
+      "kind": "game_genie"
+    },
+    {
+      "code": "B385-14AF",
+      "desc": "Start With 7 Lives And",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D585-1D6F",
+      "desc": "Start With 8 Lives And (This One Is A Surprise)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "B385-14AF",
+      "desc": "Start With 8 Lives And (This One Is A Surprise)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EB87-C7BD",
+      "desc": "Super Jump",
+      "kind": "game_genie"
+    },
+    {
+      "code": "E687-C7BD",
+      "desc": "Super-Duper Jump",
+      "kind": "game_genie"
+    },
+    {
+      "code": "E587-C7BD",
+      "desc": "Mega Jump",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C985-17DF",
+      "desc": "Don't Lose 2nd Weapon After Continue",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C9A4-47D7",
+      "desc": "Don't Lose 2nd Weapon After Dying",
+      "kind": "game_genie"
+    },
+    {
+      "code": "2D25-1FD3",
+      "desc": "Have Maxed Out Hearts With Each One Grabbed",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD25-1F03",
+      "desc": "Have Maxed Out Hearts With Each One Grabbed",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CB2C-14D3",
+      "desc": "Candles With Weapon Modifier",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD2C-1463",
+      "desc": "Candles With Weapon Modifier",
+      "kind": "game_genie"
+    },
+    {
+      "code": "##2C-1403",
+      "desc": "Candles With Weapon Modifier",
+      "kind": "unsupported"
+    },
+    {
+      "code": "EE25-1D63",
+      "desc": "Increase Heart Capacity 2.5 Times",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE25-1FA3",
+      "desc": "Increase Heart Capacity 2.5 Times",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FC21-17D3",
+      "desc": "Increase Heart Capacity 2.5 Times",
+      "kind": "game_genie"
+    }
+  ]
+}

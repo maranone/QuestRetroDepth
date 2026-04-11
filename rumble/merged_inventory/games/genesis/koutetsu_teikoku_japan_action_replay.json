@@ -1,0 +1,37 @@
+{
+  "system": "genesis",
+  "normalized_title": "koutetsuteikoku",
+  "display_name": "Koutetsu Teikoku (Japan) (Action Replay)",
+  "aliases": [
+    "Koutetsu Teikoku (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Koutetsu Teikoku (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFCB50:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFCB50"
+        },
+        {
+          "code": "FFCB56:0009",
+          "desc": "Infinite Bombs",
+          "address": "0xFFCB56"
+        },
+        {
+          "code": "FFCB70:0005",
+          "desc": "Infinite Health",
+          "address": "0xFFCB70"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

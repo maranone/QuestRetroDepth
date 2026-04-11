@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "flashbackquestforidentity",
+  "display_name": "Flashback - The Quest for Identity (USA) (Action Replay)",
+  "aliases": [
+    "Flashback - The Quest for Identity (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Flashback - The Quest for Identity (USA).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFD3D6:0009",
+          "desc": "Infinite Hits",
+          "address": "0xFFD3D6"
+        },
+        {
+          "code": "FFF49A:0000",
+          "desc": "Level Modifier",
+          "address": "0xFFF49A"
+        },
+        {
+          "code": "FFF49C:0000",
+          "desc": "Level Modifier",
+          "address": "0xFFF49C"
+        },
+        {
+          "code": "FFF676:0010",
+          "desc": "Invincible",
+          "address": "0xFFF676"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

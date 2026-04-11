@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "battletechgameofarmoredcombat",
+  "display_name": "BattleTech - A Game of Armored Combat (USA) (Action Replay)",
+  "aliases": [
+    "BattleTech - A Game of Armored Combat (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\BattleTech - A Game of Armored Combat (USA).cht",
+      "total_cheat_rows": 35,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FFCAC6:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFFCAC6"
+        },
+        {
+          "code": "FFD43E:0000",
+          "desc": "Infinite Energy",
+          "address": "0xFFD43E"
+        },
+        {
+          "code": "FFD424:0000",
+          "desc": "Infinite Energy",
+          "address": "0xFFD424"
+        },
+        {
+          "code": "FFD424:0000",
+          "desc": "Take Less Damage",
+          "address": "0xFFD424"
+        },
+        {
+          "code": "FFD45A:0063",
+          "desc": "Infinite A Button Weapon",
+          "address": "0xFFD45A"
+        },
+        {
+          "code": "FFD45C:03E7",
+          "desc": "Infinite B Button Weapon",
+          "address": "0xFFD45C"
+        },
+        {
+          "code": "FFD45E:03E7",
+          "desc": "Infinite c Button Weapon",
+          "address": "0xFFD45E"
+        },
+        {
+          "code": "FFCAFC:09FF",
+          "desc": "Infinite Time",
+          "address": "0xFFCAFC"
+        },
+        {
+          "code": "FFCAC3:0001",
+          "desc": "Unlimited ammunition",
+          "address": "0xFFCAC3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

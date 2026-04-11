@@ -1,0 +1,82 @@
+{
+  "system": "snes",
+  "normalized_title": "ballbulletgun",
+  "display_name": "Ball Bullet Gun (Japan) (Action Replay)",
+  "aliases": [
+    "Ball Bullet Gun (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ball Bullet Gun (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "7E029C09",
+          "desc": "Infinite AP Unit 1",
+          "address": "0x7E029C"
+        },
+        {
+          "code": "7E029809",
+          "desc": "Infinite HP Unit 1",
+          "address": "0x7E0298"
+        },
+        {
+          "code": "7E031409",
+          "desc": "Infinite AP Unit 2",
+          "address": "0x7E0314"
+        },
+        {
+          "code": "7E031009",
+          "desc": "Infinite HP Unit 2",
+          "address": "0x7E0310"
+        },
+        {
+          "code": "7E038C09",
+          "desc": "Infinite AP Unit 3",
+          "address": "0x7E038C"
+        },
+        {
+          "code": "7E038809",
+          "desc": "Infinite HP Unit 3",
+          "address": "0x7E0388"
+        },
+        {
+          "code": "7E040409",
+          "desc": "Infinite AP Unit 4",
+          "address": "0x7E0404"
+        },
+        {
+          "code": "7E040009",
+          "desc": "Infinite HP Unit 4",
+          "address": "0x7E0400"
+        },
+        {
+          "code": "7E047C09",
+          "desc": "Infinite AP Unit 5",
+          "address": "0x7E047C"
+        },
+        {
+          "code": "7E047809",
+          "desc": "Infinite HP Unit 5",
+          "address": "0x7E0478"
+        },
+        {
+          "code": "7E04F409",
+          "desc": "Infinite AP Unit 6",
+          "address": "0x7E04F4"
+        },
+        {
+          "code": "7E04F009",
+          "desc": "Infinite HP Unit 6",
+          "address": "0x7E04F0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

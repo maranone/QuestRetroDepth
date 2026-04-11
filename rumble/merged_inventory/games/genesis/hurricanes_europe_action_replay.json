@@ -1,0 +1,123 @@
+{
+  "system": "genesis",
+  "normalized_title": "hurricanes",
+  "display_name": "Hurricanes (Europe) (Action Replay)",
+  "aliases": [
+    "Hurricanes (Europe) (Action Replay)",
+    "Hurricanes (Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\hurricanes_genesis.json",
+      "trigger_count": 6,
+      "field_names": [
+        "gameover",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xFF0356",
+        "0xFF038D",
+        "0xFF038E",
+        "0xFF2C1D"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Hurricanes-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFF0356",
+          "type": "|i1"
+        },
+        {
+          "name": "health",
+          "address": "0xFF2C1D",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF038D",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF038E",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Hurricanes (Europe).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "FF038C:0004",
+          "desc": "Infinite Lives",
+          "address": "0xFF038C"
+        },
+        {
+          "code": "FF2C1C:003F",
+          "desc": "Infinite Energy",
+          "address": "0xFF2C1C"
+        },
+        {
+          "code": "FF2D06:0002",
+          "desc": "Invincibility",
+          "address": "0xFF2D06"
+        },
+        {
+          "code": "FF0018:0000",
+          "desc": "Level Modifier",
+          "address": "0xFF0018"
+        },
+        {
+          "code": "FF0076:0003",
+          "desc": "Complete Level",
+          "address": "0xFF0076"
+        },
+        {
+          "code": "FF2C18:002B",
+          "desc": "Jump Midair",
+          "address": "0xFF2C18"
+        },
+        {
+          "code": "FF2CE0:0000",
+          "desc": "Character Modifier",
+          "address": "0xFF2CE0"
+        },
+        {
+          "code": "FF2D4A:00FF",
+          "desc": "Big Balls",
+          "address": "0xFF2D4A"
+        },
+        {
+          "code": "FF2D9E:0051",
+          "desc": "Ball Modifier",
+          "address": "0xFF2D9E"
+        },
+        {
+          "code": "FF2E14:0000",
+          "desc": "Boss 1 Hit Kill",
+          "address": "0xFF2E14"
+        },
+        {
+          "code": "FF038C:0099",
+          "desc": "Infinite Lives",
+          "address": "0xFF038C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

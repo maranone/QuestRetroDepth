@@ -1,0 +1,7 @@
+game_name=Crack Down (World) (Action Replay)
+game_key=CrackDown-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ffe051	life_lost	0xFFE051	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffe051	life_gained	0xFFE051	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ffe052	score	0xFFE052	4	uint	big	prev < curr	0.8	1	right:0.350:60

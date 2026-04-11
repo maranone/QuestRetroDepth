@@ -1,0 +1,83 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "NbaJamTe",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Nba Jam Te (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "NbaJamTe-Snes"
+  },
+  "triggers": [
+    {
+      "id": "score_0_1748",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E1748",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x1748",
+          "bank": "7E",
+          "wram_offset": 5960
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.3,
+          "duration_ms": 80
+        }
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble when Team 1 scores",
+      "source_fields": [
+        {
+          "name": "rumble_when_team_1_scores",
+          "address": "0x7E1748",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_1_d77",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E0D77",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0D77",
+          "bank": "7E",
+          "wram_offset": 3447
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.3,
+          "duration_ms": 80
+        }
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble when Team 2 scores",
+      "source_fields": [
+        {
+          "name": "rumble_when_team_2_scores",
+          "address": "0x7E0D77",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

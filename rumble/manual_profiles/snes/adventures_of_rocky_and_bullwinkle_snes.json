@@ -1,0 +1,83 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "AdventuresOfRockyAndBullwinkle",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Adventures Of Rocky And Bullwinkle (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "AdventuresOfRockyAndBullwinkle-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_0_5cb",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E05CB",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x05CB",
+          "bank": "7E",
+          "wram_offset": 1483
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss",
+          "address": "0x7E05CB",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_1_5c2",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E05C2",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x05C2",
+          "bank": "7E",
+          "wram_offset": 1474
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.3,
+          "duration_ms": 80
+        }
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble for score A",
+      "source_fields": [
+        {
+          "name": "rumble_for_score_a",
+          "address": "0x7E05C2",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

@@ -1,0 +1,76 @@
+{
+  "system": "genesis",
+  "normalized_title": "devilcrashmd",
+  "display_name": "Devil Crash MD (Japan)",
+  "aliases": [
+    "Devil Crash MD (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\devilcrashmd_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFF633"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DevilCrashMD-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "ball",
+          "address": "0xFFF637",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF633",
+          "type": ">u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Devil Crash MD (Japan).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFF1B6:00F0",
+          "desc": "Boot Into Configuration Mode",
+          "address": "0xFFF1B6"
+        },
+        {
+          "code": "FFF73D:0011",
+          "desc": "Change Table Music to ??",
+          "address": "0xFFF73D"
+        },
+        {
+          "code": "FFF637:0063",
+          "desc": "P1 Infinite Balls",
+          "address": "0xFFF637"
+        },
+        {
+          "code": "FFF63D:0063",
+          "desc": "P2 Infinite Balls",
+          "address": "0xFFF63D"
+        },
+        {
+          "code": "FFF04F:0000",
+          "desc": "Ball Speed Modifier",
+          "address": "0xFFF04F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

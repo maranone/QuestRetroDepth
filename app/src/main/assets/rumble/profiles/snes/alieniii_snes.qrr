@@ -1,0 +1,5 @@
+game_name=AlienIii
+game_key=AlienIii-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_2_1248	damage_taken	0x7E1248	1	uint	native	prev > curr	0.85	1	left:0.750:180

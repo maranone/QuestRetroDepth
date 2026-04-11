@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "unchartedwaters",
+  "display_name": "Uncharted Waters (USA) (Action Replay)",
+  "aliases": [
+    "Uncharted Waters (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Uncharted Waters (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFEDC2:003F",
+          "desc": "Infinite Bonus Points",
+          "address": "0xFFEDC2"
+        },
+        {
+          "code": "FF1782:00FF",
+          "desc": "Infinite Gold",
+          "address": "0xFF1782"
+        },
+        {
+          "code": "FF1782:00FF",
+          "desc": "Max/Infinite Gold",
+          "address": "0xFF1782"
+        },
+        {
+          "code": "FF1782:00FF",
+          "desc": "Max/Infinite Gold",
+          "address": "0xFF1782"
+        },
+        {
+          "code": "FF1DE4:0000",
+          "desc": "Men Transferred To Ship Modifier",
+          "address": "0xFF1DE4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

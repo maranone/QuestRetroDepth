@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "cybercop",
+  "display_name": "Cyber-Cop (USA) (Action Replay)",
+  "aliases": [
+    "Cyber-Cop (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Cyber-Cop (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF2A2A:00FF",
+          "desc": "Infinite Domoge Energy",
+          "address": "0xFF2A2A"
+        },
+        {
+          "code": "FF219C:0000",
+          "desc": "Low Timer",
+          "address": "0xFF219C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

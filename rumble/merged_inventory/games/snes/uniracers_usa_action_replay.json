@@ -1,0 +1,43 @@
+{
+  "system": "snes",
+  "normalized_title": "uniracers",
+  "display_name": "Uniracers (USA) (Action Replay)",
+  "aliases": [
+    "Uniracers (USA) (Game Genie)",
+    "Uniracers (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Uniracers (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E1B8D00",
+          "desc": "Put Anything For ?? To Change The Color Of The Background And/Or The Track And/Or Your Uni And/Or The Computer Controlled Unis",
+          "address": "0x7E1B8D"
+        },
+        {
+          "code": "7E1B8D00",
+          "desc": "Always Win In A Draw Of 00:00:19",
+          "address": "0x7E1B8D"
+        },
+        {
+          "code": "7E0E1700",
+          "desc": "Seconds Modifier",
+          "address": "0x7E0E17"
+        },
+        {
+          "code": "7E0EF101",
+          "desc": "Quick Win In Lap Missions",
+          "address": "0x7E0EF1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

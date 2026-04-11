@@ -1,0 +1,73 @@
+{
+  "system": "genesis",
+  "normalized_title": "spaceinvaders91",
+  "display_name": "Space Invaders '91 (USA)",
+  "aliases": [
+    "Space Invaders '91 (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\spaceinvaders91_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF05C5",
+        "0xFF060B"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SpaceInvaders91-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF05C5",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF060B",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Space Invaders '91 (USA).cht",
+      "total_cheat_rows": 57,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF05C2:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF05C2"
+        },
+        {
+          "code": "FF05C4:0009",
+          "desc": "Infinite Shields",
+          "address": "0xFF05C4"
+        },
+        {
+          "code": "FF04CA:0009",
+          "desc": "Infinite Credits (Continues)",
+          "address": "0xFF04CA"
+        },
+        {
+          "code": "FF05F7:0009",
+          "desc": "Infinite Item",
+          "address": "0xFF05F7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "bssupermariousa2",
+  "display_name": "BS Super Mario USA 2 (J)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\BS Super Mario USA 2 (J).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E05071F",
+          "desc": "Infinite Hearts",
+          "address": "0x7E0507"
+        },
+        {
+          "code": "7E053A05",
+          "desc": "Infinite Lives",
+          "address": "0x7E053A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

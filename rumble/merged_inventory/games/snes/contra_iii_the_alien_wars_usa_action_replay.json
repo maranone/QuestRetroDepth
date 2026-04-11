@@ -1,0 +1,155 @@
+{
+  "system": "snes",
+  "normalized_title": "contraiiialienwars",
+  "display_name": "Contra III - The Alien Wars (USA) (Action Replay)",
+  "aliases": [
+    "Contra III - The Alien Wars (USA) (Action Replay)",
+    "Contra III - The Alien Wars (USA) (Game Genie)",
+    "Contra III - The Alien Wars (USA)",
+    "Contra III: The Alien Wars (or `JAP` cart?)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Contra III - The Alien Wars (USA).cht",
+      "total_cheat_rows": 74,
+      "raw_entry_count": 66,
+      "distinct_address_count": 59,
+      "sample_raw_entries": [
+        {
+          "code": "7E1F8400",
+          "desc": "Gun 1 modifier",
+          "address": "0x7E1F84"
+        },
+        {
+          "code": "7E1F8A03",
+          "desc": "Infinite Lives",
+          "address": "0x7E1F8A"
+        },
+        {
+          "code": "7E039203",
+          "desc": "Infinite Lives",
+          "address": "0x7E0392"
+        },
+        {
+          "code": "7E1F8C01",
+          "desc": "Infinite Bombs",
+          "address": "0x7E1F8C"
+        },
+        {
+          "code": "7E1F8600",
+          "desc": "Gun 2 Modifier",
+          "address": "0x7E1F86"
+        },
+        {
+          "code": "7E1F88FF",
+          "desc": "Always Invincible",
+          "address": "0x7E1F88"
+        },
+        {
+          "code": "7E1C0403",
+          "desc": "Cheat Enable",
+          "address": "0x7E1C04"
+        },
+        {
+          "code": "7E1C0601",
+          "desc": "Enable 30 lives cheat",
+          "address": "0x7E1C06"
+        },
+        {
+          "code": "7E743B01",
+          "desc": "Stage select",
+          "address": "0x7E743B"
+        },
+        {
+          "code": "7E022420",
+          "desc": "Untouchable By Enemies Or Weapons",
+          "address": "0x7E0224"
+        },
+        {
+          "code": "7E1E6001",
+          "desc": "Enable Stage Select",
+          "address": "0x7E1E60"
+        },
+        {
+          "code": "7E1F8A05",
+          "desc": "Infinite Lives",
+          "address": "0x7E1F8A"
+        },
+        {
+          "code": "7E1F8864",
+          "desc": "Infinite Health Rings",
+          "address": "0x7E1F88"
+        },
+        {
+          "code": "7E1FCA10",
+          "desc": "Infinite Lives P2",
+          "address": "0x7E1FCA"
+        },
+        {
+          "code": "7E1FC864",
+          "desc": "Infinite Health Rings P2",
+          "address": "0x7E1FC8"
+        },
+        {
+          "code": "7E1FCC09",
+          "desc": "Infinite Bombs P2",
+          "address": "0x7E1FCC"
+        },
+        {
+          "code": "7E1E6206",
+          "desc": "Infinite Continues",
+          "address": "0x7E1E62"
+        },
+        {
+          "code": "7E1F840C",
+          "desc": "Weapon Modifier P1",
+          "address": "0x7E1F84"
+        },
+        {
+          "code": "7E1F8600",
+          "desc": "Weapon Modifier P1 (2nd Weapon Slot)",
+          "address": "0x7E1F86"
+        },
+        {
+          "code": "7E1FC400",
+          "desc": "Weapon Modifier P2",
+          "address": "0x7E1FC4"
+        },
+        {
+          "code": "7E1FC600",
+          "desc": "Weapon Modifier P2 (2nd Weapon Slot)",
+          "address": "0x7E1FC6"
+        },
+        {
+          "code": "7E021200",
+          "desc": "Action Modifier",
+          "address": "0x7E0212"
+        },
+        {
+          "code": "7E174602",
+          "desc": "Infinite Lives",
+          "address": "0x7E1746"
+        },
+        {
+          "code": "7E1F8A02",
+          "desc": "Infinite Lives",
+          "address": "0x7E1F8A"
+        },
+        {
+          "code": "7E175C03",
+          "desc": "Infinite Bombs",
+          "address": "0x7E175C"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 10,
+      "mk3_label": "CONTRA SPIRITS"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

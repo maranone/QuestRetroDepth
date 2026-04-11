@@ -1,0 +1,50 @@
+{
+  "system": "genesis",
+  "normalized_title": "tougioukingcolossus",
+  "display_name": "Tougiou King Colossus (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tougiou King Colossus (Japan).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFF114:00FF",
+          "desc": "Exp Boost",
+          "address": "0xFFF114"
+        },
+        {
+          "code": "FFF13D:0001",
+          "desc": "Infinite Bombs",
+          "address": "0xFFF13D"
+        },
+        {
+          "code": "FFF17F:0014",
+          "desc": "Infinite MP",
+          "address": "0xFFF17F"
+        },
+        {
+          "code": "FFF13B:0001",
+          "desc": "Infinite Medical Herb",
+          "address": "0xFFF13B"
+        },
+        {
+          "code": "FFF13C:0001",
+          "desc": "Infinite Keys",
+          "address": "0xFFF13C"
+        },
+        {
+          "code": "FFF110:9000",
+          "desc": "Infinite Full Life",
+          "address": "0xFFF110"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

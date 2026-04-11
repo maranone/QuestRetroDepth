@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "rbibaseball3",
+  "display_name": "R.B.I. Baseball 3 (USA) (Action Replay)",
+  "aliases": [
+    "R.B.I. Baseball 3 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\R.B.I. Baseball 3 (USA).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF4C02:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFF4C02"
+        },
+        {
+          "code": "FF41B2:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFF41B2"
+        },
+        {
+          "code": "FF08AE:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFF08AE"
+        },
+        {
+          "code": "FF05F4:0063",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFF05F4"
+        },
+        {
+          "code": "FF05F4:0000",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFF05F4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

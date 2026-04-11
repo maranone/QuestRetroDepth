@@ -1,0 +1,55 @@
+{
+  "system": "snes",
+  "normalized_title": "yuyuhakusho",
+  "display_name": "Yu Yu Hakusho (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Yu Yu Hakusho (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E025200",
+          "desc": "Note: The following share these values.",
+          "address": "0x7E0252"
+        },
+        {
+          "code": "7E024600",
+          "desc": "P1 Character Modifier Cursor Select",
+          "address": "0x7E0246"
+        },
+        {
+          "code": "7E024800",
+          "desc": "P2 Character Modifier Cursor Select",
+          "address": "0x7E0248"
+        },
+        {
+          "code": "7E024E00",
+          "desc": "P1 Character Modifier",
+          "address": "0x7E024E"
+        },
+        {
+          "code": "7E025800",
+          "desc": "P2 Character Modifier",
+          "address": "0x7E0258"
+        },
+        {
+          "code": "7E101800",
+          "desc": "P2 Character Modifier (Alternate version)",
+          "address": "0x7E1018"
+        },
+        {
+          "code": "7E119800",
+          "desc": "P2 Character Modifier (Alternate version)",
+          "address": "0x7E1198"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

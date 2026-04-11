@@ -1,0 +1,58 @@
+{
+  "system": "genesis",
+  "normalized_title": "mysticdefender",
+  "display_name": "Mystic Defender (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Mystic Defender (USA, Europe) (Rev A)",
+    "Mystic Defender (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mystic Defender (USA, Europe).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFF620:0200",
+          "desc": "Unlimited Lives",
+          "address": "0xFFF620"
+        },
+        {
+          "code": "FFF620:0200",
+          "desc": "Unlimited Energy",
+          "address": "0xFFF620"
+        },
+        {
+          "code": "FFF62E:000C",
+          "desc": "Unlimited Lives",
+          "address": "0xFFF62E"
+        },
+        {
+          "code": "FFF776:0000",
+          "desc": "Unlimited Lives",
+          "address": "0xFFF776"
+        },
+        {
+          "code": "FFF628:0002",
+          "desc": "Unlimited Lives",
+          "address": "0xFFF628"
+        },
+        {
+          "code": "FFF7C2:0028",
+          "desc": "Unlimited Lives",
+          "address": "0xFFF7C2"
+        },
+        {
+          "code": "FFF62A:0008",
+          "desc": "Unlimited Lives",
+          "address": "0xFFF62A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

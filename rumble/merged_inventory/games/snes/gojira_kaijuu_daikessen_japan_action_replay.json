@@ -1,0 +1,102 @@
+{
+  "system": "snes",
+  "normalized_title": "gojirakaijuudaikessen",
+  "display_name": "Gojira - Kaijuu Daikessen (Japan) (Action Replay)",
+  "aliases": [
+    "Gojira - Kaijuu Daikessen (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Gojira - Kaijuu Daikessen (Japan).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 16,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "7E0660FC",
+          "desc": "Invincibility P1",
+          "address": "0x7E0660"
+        },
+        {
+          "code": "7E056600",
+          "desc": "Character Modifier P1",
+          "address": "0x7E0566"
+        },
+        {
+          "code": "7E0EB200",
+          "desc": "Control Modifier P1",
+          "address": "0x7E0EB2"
+        },
+        {
+          "code": "7E05EBFF",
+          "desc": "Infinite Health P1",
+          "address": "0x7E05EB"
+        },
+        {
+          "code": "7E05F900",
+          "desc": "Dizzy Meter Always At 0 P1",
+          "address": "0x7E05F9"
+        },
+        {
+          "code": "7E0601FF",
+          "desc": "Always Full Rage P1",
+          "address": "0x7E0601"
+        },
+        {
+          "code": "7E0662FC",
+          "desc": "Invincibility P2",
+          "address": "0x7E0662"
+        },
+        {
+          "code": "7E056800",
+          "desc": "Character Modifier P2",
+          "address": "0x7E0568"
+        },
+        {
+          "code": "7E0EB400",
+          "desc": "Control Modifier P2",
+          "address": "0x7E0EB4"
+        },
+        {
+          "code": "7E05EDFF",
+          "desc": "Infinite Health P2",
+          "address": "0x7E05ED"
+        },
+        {
+          "code": "7E05FB00",
+          "desc": "Dizzy Meter Always At 0 P2",
+          "address": "0x7E05FB"
+        },
+        {
+          "code": "7E0603FF",
+          "desc": "Always Full Rage P2",
+          "address": "0x7E0603"
+        },
+        {
+          "code": "7E05EB00",
+          "desc": "Knock Out Player 2 & Enemy With One Hit",
+          "address": "0x7E05EB"
+        },
+        {
+          "code": "7E05E9FF",
+          "desc": "Infinite Health For Player 1",
+          "address": "0x7E05E9"
+        },
+        {
+          "code": "7E053E11",
+          "desc": "Infinite Time",
+          "address": "0x7E053E"
+        },
+        {
+          "code": "7E053D94",
+          "desc": "Infinite Time",
+          "address": "0x7E053D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

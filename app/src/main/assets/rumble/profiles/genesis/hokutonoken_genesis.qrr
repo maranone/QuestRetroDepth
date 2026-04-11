@@ -1,0 +1,6 @@
+game_name=HokutoNoKen
+game_key=HokutoNoKen-Genesis
+system=genesis
+integration_tier=manual
+trigger	damage_taken_0_fe0c	damage_taken	0xFFFE0C	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_2_e7bc	damage_taken	0xFFE7BC	1	uint	native	prev > curr	0.85	1	left:0.750:180

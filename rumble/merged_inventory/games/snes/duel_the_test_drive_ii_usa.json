@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "dueltestdriveii",
+  "display_name": "Duel, The - Test Drive II (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Duel, The - Test Drive II (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E1C8609",
+          "desc": "Infinite Cars Left",
+          "address": "0x7E1C86"
+        },
+        {
+          "code": "7E11CEFF",
+          "desc": "Auto Accelerate at Maximum Speed",
+          "address": "0x7E11CE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

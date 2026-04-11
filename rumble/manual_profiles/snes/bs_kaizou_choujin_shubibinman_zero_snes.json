@@ -1,0 +1,151 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "BsKaizouChoujinShubibinmanZero",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Bs Kaizou Choujin Shubibinman Zero (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "BsKaizouChoujinShubibinmanZero-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_0_1d74",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E1D74",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x1D74",
+          "bank": "7E",
+          "wram_offset": 7540
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss (player 1)",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_player_1",
+          "address": "0x7E1D74",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_1_16ac",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0x7E16AC",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x16AC",
+          "bank": "7E",
+          "wram_offset": 5804
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.51,
+          "duration_ms": 100
+        }
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on attacks (player 1)",
+      "source_fields": [
+        {
+          "name": "rumble_on_attacks_player_1",
+          "address": "0x7E16AC",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_2_16ae",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0x7E16AE",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x16AE",
+          "bank": "7E",
+          "wram_offset": 5806
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.51,
+          "duration_ms": 100
+        }
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on attacks (player 2)",
+      "source_fields": [
+        {
+          "name": "rumble_on_attacks_player_2",
+          "address": "0x7E16AE",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_3_1d76",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E1D76",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x1D76",
+          "bank": "7E",
+          "wram_offset": 7542
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss (player 2)",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_player_2",
+          "address": "0x7E1D76",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

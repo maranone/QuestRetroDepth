@@ -1,0 +1,8 @@
+game_name=Mr. Nutz (World) (Action Replay)
+game_key=MrNutz-Snes
+system=snes
+integration_tier=stable
+trigger	game_over_gameover_19b5	game_over	0x7E19B5	1	int	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	damage_taken_health_18a6	damage_taken	0x7E18A6	1	int	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_18a6	death	0x7E18A6	1	int	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_1879	score	0x7E1879	4	bcd	little	prev < curr	0.8	1	right:0.350:60

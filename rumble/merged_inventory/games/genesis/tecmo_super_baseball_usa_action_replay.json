@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "tecmosuperbaseball",
+  "display_name": "Tecmo Super Baseball (USA) (Action Replay)",
+  "aliases": [
+    "Tecmo Super Baseball (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tecmo Super Baseball (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFD07E:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFFD07E"
+        },
+        {
+          "code": "FFD07C:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFFD07C"
+        },
+        {
+          "code": "FFD07A:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFFD07A"
+        },
+        {
+          "code": "FFF062:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFF062"
+        },
+        {
+          "code": "FFCE46:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFCE46"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

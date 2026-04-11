@@ -1,0 +1,57 @@
+{
+  "system": "snes",
+  "normalized_title": "tinhead",
+  "display_name": "Tinhead (Europe) (Action Replay)",
+  "aliases": [
+    "Tinhead (Europe) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Tinhead (Europe) (Proto).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 7,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E016F09",
+          "desc": "Infinite Lives",
+          "address": "0x7E016F"
+        },
+        {
+          "code": "7E017109",
+          "desc": "Infinite Energy",
+          "address": "0x7E0171"
+        },
+        {
+          "code": "7E017309",
+          "desc": "Infinite Bombs",
+          "address": "0x7E0173"
+        },
+        {
+          "code": "7E017163",
+          "desc": "Invincible",
+          "address": "0x7E0171"
+        },
+        {
+          "code": "7E017363",
+          "desc": "Multitude of Shots",
+          "address": "0x7E0173"
+        },
+        {
+          "code": "7E01D609",
+          "desc": "Infinite Time (Bonus Round)",
+          "address": "0x7E01D6"
+        },
+        {
+          "code": "7E016F63",
+          "desc": "Infinite Lives",
+          "address": "0x7E016F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

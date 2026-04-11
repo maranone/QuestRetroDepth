@@ -1,0 +1,41 @@
+{
+  "system": "genesis",
+  "normalized_title": "powerathlete",
+  "display_name": "PowerAthlete",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\powerathlete_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFF56AC"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\PowerAthlete-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "enemy_rounds_won",
+          "address": "0xFF57CF",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF56AC",
+          "type": "<n6"
+        }
+      ],
+      "distinct_address_count": 2
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

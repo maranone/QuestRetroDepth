@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "nbalive95",
+  "display_name": "NBA Live 95 (USA, Europe, Korea) (Action Replay)",
+  "aliases": [
+    "NBA Live 95 (USA, Europe, Korea) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NBA Live 95 (USA, Europe, Korea) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFEE53:XX",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFFEE53"
+        },
+        {
+          "code": "FFEDD3:XX",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFFEDD3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Deadly Moves (USA) (Action Replay)
+game_key=DeadlyMoves-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ff577a	damage_taken	0xFF577A	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff577a	death	0xFF577A	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_ff56ac	score	0xFF56AC	7	nibble	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "bibleadventures",
+  "display_name": "Bible Adventures (USA) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Bible Adventures (USA) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF0ED8:0C",
+          "desc": "Infinite Energy",
+          "address": "0xFF0ED8"
+        },
+        {
+          "code": "FF0FE3:0C",
+          "desc": "Infinite Energy",
+          "address": "0xFF0FE3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "itcamefromdesert",
+  "display_name": "It Came from the Desert (USA) (Action Replay)",
+  "aliases": [
+    "It Came from the Desert (USA) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\It Came from the Desert (USA) (Proto).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF000A:0002",
+          "desc": "Infinite Lives",
+          "address": "0xFF000A"
+        },
+        {
+          "code": "FFC266:0050",
+          "desc": "Infinite Energy",
+          "address": "0xFFC266"
+        },
+        {
+          "code": "FFC244:0028",
+          "desc": "Freeze Time",
+          "address": "0xFFC244"
+        },
+        {
+          "code": "FF0014:0063",
+          "desc": "Infinite Green Grenades",
+          "address": "0xFF0014"
+        },
+        {
+          "code": "FF0016:0063",
+          "desc": "Infinite Red Grenades",
+          "address": "0xFF0016"
+        },
+        {
+          "code": "FFC1CE:00FF",
+          "desc": "Invincible",
+          "address": "0xFFC1CE"
+        },
+        {
+          "code": "FFC244:0063",
+          "desc": "Infinite Time",
+          "address": "0xFFC244"
+        },
+        {
+          "code": "FFC266:003F",
+          "desc": "Infinite Health P1",
+          "address": "0xFFC266"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

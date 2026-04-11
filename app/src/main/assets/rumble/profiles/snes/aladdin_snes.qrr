@@ -1,0 +1,6 @@
+game_name=Aladdin
+game_key=Aladdin-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_366	damage_taken	0x7E0366	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	pickup_2_36a	pickup	0x7E036A	1	uint	native	prev != curr	0.7	1	left:0.220:80

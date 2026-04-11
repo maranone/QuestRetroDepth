@@ -1,0 +1,6 @@
+game_name=FatalFurySpecial
+game_key=FatalFurySpecial-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_1f761	damage_taken	0x7FF761	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_1_1f9fd	damage_taken	0x7FF9FD	1	uint	native	prev > curr	0.85	1	right:0.750:180

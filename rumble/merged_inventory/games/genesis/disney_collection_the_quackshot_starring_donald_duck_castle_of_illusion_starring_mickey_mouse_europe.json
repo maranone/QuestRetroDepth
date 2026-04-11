@@ -1,0 +1,60 @@
+{
+  "system": "genesis",
+  "normalized_title": "disneycollectionquackshotstarringdonaldduckcastleofillusionstarringmickeymouse",
+  "display_name": "Disney Collection, The - QuackShot Starring Donald Duck + Castle of Illusion Starring Mickey Mouse (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Disney Collection, The - QuackShot Starring Donald Duck + Castle of Illusion Starring Mickey Mouse (Europe).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF8F96:0008",
+          "desc": "Infinite Hits",
+          "address": "0xFF8F96"
+        },
+        {
+          "code": "FF8F98:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF8F98"
+        },
+        {
+          "code": "FF8F34:0000",
+          "desc": "Level Modifier",
+          "address": "0xFF8F34"
+        },
+        {
+          "code": "FF8F96:0008",
+          "desc": "Infinite Health For Donald",
+          "address": "0xFF8F96"
+        },
+        {
+          "code": "FFEE5D:00FF",
+          "desc": "Call The Plane Anywhere",
+          "address": "0xFFEE5D"
+        },
+        {
+          "code": "FFF325:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFFF325"
+        },
+        {
+          "code": "FFF322:0200",
+          "desc": "Infinite Health",
+          "address": "0xFFF322"
+        },
+        {
+          "code": "FFF320:0063",
+          "desc": "Infinite Apples",
+          "address": "0xFFF320"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

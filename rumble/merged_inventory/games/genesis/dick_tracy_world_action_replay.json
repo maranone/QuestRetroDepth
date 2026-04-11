@@ -1,0 +1,112 @@
+{
+  "system": "genesis",
+  "normalized_title": "dicktracy",
+  "display_name": "Dick Tracy (World) (Action Replay)",
+  "aliases": [
+    "Dick Tracy (Rumbles)",
+    "Dick Tracy (World) (Action Replay)",
+    "Dick Tracy (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\dicktracy_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFFD61",
+        "0xFFFD62",
+        "0xFFFD64"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DickTracy-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFFD62",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFFD61",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFD64",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Dick Tracy (World).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FFFD38:0000",
+          "desc": "Stage/Cutscene Modifier",
+          "address": "0xFFFD38"
+        },
+        {
+          "code": "FFFD62:0006",
+          "desc": "Infinite Health",
+          "address": "0xFFFD62"
+        },
+        {
+          "code": "FFFD61:0064",
+          "desc": "Begin With 99 Lives",
+          "address": "0xFFFD61"
+        },
+        {
+          "code": "FFFD71:0059",
+          "desc": "Infinite Time",
+          "address": "0xFFFD71"
+        },
+        {
+          "code": "FFFDAE:0000",
+          "desc": "No Health Bosses",
+          "address": "0xFFFDAE"
+        },
+        {
+          "code": "FFFD3A:0000",
+          "desc": "Level Text Modifier",
+          "address": "0xFFFD3A"
+        },
+        {
+          "code": "FFFD63:0002",
+          "desc": "Infinite Credits",
+          "address": "0xFFFD63"
+        },
+        {
+          "code": "FF1B9B:000A",
+          "desc": "Freeze Time Continue",
+          "address": "0xFF1B9B"
+        },
+        {
+          "code": "FF2302:0010",
+          "desc": "1 Hit and One Shot Invincibility Flashing. See Note.",
+          "address": "0xFF2302"
+        },
+        {
+          "code": "FF2302:0020",
+          "desc": "1 Hit and One Shot Invincibility Flashing. See Note.",
+          "address": "0xFF2302"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

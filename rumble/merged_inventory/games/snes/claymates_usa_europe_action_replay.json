@@ -1,0 +1,66 @@
+{
+  "system": "snes",
+  "normalized_title": "claymates",
+  "display_name": "Claymates (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Claymates (Rumbles)",
+    "Claymates (USA)",
+    "Claymates (USA, Europe) (Action Replay)",
+    "Claymates (USA, Europe) (Game Genie)",
+    "Claymates"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\claymates_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7EF6FE",
+        "0x7EF706"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Claymates-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7EF706",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7EF6FE",
+          "type": "<d4"
+        },
+        {
+          "name": "time",
+          "address": "0x7EF702",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Claymates (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 5,
+      "mk3_label": "CLAYMATES"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

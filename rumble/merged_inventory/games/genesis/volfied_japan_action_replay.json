@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "volfied",
+  "display_name": "Volfied (Japan) (Action Replay)",
+  "aliases": [
+    "Volfied (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Volfied (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFB582:0071",
+          "desc": "Infinite Time (Micro-Seconds)",
+          "address": "0xFFB582"
+        },
+        {
+          "code": "FFB582:0071",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFB582"
+        },
+        {
+          "code": "FFB584:0071",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFB584"
+        },
+        {
+          "code": "FFB58C:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFB58C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

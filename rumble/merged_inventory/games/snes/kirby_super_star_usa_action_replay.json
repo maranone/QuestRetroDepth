@@ -1,0 +1,54 @@
+{
+  "system": "snes",
+  "normalized_title": "kirbysuperstar",
+  "display_name": "Kirby Super Star (USA) (Action Replay)",
+  "aliases": [
+    "Kirby Super Star (USA) (Action Replay)",
+    "Kirby Super Star (USA) (Game Genie)",
+    "Kirby Super Star (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Kirby Super Star (USA).cht",
+      "total_cheat_rows": 46,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E00BB2A",
+          "desc": "Infinite Health",
+          "address": "0x7E00BB"
+        },
+        {
+          "code": "7E20C800",
+          "desc": "Modify Third Power (Treasure Hunting)",
+          "address": "0x7E20C8"
+        },
+        {
+          "code": "7E17E900",
+          "desc": "Megaton Punch: Enemy's MT Is 0",
+          "address": "0x7E17E9"
+        },
+        {
+          "code": "7E181B00",
+          "desc": "Megaton Punch: Enemy's MT Is 0",
+          "address": "0x7E181B"
+        },
+        {
+          "code": "7E064200",
+          "desc": "Menu: Flashing Color Marker",
+          "address": "0x7E0642"
+        },
+        {
+          "code": "7E064300",
+          "desc": "Menu: Flashing Color Marker #2",
+          "address": "0x7E0643"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "system": "genesis",
+  "normalized_title": "streetracer",
+  "display_name": "Street Racer (Europe) (Action Replay)",
+  "aliases": [
+    "Street Racer (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Street Racer (Europe).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 16,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "FF01E2:0000",
+          "desc": "Character Highlighter Modifier P1",
+          "address": "0xFF01E2"
+        },
+        {
+          "code": "FF1C6A:0000",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFF1C6A"
+        },
+        {
+          "code": "FF1C6A:0000",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFF1C6A"
+        },
+        {
+          "code": "FF1C6C:0000",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFF1C6C"
+        },
+        {
+          "code": "FF136E:00FF",
+          "desc": "Crazy Acceleration P1",
+          "address": "0xFF136E"
+        },
+        {
+          "code": "FF140A:0009",
+          "desc": "Infinite Turbos P1",
+          "address": "0xFF140A"
+        },
+        {
+          "code": "FF0A26:0000",
+          "desc": "Score Modifier (Sumo)",
+          "address": "0xFF0A26"
+        },
+        {
+          "code": "FF0A24:0000",
+          "desc": "Score Modifier (Helmut)",
+          "address": "0xFF0A24"
+        },
+        {
+          "code": "FF0A22:0000",
+          "desc": "Score Modifier (Surf)",
+          "address": "0xFF0A22"
+        },
+        {
+          "code": "FF0A20:0000",
+          "desc": "Score Modifier (Raph)",
+          "address": "0xFF0A20"
+        },
+        {
+          "code": "FF0A1E:0000",
+          "desc": "Score Modifier (Biff)",
+          "address": "0xFF0A1E"
+        },
+        {
+          "code": "FF0A1C:0000",
+          "desc": "Score Modifier (Frank)",
+          "address": "0xFF0A1C"
+        },
+        {
+          "code": "FF0A1A:0000",
+          "desc": "Score Modifier (Hodja)",
+          "address": "0xFF0A1A"
+        },
+        {
+          "code": "FF0A18:0000",
+          "desc": "Score Modifier (Suzulu)",
+          "address": "0xFF0A18"
+        },
+        {
+          "code": "FF140A:00FF",
+          "desc": "Always have +1 Star Bonus",
+          "address": "0xFF140A"
+        },
+        {
+          "code": "FF1408:0099",
+          "desc": "Infinite Turbo",
+          "address": "0xFF1408"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

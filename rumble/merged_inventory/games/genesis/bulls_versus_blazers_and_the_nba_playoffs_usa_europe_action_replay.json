@@ -1,0 +1,88 @@
+{
+  "system": "genesis",
+  "normalized_title": "bullsversusblazersandnbaplayoffs",
+  "display_name": "Bulls versus Blazers and the NBA Playoffs (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Bulls versus Blazers and the NBA Playoffs (USA, Europe) (Action Replay)",
+    "Bulls versus Blazers and the NBA Playoffs (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\bullsversusblazersandthenbaplayoffs_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BullsVersusBlazersAndTheNBAPlayoffs-Genesis-v0\\data.json",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "blazers_score",
+          "address": "0xFFA6E5",
+          "type": "|u1"
+        },
+        {
+          "name": "bulls_score",
+          "address": "0xFFA6E3",
+          "type": "|u1"
+        },
+        {
+          "name": "quarter",
+          "address": "0xFFA6E9",
+          "type": "|u1"
+        },
+        {
+          "name": "time",
+          "address": "0xFFA6F3",
+          "type": "|u1"
+        },
+        {
+          "name": "time_minutes",
+          "address": "0xFFA6EF",
+          "type": "|u1"
+        },
+        {
+          "name": "time_seconds",
+          "address": "0xFFA6ED",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 6
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Bulls versus Blazers and the NBA Playoffs (USA, Europe).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFA6EC:0059",
+          "desc": "Infinite Timer",
+          "address": "0xFFA6EC"
+        },
+        {
+          "code": "FFA6F4:0099",
+          "desc": "Infinite Shot Time",
+          "address": "0xFFA6F4"
+        },
+        {
+          "code": "FFA6E4:0063",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0xFFA6E4"
+        },
+        {
+          "code": "FFA6E6:0000",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0xFFA6E6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

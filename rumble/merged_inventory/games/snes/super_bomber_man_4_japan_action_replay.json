@@ -1,0 +1,147 @@
+{
+  "system": "snes",
+  "normalized_title": "superbomberman4",
+  "display_name": "Super Bomber Man 4 (Japan) (Action Replay)",
+  "aliases": [
+    "Super Bomber Man 4 (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Bomber Man 4 (Japan).cht",
+      "total_cheat_rows": 101,
+      "raw_entry_count": 79,
+      "distinct_address_count": 74,
+      "sample_raw_entries": [
+        {
+          "code": "7E034000",
+          "desc": "Your Speed",
+          "address": "0x7E0340"
+        },
+        {
+          "code": "7E034100",
+          "desc": "# of Bombs you can Place",
+          "address": "0x7E0341"
+        },
+        {
+          "code": "7E034300",
+          "desc": "Bomb Type(0-5)",
+          "address": "0x7E0343"
+        },
+        {
+          "code": "7E034400",
+          "desc": "Bomb's Blast Rang(#+2 spaces)",
+          "address": "0x7E0344"
+        },
+        {
+          "code": "7E034AFF",
+          "desc": "Can move bombs",
+          "address": "0x7E034A"
+        },
+        {
+          "code": "7E034BFF",
+          "desc": "Ignore Obstacles",
+          "address": "0x7E034B"
+        },
+        {
+          "code": "7E039703",
+          "desc": "Infinite Insulation(Bomb blasts don't hurt you)",
+          "address": "0x7E0397"
+        },
+        {
+          "code": "7E1EAC08",
+          "desc": "Infinite Lives",
+          "address": "0x7E1EAC"
+        },
+        {
+          "code": "7E1ED204",
+          "desc": "Infinite 4 Minutes",
+          "address": "0x7E1ED2"
+        },
+        {
+          "code": "7E1D2309",
+          "desc": "Infinite Lives",
+          "address": "0x7E1D23"
+        },
+        {
+          "code": "7E0E1D3A",
+          "desc": "Infinite Time",
+          "address": "0x7E0E1D"
+        },
+        {
+          "code": "7E4EBDFF",
+          "desc": "Lay Up To 255 Bombs At Once",
+          "address": "0x7E4EBD"
+        },
+        {
+          "code": "7E17CA10",
+          "desc": "Max Fire Power",
+          "address": "0x7E17CA"
+        },
+        {
+          "code": "7E179A05",
+          "desc": "When You Walk, You Look As If You're Riding An Invisible Louie",
+          "address": "0x7E179A"
+        },
+        {
+          "code": "7E15EA00",
+          "desc": "Move Speed Modifier",
+          "address": "0x7E15EA"
+        },
+        {
+          "code": "7E4ED500",
+          "desc": "Bomb Modifier",
+          "address": "0x7E4ED5"
+        },
+        {
+          "code": "7E170AFD",
+          "desc": "Invincible",
+          "address": "0x7E170A"
+        },
+        {
+          "code": "7E009200",
+          "desc": "Stage Modifier",
+          "address": "0x7E0092"
+        },
+        {
+          "code": "7E01A809",
+          "desc": "Infinite Lives",
+          "address": "0x7E01A8"
+        },
+        {
+          "code": "7E1ED03C",
+          "desc": "Infinite Time",
+          "address": "0x7E1ED0"
+        },
+        {
+          "code": "7E1EE8FF",
+          "desc": "Set Score To 700,000  (Player 1)",
+          "address": "0x7E1EE8"
+        },
+        {
+          "code": "7E1EECFF",
+          "desc": "Set Score To 700,000  (Player 2)",
+          "address": "0x7E1EEC"
+        },
+        {
+          "code": "7E1EBA01",
+          "desc": "Only Need To Defeat One Enemy To Activate Stage Exit",
+          "address": "0x7E1EBA"
+        },
+        {
+          "code": "7E034109",
+          "desc": "Set Max. Bomb Quantity (Player 1)",
+          "address": "0x7E0341"
+        },
+        {
+          "code": "7E044109",
+          "desc": "Set Max. Bomb Quantity (Player 2)",
+          "address": "0x7E0441"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

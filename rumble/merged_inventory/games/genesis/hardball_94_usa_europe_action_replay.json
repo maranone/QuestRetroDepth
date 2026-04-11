@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "hardball94",
+  "display_name": "HardBall '94 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "HardBall '94 (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\HardBall '94 (USA, Europe).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF1C50:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFF1C50"
+        },
+        {
+          "code": "FF1C52:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFF1C52"
+        },
+        {
+          "code": "FF1C52:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFF1C52"
+        },
+        {
+          "code": "FF1C4A:0000",
+          "desc": "Team 1 Runs Score Modifier (P1)",
+          "address": "0xFF1C4A"
+        },
+        {
+          "code": "FF1C4C:0000",
+          "desc": "Team 1 Home Score Modifier (P1)",
+          "address": "0xFF1C4C"
+        },
+        {
+          "code": "FF1C4E:0000",
+          "desc": "Team 1 Home Errors Modifier (P1)",
+          "address": "0xFF1C4E"
+        },
+        {
+          "code": "FF1C48:0000",
+          "desc": "Team 1 Extra Inning Score Modifier (P1)",
+          "address": "0xFF1C48"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

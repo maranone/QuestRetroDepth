@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "batmanrevengeofjoker",
+  "display_name": "Batman - Revenge of the Joker (USA) (Action Replay)",
+  "aliases": [
+    "Batman - Revenge of the Joker (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Batman - Revenge of the Joker (USA).cht",
+      "total_cheat_rows": 94,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF6046:0024",
+          "desc": "Invincibility",
+          "address": "0xFF6046"
+        },
+        {
+          "code": "FF3FF6:0800",
+          "desc": "Infinite Energy",
+          "address": "0xFF3FF6"
+        },
+        {
+          "code": "FF5D10:0200",
+          "desc": "Infinite Lives",
+          "address": "0xFF5D10"
+        },
+        {
+          "code": "FF9786:0008",
+          "desc": "Infinite Energy Capsules",
+          "address": "0xFF9786"
+        },
+        {
+          "code": "FF5D01:0000",
+          "desc": "Level Modifier",
+          "address": "0xFF5D01"
+        },
+        {
+          "code": "FF3FF6:0008",
+          "desc": "Infinite Lives Alt",
+          "address": "0xFF3FF6"
+        },
+        {
+          "code": "FF5D10:0001",
+          "desc": "Bypass code 5227 entering passwords only for levels",
+          "address": "0xFF5D10"
+        },
+        {
+          "code": "FF5D11:0001",
+          "desc": "Enable Cheat Mode",
+          "address": "0xFF5D11"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

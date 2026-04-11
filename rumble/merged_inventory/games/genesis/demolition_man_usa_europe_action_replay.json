@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "demolitionman",
+  "display_name": "Demolition Man (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Demolition Man (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Demolition Man (USA, Europe).cht",
+      "total_cheat_rows": 39,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF054A:0063",
+          "desc": "Infinite Lives",
+          "address": "0xFF054A"
+        },
+        {
+          "code": "FF054A:0005",
+          "desc": "Infinite Lives",
+          "address": "0xFF054A"
+        },
+        {
+          "code": "FF8442:0009",
+          "desc": "Infinite Grenades",
+          "address": "0xFF8442"
+        },
+        {
+          "code": "FF83A0:006F",
+          "desc": "Infinite Energy",
+          "address": "0xFF83A0"
+        },
+        {
+          "code": "FF8444:0032",
+          "desc": "Infinite Magnum",
+          "address": "0xFF8444"
+        },
+        {
+          "code": "FF0609:0001",
+          "desc": "Enable Level Select In Options",
+          "address": "0xFF0609"
+        },
+        {
+          "code": "FF0553:0002",
+          "desc": "Infinite Continue",
+          "address": "0xFF0553"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "system": "snes",
+  "normalized_title": "kidklownincrazychase",
+  "display_name": "Kid Klown In Crazy Chase (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Kid Klown In Crazy Chase (Rumbles)",
+    "Kid Klown in Crazy Chase (USA)",
+    "Kid Klown In Crazy Chase (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\kidklownincrazychase_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0564",
+        "0x7E0F34"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KidKlownInCrazyChase-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "countdown",
+          "address": "0x7E055C",
+          "type": "|d1"
+        },
+        {
+          "name": "health",
+          "address": "0x7E0F34",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0564",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Kid Klown In Crazy Chase (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "system": "genesis",
+  "normalized_title": "hokutonokenshinseikimatsukyuuseishudensetsu",
+  "display_name": "Hokuto no Ken - Shin Seikimatsu Kyuuseishu Densetsu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Hokuto no Ken - Shin Seikimatsu Kyuuseishu Densetsu (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFE7BC:0000",
+          "desc": "Easy Bosses",
+          "address": "0xFFE7BC"
+        },
+        {
+          "code": "FFFE0C:0040",
+          "desc": "Infinite Health",
+          "address": "0xFFFE0C"
+        },
+        {
+          "code": "FFFE0E:00FF",
+          "desc": "Powered Up",
+          "address": "0xFFFE0E"
+        },
+        {
+          "code": "FFFE14:0050",
+          "desc": "Infinite Time",
+          "address": "0xFFFE14"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

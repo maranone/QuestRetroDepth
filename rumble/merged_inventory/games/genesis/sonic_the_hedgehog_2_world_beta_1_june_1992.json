@@ -1,0 +1,241 @@
+{
+  "system": "genesis",
+  "normalized_title": "sonichedgehog2",
+  "display_name": "Sonic The Hedgehog 2 (World) (Beta 1) (June, 1992)",
+  "aliases": [
+    "Sonic The Hedgehog 2 (Rumbles)",
+    "Sonic The Hedgehog 2 (World) (Action Replay)",
+    "Sonic The Hedgehog 2 (World) (Beta 1) (June, 1992)",
+    "Sonic The Hedgehog 2 (World) (Beta 2) (July, 1992)",
+    "Sonic The Hedgehog 2 (World) (Rev A)",
+    "Sonic The Hedgehog 2 (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\sonicthehedgehog2_genesis.json",
+      "trigger_count": 7,
+      "field_names": [
+        "act",
+        "level_end_bonus",
+        "lives",
+        "rings",
+        "score",
+        "zone"
+      ],
+      "field_count": 6,
+      "distinct_addresses": [
+        "0xFFF7D6",
+        "0xFFFE10",
+        "0xFFFE11",
+        "0xFFFE12",
+        "0xFFFE20",
+        "0xFFFE26"
+      ],
+      "distinct_address_count": 6
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SonicTheHedgehog2-Genesis-v0\\data.json",
+      "field_count": 12,
+      "fields": [
+        {
+          "name": "act",
+          "address": "0xFFFE11",
+          "type": "|u1"
+        },
+        {
+          "name": "game_mode",
+          "address": "0xFFF600",
+          "type": "|u1"
+        },
+        {
+          "name": "level_end_bonus",
+          "address": "0xFFF7D6",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFFE12",
+          "type": "|u1"
+        },
+        {
+          "name": "rings",
+          "address": "0xFFFE20",
+          "type": ">u2"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFE26",
+          "type": ">u4"
+        },
+        {
+          "name": "screen_x",
+          "address": "0xFFEE00",
+          "type": ">u2"
+        },
+        {
+          "name": "screen_x_end",
+          "address": "0xFFEECA",
+          "type": ">u2"
+        },
+        {
+          "name": "screen_y",
+          "address": "0xFFEE04",
+          "type": ">u2"
+        },
+        {
+          "name": "x",
+          "address": "0xFFB008",
+          "type": ">u2"
+        },
+        {
+          "name": "y",
+          "address": "0xFFB00C",
+          "type": ">u2"
+        },
+        {
+          "name": "zone",
+          "address": "0xFFFE10",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 12
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sonic The Hedgehog 2 (World).cht",
+      "total_cheat_rows": 110,
+      "raw_entry_count": 38,
+      "distinct_address_count": 37,
+      "sample_raw_entries": [
+        {
+          "code": "FFB01C:0000",
+          "desc": "P1 Action modifier",
+          "address": "0xFFB01C"
+        },
+        {
+          "code": "FFB031:0040",
+          "desc": "Invincibility/Invisibility",
+          "address": "0xFFB031"
+        },
+        {
+          "code": "FFB800:0504",
+          "desc": "Sonic gets Tails' Tails",
+          "address": "0xFFB800"
+        },
+        {
+          "code": "FFB83E:B000",
+          "desc": "Sonic gets Tails' Tails",
+          "address": "0xFFB83E"
+        },
+        {
+          "code": "FFFFD0:0100",
+          "desc": "Enable Stage Select",
+          "address": "0xFFFFD0"
+        },
+        {
+          "code": "FFFFFA:0100",
+          "desc": "Enable Debug Mode",
+          "address": "0xFFFFFA"
+        },
+        {
+          "code": "FFFE20:00C8",
+          "desc": "Infinite Rings",
+          "address": "0xFFFE20"
+        },
+        {
+          "code": "FFFE12:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFFE12"
+        },
+        {
+          "code": "FFFE10:0000",
+          "desc": "Stage/Act Modifier",
+          "address": "0xFFFE10"
+        },
+        {
+          "code": "FFFE21:00E0",
+          "desc": "Always Have 224 Rings (Official Code)",
+          "address": "0xFFFE21"
+        },
+        {
+          "code": "FFFE24:0007",
+          "desc": "Unlimited Time",
+          "address": "0xFFFE24"
+        },
+        {
+          "code": "FFF761:6410",
+          "desc": "Super Speed! [Sonic]",
+          "address": "0xFFF761"
+        },
+        {
+          "code": "FFFEC1:6410",
+          "desc": "Super Speed! [Tails]",
+          "address": "0xFFFEC1"
+        },
+        {
+          "code": "FFB02A:0001",
+          "desc": "Invincibility For Sonic (Always Have Shield)",
+          "address": "0xFFB02A"
+        },
+        {
+          "code": "FFB06A:0001",
+          "desc": "Invincibility For Tails (Always Have Shield)",
+          "address": "0xFFB06A"
+        },
+        {
+          "code": "FFB028:00FA",
+          "desc": "Infinite Time Underwater For Sonic",
+          "address": "0xFFB028"
+        },
+        {
+          "code": "FFB068:00FA",
+          "desc": "Infinite Time Underwater For Tails",
+          "address": "0xFFB068"
+        },
+        {
+          "code": "FFB520:0001",
+          "desc": "Defeat Stage 1 Robotnik With 1 Hit",
+          "address": "0xFFB520"
+        },
+        {
+          "code": "FFB620:0001",
+          "desc": "Defeat Stage 2 Robotnik With 1 Hit",
+          "address": "0xFFB620"
+        },
+        {
+          "code": "FFB720:0001",
+          "desc": "Defeat Stage 3 Robotnik With 1 Hit",
+          "address": "0xFFB720"
+        },
+        {
+          "code": "FFB820:0001",
+          "desc": "Defeat Stage 4 Robotnik With 1 Hit",
+          "address": "0xFFB820"
+        },
+        {
+          "code": "FFB920:0001",
+          "desc": "Defeat Stage 5 Robotnik With 1 Hit",
+          "address": "0xFFB920"
+        },
+        {
+          "code": "FFBA20:0001",
+          "desc": "Defeat Stage 6 Robotnik With 1 Hit",
+          "address": "0xFFBA20"
+        },
+        {
+          "code": "FFBB20:0001",
+          "desc": "Defeat Stage 7 Robotnik With 1 Hit",
+          "address": "0xFFBB20"
+        },
+        {
+          "code": "FFBC20:0001",
+          "desc": "Defeat Stage 8 Robotnik With 1 Hit",
+          "address": "0xFFBC20"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

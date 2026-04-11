@@ -1,0 +1,38 @@
+{
+  "system": "genesis",
+  "normalized_title": "nbahangtime",
+  "display_name": "NBA Hang Time (USA, Europe) (Action Replay)",
+  "aliases": [
+    "NBA Hang Time (USA)",
+    "NBA Hang Time (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NBA Hang Time (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF1629:XX",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFF1629"
+        },
+        {
+          "code": "FF162B:XX",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFF162B"
+        },
+        {
+          "code": "FF107D:59",
+          "desc": "Infinite Turbo P1",
+          "address": "0xFF107D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "system": "genesis",
+  "normalized_title": "flink",
+  "display_name": "Flink (Europe) (Action Replay)",
+  "aliases": [
+    "Flink (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Flink (Europe).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "FFA2CA:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFA2CA"
+        },
+        {
+          "code": "FFC8D0:001F",
+          "desc": "Infinite/Max Magic",
+          "address": "0xFFC8D0"
+        },
+        {
+          "code": "FFC744:00FF",
+          "desc": "Enable Leave Level And Cheat Menu In Pause",
+          "address": "0xFFC744"
+        },
+        {
+          "code": "FFC86A:00FF",
+          "desc": "1 Hit Kill Bosses",
+          "address": "0xFFC86A"
+        },
+        {
+          "code": "FFC8D2:0001",
+          "desc": "Free Movement By Levels",
+          "address": "0xFFC8D2"
+        },
+        {
+          "code": "FFC878:0000",
+          "desc": "Jump in mid-air (multi-jumps)",
+          "address": "0xFFC878"
+        },
+        {
+          "code": "FFA2DC:0909",
+          "desc": "Have All Ingredients with Infinite Use",
+          "address": "0xFFA2DC"
+        },
+        {
+          "code": "FFA2DE:0909",
+          "desc": "Have All Ingredients with Infinite Use",
+          "address": "0xFFA2DE"
+        },
+        {
+          "code": "FFA2E0:0909",
+          "desc": "Have All Ingredients with Infinite Use",
+          "address": "0xFFA2E0"
+        },
+        {
+          "code": "FFA2E2:0909",
+          "desc": "Have All Ingredients with Infinite Use",
+          "address": "0xFFA2E2"
+        },
+        {
+          "code": "FFA2E4:0909",
+          "desc": "Have All Ingredients with Infinite Use",
+          "address": "0xFFA2E4"
+        },
+        {
+          "code": "FFA2E6:0909",
+          "desc": "Have All Ingredients with Infinite Use",
+          "address": "0xFFA2E6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

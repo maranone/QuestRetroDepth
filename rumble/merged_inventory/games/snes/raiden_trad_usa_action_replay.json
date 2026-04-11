@@ -1,0 +1,44 @@
+{
+  "system": "snes",
+  "normalized_title": "raidentrad",
+  "display_name": "Raiden Trad (USA) (Action Replay)",
+  "aliases": [
+    "Raiden Trad (USA) (Game Genie)",
+    "Raiden Trad (USA)",
+    "Raiden Trad"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Raiden Trad (USA).cht",
+      "total_cheat_rows": 33,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E101A07",
+          "desc": "Maximum Power For Weapon P1",
+          "address": "0x7E101A"
+        },
+        {
+          "code": "7E103507",
+          "desc": "Maximum Power For Weapon P2",
+          "address": "0x7E1035"
+        },
+        {
+          "code": "7E1C76FF",
+          "desc": "Invincibility",
+          "address": "0x7E1C76"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "RAIDEN TRAD"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

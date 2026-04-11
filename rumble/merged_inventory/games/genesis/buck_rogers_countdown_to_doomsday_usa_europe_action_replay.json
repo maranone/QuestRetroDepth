@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "buckrogerscountdowntodoomsday",
+  "display_name": "Buck Rogers - Countdown to Doomsday (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Buck Rogers - Countdown to Doomsday (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Buck Rogers - Countdown to Doomsday (USA, Europe).cht",
+      "total_cheat_rows": 40,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFC47E:0063",
+          "desc": "First Generated Character Keeps A Constant Health Of 99",
+          "address": "0xFFC47E"
+        },
+        {
+          "code": "FFBA78:0000",
+          "desc": "First Generated Character's Str Modifier",
+          "address": "0xFFBA78"
+        },
+        {
+          "code": "FFBA78:0000",
+          "desc": "First Generated Character's Dex Modifier",
+          "address": "0xFFBA78"
+        },
+        {
+          "code": "FFBA7A:0000",
+          "desc": "First Generated Character's Cha Modifier",
+          "address": "0xFFBA7A"
+        },
+        {
+          "code": "FFBA7C:0000",
+          "desc": "First Generated Character's Tch Modifier",
+          "address": "0xFFBA7C"
+        },
+        {
+          "code": "FFBA96:0000",
+          "desc": "First Generated Character's Con? Modifier",
+          "address": "0xFFBA96"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

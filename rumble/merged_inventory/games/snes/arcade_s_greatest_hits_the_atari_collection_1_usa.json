@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "arcadesgreatesthitsataricollection1",
+  "display_name": "Arcade's Greatest Hits - The Atari Collection 1 (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Arcade's Greatest Hits - The Atari Collection 1 (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E005709",
+          "desc": "9 Lives",
+          "address": "0x7E0057"
+        },
+        {
+          "code": "7E00A507",
+          "desc": "6 Lives",
+          "address": "0x7E00A5"
+        },
+        {
+          "code": "7E004809",
+          "desc": "9 Lives",
+          "address": "0x7E0048"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

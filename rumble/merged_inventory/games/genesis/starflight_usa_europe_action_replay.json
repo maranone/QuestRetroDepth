@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "starflight",
+  "display_name": "Starflight (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Starflight (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Starflight (USA, Europe).cht",
+      "total_cheat_rows": 87,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF9782:00FF",
+          "desc": "Have Lots of Money",
+          "address": "0xFF9782"
+        },
+        {
+          "code": "FF97A4:0063",
+          "desc": "Infinite Cargo Pods",
+          "address": "0xFF97A4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

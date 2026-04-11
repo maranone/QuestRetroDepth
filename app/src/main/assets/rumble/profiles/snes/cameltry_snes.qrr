@@ -1,0 +1,6 @@
+game_name=Cameltry
+game_key=Cameltry-Snes
+system=snes
+integration_tier=stable
+trigger	level_complete_level_8d70	level_complete	0x7E8D70	1	uint	native	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	score_score_083f	score	0x7E083F	3	bcd	little	prev < curr	0.8	1	right:0.350:60

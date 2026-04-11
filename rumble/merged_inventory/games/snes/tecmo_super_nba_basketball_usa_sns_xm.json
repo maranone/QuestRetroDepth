@@ -1,0 +1,60 @@
+{
+  "system": "snes",
+  "normalized_title": "tecmosupernbabasketball",
+  "display_name": "Tecmo Super NBA Basketball (USA) (SNS-XM)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Tecmo Super NBA Basketball (USA) (SNS-XM).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E047600",
+          "desc": "Time Modifier",
+          "address": "0x7E0476"
+        },
+        {
+          "code": "7E047700",
+          "desc": "Time Modifier",
+          "address": "0x7E0477"
+        },
+        {
+          "code": "7E04BC14",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0x7E04BC"
+        },
+        {
+          "code": "7E04BD14",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0x7E04BD"
+        },
+        {
+          "code": "7E04BE14",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0x7E04BE"
+        },
+        {
+          "code": "7E04BF14",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0x7E04BF"
+        },
+        {
+          "code": "7E04C014",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0x7E04C0"
+        },
+        {
+          "code": "7E04C114",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0x7E04C1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

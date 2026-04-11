@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "maryshelleysfrankenstein",
+  "display_name": "Mary Shelley's Frankenstein (USA) (Action Replay)",
+  "aliases": [
+    "Mary Shelley's Frankenstein (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mary Shelley's Frankenstein (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF9256:0020",
+          "desc": "Infinite Energy",
+          "address": "0xFF9256"
+        },
+        {
+          "code": "FF9227:0010",
+          "desc": "Invincible",
+          "address": "0xFF9227"
+        },
+        {
+          "code": "FF9261:0001",
+          "desc": "Infinite Burning Stick",
+          "address": "0xFF9261"
+        },
+        {
+          "code": "FF1015:0002",
+          "desc": "Enabled Cheat Mode Skip Levels, Return To The Previous Level, Energy Replenishment, Light Burning Stick, And Infinite Life. See Note",
+          "address": "0xFF1015"
+        },
+        {
+          "code": "FF9186:0010",
+          "desc": "Invincible Flash Fix",
+          "address": "0xFF9186"
+        },
+        {
+          "code": "FF100D:0000",
+          "desc": "Enabled Cheat Code Start On Level 1: Test Room",
+          "address": "0xFF100D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

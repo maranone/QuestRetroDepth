@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "nhl96",
+  "display_name": "NHL 96 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "NHL 96 (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NHL 96 (USA, Europe).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF7537:0064",
+          "desc": "Infinite Creation Points",
+          "address": "0xFF7537"
+        },
+        {
+          "code": "FFC4BE:0009",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFC4BE"
+        },
+        {
+          "code": "FFC4BE:001B",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFC4BE"
+        },
+        {
+          "code": "FFCAC4:0000",
+          "desc": "Team 1's # of Shots Taken",
+          "address": "0xFFCAC4"
+        },
+        {
+          "code": "FFC726:0000",
+          "desc": "Team 2's # of Shots Taken",
+          "address": "0xFFC726"
+        },
+        {
+          "code": "FFCAD0:0000",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFFCAD0"
+        },
+        {
+          "code": "FFC732:0000",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFFC732"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

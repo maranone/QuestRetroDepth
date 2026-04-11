@@ -1,0 +1,95 @@
+{
+  "system": "genesis",
+  "normalized_title": "ramboiii",
+  "display_name": "Rambo III (World) (Action Replay)",
+  "aliases": [
+    "Rambo III (World) (Action Replay)",
+    "Rambo III (World) (Rev A)",
+    "Rambo III (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\ramboiii_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFC103",
+        "0xFFC104"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\RamboIII-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFC103",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFC104",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Rambo III (World).cht",
+      "total_cheat_rows": 38,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FFC102:000A",
+          "desc": "Infinite Lives",
+          "address": "0xFFC102"
+        },
+        {
+          "code": "FFC108:FFFF",
+          "desc": "Infinite Items",
+          "address": "0xFFC108"
+        },
+        {
+          "code": "FFD02C:00FF",
+          "desc": "Invincible",
+          "address": "0xFFD02C"
+        },
+        {
+          "code": "FFC1C1:0119",
+          "desc": "Freeze Time",
+          "address": "0xFFC1C1"
+        },
+        {
+          "code": "FFC02F:0017",
+          "desc": "Always Charged Arrows",
+          "address": "0xFFC02F"
+        },
+        {
+          "code": "FFD064:0000",
+          "desc": "One Second Bombs",
+          "address": "0xFFD064"
+        },
+        {
+          "code": "FFD0A4:0000",
+          "desc": "One Second Bombs",
+          "address": "0xFFD0A4"
+        },
+        {
+          "code": "FFD0E4:0000",
+          "desc": "One Second Bombs",
+          "address": "0xFFD0E4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

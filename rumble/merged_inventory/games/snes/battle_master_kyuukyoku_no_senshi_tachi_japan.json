@@ -1,0 +1,78 @@
+{
+  "system": "snes",
+  "normalized_title": "battlemasterkyuukyokunosenshitachi",
+  "display_name": "Battle Master - Kyuukyoku no Senshi-tachi (Japan)",
+  "aliases": [
+    "Battle Master - Kyuukyoku no Senshi-tachi (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\battlemasterkyuukyokunosenshitachi_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "enemy_health",
+        "health"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0A2D",
+        "0x7E0A2E"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BattleMasterKyuukyokuNoSenshiTachi-Snes-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": " score",
+          "address": "0x7E0F13",
+          "type": "<n6"
+        },
+        {
+          "name": "enemy_health",
+          "address": "0x7E0A2E",
+          "type": "|u1"
+        },
+        {
+          "name": "enemy_rounds_won",
+          "address": "0x7E0B20",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0x7E0A2D",
+          "type": "|u1"
+        },
+        {
+          "name": "rounds_won",
+          "address": "0x7E0B1F",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Battle Master - Kyuukyoku no Senshi-tachi (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E0B2464",
+          "desc": "Infinite Time",
+          "address": "0x7E0B24"
+        },
+        {
+          "code": "7E0A2D64",
+          "desc": "Infinite Health",
+          "address": "0x7E0A2D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

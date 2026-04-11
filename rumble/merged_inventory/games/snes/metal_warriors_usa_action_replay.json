@@ -1,0 +1,143 @@
+{
+  "system": "snes",
+  "normalized_title": "metalwarriors",
+  "display_name": "Metal Warriors (USA) (Action Replay)",
+  "aliases": [
+    "Metal Warriors (USA) (Game Genie)",
+    "Metal Warriors (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Metal Warriors (USA).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 24,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "7E019800",
+          "desc": "Normal Gun",
+          "address": "0x7E0198"
+        },
+        {
+          "code": "7E019801",
+          "desc": "Machine Gun",
+          "address": "0x7E0198"
+        },
+        {
+          "code": "7E019804",
+          "desc": "Big Machine Gun",
+          "address": "0x7E0198"
+        },
+        {
+          "code": "7E019808",
+          "desc": "Pink Shots",
+          "address": "0x7E0198"
+        },
+        {
+          "code": "7E019809",
+          "desc": "Level 2 Gun",
+          "address": "0x7E0198"
+        },
+        {
+          "code": "7E01980A",
+          "desc": "Level 4 Gun",
+          "address": "0x7E0198"
+        },
+        {
+          "code": "7E01980B",
+          "desc": "Homing Bubbles",
+          "address": "0x7E0198"
+        },
+        {
+          "code": "7E01980C",
+          "desc": "Bouncing Shot",
+          "address": "0x7E0198"
+        },
+        {
+          "code": "7E01980D",
+          "desc": "Floating Bombs",
+          "address": "0x7E0198"
+        },
+        {
+          "code": "7E01980E",
+          "desc": "Falling Bombs",
+          "address": "0x7E0198"
+        },
+        {
+          "code": "7E019812",
+          "desc": "Enemy Shots that shoot left",
+          "address": "0x7E0198"
+        },
+        {
+          "code": "7E019813",
+          "desc": "Human Enemy Bombs",
+          "address": "0x7E0198"
+        },
+        {
+          "code": "7E019815",
+          "desc": "Shoot health packs for human",
+          "address": "0x7E0198"
+        },
+        {
+          "code": "7E015003",
+          "desc": "Infinite Health For Mech",
+          "address": "0x7E0150"
+        },
+        {
+          "code": "7E132005",
+          "desc": "Infinite Continues",
+          "address": "0x7E1320"
+        },
+        {
+          "code": "7E0622FF",
+          "desc": "Infinite Human's Health",
+          "address": "0x7E0622"
+        },
+        {
+          "code": "7E01500A",
+          "desc": "The Mech That You're In Is Invulnerable",
+          "address": "0x7E0150"
+        },
+        {
+          "code": "7E01EA04",
+          "desc": "The Circle Shaped Mech's Power Up Attack Now Rapid Fire",
+          "address": "0x7E01EA"
+        },
+        {
+          "code": "7E017600",
+          "desc": "Gun Aim Modifier",
+          "address": "0x7E0176"
+        },
+        {
+          "code": "7E013600",
+          "desc": "Super Weapon Modifier (Use Top L Button To Control)",
+          "address": "0x7E0136"
+        },
+        {
+          "code": "7E018600",
+          "desc": "Your Mech Pilot Is Invincible",
+          "address": "0x7E0186"
+        },
+        {
+          "code": "7E0622FF",
+          "desc": "Infinite Human/Mech Pilot Health P1",
+          "address": "0x7E0622"
+        },
+        {
+          "code": "7E1EF800",
+          "desc": "Level Modifier",
+          "address": "0x7E1EF8"
+        },
+        {
+          "code": "7E019501",
+          "desc": "No Time Limit For Shoulder-Mounted Weapon",
+          "address": "0x7E0195"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

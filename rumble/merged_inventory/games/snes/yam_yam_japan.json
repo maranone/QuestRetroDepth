@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "yamyam",
+  "display_name": "Yam Yam (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Yam Yam (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E039963",
+          "desc": "Infinite Energy",
+          "address": "0x7E0399"
+        },
+        {
+          "code": "7E039DE7",
+          "desc": "Max Money",
+          "address": "0x7E039D"
+        },
+        {
+          "code": "7E039EE7",
+          "desc": "Max Money",
+          "address": "0x7E039E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "system": "genesis",
+  "normalized_title": "revengeoffumanchu",
+  "display_name": "Revenge of Fu Manchu, The",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Revenge of Fu Manchu, The.cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF0C98:0034",
+          "desc": "Infinite Time",
+          "address": "0xFF0C98"
+        },
+        {
+          "code": "FF088A:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF088A"
+        },
+        {
+          "code": "FF0A40:0063",
+          "desc": "Infinite Starting Weapon",
+          "address": "0xFF0A40"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

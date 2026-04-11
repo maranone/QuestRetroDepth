@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "shinmegamitenseiii",
+  "display_name": "Shin Megami Tensei II (Japan) (Action Replay)",
+  "aliases": [
+    "Shin Megami Tensei II (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Shin Megami Tensei II (Japan).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E0E1EFF",
+          "desc": "Enable All Terminal Teleports",
+          "address": "0x7E0E1E"
+        },
+        {
+          "code": "7E0E1FFF",
+          "desc": "Enable All Terminal Teleports",
+          "address": "0x7E0E1F"
+        },
+        {
+          "code": "7E104E80",
+          "desc": "Character 1 Always 'Neutral' Aligned",
+          "address": "0x7E104E"
+        },
+        {
+          "code": "7E1010FF",
+          "desc": "Infinite Health Character 1",
+          "address": "0x7E1010"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

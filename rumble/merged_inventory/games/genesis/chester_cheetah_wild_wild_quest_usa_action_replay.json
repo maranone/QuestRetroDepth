@@ -1,0 +1,89 @@
+{
+  "system": "genesis",
+  "normalized_title": "chestercheetahwildwildquest",
+  "display_name": "Chester Cheetah - Wild Wild Quest (USA) (Action Replay)",
+  "aliases": [
+    "Chester Cheetah - Wild Wild Quest (USA) (Action Replay)",
+    "Chester Cheetah - Wild Wild Quest (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\chestercheetahwildwildquest_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFFB8C",
+        "0xFFFB99"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ChesterCheetahWildWildQuest-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "game_over",
+          "address": "0xFFFBAC",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFFB99",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFB8C",
+          "type": ">d4"
+        },
+        {
+          "name": "time",
+          "address": "0xFFFB94",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Chester Cheetah - Wild Wild Quest (USA).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF78FE:0000",
+          "desc": "Level Highlighter",
+          "address": "0xFF78FE"
+        },
+        {
+          "code": "FFFB94:0095",
+          "desc": "Infinite Time",
+          "address": "0xFFFB94"
+        },
+        {
+          "code": "FFFB98:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFFB98"
+        },
+        {
+          "code": "FFFB96:0009",
+          "desc": "Have 999 Cheese Paws",
+          "address": "0xFFFB96"
+        },
+        {
+          "code": "FFFB96:0099",
+          "desc": "Have 999 Cheese Paws",
+          "address": "0xFFFB96"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

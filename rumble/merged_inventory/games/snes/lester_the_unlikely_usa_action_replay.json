@@ -1,0 +1,33 @@
+{
+  "system": "snes",
+  "normalized_title": "lesterunlikely",
+  "display_name": "Lester the Unlikely (USA) (Action Replay)",
+  "aliases": [
+    "Lester the Unlikely (USA) (Game Genie)",
+    "Lester the Unlikely (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Lester the Unlikely (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E859B03",
+          "desc": "Infinite Health",
+          "address": "0x7E859B"
+        },
+        {
+          "code": "7E859903",
+          "desc": "Infinite Lives",
+          "address": "0x7E8599"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

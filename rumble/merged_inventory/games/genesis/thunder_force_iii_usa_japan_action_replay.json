@@ -1,0 +1,60 @@
+{
+  "system": "genesis",
+  "normalized_title": "thunderforceiii",
+  "display_name": "Thunder Force III (USA, Japan) (Action Replay)",
+  "aliases": [
+    "Thunder Force III (Japan, USA)",
+    "Thunder Force Iii (Rumbles)",
+    "Thunder Force III (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\thunderforceiii_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFF2A5",
+        "0xFFF2B5"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ThunderForceIII-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFF2B5",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF2A5",
+          "type": ">u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Thunder Force III (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFF2B5:09",
+          "desc": "Infinite Ships P1",
+          "address": "0xFFF2B5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

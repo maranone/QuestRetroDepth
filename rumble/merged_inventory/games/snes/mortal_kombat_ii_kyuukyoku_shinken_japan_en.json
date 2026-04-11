@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "mortalkombatiikyuukyokushinken",
+  "display_name": "Mortal Kombat II - Kyuukyoku Shinken (Japan) (En)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Mortal Kombat II - Kyuukyoku Shinken (Japan) (En).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E0232F0",
+          "desc": "Infinite Time Player Select",
+          "address": "0x7E0232"
+        },
+        {
+          "code": "7E2EFCA1",
+          "desc": "P1 Infinite Health",
+          "address": "0x7E2EFC"
+        },
+        {
+          "code": "7E30AA00",
+          "desc": "P2 No Health",
+          "address": "0x7E30AA"
+        },
+        {
+          "code": "7E022E09",
+          "desc": "Infinite Time",
+          "address": "0x7E022E"
+        },
+        {
+          "code": "7E2ED609",
+          "desc": "Infinite Time",
+          "address": "0x7E2ED6"
+        },
+        {
+          "code": "7E023302",
+          "desc": "Infinite Fatality Time",
+          "address": "0x7E0233"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

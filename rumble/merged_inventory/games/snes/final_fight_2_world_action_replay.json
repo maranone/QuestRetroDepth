@@ -1,0 +1,69 @@
+{
+  "system": "snes",
+  "normalized_title": "finalfight2",
+  "display_name": "Final Fight 2 (World) (Action Replay)",
+  "aliases": [
+    "Final Fight 2 (Europe)",
+    "Final Fight 2 (Japan)",
+    "Final Fight 2 (Rumbles)",
+    "Final Fight 2 (USA)",
+    "Final Fight 2 (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\finalfight2_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E106D",
+        "0x7E10A2",
+        "0x7E10A4"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FinalFight2-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E106D",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E10A2",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E10A4",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Final Fight 2 (World) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "7ED86399",
+          "desc": "Freeze Timer",
+          "address": "0x7ED863"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

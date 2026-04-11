@@ -1,0 +1,57 @@
+{
+  "system": "snes",
+  "normalized_title": "eekcat",
+  "display_name": "Eek! The Cat (USA)",
+  "aliases": [
+    "Eek! The Cat"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Eek! The Cat (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E1FE509",
+          "desc": "Infinite Lives",
+          "address": "0x7E1FE5"
+        },
+        {
+          "code": "7E004EBF",
+          "desc": "Infinite Health",
+          "address": "0x7E004E"
+        },
+        {
+          "code": "7E0FB320",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E0FB3"
+        },
+        {
+          "code": "7E0FBB20",
+          "desc": "Helped Person Walk Through Enemies",
+          "address": "0x7E0FBB"
+        },
+        {
+          "code": "7E0FB3FF",
+          "desc": "1 Hit And Invincibility",
+          "address": "0x7E0FB3"
+        },
+        {
+          "code": "7E0FF9FF",
+          "desc": "1 Hit And Invincibility",
+          "address": "0x7E0FF9"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 1,
+      "mk3_label": "SKY CAT"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

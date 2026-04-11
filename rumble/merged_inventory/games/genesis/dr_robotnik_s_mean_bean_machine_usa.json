@@ -1,0 +1,78 @@
+{
+  "system": "genesis",
+  "normalized_title": "drrobotniksmeanbeanmachine",
+  "display_name": "Dr. Robotnik's Mean Bean Machine (USA)",
+  "aliases": [
+    "Dr. Robotnik's Mean Bean Machine (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\drrobotniksmeanbeanmachine_genesis.json",
+      "trigger_count": 2,
+      "field_names": [
+        "gameover",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFE00C",
+        "0xFFE329"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DrRobotniksMeanBeanMachine-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFFE329",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFE00C",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Dr. Robotnik's Mean Bean Machine (USA).cht",
+      "total_cheat_rows": 31,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFE014:0000",
+          "desc": "You Can Drop Clear/Refugee Beans On The Cpu",
+          "address": "0xFFE014"
+        },
+        {
+          "code": "FFE166:0000",
+          "desc": "Player 1 - Falling Bean Color Modifier (Top Bean)",
+          "address": "0xFFE166"
+        },
+        {
+          "code": "FFE166:0000",
+          "desc": "Player 1 - Falling Bean Color Modifier (Bottom Bean)",
+          "address": "0xFFE166"
+        },
+        {
+          "code": "FFE226:0000",
+          "desc": "Player 2 - Falling Bean Color Modifier (Top Bean)",
+          "address": "0xFFE226"
+        },
+        {
+          "code": "FFE226:0000",
+          "desc": "Player 2 - Falling Bean Color Modifier (Bottom Bean)",
+          "address": "0xFFE226"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

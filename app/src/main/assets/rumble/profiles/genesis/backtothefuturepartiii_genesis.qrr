@@ -1,0 +1,7 @@
+game_name=Back to the Future Part III (USA, Europe) (Action Replay)
+game_key=BackToTheFuturePartIII-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ff00fd	life_lost	0xFF00FD	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff00fd	life_gained	0xFF00FD	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ff0108	score	0xFF0108	3	bcd	big	prev < curr	0.8	1	right:0.350:60

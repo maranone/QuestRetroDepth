@@ -1,0 +1,47 @@
+{
+  "system": "snes",
+  "normalized_title": "sidepocket",
+  "display_name": "Side Pocket (World) (Action Replay)",
+  "aliases": [
+    "Side Pocket (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Side Pocket (World) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E10940A",
+          "desc": "Infinite Hits Left",
+          "address": "0x7E1094"
+        },
+        {
+          "code": "7E109703",
+          "desc": "You Get LOTS Of Bonus Balls (Extra Shots) For Every Ball You Hit In (Player 1)",
+          "address": "0x7E1097"
+        },
+        {
+          "code": "7E109410",
+          "desc": "Infinite Shots (Player 1)",
+          "address": "0x7E1094"
+        },
+        {
+          "code": "7E10A2E7",
+          "desc": "Always Have Enough Points To Get To Next Level (Player 1)",
+          "address": "0x7E10A2"
+        },
+        {
+          "code": "7E10A303",
+          "desc": "Always Have Enough Points To Get To Next Level (Player 1)",
+          "address": "0x7E10A3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

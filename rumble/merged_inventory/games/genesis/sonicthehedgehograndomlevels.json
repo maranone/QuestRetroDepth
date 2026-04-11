@@ -1,0 +1,46 @@
+{
+  "system": "genesis",
+  "normalized_title": "sonichedgehograndomlevels",
+  "display_name": "SonicTheHedgehogRandomLevels",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\sonicthehedgehograndomlevels_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "gameover"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFD038"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SonicTheHedgehogRandomLevels-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFFD038",
+          "type": "|u1"
+        },
+        {
+          "name": "preset",
+          "address": "0xFFC950",
+          "type": "|u1"
+        },
+        {
+          "name": "x",
+          "address": "0xFFD008",
+          "type": ">i2"
+        }
+      ],
+      "distinct_address_count": 3
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

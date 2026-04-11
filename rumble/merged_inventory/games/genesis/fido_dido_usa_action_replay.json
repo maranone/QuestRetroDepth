@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "fidodido",
+  "display_name": "Fido Dido (USA) (Action Replay)",
+  "aliases": [
+    "Fido Dido (USA) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Fido Dido (USA) (Proto).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFBB1C:003F",
+          "desc": "Infinite Energy",
+          "address": "0xFFBB1C"
+        },
+        {
+          "code": "FFEDE6:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFEDE6"
+        },
+        {
+          "code": "FFBA24:0009",
+          "desc": "Infinite Time",
+          "address": "0xFFBA24"
+        },
+        {
+          "code": "FFB9BF:0009",
+          "desc": "Infinite Sharpeners/Running Shoes",
+          "address": "0xFFB9BF"
+        },
+        {
+          "code": "FFB9B7:0009",
+          "desc": "Infinite Pencils",
+          "address": "0xFFB9B7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

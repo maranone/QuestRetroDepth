@@ -1,0 +1,57 @@
+{
+  "system": "snes",
+  "normalized_title": "smurfstravelworld",
+  "display_name": "Smurfs Travel the World, The (Europe) (Action Replay)",
+  "aliases": [
+    "Smurfs Travel the World, The (Europe) (En,Fr,De,Es)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Smurfs Travel the World, The (Europe) (En,Fr,De,Es).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7FFC1A05",
+          "desc": "Infinite Health",
+          "address": "0x7FFC1A"
+        },
+        {
+          "code": "7E1C5BFF",
+          "desc": "Invincible After 1st Hit (Flashing)",
+          "address": "0x7E1C5B"
+        },
+        {
+          "code": "7FFC1804",
+          "desc": "Infinite Lives",
+          "address": "0x7FFC18"
+        },
+        {
+          "code": "7E1C6EFF",
+          "desc": "Switch F/X On To Levitate",
+          "address": "0x7E1C6E"
+        },
+        {
+          "code": "7E0B5FFE",
+          "desc": "Set Bonus Count To 254",
+          "address": "0x7E0B5F"
+        },
+        {
+          "code": "7FFC1200",
+          "desc": "Stage Select",
+          "address": "0x7FFC12"
+        },
+        {
+          "code": "7E00EF01",
+          "desc": "Only Need 1 Crystal To Exit All Stages",
+          "address": "0x7E00EF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

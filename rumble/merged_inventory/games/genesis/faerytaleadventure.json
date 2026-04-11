@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "faerytaleadventure",
+  "display_name": "FaeryTaleAdventure",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\faerytaleadventure_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FaeryTaleAdventure-Genesis-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "bravery",
+          "address": "0xFFF1BF",
+          "type": "|u1"
+        },
+        {
+          "name": "kindness",
+          "address": "0xFFF1C3",
+          "type": "|u1"
+        },
+        {
+          "name": "luck",
+          "address": "0xFFF1C1",
+          "type": "|i1"
+        },
+        {
+          "name": "vitality",
+          "address": "0xFFA58F",
+          "type": "|u1"
+        },
+        {
+          "name": "wealth",
+          "address": "0xFFF1C4",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 5
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

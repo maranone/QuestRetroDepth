@@ -1,0 +1,5 @@
+game_name=Dino Land (USA) (Action Replay)
+game_key=DinoLand-Genesis
+system=genesis
+integration_tier=stable
+trigger	score_score_ffff95	score	0xFFFF95	3	uint	big	prev < curr	0.8	1	right:0.350:60

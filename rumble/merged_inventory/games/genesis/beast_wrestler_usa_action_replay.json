@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "beastwrestler",
+  "display_name": "Beast Wrestler (USA) (Action Replay)",
+  "aliases": [
+    "Beast Wrestler (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Beast Wrestler (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFF3C3:03E7",
+          "desc": "Infinite Money",
+          "address": "0xFFF3C3"
+        },
+        {
+          "code": "FFF2B4:03E7",
+          "desc": "Max Power",
+          "address": "0xFFF2B4"
+        },
+        {
+          "code": "FFF2B2:03E7",
+          "desc": "Max Stamina",
+          "address": "0xFFF2B2"
+        },
+        {
+          "code": "FFF2BC:03E7",
+          "desc": "Max Speed",
+          "address": "0xFFF2BC"
+        },
+        {
+          "code": "FFF335:0000",
+          "desc": "Freeze Time",
+          "address": "0xFFF335"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "system": "genesis",
+  "normalized_title": "zerotolerance",
+  "display_name": "Zero Tolerance (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Zero Tolerance (USA, Europe) (Action Replay)",
+    "Zero Tolerance (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Zero Tolerance (USA, Europe).cht",
+      "total_cheat_rows": 57,
+      "raw_entry_count": 16,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FF0DE5:0064",
+          "desc": "Infinite Health",
+          "address": "0xFF0DE5"
+        },
+        {
+          "code": "FF1038:0063",
+          "desc": "Infinite Ammo / Item - Slot 1",
+          "address": "0xFF1038"
+        },
+        {
+          "code": "FF103C:0063",
+          "desc": "Infinite Ammo / Item - Slot 2",
+          "address": "0xFF103C"
+        },
+        {
+          "code": "FF1040:0063",
+          "desc": "Infinite Ammo / Item - Slot 3",
+          "address": "0xFF1040"
+        },
+        {
+          "code": "FF1044:0063",
+          "desc": "Infinite Ammo / Item - Slot 4",
+          "address": "0xFF1044"
+        },
+        {
+          "code": "FF1048:0063",
+          "desc": "Infinite Ammo / Item - Slot 5",
+          "address": "0xFF1048"
+        },
+        {
+          "code": "FF1037:000A",
+          "desc": "Slot 1 Item Modifier",
+          "address": "0xFF1037"
+        },
+        {
+          "code": "FF103B:000A",
+          "desc": "Slot 2 Item Modifier",
+          "address": "0xFF103B"
+        },
+        {
+          "code": "FF103F:000A",
+          "desc": "Slot 3 Item Modifier",
+          "address": "0xFF103F"
+        },
+        {
+          "code": "FF1043:000A",
+          "desc": "Slot 4 Item Modifier",
+          "address": "0xFF1043"
+        },
+        {
+          "code": "FF1047:000A",
+          "desc": "Slot 5 Item Modifier",
+          "address": "0xFF1047"
+        },
+        {
+          "code": "FF1031:0000",
+          "desc": "Character Modifier",
+          "address": "0xFF1031"
+        },
+        {
+          "code": "FF272B:002F",
+          "desc": "All Stages Secured",
+          "address": "0xFF272B"
+        },
+        {
+          "code": "FF1038:003F",
+          "desc": "Infinite Pistol Ammo",
+          "address": "0xFF1038"
+        },
+        {
+          "code": "FF103C:000B",
+          "desc": "Infinite Bulletproof Vest",
+          "address": "0xFF103C"
+        },
+        {
+          "code": "FF1040:0063",
+          "desc": "Infinite Shotgun Ammo",
+          "address": "0xFF1040"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

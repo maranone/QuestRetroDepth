@@ -1,0 +1,130 @@
+{
+  "system": "genesis",
+  "normalized_title": "bareknuckleikarinotekkenstreetsofrage",
+  "display_name": "Bare Knuckle - Ikari no Tekken _ Streets of Rage (World)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Bare Knuckle - Ikari no Tekken _ Streets of Rage (World).cht",
+      "total_cheat_rows": 76,
+      "raw_entry_count": 22,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "FFB932:0000",
+          "desc": "All Bosses 1 hit kill",
+          "address": "0xFFB932"
+        },
+        {
+          "code": "FFFF22:0009",
+          "desc": "Player 2 - Infinite Lives",
+          "address": "0xFFFF22"
+        },
+        {
+          "code": "FFFF24:0001",
+          "desc": "Player 2 - Infinite Police Calls",
+          "address": "0xFFFF24"
+        },
+        {
+          "code": "FFFF1A:0009",
+          "desc": "Player 1 - Infinite Continues",
+          "address": "0xFFFF1A"
+        },
+        {
+          "code": "FFFF1C:0009",
+          "desc": "Player 2 -  Infinite Continues",
+          "address": "0xFFFF1C"
+        },
+        {
+          "code": "FFFF22:0000",
+          "desc": "Player 1 Can Continue / Game Over",
+          "address": "0xFFFF22"
+        },
+        {
+          "code": "FFFF24:0000",
+          "desc": "Player 2 Can Continue / Game Over",
+          "address": "0xFFFF24"
+        },
+        {
+          "code": "FFF1BE:0001",
+          "desc": "Music Sounds Weird",
+          "address": "0xFFF1BE"
+        },
+        {
+          "code": "FFFF08:9999",
+          "desc": "Player 1 Max Score",
+          "address": "0xFFFF08"
+        },
+        {
+          "code": "FFFF0A:9999",
+          "desc": "Player 1 Max Score",
+          "address": "0xFFFF0A"
+        },
+        {
+          "code": "FFFF10:9999",
+          "desc": "Player 2 Max Score",
+          "address": "0xFFFF10"
+        },
+        {
+          "code": "FFFF12:9999",
+          "desc": "Player 2 Max Score",
+          "address": "0xFFFF12"
+        },
+        {
+          "code": "FFB933:0000",
+          "desc": "Boss#1 Health Modifier",
+          "address": "0xFFB933"
+        },
+        {
+          "code": "FFBA33:0000",
+          "desc": "Boss#2 Health Modifier",
+          "address": "0xFFBA33"
+        },
+        {
+          "code": "FFBB33:0000",
+          "desc": "Mr x Health Modifier",
+          "address": "0xFFBB33"
+        },
+        {
+          "code": "FFB9B3:0000",
+          "desc": "Mona Lisa #2 Health Modifier",
+          "address": "0xFFB9B3"
+        },
+        {
+          "code": "FFB832:0050",
+          "desc": "Infinite Energy",
+          "address": "0xFFB832"
+        },
+        {
+          "code": "FFFB00:0040",
+          "desc": "Infinite Time",
+          "address": "0xFFFB00"
+        },
+        {
+          "code": "FFFF20:0009",
+          "desc": "Infinite Lives (Both Players",
+          "address": "0xFFFF20"
+        },
+        {
+          "code": "FFFF20:0001",
+          "desc": "Infinite Special Weapons",
+          "address": "0xFFFF20"
+        },
+        {
+          "code": "FFB848:001B",
+          "desc": "Invincible",
+          "address": "0xFFB848"
+        },
+        {
+          "code": "FFFF21:0001",
+          "desc": "Freeze Unit Time Call Police Special Attack",
+          "address": "0xFFFF21"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

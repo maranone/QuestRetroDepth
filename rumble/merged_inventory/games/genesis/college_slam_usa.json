@@ -1,0 +1,197 @@
+{
+  "system": "genesis",
+  "normalized_title": "collegeslam",
+  "display_name": "College Slam (USA)",
+  "aliases": [
+    "College Slam (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\collegeslam_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CollegeSlam-Genesis-v0\\data.json",
+      "field_count": 7,
+      "fields": [
+        {
+          "name": "alabama_score0",
+          "address": "0xFF3DE4",
+          "type": "|u1"
+        },
+        {
+          "name": "alabama_score1",
+          "address": "0xFF3DE3",
+          "type": "|d1"
+        },
+        {
+          "name": "half",
+          "address": "0xFF3DBB",
+          "type": "|u1"
+        },
+        {
+          "name": "penn_state_score0",
+          "address": "0xFF3DE7",
+          "type": "|d1"
+        },
+        {
+          "name": "penn_state_score1",
+          "address": "0xFF3DE6",
+          "type": "|d1"
+        },
+        {
+          "name": "time_minutes",
+          "address": "0xFF41F7",
+          "type": "|u1"
+        },
+        {
+          "name": "time_seconds",
+          "address": "0xFF41F5",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 7
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\College Slam (USA).cht",
+      "total_cheat_rows": 74,
+      "raw_entry_count": 73,
+      "distinct_address_count": 73,
+      "sample_raw_entries": [
+        {
+          "code": "FF5F01:0020",
+          "desc": "P1 Infinite Turbo",
+          "address": "0xFF5F01"
+        },
+        {
+          "code": "FF606D:0020",
+          "desc": "P2 Infinite Turbo",
+          "address": "0xFF606D"
+        },
+        {
+          "code": "FF61D9:0020",
+          "desc": "P3 Infinite Turbo",
+          "address": "0xFF61D9"
+        },
+        {
+          "code": "FF6345:0020",
+          "desc": "P4 Infinite Turbo",
+          "address": "0xFF6345"
+        },
+        {
+          "code": "FF421B:0024",
+          "desc": "Infinite Shot Clock",
+          "address": "0xFF421B"
+        },
+        {
+          "code": "FF218D:0001",
+          "desc": "Unlock Extra Teams",
+          "address": "0xFF218D"
+        },
+        {
+          "code": "FF2556:0048",
+          "desc": "Edit Team - 1st Player Infinite Attribute Points",
+          "address": "0xFF2556"
+        },
+        {
+          "code": "FF2557:0048",
+          "desc": "Edit Team - 2nd Player Infinite Attribute Points",
+          "address": "0xFF2557"
+        },
+        {
+          "code": "FF2558:0048",
+          "desc": "Edit Team - 3rd Player Infinite Attribute Points",
+          "address": "0xFF2558"
+        },
+        {
+          "code": "FF2559:0048",
+          "desc": "Edit Team - 4th Player Infinite Attribute Points",
+          "address": "0xFF2559"
+        },
+        {
+          "code": "FF255A:0048",
+          "desc": "Edit Team - 5th Player Infinite Attribute Points",
+          "address": "0xFF255A"
+        },
+        {
+          "code": "FF3BD7:0001",
+          "desc": "Display Shot% Powerup",
+          "address": "0xFF3BD7"
+        },
+        {
+          "code": "FF3C47:0001",
+          "desc": "Slippery Court Powerup",
+          "address": "0xFF3C47"
+        },
+        {
+          "code": "FF3BDF:0001",
+          "desc": "P1 Quick Hands Powerup",
+          "address": "0xFF3BDF"
+        },
+        {
+          "code": "FF3BE7:0001",
+          "desc": "P1 Max Power Powerup",
+          "address": "0xFF3BE7"
+        },
+        {
+          "code": "FF3BEF:0001",
+          "desc": "P1 Goaltending Powerup",
+          "address": "0xFF3BEF"
+        },
+        {
+          "code": "FF3BF7:0001",
+          "desc": "P1 On-Fire Powerup",
+          "address": "0xFF3BF7"
+        },
+        {
+          "code": "FF3BFF:0001",
+          "desc": "P1 Infinite Turbo Powerup",
+          "address": "0xFF3BFF"
+        },
+        {
+          "code": "FF3C07:0001",
+          "desc": "P1 Offense Powerup",
+          "address": "0xFF3C07"
+        },
+        {
+          "code": "FF3C0F:0001",
+          "desc": "P1 3-Point Powerup",
+          "address": "0xFF3C0F"
+        },
+        {
+          "code": "FF3C17:0001",
+          "desc": "P1 Super Dunk Powerup",
+          "address": "0xFF3C17"
+        },
+        {
+          "code": "FF3C1F:0001",
+          "desc": "P1 Power Push Powerup",
+          "address": "0xFF3C1F"
+        },
+        {
+          "code": "FF3C27:0001",
+          "desc": "P1 Knockdown Both Opponents Powerup",
+          "address": "0xFF3C27"
+        },
+        {
+          "code": "FF3C2F:0001",
+          "desc": "P1 Knockdown Opposite Opponent Powerup",
+          "address": "0xFF3C2F"
+        },
+        {
+          "code": "FF3C37:0001",
+          "desc": "P1 Super Speed Powerup",
+          "address": "0xFF3C37"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

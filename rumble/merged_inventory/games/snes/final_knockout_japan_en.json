@@ -1,0 +1,55 @@
+{
+  "system": "snes",
+  "normalized_title": "finalknockout",
+  "display_name": "Final Knockout (Japan) (En)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Final Knockout (Japan) (En).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E0E5208",
+          "desc": "Referee Can't Count to 10 when Player 1 is knocked down",
+          "address": "0x7E0E52"
+        },
+        {
+          "code": "7E0E530A",
+          "desc": "Referee Counts to 10 Instantly when Player 2 is knocked down",
+          "address": "0x7E0E53"
+        },
+        {
+          "code": "7E05AF0F",
+          "desc": "Player 1 Has Infinite Stamina",
+          "address": "0x7E05AF"
+        },
+        {
+          "code": "7E05AD00",
+          "desc": "Player 2 Has No Stamina",
+          "address": "0x7E05AD"
+        },
+        {
+          "code": "7E061003",
+          "desc": "Player 1 Has Infinite Power Punches",
+          "address": "0x7E0610"
+        },
+        {
+          "code": "7E060E00",
+          "desc": "Player 2 Has No Power Punches",
+          "address": "0x7E060E"
+        },
+        {
+          "code": "7E0A23FF",
+          "desc": "Player 1 is not visibly affected by punches",
+          "address": "0x7E0A23"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

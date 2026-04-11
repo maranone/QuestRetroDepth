@@ -1,0 +1,29 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Star Fox 2",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Star Fox 2.cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "N/A",
+      "desc": "Note",
+      "kind": "unsupported"
+    },
+    {
+      "code": "7E5D280?",
+      "desc": "Force Type of Stage",
+      "kind": "unsupported"
+    },
+    {
+      "code": "7E5D2AXX",
+      "desc": "Enemies Remaining Modifier",
+      "kind": "unsupported"
+    }
+  ]
+}

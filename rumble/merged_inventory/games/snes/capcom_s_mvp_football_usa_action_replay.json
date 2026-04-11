@@ -1,0 +1,37 @@
+{
+  "system": "snes",
+  "normalized_title": "capcomsmvpfootball",
+  "display_name": "Capcom's MVP Football (USA) (Action Replay)",
+  "aliases": [
+    "Capcom's MVP Football (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Capcom's MVP Football (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E13253C",
+          "desc": "Freeze Clock",
+          "address": "0x7E1325"
+        },
+        {
+          "code": "7E132700",
+          "desc": "Quarter Clock Ends",
+          "address": "0x7E1327"
+        },
+        {
+          "code": "7E132800",
+          "desc": "Quarter Clock Ends",
+          "address": "0x7E1328"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

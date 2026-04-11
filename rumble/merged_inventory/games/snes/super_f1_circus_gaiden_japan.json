@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "superf1circusgaiden",
+  "display_name": "Super F1 Circus Gaiden (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super F1 Circus Gaiden (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E0A4338",
+          "desc": "Car Has No Damage P1",
+          "address": "0x7E0A43"
+        },
+        {
+          "code": "7E0A20FF",
+          "desc": "Auto-Accelerate at Maximum Speed P1",
+          "address": "0x7E0A20"
+        },
+        {
+          "code": "7E0A2112",
+          "desc": "Auto-Accelerate at Maximum Speed P1",
+          "address": "0x7E0A21"
+        },
+        {
+          "code": "7E0B6338",
+          "desc": "Car Has No Damage P2",
+          "address": "0x7E0B63"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

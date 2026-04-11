@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "newmanhaasindycarfeaturingnigelmansell",
+  "display_name": "Newman Haas IndyCar featuring Nigel Mansell (World) (Action Replay)",
+  "aliases": [
+    "Newman Haas IndyCar featuring Nigel Mansell (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Newman Haas IndyCar featuring Nigel Mansell (World).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFA1CC:0000",
+          "desc": "Low Timer (Minutes)",
+          "address": "0xFFA1CC"
+        },
+        {
+          "code": "FFA1CE:0000",
+          "desc": "Low Timer (Seconds)",
+          "address": "0xFFA1CE"
+        },
+        {
+          "code": "FFA1CE:0000",
+          "desc": "Low Timer (Micro-Seconds)",
+          "address": "0xFFA1CE"
+        },
+        {
+          "code": "FFA396:0004",
+          "desc": "Have Excellent Acceleration P1",
+          "address": "0xFFA396"
+        },
+        {
+          "code": "FFA398:0004",
+          "desc": "Have Excellent Acceleration P1",
+          "address": "0xFFA398"
+        },
+        {
+          "code": "FFA366:0001",
+          "desc": "Fake? Always In 1st",
+          "address": "0xFFA366"
+        },
+        {
+          "code": "FFA33C:0000",
+          "desc": "Fake? Lap Modifier",
+          "address": "0xFFA33C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

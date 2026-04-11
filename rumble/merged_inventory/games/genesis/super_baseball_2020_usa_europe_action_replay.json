@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "superbaseball2020",
+  "display_name": "Super Baseball 2020 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Super Baseball 2020 (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Super Baseball 2020 (USA, Europe).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 8,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF9940:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFF9940"
+        },
+        {
+          "code": "FF9940:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFF9940"
+        },
+        {
+          "code": "FF9944:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFF9944"
+        },
+        {
+          "code": "FF9944:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFF9944"
+        },
+        {
+          "code": "FF864A:0099",
+          "desc": "Team 1 Has Max Money",
+          "address": "0xFF864A"
+        },
+        {
+          "code": "FF864A:0099",
+          "desc": "Team 1 Has Max Money",
+          "address": "0xFF864A"
+        },
+        {
+          "code": "FF864C:0099",
+          "desc": "Team 1 Has Max Money",
+          "address": "0xFF864C"
+        },
+        {
+          "code": "FF864C:0099",
+          "desc": "Team 1 Has Max Money",
+          "address": "0xFF864C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

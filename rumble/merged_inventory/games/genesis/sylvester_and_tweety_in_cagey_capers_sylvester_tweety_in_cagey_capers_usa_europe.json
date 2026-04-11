@@ -1,0 +1,45 @@
+{
+  "system": "genesis",
+  "normalized_title": "sylvesterandtweetyincageycaperssylvestertweetyincageycapers",
+  "display_name": "Sylvester and Tweety in Cagey Capers _ Sylvester _ Tweety in Cagey Capers (USA, Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sylvester and Tweety in Cagey Capers _ Sylvester _ Tweety in Cagey Capers (USA, Europe).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF0004:0006",
+          "desc": "Go To Final Stage",
+          "address": "0xFF0004"
+        },
+        {
+          "code": "FFFBCA:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFFBCA"
+        },
+        {
+          "code": "FF7B42:0064",
+          "desc": "Infinite Health (Sylvester)",
+          "address": "0xFF7B42"
+        },
+        {
+          "code": "FFFBD2:0000",
+          "desc": "Low Timer",
+          "address": "0xFFFBD2"
+        },
+        {
+          "code": "FFFBD2:0000",
+          "desc": "Low Timer",
+          "address": "0xFFFBD2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

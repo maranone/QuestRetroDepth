@@ -1,0 +1,34 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Captain America and the Avengers U ESP IPS",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Captain America and the Avengers U ESP IPS.cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "6DE0-6F67",
+      "desc": "Infinite Energy P1",
+      "kind": "game_genie"
+    },
+    {
+      "code": "82E7-6FA7",
+      "desc": "1 Hit Kills You",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C283-34A0",
+      "desc": "Infinite Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "E383-34A0",
+      "desc": "Gain A Life Instead of Losing 1",
+      "kind": "game_genie"
+    }
+  ]
+}

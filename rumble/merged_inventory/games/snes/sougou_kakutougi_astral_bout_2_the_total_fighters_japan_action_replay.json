@@ -1,0 +1,92 @@
+{
+  "system": "snes",
+  "normalized_title": "sougoukakutougiastralbout2totalfighters",
+  "display_name": "Sougou Kakutougi - Astral Bout 2 - The Total Fighters (Japan) (Action Replay)",
+  "aliases": [
+    "Sougou Kakutougi - Astral Bout 2 - The Total Fighters (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Sougou Kakutougi - Astral Bout 2 - The Total Fighters (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 14,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "7E041C90",
+          "desc": "P1 Infinite Health",
+          "address": "0x7E041C"
+        },
+        {
+          "code": "7E041C00",
+          "desc": "P1 No Health",
+          "address": "0x7E041C"
+        },
+        {
+          "code": "7E041B01",
+          "desc": "Player 1 is Knocked Down with 1 Hit",
+          "address": "0x7E041B"
+        },
+        {
+          "code": "7E041F02",
+          "desc": "Player 1 Has Infinite Head Health",
+          "address": "0x7E041F"
+        },
+        {
+          "code": "7E042102",
+          "desc": "Player 1 Has Infinite Body Health",
+          "address": "0x7E0421"
+        },
+        {
+          "code": "7E042302",
+          "desc": "Player 1 Has Infinite Arm Health",
+          "address": "0x7E0423"
+        },
+        {
+          "code": "7E042502",
+          "desc": "Player 1 Has Infinite Leg Health",
+          "address": "0x7E0425"
+        },
+        {
+          "code": "7E04BC00",
+          "desc": "Player 2 Has No Health",
+          "address": "0x7E04BC"
+        },
+        {
+          "code": "7E04BD00",
+          "desc": "Player 2 Has No Health",
+          "address": "0x7E04BD"
+        },
+        {
+          "code": "7E04BB01",
+          "desc": "Player 2 is Knocked Down with 1 Hit",
+          "address": "0x7E04BB"
+        },
+        {
+          "code": "7E04BF00",
+          "desc": "Player 2 Has No Head Health",
+          "address": "0x7E04BF"
+        },
+        {
+          "code": "7E04C100",
+          "desc": "Player 2 Has No Body Health",
+          "address": "0x7E04C1"
+        },
+        {
+          "code": "7E04C300",
+          "desc": "Player 2 Has No Arm Health",
+          "address": "0x7E04C3"
+        },
+        {
+          "code": "7E04C500",
+          "desc": "Player 2 Has No Leg Health",
+          "address": "0x7E04C5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

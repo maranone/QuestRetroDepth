@@ -1,0 +1,207 @@
+{
+  "system": "genesis",
+  "normalized_title": "calripkenjrbaseball",
+  "display_name": "Cal Ripken Jr. Baseball (USA)",
+  "aliases": [
+    "Cal Ripken Jr. Baseball (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\calripkenjrbaseball_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CalRipkenJrBaseball-Genesis-v0\\data.json",
+      "field_count": 24,
+      "fields": [
+        {
+          "name": "at_bat_baltimore",
+          "address": "0xFFD33F",
+          "type": "|u1"
+        },
+        {
+          "name": "at_bat_oakland",
+          "address": "0xFFD33D",
+          "type": "|u1"
+        },
+        {
+          "name": "bal_score_inning1",
+          "address": "0xFFD345",
+          "type": "|u1"
+        },
+        {
+          "name": "bal_score_inning2",
+          "address": "0xFFD349",
+          "type": "|u1"
+        },
+        {
+          "name": "bal_score_inning3",
+          "address": "0xFFD34D",
+          "type": "|u1"
+        },
+        {
+          "name": "bal_score_inning4",
+          "address": "0xFFD351",
+          "type": "|u1"
+        },
+        {
+          "name": "bal_score_inning5",
+          "address": "0xFFD355",
+          "type": "|u1"
+        },
+        {
+          "name": "bal_score_inning6",
+          "address": "0xFFD359",
+          "type": "|u1"
+        },
+        {
+          "name": "bal_score_inning7",
+          "address": "0xFFD35D",
+          "type": "|u1"
+        },
+        {
+          "name": "bal_score_inning8",
+          "address": "0xFFD361",
+          "type": "|u1"
+        },
+        {
+          "name": "bal_score_inning9",
+          "address": "0xFFD365",
+          "type": "|u1"
+        },
+        {
+          "name": "balls",
+          "address": "0xFFD3B9",
+          "type": "|u1"
+        },
+        {
+          "name": "inning",
+          "address": "0xFFD3BF",
+          "type": "|u1"
+        },
+        {
+          "name": "oak_score_inning1",
+          "address": "0xFFD343",
+          "type": "|u1"
+        },
+        {
+          "name": "oak_score_inning2",
+          "address": "0xFFD347",
+          "type": "|u1"
+        },
+        {
+          "name": "oak_score_inning3",
+          "address": "0xFFD34B",
+          "type": "|u1"
+        },
+        {
+          "name": "oak_score_inning4",
+          "address": "0xFFD34F",
+          "type": "|u1"
+        },
+        {
+          "name": "oak_score_inning5",
+          "address": "0xFFD353",
+          "type": "|u1"
+        },
+        {
+          "name": "oak_score_inning6",
+          "address": "0xFFD357",
+          "type": "|u1"
+        },
+        {
+          "name": "oak_score_inning7",
+          "address": "0xFFD35B",
+          "type": "|u1"
+        },
+        {
+          "name": "oak_score_inning8",
+          "address": "0xFFD35F",
+          "type": "|u1"
+        },
+        {
+          "name": "oak_score_inning9",
+          "address": "0xFFD363",
+          "type": "|u1"
+        },
+        {
+          "name": "outs",
+          "address": "0xFFD3BD",
+          "type": "|u1"
+        },
+        {
+          "name": "strikes",
+          "address": "0xFFD3BB",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 24
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Cal Ripken Jr. Baseball (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "FFD3B8:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFFD3B8"
+        },
+        {
+          "code": "FFD3BA:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFFD3BA"
+        },
+        {
+          "code": "FFD3BC:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFFD3BC"
+        },
+        {
+          "code": "FFD340:0063",
+          "desc": "Team 1 (P1) Score Modifier",
+          "address": "0xFFD340"
+        },
+        {
+          "code": "FFD342:0000",
+          "desc": "Team 2 (Computer/P2) Score Modifier",
+          "address": "0xFFD342"
+        },
+        {
+          "code": "FFFED4:0000",
+          "desc": "Region Modifier",
+          "address": "0xFFFED4"
+        },
+        {
+          "code": "FFFE58:0000",
+          "desc": "Stadium Modifier",
+          "address": "0xFFFE58"
+        },
+        {
+          "code": "FFD3BE:0000",
+          "desc": "Innings Modifier",
+          "address": "0xFFD3BE"
+        },
+        {
+          "code": "FFD3E8:0000",
+          "desc": "No Strikes",
+          "address": "0xFFD3E8"
+        },
+        {
+          "code": "FFE83A:0000",
+          "desc": "No Strikes",
+          "address": "0xFFE83A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

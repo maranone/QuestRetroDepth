@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "resq",
+  "display_name": "Resq (Europe) (Action Replay)",
+  "aliases": [
+    "Resq (Europe) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Resq (Europe) (Proto).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFACA0:003D",
+          "desc": "Infinite Energy",
+          "address": "0xFFACA0"
+        },
+        {
+          "code": "FF8216:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF8216"
+        },
+        {
+          "code": "FFB8CC:003D",
+          "desc": "Infinite Rocket Pack",
+          "address": "0xFFB8CC"
+        },
+        {
+          "code": "FFB8D3:003D",
+          "desc": "Fake Infinite Energy Humans",
+          "address": "0xFFB8D3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

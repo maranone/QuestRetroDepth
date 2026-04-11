@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "kaizouchouninshubibinmanzero",
+  "display_name": "Kaizou Chounin Shubibinman Zero (Japan) (BS)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Kaizou Chounin Shubibinman Zero (Japan) (BS).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E1E110F",
+          "desc": "Press A while Paused to enable Flag Editor",
+          "address": "0x7E1E11"
+        },
+        {
+          "code": "7E141402",
+          "desc": "Invincibility",
+          "address": "0x7E1414"
+        },
+        {
+          "code": "7E1D7404",
+          "desc": "Infinite Energy",
+          "address": "0x7E1D74"
+        },
+        {
+          "code": "7E141602",
+          "desc": "Invincibility",
+          "address": "0x7E1416"
+        },
+        {
+          "code": "7E1D8A09",
+          "desc": "Infinite Credits",
+          "address": "0x7E1D8A"
+        },
+        {
+          "code": "7E16D580",
+          "desc": "Jump Midair",
+          "address": "0x7E16D5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

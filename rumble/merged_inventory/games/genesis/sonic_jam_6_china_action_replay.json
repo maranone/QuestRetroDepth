@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "sonicjam6",
+  "display_name": "Sonic Jam 6 (China) (Action Replay)",
+  "aliases": [
+    "Sonic Jam 6"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sonic Jam 6.cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FF0094:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF0094"
+        },
+        {
+          "code": "FF0096:008F",
+          "desc": "Infinite Time",
+          "address": "0xFF0096"
+        },
+        {
+          "code": "FF0060:0001",
+          "desc": "Invincible",
+          "address": "0xFF0060"
+        },
+        {
+          "code": "FF7158:0001",
+          "desc": "Infinite Weapon",
+          "address": "0xFF7158"
+        },
+        {
+          "code": "FF0061:0001",
+          "desc": "Infinite Energy Blue Sonic",
+          "address": "0xFF0061"
+        },
+        {
+          "code": "FF00A1:0001",
+          "desc": "Finish level",
+          "address": "0xFF00A1"
+        },
+        {
+          "code": "FF0043:0037",
+          "desc": "Change level",
+          "address": "0xFF0043"
+        },
+        {
+          "code": "FF00B4:0001",
+          "desc": "Play as P2 named Luigi",
+          "address": "0xFF00B4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "yogibearcartooncapers",
+  "display_name": "Yogi Bear - Cartoon Capers (Europe) (Action Replay)",
+  "aliases": [
+    "Yogi Bear - Cartoon Capers (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Yogi Bear - Cartoon Capers (Europe).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF9FFC:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF9FFC"
+        },
+        {
+          "code": "FF9F8E:0005",
+          "desc": "Infinite Energy",
+          "address": "0xFF9F8E"
+        },
+        {
+          "code": "FF9F92:0063",
+          "desc": "99 Clocks",
+          "address": "0xFF9F92"
+        },
+        {
+          "code": "FFA0A8:00FF",
+          "desc": "Invincibility",
+          "address": "0xFFA0A8"
+        },
+        {
+          "code": "FF888D:0009",
+          "desc": "Infinite Lives In Secret Game Beaut Snake Game By Charlie",
+          "address": "0xFF888D"
+        },
+        {
+          "code": "FF9FFF:0009",
+          "desc": "Infinite Continue",
+          "address": "0xFF9FFF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "system": "genesis",
+  "normalized_title": "richardscarrysbusytown",
+  "display_name": "Richard Scarry's Busytown (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Richard Scarry's Busytown (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFCCBC:0000",
+          "desc": "Food Modifier (On Left)",
+          "address": "0xFFCCBC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

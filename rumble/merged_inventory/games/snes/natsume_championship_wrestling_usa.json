@@ -1,0 +1,120 @@
+{
+  "system": "snes",
+  "normalized_title": "natsumechampionshipwrestling",
+  "display_name": "Natsume Championship Wrestling (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Natsume Championship Wrestling (USA).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 20,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "7E180059",
+          "desc": "Freeze Time Seconds",
+          "address": "0x7E1800"
+        },
+        {
+          "code": "7E173A01",
+          "desc": "Referee Counts Always 1",
+          "address": "0x7E173A"
+        },
+        {
+          "code": "7E173A03",
+          "desc": "Referee Counts Always 3",
+          "address": "0x7E173A"
+        },
+        {
+          "code": "7E173A0A",
+          "desc": "Referee Counts Always 10",
+          "address": "0x7E173A"
+        },
+        {
+          "code": "7E135AB8",
+          "desc": "P1 Infinite Health",
+          "address": "0x7E135A"
+        },
+        {
+          "code": "7E155A00",
+          "desc": "P2 No Health",
+          "address": "0x7E155A"
+        },
+        {
+          "code": "7E155B00",
+          "desc": "P2 No Health",
+          "address": "0x7E155B"
+        },
+        {
+          "code": "7E171C00",
+          "desc": "Player 2 No Health (Alternate)",
+          "address": "0x7E171C"
+        },
+        {
+          "code": "7E171D00",
+          "desc": "Player 2 No Health (Alternate)",
+          "address": "0x7E171D"
+        },
+        {
+          "code": "7E134700",
+          "desc": "Player 1 Can't Win Grapples",
+          "address": "0x7E1347"
+        },
+        {
+          "code": "7E144701",
+          "desc": "Player 1's Partner Never Wins Grapples",
+          "address": "0x7E1447"
+        },
+        {
+          "code": "7E154702",
+          "desc": "Player 2 Never Wins Grapples",
+          "address": "0x7E1547"
+        },
+        {
+          "code": "7E164703",
+          "desc": "Player 2's Partner Never Wins Grapples",
+          "address": "0x7E1647"
+        },
+        {
+          "code": "7E136601",
+          "desc": "Attacks Do Massive Damage to Player 1",
+          "address": "0x7E1366"
+        },
+        {
+          "code": "7E146601",
+          "desc": "Attacks Do Massive Damage to Player 1's Partner",
+          "address": "0x7E1466"
+        },
+        {
+          "code": "7E156601",
+          "desc": "Attacks Do Massive Damage to Player 2",
+          "address": "0x7E1566"
+        },
+        {
+          "code": "7E166601",
+          "desc": "Attacks Do Massive Damage to Player 2's Partner",
+          "address": "0x7E1666"
+        },
+        {
+          "code": "7E145AB8",
+          "desc": "Player 1's Partner Infinite Health",
+          "address": "0x7E145A"
+        },
+        {
+          "code": "7E165AB8",
+          "desc": "Player 2's Partner Infinite Health",
+          "address": "0x7E165A"
+        },
+        {
+          "code": "7E11AC00",
+          "desc": "Player 1 Modifier",
+          "address": "0x7E11AC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

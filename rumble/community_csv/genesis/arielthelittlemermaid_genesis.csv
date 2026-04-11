@@ -1,0 +1,8 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Ariel the Little Mermaid (USA, Europe) (Action Replay) (diff)
+# match_names=arielthelittlemermaid|arielthelittlemermaidgenesis
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+damage_taken_health_ff404d,0xFF404D,1,uint,prev_gt_curr,,left,0.850,normal,0,90,100,70,
+death_health_ff404d,0xFF404D,1,uint,became_zero,,both,1.000,normal,0,600,400,90,
+life_lost_lives_ffa60f,0xFFA60F,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
+life_gained_lives_ffa60f,0xFFA60F,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,

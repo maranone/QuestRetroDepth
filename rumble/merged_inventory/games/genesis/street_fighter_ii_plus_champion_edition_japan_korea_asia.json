@@ -1,0 +1,95 @@
+{
+  "system": "genesis",
+  "normalized_title": "streetfighteriipluschampionedition",
+  "display_name": "Street Fighter II' Plus - Champion Edition (Japan, Korea, Asia)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Street Fighter II' Plus - Champion Edition (Japan, Korea, Asia).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 15,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FFFE4D:0001",
+          "desc": "Only Special Moves and Throws allowed for Human Players in Game Start Mode",
+          "address": "0xFFFE4D"
+        },
+        {
+          "code": "FFFE4E:FFFF",
+          "desc": "Enable Turbo Champion Mode and Choose Same Character Twice in Group Mode",
+          "address": "0xFFFE4E"
+        },
+        {
+          "code": "FF972B:0000",
+          "desc": "Freeze Timer",
+          "address": "0xFF972B"
+        },
+        {
+          "code": "FF80C1:0000",
+          "desc": "P1 Can Perform Special Moves in Mid-Air",
+          "address": "0xFF80C1"
+        },
+        {
+          "code": "FF8043:00B0",
+          "desc": "P1 Infinite Health",
+          "address": "0xFF8043"
+        },
+        {
+          "code": "FF806D:0000",
+          "desc": "P1 Never Dizzies",
+          "address": "0xFF806D"
+        },
+        {
+          "code": "FF8043:0000",
+          "desc": "P1 No Health",
+          "address": "0xFF8043"
+        },
+        {
+          "code": "FF8095:0000",
+          "desc": "P1 Balrog never loses his Claw",
+          "address": "0xFF8095"
+        },
+        {
+          "code": "FF8341:0000",
+          "desc": "P2 Can Perform Special Moves in Mid-Air",
+          "address": "0xFF8341"
+        },
+        {
+          "code": "FF82C3:00B0",
+          "desc": "P2 Infinite Health",
+          "address": "0xFF82C3"
+        },
+        {
+          "code": "FF82ED:0000",
+          "desc": "P2 Never Dizzies",
+          "address": "0xFF82ED"
+        },
+        {
+          "code": "FF82C3:0000",
+          "desc": "P2 No Health",
+          "address": "0xFF82C3"
+        },
+        {
+          "code": "FF8315:0000",
+          "desc": "P2 Balrog never loses his Claw",
+          "address": "0xFF8315"
+        },
+        {
+          "code": "FF97A3:0000",
+          "desc": "Game Mode Modifier",
+          "address": "0xFF97A3"
+        },
+        {
+          "code": "FF97A4:0000",
+          "desc": "Game Speed Modifier",
+          "address": "0xFF97A4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

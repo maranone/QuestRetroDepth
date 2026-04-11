@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "babysdayout",
+  "display_name": "Baby's Day Out (USA) (Proto) (August, 1994)",
+  "aliases": [
+    "Baby's Day Out (USA) (Proto) (August, 1994)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Baby's Day Out (USA) (Proto) (August, 1994).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFF0D0:003B",
+          "desc": "Infinite Time",
+          "address": "0xFFF0D0"
+        },
+        {
+          "code": "FFF390:0063",
+          "desc": "Infinite Triangle Keys",
+          "address": "0xFFF390"
+        },
+        {
+          "code": "FFF392:0063",
+          "desc": "Infinite Square Keys",
+          "address": "0xFFF392"
+        },
+        {
+          "code": "FFF9B4:0004",
+          "desc": "Return To Baby",
+          "address": "0xFFF9B4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

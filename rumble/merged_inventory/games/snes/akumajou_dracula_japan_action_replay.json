@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "akumajoudracula",
+  "display_name": "Akumajou Dracula (Japan) (Action Replay)",
+  "aliases": [
+    "Akumajou Dracula (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Akumajou Dracula (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E13F410",
+          "desc": "Infinite Health",
+          "address": "0x7E13F4"
+        },
+        {
+          "code": "7E13F099",
+          "desc": "Infinite Time",
+          "address": "0x7E13F0"
+        },
+        {
+          "code": "7E002180",
+          "desc": "Can't Jump",
+          "address": "0x7E0021"
+        },
+        {
+          "code": "7E00BCFF",
+          "desc": "Invincibility",
+          "address": "0x7E00BC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

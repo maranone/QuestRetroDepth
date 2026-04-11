@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "superhqcriminalchaser",
+  "display_name": "Super H.Q. - Criminal Chaser (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super H.Q. - Criminal Chaser (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E127C8C",
+          "desc": "Infinite Energy",
+          "address": "0x7E127C"
+        },
+        {
+          "code": "7E126703",
+          "desc": "Infinite Boost",
+          "address": "0x7E1267"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

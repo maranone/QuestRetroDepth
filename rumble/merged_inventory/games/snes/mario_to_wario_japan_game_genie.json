@@ -1,0 +1,32 @@
+{
+  "system": "snes",
+  "normalized_title": "mariotowario",
+  "display_name": "Mario to Wario (Japan) (Game Genie)",
+  "aliases": [
+    "Mario to Wario (Japan) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Mario to Wario (Japan) (Game Genie).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E1C2A99",
+          "desc": "Makes Almost Everything Worth 10,000 Points",
+          "address": "0x7E1C2A"
+        },
+        {
+          "code": "7E1D3B63",
+          "desc": "Always Have 99 Coins",
+          "address": "0x7E1D3B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

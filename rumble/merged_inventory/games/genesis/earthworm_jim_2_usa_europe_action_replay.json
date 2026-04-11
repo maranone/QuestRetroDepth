@@ -1,0 +1,44 @@
+{
+  "system": "genesis",
+  "normalized_title": "earthwormjim2",
+  "display_name": "Earthworm Jim 2 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Earthworm Jim 2 (Rumbles)",
+    "Earthworm Jim 2 (USA)",
+    "Earthworm Jim 2 (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Earthworm Jim 2 (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFFAFE:37",
+          "desc": "Infinite Health",
+          "address": "0xFFFAFE"
+        },
+        {
+          "code": "FFFAE1:32",
+          "desc": "Infinite Ammo",
+          "address": "0xFFFAE1"
+        },
+        {
+          "code": "FFA231:E0",
+          "desc": "Jim Runs Funny",
+          "address": "0xFFA231"
+        },
+        {
+          "code": "FFFC15:09",
+          "desc": "Infinite Worms (In Game Show Mini-Game)",
+          "address": "0xFFFC15"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "system": "snes",
+  "normalized_title": "whirlo",
+  "display_name": "Whirlo (Europe) (Action Replay)",
+  "aliases": [
+    "Whirlo (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Whirlo (Europe).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E047003",
+          "desc": "Infinite Lives",
+          "address": "0x7E0470"
+        },
+        {
+          "code": "7E047009",
+          "desc": "Infinite Lives",
+          "address": "0x7E0470"
+        },
+        {
+          "code": "7E047200",
+          "desc": "Orb Number Modifier",
+          "address": "0x7E0472"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "system": "snes",
+  "normalized_title": "parodiusdashinwakaraowaraie",
+  "display_name": "Parodius Da! - Shinwa kara Owarai e (Japan) (Action Replay)",
+  "aliases": [
+    "Parodius Da! - Shinwa kara Owarai e (Japan) (Game Genie)",
+    "Parodius Da! - Shinwa kara Owarai e (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Parodius Da! - Shinwa kara Owarai e (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E0DB4DF",
+          "desc": "Konami Code Speed Modifier",
+          "address": "0x7E0DB4"
+        },
+        {
+          "code": "7E1CC465",
+          "desc": "Enemies Can't Touch You",
+          "address": "0x7E1CC4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

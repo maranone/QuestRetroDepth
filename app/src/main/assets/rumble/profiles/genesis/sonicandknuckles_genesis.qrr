@@ -1,0 +1,8 @@
+game_name=Sonic And Knuckles (Rumbles)
+game_key=SonicAndKnuckles-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_fffe12	life_lost	0xFFFE12	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fffe12	life_gained	0xFFFE12	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_rings_fffe20	pickup	0xFFFE20	2	uint	big	prev != curr	0.8	1	right:0.250:18
+trigger	score_score_fffe26	score	0xFFFE26	4	uint	big	prev < curr	0.8	1	right:0.350:60

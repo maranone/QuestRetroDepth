@@ -1,0 +1,59 @@
+{
+  "system": "genesis",
+  "normalized_title": "darwin4081",
+  "display_name": "Darwin 4081 (Japan, Korea) (Action Replay)",
+  "aliases": [
+    "Darwin 4081 (Japan, Korea) (Action Replay)",
+    "Darwin 4081 (Japan, Korea)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\darwin4081_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF046A",
+        "0xFF1009"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Darwin4081-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF1009",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF046A",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Darwin 4081 (Japan, Korea).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF202E:0000",
+          "desc": "Invincibility",
+          "address": "0xFF202E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

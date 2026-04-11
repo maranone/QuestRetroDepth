@@ -1,0 +1,49 @@
+{
+  "system": "snes",
+  "normalized_title": "skyblazer",
+  "display_name": "Skyblazer (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Skyblazer (USA)",
+    "Skyblazer (USA, Europe) (Action Replay)",
+    "Skyblazer"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Skyblazer (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E0065C3",
+          "desc": "Invincible",
+          "address": "0x7E0065"
+        },
+        {
+          "code": "7E1F0508",
+          "desc": "Maximum Energy",
+          "address": "0x7E1F05"
+        },
+        {
+          "code": "7EF80108",
+          "desc": "Infinite Energy",
+          "address": "0x7EF801"
+        },
+        {
+          "code": "7E1F0D08",
+          "desc": "Infinite Magic",
+          "address": "0x7E1F0D"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 3,
+      "mk3_label": "SKY BLAZER"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

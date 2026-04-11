@@ -1,0 +1,90 @@
+{
+  "system": "snes",
+  "normalized_title": "cacomaknightinbizyland",
+  "display_name": "Cacoma Knight in Bizyland (USA) (Action Replay)",
+  "aliases": [
+    "Cacoma Knight in Bizyland (USA) (Action Replay)",
+    "Cacoma Knight in Bizyland (USA) (Game Genie)",
+    "Cacoma Knight in Bizyland (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\cacomaknightinbizyland_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0E4C",
+        "0x7E0E4E"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CacomaKnightInBizyland-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0E4C",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0E4E",
+          "type": "<d4"
+        },
+        {
+          "name": "time",
+          "address": "0x7E0E22",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Cacoma Knight in Bizyland (USA).cht",
+      "total_cheat_rows": 37,
+      "raw_entry_count": 6,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E091800",
+          "desc": "Start With 1 Life",
+          "address": "0x7E0918"
+        },
+        {
+          "code": "7E091800",
+          "desc": "Start With 5 Lives",
+          "address": "0x7E0918"
+        },
+        {
+          "code": "7E091800",
+          "desc": "Start With 9 Lives",
+          "address": "0x7E0918"
+        },
+        {
+          "code": "7E091800",
+          "desc": "Start Game With 9 Credits",
+          "address": "0x7E0918"
+        },
+        {
+          "code": "7E0E1C00",
+          "desc": "Infinite Time",
+          "address": "0x7E0E1C"
+        },
+        {
+          "code": "7E0E4C09",
+          "desc": "Infinite Lives",
+          "address": "0x7E0E4C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "heiseiinumonogataribowpopnsmash",
+  "display_name": "Heisei Inu Monogatari Bow - Pop'n Smash!! (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Heisei Inu Monogatari Bow - Pop'n Smash!! (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E176140",
+          "desc": "Power Bar Is Always Full P1",
+          "address": "0x7E1761"
+        },
+        {
+          "code": "7E1BF800",
+          "desc": "P2 / Opponent Can't Score Points",
+          "address": "0x7E1BF8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "system": "genesis",
+  "normalized_title": "earthwormjim",
+  "display_name": "Earthworm Jim (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Earthworm Jim (Rumbles)",
+    "Earthworm Jim (USA)",
+    "Earthworm Jim (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Earthworm Jim (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FFFBFF:34",
+          "desc": "Invulnerable",
+          "address": "0xFFFBFF"
+        },
+        {
+          "code": "FFFD28:42",
+          "desc": "Invisible/Cannot Be Hit",
+          "address": "0xFFFD28"
+        },
+        {
+          "code": "FFFBF7:09",
+          "desc": "Infinite Ammo",
+          "address": "0xFFFBF7"
+        },
+        {
+          "code": "FFFBF6:09",
+          "desc": "Infinite Ammo",
+          "address": "0xFFFBF6"
+        },
+        {
+          "code": "FFFD16:1C",
+          "desc": "Vibrating Life Symbol",
+          "address": "0xFFFD16"
+        },
+        {
+          "code": "FFAFC4:09",
+          "desc": "Freezes 1st Boss",
+          "address": "0xFFAFC4"
+        },
+        {
+          "code": "FFFDED:0009",
+          "desc": "Infinite Super Plasma Shots",
+          "address": "0xFFFDED"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "system": "genesis",
+  "normalized_title": "californiagames",
+  "display_name": "California Games (USA, Europe) (Action Replay)",
+  "aliases": [
+    "California Games (USA, Europe) (Action Replay)",
+    "California Games (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\californiagames_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFFCC0"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CaliforniaGames-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "score",
+          "address": "0xFFFCC0",
+          "type": ">u4"
+        },
+        {
+          "name": "time",
+          "address": "0xFFF0D1",
+          "type": ">n4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\California Games (USA, Europe).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFEECE:0039",
+          "desc": "Fake Infinite Time",
+          "address": "0xFFEECE"
+        },
+        {
+          "code": "FFEECE:0039",
+          "desc": "Fake Infinite Time",
+          "address": "0xFFEECE"
+        },
+        {
+          "code": "FFEED0:0039",
+          "desc": "Fake Infinite Time",
+          "address": "0xFFEED0"
+        },
+        {
+          "code": "FFFC88:0014",
+          "desc": "Infinite Time",
+          "address": "0xFFFC88"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

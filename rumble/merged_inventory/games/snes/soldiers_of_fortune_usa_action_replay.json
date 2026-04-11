@@ -1,0 +1,53 @@
+{
+  "system": "snes",
+  "normalized_title": "soldiersoffortune",
+  "display_name": "Soldiers of Fortune (USA) (Action Replay)",
+  "aliases": [
+    "Soldiers of Fortune (USA) (Action Replay)",
+    "Soldiers of Fortune (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Soldiers of Fortune (USA).cht",
+      "total_cheat_rows": 121,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E40F064",
+          "desc": "Infinite Health P1",
+          "address": "0x7E40F0"
+        },
+        {
+          "code": "7E416564",
+          "desc": "Infinite Health P2 or Computer Partner",
+          "address": "0x7E4165"
+        },
+        {
+          "code": "7E009004",
+          "desc": "Infinite Lives P1",
+          "address": "0x7E0090"
+        },
+        {
+          "code": "7E009204",
+          "desc": "Infinite Lives P2 or Computer Partner",
+          "address": "0x7E0092"
+        },
+        {
+          "code": "7E40FF06",
+          "desc": "Infinite Special Attacks P1",
+          "address": "0x7E40FF"
+        },
+        {
+          "code": "7E417406",
+          "desc": "Infinite Special Attacks P2 or Computer Partner",
+          "address": "0x7E4174"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "nhl98",
+  "display_name": "NHL 98 (USA) (Action Replay)",
+  "aliases": [
+    "NHL 98 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NHL 98 (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFC4CA:0009",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFC4CA"
+        },
+        {
+          "code": "FFC4CA:0019",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFC4CA"
+        },
+        {
+          "code": "FFCAD0:0000",
+          "desc": "Team 1's # of Shots Taken",
+          "address": "0xFFCAD0"
+        },
+        {
+          "code": "FFC732:0000",
+          "desc": "Team 2's # of Shots Taken",
+          "address": "0xFFC732"
+        },
+        {
+          "code": "FFCADC:0000",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFFCADC"
+        },
+        {
+          "code": "FFC73E:0000",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFFC73E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

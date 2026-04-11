@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "dragonsfury",
+  "display_name": "Dragon's Fury (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Dragon's Fury (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Dragon's Fury (USA, Europe).cht",
+      "total_cheat_rows": 50,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FFF636:0002",
+          "desc": "Infinite Balls",
+          "address": "0xFFF636"
+        },
+        {
+          "code": "FFF637:0009",
+          "desc": "Infinite Balls",
+          "address": "0xFFF637"
+        },
+        {
+          "code": "FFF651:0009",
+          "desc": "Have Full BM",
+          "address": "0xFFF651"
+        },
+        {
+          "code": "FFF64F:00FF",
+          "desc": "Full BT",
+          "address": "0xFFF64F"
+        },
+        {
+          "code": "FFF647:00FF",
+          "desc": "Enable Time Trial Mode (Start a new game)",
+          "address": "0xFFF647"
+        },
+        {
+          "code": "FFF73D:0011",
+          "desc": "Change Table Music to ??",
+          "address": "0xFFF73D"
+        },
+        {
+          "code": "FFF637:0063",
+          "desc": "P1 Infinite Balls",
+          "address": "0xFFF637"
+        },
+        {
+          "code": "FFF63D:0063",
+          "desc": "P2 Infinite Balls",
+          "address": "0xFFF63D"
+        },
+        {
+          "code": "FFF04F:0000",
+          "desc": "Ball Speed Modifier",
+          "address": "0xFFF04F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

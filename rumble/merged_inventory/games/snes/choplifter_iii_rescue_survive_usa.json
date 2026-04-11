@@ -1,0 +1,153 @@
+{
+  "system": "snes",
+  "normalized_title": "choplifteriiirescuesurvive",
+  "display_name": "Choplifter III - Rescue-Survive (USA)",
+  "aliases": [
+    "Choplifter III - Rescue-Survive (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\choplifteriiirescuesurvive_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E01DD",
+        "0x7E01FB"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ChoplifterIIIRescueSurvive-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E01FB",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E01DD",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Choplifter III - Rescue-Survive (USA).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 20,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "7E201EBE",
+          "desc": "Item Invulnerability",
+          "address": "0x7E201E"
+        },
+        {
+          "code": "7E201ABE",
+          "desc": "Item Ladder",
+          "address": "0x7E201A"
+        },
+        {
+          "code": "7E2016BE",
+          "desc": "Item Chaff",
+          "address": "0x7E2016"
+        },
+        {
+          "code": "7E2012BE",
+          "desc": "Item Mega Crush",
+          "address": "0x7E2012"
+        },
+        {
+          "code": "7E200EBE",
+          "desc": "Item Bomb",
+          "address": "0x7E200E"
+        },
+        {
+          "code": "7E200ABE",
+          "desc": "Item Cluster Bomb",
+          "address": "0x7E200A"
+        },
+        {
+          "code": "7E2006BE",
+          "desc": "Item Napalm",
+          "address": "0x7E2006"
+        },
+        {
+          "code": "7E0D1680",
+          "desc": "Life Bar",
+          "address": "0x7E0D16"
+        },
+        {
+          "code": "7E2002BE",
+          "desc": "Item Rocket",
+          "address": "0x7E2002"
+        },
+        {
+          "code": "7E0CEB00",
+          "desc": "Invulnerability",
+          "address": "0x7E0CEB"
+        },
+        {
+          "code": "7E01F100",
+          "desc": "Pows On Board",
+          "address": "0x7E01F1"
+        },
+        {
+          "code": "7E08FC00",
+          "desc": "Blue Heli  Set To 69;",
+          "address": "0x7E08FC"
+        },
+        {
+          "code": "7E01EB00",
+          "desc": "Pows Required",
+          "address": "0x7E01EB"
+        },
+        {
+          "code": "7E01DE00",
+          "desc": "Score Byte 2 [Hx] -- X100",
+          "address": "0x7E01DE"
+        },
+        {
+          "code": "7E01DC00",
+          "desc": "Score Byte 4 [Hx] -- X1000000",
+          "address": "0x7E01DC"
+        },
+        {
+          "code": "7E01DD00",
+          "desc": "Score Byte 1 [Hx] -- X1",
+          "address": "0x7E01DD"
+        },
+        {
+          "code": "7E01DB00",
+          "desc": "Score Byte 3 [Hx] -- X10000",
+          "address": "0x7E01DB"
+        },
+        {
+          "code": "7E2022BE",
+          "desc": "Item Sidewinder",
+          "address": "0x7E2022"
+        },
+        {
+          "code": "7E2B0200",
+          "desc": "Invulnerability Timer",
+          "address": "0x7E2B02"
+        },
+        {
+          "code": "7E0D1682",
+          "desc": "Infinite Health",
+          "address": "0x7E0D16"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

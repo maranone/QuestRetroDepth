@@ -1,0 +1,133 @@
+{
+  "system": "snes",
+  "normalized_title": "speedygonzaleslosgatosbandidos",
+  "display_name": "Speedy Gonzales - Los Gatos Bandidos (USA) (Action Replay)",
+  "aliases": [
+    "Speedy Gonzales - Los Gatos Bandidos (Rumbles)",
+    "Speedy Gonzales - Los Gatos Bandidos (USA) (Action Replay)",
+    "Speedy Gonzales - Los Gatos Bandidos (USA) (Game Genie)",
+    "Speedy Gonzales - Los Gatos Bandidos (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\speedygonzaleslosgatosbandidos_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E08CC",
+        "0x7E0935",
+        "0x7E0936"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SpeedyGonzalesLosGatosBandidos-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E08CC",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E0935",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0936",
+          "type": ">n7"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Speedy Gonzales - Los Gatos Bandidos (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "7E08E008",
+          "desc": "Have 8 Mice",
+          "address": "0x7E08E0"
+        },
+        {
+          "code": "7E093503",
+          "desc": "Infinite Lives",
+          "address": "0x7E0935"
+        },
+        {
+          "code": "7E08CC05",
+          "desc": "Infinite Health",
+          "address": "0x7E08CC"
+        },
+        {
+          "code": "7E08CE05",
+          "desc": "Always Have 5 Health Hearts",
+          "address": "0x7E08CE"
+        },
+        {
+          "code": "7E08B0FF",
+          "desc": "Always Have Speedy Shoes Effect",
+          "address": "0x7E08B0"
+        },
+        {
+          "code": "7E099EFF",
+          "desc": "Invincible (After First Hit)",
+          "address": "0x7E099E"
+        },
+        {
+          "code": "7E093400",
+          "desc": "Freeze Timer",
+          "address": "0x7E0934"
+        },
+        {
+          "code": "7E086C48",
+          "desc": "Switch F/X On To Levitate Jump/Super Jump",
+          "address": "0x7E086C"
+        },
+        {
+          "code": "7E005200",
+          "desc": "Hyper Speedy Gonzalez",
+          "address": "0x7E0052"
+        },
+        {
+          "code": "7E099202",
+          "desc": "Ghost Speedy",
+          "address": "0x7E0992"
+        },
+        {
+          "code": "7E006300",
+          "desc": "Instant Speed",
+          "address": "0x7E0063"
+        },
+        {
+          "code": "7E006596",
+          "desc": "Instant Speed",
+          "address": "0x7E0065"
+        },
+        {
+          "code": "7E009800",
+          "desc": "Level Select",
+          "address": "0x7E0098"
+        },
+        {
+          "code": "7E002E08",
+          "desc": "Cheat Mode Enabled",
+          "address": "0x7E002E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

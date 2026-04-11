@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "bazoemahousekai",
+  "display_name": "Bazoe! Mahou Sekai (Japan) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bazoe! Mahou Sekai (Japan) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E11F6E7",
+          "desc": "Infinite HP Character 1",
+          "address": "0x7E11F6"
+        },
+        {
+          "code": "7E11F703",
+          "desc": "Infinite HP Character 1",
+          "address": "0x7E11F7"
+        },
+        {
+          "code": "7E11FA63",
+          "desc": "Infinite MP Character 1",
+          "address": "0x7E11FA"
+        },
+        {
+          "code": "7E125EE7",
+          "desc": "Infinite HP Character 2",
+          "address": "0x7E125E"
+        },
+        {
+          "code": "7E125F03",
+          "desc": "Infinite HP Character 2",
+          "address": "0x7E125F"
+        },
+        {
+          "code": "7E126263",
+          "desc": "Infinite MP Character 2",
+          "address": "0x7E1262"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

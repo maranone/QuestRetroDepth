@@ -1,0 +1,7 @@
+game_name=Shadow of the Beast (USA, Europe) (Action Replay)
+game_key=ShadowOfTheBeast-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ff1a17	damage_taken	0xFF1A17	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff1a17	death	0xFF1A17	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_ff1a0c	score	0xFF1A0C	6	nibble	big	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,88 @@
+{
+  "system": "snes",
+  "normalized_title": "ghostchaserdensei",
+  "display_name": "Ghost Chaser Densei (Japan) (Action Replay)",
+  "aliases": [
+    "Ghost Chaser Densei (Japan) (Game Genie)",
+    "Ghost Chaser Densei (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ghost Chaser Densei (Japan).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 13,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "7E41A538",
+          "desc": "Infinite Health",
+          "address": "0x7E41A5"
+        },
+        {
+          "code": "7E41A948",
+          "desc": "Infinite Energy",
+          "address": "0x7E41A9"
+        },
+        {
+          "code": "7E052163",
+          "desc": "Freeze Timer",
+          "address": "0x7E0521"
+        },
+        {
+          "code": "7E051663",
+          "desc": "99 Hits in Bonus Round",
+          "address": "0x7E0516"
+        },
+        {
+          "code": "7E411510",
+          "desc": "Do Sword damage",
+          "address": "0x7E4115"
+        },
+        {
+          "code": "7E43A500",
+          "desc": "1 Hit Kills",
+          "address": "0x7E43A5"
+        },
+        {
+          "code": "7E44A500",
+          "desc": "1 Hit Kills",
+          "address": "0x7E44A5"
+        },
+        {
+          "code": "7E45A500",
+          "desc": "1 Hit Kills",
+          "address": "0x7E45A5"
+        },
+        {
+          "code": "7E46A500",
+          "desc": "1 Hit Kills",
+          "address": "0x7E46A5"
+        },
+        {
+          "code": "7E05B308",
+          "desc": "Character Mod",
+          "address": "0x7E05B3"
+        },
+        {
+          "code": "7E052150",
+          "desc": "Infinite Time",
+          "address": "0x7E0521"
+        },
+        {
+          "code": "7E41A538",
+          "desc": "Infinite Health P1",
+          "address": "0x7E41A5"
+        },
+        {
+          "code": "7E054B06",
+          "desc": "Infinite Continues P1",
+          "address": "0x7E054B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

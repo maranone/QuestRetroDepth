@@ -1,0 +1,6 @@
+game_name=Dr. Robotnik's Mean Bean Machine (USA)
+game_key=DrRobotniksMeanBeanMachine-Genesis
+system=genesis
+integration_tier=stable
+trigger	game_over_gameover_ffe329	game_over	0xFFE329	1	int	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	score_score_ffe00c	score	0xFFE00C	2	uint	big	prev < curr	0.8	1	right:0.350:60

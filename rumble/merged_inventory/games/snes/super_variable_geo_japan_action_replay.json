@@ -1,0 +1,77 @@
+{
+  "system": "snes",
+  "normalized_title": "supervariablegeo",
+  "display_name": "Super Variable Geo (Japan) (Action Replay)",
+  "aliases": [
+    "Super Variable Geo (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Variable Geo (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "7E203A99",
+          "desc": "Infinite Time",
+          "address": "0x7E203A"
+        },
+        {
+          "code": "7E1D36A8",
+          "desc": "P1 Infinite Health",
+          "address": "0x7E1D36"
+        },
+        {
+          "code": "7E1D5A02",
+          "desc": "1 Round to Win Match",
+          "address": "0x7E1D5A"
+        },
+        {
+          "code": "7E1E6000",
+          "desc": "Opponent Never Wins Match",
+          "address": "0x7E1E60"
+        },
+        {
+          "code": "7E1D5900",
+          "desc": "Costume Modifier",
+          "address": "0x7E1D59"
+        },
+        {
+          "code": "7E1E5F00",
+          "desc": "Opponent Costume Modifier",
+          "address": "0x7E1E5F"
+        },
+        {
+          "code": "7E1D5800",
+          "desc": "Character Modifier",
+          "address": "0x7E1D58"
+        },
+        {
+          "code": "7E1E5E00",
+          "desc": "Opponent Modifier",
+          "address": "0x7E1E5E"
+        },
+        {
+          "code": "7E446600",
+          "desc": "Battleground Modifier",
+          "address": "0x7E4466"
+        },
+        {
+          "code": "7E1E3C01",
+          "desc": "1 Hit Death (P2's Health)",
+          "address": "0x7E1E3C"
+        },
+        {
+          "code": "7E0CB263",
+          "desc": "Infinite Time",
+          "address": "0x7E0CB2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

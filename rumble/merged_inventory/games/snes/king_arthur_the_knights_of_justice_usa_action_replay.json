@@ -1,0 +1,43 @@
+{
+  "system": "snes",
+  "normalized_title": "kingarthurknightsofjustice",
+  "display_name": "King Arthur _ The Knights of Justice (USA) (Action Replay)",
+  "aliases": [
+    "King Arthur _ The Knights of Justice (USA) (Game Genie)",
+    "King Arthur _ The Knights of Justice (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\King Arthur _ The Knights of Justice (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E0FC156",
+          "desc": "Infinite Attack Power",
+          "address": "0x7E0FC1"
+        },
+        {
+          "code": "7E107D55",
+          "desc": "Infinite Health Arthur (Always Character 1)",
+          "address": "0x7E107D"
+        },
+        {
+          "code": "7E107F55",
+          "desc": "Infinite Health Character 2",
+          "address": "0x7E107F"
+        },
+        {
+          "code": "7E108155",
+          "desc": "Infinite Health Character 3",
+          "address": "0x7E1081"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

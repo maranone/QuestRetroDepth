@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "winterolympicgames",
+  "display_name": "Winter Olympic Games (USA) (En,Fr,De,Es,It,Pt,Sv,No)",
+  "aliases": [
+    "Winter Olympic Games (USA) (En,Fr,De,Es,It,Pt,Sv,No)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Winter Olympic Games (USA) (En,Fr,De,Es,It,Pt,Sv,No).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFE65E:0009",
+          "desc": "Infinite Ammo (Biathlon)",
+          "address": "0xFFE65E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

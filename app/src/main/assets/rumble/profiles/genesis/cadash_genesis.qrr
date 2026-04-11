@@ -1,0 +1,5 @@
+game_name=Cadash (USA, Korea) (Action Replay)
+game_key=Cadash-Genesis
+system=genesis
+integration_tier=stable
+trigger	level_complete_level_ff0e4d	level_complete	0xFF0E4D	1	uint	native	prev != curr	0.65	1	left:0.800:400;right:0.800:400

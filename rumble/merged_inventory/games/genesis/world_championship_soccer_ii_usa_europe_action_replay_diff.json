@@ -1,0 +1,43 @@
+{
+  "system": "genesis",
+  "normalized_title": "worldchampionshipsoccerii",
+  "display_name": "World Championship Soccer II (USA, Europe) (Action Replay) (diff)",
+  "aliases": [
+    "World Championship Soccer II (USA, Europe) (Action Replay) (diff)",
+    "World Championship Soccer II (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\World Championship Soccer II (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFF01C:63",
+          "desc": "P1 Has 63 Points",
+          "address": "0xFFF01C"
+        },
+        {
+          "code": "FFF01D:63",
+          "desc": "P2 Has 63 Points",
+          "address": "0xFFF01D"
+        },
+        {
+          "code": "FFF01C:00",
+          "desc": "P1 Has No Points",
+          "address": "0xFFF01C"
+        },
+        {
+          "code": "FFF01D:00",
+          "desc": "P2 Has No Points",
+          "address": "0xFFF01D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

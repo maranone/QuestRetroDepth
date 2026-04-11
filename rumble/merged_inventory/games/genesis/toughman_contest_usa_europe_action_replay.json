@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "toughmancontest",
+  "display_name": "Toughman Contest (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Toughman Contest (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Toughman Contest (USA, Europe).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFF78A:0063",
+          "desc": "Infinite Health P1",
+          "address": "0xFFF78A"
+        },
+        {
+          "code": "FFFA5A:0044",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFFA5A"
+        },
+        {
+          "code": "FFFAC6:0000",
+          "desc": "No Health P2/CPU",
+          "address": "0xFFFAC6"
+        },
+        {
+          "code": "FFFBF4:0000",
+          "desc": "No Health P2/CPU",
+          "address": "0xFFFBF4"
+        },
+        {
+          "code": "FFFA59:0001",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFFA59"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

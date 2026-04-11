@@ -1,0 +1,126 @@
+{
+  "system": "snes",
+  "normalized_title": "dennismenace",
+  "display_name": "Dennis the Menace (USA) (Action Replay)",
+  "aliases": [
+    "Dennis The Menace (Rumbles)",
+    "Dennis the Menace (USA) (Action Replay)",
+    "Dennis the Menace (USA) (Game Genie)",
+    "Dennis the Menace (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\dennisthemenace_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0005",
+        "0x7E0042"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DennisTheMenace-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0042",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0005",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Dennis the Menace (USA).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "7E000B09",
+          "desc": "Freeze Time",
+          "address": "0x7E000B"
+        },
+        {
+          "code": "7E004409",
+          "desc": "99 Coins",
+          "address": "0x7E0044"
+        },
+        {
+          "code": "7E004509",
+          "desc": "99 Coins",
+          "address": "0x7E0045"
+        },
+        {
+          "code": "7E004605",
+          "desc": "Complete Level Now",
+          "address": "0x7E0046"
+        },
+        {
+          "code": "7E004E00",
+          "desc": "Level Modifier",
+          "address": "0x7E004E"
+        },
+        {
+          "code": "7E005407",
+          "desc": "Rise Into Air",
+          "address": "0x7E0054"
+        },
+        {
+          "code": "7E007051",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E0070"
+        },
+        {
+          "code": "7E01C001",
+          "desc": "Have Spitwads",
+          "address": "0x7E01C0"
+        },
+        {
+          "code": "7E01C201",
+          "desc": "Have Slingshot",
+          "address": "0x7E01C2"
+        },
+        {
+          "code": "7E01C800",
+          "desc": "The Woods Boss 1 Hit Kill",
+          "address": "0x7E01C8"
+        },
+        {
+          "code": "7E186000",
+          "desc": "Easy Bosses",
+          "address": "0x7E1860"
+        },
+        {
+          "code": "7E186A00",
+          "desc": "Bosses No Recovery Time",
+          "address": "0x7E186A"
+        },
+        {
+          "code": "7E00480F",
+          "desc": "Infinite Courage",
+          "address": "0x7E0048"
+        },
+        {
+          "code": "7E004209",
+          "desc": "Infinite Lives",
+          "address": "0x7E0042"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

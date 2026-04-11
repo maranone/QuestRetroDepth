@@ -1,0 +1,82 @@
+{
+  "system": "snes",
+  "normalized_title": "pagemaster",
+  "display_name": "Pagemaster, The (USA) (Beta)",
+  "aliases": [
+    "Pagemaster, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Pagemaster, The (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "7E025C99",
+          "desc": "Have Max/Inf Keys",
+          "address": "0x7E025C"
+        },
+        {
+          "code": "7E01E809",
+          "desc": "Max/Inf Lives",
+          "address": "0x7E01E8"
+        },
+        {
+          "code": "7E1A0F01",
+          "desc": "Inf Continue Time",
+          "address": "0x7E1A0F"
+        },
+        {
+          "code": "7E00D601",
+          "desc": "Open All Worlds And All Levels",
+          "address": "0x7E00D6"
+        },
+        {
+          "code": "7E01E000",
+          "desc": "Digit 1",
+          "address": "0x7E01E0"
+        },
+        {
+          "code": "7E01E100",
+          "desc": "Digit 2",
+          "address": "0x7E01E1"
+        },
+        {
+          "code": "7E01E200",
+          "desc": "Digit 3",
+          "address": "0x7E01E2"
+        },
+        {
+          "code": "7E01E300",
+          "desc": "Digit 4",
+          "address": "0x7E01E3"
+        },
+        {
+          "code": "7E01E400",
+          "desc": "Digit 5",
+          "address": "0x7E01E4"
+        },
+        {
+          "code": "7E01E500",
+          "desc": "Digit 6",
+          "address": "0x7E01E5"
+        },
+        {
+          "code": "7E0330FF",
+          "desc": "Invincibility After Hit",
+          "address": "0x7E0330"
+        },
+        {
+          "code": "7E01ECBE",
+          "desc": "Item and Invincibility modifier",
+          "address": "0x7E01EC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "system": "snes",
+  "normalized_title": "donkeykongcountrycompetitioncartridge",
+  "display_name": "Donkey Kong Country - Competition Cartridge (USA) (Action Replay)",
+  "aliases": [
+    "Donkey Kong Country - Competition Cartridge (USA) (Game Genie)",
+    "Donkey Kong Country - Competition Cartridge (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Donkey Kong Country - Competition Cartridge (USA).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E3402B0",
+          "desc": "Start With Lives Modifier",
+          "address": "0x7E3402"
+        },
+        {
+          "code": "7E340304",
+          "desc": "Start With Lives Modifier",
+          "address": "0x7E3403"
+        },
+        {
+          "code": "7E004702",
+          "desc": "Infinite Time",
+          "address": "0x7E0047"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

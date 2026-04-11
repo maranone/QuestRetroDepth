@@ -1,0 +1,77 @@
+{
+  "system": "genesis",
+  "normalized_title": "fightingmasters",
+  "display_name": "Fighting Masters (USA, Japan, Korea) (Action Replay)",
+  "aliases": [
+    "Fighting Masters (USA)",
+    "Fighting Masters (USA, Japan, Korea) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\fightingmasters_genesis.json",
+      "trigger_count": 2,
+      "field_names": [
+        "health"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFF0280"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FightingMasters-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF0280",
+          "type": "|u1"
+        },
+        {
+          "name": "matches_won",
+          "address": "0xFF00F1",
+          "type": "|u1"
+        },
+        {
+          "name": "opponent_health",
+          "address": "0xFF0380",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Fighting Masters (USA, Japan, Korea) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF0280:28",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF0280"
+        },
+        {
+          "code": "FF0380:00",
+          "desc": "Instant Win P1",
+          "address": "0xFF0380"
+        },
+        {
+          "code": "FF0380:28",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF0380"
+        },
+        {
+          "code": "FF0280:00",
+          "desc": "Instant Win P2",
+          "address": "0xFF0280"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

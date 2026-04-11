@@ -1,0 +1,67 @@
+{
+  "system": "snes",
+  "normalized_title": "superbasesloaded2",
+  "display_name": "Super Bases Loaded 2 (USA) (Action Replay)",
+  "aliases": [
+    "Super Bases Loaded 2 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Bases Loaded 2 (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 9,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E0B0B03",
+          "desc": "Always Strike Out",
+          "address": "0x7E0B0B"
+        },
+        {
+          "code": "7E0B1500",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x7E0B15"
+        },
+        {
+          "code": "7E0B0D00",
+          "desc": "Out Modifier",
+          "address": "0x7E0B0D"
+        },
+        {
+          "code": "7E0B0E00",
+          "desc": "Inning Modifier",
+          "address": "0x7E0B0E"
+        },
+        {
+          "code": "7E0B0D03",
+          "desc": "Intsant Win (Team 1)",
+          "address": "0x7E0B0D"
+        },
+        {
+          "code": "7E0B1599",
+          "desc": "Intsant Win (Team 1)",
+          "address": "0x7E0B15"
+        },
+        {
+          "code": "7E0B0E15",
+          "desc": "Intsant Win (Team 1)",
+          "address": "0x7E0B0E"
+        },
+        {
+          "code": "7E0B0B03",
+          "desc": "Outs Modifier",
+          "address": "0x7E0B0B"
+        },
+        {
+          "code": "7E0B1599",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x7E0B15"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

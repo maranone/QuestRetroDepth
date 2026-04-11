@@ -1,0 +1,5 @@
+game_name=MightyMorphinPowerRangersMovie
+game_key=MightyMorphinPowerRangersMovie-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_628	damage_taken	0x7E0628	1	uint	native	prev > curr	0.85	1	left:0.750:180

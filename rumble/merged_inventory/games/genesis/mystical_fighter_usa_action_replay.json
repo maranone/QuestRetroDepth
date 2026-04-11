@@ -1,0 +1,77 @@
+{
+  "system": "genesis",
+  "normalized_title": "mysticalfighter",
+  "display_name": "Mystical Fighter (USA) (Action Replay)",
+  "aliases": [
+    "Mystical Fighter (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mystical Fighter (USA).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FFE700:0060",
+          "desc": "Infinite Time",
+          "address": "0xFFE700"
+        },
+        {
+          "code": "FFE538:0064",
+          "desc": "Infinite Health P1",
+          "address": "0xFFE538"
+        },
+        {
+          "code": "FFE638:0064",
+          "desc": "Infinite Health P2",
+          "address": "0xFFE638"
+        },
+        {
+          "code": "FFE492:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFFE492"
+        },
+        {
+          "code": "FFE592:0009",
+          "desc": "Infinite Lives P2",
+          "address": "0xFFE592"
+        },
+        {
+          "code": "FFC0E8:0000",
+          "desc": "1-Hit Enemies",
+          "address": "0xFFC0E8"
+        },
+        {
+          "code": "FFC1E8:0000",
+          "desc": "1-Hit Enemies",
+          "address": "0xFFC1E8"
+        },
+        {
+          "code": "FFC2E8:0000",
+          "desc": "1-Hit Enemies",
+          "address": "0xFFC2E8"
+        },
+        {
+          "code": "FFC3E8:0000",
+          "desc": "1-Hit Enemies",
+          "address": "0xFFC3E8"
+        },
+        {
+          "code": "FFE50F:0010",
+          "desc": "Invincibility P1",
+          "address": "0xFFE50F"
+        },
+        {
+          "code": "FFE60F:0010",
+          "desc": "Invincibility P2",
+          "address": "0xFFE60F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

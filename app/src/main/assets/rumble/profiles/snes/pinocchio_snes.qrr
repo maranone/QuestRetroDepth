@@ -1,0 +1,5 @@
+game_name=Pinocchio
+game_key=Pinocchio-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_3d8	damage_taken	0x7E03D8	1	uint	native	prev > curr	0.85	1	left:0.750:180

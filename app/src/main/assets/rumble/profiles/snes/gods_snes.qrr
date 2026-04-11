@@ -1,0 +1,9 @@
+game_name=Gods (USA, Europe) (Action Replay)
+game_key=Gods-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_0153	damage_taken	0x7E0153	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0153	death	0x7E0153	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_01db	life_lost	0x7E01DB	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_01db	life_gained	0x7E01DB	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_03c7	score	0x7E03C7	4	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,8 @@
+game_name=ESPN Baseball Tonight (USA) (Action Replay)
+game_key=ESPNBaseballTonight-Genesis
+system=genesis
+integration_tier=stable
+trigger	score_score_hits_ff40fb	score	0xFF40FB	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_opponent_hits_ff40fd	score	0xFF40FD	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_opponent_runs_ff0061	score	0xFF0061	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_runs_ff005f	score	0xFF005F	1	uint	native	prev < curr	0.8	1	right:0.350:60

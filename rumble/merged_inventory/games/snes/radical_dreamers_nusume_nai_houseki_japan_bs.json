@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "radicaldreamersnusumenaihouseki",
+  "display_name": "Radical Dreamers - Nusume Nai Houseki (Japan) (BS)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Radical Dreamers - Nusume Nai Houseki (Japan) (BS).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E090178",
+          "desc": "Infinite HP For Serge",
+          "address": "0x7E0901"
+        },
+        {
+          "code": "7E0940FF",
+          "desc": "Have All Endings Complete, Bonuses Found",
+          "address": "0x7E0940"
+        },
+        {
+          "code": "7E094120",
+          "desc": "Have All Endings Complete, Bonuses Found",
+          "address": "0x7E0941"
+        },
+        {
+          "code": "7E0902FF",
+          "desc": "Kid-Serge Affection Maximum",
+          "address": "0x7E0902"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

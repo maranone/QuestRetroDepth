@@ -1,0 +1,45 @@
+{
+  "system": "snes",
+  "normalized_title": "undercovercops",
+  "display_name": "Undercover Cops (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Undercover Cops (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E0C36E8",
+          "desc": "Infinite Energy",
+          "address": "0x7E0C36"
+        },
+        {
+          "code": "7E0D36E8",
+          "desc": "Infinite Energy",
+          "address": "0x7E0D36"
+        },
+        {
+          "code": "7E01100A",
+          "desc": "Infinite Lives",
+          "address": "0x7E0110"
+        },
+        {
+          "code": "7E016C64",
+          "desc": "Infinite Time",
+          "address": "0x7E016C"
+        },
+        {
+          "code": "7E011209",
+          "desc": "Infinite Continues",
+          "address": "0x7E0112"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

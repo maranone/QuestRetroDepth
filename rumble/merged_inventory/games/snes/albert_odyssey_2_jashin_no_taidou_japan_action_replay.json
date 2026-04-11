@@ -1,0 +1,52 @@
+{
+  "system": "snes",
+  "normalized_title": "albertodyssey2jashinnotaidou",
+  "display_name": "Albert Odyssey 2 - Jashin no Taidou (Japan) (Action Replay)",
+  "aliases": [
+    "Albert Odyssey 2 - Jashin no Taidou (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Albert Odyssey 2 - Jashin no Taidou (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E27A8E7",
+          "desc": "Infinite HP Character 1",
+          "address": "0x7E27A8"
+        },
+        {
+          "code": "7E27A903",
+          "desc": "Infinite HP Character 1",
+          "address": "0x7E27A9"
+        },
+        {
+          "code": "7E27BA63",
+          "desc": "Infinite MP Character 2",
+          "address": "0x7E27BA"
+        },
+        {
+          "code": "7E27E8E7",
+          "desc": "Infinite HP Character 2",
+          "address": "0x7E27E8"
+        },
+        {
+          "code": "7E27E903",
+          "desc": "Infinite HP Character 2",
+          "address": "0x7E27E9"
+        },
+        {
+          "code": "7E27FA63",
+          "desc": "Infinite MP Character 2",
+          "address": "0x7E27FA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "pacattack",
+  "display_name": "Pac-Attack (USA) (Action Replay)",
+  "aliases": [
+    "Pac-Attack (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Pac-Attack (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF4160:0000",
+          "desc": "Score Modifiers P1",
+          "address": "0xFF4160"
+        },
+        {
+          "code": "FF4162:0000",
+          "desc": "Score Modifiers P1",
+          "address": "0xFF4162"
+        },
+        {
+          "code": "FF4162:0000",
+          "desc": "Score Modifiers P1",
+          "address": "0xFF4162"
+        },
+        {
+          "code": "FF41E6:0009",
+          "desc": "Infinite Rests P1 (Puzzle Mode)",
+          "address": "0xFF41E6"
+        },
+        {
+          "code": "FF4166:0000",
+          "desc": "P1 Block Speed Modifier",
+          "address": "0xFF4166"
+        },
+        {
+          "code": "FF41DE:0000",
+          "desc": "P1 Yellow Bar Modifier (Puzzle Mode)",
+          "address": "0xFF41DE"
+        },
+        {
+          "code": "FF4284:0000",
+          "desc": "P2 Block Scroll Speed Modifier",
+          "address": "0xFF4284"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

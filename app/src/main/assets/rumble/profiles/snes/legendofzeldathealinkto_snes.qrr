@@ -1,0 +1,6 @@
+game_name=LegendOfZeldaTheALinkTo
+game_key=LegendOfZeldaTheALinkTo-Snes
+system=snes
+integration_tier=manual
+trigger	death_1_cfb	death	0x7E0CFB	1	uint	native	prev > 0 && curr == 0	0.85	1	left:1.000:500;right:1.000:500
+trigger	damage_taken_2_f36d	damage_taken	0x7EF36D	1	uint	native	prev > curr	0.85	1	left:0.750:180

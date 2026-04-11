@@ -1,0 +1,11 @@
+# schema=qrd_rumble_csv_v1
+# game_name=SonicAndKnuckles3
+# match_names=sonicandknuckles3|sonicandknuckles3genesis
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+level_complete_act_fffe11,0xFFFE11,1,uint,changed,,both,0.800,normal,0,400,75,60,
+level_complete_level_end_bonus_fffaa8,0xFFFAA8,1,uint,changed,,both,0.800,normal,0,400,75,60,
+life_lost_lives_fffe12,0xFFFE12,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
+life_gained_lives_fffe12,0xFFFE12,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,
+pickup_rings_fffe20,0xFFFE20,2,uint,changed,,right,0.250,normal,0,18,35,20,
+score_score_fffe26,0xFFFE26,4,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+level_complete_zone_fffe10,0xFFFE10,1,uint,changed,,both,0.800,normal,0,400,75,60,

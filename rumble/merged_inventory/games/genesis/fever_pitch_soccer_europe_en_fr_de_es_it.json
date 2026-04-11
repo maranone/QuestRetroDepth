@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "feverpitchsoccer",
+  "display_name": "Fever Pitch Soccer (Europe) (En,Fr,De,Es,It)",
+  "aliases": [
+    "Fever Pitch Soccer (Europe) (En,Fr,De,Es,It)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Fever Pitch Soccer (Europe) (En,Fr,De,Es,It).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFDEC8:0000",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFDEC8"
+        },
+        {
+          "code": "FFDF10:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFDF10"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

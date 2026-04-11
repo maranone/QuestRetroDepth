@@ -1,0 +1,33 @@
+{
+  "system": "snes",
+  "normalized_title": "xzone",
+  "display_name": "X Zone (World) (Action Replay)",
+  "aliases": [
+    "X Zone (World) (Action Replay)",
+    "X-Zone"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\X Zone (World) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "7E10051E",
+          "desc": "Infinite Energy",
+          "address": "0x7E1005"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 1,
+      "mk3_label": "X ZONE"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

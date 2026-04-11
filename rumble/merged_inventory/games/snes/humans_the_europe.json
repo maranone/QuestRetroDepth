@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "humans",
+  "display_name": "Humans, The (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Humans, The (Europe).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E012277",
+          "desc": "Freeze Timer",
+          "address": "0x7E0122"
+        },
+        {
+          "code": "7E010B63",
+          "desc": "99 Humans",
+          "address": "0x7E010B"
+        },
+        {
+          "code": "7E010900",
+          "desc": "Level Modifier",
+          "address": "0x7E0109"
+        },
+        {
+          "code": "7E0294DF",
+          "desc": "Start on Level",
+          "address": "0x7E0294"
+        },
+        {
+          "code": "7E0295DF",
+          "desc": "Start on Level",
+          "address": "0x7E0295"
+        },
+        {
+          "code": "7E0296DF",
+          "desc": "Start on Level",
+          "address": "0x7E0296"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "sockscatrockshill",
+  "display_name": "Socks the Cat Rocks the Hill (World) (Unl)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Socks the Cat Rocks the Hill (World) (Unl).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E1B2E30",
+          "desc": "Invincibility",
+          "address": "0x7E1B2E"
+        },
+        {
+          "code": "7E183A09",
+          "desc": "Infinite Health/Lives",
+          "address": "0x7E183A"
+        },
+        {
+          "code": "7E183609",
+          "desc": "Infinite Credits",
+          "address": "0x7E1836"
+        },
+        {
+          "code": "7E184659",
+          "desc": "Infinite Time",
+          "address": "0x7E1846"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

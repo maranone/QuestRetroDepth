@@ -1,0 +1,735 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Super Street Fighter II (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Super Street Fighter II (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_066e",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x066E",
+          "wram_offset": 1646,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect damage handling",
+      "source_cheats": [
+        {
+          "code": "7E066E01",
+          "desc": "Get Dizzy From Every Knockdown (Player 1)"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_08ae",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x08AE",
+          "wram_offset": 2222,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect damage handling",
+      "source_cheats": [
+        {
+          "code": "7E08AE01",
+          "desc": "Get Dizzy From Every Knockdown (Player 2)"
+        }
+      ]
+    },
+    {
+      "id": "death_058d",
+      "event": "death",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x058D",
+          "wram_offset": 1421,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect death handling",
+      "source_cheats": [
+        {
+          "code": "7E058D1E",
+          "desc": "Once Dizzy, Always Dizzy (Player 1)"
+        }
+      ]
+    },
+    {
+      "id": "death_07cd",
+      "event": "death",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x07CD",
+          "wram_offset": 1997,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect death handling",
+      "source_cheats": [
+        {
+          "code": "7E07CD1E",
+          "desc": "Once Dizzy, Always Dizzy (Player 2)"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_0638",
+      "event": "life_lost",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0638",
+          "wram_offset": 1592,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect life handling",
+      "source_cheats": [
+        {
+          "code": "7E063816",
+          "desc": "P1 Can't Be Hit (Can Still Be Grabbed)"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_0878",
+      "event": "life_lost",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0878",
+          "wram_offset": 2168,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect life handling",
+      "source_cheats": [
+        {
+          "code": "7E087816",
+          "desc": "P2 Can't Be Hit (Can Still Be Grabbed)"
+        }
+      ]
+    },
+    {
+      "id": "powerup_lost_077a",
+      "event": "powerup_lost",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x077A",
+          "wram_offset": 1914,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.65,
+          "duration_ms": 160
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.65,
+          "duration_ms": 160
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E077A00",
+          "desc": "P1 Throws Disabled"
+        }
+      ]
+    },
+    {
+      "id": "powerup_lost_077b",
+      "event": "powerup_lost",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x077B",
+          "wram_offset": 1915,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.65,
+          "duration_ms": 160
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.65,
+          "duration_ms": 160
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E077B00",
+          "desc": "P1 Throws Disabled"
+        }
+      ]
+    },
+    {
+      "id": "powerup_lost_077c",
+      "event": "powerup_lost",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x077C",
+          "wram_offset": 1916,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.65,
+          "duration_ms": 160
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.65,
+          "duration_ms": 160
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E077C00",
+          "desc": "P1 Throws Disabled"
+        }
+      ]
+    },
+    {
+      "id": "powerup_lost_053a",
+      "event": "powerup_lost",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x053A",
+          "wram_offset": 1338,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.65,
+          "duration_ms": 160
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.65,
+          "duration_ms": 160
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E053A00",
+          "desc": "P2 Throws Disabled"
+        }
+      ]
+    },
+    {
+      "id": "powerup_lost_053b",
+      "event": "powerup_lost",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x053B",
+          "wram_offset": 1339,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.65,
+          "duration_ms": 160
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.65,
+          "duration_ms": 160
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E053B00",
+          "desc": "P2 Throws Disabled"
+        }
+      ]
+    },
+    {
+      "id": "powerup_lost_053c",
+      "event": "powerup_lost",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x053C",
+          "wram_offset": 1340,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.65,
+          "duration_ms": 160
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.65,
+          "duration_ms": 160
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E053C00",
+          "desc": "P2 Throws Disabled"
+        }
+      ]
+    },
+    {
+      "id": "powerup_gained_0517",
+      "event": "powerup_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0517",
+          "wram_offset": 1303,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.6,
+          "duration_ms": 120
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E051701",
+          "desc": "Hyper Mode P1"
+        }
+      ]
+    },
+    {
+      "id": "powerup_gained_0757",
+      "event": "powerup_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0757",
+          "wram_offset": 1879,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.6,
+          "duration_ms": 120
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E075701",
+          "desc": "Hyper Mode P2"
+        }
+      ]
+    },
+    {
+      "id": "powerup_gained_05d3",
+      "event": "powerup_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x05D3",
+          "wram_offset": 1491,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.6,
+          "duration_ms": 120
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E05D3FF",
+          "desc": "P1 Easier Specials (Motion Move)"
+        }
+      ]
+    },
+    {
+      "id": "powerup_gained_0813",
+      "event": "powerup_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0813",
+          "wram_offset": 2067,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.6,
+          "duration_ms": 120
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E0813FF",
+          "desc": "P2 Easier Specials (Motion Move)"
+        }
+      ]
+    },
+    {
+      "id": "powerup_gained_058c",
+      "event": "powerup_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x058C",
+          "wram_offset": 1420,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.6,
+          "duration_ms": 120
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E058C01",
+          "desc": "P1 Can Wall Jump In Mid-Air"
+        }
+      ]
+    },
+    {
+      "id": "powerup_gained_077c",
+      "event": "powerup_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x077C",
+          "wram_offset": 1916,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.6,
+          "duration_ms": 120
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E077C01",
+          "desc": "P2 Can Wall Jump In Mid-Air"
+        }
+      ]
+    },
+    {
+      "id": "powerup_gained_078a",
+      "event": "powerup_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x078A",
+          "wram_offset": 1930,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.6,
+          "duration_ms": 120
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E078A14",
+          "desc": "All P1 Projectiles Are Normal"
+        }
+      ]
+    },
+    {
+      "id": "powerup_gained_078c",
+      "event": "powerup_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x078C",
+          "wram_offset": 1932,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.6,
+          "duration_ms": 120
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E078C14",
+          "desc": "All P1 Projectiles Are Normal"
+        }
+      ]
+    },
+    {
+      "id": "powerup_gained_054a",
+      "event": "powerup_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x054A",
+          "wram_offset": 1354,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.6,
+          "duration_ms": 120
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E054A14",
+          "desc": "All P2 Projectiles Are Normal"
+        }
+      ]
+    },
+    {
+      "id": "powerup_gained_054c",
+      "event": "powerup_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x054C",
+          "wram_offset": 1356,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.6,
+          "duration_ms": 120
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "cheat may affect powerup handling",
+      "source_cheats": [
+        {
+          "code": "7E054C14",
+          "desc": "All P2 Projectiles Are Normal"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "code": "7E05C6??",
+      "desc": "Continues Modifier At Sound Test (Used At Continue Screen)",
+      "kind": "unsupported"
+    },
+    {
+      "code": "7E18BBXX",
+      "desc": "Background Modifier",
+      "kind": "unsupported"
+    }
+  ]
+}

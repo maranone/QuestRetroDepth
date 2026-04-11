@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "junction",
+  "display_name": "Junction (Japan, USA) (Action Replay)",
+  "aliases": [
+    "Junction (Japan, USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Junction (Japan, USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFCCA7:0019",
+          "desc": "25 Balls Or Infinite Balls On Reset",
+          "address": "0xFFCCA7"
+        },
+        {
+          "code": "FFCCA7:001F",
+          "desc": "Infinite Stock (Balls)",
+          "address": "0xFFCCA7"
+        },
+        {
+          "code": "FFCCA5:003C",
+          "desc": "Infinite Slow Down",
+          "address": "0xFFCCA5"
+        },
+        {
+          "code": "FFCCA2:01C2",
+          "desc": "Infinite Time",
+          "address": "0xFFCCA2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

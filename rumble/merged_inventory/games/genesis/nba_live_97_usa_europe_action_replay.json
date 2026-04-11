@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "nbalive97",
+  "display_name": "NBA Live 97 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "NBA Live 97 (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NBA Live 97 (USA, Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFF986:0000",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFFF986"
+        },
+        {
+          "code": "FFF8EE:0000",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFFF8EE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

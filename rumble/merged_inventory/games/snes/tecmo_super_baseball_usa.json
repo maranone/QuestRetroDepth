@@ -1,0 +1,45 @@
+{
+  "system": "snes",
+  "normalized_title": "tecmosuperbaseball",
+  "display_name": "Tecmo Super Baseball (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Tecmo Super Baseball (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E06CB00",
+          "desc": "Ball Modifier",
+          "address": "0x7E06CB"
+        },
+        {
+          "code": "7E06CD00",
+          "desc": "Strike Modifier",
+          "address": "0x7E06CD"
+        },
+        {
+          "code": "7E06C900",
+          "desc": "Out Modifier",
+          "address": "0x7E06C9"
+        },
+        {
+          "code": "7E0BF300",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x7E0BF3"
+        },
+        {
+          "code": "7E0BF100",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x7E0BF1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "system": "snes",
+  "normalized_title": "area88",
+  "display_name": "Area 88 (Japan) (Action Replay)",
+  "aliases": [
+    "Area 88 (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Area 88 (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 16,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "7E00F404",
+          "desc": "Inf. Lives",
+          "address": "0x7E00F4"
+        },
+        {
+          "code": "7E103328",
+          "desc": "Invincible",
+          "address": "0x7E1033"
+        },
+        {
+          "code": "7E00D7FF",
+          "desc": "Big Money",
+          "address": "0x7E00D7"
+        },
+        {
+          "code": "7E00D607",
+          "desc": "Max Level, Any Plane",
+          "address": "0x7E00D6"
+        },
+        {
+          "code": "7E00DF1E",
+          "desc": "Falcon",
+          "address": "0x7E00DF"
+        },
+        {
+          "code": "7E00E01E",
+          "desc": "Bullpup",
+          "address": "0x7E00E0"
+        },
+        {
+          "code": "7E00E11E",
+          "desc": "Shell",
+          "address": "0x7E00E1"
+        },
+        {
+          "code": "7E00E21E",
+          "desc": "T. Laser",
+          "address": "0x7E00E2"
+        },
+        {
+          "code": "7E00E332",
+          "desc": "Bomb",
+          "address": "0x7E00E3"
+        },
+        {
+          "code": "7E00E41E",
+          "desc": "Napalm",
+          "address": "0x7E00E4"
+        },
+        {
+          "code": "7E00E51E",
+          "desc": "Gunpod",
+          "address": "0x7E00E5"
+        },
+        {
+          "code": "7E00F40A",
+          "desc": "Infinite Lives",
+          "address": "0x7E00F4"
+        },
+        {
+          "code": "7E00D799",
+          "desc": "Infinite Money",
+          "address": "0x7E00D7"
+        },
+        {
+          "code": "7E00D899",
+          "desc": "Infinite Money",
+          "address": "0x7E00D8"
+        },
+        {
+          "code": "7E00DA00",
+          "desc": "Score Modifier",
+          "address": "0x7E00DA"
+        },
+        {
+          "code": "7E00DB00",
+          "desc": "Score Modifier",
+          "address": "0x7E00DB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

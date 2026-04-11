@@ -1,0 +1,60 @@
+{
+  "system": "snes",
+  "normalized_title": "streetfighterzero2",
+  "display_name": "Street Fighter Zero 2 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Street Fighter Zero 2 (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E073E90",
+          "desc": "P1 Infinite Health",
+          "address": "0x7E073E"
+        },
+        {
+          "code": "7E074090",
+          "desc": "P1 Infinite Health",
+          "address": "0x7E0740"
+        },
+        {
+          "code": "7E09BE00",
+          "desc": "P2 No Health",
+          "address": "0x7E09BE"
+        },
+        {
+          "code": "7E09C000",
+          "desc": "P2 No Health",
+          "address": "0x7E09C0"
+        },
+        {
+          "code": "7E07BE90",
+          "desc": "P1 Max Super",
+          "address": "0x7E07BE"
+        },
+        {
+          "code": "7E0A3E00",
+          "desc": "P2 No Super",
+          "address": "0x7E0A3E"
+        },
+        {
+          "code": "7E1B7D99",
+          "desc": "Infinite Time",
+          "address": "0x7E1B7D"
+        },
+        {
+          "code": "7E1C2700",
+          "desc": "Character Modifier  Player 1",
+          "address": "0x7E1C27"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

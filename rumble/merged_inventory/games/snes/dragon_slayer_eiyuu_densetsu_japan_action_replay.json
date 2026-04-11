@@ -1,0 +1,72 @@
+{
+  "system": "snes",
+  "normalized_title": "dragonslayereiyuudensetsu",
+  "display_name": "Dragon Slayer - Eiyuu Densetsu (Japan) (Action Replay)",
+  "aliases": [
+    "Dragon Slayer - Eiyuu Densetsu (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Dragon Slayer - Eiyuu Densetsu (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "7E13CD0F",
+          "desc": "Infinite HP",
+          "address": "0x7E13CD"
+        },
+        {
+          "code": "7E13CE27",
+          "desc": "Infinite HP",
+          "address": "0x7E13CE"
+        },
+        {
+          "code": "7E13CF0F",
+          "desc": "Max HP",
+          "address": "0x7E13CF"
+        },
+        {
+          "code": "7E13D027",
+          "desc": "Max HP",
+          "address": "0x7E13D0"
+        },
+        {
+          "code": "7E13D10F",
+          "desc": "Infinite MP",
+          "address": "0x7E13D1"
+        },
+        {
+          "code": "7E13D227",
+          "desc": "Infinite MP",
+          "address": "0x7E13D2"
+        },
+        {
+          "code": "7E13D30F",
+          "desc": "Max MP",
+          "address": "0x7E13D3"
+        },
+        {
+          "code": "7E13D427",
+          "desc": "Max MP",
+          "address": "0x7E13D4"
+        },
+        {
+          "code": "7E13D5E8",
+          "desc": "65,000 Experience",
+          "address": "0x7E13D5"
+        },
+        {
+          "code": "7E13D6FD",
+          "desc": "65,000 Experience",
+          "address": "0x7E13D6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

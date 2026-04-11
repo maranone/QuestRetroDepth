@@ -1,0 +1,83 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "PowerMoves",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Power Moves (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "PowerMoves-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_0_848",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E0848",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0848",
+          "bank": "7E",
+          "wram_offset": 2120
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss (player 1)",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_player_1",
+          "address": "0x7E0848",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_1_849",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E0849",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0849",
+          "bank": "7E",
+          "wram_offset": 2121
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss (player 2)",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_player_2",
+          "address": "0x7E0849",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

@@ -1,0 +1,117 @@
+{
+  "system": "genesis",
+  "normalized_title": "micromachines2turbotournament",
+  "display_name": "Micro Machines 2 - Turbo Tournament (Europe) (Action Replay)",
+  "aliases": [
+    "Micro Machines 2 - Turbo Tournament (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Micro Machines 2 - Turbo Tournament (Europe).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 19,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "FFF331:00FF",
+          "desc": "Infinite Lives",
+          "address": "0xFFF331"
+        },
+        {
+          "code": "FFE05E:0001",
+          "desc": "Stop Timer",
+          "address": "0xFFE05E"
+        },
+        {
+          "code": "FFD965:0000",
+          "desc": "Auto Win As Soon As Race Starts",
+          "address": "0xFFD965"
+        },
+        {
+          "code": "FFE151:001E",
+          "desc": "Auto Win Bonus Round",
+          "address": "0xFFE151"
+        },
+        {
+          "code": "FFD849:0001",
+          "desc": "Stupid Opponents: Yellow Car",
+          "address": "0xFFD849"
+        },
+        {
+          "code": "FFD859:0001",
+          "desc": "Stupid Opponents: Blue Car",
+          "address": "0xFFD859"
+        },
+        {
+          "code": "FFD839:0003",
+          "desc": "Stupid Opponents: Green Car",
+          "address": "0xFFD839"
+        },
+        {
+          "code": "FFD880:0000",
+          "desc": "Freeze Cpu Cars [Challenge]",
+          "address": "0xFFD880"
+        },
+        {
+          "code": "FFD87E:0000",
+          "desc": "Freeze Cpu Cars [Challenge]",
+          "address": "0xFFD87E"
+        },
+        {
+          "code": "FFD87C:0000",
+          "desc": "Freeze Cpu Cars [Challenge]",
+          "address": "0xFFD87C"
+        },
+        {
+          "code": "FFF331:0008",
+          "desc": "Infinite Lives",
+          "address": "0xFFF331"
+        },
+        {
+          "code": "FFD965:0000",
+          "desc": "Auto Win Race - Challenge Race and Super League",
+          "address": "0xFFD965"
+        },
+        {
+          "code": "FFD965:0003",
+          "desc": "P1 Always on 1st Lap",
+          "address": "0xFFD965"
+        },
+        {
+          "code": "FFD967:0003",
+          "desc": "P2 Always on 1st Lap",
+          "address": "0xFFD967"
+        },
+        {
+          "code": "FFD969:0003",
+          "desc": "P3 Always on 1st Lap",
+          "address": "0xFFD969"
+        },
+        {
+          "code": "FFD96B:0003",
+          "desc": "P4 Always on 1st Lap",
+          "address": "0xFFD96B"
+        },
+        {
+          "code": "FFE061:0000",
+          "desc": "Freeze Timer",
+          "address": "0xFFE061"
+        },
+        {
+          "code": "FFE151:001E",
+          "desc": "Auto Win Extra Life Game",
+          "address": "0xFFE151"
+        },
+        {
+          "code": "FFE13D:0000",
+          "desc": "Race Modifier - Challenge Race and 1P Head-to-Head Race",
+          "address": "0xFFE13D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

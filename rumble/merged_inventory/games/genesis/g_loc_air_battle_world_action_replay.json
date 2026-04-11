@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "glocairbattle",
+  "display_name": "G-LOC Air Battle (World) (Action Replay)",
+  "aliases": [
+    "G-LOC Air Battle (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\G-LOC Air Battle (World) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF4A48:19",
+          "desc": "Infinite Missiles",
+          "address": "0xFF4A48"
+        },
+        {
+          "code": "FF45A2:99",
+          "desc": "Infinite Time",
+          "address": "0xFF45A2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

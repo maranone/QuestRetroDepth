@@ -1,0 +1,43 @@
+{
+  "system": "snes",
+  "normalized_title": "superbattletank2",
+  "display_name": "Super Battletank 2 (World) (Action Replay)",
+  "aliases": [
+    "Super Battletank 2 (USA)",
+    "Super Battletank 2 (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Battletank 2 (World) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E00AD00",
+          "desc": "Infinite Hits",
+          "address": "0x7E00AD"
+        },
+        {
+          "code": "7E10E363",
+          "desc": "Infinite 120 mm Bullets",
+          "address": "0x7E10E3"
+        },
+        {
+          "code": "7E10E763",
+          "desc": "Infinite 7.62 mm Bullets",
+          "address": "0x7E10E7"
+        },
+        {
+          "code": "7E10E809",
+          "desc": "Infinite Phalanx",
+          "address": "0x7E10E8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

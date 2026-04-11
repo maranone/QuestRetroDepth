@@ -1,0 +1,9 @@
+game_name=Thunder Fox (USA, Japan) (Action Replay)
+game_key=ThunderFox-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ffb00d	damage_taken	0xFFB00D	1	bcd	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffb00d	death	0xFFB00D	1	bcd	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ffb00b	life_lost	0xFFB00B	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffb00b	life_gained	0xFFB00B	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ffa000	score	0xFFA000	4	bcd	big	prev < curr	0.8	1	right:0.350:60

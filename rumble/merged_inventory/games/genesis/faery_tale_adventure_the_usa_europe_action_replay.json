@@ -1,0 +1,83 @@
+{
+  "system": "genesis",
+  "normalized_title": "faerytaleadventure",
+  "display_name": "Faery Tale Adventure, The (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Faery Tale Adventure, The (USA, Europe) (Action Replay)",
+    "Faery Tale Adventure, The (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\faerytaleadventure_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FaeryTaleAdventure-Genesis-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "bravery",
+          "address": "0xFFF1BF",
+          "type": "|u1"
+        },
+        {
+          "name": "kindness",
+          "address": "0xFFF1C3",
+          "type": "|u1"
+        },
+        {
+          "name": "luck",
+          "address": "0xFFF1C1",
+          "type": "|i1"
+        },
+        {
+          "name": "vitality",
+          "address": "0xFFA58F",
+          "type": "|u1"
+        },
+        {
+          "name": "wealth",
+          "address": "0xFFF1C4",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Faery Tale Adventure, The (USA, Europe).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFA58E:00FF",
+          "desc": "Vitality Always 255",
+          "address": "0xFFA58E"
+        },
+        {
+          "code": "FFF1BE:00FF",
+          "desc": "Bravery (?) Always 255",
+          "address": "0xFFF1BE"
+        },
+        {
+          "code": "FFF1C0:00FF",
+          "desc": "&quot;L&quot; Always 55",
+          "address": "0xFFF1C0"
+        },
+        {
+          "code": "FFF1C2:00FF",
+          "desc": "&quot;K&quot; Always 55",
+          "address": "0xFFF1C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

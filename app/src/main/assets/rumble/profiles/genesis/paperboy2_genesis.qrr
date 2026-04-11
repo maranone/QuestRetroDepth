@@ -1,0 +1,13 @@
+game_name=Paperboy 2 (USA, Europe) (Action Replay)
+game_key=Paperboy2-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ff59d9	life_lost	0xFF59D9	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff59d9	life_gained	0xFF59D9	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_ff5a3d	score	0xFF5A3D	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_ff5a3b	score	0xFF5A3B	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_ff5a39	score	0xFF5A39	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score3_ff5a37	score	0xFF5A37	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score4_ff5a35	score	0xFF5A35	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score5_ff5a33	score	0xFF5A33	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score6_ff5a31	score	0xFF5A31	1	nibble	native	prev < curr	0.8	1	right:0.350:60

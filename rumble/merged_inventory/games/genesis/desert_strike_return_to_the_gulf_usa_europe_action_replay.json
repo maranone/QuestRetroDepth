@@ -1,0 +1,184 @@
+{
+  "system": "genesis",
+  "normalized_title": "desertstrikereturntogulf",
+  "display_name": "Desert Strike - Return to the Gulf (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Desert Strike - Return to the Gulf (USA, Europe) (Action Replay)",
+    "Desert Strike - Return to the Gulf (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\desertstrikereturntothegulf_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF10B7",
+        "0xFF10B8"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DesertStrikeReturnToTheGulf-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "armor",
+          "address": "0xFF10AC",
+          "type": ">u4"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF10B7",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF10B8",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Desert Strike - Return to the Gulf (USA, Europe).cht",
+      "total_cheat_rows": 81,
+      "raw_entry_count": 26,
+      "distinct_address_count": 25,
+      "sample_raw_entries": [
+        {
+          "code": "FFACDD:0058",
+          "desc": "Infinite Health [Air Superiority]",
+          "address": "0xFFACDD"
+        },
+        {
+          "code": "FFAE15:0058",
+          "desc": "Infinite Health [Scud Buster]",
+          "address": "0xFFAE15"
+        },
+        {
+          "code": "FFB925:0058",
+          "desc": "Infinite Health [Embassy City]",
+          "address": "0xFFB925"
+        },
+        {
+          "code": "FFB61D:0058",
+          "desc": "Infinite Health [Nuclear Storm]",
+          "address": "0xFFB61D"
+        },
+        {
+          "code": "FF10B3:0000",
+          "desc": "Infinite Passenger Load",
+          "address": "0xFF10B3"
+        },
+        {
+          "code": "FF10B7:0063",
+          "desc": "Infinite Lives",
+          "address": "0xFF10B7"
+        },
+        {
+          "code": "FF10AA:270F",
+          "desc": "Infinite Fuel",
+          "address": "0xFF10AA"
+        },
+        {
+          "code": "FF10B3:0000",
+          "desc": "Infinite Load",
+          "address": "0xFF10B3"
+        },
+        {
+          "code": "FFACDC:270F",
+          "desc": "Campaign 1 - Infinite Armor",
+          "address": "0xFFACDC"
+        },
+        {
+          "code": "FFAE9C:270F",
+          "desc": "Campaign 1 - Infinite Guns",
+          "address": "0xFFAE9C"
+        },
+        {
+          "code": "FFAEDD:0063",
+          "desc": "Campaign 1 - Infinite Hydras",
+          "address": "0xFFAEDD"
+        },
+        {
+          "code": "FFAF1D:0009",
+          "desc": "Campaign 1 - Infinite Hellfires",
+          "address": "0xFFAF1D"
+        },
+        {
+          "code": "FFAE14:270F",
+          "desc": "Campaign 2 - Infinite Armor",
+          "address": "0xFFAE14"
+        },
+        {
+          "code": "FFAFD4:270F",
+          "desc": "Campaign 2 - Infinite Guns",
+          "address": "0xFFAFD4"
+        },
+        {
+          "code": "FFB015:0063",
+          "desc": "Campaign 2 - Infinite Hydras",
+          "address": "0xFFB015"
+        },
+        {
+          "code": "FFB055:0009",
+          "desc": "Campaign 2 - Infinite Hellfires",
+          "address": "0xFFB055"
+        },
+        {
+          "code": "FFB924:270F",
+          "desc": "Campaign 3 - Infinite Armor",
+          "address": "0xFFB924"
+        },
+        {
+          "code": "FFBAE4:270F",
+          "desc": "Campaign 3 - Infinite Guns",
+          "address": "0xFFBAE4"
+        },
+        {
+          "code": "FFBB25:0063",
+          "desc": "Campaign 3 - Infinite Hydras",
+          "address": "0xFFBB25"
+        },
+        {
+          "code": "FFBB65:0009",
+          "desc": "Campaign 3 - Infinite Hellfires",
+          "address": "0xFFBB65"
+        },
+        {
+          "code": "FFB61C:270F",
+          "desc": "Campaign 4 - Infinite Armor",
+          "address": "0xFFB61C"
+        },
+        {
+          "code": "FFB7DC:270F",
+          "desc": "Campaign 4 - Infinite Guns",
+          "address": "0xFFB7DC"
+        },
+        {
+          "code": "FFB81D:0063",
+          "desc": "Campaign 4 - Infinite Hydras",
+          "address": "0xFFB81D"
+        },
+        {
+          "code": "FFB85D:0009",
+          "desc": "Campaign 4 - Infinite Hellfires",
+          "address": "0xFFB85D"
+        },
+        {
+          "code": "FF107E:0000",
+          "desc": "Copilot Select",
+          "address": "0xFF107E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

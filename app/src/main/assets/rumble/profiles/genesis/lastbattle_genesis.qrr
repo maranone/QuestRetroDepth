@@ -1,0 +1,7 @@
+game_name=Last Battle (USA, Europe) (Action Replay)
+game_key=LastBattle-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_fffe0d	damage_taken	0xFFFE0D	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_fffe0d	death	0xFFFE0D	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_fffe09	score	0xFFFE09	3	bcd	big	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "addamsfamilyvalues",
+  "display_name": "Addams Family Values (Europe) (Action Replay)",
+  "aliases": [
+    "Addams Family Values (Europe) (En,Fr,De)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Addams Family Values (Europe) (En,Fr,De).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF571C:0006",
+          "desc": "Infinite Energy",
+          "address": "0xFF571C"
+        },
+        {
+          "code": "FF0B74:1802",
+          "desc": "Invincibility",
+          "address": "0xFF0B74"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

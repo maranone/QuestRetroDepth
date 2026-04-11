@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "aladdinii",
+  "display_name": "Aladdin II (Unknown) (Action Replay)",
+  "aliases": [
+    "Aladdin II"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Aladdin II.cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF0770:000A",
+          "desc": "Infinite Health",
+          "address": "0xFF0770"
+        },
+        {
+          "code": "FF0764:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF0764"
+        },
+        {
+          "code": "FF0768:0063",
+          "desc": "Infinite Apples",
+          "address": "0xFF0768"
+        },
+        {
+          "code": "FF076C:0063",
+          "desc": "Infinite Gems",
+          "address": "0xFF076C"
+        },
+        {
+          "code": "FF0759:0010",
+          "desc": "Invincibility",
+          "address": "0xFF0759"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

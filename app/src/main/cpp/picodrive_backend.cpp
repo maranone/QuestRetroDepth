@@ -59,6 +59,7 @@ static std::atomic<int> g_ring_write{0};
 static std::atomic<int> g_ring_read{0};
 static AAudioStream* g_aaudio_stream = nullptr;
 static int g_audio_sample_rate = 44100;
+static retro_audio_buffer_status_callback_t g_audio_buffer_status_callback = nullptr;
 
 static void audio_ring_push(const int16_t* samples, int frames) {
     int w = g_ring_write.load(std::memory_order_relaxed);
@@ -70,6 +71,19 @@ static void audio_ring_push(const int16_t* samples, int frames) {
         w = next;
     }
     g_ring_write.store(w, std::memory_order_release);
+}
+
+static unsigned audio_ring_occupancy_percent() {
+    const int w = g_ring_write.load(std::memory_order_acquire);
+    const int r = g_ring_read.load(std::memory_order_acquire);
+    const int queued = (w >= r) ? (w - r) : (kAudioRingFrames - r + w);
+    return static_cast<unsigned>(std::clamp((queued * 100) / (kAudioRingFrames - 1), 0, 100));
+}
+
+static void report_audio_buffer_status() {
+    if (!g_audio_buffer_status_callback) return;
+    const unsigned occupancy = audio_ring_occupancy_percent();
+    g_audio_buffer_status_callback(true, occupancy, occupancy < 20);
 }
 
 static aaudio_data_callback_result_t audio_data_callback(
@@ -241,6 +255,7 @@ bool PicoDriveBackend::load_content(const std::string& rom_path, std::string& er
     EmulatorInputState warmup_input{};
     for (int i = 0; i < kWarmupFrames; ++i) {
         m_input = warmup_input;
+        report_audio_buffer_status();
         picodrive_retro_run();
         if (m_video_frame_count > 0 && m_last_frame_had_visible_pixels) break;
     }
@@ -261,6 +276,7 @@ bool PicoDriveBackend::step_frame(const EmulatorInputState& input, std::string& 
         return false;
     }
     m_input = input;
+    report_audio_buffer_status();
     picodrive_retro_run();
     error_out.clear();
     return true;
@@ -303,6 +319,11 @@ bool PicoDriveBackend::handle_environment(unsigned cmd, void* data) {
     case RETRO_ENVIRONMENT_SET_MINIMUM_AUDIO_LATENCY:
     case RETRO_ENVIRONMENT_SET_SYSTEM_AV_INFO:
         return true;
+    case RETRO_ENVIRONMENT_SET_AUDIO_BUFFER_STATUS_CALLBACK: {
+        auto* callback = static_cast<const retro_audio_buffer_status_callback*>(data);
+        g_audio_buffer_status_callback = callback ? callback->callback : nullptr;
+        return true;
+    }
     case RETRO_ENVIRONMENT_GET_DISK_CONTROL_INTERFACE_VERSION:
     case RETRO_ENVIRONMENT_GET_VFS_INTERFACE:
     case RETRO_ENVIRONMENT_GET_GAME_INFO_EXT:
@@ -321,7 +342,8 @@ bool PicoDriveBackend::handle_environment(unsigned cmd, void* data) {
     case RETRO_ENVIRONMENT_GET_VARIABLE_UPDATE: {
         if (!data) return false;
         auto* updated = static_cast<bool*>(data);
-        *updated = false;
+        *updated = m_variables_dirty;
+        m_variables_dirty = false;
         return true;
     }
     case RETRO_ENVIRONMENT_GET_VARIABLE: {
@@ -336,6 +358,14 @@ bool PicoDriveBackend::handle_environment(unsigned cmd, void* data) {
             var->value = "None";
             return true;
         }
+        if (std::strcmp(var->key, "picodrive_frameskip") == 0) {
+            var->value = m_auto_frame_skip ? "auto" : "disabled";
+            return true;
+        }
+        if (std::strcmp(var->key, "picodrive_frameskip_threshold") == 0) {
+            var->value = "33";
+            return true;
+        }
         return false;
     }
     case RETRO_ENVIRONMENT_GET_INPUT_BITMASKS: {
@@ -348,7 +378,7 @@ bool PicoDriveBackend::handle_environment(unsigned cmd, void* data) {
     case RETRO_ENVIRONMENT_GET_AUDIO_VIDEO_ENABLE: {
         if (!data) return false;
         auto* result = static_cast<int*>(data);
-        *result = m_auto_frame_skip ? 2 : 3;
+        *result = 3;
         return true;
     }
     default:
@@ -400,6 +430,8 @@ void PicoDriveBackend::reset_core() {
     m_loaded_rom_path.clear();
     m_video_frame_count = 0;
     m_last_frame_had_visible_pixels = false;
+    m_variables_dirty = false;
+    g_audio_buffer_status_callback = nullptr;
     m_frame.zbuffer.clear();
     m_frame.visible_source_id.clear();
     m_frame.layers.resize(kGenesisLayerCount);
@@ -500,7 +532,9 @@ void PicoDriveBackend::write_xrgb8888_frame(
 }
 
 void PicoDriveBackend::set_auto_frame_skip(bool enabled) {
+    if (m_auto_frame_skip == enabled) return;
     m_auto_frame_skip = enabled;
+    m_variables_dirty = true;
 }
 
 void PicoDriveBackend::set_layer_capture_mask(uint32_t mask) {
@@ -518,6 +552,16 @@ RomHeaderInfo PicoDriveBackend::get_rom_header_info() const {
 
 const uint32_t* PicoDriveBackend::get_z_histogram() const {
     return nullptr;
+}
+
+const uint8_t* PicoDriveBackend::system_ram_data() const {
+    if (!m_game_loaded) return nullptr;
+    return static_cast<const uint8_t*>(picodrive_retro_get_memory_data(RETRO_MEMORY_SYSTEM_RAM));
+}
+
+std::size_t PicoDriveBackend::system_ram_size() const {
+    if (!m_game_loaded) return 0;
+    return picodrive_retro_get_memory_size(RETRO_MEMORY_SYSTEM_RAM);
 }
 
 void PicoDriveBackend::update_layer_captures(unsigned width, unsigned height) {

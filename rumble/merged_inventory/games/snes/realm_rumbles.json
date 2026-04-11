@@ -1,0 +1,86 @@
+{
+  "system": "snes",
+  "normalized_title": "realm",
+  "display_name": "Realm (Rumbles)",
+  "aliases": [
+    "Realm (Rumbles)",
+    "Realm (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\realm_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E132B",
+        "0x7E1330",
+        "0x7E1334"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Realm-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E132B",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E1334",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E1330",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Realm (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E132B06",
+          "desc": "Infinite Health",
+          "address": "0x7E132B"
+        },
+        {
+          "code": "7E133403",
+          "desc": "Infinite Lives",
+          "address": "0x7E1334"
+        },
+        {
+          "code": "7E0224FF",
+          "desc": "Mostly Invincible + Enable Stage Skip",
+          "address": "0x7E0224"
+        },
+        {
+          "code": "7E007D4F",
+          "desc": "Invincible",
+          "address": "0x7E007D"
+        },
+        {
+          "code": "7E00F509",
+          "desc": "Infinite Ammunition",
+          "address": "0x7E00F5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

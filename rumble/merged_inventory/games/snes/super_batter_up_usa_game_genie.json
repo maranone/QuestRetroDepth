@@ -1,0 +1,62 @@
+{
+  "system": "snes",
+  "normalized_title": "superbatterup",
+  "display_name": "Super Batter Up (USA) (Game Genie)",
+  "aliases": [
+    "Super Batter Up (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Batter Up (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E288C00",
+          "desc": "Strike Modifier",
+          "address": "0x7E288C"
+        },
+        {
+          "code": "7E288E00",
+          "desc": "Ball Modifier",
+          "address": "0x7E288E"
+        },
+        {
+          "code": "7E289000",
+          "desc": "Out Modifier",
+          "address": "0x7E2890"
+        },
+        {
+          "code": "7EA0D400",
+          "desc": "Score Modifier (Visiting Team)",
+          "address": "0x7EA0D4"
+        },
+        {
+          "code": "7EA0E000",
+          "desc": "Score Modifier (Visiting Team)",
+          "address": "0x7EA0E0"
+        },
+        {
+          "code": "7EB0D400",
+          "desc": "Score Modifier (Home Team)",
+          "address": "0x7EB0D4"
+        },
+        {
+          "code": "7EB0E000",
+          "desc": "Score Modifier (Home Team)",
+          "address": "0x7EB0E0"
+        },
+        {
+          "code": "7E289600",
+          "desc": "Inning Modifier",
+          "address": "0x7E2896"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

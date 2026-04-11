@@ -1,0 +1,87 @@
+{
+  "system": "genesis",
+  "normalized_title": "lionking",
+  "display_name": "Lion King, The (World) (Action Replay)",
+  "aliases": [
+    "Lion King, The (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Lion King, The (World).cht",
+      "total_cheat_rows": 74,
+      "raw_entry_count": 13,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "FFCCF6:0005",
+          "desc": "Infinite Health",
+          "address": "0xFFCCF6"
+        },
+        {
+          "code": "FFCCEE:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFFCCEE"
+        },
+        {
+          "code": "FF9414:00FF",
+          "desc": "Invincibility",
+          "address": "0xFF9414"
+        },
+        {
+          "code": "FFCCF2:0030",
+          "desc": "Infinite Roars",
+          "address": "0xFFCCF2"
+        },
+        {
+          "code": "FFF288:0000",
+          "desc": "Stage Select",
+          "address": "0xFFF288"
+        },
+        {
+          "code": "FFF288:0001",
+          "desc": "Enable Cheat Mode (Invincibility)",
+          "address": "0xFFF288"
+        },
+        {
+          "code": "FF940A:00FE",
+          "desc": "Switch F/X On For Levitate Jump",
+          "address": "0xFF940A"
+        },
+        {
+          "code": "FFCCFA:0000",
+          "desc": "Character Modifier",
+          "address": "0xFFCCFA"
+        },
+        {
+          "code": "FF9368:0000",
+          "desc": "Hyper Simba",
+          "address": "0xFF9368"
+        },
+        {
+          "code": "FF93E8:0000",
+          "desc": "Hyper Simba",
+          "address": "0xFF93E8"
+        },
+        {
+          "code": "FFFEB1:0004",
+          "desc": "Press Start in the Options Menu for Cheat Menu",
+          "address": "0xFFFEB1"
+        },
+        {
+          "code": "FFF288:0001",
+          "desc": "Enable Debug Infinite Health",
+          "address": "0xFFF288"
+        },
+        {
+          "code": "FFF288:0000",
+          "desc": "Disable Debug Infinite Health",
+          "address": "0xFFF288"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

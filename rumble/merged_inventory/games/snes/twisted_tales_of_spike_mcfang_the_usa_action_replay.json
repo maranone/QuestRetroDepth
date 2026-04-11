@@ -1,0 +1,43 @@
+{
+  "system": "snes",
+  "normalized_title": "twistedtalesofspikemcfang",
+  "display_name": "Twisted Tales of Spike McFang, The (USA) (Action Replay)",
+  "aliases": [
+    "Twisted Tales of Spike McFang, The (USA) (Game Genie)",
+    "Twisted Tales of Spike McFang, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Twisted Tales of Spike McFang, The (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E4CE0FF",
+          "desc": "Infinite HP",
+          "address": "0x7E4CE0"
+        },
+        {
+          "code": "7E4CE14F",
+          "desc": "Infinite HP",
+          "address": "0x7E4CE1"
+        },
+        {
+          "code": "7E0A57E7",
+          "desc": "Infinite Money",
+          "address": "0x7E0A57"
+        },
+        {
+          "code": "7E0A5803",
+          "desc": "Infinite Money",
+          "address": "0x7E0A58"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

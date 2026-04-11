@@ -1,0 +1,100 @@
+{
+  "system": "snes",
+  "normalized_title": "ranma12hardbattle",
+  "display_name": "Ranma 1-2 - Hard Battle (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ranma 1-2 - Hard Battle (USA).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 16,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "7E0CC760",
+          "desc": "Infinite Health P1",
+          "address": "0x7E0CC7"
+        },
+        {
+          "code": "7E0CC700",
+          "desc": "No Health P1",
+          "address": "0x7E0CC7"
+        },
+        {
+          "code": "7E0CC960",
+          "desc": "Infinite Health P2",
+          "address": "0x7E0CC9"
+        },
+        {
+          "code": "7E0CC900",
+          "desc": "No Health P2",
+          "address": "0x7E0CC9"
+        },
+        {
+          "code": "7E18FE00",
+          "desc": "Win Modifier P1",
+          "address": "0x7E18FE"
+        },
+        {
+          "code": "7E190000",
+          "desc": "Win Modifier P2",
+          "address": "0x7E1900"
+        },
+        {
+          "code": "7E0D1400",
+          "desc": "Character Modifier P1",
+          "address": "0x7E0D14"
+        },
+        {
+          "code": "7E0D1600",
+          "desc": "Character Modifier P2",
+          "address": "0x7E0D16"
+        },
+        {
+          "code": "7E18FA99",
+          "desc": "Infinite Time",
+          "address": "0x7E18FA"
+        },
+        {
+          "code": "7E196400",
+          "desc": "Game Level",
+          "address": "0x7E1964"
+        },
+        {
+          "code": "7E00EA00",
+          "desc": "Time",
+          "address": "0x7E00EA"
+        },
+        {
+          "code": "7E196800",
+          "desc": "Music",
+          "address": "0x7E1968"
+        },
+        {
+          "code": "7E196600",
+          "desc": "Voice SE",
+          "address": "0x7E1966"
+        },
+        {
+          "code": "7E00F400",
+          "desc": "Sound Mode",
+          "address": "0x7E00F4"
+        },
+        {
+          "code": "7E00F600",
+          "desc": "Pad Control P1",
+          "address": "0x7E00F6"
+        },
+        {
+          "code": "7E00F800",
+          "desc": "Pad Control P2",
+          "address": "0x7E00F8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

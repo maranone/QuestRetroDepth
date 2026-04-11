@@ -1,0 +1,153 @@
+{
+  "system": "snes",
+  "normalized_title": "superbomberman",
+  "display_name": "Super Bomberman (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Super Bomberman (USA, Europe) (Action Replay)",
+    "Super Bomberman"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Bomberman (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 39,
+      "raw_entry_count": 35,
+      "distinct_address_count": 29,
+      "sample_raw_entries": [
+        {
+          "code": "7E0D7D09",
+          "desc": "Infinite Lives",
+          "address": "0x7E0D7D"
+        },
+        {
+          "code": "7E0D7688",
+          "desc": "Invincible",
+          "address": "0x7E0D76"
+        },
+        {
+          "code": "7E0D7009",
+          "desc": "Have Lots of Bombs",
+          "address": "0x7E0D70"
+        },
+        {
+          "code": "7E0D710B",
+          "desc": "Huge Fire Blast",
+          "address": "0x7E0D71"
+        },
+        {
+          "code": "7E0D7205",
+          "desc": "Fast Walk (Increase If You Can Handle It)",
+          "address": "0x7E0D72"
+        },
+        {
+          "code": "7E0D7301",
+          "desc": "Have Timer Bombs",
+          "address": "0x7E0D73"
+        },
+        {
+          "code": "7E0D73FF",
+          "desc": "Have Timer Bombs That Don't Destroy Each Other",
+          "address": "0x7E0D73"
+        },
+        {
+          "code": "7E0E7401",
+          "desc": "Have Kicker",
+          "address": "0x7E0E74"
+        },
+        {
+          "code": "7E0D7941",
+          "desc": "Walk Thru Walls",
+          "address": "0x7E0D79"
+        },
+        {
+          "code": "7E0D7D09",
+          "desc": "Infinite Lives (Player 1)",
+          "address": "0x7E0D7D"
+        },
+        {
+          "code": "7E0DBD09",
+          "desc": "Infinite Lives (Player 2)",
+          "address": "0x7E0DBD"
+        },
+        {
+          "code": "7E0D3BFF",
+          "desc": "Infinite Time",
+          "address": "0x7E0D3B"
+        },
+        {
+          "code": "7E0D5B09",
+          "desc": "Set Score To 9 Million (Player 1)",
+          "address": "0x7E0D5B"
+        },
+        {
+          "code": "7E0D9B09",
+          "desc": "Set Score To 9 Million (Player 2)",
+          "address": "0x7E0D9B"
+        },
+        {
+          "code": "7E0D2500",
+          "desc": "Exits On All Stages Are Active",
+          "address": "0x7E0D25"
+        },
+        {
+          "code": "7E0D7009",
+          "desc": "Set Max. Bomb Quantity (Player 1)",
+          "address": "0x7E0D70"
+        },
+        {
+          "code": "7E0DB009",
+          "desc": "Set Max. Bomb Quantity (Player 2)",
+          "address": "0x7E0DB0"
+        },
+        {
+          "code": "7E0DF009",
+          "desc": "Set Max. Bomb Quantity (Player 3)",
+          "address": "0x7E0DF0"
+        },
+        {
+          "code": "7E0E3009",
+          "desc": "Set Max. Bomb Quantity (Player 4)",
+          "address": "0x7E0E30"
+        },
+        {
+          "code": "7E0D7109",
+          "desc": "Set Max. Bomb Power (Player 1)",
+          "address": "0x7E0D71"
+        },
+        {
+          "code": "7E0DB109",
+          "desc": "Set Max. Bomb Power (Player 2)",
+          "address": "0x7E0DB1"
+        },
+        {
+          "code": "7E0DF109",
+          "desc": "Set Max. Bomb Power (Player 3)",
+          "address": "0x7E0DF1"
+        },
+        {
+          "code": "7E0E3109",
+          "desc": "Set Max. Bomb Power (Player 4)",
+          "address": "0x7E0E31"
+        },
+        {
+          "code": "7E0D7209",
+          "desc": "Set Max. Speed (Player 1)",
+          "address": "0x7E0D72"
+        },
+        {
+          "code": "7E0DB209",
+          "desc": "Set Max. Speed (Player 2)",
+          "address": "0x7E0DB2"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "SUPER BOMBER MAN"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

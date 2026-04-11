@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "ballz3dfightingatitsballziestballz3dbattleofballz",
+  "display_name": "Ballz 3D - Fighting at Its Ballziest - Ballz 3D - The Battle of the Ballz (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Ballz 3D - Fighting at Its Ballziest _ Ballz 3D - The Battle of the Ballz (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ballz 3D - Fighting at Its Ballziest _ Ballz 3D - The Battle of the Ballz (USA, Europe).cht",
+      "total_cheat_rows": 123,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF0780:00C8",
+          "desc": "Infinite Energy",
+          "address": "0xFF0780"
+        },
+        {
+          "code": "FF0CBA:0000",
+          "desc": "No Health P2",
+          "address": "0xFF0CBA"
+        },
+        {
+          "code": "FF30E3:0000",
+          "desc": "Character Modifier P2",
+          "address": "0xFF30E3"
+        },
+        {
+          "code": "FF30D9:0000",
+          "desc": "Character Modifier P1",
+          "address": "0xFF30D9"
+        },
+        {
+          "code": "FF3433:0001",
+          "desc": "Red Belt",
+          "address": "0xFF3433"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

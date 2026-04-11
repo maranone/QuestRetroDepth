@@ -1,0 +1,28 @@
+{
+  "system": "snes",
+  "normalized_title": "princeofpersia",
+  "display_name": "Prince of Persia (World) (Action Replay)",
+  "aliases": [
+    "Prince of Persia (World) (Action Replay)",
+    "Prince of Persia (World) (Game Genie)",
+    "Prince of Persia"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Prince of Persia (World) (Game Genie).cht",
+      "total_cheat_rows": 39,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 3,
+      "mk3_label": "PRINCE OF PERSIA"
+    }
+  },
+  "recommended_primary_source": "action_replay_mk_iii",
+  "notes": [
+    "SNES built-in cheat count present, but raw codes are not machine-readable here."
+  ]
+}

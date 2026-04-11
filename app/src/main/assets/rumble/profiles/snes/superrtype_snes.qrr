@@ -1,0 +1,7 @@
+game_name=Super R-Type (World) (Action Replay)
+game_key=SuperRType-Snes
+system=snes
+integration_tier=stable
+trigger	life_lost_lives_16e1	life_lost	0x7E16E1	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_16e1	life_gained	0x7E16E1	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_16e7	score	0x7E16E7	3	bcd	little	prev < curr	0.8	1	right:0.350:60

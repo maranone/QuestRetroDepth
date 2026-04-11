@@ -1,0 +1,48 @@
+{
+  "system": "genesis",
+  "normalized_title": "lawnmowerman",
+  "display_name": "LawnmowerMan",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\lawnmowerman_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF3591",
+        "0xFF35E6"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\LawnmowerMan-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "energy",
+          "address": "0xFF3876",
+          "type": ">u2"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF3591",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF35E6",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 3
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

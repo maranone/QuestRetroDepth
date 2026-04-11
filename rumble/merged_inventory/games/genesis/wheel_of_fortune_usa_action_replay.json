@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "wheeloffortune",
+  "display_name": "Wheel of Fortune (USA) (Action Replay)",
+  "aliases": [
+    "Wheel of Fortune (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Wheel of Fortune (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF01E2:0028",
+          "desc": "Infinite Time To Choose Letters",
+          "address": "0xFF01E2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

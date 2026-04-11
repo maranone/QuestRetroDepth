@@ -1,0 +1,96 @@
+{
+  "system": "genesis",
+  "normalized_title": "riseofrobots",
+  "display_name": "Rise of the Robots (Europe) (Action Replay)",
+  "aliases": [
+    "Rise of the Robots (Europe) (Action Replay)",
+    "Rise of the Robots (Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\riseoftherobots_genesis.json",
+      "trigger_count": 4,
+      "field_names": [
+        "enemy_health",
+        "health",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF02D8",
+        "0xFF0E49",
+        "0xFF0F61"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\RiseOfTheRobots-Genesis-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "enemy_health",
+          "address": "0xFF0F61",
+          "type": "|u1"
+        },
+        {
+          "name": "enemy_rounds_won",
+          "address": "0xFF0361",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFF0E49",
+          "type": "|u1"
+        },
+        {
+          "name": "rounds_won",
+          "address": "0xFF0360",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF02D8",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Rise of the Robots (Europe).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF0E48:0060",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF0E48"
+        },
+        {
+          "code": "FF0F60:0060",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF0F60"
+        },
+        {
+          "code": "FF0E48:0000",
+          "desc": "No Energy P1",
+          "address": "0xFF0E48"
+        },
+        {
+          "code": "FF118C:0063",
+          "desc": "Infinite Time",
+          "address": "0xFF118C"
+        },
+        {
+          "code": "FF036B:00FF",
+          "desc": "Play As Supervisor In 2 Player VS Mode And Play VS Supervisor In 1 Player Training Mode",
+          "address": "0xFF036B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

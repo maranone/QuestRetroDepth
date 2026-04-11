@@ -1,0 +1,68 @@
+{
+  "system": "genesis",
+  "normalized_title": "artoffighting",
+  "display_name": "Art of Fighting (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Art of Fighting (Europe)",
+    "Art of Fighting (USA)",
+    "Art of Fighting (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\artoffighting_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFF11B8"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ArtOfFighting-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "enemy_rounds_won",
+          "address": "0xFF11B3",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF11B8",
+          "type": ">d4"
+        },
+        {
+          "name": "total_rounds",
+          "address": "0xFF11B5",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Art of Fighting (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF01F5:0000",
+          "desc": "Remove Status Bars From The Play Screen",
+          "address": "0xFF01F5"
+        },
+        {
+          "code": "FF02B3:0009",
+          "desc": "Infinite Time",
+          "address": "0xFF02B3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

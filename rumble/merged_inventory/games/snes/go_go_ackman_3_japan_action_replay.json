@@ -1,0 +1,133 @@
+{
+  "system": "snes",
+  "normalized_title": "gogoackman3",
+  "display_name": "Go Go Ackman 3 (Japan) (Action Replay)",
+  "aliases": [
+    "Go Go Ackman 3 (Japan) (Game Genie)",
+    "Go Go Ackman 3 (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Go Go Ackman 3 (Japan).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 22,
+      "distinct_address_count": 22,
+      "sample_raw_entries": [
+        {
+          "code": "7E00B400",
+          "desc": "Character Modifier",
+          "address": "0x7E00B4"
+        },
+        {
+          "code": "7E01680A",
+          "desc": "Infinite Lives",
+          "address": "0x7E0168"
+        },
+        {
+          "code": "7E0BD403",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E0BD4"
+        },
+        {
+          "code": "7E0BE601",
+          "desc": "Always do charged up special attack",
+          "address": "0x7E0BE6"
+        },
+        {
+          "code": "7E013C99",
+          "desc": "Freeze Timer",
+          "address": "0x7E013C"
+        },
+        {
+          "code": "7E0B9C00",
+          "desc": "Super Jump",
+          "address": "0x7E0B9C"
+        },
+        {
+          "code": "7E014699",
+          "desc": "Collect Souls Quickly",
+          "address": "0x7E0146"
+        },
+        {
+          "code": "7E078208",
+          "desc": "Dragon Attack",
+          "address": "0x7E0782"
+        },
+        {
+          "code": "7E18D616",
+          "desc": "Invincible",
+          "address": "0x7E18D6"
+        },
+        {
+          "code": "7E01320A",
+          "desc": "Weapon Modifier",
+          "address": "0x7E0132"
+        },
+        {
+          "code": "7E014A01",
+          "desc": "Item Slot 1 Modifier",
+          "address": "0x7E014A"
+        },
+        {
+          "code": "7E014C00",
+          "desc": "Item Slot 2 Modifier",
+          "address": "0x7E014C"
+        },
+        {
+          "code": "7E014E00",
+          "desc": "Item Slot 3 Modifier",
+          "address": "0x7E014E"
+        },
+        {
+          "code": "7E015000",
+          "desc": "Item Slot 4 Modifier",
+          "address": "0x7E0150"
+        },
+        {
+          "code": "7E015200",
+          "desc": "Item Slot 5 Modifier",
+          "address": "0x7E0152"
+        },
+        {
+          "code": "7E015400",
+          "desc": "Item Slot 6 Modifier",
+          "address": "0x7E0154"
+        },
+        {
+          "code": "7E015600",
+          "desc": "Item Slot 7 Modifier",
+          "address": "0x7E0156"
+        },
+        {
+          "code": "7E015800",
+          "desc": "Item Slot 8 Modifier",
+          "address": "0x7E0158"
+        },
+        {
+          "code": "7E008400",
+          "desc": "Level Modifier",
+          "address": "0x7E0084"
+        },
+        {
+          "code": "7E013405",
+          "desc": "Infinite Health",
+          "address": "0x7E0134"
+        },
+        {
+          "code": "7E014209",
+          "desc": "Infinite Bomb",
+          "address": "0x7E0142"
+        },
+        {
+          "code": "7E014709",
+          "desc": "Infinite Money",
+          "address": "0x7E0147"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

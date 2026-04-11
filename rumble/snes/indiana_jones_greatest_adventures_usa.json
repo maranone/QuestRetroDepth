@@ -1,0 +1,395 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Indiana Jones' Greatest Adventures (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Indiana Jones' Greatest Adventures (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_0120",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0120",
+          "wram_offset": 288,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Infinite Health implies damage is prevented, but the event is damage_taken, which may not be directly applicable.",
+      "source_cheats": [
+        {
+          "code": "7E012006",
+          "desc": "Infinite Health"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_01a3",
+      "event": "life_lost",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x01A3",
+          "wram_offset": 419,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Have 99 Lives implies preventing life loss, but the event is life_lost, which may not be directly applicable.",
+      "source_cheats": [
+        {
+          "code": "7E01A399",
+          "desc": "Have 99 Lives"
+        }
+      ]
+    },
+    {
+      "id": "score_01ad",
+      "event": "score",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x01AD",
+          "wram_offset": 429,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Max Points implies increasing score, but the event is score, which may not be directly applicable.",
+      "source_cheats": [
+        {
+          "code": "7E01ADAA",
+          "desc": "Max Points"
+        }
+      ]
+    },
+    {
+      "id": "score_01ae",
+      "event": "score",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x01AE",
+          "wram_offset": 430,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Max Points implies increasing score, but the event is score, which may not be directly applicable.",
+      "source_cheats": [
+        {
+          "code": "7E01AEAA",
+          "desc": "Max Points"
+        }
+      ]
+    },
+    {
+      "id": "score_01af",
+      "event": "score",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x01AF",
+          "wram_offset": 431,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Max Points implies increasing score, but the event is score, which may not be directly applicable.",
+      "source_cheats": [
+        {
+          "code": "7E01AFAA",
+          "desc": "Max Points"
+        }
+      ]
+    },
+    {
+      "id": "score_01ba",
+      "event": "score",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x01BA",
+          "wram_offset": 442,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Max Points implies increasing score, but the event is score, which may not be directly applicable.",
+      "source_cheats": [
+        {
+          "code": "7E01BAAA",
+          "desc": "Max Points"
+        }
+      ]
+    },
+    {
+      "id": "powerup_gained_0134",
+      "event": "powerup_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0134",
+          "wram_offset": 308,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.6,
+          "duration_ms": 120
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Infinite Grenades implies gaining a powerup, but the event is powerup_gained, which may not be directly applicable.",
+      "source_cheats": [
+        {
+          "code": "7E01340A",
+          "desc": "Infinite Grenades"
+        }
+      ]
+    },
+    {
+      "id": "pickup_01d7",
+      "event": "pickup",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x01D7",
+          "wram_offset": 471,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.25,
+          "duration_ms": 18
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Infinite Gold implies gaining a pickup, but the event is pickup, which may not be directly applicable.",
+      "source_cheats": [
+        {
+          "code": "7E01D799",
+          "desc": "Infinite Gold"
+        }
+      ]
+    },
+    {
+      "id": "powerup_gained_011a",
+      "event": "powerup_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x011A",
+          "wram_offset": 282,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.6,
+          "duration_ms": 120
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Have Gun And Whip implies gaining a powerup, but the event is powerup_gained, which may not be directly applicable.",
+      "source_cheats": [
+        {
+          "code": "7E011A14",
+          "desc": "Have Gun And Whip"
+        }
+      ]
+    },
+    {
+      "id": "powerup_lost_011a",
+      "event": "powerup_lost",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x011A",
+          "wram_offset": 282,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.65,
+          "duration_ms": 160
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.65,
+          "duration_ms": 160
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Can't Use Gun And Whip implies losing a powerup, but the event is powerup_lost, which may not be directly applicable.",
+      "source_cheats": [
+        {
+          "code": "7E011A00",
+          "desc": "Can't Use Gun And Whip"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_0123",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0123",
+          "wram_offset": 291,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Enemies And Boobie Traps Can't Hurt You (99% of The Time) implies preventing damage, but the event is damage_taken, which may not be directly applicable.",
+      "source_cheats": [
+        {
+          "code": "7E012300",
+          "desc": "Enemies And Boobie Traps Can't Hurt You (99% of The Time)"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_0124",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0124",
+          "wram_offset": 292,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Enemies And Boobie Traps Can't Hurt You (99% of The Time) implies preventing damage, but the event is damage_taken, which may not be directly applicable.",
+      "source_cheats": [
+        {
+          "code": "7E0124F0",
+          "desc": "Enemies And Boobie Traps Can't Hurt You (99% of The Time)"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "code": "7E1EC3XX",
+      "desc": "Airplanes Remaining Modifier (In Bi-Plane Dogfight Stage)",
+      "kind": "unsupported"
+    },
+    {
+      "code": "7E003FXX",
+      "desc": "Stage Modifier",
+      "kind": "unsupported"
+    }
+  ]
+}

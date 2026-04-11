@@ -1,0 +1,43 @@
+{
+  "system": "genesis",
+  "normalized_title": "newzealandstory",
+  "display_name": "NewZealandStory",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\newzealandstory_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF8003",
+        "0xFF8010"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\NewZealandStory-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF8003",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF8010",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

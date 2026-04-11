@@ -1,0 +1,28 @@
+{
+  "system": "genesis",
+  "normalized_title": "f1worldchampionshipedition",
+  "display_name": "F1 - World Championship Edition (Europe) (Action Replay) (diff)",
+  "aliases": [
+    "F1 - World Championship Edition (Europe) (Action Replay)",
+    "F1 - World Championship Edition (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\F1 - World Championship Edition (Europe).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFF08E:00FF",
+          "desc": "Insane Speed P1",
+          "address": "0xFFF08E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

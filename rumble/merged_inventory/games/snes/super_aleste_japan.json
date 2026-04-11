@@ -1,0 +1,67 @@
+{
+  "system": "snes",
+  "normalized_title": "superaleste",
+  "display_name": "Super Aleste (Japan)",
+  "aliases": [
+    "Super Aleste"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Aleste (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 8,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E015204",
+          "desc": "Infinite Bombs",
+          "address": "0x7E0152"
+        },
+        {
+          "code": "7E015304",
+          "desc": "Infinite Gold Ships",
+          "address": "0x7E0153"
+        },
+        {
+          "code": "7E015703",
+          "desc": "Infinite Lives",
+          "address": "0x7E0157"
+        },
+        {
+          "code": "7E0BE020",
+          "desc": "Invincibility",
+          "address": "0x7E0BE0"
+        },
+        {
+          "code": "7E015799",
+          "desc": "Infinite Lives",
+          "address": "0x7E0157"
+        },
+        {
+          "code": "7E015399",
+          "desc": "Infinite Special Lives",
+          "address": "0x7E0153"
+        },
+        {
+          "code": "7E015299",
+          "desc": "Infinite Bombs",
+          "address": "0x7E0152"
+        },
+        {
+          "code": "7E006F06",
+          "desc": "Max Weapon Level",
+          "address": "0x7E006F"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 3,
+      "mk3_label": "SUPER ALESTE"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

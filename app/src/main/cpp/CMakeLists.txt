@@ -279,8 +279,10 @@ target_compile_options(picodrive_libretro PRIVATE
 
 add_library(questretrodepth_native SHARED
     emulator_backend.cpp
+    experimental_rumble.cpp
     game_config.cpp
     layer_processor.cpp
+    panel_layout.cpp
     gles_renderer.cpp
     openxr_shell.cpp
     picodrive_backend.cpp
@@ -297,6 +299,7 @@ find_library(math-lib m)
 find_library(egl-lib EGL)
 find_library(gles-lib GLESv3)
 find_library(aaudio-lib aaudio)
+find_library(android-lib android)
 find_library(z-lib z)
 
 target_include_directories(questretrodepth_native PRIVATE
@@ -318,5 +321,6 @@ target_link_libraries(questretrodepth_native
     ${egl-lib}
     ${gles-lib}
     ${aaudio-lib}
+    ${android-lib}
     ${z-lib}
 )

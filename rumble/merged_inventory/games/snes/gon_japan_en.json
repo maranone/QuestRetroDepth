@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "gon",
+  "display_name": "Gon (Japan) (En)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Gon (Japan) (En).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E109009",
+          "desc": "Infinite Credits",
+          "address": "0x7E1090"
+        },
+        {
+          "code": "7E17FCFF",
+          "desc": "Invincibility",
+          "address": "0x7E17FC"
+        },
+        {
+          "code": "7E16BCFF",
+          "desc": "Jump Higher",
+          "address": "0x7E16BC"
+        },
+        {
+          "code": "7E108601",
+          "desc": "Level Mod",
+          "address": "0x7E1086"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

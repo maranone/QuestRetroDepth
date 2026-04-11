@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "nichibutsuarcadeclassics",
+  "display_name": "Nichibutsu Arcade Classics (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Nichibutsu Arcade Classics (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E095806",
+          "desc": "Infinite (II) Ships Once You Destroy The (I) Ship",
+          "address": "0x7E0958"
+        },
+        {
+          "code": "7E095A02",
+          "desc": "Infinite (II) Ships Once You Destroy The (I) Ship",
+          "address": "0x7E095A"
+        },
+        {
+          "code": "7E095804",
+          "desc": "Infinite (III) Ships Once You Destroy The (I &amp; II) Ships",
+          "address": "0x7E0958"
+        },
+        {
+          "code": "7E095A04",
+          "desc": "Infinite (III) Ships Once You Destroy The (I &amp; II) Ships",
+          "address": "0x7E095A"
+        },
+        {
+          "code": "7E0A9E01",
+          "desc": "Ship Modifier (Buggy)",
+          "address": "0x7E0A9E"
+        },
+        {
+          "code": "7E095809",
+          "desc": "Always Have 1st Ship",
+          "address": "0x7E0958"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

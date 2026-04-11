@@ -1,0 +1,7 @@
+game_name=Gunship (Europe) (Action Replay)
+game_key=Gunship-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ffbd1b	damage_taken	0xFFBD1B	1	int	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffbd1b	death	0xFFBD1B	1	int	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_ffbd25	score	0xFFBD25	3	bcd	big	prev < curr	0.8	1	right:0.350:60

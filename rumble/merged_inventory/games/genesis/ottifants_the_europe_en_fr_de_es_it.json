@@ -1,0 +1,92 @@
+{
+  "system": "genesis",
+  "normalized_title": "ottifants",
+  "display_name": "Ottifants, The (Europe) (En,Fr,De,Es,It)",
+  "aliases": [
+    "Ottifants, The (Europe) (Action Replay)",
+    "Ottifants, The (Europe) (De) (Beta)",
+    "Ottifants, The (Europe) (En,Fr,De,Es,It)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\ottifants_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF878A",
+        "0xFF8799",
+        "0xFF87B1"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Ottifants-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF87B1",
+          "type": "|d1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF8799",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF878A",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ottifants, The (Europe) (En,Fr,De,Es,It).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF8798:0004",
+          "desc": "Infinite Lives",
+          "address": "0xFF8798"
+        },
+        {
+          "code": "FF87B0:0060",
+          "desc": "Infinite Energy",
+          "address": "0xFF87B0"
+        },
+        {
+          "code": "FF87AE:000C",
+          "desc": "Flight Mode",
+          "address": "0xFF87AE"
+        },
+        {
+          "code": "FFB470:02CB",
+          "desc": "Freeze Flight Mode Timer",
+          "address": "0xFFB470"
+        },
+        {
+          "code": "FFA342:00A0",
+          "desc": "Full Percentage",
+          "address": "0xFFA342"
+        },
+        {
+          "code": "FF8798:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF8798"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "system": "genesis",
+  "normalized_title": "micromachinesmilitary",
+  "display_name": "Micro Machines Military (Europe) (J-Cart)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Micro Machines Military (Europe) (J-Cart).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 23,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "FFD080:0000",
+          "desc": "Freeze Cpu Cars [Challenge]",
+          "address": "0xFFD080"
+        },
+        {
+          "code": "FFD07E:0000",
+          "desc": "Freeze Cpu Cars [Challenge]",
+          "address": "0xFFD07E"
+        },
+        {
+          "code": "FFD07C:0000",
+          "desc": "Freeze Cpu Cars [Challenge]",
+          "address": "0xFFD07C"
+        },
+        {
+          "code": "FFD164:0000",
+          "desc": "Zero Laps Remaining P1",
+          "address": "0xFFD164"
+        },
+        {
+          "code": "FFD678:0000",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFD678"
+        },
+        {
+          "code": "FFD67A:0000",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFD67A"
+        },
+        {
+          "code": "FFD6A6:0000",
+          "desc": "Auto Qualify In Battle Arena",
+          "address": "0xFFD6A6"
+        },
+        {
+          "code": "FFD058:0000",
+          "desc": "Blue Car Direction",
+          "address": "0xFFD058"
+        },
+        {
+          "code": "FFD05A:0000",
+          "desc": "Yellow Car Direction",
+          "address": "0xFFD05A"
+        },
+        {
+          "code": "FFD05C:0000",
+          "desc": "Green Car Direction",
+          "address": "0xFFD05C"
+        },
+        {
+          "code": "FFE7C7:0008",
+          "desc": "Infinite Lives",
+          "address": "0xFFE7C7"
+        },
+        {
+          "code": "FFD165:0000",
+          "desc": "Auto Win Race - Challenge Race",
+          "address": "0xFFD165"
+        },
+        {
+          "code": "FFD771:000A",
+          "desc": "Auto Win Extra Life Game",
+          "address": "0xFFD771"
+        },
+        {
+          "code": "FFD6A7:0000",
+          "desc": "Auto Qualify - Battle Arena",
+          "address": "0xFFD6A7"
+        },
+        {
+          "code": "FFD165:0003",
+          "desc": "P1 Always on 1st Lap",
+          "address": "0xFFD165"
+        },
+        {
+          "code": "FFD167:0003",
+          "desc": "P2 Always on 1st Lap",
+          "address": "0xFFD167"
+        },
+        {
+          "code": "FFD169:0003",
+          "desc": "P3 Always on 1st Lap",
+          "address": "0xFFD169"
+        },
+        {
+          "code": "FFD16B:0003",
+          "desc": "P4 Always on 1st Lap",
+          "address": "0xFFD16B"
+        },
+        {
+          "code": "FFD67D:0000",
+          "desc": "Freeze Timer",
+          "address": "0xFFD67D"
+        },
+        {
+          "code": "FFD75D:0000",
+          "desc": "Race Modifier - Challenge Race and Time Trial Challenge",
+          "address": "0xFFD75D"
+        },
+        {
+          "code": "FFD75D:000A",
+          "desc": "Race Modifier - Pro Challenge Race and Pro Time Trial Challenge",
+          "address": "0xFFD75D"
+        },
+        {
+          "code": "FFD75D:0000",
+          "desc": "Arena Modifier - Battle Arena",
+          "address": "0xFFD75D"
+        },
+        {
+          "code": "FFD75D:000A",
+          "desc": "Arena Modifier - Pro Battle Arena",
+          "address": "0xFFD75D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

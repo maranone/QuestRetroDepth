@@ -1,0 +1,105 @@
+{
+  "system": "snes",
+  "normalized_title": "miraclegirls",
+  "display_name": "Miracle Girls (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Miracle Girls (Japan).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 17,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "7E104001",
+          "desc": "Character Modifier",
+          "address": "0x7E1040"
+        },
+        {
+          "code": "7E018C99",
+          "desc": "Infinite Lives",
+          "address": "0x7E018C"
+        },
+        {
+          "code": "7E018B06",
+          "desc": "Infinite Health",
+          "address": "0x7E018B"
+        },
+        {
+          "code": "7E00B050",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E00B0"
+        },
+        {
+          "code": "7E01A901",
+          "desc": "Always Have Multi Shot",
+          "address": "0x7E01A9"
+        },
+        {
+          "code": "7E019099",
+          "desc": "99 Hearts",
+          "address": "0x7E0190"
+        },
+        {
+          "code": "7E0E4001",
+          "desc": "Jump in Mid/Walk On Air",
+          "address": "0x7E0E40"
+        },
+        {
+          "code": "7E190000",
+          "desc": "Jump to Walk On Air",
+          "address": "0x7E1900"
+        },
+        {
+          "code": "7E009400",
+          "desc": "Level Modifier",
+          "address": "0x7E0094"
+        },
+        {
+          "code": "7E1AC099",
+          "desc": "Have 99 Points",
+          "address": "0x7E1AC0"
+        },
+        {
+          "code": "7E1AC100",
+          "desc": "Enemy Has 0 Points",
+          "address": "0x7E1AC1"
+        },
+        {
+          "code": "7E00D201",
+          "desc": "Instant Win",
+          "address": "0x7E00D2"
+        },
+        {
+          "code": "7E1B0050",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E1B00"
+        },
+        {
+          "code": "7E1B0101",
+          "desc": "Enemy gets no Fatigue Time",
+          "address": "0x7E1B01"
+        },
+        {
+          "code": "7E1C4080",
+          "desc": "Shot Bar Stays Full in 1st Battle Scene",
+          "address": "0x7E1C40"
+        },
+        {
+          "code": "7E1C4100",
+          "desc": "Enemy's Shot Bar Stays Low in First Battle Scene",
+          "address": "0x7E1C41"
+        },
+        {
+          "code": "7E118101",
+          "desc": "Enemy Freezes After He Shoots (until he get hit)",
+          "address": "0x7E1181"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

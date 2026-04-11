@@ -1,0 +1,28 @@
+{
+  "system": "genesis",
+  "normalized_title": "pocahontas",
+  "display_name": "Pocahontas (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Pocahontas (USA)",
+    "Pocahontas (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Pocahontas (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF1189:CE",
+          "desc": "Groovy Graphics",
+          "address": "0xFF1189"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "system": "genesis",
+  "normalized_title": "mortalkombat5subzero",
+  "display_name": "Mortal Kombat 5 -Sub Zero- (Unknown) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mortal Kombat 5 -Sub Zero- (Unknown) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF0213:68",
+          "desc": "Infinite Energy (Do Not Use Around Traps That Crush You)",
+          "address": "0xFF0213"
+        },
+        {
+          "code": "FF02FC:38",
+          "desc": "Infinite Freeze Meter",
+          "address": "0xFF02FC"
+        },
+        {
+          "code": "FF020C:09",
+          "desc": "Infinite Lives",
+          "address": "0xFF020C"
+        },
+        {
+          "code": "FF0413:00",
+          "desc": "Enemies Killed In One Hit",
+          "address": "0xFF0413"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

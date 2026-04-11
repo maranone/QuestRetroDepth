@@ -1,0 +1,75 @@
+{
+  "system": "snes",
+  "normalized_title": "radicalrex",
+  "display_name": "Radical Rex (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Radical Rex (Rumbles)",
+    "Radical Rex (USA)",
+    "Radical Rex (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\radicalrex_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E1E4E",
+        "0x7E1E70"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\RadicalRex-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E1E70",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E1E4E",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Radical Rex (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E1EB399",
+          "desc": "Infinite Eggs",
+          "address": "0x7E1EB3"
+        },
+        {
+          "code": "7E1EB101",
+          "desc": "Infinite Roar",
+          "address": "0x7E1EB1"
+        },
+        {
+          "code": "7E313431",
+          "desc": "Infinite Health",
+          "address": "0x7E3134"
+        },
+        {
+          "code": "7E313731",
+          "desc": "Infinite Health",
+          "address": "0x7E3137"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "system": "genesis",
+  "normalized_title": "batmanvideogame",
+  "display_name": "Batman - The Video Game (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Batman - The Video Game (USA).cht",
+      "total_cheat_rows": 153,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF431C:0200",
+          "desc": "Infinite Lives",
+          "address": "0xFF431C"
+        },
+        {
+          "code": "FF430C:3F00",
+          "desc": "Infinite Energy",
+          "address": "0xFF430C"
+        },
+        {
+          "code": "FF432A:0500",
+          "desc": "Infinite Weapon",
+          "address": "0xFF432A"
+        },
+        {
+          "code": "FF4326:29FF",
+          "desc": "Invincibility",
+          "address": "0xFF4326"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "megapanel",
+  "display_name": "MegaPanel (Japan) (Action Replay)",
+  "aliases": [
+    "MegaPanel (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\MegaPanel (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF128B:0010",
+          "desc": "Round 16",
+          "address": "0xFF128B"
+        },
+        {
+          "code": "FF14F5:0005",
+          "desc": "5 Misses",
+          "address": "0xFF14F5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

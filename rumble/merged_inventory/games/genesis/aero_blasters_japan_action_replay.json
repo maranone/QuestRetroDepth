@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "aeroblasters",
+  "display_name": "Aero Blasters (Japan) (Action Replay)",
+  "aliases": [
+    "Aero Blasters (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Aero Blasters (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FFC016:000A",
+          "desc": "Infinite Lives P1",
+          "address": "0xFFC016"
+        },
+        {
+          "code": "FFC216:000A",
+          "desc": "Infinite Lives P2",
+          "address": "0xFFC216"
+        },
+        {
+          "code": "FFC010:0001",
+          "desc": "Shooting Helper Powerup Modifier",
+          "address": "0xFFC010"
+        },
+        {
+          "code": "FFC004:0002",
+          "desc": "Gun Powerup Modifier",
+          "address": "0xFFC004"
+        },
+        {
+          "code": "FFC018:0000",
+          "desc": "Can Charge Up Longer P1",
+          "address": "0xFFC018"
+        },
+        {
+          "code": "FFC016:0000",
+          "desc": "Less SFX",
+          "address": "0xFFC016"
+        },
+        {
+          "code": "FFC011:0001",
+          "desc": "Keep Special Helpers Shots And Power of Weapons After The Death",
+          "address": "0xFFC011"
+        },
+        {
+          "code": "FFE067:0003",
+          "desc": "Infinite Credit",
+          "address": "0xFFE067"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

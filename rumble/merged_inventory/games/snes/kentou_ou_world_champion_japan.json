@@ -1,0 +1,65 @@
+{
+  "system": "snes",
+  "normalized_title": "kentououworldchampion",
+  "display_name": "Kentou Ou World Champion (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Kentou Ou World Champion (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E002801",
+          "desc": "CPU Moves Back & Stays in Place",
+          "address": "0x7E0028"
+        },
+        {
+          "code": "7E003601",
+          "desc": "Stop Timer",
+          "address": "0x7E0036"
+        },
+        {
+          "code": "7E005706",
+          "desc": "Player 1 Infinite Stamina",
+          "address": "0x7E0057"
+        },
+        {
+          "code": "7E005800",
+          "desc": "Player 2 No Stamina",
+          "address": "0x7E0058"
+        },
+        {
+          "code": "7E005901",
+          "desc": "Player 1 Infinite Stamina (Alternate)",
+          "address": "0x7E0059"
+        },
+        {
+          "code": "7E005A01",
+          "desc": "Player 2 Infinite Stamina",
+          "address": "0x7E005A"
+        },
+        {
+          "code": "7E005D01",
+          "desc": "Player 1 is Untouchable",
+          "address": "0x7E005D"
+        },
+        {
+          "code": "7E005E01",
+          "desc": "Player 2 is Untouchable",
+          "address": "0x7E005E"
+        },
+        {
+          "code": "7E006B01",
+          "desc": "Referee Counts Much Faster",
+          "address": "0x7E006B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

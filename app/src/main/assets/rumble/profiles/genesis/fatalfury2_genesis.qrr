@@ -1,0 +1,6 @@
+game_name=Fatal Fury 2 (USA, Korea) (Action Replay)
+game_key=FatalFury2-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ffdd11	damage_taken	0xFFDD11	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffdd11	death	0xFFDD11	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

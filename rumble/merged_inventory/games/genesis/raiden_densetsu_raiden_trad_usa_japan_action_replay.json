@@ -1,0 +1,64 @@
+{
+  "system": "genesis",
+  "normalized_title": "raidendensetsuraidentrad",
+  "display_name": "Raiden Densetsu - Raiden Trad (USA, Japan) (Action Replay)",
+  "aliases": [
+    "Raiden Densetsu - Raiden Trad (USA, Japan) (Action Replay)",
+    "Raiden Densetsu _ Raiden Trad (Japan, USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\raidendensetsuraidentrad_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFC0E4",
+        "0xFFE9A3"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\RaidenDensetsuRaidenTrad-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFE9A3",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFC0E4",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Raiden Densetsu _ Raiden Trad (Japan, USA).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFE9B8:0020",
+          "desc": "Freeze Time Continue",
+          "address": "0xFFE9B8"
+        },
+        {
+          "code": "FFC027:0009",
+          "desc": "Infinite Credit",
+          "address": "0xFFC027"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

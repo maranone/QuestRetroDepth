@@ -1,0 +1,8 @@
+# schema=qrd_rumble_csv_v1
+# game_name=ESPN Baseball Tonight (USA) (Action Replay)
+# match_names=espnbaseballtonight|espnbaseballtonightgenesis
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+score_score_hits_ff40fb,0xFF40FB,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score_opponent_hits_ff40fd,0xFF40FD,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score_opponent_runs_ff0061,0xFF0061,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score_runs_ff005f,0xFF005F,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,

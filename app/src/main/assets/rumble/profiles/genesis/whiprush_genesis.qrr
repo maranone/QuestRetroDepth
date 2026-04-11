@@ -1,0 +1,12 @@
+game_name=Whip Rush (USA) (Action Replay)
+game_key=WhipRush-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ffd028	life_lost	0xFFD028	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffd028	life_gained	0xFFD028	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_ffd01d	score	0xFFD01D	1	bcd	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_ffd01c	score	0xFFD01C	1	bcd	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_ffd01b	score	0xFFD01B	1	bcd	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score3_ffd01a	score	0xFFD01A	1	bcd	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score4_ffd019	score	0xFFD019	1	bcd	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score5_ffd018	score	0xFFD018	1	bcd	native	prev < curr	0.8	1	right:0.350:60

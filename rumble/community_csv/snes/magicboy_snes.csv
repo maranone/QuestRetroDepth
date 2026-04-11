@@ -1,0 +1,12 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Magic Boy (USA)
+# match_names=magicboy|magicboysnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+game_over_gameover_0009,0x7E0009,1,int,became_nonzero,,both,1.000,normal,0,1000,400,100,
+life_lost_lives_9bb6,0x7E9BB6,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
+life_gained_lives_9bb6,0x7E9BB6,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,
+score_score0_9b7a,0x7E9B7A,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score1_9b7e,0x7E9B7E,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score2_9b82,0x7E9B82,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score3_9b86,0x7E9B86,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score4_9b8a,0x7E9B8A,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,

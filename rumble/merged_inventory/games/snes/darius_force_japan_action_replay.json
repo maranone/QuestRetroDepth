@@ -1,0 +1,94 @@
+{
+  "system": "snes",
+  "normalized_title": "dariusforce",
+  "display_name": "Darius Force (Japan) (Action Replay)",
+  "aliases": [
+    "Darius Force (Japan) (Action Replay)",
+    "Darius Force (Japan) (En)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\dariusforce_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0111",
+        "0x7E1A42"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DariusForce-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0111",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E1A42",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Darius Force (Japan) (En).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E011301",
+          "desc": "Invincible",
+          "address": "0x7E0113"
+        },
+        {
+          "code": "7E011400",
+          "desc": "Ship Modifier",
+          "address": "0x7E0114"
+        },
+        {
+          "code": "7E011103",
+          "desc": "Infinite Lives",
+          "address": "0x7E0111"
+        },
+        {
+          "code": "7E1A4199",
+          "desc": "Maximum Score",
+          "address": "0x7E1A41"
+        },
+        {
+          "code": "7E1A4399",
+          "desc": "Maximum Score",
+          "address": "0x7E1A43"
+        },
+        {
+          "code": "7E0115FF",
+          "desc": "Set Max. 1st Gun",
+          "address": "0x7E0115"
+        },
+        {
+          "code": "7E013203",
+          "desc": "Invincible Shield (Once You Get It)",
+          "address": "0x7E0132"
+        },
+        {
+          "code": "7E00C900",
+          "desc": "Stage Select After 1st Stage Cleared",
+          "address": "0x7E00C9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

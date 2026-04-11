@@ -1,0 +1,57 @@
+{
+  "system": "snes",
+  "normalized_title": "shadow",
+  "display_name": "Shadow, The (USA) (Action Replay)",
+  "aliases": [
+    "Shadow, The (USA) (Proto 2)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Shadow, The (USA) (Proto 2).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E1B7609",
+          "desc": "Infinite Time",
+          "address": "0x7E1B76"
+        },
+        {
+          "code": "7E1E31FF",
+          "desc": "Infinite Health",
+          "address": "0x7E1E31"
+        },
+        {
+          "code": "7E1876FF",
+          "desc": "Infinite Dash",
+          "address": "0x7E1876"
+        },
+        {
+          "code": "7E1B4A00",
+          "desc": "Enemy 1 With No Health Left",
+          "address": "0x7E1B4A"
+        },
+        {
+          "code": "7E1B4B00",
+          "desc": "Enemy 2 With No Health Left",
+          "address": "0x7E1B4B"
+        },
+        {
+          "code": "7E1B4C00",
+          "desc": "Enemy 3 With No Health Left",
+          "address": "0x7E1B4C"
+        },
+        {
+          "code": "7E1E2800",
+          "desc": "Stage Modifier",
+          "address": "0x7E1E28"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

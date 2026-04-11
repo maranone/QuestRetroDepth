@@ -1,0 +1,35 @@
+{
+  "system": "genesis",
+  "normalized_title": "battlemania",
+  "display_name": "Battle Mania (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Battle Mania (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFFE20:0004",
+          "desc": "Infinite Energy",
+          "address": "0xFFFE20"
+        },
+        {
+          "code": "FFB7F8:0008",
+          "desc": "Infinite Charge",
+          "address": "0xFFB7F8"
+        },
+        {
+          "code": "FFB00E:0048",
+          "desc": "Invincibility",
+          "address": "0xFFB00E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

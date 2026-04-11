@@ -1,0 +1,37 @@
+{
+  "system": "genesis",
+  "normalized_title": "worldseriesbaseball98",
+  "display_name": "World Series Baseball 98 (USA) (Action Replay)",
+  "aliases": [
+    "World Series Baseball 98 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\World Series Baseball 98 (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFA382:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFFA382"
+        },
+        {
+          "code": "FFA382:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFFA382"
+        },
+        {
+          "code": "FFA384:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFFA384"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

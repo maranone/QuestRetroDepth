@@ -1,0 +1,177 @@
+{
+  "system": "snes",
+  "normalized_title": "kingofmonsters2",
+  "display_name": "King Of The Monsters 2 (USA) (Action Replay)",
+  "aliases": [
+    "King Of The Monsters 2 (Rumbles)",
+    "King Of The Monsters 2 (USA) (Action Replay)",
+    "King of the Monsters 2 (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\kingofthemonsters2_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E0945",
+        "0x7E09CC",
+        "0x7E1A3A"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KingOfTheMonsters2-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E1A3A",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E09CC",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0945",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\King of the Monsters 2 (USA).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 23,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "7E09426A",
+          "desc": "Stop Timer",
+          "address": "0x7E0942"
+        },
+        {
+          "code": "7E09CC03",
+          "desc": "Infinite Lives",
+          "address": "0x7E09CC"
+        },
+        {
+          "code": "7E1A3A18",
+          "desc": "Infinite Health",
+          "address": "0x7E1A3A"
+        },
+        {
+          "code": "7E1CB402",
+          "desc": "Always Have 2 Powerups",
+          "address": "0x7E1CB4"
+        },
+        {
+          "code": "7E0A30FF",
+          "desc": "Enable Debug Menu after Player Select Screen in Vs CPU Modes",
+          "address": "0x7E0A30"
+        },
+        {
+          "code": "7E1A3A18",
+          "desc": "P1 Infinite Health",
+          "address": "0x7E1A3A"
+        },
+        {
+          "code": "7E1A3A01",
+          "desc": "P1 No Health",
+          "address": "0x7E1A3A"
+        },
+        {
+          "code": "7E090E01",
+          "desc": "P1 Special Attack Meter always Charged",
+          "address": "0x7E090E"
+        },
+        {
+          "code": "7E090E00",
+          "desc": "P1 Special Attack Meter never Charged",
+          "address": "0x7E090E"
+        },
+        {
+          "code": "7E1CB402",
+          "desc": "P1 Max Power",
+          "address": "0x7E1CB4"
+        },
+        {
+          "code": "7E1CB400",
+          "desc": "P1 Min Power",
+          "address": "0x7E1CB4"
+        },
+        {
+          "code": "7E09CC02",
+          "desc": "P1 Infinite Lives",
+          "address": "0x7E09CC"
+        },
+        {
+          "code": "7E09CA63",
+          "desc": "P1 Infinite Credits",
+          "address": "0x7E09CA"
+        },
+        {
+          "code": "7E1A3B18",
+          "desc": "P2 Infinite Health",
+          "address": "0x7E1A3B"
+        },
+        {
+          "code": "7E1A3B01",
+          "desc": "P2 No Health",
+          "address": "0x7E1A3B"
+        },
+        {
+          "code": "7E090F01",
+          "desc": "P2 Special Attack Meter always Charged",
+          "address": "0x7E090F"
+        },
+        {
+          "code": "7E090F00",
+          "desc": "P2 Special Attack Meter never Charged",
+          "address": "0x7E090F"
+        },
+        {
+          "code": "7E1CB502",
+          "desc": "P2 Max Power",
+          "address": "0x7E1CB5"
+        },
+        {
+          "code": "7E1CB500",
+          "desc": "P2 Min Power",
+          "address": "0x7E1CB5"
+        },
+        {
+          "code": "7E09CD02",
+          "desc": "P2 Infinite Lives",
+          "address": "0x7E09CD"
+        },
+        {
+          "code": "7E09CB63",
+          "desc": "P2 Infinite Credits",
+          "address": "0x7E09CB"
+        },
+        {
+          "code": "7E094270",
+          "desc": "Infinite Time",
+          "address": "0x7E0942"
+        },
+        {
+          "code": "7E002A00",
+          "desc": "Freeze Timer",
+          "address": "0x7E002A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

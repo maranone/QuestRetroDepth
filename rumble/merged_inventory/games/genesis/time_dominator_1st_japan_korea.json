@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "timedominator1st",
+  "display_name": "Time Dominator 1st (Japan, Korea)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Time Dominator 1st (Japan, Korea).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFFD16:0063",
+          "desc": "Infinite Lives",
+          "address": "0xFFFD16"
+        },
+        {
+          "code": "FFFD18:0063",
+          "desc": "Infinite Health",
+          "address": "0xFFFD18"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "system": "genesis",
+  "normalized_title": "fatallabyrinth",
+  "display_name": "Fatal Labyrinth (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Fatal Labyrinth (USA, Europe) (Action Replay)",
+    "Fatal Labyrinth (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\fatallabyrinth_genesis.json",
+      "trigger_count": 2,
+      "field_names": [
+        "health"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFF9410"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FatalLabyrinth-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "exp",
+          "address": "0xFF9422",
+          "type": ">u2"
+        },
+        {
+          "name": "health",
+          "address": "0xFF9410",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Fatal Labyrinth (USA, Europe).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF9410:9999",
+          "desc": "Infinite Hp",
+          "address": "0xFF9410"
+        },
+        {
+          "code": "FF9410:0099",
+          "desc": "Infinite/Max HP Points",
+          "address": "0xFF9410"
+        },
+        {
+          "code": "FF9410:0099",
+          "desc": "Infinite/Max HP Points",
+          "address": "0xFF9410"
+        },
+        {
+          "code": "FF9412:0099",
+          "desc": "Level 99",
+          "address": "0xFF9412"
+        },
+        {
+          "code": "FF9414:0000",
+          "desc": "Character Title Modifier",
+          "address": "0xFF9414"
+        },
+        {
+          "code": "FF941C:0099",
+          "desc": "Infinite/Max &quot;F&quot;",
+          "address": "0xFF941C"
+        },
+        {
+          "code": "FF9416:0099",
+          "desc": "Infinite/Max &quot;AR&quot; (Armor)",
+          "address": "0xFF9416"
+        },
+        {
+          "code": "FF9418:0099",
+          "desc": "Infinite/Max &quot;PW&quot;",
+          "address": "0xFF9418"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

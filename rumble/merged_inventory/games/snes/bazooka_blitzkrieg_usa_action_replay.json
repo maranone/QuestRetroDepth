@@ -1,0 +1,33 @@
+{
+  "system": "snes",
+  "normalized_title": "bazookablitzkrieg",
+  "display_name": "Bazooka Blitzkrieg (USA) (Action Replay)",
+  "aliases": [
+    "Bazooka Blitzkrieg (USA) (Game Genie)",
+    "Bazooka Blitzkrieg (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bazooka Blitzkrieg (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E0305FF",
+          "desc": "Infinite Health",
+          "address": "0x7E0305"
+        },
+        {
+          "code": "7E030414",
+          "desc": "Infinite Missiles",
+          "address": "0x7E0304"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

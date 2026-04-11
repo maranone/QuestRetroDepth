@@ -1,0 +1,8 @@
+game_name=Shaq-Fu (USA, Europe) (Action Replay)
+game_key=ShaqFu-Genesis
+system=genesis
+integration_tier=stable
+trigger	enemy_defeated_enemy_health_ff81e1	enemy_defeated	0xFF81E1	1	bcd	native	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_ff80c9	damage_taken	0xFF80C9	1	bcd	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff80c9	death	0xFF80C9	1	bcd	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_ffea59	score	0xFFEA59	3	bcd	big	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,48 @@
+{
+  "system": "snes",
+  "normalized_title": "justiceleaguetaskforce",
+  "display_name": "Justice League Task Force (World) (Action Replay)",
+  "aliases": [
+    "Justice League Task Force (USA)",
+    "Justice League Task Force (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Justice League Task Force (World) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E033599",
+          "desc": "Fake Infinite Time",
+          "address": "0x7E0335"
+        },
+        {
+          "code": "7E053763",
+          "desc": "Infinite Health P1",
+          "address": "0x7E0537"
+        },
+        {
+          "code": "7E054702",
+          "desc": "P1 Wins Match After One Round",
+          "address": "0x7E0547"
+        },
+        {
+          "code": "7E0EFB02",
+          "desc": "P1 Wins Match After One Round",
+          "address": "0x7E0EFB"
+        },
+        {
+          "code": "7E0CF900",
+          "desc": "No Health P2",
+          "address": "0x7E0CF9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

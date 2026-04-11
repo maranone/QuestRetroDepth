@@ -1,0 +1,55 @@
+{
+  "system": "genesis",
+  "normalized_title": "spirou",
+  "display_name": "Spirou (Europe) (En,Fr,De,Es)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Spirou (Europe) (En,Fr,De,Es).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF60B6:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF60B6"
+        },
+        {
+          "code": "FF60B8:0005",
+          "desc": "Infinite Health",
+          "address": "0xFF60B8"
+        },
+        {
+          "code": "FF60B2:0099",
+          "desc": "Infinite Piccolo Hats",
+          "address": "0xFF60B2"
+        },
+        {
+          "code": "FF60B6:0014",
+          "desc": "Infinite Yellow Helicopter Fuel/Air Tank",
+          "address": "0xFF60B6"
+        },
+        {
+          "code": "FF62EA:0000",
+          "desc": "Stage Modifier",
+          "address": "0xFF62EA"
+        },
+        {
+          "code": "FF62D2:00FF",
+          "desc": "Enable debugger.",
+          "address": "0xFF62D2"
+        },
+        {
+          "code": "FFE800:0010",
+          "desc": "Invincibility",
+          "address": "0xFFE800"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "markosmagicfootball",
+  "display_name": "Marko's Magic Football (Europe) (En,Fr,De,Es)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Marko's Magic Football (Europe) (En,Fr,De,Es).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E19F609",
+          "desc": "Infinite Lives",
+          "address": "0x7E19F6"
+        },
+        {
+          "code": "7E19F803",
+          "desc": "Infinite Health",
+          "address": "0x7E19F8"
+        },
+        {
+          "code": "7E102CFF",
+          "desc": "Invincible",
+          "address": "0x7E102C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

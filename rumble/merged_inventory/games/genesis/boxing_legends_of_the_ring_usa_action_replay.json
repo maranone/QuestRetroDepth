@@ -1,0 +1,179 @@
+{
+  "system": "genesis",
+  "normalized_title": "boxinglegendsofring",
+  "display_name": "Boxing Legends of the Ring (USA) (Action Replay)",
+  "aliases": [
+    "Boxing Legends of the Ring (USA) (Action Replay)",
+    "Boxing Legends of the Ring (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\boxinglegendsofthering_genesis.json",
+      "trigger_count": 2,
+      "field_names": [
+        "gameover",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFB461",
+        "0xFFC04D"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BoxingLegendsOfTheRing-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFFC04D",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFB461",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Boxing Legends of the Ring (USA).cht",
+      "total_cheat_rows": 101,
+      "raw_entry_count": 47,
+      "distinct_address_count": 41,
+      "sample_raw_entries": [
+        {
+          "code": "FFB5B7:0012",
+          "desc": "Number of Exhibition Rounds in Options Modifier",
+          "address": "0xFFB5B7"
+        },
+        {
+          "code": "FFBD41:0000",
+          "desc": "Round Length Modifier",
+          "address": "0xFFBD41"
+        },
+        {
+          "code": "FFAA79:0001",
+          "desc": "Difficulty Modifier (In options)",
+          "address": "0xFFAA79"
+        },
+        {
+          "code": "FFC1A3:0028",
+          "desc": "Left Jab attribute modifier",
+          "address": "0xFFC1A3"
+        },
+        {
+          "code": "FFC1A5:0028",
+          "desc": "Left Hook Body Attribute Modifier",
+          "address": "0xFFC1A5"
+        },
+        {
+          "code": "FFC1A7:0028",
+          "desc": "Left Hook Head attribute modifier",
+          "address": "0xFFC1A7"
+        },
+        {
+          "code": "FFC1A9:0028",
+          "desc": "Left Uppercut Attribute Modifier",
+          "address": "0xFFC1A9"
+        },
+        {
+          "code": "FFC1AB:0028",
+          "desc": "Right Cross Body attribute modifier",
+          "address": "0xFFC1AB"
+        },
+        {
+          "code": "FFC1AD:0028",
+          "desc": "Right Cross Head attribute modifier",
+          "address": "0xFFC1AD"
+        },
+        {
+          "code": "FFC1AF:0028",
+          "desc": "Right Uppercut attribute modifier",
+          "address": "0xFFC1AF"
+        },
+        {
+          "code": "FFBB87:0000",
+          "desc": "Attribute Style Modifier",
+          "address": "0xFFBB87"
+        },
+        {
+          "code": "FFB5B1:0001",
+          "desc": "Number of Players Modifier",
+          "address": "0xFFB5B1"
+        },
+        {
+          "code": "FFBB5A:000A",
+          "desc": "Player 1 always plays as ?? Modifier",
+          "address": "0xFFBB5A"
+        },
+        {
+          "code": "FFBD8F:0000",
+          "desc": "Player 1 always plays as ?? Modifier (Alternate)",
+          "address": "0xFFBD8F"
+        },
+        {
+          "code": "FFC229:00BE",
+          "desc": "Special Punch Modifier",
+          "address": "0xFFC229"
+        },
+        {
+          "code": "FFC0CA:0230",
+          "desc": "Max Stamina",
+          "address": "0xFFC0CA"
+        },
+        {
+          "code": "FFC112:0050",
+          "desc": "Max Power",
+          "address": "0xFFC112"
+        },
+        {
+          "code": "FFC0EE:0050",
+          "desc": "Max Chin",
+          "address": "0xFFC0EE"
+        },
+        {
+          "code": "FFC067:000B",
+          "desc": "Play Career Mode as a Legend Modifier",
+          "address": "0xFFC067"
+        },
+        {
+          "code": "FFC05E:0000",
+          "desc": "Rankings Modifier - #1",
+          "address": "0xFFC05E"
+        },
+        {
+          "code": "FFC05F:0000",
+          "desc": "Rankings Modifier - #2",
+          "address": "0xFFC05F"
+        },
+        {
+          "code": "FFC060:0000",
+          "desc": "Rankings Modifier - #3",
+          "address": "0xFFC060"
+        },
+        {
+          "code": "FFC061:0000",
+          "desc": "Rankings Modifier - #4",
+          "address": "0xFFC061"
+        },
+        {
+          "code": "FFC062:0000",
+          "desc": "Rankings Modifier - #5",
+          "address": "0xFFC062"
+        },
+        {
+          "code": "FFC063:0000",
+          "desc": "Rankings Modifier - #6",
+          "address": "0xFFC063"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

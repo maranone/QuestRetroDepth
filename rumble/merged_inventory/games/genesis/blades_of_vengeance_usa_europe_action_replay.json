@@ -1,0 +1,139 @@
+{
+  "system": "genesis",
+  "normalized_title": "bladesofvengeance",
+  "display_name": "Blades of Vengeance (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Blades of Vengeance (USA, Europe) (Action Replay)",
+    "Blades of Vengeance (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\bladesofvengeance_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFF428",
+        "0xFFF46E"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BladesOfVengeance-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFF46E",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF428",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Blades of Vengeance (USA, Europe).cht",
+      "total_cheat_rows": 79,
+      "raw_entry_count": 17,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "FFEB44:0063",
+          "desc": "Unlimited Invisibility For Player 1",
+          "address": "0xFFEB44"
+        },
+        {
+          "code": "FFEB45:0063",
+          "desc": "Unlimited Invisibility For Player 1",
+          "address": "0xFFEB45"
+        },
+        {
+          "code": "FFEB46:0063",
+          "desc": "Unlimited Invisibility For Player 1",
+          "address": "0xFFEB46"
+        },
+        {
+          "code": "FFEB47:0063",
+          "desc": "Unlimited Force Fields For Player 1",
+          "address": "0xFFEB47"
+        },
+        {
+          "code": "FFF46E:0009",
+          "desc": "Unlimited Lives For Player 1",
+          "address": "0xFFF46E"
+        },
+        {
+          "code": "FFF4CC:0009",
+          "desc": "Unlimited Lives For Player 2",
+          "address": "0xFFF4CC"
+        },
+        {
+          "code": "FF9B56:0039",
+          "desc": "Invincibility",
+          "address": "0xFF9B56"
+        },
+        {
+          "code": "FFEB49:0063",
+          "desc": "Infinite Gas Potion",
+          "address": "0xFFEB49"
+        },
+        {
+          "code": "FFEB4A:0063",
+          "desc": "Infinite Keys",
+          "address": "0xFFEB4A"
+        },
+        {
+          "code": "FFEB4B:0063",
+          "desc": "Infinite Strength Scrolls",
+          "address": "0xFFEB4B"
+        },
+        {
+          "code": "FFEB4C:0063",
+          "desc": "Infinite Midas Rings",
+          "address": "0xFFEB4C"
+        },
+        {
+          "code": "FFEB4D:0063",
+          "desc": "Infinite Blast Rods",
+          "address": "0xFFEB4D"
+        },
+        {
+          "code": "FFEB4F:0063",
+          "desc": "Infinite Transform Scroll",
+          "address": "0xFFEB4F"
+        },
+        {
+          "code": "FFF44B:0002",
+          "desc": "Keep Power Of Weapon After The Death",
+          "address": "0xFFF44B"
+        },
+        {
+          "code": "FF9B63:00FF",
+          "desc": "Infinite Health",
+          "address": "0xFF9B63"
+        },
+        {
+          "code": "FF94D1:00FF",
+          "desc": "Infinite Health",
+          "address": "0xFF94D1"
+        },
+        {
+          "code": "FF89E3:0000",
+          "desc": "1 Hit/Shot/Use Blast Kill Enemies/Bosses",
+          "address": "0xFF89E3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

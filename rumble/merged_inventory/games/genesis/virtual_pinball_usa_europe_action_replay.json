@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "virtualpinball",
+  "display_name": "Virtual Pinball (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Virtual Pinball (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Virtual Pinball (USA, Europe).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF6FD0:0000",
+          "desc": "Infinite Balls",
+          "address": "0xFF6FD0"
+        },
+        {
+          "code": "FF0003:0020",
+          "desc": "Play Hidden Game ??",
+          "address": "0xFF0003"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

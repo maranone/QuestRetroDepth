@@ -1,0 +1,101 @@
+{
+  "system": "snes",
+  "normalized_title": "actraiser2",
+  "display_name": "Actraiser 2 (Europe) (Game Genie)",
+  "aliases": [
+    "Actraiser 2 (Europe) (En,Fr,De)",
+    "Actraiser 2 (Europe) (Game Genie)",
+    "Actraiser 2 (Rumbles)",
+    "ActRaiser 2 (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\actraiser2_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E091B",
+        "0x7E0929"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ActRaiser2-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E091B",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0929",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\ActRaiser 2 (USA).cht",
+      "total_cheat_rows": 59,
+      "raw_entry_count": 9,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E094D63",
+          "desc": "Infinite Time",
+          "address": "0x7E094D"
+        },
+        {
+          "code": "7E091D16",
+          "desc": "Infinite Health",
+          "address": "0x7E091D"
+        },
+        {
+          "code": "7F205E18",
+          "desc": "Invinciblity",
+          "address": "0x7F205E"
+        },
+        {
+          "code": "7E091C00",
+          "desc": "Infinite Life",
+          "address": "0x7E091C"
+        },
+        {
+          "code": "7E091DF0",
+          "desc": "Infinite Life",
+          "address": "0x7E091D"
+        },
+        {
+          "code": "7E092109",
+          "desc": "Infinite Magic",
+          "address": "0x7E0921"
+        },
+        {
+          "code": "7E092CFF",
+          "desc": "Infinite Points",
+          "address": "0x7E092C"
+        },
+        {
+          "code": "7E094D99",
+          "desc": "Infinite Time",
+          "address": "0x7E094D"
+        },
+        {
+          "code": "7E091B63",
+          "desc": "Infinite Lives",
+          "address": "0x7E091B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

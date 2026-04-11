@@ -1,0 +1,10 @@
+game_name=Gods (World) (Action Replay)
+game_key=Gods-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_fff1cd	life_lost	0xFFF1CD	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff1cd	life_gained	0xFFF1CD	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_ffef81	score	0xFFEF81	1	bcd	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_ffef83	score	0xFFEF83	1	bcd	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_ffef85	score	0xFFEF85	1	bcd	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score3_ffef87	score	0xFFEF87	1	bcd	native	prev < curr	0.8	1	right:0.350:60

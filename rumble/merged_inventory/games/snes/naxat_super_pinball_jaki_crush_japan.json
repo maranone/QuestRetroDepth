@@ -1,0 +1,55 @@
+{
+  "system": "snes",
+  "normalized_title": "naxatsuperpinballjakicrush",
+  "display_name": "Naxat Super Pinball - Jaki Crush (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Naxat Super Pinball - Jaki Crush (Japan).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E1C6299",
+          "desc": "P1 Infinite Balls",
+          "address": "0x7E1C62"
+        },
+        {
+          "code": "7E1C6399",
+          "desc": "P2 Infinite Balls",
+          "address": "0x7E1C63"
+        },
+        {
+          "code": "7E1D4409",
+          "desc": "P1 Max Bonus Multiplier",
+          "address": "0x7E1D44"
+        },
+        {
+          "code": "7E1D4699",
+          "desc": "P1 Max Bonus Points",
+          "address": "0x7E1D46"
+        },
+        {
+          "code": "7E1D4509",
+          "desc": "P2 Max Bonus Multiplier",
+          "address": "0x7E1D45"
+        },
+        {
+          "code": "7E1D4799",
+          "desc": "P2 Max Bonus Points",
+          "address": "0x7E1D47"
+        },
+        {
+          "code": "7E00C001",
+          "desc": "Cheat Modifier",
+          "address": "0x7E00C0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

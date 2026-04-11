@@ -1,0 +1,45 @@
+{
+  "system": "genesis",
+  "normalized_title": "jimpowerarcadegameb",
+  "display_name": "Jim Power - The Arcade Game (USA) (Proto) [b]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Jim Power - The Arcade Game (USA) (Proto) [b].cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFE85A:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFE85A"
+        },
+        {
+          "code": "FFE85C:009B",
+          "desc": "Infinite Time",
+          "address": "0xFFE85C"
+        },
+        {
+          "code": "FFE85A:000A",
+          "desc": "Infinite Bombs",
+          "address": "0xFFE85A"
+        },
+        {
+          "code": "FFE85C:0009",
+          "desc": "Infinite Keys",
+          "address": "0xFFE85C"
+        },
+        {
+          "code": "FFEA40:0010",
+          "desc": "Invincibility Flashing",
+          "address": "0xFFEA40"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

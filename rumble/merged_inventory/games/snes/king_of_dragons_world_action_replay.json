@@ -1,0 +1,67 @@
+{
+  "system": "snes",
+  "normalized_title": "kingofdragons",
+  "display_name": "King of Dragons (World) (Action Replay)",
+  "aliases": [
+    "King of Dragons (USA)",
+    "King of Dragons (World) (Action Replay)",
+    "King of Dragons (World) (Game Genie)",
+    "King Of Dragons- The (Rumbles)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\kingofdragons_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E0B9A",
+        "0x7E0BEC",
+        "0x7E0C12"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KingOfDragons-Snes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "continue",
+          "address": "0x7E0C0C",
+          "type": "|i1"
+        },
+        {
+          "name": "health",
+          "address": "0x7E0B9A",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E0BEC",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0C12",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\King Of Dragons- The (Rumbles).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "verneworld",
+  "display_name": "Verne World (Japan) (Action Replay)",
+  "aliases": [
+    "Verne World (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Verne World (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7ECD760F",
+          "desc": "Infinite Energy (Character 1)",
+          "address": "0x7ECD76"
+        },
+        {
+          "code": "7ECD7727",
+          "desc": "Infinite Energy (Character 1)",
+          "address": "0x7ECD77"
+        },
+        {
+          "code": "7ECDAC0F",
+          "desc": "Infinite Energy (Character 2)",
+          "address": "0x7ECDAC"
+        },
+        {
+          "code": "7ECDAD27",
+          "desc": "Infinite Energy (Character 2)",
+          "address": "0x7ECDAD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

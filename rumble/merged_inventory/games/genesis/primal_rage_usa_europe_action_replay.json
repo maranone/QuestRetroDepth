@@ -1,0 +1,132 @@
+{
+  "system": "genesis",
+  "normalized_title": "primalrage",
+  "display_name": "Primal Rage (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Primal Rage (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Primal Rage (USA, Europe).cht",
+      "total_cheat_rows": 38,
+      "raw_entry_count": 22,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "FFE366:0000",
+          "desc": "Infinite Energy",
+          "address": "0xFFE366"
+        },
+        {
+          "code": "FFE298:552D",
+          "desc": "Freeze Time",
+          "address": "0xFFE298"
+        },
+        {
+          "code": "FFE298:0009",
+          "desc": "Infinite Time (At Character Select &amp; In-Game)",
+          "address": "0xFFE298"
+        },
+        {
+          "code": "FFE3EE:0000",
+          "desc": "Character Highlighter Modifier P1",
+          "address": "0xFFE3EE"
+        },
+        {
+          "code": "FFE5B0:0000",
+          "desc": "Character Highlighter Modifier P2",
+          "address": "0xFFE5B0"
+        },
+        {
+          "code": "FFB020:0000",
+          "desc": "Character Modifier P1",
+          "address": "0xFFB020"
+        },
+        {
+          "code": "FFB0E8:0000",
+          "desc": "Character Modifier P2",
+          "address": "0xFFB0E8"
+        },
+        {
+          "code": "FFEAAE:000A",
+          "desc": "Press Up For Extra Options (Title Screen)",
+          "address": "0xFFEAAE"
+        },
+        {
+          "code": "FFE366:0000",
+          "desc": "Infinite Health P1",
+          "address": "0xFFE366"
+        },
+        {
+          "code": "FFE366:002F",
+          "desc": "1-Hit Death P1",
+          "address": "0xFFE366"
+        },
+        {
+          "code": "FFE528:0000",
+          "desc": "Infinite Health P2",
+          "address": "0xFFE528"
+        },
+        {
+          "code": "FFE528:002F",
+          "desc": "1-Hit Death P2",
+          "address": "0xFFE528"
+        },
+        {
+          "code": "FFE36A:0000",
+          "desc": "Infinite Focus P1",
+          "address": "0xFFE36A"
+        },
+        {
+          "code": "FFE36A:0019",
+          "desc": "1-Hit Dizziness P1",
+          "address": "0xFFE36A"
+        },
+        {
+          "code": "FFE52C:0000",
+          "desc": "Infinite Focus P2",
+          "address": "0xFFE52C"
+        },
+        {
+          "code": "FFE52C:0019",
+          "desc": "1-Hit Dizziness P2",
+          "address": "0xFFE52C"
+        },
+        {
+          "code": "FFB07E:0000",
+          "desc": "Hyper Mode P1",
+          "address": "0xFFB07E"
+        },
+        {
+          "code": "FFB146:0000",
+          "desc": "Hyper Mode P2",
+          "address": "0xFFB146"
+        },
+        {
+          "code": "FFE298:0001",
+          "desc": "Timer Stopped",
+          "address": "0xFFE298"
+        },
+        {
+          "code": "FFE29A:0099",
+          "desc": "Timer Starts At 99 Seconds",
+          "address": "0xFFE29A"
+        },
+        {
+          "code": "FFEA54:0001",
+          "desc": "Rounds To Win Modifier",
+          "address": "0xFFEA54"
+        },
+        {
+          "code": "FFEA52:0000",
+          "desc": "Players Need 1 Round To Win",
+          "address": "0xFFEA52"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

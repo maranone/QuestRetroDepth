@@ -1,0 +1,7 @@
+game_name=Superman (USA) (Action Replay)
+game_key=Superman-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ff97cf	damage_taken	0xFF97CF	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff97cf	death	0xFF97CF	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_ff97c2	score	0xFF97C2	4	bcd	big	prev < curr	0.8	1	right:0.350:60

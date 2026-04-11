@@ -1,0 +1,7 @@
+game_name=Gynoug (Europe, Japan) (Action Replay)
+game_key=Gynoug-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ffd6cd	life_lost	0xFFD6CD	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffd6cd	life_gained	0xFFD6CD	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ffd6ba	score	0xFFD6BA	4	bcd	big	prev < curr	0.8	1	right:0.350:60

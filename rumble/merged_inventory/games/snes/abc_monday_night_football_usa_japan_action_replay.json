@@ -1,0 +1,33 @@
+{
+  "system": "snes",
+  "normalized_title": "abcmondaynightfootball",
+  "display_name": "ABC Monday Night Football (USA, Japan) (Action Replay)",
+  "aliases": [
+    "ABC Monday Night Football (USA)",
+    "ABC Monday Night Football (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\ABC Monday Night Football (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E11A559",
+          "desc": "FAKE Infinite Time",
+          "address": "0x7E11A5"
+        },
+        {
+          "code": "7E11A604",
+          "desc": "FAKE Infinite Time",
+          "address": "0x7E11A6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

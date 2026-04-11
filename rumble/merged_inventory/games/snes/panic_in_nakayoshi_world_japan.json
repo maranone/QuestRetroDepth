@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "panicinnakayoshiworld",
+  "display_name": "Panic in Nakayoshi World (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Panic in Nakayoshi World (Japan).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E0D0609",
+          "desc": "Infinite Lives",
+          "address": "0x7E0D06"
+        },
+        {
+          "code": "7E0AAE59",
+          "desc": "Infinite Time",
+          "address": "0x7E0AAE"
+        },
+        {
+          "code": "7E0E0700",
+          "desc": "Always Have Shield",
+          "address": "0x7E0E07"
+        },
+        {
+          "code": "7E0E0AFF",
+          "desc": "Always Have Shield",
+          "address": "0x7E0E0A"
+        },
+        {
+          "code": "7E0CF803",
+          "desc": "Max Power",
+          "address": "0x7E0CF8"
+        },
+        {
+          "code": "7E0F9400",
+          "desc": "One Enemy To Win Level",
+          "address": "0x7E0F94"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "DickVitalesAwesomeBabyCollegeHoops",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "third_party\\openai-retro\\retro\\data\\stable\\DickVitalesAwesomeBabyCollegeHoops-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "DickVitalesAwesomeBabyCollegeHoops-Genesis"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "name": "california_score",
+      "meta": {
+        "address": 16717620,
+        "type": ">d2"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "nevada_score",
+      "meta": {
+        "address": 16717624,
+        "type": ">d2"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "quarter",
+      "meta": {
+        "address": 16717605,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time",
+      "meta": {
+        "address": 16717592,
+        "type": ">d2"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

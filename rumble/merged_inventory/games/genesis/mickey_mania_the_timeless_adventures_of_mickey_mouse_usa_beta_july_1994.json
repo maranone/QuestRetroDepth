@@ -1,0 +1,49 @@
+{
+  "system": "genesis",
+  "normalized_title": "mickeymaniatimelessadventuresofmickeymouse",
+  "display_name": "Mickey Mania - The Timeless Adventures of Mickey Mouse (USA) (Beta) (July, 1994)",
+  "aliases": [
+    "Mickey Mania - The Timeless Adventures of Mickey Mouse (USA) (Beta) (July, 1994)",
+    "Mickey Mania - The Timeless Adventures of Mickey Mouse (USA)",
+    "Mickey Mania - The Timeless Adventures of Mickey Mouse (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mickey Mania - The Timeless Adventures of Mickey Mouse (World) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF046F:04",
+          "desc": "Infinite Hits",
+          "address": "0xFF046F"
+        },
+        {
+          "code": "FF0467:09",
+          "desc": "Infinite Lives",
+          "address": "0xFF0467"
+        },
+        {
+          "code": "FF0471:09",
+          "desc": "Infinite Black Balls",
+          "address": "0xFF0471"
+        },
+        {
+          "code": "FF06C1:26",
+          "desc": "Ghost Mickey",
+          "address": "0xFF06C1"
+        },
+        {
+          "code": "FF045B:01",
+          "desc": "Stage Select Enabled (Press Start On Start Game)",
+          "address": "0xFF045B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

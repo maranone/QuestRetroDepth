@@ -1,0 +1,58 @@
+{
+  "system": "genesis",
+  "normalized_title": "spiderman",
+  "display_name": "Spider-Man (USA, Europe) (Acclaim)",
+  "aliases": [
+    "Spider-Man (World) (Action Replay)",
+    "Spider-Man (World) (Sega)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Spider-Man (World) (Sega).cht",
+      "total_cheat_rows": 57,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FFE71C:003F",
+          "desc": "Infinite Health",
+          "address": "0xFFE71C"
+        },
+        {
+          "code": "FFE706:0095",
+          "desc": "Infinite Webbing",
+          "address": "0xFFE706"
+        },
+        {
+          "code": "FFE6E6:0009",
+          "desc": "Infinite Photographs",
+          "address": "0xFFE6E6"
+        },
+        {
+          "code": "FFE684:00FF",
+          "desc": "Infinite/Max Money",
+          "address": "0xFFE684"
+        },
+        {
+          "code": "FFE691:003B",
+          "desc": "Unlimited Time",
+          "address": "0xFFE691"
+        },
+        {
+          "code": "FFE720:0010",
+          "desc": "Invincible",
+          "address": "0xFFE720"
+        },
+        {
+          "code": "FFE69E:00FF",
+          "desc": "Enable Debug Menu/Press Start in Game (Button A restore the web) (Button B increase energy) (Button C 5 seconds Invincibility) (Press Start And Buttons A+B+C Skip Levels)",
+          "address": "0xFFE69E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

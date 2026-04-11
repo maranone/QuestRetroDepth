@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "aerobiz",
+  "display_name": "Aerobiz (USA) (Action Replay)",
+  "aliases": [
+    "Aerobiz (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Aerobiz (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFC7B0:00FF",
+          "desc": "Have Tons Of Money",
+          "address": "0xFFC7B0"
+        },
+        {
+          "code": "FFC7B2:00FF",
+          "desc": "Have Tons Of Money",
+          "address": "0xFFC7B2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

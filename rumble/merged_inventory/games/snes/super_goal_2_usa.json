@@ -1,0 +1,45 @@
+{
+  "system": "snes",
+  "normalized_title": "supergoal2",
+  "display_name": "Super Goal! 2 (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Goal! 2 (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E0EF200",
+          "desc": "Time Modifier",
+          "address": "0x7E0EF2"
+        },
+        {
+          "code": "7E0EF300",
+          "desc": "Time Modifier",
+          "address": "0x7E0EF3"
+        },
+        {
+          "code": "7E0EF400",
+          "desc": "Time Modifier",
+          "address": "0x7E0EF4"
+        },
+        {
+          "code": "7E0F0000",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0x7E0F00"
+        },
+        {
+          "code": "7E0F0200",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0x7E0F02"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

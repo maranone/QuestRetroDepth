@@ -1,0 +1,32 @@
+{
+  "system": "snes",
+  "normalized_title": "internationalsuperstarsoccerdeluxe",
+  "display_name": "International Superstar Soccer Deluxe (USA, Europe) (Action Replay)",
+  "aliases": [
+    "International Superstar Soccer Deluxe (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\International Superstar Soccer Deluxe (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E16D223",
+          "desc": "Infinite Time",
+          "address": "0x7E16D2"
+        },
+        {
+          "code": "7E0DA214",
+          "desc": "Start With 20 Goals",
+          "address": "0x7E0DA2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

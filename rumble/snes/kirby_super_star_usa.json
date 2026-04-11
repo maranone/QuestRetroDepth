@@ -1,0 +1,49 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Kirby Super Star (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Kirby Super Star (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "DB22-D7A4",
+      "desc": "Start With 9 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7422-D7A4",
+      "desc": "Start With 50 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1722-D7A4",
+      "desc": "Start With 99 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C263-AF02",
+      "desc": "Infinite Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1182-D405",
+      "desc": "Fall Through Floors",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE27-0F03",
+      "desc": "Black/Orange Kirby",
+      "kind": "game_genie"
+    },
+    {
+      "code": "62E2-AD61",
+      "desc": "Infinite Health",
+      "kind": "game_genie"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=European Club Soccer (Europe) (Action Replay)
+game_key=EuropeanClubSoccer-Genesis
+system=genesis
+integration_tier=stable
+trigger	score_score_ff2402	score	0xFF2402	2	uint	big	prev < curr	0.8	1	right:0.350:60

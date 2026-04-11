@@ -1,0 +1,32 @@
+{
+  "system": "snes",
+  "normalized_title": "youchiensenkimadara",
+  "display_name": "Youchien Senki Madara (Japan) (Action Replay)",
+  "aliases": [
+    "Youchien Senki Madara (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Youchien Senki Madara (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E8348E7",
+          "desc": "Infinite Coins",
+          "address": "0x7E8348"
+        },
+        {
+          "code": "7E834903",
+          "desc": "Infinite Coins",
+          "address": "0x7E8349"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

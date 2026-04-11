@@ -1,0 +1,143 @@
+{
+  "system": "snes",
+  "normalized_title": "chavez",
+  "display_name": "Chavez (USA) (Action Replay)",
+  "aliases": [
+    "Chavez (USA) (Beta)",
+    "Chavez (USA) (Es)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Chavez (USA) (Es).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 24,
+      "distinct_address_count": 24,
+      "sample_raw_entries": [
+        {
+          "code": "7E0E6500",
+          "desc": "Cabeza / Head Modifier",
+          "address": "0x7E0E65"
+        },
+        {
+          "code": "7E0E66BE",
+          "desc": "Cabello / Hair Color Modifier",
+          "address": "0x7E0E66"
+        },
+        {
+          "code": "7E0E6700",
+          "desc": "Piel / Skin Color Modifier",
+          "address": "0x7E0E67"
+        },
+        {
+          "code": "7E0E6800",
+          "desc": "Guantes / Gloves Color Modifier",
+          "address": "0x7E0E68"
+        },
+        {
+          "code": "7E0E6ABE",
+          "desc": "Poder / Power",
+          "address": "0x7E0E6A"
+        },
+        {
+          "code": "7E0E6C00",
+          "desc": "Velocidad / Speed",
+          "address": "0x7E0E6C"
+        },
+        {
+          "code": "7E0E6E00",
+          "desc": "Condicion / Stamina",
+          "address": "0x7E0E6E"
+        },
+        {
+          "code": "7E0E1900",
+          "desc": "Player 1 Health Modifier",
+          "address": "0x7E0E19"
+        },
+        {
+          "code": "7E0F1900",
+          "desc": "Player 2 Health Modifier",
+          "address": "0x7E0F19"
+        },
+        {
+          "code": "7E0E1B00",
+          "desc": "Player 1 Head Damage Modifier",
+          "address": "0x7E0E1B"
+        },
+        {
+          "code": "7E0F1B00",
+          "desc": "Player 2 Head Damage Modifier",
+          "address": "0x7E0F1B"
+        },
+        {
+          "code": "7E0E1D00",
+          "desc": "Player 1 Body Damage Modifier",
+          "address": "0x7E0E1D"
+        },
+        {
+          "code": "7E0F1D00",
+          "desc": "Player 2 Body Damage Modifier",
+          "address": "0x7E0F1D"
+        },
+        {
+          "code": "7E0E2700",
+          "desc": "Player 1 Health Regeneration Rate Modifier",
+          "address": "0x7E0E27"
+        },
+        {
+          "code": "7E0F2700",
+          "desc": "Player 2 Health Regeneration Rate Modifier",
+          "address": "0x7E0F27"
+        },
+        {
+          "code": "7E0E2F01",
+          "desc": "Player 1 has ultra fast punches",
+          "address": "0x7E0E2F"
+        },
+        {
+          "code": "7E0F2F01",
+          "desc": "Player 2 has ultra fast punches",
+          "address": "0x7E0F2F"
+        },
+        {
+          "code": "7E0E3D00",
+          "desc": "Player 1 Movement Speed Modifier",
+          "address": "0x7E0E3D"
+        },
+        {
+          "code": "7E0F3D00",
+          "desc": "Player 2 Movement Speed Modifier",
+          "address": "0x7E0F3D"
+        },
+        {
+          "code": "7E0E0100",
+          "desc": "Player 1 Can't Move",
+          "address": "0x7E0E01"
+        },
+        {
+          "code": "7E0E0300",
+          "desc": "Player 1 Can't Move",
+          "address": "0x7E0E03"
+        },
+        {
+          "code": "7E0F0100",
+          "desc": "Player 2 Can't Move",
+          "address": "0x7E0F01"
+        },
+        {
+          "code": "7E0F0300",
+          "desc": "Player 2 Can't Move",
+          "address": "0x7E0F03"
+        },
+        {
+          "code": "7E006401",
+          "desc": "Fight Anyone Regardless of Ranking",
+          "address": "0x7E0064"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

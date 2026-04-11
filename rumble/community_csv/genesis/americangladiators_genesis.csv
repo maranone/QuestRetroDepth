@@ -1,0 +1,6 @@
+# schema=qrd_rumble_csv_v1
+# game_name=American Gladiators (USA)
+# match_names=americangladiators|americangladiatorsgenesis
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+game_over_gameover_ff1318,0xFF1318,1,int,became_nonzero,,both,1.000,normal,0,1000,400,100,
+score_score_ff0010,0xFF0010,2,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,

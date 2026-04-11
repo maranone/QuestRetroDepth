@@ -1,0 +1,63 @@
+{
+  "system": "genesis",
+  "normalized_title": "adventuresofbatmanrobin",
+  "display_name": "Adventures of Batman _ Robin, The (USA, Europe)",
+  "aliases": [
+    "Adventures of Batman _ Robin, The (USA)",
+    "Adventures of Batman _ Robin, The (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Adventures of Batman _ Robin, The (USA, Europe).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FFAE23:64",
+          "desc": "Freeze Timer At Continue Screen",
+          "address": "0xFFAE23"
+        },
+        {
+          "code": "FFB14F:XX",
+          "desc": "P1's Jump Height",
+          "address": "0xFFB14F"
+        },
+        {
+          "code": "FFF658:2D",
+          "desc": "Infinite Weapon Orange Bar P1",
+          "address": "0xFFF658"
+        },
+        {
+          "code": "FFF64F:09",
+          "desc": "Infinite Continues (Both Player)",
+          "address": "0xFFF64F"
+        },
+        {
+          "code": "FFF657:09",
+          "desc": "Infinite Lives P1",
+          "address": "0xFFF657"
+        },
+        {
+          "code": "FFC1B0:00",
+          "desc": "No Health Remaining For 1st Boss",
+          "address": "0xFFC1B0"
+        },
+        {
+          "code": "FFF698:2D",
+          "desc": "Infinite Weapon Orange Bar P2",
+          "address": "0xFFF698"
+        },
+        {
+          "code": "FFF697:09",
+          "desc": "Infinite Lives P2",
+          "address": "0xFFF697"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

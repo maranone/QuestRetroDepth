@@ -1,0 +1,92 @@
+{
+  "system": "genesis",
+  "normalized_title": "topgear2",
+  "display_name": "Top Gear 2 (USA) (Action Replay)",
+  "aliases": [
+    "Top Gear 2 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Top Gear 2 (USA).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 14,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "FF1B84:270F",
+          "desc": "Infinite Money",
+          "address": "0xFF1B84"
+        },
+        {
+          "code": "FF1B9E:0006",
+          "desc": "Infinite Nitro",
+          "address": "0xFF1B9E"
+        },
+        {
+          "code": "FF18D8:0013",
+          "desc": "Acceleration Modifier P1",
+          "address": "0xFF18D8"
+        },
+        {
+          "code": "FF1994:0000",
+          "desc": "Lap Modifier P1",
+          "address": "0xFF1994"
+        },
+        {
+          "code": "FF199C:00BE",
+          "desc": "Position Modifier P1",
+          "address": "0xFF199C"
+        },
+        {
+          "code": "FF2570:00FF",
+          "desc": "Have Lots of Money",
+          "address": "0xFF2570"
+        },
+        {
+          "code": "FF2570:00FF",
+          "desc": "Have Lots of Money",
+          "address": "0xFF2570"
+        },
+        {
+          "code": "FF1B84:0000",
+          "desc": "Total Points Modifier P1",
+          "address": "0xFF1B84"
+        },
+        {
+          "code": "FF21A4:0000",
+          "desc": "Dave Total Points Modifier",
+          "address": "0xFF21A4"
+        },
+        {
+          "code": "FF21AA:0000",
+          "desc": "Nigel Total Points Modifier",
+          "address": "0xFF21AA"
+        },
+        {
+          "code": "FF21B0:0000",
+          "desc": "Ali Total Points Modifier",
+          "address": "0xFF21B0"
+        },
+        {
+          "code": "FF21C2:0000",
+          "desc": "Mick Total Points Modifier",
+          "address": "0xFF21C2"
+        },
+        {
+          "code": "FF21C8:0000",
+          "desc": "Ritchie Total Points Modifier",
+          "address": "0xFF21C8"
+        },
+        {
+          "code": "FF21CE:0000",
+          "desc": "Roz Total Points Modifier",
+          "address": "0xFF21CE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

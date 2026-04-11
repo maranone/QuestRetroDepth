@@ -1,0 +1,59 @@
+{
+  "system": "genesis",
+  "normalized_title": "soldeace",
+  "display_name": "Sol-Deace (USA) (Action Replay)",
+  "aliases": [
+    "Sol-Deace (USA) (Action Replay)",
+    "Sol-Deace (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\soldeace_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF9E76",
+        "0xFFA0A5"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SolDeace-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFA0A5",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF9E76",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sol-Deace (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFA0A5:0004",
+          "desc": "Unlimited Men",
+          "address": "0xFFA0A5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

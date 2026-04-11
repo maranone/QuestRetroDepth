@@ -1,0 +1,99 @@
+{
+  "system": "genesis",
+  "normalized_title": "mcdonaldstreasurelandadventure",
+  "display_name": "McDonald's Treasure Land Adventure (World) (Action Replay)",
+  "aliases": [
+    "McDonald's Treasure Land Adventure (Europe)",
+    "McDonald's Treasure Land Adventure (Japan) (Beta)",
+    "McDonald's Treasure Land Adventure (Japan)",
+    "McDonald's Treasure Land Adventure (USA)",
+    "McDonald's Treasure Land Adventure (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\mcdonaldstreasurelandadventure_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFE051",
+        "0xFFE059",
+        "0xFFE05A"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\McDonaldsTreasureLandAdventure-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFE051",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFE059",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFE05A",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\McDonald's Treasure Land Adventure (World) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FFE227:05",
+          "desc": "Stage Select Enabled",
+          "address": "0xFFE227"
+        },
+        {
+          "code": "FFE051:05",
+          "desc": "Infinite Energy",
+          "address": "0xFFE051"
+        },
+        {
+          "code": "FFE059:99",
+          "desc": "Infinite Lives",
+          "address": "0xFFE059"
+        },
+        {
+          "code": "FFE143:05",
+          "desc": "Infinite Magic",
+          "address": "0xFFE143"
+        },
+        {
+          "code": "FFE057:05",
+          "desc": "Infinite Balloons",
+          "address": "0xFFE057"
+        },
+        {
+          "code": "FFE053:02",
+          "desc": "Fill Orange Flowers Bar",
+          "address": "0xFFE053"
+        },
+        {
+          "code": "FFE055:03",
+          "desc": "Fill White Flowers Bar",
+          "address": "0xFFE055"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "xperts",
+  "display_name": "X-Perts (USA) (Action Replay)",
+  "aliases": [
+    "X-Perts (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\X-Perts (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF92A6:0078",
+          "desc": "Infinite Energy Zach",
+          "address": "0xFF92A6"
+        },
+        {
+          "code": "FF92AC:0063",
+          "desc": "Infinite Ammo Zach",
+          "address": "0xFF92AC"
+        },
+        {
+          "code": "FF9788:0064",
+          "desc": "Infinite Energy Tashile",
+          "address": "0xFF9788"
+        },
+        {
+          "code": "FF978E:0063",
+          "desc": "Infinite Ammo Taschile",
+          "address": "0xFF978E"
+        },
+        {
+          "code": "FF9C6A:004B",
+          "desc": "Infinite Energy Shadow",
+          "address": "0xFF9C6A"
+        },
+        {
+          "code": "FF9C70:0063",
+          "desc": "Infinite Ammo Shadow",
+          "address": "0xFF9C70"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

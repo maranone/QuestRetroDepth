@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "elnard",
+  "display_name": "Elnard (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Elnard (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E09C040",
+          "desc": "Infinite Health",
+          "address": "0x7E09C0"
+        },
+        {
+          "code": "7E008C20",
+          "desc": "Max Power",
+          "address": "0x7E008C"
+        },
+        {
+          "code": "7E09DE09",
+          "desc": "9 Item?",
+          "address": "0x7E09DE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

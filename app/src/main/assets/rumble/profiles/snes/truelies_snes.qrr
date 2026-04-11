@@ -1,0 +1,5 @@
+game_name=TrueLies
+game_key=TrueLies-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_3_8ba	damage_taken	0x7E08BA	1	uint	native	prev > curr	0.85	1	left:0.750:180

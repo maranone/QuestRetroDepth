@@ -1,0 +1,180 @@
+{
+  "system": "snes",
+  "normalized_title": "peacekeepers",
+  "display_name": "Peace Keepers, The (USA) (Action Replay)",
+  "aliases": [
+    "Peace Keepers - The (Rumbles)",
+    "Peace Keepers, The (USA) (Action Replay)",
+    "Peace Keepers, The (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\peacekeepers_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0694",
+        "0x7E1E1C"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\PeaceKeepers-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E0694",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E1E1C",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Peace Keepers, The (USA).cht",
+      "total_cheat_rows": 76,
+      "raw_entry_count": 74,
+      "distinct_address_count": 62,
+      "sample_raw_entries": [
+        {
+          "code": "7E06944F",
+          "desc": "Infinite Energy",
+          "address": "0x7E0694"
+        },
+        {
+          "code": "7E06DB02",
+          "desc": "Infinite SP",
+          "address": "0x7E06DB"
+        },
+        {
+          "code": "7E06CE32",
+          "desc": "Untouchable",
+          "address": "0x7E06CE"
+        },
+        {
+          "code": "7E00E901",
+          "desc": "Unlock Secret Characters",
+          "address": "0x7E00E9"
+        },
+        {
+          "code": "7E00EB01",
+          "desc": "Unlock Secret Characters",
+          "address": "0x7E00EB"
+        },
+        {
+          "code": "7E168005",
+          "desc": "Force To Pick Orbot",
+          "address": "0x7E1680"
+        },
+        {
+          "code": "7E069450",
+          "desc": "Infinite Health P1",
+          "address": "0x7E0694"
+        },
+        {
+          "code": "7E079450",
+          "desc": "Infinite Health P2",
+          "address": "0x7E0794"
+        },
+        {
+          "code": "7E099400",
+          "desc": "Enemy 1 With No Health Left",
+          "address": "0x7E0994"
+        },
+        {
+          "code": "7E0A9400",
+          "desc": "Enemy 2 With No Health Left",
+          "address": "0x7E0A94"
+        },
+        {
+          "code": "7E089400",
+          "desc": "Enemy 3 With No Health Left",
+          "address": "0x7E0894"
+        },
+        {
+          "code": "7E062700",
+          "desc": "Forced Character Selection P1",
+          "address": "0x7E0627"
+        },
+        {
+          "code": "7E072700",
+          "desc": "Forced Character Selection P2",
+          "address": "0x7E0727"
+        },
+        {
+          "code": "7E072701",
+          "desc": "Special Glitch",
+          "address": "0x7E0727"
+        },
+        {
+          "code": "7E06DB09",
+          "desc": "Infinite Special Stocks Player 1",
+          "address": "0x7E06DB"
+        },
+        {
+          "code": "7E07DB09",
+          "desc": "Infinite Special Stocks Player 2",
+          "address": "0x7E07DB"
+        },
+        {
+          "code": "7E007C63",
+          "desc": "Infinite Continues",
+          "address": "0x7E007C"
+        },
+        {
+          "code": "7E06CF01",
+          "desc": "Player 1 In Angry Mode",
+          "address": "0x7E06CF"
+        },
+        {
+          "code": "7E07CF01",
+          "desc": "Player 2 In Angry Mode",
+          "address": "0x7E07CF"
+        },
+        {
+          "code": "7E06CE6F",
+          "desc": "Invincible P1",
+          "address": "0x7E06CE"
+        },
+        {
+          "code": "7E00FC99",
+          "desc": "Infinite Continues",
+          "address": "0x7E00FC"
+        },
+        {
+          "code": "7E00EB01",
+          "desc": "Enable Norton",
+          "address": "0x7E00EB"
+        },
+        {
+          "code": "7E00E901",
+          "desc": "Enable Orbot",
+          "address": "0x7E00E9"
+        },
+        {
+          "code": "7E00EA00",
+          "desc": "Bugger Off, Echo",
+          "address": "0x7E00EA"
+        },
+        {
+          "code": "7E06CF5F",
+          "desc": "Infinite Superman Time (Flynn)",
+          "address": "0x7E06CF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

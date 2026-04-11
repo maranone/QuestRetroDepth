@@ -1,0 +1,7 @@
+game_name=Uchuu no Kishi Tekkaman Blade (Japan)
+game_key=UchuuNoKishiTekkamanBlade-Snes
+system=snes
+integration_tier=stable
+trigger	life_lost_lives_0eb0	life_lost	0x7E0EB0	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0eb0	life_gained	0x7E0EB0	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0e80	score	0x7E0E80	8	nibble	big	prev < curr	0.8	1	right:0.350:60

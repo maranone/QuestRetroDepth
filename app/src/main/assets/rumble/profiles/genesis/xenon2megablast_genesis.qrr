@@ -1,0 +1,7 @@
+game_name=Xenon 2 - Megablast (Europe) (Action Replay)
+game_key=Xenon2Megablast-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ff0839	life_lost	0xFF0839	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff0839	life_gained	0xFF0839	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ff0800	score	0xFF0800	4	uint	big	prev < curr	0.8	1	right:0.350:60

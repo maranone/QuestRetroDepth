@@ -1,0 +1,55 @@
+{
+  "system": "genesis",
+  "normalized_title": "rockmanx3",
+  "display_name": "Rockman X3",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Rockman X3.cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF0076:0014",
+          "desc": "Infinite Hp",
+          "address": "0xFF0076"
+        },
+        {
+          "code": "FFE5B6:0003",
+          "desc": "Instant Super Shot",
+          "address": "0xFFE5B6"
+        },
+        {
+          "code": "FF0212:0000",
+          "desc": "Boss Hp Modifier",
+          "address": "0xFF0212"
+        },
+        {
+          "code": "FF0074:001E",
+          "desc": "Hp Bar Size",
+          "address": "0xFF0074"
+        },
+        {
+          "code": "FFE7A0:0000",
+          "desc": "P1 X-Axis Modifier",
+          "address": "0xFFE7A0"
+        },
+        {
+          "code": "FFE7A2:0000",
+          "desc": "P1 Y-Axis Modifier",
+          "address": "0xFFE7A2"
+        },
+        {
+          "code": "FF0186:0001",
+          "desc": "Stage Select Menu",
+          "address": "0xFF0186"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

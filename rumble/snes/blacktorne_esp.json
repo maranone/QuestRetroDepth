@@ -1,0 +1,24 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Blacktorne [Esp]",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Blacktorne [Esp].cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "89C6-1FD4",
+      "desc": "Infinite Items",
+      "kind": "game_genie"
+    },
+    {
+      "code": "82C8-CFA4",
+      "desc": "Infinite Health (Switch Off When Picking Up Items)",
+      "kind": "game_genie"
+    }
+  ]
+}

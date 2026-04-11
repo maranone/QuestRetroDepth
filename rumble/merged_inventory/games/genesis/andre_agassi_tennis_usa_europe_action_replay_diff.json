@@ -1,0 +1,33 @@
+{
+  "system": "genesis",
+  "normalized_title": "andreagassitennis",
+  "display_name": "Andre Agassi Tennis (USA, Europe) (Action Replay) (diff)",
+  "aliases": [
+    "Andre Agassi Tennis (USA, Europe) (Action Replay) (diff)",
+    "Andre Agassi Tennis (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Andre Agassi Tennis (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFCEA7:XX",
+          "desc": "1P Score Modifier",
+          "address": "0xFFCEA7"
+        },
+        {
+          "code": "FFCEA9:XX",
+          "desc": "Opponent (2P) Score Modifier",
+          "address": "0xFFCEA9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

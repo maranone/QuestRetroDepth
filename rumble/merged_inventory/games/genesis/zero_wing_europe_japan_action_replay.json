@@ -1,0 +1,59 @@
+{
+  "system": "genesis",
+  "normalized_title": "zerowing",
+  "display_name": "Zero Wing (Europe, Japan) (Action Replay)",
+  "aliases": [
+    "Zero Wing (Europe)",
+    "Zero Wing (Europe, Japan) (Action Replay)",
+    "Zero Wing (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\zerowing_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF00F0",
+        "0xFF00FD"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ZeroWing-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "levelLo",
+          "address": "0xFF00E3",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF00FD",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF00F0",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Zero Wing (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

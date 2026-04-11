@@ -1,0 +1,92 @@
+{
+  "system": "snes",
+  "normalized_title": "joemac",
+  "display_name": "Joe _ Mac (USA) (Game Genie)",
+  "aliases": [
+    "Joe _ Mac (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Joe _ Mac (USA).cht",
+      "total_cheat_rows": 31,
+      "raw_entry_count": 14,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "7E081C14",
+          "desc": "P1 Infinite Health",
+          "address": "0x7E081C"
+        },
+        {
+          "code": "7E082205",
+          "desc": "P1 Infinite Lives",
+          "address": "0x7E0822"
+        },
+        {
+          "code": "7E081AB8",
+          "desc": "P1 Weapon Modifier",
+          "address": "0x7E081A"
+        },
+        {
+          "code": "7E085C0F",
+          "desc": "P2 Infinite Health",
+          "address": "0x7E085C"
+        },
+        {
+          "code": "7E086205",
+          "desc": "P2 Infinite Lives",
+          "address": "0x7E0862"
+        },
+        {
+          "code": "7E085AB8",
+          "desc": "P2 Weapon Modifier",
+          "address": "0x7E085A"
+        },
+        {
+          "code": "7E111C00",
+          "desc": "Most Bosses And Some Enemies Die Immediately",
+          "address": "0x7E111C"
+        },
+        {
+          "code": "7E083836",
+          "desc": "Switch To Angel [Useful To Get Hard To Reach Items",
+          "address": "0x7E0838"
+        },
+        {
+          "code": "7E081AAB",
+          "desc": "Fire Weapon",
+          "address": "0x7E081A"
+        },
+        {
+          "code": "7E081ABA",
+          "desc": "Boomerang Weapon",
+          "address": "0x7E081A"
+        },
+        {
+          "code": "7E081AAC",
+          "desc": "Wheel Weapon",
+          "address": "0x7E081A"
+        },
+        {
+          "code": "7E081A89",
+          "desc": "Bone Weapon",
+          "address": "0x7E081A"
+        },
+        {
+          "code": "7E083501",
+          "desc": "Infinite Keys",
+          "address": "0x7E0835"
+        },
+        {
+          "code": "7E082302",
+          "desc": "Invincible / Walk Thru Enemies",
+          "address": "0x7E0823"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

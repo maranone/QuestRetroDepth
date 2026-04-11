@@ -1,0 +1,99 @@
+{
+  "system": "genesis",
+  "normalized_title": "gadgettwins",
+  "display_name": "Gadget Twins (USA) (Action Replay)",
+  "aliases": [
+    "Gadget Twins (USA) (Action Replay)",
+    "Gadget Twins (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\gadgettwins_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF037A",
+        "0xFF09BD"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GadgetTwins-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF09BD",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF037A",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Gadget Twins (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FF09B4:0028",
+          "desc": "Infinite Energy",
+          "address": "0xFF09B4"
+        },
+        {
+          "code": "FF09BC:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF09BC"
+        },
+        {
+          "code": "FF09C0:03E7",
+          "desc": "Infinite Money",
+          "address": "0xFF09C0"
+        },
+        {
+          "code": "FF07B2:0010",
+          "desc": "Invincible",
+          "address": "0xFF07B2"
+        },
+        {
+          "code": "FF03CA:0001",
+          "desc": "Enable Carls Cheat Screen",
+          "address": "0xFF03CA"
+        },
+        {
+          "code": "FF03BB:0003",
+          "desc": "Infinite Credits",
+          "address": "0xFF03BB"
+        },
+        {
+          "code": "FF098B:0009",
+          "desc": "Freeze Time Continue",
+          "address": "0xFF098B"
+        },
+        {
+          "code": "FF2B39:0000",
+          "desc": "1 Hit Kill Bosses",
+          "address": "0xFF2B39"
+        },
+        {
+          "code": "FF24A1:0000",
+          "desc": "1 Hit Kill Enemies",
+          "address": "0xFF24A1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

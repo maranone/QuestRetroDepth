@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "talespin",
+  "display_name": "TaleSpin (USA, Europe) (Action Replay)",
+  "aliases": [
+    "TaleSpin (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\TaleSpin (USA, Europe).cht",
+      "total_cheat_rows": 33,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF27CC:0009",
+          "desc": "Infinite Lives (Baloo &amp; Kit)",
+          "address": "0xFF27CC"
+        },
+        {
+          "code": "FF2BAC:0009",
+          "desc": "Infinite Health (Baloo &amp; Kit)",
+          "address": "0xFF2BAC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

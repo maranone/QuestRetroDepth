@@ -1,0 +1,104 @@
+{
+  "system": "snes",
+  "normalized_title": "bonkers",
+  "display_name": "Bonkers (USA) (Action Replay)",
+  "aliases": [
+    "Bonkers (USA) (Action Replay)",
+    "Bonkers (USA) (Game Genie)",
+    "Bonkers (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bonkers (USA).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 16,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "7E040E0A",
+          "desc": "Infinite Energy",
+          "address": "0x7E040E"
+        },
+        {
+          "code": "7E00DD0A",
+          "desc": "Max Energy",
+          "address": "0x7E00DD"
+        },
+        {
+          "code": "7E00DC09",
+          "desc": "Infinite Lives",
+          "address": "0x7E00DC"
+        },
+        {
+          "code": "7E00DE63",
+          "desc": "Infinite Bombs",
+          "address": "0x7E00DE"
+        },
+        {
+          "code": "7E00DF63",
+          "desc": "Max Bombs",
+          "address": "0x7E00DF"
+        },
+        {
+          "code": "7E00E825",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E00E8"
+        },
+        {
+          "code": "7E16E409",
+          "desc": "9 Badges",
+          "address": "0x7E16E4"
+        },
+        {
+          "code": "7E00E300",
+          "desc": "Dash Bar Always Full",
+          "address": "0x7E00E3"
+        },
+        {
+          "code": "7E00CF01",
+          "desc": "Always Dash",
+          "address": "0x7E00CF"
+        },
+        {
+          "code": "7E00C828",
+          "desc": "Jump Higher",
+          "address": "0x7E00C8"
+        },
+        {
+          "code": "7E040A00",
+          "desc": "Rise Into Sky",
+          "address": "0x7E040A"
+        },
+        {
+          "code": "7E040BFF",
+          "desc": "Slower Rise Into Sky",
+          "address": "0x7E040B"
+        },
+        {
+          "code": "7E006E00",
+          "desc": "Turn Rain On/Off On Ocean Liner Stage",
+          "address": "0x7E006E"
+        },
+        {
+          "code": "7E04EE00",
+          "desc": "Most Bosses 1 Hit Kill",
+          "address": "0x7E04EE"
+        },
+        {
+          "code": "7E1CD200",
+          "desc": "Collector Boss 1 Hit Kill",
+          "address": "0x7E1CD2"
+        },
+        {
+          "code": "7E06AE00",
+          "desc": "Pops Clock Boss 1 Hit Kill",
+          "address": "0x7E06AE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

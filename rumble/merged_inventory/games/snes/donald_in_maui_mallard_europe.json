@@ -1,0 +1,60 @@
+{
+  "system": "snes",
+  "normalized_title": "donaldinmauimallard",
+  "display_name": "Donald in Maui Mallard (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Donald in Maui Mallard (Europe).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E0DD364",
+          "desc": "Infinite Health",
+          "address": "0x7E0DD3"
+        },
+        {
+          "code": "7E1F4A09",
+          "desc": "Infinite Lives",
+          "address": "0x7E1F4A"
+        },
+        {
+          "code": "7E002E50",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E002E"
+        },
+        {
+          "code": "7E175005",
+          "desc": "Rise Into Air",
+          "address": "0x7E1750"
+        },
+        {
+          "code": "7E0DDB63",
+          "desc": "Infinite Lightning Bugs",
+          "address": "0x7E0DDB"
+        },
+        {
+          "code": "7E0DDD63",
+          "desc": "Infinite Fire Bugs",
+          "address": "0x7E0DDD"
+        },
+        {
+          "code": "7E000401",
+          "desc": "Level Modifier",
+          "address": "0x7E0004"
+        },
+        {
+          "code": "7E002E10",
+          "desc": "Invincibility",
+          "address": "0x7E002E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

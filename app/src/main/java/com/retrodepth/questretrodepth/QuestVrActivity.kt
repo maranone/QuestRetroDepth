@@ -422,7 +422,8 @@ class QuestVrActivity : Activity() {
         height: Int,
         frozen: Boolean,   // frozen state for play/pause button
         autoDupLabel: String,
-        filterLabel: String
+        filterLabel: String,
+        showFilter: Boolean
     ): IntArray {
         val bmp = android.graphics.Bitmap.createBitmap(width, height, android.graphics.Bitmap.Config.ARGB_8888)
         val canvas = android.graphics.Canvas(bmp)
@@ -443,7 +444,7 @@ class QuestVrActivity : Activity() {
 
         val titleH = 88f
         val n      = layerNames.size
-        val totalRows = n + 3  // layers + play/pause + auto-dup + filter row
+        val totalRows = n + 2 + if (showFilter) 1 else 0  // layers + play/pause + auto-dup + optional filter row
         if (n == 0) {
             paint.color = android.graphics.Color.argb(160, 150, 150, 160)
             paint.textSize = 36f
@@ -555,20 +556,22 @@ class QuestVrActivity : Activity() {
         val autoDupW = paint.measureText(autoDupLabel)
         canvas.drawText(autoDupLabel, width - autoDupW - 16f, autoDupY + rowH * 0.68f, paint)
 
-        // Layer filter row after auto-dup (index n + 2)
-        val filterY = titleH + (n + 2) * rowH
-        val isFilterHovered = (dropTarget == n + 2)
-        paint.color = if (isFilterHovered) android.graphics.Color.argb(100, 100, 140, 200)
-                      else android.graphics.Color.argb(70, 40, 40, 65)
-        canvas.drawRect(0f, filterY, width.toFloat(), filterY + rowH, paint)
+        if (showFilter) {
+            // Layer filter row after auto-dup (index n + 2)
+            val filterY = titleH + (n + 2) * rowH
+            val isFilterHovered = (dropTarget == n + 2)
+            paint.color = if (isFilterHovered) android.graphics.Color.argb(100, 100, 140, 200)
+                          else android.graphics.Color.argb(70, 40, 40, 65)
+            canvas.drawRect(0f, filterY, width.toFloat(), filterY + rowH, paint)
 
-        paint.textSize = rowH * 0.42f
-        paint.color = android.graphics.Color.argb(220, 210, 220, 240)
-        canvas.drawText("LAYER FILTER", 16f, filterY + rowH * 0.68f, paint)
+            paint.textSize = rowH * 0.42f
+            paint.color = android.graphics.Color.argb(220, 210, 220, 240)
+            canvas.drawText("LAYER FILTER", 16f, filterY + rowH * 0.68f, paint)
 
-        paint.color = android.graphics.Color.argb(220, 120, 210, 255)
-        val filterW = paint.measureText(filterLabel)
-        canvas.drawText(filterLabel, width - filterW - 16f, filterY + rowH * 0.68f, paint)
+            paint.color = android.graphics.Color.argb(220, 120, 210, 255)
+            val filterW = paint.measureText(filterLabel)
+            canvas.drawText(filterLabel, width - filterW - 16f, filterY + rowH * 0.68f, paint)
+        }
 
         val pixels = IntArray(width * height)
         bmp.getPixels(pixels, 0, width, 0, 0, width, height)
@@ -638,8 +641,8 @@ class QuestVrActivity : Activity() {
 
             val isAction = (value == "ACTION")
 
-            // Draw separator before action buttons (row 10) and before ctrlmap button (row 15)
-            if (i == 10 || i == 15) {
+            // Draw separator before action buttons (row 12)
+            if (i == 12) {
                 paint.color = android.graphics.Color.argb(120, 100, 130, 200)
                 paint.strokeWidth = 2f
                 paint.style = android.graphics.Paint.Style.STROKE
@@ -649,26 +652,38 @@ class QuestVrActivity : Activity() {
             }
 
             if (isAction) {
-                // Full-width action button; ctrlmap button (row 15) uses purple tint
-                val isCtrlMap = (i == 15)
-                paint.color = if (isCtrlMap) android.graphics.Color.argb(160, 60, 35, 130)
-                              else           android.graphics.Color.argb(140, 40,  70, 120)
+                // Full-width action buttons
+                paint.color = when (i) {
+                    12 -> android.graphics.Color.argb(170, 160, 30, 30)
+                    13 -> android.graphics.Color.argb(170, 35, 140, 65)
+                    14 -> android.graphics.Color.argb(170, 15, 85, 40)
+                    15 -> android.graphics.Color.argb(170, 35, 95, 180)
+                    16 -> android.graphics.Color.argb(170, 20, 50, 130)
+                    17 -> android.graphics.Color.argb(120, 35, 55, 45)
+                    else -> android.graphics.Color.argb(140, 40, 70, 120)
+                }
                 canvas.drawRoundRect(6f, y + rowH * 0.12f, width - 6f, y + rowH * 0.88f, 8f, 8f, paint)
-                paint.color = if (isCtrlMap) android.graphics.Color.argb(255, 200, 160, 255)
-                              else android.graphics.Color.WHITE
+                paint.color = android.graphics.Color.WHITE
                 paint.textSize = rowH * 0.46f
                 canvas.drawText(if (i < names.size) names[i] else "", 18f, y + rowH * 0.68f, paint)
             } else if (isBool) {
                 // Name on left
                 paint.color = android.graphics.Color.argb(215, 190, 200, 220)
                 canvas.drawText(if (i < names.size) names[i] else "", 12f, y + rowH * 0.68f, paint)
-                // ON/OFF badge on right
+                // ON/OFF or status badge on right
                 val badgeX = width * 0.68f
-                paint.color = if (isOn) android.graphics.Color.argb(210, 50, 180, 90)
-                              else      android.graphics.Color.argb(150, 160, 50, 50)
+                paint.color = when {
+                    value == "ON" -> android.graphics.Color.argb(210, 50, 180, 90)
+                    value == "OFF" -> android.graphics.Color.argb(150, 160, 50, 50)
+                    value == "USER OK" -> android.graphics.Color.argb(210, 45, 135, 210)
+                    value == "BUNDLED" -> android.graphics.Color.argb(210, 70, 120, 205)
+                    value == "USER BROKEN" || value == "USER BROKEN -> BUNDLED" ->
+                        android.graphics.Color.argb(210, 185, 105, 35)
+                    else -> android.graphics.Color.argb(170, 95, 95, 120)
+                }
                 canvas.drawRoundRect(badgeX, y + rowH * 0.18f, width - 8f, y + rowH * 0.82f, 8f, 8f, paint)
                 paint.color = android.graphics.Color.WHITE
-                paint.textSize = rowH * 0.40f
+                paint.textSize = if (value.length > 10) rowH * 0.28f else rowH * 0.34f
                 canvas.drawText(value, badgeX + 8f, y + rowH * 0.68f, paint)
             } else {
                 // [−] name [value] [+] layout
@@ -920,6 +935,98 @@ class QuestVrActivity : Activity() {
         return pixels
     }
 
+    // -----------------------------------------------------------------------
+    // Called from C++ XR thread — renders passive side help panels.
+    // inputLabels/actionLabels are parallel arrays generated from native control metadata.
+    // Returns ARGB_8888 pixels, width×height.
+    // -----------------------------------------------------------------------
+    fun renderHelpPanelBitmap(
+        title: String,
+        inputLabels: Array<String>,
+        actionLabels: Array<String>,
+        width: Int,
+        height: Int
+    ): IntArray {
+        val bmp = android.graphics.Bitmap.createBitmap(
+            width, height, android.graphics.Bitmap.Config.ARGB_8888)
+        val canvas = android.graphics.Canvas(bmp)
+        val paint = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG)
+
+        fun wrapText(text: String, maxWidth: Float): List<String> {
+            if (text.isEmpty()) return listOf("")
+            val words = text.split(' ')
+            val lines = mutableListOf<String>()
+            var line = ""
+            for (word in words) {
+                val candidate = if (line.isEmpty()) word else "$line $word"
+                if (paint.measureText(candidate) <= maxWidth || line.isEmpty()) {
+                    line = candidate
+                } else {
+                    lines.add(line)
+                    line = word
+                }
+            }
+            if (line.isNotEmpty()) lines.add(line)
+            return lines
+        }
+
+        paint.color = android.graphics.Color.argb(230, 10, 12, 18)
+        canvas.drawRect(0f, 0f, width.toFloat(), height.toFloat(), paint)
+
+        val titleH = 86f
+        paint.color = android.graphics.Color.argb(255, 34, 48, 62)
+        canvas.drawRect(0f, 0f, width.toFloat(), titleH, paint)
+
+        paint.color = android.graphics.Color.WHITE
+        paint.textSize = 42f
+        paint.isFakeBoldText = true
+        canvas.drawText(title, 18f, 58f, paint)
+        paint.isFakeBoldText = false
+
+        val count = minOf(inputLabels.size, actionLabels.size)
+        var y = titleH + 36f
+        val marginX = 24f
+        val maxTextW = width - marginX * 2f
+        val actionSize = if (count > 12) 25f else 28f
+        val inputSize = if (count > 12) 23f else 25f
+
+        for (i in 0 until count) {
+            if (y > height - 36f) break
+
+            if (i > 0) {
+                paint.color = android.graphics.Color.argb(70, 120, 140, 160)
+                canvas.drawRect(marginX, y - 17f, width - marginX, y - 15f, paint)
+            }
+
+            paint.textSize = inputSize
+            paint.color = android.graphics.Color.argb(230, 115, 215, 245)
+            paint.isFakeBoldText = true
+            val input = inputLabels[i]
+            val inputLines = wrapText(input, maxTextW)
+            for (line in inputLines) {
+                if (y > height - 30f) break
+                canvas.drawText(line, marginX, y, paint)
+                y += inputSize + 4f
+            }
+            paint.isFakeBoldText = false
+
+            paint.textSize = actionSize
+            paint.color = android.graphics.Color.argb(225, 218, 224, 232)
+            val actionLines = wrapText(actionLabels[i], maxTextW)
+            for (line in actionLines) {
+                if (y > height - 30f) break
+                canvas.drawText(line, marginX, y, paint)
+                y += actionSize + 5f
+            }
+            y += 16f
+        }
+
+        val pixels = IntArray(width * height)
+        bmp.getPixels(pixels, 0, width, 0, 0, width, height)
+        bmp.recycle()
+        return pixels
+    }
+
     // Called from C++ XR thread to extract a zip/7z archive and return the ROM path inside.
     fun prepareRomFileForNative(rawPath: String): String =
         runCatching { prepareRomFile(File(rawPath)).absolutePath }.getOrElse { rawPath }
@@ -978,8 +1085,8 @@ class QuestVrActivity : Activity() {
                 canvas.drawRect(0f, y, width.toFloat(), y + rowH, paint)
             }
 
-            // Separator before "Stop Emulation" and "Exit" (last two items)
-            if (i == n - 2) {
+            // Separator before "Exit"
+            if (i == n - 1) {
                 paint.color = android.graphics.Color.argb(120, 100, 130, 200)
                 paint.strokeWidth = 2f
                 paint.style = android.graphics.Paint.Style.STROKE
@@ -990,19 +1097,7 @@ class QuestVrActivity : Activity() {
 
             paint.textSize = rowH * 0.48f
 
-            // Icon prefix for each item
-            val icon = when (i) {
-                0 -> "\uD83C\uDFAE "  // Open ROM
-                1 -> "\u2699\uFE0F "   // Settings
-                2 -> "\uD83D\uDCE6 "   // Layers
-                3 -> "\uD83C\uDFAE "   // Mappings
-                4 -> "\uD83D\uDD22 "   // View/Enter Code
-                5 -> "\u23F9\uFE0F "   // Stop Emulation
-                6 -> "\u274C "         // Exit
-                else -> ""
-            }
-
-            val label = icon + menuItems[i]
+            val label = menuItems[i]
             paint.color = android.graphics.Color.argb(220, 200, 210, 230)
             canvas.drawText(label, 20f, y + rowH * 0.68f, paint)
         }
@@ -1046,6 +1141,20 @@ class QuestVrActivity : Activity() {
         val dir = java.io.File(Environment.getExternalStorageDirectory(), "QuestRetroDepth/config")
         if (dir.exists() || dir.mkdirs()) return dir.absolutePath
         return java.io.File(getExternalFilesDir(null), "settings").apply { mkdirs() }.absolutePath
+    }
+
+    fun getRumbleDirectory(): String {
+        val dir = java.io.File(Environment.getExternalStorageDirectory(), "QuestRetroDepth/rumble")
+        if (dir.exists() || dir.mkdirs()) {
+            File(dir, "snes").mkdirs()
+            File(dir, "genesis").mkdirs()
+            return dir.absolutePath
+        }
+        return java.io.File(getExternalFilesDir(null), "rumble").apply {
+            mkdirs()
+            File(this, "snes").mkdirs()
+            File(this, "genesis").mkdirs()
+        }.absolutePath
     }
 
     companion object {

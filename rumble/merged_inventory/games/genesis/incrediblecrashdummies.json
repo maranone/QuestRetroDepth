@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "incrediblecrashdummies",
+  "display_name": "IncredibleCrashDummies",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\incrediblecrashdummies_genesis.json",
+      "trigger_count": 6,
+      "field_names": [
+        "gameover",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xFF1145",
+        "0xFF114A",
+        "0xFF25E0",
+        "0xFF25EB"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\IncredibleCrashDummies-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFF114A",
+          "type": "|i1"
+        },
+        {
+          "name": "health",
+          "address": "0xFF1145",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF25EB",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF25E0",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 4
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

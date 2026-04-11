@@ -1,0 +1,166 @@
+{
+  "system": "snes",
+  "normalized_title": "dragonbruceleestory",
+  "display_name": "Dragon - The Bruce Lee Story (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Dragon - The Bruce Lee Story (Rumbles)",
+    "Dragon - The Bruce Lee Story (USA)",
+    "Dragon - The Bruce Lee Story (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\dragonthebruceleestory_snes.json",
+      "trigger_count": 7,
+      "field_names": [
+        "enemy_health",
+        "health",
+        "lives",
+        "score1",
+        "score2"
+      ],
+      "field_count": 5,
+      "distinct_addresses": [
+        "0x7E00D9",
+        "0x7E01D9",
+        "0x7E5D1F",
+        "0x7E5D25",
+        "0x7E5D2B"
+      ],
+      "distinct_address_count": 5
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DragonTheBruceLeeStory-Snes-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "enemy_health",
+          "address": "0x7E01D9",
+          "type": "<u2"
+        },
+        {
+          "name": "health",
+          "address": "0x7E00D9",
+          "type": "<u2"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E5D1F",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0x7E5D25",
+          "type": "<d2"
+        },
+        {
+          "name": "score2",
+          "address": "0x7E5D2B",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Dragon - The Bruce Lee Story (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 18,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "7E00D9FF",
+          "desc": "Infinite Health",
+          "address": "0x7E00D9"
+        },
+        {
+          "code": "7E00DBFF",
+          "desc": "Infinite Fighting Power",
+          "address": "0x7E00DB"
+        },
+        {
+          "code": "7E01D900",
+          "desc": "Enemy 1 With No Health",
+          "address": "0x7E01D9"
+        },
+        {
+          "code": "7E02D900",
+          "desc": "Enemy 2 With No Health",
+          "address": "0x7E02D9"
+        },
+        {
+          "code": "7E208263",
+          "desc": "Infinite Time",
+          "address": "0x7E2082"
+        },
+        {
+          "code": "7E003E01",
+          "desc": "Hyper Mode P1",
+          "address": "0x7E003E"
+        },
+        {
+          "code": "7E013E01",
+          "desc": "Hyper Mode P2/Enemy 1",
+          "address": "0x7E013E"
+        },
+        {
+          "code": "7E023E01",
+          "desc": "Hyper Mode P3/Enemy 2",
+          "address": "0x7E023E"
+        },
+        {
+          "code": "7E009302",
+          "desc": "P1 Knocks Out Easier",
+          "address": "0x7E0093"
+        },
+        {
+          "code": "7E019302",
+          "desc": "P2 Knocks Out Easier",
+          "address": "0x7E0193"
+        },
+        {
+          "code": "7E029302",
+          "desc": "P3 Knocks Out Easier",
+          "address": "0x7E0293"
+        },
+        {
+          "code": "7E009544",
+          "desc": "P1 Can't Be Hit",
+          "address": "0x7E0095"
+        },
+        {
+          "code": "7E019544",
+          "desc": "P2 Can't Be Hit",
+          "address": "0x7E0195"
+        },
+        {
+          "code": "7E029544",
+          "desc": "P3 Can't Be Hit",
+          "address": "0x7E0295"
+        },
+        {
+          "code": "7E003C01",
+          "desc": "P1 Hyper Mode (Alternate)",
+          "address": "0x7E003C"
+        },
+        {
+          "code": "7E013C01",
+          "desc": "P2/CPU 1 Hyper Mode (Alternate)",
+          "address": "0x7E013C"
+        },
+        {
+          "code": "7E023C01",
+          "desc": "P3/CPU 2 Hyper Mode (Alternate)",
+          "address": "0x7E023C"
+        },
+        {
+          "code": "7E5BC603",
+          "desc": "For Paul... Difficulty",
+          "address": "0x7E5BC6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

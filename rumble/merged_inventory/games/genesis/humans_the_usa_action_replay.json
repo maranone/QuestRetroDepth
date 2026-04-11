@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "humans",
+  "display_name": "Humans, The (USA) (Action Replay)",
+  "aliases": [
+    "Humans, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Humans, The (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF4BB8:0030",
+          "desc": "Infinite Time",
+          "address": "0xFF4BB8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

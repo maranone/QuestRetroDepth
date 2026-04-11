@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "ultimaviiblackgate",
+  "display_name": "Ultima VII - The Black Gate (USA, Japan) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ultima VII - The Black Gate (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E1CE6E8",
+          "desc": "65,000 Gold",
+          "address": "0x7E1CE6"
+        },
+        {
+          "code": "7E1CE7FD",
+          "desc": "65,000 Gold",
+          "address": "0x7E1CE7"
+        },
+        {
+          "code": "7E1D00E8",
+          "desc": "65,000 Experience",
+          "address": "0x7E1D00"
+        },
+        {
+          "code": "7E1D01FD",
+          "desc": "65,000 Experience",
+          "address": "0x7E1D01"
+        },
+        {
+          "code": "7E1CFC63",
+          "desc": "Infinite Keys",
+          "address": "0x7E1CFC"
+        },
+        {
+          "code": "7E1CFAE4",
+          "desc": "Infinite Energy",
+          "address": "0x7E1CFA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Choujikuu Yousai Macross - Scrambled Valkyrie (Japan) (Action Replay)
+game_key=ChoujikuuYousaiMacrossScrambledValkyrie-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_0a28	damage_taken	0x7E0A28	2	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0a28	death	0x7E0A28	2	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_0a8a	score	0x7E0A8A	2	bcd	little	prev < curr	0.8	1	right:0.350:60

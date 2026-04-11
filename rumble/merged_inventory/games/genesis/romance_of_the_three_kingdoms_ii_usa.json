@@ -1,0 +1,70 @@
+{
+  "system": "genesis",
+  "normalized_title": "romanceofthreekingdomsii",
+  "display_name": "Romance of the Three Kingdoms II (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Romance of the Three Kingdoms II (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "FF5FE8:00FF",
+          "desc": "Remaining Soldiers Maxed",
+          "address": "0xFF5FE8"
+        },
+        {
+          "code": "FF1378:0000",
+          "desc": "Cao Cao Soldiers Modifier",
+          "address": "0xFF1378"
+        },
+        {
+          "code": "FF1390:0000",
+          "desc": "Chen Gong Soldiers Modifier",
+          "address": "0xFF1390"
+        },
+        {
+          "code": "FF13A8:0000",
+          "desc": "Xiahov Yuan Soldiers Modifier",
+          "address": "0xFF13A8"
+        },
+        {
+          "code": "FF13C0:0000",
+          "desc": "Xiahov Dun Soldiers Modifier",
+          "address": "0xFF13C0"
+        },
+        {
+          "code": "FF13D8:0000",
+          "desc": "Cao Hong Soldiers Modifier",
+          "address": "0xFF13D8"
+        },
+        {
+          "code": "FF13F0:0000",
+          "desc": "Cao Ang Soldiers Modifier",
+          "address": "0xFF13F0"
+        },
+        {
+          "code": "FF1408:0000",
+          "desc": "Cao Ren Soldiers Modifier",
+          "address": "0xFF1408"
+        },
+        {
+          "code": "FF1420:0000",
+          "desc": "Yue Jim Soldiers Modifier",
+          "address": "0xFF1420"
+        },
+        {
+          "code": "FF1438:0000",
+          "desc": "Cao Chun Soldiers Modifier",
+          "address": "0xFF1438"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "espnnationalhockeynight",
+  "display_name": "ESPN National Hockey Night (USA) (Action Replay)",
+  "aliases": [
+    "ESPN National Hockey Night (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\ESPN National Hockey Night (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF7CF8:0000",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFF7CF8"
+        },
+        {
+          "code": "FF7D08:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFF7D08"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

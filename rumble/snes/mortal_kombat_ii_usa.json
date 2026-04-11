@@ -1,0 +1,519 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Mortal Kombat II (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Mortal Kombat II (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "C2C4-47AA",
+      "desc": "Infinite Continues",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DF8C-CDDA",
+      "desc": "Start With 0 Continues",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D78C-CDDA",
+      "desc": "Start With 2 Continues",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D58C-CDDA",
+      "desc": "Start With 6 Continues",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DB8C-CDDA",
+      "desc": "Start With 8 Continues",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2B1-14F7",
+      "desc": "Player 1 Is Invincible",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB5-1FF7",
+      "desc": "Player 2 Or Computer Is Killed By One Hit",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2B5-14F7",
+      "desc": "Player 2 Or Computer Is Invincible",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB1-1FF7",
+      "desc": "Player 1 Is Killed By One Hit",
+      "kind": "game_genie"
+    },
+    {
+      "code": "622B-C7AC",
+      "desc": "Disable Throws (2-Player Mode)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6DC7-1DAA",
+      "desc": "Infinite Time",
+      "kind": "game_genie"
+    },
+    {
+      "code": "06E1-17D4",
+      "desc": "Mileena's Sai Throw Does Massive Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "06E9-1DD7",
+      "desc": "Liu Kang's High Fireball Does Massive Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "06E2-1767",
+      "desc": "Kung Lao's Hat Throw Does Massive Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "06EF-4767",
+      "desc": "Cage's Shadow Kick Does Massive Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "06EB-17AF",
+      "desc": "Reptile's Force Ball Does Massive Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "06E0-4FA4",
+      "desc": "Shang Tsung's Flaming Skull Attack Does Massive Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "06E9-17A4",
+      "desc": "Kitana's Fan Throw Does Massive Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "06EE-C4A4",
+      "desc": "Baraka's Blade Spark Does Massive Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "06E4-34DF",
+      "desc": "Rayden's Lightning Bolt Does Massive Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Kung Lao",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDC6-3DAE",
+      "desc": "Always Fight Kung Lao",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Liu Kang",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DFC6-3DAE",
+      "desc": "Always Fight Liu Kang",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Cage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D4C6-3DAE",
+      "desc": "Always Fight Cage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Baraka",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D7C6-3DAE",
+      "desc": "Always Fight Baraka",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Kitana",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D0C6-3DAE",
+      "desc": "Always Fight Kitana",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Mileena",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D9C6-3DAE",
+      "desc": "Always Fight Mileena",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Shang Tsung",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D1C6-3DAE",
+      "desc": "Always Fight Shang Tsung",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Rayden",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D5C6-3DAE",
+      "desc": "Always Fight Rayden",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Sub-Zero",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D6C6-3DAE",
+      "desc": "Always Fight Sub-Zero",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Reptile",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DBC6-3DAE",
+      "desc": "Always Fight Reptile",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Scorpion",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DCC6-3DAE",
+      "desc": "Always Fight Scorpion",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Jax",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D8C6-3DAE",
+      "desc": "Always Fight Jax",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Kintaro",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DAC6-3DAE",
+      "desc": "Always Fight Kintaro",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Shao Kahn",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D2C6-3DAE",
+      "desc": "Always Fight Shao Kahn",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Smoke",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D3C6-3DAE",
+      "desc": "Always Fight Smoke",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Noob Saibot",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DEC6-3DAE",
+      "desc": "Always Fight Noob Saibot",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC6-3D6E",
+      "desc": "Always Fight Jade",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDC6-3DAE",
+      "desc": "Always Fight Jade",
+      "kind": "game_genie"
+    },
+    {
+      "code": "E12A-176E",
+      "desc": "Warps The Opponents",
+      "kind": "game_genie"
+    },
+    {
+      "code": "E127-176E",
+      "desc": "Scorpion's Trip Is Disabled",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CDEE-1F0A",
+      "desc": "Awesome Fatalities!!",
+      "kind": "game_genie"
+    },
+    {
+      "code": "2228-37AE",
+      "desc": "Mileena's Roll Always Bounces Up Like Blocked",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD28-37AE",
+      "desc": "Mileena's Roll Doesn't Bounce When Blocked",
+      "kind": "game_genie"
+    },
+    {
+      "code": "57E9-C76A",
+      "desc": "Lao's Hat High, Can Pull And Rethrow Quickly",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6D3B-47DA",
+      "desc": "Lao Dive Kick Never Connects",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D935-47DA",
+      "desc": "Lao Dive Kick Never Connects, And Makes Random Sounds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FFC2-1F6A",
+      "desc": "Win 1 Round To See Ending",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C7C2-1F6A",
+      "desc": "1 Round Wins Match P1",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FFB4-3FF7",
+      "desc": "Some Kicks Are Ultra Slow",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB4-3FF7",
+      "desc": "Almost All Kicks Are Ultra Slow",
+      "kind": "game_genie"
+    },
+    {
+      "code": "BBB0-37AE",
+      "desc": "2P Plays As Current CPU Opponent",
+      "kind": "game_genie"
+    },
+    {
+      "code": "BBBE-37AE",
+      "desc": "5 Rounds of Fighting, Then Gameover",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F9AC-3FF7",
+      "desc": "Many Sprites Are Scrambled (i.e. Dragon On Tomb Stage, New Champ Medal, Etc.)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "88E9-44B7",
+      "desc": "Both Players Locked Together On Far Left",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C4E8-44B7",
+      "desc": "Player Color Inverted, Normal, Invisible Depending On Stage And Current Location",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C4EA-44B7",
+      "desc": "Different Projectiless Only Useful At Different Range, Some Not At All",
+      "kind": "game_genie"
+    },
+    {
+      "code": "2469-340F",
+      "desc": "Scrambled Fighters",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EEE5-140A",
+      "desc": "When You Select Players, It Plays A Random Sound (Players Don't Pose On Select Screen)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD20-37AE",
+      "desc": "Mileena's Telekick, Roll Combo",
+      "kind": "game_genie"
+    },
+    {
+      "code": "BB28-376E",
+      "desc": "Mileena's Telekick, Roll Combo",
+      "kind": "game_genie"
+    },
+    {
+      "code": "442B-3F6E",
+      "desc": "Mileena's Roll Is Superfast (Better Version Than Previous Version)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "172B-3F6E",
+      "desc": "Mileena's Roll Is Superfast And Goes Out of Full Screen/Glitches",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD2B-3F6E",
+      "desc": "Mileena's Roll Doesn't Travel",
+      "kind": "game_genie"
+    },
+    {
+      "code": "**2B-3F6E",
+      "desc": "Alter Mileena's Speed Modifier",
+      "kind": "unsupported"
+    },
+    {
+      "code": "D828-3D6E",
+      "desc": "Mileena's Roll Only Useful In Close Quarters",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7728-3D6E",
+      "desc": "Mileena's Roll Needs Practice",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7828-3D6E",
+      "desc": "Mileena's Roll Is Bouncy Except In Close",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0E28-3D6E",
+      "desc": "Mileena's Roll Is Flawless",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0228-3D6E",
+      "desc": "Mileena's Roll Causes P2 Glitch Jump",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0A28-3D6E",
+      "desc": "No In-Fight Music Except For Finishing Move",
+      "kind": "game_genie"
+    },
+    {
+      "code": "82B4-3404",
+      "desc": "Blood Never Hits The Ground, More Blood (A Slower Game)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1325-346E",
+      "desc": "Mileena Roll Skips Across The Screen A Little Way",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6D68-37DE",
+      "desc": "Liu Kang's Recovers From Low Fire Really Quick",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6D66-376E",
+      "desc": "Liu's Air Fire Locks Him In Place In Air",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6D63-376E",
+      "desc": "Liu's High Ground Fire Is Disabled",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6D65-376E",
+      "desc": "Air Fire Hangs In Air Until You Throw High Or Low Fire",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE67-1467",
+      "desc": "Uppercuts Take Longer To Direct Opponent",
+      "kind": "game_genie"
+    },
+    {
+      "code": "41B0-C4F7",
+      "desc": "Weird Fights (Some Attacks Don't Hit, Including Projectiles; Try Different Fatalities)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "346C-37AF",
+      "desc": "Backgrounds Weird/Misplaced BG Layers",
+      "kind": "game_genie"
+    },
+    {
+      "code": "3464-340F",
+      "desc": "Enable Pause Anywhere In Game",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDC1-3FA1",
+      "desc": "Enable Raiden's Shock-Grab When Fighting Computer (Either Version)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "5EC2-CF02",
+      "desc": "Have 127 Times More Fatality Time (MK2 V1.0)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6DCF-4D9D",
+      "desc": "Enable All 2-Player Rules/Moves When Fighting Computer",
+      "kind": "game_genie"
+    },
+    {
+      "code": "5EC3-CF02",
+      "desc": "Have 127 Times More Fatality Time (MK2 V1.1)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6DCF-4F9D",
+      "desc": "Enable All 2-Player Rules/Moves When Fighting Computer (MK2 V1.1)",
+      "kind": "game_genie"
+    }
+  ]
+}

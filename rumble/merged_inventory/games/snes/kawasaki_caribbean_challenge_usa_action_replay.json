@@ -1,0 +1,53 @@
+{
+  "system": "snes",
+  "normalized_title": "kawasakicaribbeanchallenge",
+  "display_name": "Kawasaki Caribbean Challenge (USA) (Action Replay)",
+  "aliases": [
+    "Kawasaki Caribbean Challenge (USA) (Game Genie)",
+    "Kawasaki Caribbean Challenge (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Kawasaki Caribbean Challenge (USA).cht",
+      "total_cheat_rows": 28,
+      "raw_entry_count": 6,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E10D554",
+          "desc": "Always Qualify For Race",
+          "address": "0x7E10D5"
+        },
+        {
+          "code": "7E006101",
+          "desc": "Always Finish First",
+          "address": "0x7E0061"
+        },
+        {
+          "code": "7E017A00",
+          "desc": "Engine Sound Modifier",
+          "address": "0x7E017A"
+        },
+        {
+          "code": "7E100600",
+          "desc": "Speed Modifier",
+          "address": "0x7E1006"
+        },
+        {
+          "code": "7E10067D",
+          "desc": "Faster Bike Or Jetski",
+          "address": "0x7E1006"
+        },
+        {
+          "code": "7E100696",
+          "desc": "Much Faster Bike Or Jetski",
+          "address": "0x7E1006"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

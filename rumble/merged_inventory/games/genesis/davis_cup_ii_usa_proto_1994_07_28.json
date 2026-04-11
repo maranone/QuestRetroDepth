@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "daviscupii",
+  "display_name": "Davis Cup II (USA) (Proto) (1994-07-28)",
+  "aliases": [
+    "Davis Cup II (USA) (Proto) (1994-07-28)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Davis Cup II (USA) (Proto) (1994-07-28).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF88DE:0000",
+          "desc": "Opponent Score Modifer (P2/CPU)",
+          "address": "0xFF88DE"
+        },
+        {
+          "code": "FF88DE:0063",
+          "desc": "Opponent Score Modifer (P1)",
+          "address": "0xFF88DE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

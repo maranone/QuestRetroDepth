@@ -1,0 +1,69 @@
+{
+  "system": "snes",
+  "normalized_title": "flintstones",
+  "display_name": "Flintstones, The (USA) (En,Fr,De,Es,It)",
+  "aliases": [
+    "Flintstones, The (USA) (En,Fr,De,Es,It)",
+    "The Flintstones"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\flintstones_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E1D65",
+        "0x7E1D75"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Flintstones-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E1D65",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E1D75",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Flintstones, The (USA) (En,Fr,De,Es,It).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E1D51FF",
+          "desc": "Invincibility",
+          "address": "0x7E1D51"
+        },
+        {
+          "code": "7E1ED615",
+          "desc": "Infinite Energy Boss",
+          "address": "0x7E1ED6"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 7,
+      "mk3_label": "FLINTSTONES"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "system": "snes",
+  "normalized_title": "holystriker",
+  "display_name": "Holy Striker (Japan) (Action Replay)",
+  "aliases": [
+    "Holy Striker (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Holy Striker (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E133306",
+          "desc": "Infinite Health",
+          "address": "0x7E1333"
+        },
+        {
+          "code": "7E133503",
+          "desc": "Max Power",
+          "address": "0x7E1335"
+        },
+        {
+          "code": "7E152D03",
+          "desc": "Infinite Rests",
+          "address": "0x7E152D"
+        },
+        {
+          "code": "7E131D60",
+          "desc": "Walk through enemies",
+          "address": "0x7E131D"
+        },
+        {
+          "code": "7E133303",
+          "desc": "Infinite Hp",
+          "address": "0x7E1333"
+        },
+        {
+          "code": "7E12F003",
+          "desc": "Power Ball Cheat.1",
+          "address": "0x7E12F0"
+        },
+        {
+          "code": "7E133503",
+          "desc": "Power Ball Cheat.2",
+          "address": "0x7E1335"
+        },
+        {
+          "code": "7E152D03",
+          "desc": "Infinite Lives",
+          "address": "0x7E152D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

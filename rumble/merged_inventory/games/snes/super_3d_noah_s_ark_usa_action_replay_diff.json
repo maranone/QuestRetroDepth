@@ -1,0 +1,67 @@
+{
+  "system": "snes",
+  "normalized_title": "super3dnoahsark",
+  "display_name": "Super 3D Noah's Ark (USA) (Action Replay) (diff)",
+  "aliases": [
+    "Super 3D Noah's Ark (USA) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super 3D Noah's Ark (USA) (Action Replay).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7EFEC164",
+          "desc": "Infinite Health",
+          "address": "0x7EFEC1"
+        },
+        {
+          "code": "7EFEBF09",
+          "desc": "Infinite Lives",
+          "address": "0x7EFEBF"
+        },
+        {
+          "code": "7EFEC363",
+          "desc": "Infinite Feed",
+          "address": "0x7EFEC3"
+        },
+        {
+          "code": "7EFECB02",
+          "desc": "Have Key (Not Visible)",
+          "address": "0x7EFECB"
+        },
+        {
+          "code": "7EFED701",
+          "desc": "Use Slingshot",
+          "address": "0x7EFED7"
+        },
+        {
+          "code": "7EFED702",
+          "desc": "Use 3-Way Slingshot",
+          "address": "0x7EFED7"
+        },
+        {
+          "code": "7EFED703",
+          "desc": "Use 3 Flicker",
+          "address": "0x7EFED7"
+        },
+        {
+          "code": "7EFED704",
+          "desc": "Sticks",
+          "address": "0x7EFED7"
+        },
+        {
+          "code": "7EFED705",
+          "desc": "Big Slingshot",
+          "address": "0x7EFED7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

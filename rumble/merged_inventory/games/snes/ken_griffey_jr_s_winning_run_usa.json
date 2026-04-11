@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "kengriffeyjrswinningrun",
+  "display_name": "Ken Griffey Jr.'s Winning Run (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ken Griffey Jr.'s Winning Run (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E1ACD00",
+          "desc": "Out Modifier",
+          "address": "0x7E1ACD"
+        },
+        {
+          "code": "7E1AD300",
+          "desc": "Ball Modifier",
+          "address": "0x7E1AD3"
+        },
+        {
+          "code": "7E1AD900",
+          "desc": "Inning Modifier",
+          "address": "0x7E1AD9"
+        },
+        {
+          "code": "7F000000",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0x7F0000"
+        },
+        {
+          "code": "7F006400",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0x7F0064"
+        },
+        {
+          "code": "7E1ADA00",
+          "desc": "Top/Bottom Inning Modifier",
+          "address": "0x7E1ADA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

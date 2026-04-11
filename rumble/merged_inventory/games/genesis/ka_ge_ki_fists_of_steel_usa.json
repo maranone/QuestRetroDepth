@@ -1,0 +1,78 @@
+{
+  "system": "genesis",
+  "normalized_title": "kagekifistsofsteel",
+  "display_name": "Ka-Ge-Ki - Fists of Steel (USA)",
+  "aliases": [
+    "Ka-Ge-Ki - Fists of Steel (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\kagekifistsofsteel_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "enemy_health",
+        "health"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF01CE",
+        "0xFF01D8"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KaGeKiFistsOfSteel-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "enemy_health",
+          "address": "0xFF01D8",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFF01CE",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ka-Ge-Ki - Fists of Steel (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF01CE:0028",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF01CE"
+        },
+        {
+          "code": "FF01D8:0028",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF01D8"
+        },
+        {
+          "code": "FF01CE:0000",
+          "desc": "No Energy P1",
+          "address": "0xFF01CE"
+        },
+        {
+          "code": "FF01D8:0000",
+          "desc": "No Energy P2",
+          "address": "0xFF01D8"
+        },
+        {
+          "code": "FF0320:0045",
+          "desc": "Freeze Time Round",
+          "address": "0xFF0320"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

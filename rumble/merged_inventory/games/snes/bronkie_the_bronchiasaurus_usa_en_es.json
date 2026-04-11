@@ -1,0 +1,140 @@
+{
+  "system": "snes",
+  "normalized_title": "bronkiebronchiasaurus",
+  "display_name": "Bronkie the Bronchiasaurus (USA) (En,Es)",
+  "aliases": [
+    "Bronkie the Bronchiasaurus (USA) (En,Es)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\bronkiethebronchiasaurus_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E00C4",
+        "0x7E00CC",
+        "0x7E0F98"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BronkieTheBronchiasaurus-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E0F98",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E00C4",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E00CC",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bronkie the Bronchiasaurus (USA) (En,Es).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 16,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "7E12B063",
+          "desc": "99 Lungs",
+          "address": "0x7E12B0"
+        },
+        {
+          "code": "7E00C409",
+          "desc": "9 Lives",
+          "address": "0x7E00C4"
+        },
+        {
+          "code": "7E0F981E",
+          "desc": "Infinite Health",
+          "address": "0x7E0F98"
+        },
+        {
+          "code": "7E12A809",
+          "desc": "Infinite Lung Health",
+          "address": "0x7E12A8"
+        },
+        {
+          "code": "7E129C51",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E129C"
+        },
+        {
+          "code": "7E00BE04",
+          "desc": "Dino Modifier",
+          "address": "0x7E00BE"
+        },
+        {
+          "code": "7E0E5900",
+          "desc": "Dino Color Modifier",
+          "address": "0x7E0E59"
+        },
+        {
+          "code": "7E071980",
+          "desc": "Rise Into Air",
+          "address": "0x7E0719"
+        },
+        {
+          "code": "7E059932",
+          "desc": "Jump To Levitate",
+          "address": "0x7E0599"
+        },
+        {
+          "code": "7E0AD880",
+          "desc": "Jump In Midair",
+          "address": "0x7E0AD8"
+        },
+        {
+          "code": "7E0F9400",
+          "desc": "Some Bosses Dead On Sight",
+          "address": "0x7E0F94"
+        },
+        {
+          "code": "7E0F8E00",
+          "desc": "Some Other Bosses Dead On Sight",
+          "address": "0x7E0F8E"
+        },
+        {
+          "code": "7E00CC99",
+          "desc": "Score 999999 Modifier",
+          "address": "0x7E00CC"
+        },
+        {
+          "code": "7E00CD99",
+          "desc": "Score 999999 Modifier",
+          "address": "0x7E00CD"
+        },
+        {
+          "code": "7E00CE99",
+          "desc": "Score 999999 Modifier",
+          "address": "0x7E00CE"
+        },
+        {
+          "code": "7E12D804",
+          "desc": "Level Modifier",
+          "address": "0x7E12D8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

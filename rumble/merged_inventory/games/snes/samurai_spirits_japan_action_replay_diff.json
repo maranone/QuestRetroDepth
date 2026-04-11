@@ -1,0 +1,53 @@
+{
+  "system": "snes",
+  "normalized_title": "samuraispirits",
+  "display_name": "Samurai Spirits (Japan) (Action Replay) (diff)",
+  "aliases": [
+    "Samurai Spirits (Japan) (Action Replay)",
+    "Samurai Spirits (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Samurai Spirits (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E621400",
+          "desc": "Player 1 Health Modifier",
+          "address": "0x7E6214"
+        },
+        {
+          "code": "7E661400",
+          "desc": "Player 2 Health Modifier",
+          "address": "0x7E6614"
+        },
+        {
+          "code": "7EBE9B00",
+          "desc": "Time Modifier",
+          "address": "0x7EBE9B"
+        },
+        {
+          "code": "7E7A4900",
+          "desc": "Time Modifier",
+          "address": "0x7E7A49"
+        },
+        {
+          "code": "7E41C200",
+          "desc": "Player 1 Health Modifier",
+          "address": "0x7E41C2"
+        },
+        {
+          "code": "7E45C200",
+          "desc": "Player 2 Health Modifier",
+          "address": "0x7E45C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

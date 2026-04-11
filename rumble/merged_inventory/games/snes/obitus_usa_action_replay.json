@@ -1,0 +1,57 @@
+{
+  "system": "snes",
+  "normalized_title": "obitus",
+  "display_name": "Obitus (USA) (Action Replay)",
+  "aliases": [
+    "Obitus (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Obitus (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E111320",
+          "desc": "Infinite Health",
+          "address": "0x7E1113"
+        },
+        {
+          "code": "7E111720",
+          "desc": "Infinite Stamina",
+          "address": "0x7E1117"
+        },
+        {
+          "code": "7F132E02",
+          "desc": "Infinite Daggers",
+          "address": "0x7F132E"
+        },
+        {
+          "code": "7F0ED802",
+          "desc": "Infinite Silver Keys",
+          "address": "0x7F0ED8"
+        },
+        {
+          "code": "7F0E8E63",
+          "desc": "Infinite Gold Coins",
+          "address": "0x7F0E8E"
+        },
+        {
+          "code": "7E068600",
+          "desc": "Infinite Silver Keys",
+          "address": "0x7E0686"
+        },
+        {
+          "code": "7F0E8EFF",
+          "desc": "Infinite Gold Coins",
+          "address": "0x7F0E8E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

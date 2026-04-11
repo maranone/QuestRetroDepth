@@ -1,0 +1,35 @@
+{
+  "system": "genesis",
+  "normalized_title": "ikasuzekoinodokidokipenguinlandmd",
+  "display_name": "Ikasuze! Koi no Doki Doki Penguin Land MD (Japan) (SegaNet)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ikasuze! Koi no Doki Doki Penguin Land MD (Japan) (SegaNet).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF2642:0000",
+          "desc": "Infinite Lives",
+          "address": "0xFF2642"
+        },
+        {
+          "code": "FFEE38:0003",
+          "desc": "Infinite Eggs",
+          "address": "0xFFEE38"
+        },
+        {
+          "code": "FFF404:0030",
+          "desc": "Select Any Stage",
+          "address": "0xFFF404"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

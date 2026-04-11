@@ -1,0 +1,5 @@
+game_name=BarneysHideAndSeekGame
+game_key=BarneysHideAndSeekGame-Genesis
+system=genesis
+integration_tier=stable
+trigger	level_complete_level_ffdbfb	level_complete	0xFFDBFB	1	uint	native	prev != curr	0.65	1	left:0.800:400;right:0.800:400

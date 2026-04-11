@@ -1,0 +1,115 @@
+{
+  "system": "snes",
+  "normalized_title": "frogger",
+  "display_name": "Frogger (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Frogger (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 19,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "7E183D04",
+          "desc": "Infinite Lives",
+          "address": "0x7E183D"
+        },
+        {
+          "code": "7E078C95",
+          "desc": "Infinite Time",
+          "address": "0x7E078C"
+        },
+        {
+          "code": "7E17F400",
+          "desc": "Invincible",
+          "address": "0x7E17F4"
+        },
+        {
+          "code": "7E188600",
+          "desc": "Cars Don't Move",
+          "address": "0x7E1886"
+        },
+        {
+          "code": "7E188700",
+          "desc": "Cars Don't Move",
+          "address": "0x7E1887"
+        },
+        {
+          "code": "7E188800",
+          "desc": "Cars Don't Move",
+          "address": "0x7E1888"
+        },
+        {
+          "code": "7E188900",
+          "desc": "Cars Don't Move",
+          "address": "0x7E1889"
+        },
+        {
+          "code": "7E188A00",
+          "desc": "Cars Don't Move",
+          "address": "0x7E188A"
+        },
+        {
+          "code": "7E188004",
+          "desc": "River Objects Stopped",
+          "address": "0x7E1880"
+        },
+        {
+          "code": "7E188104",
+          "desc": "River Objects Stopped",
+          "address": "0x7E1881"
+        },
+        {
+          "code": "7E188204",
+          "desc": "River Objects Stopped",
+          "address": "0x7E1882"
+        },
+        {
+          "code": "7E188304",
+          "desc": "River Objects Stopped",
+          "address": "0x7E1883"
+        },
+        {
+          "code": "7E188404",
+          "desc": "River Objects Stopped",
+          "address": "0x7E1884"
+        },
+        {
+          "code": "7E183B00",
+          "desc": "Level Modifier There Are Only 8 Levels In This Game.)",
+          "address": "0x7E183B"
+        },
+        {
+          "code": "7E184100",
+          "desc": "Score Modifier [Tenths]",
+          "address": "0x7E1841"
+        },
+        {
+          "code": "7E184000",
+          "desc": "Score Modifier [Hundredths]",
+          "address": "0x7E1840"
+        },
+        {
+          "code": "7E183F00",
+          "desc": "Score Modifier [Thousandths]",
+          "address": "0x7E183F"
+        },
+        {
+          "code": "7E001100",
+          "desc": "Hold Down Direction To Move Instead Of Pressing For Turbo Frog",
+          "address": "0x7E0011"
+        },
+        {
+          "code": "7E16FD00",
+          "desc": "Game Continues While Paused",
+          "address": "0x7E16FD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

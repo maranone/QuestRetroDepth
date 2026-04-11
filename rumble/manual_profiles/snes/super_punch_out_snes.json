@@ -1,0 +1,117 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "SuperPunchOut",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Super Punch-Out (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "SuperPunchOut-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_0_88f",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E088F",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x088F",
+          "bank": "7E",
+          "wram_offset": 2191
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss",
+          "address": "0x7E088F",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_1_98f",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0x7E098F",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x098F",
+          "bank": "7E",
+          "wram_offset": 2447
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.51,
+          "duration_ms": 100
+        }
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on normal attacks",
+      "source_fields": [
+        {
+          "name": "rumble_on_normal_attacks",
+          "address": "0x7E098F",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_3_b9b",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0x7E0B9B",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0B9B",
+          "bank": "7E",
+          "wram_offset": 2971
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.51,
+          "duration_ms": 100
+        }
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on fast attacks",
+      "source_fields": [
+        {
+          "name": "rumble_on_fast_attacks",
+          "address": "0x7E0B9B",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

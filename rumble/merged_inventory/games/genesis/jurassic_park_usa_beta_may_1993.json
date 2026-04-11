@@ -1,0 +1,44 @@
+{
+  "system": "genesis",
+  "normalized_title": "jurassicpark",
+  "display_name": "Jurassic Park (USA) (Beta) (May, 1993)",
+  "aliases": [
+    "Jurassic Park (USA) (Beta) (May, 1993)",
+    "Jurassic Park (USA)",
+    "Jurassic Park (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Jurassic Park (World) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF0053:03",
+          "desc": "Infinite Lives (Grant & Raptor)",
+          "address": "0xFF0053"
+        },
+        {
+          "code": "FF0055:55",
+          "desc": "Infinite Health (Grant & Raptor)",
+          "address": "0xFF0055"
+        },
+        {
+          "code": "FFC028:XX",
+          "desc": "Force Game To Show Specific Player Cutscenes",
+          "address": "0xFFC028"
+        },
+        {
+          "code": "FF0AE6:XX",
+          "desc": "Level Modifier (Read Note!)",
+          "address": "0xFF0AE6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

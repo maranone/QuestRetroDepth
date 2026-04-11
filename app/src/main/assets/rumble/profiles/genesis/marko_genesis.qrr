@@ -1,0 +1,15 @@
+game_name=Marko (USA)
+game_key=Marko-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ff8d29	damage_taken	0xFF8D29	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff8d29	death	0xFF8D29	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ff8d25	life_lost	0xFF8D25	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff8d25	life_gained	0xFF8D25	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_ff8d0b	score	0xFF8D0B	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_ff8d09	score	0xFF8D09	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_ff8d07	score	0xFF8D07	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score3_ff8d05	score	0xFF8D05	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score4_ff8d03	score	0xFF8D03	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score5_ff8d01	score	0xFF8D01	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score6_ff8cff	score	0xFF8CFF	1	uint	native	prev < curr	0.8	1	right:0.350:60

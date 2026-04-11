@@ -1,0 +1,6 @@
+game_name=BattleTechAGameOfArmoredCombat
+game_key=BattleTechAGameOfArmoredCombat-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ffcac7	life_lost	0xFFCAC7	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffcac7	life_gained	0xFFCAC7	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180

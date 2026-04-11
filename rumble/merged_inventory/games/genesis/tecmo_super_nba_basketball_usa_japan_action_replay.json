@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "tecmosupernbabasketball",
+  "display_name": "Tecmo Super NBA Basketball (USA, Japan) (Action Replay)",
+  "aliases": [
+    "Tecmo Super NBA Basketball (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tecmo Super NBA Basketball (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFA7B5:XX",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFA7B5"
+        },
+        {
+          "code": "FFA7B7:XX",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFA7B7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

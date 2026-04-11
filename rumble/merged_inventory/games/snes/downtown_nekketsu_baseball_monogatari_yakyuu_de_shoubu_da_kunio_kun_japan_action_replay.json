@@ -1,0 +1,62 @@
+{
+  "system": "snes",
+  "normalized_title": "downtownnekketsubaseballmonogatariyakyuudeshoubudakuniokun",
+  "display_name": "Downtown - Nekketsu Baseball Monogatari - Yakyuu de Shoubu da! Kunio-kun (Japan) (Action Replay)",
+  "aliases": [
+    "Downtown - Nekketsu Baseball Monogatari - Yakyuu de Shoubu da! Kunio-kun (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Downtown - Nekketsu Baseball Monogatari - Yakyuu de Shoubu da! Kunio-kun (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E503200",
+          "desc": "Always 1 Ball",
+          "address": "0x7E5032"
+        },
+        {
+          "code": "7E503203",
+          "desc": "Always 4 Balls",
+          "address": "0x7E5032"
+        },
+        {
+          "code": "7E503003",
+          "desc": "1 Strike Ball = 1 Out",
+          "address": "0x7E5030"
+        },
+        {
+          "code": "7E503000",
+          "desc": "Always Stike 1 Ball",
+          "address": "0x7E5030"
+        },
+        {
+          "code": "7E503400",
+          "desc": "Out Always 0",
+          "address": "0x7E5034"
+        },
+        {
+          "code": "7E503403",
+          "desc": "Out Always 3",
+          "address": "0x7E5034"
+        },
+        {
+          "code": "7E500063",
+          "desc": "P1 Score Always Score 99",
+          "address": "0x7E5000"
+        },
+        {
+          "code": "7E500200",
+          "desc": "P2 Score Always 0",
+          "address": "0x7E5002"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,8 @@
+game_name=Atomic Runner (USA, Europe) (Action Replay)
+game_key=AtomicRunner-Genesis
+system=genesis
+integration_tier=stable
+trigger	game_over_gameover_ffc04a	game_over	0xFFC04A	1	uint	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	life_lost_lives_ffc323	life_lost	0xFFC323	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffc323	life_gained	0xFFC323	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ffc312	score	0xFFC312	4	bcd	big	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,43 @@
+{
+  "system": "snes",
+  "normalized_title": "flintstones",
+  "display_name": "Flintstones",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\flintstones_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E1D65",
+        "0x7E1D75"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Flintstones-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E1D65",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E1D75",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

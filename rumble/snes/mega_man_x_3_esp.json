@@ -1,0 +1,184 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Mega Man X 3 [Esp]",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Mega Man X 3 [Esp].cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "C2AD-6FF7",
+      "desc": "Infinite Health",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE2A-070D",
+      "desc": "Messy Menu (Doesn't Seem To Affect Gameplay)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE63-D4A1",
+      "desc": "Level 1 Shots Fired To The Right Start To Go LEFT, Then Do A U-Turn To The Right",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE62-D4A1",
+      "desc": "After Firing For A While, Level 1-3 Shots Are Disabled",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE6F-D4A1",
+      "desc": "Sparkles Behind Level 3-5 Shots Fly In A Straight Line",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE60-D4A1",
+      "desc": "Sparkles Behind Level 3-5 Shots Fly Across Screen Twice",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE60-D401",
+      "desc": "Sparkles Behind Level 3-5 Shots Fly Across Screen Twice #2 (Different)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE60-D701",
+      "desc": "No Sparkles Behind Level 3-5 Shots",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE60-DF01",
+      "desc": "Sparkles After Level 3-5, Shots Have Pretty \"Shimmering\" Effect",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE29-D7D1",
+      "desc": "Large Life Balls Instantly Fill An Entire Subtank",
+      "kind": "game_genie"
+    },
+    {
+      "code": "196A-D405",
+      "desc": "Both Zero's And X's Lightsaber Weapons Rapid Fire Huge Energy Waves",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D586-6F26",
+      "desc": "Super Jump",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DB86-6F26",
+      "desc": "Mega Jump",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D886-6F26",
+      "desc": "Ultra Mega Jump",
+      "kind": "game_genie"
+    },
+    {
+      "code": "82CB-0D2F",
+      "desc": "Infinite Special Weapons (Once You Have Them)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "82CB-0D2F",
+      "desc": "Infinite Special Weapons (Once You Have Them)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "82CA-0F2F",
+      "desc": "Infinite Special Weapons (Once You Have Them)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "AC2D-D701",
+      "desc": "Auto Pick-up On Life Energy Pods",
+      "kind": "game_genie"
+    },
+    {
+      "code": "B933-DF6C",
+      "desc": "Skip Boss At Start Of Game And Proceed To Stage Select",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F02A-ADF4",
+      "desc": "Start With Max Health Bar",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F02F-6469",
+      "desc": "Big Energy Pellets Fill Your Energy Bar To Full After Pick-Up",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F028-D7A1",
+      "desc": "Small Energy Pellets Fill Your Energy Bar To Full After Pick-Up",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6DA0-ADF7",
+      "desc": "Makes Your Normal Weapon MUCH More Powerful!",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBA6-0DD7",
+      "desc": "Get All Equipment when you Enter the Start Menu",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EEA6-0D07",
+      "desc": "Get All Equipment when you Enter the Start Menu",
+      "kind": "game_genie"
+    },
+    {
+      "code": "62A6-0D67",
+      "desc": "Get All Equipment when you Enter the Start Menu",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBA6-0DD7",
+      "desc": "Get All Robot Rider Parts/Gold Megaman When You Enter The Start Menu",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EEA6-0D07",
+      "desc": "Get All Robot Rider Parts/Gold Megaman When You Enter The Start Menu",
+      "kind": "game_genie"
+    },
+    {
+      "code": "62A6-0D67",
+      "desc": "Get All Robot Rider Parts/Gold Megaman When You Enter The Start Menu",
+      "kind": "game_genie"
+    },
+    {
+      "code": "25A6-0DA7",
+      "desc": "Get All Robot Rider Parts/Gold Megaman When You Enter The Start Menu",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBA6-0DD7",
+      "desc": "Get Zero Sword When You Enter The Start Menu",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6DA6-0D07",
+      "desc": "Get Zero Sword When You Enter The Start Menu",
+      "kind": "game_genie"
+    },
+    {
+      "code": "62A6-0D67",
+      "desc": "Get Zero Sword When You Enter The Start Menu",
+      "kind": "game_genie"
+    },
+    {
+      "code": "84A6-0DA7",
+      "desc": "Get Zero Sword When You Enter The Start Menu",
+      "kind": "game_genie"
+    }
+  ]
+}

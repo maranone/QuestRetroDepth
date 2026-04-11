@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "garfieldcaughtinact",
+  "display_name": "Garfield - Caught in the Act (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Garfield - Caught in the Act (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Garfield - Caught in the Act (USA, Europe).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FFCF70:0064",
+          "desc": "Infinite Hits (Garfield)",
+          "address": "0xFFCF70"
+        },
+        {
+          "code": "FFCF9E:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFFCF9E"
+        },
+        {
+          "code": "FFCFA0:0063",
+          "desc": "Infinite Skulls",
+          "address": "0xFFCFA0"
+        },
+        {
+          "code": "FFFEAB:0020",
+          "desc": "Debug Movement Mode",
+          "address": "0xFFFEAB"
+        },
+        {
+          "code": "FFCF2A:0010",
+          "desc": "1 Hit Invincibility",
+          "address": "0xFFCF2A"
+        },
+        {
+          "code": "FFA4FA:4020",
+          "desc": "Pause the game and Press Right to Skip Levels",
+          "address": "0xFFA4FA"
+        },
+        {
+          "code": "FFA4FC:0102",
+          "desc": "Pause the game and Press Right to Skip Levels",
+          "address": "0xFFA4FC"
+        },
+        {
+          "code": "FFA4FE:0001",
+          "desc": "Pause the game and Press Right to Skip Levels",
+          "address": "0xFFA4FE"
+        },
+        {
+          "code": "FFEE39:0005",
+          "desc": "Pause the game and Press Right to Skip Levels",
+          "address": "0xFFEE39"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

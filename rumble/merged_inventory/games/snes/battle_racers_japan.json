@@ -1,0 +1,65 @@
+{
+  "system": "snes",
+  "normalized_title": "battleracers",
+  "display_name": "Battle Racers (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Battle Racers (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7FF01C03",
+          "desc": "Infinite Continues P1",
+          "address": "0x7FF01C"
+        },
+        {
+          "code": "7E10C040",
+          "desc": "Infinite Health P1",
+          "address": "0x7E10C0"
+        },
+        {
+          "code": "7FF01E03",
+          "desc": "Infinite Continues P2",
+          "address": "0x7FF01E"
+        },
+        {
+          "code": "7E11C040",
+          "desc": "Infinite Health P2",
+          "address": "0x7E11C0"
+        },
+        {
+          "code": "7E112600",
+          "desc": "Freeze CPU Cars",
+          "address": "0x7E1126"
+        },
+        {
+          "code": "7E122600",
+          "desc": "Freeze CPU Cars",
+          "address": "0x7E1226"
+        },
+        {
+          "code": "7E132600",
+          "desc": "Freeze CPU Cars",
+          "address": "0x7E1326"
+        },
+        {
+          "code": "7E142600",
+          "desc": "Freeze CPU Cars",
+          "address": "0x7E1426"
+        },
+        {
+          "code": "7E152600",
+          "desc": "Freeze CPU Cars",
+          "address": "0x7E1526"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

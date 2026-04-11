@@ -1,0 +1,5 @@
+game_name=ZeroTolerance
+game_key=ZeroTolerance-Genesis
+system=genesis
+integration_tier=manual
+trigger	damage_taken_2_de6	damage_taken	0xFF0DE6	1	uint	native	prev > curr	0.85	1	left:0.750:180

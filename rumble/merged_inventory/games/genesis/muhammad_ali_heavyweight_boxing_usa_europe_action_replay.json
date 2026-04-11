@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "muhammadaliheavyweightboxing",
+  "display_name": "Muhammad Ali Heavyweight Boxing (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Muhammad Ali Heavyweight Boxing (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Muhammad Ali Heavyweight Boxing (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF026B:XX",
+          "desc": "XX Punches Swung For P1 Modifier",
+          "address": "0xFF026B"
+        },
+        {
+          "code": "FF02D3:XX",
+          "desc": "XX Punches Swung For P2/CPU Modifier",
+          "address": "0xFF02D3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

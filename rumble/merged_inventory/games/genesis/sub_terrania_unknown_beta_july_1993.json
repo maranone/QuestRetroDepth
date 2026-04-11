@@ -1,0 +1,72 @@
+{
+  "system": "genesis",
+  "normalized_title": "subterrania",
+  "display_name": "Sub-Terrania (Unknown) (Beta) (July, 1993)",
+  "aliases": [
+    "Sub-Terrania (Europe)",
+    "Sub-Terrania (Unknown) (Beta) (July, 1993)",
+    "Sub-Terrania (USA) (Beta) (October,1993)",
+    "Sub-Terrania (USA)",
+    "Sub-Terrania (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\subterrania_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF0037",
+        "0xFF0118"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SubTerrania-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF0037",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF0118",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sub-Terrania (World) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF5ED5:63",
+          "desc": "Infinite Fuel",
+          "address": "0xFF5ED5"
+        },
+        {
+          "code": "FF5EE1:63",
+          "desc": "Infinite Mega (Weapons Fire)",
+          "address": "0xFF5EE1"
+        },
+        {
+          "code": "FF0035:09",
+          "desc": "Infinite Ships",
+          "address": "0xFF0035"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

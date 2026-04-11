@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "wreckingcrew98",
+  "display_name": "Wrecking Crew '98 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Wrecking Crew '98 (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E047201",
+          "desc": "Automatically Win Modifier",
+          "address": "0x7E0472"
+        },
+        {
+          "code": "7E04B601",
+          "desc": "Automatically Win Modifier",
+          "address": "0x7E04B6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

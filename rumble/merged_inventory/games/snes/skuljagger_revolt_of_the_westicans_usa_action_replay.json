@@ -1,0 +1,108 @@
+{
+  "system": "snes",
+  "normalized_title": "skuljaggerrevoltofwesticans",
+  "display_name": "Skuljagger - Revolt of the Westicans (USA) (Action Replay)",
+  "aliases": [
+    "Skuljagger - Revolt Of The Westicans (Rumbles)",
+    "Skuljagger - Revolt of the Westicans (USA) (Action Replay)",
+    "Skuljagger - Revolt of the Westicans (USA) (Game Genie)",
+    "Skuljagger - Revolt of the Westicans (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\skuljaggerrevoltofthewesticans_snes.json",
+      "trigger_count": 4,
+      "field_names": [
+        "ammo",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E02BE",
+        "0x7E17C3",
+        "0x7E1A04"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SkuljaggerRevoltOfTheWesticans-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "ammo",
+          "address": "0x7E02BE",
+          "type": "<d2"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E17C3",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E1A04",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Skuljagger - Revolt of the Westicans (USA).cht",
+      "total_cheat_rows": 35,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E1A0209",
+          "desc": "Totally invincible",
+          "address": "0x7E1A02"
+        },
+        {
+          "code": "7E02BEFF",
+          "desc": "Infinite time",
+          "address": "0x7E02BE"
+        },
+        {
+          "code": "7E0E8700",
+          "desc": "Super Jump with Slow Descent",
+          "address": "0x7E0E87"
+        },
+        {
+          "code": "7E0E88FF",
+          "desc": "Walk on air",
+          "address": "0x7E0E88"
+        },
+        {
+          "code": "7E02BE95",
+          "desc": "Have Infinite Time",
+          "address": "0x7E02BE"
+        },
+        {
+          "code": "7E17C399",
+          "desc": "Have Infinite Lives",
+          "address": "0x7E17C3"
+        },
+        {
+          "code": "7E17C299",
+          "desc": "Have 99 Green Gems",
+          "address": "0x7E17C2"
+        },
+        {
+          "code": "7E17C499",
+          "desc": "Can Fire Many Red Gems At A Time",
+          "address": "0x7E17C4"
+        },
+        {
+          "code": "7E17C099",
+          "desc": "Character Animation Modifier",
+          "address": "0x7E17C0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

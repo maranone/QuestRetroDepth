@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "terminator2judgmentday",
+  "display_name": "Terminator 2 - Judgment Day (Rumbles)",
+  "aliases": [
+    "Terminator 2 - Judgment Day (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Terminator 2 - Judgment Day (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E149D64",
+          "desc": "Inf Health Sarah",
+          "address": "0x7E149D"
+        },
+        {
+          "code": "7E145264",
+          "desc": "Inf Health John",
+          "address": "0x7E1452"
+        },
+        {
+          "code": "7E1407C8",
+          "desc": "Infinite Energy",
+          "address": "0x7E1407"
+        },
+        {
+          "code": "7E1407FF",
+          "desc": "Infinte Ammo",
+          "address": "0x7E1407"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

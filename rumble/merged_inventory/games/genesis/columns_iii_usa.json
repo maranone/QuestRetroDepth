@@ -1,0 +1,117 @@
+{
+  "system": "genesis",
+  "normalized_title": "columnsiii",
+  "display_name": "Columns III (USA)",
+  "aliases": [
+    "Columns III (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\columnsiii_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ColumnsIII-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "matches",
+          "address": "0xFF105D",
+          "type": "|u1"
+        },
+        {
+          "name": "rounds_lost",
+          "address": "0xFF10D9",
+          "type": "|u1"
+        },
+        {
+          "name": "rounds_won",
+          "address": "0xFF044A",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Columns III (USA).cht",
+      "total_cheat_rows": 45,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FF0446:0000",
+          "desc": "Infinite Time",
+          "address": "0xFF0446"
+        },
+        {
+          "code": "FF105C:0000",
+          "desc": "Jewels Modifier P1",
+          "address": "0xFF105C"
+        },
+        {
+          "code": "FF108C:0000",
+          "desc": "Jewels Modifier P1",
+          "address": "0xFF108C"
+        },
+        {
+          "code": "FF145C:0000",
+          "desc": "Jewels Modifier P2",
+          "address": "0xFF145C"
+        },
+        {
+          "code": "FF148C:0000",
+          "desc": "Jewels Modifier P2",
+          "address": "0xFF148C"
+        },
+        {
+          "code": "FF105A:0000",
+          "desc": "Modifier P1",
+          "address": "0xFF105A"
+        },
+        {
+          "code": "FF145A:0000",
+          "desc": "Modifier P2",
+          "address": "0xFF145A"
+        },
+        {
+          "code": "FF0501:0006",
+          "desc": "Select Disabled 2-on-2 Mode on Mode Selection Menu",
+          "address": "0xFF0501"
+        },
+        {
+          "code": "FF4003:0009",
+          "desc": "Infinite Item 1",
+          "address": "0xFF4003"
+        },
+        {
+          "code": "FF4005:0009",
+          "desc": "Infinite Item 2",
+          "address": "0xFF4005"
+        },
+        {
+          "code": "FF4007:0009",
+          "desc": "Infinite Item 3",
+          "address": "0xFF4007"
+        },
+        {
+          "code": "FF4009:0009",
+          "desc": "Infinite Item 4",
+          "address": "0xFF4009"
+        },
+        {
+          "code": "FF400B:0009",
+          "desc": "Infinite Item 5",
+          "address": "0xFF400B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

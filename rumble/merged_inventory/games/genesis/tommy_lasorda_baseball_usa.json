@@ -1,0 +1,45 @@
+{
+  "system": "genesis",
+  "normalized_title": "tommylasordabaseball",
+  "display_name": "Tommy Lasorda Baseball (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tommy Lasorda Baseball (USA).cht",
+      "total_cheat_rows": 90,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFE128:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFFE128"
+        },
+        {
+          "code": "FFE126:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFFE126"
+        },
+        {
+          "code": "FFE12A:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFFE12A"
+        },
+        {
+          "code": "FFE132:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFE132"
+        },
+        {
+          "code": "FFE134:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFE134"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

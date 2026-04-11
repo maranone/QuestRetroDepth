@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "magicaldrop",
+  "display_name": "Magical Drop (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Magical Drop (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E0D4D09",
+          "desc": "Infinite Balls",
+          "address": "0x7E0D4D"
+        },
+        {
+          "code": "7E0D4C00",
+          "desc": "Balls Disappear",
+          "address": "0x7E0D4C"
+        },
+        {
+          "code": "7E0D5B02",
+          "desc": "Panic Mode",
+          "address": "0x7E0D5B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "hardball",
+  "display_name": "HardBall! (USA) (Action Replay)",
+  "aliases": [
+    "HardBall! (USA, Europe) (Unl)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\HardBall! (USA, Europe) (Unl).cht",
+      "total_cheat_rows": 50,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFFF24:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFFFF24"
+        },
+        {
+          "code": "FFFF26:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFFFF26"
+        },
+        {
+          "code": "FFFF28:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFFFF28"
+        },
+        {
+          "code": "FFFF20:0000",
+          "desc": "Batter Stance Modifier",
+          "address": "0xFFFF20"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

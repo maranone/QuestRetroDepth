@@ -1,0 +1,9 @@
+game_name=Judge Dredd (World) (Action Replay)
+game_key=JudgeDredd-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ff2b41	damage_taken	0xFF2B41	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff2b41	death	0xFF2B41	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ff2b2e	life_lost	0xFF2B2E	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff2b2e	life_gained	0xFF2B2E	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ff2b38	score	0xFF2B38	4	bcd	big	prev < curr	0.8	1	right:0.350:60

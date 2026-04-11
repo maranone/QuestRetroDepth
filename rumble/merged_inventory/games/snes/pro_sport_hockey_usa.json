@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "prosporthockey",
+  "display_name": "Pro Sport Hockey (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Pro Sport Hockey (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E007300",
+          "desc": "Seconds Modifier",
+          "address": "0x7E0073"
+        },
+        {
+          "code": "7E08B200",
+          "desc": "Player 1 Score Modifier",
+          "address": "0x7E08B2"
+        },
+        {
+          "code": "7E08B400",
+          "desc": "Computer Score Modifier",
+          "address": "0x7E08B4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

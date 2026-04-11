@@ -1,0 +1,105 @@
+{
+  "system": "snes",
+  "normalized_title": "riddickboweboxing",
+  "display_name": "Riddick Bowe Boxing (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Riddick Bowe Boxing (USA).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 17,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "7E0E2778",
+          "desc": "Player 1's Health Regenerates much faster",
+          "address": "0x7E0E27"
+        },
+        {
+          "code": "7E0E3D54",
+          "desc": "Player 1 Can Move Very Fast",
+          "address": "0x7E0E3D"
+        },
+        {
+          "code": "7E0E1978",
+          "desc": "Player 1 has Infinite Health",
+          "address": "0x7E0E19"
+        },
+        {
+          "code": "7E0E1D00",
+          "desc": "Player 1 has No Body Damage",
+          "address": "0x7E0E1D"
+        },
+        {
+          "code": "7E0E0100",
+          "desc": "Player 1 Can't Move",
+          "address": "0x7E0E01"
+        },
+        {
+          "code": "7E0E0300",
+          "desc": "Player 1 Can't Move",
+          "address": "0x7E0E03"
+        },
+        {
+          "code": "7E0E2F01",
+          "desc": "Player 1 has Ultra Fast Punches",
+          "address": "0x7E0E2F"
+        },
+        {
+          "code": "7E0E1B00",
+          "desc": "Player 1 has No Head Damage",
+          "address": "0x7E0E1B"
+        },
+        {
+          "code": "7E0F2700",
+          "desc": "Player 2's Health Doesn't Regenerate",
+          "address": "0x7E0F27"
+        },
+        {
+          "code": "7E0F3D00",
+          "desc": "Player 2 Moves Very Slow",
+          "address": "0x7E0F3D"
+        },
+        {
+          "code": "7E0F1900",
+          "desc": "Player 2 has No Health",
+          "address": "0x7E0F19"
+        },
+        {
+          "code": "7E0F1D78",
+          "desc": "Player 2 has Maximum Body Damage",
+          "address": "0x7E0F1D"
+        },
+        {
+          "code": "7E0F0100",
+          "desc": "Player 2 Can't Move",
+          "address": "0x7E0F01"
+        },
+        {
+          "code": "7E0F0300",
+          "desc": "Player 2 Can't Move",
+          "address": "0x7E0F03"
+        },
+        {
+          "code": "7E0F2F01",
+          "desc": "Player 2 has Ultra Fast Punches",
+          "address": "0x7E0F2F"
+        },
+        {
+          "code": "7E0F1B78",
+          "desc": "Player 2 has Maximum Head Damage",
+          "address": "0x7E0F1B"
+        },
+        {
+          "code": "7E006401",
+          "desc": "Fight Anyone Regardless of Ranking",
+          "address": "0x7E0064"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

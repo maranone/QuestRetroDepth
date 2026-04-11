@@ -1,0 +1,10 @@
+game_name=Battletoads in Battlemaniacs (World) (Game Genie)
+game_key=BattletoadsInBattlemaniacs-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_0e5e	damage_taken	0x7E0E5E	1	int	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0e5e	death	0x7E0E5E	1	int	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_0028	life_lost	0x7E0028	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0028	life_gained	0x7E0028	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_scorehi_0024	score	0x7E0024	2	bcd	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_scorelo_0020	score	0x7E0020	2	bcd	little	prev < curr	0.8	1	right:0.350:60

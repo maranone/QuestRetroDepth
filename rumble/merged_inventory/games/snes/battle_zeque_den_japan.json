@@ -1,0 +1,88 @@
+{
+  "system": "snes",
+  "normalized_title": "battlezequeden",
+  "display_name": "Battle Zeque Den (Japan)",
+  "aliases": [
+    "Battle Zeque Den (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\battlezequeden_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0329",
+        "0x7F0000"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BattleZequeDen-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0329",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7F0000",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Battle Zeque Den (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 7,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7EB26A03",
+          "desc": "Invincibility",
+          "address": "0x7EB26A"
+        },
+        {
+          "code": "7E03290A",
+          "desc": "Infinite Lives",
+          "address": "0x7E0329"
+        },
+        {
+          "code": "7EB24C02",
+          "desc": "Infinite Red Special",
+          "address": "0x7EB24C"
+        },
+        {
+          "code": "7EB24C04",
+          "desc": "Infinite Blue Special",
+          "address": "0x7EB24C"
+        },
+        {
+          "code": "7EB24C06",
+          "desc": "Infinite Green Special",
+          "address": "0x7EB24C"
+        },
+        {
+          "code": "7EB2464E",
+          "desc": "Infinite Energy",
+          "address": "0x7EB246"
+        },
+        {
+          "code": "7EB26A03",
+          "desc": "Invincibility",
+          "address": "0x7EB26A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

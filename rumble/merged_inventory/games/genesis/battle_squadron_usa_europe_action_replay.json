@@ -1,0 +1,79 @@
+{
+  "system": "genesis",
+  "normalized_title": "battlesquadron",
+  "display_name": "Battle Squadron (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Battle Squadron (USA, Europe) (Action Replay)",
+    "Battle Squadron (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\battlesquadron_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF0177",
+        "0xFF0186"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BattleSquadron-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF0177",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF0186",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Battle Squadron (USA, Europe).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF0176:0002",
+          "desc": "Infinite Lives",
+          "address": "0xFF0176"
+        },
+        {
+          "code": "FF017E:0003",
+          "desc": "Infinite Bombs",
+          "address": "0xFF017E"
+        },
+        {
+          "code": "FF0172:0001",
+          "desc": "Invincibility",
+          "address": "0xFF0172"
+        },
+        {
+          "code": "FF02EC:0009",
+          "desc": "Infinite Ships P2",
+          "address": "0xFF02EC"
+        },
+        {
+          "code": "FF02F4:0009",
+          "desc": "Infinite Secondary Blasts P2",
+          "address": "0xFF02F4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

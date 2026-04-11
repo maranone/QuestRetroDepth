@@ -1,0 +1,6 @@
+game_name=KishinDoujiZenkiBatoruRaiden
+game_key=KishinDoujiZenkiBatoruRaiden-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_214	damage_taken	0x7E0214	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	enemy_defeated_1_b00	enemy_defeated	0x7E0B00	1	uint	native	prev != curr	0.55	1	left:0.510:100

@@ -1,0 +1,95 @@
+{
+  "system": "genesis",
+  "normalized_title": "williamsarcadesgreatesthits",
+  "display_name": "Williams Arcade's Greatest Hits (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Williams Arcade's Greatest Hits (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 15,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "FFA2B6:0003",
+          "desc": "Infinite Lives P1",
+          "address": "0xFFA2B6"
+        },
+        {
+          "code": "FFA2B8:0003",
+          "desc": "Infinite Bombs P1",
+          "address": "0xFFA2B8"
+        },
+        {
+          "code": "FFA2F4:0003",
+          "desc": "Infinite Lives P2",
+          "address": "0xFFA2F4"
+        },
+        {
+          "code": "FFA2F6:0003",
+          "desc": "Infinite Bombs P2",
+          "address": "0xFFA2F6"
+        },
+        {
+          "code": "FFB7FE:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFFB7FE"
+        },
+        {
+          "code": "FFB800:0003",
+          "desc": "Infinite Bombs P1",
+          "address": "0xFFB800"
+        },
+        {
+          "code": "FFB83E:0003",
+          "desc": "Infinite Lives P2",
+          "address": "0xFFB83E"
+        },
+        {
+          "code": "FFB840:0003",
+          "desc": "Infinite Bombs P2",
+          "address": "0xFFB840"
+        },
+        {
+          "code": "FF299C:0004",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF299C"
+        },
+        {
+          "code": "FF299E:0005",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF299E"
+        },
+        {
+          "code": "FF29A6:0004",
+          "desc": "Infinite Lives P2",
+          "address": "0xFF29A6"
+        },
+        {
+          "code": "FF29A8:0005",
+          "desc": "Infinite Lives P2",
+          "address": "0xFF29A8"
+        },
+        {
+          "code": "FFDB64:0002",
+          "desc": "Infinite Lives Both Players",
+          "address": "0xFFDB64"
+        },
+        {
+          "code": "FF1F42:0003",
+          "desc": "Infinite Lives Both Players",
+          "address": "0xFF1F42"
+        },
+        {
+          "code": "FF1F5A:0004",
+          "desc": "Infinite Sinibombs Both Players",
+          "address": "0xFF1F5A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

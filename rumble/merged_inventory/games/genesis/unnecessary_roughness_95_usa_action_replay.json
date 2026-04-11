@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "unnecessaryroughness95",
+  "display_name": "Unnecessary Roughness '95 (USA) (Action Replay)",
+  "aliases": [
+    "Unnecessary Roughness '95 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Unnecessary Roughness '95 (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFB160:0063",
+          "desc": "Infinite Play Clock",
+          "address": "0xFFB160"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

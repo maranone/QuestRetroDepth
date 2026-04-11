@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "wackyraces",
+  "display_name": "Wacky Races (USA) (Action Replay)",
+  "aliases": [
+    "Wacky Races (USA) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Wacky Races (USA) (Proto).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF03D0:0000",
+          "desc": "Car Highlighter Modifier P1",
+          "address": "0xFF03D0"
+        },
+        {
+          "code": "FF03D4:0000",
+          "desc": "Car Highlighter Modifier P2",
+          "address": "0xFF03D4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

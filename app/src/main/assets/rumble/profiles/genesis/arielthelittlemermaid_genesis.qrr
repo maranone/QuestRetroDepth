@@ -1,0 +1,8 @@
+game_name=Ariel the Little Mermaid (USA, Europe) (Action Replay) (diff)
+game_key=ArielTheLittleMermaid-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ff404d	damage_taken	0xFF404D	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff404d	death	0xFF404D	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ffa60f	life_lost	0xFFA60F	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffa60f	life_gained	0xFFA60F	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180

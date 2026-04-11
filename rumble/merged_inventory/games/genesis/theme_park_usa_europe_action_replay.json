@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "themepark",
+  "display_name": "Theme Park (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Theme Park (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Theme Park (USA, Europe).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF2D82:00FF",
+          "desc": "Infinite Money",
+          "address": "0xFF2D82"
+        },
+        {
+          "code": "FFD9D4:0000",
+          "desc": "Take control while the demo mode plays",
+          "address": "0xFFD9D4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

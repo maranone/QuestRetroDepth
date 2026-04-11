@@ -1,0 +1,148 @@
+{
+  "system": "genesis",
+  "normalized_title": "goldenaxeii",
+  "display_name": "Golden Axe II (World) (Action Replay)",
+  "aliases": [
+    "Golden Axe II (World) (Beta)",
+    "Golden Axe II (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Golden Axe II (World).cht",
+      "total_cheat_rows": 83,
+      "raw_entry_count": 32,
+      "distinct_address_count": 25,
+      "sample_raw_entries": [
+        {
+          "code": "FF0880:0003",
+          "desc": "Lives",
+          "address": "0xFF0880"
+        },
+        {
+          "code": "FF0882:0005",
+          "desc": "Magic Bottles",
+          "address": "0xFF0882"
+        },
+        {
+          "code": "FF0882:0003",
+          "desc": "Energy",
+          "address": "0xFF0882"
+        },
+        {
+          "code": "FF0888:0002",
+          "desc": "Enemies Don't Attack Player 1",
+          "address": "0xFF0888"
+        },
+        {
+          "code": "FF0924:0003",
+          "desc": "Infinite Lives Player 2",
+          "address": "0xFF0924"
+        },
+        {
+          "code": "FF08E2:0003",
+          "desc": "Infinite Energy Player 2",
+          "address": "0xFF08E2"
+        },
+        {
+          "code": "FF0926:0008",
+          "desc": "Infinite Magic Player 2",
+          "address": "0xFF0926"
+        },
+        {
+          "code": "FF092C:0002",
+          "desc": "Enemies Don't Attack Player 2",
+          "address": "0xFF092C"
+        },
+        {
+          "code": "FF0CF8:0000",
+          "desc": "Lizards Never run when hit",
+          "address": "0xFF0CF8"
+        },
+        {
+          "code": "FF0CFA:090F",
+          "desc": "Lizards Never run when sleeping",
+          "address": "0xFF0CFA"
+        },
+        {
+          "code": "FF0880:0002",
+          "desc": "Infinite Lives (Use On A Real PAR)",
+          "address": "0xFF0880"
+        },
+        {
+          "code": "FF0882:0005",
+          "desc": "Always Keep Five Bombs (Use On A Real PAR)",
+          "address": "0xFF0882"
+        },
+        {
+          "code": "FF083E:0005",
+          "desc": "Infinite Health (Player 1)",
+          "address": "0xFF083E"
+        },
+        {
+          "code": "FF08E2:0005",
+          "desc": "Infinite Health (Player 2)",
+          "address": "0xFF08E2"
+        },
+        {
+          "code": "FF0888:0063",
+          "desc": "Invincible/Enemies Won't Attack (Player 1)",
+          "address": "0xFF0888"
+        },
+        {
+          "code": "FF0840:0064",
+          "desc": "Invincibility (Player 1)",
+          "address": "0xFF0840"
+        },
+        {
+          "code": "FF08E4:0064",
+          "desc": "Invincibility (Player 2)",
+          "address": "0xFF08E4"
+        },
+        {
+          "code": "FF0882:0005",
+          "desc": "Set Max./Infinite Magic (Player 1)",
+          "address": "0xFF0882"
+        },
+        {
+          "code": "FF0926:0000",
+          "desc": "Set Max./Infinite Magic (Player 2)",
+          "address": "0xFF0926"
+        },
+        {
+          "code": "FF088C:0005",
+          "desc": "Set Max. Magic Attack (Player 1)",
+          "address": "0xFF088C"
+        },
+        {
+          "code": "FF0930:0000",
+          "desc": "Set Max. Magic Attack (Player 2)",
+          "address": "0xFF0930"
+        },
+        {
+          "code": "FF07E8:0005",
+          "desc": "Infinite Credits",
+          "address": "0xFF07E8"
+        },
+        {
+          "code": "FF07E6:0000",
+          "desc": "Stage Select",
+          "address": "0xFF07E6"
+        },
+        {
+          "code": "FF07CA:0000",
+          "desc": "Battle Modifier (Duel Mode)",
+          "address": "0xFF07CA"
+        },
+        {
+          "code": "FF0B72:0000",
+          "desc": "Kill Every Enemy Or Boss With One Knockdown",
+          "address": "0xFF0B72"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

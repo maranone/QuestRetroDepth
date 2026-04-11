@@ -1,0 +1,75 @@
+{
+  "system": "genesis",
+  "normalized_title": "segatopfive",
+  "display_name": "Sega Top Five (Brazil)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sega Top Five (Brazil).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 11,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FFD882:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFFD882"
+        },
+        {
+          "code": "FFD882:0000",
+          "desc": "All Chicks Rescues",
+          "address": "0xFFD882"
+        },
+        {
+          "code": "FFD28E:0063",
+          "desc": "Fake Rescued All Chicks In Bonus Round",
+          "address": "0xFFD28E"
+        },
+        {
+          "code": "FFF01C:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFF01C"
+        },
+        {
+          "code": "FFF01C:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFF01C"
+        },
+        {
+          "code": "FF13DE:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF13DE"
+        },
+        {
+          "code": "FF0F02:0089",
+          "desc": "Infinite Time",
+          "address": "0xFF0F02"
+        },
+        {
+          "code": "FF13E4:0007",
+          "desc": "Infinite Magic",
+          "address": "0xFF13E4"
+        },
+        {
+          "code": "FF92F8:0000",
+          "desc": "Low Timer (Minutes)",
+          "address": "0xFF92F8"
+        },
+        {
+          "code": "FF92FA:0000",
+          "desc": "Low Timer (Seconds)",
+          "address": "0xFF92FA"
+        },
+        {
+          "code": "FFF82A:0008",
+          "desc": "Infinite Helicopters",
+          "address": "0xFFF82A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

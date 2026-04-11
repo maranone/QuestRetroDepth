@@ -1,0 +1,78 @@
+{
+  "system": "genesis",
+  "normalized_title": "jamespondiicodenamerobocod",
+  "display_name": "James Pond II - Codename - Robocod (USA, Europe) (Action Replay)",
+  "aliases": [
+    "James Pond II - Codename - Robocod (USA, Europe) (Action Replay)",
+    "James Pond II - Codename - Robocod (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\jamespondiicodenamerobocod_genesis.json",
+      "trigger_count": 6,
+      "field_names": [
+        "gameover",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xFFB3F0",
+        "0xFFB3F9",
+        "0xFFB3FD",
+        "0xFFFF8E"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JamesPondIICodenameRobocod-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFFFF8E",
+          "type": "|i1"
+        },
+        {
+          "name": "health",
+          "address": "0xFFB3FD",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFB3F9",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFB3F0",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\James Pond II - Codename - Robocod (USA, Europe).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFB3EE:0010",
+          "desc": "Invincible",
+          "address": "0xFFB3EE"
+        },
+        {
+          "code": "FFB3FD:0005",
+          "desc": "Infinite Energy",
+          "address": "0xFFB3FD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

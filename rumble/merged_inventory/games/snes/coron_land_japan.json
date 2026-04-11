@@ -1,0 +1,55 @@
+{
+  "system": "snes",
+  "normalized_title": "coronland",
+  "display_name": "Coron Land (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Coron Land (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E056245",
+          "desc": "Infinite Health",
+          "address": "0x7E0562"
+        },
+        {
+          "code": "7E04A445",
+          "desc": "Infinite Health",
+          "address": "0x7E04A4"
+        },
+        {
+          "code": "7E062045",
+          "desc": "Infinite Health",
+          "address": "0x7E0620"
+        },
+        {
+          "code": "7E046D01",
+          "desc": "Untouchable",
+          "address": "0x7E046D"
+        },
+        {
+          "code": "7E052B01",
+          "desc": "Untouchable",
+          "address": "0x7E052B"
+        },
+        {
+          "code": "7E05E901",
+          "desc": "Untouchable",
+          "address": "0x7E05E9"
+        },
+        {
+          "code": "7E03E600",
+          "desc": "Quick win first boss battle",
+          "address": "0x7E03E6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

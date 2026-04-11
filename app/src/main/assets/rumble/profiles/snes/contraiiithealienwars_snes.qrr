@@ -1,0 +1,10 @@
+game_name=ContraIIITheAlienWars
+game_key=ContraIIITheAlienWars-Snes
+system=snes
+integration_tier=manual
+trigger	p1_life_lost_1746	life_lost	0x7E1746	1	uint	native	prev > curr	0.9	1	left:0.630:250
+trigger	p1_megabomb_used_1f8c	powerup_lost	0x7E1F8C	1	uint	native	prev > curr	0.9	1	left:1.000:250
+trigger	p1_enemy_hit_1fa1	enemy_defeated	0x7E1FA1	1	uint	native	prev != curr	0.7	1	left:0.510:100
+trigger	p2_life_lost_1766	life_lost	0x7E1766	1	uint	native	prev > curr	0.9	1	right:0.630:250
+trigger	p2_megabomb_used_1fcc	powerup_lost	0x7E1FCC	1	uint	native	prev > curr	0.9	1	right:1.000:250
+trigger	p2_enemy_hit_1fe0	enemy_defeated	0x7E1FE0	1	uint	native	prev != curr	0.7	1	right:0.510:100

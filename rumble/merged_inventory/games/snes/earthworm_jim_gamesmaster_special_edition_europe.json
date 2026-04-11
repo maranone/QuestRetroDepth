@@ -1,0 +1,65 @@
+{
+  "system": "snes",
+  "normalized_title": "earthwormjimgamesmasterspecialedition",
+  "display_name": "Earthworm Jim - GamesMaster Special Edition (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Earthworm Jim - GamesMaster Special Edition (Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E68180A",
+          "desc": "Invincibility",
+          "address": "0x7E6818"
+        },
+        {
+          "code": "7E661539",
+          "desc": "Infinite Health",
+          "address": "0x7E6615"
+        },
+        {
+          "code": "7E661639",
+          "desc": "Infinite Health",
+          "address": "0x7E6616"
+        },
+        {
+          "code": "7E661739",
+          "desc": "Infinite Health",
+          "address": "0x7E6617"
+        },
+        {
+          "code": "7E516039",
+          "desc": "Infinite Lives",
+          "address": "0x7E5160"
+        },
+        {
+          "code": "7E660E39",
+          "desc": "Infinite Ammo",
+          "address": "0x7E660E"
+        },
+        {
+          "code": "7E660F39",
+          "desc": "Infinite Ammo",
+          "address": "0x7E660F"
+        },
+        {
+          "code": "7E661039",
+          "desc": "Infinite Ammo",
+          "address": "0x7E6610"
+        },
+        {
+          "code": "7E661139",
+          "desc": "Infinite Ammo",
+          "address": "0x7E6611"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

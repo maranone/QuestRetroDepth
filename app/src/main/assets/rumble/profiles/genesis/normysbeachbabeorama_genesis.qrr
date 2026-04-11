@@ -1,0 +1,9 @@
+game_name=Normy's Beach Babe-O-Rama (USA, Europe) (Action Replay)
+game_key=NormysBeachBabeORama-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ffb0a9	damage_taken	0xFFB0A9	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffb0a9	death	0xFFB0A9	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ffa18f	life_lost	0xFFA18F	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffa18f	life_gained	0xFFA18F	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ffd769	score	0xFFD769	3	bcd	big	prev < curr	0.8	1	right:0.350:60

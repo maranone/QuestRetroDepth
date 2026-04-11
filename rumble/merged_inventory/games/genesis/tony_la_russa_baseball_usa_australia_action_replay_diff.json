@@ -1,0 +1,48 @@
+{
+  "system": "genesis",
+  "normalized_title": "tonylarussabaseball",
+  "display_name": "Tony La Russa Baseball (USA, Australia) (Action Replay) (diff)",
+  "aliases": [
+    "Tony La Russa Baseball (USA, Australia) (Action Replay)",
+    "Tony La Russa Baseball (USA, Australia)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tony La Russa Baseball (USA, Australia).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFFED2:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFFFED2"
+        },
+        {
+          "code": "FFFED2:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFFFED2"
+        },
+        {
+          "code": "FFFEB6:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFFFEB6"
+        },
+        {
+          "code": "FFFEA6:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFFEA6"
+        },
+        {
+          "code": "FFFEA6:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFFEA6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

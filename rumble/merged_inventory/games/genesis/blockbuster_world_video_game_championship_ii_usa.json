@@ -1,0 +1,70 @@
+{
+  "system": "genesis",
+  "normalized_title": "blockbusterworldvideogamechampionshipii",
+  "display_name": "Blockbuster World Video Game Championship II (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Blockbuster World Video Game Championship II (USA).cht",
+      "total_cheat_rows": 159,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FF28B6:0009",
+          "desc": "Infinite Time Scoreclock",
+          "address": "0xFF28B6"
+        },
+        {
+          "code": "FF28B8:0028",
+          "desc": "Infinite Time Scoreclock",
+          "address": "0xFF28B8"
+        },
+        {
+          "code": "FF44A6:0020",
+          "desc": "Infinite Turbo P1",
+          "address": "0xFF44A6"
+        },
+        {
+          "code": "FF28DC:0009",
+          "desc": "Infinite Shot Clock",
+          "address": "0xFF28DC"
+        },
+        {
+          "code": "FF28B8:0028",
+          "desc": "Infinite Time Scoreclock",
+          "address": "0xFF28B8"
+        },
+        {
+          "code": "FF04AC:0046",
+          "desc": "Infinite Time",
+          "address": "0xFF04AC"
+        },
+        {
+          "code": "FF2B46:0099",
+          "desc": "Infinite Health",
+          "address": "0xFF2B46"
+        },
+        {
+          "code": "FF3168:0063",
+          "desc": "Infinite Blue/Red Ball Weapon",
+          "address": "0xFF3168"
+        },
+        {
+          "code": "FF3170:0063",
+          "desc": "Infinite Black/Yellow Weapon",
+          "address": "0xFF3170"
+        },
+        {
+          "code": "FF3172:0063",
+          "desc": "Infinite Black/Red Weapon",
+          "address": "0xFF3172"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "system": "genesis",
+  "normalized_title": "easportsdoubleheader",
+  "display_name": "EA Sports Double Header (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\EA Sports Double Header (Europe).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFD8FA:0009",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFD8FA"
+        },
+        {
+          "code": "FFD8FA:0079",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFD8FA"
+        },
+        {
+          "code": "FFD914:0063",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFFD914"
+        },
+        {
+          "code": "FFD99C:0000",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFFD99C"
+        },
+        {
+          "code": "FFAD88:0063",
+          "desc": "Infinite Time-Outs P1",
+          "address": "0xFFAD88"
+        },
+        {
+          "code": "FFAD62:0099",
+          "desc": "Infinite Time While Timed Out P1",
+          "address": "0xFFAD62"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

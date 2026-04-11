@@ -1,0 +1,45 @@
+{
+  "system": "snes",
+  "normalized_title": "bsdrmario",
+  "display_name": "BS Dr. Mario (J)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\BS Dr. Mario (J).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E0C2A00",
+          "desc": "Clear One Virus To Beat The Stage",
+          "address": "0x7E0C2A"
+        },
+        {
+          "code": "7E03E700",
+          "desc": "Clear One Virus To Beat The Stage",
+          "address": "0x7E03E7"
+        },
+        {
+          "code": "7E0C2600",
+          "desc": "Clear One Virus To Beat The Stage",
+          "address": "0x7E0C26"
+        },
+        {
+          "code": "7F063800",
+          "desc": "Clear One Virus To Beat The Stage",
+          "address": "0x7F0638"
+        },
+        {
+          "code": "7E034000",
+          "desc": "Stage Modifier",
+          "address": "0x7E0340"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Pop'n TwinBee (Europe, Japan) (Game Genie)
+game_key=PopnTwinBee-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_009c	damage_taken	0x7E009C	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_009c	death	0x7E009C	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_1f08	score	0x7E1F08	4	bcd	little	prev < curr	0.8	1	right:0.350:60

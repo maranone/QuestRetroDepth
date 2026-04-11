@@ -1,0 +1,82 @@
+{
+  "system": "genesis",
+  "normalized_title": "lethalenforcersiigunfighters",
+  "display_name": "Lethal Enforcers II - Gun Fighters (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Lethal Enforcers II - Gun Fighters (USA)",
+    "Lethal Enforcers II - Gun Fighters (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\lethalenforcersiigunfighters_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFB0A6"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\LethalEnforcersIIGunFighters-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "continuetimer",
+          "address": "0xFFB0AF",
+          "type": "|d1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFB0A6",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Lethal Enforcers II - Gun Fighters (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFB0AF:99",
+          "desc": "Infinite Health P1",
+          "address": "0xFFB0AF"
+        },
+        {
+          "code": "FFB0BF:06",
+          "desc": "Infinite Bullets P1",
+          "address": "0xFFB0BF"
+        },
+        {
+          "code": "FFB0B1:99",
+          "desc": "Infinite Health P2",
+          "address": "0xFFB0B1"
+        },
+        {
+          "code": "FFB0C1:06",
+          "desc": "Infinite Bullets P2",
+          "address": "0xFFB0C1"
+        },
+        {
+          "code": "FFB0A5:63",
+          "desc": "Infinite Credits",
+          "address": "0xFFB0A5"
+        },
+        {
+          "code": "FFB0BB:03",
+          "desc": "Always Have The Rifle P1",
+          "address": "0xFFB0BB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

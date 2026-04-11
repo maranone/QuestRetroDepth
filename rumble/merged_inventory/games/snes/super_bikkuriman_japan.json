@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "superbikkuriman",
+  "display_name": "Super Bikkuriman (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Bikkuriman (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E145C5D",
+          "desc": "P1 Infinite Health",
+          "address": "0x7E145C"
+        },
+        {
+          "code": "7E148C00",
+          "desc": "P2 No Health",
+          "address": "0x7E148C"
+        },
+        {
+          "code": "7E14B963",
+          "desc": "Infinite Time",
+          "address": "0x7E14B9"
+        },
+        {
+          "code": "7E1594BE",
+          "desc": "Character Modifier",
+          "address": "0x7E1594"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

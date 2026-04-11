@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "cyberball",
+  "display_name": "Cyberball (World) (Action Replay)",
+  "aliases": [
+    "Cyberball (World) (Action Replay)",
+    "Cyberball (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\cyberball_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFF61B"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Cyberball-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "opponent_score",
+          "address": "0xFFF62F",
+          "type": "|d1"
+        },
+        {
+          "name": "period",
+          "address": "0xFFF518",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF61B",
+          "type": "|d1"
+        },
+        {
+          "name": "time",
+          "address": "0xFFF56C",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Cyberball (World).cht",
+      "total_cheat_rows": 39,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFF56C:0046",
+          "desc": "Infinite Gametime",
+          "address": "0xFFF56C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

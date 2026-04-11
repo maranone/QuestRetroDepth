@@ -1,0 +1,12 @@
+game_name=Magic Boy (USA)
+game_key=MagicBoy-Snes
+system=snes
+integration_tier=stable
+trigger	game_over_gameover_0009	game_over	0x7E0009	1	int	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	life_lost_lives_9bb6	life_lost	0x7E9BB6	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_9bb6	life_gained	0x7E9BB6	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_9b7a	score	0x7E9B7A	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_9b7e	score	0x7E9B7E	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_9b82	score	0x7E9B82	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score3_9b86	score	0x7E9B86	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score4_9b8a	score	0x7E9B8A	1	uint	native	prev < curr	0.8	1	right:0.350:60

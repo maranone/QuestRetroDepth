@@ -1,0 +1,118 @@
+{
+  "system": "genesis",
+  "normalized_title": "espnbaseballtonight",
+  "display_name": "ESPN Baseball Tonight (USA) (Action Replay)",
+  "aliases": [
+    "ESPN Baseball Tonight (USA) (Action Replay)",
+    "ESPN Baseball Tonight (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\espnbaseballtonight_genesis.json",
+      "trigger_count": 4,
+      "field_names": [
+        "score_hits",
+        "score_opponent_hits",
+        "score_opponent_runs",
+        "score_runs"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xFF005F",
+        "0xFF0061",
+        "0xFF40FB",
+        "0xFF40FD"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ESPNBaseballTonight-Genesis-v0\\data.json",
+      "field_count": 10,
+      "fields": [
+        {
+          "name": "at_bat",
+          "address": "0xFF0003",
+          "type": "|u1"
+        },
+        {
+          "name": "ball",
+          "address": "0xFF40F7",
+          "type": "|u1"
+        },
+        {
+          "name": "inning",
+          "address": "0xFF2EE5",
+          "type": "|u1"
+        },
+        {
+          "name": "opponent_at_bat",
+          "address": "0xFF0005",
+          "type": "|u1"
+        },
+        {
+          "name": "out",
+          "address": "0xFF40F9",
+          "type": "|u1"
+        },
+        {
+          "name": "score_hits",
+          "address": "0xFF40FB",
+          "type": "|u1"
+        },
+        {
+          "name": "score_opponent_hits",
+          "address": "0xFF40FD",
+          "type": "|u1"
+        },
+        {
+          "name": "score_opponent_runs",
+          "address": "0xFF0061",
+          "type": "|u1"
+        },
+        {
+          "name": "score_runs",
+          "address": "0xFF005F",
+          "type": "|u1"
+        },
+        {
+          "name": "strike",
+          "address": "0xFF40F5",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 10
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\ESPN Baseball Tonight (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF40F4:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFF40F4"
+        },
+        {
+          "code": "FF40F8:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFF40F8"
+        },
+        {
+          "code": "FF005E:0000",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFF005E"
+        },
+        {
+          "code": "FF0060:0000",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFF0060"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "system": "genesis",
+  "normalized_title": "fatalfury2",
+  "display_name": "Fatal Fury 2 (USA, Korea) (Action Replay)",
+  "aliases": [
+    "Fatal Fury 2 (USA, Korea) (Action Replay)",
+    "Fatal Fury 2 (USA, Korea)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\fatalfury2_genesis.json",
+      "trigger_count": 2,
+      "field_names": [
+        "health"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFDD11"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FatalFury2-Genesis-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFDD11",
+          "type": "|u1"
+        },
+        {
+          "name": "opponent_health",
+          "address": "0xFFDF11",
+          "type": "|u1"
+        },
+        {
+          "name": "opponent_rounds_won",
+          "address": "0xFFDEBB",
+          "type": "|u1"
+        },
+        {
+          "name": "rounds_won",
+          "address": "0xFFDCBB",
+          "type": "|u1"
+        },
+        {
+          "name": "time",
+          "address": "0xFF019F",
+          "type": "|d1"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Fatal Fury 2 (USA, Korea).cht",
+      "total_cheat_rows": 56,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FFDD10:0060",
+          "desc": "Infinite Energy P1",
+          "address": "0xFFDD10"
+        },
+        {
+          "code": "FFDF10:0060",
+          "desc": "Infinite Energy P2",
+          "address": "0xFFDF10"
+        },
+        {
+          "code": "FFDCBA:0002",
+          "desc": "Win One Round To Win Battle P1",
+          "address": "0xFFDCBA"
+        },
+        {
+          "code": "FFDEBA:0002",
+          "desc": "Win One Round To Win Battle P2",
+          "address": "0xFFDEBA"
+        },
+        {
+          "code": "FFDC04:000C",
+          "desc": "P1 Modifier",
+          "address": "0xFFDC04"
+        },
+        {
+          "code": "FFDC74:000C",
+          "desc": "P1 Modifier",
+          "address": "0xFFDC74"
+        },
+        {
+          "code": "FFDE04:0000",
+          "desc": "P2 Modifier",
+          "address": "0xFFDE04"
+        },
+        {
+          "code": "FFDE74:0000",
+          "desc": "P2 Modifier",
+          "address": "0xFFDE74"
+        },
+        {
+          "code": "FF019E:0099",
+          "desc": "Infinite Time",
+          "address": "0xFF019E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

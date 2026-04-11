@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "castleofillusion",
+  "display_name": "CastleOfIllusion",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\castleofillusion_genesis.json",
+      "trigger_count": 6,
+      "field_names": [
+        "ammo",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xFFF23C",
+        "0xFFF320",
+        "0xFFF322",
+        "0xFFF324"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CastleOfIllusion-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "ammo",
+          "address": "0xFFF320",
+          "type": ">u2"
+        },
+        {
+          "name": "health",
+          "address": "0xFFF322",
+          "type": ">u2"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFF324",
+          "type": ">u2"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF23C",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 4
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

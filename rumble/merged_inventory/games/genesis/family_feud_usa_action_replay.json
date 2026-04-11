@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "familyfeud",
+  "display_name": "Family Feud (USA) (Action Replay)",
+  "aliases": [
+    "Family Feud (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Family Feud (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFE3AA:00FF",
+          "desc": "Infinite Time To Answer Question",
+          "address": "0xFFE3AA"
+        },
+        {
+          "code": "FFE3AB:0028",
+          "desc": "Freeze Time To Answer Question",
+          "address": "0xFFE3AB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

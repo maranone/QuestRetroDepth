@@ -1,0 +1,12 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Dragon's Revenge (World) (Action Replay)
+# match_names=dragons|dragonsrevenge|dragonsrevengegenesis
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+score_score0_ffd72b,0xFFD72B,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score1_ffd729,0xFFD729,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score2_ffd727,0xFFD727,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score3_ffd725,0xFFD725,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score4_ffd723,0xFFD723,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score5_ffd721,0xFFD721,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score6_ffd71f,0xFFD71F,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+score_score7_ffd71d,0xFFD71D,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,

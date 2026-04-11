@@ -1,0 +1,73 @@
+{
+  "system": "snes",
+  "normalized_title": "superbasesloaded3licensetosteal",
+  "display_name": "Super Bases Loaded 3 - License to Steal (USA) (Action Replay)",
+  "aliases": [
+    "Super Bases Loaded 3 - License to Steal (USA) (Game Genie)",
+    "Super Bases Loaded 3 - License to Steal (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Bases Loaded 3 - License to Steal (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 10,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E068100",
+          "desc": "Out Modifier",
+          "address": "0x7E0681"
+        },
+        {
+          "code": "7E067700",
+          "desc": "Away Score Modifier",
+          "address": "0x7E0677"
+        },
+        {
+          "code": "7E067800",
+          "desc": "Home Score Modifier",
+          "address": "0x7E0678"
+        },
+        {
+          "code": "7E067100",
+          "desc": "Inning Modifier",
+          "address": "0x7E0671"
+        },
+        {
+          "code": "7E068103",
+          "desc": "Instant Win Away",
+          "address": "0x7E0681"
+        },
+        {
+          "code": "7E0677FF",
+          "desc": "Instant Win Away",
+          "address": "0x7E0677"
+        },
+        {
+          "code": "7E0671FF",
+          "desc": "Instant Win Away",
+          "address": "0x7E0671"
+        },
+        {
+          "code": "7E068103",
+          "desc": "Instant Win Home",
+          "address": "0x7E0681"
+        },
+        {
+          "code": "7E0678FF",
+          "desc": "Instant Win Home",
+          "address": "0x7E0678"
+        },
+        {
+          "code": "7E0671FF",
+          "desc": "Instant Win Home",
+          "address": "0x7E0671"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "system": "snes",
+  "normalized_title": "firstsamurai",
+  "display_name": "First Samurai (World) (Action Replay)",
+  "aliases": [
+    "First Samurai (Rumbles)",
+    "First Samurai (USA)",
+    "First Samurai (World) (Action Replay)",
+    "First Samurai (World) (Game Genie)",
+    "First Samurai"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\firstsamurai_snes.json",
+      "trigger_count": 6,
+      "field_names": [
+        "gameover",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0x7E002E",
+        "0x7E006E",
+        "0x7E0072",
+        "0x7E007B"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FirstSamurai-Snes-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "force",
+          "address": "0x7E0070",
+          "type": "|u1"
+        },
+        {
+          "name": "gameover",
+          "address": "0x7E002E",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0x7E006E",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E0072",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E007B",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\First Samurai (World) (Game Genie).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 1,
+      "mk3_label": "FIRST SAMURAI"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

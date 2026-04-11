@@ -1,0 +1,48 @@
+{
+  "system": "genesis",
+  "normalized_title": "mlbpabaseball",
+  "display_name": "MLBPA Baseball (USA) (Action Replay) (diff)",
+  "aliases": [
+    "MLBPA Baseball (USA) (Action Replay)",
+    "MLBPA Baseball (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\MLBPA Baseball (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF536E:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFF536E"
+        },
+        {
+          "code": "FF5370:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFF5370"
+        },
+        {
+          "code": "FF5370:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFF5370"
+        },
+        {
+          "code": "FF54C4:0000",
+          "desc": "Your Score Modifier (P1)",
+          "address": "0xFF54C4"
+        },
+        {
+          "code": "FF54C4:0000",
+          "desc": "Opponent Score Modifier (P2/CPU)",
+          "address": "0xFF54C4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

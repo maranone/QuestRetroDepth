@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "roadrash",
+  "display_name": "Road Rash (World) (Action Replay)",
+  "aliases": [
+    "Road Rash (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Road Rash (World) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF1EBC:50",
+          "desc": "Auto Race At 200+ MPH",
+          "address": "0xFF1EBC"
+        },
+        {
+          "code": "FF1EAE:34",
+          "desc": "Switch F/X On To Instantly Win Race",
+          "address": "0xFF1EAE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

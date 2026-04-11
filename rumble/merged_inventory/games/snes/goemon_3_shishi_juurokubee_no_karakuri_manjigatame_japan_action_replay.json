@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "goemon3shishijuurokubeenokarakurimanjigatame",
+  "display_name": "Goemon 3 - Shishi Juurokubee no Karakuri Manjigatame (Japan) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Goemon 3 - Shishi Juurokubee no Karakuri Manjigatame (Japan) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E00BA32",
+          "desc": "Infinite Energy P1",
+          "address": "0x7E00BA"
+        },
+        {
+          "code": "7E00B8FF",
+          "desc": "Infinite Lives P1",
+          "address": "0x7E00B8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

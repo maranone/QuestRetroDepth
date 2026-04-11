@@ -1,0 +1,279 @@
+{
+  "system": "genesis",
+  "normalized_title": "nhl942on2",
+  "display_name": "NHL942on2",
+  "aliases": [],
+  "sources": {
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\NHL942on2-Genesis-v0\\data.json",
+      "field_count": 52,
+      "fields": [
+        {
+          "name": "control",
+          "address": "0xFFC320",
+          "type": ">i2"
+        },
+        {
+          "name": "fullstar_x",
+          "address": "0xFFBF7C",
+          "type": ">i2"
+        },
+        {
+          "name": "fullstar_y",
+          "address": "0xFFBF7E",
+          "type": ">i2"
+        },
+        {
+          "name": "g1_x",
+          "address": "0xFFB0CA",
+          "type": ">i2"
+        },
+        {
+          "name": "g1_y",
+          "address": "0xFFB0DE",
+          "type": ">i2"
+        },
+        {
+          "name": "g2_x",
+          "address": "0xFFB44A",
+          "type": ">i2"
+        },
+        {
+          "name": "g2_y",
+          "address": "0xFFB45E",
+          "type": ">i2"
+        },
+        {
+          "name": "p1_2_ori",
+          "address": "0xFFB11F",
+          "type": "|u1"
+        },
+        {
+          "name": "p1_2_vel_x",
+          "address": "0xFFB0F2",
+          "type": "|i1"
+        },
+        {
+          "name": "p1_2_vel_y",
+          "address": "0xFFB0F4",
+          "type": "|i1"
+        },
+        {
+          "name": "p1_2_x",
+          "address": "0xFFB0CA",
+          "type": ">i2"
+        },
+        {
+          "name": "p1_2_y",
+          "address": "0xFFB0DE",
+          "type": ">i2"
+        },
+        {
+          "name": "p1_attackzone",
+          "address": "0xFFC6D6",
+          "type": ">u4"
+        },
+        {
+          "name": "p1_bodychecks",
+          "address": "0xFFC6DE",
+          "type": ">u2"
+        },
+        {
+          "name": "p1_emptystar_x",
+          "address": "0xFFBDD0",
+          "type": ">i2"
+        },
+        {
+          "name": "p1_emptystar_y",
+          "address": "0xFFBDE4",
+          "type": ">i2"
+        },
+        {
+          "name": "p1_faceoffwon",
+          "address": "0xFFC6DC",
+          "type": ">u2"
+        },
+        {
+          "name": "p1_onetimer",
+          "address": "0xFFCA28",
+          "type": ">u4"
+        },
+        {
+          "name": "p1_ori",
+          "address": "0xFFB09F",
+          "type": "|u1"
+        },
+        {
+          "name": "p1_passing",
+          "address": "0xFFC6E2",
+          "type": ">u2"
+        },
+        {
+          "name": "p1_score",
+          "address": "0xFFC6DA",
+          "type": ">u2"
+        },
+        {
+          "name": "p1_shots",
+          "address": "0xFFC6CC",
+          "type": ">u4"
+        },
+        {
+          "name": "p1_vel_x",
+          "address": "0xFFB072",
+          "type": "|i1"
+        },
+        {
+          "name": "p1_vel_y",
+          "address": "0xFFB074",
+          "type": "|i1"
+        },
+        {
+          "name": "p1_x",
+          "address": "0xFFB04A",
+          "type": ">i2"
+        },
+        {
+          "name": "p1_y",
+          "address": "0xFFB05E",
+          "type": ">i2"
+        },
+        {
+          "name": "p2_2_ori",
+          "address": "0xFFB41F",
+          "type": "|u1"
+        },
+        {
+          "name": "p2_2_vel_x",
+          "address": "0xFFB3F2",
+          "type": "|i1"
+        },
+        {
+          "name": "p2_2_vel_y",
+          "address": "0xFFB3F4",
+          "type": "|i1"
+        },
+        {
+          "name": "p2_2_x",
+          "address": "0xFFB3CA",
+          "type": ">i2"
+        },
+        {
+          "name": "p2_2_y",
+          "address": "0xFFB3DE",
+          "type": ">i2"
+        },
+        {
+          "name": "p2_attackzone",
+          "address": "0xFFCA3A",
+          "type": ">u4"
+        },
+        {
+          "name": "p2_bodychecks",
+          "address": "0xFFCA42",
+          "type": ">u2"
+        },
+        {
+          "name": "p2_faceoffwon",
+          "address": "0xFFCA3E",
+          "type": ">u2"
+        },
+        {
+          "name": "p2_fullstar_x",
+          "address": "0xFFBDB4",
+          "type": ">i2"
+        },
+        {
+          "name": "p2_fullstar_y",
+          "address": "0xFFBF7E",
+          "type": ">i2"
+        },
+        {
+          "name": "p2_onetimer",
+          "address": "0xFFCD8C",
+          "type": ">u4"
+        },
+        {
+          "name": "p2_ori",
+          "address": "0xFFB39F",
+          "type": "|u1"
+        },
+        {
+          "name": "p2_passing",
+          "address": "0xFFCA46",
+          "type": ">u2"
+        },
+        {
+          "name": "p2_score",
+          "address": "0xFFCA3E",
+          "type": ">u2"
+        },
+        {
+          "name": "p2_shots",
+          "address": "0xFFCA30",
+          "type": ">u4"
+        },
+        {
+          "name": "p2_vel_x",
+          "address": "0xFFB372",
+          "type": "|i1"
+        },
+        {
+          "name": "p2_vel_y",
+          "address": "0xFFB374",
+          "type": "|i1"
+        },
+        {
+          "name": "p2_x",
+          "address": "0xFFB34A",
+          "type": ">i2"
+        },
+        {
+          "name": "p2_y",
+          "address": "0xFFB35E",
+          "type": ">i2"
+        },
+        {
+          "name": "period",
+          "address": "0xFFC466",
+          "type": ">u2"
+        },
+        {
+          "name": "puck_control",
+          "address": "0xFFB7AA",
+          "type": ">i2"
+        },
+        {
+          "name": "puck_vel_x",
+          "address": "0xFFB772",
+          "type": "|i1"
+        },
+        {
+          "name": "puck_vel_y",
+          "address": "0xFFB774",
+          "type": "|i1"
+        },
+        {
+          "name": "puck_x",
+          "address": "0xFFB74A",
+          "type": ">i2"
+        },
+        {
+          "name": "puck_y",
+          "address": "0xFFB75E",
+          "type": ">i2"
+        },
+        {
+          "name": "time",
+          "address": "0xFFC466",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 47
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=Xardion
+game_key=Xardion-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_d1a	damage_taken	0x7E0D1A	1	uint	native	prev > curr	0.85	1	left:0.750:180

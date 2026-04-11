@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "micromachines2turbotournament",
+  "display_name": "Micro Machines 2 - Turbo Tournament (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Micro Machines 2 - Turbo Tournament (Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E12D600",
+          "desc": "Auto Win Race - Challenge Race and Super League",
+          "address": "0x7E12D6"
+        },
+        {
+          "code": "7E1AAC1E",
+          "desc": "Auto Win Extra Life Game",
+          "address": "0x7E1AAC"
+        },
+        {
+          "code": "7E02E509",
+          "desc": "Infinite Lives",
+          "address": "0x7E02E5"
+        },
+        {
+          "code": "7E19CE00",
+          "desc": "Infinite Time - Extra Life Game",
+          "address": "0x7E19CE"
+        },
+        {
+          "code": "7E19CF03",
+          "desc": "Infinite Time - Extra Life Game",
+          "address": "0x7E19CF"
+        },
+        {
+          "code": "7E19D000",
+          "desc": "Infinite Time - Extra Life Game",
+          "address": "0x7E19D0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

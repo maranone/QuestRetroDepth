@@ -1,0 +1,72 @@
+{
+  "system": "genesis",
+  "normalized_title": "phelios",
+  "display_name": "Phelios (World) (Action Replay)",
+  "aliases": [
+    "Phelios (Europe)",
+    "Phelios (USA)",
+    "Phelios (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\phelios_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFF440",
+        "0xFFF473",
+        "0xFFF475"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Phelios-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFF475",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFF473",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF440",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Phelios (World) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFF473:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFFF473"
+        },
+        {
+          "code": "FFF475:0003",
+          "desc": "Invincibility",
+          "address": "0xFFF475"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

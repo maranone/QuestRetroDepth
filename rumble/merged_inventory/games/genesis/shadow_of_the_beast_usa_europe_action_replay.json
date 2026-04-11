@@ -1,0 +1,64 @@
+{
+  "system": "genesis",
+  "normalized_title": "shadowofbeast",
+  "display_name": "Shadow of the Beast (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Shadow of the Beast (USA, Europe) (Action Replay)",
+    "Shadow of the Beast (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\shadowofthebeast_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF1A0C",
+        "0xFF1A17"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ShadowOfTheBeast-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF1A17",
+          "type": "|u1"
+        },
+        {
+          "name": "progress",
+          "address": "0xFF0460",
+          "type": ">d2"
+        },
+        {
+          "name": "score",
+          "address": "0xFF1A0C",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Shadow of the Beast (USA, Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF1A17:000C",
+          "desc": "Unlimited Energy",
+          "address": "0xFF1A17"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

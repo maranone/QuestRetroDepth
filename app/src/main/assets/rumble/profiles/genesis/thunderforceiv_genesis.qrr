@@ -1,0 +1,7 @@
+game_name=Thunder Force IV (Europe, Japan) (Action Replay)
+game_key=ThunderForceIV-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_fff2f1	life_lost	0xFFF2F1	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff2f1	life_gained	0xFFF2F1	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_fff08e	score	0xFFF08E	4	uint	big	prev < curr	0.8	1	right:0.350:60

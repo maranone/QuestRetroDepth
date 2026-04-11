@@ -1,0 +1,71 @@
+{
+  "system": "genesis",
+  "normalized_title": "socket",
+  "display_name": "Socket (USA) (Action Replay)",
+  "aliases": [
+    "Socket (USA) (Action Replay)",
+    "Socket (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\socket_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFFD13",
+        "0xFFFD17",
+        "0xFFFD19"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Socket-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFFD19",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFFD17",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFD13",
+          "type": ">u3"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Socket (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFFD16:0063",
+          "desc": "Infinite Lives",
+          "address": "0xFFFD16"
+        },
+        {
+          "code": "FFFD18:0063",
+          "desc": "Infinite Health",
+          "address": "0xFFFD18"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

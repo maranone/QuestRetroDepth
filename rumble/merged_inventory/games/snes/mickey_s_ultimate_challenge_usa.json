@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "mickeysultimatechallenge",
+  "display_name": "Mickey's Ultimate Challenge (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Mickey's Ultimate Challenge (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E04B600",
+          "desc": "Character Modifier",
+          "address": "0x7E04B6"
+        },
+        {
+          "code": "7E04C800",
+          "desc": "Character Modifier",
+          "address": "0x7E04C8"
+        },
+        {
+          "code": "7E10AF00",
+          "desc": "Jump Modifier",
+          "address": "0x7E10AF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

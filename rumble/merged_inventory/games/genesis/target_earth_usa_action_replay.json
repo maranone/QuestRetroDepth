@@ -1,0 +1,104 @@
+{
+  "system": "genesis",
+  "normalized_title": "targetearth",
+  "display_name": "Target Earth (USA) (Action Replay)",
+  "aliases": [
+    "Target Earth (USA) (Action Replay)",
+    "Target Earth (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\targetearth_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF808E",
+        "0xFFB044"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TargetEarth-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFB044",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF808E",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Target Earth (USA).cht",
+      "total_cheat_rows": 79,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "FFD09A:0099",
+          "desc": "Infinite LG-Gun",
+          "address": "0xFFD09A"
+        },
+        {
+          "code": "FFD09C:0099",
+          "desc": "Infinite 25-SC",
+          "address": "0xFFD09C"
+        },
+        {
+          "code": "FFD09E:0099",
+          "desc": "Infinite D-D",
+          "address": "0xFFD09E"
+        },
+        {
+          "code": "FFD056:0001",
+          "desc": "Always Have LG-Gun",
+          "address": "0xFFD056"
+        },
+        {
+          "code": "FFB044:0016",
+          "desc": "Infinite Energy",
+          "address": "0xFFB044"
+        },
+        {
+          "code": "FFD09B:0099",
+          "desc": "Infinite Weapons",
+          "address": "0xFFD09B"
+        },
+        {
+          "code": "FFD09D:0099",
+          "desc": "Infinite Weapons",
+          "address": "0xFFD09D"
+        },
+        {
+          "code": "FFD0A1:0099",
+          "desc": "Infinite Weapons",
+          "address": "0xFFD0A1"
+        },
+        {
+          "code": "FFD0A3:0099",
+          "desc": "Infinite Weapons",
+          "address": "0xFFD0A3"
+        },
+        {
+          "code": "FFD0A5:0099",
+          "desc": "Infinite Weapons",
+          "address": "0xFFD0A5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

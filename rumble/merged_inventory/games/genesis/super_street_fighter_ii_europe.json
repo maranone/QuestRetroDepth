@@ -1,0 +1,147 @@
+{
+  "system": "genesis",
+  "normalized_title": "superstreetfighterii",
+  "display_name": "Super Street Fighter II (Europe)",
+  "aliases": [
+    "Super Street Fighter II (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Super Street Fighter II (USA).cht",
+      "total_cheat_rows": 210,
+      "raw_entry_count": 71,
+      "distinct_address_count": 45,
+      "sample_raw_entries": [
+        {
+          "code": "FF80C0:0000",
+          "desc": "P1 Can Perform Moves in Mid-Air",
+          "address": "0xFF80C0"
+        },
+        {
+          "code": "FF8340:0000",
+          "desc": "P2 Can Perform Moves in Mid-Air",
+          "address": "0xFF8340"
+        },
+        {
+          "code": "FF801A:0000",
+          "desc": "Hyper Mode P1",
+          "address": "0xFF801A"
+        },
+        {
+          "code": "FF829A:0000",
+          "desc": "Hyper Mode P2",
+          "address": "0xFF829A"
+        },
+        {
+          "code": "FF828C:0000",
+          "desc": "P1 Costume Modifier",
+          "address": "0xFF828C"
+        },
+        {
+          "code": "FF858C:0000",
+          "desc": "P2 Costume Modifier",
+          "address": "0xFF858C"
+        },
+        {
+          "code": "FF8360:0022",
+          "desc": "All P1 Hits/Projectiles Burn [Blue]",
+          "address": "0xFF8360"
+        },
+        {
+          "code": "FF8362:0022",
+          "desc": "All P1 Hits/Projectiles Burn [Blue]",
+          "address": "0xFF8362"
+        },
+        {
+          "code": "FF8360:002A",
+          "desc": "All P1 Hits/Projectiles Burn [Red]",
+          "address": "0xFF8360"
+        },
+        {
+          "code": "FF8362:002A",
+          "desc": "All P1 Hits/Projectiles Burn [Red]",
+          "address": "0xFF8362"
+        },
+        {
+          "code": "FF80E0:0022",
+          "desc": "All P2 Hits/Projectiles Burn [Blue]",
+          "address": "0xFF80E0"
+        },
+        {
+          "code": "FF80E2:0022",
+          "desc": "All P2 Hits/Projectiles Burn [Blue]",
+          "address": "0xFF80E2"
+        },
+        {
+          "code": "FF80E0:002A",
+          "desc": "All P2 Hits/Projectiles Burn [Red]",
+          "address": "0xFF80E0"
+        },
+        {
+          "code": "FF80E2:002A",
+          "desc": "All P2 Hits/Projectiles Burn [Red]",
+          "address": "0xFF80E2"
+        },
+        {
+          "code": "FF80EC:0010",
+          "desc": "P1 Can't Be Hit [Can still be grabbed]",
+          "address": "0xFF80EC"
+        },
+        {
+          "code": "FF83EC:0010",
+          "desc": "P2 Can't Be Hit [Can still be grabbed]",
+          "address": "0xFF83EC"
+        },
+        {
+          "code": "FFFCE8:0000",
+          "desc": "Game Start Star Modifier",
+          "address": "0xFFFCE8"
+        },
+        {
+          "code": "FF986E:0098",
+          "desc": "Infinite Time",
+          "address": "0xFF986E"
+        },
+        {
+          "code": "FF80E8:0063",
+          "desc": "Fake Infinite Health Player 1",
+          "address": "0xFF80E8"
+        },
+        {
+          "code": "FF803C:0063",
+          "desc": "Infintie Health Player 1",
+          "address": "0xFF803C"
+        },
+        {
+          "code": "FF828A:0000",
+          "desc": "Player 1 Win Modifier",
+          "address": "0xFF828A"
+        },
+        {
+          "code": "FF8046:0000",
+          "desc": "Player 1 Action Modifier",
+          "address": "0xFF8046"
+        },
+        {
+          "code": "FF83E8:0063",
+          "desc": "Fake Infinite Health P2",
+          "address": "0xFF83E8"
+        },
+        {
+          "code": "FF858A:0000",
+          "desc": "Player 2 Win Modifier",
+          "address": "0xFF858A"
+        },
+        {
+          "code": "FF8346:0000",
+          "desc": "Player 2 Action Modifier",
+          "address": "0xFF8346"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

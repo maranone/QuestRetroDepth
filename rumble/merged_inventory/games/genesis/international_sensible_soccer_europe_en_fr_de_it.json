@@ -1,0 +1,25 @@
+{
+  "system": "genesis",
+  "normalized_title": "internationalsensiblesoccer",
+  "display_name": "International Sensible Soccer (Europe) (En,Fr,De,It)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\International Sensible Soccer (Europe) (En,Fr,De,It).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF550E:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFF550E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "system": "snes",
+  "normalized_title": "zigzagcatdachouclubmooosawagida",
+  "display_name": "Zig Zag Cat - Dachou Club mo Oosawagi da (Japan) (Action Replay)",
+  "aliases": [
+    "Zig Zag Cat - Dachou Club mo Oosawagi da (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Zig Zag Cat - Dachou Club mo Oosawagi da (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E193604",
+          "desc": "Infinite Lives",
+          "address": "0x7E1936"
+        },
+        {
+          "code": "7E193C0F",
+          "desc": "Infinite Gold",
+          "address": "0x7E193C"
+        },
+        {
+          "code": "7E193D0F",
+          "desc": "Infinite Gold",
+          "address": "0x7E193D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

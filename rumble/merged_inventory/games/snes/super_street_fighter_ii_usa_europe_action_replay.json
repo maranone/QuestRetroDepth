@@ -1,0 +1,155 @@
+{
+  "system": "snes",
+  "normalized_title": "superstreetfighterii",
+  "display_name": "Super Street Fighter II (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Super Street Fighter Ii (Rumbles)",
+    "Super Street Fighter II (USA)",
+    "Super Street Fighter II (USA, Europe) (Action Replay)",
+    "Super Street Fighter II"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Street Fighter II (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 39,
+      "raw_entry_count": 50,
+      "distinct_address_count": 32,
+      "sample_raw_entries": [
+        {
+          "code": "7E192996",
+          "desc": "Infinite Time",
+          "address": "0x7E1929"
+        },
+        {
+          "code": "7E066E01",
+          "desc": "Get Dizzy From Every Knockdown (Player 1)",
+          "address": "0x7E066E"
+        },
+        {
+          "code": "7E08AE01",
+          "desc": "Get Dizzy From Every Knockdown (Player 2)",
+          "address": "0x7E08AE"
+        },
+        {
+          "code": "7E058D1E",
+          "desc": "Once Dizzy, Always Dizzy (Player 1)",
+          "address": "0x7E058D"
+        },
+        {
+          "code": "7E07CD1E",
+          "desc": "Once Dizzy, Always Dizzy (Player 2)",
+          "address": "0x7E07CD"
+        },
+        {
+          "code": "7E05947F",
+          "desc": "No Push Back Or Delay When Hit (Player 1)",
+          "address": "0x7E0594"
+        },
+        {
+          "code": "7E07D47F",
+          "desc": "No Push Back Or Delay When Hit (Player 2)",
+          "address": "0x7E07D4"
+        },
+        {
+          "code": "7E052401",
+          "desc": "No Delay When Ryu/Ken/Dhalsim/Dee Jay Use A Fireball (Player 1)",
+          "address": "0x7E0524"
+        },
+        {
+          "code": "7E076401",
+          "desc": "No Delay When Ryu/Ken/Dhalsim/Dee Jay Use A Fireball (Player 2)",
+          "address": "0x7E0764"
+        },
+        {
+          "code": "7E18BC0A",
+          "desc": "Always Battle 10",
+          "address": "0x7E18BC"
+        },
+        {
+          "code": "7E18CA01",
+          "desc": "1 Match To See Ending (Both Players)",
+          "address": "0x7E18CA"
+        },
+        {
+          "code": "7E18CB01",
+          "desc": "1 Match To See Ending (Both Players)",
+          "address": "0x7E18CB"
+        },
+        {
+          "code": "7E18CB00",
+          "desc": "1 Match To See Easy Ending (Both Players)",
+          "address": "0x7E18CB"
+        },
+        {
+          "code": "7E18CB01",
+          "desc": "1 Match To See Normal Ending (Both Players)",
+          "address": "0x7E18CB"
+        },
+        {
+          "code": "7E18CB1E",
+          "desc": "1 Match To See Hard Ending (Both Players)",
+          "address": "0x7E18CB"
+        },
+        {
+          "code": "7E00BF10",
+          "desc": "No HUD/BG Sprites",
+          "address": "0x7E00BF"
+        },
+        {
+          "code": "7E00BF11",
+          "desc": "No HUD/Certain BG Sprites",
+          "address": "0x7E00BF"
+        },
+        {
+          "code": "7E00BF13",
+          "desc": "No HUD",
+          "address": "0x7E00BF"
+        },
+        {
+          "code": "7E063816",
+          "desc": "P1 Can't Be Hit (Can Still Be Grabbed)",
+          "address": "0x7E0638"
+        },
+        {
+          "code": "7E087816",
+          "desc": "P2 Can't Be Hit (Can Still Be Grabbed)",
+          "address": "0x7E0878"
+        },
+        {
+          "code": "7E077A00",
+          "desc": "P1 Throws Disabled",
+          "address": "0x7E077A"
+        },
+        {
+          "code": "7E077B00",
+          "desc": "P1 Throws Disabled",
+          "address": "0x7E077B"
+        },
+        {
+          "code": "7E077C00",
+          "desc": "P1 Throws Disabled",
+          "address": "0x7E077C"
+        },
+        {
+          "code": "7E053A00",
+          "desc": "P2 Throws Disabled",
+          "address": "0x7E053A"
+        },
+        {
+          "code": "7E053B00",
+          "desc": "P2 Throws Disabled",
+          "address": "0x7E053B"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 13,
+      "mk3_label": "SUPER STREETFIGHTER"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

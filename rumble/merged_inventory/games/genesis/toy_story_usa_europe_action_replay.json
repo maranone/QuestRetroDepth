@@ -1,0 +1,33 @@
+{
+  "system": "genesis",
+  "normalized_title": "toystory",
+  "display_name": "Toy Story (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Toy Story (USA)",
+    "Toy Story (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Toy Story (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF04A4:20",
+          "desc": "Infinite Yellow Stars (Hits)",
+          "address": "0xFF04A4"
+        },
+        {
+          "code": "FF04A1:09",
+          "desc": "Infinite Hats (Lives)",
+          "address": "0xFF04A1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

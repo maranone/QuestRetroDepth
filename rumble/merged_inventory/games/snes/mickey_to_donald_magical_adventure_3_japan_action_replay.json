@@ -1,0 +1,137 @@
+{
+  "system": "snes",
+  "normalized_title": "mickeytodonaldmagicaladventure3",
+  "display_name": "Mickey to Donald - Magical Adventure 3 (Japan) (Action Replay)",
+  "aliases": [
+    "Mickey to Donald - Magical Adventure 3 (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Mickey to Donald - Magical Adventure 3 (Japan).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 23,
+      "distinct_address_count": 23,
+      "sample_raw_entries": [
+        {
+          "code": "7E046F03",
+          "desc": "Infinite Health (Player 1)",
+          "address": "0x7E046F"
+        },
+        {
+          "code": "7E056F03",
+          "desc": "Infinite Health (Player 2)",
+          "address": "0x7E056F"
+        },
+        {
+          "code": "7E0454FF",
+          "desc": "Invincibility (Player 1)",
+          "address": "0x7E0454"
+        },
+        {
+          "code": "7E0554FF",
+          "desc": "Invincibility (Player 2)",
+          "address": "0x7E0554"
+        },
+        {
+          "code": "7E048604",
+          "desc": "Infinite Lives (Player 1)",
+          "address": "0x7E0486"
+        },
+        {
+          "code": "7E058604",
+          "desc": "Infinite Lives (Player 2)",
+          "address": "0x7E0586"
+        },
+        {
+          "code": "7E046CFF",
+          "desc": "Infinite Balloon Time (Player 1)",
+          "address": "0x7E046C"
+        },
+        {
+          "code": "7E056CFF",
+          "desc": "Infinite Balloon Time (Player 2)",
+          "address": "0x7E056C"
+        },
+        {
+          "code": "7E048AFF",
+          "desc": "Set Max Power Bar (Player 1)",
+          "address": "0x7E048A"
+        },
+        {
+          "code": "7E058AFF",
+          "desc": "Set Max Power Bar (Player 2)",
+          "address": "0x7E058A"
+        },
+        {
+          "code": "7E04810F",
+          "desc": "Infinite Oxygen (Player 1)",
+          "address": "0x7E0481"
+        },
+        {
+          "code": "7E05810F",
+          "desc": "Infinite Oxygen (Player 2)",
+          "address": "0x7E0581"
+        },
+        {
+          "code": "7E049D00",
+          "desc": "Set Costume Modifier (Player 1)",
+          "address": "0x7E049D"
+        },
+        {
+          "code": "7E059D00",
+          "desc": "Set Costume Modifier (Player 2)",
+          "address": "0x7E059D"
+        },
+        {
+          "code": "7E0484FF",
+          "desc": "Set 254 Coins (Player 1)",
+          "address": "0x7E0484"
+        },
+        {
+          "code": "7E0584FF",
+          "desc": "Set 254 Coins (Player 2)",
+          "address": "0x7E0584"
+        },
+        {
+          "code": "7E049BFE",
+          "desc": "Set 254 Apples (Player 1)",
+          "address": "0x7E049B"
+        },
+        {
+          "code": "7E059BFE",
+          "desc": "Set 254 Apples (Player 2)",
+          "address": "0x7E059B"
+        },
+        {
+          "code": "7E0423FF",
+          "desc": "Switch F/X On To Levitate (Player 1)",
+          "address": "0x7E0423"
+        },
+        {
+          "code": "7E0523FF",
+          "desc": "Switch F/X On To Levitate (Player 2)",
+          "address": "0x7E0523"
+        },
+        {
+          "code": "7E0C6F00",
+          "desc": "1 Hit To Kill Most Mid Bosses",
+          "address": "0x7E0C6F"
+        },
+        {
+          "code": "7E136F00",
+          "desc": "1 Hit To Kill Most Final Bosses",
+          "address": "0x7E136F"
+        },
+        {
+          "code": "7E00BC01",
+          "desc": "Stage Select",
+          "address": "0x7E00BC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

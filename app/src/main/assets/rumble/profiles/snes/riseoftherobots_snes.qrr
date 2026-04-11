@@ -1,0 +1,6 @@
+game_name=RiseOfTheRobots
+game_key=RiseOfTheRobots-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_e44	damage_taken	0x7E0E44	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_1_e52	damage_taken	0x7E0E52	1	uint	native	prev > curr	0.85	1	right:0.750:180

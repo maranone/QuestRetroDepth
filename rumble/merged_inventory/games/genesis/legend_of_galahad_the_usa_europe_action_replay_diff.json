@@ -1,0 +1,76 @@
+{
+  "system": "genesis",
+  "normalized_title": "legendofgalahad",
+  "display_name": "Legend of Galahad, The (USA, Europe) (Action Replay) (diff)",
+  "aliases": [
+    "Legend of Galahad, The (USA, Europe) (Action Replay) (diff)",
+    "Legend of Galahad, The (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\legendofgalahad_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF13E0",
+        "0xFF13E7",
+        "0xFF1471"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\LegendOfGalahad-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF1471",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF13E7",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF13E0",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Legend of Galahad, The (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF1471:07",
+          "desc": "Infinite Health",
+          "address": "0xFF1471"
+        },
+        {
+          "code": "FF13E7:09",
+          "desc": "Infinite Lives",
+          "address": "0xFF13E7"
+        },
+        {
+          "code": "FF146B:09",
+          "desc": "Infinite Bombs",
+          "address": "0xFF146B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

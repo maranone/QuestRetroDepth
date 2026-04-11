@@ -1,0 +1,7 @@
+game_name=Uzu Keobukseon (Korea)
+game_key=UzuKeobukseon-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ffb425	life_lost	0xFFB425	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffb425	life_gained	0xFFB425	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ffb504	score	0xFFB504	4	uint	big	prev < curr	0.8	1	right:0.350:60

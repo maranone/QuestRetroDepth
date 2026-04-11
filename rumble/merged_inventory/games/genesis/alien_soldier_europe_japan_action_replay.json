@@ -1,0 +1,60 @@
+{
+  "system": "genesis",
+  "normalized_title": "aliensoldier",
+  "display_name": "Alien Soldier (Europe, Japan) (Action Replay)",
+  "aliases": [
+    "Alien Soldier (Europe)",
+    "Alien Soldier (Europe, Japan) (Action Replay)",
+    "Alien Soldier (Japan)",
+    "Alien Soldier (Rumbles)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\aliensoldier_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFA212",
+        "0xFFA216"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AlienSoldier-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFA216",
+          "type": ">u2"
+        },
+        {
+          "name": "score",
+          "address": "0xFFA212",
+          "type": ">d4"
+        },
+        {
+          "name": "time",
+          "address": "0xFFA270",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Alien Soldier (Rumbles).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

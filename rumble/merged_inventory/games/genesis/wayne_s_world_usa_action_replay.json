@@ -1,0 +1,72 @@
+{
+  "system": "genesis",
+  "normalized_title": "waynesworld",
+  "display_name": "Wayne's World (USA) (Action Replay)",
+  "aliases": [
+    "Wayne's World (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Wayne's World (USA).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 10,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FF01BC:0009",
+          "desc": "Infinite Time (Hundreds Digit)",
+          "address": "0xFF01BC"
+        },
+        {
+          "code": "FF01BC:0009",
+          "desc": "Infinite Time (Tens Digit)",
+          "address": "0xFF01BC"
+        },
+        {
+          "code": "FF01BE:0009",
+          "desc": "Infinite Time (Ones Digit)",
+          "address": "0xFF01BE"
+        },
+        {
+          "code": "FF0002:0001",
+          "desc": "Amplifier Power-Up",
+          "address": "0xFF0002"
+        },
+        {
+          "code": "FF00D1:0003",
+          "desc": "Unlimited PCB (Rapid Fire) Guitar",
+          "address": "0xFF00D1"
+        },
+        {
+          "code": "FF00D5:0005",
+          "desc": "Unlimited Life",
+          "address": "0xFF00D5"
+        },
+        {
+          "code": "FF011F:0001",
+          "desc": "Unlimited Schwing Power-Up",
+          "address": "0xFF011F"
+        },
+        {
+          "code": "FFFB56:0010",
+          "desc": "Invincibility",
+          "address": "0xFFFB56"
+        },
+        {
+          "code": "FFFA36:00FF",
+          "desc": "1 Shot Kill Enemies",
+          "address": "0xFFFA36"
+        },
+        {
+          "code": "FF00D5:000A",
+          "desc": "Unlimited Health",
+          "address": "0xFF00D5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

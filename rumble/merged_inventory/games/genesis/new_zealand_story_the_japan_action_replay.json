@@ -1,0 +1,104 @@
+{
+  "system": "genesis",
+  "normalized_title": "newzealandstory",
+  "display_name": "New Zealand Story, The (Japan) (Action Replay)",
+  "aliases": [
+    "New Zealand Story, The (Japan) (Action Replay)",
+    "NewZealand Story, The (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\newzealandstory_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF8003",
+        "0xFF8010"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\NewZealandStory-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF8003",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF8010",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NewZealand Story, The (Japan).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 10,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF8002:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF8002"
+        },
+        {
+          "code": "FF8008:0026",
+          "desc": "Invincible (Flashing)",
+          "address": "0xFF8008"
+        },
+        {
+          "code": "FF8008:0010",
+          "desc": "1 Hit Invincibility",
+          "address": "0xFF8008"
+        },
+        {
+          "code": "FF9498:00FF",
+          "desc": "Invincibility Enabled",
+          "address": "0xFF9498"
+        },
+        {
+          "code": "FF9498:0001",
+          "desc": "Invincibility Disabled",
+          "address": "0xFF9498"
+        },
+        {
+          "code": "FF8003:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF8003"
+        },
+        {
+          "code": "FF8004:0009",
+          "desc": "Infinite Continues",
+          "address": "0xFF8004"
+        },
+        {
+          "code": "FF8006:38FF",
+          "desc": "Infinite Time",
+          "address": "0xFF8006"
+        },
+        {
+          "code": "FF9438:0026",
+          "desc": "Infinite Time Underwater",
+          "address": "0xFF9438"
+        },
+        {
+          "code": "FF9438:0026",
+          "desc": "Freeze Time Power Meter Oxygen Underwater",
+          "address": "0xFF9438"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

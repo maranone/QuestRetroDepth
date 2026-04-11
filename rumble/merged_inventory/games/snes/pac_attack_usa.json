@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "pacattack",
+  "display_name": "Pac-Attack (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Pac-Attack (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E002E00",
+          "desc": "Title And Menu Music Modifier",
+          "address": "0x7E002E"
+        },
+        {
+          "code": "7E160EFF",
+          "desc": "Fairy Bar is Always Full (Normal Mode)",
+          "address": "0x7E160E"
+        },
+        {
+          "code": "7E163409",
+          "desc": "Infinite Pacs",
+          "address": "0x7E1634"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

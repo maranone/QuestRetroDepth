@@ -1,0 +1,12 @@
+game_name=Chester Cheetah - Wild Wild Quest (USA) (Action Replay)
+game_key=ChesterCheetahWildWildQuest-Snes
+system=snes
+integration_tier=stable
+trigger	life_lost_lives_0124	life_lost	0x7E0124	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0124	life_gained	0x7E0124	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_0118	score	0x7E0118	1	bcd	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_0119	score	0x7E0119	1	bcd	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_011a	score	0x7E011A	1	bcd	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score3_011b	score	0x7E011B	1	bcd	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score4_011c	score	0x7E011C	1	bcd	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score5_011d	score	0x7E011D	1	bcd	native	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "wagyanparadise",
+  "display_name": "Wagyan Paradise (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Wagyan Paradise (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E270099",
+          "desc": "Infinite Lives",
+          "address": "0x7E2700"
+        },
+        {
+          "code": "7E2702FF",
+          "desc": "Lots of Stars",
+          "address": "0x7E2702"
+        },
+        {
+          "code": "7E271603",
+          "desc": "Full Power",
+          "address": "0x7E2716"
+        },
+        {
+          "code": "7E006100",
+          "desc": "Rise into the air",
+          "address": "0x7E0061"
+        },
+        {
+          "code": "7E274600",
+          "desc": "Character Mod",
+          "address": "0x7E2746"
+        },
+        {
+          "code": "7E270400",
+          "desc": "Level Modifier",
+          "address": "0x7E2704"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

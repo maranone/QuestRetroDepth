@@ -1,0 +1,131 @@
+{
+  "system": "genesis",
+  "normalized_title": "judgedredd",
+  "display_name": "Judge Dredd (World) (Action Replay)",
+  "aliases": [
+    "Judge Dredd (World) (Action Replay)",
+    "Judge Dredd (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\judgedredd_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF2B2E",
+        "0xFF2B38",
+        "0xFF2B41"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JudgeDredd-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF2B41",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF2B2E",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF2B38",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Judge Dredd (World).cht",
+      "total_cheat_rows": 46,
+      "raw_entry_count": 14,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FF2B40:0085",
+          "desc": "Infinite Health P1",
+          "address": "0xFF2B40"
+        },
+        {
+          "code": "FF2B2E:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF2B2E"
+        },
+        {
+          "code": "FF3168:0009",
+          "desc": "'Boomerang Bullets'",
+          "address": "0xFF3168"
+        },
+        {
+          "code": "FF316A:0009",
+          "desc": "Infinite Futuristic Pipe-Bombs",
+          "address": "0xFF316A"
+        },
+        {
+          "code": "FF316C:0063",
+          "desc": "Infinite Large Missiles",
+          "address": "0xFF316C"
+        },
+        {
+          "code": "FF316E:0063",
+          "desc": "Infinite Sleeker Missiles",
+          "address": "0xFF316E"
+        },
+        {
+          "code": "FF3170:0063",
+          "desc": "Infinite Blue Canister Missiles",
+          "address": "0xFF3170"
+        },
+        {
+          "code": "FF316B:0009",
+          "desc": "Never lose weapon Granades after Game Over",
+          "address": "0xFF316B"
+        },
+        {
+          "code": "FF0709:0010",
+          "desc": "Invincibility",
+          "address": "0xFF0709"
+        },
+        {
+          "code": "FF0A4A:0000",
+          "desc": "1Shot Kill Enemies/Bosses - Judge Dredd (USA) (Beta) (Alt 1) Judge Dredd (USA) (Beta)",
+          "address": "0xFF0A4A"
+        },
+        {
+          "code": "FF316B:0003",
+          "desc": "Infinite Ammo",
+          "address": "0xFF316B"
+        },
+        {
+          "code": "FF30EB:0003",
+          "desc": "Infinite Ammo - Judge Dredd (USA) (Beta) (Alt 1) Judge Dredd (USA) (Beta)",
+          "address": "0xFF30EB"
+        },
+        {
+          "code": "FF30FF:00CF",
+          "desc": "Freeze Time Flight - Judge Dredd (USA) (Beta) (Alt 1) Judge Dredd (USA) (Beta)",
+          "address": "0xFF30FF"
+        },
+        {
+          "code": "FF317F:00DC",
+          "desc": "Freeze Time Flight",
+          "address": "0xFF317F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

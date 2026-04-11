@@ -1,0 +1,5 @@
+game_name=BatmanForever
+game_key=BatmanForever-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_132c	damage_taken	0x7E132C	1	uint	native	prev > curr	0.85	1	left:0.750:180

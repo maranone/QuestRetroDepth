@@ -1,0 +1,169 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Aladdin (Spain)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Aladdin (Spain).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [
+    {
+      "id": "life_gained_0364",
+      "event": "life_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0364",
+          "wram_offset": 868,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 1.0,
+      "needs_review": false,
+      "reason": "Infinite Lives clearly relates to life_gained",
+      "source_cheats": [
+        {
+          "code": "7E03640A",
+          "desc": "Infinite Lives"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_0367",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0367",
+          "wram_offset": 871,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 1.0,
+      "needs_review": false,
+      "reason": "Infinite Health implies damage_taken is prevented",
+      "source_cheats": [
+        {
+          "code": "7E036703",
+          "desc": "Infinite Health"
+        }
+      ]
+    },
+    {
+      "id": "pickup_0369",
+      "event": "pickup",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0369",
+          "wram_offset": 873,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.25,
+          "duration_ms": 18
+        }
+      ],
+      "confidence": 1.0,
+      "needs_review": false,
+      "reason": "Infinite Apples relates to pickup",
+      "source_cheats": [
+        {
+          "code": "7E036999",
+          "desc": "Infinite Apples"
+        }
+      ]
+    },
+    {
+      "id": "pickup_036b",
+      "event": "pickup",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x036B",
+          "wram_offset": 875,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.25,
+          "duration_ms": 18
+        }
+      ],
+      "confidence": 1.0,
+      "needs_review": false,
+      "reason": "Infinite Gems relates to pickup",
+      "source_cheats": [
+        {
+          "code": "7E036B99",
+          "desc": "Infinite Gems"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_0347",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0347",
+          "wram_offset": 839,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 1.0,
+      "needs_review": false,
+      "reason": "Invincible implies damage_taken is prevented",
+      "source_cheats": [
+        {
+          "code": "7E034704",
+          "desc": "Invincible"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

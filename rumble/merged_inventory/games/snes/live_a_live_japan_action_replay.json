@@ -1,0 +1,148 @@
+{
+  "system": "snes",
+  "normalized_title": "livelive",
+  "display_name": "Live A Live (Japan) (Action Replay)",
+  "aliases": [
+    "Live A Live (Japan) (Game Genie)",
+    "Live A Live (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Live A Live (Japan).cht",
+      "total_cheat_rows": 162,
+      "raw_entry_count": 189,
+      "distinct_address_count": 185,
+      "sample_raw_entries": [
+        {
+          "code": "7E01BB00",
+          "desc": "No Random Battles",
+          "address": "0x7E01BB"
+        },
+        {
+          "code": "7E11F0BE",
+          "desc": "Round #(Mecha/Akira)",
+          "address": "0x7E11F0"
+        },
+        {
+          "code": "7E11F100",
+          "desc": "Killed # of People(Ninja)",
+          "address": "0x7E11F1"
+        },
+        {
+          "code": "7E0D0663",
+          "desc": "Always At Level 99",
+          "address": "0x7E0D06"
+        },
+        {
+          "code": "7E0D08E7",
+          "desc": "999 Current HP",
+          "address": "0x7E0D08"
+        },
+        {
+          "code": "7E0D0903",
+          "desc": "999 Current HP",
+          "address": "0x7E0D09"
+        },
+        {
+          "code": "7E0D0AE7",
+          "desc": "999 Maximum HP",
+          "address": "0x7E0D0A"
+        },
+        {
+          "code": "7E0D0B03",
+          "desc": "999 Maximum HP",
+          "address": "0x7E0D0B"
+        },
+        {
+          "code": "7E0D0DFF",
+          "desc": "Have All Skills",
+          "address": "0x7E0D0D"
+        },
+        {
+          "code": "7E0D0EFF",
+          "desc": "Have All Skills",
+          "address": "0x7E0D0E"
+        },
+        {
+          "code": "7E0D10FF",
+          "desc": "Current PW 255",
+          "address": "0x7E0D10"
+        },
+        {
+          "code": "7E0D11FF",
+          "desc": "Maximum PW 255",
+          "address": "0x7E0D11"
+        },
+        {
+          "code": "7E0D13FF",
+          "desc": "Current SP 255",
+          "address": "0x7E0D13"
+        },
+        {
+          "code": "7E0D14FF",
+          "desc": "Maximum SP 255",
+          "address": "0x7E0D14"
+        },
+        {
+          "code": "7E0D16FF",
+          "desc": "Current CN 255",
+          "address": "0x7E0D16"
+        },
+        {
+          "code": "7E0D17FF",
+          "desc": "Maximum CN 255",
+          "address": "0x7E0D17"
+        },
+        {
+          "code": "7E0D19FF",
+          "desc": "Current IQ 255",
+          "address": "0x7E0D19"
+        },
+        {
+          "code": "7E0D1AFF",
+          "desc": "Maximum IQ 255",
+          "address": "0x7E0D1A"
+        },
+        {
+          "code": "7E0D1E64",
+          "desc": "Level Up After Every Battle",
+          "address": "0x7E0D1E"
+        },
+        {
+          "code": "7E0D4663",
+          "desc": "Always At Level 99",
+          "address": "0x7E0D46"
+        },
+        {
+          "code": "7E0D48E7",
+          "desc": "999 Current HP",
+          "address": "0x7E0D48"
+        },
+        {
+          "code": "7E0D4903",
+          "desc": "999 Current HP",
+          "address": "0x7E0D49"
+        },
+        {
+          "code": "7E0D4AE7",
+          "desc": "999 Maximum HP",
+          "address": "0x7E0D4A"
+        },
+        {
+          "code": "7E0D4B03",
+          "desc": "999 Maximum HP",
+          "address": "0x7E0D4B"
+        },
+        {
+          "code": "7E0D4DFF",
+          "desc": "Have All Skills",
+          "address": "0x7E0D4D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

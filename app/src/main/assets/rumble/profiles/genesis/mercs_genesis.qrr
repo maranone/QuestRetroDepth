@@ -1,0 +1,6 @@
+game_name=Mercs
+game_key=Mercs-Genesis
+system=genesis
+integration_tier=manual
+trigger	damage_taken_0_c348	damage_taken	0xFFC348	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	powerup_lost_1_c350	powerup_lost	0xFFC350	1	uint	native	prev > curr	0.9	1	left:1.000:250

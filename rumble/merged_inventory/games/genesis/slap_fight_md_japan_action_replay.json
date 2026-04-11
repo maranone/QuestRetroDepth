@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "slapfightmd",
+  "display_name": "Slap Fight MD (Japan) (Action Replay)",
+  "aliases": [
+    "Slap Fight MD (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Slap Fight MD (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF088A:0009",
+          "desc": "Infinite Ships P1",
+          "address": "0xFF088A"
+        },
+        {
+          "code": "FF08C3:0001",
+          "desc": "Keep Big Chip After The Death",
+          "address": "0xFF08C3"
+        },
+        {
+          "code": "FF0860:00FF",
+          "desc": "Enable Muteki",
+          "address": "0xFF0860"
+        },
+        {
+          "code": "FF0861:00FF",
+          "desc": "Enable Toaplan Mode",
+          "address": "0xFF0861"
+        },
+        {
+          "code": "FF0860:0000",
+          "desc": "Disable Muteki",
+          "address": "0xFF0860"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

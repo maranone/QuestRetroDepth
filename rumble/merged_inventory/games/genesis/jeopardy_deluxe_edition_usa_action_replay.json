@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "jeopardydeluxeedition",
+  "display_name": "Jeopardy! - Deluxe Edition (USA) (Action Replay)",
+  "aliases": [
+    "Jeopardy! - Deluxe Edition (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Jeopardy! - Deluxe Edition (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF4084:0009",
+          "desc": "Infinite Time To Buzz In",
+          "address": "0xFF4084"
+        },
+        {
+          "code": "FF3EA2:00FF",
+          "desc": "Player 1 Has A Great Score",
+          "address": "0xFF3EA2"
+        },
+        {
+          "code": "FF3EA2:00FF",
+          "desc": "Player 1 Has A Great Score",
+          "address": "0xFF3EA2"
+        },
+        {
+          "code": "FF3EA6:0000",
+          "desc": "Player 2 Has No Score",
+          "address": "0xFF3EA6"
+        },
+        {
+          "code": "FF3EAA:0000",
+          "desc": "Player 3 Has No Score",
+          "address": "0xFF3EAA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "xardion",
+  "display_name": "Xardion (USA) (Action Replay)",
+  "aliases": [
+    "Xardion (USA) (Action Replay)",
+    "Xardion (USA) (Game Genie)",
+    "Xardion (USA)",
+    "Xardion"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Xardion (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E0D2E04",
+          "desc": "Gives Characters Level 12 Shortly After Activating",
+          "address": "0x7E0D2E"
+        },
+        {
+          "code": "7E0D1A40",
+          "desc": "Infinite Health",
+          "address": "0x7E0D1A"
+        },
+        {
+          "code": "7E0D2C0C",
+          "desc": "Max Level",
+          "address": "0x7E0D2C"
+        },
+        {
+          "code": "7E0D46C8",
+          "desc": "Invincible",
+          "address": "0x7E0D46"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 1,
+      "mk3_label": "XARDION"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

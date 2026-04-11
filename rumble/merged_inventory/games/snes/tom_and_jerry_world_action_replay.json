@@ -1,0 +1,110 @@
+{
+  "system": "snes",
+  "normalized_title": "tomandjerry",
+  "display_name": "Tom and Jerry (World) (Action Replay)",
+  "aliases": [
+    "Tom and Jerry (Rumbles)",
+    "Tom and Jerry (USA)",
+    "Tom and Jerry (World) (Action Replay)",
+    "Tom and Jerry"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\tomandjerry_snes.json",
+      "trigger_count": 6,
+      "field_names": [
+        "coins",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0x7E0AE8",
+        "0x7E1242",
+        "0x7E14FC",
+        "0x7E1558"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TomAndJerry-Snes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "coins",
+          "address": "0x7E1558",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0x7E1242",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E14FC",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0AE8",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Tom and Jerry (World) (Action Replay).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E14C833",
+          "desc": "Invincible",
+          "address": "0x7E14C8"
+        },
+        {
+          "code": "7E155863",
+          "desc": "99 Cheese Bits",
+          "address": "0x7E1558"
+        },
+        {
+          "code": "7E155C63",
+          "desc": "99 Cheese Bits",
+          "address": "0x7E155C"
+        },
+        {
+          "code": "7E157A63",
+          "desc": "Infinite Time",
+          "address": "0x7E157A"
+        },
+        {
+          "code": "7E155E63",
+          "desc": "Infinite Ammo",
+          "address": "0x7E155E"
+        },
+        {
+          "code": "7E124204",
+          "desc": "Infinite Hearts",
+          "address": "0x7E1242"
+        },
+        {
+          "code": "7E14FC09",
+          "desc": "Infinite Lives",
+          "address": "0x7E14FC"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "TOM AND JERRY"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

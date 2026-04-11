@@ -1,0 +1,9 @@
+game_name=Pink Goes to Hollywood (USA, Europe) (Action Replay)
+game_key=PinkGoesToHollywood-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ffc0c2	damage_taken	0xFFC0C2	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffc0c2	death	0xFFC0C2	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ffbfcb	life_lost	0xFFBFCB	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffbfcb	life_gained	0xFFBFCB	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ffbfc0	score	0xFFBFC0	4	bcd	big	prev < curr	0.8	1	right:0.350:60

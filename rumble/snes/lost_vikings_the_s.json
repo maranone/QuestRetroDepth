@@ -1,0 +1,24 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Lost Vikings, The (S)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Lost Vikings, The (S).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "1D23-D7AF",
+      "desc": "Infinite HP For All Vikings (Instant Death Still Kills You)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "XX62-0FD4",
+      "desc": "Start At Level X (Skips Logos & Intro)",
+      "kind": "unsupported"
+    }
+  ]
+}

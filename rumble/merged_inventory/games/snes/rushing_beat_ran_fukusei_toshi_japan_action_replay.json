@@ -1,0 +1,52 @@
+{
+  "system": "snes",
+  "normalized_title": "rushingbeatranfukuseitoshi",
+  "display_name": "Rushing Beat Ran - Fukusei Toshi (Japan) (Action Replay)",
+  "aliases": [
+    "Rushing Beat Ran - Fukusei Toshi (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Rushing Beat Ran - Fukusei Toshi (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E094701",
+          "desc": "P1 Always In Enraged Mode",
+          "address": "0x7E0947"
+        },
+        {
+          "code": "7E0B9400",
+          "desc": "Enemy 1 With No Health Left",
+          "address": "0x7E0B94"
+        },
+        {
+          "code": "7E0C6400",
+          "desc": "Enemy 2 With No Health Left",
+          "address": "0x7E0C64"
+        },
+        {
+          "code": "7E0D3400",
+          "desc": "Enemy 3 With No Health Left",
+          "address": "0x7E0D34"
+        },
+        {
+          "code": "7E0AC400",
+          "desc": "Boss With No Health Left",
+          "address": "0x7E0AC4"
+        },
+        {
+          "code": "7E096801",
+          "desc": "Infinite Air Jump For Kazan",
+          "address": "0x7E0968"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

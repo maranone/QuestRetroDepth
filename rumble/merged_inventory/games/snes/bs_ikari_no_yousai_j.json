@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "bsikarinoyousai",
+  "display_name": "BS Ikari no Yousai (J)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\BS Ikari no Yousai (J).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E0C5321",
+          "desc": "Infinite Health",
+          "address": "0x7E0C53"
+        },
+        {
+          "code": "7E003503",
+          "desc": "Infinite Credits",
+          "address": "0x7E0035"
+        },
+        {
+          "code": "7E007800",
+          "desc": "Area / Warp Modifier",
+          "address": "0x7E0078"
+        },
+        {
+          "code": "7E0C5801",
+          "desc": "Weapon Modifier",
+          "address": "0x7E0C58"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

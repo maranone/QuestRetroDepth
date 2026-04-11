@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "sensiblesoccer",
+  "display_name": "Sensible Soccer (Europe) (Action Replay)",
+  "aliases": [
+    "Sensible Soccer (Europe) (En,Fr,De,It)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sensible Soccer (Europe) (En,Fr,De,It).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF5460:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFF5460"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

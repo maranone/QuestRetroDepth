@@ -8,12 +8,14 @@
 #include <vector>
 #include <chrono>
 #include <cctype>
+#include <android/asset_manager_jni.h>
 #include <android/log.h>
 
 #define LOG_TAG "QuestRetroDepthXR"
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 
 #include "emulator_backend.h"
+#include "experimental_rumble.h"
 #include "openxr_shell.h"
 
 namespace {
@@ -24,12 +26,16 @@ std::optional<qrd::BackendKind>    g_backend_kind;
 qrd::OpenXrShell                   g_openxr_shell;
 std::string                        g_last_status;
 std::string                        g_last_loaded_rom_filename; // filename only, for prefs persistence
+std::string                        g_last_loaded_game_name;
 std::string                        g_last_working_rom_path;   // full path of last successful load
 std::optional<qrd::BackendKind>    g_last_working_backend_kind;
 
 // JNI context kept for cross-thread callbacks (set in nativeStartVr)
 static JavaVM* g_vm               = nullptr;
 static jobject g_activity_global  = nullptr;
+static AAssetManager* g_asset_manager = nullptr;
+static qrd::ExperimentalRumbleManager g_experimental_rumble;
+static std::string g_rumble_root;
 
 // Ask Kotlin to extract an archive (zip/7z) and return the path to the ROM inside.
 // Falls through to the original path if extraction is not needed or fails.
@@ -72,6 +78,11 @@ std::string prepare_rom_path(const std::string& raw_path) {
 std::string lowercase_copy(std::string text) {
     for (auto& c : text) c = (char)std::tolower((unsigned char)c);
     return text;
+}
+
+std::string basename_from_path(const std::string& path) {
+    const auto slash = path.find_last_of("/\\");
+    return (slash == std::string::npos) ? path : path.substr(slash + 1);
 }
 
 bool path_has_segment(const std::string& path, const char* segment) {
@@ -179,6 +190,7 @@ static void emu_thread_main() {
 
                     std::string err;
                     if (backend->step_frame(inp, err)) {
+                        const auto rumble_events = g_experimental_rumble.evaluate_frame(*backend);
                         const auto& frame = backend->frame_output();
                         if (frame.width > 0 && !frame.rgba8888.empty()) {
                             {
@@ -191,6 +203,9 @@ static void emu_thread_main() {
                             }
                             if (log_ctr++ % 600 == 0)
                                 LOGI("emu_thread: %ux%u running", frame.width, frame.height);
+                        }
+                        for (const auto& event : rumble_events) {
+                            g_openxr_shell.enqueue_haptic(event);
                         }
                     } else if (!err.empty() && log_ctr++ % 300 == 0) {
                         LOGI("emu_thread: step_frame failed: %s", err.c_str());
@@ -363,6 +378,39 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeStartVr(
     g_vm = vm;
     if (g_activity_global) env->DeleteGlobalRef(g_activity_global);
     g_activity_global = env->NewGlobalRef(activity);
+    g_asset_manager = nullptr;
+    {
+        jclass activity_cls = env->GetObjectClass(activity);
+        jmethodID get_assets = env->GetMethodID(activity_cls, "getAssets", "()Landroid/content/res/AssetManager;");
+        jmethodID get_rumble_dir = env->GetMethodID(activity_cls, "getRumbleDirectory", "()Ljava/lang/String;");
+        if (get_assets) {
+            jobject asset_manager_obj = env->CallObjectMethod(activity, get_assets);
+            if (asset_manager_obj) {
+                g_asset_manager = AAssetManager_fromJava(env, asset_manager_obj);
+                env->DeleteLocalRef(asset_manager_obj);
+            }
+            if (env->ExceptionCheck()) env->ExceptionClear();
+        }
+        if (get_rumble_dir) {
+            jstring jr = (jstring)env->CallObjectMethod(activity, get_rumble_dir);
+            if (jr) {
+                const char* chars = env->GetStringUTFChars(jr, nullptr);
+                if (chars) {
+                    g_rumble_root = chars;
+                    env->ReleaseStringUTFChars(jr, chars);
+                }
+                env->DeleteLocalRef(jr);
+            }
+            if (env->ExceptionCheck()) env->ExceptionClear();
+        }
+        env->DeleteLocalRef(activity_cls);
+    }
+    g_experimental_rumble.set_user_root(g_rumble_root);
+    std::string rumble_error;
+    if (!g_experimental_rumble.load_catalog(g_asset_manager, rumble_error) && !rumble_error.empty()) {
+        LOGI("experimental rumble catalog load failed: %s", rumble_error.c_str());
+    }
+    g_openxr_shell.set_experimental_rumble_status(g_experimental_rumble.active_status());
 
     g_openxr_shell.set_frame_provider(frame_provider_for_vr);
 
@@ -378,6 +426,18 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeStartVr(
     // Wire up vr_state callbacks so settings changes propagate to emulator thread
     g_openxr_shell.set_on_vr_state_changed([](bool auto_frame_skip) {
         g_auto_frame_skip.store(auto_frame_skip, std::memory_order_release);
+    });
+    g_openxr_shell.set_on_experimental_rumble_changed([](bool enabled) {
+        std::lock_guard<std::mutex> lock(g_backend_mutex);
+        g_experimental_rumble.set_enabled(enabled);
+        if (g_backend_kind.has_value()) {
+            g_experimental_rumble.on_rom_loaded(
+                g_asset_manager,
+                *g_backend_kind,
+                g_last_loaded_rom_filename,
+                g_last_loaded_game_name);
+        }
+        g_openxr_shell.set_experimental_rumble_status(g_experimental_rumble.active_status());
     });
     g_openxr_shell.set_layer_capture_mask_ctrl([](uint32_t mask) {
         std::lock_guard<std::mutex> lock(g_backend_mutex);
@@ -418,12 +478,14 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeStartVr(
             }
             g_last_working_rom_path    = path;
             g_last_working_backend_kind = wanted_kind;
-            const auto slash = raw_path.find_last_of("/\\");
-            g_last_loaded_rom_filename = (slash == std::string::npos) ? raw_path : raw_path.substr(slash + 1);
+            g_last_loaded_rom_filename = basename_from_path(path);
             auto info = backend->get_rom_header_info();
             if (info.has_header && !info.game_name.empty()) {
                 game_name = info.game_name;
             }
+            g_last_loaded_game_name = game_name;
+            g_experimental_rumble.on_rom_loaded(g_asset_manager, wanted_kind, g_last_loaded_rom_filename, game_name);
+            g_openxr_shell.set_experimental_rumble_status(g_experimental_rumble.active_status());
             backend_name = backend->backend_name();
         }
 
@@ -455,6 +517,7 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeStopVr(
     JNIEnv* env, jobject)
 {
     stop_emu_thread();
+    g_experimental_rumble.reset_runtime();
     g_openxr_shell.stop(env);
 }
 
@@ -514,12 +577,14 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeLoadRom(
         }
         g_last_working_rom_path = rom_path;
         g_last_working_backend_kind = wanted_kind;
-        const auto slash = rom_path.rfind('/');
-        g_last_loaded_rom_filename = (slash == std::string::npos) ? rom_path : rom_path.substr(slash + 1);
+        g_last_loaded_rom_filename = basename_from_path(rom_path);
         auto info = backend->get_rom_header_info();
         if (info.has_header && !info.game_name.empty()) {
             game_name = info.game_name;
         }
+        g_last_loaded_game_name = game_name;
+        g_experimental_rumble.on_rom_loaded(g_asset_manager, wanted_kind, g_last_loaded_rom_filename, game_name);
+        g_openxr_shell.set_experimental_rumble_status(g_experimental_rumble.active_status());
     }
 
     g_openxr_shell.set_current_backend_kind(wanted_kind);

@@ -1,0 +1,79 @@
+{
+  "system": "genesis",
+  "normalized_title": "superthunderblade",
+  "display_name": "Super Thunder Blade (World) (Action Replay)",
+  "aliases": [
+    "Super Thunder Blade (World) (Action Replay)",
+    "Super Thunder Blade (World) (Rev A)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\superthunderblade_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFF82A",
+        "0xFFFE00"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperThunderBlade-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFF82A",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFE00",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Super Thunder Blade (World) (Rev A).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFF82A:0007",
+          "desc": "Infinite Lives",
+          "address": "0xFFF82A"
+        },
+        {
+          "code": "FFFEC4:0003",
+          "desc": "Extra Lives Cheat Enabled",
+          "address": "0xFFFEC4"
+        },
+        {
+          "code": "FFA026:00FF",
+          "desc": "Invincible",
+          "address": "0xFFA026"
+        },
+        {
+          "code": "FFFE90:0004",
+          "desc": "Start On Level Modifier",
+          "address": "0xFFFE90"
+        },
+        {
+          "code": "FFFE92:0001",
+          "desc": "Start On Level Modifier",
+          "address": "0xFFFE92"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

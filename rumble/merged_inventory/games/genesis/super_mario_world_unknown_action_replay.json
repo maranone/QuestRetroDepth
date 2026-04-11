@@ -1,0 +1,50 @@
+{
+  "system": "genesis",
+  "normalized_title": "supermarioworld",
+  "display_name": "Super Mario World (Unknown) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Super Mario World (Unknown) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF715A:05",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF715A"
+        },
+        {
+          "code": "FF254F:09",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF254F"
+        },
+        {
+          "code": "FF250D:09",
+          "desc": "Infinite Fireballs P1",
+          "address": "0xFF250D"
+        },
+        {
+          "code": "FF717A:05",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF717A"
+        },
+        {
+          "code": "FF717B:09",
+          "desc": "Infinite Lives P2",
+          "address": "0xFF717B"
+        },
+        {
+          "code": "FF2521:09",
+          "desc": "Infinite Fireballs P2",
+          "address": "0xFF2521"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

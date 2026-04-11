@@ -1,0 +1,69 @@
+{
+  "system": "genesis",
+  "normalized_title": "lemmings",
+  "display_name": "Lemmings (Japan, USA, Korea) (Rev A)",
+  "aliases": [
+    "Lemmings (Japan, USA)",
+    "Lemmings (Japan, USA, Korea) (Rev A)",
+    "Lemmings (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Lemmings (World) (Action Replay).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FFF4E8:003B",
+          "desc": "Infinite Time",
+          "address": "0xFFF4E8"
+        },
+        {
+          "code": "FFF4DF:0064",
+          "desc": "Always Save 100% of Lemmings",
+          "address": "0xFFF4DF"
+        },
+        {
+          "code": "FFF491:0063",
+          "desc": "Infinite Diggers",
+          "address": "0xFFF491"
+        },
+        {
+          "code": "FFF48B:63",
+          "desc": "Infinite Floaters",
+          "address": "0xFFF48B"
+        },
+        {
+          "code": "FFF48D:0063",
+          "desc": "Infinite Blockers",
+          "address": "0xFFF48D"
+        },
+        {
+          "code": "FFF48A:0063",
+          "desc": "Infinite Climbers",
+          "address": "0xFFF48A"
+        },
+        {
+          "code": "FFF48F:0063",
+          "desc": "Infinite Bashers",
+          "address": "0xFFF48F"
+        },
+        {
+          "code": "FFF48E:0063",
+          "desc": "Infinite Builders",
+          "address": "0xFFF48E"
+        },
+        {
+          "code": "FFF48C:0063",
+          "desc": "Infinite Bombers",
+          "address": "0xFFF48C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

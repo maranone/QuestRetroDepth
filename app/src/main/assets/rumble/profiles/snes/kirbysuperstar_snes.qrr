@@ -1,0 +1,6 @@
+game_name=KirbySuperStar
+game_key=KirbySuperStar-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_bb	damage_taken	0x7E00BB	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_1_bd	damage_taken	0x7E00BD	1	uint	native	prev > curr	0.85	1	right:0.750:180

@@ -1,0 +1,105 @@
+{
+  "system": "snes",
+  "normalized_title": "racedrivin",
+  "display_name": "Race Drivin' (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Race Drivin' (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 17,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "7E026400",
+          "desc": "Infinite Time - Minutes",
+          "address": "0x7E0264"
+        },
+        {
+          "code": "7E026699",
+          "desc": "Infinite Time - Seconds",
+          "address": "0x7E0266"
+        },
+        {
+          "code": "7E025E11",
+          "desc": "Infinite Off-Road Time",
+          "address": "0x7E025E"
+        },
+        {
+          "code": "7E027C99",
+          "desc": "Max Score",
+          "address": "0x7E027C"
+        },
+        {
+          "code": "7E027E99",
+          "desc": "Max Score",
+          "address": "0x7E027E"
+        },
+        {
+          "code": "7E028099",
+          "desc": "Max Score",
+          "address": "0x7E0280"
+        },
+        {
+          "code": "7E028299",
+          "desc": "Max Score",
+          "address": "0x7E0282"
+        },
+        {
+          "code": "7E026A00",
+          "desc": "Infinite Lap Time",
+          "address": "0x7E026A"
+        },
+        {
+          "code": "7E026C00",
+          "desc": "Infinite Lap Time",
+          "address": "0x7E026C"
+        },
+        {
+          "code": "7E026E00",
+          "desc": "Infinite Lap Time",
+          "address": "0x7E026E"
+        },
+        {
+          "code": "7E072000",
+          "desc": "Infinite Best Lap - Minutes",
+          "address": "0x7E0720"
+        },
+        {
+          "code": "7E027200",
+          "desc": "Infinite Best Lap - Seconds",
+          "address": "0x7E0272"
+        },
+        {
+          "code": "7E027400",
+          "desc": "Infinite Best Lap - Milli-Seconds",
+          "address": "0x7E0274"
+        },
+        {
+          "code": "7E027600",
+          "desc": "Infinite Last Lap - Minutes",
+          "address": "0x7E0276"
+        },
+        {
+          "code": "7E027800",
+          "desc": "Infinite Last Lap - Seconds",
+          "address": "0x7E0278"
+        },
+        {
+          "code": "7E027A00",
+          "desc": "Infinite Last Lap - Milli-Seconds",
+          "address": "0x7E027A"
+        },
+        {
+          "code": "7E001C00",
+          "desc": "Always Select Track",
+          "address": "0x7E001C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

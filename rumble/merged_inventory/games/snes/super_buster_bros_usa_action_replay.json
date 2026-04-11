@@ -1,0 +1,83 @@
+{
+  "system": "snes",
+  "normalized_title": "superbusterbros",
+  "display_name": "Super Buster Bros. (USA) (Action Replay)",
+  "aliases": [
+    "Super Buster Bros. (USA) (Game Genie)",
+    "Super Buster Bros. (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Buster Bros. (USA).cht",
+      "total_cheat_rows": 42,
+      "raw_entry_count": 12,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E010005",
+          "desc": "Invincible",
+          "address": "0x7E0100"
+        },
+        {
+          "code": "7E01869A",
+          "desc": "Infinite Time",
+          "address": "0x7E0186"
+        },
+        {
+          "code": "7E018709",
+          "desc": "Infinite Time",
+          "address": "0x7E0187"
+        },
+        {
+          "code": "7E013100",
+          "desc": "Normal Shot",
+          "address": "0x7E0131"
+        },
+        {
+          "code": "7E013102",
+          "desc": "Double Shot",
+          "address": "0x7E0131"
+        },
+        {
+          "code": "7E013104",
+          "desc": "Grappling Shot",
+          "address": "0x7E0131"
+        },
+        {
+          "code": "7E013106",
+          "desc": "Gun Shot",
+          "address": "0x7E0131"
+        },
+        {
+          "code": "7E013402",
+          "desc": "Shield Always On",
+          "address": "0x7E0134"
+        },
+        {
+          "code": "7E016709",
+          "desc": "1 Food For Bonus",
+          "address": "0x7E0167"
+        },
+        {
+          "code": "7E00B300",
+          "desc": "Automatically Clear Stages",
+          "address": "0x7E00B3"
+        },
+        {
+          "code": "7E01869A",
+          "desc": "Infinite Time",
+          "address": "0x7E0186"
+        },
+        {
+          "code": "7E018709",
+          "desc": "Infinite Time",
+          "address": "0x7E0187"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

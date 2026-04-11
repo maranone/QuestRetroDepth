@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "wakatakaoozumouyumenokyoudaitaiketsu",
+  "display_name": "Wakataka Oozumou - Yume no Kyoudai Taiketsu (Japan) (Action Replay)",
+  "aliases": [
+    "Wakataka Oozumou - Yume no Kyoudai Taiketsu (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Wakataka Oozumou - Yume no Kyoudai Taiketsu (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E004840",
+          "desc": "Infinite Energy P1",
+          "address": "0x7E0048"
+        },
+        {
+          "code": "7E004960",
+          "desc": "Infinite Energy P2",
+          "address": "0x7E0049"
+        },
+        {
+          "code": "7E004800",
+          "desc": "No Energy P1",
+          "address": "0x7E0048"
+        },
+        {
+          "code": "7E004900",
+          "desc": "No Energy P2",
+          "address": "0x7E0049"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,534 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Darius Twin (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Darius Twin (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "C22D-67D9",
+      "desc": "Invincibility (Player 1)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C23C-AF60",
+      "desc": "Invincibility (Player 2)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD35-6FA5",
+      "desc": "Player 1 Has Infinite Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD3B-6FA5",
+      "desc": "Player 2 Has Infinite Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "62CD-AF67",
+      "desc": "Player 1 Starts With 1 Green Power Cube Instead Of None",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4ACE-64D7",
+      "desc": "Player 1 Starts With 1 Green Power Cube Instead Of None",
+      "kind": "game_genie"
+    },
+    {
+      "code": "62CD-A407",
+      "desc": "Player 2 Starts With 1 Green Power Cube Instead Of None",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4ACE-64D7",
+      "desc": "Player 2 Starts With 1 Green Power Cube Instead Of None",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DFC3-6D67",
+      "desc": "Player 1 Starts With 1 Life, Player 2 With 5 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D9C3-6DA7",
+      "desc": "Player 1 Starts With 1 Life, Player 2 With 5 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C4C3-6D07",
+      "desc": "Player 1 Starts With 1 Life, Player 2 With 5 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "63C3-6FD7",
+      "desc": "Player 1 Starts With 1 Life, Player 2 With 5 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2C3-6FA7",
+      "desc": "Player 1 Starts With 1 Life, Player 2 With 5 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DFC3-6D67",
+      "desc": "Player 1 Starts With 1 Life, Player 2 With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDC3-6DA7",
+      "desc": "Player 1 Starts With 1 Life, Player 2 With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C4C3-6D07",
+      "desc": "Player 1 Starts With 1 Life, Player 2 With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "63C3-6FD7",
+      "desc": "Player 1 Starts With 1 Life, Player 2 With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2C3-6FA7",
+      "desc": "Player 1 Starts With 1 Life, Player 2 With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D4C3-6D67",
+      "desc": "Player 1 Starts With 2 Lives, Player 2 With 5 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D9C3-6DA7",
+      "desc": "Player 1 Starts With 2 Lives, Player 2 With 5 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C4C3-6D07",
+      "desc": "Player 1 Starts With 2 Lives, Player 2 With 5 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "63C3-6FD7",
+      "desc": "Player 1 Starts With 2 Lives, Player 2 With 5 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2C3-6FA7",
+      "desc": "Player 1 Starts With 2 Lives, Player 2 With 5 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D4C3-6D67",
+      "desc": "Player 1 Starts With 2 Lives, Player 2 With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDC3-6DA7",
+      "desc": "Player 1 Starts With 2 Lives, Player 2 With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C4C3-6D07",
+      "desc": "Player 1 Starts With 2 Lives, Player 2 With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "63C3-6FD7",
+      "desc": "Player 1 Starts With 2 Lives, Player 2 With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2C3-6FA7",
+      "desc": "Player 1 Starts With 2 Lives, Player 2 With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D9C3-6D67",
+      "desc": "Player 1 Starts With 5 Lives, Player 2 With 1 Life",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DFC3-6DA7",
+      "desc": "Player 1 Starts With 5 Lives, Player 2 With 1 Life",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C4C3-6D07",
+      "desc": "Player 1 Starts With 5 Lives, Player 2 With 1 Life",
+      "kind": "game_genie"
+    },
+    {
+      "code": "63C3-6FD7",
+      "desc": "Player 1 Starts With 5 Lives, Player 2 With 1 Life",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2C3-6FA7",
+      "desc": "Player 1 Starts With 5 Lives, Player 2 With 1 Life",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDC3-6D67",
+      "desc": "Player 1 Starts With 10 Lives, Player 2 With 1 Life",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DFC3-6DA7",
+      "desc": "Player 1 Starts With 10 Lives, Player 2 With 1 Life",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C4C3-6D07",
+      "desc": "Player 1 Starts With 10 Lives, Player 2 With 1 Life",
+      "kind": "game_genie"
+    },
+    {
+      "code": "63C3-6FD7",
+      "desc": "Player 1 Starts With 10 Lives, Player 2 With 1 Life",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2C3-6FA7",
+      "desc": "Player 1 Starts With 10 Lives, Player 2 With 1 Life",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D9C3-6D67",
+      "desc": "Player 1 Starts With 5 Lives, Player 2 With 2 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D4C3-6DA7",
+      "desc": "Player 1 Starts With 5 Lives, Player 2 With 2 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C4C3-6D07",
+      "desc": "Player 1 Starts With 5 Lives, Player 2 With 2 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "63C3-6FD7",
+      "desc": "Player 1 Starts With 5 Lives, Player 2 With 2 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2C3-6FA7",
+      "desc": "Player 1 Starts With 5 Lives, Player 2 With 2 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDC3-6D67",
+      "desc": "Player 1 Starts With 10 Lives, Player 2 With 2 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D4C3-6DA7",
+      "desc": "Player 1 Starts With 10 Lives, Player 2 With 2 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C4C3-6D07",
+      "desc": "Player 1 Starts With 10 Lives, Player 2 With 2 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "63C3-6FD7",
+      "desc": "Player 1 Starts With 10 Lives, Player 2 With 2 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2C3-6FA7",
+      "desc": "Player 1 Starts With 10 Lives, Player 2 With 2 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DFB0-A7DD",
+      "desc": "Start On Planet B",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CDB0-A4AD",
+      "desc": "Start On Planet B",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB0-A70D",
+      "desc": "Start On Planet B",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6AB0-A76D",
+      "desc": "Start On Planet B",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D4B0-A7DD",
+      "desc": "Start On Planet C",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CDB0-A4AD",
+      "desc": "Start On Planet C",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB0-A70D",
+      "desc": "Start On Planet C",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6AB0-A76D",
+      "desc": "Start On Planet C",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D7B0-A7DD",
+      "desc": "Start On Planet D",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CDB0-A4AD",
+      "desc": "Start On Planet D",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB0-A70D",
+      "desc": "Start On Planet D",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6AB0-A76D",
+      "desc": "Start On Planet D",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D0B0-A7DD",
+      "desc": "Start On Planet E",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CDB0-A4AD",
+      "desc": "Start On Planet E",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB0-A70D",
+      "desc": "Start On Planet E",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6AB0-A76D",
+      "desc": "Start On Planet E",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D9B0-A7DD",
+      "desc": "Start On Planet F",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CDB0-A4AD",
+      "desc": "Start On Planet F",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB0-A70D",
+      "desc": "Start On Planet F",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6AB0-A76D",
+      "desc": "Start On Planet F",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D1B0-A7DD",
+      "desc": "Start On Planet G",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CDB0-A4AD",
+      "desc": "Start On Planet G",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB0-A70D",
+      "desc": "Start On Planet G",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6AB0-A76D",
+      "desc": "Start On Planet G",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D5B0-A7DD",
+      "desc": "Start On Planet H",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CDB0-A4AD",
+      "desc": "Start On Planet H",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB0-A70D",
+      "desc": "Start On Planet H",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6AB0-A76D",
+      "desc": "Start On Planet H",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D6B0-A7DD",
+      "desc": "Start On Planet I",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CDB0-A4AD",
+      "desc": "Start On Planet I",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB0-A70D",
+      "desc": "Start On Planet I",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6AB0-A76D",
+      "desc": "Start On Planet I",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DBB0-A7DD",
+      "desc": "Start On Planet J",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CDB0-A4AD",
+      "desc": "Start On Planet J",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB0-A70D",
+      "desc": "Start On Planet J",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6AB0-A76D",
+      "desc": "Start On Planet J",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DCB0-A7DD",
+      "desc": "Start On Planet K",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CDB0-A4AD",
+      "desc": "Start On Planet K",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB0-A70D",
+      "desc": "Start On Planet K",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6AB0-A76D",
+      "desc": "Start On Planet K",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D8B0-A7DD",
+      "desc": "Start On Planet L",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CDB0-A4AD",
+      "desc": "Start On Planet L",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB0-A70D",
+      "desc": "Start On Planet L",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6AB0-A76D",
+      "desc": "Start On Planet L",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDC3-6D67",
+      "desc": "Both Players Start With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC3-6D07",
+      "desc": "Both Players Start With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "3CC3-6DA7",
+      "desc": "Both Players Start With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F9C3-6D67",
+      "desc": "Both Players Start With 15 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC3-6D07",
+      "desc": "Both Players Start With 15 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "3CC3-6DA7",
+      "desc": "Both Players Start With 15 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4DC3-6D67",
+      "desc": "Both Players Start With 20 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC3-6D07",
+      "desc": "Both Players Start With 20 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "3CC3-6DA7",
+      "desc": "Both Players Start With 20 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "49C3-6D67",
+      "desc": "Both Players Start With 25 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBC3-6D07",
+      "desc": "Both Players Start With 25 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "3CC3-6DA7",
+      "desc": "Both Players Start With 25 Lives",
+      "kind": "game_genie"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "lordofringsreturnofking",
+  "display_name": "Lord of the Rings- Return of the King",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Lord of the Rings- Return of the King.cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF0708:0064",
+          "desc": "Infinite Time",
+          "address": "0xFF0708"
+        },
+        {
+          "code": "FF031A:0005",
+          "desc": "1P Infinite Health",
+          "address": "0xFF031A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

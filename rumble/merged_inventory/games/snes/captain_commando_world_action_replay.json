@@ -1,0 +1,62 @@
+{
+  "system": "snes",
+  "normalized_title": "captaincommando",
+  "display_name": "Captain Commando (World) (Action Replay)",
+  "aliases": [
+    "Captain Commando (Rumbles)",
+    "Captain Commando (USA)",
+    "Captain Commando (World) (Action Replay)",
+    "Captain Commando (World) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\captaincommando_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E0895",
+        "0x7E0B15",
+        "0x7E0B54"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CaptainCommando-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E0895",
+          "type": "|d1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E0B15",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0B54",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Captain Commando (World) (Game Genie).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "system": "snes",
+  "normalized_title": "superwidget",
+  "display_name": "Super Widget (USA)",
+  "aliases": [
+    "Super Widget (USA)",
+    "Super Widget"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\superwidget_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0DD5",
+        "0x7E0DDD"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperWidget-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0DDD",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0DD5",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Widget (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E0DDD63",
+          "desc": "Infinite Lives",
+          "address": "0x7E0DDD"
+        },
+        {
+          "code": "7E0DDA00",
+          "desc": "Freeze Time",
+          "address": "0x7E0DDA"
+        },
+        {
+          "code": "7E0DCD63",
+          "desc": "1 W Gives 1 Life",
+          "address": "0x7E0DCD"
+        },
+        {
+          "code": "7E0D73FF",
+          "desc": "Invincible",
+          "address": "0x7E0D73"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "SUPER WIDGET"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

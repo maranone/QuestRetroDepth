@@ -1,0 +1,40 @@
+{
+  "system": "genesis",
+  "normalized_title": "f22interceptoradvancedtacticalfighter",
+  "display_name": "F-22 Interceptor - Advanced Tactical Fighter (USA, Europe) (September, 1991)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\F-22 Interceptor - Advanced Tactical Fighter (USA, Europe) (September, 1991).cht",
+      "total_cheat_rows": 31,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFA570:00FF",
+          "desc": "Infinite Chaffs",
+          "address": "0xFFA570"
+        },
+        {
+          "code": "FFA55C:00FF",
+          "desc": "Infinite Sidewinders",
+          "address": "0xFFA55C"
+        },
+        {
+          "code": "FFA550:00FF",
+          "desc": "Infinite Cannon Ammo",
+          "address": "0xFFA550"
+        },
+        {
+          "code": "FFA554:00FF",
+          "desc": "Fake Infinite Sidewinders",
+          "address": "0xFFA554"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

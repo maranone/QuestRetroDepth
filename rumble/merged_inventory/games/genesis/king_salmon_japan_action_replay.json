@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "kingsalmon",
+  "display_name": "King Salmon (Japan) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\King Salmon (Japan) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFA8AF:00",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFA8AF"
+        },
+        {
+          "code": "FFA8AD:07",
+          "desc": "Infinite Time (Hours)",
+          "address": "0xFFA8AD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

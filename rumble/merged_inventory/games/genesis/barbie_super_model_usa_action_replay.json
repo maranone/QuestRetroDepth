@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "barbiesupermodel",
+  "display_name": "Barbie Super Model (USA) (Action Replay)",
+  "aliases": [
+    "Barbie Super Model (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Barbie Super Model (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF450A:0004",
+          "desc": "Infinite &quot;B&quot; Hearts",
+          "address": "0xFF450A"
+        },
+        {
+          "code": "FF453D:0010",
+          "desc": "Invincibility",
+          "address": "0xFF453D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

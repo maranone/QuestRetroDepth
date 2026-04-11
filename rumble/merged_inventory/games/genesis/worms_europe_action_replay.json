@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "worms",
+  "display_name": "Worms (Europe) (Action Replay)",
+  "aliases": [
+    "Worms (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Worms (Europe).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF35CE:0063",
+          "desc": "Time Remaining To Make Decisions Modifier",
+          "address": "0xFF35CE"
+        },
+        {
+          "code": "FF0CEE:0000",
+          "desc": "Fake Health Modifier (Top-Right Team)",
+          "address": "0xFF0CEE"
+        },
+        {
+          "code": "FF0CEC:0000",
+          "desc": "Fake Health Modifier (Top-Left Team)",
+          "address": "0xFF0CEC"
+        },
+        {
+          "code": "FF0CF0:0000",
+          "desc": "Fake Health Modifier (Bottom-Left Team)",
+          "address": "0xFF0CF0"
+        },
+        {
+          "code": "FF0CF2:0000",
+          "desc": "Fake Health Modifier (Bottom-Right Team)",
+          "address": "0xFF0CF2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

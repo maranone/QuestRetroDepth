@@ -1,0 +1,63 @@
+{
+  "system": "snes",
+  "normalized_title": "vortex",
+  "display_name": "Vortex (World) (Action Replay)",
+  "aliases": [
+    "Vortex (World) (Action Replay)",
+    "Vortex"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Vortex (World) (Action Replay).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E039A3D",
+          "desc": "Invincible",
+          "address": "0x7E039A"
+        },
+        {
+          "code": "7E118B32",
+          "desc": "Invincible",
+          "address": "0x7E118B"
+        },
+        {
+          "code": "7E120E0A",
+          "desc": "Infinite Lives",
+          "address": "0x7E120E"
+        },
+        {
+          "code": "7E1DE463",
+          "desc": "Infinite Missiles",
+          "address": "0x7E1DE4"
+        },
+        {
+          "code": "7E1DE563",
+          "desc": "Infinite Rockets",
+          "address": "0x7E1DE5"
+        },
+        {
+          "code": "7E1DE663",
+          "desc": "Infinite Cannon",
+          "address": "0x7E1DE6"
+        },
+        {
+          "code": "7E121A63",
+          "desc": "Infinite Blasts",
+          "address": "0x7E121A"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "VORTEX"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

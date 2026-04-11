@@ -1,0 +1,5 @@
+game_name=SpiderManandTheXMenInArcadesRev
+game_key=SpiderManandTheXMenInArcadesRev-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_10f8	damage_taken	0x7E10F8	1	uint	native	prev > curr	0.85	1	left:0.750:180

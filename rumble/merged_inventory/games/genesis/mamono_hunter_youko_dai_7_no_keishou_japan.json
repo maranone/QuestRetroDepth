@@ -1,0 +1,50 @@
+{
+  "system": "genesis",
+  "normalized_title": "mamonohunteryoukodai7nokeishou",
+  "display_name": "Mamono Hunter Youko - Dai 7 no Keishou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mamono Hunter Youko - Dai 7 no Keishou (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF7F81:0037",
+          "desc": "Freeze Time",
+          "address": "0xFF7F81"
+        },
+        {
+          "code": "FF7F95:0007",
+          "desc": "Infinite Credit",
+          "address": "0xFF7F95"
+        },
+        {
+          "code": "FF0008:0004",
+          "desc": "Last Level",
+          "address": "0xFF0008"
+        },
+        {
+          "code": "FF0109:00D0",
+          "desc": "Jump Midair",
+          "address": "0xFF0109"
+        },
+        {
+          "code": "FF011F:00BF",
+          "desc": "Infinite Energy",
+          "address": "0xFF011F"
+        },
+        {
+          "code": "FF7F94:0063",
+          "desc": "Infinite Lives",
+          "address": "0xFF7F94"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "done": {
+    "variables": {
+      "terminal": {
+        "op": "nonzero"
+      }
+    }
+  },
+  "reward": {
+    "variables": {
+      "score0": {
+        "penalty": 100.0,
+        "reward": 100.0
+      },
+      "score1": {
+        "reward": 10000.0
+      }
+    }
+  }
+}

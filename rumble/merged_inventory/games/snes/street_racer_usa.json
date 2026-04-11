@@ -1,0 +1,152 @@
+{
+  "system": "snes",
+  "normalized_title": "streetracer",
+  "display_name": "Street Racer (USA)",
+  "aliases": [
+    "Street Racer"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Street Racer (USA).cht",
+      "total_cheat_rows": 40,
+      "raw_entry_count": 39,
+      "distinct_address_count": 34,
+      "sample_raw_entries": [
+        {
+          "code": "7E183500",
+          "desc": "Infinite Time",
+          "address": "0x7E1835"
+        },
+        {
+          "code": "7E53B401",
+          "desc": "Enable Extra Tracks (Custom Cup Tracks 21-24)",
+          "address": "0x7E53B4"
+        },
+        {
+          "code": "7E182100",
+          "desc": "P1 Infinite Energy",
+          "address": "0x7E1821"
+        },
+        {
+          "code": "7E538200",
+          "desc": "P1 No Damage",
+          "address": "0x7E5382"
+        },
+        {
+          "code": "7E182300",
+          "desc": "P2 Infinite Energy",
+          "address": "0x7E1823"
+        },
+        {
+          "code": "7E538400",
+          "desc": "P2 Infinite Energy (Alt)",
+          "address": "0x7E5384"
+        },
+        {
+          "code": "7E182500",
+          "desc": "P3 Infinite Energy",
+          "address": "0x7E1825"
+        },
+        {
+          "code": "7E538600",
+          "desc": "P3 No Damage",
+          "address": "0x7E5386"
+        },
+        {
+          "code": "7E182700",
+          "desc": "P4 Infinite Energy",
+          "address": "0x7E1827"
+        },
+        {
+          "code": "7E538800",
+          "desc": "P4 No Damage",
+          "address": "0x7E5388"
+        },
+        {
+          "code": "7E16F163",
+          "desc": "P1 Infinite Nitros",
+          "address": "0x7E16F1"
+        },
+        {
+          "code": "7E16F100",
+          "desc": "P1 No Nitros",
+          "address": "0x7E16F1"
+        },
+        {
+          "code": "7E16F363",
+          "desc": "P2 Infinite Nitros",
+          "address": "0x7E16F3"
+        },
+        {
+          "code": "7E16F300",
+          "desc": "P2 No Nitros",
+          "address": "0x7E16F3"
+        },
+        {
+          "code": "7E16F563",
+          "desc": "P3 Infinite Nitros",
+          "address": "0x7E16F5"
+        },
+        {
+          "code": "7E16F500",
+          "desc": "P3 No Nitros",
+          "address": "0x7E16F5"
+        },
+        {
+          "code": "7E16F763",
+          "desc": "P4 Infinite Nitros",
+          "address": "0x7E16F7"
+        },
+        {
+          "code": "7E16F700",
+          "desc": "P4 No Nitros",
+          "address": "0x7E16F7"
+        },
+        {
+          "code": "7E1D2A03",
+          "desc": "P1 Infinite Credits",
+          "address": "0x7E1D2A"
+        },
+        {
+          "code": "7E1D2C03",
+          "desc": "P2 Infinite Credits",
+          "address": "0x7E1D2C"
+        },
+        {
+          "code": "7E1D2E03",
+          "desc": "P3 Infinite Credits",
+          "address": "0x7E1D2E"
+        },
+        {
+          "code": "7E537200",
+          "desc": "P1 No Weapons",
+          "address": "0x7E5372"
+        },
+        {
+          "code": "7E1D3003",
+          "desc": "P4 Infinite Credits",
+          "address": "0x7E1D30"
+        },
+        {
+          "code": "7E537400",
+          "desc": "P2 No Weapons",
+          "address": "0x7E5374"
+        },
+        {
+          "code": "7E537600",
+          "desc": "P3 No Weapons",
+          "address": "0x7E5376"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 4,
+      "mk3_label": "STREET RACER"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Super Bomberman (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Super Bomberman (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [
+    {
+      "id": "life_gained_0d7d",
+      "event": "life_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0D7D",
+          "wram_offset": 3453,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Infinite Lives implies preventing life loss, which is related to life_gained.",
+      "source_cheats": [
+        {
+          "code": "7E0D7D09",
+          "desc": "Infinite Lives"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_0d76",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0D76",
+          "wram_offset": 3446,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "reason": "Invincible may prevent damage, but the event is not clearly defined.",
+      "source_cheats": [
+        {
+          "code": "7E0D7688",
+          "desc": "Invincible"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_0dbd",
+      "event": "life_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0DBD",
+          "wram_offset": 3517,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Infinite Lives (Player 2) implies preventing life loss, which is related to life_gained.",
+      "source_cheats": [
+        {
+          "code": "7E0DBD09",
+          "desc": "Infinite Lives (Player 2)"
+        }
+      ]
+    },
+    {
+      "id": "score_0d5b",
+      "event": "score",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0D5B",
+          "wram_offset": 3419,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Set Score To 9 Million (Player 1) implies increasing score.",
+      "source_cheats": [
+        {
+          "code": "7E0D5B09",
+          "desc": "Set Score To 9 Million (Player 1)"
+        }
+      ]
+    },
+    {
+      "id": "score_0d9b",
+      "event": "score",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0D9B",
+          "wram_offset": 3483,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Set Score To 9 Million (Player 2) implies increasing score.",
+      "source_cheats": [
+        {
+          "code": "7E0D9B09",
+          "desc": "Set Score To 9 Million (Player 2)"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "code": "7E0D79??",
+      "desc": "Set Abilities (Player 1)",
+      "kind": "unsupported"
+    },
+    {
+      "code": "7E0DB9??",
+      "desc": "Set Abilities (Player 2)",
+      "kind": "unsupported"
+    },
+    {
+      "code": "7E0DF9??",
+      "desc": "Set Abilities (Player 3)",
+      "kind": "unsupported"
+    },
+    {
+      "code": "7E0E39??",
+      "desc": "Set Abilities (Player 4)",
+      "kind": "unsupported"
+    }
+  ]
+}

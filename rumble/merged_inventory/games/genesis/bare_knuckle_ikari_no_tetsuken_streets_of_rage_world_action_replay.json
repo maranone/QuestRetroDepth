@@ -1,0 +1,50 @@
+{
+  "system": "genesis",
+  "normalized_title": "bareknuckleikarinotetsukenstreetsofrage",
+  "display_name": "Bare Knuckle - Ikari no Tetsuken - Streets of Rage (World) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Bare Knuckle - Ikari no Tetsuken - Streets of Rage (World) (Action Replay).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFB833:50",
+          "desc": "Infinite Energy",
+          "address": "0xFFB833"
+        },
+        {
+          "code": "FFFB01:40",
+          "desc": "Infinite Time",
+          "address": "0xFFFB01"
+        },
+        {
+          "code": "FFFF20:09",
+          "desc": "Infinite Lives (Both Players",
+          "address": "0xFFFF20"
+        },
+        {
+          "code": "FFFF21:01",
+          "desc": "Infinite Special Weapons",
+          "address": "0xFFFF21"
+        },
+        {
+          "code": "FFB933:00",
+          "desc": "All Bosses 1 Hit Kill",
+          "address": "0xFFB933"
+        },
+        {
+          "code": "FFB849:1B",
+          "desc": "Invincible",
+          "address": "0xFFB849"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

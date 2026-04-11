@@ -1,0 +1,15 @@
+game_name=Super Star Wars - The Empire Strikes Back (USA, Europe) (Action Replay)
+game_key=SuperStarWarsTheEmpireStrikesBack-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_01b0	damage_taken	0x7E01B0	1	int	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_01b0	death	0x7E01B0	1	int	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_01ac	life_lost	0x7E01AC	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_01ac	life_gained	0x7E01AC	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_019a	score	0x7E019A	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_019c	score	0x7E019C	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_019e	score	0x7E019E	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score3_01a0	score	0x7E01A0	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score4_01a2	score	0x7E01A2	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score5_01a4	score	0x7E01A4	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score6_01a6	score	0x7E01A6	1	uint	native	prev < curr	0.8	1	right:0.350:60

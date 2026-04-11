@@ -1,0 +1,92 @@
+{
+  "system": "genesis",
+  "normalized_title": "shiningforce",
+  "display_name": "Shining Force (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Shining Force (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Shining Force (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "FF9C8F:00FF",
+          "desc": "Lots Of And Infinite Money",
+          "address": "0xFF9C8F"
+        },
+        {
+          "code": "FFBCBD:XX",
+          "desc": "Fake Damage Modifier",
+          "address": "0xFFBCBD"
+        },
+        {
+          "code": "FFF903:XX",
+          "desc": "Fake Attack/Damage/Reward Stats Modifier",
+          "address": "0xFFF903"
+        },
+        {
+          "code": "FFC755:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFC755"
+        },
+        {
+          "code": "FFC705:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFC705"
+        },
+        {
+          "code": "FFC665:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFC665"
+        },
+        {
+          "code": "FFC72D:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFC72D"
+        },
+        {
+          "code": "FFC6B5:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFC6B5"
+        },
+        {
+          "code": "FFC68D:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFC68D"
+        },
+        {
+          "code": "FFC6DD:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFC6DD"
+        },
+        {
+          "code": "FFC63D:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFC63D"
+        },
+        {
+          "code": "FFC7A5:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFC7A5"
+        },
+        {
+          "code": "FFC7CD:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFC7CD"
+        },
+        {
+          "code": "FFC77D:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFC77D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

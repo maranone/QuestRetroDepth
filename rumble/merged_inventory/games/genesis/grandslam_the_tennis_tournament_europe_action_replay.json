@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "grandslamtennistournament",
+  "display_name": "GrandSlam - The Tennis Tournament (Europe) (Action Replay)",
+  "aliases": [
+    "GrandSlam - The Tennis Tournament (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\GrandSlam - The Tennis Tournament (Europe).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF29F6:0063",
+          "desc": "Score Modifier (P1)",
+          "address": "0xFF29F6"
+        },
+        {
+          "code": "FF29F6:0000",
+          "desc": "Opponent Score Modifier (P2/CPU)",
+          "address": "0xFF29F6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

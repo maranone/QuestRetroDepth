@@ -1,0 +1,169 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "VRTroopers",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "third_party\\openai-retro\\retro\\data\\stable\\VRTroopers-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "VRTroopers-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "enemy_defeated_enemy_health_ffa60d",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0xFFA60D",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFA60D",
+          "ram_offset": 42509
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.65,
+      "needs_review": true,
+      "reason": "Enemy health reaching zero is a strong kill proxy.",
+      "source_fields": [
+        {
+          "name": "enemy_health",
+          "address": "0xFFA60D",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_health_ffa58d",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0xFFA58D",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFA58D",
+          "ram_offset": 42381
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFFA58D",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_ffa58d",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0xFFA58D",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFA58D",
+          "ram_offset": 42381
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFFA58D",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_ffa2f0",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xFFA2F0",
+          "size": 4,
+          "value_type": "uint",
+          "byte_order": "big",
+          "raw_type": ">u4",
+          "address": "0xFFA2F0",
+          "ram_offset": 41712
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xFFA2F0",
+          "raw_type": ">u4"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "enemy_rounds_won",
+      "meta": {
+        "address": 16752665,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "rounds_won",
+      "meta": {
+        "address": 16752663,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

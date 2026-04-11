@@ -1,0 +1,83 @@
+{
+  "system": "genesis",
+  "normalized_title": "dickvitalesawesomebabycollegehoops",
+  "display_name": "Dick Vitale's 'Awesome, Baby!' College Hoops (USA) (Action Replay)",
+  "aliases": [
+    "Dick Vitale's 'Awesome, Baby!' College Hoops (USA) (Action Replay)",
+    "Dick Vitale's 'Awesome, Baby!' College Hoops (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\dickvitalesawesomebabycollegehoops_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DickVitalesAwesomeBabyCollegeHoops-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "california_score",
+          "address": "0xFF1734",
+          "type": ">d2"
+        },
+        {
+          "name": "nevada_score",
+          "address": "0xFF1738",
+          "type": ">d2"
+        },
+        {
+          "name": "quarter",
+          "address": "0xFF1725",
+          "type": "|u1"
+        },
+        {
+          "name": "time",
+          "address": "0xFF1718",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Dick Vitale's 'Awesome, Baby!' College Hoops (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF1734:0000",
+          "desc": "P1 Score Modifier",
+          "address": "0xFF1734"
+        },
+        {
+          "code": "FF1738:0000",
+          "desc": "P2 Score Modifer",
+          "address": "0xFF1738"
+        },
+        {
+          "code": "FF1718:0052",
+          "desc": "Infinite Time",
+          "address": "0xFF1718"
+        },
+        {
+          "code": "FF1734:0025",
+          "desc": "High Score Team 1 (P1)",
+          "address": "0xFF1734"
+        },
+        {
+          "code": "FF1738:0000",
+          "desc": "Score Modifier Team 2 (P2/CPU)",
+          "address": "0xFF1738"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

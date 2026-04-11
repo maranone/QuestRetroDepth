@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "tnnbasstournamentofchampions",
+  "display_name": "TNN Bass Tournament of Champions (USA) (Action Replay)",
+  "aliases": [
+    "TNN Bass Tournament of Champions (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\TNN Bass Tournament of Champions (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF180C:0099",
+          "desc": "Fake Infinite Money (Hundreds and Tens Thousands Digits)",
+          "address": "0xFF180C"
+        },
+        {
+          "code": "FF180C:0099",
+          "desc": "Fake Infinite Money (Thousands Digits)",
+          "address": "0xFF180C"
+        },
+        {
+          "code": "FF180E:0099",
+          "desc": "Fake Infinite Money (Hundreds and Tens Digits)",
+          "address": "0xFF180E"
+        },
+        {
+          "code": "FF180E:0099",
+          "desc": "Fake Infinite Money (Cents Digits)",
+          "address": "0xFF180E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

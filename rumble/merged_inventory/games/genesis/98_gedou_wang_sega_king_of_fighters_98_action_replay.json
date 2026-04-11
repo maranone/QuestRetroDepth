@@ -1,0 +1,45 @@
+{
+  "system": "genesis",
+  "normalized_title": "98gedouwangsegakingoffighters98",
+  "display_name": "98 Gedou Wang sega -King of Fighters '98- (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\98 Gedou Wang sega -King of Fighters '98- (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF0213:50",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF0213"
+        },
+        {
+          "code": "FF0413:50",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF0413"
+        },
+        {
+          "code": "FF0213:00",
+          "desc": "No Energy P1",
+          "address": "0xFF0213"
+        },
+        {
+          "code": "FF0413:00",
+          "desc": "No Energy P2",
+          "address": "0xFF0413"
+        },
+        {
+          "code": "FF0709:63",
+          "desc": "Infinite Time",
+          "address": "0xFF0709"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

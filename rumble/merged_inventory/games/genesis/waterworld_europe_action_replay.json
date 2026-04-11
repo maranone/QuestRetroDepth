@@ -1,0 +1,97 @@
+{
+  "system": "genesis",
+  "normalized_title": "waterworld",
+  "display_name": "Waterworld (Europe) (Action Replay)",
+  "aliases": [
+    "Waterworld (Europe) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Waterworld (Europe) (Proto).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 15,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "FFB06C:0063",
+          "desc": "Infinite Gun Ammo (Overworld)",
+          "address": "0xFFB06C"
+        },
+        {
+          "code": "FFB06E:0063",
+          "desc": "Infinite Mines (Overworld)",
+          "address": "0xFFB06E"
+        },
+        {
+          "code": "FFB070:0063",
+          "desc": "Infinite Harpoons (Overworld)",
+          "address": "0xFFB070"
+        },
+        {
+          "code": "FF0CB0:0063",
+          "desc": "Infinite Arrows (Action Levels)",
+          "address": "0xFF0CB0"
+        },
+        {
+          "code": "FF0CB2:0063",
+          "desc": "Infinite Fire Arrows (Action Levels)",
+          "address": "0xFF0CB2"
+        },
+        {
+          "code": "FF0CBC:0063",
+          "desc": "Infinite Dynamite (Action Levels)",
+          "address": "0xFF0CBC"
+        },
+        {
+          "code": "FF0CAA:0064",
+          "desc": "Infinite Energy (Action Levels)",
+          "address": "0xFF0CAA"
+        },
+        {
+          "code": "FF0CE6:0000",
+          "desc": "Instant Level Cleared (Action Levels)",
+          "address": "0xFF0CE6"
+        },
+        {
+          "code": "FF0742:0201",
+          "desc": "Rock &amp; Rope Salvage",
+          "address": "0xFF0742"
+        },
+        {
+          "code": "FF0744:0403",
+          "desc": "Anchor &amp; Coin Salvage",
+          "address": "0xFF0744"
+        },
+        {
+          "code": "FF0746:0605",
+          "desc": "Fire Extinguisher &amp; Chalice Salvage",
+          "address": "0xFF0746"
+        },
+        {
+          "code": "FF0748:0807",
+          "desc": "Wrench &amp; Hook Salvage",
+          "address": "0xFF0748"
+        },
+        {
+          "code": "FF074A:0A09",
+          "desc": "Boot &amp; Bottle Salvage",
+          "address": "0xFF074A"
+        },
+        {
+          "code": "FF074C:000B",
+          "desc": "Book Salvage",
+          "address": "0xFF074C"
+        },
+        {
+          "code": "FFBBEA:001F",
+          "desc": "Infinite Energy (Overworld)",
+          "address": "0xFFBBEA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

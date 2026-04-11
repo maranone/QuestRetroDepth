@@ -1,0 +1,70 @@
+{
+  "system": "genesis",
+  "normalized_title": "mightymorphinpowerrangersmovie",
+  "display_name": "Mighty Morphin Power Rangers - The Movie (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Mighty Morphin Power Rangers - The Movie (Europe)",
+    "Mighty Morphin Power Rangers - The Movie (USA)",
+    "Mighty Morphin Power Rangers - The Movie (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\mightymorphinpowerrangersthemovie_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF40B0",
+        "0xFF414C"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MightyMorphinPowerRangersTheMovie-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF414C",
+          "type": ">u2"
+        },
+        {
+          "name": "score",
+          "address": "0xFF40B0",
+          "type": ">u4"
+        },
+        {
+          "name": "time",
+          "address": "0xFF753D",
+          "type": ">n3"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mighty Morphin Power Rangers - The Movie (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF603C:00FF",
+          "desc": "Infinite Health P1",
+          "address": "0xFF603C"
+        },
+        {
+          "code": "FF4003:0005",
+          "desc": "Infinite Continues",
+          "address": "0xFF4003"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

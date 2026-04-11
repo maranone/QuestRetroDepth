@@ -1,0 +1,55 @@
+{
+  "system": "genesis",
+  "normalized_title": "thunderforceiv",
+  "display_name": "Thunder Force IV (Europe, Japan) (Action Replay)",
+  "aliases": [
+    "Thunder Force IV (Europe)",
+    "Thunder Force IV (Europe, Japan) (Action Replay)",
+    "Thunder Force IV (Japan)",
+    "Thunder Force Iv (Rumbles)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\thunderforceiv_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFF08E",
+        "0xFFF2F1"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ThunderForceIV-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFF2F1",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF08E",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Thunder Force Iv (Rumbles).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

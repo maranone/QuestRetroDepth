@@ -1,0 +1,124 @@
+{
+  "system": "genesis",
+  "normalized_title": "justiceleaguetaskforce",
+  "display_name": "Justice League Task Force (World) (Action Replay)",
+  "aliases": [
+    "Justice League Task Force (World) (Action Replay)",
+    "Justice League Task Force (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\justiceleaguetaskforce_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "enemy_health",
+        "health"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF11A1",
+        "0xFF13FB"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JusticeLeagueTaskForce-Genesis-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "enemy_health",
+          "address": "0xFF13FB",
+          "type": "|u1"
+        },
+        {
+          "name": "enemy_rounds_won",
+          "address": "0xFF1973",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFF11A1",
+          "type": "|u1"
+        },
+        {
+          "name": "rounds_won",
+          "address": "0xFF1971",
+          "type": "|u1"
+        },
+        {
+          "name": "time",
+          "address": "0xFF1958",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Justice League Task Force (World).cht",
+      "total_cheat_rows": 112,
+      "raw_entry_count": 11,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF1958:0063",
+          "desc": "Infinite Time",
+          "address": "0xFF1958"
+        },
+        {
+          "code": "FF119C:0080",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF119C"
+        },
+        {
+          "code": "FF11A0:0080",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF11A0"
+        },
+        {
+          "code": "FF13FA:0080",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF13FA"
+        },
+        {
+          "code": "FF13FE:0080",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF13FE"
+        },
+        {
+          "code": "FF119C:0000",
+          "desc": "No Energy P1",
+          "address": "0xFF119C"
+        },
+        {
+          "code": "FF11A0:0000",
+          "desc": "No Energy P1",
+          "address": "0xFF11A0"
+        },
+        {
+          "code": "FF13FA:0000",
+          "desc": "No Energy P2",
+          "address": "0xFF13FA"
+        },
+        {
+          "code": "FF13FE:0000",
+          "desc": "No Energy P2",
+          "address": "0xFF13FE"
+        },
+        {
+          "code": "FF1C79:0003",
+          "desc": "Infinite Continue",
+          "address": "0xFF1C79"
+        },
+        {
+          "code": "FF1C75:0009",
+          "desc": "Freeze Time Continue",
+          "address": "0xFF1C75"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

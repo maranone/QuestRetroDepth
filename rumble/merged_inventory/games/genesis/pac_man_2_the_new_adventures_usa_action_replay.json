@@ -1,0 +1,102 @@
+{
+  "system": "genesis",
+  "normalized_title": "pacman2newadventures",
+  "display_name": "Pac-Man 2 - The New Adventures (USA) (Action Replay)",
+  "aliases": [
+    "Pac-Man 2 - The New Adventures (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Pac-Man 2 - The New Adventures (USA).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 16,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FFFC20:0003",
+          "desc": "Infinite Powerdots",
+          "address": "0xFFFC20"
+        },
+        {
+          "code": "FFE840:0000",
+          "desc": "Pacman Mood Modifier",
+          "address": "0xFFE840"
+        },
+        {
+          "code": "FFFC26:0001",
+          "desc": "Have Ropeway Ticket",
+          "address": "0xFFFC26"
+        },
+        {
+          "code": "FFFC28:0001",
+          "desc": "Have Train Ticket",
+          "address": "0xFFFC28"
+        },
+        {
+          "code": "FFFC2A:0002",
+          "desc": "Have Baby Milk (Turn Off After Giving To Pacbaby)",
+          "address": "0xFFFC2A"
+        },
+        {
+          "code": "FFFB24:0004",
+          "desc": "Have Flower (Turn Off After Giving To Lucy)",
+          "address": "0xFFFB24"
+        },
+        {
+          "code": "FFFC2A:0006",
+          "desc": "Have Guitar (Turn Off After Giving To Junior)",
+          "address": "0xFFFC2A"
+        },
+        {
+          "code": "FF0DA4:0004",
+          "desc": "Infinite Lives (Pacman Arcade)",
+          "address": "0xFF0DA4"
+        },
+        {
+          "code": "FF0D0A:0046",
+          "desc": "Infinite Powerdot Time (Pacman Arcade)",
+          "address": "0xFF0D0A"
+        },
+        {
+          "code": "FFE199:0000",
+          "desc": "Select Exit on Password Screen to Play Original Pac-Man",
+          "address": "0xFFE199"
+        },
+        {
+          "code": "FFE199:0001",
+          "desc": "Select Exit on Password Screen to Play Pac Jr.",
+          "address": "0xFFE199"
+        },
+        {
+          "code": "FFE199:0003",
+          "desc": "Select Exit on Password Screen to Access Pattern Test",
+          "address": "0xFFE199"
+        },
+        {
+          "code": "FFE199:0004",
+          "desc": "Select Exit on Password Screen to Access Sound Test",
+          "address": "0xFFE199"
+        },
+        {
+          "code": "FFE199:0002",
+          "desc": "Select Exit on Password Screen to Access Time Trial",
+          "address": "0xFFE199"
+        },
+        {
+          "code": "FF0DA5:0004",
+          "desc": "Infinite Lives - Pac-Man Arcade",
+          "address": "0xFF0DA5"
+        },
+        {
+          "code": "FF0D0B:0000",
+          "desc": "Infinite Power Pill Time - Pac-Man Arcade",
+          "address": "0xFF0D0B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

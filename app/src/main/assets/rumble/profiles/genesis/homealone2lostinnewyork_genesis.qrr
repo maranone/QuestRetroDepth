@@ -1,0 +1,9 @@
+game_name=Home Alone 2 - Lost In New York (USA) (Action Replay)
+game_key=HomeAlone2LostInNewYork-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ff9099	damage_taken	0xFF9099	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff9099	death	0xFF9099	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ff9115	life_lost	0xFF9115	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff9115	life_gained	0xFF9115	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ff9117	score	0xFF9117	3	bcd	big	prev < curr	0.8	1	right:0.350:60

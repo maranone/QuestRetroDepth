@@ -1,0 +1,8 @@
+game_name=LegendOfTheMysticalNinjaTh
+game_key=LegendOfTheMysticalNinjaTh-Snes
+system=snes
+integration_tier=manual
+trigger	enemy_defeated_0_59c	enemy_defeated	0x7E059C	1	uint	native	prev != curr	0.55	1	left:0.510:100
+trigger	damage_taken_1_1ab2	damage_taken	0x7E1AB2	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	enemy_defeated_3_5fc	enemy_defeated	0x7E05FC	1	uint	native	prev != curr	0.55	1	right:0.510:100
+trigger	damage_taken_4_1b62	damage_taken	0x7E1B62	1	uint	native	prev > curr	0.85	1	right:0.750:180

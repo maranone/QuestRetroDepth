@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "dimensionforce",
+  "display_name": "Dimension Force",
+  "aliases": [
+    "Dimension Force"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\dimensionforce_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0215",
+        "0x7E1276"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DimensionForce-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0215",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E1276",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "DIMENSION FORCE"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

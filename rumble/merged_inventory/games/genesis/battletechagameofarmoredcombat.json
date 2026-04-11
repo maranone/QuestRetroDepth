@@ -1,0 +1,51 @@
+{
+  "system": "genesis",
+  "normalized_title": "battletechagameofarmoredcombat",
+  "display_name": "BattleTechAGameOfArmoredCombat",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\battletechagameofarmoredcombat_genesis.json",
+      "trigger_count": 2,
+      "field_names": [
+        "lives"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFCAC7"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BattleTechAGameOfArmoredCombat-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "buildings_destroyed",
+          "address": "0xFFCA80",
+          "type": ">u2"
+        },
+        {
+          "name": "enemies_destroyed",
+          "address": "0xFFCA7D",
+          "type": "|u1"
+        },
+        {
+          "name": "enemy_mechs_destroyed",
+          "address": "0xFFCA7F",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFCAC7",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 4
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

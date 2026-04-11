@@ -1,0 +1,32 @@
+{
+  "system": "snes",
+  "normalized_title": "uchuuraceastrogogo",
+  "display_name": "Uchuu Race - Astro Go! Go! (Japan) (Action Replay)",
+  "aliases": [
+    "Uchuu Race - Astro Go! Go! (Japan) (En)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Uchuu Race - Astro Go! Go! (Japan) (En).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E0A3903",
+          "desc": "Infinite Continues",
+          "address": "0x7E0A39"
+        },
+        {
+          "code": "7E0A8404",
+          "desc": "Infinite Turbos",
+          "address": "0x7E0A84"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

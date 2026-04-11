@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "kickboxing",
+  "display_name": "Kick Boxing, The (Japan, Korea)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Kick Boxing, The (Japan, Korea).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF0D3E:00FF",
+          "desc": "Infinite Health P1",
+          "address": "0xFF0D3E"
+        },
+        {
+          "code": "FF0D40:0000",
+          "desc": "No Health P2",
+          "address": "0xFF0D40"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

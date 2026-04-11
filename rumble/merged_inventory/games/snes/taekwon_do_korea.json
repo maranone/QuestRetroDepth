@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "taekwondo",
+  "display_name": "Taekwon-Do (Korea)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Taekwon-Do (Korea).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E194C63",
+          "desc": "Infinite Time",
+          "address": "0x7E194C"
+        },
+        {
+          "code": "7E197400",
+          "desc": "P1 Down Dont Count",
+          "address": "0x7E1974"
+        },
+        {
+          "code": "7E197605",
+          "desc": "P2 Full Down",
+          "address": "0x7E1976"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

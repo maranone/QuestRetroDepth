@@ -1,0 +1,9 @@
+game_name=FinalFantasyIiiViInJapan
+game_key=FinalFantasyIiiViInJapan-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_2ed5	damage_taken	0x7E2ED5	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_1_2ef5	damage_taken	0x7E2EF5	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_2_2eb5	damage_taken	0x7E2EB5	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_3_2f15	damage_taken	0x7E2F15	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	death_4_3a77	death	0x7E3A77	1	uint	native	prev > 0 && curr == 0	0.85	1	left:1.000:500;right:1.000:500

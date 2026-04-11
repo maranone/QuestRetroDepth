@@ -1,0 +1,90 @@
+{
+  "system": "genesis",
+  "normalized_title": "ysiii",
+  "display_name": "Ys III (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ys III (USA).cht",
+      "total_cheat_rows": 84,
+      "raw_entry_count": 14,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FFE28C:0000",
+          "desc": "ALL bosses die with one hit",
+          "address": "0xFFE28C"
+        },
+        {
+          "code": "FFE2A6:0000",
+          "desc": "ALL bosses die with one hit",
+          "address": "0xFFE2A6"
+        },
+        {
+          "code": "FFE2E6:0003",
+          "desc": "Infinite Amulet Uses",
+          "address": "0xFFE2E6"
+        },
+        {
+          "code": "FFE2B6:00C0",
+          "desc": "Short Sword",
+          "address": "0xFFE2B6"
+        },
+        {
+          "code": "FFE2B6:00C0",
+          "desc": "Steel Swd",
+          "address": "0xFFE2B6"
+        },
+        {
+          "code": "FFE2AA:00FF",
+          "desc": "Max &amp; infinite gold",
+          "address": "0xFFE2AA"
+        },
+        {
+          "code": "FFE296:03E7",
+          "desc": "Infinite Energy",
+          "address": "0xFFE296"
+        },
+        {
+          "code": "FFE29C:00FF",
+          "desc": "65,000 Experience",
+          "address": "0xFFE29C"
+        },
+        {
+          "code": "FFE298:03E7",
+          "desc": "Max HP",
+          "address": "0xFFE298"
+        },
+        {
+          "code": "FFE29E:03E7",
+          "desc": "Max Strength",
+          "address": "0xFFE29E"
+        },
+        {
+          "code": "FFE2A0:03E7",
+          "desc": "Max Defense",
+          "address": "0xFFE2A0"
+        },
+        {
+          "code": "FFE28C:0000",
+          "desc": "All Bosses Die With 1 Hit (No Health)",
+          "address": "0xFFE28C"
+        },
+        {
+          "code": "FFE2A6:0000",
+          "desc": "All Bosses Die With 1 Hit (No Health)",
+          "address": "0xFFE2A6"
+        },
+        {
+          "code": "FFE320:0000",
+          "desc": "All Bosses Die With 1 Hit (No Health)",
+          "address": "0xFFE320"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

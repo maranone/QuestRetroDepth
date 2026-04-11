@@ -1,0 +1,87 @@
+{
+  "system": "genesis",
+  "normalized_title": "kingsbountyconquerorsquest",
+  "display_name": "King's Bounty - The Conqueror's Quest (USA, Europe) (Action Replay)",
+  "aliases": [
+    "King's Bounty - The Conqueror's Quest (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\King's Bounty - The Conqueror's Quest (USA, Europe).cht",
+      "total_cheat_rows": 181,
+      "raw_entry_count": 13,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FFE63A:0009",
+          "desc": "Militias Can Move Infinitely",
+          "address": "0xFFE63A"
+        },
+        {
+          "code": "FFE63A:0009",
+          "desc": "Archers Can Move Infinitely",
+          "address": "0xFFE63A"
+        },
+        {
+          "code": "FFE644:00FF",
+          "desc": "Militias Has Max Health",
+          "address": "0xFFE644"
+        },
+        {
+          "code": "FFE646:00FF",
+          "desc": "Archers Have Max Health",
+          "address": "0xFFE646"
+        },
+        {
+          "code": "FFE64E:0000",
+          "desc": "No Health Enemy In Battle (Number 1)",
+          "address": "0xFFE64E"
+        },
+        {
+          "code": "FFE650:0000",
+          "desc": "No Health Enemy In Battle (Number 2)",
+          "address": "0xFFE650"
+        },
+        {
+          "code": "FFE652:0000",
+          "desc": "No Health Enemy In Battle (Number 3)",
+          "address": "0xFFE652"
+        },
+        {
+          "code": "FFE654:0000",
+          "desc": "No Health Enemy In Battle (Number 4)",
+          "address": "0xFFE654"
+        },
+        {
+          "code": "FFFF3C:00FF",
+          "desc": "Infinite Days Remaining",
+          "address": "0xFFFF3C"
+        },
+        {
+          "code": "FFFE26:00FF",
+          "desc": "Max Leadership Skills",
+          "address": "0xFFFE26"
+        },
+        {
+          "code": "FFFE28:00FF",
+          "desc": "Beyond Normal Commission/Week",
+          "address": "0xFFFE28"
+        },
+        {
+          "code": "FFFE28:00FF",
+          "desc": "Beyond Normal Commission/Week",
+          "address": "0xFFFE28"
+        },
+        {
+          "code": "FFFE2A:00FF",
+          "desc": "Max Followers Killed",
+          "address": "0xFFFE2A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

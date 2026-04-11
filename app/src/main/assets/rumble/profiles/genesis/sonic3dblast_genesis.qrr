@@ -1,0 +1,5 @@
+game_name=Sonic3dBlast
+game_key=Sonic3dBlast-Genesis
+system=genesis
+integration_tier=manual
+trigger	pickup_0_a56	pickup	0xFF0A56	1	uint	native	prev != curr	0.75	1	left:0.220:80

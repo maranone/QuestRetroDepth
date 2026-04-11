@@ -1,0 +1,39 @@
+{
+  "system": "snes",
+  "normalized_title": "faceball2000",
+  "display_name": "Faceball 2000 (USA) (Action Replay)",
+  "aliases": [
+    "Faceball 2000 (USA) (Game Genie)",
+    "Faceball 2000 (USA)",
+    "Faceball 2000"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Faceball 2000 (USA).cht",
+      "total_cheat_rows": 169,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E0BD103",
+          "desc": "Infinite Lives",
+          "address": "0x7E0BD1"
+        },
+        {
+          "code": "7E035201",
+          "desc": "The Next Tag Opens The Gate Regardless Of How Many Tags Have Been Made So Far",
+          "address": "0x7E0352"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 3,
+      "mk3_label": "FACEBALL 2000"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

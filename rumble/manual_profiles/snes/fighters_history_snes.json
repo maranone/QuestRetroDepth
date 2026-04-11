@@ -1,0 +1,83 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "FightersHistory",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Fighters History (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "FightersHistory-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_0_a8e",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E0A8E",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0A8E",
+          "bank": "7E",
+          "wram_offset": 2702
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss (player 1)",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_player_1",
+          "address": "0x7E0A8E",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_1_b8e",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E0B8E",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0B8E",
+          "bank": "7E",
+          "wram_offset": 2958
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss (player 2)",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_player_2",
+          "address": "0x7E0B8E",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

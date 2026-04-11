@@ -1,0 +1,207 @@
+{
+  "system": "genesis",
+  "normalized_title": "castlevaniabloodlines",
+  "display_name": "Castlevania - Bloodlines (USA) (Action Replay)",
+  "aliases": [
+    "Castlevania - Bloodlines (Rumbles)",
+    "Castlevania - Bloodlines (USA) (Action Replay)",
+    "Castlevania - Bloodlines (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\castlevaniabloodlines_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF9C11",
+        "0xFFFB04",
+        "0xFFFB2F"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CastlevaniaBloodlines-Genesis-v0\\data.json",
+      "field_count": 7,
+      "fields": [
+        {
+          "name": "gems",
+          "address": "0xFFFB0E",
+          "type": "|d1"
+        },
+        {
+          "name": "health",
+          "address": "0xFF9C11",
+          "type": "|u1"
+        },
+        {
+          "name": "levelHi",
+          "address": "0xFFFA4F",
+          "type": "|u1"
+        },
+        {
+          "name": "levelLo",
+          "address": "0xFFFA55",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFFB2F",
+          "type": "|u1"
+        },
+        {
+          "name": "map",
+          "address": "0xFF911E",
+          "type": ">u2"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFB04",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 7
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Castlevania - Bloodlines (USA).cht",
+      "total_cheat_rows": 187,
+      "raw_entry_count": 32,
+      "distinct_address_count": 30,
+      "sample_raw_entries": [
+        {
+          "code": "FFFB0C:0003",
+          "desc": "Infinite Continues",
+          "address": "0xFFFB0C"
+        },
+        {
+          "code": "FFE8D4:0000",
+          "desc": "Set Boss Health To Zero",
+          "address": "0xFFE8D4"
+        },
+        {
+          "code": "FF9C84:0080",
+          "desc": "Invincibility",
+          "address": "0xFF9C84"
+        },
+        {
+          "code": "FF90DE:0003",
+          "desc": "Max Power For Weapon",
+          "address": "0xFF90DE"
+        },
+        {
+          "code": "FF90DE:0004",
+          "desc": "Attack Everything On Screen At Once",
+          "address": "0xFF90DE"
+        },
+        {
+          "code": "FFB36E:00FE",
+          "desc": "Switch F/X On For Levitate Jump",
+          "address": "0xFFB36E"
+        },
+        {
+          "code": "FFFB12:0003",
+          "desc": "Auto Selected Expert Game Level",
+          "address": "0xFFFB12"
+        },
+        {
+          "code": "FFFB14:0005",
+          "desc": "Auto Selected 9 Lives",
+          "address": "0xFFFB14"
+        },
+        {
+          "code": "FFFB2E:0002",
+          "desc": "Infinite Lives",
+          "address": "0xFFFB2E"
+        },
+        {
+          "code": "FF9C10:007F",
+          "desc": "Infinite Health",
+          "address": "0xFF9C10"
+        },
+        {
+          "code": "FFFB0E:9999",
+          "desc": "Infinite Jewels",
+          "address": "0xFFFB0E"
+        },
+        {
+          "code": "FFFB2A:0000",
+          "desc": "Area Modifier",
+          "address": "0xFFFB2A"
+        },
+        {
+          "code": "FFFB20:0001",
+          "desc": "Enable Expert And 9 Lives in Options",
+          "address": "0xFFFB20"
+        },
+        {
+          "code": "FFFB20:0001",
+          "desc": "Enable Expert And 9 Lives in Options",
+          "address": "0xFFFB20"
+        },
+        {
+          "code": "FF9EFC:0003",
+          "desc": "Jump Midair w/Slow Descent",
+          "address": "0xFF9EFC"
+        },
+        {
+          "code": "FFBD55:0000",
+          "desc": "1 Hit/Shot Kill Bosses",
+          "address": "0xFFBD55"
+        },
+        {
+          "code": "FFE8D5:0000",
+          "desc": "1 Hit/Shot Kill Bosses",
+          "address": "0xFFE8D5"
+        },
+        {
+          "code": "FFBDD5:0000",
+          "desc": "1 Hit/Shot Kill Bosses",
+          "address": "0xFFBDD5"
+        },
+        {
+          "code": "FFBED5:0000",
+          "desc": "1 Hit/Shot Kill Bosses",
+          "address": "0xFFBED5"
+        },
+        {
+          "code": "FFBCD5:0001",
+          "desc": "1 Hit/Shot Kill Bosses",
+          "address": "0xFFBCD5"
+        },
+        {
+          "code": "FFC055:0000",
+          "desc": "1 Hit/Shot Kill Bosses",
+          "address": "0xFFC055"
+        },
+        {
+          "code": "FFBE55:0000",
+          "desc": "1 Hit/Shot Kill Bosses",
+          "address": "0xFFBE55"
+        },
+        {
+          "code": "FFBE5D:FFFF",
+          "desc": "1 Hit/Shot Kill Bosses",
+          "address": "0xFFBE5D"
+        },
+        {
+          "code": "FF9003:0004",
+          "desc": "Scene change",
+          "address": "0xFF9003"
+        },
+        {
+          "code": "FF9123:0021",
+          "desc": "Level's objects/enemies from other level",
+          "address": "0xFF9123"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

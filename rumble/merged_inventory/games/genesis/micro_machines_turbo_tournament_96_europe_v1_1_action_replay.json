@@ -1,0 +1,122 @@
+{
+  "system": "genesis",
+  "normalized_title": "micromachinesturbotournament96",
+  "display_name": "Micro Machines Turbo Tournament 96 (Europe) (v1.1) (Action Replay)",
+  "aliases": [
+    "Micro Machines Turbo Tournament 96 (Europe) (v1.1) (J-Cart)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Micro Machines Turbo Tournament 96 (Europe) (v1.1) (J-Cart).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 20,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "FFE776:0002",
+          "desc": "Infinite Lives",
+          "address": "0xFFE776"
+        },
+        {
+          "code": "FFD130:0000",
+          "desc": "Freeze Cpu Cars [Challenge]",
+          "address": "0xFFD130"
+        },
+        {
+          "code": "FFD132:0000",
+          "desc": "Freeze Cpu Cars [Challenge]",
+          "address": "0xFFD132"
+        },
+        {
+          "code": "FFD134:0000",
+          "desc": "Freeze Cpu Cars [Challenge]",
+          "address": "0xFFD134"
+        },
+        {
+          "code": "FFD634:0000",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFD634"
+        },
+        {
+          "code": "FFD636:0000",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFD636"
+        },
+        {
+          "code": "FFD164:0000",
+          "desc": "0 Laps Remaining P1",
+          "address": "0xFFD164"
+        },
+        {
+          "code": "FFD0C0:0009",
+          "desc": "All Computer-Controlled Racers Drive Against Walls",
+          "address": "0xFFD0C0"
+        },
+        {
+          "code": "FFD058:0000",
+          "desc": "Blue Car Direction",
+          "address": "0xFFD058"
+        },
+        {
+          "code": "FFD05A:0000",
+          "desc": "Yellow Car Direction",
+          "address": "0xFFD05A"
+        },
+        {
+          "code": "FFD05C:0000",
+          "desc": "Green Car Direction",
+          "address": "0xFFD05C"
+        },
+        {
+          "code": "FFE777:0008",
+          "desc": "Infinite Lives",
+          "address": "0xFFE777"
+        },
+        {
+          "code": "FFD165:0000",
+          "desc": "Auto Win Race - Challenge Race and League Race",
+          "address": "0xFFD165"
+        },
+        {
+          "code": "FFD165:0003",
+          "desc": "P1 Always on 1st Lap",
+          "address": "0xFFD165"
+        },
+        {
+          "code": "FFD167:0003",
+          "desc": "P2 Always on 1st Lap",
+          "address": "0xFFD167"
+        },
+        {
+          "code": "FFD169:0003",
+          "desc": "P3 Always on 1st Lap",
+          "address": "0xFFD169"
+        },
+        {
+          "code": "FFD16B:0003",
+          "desc": "P4 Always on 1st Lap",
+          "address": "0xFFD16B"
+        },
+        {
+          "code": "FFD639:0000",
+          "desc": "Freeze Timer",
+          "address": "0xFFD639"
+        },
+        {
+          "code": "FFD719:0000",
+          "desc": "Race Modifier - Challenge Race, 1P Head-to-Head Race, and Time Trial Challenge",
+          "address": "0xFFD719"
+        },
+        {
+          "code": "FFD719:000A",
+          "desc": "Race Modifier - Pro Challenge Race, 1P Pro Head-to-Head Race, and Pro Time Trial Challenge",
+          "address": "0xFFD719"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

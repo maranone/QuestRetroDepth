@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "powerrangerszeobattleracers",
+  "display_name": "Power Rangers Zeo - Battle Racers (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Power Rangers Zeo - Battle Racers (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E1501FF",
+          "desc": "Max Speed",
+          "address": "0x7E1501"
+        },
+        {
+          "code": "7E1401FF",
+          "desc": "Infinite Blaster",
+          "address": "0x7E1401"
+        },
+        {
+          "code": "7E144200",
+          "desc": "Lap Modifier",
+          "address": "0x7E1442"
+        },
+        {
+          "code": "7E146100",
+          "desc": "Lap Modifier",
+          "address": "0x7E1461"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

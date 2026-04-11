@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "noescape",
+  "display_name": "No Escape (USA) (Action Replay)",
+  "aliases": [
+    "No Escape (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\No Escape (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF9256:0088",
+          "desc": "Infinite Health P1",
+          "address": "0xFF9256"
+        },
+        {
+          "code": "FF0BB2:00FF",
+          "desc": "Infinite Time",
+          "address": "0xFF0BB2"
+        },
+        {
+          "code": "FF080E:0099",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF080E"
+        },
+        {
+          "code": "FF9226:0010",
+          "desc": "Invincibility",
+          "address": "0xFF9226"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

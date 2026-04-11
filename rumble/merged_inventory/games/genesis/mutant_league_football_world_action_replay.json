@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "mutantleaguefootball",
+  "display_name": "Mutant League Football (World) (Action Replay)",
+  "aliases": [
+    "Mutant League Football (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mutant League Football (World) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFE3CC:0063",
+          "desc": "Away Team 99 Points",
+          "address": "0xFFE3CC"
+        },
+        {
+          "code": "FFE3CC:0000",
+          "desc": "Away Team 0 Points",
+          "address": "0xFFE3CC"
+        },
+        {
+          "code": "FFE888:0063",
+          "desc": "Home Team 99 Points",
+          "address": "0xFFE888"
+        },
+        {
+          "code": "FFE888:0000",
+          "desc": "Home Team 0 Points",
+          "address": "0xFFE888"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

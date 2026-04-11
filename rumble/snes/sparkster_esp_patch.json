@@ -1,0 +1,109 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Sparkster ESP Patch",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Sparkster ESP Patch.cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [
+    {
+      "id": "pickup_016a",
+      "event": "pickup",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x016A",
+          "wram_offset": 362,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.25,
+          "duration_ms": 18
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": false,
+      "reason": "Collecting a jewel leads to a life gain.",
+      "source_cheats": [
+        {
+          "code": "7E016A63",
+          "desc": "Collect 1 Jewel For 1 Up"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_0691",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0691",
+          "wram_offset": 1681,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Infinite energy implies no damage taken.",
+      "source_cheats": [
+        {
+          "code": "7E06910E",
+          "desc": "Infinite Energy"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_0168",
+      "event": "life_gained",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0168",
+          "wram_offset": 360,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": false,
+      "reason": "Infinite lives implies no life loss.",
+      "source_cheats": [
+        {
+          "code": "7E016809",
+          "desc": "Infinite Lives"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

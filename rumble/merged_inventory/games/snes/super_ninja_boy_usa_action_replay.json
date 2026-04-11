@@ -1,0 +1,78 @@
+{
+  "system": "snes",
+  "normalized_title": "superninjaboy",
+  "display_name": "Super Ninja Boy (USA) (Action Replay)",
+  "aliases": [
+    "Super Ninja Boy (USA) (Game Genie)",
+    "Super Ninja Boy (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Ninja Boy (USA).cht",
+      "total_cheat_rows": 39,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "7E108BFF",
+          "desc": "Start With 255 HP",
+          "address": "0x7E108B"
+        },
+        {
+          "code": "7E108CFF",
+          "desc": "Start With 255 NP",
+          "address": "0x7E108C"
+        },
+        {
+          "code": "7E10F10F",
+          "desc": "Start With Eggs",
+          "address": "0x7E10F1"
+        },
+        {
+          "code": "7E20E708",
+          "desc": "Start With Sword",
+          "address": "0x7E20E7"
+        },
+        {
+          "code": "7E10E802",
+          "desc": "Start With Shield",
+          "address": "0x7E10E8"
+        },
+        {
+          "code": "7E10E908",
+          "desc": "Start With Armor",
+          "address": "0x7E10E9"
+        },
+        {
+          "code": "7E10EA08",
+          "desc": "Start With Helmet",
+          "address": "0x7E10EA"
+        },
+        {
+          "code": "7E10EB08",
+          "desc": "Start With Protector",
+          "address": "0x7E10EB"
+        },
+        {
+          "code": "7E10DC0F",
+          "desc": "Start With Marks",
+          "address": "0x7E10DC"
+        },
+        {
+          "code": "7E10E001",
+          "desc": "Start With Meat Bun",
+          "address": "0x7E10E0"
+        },
+        {
+          "code": "7E10E108",
+          "desc": "Start With Sweet Bun",
+          "address": "0x7E10E1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

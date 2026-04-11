@@ -1,0 +1,70 @@
+{
+  "system": "genesis",
+  "normalized_title": "lastbattle",
+  "display_name": "Last Battle (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Last Battle (Rumbles)",
+    "Last Battle (USA, Europe) (Action Replay)",
+    "Last Battle (USA, Europe, Korea)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\lastbattle_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFFE09",
+        "0xFFFE0D"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\LastBattle-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFFE0D",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFE09",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Last Battle (USA, Europe, Korea).cht",
+      "total_cheat_rows": 145,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFFE15:0099",
+          "desc": "Time Set With Last Two Numbers",
+          "address": "0xFFFE15"
+        },
+        {
+          "code": "FFFE0D:0048",
+          "desc": "Infinite Lives",
+          "address": "0xFFFE0D"
+        },
+        {
+          "code": "FFFE0D:0040",
+          "desc": "Infinite Energy",
+          "address": "0xFFFE0D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

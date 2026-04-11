@@ -1,0 +1,5 @@
+game_name=Chase H.Q. II (USA) (Action Replay)
+game_key=ChaseHQII-Genesis
+system=genesis
+integration_tier=stable
+trigger	score_score_ffbca1	score	0xFFBCA1	7	nibble	big	prev < curr	0.8	1	right:0.350:60

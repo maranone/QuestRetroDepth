@@ -1,0 +1,50 @@
+{
+  "system": "genesis",
+  "normalized_title": "segasports1",
+  "display_name": "Sega Sports 1 (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sega Sports 1 (Europe).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF0C60:0063",
+          "desc": "Score Modifier P1",
+          "address": "0xFF0C60"
+        },
+        {
+          "code": "FF0C60:0000",
+          "desc": "Score Modifier P2",
+          "address": "0xFF0C60"
+        },
+        {
+          "code": "FF1B80:0046",
+          "desc": "Fake Infinite Time (Seconds)",
+          "address": "0xFF1B80"
+        },
+        {
+          "code": "FF10EA:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFF10EA"
+        },
+        {
+          "code": "FF92F8:0000",
+          "desc": "Low Timer (Minutes)",
+          "address": "0xFF92F8"
+        },
+        {
+          "code": "FF92FA:0000",
+          "desc": "Low Timer (Seconds)",
+          "address": "0xFF92FA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

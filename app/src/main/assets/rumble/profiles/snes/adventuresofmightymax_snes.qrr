@@ -1,0 +1,9 @@
+game_name=AdventuresOfMightyMax
+game_key=AdventuresOfMightyMax-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_0294	damage_taken	0x7E0294	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0294	death	0x7E0294	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_028c	life_lost	0x7E028C	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_028c	life_gained	0x7E028C	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0288	score	0x7E0288	4	bcd	little	prev < curr	0.8	1	right:0.350:60

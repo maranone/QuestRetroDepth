@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "warlock",
+  "display_name": "Warlock (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Warlock (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Warlock (USA, Europe).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFA18E:0009",
+          "desc": "Infinite Health",
+          "address": "0xFFA18E"
+        },
+        {
+          "code": "FFCF94:0001",
+          "desc": "Fly (Hold B And Press A, Move With Directional Buttons)",
+          "address": "0xFFCF94"
+        },
+        {
+          "code": "FFCFAA:0001",
+          "desc": "Keep Red Teleport and other items after the death",
+          "address": "0xFFCFAA"
+        },
+        {
+          "code": "FFA196:0010",
+          "desc": "1 Hit Invincibility",
+          "address": "0xFFA196"
+        },
+        {
+          "code": "FFB29D:0009",
+          "desc": "Infinite Health Monster Character vs Monster Warlock",
+          "address": "0xFFB29D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

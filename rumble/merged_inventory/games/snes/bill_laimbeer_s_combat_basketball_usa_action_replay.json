@@ -1,0 +1,68 @@
+{
+  "system": "snes",
+  "normalized_title": "billlaimbeerscombatbasketball",
+  "display_name": "Bill Laimbeer's Combat Basketball (USA) (Action Replay)",
+  "aliases": [
+    "Bill Laimbeer's Combat Basketball (USA) (Game Genie)",
+    "Bill Laimbeer's Combat Basketball (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bill Laimbeer's Combat Basketball (USA).cht",
+      "total_cheat_rows": 33,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E064900",
+          "desc": "League Character Modifier - Top",
+          "address": "0x7E0649"
+        },
+        {
+          "code": "7E064A00",
+          "desc": "League Character Modifier - Middle",
+          "address": "0x7E064A"
+        },
+        {
+          "code": "7E064B00",
+          "desc": "League Character Modifier - Bottom",
+          "address": "0x7E064B"
+        },
+        {
+          "code": "7E064C00",
+          "desc": "League Character Modifier - Left",
+          "address": "0x7E064C"
+        },
+        {
+          "code": "7E064D00",
+          "desc": "League Character Modifier - Right",
+          "address": "0x7E064D"
+        },
+        {
+          "code": "7E113700",
+          "desc": "Player 1 (Left Side) Score Modifier",
+          "address": "0x7E1137"
+        },
+        {
+          "code": "7E113800",
+          "desc": "Player 1 (Left Side) Score Modifier",
+          "address": "0x7E1138"
+        },
+        {
+          "code": "7E113900",
+          "desc": "Player 2 (Right Side) Score Modifier",
+          "address": "0x7E1139"
+        },
+        {
+          "code": "7E113A00",
+          "desc": "Player 2 (Right Side) Score Modifier",
+          "address": "0x7E113A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

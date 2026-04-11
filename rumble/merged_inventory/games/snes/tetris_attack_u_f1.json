@@ -1,0 +1,140 @@
+{
+  "system": "snes",
+  "normalized_title": "tetrisattackf1",
+  "display_name": "Tetris Attack (U) [f1]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Tetris Attack (U) [f1].cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 24,
+      "distinct_address_count": 20,
+      "sample_raw_entries": [
+        {
+          "code": "7E02DE00",
+          "desc": "Speed Modifier",
+          "address": "0x7E02DE"
+        },
+        {
+          "code": "7E02DF00",
+          "desc": "Speed Modifier",
+          "address": "0x7E02DF"
+        },
+        {
+          "code": "7E02B801",
+          "desc": "Set Speed At 1",
+          "address": "0x7E02B8"
+        },
+        {
+          "code": "7E02B863",
+          "desc": "Set Speed At 99",
+          "address": "0x7E02B8"
+        },
+        {
+          "code": "7E02BA05",
+          "desc": "Start On Stage 6 (Stage Clear Mode)",
+          "address": "0x7E02BA"
+        },
+        {
+          "code": "7E02C200",
+          "desc": "Never Score Points",
+          "address": "0x7E02C2"
+        },
+        {
+          "code": "7E02C27F",
+          "desc": "Set Max. Score",
+          "address": "0x7E02C2"
+        },
+        {
+          "code": "7E02C396",
+          "desc": "Set Max. Score",
+          "address": "0x7E02C3"
+        },
+        {
+          "code": "7E02C498",
+          "desc": "Set Max. Score",
+          "address": "0x7E02C4"
+        },
+        {
+          "code": "7E02DF63",
+          "desc": "Faster Screen Scroll (Player 1)",
+          "address": "0x7E02DF"
+        },
+        {
+          "code": "7E02E163",
+          "desc": "Faster Screen Scroll (Player 2)",
+          "address": "0x7E02E1"
+        },
+        {
+          "code": "7E638B01",
+          "desc": "Inf. Count (Puzzle Mode)",
+          "address": "0x7E638B"
+        },
+        {
+          "code": "7E033600",
+          "desc": "Set Time To Zero (Puzzle Mode)",
+          "address": "0x7E0336"
+        },
+        {
+          "code": "7E034206",
+          "desc": "Start On Final Stage (Stage Clear Mode)",
+          "address": "0x7E0342"
+        },
+        {
+          "code": "7E954200",
+          "desc": "Music Played In Music Test (00-29)",
+          "address": "0x7E9542"
+        },
+        {
+          "code": "7E954101",
+          "desc": "SFX Play As Soon As You Choose Them",
+          "address": "0x7E9541"
+        },
+        {
+          "code": "7E94D201",
+          "desc": "Always Have Extra Characters In 2P VS Mode Unlocked",
+          "address": "0x7E94D2"
+        },
+        {
+          "code": "7E03903C",
+          "desc": "Infinite 2P Time Trail Time",
+          "address": "0x7E0390"
+        },
+        {
+          "code": "7E946001",
+          "desc": "Blocks Never Stop Rising (ie. The B,A,L,L Code Is Always On)",
+          "address": "0x7E9460"
+        },
+        {
+          "code": "7E035A00",
+          "desc": "Pressing Start Clears All Blocks (Cannot Pause The Game While This Is On)",
+          "address": "0x7E035A"
+        },
+        {
+          "code": "7E05B800",
+          "desc": "P1 Combo Value Modifier",
+          "address": "0x7E05B8"
+        },
+        {
+          "code": "7E06E400",
+          "desc": "P2 Combo Value Modifier",
+          "address": "0x7E06E4"
+        },
+        {
+          "code": "7E02BA00",
+          "desc": "P1 Character Modifier",
+          "address": "0x7E02BA"
+        },
+        {
+          "code": "7E02BC00",
+          "desc": "P2 Character Modifier",
+          "address": "0x7E02BC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

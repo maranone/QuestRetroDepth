@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "neugierteng110haeleth",
+  "display_name": "Neugier (J) [T+Eng1.10_Haeleth]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Neugier (J) [T+Eng1.10_Haeleth].cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E006A24",
+          "desc": "Energy",
+          "address": "0x7E006A"
+        },
+        {
+          "code": "7E006708",
+          "desc": "Max SA",
+          "address": "0x7E0067"
+        },
+        {
+          "code": "7E006908",
+          "desc": "Max JA",
+          "address": "0x7E0069"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

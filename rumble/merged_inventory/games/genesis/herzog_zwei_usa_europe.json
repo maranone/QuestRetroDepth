@@ -1,0 +1,110 @@
+{
+  "system": "genesis",
+  "normalized_title": "herzogzwei",
+  "display_name": "Herzog Zwei (USA, Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Herzog Zwei (USA, Europe).cht",
+      "total_cheat_rows": 66,
+      "raw_entry_count": 18,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "FF8B9E:00FF",
+          "desc": "Infinite Armor",
+          "address": "0xFF8B9E"
+        },
+        {
+          "code": "FF8BAC:0060",
+          "desc": "Infinite Gun Ammo",
+          "address": "0xFF8BAC"
+        },
+        {
+          "code": "FF8BAE:0014",
+          "desc": "Infinite Energy",
+          "address": "0xFF8BAE"
+        },
+        {
+          "code": "FF8BE8:C350",
+          "desc": "Infinite Money",
+          "address": "0xFF8BE8"
+        },
+        {
+          "code": "FF8B9E:0000",
+          "desc": "No Armor",
+          "address": "0xFF8B9E"
+        },
+        {
+          "code": "FF8BAC:0000",
+          "desc": "No Gun Ammo",
+          "address": "0xFF8BAC"
+        },
+        {
+          "code": "FF8BE8:0000",
+          "desc": "No Energy",
+          "address": "0xFF8BE8"
+        },
+        {
+          "code": "FF8BE8:0000",
+          "desc": "No Money",
+          "address": "0xFF8BE8"
+        },
+        {
+          "code": "FF8C9E:00FF",
+          "desc": "Infinite Armor",
+          "address": "0xFF8C9E"
+        },
+        {
+          "code": "FF8CAC:0060",
+          "desc": "Infinite Gun Ammo",
+          "address": "0xFF8CAC"
+        },
+        {
+          "code": "FF8CAE:0014",
+          "desc": "Infinite Energy",
+          "address": "0xFF8CAE"
+        },
+        {
+          "code": "FF8CE8:C350",
+          "desc": "Infinite Money",
+          "address": "0xFF8CE8"
+        },
+        {
+          "code": "FF8C9E:0000",
+          "desc": "No Armor",
+          "address": "0xFF8C9E"
+        },
+        {
+          "code": "FF8CAC:0000",
+          "desc": "No Gun Ammo",
+          "address": "0xFF8CAC"
+        },
+        {
+          "code": "FF8CAE:0000",
+          "desc": "No Energy",
+          "address": "0xFF8CAE"
+        },
+        {
+          "code": "FF8CE8:0000",
+          "desc": "No Money",
+          "address": "0xFF8CE8"
+        },
+        {
+          "code": "FFF84C:00BE",
+          "desc": "Level Modifier",
+          "address": "0xFFF84C"
+        },
+        {
+          "code": "FFF926:00BE",
+          "desc": "Level Modifier",
+          "address": "0xFFF926"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

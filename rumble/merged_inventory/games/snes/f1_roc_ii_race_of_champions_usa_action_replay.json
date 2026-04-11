@@ -1,0 +1,118 @@
+{
+  "system": "snes",
+  "normalized_title": "f1rociiraceofchampions",
+  "display_name": "F1-ROC II - Race of Champions (USA) (Action Replay)",
+  "aliases": [
+    "F1-ROC II - Race of Champions (USA) (Game Genie)",
+    "F1-ROC II - Race of Champions (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\F1-ROC II - Race of Champions (USA).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 19,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "7E045301",
+          "desc": "Always Rank #1",
+          "address": "0x7E0453"
+        },
+        {
+          "code": "7E04587F",
+          "desc": "Instant Finish",
+          "address": "0x7E0458"
+        },
+        {
+          "code": "7E0592FF",
+          "desc": "All Races Completed In Group C Class",
+          "address": "0x7E0592"
+        },
+        {
+          "code": "7E0595FF",
+          "desc": "Infinite Money",
+          "address": "0x7E0595"
+        },
+        {
+          "code": "7E042000",
+          "desc": "Set Low Total Time",
+          "address": "0x7E0420"
+        },
+        {
+          "code": "7E059DFF",
+          "desc": "Set Development For Tires",
+          "address": "0x7E059D"
+        },
+        {
+          "code": "7E059FFF",
+          "desc": "Set Development For Engine",
+          "address": "0x7E059F"
+        },
+        {
+          "code": "7E05A1FF",
+          "desc": "Set Development For Rear Wing",
+          "address": "0x7E05A1"
+        },
+        {
+          "code": "7E05A3FF",
+          "desc": "Set Development For Front Wing",
+          "address": "0x7E05A3"
+        },
+        {
+          "code": "7E05A5FF",
+          "desc": "Set Development For Brake",
+          "address": "0x7E05A5"
+        },
+        {
+          "code": "7E05A7FF",
+          "desc": "Set Development For Suspension",
+          "address": "0x7E05A7"
+        },
+        {
+          "code": "7E058907",
+          "desc": "Set Max. Tires",
+          "address": "0x7E0589"
+        },
+        {
+          "code": "7E058A07",
+          "desc": "Set Max. Engine",
+          "address": "0x7E058A"
+        },
+        {
+          "code": "7E058B07",
+          "desc": "Set Max. Rear Wing",
+          "address": "0x7E058B"
+        },
+        {
+          "code": "7E058C07",
+          "desc": "Set Max. Front Wing",
+          "address": "0x7E058C"
+        },
+        {
+          "code": "7E058D07",
+          "desc": "Set Max. Brake",
+          "address": "0x7E058D"
+        },
+        {
+          "code": "7E058E07",
+          "desc": "Set Max. Suspension",
+          "address": "0x7E058E"
+        },
+        {
+          "code": "7E059600",
+          "desc": "Class Modifier (NOTE1)",
+          "address": "0x7E0596"
+        },
+        {
+          "code": "7E04F300",
+          "desc": "Race Modifier For F1 Class (NOTE2)",
+          "address": "0x7E04F3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

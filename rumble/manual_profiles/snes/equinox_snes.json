@@ -1,0 +1,49 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Equinox",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Equinox (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "Equinox-Snes"
+  },
+  "triggers": [
+    {
+      "id": "enemy_defeated_2_137a",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0x7E137A",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x137A",
+          "bank": "7E",
+          "wram_offset": 4986
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.51,
+          "duration_ms": 100
+        }
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on attacks",
+      "source_fields": [
+        {
+          "name": "rumble_on_attacks",
+          "address": "0x7E137A",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

@@ -1,0 +1,49 @@
+{
+  "system": "genesis",
+  "normalized_title": "toejamearlinpaniconfunkotron",
+  "display_name": "ToeJam _ Earl in Panic on Funkotron (World) (Action Replay)",
+  "aliases": [
+    "ToeJam _ Earl in Panic on Funkotron (Europe)",
+    "ToeJam _ Earl in Panic on Funkotron (USA)",
+    "ToeJam _ Earl in Panic on Funkotron (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\ToeJam _ Earl in Panic on Funkotron (World) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFA92B:14",
+          "desc": "Infinite Health P1",
+          "address": "0xFFA92B"
+        },
+        {
+          "code": "FFA92D:14",
+          "desc": "Infinite Health P2",
+          "address": "0xFFA92D"
+        },
+        {
+          "code": "FFA92F:63",
+          "desc": "Infinite Time Underwater",
+          "address": "0xFFA92F"
+        },
+        {
+          "code": "FFA929:63",
+          "desc": "Infinite Specials",
+          "address": "0xFFA929"
+        },
+        {
+          "code": "FFA923:63",
+          "desc": "Infinite Coins",
+          "address": "0xFFA923"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

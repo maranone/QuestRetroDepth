@@ -1,0 +1,43 @@
+{
+  "system": "snes",
+  "normalized_title": "doomsdaywarrior",
+  "display_name": "Doomsday Warrior (USA) (Action Replay)",
+  "aliases": [
+    "Doomsday Warrior (USA) (Game Genie)",
+    "Doomsday Warrior (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Doomsday Warrior (USA).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E02C664",
+          "desc": "Player 1 Infinite Health",
+          "address": "0x7E02C6"
+        },
+        {
+          "code": "7E02C600",
+          "desc": "Player 1 No Health",
+          "address": "0x7E02C6"
+        },
+        {
+          "code": "7E03C664",
+          "desc": "Player 2 Infinite Health",
+          "address": "0x7E03C6"
+        },
+        {
+          "code": "7E03C600",
+          "desc": "Player 2 No Health",
+          "address": "0x7E03C6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

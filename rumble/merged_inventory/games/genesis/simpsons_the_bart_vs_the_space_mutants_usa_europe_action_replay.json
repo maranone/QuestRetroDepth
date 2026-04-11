@@ -1,0 +1,142 @@
+{
+  "system": "genesis",
+  "normalized_title": "simpsonsbartvsspacemutants",
+  "display_name": "Simpsons, The - Bart vs. the Space Mutants (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Simpsons, The - Bart vs. the Space Mutants (USA, Europe) (Action Replay)",
+    "Simpsons, The - Bart vs. the Space Mutants (USA, Europe) (Rev A)",
+    "Simpsons, The - Bart vs. the Space Mutants (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\simpsonsbartvsthespacemutants_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF01B4",
+        "0xFF01B5",
+        "0xFF01B9"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SimpsonsBartVsTheSpaceMutants-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF01B5",
+          "type": "|d1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF01B4",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF01B9",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Simpsons, The - Bart vs. the Space Mutants (USA, Europe).cht",
+      "total_cheat_rows": 57,
+      "raw_entry_count": 16,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FF01A2:0063",
+          "desc": "Infinite Coins",
+          "address": "0xFF01A2"
+        },
+        {
+          "code": "FF0228:0001",
+          "desc": "Cannot Be Touched",
+          "address": "0xFF0228"
+        },
+        {
+          "code": "FF0228:0001",
+          "desc": "Cannot Be Touched",
+          "address": "0xFF0228"
+        },
+        {
+          "code": "FF01C2:0099",
+          "desc": "Infinite Time",
+          "address": "0xFF01C2"
+        },
+        {
+          "code": "FF01B4:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF01B4"
+        },
+        {
+          "code": "FF01B4:0003",
+          "desc": "Infinite Hits",
+          "address": "0xFF01B4"
+        },
+        {
+          "code": "FF02C6:00FF",
+          "desc": "Infinite Spraypaint",
+          "address": "0xFF02C6"
+        },
+        {
+          "code": "FF01C6:0000",
+          "desc": "All Goals Done",
+          "address": "0xFF01C6"
+        },
+        {
+          "code": "FF01C4:0000",
+          "desc": "All Goals Complete (On Emulator)",
+          "address": "0xFF01C4"
+        },
+        {
+          "code": "FF01B9:0000",
+          "desc": "Level Modifier (1-7) (On Actual System)",
+          "address": "0xFF01B9"
+        },
+        {
+          "code": "FF01B7:0000",
+          "desc": "Level Modifier (1-7) (On Emulator)",
+          "address": "0xFF01B7"
+        },
+        {
+          "code": "FF01FF:006E",
+          "desc": "Float",
+          "address": "0xFF01FF"
+        },
+        {
+          "code": "FF01FA:0003",
+          "desc": "Horizontal Scrolling Modifier",
+          "address": "0xFF01FA"
+        },
+        {
+          "code": "FF0208:0008",
+          "desc": "Bart Glides Instead of Walks",
+          "address": "0xFF0208"
+        },
+        {
+          "code": "FF026A:00BE",
+          "desc": "Letter Code?",
+          "address": "0xFF026A"
+        },
+        {
+          "code": "FF0228:0010",
+          "desc": "Invincibility",
+          "address": "0xFF0228"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

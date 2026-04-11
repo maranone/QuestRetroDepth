@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "itchyscratchygame",
+  "display_name": "Itchy _ Scratchy Game, The (USA) (Action Replay)",
+  "aliases": [
+    "Itchy _ Scratchy Game, The (USA) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Itchy _ Scratchy Game, The (USA) (Proto).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF051A:0059",
+          "desc": "Infinite Time",
+          "address": "0xFF051A"
+        },
+        {
+          "code": "FF0508:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF0508"
+        },
+        {
+          "code": "FF083E:000A",
+          "desc": "Infinite Weapons",
+          "address": "0xFF083E"
+        },
+        {
+          "code": "FF07E8:0010",
+          "desc": "Invincibility",
+          "address": "0xFF07E8"
+        },
+        {
+          "code": "FF0BB8:0010",
+          "desc": "Freeze Time Continue",
+          "address": "0xFF0BB8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

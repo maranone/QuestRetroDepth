@@ -1,0 +1,185 @@
+{
+  "system": "snes",
+  "normalized_title": "finalfight",
+  "display_name": "Final Fight (Rumbles)",
+  "aliases": [
+    "Final Fight (Rumbles)",
+    "Final Fight (USA)",
+    "Final Fight"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\finalfight_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0C90",
+        "0x7E0D6E"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FinalFight-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0D6E",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0C90",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Final Fight (USA).cht",
+      "total_cheat_rows": 47,
+      "raw_entry_count": 37,
+      "distinct_address_count": 36,
+      "sample_raw_entries": [
+        {
+          "code": "7E0D1450",
+          "desc": "Infinite Life",
+          "address": "0x7E0D14"
+        },
+        {
+          "code": "7E101400",
+          "desc": "Enemy 1 No Life",
+          "address": "0x7E1014"
+        },
+        {
+          "code": "7E10B400",
+          "desc": "Enemy 2 No Life",
+          "address": "0x7E10B4"
+        },
+        {
+          "code": "7E115400",
+          "desc": "Enemy 3 No Life",
+          "address": "0x7E1154"
+        },
+        {
+          "code": "7E11F400",
+          "desc": "Boss No Life",
+          "address": "0x7E11F4"
+        },
+        {
+          "code": "7E11F500",
+          "desc": "Boss No Life",
+          "address": "0x7E11F5"
+        },
+        {
+          "code": "7E0CBC63",
+          "desc": "Freeze Timer",
+          "address": "0x7E0CBC"
+        },
+        {
+          "code": "7E245609",
+          "desc": "Infinite Lives",
+          "address": "0x7E2456"
+        },
+        {
+          "code": "7E1C1100",
+          "desc": "Weapon Modifier",
+          "address": "0x7E1C11"
+        },
+        {
+          "code": "7E151200",
+          "desc": "Item Modifier",
+          "address": "0x7E1512"
+        },
+        {
+          "code": "7E0D7000",
+          "desc": "P1 Has A Different Punch",
+          "address": "0x7E0D70"
+        },
+        {
+          "code": "7E0D0F79",
+          "desc": "Invisible [Not Able To Be Hit]",
+          "address": "0x7E0D0F"
+        },
+        {
+          "code": "7E0D76C8",
+          "desc": "Hold Enemy Forever",
+          "address": "0x7E0D76"
+        },
+        {
+          "code": "7EFFFE00",
+          "desc": "New Game Starting Stage Modifier",
+          "address": "0x7EFFFE"
+        },
+        {
+          "code": "7EFFFF00",
+          "desc": "New Game Starting Substage Modifier",
+          "address": "0x7EFFFF"
+        },
+        {
+          "code": "7EFFFA01",
+          "desc": "Debug Mode",
+          "address": "0x7EFFFA"
+        },
+        {
+          "code": "7E0D1E01",
+          "desc": "Attack Speed Greatly Increased",
+          "address": "0x7E0D1E"
+        },
+        {
+          "code": "7E0D6E05",
+          "desc": "Infinite Lives",
+          "address": "0x7E0D6E"
+        },
+        {
+          "code": "7E0CBC09",
+          "desc": "Infinite Time",
+          "address": "0x7E0CBC"
+        },
+        {
+          "code": "7EFFFCFF",
+          "desc": "Demo Mode",
+          "address": "0x7EFFFC"
+        },
+        {
+          "code": "7E008F00",
+          "desc": "Character Modifier",
+          "address": "0x7E008F"
+        },
+        {
+          "code": "7E0C9709",
+          "desc": "Max Score",
+          "address": "0x7E0C97"
+        },
+        {
+          "code": "7E0C9609",
+          "desc": "Max Score",
+          "address": "0x7E0C96"
+        },
+        {
+          "code": "7E0C9509",
+          "desc": "Max Score",
+          "address": "0x7E0C95"
+        },
+        {
+          "code": "7E0C9409",
+          "desc": "Max Score",
+          "address": "0x7E0C94"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "FINAL FIGHT"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "sanrioworldsmashball",
+  "display_name": "Sanrio World Smash Ball! (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Sanrio World Smash Ball! (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E0070A0",
+          "desc": "1P Always Have Strong Smash",
+          "address": "0x7E0070"
+        },
+        {
+          "code": "7E0086A0",
+          "desc": "2P Always Have Strong Smas",
+          "address": "0x7E0086"
+        },
+        {
+          "code": "7E007000",
+          "desc": "1P Never Have Strong Smash",
+          "address": "0x7E0070"
+        },
+        {
+          "code": "7E008600",
+          "desc": "2P Never Have Strong Smash",
+          "address": "0x7E0086"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

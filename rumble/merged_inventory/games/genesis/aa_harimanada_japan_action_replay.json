@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "aaharimanada",
+  "display_name": "Aa Harimanada (Japan) (Action Replay)",
+  "aliases": [
+    "Aa Harimanada (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Aa Harimanada (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 9,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF2E62:0064",
+          "desc": "Infinite Energy",
+          "address": "0xFF2E62"
+        },
+        {
+          "code": "FF276A:0064",
+          "desc": "P1 Infinite Health",
+          "address": "0xFF276A"
+        },
+        {
+          "code": "FF2E62:0064",
+          "desc": "P1 Infinite Health",
+          "address": "0xFF2E62"
+        },
+        {
+          "code": "FF276A:0000",
+          "desc": "P1 No Health",
+          "address": "0xFF276A"
+        },
+        {
+          "code": "FF2E62:0000",
+          "desc": "P1 No Health",
+          "address": "0xFF2E62"
+        },
+        {
+          "code": "FF277A:0064",
+          "desc": "P2 Infinite Health",
+          "address": "0xFF277A"
+        },
+        {
+          "code": "FF3562:0064",
+          "desc": "P2 Infinite Health",
+          "address": "0xFF3562"
+        },
+        {
+          "code": "FF277A:0000",
+          "desc": "P2 No Health",
+          "address": "0xFF277A"
+        },
+        {
+          "code": "FF3562:0000",
+          "desc": "P2 No Health",
+          "address": "0xFF3562"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

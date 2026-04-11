@@ -1,0 +1,65 @@
+{
+  "system": "snes",
+  "normalized_title": "garoudensetsushukumeinotatakai",
+  "display_name": "Garou Densetsu - Shukumei no Tatakai (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Garou Densetsu - Shukumei no Tatakai (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E036200",
+          "desc": "Note: some of these will freeze the game if left on during the bonus round",
+          "address": "0x7E0362"
+        },
+        {
+          "code": "7E060660",
+          "desc": "Freeze Timer At One Minute",
+          "address": "0x7E0606"
+        },
+        {
+          "code": "7E06135F",
+          "desc": "Player 1 Inf Health",
+          "address": "0x7E0613"
+        },
+        {
+          "code": "7E061402",
+          "desc": "Only Play One Round To Win / Point Mod",
+          "address": "0x7E0614"
+        },
+        {
+          "code": "7E062300",
+          "desc": "One Hit Win / Opponent Health Mod",
+          "address": "0x7E0623"
+        },
+        {
+          "code": "7E062402",
+          "desc": "Opponent Wins In One Round / Opponent Point Mod",
+          "address": "0x7E0624"
+        },
+        {
+          "code": "7E060800",
+          "desc": "Player 1 Character Mod",
+          "address": "0x7E0608"
+        },
+        {
+          "code": "7E060A00",
+          "desc": "Opponent Mod",
+          "address": "0x7E060A"
+        },
+        {
+          "code": "7E060200",
+          "desc": "Area Mod",
+          "address": "0x7E0602"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

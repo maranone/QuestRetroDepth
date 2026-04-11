@@ -1,0 +1,16 @@
+game_name=B.O.B. (USA, Europe) (Action Replay)
+game_key=BOB-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_0221	damage_taken	0x7E0221	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0221	death	0x7E0221	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_022d	life_lost	0x7E022D	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_022d	life_gained	0x7E022D	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_0dab	score	0x7E0DAB	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_0da9	score	0x7E0DA9	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_0da7	score	0x7E0DA7	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score3_0da5	score	0x7E0DA5	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score4_0da3	score	0x7E0DA3	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score5_0da2	score	0x7E0DA2	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score6_0da0	score	0x7E0DA0	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score7_0d9e	score	0x7E0D9E	1	nibble	native	prev < curr	0.8	1	right:0.350:60

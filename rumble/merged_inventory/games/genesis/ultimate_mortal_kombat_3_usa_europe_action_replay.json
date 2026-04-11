@@ -1,0 +1,144 @@
+{
+  "system": "genesis",
+  "normalized_title": "ultimatemortalkombat3",
+  "display_name": "Ultimate Mortal Kombat 3 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Ultimate Mortal Kombat 3 (Rumbles)",
+    "Ultimate Mortal Kombat 3 (USA)",
+    "Ultimate Mortal Kombat 3 (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ultimate Mortal Kombat 3 (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 54,
+      "raw_entry_count": 24,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "FFF229:A6",
+          "desc": "Infinite Energy P1",
+          "address": "0xFFF229"
+        },
+        {
+          "code": "FFF39B:A6",
+          "desc": "Infinite Energy P2",
+          "address": "0xFFF39B"
+        },
+        {
+          "code": "FFF22B:30",
+          "desc": "Infinite Run P1",
+          "address": "0xFFF22B"
+        },
+        {
+          "code": "FFFFD3:30",
+          "desc": "Infinite Run P2",
+          "address": "0xFFFFD3"
+        },
+        {
+          "code": "FFF229:00",
+          "desc": "No Energy P1",
+          "address": "0xFFF229"
+        },
+        {
+          "code": "FFF39B:00",
+          "desc": "No Energy P2",
+          "address": "0xFFF39B"
+        },
+        {
+          "code": "FFF22B:00",
+          "desc": "No Run P1",
+          "address": "0xFFF22B"
+        },
+        {
+          "code": "FFFFD3:00",
+          "desc": "No Run P2",
+          "address": "0xFFFFD3"
+        },
+        {
+          "code": "FF0020:01",
+          "desc": "Cheat Menu Enabled",
+          "address": "0xFF0020"
+        },
+        {
+          "code": "FFEF69:09",
+          "desc": "Infinite Time",
+          "address": "0xFFEF69"
+        },
+        {
+          "code": "FF0237:99",
+          "desc": "Infinite Lives (Galaga Minigame)",
+          "address": "0xFF0237"
+        },
+        {
+          "code": "FF0229:00",
+          "desc": "Enemies Constantly Dive (Galaga Minigame)",
+          "address": "0xFF0229"
+        },
+        {
+          "code": "FFFFCC:00",
+          "desc": "Show Illegal Instruction Screen",
+          "address": "0xFFFFCC"
+        },
+        {
+          "code": "FFEF68:0009",
+          "desc": "Infinite Time",
+          "address": "0xFFEF68"
+        },
+        {
+          "code": "FF0222:63",
+          "desc": "Infinite Kredits",
+          "address": "0xFF0222"
+        },
+        {
+          "code": "FFF4FF:06",
+          "desc": "Computer Does Brutalities More Often",
+          "address": "0xFFF4FF"
+        },
+        {
+          "code": "FFF4FF:01",
+          "desc": "Computer Does Other Finishers More Often",
+          "address": "0xFFF4FF"
+        },
+        {
+          "code": "FF01F4:52",
+          "desc": "Floor Camera Angle",
+          "address": "0xFF01F4"
+        },
+        {
+          "code": "FFF502:32",
+          "desc": "Characters Walk/Run Through Each Other",
+          "address": "0xFFF502"
+        },
+        {
+          "code": "FFF517:63",
+          "desc": "No Time For Finishing Moves",
+          "address": "0xFFF517"
+        },
+        {
+          "code": "FF020E:00",
+          "desc": "Cuts Out Fade Outs",
+          "address": "0xFF020E"
+        },
+        {
+          "code": "FF02F6:00",
+          "desc": "Missing Sindel Win Pose Animation",
+          "address": "0xFF02F6"
+        },
+        {
+          "code": "FFF21E:B160",
+          "desc": "P1 Free Movement",
+          "address": "0xFFF21E"
+        },
+        {
+          "code": "FFF390:B160",
+          "desc": "P2 Free Movement",
+          "address": "0xFFF390"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "system": "snes",
+  "normalized_title": "tetrisdrmario",
+  "display_name": "Tetris _ Dr. Mario (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Tetris _ Dr. Mario (USA)",
+    "Tetris _ Dr. Mario (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Tetris _ Dr. Mario (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E1E1B03",
+          "desc": "Tetris Options Menu",
+          "address": "0x7E1E1B"
+        },
+        {
+          "code": "7E1E7203",
+          "desc": "Dr Mario Options Menu",
+          "address": "0x7E1E72"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

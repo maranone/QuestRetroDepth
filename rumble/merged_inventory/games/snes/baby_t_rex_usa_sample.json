@@ -1,0 +1,45 @@
+{
+  "system": "snes",
+  "normalized_title": "babytrex",
+  "display_name": "Baby T-Rex (USA) (Sample)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Baby T-Rex (USA) (Sample).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E1EB399",
+          "desc": "Infinite Eggs",
+          "address": "0x7E1EB3"
+        },
+        {
+          "code": "7E319128",
+          "desc": "Fake Infinite Roar",
+          "address": "0x7E3191"
+        },
+        {
+          "code": "7E1EB101",
+          "desc": "Infinite Roar",
+          "address": "0x7E1EB1"
+        },
+        {
+          "code": "7E313431",
+          "desc": "Infinite Health",
+          "address": "0x7E3134"
+        },
+        {
+          "code": "7E313731",
+          "desc": "Infinite Health",
+          "address": "0x7E3137"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "system": "genesis",
+  "normalized_title": "beyondoasis",
+  "display_name": "Beyond Oasis (USA) (Action Replay)",
+  "aliases": [
+    "Beyond Oasis (USA) (Action Replay)",
+    "Beyond Oasis (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Beyond Oasis (USA).cht",
+      "total_cheat_rows": 83,
+      "raw_entry_count": 37,
+      "distinct_address_count": 26,
+      "sample_raw_entries": [
+        {
+          "code": "FF0D82:00FF",
+          "desc": "Infinite weapon uses, Slot 2",
+          "address": "0xFF0D82"
+        },
+        {
+          "code": "FF0D82:0000",
+          "desc": "Weapons, Slot 2",
+          "address": "0xFF0D82"
+        },
+        {
+          "code": "FF2E9A:0056",
+          "desc": "Platforms in Secret Cliffs don't disappear",
+          "address": "0xFF2E9A"
+        },
+        {
+          "code": "FF2E40:0056",
+          "desc": "Platforms in Secret Cliffs don't disappear",
+          "address": "0xFF2E40"
+        },
+        {
+          "code": "FF2DE6:0056",
+          "desc": "Platforms in Secret Cliffs don't disappear",
+          "address": "0xFF2DE6"
+        },
+        {
+          "code": "FF2EF4:0056",
+          "desc": "Platforms in Secret Cliffs don't disappear",
+          "address": "0xFF2EF4"
+        },
+        {
+          "code": "FF0D80:00FF",
+          "desc": "Infinite weapon uses, Slot 1",
+          "address": "0xFF0D80"
+        },
+        {
+          "code": "FF1A76:00D6",
+          "desc": "Spirit power bar stays full",
+          "address": "0xFF1A76"
+        },
+        {
+          "code": "FF1A72:00DE",
+          "desc": "Health Bar stays full",
+          "address": "0xFF1A72"
+        },
+        {
+          "code": "FF0DB6:000F",
+          "desc": "15 blue gems",
+          "address": "0xFF0DB6"
+        },
+        {
+          "code": "FF0DB2:0001",
+          "desc": "Always have red key",
+          "address": "0xFF0DB2"
+        },
+        {
+          "code": "FF0DB2:0001",
+          "desc": "Always have Blue key",
+          "address": "0xFF0DB2"
+        },
+        {
+          "code": "FF0DB4:0001",
+          "desc": "Always have gold key",
+          "address": "0xFF0DB4"
+        },
+        {
+          "code": "FF0DB4:0001",
+          "desc": "Always have green key",
+          "address": "0xFF0DB4"
+        },
+        {
+          "code": "FF0DB8:000F",
+          "desc": "15 green gems",
+          "address": "0xFF0DB8"
+        },
+        {
+          "code": "FF1A7E:01F4",
+          "desc": "Very high rank",
+          "address": "0xFF1A7E"
+        },
+        {
+          "code": "FF0DB6:000F",
+          "desc": "15 red gems",
+          "address": "0xFF0DB6"
+        },
+        {
+          "code": "FF0DB8:000F",
+          "desc": "15 black gems",
+          "address": "0xFF0DB8"
+        },
+        {
+          "code": "FF17A0:00FF",
+          "desc": "Infinite Health",
+          "address": "0xFF17A0"
+        },
+        {
+          "code": "FF17A2:00FF",
+          "desc": "Infinite Health",
+          "address": "0xFF17A2"
+        },
+        {
+          "code": "FF17A4:00FF",
+          "desc": "Infinite Magic",
+          "address": "0xFF17A4"
+        },
+        {
+          "code": "FF17A6:00FF",
+          "desc": "Infinite Magic",
+          "address": "0xFF17A6"
+        },
+        {
+          "code": "FF17A2:00FF",
+          "desc": "Infinite Health",
+          "address": "0xFF17A2"
+        },
+        {
+          "code": "FF17A4:00FF",
+          "desc": "Infinite Health",
+          "address": "0xFF17A4"
+        },
+        {
+          "code": "FF17A6:00FF",
+          "desc": "Infinite Magic",
+          "address": "0xFF17A6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=BugsBunnyRabbitRampage
+game_key=BugsBunnyRabbitRampage-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_2d6	damage_taken	0x7E02D6	1	uint	native	prev > curr	0.85	1	left:0.750:180

@@ -1,0 +1,87 @@
+{
+  "system": "genesis",
+  "normalized_title": "dunebattleforarrakis",
+  "display_name": "Dune - The Battle for Arrakis (USA) (Action Replay)",
+  "aliases": [
+    "Dune - The Battle for Arrakis (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Dune - The Battle for Arrakis (USA).cht",
+      "total_cheat_rows": 50,
+      "raw_entry_count": 13,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FFD6C2:00FF",
+          "desc": "Have Lots of Money",
+          "address": "0xFFD6C2"
+        },
+        {
+          "code": "FFD6C2:00FF",
+          "desc": "Have Maxed Out Money",
+          "address": "0xFFD6C2"
+        },
+        {
+          "code": "FFD6C2:00FF",
+          "desc": "Have Maxed Out Money",
+          "address": "0xFFD6C2"
+        },
+        {
+          "code": "FFA62C:0028",
+          "desc": "Join House Modifier",
+          "address": "0xFFA62C"
+        },
+        {
+          "code": "FFBEF8:0020",
+          "desc": "Select your House Cursor Modifier",
+          "address": "0xFFBEF8"
+        },
+        {
+          "code": "FFC04C:0001",
+          "desc": "Mission Modifier",
+          "address": "0xFFC04C"
+        },
+        {
+          "code": "FFC274:0000",
+          "desc": "P1 Selected House Modifier",
+          "address": "0xFFC274"
+        },
+        {
+          "code": "FFC27C:0000",
+          "desc": "P2 Selected House Modifier",
+          "address": "0xFFC27C"
+        },
+        {
+          "code": "FFD70E:00A0",
+          "desc": "Main Menu Cursor Modifier",
+          "address": "0xFFD70E"
+        },
+        {
+          "code": "FFDBF2:0024",
+          "desc": "Options Cursor Select",
+          "address": "0xFFDBF2"
+        },
+        {
+          "code": "FFDC50:0000",
+          "desc": "Music is/Sounds are (Options)",
+          "address": "0xFFDC50"
+        },
+        {
+          "code": "FFFF94:0000",
+          "desc": "Music Test (Options)",
+          "address": "0xFFFF94"
+        },
+        {
+          "code": "FFFF9C:0000",
+          "desc": "Sound Test (Options)",
+          "address": "0xFFFF9C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

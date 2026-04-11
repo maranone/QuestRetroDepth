@@ -1,0 +1,48 @@
+{
+  "system": "snes",
+  "normalized_title": "rampart",
+  "display_name": "Rampart (USA) (Game Genie)",
+  "aliases": [
+    "Rampart (USA)",
+    "Rampart"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Rampart (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E0A5A03",
+          "desc": "Infinite Cannons",
+          "address": "0x7E0A5A"
+        },
+        {
+          "code": "7E09AF18",
+          "desc": "Infinite Time",
+          "address": "0x7E09AF"
+        },
+        {
+          "code": "7E0A0101",
+          "desc": "Battles Never End",
+          "address": "0x7E0A01"
+        },
+        {
+          "code": "7E0A0F01",
+          "desc": "Ships Shoot Way Off Target",
+          "address": "0x7E0A0F"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "RAMPARTS"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

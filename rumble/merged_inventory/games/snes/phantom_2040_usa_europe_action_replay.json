@@ -1,0 +1,49 @@
+{
+  "system": "snes",
+  "normalized_title": "phantom2040",
+  "display_name": "Phantom 2040 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Phantom 2040 (USA) (Beta)",
+    "Phantom 2040 (USA)",
+    "Phantom 2040 (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Phantom 2040 (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E02B49A",
+          "desc": "Infinite Lives",
+          "address": "0x7E02B4"
+        },
+        {
+          "code": "7E044A40",
+          "desc": "FAKE Infinite Health",
+          "address": "0x7E044A"
+        },
+        {
+          "code": "7E02B904",
+          "desc": "Infinite Weapon Energy",
+          "address": "0x7E02B9"
+        },
+        {
+          "code": "7E044C41",
+          "desc": "Infinite Weapon Energy",
+          "address": "0x7E044C"
+        },
+        {
+          "code": "7E04101F",
+          "desc": "Invincible",
+          "address": "0x7E0410"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

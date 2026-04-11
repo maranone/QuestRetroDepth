@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "generationslost",
+  "display_name": "Generations Lost (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Generations Lost (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Generations Lost (USA, Europe).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFF311:007F",
+          "desc": "Infinite Health",
+          "address": "0xFFF311"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

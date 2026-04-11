@@ -1,0 +1,107 @@
+{
+  "system": "genesis",
+  "normalized_title": "michaeljacksonsmoonwalker",
+  "display_name": "Michael Jackson's Moonwalker (World) (Action Replay)",
+  "aliases": [
+    "Michael Jackson's Moonwalker (World) (Action Replay)",
+    "Michael Jackson's Moonwalker (World) (Rev A)",
+    "Michael Jackson's Moonwalker (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\michaeljacksonsmoonwalker_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFDE45",
+        "0xFFDE47",
+        "0xFFDE4A"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MichaelJacksonsMoonwalker-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFDE47",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFDE45",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFDE4A",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Michael Jackson's Moonwalker (World).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 9,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FFC51E:0001",
+          "desc": "Always Robot",
+          "address": "0xFFC51E"
+        },
+        {
+          "code": "FFC520:0005",
+          "desc": "Always Robot",
+          "address": "0xFFC520"
+        },
+        {
+          "code": "FFDE46:0040",
+          "desc": "Infinite Energy",
+          "address": "0xFFDE46"
+        },
+        {
+          "code": "FFDE44:0002",
+          "desc": "Infinite Lives",
+          "address": "0xFFDE44"
+        },
+        {
+          "code": "FFDFC4:0003",
+          "desc": "Invincibility",
+          "address": "0xFFDFC4"
+        },
+        {
+          "code": "FFDE46:0045",
+          "desc": "Infinite Health P1",
+          "address": "0xFFDE46"
+        },
+        {
+          "code": "FFDE44:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFFDE44"
+        },
+        {
+          "code": "FFDE4E:0000",
+          "desc": "Children Remaining Modifier",
+          "address": "0xFFDE4E"
+        },
+        {
+          "code": "FFFE58:00FF",
+          "desc": "Enabled Cheat Code Level Select",
+          "address": "0xFFFE58"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

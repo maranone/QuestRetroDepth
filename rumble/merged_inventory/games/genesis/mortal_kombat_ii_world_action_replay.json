@@ -1,0 +1,214 @@
+{
+  "system": "genesis",
+  "normalized_title": "mortalkombatii",
+  "display_name": "Mortal Kombat II (World) (Action Replay)",
+  "aliases": [
+    "Mortal Kombat II (World) (Action Replay)",
+    "Mortal Kombat II (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\mortalkombatii_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "enemy_health",
+        "health"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFB623",
+        "0xFFB713"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MortalKombatII-Genesis-v0\\data.json",
+      "field_count": 9,
+      "fields": [
+        {
+          "name": "enemy_health",
+          "address": "0xFFB713",
+          "type": "|u1"
+        },
+        {
+          "name": "enemy_rounds_won",
+          "address": "0xFFEEAB",
+          "type": "|u1"
+        },
+        {
+          "name": "enemy_x_position",
+          "address": "0xFFB7B8",
+          "type": ">u2"
+        },
+        {
+          "name": "enemy_y_position",
+          "address": "0xFFB7D4",
+          "type": ">i2"
+        },
+        {
+          "name": "health",
+          "address": "0xFFB623",
+          "type": "|u1"
+        },
+        {
+          "name": "rounds_won",
+          "address": "0xFFEEA9",
+          "type": "|u1"
+        },
+        {
+          "name": "wins",
+          "address": "0xFFEEA4",
+          "type": "|d1"
+        },
+        {
+          "name": "x_position",
+          "address": "0xFFB6C8",
+          "type": ">u2"
+        },
+        {
+          "name": "y_position",
+          "address": "0xFFB6E4",
+          "type": ">i2"
+        }
+      ],
+      "distinct_address_count": 9
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mortal Kombat II (World).cht",
+      "total_cheat_rows": 105,
+      "raw_entry_count": 93,
+      "distinct_address_count": 61,
+      "sample_raw_entries": [
+        {
+          "code": "FFB6EC:0000",
+          "desc": "P1 Display Modifier",
+          "address": "0xFFB6EC"
+        },
+        {
+          "code": "FFB7DC:0010",
+          "desc": "P2 Display Modifier",
+          "address": "0xFFB7DC"
+        },
+        {
+          "code": "FFB39C:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB39C"
+        },
+        {
+          "code": "FFB39C:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB39C"
+        },
+        {
+          "code": "FFB39E:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB39E"
+        },
+        {
+          "code": "FFB39E:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB39E"
+        },
+        {
+          "code": "FFB3A0:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3A0"
+        },
+        {
+          "code": "FFB3A0:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3A0"
+        },
+        {
+          "code": "FFB3A2:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3A2"
+        },
+        {
+          "code": "FFB3A2:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3A2"
+        },
+        {
+          "code": "FFB3A4:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3A4"
+        },
+        {
+          "code": "FFB3A4:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3A4"
+        },
+        {
+          "code": "FFB3A6:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3A6"
+        },
+        {
+          "code": "FFB3A6:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3A6"
+        },
+        {
+          "code": "FFB3A8:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3A8"
+        },
+        {
+          "code": "FFB3A8:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3A8"
+        },
+        {
+          "code": "FFB3AA:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3AA"
+        },
+        {
+          "code": "FFB3AA:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3AA"
+        },
+        {
+          "code": "FFB3AC:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3AC"
+        },
+        {
+          "code": "FFB3AC:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3AC"
+        },
+        {
+          "code": "FFB3AE:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3AE"
+        },
+        {
+          "code": "FFB3AE:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3AE"
+        },
+        {
+          "code": "FFB3B0:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3B0"
+        },
+        {
+          "code": "FFB3B0:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3B0"
+        },
+        {
+          "code": "FFB3B2:0000",
+          "desc": "Player 1 Color Modifier(s)",
+          "address": "0xFFB3B2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

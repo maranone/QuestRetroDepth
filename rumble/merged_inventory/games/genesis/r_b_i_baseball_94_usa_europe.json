@@ -1,0 +1,60 @@
+{
+  "system": "genesis",
+  "normalized_title": "rbibaseball94",
+  "display_name": "R.B.I. Baseball '94 (USA, Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\R.B.I. Baseball '94 (USA, Europe).cht",
+      "total_cheat_rows": 39,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFD376:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFFD376"
+        },
+        {
+          "code": "FFD378:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFFD378"
+        },
+        {
+          "code": "FFD378:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFFD378"
+        },
+        {
+          "code": "FFCC42:0000",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFCC42"
+        },
+        {
+          "code": "FFCC42:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFCC42"
+        },
+        {
+          "code": "FFD3E4:00FF",
+          "desc": "Catcher Behind Batter Stats",
+          "address": "0xFFD3E4"
+        },
+        {
+          "code": "FFCDEC:00FF",
+          "desc": "Infinite Stamina",
+          "address": "0xFFCDEC"
+        },
+        {
+          "code": "FFD36A:0000",
+          "desc": "Infinite Spitball Warnings - Home Team",
+          "address": "0xFFD36A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

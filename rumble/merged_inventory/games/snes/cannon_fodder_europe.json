@@ -1,0 +1,82 @@
+{
+  "system": "snes",
+  "normalized_title": "cannonfodder",
+  "display_name": "Cannon Fodder (Europe)",
+  "aliases": [
+    "Cannon Fodder (Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\cannonfodder_snes.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CannonFodder-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "enemies_killed",
+          "address": "0x7E091B",
+          "type": "<u2"
+        },
+        {
+          "name": "soldiers_left",
+          "address": "0x7E057F",
+          "type": "|u1"
+        },
+        {
+          "name": "soldiers_on_field",
+          "address": "0x7E0D85",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Cannon Fodder (Europe).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E15C603",
+          "desc": "Infinite Grenades",
+          "address": "0x7E15C6"
+        },
+        {
+          "code": "7E15CC06",
+          "desc": "Infinite Missiles",
+          "address": "0x7E15CC"
+        },
+        {
+          "code": "7E091900",
+          "desc": "Number of Men Away is 0",
+          "address": "0x7E0919"
+        },
+        {
+          "code": "7E05AB0F",
+          "desc": "Leader Becomes General",
+          "address": "0x7E05AB"
+        },
+        {
+          "code": "7EFAE376",
+          "desc": "Skip Mission (Press SELECT Ingame)",
+          "address": "0x7EFAE3"
+        },
+        {
+          "code": "7EFAE498",
+          "desc": "Skip Mission (Press SELECT Ingame)",
+          "address": "0x7EFAE4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "system": "snes",
+  "normalized_title": "rtypeiii",
+  "display_name": "R-Type III (USA, Europe) (Action Replay) (diff)",
+  "aliases": [
+    "R-Type III (USA)",
+    "R-Type III (USA, Europe) (Action Replay) (diff)",
+    "R-Type III (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\rtypeiii_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E03AC",
+        "0x7E03B7"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\RTypeIII-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E03B7",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E03AC",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\R-Type III (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E03B709",
+          "desc": "Infinite Lives",
+          "address": "0x7E03B7"
+        },
+        {
+          "code": "7E1144FE",
+          "desc": "Almost Invincible",
+          "address": "0x7E1144"
+        },
+        {
+          "code": "7E03DCDA",
+          "desc": "No Charge Required For Mega-Blast",
+          "address": "0x7E03DC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

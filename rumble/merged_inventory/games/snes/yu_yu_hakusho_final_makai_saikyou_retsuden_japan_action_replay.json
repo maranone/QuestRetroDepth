@@ -1,0 +1,82 @@
+{
+  "system": "snes",
+  "normalized_title": "yuyuhakushofinalmakaisaikyouretsuden",
+  "display_name": "Yu Yu Hakusho Final - Makai Saikyou Retsuden (Japan) (Action Replay)",
+  "aliases": [
+    "Yu Yu Hakusho Final - Makai Saikyou Retsuden (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Yu Yu Hakusho Final - Makai Saikyou Retsuden (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "7E0A4400",
+          "desc": "Never Get Fatigued",
+          "address": "0x7E0A44"
+        },
+        {
+          "code": "7E0A3C50",
+          "desc": "Infinite Power",
+          "address": "0x7E0A3C"
+        },
+        {
+          "code": "7E0F3800",
+          "desc": "1 Hit Kill / Opponent Health",
+          "address": "0x7E0F38"
+        },
+        {
+          "code": "7E0F3C00",
+          "desc": "Opponent has no power",
+          "address": "0x7E0F3C"
+        },
+        {
+          "code": "7E0A0600",
+          "desc": "Character Modifier",
+          "address": "0x7E0A06"
+        },
+        {
+          "code": "7E0F0600",
+          "desc": "Opponent Modifier",
+          "address": "0x7E0F06"
+        },
+        {
+          "code": "7E148000",
+          "desc": "Background Modifier",
+          "address": "0x7E1480"
+        },
+        {
+          "code": "7E0E0E00",
+          "desc": "Enable Yakumo",
+          "address": "0x7E0E0E"
+        },
+        {
+          "code": "7E0F441C",
+          "desc": "Opponent Fatigued Easily",
+          "address": "0x7E0F44"
+        },
+        {
+          "code": "7E149503",
+          "desc": "1 Round to Win VS. Mode",
+          "address": "0x7E1495"
+        },
+        {
+          "code": "7E0A38FF",
+          "desc": "Infinite Energy",
+          "address": "0x7E0A38"
+        },
+        {
+          "code": "7E075209",
+          "desc": "Infinite Continues",
+          "address": "0x7E0752"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

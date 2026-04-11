@@ -1,0 +1,55 @@
+{
+  "system": "snes",
+  "normalized_title": "superbattletank",
+  "display_name": "Super Battletank (Japan) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Battletank (Japan) (Action Replay).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E006700",
+          "desc": "Players Tank Damage Is Cleared When The Action Replay Is Activated (Leave The Switch On To Take No Damage!)",
+          "address": "0x7E0067"
+        },
+        {
+          "code": "7E002501",
+          "desc": "Level 1",
+          "address": "0x7E0025"
+        },
+        {
+          "code": "7E049E42",
+          "desc": "120 MM Cannon",
+          "address": "0x7E049E"
+        },
+        {
+          "code": "7E04A001",
+          "desc": "Laser Missile",
+          "address": "0x7E04A0"
+        },
+        {
+          "code": "7E04A101",
+          "desc": "Smoke",
+          "address": "0x7E04A1"
+        },
+        {
+          "code": "7E04A296",
+          "desc": "Machine Gun",
+          "address": "0x7E04A2"
+        },
+        {
+          "code": "7E05C4FF",
+          "desc": "Fuel",
+          "address": "0x7E05C4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

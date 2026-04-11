@@ -1,0 +1,70 @@
+{
+  "system": "snes",
+  "normalized_title": "starfoxsuperweekend",
+  "display_name": "Star Fox - Super Weekend (USA) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Star Fox - Super Weekend (USA) (Action Replay).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 10,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E15ADFF",
+          "desc": "Infinite Missiles",
+          "address": "0x7E15AD"
+        },
+        {
+          "code": "7E039628",
+          "desc": "Infinite Energy",
+          "address": "0x7E0396"
+        },
+        {
+          "code": "7E15AF04",
+          "desc": "Infinite Missiles (Alternate Code)",
+          "address": "0x7E15AF"
+        },
+        {
+          "code": "7EF0DA09",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x7EF0DA"
+        },
+        {
+          "code": "7EF0DB09",
+          "desc": "Infinite Time (Seconds - Ones Digit)",
+          "address": "0x7EF0DB"
+        },
+        {
+          "code": "7EF0DC09",
+          "desc": "Infinite Time (Seconds - Tens Digit)",
+          "address": "0x7EF0DC"
+        },
+        {
+          "code": "7E14D901",
+          "desc": "Have Double Lasers",
+          "address": "0x7E14D9"
+        },
+        {
+          "code": "7E14D902",
+          "desc": "Have See-Through Ship",
+          "address": "0x7E14D9"
+        },
+        {
+          "code": "7E14D903",
+          "desc": "Have Double Lasers & Impervious To Enemy Fire Ship",
+          "address": "0x7E14D9"
+        },
+        {
+          "code": "7E0347FE",
+          "desc": "Freezer Level Scrolling",
+          "address": "0x7E0347"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

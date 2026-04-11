@@ -1,0 +1,84 @@
+{
+  "system": "genesis",
+  "normalized_title": "fzsenkiaxisfinalzone",
+  "display_name": "FZ Senki Axis - Final Zone (Japan, USA) (Action Replay)",
+  "aliases": [
+    "FZ Senki Axis - Final Zone (Japan, USA) (Action Replay)",
+    "FZ Senki Axis _ Final Zone (Japan, USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\fzsenkiaxisfinalzone_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFE431",
+        "0xFFE6C0"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FZSenkiAxisFinalZone-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFE431",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFE6C0",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\FZ Senki Axis _ Final Zone (Japan, USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFE430:000E",
+          "desc": "Infinite Energy",
+          "address": "0xFFE430"
+        },
+        {
+          "code": "FFE3C8:0063",
+          "desc": "Infinite Ammo",
+          "address": "0xFFE3C8"
+        },
+        {
+          "code": "FFE430:000F",
+          "desc": "Infinite Energy",
+          "address": "0xFFE430"
+        },
+        {
+          "code": "FF9EEC:0000",
+          "desc": "No Enemies",
+          "address": "0xFF9EEC"
+        },
+        {
+          "code": "FFFFD6:00FF",
+          "desc": "Enable Stage Select in Config Menu",
+          "address": "0xFFFFD6"
+        },
+        {
+          "code": "FFFFD4:00FF",
+          "desc": "Enabled Cheat Code Infinite Health. See Note",
+          "address": "0xFFFFD4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

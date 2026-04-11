@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "greatcircusmysterystarringmickeyminnie",
+  "display_name": "Great Circus Mystery Starring Mickey _ Minnie, The (USA) (Action Replay)",
+  "aliases": [
+    "Great Circus Mystery Starring Mickey _ Minnie, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Great Circus Mystery Starring Mickey _ Minnie, The (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF81DE:0003",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF81DE"
+        },
+        {
+          "code": "FF8272:000A",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF8272"
+        },
+        {
+          "code": "FF835E:0003",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF835E"
+        },
+        {
+          "code": "FF83F2:000A",
+          "desc": "Infinite Lives P2",
+          "address": "0xFF83F2"
+        },
+        {
+          "code": "FF825A:0010",
+          "desc": "1 Hit and Invincible",
+          "address": "0xFF825A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

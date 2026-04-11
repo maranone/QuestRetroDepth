@@ -1,0 +1,55 @@
+{
+  "system": "genesis",
+  "normalized_title": "timetrax",
+  "display_name": "Time Trax (USA) (Proto)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Time Trax (USA) (Proto).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF0BD4:00FF",
+          "desc": "Enable Cheat Menu In Option",
+          "address": "0xFF0BD4"
+        },
+        {
+          "code": "FF374E:0010",
+          "desc": "Invincible",
+          "address": "0xFF374E"
+        },
+        {
+          "code": "FF4EFC:0005",
+          "desc": "Infinite Health",
+          "address": "0xFF4EFC"
+        },
+        {
+          "code": "FF4F02:0005",
+          "desc": "Infinite Lives",
+          "address": "0xFF4F02"
+        },
+        {
+          "code": "FF108A:0000",
+          "desc": "1Hit Kill Enemies And  Bosses",
+          "address": "0xFF108A"
+        },
+        {
+          "code": "FF15B2:00FF",
+          "desc": "1 Kill And One Shot Special Obstacles",
+          "address": "0xFF15B2"
+        },
+        {
+          "code": "FF11F2:00FF",
+          "desc": "1 Kill And One Shot Special Obstacles",
+          "address": "0xFF11F2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

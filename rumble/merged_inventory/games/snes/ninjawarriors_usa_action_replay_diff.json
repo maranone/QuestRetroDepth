@@ -1,0 +1,127 @@
+{
+  "system": "snes",
+  "normalized_title": "ninjawarriors",
+  "display_name": "Ninjawarriors (USA) (Action Replay) (diff)",
+  "aliases": [
+    "Ninja Warriors The (Rumbles)",
+    "Ninjawarriors (USA) (Action Replay) (diff)",
+    "Ninjawarriors (USA) (Action Replay)",
+    "Ninjawarriors (USA) (Game Genie)",
+    "Ninjawarriors (USA)",
+    "The Ninja Warriors"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ninjawarriors (USA).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 19,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "7E18B2C8",
+          "desc": "Infinite Health",
+          "address": "0x7E18B2"
+        },
+        {
+          "code": "7E191202",
+          "desc": "Invincible",
+          "address": "0x7E1912"
+        },
+        {
+          "code": "7E0823FF",
+          "desc": "Infinite Blaster Energy",
+          "address": "0x7E0823"
+        },
+        {
+          "code": "7E083602",
+          "desc": "Always Do Nunchaku Attack [Ninja]",
+          "address": "0x7E0836"
+        },
+        {
+          "code": "7E083604",
+          "desc": "Always Do Sword Slash [Kunoichi] / Always Do Claw [Other Person]",
+          "address": "0x7E0836"
+        },
+        {
+          "code": "7E000007",
+          "desc": "Activate Hidden Debug &quot;-TEST-&quot; Menu",
+          "address": "0x7E0000"
+        },
+        {
+          "code": "7E080201",
+          "desc": "Stage Modifier",
+          "address": "0x7E0802"
+        },
+        {
+          "code": "7E082001",
+          "desc": "Character Modifier",
+          "address": "0x7E0820"
+        },
+        {
+          "code": "7E019809",
+          "desc": "Infinite Time (Thousands Digit)",
+          "address": "0x7E0198"
+        },
+        {
+          "code": "7E019A09",
+          "desc": "Infinite Time (Hundreds Digit)",
+          "address": "0x7E019A"
+        },
+        {
+          "code": "7E019C09",
+          "desc": "Infinite Time (Tens Digit)",
+          "address": "0x7E019C"
+        },
+        {
+          "code": "7E019E09",
+          "desc": "Infinite Time (Tens Digit)",
+          "address": "0x7E019E"
+        },
+        {
+          "code": "7E18A200",
+          "desc": "1 Hit Kills Most Multi-Hit Enemies And Bosses",
+          "address": "0x7E18A2"
+        },
+        {
+          "code": "7E01A000",
+          "desc": "1 Hit Kills Most Multi-Hit Enemies And Bosses",
+          "address": "0x7E01A0"
+        },
+        {
+          "code": "7E18AA00",
+          "desc": "1 Hit Kills Most Multi-Hit Enemies And Bosses",
+          "address": "0x7E18AA"
+        },
+        {
+          "code": "7E18A600",
+          "desc": "1 Hit Kills Most Multi-Hit Enemies And Bosses",
+          "address": "0x7E18A6"
+        },
+        {
+          "code": "7E18AE00",
+          "desc": "1 Hit Kills Most Multi-Hit Enemies And Bosses",
+          "address": "0x7E18AE"
+        },
+        {
+          "code": "7E149030",
+          "desc": "Invincibility",
+          "address": "0x7E1490"
+        },
+        {
+          "code": "7E019404",
+          "desc": "Infinite Blaster Energy",
+          "address": "0x7E0194"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 1,
+      "mk3_label": "NINJA WARRIORS"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

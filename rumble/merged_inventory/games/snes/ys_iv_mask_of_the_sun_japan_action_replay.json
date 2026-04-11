@@ -1,0 +1,87 @@
+{
+  "system": "snes",
+  "normalized_title": "ysivmaskofsun",
+  "display_name": "Ys IV - Mask of the Sun (Japan) (Action Replay)",
+  "aliases": [
+    "Ys IV - Mask of the Sun (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ys IV - Mask of the Sun (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "7E097BFF",
+          "desc": "Max Exp",
+          "address": "0x7E097B"
+        },
+        {
+          "code": "7E097CFF",
+          "desc": "Max Exp",
+          "address": "0x7E097C"
+        },
+        {
+          "code": "7E0973FF",
+          "desc": "Infinite HP",
+          "address": "0x7E0973"
+        },
+        {
+          "code": "7E0983FF",
+          "desc": "Infinite GP",
+          "address": "0x7E0983"
+        },
+        {
+          "code": "7E0984FF",
+          "desc": "Infinite GP",
+          "address": "0x7E0984"
+        },
+        {
+          "code": "7E0971FF",
+          "desc": "Max HP",
+          "address": "0x7E0971"
+        },
+        {
+          "code": "7E0979FF",
+          "desc": "Infinite/Max MP",
+          "address": "0x7E0979"
+        },
+        {
+          "code": "7E0977FF",
+          "desc": "Infinite/Max MP",
+          "address": "0x7E0977"
+        },
+        {
+          "code": "7E0987FF",
+          "desc": "255 Str",
+          "address": "0x7E0987"
+        },
+        {
+          "code": "7E0989FF",
+          "desc": "255 Def",
+          "address": "0x7E0989"
+        },
+        {
+          "code": "7E0B51FF",
+          "desc": "Start W/ All Swords",
+          "address": "0x7E0B51"
+        },
+        {
+          "code": "7E0B53FF",
+          "desc": "Start W/All Shields",
+          "address": "0x7E0B53"
+        },
+        {
+          "code": "7E0B54FF",
+          "desc": "Start W/All Armor",
+          "address": "0x7E0B54"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

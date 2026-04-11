@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "capcomssoccershootout",
+  "display_name": "Capcom's Soccer Shootout (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Capcom's Soccer Shootout (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E18A200",
+          "desc": "Seconds Modifier",
+          "address": "0x7E18A2"
+        },
+        {
+          "code": "7E18A300",
+          "desc": "Minutes Modifier",
+          "address": "0x7E18A3"
+        },
+        {
+          "code": "7E06CE00",
+          "desc": "1 Player Score Modifier",
+          "address": "0x7E06CE"
+        },
+        {
+          "code": "7E06CF00",
+          "desc": "2 Player Score Modifier",
+          "address": "0x7E06CF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

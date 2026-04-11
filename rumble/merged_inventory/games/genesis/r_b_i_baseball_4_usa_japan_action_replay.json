@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "rbibaseball4",
+  "display_name": "R.B.I. Baseball 4 (USA, Japan) (Action Replay)",
+  "aliases": [
+    "R.B.I. Baseball 4 (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\R.B.I. Baseball 4 (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF0B9A:XX",
+          "desc": "Outs Modifier",
+          "address": "0xFF0B9A"
+        },
+        {
+          "code": "FF0B99:XX",
+          "desc": "Strikes Modifier",
+          "address": "0xFF0B99"
+        },
+        {
+          "code": "FF0B9B:XX",
+          "desc": "Outs Modifier",
+          "address": "0xFF0B9B"
+        },
+        {
+          "code": "FF05CA:XX",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFF05CA"
+        },
+        {
+          "code": "FF05CB:XX",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFF05CB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

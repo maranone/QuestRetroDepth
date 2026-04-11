@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "arnoldpalmertournamentgolf",
+  "display_name": "Arnold Palmer Tournament Golf (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Arnold Palmer Tournament Golf (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Arnold Palmer Tournament Golf (USA, Europe).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFF24A:0000",
+          "desc": "P1 Always on 1st Stroke",
+          "address": "0xFFF24A"
+        },
+        {
+          "code": "FFF265:0000",
+          "desc": "P1 Always on 1st Stroke",
+          "address": "0xFFF265"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

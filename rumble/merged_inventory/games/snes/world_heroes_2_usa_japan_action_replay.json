@@ -1,0 +1,53 @@
+{
+  "system": "snes",
+  "normalized_title": "worldheroes2",
+  "display_name": "World Heroes 2 (USA, Japan) (Action Replay)",
+  "aliases": [
+    "World Heroes 2 (USA)",
+    "World Heroes 2 (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\World Heroes 2 (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E057480",
+          "desc": "Infinite Health Player 1",
+          "address": "0x7E0574"
+        },
+        {
+          "code": "7E057480",
+          "desc": "Infinite Health P1",
+          "address": "0x7E0574"
+        },
+        {
+          "code": "7E052C99",
+          "desc": "Infinite Time",
+          "address": "0x7E052C"
+        },
+        {
+          "code": "7E057600",
+          "desc": "No Health Player 2",
+          "address": "0x7E0576"
+        },
+        {
+          "code": "7E057002",
+          "desc": "P1 Automatically Wins The Match With One Win",
+          "address": "0x7E0570"
+        },
+        {
+          "code": "7E057C02",
+          "desc": "Gives Each Player A Win",
+          "address": "0x7E057C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

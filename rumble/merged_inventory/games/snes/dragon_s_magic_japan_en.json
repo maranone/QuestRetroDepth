@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "dragonsmagic",
+  "display_name": "Dragon's Magic (Japan) (En)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Dragon's Magic (Japan) (En).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E102A02",
+          "desc": "Infinite Lives",
+          "address": "0x7E102A"
+        },
+        {
+          "code": "7E103803",
+          "desc": "Infinite Energy",
+          "address": "0x7E1038"
+        },
+        {
+          "code": "7E103509",
+          "desc": "Infinite Time",
+          "address": "0x7E1035"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

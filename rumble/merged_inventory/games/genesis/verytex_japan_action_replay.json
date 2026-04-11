@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "verytex",
+  "display_name": "Verytex (Japan) (Action Replay)",
+  "aliases": [
+    "Verytex (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Verytex (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF08B0:0063",
+          "desc": "Infinite Lives",
+          "address": "0xFF08B0"
+        },
+        {
+          "code": "FF0A46:0063",
+          "desc": "Infinite Bombs",
+          "address": "0xFF0A46"
+        },
+        {
+          "code": "FF0A3E:0001",
+          "desc": "Have Spread Shot",
+          "address": "0xFF0A3E"
+        },
+        {
+          "code": "FF08AC:0003",
+          "desc": "Have Shield",
+          "address": "0xFF08AC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

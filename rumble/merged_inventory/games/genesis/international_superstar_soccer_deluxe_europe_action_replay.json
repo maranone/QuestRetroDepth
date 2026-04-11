@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "internationalsuperstarsoccerdeluxe",
+  "display_name": "International Superstar Soccer Deluxe (Europe) (Action Replay)",
+  "aliases": [
+    "International Superstar Soccer Deluxe (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\International Superstar Soccer Deluxe (Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF17CE:0009",
+          "desc": "Infinite Time (Seconds - Ones Digit)",
+          "address": "0xFF17CE"
+        },
+        {
+          "code": "FF17CC:0009",
+          "desc": "Infinite Time (Seconds - Tens Digit)",
+          "address": "0xFF17CC"
+        },
+        {
+          "code": "FF17CC:0009",
+          "desc": "Infinite Time (Minutes Digit)",
+          "address": "0xFF17CC"
+        },
+        {
+          "code": "FF166C:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFF166C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

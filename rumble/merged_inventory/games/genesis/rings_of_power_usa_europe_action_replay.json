@@ -1,0 +1,37 @@
+{
+  "system": "genesis",
+  "normalized_title": "ringsofpower",
+  "display_name": "Rings of Power (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Rings of Power (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Rings of Power (USA, Europe).cht",
+      "total_cheat_rows": 28,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF02DE:00FF",
+          "desc": "Have Lots of Money",
+          "address": "0xFF02DE"
+        },
+        {
+          "code": "FF0304:0020",
+          "desc": "Infinite Health",
+          "address": "0xFF0304"
+        },
+        {
+          "code": "FFC40E:00FF",
+          "desc": "Max Experience (After Battle)",
+          "address": "0xFFC40E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

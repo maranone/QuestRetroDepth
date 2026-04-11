@@ -1,0 +1,44 @@
+{
+  "system": "genesis",
+  "normalized_title": "beavisandbutthead",
+  "display_name": "Beavis and Butt-Head (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Beavis and Butt-Head (USA) (GameGenie)",
+    "Beavis and Butt-Head (USA)",
+    "Beavis and Butt-Head (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Beavis and Butt-Head (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFAEEA:0001",
+          "desc": "Always Control Beavis",
+          "address": "0xFFAEEA"
+        },
+        {
+          "code": "FFAEEA:0020",
+          "desc": "Infinite Health Beavis",
+          "address": "0xFFAEEA"
+        },
+        {
+          "code": "FFAEEC:0020",
+          "desc": "Infinite Health Butthead",
+          "address": "0xFFAEEC"
+        },
+        {
+          "code": "FFAEEE:00FF",
+          "desc": "Infinite Money",
+          "address": "0xFFAEEE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

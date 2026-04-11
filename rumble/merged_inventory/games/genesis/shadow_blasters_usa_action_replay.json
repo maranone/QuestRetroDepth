@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "shadowblasters",
+  "display_name": "Shadow Blasters (USA) (Action Replay)",
+  "aliases": [
+    "Shadow Blasters (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Shadow Blasters (USA).cht",
+      "total_cheat_rows": 55,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF0BFE:0009",
+          "desc": "Infinite Health",
+          "address": "0xFF0BFE"
+        },
+        {
+          "code": "FF0CAC:0063",
+          "desc": "Infinite Charge-Up Attack (A Button)",
+          "address": "0xFF0CAC"
+        },
+        {
+          "code": "FF0CC2:0009",
+          "desc": "Infinite Special Attack (C Button)",
+          "address": "0xFF0CC2"
+        },
+        {
+          "code": "FF10FF:0019",
+          "desc": "Infinite Energy Player In Final Battle",
+          "address": "0xFF10FF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

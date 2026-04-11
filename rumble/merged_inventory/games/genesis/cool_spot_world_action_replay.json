@@ -1,0 +1,106 @@
+{
+  "system": "genesis",
+  "normalized_title": "coolspot",
+  "display_name": "Cool Spot (World) (Action Replay)",
+  "aliases": [
+    "Cool Spot (Europe)",
+    "Cool Spot (Japan, Korea)",
+    "Cool Spot (USA) (Beta)",
+    "Cool Spot (USA)",
+    "Cool Spot (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\coolspot_genesis.json",
+      "trigger_count": 6,
+      "field_names": [
+        "gameover",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xFF078C",
+        "0xFFF4D8",
+        "0xFFF57C",
+        "0xFFF5B1"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CoolSpot-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFFF5B1",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFFF57C",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF078C",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF4D8",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Cool Spot (World) (Action Replay).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF0770:FF",
+          "desc": "Invincibility Cheat Enabled",
+          "address": "0xFF0770"
+        },
+        {
+          "code": "FF0775:FF",
+          "desc": "Freezability Cheat Enabled",
+          "address": "0xFF0775"
+        },
+        {
+          "code": "FFF578:FF",
+          "desc": "Instantly Pass Level While Code Is Enabled",
+          "address": "0xFFF578"
+        },
+        {
+          "code": "FF0714:31",
+          "desc": "Infinite Time",
+          "address": "0xFF0714"
+        },
+        {
+          "code": "FF07A2:00",
+          "desc": "Bubbles Rise Faster",
+          "address": "0xFF07A2"
+        },
+        {
+          "code": "FF07AB:8E",
+          "desc": "Semi-Moon Jump/Walk In Air",
+          "address": "0xFF07AB"
+        },
+        {
+          "code": "FFF57F:53",
+          "desc": "Enemies Can't Touch You",
+          "address": "0xFFF57F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

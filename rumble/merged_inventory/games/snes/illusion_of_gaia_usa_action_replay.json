@@ -1,0 +1,154 @@
+{
+  "system": "snes",
+  "normalized_title": "illusionofgaia",
+  "display_name": "Illusion of Gaia (USA) (Action Replay)",
+  "aliases": [
+    "Illusion of Gaia (USA) (Game Genie)",
+    "Illusion of Gaia (USA)",
+    "Illusion of Gaia"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Illusion of Gaia (USA).cht",
+      "total_cheat_rows": 93,
+      "raw_entry_count": 55,
+      "distinct_address_count": 42,
+      "sample_raw_entries": [
+        {
+          "code": "7E09AE00",
+          "desc": "Can Always Attack",
+          "address": "0x7E09AE"
+        },
+        {
+          "code": "7E0A1FBF",
+          "desc": "Have All Form Statues",
+          "address": "0x7E0A1F"
+        },
+        {
+          "code": "7E0AA2FF",
+          "desc": "Have All Dark Powers",
+          "address": "0x7E0AA2"
+        },
+        {
+          "code": "7E0AB050",
+          "desc": "Gem Holds 80 Gems",
+          "address": "0x7E0AB0"
+        },
+        {
+          "code": "7E0ACAE7",
+          "desc": "Have 999 Maximum HP",
+          "address": "0x7E0ACA"
+        },
+        {
+          "code": "7E0ACB03",
+          "desc": "Have 999 Maximum HP",
+          "address": "0x7E0ACB"
+        },
+        {
+          "code": "7E0ACEE7",
+          "desc": "Infinite 999 HP",
+          "address": "0x7E0ACE"
+        },
+        {
+          "code": "7E0ACDE7",
+          "desc": "Infinite 999 HP",
+          "address": "0x7E0ACD"
+        },
+        {
+          "code": "7E0ADEC8",
+          "desc": "Have 200 Strength",
+          "address": "0x7E0ADE"
+        },
+        {
+          "code": "7E0ADE64",
+          "desc": "Have 100 Strength",
+          "address": "0x7E0ADE"
+        },
+        {
+          "code": "7E0AD6E7",
+          "desc": "Infinite 99 DP &amp; 9 S",
+          "address": "0x7E0AD6"
+        },
+        {
+          "code": "7E0AD709",
+          "desc": "Infinite 99 DP &amp; 9 S",
+          "address": "0x7E0AD7"
+        },
+        {
+          "code": "7E0ADC00",
+          "desc": "Defense Modifier",
+          "address": "0x7E0ADC"
+        },
+        {
+          "code": "7E0AD400",
+          "desc": "Normal Form",
+          "address": "0x7E0AD4"
+        },
+        {
+          "code": "7E0AD401",
+          "desc": "Knight Form",
+          "address": "0x7E0AD4"
+        },
+        {
+          "code": "7E0AD402",
+          "desc": "Flaming Form",
+          "address": "0x7E0AD4"
+        },
+        {
+          "code": "7E0AAC00",
+          "desc": "Snakes Hit Modifier",
+          "address": "0x7E0AAC"
+        },
+        {
+          "code": "7E0AB401",
+          "desc": "Item 1",
+          "address": "0x7E0AB4"
+        },
+        {
+          "code": "7E0AB500",
+          "desc": "Item 2",
+          "address": "0x7E0AB5"
+        },
+        {
+          "code": "7E0AB600",
+          "desc": "Item 3",
+          "address": "0x7E0AB6"
+        },
+        {
+          "code": "7E0AB700",
+          "desc": "Item 4",
+          "address": "0x7E0AB7"
+        },
+        {
+          "code": "7E0AB800",
+          "desc": "Item 5",
+          "address": "0x7E0AB8"
+        },
+        {
+          "code": "7E0AB900",
+          "desc": "Item 6",
+          "address": "0x7E0AB9"
+        },
+        {
+          "code": "7E0ABA00",
+          "desc": "Item 7",
+          "address": "0x7E0ABA"
+        },
+        {
+          "code": "7E0ABB00",
+          "desc": "Item 8",
+          "address": "0x7E0ABB"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 11,
+      "mk3_label": "ILLUSION OF GAIA"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

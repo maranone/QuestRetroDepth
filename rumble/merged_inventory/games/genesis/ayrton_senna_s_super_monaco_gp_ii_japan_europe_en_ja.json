@@ -1,0 +1,54 @@
+{
+  "system": "genesis",
+  "normalized_title": "ayrtonsennassupermonacogpii",
+  "display_name": "Ayrton Senna's Super Monaco GP II (Japan, Europe) (En,Ja)",
+  "aliases": [
+    "Ayrton Senna's Super Monaco GP II (Japan, Europe) (En,Ja)",
+    "Ayrton Senna's Super Monaco GP II (USA) (En,Ja)",
+    "Ayrton Senna's Super Monaco GP II (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\ayrtonsennassupermonacogpii_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AyrtonSennasSuperMonacoGPII-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "distance",
+          "address": "0xFFFCC0",
+          "type": ">u2"
+        },
+        {
+          "name": "time_total",
+          "address": "0xFFFD01",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ayrton Senna's Super Monaco GP II (World) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFD9B3:0094",
+          "desc": "Can't Crash",
+          "address": "0xFFD9B3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

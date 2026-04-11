@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "metalcombatfalconsrevenge",
+  "display_name": "Metal Combat - Falcon's Revenge (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Metal Combat - Falcon's Revenge (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E19687F",
+          "desc": "Infinite Energy",
+          "address": "0x7E1968"
+        },
+        {
+          "code": "7E03C500",
+          "desc": "No Time",
+          "address": "0x7E03C5"
+        },
+        {
+          "code": "7E03C700",
+          "desc": "No Time",
+          "address": "0x7E03C7"
+        },
+        {
+          "code": "7E03FE08",
+          "desc": "Infinite Bombs",
+          "address": "0x7E03FE"
+        },
+        {
+          "code": "7E1B1396",
+          "desc": "Infinite Energy Bolt Charge",
+          "address": "0x7E1B13"
+        },
+        {
+          "code": "7E1B1703",
+          "desc": "Infinite &quot;Treble Energy Bolts&quot;",
+          "address": "0x7E1B17"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

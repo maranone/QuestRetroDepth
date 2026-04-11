@@ -1,0 +1,45 @@
+{
+  "system": "genesis",
+  "normalized_title": "almichaelsannounceshardballiii",
+  "display_name": "Al Michaels Announces HardBall III (USA, Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Al Michaels Announces HardBall III (USA, Europe).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF00B6:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFF00B6"
+        },
+        {
+          "code": "FF00B8:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFF00B8"
+        },
+        {
+          "code": "FF00B8:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFF00B8"
+        },
+        {
+          "code": "FF00B0:0000",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFF00B0"
+        },
+        {
+          "code": "FF00B2:0000",
+          "desc": "Team 2 Runs Modifier",
+          "address": "0xFF00B2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

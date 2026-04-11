@@ -1,0 +1,48 @@
+{
+  "system": "snes",
+  "normalized_title": "cameltry",
+  "display_name": "Cameltry",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\cameltry_snes.json",
+      "trigger_count": 2,
+      "field_names": [
+        "level",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E083F",
+        "0x7E8D70"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Cameltry-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "level",
+          "address": "0x7E8D70",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E083F",
+          "type": "<d3"
+        },
+        {
+          "name": "time",
+          "address": "0x7E0825",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 3
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

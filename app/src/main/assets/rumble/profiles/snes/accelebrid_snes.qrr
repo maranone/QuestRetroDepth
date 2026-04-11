@@ -1,0 +1,7 @@
+game_name=Accele Brid (Japan) (Action Replay)
+game_key=AcceleBrid-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_381f	damage_taken	0x7E381F	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_381f	death	0x7E381F	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_382d	score	0x7E382D	3	bcd	little	prev < curr	0.8	1	right:0.350:60

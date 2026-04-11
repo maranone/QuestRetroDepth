@@ -1,0 +1,39 @@
+{
+  "system": "snes",
+  "normalized_title": "firepower2000",
+  "display_name": "Firepower 2000 (USA) (Action Replay)",
+  "aliases": [
+    "Firepower 2000 (USA) (Action Replay)",
+    "Firepower 2000 (USA) (Game Genie)",
+    "Firepower 2000 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Firepower 2000 (USA).cht",
+      "total_cheat_rows": 47,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E612AAE",
+          "desc": "Invincibility Jeep",
+          "address": "0x7E612A"
+        },
+        {
+          "code": "7E612CAE",
+          "desc": "Invincibility Helicopter",
+          "address": "0x7E612C"
+        },
+        {
+          "code": "7E609A09",
+          "desc": "Infinite Lives",
+          "address": "0x7E609A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "fifasoccer95",
+  "display_name": "FIFA Soccer 95 (USA, Europe, Korea) (Action Replay)",
+  "aliases": [
+    "FIFA Soccer 95 (USA, Europe, Korea) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\FIFA Soccer 95 (USA, Europe, Korea) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFFA51:XX",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFFA51"
+        },
+        {
+          "code": "FFFA52:XX",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFFA52"
+        },
+        {
+          "code": "FFE2DA:FF",
+          "desc": "Unlock All Cheats",
+          "address": "0xFFE2DA"
+        },
+        {
+          "code": "FFE2DB:FF",
+          "desc": "Unlock All Cheats",
+          "address": "0xFFE2DB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "system": "genesis",
+  "normalized_title": "aeroacrobat",
+  "display_name": "Aero the Acro-Bat (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Aero the Acro-Bat (USA)",
+    "Aero the Acro-Bat (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Aero the Acro-Bat (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF00D0:09",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFF00D0"
+        },
+        {
+          "code": "FF00D1:55",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFF00D1"
+        },
+        {
+          "code": "FF01AB:XX",
+          "desc": "Yellow Star Modifier",
+          "address": "0xFF01AB"
+        },
+        {
+          "code": "FF01AD:XX",
+          "desc": "White Star Modifier",
+          "address": "0xFF01AD"
+        },
+        {
+          "code": "FF00EC:08",
+          "desc": "Go To End of Level",
+          "address": "0xFF00EC"
+        },
+        {
+          "code": "FF010F:02",
+          "desc": "Aero Walks Funny",
+          "address": "0xFF010F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "micromachines",
+  "display_name": "Micro Machines (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Micro Machines (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E030900",
+          "desc": "Race Modifier",
+          "address": "0x7E0309"
+        },
+        {
+          "code": "7E032309",
+          "desc": "Infinite Lives",
+          "address": "0x7E0323"
+        },
+        {
+          "code": "7E0B2B01",
+          "desc": "P1 Always on Last Lap",
+          "address": "0x7E0B2B"
+        },
+        {
+          "code": "7E0D9506",
+          "desc": "Infinite Time - Ruff Trux Time Trial",
+          "address": "0x7E0D95"
+        },
+        {
+          "code": "7E0D9606",
+          "desc": "Infinite Time - Ruff Trux Time Trial",
+          "address": "0x7E0D96"
+        },
+        {
+          "code": "7E0D9701",
+          "desc": "Infinite Time - Ruff Trux Time Trial",
+          "address": "0x7E0D97"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

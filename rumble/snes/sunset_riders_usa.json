@@ -1,0 +1,24 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Sunset Riders (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Sunset Riders (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "3C32-3DDF",
+      "desc": "Infinite Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDE3-3DAD",
+      "desc": "Once You're Hit, You'll Be Invincible For The Rest of The Level",
+      "kind": "game_genie"
+    }
+  ]
+}

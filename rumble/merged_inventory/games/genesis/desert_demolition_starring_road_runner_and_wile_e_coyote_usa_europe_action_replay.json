@@ -1,0 +1,77 @@
+{
+  "system": "genesis",
+  "normalized_title": "desertdemolitionstarringroadrunnerandwileecoyote",
+  "display_name": "Desert Demolition Starring Road Runner and Wile E. Coyote (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Desert Demolition Starring Road Runner and Wile E. Coyote (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Desert Demolition Starring Road Runner and Wile E. Coyote (USA, Europe).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 11,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FF0016:0009",
+          "desc": "Infinte Lives",
+          "address": "0xFF0016"
+        },
+        {
+          "code": "FF0016:0020",
+          "desc": "Infinte Energy",
+          "address": "0xFF0016"
+        },
+        {
+          "code": "FFBD80:0009",
+          "desc": "Infinte Time",
+          "address": "0xFFBD80"
+        },
+        {
+          "code": "FF9098:0030",
+          "desc": "Infinite Health",
+          "address": "0xFF9098"
+        },
+        {
+          "code": "FF0016:0030",
+          "desc": "Infinite Health Coyote (Emu)",
+          "address": "0xFF0016"
+        },
+        {
+          "code": "FFBD82:0021",
+          "desc": "Infinite Time",
+          "address": "0xFFBD82"
+        },
+        {
+          "code": "FFBDCA:0009",
+          "desc": "Have 999 White Acme Stamps",
+          "address": "0xFFBDCA"
+        },
+        {
+          "code": "FFBDCA:0009",
+          "desc": "Have 999 White Acme Stamps",
+          "address": "0xFFBDCA"
+        },
+        {
+          "code": "FFBDCC:0009",
+          "desc": "Have 999 White Acme Stamps",
+          "address": "0xFFBDCC"
+        },
+        {
+          "code": "FF0018:0001",
+          "desc": "Infinite Lightning Bolt Speed Items",
+          "address": "0xFF0018"
+        },
+        {
+          "code": "FFF7F7:0006",
+          "desc": "Press A on Title Screen for Debug Menu",
+          "address": "0xFFF7F7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

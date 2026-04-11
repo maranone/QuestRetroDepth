@@ -1,0 +1,97 @@
+{
+  "system": "genesis",
+  "normalized_title": "sorcererskingdom",
+  "display_name": "Sorcerer's Kingdom (USA) (Action Replay)",
+  "aliases": [
+    "Sorcerer's Kingdom (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sorcerer's Kingdom (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "FF04BA:270F",
+          "desc": "Infinite Health",
+          "address": "0xFF04BA"
+        },
+        {
+          "code": "FF04A8:270F",
+          "desc": "Max Health",
+          "address": "0xFF04A8"
+        },
+        {
+          "code": "FF04B6:270F",
+          "desc": "Max Health",
+          "address": "0xFF04B6"
+        },
+        {
+          "code": "FF0490:FFFF",
+          "desc": "Infinite Money",
+          "address": "0xFF0490"
+        },
+        {
+          "code": "FF4578:03E7",
+          "desc": "Max Defense",
+          "address": "0xFF4578"
+        },
+        {
+          "code": "FF4572:0063",
+          "desc": "Max Range",
+          "address": "0xFF4572"
+        },
+        {
+          "code": "FF0D90:0101",
+          "desc": "Slot 9 Modifier",
+          "address": "0xFF0D90"
+        },
+        {
+          "code": "FF0D92:0001",
+          "desc": "Slot 10 Modifier",
+          "address": "0xFF0D92"
+        },
+        {
+          "code": "FF0D94:0001",
+          "desc": "Slot 11 Modifier",
+          "address": "0xFF0D94"
+        },
+        {
+          "code": "FF0D96:0001",
+          "desc": "Slot 12 Modifier",
+          "address": "0xFF0D96"
+        },
+        {
+          "code": "FF0D98:0001",
+          "desc": "Slot 13 Modifier",
+          "address": "0xFF0D98"
+        },
+        {
+          "code": "FF0D9A:0001",
+          "desc": "Slot 14 Modifier",
+          "address": "0xFF0D9A"
+        },
+        {
+          "code": "FF0D9C:0001",
+          "desc": "Slot 15 Modifier",
+          "address": "0xFF0D9C"
+        },
+        {
+          "code": "FF0D9E:0001",
+          "desc": "Slot 16 Modifier",
+          "address": "0xFF0D9E"
+        },
+        {
+          "code": "FF4578:03E7",
+          "desc": "Max Defence",
+          "address": "0xFF4578"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "system": "genesis",
+  "normalized_title": "streetfighteriispecialchampionedition",
+  "display_name": "Street Fighter II' - Special Champion Edition (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Street Fighter II' - Special Champion Edition (Europe)",
+    "Street Fighter II' - Special Champion Edition (USA)",
+    "Street Fighter II' - Special Champion Edition (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\streetfighteriispecialchampionedition_genesis.json",
+      "trigger_count": 4,
+      "field_names": [
+        "enemy_health",
+        "health",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF8042",
+        "0xFF81E8",
+        "0xFF82C2"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\StreetFighterIISpecialChampionEdition-Genesis-v0\\data.json",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "continuetimer",
+          "address": "0xFF81D5",
+          "type": "|u1"
+        },
+        {
+          "name": "enemy_health",
+          "address": "0xFF82C2",
+          "type": ">i2"
+        },
+        {
+          "name": "enemy_matches_won",
+          "address": "0xFF8457",
+          "type": ">u4"
+        },
+        {
+          "name": "health",
+          "address": "0xFF8042",
+          "type": ">i2"
+        },
+        {
+          "name": "matches_won",
+          "address": "0xFF81DA",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF81E8",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 6
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Street Fighter II' - Special Champion Edition (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 45,
+      "distinct_address_count": 33,
+      "sample_raw_entries": [
+        {
+          "code": "FFFE47:XX",
+          "desc": "Hyper On Main Menu Modifier",
+          "address": "0xFFFE47"
+        },
+        {
+          "code": "FF972A:99",
+          "desc": "Infinite Time",
+          "address": "0xFF972A"
+        },
+        {
+          "code": "FF8043:99",
+          "desc": "Player 1 Infinite Health",
+          "address": "0xFF8043"
+        },
+        {
+          "code": "FF8041:XX",
+          "desc": "Player 1 Action Modifier",
+          "address": "0xFF8041"
+        },
+        {
+          "code": "FF81DA:XX",
+          "desc": "Player 1 Win Modifier",
+          "address": "0xFF81DA"
+        },
+        {
+          "code": "FF845A:XX",
+          "desc": "Player 2 Win Modifier",
+          "address": "0xFF845A"
+        },
+        {
+          "code": "FF82C3:XX",
+          "desc": "Player 2 No Health",
+          "address": "0xFF82C3"
+        },
+        {
+          "code": "FF82C1:XX",
+          "desc": "Player 2 Action Modifier",
+          "address": "0xFF82C1"
+        },
+        {
+          "code": "FF8369:XX",
+          "desc": "Fake Player 2 Health Modifier",
+          "address": "0xFF8369"
+        },
+        {
+          "code": "FF81DB:XX",
+          "desc": "Character Modifier P1",
+          "address": "0xFF81DB"
+        },
+        {
+          "code": "FF845B:XX",
+          "desc": "Character Modifier P2",
+          "address": "0xFF845B"
+        },
+        {
+          "code": "FFFE48:XX",
+          "desc": "P1 Attack Level Modifier (0-7) (VS Mode)",
+          "address": "0xFFFE48"
+        },
+        {
+          "code": "FFFE49:XX",
+          "desc": "P2 Attack Level Modifier (0-7) (VS Mode)",
+          "address": "0xFFFE49"
+        },
+        {
+          "code": "FF96AB:XX",
+          "desc": "Stage Modifier (All Modes)",
+          "address": "0xFF96AB"
+        },
+        {
+          "code": "FF8023:00",
+          "desc": "E. Honda's 1000 Hand Slap Charged",
+          "address": "0xFF8023"
+        },
+        {
+          "code": "FF801B:00",
+          "desc": "Hyper Mode P1",
+          "address": "0xFF801B"
+        },
+        {
+          "code": "FF829B:00",
+          "desc": "Hyper Mode P2",
+          "address": "0xFF829B"
+        },
+        {
+          "code": "FF80C1:00",
+          "desc": "P1 Can Perform Moves In Mid-Air",
+          "address": "0xFF80C1"
+        },
+        {
+          "code": "FF8341:00",
+          "desc": "P2 Can Perform Moves In Mid-Air",
+          "address": "0xFF8341"
+        },
+        {
+          "code": "FF82E0:14",
+          "desc": "All P1 Projectiles Are Normal",
+          "address": "0xFF82E0"
+        },
+        {
+          "code": "FF82E2:14",
+          "desc": "All P1 Projectiles Are Normal",
+          "address": "0xFF82E2"
+        },
+        {
+          "code": "FF82E0:18",
+          "desc": "All P1 Hits/Projectiles Burn",
+          "address": "0xFF82E0"
+        },
+        {
+          "code": "FF82E2:18",
+          "desc": "All P1 Hits/Projectiles Burn",
+          "address": "0xFF82E2"
+        },
+        {
+          "code": "FF82E0:1A",
+          "desc": "All P1 Hits/Projectiles Shock",
+          "address": "0xFF82E0"
+        },
+        {
+          "code": "FF82E2:1A",
+          "desc": "All P1 Hits/Projectiles Shock",
+          "address": "0xFF82E2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

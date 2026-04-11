@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "worldseriesbaseball",
+  "display_name": "World Series Baseball (USA) (Action Replay)",
+  "aliases": [
+    "World Series Baseball (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\World Series Baseball (USA).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFA300:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFFA300"
+        },
+        {
+          "code": "FFA302:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFFA302"
+        },
+        {
+          "code": "FFA306:0000",
+          "desc": "Team 1 Score In 1st Inning",
+          "address": "0xFFA306"
+        },
+        {
+          "code": "FFA306:0000",
+          "desc": "Team 1 Score In 2nd Inning",
+          "address": "0xFFA306"
+        },
+        {
+          "code": "FFA308:0000",
+          "desc": "Team 1 Score In 3rd Inning",
+          "address": "0xFFA308"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

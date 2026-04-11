@@ -15,7 +15,9 @@ public:
     void set_auto_frame_skip(bool enabled) override {}
     void set_layer_capture_mask(uint32_t mask) override {}
     RomHeaderInfo get_rom_header_info() const override;
-
+    const uint32_t* get_z_histogram() const override { return nullptr; }
+    const uint8_t* system_ram_data() const override { return nullptr; }
+    std::size_t system_ram_size() const override { return 0; }
 private:
     void rebuild_placeholder_frame();
 

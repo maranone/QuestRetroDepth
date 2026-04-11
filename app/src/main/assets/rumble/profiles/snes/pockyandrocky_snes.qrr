@@ -1,0 +1,10 @@
+game_name=PockyandRocky
+game_key=PockyandRocky-Snes
+system=snes
+integration_tier=manual
+trigger	enemy_defeated_0_f3c	enemy_defeated	0x7E0F3C	1	uint	native	prev != curr	0.55	1	left:0.510:100
+trigger	damage_taken_1_68	damage_taken	0x7E0068	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	score_2_135	score	0x7E0135	1	uint	native	prev < curr	0.7	1	left:0.300:80
+trigger	enemy_defeated_3_f3e	enemy_defeated	0x7E0F3E	1	uint	native	prev != curr	0.55	1	right:0.510:100
+trigger	damage_taken_4_69	damage_taken	0x7E0069	1	uint	native	prev > curr	0.85	1	right:0.750:180
+trigger	score_5_139	score	0x7E0139	1	uint	native	prev < curr	0.7	1	right:0.300:80

@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "kishindoujizenkibattleraiden",
+  "display_name": "Kishin Douji Zenki - Battle Raiden (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Kishin Douji Zenki - Battle Raiden (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E021440",
+          "desc": "Infinite Energy",
+          "address": "0x7E0214"
+        },
+        {
+          "code": "7E021480",
+          "desc": "Infinite Energy",
+          "address": "0x7E0214"
+        },
+        {
+          "code": "7E090328",
+          "desc": "Invincibility",
+          "address": "0x7E0903"
+        },
+        {
+          "code": "7E021A09",
+          "desc": "Infinite Bombs",
+          "address": "0x7E021A"
+        },
+        {
+          "code": "7E020000",
+          "desc": "Stage Modifier",
+          "address": "0x7E0200"
+        },
+        {
+          "code": "7E103100",
+          "desc": "Boss One Hit Kill",
+          "address": "0x7E1031"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

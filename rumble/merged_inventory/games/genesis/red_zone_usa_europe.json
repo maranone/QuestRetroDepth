@@ -1,0 +1,65 @@
+{
+  "system": "genesis",
+  "normalized_title": "redzone",
+  "display_name": "Red Zone (USA, Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Red Zone (USA, Europe).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FF003C:5279",
+          "desc": "Invincibility",
+          "address": "0xFF003C"
+        },
+        {
+          "code": "FF031C:270F",
+          "desc": "Infinite Cannon",
+          "address": "0xFF031C"
+        },
+        {
+          "code": "FF031A:0064",
+          "desc": "Infinite Stinger",
+          "address": "0xFF031A"
+        },
+        {
+          "code": "FF031E:0063",
+          "desc": "Infinite Rocket",
+          "address": "0xFF031E"
+        },
+        {
+          "code": "FF0320:0063",
+          "desc": "Infinite Hellfire",
+          "address": "0xFF0320"
+        },
+        {
+          "code": "FF4E84:0061",
+          "desc": "Infinite Health",
+          "address": "0xFF4E84"
+        },
+        {
+          "code": "FF4E9A:0099",
+          "desc": "Infinite Ammo",
+          "address": "0xFF4E9A"
+        },
+        {
+          "code": "FF4E9E:0099",
+          "desc": "Infinite Grenades",
+          "address": "0xFF4E9E"
+        },
+        {
+          "code": "FF4EA2:0099",
+          "desc": "Infinite Explosives",
+          "address": "0xFF4EA2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

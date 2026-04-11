@@ -1,0 +1,126 @@
+{
+  "system": "genesis",
+  "normalized_title": "superhangon",
+  "display_name": "Super Hang-On (World) (Action Replay)",
+  "aliases": [
+    "Super Hang-On (World) (Action Replay)",
+    "Super Hang-On (World) (En,Ja) (Rev A)",
+    "Super Hang-On (World) (En,Ja)"
+  ],
+  "sources": {
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperHangOn-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "score",
+          "address": "0xFF054C",
+          "type": ">d4"
+        },
+        {
+          "name": "speed",
+          "address": "0xFF055A",
+          "type": ">d2"
+        },
+        {
+          "name": "time",
+          "address": "0xFF0554",
+          "type": "|d1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Super Hang-On (World) (En,Ja).cht",
+      "total_cheat_rows": 64,
+      "raw_entry_count": 16,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "FFB63B:0099",
+          "desc": "Infinite Money",
+          "address": "0xFFB63B"
+        },
+        {
+          "code": "FFB63A:0099",
+          "desc": "Infinite Money",
+          "address": "0xFFB63A"
+        },
+        {
+          "code": "FFB639:0099",
+          "desc": "Infinite Money",
+          "address": "0xFFB639"
+        },
+        {
+          "code": "FFB638:0099",
+          "desc": "Infinite Money",
+          "address": "0xFFB638"
+        },
+        {
+          "code": "FF064A:00FF",
+          "desc": "255 Speed",
+          "address": "0xFF064A"
+        },
+        {
+          "code": "FF0614:0000",
+          "desc": "X Axys",
+          "address": "0xFF0614"
+        },
+        {
+          "code": "FF0616:0000",
+          "desc": "Race Position",
+          "address": "0xFF0616"
+        },
+        {
+          "code": "FFB648:0000",
+          "desc": "Frame Status Modifier",
+          "address": "0xFFB648"
+        },
+        {
+          "code": "FFB64A:0000",
+          "desc": "Engine Status Modifier",
+          "address": "0xFFB64A"
+        },
+        {
+          "code": "FFB64C:0000",
+          "desc": "Brake Status Modifier",
+          "address": "0xFFB64C"
+        },
+        {
+          "code": "FFB64E:0000",
+          "desc": "Muffler Status Modifier",
+          "address": "0xFFB64E"
+        },
+        {
+          "code": "FFB650:0000",
+          "desc": "Oil Status Modifier",
+          "address": "0xFFB650"
+        },
+        {
+          "code": "FFB652:0000",
+          "desc": "Tires Status Modifier",
+          "address": "0xFFB652"
+        },
+        {
+          "code": "FF0554:0402",
+          "desc": "Infinite Time",
+          "address": "0xFF0554"
+        },
+        {
+          "code": "FFC71A:000A",
+          "desc": "Freeze Time Select Your Class/Select Music",
+          "address": "0xFFC71A"
+        },
+        {
+          "code": "FF0657:0000",
+          "desc": "Never Crash Bike (Enable after start of race) - Both Modes",
+          "address": "0xFF0657"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

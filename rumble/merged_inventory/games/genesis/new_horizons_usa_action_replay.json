@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "newhorizons",
+  "display_name": "New Horizons (USA) (Action Replay)",
+  "aliases": [
+    "New Horizons (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\New Horizons (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFA85A:0000",
+          "desc": "Time Modifier",
+          "address": "0xFFA85A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

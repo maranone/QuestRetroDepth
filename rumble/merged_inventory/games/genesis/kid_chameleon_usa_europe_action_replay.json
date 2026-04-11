@@ -1,0 +1,150 @@
+{
+  "system": "genesis",
+  "normalized_title": "kidchameleon",
+  "display_name": "Kid Chameleon (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Kid Chameleon (Rumbles)",
+    "Kid Chameleon (USA, Europe) (Action Replay)",
+    "Kid Chameleon (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\kidchameleon_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFFC3F",
+        "0xFFFC4C"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KidChameleon-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFFC3F",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFC4C",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Kid Chameleon (USA, Europe).cht",
+      "total_cheat_rows": 168,
+      "raw_entry_count": 19,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "FFFC45:0000",
+          "desc": "Level Select Code",
+          "address": "0xFFFC45"
+        },
+        {
+          "code": "FFFC43:0063",
+          "desc": "Maximum Number of Diamonds",
+          "address": "0xFFFC43"
+        },
+        {
+          "code": "FFFC3F:0080",
+          "desc": "Infinite Lives",
+          "address": "0xFFFC3F"
+        },
+        {
+          "code": "FFFC46:0000",
+          "desc": "Costume Modifier",
+          "address": "0xFFFC46"
+        },
+        {
+          "code": "FF250C:00C8",
+          "desc": "Moon Jump",
+          "address": "0xFF250C"
+        },
+        {
+          "code": "FF0EA8:0003",
+          "desc": "1 Hit To Be Invincible (White Version)",
+          "address": "0xFF0EA8"
+        },
+        {
+          "code": "FF0EAC:0008",
+          "desc": "1 Hit To Be Invincible",
+          "address": "0xFF0EAC"
+        },
+        {
+          "code": "FF4EBA:0000",
+          "desc": "Shadow Kid Chameleon",
+          "address": "0xFF4EBA"
+        },
+        {
+          "code": "FF4EBC:0000",
+          "desc": "Shadow Kid Chameleon",
+          "address": "0xFF4EBC"
+        },
+        {
+          "code": "FF4EBE:0000",
+          "desc": "Shadow Kid Chameleon",
+          "address": "0xFF4EBE"
+        },
+        {
+          "code": "FF4EC0:0000",
+          "desc": "Shadow Kid Chameleon",
+          "address": "0xFF4EC0"
+        },
+        {
+          "code": "FF4EC2:0000",
+          "desc": "Shadow Kid Chameleon",
+          "address": "0xFF4EC2"
+        },
+        {
+          "code": "FF4EC4:0000",
+          "desc": "Shadow Kid Chameleon",
+          "address": "0xFF4EC4"
+        },
+        {
+          "code": "FF4EC6:0000",
+          "desc": "Shadow Kid Chameleon",
+          "address": "0xFF4EC6"
+        },
+        {
+          "code": "FF4EC8:0000",
+          "desc": "Shadow Kid Chameleon",
+          "address": "0xFF4EC8"
+        },
+        {
+          "code": "FF4ECA:0000",
+          "desc": "Shadow Kid Chameleon",
+          "address": "0xFF4ECA"
+        },
+        {
+          "code": "FF4ECC:0000",
+          "desc": "Shadow Kid Chameleon",
+          "address": "0xFF4ECC"
+        },
+        {
+          "code": "FF4ECE:0000",
+          "desc": "Shadow Kid Chameleon",
+          "address": "0xFF4ECE"
+        },
+        {
+          "code": "FF4ED0:0000",
+          "desc": "Shadow Kid Chameleon",
+          "address": "0xFF4ED0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

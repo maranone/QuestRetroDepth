@@ -1,0 +1,65 @@
+{
+  "system": "genesis",
+  "normalized_title": "chikichikiboys",
+  "display_name": "Chiki Chiki Boys (World) (Action Replay)",
+  "aliases": [
+    "Chiki Chiki Boys (Japan, Korea)",
+    "Chiki Chiki Boys (USA, Europe)",
+    "Chiki Chiki Boys (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\chikichikiboys_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF8253",
+        "0xFF9EE1"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ChikiChikiBoys-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF9EE1",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF8253",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Chiki Chiki Boys (World) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF9EE1:0028",
+          "desc": "Infinite Health",
+          "address": "0xFF9EE1"
+        },
+        {
+          "code": "FF824A:0003",
+          "desc": "Infinite Bombs",
+          "address": "0xFF824A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

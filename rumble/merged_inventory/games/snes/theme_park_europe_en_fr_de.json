@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "themepark",
+  "display_name": "Theme Park (Europe) (En,Fr,De)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Theme Park (Europe) (En,Fr,De).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7EA598C0",
+          "desc": "Infinite 999,000,000 Money",
+          "address": "0x7EA598"
+        },
+        {
+          "code": "7EA59987",
+          "desc": "Infinite 999,000,000 Money",
+          "address": "0x7EA599"
+        },
+        {
+          "code": "7EA59A8B",
+          "desc": "Infinite 999,000,000 Money",
+          "address": "0x7EA59A"
+        },
+        {
+          "code": "7EA59B3B",
+          "desc": "Infinite 999,000,000 Money",
+          "address": "0x7EA59B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "topfighter2000mkviii",
+  "display_name": "Top Fighter 2000 MK VIII (Taiwan) (En) (Unl)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Top Fighter 2000 MK VIII (Taiwan) (En) (Unl).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF031B:0005",
+          "desc": "1P Infinite Health",
+          "address": "0xFF031B"
+        },
+        {
+          "code": "FF0708:0F08",
+          "desc": "Infinite Time",
+          "address": "0xFF0708"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

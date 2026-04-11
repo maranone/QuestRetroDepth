@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "quadchallenge",
+  "display_name": "Quad Challenge (USA) (Action Replay)",
+  "aliases": [
+    "Quad Challenge (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Quad Challenge (USA).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FF0302:0000",
+          "desc": "Vehicle Modifier P1",
+          "address": "0xFF0302"
+        },
+        {
+          "code": "FF0316:0063",
+          "desc": "Infinite Timer P1",
+          "address": "0xFF0316"
+        },
+        {
+          "code": "FF0316:0063",
+          "desc": "Infinite Timer P2",
+          "address": "0xFF0316"
+        },
+        {
+          "code": "FF0304:009C",
+          "desc": "Always Have Great Acceleration P1",
+          "address": "0xFF0304"
+        },
+        {
+          "code": "FF0306:009C",
+          "desc": "Always Have Great Acceleration P2",
+          "address": "0xFF0306"
+        },
+        {
+          "code": "FF0270:0000",
+          "desc": "Lap Modifier P1",
+          "address": "0xFF0270"
+        },
+        {
+          "code": "FF0272:0000",
+          "desc": "Lap Modifier P2",
+          "address": "0xFF0272"
+        },
+        {
+          "code": "FF0224:0000",
+          "desc": "Have Ultra Acceleration P1",
+          "address": "0xFF0224"
+        },
+        {
+          "code": "FF0226:0000",
+          "desc": "Have Ultra Acceleration P2",
+          "address": "0xFF0226"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

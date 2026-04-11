@@ -1,0 +1,74 @@
+{
+  "system": "genesis",
+  "normalized_title": "djboy",
+  "display_name": "DJ Boy (World) (Action Replay)",
+  "aliases": [
+    "DJ Boy (USA)",
+    "DJ Boy (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\djboy_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFA189",
+        "0xFFA200"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DJBoy-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFA189",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFA200",
+          "type": "<n5"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\DJ Boy (World) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFA189:0004",
+          "desc": "Infinite Lives",
+          "address": "0xFFA189"
+        },
+        {
+          "code": "FFA189:0A",
+          "desc": "Infinite Energy",
+          "address": "0xFFA189"
+        },
+        {
+          "code": "FFA195:0A",
+          "desc": "Max Energy",
+          "address": "0xFFA195"
+        },
+        {
+          "code": "FFA198:03E7",
+          "desc": "Infinite Money",
+          "address": "0xFFA198"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

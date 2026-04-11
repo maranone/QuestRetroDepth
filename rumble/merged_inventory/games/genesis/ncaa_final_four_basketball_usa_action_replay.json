@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "ncaafinalfourbasketball",
+  "display_name": "NCAA Final Four Basketball (USA) (Action Replay)",
+  "aliases": [
+    "NCAA Final Four Basketball (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NCAA Final Four Basketball (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFA6DE:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFA6DE"
+        },
+        {
+          "code": "FFA6E0:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFA6E0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

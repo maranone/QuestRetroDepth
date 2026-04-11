@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "crystalsponytale",
+  "display_name": "Crystal's Pony Tale (USA) (Action Replay)",
+  "aliases": [
+    "Crystal's Pony Tale (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Crystal's Pony Tale (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 6,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF0208:0000",
+          "desc": "Horseshoe Modifier",
+          "address": "0xFF0208"
+        },
+        {
+          "code": "FF0208:0000",
+          "desc": "Yellow Key Modifier",
+          "address": "0xFF0208"
+        },
+        {
+          "code": "FF0004:0000",
+          "desc": "Pony Body Colour",
+          "address": "0xFF0004"
+        },
+        {
+          "code": "FF0004:0000",
+          "desc": "Pony Hair Colour",
+          "address": "0xFF0004"
+        },
+        {
+          "code": "FF0244:000C",
+          "desc": "Pony Hair Colour Modifier Mixer",
+          "address": "0xFF0244"
+        },
+        {
+          "code": "FF0006:0000",
+          "desc": "Pony Tail Colour Modifier",
+          "address": "0xFF0006"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

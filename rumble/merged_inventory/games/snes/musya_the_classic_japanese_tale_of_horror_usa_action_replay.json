@@ -1,0 +1,72 @@
+{
+  "system": "snes",
+  "normalized_title": "musyaclassicjapanesetaleofhorror",
+  "display_name": "Musya - The Classic Japanese Tale of Horror (USA) (Action Replay)",
+  "aliases": [
+    "Musya - The Classic Japanese Tale of Horror (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Musya - The Classic Japanese Tale of Horror (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "7E103033",
+          "desc": "Start With Help Magic",
+          "address": "0x7E1030"
+        },
+        {
+          "code": "7E103133",
+          "desc": "Start With Web Magic",
+          "address": "0x7E1031"
+        },
+        {
+          "code": "7E103233",
+          "desc": "Start With Heal Magic",
+          "address": "0x7E1032"
+        },
+        {
+          "code": "7E103303",
+          "desc": "Infinite Lives",
+          "address": "0x7E1033"
+        },
+        {
+          "code": "7E101A10",
+          "desc": "Infinite Energy",
+          "address": "0x7E101A"
+        },
+        {
+          "code": "7E102E04",
+          "desc": "Start With Lighting Magic",
+          "address": "0x7E102E"
+        },
+        {
+          "code": "7E102F04",
+          "desc": "Start With Fire Magic. Now Most Of These Should Infinite Too Yeah The Magic!",
+          "address": "0x7E102F"
+        },
+        {
+          "code": "7E08D90C",
+          "desc": "Level Modifier",
+          "address": "0x7E08D9"
+        },
+        {
+          "code": "7E102C06",
+          "desc": "Enable Weapon Shot (Strength 00-06)",
+          "address": "0x7E102C"
+        },
+        {
+          "code": "7E103C0A",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E103C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

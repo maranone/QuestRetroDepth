@@ -1,0 +1,95 @@
+{
+  "system": "snes",
+  "normalized_title": "clocktower",
+  "display_name": "Clock Tower (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Clock Tower (Japan).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "7E0BF964",
+          "desc": "Infinite Stamina/Health",
+          "address": "0x7E0BF9"
+        },
+        {
+          "code": "7FCF3B01",
+          "desc": "Go Through A Door To Get End Credits",
+          "address": "0x7FCF3B"
+        },
+        {
+          "code": "7FCF3B02",
+          "desc": "Go Through A Door To Get Skeleton Movie",
+          "address": "0x7FCF3B"
+        },
+        {
+          "code": "7FCF4100",
+          "desc": "Scissorman Is Frozen",
+          "address": "0x7FCF41"
+        },
+        {
+          "code": "7FCF4300",
+          "desc": "You Can Interact With Things Even If Scissorman Is Chasing You",
+          "address": "0x7FCF43"
+        },
+        {
+          "code": "7FCF4900",
+          "desc": "Scissorman Never Gets Up After You Knock Him Down",
+          "address": "0x7FCF49"
+        },
+        {
+          "code": "7FCF4B00",
+          "desc": "Scissorman Can't Attack You",
+          "address": "0x7FCF4B"
+        },
+        {
+          "code": "7FCF4E01",
+          "desc": "Scissorman Never Trips You While He's Down",
+          "address": "0x7FCF4E"
+        },
+        {
+          "code": "7FCF5100",
+          "desc": "Scissorman Never Chases You From Room To Room",
+          "address": "0x7FCF51"
+        },
+        {
+          "code": "7FCF57FF",
+          "desc": "No Instant Death Attacks From Scissorman",
+          "address": "0x7FCF57"
+        },
+        {
+          "code": "7FCF5B00",
+          "desc": "Can Escape Anything",
+          "address": "0x7FCF5B"
+        },
+        {
+          "code": "7FCF5DFF",
+          "desc": "Always Win Struggles",
+          "address": "0x7FCF5D"
+        },
+        {
+          "code": "7FCF6000",
+          "desc": "Struggles End Fast",
+          "address": "0x7FCF60"
+        },
+        {
+          "code": "7E131C13",
+          "desc": "Have 1st Item",
+          "address": "0x7E131C"
+        },
+        {
+          "code": "7E132300",
+          "desc": "Item 1 Modifier",
+          "address": "0x7E1323"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

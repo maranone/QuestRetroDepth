@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "topgear",
+  "display_name": "Top Gear (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Top Gear (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Top Gear (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E1E63FF",
+          "desc": "Infinite Fuel P1",
+          "address": "0x7E1E63"
+        },
+        {
+          "code": "7E1E65FF",
+          "desc": "Infinite Fuel P2",
+          "address": "0x7E1E65"
+        },
+        {
+          "code": "7E1E6C02",
+          "desc": "Infinite Nitro P1",
+          "address": "0x7E1E6C"
+        },
+        {
+          "code": "7E1E6E02",
+          "desc": "Infinite Nitro P2",
+          "address": "0x7E1E6E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

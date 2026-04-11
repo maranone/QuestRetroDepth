@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "tekken3special",
+  "display_name": "Tekken 3 Special (Unknown) (Action Replay)",
+  "aliases": [
+    "Tekken 3 Special"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tekken 3 Special.cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FF0420:0008",
+          "desc": "Fight Black Kazuya then win game",
+          "address": "0xFF0420"
+        },
+        {
+          "code": "FF0428:0064",
+          "desc": "Infinite Time to Select Character",
+          "address": "0xFF0428"
+        },
+        {
+          "code": "FF0604:0000",
+          "desc": "Game timer at 00'00'00",
+          "address": "0xFF0604"
+        },
+        {
+          "code": "FF0604:0000",
+          "desc": "Game timer at 00'00'00",
+          "address": "0xFF0604"
+        },
+        {
+          "code": "FF0606:0007",
+          "desc": "Game timer at 00'00'00",
+          "address": "0xFF0606"
+        },
+        {
+          "code": "FF0312:0058",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF0312"
+        },
+        {
+          "code": "FF020A:0000",
+          "desc": "Character Modifier P1",
+          "address": "0xFF020A"
+        },
+        {
+          "code": "FF030A:0000",
+          "desc": "Character Modifier P2",
+          "address": "0xFF030A"
+        },
+        {
+          "code": "FF0212:0058",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF0212"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

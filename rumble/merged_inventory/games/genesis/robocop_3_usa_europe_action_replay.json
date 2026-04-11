@@ -1,0 +1,128 @@
+{
+  "system": "genesis",
+  "normalized_title": "robocop3",
+  "display_name": "RoboCop 3 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "RoboCop 3 (USA, Europe) (Action Replay)",
+    "RoboCop 3 (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\robocop3_genesis.json",
+      "trigger_count": 6,
+      "field_names": [
+        "ammo",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xFF08BC",
+        "0xFF0921",
+        "0xFF0934",
+        "0xFF09AB"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\RoboCop3-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "ammo",
+          "address": "0xFF0934",
+          "type": ">d4"
+        },
+        {
+          "name": "health",
+          "address": "0xFF0921",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF09AB",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF08BC",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\RoboCop 3 (USA, Europe).cht",
+      "total_cheat_rows": 35,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "FF0920:0040",
+          "desc": "Infinite Health",
+          "address": "0xFF0920"
+        },
+        {
+          "code": "FF0922:0040",
+          "desc": "Infinite Health",
+          "address": "0xFF0922"
+        },
+        {
+          "code": "FF09AA:0001",
+          "desc": "Infinite Lives",
+          "address": "0xFF09AA"
+        },
+        {
+          "code": "FF0936:0255",
+          "desc": "Infinite Gun Ammo",
+          "address": "0xFF0936"
+        },
+        {
+          "code": "FF0938:0255",
+          "desc": "Infinite Tri-Gun Ammo",
+          "address": "0xFF0938"
+        },
+        {
+          "code": "FF093A:0255",
+          "desc": "Infinite Laser Ammo",
+          "address": "0xFF093A"
+        },
+        {
+          "code": "FF093C:0255",
+          "desc": "Infinite Flame Thrower Ammo",
+          "address": "0xFF093C"
+        },
+        {
+          "code": "FF093E:0255",
+          "desc": "Infinite Rocket Ammo",
+          "address": "0xFF093E"
+        },
+        {
+          "code": "FF0926:001F",
+          "desc": "Have All Guns",
+          "address": "0xFF0926"
+        },
+        {
+          "code": "FF0906:0255",
+          "desc": "Infinite Time",
+          "address": "0xFF0906"
+        },
+        {
+          "code": "FF293B:0000",
+          "desc": "1 Shot Kill Enemies",
+          "address": "0xFF293B"
+        },
+        {
+          "code": "FF0925:0001",
+          "desc": "Keep Power of Ammo In Flight After The Death",
+          "address": "0xFF0925"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

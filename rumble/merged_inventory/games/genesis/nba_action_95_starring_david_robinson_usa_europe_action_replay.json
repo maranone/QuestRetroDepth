@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "nbaaction95starringdavidrobinson",
+  "display_name": "NBA Action '95 Starring David Robinson (USA, Europe) (Action Replay)",
+  "aliases": [
+    "NBA Action '95 Starring David Robinson (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NBA Action '95 Starring David Robinson (USA, Europe).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF882C:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFF882C"
+        },
+        {
+          "code": "FF8834:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFF8834"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

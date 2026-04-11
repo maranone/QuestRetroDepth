@@ -1,0 +1,6 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Cameltry
+# match_names=cameltry|cameltrysnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+level_complete_level_8d70,0x7E8D70,1,uint,changed,,both,0.800,normal,0,400,75,60,
+score_score_083f,0x7E083F,3,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,

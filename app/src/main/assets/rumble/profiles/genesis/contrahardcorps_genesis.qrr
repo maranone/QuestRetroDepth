@@ -1,0 +1,8 @@
+game_name=ContraHardCorps
+game_key=ContraHardCorps-Genesis
+system=genesis
+integration_tier=manual
+trigger	death_0_d759	death	0xFFD759	1	uint	native	prev > 0 && curr == 0	0.85	1	left:1.000:500;right:1.000:500
+trigger	powerup_lost_1_fa10	powerup_lost	0xFFFA10	1	uint	native	prev > curr	0.9	1	left:1.000:250
+trigger	death_2_d791	death	0xFFD791	1	uint	native	prev > 0 && curr == 0	0.85	1	left:1.000:500;right:1.000:500
+trigger	powerup_lost_3_fa30	powerup_lost	0xFFFA30	1	uint	native	prev > curr	0.9	1	right:1.000:250

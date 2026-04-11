@@ -1,0 +1,58 @@
+{
+  "system": "genesis",
+  "normalized_title": "galaxyforceii",
+  "display_name": "Galaxy Force II (World) (Action Replay)",
+  "aliases": [
+    "Galaxy Force II (Japan) (En)",
+    "Galaxy Force II (World) (Action Replay)",
+    "Galaxy Force II (World) (Rev A)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\galaxyforceii_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFF83A"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GalaxyForceII-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "energy",
+          "address": "0xFFF834",
+          "type": ">u2"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF83A",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Galaxy Force II (World) (Rev A).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFF834:270F",
+          "desc": "Infinite Energy/Fuel",
+          "address": "0xFFF834"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

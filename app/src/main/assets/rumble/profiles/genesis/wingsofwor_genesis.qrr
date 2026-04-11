@@ -1,0 +1,5 @@
+game_name=WingsOfWor
+game_key=WingsOfWor-Genesis
+system=genesis
+integration_tier=manual
+trigger	death_0_c014	death	0xFFC014	1	uint	native	prev > 0 && curr == 0	0.85	1	left:1.000:500;right:1.000:500

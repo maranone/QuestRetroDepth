@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "shijousaidainosoukoban",
+  "display_name": "Shijou Saidai no Soukoban (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Shijou Saidai no Soukoban (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFF72E:0003",
+          "desc": "Enable Stage Select during gameplay (Enable before start of game)",
+          "address": "0xFFF72E"
+        },
+        {
+          "code": "FFF635:0000",
+          "desc": "Have 0 Steps Taken",
+          "address": "0xFFF635"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

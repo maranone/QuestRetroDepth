@@ -1,0 +1,83 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "NBAJam",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/NBA Jam (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "NBAJam-Snes"
+  },
+  "triggers": [
+    {
+      "id": "score_0_ca9",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E0CA9",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0CA9",
+          "bank": "7E",
+          "wram_offset": 3241
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.3,
+          "duration_ms": 80
+        }
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: score equipe 1",
+      "source_fields": [
+        {
+          "name": "score_equipe_1",
+          "address": "0x7E0CA9",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_1_caf",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E0CAF",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0CAF",
+          "bank": "7E",
+          "wram_offset": 3247
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.3,
+          "duration_ms": 80
+        }
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: score 2p",
+      "source_fields": [
+        {
+          "name": "score_2p",
+          "address": "0x7E0CAF",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

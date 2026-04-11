@@ -1,0 +1,52 @@
+{
+  "system": "snes",
+  "normalized_title": "maerchenadventurecotton100",
+  "display_name": "Maerchen Adventure Cotton 100- (Japan) (Action Replay)",
+  "aliases": [
+    "Maerchen Adventure Cotton 100- (Japan) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Maerchen Adventure Cotton 100- (Japan) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E0BE909",
+          "desc": "Infinite Lives",
+          "address": "0x7E0BE9"
+        },
+        {
+          "code": "7E11DE09",
+          "desc": "Infinite Super Attacks",
+          "address": "0x7E11DE"
+        },
+        {
+          "code": "7E0FCC04",
+          "desc": "Max Fairies",
+          "address": "0x7E0FCC"
+        },
+        {
+          "code": "7E11B809",
+          "desc": "More Powerful Gun",
+          "address": "0x7E11B8"
+        },
+        {
+          "code": "7E0C0F01",
+          "desc": "Enable Cutscene Viewer (Press Start At Title Screen)",
+          "address": "0x7E0C0F"
+        },
+        {
+          "code": "7E20F85D",
+          "desc": "Invincibility",
+          "address": "0x7E20F8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

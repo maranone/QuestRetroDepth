@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "actraiser2chinmokuenoseisen",
+  "display_name": "ActRaiser 2 - Chinmoku e no Seisen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\ActRaiser 2 - Chinmoku e no Seisen (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E091C00",
+          "desc": "Infinite Life",
+          "address": "0x7E091C"
+        },
+        {
+          "code": "7E091DF0",
+          "desc": "Infinite Life",
+          "address": "0x7E091D"
+        },
+        {
+          "code": "7E092109",
+          "desc": "Infinite Magic",
+          "address": "0x7E0921"
+        },
+        {
+          "code": "7E092CFF",
+          "desc": "Infinite Points",
+          "address": "0x7E092C"
+        },
+        {
+          "code": "7E094D99",
+          "desc": "Infinite Time",
+          "address": "0x7E094D"
+        },
+        {
+          "code": "7E091B63",
+          "desc": "Infinite Lives",
+          "address": "0x7E091B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

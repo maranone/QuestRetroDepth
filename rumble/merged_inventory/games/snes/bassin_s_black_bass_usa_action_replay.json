@@ -1,0 +1,38 @@
+{
+  "system": "snes",
+  "normalized_title": "bassinsblackbass",
+  "display_name": "Bassin's Black Bass (USA) (Action Replay)",
+  "aliases": [
+    "Bassin's Black Bass (USA) (Game Genie)",
+    "Bassin's Black Bass (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bassin's Black Bass (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E11EF9F",
+          "desc": "Always Win",
+          "address": "0x7E11EF"
+        },
+        {
+          "code": "7E11F00F",
+          "desc": "Always Win",
+          "address": "0x7E11F0"
+        },
+        {
+          "code": "7E11F301",
+          "desc": "Always Win",
+          "address": "0x7E11F3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -315,11 +315,20 @@ bool SnesLibretroBackend::handle_environment(unsigned cmd, void* data) {
         return true;
     case RETRO_ENVIRONMENT_GET_VARIABLE_UPDATE: {
         auto* updated = static_cast<bool*>(data);
-        *updated = false;
+        *updated = m_variables_dirty;
+        m_variables_dirty = false;
         return true;
     }
-    case RETRO_ENVIRONMENT_GET_VARIABLE:
+    case RETRO_ENVIRONMENT_GET_VARIABLE: {
+        if (!data) return false;
+        auto* var = static_cast<retro_variable*>(data);
+        if (!var || !var->key) return false;
+        if (std::strcmp(var->key, "snes9x_auto_frame_skip") == 0) {
+            var->value = m_auto_frame_skip ? "enabled" : "disabled";
+            return true;
+        }
         return false;
+    }
     case RETRO_ENVIRONMENT_GET_INPUT_BITMASKS: {
         auto* supported = static_cast<bool*>(data);
         *supported = true;
@@ -328,8 +337,7 @@ bool SnesLibretroBackend::handle_environment(unsigned cmd, void* data) {
     case RETRO_ENVIRONMENT_GET_AUDIO_VIDEO_ENABLE: {
         auto* result = static_cast<int*>(data);
         // 3 = enable both video and audio (default)
-        // 2 = video disabled hint — tells the core it can skip video rendering
-        *result = m_auto_frame_skip ? 2 : 3;
+        *result = 3;
         return true;
     }
     default:
@@ -453,6 +461,7 @@ void SnesLibretroBackend::reset_core() {
     m_rom_bytes.clear();
     m_video_frame_count = 0;
     m_last_frame_had_visible_pixels = false;
+    m_variables_dirty = false;
     if (g_active_backend == this) {
         g_active_backend = nullptr;
     }
@@ -596,7 +605,9 @@ void SnesLibretroBackend::write_xrgb8888_frame(const uint32_t* pixels, unsigned 
 }
 
 void SnesLibretroBackend::set_auto_frame_skip(bool enabled) {
+    if (m_auto_frame_skip == enabled) return;
     m_auto_frame_skip = enabled;
+    m_variables_dirty = true;
 }
 
 RomHeaderInfo SnesLibretroBackend::get_rom_header_info() const {
@@ -612,6 +623,16 @@ RomHeaderInfo SnesLibretroBackend::get_rom_header_info() const {
     while (!info.game_name.empty() && (info.game_name.back() == ' ' || info.game_name.back() == '\0'))
         info.game_name.pop_back();
     return info;
+}
+
+const uint8_t* SnesLibretroBackend::system_ram_data() const {
+    if (!m_game_loaded) return nullptr;
+    return static_cast<const uint8_t*>(retro_get_memory_data(RETRO_MEMORY_SYSTEM_RAM));
+}
+
+std::size_t SnesLibretroBackend::system_ram_size() const {
+    if (!m_game_loaded) return 0;
+    return retro_get_memory_size(RETRO_MEMORY_SYSTEM_RAM);
 }
 
 } // namespace qrd

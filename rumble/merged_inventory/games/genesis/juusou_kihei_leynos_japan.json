@@ -1,0 +1,50 @@
+{
+  "system": "genesis",
+  "normalized_title": "juusoukiheileynos",
+  "display_name": "Juusou Kihei Leynos (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Juusou Kihei Leynos (Japan).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFD09B:0099",
+          "desc": "Infinite Weapons",
+          "address": "0xFFD09B"
+        },
+        {
+          "code": "FFD09D:0099",
+          "desc": "Infinite Weapons",
+          "address": "0xFFD09D"
+        },
+        {
+          "code": "FFD0A1:0099",
+          "desc": "Infinite Weapons",
+          "address": "0xFFD0A1"
+        },
+        {
+          "code": "FFD0A3:0099",
+          "desc": "Infinite Weapons",
+          "address": "0xFFD0A3"
+        },
+        {
+          "code": "FFD0A5:0099",
+          "desc": "Infinite Weapons",
+          "address": "0xFFD0A5"
+        },
+        {
+          "code": "FFB044:0016",
+          "desc": "Infinite Energy",
+          "address": "0xFFB044"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

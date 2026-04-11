@@ -1,0 +1,47 @@
+{
+  "system": "snes",
+  "normalized_title": "juusoukiheivalken",
+  "display_name": "Juusou Kihei Valken (Japan) (Action Replay)",
+  "aliases": [
+    "Juusou Kihei Valken (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Juusou Kihei Valken (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E120052",
+          "desc": "Blazeon Untouchable",
+          "address": "0x7E1200"
+        },
+        {
+          "code": "7E14D4FF",
+          "desc": "Infinite Health",
+          "address": "0x7E14D4"
+        },
+        {
+          "code": "7E005C28",
+          "desc": "Infinite Vulcan Ammo",
+          "address": "0x7E005C"
+        },
+        {
+          "code": "7E006228",
+          "desc": "Infinite Punch Power",
+          "address": "0x7E0062"
+        },
+        {
+          "code": "7E14E8FD",
+          "desc": "Moon Jump",
+          "address": "0x7E14E8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

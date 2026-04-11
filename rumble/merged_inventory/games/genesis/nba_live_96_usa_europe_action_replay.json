@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "nbalive96",
+  "display_name": "NBA Live 96 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "NBA Live 96 (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NBA Live 96 (USA, Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFF97E:0000",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFF97E"
+        },
+        {
+          "code": "FFF8E6:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFF8E6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

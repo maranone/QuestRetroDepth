@@ -1,0 +1,33 @@
+{
+  "system": "snes",
+  "normalized_title": "mauimallardincoldshadow",
+  "display_name": "Maui Mallard in Cold Shadow (USA) (Game Genie)",
+  "aliases": [
+    "Maui Mallard in Cold Shadow (USA) (Game Genie)",
+    "Maui Mallard in Cold Shadow (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Maui Mallard in Cold Shadow (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E1F5500",
+          "desc": "Cheat Modifier",
+          "address": "0x7E1F55"
+        },
+        {
+          "code": "7E002E5A",
+          "desc": "Invincible",
+          "address": "0x7E002E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

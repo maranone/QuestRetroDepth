@@ -1,0 +1,219 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "ContraIIITheAlienWars",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Contra Iii - The Alien Wars (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "ContraIIITheAlienWars-Snes"
+  },
+  "triggers": [
+    {
+      "id": "p1_life_lost_1746",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0x7E1746",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x1746",
+          "wram_offset": 5958
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.63,
+          "duration_ms": 250
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": true,
+      "reason": "Taken directly from the RetroArch Rumbles profile for player 1 life loss.",
+      "source_fields": [
+        {
+          "name": "p1_life_counter",
+          "address": "0x7E1746",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "p1_megabomb_used_1f8c",
+      "event": "powerup_lost",
+      "watch": [
+        {
+          "absolute_address": "0x7E1F8C",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x1F8C",
+          "wram_offset": 8076
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 250
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": true,
+      "reason": "Taken directly from the RetroArch Rumbles profile for player 1 megabomb use.",
+      "source_fields": [
+        {
+          "name": "p1_megabombs",
+          "address": "0x7E1F8C",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "p1_enemy_hit_1fa1",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0x7E1FA1",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x1FA1",
+          "wram_offset": 8097
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.51,
+          "duration_ms": 100
+        }
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "reason": "Taken directly from the RetroArch Rumbles profile for player 1 enemy hit; exact semantics still need gameplay validation.",
+      "source_fields": [
+        {
+          "name": "p1_enemy_hit_counter",
+          "address": "0x7E1FA1",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "p2_life_lost_1766",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0x7E1766",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x1766",
+          "wram_offset": 5990
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.63,
+          "duration_ms": 250
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": true,
+      "reason": "Taken directly from the RetroArch Rumbles profile for player 2 life loss.",
+      "source_fields": [
+        {
+          "name": "p2_life_counter",
+          "address": "0x7E1766",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "p2_megabomb_used_1fcc",
+      "event": "powerup_lost",
+      "watch": [
+        {
+          "absolute_address": "0x7E1FCC",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x1FCC",
+          "wram_offset": 8140
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 250
+        }
+      ],
+      "confidence": 0.9,
+      "needs_review": true,
+      "reason": "Taken directly from the RetroArch Rumbles profile for player 2 megabomb use.",
+      "source_fields": [
+        {
+          "name": "p2_megabombs",
+          "address": "0x7E1FCC",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "p2_enemy_hit_1fe0",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0x7E1FE0",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x1FE0",
+          "wram_offset": 8160
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.51,
+          "duration_ms": 100
+        }
+      ],
+      "confidence": 0.7,
+      "needs_review": true,
+      "reason": "Taken directly from the RetroArch Rumbles profile for player 2 enemy hit; exact semantics still need gameplay validation.",
+      "source_fields": [
+        {
+          "name": "p2_enemy_hit_counter",
+          "address": "0x7E1FE0",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

@@ -1,0 +1,77 @@
+{
+  "system": "snes",
+  "normalized_title": "asterixobelix",
+  "display_name": "Asterix _ Obelix (Europe) (Action Replay)",
+  "aliases": [
+    "Asterix _ Obelix (Europe) (En,Fr,De,Es)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Asterix _ Obelix (Europe) (En,Fr,De,Es).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 11,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E008C28",
+          "desc": "Infinite Health",
+          "address": "0x7E008C"
+        },
+        {
+          "code": "7E101D09",
+          "desc": "Infinite Lives",
+          "address": "0x7E101D"
+        },
+        {
+          "code": "7E107627",
+          "desc": "Infinite Time",
+          "address": "0x7E1076"
+        },
+        {
+          "code": "7E007DC0",
+          "desc": "Moon Jump",
+          "address": "0x7E007D"
+        },
+        {
+          "code": "7E00603C",
+          "desc": "Infinite Energy - Asterix",
+          "address": "0x7E0060"
+        },
+        {
+          "code": "7E008C46",
+          "desc": "Infinite Energy - Obelix",
+          "address": "0x7E008C"
+        },
+        {
+          "code": "7E039E88",
+          "desc": "Infinite Time",
+          "address": "0x7E039E"
+        },
+        {
+          "code": "7E101D99",
+          "desc": "Infinite Lives",
+          "address": "0x7E101D"
+        },
+        {
+          "code": "7E008E04",
+          "desc": "Invincible + Magic Power - Obelix",
+          "address": "0x7E008E"
+        },
+        {
+          "code": "7E006204",
+          "desc": "Invincible + Magic Power - Asterix",
+          "address": "0x7E0062"
+        },
+        {
+          "code": "7E0093FF",
+          "desc": "1 Hit And Invincibility",
+          "address": "0x7E0093"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

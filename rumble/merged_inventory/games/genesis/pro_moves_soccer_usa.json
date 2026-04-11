@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "promovessoccer",
+  "display_name": "Pro Moves Soccer (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Pro Moves Soccer (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF1294:0000",
+          "desc": "Time Modifier (One's Digit)",
+          "address": "0xFF1294"
+        },
+        {
+          "code": "FF1298:0000",
+          "desc": "2P Team Score Modifier",
+          "address": "0xFF1298"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

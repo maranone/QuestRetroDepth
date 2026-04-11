@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "m1abramsbattletank",
+  "display_name": "M-1 Abrams Battle Tank (USA, Europe) (Action Replay)",
+  "aliases": [
+    "M-1 Abrams Battle Tank (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\M-1 Abrams Battle Tank (USA, Europe).cht",
+      "total_cheat_rows": 61,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFEC8E:0063",
+          "desc": "Max Heat",
+          "address": "0xFFEC8E"
+        },
+        {
+          "code": "FFEC90:0063",
+          "desc": "Max Sabot",
+          "address": "0xFFEC90"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

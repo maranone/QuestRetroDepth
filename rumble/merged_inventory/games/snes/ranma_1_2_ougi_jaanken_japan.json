@@ -1,0 +1,110 @@
+{
+  "system": "snes",
+  "normalized_title": "ranma12ougijaanken",
+  "display_name": "Ranma 1-2 - Ougi Jaanken (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ranma 1-2 - Ougi Jaanken (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 18,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "7E114568",
+          "desc": "Infinite Health P1",
+          "address": "0x7E1145"
+        },
+        {
+          "code": "7E114500",
+          "desc": "No Health",
+          "address": "0x7E1145"
+        },
+        {
+          "code": "7E11FD68",
+          "desc": "Infinite Health P2",
+          "address": "0x7E11FD"
+        },
+        {
+          "code": "7E11FD00",
+          "desc": "No Health P2",
+          "address": "0x7E11FD"
+        },
+        {
+          "code": "7E128C00",
+          "desc": "Score Modifier",
+          "address": "0x7E128C"
+        },
+        {
+          "code": "7E128D00",
+          "desc": "Score Modifier",
+          "address": "0x7E128D"
+        },
+        {
+          "code": "7E128E00",
+          "desc": "Score Modifier",
+          "address": "0x7E128E"
+        },
+        {
+          "code": "7E629F00",
+          "desc": "FAKE Score Modifier",
+          "address": "0x7E629F"
+        },
+        {
+          "code": "7E62A000",
+          "desc": "FAKE Score Modifier",
+          "address": "0x7E62A0"
+        },
+        {
+          "code": "7E62A100",
+          "desc": "FAKE Score Modifier",
+          "address": "0x7E62A1"
+        },
+        {
+          "code": "7E62A399",
+          "desc": "Infinite Credits",
+          "address": "0x7E62A3"
+        },
+        {
+          "code": "7E007E63",
+          "desc": "Infinite Time Bonus Games",
+          "address": "0x7E007E"
+        },
+        {
+          "code": "7E007A00",
+          "desc": "Hit Modifier Bonus Games",
+          "address": "0x7E007A"
+        },
+        {
+          "code": "7E046900",
+          "desc": "Level",
+          "address": "0x7E0469"
+        },
+        {
+          "code": "7E04D300",
+          "desc": "Credit",
+          "address": "0x7E04D3"
+        },
+        {
+          "code": "7E053D00",
+          "desc": "SE",
+          "address": "0x7E053D"
+        },
+        {
+          "code": "7E05A700",
+          "desc": "Music",
+          "address": "0x7E05A7"
+        },
+        {
+          "code": "7E07B900",
+          "desc": "Sound",
+          "address": "0x7E07B9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

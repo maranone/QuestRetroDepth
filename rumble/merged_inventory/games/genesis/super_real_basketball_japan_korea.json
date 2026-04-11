@@ -1,0 +1,35 @@
+{
+  "system": "genesis",
+  "normalized_title": "superrealbasketball",
+  "display_name": "Super Real Basketball (Japan, Korea)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Super Real Basketball (Japan, Korea).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF0036:00B3",
+          "desc": "Infinite Time",
+          "address": "0xFF0036"
+        },
+        {
+          "code": "FF0038:0000",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFF0038"
+        },
+        {
+          "code": "FF003A:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFF003A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "system": "genesis",
+  "normalized_title": "sunsetriders",
+  "display_name": "Sunset Riders (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Sunset Riders (Europe)",
+    "Sunset Riders (USA)",
+    "Sunset Riders (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\sunsetriders_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFB099",
+        "0xFFFB07"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SunsetRiders-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFB099",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFB07",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sunset Riders (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFB099:06",
+          "desc": "Infinite Lives P1",
+          "address": "0xFFB099"
+        },
+        {
+          "code": "FFCA4D:02",
+          "desc": "Invincible P1",
+          "address": "0xFFCA4D"
+        },
+        {
+          "code": "FFCA42:03",
+          "desc": "Have 2X Guns And All Rapid Fire Upgrades P1",
+          "address": "0xFFCA42"
+        },
+        {
+          "code": "FFB09B:06",
+          "desc": "Infinite Lives P2",
+          "address": "0xFFB09B"
+        },
+        {
+          "code": "FFB0A3:09",
+          "desc": "Infinite Credits",
+          "address": "0xFFB0A3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

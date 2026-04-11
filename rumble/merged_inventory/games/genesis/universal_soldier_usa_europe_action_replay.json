@@ -1,0 +1,79 @@
+{
+  "system": "genesis",
+  "normalized_title": "universalsoldier",
+  "display_name": "Universal Soldier (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Universal Soldier (USA, Europe) (Action Replay)",
+    "Universal Soldier (USA, Europe) (Unl)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\universalsoldier_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF0ADF",
+        "0xFF0AE0"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\UniversalSoldier-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF0ADF",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF0AE0",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Universal Soldier (USA, Europe) (Unl).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF0ADF:0003",
+          "desc": "Unlimited Men",
+          "address": "0xFF0ADF"
+        },
+        {
+          "code": "FF0AED:000C",
+          "desc": "Infinite Energy",
+          "address": "0xFF0AED"
+        },
+        {
+          "code": "FF12D9:0003",
+          "desc": "Have Most Powerful Weapon",
+          "address": "0xFF12D9"
+        },
+        {
+          "code": "FF0AE9:0099",
+          "desc": "infinite Time",
+          "address": "0xFF0AE9"
+        },
+        {
+          "code": "FF12D7:0001",
+          "desc": "Infinite Continue",
+          "address": "0xFF12D7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

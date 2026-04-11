@@ -1,0 +1,162 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "DariusII",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "third_party\\openai-retro\\retro\\data\\stable\\DariusII-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "DariusII-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "game_over_gameover_ff0823",
+      "event": "game_over",
+      "watch": [
+        {
+          "absolute_address": "0xFF0823",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF0823",
+          "ram_offset": 2083
+        }
+      ],
+      "condition": "prev == 0 && curr != 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Explicit game-over flag.",
+      "source_fields": [
+        {
+          "name": "gameover",
+          "address": "0xFF0823",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_lives_ff0872",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0xFF0872",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF0872",
+          "ram_offset": 2162
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xFF0872",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_ff0872",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0xFF0872",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF0872",
+          "ram_offset": 2162
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xFF0872",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_ff0b46",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xFF0B46",
+          "size": 4,
+          "value_type": "bcd",
+          "byte_order": "big",
+          "raw_type": ">d4",
+          "address": "0xFF0B46",
+          "ram_offset": 2886
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xFF0B46",
+          "raw_type": ">d4"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

@@ -1,0 +1,40 @@
+{
+  "system": "genesis",
+  "normalized_title": "sonic3dblastsonic3dflickiesisland",
+  "display_name": "Sonic 3D Blast _ Sonic 3D Flickies' Island (USA, Europe, Korea)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sonic 3D Blast _ Sonic 3D Flickies' Island (USA, Europe, Korea).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF4F92:0007",
+          "desc": "Have All Chaos Emeralds",
+          "address": "0xFF4F92"
+        },
+        {
+          "code": "FF0A5A:0064",
+          "desc": "Infinite Rings",
+          "address": "0xFF0A5A"
+        },
+        {
+          "code": "FF0680:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFF0680"
+        },
+        {
+          "code": "FF0A8E:0000",
+          "desc": "Number of Flickies Collected",
+          "address": "0xFF0A8E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

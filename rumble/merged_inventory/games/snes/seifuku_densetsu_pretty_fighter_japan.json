@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "seifukudensetsuprettyfighter",
+  "display_name": "Seifuku Densetsu - Pretty Fighter (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Seifuku Densetsu - Pretty Fighter (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E177000",
+          "desc": "Infinite Health P1",
+          "address": "0x7E1770"
+        },
+        {
+          "code": "7E177105",
+          "desc": "Infinite Health P1",
+          "address": "0x7E1771"
+        },
+        {
+          "code": "7E177200",
+          "desc": "Infinite Health P2",
+          "address": "0x7E1772"
+        },
+        {
+          "code": "7E177305",
+          "desc": "Infinite Health P2",
+          "address": "0x7E1773"
+        },
+        {
+          "code": "7E177802",
+          "desc": "Win One Round To Win the Match P1",
+          "address": "0x7E1778"
+        },
+        {
+          "code": "7E16EC01",
+          "desc": "P2 Does Not Fight",
+          "address": "0x7E16EC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

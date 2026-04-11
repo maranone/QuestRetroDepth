@@ -1,0 +1,10 @@
+game_name=Ex-Mutants (USA, Europe) (Action Replay)
+game_key=ExMutants-Genesis
+system=genesis
+integration_tier=stable
+trigger	pickup_ammo_ff005c	pickup	0xFF005C	1	uint	native	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_ff005a	damage_taken	0xFF005A	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff005a	death	0xFF005A	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ff006b	life_lost	0xFF006B	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff006b	life_gained	0xFF006B	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ff00a0	score	0xFF00A0	4	uint	big	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,80 @@
+{
+  "system": "genesis",
+  "normalized_title": "captainplanetandplaneteers",
+  "display_name": "Captain Planet and the Planeteers (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Captain Planet and the Planeteers (Asia) (En)",
+    "Captain Planet and the Planeteers (Europe)",
+    "Captain Planet and the Planeteers (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\captainplanetandtheplaneteers_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFF26E",
+        "0xFFF272"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CaptainPlanetAndThePlaneteers-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFF26E",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF272",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Captain Planet and the Planeteers (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFF26E:38",
+          "desc": "Infinite Energy",
+          "address": "0xFFF26E"
+        },
+        {
+          "code": "FFF270:38",
+          "desc": "Infinite Power",
+          "address": "0xFFF270"
+        },
+        {
+          "code": "FFF3A2:59",
+          "desc": "Infinite Time",
+          "address": "0xFFF3A2"
+        },
+        {
+          "code": "FFDE0C:4F",
+          "desc": "Super Jump (Duke Nukem Level)",
+          "address": "0xFFDE0C"
+        },
+        {
+          "code": "FFDE03:00",
+          "desc": "No Water In Pipe Level",
+          "address": "0xFFDE03"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

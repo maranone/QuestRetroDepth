@@ -1,0 +1,134 @@
+{
+  "system": "genesis",
+  "normalized_title": "generalchaos",
+  "display_name": "General Chaos (USA, Europe) (Action Replay)",
+  "aliases": [
+    "General Chaos (USA, Europe) (Action Replay)",
+    "General Chaos (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\generalchaos_genesis.json",
+      "trigger_count": 2,
+      "field_names": [
+        "gameover",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF02FE",
+        "0xFFE55C"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GeneralChaos-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "casualties",
+          "address": "0xFFE56B",
+          "type": "|u1"
+        },
+        {
+          "name": "casualties_inflicted",
+          "address": "0xFFE553",
+          "type": "|u1"
+        },
+        {
+          "name": "gameover",
+          "address": "0xFF02FE",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFE55C",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\General Chaos (USA, Europe).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "FFD3E4:0009",
+          "desc": "Infinite Health Blue Team In Close-Combat",
+          "address": "0xFFD3E4"
+        },
+        {
+          "code": "FFDDB0:0000",
+          "desc": "No Health Red Team In Close-Combat",
+          "address": "0xFFDDB0"
+        },
+        {
+          "code": "FFD3C8:0000",
+          "desc": "Turn Off SFX",
+          "address": "0xFFD3C8"
+        },
+        {
+          "code": "FFD252:0064",
+          "desc": "Blue Team Health",
+          "address": "0xFFD252"
+        },
+        {
+          "code": "FFD3F4:0064",
+          "desc": "Blue Team Health",
+          "address": "0xFFD3F4"
+        },
+        {
+          "code": "FFD596:0064",
+          "desc": "Blue Team Health",
+          "address": "0xFFD596"
+        },
+        {
+          "code": "FFD738:0064",
+          "desc": "Blue Team Health",
+          "address": "0xFFD738"
+        },
+        {
+          "code": "FFD8DA:0064",
+          "desc": "Blue Team Health",
+          "address": "0xFFD8DA"
+        },
+        {
+          "code": "FFDA7C:0000",
+          "desc": "Red Team Health",
+          "address": "0xFFDA7C"
+        },
+        {
+          "code": "FFDC1E:0000",
+          "desc": "Red Team Health",
+          "address": "0xFFDC1E"
+        },
+        {
+          "code": "FFDDC0:0000",
+          "desc": "Red Team Health",
+          "address": "0xFFDDC0"
+        },
+        {
+          "code": "FFDF62:0000",
+          "desc": "Red Team Health",
+          "address": "0xFFDF62"
+        },
+        {
+          "code": "FFE104:0000",
+          "desc": "Red Team Health",
+          "address": "0xFFE104"
+        },
+        {
+          "code": "FFE4E2:0001",
+          "desc": "Auto Complete Special Mission",
+          "address": "0xFFE4E2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

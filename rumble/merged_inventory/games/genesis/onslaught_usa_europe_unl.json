@@ -1,0 +1,35 @@
+{
+  "system": "genesis",
+  "normalized_title": "onslaught",
+  "display_name": "Onslaught (USA, Europe) (Unl)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Onslaught (USA, Europe) (Unl).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF32BB:00FF",
+          "desc": "Enable Cheat Mode",
+          "address": "0xFF32BB"
+        },
+        {
+          "code": "FF2537:00FF",
+          "desc": "Infinite Energy Orange Scroll",
+          "address": "0xFF2537"
+        },
+        {
+          "code": "FF2533:00FF",
+          "desc": "Infinite Energy Blue Scroll",
+          "address": "0xFF2533"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

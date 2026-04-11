@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "arcusodyssey",
+  "display_name": "Arcus Odyssey (USA, Japan) (Action Replay)",
+  "aliases": [
+    "Arcus Odyssey (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Arcus Odyssey (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF8212:0C",
+          "desc": "Infinite Health P1",
+          "address": "0xFF8212"
+        },
+        {
+          "code": "FF8213:0C",
+          "desc": "Infinite Health P2",
+          "address": "0xFF8213"
+        },
+        {
+          "code": "FF823A:63",
+          "desc": "Infinite Green Shield Magic P1",
+          "address": "0xFF823A"
+        },
+        {
+          "code": "FF823B:63",
+          "desc": "Have Infinite Red? Magic P1",
+          "address": "0xFF823B"
+        },
+        {
+          "code": "FF8238:XX",
+          "desc": "Have Fire Item(s) Modifier P1 (0-6)",
+          "address": "0xFF8238"
+        },
+        {
+          "code": "FF8218:XX",
+          "desc": "Character Modifier P1",
+          "address": "0xFF8218"
+        },
+        {
+          "code": "FF8219:XX",
+          "desc": "Character Modifier P2",
+          "address": "0xFF8219"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

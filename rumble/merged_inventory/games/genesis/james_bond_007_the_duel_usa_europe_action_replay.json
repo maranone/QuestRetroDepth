@@ -1,0 +1,97 @@
+{
+  "system": "genesis",
+  "normalized_title": "jamesbond007duel",
+  "display_name": "James Bond 007 - The Duel (USA, Europe) (Action Replay)",
+  "aliases": [
+    "James Bond 007 - The Duel (Europe)",
+    "James Bond 007 - The Duel (USA)",
+    "James Bond 007 - The Duel (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\jamesbond007theduel_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFE0AF",
+        "0xFFF472",
+        "0xFFF47A"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JamesBond007TheDuel-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "continue",
+          "address": "0xFFCFC1",
+          "type": "|n1"
+        },
+        {
+          "name": "health",
+          "address": "0xFFE0AF",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFF47A",
+          "type": "|d1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF472",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\James Bond 007 - The Duel (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFBC16:0000",
+          "desc": "No Women To Save",
+          "address": "0xFFBC16"
+        },
+        {
+          "code": "FFE0AE:0009",
+          "desc": "Infinite Health",
+          "address": "0xFFE0AE"
+        },
+        {
+          "code": "FFF47A:04",
+          "desc": "Infinite Lives",
+          "address": "0xFFF47A"
+        },
+        {
+          "code": "FFF47B:04",
+          "desc": "Infinite Clips",
+          "address": "0xFFF47B"
+        },
+        {
+          "code": "FFF47F:11",
+          "desc": "Infinite Ammo",
+          "address": "0xFFF47F"
+        },
+        {
+          "code": "FFF481:02",
+          "desc": "Infinite Grenades",
+          "address": "0xFFF481"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

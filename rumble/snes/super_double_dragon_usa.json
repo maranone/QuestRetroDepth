@@ -1,0 +1,69 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Super Double Dragon (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Super Double Dragon (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "DF8C-070B",
+      "desc": "1 Extra Credit (2-Player Game A)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DB86-070B",
+      "desc": "9 Lives (1-Player Game)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D186-070B",
+      "desc": "6 Lives (1-Player Game)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DF86-070B",
+      "desc": "1 Life (1-Player Game)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DB88-0D6B",
+      "desc": "9 Lives (2-Player Game A)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D188-0D6B",
+      "desc": "6 Lives (2-Player Game A)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DF88-0D6B",
+      "desc": "1 Life (2-Player Game A)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4A86-6F05",
+      "desc": "Infinite Lives (Player 1)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB3-A7F1",
+      "desc": "Dragon Power Increases Faster",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D7B2-A7B5",
+      "desc": "Prolonged Maximum Dragon Power",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1D6F-0766",
+      "desc": "Infinite Energy",
+      "kind": "game_genie"
+    }
+  ]
+}

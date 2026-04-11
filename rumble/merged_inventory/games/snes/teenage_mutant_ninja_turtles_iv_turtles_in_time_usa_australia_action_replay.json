@@ -1,0 +1,55 @@
+{
+  "system": "snes",
+  "normalized_title": "teenagemutantninjaturtlesivturtlesintime",
+  "display_name": "Teenage Mutant Ninja Turtles IV - Turtles in Time (USA, Australia) (Action Replay)",
+  "aliases": [
+    "Teenage Mutant Ninja Turtles IV - Turtles in Time (USA) (Beta 1)",
+    "Teenage Mutant Ninja Turtles IV - Turtles in Time (USA) (Beta 2)",
+    "Teenage Mutant Ninja Turtles IV - Turtles in Time (USA)",
+    "Teenage Mutant Ninja Turtles IV - Turtles in Time (USA, Australia) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\teenagemutantninjaturtlesivturtlesintime_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E1A9C",
+        "0x7E1AA0"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TeenageMutantNinjaTurtlesIVTurtlesInTime-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E1AA0",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E1A9C",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Teenage Mutant Ninja Turtles IV - Turtles in Time (USA, Australia) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

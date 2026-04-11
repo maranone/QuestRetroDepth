@@ -1,0 +1,82 @@
+{
+  "system": "snes",
+  "normalized_title": "adventuresofrockyandbullwinkleandfriends",
+  "display_name": "Adventures of Rocky and Bullwinkle and Friends, The (USA) (Action Replay)",
+  "aliases": [
+    "Adventures of Rocky and Bullwinkle and Friends, The (USA) (Action Replay)",
+    "Adventures of Rocky and Bullwinkle and Friends, The (USA) (Game Genie)",
+    "Adventures of Rocky and Bullwinkle and Friends, The (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\adventuresofrockyandbullwinkleandfriends_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E05C1",
+        "0x7E05C7",
+        "0x7E05CB"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AdventuresOfRockyAndBullwinkleAndFriends-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E05CB",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E05C7",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E05C1",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Adventures of Rocky and Bullwinkle and Friends, The (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E05CB05",
+          "desc": "Infinite Health",
+          "address": "0x7E05CB"
+        },
+        {
+          "code": "7E052302",
+          "desc": "Infinite Continues",
+          "address": "0x7E0523"
+        },
+        {
+          "code": "7E05CD00",
+          "desc": "Flags Modifier",
+          "address": "0x7E05CD"
+        },
+        {
+          "code": "7E062BFF",
+          "desc": "Invincibility",
+          "address": "0x7E062B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

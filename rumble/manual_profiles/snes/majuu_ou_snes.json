@@ -1,0 +1,83 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "MajuuOu",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Majuu Ou (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "MajuuOu-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_0_9f",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E009F",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x009F",
+          "bank": "7E",
+          "wram_offset": 159
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss",
+          "address": "0x7E009F",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_1_87",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0x7E0087",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0087",
+          "bank": "7E",
+          "wram_offset": 135
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.51,
+          "duration_ms": 100
+        }
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on attacks",
+      "source_fields": [
+        {
+          "name": "rumble_on_attacks",
+          "address": "0x7E0087",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

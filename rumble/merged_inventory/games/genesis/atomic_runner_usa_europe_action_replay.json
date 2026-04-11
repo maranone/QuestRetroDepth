@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "atomicrunner",
+  "display_name": "Atomic Runner (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Atomic Runner (Europe)",
+    "Atomic Runner (USA)",
+    "Atomic Runner (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\atomicrunner_genesis.json",
+      "trigger_count": 4,
+      "field_names": [
+        "gameover",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFC04A",
+        "0xFFC312",
+        "0xFFC323"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AtomicRunner-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFFC04A",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFC323",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFC312",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Atomic Runner (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFC323:99",
+          "desc": "Infinite Lives",
+          "address": "0xFFC323"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

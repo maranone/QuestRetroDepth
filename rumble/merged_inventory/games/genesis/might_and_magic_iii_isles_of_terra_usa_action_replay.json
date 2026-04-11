@@ -1,0 +1,37 @@
+{
+  "system": "genesis",
+  "normalized_title": "mightandmagiciiiislesofterra",
+  "display_name": "Might and Magic III - Isles of Terra (USA) (Action Replay)",
+  "aliases": [
+    "Might and Magic III - Isles of Terra (USA) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Might and Magic III - Isles of Terra (USA) (Proto).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFC82E:00FF",
+          "desc": "Have Lots of Gold",
+          "address": "0xFFC82E"
+        },
+        {
+          "code": "FFC82E:00FF",
+          "desc": "Have Maxed Out Gold",
+          "address": "0xFFC82E"
+        },
+        {
+          "code": "FFC82E:00FF",
+          "desc": "Have Maxed Out Gold",
+          "address": "0xFFC82E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

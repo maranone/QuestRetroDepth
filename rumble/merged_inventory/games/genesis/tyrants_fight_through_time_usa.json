@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "tyrantsfightthroughtime",
+  "display_name": "Tyrants - Fight through Time (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tyrants - Fight through Time (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFB602:0000",
+          "desc": "Number of Men Playing Island Modifier",
+          "address": "0xFFB602"
+        },
+        {
+          "code": "FF1256:0000",
+          "desc": "Fake Number of Men Playing Island Modifier",
+          "address": "0xFF1256"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

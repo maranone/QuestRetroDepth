@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "dinoland",
+  "display_name": "Dino Land (USA) (Action Replay)",
+  "aliases": [
+    "Dino Land (USA) (Action Replay)",
+    "Dino Land (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\dinoland_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFFF95"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DinoLand-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "balls",
+          "address": "0xFFF593",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFF95",
+          "type": ">u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Dino Land (USA).cht",
+      "total_cheat_rows": 28,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFF5A3:0003",
+          "desc": "Infinite Balls",
+          "address": "0xFFF5A3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

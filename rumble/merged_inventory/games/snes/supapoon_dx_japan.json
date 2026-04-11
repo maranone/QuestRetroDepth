@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "supapoondx",
+  "display_name": "Supapoon DX (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Supapoon DX (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E019A04",
+          "desc": "Infinite Balls",
+          "address": "0x7E019A"
+        },
+        {
+          "code": "7E01ACC1",
+          "desc": "Infinite Life Bar",
+          "address": "0x7E01AC"
+        },
+        {
+          "code": "7E019E04",
+          "desc": "Infinite Stars (Power)",
+          "address": "0x7E019E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

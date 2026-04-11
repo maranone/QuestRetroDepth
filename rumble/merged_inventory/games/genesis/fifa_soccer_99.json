@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "fifasoccer99",
+  "display_name": "FIFA Soccer 99",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\FIFA Soccer 99.cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFF8B4:0000",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFF8B4"
+        },
+        {
+          "code": "FFF8B6:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFF8B6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

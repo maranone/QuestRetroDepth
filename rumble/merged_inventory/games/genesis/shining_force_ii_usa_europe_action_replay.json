@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "shiningforceii",
+  "display_name": "Shining Force II (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Shining Force II (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Shining Force II (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF6020:00FF",
+          "desc": "Lotsa And Infinite Money",
+          "address": "0xFF6020"
+        },
+        {
+          "code": "FFF027:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFF027"
+        },
+        {
+          "code": "FFEFEF:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFEFEF"
+        },
+        {
+          "code": "FFEFB7:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFEFB7"
+        },
+        {
+          "code": "FFEF0F:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFEF0F"
+        },
+        {
+          "code": "FFEF47:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFEF47"
+        },
+        {
+          "code": "FFEF7F:00",
+          "desc": "Some Enemies Have No Health",
+          "address": "0xFFEF7F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

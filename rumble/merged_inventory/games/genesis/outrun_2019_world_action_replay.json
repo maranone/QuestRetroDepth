@@ -1,0 +1,48 @@
+{
+  "system": "genesis",
+  "normalized_title": "outrun2019",
+  "display_name": "OutRun 2019 (World) (Action Replay)",
+  "aliases": [
+    "OutRun 2019 (USA)",
+    "OutRun 2019 (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\OutRun 2019 (World) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFF350:09",
+          "desc": "Infinite Time (Tens Digit)",
+          "address": "0xFFF350"
+        },
+        {
+          "code": "FFF351:09",
+          "desc": "Infinite Time (Ones Digit)",
+          "address": "0xFFF351"
+        },
+        {
+          "code": "FFF3E3:01",
+          "desc": "Low Lap Time (Seconds)",
+          "address": "0xFFF3E3"
+        },
+        {
+          "code": "FFF3E5:01",
+          "desc": "Low Lap Time (Micro-Seconds)",
+          "address": "0xFFF3E5"
+        },
+        {
+          "code": "FFF309:FF",
+          "desc": "Have Max Acceleration",
+          "address": "0xFFF309"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

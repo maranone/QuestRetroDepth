@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "samprastennis96",
+  "display_name": "Sampras Tennis 96 (Europe) (Action Replay)",
+  "aliases": [
+    "Sampras Tennis 96 (Europe) (J-Cart)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sampras Tennis 96 (Europe) (J-Cart).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF2A0A:0000",
+          "desc": "Opponent Score Modifier (CPU/P2)",
+          "address": "0xFF2A0A"
+        },
+        {
+          "code": "FF2816:0000",
+          "desc": "Character Modifier P1",
+          "address": "0xFF2816"
+        },
+        {
+          "code": "FF28AA:0000",
+          "desc": "Character Modifier P2",
+          "address": "0xFF28AA"
+        },
+        {
+          "code": "FF7738:0000",
+          "desc": "Court Modifier",
+          "address": "0xFF7738"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

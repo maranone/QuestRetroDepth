@@ -1,0 +1,46 @@
+{
+  "system": "genesis",
+  "normalized_title": "eccotidesoftime",
+  "display_name": "Ecco - The Tides of Time (USA, Europe) (Action Replay) (diff)",
+  "aliases": [
+    "Ecco - The Tides of Time (USA) (Beta) (1994-04-29)",
+    "Ecco - The Tides of Time (USA) (Beta) (Earlier)",
+    "Ecco - The Tides of Time (USA)",
+    "Ecco - The Tides of Time (USA, Europe) (Action Replay) (diff)",
+    "Ecco - The Tides of Time (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ecco - The Tides of Time (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFAA1F:40",
+          "desc": "Infinite Health",
+          "address": "0xFFAA1F"
+        },
+        {
+          "code": "FFAA20:04",
+          "desc": "Infinite Air",
+          "address": "0xFFAA20"
+        },
+        {
+          "code": "FFD6C0:0C",
+          "desc": "Gates Taken In 3D Stages",
+          "address": "0xFFD6C0"
+        },
+        {
+          "code": "FFA7D6:XX",
+          "desc": "Level Select",
+          "address": "0xFFA7D6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

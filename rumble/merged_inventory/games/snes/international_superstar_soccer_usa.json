@@ -1,0 +1,105 @@
+{
+  "system": "snes",
+  "normalized_title": "internationalsuperstarsoccer",
+  "display_name": "International Superstar Soccer (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\International Superstar Soccer (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 17,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "7E177400",
+          "desc": "Score Modifier (Player 2)",
+          "address": "0x7E1774"
+        },
+        {
+          "code": "7E177500",
+          "desc": "Score Modifier (Player 2)",
+          "address": "0x7E1775"
+        },
+        {
+          "code": "7E172400",
+          "desc": "Score Modifier (Player 1)",
+          "address": "0x7E1724"
+        },
+        {
+          "code": "7E172500",
+          "desc": "Score Modifier (Player 1)",
+          "address": "0x7E1725"
+        },
+        {
+          "code": "7E177400",
+          "desc": "Opponent's Goals Don't Count",
+          "address": "0x7E1774"
+        },
+        {
+          "code": "7E1A4655",
+          "desc": "Infinite Time",
+          "address": "0x7E1A46"
+        },
+        {
+          "code": "7E1FA200",
+          "desc": "3 Minute Game, instead of 5 Minutes (International Cup and World Series Modes)",
+          "address": "0x7E1FA2"
+        },
+        {
+          "code": "7E1FA202",
+          "desc": "7 Minute Game (International Cup and World Series Modes)",
+          "address": "0x7E1FA2"
+        },
+        {
+          "code": "7E1F9601",
+          "desc": "No Fouls (International Cup and World Series Modes)",
+          "address": "0x7E1F96"
+        },
+        {
+          "code": "7E1F9801",
+          "desc": "No Cards (International Cup and World Series Modes)",
+          "address": "0x7E1F98"
+        },
+        {
+          "code": "7E1F9001",
+          "desc": "No Offside (International Cup and World Series Modes)",
+          "address": "0x7E1F90"
+        },
+        {
+          "code": "7E1F9200",
+          "desc": "Always Sunny (International Cup and World Series Modes)",
+          "address": "0x7E1F92"
+        },
+        {
+          "code": "7E1F9201",
+          "desc": "Always Rain (International Cup and World Series Modes)",
+          "address": "0x7E1F92"
+        },
+        {
+          "code": "7E1F9202",
+          "desc": "Always Snow (International Cup and World Series Modes)",
+          "address": "0x7E1F92"
+        },
+        {
+          "code": "7E1E3830",
+          "desc": "Stop Clock (Training Mode)",
+          "address": "0x7E1E38"
+        },
+        {
+          "code": "7E1E3C30",
+          "desc": "Stop Bonus Clock (Training Mode)",
+          "address": "0x7E1E3C"
+        },
+        {
+          "code": "7E1F9F03",
+          "desc": "Black Ball and Noob Saibot Referee (Open Game Mode)",
+          "address": "0x7E1F9F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

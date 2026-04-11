@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "libertyordeath",
+  "display_name": "Liberty or Death (USA) (Action Replay)",
+  "aliases": [
+    "Liberty or Death (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Liberty or Death (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFEE72:00FF",
+          "desc": "Infinite Gold",
+          "address": "0xFFEE72"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

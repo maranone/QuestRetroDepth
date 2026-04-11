@@ -1,0 +1,110 @@
+{
+  "system": "snes",
+  "normalized_title": "stardustsuplex",
+  "display_name": "Stardust Suplex (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Stardust Suplex (Japan).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 18,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "7E04BC48",
+          "desc": "P1 Inf.Health",
+          "address": "0x7E04BC"
+        },
+        {
+          "code": "7E04BE48",
+          "desc": "P1 Inf.Special",
+          "address": "0x7E04BE"
+        },
+        {
+          "code": "7E024C00",
+          "desc": "Freeze Time",
+          "address": "0x7E024C"
+        },
+        {
+          "code": "7E05BC00",
+          "desc": "Player 2 No Health",
+          "address": "0x7E05BC"
+        },
+        {
+          "code": "7E06BC00",
+          "desc": "Player 3 No Health",
+          "address": "0x7E06BC"
+        },
+        {
+          "code": "7E07BC00",
+          "desc": "Player 4 No Health",
+          "address": "0x7E07BC"
+        },
+        {
+          "code": "7E05BE00",
+          "desc": "Player 2 No Special",
+          "address": "0x7E05BE"
+        },
+        {
+          "code": "7E06BE00",
+          "desc": "Player 3 No Special",
+          "address": "0x7E06BE"
+        },
+        {
+          "code": "7E07BE00",
+          "desc": "Player 4 No Special",
+          "address": "0x7E07BE"
+        },
+        {
+          "code": "7E041D01",
+          "desc": "Player 1 is Missing from the Match",
+          "address": "0x7E041D"
+        },
+        {
+          "code": "7E051D01",
+          "desc": "Player 2 is Missing from the Match",
+          "address": "0x7E051D"
+        },
+        {
+          "code": "7E061D01",
+          "desc": "Player 3 is Missing from the Match",
+          "address": "0x7E061D"
+        },
+        {
+          "code": "7E071D01",
+          "desc": "Player 4 is Missing from the Match",
+          "address": "0x7E071D"
+        },
+        {
+          "code": "7E042B01",
+          "desc": "Player 1 Takes More Damage from Strikes",
+          "address": "0x7E042B"
+        },
+        {
+          "code": "7E052B01",
+          "desc": "Player 2 Takes More Damage from Strikes",
+          "address": "0x7E052B"
+        },
+        {
+          "code": "7E062B01",
+          "desc": "Player 3 Takes More Damage from Strikes",
+          "address": "0x7E062B"
+        },
+        {
+          "code": "7E052B01",
+          "desc": "Player 4 Takes More Damage from Strikes",
+          "address": "0x7E052B"
+        },
+        {
+          "code": "7E082B01",
+          "desc": "Tornado Tag Team Rules",
+          "address": "0x7E082B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

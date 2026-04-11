@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "dearboys",
+  "display_name": "Dear Boys (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Dear Boys (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E071400",
+          "desc": "Minutes Modifier",
+          "address": "0x7E0714"
+        },
+        {
+          "code": "7E071500",
+          "desc": "Seconds Modifier",
+          "address": "0x7E0715"
+        },
+        {
+          "code": "7E078A00",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x7E078A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

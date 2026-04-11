@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "strider",
+  "display_name": "Strider (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Strider (Rumbles)",
+    "Strider (USA, Europe) (Action Replay)",
+    "Strider (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\strider_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFFC00",
+        "0xFFFC3E",
+        "0xFFFD06"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Strider-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFFC3E",
+          "type": ">n4"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFFC00",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFD06",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Strider (USA, Europe).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFFD1A:0003",
+          "desc": "Infinite Continue",
+          "address": "0xFFFD1A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "system": "snes",
+  "normalized_title": "albertodyssey",
+  "display_name": "Albert Odyssey (Japan) (Action Replay)",
+  "aliases": [
+    "Albert Odyssey (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Albert Odyssey (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E0208E7",
+          "desc": "Infinite HP Character 1",
+          "address": "0x7E0208"
+        },
+        {
+          "code": "7E020903",
+          "desc": "Infinite HP Character 1",
+          "address": "0x7E0209"
+        },
+        {
+          "code": "7E0248E7",
+          "desc": "Infinite HP Character 2",
+          "address": "0x7E0248"
+        },
+        {
+          "code": "7E024903",
+          "desc": "Infinite HP Character 2",
+          "address": "0x7E0249"
+        },
+        {
+          "code": "7E0288E7",
+          "desc": "Infinite HP Character 3",
+          "address": "0x7E0288"
+        },
+        {
+          "code": "7E028903",
+          "desc": "Infinite HP Character 3",
+          "address": "0x7E0289"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

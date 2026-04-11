@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "nbaallstarchallenge",
+  "display_name": "NBA All-Star Challenge (USA, Europe) (Action Replay)",
+  "aliases": [
+    "NBA All-Star Challenge (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NBA All-Star Challenge (USA, Europe).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF90CC:00FF",
+          "desc": "Infinite Ball Possession Time",
+          "address": "0xFF90CC"
+        },
+        {
+          "code": "FF90C8:0009",
+          "desc": "Infinite Time (Seconds - Ones Digit)",
+          "address": "0xFF90C8"
+        },
+        {
+          "code": "FF90C6:0009",
+          "desc": "Infinite Time (Seconds - Tens Digit)",
+          "address": "0xFF90C6"
+        },
+        {
+          "code": "FF90C6:0009",
+          "desc": "Infinite Time (&quot;:&quot; Digit)",
+          "address": "0xFF90C6"
+        },
+        {
+          "code": "FF90C4:0009",
+          "desc": "Infinite Time (Thousands Digit)",
+          "address": "0xFF90C4"
+        },
+        {
+          "code": "FF90C4:0009",
+          "desc": "Infinite Time (Ten Thousands Digit)",
+          "address": "0xFF90C4"
+        },
+        {
+          "code": "FF90BE:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFF90BE"
+        },
+        {
+          "code": "FF90CA:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFF90CA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "tatsujintruxton",
+  "display_name": "Tatsujin - Truxton (World) (Action Replay)",
+  "aliases": [
+    "Tatsujin _ Truxton (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tatsujin _ Truxton (World).cht",
+      "total_cheat_rows": 63,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF004E:0006",
+          "desc": "Infinite Lives",
+          "address": "0xFF004E"
+        },
+        {
+          "code": "FF00E4:0024",
+          "desc": "Speed",
+          "address": "0xFF00E4"
+        },
+        {
+          "code": "FF003A:000A",
+          "desc": "All &quot;Ps&quot; - Full Weapon Power",
+          "address": "0xFF003A"
+        },
+        {
+          "code": "FF0050:000A",
+          "desc": "Infinite Truxton Bombs",
+          "address": "0xFF0050"
+        },
+        {
+          "code": "FF00C8:0080",
+          "desc": "Invincible",
+          "address": "0xFF00C8"
+        },
+        {
+          "code": "FF00D0:0010",
+          "desc": "Truxton Beam",
+          "address": "0xFF00D0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

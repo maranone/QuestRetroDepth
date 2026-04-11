@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "caesarspalace",
+  "display_name": "Caesars Palace (USA) (Action Replay)",
+  "aliases": [
+    "Caesars Palace (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Caesars Palace (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFCDD2:07D0",
+          "desc": "Infinite Money",
+          "address": "0xFFCDD2"
+        },
+        {
+          "code": "FFCDD0:00FF",
+          "desc": "Max Money 16 Million Plus) (Read Note)",
+          "address": "0xFFCDD0"
+        },
+        {
+          "code": "FFCDD2:00FF",
+          "desc": "Max Money 16 Million Plus) (Read Note)",
+          "address": "0xFFCDD2"
+        },
+        {
+          "code": "FFCDD2:00FF",
+          "desc": "Have Tons of Money (65 000 Plus)",
+          "address": "0xFFCDD2"
+        },
+        {
+          "code": "FFCDD2:00FF",
+          "desc": "Have Tons of Money (65 000 Plus)",
+          "address": "0xFFCDD2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

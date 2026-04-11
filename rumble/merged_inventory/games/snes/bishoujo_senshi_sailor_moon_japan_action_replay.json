@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "bishoujosenshisailormoon",
+  "display_name": "Bishoujo Senshi Sailor Moon (Japan) (Action Replay)",
+  "aliases": [
+    "Bishoujo Senshi Sailor Moon (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bishoujo Senshi Sailor Moon (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E074050",
+          "desc": "(Unknown. Ask Helder)",
+          "address": "0x7E0740"
+        },
+        {
+          "code": "7E075909",
+          "desc": "Infinite Bombs",
+          "address": "0x7E0759"
+        },
+        {
+          "code": "7E075620",
+          "desc": "Full Charge Meter",
+          "address": "0x7E0756"
+        },
+        {
+          "code": "7E07C050",
+          "desc": "Infinite HP P2",
+          "address": "0x7E07C0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

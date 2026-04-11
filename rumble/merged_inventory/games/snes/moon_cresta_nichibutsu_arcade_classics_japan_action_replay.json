@@ -1,0 +1,45 @@
+{
+  "system": "snes",
+  "normalized_title": "mooncresta",
+  "display_name": "Moon Cresta (Nichibutsu Arcade Classics) (Japan) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Moon Cresta (Nichibutsu Arcade Classics) (Japan) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E095806",
+          "desc": "Infinite (II) Ships Once You Destroy The (I) Ship",
+          "address": "0x7E0958"
+        },
+        {
+          "code": "7E095A02",
+          "desc": "Infinite (II) Ships Once You Destroy The (I) Ship",
+          "address": "0x7E095A"
+        },
+        {
+          "code": "7E095804",
+          "desc": "Infinite (III) Ships Once You Destroy The (I & II) Ships",
+          "address": "0x7E0958"
+        },
+        {
+          "code": "7E095A04",
+          "desc": "Infinite (III) Ships Once You Destroy The (I & II) Ships",
+          "address": "0x7E095A"
+        },
+        {
+          "code": "7E095809",
+          "desc": "Always Have 1st Ship",
+          "address": "0x7E0958"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

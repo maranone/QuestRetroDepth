@@ -1,0 +1,7 @@
+game_name=Ms. Pac-Man (USA, Europe) (Action Replay)
+game_key=MsPacMan-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ff10d3	life_lost	0xFF10D3	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff10d3	life_gained	0xFF10D3	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ff10e9	score	0xFF10E9	3	bcd	big	prev < curr	0.8	1	right:0.350:60

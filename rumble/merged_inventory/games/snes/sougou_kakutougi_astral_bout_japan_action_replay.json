@@ -1,0 +1,97 @@
+{
+  "system": "snes",
+  "normalized_title": "sougoukakutougiastralbout",
+  "display_name": "Sougou Kakutougi - Astral Bout (Japan) (Action Replay)",
+  "aliases": [
+    "Sougou Kakutougi - Astral Bout (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Sougou Kakutougi - Astral Bout (Japan).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 15,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "7E0FC964",
+          "desc": "P1 Infinite Health",
+          "address": "0x7E0FC9"
+        },
+        {
+          "code": "7E0FC900",
+          "desc": "P1 No Health",
+          "address": "0x7E0FC9"
+        },
+        {
+          "code": "7E087263",
+          "desc": "Player 1 Has 99 Points Scored in Each Round",
+          "address": "0x7E0872"
+        },
+        {
+          "code": "7E087400",
+          "desc": "Player 2 Has 0 Points Scored in Each Round",
+          "address": "0x7E0874"
+        },
+        {
+          "code": "7E024463",
+          "desc": "Player 1 Has 99 Points Total at the End of the Fight",
+          "address": "0x7E0244"
+        },
+        {
+          "code": "7E034400",
+          "desc": "Player 2 Has 0 Points Total at the End of the Fight",
+          "address": "0x7E0344"
+        },
+        {
+          "code": "7E093359",
+          "desc": "Infinite Time",
+          "address": "0x7E0933"
+        },
+        {
+          "code": "7E0FD250",
+          "desc": "Player 1 Infinite Arm Health",
+          "address": "0x7E0FD2"
+        },
+        {
+          "code": "7E0FD550",
+          "desc": "Player 1 Infinite Leg Health",
+          "address": "0x7E0FD5"
+        },
+        {
+          "code": "7E082209",
+          "desc": "Infinite Credits",
+          "address": "0x7E0822"
+        },
+        {
+          "code": "7E087900",
+          "desc": "No Health or Knockdown Meters",
+          "address": "0x7E0879"
+        },
+        {
+          "code": "7E03B800",
+          "desc": "Player 2 Takes Massive Damage",
+          "address": "0x7E03B8"
+        },
+        {
+          "code": "7E0FC95A",
+          "desc": "Player 1 Has Infinite Health",
+          "address": "0x7E0FC9"
+        },
+        {
+          "code": "7E0FCC00",
+          "desc": "Player 1 Never Gets Knocked Down",
+          "address": "0x7E0FCC"
+        },
+        {
+          "code": "7E03C0FF",
+          "desc": "Player 2 Gets Knocked Down With 1-Hit",
+          "address": "0x7E03C0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

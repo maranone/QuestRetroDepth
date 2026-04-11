@@ -1,0 +1,45 @@
+{
+  "system": "snes",
+  "normalized_title": "matsumurakunihirodensaikyounorekishionurikaero",
+  "display_name": "Matsumura Kunihiro Den - Saikyou no Rekishi o Nurikaero! (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Matsumura Kunihiro Den - Saikyou no Rekishi o Nurikaero! (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E061664",
+          "desc": "Infinite Time",
+          "address": "0x7E0616"
+        },
+        {
+          "code": "7E0123E0",
+          "desc": "Infinite Health",
+          "address": "0x7E0123"
+        },
+        {
+          "code": "7E012406",
+          "desc": "Infinite Health",
+          "address": "0x7E0124"
+        },
+        {
+          "code": "7E039900",
+          "desc": "Do More Damage",
+          "address": "0x7E0399"
+        },
+        {
+          "code": "7E039B00",
+          "desc": "Do More Damage",
+          "address": "0x7E039B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

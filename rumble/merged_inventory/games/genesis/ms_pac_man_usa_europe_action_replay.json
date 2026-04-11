@@ -1,0 +1,89 @@
+{
+  "system": "genesis",
+  "normalized_title": "mspacman",
+  "display_name": "Ms. Pac-Man (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Ms. Pac-Man (USA, Europe) (Action Replay)",
+    "Ms. Pac-Man (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\mspacman_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF10D3",
+        "0xFF10E9"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MsPacMan-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF10D3",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF10E9",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ms. Pac-Man (USA, Europe).cht",
+      "total_cheat_rows": 61,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF10D2:0002",
+          "desc": "Infinite Lives",
+          "address": "0xFF10D2"
+        },
+        {
+          "code": "FF10E2:0000",
+          "desc": "Invincibility",
+          "address": "0xFF10E2"
+        },
+        {
+          "code": "FF10D3:0003",
+          "desc": "P1 Infinite Lives (P2 also in alternating game)",
+          "address": "0xFF10D3"
+        },
+        {
+          "code": "FF10DB:0003",
+          "desc": "P2 Infinite Lives (except Alternating Game)",
+          "address": "0xFF10DB"
+        },
+        {
+          "code": "FF10E4:0180",
+          "desc": "Infinite Power Pill Time",
+          "address": "0xFF10E4"
+        },
+        {
+          "code": "FF10E3:0000",
+          "desc": "Invincibility - Both Players",
+          "address": "0xFF10E3"
+        },
+        {
+          "code": "FF2197:0063",
+          "desc": "Select any Starting Level",
+          "address": "0xFF2197"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

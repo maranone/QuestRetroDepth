@@ -1,0 +1,84 @@
+{
+  "system": "snes",
+  "normalized_title": "popntwinbeerainbowbelladventures",
+  "display_name": "Pop'n TwinBee - Rainbow Bell Adventures (Europe, Japan) (Action Replay)",
+  "aliases": [
+    "Pop'n TwinBee - Rainbow Bell Adventures (Europe)",
+    "Pop'n TwinBee - Rainbow Bell Adventures (Europe, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\popntwinbeerainbowbelladventures_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E02C0",
+        "0x7E02EC"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\PopnTwinBeeRainbowBellAdventures-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E02EC",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E02C0",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Pop'n TwinBee - Rainbow Bell Adventures (Europe, Japan) (Action Replay).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E02EC0C",
+          "desc": "Infinite Energy P1",
+          "address": "0x7E02EC"
+        },
+        {
+          "code": "7E02E980",
+          "desc": "Have Main Weapon P1",
+          "address": "0x7E02E9"
+        },
+        {
+          "code": "7E02E801",
+          "desc": "Have Gun P1",
+          "address": "0x7E02E8"
+        },
+        {
+          "code": "7E02EE0C",
+          "desc": "Infinite Energy P2",
+          "address": "0x7E02EE"
+        },
+        {
+          "code": "7E02EB80",
+          "desc": "Have Main Weapon P2",
+          "address": "0x7E02EB"
+        },
+        {
+          "code": "7E02EA01",
+          "desc": "Have Gun P2",
+          "address": "0x7E02EA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

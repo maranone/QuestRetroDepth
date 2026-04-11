@@ -1,0 +1,155 @@
+{
+  "system": "snes",
+  "normalized_title": "addamsfamily",
+  "display_name": "Addams Family, The (World) (Action Replay)",
+  "aliases": [
+    "Addams Family, The (Europe) (En,Fr,De)",
+    "Addams Family, The (Japan)",
+    "Addams Family, The (Rumbles)",
+    "Addams Family, The (USA)",
+    "Addams Family, The (World) (Action Replay)",
+    "The Addams Family"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\addamsfamily_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E00A7",
+        "0x7E00AC",
+        "0x7E00C3"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AddamsFamily-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E00C3",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E00AC",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E00A7",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Addams Family, The (World) (Action Replay).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 17,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E00C5FF",
+          "desc": "Invincible",
+          "address": "0x7E00C5"
+        },
+        {
+          "code": "7E00AB99",
+          "desc": "Max Money",
+          "address": "0x7E00AB"
+        },
+        {
+          "code": "7E00AC99",
+          "desc": "Max Lives",
+          "address": "0x7E00AC"
+        },
+        {
+          "code": "7E0064FF",
+          "desc": "Always Fez-Copter",
+          "address": "0x7E0064"
+        },
+        {
+          "code": "7E00EEFF",
+          "desc": "Always Fencing Sword",
+          "address": "0x7E00EE"
+        },
+        {
+          "code": "7E00EFFF",
+          "desc": "Always Golf Balls",
+          "address": "0x7E00EF"
+        },
+        {
+          "code": "7E00A999",
+          "desc": "Score More Points",
+          "address": "0x7E00A9"
+        },
+        {
+          "code": "7E0084FF",
+          "desc": "Turbo Speed Right",
+          "address": "0x7E0084"
+        },
+        {
+          "code": "7E008A00",
+          "desc": "Stage Hall of Stairs",
+          "address": "0x7E008A"
+        },
+        {
+          "code": "7E008A01",
+          "desc": "Stage Addams Residence",
+          "address": "0x7E008A"
+        },
+        {
+          "code": "7E008A03",
+          "desc": "Stage Conservatory",
+          "address": "0x7E008A"
+        },
+        {
+          "code": "7E008A04",
+          "desc": "Stage Chain Room",
+          "address": "0x7E008A"
+        },
+        {
+          "code": "7E008A07",
+          "desc": "Stage Games Room",
+          "address": "0x7E008A"
+        },
+        {
+          "code": "7E008A09",
+          "desc": "Stage Furnace",
+          "address": "0x7E008A"
+        },
+        {
+          "code": "7E008A0C",
+          "desc": "Stage Caves",
+          "address": "0x7E008A"
+        },
+        {
+          "code": "7E008A0D",
+          "desc": "Stage Library",
+          "address": "0x7E008A"
+        },
+        {
+          "code": "7E008A0E",
+          "desc": "Stage Addams Vault",
+          "address": "0x7E008A"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 10,
+      "mk3_label": "ADAMS FAMILY"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

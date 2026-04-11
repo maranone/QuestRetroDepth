@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "tintinintibet",
+  "display_name": "Tintin in Tibet (Europe) (En,Fr,De,Nl)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Tintin in Tibet (Europe) (En,Fr,De,Nl).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E050F2C",
+          "desc": "Invincibility",
+          "address": "0x7E050F"
+        },
+        {
+          "code": "7E05CB03",
+          "desc": "Infinite Lives",
+          "address": "0x7E05CB"
+        },
+        {
+          "code": "7E05C904",
+          "desc": "Infinite Energy",
+          "address": "0x7E05C9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

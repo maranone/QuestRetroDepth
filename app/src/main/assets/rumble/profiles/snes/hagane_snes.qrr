@@ -1,0 +1,6 @@
+game_name=Hagane
+game_key=Hagane-Snes
+system=snes
+integration_tier=manual
+trigger	enemy_defeated_0_516	enemy_defeated	0x7E0516	1	uint	native	prev != curr	0.55	1	left:0.510:100
+trigger	damage_taken_1_514	damage_taken	0x7E0514	1	uint	native	prev > curr	0.85	1	left:0.750:180

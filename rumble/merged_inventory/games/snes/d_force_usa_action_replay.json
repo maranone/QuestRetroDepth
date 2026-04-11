@@ -1,0 +1,64 @@
+{
+  "system": "snes",
+  "normalized_title": "dforce",
+  "display_name": "D-Force (USA) (Action Replay)",
+  "aliases": [
+    "D-Force (USA) (Action Replay)",
+    "D-Force (USA) (Game Genie)",
+    "D-Force (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\D-Force (USA).cht",
+      "total_cheat_rows": 37,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E021509",
+          "desc": "9 Lives",
+          "address": "0x7E0215"
+        },
+        {
+          "code": "7E1D0900",
+          "desc": "Difficulty Modifier",
+          "address": "0x7E1D09"
+        },
+        {
+          "code": "7E12960F",
+          "desc": "Invincible",
+          "address": "0x7E1296"
+        },
+        {
+          "code": "7E020F01",
+          "desc": "Shot Strength Modifier",
+          "address": "0x7E020F"
+        },
+        {
+          "code": "7E02100C",
+          "desc": "Activate Homing Missiles",
+          "address": "0x7E0210"
+        },
+        {
+          "code": "7E120401",
+          "desc": "Level Modifier",
+          "address": "0x7E1204"
+        },
+        {
+          "code": "7E126F01",
+          "desc": "Zoom In",
+          "address": "0x7E126F"
+        },
+        {
+          "code": "7E169801",
+          "desc": "Zoom In",
+          "address": "0x7E1698"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

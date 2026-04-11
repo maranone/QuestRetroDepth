@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "rbibaseball93",
+  "display_name": "R.B.I. Baseball '93 (USA) (Action Replay)",
+  "aliases": [
+    "R.B.I. Baseball '93 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\R.B.I. Baseball '93 (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 6,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF0E6A:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFF0E6A"
+        },
+        {
+          "code": "FF0E6A:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFF0E6A"
+        },
+        {
+          "code": "FF0E6C:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFF0E6C"
+        },
+        {
+          "code": "FF07CA:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFF07CA"
+        },
+        {
+          "code": "FF07CA:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFF07CA"
+        },
+        {
+          "code": "FF0E60:0000",
+          "desc": "Infinite Spitball Warnings - Home Team",
+          "address": "0xFF0E60"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

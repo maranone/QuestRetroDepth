@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "championshippool",
+  "display_name": "Championship Pool (USA) (Action Replay)",
+  "aliases": [
+    "Championship Pool (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Championship Pool (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFD2F6:0000",
+          "desc": "Always Player 1's Turn",
+          "address": "0xFFD2F6"
+        },
+        {
+          "code": "FFD2F6:0001",
+          "desc": "Always Player 2's Turn",
+          "address": "0xFFD2F6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Mega Man X 2 [Esp]",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Mega Man X 2 [Esp].cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "D5C5-6DB8",
+      "desc": "Super Jump",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DBC5-6DB8",
+      "desc": "Mega Jump",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D8C5-6DB8",
+      "desc": "Ultra Mega Jump",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6D2D-AF14",
+      "desc": "Makes Your Normal Weapon MUCH More Powerful!",
+      "kind": "game_genie"
+    },
+    {
+      "code": "828A-DFC4",
+      "desc": "Infinite Special Weapons (Once You Have Them - Only Works Without Powering Up Special Weapons)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "828A-DFC4",
+      "desc": "Infinite Special Weapons (Once You Have Them - Even Without Powering Up Special Weapons)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "828E-D414",
+      "desc": "Infinite Special Weapons (Once You Have Them - Even Without Powering Up Special Weapons)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9EB3-D714",
+      "desc": "Dash Longer",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CEB3-D714",
+      "desc": "Fall Slowly",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C223-0414",
+      "desc": "Infinite Health",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F0B1-676F",
+      "desc": "Start With Max Health Bar",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F02F-6469",
+      "desc": "Big Energy Pellets Fill Your Energy Bar To Full After Pick-Up",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F028-D7A1",
+      "desc": "Small Energy Pellets Fill Your Energy Bar To Full After Pick-Up",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F927-6DDF",
+      "desc": "Start With 3/4 Weapon Energy & 3/4 Max Weapon Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9927-6FDF",
+      "desc": "Start With 3/4 Weapon Energy & 3/4 Max Weapon Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F927-640F",
+      "desc": "Start With 3/4 Weapon Energy & 3/4 Max Weapon Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F926-646F",
+      "desc": "Start With 3/4 Weapon Energy & 3/4 Max Weapon Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D327-6DDF",
+      "desc": "Start With 1/2 Weapon Energy & 1/2 Max Weapon Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0327-6FDF",
+      "desc": "Start With 1/2 Weapon Energy & 1/2 Max Weapon Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D327-640F",
+      "desc": "Start With 1/2 Weapon Energy & 1/2 Max Weapon Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D326-646F",
+      "desc": "Start With 1/2 Weapon Energy & 1/2 Max Weapon Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D527-6DDF",
+      "desc": "Start With 1/4 Weapon Energy & 1/4 Max Weapon Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0527-6FDF",
+      "desc": "Start With 1/4 Weapon Energy & 1/4 Max Weapon Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D527-640F",
+      "desc": "Start With 1/4 Weapon Energy & 1/4 Max Weapon Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D526-646F",
+      "desc": "Start With 1/4 Weapon Energy & 1/4 Max Weapon Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2BC-07A4",
+      "desc": "Infinite Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2AE-6D6D",
+      "desc": "Infinite Sub T",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C228-07A9",
+      "desc": "Energy Capsules Don't Refill Sub T",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C22A-07D9",
+      "desc": "Energy Capsules Don't Refill Sub T",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6C28-0DA9",
+      "desc": "Sub T Refills Only to 3/4",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6528-0DA9",
+      "desc": "Sub T Refills Only to 1/2",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6028-0DA9",
+      "desc": "Sub T Refills Only to 1/4",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D084-DDC7",
+      "desc": "Burst Fire",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D685-DD17",
+      "desc": "Level 1 Charge Fires Level 2 Shot",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D185-DD17",
+      "desc": "Level 1 Charge Fires 2nd Level 3 Shot",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D48C-DD37",
+      "desc": "Level 2 Charge Fires Level 1 Shot",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D18C-DD37",
+      "desc": "Level 2 Charge Fires 2nd Level 3 Shot",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0D84-0D92",
+      "desc": "Crystal Snail Starts With 2x Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F684-0D92",
+      "desc": "Crystal Snail Starts With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FD84-0D92",
+      "desc": "Crystal Snail Starts With 1/2 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D684-0D92",
+      "desc": "Crystal Snail Starts With 1/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0DA1-6F2A",
+      "desc": "Bubble Crab Starts With 2x Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F6A1-6F2A",
+      "desc": "Bubble Crab Starts With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDA1-6F2A",
+      "desc": "Bubble Crab Starts With 1/2 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D6A1-6F2A",
+      "desc": "Bubble Crab Starts With 1/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0DC6-AF63",
+      "desc": "Morph Moth Starts With 2x Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F6C6-AF63",
+      "desc": "Morph Moth Starts With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDC6-AF63",
+      "desc": "Morph Moth Starts With 1/2 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0D88-ADD2",
+      "desc": "Wheel Gator Starts With 2x Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F688-ADD2",
+      "desc": "Wheel Gator Starts With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FD88-ADD2",
+      "desc": "Wheel Gator Starts With 1/2 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D688-ADD2",
+      "desc": "Wheel Gator Starts With 1/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0D3D-0434",
+      "desc": "Overdrive Ostrich Starts With 2x Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F63D-0434",
+      "desc": "Overdrive Ostrich Starts With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FD3D-0434",
+      "desc": "Overdrive Ostrich Starts With 1/2 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D63D-0434",
+      "desc": "Overdrive Ostrich Starts With 1/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0DB9-DFF7",
+      "desc": "Wire Sponge Starts With 2x Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F6B9-DFF7",
+      "desc": "Wire Sponge Starts With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDB9-DFF7",
+      "desc": "Wire Sponge Starts With 1/2 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D6B9-DFF7",
+      "desc": "Wire Sponge Starts With 1/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0DC5-DF97",
+      "desc": "Magna Centipede Starts With 2x Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F6C5-DF97",
+      "desc": "Magna Centipede Starts With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDC5-DF97",
+      "desc": "Magna Centipede Starts With 1/2 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D6C5-DF97",
+      "desc": "Magna Centipede Starts With 1/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0DA9-DFBD",
+      "desc": "Flame Stag Starts With 2x Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F6A9-DFBD",
+      "desc": "Flame Stag Starts With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDA9-DFBD",
+      "desc": "Flame Stag Starts With 1/2 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D6A9-DFBD",
+      "desc": "Flame Stag Starts With 1/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0D80-6497",
+      "desc": "Agile, Serges & Violen Start With 2x Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F680-6497",
+      "desc": "Agile, Serges & Violen Start With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FD80-6497",
+      "desc": "Agile, Serges & Violen Start With 1/2 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D680-6497",
+      "desc": "Agile, Serges & Violen Start With 1/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0DA0-07A8",
+      "desc": "Serges (X-Hunter Base Stage 2) Starts With 2x Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F6A0-07A8",
+      "desc": "Serges (X-Hunter Base Stage 2) Starts With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDA0-07A8",
+      "desc": "Serges (X-Hunter Base Stage 2) Starts With 1/2 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D6A0-07A8",
+      "desc": "Serges (X-Hunter Base Stage 2) Starts With 1/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0DE0-01F0",
+      "desc": "Agile (X-Hunter Base Stage 3) Starts With 2x Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F6E0-01F0",
+      "desc": "Agile (X-Hunter Base Stage 3) Starts With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDE0-01F0",
+      "desc": "Agile (X-Hunter Base Stage 3) Starts With 1/2 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D6E0-01F0",
+      "desc": "Agile (X-Hunter Base Stage 3) Starts With 1/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0D88-D835",
+      "desc": "Zero Starts With 2x Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F688-D835",
+      "desc": "Zero Starts With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FD88-D835",
+      "desc": "Zero Starts With 1/2 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D688-D835",
+      "desc": "Zero Starts With 1/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0D36-0836",
+      "desc": "Sigma Starts With 2x Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F636-0836",
+      "desc": "Sigma Starts With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FD36-0836",
+      "desc": "Sigma Starts With 1/2 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D636-0836",
+      "desc": "Sigma Starts With 1/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7D27-0C36",
+      "desc": "Sigma Virus Starts With 3/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4D27-0C36",
+      "desc": "Sigma Virus Starts With 1/2 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FD27-0C36",
+      "desc": "Sigma Virus Starts With 1/4 Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "63B2-640F",
+      "desc": "Start With All Equipment",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDAC-074F",
+      "desc": "Can Do Dragon Punch Anytime; Even In Mid-Air And Multiple Times",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBAE-DFDF",
+      "desc": "Get All Equipment when you Enter the Start Menu",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EEAE-DF0F",
+      "desc": "Get All Equipment when you Enter the Start Menu",
+      "kind": "game_genie"
+    },
+    {
+      "code": "62AE-DF6F",
+      "desc": "Get All Equipment when you Enter the Start Menu",
+      "kind": "game_genie"
+    }
+  ]
+}

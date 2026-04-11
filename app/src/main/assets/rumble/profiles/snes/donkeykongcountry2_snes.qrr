@@ -1,0 +1,6 @@
+game_name=DonkeyKongCountry2
+game_key=DonkeyKongCountry2-Snes
+system=snes
+integration_tier=stable
+trigger	life_lost_lives_08c0	life_lost	0x7E08C0	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_08c0	life_gained	0x7E08C0	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180

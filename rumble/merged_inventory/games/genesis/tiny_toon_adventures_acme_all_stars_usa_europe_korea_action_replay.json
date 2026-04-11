@@ -1,0 +1,103 @@
+{
+  "system": "genesis",
+  "normalized_title": "tinytoonadventuresacmeallstars",
+  "display_name": "Tiny Toon Adventures - Acme All-Stars (USA, Europe, Korea) (Action Replay)",
+  "aliases": [
+    "Tiny Toon Adventures - Acme All-Stars (USA, Europe, Korea) (Action Replay)",
+    "Tiny Toon Adventures - Acme All-Stars (USA, Korea)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tiny Toon Adventures - Acme All-Stars (USA, Korea).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 16,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FFA070:0000",
+          "desc": "Character Highlighter P1 (On Menu)",
+          "address": "0xFFA070"
+        },
+        {
+          "code": "FFA0F0:0000",
+          "desc": "Character Highlighter P2 (On Menu)",
+          "address": "0xFFA0F0"
+        },
+        {
+          "code": "FFA29E:0000",
+          "desc": "Stadium Modifier",
+          "address": "0xFFA29E"
+        },
+        {
+          "code": "FFFB40:0000",
+          "desc": "Stadium Highlighter (On Menu)",
+          "address": "0xFFFB40"
+        },
+        {
+          "code": "FFE02A:0000",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFE02A"
+        },
+        {
+          "code": "FFE02C:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFE02C"
+        },
+        {
+          "code": "FFE032:0029",
+          "desc": "Player 1",
+          "address": "0xFFE032"
+        },
+        {
+          "code": "FFE032:0000",
+          "desc": "Player 2",
+          "address": "0xFFE032"
+        },
+        {
+          "code": "FFE034:0000",
+          "desc": "Player 3",
+          "address": "0xFFE034"
+        },
+        {
+          "code": "FFE034:0029",
+          "desc": "Player 1",
+          "address": "0xFFE034"
+        },
+        {
+          "code": "FFE036:0000",
+          "desc": "Player 2",
+          "address": "0xFFE036"
+        },
+        {
+          "code": "FFE036:0000",
+          "desc": "Player 3",
+          "address": "0xFFE036"
+        },
+        {
+          "code": "FFA050:0000",
+          "desc": "Score Modifier P1 (First Bowl)",
+          "address": "0xFFA050"
+        },
+        {
+          "code": "FFA052:0000",
+          "desc": "Score Modifier P1 (First Bowl Total)",
+          "address": "0xFFA052"
+        },
+        {
+          "code": "FFA0D0:0000",
+          "desc": "Score Modifier P2-P4 (First Bowl)",
+          "address": "0xFFA0D0"
+        },
+        {
+          "code": "FFA0D2:0000",
+          "desc": "Score Modifier P2-P4 (First Bowl Total)",
+          "address": "0xFFA0D2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

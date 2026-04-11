@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "cadash",
+  "display_name": "Cadash (USA, Korea) (Action Replay)",
+  "aliases": [
+    "Cadash (USA, Asia, Korea)",
+    "Cadash (USA, Korea) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\cadash_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "level"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFF0E4D"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Cadash-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "exp",
+          "address": "0xFF0E4B",
+          "type": "|u1"
+        },
+        {
+          "name": "gold",
+          "address": "0xFF0E8E",
+          "type": ">u2"
+        },
+        {
+          "name": "hp",
+          "address": "0xFF0E51",
+          "type": "|u1"
+        },
+        {
+          "name": "level",
+          "address": "0xFF0E4D",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Cadash (USA, Korea) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF1135:00",
+          "desc": "No Health Black Pudding (Boss)",
+          "address": "0xFF1135"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

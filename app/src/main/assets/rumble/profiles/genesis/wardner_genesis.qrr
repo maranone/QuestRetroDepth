@@ -1,0 +1,7 @@
+game_name=Wardner (USA) (Action Replay)
+game_key=Wardner-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ff8294	life_lost	0xFF8294	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff8294	life_gained	0xFF8294	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ff82a2	score	0xFF82A2	4	bcd	big	prev < curr	0.8	1	right:0.350:60

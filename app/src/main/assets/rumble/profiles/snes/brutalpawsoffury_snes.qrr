@@ -1,0 +1,5 @@
+game_name=BrutalPawsOfFury
+game_key=BrutalPawsOfFury-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_156e	damage_taken	0x7E156E	1	uint	native	prev > curr	0.85	1	left:0.750:180

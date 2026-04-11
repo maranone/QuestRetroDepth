@@ -1,0 +1,72 @@
+{
+  "system": "genesis",
+  "normalized_title": "europeanclubsoccer",
+  "display_name": "European Club Soccer (Europe) (Action Replay)",
+  "aliases": [
+    "European Club Soccer (Europe) (Action Replay)",
+    "European Club Soccer (Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\europeanclubsoccer_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFF2402"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\EuropeanClubSoccer-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "half",
+          "address": "0xFF1D24",
+          "type": "|u1"
+        },
+        {
+          "name": "opponent_score",
+          "address": "0xFF2404",
+          "type": ">u2"
+        },
+        {
+          "name": "score",
+          "address": "0xFF2402",
+          "type": ">u2"
+        },
+        {
+          "name": "time",
+          "address": "0xFF2A09",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\European Club Soccer (Europe).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF2402:0000",
+          "desc": "Team 2 Score Modifier (P1)",
+          "address": "0xFF2402"
+        },
+        {
+          "code": "FF2404:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFF2404"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "fifa98roadtoworldcup",
+  "display_name": "FIFA 98 - Road to World Cup (Europe) (En,Fr,Es,It,Sv)",
+  "aliases": [
+    "FIFA 98 - Road to World Cup (Europe) (En,Fr,Es,It,Sv)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\FIFA 98 - Road to World Cup (Europe) (En,Fr,Es,It,Sv).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFF89A:0000",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFF89A"
+        },
+        {
+          "code": "FFF89C:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFF89C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

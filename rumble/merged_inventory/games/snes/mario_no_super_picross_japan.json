@@ -1,0 +1,55 @@
+{
+  "system": "snes",
+  "normalized_title": "marionosuperpicross",
+  "display_name": "Mario no Super Picross (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Mario no Super Picross (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E0FDE00",
+          "desc": "Inf Time",
+          "address": "0x7E0FDE"
+        },
+        {
+          "code": "7E00CA00",
+          "desc": "No Time Loss on Misses",
+          "address": "0x7E00CA"
+        },
+        {
+          "code": "7E110200",
+          "desc": "Automatically Beat The Level",
+          "address": "0x7E1102"
+        },
+        {
+          "code": "7E110300",
+          "desc": "Automatically Beat The Level",
+          "address": "0x7E1103"
+        },
+        {
+          "code": "7E110400",
+          "desc": "Automatically Beat The Level",
+          "address": "0x7E1104"
+        },
+        {
+          "code": "7E119C0E",
+          "desc": "Sound Test replaces Title Screen",
+          "address": "0x7E119C"
+        },
+        {
+          "code": "7E119C0F",
+          "desc": "Data Clear replaces Title Screen",
+          "address": "0x7E119C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

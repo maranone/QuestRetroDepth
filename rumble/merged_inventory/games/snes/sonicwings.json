@@ -1,0 +1,43 @@
+{
+  "system": "snes",
+  "normalized_title": "sonicwings",
+  "display_name": "SonicWings",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\sonicwings_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7FB78C",
+        "0x7FB7A4"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SonicWings-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7FB78C",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7FB7A4",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

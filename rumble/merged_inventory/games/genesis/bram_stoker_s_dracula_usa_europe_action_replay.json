@@ -1,0 +1,82 @@
+{
+  "system": "genesis",
+  "normalized_title": "bramstokersdracula",
+  "display_name": "Bram Stoker's Dracula (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Bram Stoker's Dracula (Europe)",
+    "Bram Stoker's Dracula (USA)",
+    "Bram Stoker's Dracula (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\bramstokersdracula_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF096A",
+        "0xFF096F",
+        "0xFF0979"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BramStokersDracula-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF096F",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF0979",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF096A",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Bram Stoker's Dracula (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF096F:03",
+          "desc": "Infinite Energy",
+          "address": "0xFF096F"
+        },
+        {
+          "code": "FF0979:09",
+          "desc": "Infinite Lives",
+          "address": "0xFF0979"
+        },
+        {
+          "code": "FF0AAF:63",
+          "desc": "Infinite Special Weapons",
+          "address": "0xFF0AAF"
+        },
+        {
+          "code": "FF0AAF:63",
+          "desc": "Bosses Die 1 Hit",
+          "address": "0xFF0AAF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

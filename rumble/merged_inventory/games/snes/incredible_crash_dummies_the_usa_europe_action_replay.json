@@ -1,0 +1,49 @@
+{
+  "system": "snes",
+  "normalized_title": "incrediblecrashdummies",
+  "display_name": "Incredible Crash Dummies, The (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Incredible Crash Dummies, The (USA)",
+    "Incredible Crash Dummies, The (USA, Europe) (Action Replay)",
+    "The Incredible Crash Dummies"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Incredible Crash Dummies, The (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E03B509",
+          "desc": "Infinite Lives",
+          "address": "0x7E03B5"
+        },
+        {
+          "code": "7E03B605",
+          "desc": "Infinite Energy",
+          "address": "0x7E03B6"
+        },
+        {
+          "code": "7E04A063",
+          "desc": "Infinite Wrenches",
+          "address": "0x7E04A0"
+        },
+        {
+          "code": "7E04A63C",
+          "desc": "Infinite Time",
+          "address": "0x7E04A6"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "CRASH DUMMIES"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

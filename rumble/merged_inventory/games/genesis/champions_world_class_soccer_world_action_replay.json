@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "championsworldclasssoccer",
+  "display_name": "Champions World Class Soccer (World) (Action Replay)",
+  "aliases": [
+    "Champions World Class Soccer (World) (Action Replay)",
+    "Champions World Class Soccer (World) (En,Fr,De,Es)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\championsworldclasssoccer_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ChampionsWorldClassSoccer-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "chile_score",
+          "address": "0xFF04C1",
+          "type": "|u1"
+        },
+        {
+          "name": "germany_score",
+          "address": "0xFF04C0",
+          "type": "|u1"
+        },
+        {
+          "name": "time_minutes",
+          "address": "0xFF023B",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Champions World Class Soccer (World) (En,Fr,De,Es).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

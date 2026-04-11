@@ -1,0 +1,74 @@
+{
+  "system": "snes",
+  "normalized_title": "junglebook",
+  "display_name": "Jungle Book, The (World) (Action Replay)",
+  "aliases": [
+    "Jungle Book (Rumbles)",
+    "Jungle Book, The (USA)",
+    "Jungle Book, The (World) (Action Replay)",
+    "The Jungle Book"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\junglebook_snes.json",
+      "trigger_count": 6,
+      "field_names": [
+        "health",
+        "lives",
+        "score0",
+        "score1"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0x7E0104",
+        "0x7E010B",
+        "0x7E015D",
+        "0x7E015E"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JungleBook-Snes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E010B",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E0104",
+          "type": "|i1"
+        },
+        {
+          "name": "score0",
+          "address": "0x7E015D",
+          "type": "|d1"
+        },
+        {
+          "name": "score1",
+          "address": "0x7E015E",
+          "type": "|d1"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Jungle Book, The (World) (Action Replay).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 10,
+      "mk3_label": "JUNGLE BOOK"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

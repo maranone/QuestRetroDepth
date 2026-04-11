@@ -1,0 +1,77 @@
+{
+  "system": "genesis",
+  "normalized_title": "simpsonsbartsnightmare",
+  "display_name": "Simpsons, The - Bart's Nightmare (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Simpsons, The - Bart's Nightmare (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Simpsons, The - Bart's Nightmare (USA, Europe).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "FFDEBC:0001",
+          "desc": "Don't Turn To A Frog",
+          "address": "0xFFDEBC"
+        },
+        {
+          "code": "FFC812:0004",
+          "desc": "Infinite Lives",
+          "address": "0xFFC812"
+        },
+        {
+          "code": "FFC814:1F1F",
+          "desc": "Infinite Health",
+          "address": "0xFFC814"
+        },
+        {
+          "code": "FFC816:0000",
+          "desc": "Weapon Modifier",
+          "address": "0xFFC816"
+        },
+        {
+          "code": "FFDF7A:0005",
+          "desc": "Kill Germs In 1 Hit",
+          "address": "0xFFDF7A"
+        },
+        {
+          "code": "FFC192:0000",
+          "desc": "Can't Be Blown Up",
+          "address": "0xFFC192"
+        },
+        {
+          "code": "FFC812:0004",
+          "desc": "Infinite Lives",
+          "address": "0xFFC812"
+        },
+        {
+          "code": "FFC673:0001",
+          "desc": "Infinite Energy",
+          "address": "0xFFC673"
+        },
+        {
+          "code": "FFC802:0005",
+          "desc": "Infinite Bubblegum",
+          "address": "0xFFC802"
+        },
+        {
+          "code": "FFC807:0005",
+          "desc": "Infinite Melon Seeds",
+          "address": "0xFFC807"
+        },
+        {
+          "code": "FFC862:0000",
+          "desc": "Removes Some Enemies",
+          "address": "0xFFC862"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

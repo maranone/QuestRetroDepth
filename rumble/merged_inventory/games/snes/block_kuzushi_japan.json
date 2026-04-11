@@ -1,0 +1,78 @@
+{
+  "system": "snes",
+  "normalized_title": "blockkuzushi",
+  "display_name": "Block Kuzushi (Japan)",
+  "aliases": [
+    "Block Kuzushi (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\blockkuzushi_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0871",
+        "0x7E0886"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BlockKuzushi-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0886",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0871",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Block Kuzushi (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E0A8E02",
+          "desc": "Paddle is Always Long",
+          "address": "0x7E0A8E"
+        },
+        {
+          "code": "7E082301",
+          "desc": "Paddle is Always Magnetic",
+          "address": "0x7E0823"
+        },
+        {
+          "code": "7E086504",
+          "desc": "Force Field (Never Lose Ball)",
+          "address": "0x7E0865"
+        },
+        {
+          "code": "7E081E01",
+          "desc": "Always Have Laser",
+          "address": "0x7E081E"
+        },
+        {
+          "code": "7E072001",
+          "desc": "1 Hit Kill Bosses",
+          "address": "0x7E0720"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

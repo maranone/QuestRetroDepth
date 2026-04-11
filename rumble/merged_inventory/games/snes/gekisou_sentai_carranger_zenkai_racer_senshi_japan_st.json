@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "gekisousentaicarrangerzenkairacersenshi",
+  "display_name": "Gekisou Sentai Carranger - Zenkai! Racer Senshi (Japan) (ST)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Gekisou Sentai Carranger - Zenkai! Racer Senshi (Japan) (ST).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E1A400F",
+          "desc": "Unlimited Fuel",
+          "address": "0x7E1A40"
+        },
+        {
+          "code": "7E1C10FA",
+          "desc": "Gain Parts Faster",
+          "address": "0x7E1C10"
+        },
+        {
+          "code": "7E1A0301",
+          "desc": "Always Have Weapon",
+          "address": "0x7E1A03"
+        },
+        {
+          "code": "7E1A5000",
+          "desc": "One Hit Kills Bosses",
+          "address": "0x7E1A50"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

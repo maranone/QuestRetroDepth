@@ -1,0 +1,5 @@
+game_name=LionKing
+game_key=LionKing-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_2004	damage_taken	0x7E2004	1	uint	native	prev > curr	0.85	1	left:0.750:180

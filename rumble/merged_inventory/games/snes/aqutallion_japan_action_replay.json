@@ -1,0 +1,32 @@
+{
+  "system": "snes",
+  "normalized_title": "aqutallion",
+  "display_name": "Aqutallion (Japan) (Action Replay)",
+  "aliases": [
+    "Aqutallion (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Aqutallion (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E6001E7",
+          "desc": "Infinite HP Character 1",
+          "address": "0x7E6001"
+        },
+        {
+          "code": "7E600203",
+          "desc": "Infinite HP Character 1",
+          "address": "0x7E6002"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

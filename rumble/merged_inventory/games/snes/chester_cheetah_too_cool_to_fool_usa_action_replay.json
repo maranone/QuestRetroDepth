@@ -1,0 +1,81 @@
+{
+  "system": "snes",
+  "normalized_title": "chestercheetahtoocooltofool",
+  "display_name": "Chester Cheetah - Too Cool to Fool (USA) (Action Replay)",
+  "aliases": [
+    "Chester Cheetah - Too Cool To Fool (Rumbles)",
+    "Chester Cheetah - Too Cool to Fool (USA) (Action Replay)",
+    "Chester Cheetah - Too Cool to Fool (USA) (Game Genie)",
+    "Chester Cheetah - Too Cool to Fool (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\chestercheetahtoocooltofool_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E010D",
+        "0x7E014F"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ChesterCheetahTooCoolToFool-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E014F",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E010D",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Chester Cheetah - Too Cool to Fool (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E014F04",
+          "desc": "Infinite Health",
+          "address": "0x7E014F"
+        },
+        {
+          "code": "7E010009",
+          "desc": "9 Continues",
+          "address": "0x7E0100"
+        },
+        {
+          "code": "7E014F08",
+          "desc": "Infinite Health",
+          "address": "0x7E014F"
+        },
+        {
+          "code": "7E014B99",
+          "desc": "Have Lots of &quot;Paw Coins&quot;",
+          "address": "0x7E014B"
+        },
+        {
+          "code": "7E014C09",
+          "desc": "Have Lots of &quot;Paw Coins&quot;",
+          "address": "0x7E014C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

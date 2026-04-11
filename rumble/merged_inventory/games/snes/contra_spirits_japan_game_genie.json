@@ -1,0 +1,32 @@
+{
+  "system": "snes",
+  "normalized_title": "contraspirits",
+  "display_name": "Contra Spirits (Japan) (Game Genie)",
+  "aliases": [
+    "Contra Spirits (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Contra Spirits (Japan).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E1E6001",
+          "desc": "Enable Stage Select",
+          "address": "0x7E1E60"
+        },
+        {
+          "code": "7E1E3C1E",
+          "desc": "Enable Start with 30 Lives Cheat",
+          "address": "0x7E1E3C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

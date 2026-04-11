@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "funngames",
+  "display_name": "Fun 'n Games (Europe)",
+  "aliases": [
+    "Fun 'n' Games (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Fun 'n' Games (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF1AF8:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF1AF8"
+        },
+        {
+          "code": "FF184E:0063",
+          "desc": "Max NRG (Health)",
+          "address": "0xFF184E"
+        },
+        {
+          "code": "FF1486:00FF",
+          "desc": "Heads Whacked Modifier",
+          "address": "0xFF1486"
+        },
+        {
+          "code": "FF1479:0003",
+          "desc": "Infinite Hammer - Whack A Clown",
+          "address": "0xFF1479"
+        },
+        {
+          "code": "FF1481:0000",
+          "desc": "Freeze Time - Whack A Clown",
+          "address": "0xFF1481"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

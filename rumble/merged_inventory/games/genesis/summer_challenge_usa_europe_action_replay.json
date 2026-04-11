@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "summerchallenge",
+  "display_name": "Summer Challenge (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Summer Challenge (USA, Europe) (Unl)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Summer Challenge (USA, Europe) (Unl).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF1632:00FF",
+          "desc": "Max Total Points (Archery)",
+          "address": "0xFF1632"
+        },
+        {
+          "code": "FF157A:0000",
+          "desc": "Gates Missed Modifier (Kayak)",
+          "address": "0xFF157A"
+        },
+        {
+          "code": "FF1578:0000",
+          "desc": "Gates Hit Modifier (Kayak)",
+          "address": "0xFF1578"
+        },
+        {
+          "code": "FF166E:0000",
+          "desc": "Gates Hit Modifier (Kayak)",
+          "address": "0xFF166E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

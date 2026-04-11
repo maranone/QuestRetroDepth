@@ -1,0 +1,96 @@
+{
+  "system": "genesis",
+  "normalized_title": "dynamiteduke",
+  "display_name": "Dynamite Duke (World) (Action Replay)",
+  "aliases": [
+    "Dynamite Duke (Rumbles)",
+    "Dynamite Duke (World) (Action Replay)",
+    "Dynamite Duke (World) (Rev A)",
+    "Dynamite Duke (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\dynamiteduke_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFF30D",
+        "0xFFF313"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DynamiteDuke-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFF30D",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF313",
+          "type": ">u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Dynamite Duke (World).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFF302:0005",
+          "desc": "Infinite Specials",
+          "address": "0xFFF302"
+        },
+        {
+          "code": "FFF30C:003C",
+          "desc": "Infinite Health",
+          "address": "0xFFF30C"
+        },
+        {
+          "code": "FFF304:00FF",
+          "desc": "Infinite Ammo",
+          "address": "0xFFF304"
+        },
+        {
+          "code": "FFF30C:0063",
+          "desc": "Infinite Health P1",
+          "address": "0xFFF30C"
+        },
+        {
+          "code": "FFF302:0009",
+          "desc": "Infinite Special Attacks P1",
+          "address": "0xFFF302"
+        },
+        {
+          "code": "FFF308:0064",
+          "desc": "Press Button To Activate Special Attack P1 (No Charge Is Required)",
+          "address": "0xFFF308"
+        },
+        {
+          "code": "FFF374:0000",
+          "desc": "1 Hit To Kill Boss",
+          "address": "0xFFF374"
+        },
+        {
+          "code": "FFF04A:0002",
+          "desc": "Turn Options Menu into Super Options Menu",
+          "address": "0xFFF04A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

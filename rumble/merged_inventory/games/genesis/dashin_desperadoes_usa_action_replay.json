@@ -1,0 +1,97 @@
+{
+  "system": "genesis",
+  "normalized_title": "dashindesperadoes",
+  "display_name": "Dashin' Desperadoes (USA) (Action Replay)",
+  "aliases": [
+    "Dashin' Desperadoes (USA) (Action Replay)",
+    "Dashin' Desperadoes (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\dashindesperadoes_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFFE18"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DashinDesperadoes-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "continue_timer",
+          "address": "0xFFD4E9",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFE18",
+          "type": ">d3"
+        },
+        {
+          "name": "time",
+          "address": "0xFF8946",
+          "type": ">d2"
+        },
+        {
+          "name": "total_score",
+          "address": "0xFFFE13",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Dashin' Desperadoes (USA).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF8A04:004B",
+          "desc": "Freeze Cpu",
+          "address": "0xFF8A04"
+        },
+        {
+          "code": "FF8946:0050",
+          "desc": "Freeze Time",
+          "address": "0xFF8946"
+        },
+        {
+          "code": "FF899C:0002",
+          "desc": "Invincibility",
+          "address": "0xFF899C"
+        },
+        {
+          "code": "FF8A20:FFFF",
+          "desc": "CPU Player Gets Stuck At Start Of Level",
+          "address": "0xFF8A20"
+        },
+        {
+          "code": "FF8946:0064",
+          "desc": "Infinite Time",
+          "address": "0xFF8946"
+        },
+        {
+          "code": "FF89CA:0002",
+          "desc": "Infinite Dash P1",
+          "address": "0xFF89CA"
+        },
+        {
+          "code": "FF89C3:0010",
+          "desc": "Invincibility",
+          "address": "0xFF89C3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

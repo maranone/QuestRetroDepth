@@ -1,0 +1,98 @@
+{
+  "system": "snes",
+  "normalized_title": "bustmove",
+  "display_name": "Bust-A-Move (USA) (Action Replay)",
+  "aliases": [
+    "Bust-A-Move (USA) (Action Replay)",
+    "Bust-A-Move (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bust-A-Move (USA).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "7E084400",
+          "desc": "Always 0 Seconds",
+          "address": "0x7E0844"
+        },
+        {
+          "code": "7E08620C",
+          "desc": "Always Shoot B.Clr",
+          "address": "0x7E0862"
+        },
+        {
+          "code": "7E086E0C",
+          "desc": "Spare Always B.Clr",
+          "address": "0x7E086E"
+        },
+        {
+          "code": "7E099264",
+          "desc": "Win game with 1 LV",
+          "address": "0x7E0992"
+        },
+        {
+          "code": "7E099263",
+          "desc": "Boss after 1 Level",
+          "address": "0x7E0992"
+        },
+        {
+          "code": "7E0AAC01",
+          "desc": "1 Hit kills Boss",
+          "address": "0x7E0AAC"
+        },
+        {
+          "code": "7E0B4C99",
+          "desc": "99 VS. Com. Wins",
+          "address": "0x7E0B4C"
+        },
+        {
+          "code": "7E0B4E00",
+          "desc": "0 VS. Com. Losses",
+          "address": "0x7E0B4E"
+        },
+        {
+          "code": "7E0B5000",
+          "desc": "0 VS. Com. Draws",
+          "address": "0x7E0B50"
+        },
+        {
+          "code": "7E0B5299",
+          "desc": "99 VS. 2P Wins",
+          "address": "0x7E0B52"
+        },
+        {
+          "code": "7E0B5400",
+          "desc": "0 VS. 2P Losses",
+          "address": "0x7E0B54"
+        },
+        {
+          "code": "7E0B5600",
+          "desc": "0 VS. 2P Draws",
+          "address": "0x7E0B56"
+        },
+        {
+          "code": "7E094C64",
+          "desc": "Infinite Time To Shoot Each Ball",
+          "address": "0x7E094C"
+        },
+        {
+          "code": "7E0B0407",
+          "desc": "Infinite Lives",
+          "address": "0x7E0B04"
+        },
+        {
+          "code": "7E09FC01",
+          "desc": "Always Targeting",
+          "address": "0x7E09FC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "system": "genesis",
+  "normalized_title": "f1",
+  "display_name": "F1",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\f1_genesis.json",
+      "trigger_count": 2,
+      "field_names": [
+        "gameover",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFE2B0",
+        "0xFFE409"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\F1-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFFE409",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFE2B0",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

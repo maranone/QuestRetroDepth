@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "spidermanxmenarcadesrevenge",
+  "display_name": "Spider-Man - X-Men - Arcade's Revenge (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Spider-Man X-Men - Arcade's Revenge (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Spider-Man X-Men - Arcade's Revenge (USA, Europe).cht",
+      "total_cheat_rows": 81,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FF0224:005C",
+          "desc": "Infinite Health (Everyone)",
+          "address": "0xFF0224"
+        },
+        {
+          "code": "FF0F74:0009",
+          "desc": "Infinite Lives (Spider-Man)",
+          "address": "0xFF0F74"
+        },
+        {
+          "code": "FF0088:0009",
+          "desc": "Infinite Lives (Cyclops, Storm, Gambit)",
+          "address": "0xFF0088"
+        },
+        {
+          "code": "FF0552:0000",
+          "desc": "Have Blue/Red Alarm Modifier",
+          "address": "0xFF0552"
+        },
+        {
+          "code": "FF1828:007F",
+          "desc": "Infinite Energy/Breath (Storm)",
+          "address": "0xFF1828"
+        },
+        {
+          "code": "FF3F98:0063",
+          "desc": "Have Lots of Yellow Stars (Gambit)",
+          "address": "0xFF3F98"
+        },
+        {
+          "code": "FF3F94:006E",
+          "desc": "Infinite Health (Gambit)",
+          "address": "0xFF3F94"
+        },
+        {
+          "code": "FF3F76:0063",
+          "desc": "Infinite Card Attack (Gambit)",
+          "address": "0xFF3F76"
+        },
+        {
+          "code": "FF180A:00FF",
+          "desc": "Invincibility Gambit Fake",
+          "address": "0xFF180A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

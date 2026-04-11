@@ -1,0 +1,7 @@
+game_name=Sol-Deace (USA) (Action Replay)
+game_key=SolDeace-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ffa0a5	life_lost	0xFFA0A5	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffa0a5	life_gained	0xFFA0A5	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ff9e76	score	0xFF9E76	4	uint	big	prev < curr	0.8	1	right:0.350:60

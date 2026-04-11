@@ -1,0 +1,74 @@
+{
+  "system": "genesis",
+  "normalized_title": "columns",
+  "display_name": "Columns (World) (Action Replay)",
+  "aliases": [
+    "Columns (USA, Europe)",
+    "Columns (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\columns_genesis.json",
+      "trigger_count": 2,
+      "field_names": [
+        "gameover",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFC81C",
+        "0xFFC840"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Columns-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFFC840",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFC81C",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Columns (World) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFC853:09",
+          "desc": "Infinite Time To Choose Level of Difficulty",
+          "address": "0xFFC853"
+        },
+        {
+          "code": "FFC854:09",
+          "desc": "Infinite Time To Choose Level of Difficulty",
+          "address": "0xFFC854"
+        },
+        {
+          "code": "FFC827:XX",
+          "desc": "Jewels Modifier P1",
+          "address": "0xFFC827"
+        },
+        {
+          "code": "FFC82B:XX",
+          "desc": "Jewels Modifier P1",
+          "address": "0xFFC82B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

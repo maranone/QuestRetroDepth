@@ -1,0 +1,8 @@
+game_name=TeenageMutantNinjaTurtlesIv
+game_key=TeenageMutantNinjaTurtlesIv-Snes
+system=snes
+integration_tier=manual
+trigger	enemy_defeated_1_5d0	enemy_defeated	0x7E05D0	1	uint	native	prev != curr	0.55	1	left:0.510:100
+trigger	damage_taken_2_44a	damage_taken	0x7E044A	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	enemy_defeated_4_6ac	enemy_defeated	0x7E06AC	1	uint	native	prev != curr	0.55	1	right:0.510:100
+trigger	damage_taken_5_1ae2	damage_taken	0x7E1AE2	1	uint	native	prev > curr	0.85	1	right:0.750:180

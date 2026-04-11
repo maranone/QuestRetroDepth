@@ -1,0 +1,28 @@
+{
+  "system": "snes",
+  "normalized_title": "supersoccer",
+  "display_name": "Super Soccer (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Super Soccer (USA)",
+    "Super Soccer (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Soccer (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "7E10F803",
+          "desc": "No Opposition Goalkeeper For The First Half",
+          "address": "0x7E10F8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

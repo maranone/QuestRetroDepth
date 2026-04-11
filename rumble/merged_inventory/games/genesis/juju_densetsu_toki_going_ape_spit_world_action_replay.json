@@ -1,0 +1,123 @@
+{
+  "system": "genesis",
+  "normalized_title": "jujudensetsutokigoingapespit",
+  "display_name": "JuJu Densetsu - Toki - Going Ape Spit (World) (Action Replay)",
+  "aliases": [
+    "JuJu Densetsu - Toki - Going Ape Spit (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\jujudensetsutokigoingapespit_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF1B7A",
+        "0xFF1B86"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JuJuDensetsuTokiGoingApeSpit-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF1B86",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF1B7A",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\JuJu Densetsu - Toki - Going Ape Spit (World) (Action Replay).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 14,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FF1B86:0005",
+          "desc": "Unlimited Men",
+          "address": "0xFF1B86"
+        },
+        {
+          "code": "FF1B63:0059",
+          "desc": "Unlimited Time",
+          "address": "0xFF1B63"
+        },
+        {
+          "code": "FF1B82:09",
+          "desc": "Infinite Time (Alternate - Minutes Digits)",
+          "address": "0xFF1B82"
+        },
+        {
+          "code": "FF1B83:58",
+          "desc": "Infinite Time (Alternate - Seconds Digits)",
+          "address": "0xFF1B83"
+        },
+        {
+          "code": "FF1B87:XX",
+          "desc": "Food Modifier",
+          "address": "0xFF1B87"
+        },
+        {
+          "code": "FF1B89:XX",
+          "desc": "Weapon Modifier (Read Note)",
+          "address": "0xFF1B89"
+        },
+        {
+          "code": "FF1B8C:09",
+          "desc": "Infinite Credits (Continues)",
+          "address": "0xFF1B8C"
+        },
+        {
+          "code": "FF023B:09",
+          "desc": "Infinite Time At Credit/Continue Screen",
+          "address": "0xFF023B"
+        },
+        {
+          "code": "FF1B8B:XX",
+          "desc": "Stage Modifier",
+          "address": "0xFF1B8B"
+        },
+        {
+          "code": "FF1B8B:XX",
+          "desc": "Start On Level/Stage Modifier (Combined)",
+          "address": "0xFF1B8B"
+        },
+        {
+          "code": "FF1BB6:XX",
+          "desc": "Start On Level/Stage Modifier (Combined)",
+          "address": "0xFF1BB6"
+        },
+        {
+          "code": "FF3601:XX",
+          "desc": "Fake Boss Health Modifier",
+          "address": "0xFF3601"
+        },
+        {
+          "code": "FF1D25:A7",
+          "desc": "Always Have Higher Jump (Forces White Running Shoes Ability)",
+          "address": "0xFF1D25"
+        },
+        {
+          "code": "FF1D27:E1",
+          "desc": "Always Invincible (Forces Star Ability)",
+          "address": "0xFF1D27"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

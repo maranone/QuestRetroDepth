@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "eswatcityundersiege",
+  "display_name": "ESWAT - City Under Siege (USA, Europe) (Action Replay)",
+  "aliases": [
+    "ESWAT - City Under Siege (USA, Europe) (Rev A)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\ESWAT - City Under Siege (USA, Europe) (Rev A).cht",
+      "total_cheat_rows": 49,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FFFF28:0016",
+          "desc": "Infinite Health P1",
+          "address": "0xFFFF28"
+        },
+        {
+          "code": "FFFF38:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFFFF38"
+        },
+        {
+          "code": "FFF0E6:0001",
+          "desc": "Infinite Burner",
+          "address": "0xFFF0E6"
+        },
+        {
+          "code": "FFF0F8:0001",
+          "desc": "Infinite Burner",
+          "address": "0xFFF0F8"
+        },
+        {
+          "code": "FFD1F0:00FF",
+          "desc": "Invincibility",
+          "address": "0xFFD1F0"
+        },
+        {
+          "code": "FFFF14:0001",
+          "desc": "Enable Level Select. Press Left+Down+A+B+C After Screen Start Options",
+          "address": "0xFFFF14"
+        },
+        {
+          "code": "FFFF2B:0070",
+          "desc": "Charged Burner Always On Maximum",
+          "address": "0xFFFF2B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

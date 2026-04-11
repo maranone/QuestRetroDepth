@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "barkleyshutupandjam2",
+  "display_name": "Barkley Shut Up and Jam 2 (USA) (Action Replay)",
+  "aliases": [
+    "Barkley Shut Up and Jam 2 (USA) (Action Replay)",
+    "Barkley Shut Up and Jam 2 (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\barkleyshutupandjam2_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFCCD8"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BarkleyShutUpAndJam2-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "opponent_score",
+          "address": "0xFFCCDA",
+          "type": ">d2"
+        },
+        {
+          "name": "score",
+          "address": "0xFFCCD8",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Barkley Shut Up and Jam 2 (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFCCD8:0000",
+          "desc": "Team 1 Points Modifiers",
+          "address": "0xFFCCD8"
+        },
+        {
+          "code": "FFCCBC:0000",
+          "desc": "Team 2 Points Modifiers",
+          "address": "0xFFCCBC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

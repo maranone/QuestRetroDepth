@@ -1,0 +1,138 @@
+{
+  "system": "genesis",
+  "normalized_title": "tomandjerryfranticantics",
+  "display_name": "Tom and Jerry - Frantic Antics (USA) (Action Replay)",
+  "aliases": [
+    "Tom and Jerry - Frantic Antics! (USA) (Beta)",
+    "Tom and Jerry - Frantic Antics! (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tom and Jerry - Frantic Antics! (USA).cht",
+      "total_cheat_rows": 44,
+      "raw_entry_count": 23,
+      "distinct_address_count": 20,
+      "sample_raw_entries": [
+        {
+          "code": "FFD47C:0004",
+          "desc": "Infinte Ammo",
+          "address": "0xFFD47C"
+        },
+        {
+          "code": "FFFC0E:0001",
+          "desc": "Infinte Time",
+          "address": "0xFFFC0E"
+        },
+        {
+          "code": "FFFC1C:0007",
+          "desc": "Go To Final Stage",
+          "address": "0xFFFC1C"
+        },
+        {
+          "code": "FFCE0C:0004",
+          "desc": "Infinite Throwing Items Jerry",
+          "address": "0xFFCE0C"
+        },
+        {
+          "code": "FFCD76:0000",
+          "desc": "Tom Speed Modifier",
+          "address": "0xFFCD76"
+        },
+        {
+          "code": "FFCE38:0000",
+          "desc": "Jerry Speed Modifier",
+          "address": "0xFFCE38"
+        },
+        {
+          "code": "FFCD74:0040",
+          "desc": "Moonjump Tom",
+          "address": "0xFFCD74"
+        },
+        {
+          "code": "FFCE36:0020",
+          "desc": "Moonjump Jerry",
+          "address": "0xFFCE36"
+        },
+        {
+          "code": "FFCD42:0020",
+          "desc": "1-Hit To Swim Anywhere Tom",
+          "address": "0xFFCD42"
+        },
+        {
+          "code": "FFCD74:0060",
+          "desc": "1-Hit To Swim Anywhere Tom",
+          "address": "0xFFCD74"
+        },
+        {
+          "code": "FFCE04:0020",
+          "desc": "1-Hit To Swim Anywhere Jerry",
+          "address": "0xFFCE04"
+        },
+        {
+          "code": "FFCE36:0020",
+          "desc": "1-Hit To Swim Anywhere Jerry",
+          "address": "0xFFCE36"
+        },
+        {
+          "code": "FFCD44:0080",
+          "desc": "Water Spitting Tom",
+          "address": "0xFFCD44"
+        },
+        {
+          "code": "FFCE06:0080",
+          "desc": "Water Spitting Jerry",
+          "address": "0xFFCE06"
+        },
+        {
+          "code": "FFCD46:0088",
+          "desc": "Enemies Can't Touch Tom",
+          "address": "0xFFCD46"
+        },
+        {
+          "code": "FFCE08:0088",
+          "desc": "Enemies Can't Touch Jerry",
+          "address": "0xFFCE08"
+        },
+        {
+          "code": "FFFC29:0099",
+          "desc": "Keep Fish/Cheese After The Death",
+          "address": "0xFFFC29"
+        },
+        {
+          "code": "FFFC25:000A",
+          "desc": "Freeze Time Continue",
+          "address": "0xFFFC25"
+        },
+        {
+          "code": "FFFC26:0002",
+          "desc": "Infinite Continue",
+          "address": "0xFFFC26"
+        },
+        {
+          "code": "FFFC1B:0003",
+          "desc": "Infinite Hearts - Tom and Jerry - Frantic Antics (Japan) (En)",
+          "address": "0xFFFC1B"
+        },
+        {
+          "code": "FFFC29:0009",
+          "desc": "Infinite Fish/Cheese - Tom and Jerry - Frantic Antics (Japan) (En)",
+          "address": "0xFFFC29"
+        },
+        {
+          "code": "FFCDFD:009F",
+          "desc": "Infinite Energy - Tom and Jerry - Frantic Antics (Japan) (En)",
+          "address": "0xFFCDFD"
+        },
+        {
+          "code": "FFCD4A:0010",
+          "desc": "Infinite Weapon - Tom and Jerry - Frantic Antics (Japan) (En)",
+          "address": "0xFFCD4A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

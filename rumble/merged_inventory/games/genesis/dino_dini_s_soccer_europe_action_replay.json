@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "dinodinissoccer",
+  "display_name": "Dino Dini's Soccer (Europe) (Action Replay)",
+  "aliases": [
+    "Dino Dini's Soccer (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Dino Dini's Soccer (Europe).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF6D44:0000",
+          "desc": "P2 Score Modifier",
+          "address": "0xFF6D44"
+        },
+        {
+          "code": "FF6D42:0063",
+          "desc": "P1 Score Modifier",
+          "address": "0xFF6D42"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

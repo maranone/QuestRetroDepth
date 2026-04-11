@@ -1,0 +1,119 @@
+{
+  "system": "snes",
+  "normalized_title": "superstarwars",
+  "display_name": "Super Star Wars (World) (Action Replay)",
+  "aliases": [
+    "Super Star Wars (Rumbles)",
+    "Super Star Wars (U) (V1.1) [!]",
+    "Super Star Wars (USA) (Rev 1)",
+    "Super Star Wars (USA)",
+    "Super Star Wars (World) (Action Replay)",
+    "Super Star Wars (World) (Game Genie)",
+    "Super Star Wars"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\superstarwars_snes.json",
+      "trigger_count": 12,
+      "field_names": [
+        "health",
+        "lives",
+        "score0",
+        "score1",
+        "score2",
+        "score3",
+        "score4",
+        "score5",
+        "score6",
+        "score7"
+      ],
+      "field_count": 10,
+      "distinct_addresses": [
+        "0x7E08FB",
+        "0x7E0901",
+        "0x7E095D",
+        "0x7E095F",
+        "0x7E0961",
+        "0x7E0963",
+        "0x7E0965",
+        "0x7E0967",
+        "0x7E0969",
+        "0x7E096B"
+      ],
+      "distinct_address_count": 10
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperStarWars-Snes-v0\\data.json",
+      "field_count": 10,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E0901",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E08FB",
+          "type": "|i1"
+        },
+        {
+          "name": "score0",
+          "address": "0x7E095D",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0x7E095F",
+          "type": "|u1"
+        },
+        {
+          "name": "score2",
+          "address": "0x7E0961",
+          "type": "|u1"
+        },
+        {
+          "name": "score3",
+          "address": "0x7E0963",
+          "type": "|u1"
+        },
+        {
+          "name": "score4",
+          "address": "0x7E0965",
+          "type": "|u1"
+        },
+        {
+          "name": "score5",
+          "address": "0x7E0967",
+          "type": "|u1"
+        },
+        {
+          "name": "score6",
+          "address": "0x7E0969",
+          "type": "|u1"
+        },
+        {
+          "name": "score7",
+          "address": "0x7E096B",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 10
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Star Wars (World) (Game Genie).cht",
+      "total_cheat_rows": 52,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 3,
+      "mk3_label": "SUPER STAR WARS"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

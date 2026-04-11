@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "superninjakun",
+  "display_name": "Super Ninja-kun (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Ninja-kun (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E00600A",
+          "desc": "Infinite Health",
+          "address": "0x7E0060"
+        },
+        {
+          "code": "7E009E09",
+          "desc": "Infinite Lives",
+          "address": "0x7E009E"
+        },
+        {
+          "code": "7E008C0A",
+          "desc": "Infinite Ninja Powers",
+          "address": "0x7E008C"
+        },
+        {
+          "code": "7E009602",
+          "desc": "Invincibility",
+          "address": "0x7E0096"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "system": "snes",
+  "normalized_title": "kablooey",
+  "display_name": "Ka-blooey (USA) (Action Replay)",
+  "aliases": [
+    "Ka-blooey (USA) (Game Genie)",
+    "Ka-blooey (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ka-blooey (USA).cht",
+      "total_cheat_rows": 142,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E034305",
+          "desc": "Infinite Lives",
+          "address": "0x7E0343"
+        },
+        {
+          "code": "7E032040",
+          "desc": "Bonus Points Don't Countdown",
+          "address": "0x7E0320"
+        },
+        {
+          "code": "7E032106",
+          "desc": "Bonus Points Don't Countdown",
+          "address": "0x7E0321"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

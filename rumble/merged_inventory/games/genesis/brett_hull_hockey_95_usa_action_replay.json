@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "bretthullhockey95",
+  "display_name": "Brett Hull Hockey '95 (USA) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Brett Hull Hockey '95 (USA) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF6AD9:XX",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFF6AD9"
+        },
+        {
+          "code": "FF6ADB:XX",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFF6ADB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

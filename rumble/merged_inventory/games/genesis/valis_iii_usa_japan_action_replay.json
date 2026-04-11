@@ -1,0 +1,48 @@
+{
+  "system": "genesis",
+  "normalized_title": "valisiii",
+  "display_name": "Valis III (USA, Japan) (Action Replay)",
+  "aliases": [
+    "Valis III (USA)",
+    "Valis III (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Valis III (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFF447:24",
+          "desc": "Infinite Health",
+          "address": "0xFFF447"
+        },
+        {
+          "code": "FFF44B:24",
+          "desc": "Infinite Magic",
+          "address": "0xFFF44B"
+        },
+        {
+          "code": "FFF45B:3F",
+          "desc": "Infinite Time",
+          "address": "0xFFF45B"
+        },
+        {
+          "code": "FFC0BB:XX",
+          "desc": "Fake Timer",
+          "address": "0xFFC0BB"
+        },
+        {
+          "code": "FFF459:09",
+          "desc": "Infinite Lives",
+          "address": "0xFFF459"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

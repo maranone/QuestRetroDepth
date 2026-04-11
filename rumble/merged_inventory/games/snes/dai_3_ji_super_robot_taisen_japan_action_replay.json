@@ -1,0 +1,148 @@
+{
+  "system": "snes",
+  "normalized_title": "dai3jisuperrobottaisen",
+  "display_name": "Dai-3-ji Super Robot Taisen (Japan) (Action Replay)",
+  "aliases": [
+    "Dai-3-ji Super Robot Taisen (Japan) (Game Genie)",
+    "Dai-3-ji Super Robot Taisen (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Dai-3-ji Super Robot Taisen (Japan).cht",
+      "total_cheat_rows": 237,
+      "raw_entry_count": 360,
+      "distinct_address_count": 234,
+      "sample_raw_entries": [
+        {
+          "code": "7E18160F",
+          "desc": "Turn Count",
+          "address": "0x7E1816"
+        },
+        {
+          "code": "7E181727",
+          "desc": "Turn Count",
+          "address": "0x7E1817"
+        },
+        {
+          "code": "7E18060F",
+          "desc": "9999 Current HP [Unit 1]",
+          "address": "0x7E1806"
+        },
+        {
+          "code": "7E180727",
+          "desc": "9999 Current HP [Unit 1]",
+          "address": "0x7E1807"
+        },
+        {
+          "code": "7E18860F",
+          "desc": "9999 Max HP [Unit 1]",
+          "address": "0x7E1886"
+        },
+        {
+          "code": "7E188727",
+          "desc": "9999 Max HP [Unit 1]",
+          "address": "0x7E1887"
+        },
+        {
+          "code": "7E1786FF",
+          "desc": "255 Current EN [Unit 1]",
+          "address": "0x7E1786"
+        },
+        {
+          "code": "7E1787FF",
+          "desc": "255 Max EM [Unit 1]",
+          "address": "0x7E1787"
+        },
+        {
+          "code": "7E18080F",
+          "desc": "9999 Current HP [Unit 2]",
+          "address": "0x7E1808"
+        },
+        {
+          "code": "7E180927",
+          "desc": "9999 Current HP [Unit 2]",
+          "address": "0x7E1809"
+        },
+        {
+          "code": "7E18880F",
+          "desc": "9999 Max HP [Unit 2]",
+          "address": "0x7E1888"
+        },
+        {
+          "code": "7E188927",
+          "desc": "9999 Max HP [Unit 2]",
+          "address": "0x7E1889"
+        },
+        {
+          "code": "7E1788FF",
+          "desc": "255 Current EN [Unit 2]",
+          "address": "0x7E1788"
+        },
+        {
+          "code": "7E1789FF",
+          "desc": "255 Max EN [Unit 2]",
+          "address": "0x7E1789"
+        },
+        {
+          "code": "7E180A0F",
+          "desc": "9999 Current HP [Unit 3]",
+          "address": "0x7E180A"
+        },
+        {
+          "code": "7E180B27",
+          "desc": "9999 Current HP [Unit 3]",
+          "address": "0x7E180B"
+        },
+        {
+          "code": "7E188A0F",
+          "desc": "9999 Max HP [Unit 3]",
+          "address": "0x7E188A"
+        },
+        {
+          "code": "7E188B27",
+          "desc": "9999 Max HP [Unit 3]",
+          "address": "0x7E188B"
+        },
+        {
+          "code": "7E178AFF",
+          "desc": "255 Current EN [Unit 3]",
+          "address": "0x7E178A"
+        },
+        {
+          "code": "7E178BFF",
+          "desc": "255 Max EN [Unit 3]",
+          "address": "0x7E178B"
+        },
+        {
+          "code": "7E180C0F",
+          "desc": "9999 Current HP [Unit 4]",
+          "address": "0x7E180C"
+        },
+        {
+          "code": "7E180D27",
+          "desc": "9999 Current HP [Unit 4]",
+          "address": "0x7E180D"
+        },
+        {
+          "code": "7E188C0F",
+          "desc": "9999 Max HP [Unit 4]",
+          "address": "0x7E188C"
+        },
+        {
+          "code": "7E188D27",
+          "desc": "9999 Max HP [Unit 4]",
+          "address": "0x7E188D"
+        },
+        {
+          "code": "7E178CFF",
+          "desc": "255 Current EN [Unit 4]",
+          "address": "0x7E178C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

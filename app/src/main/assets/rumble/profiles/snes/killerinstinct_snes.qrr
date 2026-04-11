@@ -1,0 +1,6 @@
+game_name=KillerInstinct
+game_key=KillerInstinct-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_d26	damage_taken	0x7E0D26	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_1_129e	damage_taken	0x7E129E	1	uint	native	prev > curr	0.85	1	right:0.750:180

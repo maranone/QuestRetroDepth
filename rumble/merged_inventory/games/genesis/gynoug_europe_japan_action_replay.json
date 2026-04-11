@@ -1,0 +1,55 @@
+{
+  "system": "genesis",
+  "normalized_title": "gynoug",
+  "display_name": "Gynoug (Europe, Japan) (Action Replay)",
+  "aliases": [
+    "Gynoug (Europe)",
+    "Gynoug (Europe, Japan) (Action Replay)",
+    "Gynoug (Japan)",
+    "Gynoug (Rumbles)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\gynoug_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFD6BA",
+        "0xFFD6CD"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Gynoug-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFD6CD",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFD6BA",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Gynoug (Rumbles).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

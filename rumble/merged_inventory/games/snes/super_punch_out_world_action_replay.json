@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "superpunchout",
+  "display_name": "Super Punch-Out!! (World) (Action Replay)",
+  "aliases": [
+    "Super Punch-Out!! (Rumbles)",
+    "Super Punch-Out!! (USA)",
+    "Super Punch-Out!! (World) (Action Replay)",
+    "Super Punch-Out!! (World) (Game Genie)",
+    "Super Punch-Out!!"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Punch-Out!! (World) (Game Genie).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 4,
+      "mk3_label": "SUPER PUNCH OUT"
+    }
+  },
+  "recommended_primary_source": "action_replay_mk_iii",
+  "notes": [
+    "SNES built-in cheat count present, but raw codes are not machine-readable here."
+  ]
+}

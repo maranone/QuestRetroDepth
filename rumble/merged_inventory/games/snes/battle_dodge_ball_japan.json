@@ -1,0 +1,80 @@
+{
+  "system": "snes",
+  "normalized_title": "battledodgeball",
+  "display_name": "Battle Dodge Ball (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Battle Dodge Ball (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "7E00CA63",
+          "desc": "Infinite Time",
+          "address": "0x7E00CA"
+        },
+        {
+          "code": "7E00CE99",
+          "desc": "Infinite EXP",
+          "address": "0x7E00CE"
+        },
+        {
+          "code": "7E00CF99",
+          "desc": "Infinite EXP",
+          "address": "0x7E00CF"
+        },
+        {
+          "code": "7E09E899",
+          "desc": "1s Member infinite Energy",
+          "address": "0x7E09E8"
+        },
+        {
+          "code": "7E09E909",
+          "desc": "1s Member infinite Energy",
+          "address": "0x7E09E9"
+        },
+        {
+          "code": "7E09E614",
+          "desc": "1st Member Infinite Special",
+          "address": "0x7E09E6"
+        },
+        {
+          "code": "7E0A4899",
+          "desc": "2nd Member Infinite Energy",
+          "address": "0x7E0A48"
+        },
+        {
+          "code": "7E0A4909",
+          "desc": "2nd Member Infinite Energy",
+          "address": "0x7E0A49"
+        },
+        {
+          "code": "7E0A4614",
+          "desc": "2nd Member Infinite Special",
+          "address": "0x7E0A46"
+        },
+        {
+          "code": "7E0AA899",
+          "desc": "3rd Member Infinite Energy",
+          "address": "0x7E0AA8"
+        },
+        {
+          "code": "7E0AA909",
+          "desc": "3rd Member Infinite Energy",
+          "address": "0x7E0AA9"
+        },
+        {
+          "code": "7E0AA614",
+          "desc": "3rd Member Infinite Special",
+          "address": "0x7E0AA6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "pepengapengo",
+  "display_name": "Pepenga Pengo (Japan) (Action Replay)",
+  "aliases": [
+    "Pepenga Pengo (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Pepenga Pengo (Japan).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF51AA:FF77",
+          "desc": "Infinite Time",
+          "address": "0xFF51AA"
+        },
+        {
+          "code": "FF65EA:00FF",
+          "desc": "Invincibility",
+          "address": "0xFF65EA"
+        },
+        {
+          "code": "FF51D6:0063",
+          "desc": "Infinite Lives",
+          "address": "0xFF51D6"
+        },
+        {
+          "code": "FFE40C:0004",
+          "desc": "Infinite Lives P1 (Arcade Mode)",
+          "address": "0xFFE40C"
+        },
+        {
+          "code": "FF51D6:000A",
+          "desc": "Infinite Lives P1 (Story Mode)",
+          "address": "0xFF51D6"
+        },
+        {
+          "code": "FF51AA:0072",
+          "desc": "Infinite Time (Story Mode)",
+          "address": "0xFF51AA"
+        },
+        {
+          "code": "FF67E6:0001",
+          "desc": "1 Hit Kill Bosses",
+          "address": "0xFF67E6"
+        },
+        {
+          "code": "FF6866:0001",
+          "desc": "1 Hit Kill Bosses",
+          "address": "0xFF6866"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

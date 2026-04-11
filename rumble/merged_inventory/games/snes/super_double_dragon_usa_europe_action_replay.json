@@ -1,0 +1,60 @@
+{
+  "system": "snes",
+  "normalized_title": "superdoubledragon",
+  "display_name": "Super Double Dragon (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Super Double Dragon (Rumbles)",
+    "Super Double Dragon (USA)",
+    "Super Double Dragon (USA, Europe) (Action Replay)",
+    "Super Double Dragon (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\superdoubledragon_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E00DC",
+        "0x7E00DE"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperDoubleDragon-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "down",
+          "address": "0x7E1CF8",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E00DC",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E00DE",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Double Dragon (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

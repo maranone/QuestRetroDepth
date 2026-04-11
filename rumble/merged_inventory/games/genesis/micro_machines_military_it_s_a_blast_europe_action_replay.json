@@ -1,0 +1,55 @@
+{
+  "system": "genesis",
+  "normalized_title": "micromachinesmilitaryitsblast",
+  "display_name": "Micro Machines Military - It's a Blast! (Europe) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Micro Machines Military - It's a Blast! (Europe) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FFD165:00",
+          "desc": "Zero Laps Remaining P1",
+          "address": "0xFFD165"
+        },
+        {
+          "code": "FFD678:00",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFD678"
+        },
+        {
+          "code": "FFD67A:00",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFD67A"
+        },
+        {
+          "code": "FFD6A7:00",
+          "desc": "Auto Qualify In Battle Arena",
+          "address": "0xFFD6A7"
+        },
+        {
+          "code": "FFD059:XX",
+          "desc": "Blue Car Direction",
+          "address": "0xFFD059"
+        },
+        {
+          "code": "FFD05B:XX",
+          "desc": "Yellow Car Direction",
+          "address": "0xFFD05B"
+        },
+        {
+          "code": "FFD05D:XX",
+          "desc": "Green Car Direction",
+          "address": "0xFFD05D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Thunder Force III (USA, Japan) (Action Replay)
+game_key=ThunderForceIII-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_fff2b5	life_lost	0xFFF2B5	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff2b5	life_gained	0xFFF2B5	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_fff2a5	score	0xFFF2A5	3	uint	big	prev < curr	0.8	1	right:0.350:60

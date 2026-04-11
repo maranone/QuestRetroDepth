@@ -1,0 +1,45 @@
+{
+  "system": "snes",
+  "normalized_title": "kouryuunomimi",
+  "display_name": "Kouryuu no Mimi (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Kouryuu no Mimi (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E09C040",
+          "desc": "Infinite Energy",
+          "address": "0x7E09C0"
+        },
+        {
+          "code": "7E008C20",
+          "desc": "Infinite Power",
+          "address": "0x7E008C"
+        },
+        {
+          "code": "7E09DE09",
+          "desc": "Infinite Weapon Usage",
+          "address": "0x7E09DE"
+        },
+        {
+          "code": "7E007E00",
+          "desc": "Stage Modifier",
+          "address": "0x7E007E"
+        },
+        {
+          "code": "7E0BC000",
+          "desc": "Weapon Modifier",
+          "address": "0x7E0BC0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Clay Fighter (USA, Europe) (Action Replay)
+game_key=ClayFighter-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ff41c2	damage_taken	0xFF41C2	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff41c2	death	0xFF41C2	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_ff199b	score	0xFF199B	5	bcd	big	prev < curr	0.8	1	right:0.350:60

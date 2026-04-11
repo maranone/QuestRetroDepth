@@ -1,0 +1,40 @@
+{
+  "system": "genesis",
+  "normalized_title": "mazinsagamutantfighter",
+  "display_name": "Mazin Saga - Mutant Fighter (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mazin Saga - Mutant Fighter (USA).cht",
+      "total_cheat_rows": 64,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFCDEC:0063",
+          "desc": "Infinite Health",
+          "address": "0xFFCDEC"
+        },
+        {
+          "code": "FFEBD8:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFEBD8"
+        },
+        {
+          "code": "FFCDE2:0000",
+          "desc": "Freeze P1 (Animation Modifier?)",
+          "address": "0xFFCDE2"
+        },
+        {
+          "code": "FFEBDF:0010",
+          "desc": "Invincibility",
+          "address": "0xFFEBDF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

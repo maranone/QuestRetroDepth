@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "cbcharawarsushinawaretagag",
+  "display_name": "CB Chara Wars - Ushinawareta Gag (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\CB Chara Wars - Ushinawareta Gag (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E083008",
+          "desc": "Infinite Energy",
+          "address": "0x7E0830"
+        },
+        {
+          "code": "7E088004",
+          "desc": "Infinite Lives",
+          "address": "0x7E0880"
+        },
+        {
+          "code": "7E088104",
+          "desc": "Infinite Lives P2",
+          "address": "0x7E0881"
+        },
+        {
+          "code": "7E083108",
+          "desc": "Infinite Health P2",
+          "address": "0x7E0831"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

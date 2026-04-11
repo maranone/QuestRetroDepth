@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "rugbyworldcup95",
+  "display_name": "Rugby World Cup 95 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Rugby World Cup 95 (USA, Europe) (En,Fr,It)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Rugby World Cup 95 (USA, Europe) (En,Fr,It).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFFE3E:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFFE3E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

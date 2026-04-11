@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "tnnoutdoorsbasstournament96",
+  "display_name": "TNN Outdoors Bass Tournament '96 (USA) (Action Replay)",
+  "aliases": [
+    "TNN Outdoors Bass Tournament '96 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\TNN Outdoors Bass Tournament '96 (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF14DE:00FF",
+          "desc": "Fake Infinite Money",
+          "address": "0xFF14DE"
+        },
+        {
+          "code": "FF14DC:00FF",
+          "desc": "Fake Infinite Money",
+          "address": "0xFF14DC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

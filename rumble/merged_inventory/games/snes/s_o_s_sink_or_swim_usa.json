@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "sossinkorswim",
+  "display_name": "S.O.S - Sink or Swim (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\S.O.S - Sink or Swim (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E097209",
+          "desc": "Infinite Lives",
+          "address": "0x7E0972"
+        },
+        {
+          "code": "7E164A00",
+          "desc": "Noone Left",
+          "address": "0x7E164A"
+        },
+        {
+          "code": "7E164C09",
+          "desc": "9 People saved",
+          "address": "0x7E164C"
+        },
+        {
+          "code": "7E165000",
+          "desc": "Noone To Rescue",
+          "address": "0x7E1650"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

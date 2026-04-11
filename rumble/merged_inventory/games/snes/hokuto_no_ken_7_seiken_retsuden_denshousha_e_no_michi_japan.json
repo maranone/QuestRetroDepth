@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "hokutonoken7seikenretsudendenshoushaenomichi",
+  "display_name": "Hokuto no Ken 7 - Seiken Retsuden Denshousha e no Michi (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Hokuto no Ken 7 - Seiken Retsuden Denshousha e no Michi (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E012922",
+          "desc": "Infinite Health P1",
+          "address": "0x7E0129"
+        },
+        {
+          "code": "7E012E60",
+          "desc": "Set OP to Level 4 P1",
+          "address": "0x7E012E"
+        },
+        {
+          "code": "7E012F22",
+          "desc": "Set OP to Level 4 P1",
+          "address": "0x7E012F"
+        },
+        {
+          "code": "7E02BC22",
+          "desc": "Infinite Health P2",
+          "address": "0x7E02BC"
+        },
+        {
+          "code": "7E02C160",
+          "desc": "Set OP to Level 4 P2",
+          "address": "0x7E02C1"
+        },
+        {
+          "code": "7E02C222",
+          "desc": "Set OP to Level 4 P2",
+          "address": "0x7E02C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

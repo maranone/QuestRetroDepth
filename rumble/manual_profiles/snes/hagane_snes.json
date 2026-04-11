@@ -1,0 +1,83 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Hagane",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Hagane (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "Hagane-Snes"
+  },
+  "triggers": [
+    {
+      "id": "enemy_defeated_0_516",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0x7E0516",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0516",
+          "bank": "7E",
+          "wram_offset": 1302
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.51,
+          "duration_ms": 100
+        }
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on Attacks",
+      "source_fields": [
+        {
+          "name": "rumble_on_attacks",
+          "address": "0x7E0516",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_1_514",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E0514",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0514",
+          "bank": "7E",
+          "wram_offset": 1300
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss",
+          "address": "0x7E0514",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "totalfootball",
+  "display_name": "Total Football (Europe) (Action Replay)",
+  "aliases": [
+    "Total Football (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Total Football (Europe).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF0778:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFF0778"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

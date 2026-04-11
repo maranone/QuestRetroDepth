@@ -36,6 +36,7 @@ static inline bool settings_save(
     int layer_filter_mode = -1,
     int layer_auto_dup_percent = -1,
     float refresh_rate = 0.0f,
+    bool experimental_rumble_enabled = false,
     const qrd::ButtonMap* btn_map = nullptr,
     qrd::BackendKind btn_map_backend = qrd::BackendKind::Snes)
 {
@@ -71,6 +72,7 @@ static inline bool settings_save(
 
     // Device settings
     settings_write(f, "refresh_rate", refresh_rate);
+    settings_write(f, "experimental_rumble_enabled", experimental_rumble_enabled);
 
     // VrState scalars
     settings_write(f, "gamma",        vs.gamma);
@@ -144,6 +146,7 @@ static inline bool settings_load(
     int* layer_filter_mode = nullptr,
     int* layer_auto_dup_percent = nullptr,
     float* refresh_rate = nullptr,
+    bool* experimental_rumble_enabled = nullptr,
     qrd::ButtonMap* btn_map = nullptr,
     qrd::BackendKind btn_map_backend = qrd::BackendKind::Snes)
 {
@@ -191,6 +194,7 @@ static inline bool settings_load(
         auto readi = [&](int& dst)    { dst = atoi(val); };
 
         if      (strcmp(key,"refresh_rate")  == 0) { if (refresh_rate) *refresh_rate = (float)atof(val); }
+        else if (strcmp(key,"experimental_rumble_enabled") == 0) { if (experimental_rumble_enabled) *experimental_rumble_enabled = atoi(val) != 0; }
         else if (strcmp(key,"gamma")        == 0) readf(vs.gamma);
         else if (strcmp(key,"contrast")     == 0) readf(vs.contrast);
         else if (strcmp(key,"saturation")   == 0) readf(vs.saturation);

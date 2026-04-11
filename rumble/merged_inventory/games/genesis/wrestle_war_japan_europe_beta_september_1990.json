@@ -1,0 +1,38 @@
+{
+  "system": "genesis",
+  "normalized_title": "wrestlewar",
+  "display_name": "Wrestle War (Japan, Europe) (Beta) (September, 1990)",
+  "aliases": [
+    "Wrestle War (Japan, Europe) (Beta) (September, 1990)",
+    "Wrestle War (Japan, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Wrestle War (Japan, Europe).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFA20D:0001",
+          "desc": "Freeze Time Knock Out",
+          "address": "0xFFA20D"
+        },
+        {
+          "code": "FFC42E:0001",
+          "desc": "Freeze Time",
+          "address": "0xFFC42E"
+        },
+        {
+          "code": "FFA100:0000",
+          "desc": "Computer has Zero Energy",
+          "address": "0xFFA100"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

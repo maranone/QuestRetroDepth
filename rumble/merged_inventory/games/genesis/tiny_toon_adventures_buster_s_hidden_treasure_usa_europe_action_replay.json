@@ -1,0 +1,149 @@
+{
+  "system": "genesis",
+  "normalized_title": "tinytoonadventuresbustershiddentreasure",
+  "display_name": "Tiny Toon Adventures - Buster's Hidden Treasure (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Tiny Toon Adventures - Buster's Hidden Treasure (Europe)",
+    "Tiny Toon Adventures - Buster's Hidden Treasure (USA)",
+    "Tiny Toon Adventures - Buster's Hidden Treasure (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\tinytoonadventuresbustershiddentreasure_genesis.json",
+      "trigger_count": 6,
+      "field_names": [
+        "health",
+        "lives",
+        "rings",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xFFFB04",
+        "0xFFFB09",
+        "0xFFFB0B",
+        "0xFFFB0E"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TinyToonAdventuresBustersHiddenTreasure-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFFB0B",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFFB09",
+          "type": "|i1"
+        },
+        {
+          "name": "rings",
+          "address": "0xFFFB0E",
+          "type": ">u2"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFB04",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tiny Toon Adventures - Buster's Hidden Treasure (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 16,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "FFFB09:09",
+          "desc": "Infinite Lives",
+          "address": "0xFFFB09"
+        },
+        {
+          "code": "FFFB0B:03",
+          "desc": "Infinite Hearts",
+          "address": "0xFFFB0B"
+        },
+        {
+          "code": "FFFB0F:63",
+          "desc": "Infinite Carrots",
+          "address": "0xFFFB0F"
+        },
+        {
+          "code": "FFFB11:63",
+          "desc": "Infinite Purple Birds (Bonus Qualifiers)",
+          "address": "0xFFFB11"
+        },
+        {
+          "code": "FFF941:XX",
+          "desc": "Round Modifier (00-27)",
+          "address": "0xFFF941"
+        },
+        {
+          "code": "FFA010:00",
+          "desc": "Moon Jump",
+          "address": "0xFFA010"
+        },
+        {
+          "code": "FFA031:00",
+          "desc": "Hyper Buster Bunny",
+          "address": "0xFFA031"
+        },
+        {
+          "code": "FFA039:28",
+          "desc": "1-Hit To Be Invincible",
+          "address": "0xFFA039"
+        },
+        {
+          "code": "FFFBE0:F7B9",
+          "desc": "All Levels Unlocked (Elmyra)",
+          "address": "0xFFFBE0"
+        },
+        {
+          "code": "FFFBE2:FB3B",
+          "desc": "All Levels Unlocked (Elmyra)",
+          "address": "0xFFFBE2"
+        },
+        {
+          "code": "FFFBE8:F7B9",
+          "desc": "All Levels Unlocked (Elmyra)",
+          "address": "0xFFFBE8"
+        },
+        {
+          "code": "FFFBEA:FB1B",
+          "desc": "All Levels Unlocked (Elmyra)",
+          "address": "0xFFFBEA"
+        },
+        {
+          "code": "FFFBF0:F7B9",
+          "desc": "All Levels Unlocked (Elmyra)",
+          "address": "0xFFFBF0"
+        },
+        {
+          "code": "FFFBF2:FB3B",
+          "desc": "All Levels Unlocked (Elmyra)",
+          "address": "0xFFFBF2"
+        },
+        {
+          "code": "FFFBF4:F7B9",
+          "desc": "All Levels Unlocked (Elmyra)",
+          "address": "0xFFFBF4"
+        },
+        {
+          "code": "FFFBF6:FB1B",
+          "desc": "All Levels Unlocked (Elmyra)",
+          "address": "0xFFFBF6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

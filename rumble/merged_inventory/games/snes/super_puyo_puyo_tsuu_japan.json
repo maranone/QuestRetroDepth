@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "superpuyopuyotsuu",
+  "display_name": "Super Puyo Puyo Tsuu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Puyo Puyo Tsuu (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E075200",
+          "desc": "Enemies Can't Drop Dark Beans On You",
+          "address": "0x7E0752"
+        },
+        {
+          "code": "7E129000",
+          "desc": "Enemies Can't Drop Dark Beans On You",
+          "address": "0x7E1290"
+        },
+        {
+          "code": "7E026000",
+          "desc": "Beans Are Always The Same Color",
+          "address": "0x7E0260"
+        },
+        {
+          "code": "7E026100",
+          "desc": "Beans Are Always The Same Color",
+          "address": "0x7E0261"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "system": "genesis",
+  "normalized_title": "streetsofrage2",
+  "display_name": "Streets of Rage 2 (USA) (Action Replay)",
+  "aliases": [
+    "Streets Of Rage 2 (Rumbles)",
+    "Streets of Rage 2 (USA) (Action Replay)",
+    "Streets of Rage 2 (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\streetsofrage2_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFEF83",
+        "0xFFEF95"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\StreetsOfRage2-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFEF83",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFEF95",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Streets of Rage 2 (USA).cht",
+      "total_cheat_rows": 256,
+      "raw_entry_count": 65,
+      "distinct_address_count": 61,
+      "sample_raw_entries": [
+        {
+          "code": "FFEF80:0068",
+          "desc": "Infinite Health",
+          "address": "0xFFEF80"
+        },
+        {
+          "code": "FFEF50:0014",
+          "desc": "Invincible",
+          "address": "0xFFEF50"
+        },
+        {
+          "code": "FFFD06:0063",
+          "desc": "Start with 99 Lives",
+          "address": "0xFFFD06"
+        },
+        {
+          "code": "FFFC3C:0099",
+          "desc": "Infinite Time",
+          "address": "0xFFFC3C"
+        },
+        {
+          "code": "FFEF32:0001",
+          "desc": "Select Weapon P1 Master Code 1",
+          "address": "0xFFEF32"
+        },
+        {
+          "code": "FFEF34:FFFF",
+          "desc": "Select Weapon P1 Master Code 2",
+          "address": "0xFFEF34"
+        },
+        {
+          "code": "FFEF38:003C",
+          "desc": "P1 Weapon Modifier",
+          "address": "0xFFEF38"
+        },
+        {
+          "code": "FFF038:003C",
+          "desc": "P2 Weapon Modifier",
+          "address": "0xFFF038"
+        },
+        {
+          "code": "FFEF83:0099",
+          "desc": "P1 99 Lives",
+          "address": "0xFFEF83"
+        },
+        {
+          "code": "FFEF91:000C",
+          "desc": "P1 normal health bar size",
+          "address": "0xFFEF91"
+        },
+        {
+          "code": "FFF051:0014",
+          "desc": "P2 Invincible",
+          "address": "0xFFF051"
+        },
+        {
+          "code": "FFF081:0068",
+          "desc": "P2 Unlimited Health",
+          "address": "0xFFF081"
+        },
+        {
+          "code": "FFF083:0099",
+          "desc": "P2 99 Lives",
+          "address": "0xFFF083"
+        },
+        {
+          "code": "FFF091:000C",
+          "desc": "P2 normal health bar size",
+          "address": "0xFFF091"
+        },
+        {
+          "code": "FFF151:0014",
+          "desc": "Boss Invincible",
+          "address": "0xFFF151"
+        },
+        {
+          "code": "FFF181:0068",
+          "desc": "Boss Unlimited Health",
+          "address": "0xFFF181"
+        },
+        {
+          "code": "FFF183:0004",
+          "desc": "Boss lives (4 stars)",
+          "address": "0xFFF183"
+        },
+        {
+          "code": "FFF191:000C",
+          "desc": "Boss health bar size (normal)",
+          "address": "0xFFF191"
+        },
+        {
+          "code": "FFEF96:0099",
+          "desc": "P1 MAX Score",
+          "address": "0xFFEF96"
+        },
+        {
+          "code": "FFEF97:0099",
+          "desc": "P1 MAX Score",
+          "address": "0xFFEF97"
+        },
+        {
+          "code": "FFEF98:0099",
+          "desc": "P1 MAX Score",
+          "address": "0xFFEF98"
+        },
+        {
+          "code": "FFF096:0099",
+          "desc": "P1 MAX Score",
+          "address": "0xFFF096"
+        },
+        {
+          "code": "FFF097:0099",
+          "desc": "P1 MAX Score",
+          "address": "0xFFF097"
+        },
+        {
+          "code": "FFF098:0099",
+          "desc": "P1 MAX Score",
+          "address": "0xFFF098"
+        },
+        {
+          "code": "FFEF0C:0000",
+          "desc": "P1 Character Modifier",
+          "address": "0xFFEF0C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

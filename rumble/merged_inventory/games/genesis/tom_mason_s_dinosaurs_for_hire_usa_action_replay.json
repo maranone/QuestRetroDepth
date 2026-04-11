@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "tommasonsdinosaursforhire",
+  "display_name": "Tom Mason's Dinosaurs for Hire (USA) (Action Replay)",
+  "aliases": [
+    "Tom Mason's Dinosaurs for Hire (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tom Mason's Dinosaurs for Hire (USA).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF70EC:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF70EC"
+        },
+        {
+          "code": "FF70ED:0004",
+          "desc": "Infinite Lives",
+          "address": "0xFF70ED"
+        },
+        {
+          "code": "FF66C7:0038",
+          "desc": "Infinite Health P2",
+          "address": "0xFF66C7"
+        },
+        {
+          "code": "FF64C9:0038",
+          "desc": "Infinite Health P1",
+          "address": "0xFF64C9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

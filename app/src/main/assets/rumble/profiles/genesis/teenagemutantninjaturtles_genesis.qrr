@@ -1,0 +1,6 @@
+game_name=TeenageMutantNinjaTurtles
+game_key=TeenageMutantNinjaTurtles-Genesis
+system=genesis
+integration_tier=manual
+trigger	damage_taken_0_c058	damage_taken	0xFFC058	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_2_c05a	damage_taken	0xFFC05A	1	uint	native	prev > curr	0.85	1	right:0.750:180

@@ -1,0 +1,89 @@
+{
+  "system": "snes",
+  "normalized_title": "accelebrid",
+  "display_name": "Accele Brid (Japan) (Action Replay)",
+  "aliases": [
+    "Accele Brid (Japan) (Action Replay)",
+    "Accele Brid (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\accelebrid_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E381F",
+        "0x7E382D"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AcceleBrid-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E381F",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E382D",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Accele Brid (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E381F63",
+          "desc": "Infinite Energy",
+          "address": "0x7E381F"
+        },
+        {
+          "code": "7E381F50",
+          "desc": "Infinite Energy",
+          "address": "0x7E381F"
+        },
+        {
+          "code": "7E383909",
+          "desc": "Infinite Ability Points",
+          "address": "0x7E3839"
+        },
+        {
+          "code": "7E383B08",
+          "desc": "Max Left Weapon",
+          "address": "0x7E383B"
+        },
+        {
+          "code": "7E383D08",
+          "desc": "Max Right Weapon",
+          "address": "0x7E383D"
+        },
+        {
+          "code": "7E381D08",
+          "desc": "Infinite Transformation Time",
+          "address": "0x7E381D"
+        },
+        {
+          "code": "7E42110F",
+          "desc": "Quickly Reach Boss",
+          "address": "0x7E4211"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

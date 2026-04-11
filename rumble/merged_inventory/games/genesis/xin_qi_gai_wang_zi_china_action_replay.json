@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "xinqigaiwangzi",
+  "display_name": "Xin Qi Gai Wang Zi (China) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Xin Qi Gai Wang Zi (China) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF02F5:E7",
+          "desc": "Infinite Energy",
+          "address": "0xFF02F5"
+        },
+        {
+          "code": "FF02F7:E7",
+          "desc": "Infinite Magic",
+          "address": "0xFF02F7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "system": "genesis",
+  "normalized_title": "pitfighter",
+  "display_name": "Pit-Fighter (World) (Action Replay)",
+  "aliases": [
+    "Pit-Fighter (World) (Action Replay)",
+    "Pit-Fighter (World) (Beta)",
+    "Pit-Fighter (World) (En,Ja)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\pitfighter_genesis.json",
+      "trigger_count": 6,
+      "field_names": [
+        "enemy_health",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xFF2B7E",
+        "0xFF2B98",
+        "0xFF2C33",
+        "0xFF2D1B"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\PitFighter-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "enemy_health",
+          "address": "0xFF2D1B",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFF2B7E",
+          "type": ">u2"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF2C33",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF2B98",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Pit-Fighter (World) (En,Ja).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

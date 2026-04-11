@@ -1,0 +1,147 @@
+{
+  "system": "snes",
+  "normalized_title": "tenchimuyougamehen",
+  "display_name": "Tenchi Muyou! - Game Hen (Japan) (Action Replay)",
+  "aliases": [
+    "Tenchi Muyou! - Game Hen (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Tenchi Muyou! - Game Hen (Japan).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 29,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "7F004063",
+          "desc": "P.1 Infinite HP",
+          "address": "0x7F0040"
+        },
+        {
+          "code": "7F009063",
+          "desc": "P.2 Infinite HP",
+          "address": "0x7F0090"
+        },
+        {
+          "code": "7F00E063",
+          "desc": "P.3 Infinite HP",
+          "address": "0x7F00E0"
+        },
+        {
+          "code": "7F013063",
+          "desc": "P.4 Infinite HP",
+          "address": "0x7F0130"
+        },
+        {
+          "code": "7F014D00",
+          "desc": "E.1 Gone",
+          "address": "0x7F014D"
+        },
+        {
+          "code": "7F019D00",
+          "desc": "E.2 Gone",
+          "address": "0x7F019D"
+        },
+        {
+          "code": "7F01ED00",
+          "desc": "E.3 Gone",
+          "address": "0x7F01ED"
+        },
+        {
+          "code": "7F023D00",
+          "desc": "E.4 Gone",
+          "address": "0x7F023D"
+        },
+        {
+          "code": "7F018000",
+          "desc": "Enemy HP 0",
+          "address": "0x7F0180"
+        },
+        {
+          "code": "7F0040FF",
+          "desc": "Infinite HP For Everybody",
+          "address": "0x7F0040"
+        },
+        {
+          "code": "7F0090FF",
+          "desc": "Infinite HP For Everybody",
+          "address": "0x7F0090"
+        },
+        {
+          "code": "7F00E0FF",
+          "desc": "Infinite HP For Everybody",
+          "address": "0x7F00E0"
+        },
+        {
+          "code": "7F0130FF",
+          "desc": "Infinite HP For Everybody",
+          "address": "0x7F0130"
+        },
+        {
+          "code": "7F0040FF",
+          "desc": "P.1 HP",
+          "address": "0x7F0040"
+        },
+        {
+          "code": "7F0041FF",
+          "desc": "P.1 HP",
+          "address": "0x7F0041"
+        },
+        {
+          "code": "7F0045FF",
+          "desc": "P.1 Attack",
+          "address": "0x7F0045"
+        },
+        {
+          "code": "7F0048FF",
+          "desc": "P.1 Defense",
+          "address": "0x7F0048"
+        },
+        {
+          "code": "7F0090FF",
+          "desc": "P.2 HP",
+          "address": "0x7F0090"
+        },
+        {
+          "code": "7F0091FF",
+          "desc": "P.2 HP",
+          "address": "0x7F0091"
+        },
+        {
+          "code": "7F0095FF",
+          "desc": "P.2 Attack",
+          "address": "0x7F0095"
+        },
+        {
+          "code": "7F0098FF",
+          "desc": "P.2 Defense",
+          "address": "0x7F0098"
+        },
+        {
+          "code": "7F00E0FF",
+          "desc": "P.3 HP",
+          "address": "0x7F00E0"
+        },
+        {
+          "code": "7F00E1FF",
+          "desc": "P.3 HP",
+          "address": "0x7F00E1"
+        },
+        {
+          "code": "7F00E5FF",
+          "desc": "P.3 Attack",
+          "address": "0x7F00E5"
+        },
+        {
+          "code": "7F00E8FF",
+          "desc": "P.3 Defense",
+          "address": "0x7F00E8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

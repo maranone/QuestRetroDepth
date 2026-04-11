@@ -1,0 +1,54 @@
+{
+  "system": "genesis",
+  "normalized_title": "supershinobiii",
+  "display_name": "Super Shinobi II, The (Japan, Korea) (Action Replay)",
+  "aliases": [
+    "Super Shinobi II, The (Japan) (Beta 2)",
+    "Super Shinobi II, The (Japan, Korea) (Action Replay)",
+    "Super Shinobi II, The (Japan, Korea)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Super Shinobi II, The (Japan, Korea).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 6,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF37E9:0016",
+          "desc": "Infinite Health",
+          "address": "0xFF37E9"
+        },
+        {
+          "code": "FF000A:0041",
+          "desc": "Enable 6-Button Mode",
+          "address": "0xFF000A"
+        },
+        {
+          "code": "FF000B:0052",
+          "desc": "Enable Invincibility Cheat",
+          "address": "0xFF000B"
+        },
+        {
+          "code": "FF000B:0000",
+          "desc": "Disable Invincibility Cheat",
+          "address": "0xFF000B"
+        },
+        {
+          "code": "FF0001:00B0",
+          "desc": "Enable Infinite Shuriken Cheat",
+          "address": "0xFF0001"
+        },
+        {
+          "code": "FF0001:0000",
+          "desc": "Disable Infinite Shuriken Cheat",
+          "address": "0xFF0001"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

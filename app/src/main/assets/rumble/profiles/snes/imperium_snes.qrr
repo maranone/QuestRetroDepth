@@ -1,0 +1,7 @@
+game_name=Imperium (USA) (Action Replay)
+game_key=Imperium-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_0aa8	damage_taken	0x7E0AA8	1	int	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0aa8	death	0x7E0AA8	1	int	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_0abe	score	0x7E0ABE	2	uint	little	prev < curr	0.8	1	right:0.350:60

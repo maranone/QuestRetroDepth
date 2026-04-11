@@ -1,0 +1,7 @@
+game_name=Midnight Resistance (USA, Japan) (Action Replay)
+game_key=MidnightResistance-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ff6451	life_lost	0xFF6451	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff6451	life_gained	0xFF6451	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ff6452	score	0xFF6452	4	bcd	big	prev < curr	0.8	1	right:0.350:60

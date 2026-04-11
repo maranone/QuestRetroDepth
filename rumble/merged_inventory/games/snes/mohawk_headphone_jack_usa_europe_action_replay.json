@@ -1,0 +1,57 @@
+{
+  "system": "snes",
+  "normalized_title": "mohawkheadphonejack",
+  "display_name": "Mohawk _ Headphone Jack (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Mohawk _ Headphone Jack (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Mohawk _ Headphone Jack (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E030609",
+          "desc": "Infinite Lives",
+          "address": "0x7E0306"
+        },
+        {
+          "code": "7E030809",
+          "desc": "Infinite Health",
+          "address": "0x7E0308"
+        },
+        {
+          "code": "7E0F5F2D",
+          "desc": "Invincible / Walk Thru Enemies (Can't Pick Up Items Though)",
+          "address": "0x7E0F5F"
+        },
+        {
+          "code": "7E0F3200",
+          "desc": "Normal",
+          "address": "0x7E0F32"
+        },
+        {
+          "code": "7E0F3201",
+          "desc": "Have Wheel",
+          "address": "0x7E0F32"
+        },
+        {
+          "code": "7E0F3202",
+          "desc": "Have Wings",
+          "address": "0x7E0F32"
+        },
+        {
+          "code": "7E030099",
+          "desc": "Have Lots of CDs",
+          "address": "0x7E0300"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "system": "snes",
+  "normalized_title": "rocketeer",
+  "display_name": "Rocketeer, The (USA) (Action Replay)",
+  "aliases": [
+    "Rocketeer, The (USA) (Game Genie)",
+    "Rocketeer, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Rocketeer, The (USA).cht",
+      "total_cheat_rows": 53,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E09390A",
+          "desc": "No Laps To Go on Races 1 and 3",
+          "address": "0x7E0939"
+        },
+        {
+          "code": "7E009100",
+          "desc": "No Laps To Go on Races 1 and 3",
+          "address": "0x7E0091"
+        },
+        {
+          "code": "7E09390F",
+          "desc": "No Laps To Go on Race 2",
+          "address": "0x7E0939"
+        },
+        {
+          "code": "7E009100",
+          "desc": "No Laps To Go on Race 2",
+          "address": "0x7E0091"
+        },
+        {
+          "code": "7E009D63",
+          "desc": "Infinite Spreading Bullets (Flying Levels Only)",
+          "address": "0x7E009D"
+        },
+        {
+          "code": "7E002B99",
+          "desc": "Infinite Health",
+          "address": "0x7E002B"
+        },
+        {
+          "code": "7E073D03",
+          "desc": "Infinite Lives",
+          "address": "0x7E073D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

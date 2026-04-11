@@ -1,0 +1,77 @@
+{
+  "system": "genesis",
+  "normalized_title": "jellyboy",
+  "display_name": "Jelly Boy (Europe) (Action Replay)",
+  "aliases": [
+    "Jelly Boy (Europe) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Jelly Boy (Europe) (Proto).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "FF13F8:03E7",
+          "desc": "Infinite Music Notes",
+          "address": "0xFF13F8"
+        },
+        {
+          "code": "FF13D6:03E7",
+          "desc": "Infinite Lives",
+          "address": "0xFF13D6"
+        },
+        {
+          "code": "FF13DA:03E7",
+          "desc": "Infinite Time",
+          "address": "0xFF13DA"
+        },
+        {
+          "code": "FF13FA:03E7",
+          "desc": "999 Fruit",
+          "address": "0xFF13FA"
+        },
+        {
+          "code": "FFc9FC:0098",
+          "desc": "Can't Be Hit",
+          "address": "0xFFC9FC"
+        },
+        {
+          "code": "FFF9A7:0080",
+          "desc": "Can't Be Hit",
+          "address": "0xFFF9A7"
+        },
+        {
+          "code": "FFF927:0009",
+          "desc": "Infinite Jelly Form Time",
+          "address": "0xFFF927"
+        },
+        {
+          "code": "FF008B:00FF",
+          "desc": "Enabled Cheat Code Unlock sub-levels",
+          "address": "0xFF008B"
+        },
+        {
+          "code": "FFFF57:00FF",
+          "desc": "Enabled Cheat Code Play as Fergus head",
+          "address": "0xFFFF57"
+        },
+        {
+          "code": "FFCB33:0000",
+          "desc": "1 Hit Kill Enemies",
+          "address": "0xFFCB33"
+        },
+        {
+          "code": "FFF9A7:0010",
+          "desc": "Invincibility",
+          "address": "0xFFF9A7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

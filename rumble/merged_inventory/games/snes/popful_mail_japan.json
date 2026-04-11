@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "popfulmail",
+  "display_name": "Popful Mail (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Popful Mail (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E0204FF",
+          "desc": "Infinite Money",
+          "address": "0x7E0204"
+        },
+        {
+          "code": "7E0205FF",
+          "desc": "Infinite Money",
+          "address": "0x7E0205"
+        },
+        {
+          "code": "7E049063",
+          "desc": "Infinite Hp",
+          "address": "0x7E0490"
+        },
+        {
+          "code": "7E036163",
+          "desc": "Infinite Mp",
+          "address": "0x7E0361"
+        },
+        {
+          "code": "7E049100",
+          "desc": "First Boss",
+          "address": "0x7E0491"
+        },
+        {
+          "code": "7E049200",
+          "desc": "Second Boss Wood Man",
+          "address": "0x7E0492"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

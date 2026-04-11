@@ -1,0 +1,73 @@
+{
+  "system": "genesis",
+  "normalized_title": "lemmings2tribes",
+  "display_name": "Lemmings 2 - The Tribes (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Lemmings 2 - The Tribes (USA)",
+    "Lemmings 2 - The Tribes (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Lemmings 2 - The Tribes (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "FF3FE7:003B",
+          "desc": "Infinite Time",
+          "address": "0xFF3FE7"
+        },
+        {
+          "code": "FF3DBD:0064",
+          "desc": "Always Save 100% Lemmings",
+          "address": "0xFF3DBD"
+        },
+        {
+          "code": "FF42C7:0063",
+          "desc": "Infinite Item (Box 1)",
+          "address": "0xFF42C7"
+        },
+        {
+          "code": "FF42C9:0063",
+          "desc": "Infinite Item (Box 2)",
+          "address": "0xFF42C9"
+        },
+        {
+          "code": "FF42CB:0063",
+          "desc": "Infinite Item (Box 3)",
+          "address": "0xFF42CB"
+        },
+        {
+          "code": "FF42CD:0063",
+          "desc": "Infinite Item (Box 4)",
+          "address": "0xFF42CD"
+        },
+        {
+          "code": "FF42CF:0063",
+          "desc": "Infinite Item (Box 5)",
+          "address": "0xFF42CF"
+        },
+        {
+          "code": "FF42D1:0063",
+          "desc": "Infinite Item (Box 6)",
+          "address": "0xFF42D1"
+        },
+        {
+          "code": "FF42D3:0063",
+          "desc": "Infinite Item (Box 7)",
+          "address": "0xFF42D3"
+        },
+        {
+          "code": "FF42D5:0063",
+          "desc": "Infinite Item (Box 8)",
+          "address": "0xFF42D5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

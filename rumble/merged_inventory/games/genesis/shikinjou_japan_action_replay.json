@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "shikinjou",
+  "display_name": "Shikinjou (Japan) (Action Replay)",
+  "aliases": [
+    "Shikinjou (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Shikinjou (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF819E:0000",
+          "desc": "Level Modifier",
+          "address": "0xFF819E"
+        },
+        {
+          "code": "FF96FD:00C7",
+          "desc": "Choose any Stage",
+          "address": "0xFF96FD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

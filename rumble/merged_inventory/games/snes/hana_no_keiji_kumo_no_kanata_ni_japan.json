@@ -1,0 +1,65 @@
+{
+  "system": "snes",
+  "normalized_title": "hananokeijikumonokanatani",
+  "display_name": "Hana no Keiji - Kumo no Kanata ni (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Hana no Keiji - Kumo no Kanata ni (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E104CFF",
+          "desc": "Infinite Health",
+          "address": "0x7E104C"
+        },
+        {
+          "code": "7E104DFF",
+          "desc": "Infinite Health",
+          "address": "0x7E104D"
+        },
+        {
+          "code": "7E104E68",
+          "desc": "Infinite Power",
+          "address": "0x7E104E"
+        },
+        {
+          "code": "7E105068",
+          "desc": "Infinite Power",
+          "address": "0x7E1050"
+        },
+        {
+          "code": "7E124E00",
+          "desc": "Enemy No Power",
+          "address": "0x7E124E"
+        },
+        {
+          "code": "7E125000",
+          "desc": "Enemy No Power",
+          "address": "0x7E1250"
+        },
+        {
+          "code": "7E0C180A",
+          "desc": "Infinite Monkeys",
+          "address": "0x7E0C18"
+        },
+        {
+          "code": "7F282D06",
+          "desc": "Infinite Fan",
+          "address": "0x7F282D"
+        },
+        {
+          "code": "7FFEED06",
+          "desc": "Infinite Fan",
+          "address": "0x7FFEED"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

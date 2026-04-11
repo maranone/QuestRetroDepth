@@ -1,0 +1,35 @@
+{
+  "system": "genesis",
+  "normalized_title": "lionking3",
+  "display_name": "Lion King 3, The",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Lion King 3, The.cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF00FC:0009",
+          "desc": "Unlimited Special Attacks",
+          "address": "0xFF00FC"
+        },
+        {
+          "code": "FF7216:0309",
+          "desc": "Unlimited Health",
+          "address": "0xFF7216"
+        },
+        {
+          "code": "FF7212:270F",
+          "desc": "Sun Medallions Worth A 1Up",
+          "address": "0xFF7212"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

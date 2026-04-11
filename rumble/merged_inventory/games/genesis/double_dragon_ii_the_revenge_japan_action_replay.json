@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "doubledragoniirevenge",
+  "display_name": "Double Dragon II - The Revenge (Japan) (Action Replay)",
+  "aliases": [
+    "Double Dragon II - The Revenge (Japan) (En)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Double Dragon II - The Revenge (Japan) (En).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FF6038:0001",
+          "desc": "Weapon Modifier",
+          "address": "0xFF6038"
+        },
+        {
+          "code": "FF6000:0020",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF6000"
+        },
+        {
+          "code": "FF6000:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF6000"
+        },
+        {
+          "code": "FF6040:0020",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF6040"
+        },
+        {
+          "code": "FF6078:0009",
+          "desc": "Infinite Lives P2",
+          "address": "0xFF6078"
+        },
+        {
+          "code": "FF4840:0063",
+          "desc": "Infinite Time",
+          "address": "0xFF4840"
+        },
+        {
+          "code": "FF485C:0000",
+          "desc": "Level Modifier",
+          "address": "0xFF485C"
+        },
+        {
+          "code": "FF6098:000B",
+          "desc": "Mr X's Drive By Style (Intro)",
+          "address": "0xFF6098"
+        },
+        {
+          "code": "FFFD24:0007",
+          "desc": "Start with 10 Lives",
+          "address": "0xFFFD24"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

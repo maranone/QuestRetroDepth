@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "oonitaatsushifmw",
+  "display_name": "Oonita Atsushi FMW (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Oonita Atsushi FMW (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E0BD001",
+          "desc": "Player 1 only needs to win 1 round to advance",
+          "address": "0x7E0BD0"
+        },
+        {
+          "code": "7E0BD101",
+          "desc": "Player 2 only needs to win 1 round to advance",
+          "address": "0x7E0BD1"
+        },
+        {
+          "code": "7E009806",
+          "desc": "Player 1 Modifier",
+          "address": "0x7E0098"
+        },
+        {
+          "code": "7E009906",
+          "desc": "Player 2 Modifier",
+          "address": "0x7E0099"
+        },
+        {
+          "code": "7E004E01",
+          "desc": "Character Select Screen Background Stops Scrolling",
+          "address": "0x7E004E"
+        },
+        {
+          "code": "7E009601",
+          "desc": "Always Play a 2 Player Game",
+          "address": "0x7E0096"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "vampirekiller",
+  "display_name": "Vampire Killer (Japan) (Action Replay)",
+  "aliases": [
+    "Vampire Killer (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Vampire Killer (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF9C10:0056",
+          "desc": "Infinite Health",
+          "address": "0xFF9C10"
+        },
+        {
+          "code": "FFFB0E:0909",
+          "desc": "Infinite Gems",
+          "address": "0xFFFB0E"
+        },
+        {
+          "code": "FFFB2A:0000",
+          "desc": "Room Modifier",
+          "address": "0xFFFB2A"
+        },
+        {
+          "code": "FFFB2E:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFFFB2E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

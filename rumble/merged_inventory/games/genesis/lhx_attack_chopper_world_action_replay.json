@@ -1,0 +1,37 @@
+{
+  "system": "genesis",
+  "normalized_title": "lhxattackchopper",
+  "display_name": "LHX Attack Chopper (World) (Action Replay)",
+  "aliases": [
+    "LHX Attack Chopper (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\LHX Attack Chopper (World) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFF1BD:FF",
+          "desc": "Infinite 20mm Chain",
+          "address": "0xFFF1BD"
+        },
+        {
+          "code": "FFF1BF:FF",
+          "desc": "Infinite Sidewinders",
+          "address": "0xFFF1BF"
+        },
+        {
+          "code": "FFF1C1:FF",
+          "desc": "Infinite Hellfires",
+          "address": "0xFFF1C1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

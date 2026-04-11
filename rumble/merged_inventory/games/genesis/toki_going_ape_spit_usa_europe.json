@@ -1,0 +1,90 @@
+{
+  "system": "genesis",
+  "normalized_title": "tokigoingapespit",
+  "display_name": "Toki - Going Ape Spit (USA, Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Toki - Going Ape Spit (USA, Europe).cht",
+      "total_cheat_rows": 71,
+      "raw_entry_count": 14,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FF1B86:0005",
+          "desc": "Unlimited Men",
+          "address": "0xFF1B86"
+        },
+        {
+          "code": "FF1B63:0059",
+          "desc": "Unlimited Time",
+          "address": "0xFF1B63"
+        },
+        {
+          "code": "FF1B82:0009",
+          "desc": "Infinite Time (Alternate - Minutes Digits)",
+          "address": "0xFF1B82"
+        },
+        {
+          "code": "FF1B82:0058",
+          "desc": "Infinite Time (Alternate - Seconds Digits)",
+          "address": "0xFF1B82"
+        },
+        {
+          "code": "FF1B86:0000",
+          "desc": "Food Modifier",
+          "address": "0xFF1B86"
+        },
+        {
+          "code": "FF1B88:0000",
+          "desc": "Weapon Modifier (Read Note)",
+          "address": "0xFF1B88"
+        },
+        {
+          "code": "FF1B8C:0009",
+          "desc": "Infinite Credits (Continues)",
+          "address": "0xFF1B8C"
+        },
+        {
+          "code": "FF023A:0009",
+          "desc": "Infinite Time At Credit/Continue Screen",
+          "address": "0xFF023A"
+        },
+        {
+          "code": "FF1B8A:00BE",
+          "desc": "Stage Modifier",
+          "address": "0xFF1B8A"
+        },
+        {
+          "code": "FF1B8A:0001",
+          "desc": "Start On Level/Stage Modifier (Combined)",
+          "address": "0xFF1B8A"
+        },
+        {
+          "code": "FF1BB6:0001",
+          "desc": "Start On Level/Stage Modifier (Combined)",
+          "address": "0xFF1BB6"
+        },
+        {
+          "code": "FF3600:0000",
+          "desc": "Fake Boss Health Modifier",
+          "address": "0xFF3600"
+        },
+        {
+          "code": "FF1D24:00A7",
+          "desc": "Always Have Higher Jump (Forces White Running Shoes Ability)",
+          "address": "0xFF1D24"
+        },
+        {
+          "code": "FF1D26:00E1",
+          "desc": "Always Invincible (Forces Star Ability)",
+          "address": "0xFF1D26"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

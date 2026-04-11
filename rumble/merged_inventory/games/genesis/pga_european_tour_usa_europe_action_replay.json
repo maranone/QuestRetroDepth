@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "pgaeuropeantour",
+  "display_name": "PGA European Tour (USA, Europe) (Action Replay)",
+  "aliases": [
+    "PGA European Tour (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\PGA European Tour (USA, Europe).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF58B5:0000",
+          "desc": "P1 Always on 1st Stroke",
+          "address": "0xFF58B5"
+        },
+        {
+          "code": "FF59E7:0000",
+          "desc": "P2 Always on 1st Stroke",
+          "address": "0xFF59E7"
+        },
+        {
+          "code": "FF5B19:0000",
+          "desc": "P3 Always on 1st Stroke",
+          "address": "0xFF5B19"
+        },
+        {
+          "code": "FF5C4B:0000",
+          "desc": "P4 Always on 1st Stroke",
+          "address": "0xFF5C4B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

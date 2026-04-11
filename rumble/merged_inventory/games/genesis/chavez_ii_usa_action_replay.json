@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "chavezii",
+  "display_name": "Chavez II (USA) (Action Replay)",
+  "aliases": [
+    "Chavez II (USA) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Chavez II (USA) (Action Replay).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFEF5B:XX",
+          "desc": "Character Highlighter Modifier (P1&P2)",
+          "address": "0xFFEF5B"
+        },
+        {
+          "code": "FFBE3A:07",
+          "desc": "Infinite Health Boxer P1",
+          "address": "0xFFBE3A"
+        },
+        {
+          "code": "FFBE58:00",
+          "desc": "No Health P2/CPU",
+          "address": "0xFFBE58"
+        },
+        {
+          "code": "FFCCA8:33",
+          "desc": "Infinite Time",
+          "address": "0xFFCCA8"
+        },
+        {
+          "code": "FFBE99:9D",
+          "desc": "Infinite Boxing Glove Boxer P1",
+          "address": "0xFFBE99"
+        },
+        {
+          "code": "FFBE45:00",
+          "desc": "Freezes P2/CPU (Can't Punch P2)",
+          "address": "0xFFBE45"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

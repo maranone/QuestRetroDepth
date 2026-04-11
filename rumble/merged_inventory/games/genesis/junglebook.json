@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "junglebook",
+  "display_name": "JungleBook",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\junglebook_genesis.json",
+      "trigger_count": 6,
+      "field_names": [
+        "gameover",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xFF1C27",
+        "0xFFF4DB",
+        "0xFFFA58",
+        "0xFFFAD4"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JungleBook-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFF1C27",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFFF4DB",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFFAD4",
+          "type": "|n1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFA58",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 4
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

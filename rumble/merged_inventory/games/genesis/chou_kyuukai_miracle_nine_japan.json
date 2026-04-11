@@ -1,0 +1,45 @@
+{
+  "system": "genesis",
+  "normalized_title": "choukyuukaimiraclenine",
+  "display_name": "Chou Kyuukai Miracle Nine (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Chou Kyuukai Miracle Nine (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFF062:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFFF062"
+        },
+        {
+          "code": "FFF060:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFFF060"
+        },
+        {
+          "code": "FFF062:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFFF062"
+        },
+        {
+          "code": "FFEDEE:0000",
+          "desc": "Score Modifier (Left Side)",
+          "address": "0xFFEDEE"
+        },
+        {
+          "code": "FFEF22:0000",
+          "desc": "Score Modifier (Right Side)",
+          "address": "0xFFEF22"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

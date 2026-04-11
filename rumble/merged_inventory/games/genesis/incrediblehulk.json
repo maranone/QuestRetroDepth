@@ -1,0 +1,50 @@
+{
+  "system": "genesis",
+  "normalized_title": "incrediblehulk",
+  "display_name": "IncredibleHulk",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\incrediblehulk_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF082E",
+        "0xFF0889",
+        "0xFF08A4"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\IncredibleHulk-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF08A4",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF0889",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF082E",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 3
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

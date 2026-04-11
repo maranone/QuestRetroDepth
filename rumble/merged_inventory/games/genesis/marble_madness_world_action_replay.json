@@ -1,0 +1,68 @@
+{
+  "system": "genesis",
+  "normalized_title": "marblemadness",
+  "display_name": "Marble Madness (World) (Action Replay)",
+  "aliases": [
+    "Marble Madness (Japan)",
+    "Marble Madness (USA, Europe)",
+    "Marble Madness (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\marblemadness_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFB129"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MarbleMadness-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "score",
+          "address": "0xFFB129",
+          "type": ">u3"
+        },
+        {
+          "name": "time",
+          "address": "0xFFAC77",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Marble Madness (World) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFB0CF:99",
+          "desc": "Have Infinite Time",
+          "address": "0xFFB0CF"
+        },
+        {
+          "code": "FFB12A:FF",
+          "desc": "Have Insane Score P1",
+          "address": "0xFFB12A"
+        },
+        {
+          "code": "FFB12B:FF",
+          "desc": "Have Insane Score P1",
+          "address": "0xFFB12B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

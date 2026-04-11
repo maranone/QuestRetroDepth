@@ -1,0 +1,40 @@
+{
+  "system": "genesis",
+  "normalized_title": "puttysquad",
+  "display_name": "Putty Squad (Europe) (Proto)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Putty Squad (Europe) (Proto).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF60CD:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF60CD"
+        },
+        {
+          "code": "FF60D9:0015",
+          "desc": "Infinite Energy",
+          "address": "0xFF60D9"
+        },
+        {
+          "code": "FF60E3:0001",
+          "desc": "Infinite USE",
+          "address": "0xFF60E3"
+        },
+        {
+          "code": "FF60D0:0099",
+          "desc": "Start Game with 99 Infinite Stars and Infinite Weapon After the Death",
+          "address": "0xFF60D0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

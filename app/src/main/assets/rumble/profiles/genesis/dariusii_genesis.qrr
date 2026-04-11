@@ -1,0 +1,8 @@
+game_name=Darius II (Japan) (Action Replay)
+game_key=DariusII-Genesis
+system=genesis
+integration_tier=stable
+trigger	game_over_gameover_ff0823	game_over	0xFF0823	1	uint	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	life_lost_lives_ff0872	life_lost	0xFF0872	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff0872	life_gained	0xFF0872	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ff0b46	score	0xFF0B46	4	bcd	big	prev < curr	0.8	1	right:0.350:60

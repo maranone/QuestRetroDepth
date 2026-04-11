@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "slaughtersport",
+  "display_name": "Slaughter Sport (USA) (Action Replay)",
+  "aliases": [
+    "Slaughter Sport (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Slaughter Sport (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF2C30:0003",
+          "desc": "Unlimited Energy",
+          "address": "0xFF2C30"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

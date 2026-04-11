@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "jamespondii",
+  "display_name": "James Pond II (Japan, Korea)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\James Pond II (Japan, Korea).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFB3FF:0005",
+          "desc": "Infinite Energy",
+          "address": "0xFFB3FF"
+        },
+        {
+          "code": "FFB3F1:0010",
+          "desc": "Invincibility",
+          "address": "0xFFB3F1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

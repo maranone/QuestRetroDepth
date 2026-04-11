@@ -1,0 +1,5 @@
+game_name=Zool
+game_key=Zool-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_1cf1	damage_taken	0x7E1CF1	1	uint	native	prev > curr	0.85	1	left:0.750:180

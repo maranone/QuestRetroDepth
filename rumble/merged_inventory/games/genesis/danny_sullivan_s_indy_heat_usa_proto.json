@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "dannysullivansindyheat",
+  "display_name": "Danny Sullivan's Indy Heat (USA) (Proto)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Danny Sullivan's Indy Heat (USA) (Proto).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF5EDD:0003",
+          "desc": "Infinite Coins",
+          "address": "0xFF5EDD"
+        },
+        {
+          "code": "FF5EDB:001E",
+          "desc": "Infinite Purse $",
+          "address": "0xFF5EDB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

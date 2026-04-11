@@ -1,0 +1,43 @@
+{
+  "system": "snes",
+  "normalized_title": "brutalpawsoffury",
+  "display_name": "Brutal - Paws of Fury (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Brutal - Paws of Fury (USA)",
+    "Brutal - Paws of Fury (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Brutal - Paws of Fury (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E156C60",
+          "desc": "Infinite Health P1",
+          "address": "0x7E156C"
+        },
+        {
+          "code": "7E15E400",
+          "desc": "Instant Death P2",
+          "address": "0x7E15E4"
+        },
+        {
+          "code": "7E159E02",
+          "desc": "P1 Has 2 Wins",
+          "address": "0x7E159E"
+        },
+        {
+          "code": "7E131140",
+          "desc": "Enable Dali Llama",
+          "address": "0x7E1311"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

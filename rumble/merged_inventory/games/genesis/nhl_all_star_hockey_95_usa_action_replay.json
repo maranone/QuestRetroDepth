@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "nhlallstarhockey95",
+  "display_name": "NHL All-Star Hockey '95 (USA) (Action Replay)",
+  "aliases": [
+    "NHL All-Star Hockey 95 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NHL All-Star Hockey 95 (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF57C4:0063",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFF57C4"
+        },
+        {
+          "code": "FF57C4:0063",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFF57C4"
+        },
+        {
+          "code": "FF50B0:0000",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFF50B0"
+        },
+        {
+          "code": "FF50D4:0000",
+          "desc": "Team 1 Shot Modifier",
+          "address": "0xFF50D4"
+        },
+        {
+          "code": "FF5B02:0000",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFF5B02"
+        },
+        {
+          "code": "FF50BA:0000",
+          "desc": "Team 2 Shot Modifier",
+          "address": "0xFF50BA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

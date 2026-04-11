@@ -1,0 +1,151 @@
+{
+  "system": "genesis",
+  "normalized_title": "samuraishodown",
+  "display_name": "Samurai Shodown (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Samurai Shodown (USA)",
+    "Samurai Shodown (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\samuraishodown_genesis.json",
+      "trigger_count": 4,
+      "field_names": [
+        "enemy_health",
+        "health",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF4836",
+        "0xFF483F",
+        "0xFF498F"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SamuraiShodown-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "enemy_health",
+          "address": "0xFF498F",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFF483F",
+          "type": "|u1"
+        },
+        {
+          "name": "round",
+          "address": "0xFFAA41",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF4836",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Samurai Shodown (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 17,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FF483F:80",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF483F"
+        },
+        {
+          "code": "FF498F:80",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF498F"
+        },
+        {
+          "code": "FF483F:00",
+          "desc": "No Energy P1",
+          "address": "0xFF483F"
+        },
+        {
+          "code": "FF498F:00",
+          "desc": "No Energy P2",
+          "address": "0xFF498F"
+        },
+        {
+          "code": "FF4879:21",
+          "desc": "Full POW Meter P1",
+          "address": "0xFF4879"
+        },
+        {
+          "code": "FF49C9:21",
+          "desc": "Full POW Meter P2",
+          "address": "0xFF49C9"
+        },
+        {
+          "code": "FF4879:00",
+          "desc": "No POW Meter P1",
+          "address": "0xFF4879"
+        },
+        {
+          "code": "FF49C9:00",
+          "desc": "No POW Meter P2",
+          "address": "0xFF49C9"
+        },
+        {
+          "code": "FFAA67:99",
+          "desc": "Infinite Time",
+          "address": "0xFFAA67"
+        },
+        {
+          "code": "FF4877:XX",
+          "desc": "P1 Name/Characteristics Code",
+          "address": "0xFF4877"
+        },
+        {
+          "code": "FF49C7:XX",
+          "desc": "P2 Name/Characteristics Code",
+          "address": "0xFF49C7"
+        },
+        {
+          "code": "FF47CB:XX",
+          "desc": "P1 Character Modifier (Both Modes)",
+          "address": "0xFF47CB"
+        },
+        {
+          "code": "FF47CF:XX",
+          "desc": "P1 Character Modifier (Both Modes)",
+          "address": "0xFF47CF"
+        },
+        {
+          "code": "FF491B:XX",
+          "desc": "P1 Character Modifier (Both Modes)",
+          "address": "0xFF491B"
+        },
+        {
+          "code": "FF491F:XX",
+          "desc": "P1 Character Modifier (Both Modes)",
+          "address": "0xFF491F"
+        },
+        {
+          "code": "FF685A:02",
+          "desc": "Level Modifier (VS Mode)",
+          "address": "0xFF685A"
+        },
+        {
+          "code": "FF7565:XX",
+          "desc": "Level Modifier (Alternate VS Mode Modifier)",
+          "address": "0xFF7565"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

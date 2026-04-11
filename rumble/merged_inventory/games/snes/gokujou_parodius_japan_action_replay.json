@@ -1,0 +1,85 @@
+{
+  "system": "snes",
+  "normalized_title": "gokujouparodius",
+  "display_name": "Gokujou Parodius (Japan) (Action Replay)",
+  "aliases": [
+    "Gokujou Parodius (Japan) (Action Replay)",
+    "Gokujou Parodius (Japan) (Beta)",
+    "Gokujou Parodius (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\gokujouparodius_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E00A4",
+        "0x7E1F08"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GokujouParodius-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E00A4",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E1F08",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Gokujou Parodius (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E1DCC80",
+          "desc": "Enemies Can't Touch You",
+          "address": "0x7E1DCC"
+        },
+        {
+          "code": "7E1FF663",
+          "desc": "Infinite credits",
+          "address": "0x7E1FF6"
+        },
+        {
+          "code": "7E1DE810",
+          "desc": "Max Speed",
+          "address": "0x7E1DE8"
+        },
+        {
+          "code": "7E1DF601",
+          "desc": "Activate Missile Shot",
+          "address": "0x7E1DF6"
+        },
+        {
+          "code": "7E1DE601",
+          "desc": "Weapon Modifier",
+          "address": "0x7E1DE6"
+        },
+        {
+          "code": "7E009C00",
+          "desc": "Character Modifier",
+          "address": "0x7E009C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

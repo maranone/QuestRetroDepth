@@ -1,0 +1,148 @@
+{
+  "system": "snes",
+  "normalized_title": "lufiafortressofdoom",
+  "display_name": "Lufia _ the Fortress of Doom (USA) (Action Replay)",
+  "aliases": [
+    "Lufia _ the Fortress of Doom (USA) (Game Genie)",
+    "Lufia _ the Fortress of Doom (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Lufia _ the Fortress of Doom (USA).cht",
+      "total_cheat_rows": 152,
+      "raw_entry_count": 94,
+      "distinct_address_count": 91,
+      "sample_raw_entries": [
+        {
+          "code": "7E149E00",
+          "desc": "No Random Battles",
+          "address": "0x7E149E"
+        },
+        {
+          "code": "7E14FA63",
+          "desc": "Slot 02 Item Quantity @ 99",
+          "address": "0x7E14FA"
+        },
+        {
+          "code": "7E14F863",
+          "desc": "Slot 01 Item Quantity @ 99",
+          "address": "0x7E14F8"
+        },
+        {
+          "code": "7E14FB00",
+          "desc": "Slot 03 Item Modifier",
+          "address": "0x7E14FB"
+        },
+        {
+          "code": "7E14F900",
+          "desc": "Slot 02 Item Modifier",
+          "address": "0x7E14F9"
+        },
+        {
+          "code": "7E14F700",
+          "desc": "Slot 01 Item Modifier",
+          "address": "0x7E14F7"
+        },
+        {
+          "code": "7E14FC63",
+          "desc": "Slot 03 Item Quantity @ 99",
+          "address": "0x7E14FC"
+        },
+        {
+          "code": "7E14FC63",
+          "desc": "-Item Modifier Values",
+          "address": "0x7E14FC"
+        },
+        {
+          "code": "7E054300",
+          "desc": "In Game Timer 0:00",
+          "address": "0x7E0543"
+        },
+        {
+          "code": "7E054400",
+          "desc": "In Game Timer 0:00",
+          "address": "0x7E0544"
+        },
+        {
+          "code": "7E054300",
+          "desc": "No Random Battles",
+          "address": "0x7E0543"
+        },
+        {
+          "code": "7E054400",
+          "desc": "No Random Battles",
+          "address": "0x7E0544"
+        },
+        {
+          "code": "7E14CF7F",
+          "desc": "Infinite Gold",
+          "address": "0x7E14CF"
+        },
+        {
+          "code": "7E14D096",
+          "desc": "Infinite Gold",
+          "address": "0x7E14D0"
+        },
+        {
+          "code": "7E14D198",
+          "desc": "Infinite Gold",
+          "address": "0x7E14D1"
+        },
+        {
+          "code": "7E157FE7",
+          "desc": "Infinite HP",
+          "address": "0x7E157F"
+        },
+        {
+          "code": "7E158003",
+          "desc": "Infinite HP",
+          "address": "0x7E1580"
+        },
+        {
+          "code": "7E1587E7",
+          "desc": "Infinite MP",
+          "address": "0x7E1587"
+        },
+        {
+          "code": "7E158803",
+          "desc": "Infinite MP",
+          "address": "0x7E1588"
+        },
+        {
+          "code": "7E16F0E7",
+          "desc": "Max ATP",
+          "address": "0x7E16F0"
+        },
+        {
+          "code": "7E16F103",
+          "desc": "Max ATP",
+          "address": "0x7E16F1"
+        },
+        {
+          "code": "7E16F8E7",
+          "desc": "Max DFP",
+          "address": "0x7E16F8"
+        },
+        {
+          "code": "7E16F903",
+          "desc": "Max DFP",
+          "address": "0x7E16F9"
+        },
+        {
+          "code": "7E1700E7",
+          "desc": "Max AGL",
+          "address": "0x7E1700"
+        },
+        {
+          "code": "7E170103",
+          "desc": "Max AGL",
+          "address": "0x7E1701"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

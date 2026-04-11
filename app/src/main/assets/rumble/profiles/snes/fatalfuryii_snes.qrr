@@ -1,0 +1,6 @@
+game_name=FatalFuryIi
+game_key=FatalFuryIi-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_1003	damage_taken	0x7E1003	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_1_1203	damage_taken	0x7E1203	1	uint	native	prev > curr	0.85	1	right:0.750:180

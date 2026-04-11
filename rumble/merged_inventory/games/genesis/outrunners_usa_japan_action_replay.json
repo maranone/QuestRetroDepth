@@ -1,0 +1,63 @@
+{
+  "system": "genesis",
+  "normalized_title": "outrunners",
+  "display_name": "OutRunners (USA, Japan) (Action Replay)",
+  "aliases": [
+    "OutRunners (USA)",
+    "OutRunners (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\OutRunners (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FFB6B0:99",
+          "desc": "Infinite Time To Choose A Car P1",
+          "address": "0xFFB6B0"
+        },
+        {
+          "code": "FFB6B1:99",
+          "desc": "Infinite Time To Choose A Car P2",
+          "address": "0xFFB6B1"
+        },
+        {
+          "code": "FFB69F:XX",
+          "desc": "Car Modifier P1",
+          "address": "0xFFB69F"
+        },
+        {
+          "code": "FFB6A7:XX",
+          "desc": "Car Modifier P2",
+          "address": "0xFFB6A7"
+        },
+        {
+          "code": "FF81CC:99",
+          "desc": "Infinite Time To Race P1",
+          "address": "0xFF81CC"
+        },
+        {
+          "code": "FF81D4:99",
+          "desc": "Infinite Time To Race P2",
+          "address": "0xFF81D4"
+        },
+        {
+          "code": "FF8154:XX",
+          "desc": "Speed Modifier P1",
+          "address": "0xFF8154"
+        },
+        {
+          "code": "FF8158:XX",
+          "desc": "Speed Modifier P2/CPU",
+          "address": "0xFF8158"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

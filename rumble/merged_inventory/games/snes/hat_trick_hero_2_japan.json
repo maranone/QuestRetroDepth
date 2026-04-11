@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "hattrickhero2",
+  "display_name": "Hat Trick Hero 2 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Hat Trick Hero 2 (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E073D18",
+          "desc": "Play As National League Champions Team",
+          "address": "0x7E073D"
+        },
+        {
+          "code": "7E07653F",
+          "desc": "P1 Infinite Super Shot",
+          "address": "0x7E0765"
+        },
+        {
+          "code": "7E078C00",
+          "desc": "P2 No Super Shot",
+          "address": "0x7E078C"
+        },
+        {
+          "code": "7E07AE00",
+          "desc": "P1 Score",
+          "address": "0x7E07AE"
+        },
+        {
+          "code": "7E07AF00",
+          "desc": "P2 Score",
+          "address": "0x7E07AF"
+        },
+        {
+          "code": "7E07B700",
+          "desc": "Time Modifier",
+          "address": "0x7E07B7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

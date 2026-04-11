@@ -1,0 +1,79 @@
+{
+  "system": "snes",
+  "normalized_title": "aladdin",
+  "display_name": "Aladdin (World) (Action Replay)",
+  "aliases": [
+    "Aladdin (France)",
+    "Aladdin (Germany)",
+    "Aladdin (Japan)",
+    "Aladdin (Rumbles)",
+    "Aladdin (USA) (Beta)",
+    "Aladdin (USA)",
+    "Aladdin (World) (Action Replay)",
+    "Aladdin"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Aladdin (World) (Action Replay).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E036E01",
+          "desc": "Always Parachute",
+          "address": "0x7E036E"
+        },
+        {
+          "code": "7E03640A",
+          "desc": "Infinite Lives",
+          "address": "0x7E0364"
+        },
+        {
+          "code": "7E036703",
+          "desc": "Infinite Health",
+          "address": "0x7E0367"
+        },
+        {
+          "code": "7E036999",
+          "desc": "Infinite Apples",
+          "address": "0x7E0369"
+        },
+        {
+          "code": "7E036B99",
+          "desc": "Infinite Gems",
+          "address": "0x7E036B"
+        },
+        {
+          "code": "7E08FB16",
+          "desc": "Super Jump",
+          "address": "0x7E08FB"
+        },
+        {
+          "code": "7E034704",
+          "desc": "Invincible",
+          "address": "0x7E0347"
+        },
+        {
+          "code": "7E096C01",
+          "desc": "Abu Doesn't Follow You",
+          "address": "0x7E096C"
+        },
+        {
+          "code": "7E146B80",
+          "desc": "Abu Eats An Apple",
+          "address": "0x7E146B"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 15,
+      "mk3_label": "ALADDIN"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "system": "snes",
+  "normalized_title": "makerunamakendou",
+  "display_name": "Makeruna! Makendou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Makeruna! Makendou (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E148640",
+          "desc": "Infinite Psy",
+          "address": "0x7E1486"
+        },
+        {
+          "code": "7E148840",
+          "desc": "Infinite Psy",
+          "address": "0x7E1488"
+        },
+        {
+          "code": "7E131700",
+          "desc": "Freeze Time",
+          "address": "0x7E1317"
+        },
+        {
+          "code": "7E148A40",
+          "desc": "Infinite Health",
+          "address": "0x7E148A"
+        },
+        {
+          "code": "7E148C40",
+          "desc": "Infinite Health",
+          "address": "0x7E148C"
+        },
+        {
+          "code": "7E147201",
+          "desc": "Untouchable",
+          "address": "0x7E1472"
+        },
+        {
+          "code": "7E0CE209",
+          "desc": "Infinite Lives",
+          "address": "0x7E0CE2"
+        },
+        {
+          "code": "7E149009",
+          "desc": "Infinite Auto Block",
+          "address": "0x7E1490"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

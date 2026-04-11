@@ -1,0 +1,8 @@
+game_name=Flicky (USA, Europe) (Action Replay)
+game_key=Flicky-Genesis
+system=genesis
+integration_tier=stable
+trigger	level_complete_level_ffd82d	level_complete	0xFFD82D	1	uint	native	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_ffd882	life_lost	0xFFD882	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffd882	life_gained	0xFFD882	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ffd87e	score	0xFFD87E	4	bcd	big	prev < curr	0.8	1	right:0.350:60

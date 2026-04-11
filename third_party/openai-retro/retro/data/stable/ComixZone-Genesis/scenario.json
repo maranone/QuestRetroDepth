@@ -1,0 +1,22 @@
+{
+  "done": {
+    "variables": {
+      "health": {
+        "op": "less-or-equal"
+      }
+    }
+  },
+  "reward": {
+    "variables": {
+      "finishes": {
+        "reward": 100.0
+      },
+      "combos": {
+        "reward": 100.0
+      },
+      "progress": {
+        "reward": 1.0
+      }
+    }
+  }
+}

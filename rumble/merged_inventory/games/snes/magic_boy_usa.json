@@ -1,0 +1,98 @@
+{
+  "system": "snes",
+  "normalized_title": "magicboy",
+  "display_name": "Magic Boy (USA)",
+  "aliases": [
+    "Magic Boy (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\magicboy_snes.json",
+      "trigger_count": 8,
+      "field_names": [
+        "gameover",
+        "lives",
+        "score0",
+        "score1",
+        "score2",
+        "score3",
+        "score4"
+      ],
+      "field_count": 7,
+      "distinct_addresses": [
+        "0x7E0009",
+        "0x7E9B7A",
+        "0x7E9B7E",
+        "0x7E9B82",
+        "0x7E9B86",
+        "0x7E9B8A",
+        "0x7E9BB6"
+      ],
+      "distinct_address_count": 7
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MagicBoy-Snes-v0\\data.json",
+      "field_count": 7,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0x7E0009",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E9BB6",
+          "type": "|u1"
+        },
+        {
+          "name": "score0",
+          "address": "0x7E9B7A",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0x7E9B7E",
+          "type": "|u1"
+        },
+        {
+          "name": "score2",
+          "address": "0x7E9B82",
+          "type": "|u1"
+        },
+        {
+          "name": "score3",
+          "address": "0x7E9B86",
+          "type": "|u1"
+        },
+        {
+          "name": "score4",
+          "address": "0x7E9B8A",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 7
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Magic Boy (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E9BB609",
+          "desc": "Infinite Lives",
+          "address": "0x7E9BB6"
+        },
+        {
+          "code": "7E9BC418",
+          "desc": "Infinite Weapon Gauge",
+          "address": "0x7E9BC4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Prince of Persia (S)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Prince of Persia (S).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "6D32-0FA1",
+      "desc": "Freeze Timer",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DC32-04D1",
+      "desc": "Freeze Timer",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D430-04A5",
+      "desc": "Start With 2 Health Points Instead Of 3",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D030-04A5",
+      "desc": "Start With 4 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D930-04A5",
+      "desc": "Start With 5 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D130-04A5",
+      "desc": "Start With 6 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D530-04A5",
+      "desc": "Start With 7 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D630-04A5",
+      "desc": "Start With 8 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DB30-04A5",
+      "desc": "Start With 9 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FD30-04A5",
+      "desc": "Start With 15 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "BAA6-ADA5",
+      "desc": "Non-Fatal Injuries Do No Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "43C9-6D61",
+      "desc": "Non-Fatal Falls Do No Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D4C1-6701",
+      "desc": "Non-Fatal Falls Do 2 Points Of Damage Instead Of 1",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6DC0-6701",
+      "desc": "Falls Do No Damage (Except Onto Spikes)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C260-A701",
+      "desc": "All Enemies Have 1 Health Point",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DF6C-DFA0",
+      "desc": "All Enemies Have 1 Health Point",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C260-A701",
+      "desc": "All Enemies Have 2 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D46C-DFA0",
+      "desc": "All Enemies Have 2 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C260-A701",
+      "desc": "All Enemies Have 3 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D76C-DFA0",
+      "desc": "All Enemies Have 3 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C260-A701",
+      "desc": "All Enemies Have 4 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D06C-DFA0",
+      "desc": "All Enemies Have 4 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C260-A701",
+      "desc": "All Enemies Have 5 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D96C-DFA0",
+      "desc": "All Enemies Have 5 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C260-A701",
+      "desc": "All Enemies Have 10 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DC6C-DFA0",
+      "desc": "All Enemies Have 10 Health Points",
+      "kind": "game_genie"
+    },
+    {
+      "code": "BA69-ADA1",
+      "desc": "Enemies Drop Dead Immediately",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DFB7-D46E",
+      "desc": "Start On Level 2",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D4B7-D46E",
+      "desc": "Start On Level 3",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D7B7-D46E",
+      "desc": "Start On Level 4",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D0B7-D46E",
+      "desc": "Start On Level 5",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D9B7-D46E",
+      "desc": "Start On Level 6",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D1B7-D46E",
+      "desc": "Start On Level 7",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D5B7-D46E",
+      "desc": "Start On Level 8",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D6B7-D46E",
+      "desc": "Start On Level 9",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DBB7-D46E",
+      "desc": "Start On Level 10",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DCB7-D46E",
+      "desc": "Start On Level 11",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D8B7-D46E",
+      "desc": "Start On Level 12",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DAB7-D46E",
+      "desc": "Start On Level 13",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D2B7-D46E",
+      "desc": "Start On Level 14",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D3B7-D46E",
+      "desc": "Start On Level 15",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DEB7-D46E",
+      "desc": "Start On Level 16",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDB7-D46E",
+      "desc": "Start On Level 17",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FFB7-D46E",
+      "desc": "Start On Level 18",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F4B7-D46E",
+      "desc": "Start On Level 19",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F7B7-D46E",
+      "desc": "Start On Level 20",
+      "kind": "game_genie"
+    }
+  ]
+}

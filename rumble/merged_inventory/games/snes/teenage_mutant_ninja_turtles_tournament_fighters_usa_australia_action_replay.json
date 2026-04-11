@@ -1,0 +1,72 @@
+{
+  "system": "snes",
+  "normalized_title": "teenagemutantninjaturtlestournamentfighters",
+  "display_name": "Teenage Mutant Ninja Turtles - Tournament Fighters (USA, Australia) (Action Replay)",
+  "aliases": [
+    "Teenage Mutant Ninja Turtles - Tournament Fighters (USA, Australia) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Teenage Mutant Ninja Turtles - Tournament Fighters (USA, Australia) (Action Replay).cht",
+      "total_cheat_rows": 47,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "7E1F9C01",
+          "desc": "Enable New Levels",
+          "address": "0x7E1F9C"
+        },
+        {
+          "code": "7E1F9401",
+          "desc": "Enable Bosses",
+          "address": "0x7E1F94"
+        },
+        {
+          "code": "7E1F9A01",
+          "desc": "High Speed Mode",
+          "address": "0x7E1F9A"
+        },
+        {
+          "code": "7E1F9801",
+          "desc": "Specials in Story",
+          "address": "0x7E1F98"
+        },
+        {
+          "code": "7E1F9601",
+          "desc": "10 Credits",
+          "address": "0x7E1F96"
+        },
+        {
+          "code": "7E1AAE60",
+          "desc": "Infinite Health P1",
+          "address": "0x7E1AAE"
+        },
+        {
+          "code": "7E008E99",
+          "desc": "Infinite Time",
+          "address": "0x7E008E"
+        },
+        {
+          "code": "7E1AFE00",
+          "desc": "No Health P2",
+          "address": "0x7E1AFE"
+        },
+        {
+          "code": "7E0EE46E",
+          "desc": "Infinite Health (P1 - Alternate Code)",
+          "address": "0x7E0EE4"
+        },
+        {
+          "code": "7E0FC401",
+          "desc": "Enemy 1 Hit Death (Player 2's Health)",
+          "address": "0x7E0FC4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

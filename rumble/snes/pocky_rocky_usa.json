@@ -1,0 +1,104 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Pocky Rocky (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Pocky Rocky (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "CB2D-DFDF",
+      "desc": "Stop Timer",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDA7-AD65",
+      "desc": "Infinite Lives (Pocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD35-0761",
+      "desc": "Infinite Lives (Rocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DF62-A7D4",
+      "desc": "1 Life (Pocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D162-A7D4",
+      "desc": "6 Lives (Pocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DB62-A7D4",
+      "desc": "9 Lives (Pocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DF62-A704",
+      "desc": "1 Life (Rocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D162-A704",
+      "desc": "6 Lives (Rocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DB62-A704",
+      "desc": "9 Lives (Rocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C933-A794",
+      "desc": "Infinite Energy (Pocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C93E-A797",
+      "desc": "Infinite Energy (Rocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4032-A4F4",
+      "desc": "Weapons Don't Deplete When Hit (Pocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4033-AFF7",
+      "desc": "Weapons Don't Deplete When Hit (Pocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D43F-6FF4",
+      "desc": "Blue Ball Acts As Red Ball (Pocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DF3D-6424",
+      "desc": "Red Ball Acts As Blue Ball (Pocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D43B-6F27",
+      "desc": "Blue Ball Acts As Red Ball (Rocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DF36-67B7",
+      "desc": "Red Ball Acts As Blue Ball (Rocky)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C4A4-6767",
+      "desc": "Walk Through Walls",
+      "kind": "game_genie"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "brandish2planetbuster",
+  "display_name": "Brandish 2 - The Planet Buster (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Brandish 2 - The Planet Buster (Japan).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E9994BE",
+          "desc": "",
+          "address": "0x7E9994"
+        },
+        {
+          "code": "7E024690",
+          "desc": "Infinite Energy",
+          "address": "0x7E0246"
+        },
+        {
+          "code": "7E066600",
+          "desc": "Bosses Have No Energy",
+          "address": "0x7E0666"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

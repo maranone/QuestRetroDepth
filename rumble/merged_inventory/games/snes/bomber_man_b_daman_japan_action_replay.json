@@ -1,0 +1,57 @@
+{
+  "system": "snes",
+  "normalized_title": "bombermanbdaman",
+  "display_name": "Bomber Man B-Daman (Japan) (Action Replay)",
+  "aliases": [
+    "Bomber Man B-Daman (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bomber Man B-Daman (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E0D9900",
+          "desc": "Stage Modifier",
+          "address": "0x7E0D99"
+        },
+        {
+          "code": "7E0DB200",
+          "desc": "Stage Modifier",
+          "address": "0x7E0DB2"
+        },
+        {
+          "code": "7E0E0B99",
+          "desc": "Infinite Timer (Battle)",
+          "address": "0x7E0E0B"
+        },
+        {
+          "code": "7E02D801",
+          "desc": "Score Modifier - Left Character (Battle)",
+          "address": "0x7E02D8"
+        },
+        {
+          "code": "7E025800",
+          "desc": "Score Modifier - Right Character (Battle)",
+          "address": "0x7E0258"
+        },
+        {
+          "code": "7E033200",
+          "desc": "Score Modifier - Bottom Character [P1] (Battle)",
+          "address": "0x7E0332"
+        },
+        {
+          "code": "7E025800",
+          "desc": "Score Modifier - Top Character (Battle)",
+          "address": "0x7E0258"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "fifasoccer2000goldedition",
+  "display_name": "FIFA Soccer 2000 Gold Edition (USA, Europe) (Action Replay)",
+  "aliases": [
+    "FIFA Soccer 2000 Gold Edition"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\FIFA Soccer 2000 Gold Edition.cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFF8A0:0000",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFF8A0"
+        },
+        {
+          "code": "FFF8A2:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFF8A2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

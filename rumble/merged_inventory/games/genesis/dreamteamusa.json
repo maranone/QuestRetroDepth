@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "dreamteamusa",
+  "display_name": "DreamTeamUSA",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\dreamteamusa_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DreamTeamUSA-Genesis-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "USA_score",
+          "address": "0xFFA644",
+          "type": ">u2"
+        },
+        {
+          "name": "WLD_score",
+          "address": "0xFFA642",
+          "type": ">u2"
+        },
+        {
+          "name": "mins",
+          "address": "0xFFA64F",
+          "type": "|u1"
+        },
+        {
+          "name": "period",
+          "address": "0xFFA649",
+          "type": "|u1"
+        },
+        {
+          "name": "seconds",
+          "address": "0xFFA64D",
+          "type": "|i1"
+        }
+      ],
+      "distinct_address_count": 5
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

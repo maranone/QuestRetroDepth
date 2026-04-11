@@ -1,0 +1,118 @@
+{
+  "system": "genesis",
+  "normalized_title": "alien3",
+  "display_name": "Alien 3 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Alien 3 (USA, Europe) (Rev A)",
+    "Alien 3 (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Alien 3 (USA, Europe).cht",
+      "total_cheat_rows": 73,
+      "raw_entry_count": 19,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FF3371:0002",
+          "desc": "Invincibility",
+          "address": "0xFF3371"
+        },
+        {
+          "code": "FF0881:002F",
+          "desc": "Infinite Energy",
+          "address": "0xFF0881"
+        },
+        {
+          "code": "FF090A:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFF090A"
+        },
+        {
+          "code": "FF0880:0037",
+          "desc": "Infinite Energy",
+          "address": "0xFF0880"
+        },
+        {
+          "code": "FF0866:0359",
+          "desc": "Infinite Time",
+          "address": "0xFF0866"
+        },
+        {
+          "code": "FF0844:0099",
+          "desc": "Infinite Fisrt Weapon",
+          "address": "0xFF0844"
+        },
+        {
+          "code": "FF0846:0099",
+          "desc": "Infinite Second Weapon",
+          "address": "0xFF0846"
+        },
+        {
+          "code": "FF0848:0099",
+          "desc": "Infinite Third Weapon",
+          "address": "0xFF0848"
+        },
+        {
+          "code": "FF084A:0099",
+          "desc": "Infinite Fourth Weapon",
+          "address": "0xFF084A"
+        },
+        {
+          "code": "FF3370:0002",
+          "desc": "Invincibility",
+          "address": "0xFF3370"
+        },
+        {
+          "code": "FF0844:0099",
+          "desc": "Infinite Pulse Rifle Ammo",
+          "address": "0xFF0844"
+        },
+        {
+          "code": "FF0866:0060",
+          "desc": "Infinite Time",
+          "address": "0xFF0866"
+        },
+        {
+          "code": "FF0846:0099",
+          "desc": "Infinite Fuel",
+          "address": "0xFF0846"
+        },
+        {
+          "code": "FF0848:0099",
+          "desc": "Infinite Grenades",
+          "address": "0xFF0848"
+        },
+        {
+          "code": "FF084A:0099",
+          "desc": "Infinite Hand Grenades",
+          "address": "0xFF084A"
+        },
+        {
+          "code": "FF3370:0002",
+          "desc": "Invincible",
+          "address": "0xFF3370"
+        },
+        {
+          "code": "FF0808:0000",
+          "desc": "No Prisoners To Save I",
+          "address": "0xFF0808"
+        },
+        {
+          "code": "FF0810:0000",
+          "desc": "No Prisoners To Save II",
+          "address": "0xFF0810"
+        },
+        {
+          "code": "FF0916:0001",
+          "desc": "Skip Levels In Game Pause Press C, A, B Start",
+          "address": "0xFF0916"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

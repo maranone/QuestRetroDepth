@@ -1,0 +1,60 @@
+{
+  "system": "snes",
+  "normalized_title": "collegefootballusa97",
+  "display_name": "College Football USA 97 (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\College Football USA 97 (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E183605",
+          "desc": "Infinite First Downs",
+          "address": "0x7E1836"
+        },
+        {
+          "code": "7E1828FF",
+          "desc": "Freeze Clock",
+          "address": "0x7E1828"
+        },
+        {
+          "code": "7FB14000",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x7FB140"
+        },
+        {
+          "code": "7FB72600",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x7FB726"
+        },
+        {
+          "code": "7FB43100",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x7FB431"
+        },
+        {
+          "code": "7FB72800",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x7FB728"
+        },
+        {
+          "code": "7FB1C700",
+          "desc": "Team 1 Time Out Left Modifier",
+          "address": "0x7FB1C7"
+        },
+        {
+          "code": "7FB4B800",
+          "desc": "Team 2 Time Out Left Modifier",
+          "address": "0x7FB4B8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

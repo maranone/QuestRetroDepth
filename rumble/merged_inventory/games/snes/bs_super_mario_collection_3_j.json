@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "bssupermariocollection3",
+  "display_name": "BS Super Mario Collection 3 (J)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\BS Super Mario Collection 3 (J).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E10653B",
+          "desc": "Infinite Play Time",
+          "address": "0x7E1065"
+        },
+        {
+          "code": "7E05F009",
+          "desc": "Infinite Time",
+          "address": "0x7E05F0"
+        },
+        {
+          "code": "7E1DA263",
+          "desc": "Collect 1 coin for 1-up",
+          "address": "0x7E1DA2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

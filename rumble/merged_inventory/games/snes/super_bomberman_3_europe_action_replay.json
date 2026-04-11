@@ -1,0 +1,150 @@
+{
+  "system": "snes",
+  "normalized_title": "superbomberman3",
+  "display_name": "Super Bomberman 3 (Europe) (Action Replay)",
+  "aliases": [
+    "Super Bomber Man 3 (Japan)",
+    "Super Bomberman 3 (Europe) (Action Replay)",
+    "Super Bomberman 3 (Europe) (Game Genie)",
+    "Super Bomberman 3 (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Bomberman 3 (Europe).cht",
+      "total_cheat_rows": 45,
+      "raw_entry_count": 39,
+      "distinct_address_count": 37,
+      "sample_raw_entries": [
+        {
+          "code": "7E17E33E",
+          "desc": "Infinite Time",
+          "address": "0x7E17E3"
+        },
+        {
+          "code": "7E17E800",
+          "desc": "All Orbs Destroyed",
+          "address": "0x7E17E8"
+        },
+        {
+          "code": "7E308E00",
+          "desc": "Boss Dies Without Being Hit",
+          "address": "0x7E308E"
+        },
+        {
+          "code": "7E034A09",
+          "desc": "Infinite Lives",
+          "address": "0x7E034A"
+        },
+        {
+          "code": "7E17E201",
+          "desc": "Infinite Time",
+          "address": "0x7E17E2"
+        },
+        {
+          "code": "7E17E800",
+          "desc": "Exits On All Stages Are Active",
+          "address": "0x7E17E8"
+        },
+        {
+          "code": "7E17EA00",
+          "desc": "Exits On All Stages Are Active",
+          "address": "0x7E17EA"
+        },
+        {
+          "code": "7E12EC01",
+          "desc": "1 Hit To Kill All Bosses",
+          "address": "0x7E12EC"
+        },
+        {
+          "code": "7E12ED01",
+          "desc": "1 Hit To Kill All Bosses",
+          "address": "0x7E12ED"
+        },
+        {
+          "code": "7E6C6E0B",
+          "desc": "Auto Select SuperStar Battle Stage",
+          "address": "0x7E6C6E"
+        },
+        {
+          "code": "7E6C6E0C",
+          "desc": "Auto Select Happy Happy Battle Stage",
+          "address": "0x7E6C6E"
+        },
+        {
+          "code": "7E138FFF",
+          "desc": "Invincibility (Player 1)",
+          "address": "0x7E138F"
+        },
+        {
+          "code": "7E1390FF",
+          "desc": "Invincibility (Player 2)",
+          "address": "0x7E1390"
+        },
+        {
+          "code": "7E1391FF",
+          "desc": "Invincibility (Player 3)",
+          "address": "0x7E1391"
+        },
+        {
+          "code": "7E1392FF",
+          "desc": "Invincibility (Player 4)",
+          "address": "0x7E1392"
+        },
+        {
+          "code": "7E1393FF",
+          "desc": "Invincibility (Player 5)",
+          "address": "0x7E1393"
+        },
+        {
+          "code": "7E17DBFF",
+          "desc": "Set Score To 6 Million  (Player 1)",
+          "address": "0x7E17DB"
+        },
+        {
+          "code": "7E17DDFF",
+          "desc": "Set Score To 6 Million  (Player 2)",
+          "address": "0x7E17DD"
+        },
+        {
+          "code": "7E48B909",
+          "desc": "Set Max. Bomb Quantity (Player 1)",
+          "address": "0x7E48B9"
+        },
+        {
+          "code": "7E48BA09",
+          "desc": "Set Max. Bomb Quantity (Player 2)",
+          "address": "0x7E48BA"
+        },
+        {
+          "code": "7E48BB09",
+          "desc": "Set Max. Bomb Quantity (Player 3)",
+          "address": "0x7E48BB"
+        },
+        {
+          "code": "7E48BC09",
+          "desc": "Set Max. Bomb Quantity (Player 4)",
+          "address": "0x7E48BC"
+        },
+        {
+          "code": "7E48BD09",
+          "desc": "Set Max. Bomb Quantity (Player 5)",
+          "address": "0x7E48BD"
+        },
+        {
+          "code": "7E144F7F",
+          "desc": "Set Max. Bomb Power (Player 1)",
+          "address": "0x7E144F"
+        },
+        {
+          "code": "7E14507F",
+          "desc": "Set Max. Bomb Power (Player 2)",
+          "address": "0x7E1450"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

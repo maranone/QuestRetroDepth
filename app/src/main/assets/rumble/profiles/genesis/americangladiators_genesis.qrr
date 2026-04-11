@@ -1,0 +1,6 @@
+game_name=American Gladiators (USA)
+game_key=AmericanGladiators-Genesis
+system=genesis
+integration_tier=stable
+trigger	game_over_gameover_ff1318	game_over	0xFF1318	1	int	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	score_score_ff0010	score	0xFF0010	2	bcd	big	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,148 @@
+{
+  "system": "snes",
+  "normalized_title": "langrisserder",
+  "display_name": "Langrisser, Der (Japan) (Action Replay)",
+  "aliases": [
+    "Langrisser, Der (Japan) (Game Genie)",
+    "Langrisser, Der (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Langrisser, Der (Japan).cht",
+      "total_cheat_rows": 40,
+      "raw_entry_count": 25,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "7EB02F92",
+          "desc": "Slot 1 Character Level Up [Elwin]",
+          "address": "0x7EB02F"
+        },
+        {
+          "code": "7E3402B0",
+          "desc": "Slot 1 Character Class [Elwin]",
+          "address": "0x7E3402"
+        },
+        {
+          "code": "7E340304",
+          "desc": "Slot 1 Character Class [Elwin]",
+          "address": "0x7E3403"
+        },
+        {
+          "code": "7EB08F92",
+          "desc": "Slot 2 Character Level Up",
+          "address": "0x7EB08F"
+        },
+        {
+          "code": "7E3402B0",
+          "desc": "Slot 2 Character Class",
+          "address": "0x7E3402"
+        },
+        {
+          "code": "7E340304",
+          "desc": "Slot 2 Character Class",
+          "address": "0x7E3403"
+        },
+        {
+          "code": "7EB0EF92",
+          "desc": "Slot 3 Character level up",
+          "address": "0x7EB0EF"
+        },
+        {
+          "code": "7E3402B0",
+          "desc": "Slot 3 Character Class",
+          "address": "0x7E3402"
+        },
+        {
+          "code": "7E340304",
+          "desc": "Slot 3 Character Class",
+          "address": "0x7E3403"
+        },
+        {
+          "code": "7EB14F92",
+          "desc": "Slot 4 Character Level Up",
+          "address": "0x7EB14F"
+        },
+        {
+          "code": "7E3402B0",
+          "desc": "Slot 4 Character Class",
+          "address": "0x7E3402"
+        },
+        {
+          "code": "7E340304",
+          "desc": "Slot 4 Character Class",
+          "address": "0x7E3403"
+        },
+        {
+          "code": "7EB1AF92",
+          "desc": "Slot 5 Character Level Up",
+          "address": "0x7EB1AF"
+        },
+        {
+          "code": "7E3402B0",
+          "desc": "Slot 5 Character Class",
+          "address": "0x7E3402"
+        },
+        {
+          "code": "7E340304",
+          "desc": "Slot 5 Character Class",
+          "address": "0x7E3403"
+        },
+        {
+          "code": "7E1CDDFF",
+          "desc": "Unlimited Money",
+          "address": "0x7E1CDD"
+        },
+        {
+          "code": "7E1CDEFF",
+          "desc": "Unlimited Money",
+          "address": "0x7E1CDE"
+        },
+        {
+          "code": "7E1CDDFF",
+          "desc": "Infinite Money",
+          "address": "0x7E1CDD"
+        },
+        {
+          "code": "7EB00900",
+          "desc": "Slot 1 (Elwin) Weapon mod",
+          "address": "0x7EB009"
+        },
+        {
+          "code": "7EB00A00",
+          "desc": "Slot 1 (Elwin) Armor mod",
+          "address": "0x7EB00A"
+        },
+        {
+          "code": "7E1CE309",
+          "desc": "Something to do with the weapons you have in your inventory",
+          "address": "0x7E1CE3"
+        },
+        {
+          "code": "7EB00310",
+          "desc": "Slot 1 (Elwin) Health",
+          "address": "0x7EB003"
+        },
+        {
+          "code": "7EB00200",
+          "desc": "Slot 1 (Elwin) Infinite Turns",
+          "address": "0x7EB002"
+        },
+        {
+          "code": "7E1CDDFF",
+          "desc": "Unlimited Money",
+          "address": "0x7E1CDD"
+        },
+        {
+          "code": "7E1CDEFF",
+          "desc": "Unlimited Money",
+          "address": "0x7E1CDE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

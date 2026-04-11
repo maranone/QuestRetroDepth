@@ -1,0 +1,77 @@
+{
+  "system": "genesis",
+  "normalized_title": "lethalenforcers",
+  "display_name": "Lethal Enforcers (World) (Action Replay)",
+  "aliases": [
+    "Lethal Enforcers (USA)",
+    "Lethal Enforcers (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\lethalenforcers_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFA096"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\LethalEnforcers-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "continuetimer",
+          "address": "0xFFA0BF",
+          "type": "|d1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFA096",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Lethal Enforcers (World) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFA09F:05",
+          "desc": "Infinite Health P1",
+          "address": "0xFFA09F"
+        },
+        {
+          "code": "FFA0AF:06",
+          "desc": "Infinite Bullets P1",
+          "address": "0xFFA0AF"
+        },
+        {
+          "code": "FFA0A1:05",
+          "desc": "Infinite Health P2",
+          "address": "0xFFA0A1"
+        },
+        {
+          "code": "FFA0B1:06",
+          "desc": "Infinite Bullets P2",
+          "address": "0xFFA0B1"
+        },
+        {
+          "code": "FFA095:99",
+          "desc": "Infinite Credits",
+          "address": "0xFFA095"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

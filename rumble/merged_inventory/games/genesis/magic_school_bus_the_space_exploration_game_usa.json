@@ -1,0 +1,65 @@
+{
+  "system": "genesis",
+  "normalized_title": "magicschoolbusspaceexplorationgame",
+  "display_name": "Magic School Bus, The - Space Exploration Game (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Magic School Bus, The - Space Exploration Game (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FFDC74:00FF",
+          "desc": "Max Speed",
+          "address": "0xFFDC74"
+        },
+        {
+          "code": "FFDCB4:000A",
+          "desc": "Max Speed",
+          "address": "0xFFDCB4"
+        },
+        {
+          "code": "FFE646:0009",
+          "desc": "Infinite Ships",
+          "address": "0xFFE646"
+        },
+        {
+          "code": "FFB73C:0009",
+          "desc": "Infinite Ships",
+          "address": "0xFFB73C"
+        },
+        {
+          "code": "FFA5FF:0009",
+          "desc": "Infinite Bus/Lives Astronaut",
+          "address": "0xFFA5FF"
+        },
+        {
+          "code": "FFB901:0064",
+          "desc": "Infinite Oxygen Astronaut",
+          "address": "0xFFB901"
+        },
+        {
+          "code": "FFDCBA:00B1",
+          "desc": "Infinite Fuel Bus/Astronaut",
+          "address": "0xFFDCBA"
+        },
+        {
+          "code": "FFB8FD:0064",
+          "desc": "Infinite Fuel Bus/Astronaut",
+          "address": "0xFFB8FD"
+        },
+        {
+          "code": "FFB91A:00FF",
+          "desc": "Invincibility Bus/Astronaut",
+          "address": "0xFFB91A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

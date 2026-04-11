@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "junglenooujatarchansekaimanyuudaikakutounomaki",
+  "display_name": "Jungle no Ouja Tar-chan - Sekaimanyuu Daikakutou no Maki (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Jungle no Ouja Tar-chan - Sekaimanyuu Daikakutou no Maki (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E075263",
+          "desc": "Infinite Nuts",
+          "address": "0x7E0752"
+        },
+        {
+          "code": "7E075414",
+          "desc": "Infinite Health",
+          "address": "0x7E0754"
+        },
+        {
+          "code": "7E41FF03",
+          "desc": "Walk through enemies after 1 hit",
+          "address": "0x7E41FF"
+        },
+        {
+          "code": "7E41CF00",
+          "desc": "Jump Real High",
+          "address": "0x7E41CF"
+        },
+        {
+          "code": "7E075700",
+          "desc": "Boss Dies 1 Hit",
+          "address": "0x7E0757"
+        },
+        {
+          "code": "7E075000",
+          "desc": "Level Modifier",
+          "address": "0x7E0750"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

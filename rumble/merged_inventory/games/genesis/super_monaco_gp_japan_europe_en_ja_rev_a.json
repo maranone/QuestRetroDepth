@@ -1,0 +1,35 @@
+{
+  "system": "genesis",
+  "normalized_title": "supermonacogp",
+  "display_name": "Super Monaco GP (Japan, Europe) (En,Ja) (Rev A)",
+  "aliases": [
+    "Super Monaco GP (Japan, Europe) (En,Ja) (Rev B)",
+    "Super Monaco GP (Japan, USA) (En,Ja)",
+    "Super Monaco GP (USA) (En,Ja) (Rev C)",
+    "Super Monaco GP (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Super Monaco GP (World) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF92F9:00",
+          "desc": "Low Timer (Minutes)",
+          "address": "0xFF92F9"
+        },
+        {
+          "code": "FF92FA:00",
+          "desc": "Low Timer (Seconds)",
+          "address": "0xFF92FA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

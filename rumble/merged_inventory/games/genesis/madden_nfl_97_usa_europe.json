@@ -1,0 +1,70 @@
+{
+  "system": "genesis",
+  "normalized_title": "maddennfl97",
+  "display_name": "Madden NFL 97 (USA, Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Madden NFL 97 (USA, Europe).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 10,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FFBE60:0063",
+          "desc": "Infinite Points",
+          "address": "0xFFBE60"
+        },
+        {
+          "code": "FFBE66:0063",
+          "desc": "Max Speed",
+          "address": "0xFFBE66"
+        },
+        {
+          "code": "FFBE64:0063",
+          "desc": "Max Scrambling",
+          "address": "0xFFBE64"
+        },
+        {
+          "code": "FFBE68:0063",
+          "desc": "Max Pass Accuracy",
+          "address": "0xFFBE68"
+        },
+        {
+          "code": "FFBE6A:0063",
+          "desc": "Max Pass Range",
+          "address": "0xFFBE6A"
+        },
+        {
+          "code": "FFBE6C:0063",
+          "desc": "Max Break Tackles",
+          "address": "0xFFBE6C"
+        },
+        {
+          "code": "FFEE97:001F",
+          "desc": "Enable all Hidden Teams",
+          "address": "0xFFEE97"
+        },
+        {
+          "code": "FFEE97:0020",
+          "desc": "Bypass Salary Cap",
+          "address": "0xFFEE97"
+        },
+        {
+          "code": "FFEE97:003F",
+          "desc": "Enable all Hidden Teams + Bypass Salary Cap",
+          "address": "0xFFEE97"
+        },
+        {
+          "code": "FFEE9A:5656",
+          "desc": "Press B on Title Screen for Build Date, Checksum Viewer, and Sound Test",
+          "address": "0xFFEE9A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

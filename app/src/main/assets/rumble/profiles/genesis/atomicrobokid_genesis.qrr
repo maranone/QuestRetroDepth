@@ -1,0 +1,7 @@
+game_name=Atomic Robo-Kid (USA, Japan) (Action Replay)
+game_key=AtomicRoboKid-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ff803b	life_lost	0xFF803B	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff803b	life_gained	0xFF803B	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ff80f6	score	0xFF80F6	3	bcd	big	prev < curr	0.8	1	right:0.350:60

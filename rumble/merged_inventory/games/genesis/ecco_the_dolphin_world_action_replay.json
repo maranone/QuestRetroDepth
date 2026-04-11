@@ -1,0 +1,53 @@
+{
+  "system": "genesis",
+  "normalized_title": "eccodolphin",
+  "display_name": "Ecco the Dolphin (World) (Action Replay)",
+  "aliases": [
+    "Ecco the Dolphin (USA, Europe, Korea)",
+    "Ecco the Dolphin (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ecco the Dolphin (World) (Action Replay).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFB634:0040",
+          "desc": "Infinite Health",
+          "address": "0xFFB634"
+        },
+        {
+          "code": "FFB636:0400",
+          "desc": "Infinite Air",
+          "address": "0xFFB636"
+        },
+        {
+          "code": "FFB635:0038",
+          "desc": "Health Meter Stays The Same (Official Codes)",
+          "address": "0xFFB635"
+        },
+        {
+          "code": "FFB636:0003",
+          "desc": "Air Meter Stays The Same (Official Codes)",
+          "address": "0xFFB636"
+        },
+        {
+          "code": "FFB63F:11",
+          "desc": "Ghost Ecco (Use The D-Pad And C To Move/Swim)",
+          "address": "0xFFB63F"
+        },
+        {
+          "code": "FFA61C:XX",
+          "desc": "Level Select",
+          "address": "0xFFA61C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

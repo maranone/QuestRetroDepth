@@ -1,0 +1,95 @@
+{
+  "system": "snes",
+  "normalized_title": "kaitetsukutteasoberudezaemon",
+  "display_name": "Kaite Tsukutte Asoberu Dezaemon (Japan) (Action Replay)",
+  "aliases": [
+    "Kaite Tsukutte Asoberu Dezaemon (Japan) (Action Replay)",
+    "Kaite Tsukutte Asoberu Dezaemon (Japan) (Game Genie)",
+    "Kaite Tsukutte Asoberu Dezaemon (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\kaitetsukutteasoberudezaemon_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E19BF",
+        "0x7E19D2"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KaiteTsukutteAsoberuDezaemon-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E19D2",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E19BF",
+          "type": "<u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Kaite Tsukutte Asoberu Dezaemon (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E19D203",
+          "desc": "Infinite Lives",
+          "address": "0x7E19D2"
+        },
+        {
+          "code": "7E19D303",
+          "desc": "Infinite Bombs",
+          "address": "0x7E19D3"
+        },
+        {
+          "code": "7E19D500",
+          "desc": "Set Gun Upgrade Modifier",
+          "address": "0x7E19D5"
+        },
+        {
+          "code": "7E19DE00",
+          "desc": "Set Gun Type Modifier",
+          "address": "0x7E19DE"
+        },
+        {
+          "code": "7E19E601",
+          "desc": "Infinite Shield (Invincibility)",
+          "address": "0x7E19E6"
+        },
+        {
+          "code": "7E1D5E3B",
+          "desc": "Infinite Time To Enter Hi Score Name",
+          "address": "0x7E1D5E"
+        },
+        {
+          "code": "7E143500",
+          "desc": "Defeat Most Stage Bosses With 1 Hit",
+          "address": "0x7E1435"
+        },
+        {
+          "code": "7E19DA00",
+          "desc": "Stage Select",
+          "address": "0x7E19DA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "manoverboard",
+  "display_name": "Man Overboard! (Europe) (Action Replay)",
+  "aliases": [
+    "Man Overboard! (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Man Overboard! (Europe).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF10E2:0063",
+          "desc": "Infinite Time For Level Preview",
+          "address": "0xFF10E2"
+        },
+        {
+          "code": "FF0750:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF0750"
+        },
+        {
+          "code": "FF075A:0000",
+          "desc": "People Rescued Modifier",
+          "address": "0xFF075A"
+        },
+        {
+          "code": "FF075C:0000",
+          "desc": "People Left To Be Rescued Modifier",
+          "address": "0xFF075C"
+        },
+        {
+          "code": "FF0767:0010",
+          "desc": "Invincibility",
+          "address": "0xFF0767"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

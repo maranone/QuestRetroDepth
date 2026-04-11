@@ -1,0 +1,80 @@
+{
+  "system": "genesis",
+  "normalized_title": "gunstarheroes",
+  "display_name": "Gunstar Heroes (World) (Action Replay)",
+  "aliases": [
+    "Gunstar Heroes (Japan)",
+    "Gunstar Heroes (Rumbles)",
+    "Gunstar Heroes (USA)",
+    "Gunstar Heroes (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Gunstar Heroes (World) (Action Replay).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FFA424:03E7",
+          "desc": "Infinite Life P1",
+          "address": "0xFFA424"
+        },
+        {
+          "code": "FFA625:FF",
+          "desc": "Infinite Life P2",
+          "address": "0xFFA625"
+        },
+        {
+          "code": "FFC9A4:0000",
+          "desc": "One Hit Kills Boss",
+          "address": "0xFFC9A4"
+        },
+        {
+          "code": "FFA46F:XX",
+          "desc": "P1 Primary Weapon Modifier",
+          "address": "0xFFA46F"
+        },
+        {
+          "code": "FFA471:XX",
+          "desc": "P1 Secondary Weapon Modifier",
+          "address": "0xFFA471"
+        },
+        {
+          "code": "FFA4CB:XX",
+          "desc": "P1 Shot Type Modifier",
+          "address": "0xFFA4CB"
+        },
+        {
+          "code": "FFA66F:XX",
+          "desc": "P2 Primary Weapon Modifier",
+          "address": "0xFFA66F"
+        },
+        {
+          "code": "FFA671:XX",
+          "desc": "P2 Secondary Weapon Modifier",
+          "address": "0xFFA671"
+        },
+        {
+          "code": "FFA6CB:XX",
+          "desc": "P2 Shot Type Modifier",
+          "address": "0xFFA6CB"
+        },
+        {
+          "code": "FFA205:XX",
+          "desc": "Level Highlighter Modifier",
+          "address": "0xFFA205"
+        },
+        {
+          "code": "FFA47D:15",
+          "desc": "Untouchable",
+          "address": "0xFFA47D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "system": "snes",
+  "normalized_title": "supermariorpglegendofsevenstars",
+  "display_name": "Super Mario RPG - Legend of the Seven Stars (USA) (Action Replay)",
+  "aliases": [
+    "Super Mario RPG - Legend of the Seven Stars (USA) (Game Genie)",
+    "Super Mario RPG - Legend of the Seven Stars (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Mario RPG - Legend of the Seven Stars (USA).cht",
+      "total_cheat_rows": 473,
+      "raw_entry_count": 390,
+      "distinct_address_count": 300,
+      "sample_raw_entries": [
+        {
+          "code": "7E1F2A00",
+          "desc": "Touch a goomba near the left entrance to 'Mushroom Way', and one enemy will be ?? instead of a goomba...",
+          "address": "0x7E1F2A"
+        },
+        {
+          "code": "7E091E08",
+          "desc": "Replace 'Special' with 'Game' in menu",
+          "address": "0x7E091E"
+        },
+        {
+          "code": "7FF8AFE7",
+          "desc": "Always Have 999 Regular Coins",
+          "address": "0x7FF8AF"
+        },
+        {
+          "code": "7FF8B003",
+          "desc": "Always Have 999 Regular Coins",
+          "address": "0x7FF8B0"
+        },
+        {
+          "code": "7FF8B3E7",
+          "desc": "Always Have 999 Frog Coins",
+          "address": "0x7FF8B3"
+        },
+        {
+          "code": "7FF8B403",
+          "desc": "Always Have 999 Frog Coins",
+          "address": "0x7FF8B4"
+        },
+        {
+          "code": "7FF8B163",
+          "desc": "Always Have 99 FP",
+          "address": "0x7FF8B1"
+        },
+        {
+          "code": "7FF8B263",
+          "desc": "Always Have 99 Max FP",
+          "address": "0x7FF8B2"
+        },
+        {
+          "code": "7FF8C064",
+          "desc": "Always 100 Jumps Done",
+          "address": "0x7FF8C0"
+        },
+        {
+          "code": "7FF8001E",
+          "desc": "Level 30",
+          "address": "0x7FF800"
+        },
+        {
+          "code": "7FF801E7",
+          "desc": "999 HP",
+          "address": "0x7FF801"
+        },
+        {
+          "code": "7FF80203",
+          "desc": "999 HP",
+          "address": "0x7FF802"
+        },
+        {
+          "code": "7FF803E7",
+          "desc": "999 Maximum HP",
+          "address": "0x7FF803"
+        },
+        {
+          "code": "7FF80403",
+          "desc": "999 Maximum HP",
+          "address": "0x7FF804"
+        },
+        {
+          "code": "7FF805FF",
+          "desc": "Max Speed",
+          "address": "0x7FF805"
+        },
+        {
+          "code": "7FF806FF",
+          "desc": "Max Attack",
+          "address": "0x7FF806"
+        },
+        {
+          "code": "7FF807FF",
+          "desc": "Max Defense",
+          "address": "0x7FF807"
+        },
+        {
+          "code": "7FF808FF",
+          "desc": "Max Mg.Attack",
+          "address": "0x7FF808"
+        },
+        {
+          "code": "7FF809FF",
+          "desc": "Max Mg.Defense",
+          "address": "0x7FF809"
+        },
+        {
+          "code": "7FF80A0F",
+          "desc": "Max Exp",
+          "address": "0x7FF80A"
+        },
+        {
+          "code": "7FF80B27",
+          "desc": "Max Exp",
+          "address": "0x7FF80B"
+        },
+        {
+          "code": "7FF80C00",
+          "desc": "Equipped Weapon",
+          "address": "0x7FF80C"
+        },
+        {
+          "code": "7FF80D00",
+          "desc": "Equipped Armor",
+          "address": "0x7FF80D"
+        },
+        {
+          "code": "7FF80E00",
+          "desc": "Equipped Accessory",
+          "address": "0x7FF80E"
+        },
+        {
+          "code": "7FF8103F",
+          "desc": "Has All 'Correct' Spells",
+          "address": "0x7FF810"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "system": "snes",
+  "normalized_title": "fatalfuryspecial",
+  "display_name": "Fatal Fury Special (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Fatal Fury Special (USA)",
+    "Fatal Fury Special (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Fatal Fury Special (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7FF76102",
+          "desc": "Very Little Life On Player 1",
+          "address": "0x7FF761"
+        },
+        {
+          "code": "7FF76302",
+          "desc": "Very Little Life On Player 1",
+          "address": "0x7FF763"
+        },
+        {
+          "code": "7FF76147",
+          "desc": "Infinite Energy Player 1",
+          "address": "0x7FF761"
+        },
+        {
+          "code": "7FF9FD00",
+          "desc": "No Health P2",
+          "address": "0x7FF9FD"
+        },
+        {
+          "code": "7FFC4902",
+          "desc": "Win A Round To Win The Match P1",
+          "address": "0x7FFC49"
+        },
+        {
+          "code": "7FF7030F",
+          "desc": "Play As Ryo Sakazaki",
+          "address": "0x7FF703"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "system": "snes",
+  "normalized_title": "funngames",
+  "display_name": "Fun 'n Games (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Fun 'n Games (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E0F80FE",
+          "desc": "Nude Legs",
+          "address": "0x7E0F80"
+        },
+        {
+          "code": "7E0FA3FF",
+          "desc": "Nude Top",
+          "address": "0x7E0FA3"
+        },
+        {
+          "code": "7E0FC663",
+          "desc": "Nude Feet",
+          "address": "0x7E0FC6"
+        },
+        {
+          "code": "7E0F5D05",
+          "desc": "Nude Head",
+          "address": "0x7E0F5D"
+        },
+        {
+          "code": "7E111346",
+          "desc": "Infinite Flares",
+          "address": "0x7E1113"
+        },
+        {
+          "code": "7E111546",
+          "desc": "Infinite Missile A",
+          "address": "0x7E1115"
+        },
+        {
+          "code": "7E111646",
+          "desc": "Infinite Missile B",
+          "address": "0x7E1116"
+        },
+        {
+          "code": "7E11060A",
+          "desc": "Always Have 10 Lives",
+          "address": "0x7E1106"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

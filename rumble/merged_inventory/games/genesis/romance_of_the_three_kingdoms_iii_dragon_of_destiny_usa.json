@@ -1,0 +1,35 @@
+{
+  "system": "genesis",
+  "normalized_title": "romanceofthreekingdomsiiidragonofdestiny",
+  "display_name": "Romance of the Three Kingdoms III - Dragon of Destiny (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Romance of the Three Kingdoms III - Dragon of Destiny (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF4152:0000",
+          "desc": "Soldiers Assigned To Zao Qian Modifier",
+          "address": "0xFF4152"
+        },
+        {
+          "code": "FF39D2:0000",
+          "desc": "Soldiers Assigned To Zhang Kai Modifier",
+          "address": "0xFF39D2"
+        },
+        {
+          "code": "FFCA9E:0000",
+          "desc": "Unassigned Soldiers Modifier",
+          "address": "0xFFCA9E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

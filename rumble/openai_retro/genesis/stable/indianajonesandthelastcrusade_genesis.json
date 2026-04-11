@@ -1,0 +1,166 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "IndianaJonesAndTheLastCrusade",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "third_party\\openai-retro\\retro\\data\\stable\\IndianaJonesAndTheLastCrusade-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "IndianaJonesAndTheLastCrusade-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "game_over_gameover_ff05a0",
+      "event": "game_over",
+      "watch": [
+        {
+          "absolute_address": "0xFF05A0",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF05A0",
+          "ram_offset": 1440
+        }
+      ],
+      "condition": "prev == 0 && curr != 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Explicit game-over flag.",
+      "source_fields": [
+        {
+          "name": "gameover",
+          "address": "0xFF05A0",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_health_ff7f59",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0xFF7F59",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "address": "0xFF7F59",
+          "ram_offset": 32601
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFF7F59",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_ff7f59",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0xFF7F59",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "address": "0xFF7F59",
+          "ram_offset": 32601
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFF7F59",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_ff7f3a",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xFF7F3A",
+          "size": 4,
+          "value_type": "nibble",
+          "byte_order": "big",
+          "raw_type": ">n4",
+          "address": "0xFF7F3A",
+          "ram_offset": 32570
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xFF7F3A",
+          "raw_type": ">n4"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "continue_timer",
+      "meta": {
+        "address": 16744270,
+        "type": ">i2"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

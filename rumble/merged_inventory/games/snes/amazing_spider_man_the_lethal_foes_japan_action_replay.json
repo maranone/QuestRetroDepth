@@ -1,0 +1,77 @@
+{
+  "system": "snes",
+  "normalized_title": "amazingspidermanlethalfoes",
+  "display_name": "Amazing Spider-Man, The - Lethal Foes (Japan) (Action Replay)",
+  "aliases": [
+    "Amazing Spider-Man, The - Lethal Foes (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Amazing Spider-Man, The - Lethal Foes (Japan).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "7E1C2309",
+          "desc": "Infinite Lives",
+          "address": "0x7E1C23"
+        },
+        {
+          "code": "7E1C2263",
+          "desc": "Infinite Time",
+          "address": "0x7E1C22"
+        },
+        {
+          "code": "7E0E0C40",
+          "desc": "Infinite Health",
+          "address": "0x7E0E0C"
+        },
+        {
+          "code": "7E1C2299",
+          "desc": "Infinite Time",
+          "address": "0x7E1C22"
+        },
+        {
+          "code": "7E1C2640",
+          "desc": "Infinite Health",
+          "address": "0x7E1C26"
+        },
+        {
+          "code": "7E1C2400",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x7E1C24"
+        },
+        {
+          "code": "7E1C1200",
+          "desc": "Level Modifier",
+          "address": "0x7E1C12"
+        },
+        {
+          "code": "7E201C01",
+          "desc": "Enable Stage Select Menu (Start a new game)",
+          "address": "0x7E201C"
+        },
+        {
+          "code": "7E201A01",
+          "desc": "Enable Start with 2x Health Cheat",
+          "address": "0x7E201A"
+        },
+        {
+          "code": "7E201909",
+          "desc": "Enable Start with 10 Lives Cheat",
+          "address": "0x7E2019"
+        },
+        {
+          "code": "7E0E2020",
+          "desc": "Invincibility",
+          "address": "0x7E0E20"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=Dashin' Desperadoes (USA) (Action Replay)
+game_key=DashinDesperadoes-Genesis
+system=genesis
+integration_tier=stable
+trigger	score_score_fffe18	score	0xFFFE18	3	bcd	big	prev < curr	0.8	1	right:0.350:60

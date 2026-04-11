@@ -1,0 +1,68 @@
+{
+  "system": "genesis",
+  "normalized_title": "advancedbusterhawkgleylancer",
+  "display_name": "Advanced Busterhawk Gleylancer (Japan)",
+  "aliases": [
+    "Advanced Busterhawk Gleylancer (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\advancedbusterhawkgleylancer_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFBE95",
+        "0xFFBE9D"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AdvancedBusterhawkGleylancer-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFBE9D",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFBE95",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Advanced Busterhawk Gleylancer (Japan).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFBE9C:0004",
+          "desc": "Infinite Lives",
+          "address": "0xFFBE9C"
+        },
+        {
+          "code": "FFC2F0:0002",
+          "desc": "Invincibility",
+          "address": "0xFFC2F0"
+        },
+        {
+          "code": "FFC2EC:0001",
+          "desc": "Keep Special Helpers Shots After The Death",
+          "address": "0xFFC2EC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

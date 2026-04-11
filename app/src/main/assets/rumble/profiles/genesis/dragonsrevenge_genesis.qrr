@@ -1,0 +1,12 @@
+game_name=Dragon's Revenge (World) (Action Replay)
+game_key=DragonsRevenge-Genesis
+system=genesis
+integration_tier=stable
+trigger	score_score0_ffd72b	score	0xFFD72B	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_ffd729	score	0xFFD729	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_ffd727	score	0xFFD727	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score3_ffd725	score	0xFFD725	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score4_ffd723	score	0xFFD723	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score5_ffd721	score	0xFFD721	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score6_ffd71f	score	0xFFD71F	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score7_ffd71d	score	0xFFD71D	1	uint	native	prev < curr	0.8	1	right:0.350:60

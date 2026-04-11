@@ -1,0 +1,97 @@
+{
+  "system": "snes",
+  "normalized_title": "pacintime",
+  "display_name": "Pac-In-Time (World) (Action Replay)",
+  "aliases": [
+    "Pac-In-Time (Rumbles)",
+    "Pac-In-Time (USA)",
+    "Pac-In-Time (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\pacintime_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E1533",
+        "0x7FA3F8",
+        "0x7FA404"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\PacInTime-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E1533",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7FA3F8",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7FA404",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Pac-In-Time (World) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E1541BF",
+          "desc": "Infinite Health",
+          "address": "0x7E1541"
+        },
+        {
+          "code": "7E0AE304",
+          "desc": "Infinite Lives",
+          "address": "0x7E0AE3"
+        },
+        {
+          "code": "7E0B5D99",
+          "desc": "Invincible",
+          "address": "0x7E0B5D"
+        },
+        {
+          "code": "7E0B1500",
+          "desc": "Have Rope",
+          "address": "0x7E0B15"
+        },
+        {
+          "code": "7E0B1700",
+          "desc": "Have Fire",
+          "address": "0x7E0B17"
+        },
+        {
+          "code": "7E0B1900",
+          "desc": "Have Bubble",
+          "address": "0x7E0B19"
+        },
+        {
+          "code": "7E0B1B00",
+          "desc": "Have Hammer",
+          "address": "0x7E0B1B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "system": "genesis",
+  "normalized_title": "mushametallicuniframesuperhybridarmor",
+  "display_name": "MUSHA - Metallic Uniframe Super Hybrid Armor (USA) (Action Replay)",
+  "aliases": [
+    "MUSHA - Metallic Uniframe Super Hybrid Armor (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\MUSHA - Metallic Uniframe Super Hybrid Armor (USA).cht",
+      "total_cheat_rows": 35,
+      "raw_entry_count": 17,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "FFD113:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFFD113"
+        },
+        {
+          "code": "FFD128:0040",
+          "desc": "Invincibility ON",
+          "address": "0xFFD128"
+        },
+        {
+          "code": "FFD128:0000",
+          "desc": "Invincibility OFF",
+          "address": "0xFFD128"
+        },
+        {
+          "code": "FFE01E:0078",
+          "desc": "Invincibility (blinking)",
+          "address": "0xFFE01E"
+        },
+        {
+          "code": "FFD113:0064",
+          "desc": "Infinite Lives",
+          "address": "0xFFD113"
+        },
+        {
+          "code": "FFD11F:0064",
+          "desc": "Infinite Options",
+          "address": "0xFFD11F"
+        },
+        {
+          "code": "FFD100:0008",
+          "desc": "Max Primary Weapon Power",
+          "address": "0xFFD100"
+        },
+        {
+          "code": "FFD105:00F5",
+          "desc": "Max Primary Weapon Power",
+          "address": "0xFFD105"
+        },
+        {
+          "code": "FFD107:0005",
+          "desc": "Max Primary Weapon Power",
+          "address": "0xFFD107"
+        },
+        {
+          "code": "FFD109:0058",
+          "desc": "Max Primary Weapon Power",
+          "address": "0xFFD109"
+        },
+        {
+          "code": "FFD10B:0002",
+          "desc": "Max Primary Weapon Power",
+          "address": "0xFFD10B"
+        },
+        {
+          "code": "FFD110:0004",
+          "desc": "Max Secondary Weapon Power",
+          "address": "0xFFD110"
+        },
+        {
+          "code": "FFD164:1010",
+          "desc": "Pause the Game and Press A for Max Primary Weapon Power",
+          "address": "0xFFD164"
+        },
+        {
+          "code": "FFD166:2010",
+          "desc": "Pause the Game and Press A for Max Primary Weapon Power",
+          "address": "0xFFD166"
+        },
+        {
+          "code": "FFD168:1020",
+          "desc": "Pause the Game and Press A for Max Primary Weapon Power",
+          "address": "0xFFD168"
+        },
+        {
+          "code": "FFD16A:0102",
+          "desc": "Pause the Game and Press A for Max Primary Weapon Power",
+          "address": "0xFFD16A"
+        },
+        {
+          "code": "FFFE12:0000",
+          "desc": "Pause the Game and Press A for Max Primary Weapon Power",
+          "address": "0xFFFE12"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

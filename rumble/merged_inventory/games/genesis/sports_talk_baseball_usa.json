@@ -1,0 +1,45 @@
+{
+  "system": "genesis",
+  "normalized_title": "sportstalkbaseball",
+  "display_name": "Sports Talk Baseball (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sports Talk Baseball (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFF034:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFFF034"
+        },
+        {
+          "code": "FFF034:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFFF034"
+        },
+        {
+          "code": "FFF032:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFFF032"
+        },
+        {
+          "code": "FFF04C:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFF04C"
+        },
+        {
+          "code": "FFF04C:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFF04C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

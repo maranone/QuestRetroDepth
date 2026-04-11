@@ -1,0 +1,116 @@
+{
+  "system": "genesis",
+  "normalized_title": "cheesecatastrophestarringspeedygonzales",
+  "display_name": "Cheese Cat-Astrophe Starring Speedy Gonzales (Europe) (Action Replay)",
+  "aliases": [
+    "Cheese Cat-Astrophe Starring Speedy Gonzales (Europe) (Action Replay)",
+    "Cheese Cat-Astrophe Starring Speedy Gonzales (Europe) (En,Fr,De,Es)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\cheesecatastrophestarringspeedygonzales_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFE4A2",
+        "0xFFE4AD",
+        "0xFFE4B2"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CheeseCatAstropheStarringSpeedyGonzales-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFE4B2",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFE4AD",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFE4A2",
+          "type": ">n7"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Cheese Cat-Astrophe Starring Speedy Gonzales (Europe) (En,Fr,De,Es).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 11,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FFF96E:002A",
+          "desc": "Cannot be Touched",
+          "address": "0xFFF96E"
+        },
+        {
+          "code": "FFE4B2:000B",
+          "desc": "Infinite Health",
+          "address": "0xFFE4B2"
+        },
+        {
+          "code": "FFE4AC:0005",
+          "desc": "Infinite Lives",
+          "address": "0xFFE4AC"
+        },
+        {
+          "code": "FFE4AA:0005",
+          "desc": "Infinite Ammo (Hats)",
+          "address": "0xFFE4AA"
+        },
+        {
+          "code": "FFE4AA:0009",
+          "desc": "Infinite Yellow Hats",
+          "address": "0xFFE4AA"
+        },
+        {
+          "code": "FFE4B2:0009",
+          "desc": "Infinite Cheese (Health)",
+          "address": "0xFFE4B2"
+        },
+        {
+          "code": "FFE4AC:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFE4AC"
+        },
+        {
+          "code": "FFF96E:0010",
+          "desc": "Invincibility",
+          "address": "0xFFF96E"
+        },
+        {
+          "code": "FFF94D:00FF",
+          "desc": "No Charge Dash",
+          "address": "0xFFF94D"
+        },
+        {
+          "code": "FFF961:0002",
+          "desc": "Super Long Jump",
+          "address": "0xFFF961"
+        },
+        {
+          "code": "FFFDC7:000A",
+          "desc": "Hat Disappears After Going Forward",
+          "address": "0xFFFDC7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

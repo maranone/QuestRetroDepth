@@ -1,0 +1,45 @@
+{
+  "system": "genesis",
+  "normalized_title": "beggarprince",
+  "display_name": "Beggar Prince (unl)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Beggar Prince (unl).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF1F27:0001",
+          "desc": "Gives you the Heal Spell",
+          "address": "0xFF1F27"
+        },
+        {
+          "code": "FF0AD3:0001",
+          "desc": "Gives you the Magic Ring (lets you teleport anywhere)",
+          "address": "0xFF0AD3"
+        },
+        {
+          "code": "FF0AD6:0001",
+          "desc": "Gives you Chicken (fully recovers HP)",
+          "address": "0xFF0AD6"
+        },
+        {
+          "code": "FF0AD8:0001",
+          "desc": "Gives you Crystal (fully recovers MP)",
+          "address": "0xFF0AD8"
+        },
+        {
+          "code": "FF0AD9:0001",
+          "desc": "Gives you Cross (fully recovers HP, MP, and revives)",
+          "address": "0xFF0AD9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

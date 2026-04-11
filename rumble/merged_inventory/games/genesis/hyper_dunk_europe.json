@@ -1,0 +1,40 @@
+{
+  "system": "genesis",
+  "normalized_title": "hyperdunk",
+  "display_name": "Hyper Dunk (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Hyper Dunk (Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF9C9A:0049",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFF9C9A"
+        },
+        {
+          "code": "FF9CD6:00FF",
+          "desc": "Team 1 Has A High Score (P1)",
+          "address": "0xFF9CD6"
+        },
+        {
+          "code": "FF9DD6:0000",
+          "desc": "Team 2 Never Scores (P2/CPU)",
+          "address": "0xFF9DD6"
+        },
+        {
+          "code": "FF9C9C:0025",
+          "desc": "Infinite Shot Time",
+          "address": "0xFF9C9C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

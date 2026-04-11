@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "dinosaurstale",
+  "display_name": "Dinosaur's Tale, A (USA) (Action Replay)",
+  "aliases": [
+    "Dinosaur's Tale, A (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Dinosaur's Tale, A (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFDD1C:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFDD1C"
+        },
+        {
+          "code": "FFA32C:0003",
+          "desc": "Infinite Energy (Sidescrolling Levels)",
+          "address": "0xFFA32C"
+        },
+        {
+          "code": "FFD276:0003",
+          "desc": "Infinite Energy (Flight Levels)",
+          "address": "0xFFD276"
+        },
+        {
+          "code": "FFA1EA:0010",
+          "desc": "1 Hit Invincibility",
+          "address": "0xFFA1EA"
+        },
+        {
+          "code": "FFDD36:00FF",
+          "desc": "Enable Level Select",
+          "address": "0xFFDD36"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

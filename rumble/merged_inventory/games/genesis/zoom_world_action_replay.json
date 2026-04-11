@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "zoom",
+  "display_name": "Zoom! (World) (Action Replay)",
+  "aliases": [
+    "Zoom! (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Zoom! (World).cht",
+      "total_cheat_rows": 126,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFF00B:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFFF00B"
+        },
+        {
+          "code": "FFF10F:000F",
+          "desc": "Banana Powerup (Slows Enemies)",
+          "address": "0xFFF10F"
+        },
+        {
+          "code": "FFF111:000F",
+          "desc": "Hour Glass Powerup (Freezes Enemies)",
+          "address": "0xFFF111"
+        },
+        {
+          "code": "FFF029:000F",
+          "desc": "Mushroom Powerup (Speeds You Up)",
+          "address": "0xFFF029"
+        },
+        {
+          "code": "FFF02F:000F",
+          "desc": "Sun Powerup (Invincibility)",
+          "address": "0xFFF02F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "hardball95",
+  "display_name": "HardBall '95 (USA) (Action Replay)",
+  "aliases": [
+    "HardBall '95 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\HardBall '95 (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF1D26:0000",
+          "desc": "Balls Modifier",
+          "address": "0xFF1D26"
+        },
+        {
+          "code": "FF1D28:0000",
+          "desc": "Strikes Modifier",
+          "address": "0xFF1D28"
+        },
+        {
+          "code": "FF1D28:0000",
+          "desc": "Outs Modifier",
+          "address": "0xFF1D28"
+        },
+        {
+          "code": "FF1D20:0000",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFF1D20"
+        },
+        {
+          "code": "FF1D22:0000",
+          "desc": "Team 1 Runs Modifier (P1)",
+          "address": "0xFF1D22"
+        },
+        {
+          "code": "FF1D24:0000",
+          "desc": "Team 1 Errors Modifier (P1)",
+          "address": "0xFF1D24"
+        },
+        {
+          "code": "FF1D20:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFF1D20"
+        },
+        {
+          "code": "FF1D22:0000",
+          "desc": "Team 2 Runs Modifier (P2/CPU)",
+          "address": "0xFF1D22"
+        },
+        {
+          "code": "FF1D24:0000",
+          "desc": "Team 2 Errors Modifier (P2/CPU)",
+          "address": "0xFF1D24"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

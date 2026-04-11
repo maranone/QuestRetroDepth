@@ -1,0 +1,45 @@
+{
+  "system": "genesis",
+  "normalized_title": "nobunagasambition",
+  "display_name": "Nobunaga's Ambition (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Nobunaga's Ambition (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF0FF8:00FF",
+          "desc": "AGE Maxed At 255",
+          "address": "0xFF0FF8"
+        },
+        {
+          "code": "FF0FFA:00FF",
+          "desc": "HLTH Maxed At 255",
+          "address": "0xFF0FFA"
+        },
+        {
+          "code": "FF0FFA:00FF",
+          "desc": "DRIVE Maxed At 255",
+          "address": "0xFF0FFA"
+        },
+        {
+          "code": "FF0FFC:00FF",
+          "desc": "CHRM Maxed At 255",
+          "address": "0xFF0FFC"
+        },
+        {
+          "code": "FF0FFC:00FF",
+          "desc": "INTEL Maxed At 255",
+          "address": "0xFF0FFC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

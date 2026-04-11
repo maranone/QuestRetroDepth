@@ -1,0 +1,7 @@
+game_name=Cybernatorf
+game_key=Cybernatorf-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_1e8	damage_taken	0x7E01E8	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	score_1_1f4	score	0x7E01F4	1	uint	native	prev < curr	0.7	1	left:0.300:80
+trigger	score_2_1f5	score	0x7E01F5	1	uint	native	prev < curr	0.7	1	left:0.300:80

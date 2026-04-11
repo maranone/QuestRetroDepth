@@ -1,0 +1,8 @@
+game_name=Awesome Possum Kicks Dr Machino's Butt! (USA) (Action Replay)
+game_key=AwesomePossumKicksDrMachinosButt-Genesis
+system=genesis
+integration_tier=stable
+trigger	pickup_items_collected_ffe90c	pickup	0xFFE90C	2	uint	big	prev != curr	0.8	1	right:0.250:18
+trigger	life_lost_lives_ffe8f6	life_lost	0xFFE8F6	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffe8f6	life_gained	0xFFE8F6	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ffe8a8	score	0xFFE8A8	4	uint	big	prev < curr	0.8	1	right:0.350:60

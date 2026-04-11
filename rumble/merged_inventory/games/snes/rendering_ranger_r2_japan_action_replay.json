@@ -1,0 +1,147 @@
+{
+  "system": "snes",
+  "normalized_title": "renderingrangerr2",
+  "display_name": "Rendering Ranger R2 (Japan) (Action Replay)",
+  "aliases": [
+    "Rendering Ranger R2 (Japan) (Action Replay)",
+    "Rendering Ranger R2 (Japan) (En)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\renderingrangerr2_snes.json",
+      "trigger_count": 7,
+      "field_names": [
+        "lives",
+        "score0",
+        "score1",
+        "score2",
+        "score3",
+        "score4"
+      ],
+      "field_count": 6,
+      "distinct_addresses": [
+        "0x7E0515",
+        "0x7E0527",
+        "0x7E0528",
+        "0x7E0529",
+        "0x7E052A",
+        "0x7E052B"
+      ],
+      "distinct_address_count": 6
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\RenderingRangerR2-Snes-v0\\data.json",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0515",
+          "type": "|u1"
+        },
+        {
+          "name": "score0",
+          "address": "0x7E052B",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0x7E052A",
+          "type": "|u1"
+        },
+        {
+          "name": "score2",
+          "address": "0x7E0529",
+          "type": "|u1"
+        },
+        {
+          "name": "score3",
+          "address": "0x7E0528",
+          "type": "|u1"
+        },
+        {
+          "name": "score4",
+          "address": "0x7E0527",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 6
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Rendering Ranger R2 (Japan) (En).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "7E06BC05",
+          "desc": "Infinite Energy",
+          "address": "0x7E06BC"
+        },
+        {
+          "code": "7E06AE03",
+          "desc": "Invincible",
+          "address": "0x7E06AE"
+        },
+        {
+          "code": "7E06C103",
+          "desc": "Infinite Bombs",
+          "address": "0x7E06C1"
+        },
+        {
+          "code": "7E06B800",
+          "desc": "Deactivate Shield",
+          "address": "0x7E06B8"
+        },
+        {
+          "code": "7E051509",
+          "desc": "Infinite Lives",
+          "address": "0x7E0515"
+        },
+        {
+          "code": "7E06B501",
+          "desc": "Have Pods (Ship Stages)",
+          "address": "0x7E06B5"
+        },
+        {
+          "code": "7E0A9D04",
+          "desc": "Best Red Weapon",
+          "address": "0x7E0A9D"
+        },
+        {
+          "code": "7E0A9E04",
+          "desc": "Best Blue Weapon",
+          "address": "0x7E0A9E"
+        },
+        {
+          "code": "7E0AA004",
+          "desc": "Best Yellow Weapon",
+          "address": "0x7E0AA0"
+        },
+        {
+          "code": "7E0A9F04",
+          "desc": "Best Green Weapon",
+          "address": "0x7E0A9F"
+        },
+        {
+          "code": "7E0AA400",
+          "desc": "Have Yellow Weapon",
+          "address": "0x7E0AA4"
+        },
+        {
+          "code": "7E0AA200",
+          "desc": "Have Blue Weapon",
+          "address": "0x7E0AA2"
+        },
+        {
+          "code": "7E0AA300",
+          "desc": "Have Green Weapon",
+          "address": "0x7E0AA3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

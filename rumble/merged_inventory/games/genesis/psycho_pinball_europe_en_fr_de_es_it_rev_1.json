@@ -1,0 +1,48 @@
+{
+  "system": "genesis",
+  "normalized_title": "psychopinball",
+  "display_name": "Psycho Pinball (Europe) (En,Fr,De,Es,It) (Rev 1)",
+  "aliases": [
+    "Psycho Pinball (Europe) (En,Fr,De,Es,It) (Rev 1)",
+    "Psycho Pinball (Europe) (En,Fr,De,Es,It)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Psycho Pinball (Europe) (En,Fr,De,Es,It).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF050B:0001",
+          "desc": "Infinite Balls - All Players",
+          "address": "0xFF050B"
+        },
+        {
+          "code": "FF0619:0003",
+          "desc": "Infinite Balls - Mini Games - All Players",
+          "address": "0xFF0619"
+        },
+        {
+          "code": "FFF68D:00BB",
+          "desc": "Pause the Game and Press Right for an Extra Ball",
+          "address": "0xFFF68D"
+        },
+        {
+          "code": "FFF689:00B4",
+          "desc": "Pause the Game and Press B for a Free Ride",
+          "address": "0xFFF689"
+        },
+        {
+          "code": "FFF691:00C4",
+          "desc": "Pause the Game and Press C to Play the Mini Games",
+          "address": "0xFFF691"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

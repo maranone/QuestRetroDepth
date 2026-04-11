@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "jellyboy2",
+  "display_name": "Jelly Boy 2 (Japan) (Action Replay)",
+  "aliases": [
+    "Jelly Boy 2 (Japan) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Jelly Boy 2 (Japan) (Proto).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E026963",
+          "desc": "Unlimited Lives",
+          "address": "0x7E0269"
+        },
+        {
+          "code": "7E026B04",
+          "desc": "Invincible",
+          "address": "0x7E026B"
+        },
+        {
+          "code": "7E026C01",
+          "desc": "Icon Weapon Never Flipped After Shot (That allows you to do more shots)",
+          "address": "0x7E026C"
+        },
+        {
+          "code": "7E0A3501",
+          "desc": "Icon Weapon Never Flipped After Shot (That allows you to do more shots)",
+          "address": "0x7E0A35"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

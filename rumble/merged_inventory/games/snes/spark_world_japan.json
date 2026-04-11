@@ -1,0 +1,65 @@
+{
+  "system": "snes",
+  "normalized_title": "sparkworld",
+  "display_name": "Spark World (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Spark World (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E00D209",
+          "desc": "Infinite Lives P1",
+          "address": "0x7E00D2"
+        },
+        {
+          "code": "7E160002",
+          "desc": "Invincible P1 (Blinking)",
+          "address": "0x7E1600"
+        },
+        {
+          "code": "7E130010",
+          "desc": "Have 16 Bombs P1",
+          "address": "0x7E1300"
+        },
+        {
+          "code": "7E140001",
+          "desc": "Can Push Bombs P1",
+          "address": "0x7E1400"
+        },
+        {
+          "code": "7E144001",
+          "desc": "Have Detonator P1",
+          "address": "0x7E1440"
+        },
+        {
+          "code": "7E124009",
+          "desc": "Maximum Fire Power P1",
+          "address": "0x7E1240"
+        },
+        {
+          "code": "7E131003",
+          "desc": "Demon Has No Countdown When On P1",
+          "address": "0x7E1310"
+        },
+        {
+          "code": "7E135000",
+          "desc": "Demon Has No Countdown When On P1",
+          "address": "0x7E1350"
+        },
+        {
+          "code": "7E009EC8",
+          "desc": "Infinite Time",
+          "address": "0x7E009E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

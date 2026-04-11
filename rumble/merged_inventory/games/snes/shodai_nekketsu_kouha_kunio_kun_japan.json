@@ -1,0 +1,85 @@
+{
+  "system": "snes",
+  "normalized_title": "shodainekketsukouhakuniokun",
+  "display_name": "Shodai Nekketsu Kouha Kunio-kun (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Shodai Nekketsu Kouha Kunio-kun (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "7E11DC00",
+          "desc": "Character Select Codes",
+          "address": "0x7E11DC"
+        },
+        {
+          "code": "7E008400",
+          "desc": "Character Color Modifier",
+          "address": "0x7E0084"
+        },
+        {
+          "code": "7E120202",
+          "desc": "Invincibility",
+          "address": "0x7E1202"
+        },
+        {
+          "code": "7E0094FF",
+          "desc": "Infinite Energy - Kunio",
+          "address": "0x7E0094"
+        },
+        {
+          "code": "7E0096FF",
+          "desc": "Infinite Energy - Riki",
+          "address": "0x7E0096"
+        },
+        {
+          "code": "7E0098FF",
+          "desc": "Infinite Energy - Misako",
+          "address": "0x7E0098"
+        },
+        {
+          "code": "7E009AFF",
+          "desc": "Infinite Energy - Kyouko",
+          "address": "0x7E009A"
+        },
+        {
+          "code": "7E009C00",
+          "desc": "Kill Enemies In One Hit",
+          "address": "0x7E009C"
+        },
+        {
+          "code": "7E009E00",
+          "desc": "Kill Enemies In One Hit",
+          "address": "0x7E009E"
+        },
+        {
+          "code": "7E00A000",
+          "desc": "Kill Enemies In One Hit",
+          "address": "0x7E00A0"
+        },
+        {
+          "code": "7E00A200",
+          "desc": "Kill Enemies In One Hit",
+          "address": "0x7E00A2"
+        },
+        {
+          "code": "7E010E14",
+          "desc": "Infinite Health",
+          "address": "0x7E010E"
+        },
+        {
+          "code": "7E119800",
+          "desc": "Weapon Modifier",
+          "address": "0x7E1198"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

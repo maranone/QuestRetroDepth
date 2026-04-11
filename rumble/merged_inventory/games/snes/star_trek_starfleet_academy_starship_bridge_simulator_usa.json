@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "startrekstarfleetacademystarshipbridgesimulator",
+  "display_name": "Star Trek - Starfleet Academy - Starship Bridge Simulator (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Star Trek - Starfleet Academy - Starship Bridge Simulator (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E0F1000",
+          "desc": "Current GPA Modifier",
+          "address": "0x7E0F10"
+        },
+        {
+          "code": "7E0F1200",
+          "desc": "Cumulative GPA Modifier",
+          "address": "0x7E0F12"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

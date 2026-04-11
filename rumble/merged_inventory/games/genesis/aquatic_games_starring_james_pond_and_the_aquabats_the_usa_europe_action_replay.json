@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "aquaticgamesstarringjamespondandaquabats",
+  "display_name": "Aquatic Games Starring James Pond and the Aquabats, The (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Aquatic Games Starring James Pond and the Aquabats, The (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Aquatic Games Starring James Pond and the Aquabats, The (USA, Europe).cht",
+      "total_cheat_rows": 39,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFB4D2:0000",
+          "desc": "Low Time (Seconds)",
+          "address": "0xFFB4D2"
+        },
+        {
+          "code": "FFB4BA:00FF",
+          "desc": "Have Great Acceleration P1",
+          "address": "0xFFB4BA"
+        },
+        {
+          "code": "FFB666:0000",
+          "desc": "Always On 1st Attempt",
+          "address": "0xFFB666"
+        },
+        {
+          "code": "FFB56A:0016",
+          "desc": "Infinite Feeding Bar",
+          "address": "0xFFB56A"
+        },
+        {
+          "code": "FFB56C:0016",
+          "desc": "Infinite Feeding Bar",
+          "address": "0xFFB56C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

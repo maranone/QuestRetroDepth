@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "rampart",
+  "display_name": "Rampart (USA, Japan, Korea) (Action Replay)",
+  "aliases": [
+    "Rampart (USA, Japan, Korea) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Rampart (USA, Japan, Korea) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF0753:35",
+          "desc": "Freeze Countdown When Choosing A Building (At Beginning of Game) (First Timer)",
+          "address": "0xFF0753"
+        },
+        {
+          "code": "FF05C3:95",
+          "desc": "Freeze Countdown When Placing A Building (At Beginning of Game) (Second Timer)",
+          "address": "0xFF05C3"
+        },
+        {
+          "code": "FF07A3:09",
+          "desc": "Infinite Time To Join In For Both Players (HUD Is Blanked Out)",
+          "address": "0xFF07A3"
+        },
+        {
+          "code": "FF026B:XX",
+          "desc": "Number of Buildings Left To Place P1 (Modifies HUD Only)",
+          "address": "0xFF026B"
+        },
+        {
+          "code": "FF04C5:XX",
+          "desc": "Number of Buildings Left To Place P2 (Modifies HUD Only)",
+          "address": "0xFF04C5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "system": "snes",
+  "normalized_title": "bobbysworld",
+  "display_name": "Bobby's World (USA) (Action Replay)",
+  "aliases": [
+    "Bobby's World (USA) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Bobby's World (USA) (Proto).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E139509",
+          "desc": "9 Lives",
+          "address": "0x7E1395"
+        },
+        {
+          "code": "7E139709",
+          "desc": "9 Continues",
+          "address": "0x7E1397"
+        },
+        {
+          "code": "7E139B03",
+          "desc": "Infinite Health",
+          "address": "0x7E139B"
+        },
+        {
+          "code": "7E139599",
+          "desc": "Infinite Life",
+          "address": "0x7E1395"
+        },
+        {
+          "code": "7E139B04",
+          "desc": "Infinite Hearts (Hits)",
+          "address": "0x7E139B"
+        },
+        {
+          "code": "7E139999",
+          "desc": "Infinite Candy Canes",
+          "address": "0x7E1399"
+        },
+        {
+          "code": "7E137B00",
+          "desc": "Stage Modifier",
+          "address": "0x7E137B"
+        },
+        {
+          "code": "7E1B4900",
+          "desc": "1 Hit To Kill Blue Boss",
+          "address": "0x7E1B49"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

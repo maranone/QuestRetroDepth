@@ -1,0 +1,32 @@
+{
+  "system": "snes",
+  "normalized_title": "cyberspin",
+  "display_name": "Cyber Spin (USA) (Game Genie)",
+  "aliases": [
+    "Cyber Spin (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Cyber Spin (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E00B402",
+          "desc": "Time Freeze",
+          "address": "0x7E00B4"
+        },
+        {
+          "code": "7E073C05",
+          "desc": "One Lap To Win Race",
+          "address": "0x7E073C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

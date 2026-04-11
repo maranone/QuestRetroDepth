@@ -1,0 +1,45 @@
+{
+  "system": "snes",
+  "normalized_title": "bsexcitebikebunbunmariobattlestadium2",
+  "display_name": "BS Excitebike Bun Bun Mario Battle Stadium 2 (J)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\BS Excitebike Bun Bun Mario Battle Stadium 2 (J).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E099008",
+          "desc": "Never overheat",
+          "address": "0x7E0990"
+        },
+        {
+          "code": "7E008100",
+          "desc": "Low time",
+          "address": "0x7E0081"
+        },
+        {
+          "code": "7E03B200",
+          "desc": "Low time",
+          "address": "0x7E03B2"
+        },
+        {
+          "code": "7E0CDF05",
+          "desc": "Always have 5 coins",
+          "address": "0x7E0CDF"
+        },
+        {
+          "code": "7E154005",
+          "desc": "Always have 5 coins",
+          "address": "0x7E1540"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

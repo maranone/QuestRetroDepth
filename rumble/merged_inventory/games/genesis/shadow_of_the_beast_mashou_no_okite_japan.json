@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "shadowofbeastmashounookite",
+  "display_name": "Shadow of the Beast - Mashou no Okite (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Shadow of the Beast - Mashou no Okite (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF1A4B:0012",
+          "desc": "Infinite Energy",
+          "address": "0xFF1A4B"
+        },
+        {
+          "code": "FF1A4E:0010",
+          "desc": "Invincibility",
+          "address": "0xFF1A4E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

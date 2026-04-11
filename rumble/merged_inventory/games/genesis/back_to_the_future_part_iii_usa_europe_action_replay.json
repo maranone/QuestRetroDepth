@@ -1,0 +1,90 @@
+{
+  "system": "genesis",
+  "normalized_title": "backtofuturepartiii",
+  "display_name": "Back to the Future Part III (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Back to the Future Part III (Europe)",
+    "Back to the Future Part III (USA)",
+    "Back to the Future Part III (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\backtothefuturepartiii_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF00FD",
+        "0xFF0108"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BackToTheFuturePartIII-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF00FD",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF0108",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Back to the Future Part III (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF00FD:04",
+          "desc": "Infinite Tries (Level 1",
+          "address": "0xFF00FD"
+        },
+        {
+          "code": "FF021F:05",
+          "desc": "Infinite Time (Level 2)",
+          "address": "0xFF021F"
+        },
+        {
+          "code": "FF0247:0A",
+          "desc": "Infinite Plates (Level 3)",
+          "address": "0xFF0247"
+        },
+        {
+          "code": "FF0129:00",
+          "desc": "Infinite Health (Level 3)",
+          "address": "0xFF0129"
+        },
+        {
+          "code": "FF0175:00",
+          "desc": "Activate Last Boss (Level 3)",
+          "address": "0xFF0175"
+        },
+        {
+          "code": "FF0145:99",
+          "desc": "Infinite Time (Level 4)",
+          "address": "0xFF0145"
+        },
+        {
+          "code": "FF058D:01",
+          "desc": "Cannot Be Touched (Level 4)",
+          "address": "0xFF058D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

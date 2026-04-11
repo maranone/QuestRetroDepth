@@ -1,0 +1,58 @@
+{
+  "system": "snes",
+  "normalized_title": "acrobatmission",
+  "display_name": "Acrobat Mission (Japan) (Action Replay)",
+  "aliases": [
+    "Acrobat Mission (Japan) (En)",
+    "Acrobat Mission"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Acrobat Mission (Japan) (En).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E041204",
+          "desc": "Infinite Lives",
+          "address": "0x7E0412"
+        },
+        {
+          "code": "7E042A30",
+          "desc": "Invincible",
+          "address": "0x7E042A"
+        },
+        {
+          "code": "7E042409",
+          "desc": "Most Powerful Gun",
+          "address": "0x7E0424"
+        },
+        {
+          "code": "7E04120B",
+          "desc": "Infinite Lives",
+          "address": "0x7E0412"
+        },
+        {
+          "code": "7E02B300",
+          "desc": "Score Modifier",
+          "address": "0x7E02B3"
+        },
+        {
+          "code": "7E02B400",
+          "desc": "Score Modifier",
+          "address": "0x7E02B4"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 1,
+      "mk3_label": "ACROBAT MISSION"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

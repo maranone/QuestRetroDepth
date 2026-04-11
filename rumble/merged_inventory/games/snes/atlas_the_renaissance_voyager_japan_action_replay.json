@@ -1,0 +1,47 @@
+{
+  "system": "snes",
+  "normalized_title": "atlasrenaissancevoyager",
+  "display_name": "Atlas, The - Renaissance Voyager (Japan) (Action Replay)",
+  "aliases": [
+    "Atlas, The - Renaissance Voyager (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Atlas, The - Renaissance Voyager (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E109000",
+          "desc": "Year Modifier",
+          "address": "0x7E1090"
+        },
+        {
+          "code": "7E109100",
+          "desc": "Month Modifier",
+          "address": "0x7E1091"
+        },
+        {
+          "code": "7E109200",
+          "desc": "Day Modifier",
+          "address": "0x7E1092"
+        },
+        {
+          "code": "7E109300",
+          "desc": "Time of Day Modifier",
+          "address": "0x7E1093"
+        },
+        {
+          "code": "7E108D50",
+          "desc": "Tons of Funds",
+          "address": "0x7E108D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

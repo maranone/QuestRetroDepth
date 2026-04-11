@@ -1,0 +1,59 @@
+{
+  "system": "genesis",
+  "normalized_title": "taskforceharrierex",
+  "display_name": "Task Force Harrier EX (USA, Japan) (Action Replay)",
+  "aliases": [
+    "Task Force Harrier EX (USA)",
+    "Task Force Harrier EX (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\taskforceharrierex_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF4F2A",
+        "0xFF8108"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TaskForceHarrierEX-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF8108",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF4F2A",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Task Force Harrier EX (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF8106:0001",
+          "desc": "Always Keep Extra Aircraft",
+          "address": "0xFF8106"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

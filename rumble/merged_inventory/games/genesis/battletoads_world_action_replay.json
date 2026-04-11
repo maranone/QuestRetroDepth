@@ -1,0 +1,102 @@
+{
+  "system": "genesis",
+  "normalized_title": "battletoads",
+  "display_name": "Battletoads (World) (Action Replay)",
+  "aliases": [
+    "Battletoads (Rumbles)",
+    "Battletoads (World) (Action Replay)",
+    "Battletoads (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\battletoads_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFE007",
+        "0xFFE046",
+        "0xFFFE0D"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Battletoads-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFE007",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFE046",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFE0D",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Battletoads (World).cht",
+      "total_cheat_rows": 48,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FFE046:0500",
+          "desc": "Infinite Lives",
+          "address": "0xFFE046"
+        },
+        {
+          "code": "FFE006:0017",
+          "desc": "Infinite Energy",
+          "address": "0xFFE006"
+        },
+        {
+          "code": "FFE086:0016",
+          "desc": "Infinite Health P2",
+          "address": "0xFFE086"
+        },
+        {
+          "code": "FFE0C6:0009",
+          "desc": "Infinite Lives P2",
+          "address": "0xFFE0C6"
+        },
+        {
+          "code": "FFE06A:0010",
+          "desc": "Invincible",
+          "address": "0xFFE06A"
+        },
+        {
+          "code": "FFE107:0000",
+          "desc": "No Health Enemy 1",
+          "address": "0xFFE107"
+        },
+        {
+          "code": "FFE187:0000",
+          "desc": "No Health Enemy 2",
+          "address": "0xFFE187"
+        },
+        {
+          "code": "FFE207:0000",
+          "desc": "No Health Enemy 3",
+          "address": "0xFFE207"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

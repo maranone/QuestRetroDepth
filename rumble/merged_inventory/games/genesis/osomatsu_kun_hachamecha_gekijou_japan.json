@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "osomatsukunhachamechagekijou",
+  "display_name": "Osomatsu-kun Hachamecha Gekijou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Osomatsu-kun Hachamecha Gekijou (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFB120:0005",
+          "desc": "Infinite Lives",
+          "address": "0xFFB120"
+        },
+        {
+          "code": "FFB126:9999",
+          "desc": "Infinite Money",
+          "address": "0xFFB126"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

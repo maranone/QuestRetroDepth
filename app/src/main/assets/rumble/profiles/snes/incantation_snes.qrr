@@ -1,0 +1,10 @@
+game_name=Incantation (Rumbles)
+game_key=Incantation-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_1115	damage_taken	0x7E1115	1	int	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1115	death	0x7E1115	1	int	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_0846	life_lost	0x7E0846	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0846	life_gained	0x7E0846	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_083c	score	0x7E083C	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_083e	score	0x7E083E	1	uint	native	prev < curr	0.8	1	right:0.350:60

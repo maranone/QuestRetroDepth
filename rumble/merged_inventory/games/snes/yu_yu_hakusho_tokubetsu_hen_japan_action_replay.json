@@ -1,0 +1,77 @@
+{
+  "system": "snes",
+  "normalized_title": "yuyuhakushotokubetsuhen",
+  "display_name": "Yu Yu Hakusho - Tokubetsu Hen (Japan) (Action Replay)",
+  "aliases": [
+    "Yu Yu Hakusho - Tokubetsu Hen (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Yu Yu Hakusho - Tokubetsu Hen (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "7E10240A",
+          "desc": "Player 1 Infinite Power [Offense Bar]",
+          "address": "0x7E1024"
+        },
+        {
+          "code": "7E10220A",
+          "desc": "Player 1 Infinite Power [Defense Bar]",
+          "address": "0x7E1022"
+        },
+        {
+          "code": "7E11A40A",
+          "desc": "Player 2 Infinite Power [Offense Bar]",
+          "address": "0x7E11A4"
+        },
+        {
+          "code": "7E11A20A",
+          "desc": "Player 2 Infinite Power [Defense Bar]",
+          "address": "0x7E11A2"
+        },
+        {
+          "code": "7E020000",
+          "desc": "Stage Modifier Cursor Select",
+          "address": "0x7E0200"
+        },
+        {
+          "code": "7E020000",
+          "desc": "Note: The following share these values.",
+          "address": "0x7E0200"
+        },
+        {
+          "code": "7E024800",
+          "desc": "P1 Character Modifier Cursor Select",
+          "address": "0x7E0248"
+        },
+        {
+          "code": "7E024A00",
+          "desc": "P2 Character Modifier Cursor Select",
+          "address": "0x7E024A"
+        },
+        {
+          "code": "7E025000",
+          "desc": "P1 Character Modifier",
+          "address": "0x7E0250"
+        },
+        {
+          "code": "7E025200",
+          "desc": "P2 Character Modifier",
+          "address": "0x7E0252"
+        },
+        {
+          "code": "7E0E1F60",
+          "desc": "Infinite Health",
+          "address": "0x7E0E1F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

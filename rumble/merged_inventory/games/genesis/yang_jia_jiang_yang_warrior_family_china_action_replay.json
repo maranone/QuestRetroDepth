@@ -1,0 +1,40 @@
+{
+  "system": "genesis",
+  "normalized_title": "yangjiajiangyangwarriorfamily",
+  "display_name": "Yang Jia Jiang - Yang Warrior Family (China) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Yang Jia Jiang - Yang Warrior Family (China) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF71CD:09",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF71CD"
+        },
+        {
+          "code": "FF71CC:18",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF71CC"
+        },
+        {
+          "code": "FF720D:09",
+          "desc": "Infinite Lives P2",
+          "address": "0xFF720D"
+        },
+        {
+          "code": "FF720C:18",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF720C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

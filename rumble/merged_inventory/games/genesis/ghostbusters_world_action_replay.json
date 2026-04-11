@@ -1,0 +1,119 @@
+{
+  "system": "genesis",
+  "normalized_title": "ghostbusters",
+  "display_name": "Ghostbusters (World) (Action Replay)",
+  "aliases": [
+    "Ghostbusters (World) (Action Replay)",
+    "Ghostbusters (World) (Rev A)",
+    "Ghostbusters (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ghostbusters (World).cht",
+      "total_cheat_rows": 35,
+      "raw_entry_count": 19,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "FFFE0D:0099",
+          "desc": "Infinite Money",
+          "address": "0xFFFE0D"
+        },
+        {
+          "code": "FFFE32:001A",
+          "desc": "Infinite Weapon Energy",
+          "address": "0xFFFE32"
+        },
+        {
+          "code": "FF0A89:0001",
+          "desc": "Infinite Trap Attempts",
+          "address": "0xFF0A89"
+        },
+        {
+          "code": "FF1079:0001",
+          "desc": "Infinite Trap Attempts",
+          "address": "0xFF1079"
+        },
+        {
+          "code": "FF005A:0009",
+          "desc": "Walk Through Enemies",
+          "address": "0xFF005A"
+        },
+        {
+          "code": "FF00C4:0000",
+          "desc": "Multiple Shot Weapon",
+          "address": "0xFF00C4"
+        },
+        {
+          "code": "FF0402:0000",
+          "desc": "Jump to Levitate",
+          "address": "0xFF0402"
+        },
+        {
+          "code": "FF0418:0000",
+          "desc": "Moon Jump",
+          "address": "0xFF0418"
+        },
+        {
+          "code": "FFFE28:0000",
+          "desc": "Character Modifier",
+          "address": "0xFFFE28"
+        },
+        {
+          "code": "FFFE2C:0010",
+          "desc": "Infinite Health",
+          "address": "0xFFFE2C"
+        },
+        {
+          "code": "FFFE1C:0009",
+          "desc": "Infinite Bombs",
+          "address": "0xFFFE1C"
+        },
+        {
+          "code": "FFFE2A:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFFE2A"
+        },
+        {
+          "code": "FFFF10:0000",
+          "desc": "Option Cursor Select",
+          "address": "0xFFFF10"
+        },
+        {
+          "code": "FFFF10:0000",
+          "desc": "Cursor Select / Music Number Modifier",
+          "address": "0xFFFF10"
+        },
+        {
+          "code": "FFFF14:0000",
+          "desc": "Main Menu Cursor Select / S.E. Number Modifier",
+          "address": "0xFFFF14"
+        },
+        {
+          "code": "FFFE18:007F",
+          "desc": "All Weapons have been sold out",
+          "address": "0xFFFE18"
+        },
+        {
+          "code": "FFFE18:0005",
+          "desc": "Always has 5 Energy Tanks",
+          "address": "0xFFFE18"
+        },
+        {
+          "code": "FFFE1A:0001",
+          "desc": "Always have 1 Peking Duck",
+          "address": "0xFFFE1A"
+        },
+        {
+          "code": "FFFE1A:0008",
+          "desc": "Always have 8 Infrared Scope",
+          "address": "0xFFFE1A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "smurfstravelworld",
+  "display_name": "Smurfs Travel the World, The (Europe) (Action Replay)",
+  "aliases": [
+    "Smurfs Travel the World, The (Europe) (En,Fr,De,Es)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Smurfs Travel the World, The (Europe) (En,Fr,De,Es).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFFA08:0005",
+          "desc": "Infinite Hearts",
+          "address": "0xFFFA08"
+        },
+        {
+          "code": "FFFA0C:0007",
+          "desc": "Infinite Lives",
+          "address": "0xFFFA0C"
+        },
+        {
+          "code": "FFFA0C:0000",
+          "desc": "Crystals Remaining Modifier",
+          "address": "0xFFFA0C"
+        },
+        {
+          "code": "FFFA10:0000",
+          "desc": "Stage Modifier",
+          "address": "0xFFFA10"
+        },
+        {
+          "code": "FFFFFF:00AB",
+          "desc": "Enable Cheater Menu (Press C on the Map)",
+          "address": "0xFFFFFF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

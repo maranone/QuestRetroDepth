@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "aerobizsupersonic",
+  "display_name": "Aerobiz Supersonic (USA) (Action Replay)",
+  "aliases": [
+    "Aerobiz Supersonic (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Aerobiz Supersonic (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF001E:00FF",
+          "desc": "Have Tons Of Money",
+          "address": "0xFF001E"
+        },
+        {
+          "code": "FF0020:00FF",
+          "desc": "Have Tons Of Money",
+          "address": "0xFF0020"
+        },
+        {
+          "code": "FF001F:0098",
+          "desc": "Infinite Money",
+          "address": "0xFF001F"
+        },
+        {
+          "code": "FF0020:967F",
+          "desc": "Infinite Money",
+          "address": "0xFF0020"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

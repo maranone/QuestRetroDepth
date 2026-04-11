@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "trinea",
+  "display_name": "Trinea (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Trinea (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E10B90F",
+          "desc": "Infinite Money",
+          "address": "0x7E10B9"
+        },
+        {
+          "code": "7E10BA27",
+          "desc": "Infinite Money",
+          "address": "0x7E10BA"
+        },
+        {
+          "code": "7E10B6FF",
+          "desc": "Infinite Health",
+          "address": "0x7E10B6"
+        },
+        {
+          "code": "7E10B7FF",
+          "desc": "Infinite Health",
+          "address": "0x7E10B7"
+        },
+        {
+          "code": "7E10B805",
+          "desc": "Infinite Technique",
+          "address": "0x7E10B8"
+        },
+        {
+          "code": "7E143001",
+          "desc": "Character Modifier",
+          "address": "0x7E1430"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

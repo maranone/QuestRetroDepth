@@ -1,0 +1,45 @@
+{
+  "system": "genesis",
+  "normalized_title": "hardballiii",
+  "display_name": "HardBall III (USA) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\HardBall III (USA) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF00B7:XX",
+          "desc": "Balls Modifier",
+          "address": "0xFF00B7"
+        },
+        {
+          "code": "FF00B8:XX",
+          "desc": "Strikes Modifier",
+          "address": "0xFF00B8"
+        },
+        {
+          "code": "FF00B9:XX",
+          "desc": "Outs Modifier",
+          "address": "0xFF00B9"
+        },
+        {
+          "code": "FF00B1:XX",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFF00B1"
+        },
+        {
+          "code": "FF00B3:XX",
+          "desc": "Team 2 Runs Modifier",
+          "address": "0xFF00B3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

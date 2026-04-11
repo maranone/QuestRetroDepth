@@ -1,0 +1,78 @@
+{
+  "system": "genesis",
+  "normalized_title": "revengeofshinobi",
+  "display_name": "Revenge of Shinobi, (World) (Action Replay)",
+  "aliases": [
+    "Revenge of Shinobi, (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\revengeofshinobi_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFE141",
+        "0xFFFF10"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\RevengeOfShinobi-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFE141",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFF10",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Revenge of Shinobi, (World) (Action Replay).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFE13F:0063",
+          "desc": "Infinite Shurukens",
+          "address": "0xFFE13F"
+        },
+        {
+          "code": "FFE13B:0008",
+          "desc": "Infinite Health",
+          "address": "0xFFE13B"
+        },
+        {
+          "code": "FFE147:0004",
+          "desc": "Never-Ending Ikazuchi",
+          "address": "0xFFE147"
+        },
+        {
+          "code": "FFE145:01",
+          "desc": "Infinite Magic",
+          "address": "0xFFE145"
+        },
+        {
+          "code": "FFC03F:1B",
+          "desc": "Invincible",
+          "address": "0xFFC03F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

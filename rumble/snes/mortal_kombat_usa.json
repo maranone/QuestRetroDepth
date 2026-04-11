@@ -1,0 +1,854 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Mortal Kombat (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Mortal Kombat (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "C9B2-17AF",
+      "desc": "Infinite Time",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D466-3D04",
+      "desc": "Each Round Is 199 Seconds (Time Counts Down Twice)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "BF66-3DD4",
+      "desc": "Each Round Is 90 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD66-3D04",
+      "desc": "Each Round Is 90 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6F66-3DD4",
+      "desc": "Each Round Is 80 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD66-3D04",
+      "desc": "Each Round Is 80 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "5F66-3DD4",
+      "desc": "Each Round Is 70 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD66-3D04",
+      "desc": "Each Round Is 70 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1F66-3DD4",
+      "desc": "Each Round Is 60 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD66-3D04",
+      "desc": "Each Round Is 60 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9F66-3DD4",
+      "desc": "Each Round Is 50 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD66-3D04",
+      "desc": "Each Round Is 50 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0F66-3DD4",
+      "desc": "Each Round Is 40 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD66-3D04",
+      "desc": "Each Round Is 40 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7F66-3DD4",
+      "desc": "Each Round Is 30 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD66-3D04",
+      "desc": "Each Round Is 30 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4F66-3DD4",
+      "desc": "Each Round Is 20 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD66-3D04",
+      "desc": "Each Round Is 20 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FF66-3DD4",
+      "desc": "Each Round Is 10 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD66-3D04",
+      "desc": "Each Round Is 10 Seconds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD6A-47AF",
+      "desc": "Always Fight In The Courtyard",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CB6A-44AF",
+      "desc": "After 1st Match, Almost Always Fight At The Palace Gates",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DF6A-47DF",
+      "desc": "After 1st Match, Almost Always Fight At The Palace Gates",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CB6A-44AF",
+      "desc": "After 1st Match, Almost Always Fight In The Warrior Shrine",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D46A-47DF",
+      "desc": "After 1st Match, Almost Always Fight In The Warrior Shrine",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CB6A-44AF",
+      "desc": "After 1st Match, Almost Always Fight In The Pit",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D76A-47DF",
+      "desc": "After 1st Match, Almost Always Fight In The Pit",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CB6A-44AF",
+      "desc": "After 1st Match, Almost Always Fight In The Throne Room",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D06A-47DF",
+      "desc": "After 1st Match, Almost Always Fight In The Throne Room",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CB6A-44AF",
+      "desc": "After 1st Match, Almost Always Fight In Goro's Lair",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D96A-47DF",
+      "desc": "After 1st Match, Almost Always Fight In Goro's Lair",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CB6A-44AF",
+      "desc": "After 1st Match, Almost Always Fight In The Bottom Of The Pit (Screen Says Goro's Lair)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D16A-47DF",
+      "desc": "After 1st Match, Almost Always Fight In The Bottom Of The Pit (Screen Says Goro's Lair)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBBA-394F",
+      "desc": "Almost Always Fight Johnny Cage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDBA-391F",
+      "desc": "Almost Always Fight Johnny Cage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBBA-394F",
+      "desc": "Almost Always Fight Kano",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DFBA-391F",
+      "desc": "Almost Always Fight Kano",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBBA-394F",
+      "desc": "Almost Always Fight Rayden",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D4BA-391F",
+      "desc": "Almost Always Fight Rayden",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBBA-394F",
+      "desc": "Almost Always Fight Liu Kang",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D7BA-391F",
+      "desc": "Almost Always Fight Liu Kang",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBBA-394F",
+      "desc": "Almost Always Fight Scorpion",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D0BA-391F",
+      "desc": "Almost Always Fight Scorpion",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBBA-394F",
+      "desc": "Almost Always Fight Sub-Zero",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D9BA-391F",
+      "desc": "Almost Always Fight Sub-Zero",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBBA-394F",
+      "desc": "Almost Always Fight Sonya Blade",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D1BA-391F",
+      "desc": "Almost Always Fight Sonya Blade",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBBA-394F",
+      "desc": "Almost Always Fight Goro (Don't Use Kano's Or Johnny Cage's Finishing Move On Goro)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D5BA-391F",
+      "desc": "Almost Always Fight Goro (Don't Use Kano's Or Johnny Cage's Finishing Move On Goro)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DF61-14DD",
+      "desc": "Start On Match 2",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D461-14DD",
+      "desc": "Start On Match 3",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D761-14DD",
+      "desc": "Start On Match 4",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D061-14DD",
+      "desc": "Start On Match 5",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D961-14DD",
+      "desc": "Start On Match 6",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D161-14DD",
+      "desc": "Start On Mirror Match(tm)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D561-14DD",
+      "desc": "Start On Endurance 1 Match",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D661-14DD",
+      "desc": "Start On Endurance 2 Match",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DB61-14DD",
+      "desc": "Start On Endurance 3 Match",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DC61-14DD",
+      "desc": "Start On Match With Goro",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D861-14DD",
+      "desc": "Start On Match With Shang Tsung",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6DB8-3D67",
+      "desc": "Always Get Flawless Victory Bonus",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDBC-370F",
+      "desc": "First Strike Of Any Kind Wins Round",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDBF-1FA4",
+      "desc": "All Strikes Do Minimal Damage (All Equal To 1 Hit Point) (2-Player Game Only, Don't Choose Handicap For Either Player)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D881-404F",
+      "desc": "Can Make Player 1 Nearly Invincible In 2-Player Game",
+      "kind": "game_genie"
+    },
+    {
+      "code": "56B9-4DAD",
+      "desc": "All Throws Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F320-1914",
+      "desc": "Kano's High Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F320-15C4",
+      "desc": "Kano's Low Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0626-1514",
+      "desc": "Kano's High Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "062B-19C4",
+      "desc": "Kano's Low Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0621-1044",
+      "desc": "Kano's Head Blow Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0629-1934",
+      "desc": "Kano's Knee Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7A26-1944",
+      "desc": "Kano's Crouched Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "5625-1134",
+      "desc": "Kano's Uppercut Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1D27-1544",
+      "desc": "Kano's Roundhouse Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7A25-10C4",
+      "desc": "Kano's Foot Sweep Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "082C-1144",
+      "desc": "Kano's Flying Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0824-11C4",
+      "desc": "Kano's Knife Does More Damage (Only At Close Distance)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F32C-4944",
+      "desc": "Johnny Cage's High Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F32C-4514",
+      "desc": "Johnny Cage's Low Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "062B-40C4",
+      "desc": "Johnny Cage's High Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "042B-4134",
+      "desc": "Johnny Cage's Low Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7A2A-4144",
+      "desc": "Johnny Cage's Head Blow Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0622-4014",
+      "desc": "Johnny Cage's Knee Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F628-4534",
+      "desc": "Johnny Cage's Crouched Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "5622-41C4",
+      "desc": "Johnny Cage's Uppercut Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1D26-4114",
+      "desc": "Johnny Cage's Roundhouse Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7A28-49C4",
+      "desc": "Johnny Cage's Foot Sweep Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0826-4044",
+      "desc": "Johnny Cage's Flying Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9C20-41C4",
+      "desc": "Johnny Cage's Shadow Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0821-4914",
+      "desc": "Johnny Cage's Fireball Does More Damage (Only At Close Distance)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1129-4544",
+      "desc": "Johnny Cage's Split Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F323-C034",
+      "desc": "Liu Kang's High Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F323-C544",
+      "desc": "Liu Kang's Low Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0624-30C4",
+      "desc": "Liu Kang's High Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0624-3134",
+      "desc": "Liu Kang's Low Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7A28-C534",
+      "desc": "Liu Kang's Head Blow Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "062E-C914",
+      "desc": "Liu Kang's Knee Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7A2F-3114",
+      "desc": "Liu Kang's Crouched Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "562F-3044",
+      "desc": "Liu Kang's Uppercut Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1D22-C1C4",
+      "desc": "Liu Kang's Roundhouse Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7A2D-3934",
+      "desc": "Liu Kang's Foot Sweep Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0827-3514",
+      "desc": "Liu Kang's Flying Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9C28-C9C4",
+      "desc": "Liu Kang's Special Flying Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "082A-C144",
+      "desc": "Liu Kang's Fireball Does More Damage (Only At Close Distance)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F32F-393F",
+      "desc": "Sonya Blade's High Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F324-304F",
+      "desc": "Sonya Blade's Low Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9023-C01F",
+      "desc": "Sonya Blade's High Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9F23-C1CF",
+      "desc": "Sonya Blade's Low Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7A2E-C03F",
+      "desc": "Sonya Blade's Head Blow Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "062E-C54F",
+      "desc": "Sonya Blade's Knee Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7A2D-35CF",
+      "desc": "Sonya Blade's Crouched Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "5624-311F",
+      "desc": "Sonya Blade's Uppercut Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1122-C14F",
+      "desc": "Sonya Blade's Roundhouse Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7A2A-C53F",
+      "desc": "Sonya Blade's Foot Sweep Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0827-313F",
+      "desc": "Sonya Blade's Flying Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "5620-17A7",
+      "desc": "Sonya Blade's Leg Grab Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0822-C13F",
+      "desc": "Sonya Blade's Sonic Rings Does More Damage (Only At Close Distance)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0827-313F",
+      "desc": "Sonya Blade's Special Flying Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F324-C914",
+      "desc": "Rayden's High Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F327-C934",
+      "desc": "Rayden's Low Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "092F-C034",
+      "desc": "Rayden's High Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "042F-C544",
+      "desc": "Rayden's Low Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7A29-C0C4",
+      "desc": "Rayden's Head Blow Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0629-C134",
+      "desc": "Rayden's Knee Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F620-C114",
+      "desc": "Rayden's Crouched Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "5621-C944",
+      "desc": "Rayden's Uppercut Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9C2D-C1C4",
+      "desc": "Rayden's Roundhouse Kick Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7A20-C044",
+      "desc": "Rayden's Foot Sweep Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "082D-C014",
+      "desc": "Rayden's Flying Punch Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "9C22-1514",
+      "desc": "Rayden's Flying Thunderbolt Does More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0823-19C4",
+      "desc": "Rayden's Lightning Does More Damage (Only At Close Distance)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F328-3934",
+      "desc": "Scorpion's, Sub-Zero's And Reptile's High Punch Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F32A-3044",
+      "desc": "Scorpion's, Sub-Zero's And Reptile's Low Punch Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "062E-39C4",
+      "desc": "Scorpion's, Sub-Zero's And Reptile's High Kick Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "062E-3534",
+      "desc": "Scorpion's, Sub-Zero's And Reptile's Low Kick Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7A22-30C4",
+      "desc": "Scorpion's, Sub-Zero's And Reptile's Head Blow Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "062A-3114",
+      "desc": "Scorpion's, Sub-Zero's And Reptile's Knee Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F62F-41C7",
+      "desc": "Scorpion's, Sub-Zero's And Reptile's Crouched Kick Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "562C-35C4",
+      "desc": "Scorpion's, Sub-Zero's And Reptile's Uppercut Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1D2F-4017",
+      "desc": "Scorpion's, Sub-Zero's And Reptile's Roundhouse Kick Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7A2D-4147",
+      "desc": "Scorpion's, Sub-Zero's And Reptile's Foot Sweep Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0823-3944",
+      "desc": "Scorpion's, Sub-Zero's And Reptile's Flying Punch Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "462C-3914",
+      "desc": "Sub-Zero's And Reptile's Deep Freeze Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "4525-3144",
+      "desc": "Sub-Zero's And Reptile's Slide Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F626-31C4",
+      "desc": "Scorpion's And Reptile's Harpoon Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "0823-3944",
+      "desc": "Scorpion's And Reptile's Scorpion Split Do More Damage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE31-4DDE",
+      "desc": "First Fight Code",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7F31-4DDE",
+      "desc": "Both Players Are Invisible",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD68-6DD0",
+      "desc": "High Pitched Voices!",
+      "kind": "game_genie"
+    },
+    {
+      "code": "822A-34DD",
+      "desc": "As Kang Does A Special Flying Kick, He'll Spit A Fireball",
+      "kind": "game_genie"
+    },
+    {
+      "code": "2D2A-34DD",
+      "desc": "As Liu Kang Does His Special Flying Kick An Enemy Will Fry Into A Skeleton",
+      "kind": "game_genie"
+    },
+    {
+      "code": "6D67-3FOD",
+      "desc": "Get To Fight Reptile (If Have Do A Double Flawless Victory And Do A Fatality)",
+      "kind": "unsupported"
+    },
+    {
+      "code": "6C2A-146D",
+      "desc": "Changes Speed Of Rayden's Torpedo",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D2B8-14DD",
+      "desc": "Play 2 Player Game And Everyone Will Vibrate",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DEB8-14DD",
+      "desc": "Blue Johnny Cage",
+      "kind": "game_genie"
+    },
+    {
+      "code": "66B8-14DD",
+      "desc": "See GoldenRod (Hidden Character) In MK 1!",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D6BA-14DD",
+      "desc": "Character Select Boxes Will Be Black",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EEB3-14DD",
+      "desc": "No Fighter Select Screen!",
+      "kind": "game_genie"
+    },
+    {
+      "code": "A3CA-4D6D",
+      "desc": "The Computer Opponent (CPU) Has To Win An Infinite Number of Rounds To Win the Match, But You Only Have To Win 2",
+      "kind": "game_genie"
+    },
+    {
+      "code": "33B6-C4D7",
+      "desc": "You Skip Over Every Other Opponent On The \"Battle Plan\"",
+      "kind": "game_genie"
+    },
+    {
+      "code": "E2BE-3FA4",
+      "desc": "Player 1 And CPU Start With More Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DFBE-3FA4",
+      "desc": "First Person That Gets Hit Loses (Against The CPU)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD62-3464",
+      "desc": "Lets You Start Fighting Before It Says \"Fight\"",
+      "kind": "game_genie"
+    },
+    {
+      "code": "8084CF83",
+      "desc": "Enable High Score Entry (After Any Loss)",
+      "kind": "unsupported"
+    },
+    {
+      "code": "EEC9-14DA",
+      "desc": "Player 2 Can Never Win A Round",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EEC9-140A",
+      "desc": "Sudden Death Mode",
+      "kind": "game_genie"
+    },
+    {
+      "code": "3C6F-3FAF",
+      "desc": "Invisible Players",
+      "kind": "game_genie"
+    },
+    {
+      "code": "5EB5-3F64",
+      "desc": "Have Several Minutes Worth of Fatality Time",
+      "kind": "game_genie"
+    }
+  ]
+}

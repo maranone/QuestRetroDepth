@@ -1,0 +1,83 @@
+{
+  "system": "genesis",
+  "normalized_title": "doomtroopers",
+  "display_name": "Doom Troopers (USA) (Action Replay)",
+  "aliases": [
+    "Doom Troopers (USA) (GameGenie)",
+    "Doom Troopers (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Doom Troopers (USA).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "FF06BE:000E",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF06BE"
+        },
+        {
+          "code": "FF0066:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF0066"
+        },
+        {
+          "code": "FF0054:03E7",
+          "desc": "Infinite Gun P1",
+          "address": "0xFF0054"
+        },
+        {
+          "code": "FF076C:000E",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF076C"
+        },
+        {
+          "code": "FF008C:0009",
+          "desc": "Infinite Lives P2",
+          "address": "0xFF008C"
+        },
+        {
+          "code": "FF007A:03E7",
+          "desc": "Infinite Gun P2",
+          "address": "0xFF007A"
+        },
+        {
+          "code": "FF06EB:FFFF",
+          "desc": "1 Hit Invincibility",
+          "address": "0xFF06EB"
+        },
+        {
+          "code": "FF009E:0112",
+          "desc": "Enable Level Select after Character Select Screen",
+          "address": "0xFF009E"
+        },
+        {
+          "code": "FF00A0:070F",
+          "desc": "Enable Level Select after Character Select Screen",
+          "address": "0xFF00A0"
+        },
+        {
+          "code": "FF00A2:0E01",
+          "desc": "Enable Level Select after Character Select Screen",
+          "address": "0xFF00A2"
+        },
+        {
+          "code": "FF00A4:1408",
+          "desc": "Enable Level Select after Character Select Screen",
+          "address": "0xFF00A4"
+        },
+        {
+          "code": "FF0096:0063",
+          "desc": "Infinite Continues",
+          "address": "0xFF0096"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

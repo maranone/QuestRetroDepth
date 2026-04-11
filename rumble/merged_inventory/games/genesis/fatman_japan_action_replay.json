@@ -1,0 +1,72 @@
+{
+  "system": "genesis",
+  "normalized_title": "fatman",
+  "display_name": "Fatman (Japan) (Action Replay)",
+  "aliases": [
+    "Fatman (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Fatman (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 10,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF2892:00FF",
+          "desc": "Infinite Health P1",
+          "address": "0xFF2892"
+        },
+        {
+          "code": "FF2908:0000",
+          "desc": "No Health P2/CPU",
+          "address": "0xFF2908"
+        },
+        {
+          "code": "FF4F32:00FF",
+          "desc": "Fight Purse Has Lots of Money For The Victor",
+          "address": "0xFF4F32"
+        },
+        {
+          "code": "FF4F30:00FF",
+          "desc": "Fight Purse Has TONS of Money For The Victor",
+          "address": "0xFF4F30"
+        },
+        {
+          "code": "FF4F32:00FF",
+          "desc": "Fight Purse Has TONS of Money For The Victor",
+          "address": "0xFF4F32"
+        },
+        {
+          "code": "FF2896:0099",
+          "desc": "Maxed Money P1",
+          "address": "0xFF2896"
+        },
+        {
+          "code": "FF2896:0099",
+          "desc": "Maxed Money P1",
+          "address": "0xFF2896"
+        },
+        {
+          "code": "FF2898:0099",
+          "desc": "Maxed Money P1",
+          "address": "0xFF2898"
+        },
+        {
+          "code": "FF2898:0099",
+          "desc": "Maxed Money P1",
+          "address": "0xFF2898"
+        },
+        {
+          "code": "FF2C2E:0002",
+          "desc": "Infinite Continue",
+          "address": "0xFF2C2E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "system": "genesis",
+  "normalized_title": "bodycount",
+  "display_name": "Body Count (Europe, Brazil) (Action Replay)",
+  "aliases": [
+    "Body Count (Brazil)",
+    "Body Count (Europe) (En,Fr,De,Es,It)",
+    "Body Count (Europe, Brazil) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\bodycount_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF02CD",
+        "0xFF50F8"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BodyCount-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF50F8",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF02CD",
+          "type": ">u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Body Count (Europe, Brazil) (Action Replay).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FF50F8:28",
+          "desc": "Infinite Health P1",
+          "address": "0xFF50F8"
+        },
+        {
+          "code": "FF51D6:28",
+          "desc": "Infinite Health P2",
+          "address": "0xFF51D6"
+        },
+        {
+          "code": "FF511B:63",
+          "desc": "Infinite Grenades P1",
+          "address": "0xFF511B"
+        },
+        {
+          "code": "FF51F9:63",
+          "desc": "Infinite Grenades P2",
+          "address": "0xFF51F9"
+        },
+        {
+          "code": "FF50F7:FF",
+          "desc": "Infinite Ammo P1",
+          "address": "0xFF50F7"
+        },
+        {
+          "code": "FF51D5:FF",
+          "desc": "Infinite Ammo P2",
+          "address": "0xFF51D5"
+        },
+        {
+          "code": "FF02FD:00",
+          "desc": "Fake No Health Bosses",
+          "address": "0xFF02FD"
+        },
+        {
+          "code": "FF044F:09",
+          "desc": "Infinite Credits (Continues) P1&P2",
+          "address": "0xFF044F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "spaceace",
+  "display_name": "Space Ace (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Space Ace (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E092C63",
+          "desc": "Infinite Lives",
+          "address": "0x7E092C"
+        },
+        {
+          "code": "7E113604",
+          "desc": "Infinite Hits on Spaceship Levels",
+          "address": "0x7E1136"
+        },
+        {
+          "code": "7E03EB00",
+          "desc": "Level Modifier",
+          "address": "0x7E03EB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "system": "snes",
+  "normalized_title": "donkeykongcountry3dixiekongsdoubletrouble",
+  "display_name": "Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA, Europe) (Game Genie) (diff)",
+  "aliases": [
+    "Donkey Kong Country 3 - Dixie Kong's Double Trouble! (Europe) (En,Fr,De)",
+    "Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA) (En,Fr)",
+    "Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA, Europe) (Action Replay)",
+    "Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA, Europe) (Game Genie) (diff)",
+    "Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\donkeykongcountry3dixiekongsdoubletrouble_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E05D3",
+        "0x7E05D5"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DonkeyKongCountry3DixieKongsDoubleTrouble-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E05D5",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E05D3",
+          "type": "|d1"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Donkey Kong Country 3 - Dixie Kong's Double Trouble! (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

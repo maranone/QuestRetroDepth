@@ -1,0 +1,78 @@
+{
+  "system": "genesis",
+  "normalized_title": "homealone",
+  "display_name": "Home Alone (USA, Europe) (Beta) (July, 1992)",
+  "aliases": [
+    "Home Alone (USA, Europe) (Action Replay)",
+    "Home Alone (USA, Europe) (Beta) (July, 1992)",
+    "Home Alone (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\homealone_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFF00A"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\HomeAlone-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "eta",
+          "address": "0xFFF595",
+          "type": ">n8"
+        },
+        {
+          "name": "loot_taken_from_house",
+          "address": "0xFFF548",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF00A",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Home Alone (USA, Europe).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFF54C:0030",
+          "desc": "Infinite Charge",
+          "address": "0xFFF54C"
+        },
+        {
+          "code": "FFF884:0030",
+          "desc": "Infinite Ammo",
+          "address": "0xFFF884"
+        },
+        {
+          "code": "FFF582:003B",
+          "desc": "Freeze Time",
+          "address": "0xFFF582"
+        },
+        {
+          "code": "FFF548:0000",
+          "desc": "Looting Does Not Go Up",
+          "address": "0xFFF548"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

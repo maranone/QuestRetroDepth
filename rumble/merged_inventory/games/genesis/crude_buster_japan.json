@@ -1,0 +1,75 @@
+{
+  "system": "genesis",
+  "normalized_title": "crudebuster",
+  "display_name": "Crude Buster (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Crude Buster (Japan).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 11,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FF46C7:0010",
+          "desc": "Invincible",
+          "address": "0xFF46C7"
+        },
+        {
+          "code": "FF46CB:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFF46CB"
+        },
+        {
+          "code": "FF2575:0001",
+          "desc": "Stage Modifier",
+          "address": "0xFF2575"
+        },
+        {
+          "code": "FF46C7:001B",
+          "desc": "P1 Invincibility (blinking)",
+          "address": "0xFF46C7"
+        },
+        {
+          "code": "FF4757:0036",
+          "desc": "P1 Infinite Health",
+          "address": "0xFF4757"
+        },
+        {
+          "code": "FF46CB:000A",
+          "desc": "P1 Infinite Lives",
+          "address": "0xFF46CB"
+        },
+        {
+          "code": "FF46CD:0009",
+          "desc": "P1 Infinite Continues",
+          "address": "0xFF46CD"
+        },
+        {
+          "code": "FF4777:001B",
+          "desc": "P2 Invincibility (blinking)",
+          "address": "0xFF4777"
+        },
+        {
+          "code": "FF4807:0036",
+          "desc": "P2 Infinite Health",
+          "address": "0xFF4807"
+        },
+        {
+          "code": "FF477B:000A",
+          "desc": "P2 Infinite Lives",
+          "address": "0xFF477B"
+        },
+        {
+          "code": "FF477D:0009",
+          "desc": "P2 Infinite Continues",
+          "address": "0xFF477D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "system": "genesis",
+  "normalized_title": "tick",
+  "display_name": "Tick, The (USA) (Action Replay)",
+  "aliases": [
+    "Tick, The (USA) (Action Replay)",
+    "Tick, The (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\tick_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF0993",
+        "0xFF09A0",
+        "0xFF42BD"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Tick-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF42BD",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF0993",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF09A0",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tick, The (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "FF42BC:003A",
+          "desc": "Infinite Health P1",
+          "address": "0xFF42BC"
+        },
+        {
+          "code": "FF0992:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF0992"
+        },
+        {
+          "code": "FF0998:0009",
+          "desc": "Infinite Arthur Calls P1",
+          "address": "0xFF0998"
+        },
+        {
+          "code": "FF3C3A:0000",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0xFF3C3A"
+        },
+        {
+          "code": "FF3E16:0000",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0xFF3E16"
+        },
+        {
+          "code": "FF3A5E:0000",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0xFF3A5E"
+        },
+        {
+          "code": "FF3882:0000",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0xFF3882"
+        },
+        {
+          "code": "FF3D28:0000",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0xFF3D28"
+        },
+        {
+          "code": "FF392E:0000",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0xFF392E"
+        },
+        {
+          "code": "FF36A6:0000",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0xFF36A6"
+        },
+        {
+          "code": "FF37EA:0000",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0xFF37EA"
+        },
+        {
+          "code": "FF376C:0000",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0xFF376C"
+        },
+        {
+          "code": "FF35B8:0000",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0xFF35B8"
+        },
+        {
+          "code": "FF4270:0010",
+          "desc": "Invincibility",
+          "address": "0xFF4270"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "virtuafighter2vstekken2",
+  "display_name": "Virtua Fighter 2 VS Tekken 2 (Unknown) (Action Replay)",
+  "aliases": [
+    "Virtua Fighter 2 VS Tekken 2 (Unknown) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Virtua Fighter 2 VS Tekken 2 (Unknown) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFE1B3:70",
+          "desc": "Take Less Damage P1",
+          "address": "0xFFE1B3"
+        },
+        {
+          "code": "FFE213:70",
+          "desc": "Take Less Damage P2",
+          "address": "0xFFE213"
+        },
+        {
+          "code": "FFE1B3:00",
+          "desc": "No Energy P1",
+          "address": "0xFFE1B3"
+        },
+        {
+          "code": "FFE213:00",
+          "desc": "No Energy P2",
+          "address": "0xFFE213"
+        },
+        {
+          "code": "FF0405:3B",
+          "desc": "Infinite Time",
+          "address": "0xFF0405"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

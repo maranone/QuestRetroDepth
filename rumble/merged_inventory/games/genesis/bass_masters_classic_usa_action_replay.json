@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "bassmastersclassic",
+  "display_name": "Bass Masters Classic (USA) (Action Replay)",
+  "aliases": [
+    "Bass Masters Classic (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Bass Masters Classic (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFA262:0001",
+          "desc": "Start with $ 1 million",
+          "address": "0xFFA262"
+        },
+        {
+          "code": "FFA20E:0000",
+          "desc": "Set Time(hour)",
+          "address": "0xFFA20E"
+        },
+        {
+          "code": "FFA20E:0000",
+          "desc": "Set time(minutes)",
+          "address": "0xFFA20E"
+        },
+        {
+          "code": "FFA258:0000",
+          "desc": "Character Modifier",
+          "address": "0xFFA258"
+        },
+        {
+          "code": "FFA262:0099",
+          "desc": "Fake Have Tons Of Money",
+          "address": "0xFFA262"
+        },
+        {
+          "code": "FFA262:0099",
+          "desc": "Fake Have Tons Of Money",
+          "address": "0xFFA262"
+        },
+        {
+          "code": "FFA264:0099",
+          "desc": "Fake Have Tons Of Money",
+          "address": "0xFFA264"
+        },
+        {
+          "code": "FFA264:0099",
+          "desc": "Fake Have Tons Of Money",
+          "address": "0xFFA264"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

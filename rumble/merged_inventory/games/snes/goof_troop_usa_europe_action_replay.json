@@ -1,0 +1,29 @@
+{
+  "system": "snes",
+  "normalized_title": "gooftroop",
+  "display_name": "Goof Troop (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Goof Troop (USA)",
+    "Goof Troop (USA, Europe) (Action Replay)",
+    "Goof Troop (USA, Europe) (Game Genie)",
+    "Goof Troop"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Goof Troop (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 4,
+      "mk3_label": "GOOF TROOP"
+    }
+  },
+  "recommended_primary_source": "action_replay_mk_iii",
+  "notes": [
+    "SNES built-in cheat count present, but raw codes are not machine-readable here."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "princeofpersia2shadowflame",
+  "display_name": "Prince of Persia 2 - The Shadow _ the Flame (USA) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Prince of Persia 2 - The Shadow _ the Flame (USA) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E095703",
+          "desc": "Infinite Health",
+          "address": "0x7E0957"
+        },
+        {
+          "code": "7E095900",
+          "desc": "Enemies Can't Hit You",
+          "address": "0x7E0959"
+        },
+        {
+          "code": "7E0B9899",
+          "desc": "Always Have 99 Minutes Left",
+          "address": "0x7E0B98"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

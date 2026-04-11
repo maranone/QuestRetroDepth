@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "berenstainbearscampingadventure",
+  "display_name": "Berenstain Bears' Camping Adventure, The (USA) (Action Replay)",
+  "aliases": [
+    "Berenstain Bears' Camping Adventure, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Berenstain Bears' Camping Adventure, The (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFAEDA:000C",
+          "desc": "Infinite Hearts",
+          "address": "0xFFAEDA"
+        },
+        {
+          "code": "FFA19A:0099",
+          "desc": "Infinite White Crystals",
+          "address": "0xFFA19A"
+        },
+        {
+          "code": "FFA1A2:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFA1A2"
+        },
+        {
+          "code": "FFA18F:0010",
+          "desc": "1 Hit Invincible",
+          "address": "0xFFA18F"
+        },
+        {
+          "code": "FFE0C6:000C",
+          "desc": "Infinite Hearts Fake",
+          "address": "0xFFE0C6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

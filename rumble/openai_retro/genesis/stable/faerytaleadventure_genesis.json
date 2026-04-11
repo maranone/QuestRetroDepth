@@ -1,0 +1,55 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "FaeryTaleAdventure",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "third_party\\openai-retro\\retro\\data\\stable\\FaeryTaleAdventure-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "FaeryTaleAdventure-Genesis"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "name": "bravery",
+      "meta": {
+        "address": 16773567,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "kindness",
+      "meta": {
+        "address": 16773571,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "luck",
+      "meta": {
+        "address": 16773569,
+        "type": "|i1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "vitality",
+      "meta": {
+        "address": 16754063,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "wealth",
+      "meta": {
+        "address": 16773572,
+        "type": ">u2"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

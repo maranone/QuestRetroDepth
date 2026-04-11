@@ -1,0 +1,72 @@
+{
+  "system": "snes",
+  "normalized_title": "ganpurugunmansproof",
+  "display_name": "Ganpuru - Gunman's Proof (Japan) (Action Replay)",
+  "aliases": [
+    "Ganpuru - Gunman's Proof (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ganpuru - Gunman's Proof (Japan).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 10,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E0CA010",
+          "desc": "Infinite Health",
+          "address": "0x7E0CA0"
+        },
+        {
+          "code": "7E0CB509",
+          "desc": "Infinite Lives",
+          "address": "0x7E0CB5"
+        },
+        {
+          "code": "7E6862FF",
+          "desc": "Infinite Gold",
+          "address": "0x7E6862"
+        },
+        {
+          "code": "7E0C9C01",
+          "desc": "Infinite Firecracker Type 1",
+          "address": "0x7E0C9C"
+        },
+        {
+          "code": "7E0C9C02",
+          "desc": "Infinite Firecracker Type 2",
+          "address": "0x7E0C9C"
+        },
+        {
+          "code": "7E0CA0FF",
+          "desc": "Infinite Health",
+          "address": "0x7E0CA0"
+        },
+        {
+          "code": "7E0C9899",
+          "desc": "Infinite Money",
+          "address": "0x7E0C98"
+        },
+        {
+          "code": "7E0C9999",
+          "desc": "Infinite Money",
+          "address": "0x7E0C99"
+        },
+        {
+          "code": "7E0C9A00",
+          "desc": "Infinite Money",
+          "address": "0x7E0C9A"
+        },
+        {
+          "code": "7E0C9B00",
+          "desc": "Infinite Money",
+          "address": "0x7E0C9B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

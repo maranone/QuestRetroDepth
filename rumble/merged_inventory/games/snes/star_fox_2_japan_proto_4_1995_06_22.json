@@ -1,0 +1,34 @@
+{
+  "system": "snes",
+  "normalized_title": "starfox2",
+  "display_name": "Star Fox 2 (Japan) (Proto 4) (1995-06-22)",
+  "aliases": [
+    "Star Fox 2 (Japan) (Action Replay)",
+    "Star Fox 2 (Japan) (Proto 4) (1995-06-22)",
+    "Star Fox 2 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Star Fox 2 (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7EB22820",
+          "desc": "Infinite Sheilds",
+          "address": "0x7EB228"
+        },
+        {
+          "code": "7EB22C09",
+          "desc": "Infinite Items",
+          "address": "0x7EB22C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

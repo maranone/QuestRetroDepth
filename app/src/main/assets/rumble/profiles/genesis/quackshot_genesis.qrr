@@ -1,0 +1,9 @@
+game_name=Quack Shot (Rumbles)
+game_key=QuackShot-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ff8f96	damage_taken	0xFF8F96	2	int	big	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff8f96	death	0xFF8F96	2	int	big	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ff8f99	life_lost	0xFF8F99	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff8f99	life_gained	0xFF8F99	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ffef34	score	0xFFEF34	4	uint	big	prev < curr	0.8	1	right:0.350:60

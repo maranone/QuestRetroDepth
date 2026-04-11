@@ -1,0 +1,33 @@
+{
+  "system": "snes",
+  "normalized_title": "superprobotectoralienrebels",
+  "display_name": "Super Probotector - Alien Rebels (Europe) (Action Replay)",
+  "aliases": [
+    "Super Probotector - Alien Rebels (Europe) (Game Genie)",
+    "Super Probotector - Alien Rebels (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Probotector - Alien Rebels (Europe).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E1C0001",
+          "desc": "Enable sound test",
+          "address": "0x7E1C00"
+        },
+        {
+          "code": "7E1C0601",
+          "desc": "Enable 30 lives cheat",
+          "address": "0x7E1C06"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

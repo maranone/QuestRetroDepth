@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "dragonballzsupersaiyadensetsuteng099finaldragonballztranslations",
+  "display_name": "Dragon Ball Z - Super Saiya Densetsu (J) (V1.1) [T-Eng0.99Final_DragonballZ Translations]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Dragon Ball Z - Super Saiya Densetsu (J) (V1.1) [T-Eng0.99Final_DragonballZ Translations].cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E050000",
+          "desc": "Change Character Fighting Within Story Mode",
+          "address": "0x7E0500"
+        },
+        {
+          "code": "7E1C1E00",
+          "desc": "Change Character Fighting Within Story Mode",
+          "address": "0x7E1C1E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

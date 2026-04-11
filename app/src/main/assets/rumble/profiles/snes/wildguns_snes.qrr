@@ -1,0 +1,6 @@
+game_name=WildGuns
+game_key=WildGuns-Snes
+system=snes
+integration_tier=manual
+trigger	score_0_1fd0	score	0x7E1FD0	1	uint	native	prev < curr	0.7	1	left:0.300:80
+trigger	score_2_1fd4	score	0x7E1FD4	1	uint	native	prev < curr	0.7	1	left:0.300:80

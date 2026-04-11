@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "warpspeed",
+  "display_name": "Warpspeed (USA) (Action Replay)",
+  "aliases": [
+    "WarpSpeed (USA, Europe) (Unl)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\WarpSpeed (USA, Europe) (Unl).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FFDEAA:0000",
+          "desc": "No Computer Damage",
+          "address": "0xFFDEAA"
+        },
+        {
+          "code": "FFDEAC:0000",
+          "desc": "No Engine Damage",
+          "address": "0xFFDEAC"
+        },
+        {
+          "code": "FFDEAE:0000",
+          "desc": "No Shield Damage",
+          "address": "0xFFDEAE"
+        },
+        {
+          "code": "FFDEB0:0000",
+          "desc": "No Weapons Damage",
+          "address": "0xFFDEB0"
+        },
+        {
+          "code": "FFDEB2:0000",
+          "desc": "No Missle Damage",
+          "address": "0xFFDEB2"
+        },
+        {
+          "code": "FFEA7E:9999",
+          "desc": "Max Enemies Killed",
+          "address": "0xFFEA7E"
+        },
+        {
+          "code": "FFEA7C:000B",
+          "desc": "Highest Rank",
+          "address": "0xFFEA7C"
+        },
+        {
+          "code": "FFEA94:00CC",
+          "desc": "Infinite Energy",
+          "address": "0xFFEA94"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

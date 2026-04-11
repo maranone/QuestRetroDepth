@@ -1,0 +1,58 @@
+{
+  "system": "genesis",
+  "normalized_title": "daffyduckinhollywood",
+  "display_name": "Daffy Duck in Hollywood (Europe) (En,Fr,De,Es,It)",
+  "aliases": [
+    "Daffy Duck in Hollywood (Europe) (Beta)",
+    "Daffy Duck in Hollywood (Europe) (En,Fr,De,Es,It)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Daffy Duck in Hollywood (Europe) (En,Fr,De,Es,It).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF2CDA:0003",
+          "desc": "Infinite Energy",
+          "address": "0xFF2CDA"
+        },
+        {
+          "code": "FF2CCC:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF2CCC"
+        },
+        {
+          "code": "FF2D9E:0099",
+          "desc": "Infinite Time",
+          "address": "0xFF2D9E"
+        },
+        {
+          "code": "FF0E82:00FF",
+          "desc": "Invincible (Flashes)",
+          "address": "0xFF0E82"
+        },
+        {
+          "code": "FFC0A2:00FF",
+          "desc": "Enabled Cheat Code Level Select/Infinite 99 time/Press Start On Map Levels",
+          "address": "0xFFC0A2"
+        },
+        {
+          "code": "FF2DBD:0009",
+          "desc": "Infinite Continue",
+          "address": "0xFF2DBD"
+        },
+        {
+          "code": "FFC08A:0040",
+          "desc": "Freeze Time Well Done-Enter Your Name",
+          "address": "0xFFC08A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

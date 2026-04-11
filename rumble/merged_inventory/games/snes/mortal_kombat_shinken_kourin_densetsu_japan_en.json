@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "mortalkombatshinkenkourindensetsu",
+  "display_name": "Mortal Kombat - Shinken Kourin Densetsu (Japan) (En)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Mortal Kombat - Shinken Kourin Densetsu (Japan) (En).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E04F9A1",
+          "desc": "P.1 Has Infinite Health",
+          "address": "0x7E04F9"
+        },
+        {
+          "code": "7E04FB00",
+          "desc": "P.2 Has No Health",
+          "address": "0x7E04FB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

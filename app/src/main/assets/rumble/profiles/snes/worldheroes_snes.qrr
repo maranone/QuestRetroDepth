@@ -1,0 +1,6 @@
+game_name=WorldHeroes
+game_key=WorldHeroes-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_107b	damage_taken	0x7E107B	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_1_117b	damage_taken	0x7E117B	1	uint	native	prev > curr	0.85	1	right:0.750:180

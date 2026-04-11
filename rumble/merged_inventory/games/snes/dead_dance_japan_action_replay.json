@@ -1,0 +1,118 @@
+{
+  "system": "snes",
+  "normalized_title": "deaddance",
+  "display_name": "Dead Dance (Japan) (Action Replay)",
+  "aliases": [
+    "Dead Dance (Japan)",
+    "Dead Dance"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Dead Dance (Japan).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 18,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "7E0F4E58",
+          "desc": "Infinite Health P1",
+          "address": "0x7E0F4E"
+        },
+        {
+          "code": "7E0F4F06",
+          "desc": "Powered Moves P1",
+          "address": "0x7E0F4F"
+        },
+        {
+          "code": "7E0FA758",
+          "desc": "Infinite Health P2",
+          "address": "0x7E0FA7"
+        },
+        {
+          "code": "7E0FA806",
+          "desc": "Powered Moves P2",
+          "address": "0x7E0FA8"
+        },
+        {
+          "code": "7E0B2799",
+          "desc": "Infinite Time",
+          "address": "0x7E0B27"
+        },
+        {
+          "code": "7E0F5000",
+          "desc": "P1 Character Modifier",
+          "address": "0x7E0F50"
+        },
+        {
+          "code": "7E0FA900",
+          "desc": "P2 Character Modifier",
+          "address": "0x7E0FA9"
+        },
+        {
+          "code": "7E00A100",
+          "desc": "Battleground Modifier",
+          "address": "0x7E00A1"
+        },
+        {
+          "code": "7E1F0000",
+          "desc": "Difficulty Modifier",
+          "address": "0x7E1F00"
+        },
+        {
+          "code": "7E00CE99",
+          "desc": "P1 999999 Score Modifier",
+          "address": "0x7E00CE"
+        },
+        {
+          "code": "7E00CF99",
+          "desc": "P1 999999 Score Modifier",
+          "address": "0x7E00CF"
+        },
+        {
+          "code": "7E00D099",
+          "desc": "P1 999999 Score Modifier",
+          "address": "0x7E00D0"
+        },
+        {
+          "code": "7E00D199",
+          "desc": "P2 999999 Score Modifier",
+          "address": "0x7E00D1"
+        },
+        {
+          "code": "7E00D299",
+          "desc": "P2 999999 Score Modifier",
+          "address": "0x7E00D2"
+        },
+        {
+          "code": "7E00D399",
+          "desc": "P2 999999 Score Modifier",
+          "address": "0x7E00D3"
+        },
+        {
+          "code": "7E0FAA01",
+          "desc": "Opponent Dummy",
+          "address": "0x7E0FAA"
+        },
+        {
+          "code": "7E0FA300",
+          "desc": "Opponent Reaction Modifier",
+          "address": "0x7E0FA3"
+        },
+        {
+          "code": "7E0D0B09",
+          "desc": "Go Straight To Character Ending After 1st Battle",
+          "address": "0x7E0D0B"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 8,
+      "mk3_label": "DEAD DANCE"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "system": "genesis",
+  "normalized_title": "atptourchampionshiptennis",
+  "display_name": "ATP Tour Championship Tennis (USA) (Action Replay)",
+  "aliases": [
+    "ATP Tour Championship Tennis (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\ATP Tour Championship Tennis (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF0060:0000",
+          "desc": "1P Score Modifier",
+          "address": "0xFF0060"
+        },
+        {
+          "code": "FF0060:0000",
+          "desc": "2P Score Modifier",
+          "address": "0xFF0060"
+        },
+        {
+          "code": "FFF18E:0001",
+          "desc": "Debug Menu (Options Menu)",
+          "address": "0xFFF18E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

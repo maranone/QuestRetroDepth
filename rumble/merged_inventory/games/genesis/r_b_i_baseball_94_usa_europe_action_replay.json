@@ -1,0 +1,55 @@
+{
+  "system": "genesis",
+  "normalized_title": "rbibaseball94actionreplay",
+  "display_name": "R.B.I. Baseball '94 (USA, Europe) Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\R.B.I. Baseball '94 (USA, Europe) Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FFD377:XX",
+          "desc": "Strikes Modifier",
+          "address": "0xFFD377"
+        },
+        {
+          "code": "FFD378:XX",
+          "desc": "Balls Modifier",
+          "address": "0xFFD378"
+        },
+        {
+          "code": "FFD379:XX",
+          "desc": "Outs Modifier",
+          "address": "0xFFD379"
+        },
+        {
+          "code": "FFCC42:XX",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFCC42"
+        },
+        {
+          "code": "FFCC43:XX",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFCC43"
+        },
+        {
+          "code": "FFD3E4:FF",
+          "desc": "Catcher Behind Batter Stats",
+          "address": "0xFFD3E4"
+        },
+        {
+          "code": "FFCDEC:FF",
+          "desc": "Infinite Stamina",
+          "address": "0xFFCDEC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

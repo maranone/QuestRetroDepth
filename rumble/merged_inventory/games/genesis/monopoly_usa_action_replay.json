@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "monopoly",
+  "display_name": "Monopoly (USA) (Action Replay)",
+  "aliases": [
+    "Monopoly (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Monopoly (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF84E4:270F",
+          "desc": "Infinite Money",
+          "address": "0xFF84E4"
+        },
+        {
+          "code": "FFFFE6:0000",
+          "desc": "Roll Modifier",
+          "address": "0xFFFFE6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

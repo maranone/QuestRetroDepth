@@ -1,0 +1,27 @@
+{
+  "system": "snes",
+  "normalized_title": "americanbattledome",
+  "display_name": "American Battle Dome (Japan) (Action Replay)",
+  "aliases": [
+    "American Battle Dome (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\American Battle Dome (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "7E18875A",
+          "desc": "Infinite Time",
+          "address": "0x7E1887"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

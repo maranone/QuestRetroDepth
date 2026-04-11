@@ -1,0 +1,66 @@
+{
+  "system": "genesis",
+  "normalized_title": "asterixandgreatrescue",
+  "display_name": "Asterix and the Great Rescue (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Asterix and the Great Rescue (Europe) (En,Fr,De,Es,It)",
+    "Asterix and the Great Rescue (USA)",
+    "Asterix and the Great Rescue (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\asterixandthegreatrescue_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFAABF",
+        "0xFFAAC7",
+        "0xFFAAC9"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AsterixAndTheGreatRescue-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFAAC9",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFAAC7",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFAABF",
+          "type": ">d4"
+        },
+        {
+          "name": "time",
+          "address": "0xFFABAE",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Asterix and the Great Rescue (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

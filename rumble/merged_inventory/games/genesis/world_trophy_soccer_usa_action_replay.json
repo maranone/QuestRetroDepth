@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "worldtrophysoccer",
+  "display_name": "World Trophy Soccer (USA) (Action Replay)",
+  "aliases": [
+    "World Trophy Soccer (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\World Trophy Soccer (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF14CE:0000",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFF14CE"
+        },
+        {
+          "code": "FF14D0:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFF14D0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

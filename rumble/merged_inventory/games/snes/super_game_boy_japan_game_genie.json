@@ -1,0 +1,147 @@
+{
+  "system": "snes",
+  "normalized_title": "supergameboy",
+  "display_name": "Super Game Boy (Japan) (Game Genie)",
+  "aliases": [
+    "Super Game Boy (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Game Boy (Japan).cht",
+      "total_cheat_rows": 37,
+      "raw_entry_count": 45,
+      "distinct_address_count": 45,
+      "sample_raw_entries": [
+        {
+          "code": "7E0C1F00",
+          "desc": "Controller Modifier",
+          "address": "0x7E0C1F"
+        },
+        {
+          "code": "7EC200E9",
+          "desc": "See An Unused Star Sprite Upon Entering A Menu",
+          "address": "0x7EC200"
+        },
+        {
+          "code": "7EC006E2",
+          "desc": "See An Unused Star Sprite Upon Entering A Menu",
+          "address": "0x7EC006"
+        },
+        {
+          "code": "7E002598",
+          "desc": "Screen Savers Never Start",
+          "address": "0x7E0025"
+        },
+        {
+          "code": "7EC01200",
+          "desc": "Enhanced Icon Sprite Mod",
+          "address": "0x7EC012"
+        },
+        {
+          "code": "7EC013D8",
+          "desc": "Force Enhanced Icon To Face You",
+          "address": "0x7EC013"
+        },
+        {
+          "code": "7E0C4300",
+          "desc": "Infinite Time To Enter Menu",
+          "address": "0x7E0C43"
+        },
+        {
+          "code": "7E018403",
+          "desc": "Disables First Drawn Dots In Graffiti Editor",
+          "address": "0x7E0184"
+        },
+        {
+          "code": "7E018701",
+          "desc": "Use Selected Palete Curser For Painting",
+          "address": "0x7E0187"
+        },
+        {
+          "code": "7E02FA07",
+          "desc": "Resets All Ram In Super Game Boy Cart",
+          "address": "0x7E02FA"
+        },
+        {
+          "code": "7E0C0500",
+          "desc": "Selected Palette Modifier",
+          "address": "0x7E0C05"
+        },
+        {
+          "code": "7E0C4D01",
+          "desc": "Custom Palette Enabled Modifier",
+          "address": "0x7E0C4D"
+        },
+        {
+          "code": "7E0C4E01",
+          "desc": "Custom Border Enabled Modifier",
+          "address": "0x7E0C4E"
+        },
+        {
+          "code": "7EC90A00",
+          "desc": "Selected Palette is Purely Random",
+          "address": "0x7EC90A"
+        },
+        {
+          "code": "7EC90100",
+          "desc": "Paint Sucker Palette Modifier",
+          "address": "0x7EC901"
+        },
+        {
+          "code": "7E0F4F00",
+          "desc": "Camera Type Modifier",
+          "address": "0x7E0F4F"
+        },
+        {
+          "code": "7ECC0810",
+          "desc": "Custom Palette Password Modifier [0000-0000-0000]",
+          "address": "0x7ECC08"
+        },
+        {
+          "code": "7ECC0910",
+          "desc": "Custom Palette Password Modifier [0000-0000-0000]",
+          "address": "0x7ECC09"
+        },
+        {
+          "code": "7ECC0A10",
+          "desc": "Custom Palette Password Modifier [0000-0000-0000]",
+          "address": "0x7ECC0A"
+        },
+        {
+          "code": "7ECC0B10",
+          "desc": "Custom Palette Password Modifier [0000-0000-0000]",
+          "address": "0x7ECC0B"
+        },
+        {
+          "code": "7ECC0C10",
+          "desc": "Custom Palette Password Modifier [0000-0000-0000]",
+          "address": "0x7ECC0C"
+        },
+        {
+          "code": "7ECC0D10",
+          "desc": "Custom Palette Password Modifier [0000-0000-0000]",
+          "address": "0x7ECC0D"
+        },
+        {
+          "code": "7ECC0E10",
+          "desc": "Custom Palette Password Modifier [0000-0000-0000]",
+          "address": "0x7ECC0E"
+        },
+        {
+          "code": "7ECC0F10",
+          "desc": "Custom Palette Password Modifier [0000-0000-0000]",
+          "address": "0x7ECC0F"
+        },
+        {
+          "code": "7ECC1010",
+          "desc": "Custom Palette Password Modifier [0000-0000-0000]",
+          "address": "0x7ECC10"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

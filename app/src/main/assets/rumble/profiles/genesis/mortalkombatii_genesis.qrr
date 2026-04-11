@@ -1,0 +1,7 @@
+game_name=Mortal Kombat II (World) (Action Replay)
+game_key=MortalKombatII-Genesis
+system=genesis
+integration_tier=stable
+trigger	enemy_defeated_enemy_health_ffb713	enemy_defeated	0xFFB713	1	uint	native	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_ffb623	damage_taken	0xFFB623	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffb623	death	0xFFB623	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

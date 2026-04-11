@@ -1,0 +1,44 @@
+{
+  "system": "snes",
+  "normalized_title": "swatkatsradicalsquadron",
+  "display_name": "SWAT Kats - The Radical Squadron (USA) (Action Replay)",
+  "aliases": [
+    "SWAT Kats - The Radical Squadron (USA) (Action Replay)",
+    "SWAT Kats - The Radical Squadron (USA) (Game Genie)",
+    "SWAT Kats - The Radical Squadron (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\SWAT Kats - The Radical Squadron (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E19F009",
+          "desc": "Infinite Lives",
+          "address": "0x7E19F0"
+        },
+        {
+          "code": "7E1A3641",
+          "desc": "Infinite Health",
+          "address": "0x7E1A36"
+        },
+        {
+          "code": "7E1A6000",
+          "desc": "Coins Modifier",
+          "address": "0x7E1A60"
+        },
+        {
+          "code": "7E1B653B",
+          "desc": "Infinite Time",
+          "address": "0x7E1B65"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

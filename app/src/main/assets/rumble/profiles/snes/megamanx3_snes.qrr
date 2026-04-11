@@ -1,0 +1,5 @@
+game_name=MegaManX3
+game_key=MegaManX3-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_9ff	damage_taken	0x7E09FF	1	uint	native	prev > curr	0.85	1	left:0.750:180

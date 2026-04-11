@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "jammit",
+  "display_name": "Jammit (USA) (Action Replay)",
+  "aliases": [
+    "Jammit (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Jammit (USA).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF342A:0021",
+          "desc": "Player 1 Score Modifier",
+          "address": "0xFF342A"
+        },
+        {
+          "code": "FF342A:0000",
+          "desc": "Player 2 Score Modifier",
+          "address": "0xFF342A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "system": "genesis",
+  "normalized_title": "minnesotafatspoollegend",
+  "display_name": "Minnesota Fats - Pool Legend (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Minnesota Fats - Pool Legend (USA).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FFA8EB:0001",
+          "desc": "Always Player 1's turn",
+          "address": "0xFFA8EB"
+        },
+        {
+          "code": "FFA20F:000A",
+          "desc": "Player 1 Tracking Lines Modifier",
+          "address": "0xFFA20F"
+        },
+        {
+          "code": "FFA903:0000",
+          "desc": "Music Modifier",
+          "address": "0xFFA903"
+        },
+        {
+          "code": "FFA20D:000A",
+          "desc": "CPU Tracking Lines Modifier",
+          "address": "0xFFA20D"
+        },
+        {
+          "code": "FFA211:000A",
+          "desc": "Player 2 Tracking Lines Modifier",
+          "address": "0xFFA211"
+        },
+        {
+          "code": "FFA20B:0002",
+          "desc": "Ball numbers are always displayed even during shots",
+          "address": "0xFFA20B"
+        },
+        {
+          "code": "FFA98F:0000",
+          "desc": "Opponent Modifier",
+          "address": "0xFFA98F"
+        },
+        {
+          "code": "FFA8E5:0000",
+          "desc": "Game Type Modifier",
+          "address": "0xFFA8E5"
+        },
+        {
+          "code": "FFAF61:00BE",
+          "desc": "Shot Power Modifier",
+          "address": "0xFFAF61"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

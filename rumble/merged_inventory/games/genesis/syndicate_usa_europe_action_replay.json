@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "syndicate",
+  "display_name": "Syndicate (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Syndicate (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Syndicate (USA, Europe).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF052E:00FF",
+          "desc": "Have Tons of Money",
+          "address": "0xFF052E"
+        },
+        {
+          "code": "FF53A6:0010",
+          "desc": "Almost infinite health 1st agent (Red)",
+          "address": "0xFF53A6"
+        },
+        {
+          "code": "FF53FE:0010",
+          "desc": "Almost infinite health 2nd agent (Green)",
+          "address": "0xFF53FE"
+        },
+        {
+          "code": "FF5456:0010",
+          "desc": "Almost infinite health 3rd agent (Blue)",
+          "address": "0xFF5456"
+        },
+        {
+          "code": "FF54AE:0010",
+          "desc": "Almost infinite health 4th agent (White)",
+          "address": "0xFF54AE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

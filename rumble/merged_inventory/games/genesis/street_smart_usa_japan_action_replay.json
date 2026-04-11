@@ -1,0 +1,89 @@
+{
+  "system": "genesis",
+  "normalized_title": "streetsmart",
+  "display_name": "Street Smart (USA, Japan) (Action Replay)",
+  "aliases": [
+    "Street Smart (Japan, USA)",
+    "Street Smart (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\streetsmart_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF904B",
+        "0xFF9050"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\StreetSmart-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF904B",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF9050",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Street Smart (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF9041:63",
+          "desc": "Infinite Health P1",
+          "address": "0xFF9041"
+        },
+        {
+          "code": "FF904B:09",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF904B"
+        },
+        {
+          "code": "FF9241:00",
+          "desc": "No Health P2/CPU",
+          "address": "0xFF9241"
+        },
+        {
+          "code": "FFF123:89",
+          "desc": "Infinite Time",
+          "address": "0xFFF123"
+        },
+        {
+          "code": "FFF411:09",
+          "desc": "Infinite Bonus Points P1",
+          "address": "0xFFF411"
+        },
+        {
+          "code": "FF9049:09",
+          "desc": "Infinite Credits (Continues) P1",
+          "address": "0xFF9049"
+        },
+        {
+          "code": "FFF02D:XX",
+          "desc": "Stake Modifier (Hundreds Digit)",
+          "address": "0xFFF02D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

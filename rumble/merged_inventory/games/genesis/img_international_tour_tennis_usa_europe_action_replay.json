@@ -1,0 +1,72 @@
+{
+  "system": "genesis",
+  "normalized_title": "imginternationaltourtennis",
+  "display_name": "IMG International Tour Tennis (USA, Europe) (Action Replay)",
+  "aliases": [
+    "IMG International Tour Tennis (USA, Europe) (Action Replay)",
+    "IMG International Tour Tennis (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\imginternationaltourtennis_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFF8F9F"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\IMGInternationalTourTennis-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "games_won",
+          "address": "0xFF8FA7",
+          "type": "|u1"
+        },
+        {
+          "name": "opponent_games_won",
+          "address": "0xFF8FB7",
+          "type": "|u1"
+        },
+        {
+          "name": "opponent_score",
+          "address": "0xFF8FA1",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF8F9F",
+          "type": "|i1"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\IMG International Tour Tennis (USA, Europe).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF8FA0:0000",
+          "desc": "Your Score Modifier (P1)",
+          "address": "0xFF8FA0"
+        },
+        {
+          "code": "FF8F9E:0000",
+          "desc": "Opponent Score Modifier (P2/CPU)",
+          "address": "0xFF8F9E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

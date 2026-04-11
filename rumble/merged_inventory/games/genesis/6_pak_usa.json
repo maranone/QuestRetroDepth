@@ -1,0 +1,60 @@
+{
+  "system": "genesis",
+  "normalized_title": "6pak",
+  "display_name": "6-Pak (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\6-Pak (USA).cht",
+      "total_cheat_rows": 64,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FFC843:0000",
+          "desc": "Top Gem Modifier",
+          "address": "0xFFC843"
+        },
+        {
+          "code": "FFC846:0000",
+          "desc": "Top Gem Modifier",
+          "address": "0xFFC846"
+        },
+        {
+          "code": "FFC844:0000",
+          "desc": "Middle Gem Modifier",
+          "address": "0xFFC844"
+        },
+        {
+          "code": "FFC847:0000",
+          "desc": "Middle Gem Modifier",
+          "address": "0xFFC847"
+        },
+        {
+          "code": "FFC845:0000",
+          "desc": "Bottom Gem Modifier",
+          "address": "0xFFC845"
+        },
+        {
+          "code": "FFC848:0000",
+          "desc": "Bottom Gem Modifier",
+          "address": "0xFFC848"
+        },
+        {
+          "code": "FFFF21:0009",
+          "desc": "Infinite Specials - Player 1",
+          "address": "0xFFFF21"
+        },
+        {
+          "code": "FFFE21:04FF",
+          "desc": "Always have a massive amount of Rings",
+          "address": "0xFFFE21"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

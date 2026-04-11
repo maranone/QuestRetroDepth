@@ -1,0 +1,60 @@
+{
+  "system": "snes",
+  "normalized_title": "blackthorne",
+  "display_name": "Blackthorne (USA) (Action Replay)",
+  "aliases": [
+    "Blackthorne (USA) (Action Replay)",
+    "Blackthorne (USA) (Game Genie)",
+    "Blackthorne (USA)",
+    "Blackthorne"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Blackthorne (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E0FC518",
+          "desc": "Infinite Health",
+          "address": "0x7E0FC5"
+        },
+        {
+          "code": "7E187A03",
+          "desc": "3rd Slot Item Mod",
+          "address": "0x7E187A"
+        },
+        {
+          "code": "7E187600",
+          "desc": "Item Modifier",
+          "address": "0x7E1876"
+        },
+        {
+          "code": "7E021C02",
+          "desc": "Have Machinegun",
+          "address": "0x7E021C"
+        },
+        {
+          "code": "7E101544",
+          "desc": "Invincible To Guns &amp; Explosions",
+          "address": "0x7E1015"
+        },
+        {
+          "code": "7E101600",
+          "desc": "Invincible To Guns &amp; Explosions",
+          "address": "0x7E1016"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 9,
+      "mk3_label": "BLACKTHORNE"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

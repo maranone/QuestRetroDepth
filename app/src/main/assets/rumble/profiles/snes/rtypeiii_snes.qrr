@@ -1,0 +1,7 @@
+game_name=R-Type III (USA, Europe) (Action Replay) (diff)
+game_key=RTypeIII-Snes
+system=snes
+integration_tier=stable
+trigger	life_lost_lives_03b7	life_lost	0x7E03B7	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_03b7	life_gained	0x7E03B7	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_03ac	score	0x7E03AC	6	nibble	big	prev < curr	0.8	1	right:0.350:60

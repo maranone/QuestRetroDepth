@@ -1,0 +1,6 @@
+game_name=MazinSaga
+game_key=MazinSaga-Genesis
+system=genesis
+integration_tier=manual
+trigger	damage_taken_0_cdec	damage_taken	0xFFCDEC	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	enemy_defeated_1_f28c	enemy_defeated	0xFFF28C	1	uint	native	prev != curr	0.7	1	left:0.510:100

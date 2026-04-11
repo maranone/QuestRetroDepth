@@ -1,0 +1,173 @@
+{
+  "system": "genesis",
+  "normalized_title": "mightymorphinpowerrangers",
+  "display_name": "Mighty Morphin Power Rangers (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Mighty Morphin Power Rangers (Europe)",
+    "Mighty Morphin Power Rangers (USA)",
+    "Mighty Morphin Power Rangers (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\mightymorphinpowerrangers_genesis.json",
+      "trigger_count": 2,
+      "field_names": [
+        "health"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFD080"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MightyMorphinPowerRangers-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "enemyHealth",
+          "address": "0xFFD200",
+          "type": "|i1"
+        },
+        {
+          "name": "health",
+          "address": "0xFFD080",
+          "type": "|i1"
+        },
+        {
+          "name": "time",
+          "address": "0xFFC110",
+          "type": "|d1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mighty Morphin Power Rangers (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 23,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "FFC110:99",
+          "desc": "Infinite Time",
+          "address": "0xFFC110"
+        },
+        {
+          "code": "FFD080:60",
+          "desc": "Infinite Health P1",
+          "address": "0xFFD080"
+        },
+        {
+          "code": "FFD080:01",
+          "desc": "1-Hit Death P1",
+          "address": "0xFFD080"
+        },
+        {
+          "code": "FFD082:36",
+          "desc": "Max Special Bar P1",
+          "address": "0xFFD082"
+        },
+        {
+          "code": "FFD082:00",
+          "desc": "No Special P1",
+          "address": "0xFFD082"
+        },
+        {
+          "code": "FFA091:14",
+          "desc": "P1 Is Always Green Ranger (Scenario Mode)",
+          "address": "0xFFA091"
+        },
+        {
+          "code": "FFD200:60",
+          "desc": "Infinite Health P2",
+          "address": "0xFFD200"
+        },
+        {
+          "code": "FFD200:01",
+          "desc": "1-Hit Death P2",
+          "address": "0xFFD200"
+        },
+        {
+          "code": "FFD202:36",
+          "desc": "Max Special Bar P2",
+          "address": "0xFFD202"
+        },
+        {
+          "code": "FFD202:00",
+          "desc": "No Special P2",
+          "address": "0xFFD202"
+        },
+        {
+          "code": "FFD007:01",
+          "desc": "Hyper Mode P1",
+          "address": "0xFFD007"
+        },
+        {
+          "code": "FFD187:01",
+          "desc": "Hyper Mode P2",
+          "address": "0xFFD187"
+        },
+        {
+          "code": "FFD049:01",
+          "desc": "P1 Can Do Mid-Air Moves",
+          "address": "0xFFD049"
+        },
+        {
+          "code": "FFD089:FC",
+          "desc": "P1 Can't Be Hit",
+          "address": "0xFFD089"
+        },
+        {
+          "code": "FFD1C9:01",
+          "desc": "P2 Can Do Mid-Air Moves",
+          "address": "0xFFD1C9"
+        },
+        {
+          "code": "FFD209:FC",
+          "desc": "P2 Can't Be Hit",
+          "address": "0xFFD209"
+        },
+        {
+          "code": "FFA059:01",
+          "desc": "Evil Green Ranger Unlocked Cheat On (2 Player Battle Modifier)",
+          "address": "0xFFA059"
+        },
+        {
+          "code": "FFD03B:01",
+          "desc": "Quick Attacks P1",
+          "address": "0xFFD03B"
+        },
+        {
+          "code": "FFD1BB:01",
+          "desc": "Quick Attacks P2",
+          "address": "0xFFD1BB"
+        },
+        {
+          "code": "FFD041:A0",
+          "desc": "Double Image P1",
+          "address": "0xFFD041"
+        },
+        {
+          "code": "FFD1C1:A0",
+          "desc": "Double Image P2",
+          "address": "0xFFD1C1"
+        },
+        {
+          "code": "FFD037:01",
+          "desc": "Transparent P1",
+          "address": "0xFFD037"
+        },
+        {
+          "code": "FFD1B7:01",
+          "desc": "Transparent P2",
+          "address": "0xFFD1B7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "system": "snes",
+  "normalized_title": "luckyluke",
+  "display_name": "Lucky Luke (Europe) (Action Replay)",
+  "aliases": [
+    "Lucky Luke (Europe) (En,Fr,De,Es)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Lucky Luke (Europe) (En,Fr,De,Es).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E05A009",
+          "desc": "Infinite Lives",
+          "address": "0x7E05A0"
+        },
+        {
+          "code": "7E05A209",
+          "desc": "Infinite Rounds",
+          "address": "0x7E05A2"
+        },
+        {
+          "code": "7E052647",
+          "desc": "Walk Through Enemies",
+          "address": "0x7E0526"
+        },
+        {
+          "code": "7E04F600",
+          "desc": "Jump in Midair",
+          "address": "0x7E04F6"
+        },
+        {
+          "code": "7E052501",
+          "desc": "Speed up Running / Walking animation",
+          "address": "0x7E0525"
+        },
+        {
+          "code": "7E04C500",
+          "desc": "Music / Event Mod",
+          "address": "0x7E04C5"
+        },
+        {
+          "code": "7E059F04",
+          "desc": "Energy",
+          "address": "0x7E059F"
+        },
+        {
+          "code": "7E05A309",
+          "desc": "Bomb",
+          "address": "0x7E05A3"
+        },
+        {
+          "code": "7E05A106",
+          "desc": "Shot",
+          "address": "0x7E05A1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

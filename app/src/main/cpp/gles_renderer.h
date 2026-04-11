@@ -99,11 +99,13 @@ public:
                     float canvas_y  = 0.0f,
                     float canvas_az = 0.0f,
                     float canvas_el = 0.0f,
+                    float canvas_scale = 1.0f,
                     const OverlayInfo* overlay = nullptr,
                     float bg_r = 0.01f,
                     float bg_g = 0.01f,
                     float bg_b = 0.02f,
-                    float bg_a = 1.0f);
+                    float bg_a = 1.0f,
+                    bool passthrough_alpha = false);
 
     bool ok() const { return m_program != 0; }
 
@@ -147,7 +149,9 @@ private:
     GLint m_u_canvas_y   = -1;
     GLint m_u_canvas_az  = -1;
     GLint m_u_canvas_el  = -1;
+    GLint m_u_canvas_scale = -1;
     GLint m_u_solid_stack = -1;
+    GLint m_u_force_opaque_alpha = -1;
 
     GLint m_i_u_vp           = -1;
     GLint m_i_u_depth        = -1;
@@ -171,7 +175,9 @@ private:
     GLint m_i_u_canvas_y     = -1;
     GLint m_i_u_canvas_az    = -1;
     GLint m_i_u_canvas_el    = -1;
+    GLint m_i_u_canvas_scale = -1;
     GLint m_i_u_solid_stack  = -1;
+    GLint m_i_u_force_opaque_alpha = -1;
 
     GLint m_flat_u_vp    = -1;
     GLint m_flat_u_color = -1;

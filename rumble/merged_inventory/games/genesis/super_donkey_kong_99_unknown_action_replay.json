@@ -1,0 +1,25 @@
+{
+  "system": "genesis",
+  "normalized_title": "superdonkeykong99",
+  "display_name": "Super Donkey Kong 99 (Unknown) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Super Donkey Kong 99 (Unknown) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF00BF:99",
+          "desc": "Infinite Lives",
+          "address": "0xFF00BF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

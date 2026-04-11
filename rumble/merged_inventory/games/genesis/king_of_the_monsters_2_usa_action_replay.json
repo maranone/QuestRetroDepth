@@ -1,0 +1,199 @@
+{
+  "system": "genesis",
+  "normalized_title": "kingofmonsters2",
+  "display_name": "King of the Monsters 2 (USA) (Action Replay)",
+  "aliases": [
+    "King of the Monsters 2 (USA) (Action Replay)",
+    "King of the Monsters 2 (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\kingofthemonsters2_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF0528",
+        "0xFF0993"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KingOfTheMonsters2-Genesis-v0\\data.json",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "enemy_matches_won",
+          "address": "0xFF0533",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFF0993",
+          "type": "|u1"
+        },
+        {
+          "name": "matches_won",
+          "address": "0xFF0531",
+          "type": "|u1"
+        },
+        {
+          "name": "power",
+          "address": "0xFF098D",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF0528",
+          "type": ">d4"
+        },
+        {
+          "name": "time",
+          "address": "0xFF060F",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 6
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\King of the Monsters 2 (USA).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 26,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "FF0912:0000",
+          "desc": "Character Highlighter P1",
+          "address": "0xFF0912"
+        },
+        {
+          "code": "FF051E:0000",
+          "desc": "Character Modifier P1",
+          "address": "0xFF051E"
+        },
+        {
+          "code": "FF0522:0000",
+          "desc": "Character Modifier P2",
+          "address": "0xFF0522"
+        },
+        {
+          "code": "FF0526:0000",
+          "desc": "Stage Modifier",
+          "address": "0xFF0526"
+        },
+        {
+          "code": "FF060E:0063",
+          "desc": "Infinite Time",
+          "address": "0xFF060E"
+        },
+        {
+          "code": "FF0992:0080",
+          "desc": "Infinite Health P1",
+          "address": "0xFF0992"
+        },
+        {
+          "code": "FF0990:0080",
+          "desc": "Fake Infinite Health P1",
+          "address": "0xFF0990"
+        },
+        {
+          "code": "FF0B12:0000",
+          "desc": "1 Hit Kills P2",
+          "address": "0xFF0B12"
+        },
+        {
+          "code": "FF0B10:0000",
+          "desc": "Fake Infinite Health P2",
+          "address": "0xFF0B10"
+        },
+        {
+          "code": "FF0530:0000",
+          "desc": "Always Have 2 Rounds P1",
+          "address": "0xFF0530"
+        },
+        {
+          "code": "FF0532:0000",
+          "desc": "Rounds Won By P2 Modifier",
+          "address": "0xFF0532"
+        },
+        {
+          "code": "FF060D:000A",
+          "desc": "Freeze Time Continue",
+          "address": "0xFF060D"
+        },
+        {
+          "code": "FF051D:0002",
+          "desc": "Infinite Credits",
+          "address": "0xFF051D"
+        },
+        {
+          "code": "FFFF0F:0001",
+          "desc": "Enable Debug Mode Selection on Main Menu",
+          "address": "0xFFFF0F"
+        },
+        {
+          "code": "FFFF11:0001",
+          "desc": "Enable Watch Mode Selection on Main Menu",
+          "address": "0xFFFF11"
+        },
+        {
+          "code": "FF0993:0050",
+          "desc": "P1 Infinite Health",
+          "address": "0xFF0993"
+        },
+        {
+          "code": "FF0993:0000",
+          "desc": "P1 No Health",
+          "address": "0xFF0993"
+        },
+        {
+          "code": "FF098D:0002",
+          "desc": "P1 Max Power",
+          "address": "0xFF098D"
+        },
+        {
+          "code": "FF098D:0000",
+          "desc": "P1 Min Power",
+          "address": "0xFF098D"
+        },
+        {
+          "code": "FF0B13:0050",
+          "desc": "P2 Infinite Health",
+          "address": "0xFF0B13"
+        },
+        {
+          "code": "FF0B13:0000",
+          "desc": "P2 No Health",
+          "address": "0xFF0B13"
+        },
+        {
+          "code": "FF0B0D:0002",
+          "desc": "P2 Max Power",
+          "address": "0xFF0B0D"
+        },
+        {
+          "code": "FF0B0D:0000",
+          "desc": "P2 Min Power",
+          "address": "0xFF0B0D"
+        },
+        {
+          "code": "FF051D:0063",
+          "desc": "Infinite Credits",
+          "address": "0xFF051D"
+        },
+        {
+          "code": "FF060F:005A",
+          "desc": "Infinite Time",
+          "address": "0xFF060F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "pele",
+  "display_name": "Pele! (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Pele! (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Pele! (USA, Europe).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFDAF2:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFDAF2"
+        },
+        {
+          "code": "FFDAF2:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFDAF2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

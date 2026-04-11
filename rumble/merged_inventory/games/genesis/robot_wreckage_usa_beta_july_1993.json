@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "robotwreckage",
+  "display_name": "Robot Wreckage (USA) (Beta) (July, 1993)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Robot Wreckage (USA) (Beta) (July, 1993).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFAA36:0040",
+          "desc": "P1 Infinite Health",
+          "address": "0xFFAA36"
+        },
+        {
+          "code": "FFAAEA:0040",
+          "desc": "P2 Infinite Health",
+          "address": "0xFFAAEA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

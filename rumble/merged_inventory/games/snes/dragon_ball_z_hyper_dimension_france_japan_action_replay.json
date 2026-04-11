@@ -1,0 +1,44 @@
+{
+  "system": "snes",
+  "normalized_title": "dragonballzhyperdimension",
+  "display_name": "Dragon Ball Z - Hyper Dimension (France, Japan) (Action Replay)",
+  "aliases": [
+    "Dragon Ball Z - Hyper Dimension (France, Japan) (Action Replay)",
+    "Dragon Ball Z - Hyper Dimension (France, Japan) (Game Genie)",
+    "Dragon Ball Z - Hyper Dimension (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Dragon Ball Z - Hyper Dimension (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E1AFD03",
+          "desc": "Unlimited Continues",
+          "address": "0x7E1AFD"
+        },
+        {
+          "code": "7E1A8D00",
+          "desc": "Change Image",
+          "address": "0x7E1A8D"
+        },
+        {
+          "code": "7E1AFD03",
+          "desc": "Infinite Continues",
+          "address": "0x7E1AFD"
+        },
+        {
+          "code": "7E1AFD03",
+          "desc": "Some RAM Addresses",
+          "address": "0x7E1AFD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

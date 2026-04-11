@@ -1,0 +1,37 @@
+{
+  "system": "genesis",
+  "normalized_title": "bestofbestchampionshipkarate",
+  "display_name": "Best of the Best - Championship Karate (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Best of the Best - Championship Karate (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Best of the Best - Championship Karate (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF0BB7:FF",
+          "desc": "Infinite Health P1",
+          "address": "0xFF0BB7"
+        },
+        {
+          "code": "FF0BB8:00",
+          "desc": "No Health P2",
+          "address": "0xFF0BB8"
+        },
+        {
+          "code": "FFFEF1:00",
+          "desc": "Characters Are Stuck Together",
+          "address": "0xFFFEF1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

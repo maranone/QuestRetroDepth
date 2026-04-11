@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "johnmaddenfootball",
+  "display_name": "John Madden Football (USA, Europe) (Action Replay)",
+  "aliases": [
+    "John Madden Football (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\John Madden Football (USA, Europe).cht",
+      "total_cheat_rows": 68,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFAD88:0063",
+          "desc": "Infinite Time-Outs P1",
+          "address": "0xFFAD88"
+        },
+        {
+          "code": "FFAD62:0099",
+          "desc": "Infinite Time While Timed Out P1",
+          "address": "0xFFAD62"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "system": "genesis",
+  "normalized_title": "wwfraw",
+  "display_name": "WWF Raw (World) (Action Replay)",
+  "aliases": [
+    "WWF Raw (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\WWF Raw (World).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 26,
+      "distinct_address_count": 24,
+      "sample_raw_entries": [
+        {
+          "code": "FFF3FB:0001",
+          "desc": "WWF Raw Theme is heard during character selection instead of wrestler's themes",
+          "address": "0xFFF3FB"
+        },
+        {
+          "code": "FF964E:00A0",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF964E"
+        },
+        {
+          "code": "FF9650:00A0",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF9650"
+        },
+        {
+          "code": "FF964E:0000",
+          "desc": "Take More Damage P1",
+          "address": "0xFF964E"
+        },
+        {
+          "code": "FF9650:0000",
+          "desc": "Take More Damage P2",
+          "address": "0xFF9650"
+        },
+        {
+          "code": "FF9192:0000",
+          "desc": "Infinite Ring Out Time P1",
+          "address": "0xFF9192"
+        },
+        {
+          "code": "FF9194:0000",
+          "desc": "Infinite Ring Out Time P2",
+          "address": "0xFF9194"
+        },
+        {
+          "code": "FF919C:0000",
+          "desc": "P1 Can't Be Pinned",
+          "address": "0xFF919C"
+        },
+        {
+          "code": "FF919E:0000",
+          "desc": "P2 Can't Be Pinned",
+          "address": "0xFF919E"
+        },
+        {
+          "code": "FF971B:0000",
+          "desc": "Player 1 Modifier",
+          "address": "0xFF971B"
+        },
+        {
+          "code": "FF971D:0000",
+          "desc": "Player 2 Modifier",
+          "address": "0xFF971D"
+        },
+        {
+          "code": "FF971F:0000",
+          "desc": "Player 1's Partner(s) Modifier",
+          "address": "0xFF971F"
+        },
+        {
+          "code": "FF9721:0000",
+          "desc": "Player 2's Partner(s) Modifier",
+          "address": "0xFF9721"
+        },
+        {
+          "code": "FF9723:0000",
+          "desc": "5th Person Modifier",
+          "address": "0xFF9723"
+        },
+        {
+          "code": "FF9725:0000",
+          "desc": "6th Person Modifier",
+          "address": "0xFF9725"
+        },
+        {
+          "code": "FFF275:0006",
+          "desc": "Number of wrestlers to choose modifier",
+          "address": "0xFFF275"
+        },
+        {
+          "code": "FFF26B:0000",
+          "desc": "Player 1's 1st Partner Modifier",
+          "address": "0xFFF26B"
+        },
+        {
+          "code": "FFF26D:0000",
+          "desc": "Player 1's 2nd Partner Modifier",
+          "address": "0xFFF26D"
+        },
+        {
+          "code": "FFF26F:0000",
+          "desc": "Player 1's 3rd Partner Modifier",
+          "address": "0xFFF26F"
+        },
+        {
+          "code": "FFF271:0000",
+          "desc": "Player 1's 4th Partner Modifier",
+          "address": "0xFFF271"
+        },
+        {
+          "code": "FFF273:0000",
+          "desc": "Player 1's 5th Partner Modifier",
+          "address": "0xFFF273"
+        },
+        {
+          "code": "FFF57D:0000",
+          "desc": "Player 2's 1st Partner Modifier",
+          "address": "0xFFF57D"
+        },
+        {
+          "code": "FFF57F:0000",
+          "desc": "Player 2's 2nd Partner Modifier",
+          "address": "0xFFF57F"
+        },
+        {
+          "code": "FFF581:0000",
+          "desc": "Player 2's 3rd Partner Modifier",
+          "address": "0xFFF581"
+        },
+        {
+          "code": "FFF583:0000",
+          "desc": "Player 2's 4th Partner Modifier",
+          "address": "0xFFF583"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

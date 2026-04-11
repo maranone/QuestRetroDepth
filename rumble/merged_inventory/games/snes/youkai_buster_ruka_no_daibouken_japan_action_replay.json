@@ -1,0 +1,62 @@
+{
+  "system": "snes",
+  "normalized_title": "youkaibusterrukanodaibouken",
+  "display_name": "Youkai Buster - Ruka no Daibouken (Japan) (Action Replay)",
+  "aliases": [
+    "Youkai Buster - Ruka no Daibouken (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Youkai Buster - Ruka no Daibouken (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E0C7002",
+          "desc": "Untouchable",
+          "address": "0x7E0C70"
+        },
+        {
+          "code": "7E109909",
+          "desc": "Infinite Lives",
+          "address": "0x7E1099"
+        },
+        {
+          "code": "7E109D05",
+          "desc": "Infinite Health",
+          "address": "0x7E109D"
+        },
+        {
+          "code": "7E008E04",
+          "desc": "Full Suction Power",
+          "address": "0x7E008E"
+        },
+        {
+          "code": "7E109699",
+          "desc": "Freeze Timer",
+          "address": "0x7E1096"
+        },
+        {
+          "code": "7E0618FF",
+          "desc": "Rise into the air",
+          "address": "0x7E0618"
+        },
+        {
+          "code": "7E00A600",
+          "desc": "Keep sucking",
+          "address": "0x7E00A6"
+        },
+        {
+          "code": "7E109D03",
+          "desc": "Infinite Energy",
+          "address": "0x7E109D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

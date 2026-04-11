@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "ninjagaiden",
+  "display_name": "Ninja Gaiden (Japan) (Action Replay)",
+  "aliases": [
+    "Ninja Gaiden (Japan) (En) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ninja Gaiden (Japan) (En) (Proto).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FFC208:0009",
+          "desc": "Infinite Time (Second Digit)",
+          "address": "0xFFC208"
+        },
+        {
+          "code": "FF9054:0015",
+          "desc": "Infinite Health P1",
+          "address": "0xFF9054"
+        },
+        {
+          "code": "FFB500:0009",
+          "desc": "Can Hit From Anywhere With Kick Attack P1",
+          "address": "0xFFB500"
+        },
+        {
+          "code": "FFC020:0000",
+          "desc": "Level Modifier (00-11)",
+          "address": "0xFFC020"
+        },
+        {
+          "code": "FF905C:0003",
+          "desc": "Ninja Runs Funny",
+          "address": "0xFF905C"
+        },
+        {
+          "code": "FFC280:0005",
+          "desc": "Infinite Lives P1",
+          "address": "0xFFC280"
+        },
+        {
+          "code": "FFC363:0002",
+          "desc": "Freeze Time Continue",
+          "address": "0xFFC363"
+        },
+        {
+          "code": "FFC367:0003",
+          "desc": "Infinite Continue",
+          "address": "0xFFC367"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "supercaesarspalace",
+  "display_name": "Super Caesars Palace (USA) (Action Replay)",
+  "aliases": [
+    "Super Caesars Palace (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Caesars Palace (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E0C300F",
+          "desc": "Can Access all the High Roller Areas",
+          "address": "0x7E0C30"
+        },
+        {
+          "code": "7E188EE7",
+          "desc": "Infinite 999 Gold Chips",
+          "address": "0x7E188E"
+        },
+        {
+          "code": "7E188F03",
+          "desc": "Infinite 999 Gold Chips",
+          "address": "0x7E188F"
+        },
+        {
+          "code": "7E0C300A",
+          "desc": "Can Access All The High Roller Areas",
+          "address": "0x7E0C30"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

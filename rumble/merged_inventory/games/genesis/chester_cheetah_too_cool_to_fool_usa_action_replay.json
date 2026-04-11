@@ -1,0 +1,69 @@
+{
+  "system": "genesis",
+  "normalized_title": "chestercheetahtoocooltofool",
+  "display_name": "Chester Cheetah - Too Cool to Fool (USA) (Action Replay)",
+  "aliases": [
+    "Chester Cheetah - Too Cool to Fool (USA) (Action Replay)",
+    "Chester Cheetah - Too Cool to Fool (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\chestercheetahtoocooltofool_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFF81E",
+        "0xFFF821"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ChesterCheetahTooCoolToFool-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFF81E",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFF821",
+          "type": "|d1"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Chester Cheetah - Too Cool to Fool (USA).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFF81E:0005",
+          "desc": "Infinite Cheese Paws",
+          "address": "0xFFF81E"
+        },
+        {
+          "code": "FFF820:0099",
+          "desc": "Infinite White Paws",
+          "address": "0xFFF820"
+        },
+        {
+          "code": "FFB3FF:0001",
+          "desc": "Enable Kakusi Mode Program In Option",
+          "address": "0xFFB3FF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

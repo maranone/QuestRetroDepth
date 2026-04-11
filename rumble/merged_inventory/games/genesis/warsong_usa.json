@@ -1,0 +1,145 @@
+{
+  "system": "genesis",
+  "normalized_title": "warsong",
+  "display_name": "Warsong (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Warsong (USA).cht",
+      "total_cheat_rows": 74,
+      "raw_entry_count": 66,
+      "distinct_address_count": 42,
+      "sample_raw_entries": [
+        {
+          "code": "FFAEAE:00FF",
+          "desc": "Infinite Money $65535",
+          "address": "0xFFAEAE"
+        },
+        {
+          "code": "FFAEAF:00FF",
+          "desc": "Infinite Money $65535",
+          "address": "0xFFAEAF"
+        },
+        {
+          "code": "FF557E:080A",
+          "desc": "Garett always has 10hp &amp; infinite actions and movement",
+          "address": "0xFF557E"
+        },
+        {
+          "code": "FF557C:0001",
+          "desc": "Garett class modifier",
+          "address": "0xFF557C"
+        },
+        {
+          "code": "FF5584:000A",
+          "desc": "Garett max level",
+          "address": "0xFF5584"
+        },
+        {
+          "code": "FF558C:0001",
+          "desc": "2nd character class modifier",
+          "address": "0xFF558C"
+        },
+        {
+          "code": "FF558C:0000",
+          "desc": "2nd character name &amp; portrait modifier",
+          "address": "0xFF558C"
+        },
+        {
+          "code": "FF557C:0000",
+          "desc": "Garett name &amp; portrait modifier",
+          "address": "0xFF557C"
+        },
+        {
+          "code": "FF5584:0000",
+          "desc": "Garett class graphics battle map modifier",
+          "address": "0xFF5584"
+        },
+        {
+          "code": "FF5582:0000",
+          "desc": "Garett experience points modifier",
+          "address": "0xFF5582"
+        },
+        {
+          "code": "FF5582:0063",
+          "desc": "Garett always has 99 mp",
+          "address": "0xFF5582"
+        },
+        {
+          "code": "FF55DE:080A",
+          "desc": "7th character always has 10hp &amp; infinite actions and movement",
+          "address": "0xFF55DE"
+        },
+        {
+          "code": "FF55CE:080A",
+          "desc": "6h character always has 10hp &amp; infinite actions and movement",
+          "address": "0xFF55CE"
+        },
+        {
+          "code": "FF55BE:080A",
+          "desc": "5th character always has 10hp &amp; infinite actions and movement",
+          "address": "0xFF55BE"
+        },
+        {
+          "code": "FF55AE:080A",
+          "desc": "4th character always has 10hp &amp; infinite actions and movement",
+          "address": "0xFF55AE"
+        },
+        {
+          "code": "FF559E:080A",
+          "desc": "3rd character always has 10hp &amp; infinite actions and movement",
+          "address": "0xFF559E"
+        },
+        {
+          "code": "FF558E:080A",
+          "desc": "2nd character always has 10hp &amp; infinite actions and movement",
+          "address": "0xFF558E"
+        },
+        {
+          "code": "FF55EE:080A",
+          "desc": "8th character always has 10hp &amp; infinite actions and movement",
+          "address": "0xFF55EE"
+        },
+        {
+          "code": "FF559C:0001",
+          "desc": "3rd character class modifier",
+          "address": "0xFF559C"
+        },
+        {
+          "code": "FF55AC:0001",
+          "desc": "4th character class modifier",
+          "address": "0xFF55AC"
+        },
+        {
+          "code": "FF55BC:0001",
+          "desc": "5th character class modifier",
+          "address": "0xFF55BC"
+        },
+        {
+          "code": "FF55CC:0001",
+          "desc": "6h character class modifier",
+          "address": "0xFF55CC"
+        },
+        {
+          "code": "FF55DC:0001",
+          "desc": "7th character class modifier",
+          "address": "0xFF55DC"
+        },
+        {
+          "code": "FF55EC:0001",
+          "desc": "8th character class modifier",
+          "address": "0xFF55EC"
+        },
+        {
+          "code": "FF5584:0000",
+          "desc": "2nd character max level",
+          "address": "0xFF5584"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

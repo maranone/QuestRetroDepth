@@ -1,0 +1,35 @@
+{
+  "system": "genesis",
+  "normalized_title": "congogame",
+  "display_name": "Congo - The Game (USA) (Proto)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Congo - The Game (USA) (Proto).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFA04E:0063",
+          "desc": "Gain A Life With Every Gem (Gem Modifier)",
+          "address": "0xFFA04E"
+        },
+        {
+          "code": "FFA04C:0063",
+          "desc": "Infinite Lives",
+          "address": "0xFFA04C"
+        },
+        {
+          "code": "FFA09A:000F",
+          "desc": "Super Jump (Cart Level)",
+          "address": "0xFFA09A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

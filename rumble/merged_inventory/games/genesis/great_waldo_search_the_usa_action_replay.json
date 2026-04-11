@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "greatwaldosearch",
+  "display_name": "Great Waldo Search, The (USA) (Action Replay)",
+  "aliases": [
+    "Great Waldo Search, The (USA) (Action Replay)",
+    "Great Waldo Search, The (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\greatwaldosearch_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFF0EC9"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GreatWaldoSearch-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "score",
+          "address": "0xFF0EC9",
+          "type": ">u3"
+        },
+        {
+          "name": "scroll_found",
+          "address": "0xFF000C",
+          "type": "|u1"
+        },
+        {
+          "name": "time",
+          "address": "0xFF0F1D",
+          "type": "|i1"
+        },
+        {
+          "name": "waldo_found",
+          "address": "0xFF0EDB",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Great Waldo Search, The (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF0F1C:00FF",
+          "desc": "Infinite Time",
+          "address": "0xFF0F1C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "nhlhockey",
+  "display_name": "NHL Hockey (USA) (Action Replay)",
+  "aliases": [
+    "NHL Hockey (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NHL Hockey (USA).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFC468:0009",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFC468"
+        },
+        {
+          "code": "FFC468:0079",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFC468"
+        },
+        {
+          "code": "FFC6DA:0063",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFFC6DA"
+        },
+        {
+          "code": "FFCA3E:0000",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFFCA3E"
+        },
+        {
+          "code": "FFD8FA:0009",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFD8FA"
+        },
+        {
+          "code": "FFD8FA:0079",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFD8FA"
+        },
+        {
+          "code": "FFD914:0000",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFFD914"
+        },
+        {
+          "code": "FFD99C:0000",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFFD99C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

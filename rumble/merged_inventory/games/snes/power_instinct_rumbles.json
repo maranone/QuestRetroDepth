@@ -1,0 +1,47 @@
+{
+  "system": "snes",
+  "normalized_title": "powerinstinct",
+  "display_name": "Power Instinct (Rumbles)",
+  "aliases": [
+    "Power Instinct (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Power Instinct (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E135063",
+          "desc": "Infinite Time",
+          "address": "0x7E1350"
+        },
+        {
+          "code": "7E1225FA",
+          "desc": "P1 Infinite Health",
+          "address": "0x7E1225"
+        },
+        {
+          "code": "7E122700",
+          "desc": "P2 No Health",
+          "address": "0x7E1227"
+        },
+        {
+          "code": "7E1E8B08",
+          "desc": "Play As Oume",
+          "address": "0x7E1E8B"
+        },
+        {
+          "code": "7E1E8B0F",
+          "desc": "Play As Young Otane",
+          "address": "0x7E1E8B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

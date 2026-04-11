@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "ganbaregoemonyukihimekyuushutsuemaki",
+  "display_name": "Ganbare Goemon - Yuki Hime Kyuushutsu Emaki (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ganbare Goemon - Yuki Hime Kyuushutsu Emaki (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E1AA208",
+          "desc": "Infinite Energy",
+          "address": "0x7E1AA2"
+        },
+        {
+          "code": "7E1A9E99",
+          "desc": "Max Cash",
+          "address": "0x7E1A9E"
+        },
+        {
+          "code": "7E1AA600",
+          "desc": "Weapon Modifier",
+          "address": "0x7E1AA6"
+        },
+        {
+          "code": "7E059205",
+          "desc": "Invincible",
+          "address": "0x7E0592"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

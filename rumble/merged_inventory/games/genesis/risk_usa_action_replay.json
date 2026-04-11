@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "risk",
+  "display_name": "Risk (USA) (Action Replay)",
+  "aliases": [
+    "Risk (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Risk (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF0750:0000",
+          "desc": "Infinite Armies Left",
+          "address": "0xFF0750"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

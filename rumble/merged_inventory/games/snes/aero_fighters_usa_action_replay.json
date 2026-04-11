@@ -1,0 +1,126 @@
+{
+  "system": "snes",
+  "normalized_title": "aerofighters",
+  "display_name": "Aero Fighters (USA) (Action Replay)",
+  "aliases": [
+    "Aero Fighters (Rumbles)",
+    "Aero Fighters (USA) (Action Replay)",
+    "Aero Fighters (USA) (Game Genie)",
+    "Aero Fighters (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\aerofighters_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7FB78C",
+        "0x7FB7A4"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AeroFighters-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7FB78C",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7FB7A4",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Aero Fighters (USA).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 14,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "7FB79403",
+          "desc": "Max cannon power",
+          "address": "0x7FB794"
+        },
+        {
+          "code": "7FB79002",
+          "desc": "Infinite Bombs/Specials",
+          "address": "0x7FB790"
+        },
+        {
+          "code": "7FB78C02",
+          "desc": "Infinite Lives",
+          "address": "0x7FB78C"
+        },
+        {
+          "code": "7FB78C09",
+          "desc": "Infinite Lives P1",
+          "address": "0x7FB78C"
+        },
+        {
+          "code": "7FB79009",
+          "desc": "Infinite Bombs P1",
+          "address": "0x7FB790"
+        },
+        {
+          "code": "7FB79406",
+          "desc": "Powerup Modifier P1",
+          "address": "0x7FB794"
+        },
+        {
+          "code": "7FB75000",
+          "desc": "Aircraft Gun Modifier P1",
+          "address": "0x7FB750"
+        },
+        {
+          "code": "7FE5C4FF",
+          "desc": "Start With 255 Lives P1",
+          "address": "0x7FE5C4"
+        },
+        {
+          "code": "7FE5C2FF",
+          "desc": "Start With 255 Continues P1",
+          "address": "0x7FE5C2"
+        },
+        {
+          "code": "7FB78E00",
+          "desc": "Player 2 Lives Modifier",
+          "address": "0x7FB78E"
+        },
+        {
+          "code": "7FB79200",
+          "desc": "Player 2 Bombs Modifier",
+          "address": "0x7FB792"
+        },
+        {
+          "code": "7FB796FF",
+          "desc": "Player 2 Has Full Power",
+          "address": "0x7FB796"
+        },
+        {
+          "code": "7FB7A052",
+          "desc": "Firepower Boost",
+          "address": "0x7FB7A0"
+        },
+        {
+          "code": "7F53F410",
+          "desc": "Invincibility",
+          "address": "0x7F53F4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

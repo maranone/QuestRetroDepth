@@ -1,0 +1,37 @@
+{
+  "system": "genesis",
+  "normalized_title": "virtualbart",
+  "display_name": "Virtual Bart (World) (Action Replay)",
+  "aliases": [
+    "Virtual Bart (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Virtual Bart (World).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFC758:00FF",
+          "desc": "Infinite Time",
+          "address": "0xFFC758"
+        },
+        {
+          "code": "FFC7A0:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFC7A0"
+        },
+        {
+          "code": "FFC7A2:001F",
+          "desc": "Infinite Health",
+          "address": "0xFFC7A2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "system": "snes",
+  "normalized_title": "lockon",
+  "display_name": "Lock On (USA) (Action Replay)",
+  "aliases": [
+    "Lock On (USA) (Action Replay)",
+    "Lock On (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Lock On (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E111346",
+          "desc": "Infinite Flares",
+          "address": "0x7E1113"
+        },
+        {
+          "code": "7E111546",
+          "desc": "Infinite Missile A",
+          "address": "0x7E1115"
+        },
+        {
+          "code": "7E111646",
+          "desc": "Infinite Missile B",
+          "address": "0x7E1116"
+        },
+        {
+          "code": "7E11060A",
+          "desc": "Always Have 10 Lives",
+          "address": "0x7E1106"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

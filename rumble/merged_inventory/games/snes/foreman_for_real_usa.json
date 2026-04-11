@@ -1,0 +1,60 @@
+{
+  "system": "snes",
+  "normalized_title": "foremanforreal",
+  "display_name": "Foreman for Real (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Foreman for Real (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E10AE00",
+          "desc": "George Foreman In Career Mode",
+          "address": "0x7E10AE"
+        },
+        {
+          "code": "7E040400",
+          "desc": "Opponent No Stamina",
+          "address": "0x7E0404"
+        },
+        {
+          "code": "7E11AE64",
+          "desc": "P1 Infinite Stamina",
+          "address": "0x7E11AE"
+        },
+        {
+          "code": "7E107227",
+          "desc": "P1 Infinite Stamina",
+          "address": "0x7E1072"
+        },
+        {
+          "code": "7E043A78",
+          "desc": "P1 Infinite Stamina",
+          "address": "0x7E043A"
+        },
+        {
+          "code": "7E045A64",
+          "desc": "P1 Infinite Stamina",
+          "address": "0x7E045A"
+        },
+        {
+          "code": "7E11B412",
+          "desc": "Matches set for number of Rounds Modifier",
+          "address": "0x7E11B4"
+        },
+        {
+          "code": "7E0FD0BE",
+          "desc": "Round length in minutes modifier",
+          "address": "0x7E0FD0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

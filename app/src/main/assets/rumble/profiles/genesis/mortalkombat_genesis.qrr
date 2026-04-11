@@ -1,0 +1,5 @@
+game_name=Mortal Kombat (USA, Europe) (Rev A) (Beta)
+game_key=MortalKombat-Genesis
+system=genesis
+integration_tier=stable
+trigger	score_score_ffabb4	score	0xFFABB4	4	bcd	big	prev < curr	0.8	1	right:0.350:60

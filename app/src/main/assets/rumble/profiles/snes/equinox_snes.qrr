@@ -1,0 +1,5 @@
+game_name=Equinox
+game_key=Equinox-Snes
+system=snes
+integration_tier=manual
+trigger	enemy_defeated_2_137a	enemy_defeated	0x7E137A	1	uint	native	prev != curr	0.55	1	left:0.510:100

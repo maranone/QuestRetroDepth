@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "superdany",
+  "display_name": "Super Dany (France)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Dany (France).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E001100",
+          "desc": "Level Modifier",
+          "address": "0x7E0011"
+        },
+        {
+          "code": "7E0C1309",
+          "desc": "Infinite Health",
+          "address": "0x7E0C13"
+        },
+        {
+          "code": "7E002209",
+          "desc": "Infinite Credits",
+          "address": "0x7E0022"
+        },
+        {
+          "code": "7E0C3E00",
+          "desc": "Invincible",
+          "address": "0x7E0C3E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Super Double Dragon (USA, Europe) (Action Replay)
+game_key=SuperDoubleDragon-Snes
+system=snes
+integration_tier=stable
+trigger	life_lost_lives_00dc	life_lost	0x7E00DC	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00dc	life_gained	0x7E00DC	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_00de	score	0x7E00DE	2	bcd	little	prev < curr	0.8	1	right:0.350:60

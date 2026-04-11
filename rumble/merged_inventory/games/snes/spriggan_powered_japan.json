@@ -1,0 +1,98 @@
+{
+  "system": "snes",
+  "normalized_title": "sprigganpowered",
+  "display_name": "Spriggan Powered (Japan)",
+  "aliases": [
+    "Spriggan Powered (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\sprigganpowered_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7FABBE",
+        "0x7FABC6"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SprigganPowered-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7FABBE",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7FABC6",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Spriggan Powered (Japan).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7FABBE09",
+          "desc": "Infinite Lives",
+          "address": "0x7FABBE"
+        },
+        {
+          "code": "7F6B363E",
+          "desc": "Untouchable",
+          "address": "0x7F6B36"
+        },
+        {
+          "code": "7FABC090",
+          "desc": "Infinite Shield",
+          "address": "0x7FABC0"
+        },
+        {
+          "code": "7FABC203",
+          "desc": "Full Power for Picked-up Weapons",
+          "address": "0x7FABC2"
+        },
+        {
+          "code": "7FC80609",
+          "desc": "Infinite Credits",
+          "address": "0x7FC806"
+        },
+        {
+          "code": "7F06D201",
+          "desc": "Unlock Extra Options in Options Menu",
+          "address": "0x7F06D2"
+        },
+        {
+          "code": "7FCED404",
+          "desc": "Unlock Extra Options in Options Menu",
+          "address": "0x7FCED4"
+        },
+        {
+          "code": "7FCEDC09",
+          "desc": "Unlock Extra Options in Options Menu",
+          "address": "0x7FCEDC"
+        },
+        {
+          "code": "7FCEE207",
+          "desc": "Unlock Extra Options in Options Menu",
+          "address": "0x7FCEE2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

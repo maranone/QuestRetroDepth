@@ -1,0 +1,127 @@
+{
+  "system": "genesis",
+  "normalized_title": "predator2",
+  "display_name": "Predator 2 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Predator 2 (Rumbles)",
+    "Predator 2 (USA, Europe) (Action Replay)",
+    "Predator 2 (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\predator2_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF027C",
+        "0xFF027D",
+        "0xFF0280"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Predator2-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF027D",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF027C",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF0280",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Predator 2 (USA, Europe).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 13,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FF027C:0002",
+          "desc": "Unlimited Men",
+          "address": "0xFF027C"
+        },
+        {
+          "code": "FF027C:0000",
+          "desc": "Infinite Lives",
+          "address": "0xFF027C"
+        },
+        {
+          "code": "FF027C:0000",
+          "desc": "Infinite Health",
+          "address": "0xFF027C"
+        },
+        {
+          "code": "FF005A:0000",
+          "desc": "Infinite Ammo Shotgun",
+          "address": "0xFF005A"
+        },
+        {
+          "code": "FF005C:0000",
+          "desc": "Infinite Ammo Riffle",
+          "address": "0xFF005C"
+        },
+        {
+          "code": "FF005E:0000",
+          "desc": "Infinite Ammo Two Cannon Shotgun",
+          "address": "0xFF005E"
+        },
+        {
+          "code": "FF0060:0000",
+          "desc": "Infinite Ammo Predator Disc",
+          "address": "0xFF0060"
+        },
+        {
+          "code": "FF0062:0000",
+          "desc": "Infinite Ammo Predator Spear",
+          "address": "0xFF0062"
+        },
+        {
+          "code": "FF0064:0000",
+          "desc": "Infinite Ammo Predator Net",
+          "address": "0xFF0064"
+        },
+        {
+          "code": "FF0066:0000",
+          "desc": "Infinite Ammo Bomb",
+          "address": "0xFF0066"
+        },
+        {
+          "code": "FF3384:0000",
+          "desc": "Infinite Hostages",
+          "address": "0xFF3384"
+        },
+        {
+          "code": "FF0F58:0000",
+          "desc": "Level Modifier",
+          "address": "0xFF0F58"
+        },
+        {
+          "code": "FF1F99:0010",
+          "desc": "Invincibility",
+          "address": "0xFF1F99"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

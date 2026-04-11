@@ -1,0 +1,79 @@
+{
+  "system": "genesis",
+  "normalized_title": "gunship",
+  "display_name": "Gunship (Europe) (Action Replay)",
+  "aliases": [
+    "Gunship (Europe) (Action Replay)",
+    "Gunship (Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\gunship_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFBD1B",
+        "0xFFBD25"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Gunship-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFBD1B",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFBD25",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Gunship (Europe).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFBD1C:0099",
+          "desc": "Infinite Fuel",
+          "address": "0xFFBD1C"
+        },
+        {
+          "code": "FFBD1A:0045",
+          "desc": "Infinite Health",
+          "address": "0xFFBD1A"
+        },
+        {
+          "code": "FFE46B:0010",
+          "desc": "Invincibility",
+          "address": "0xFFE46B"
+        },
+        {
+          "code": "FFBD19:0002",
+          "desc": "Infinite Credits",
+          "address": "0xFFBD19"
+        },
+        {
+          "code": "FFE479:0014",
+          "desc": "Infinite Rockets",
+          "address": "0xFFE479"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

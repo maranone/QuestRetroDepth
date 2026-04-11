@@ -1,0 +1,48 @@
+{
+  "system": "snes",
+  "normalized_title": "samuraishodown",
+  "display_name": "Samurai Shodown (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Samurai Shodown (USA)",
+    "Samurai Shodown (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Samurai Shodown (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7EBE9B63",
+          "desc": "Infinite Time",
+          "address": "0x7EBE9B"
+        },
+        {
+          "code": "7E621480",
+          "desc": "Infinite Health P1",
+          "address": "0x7E6214"
+        },
+        {
+          "code": "7E623D20",
+          "desc": "Maximum Power P1",
+          "address": "0x7E623D"
+        },
+        {
+          "code": "7E661480",
+          "desc": "Infinite Health P2",
+          "address": "0x7E6614"
+        },
+        {
+          "code": "7E663D20",
+          "desc": "Maximum Power P2",
+          "address": "0x7E663D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

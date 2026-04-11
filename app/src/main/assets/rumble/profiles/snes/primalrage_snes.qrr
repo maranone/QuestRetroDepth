@@ -1,0 +1,6 @@
+game_name=PrimalRage
+game_key=PrimalRage-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_1a06	damage_taken	0x7E1A06	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_1_19e4	damage_taken	0x7E19E4	1	uint	native	prev > curr	0.85	1	right:0.750:180

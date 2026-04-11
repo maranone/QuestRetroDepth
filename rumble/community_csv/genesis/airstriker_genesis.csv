@@ -1,0 +1,8 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Airstriker
+# match_names=airstriker|airstrikergenesis
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+game_over_gameover_ff0266,0xFF0266,2,uint,became_nonzero,,both,1.000,normal,0,1000,400,100,
+life_lost_lives_ff025a,0xFF025A,2,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
+life_gained_lives_ff025a,0xFF025A,2,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,
+score_score_ff024e,0xFF024E,4,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,

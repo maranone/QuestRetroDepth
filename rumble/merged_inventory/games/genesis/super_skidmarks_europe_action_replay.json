@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "superskidmarks",
+  "display_name": "Super Skidmarks (Europe) (Action Replay)",
+  "aliases": [
+    "Super Skidmarks (Europe) (Beta)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Super Skidmarks (Europe) (Beta).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFCFAE:00FF",
+          "desc": "Possessed Car P1",
+          "address": "0xFFCFAE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

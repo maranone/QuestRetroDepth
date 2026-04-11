@@ -1,0 +1,148 @@
+{
+  "system": "genesis",
+  "normalized_title": "contrahardcorps",
+  "display_name": "Contra - Hard Corps (USA, Korea) (Action Replay)",
+  "aliases": [
+    "Contra - Hard Corps (USA, Korea) (Action Replay)",
+    "Contra - Hard Corps (USA, Korea)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Contra - Hard Corps (USA, Korea).cht",
+      "total_cheat_rows": 66,
+      "raw_entry_count": 30,
+      "distinct_address_count": 22,
+      "sample_raw_entries": [
+        {
+          "code": "FFFA48:0100",
+          "desc": "Stage select (Turn code off after the stage loads)",
+          "address": "0xFFFA48"
+        },
+        {
+          "code": "FFFA52:0070",
+          "desc": "Activate the 99 lives cheat",
+          "address": "0xFFFA52"
+        },
+        {
+          "code": "FFFA4C:0001",
+          "desc": "Activate a level select",
+          "address": "0xFFFA4C"
+        },
+        {
+          "code": "FFFA0E:001E",
+          "desc": "Activate start with all weapons",
+          "address": "0xFFFA0E"
+        },
+        {
+          "code": "FFFA06:0000",
+          "desc": "Each enemy killed gives you an extra life",
+          "address": "0xFFFA06"
+        },
+        {
+          "code": "FFFA0C:0004",
+          "desc": "Infinite Lives (Player 1)",
+          "address": "0xFFFA0C"
+        },
+        {
+          "code": "FFD758:0047",
+          "desc": "Untouchable (Player 1)",
+          "address": "0xFFD758"
+        },
+        {
+          "code": "FFFA10:0005",
+          "desc": "Infinite Bombs (Player 1)",
+          "address": "0xFFFA10"
+        },
+        {
+          "code": "FFFA0E:003E",
+          "desc": "Enable All Weapon Slots (Player 1)",
+          "address": "0xFFFA0E"
+        },
+        {
+          "code": "FFFA2C:0064",
+          "desc": "Infinite Lives (Player 2)",
+          "address": "0xFFFA2C"
+        },
+        {
+          "code": "FFD7D8:0001",
+          "desc": "Invincibility (Player 2)",
+          "address": "0xFFD7D8"
+        },
+        {
+          "code": "FFFA30:0064",
+          "desc": "Infinite Bombs (Player 2)",
+          "address": "0xFFFA30"
+        },
+        {
+          "code": "FFFA2E:003E",
+          "desc": "Enable All Weapon Slots (Player 2)",
+          "address": "0xFFFA2E"
+        },
+        {
+          "code": "FFD704:0000",
+          "desc": "Infinite Double Jump",
+          "address": "0xFFD704"
+        },
+        {
+          "code": "FFA5B0:005A",
+          "desc": "Fang Allways Shoot Full Charged His Charge Shot",
+          "address": "0xFFA5B0"
+        },
+        {
+          "code": "FFFA10:0009",
+          "desc": "Infinite &quot;Time-Bombs&quot; P1",
+          "address": "0xFFFA10"
+        },
+        {
+          "code": "FFFA48:0001",
+          "desc": "Debug Level (Turn Code Off After The Stage Loads)",
+          "address": "0xFFFA48"
+        },
+        {
+          "code": "FFFA48:0001",
+          "desc": "Stage Select (Turn Code Off After The Stage Loads)",
+          "address": "0xFFFA48"
+        },
+        {
+          "code": "FFFA0C:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFFFA0C"
+        },
+        {
+          "code": "FFFA0E:0000",
+          "desc": "P1 Weapon Modifier",
+          "address": "0xFFFA0E"
+        },
+        {
+          "code": "FFFA15:0000",
+          "desc": "P1 Character Modifier",
+          "address": "0xFFFA15"
+        },
+        {
+          "code": "FFFA35:0000",
+          "desc": "P2 Character Modifier",
+          "address": "0xFFFA35"
+        },
+        {
+          "code": "FFFA45:000A",
+          "desc": "Infinite Continues",
+          "address": "0xFFFA45"
+        },
+        {
+          "code": "FFFA4C:0001",
+          "desc": "Enable Stage Select Cheat",
+          "address": "0xFFFA4C"
+        },
+        {
+          "code": "FFFA53:0046",
+          "desc": "Enable Start with 70 Lives Cheat",
+          "address": "0xFFFA53"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

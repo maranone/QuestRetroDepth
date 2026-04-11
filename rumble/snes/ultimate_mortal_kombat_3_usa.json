@@ -1,0 +1,64 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Ultimate Mortal Kombat 3 (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Ultimate Mortal Kombat 3 (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "EE37-CF02",
+      "desc": "Blank Versus Screen",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2B1-1FBF",
+      "desc": "Scrambled Backgrounds",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2B6-1FFF",
+      "desc": "Black Background",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDBE-1F21",
+      "desc": "Execute Fatalities In Any Round",
+      "kind": "game_genie"
+    },
+    {
+      "code": "BBBE-1421",
+      "desc": "First Round/1-Button Fatalities",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C172-B27B",
+      "desc": "Infinite Health Player 1",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C17B-F37C",
+      "desc": "Infinite Health Player 2",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7D72-B37B",
+      "desc": "Infinite Run Player 1",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7D7B-FE7C",
+      "desc": "Infinite Run Player 2",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DF73-2A7C",
+      "desc": "Max Fatality Time",
+      "kind": "game_genie"
+    }
+  ]
+}

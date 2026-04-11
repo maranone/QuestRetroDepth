@@ -1,0 +1,47 @@
+{
+  "system": "snes",
+  "normalized_title": "goal",
+  "display_name": "Goal! (USA)",
+  "aliases": [
+    "Goal!"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Goal! (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E1DA700",
+          "desc": "Time Modifier",
+          "address": "0x7E1DA7"
+        },
+        {
+          "code": "7E1DA800",
+          "desc": "Time Modifier",
+          "address": "0x7E1DA8"
+        },
+        {
+          "code": "7E1DAC00",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0x7E1DAC"
+        },
+        {
+          "code": "7E1DAE00",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0x7E1DAE"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 1,
+      "mk3_label": "GOAL"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

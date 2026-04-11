@@ -1,0 +1,127 @@
+{
+  "system": "snes",
+  "normalized_title": "outofthisworld",
+  "display_name": "Out of this World (USA) (Action Replay)",
+  "aliases": [
+    "Out of this World (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Out of this World (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 21,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "7E0D84E7",
+          "desc": "First 3 Shields Are Infinite",
+          "address": "0x7E0D84"
+        },
+        {
+          "code": "7E0D8AE7",
+          "desc": "First 3 Shields Are Infinite",
+          "address": "0x7E0D8A"
+        },
+        {
+          "code": "7E0D90E7",
+          "desc": "First 3 Shields Are Infinite",
+          "address": "0x7E0D90"
+        },
+        {
+          "code": "7E0D1000",
+          "desc": "Screen Modifier",
+          "address": "0x7E0D10"
+        },
+        {
+          "code": "7E0C4E80",
+          "desc": "Infinite Gun Ammo",
+          "address": "0x7E0C4E"
+        },
+        {
+          "code": "7E0C4F80",
+          "desc": "Infinite Gun Ammo",
+          "address": "0x7E0C4F"
+        },
+        {
+          "code": "7E0C9801",
+          "desc": "Inf Health",
+          "address": "0x7E0C98"
+        },
+        {
+          "code": "7E0CAA00",
+          "desc": "Enemy  Can't Pull You To Water",
+          "address": "0x7E0CAA"
+        },
+        {
+          "code": "7E0C6F01",
+          "desc": "Can't Enemy Drown In Water",
+          "address": "0x7E0C6F"
+        },
+        {
+          "code": "7E0C5901",
+          "desc": "Underwater Tentacles in Stage 1 Never Appear",
+          "address": "0x7E0C59"
+        },
+        {
+          "code": "7E0C6E01",
+          "desc": "Get Out of the Underwater Part of Stage 1 Almost Instantly",
+          "address": "0x7E0C6E"
+        },
+        {
+          "code": "7E0C9701",
+          "desc": "Wild Animal on Stage 1 Never Appears",
+          "address": "0x7E0C97"
+        },
+        {
+          "code": "7E0CA901",
+          "desc": "Out of Water Tentacle Never Appears on Stage 1",
+          "address": "0x7E0CA9"
+        },
+        {
+          "code": "7E0CFF01",
+          "desc": "Vine on Stage 1 is Reusable",
+          "address": "0x7E0CFF"
+        },
+        {
+          "code": "7E0C5701",
+          "desc": "Start With the Gun on Stage 2",
+          "address": "0x7E0C57"
+        },
+        {
+          "code": "7E0C5C01",
+          "desc": "Alien Friend Has a Gun",
+          "address": "0x7E0C5C"
+        },
+        {
+          "code": "7E0C6D01",
+          "desc": "Instantly Escape the Cage on Stage 2",
+          "address": "0x7E0C6D"
+        },
+        {
+          "code": "7E0C6701",
+          "desc": "Enemies Don't Attack on Stage 2 While Alien Friend is Opening the Door",
+          "address": "0x7E0C67"
+        },
+        {
+          "code": "7E0CAD01",
+          "desc": "Stage 3 is Completed Instantly",
+          "address": "0x7E0CAD"
+        },
+        {
+          "code": "7E0CD400",
+          "desc": "Most Doors & Barriers Are Open or Removed",
+          "address": "0x7E0CD4"
+        },
+        {
+          "code": "7E0CD500",
+          "desc": "Most Doors & Barriers Are Open or Removed",
+          "address": "0x7E0CD5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

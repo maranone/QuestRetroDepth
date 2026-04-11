@@ -1,0 +1,87 @@
+{
+  "system": "genesis",
+  "normalized_title": "timekillers",
+  "display_name": "Time Killers (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Time Killers (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Time Killers (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 13,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FFAE15:93",
+          "desc": "Infinite Energy P1",
+          "address": "0xFFAE15"
+        },
+        {
+          "code": "FFAF69:93",
+          "desc": "Infinite Energy P2",
+          "address": "0xFFAF69"
+        },
+        {
+          "code": "FFAE15:93",
+          "desc": "No Energy P1",
+          "address": "0xFFAE15"
+        },
+        {
+          "code": "FFAF69:93",
+          "desc": "No Energy P2",
+          "address": "0xFFAF69"
+        },
+        {
+          "code": "FF9641:0A",
+          "desc": "Infinite Time",
+          "address": "0xFF9641"
+        },
+        {
+          "code": "FF99F5:XX",
+          "desc": "Character Modifier P1",
+          "address": "0xFF99F5"
+        },
+        {
+          "code": "FF99F7:XX",
+          "desc": "Character Modifier P2",
+          "address": "0xFF99F7"
+        },
+        {
+          "code": "FF96AD:99",
+          "desc": "Infinite Credits P1",
+          "address": "0xFF96AD"
+        },
+        {
+          "code": "FF96AF:99",
+          "desc": "Infinite Credits P2",
+          "address": "0xFF96AF"
+        },
+        {
+          "code": "FFAF6D:XX",
+          "desc": "P1 Wins In Match Modifier (0-2)",
+          "address": "0xFFAF6D"
+        },
+        {
+          "code": "FFAF6F:XX",
+          "desc": "P2 Wins In Match Modifier (0-2)",
+          "address": "0xFFAF6F"
+        },
+        {
+          "code": "FF9A37:XX",
+          "desc": "P1's Number of Total Losses Modifier",
+          "address": "0xFF9A37"
+        },
+        {
+          "code": "FF9A39:XX",
+          "desc": "P2's Number of Total Wins Modifier",
+          "address": "0xFF9A39"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

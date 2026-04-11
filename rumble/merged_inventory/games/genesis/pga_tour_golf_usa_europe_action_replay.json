@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "pgatourgolf",
+  "display_name": "PGA Tour Golf (USA, Europe) (Action Replay)",
+  "aliases": [
+    "PGA Tour Golf (USA, Europe) (Rev B)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\PGA Tour Golf (USA, Europe) (Rev B).cht",
+      "total_cheat_rows": 48,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF4A19:0000",
+          "desc": "P1 Always on 1st Stroke",
+          "address": "0xFF4A19"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

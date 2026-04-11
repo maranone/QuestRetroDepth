@@ -1,0 +1,80 @@
+{
+  "system": "genesis",
+  "normalized_title": "feriasfrustradasdopicapau",
+  "display_name": "Ferias Frustradas do Pica Pau (Brazil)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ferias Frustradas do Pica Pau (Brazil).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "FF01D6:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF01D6"
+        },
+        {
+          "code": "FF01D8:0024",
+          "desc": "Infinite Health",
+          "address": "0xFF01D8"
+        },
+        {
+          "code": "FF01DA:03E7",
+          "desc": "999 Money Bags",
+          "address": "0xFF01DA"
+        },
+        {
+          "code": "FF01DC:03E7",
+          "desc": "999 Enemies Killed",
+          "address": "0xFF01DC"
+        },
+        {
+          "code": "FF01F8:0000",
+          "desc": "Untouchable",
+          "address": "0xFF01F8"
+        },
+        {
+          "code": "FF0EA8:0001",
+          "desc": "Always Run",
+          "address": "0xFF0EA8"
+        },
+        {
+          "code": "FF01E4:0001",
+          "desc": "Power Modifier",
+          "address": "0xFF01E4"
+        },
+        {
+          "code": "FF0EC2:008E",
+          "desc": "Stage Modifier",
+          "address": "0xFF0EC2"
+        },
+        {
+          "code": "FF106E:0000",
+          "desc": "Music Modifier",
+          "address": "0xFF106E"
+        },
+        {
+          "code": "FF01F4:0001",
+          "desc": "Super Jump",
+          "address": "0xFF01F4"
+        },
+        {
+          "code": "FF01F6:0000",
+          "desc": "Super Jump",
+          "address": "0xFF01F6"
+        },
+        {
+          "code": "FF01E6:0001",
+          "desc": "Jump Midair Add On",
+          "address": "0xFF01E6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

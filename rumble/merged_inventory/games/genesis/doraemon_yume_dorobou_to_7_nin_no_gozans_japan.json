@@ -1,0 +1,60 @@
+{
+  "system": "genesis",
+  "normalized_title": "doraemonyumedorobouto7ninnogozans",
+  "display_name": "Doraemon - Yume Dorobou to 7 Nin no Gozans (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Doraemon - Yume Dorobou to 7 Nin no Gozans (Japan).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FF9EA8:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF9EA8"
+        },
+        {
+          "code": "FFBBBC:0000",
+          "desc": "Invincibility",
+          "address": "0xFFBBBC"
+        },
+        {
+          "code": "FFA126:00FF",
+          "desc": "Fly",
+          "address": "0xFFA126"
+        },
+        {
+          "code": "FF9EA4:0001",
+          "desc": "Stage Modifier",
+          "address": "0xFF9EA4"
+        },
+        {
+          "code": "FF9EAC:0909",
+          "desc": "99 Stars",
+          "address": "0xFF9EAC"
+        },
+        {
+          "code": "FFA132:0001",
+          "desc": "Power Modifier",
+          "address": "0xFFA132"
+        },
+        {
+          "code": "FFA150:000E",
+          "desc": "Super Blast Autofire",
+          "address": "0xFFA150"
+        },
+        {
+          "code": "FFBBDE:0000",
+          "desc": "Boss Never Wins",
+          "address": "0xFFBBDE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

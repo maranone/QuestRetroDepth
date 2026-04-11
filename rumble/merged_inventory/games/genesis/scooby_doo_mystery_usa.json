@@ -1,0 +1,25 @@
+{
+  "system": "genesis",
+  "normalized_title": "scoobydoomystery",
+  "display_name": "Scooby-Doo Mystery (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Scooby-Doo Mystery (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF08BB:000B",
+          "desc": "Press Left on Main Menu to enable Debug Options in Pause Menu during gameplay",
+          "address": "0xFF08BB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

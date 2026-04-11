@@ -1,0 +1,72 @@
+{
+  "system": "genesis",
+  "normalized_title": "technoclash",
+  "display_name": "TechnoClash (USA, Europe) (Action Replay)",
+  "aliases": [
+    "TechnoClash (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\TechnoClash (USA, Europe).cht",
+      "total_cheat_rows": 60,
+      "raw_entry_count": 10,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF86D8:0063",
+          "desc": "Infinite Health",
+          "address": "0xFF86D8"
+        },
+        {
+          "code": "FF86F4:0063",
+          "desc": "Infinite Blast Shots",
+          "address": "0xFF86F4"
+        },
+        {
+          "code": "FF86F2:0063",
+          "desc": "Infinite &quot;A&quot;",
+          "address": "0xFF86F2"
+        },
+        {
+          "code": "FF86EC:0063",
+          "desc": "Infinite &quot;L&quot;",
+          "address": "0xFF86EC"
+        },
+        {
+          "code": "FF86F2:0063",
+          "desc": "Infinite &quot;S&quot;",
+          "address": "0xFF86F2"
+        },
+        {
+          "code": "FF86EC:0063",
+          "desc": "Infinite &quot;T&quot;",
+          "address": "0xFF86EC"
+        },
+        {
+          "code": "FF86EA:0063",
+          "desc": "Infinite &quot;M&quot;",
+          "address": "0xFF86EA"
+        },
+        {
+          "code": "FF86E8:0063",
+          "desc": "Infinite &quot;H&quot;",
+          "address": "0xFF86E8"
+        },
+        {
+          "code": "FF86F4:0063",
+          "desc": "Infinite &quot;W&quot;",
+          "address": "0xFF86F4"
+        },
+        {
+          "code": "FF86F0:0063",
+          "desc": "Infinite &quot;D&quot;",
+          "address": "0xFF86F0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

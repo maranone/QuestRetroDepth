@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "skitchin",
+  "display_name": "Skitchin' (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Skitchin' (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Skitchin' (USA, Europe).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFEF58:03E8",
+          "desc": "Infinite Cash",
+          "address": "0xFFEF58"
+        },
+        {
+          "code": "FFDC06:0008",
+          "desc": "Infinite Time",
+          "address": "0xFFDC06"
+        },
+        {
+          "code": "FFEF58:00A8",
+          "desc": "Set Max./Infinite Money ($32767)",
+          "address": "0xFFEF58"
+        },
+        {
+          "code": "FFEF58:0061",
+          "desc": "Set Max./Infinite Money ($32767)",
+          "address": "0xFFEF58"
+        },
+        {
+          "code": "FF0768:007F",
+          "desc": "Auto Race At 200+ MPH",
+          "address": "0xFF0768"
+        },
+        {
+          "code": "FF0794:00FF",
+          "desc": "Never get knocked down / Never Fall",
+          "address": "0xFF0794"
+        },
+        {
+          "code": "FFF0B9:0001",
+          "desc": "BADASS Cheat is Active",
+          "address": "0xFFF0B9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

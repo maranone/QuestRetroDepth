@@ -1,0 +1,90 @@
+{
+  "system": "genesis",
+  "normalized_title": "highseashavoc",
+  "display_name": "High Seas Havoc (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\High Seas Havoc (USA).cht",
+      "total_cheat_rows": 55,
+      "raw_entry_count": 14,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FFDE5A:0004",
+          "desc": "Walk-Thru Enemies",
+          "address": "0xFFDE5A"
+        },
+        {
+          "code": "FFDCC8:0099",
+          "desc": "Have 99 Gems",
+          "address": "0xFFDCC8"
+        },
+        {
+          "code": "FFDCA4:003F",
+          "desc": "Infinite Health (Ignore HUD)",
+          "address": "0xFFDCA4"
+        },
+        {
+          "code": "FFDCA0:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFDCA0"
+        },
+        {
+          "code": "FFDBEC:0000",
+          "desc": "Level Modifier",
+          "address": "0xFFDBEC"
+        },
+        {
+          "code": "FFA048:0000",
+          "desc": "No Health Bosses (Read Note)",
+          "address": "0xFFA048"
+        },
+        {
+          "code": "FFDE5B:0010",
+          "desc": "Invincibility",
+          "address": "0xFFDE5B"
+        },
+        {
+          "code": "FFDE94:0010",
+          "desc": "Invincibility",
+          "address": "0xFFDE94"
+        },
+        {
+          "code": "FFDCC9:0099",
+          "desc": "Keep Diamands After The Death - High Seas Havoc (USA) (Beta)",
+          "address": "0xFFDCC9"
+        },
+        {
+          "code": "FFDBA7:0099",
+          "desc": "Infinite Lives - High Seas Havoc (USA) (Beta)",
+          "address": "0xFFDBA7"
+        },
+        {
+          "code": "FFDCA4:00FF",
+          "desc": "Infinite Energy - High Seas Havoc (USA) (Beta)",
+          "address": "0xFFDCA4"
+        },
+        {
+          "code": "FFBDA7:0099",
+          "desc": "Invincibility - High Seas Havoc (USA) (Beta)",
+          "address": "0xFFBDA7"
+        },
+        {
+          "code": "FFDD3F:0009",
+          "desc": "Freeze Time Continue - High Seas Havoc (USA) (Beta)",
+          "address": "0xFFDD3F"
+        },
+        {
+          "code": "FFDEE1:0001",
+          "desc": "Infinite Credit - High Seas Havoc (USA) (Beta)",
+          "address": "0xFFDEE1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

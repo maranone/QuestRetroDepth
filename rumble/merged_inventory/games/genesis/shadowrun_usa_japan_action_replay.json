@@ -1,0 +1,79 @@
+{
+  "system": "genesis",
+  "normalized_title": "shadowrun",
+  "display_name": "Shadowrun (USA, Japan) (Action Replay)",
+  "aliases": [
+    "Shadowrun (Asia) (En)",
+    "Shadowrun (USA)",
+    "Shadowrun (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Shadowrun (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FF019C:0A00",
+          "desc": "Infinite Mental Health (First Character Only)",
+          "address": "0xFF019C"
+        },
+        {
+          "code": "FF017E:0700",
+          "desc": "Infinite Essence (First Character Only)",
+          "address": "0xFF017E"
+        },
+        {
+          "code": "FFFBFE:0010",
+          "desc": "Always Have At Least $1,000,000",
+          "address": "0xFFFBFE"
+        },
+        {
+          "code": "FFF100:00FF",
+          "desc": "Cheat Menu/Debugger Is Always Available",
+          "address": "0xFFF100"
+        },
+        {
+          "code": "FF014E:1E14",
+          "desc": "Infinite Ammo",
+          "address": "0xFF014E"
+        },
+        {
+          "code": "FF018D:FF",
+          "desc": "Infinite Karma",
+          "address": "0xFF018D"
+        },
+        {
+          "code": "FFF0A0:FF",
+          "desc": "No Alerts In Cyberspace",
+          "address": "0xFFF0A0"
+        },
+        {
+          "code": "FF018F:21",
+          "desc": "Cab Rides Are Always Free",
+          "address": "0xFF018F"
+        },
+        {
+          "code": "FFFBC0:270F",
+          "desc": "Max Cyberdeck Memory",
+          "address": "0xFFFBC0"
+        },
+        {
+          "code": "FFFBC2:270F",
+          "desc": "Max Cyberdeck Storage",
+          "address": "0xFFFBC2"
+        },
+        {
+          "code": "FFFBC4:7803",
+          "desc": "Max Cyberdeck Load Speed",
+          "address": "0xFFFBC4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

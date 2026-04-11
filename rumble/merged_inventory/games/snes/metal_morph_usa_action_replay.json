@@ -1,0 +1,54 @@
+{
+  "system": "snes",
+  "normalized_title": "metalmorph",
+  "display_name": "Metal Morph (USA) (Action Replay)",
+  "aliases": [
+    "Metal Morph (USA) (Action Replay)",
+    "Metal Morph (USA) (Game Genie)",
+    "Metal Morph (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Metal Morph (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E038703",
+          "desc": "Have Shield/Invincible",
+          "address": "0x7E0387"
+        },
+        {
+          "code": "7E003A05",
+          "desc": "Infinite Continues",
+          "address": "0x7E003A"
+        },
+        {
+          "code": "7E003028",
+          "desc": "Infinite Laser Rounds",
+          "address": "0x7E0030"
+        },
+        {
+          "code": "7E003223",
+          "desc": "Infinite ????? Rounds",
+          "address": "0x7E0032"
+        },
+        {
+          "code": "7E003414",
+          "desc": "Infinite Shotgun Rounds",
+          "address": "0x7E0034"
+        },
+        {
+          "code": "7E00360A",
+          "desc": "Infinite Seeker Rounds",
+          "address": "0x7E0036"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

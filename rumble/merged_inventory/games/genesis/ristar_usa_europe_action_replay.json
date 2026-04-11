@@ -1,0 +1,81 @@
+{
+  "system": "genesis",
+  "normalized_title": "ristar",
+  "display_name": "Ristar (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Ristar (Rumbles)",
+    "Ristar (USA, Europe) (Action Replay)",
+    "Ristar (USA, Europe) (Beta) (Later)",
+    "Ristar (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\ristar_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFE574",
+        "0xFFE578"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Ristar-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFE578",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFE574",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ristar (USA, Europe).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFC038:0004",
+          "desc": "Infinite Health",
+          "address": "0xFFC038"
+        },
+        {
+          "code": "FFE578:0063",
+          "desc": "Infinite Lives",
+          "address": "0xFFE578"
+        },
+        {
+          "code": "FFFE04:0004",
+          "desc": "Cheat Enabled Modifier",
+          "address": "0xFFFE04"
+        },
+        {
+          "code": "FFAEF1:00FF",
+          "desc": "Enable Debug Invincibility",
+          "address": "0xFFAEF1"
+        },
+        {
+          "code": "FFAEF1:0000",
+          "desc": "Disable Debug Invincibility",
+          "address": "0xFFAEF1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

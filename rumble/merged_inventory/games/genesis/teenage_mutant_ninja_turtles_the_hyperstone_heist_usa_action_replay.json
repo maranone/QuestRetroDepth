@@ -1,0 +1,181 @@
+{
+  "system": "genesis",
+  "normalized_title": "teenagemutantninjaturtleshyperstoneheist",
+  "display_name": "Teenage Mutant Ninja Turtles - The Hyperstone Heist (USA) (Action Replay)",
+  "aliases": [
+    "Teenage Mutant Ninja Turtles - The Hyperstone Heist (USA) (Action Replay)",
+    "Teenage Mutant Ninja Turtles - The Hyperstone Heist (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\teenagemutantninjaturtlesthehyperstoneheist_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFC034",
+        "0xFFC039",
+        "0xFFC059"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TeenageMutantNinjaTurtlesTheHyperstoneHeist-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFC059",
+          "type": "|d1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFC039",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFC034",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Teenage Mutant Ninja Turtles - The Hyperstone Heist (USA).cht",
+      "total_cheat_rows": 80,
+      "raw_entry_count": 24,
+      "distinct_address_count": 22,
+      "sample_raw_entries": [
+        {
+          "code": "FFC058:0077",
+          "desc": "Infinite Health P1",
+          "address": "0xFFC058"
+        },
+        {
+          "code": "FFC05A:0077",
+          "desc": "Infinite Health P2",
+          "address": "0xFFC05A"
+        },
+        {
+          "code": "FFC038:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFFC038"
+        },
+        {
+          "code": "FFC03A:0009",
+          "desc": "Infinite Lives P2",
+          "address": "0xFFC03A"
+        },
+        {
+          "code": "FFC034:0000",
+          "desc": "Score Modifier P1",
+          "address": "0xFFC034"
+        },
+        {
+          "code": "FFC034:0000",
+          "desc": "Score Modifier P1",
+          "address": "0xFFC034"
+        },
+        {
+          "code": "FFC036:0000",
+          "desc": "Score Modifier P2",
+          "address": "0xFFC036"
+        },
+        {
+          "code": "FFC038:0000",
+          "desc": "Score Modifier P2",
+          "address": "0xFFC038"
+        },
+        {
+          "code": "FFC028:0000",
+          "desc": "Turtle Modifier (Both Players)",
+          "address": "0xFFC028"
+        },
+        {
+          "code": "FFC402:001B",
+          "desc": "Be Invulnerable P1 (Can't Move)",
+          "address": "0xFFC402"
+        },
+        {
+          "code": "FFC01E:0000",
+          "desc": "Level Text Modifier",
+          "address": "0xFFC01E"
+        },
+        {
+          "code": "FFC024:0000",
+          "desc": "Level Modifier",
+          "address": "0xFFC024"
+        },
+        {
+          "code": "FFC758:0000",
+          "desc": "No Health Bosses",
+          "address": "0xFFC758"
+        },
+        {
+          "code": "FFC20A:0002",
+          "desc": "Ride A Glitched Surfboard P1",
+          "address": "0xFFC20A"
+        },
+        {
+          "code": "FFC454:0000",
+          "desc": "Hyper P1",
+          "address": "0xFFC454"
+        },
+        {
+          "code": "FFC464:0045",
+          "desc": "Ghost P1 (Visually)",
+          "address": "0xFFC464"
+        },
+        {
+          "code": "FFC466:0045",
+          "desc": "Enemies Can't Touch P1",
+          "address": "0xFFC466"
+        },
+        {
+          "code": "FFF81C:0000",
+          "desc": "P1 Eyes, Elbows, &amp; Knee Bands Color Modifier",
+          "address": "0xFFF81C"
+        },
+        {
+          "code": "FFC5D4:0000",
+          "desc": "Hyper P2",
+          "address": "0xFFC5D4"
+        },
+        {
+          "code": "FFC5E4:0045",
+          "desc": "Ghost P2 (Visually)",
+          "address": "0xFFC5E4"
+        },
+        {
+          "code": "FFC5E6:0045",
+          "desc": "Enemies Can't Touch P2",
+          "address": "0xFFC5E6"
+        },
+        {
+          "code": "FFF83C:0000",
+          "desc": "P2 Eyes, Elbows, &amp; Knees Band Color Modifier",
+          "address": "0xFFF83C"
+        },
+        {
+          "code": "FFC027:0009",
+          "desc": "Infinite Continues",
+          "address": "0xFFC027"
+        },
+        {
+          "code": "FFC003:0005",
+          "desc": "Scene change",
+          "address": "0xFFC003"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

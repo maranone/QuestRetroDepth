@@ -1,0 +1,143 @@
+{
+  "system": "snes",
+  "normalized_title": "supermarioworld",
+  "display_name": "Super Mario World (World) (Action Replay)",
+  "aliases": [
+    "Super Mario World (Rumbles)",
+    "Super Mario World (USA) (Game Genie)",
+    "Super Mario World (USA)",
+    "Super Mario World (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\supermarioworld_snes.json",
+      "trigger_count": 4,
+      "field_names": [
+        "coins",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E0DBE",
+        "0x7E0DBF",
+        "0x7E0F34"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperMarioWorld-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "coins",
+          "address": "0x7E0DBF",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E0DBE",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0F34",
+          "type": "<u4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Mario World (World) (Action Replay).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 16,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "7E001902",
+          "desc": "Mario Cape",
+          "address": "0x7E0019"
+        },
+        {
+          "code": "7E001903",
+          "desc": "Mario Fire",
+          "address": "0x7E0019"
+        },
+        {
+          "code": "7E1490FF",
+          "desc": "Mario Star",
+          "address": "0x7E1490"
+        },
+        {
+          "code": "7E0DBF63",
+          "desc": "Infinite Coins",
+          "address": "0x7E0DBF"
+        },
+        {
+          "code": "7E0DB301",
+          "desc": "Play as Luigi",
+          "address": "0x7E0DB3"
+        },
+        {
+          "code": "7E0DC101",
+          "desc": "Extra Item Mushroom",
+          "address": "0x7E0DC1"
+        },
+        {
+          "code": "7E0DC102",
+          "desc": "Extra Item Fire",
+          "address": "0x7E0DC1"
+        },
+        {
+          "code": "7E0DC103",
+          "desc": "Extra Item Star",
+          "address": "0x7E0DC1"
+        },
+        {
+          "code": "7E0DC104",
+          "desc": "Extra Item Feather",
+          "address": "0x7E0DC1"
+        },
+        {
+          "code": "7E1490FF",
+          "desc": "Invincible",
+          "address": "0x7E1490"
+        },
+        {
+          "code": "7E0DC101",
+          "desc": "Always Have Yoshi",
+          "address": "0x7E0DC1"
+        },
+        {
+          "code": "7E186BFF",
+          "desc": "Infinite Coins from Multi-Coin boxes",
+          "address": "0x7E186B"
+        },
+        {
+          "code": "7E1891FF",
+          "desc": "Infinite P-Button Time",
+          "address": "0x7E1891"
+        },
+        {
+          "code": "7E0DB405",
+          "desc": "Infinite lives Mario",
+          "address": "0x7E0DB4"
+        },
+        {
+          "code": "7E0DBE05",
+          "desc": "Infinite lives Luigi",
+          "address": "0x7E0DBE"
+        },
+        {
+          "code": "7E169707",
+          "desc": "1up from each enemy you stomp",
+          "address": "0x7E1697"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

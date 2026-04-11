@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "magicschoolbus",
+  "display_name": "Magic School Bus, The (USA) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Magic School Bus, The (USA) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFDC75:FF",
+          "desc": "Max Speed",
+          "address": "0xFFDC75"
+        },
+        {
+          "code": "FFDCB5:0A",
+          "desc": "Max Speed",
+          "address": "0xFFDCB5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

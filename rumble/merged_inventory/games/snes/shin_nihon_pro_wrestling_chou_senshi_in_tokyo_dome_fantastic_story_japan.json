@@ -1,0 +1,100 @@
+{
+  "system": "snes",
+  "normalized_title": "shinnihonprowrestlingchousenshiintokyodomefantasticstory",
+  "display_name": "Shin Nihon Pro Wrestling - Chou Senshi in Tokyo Dome - Fantastic Story (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Shin Nihon Pro Wrestling - Chou Senshi in Tokyo Dome - Fantastic Story (Japan).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 16,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "7E08D1FF",
+          "desc": "P1 Inf.Health",
+          "address": "0x7E08D1"
+        },
+        {
+          "code": "7E08E164",
+          "desc": "P1 Inf.Power",
+          "address": "0x7E08E1"
+        },
+        {
+          "code": "7E08E300",
+          "desc": "P2 No Power",
+          "address": "0x7E08E3"
+        },
+        {
+          "code": "7E0BCD02",
+          "desc": "Pin Count Always 3",
+          "address": "0x7E0BCD"
+        },
+        {
+          "code": "7E0BCD00",
+          "desc": "Pin Count Always 1",
+          "address": "0x7E0BCD"
+        },
+        {
+          "code": "7E0B5499",
+          "desc": "Inf.Time",
+          "address": "0x7E0B54"
+        },
+        {
+          "code": "7E08E548",
+          "desc": "Player 3 Has Infinite Power",
+          "address": "0x7E08E5"
+        },
+        {
+          "code": "7E08E700",
+          "desc": "Player 4 Has No Power",
+          "address": "0x7E08E7"
+        },
+        {
+          "code": "7E08D300",
+          "desc": "Player 2 Has No Health",
+          "address": "0x7E08D3"
+        },
+        {
+          "code": "7E08D564",
+          "desc": "Player 3 Has Infinite Health",
+          "address": "0x7E08D5"
+        },
+        {
+          "code": "7E08D700",
+          "desc": "Player 4 Has No Health",
+          "address": "0x7E08D7"
+        },
+        {
+          "code": "7E082100",
+          "desc": "Player 1 is Missing",
+          "address": "0x7E0821"
+        },
+        {
+          "code": "7E082300",
+          "desc": "Player 2 is Missing",
+          "address": "0x7E0823"
+        },
+        {
+          "code": "7E082500",
+          "desc": "Player 3 is Missing",
+          "address": "0x7E0825"
+        },
+        {
+          "code": "7E082700",
+          "desc": "Player 4 is Missing",
+          "address": "0x7E0827"
+        },
+        {
+          "code": "7E08C801",
+          "desc": "No Music or Sound Effects",
+          "address": "0x7E08C8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

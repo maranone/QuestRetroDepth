@@ -1,0 +1,118 @@
+{
+  "system": "snes",
+  "normalized_title": "earthdefenseforce",
+  "display_name": "Earth Defense Force (USA)",
+  "aliases": [
+    "Earth Defense Force (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\earthdefenseforce_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0157",
+        "0x7E0181"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\EarthDefenseForce-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E0181",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0157",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Earth Defense Force (USA).cht",
+      "total_cheat_rows": 43,
+      "raw_entry_count": 13,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "7E015A00",
+          "desc": "Score Digits 1&amp;2",
+          "address": "0x7E015A"
+        },
+        {
+          "code": "7E015900",
+          "desc": "Score Digits 3&amp;4",
+          "address": "0x7E0159"
+        },
+        {
+          "code": "7E015800",
+          "desc": "Score Digits 5&amp;6",
+          "address": "0x7E0158"
+        },
+        {
+          "code": "7E015700",
+          "desc": "Score Digits 7&amp;8",
+          "address": "0x7E0157"
+        },
+        {
+          "code": "7E017D00",
+          "desc": "Power Level",
+          "address": "0x7E017D"
+        },
+        {
+          "code": "7E017F00",
+          "desc": "Speed Mod",
+          "address": "0x7E017F"
+        },
+        {
+          "code": "7E018100",
+          "desc": "Shield Mod",
+          "address": "0x7E0181"
+        },
+        {
+          "code": "7E018B00",
+          "desc": "Gun Type",
+          "address": "0x7E018B"
+        },
+        {
+          "code": "7E018347",
+          "desc": "Raise Level Quickly",
+          "address": "0x7E0183"
+        },
+        {
+          "code": "7E018364",
+          "desc": "Infinite Experience Bar",
+          "address": "0x7E0183"
+        },
+        {
+          "code": "7E010600",
+          "desc": "Start On Level",
+          "address": "0x7E0106"
+        },
+        {
+          "code": "7E01F700",
+          "desc": "Start With Satellite Formation",
+          "address": "0x7E01F7"
+        },
+        {
+          "code": "7E13A800",
+          "desc": "Always Play In Config &acirc;\u20ac\u201c Sound Mode",
+          "address": "0x7E13A8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

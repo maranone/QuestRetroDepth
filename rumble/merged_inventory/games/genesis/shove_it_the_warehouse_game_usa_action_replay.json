@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "shoveitwarehousegame",
+  "display_name": "Shove It! ...The Warehouse Game (USA) (Action Replay)",
+  "aliases": [
+    "Shove It! ...The Warehouse Game (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Shove It! ...The Warehouse Game (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFF635:0000",
+          "desc": "Have 0 Steps Taken",
+          "address": "0xFFF635"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

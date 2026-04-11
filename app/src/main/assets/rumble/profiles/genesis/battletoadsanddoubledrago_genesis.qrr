@@ -1,0 +1,10 @@
+game_name=BattletoadsAndDoubleDrago
+game_key=BattletoadsAndDoubleDrago-Genesis
+system=genesis
+integration_tier=manual
+trigger	damage_taken_0_dee	damage_taken	0xFF0DEE	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	enemy_defeated_1_e1b	enemy_defeated	0xFF0E1B	1	uint	native	prev != curr	0.7	1	left:0.510:100
+trigger	enemy_defeated_2_e1a	enemy_defeated	0xFF0E1A	1	uint	native	prev != curr	0.7	1	left:0.510:100
+trigger	damage_taken_3_e50	damage_taken	0xFF0E50	1	uint	native	prev > curr	0.85	1	right:0.750:180
+trigger	enemy_defeated_4_e7d	enemy_defeated	0xFF0E7D	1	uint	native	prev != curr	0.7	1	right:0.510:100
+trigger	enemy_defeated_5_e7c	enemy_defeated	0xFF0E7C	1	uint	native	prev != curr	0.7	1	right:0.510:100

@@ -1,0 +1,117 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "NinjaGaidenTrilogy",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Ninja Gaiden Trilogy (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "NinjaGaidenTrilogy-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_0_65",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E0065",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0065",
+          "bank": "7E",
+          "wram_offset": 101
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss (only for ng1)",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_only_for_ng1",
+          "address": "0x7E0065",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_1_a7",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E00A7",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x00A7",
+          "bank": "7E",
+          "wram_offset": 167
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss (for ng3, turn off for ng2)",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_for_ng3_turn_off_for_ng2",
+          "address": "0x7E00A7",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_2_80",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E0080",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0080",
+          "bank": "7E",
+          "wram_offset": 128
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss (only for ng2)",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss_only_for_ng2",
+          "address": "0x7E0080",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "metalmax2",
+  "display_name": "Metal Max 2 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Metal Max 2 (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E1044FF",
+          "desc": "Infinite Gold",
+          "address": "0x7E1044"
+        },
+        {
+          "code": "7E1045FF",
+          "desc": "Infinite Gold",
+          "address": "0x7E1045"
+        },
+        {
+          "code": "7E1046FF",
+          "desc": "Infinite Gold",
+          "address": "0x7E1046"
+        },
+        {
+          "code": "7E0EFE0F",
+          "desc": "Hero Inf Hp",
+          "address": "0x7E0EFE"
+        },
+        {
+          "code": "7E0EFF27",
+          "desc": "Hero Inf Hp",
+          "address": "0x7E0EFF"
+        },
+        {
+          "code": "7E131663",
+          "desc": "Infinite Main Cannon Ammo Garcia Buggy",
+          "address": "0x7E1316"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "kingofmonsters",
+  "display_name": "King of the Monsters (World) (Action Replay)",
+  "aliases": [
+    "King of the Monsters (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\King of the Monsters (World) (Action Replay).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF3B37:3C",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF3B37"
+        },
+        {
+          "code": "FF3D37:3C",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF3D37"
+        },
+        {
+          "code": "FF3B37:00",
+          "desc": "No Energy P1",
+          "address": "0xFF3B37"
+        },
+        {
+          "code": "FF3D37:00",
+          "desc": "No Energy P2",
+          "address": "0xFF3D37"
+        },
+        {
+          "code": "FF1529:XX",
+          "desc": "Character Highlighter P1",
+          "address": "0xFF1529"
+        },
+        {
+          "code": "FF152D:XX",
+          "desc": "Character Highlighter P2",
+          "address": "0xFF152D"
+        },
+        {
+          "code": "FF15F9:XX",
+          "desc": "Level Highlighter",
+          "address": "0xFF15F9"
+        },
+        {
+          "code": "FF3B2B:A2",
+          "desc": "P1 Is Frozen In-Place",
+          "address": "0xFF3B2B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

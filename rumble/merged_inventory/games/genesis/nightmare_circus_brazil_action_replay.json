@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "nightmarecircus",
+  "display_name": "Nightmare Circus (Brazil) (Action Replay)",
+  "aliases": [
+    "Nightmare Circus (Brazil)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Nightmare Circus (Brazil).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF6F46:0025",
+          "desc": "Infinite Health",
+          "address": "0xFF6F46"
+        },
+        {
+          "code": "FF08BB:0001",
+          "desc": "Debug Mode/Level Select Hold A+MODE Start On Screen Start Options",
+          "address": "0xFF08BB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

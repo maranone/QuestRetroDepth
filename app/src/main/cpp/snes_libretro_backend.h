@@ -27,6 +27,8 @@ public:
     void set_layer_capture_mask(uint32_t mask) override;
     RomHeaderInfo get_rom_header_info() const override;
     const uint32_t* get_z_histogram() const override;
+    const uint8_t* system_ram_data() const override;
+    std::size_t system_ram_size() const override;
 
 private:
     bool ensure_core_initialized(std::string& error_out);
@@ -49,6 +51,7 @@ private:
     std::uint64_t m_video_frame_count = 0;
     bool m_last_frame_had_visible_pixels = false;
     bool m_auto_frame_skip = false;
+    bool m_variables_dirty = false;
     uint32_t m_layer_capture_mask = 0x1Fu;
     mutable uint32_t m_z_histogram[256] = {};
     mutable bool m_histogram_valid = false;

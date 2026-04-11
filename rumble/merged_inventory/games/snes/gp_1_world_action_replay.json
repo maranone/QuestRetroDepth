@@ -1,0 +1,112 @@
+{
+  "system": "snes",
+  "normalized_title": "gp1",
+  "display_name": "GP-1 (World) (Action Replay)",
+  "aliases": [
+    "GP-1 (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\GP-1 (World) (Action Replay).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 18,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "7E01C71E",
+          "desc": "Your Speed Is Always 350 ~ 365 KPH!",
+          "address": "0x7E01C7"
+        },
+        {
+          "code": "7E01C809",
+          "desc": "Your Speed Is Always 350 ~ 365 KPH!",
+          "address": "0x7E01C8"
+        },
+        {
+          "code": "7E2A4140",
+          "desc": "All Frame Upgrades Are Free",
+          "address": "0x7E2A41"
+        },
+        {
+          "code": "7E2A430F",
+          "desc": "Always Have Enough Money To Buy Anything!",
+          "address": "0x7E2A43"
+        },
+        {
+          "code": "7E01C803",
+          "desc": "Auto Race (Player 1)",
+          "address": "0x7E01C8"
+        },
+        {
+          "code": "7E01C7E7",
+          "desc": "Auto Race (Player 1)",
+          "address": "0x7E01C7"
+        },
+        {
+          "code": "7E022803",
+          "desc": "Auto Race (Player 2)",
+          "address": "0x7E0228"
+        },
+        {
+          "code": "7E0227E7",
+          "desc": "Auto Race (Player 2)",
+          "address": "0x7E0227"
+        },
+        {
+          "code": "7E305600",
+          "desc": "Low Lap Time (Seconds)",
+          "address": "0x7E3056"
+        },
+        {
+          "code": "7E305700",
+          "desc": "Low Lap Time (Miliseconds)",
+          "address": "0x7E3057"
+        },
+        {
+          "code": "7E316500",
+          "desc": "Low Total Time (Seconds)",
+          "address": "0x7E3165"
+        },
+        {
+          "code": "7E316600",
+          "desc": "Low Total Time (Miliseconds)",
+          "address": "0x7E3166"
+        },
+        {
+          "code": "7E2AA003",
+          "desc": "Set Max. Front Suspension",
+          "address": "0x7E2AA0"
+        },
+        {
+          "code": "7E2AA203",
+          "desc": "Set Max. Engine",
+          "address": "0x7E2AA2"
+        },
+        {
+          "code": "7E2AA403",
+          "desc": "Set Max. Rear Suspension",
+          "address": "0x7E2AA4"
+        },
+        {
+          "code": "7E2AA603",
+          "desc": "Set Max. Frame",
+          "address": "0x7E2AA6"
+        },
+        {
+          "code": "7E2A4326",
+          "desc": "Infinite Money",
+          "address": "0x7E2A43"
+        },
+        {
+          "code": "7E2C50FF",
+          "desc": "Set GP Points To 255",
+          "address": "0x7E2C50"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

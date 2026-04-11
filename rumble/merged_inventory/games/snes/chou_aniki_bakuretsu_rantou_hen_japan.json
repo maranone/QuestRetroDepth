@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "chouanikibakuretsurantouhen",
+  "display_name": "Chou Aniki - Bakuretsu Rantou Hen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Chou Aniki - Bakuretsu Rantou Hen (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E66F570",
+          "desc": "Infinite Energy Player 1",
+          "address": "0x7E66F5"
+        },
+        {
+          "code": "7E66FD48",
+          "desc": "Infinite Power Player 1",
+          "address": "0x7E66FD"
+        },
+        {
+          "code": "7E593C02",
+          "desc": "Player 1 Wins 1 Round To Win The Fight",
+          "address": "0x7E593C"
+        },
+        {
+          "code": "7E66F700",
+          "desc": "No Energy Player 2",
+          "address": "0x7E66F7"
+        },
+        {
+          "code": "7E66FF00",
+          "desc": "No Power Player 2",
+          "address": "0x7E66FF"
+        },
+        {
+          "code": "7E593F00",
+          "desc": "Player 2 Cannot Win 1 Round",
+          "address": "0x7E593F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,12 @@
+game_name=Tick
+game_key=Tick-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_1ae7	damage_taken	0x7E1AE7	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1ae7	death	0x7E1AE7	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_1b77	life_lost	0x7E1B77	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1b77	life_gained	0x7E1B77	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_1b67	score	0x7E1B67	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_1b69	score	0x7E1B69	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_1b6b	score	0x7E1B6B	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score3_1b6d	score	0x7E1B6D	1	nibble	native	prev < curr	0.8	1	right:0.350:60

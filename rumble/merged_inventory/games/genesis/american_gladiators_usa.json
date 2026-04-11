@@ -1,0 +1,73 @@
+{
+  "system": "genesis",
+  "normalized_title": "americangladiators",
+  "display_name": "American Gladiators (USA)",
+  "aliases": [
+    "American Gladiators (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\americangladiators_genesis.json",
+      "trigger_count": 2,
+      "field_names": [
+        "gameover",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF0010",
+        "0xFF1318"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AmericanGladiators-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFF1318",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF0010",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\American Gladiators (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF01FE:0009",
+          "desc": "Infinite Time P1&amp;P2 (Seconds - Ones Digit)",
+          "address": "0xFF01FE"
+        },
+        {
+          "code": "FF10D0:0032",
+          "desc": "Infinite Health P1&amp;P2 (Joust)",
+          "address": "0xFF10D0"
+        },
+        {
+          "code": "FF11D0:0000",
+          "desc": "Health Modifier CPU (Joust)",
+          "address": "0xFF11D0"
+        },
+        {
+          "code": "FF1095:0000",
+          "desc": "Infinite Shots of Any Weapon (From Attack Shooting Balls)",
+          "address": "0xFF1095"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

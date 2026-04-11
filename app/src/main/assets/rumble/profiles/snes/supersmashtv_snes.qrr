@@ -1,0 +1,7 @@
+game_name=Super Smash T.V. (USA, Europe) (Action Replay)
+game_key=SuperSmashTV-Snes
+system=snes
+integration_tier=stable
+trigger	life_lost_lives_0531	life_lost	0x7E0531	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0531	life_gained	0x7E0531	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0098	score	0x7E0098	7	nibble	little	prev < curr	0.8	1	right:0.350:60

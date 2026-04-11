@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "tecmoworldcup92",
+  "display_name": "Tecmo World Cup '92 (Japan) (Action Replay)",
+  "aliases": [
+    "Tecmo World Cup '92 (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tecmo World Cup '92 (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFF124:0000",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFF124"
+        },
+        {
+          "code": "FFF126:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFF126"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

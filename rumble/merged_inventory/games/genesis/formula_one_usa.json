@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "formulaone",
+  "display_name": "Formula One (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Formula One (USA).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFF524:000F",
+          "desc": "Almost always finish 1st in Championship mode.",
+          "address": "0xFFF524"
+        },
+        {
+          "code": "FFE402:0000",
+          "desc": "Overtaken Modifier",
+          "address": "0xFFE402"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "system": "genesis",
+  "normalized_title": "racedrivin",
+  "display_name": "Race Drivin (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Race Drivin' (USA) (Action Replay)",
+    "Race Drivin' (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Race Drivin' (USA).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF2688:0089",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFF2688"
+        },
+        {
+          "code": "FF268A:0099",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFF268A"
+        },
+        {
+          "code": "FF8E42:0000",
+          "desc": "Zero Lap Time (Minutes - Tens Digit)",
+          "address": "0xFF8E42"
+        },
+        {
+          "code": "FF8E44:0000",
+          "desc": "Zero Lap Time (Minutes - Ones Digit)",
+          "address": "0xFF8E44"
+        },
+        {
+          "code": "FF8E44:0000",
+          "desc": "Zero Lap Time (Seconds - Tens Digit)",
+          "address": "0xFF8E44"
+        },
+        {
+          "code": "FF8E46:0000",
+          "desc": "Zero Lap Time (Seconds - Ones Digit)",
+          "address": "0xFF8E46"
+        },
+        {
+          "code": "FF8E46:0000",
+          "desc": "Zero Lap Time (Micro-Seconds - Tens Digit)",
+          "address": "0xFF8E46"
+        },
+        {
+          "code": "FF8E48:0000",
+          "desc": "Zero Lap Time (Micro-Seconds - Ones Digit)",
+          "address": "0xFF8E48"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

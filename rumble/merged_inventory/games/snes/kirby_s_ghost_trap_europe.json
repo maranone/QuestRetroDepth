@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "kirbysghosttrap",
+  "display_name": "Kirby's Ghost Trap (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Kirby's Ghost Trap (Europe).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7E019401",
+          "desc": "Unlock All Special Custom Mode Options",
+          "address": "0x7E0194"
+        },
+        {
+          "code": "7E071200",
+          "desc": "Enemies Can't Drop Dark Beans On You",
+          "address": "0x7E0712"
+        },
+        {
+          "code": "7E073700",
+          "desc": "Enemies Can't Drop Dark Beans On You",
+          "address": "0x7E0737"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

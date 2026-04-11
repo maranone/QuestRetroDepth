@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "supervolleyball",
+  "display_name": "Super Volley Ball (USA, Japan) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Super Volley Ball (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF808A:XX",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFF808A"
+        },
+        {
+          "code": "FF808B:XX",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFF808B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

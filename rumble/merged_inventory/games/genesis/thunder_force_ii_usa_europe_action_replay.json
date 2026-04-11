@@ -1,0 +1,59 @@
+{
+  "system": "genesis",
+  "normalized_title": "thunderforceii",
+  "display_name": "Thunder Force II (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Thunder Force II (USA, Europe) (Action Replay)",
+    "Thunder Force II (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\thunderforceii_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF9809",
+        "0xFF981D"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ThunderForceII-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF981D",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF9809",
+          "type": ">u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Thunder Force II (USA, Europe).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF8000:0000",
+          "desc": "Invincibility",
+          "address": "0xFF8000"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "turbooutrun",
+  "display_name": "Turbo OutRun (Japan, Europe) (Action Replay)",
+  "aliases": [
+    "Turbo OutRun (Japan, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Turbo OutRun (Japan, Europe).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF9EF7:003C",
+          "desc": "Infinte Time",
+          "address": "0xFF9EF7"
+        },
+        {
+          "code": "FF9D29:0000",
+          "desc": "Always Have Turbo Available",
+          "address": "0xFF9D29"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

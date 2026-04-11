@@ -1,0 +1,145 @@
+{
+  "system": "genesis",
+  "normalized_title": "soniccompilation",
+  "display_name": "Sonic Compilation (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sonic Compilation (Europe).cht",
+      "total_cheat_rows": 62,
+      "raw_entry_count": 70,
+      "distinct_address_count": 50,
+      "sample_raw_entries": [
+        {
+          "code": "FFFFD0:0100",
+          "desc": "Enable Stage Select",
+          "address": "0xFFFFD0"
+        },
+        {
+          "code": "FFFFFA:0100",
+          "desc": "Enable Debug Mode",
+          "address": "0xFFFFFA"
+        },
+        {
+          "code": "FFFE20:00C8",
+          "desc": "Infinite Rings",
+          "address": "0xFFFE20"
+        },
+        {
+          "code": "FFFE12:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFFE12"
+        },
+        {
+          "code": "FFFE10:0000",
+          "desc": "Stage/Act Modifier",
+          "address": "0xFFFE10"
+        },
+        {
+          "code": "FFF761:6411",
+          "desc": "Super Speed!",
+          "address": "0xFFF761"
+        },
+        {
+          "code": "FFD030:00FF",
+          "desc": "Invincibility (Enemies Can't Touch You)",
+          "address": "0xFFD030"
+        },
+        {
+          "code": "FFFE2C:0000",
+          "desc": "Invincibility (Always Have Shield)",
+          "address": "0xFFFE2C"
+        },
+        {
+          "code": "FFFE2C:0001",
+          "desc": "Invincibility (Starman Effect)",
+          "address": "0xFFFE2C"
+        },
+        {
+          "code": "FFFE24:0000",
+          "desc": "Set Total Time To 0:01",
+          "address": "0xFFFE24"
+        },
+        {
+          "code": "FFFE14:00FA",
+          "desc": "Infinite Time Underwater For Sonic",
+          "address": "0xFFFE14"
+        },
+        {
+          "code": "FFD920:0001",
+          "desc": "Defeat Stage 1 Robotnik Boss With 1 Hit",
+          "address": "0xFFD920"
+        },
+        {
+          "code": "FFD820:0001",
+          "desc": "Defeat Stage 2 Robotnik Boss With 1 Hit",
+          "address": "0xFFD820"
+        },
+        {
+          "code": "FFDA20:0001",
+          "desc": "Defeat Stage 3 Robotnik Boss With 1 Hit",
+          "address": "0xFFDA20"
+        },
+        {
+          "code": "FFD860:0001",
+          "desc": "Defeat Stages 4 &amp; 5 Robotnik Bosses With 1 Hit",
+          "address": "0xFFD860"
+        },
+        {
+          "code": "FFFE5E:0001",
+          "desc": "Defeat Final Stage Robotnik Boss With 1 Hit",
+          "address": "0xFFFE5E"
+        },
+        {
+          "code": "FFFE56:0006",
+          "desc": "Set All Chaos Emeralds",
+          "address": "0xFFFE56"
+        },
+        {
+          "code": "FFD012:00FE",
+          "desc": "Switch F/X On For Levitate Jump",
+          "address": "0xFFD012"
+        },
+        {
+          "code": "FFF000:0000",
+          "desc": "Faster Music",
+          "address": "0xFFF000"
+        },
+        {
+          "code": "FFD01E:0000",
+          "desc": "Hyper Mode (Sonic)",
+          "address": "0xFFD01E"
+        },
+        {
+          "code": "FFFB04:0000",
+          "desc": "Sonic Color Modifier",
+          "address": "0xFFFB04"
+        },
+        {
+          "code": "FFFB04:0000",
+          "desc": "Sonic Color Modifier",
+          "address": "0xFFFB04"
+        },
+        {
+          "code": "FFFB06:0000",
+          "desc": "Sonic Color Modifier",
+          "address": "0xFFFB06"
+        },
+        {
+          "code": "FFFB06:0000",
+          "desc": "Sonic Color Modifier",
+          "address": "0xFFFB06"
+        },
+        {
+          "code": "FFFB08:0000",
+          "desc": "Sonic Color Modifier",
+          "address": "0xFFFB08"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

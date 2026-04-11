@@ -1,0 +1,135 @@
+{
+  "system": "genesis",
+  "normalized_title": "junglebook",
+  "display_name": "Jungle Book, The (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Jungle Book The (Rumbles)",
+    "Jungle Book, The (Europe)",
+    "Jungle Book, The (USA)",
+    "Jungle Book, The (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\junglebook_genesis.json",
+      "trigger_count": 6,
+      "field_names": [
+        "gameover",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xFF1C27",
+        "0xFFF4DB",
+        "0xFFFA58",
+        "0xFFFAD4"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JungleBook-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFF1C27",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFFF4DB",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFFAD4",
+          "type": "|n1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFA58",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Jungle Book, The (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FFFAD4:0033",
+          "desc": "Infinite Lives",
+          "address": "0xFFFAD4"
+        },
+        {
+          "code": "FFF9BE:0035",
+          "desc": "Infinite Time",
+          "address": "0xFFF9BE"
+        },
+        {
+          "code": "FFF4DB:0009",
+          "desc": "Infinite Health",
+          "address": "0xFFF4DB"
+        },
+        {
+          "code": "FFFA47:30",
+          "desc": "0 Red Gems Remaining",
+          "address": "0xFFFA47"
+        },
+        {
+          "code": "FFFA48:30",
+          "desc": "0 Red Gems Remaining",
+          "address": "0xFFFA48"
+        },
+        {
+          "code": "FFFB0C:09",
+          "desc": "Infinite Double Bananas",
+          "address": "0xFFFB0C"
+        },
+        {
+          "code": "FFFB0D:09",
+          "desc": "Infinite Double Bananas",
+          "address": "0xFFFB0D"
+        },
+        {
+          "code": "FFFB0E:09",
+          "desc": "Infinite Wooden Boomerangs",
+          "address": "0xFFFB0E"
+        },
+        {
+          "code": "FFFB0F:09",
+          "desc": "Infinite Wooden Boomerangs",
+          "address": "0xFFFB0F"
+        },
+        {
+          "code": "FFFB10:09",
+          "desc": "Infinite Coconuts",
+          "address": "0xFFFB10"
+        },
+        {
+          "code": "FFFB11:09",
+          "desc": "Infinite Coconuts",
+          "address": "0xFFFB11"
+        },
+        {
+          "code": "FFFB12:09",
+          "desc": "Infinite Tribe Mask (ie. Infinite Invulnerability)",
+          "address": "0xFFFB12"
+        },
+        {
+          "code": "FFFB13:09",
+          "desc": "Infinite Tribe Mask (ie. Infinite Invulnerability)",
+          "address": "0xFFFB13"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

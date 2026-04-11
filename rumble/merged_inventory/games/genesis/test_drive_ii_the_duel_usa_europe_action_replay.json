@@ -1,0 +1,37 @@
+{
+  "system": "genesis",
+  "normalized_title": "testdriveiiduel",
+  "display_name": "Test Drive II - The Duel (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Test Drive II - The Duel (USA, Europe) (Unl)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Test Drive II - The Duel (USA, Europe) (Unl).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFE31E:0000",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFE31E"
+        },
+        {
+          "code": "FFE33E:00FF",
+          "desc": "Drive At A Decent Speed",
+          "address": "0xFFE33E"
+        },
+        {
+          "code": "FFE306:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFE306"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

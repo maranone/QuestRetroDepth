@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "asterixandpowerofgods",
+  "display_name": "Asterix and the Power of the Gods (Europe) (En,Fr,De,Es,It) (Beta) (February, 1994)",
+  "aliases": [
+    "Asterix and the Power of the Gods (Europe) (Action Replay)",
+    "Asterix and the Power of the Gods (Europe) (En,Fr,De,Es)",
+    "Asterix and the Power of the Gods (Europe) (En,Fr,De,Es,It) (Beta) (February, 1994)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\asterixandthepowerofthegods_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFB029",
+        "0xFFB02B",
+        "0xFFB02E"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AsterixAndThePowerOfTheGods-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFB029",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFB02B",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFB02E",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Asterix and the Power of the Gods (Europe) (En,Fr,De,Es,It) (Beta) (February, 1994).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFA927:0008",
+          "desc": "Infinite Hearts",
+          "address": "0xFFA927"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

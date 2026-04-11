@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "turbotoons",
+  "display_name": "Turbo Toons (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Turbo Toons (Europe).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E1E4404",
+          "desc": "Start At Final Tournament",
+          "address": "0x7E1E44"
+        },
+        {
+          "code": "7E0C9EE0",
+          "desc": "Infinite Turbo For Hong Kong Phooey",
+          "address": "0x7E0C9E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

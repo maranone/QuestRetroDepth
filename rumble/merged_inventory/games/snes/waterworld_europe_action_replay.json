@@ -1,0 +1,27 @@
+{
+  "system": "snes",
+  "normalized_title": "waterworld",
+  "display_name": "Waterworld (Europe) (Action Replay)",
+  "aliases": [
+    "Waterworld (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Waterworld (Europe).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "7E02887F",
+          "desc": "Infinite Energy (Overworld)",
+          "address": "0x7E0288"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "done": {
+    "variables": {
+      "lives": {
+        "op": "equal",
+        "reference": 1
+      }
+    }
+  },
+  "reward": {
+    "script": "lua:max_score_reward"
+  },
+  "scripts": [
+    "script.lua"
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "system": "genesis",
+  "normalized_title": "sonichedgehog3",
+  "display_name": "Sonic The Hedgehog 3 (World) (Action Replay)",
+  "aliases": [
+    "Sonic The Hedgehog 3 (Rumbles)",
+    "Sonic The Hedgehog 3 (USA)",
+    "Sonic The Hedgehog 3 (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\sonicthehedgehog3_genesis.json",
+      "trigger_count": 4,
+      "field_names": [
+        "lives",
+        "rings",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFFE12",
+        "0xFFFE20",
+        "0xFFFE26"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SonicTheHedgehog3-Genesis-v0\\data.json",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFFE12",
+          "type": "|u1"
+        },
+        {
+          "name": "rings",
+          "address": "0xFFFE20",
+          "type": ">u2"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFE26",
+          "type": ">u4"
+        },
+        {
+          "name": "time",
+          "address": "0xFFFE23",
+          "type": ">u2"
+        },
+        {
+          "name": "x",
+          "address": "0xFFB010",
+          "type": ">u2"
+        },
+        {
+          "name": "y",
+          "address": "0xFFB014",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 6
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sonic The Hedgehog 3 (World) (Action Replay).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 20,
+      "distinct_address_count": 20,
+      "sample_raw_entries": [
+        {
+          "code": "FFFFD0:0100",
+          "desc": "Enable Stage Select",
+          "address": "0xFFFFD0"
+        },
+        {
+          "code": "FFFFFA:0100",
+          "desc": "Enable Debug Mode",
+          "address": "0xFFFFFA"
+        },
+        {
+          "code": "FFFE20:00C8",
+          "desc": "Infinite Rings",
+          "address": "0xFFFE20"
+        },
+        {
+          "code": "FFFE12:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFFE12"
+        },
+        {
+          "code": "FFE438:0001",
+          "desc": "Only Need 1 Blue Sphere For Chaos Emerald",
+          "address": "0xFFE438"
+        },
+        {
+          "code": "FFE439:0001",
+          "desc": "Only Need 1 Blue Sphere For Chaos Emerald (On An Actual System)",
+          "address": "0xFFE439"
+        },
+        {
+          "code": "FFFFB0:0007",
+          "desc": "All Emeralds Collected",
+          "address": "0xFFFFB0"
+        },
+        {
+          "code": "FFFE24:000F",
+          "desc": "Stop Timer",
+          "address": "0xFFFE24"
+        },
+        {
+          "code": "FFB029:6600",
+          "desc": "Ultimate Invincibility!",
+          "address": "0xFFB029"
+        },
+        {
+          "code": "FFB02B:0066",
+          "desc": "Ultimate Invincibility! (On An Actual System)",
+          "address": "0xFFB02B"
+        },
+        {
+          "code": "FFF761:6419",
+          "desc": "Super Speed! [Sonic]",
+          "address": "0xFFF761"
+        },
+        {
+          "code": "FFFEC1:6419",
+          "desc": "Super Speed! [Tails]",
+          "address": "0xFFFEC1"
+        },
+        {
+          "code": "FFF65D:FF00",
+          "desc": "Flashing As If Super",
+          "address": "0xFFF65D"
+        },
+        {
+          "code": "FFF760:1600",
+          "desc": "Super Fast",
+          "address": "0xFFF760"
+        },
+        {
+          "code": "FFF762:0046",
+          "desc": "Super Fast",
+          "address": "0xFFF762"
+        },
+        {
+          "code": "FFB02A:006E",
+          "desc": "All Powerful! [Invincible, Aqua Breathe, Magnetism]",
+          "address": "0xFFB02A"
+        },
+        {
+          "code": "FFF65E:04FF",
+          "desc": "Yellow & Flashes, As If Super Sonic",
+          "address": "0xFFF65E"
+        },
+        {
+          "code": "FFB01A:FE",
+          "desc": "Switch F/X On For Levitate Jump For Sonic",
+          "address": "0xFFB01A"
+        },
+        {
+          "code": "FFB05A:FE",
+          "desc": "Switch F/X On For Levitate Jump For Tails",
+          "address": "0xFFB05A"
+        },
+        {
+          "code": "FFFF86:02",
+          "desc": "Level Select Automatically Highlighted On Start Menu",
+          "address": "0xFFFF86"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

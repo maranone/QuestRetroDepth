@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "pyramidmagic",
+  "display_name": "Pyramid Magic (Japan) (SegaNet)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Pyramid Magic (Japan) (SegaNet).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF20B0:4E75",
+          "desc": "Freeze Time",
+          "address": "0xFF20B0"
+        },
+        {
+          "code": "FF2804:6002",
+          "desc": "Infinite Lives",
+          "address": "0xFF2804"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

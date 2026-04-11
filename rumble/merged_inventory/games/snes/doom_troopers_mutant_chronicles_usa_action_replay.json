@@ -1,0 +1,62 @@
+{
+  "system": "snes",
+  "normalized_title": "doomtroopersmutantchronicles",
+  "display_name": "Doom Troopers - Mutant Chronicles (USA) (Action Replay)",
+  "aliases": [
+    "Doom Troopers - Mutant Chronicles (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Doom Troopers - Mutant Chronicles (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E0C3164",
+          "desc": "Infinite energy",
+          "address": "0x7E0C31"
+        },
+        {
+          "code": "7E0CB303",
+          "desc": "Infinite Lives",
+          "address": "0x7E0CB3"
+        },
+        {
+          "code": "7E010203",
+          "desc": "Infinite Lives",
+          "address": "0x7E0102"
+        },
+        {
+          "code": "7E00E663",
+          "desc": "Infinite Ammo",
+          "address": "0x7E00E6"
+        },
+        {
+          "code": "7E00EA0A",
+          "desc": "Infinite Special Weapon Ammo",
+          "address": "0x7E00EA"
+        },
+        {
+          "code": "7E0C9901",
+          "desc": "Untouchable",
+          "address": "0x7E0C99"
+        },
+        {
+          "code": "7E010201",
+          "desc": "Die to Complete the Level",
+          "address": "0x7E0102"
+        },
+        {
+          "code": "7E012E04",
+          "desc": "Stage Select is Enabled",
+          "address": "0x7E012E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

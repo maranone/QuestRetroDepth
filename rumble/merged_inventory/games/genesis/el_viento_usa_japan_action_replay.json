@@ -1,0 +1,110 @@
+{
+  "system": "genesis",
+  "normalized_title": "elviento",
+  "display_name": "El. Viento (USA, Japan) (Action Replay)",
+  "aliases": [
+    "El. Viento (USA, Japan) (Action Replay)",
+    "El.Viento (Japan)",
+    "El.Viento (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\elviento_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFAB3B",
+        "0xFFD49E"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ElViento-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFAB3B",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFD49E",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\El.Viento (USA).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 11,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FFAC8A:0000",
+          "desc": "Scene/Level Modifier",
+          "address": "0xFFAC8A"
+        },
+        {
+          "code": "FFAFFC:0001",
+          "desc": "Magic Modifier",
+          "address": "0xFFAFFC"
+        },
+        {
+          "code": "FFAB40:0004",
+          "desc": "Can Throw 4 Boomerangs Instead of 2",
+          "address": "0xFFAB40"
+        },
+        {
+          "code": "FFAB3A:0027",
+          "desc": "Infinite Energy",
+          "address": "0xFFAB3A"
+        },
+        {
+          "code": "FFAB3A:0096",
+          "desc": "Infinite Max Energy",
+          "address": "0xFFAB3A"
+        },
+        {
+          "code": "FFAB3E:0060",
+          "desc": "Max Energy",
+          "address": "0xFFAB3E"
+        },
+        {
+          "code": "FFAC90:0010",
+          "desc": "Infinite Magic",
+          "address": "0xFFAC90"
+        },
+        {
+          "code": "FFAC90:0096",
+          "desc": "Infinite Max Magic",
+          "address": "0xFFAC90"
+        },
+        {
+          "code": "FFAC94:0096",
+          "desc": "Max Magic",
+          "address": "0xFFAC94"
+        },
+        {
+          "code": "FF9138:00FA",
+          "desc": "Super Jump",
+          "address": "0xFF9138"
+        },
+        {
+          "code": "FFFE11:0009",
+          "desc": "Infinite Continues",
+          "address": "0xFFFE11"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

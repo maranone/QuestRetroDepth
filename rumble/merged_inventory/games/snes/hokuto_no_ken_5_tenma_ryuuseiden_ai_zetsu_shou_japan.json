@@ -1,0 +1,50 @@
+{
+  "system": "snes",
+  "normalized_title": "hokutonoken5tenmaryuuseidenaizetsushou",
+  "display_name": "Hokuto no Ken 5 - Tenma Ryuuseiden Ai Zetsu Shou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Hokuto no Ken 5 - Tenma Ryuuseiden Ai Zetsu Shou (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E2ECBFF",
+          "desc": "Money",
+          "address": "0x7E2ECB"
+        },
+        {
+          "code": "7E2ECCFF",
+          "desc": "Money",
+          "address": "0x7E2ECC"
+        },
+        {
+          "code": "7E3058FF",
+          "desc": "Hero Inf Hp",
+          "address": "0x7E3058"
+        },
+        {
+          "code": "7E305CFF",
+          "desc": "Hero Inf Op",
+          "address": "0x7E305C"
+        },
+        {
+          "code": "7E6AF0FF",
+          "desc": "2nd Player Inf Hp",
+          "address": "0x7E6AF0"
+        },
+        {
+          "code": "7E6AF4FF",
+          "desc": "2nd Player Inf Op",
+          "address": "0x7E6AF4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

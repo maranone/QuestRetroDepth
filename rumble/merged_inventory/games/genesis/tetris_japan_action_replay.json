@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "tetris",
+  "display_name": "Tetris (Japan) (Action Replay)",
+  "aliases": [
+    "Tetris (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Tetris (Japan).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFEB88:00B1",
+          "desc": "Infinite Time In Time Trial (One's Digit?)",
+          "address": "0xFFEB88"
+        },
+        {
+          "code": "FFEA21:0000",
+          "desc": "P1 Next Piece Modifier",
+          "address": "0xFFEA21"
+        },
+        {
+          "code": "FFEAA1:0000",
+          "desc": "P2 Next Piece Modifier",
+          "address": "0xFFEAA1"
+        },
+        {
+          "code": "FFEB89:00B4",
+          "desc": "Infinite Time in Time Trial",
+          "address": "0xFFEB89"
+        },
+        {
+          "code": "FFEB8B:002A",
+          "desc": "Freezer Timer in Time Trial",
+          "address": "0xFFEB8B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

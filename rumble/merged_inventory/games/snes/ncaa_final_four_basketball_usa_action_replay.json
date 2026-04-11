@@ -1,0 +1,52 @@
+{
+  "system": "snes",
+  "normalized_title": "ncaafinalfourbasketball",
+  "display_name": "NCAA Final Four Basketball (USA) (Action Replay)",
+  "aliases": [
+    "NCAA Final Four Basketball (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\NCAA Final Four Basketball (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E13F000",
+          "desc": "Team 1 Points Modifier",
+          "address": "0x7E13F0"
+        },
+        {
+          "code": "7E13F400",
+          "desc": "Team 1 Points Modifier",
+          "address": "0x7E13F4"
+        },
+        {
+          "code": "7E13F200",
+          "desc": "Team 2 Points Modifier",
+          "address": "0x7E13F2"
+        },
+        {
+          "code": "7E13F600",
+          "desc": "Team 2 Points Modifier",
+          "address": "0x7E13F6"
+        },
+        {
+          "code": "7E140200",
+          "desc": "Game Clock Seconds Modifier",
+          "address": "0x7E1402"
+        },
+        {
+          "code": "7E140000",
+          "desc": "Game Clock Minutes Modifier",
+          "address": "0x7E1400"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

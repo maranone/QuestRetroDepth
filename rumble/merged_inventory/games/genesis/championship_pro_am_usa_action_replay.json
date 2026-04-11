@@ -1,0 +1,120 @@
+{
+  "system": "genesis",
+  "normalized_title": "championshipproam",
+  "display_name": "Championship Pro-Am (USA) (Action Replay)",
+  "aliases": [
+    "Championship Pro-Am (USA) (Action Replay)",
+    "Championship Pro-Am (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\championshipproam_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "gameover",
+        "level",
+        "score0",
+        "score1",
+        "score2"
+      ],
+      "field_count": 5,
+      "distinct_addresses": [
+        "0xFF02FE",
+        "0xFF05A0",
+        "0xFF05A1",
+        "0xFF05A2",
+        "0xFF0D66"
+      ],
+      "distinct_address_count": 5
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ChampionshipProAm-Genesis-v0\\data.json",
+      "field_count": 7,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFF0D66",
+          "type": "|u1"
+        },
+        {
+          "name": "level",
+          "address": "0xFF02FE",
+          "type": "|u1"
+        },
+        {
+          "name": "position",
+          "address": "0xFF0305",
+          "type": "|i1"
+        },
+        {
+          "name": "score0",
+          "address": "0xFF05A2",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0xFF05A1",
+          "type": "|u1"
+        },
+        {
+          "name": "score2",
+          "address": "0xFF05A0",
+          "type": "|u1"
+        },
+        {
+          "name": "speed",
+          "address": "0xFF0654",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 7
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Championship Pro-Am (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF0304:0000",
+          "desc": "Always Place 1st",
+          "address": "0xFF0304"
+        },
+        {
+          "code": "FF056E:0063",
+          "desc": "Infinite Weapons",
+          "address": "0xFF056E"
+        },
+        {
+          "code": "FF056C:0008",
+          "desc": "Have All Letters",
+          "address": "0xFF056C"
+        },
+        {
+          "code": "FF0562:0004",
+          "desc": "Max Super Sticky Tires",
+          "address": "0xFF0562"
+        },
+        {
+          "code": "FF0564:0004",
+          "desc": "Max Turbo Acceleration",
+          "address": "0xFF0564"
+        },
+        {
+          "code": "FF0566:0004",
+          "desc": "Max Higher Top Speed",
+          "address": "0xFF0566"
+        },
+        {
+          "code": "FF02FE:0000",
+          "desc": "Level Modifier",
+          "address": "0xFF02FE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

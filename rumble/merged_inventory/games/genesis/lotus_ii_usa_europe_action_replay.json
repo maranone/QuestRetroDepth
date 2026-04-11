@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "lotusii",
+  "display_name": "Lotus II (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Lotus II (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Lotus II (USA, Europe).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF2BC6:00FF",
+          "desc": "Infinite Time",
+          "address": "0xFF2BC6"
+        },
+        {
+          "code": "FF2BB4:00FF",
+          "desc": "Score Keeps Climbing",
+          "address": "0xFF2BB4"
+        },
+        {
+          "code": "FF2BB4:0010",
+          "desc": "Decent Acceleration",
+          "address": "0xFF2BB4"
+        },
+        {
+          "code": "FF2BB4:0025",
+          "desc": "Maximum Acceleration",
+          "address": "0xFF2BB4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

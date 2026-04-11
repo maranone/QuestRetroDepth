@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "davidcranesamazingtennis",
+  "display_name": "David Crane's Amazing Tennis (USA) (Action Replay)",
+  "aliases": [
+    "David Crane's Amazing Tennis (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\David Crane's Amazing Tennis (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFB788:0000",
+          "desc": "Player 1 Score Modifier",
+          "address": "0xFFB788"
+        },
+        {
+          "code": "FF8F04:0000",
+          "desc": "Opponent Score Modifier (P2/CPU)",
+          "address": "0xFF8F04"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

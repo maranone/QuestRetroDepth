@@ -1,0 +1,63 @@
+{
+  "system": "snes",
+  "normalized_title": "extrainnings",
+  "display_name": "Extra Innings (USA) (Action Replay)",
+  "aliases": [
+    "Extra Innings (USA) (Game Genie)",
+    "Extra Innings (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Extra Innings (USA).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E014F00",
+          "desc": "Strike Modifier",
+          "address": "0x7E014F"
+        },
+        {
+          "code": "7E015100",
+          "desc": "Out Modifier",
+          "address": "0x7E0151"
+        },
+        {
+          "code": "7E015000",
+          "desc": "Ball Modifier",
+          "address": "0x7E0150"
+        },
+        {
+          "code": "7E050900",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0x7E0509"
+        },
+        {
+          "code": "7E051300",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0x7E0513"
+        },
+        {
+          "code": "7E054900",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0x7E0549"
+        },
+        {
+          "code": "7E055300",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0x7E0553"
+        },
+        {
+          "code": "7E014D00",
+          "desc": "Inning Modifier",
+          "address": "0x7E014D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

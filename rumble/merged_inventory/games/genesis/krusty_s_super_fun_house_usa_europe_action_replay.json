@@ -1,0 +1,38 @@
+{
+  "system": "genesis",
+  "normalized_title": "krustyssuperfunhouse",
+  "display_name": "Krusty's Super Fun House (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Krusty's Super Fun House (USA, Europe) (Rev A)",
+    "Krusty's Super Fun House (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Krusty's Super Fun House (USA, Europe).cht",
+      "total_cheat_rows": 85,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF0FF3:0003",
+          "desc": "Unlimited Men",
+          "address": "0xFF0FF3"
+        },
+        {
+          "code": "FF053F:0000",
+          "desc": "1 Shot Kill Some Enemies",
+          "address": "0xFF053F"
+        },
+        {
+          "code": "FF0FF5:0064",
+          "desc": "Infinite Energy",
+          "address": "0xFF0FF5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

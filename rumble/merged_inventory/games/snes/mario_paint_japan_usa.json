@@ -1,0 +1,75 @@
+{
+  "system": "snes",
+  "normalized_title": "mariopaint",
+  "display_name": "Mario Paint (Japan, USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Mario Paint (Japan, USA).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "7F0040FF",
+          "desc": "Invincibility In Bug Swatting Game",
+          "address": "0x7F0040"
+        },
+        {
+          "code": "7F001863",
+          "desc": "Infinite Lives In Bug Swatting Game",
+          "address": "0x7F0018"
+        },
+        {
+          "code": "7F00120F",
+          "desc": "Have All Icons In Bug Swatting Game",
+          "address": "0x7F0012"
+        },
+        {
+          "code": "7E026700",
+          "desc": "Some Enemies On Screen Are Invisible In Bug Swatting Game",
+          "address": "0x7E0267"
+        },
+        {
+          "code": "7F001B01",
+          "desc": "No Score Display In Fly Game",
+          "address": "0x7F001B"
+        },
+        {
+          "code": "7F001E02",
+          "desc": "Only Need To Swat Once To Move Around And Kill Flies!",
+          "address": "0x7F001E"
+        },
+        {
+          "code": "7E099F01",
+          "desc": "Enable All Rotate/Flip Options",
+          "address": "0x7E099F"
+        },
+        {
+          "code": "7F00C914",
+          "desc": "One Hit To Kill Boss",
+          "address": "0x7F00C9"
+        },
+        {
+          "code": "7F001400",
+          "desc": "Level Modifier",
+          "address": "0x7F0014"
+        },
+        {
+          "code": "7F001800",
+          "desc": "Number of Hands (Lives Modifier)",
+          "address": "0x7F0018"
+        },
+        {
+          "code": "7F001A64",
+          "desc": "Fake Counter On Screen",
+          "address": "0x7F001A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "system": "genesis",
+  "normalized_title": "legendofgalahadgalahad",
+  "display_name": "Legend of Galahad, The _ Galahad (USA, Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Legend of Galahad, The _ Galahad (USA, Europe).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF13F7:0005",
+          "desc": "Unlimited Men",
+          "address": "0xFF13F7"
+        },
+        {
+          "code": "FF1470:0007",
+          "desc": "Infinite Health",
+          "address": "0xFF1470"
+        },
+        {
+          "code": "FF13E6:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF13E6"
+        },
+        {
+          "code": "FF146A:0009",
+          "desc": "Infinite Bombs",
+          "address": "0xFF146A"
+        },
+        {
+          "code": "FF146C:270F",
+          "desc": "9999 Coins",
+          "address": "0xFF146C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

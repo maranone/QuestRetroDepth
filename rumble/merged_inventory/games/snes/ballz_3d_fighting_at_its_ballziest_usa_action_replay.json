@@ -1,0 +1,58 @@
+{
+  "system": "snes",
+  "normalized_title": "ballz3dfightingatitsballziest",
+  "display_name": "Ballz 3D - Fighting at Its Ballziest (USA) (Action Replay)",
+  "aliases": [
+    "Ballz 3D - Fighting at Its Ballziest (USA) (Game Genie)",
+    "Ballz 3D - Fighting at Its Ballziest (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ballz 3D - Fighting at Its Ballziest (USA).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 7,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E02AEC8",
+          "desc": "Player 1 Infinite Health",
+          "address": "0x7E02AE"
+        },
+        {
+          "code": "7E02AE00",
+          "desc": "Player 1 No Health",
+          "address": "0x7E02AE"
+        },
+        {
+          "code": "7E0EBAC8",
+          "desc": "Player 2 Infinite Health",
+          "address": "0x7E0EBA"
+        },
+        {
+          "code": "7E0EBA00",
+          "desc": "Player 2 No Health",
+          "address": "0x7E0EBA"
+        },
+        {
+          "code": "7E241F63",
+          "desc": "99 Seconds Left in Round",
+          "address": "0x7E241F"
+        },
+        {
+          "code": "7E6D4704",
+          "desc": "P1 Character Highlighter",
+          "address": "0x7E6D47"
+        },
+        {
+          "code": "7E02AEA0",
+          "desc": "Infinite Health P1",
+          "address": "0x7E02AE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

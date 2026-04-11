@@ -1,0 +1,47 @@
+{
+  "system": "snes",
+  "normalized_title": "kirbysavalanche",
+  "display_name": "Kirby's Avalanche (USA) (Game Genie)",
+  "aliases": [
+    "Kirby's Avalanche (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Kirby's Avalanche (USA).cht",
+      "total_cheat_rows": 43,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E019401",
+          "desc": "Unlock All Special Custom Mode Options",
+          "address": "0x7E0194"
+        },
+        {
+          "code": "7E071200",
+          "desc": "P1 Never Gets Rocks",
+          "address": "0x7E0712"
+        },
+        {
+          "code": "7E0752FF",
+          "desc": "CPU Constantly Gets Rocks",
+          "address": "0x7E0752"
+        },
+        {
+          "code": "7E071200",
+          "desc": "Enemies Can't Drop Dark Beans On You",
+          "address": "0x7E0712"
+        },
+        {
+          "code": "7E073700",
+          "desc": "Enemies Can't Drop Dark Beans On You",
+          "address": "0x7E0737"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

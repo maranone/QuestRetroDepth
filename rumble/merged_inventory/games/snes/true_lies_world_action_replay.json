@@ -1,0 +1,59 @@
+{
+  "system": "snes",
+  "normalized_title": "truelies",
+  "display_name": "True Lies (World) (Action Replay)",
+  "aliases": [
+    "True Lies (USA) (Beta)",
+    "True Lies (USA)",
+    "True Lies (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\True Lies (World) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E325A17",
+          "desc": "Infinite Health",
+          "address": "0x7E325A"
+        },
+        {
+          "code": "7E00B1FA",
+          "desc": "Infinite Uzi Ammo",
+          "address": "0x7E00B1"
+        },
+        {
+          "code": "7E00AD63",
+          "desc": "Infinite Handgun Ammo",
+          "address": "0x7E00AD"
+        },
+        {
+          "code": "7E00AF63",
+          "desc": "Infinite Shotgun Ammo",
+          "address": "0x7E00AF"
+        },
+        {
+          "code": "7E00B309",
+          "desc": "Infinite Grenades",
+          "address": "0x7E00B3"
+        },
+        {
+          "code": "7E00B509",
+          "desc": "Infinite Mines",
+          "address": "0x7E00B5"
+        },
+        {
+          "code": "7E1B171F",
+          "desc": "Have All Weapons",
+          "address": "0x7E1B17"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

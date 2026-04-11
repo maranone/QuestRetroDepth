@@ -1,0 +1,5 @@
+game_name=JimLeesWildcats
+game_key=JimLeesWildcats-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_d79	damage_taken	0x7E0D79	1	uint	native	prev > curr	0.85	1	left:0.750:180

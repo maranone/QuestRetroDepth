@@ -1,0 +1,7 @@
+game_name=Body Count (Europe, Brazil) (Action Replay)
+game_key=BodyCount-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ff50f8	damage_taken	0xFF50F8	1	int	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff50f8	death	0xFF50F8	1	int	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_ff02cd	score	0xFF02CD	3	uint	big	prev < curr	0.8	1	right:0.350:60

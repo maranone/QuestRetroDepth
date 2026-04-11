@@ -1,0 +1,114 @@
+{
+  "system": "genesis",
+  "normalized_title": "virtuafighter2",
+  "display_name": "Virtua Fighter 2 (USA, Europe)",
+  "aliases": [
+    "Virtua Fighter 2 (USA, Europe)"
+  ],
+  "sources": {
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\VirtuaFighter2-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "enemy_health",
+          "address": "0xFFDEE2",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFFDCE3",
+          "type": "|u1"
+        },
+        {
+          "name": "time",
+          "address": "0xFF0218",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Virtua Fighter 2 (USA, Europe).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 14,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "FF06C6:0000",
+          "desc": "Character Modifier P1",
+          "address": "0xFF06C6"
+        },
+        {
+          "code": "FF06E2:0000",
+          "desc": "Character Highlighter Modifier P1",
+          "address": "0xFF06E2"
+        },
+        {
+          "code": "FFDCE2:0070",
+          "desc": "Infinite Health P1",
+          "address": "0xFFDCE2"
+        },
+        {
+          "code": "FFDC0C:0000",
+          "desc": "Rounds Won Modifier P1 (Ignore HUD)",
+          "address": "0xFFDC0C"
+        },
+        {
+          "code": "FF06EA:0000",
+          "desc": "Character Modifier P2",
+          "address": "0xFF06EA"
+        },
+        {
+          "code": "FF06FE:0000",
+          "desc": "Character Highlighter Modifier P2",
+          "address": "0xFF06FE"
+        },
+        {
+          "code": "FFDEE2:0000",
+          "desc": "No Health P2",
+          "address": "0xFFDEE2"
+        },
+        {
+          "code": "FFCB98:00BE",
+          "desc": "Position Modifier P2 In Match",
+          "address": "0xFFCB98"
+        },
+        {
+          "code": "FFDE0C:0000",
+          "desc": "Rounds Won Modifier P2 (Ignore HUD)",
+          "address": "0xFFDE0C"
+        },
+        {
+          "code": "FF0700:0063",
+          "desc": "Infinite Time To Choose Character (Character Select)",
+          "address": "0xFF0700"
+        },
+        {
+          "code": "FF021A:0063",
+          "desc": "Infinite Time Left (In Match)",
+          "address": "0xFF021A"
+        },
+        {
+          "code": "FF0212:0000",
+          "desc": "Low Timer For Time Spent Fighting (Minutes) (In Match)",
+          "address": "0xFF0212"
+        },
+        {
+          "code": "FF0212:0000",
+          "desc": "Low Timer For Time Spent Fighting (Seconds) (In Match)",
+          "address": "0xFF0212"
+        },
+        {
+          "code": "FF0214:0000",
+          "desc": "Low Timer For Time Spent Fighting (Micro-Seconds) (In Match)",
+          "address": "0xFF0214"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

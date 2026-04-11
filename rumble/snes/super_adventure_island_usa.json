@@ -1,0 +1,79 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Super Adventure Island (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Super Adventure Island (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "DD6A-646F",
+      "desc": "Start With 1 Life Instead Of 3",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D06A-646F",
+      "desc": "Start With 5 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DB6A-646F",
+      "desc": "Start With 10 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D36A-646F",
+      "desc": "Start With 15 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F66A-646F",
+      "desc": "Start With 25 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "7F6A-646F",
+      "desc": "Start With 50 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "146A-646F",
+      "desc": "Start With 99 Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2B3-D46D",
+      "desc": "Infinite Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD6A-67AF",
+      "desc": "Start With 1 Credit",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D96A-67AF",
+      "desc": "Start With 6 Credits",
+      "kind": "game_genie"
+    },
+    {
+      "code": "C2CD-0F0D",
+      "desc": "Infinite Credits",
+      "kind": "game_genie"
+    },
+    {
+      "code": "CBBE-DF94",
+      "desc": "Fruit Restores Full Energy",
+      "kind": "game_genie"
+    },
+    {
+      "code": "FDBE-DFB4",
+      "desc": "Fruit Restores Full Energy",
+      "kind": "game_genie"
+    }
+  ]
+}

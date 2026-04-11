@@ -1,0 +1,5 @@
+game_name=JamesPond3OperationStarfi
+game_key=JamesPond3OperationStarfi-Genesis
+system=genesis
+integration_tier=manual
+trigger	damage_taken_0_e37e	damage_taken	0xFFE37E	1	uint	native	prev > curr	0.85	1	left:0.750:180

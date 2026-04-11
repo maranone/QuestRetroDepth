@@ -1,0 +1,49 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Donkey Kong Contry [Esp]",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Donkey Kong Contry [Esp].cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "1DC8-C3EA",
+      "desc": "Invincible",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DD88-C37A",
+      "desc": "Bad Buddy Code",
+      "kind": "game_genie"
+    },
+    {
+      "code": "DDB0-37A4",
+      "desc": "EZ Level Exit",
+      "kind": "game_genie"
+    },
+    {
+      "code": "EE81-C383",
+      "desc": "Expresso MultiJump",
+      "kind": "game_genie"
+    },
+    {
+      "code": "1DC8-C3EA",
+      "desc": "Invincibility [No 'Lockup']",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F6C7-128A",
+      "desc": "Invincibility [No 'Lockup']",
+      "kind": "game_genie"
+    },
+    {
+      "code": "F6CA-32EA",
+      "desc": "Invincibility [No 'Lockup']",
+      "kind": "game_genie"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Wild Guns (USA)",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Wild Guns (USA).cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "code": "EEF2-2A78",
+      "desc": "Infinite Points And Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "ABF2-2A58",
+      "desc": "Infinite Points And Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "BCF2-2A88",
+      "desc": "Infinite Points And Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "78F2-2AE8",
+      "desc": "Infinite Points And Lives",
+      "kind": "game_genie"
+    },
+    {
+      "code": "17FC-2A78",
+      "desc": "Infinite Bombs (To Use, Press X Button)",
+      "kind": "game_genie"
+    },
+    {
+      "code": "D0FC-2378",
+      "desc": "Always Have Double Shotgun",
+      "kind": "game_genie"
+    }
+  ]
+}

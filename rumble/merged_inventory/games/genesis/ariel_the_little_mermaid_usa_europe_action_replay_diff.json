@@ -1,0 +1,145 @@
+{
+  "system": "genesis",
+  "normalized_title": "ariellittlemermaid",
+  "display_name": "Ariel the Little Mermaid (USA, Europe) (Action Replay) (diff)",
+  "aliases": [
+    "Ariel the Little Mermaid (USA, Europe) (Action Replay) (diff)",
+    "Ariel the Little Mermaid (USA, Europe) (Action Replay)",
+    "Ariel the Little Mermaid (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\arielthelittlemermaid_genesis.json",
+      "trigger_count": 4,
+      "field_names": [
+        "health",
+        "lives"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF404D",
+        "0xFFA60F"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ArielTheLittleMermaid-Genesis-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF404D",
+          "type": "|u1"
+        },
+        {
+          "name": "keys",
+          "address": "0xFFA60E",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFA60F",
+          "type": "|u1"
+        },
+        {
+          "name": "money",
+          "address": "0xFFA60C",
+          "type": ">u2"
+        },
+        {
+          "name": "prisoners_remaining",
+          "address": "0xFF3FF9",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ariel the Little Mermaid (USA, Europe).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "FF404C:0028",
+          "desc": "Infinite Energy",
+          "address": "0xFF404C"
+        },
+        {
+          "code": "FFA60E:0505",
+          "desc": "Infinite Lives",
+          "address": "0xFFA60E"
+        },
+        {
+          "code": "FF3FF6:0003",
+          "desc": "Most Enemies Can't Harm You",
+          "address": "0xFF3FF6"
+        },
+        {
+          "code": "FF486E:0000",
+          "desc": "Character Modifier",
+          "address": "0xFF486E"
+        },
+        {
+          "code": "FF4BB4:0008",
+          "desc": "Infinite Flounder Time",
+          "address": "0xFF4BB4"
+        },
+        {
+          "code": "FF4934:0000",
+          "desc": "Boss Dies",
+          "address": "0xFF4934"
+        },
+        {
+          "code": "FF8000:0000",
+          "desc": "Level Modifier",
+          "address": "0xFF8000"
+        },
+        {
+          "code": "FFA611:0028",
+          "desc": "Unlimited Energy",
+          "address": "0xFFA611"
+        },
+        {
+          "code": "FFA60F:0004",
+          "desc": "Infinite Lives",
+          "address": "0xFFA60F"
+        },
+        {
+          "code": "FFA610:0016",
+          "desc": "Infinite Super Weapon",
+          "address": "0xFFA610"
+        },
+        {
+          "code": "FFA60E:0005",
+          "desc": "More Keys",
+          "address": "0xFFA60E"
+        },
+        {
+          "code": "FFA60D:0099",
+          "desc": "More Treasure",
+          "address": "0xFFA60D"
+        },
+        {
+          "code": "FFA612:0005",
+          "desc": "Unlimited Flounder",
+          "address": "0xFFA612"
+        },
+        {
+          "code": "FFA613:0005",
+          "desc": "Unlimited Sebastian",
+          "address": "0xFFA613"
+        },
+        {
+          "code": "FFA614:0005",
+          "desc": "Unlimited Digger Fish",
+          "address": "0xFFA614"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=SonicTheHedgehogRandomLevels
+game_key=SonicTheHedgehogRandomLevels-Genesis
+system=genesis
+integration_tier=stable
+trigger	game_over_gameover_ffd038	game_over	0xFFD038	1	uint	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000

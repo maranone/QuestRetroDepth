@@ -1,0 +1,7 @@
+game_name=Sparkster (World) (Action Replay)
+game_key=Sparkster-Snes
+system=snes
+integration_tier=stable
+trigger	life_lost_lives_0168	life_lost	0x7E0168	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0168	life_gained	0x7E0168	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0164	score	0x7E0164	3	bcd	little	prev < curr	0.8	1	right:0.350:60

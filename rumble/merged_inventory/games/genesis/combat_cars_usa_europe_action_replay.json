@@ -1,0 +1,192 @@
+{
+  "system": "genesis",
+  "normalized_title": "combatcars",
+  "display_name": "Combat Cars (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Combat Cars (USA, Europe) (Action Replay)",
+    "Combat Cars (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\combatcars_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFF0020"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CombatCars-Genesis-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "lap",
+          "address": "0xFF0F93",
+          "type": "|u1"
+        },
+        {
+          "name": "rank",
+          "address": "0xFF0F47",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF0020",
+          "type": ">u2"
+        },
+        {
+          "name": "speed",
+          "address": "0xFF1058",
+          "type": ">u2"
+        },
+        {
+          "name": "time",
+          "address": "0xFF3CD5",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Combat Cars (USA, Europe).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 27,
+      "distinct_address_count": 26,
+      "sample_raw_entries": [
+        {
+          "code": "FF0038:0007",
+          "desc": "Have Best Tires P1",
+          "address": "0xFF0038"
+        },
+        {
+          "code": "FF003A:0007",
+          "desc": "Have Best Engine P1",
+          "address": "0xFF003A"
+        },
+        {
+          "code": "FF003C:0007",
+          "desc": "Have Best Turbo Charge P1",
+          "address": "0xFF003C"
+        },
+        {
+          "code": "FF003E:0007",
+          "desc": "Have All Special Power Ups P1",
+          "address": "0xFF003E"
+        },
+        {
+          "code": "FF1058:00FF",
+          "desc": "Max Acceleration For P1",
+          "address": "0xFF1058"
+        },
+        {
+          "code": "FF0020:00FF",
+          "desc": "Have Billions of Dollars P1",
+          "address": "0xFF0020"
+        },
+        {
+          "code": "FF02FC:0068",
+          "desc": "Music Instrument Remover",
+          "address": "0xFF02FC"
+        },
+        {
+          "code": "FF001C:0000",
+          "desc": "Character Modifier P1",
+          "address": "0xFF001C"
+        },
+        {
+          "code": "FF3CD4:0099",
+          "desc": "Infinite Time",
+          "address": "0xFF3CD4"
+        },
+        {
+          "code": "FF0310:00FF",
+          "desc": "Max Acceleration For Car In Demo",
+          "address": "0xFF0310"
+        },
+        {
+          "code": "FF10C8:0000",
+          "desc": "Lap Modifier P1",
+          "address": "0xFF10C8"
+        },
+        {
+          "code": "FF0004:0000",
+          "desc": "Track Modifier",
+          "address": "0xFF0004"
+        },
+        {
+          "code": "FF0048:00FF",
+          "desc": "Activate &quot;Unlock All Tracks&quot; Built-In Cheat",
+          "address": "0xFF0048"
+        },
+        {
+          "code": "FF10D4:06D6",
+          "desc": "P1 Infinite Time",
+          "address": "0xFF10D4"
+        },
+        {
+          "code": "FF1172:06D6",
+          "desc": "P2 Infinite Time",
+          "address": "0xFF1172"
+        },
+        {
+          "code": "FF10D1:0009",
+          "desc": "P1 Infinite Weapon",
+          "address": "0xFF10D1"
+        },
+        {
+          "code": "FF116F:0009",
+          "desc": "P2 Infinite Weapon",
+          "address": "0xFF116F"
+        },
+        {
+          "code": "FF0020:270F",
+          "desc": "P1 Infinite Money",
+          "address": "0xFF0020"
+        },
+        {
+          "code": "FF0022:270F",
+          "desc": "P2 Infinite Money",
+          "address": "0xFF0022"
+        },
+        {
+          "code": "FF0039:0007",
+          "desc": "P1 Max Tires",
+          "address": "0xFF0039"
+        },
+        {
+          "code": "FF003B:0007",
+          "desc": "P1 Max Engine",
+          "address": "0xFF003B"
+        },
+        {
+          "code": "FF003D:0007",
+          "desc": "P1 Max Turbo Charge",
+          "address": "0xFF003D"
+        },
+        {
+          "code": "FF003F:0007",
+          "desc": "P1 Max Special Powerup",
+          "address": "0xFF003F"
+        },
+        {
+          "code": "FF0041:0007",
+          "desc": "P2 Max Tires",
+          "address": "0xFF0041"
+        },
+        {
+          "code": "FF0043:0007",
+          "desc": "P2 Max Engine",
+          "address": "0xFF0043"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

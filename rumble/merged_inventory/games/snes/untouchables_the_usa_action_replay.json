@@ -1,0 +1,72 @@
+{
+  "system": "snes",
+  "normalized_title": "untouchables",
+  "display_name": "Untouchables, The (USA) (Action Replay)",
+  "aliases": [
+    "Untouchables, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Untouchables, The (USA).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 10,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E940063",
+          "desc": "Unlimited Time A1",
+          "address": "0x7E9400"
+        },
+        {
+          "code": "7E1B8963",
+          "desc": "Unlimited Ammo A3",
+          "address": "0x7E1B89"
+        },
+        {
+          "code": "7E1B8609",
+          "desc": "Unlimited Lives",
+          "address": "0x7E1B86"
+        },
+        {
+          "code": "7E1AEC10",
+          "desc": "Barriers Remain",
+          "address": "0x7E1AEC"
+        },
+        {
+          "code": "7E1BC810",
+          "desc": "Barriers Remain",
+          "address": "0x7E1BC8"
+        },
+        {
+          "code": "7E173D09",
+          "desc": "Unlimited Bomb Countdown",
+          "address": "0x7E173D"
+        },
+        {
+          "code": "7E1B8609",
+          "desc": "(All Stages) Infinite Lives",
+          "address": "0x7E1B86"
+        },
+        {
+          "code": "7E1B87FF",
+          "desc": "(All Stages) Untouchable by Gunshots",
+          "address": "0x7E1B87"
+        },
+        {
+          "code": "7E1B8963",
+          "desc": "(All Stages) Unlimited Ammo",
+          "address": "0x7E1B89"
+        },
+        {
+          "code": "7E009401",
+          "desc": "(All Stages) Infinite Time",
+          "address": "0x7E0094"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

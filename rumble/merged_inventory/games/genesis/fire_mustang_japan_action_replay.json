@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "firemustang",
+  "display_name": "Fire Mustang (Japan) (Action Replay)",
+  "aliases": [
+    "Fire Mustang (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Fire Mustang (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFBDB3:0002",
+          "desc": "Infinite Lives",
+          "address": "0xFFBDB3"
+        },
+        {
+          "code": "FFBD6F:0003",
+          "desc": "Infinite Bombs",
+          "address": "0xFFBD6F"
+        },
+        {
+          "code": "FFB972:0010",
+          "desc": "Invincibility",
+          "address": "0xFFB972"
+        },
+        {
+          "code": "FFCF13:0002",
+          "desc": "Invfinite Continue",
+          "address": "0xFFCF13"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

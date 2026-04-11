@@ -1,0 +1,9 @@
+game_name=Addams Family, The (World) (Action Replay)
+game_key=AddamsFamily-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_00c3	damage_taken	0x7E00C3	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00c3	death	0x7E00C3	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_00ac	life_lost	0x7E00AC	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00ac	life_gained	0x7E00AC	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_00a7	score	0x7E00A7	4	bcd	big	prev < curr	0.8	1	right:0.350:60

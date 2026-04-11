@@ -1,0 +1,47 @@
+{
+  "system": "snes",
+  "normalized_title": "breakthru",
+  "display_name": "BreakThru! (USA) (Action Replay)",
+  "aliases": [
+    "BreakThru! (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\BreakThru! (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E125700",
+          "desc": "Level Modifier",
+          "address": "0x7E1257"
+        },
+        {
+          "code": "7E125800",
+          "desc": "Level Modifier",
+          "address": "0x7E1258"
+        },
+        {
+          "code": "7E171100",
+          "desc": "Automatic Win",
+          "address": "0x7E1711"
+        },
+        {
+          "code": "7E125B1E",
+          "desc": "Infinite Time",
+          "address": "0x7E125B"
+        },
+        {
+          "code": "7E0BC900",
+          "desc": "Time Speed Modifier",
+          "address": "0x7E0BC9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

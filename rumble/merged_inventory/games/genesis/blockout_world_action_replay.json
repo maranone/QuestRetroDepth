@@ -1,0 +1,62 @@
+{
+  "system": "genesis",
+  "normalized_title": "blockout",
+  "display_name": "Blockout (World) (Action Replay)",
+  "aliases": [
+    "Blockout (World) (Action Replay)",
+    "Blockout (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\blockout_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFF9E67"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Blockout-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "layers",
+          "address": "0xFF01FF",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF9E67",
+          "type": ">u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Blockout (World).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF9EE9:0064",
+          "desc": "Level 100",
+          "address": "0xFF9EE9"
+        },
+        {
+          "code": "FF9EF5:000C",
+          "desc": "Cubes Don't Fall Automatically. You Have To Press Start",
+          "address": "0xFF9EF5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

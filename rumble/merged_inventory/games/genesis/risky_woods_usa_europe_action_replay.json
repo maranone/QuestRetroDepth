@@ -1,0 +1,79 @@
+{
+  "system": "genesis",
+  "normalized_title": "riskywoods",
+  "display_name": "Risky Woods (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Risky Woods (USA, Europe) (Action Replay)",
+    "Risky Woods (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\riskywoods_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF1156",
+        "0xFF11A3"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\RiskyWoods-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF11A3",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF1156",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Risky Woods (USA, Europe).cht",
+      "total_cheat_rows": 53,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF1118:0034",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFF1118"
+        },
+        {
+          "code": "FF11A4:002A",
+          "desc": "Infinite Health",
+          "address": "0xFF11A4"
+        },
+        {
+          "code": "FF11AE:0036",
+          "desc": "Max Silver Coins",
+          "address": "0xFF11AE"
+        },
+        {
+          "code": "FF1144:0010",
+          "desc": "Invincibility",
+          "address": "0xFF1144"
+        },
+        {
+          "code": "FF10EE:00FF",
+          "desc": "Enabled Secret Code Level Select In Options",
+          "address": "0xFF10EE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "battlemaniadaiginjou",
+  "display_name": "Battle Mania Daiginjou (Japan, Korea) (Action Replay)",
+  "aliases": [
+    "Battle Mania Daiginjou (Japan, Korea)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Battle Mania Daiginjou (Japan, Korea).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFFE20:0004",
+          "desc": "Infinite Energy",
+          "address": "0xFFFE20"
+        },
+        {
+          "code": "FFC3AE:0800",
+          "desc": "Infinite Charge",
+          "address": "0xFFC3AE"
+        },
+        {
+          "code": "FFC2D2:0065",
+          "desc": "Invincibility",
+          "address": "0xFFC2D2"
+        },
+        {
+          "code": "FFFE3A:0403",
+          "desc": "Enable Stage Select Menu when Starting a New Game",
+          "address": "0xFFFE3A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

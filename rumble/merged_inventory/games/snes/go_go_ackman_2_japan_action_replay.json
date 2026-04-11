@@ -1,0 +1,63 @@
+{
+  "system": "snes",
+  "normalized_title": "gogoackman2",
+  "display_name": "Go Go Ackman 2 (Japan) (Action Replay)",
+  "aliases": [
+    "Go Go Ackman 2 (Japan) (Game Genie)",
+    "Go Go Ackman 2 (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Go Go Ackman 2 (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "7E0B8203",
+          "desc": "Dragon is in Attack Mode",
+          "address": "0x7E0B82"
+        },
+        {
+          "code": "7E0B3200",
+          "desc": "Float up",
+          "address": "0x7E0B32"
+        },
+        {
+          "code": "7E006300",
+          "desc": "Level / Are Mod",
+          "address": "0x7E0063"
+        },
+        {
+          "code": "7E011218",
+          "desc": "Weapon Mod",
+          "address": "0x7E0112"
+        },
+        {
+          "code": "7E012005",
+          "desc": "Infinite Health",
+          "address": "0x7E0120"
+        },
+        {
+          "code": "7E012E09",
+          "desc": "Infinite Bomb",
+          "address": "0x7E012E"
+        },
+        {
+          "code": "7E012409",
+          "desc": "Infinite Lives",
+          "address": "0x7E0124"
+        },
+        {
+          "code": "7E012C08",
+          "desc": "Infinite Money",
+          "address": "0x7E012C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "system": "genesis",
+  "normalized_title": "wiznliz",
+  "display_name": "Wiz'n'Liz (USA) (Action Replay)",
+  "aliases": [
+    "Wiz 'N' Liz (USA)",
+    "Wiz'n'Liz (USA) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\wiznliz_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF06FE",
+        "0xFF0707"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\WiznLiz-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF0707",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF06FE",
+          "type": ">d4"
+        },
+        {
+          "name": "time",
+          "address": "0xFF3403",
+          "type": "|i1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Wiz'n'Liz (USA) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

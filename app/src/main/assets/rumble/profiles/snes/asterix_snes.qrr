@@ -1,0 +1,9 @@
+game_name=Asterix (Europe) (Action Replay)
+game_key=Asterix-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_05f0	damage_taken	0x7E05F0	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05f0	death	0x7E05F0	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_05fd	life_lost	0x7E05FD	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_05fd	life_gained	0x7E05FD	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_05f1	score	0x7E05F1	6	nibble	big	prev < curr	0.8	1	right:0.350:60

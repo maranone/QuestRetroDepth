@@ -1,0 +1,74 @@
+{
+  "system": "genesis",
+  "normalized_title": "burningforce",
+  "display_name": "Burning Force (World) (Action Replay)",
+  "aliases": [
+    "Burning Force (USA)",
+    "Burning Force (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\burningforce_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFB21C",
+        "0xFFB25C"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BurningForce-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFB25C",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFB21C",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Burning Force (World) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FFB25C:0004",
+          "desc": "Gives You 40 Lives On Reset",
+          "address": "0xFFB25C"
+        },
+        {
+          "code": "FFB25B:09",
+          "desc": "Infinite Missiles",
+          "address": "0xFFB25B"
+        },
+        {
+          "code": "FF803F:03",
+          "desc": "Infinite Health",
+          "address": "0xFF803F"
+        },
+        {
+          "code": "FFB25C:09",
+          "desc": "Infinite Lives",
+          "address": "0xFFB25C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

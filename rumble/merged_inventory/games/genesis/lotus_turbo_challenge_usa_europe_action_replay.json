@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "lotusturbochallenge",
+  "display_name": "Lotus Turbo Challenge (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Lotus Turbo Challenge (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Lotus Turbo Challenge (USA, Europe).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF7CB4:0046",
+          "desc": "Freeze Time",
+          "address": "0xFF7CB4"
+        },
+        {
+          "code": "FF7CB4:0099",
+          "desc": "Infinite Time",
+          "address": "0xFF7CB4"
+        },
+        {
+          "code": "FF7CA2:0019",
+          "desc": "Decent Acceleration",
+          "address": "0xFF7CA2"
+        },
+        {
+          "code": "FF7CA2:0028",
+          "desc": "Great Acceleration",
+          "address": "0xFF7CA2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

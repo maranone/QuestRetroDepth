@@ -1,0 +1,7 @@
+game_name=FinalFantasyV
+game_key=FinalFantasyV-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_382c	damage_taken	0x7E382C	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_1_3834	damage_taken	0x7E3834	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_2_383c	damage_taken	0x7E383C	1	uint	native	prev > curr	0.85	1	left:0.750:180

@@ -1,0 +1,5 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Cadash (USA, Korea) (Action Replay)
+# match_names=cadash|cadashgenesis
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+level_complete_level_ff0e4d,0xFF0E4D,1,uint,changed,,both,0.800,normal,0,400,75,60,

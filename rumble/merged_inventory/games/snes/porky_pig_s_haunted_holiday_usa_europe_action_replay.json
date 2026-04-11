@@ -1,0 +1,68 @@
+{
+  "system": "snes",
+  "normalized_title": "porkypigshauntedholiday",
+  "display_name": "Porky Pig's Haunted Holiday (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Porky Pig's Haunted Holiday (USA)",
+    "Porky Pig's Haunted Holiday (USA, Europe) (Action Replay)",
+    "Porky Pig's Haunted Holiday (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\porkypigshauntedholiday_snes.json",
+      "trigger_count": 6,
+      "field_names": [
+        "gameover",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0x7E0E96",
+        "0x7E0E9A",
+        "0x7E0E9E",
+        "0x7E0EAA"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\PorkyPigsHauntedHoliday-Snes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0x7E0E96",
+          "type": "|i1"
+        },
+        {
+          "name": "health",
+          "address": "0x7E0EAA",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E0E9E",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0E9A",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Porky Pig's Haunted Holiday (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

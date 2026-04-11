@@ -1,0 +1,5 @@
+game_name=HamelinNoViolinHiki
+game_key=HamelinNoViolinHiki-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_870	damage_taken	0x7E0870	1	uint	native	prev > curr	0.85	1	left:0.750:180

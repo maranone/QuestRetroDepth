@@ -1,0 +1,263 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "RenderingRangerR2",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "third_party\\openai-retro\\retro\\data\\stable\\RenderingRangerR2-Snes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "RenderingRangerR2-Snes"
+  },
+  "triggers": [
+    {
+      "id": "life_lost_lives_0515",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0x7E0515",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x0515",
+          "wram_offset": 1301
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0515",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_0515",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0x7E0515",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x0515",
+          "wram_offset": 1301
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0515",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score0_052b",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E052B",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x052B",
+          "wram_offset": 1323
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score0",
+          "address": "0x7E052B",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score1_052a",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E052A",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x052A",
+          "wram_offset": 1322
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score1",
+          "address": "0x7E052A",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score2_0529",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E0529",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x0529",
+          "wram_offset": 1321
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score2",
+          "address": "0x7E0529",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score3_0528",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E0528",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x0528",
+          "wram_offset": 1320
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score3",
+          "address": "0x7E0528",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score4_0527",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E0527",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x0527",
+          "wram_offset": 1319
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score4",
+          "address": "0x7E0527",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

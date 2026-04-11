@@ -1,0 +1,5 @@
+game_name=IMG International Tour Tennis (USA, Europe) (Action Replay)
+game_key=IMGInternationalTourTennis-Genesis
+system=genesis
+integration_tier=stable
+trigger	score_score_ff8f9f	score	0xFF8F9F	1	int	native	prev < curr	0.8	1	right:0.350:60

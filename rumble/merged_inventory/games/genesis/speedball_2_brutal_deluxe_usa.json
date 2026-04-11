@@ -1,0 +1,50 @@
+{
+  "system": "genesis",
+  "normalized_title": "speedball2brutaldeluxe",
+  "display_name": "Speedball 2 - Brutal Deluxe (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Speedball 2 - Brutal Deluxe (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF00FA:7FFF",
+          "desc": "Infinite Money - Both Players",
+          "address": "0xFF00FA"
+        },
+        {
+          "code": "FF009F:005A",
+          "desc": "Infinite Time",
+          "address": "0xFF009F"
+        },
+        {
+          "code": "FF009E:0030",
+          "desc": "Freeze Timer",
+          "address": "0xFF009E"
+        },
+        {
+          "code": "FF0DEE:0000",
+          "desc": "P1 Score Multiplier",
+          "address": "0xFF0DEE"
+        },
+        {
+          "code": "FF0DEF:0000",
+          "desc": "P2 Score Multiplier",
+          "address": "0xFF0DEF"
+        },
+        {
+          "code": "FFD5AA:0008",
+          "desc": "Electro Mode",
+          "address": "0xFFD5AA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

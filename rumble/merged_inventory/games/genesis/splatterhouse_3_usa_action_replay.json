@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "splatterhouse3",
+  "display_name": "Splatterhouse 3 (USA) (Action Replay)",
+  "aliases": [
+    "Splatterhouse 3 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Splatterhouse 3 (USA).cht",
+      "total_cheat_rows": 38,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FF00B4:0300",
+          "desc": "Infinite Lives",
+          "address": "0xFF00B4"
+        },
+        {
+          "code": "FF00B2:0100",
+          "desc": "Infinite Health",
+          "address": "0xFF00B2"
+        },
+        {
+          "code": "FF00B6:0168",
+          "desc": "Infinite Time",
+          "address": "0xFF00B6"
+        },
+        {
+          "code": "FF00BA:0050",
+          "desc": "Infinite Power",
+          "address": "0xFF00BA"
+        },
+        {
+          "code": "FF00BC:0901",
+          "desc": "Infinite Power",
+          "address": "0xFF00BC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "system": "snes",
+  "normalized_title": "hellopacman",
+  "display_name": "Hello! Pac-Man (Japan) (Action Replay)",
+  "aliases": [
+    "Hello! Pac-Man (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Hello! Pac-Man (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E027A09",
+          "desc": "Infinite Lives",
+          "address": "0x7E027A"
+        },
+        {
+          "code": "7E014A01",
+          "desc": "All Ghosts Always Edible",
+          "address": "0x7E014A"
+        },
+        {
+          "code": "7E016E01",
+          "desc": "All Ghosts Always Edible",
+          "address": "0x7E016E"
+        },
+        {
+          "code": "7E019201",
+          "desc": "All Ghosts Always Edible",
+          "address": "0x7E0192"
+        },
+        {
+          "code": "7E01B601",
+          "desc": "All Ghosts Always Edible",
+          "address": "0x7E01B6"
+        },
+        {
+          "code": "7E030C01",
+          "desc": "All Ghosts Always Edible",
+          "address": "0x7E030C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

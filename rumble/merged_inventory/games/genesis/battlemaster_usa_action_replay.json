@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "battlemaster",
+  "display_name": "Battlemaster (USA) (Action Replay)",
+  "aliases": [
+    "Battlemaster (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Battlemaster (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFCFAA:270F",
+          "desc": "Infinite Gold",
+          "address": "0xFFCFAA"
+        },
+        {
+          "code": "FFD772:487D",
+          "desc": "Leader Has Infinite Health And Morale",
+          "address": "0xFFD772"
+        },
+        {
+          "code": "FFD78E:487D",
+          "desc": "All 4 Troops Have Infinite Health And Morale",
+          "address": "0xFFD78E"
+        },
+        {
+          "code": "FFD7AA:487D",
+          "desc": "All 4 Troops Have Infinite Health And Morale",
+          "address": "0xFFD7AA"
+        },
+        {
+          "code": "FFD7C6:487D",
+          "desc": "All 4 Troops Have Infinite Health And Morale",
+          "address": "0xFFD7C6"
+        },
+        {
+          "code": "FFD7E2:487D",
+          "desc": "All 4 Troops Have Infinite Health And Morale",
+          "address": "0xFFD7E2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

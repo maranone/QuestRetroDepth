@@ -1,0 +1,148 @@
+{
+  "system": "genesis",
+  "normalized_title": "nbajam",
+  "display_name": "NBA Jam (USA, Europe) (Rev A)",
+  "aliases": [
+    "NBA Jam (USA, Europe) (Rev A)",
+    "NBA Jam (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\NBA Jam (USA, Europe).cht",
+      "total_cheat_rows": 132,
+      "raw_entry_count": 39,
+      "distinct_address_count": 39,
+      "sample_raw_entries": [
+        {
+          "code": "FF3BA7:0020",
+          "desc": "P1 Infinite Turbo",
+          "address": "0xFF3BA7"
+        },
+        {
+          "code": "FF3CC7:0020",
+          "desc": "P2 Infinite Turbo",
+          "address": "0xFF3CC7"
+        },
+        {
+          "code": "FF3DE7:0020",
+          "desc": "P3 Infinite Turbo",
+          "address": "0xFF3DE7"
+        },
+        {
+          "code": "FF3F07:0020",
+          "desc": "P4 Infinite Turbo",
+          "address": "0xFF3F07"
+        },
+        {
+          "code": "FF3C4A:0001",
+          "desc": "P1 Always On-Fire",
+          "address": "0xFF3C4A"
+        },
+        {
+          "code": "FF3D6A:0001",
+          "desc": "P2 Always On-Fire",
+          "address": "0xFF3D6A"
+        },
+        {
+          "code": "FF3E8A:0001",
+          "desc": "P3 Always On-Fire",
+          "address": "0xFF3E8A"
+        },
+        {
+          "code": "FF3FAA:0001",
+          "desc": "P4 Always On-Fire",
+          "address": "0xFF3FAA"
+        },
+        {
+          "code": "FF1F39:0018",
+          "desc": "Infinite Shot Clock",
+          "address": "0xFF1F39"
+        },
+        {
+          "code": "FF1D39:0001",
+          "desc": "Display Shot% Powerup",
+          "address": "0xFF1D39"
+        },
+        {
+          "code": "FF1D3B:0002",
+          "desc": "Juice Mode Powerup",
+          "address": "0xFF1D3B"
+        },
+        {
+          "code": "FF1D28:0001",
+          "desc": "P1 Defense Powerup",
+          "address": "0xFF1D28"
+        },
+        {
+          "code": "FF1D29:0001",
+          "desc": "P1 Interception Powerup",
+          "address": "0xFF1D29"
+        },
+        {
+          "code": "FF1E12:0001",
+          "desc": "P1 Super Dunk Powerup",
+          "address": "0xFF1E12"
+        },
+        {
+          "code": "FF1E16:0001",
+          "desc": "P1 On-Fire Powerup",
+          "address": "0xFF1E16"
+        },
+        {
+          "code": "FF1E1A:0001",
+          "desc": "P1 Infinite Turbo Powerup",
+          "address": "0xFF1E1A"
+        },
+        {
+          "code": "FF1D2A:0001",
+          "desc": "P2 Defense Powerup",
+          "address": "0xFF1D2A"
+        },
+        {
+          "code": "FF1D2B:0001",
+          "desc": "P2 Interception Powerup",
+          "address": "0xFF1D2B"
+        },
+        {
+          "code": "FF1E13:0001",
+          "desc": "P2 Super Dunk Powerup",
+          "address": "0xFF1E13"
+        },
+        {
+          "code": "FF1E17:0001",
+          "desc": "P2 On-Fire Powerup",
+          "address": "0xFF1E17"
+        },
+        {
+          "code": "FF1E1B:0001",
+          "desc": "P2 Infinite Turbo Powerup",
+          "address": "0xFF1E1B"
+        },
+        {
+          "code": "FF1D2C:0001",
+          "desc": "P3 Defense Powerup",
+          "address": "0xFF1D2C"
+        },
+        {
+          "code": "FF1D2D:0001",
+          "desc": "P3 Interception Powerup",
+          "address": "0xFF1D2D"
+        },
+        {
+          "code": "FF1E14:0001",
+          "desc": "P3 Super Dunk Powerup",
+          "address": "0xFF1E14"
+        },
+        {
+          "code": "FF1E18:0001",
+          "desc": "P3 On-Fire Powerup",
+          "address": "0xFF1E18"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

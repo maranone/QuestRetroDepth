@@ -1,0 +1,52 @@
+{
+  "system": "snes",
+  "normalized_title": "syvalion",
+  "display_name": "Syvalion (Europe) (Beta)",
+  "aliases": [
+    "Syvalion (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Syvalion (Europe).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E1CC408",
+          "desc": "Infinite Energy",
+          "address": "0x7E1CC4"
+        },
+        {
+          "code": "7E1B28E7",
+          "desc": "Infinite Time",
+          "address": "0x7E1B28"
+        },
+        {
+          "code": "7E1B2903",
+          "desc": "Infinite Time",
+          "address": "0x7E1B29"
+        },
+        {
+          "code": "7E1CDF15",
+          "desc": "Infinite Fire",
+          "address": "0x7E1CDF"
+        },
+        {
+          "code": "7E1B1205",
+          "desc": "Infinite Lives",
+          "address": "0x7E1B12"
+        },
+        {
+          "code": "7E1B2E00",
+          "desc": "Level Modifier",
+          "address": "0x7E1B2E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

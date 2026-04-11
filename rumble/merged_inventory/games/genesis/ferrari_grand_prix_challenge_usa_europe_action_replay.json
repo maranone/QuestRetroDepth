@@ -1,0 +1,98 @@
+{
+  "system": "genesis",
+  "normalized_title": "ferrarigrandprixchallenge",
+  "display_name": "Ferrari Grand Prix Challenge (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Ferrari Grand Prix Challenge (USA)",
+    "Ferrari Grand Prix Challenge (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\ferrarigrandprixchallenge_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FerrariGrandPrixChallenge-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "best_lap",
+          "address": "0xFFA0CB",
+          "type": ">d3"
+        },
+        {
+          "name": "lap",
+          "address": "0xFFA0CF",
+          "type": "|u1"
+        },
+        {
+          "name": "speed",
+          "address": "0xFFA0A2",
+          "type": ">u2"
+        },
+        {
+          "name": "time",
+          "address": "0xFFA0C3",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ferrari Grand Prix Challenge (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FFA0A3:FF",
+          "desc": "Decent Speed",
+          "address": "0xFFA0A3"
+        },
+        {
+          "code": "FFA0A3:FF",
+          "desc": "Crazy Speed",
+          "address": "0xFFA0A3"
+        },
+        {
+          "code": "FFA0A4:FF",
+          "desc": "Crazy Speed",
+          "address": "0xFFA0A4"
+        },
+        {
+          "code": "FFA0C3:00",
+          "desc": "No Lap Time (Minutes)",
+          "address": "0xFFA0C3"
+        },
+        {
+          "code": "FFA0C4:00",
+          "desc": "No Lap Time (Seconds)",
+          "address": "0xFFA0C4"
+        },
+        {
+          "code": "FFA0C5:00",
+          "desc": "No Lap Time (Micro-Seconds)",
+          "address": "0xFFA0C5"
+        },
+        {
+          "code": "FFA0B5:00",
+          "desc": "Track Scroller",
+          "address": "0xFFA0B5"
+        },
+        {
+          "code": "FFA0CF:0D",
+          "desc": "Lap Counter",
+          "address": "0xFFA0CF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

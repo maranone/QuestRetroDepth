@@ -1,0 +1,58 @@
+{
+  "system": "genesis",
+  "normalized_title": "chichisprochallengegolf",
+  "display_name": "Chi Chi's Pro Challenge Golf (USA) (Action Replay)",
+  "aliases": [
+    "Chi Chi's Pro Challenge Golf (USA) (Action Replay)",
+    "Chi Chi's Pro Challenge Golf (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\chichisprochallengegolf_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ChiChisProChallengeGolf-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "hole",
+          "address": "0xFF93A1",
+          "type": "|u1"
+        },
+        {
+          "name": "stroke",
+          "address": "0xFF9211",
+          "type": "|u1"
+        },
+        {
+          "name": "total",
+          "address": "0xFF920F",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Chi Chi's Pro Challenge Golf (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF9210:0000",
+          "desc": "Always On 1st Stroke P1",
+          "address": "0xFF9210"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

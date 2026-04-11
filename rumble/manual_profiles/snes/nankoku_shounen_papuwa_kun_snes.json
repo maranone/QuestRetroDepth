@@ -1,0 +1,83 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "NankokuShounenPapuwaKun",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Nankoku Shounen Papuwa-Kun (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "NankokuShounenPapuwaKun-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_0_740",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E0740",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0740",
+          "bank": "7E",
+          "wram_offset": 1856
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss",
+          "address": "0x7E0740",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "enemy_defeated_1_2c0",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0x7E02C0",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x02C0",
+          "bank": "7E",
+          "wram_offset": 704
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.51,
+          "duration_ms": 100
+        }
+      ],
+      "confidence": 0.55,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on attacks",
+      "source_fields": [
+        {
+          "name": "rumble_on_attacks",
+          "address": "0x7E02C0",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

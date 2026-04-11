@@ -1,0 +1,138 @@
+{
+  "system": "genesis",
+  "normalized_title": "foremanforreal",
+  "display_name": "Foreman for Real (World) (Action Replay)",
+  "aliases": [
+    "Foreman for Real (World) (Action Replay)",
+    "Foreman for Real (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\foremanforreal_genesis.json",
+      "trigger_count": 0,
+      "field_names": [],
+      "field_count": 0,
+      "distinct_addresses": [],
+      "distinct_address_count": 0
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ForemanForReal-Genesis-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "TKO",
+          "address": "0xFF5611",
+          "type": "|u1"
+        },
+        {
+          "name": "punches_landed",
+          "address": "0xFF5A5A",
+          "type": ">u2"
+        },
+        {
+          "name": "punches_thrown",
+          "address": "0xFF5A58",
+          "type": ">u2"
+        },
+        {
+          "name": "round",
+          "address": "0xFF329D",
+          "type": "|u1"
+        },
+        {
+          "name": "time",
+          "address": "0xFF327E",
+          "type": ">n4"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Foreman for Real (World).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "FF5A3E:0063",
+          "desc": "Health Regenerates Fast For P1",
+          "address": "0xFF5A3E"
+        },
+        {
+          "code": "FF5A60:0063",
+          "desc": "Infinite Health P1",
+          "address": "0xFF5A60"
+        },
+        {
+          "code": "FF599C:0000",
+          "desc": "No Health P2/CPU",
+          "address": "0xFF599C"
+        },
+        {
+          "code": "FF327E:0009",
+          "desc": "Infinite Time (Minutes Digit)",
+          "address": "0xFF327E"
+        },
+        {
+          "code": "FF3280:0009",
+          "desc": "Infinite Time (Seconds - Ten's Digit)",
+          "address": "0xFF3280"
+        },
+        {
+          "code": "FF3280:0009",
+          "desc": "Infinite Time (Seconds - One's Digit)",
+          "address": "0xFF3280"
+        },
+        {
+          "code": "FF5979:0000",
+          "desc": "Player 2 No Health - Upper Left",
+          "address": "0xFF5979"
+        },
+        {
+          "code": "FF597B:0000",
+          "desc": "Player 2 No Health - Upper Right",
+          "address": "0xFF597B"
+        },
+        {
+          "code": "FF597D:0000",
+          "desc": "Player 2 No Health - Lower Left",
+          "address": "0xFF597D"
+        },
+        {
+          "code": "FF597F:0000",
+          "desc": "Player 2 No Health - Lower Right",
+          "address": "0xFF597F"
+        },
+        {
+          "code": "FF08A3:0064",
+          "desc": "Max Speed in Career Mode",
+          "address": "0xFF08A3"
+        },
+        {
+          "code": "FF08A5:0064",
+          "desc": "Max Power in Career Mode",
+          "address": "0xFF08A5"
+        },
+        {
+          "code": "FF08A7:0064",
+          "desc": "Max Offense in Career Mode",
+          "address": "0xFF08A7"
+        },
+        {
+          "code": "FF08A9:0064",
+          "desc": "Max Stamina in Career Mode",
+          "address": "0xFF08A9"
+        },
+        {
+          "code": "FF08AB:0064",
+          "desc": "Max Defense in Career Mode",
+          "address": "0xFF08AB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

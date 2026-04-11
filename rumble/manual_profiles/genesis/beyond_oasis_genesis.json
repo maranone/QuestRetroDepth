@@ -1,0 +1,48 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "BeyondOasis",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Sega - Mega Drive - Genesis/Beyond Oasis (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "BeyondOasis-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_0_184d",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0xFF184D",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF184D",
+          "ram_offset": 6221
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on energy loss",
+      "source_fields": [
+        {
+          "name": "rumble_on_energy_loss",
+          "address": "0xFF184D",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

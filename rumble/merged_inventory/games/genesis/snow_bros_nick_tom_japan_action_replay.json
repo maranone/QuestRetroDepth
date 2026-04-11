@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "snowbrosnicktom",
+  "display_name": "Snow Bros. - Nick _ Tom (Japan) (Action Replay)",
+  "aliases": [
+    "Snow Bros. - Nick _ Tom (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Snow Bros. - Nick _ Tom (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF003A:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF003A"
+        },
+        {
+          "code": "FF0054:0000",
+          "desc": "Floor Modifier",
+          "address": "0xFF0054"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

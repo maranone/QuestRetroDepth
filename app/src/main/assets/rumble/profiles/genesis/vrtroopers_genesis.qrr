@@ -1,0 +1,8 @@
+game_name=VR Troopers (USA, Europe) (Action Replay)
+game_key=VRTroopers-Genesis
+system=genesis
+integration_tier=stable
+trigger	enemy_defeated_enemy_health_ffa60d	enemy_defeated	0xFFA60D	1	uint	native	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_ffa58d	damage_taken	0xFFA58D	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffa58d	death	0xFFA58D	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_ffa2f0	score	0xFFA2F0	4	uint	big	prev < curr	0.8	1	right:0.350:60

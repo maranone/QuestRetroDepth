@@ -1,0 +1,80 @@
+{
+  "system": "genesis",
+  "normalized_title": "forgottenworlds",
+  "display_name": "Forgotten Worlds (World) (Action Replay)",
+  "aliases": [
+    "Forgotten Worlds (World) (Action Replay)",
+    "Forgotten Worlds (World) (Rev A)",
+    "Forgotten Worlds (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\forgottenworlds_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF1100",
+        "0xFF1109"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ForgottenWorlds-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF1109",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF1100",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Forgotten Worlds (World).cht",
+      "total_cheat_rows": 41,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF1108:0063",
+          "desc": "Infinite Health P1",
+          "address": "0xFF1108"
+        },
+        {
+          "code": "FF1106:0099",
+          "desc": "Fake Infinite Points/Money In Shop P1 (Hundreds+TensDigits)",
+          "address": "0xFF1106"
+        },
+        {
+          "code": "FF1106:0099",
+          "desc": "Fake Infinite Points/Money In Shop P1 (Thousands+Hundreds Digits)",
+          "address": "0xFF1106"
+        },
+        {
+          "code": "FF1104:0099",
+          "desc": "Fake Infinite Points/Money In Shop P1 (Hundreds+Tens Thousands Digits)",
+          "address": "0xFF1104"
+        },
+        {
+          "code": "FF10F6:0010",
+          "desc": "Invincible",
+          "address": "0xFF10F6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

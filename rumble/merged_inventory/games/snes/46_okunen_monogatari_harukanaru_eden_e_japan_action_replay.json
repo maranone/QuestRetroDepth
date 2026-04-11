@@ -1,0 +1,52 @@
+{
+  "system": "snes",
+  "normalized_title": "46okunenmonogatariharukanaruedene",
+  "display_name": "46 Okunen Monogatari - Harukanaru Eden e (Japan) (Action Replay)",
+  "aliases": [
+    "46 Okunen Monogatari - Harukanaru Eden e (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\46 Okunen Monogatari - Harukanaru Eden e (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E00C599",
+          "desc": "Infinite HP",
+          "address": "0x7E00C5"
+        },
+        {
+          "code": "7E00C609",
+          "desc": "Infinite HP",
+          "address": "0x7E00C6"
+        },
+        {
+          "code": "7E00C799",
+          "desc": "Max. HP",
+          "address": "0x7E00C7"
+        },
+        {
+          "code": "7E00C809",
+          "desc": "Max. HP",
+          "address": "0x7E00C8"
+        },
+        {
+          "code": "7E00D200",
+          "desc": "Evo. P. Modifier",
+          "address": "0x7E00D2"
+        },
+        {
+          "code": "7E00D300",
+          "desc": "Evo. P. Modifier",
+          "address": "0x7E00D3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

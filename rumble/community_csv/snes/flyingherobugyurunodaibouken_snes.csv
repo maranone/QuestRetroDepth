@@ -1,0 +1,7 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Flying Hero - Bugyuru no Daibouken (Japan)
+# match_names=flyingherobugyurunodaibouken|flyingherobugyurunodaiboukensnes
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+life_lost_lives_0059,0x7E0059,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
+life_gained_lives_0059,0x7E0059,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,
+score_score_0055,0x7E0055,3,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,

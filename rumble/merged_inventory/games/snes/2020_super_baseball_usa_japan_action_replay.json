@@ -1,0 +1,67 @@
+{
+  "system": "snes",
+  "normalized_title": "2020superbaseball",
+  "display_name": "2020 Super Baseball (USA, Japan) (Action Replay)",
+  "aliases": [
+    "2020 Super Baseball (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\2020 Super Baseball (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7F80CAFF",
+          "desc": "P1/Team 1 Has Lots of Money",
+          "address": "0x7F80CA"
+        },
+        {
+          "code": "7F80CCFF",
+          "desc": "P1/Team 1 Has Lots of Money",
+          "address": "0x7F80CC"
+        },
+        {
+          "code": "7F80CBFF",
+          "desc": "P1/Team 1 Has Lots of Money",
+          "address": "0x7F80CB"
+        },
+        {
+          "code": "7F80CA63",
+          "desc": "P1/Team 1 Has Lots of Money (Improved)",
+          "address": "0x7F80CA"
+        },
+        {
+          "code": "7F80CC63",
+          "desc": "P1/Team 1 Has Lots of Money (Improved)",
+          "address": "0x7F80CC"
+        },
+        {
+          "code": "7F80CB63",
+          "desc": "P1/Team 1 Has Lots of Money (Improved)",
+          "address": "0x7F80CB"
+        },
+        {
+          "code": "7F814C00",
+          "desc": "Computer/Team 2 Has No Money",
+          "address": "0x7F814C"
+        },
+        {
+          "code": "7F814B00",
+          "desc": "Computer/Team 2 Has No Money",
+          "address": "0x7F814B"
+        },
+        {
+          "code": "7F814A00",
+          "desc": "Computer/Team 2 Has No Money",
+          "address": "0x7F814A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=MagicalPopn
+game_key=MagicalPopn-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_51a	damage_taken	0x7E051A	1	uint	native	prev > curr	0.85	1	left:0.750:180

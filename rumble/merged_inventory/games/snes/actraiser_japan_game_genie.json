@@ -1,0 +1,157 @@
+{
+  "system": "snes",
+  "normalized_title": "actraiser",
+  "display_name": "Actraiser (Japan) (Game Genie)",
+  "aliases": [
+    "ActRaiser (Germany)",
+    "Actraiser (Japan) (Game Genie)",
+    "Actraiser (Japan)",
+    "Actraiser (Rumbles)",
+    "ActRaiser (USA)",
+    "ActRaiser"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\ActRaiser (USA).cht",
+      "total_cheat_rows": 116,
+      "raw_entry_count": 126,
+      "distinct_address_count": 80,
+      "sample_raw_entries": [
+        {
+          "code": "7E029B01",
+          "desc": "Magic Modifier Slot 1",
+          "address": "0x7E029B"
+        },
+        {
+          "code": "7E029A01",
+          "desc": "Magic Modifier Slot 2",
+          "address": "0x7E029A"
+        },
+        {
+          "code": "7E029901",
+          "desc": "Magic Modifier Slot 3",
+          "address": "0x7E0299"
+        },
+        {
+          "code": "7E029C01",
+          "desc": "Magic Modifier Slot 4",
+          "address": "0x7E029C"
+        },
+        {
+          "code": "7E029100",
+          "desc": "Player Level Modifier",
+          "address": "0x7E0291"
+        },
+        {
+          "code": "7E02A200",
+          "desc": "Item Slot 1 Modifier",
+          "address": "0x7E02A2"
+        },
+        {
+          "code": "7E02A300",
+          "desc": "Item Slot 2 Modifier",
+          "address": "0x7E02A3"
+        },
+        {
+          "code": "7E02A400",
+          "desc": "Item Slot 3 Modifier",
+          "address": "0x7E02A4"
+        },
+        {
+          "code": "7E02A500",
+          "desc": "Item Slot 4 Modifier",
+          "address": "0x7E02A5"
+        },
+        {
+          "code": "7E02A600",
+          "desc": "Item Slot 5 Modifier",
+          "address": "0x7E02A6"
+        },
+        {
+          "code": "7E02A700",
+          "desc": "Item Slot 6 Modifier",
+          "address": "0x7E02A7"
+        },
+        {
+          "code": "7E02A800",
+          "desc": "Item Slot 7 Modifier",
+          "address": "0x7E02A8"
+        },
+        {
+          "code": "7E02A900",
+          "desc": "Item Slot 8 Modifier",
+          "address": "0x7E02A9"
+        },
+        {
+          "code": "7E02A900",
+          "desc": "Digits For Item Slot Modifiers",
+          "address": "0x7E02A9"
+        },
+        {
+          "code": "7E0BCC00",
+          "desc": "One hit kills bosses",
+          "address": "0x7E0BCC"
+        },
+        {
+          "code": "7E08C602",
+          "desc": "Invincible In Action Mode(Can Walk Thru Enemies and On Spikes)",
+          "address": "0x7E08C6"
+        },
+        {
+          "code": "7E00E702",
+          "desc": "Infinite Time",
+          "address": "0x7E00E7"
+        },
+        {
+          "code": "7E001D08",
+          "desc": "Infinite health in Action mode",
+          "address": "0x7E001D"
+        },
+        {
+          "code": "7E001C98",
+          "desc": "Max. 99 Lives",
+          "address": "0x7E001C"
+        },
+        {
+          "code": "7E001D18",
+          "desc": "Infinite Body HP",
+          "address": "0x7E001D"
+        },
+        {
+          "code": "7E001E18",
+          "desc": "Max. Body HP",
+          "address": "0x7E001E"
+        },
+        {
+          "code": "7E00210A",
+          "desc": "Infinite Magic Points",
+          "address": "0x7E0021"
+        },
+        {
+          "code": "7E00E480",
+          "desc": "Have Sword Shot",
+          "address": "0x7E00E4"
+        },
+        {
+          "code": "7E00E709",
+          "desc": "Infinite Time",
+          "address": "0x7E00E7"
+        },
+        {
+          "code": "7F9EFA7F",
+          "desc": "Fillmore Can Grow",
+          "address": "0x7F9EFA"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 16,
+      "mk3_label": "ACTRAISER"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "system": "snes",
+  "normalized_title": "zombiesatemyneighbors",
+  "display_name": "Zombies Ate My Neighbors (USA) (Action Replay)",
+  "aliases": [
+    "Zombies Ate My Neighbors (Rumbles)",
+    "Zombies Ate My Neighbors (USA) (Action Replay)",
+    "Zombies Ate My Neighbors (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\zombiesatemyneighbors_snes.json",
+      "trigger_count": 6,
+      "field_names": [
+        "ammo",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0x7E1CB8",
+        "0x7E1CCC",
+        "0x7E1D4C",
+        "0x7E1E72"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ZombiesAteMyNeighbors-Snes-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "ammo",
+          "address": "0x7E1CCC",
+          "type": "<d2"
+        },
+        {
+          "name": "health",
+          "address": "0x7E1CB8",
+          "type": "|i1"
+        },
+        {
+          "name": "healthPack",
+          "address": "0x7E1D1A",
+          "type": "<u2"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E1D4C",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E1E72",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Zombies Ate My Neighbors (USA).cht",
+      "total_cheat_rows": 237,
+      "raw_entry_count": 85,
+      "distinct_address_count": 76,
+      "sample_raw_entries": [
+        {
+          "code": "7E1CB80A",
+          "desc": "Infinite Health [Player 1]",
+          "address": "0x7E1CB8"
+        },
+        {
+          "code": "7E1CBA0A",
+          "desc": "Infinite Health [Player 2]",
+          "address": "0x7E1CBA"
+        },
+        {
+          "code": "7E1D4C03",
+          "desc": "Infinite Lives [Player 1]",
+          "address": "0x7E1D4C"
+        },
+        {
+          "code": "7E1D4E03",
+          "desc": "Infinite Lives [Player 2]",
+          "address": "0x7E1D4E"
+        },
+        {
+          "code": "7E1CCC50",
+          "desc": "Infinite Squirt Gun [Player 1]",
+          "address": "0x7E1CCC"
+        },
+        {
+          "code": "7E1CEC50",
+          "desc": "Infinite Squirt Gun [Player 2]",
+          "address": "0x7E1CEC"
+        },
+        {
+          "code": "7E1CCE50",
+          "desc": "Infinite Extinguisher [Player 1]",
+          "address": "0x7E1CCE"
+        },
+        {
+          "code": "7E1CEE50",
+          "desc": "Infinite Extinguisher [Player 2]",
+          "address": "0x7E1CEE"
+        },
+        {
+          "code": "7E1CD050",
+          "desc": "Infinite Martian Gun [Player 1]",
+          "address": "0x7E1CD0"
+        },
+        {
+          "code": "7E1CF050",
+          "desc": "Infinite Martian Gun [Player 2]",
+          "address": "0x7E1CF0"
+        },
+        {
+          "code": "7E1CD250",
+          "desc": "Infinite Weed Wacker [Player 1]",
+          "address": "0x7E1CD2"
+        },
+        {
+          "code": "7E1CF250",
+          "desc": "Infinite Weed Wacker [Player 2]",
+          "address": "0x7E1CF2"
+        },
+        {
+          "code": "7E1CD450",
+          "desc": "Infinite Holy Cross [Player 1]",
+          "address": "0x7E1CD4"
+        },
+        {
+          "code": "7E1CF450",
+          "desc": "Infinite Holy Cross [Player 2]",
+          "address": "0x7E1CF4"
+        },
+        {
+          "code": "7E1CD650",
+          "desc": "Infinite Bazooka [Player 1]",
+          "address": "0x7E1CD6"
+        },
+        {
+          "code": "7E1CF650",
+          "desc": "Infinite Bazooka [Player 2]",
+          "address": "0x7E1CF6"
+        },
+        {
+          "code": "7E1CD850",
+          "desc": "Infinite Soda Bombs [Player 1]",
+          "address": "0x7E1CD8"
+        },
+        {
+          "code": "7E1CF850",
+          "desc": "Infinite Soda Bombs [Player 2]",
+          "address": "0x7E1CF8"
+        },
+        {
+          "code": "7E1CDA50",
+          "desc": "Infinite Berries [Player 1]",
+          "address": "0x7E1CDA"
+        },
+        {
+          "code": "7E1CFA50",
+          "desc": "Infinite Berries [Player 2]",
+          "address": "0x7E1CFA"
+        },
+        {
+          "code": "7E1CDC50",
+          "desc": "Infinite Popsicles [Player 1]",
+          "address": "0x7E1CDC"
+        },
+        {
+          "code": "7E1CFC50",
+          "desc": "Infinite Popsicles [Player 2]",
+          "address": "0x7E1CFC"
+        },
+        {
+          "code": "7E1CDE50",
+          "desc": "Infinite Bananas [Player 1]",
+          "address": "0x7E1CDE"
+        },
+        {
+          "code": "7E1CFE50",
+          "desc": "Infinite Bananas [Player 2]",
+          "address": "0x7E1CFE"
+        },
+        {
+          "code": "7E1CE050",
+          "desc": "Infinite Plates [Player 1]",
+          "address": "0x7E1CE0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

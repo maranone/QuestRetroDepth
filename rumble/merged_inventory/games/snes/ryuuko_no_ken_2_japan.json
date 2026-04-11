@@ -1,0 +1,70 @@
+{
+  "system": "snes",
+  "normalized_title": "ryuukonoken2",
+  "display_name": "Ryuuko no Ken 2 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ryuuko no Ken 2 (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 10,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7F44220C",
+          "desc": "Play As Geese - Player 1",
+          "address": "0x7F4422"
+        },
+        {
+          "code": "7F49220C",
+          "desc": "Play As Geese - Player 2",
+          "address": "0x7F4922"
+        },
+        {
+          "code": "7E017063",
+          "desc": "Inf.Time",
+          "address": "0x7E0170"
+        },
+        {
+          "code": "7E017000",
+          "desc": "Inst.Time Over",
+          "address": "0x7E0170"
+        },
+        {
+          "code": "7F45620F",
+          "desc": "Player 1 Inf.Health",
+          "address": "0x7F4562"
+        },
+        {
+          "code": "7F456281",
+          "desc": "Player 1 Inf.Max Health",
+          "address": "0x7F4562"
+        },
+        {
+          "code": "7F456881",
+          "desc": "Player 1 Inf.Max Spirit",
+          "address": "0x7F4568"
+        },
+        {
+          "code": "7F4A6200",
+          "desc": "Player 2 No Health",
+          "address": "0x7F4A62"
+        },
+        {
+          "code": "7F4A6800",
+          "desc": "Player 2 No Spirit",
+          "address": "0x7F4A68"
+        },
+        {
+          "code": "7F456880",
+          "desc": "Infinite Super Bar P1",
+          "address": "0x7F4568"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

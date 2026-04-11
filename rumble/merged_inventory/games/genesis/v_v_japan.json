@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "vv",
+  "display_name": "V-V (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\V-V (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFD944:0009",
+          "desc": "Infinite Ships",
+          "address": "0xFFD944"
+        },
+        {
+          "code": "FFD946:0006",
+          "desc": "Infinite &quot;B&quot; (Explosive Blasts)",
+          "address": "0xFFD946"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

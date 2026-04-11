@@ -1,0 +1,7 @@
+game_name=Pop'n TwinBee - Rainbow Bell Adventures (Europe, Japan) (Action Replay)
+game_key=PopnTwinBeeRainbowBellAdventures-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_02ec	damage_taken	0x7E02EC	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02ec	death	0x7E02EC	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_02c0	score	0x7E02C0	2	uint	little	prev < curr	0.8	1	right:0.350:60

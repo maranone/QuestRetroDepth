@@ -1,0 +1,33 @@
+{
+  "system": "genesis",
+  "normalized_title": "startrekdeepspaceninecrossroadsoftime",
+  "display_name": "Star Trek - Deep Space Nine - Crossroads of Time (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Star Trek - Deep Space Nine - Crossroads of Time (USA)",
+    "Star Trek - Deep Space Nine - Crossroads of Time (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Star Trek - Deep Space Nine - Crossroads of Time (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFDE0D:XX",
+          "desc": "Level Modifier",
+          "address": "0xFFDE0D"
+        },
+        {
+          "code": "FFE001:XX",
+          "desc": "Level Modifier (Accessed Via Cheat \"DAVIDL\" Under Options Menu)",
+          "address": "0xFFE001"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

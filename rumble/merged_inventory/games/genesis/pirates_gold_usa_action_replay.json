@@ -1,0 +1,147 @@
+{
+  "system": "genesis",
+  "normalized_title": "piratesgold",
+  "display_name": "Pirates! Gold (USA) (Action Replay)",
+  "aliases": [
+    "Pirates! Gold (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Pirates! Gold (USA).cht",
+      "total_cheat_rows": 47,
+      "raw_entry_count": 35,
+      "distinct_address_count": 24,
+      "sample_raw_entries": [
+        {
+          "code": "FF01E8:0000",
+          "desc": "Age is always 25 years old (and health is always fine).",
+          "address": "0xFF01E8"
+        },
+        {
+          "code": "FFFF18:0000",
+          "desc": "Historical Period Modifier",
+          "address": "0xFFFF18"
+        },
+        {
+          "code": "FFFFAE:0000",
+          "desc": "Nationality Modifier",
+          "address": "0xFFFFAE"
+        },
+        {
+          "code": "FF12FA:0024",
+          "desc": "Infinite Health While Sword Fighting",
+          "address": "0xFF12FA"
+        },
+        {
+          "code": "FF69BE:0001",
+          "desc": "Almost No Health For Enemy While Sword Fighting",
+          "address": "0xFF69BE"
+        },
+        {
+          "code": "FF01C4:00FF",
+          "desc": "Max Crew Members",
+          "address": "0xFF01C4"
+        },
+        {
+          "code": "FFFF40:0000",
+          "desc": "Cannons Reload Much Faster During Sea Battles",
+          "address": "0xFFFF40"
+        },
+        {
+          "code": "FF01CA:00FF",
+          "desc": "Infinite Food",
+          "address": "0xFF01CA"
+        },
+        {
+          "code": "FFFE04:0000",
+          "desc": "Cannons/Food Modifier (On Ship)",
+          "address": "0xFFFE04"
+        },
+        {
+          "code": "FFFE08:0000",
+          "desc": "Always Have Empty Space (On Ship)",
+          "address": "0xFFFE08"
+        },
+        {
+          "code": "FF01E0:00FF",
+          "desc": "Have Lots of Money",
+          "address": "0xFF01E0"
+        },
+        {
+          "code": "FF01E0:00FF",
+          "desc": "Have Money Maxed Out",
+          "address": "0xFF01E0"
+        },
+        {
+          "code": "FF01E0:00FF",
+          "desc": "Have Money Maxed Out",
+          "address": "0xFF01E0"
+        },
+        {
+          "code": "FF12F4:00FF",
+          "desc": "Fake No Allies CPU",
+          "address": "0xFF12F4"
+        },
+        {
+          "code": "FF12F6:00FF",
+          "desc": "Fake Max Allies P1",
+          "address": "0xFF12F6"
+        },
+        {
+          "code": "FF69DE:0000",
+          "desc": "1 Hit Kills Enemy Pirate",
+          "address": "0xFF69DE"
+        },
+        {
+          "code": "FFFE1C:00FF",
+          "desc": "Item Merchant Has Lots of Money",
+          "address": "0xFFFE1C"
+        },
+        {
+          "code": "FFFE1C:00FF",
+          "desc": "Item Merchant Has Maxed Out Money",
+          "address": "0xFFFE1C"
+        },
+        {
+          "code": "FFFE1C:00FF",
+          "desc": "Item Merchant Has Maxed Out Money",
+          "address": "0xFFFE1C"
+        },
+        {
+          "code": "FFFE38:00FF",
+          "desc": "Have Lots of Free Space (In Merchant Shop)",
+          "address": "0xFFFE38"
+        },
+        {
+          "code": "FFFE38:00FF",
+          "desc": "Free Space Increases When You Trade (In Item Merchant Shop)",
+          "address": "0xFFFE38"
+        },
+        {
+          "code": "FFFE3A:00FF",
+          "desc": "Free Space Increases When You Trade (In Item Merchant Shop)",
+          "address": "0xFFFE3A"
+        },
+        {
+          "code": "FFFF20:00FF",
+          "desc": "Item Merchant Has Max Sugar",
+          "address": "0xFFFF20"
+        },
+        {
+          "code": "FFFE58:00FF",
+          "desc": "Have Lots of Food (Works For Both Yourself And Merchant)",
+          "address": "0xFFFE58"
+        },
+        {
+          "code": "FFFE5A:00FF",
+          "desc": "Have Max Goods",
+          "address": "0xFFFE5A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

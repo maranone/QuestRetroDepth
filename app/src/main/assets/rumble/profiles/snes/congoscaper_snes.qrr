@@ -1,0 +1,8 @@
+game_name=Congo's Caper (USA, Europe) (Action Replay)
+game_key=CongosCaper-Snes
+system=snes
+integration_tier=stable
+trigger	game_over_gameover_6b9c	game_over	0x7E6B9C	1	uint	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	life_lost_lives_0042	life_lost	0x7E0042	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0042	life_gained	0x7E0042	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0040	score	0x7E0040	2	bcd	little	prev < curr	0.8	1	right:0.350:60

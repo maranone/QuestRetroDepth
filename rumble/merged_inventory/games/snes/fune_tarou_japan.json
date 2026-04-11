@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "funetarou",
+  "display_name": "Fune Tarou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Fune Tarou (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E17F104",
+          "desc": "Infinite Hooks",
+          "address": "0x7E17F1"
+        },
+        {
+          "code": "7E17F3FF",
+          "desc": "Infinite Boat Fuel",
+          "address": "0x7E17F3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

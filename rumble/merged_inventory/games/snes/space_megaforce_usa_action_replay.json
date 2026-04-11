@@ -1,0 +1,87 @@
+{
+  "system": "snes",
+  "normalized_title": "spacemegaforce",
+  "display_name": "Space Megaforce (USA) (Action Replay)",
+  "aliases": [
+    "Space Megaforce (Rumbles)",
+    "Space Megaforce (USA) (Action Replay)",
+    "Space Megaforce (USA) (Game Genie)",
+    "Space Megaforce (USA)",
+    "Space Megaforce"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\spacemegaforce_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0058",
+        "0x7E0157"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SpaceMegaforce-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0157",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0058",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Space Megaforce (USA).cht",
+      "total_cheat_rows": 48,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E0BE020",
+          "desc": "Invincibility",
+          "address": "0x7E0BE0"
+        },
+        {
+          "code": "7E015799",
+          "desc": "Infinite Lives",
+          "address": "0x7E0157"
+        },
+        {
+          "code": "7E015399",
+          "desc": "Infinite Special Lives",
+          "address": "0x7E0153"
+        },
+        {
+          "code": "7E015299",
+          "desc": "Infinite Bombs",
+          "address": "0x7E0152"
+        },
+        {
+          "code": "7E006F06",
+          "desc": "Max Weapon Level",
+          "address": "0x7E006F"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 3,
+      "mk3_label": "SPACE MEGAFORCE"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

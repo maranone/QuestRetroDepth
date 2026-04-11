@@ -1,0 +1,34 @@
+{
+  "system": "snes",
+  "normalized_title": "timeslip",
+  "display_name": "Time Slip (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Time Slip (USA, Europe) (Game Genie)",
+    "Timeslip (Rumbles)",
+    "Timeslip (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Timeslip (USA).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E3D7C19",
+          "desc": "Infinite Lives",
+          "address": "0x7E3D7C"
+        },
+        {
+          "code": "7E50D80F",
+          "desc": "Infinite Health (Hits)",
+          "address": "0x7E50D8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

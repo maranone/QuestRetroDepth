@@ -1,0 +1,64 @@
+{
+  "system": "snes",
+  "normalized_title": "blazeonbiocyborgchallenge",
+  "display_name": "BlaZeon - The Bio-Cyborg Challenge (USA) (Game Genie)",
+  "aliases": [
+    "BlaZeon - The Bio-Cyborg Challenge (USA) (Game Genie)",
+    "BlaZeon - The Bio-Cyborg Challenge (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\blazeonthebiocyborgchallenge_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0E18",
+        "0x7E0E20"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BlaZeonTheBioCyborgChallenge-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0E18",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0E20",
+          "type": "<u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\BlaZeon - The Bio-Cyborg Challenge (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E0E1804",
+          "desc": "4 Lives",
+          "address": "0x7E0E18"
+        },
+        {
+          "code": "7E1C0002",
+          "desc": "Once An Improvement Is Obtained For The Ship, It Never Goes Away",
+          "address": "0x7E1C00"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

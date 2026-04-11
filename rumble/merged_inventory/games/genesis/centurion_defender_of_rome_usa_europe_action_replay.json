@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "centuriondefenderofrome",
+  "display_name": "Centurion - Defender of Rome (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Centurion - Defender of Rome (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Centurion - Defender of Rome (USA, Europe).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF3C84:0000",
+          "desc": "Tribute Modifier",
+          "address": "0xFF3C84"
+        },
+        {
+          "code": "FF3C7E:00FF",
+          "desc": "Infinite Manpower",
+          "address": "0xFF3C7E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

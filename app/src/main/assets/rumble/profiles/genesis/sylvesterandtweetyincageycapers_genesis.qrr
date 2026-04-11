@@ -1,0 +1,7 @@
+game_name=SylvesterAndTweetyInCageyCapers
+game_key=SylvesterAndTweetyInCageyCapers-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_fffbcb	life_lost	0xFFFBCB	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fffbcb	life_gained	0xFFFBCB	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_fffbbe	score	0xFFFBBE	4	uint	big	prev < curr	0.8	1	right:0.350:60

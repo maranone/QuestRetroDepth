@@ -1,0 +1,67 @@
+{
+  "system": "genesis",
+  "normalized_title": "rolotorescue",
+  "display_name": "Rolo to the Rescue (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Rolo to the Rescue (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Rolo to the Rescue (USA, Europe).cht",
+      "total_cheat_rows": 31,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "FFC512:00FF",
+          "desc": "Always Shield Effect",
+          "address": "0xFFC512"
+        },
+        {
+          "code": "FFC512:00FF",
+          "desc": "Always Fly",
+          "address": "0xFFC512"
+        },
+        {
+          "code": "FFC520:00FF",
+          "desc": "Always Small",
+          "address": "0xFFC520"
+        },
+        {
+          "code": "FFC556:0001",
+          "desc": "Rescue Only One Friend To Finish Stage",
+          "address": "0xFFC556"
+        },
+        {
+          "code": "FFC50A:0004",
+          "desc": "Invincible",
+          "address": "0xFFC50A"
+        },
+        {
+          "code": "FFC51C:0001",
+          "desc": "Activate Trunk Suction",
+          "address": "0xFFC51C"
+        },
+        {
+          "code": "FFC550:00FF",
+          "desc": "Have Key",
+          "address": "0xFFC550"
+        },
+        {
+          "code": "FF9A08:0001",
+          "desc": "Super Jump Midair",
+          "address": "0xFF9A08"
+        },
+        {
+          "code": "FFC51D:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFC51D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

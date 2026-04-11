@@ -1,0 +1,49 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "SnowWhiteInHappilyEverAfter",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "manual:libretro_database/Nintendo - Super Nintendo Entertainment System/Snow White In Happily Ever After (Rumbles).cht",
+    "integration_tier": "manual",
+    "game_key": "SnowWhiteInHappilyEverAfter-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_0_224",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E0224",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0224",
+          "bank": "7E",
+          "wram_offset": 548
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.85,
+      "needs_review": true,
+      "reason": "Imported from libretro Rumbles profile: Rumble on health loss",
+      "source_fields": [
+        {
+          "name": "rumble_on_health_loss",
+          "address": "0x7E0224",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

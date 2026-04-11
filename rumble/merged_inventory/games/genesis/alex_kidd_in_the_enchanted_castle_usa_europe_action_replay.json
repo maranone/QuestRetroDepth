@@ -1,0 +1,53 @@
+{
+  "system": "genesis",
+  "normalized_title": "alexkiddinenchantedcastle",
+  "display_name": "Alex Kidd in the Enchanted Castle (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Alex Kidd in the Enchanted Castle (USA)",
+    "Alex Kidd in the Enchanted Castle (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Alex Kidd in the Enchanted Castle (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFFE29:0008",
+          "desc": "Infinite Rings",
+          "address": "0xFFFE29"
+        },
+        {
+          "code": "FFC120:0008",
+          "desc": "Infinite Lives",
+          "address": "0xFFC120"
+        },
+        {
+          "code": "FFFE27:0008",
+          "desc": "Infinite Pogo Sticks",
+          "address": "0xFFFE27"
+        },
+        {
+          "code": "FFFE25:0008",
+          "desc": "Infinite Bikes",
+          "address": "0xFFFE25"
+        },
+        {
+          "code": "FFFE28:0008",
+          "desc": "Infinite Canes",
+          "address": "0xFFFE28"
+        },
+        {
+          "code": "FFFE2A:0008",
+          "desc": "Infinite Tokens",
+          "address": "0xFFFE2A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

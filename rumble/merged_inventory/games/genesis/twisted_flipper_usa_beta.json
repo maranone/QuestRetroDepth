@@ -1,0 +1,25 @@
+{
+  "system": "genesis",
+  "normalized_title": "twistedflipper",
+  "display_name": "Twisted Flipper (USA) (Beta)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Twisted Flipper (USA) (Beta).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF83EF:0001",
+          "desc": "Infinite Balls",
+          "address": "0xFF83EF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

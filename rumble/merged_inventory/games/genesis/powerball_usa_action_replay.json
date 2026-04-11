@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "powerball",
+  "display_name": "Powerball (USA) (Action Replay)",
+  "aliases": [
+    "Powerball (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Powerball (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFF532:0009",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFF532"
+        },
+        {
+          "code": "FFF532:0021",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFF532"
+        },
+        {
+          "code": "FFF538:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFFF538"
+        },
+        {
+          "code": "FFF53A:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFFF53A"
+        },
+        {
+          "code": "FFF422:0001",
+          "desc": "Unlocked Teams Mexico, Germany, Canada, France",
+          "address": "0xFFF422"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

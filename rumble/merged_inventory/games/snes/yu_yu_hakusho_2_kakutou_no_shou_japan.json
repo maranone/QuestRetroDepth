@@ -1,0 +1,70 @@
+{
+  "system": "snes",
+  "normalized_title": "yuyuhakusho2kakutounoshou",
+  "display_name": "Yu Yu Hakusho 2 - Kakutou no Shou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Yu Yu Hakusho 2 - Kakutou no Shou (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "7E1F5402",
+          "desc": "Hidden Characters",
+          "address": "0x7E1F54"
+        },
+        {
+          "code": "7E0C0A54",
+          "desc": "Infinite Health",
+          "address": "0x7E0C0A"
+        },
+        {
+          "code": "7E110A01",
+          "desc": "Opponent 1 Hit Kill",
+          "address": "0x7E110A"
+        },
+        {
+          "code": "7E0C0E54",
+          "desc": "Special Bar Always Full",
+          "address": "0x7E0C0E"
+        },
+        {
+          "code": "7E110E00",
+          "desc": "Opponent No Specials",
+          "address": "0x7E110E"
+        },
+        {
+          "code": "7E0C1200",
+          "desc": "Never Get Dizzy",
+          "address": "0x7E0C12"
+        },
+        {
+          "code": "7E11121E",
+          "desc": "Opponent Gets Dizzy Easily",
+          "address": "0x7E1112"
+        },
+        {
+          "code": "7E0C0400",
+          "desc": "Character Modifier",
+          "address": "0x7E0C04"
+        },
+        {
+          "code": "7E110400",
+          "desc": "Opponent Modifier",
+          "address": "0x7E1104"
+        },
+        {
+          "code": "7E160000",
+          "desc": "Battleground Modifier",
+          "address": "0x7E1600"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

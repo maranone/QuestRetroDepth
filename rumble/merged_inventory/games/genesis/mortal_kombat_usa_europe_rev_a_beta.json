@@ -1,0 +1,147 @@
+{
+  "system": "genesis",
+  "normalized_title": "mortalkombat",
+  "display_name": "Mortal Kombat (USA, Europe) (Rev A) (Beta)",
+  "aliases": [
+    "Mortal Kombat (USA, Europe) (Rev A) (Beta)",
+    "Mortal Kombat (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\mortalkombat_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFABB4"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MortalKombat-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "enemy_matches_won",
+          "address": "0xFFAB8D",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFABB4",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mortal Kombat (World).cht",
+      "total_cheat_rows": 537,
+      "raw_entry_count": 19,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "FFCAB8:00FA",
+          "desc": "Infinite Health [Player 1]",
+          "address": "0xFFCAB8"
+        },
+        {
+          "code": "FFCBB8:00FA",
+          "desc": "Infinite Health [Player 2]",
+          "address": "0xFFCBB8"
+        },
+        {
+          "code": "FFABCC:0000",
+          "desc": "Player 1 Modifier",
+          "address": "0xFFABCC"
+        },
+        {
+          "code": "FFABCE:0000",
+          "desc": "Player 2 Modifier",
+          "address": "0xFFABCE"
+        },
+        {
+          "code": "FFAC7E:00FA",
+          "desc": "Infinite Time For Matches",
+          "address": "0xFFAC7E"
+        },
+        {
+          "code": "FFAB7A:0003",
+          "desc": "Infinite Continues",
+          "address": "0xFFAB7A"
+        },
+        {
+          "code": "FFAB8A:0001",
+          "desc": "Only Need 1 Win For Matches [Player 1 &amp; 2]",
+          "address": "0xFFAB8A"
+        },
+        {
+          "code": "FFAB8C:0001",
+          "desc": "Only Need 1 Win For Matches [Player 2 &amp; CPU]",
+          "address": "0xFFAB8C"
+        },
+        {
+          "code": "FFAAD8:007F",
+          "desc": "Set Max. Strength In Bonus Game [Player 1]",
+          "address": "0xFFAAD8"
+        },
+        {
+          "code": "FFAAD8:007F",
+          "desc": "Set Max. Strength In Bonus Game [Player 2]",
+          "address": "0xFFAAD8"
+        },
+        {
+          "code": "FFFF56:0000",
+          "desc": "Enable Blood",
+          "address": "0xFFFF56"
+        },
+        {
+          "code": "FFAB30:0000",
+          "desc": "Player 1 Doesn't Move/Attack, Can Only Block And Duck",
+          "address": "0xFFAB30"
+        },
+        {
+          "code": "FFCB82:0000",
+          "desc": "Player 1 Move Set Modifier",
+          "address": "0xFFCB82"
+        },
+        {
+          "code": "FFAABA:0001",
+          "desc": "Set Match Modifier",
+          "address": "0xFFAABA"
+        },
+        {
+          "code": "FFFF5A:0001",
+          "desc": "Enable &quot;Cheat Enabled&quot; Option on Menu",
+          "address": "0xFFFF5A"
+        },
+        {
+          "code": "FFAABC:0000",
+          "desc": "Stage Modifier",
+          "address": "0xFFAABC"
+        },
+        {
+          "code": "FFFF5A:00BE",
+          "desc": "Cheat Menu Flag Toggle",
+          "address": "0xFFFF5A"
+        },
+        {
+          "code": "FFAAAC:0001",
+          "desc": "Silhouettes Always Appear On Pit Level",
+          "address": "0xFFAAAC"
+        },
+        {
+          "code": "FFAAFE:0009",
+          "desc": "FAKE Infinite Bonus Round Time",
+          "address": "0xFFAAFE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

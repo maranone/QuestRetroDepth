@@ -1,0 +1,99 @@
+{
+  "system": "genesis",
+  "normalized_title": "deathduel",
+  "display_name": "Death Duel (USA) (Action Replay)",
+  "aliases": [
+    "Death Duel (USA) (Action Replay)",
+    "Death Duel (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\deathduel_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFFF29",
+        "0xFFFF41"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DeathDuel-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFFF29",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFF41",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Death Duel (USA).cht",
+      "total_cheat_rows": 72,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "FFFF29:0005",
+          "desc": "Unlimited Tries",
+          "address": "0xFFFF29"
+        },
+        {
+          "code": "FF1388:0000",
+          "desc": "Sound Test Modifier (Options)",
+          "address": "0xFF1388"
+        },
+        {
+          "code": "FFFF00:0000",
+          "desc": "Qualifying Music (Options)",
+          "address": "0xFFFF00"
+        },
+        {
+          "code": "FFFF2E:0099",
+          "desc": "Timer always 99",
+          "address": "0xFFFF2E"
+        },
+        {
+          "code": "FF268C:0099",
+          "desc": "Left Weapon Always Has 99 Ammo",
+          "address": "0xFF268C"
+        },
+        {
+          "code": "FF26AE:0099",
+          "desc": "Center Weapon Always has 99 Ammo",
+          "address": "0xFF26AE"
+        },
+        {
+          "code": "FF26D0:0099",
+          "desc": "Right Weapon Ammo Always has 99 Ammo",
+          "address": "0xFF26D0"
+        },
+        {
+          "code": "FFFF2F:0065",
+          "desc": "Freeze Time",
+          "address": "0xFFFF2F"
+        },
+        {
+          "code": "FFFF17:005F",
+          "desc": "Infinite Health",
+          "address": "0xFFFF17"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

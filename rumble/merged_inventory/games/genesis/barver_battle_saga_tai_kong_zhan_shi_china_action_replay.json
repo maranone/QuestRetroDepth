@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "barverbattlesagataikongzhanshi",
+  "display_name": "Barver Battle Saga - Tai Kong Zhan Shi (China) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Barver Battle Saga - Tai Kong Zhan Shi (China) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFE254:FDE8",
+          "desc": "Infinite GP",
+          "address": "0xFFE254"
+        },
+        {
+          "code": "FFE10C:03E7",
+          "desc": "Infinite HP Character 1",
+          "address": "0xFFE10C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=Marble Madness (World) (Action Replay)
+game_key=MarbleMadness-Genesis
+system=genesis
+integration_tier=stable
+trigger	score_score_ffb129	score	0xFFB129	3	uint	big	prev < curr	0.8	1	right:0.350:60

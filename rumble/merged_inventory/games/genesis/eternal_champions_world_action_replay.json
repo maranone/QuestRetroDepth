@@ -1,0 +1,150 @@
+{
+  "system": "genesis",
+  "normalized_title": "eternalchampions",
+  "display_name": "Eternal Champions (World) (Action Replay)",
+  "aliases": [
+    "Eternal Champions (Europe)",
+    "Eternal Champions (Japan, Korea)",
+    "Eternal Champions (USA)",
+    "Eternal Champions (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Eternal Champions (World) (Action Replay).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 49,
+      "distinct_address_count": 49,
+      "sample_raw_entries": [
+        {
+          "code": "FF9CB5:99",
+          "desc": "Infinite Time",
+          "address": "0xFF9CB5"
+        },
+        {
+          "code": "FFABEF:99",
+          "desc": "Infinite Health P1",
+          "address": "0xFFABEF"
+        },
+        {
+          "code": "FFAABB:00",
+          "desc": "No Health P2/CPU (Not Visible)",
+          "address": "0xFFAABB"
+        },
+        {
+          "code": "FF9351:XX",
+          "desc": "P1 Win Modifier",
+          "address": "0xFF9351"
+        },
+        {
+          "code": "FF934F:XX",
+          "desc": "P2 Win Modifier",
+          "address": "0xFF934F"
+        },
+        {
+          "code": "FF9CBF:XX",
+          "desc": "P1 Character Modifier",
+          "address": "0xFF9CBF"
+        },
+        {
+          "code": "FF9CBD:XX",
+          "desc": "P2 Character Modifier",
+          "address": "0xFF9CBD"
+        },
+        {
+          "code": "FFACAB:XX",
+          "desc": "P1 Ying & Yang Modifier",
+          "address": "0xFFACAB"
+        },
+        {
+          "code": "FF936F:XX",
+          "desc": "Stage Modifier (All Modes)",
+          "address": "0xFF936F"
+        },
+        {
+          "code": "FFABBA:29DC",
+          "desc": "P1 Can't Be Hit (All Fighters)",
+          "address": "0xFFABBA"
+        },
+        {
+          "code": "FFAA86:29DC",
+          "desc": "P2 Can't Be Hit (All Fighters)",
+          "address": "0xFFAA86"
+        },
+        {
+          "code": "FFAC86:02",
+          "desc": "P1 Has Jetta's Speed Increase",
+          "address": "0xFFAC86"
+        },
+        {
+          "code": "FFAB52:02",
+          "desc": "P2 Has Jetta's Speed Increase",
+          "address": "0xFFAB52"
+        },
+        {
+          "code": "FFF096:00",
+          "desc": "Shadow Fighter P1 (In-Game)",
+          "address": "0xFFF096"
+        },
+        {
+          "code": "FFF098:00",
+          "desc": "Shadow Fighter P1 (In-Game)",
+          "address": "0xFFF098"
+        },
+        {
+          "code": "FFF09A:00",
+          "desc": "Shadow Fighter P1 (In-Game)",
+          "address": "0xFFF09A"
+        },
+        {
+          "code": "FFF09C:0000",
+          "desc": "Shadow Fighter P1 (In-Game)",
+          "address": "0xFFF09C"
+        },
+        {
+          "code": "FFF09E:0000",
+          "desc": "Shadow Fighter P1 (In-Game)",
+          "address": "0xFFF09E"
+        },
+        {
+          "code": "FFF0A0:0000",
+          "desc": "Shadow Fighter P1 (In-Game)",
+          "address": "0xFFF0A0"
+        },
+        {
+          "code": "FFF0A2:0000",
+          "desc": "Shadow Fighter P1 (In-Game)",
+          "address": "0xFFF0A2"
+        },
+        {
+          "code": "FFF0A4:0000",
+          "desc": "Shadow Fighter P1 (In-Game)",
+          "address": "0xFFF0A4"
+        },
+        {
+          "code": "FFF0A6:0000",
+          "desc": "Shadow Fighter P1 (In-Game)",
+          "address": "0xFFF0A6"
+        },
+        {
+          "code": "FFF0A8:0000",
+          "desc": "Shadow Fighter P1 (In-Game)",
+          "address": "0xFFF0A8"
+        },
+        {
+          "code": "FFF0AA:00",
+          "desc": "Shadow Fighter P1 (In-Game)",
+          "address": "0xFFF0AA"
+        },
+        {
+          "code": "FFF0AC:00",
+          "desc": "Shadow Fighter P1 (In-Game)",
+          "address": "0xFFF0AC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

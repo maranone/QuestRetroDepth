@@ -25,7 +25,9 @@
 #include <vector>
 
 #include "button_map.h"
+#include "panel_layout.h"
 #include "emulator_backend.h"
+#include "experimental_rumble.h"
 #include "game_config.h"
 #include "gles_renderer.h"
 #include "layer_processor.h"
@@ -98,9 +100,17 @@ public:
         std::lock_guard<std::mutex> lk(m_mutex);
         m_on_vr_state_changed = std::move(fn);
     }
+    using ExperimentalRumbleChanged = std::function<void(bool enabled)>;
+    void set_on_experimental_rumble_changed(ExperimentalRumbleChanged fn) {
+        std::lock_guard<std::mutex> lk(m_mutex);
+        m_on_experimental_rumble_changed = std::move(fn);
+    }
 
     void set_current_backend_kind(BackendKind kind);
     void set_current_game_name(const std::string& name);
+    void enqueue_haptic(bool right, float amplitude, int duration_ms);
+    void enqueue_haptic(const QueuedHapticEvent& event);
+    void set_experimental_rumble_status(const std::string& status);
 
 private:
     void set_status(const std::string& s);
@@ -133,12 +143,14 @@ private:
     void rebuild_settings_panel_texture();     // call Kotlin → upload GL texture
     void rebuild_code_panel_texture();         // call Kotlin → upload GL texture
     void rebuild_ctrlmap_panel_texture();      // call Kotlin → upload GL texture
+    void rebuild_help_panel_texture();         // call Kotlin → upload GL texture
     std::string get_settings_dir();            // call Kotlin → returns settings directory path
     void save_settings(bool game_scope);       // save current state to disk
     void load_settings(bool game_scope);       // load state from disk (if file exists)
     void reset_settings();                     // reset to hardcoded defaults
     void apply_layer_filter_mode(LayerFilterMode mode, bool restore_saved_state);
     void sync_layer_capture_mask();
+    void flush_pending_haptics();
     // right=true → right controller, false → left; amplitude 0-1, duration_ms
     void fire_haptic(bool right, float amplitude = 0.4f, int duration_ms = 40);
     void shutdown();
@@ -155,6 +167,7 @@ private:
     std::string        m_status = "VR shell idle.";
     FrameProvider      m_frame_provider;
     VrStateChanged     m_on_vr_state_changed;
+    ExperimentalRumbleChanged m_on_experimental_rumble_changed;
     float              m_active_refresh_rate = 0.0f;
     float              m_last_render_ms      = 0.0f;
     float              m_avg_render_ms       = 0.0f;
@@ -180,6 +193,8 @@ private:
     std::string m_current_rom_name;   // filename stem of currently loaded ROM (for per-game settings)
     std::string m_current_game_name;  // from ROM header (0xFFC0+) for version fallback
     BackendKind m_current_backend_kind = BackendKind::Snes;
+    bool        m_experimental_rumble_enabled = false;
+    std::string m_experimental_rumble_status = "OFF";
 
     bool        m_menu_prev  = false;
     bool        m_rtrig_prev = false;
@@ -212,6 +227,13 @@ private:
     int         m_laser_panel  = -1;  // which panel was hit (k_panel_*)
     float       m_laser_hit_u  = 0.0f;
     float       m_laser_hit_v  = 0.0f;
+    PanelLayoutItem m_laser_hit_item{};
+    bool        m_laser_hit_has_item = false;
+    PanelLayout m_main_menu_layout;
+    PanelLayout m_layer_panel_layout;
+    PanelLayout m_settings_panel_layout;
+    PanelLayout m_code_panel_layout;
+    PanelLayout m_ctrlmap_panel_layout;
 
     // Edit-mode laser state
     XrVector3f  m_edit_laser_l_origin = {0,0,0};
@@ -258,6 +280,7 @@ private:
     int     m_settings_panel_hovered = -1;
     int     m_settings_panel_area    = 0; // 0=none 1=minus 2=plus
     XrTime  m_last_settings_fire     = 0;
+    std::vector<QueuedHapticEvent> m_pending_haptics;
 
     // ---------- Code-input panel (floats above ROM browser) ----------
     GLuint      m_code_panel_tex     = 0;
@@ -272,6 +295,12 @@ private:
     int     m_ctrlmap_panel_hovered = -1; // row under laser (-1=none)
     int     m_ctrlmap_selected_row  = -1; // row being remapped (-1=none)
     ButtonMap m_button_map;               // current mapping (SNES→QuestInput)
+
+    // ---------- Passive side help panels ----------
+    GLuint      m_help_panel_tex   = 0;
+    bool        m_help_panel_dirty = true;
+    XrTime      m_last_help_fire   = 0;
+    std::string m_help_panel_key;
 
     // Emulator freeze control callbacks (set by questretrodepth_main.cpp)
     EmuFreezeCtrl m_emu_freeze_ctrl;
@@ -328,6 +357,7 @@ private:
     float m_canvas_y  = 0.0f; // vertical offset from floor level (metres)
     float m_canvas_az = 0.0f; // horizontal arc angle (radians)
     float m_canvas_el = 0.0f; // vertical arc angle (radians)
+    float m_canvas_scale = 1.0f; // screen size multiplier at the same depth
     // Predicted display time for the current frame (used to locate controllers)
     XrTime m_frame_predicted_time = 0;
     // Auto-recenter once on first valid HMD pose

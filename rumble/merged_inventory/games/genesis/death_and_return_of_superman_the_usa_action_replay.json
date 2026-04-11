@@ -1,0 +1,122 @@
+{
+  "system": "genesis",
+  "normalized_title": "deathandreturnofsuperman",
+  "display_name": "Death and Return of Superman, The (USA) (Action Replay)",
+  "aliases": [
+    "Death and Return of Superman, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Death and Return of Superman, The (USA).cht",
+      "total_cheat_rows": 84,
+      "raw_entry_count": 20,
+      "distinct_address_count": 20,
+      "sample_raw_entries": [
+        {
+          "code": "FF9580:0064",
+          "desc": "Infinite Health Superman",
+          "address": "0xFF9580"
+        },
+        {
+          "code": "FF9346:0009",
+          "desc": "Infinite Lives Superman",
+          "address": "0xFF9346"
+        },
+        {
+          "code": "FF84F6:0005",
+          "desc": "Infinite Special Move",
+          "address": "0xFF84F6"
+        },
+        {
+          "code": "FF9584:0001",
+          "desc": "Almost No Health Some Enemies",
+          "address": "0xFF9584"
+        },
+        {
+          "code": "FF84EA:002D",
+          "desc": "Fake Health Superman",
+          "address": "0xFF84EA"
+        },
+        {
+          "code": "FF8032:0009",
+          "desc": "Music Instrument Screwer",
+          "address": "0xFF8032"
+        },
+        {
+          "code": "FF8202:0000",
+          "desc": "Sound Test",
+          "address": "0xFF8202"
+        },
+        {
+          "code": "FF8242:0000",
+          "desc": "Control Mode",
+          "address": "0xFF8242"
+        },
+        {
+          "code": "FF9586:0000",
+          "desc": "2nd Enemy HP Modifier",
+          "address": "0xFF9586"
+        },
+        {
+          "code": "FF9588:0000",
+          "desc": "3rd Enemy HP Modifier",
+          "address": "0xFF9588"
+        },
+        {
+          "code": "FF958A:0000",
+          "desc": "4th Enemy HP Modifier",
+          "address": "0xFF958A"
+        },
+        {
+          "code": "FF958E:0000",
+          "desc": "5th Enemy HP Modifier",
+          "address": "0xFF958E"
+        },
+        {
+          "code": "FF9590:0000",
+          "desc": "6th Enemy HP Modifier",
+          "address": "0xFF9590"
+        },
+        {
+          "code": "FF9594:0000",
+          "desc": "7th Enemy HP Modifier",
+          "address": "0xFF9594"
+        },
+        {
+          "code": "FF9460:0000",
+          "desc": "Cursor Select Modifier for Main Menu/Game Options",
+          "address": "0xFF9460"
+        },
+        {
+          "code": "FF91E0:0000",
+          "desc": "P1 X-Axis Modifier",
+          "address": "0xFF91E0"
+        },
+        {
+          "code": "FF9720:0000",
+          "desc": "P1 Y-Axis Modifier",
+          "address": "0xFF9720"
+        },
+        {
+          "code": "FF9260:0000",
+          "desc": "P1 X-Axis View Mode",
+          "address": "0xFF9260"
+        },
+        {
+          "code": "FF9760:0000",
+          "desc": "P1 Y-Axis View Mode",
+          "address": "0xFF9760"
+        },
+        {
+          "code": "FF8519:0010",
+          "desc": "Invincible",
+          "address": "0xFF8519"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

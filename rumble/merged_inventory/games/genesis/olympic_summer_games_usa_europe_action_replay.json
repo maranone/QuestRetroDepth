@@ -1,0 +1,37 @@
+{
+  "system": "genesis",
+  "normalized_title": "olympicsummergames",
+  "display_name": "Olympic Summer Games (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Olympic Summer Games (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Olympic Summer Games (USA, Europe).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFF7DA:00FF",
+          "desc": "Archery Points Maxed",
+          "address": "0xFFF7DA"
+        },
+        {
+          "code": "FFF812:0009",
+          "desc": "Infinite Arrows (Archery)",
+          "address": "0xFFF812"
+        },
+        {
+          "code": "FFF7DA:0009",
+          "desc": "Always Have A Score of 9 (Skeet)",
+          "address": "0xFFF7DA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

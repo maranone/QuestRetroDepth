@@ -1,0 +1,81 @@
+{
+  "system": "genesis",
+  "normalized_title": "t2arcadegame",
+  "display_name": "T2 - The Arcade Game (World) (Action Replay)",
+  "aliases": [
+    "T2 - The Arcade Game (USA, Europe)",
+    "T2 - The Arcade Game (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\t2thearcadegame_genesis.json",
+      "trigger_count": 4,
+      "field_names": [
+        "gameover",
+        "health",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF801E",
+        "0xFF8023",
+        "0xFF9EA8"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\T2TheArcadeGame-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xFF8023",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFF801E",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF9EA8",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\T2 - The Arcade Game (World) (Action Replay).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF801E:FFFF",
+          "desc": "Infinite Health",
+          "address": "0xFF801E"
+        },
+        {
+          "code": "FF801C:FFFF",
+          "desc": "Infinite Gun Power",
+          "address": "0xFF801C"
+        },
+        {
+          "code": "FF8018:9999",
+          "desc": "Infinite Missiles",
+          "address": "0xFF8018"
+        },
+        {
+          "code": "FF80CA:0004",
+          "desc": "Unlimited Continues",
+          "address": "0xFF80CA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

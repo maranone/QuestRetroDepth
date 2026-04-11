@@ -30,6 +30,7 @@ uniform float uCanvasX;   // horizontal translation (metres)
 uniform float uCanvasY;   // vertical translation (metres)
 uniform float uCanvasAz;  // azimuth arc angle (radians)
 uniform float uCanvasEl;  // elevation arc angle (radians)
+uniform float uCanvasScale;
 
 out vec2  vUV;
 out float vCopyT;
@@ -78,8 +79,8 @@ void main() {
     vec3 right = vec3(cos_az,           0.0,     sin_az);
     vec3 up    = vec3(-sin_az * sin_el, cos_el, -cos_az * sin_el);
 
-    float vx = aPos.x * uQuadW * scale;
-    float vy = aPos.y * uQuadH * scale;
+    float vx = aPos.x * uQuadW * scale * uCanvasScale;
+    float vy = aPos.y * uQuadH * scale * uCanvasScale;
 
     // Screen curve pushes vertices along the outward normal
     gl_Position = uVP * vec4(center + right * vx + up * vy + normal * curve_offset, 1.0);
@@ -108,6 +109,7 @@ uniform float uCanvasX;
 uniform float uCanvasY;
 uniform float uCanvasAz;
 uniform float uCanvasEl;
+uniform float uCanvasScale;
 
 out vec2  vUV;
 out float vCopyT;
@@ -156,8 +158,8 @@ void main() {
     vec3 tilted_normal = right * sty + pitched_normal * cty;
     vec3 tilted_up     = pitched_up;
 
-    float vx = aPos.x * uQuadW * scale;
-    float vy = aPos.y * uQuadH * scale;
+    float vx = aPos.x * uQuadW * scale * uCanvasScale;
+    float vy = aPos.y * uQuadH * scale * uCanvasScale;
 
     // The strip mesh supplies enough vertices for this depth shift to read as a curve.
     float edge_t = aPos.x * 2.0;
@@ -182,6 +184,7 @@ uniform float uSaturation;
 uniform float uBrightness;
 uniform float uCopyCount;
 uniform float uSolidStack;  // 1.0 = fill transparent copy pixels with dark extrusion colour
+uniform float uForceOpaqueAlpha; // 1.0 = visible game pixels write full compositor alpha
 
 in vec2  vUV;
 in float vCopyT;
@@ -224,6 +227,9 @@ void main() {
         color.rgb = (color.rgb - 0.5) * uContrast + 0.5;
         color.rgb *= uBrightness;
         color.rgb = clamp(color.rgb, 0.0, 1.0);
+    }
+    if (uForceOpaqueAlpha > 0.5) {
+        color.a = 1.0;
     }
     fragColor = color;
 }
@@ -336,7 +342,9 @@ bool GlesRenderer::init_layer_program(std::string& err) {
     m_u_canvas_y     = glGetUniformLocation(m_program, "uCanvasY");
     m_u_canvas_az    = glGetUniformLocation(m_program, "uCanvasAz");
     m_u_canvas_el    = glGetUniformLocation(m_program, "uCanvasEl");
+    m_u_canvas_scale = glGetUniformLocation(m_program, "uCanvasScale");
     m_u_solid_stack  = glGetUniformLocation(m_program, "uSolidStack");
+    m_u_force_opaque_alpha = glGetUniformLocation(m_program, "uForceOpaqueAlpha");
     return true;
 }
 
@@ -370,7 +378,9 @@ bool GlesRenderer::init_immersive_layer_program(std::string& err) {
     m_i_u_canvas_y     = glGetUniformLocation(m_immersive_program, "uCanvasY");
     m_i_u_canvas_az    = glGetUniformLocation(m_immersive_program, "uCanvasAz");
     m_i_u_canvas_el    = glGetUniformLocation(m_immersive_program, "uCanvasEl");
+    m_i_u_canvas_scale = glGetUniformLocation(m_immersive_program, "uCanvasScale");
     m_i_u_solid_stack  = glGetUniformLocation(m_immersive_program, "uSolidStack");
+    m_i_u_force_opaque_alpha = glGetUniformLocation(m_immersive_program, "uForceOpaqueAlpha");
     return true;
 }
 
@@ -956,11 +966,13 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
                                float canvas_y,
                                float canvas_az,
                                float canvas_el,
+                               float canvas_scale,
                                const OverlayInfo* overlay,
                                float bg_r,
                                float bg_g,
                                float bg_b,
-                               float bg_a) {
+                               float bg_a,
+                               bool passthrough_alpha) {
     const Mat4 vp = Mat4::mul(proj, view);
 
     glBindFramebuffer(GL_FRAMEBUFFER, fbo.fbo);
@@ -1005,7 +1017,9 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
     const GLint u_canvas_y     = immersive_active ? m_i_u_canvas_y     : m_u_canvas_y;
     const GLint u_canvas_az    = immersive_active ? m_i_u_canvas_az    : m_u_canvas_az;
     const GLint u_canvas_el    = immersive_active ? m_i_u_canvas_el    : m_u_canvas_el;
+    const GLint u_canvas_scale = immersive_active ? m_i_u_canvas_scale : m_u_canvas_scale;
     const GLint u_solid_stack  = immersive_active ? m_i_u_solid_stack  : m_u_solid_stack;
+    const GLint u_force_opaque_alpha = immersive_active ? m_i_u_force_opaque_alpha : m_u_force_opaque_alpha;
     const int layer_vertex_count = immersive_active ? m_curve_vertex_count : 6;
 
     glUseProgram(layer_program);
@@ -1018,6 +1032,7 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
     glUniform1f(u_brightness,   state.brightness);
     glUniform1f(u_roundness,    0.0f);
     glUniform1f(u_screen_curve, immersive_active ? state.screen_curve : 0.0f);
+    glUniform1f(u_force_opaque_alpha, passthrough_alpha ? 1.0f : 0.0f);
     if (immersive_active) {
         glUniform1f(m_i_u_tilt_x, state.tilt_x);
         glUniform1f(m_i_u_tilt_y, state.tilt_y);
@@ -1027,6 +1042,7 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
     glUniform1f(u_canvas_y,     canvas_y);
     glUniform1f(u_canvas_az,    canvas_az);
     glUniform1f(u_canvas_el,    canvas_el);
+    glUniform1f(u_canvas_scale, canvas_scale);
     glUniform1i(u_texture, 0);
 
     glBindVertexArray(immersive_active ? m_curve_vao : m_vao);
@@ -1085,7 +1101,12 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
         // holes into them via the depth buffer.
         glDepthMask(GL_FALSE);
         glEnable(GL_BLEND);
-        glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+        if (passthrough_alpha) {
+            glBlendFuncSeparate(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA,
+                                GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
+        } else {
+            glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+        }
 
         if (state.layers_3d) {
             glDrawArraysInstanced(GL_TRIANGLES, 0, layer_vertex_count, copy_count + 1);

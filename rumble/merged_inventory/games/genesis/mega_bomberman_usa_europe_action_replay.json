@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "megabomberman",
+  "display_name": "Mega Bomberman (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Mega Bomberman (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mega Bomberman (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF9543:09",
+          "desc": "Infinite Lives",
+          "address": "0xFF9543"
+        },
+        {
+          "code": "FFA428:3B",
+          "desc": "Infinite Time (Alternate Code)",
+          "address": "0xFFA428"
+        },
+        {
+          "code": "FF8289:09",
+          "desc": "Bombs Have Longer Reach",
+          "address": "0xFF8289"
+        },
+        {
+          "code": "FF8289:09",
+          "desc": "Can Place More Bombs",
+          "address": "0xFF8289"
+        },
+        {
+          "code": "FFA442:10",
+          "desc": "Can Kick Bombs",
+          "address": "0xFFA442"
+        },
+        {
+          "code": "FFA959:00",
+          "desc": "The Exit Is Always Open (You Still Need To Get On Your Kangaroo)",
+          "address": "0xFFA959"
+        },
+        {
+          "code": "FFA444:1E",
+          "desc": "Invincible",
+          "address": "0xFFA444"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

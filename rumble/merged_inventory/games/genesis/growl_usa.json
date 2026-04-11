@@ -1,0 +1,76 @@
+{
+  "system": "genesis",
+  "normalized_title": "growl",
+  "display_name": "Growl (USA)",
+  "aliases": [
+    "Growl (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\growl_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFC008"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Growl-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "healthHi",
+          "address": "0xFF3A2B",
+          "type": "|n1"
+        },
+        {
+          "name": "healthLo",
+          "address": "0xFF3A2D",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFC008",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Growl (USA).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF0856:0009",
+          "desc": "Infinite Time At Continue",
+          "address": "0xFF0856"
+        },
+        {
+          "code": "FF085A:0009",
+          "desc": "Infinite Credits",
+          "address": "0xFF085A"
+        },
+        {
+          "code": "FF0857:0009",
+          "desc": "Freeze Time Continue",
+          "address": "0xFF0857"
+        },
+        {
+          "code": "FF3A29:0008",
+          "desc": "Infinite Ammo Secondary Weapon",
+          "address": "0xFF3A29"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

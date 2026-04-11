@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "tazinescapefrommars",
+  "display_name": "Taz in Escape from Mars (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Taz in Escape from Mars (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Taz in Escape from Mars (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFCCAC:17",
+          "desc": "Infinite Health",
+          "address": "0xFFCCAC"
+        },
+        {
+          "code": "FFD04F:09",
+          "desc": "Infinite Lives",
+          "address": "0xFFD04F"
+        },
+        {
+          "code": "FFC8F5:63",
+          "desc": "Infinite Time At Continue Screen",
+          "address": "0xFFC8F5"
+        },
+        {
+          "code": "FFD04B:09",
+          "desc": "Infinite Continues",
+          "address": "0xFFD04B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

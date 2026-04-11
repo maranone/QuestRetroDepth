@@ -1,0 +1,5 @@
+game_name=ShadowRun
+game_key=ShadowRun-Genesis
+system=genesis
+integration_tier=manual
+trigger	damage_taken_0_19d	damage_taken	0xFF019D	1	uint	native	prev > curr	0.85	1	left:0.750:180

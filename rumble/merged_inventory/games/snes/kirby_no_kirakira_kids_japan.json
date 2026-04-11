@@ -1,0 +1,35 @@
+{
+  "system": "snes",
+  "normalized_title": "kirbynokirakirakids",
+  "display_name": "Kirby no Kirakira Kids (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Kirby no Kirakira Kids (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E892EFF",
+          "desc": "Quickly Gain Score",
+          "address": "0x7E892E"
+        },
+        {
+          "code": "7E892E00",
+          "desc": "Quick Win",
+          "address": "0x7E892E"
+        },
+        {
+          "code": "7E9A1603",
+          "desc": "Quick Win",
+          "address": "0x7E9A16"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

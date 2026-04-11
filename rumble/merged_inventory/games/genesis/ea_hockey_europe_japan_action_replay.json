@@ -1,0 +1,40 @@
+{
+  "system": "genesis",
+  "normalized_title": "eahockey",
+  "display_name": "EA Hockey (Europe, Japan) (Action Replay)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\EA Hockey (Europe, Japan) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFD8E8:09",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0xFFD8E8"
+        },
+        {
+          "code": "FFD8E9:79",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0xFFD8E9"
+        },
+        {
+          "code": "FFD903:XX",
+          "desc": "Team 1 Score Modifier",
+          "address": "0xFFD903"
+        },
+        {
+          "code": "FFD98B:XX",
+          "desc": "Team 2 Score Modifier",
+          "address": "0xFFD98B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

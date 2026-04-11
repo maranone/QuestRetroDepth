@@ -1,0 +1,45 @@
+{
+  "system": "snes",
+  "normalized_title": "espnnationalhockeynight",
+  "display_name": "ESPN National Hockey Night (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\ESPN National Hockey Night (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E198F01",
+          "desc": "Freeze Timer",
+          "address": "0x7E198F"
+        },
+        {
+          "code": "7E19A900",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0x7E19A9"
+        },
+        {
+          "code": "7EE4C600",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0x7EE4C6"
+        },
+        {
+          "code": "7E19A700",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0x7E19A7"
+        },
+        {
+          "code": "7EE45800",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0x7EE458"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

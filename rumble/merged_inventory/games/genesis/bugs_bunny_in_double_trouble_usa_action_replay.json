@@ -1,0 +1,82 @@
+{
+  "system": "genesis",
+  "normalized_title": "bugsbunnyindoubletrouble",
+  "display_name": "Bugs Bunny in Double Trouble (USA) (Action Replay)",
+  "aliases": [
+    "Bugs Bunny in Double Trouble (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Bugs Bunny in Double Trouble (USA).cht",
+      "total_cheat_rows": 31,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "FF00FE:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFF00FE"
+        },
+        {
+          "code": "FF014E:0040",
+          "desc": "Infinite Energy",
+          "address": "0xFF014E"
+        },
+        {
+          "code": "FFCAAA:0000",
+          "desc": "Infinite Time",
+          "address": "0xFFCAAA"
+        },
+        {
+          "code": "FFF976:0001",
+          "desc": "Infinite Honey Jars",
+          "address": "0xFFF976"
+        },
+        {
+          "code": "FF0137:0009",
+          "desc": "Infinite Weapon Carrot",
+          "address": "0xFF0137"
+        },
+        {
+          "code": "FF0139:0009",
+          "desc": "Infinite Weapon Dynamite",
+          "address": "0xFF0139"
+        },
+        {
+          "code": "FF013B:0009",
+          "desc": "Infinite Weapon Homing Carrots",
+          "address": "0xFF013B"
+        },
+        {
+          "code": "FF037A:0010",
+          "desc": "Invincible",
+          "address": "0xFF037A"
+        },
+        {
+          "code": "FFFA86:0001",
+          "desc": "Infinite Keys",
+          "address": "0xFFFA86"
+        },
+        {
+          "code": "FFF9DC:0020",
+          "desc": "Infinite Weapon In Space",
+          "address": "0xFFF9DC"
+        },
+        {
+          "code": "FFFAC1:0001",
+          "desc": "Enable Cheat Menu",
+          "address": "0xFFFAC1"
+        },
+        {
+          "code": "FFFA5B:0003",
+          "desc": "Infinite Carrots Conntinue",
+          "address": "0xFFFA5B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Gain Ground (World) (Action Replay)
+game_key=GainGround-Genesis
+system=genesis
+integration_tier=stable
+trigger	game_over_gameover_ffa295	game_over	0xFFA295	1	uint	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	score_score_ffa852	score	0xFFA852	4	uint	big	prev < curr	0.8	1	right:0.350:60

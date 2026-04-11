@@ -1,0 +1,9 @@
+game_name=Dino City (USA, Europe) (Action Replay)
+game_key=DinoCity-Snes
+system=snes
+integration_tier=stable
+trigger	damage_taken_health_16ed	damage_taken	0x7E16ED	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_16ed	death	0x7E16ED	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_2005	life_lost	0x7E2005	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_2005	life_gained	0x7E2005	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_172b	score	0x7E172B	3	bcd	little	prev < curr	0.8	1	right:0.350:60

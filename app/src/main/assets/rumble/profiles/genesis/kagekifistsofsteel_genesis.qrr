@@ -1,0 +1,7 @@
+game_name=Ka-Ge-Ki - Fists of Steel (USA)
+game_key=KaGeKiFistsOfSteel-Genesis
+system=genesis
+integration_tier=stable
+trigger	enemy_defeated_enemy_health_ff01d8	enemy_defeated	0xFF01D8	1	uint	native	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_ff01ce	damage_taken	0xFF01CE	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff01ce	death	0xFF01CE	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

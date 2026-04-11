@@ -1,0 +1,68 @@
+{
+  "system": "genesis",
+  "normalized_title": "twinkletale",
+  "display_name": "Twinkle Tale (Japan)",
+  "aliases": [
+    "Twinkle Tale (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\twinkletale_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF4108",
+        "0xFF8F29"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TwinkleTale-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFF8F29",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF4108",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Twinkle Tale (Japan).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF8151:0009",
+          "desc": "Freeze Time Continue",
+          "address": "0xFF8151"
+        },
+        {
+          "code": "FF4100:0001",
+          "desc": "Freeze Time Continue",
+          "address": "0xFF4100"
+        },
+        {
+          "code": "FF8F29:0004",
+          "desc": "Infinite Health",
+          "address": "0xFF8F29"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

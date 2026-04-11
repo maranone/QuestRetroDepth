@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "radicalpsychomachineracing",
+  "display_name": "Radical Psycho Machine Racing (USA) (Game Genie)",
+  "aliases": [
+    "Radical Psycho Machine Racing (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Radical Psycho Machine Racing (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E0A2599",
+          "desc": "Maximum Cash",
+          "address": "0x7E0A25"
+        },
+        {
+          "code": "7E0A2699",
+          "desc": "Maximum Cash",
+          "address": "0x7E0A26"
+        },
+        {
+          "code": "7E0A2799",
+          "desc": "Maximum Cash",
+          "address": "0x7E0A27"
+        },
+        {
+          "code": "7E0A2899",
+          "desc": "Maximum Cash",
+          "address": "0x7E0A28"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Flintstones
+game_key=Flintstones-Snes
+system=snes
+integration_tier=stable
+trigger	life_lost_lives_1d65	life_lost	0x7E1D65	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1d65	life_gained	0x7E1D65	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_1d75	score	0x7E1D75	3	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,120 @@
+{
+  "system": "genesis",
+  "normalized_title": "robocopversusterminator",
+  "display_name": "RoboCop versus The Terminator (Europe) (Beta) (1993-07-27)",
+  "aliases": [
+    "RoboCop versus The Terminator (USA) (Beta) (1993-04-30)",
+    "RoboCop versus The Terminator (USA) (GameGenie)",
+    "RoboCop versus The Terminator (USA)",
+    "RoboCop versus The Terminator (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\RoboCop versus The Terminator (World) (Action Replay).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 19,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FFF1BA:FF",
+          "desc": "Can Fall Thru Floors (Push Down And Jump)",
+          "address": "0xFFF1BA"
+        },
+        {
+          "code": "FFF1B7:FF",
+          "desc": "Move Faster",
+          "address": "0xFFF1B7"
+        },
+        {
+          "code": "FFF08C:40",
+          "desc": "Infinite Health",
+          "address": "0xFFF08C"
+        },
+        {
+          "code": "FF009C:09",
+          "desc": "Infinite Lives",
+          "address": "0xFF009C"
+        },
+        {
+          "code": "FFF1B1:00FF",
+          "desc": "Enable The Debug Menu",
+          "address": "0xFFF1B1"
+        },
+        {
+          "code": "FFF1B1:0000",
+          "desc": "Disable The Debug Menu",
+          "address": "0xFFF1B1"
+        },
+        {
+          "code": "FFF19D:0001",
+          "desc": "Automatically Advance To The Next Stage",
+          "address": "0xFFF19D"
+        },
+        {
+          "code": "FFF1B3:00FF",
+          "desc": "Unlock The Hidden Doors",
+          "address": "0xFFF1B3"
+        },
+        {
+          "code": "FFF1B3:0000",
+          "desc": "Relock The Hidden Doors",
+          "address": "0xFFF1B3"
+        },
+        {
+          "code": "FFF1B4:00FF",
+          "desc": "Enable Weapon Select",
+          "address": "0xFFF1B4"
+        },
+        {
+          "code": "FFF1B4:0000",
+          "desc": "Disable Weapon Select",
+          "address": "0xFFF1B4"
+        },
+        {
+          "code": "FFF1BA:00FF",
+          "desc": "Allow Jump Down From Platforms",
+          "address": "0xFFF1BA"
+        },
+        {
+          "code": "FFF1BA:0000",
+          "desc": "Disable Jump Down From Platforms",
+          "address": "0xFFF1BA"
+        },
+        {
+          "code": "FFF1B7:00FF",
+          "desc": "Enable Turbo Mode",
+          "address": "0xFFF1B7"
+        },
+        {
+          "code": "FFF1B7:0000",
+          "desc": "Disable Turbo Mode",
+          "address": "0xFFF1B7"
+        },
+        {
+          "code": "FFF1B6:00FF",
+          "desc": "Enable Alternate/Original Graphics",
+          "address": "0xFFF1B6"
+        },
+        {
+          "code": "FFF1B6:0000",
+          "desc": "Disable Alternate/Original Graphics",
+          "address": "0xFFF1B6"
+        },
+        {
+          "code": "FFF1B8:FF",
+          "desc": "Invincibility",
+          "address": "0xFFF1B8"
+        },
+        {
+          "code": "FFF0F0:FF",
+          "desc": "Phase Mode",
+          "address": "0xFFF0F0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

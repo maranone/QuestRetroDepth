@@ -1,0 +1,32 @@
+{
+  "system": "snes",
+  "normalized_title": "dragonballzultimemenace",
+  "display_name": "Dragon Ball Z - Ultime Menace (France) (Action Replay)",
+  "aliases": [
+    "Dragon Ball Z - Ultime Menace (France)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Dragon Ball Z - Ultime Menace (France).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E0563C8",
+          "desc": "P1 Full Yellow Bar",
+          "address": "0x7E0563"
+        },
+        {
+          "code": "7E0562C8",
+          "desc": "P1 Full Green Bar",
+          "address": "0x7E0562"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

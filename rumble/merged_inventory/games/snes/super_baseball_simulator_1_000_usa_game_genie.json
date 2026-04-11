@@ -1,0 +1,52 @@
+{
+  "system": "snes",
+  "normalized_title": "superbaseballsimulator1000",
+  "display_name": "Super Baseball Simulator 1.000 (USA) (Game Genie)",
+  "aliases": [
+    "Super Baseball Simulator 1.000 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Baseball Simulator 1.000 (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E092500",
+          "desc": "Strike Modifier",
+          "address": "0x7E0925"
+        },
+        {
+          "code": "7E092600",
+          "desc": "Ball Modifier",
+          "address": "0x7E0926"
+        },
+        {
+          "code": "7E092700",
+          "desc": "Out Modifier",
+          "address": "0x7E0927"
+        },
+        {
+          "code": "7E090900",
+          "desc": "Inning Modifier",
+          "address": "0x7E0909"
+        },
+        {
+          "code": "7E091B00",
+          "desc": "Score Modifier (Team 1)",
+          "address": "0x7E091B"
+        },
+        {
+          "code": "7E091C00",
+          "desc": "Score Modifier (Team 2)",
+          "address": "0x7E091C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

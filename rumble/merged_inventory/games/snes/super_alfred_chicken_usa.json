@@ -1,0 +1,133 @@
+{
+  "system": "snes",
+  "normalized_title": "superalfredchicken",
+  "display_name": "Super Alfred Chicken (USA)",
+  "aliases": [
+    "Super Alfred Chicken (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\superalfredchicken_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E000C",
+        "0x7E0012"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperAlfredChicken-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0012",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E000C",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Alfred Chicken (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 16,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "7E000C00",
+          "desc": "Score Modifier",
+          "address": "0x7E000C"
+        },
+        {
+          "code": "7E000D00",
+          "desc": "Score Modifier",
+          "address": "0x7E000D"
+        },
+        {
+          "code": "7E000E00",
+          "desc": "Score Modifier",
+          "address": "0x7E000E"
+        },
+        {
+          "code": "7E000F00",
+          "desc": "Score Modifier",
+          "address": "0x7E000F"
+        },
+        {
+          "code": "7E001000",
+          "desc": "Score Modifier",
+          "address": "0x7E0010"
+        },
+        {
+          "code": "7E001109",
+          "desc": "Infinite Lives",
+          "address": "0x7E0011"
+        },
+        {
+          "code": "7E001209",
+          "desc": "Infinite Lives",
+          "address": "0x7E0012"
+        },
+        {
+          "code": "7E001300",
+          "desc": "Balloons Modifier",
+          "address": "0x7E0013"
+        },
+        {
+          "code": "7E001400",
+          "desc": "Balloons Modifier",
+          "address": "0x7E0014"
+        },
+        {
+          "code": "7E001509",
+          "desc": "Infinite Time",
+          "address": "0x7E0015"
+        },
+        {
+          "code": "7E001609",
+          "desc": "Infinite Time",
+          "address": "0x7E0016"
+        },
+        {
+          "code": "7E001709",
+          "desc": "Infinite Time",
+          "address": "0x7E0017"
+        },
+        {
+          "code": "7E001900",
+          "desc": "Crystals Modifier",
+          "address": "0x7E0019"
+        },
+        {
+          "code": "7E001A00",
+          "desc": "Crystals Modifier",
+          "address": "0x7E001A"
+        },
+        {
+          "code": "7E029104",
+          "desc": "Moon Jump",
+          "address": "0x7E0291"
+        },
+        {
+          "code": "7E0ADEFF",
+          "desc": "Invincibility",
+          "address": "0x7E0ADE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

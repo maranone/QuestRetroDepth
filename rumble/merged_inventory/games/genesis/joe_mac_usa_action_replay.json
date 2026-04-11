@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "joemac",
+  "display_name": "Joe _ Mac (USA) (Action Replay)",
+  "aliases": [
+    "Joe _ Mac (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Joe _ Mac (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "FF4852:0048",
+          "desc": "Infinite Energy",
+          "address": "0xFF4852"
+        },
+        {
+          "code": "FF21FE:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFF21FE"
+        },
+        {
+          "code": "FF47C2:00FF",
+          "desc": "Invincibility NO flashing",
+          "address": "0xFF47C2"
+        },
+        {
+          "code": "FF47C2:0010",
+          "desc": "Invincibility flashing",
+          "address": "0xFF47C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "system": "genesis",
+  "normalized_title": "cutthroatisland",
+  "display_name": "Cutthroat Island (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Cutthroat Island (USA, Europe) (Action Replay)",
+    "CutThroat Island (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\cutthroatisland_genesis.json",
+      "trigger_count": 7,
+      "field_names": [
+        "lives",
+        "score0",
+        "score1",
+        "score2",
+        "score3",
+        "score4"
+      ],
+      "field_count": 6,
+      "distinct_addresses": [
+        "0xFF20CD",
+        "0xFF20CF",
+        "0xFF20D1",
+        "0xFF20D3",
+        "0xFF20D5",
+        "0xFF20E5"
+      ],
+      "distinct_address_count": 6
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CutthroatIsland-Genesis-v0\\data.json",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF20E5",
+          "type": "|u1"
+        },
+        {
+          "name": "score0",
+          "address": "0xFF20CD",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0xFF20CF",
+          "type": "|u1"
+        },
+        {
+          "name": "score2",
+          "address": "0xFF20D1",
+          "type": "|u1"
+        },
+        {
+          "name": "score3",
+          "address": "0xFF20D3",
+          "type": "|u1"
+        },
+        {
+          "name": "score4",
+          "address": "0xFF20D5",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 6
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\CutThroat Island (USA, Europe).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FF07CC:002F",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF07CC"
+        },
+        {
+          "code": "FF20E4:0009",
+          "desc": "Infinite Lives P1",
+          "address": "0xFF20E4"
+        },
+        {
+          "code": "FF082A:002F",
+          "desc": "Infinite Energy P2",
+          "address": "0xFF082A"
+        },
+        {
+          "code": "FF20E6:0009",
+          "desc": "Infinite Lives P2",
+          "address": "0xFF20E6"
+        },
+        {
+          "code": "FF0DAC:0000",
+          "desc": "Kill Enemies in 1 Hit",
+          "address": "0xFF0DAC"
+        },
+        {
+          "code": "FF0E3A:0000",
+          "desc": "Kill Enemies in 1 Hit",
+          "address": "0xFF0E3A"
+        },
+        {
+          "code": "FF03C8:0000",
+          "desc": "Kill Enemies in 1 Hit",
+          "address": "0xFF03C8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

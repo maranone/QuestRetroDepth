@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "mariolemieuxhockey",
+  "display_name": "Mario Lemieux Hockey (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Mario Lemieux Hockey (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mario Lemieux Hockey (USA, Europe).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF0B82:0000",
+          "desc": "Score Modifier P2/CPU",
+          "address": "0xFF0B82"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

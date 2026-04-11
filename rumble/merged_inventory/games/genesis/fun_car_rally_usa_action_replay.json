@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "funcarrally",
+  "display_name": "Fun Car Rally (USA) (Action Replay)",
+  "aliases": [
+    "Fun Car Rally (USA) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Fun Car Rally (USA) (Proto).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF0F90:0006",
+          "desc": "Infinite Boost",
+          "address": "0xFF0F90"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

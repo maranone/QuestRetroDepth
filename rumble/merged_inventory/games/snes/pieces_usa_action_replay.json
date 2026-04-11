@@ -1,0 +1,47 @@
+{
+  "system": "snes",
+  "normalized_title": "pieces",
+  "display_name": "Pieces (USA) (Action Replay)",
+  "aliases": [
+    "Pieces (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Pieces (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E17E800",
+          "desc": "Computer Loses!",
+          "address": "0x7E17E8"
+        },
+        {
+          "code": "7E17CA00",
+          "desc": "Computer Loses!",
+          "address": "0x7E17CA"
+        },
+        {
+          "code": "7E17AE00",
+          "desc": "Computer Loses!",
+          "address": "0x7E17AE"
+        },
+        {
+          "code": "7E2D5409",
+          "desc": "Unlimited Time",
+          "address": "0x7E2D54"
+        },
+        {
+          "code": "7E2D5609",
+          "desc": "Unlimited Time",
+          "address": "0x7E2D56"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

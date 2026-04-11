@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "jeopardysportsedition",
+  "display_name": "Jeopardy! - Sports Edition (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Jeopardy! - Sports Edition (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF384E:0009",
+          "desc": "Infinite Time To Buzz In",
+          "address": "0xFF384E"
+        },
+        {
+          "code": "FF386C:0000",
+          "desc": "No Time To Enter Answer",
+          "address": "0xFF386C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

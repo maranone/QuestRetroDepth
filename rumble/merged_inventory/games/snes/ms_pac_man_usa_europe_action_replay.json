@@ -1,0 +1,33 @@
+{
+  "system": "snes",
+  "normalized_title": "mspacman",
+  "display_name": "Ms. Pac-Man (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Ms. Pac-Man (USA)",
+    "Ms. Pac-Man (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ms. Pac-Man (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E028C03",
+          "desc": "Infinite Lives",
+          "address": "0x7E028C"
+        },
+        {
+          "code": "7E029E03",
+          "desc": "Ghosts eatable at start and infinite power pill time",
+          "address": "0x7E029E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "evanderholyfieldsrealdealboxing",
+  "display_name": "Evander Holyfield's 'Real Deal' Boxing (World) (Action Replay)",
+  "aliases": [
+    "Evander Holyfield's 'Real Deal' Boxing (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Evander Holyfield's 'Real Deal' Boxing (World).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFF1A4:0099",
+          "desc": "Infinite Health P1",
+          "address": "0xFFF1A4"
+        },
+        {
+          "code": "FFF222:0000",
+          "desc": "No Health P2/CPU",
+          "address": "0xFFF222"
+        },
+        {
+          "code": "FFF1A6:0000",
+          "desc": "Player 1's Health Doesn't Regenerate",
+          "address": "0xFFF1A6"
+        },
+        {
+          "code": "FFF224:0000",
+          "desc": "Player 2's Health Doesn't Regenerate",
+          "address": "0xFFF224"
+        },
+        {
+          "code": "FFF200:001E",
+          "desc": "Fight any Ranked Opponent in Career Mode",
+          "address": "0xFFF200"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

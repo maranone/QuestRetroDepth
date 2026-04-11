@@ -1,0 +1,5 @@
+game_name=Beethovens2nd
+game_key=Beethovens2nd-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_f24	damage_taken	0x7E0F24	1	uint	native	prev > curr	0.85	1	left:0.750:180

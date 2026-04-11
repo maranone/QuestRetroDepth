@@ -1,0 +1,11 @@
+game_name=Cutthroat Island (USA, Europe) (Action Replay)
+game_key=CutthroatIsland-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ff20e5	life_lost	0xFF20E5	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff20e5	life_gained	0xFF20E5	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_ff20cd	score	0xFF20CD	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_ff20cf	score	0xFF20CF	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_ff20d1	score	0xFF20D1	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score3_ff20d3	score	0xFF20D3	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score4_ff20d5	score	0xFF20D5	1	uint	native	prev < curr	0.8	1	right:0.350:60

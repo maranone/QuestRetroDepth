@@ -1,0 +1,60 @@
+{
+  "system": "snes",
+  "normalized_title": "ryuukonoken",
+  "display_name": "Ryuuko no Ken (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Ryuuko no Ken (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7F9307FF",
+          "desc": "P1 Infinite Health",
+          "address": "0x7F9307"
+        },
+        {
+          "code": "7F930BFF",
+          "desc": "P1 Infinite Spirit",
+          "address": "0x7F930B"
+        },
+        {
+          "code": "7F944100",
+          "desc": "P2 No Health",
+          "address": "0x7F9441"
+        },
+        {
+          "code": "7F944500",
+          "desc": "P2 No Spirit",
+          "address": "0x7F9445"
+        },
+        {
+          "code": "7F944600",
+          "desc": "P2 No Spirit",
+          "address": "0x7F9446"
+        },
+        {
+          "code": "7F956B63",
+          "desc": "Infinite Time",
+          "address": "0x7F956B"
+        },
+        {
+          "code": "7F92CD00",
+          "desc": "Character Modifier P1",
+          "address": "0x7F92CD"
+        },
+        {
+          "code": "7F93073B",
+          "desc": "P1 Infinite Health",
+          "address": "0x7F9307"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "system": "genesis",
+  "normalized_title": "petesamprastennis",
+  "display_name": "Pete Sampras Tennis (USA, Europe) (v1.0) (J-Cart) (MDST6636)",
+  "aliases": [
+    "Pete Sampras Tennis (USA, Europe) (v1.0) (J-Cart) (MDST6636)",
+    "Pete Sampras Tennis (USA, Europe) (v1.1) (J-Cart) (MDST17FF)",
+    "Pete Sampras Tennis (USA, Europe) (v1.2) (J-Cart) (MDSTEE13)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Pete Sampras Tennis (USA, Europe) (v1.2) (J-Cart) (MDSTEE13).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFDEED:0001",
+          "desc": "Enable Crazy and Huge Tour Modes on Title Screen",
+          "address": "0xFFDEED"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

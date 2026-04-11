@@ -1,0 +1,54 @@
+{
+  "system": "genesis",
+  "normalized_title": "superfantasyzone",
+  "display_name": "Super Fantasy Zone (Europe, Japan) (Action Replay)",
+  "aliases": [
+    "Super Fantasy Zone (Europe)",
+    "Super Fantasy Zone (Europe, Japan) (Action Replay)",
+    "Super Fantasy Zone (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\superfantasyzone_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFF01D2",
+        "0xFF01F0"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperFantasyZone-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFF01D2",
+          "type": "|d1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF01F0",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Super Fantasy Zone (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

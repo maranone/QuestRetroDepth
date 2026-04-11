@@ -1,0 +1,97 @@
+{
+  "system": "genesis",
+  "normalized_title": "wwfroyalrumble",
+  "display_name": "WWF Royal Rumble (World) (Action Replay)",
+  "aliases": [
+    "WWF Royal Rumble (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\WWF Royal Rumble (World).cht",
+      "total_cheat_rows": 52,
+      "raw_entry_count": 15,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FFCCA6:00A0",
+          "desc": "Infinite Time Outside Ring P1",
+          "address": "0xFFCCA6"
+        },
+        {
+          "code": "FFCCA8:00A0",
+          "desc": "Infinite Time Outside Ring P2",
+          "address": "0xFFCCA8"
+        },
+        {
+          "code": "FFD15E:0200",
+          "desc": "P1 Grapple Bar Full",
+          "address": "0xFFD15E"
+        },
+        {
+          "code": "FFD160:0000",
+          "desc": "P2 Grapple Bar Empty",
+          "address": "0xFFD160"
+        },
+        {
+          "code": "FFD0DE:03FF",
+          "desc": "Referee Stays Down",
+          "address": "0xFFD0DE"
+        },
+        {
+          "code": "FFD0DC:03FF",
+          "desc": "P2 Stays Down",
+          "address": "0xFFD0DC"
+        },
+        {
+          "code": "FFD0C2:003A",
+          "desc": "Infinite Energy P1",
+          "address": "0xFFD0C2"
+        },
+        {
+          "code": "FFD0C4:003A",
+          "desc": "Infinite Energy P2",
+          "address": "0xFFD0C4"
+        },
+        {
+          "code": "FFD0C2:0000",
+          "desc": "No Energy P1",
+          "address": "0xFFD0C2"
+        },
+        {
+          "code": "FFD0C4:0000",
+          "desc": "No Energy P2",
+          "address": "0xFFD0C4"
+        },
+        {
+          "code": "FFCC9E:0000",
+          "desc": "Infinite Ringout Time P1 (Alternate)",
+          "address": "0xFFCC9E"
+        },
+        {
+          "code": "FFCCA0:0000",
+          "desc": "Infinite Ringout Time P2 (Alternate)",
+          "address": "0xFFCCA0"
+        },
+        {
+          "code": "FFCCA6:0000",
+          "desc": "P2 Can't Be Pinned",
+          "address": "0xFFCCA6"
+        },
+        {
+          "code": "FFCCA4:003A",
+          "desc": "P1 Always Pinned",
+          "address": "0xFFCCA4"
+        },
+        {
+          "code": "FFCCA6:003A",
+          "desc": "P2 Always Pinned",
+          "address": "0xFFCCA6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

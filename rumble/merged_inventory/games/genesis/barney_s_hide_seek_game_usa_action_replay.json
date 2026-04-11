@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "barneyshideseekgame",
+  "display_name": "Barney's Hide _ Seek Game (USA) (Action Replay)",
+  "aliases": [
+    "Barney's Hide _ Seek Game (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Barney's Hide _ Seek Game (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FFDBFA:0003",
+          "desc": "Stage Modifier",
+          "address": "0xFFDBFA"
+        },
+        {
+          "code": "FFDBFC:0005",
+          "desc": "Have All Kids Found",
+          "address": "0xFFDBFC"
+        },
+        {
+          "code": "FFDBFE:0005",
+          "desc": "Have All Kids Found",
+          "address": "0xFFDBFE"
+        },
+        {
+          "code": "FFDC08:0005",
+          "desc": "Have All Kids Found",
+          "address": "0xFFDC08"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

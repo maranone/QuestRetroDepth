@@ -1,0 +1,154 @@
+{
+  "system": "snes",
+  "normalized_title": "megamansoccer",
+  "display_name": "Mega Man Soccer (USA) (Action Replay)",
+  "aliases": [
+    "Mega Man Soccer (USA) (Game Genie)",
+    "Mega Man Soccer (USA)",
+    "Mega Man Soccer"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Mega Man Soccer (USA).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 40,
+      "distinct_address_count": 28,
+      "sample_raw_entries": [
+        {
+          "code": "7E0AC609",
+          "desc": "Infinite super shots for P1 in Round 1, P2 in Round 2",
+          "address": "0x7E0AC6"
+        },
+        {
+          "code": "7E0AE609",
+          "desc": "Infinite super shots for P2 in Round 1, P1 in Round 2",
+          "address": "0x7E0AE6"
+        },
+        {
+          "code": "7E091000",
+          "desc": "Modify individual team members P1",
+          "address": "0x7E0910"
+        },
+        {
+          "code": "7E091400",
+          "desc": "Modify individual team members P1",
+          "address": "0x7E0914"
+        },
+        {
+          "code": "7E091800",
+          "desc": "Modify individual team members P1",
+          "address": "0x7E0918"
+        },
+        {
+          "code": "7E091C00",
+          "desc": "Modify individual team members P1",
+          "address": "0x7E091C"
+        },
+        {
+          "code": "7E092000",
+          "desc": "Modify individual team members P1",
+          "address": "0x7E0920"
+        },
+        {
+          "code": "7E092400",
+          "desc": "Modify individual team members P1",
+          "address": "0x7E0924"
+        },
+        {
+          "code": "7E092800",
+          "desc": "Modify individual team members P1",
+          "address": "0x7E0928"
+        },
+        {
+          "code": "7E092C00",
+          "desc": "Modify individual team members P1",
+          "address": "0x7E092C"
+        },
+        {
+          "code": "7E093400",
+          "desc": "Modify individual team members P2",
+          "address": "0x7E0934"
+        },
+        {
+          "code": "7E093800",
+          "desc": "Modify individual team members P2",
+          "address": "0x7E0938"
+        },
+        {
+          "code": "7E093C00",
+          "desc": "Modify individual team members P2",
+          "address": "0x7E093C"
+        },
+        {
+          "code": "7E094000",
+          "desc": "Modify individual team members P2",
+          "address": "0x7E0940"
+        },
+        {
+          "code": "7E094400",
+          "desc": "Modify individual team members P2",
+          "address": "0x7E0944"
+        },
+        {
+          "code": "7E095800",
+          "desc": "Modify individual team members P2",
+          "address": "0x7E0958"
+        },
+        {
+          "code": "7E094C00",
+          "desc": "Modify individual team members P2",
+          "address": "0x7E094C"
+        },
+        {
+          "code": "7E095000",
+          "desc": "Modify individual team members P2",
+          "address": "0x7E0950"
+        },
+        {
+          "code": "7E008900",
+          "desc": "Game Mode modifier",
+          "address": "0x7E0089"
+        },
+        {
+          "code": "7E0A8000",
+          "desc": "Opponent/field modifier",
+          "address": "0x7E0A80"
+        },
+        {
+          "code": "7E0A207F",
+          "desc": "1st 8 Bosses defeated modifier",
+          "address": "0x7E0A20"
+        },
+        {
+          "code": "7E0A2180",
+          "desc": "Castle bosses defeated modifier",
+          "address": "0x7E0A21"
+        },
+        {
+          "code": "7E0AE6FF",
+          "desc": "Both Teams Have Unlimited Power Kicks",
+          "address": "0x7E0AE6"
+        },
+        {
+          "code": "7E0ABC00",
+          "desc": "Left Side Score Modifier",
+          "address": "0x7E0ABC"
+        },
+        {
+          "code": "7E0ADC00",
+          "desc": "Right Side Score Modifier",
+          "address": "0x7E0ADC"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "MEGAMAN SOCCER"
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

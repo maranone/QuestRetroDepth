@@ -1,0 +1,6 @@
+game_name=Global Gladiators (Europe) (Action Replay)
+game_key=GlobalGladiators-Genesis
+system=genesis
+integration_tier=stable
+trigger	game_over_gameover_ff023c	game_over	0xFF023C	1	int	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	score_score_ff009f	score	0xFF009F	6	nibble	big	prev < curr	0.8	1	right:0.350:60

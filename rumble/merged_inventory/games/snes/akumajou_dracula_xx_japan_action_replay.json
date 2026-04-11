@@ -1,0 +1,47 @@
+{
+  "system": "snes",
+  "normalized_title": "akumajoudraculaxx",
+  "display_name": "Akumajou Dracula XX (Japan) (Action Replay)",
+  "aliases": [
+    "Akumajou Dracula XX (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Akumajou Dracula XX (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E00A841",
+          "desc": "Infinite Health",
+          "address": "0x7E00A8"
+        },
+        {
+          "code": "7E00AA41",
+          "desc": "Infinite Health",
+          "address": "0x7E00AA"
+        },
+        {
+          "code": "7E00A299",
+          "desc": "Infinite Hearts",
+          "address": "0x7E00A2"
+        },
+        {
+          "code": "7E00A400",
+          "desc": "Extra Item Modifier",
+          "address": "0x7E00A4"
+        },
+        {
+          "code": "7E00DEFF",
+          "desc": "Invincibility",
+          "address": "0x7E00DE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "princeofpersia2shadowandflame",
+  "display_name": "Prince of Persia 2 - The Shadow and the Flame (Europe) (Proto)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Prince of Persia 2 - The Shadow and the Flame (Europe) (Proto).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF4A53:0003",
+          "desc": "Infinite Energy",
+          "address": "0xFF4A53"
+        },
+        {
+          "code": "FF4C4F:0003",
+          "desc": "Infinite Energy",
+          "address": "0xFF4C4F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

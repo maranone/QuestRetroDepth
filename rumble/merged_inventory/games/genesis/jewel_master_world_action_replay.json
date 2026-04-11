@@ -1,0 +1,89 @@
+{
+  "system": "genesis",
+  "normalized_title": "jewelmaster",
+  "display_name": "Jewel Master (World) (Action Replay)",
+  "aliases": [
+    "Jewel Master (USA, Europe)",
+    "Jewel Master (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\jewelmaster_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFC432",
+        "0xFFC4D5"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JewelMaster-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFC4D5",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFC432",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Jewel Master (World) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "FFC4DA:0101",
+          "desc": "Have All 12 Rings (Read Note!)",
+          "address": "0xFFC4DA"
+        },
+        {
+          "code": "FFC4DC:0101",
+          "desc": "Have All 12 Rings (Read Note!)",
+          "address": "0xFFC4DC"
+        },
+        {
+          "code": "FFC4DE:0101",
+          "desc": "Have All 12 Rings (Read Note!)",
+          "address": "0xFFC4DE"
+        },
+        {
+          "code": "FFC4E0:0101",
+          "desc": "Have All 12 Rings (Read Note!)",
+          "address": "0xFFC4E0"
+        },
+        {
+          "code": "FFC4E2:0101",
+          "desc": "Have All 12 Rings (Read Note!)",
+          "address": "0xFFC4E2"
+        },
+        {
+          "code": "FFC5EC:001F",
+          "desc": "Invincibility",
+          "address": "0xFFC5EC"
+        },
+        {
+          "code": "FFC4C4:0003",
+          "desc": "Makes The Level 1 Flame Ring Stronger",
+          "address": "0xFFC4C4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "system": "genesis",
+  "normalized_title": "chakan",
+  "display_name": "Chakan (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Chakan (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Chakan (USA, Europe).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "FFC0DF:0026",
+          "desc": "Invincible",
+          "address": "0xFFC0DF"
+        },
+        {
+          "code": "FFC0D0:0012",
+          "desc": "Infinite Health",
+          "address": "0xFFC0D0"
+        },
+        {
+          "code": "FFC046:0000",
+          "desc": "Weapon Modifier",
+          "address": "0xFFC046"
+        },
+        {
+          "code": "FFC0EA:00FF",
+          "desc": "Float Jump",
+          "address": "0xFFC0EA"
+        },
+        {
+          "code": "FFC054:0001",
+          "desc": "Have Spronged Weapon In Inventory",
+          "address": "0xFFC054"
+        },
+        {
+          "code": "FFC052:0001",
+          "desc": "Have Two-Handed Axe Weapon In Inventory",
+          "address": "0xFFC052"
+        },
+        {
+          "code": "FFC050:0001",
+          "desc": "Have Scrythe/Sickle Weapon In Inventory",
+          "address": "0xFFC050"
+        },
+        {
+          "code": "FFC04E:0001",
+          "desc": "Have Spiked-Hammer Weapon In Inventory",
+          "address": "0xFFC04E"
+        },
+        {
+          "code": "FFC056:0001",
+          "desc": "Have Red Eye",
+          "address": "0xFFC056"
+        },
+        {
+          "code": "FFC058:0001",
+          "desc": "Have Red Eye, Red Arrow, And Red ?",
+          "address": "0xFFC058"
+        },
+        {
+          "code": "FFC05A:0001",
+          "desc": "Have Red Eye, Red Arrow, Red ?, 4-Way Red Arrows, Red Fire, Red Mound (?)",
+          "address": "0xFFC05A"
+        },
+        {
+          "code": "FFC05C:0001",
+          "desc": "Have All Red Inventory Items",
+          "address": "0xFFC05C"
+        },
+        {
+          "code": "FFBAC6:0001",
+          "desc": "Cheat Mode",
+          "address": "0xFFBAC6"
+        },
+        {
+          "code": "FF3DA6:0000",
+          "desc": "1 Hit Kill Enemies",
+          "address": "0xFF3DA6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

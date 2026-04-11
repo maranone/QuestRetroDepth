@@ -1,0 +1,49 @@
+{
+  "system": "snes",
+  "normalized_title": "timecop",
+  "display_name": "Time Cop (World) (Action Replay)",
+  "aliases": [
+    "Time Cop (World) (Game Genie)",
+    "Timecop (Rumbles)",
+    "Timecop (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Timecop (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E06EB00",
+          "desc": "Lives Modifier",
+          "address": "0x7E06EB"
+        },
+        {
+          "code": "7E06F700",
+          "desc": "Bombs Modifier",
+          "address": "0x7E06F7"
+        },
+        {
+          "code": "7E06F500",
+          "desc": "Gun Modifier",
+          "address": "0x7E06F5"
+        },
+        {
+          "code": "7E06F300",
+          "desc": "Life Modifier",
+          "address": "0x7E06F3"
+        },
+        {
+          "code": "7E063863",
+          "desc": "Infinite Time",
+          "address": "0x7E0638"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

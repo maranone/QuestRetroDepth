@@ -1,0 +1,112 @@
+{
+  "system": "genesis",
+  "normalized_title": "pitfallmayanadventure",
+  "display_name": "Pitfall - The Mayan Adventure (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Pitfall - The Mayan Adventure (Europe)",
+    "Pitfall - The Mayan Adventure (USA)",
+    "Pitfall - The Mayan Adventure (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\pitfallthemayanadventure_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "damage",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFF23A5",
+        "0xFF3EC5",
+        "0xFF3EDA"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\PitfallTheMayanAdventure-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "damage",
+          "address": "0xFF23A5",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF3EC5",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF3EDA",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Pitfall - The Mayan Adventure (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "FF3EC6:99",
+          "desc": "Infinite Pouches",
+          "address": "0xFF3EC6"
+        },
+        {
+          "code": "FF3EC5:09",
+          "desc": "Infinite Lives",
+          "address": "0xFF3EC5"
+        },
+        {
+          "code": "FF3ED9:FF",
+          "desc": "Infinite Health",
+          "address": "0xFF3ED9"
+        },
+        {
+          "code": "FF3EC7:09",
+          "desc": "Infinite Boomerangs",
+          "address": "0xFF3EC7"
+        },
+        {
+          "code": "FF3EC8:09",
+          "desc": "Infinite Explosive Objects",
+          "address": "0xFF3EC8"
+        },
+        {
+          "code": "FF3ED3:XX",
+          "desc": "Modify Text Level Button Cheat",
+          "address": "0xFF3ED3"
+        },
+        {
+          "code": "FF34E9:06",
+          "desc": "Hyper Harry",
+          "address": "0xFF34E9"
+        },
+        {
+          "code": "FF3ECD:3C",
+          "desc": "Enemies Can't Touch You",
+          "address": "0xFF3ECD"
+        },
+        {
+          "code": "FF3EE6:FF",
+          "desc": "Press Start For Frame By Frame",
+          "address": "0xFF3EE6"
+        },
+        {
+          "code": "FF3EED:01",
+          "desc": "Hyper Mode (Game)",
+          "address": "0xFF3EED"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

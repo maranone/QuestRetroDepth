@@ -1,0 +1,5 @@
+game_name=AddamsFamilyValues
+game_key=AddamsFamilyValues-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_1_bc0	damage_taken	0x7E0BC0	1	uint	native	prev > curr	0.85	1	left:0.750:180

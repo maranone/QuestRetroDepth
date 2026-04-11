@@ -1,0 +1,7 @@
+game_name=Mr. Nutz (Europe) (Action Replay)
+game_key=MrNutz-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_fff0d7	life_lost	0xFFF0D7	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff0d7	life_gained	0xFFF0D7	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_fff550	score	0xFFF550	2	bcd	big	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,52 @@
+{
+  "system": "snes",
+  "normalized_title": "firemen",
+  "display_name": "Firemen, The (Europe) (En,Fr,De)",
+  "aliases": [
+    "Firemen, The (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Firemen, The (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E197809",
+          "desc": "Infinite Time",
+          "address": "0x7E1978"
+        },
+        {
+          "code": "7E197909",
+          "desc": "Infinite Time",
+          "address": "0x7E1979"
+        },
+        {
+          "code": "7E197A09",
+          "desc": "Infinite Time",
+          "address": "0x7E197A"
+        },
+        {
+          "code": "7E197B09",
+          "desc": "Infinite Time",
+          "address": "0x7E197B"
+        },
+        {
+          "code": "7E15C330",
+          "desc": "Infinite Energy",
+          "address": "0x7E15C3"
+        },
+        {
+          "code": "7E091605",
+          "desc": "Infinite Extinguishing Boms",
+          "address": "0x7E0916"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Legend of the Mystical Ninja The ESP",
+    "system": "snes"
+  },
+  "source": {
+    "cht_file": "E:\\bob\\retro\\BOBwin_Abril_2024.7z\\cheats\\retroarch\\Snes9x\\Legend of the Mystical Ninja The ESP.cht",
+    "parser": "retroarch_kv"
+  },
+  "triggers": [
+    {
+      "id": "life_lost_1ab0",
+      "event": "life_lost",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x1AB0",
+          "wram_offset": 6832,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Infinite Lives implies preventing life loss, which is related to life_lost event.",
+      "source_cheats": [
+        {
+          "code": "7E1AB004",
+          "desc": "Infinite Lives P1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_1ab2",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x1AB2",
+          "wram_offset": 6834,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Infinite Energy implies preventing damage, which is related to damage_taken event.",
+      "source_cheats": [
+        {
+          "code": "7E1AB210",
+          "desc": "Infinite Energy P1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_1aa8",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x1AA8",
+          "wram_offset": 6824,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Max Energy implies preventing damage, which is related to damage_taken event.",
+      "source_cheats": [
+        {
+          "code": "7E1AA810",
+          "desc": "Max Energy P1"
+        }
+      ]
+    },
+    {
+      "id": "pickup_1aad",
+      "event": "pickup",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x1AAD",
+          "wram_offset": 6829,
+          "size": 1
+        }
+      ],
+      "condition": "prev < curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.25,
+          "duration_ms": 18
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Lots of Money implies increasing money, which is related to pickup event.",
+      "source_cheats": [
+        {
+          "code": "7E1AAD99",
+          "desc": "Lots of Money P1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_0592",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "bank": "7E",
+          "address": "0x0592",
+          "wram_offset": 1426,
+          "size": 1
+        }
+      ],
+      "condition": "prev > curr",
+      "value_type": "uint8",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.0,
+      "needs_review": true,
+      "reason": "Invincibility implies preventing damage, which is related to damage_taken event.",
+      "source_cheats": [
+        {
+          "code": "7E059202",
+          "desc": "Invincibility P1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

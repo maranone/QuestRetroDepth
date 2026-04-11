@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "ristarshootingstar",
+  "display_name": "Ristar - The Shooting Star (Japan, Korea)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ristar - The Shooting Star (Japan, Korea).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FFAEF1:00FF",
+          "desc": "Enable Debug Invincibility",
+          "address": "0xFFAEF1"
+        },
+        {
+          "code": "FFAEF1:0000",
+          "desc": "Disable Debug Invincibility",
+          "address": "0xFFAEF1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

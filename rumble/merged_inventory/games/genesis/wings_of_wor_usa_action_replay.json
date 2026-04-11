@@ -1,0 +1,48 @@
+{
+  "system": "genesis",
+  "normalized_title": "wingsofwor",
+  "display_name": "Wings of Wor (USA) (Action Replay)",
+  "aliases": [
+    "Wings of Wor (USA) (Action Replay)",
+    "Wings of Wor (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Wings of Wor (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFD6CD:0004",
+          "desc": "Invincibility",
+          "address": "0xFFD6CD"
+        },
+        {
+          "code": "FFC976:0001",
+          "desc": "Untouchable",
+          "address": "0xFFC976"
+        },
+        {
+          "code": "FFD6C6:0099",
+          "desc": "Infinite Alternate Weapon",
+          "address": "0xFFD6C6"
+        },
+        {
+          "code": "FFD6C8:0000",
+          "desc": "Alternate Weapon Select",
+          "address": "0xFFD6C8"
+        },
+        {
+          "code": "FFD74A:0000",
+          "desc": "Round Modifier",
+          "address": "0xFFD74A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

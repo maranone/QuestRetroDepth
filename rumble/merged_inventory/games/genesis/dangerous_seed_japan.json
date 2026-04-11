@@ -1,0 +1,95 @@
+{
+  "system": "genesis",
+  "normalized_title": "dangerousseed",
+  "display_name": "Dangerous Seed (Japan)",
+  "aliases": [
+    "Dangerous Seed (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\dangerousseed_genesis.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xFFF402",
+        "0xFFF40D",
+        "0xFFFED6"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DangerousSeed-Genesis-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xFFF402",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFF40D",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFED6",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Dangerous Seed (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FFF40C:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFFF40C"
+        },
+        {
+          "code": "FFF402:0003",
+          "desc": "Infinite Shields",
+          "address": "0xFFF402"
+        },
+        {
+          "code": "FFF40C:0063",
+          "desc": "Infinite Bombs",
+          "address": "0xFFF40C"
+        },
+        {
+          "code": "FFF42F:0006",
+          "desc": "Speed is at Maximum",
+          "address": "0xFFF42F"
+        },
+        {
+          "code": "FFF42B:0000",
+          "desc": "Shot Type Modifier",
+          "address": "0xFFF42B"
+        },
+        {
+          "code": "FFF419:00BE",
+          "desc": "Shot Power & Shot Pattern Modifiers",
+          "address": "0xFFF419"
+        },
+        {
+          "code": "FFF43B:0001",
+          "desc": "Enabled Expert",
+          "address": "0xFFF43B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

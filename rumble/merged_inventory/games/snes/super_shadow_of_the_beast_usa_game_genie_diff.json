@@ -1,0 +1,34 @@
+{
+  "system": "snes",
+  "normalized_title": "supershadowofbeast",
+  "display_name": "Super Shadow of the Beast (USA) (Game Genie) (diff)",
+  "aliases": [
+    "Super Shadow of the Beast (USA) (Game Genie) (diff)",
+    "Super Shadow of the Beast (USA) (Game Genie)",
+    "Super Shadow of the Beast (USA) (Proto)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Super Shadow of the Beast (USA) (Proto).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E008263",
+          "desc": "Infinite Energy",
+          "address": "0x7E0082"
+        },
+        {
+          "code": "7E001263",
+          "desc": "Infinite Continues",
+          "address": "0x7E0012"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

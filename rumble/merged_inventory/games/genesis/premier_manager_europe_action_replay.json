@@ -1,0 +1,52 @@
+{
+  "system": "genesis",
+  "normalized_title": "premiermanager",
+  "display_name": "Premier Manager (Europe) (Action Replay)",
+  "aliases": [
+    "Premier Manager (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Premier Manager (Europe).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF8CBC:0099",
+          "desc": "Infinite Money (Millions Digit)",
+          "address": "0xFF8CBC"
+        },
+        {
+          "code": "FF8CBE:0099",
+          "desc": "Infinite Money (Hundred Thousands Digit)",
+          "address": "0xFF8CBE"
+        },
+        {
+          "code": "FF8CC0:0099",
+          "desc": "Infinite Money (Ten Thousands Digit)",
+          "address": "0xFF8CC0"
+        },
+        {
+          "code": "FF8CC2:0099",
+          "desc": "Infinite Money (Hundreds Digit)",
+          "address": "0xFF8CC2"
+        },
+        {
+          "code": "FF8CC4:0099",
+          "desc": "Infinite Money (Tens Digit)",
+          "address": "0xFF8CC4"
+        },
+        {
+          "code": "FF8CC6:0099",
+          "desc": "Infinite Money (Ones Digit)",
+          "address": "0xFF8CC6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

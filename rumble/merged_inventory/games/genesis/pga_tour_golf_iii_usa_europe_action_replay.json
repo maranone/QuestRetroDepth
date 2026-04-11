@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "pgatourgolfiii",
+  "display_name": "PGA Tour Golf III (USA, Europe) (Action Replay)",
+  "aliases": [
+    "PGA Tour Golf III (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\PGA Tour Golf III (USA, Europe).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF6135:0000",
+          "desc": "P1 Always on 1st Stroke",
+          "address": "0xFF6135"
+        },
+        {
+          "code": "FF6269:0000",
+          "desc": "P2 Always on 1st Stroke",
+          "address": "0xFF6269"
+        },
+        {
+          "code": "FF639D:0000",
+          "desc": "P3 Always on 1st Stroke",
+          "address": "0xFF639D"
+        },
+        {
+          "code": "FF64D1:0000",
+          "desc": "P4 Always on 1st Stroke",
+          "address": "0xFF64D1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

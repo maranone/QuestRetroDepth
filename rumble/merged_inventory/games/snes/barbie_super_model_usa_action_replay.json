@@ -1,0 +1,43 @@
+{
+  "system": "snes",
+  "normalized_title": "barbiesupermodel",
+  "display_name": "Barbie Super Model (USA) (Action Replay)",
+  "aliases": [
+    "Barbie Super Model (USA) (Game Genie)",
+    "Barbie Super Model (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Barbie Super Model (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E07A232",
+          "desc": "Drive/Ride/Walk Through Obstacles  After One Collision",
+          "address": "0x7E07A2"
+        },
+        {
+          "code": "7E0044FF",
+          "desc": "Score Increases",
+          "address": "0x7E0044"
+        },
+        {
+          "code": "7E018800",
+          "desc": "Level Modifier",
+          "address": "0x7E0188"
+        },
+        {
+          "code": "7E018E08",
+          "desc": "Infinite B Hearts (In Car)",
+          "address": "0x7E018E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

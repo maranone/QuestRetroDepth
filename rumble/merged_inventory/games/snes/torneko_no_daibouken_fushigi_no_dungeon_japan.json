@@ -1,0 +1,45 @@
+{
+  "system": "snes",
+  "normalized_title": "tornekonodaiboukenfushiginodungeon",
+  "display_name": "Torneko no Daibouken - Fushigi no Dungeon (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Torneko no Daibouken - Fushigi no Dungeon (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "7E0BB7FF",
+          "desc": "Inf.Hp",
+          "address": "0x7E0BB7"
+        },
+        {
+          "code": "7E0BCBFF",
+          "desc": "Max Hp",
+          "address": "0x7E0BCB"
+        },
+        {
+          "code": "7E0DE1FF",
+          "desc": "Inf.Gold",
+          "address": "0x7E0DE1"
+        },
+        {
+          "code": "7E0DE2FF",
+          "desc": "Inf.Gold",
+          "address": "0x7E0DE2"
+        },
+        {
+          "code": "7E0DE3FF",
+          "desc": "Inf.Gold",
+          "address": "0x7E0DE3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "system": "snes",
+  "normalized_title": "aokidensetsushoot",
+  "display_name": "Aoki Densetsu Shoot! (Japan) (Action Replay)",
+  "aliases": [
+    "Aoki Densetsu Shoot! (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Aoki Densetsu Shoot! (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E1A5200",
+          "desc": "Infinite Time",
+          "address": "0x7E1A52"
+        },
+        {
+          "code": "7E1A53B4",
+          "desc": "Infinite Time",
+          "address": "0x7E1A53"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

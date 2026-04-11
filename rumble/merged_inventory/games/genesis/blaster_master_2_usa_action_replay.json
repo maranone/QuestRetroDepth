@@ -1,0 +1,83 @@
+{
+  "system": "genesis",
+  "normalized_title": "blastermaster2",
+  "display_name": "Blaster Master 2 (USA) (Action Replay)",
+  "aliases": [
+    "Blaster Master 2 (USA) (Beta)",
+    "Blaster Master 2 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Blaster Master 2 (USA).cht",
+      "total_cheat_rows": 109,
+      "raw_entry_count": 12,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FF00E6:000A",
+          "desc": "Infinite Lightnings",
+          "address": "0xFF00E6"
+        },
+        {
+          "code": "FF00E4:000A",
+          "desc": "Infinite Homing Missiles",
+          "address": "0xFF00E4"
+        },
+        {
+          "code": "FF00E2:000A",
+          "desc": "Infinite 3-way missiles",
+          "address": "0xFF00E2"
+        },
+        {
+          "code": "FF00E8:000A",
+          "desc": "Infinite Shields",
+          "address": "0xFF00E8"
+        },
+        {
+          "code": "FF0509:0002",
+          "desc": "Untouchable, Side View",
+          "address": "0xFF0509"
+        },
+        {
+          "code": "FF00DE:0001",
+          "desc": "Rapid, more powerful gunfire",
+          "address": "0xFF00DE"
+        },
+        {
+          "code": "FF00DC:0002",
+          "desc": "Rapid, more powerful gunfire",
+          "address": "0xFF00DC"
+        },
+        {
+          "code": "FF1C3F:0152",
+          "desc": "Inf max health, top view",
+          "address": "0xFF1C3F"
+        },
+        {
+          "code": "FF00B4:000C",
+          "desc": "Infinite Health",
+          "address": "0xFF00B4"
+        },
+        {
+          "code": "FF00BA:0005",
+          "desc": "Infinite Lives",
+          "address": "0xFF00BA"
+        },
+        {
+          "code": "FF179E:0001",
+          "desc": "Always At Top Of Screen",
+          "address": "0xFF179E"
+        },
+        {
+          "code": "FF1C3F:000C",
+          "desc": "Infinite Health In Special Levels",
+          "address": "0xFF1C3F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

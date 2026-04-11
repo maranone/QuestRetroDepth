@@ -1,0 +1,101 @@
+{
+  "system": "genesis",
+  "normalized_title": "sonicandknuckles3",
+  "display_name": "SonicAndKnuckles3",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\sonicandknuckles3_genesis.json",
+      "trigger_count": 7,
+      "field_names": [
+        "act",
+        "level_end_bonus",
+        "lives",
+        "rings",
+        "score",
+        "zone"
+      ],
+      "field_count": 6,
+      "distinct_addresses": [
+        "0xFFFAA8",
+        "0xFFFE10",
+        "0xFFFE11",
+        "0xFFFE12",
+        "0xFFFE20",
+        "0xFFFE26"
+      ],
+      "distinct_address_count": 6
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SonicAndKnuckles3-Genesis-v0\\data.json",
+      "field_count": 12,
+      "fields": [
+        {
+          "name": "act",
+          "address": "0xFFFE11",
+          "type": "|u1"
+        },
+        {
+          "name": "level_end_bonus",
+          "address": "0xFFFAA8",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFFFE12",
+          "type": "|u1"
+        },
+        {
+          "name": "rings",
+          "address": "0xFFFE20",
+          "type": ">u2"
+        },
+        {
+          "name": "score",
+          "address": "0xFFFE26",
+          "type": ">u4"
+        },
+        {
+          "name": "screen_x",
+          "address": "0xFFEE78",
+          "type": ">u2"
+        },
+        {
+          "name": "screen_x_end",
+          "address": "0xFFEE16",
+          "type": ">u2"
+        },
+        {
+          "name": "screen_y",
+          "address": "0xFFEE7C",
+          "type": ">u2"
+        },
+        {
+          "name": "special_stage",
+          "address": "0xFFFE48",
+          "type": "|i1"
+        },
+        {
+          "name": "x",
+          "address": "0xFFB010",
+          "type": ">u2"
+        },
+        {
+          "name": "y",
+          "address": "0xFFB014",
+          "type": ">u2"
+        },
+        {
+          "name": "zone",
+          "address": "0xFFFE10",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 12
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "michaelandrettisindycarchallenge",
+  "display_name": "Michael Andretti's Indy Car Challenge (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Michael Andretti's Indy Car Challenge (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E073400",
+          "desc": "Always 1st Place",
+          "address": "0x7E0734"
+        },
+        {
+          "code": "7E06F75F",
+          "desc": "Infinite Fuel",
+          "address": "0x7E06F7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "system": "genesis",
+  "normalized_title": "combataces",
+  "display_name": "Combat Aces (Unknown) (Action Replay)",
+  "aliases": [
+    "Combat Aces (Unknown) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Combat Aces (Unknown) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF04C1:00",
+          "desc": "Removes Countdown Numbers",
+          "address": "0xFF04C1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

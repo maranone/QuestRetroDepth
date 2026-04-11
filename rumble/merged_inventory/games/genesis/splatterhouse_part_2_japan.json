@@ -1,0 +1,30 @@
+{
+  "system": "genesis",
+  "normalized_title": "splatterhousepart2",
+  "display_name": "Splatterhouse Part 2 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Splatterhouse Part 2 (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF00F8:0005",
+          "desc": "Infinite lives",
+          "address": "0xFF00F8"
+        },
+        {
+          "code": "FF00F6:0006",
+          "desc": "Infinite Energy",
+          "address": "0xFF00F6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

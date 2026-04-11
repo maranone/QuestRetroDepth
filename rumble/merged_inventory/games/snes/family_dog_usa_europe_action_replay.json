@@ -1,0 +1,67 @@
+{
+  "system": "snes",
+  "normalized_title": "familydog",
+  "display_name": "Family Dog (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Family Dog (USA)",
+    "Family Dog (USA, Europe) (Action Replay)",
+    "Family Dog (USA, Europe) (Game Genie)",
+    "Family Dog"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\familydog_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E0994",
+        "0x7E15D3",
+        "0x7E1668"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FamilyDog-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E0994",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E1668",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E15D3",
+          "type": "<n7"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Family Dog (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 31,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 1,
+      "mk3_label": "FAMILY DOG"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

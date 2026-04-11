@@ -1,0 +1,71 @@
+{
+  "system": "snes",
+  "normalized_title": "tick",
+  "display_name": "Tick",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\tick_snes.json",
+      "trigger_count": 8,
+      "field_names": [
+        "health",
+        "lives",
+        "score0",
+        "score1",
+        "score2",
+        "score3"
+      ],
+      "field_count": 6,
+      "distinct_addresses": [
+        "0x7E1AE7",
+        "0x7E1B67",
+        "0x7E1B69",
+        "0x7E1B6B",
+        "0x7E1B6D",
+        "0x7E1B77"
+      ],
+      "distinct_address_count": 6
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Tick-Snes-v0\\data.json",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E1AE7",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E1B77",
+          "type": "|u1"
+        },
+        {
+          "name": "score0",
+          "address": "0x7E1B67",
+          "type": "|n1"
+        },
+        {
+          "name": "score1",
+          "address": "0x7E1B69",
+          "type": "|n1"
+        },
+        {
+          "name": "score2",
+          "address": "0x7E1B6B",
+          "type": "|n1"
+        },
+        {
+          "name": "score3",
+          "address": "0x7E1B6D",
+          "type": "|n1"
+        }
+      ],
+      "distinct_address_count": 6
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

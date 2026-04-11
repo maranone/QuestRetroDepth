@@ -1,0 +1,103 @@
+{
+  "system": "snes",
+  "normalized_title": "coolspot",
+  "display_name": "Cool Spot (World) (Game Genie)",
+  "aliases": [
+    "Cool Spot (Rumbles)",
+    "Cool Spot (USA) (Beta)",
+    "Cool Spot (USA)",
+    "Cool Spot (World) (Game Genie)",
+    "Cool Spot"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\coolspot_snes.json",
+      "trigger_count": 10,
+      "field_names": [
+        "health",
+        "lives",
+        "score0",
+        "score1",
+        "score2",
+        "score3",
+        "score4",
+        "score5"
+      ],
+      "field_count": 8,
+      "distinct_addresses": [
+        "0x7E00C2",
+        "0x7E00C4",
+        "0x7E00C6",
+        "0x7E00C8",
+        "0x7E00CA",
+        "0x7E00CC",
+        "0x7E00D0",
+        "0x7E00D4"
+      ],
+      "distinct_address_count": 8
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CoolSpot-Snes-v0\\data.json",
+      "field_count": 8,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E00D0",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E00D4",
+          "type": "|u1"
+        },
+        {
+          "name": "score0",
+          "address": "0x7E00CC",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0x7E00CA",
+          "type": "|u1"
+        },
+        {
+          "name": "score2",
+          "address": "0x7E00C8",
+          "type": "|u1"
+        },
+        {
+          "name": "score3",
+          "address": "0x7E00C6",
+          "type": "|u1"
+        },
+        {
+          "name": "score4",
+          "address": "0x7E00C4",
+          "type": "|u1"
+        },
+        {
+          "name": "score5",
+          "address": "0x7E00C2",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 8
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Cool Spot (World) (Game Genie).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 6,
+      "mk3_label": "COOL SPOT"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

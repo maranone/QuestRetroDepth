@@ -1,0 +1,70 @@
+{
+  "system": "genesis",
+  "normalized_title": "ptopacifictheaterofoperations",
+  "display_name": "P.T.O. - Pacific Theater of Operations (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\P.T.O. - Pacific Theater of Operations (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "FF4014:00FF",
+          "desc": "Max Entire Budget",
+          "address": "0xFF4014"
+        },
+        {
+          "code": "FFEF8C:0000",
+          "desc": "Fuel Modifier",
+          "address": "0xFFEF8C"
+        },
+        {
+          "code": "FFEF8E:0000",
+          "desc": "Materials Modifier",
+          "address": "0xFFEF8E"
+        },
+        {
+          "code": "FFEF90:0000",
+          "desc": "Industry Modifier",
+          "address": "0xFFEF90"
+        },
+        {
+          "code": "FFEF92:0000",
+          "desc": "Intel Modifier",
+          "address": "0xFFEF92"
+        },
+        {
+          "code": "FFEF94:0000",
+          "desc": "Artillery Modifier",
+          "address": "0xFFEF94"
+        },
+        {
+          "code": "FFEF96:0000",
+          "desc": "Steel Modifier",
+          "address": "0xFFEF96"
+        },
+        {
+          "code": "FFEF98:0000",
+          "desc": "Engines Modifier",
+          "address": "0xFFEF98"
+        },
+        {
+          "code": "FFEF9A:0000",
+          "desc": "Aviation Modifier",
+          "address": "0xFFEF9A"
+        },
+        {
+          "code": "FFEF9C:0000",
+          "desc": "Electronics Modifier",
+          "address": "0xFFEF9C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

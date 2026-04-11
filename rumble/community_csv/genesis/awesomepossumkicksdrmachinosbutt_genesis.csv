@@ -1,0 +1,8 @@
+# schema=qrd_rumble_csv_v1
+# game_name=Awesome Possum Kicks Dr Machino's Butt! (USA) (Action Replay)
+# match_names=awesomepossumkicksdrmachinosbutt|awesomepossumkicksdrmachinosbuttgenesis
+event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
+pickup_items_collected_ffe90c,0xFFE90C,2,uint,changed,,right,0.250,normal,0,18,35,20,
+life_lost_lives_ffe8f6,0xFFE8F6,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
+life_gained_lives_ffe8f6,0xFFE8F6,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,
+score_score_ffe8a8,0xFFE8A8,4,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,

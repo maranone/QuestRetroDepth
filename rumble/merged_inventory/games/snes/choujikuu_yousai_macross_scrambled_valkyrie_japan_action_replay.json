@@ -1,0 +1,114 @@
+{
+  "system": "snes",
+  "normalized_title": "choujikuuyousaimacrossscrambledvalkyrie",
+  "display_name": "Choujikuu Yousai Macross - Scrambled Valkyrie (Japan) (Action Replay)",
+  "aliases": [
+    "Choujikuu Yousai Macross - Scrambled Valkyrie (Japan) (Action Replay)",
+    "Choujikuu Yousai Macross - Scrambled Valkyrie (Japan) (En)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\choujikuuyousaimacrossscrambledvalkyrie_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0A28",
+        "0x7E0A8A"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ChoujikuuYousaiMacrossScrambledValkyrie-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E0A28",
+          "type": "<u2"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0A8A",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Choujikuu Yousai Macross - Scrambled Valkyrie (Japan) (En).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 12,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "7E07B6A0",
+          "desc": "Infinite Energy",
+          "address": "0x7E07B6"
+        },
+        {
+          "code": "7E0A2880",
+          "desc": "Infinite Energy",
+          "address": "0x7E0A28"
+        },
+        {
+          "code": "7E0A9003",
+          "desc": "Invincibility",
+          "address": "0x7E0A90"
+        },
+        {
+          "code": "7E0A90FF",
+          "desc": "Untouchable",
+          "address": "0x7E0A90"
+        },
+        {
+          "code": "7E02AA09",
+          "desc": "Infinite continues",
+          "address": "0x7E02AA"
+        },
+        {
+          "code": "7E0A28FF",
+          "desc": "Infinite Energy",
+          "address": "0x7E0A28"
+        },
+        {
+          "code": "7E0A9C04",
+          "desc": "1\u00b0 Weapon Max Power",
+          "address": "0x7E0A9C"
+        },
+        {
+          "code": "7E0A9E04",
+          "desc": "2\u00b0 Weapon Max Power",
+          "address": "0x7E0A9E"
+        },
+        {
+          "code": "7E0AA004",
+          "desc": "3\u00b0 Weapon Max Power",
+          "address": "0x7E0AA0"
+        },
+        {
+          "code": "7E0091FF",
+          "desc": "Infinite Health",
+          "address": "0x7E0091"
+        },
+        {
+          "code": "7E0A28F4",
+          "desc": "INN",
+          "address": "0x7E0A28"
+        },
+        {
+          "code": "7E0A2901",
+          "desc": "INN",
+          "address": "0x7E0A29"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

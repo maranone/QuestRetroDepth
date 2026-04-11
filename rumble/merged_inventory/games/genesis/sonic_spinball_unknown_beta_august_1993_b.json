@@ -1,0 +1,25 @@
+{
+  "system": "genesis",
+  "normalized_title": "sonicspinballb",
+  "display_name": "Sonic Spinball (Unknown) (Beta) (August, 1993) [b]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Sonic Spinball (Unknown) (Beta) (August, 1993) [b].cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "FF5306:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFF5306"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

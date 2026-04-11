@@ -1,0 +1,95 @@
+{
+  "system": "snes",
+  "normalized_title": "outtolunch",
+  "display_name": "Out to Lunch (USA) (Action Replay)",
+  "aliases": [
+    "Out to Lunch (USA) (Action Replay)",
+    "Out to Lunch (USA)",
+    "Out to Lunch"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\outtolunch_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E0009",
+        "0x7E0088"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\OutToLunch-Snes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x7E0088",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0009",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Out to Lunch (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7E008863",
+          "desc": "Infinite Lives",
+          "address": "0x7E0088"
+        },
+        {
+          "code": "7E000963",
+          "desc": "Score modifier",
+          "address": "0x7E0009"
+        },
+        {
+          "code": "7E008AA7",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x7E008A"
+        },
+        {
+          "code": "7E008BA7",
+          "desc": "Give Even More Time",
+          "address": "0x7E008B"
+        },
+        {
+          "code": "7E0002FF",
+          "desc": "Untouchable (Blinking)",
+          "address": "0x7E0002"
+        },
+        {
+          "code": "7E009E01",
+          "desc": "Always Have Net",
+          "address": "0x7E009E"
+        },
+        {
+          "code": "7E00A201",
+          "desc": "Never Slide On Ice (Have Shoes)",
+          "address": "0x7E00A2"
+        }
+      ]
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "OUT TO LUNCH"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

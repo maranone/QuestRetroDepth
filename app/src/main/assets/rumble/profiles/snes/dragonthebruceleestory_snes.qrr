@@ -1,0 +1,11 @@
+game_name=Dragon - The Bruce Lee Story (USA, Europe) (Action Replay)
+game_key=DragonTheBruceLeeStory-Snes
+system=snes
+integration_tier=stable
+trigger	enemy_defeated_enemy_health_01d9	enemy_defeated	0x7E01D9	2	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_00d9	damage_taken	0x7E00D9	2	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00d9	death	0x7E00D9	2	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_5d1f	life_lost	0x7E5D1F	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_5d1f	life_gained	0x7E5D1F	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score1_5d25	score	0x7E5D25	2	bcd	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_5d2b	score	0x7E5D2B	2	bcd	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,40 @@
+{
+  "system": "snes",
+  "normalized_title": "nintamarantarou3",
+  "display_name": "Nintama Rantarou 3 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Nintama Rantarou 3 (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E0E9363",
+          "desc": "Infinite Time",
+          "address": "0x7E0E93"
+        },
+        {
+          "code": "7E1C0F0F",
+          "desc": "Infinite Money",
+          "address": "0x7E1C0F"
+        },
+        {
+          "code": "7E1C1027",
+          "desc": "Infinite Money",
+          "address": "0x7E1C10"
+        },
+        {
+          "code": "7E0B3763",
+          "desc": "Infinite Health",
+          "address": "0x7E0B37"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "system": "genesis",
+  "normalized_title": "ultraman",
+  "display_name": "Ultraman (Japan) (Action Replay)",
+  "aliases": [
+    "Ultraman (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ultraman (Japan).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 13,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "FFF5DC:0000",
+          "desc": "Continues Modifier",
+          "address": "0xFFF5DC"
+        },
+        {
+          "code": "FFF648:0000",
+          "desc": "Timer Modifier",
+          "address": "0xFFF648"
+        },
+        {
+          "code": "FFF648:0000",
+          "desc": "Timer Modifier",
+          "address": "0xFFF648"
+        },
+        {
+          "code": "FFF5DE:0000",
+          "desc": "Monster Modifier",
+          "address": "0xFFF5DE"
+        },
+        {
+          "code": "FFF42A:0000",
+          "desc": "Monster HP Modifier",
+          "address": "0xFFF42A"
+        },
+        {
+          "code": "FFF420:0000",
+          "desc": "Monster's action Modifier",
+          "address": "0xFFF420"
+        },
+        {
+          "code": "FFF5BA:0909",
+          "desc": "Always scored 999990 points",
+          "address": "0xFFF5BA"
+        },
+        {
+          "code": "FFF5BC:0909",
+          "desc": "Always scored 999990 points",
+          "address": "0xFFF5BC"
+        },
+        {
+          "code": "FFF5BE:0909",
+          "desc": "Always scored 999990 points",
+          "address": "0xFFF5BE"
+        },
+        {
+          "code": "FFF5D4:0000",
+          "desc": "Stage Select Modifier",
+          "address": "0xFFF5D4"
+        },
+        {
+          "code": "FFF488:102D",
+          "desc": "Ultraman always has Infinite Maximum Power",
+          "address": "0xFFF488"
+        },
+        {
+          "code": "FFF40A:0060",
+          "desc": "Infinite Energy",
+          "address": "0xFFF40A"
+        },
+        {
+          "code": "FFF5DD:0002",
+          "desc": "Infinite Chance",
+          "address": "0xFFF5DD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

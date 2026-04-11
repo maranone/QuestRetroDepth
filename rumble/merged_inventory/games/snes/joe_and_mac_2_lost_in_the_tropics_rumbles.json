@@ -1,0 +1,59 @@
+{
+  "system": "snes",
+  "normalized_title": "joeandmac2lostintropics",
+  "display_name": "Joe and Mac 2 - Lost In The Tropics (Rumbles)",
+  "aliases": [
+    "Joe and Mac 2 - Lost In The Tropics (Rumbles)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\joeandmac2lostinthetropics_snes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x7E0230",
+        "0x7E0232",
+        "0x7E0233"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JoeAndMac2LostInTheTropics-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E0232",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E0233",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x7E0230",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Joe and Mac 2 - Lost In The Tropics (Rumbles).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

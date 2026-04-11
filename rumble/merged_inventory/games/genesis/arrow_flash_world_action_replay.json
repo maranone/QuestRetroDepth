@@ -1,0 +1,80 @@
+{
+  "system": "genesis",
+  "normalized_title": "arrowflash",
+  "display_name": "Arrow Flash (World) (Action Replay)",
+  "aliases": [
+    "Arrow Flash (Japan, Europe)",
+    "Arrow Flash (USA)",
+    "Arrow Flash (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\arrowflash_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFC004",
+        "0xFFC06B"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ArrowFlash-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFC06B",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFC004",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Arrow Flash (World) (Action Replay).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFC069:03",
+          "desc": "Infinite Lives",
+          "address": "0xFFC069"
+        },
+        {
+          "code": "FF3303:0F",
+          "desc": "Infinite Arrow Flashes",
+          "address": "0xFF3303"
+        },
+        {
+          "code": "FF17D1:02",
+          "desc": "Invincible Against Most Enemies",
+          "address": "0xFF17D1"
+        },
+        {
+          "code": "FF17C5:XX",
+          "desc": "Speed Modifier",
+          "address": "0xFF17C5"
+        },
+        {
+          "code": "FF32CF:04",
+          "desc": "Rapid-Fire Arrow Flashes, Regular Gun",
+          "address": "0xFF32CF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

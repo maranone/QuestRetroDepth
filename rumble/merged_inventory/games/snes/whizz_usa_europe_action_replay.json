@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "whizz",
+  "display_name": "Whizz (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Whizz (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Whizz (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7EAB0009",
+          "desc": "Invincibility",
+          "address": "0x7EAB00"
+        },
+        {
+          "code": "7EFF0002",
+          "desc": "Unlimited Lives",
+          "address": "0x7EFF00"
+        },
+        {
+          "code": "7E03A463",
+          "desc": "Unlimited Time",
+          "address": "0x7E03A4"
+        },
+        {
+          "code": "7E04B003",
+          "desc": "Unlimited Coins",
+          "address": "0x7E04B0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

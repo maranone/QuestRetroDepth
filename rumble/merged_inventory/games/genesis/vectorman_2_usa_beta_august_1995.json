@@ -1,0 +1,182 @@
+{
+  "system": "genesis",
+  "normalized_title": "vectorman2",
+  "display_name": "Vectorman 2 (USA) (Beta) (August, 1995)",
+  "aliases": [
+    "Vectorman 2 (Rumbles)",
+    "Vectorman 2 (USA) (Action Replay)",
+    "Vectorman 2 (USA) (Beta) (August, 1995)",
+    "Vectorman 2 (USA) (Game Genie)",
+    "Vectorman 2 (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\vectorman2_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFE9A6",
+        "0xFFE9BF"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Vectorman2-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFE9BF",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFE9A6",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Vectorman 2 (USA).cht",
+      "total_cheat_rows": 41,
+      "raw_entry_count": 47,
+      "distinct_address_count": 24,
+      "sample_raw_entries": [
+        {
+          "code": "FFE9D2:0063",
+          "desc": "Timer Starts At 99 Minutes",
+          "address": "0xFFE9D2"
+        },
+        {
+          "code": "FFE4BA:0000",
+          "desc": "Hyper Vectorman",
+          "address": "0xFFE4BA"
+        },
+        {
+          "code": "FFE4BE:0009",
+          "desc": "Hyper/Scrambled Vectorman",
+          "address": "0xFFE4BE"
+        },
+        {
+          "code": "FFE5AA:001F",
+          "desc": "Invincible Vectorman",
+          "address": "0xFFE5AA"
+        },
+        {
+          "code": "FFE3E6:0012",
+          "desc": "Disable Enemies",
+          "address": "0xFFE3E6"
+        },
+        {
+          "code": "FFC11E:0000",
+          "desc": "Shadow Vectorman",
+          "address": "0xFFC11E"
+        },
+        {
+          "code": "FFC11E:0000",
+          "desc": "Shadow Vectorman",
+          "address": "0xFFC11E"
+        },
+        {
+          "code": "FFC120:0000",
+          "desc": "Shadow Vectorman",
+          "address": "0xFFC120"
+        },
+        {
+          "code": "FFC120:0000",
+          "desc": "Shadow Vectorman",
+          "address": "0xFFC120"
+        },
+        {
+          "code": "FFC122:0000",
+          "desc": "Shadow Vectorman",
+          "address": "0xFFC122"
+        },
+        {
+          "code": "FFC122:0000",
+          "desc": "Shadow Vectorman",
+          "address": "0xFFC122"
+        },
+        {
+          "code": "FFC124:0000",
+          "desc": "Shadow Vectorman",
+          "address": "0xFFC124"
+        },
+        {
+          "code": "FFC124:0000",
+          "desc": "Shadow Vectorman",
+          "address": "0xFFC124"
+        },
+        {
+          "code": "FFC126:0000",
+          "desc": "Shadow Vectorman",
+          "address": "0xFFC126"
+        },
+        {
+          "code": "FFC126:0000",
+          "desc": "Shadow Vectorman",
+          "address": "0xFFC126"
+        },
+        {
+          "code": "FFC128:0000",
+          "desc": "Shadow Vectorman",
+          "address": "0xFFC128"
+        },
+        {
+          "code": "FFC128:0000",
+          "desc": "Shadow Vectorman",
+          "address": "0xFFC128"
+        },
+        {
+          "code": "FFE9C8:0064",
+          "desc": "Infinite Ammo (All Weapons)",
+          "address": "0xFFE9C8"
+        },
+        {
+          "code": "FFF6B0:0001",
+          "desc": "Coordinates Display Modifier",
+          "address": "0xFFF6B0"
+        },
+        {
+          "code": "FFE4CA:0000",
+          "desc": "Infinite Rocket Thrusts",
+          "address": "0xFFE4CA"
+        },
+        {
+          "code": "FFE4CE:00FF",
+          "desc": "Rapid Fire (All Weapons)",
+          "address": "0xFFE4CE"
+        },
+        {
+          "code": "FFE4CE:0000",
+          "desc": "Weapon Modifier",
+          "address": "0xFFE4CE"
+        },
+        {
+          "code": "FFC11E:0000",
+          "desc": "Fire Ant Red Vectorman",
+          "address": "0xFFC11E"
+        },
+        {
+          "code": "FFC11E:002E",
+          "desc": "Fire Ant Red Vectorman",
+          "address": "0xFFC11E"
+        },
+        {
+          "code": "FFC120:0000",
+          "desc": "Fire Ant Red Vectorman",
+          "address": "0xFFC120"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

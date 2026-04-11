@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "zennihonprowresfightdapon",
+  "display_name": "Zen-Nihon Pro Wres - Fight da Pon! (Japan) (Action Replay)",
+  "aliases": [
+    "Zen-Nihon Pro Wres - Fight da Pon! (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Zen-Nihon Pro Wres - Fight da Pon! (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E7010FF",
+          "desc": "Infinite Energy P1",
+          "address": "0x7E7010"
+        },
+        {
+          "code": "7E71D0FF",
+          "desc": "Infinite Energy P2",
+          "address": "0x7E71D0"
+        },
+        {
+          "code": "7E701000",
+          "desc": "No Energy P1",
+          "address": "0x7E7010"
+        },
+        {
+          "code": "7E71D000",
+          "desc": "No Energy P2",
+          "address": "0x7E71D0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

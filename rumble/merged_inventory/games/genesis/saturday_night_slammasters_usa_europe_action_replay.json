@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "saturdaynightslammasters",
+  "display_name": "Saturday Night Slammasters (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Saturday Night Slammasters (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Saturday Night Slammasters (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF399B:3A",
+          "desc": "Fake Infinite Time (Seconds)",
+          "address": "0xFF399B"
+        },
+        {
+          "code": "FFBAB7:XX",
+          "desc": "P1 Loss Modifier",
+          "address": "0xFFBAB7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

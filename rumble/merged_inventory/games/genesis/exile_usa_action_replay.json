@@ -1,0 +1,72 @@
+{
+  "system": "genesis",
+  "normalized_title": "exile",
+  "display_name": "Exile (USA) (Action Replay)",
+  "aliases": [
+    "Exile (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Exile (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "FFF23E:270F",
+          "desc": "Sadler Max Gold",
+          "address": "0xFFF23E"
+        },
+        {
+          "code": "FFF220:0063",
+          "desc": "Sadler Max Level (99)",
+          "address": "0xFFF220"
+        },
+        {
+          "code": "FFF226:03E7",
+          "desc": "Sadler 999 HP",
+          "address": "0xFFF226"
+        },
+        {
+          "code": "FFF228:03E7",
+          "desc": "Sadler 999 HP",
+          "address": "0xFFF228"
+        },
+        {
+          "code": "FFF22A:03E7",
+          "desc": "Sadler 999 MP",
+          "address": "0xFFF22A"
+        },
+        {
+          "code": "FFF22C:03E7",
+          "desc": "Sadler 999 MP",
+          "address": "0xFFF22C"
+        },
+        {
+          "code": "FFF222:FFFF",
+          "desc": "Sadler Max Exp",
+          "address": "0xFFF222"
+        },
+        {
+          "code": "FFF22E:03E5",
+          "desc": "Sadler Max AP",
+          "address": "0xFFF22E"
+        },
+        {
+          "code": "FFF236:03E6",
+          "desc": "Sadler Max AC",
+          "address": "0xFFF236"
+        },
+        {
+          "code": "FFF256:0001",
+          "desc": "Infinite All Tonic",
+          "address": "0xFFF256"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

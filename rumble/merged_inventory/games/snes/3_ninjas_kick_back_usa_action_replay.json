@@ -1,0 +1,73 @@
+{
+  "system": "snes",
+  "normalized_title": "3ninjaskickback",
+  "display_name": "3 Ninjas Kick Back (USA) (Action Replay)",
+  "aliases": [
+    "3 Ninjas Kick Back (USA) (Action Replay)",
+    "3 Ninjas Kick Back (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\3 Ninjas Kick Back (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "7E1E6B14",
+          "desc": "Infinite Time",
+          "address": "0x7E1E6B"
+        },
+        {
+          "code": "7E0A2A06",
+          "desc": "Infinite Health",
+          "address": "0x7E0A2A"
+        },
+        {
+          "code": "7E0A3019",
+          "desc": "Invincible",
+          "address": "0x7E0A30"
+        },
+        {
+          "code": "7E1E5B14",
+          "desc": "Max Coins",
+          "address": "0x7E1E5B"
+        },
+        {
+          "code": "7E1E5914",
+          "desc": "Max Coins",
+          "address": "0x7E1E59"
+        },
+        {
+          "code": "7E1E6314",
+          "desc": "Infinite Bombs",
+          "address": "0x7E1E63"
+        },
+        {
+          "code": "7E1E6514",
+          "desc": "Infinite Bombs",
+          "address": "0x7E1E65"
+        },
+        {
+          "code": "7E1E5114",
+          "desc": "Infinite Lives",
+          "address": "0x7E1E51"
+        },
+        {
+          "code": "7E1FE002",
+          "desc": "Less Enemies to pass trials",
+          "address": "0x7E1FE0"
+        },
+        {
+          "code": "7E0A0909",
+          "desc": "Have Throwing Weapon",
+          "address": "0x7E0A09"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "system": "snes",
+  "normalized_title": "greatbattleiv",
+  "display_name": "Great Battle IV, The (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Great Battle IV, The (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "7E046C20",
+          "desc": "P1 Infinite Health",
+          "address": "0x7E046C"
+        },
+        {
+          "code": "7E00E43D",
+          "desc": "P1 Untouchable",
+          "address": "0x7E00E4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

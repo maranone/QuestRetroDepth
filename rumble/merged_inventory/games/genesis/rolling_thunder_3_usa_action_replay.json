@@ -1,0 +1,72 @@
+{
+  "system": "genesis",
+  "normalized_title": "rollingthunder3",
+  "display_name": "Rolling Thunder 3 (USA) (Action Replay)",
+  "aliases": [
+    "Rolling Thunder 3 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Rolling Thunder 3 (USA).cht",
+      "total_cheat_rows": 66,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "FF0172:0045",
+          "desc": "Invincible",
+          "address": "0xFF0172"
+        },
+        {
+          "code": "FF00DA:0A0A",
+          "desc": "Infinite Health",
+          "address": "0xFF00DA"
+        },
+        {
+          "code": "FF00DE:3939",
+          "desc": "Infinite Pistol Ammo",
+          "address": "0xFF00DE"
+        },
+        {
+          "code": "FF00F6:3939",
+          "desc": "Infinite Secondary Weapon Ammo",
+          "address": "0xFF00F6"
+        },
+        {
+          "code": "FF00F4:0000",
+          "desc": "Special Weapon Modifier",
+          "address": "0xFF00F4"
+        },
+        {
+          "code": "FF00C6:0000",
+          "desc": "Full Auto is always selectable",
+          "address": "0xFF00C6"
+        },
+        {
+          "code": "FF00C7:0000",
+          "desc": "Bazooka is always selectable",
+          "address": "0xFF00C7"
+        },
+        {
+          "code": "FF00F3:0000",
+          "desc": "Shotgun is always selectable",
+          "address": "0xFF00F3"
+        },
+        {
+          "code": "FF006F:0000",
+          "desc": "Stage Modifier",
+          "address": "0xFF006F"
+        },
+        {
+          "code": "FF00D2:0063",
+          "desc": "Have 99 Lives in Options",
+          "address": "0xFF00D2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

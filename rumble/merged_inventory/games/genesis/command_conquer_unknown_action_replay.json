@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "commandconquer",
+  "display_name": "Command _ Conquer (Unknown) (Action Replay)",
+  "aliases": [
+    "Command _ Conquer (Unknown) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Command _ Conquer (Unknown) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF0015:FF",
+          "desc": "Infinite Money",
+          "address": "0xFF0015"
+        },
+        {
+          "code": "FF0027:FF",
+          "desc": "Infinite Money",
+          "address": "0xFF0027"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

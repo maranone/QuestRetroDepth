@@ -1,0 +1,47 @@
+{
+  "system": "genesis",
+  "normalized_title": "revolutionx",
+  "display_name": "Revolution X (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Revolution X (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Revolution X (USA, Europe).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "FFE872:0026",
+          "desc": "Infinite Health P1",
+          "address": "0xFFE872"
+        },
+        {
+          "code": "FFEA98:00FF",
+          "desc": "Infinite Discs P1",
+          "address": "0xFFEA98"
+        },
+        {
+          "code": "FFE880:0026",
+          "desc": "Infinite Health P2",
+          "address": "0xFFE880"
+        },
+        {
+          "code": "FFEAA8:00FF",
+          "desc": "Infinite Discs P2",
+          "address": "0xFFEAA8"
+        },
+        {
+          "code": "FFEA9B:000F",
+          "desc": "Infinite Continue",
+          "address": "0xFFEA9B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

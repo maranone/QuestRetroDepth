@@ -1,0 +1,68 @@
+{
+  "system": "snes",
+  "normalized_title": "battletoadsinbattlemaniacs",
+  "display_name": "Battletoads in Battlemaniacs (World) (Game Genie)",
+  "aliases": [
+    "Battletoads In Battlemaniacs (Rumbles)",
+    "Battletoads in Battlemaniacs (USA)",
+    "Battletoads in Battlemaniacs (World) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\battletoadsinbattlemaniacs_snes.json",
+      "trigger_count": 6,
+      "field_names": [
+        "health",
+        "lives",
+        "scoreHi",
+        "scoreLo"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0x7E0020",
+        "0x7E0024",
+        "0x7E0028",
+        "0x7E0E5E"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BattletoadsInBattlemaniacs-Snes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x7E0E5E",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x7E0028",
+          "type": "|u1"
+        },
+        {
+          "name": "scoreHi",
+          "address": "0x7E0024",
+          "type": "<d2"
+        },
+        {
+          "name": "scoreLo",
+          "address": "0x7E0020",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Battletoads in Battlemaniacs (World) (Game Genie).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

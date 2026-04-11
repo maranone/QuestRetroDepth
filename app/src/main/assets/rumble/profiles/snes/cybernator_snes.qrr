@@ -1,0 +1,6 @@
+game_name=Cybernator (USA, Europe) (Action Replay)
+game_key=Cybernator-Snes
+system=snes
+integration_tier=stable
+trigger	game_over_gameover_0720	game_over	0x7E0720	1	uint	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	score_score_01f4	score	0x7E01F4	4	bcd	little	prev < curr	0.8	1	right:0.350:60

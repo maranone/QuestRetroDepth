@@ -1,0 +1,33 @@
+{
+  "system": "genesis",
+  "normalized_title": "pinocchio",
+  "display_name": "Pinocchio (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Pinocchio (USA)",
+    "Pinocchio (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Pinocchio (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FF8C27:64",
+          "desc": "Infinite Energy",
+          "address": "0xFF8C27"
+        },
+        {
+          "code": "FF8C1D:09",
+          "desc": "Infinite Lives",
+          "address": "0xFF8C1D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

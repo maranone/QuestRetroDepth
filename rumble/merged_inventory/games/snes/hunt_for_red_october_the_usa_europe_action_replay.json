@@ -1,0 +1,66 @@
+{
+  "system": "snes",
+  "normalized_title": "huntforredoctober",
+  "display_name": "Hunt for Red October, The (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Hunt For Red October (Rumbles)",
+    "Hunt for Red October, The (USA)",
+    "Hunt for Red October, The (USA, Europe) (Action Replay)",
+    "Hunt for Red October, The (USA, Europe) (Game Genie)",
+    "The Hunt for Red October"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\snes\\stable\\huntforredoctober_snes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "damage",
+        "level"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x7E14E5",
+        "0x7E1ED1"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\HuntForRedOctober-Snes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "damage",
+          "address": "0x7E14E5",
+          "type": "|u1"
+        },
+        {
+          "name": "level",
+          "address": "0x7E1ED1",
+          "type": "|u1"
+        },
+        {
+          "name": "progress",
+          "address": "0x7E03CC",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Hunt for Red October, The (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "action_replay_mk_iii": {
+      "path": "action_replay_mk_iii\\preservaction-database.md",
+      "built_in_cheat_count": 2,
+      "mk3_label": "HUNT FOR RED OCTOBER"
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

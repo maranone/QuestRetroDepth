@@ -1,0 +1,98 @@
+{
+  "system": "snes",
+  "normalized_title": "gogoackman",
+  "display_name": "Go Go Ackman (Japan) (Action Replay)",
+  "aliases": [
+    "Go Go Ackman (Japan) (Game Genie)",
+    "Go Go Ackman (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Go Go Ackman (Japan).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "7E04A109",
+          "desc": "Infinite Lives",
+          "address": "0x7E04A1"
+        },
+        {
+          "code": "7E049304",
+          "desc": "Infinite Energy",
+          "address": "0x7E0493"
+        },
+        {
+          "code": "7E178E09",
+          "desc": "Infinite Bombs",
+          "address": "0x7E178E"
+        },
+        {
+          "code": "7E04E040",
+          "desc": "Infinite Time",
+          "address": "0x7E04E0"
+        },
+        {
+          "code": "7E049201",
+          "desc": "Invincibility",
+          "address": "0x7E0492"
+        },
+        {
+          "code": "7E041380",
+          "desc": "Jump in Mid Air",
+          "address": "0x7E0413"
+        },
+        {
+          "code": "7E040100",
+          "desc": "Level / Area Mod",
+          "address": "0x7E0401"
+        },
+        {
+          "code": "7E049A02",
+          "desc": "Weapon Mod",
+          "address": "0x7E049A"
+        },
+        {
+          "code": "7E0B3801",
+          "desc": "Activate Invincibility (Kill enemies on contact)",
+          "address": "0x7E0B38"
+        },
+        {
+          "code": "7EC06400",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x7EC064"
+        },
+        {
+          "code": "7EC16400",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x7EC164"
+        },
+        {
+          "code": "7EC26400",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x7EC264"
+        },
+        {
+          "code": "7E049101",
+          "desc": "Cannot Get Hit",
+          "address": "0x7E0491"
+        },
+        {
+          "code": "7E04D063",
+          "desc": "Infinite Money",
+          "address": "0x7E04D0"
+        },
+        {
+          "code": "7E049A00",
+          "desc": "Weapon Modifier",
+          "address": "0x7E049A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

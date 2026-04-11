@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "kickoff3europeanchallenge",
+  "display_name": "Kick Off 3 - European Challenge (Europe) (Action Replay)",
+  "aliases": [
+    "Kick Off 3 - European Challenge (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Kick Off 3 - European Challenge (Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF3988:0007",
+          "desc": "Flashing Players",
+          "address": "0xFF3988"
+        },
+        {
+          "code": "FF39AC:0000",
+          "desc": "Fake Infinite Time",
+          "address": "0xFF39AC"
+        },
+        {
+          "code": "FF33CA:0063",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0xFF33CA"
+        },
+        {
+          "code": "FF33CC:0000",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0xFF33CC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

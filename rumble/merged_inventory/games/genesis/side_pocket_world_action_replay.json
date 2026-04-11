@@ -1,0 +1,32 @@
+{
+  "system": "genesis",
+  "normalized_title": "sidepocket",
+  "display_name": "Side Pocket (World) (Action Replay)",
+  "aliases": [
+    "Side Pocket (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Side Pocket (World) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFC53C:0008",
+          "desc": "Always In \"Zone\" Mode",
+          "address": "0xFFC53C"
+        },
+        {
+          "code": "FFC094:0008",
+          "desc": "Infinite Shots P1",
+          "address": "0xFFC094"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "system": "genesis",
+  "normalized_title": "bloodshot",
+  "display_name": "Bloodshot (Europe) (Action Replay)",
+  "aliases": [
+    "Bloodshot (Europe) (En,Fr,De,Es)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Bloodshot (Europe) (En,Fr,De,Es).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 20,
+      "distinct_address_count": 20,
+      "sample_raw_entries": [
+        {
+          "code": "FF81C8:0080",
+          "desc": "Infinite Health",
+          "address": "0xFF81C8"
+        },
+        {
+          "code": "FF81C2:0003",
+          "desc": "Infinite Lives",
+          "address": "0xFF81C2"
+        },
+        {
+          "code": "FF812C:0001",
+          "desc": "Weapon Modifier Slot 1",
+          "address": "0xFF812C"
+        },
+        {
+          "code": "FF8134:0000",
+          "desc": "Weapon Modifier Slot 2",
+          "address": "0xFF8134"
+        },
+        {
+          "code": "FF813C:0000",
+          "desc": "Weapon Modifier Slot 3",
+          "address": "0xFF813C"
+        },
+        {
+          "code": "FF8144:0000",
+          "desc": "Weapon Modifier Slot 4",
+          "address": "0xFF8144"
+        },
+        {
+          "code": "FF814C:0000",
+          "desc": "Weapon Modifier Slot 5",
+          "address": "0xFF814C"
+        },
+        {
+          "code": "FF8154:0000",
+          "desc": "Weapon Modifier Slot 6",
+          "address": "0xFF8154"
+        },
+        {
+          "code": "FF815C:0000",
+          "desc": "Weapon Modifier Slot 7",
+          "address": "0xFF815C"
+        },
+        {
+          "code": "FF8164:0000",
+          "desc": "Weapon Modifier Slot 8",
+          "address": "0xFF8164"
+        },
+        {
+          "code": "FF816C:0000",
+          "desc": "Weapon Modifier Slot 9",
+          "address": "0xFF816C"
+        },
+        {
+          "code": "FF812E:0015",
+          "desc": "Infinite Ammo Weapon 1",
+          "address": "0xFF812E"
+        },
+        {
+          "code": "FF8136:0015",
+          "desc": "Infinite Ammo Weapon 2",
+          "address": "0xFF8136"
+        },
+        {
+          "code": "FF813E:0015",
+          "desc": "Infinite Ammo Weapon 3",
+          "address": "0xFF813E"
+        },
+        {
+          "code": "FF8146:0015",
+          "desc": "Infinite Ammo Weapon 4",
+          "address": "0xFF8146"
+        },
+        {
+          "code": "FF814E:0015",
+          "desc": "Infinite Ammo Weapon 5",
+          "address": "0xFF814E"
+        },
+        {
+          "code": "FF8156:0015",
+          "desc": "Infinite Ammo Weapon 6",
+          "address": "0xFF8156"
+        },
+        {
+          "code": "FF815E:0015",
+          "desc": "Infinite Ammo Weapon 7",
+          "address": "0xFF815E"
+        },
+        {
+          "code": "FF8166:0015",
+          "desc": "Infinite Ammo Weapon 8",
+          "address": "0xFF8166"
+        },
+        {
+          "code": "FF816E:0015",
+          "desc": "Infinite Ammo Weapon 9",
+          "address": "0xFF816E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

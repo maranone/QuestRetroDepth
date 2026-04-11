@@ -1,0 +1,5 @@
+game_name=HomeAlone2LostInNewYork
+game_key=HomeAlone2LostInNewYork-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_1781	damage_taken	0x7E1781	1	uint	native	prev > curr	0.85	1	left:0.750:180

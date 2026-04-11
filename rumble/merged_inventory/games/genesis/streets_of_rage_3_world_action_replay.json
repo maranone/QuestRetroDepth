@@ -1,0 +1,157 @@
+{
+  "system": "genesis",
+  "normalized_title": "streetsofrage3",
+  "display_name": "Streets of Rage 3 (World) (Action Replay)",
+  "aliases": [
+    "Streets of Rage 3 (Asia, Korea)",
+    "Streets of Rage 3 (Europe)",
+    "Streets Of Rage 3 (Rumbles)",
+    "Streets of Rage 3 (USA)",
+    "Streets of Rage 3 (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\streetsofrage3_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFDF81",
+        "0xFFDF8B"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\StreetsOfRage3-Genesis-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xFFDF8B",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xFFDF81",
+          "type": ">u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Streets of Rage 3 (World) (Action Replay).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 20,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "FFF616:0080",
+          "desc": "Infinite Special",
+          "address": "0xFFF616"
+        },
+        {
+          "code": "FFDF8A:0009",
+          "desc": "Infinite Lives",
+          "address": "0xFFDF8A"
+        },
+        {
+          "code": "FFDFA0:000A",
+          "desc": "Infinite Continues",
+          "address": "0xFFDFA0"
+        },
+        {
+          "code": "FFDF82:FFFF",
+          "desc": "Quick Score Gain",
+          "address": "0xFFDF82"
+        },
+        {
+          "code": "FFDF0C:0000",
+          "desc": "Play As Ash",
+          "address": "0xFFDF0C"
+        },
+        {
+          "code": "FFDF0C:0002",
+          "desc": "Play As Shiva",
+          "address": "0xFFDF0C"
+        },
+        {
+          "code": "FFDF0C:0004",
+          "desc": "Play As Zan",
+          "address": "0xFFDF0C"
+        },
+        {
+          "code": "FFDF0C:0006",
+          "desc": "Play As Axel",
+          "address": "0xFFDF0C"
+        },
+        {
+          "code": "FFDF0C:0008",
+          "desc": "Play As Blaze",
+          "address": "0xFFDF0C"
+        },
+        {
+          "code": "FFDF0C:000A",
+          "desc": "Play As Skate",
+          "address": "0xFFDF0C"
+        },
+        {
+          "code": "FFDF0C:000C",
+          "desc": "Play As Roo",
+          "address": "0xFFDF0C"
+        },
+        {
+          "code": "FFFF20:FFFF",
+          "desc": "Super Axel",
+          "address": "0xFFFF20"
+        },
+        {
+          "code": "FFFF1E:FFFF",
+          "desc": "Super Skate",
+          "address": "0xFFFF1E"
+        },
+        {
+          "code": "FFFF1C:FFFF",
+          "desc": "Super Zan",
+          "address": "0xFFFF1C"
+        },
+        {
+          "code": "FF88E2:60",
+          "desc": "Infinite Time In Round 6",
+          "address": "0xFF88E2"
+        },
+        {
+          "code": "FF8850:59",
+          "desc": "Infinite Time For Robot Y",
+          "address": "0xFF8850"
+        },
+        {
+          "code": "FFDF5D:06",
+          "desc": "Enemies Can't Hurt P1",
+          "address": "0xFFDF5D"
+        },
+        {
+          "code": "FFE05D:06",
+          "desc": "Enemies Can't Hurt P2",
+          "address": "0xFFE05D"
+        },
+        {
+          "code": "FFDF6C:34",
+          "desc": "Infinite Health",
+          "address": "0xFFDF6C"
+        },
+        {
+          "code": "FFFF0B:63",
+          "desc": "Start With 99 Lives",
+          "address": "0xFFFF0B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

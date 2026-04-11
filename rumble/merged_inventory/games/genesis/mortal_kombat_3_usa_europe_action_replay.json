@@ -1,0 +1,145 @@
+{
+  "system": "genesis",
+  "normalized_title": "mortalkombat3",
+  "display_name": "Mortal Kombat 3 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Mortal Kombat 3 (Europe)",
+    "Mortal Kombat 3 (USA)",
+    "Mortal Kombat 3 (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\mortalkombat3_genesis.json",
+      "trigger_count": 3,
+      "field_names": [
+        "enemy_health",
+        "health"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xFFF865",
+        "0xFFF9D7"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MortalKombat3-Genesis-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "enemy_health",
+          "address": "0xFFF9D7",
+          "type": "|u1"
+        },
+        {
+          "name": "enemy_matches_won",
+          "address": "0xFFF9DD",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFFF865",
+          "type": "|u1"
+        },
+        {
+          "name": "matches_won",
+          "address": "0xFFF86B",
+          "type": "|u1"
+        },
+        {
+          "name": "wins",
+          "address": "0xFF0293",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Mortal Kombat 3 (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 15,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "FFF865:A6",
+          "desc": "Infinite Energy P1",
+          "address": "0xFFF865"
+        },
+        {
+          "code": "FFF9D7:A6",
+          "desc": "Infinite Energy P2",
+          "address": "0xFFF9D7"
+        },
+        {
+          "code": "FFF865:00",
+          "desc": "No Energy P1",
+          "address": "0xFFF865"
+        },
+        {
+          "code": "FFF9D7:00",
+          "desc": "No Energy P2",
+          "address": "0xFFF9D7"
+        },
+        {
+          "code": "FFF867:30",
+          "desc": "Infinite Run P1",
+          "address": "0xFFF867"
+        },
+        {
+          "code": "FFF9D9:30",
+          "desc": "Infinite Run P2",
+          "address": "0xFFF9D9"
+        },
+        {
+          "code": "FFF867:00",
+          "desc": "No Run P1",
+          "address": "0xFFF867"
+        },
+        {
+          "code": "FFF9D9:00",
+          "desc": "No Run P2",
+          "address": "0xFFF9D9"
+        },
+        {
+          "code": "FF000D:02",
+          "desc": "Cheat Option Menus Enabled",
+          "address": "0xFF000D"
+        },
+        {
+          "code": "FF000E:01",
+          "desc": "Cheat Option Menus Enabled",
+          "address": "0xFF000E"
+        },
+        {
+          "code": "FF000F:00",
+          "desc": "Cheat Option Menus Enabled",
+          "address": "0xFF000F"
+        },
+        {
+          "code": "FFF5A5:09",
+          "desc": "Infinite Time",
+          "address": "0xFFF5A5"
+        },
+        {
+          "code": "FF021A:63",
+          "desc": "Infinite Kredits",
+          "address": "0xFF021A"
+        },
+        {
+          "code": "FFF85B:A2",
+          "desc": "P1 Free Movement",
+          "address": "0xFFF85B"
+        },
+        {
+          "code": "FFF9CD:A2",
+          "desc": "P2 Free Movement",
+          "address": "0xFFF9CD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

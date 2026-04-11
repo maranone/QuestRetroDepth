@@ -1,0 +1,42 @@
+{
+  "system": "snes",
+  "normalized_title": "umiharakawase",
+  "display_name": "Umihara Kawase (Japan) (Action Replay)",
+  "aliases": [
+    "Umihara Kawase (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Umihara Kawase (Japan).cht",
+      "total_cheat_rows": 55,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7E040280",
+          "desc": "Jump Height Modifier",
+          "address": "0x7E0402"
+        },
+        {
+          "code": "7E025A99",
+          "desc": "Infinite Lives",
+          "address": "0x7E025A"
+        },
+        {
+          "code": "7E026E99",
+          "desc": "Infinite Time",
+          "address": "0x7E026E"
+        },
+        {
+          "code": "7E025B00",
+          "desc": "Level Select",
+          "address": "0x7E025B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

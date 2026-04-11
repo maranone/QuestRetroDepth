@@ -1,0 +1,9 @@
+game_name=Punisher
+game_key=Punisher-Genesis
+system=genesis
+integration_tier=stable
+trigger	damage_taken_health_ffa0d9	damage_taken	0xFFA0D9	1	int	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffa0d9	death	0xFFA0D9	1	int	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ffa141	life_lost	0xFFA141	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffa141	life_gained	0xFFA141	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ffc1f2	score	0xFFC1F2	4	uint	big	prev < curr	0.8	1	right:0.350:60

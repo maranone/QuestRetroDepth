@@ -1,0 +1,63 @@
+{
+  "system": "snes",
+  "normalized_title": "streetcombat",
+  "display_name": "Street Combat (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Street Combat (USA)",
+    "Street Combat (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Super Nintendo Entertainment System\\Street Combat (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7E114D68",
+          "desc": "Infinite Energy P1",
+          "address": "0x7E114D"
+        },
+        {
+          "code": "7E120568",
+          "desc": "Infinite Energy P2",
+          "address": "0x7E1205"
+        },
+        {
+          "code": "7E114D00",
+          "desc": "No Energy P1",
+          "address": "0x7E114D"
+        },
+        {
+          "code": "7E120500",
+          "desc": "No Energy P2",
+          "address": "0x7E1205"
+        },
+        {
+          "code": "7E62A902",
+          "desc": "1 Round To Win P1",
+          "address": "0x7E62A9"
+        },
+        {
+          "code": "7E62AB02",
+          "desc": "1 Round To Win P2",
+          "address": "0x7E62AB"
+        },
+        {
+          "code": "7E62A363",
+          "desc": "Infinite Credits",
+          "address": "0x7E62A3"
+        },
+        {
+          "code": "7E007E3C",
+          "desc": "Infinite Bonus Time",
+          "address": "0x7E007E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

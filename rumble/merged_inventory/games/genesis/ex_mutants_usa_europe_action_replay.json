@@ -1,0 +1,103 @@
+{
+  "system": "genesis",
+  "normalized_title": "exmutants",
+  "display_name": "Ex-Mutants (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Ex-Mutants (USA, Europe) (Action Replay)",
+    "Ex-Mutants (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\exmutants_genesis.json",
+      "trigger_count": 6,
+      "field_names": [
+        "ammo",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xFF005A",
+        "0xFF005C",
+        "0xFF006B",
+        "0xFF00A0"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ExMutants-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "ammo",
+          "address": "0xFF005C",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xFF005A",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xFF006B",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xFF00A0",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Ex-Mutants (USA, Europe).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF006B:0003",
+          "desc": "Unlimited Men",
+          "address": "0xFF006B"
+        },
+        {
+          "code": "FF005A:000C",
+          "desc": "Infinite Health",
+          "address": "0xFF005A"
+        },
+        {
+          "code": "FF005C:0063",
+          "desc": "Infinite Primary Weapon",
+          "address": "0xFF005C"
+        },
+        {
+          "code": "FF005C:0099",
+          "desc": "Infinite Secondary Weapon",
+          "address": "0xFF005C"
+        },
+        {
+          "code": "FF0068:0063",
+          "desc": "Max Money",
+          "address": "0xFF0068"
+        },
+        {
+          "code": "FF0071:0008",
+          "desc": "Continue",
+          "address": "0xFF0071"
+        },
+        {
+          "code": "FFB122:0009",
+          "desc": "Freeze Time Continue",
+          "address": "0xFFB122"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

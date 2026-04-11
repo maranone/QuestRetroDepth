@@ -1,0 +1,5 @@
+game_name=MegamanWillyWars
+game_key=MegamanWillyWars-Genesis
+system=genesis
+integration_tier=manual
+trigger	damage_taken_0_a3ff	damage_taken	0xFFA3FF	1	uint	native	prev > curr	0.85	1	left:0.750:180

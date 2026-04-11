@@ -1,0 +1,33 @@
+{
+  "system": "genesis",
+  "normalized_title": "olympicgold",
+  "display_name": "Olympic Gold (Japan, USA) (En,Fr,De,Es,It,Nl,Pt,Sv)",
+  "aliases": [
+    "Olympic Gold (Japan, USA) (En,Fr,De,Es,It,Nl,Pt,Sv)",
+    "Olympic Gold (World) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Olympic Gold (World) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "FFFDAD:XX",
+          "desc": "Archery Points Given Per Shot Modifier",
+          "address": "0xFFFDAD"
+        },
+        {
+          "code": "FFFD01:XX",
+          "desc": "Hurdles Speed Modifier P1",
+          "address": "0xFFFD01"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

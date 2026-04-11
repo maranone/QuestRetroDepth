@@ -1,0 +1,7 @@
+game_name=Rambo III (World) (Action Replay)
+game_key=RamboIII-Genesis
+system=genesis
+integration_tier=stable
+trigger	life_lost_lives_ffc103	life_lost	0xFFC103	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffc103	life_gained	0xFFC103	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ffc104	score	0xFFC104	3	bcd	big	prev < curr	0.8	1	right:0.350:60

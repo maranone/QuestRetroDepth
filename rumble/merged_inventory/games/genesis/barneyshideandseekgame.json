@@ -1,0 +1,51 @@
+{
+  "system": "genesis",
+  "normalized_title": "barneyshideandseekgame",
+  "display_name": "BarneysHideAndSeekGame",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\genesis\\stable\\barneyshideandseekgame_genesis.json",
+      "trigger_count": 1,
+      "field_names": [
+        "level"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xFFDBFB"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BarneysHideAndSeekGame-Genesis-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "kids_found",
+          "address": "0xFFDC08",
+          "type": "|u1"
+        },
+        {
+          "name": "kids_found_total",
+          "address": "0xFFDBFE",
+          "type": "|u1"
+        },
+        {
+          "name": "level",
+          "address": "0xFFDBFB",
+          "type": "|u1"
+        },
+        {
+          "name": "toys_found",
+          "address": "0xFFDBFC",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 4
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

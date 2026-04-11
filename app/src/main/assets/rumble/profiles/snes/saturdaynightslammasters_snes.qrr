@@ -1,0 +1,6 @@
+game_name=SaturdayNightSlamMasters
+game_key=SaturdayNightSlamMasters-Snes
+system=snes
+integration_tier=manual
+trigger	damage_taken_0_879	damage_taken	0x7E0879	1	uint	native	prev > curr	0.85	1	left:0.750:180
+trigger	damage_taken_1_a79	damage_taken	0x7E0A79	1	uint	native	prev > curr	0.85	1	left:0.750:180

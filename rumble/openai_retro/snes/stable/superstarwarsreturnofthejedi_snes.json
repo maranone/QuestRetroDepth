@@ -1,0 +1,404 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "SuperStarWarsReturnOfTheJedi",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "third_party\\openai-retro\\retro\\data\\stable\\SuperStarWarsReturnOfTheJedi-Snes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "SuperStarWarsReturnOfTheJedi-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_health_01b6",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E01B6",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "bank": "7E",
+          "address": "0x01B6",
+          "wram_offset": 438
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0x7E01B6",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_01b6",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0x7E01B6",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "bank": "7E",
+          "address": "0x01B6",
+          "wram_offset": 438
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0x7E01B6",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_lives_01b2",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0x7E01B2",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "bank": "7E",
+          "address": "0x01B2",
+          "wram_offset": 434
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x7E01B2",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_01b2",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0x7E01B2",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "bank": "7E",
+          "address": "0x01B2",
+          "wram_offset": 434
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x7E01B2",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "score_score0_01a0",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E01A0",
+          "size": 1,
+          "value_type": "nibble",
+          "byte_order": "native",
+          "raw_type": "|n1",
+          "bank": "7E",
+          "address": "0x01A0",
+          "wram_offset": 416
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score0",
+          "address": "0x7E01A0",
+          "raw_type": "|n1"
+        }
+      ]
+    },
+    {
+      "id": "score_score1_01a2",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E01A2",
+          "size": 1,
+          "value_type": "nibble",
+          "byte_order": "native",
+          "raw_type": "|n1",
+          "bank": "7E",
+          "address": "0x01A2",
+          "wram_offset": 418
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score1",
+          "address": "0x7E01A2",
+          "raw_type": "|n1"
+        }
+      ]
+    },
+    {
+      "id": "score_score2_01a4",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E01A4",
+          "size": 1,
+          "value_type": "nibble",
+          "byte_order": "native",
+          "raw_type": "|n1",
+          "bank": "7E",
+          "address": "0x01A4",
+          "wram_offset": 420
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score2",
+          "address": "0x7E01A4",
+          "raw_type": "|n1"
+        }
+      ]
+    },
+    {
+      "id": "score_score3_01a6",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E01A6",
+          "size": 1,
+          "value_type": "nibble",
+          "byte_order": "native",
+          "raw_type": "|n1",
+          "bank": "7E",
+          "address": "0x01A6",
+          "wram_offset": 422
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score3",
+          "address": "0x7E01A6",
+          "raw_type": "|n1"
+        }
+      ]
+    },
+    {
+      "id": "score_score4_01a8",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E01A8",
+          "size": 1,
+          "value_type": "nibble",
+          "byte_order": "native",
+          "raw_type": "|n1",
+          "bank": "7E",
+          "address": "0x01A8",
+          "wram_offset": 424
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score4",
+          "address": "0x7E01A8",
+          "raw_type": "|n1"
+        }
+      ]
+    },
+    {
+      "id": "score_score5_01aa",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E01AA",
+          "size": 1,
+          "value_type": "nibble",
+          "byte_order": "native",
+          "raw_type": "|n1",
+          "bank": "7E",
+          "address": "0x01AA",
+          "wram_offset": 426
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score5",
+          "address": "0x7E01AA",
+          "raw_type": "|n1"
+        }
+      ]
+    },
+    {
+      "id": "score_score6_01ac",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E01AC",
+          "size": 1,
+          "value_type": "nibble",
+          "byte_order": "native",
+          "raw_type": "|n1",
+          "bank": "7E",
+          "address": "0x01AC",
+          "wram_offset": 428
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score6",
+          "address": "0x7E01AC",
+          "raw_type": "|n1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

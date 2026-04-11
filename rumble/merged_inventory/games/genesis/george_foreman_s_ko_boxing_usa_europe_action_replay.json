@@ -1,0 +1,57 @@
+{
+  "system": "genesis",
+  "normalized_title": "georgeforemanskoboxing",
+  "display_name": "George Foreman's KO Boxing (USA, Europe) (Action Replay)",
+  "aliases": [
+    "George Foreman's KO Boxing (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\George Foreman's KO Boxing (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "FF819E:40",
+          "desc": "Infinite Energy P1",
+          "address": "0xFF819E"
+        },
+        {
+          "code": "FF821E:40",
+          "desc": "Infinite Energy P2 Or CPU",
+          "address": "0xFF821E"
+        },
+        {
+          "code": "FF821E:00",
+          "desc": "No Energy P2 Or CPU",
+          "address": "0xFF821E"
+        },
+        {
+          "code": "FFF0E8:02",
+          "desc": "Infinite Time",
+          "address": "0xFFF0E8"
+        },
+        {
+          "code": "FFF0E9:05",
+          "desc": "Infinite Time",
+          "address": "0xFFF0E9"
+        },
+        {
+          "code": "FFF0EA:09",
+          "desc": "Infinite Time",
+          "address": "0xFFF0EA"
+        },
+        {
+          "code": "FF81A1:08",
+          "desc": "Infinite Power Punches",
+          "address": "0xFF81A1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "system": "genesis",
+  "normalized_title": "masterofmonsters",
+  "display_name": "Master of Monsters (USA, Japan) (Action Replay)",
+  "aliases": [
+    "Master of Monsters (USA, Japan) (Action Replay)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Mega Drive - Genesis\\Master of Monsters (USA, Japan) (Action Replay).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "FF212E:FF",
+          "desc": "Max Blue Magic",
+          "address": "0xFF212E"
+        },
+        {
+          "code": "FF212F:FF",
+          "desc": "Max Red Magic",
+          "address": "0xFF212F"
+        },
+        {
+          "code": "FF2130:FF",
+          "desc": "Max Green Magic",
+          "address": "0xFF2130"
+        },
+        {
+          "code": "FF2131:FF",
+          "desc": "Max Yellow Magic",
+          "address": "0xFF2131"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}
