@@ -5,6 +5,7 @@
 
 enum class PanelKind {
     MainMenu,
+    QuickEdit,
     Browser,
     Layers,
     Settings,
@@ -26,6 +27,18 @@ enum class PanelRole {
     SaveAutosaveOption,
     SaveAutoloadOption,
     Key,
+    CodeCancel,
+    CodeSpace,
+    CodeConfirm,
+    QuickSettingsPreset,
+    QuickSettingsSave,
+    QuickLayersPreset,
+    QuickLayersSave,
+    QuickResetSettings,
+    QuickResetLayers,
+    QuickManualEdit,
+    QuickManualVisual,
+    QuickManualLayers,
 };
 
 struct PanelMetrics {
@@ -63,6 +76,7 @@ struct PanelLayout {
 
 PanelMetrics panel_metrics(PanelKind kind);
 PanelLayout make_main_menu_layout(int item_count);
+PanelLayout make_quick_edit_layout(int settings_preset_count, int layer_preset_count);
 PanelLayout make_browser_layout(int visible_count, int scroll_offset);
 PanelLayout make_layers_layout(int layer_count, bool has_filter_row);
 PanelLayout make_settings_layout(int row_count);

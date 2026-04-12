@@ -115,13 +115,13 @@ private:
                                     Profile& profile_out,
                                     std::string& error_out);
 
-    bool m_enabled = false;
+    bool m_enabled = true;
     uint64_t m_frame_counter = 0;
     std::vector<CatalogEntry> m_catalog;
     bool m_catalog_loaded = false;
     bool m_has_active_profile = false;
     std::string m_user_root;
-    std::string m_active_status = "OFF";
+    std::string m_active_status = "ON";
     Profile m_active_profile;
 };
 

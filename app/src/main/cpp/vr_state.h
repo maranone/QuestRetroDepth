@@ -10,8 +10,8 @@
 // -----------------------------------------------------------------------
 struct VrState {
     // Color grading
-    float gamma      = 1.15f;
-    float contrast   = 0.90f;
+    float gamma      = 1.08f;
+    float contrast   = 1.05f;
     float saturation = 0.80f;
     float brightness = 1.00f;
 
@@ -129,20 +129,20 @@ inline std::vector<VrState> make_default_vr_presets() {
     std::vector<VrState> presets(5);
 
     // Preset 0: Balanced
-    presets[0].gamma = 1.15f; presets[0].contrast = 0.90f; presets[0].saturation = 0.80f;
+    presets[0].gamma = 1.15f; presets[0].contrast = 1.05f; presets[0].saturation = 0.80f;
 
     // Preset 1: Compressed depth, wider layers
-    presets[1].gamma = 1.10f; presets[1].contrast = 0.88f; presets[1].saturation = 0.75f;
+    presets[1].gamma = 1.10f; presets[1].contrast = 1.05f; presets[1].saturation = 0.75f;
 
     // Preset 2: Exaggerated depth
-    presets[2].gamma = 1.20f; presets[2].contrast = 0.95f; presets[2].saturation = 0.85f;
+    presets[2].gamma = 1.20f; presets[2].contrast = 1.05f; presets[2].saturation = 0.85f;
 
     // Preset 3: 3-D layers + solid extrusion
-    presets[3].gamma = 1.18f; presets[3].contrast = 1.00f; presets[3].saturation = 0.82f;
+    presets[3].gamma = 1.18f; presets[3].contrast = 1.05f; presets[3].saturation = 0.82f;
     presets[3].layers_3d = true;
 
     // Preset 4: Crisp upscale + ambilight
-    presets[4].gamma = 1.05f; presets[4].contrast = 1.10f; presets[4].saturation = 1.00f;
+    presets[4].gamma = 1.05f; presets[4].contrast = 1.05f; presets[4].saturation = 1.00f;
     presets[4].upscale = true; presets[4].ambilight = true;
 
     return presets;

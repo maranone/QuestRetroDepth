@@ -85,10 +85,44 @@ static int next_autosave_interval_seconds(int current) {
 }
 
 static std::string compact_settings_target(std::string name, std::size_t max_len = 18) {
+    for (char& c : name) {
+        const unsigned char uc = static_cast<unsigned char>(c);
+        if (uc < 32 || uc >= 127) c = '?';
+    }
     while (!name.empty() && name.back() == ' ') name.pop_back();
     if (name.size() <= max_len) return name;
     if (max_len <= 3) return name.substr(0, max_len);
     return name.substr(0, max_len - 3) + "...";
+}
+
+static std::string sanitize_ascii_label(std::string text) {
+    for (char& c : text) {
+        const unsigned char uc = static_cast<unsigned char>(c);
+        if (uc < 32 || uc >= 127) c = ' ';
+    }
+    std::size_t a = 0;
+    while (a < text.size() && std::isspace((unsigned char)text[a])) ++a;
+    std::size_t b = text.size();
+    while (b > a && std::isspace((unsigned char)text[b - 1])) --b;
+    text = text.substr(a, b - a);
+    return text.empty() ? "Unknown" : text;
+}
+
+static std::string sanitize_ascii_filename(std::string text) {
+    for (char& c : text) {
+        const unsigned char uc = static_cast<unsigned char>(c);
+        if (uc < 32 || uc >= 127 ||
+            c == '/' || c == '\\' || c == ':' || c == '*' || c == '?' ||
+            c == '"' || c == '<' || c == '>' || c == '|') {
+            c = '_';
+        }
+    }
+    std::size_t a = 0;
+    while (a < text.size() && std::isspace((unsigned char)text[a])) ++a;
+    std::size_t b = text.size();
+    while (b > a && std::isspace((unsigned char)text[b - 1])) --b;
+    text = text.substr(a, b - a);
+    return text.empty() ? "Unknown" : text;
 }
 
 static std::string format_save_state_timestamp(std::time_t ts) {
@@ -432,7 +466,7 @@ static HelpModel build_help_model(bool menu_open,
     HelpModel model;
     if (edit_mode) {
         model.title = "Edit controls";
-        add_help(model, "Left thumbstick click", "Leave edit mode and open Layers. Click it again in Layers to return to the game.");
+        add_help(model, "Left thumbstick click", "Leave manual edit and return to the game.");
         add_help(model, "Left controller aim", "Move the canvas left, right, up, and down.");
         add_help(model, "Right controller aim", "Rotate and reposition the canvas around you.");
         add_help(model, "Right stick X", "Change layer depth spread. Right is more spread, left is less spread.");
@@ -447,6 +481,15 @@ static HelpModel build_help_model(bool menu_open,
         return model;
     }
 
+    if (!menu_open && active_sub_panel == 7) {
+        model.title = "Quick edit controls";
+        add_help(model, "Right controller aim", "Point at a quick settings, layers, or manual button.");
+        add_help(model, "Right trigger", "Apply the pointed preset or open the pointed manual editor.");
+        add_help(model, "Left thumbstick click", "Close the quick edit panel and return to the game.");
+        add_help(model, "Left menu button", "Open the main menu.");
+        return model;
+    }
+
     if (!menu_open && active_sub_panel == 2) {
         model.title = "Layer controls";
         add_help(model, "Right controller aim", "Point at a layer row or action row.");
@@ -456,6 +499,17 @@ static HelpModel build_help_model(bool menu_open,
         add_help(model, "Play/Pause row", "Freeze or resume the emulator while editing layers.");
         add_help(model, "Auto Dup row", "Cycle automatic duplicate depth percentages.");
         add_help(model, "Layer Filter row", "Cycle the layer extraction mode when available.");
+        add_help(model, "Left thumbstick click", "Return to the game.");
+        add_help(model, "Left menu button", "Open the main menu.");
+        return model;
+    }
+
+    if (!menu_open && active_sub_panel == 3) {
+        model.title = "Settings controls";
+        add_help(model, "Right controller aim", "Point at a setting or action row.");
+        add_help(model, "Right trigger", "Toggle bool rows or press the pointed minus, plus, or action zone.");
+        add_help(model, "Hold right trigger + right stick X", "Continuously adjust numeric rows.");
+        add_help(model, "Back row", "Return to the quick edit panel when opened from Quick Edit.");
         add_help(model, "Left thumbstick click", "Return to the game.");
         add_help(model, "Left menu button", "Open the main menu.");
         return model;
@@ -542,7 +596,7 @@ static HelpModel build_help_model(bool menu_open,
     model.title = backend_kind == BackendKind::Genesis ? "Genesis game controls" : "SNES game controls";
     add_mapped_game_controls(model, backend_kind, button_map);
     add_help(model, "Right stick directions", "Also act as D-pad directions unless those right-stick directions are remapped.");
-    add_help(model, "Left thumbstick click", "Enter edit mode.");
+    add_help(model, "Left thumbstick click", "Open quick edit.");
     add_help(model, "Left menu button", "Open the main menu.");
     add_help(model, "Right stick click", "Recenter the screen to your current view.");
     return model;
@@ -1009,6 +1063,256 @@ static std::string copy_count_status_text(const GameConfig& config,
         + std::to_string(auto_dup_percent) + "% (far " + std::to_string(far) + ")";
 }
 
+static std::vector<OpenXrShell::QuickSettingsPreset> make_quick_settings_presets() {
+    using Preset = OpenXrShell::QuickSettingsPreset;
+    return {
+        Preset{"Arcade Close", 0.0f, 0.0f, 0.0f, 0.02f, 1.00f, 0.92f, 1.42f, 2.45f, 8,
+               false, false, true, false, false, false, 1.12f, 0.92f, 0.82f, 1.00f},
+        Preset{"Cinema Wide", 0.0f, 0.0f, 0.0f, 0.06f, 1.35f, 1.15f, 1.90f, 3.15f, 10,
+               false, true, true, false, false, false, 1.06f, 1.04f, 0.92f, 1.02f},
+        Preset{"Depth Punch", 0.0f, 0.0f, 0.0f, 0.00f, 1.08f, 0.78f, 2.35f, 2.70f, 14,
+               true, false, true, false, true, true, 1.18f, 0.98f, 0.86f, 1.00f},
+        Preset{"Lounge Right", 0.32f, 0.0f, 0.28f, -0.05f, 0.96f, 1.05f, 1.70f, 2.55f, 7,
+               false, false, false, true, false, false, 1.10f, 0.90f, 0.76f, 0.98f},
+        Preset{"Poster Left", -0.38f, 0.0f, -0.34f, 0.10f, 0.88f, 1.00f, 1.55f, 2.35f, 6,
+               false, true, true, false, false, false, 1.03f, 1.08f, 0.95f, 1.04f},
+    };
+}
+
+static std::string trim_copy(const std::string& s) {
+    std::size_t a = 0;
+    while (a < s.size() && std::isspace((unsigned char)s[a])) ++a;
+    std::size_t b = s.size();
+    while (b > a && std::isspace((unsigned char)s[b - 1])) --b;
+    return s.substr(a, b - a);
+}
+
+static std::string sanitize_preset_name(const std::string& s, const std::string& fallback) {
+    std::string out = trim_copy(s);
+    for (char& c : out) {
+        if ((unsigned char)c < 32 || c == '=' || c == '\n' || c == '\r') c = ' ';
+    }
+    out = trim_copy(out);
+    return out.empty() ? fallback : out;
+}
+
+static std::string escape_preset_signature(const std::string& s) {
+    std::string out;
+    out.reserve(s.size());
+    for (unsigned char c : s) {
+        if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') ||
+            (c >= '0' && c <= '9') || c == '_' || c == '-' || c == '.') {
+            out.push_back((char)c);
+        } else {
+            out.push_back('_');
+        }
+    }
+    return out.empty() ? "default" : out;
+}
+
+static std::string quick_settings_presets_path(const std::string& root_dir);
+static std::string quick_layers_presets_dir(const std::string& root_dir, BackendKind kind);
+static std::string quick_layer_presets_path(const std::string& root_dir, BackendKind kind, const std::string& signature);
+static void write_quick_settings_presets_file(const std::string& path,
+                                              const std::vector<OpenXrShell::QuickSettingsPreset>& presets);
+static void load_quick_settings_presets_file(const std::string& path,
+                                             std::vector<OpenXrShell::QuickSettingsPreset>& presets);
+static void write_quick_layer_presets_file(const std::string& path,
+                                           const std::vector<OpenXrShell::QuickLayerPreset>& presets);
+static void load_quick_layer_presets_file(const std::string& path,
+                                          std::vector<OpenXrShell::QuickLayerPreset>& presets);
+static OpenXrShell::QuickLayerPreset make_default_quick_layer_preset(const GameConfig& config);
+
+static std::string quick_layer_signature(BackendKind backend_kind,
+                                         LayerFilterMode filter_mode,
+                                         const GameConfig& config) {
+    std::string sig = backend_kind == BackendKind::Genesis ? "genesis" : "snes";
+    if (backend_kind == BackendKind::Snes) {
+        sig += ":";
+        sig += layer_filter_mode_label(filter_mode);
+    }
+    sig += ":";
+    for (const auto& layer : config.layers) {
+        sig += layer.id;
+        sig += "|";
+    }
+    return sig;
+}
+
+static std::vector<OpenXrShell::QuickLayerPreset> make_quick_layer_presets_for_signature(
+    const std::string& signature, const GameConfig& config) {
+    using Preset = OpenXrShell::QuickLayerPreset;
+    const Preset default_preset = make_default_quick_layer_preset(config);
+    if (signature.rfind("genesis:", 0) == 0) {
+        return {
+            default_preset,
+            {"Sprites Pop",
+             {"sprites_high","sprites_low","plane_a_high","plane_a_low","plane_b_high","plane_b_low","background"},
+             {true,true,true,true,true,true,true},
+             {true,true,false,false,false,false,false}},
+            {"Backdrop Calm",
+             {"plane_a_high","sprites_high","plane_a_low","sprites_low","plane_b_high","plane_b_low","background"},
+             {true,true,true,true,true,true,true},
+             {true,false,true,false,false,false,true}},
+            {"Foreground Focus",
+             {"sprites_high","plane_a_high","sprites_low","plane_a_low","plane_b_high","plane_b_low","background"},
+             {true,true,true,true,false,false,true},
+             {true,true,false,false,false,false,false}},
+            {"Minimal Mix",
+             {"sprites_high","sprites_low","plane_a_high","plane_a_low","plane_b_high","plane_b_low","background"},
+             {true,true,true,false,false,false,false},
+             {false,false,false,false,false,false,false}},
+        };
+    }
+    if (signature.find("snes:HYBRID:") == 0) {
+        return {
+            default_preset,
+            {"Character Focus",
+             {"pc_obj","pc_bg1","pc_bg3","pc_bg2","pc_bg4","backdrop"},
+             {true,true,true,true,true,true},
+             {true,false,true,false,false,false}},
+            {"Backdrop Heavy",
+             {"pc_bg1","pc_obj","pc_bg2","pc_bg3","pc_bg4","backdrop"},
+             {true,true,true,true,true,true},
+             {true,true,false,false,false,true}},
+            {"Foreground Clean",
+             {"pc_obj","pc_bg1","pc_bg2","pc_bg3","pc_bg4","backdrop"},
+             {true,true,true,false,false,true},
+             {true,false,false,false,false,false}},
+            {"Minimal Mix",
+             {"pc_obj","pc_bg1","pc_bg3","backdrop","pc_bg2","pc_bg4"},
+             {true,true,true,false,false,false},
+             {false,false,false,false,false,false}},
+        };
+    }
+    if (signature.find("snes:PER:") == 0) {
+        return {
+            default_preset,
+            {"Sprites + FG",
+             {"pc_obj","pc_bg1","pc_bg2","pc_bg3","pc_bg4"},
+             {true,true,true,false,false},
+             {true,true,false,false,false}},
+            {"Layer Study",
+             {"pc_bg4","pc_bg3","pc_bg2","pc_bg1","pc_obj"},
+             {true,true,true,true,true},
+             {false,false,false,false,false}},
+            {"OBJ Punch",
+             {"pc_obj","pc_bg2","pc_bg1","pc_bg3","pc_bg4"},
+             {true,true,true,true,true},
+             {true,false,false,false,false}},
+            {"Background Only",
+             {"pc_bg1","pc_bg2","pc_bg3","pc_bg4","pc_obj"},
+             {true,true,true,true,false},
+             {false,false,false,false,false}},
+        };
+    }
+    if (signature.find("snes:Z:") == 0) {
+        return {
+            default_preset,
+            {"Sprite Front",
+             {"sprite_p3","sprite_p2","bg0_hi","bg1_hi","sprite_p1","bg0_lo","bg1_lo","bg_far_hi","sprite_p0","bg_far_lo","backdrop"},
+             {true,true,true,true,true,true,true,true,true,true,true},
+             {true,true,false,false,false,false,false,false,false,false,false}},
+            {"Background Sweep",
+             {"bg0_hi","bg1_hi","bg0_lo","bg1_lo","bg_far_hi","bg_far_lo","sprite_p3","sprite_p2","sprite_p1","sprite_p0","backdrop"},
+             {true,true,true,true,true,true,true,true,true,true,true},
+             {true,true,true,true,true,true,false,false,false,false,true}},
+            {"Sprite Study",
+             {"sprite_p3","sprite_p2","sprite_p1","sprite_p0","bg0_hi","bg1_hi","bg0_lo","bg1_lo","bg_far_hi","bg_far_lo","backdrop"},
+             {true,true,true,true,true,true,false,false,false,false,true},
+             {false,false,false,false,false,false,false,false,false,false,false}},
+            {"Flat Backdrop",
+             {"bg0_hi","bg1_hi","sprite_p3","sprite_p2","bg0_lo","bg1_lo","sprite_p1","bg_far_hi","sprite_p0","bg_far_lo","backdrop"},
+             {true,true,true,true,true,true,true,true,true,true,true},
+             {false,false,false,false,false,false,false,false,false,false,true}},
+        };
+    }
+    if (signature.find("snes:SHOW ALL:") == 0) {
+        return {
+            {"Discovery Default",
+             {"sprite_p3","bg0_hi","bg1_hi","sprite_p2","bg0_lo","bg1_lo","sprite_p1","bg_far_hi","sprite_p0","bg_far_lo","backdrop","pc_obj","pc_bg1","pc_bg2","pc_bg3","pc_bg4"},
+             {true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false},
+             {true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false}},
+            {"Capture Compare",
+             {"pc_obj","pc_bg1","pc_bg2","pc_bg3","pc_bg4","sprite_p3","bg0_hi","bg1_hi","sprite_p2","bg0_lo","bg1_lo","sprite_p1","bg_far_hi","sprite_p0","bg_far_lo","backdrop"},
+             {true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true},
+             {false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false}},
+            {"Sprite Reveal",
+             {"pc_obj","sprite_p3","sprite_p2","sprite_p1","sprite_p0","bg0_hi","bg1_hi","bg0_lo","bg1_lo","bg_far_hi","bg_far_lo","backdrop","pc_bg1","pc_bg2","pc_bg3","pc_bg4"},
+             {true,true,true,true,true,true,true,true,true,true,true,true,false,false,false,false},
+             {true,true,true,true,true,false,false,false,false,false,false,false,false,false,false,false}},
+            {"Background Survey",
+             {"pc_bg1","pc_bg2","pc_bg3","pc_bg4","bg0_hi","bg1_hi","bg0_lo","bg1_lo","bg_far_hi","bg_far_lo","backdrop","pc_obj","sprite_p3","sprite_p2","sprite_p1","sprite_p0"},
+             {true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false},
+             {true,true,true,true,true,true,true,true,true,true,true,false,false,false,false,false}},
+            {"Minimal All",
+             {"sprite_p3","bg0_hi","bg1_hi","bg0_lo","bg1_lo","backdrop","pc_obj","pc_bg1","pc_bg2","pc_bg3","pc_bg4","sprite_p2","sprite_p1","sprite_p0","bg_far_hi","bg_far_lo"},
+             {true,true,true,true,true,true,true,true,false,false,false,false,false,false,false,false},
+             {false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false}},
+        };
+    }
+    return {};
+}
+
+static OpenXrShell::QuickLayerPreset make_default_quick_layer_preset(const GameConfig& config) {
+    OpenXrShell::QuickLayerPreset preset;
+    preset.name = "Default";
+    const std::vector<int> order = default_layer_order_for_config(config);
+    preset.ordered_ids.reserve(order.size());
+    preset.enabled.reserve(order.size());
+    preset.ambilight.reserve(order.size());
+    for (const int layer_idx : order) {
+        if (layer_idx < 0 || layer_idx >= (int)config.layers.size()) continue;
+        const LayerConfig& layer = config.layers[layer_idx];
+        preset.ordered_ids.push_back(layer.id);
+        preset.enabled.push_back(layer.default_enabled);
+        preset.ambilight.push_back(layer.default_ambilight);
+    }
+    return preset;
+}
+
+static OpenXrShell::QuickSettingsPreset make_default_quick_settings_preset(const GameConfig& config) {
+    OpenXrShell::QuickSettingsPreset preset;
+    preset.name = "Default";
+    preset.canvas_x = 0.0f;
+    preset.canvas_y = 0.0f;
+    preset.canvas_az = 0.0f;
+    preset.canvas_el = 0.0f;
+    preset.canvas_scale = 1.0f;
+    preset.gamma = 1.1f;
+    preset.contrast = 1.1f;
+    preset.saturation = 0.7f;
+    preset.brightness = 1.0f;
+
+    if (!config.layers.empty()) {
+        float near_depth = config.layers[0].depth_meters;
+        float far_depth = config.layers[0].depth_meters;
+        float quad_width = config.layers[0].quad_width_meters;
+        for (const auto& layer : config.layers) {
+            near_depth = std::min(near_depth, layer.depth_meters);
+            far_depth = std::max(far_depth, layer.depth_meters);
+            quad_width = layer.quad_width_meters;
+        }
+        preset.near_depth = near_depth;
+        preset.far_depth = far_depth;
+        preset.quad_width = quad_width;
+    }
+
+    const std::vector<int> default_order = default_layer_order_for_config(config);
+    preset.copy_count = current_base_copy_count(config, default_order);
+    return preset;
+}
+
+static void refresh_default_quick_settings_preset(BackendKind kind,
+                                                  const GameConfig& config,
+                                                  std::vector<OpenXrShell::QuickSettingsPreset>& presets) {
+    if (kind != BackendKind::Snes && kind != BackendKind::Genesis) return;
+    if (presets.empty()) {
+        presets = make_quick_settings_presets();
+    }
+    presets[0] = make_default_quick_settings_preset(config);
+}
+
 static bool try_decode_snes_state_code(const std::string& raw,
                                        VrState& vs,
                                        LayerFilterMode& mode_out,
@@ -1130,6 +1434,28 @@ std::string OpenXrShell::status() const {
 void OpenXrShell::randomize()      { m_randomize_pending = true; }
 void OpenXrShell::load_preset(int i) { m_preset_load_pending = i; }
 void OpenXrShell::save_preset(int i) { m_preset_save_pending = i; }
+void OpenXrShell::request_quick_settings_preset_save(int i) { m_quick_settings_save_request_pending = i; }
+void OpenXrShell::request_quick_layer_preset_save(int i) { m_quick_layers_save_request_pending = i; }
+void OpenXrShell::submit_quick_preset_name(int kind, int slot, const std::string& name) {
+    {
+        std::lock_guard<std::mutex> lk(m_mutex);
+        m_quick_named_save_name = name;
+    }
+    m_quick_named_save_slot_pending = slot;
+    m_quick_named_save_kind_pending = kind;
+}
+void OpenXrShell::cancel_quick_preset_name(int, int) {
+    m_quick_preset_dialog_open = false;
+    m_pending_quick_preset_kind = -1;
+    m_pending_quick_preset_slot = -1;
+}
+
+namespace {
+constexpr int k_code_panel_title_cancel_id = 100;
+constexpr int k_code_panel_title_space_id = 101;
+constexpr int k_code_panel_title_confirm_id = 102;
+constexpr int k_quick_name_max_len = 24;
+}
 
 std::string OpenXrShell::vr_state_summary() const {
     std::lock_guard<std::mutex> lk(m_mutex);
@@ -1208,6 +1534,7 @@ void OpenXrShell::apply_layer_filter_mode(LayerFilterMode mode, bool restore_sav
     ensure_layer_runtime_state_matches_config(
         m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     sync_layer_capture_mask();
+    refresh_quick_layer_presets();
     m_layer_panel_dirty = true;
 }
 
@@ -1234,6 +1561,16 @@ bool OpenXrShell::start(JavaVM* vm, JNIEnv* env, jobject activity, bool open_men
     m_saved_layer_mode_state.valid = false;
     m_config      = default_config_for_backend(m_current_backend_kind, m_layer_filter_mode);
     m_presets     = make_default_vr_presets();
+    m_quick_settings_presets = make_quick_settings_presets();
+    {
+        const std::string root_dir = get_settings_dir();
+        if (!root_dir.empty()) {
+            load_quick_settings_presets_file(quick_settings_presets_path(root_dir), m_quick_settings_presets);
+        }
+    }
+    refresh_default_quick_settings_preset(m_current_backend_kind, m_config, m_quick_settings_presets);
+    m_quick_layer_presets = make_quick_layer_presets_for_signature(
+        quick_layer_signature(m_current_backend_kind, m_layer_filter_mode, m_config), m_config);
     m_button_map  = default_button_map_for_backend(m_current_backend_kind);
     m_autosave_interval_seconds = autosave_interval_seconds;
     m_load_last_save_enabled = load_last_save_enabled;
@@ -2368,19 +2705,25 @@ void OpenXrShell::rebuild_code_panel_texture() {
     }
     if (!env) return;
 
-    // Generate current share code for display
-    const int filter_mode = is_snes_filter_capable_config(m_config) ? (int)m_layer_filter_mode : -1;
-    std::string current_code = vr_state_encode(
-        m_vr_state, &m_config, &m_layer_order, &m_layer_enabled, &m_layer_ambilight, filter_mode);
+    const int panel_mode = m_code_panel_quick_name_mode ? 1 : 0;
+    std::string secondary_text;
+    if (m_code_panel_quick_name_mode) {
+        const char* kind_label = m_pending_quick_preset_kind == 0 ? "Settings" : "Layers";
+        secondary_text = std::string(kind_label) + " Slot " + std::to_string(m_pending_quick_preset_slot + 1);
+    } else {
+        const int filter_mode = is_snes_filter_capable_config(m_config) ? (int)m_layer_filter_mode : -1;
+        secondary_text = vr_state_encode(
+            m_vr_state, &m_config, &m_layer_order, &m_layer_enabled, &m_layer_ambilight, filter_mode);
+    }
 
     const PanelMetrics metrics = panel_metrics(PanelKind::Code);
     m_code_panel_layout = make_code_layout();
 
     jstring j_input   = env->NewStringUTF(m_code_input_buf.c_str());
-    jstring j_current = env->NewStringUTF(current_code.c_str());
+    jstring j_current = env->NewStringUTF(secondary_text.c_str());
     jclass  cls       = env->GetObjectClass(m_activity_global);
     jmethodID mid     = env->GetMethodID(cls, "renderCodePanelBitmap",
-                                          "(Ljava/lang/String;Ljava/lang/String;III)[I");
+                                          "(ILjava/lang/String;Ljava/lang/String;III)[I");
     env->DeleteLocalRef(cls);
     if (!mid) {
         env->ExceptionClear();
@@ -2391,7 +2734,7 @@ void OpenXrShell::rebuild_code_panel_texture() {
     }
 
     auto pixels = (jintArray)env->CallObjectMethod(
-        m_activity_global, mid, j_input, j_current, (jint)m_code_panel_hovered,
+        m_activity_global, mid, (jint)panel_mode, j_input, j_current, (jint)m_code_panel_hovered,
         (jint)metrics.tex_w, (jint)metrics.tex_h);
     env->DeleteLocalRef(j_input);
     env->DeleteLocalRef(j_current);
@@ -2664,6 +3007,87 @@ void OpenXrShell::rebuild_main_menu_texture() {
     if (detach) m_vm->DetachCurrentThread();
 }
 
+void OpenXrShell::rebuild_quick_edit_panel_texture() {
+    if (!m_vm || !m_activity_global) return;
+
+    JNIEnv* env = nullptr;
+    bool detach = false;
+    if (m_vm->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6) == JNI_EDETACHED) {
+        if (m_vm->AttachCurrentThread(&env, nullptr) == JNI_OK) detach = true;
+    }
+    if (!env) return;
+
+    constexpr int k_visible_layer_presets = 5;
+    const PanelMetrics metrics = panel_metrics(PanelKind::QuickEdit);
+    m_quick_panel_layout = make_quick_edit_layout((int)m_quick_settings_presets.size(),
+                                                  (int)m_quick_layer_presets.size());
+
+    jclass str_cls = env->FindClass("java/lang/String");
+    jobjectArray settings_arr = env->NewObjectArray((jsize)m_quick_settings_presets.size(), str_cls, nullptr);
+    for (int i = 0; i < (int)m_quick_settings_presets.size(); ++i) {
+        jstring js = env->NewStringUTF(m_quick_settings_presets[i].name.c_str());
+        env->SetObjectArrayElement(settings_arr, i, js);
+        env->DeleteLocalRef(js);
+    }
+
+    jobjectArray layers_arr = env->NewObjectArray(k_visible_layer_presets, str_cls, nullptr);
+    jbooleanArray enabled_arr = env->NewBooleanArray(k_visible_layer_presets);
+    std::vector<jboolean> enabled(k_visible_layer_presets, JNI_FALSE);
+    for (int i = 0; i < k_visible_layer_presets; ++i) {
+        std::string label = "Unavailable";
+        if (i < (int)m_quick_layer_presets.size() && !m_quick_layer_presets[i].name.empty()) {
+            label = m_quick_layer_presets[i].name;
+            enabled[i] = JNI_TRUE;
+        }
+        jstring js = env->NewStringUTF(label.c_str());
+        env->SetObjectArrayElement(layers_arr, i, js);
+        env->DeleteLocalRef(js);
+    }
+    env->SetBooleanArrayRegion(enabled_arr, 0, k_visible_layer_presets, enabled.data());
+    env->DeleteLocalRef(str_cls);
+
+    int hovered_settings_load = -1;
+    int hovered_settings_save = -1;
+    int hovered_layers_load = -1;
+    int hovered_layers_save = -1;
+    int hovered_action = -1;
+    if (m_laser_panel == k_panel_quick_edit && m_laser_hit_has_item) {
+        switch (m_laser_hit_item.role) {
+            case PanelRole::QuickSettingsPreset: hovered_settings_load = m_laser_hit_item.id; break;
+            case PanelRole::QuickSettingsSave: hovered_settings_save = m_laser_hit_item.id; break;
+            case PanelRole::QuickLayersPreset: hovered_layers_load = m_laser_hit_item.id; break;
+            case PanelRole::QuickLayersSave: hovered_layers_save = m_laser_hit_item.id; break;
+            case PanelRole::QuickResetSettings: hovered_action = 0; break;
+            case PanelRole::QuickManualEdit: hovered_action = 1; break;
+            case PanelRole::QuickManualVisual: hovered_action = 2; break;
+            case PanelRole::QuickResetLayers: hovered_action = 3; break;
+            case PanelRole::QuickManualLayers: hovered_action = 4; break;
+            default: break;
+        }
+    }
+
+    std::vector<jvalue> args;
+    jvalue a; a.l = layers_arr; args.push_back(a);
+    jvalue b; b.l = enabled_arr; args.push_back(b);
+    jvalue c; c.i = hovered_settings_load; args.push_back(c);
+    jvalue d; d.i = hovered_settings_save; args.push_back(d);
+    jvalue e; e.i = hovered_layers_load; args.push_back(e);
+    jvalue f; f.i = hovered_layers_save; args.push_back(f);
+    jvalue g; g.i = hovered_action; args.push_back(g);
+    jvalue h; h.i = metrics.tex_w; args.push_back(h);
+    jvalue i; i.i = metrics.tex_h; args.push_back(i);
+
+    rebuild_panel_tex(m_vm, m_activity_global,
+                      "renderQuickEditPanelBitmap", settings_arr, args,
+                      "([Ljava/lang/String;[Ljava/lang/String;[ZIIIIIII)[I",
+                      metrics.tex_w, metrics.tex_h, m_quick_panel_tex, m_quick_panel_dirty);
+
+    env->DeleteLocalRef(settings_arr);
+    env->DeleteLocalRef(layers_arr);
+    env->DeleteLocalRef(enabled_arr);
+    if (detach) m_vm->DetachCurrentThread();
+}
+
 // ============================================================
 // Settings persistence
 // ============================================================
@@ -2711,10 +3135,7 @@ void OpenXrShell::set_current_rom(const std::string& rom_filename) {
     m_current_rom_name = rom_filename;
     auto dot = m_current_rom_name.rfind('.');
     if (dot != std::string::npos) m_current_rom_name = m_current_rom_name.substr(0, dot);
-    // Sanitize: replace characters that are invalid in filenames
-    for (auto& c : m_current_rom_name)
-        if (c == '/' || c == '\\' || c == ':' || c == '*' || c == '?' || c == '"' || c == '<' || c == '>' || c == '|')
-            c = '_';
+    m_current_rom_name = sanitize_ascii_filename(m_current_rom_name);
     m_current_game_name.clear();
     refresh_save_state_slots();
     m_save_state_panel_dirty = true;
@@ -2729,6 +3150,7 @@ void OpenXrShell::set_current_backend_kind(BackendKind kind) {
         m_layer_filter_mode = LayerFilterMode::Hybrid;
     }
     m_config = default_config_for_backend(kind, m_layer_filter_mode);
+    refresh_default_quick_settings_preset(m_current_backend_kind, m_config, m_quick_settings_presets);
     m_button_map = default_button_map_for_backend(kind);
     m_saved_layer_mode_state.valid = false;
     m_layer_order.clear();
@@ -2737,6 +3159,7 @@ void OpenXrShell::set_current_backend_kind(BackendKind kind) {
     ensure_layer_runtime_state_matches_config(
         m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     sync_layer_capture_mask();
+    refresh_quick_layer_presets();
     m_layer_panel_dirty = true;
     m_settings_panel_dirty = true;
     refresh_save_state_slots();
@@ -2744,7 +3167,7 @@ void OpenXrShell::set_current_backend_kind(BackendKind kind) {
 }
 
 void OpenXrShell::set_current_game_name(const std::string& name) {
-    m_current_game_name = name;
+    m_current_game_name = sanitize_ascii_label(name);
 }
 
 void OpenXrShell::enqueue_haptic(bool right, float amplitude, int duration_ms) {
@@ -2790,15 +3213,17 @@ void OpenXrShell::reset_settings() {
     m_vr_state.vr_resolution_scale = snap_vr_resolution_scale(m_vr_state.vr_resolution_scale);
     m_layer_filter_mode = LayerFilterMode::Hybrid;
     m_config     = default_config_for_backend(m_current_backend_kind, m_layer_filter_mode);
+    refresh_default_quick_settings_preset(m_current_backend_kind, m_config, m_quick_settings_presets);
     m_button_map = default_button_map_for_backend(m_current_backend_kind);
-    m_layer_auto_dup_percent = 25;
-    m_experimental_rumble_enabled = false;
+    m_layer_auto_dup_percent = 75;
+    m_experimental_rumble_enabled = true;
     m_saved_layer_mode_state.valid = false;
     m_layer_order.clear();
     m_layer_enabled.clear();
     m_layer_ambilight.clear();
     ensure_layer_runtime_state_matches_config(m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     sync_layer_capture_mask();
+    refresh_quick_layer_presets();
     if (m_on_vr_state_changed) m_on_vr_state_changed(m_vr_state.auto_frame_skip);
     if (m_on_experimental_rumble_changed) m_on_experimental_rumble_changed(m_experimental_rumble_enabled);
     m_settings_panel_dirty = true;
@@ -2844,6 +3269,186 @@ static std::string system_settings_dir(const std::string& root, BackendKind kind
     return root + "/" + backend_settings_subdir(kind);
 }
 
+static std::string quick_settings_presets_path(const std::string& root_dir) {
+    return root_dir + "/quick_settings_presets.ini";
+}
+
+static std::string quick_layers_presets_dir(const std::string& root_dir, BackendKind kind) {
+    return system_settings_dir(root_dir, kind) + "/quick_layers";
+}
+
+static std::string quick_layer_presets_path(const std::string& root_dir, BackendKind kind, const std::string& signature) {
+    return quick_layers_presets_dir(root_dir, kind) + "/" + escape_preset_signature(signature) + ".ini";
+}
+
+static std::string join_ids(const std::vector<std::string>& ids) {
+    std::string out;
+    for (int i = 0; i < (int)ids.size(); ++i) {
+        if (i) out.push_back(',');
+        out += ids[i];
+    }
+    return out;
+}
+
+static std::vector<std::string> split_ids(const std::string& s) {
+    std::vector<std::string> out;
+    std::string current;
+    for (char c : s) {
+        if (c == ',') {
+            out.push_back(current);
+            current.clear();
+        } else {
+            current.push_back(c);
+        }
+    }
+    out.push_back(current);
+    return out;
+}
+
+static std::string join_bools(const std::vector<bool>& values) {
+    std::string out;
+    out.reserve(values.size());
+    for (bool v : values) out.push_back(v ? '1' : '0');
+    return out;
+}
+
+static std::vector<bool> parse_bools(const std::string& s) {
+    std::vector<bool> out;
+    out.reserve(s.size());
+    for (char c : s) {
+        if (c == '0' || c == '1') out.push_back(c == '1');
+    }
+    return out;
+}
+
+static void write_quick_settings_presets_file(const std::string& path,
+                                              const std::vector<OpenXrShell::QuickSettingsPreset>& presets) {
+    FILE* f = fopen(path.c_str(), "w");
+    if (!f) return;
+    for (int i = 0; i < (int)presets.size(); ++i) {
+        const auto& p = presets[i];
+        std::fprintf(f, "name_%d=%s\n", i, p.name.c_str());
+        std::fprintf(f, "canvas_x_%d=%.6f\n", i, p.canvas_x);
+        std::fprintf(f, "canvas_y_%d=%.6f\n", i, p.canvas_y);
+        std::fprintf(f, "canvas_az_%d=%.6f\n", i, p.canvas_az);
+        std::fprintf(f, "canvas_el_%d=%.6f\n", i, p.canvas_el);
+        std::fprintf(f, "canvas_scale_%d=%.6f\n", i, p.canvas_scale);
+        std::fprintf(f, "near_depth_%d=%.6f\n", i, p.near_depth);
+        std::fprintf(f, "far_depth_%d=%.6f\n", i, p.far_depth);
+        std::fprintf(f, "quad_width_%d=%.6f\n", i, p.quad_width);
+        std::fprintf(f, "copy_count_%d=%d\n", i, p.copy_count);
+        std::fprintf(f, "immersive_beta_enabled_%d=%d\n", i, p.immersive_beta_enabled ? 1 : 0);
+        std::fprintf(f, "upscale_%d=%d\n", i, p.upscale ? 1 : 0);
+        std::fprintf(f, "ambilight_%d=%d\n", i, p.ambilight ? 1 : 0);
+        std::fprintf(f, "passthrough_%d=%d\n", i, p.passthrough ? 1 : 0);
+        std::fprintf(f, "depthmap_%d=%d\n", i, p.depthmap ? 1 : 0);
+        std::fprintf(f, "layers_3d_%d=%d\n", i, p.layers_3d ? 1 : 0);
+        std::fprintf(f, "gamma_%d=%.6f\n", i, p.gamma);
+        std::fprintf(f, "contrast_%d=%.6f\n", i, p.contrast);
+        std::fprintf(f, "saturation_%d=%.6f\n", i, p.saturation);
+        std::fprintf(f, "brightness_%d=%.6f\n", i, p.brightness);
+    }
+    fclose(f);
+}
+
+static void load_quick_settings_presets_file(const std::string& path,
+                                             std::vector<OpenXrShell::QuickSettingsPreset>& presets) {
+    FILE* f = fopen(path.c_str(), "r");
+    if (!f) return;
+    char line[512];
+    while (fgets(line, sizeof(line), f)) {
+        char* eq = std::strchr(line, '=');
+        if (!eq) continue;
+        *eq = '\0';
+        const std::string key = line;
+        std::string value = eq + 1;
+        while (!value.empty() && (value.back() == '\n' || value.back() == '\r')) value.pop_back();
+        int idx = -1;
+        if (std::sscanf(key.c_str(), "name_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].name = sanitize_preset_name(value, presets[idx].name);
+        } else if (std::sscanf(key.c_str(), "canvas_x_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].canvas_x = (float)std::atof(value.c_str());
+        } else if (std::sscanf(key.c_str(), "canvas_y_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].canvas_y = (float)std::atof(value.c_str());
+        } else if (std::sscanf(key.c_str(), "canvas_az_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].canvas_az = (float)std::atof(value.c_str());
+        } else if (std::sscanf(key.c_str(), "canvas_el_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].canvas_el = (float)std::atof(value.c_str());
+        } else if (std::sscanf(key.c_str(), "canvas_scale_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].canvas_scale = (float)std::atof(value.c_str());
+        } else if (std::sscanf(key.c_str(), "near_depth_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].near_depth = (float)std::atof(value.c_str());
+        } else if (std::sscanf(key.c_str(), "far_depth_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].far_depth = (float)std::atof(value.c_str());
+        } else if (std::sscanf(key.c_str(), "quad_width_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].quad_width = (float)std::atof(value.c_str());
+        } else if (std::sscanf(key.c_str(), "copy_count_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].copy_count = std::atoi(value.c_str());
+        } else if (std::sscanf(key.c_str(), "immersive_beta_enabled_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].immersive_beta_enabled = std::atoi(value.c_str()) != 0;
+        } else if (std::sscanf(key.c_str(), "upscale_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].upscale = std::atoi(value.c_str()) != 0;
+        } else if (std::sscanf(key.c_str(), "ambilight_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].ambilight = std::atoi(value.c_str()) != 0;
+        } else if (std::sscanf(key.c_str(), "passthrough_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].passthrough = std::atoi(value.c_str()) != 0;
+        } else if (std::sscanf(key.c_str(), "depthmap_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].depthmap = std::atoi(value.c_str()) != 0;
+        } else if (std::sscanf(key.c_str(), "layers_3d_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].layers_3d = std::atoi(value.c_str()) != 0;
+        } else if (std::sscanf(key.c_str(), "gamma_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].gamma = (float)std::atof(value.c_str());
+        } else if (std::sscanf(key.c_str(), "contrast_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].contrast = (float)std::atof(value.c_str());
+        } else if (std::sscanf(key.c_str(), "saturation_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].saturation = (float)std::atof(value.c_str());
+        } else if (std::sscanf(key.c_str(), "brightness_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].brightness = (float)std::atof(value.c_str());
+        }
+    }
+    fclose(f);
+}
+
+static void write_quick_layer_presets_file(const std::string& path,
+                                           const std::vector<OpenXrShell::QuickLayerPreset>& presets) {
+    FILE* f = fopen(path.c_str(), "w");
+    if (!f) return;
+    for (int i = 0; i < (int)presets.size(); ++i) {
+        const auto& p = presets[i];
+        std::fprintf(f, "name_%d=%s\n", i, p.name.c_str());
+        std::fprintf(f, "ordered_ids_%d=%s\n", i, join_ids(p.ordered_ids).c_str());
+        std::fprintf(f, "enabled_%d=%s\n", i, join_bools(p.enabled).c_str());
+        std::fprintf(f, "ambilight_%d=%s\n", i, join_bools(p.ambilight).c_str());
+    }
+    fclose(f);
+}
+
+static void load_quick_layer_presets_file(const std::string& path,
+                                          std::vector<OpenXrShell::QuickLayerPreset>& presets) {
+    FILE* f = fopen(path.c_str(), "r");
+    if (!f) return;
+    char line[1024];
+    while (fgets(line, sizeof(line), f)) {
+        char* eq = std::strchr(line, '=');
+        if (!eq) continue;
+        *eq = '\0';
+        const std::string key = line;
+        std::string value = eq + 1;
+        while (!value.empty() && (value.back() == '\n' || value.back() == '\r')) value.pop_back();
+        int idx = -1;
+        if (std::sscanf(key.c_str(), "name_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].name = sanitize_preset_name(value, presets[idx].name);
+        } else if (std::sscanf(key.c_str(), "ordered_ids_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].ordered_ids = split_ids(value);
+        } else if (std::sscanf(key.c_str(), "enabled_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].enabled = parse_bools(value);
+        } else if (std::sscanf(key.c_str(), "ambilight_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].ambilight = parse_bools(value);
+        }
+    }
+    fclose(f);
+}
+
 static std::string strip_ini_version(const std::string& ini_name) {
     // Remove (USA), (Europe), (Japan), etc. from .ini name for matching
     static const char* regions[] = {
@@ -2874,9 +3479,9 @@ void OpenXrShell::load_settings(bool game_scope) {
         std::string path = system_dir + "/global.ini";
         if (!file_exists(path.c_str())) path = dir + "/global.ini";
         float loaded_rr = -1.0f;
-        bool loaded_rumble = false;
+        bool loaded_rumble = true;
         int loaded_mode = -1;
-        m_layer_auto_dup_percent = 25;
+        m_layer_auto_dup_percent = 75;
         LayerFilterMode sniffed_mode = LayerFilterMode::Hybrid;
         int sniffed_layers = -1;
         sniff_settings_layer_mode(path, sniffed_mode, sniffed_layers);
@@ -2912,7 +3517,7 @@ void OpenXrShell::load_settings(bool game_scope) {
         float loaded_rr = -1.0f;
         bool loaded_rumble = m_experimental_rumble_enabled;
         int loaded_mode = -1;
-        m_layer_auto_dup_percent = 25;
+        m_layer_auto_dup_percent = 75;
         if (loaded) {
             LayerFilterMode sniffed_mode = LayerFilterMode::Hybrid;
             int sniffed_layers = -1;
@@ -2989,6 +3594,7 @@ void OpenXrShell::load_settings(bool game_scope) {
             m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     }
     sync_layer_capture_mask();
+    refresh_quick_layer_presets();
     m_saved_layer_mode_state.valid = is_snes_filter_capable_config(m_config);
     m_saved_layer_mode_state.mode = m_layer_filter_mode;
     m_saved_layer_mode_state.config = m_config;
@@ -3315,9 +3921,220 @@ void OpenXrShell::open_rom_menu() {
     m_ctrlmap_panel_hovered       = -1;
 
     m_menu_open  = true;
+    m_settings_return_to_quick = false;
     m_active_sub_panel = 0; // show main menu
     m_laser_hit  = false;
     m_laser_panel = -1;
+}
+
+void OpenXrShell::open_quick_edit_panel() {
+    const PanelMetrics quick_metrics = panel_metrics(PanelKind::QuickEdit);
+
+    const XrQuaternionf& q = m_impl->last_hmd_pose.orientation;
+    const XrVector3f& p = m_impl->last_hmd_pose.position;
+    float siny = 2.0f * (q.w * q.y + q.x * q.z);
+    float cosy = 1.0f - 2.0f * (q.y * q.y + q.x * q.x);
+    float yaw = std::atan2f(siny, cosy);
+    const XrQuaternionf orient = { 0.0f, std::sinf(yaw * 0.5f), 0.0f, std::cosf(yaw * 0.5f) };
+    const float fwd_x = -std::sinf(yaw);
+    const float fwd_z = -std::cosf(yaw);
+    constexpr float dist = 1.05f;
+
+    m_quick_panel_pose.position = { p.x + fwd_x * dist, p.y, p.z + fwd_z * dist };
+    m_quick_panel_pose.orientation = orient;
+    refresh_quick_layer_presets();
+    m_quick_panel_layout = make_quick_edit_layout((int)m_quick_settings_presets.size(),
+                                                  (int)m_quick_layer_presets.size());
+    m_quick_panel_dirty = true;
+    m_settings_return_to_quick = false;
+    m_menu_open = false;
+    m_ctrlmap_mode = false;
+    m_active_sub_panel = k_panel_quick_edit;
+    m_laser_hit = false;
+    m_laser_panel = -1;
+
+    // Keep the same centered pose for manual quick-panel children.
+    m_layer_panel_pose = m_quick_panel_pose;
+    m_settings_panel_pose = m_quick_panel_pose;
+    (void)quick_metrics;
+}
+
+void OpenXrShell::enter_manual_edit_mode() {
+    auto locate_pose = [&](XrSpace hand_space, XrPosef& out) -> bool {
+        if (hand_space == XR_NULL_HANDLE || m_impl->app_space == XR_NULL_HANDLE) return false;
+        XrSpaceLocation loc{XR_TYPE_SPACE_LOCATION};
+        if (xrLocateSpace(hand_space, m_impl->app_space, m_frame_predicted_time, &loc) != XR_SUCCESS)
+            return false;
+        const XrSpaceLocationFlags needed =
+            XR_SPACE_LOCATION_POSITION_VALID_BIT | XR_SPACE_LOCATION_POSITION_TRACKED_BIT |
+            XR_SPACE_LOCATION_ORIENTATION_VALID_BIT;
+        if ((loc.locationFlags & needed) != needed) return false;
+        out = loc.pose;
+        return true;
+    };
+
+    m_edit_mode = true;
+    m_menu_open = false;
+    m_active_sub_panel = 0;
+    m_laser_hit = false;
+    m_quick_panel_dirty = true;
+    m_layer_panel_pose = m_quick_panel_pose;
+    m_edit_canvas_x  = m_canvas_x;
+    m_edit_canvas_y  = m_canvas_y;
+    m_edit_canvas_az = m_canvas_az;
+    m_edit_canvas_el = m_canvas_el;
+
+    m_edit_laim_ref_valid = false;
+    if (m_impl->laim_space != XR_NULL_HANDLE) {
+        XrPosef laim{};
+        if (locate_pose(m_impl->laim_space, laim)) {
+            const XrQuaternionf& aq = laim.orientation;
+            m_edit_laim_ref_dir = {
+                -2.0f*(aq.x*aq.z + aq.w*aq.y),
+                 2.0f*(aq.w*aq.x - aq.y*aq.z),
+                 2.0f*aq.x*aq.x + 2.0f*aq.y*aq.y - 1.0f
+            };
+            m_edit_laim_ref_valid = true;
+        }
+    }
+
+    m_edit_raim_ref_valid = false;
+    if (m_impl->raim_space != XR_NULL_HANDLE) {
+        XrPosef raim{};
+        if (locate_pose(m_impl->raim_space, raim)) {
+            const XrQuaternionf& aq = raim.orientation;
+            XrVector3f D = {
+                -2.0f*(aq.x*aq.z + aq.w*aq.y),
+                 2.0f*(aq.w*aq.x - aq.y*aq.z),
+                 2.0f*aq.x*aq.x + 2.0f*aq.y*aq.y - 1.0f
+            };
+            m_edit_raim_ref_az = std::atan2f(D.x, -D.z);
+            float horiz = sqrtf(D.x*D.x + D.z*D.z);
+            m_edit_raim_ref_el = std::atan2f(D.y, horiz);
+            m_edit_raim_ref_valid = true;
+        }
+    }
+}
+
+void OpenXrShell::apply_quick_settings_preset(int idx) {
+    if (idx < 0 || idx >= (int)m_quick_settings_presets.size()) return;
+    const QuickSettingsPreset& preset = m_quick_settings_presets[idx];
+    const float current_canvas_y = m_canvas_y;
+    m_canvas_x = preset.canvas_x;
+    m_canvas_y = current_canvas_y;
+    m_canvas_az = preset.canvas_az;
+    m_canvas_el = preset.canvas_el;
+    m_canvas_scale = std::clamp(preset.canvas_scale, 0.25f, 6.0f);
+
+    m_vr_state.immersive_beta_enabled = preset.immersive_beta_enabled;
+    m_vr_state.upscale = preset.upscale;
+    m_vr_state.ambilight = preset.ambilight;
+    m_vr_state.shadows = preset.passthrough;
+    m_vr_state.depthmap = preset.depthmap;
+    m_vr_state.layers_3d = preset.layers_3d;
+    m_vr_state.gamma = preset.gamma;
+    m_vr_state.contrast = preset.contrast;
+    m_vr_state.saturation = preset.saturation;
+    m_vr_state.brightness = preset.brightness;
+
+    const int n = (int)m_config.layers.size();
+    if (n > 0) {
+        std::vector<int> idxs(n);
+        for (int i = 0; i < n; ++i) idxs[i] = i;
+        std::sort(idxs.begin(), idxs.end(), [&](int a, int b) {
+            return m_config.layers[a].depth_meters < m_config.layers[b].depth_meters;
+        });
+        for (int rank = 0; rank < n; ++rank) {
+            const float t = (n > 1) ? (float)rank / (float)(n - 1) : 0.0f;
+            LayerConfig& layer = m_config.layers[idxs[rank]];
+            layer.depth_meters = preset.near_depth + (preset.far_depth - preset.near_depth) * t;
+            layer.quad_width_meters = preset.quad_width;
+        }
+        set_all_layer_copy_counts(m_config, preset.copy_count);
+    }
+
+    sync_passthrough_state();
+    m_settings_panel_dirty = true;
+    m_layer_panel_dirty = true;
+    m_quick_panel_dirty = true;
+    set_status("Quick settings: " + preset.name);
+}
+
+bool OpenXrShell::apply_quick_layer_preset(int idx, std::string& status_out) {
+    if (idx < 0 || idx >= (int)m_quick_layer_presets.size()) {
+        status_out = "No quick layer preset available here.";
+        return false;
+    }
+    const QuickLayerPreset& preset = m_quick_layer_presets[idx];
+    if (preset.ordered_ids.empty()) {
+        status_out = "No quick layer preset available here.";
+        return false;
+    }
+
+    std::vector<int> order;
+    std::vector<bool> enabled(m_config.layers.size(), true);
+    std::vector<bool> ambi(m_config.layers.size(), true);
+    for (const std::string& id : preset.ordered_ids) {
+        const int idx = layer_index_by_id(m_config, id.c_str());
+        if (idx >= 0) order.push_back(idx);
+    }
+    if ((int)order.size() != (int)m_config.layers.size()) {
+        status_out = "Quick layer preset does not match this layer set.";
+        return false;
+    }
+    for (int i = 0; i < (int)preset.ordered_ids.size() && i < (int)preset.enabled.size(); ++i) {
+        const int layer_idx = layer_index_by_id(m_config, preset.ordered_ids[i].c_str());
+        if (layer_idx >= 0 && layer_idx < (int)enabled.size()) enabled[layer_idx] = preset.enabled[i];
+    }
+    for (int i = 0; i < (int)preset.ordered_ids.size() && i < (int)preset.ambilight.size(); ++i) {
+        const int layer_idx = layer_index_by_id(m_config, preset.ordered_ids[i].c_str());
+        if (layer_idx >= 0 && layer_idx < (int)ambi.size()) ambi[layer_idx] = preset.ambilight[i];
+    }
+    m_layer_order = std::move(order);
+    m_layer_enabled = std::move(enabled);
+    m_layer_ambilight = std::move(ambi);
+    ensure_layer_runtime_state_matches_config(
+        m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
+    m_layer_panel_dirty = true;
+    m_quick_panel_dirty = true;
+    status_out = "Quick layers: " + preset.name;
+    return true;
+}
+
+void OpenXrShell::refresh_quick_layer_presets() {
+    const std::string signature = quick_layer_signature(m_current_backend_kind, m_layer_filter_mode, m_config);
+    m_quick_layer_presets = make_quick_layer_presets_for_signature(signature, m_config);
+    const std::string root_dir = get_settings_dir();
+    if (!root_dir.empty()) {
+        load_quick_layer_presets_file(
+            quick_layer_presets_path(root_dir, m_current_backend_kind, signature),
+            m_quick_layer_presets);
+    }
+    m_quick_panel_layout = make_quick_edit_layout((int)m_quick_settings_presets.size(),
+                                                  (int)m_quick_layer_presets.size());
+    m_quick_panel_dirty = true;
+}
+
+void OpenXrShell::reset_quick_settings_presets() {
+    m_quick_settings_presets = make_quick_settings_presets();
+    refresh_default_quick_settings_preset(m_current_backend_kind, m_config, m_quick_settings_presets);
+    const std::string root_dir = get_settings_dir();
+    if (!root_dir.empty()) {
+        std::remove(quick_settings_presets_path(root_dir).c_str());
+    }
+    m_quick_panel_dirty = true;
+    set_status("Quick settings presets reset.");
+}
+
+void OpenXrShell::reset_quick_layer_presets() {
+    const std::string signature = quick_layer_signature(m_current_backend_kind, m_layer_filter_mode, m_config);
+    m_quick_layer_presets = make_quick_layer_presets_for_signature(signature, m_config);
+    const std::string root_dir = get_settings_dir();
+    if (!root_dir.empty()) {
+        std::remove(quick_layer_presets_path(root_dir, m_current_backend_kind, signature).c_str());
+    }
+    m_quick_panel_dirty = true;
+    set_status("Quick layer presets reset.");
 }
 
 // ============================================================
@@ -3457,8 +4274,9 @@ void OpenXrShell::poll_actions() {
     }
     m_menu_prev = menu_btn;
 
-    // ---- laser + multi-panel hover (runs every frame while menu open, or layers panel shown over game) -----------
-    if ((m_menu_open || m_active_sub_panel == 2) && m_impl->raim_space != XR_NULL_HANDLE) {
+    // ---- laser + multi-panel hover (runs for menu panels and standalone quick/manual panels) -----------
+    if ((m_menu_open || m_active_sub_panel == 2 || m_active_sub_panel == 3 || m_active_sub_panel == 7)
+        && m_impl->raim_space != XR_NULL_HANDLE) {
         XrPosef aim{};
         if (get_controller_pose(m_impl->raim_space, aim)) {
             const XrVector3f& O   = aim.position;
@@ -3482,6 +4300,7 @@ void OpenXrShell::poll_actions() {
             const PanelMetrics save_state_metrics = panel_metrics(PanelKind::SaveStates);
             const PanelMetrics code_metrics     = panel_metrics(PanelKind::Code);
             const PanelMetrics ctrlmap_metrics  = panel_metrics(PanelKind::CtrlMap);
+            const PanelMetrics quick_metrics    = panel_metrics(PanelKind::QuickEdit);
 
             // Determine which panels are visible based on current mode
             PanelDesc* descs = nullptr;
@@ -3520,6 +4339,9 @@ void OpenXrShell::poll_actions() {
                 static PanelDesc descs_settings[1] = {
                     { &m_settings_panel_pose, 0.0f, 0.0f, k_panel_settings },
                 };
+                static PanelDesc descs_quick[1] = {
+                    { &m_quick_panel_pose, 0.0f, 0.0f, k_panel_quick_edit },
+                };
                 static PanelDesc descs_save_state[1] = {
                     { &m_save_state_panel_pose, 0.0f, 0.0f, k_panel_save_state },
                 };
@@ -3538,6 +4360,8 @@ void OpenXrShell::poll_actions() {
                 descs_layers[0].h = layer_metrics.world_h;
                 descs_settings[0].w = settings_metrics.world_w;
                 descs_settings[0].h = settings_metrics.world_h;
+                descs_quick[0].w = quick_metrics.world_w;
+                descs_quick[0].h = quick_metrics.world_h;
                 descs_save_state[0].w = save_state_metrics.world_w;
                 descs_save_state[0].h = save_state_metrics.world_h;
                 descs_ctrlmap_sub[0].w = ctrlmap_metrics.world_w;
@@ -3552,6 +4376,7 @@ void OpenXrShell::poll_actions() {
                     case 4: descs = descs_save_state; descs_count = 1; break;
                     case 5: descs = descs_code;      descs_count = 1; break;
                     case 6: descs = descs_ctrlmap_sub; descs_count = 1; break;
+                    case 7: descs = descs_quick;     descs_count = 1; break;
                     default: break;
                 }
             }
@@ -3625,6 +4450,12 @@ void OpenXrShell::poll_actions() {
                 const PanelLayoutItem* item = assign_hit(m_main_menu_layout);
                 int row = item ? item->row : -1;
                 if (row != m_main_menu_hovered) m_main_menu_hovered = row;
+            } else if (best_panel == k_panel_quick_edit) {
+                if (m_quick_panel_layout.items.empty()) {
+                    m_quick_panel_layout = make_quick_edit_layout((int)m_quick_settings_presets.size(),
+                                                                  (int)m_quick_layer_presets.size());
+                }
+                assign_hit(m_quick_panel_layout);
             } else if (best_panel == k_panel_browser) {
                 PanelLayout layout = make_browser_layout(m_rom_browser.visible_count(), m_rom_browser.scroll_offset());
                 assign_hit(layout);
@@ -3658,93 +4489,25 @@ void OpenXrShell::poll_actions() {
             } else if (best_panel == k_panel_code) {
                 if (m_code_panel_layout.items.empty()) m_code_panel_layout = make_code_layout();
                 const PanelLayoutItem* item = assign_hit(m_code_panel_layout);
-                int key = (item && item->role == PanelRole::Key) ? item->id : -1;
-                if (key != m_code_panel_hovered) m_code_panel_hovered = key;
+                int hovered = item ? item->id : -1;
+                if (hovered != m_code_panel_hovered) m_code_panel_hovered = hovered;
             } else {
                 m_laser_hit_has_item = false;
             }
         }
     }
 
-    // ---- left thumbstick click = 3-way cycle: game → edit → layers → game ----
+    // ---- left thumbstick click = gameplay <-> quick edit, or close manual quick flows ----
     bool lclick = get_bool(m_impl->act_lclick);
     if (lclick && !m_lstick_click_prev) {
-        if (!m_edit_mode && m_active_sub_panel != 2) {
-            // State 1: Game → Edit Mode
-            m_edit_mode = true;
-            m_menu_open = false;
-            m_active_sub_panel = 0;
-            m_laser_hit = false;
-            // Initialize layer panel pose for later use
-            m_layer_panel_pose = m_main_menu_pose;
-            m_layer_panel_dirty = true;
-            // Snapshot canvas state at entry
-            m_edit_canvas_x  = m_canvas_x;
-            m_edit_canvas_y  = m_canvas_y;
-            m_edit_canvas_az = m_canvas_az;
-            m_edit_canvas_el = m_canvas_el;
-
-            // Snapshot left aim direction for translation reference
-            m_edit_laim_ref_valid = false;
-            if (m_impl->laim_space != XR_NULL_HANDLE) {
-                XrPosef laim{};
-                if (get_controller_pose(m_impl->laim_space, laim)) {
-                    const XrQuaternionf& aq = laim.orientation;
-                    m_edit_laim_ref_dir = {
-                        -2.0f*(aq.x*aq.z + aq.w*aq.y),
-                         2.0f*(aq.w*aq.x - aq.y*aq.z),
-                         2.0f*aq.x*aq.x + 2.0f*aq.y*aq.y - 1.0f
-                    };
-                    m_edit_laim_ref_valid = true;
-                }
-            }
-
-            // Snapshot right aim az/el for sphere reference
-            m_edit_raim_ref_valid = false;
-            if (m_impl->raim_space != XR_NULL_HANDLE) {
-                XrPosef raim{};
-                if (get_controller_pose(m_impl->raim_space, raim)) {
-                    const XrQuaternionf& aq = raim.orientation;
-                    XrVector3f D = {
-                        -2.0f*(aq.x*aq.z + aq.w*aq.y),
-                         2.0f*(aq.w*aq.x - aq.y*aq.z),
-                         2.0f*aq.x*aq.x + 2.0f*aq.y*aq.y - 1.0f
-                    };
-                    m_edit_raim_ref_az = std::atan2f(D.x, -D.z);
-                    float horiz = sqrtf(D.x*D.x + D.z*D.z);
-                    m_edit_raim_ref_el = std::atan2f(D.y, horiz);
-                    m_edit_raim_ref_valid = true;
-                }
-            }
-        } else if (m_edit_mode) {
-            // State 2: Edit Mode → Layer Panel
+        if (!m_menu_open && (m_edit_mode || m_active_sub_panel == 2 || m_active_sub_panel == 3 || m_active_sub_panel == 7)) {
             m_edit_mode = false;
-            m_active_sub_panel = 2;
-            // Place layer panel where main menu would be (centered)
-            m_layer_panel_pose = m_main_menu_pose;
-            m_layer_panel_dirty = true;
-            // Keep the emulator frozen when moving from edit mode into layer mode.
-            {
-                EmuFreezeCtrl freeze_fn;
-                { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
-                if (freeze_fn) {
-                    freeze_fn(true);
-                    m_emu_frozen_display = true;
-                }
-            }
-            fire_haptic(true, 0.25f, 30);
-        } else if (m_active_sub_panel == 2) {
-            // State 3: Layer Panel → Game
             m_active_sub_panel = 0;
-            if (m_emu_frozen_display) {
-                EmuFreezeCtrl freeze_fn;
-                { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
-                if (freeze_fn) {
-                    freeze_fn(false);
-                    m_emu_frozen_display = false;
-                }
-            }
+            m_settings_return_to_quick = false;
             fire_haptic(true, 0.2f, 25);
+        } else if (!m_menu_open) {
+            open_quick_edit_panel();
+            fire_haptic(true, 0.25f, 30);
         }
     }
     m_lstick_click_prev = lclick;
@@ -3909,7 +4672,7 @@ void OpenXrShell::poll_actions() {
             m_input_state = EmulatorInputState{};
         }
 
-    } else if (m_menu_open || m_active_sub_panel == 2) {
+    } else if (m_menu_open || m_active_sub_panel == 2 || m_active_sub_panel == 3 || m_active_sub_panel == 7) {
         // ==============================================================
         // PANEL MODE — multi-panel dispatch
         // (also runs when layers panel is open over live game via thumbstick)
@@ -3930,7 +4693,8 @@ void OpenXrShell::poll_actions() {
 
         XrTime now_panel = (XrTime)std::chrono::duration_cast<std::chrono::nanoseconds>(
             std::chrono::steady_clock::now().time_since_epoch()).count();
-        constexpr XrTime k_scroll_interval  = 300'000'000; // 300 ms
+        constexpr XrTime k_browser_row_scroll_interval  = 300'000'000; // 300 ms
+        constexpr XrTime k_browser_page_scroll_interval =  60'000'000; //  60 ms
         constexpr XrTime k_setting_interval = 150'000'000; // 150 ms
 
         if (m_laser_panel == k_panel_main_menu) {
@@ -3957,6 +4721,7 @@ void OpenXrShell::poll_actions() {
                     case 2: // Settings → show settings panel (centered, no main menu)
                         m_active_sub_panel = 3;
                         m_ctrlmap_mode = false;
+                        m_settings_return_to_quick = false;
                         m_settings_panel_pose = m_main_menu_pose;
                         m_settings_panel_dirty = true;
                         rebuild_settings_panel_texture();
@@ -3998,6 +4763,63 @@ void OpenXrShell::poll_actions() {
                 }
             }
 
+        } else if (m_laser_panel == k_panel_quick_edit) {
+            if (rtrig_rising && m_laser_hit_has_item) {
+                switch (m_laser_hit_item.role) {
+                    case PanelRole::QuickSettingsPreset:
+                        apply_quick_settings_preset(m_laser_hit_item.id);
+                        fire_haptic(true, 0.3f, 30);
+                        break;
+                    case PanelRole::QuickSettingsSave:
+                        if (!m_quick_preset_dialog_open) {
+                            request_quick_settings_preset_save(m_laser_hit_item.id);
+                            fire_haptic(true, 0.2f, 20);
+                        }
+                        break;
+                    case PanelRole::QuickLayersPreset: {
+                        std::string status;
+                        const bool ok = apply_quick_layer_preset(m_laser_hit_item.id, status);
+                        set_status(status);
+                        fire_haptic(true, ok ? 0.3f : 0.2f, ok ? 30 : 20);
+                        break;
+                    }
+                    case PanelRole::QuickLayersSave:
+                        if (!m_quick_preset_dialog_open) {
+                            request_quick_layer_preset_save(m_laser_hit_item.id);
+                            fire_haptic(true, 0.2f, 20);
+                        }
+                        break;
+                    case PanelRole::QuickResetSettings:
+                        m_quick_settings_reset_pending = 1;
+                        fire_haptic(true, 0.25f, 25);
+                        break;
+                    case PanelRole::QuickResetLayers:
+                        m_quick_layers_reset_pending = 1;
+                        fire_haptic(true, 0.25f, 25);
+                        break;
+                    case PanelRole::QuickManualEdit:
+                        enter_manual_edit_mode();
+                        fire_haptic(true, 0.3f, 30);
+                        break;
+                    case PanelRole::QuickManualVisual:
+                        m_active_sub_panel = 3;
+                        m_settings_return_to_quick = true;
+                        m_settings_panel_pose = m_quick_panel_pose;
+                        m_settings_panel_dirty = true;
+                        rebuild_settings_panel_texture();
+                        fire_haptic(true, 0.3f, 30);
+                        break;
+                    case PanelRole::QuickManualLayers:
+                        m_active_sub_panel = 2;
+                        m_layer_panel_pose = m_quick_panel_pose;
+                        m_layer_panel_dirty = true;
+                        rebuild_layer_panel_texture();
+                        fire_haptic(true, 0.3f, 30);
+                        break;
+                    default:
+                        break;
+                }
+            }
         } else if (m_laser_panel == k_panel_browser) {
             // ---- ROM browser ------------------------------------------------
             if (rtrig_rising && m_laser_hit && !m_rom_browser.empty()) {
@@ -4032,11 +4854,13 @@ void OpenXrShell::poll_actions() {
             const float scroll_x = (std::abs(rx) >= std::abs(lx)) ? rx : lx;
 
             // Vertical = row scroll, horizontal = page scroll.
-            if (std::abs(scroll_y) > 0.6f && now_panel - m_last_depth_fire > k_scroll_interval) {
-                m_last_depth_fire = now_panel;
+            if (std::abs(scroll_y) > 0.6f &&
+                now_panel - m_last_browser_row_scroll_fire > k_browser_row_scroll_interval) {
+                m_last_browser_row_scroll_fire = now_panel;
                 m_rom_browser.scroll(scroll_y > 0 ? -1 : 1);
-            } else if (std::abs(scroll_x) > 0.6f && now_panel - m_last_depth_fire > k_scroll_interval) {
-                m_last_depth_fire = now_panel;
+            } else if (std::abs(scroll_x) > 0.6f &&
+                       now_panel - m_last_browser_page_scroll_fire > k_browser_page_scroll_interval) {
+                m_last_browser_page_scroll_fire = now_panel;
                 m_rom_browser.scroll_page(scroll_x > 0 ? 1 : -1);
             }
 
@@ -4265,11 +5089,13 @@ void OpenXrShell::poll_actions() {
                                 break;
                             }
                             m_settings_action_pending = 4; break; // Load Global
-                        case 17: // Back → return to main menu
-                            m_active_sub_panel        = 0;
+                        case 17: // Back
+                            m_active_sub_panel        = m_settings_return_to_quick ? k_panel_quick_edit : 0;
                             m_settings_panel_hovered = -1;
                             m_settings_panel_area    = 0;
-                            m_main_menu_dirty        = true;
+                            m_main_menu_dirty        = !m_settings_return_to_quick;
+                            m_quick_panel_dirty      = m_settings_return_to_quick;
+                            m_settings_return_to_quick = false;
                             break;
                         default: break;
                     }
@@ -4406,43 +5232,84 @@ void OpenXrShell::poll_actions() {
             // key indices: 0-35 = alphanumeric, 36 = backspace
             static const char* k_code_chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             constexpr int k_backspace = 36;
-            const int max_len = is_snes_filter_capable_config(m_config) ? 38 : (5 + 2 * (int)m_config.layers.size());
+            const int max_len = m_code_panel_quick_name_mode
+                ? k_quick_name_max_len
+                : (is_snes_filter_capable_config(m_config) ? 38 : (5 + 2 * (int)m_config.layers.size()));
             int key = m_code_panel_hovered;
             if (rtrig_rising && m_laser_hit && key >= 0) {
-                if (key == k_backspace) {
-                    if (!m_code_input_buf.empty()) {
-                        m_code_input_buf.pop_back();
-                        m_code_panel_dirty = true;
-                        fire_haptic(true, 0.2f, 15);
+                if (m_code_panel_quick_name_mode && m_laser_hit_has_item) {
+                    switch (m_laser_hit_item.role) {
+                        case PanelRole::CodeCancel:
+                            cancel_quick_preset_name(m_pending_quick_preset_kind, m_pending_quick_preset_slot);
+                            m_code_input_buf.clear();
+                            m_code_panel_quick_name_mode = false;
+                            m_active_sub_panel = k_panel_quick_edit;
+                            m_quick_panel_dirty = true;
+                            m_code_panel_dirty = true;
+                            set_status("Preset rename canceled.");
+                            fire_haptic(true, 0.2f, 20);
+                            break;
+                        case PanelRole::CodeSpace:
+                            if ((int)m_code_input_buf.size() < max_len) {
+                                m_code_input_buf.push_back(' ');
+                                m_code_panel_dirty = true;
+                                fire_haptic(true, 0.2f, 15);
+                            }
+                            break;
+                        case PanelRole::CodeConfirm:
+                            submit_quick_preset_name(
+                                m_pending_quick_preset_kind, m_pending_quick_preset_slot, m_code_input_buf);
+                            m_code_input_buf.clear();
+                            m_code_panel_quick_name_mode = false;
+                            m_active_sub_panel = k_panel_quick_edit;
+                            m_quick_panel_dirty = true;
+                            m_code_panel_dirty = true;
+                            fire_haptic(true, 0.35f, 35);
+                            break;
+                        case PanelRole::Key:
+                            break;
+                        default:
+                            break;
                     }
-                } else if (key < 36 && (int)m_code_input_buf.size() < max_len) {
-                    m_code_input_buf += k_code_chars[key];
-                    m_code_panel_dirty = true;
-                    fire_haptic(true, 0.25f, 20);
+                }
+                if (m_laser_hit_has_item && m_laser_hit_item.role == PanelRole::Key) {
+                    if (key == k_backspace) {
+                        if (!m_code_input_buf.empty()) {
+                            m_code_input_buf.pop_back();
+                            m_code_panel_dirty = true;
+                            fire_haptic(true, 0.2f, 15);
+                        }
+                    } else if (key < 36 && (int)m_code_input_buf.size() < max_len) {
+                        m_code_input_buf += k_code_chars[key];
+                        m_code_panel_dirty = true;
+                        fire_haptic(true, 0.25f, 20);
 
-                    VrState test = {};
-                    bool valid = false;
-                    if (is_snes_filter_capable_config(m_config)) {
-                        LayerFilterMode test_mode = LayerFilterMode::ShowAll;
-                        GameConfig test_cfg;
-                        std::vector<int> test_order;
-                        std::vector<bool> test_enabled;
-                        std::vector<bool> test_ambilight;
-                        valid = try_decode_snes_state_code(
-                            m_code_input_buf, test, test_mode, test_cfg, test_order, test_enabled, test_ambilight);
-                    } else {
-                        valid = vr_state_decode(m_code_input_buf, test, &m_config);
-                    }
-                    if (valid) {
-                        apply_state_code(m_code_input_buf);
-                        set_status("Code applied: " + m_code_input_buf);
-                        m_code_input_buf.clear();
-                        m_settings_panel_dirty = true;
-                        fire_haptic(true, 0.6f, 60);
-                    } else if ((int)m_code_input_buf.size() >= max_len) {
-                        set_status("Invalid code");
-                        m_code_input_buf.clear();
-                        m_code_panel_dirty = true;
+                        if (!m_code_panel_quick_name_mode) {
+                            VrState test = {};
+                            bool valid = false;
+                            if (is_snes_filter_capable_config(m_config)) {
+                                LayerFilterMode test_mode = LayerFilterMode::ShowAll;
+                                GameConfig test_cfg;
+                                std::vector<int> test_order;
+                                std::vector<bool> test_enabled;
+                                std::vector<bool> test_ambilight;
+                                valid = try_decode_snes_state_code(
+                                    m_code_input_buf, test, test_mode, test_cfg, test_order, test_enabled, test_ambilight);
+                            } else {
+                                valid = vr_state_decode(m_code_input_buf, test, &m_config);
+                            }
+                            if (valid) {
+                                apply_state_code(m_code_input_buf);
+                                set_status("Code applied: " + m_code_input_buf);
+                                m_code_input_buf.clear();
+                                m_settings_panel_dirty = true;
+                                fire_haptic(true, 0.6f, 60);
+                            } else if ((int)m_code_input_buf.size() >= max_len) {
+                                set_status("Invalid code");
+                                m_code_input_buf.clear();
+                                m_code_panel_dirty = true;
+                            }
+                        }
                     }
                 }
             }
@@ -4581,6 +5448,122 @@ void OpenXrShell::apply_pending_vr_changes() {
         m_presets[save_idx] = m_vr_state;
         set_status("Saved preset " + std::to_string(save_idx + 1));
     }
+    if (m_quick_settings_reset_pending.exchange(0) != 0) {
+        reset_quick_settings_presets();
+    }
+    if (m_quick_layers_reset_pending.exchange(0) != 0) {
+        reset_quick_layer_presets();
+    }
+    int quick_settings_slot = m_quick_settings_save_request_pending.exchange(-1);
+    if (quick_settings_slot >= 0 && quick_settings_slot < (int)m_quick_settings_presets.size() && !m_quick_preset_dialog_open) {
+        m_quick_preset_dialog_open = true;
+        m_pending_quick_preset_kind = 0;
+        m_pending_quick_preset_slot = quick_settings_slot;
+        m_code_panel_quick_name_mode = true;
+        m_code_input_buf = m_quick_settings_presets[quick_settings_slot].name;
+        m_code_panel_pose = m_quick_panel_pose;
+        m_active_sub_panel = k_panel_code;
+        m_code_panel_dirty = true;
+        set_status("Type a settings preset name, then press Save.");
+    }
+    int quick_layers_slot = m_quick_layers_save_request_pending.exchange(-1);
+    if (quick_layers_slot >= 0 && quick_layers_slot < (int)m_quick_layer_presets.size() && !m_quick_preset_dialog_open) {
+        m_quick_preset_dialog_open = true;
+        m_pending_quick_preset_kind = 1;
+        m_pending_quick_preset_slot = quick_layers_slot;
+        m_code_panel_quick_name_mode = true;
+        m_code_input_buf = m_quick_layer_presets[quick_layers_slot].name;
+        m_code_panel_pose = m_quick_panel_pose;
+        m_active_sub_panel = k_panel_code;
+        m_code_panel_dirty = true;
+        set_status("Type a layer preset name, then press Save.");
+    }
+    const int named_save_kind = m_quick_named_save_kind_pending.exchange(-1);
+    const int named_save_slot = m_quick_named_save_slot_pending.exchange(-1);
+    if (named_save_kind >= 0 && named_save_slot >= 0) {
+        std::string entered_name;
+        {
+            std::lock_guard<std::mutex> lk(m_mutex);
+            entered_name = m_quick_named_save_name;
+            m_quick_named_save_name.clear();
+        }
+        m_quick_preset_dialog_open = false;
+        m_pending_quick_preset_kind = -1;
+        m_pending_quick_preset_slot = -1;
+        m_code_panel_quick_name_mode = false;
+        if (named_save_kind == 0 && named_save_slot < (int)m_quick_settings_presets.size()) {
+            auto& preset = m_quick_settings_presets[named_save_slot];
+            preset.name = sanitize_preset_name(
+                entered_name,
+                preset.name.empty() ? ("Settings " + std::to_string(named_save_slot + 1)) : preset.name);
+            preset.canvas_x = m_canvas_x;
+            preset.canvas_y = m_canvas_y;
+            preset.canvas_az = m_canvas_az;
+            preset.canvas_el = m_canvas_el;
+            preset.canvas_scale = m_canvas_scale;
+            preset.near_depth = 1.0f;
+            preset.far_depth = 1.0f;
+            preset.quad_width = m_config.layers.empty() ? 2.56f : m_config.layers[0].quad_width_meters;
+            preset.copy_count = current_base_copy_count(m_config, m_layer_order);
+            preset.immersive_beta_enabled = m_vr_state.immersive_beta_enabled;
+            preset.upscale = m_vr_state.upscale;
+            preset.ambilight = m_vr_state.ambilight;
+            preset.passthrough = m_vr_state.shadows;
+            preset.depthmap = m_vr_state.depthmap;
+            preset.layers_3d = m_vr_state.layers_3d;
+            preset.gamma = m_vr_state.gamma;
+            preset.contrast = m_vr_state.contrast;
+            preset.saturation = m_vr_state.saturation;
+            preset.brightness = m_vr_state.brightness;
+            if (!m_config.layers.empty()) {
+                float near_depth = m_config.layers[0].depth_meters;
+                float far_depth = m_config.layers[0].depth_meters;
+                for (const auto& layer : m_config.layers) {
+                    near_depth = std::min(near_depth, layer.depth_meters);
+                    far_depth = std::max(far_depth, layer.depth_meters);
+                }
+                preset.near_depth = near_depth;
+                preset.far_depth = far_depth;
+            }
+            const std::string root_dir = get_settings_dir();
+            if (!root_dir.empty()) {
+                mkdir(root_dir.c_str(), 0755);
+                write_quick_settings_presets_file(quick_settings_presets_path(root_dir), m_quick_settings_presets);
+            }
+            set_status("Saved quick settings preset: " + preset.name);
+            m_quick_panel_dirty = true;
+        } else if (named_save_kind == 1 && named_save_slot < (int)m_quick_layer_presets.size()) {
+            auto& preset = m_quick_layer_presets[named_save_slot];
+            preset.name = sanitize_preset_name(
+                entered_name,
+                preset.name.empty() ? ("Layers " + std::to_string(named_save_slot + 1)) : preset.name);
+            preset.ordered_ids.clear();
+            preset.enabled.clear();
+            preset.ambilight.clear();
+            for (int display_idx = 0; display_idx < (int)m_layer_order.size(); ++display_idx) {
+                const int orig = m_layer_order[display_idx];
+                if (orig < 0 || orig >= (int)m_config.layers.size()) continue;
+                preset.ordered_ids.push_back(m_config.layers[orig].id);
+                preset.enabled.push_back(orig < (int)m_layer_enabled.size() ? m_layer_enabled[orig] : true);
+                preset.ambilight.push_back(orig < (int)m_layer_ambilight.size() ? m_layer_ambilight[orig] : true);
+            }
+            const std::string root_dir = get_settings_dir();
+            if (!root_dir.empty()) {
+                mkdir(root_dir.c_str(), 0755);
+                const std::string system_dir = system_settings_dir(root_dir, m_current_backend_kind);
+                mkdir(system_dir.c_str(), 0755);
+                const std::string dir = quick_layers_presets_dir(root_dir, m_current_backend_kind);
+                mkdir(dir.c_str(), 0755);
+                write_quick_layer_presets_file(
+                    quick_layer_presets_path(
+                        root_dir, m_current_backend_kind,
+                        quick_layer_signature(m_current_backend_kind, m_layer_filter_mode, m_config)),
+                    m_quick_layer_presets);
+            }
+            set_status("Saved quick layer preset: " + preset.name);
+            m_quick_panel_dirty = true;
+        }
+    }
     // Settings I/O actions from settings panel
     int action = m_settings_action_pending.exchange(0);
     switch (action) {
@@ -4614,6 +5597,7 @@ void OpenXrShell::apply_pending_vr_changes() {
                 ensure_layer_runtime_state_matches_config(
                     m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
                 sync_layer_capture_mask();
+                refresh_quick_layer_presets();
             }
         } else {
             ok = vr_state_decode(code, decoded, &m_config, &m_layer_order, &m_layer_enabled, &m_layer_ambilight);
@@ -4740,7 +5724,7 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
     // at 72/90/120 Hz, so rebuilding Genesis layer buffers every XR frame is wasteful.
     m_render_layer_refs.clear();
     if (!have_frame) {
-        if (!m_menu_open && m_active_sub_panel != 2) {
+        if (!m_menu_open && m_active_sub_panel != 2 && m_active_sub_panel != 3 && m_active_sub_panel != 7) {
             return;
         }
     }
@@ -4816,11 +5800,22 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
 
     sync_cached_layer_geometry_from_config(m_cached_layer_frames, m_config);
 
-    // Sync layer names/order/enabled when layer count changes (new ROM loaded)
-    if (!m_cached_layer_frames.empty() && m_cached_layer_frames.size() != m_layer_names.size()) {
+    // Keep runtime layer state aligned with the active config. This also repairs
+    // legacy Genesis identity order during autoload paths that do not rebuild UI state.
+    {
+        const std::vector<int> prev_order = m_layer_order;
+        const std::vector<bool> prev_enabled = m_layer_enabled;
+        const std::vector<bool> prev_ambilight = m_layer_ambilight;
+        const std::size_t prev_name_count = m_layer_names.size();
         ensure_layer_runtime_state_matches_config(
             m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
-        m_layer_panel_dirty = true;
+        if (m_layer_order != prev_order ||
+            m_layer_enabled != prev_enabled ||
+            m_layer_ambilight != prev_ambilight ||
+            m_layer_names.size() != prev_name_count) {
+            refresh_quick_layer_presets();
+            m_layer_panel_dirty = true;
+        }
     }
 
     // Apply layer order, enabled flags, and ambilight flags
@@ -4864,6 +5859,18 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
             (m_frame_predicted_time - m_last_layer_fire) >= k_panel_rebuild_interval) {
             rebuild_layer_panel_texture();
             m_last_layer_fire = m_frame_predicted_time;
+        }
+    } else if (!m_menu_open && m_active_sub_panel == 3) {
+        if (m_settings_panel_dirty &&
+            (m_frame_predicted_time - m_last_settings_fire) >= k_panel_rebuild_interval) {
+            rebuild_settings_panel_texture();
+            m_last_settings_fire = m_frame_predicted_time;
+        }
+    } else if (!m_menu_open && m_active_sub_panel == 7) {
+        if (m_quick_panel_dirty &&
+            (m_frame_predicted_time - m_last_quick_panel_fire) >= k_panel_rebuild_interval) {
+            rebuild_quick_edit_panel_texture();
+            m_last_quick_panel_fire = m_frame_predicted_time;
         }
     }
     if (m_menu_open) {
@@ -4943,6 +5950,7 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
     const PanelMetrics save_state_metrics = panel_metrics(PanelKind::SaveStates);
     const PanelMetrics code_metrics     = panel_metrics(PanelKind::Code);
     const PanelMetrics ctrlmap_metrics  = panel_metrics(PanelKind::CtrlMap);
+    const PanelMetrics quick_metrics    = panel_metrics(PanelKind::QuickEdit);
     const PanelMetrics help_metrics     = panel_metrics(PanelKind::Help);
     if (m_menu_open) {
         if (m_ctrlmap_mode) {
@@ -5069,17 +6077,32 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         overlay.show_laser2   = true;
         overlay.laser2_origin = m_edit_laser_l_origin;
         overlay.laser2_end    = m_edit_laser_l_end;
-    } else if (m_active_sub_panel == 2) {
-        // Layers panel over live game (thumbstick shortcut, menu closed)
-        auto& lp = overlay.panels[0];
-        lp.tex   = m_layer_panel_tex;
-        lp.pose  = m_layer_panel_pose;
-        lp.w     = layer_metrics.world_w;
-        lp.h     = layer_metrics.world_h;
+    } else if (m_active_sub_panel == 2 || m_active_sub_panel == 3 || m_active_sub_panel == 7) {
+        PanelInfo* panel = &overlay.panels[0];
+        if (m_active_sub_panel == 2) {
+            panel->tex = m_layer_panel_tex;
+            panel->pose = m_layer_panel_pose;
+            panel->w = layer_metrics.world_w;
+            panel->h = layer_metrics.world_h;
+        } else if (m_active_sub_panel == 3) {
+            panel->tex = m_settings_panel_tex;
+            panel->pose = m_settings_panel_pose;
+            panel->w = settings_metrics.world_w;
+            panel->h = settings_metrics.world_h;
+        } else {
+            panel->tex = m_quick_panel_tex;
+            panel->pose = m_quick_panel_pose;
+            panel->w = quick_metrics.world_w;
+            panel->h = quick_metrics.world_h;
+        }
         overlay.panel_count = 1;
 
         if (m_laser_panel == k_panel_layers && m_laser_hit_has_item) {
             set_hover_highlight(overlay, 0, m_laser_hit_item, 0.18f, 0.39f, 0.75f, 0.35f);
+        } else if (m_laser_panel == k_panel_settings && m_laser_hit_has_item) {
+            set_hover_highlight(overlay, 0, m_laser_hit_item, 0.16f, 0.24f, 0.39f, 0.35f);
+        } else if (m_laser_panel == k_panel_quick_edit && m_laser_hit_has_item) {
+            set_hover_highlight(overlay, 0, m_laser_hit_item, 0.18f, 0.42f, 0.26f, 0.35f);
         }
 
         overlay.show_laser    = true;
@@ -5131,11 +6154,13 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         // Pass eye position for laser billboard
         overlay.laser_eye = views[eye].pose.position;
 
-        // Background tint: dark green in edit mode, dark yellow in menu mode, dark teal in layer mode, default otherwise
+        // Background tint: dark green in edit mode, dark yellow in menu mode, dark teal in layer mode, amber in quick edit
         float bg_r = 0.01f, bg_g = 0.01f, bg_b = 0.02f;
         if (m_edit_mode)   { bg_r = 0.00f; bg_g = 0.04f; bg_b = 0.01f; } // dark green
         else if (m_menu_open) { bg_r = 0.04f; bg_g = 0.03f; bg_b = 0.00f; } // dark yellow
         else if (m_active_sub_panel == 2) { bg_r = 0.00f; bg_g = 0.035f; bg_b = 0.04f; } // dark teal
+        else if (m_active_sub_panel == 3) { bg_r = 0.01f; bg_g = 0.03f; bg_b = 0.04f; }
+        else if (m_active_sub_panel == 7) { bg_r = 0.05f; bg_g = 0.03f; bg_b = 0.01f; }
 
         const bool pt_active = passthrough_active();
         const bool overlay_active = overlay.panel_count > 0 || overlay.show_laser || overlay.show_laser2;

@@ -74,6 +74,8 @@ public:
     void set_current_rom(const std::string& rom_filename); // e.g. "Chrono Trigger.sfc"
     void load_preset(int idx);
     void save_preset(int idx);
+    void submit_quick_preset_name(int kind, int slot, const std::string& name);
+    void cancel_quick_preset_name(int kind, int slot);
     std::string vr_state_summary() const;
 
     // Share-code: encode current state → 8-char string; decode & apply a code.
@@ -132,6 +134,36 @@ public:
     void enqueue_haptic(const QueuedHapticEvent& event);
     void set_experimental_rumble_status(const std::string& status);
 
+    struct QuickSettingsPreset {
+        std::string name;
+        float canvas_x = 0.0f;
+        float canvas_y = 0.0f;
+        float canvas_az = 0.0f;
+        float canvas_el = 0.0f;
+        float canvas_scale = 1.0f;
+        float near_depth = 1.0f;
+        float far_depth = 1.8f;
+        float quad_width = 2.56f;
+        int copy_count = 1;
+        bool immersive_beta_enabled = false;
+        bool upscale = false;
+        bool ambilight = true;
+        bool passthrough = false;
+        bool depthmap = false;
+        bool layers_3d = false;
+        float gamma = 1.08f;
+        float contrast = 0.85f;
+        float saturation = 0.80f;
+        float brightness = 1.00f;
+    };
+
+    struct QuickLayerPreset {
+        std::string name;
+        std::vector<std::string> ordered_ids;
+        std::vector<bool> enabled;
+        std::vector<bool> ambilight;
+    };
+
 private:
     void set_status(const std::string& s);
 
@@ -158,7 +190,17 @@ private:
     void apply_pending_vr_changes();
     void recenter_to_hmd();                    // snap canvas to current HMD gaze direction
     void open_rom_menu();                      // scan ROMs + place main menu panel in front of HMD
+    void open_quick_edit_panel();              // place quick edit panel in front of HMD
+    void enter_manual_edit_mode();             // enter controller-driven canvas edit mode
+    void apply_quick_settings_preset(int idx);
+    bool apply_quick_layer_preset(int idx, std::string& status_out);
+    void request_quick_settings_preset_save(int idx);
+    void request_quick_layer_preset_save(int idx);
+    void reset_quick_settings_presets();
+    void reset_quick_layer_presets();
+    void refresh_quick_layer_presets();
     void rebuild_main_menu_texture();          // call Kotlin → upload GL texture for main menu
+    void rebuild_quick_edit_panel_texture();   // call Kotlin → upload GL texture for quick preset panel
     void rebuild_layer_panel_texture();        // call Kotlin → upload GL texture
     void rebuild_settings_panel_texture();     // call Kotlin → upload GL texture
     void rebuild_save_state_panel_texture();   // call Kotlin → upload GL texture
@@ -204,6 +246,7 @@ private:
     uint64_t           m_render_sample_count = 0;
 
     // ---------- VR state (accessed only from XR thread after init) ----------
+
     GameConfig           m_config;
     VrState              m_vr_state;
     std::vector<VrState> m_presets;
@@ -222,7 +265,7 @@ private:
     std::string m_current_rom_name;   // filename stem of currently loaded ROM (for per-game settings)
     std::string m_current_game_name;  // from ROM header (0xFFC0+) for version fallback
     BackendKind m_current_backend_kind = BackendKind::Snes;
-    bool        m_experimental_rumble_enabled = false;
+    bool        m_experimental_rumble_enabled = true;
     std::string m_experimental_rumble_status = "OFF";
 
     bool        m_menu_prev  = false;
@@ -238,7 +281,9 @@ private:
     static constexpr int k_panel_save_state = 4;
     static constexpr int k_panel_code       = 5;
     static constexpr int k_panel_ctrlmap    = 6;
+    static constexpr int k_panel_quick_edit = 7;
     XrPosef m_main_menu_pose       = {{0,0,0,1},{0,0,-1}};
+    XrPosef m_quick_panel_pose     = {{0,0,0,1},{0,0,-1}};
     XrPosef m_panel_pose           = {{0,0,0,1},{0,0,-1}}; // browser (centre)
     XrPosef m_layer_panel_pose     = {{0,0,0,1},{0,0,-1}};
     XrPosef m_settings_panel_pose  = {{0,0,0,1},{0,0,-1}};
@@ -247,8 +292,8 @@ private:
     XrPosef m_ctrlmap_panel_pose   = {{0,0,0,1},{0,0,-1}};
     bool    m_ctrlmap_mode         = false; // true = showing ctrlmap panel only
 
-    // Main menu sub-panel tracking: which secondary panel is currently open
-    // 0 = main menu, 1 = browser, 2 = layers, 3 = settings, 4 = save states, 5 = code, 6 = ctrlmap
+    // Main menu / standalone panel tracking
+    // 0 = main menu, 1 = browser, 2 = layers, 3 = settings, 4 = save states, 5 = code, 6 = ctrlmap, 7 = quick edit
     int     m_active_sub_panel     = 0;
 
     // Multi-panel laser state (menu mode — right controller)
@@ -261,6 +306,7 @@ private:
     PanelLayoutItem m_laser_hit_item{};
     bool        m_laser_hit_has_item = false;
     PanelLayout m_main_menu_layout;
+    PanelLayout m_quick_panel_layout;
     PanelLayout m_layer_panel_layout;
     PanelLayout m_settings_panel_layout;
     PanelLayout m_save_state_panel_layout;
@@ -283,13 +329,24 @@ private:
     // ROM loader callback (set by main.cpp)
     RomLoader m_rom_loader;
 
+    // ---------- Quick preset panel ----------
+    GLuint  m_quick_panel_tex       = 0;
+    bool    m_quick_panel_dirty     = true;
+    XrTime  m_last_quick_panel_fire = 0;
+    std::vector<QuickSettingsPreset> m_quick_settings_presets;
+    std::vector<QuickLayerPreset> m_quick_layer_presets;
+    bool    m_settings_return_to_quick = false;
+    bool    m_quick_preset_dialog_open = false;
+    int     m_pending_quick_preset_kind = -1;
+    int     m_pending_quick_preset_slot = -1;
+
     // ---------- Layer order panel ----------
     // Layer names/order/enabled are game-session state (not saved in presets)
     std::vector<std::string> m_layer_names;
     std::vector<int>         m_layer_order;   // m_layer_order[display_row] = original_idx
     std::vector<bool>        m_layer_enabled;   // indexed by original_idx
     std::vector<bool>        m_layer_ambilight; // indexed by original_idx
-    int     m_layer_auto_dup_percent = 25; // -1 = OFF, otherwise percentage target for farthest layer
+    int     m_layer_auto_dup_percent = 75; // -1 = OFF, otherwise percentage target for farthest layer
     LayerFilterMode m_layer_filter_mode = LayerFilterMode::Hybrid;
     GLuint  m_layer_panel_tex     = 0;
     bool    m_layer_panel_dirty   = true;
@@ -319,8 +376,8 @@ private:
     bool    m_save_state_panel_dirty   = true;
     int     m_save_state_panel_hovered = -1; // 0-7 interactive cell/row
     std::vector<SaveStateSlotInfo> m_save_state_slots;
-    int     m_autosave_interval_seconds = 0;
-    bool    m_load_last_save_enabled = false;
+    int     m_autosave_interval_seconds = 30;
+    bool    m_load_last_save_enabled = true;
     std::uint64_t m_last_autosave_time_ms = 0;
 
     // ---------- Code-input panel (floats above ROM browser) ----------
@@ -329,6 +386,7 @@ private:
     int         m_code_panel_hovered = -1; // index into k_code_keys (-1 = none)
     XrTime      m_last_code_fire     = 0;
     std::string m_code_input_buf;          // chars typed so far (≤ 20)
+    bool        m_code_panel_quick_name_mode = false;
 
     // ---------- Controller map panel ----------
     GLuint  m_ctrlmap_panel_tex     = 0;
@@ -354,6 +412,13 @@ private:
     std::atomic<bool> m_randomize_pending{false};
     std::atomic<int>  m_preset_load_pending{-1};
     std::atomic<int>  m_preset_save_pending{-1};
+    std::atomic<int>  m_quick_settings_save_request_pending{-1};
+    std::atomic<int>  m_quick_layers_save_request_pending{-1};
+    std::atomic<int>  m_quick_settings_reset_pending{0};
+    std::atomic<int>  m_quick_layers_reset_pending{0};
+    std::atomic<int>  m_quick_named_save_kind_pending{-1};
+    std::atomic<int>  m_quick_named_save_slot_pending{-1};
+    std::string       m_quick_named_save_name; // guarded by m_mutex
     // Share-code apply: store the code string guarded by m_mutex, then set flag
     std::atomic<bool> m_apply_code_pending{false};
     std::string       m_pending_code;          // guarded by m_mutex
@@ -385,6 +450,8 @@ private:
 
     // Rate-limiting (nanoseconds wall-clock via XrTime)
     XrTime m_last_depth_fire  = 0;
+    XrTime m_last_browser_row_scroll_fire = 0;
+    XrTime m_last_browser_page_scroll_fire = 0;
     XrTime m_last_width_fire  = 0;
     XrTime m_last_copy_fire   = 0;
     bool   m_lstick_click_prev = false;

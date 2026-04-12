@@ -36,7 +36,7 @@ static inline bool settings_save(
     int layer_filter_mode = -1,
     int layer_auto_dup_percent = -1,
     float refresh_rate = 0.0f,
-    bool experimental_rumble_enabled = false,
+    bool experimental_rumble_enabled = true,
     const qrd::ButtonMap* btn_map = nullptr,
     qrd::BackendKind btn_map_backend = qrd::BackendKind::Snes)
 {

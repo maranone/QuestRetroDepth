@@ -157,14 +157,17 @@ GameConfig GameConfig::make_default_genesis() {
     cfg.virtual_height = 224;
     cfg.quad_y_meters  = 1.6f;
 
+    // Match the SNES Hybrid default screen distance envelope so Genesis boots
+    // with the same overall default depth feel and the Quick Edit "Default"
+    // settings preset resolves to the same near/far range.
     static const struct { const char* id; float depth; float width; int layer_index; } k[] = {
-        { "background",   2.00f, 2.56f, 0 },
-        { "plane_b_low",  1.82f, 2.56f, 1 },
-        { "plane_b_high", 1.63f, 2.56f, 2 },
-        { "plane_a_low",  1.45f, 2.56f, 3 },
-        { "plane_a_high", 1.27f, 2.56f, 4 },
-        { "sprites_low",  1.08f, 2.56f, 5 },
-        { "sprites_high", 0.90f, 2.56f, 6 },
+        { "background",   5.00f, 2.56f, 0 },
+        { "plane_b_low",  4.83f, 2.56f, 1 },
+        { "plane_b_high", 4.66f, 2.56f, 2 },
+        { "plane_a_low",  4.49f, 2.56f, 3 },
+        { "plane_a_high", 4.32f, 2.56f, 4 },
+        { "sprites_low",  4.15f, 2.56f, 5 },
+        { "sprites_high", 3.98f, 2.56f, 6 },
     };
     for (const auto& s : k) {
         LayerConfig lc;

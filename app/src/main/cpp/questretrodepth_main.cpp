@@ -574,6 +574,23 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeSavePreset(
     g_openxr_shell.save_preset((int)idx);
 }
 
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeSubmitQuickPresetName(
+    JNIEnv* env, jobject, jint kind, jint slot, jstring name)
+{
+    const char* raw = name ? env->GetStringUTFChars(name, nullptr) : nullptr;
+    const std::string value = raw ? raw : "";
+    if (name && raw) env->ReleaseStringUTFChars(name, raw);
+    g_openxr_shell.submit_quick_preset_name((int)kind, (int)slot, value);
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeCancelQuickPresetName(
+    JNIEnv*, jobject, jint kind, jint slot)
+{
+    g_openxr_shell.cancel_quick_preset_name((int)kind, (int)slot);
+}
+
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeGetVrStateSummary(
     JNIEnv* env, jobject)

@@ -21,6 +21,7 @@ const PanelLayoutItem* PanelLayout::row_item(int row) const {
 PanelMetrics panel_metrics(PanelKind kind) {
     switch (kind) {
     case PanelKind::MainMenu: return {1024, 1536, 0.80f, 1.20f};
+    case PanelKind::QuickEdit: return {1536, 1280, 1.18f, 1.18f * (1280.0f / 1536.0f)};
     case PanelKind::Browser:  return {1536, 1536, 1.20f, 1.20f};
     case PanelKind::Layers:   return {1120, 1280, 0.88f, 0.88f * (1280.0f / 1120.0f)};
     case PanelKind::Settings: return {1280, 2176, 1.10f, 1.10f * (2176.0f / 1280.0f)};
@@ -46,6 +47,77 @@ PanelLayout make_main_menu_layout(int item_count) {
     for (int i = 0; i < item_count; ++i) {
         add_row(layout, i, i, title_v + i * row_h, title_v + (i + 1) * row_h);
     }
+    return layout;
+}
+
+PanelLayout make_quick_edit_layout(int settings_preset_count, int layer_preset_count) {
+    PanelLayout layout;
+    layout.kind = PanelKind::QuickEdit;
+    const auto m = panel_metrics(layout.kind);
+    const float gap_px = 24.0f;
+    const float title_h_px = 96.0f;
+    const float section_top_px = title_h_px + 32.0f;
+    const float section_header_h_px = 64.0f;
+    const float row_start_px = section_top_px + 84.0f;
+    const float section_bottom_px = (float)m.tex_h - 24.0f;
+    const float column_w_px = ((float)m.tex_w - gap_px * 3.0f) * 0.5f;
+    const float left_x_px = gap_px;
+    const float right_x_px = left_x_px + column_w_px + gap_px;
+
+    const float left_u0 = left_x_px / (float)m.tex_w;
+    const float left_u1 = (left_x_px + column_w_px) / (float)m.tex_w;
+    const float right_u0 = right_x_px / (float)m.tex_w;
+    const float right_u1 = (right_x_px + column_w_px) / (float)m.tex_w;
+
+    const int visible_layer_presets = std::max(layer_preset_count, 5);
+    const int left_rows = settings_preset_count + 3;
+    const int right_rows = visible_layer_presets + 2;
+
+    auto add_section_rows = [&](float u0, float u1, int row_count, PanelRole preset_role,
+                                PanelRole save_role, PanelRole reset_role,
+                                PanelRole manual_role, int preset_count) {
+        if (row_count <= 0) return;
+        const float x_px = u0 * (float)m.tex_w;
+        const float row_gap_px = 12.0f;
+        const float total_gap_px = row_gap_px * (float)(row_count - 1);
+        const float row_h_px = ((section_bottom_px - row_start_px) - total_gap_px) / (float)row_count;
+        for (int i = 0; i < row_count; ++i) {
+            const float y0_px = row_start_px + i * (row_h_px + row_gap_px);
+            const float y1_px = y0_px + row_h_px;
+            const float v0 = y0_px / (float)m.tex_h;
+            const float v1 = y1_px / (float)m.tex_h;
+            if (i < preset_count) {
+                layout.items.push_back({{u0, v0, u1, v1}, i, i, preset_role});
+            } else if (preset_role == PanelRole::QuickSettingsPreset) {
+                const int extra = i - preset_count;
+                PanelRole role = PanelRole::QuickManualEdit;
+                int id = 0;
+                if (extra == 0) {
+                    role = reset_role;
+                } else if (extra == 1) {
+                    role = PanelRole::QuickManualEdit;
+                    id = 0;
+                } else {
+                    role = PanelRole::QuickManualVisual;
+                    id = 1;
+                }
+                layout.items.push_back({{u0, v0, u1, v1}, i, id, role});
+            } else {
+                const int extra = i - preset_count;
+                const PanelRole role = (extra == 0) ? reset_role : manual_role;
+                layout.items.push_back({{u0, v0, u1, v1}, i, 0, role});
+            }
+        }
+    };
+
+    add_section_rows(left_u0, left_u1, left_rows,
+                     PanelRole::QuickSettingsPreset, PanelRole::QuickSettingsSave,
+                     PanelRole::QuickResetSettings, PanelRole::QuickManualEdit,
+                     settings_preset_count);
+    add_section_rows(right_u0, right_u1, right_rows,
+                     PanelRole::QuickLayersPreset, PanelRole::QuickLayersSave,
+                     PanelRole::QuickResetLayers, PanelRole::QuickManualLayers,
+                     visible_layer_presets);
     return layout;
 }
 
@@ -103,6 +175,9 @@ PanelLayout make_code_layout() {
     layout.kind = PanelKind::Code;
     const auto m = panel_metrics(layout.kind);
     const float title_v = 80.0f / (float)m.tex_h;
+    layout.items.push_back({{0.00f, 0.0f, 0.22f, title_v}, -1, 100, PanelRole::CodeCancel});
+    layout.items.push_back({{0.35f, 0.0f, 0.65f, title_v}, -1, 101, PanelRole::CodeSpace});
+    layout.items.push_back({{0.78f, 0.0f, 1.00f, title_v}, -1, 102, PanelRole::CodeConfirm});
     const float row_h = (1.0f - title_v) / 4.0f;
     const float col_w = 1.0f / 10.0f;
     for (int row = 0; row < 4; ++row) {

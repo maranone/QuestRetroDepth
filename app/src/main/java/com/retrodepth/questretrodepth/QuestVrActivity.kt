@@ -1,6 +1,7 @@
 package com.retrodepth.questretrodepth
 
 import android.app.Activity
+import android.app.AlertDialog
 import android.content.Intent
 import android.graphics.Color
 import android.net.Uri
@@ -13,6 +14,7 @@ import android.provider.Settings
 import android.util.Log
 import android.view.Gravity
 import android.widget.Button
+import android.widget.EditText
 import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -26,6 +28,7 @@ class QuestVrActivity : Activity() {
     private lateinit var statusView: TextView
     private val handler = Handler(Looper.getMainLooper())
     private var vrStarted = false
+    @Volatile private var quickPresetRenameDialogOpen = false
 
     private var lastSavedRomFilename = ""
     private val prefs by lazy { getSharedPreferences("qrd_prefs", MODE_PRIVATE) }
@@ -221,8 +224,8 @@ class QuestVrActivity : Activity() {
         val file = File(getSettingsDirectory(), SAVE_AUTOMATION_FILE_NAME)
         if (!file.isFile) return SaveAutomationPrefs()
 
-        var autosaveIntervalSeconds = 0
-        var loadLastSaveEnabled = false
+        var autosaveIntervalSeconds = 30
+        var loadLastSaveEnabled = true
         runCatching {
             file.forEachLine { raw ->
                 val line = raw.trim()
@@ -370,6 +373,46 @@ class QuestVrActivity : Activity() {
     private external fun nativeGetLastLoadedRomFilename(): String
     private external fun nativeApplyStateCode(code: String): Boolean
     private external fun nativeOpenMainMenu()
+    private external fun nativeSubmitQuickPresetName(kind: Int, slot: Int, name: String)
+    private external fun nativeCancelQuickPresetName(kind: Int, slot: Int)
+
+    fun showQuickPresetRenameDialog(kind: Int, slot: Int, currentName: String) {
+        runOnUiThread {
+            if (isFinishing || (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1 && isDestroyed)) {
+                nativeCancelQuickPresetName(kind, slot)
+                return@runOnUiThread
+            }
+            if (quickPresetRenameDialogOpen) {
+                nativeCancelQuickPresetName(kind, slot)
+                return@runOnUiThread
+            }
+            quickPresetRenameDialogOpen = true
+            val input = EditText(this).apply {
+                setText(currentName)
+                setSelection(text.length)
+                setTextColor(Color.WHITE)
+                setHintTextColor(Color.GRAY)
+                hint = if (kind == 0) "Settings name" else "Layers name"
+            }
+            AlertDialog.Builder(this)
+                .setTitle(if (kind == 0) "Rename Settings Preset" else "Rename Layer Preset")
+                .setView(input)
+                .setCancelable(true)
+                .setPositiveButton("Save") { _, _ ->
+                    quickPresetRenameDialogOpen = false
+                    nativeSubmitQuickPresetName(kind, slot, input.text?.toString() ?: "")
+                }
+                .setNegativeButton("Cancel") { _, _ ->
+                    quickPresetRenameDialogOpen = false
+                    nativeCancelQuickPresetName(kind, slot)
+                }
+                .setOnCancelListener {
+                    quickPresetRenameDialogOpen = false
+                    nativeCancelQuickPresetName(kind, slot)
+                }
+                .show()
+        }
+    }
 
     // -----------------------------------------------------------------------
     // Called from C++ GL thread to render the ROM browser panel texture.
@@ -616,6 +659,155 @@ class QuestVrActivity : Activity() {
             val filterW = paint.measureText(filterLabel)
             canvas.drawText(filterLabel, width - filterW - 16f, filterY + rowH * 0.68f, paint)
         }
+
+        val pixels = IntArray(width * height)
+        bmp.getPixels(pixels, 0, width, 0, 0, width, height)
+        bmp.recycle()
+        return pixels
+    }
+
+    fun renderQuickEditPanelBitmap(
+        settingsNames: Array<String>,
+        layerNames: Array<String>,
+        layerEnabled: BooleanArray,
+        hoveredSettingsLoad: Int,
+        hoveredSettingsSave: Int,
+        hoveredLayersLoad: Int,
+        hoveredLayersSave: Int,
+        hoveredAction: Int,
+        width: Int,
+        height: Int
+    ): IntArray {
+        val bmp = android.graphics.Bitmap.createBitmap(width, height, android.graphics.Bitmap.Config.ARGB_8888)
+        val canvas = android.graphics.Canvas(bmp)
+        val paint = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG)
+
+        paint.color = android.graphics.Color.argb(238, 10, 18, 12)
+        canvas.drawRect(0f, 0f, width.toFloat(), height.toFloat(), paint)
+
+        val titleH = 96f
+        paint.color = android.graphics.Color.argb(255, 36, 98, 56)
+        canvas.drawRect(0f, 0f, width.toFloat(), titleH, paint)
+        paint.color = android.graphics.Color.WHITE
+        paint.textSize = 50f
+        paint.isFakeBoldText = true
+        canvas.drawText("Quick Edit", 20f, 62f, paint)
+        paint.isFakeBoldText = false
+        paint.textSize = 24f
+        paint.color = android.graphics.Color.argb(210, 202, 240, 214)
+        canvas.drawText("Pick presets, then press left thumbstick again to close", 20f, 88f, paint)
+
+        val gap = 24f
+        val columnW = (width - gap * 3f) / 2f
+        val leftX = gap
+        val rightX = leftX + columnW + gap
+        val sectionTop = titleH + 32f
+        val sectionBottom = height - 24f
+
+        fun drawSection(
+            x: Float,
+            label: String,
+            items: List<String>,
+            enabled: List<Boolean>,
+            actionLabels: List<String>,
+            accent: Int,
+            hoveredLoad: Int,
+            hoveredSave: Int,
+            actionBase: Int
+        ) {
+            paint.color = accent
+            canvas.drawRoundRect(x, sectionTop, x + columnW, sectionTop + 64f, 14f, 14f, paint)
+            paint.color = android.graphics.Color.WHITE
+            paint.textSize = 38f
+            paint.isFakeBoldText = true
+            canvas.drawText(label, x + 18f, sectionTop + 43f, paint)
+            paint.isFakeBoldText = false
+
+            val totalRows = items.size + actionLabels.size
+            val rowGap = 12f
+            val startY = sectionTop + 84f
+            val rowH = ((sectionBottom - startY) - rowGap * (totalRows - 1)) / totalRows.toFloat()
+
+            fun actionFillColor(actionLabel: String): Int = when (actionLabel) {
+                "Reset Presets" -> android.graphics.Color.argb(170, 122, 52, 44)
+                "Manual Edit", "Manual Layers" -> android.graphics.Color.argb(165, 112, 84, 30)
+                "Open Settings" -> android.graphics.Color.argb(165, 34, 82, 124)
+                else -> android.graphics.Color.argb(150, 28, 86, 70)
+            }
+
+            for (i in items.indices) {
+                val y0 = startY + i * (rowH + rowGap)
+                val y1 = y0 + rowH
+                val isEnabled = enabled.getOrElse(i) { true }
+                paint.color = if (isEnabled) {
+                    android.graphics.Color.argb(165, 36, 62, 44)
+                } else {
+                    android.graphics.Color.argb(96, 42, 52, 46)
+                }
+                canvas.drawRoundRect(x, y0, x + columnW, y1, 14f, 14f, paint)
+                if (i == hoveredLoad) {
+                    paint.style = android.graphics.Paint.Style.STROKE
+                    paint.strokeWidth = 5f
+                    paint.color = android.graphics.Color.argb(235, 196, 255, 222)
+                    canvas.drawRoundRect(x + 2f, y0 + 2f, x + columnW - 2f, y1 - 2f, 14f, 14f, paint)
+                    paint.style = android.graphics.Paint.Style.FILL
+                    paint.strokeWidth = 0f
+                }
+                paint.color = if (isEnabled) android.graphics.Color.WHITE else android.graphics.Color.argb(170, 168, 160, 150)
+                paint.textSize = rowH * 0.34f
+                canvas.save()
+                canvas.clipRect(x + 12f, y0, x + columnW - 12f, y1)
+                canvas.drawText(items[i], x + 18f, y0 + rowH * 0.62f, paint)
+                canvas.restore()
+                if (!isEnabled) {
+                    paint.color = android.graphics.Color.argb(150, 162, 184, 166)
+                    paint.textSize = rowH * 0.18f
+                    canvas.drawText("NOT AVAILABLE FOR THIS LAYER SET", x + 18f, y0 + rowH * 0.84f, paint)
+                }
+            }
+
+            for (i in actionLabels.indices) {
+                val row = items.size + i
+                val y0 = startY + row * (rowH + rowGap)
+                val y1 = y0 + rowH
+                paint.color = actionFillColor(actionLabels[i])
+                canvas.drawRoundRect(x, y0, x + columnW, y1, 14f, 14f, paint)
+                if (hoveredAction == actionBase + i) {
+                    paint.style = android.graphics.Paint.Style.STROKE
+                    paint.strokeWidth = 5f
+                    paint.color = android.graphics.Color.argb(235, 196, 255, 222)
+                    canvas.drawRoundRect(x + 2f, y0 + 2f, x + columnW - 2f, y1 - 2f, 14f, 14f, paint)
+                    paint.style = android.graphics.Paint.Style.FILL
+                    paint.strokeWidth = 0f
+                }
+                paint.color = android.graphics.Color.WHITE
+                paint.textSize = rowH * 0.32f
+                canvas.drawText(actionLabels[i], x + 18f, y0 + rowH * 0.62f, paint)
+            }
+        }
+
+        drawSection(
+            leftX,
+            "Settings",
+            settingsNames.toList(),
+            List(settingsNames.size) { true },
+            listOf("Reset Presets", "Manual Edit", "Open Settings"),
+            android.graphics.Color.argb(255, 52, 118, 70),
+            hoveredSettingsLoad,
+            hoveredSettingsSave,
+            0
+        )
+        drawSection(
+            rightX,
+            "Layers",
+            layerNames.toList(),
+            layerEnabled.map { it },
+            listOf("Reset Presets", "Manual Layers"),
+            android.graphics.Color.argb(255, 30, 96, 86),
+            hoveredLayersLoad,
+            hoveredLayersSave,
+            3
+        )
 
         val pixels = IntArray(width * height)
         bmp.getPixels(pixels, 0, width, 0, 0, width, height)
@@ -934,8 +1126,9 @@ class QuestVrActivity : Activity() {
     //   Row 3: U-Z+⌫ (keys 30-36; cols 0-5=U-Z, col 6=⌫)
     // -----------------------------------------------------------------------
     fun renderCodePanelBitmap(
+        mode: Int,
         currentInput: String,
-        currentShareCode: String,
+        secondaryText: String,
         hoveredKey: Int,
         width: Int,
         height: Int
@@ -953,25 +1146,46 @@ class QuestVrActivity : Activity() {
         paint.color = android.graphics.Color.argb(255, 20, 50, 80)
         canvas.drawRect(0f, 0f, width.toFloat(), titleH, paint)
 
-        // Current share code (large, left side)
-        paint.color = android.graphics.Color.argb(255, 100, 200, 255)
-        paint.textSize = 36f
-        paint.isFakeBoldText = true
-        val codeDisplay = if (currentShareCode.isNotEmpty()) currentShareCode.take(16) else "(no code)"
-        canvas.drawText(codeDisplay, 12f, 32f, paint)
-        paint.isFakeBoldText = false
+        if (mode == 1) {
+            paint.color = android.graphics.Color.argb(210, 235, 220, 160)
+            paint.textSize = 26f
+            paint.isFakeBoldText = true
+            canvas.drawText("Cancel", 18f, 50f, paint)
+            val saveLabel = "Save"
+            val saveW = paint.measureText(saveLabel)
+            canvas.drawText(saveLabel, width - saveW - 18f, 50f, paint)
+            paint.color = android.graphics.Color.argb(190, 180, 210, 245)
+            paint.textSize = 20f
+            paint.isFakeBoldText = false
+            val slotLabel = if (secondaryText.isNotEmpty()) secondaryText else "Preset Name"
+            val slotW = paint.measureText(slotLabel)
+            canvas.drawText(slotLabel, (width - slotW) * 0.5f, 26f, paint)
+            val spaceLabel = "Space"
+            val spaceW = paint.measureText(spaceLabel)
+            canvas.drawText(spaceLabel, (width - spaceW) * 0.5f, 54f, paint)
+            val displayStr = if (currentInput.isEmpty()) "Type preset name" else currentInput.take(24)
+            paint.textSize = 30f
+            paint.color = android.graphics.Color.argb(255, 120, 230, 160)
+            val inputW = paint.measureText(displayStr)
+            canvas.drawText(displayStr, (width - inputW) * 0.5f, 76f, paint)
+        } else {
+            paint.color = android.graphics.Color.argb(255, 100, 200, 255)
+            paint.textSize = 36f
+            paint.isFakeBoldText = true
+            val codeDisplay = if (secondaryText.isNotEmpty()) secondaryText.take(16) else "(no code)"
+            canvas.drawText(codeDisplay, 12f, 32f, paint)
+            paint.isFakeBoldText = false
 
-        // "Enter Code" label (right side)
-        paint.color = android.graphics.Color.argb(200, 180, 180, 180)
-        paint.textSize = 20f
-        canvas.drawText("Type to enter:", width - 160f, 28f, paint)
+            paint.color = android.graphics.Color.argb(200, 180, 180, 180)
+            paint.textSize = 20f
+            canvas.drawText("Type to enter:", width - 160f, 28f, paint)
 
-        // Input buffer display (right side of title bar)
-        val displayStr = if (currentInput.isEmpty()) "______" else currentInput
-        paint.textSize = 28f
-        paint.color = android.graphics.Color.argb(255, 120, 230, 160)
-        val tw = paint.measureText(displayStr)
-        canvas.drawText(displayStr, width - tw - 12f, 64f, paint)
+            val displayStr = if (currentInput.isEmpty()) "______" else currentInput
+            paint.textSize = 28f
+            paint.color = android.graphics.Color.argb(255, 120, 230, 160)
+            val tw = paint.measureText(displayStr)
+            canvas.drawText(displayStr, width - tw - 12f, 64f, paint)
+        }
 
         // Key grid
         val cols = 10
@@ -1371,8 +1585,8 @@ class QuestVrActivity : Activity() {
     }
 
     private data class SaveAutomationPrefs(
-        val autosaveIntervalSeconds: Int = 0,
-        val loadLastSaveEnabled: Boolean = false
+        val autosaveIntervalSeconds: Int = 30,
+        val loadLastSaveEnabled: Boolean = true
     )
 
     private enum class RomFamily {
