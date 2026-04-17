@@ -484,6 +484,7 @@ private:
     MobilePanelBitmap m_quick_bitmap;
     MobilePanelBitmap m_help_bitmap;
     MobilePanelBitmap m_homebrew_bitmap;
+    std::int64_t m_last_mobile_panel_refresh_ns = 0;
 
     // ---------- Controller map panel ----------
     GLuint  m_ctrlmap_panel_tex     = 0;

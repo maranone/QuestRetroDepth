@@ -32,6 +32,7 @@ std::mutex                         g_backend_mutex;
 std::unique_ptr<qrd::EmulatorBackend> g_backend;
 std::optional<qrd::BackendKind>    g_backend_kind;
 qrd::OpenXrShell                   g_openxr_shell;
+std::mutex                         g_status_mutex;
 std::string                        g_last_status;
 std::string                        g_last_loaded_rom_filename; // filename only, for prefs persistence
 std::string                        g_last_loaded_rom_prefs_name;
@@ -45,6 +46,22 @@ static jobject g_activity_global  = nullptr;
 static AAssetManager* g_asset_manager = nullptr;
 static qrd::ExperimentalRumbleManager g_experimental_rumble;
 static std::string g_rumble_root;
+static std::atomic<float> g_mobile_orbit_yaw{0.0f};
+static std::atomic<float> g_mobile_orbit_pitch{0.12f};
+static std::atomic<float> g_mobile_pan_x{0.0f};
+static std::atomic<float> g_mobile_pan_y{0.0f};
+static std::atomic<float> g_mobile_zoom{1.0f};
+
+void set_last_status(const std::string& status) {
+    std::lock_guard<std::mutex> lock(g_status_mutex);
+    g_last_status = status;
+}
+
+std::string get_last_status_copy() {
+    std::lock_guard<std::mutex> lock(g_status_mutex);
+    if (g_last_status.empty()) return "No status yet.";
+    return g_last_status;
+}
 
 // Ask Kotlin to extract an archive (zip/7z) and return the path to the ROM inside.
 // Falls through to the original path if extraction is not needed or fails.
@@ -167,9 +184,9 @@ qrd::EmulatorBackend* ensure_backend(qrd::BackendKind wanted) {
         g_backend.reset();
         g_backend = qrd::create_backend(wanted);
         g_backend_kind = wanted;
-        g_last_status = g_backend
+        set_last_status(g_backend
             ? std::string("Backend ready: ") + g_backend->backend_name()
-            : (std::string("Backend creation failed for ") + qrd::backend_kind_name(wanted) + ".");
+            : (std::string("Backend creation failed for ") + qrd::backend_kind_name(wanted) + "."));
     }
     return g_backend.get();
 }
@@ -338,11 +355,6 @@ struct MobileRendererState {
     std::vector<bool> layer_ambilight;
     int layer_auto_dup_percent = 75;
     int snes_filter_mode = 3;
-    float orbit_yaw = 0.0f;
-    float orbit_pitch = 0.12f;
-    float pan_x = 0.0f;
-    float pan_y = 0.0f;
-    float zoom = 1.0f;
 } g_mobile_renderer;
 
 static int64_t monotonic_time_ns() {
@@ -775,8 +787,8 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeGetBuildInfo(
             "Right stick = adjust depth / spread\n"
             "L-trigger / L-grip = widen / narrow\n"
             "A/B/X/Y + face buttons = game input";
-    g_last_status = backend ? (std::string("Backend ready: ") + backend->backend_name())
-                            : "Backend creation failed.";
+    set_last_status(backend ? (std::string("Backend ready: ") + backend->backend_name())
+                            : "Backend creation failed.");
     return make_jstring(env, text);
 }
 
@@ -801,8 +813,8 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeLoadRom(
     backend->step_frame(input, error);
     const auto& frame = backend->frame_output();
     if (frame.width == 0 || frame.rgba8888.empty()) {
-        g_last_status = "ROM load failed\n\nBackend loaded but emitted no video frame.\nCheck logcat for backend errors.";
-        return make_jstring(env, g_last_status);
+        set_last_status("ROM load failed\n\nBackend loaded but emitted no video frame.\nCheck logcat for backend errors.");
+        return make_jstring(env, get_last_status_copy());
     }
     {
         std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
@@ -824,9 +836,9 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeLoadRom(
     g_last_loaded_rom_filename = basename_from_path(rom_path);
     g_openxr_shell.set_current_backend_kind(kind);
     g_openxr_shell.set_current_rom(g_last_loaded_rom_filename);
-    g_last_status = "ROM loaded\n\n" + rom_path + "\n\n" + backend->backend_name();
+    set_last_status("ROM loaded\n\n" + rom_path + "\n\n" + backend->backend_name());
     start_emu_thread();
-    return make_jstring(env, g_last_status);
+    return make_jstring(env, get_last_status_copy());
 }
 
 extern "C" JNIEXPORT jboolean JNICALL
@@ -839,7 +851,7 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeStepFrame(
     std::string error;
     qrd::EmulatorInputState input;
     if (!backend->step_frame(input, error)) {
-        g_last_status = "Frame step failed\n\n" + error;
+        set_last_status("Frame step failed\n\n" + error);
         return JNI_FALSE;
     }
     return JNI_TRUE;
@@ -882,9 +894,7 @@ extern "C" JNIEXPORT jstring JNICALL
 Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeGetLastStatus(
     JNIEnv* env, jobject)
 {
-    std::lock_guard<std::mutex> lock(g_backend_mutex);
-    if (g_last_status.empty()) g_last_status = "No status yet.";
-    return make_jstring(env, g_last_status);
+    return make_jstring(env, get_last_status_copy());
 }
 
 extern "C" JNIEXPORT jstring JNICALL
@@ -969,13 +979,13 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeStartMobile(
         g_last_loaded_rom_filename = basename_from_path(path);
         g_openxr_shell.set_current_backend_kind(kind);
         g_openxr_shell.set_current_rom(g_last_loaded_rom_filename);
-        g_last_status = "ROM loaded\n\n" + path + "\n\n" + backend->backend_name();
+        set_last_status("ROM loaded\n\n" + path + "\n\n" + backend->backend_name());
         start_emu_thread();
         return true;
     });
     start_emu_thread();
-    g_last_status = ui_status.empty() ? "Mobile renderer ready." : ui_status;
-    return make_jstring(env, g_last_status);
+    set_last_status(ui_status.empty() ? "Mobile renderer ready." : ui_status);
+    return make_jstring(env, get_last_status_copy());
 }
 
 extern "C" JNIEXPORT void JNICALL
@@ -997,7 +1007,7 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileSurfac
     if (!g_mobile_renderer.renderer_ready) {
         g_mobile_renderer.renderer_ready = g_mobile_renderer.renderer.init(err);
         if (!g_mobile_renderer.renderer_ready) {
-            g_last_status = "Mobile GLES init failed: " + err;
+            set_last_status("Mobile GLES init failed: " + err);
         }
     }
 }
@@ -1016,12 +1026,11 @@ extern "C" JNIEXPORT void JNICALL
 Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeSetMobileCamera(
     JNIEnv*, jobject, jfloat orbit_yaw, jfloat orbit_pitch, jfloat pan_x, jfloat pan_y, jfloat zoom)
 {
-    std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
-    g_mobile_renderer.orbit_yaw = orbit_yaw;
-    g_mobile_renderer.orbit_pitch = std::clamp((float)orbit_pitch, -1.1f, 1.1f);
-    g_mobile_renderer.pan_x = pan_x;
-    g_mobile_renderer.pan_y = pan_y;
-    g_mobile_renderer.zoom = std::clamp((float)zoom, 0.55f, 2.5f);
+    g_mobile_orbit_yaw.store((float)orbit_yaw, std::memory_order_release);
+    g_mobile_orbit_pitch.store(std::clamp((float)orbit_pitch, -1.1f, 1.1f), std::memory_order_release);
+    g_mobile_pan_x.store((float)pan_x, std::memory_order_release);
+    g_mobile_pan_y.store((float)pan_y, std::memory_order_release);
+    g_mobile_zoom.store(std::clamp((float)zoom, 0.55f, 2.5f), std::memory_order_release);
 }
 
 extern "C" JNIEXPORT void JNICALL
@@ -1133,10 +1142,9 @@ extern "C" JNIEXPORT void JNICALL
 Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileDrawFrame(
     JNIEnv*, jobject)
 {
+    g_openxr_shell.mobile_refresh_visible_panel();
     std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
     if (!g_mobile_renderer.renderer_ready || !g_mobile_renderer.surface_ready) return;
-
-    g_openxr_shell.mobile_refresh_visible_panel();
     g_openxr_shell.export_mobile_visual_state(
         g_mobile_renderer.vr_state,
         g_mobile_renderer.config,
@@ -1235,7 +1243,8 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileDrawFr
     }
 
     std::vector<LayerFrame*> render_refs = g_mobile_renderer.render_refs;
-    float canvas_scale = g_mobile_renderer.zoom;
+    const float zoom = g_mobile_zoom.load(std::memory_order_acquire);
+    float canvas_scale = zoom;
     const int64_t now_ns = monotonic_time_ns();
     if (g_mobile_renderer.reveal_phase == qrd::OpenXrShell::BlackoutRevealPhase::RevealAnimating) {
         constexpr float kRevealDurationNs = 500000000.0f;
@@ -1266,13 +1275,15 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileDrawFr
     const float aspect = std::max(1.0f, (float)g_mobile_renderer.surface_width) /
                          std::max(1.0f, (float)g_mobile_renderer.surface_height);
     const Mat4 proj = make_perspective_matrix(60.0f * 3.14159265358979323846f / 180.0f, aspect, 0.05f, 100.0f);
-    const float target_x = g_mobile_renderer.pan_x;
-    const float target_y = g_mobile_renderer.pan_y;
+    const float orbit_yaw = g_mobile_orbit_yaw.load(std::memory_order_acquire);
+    const float orbit_pitch = g_mobile_orbit_pitch.load(std::memory_order_acquire);
+    const float target_x = g_mobile_pan_x.load(std::memory_order_acquire);
+    const float target_y = g_mobile_pan_y.load(std::memory_order_acquire);
     const float target_z = -2.2f;
-    const float distance = 2.3f / std::max(0.55f, g_mobile_renderer.zoom);
-    const float eye_x = target_x + std::sin(g_mobile_renderer.orbit_yaw) * std::cos(g_mobile_renderer.orbit_pitch) * distance;
-    const float eye_y = target_y + std::sin(g_mobile_renderer.orbit_pitch) * distance;
-    const float eye_z = target_z + std::cos(g_mobile_renderer.orbit_yaw) * std::cos(g_mobile_renderer.orbit_pitch) * distance;
+    const float distance = 2.3f / std::max(0.55f, zoom);
+    const float eye_x = target_x + std::sin(orbit_yaw) * std::cos(orbit_pitch) * distance;
+    const float eye_y = target_y + std::sin(orbit_pitch) * distance;
+    const float eye_z = target_z + std::cos(orbit_yaw) * std::cos(orbit_pitch) * distance;
     const Mat4 view = make_look_at_matrix(eye_x, eye_y, eye_z, target_x, target_y, target_z, 0.0f, 1.0f, 0.0f);
 
     SkyDomeInfo environment_info{};
@@ -1297,8 +1308,8 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileDrawFr
         proj,
         render_refs,
         g_mobile_renderer.vr_state,
-        g_mobile_renderer.pan_x,
-        g_mobile_renderer.pan_y,
+        target_x,
+        target_y,
         0.0f,
         0.0f,
         canvas_scale,
@@ -1595,9 +1606,9 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeLoadRom(
     if (!game_name.empty()) {
         g_openxr_shell.set_current_game_name(game_name);
     }
-    g_last_status = "ROM loaded: " + g_last_loaded_rom_filename;
+    set_last_status("ROM loaded: " + g_last_loaded_rom_filename);
     start_emu_thread();
-    return make_jstring(env, g_last_status);
+    return make_jstring(env, get_last_status_copy());
 }
 
 extern "C" JNIEXPORT jstring JNICALL

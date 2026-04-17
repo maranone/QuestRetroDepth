@@ -2002,23 +2002,54 @@ bool OpenXrShell::mobile_copy_current_panel_argb(std::vector<uint32_t>& argb_out
 
 void OpenXrShell::mobile_refresh_visible_panel() {
     if (!m_vm || !m_activity_global) return;
+    const std::int64_t now_ns = (std::int64_t)std::chrono::duration_cast<std::chrono::nanoseconds>(
+        std::chrono::steady_clock::now().time_since_epoch()).count();
+    constexpr std::int64_t k_mobile_panel_refresh_interval_ns = 100000000LL;
+    if ((now_ns - m_last_mobile_panel_refresh_ns) < k_mobile_panel_refresh_interval_ns) return;
     if (m_menu_open) {
-        if (m_ctrlmap_mode) rebuild_ctrlmap_panel_texture();
-        else if (m_active_sub_panel == 0) rebuild_main_menu_texture();
-        else if (m_active_sub_panel == 1) m_rom_browser.rebuild_texture(m_vm, m_activity_global);
-        else if (m_active_sub_panel == 2) rebuild_layer_panel_texture();
-        else if (m_active_sub_panel == 3) rebuild_settings_panel_texture();
-        else if (m_active_sub_panel == 4) rebuild_save_state_panel_texture();
-        else if (m_active_sub_panel == 5) rebuild_code_panel_texture();
-        else if (m_active_sub_panel == 6) rebuild_ctrlmap_panel_texture();
-        else if (m_active_sub_panel == k_panel_homebrew) rebuild_homebrew_panel_texture();
+        if (m_ctrlmap_mode) {
+            if (m_ctrlmap_panel_dirty) rebuild_ctrlmap_panel_texture();
+            else return;
+        } else if (m_active_sub_panel == 0) {
+            if (m_main_menu_dirty) rebuild_main_menu_texture();
+            else return;
+        } else if (m_active_sub_panel == 1) {
+            if (m_rom_browser.dirty()) m_rom_browser.rebuild_texture(m_vm, m_activity_global);
+            else return;
+        } else if (m_active_sub_panel == 2) {
+            if (m_layer_panel_dirty) rebuild_layer_panel_texture();
+            else return;
+        } else if (m_active_sub_panel == 3) {
+            if (m_settings_panel_dirty) rebuild_settings_panel_texture();
+            else return;
+        } else if (m_active_sub_panel == 4) {
+            if (m_save_state_panel_dirty) rebuild_save_state_panel_texture();
+            else return;
+        } else if (m_active_sub_panel == 5) {
+            if (m_code_panel_dirty) rebuild_code_panel_texture();
+            else return;
+        } else if (m_active_sub_panel == 6) {
+            if (m_ctrlmap_panel_dirty) rebuild_ctrlmap_panel_texture();
+            else return;
+        } else if (m_active_sub_panel == k_panel_homebrew) {
+            if (m_hw_dirty) rebuild_homebrew_panel_texture();
+            else return;
+        } else {
+            return;
+        }
     } else if (m_active_sub_panel == k_panel_quick_edit) {
+        if (!m_quick_panel_dirty) return;
         rebuild_quick_edit_panel_texture();
     } else if (m_active_sub_panel == 2) {
+        if (!m_layer_panel_dirty) return;
         rebuild_layer_panel_texture();
     } else if (m_active_sub_panel == 3) {
+        if (!m_settings_panel_dirty) return;
         rebuild_settings_panel_texture();
+    } else {
+        return;
     }
+    m_last_mobile_panel_refresh_ns = now_ns;
 }
 
 bool OpenXrShell::mobile_back() {
