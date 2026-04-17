@@ -42,6 +42,9 @@ class QuestRetroDepthActivity : QuestVrActivity() {
     private lateinit var gamepadOverlay: View
     private lateinit var sharedPanelOverlay: FrameLayout
     private lateinit var sharedPanelImage: ImageView
+    private lateinit var questCtrlOverlay: View
+    private lateinit var scrollUpBtn: Button
+    private lateinit var scrollDownBtn: Button
     private var sharedPanelGeneration = -1
     private var panelTouchStartX = 0f
     private var panelTouchStartY = 0f
@@ -305,6 +308,11 @@ class QuestRetroDepthActivity : QuestVrActivity() {
             FrameLayout.LayoutParams.MATCH_PARENT,
             FrameLayout.LayoutParams.MATCH_PARENT
         ))
+        questCtrlOverlay = buildQuestCtrlOverlay()
+        root.addView(questCtrlOverlay, FrameLayout.LayoutParams(
+            FrameLayout.LayoutParams.MATCH_PARENT,
+            FrameLayout.LayoutParams.MATCH_PARENT
+        ))
         return root
     }
 
@@ -373,6 +381,63 @@ class QuestRetroDepthActivity : QuestVrActivity() {
         return overlay
     }
 
+    private fun buildQuestCtrlOverlay(): View {
+        val overlay = FrameLayout(this)
+
+        val col = LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            gravity = Gravity.END
+        }
+
+        fun makeCtrlButton(label: String, action: () -> Unit): Button {
+            return Button(this).apply {
+                text = label
+                alpha = 0.85f
+                setBackgroundColor(Color.argb(180, 30, 30, 30))
+                setTextColor(Color.WHITE)
+                val sz = dp(56)
+                minimumWidth = sz
+                minimumHeight = sz
+                setPadding(0, 0, 0, 0)
+                setOnClickListener { action() }
+            }
+        }
+
+        col.addView(makeCtrlButton("☰") {
+            nativeMobileOpenMainMenu()
+            refreshSharedPanel(force = true)
+        })
+        col.addView(makeCtrlButton("⚡") {
+            nativeMobileOpenQuickEdit()
+            refreshSharedPanel(force = true)
+        })
+        col.addView(makeCtrlButton("✕") {
+            nativeMobileBack()
+            refreshSharedPanel(force = true)
+        })
+
+        scrollUpBtn = makeCtrlButton("▲") {
+            nativeMobilePanelScroll(-1)
+            refreshSharedPanel(force = true)
+        }.also { col.addView(it) }
+
+        scrollDownBtn = makeCtrlButton("▼") {
+            nativeMobilePanelScroll(1)
+            refreshSharedPanel(force = true)
+        }.also { col.addView(it) }
+
+        scrollUpBtn.visibility = View.GONE
+        scrollDownBtn.visibility = View.GONE
+
+        overlay.addView(col, FrameLayout.LayoutParams(
+            FrameLayout.LayoutParams.WRAP_CONTENT,
+            FrameLayout.LayoutParams.WRAP_CONTENT,
+            Gravity.END or Gravity.CENTER_VERTICAL
+        ).apply { rightMargin = dp(8) })
+
+        return overlay
+    }
+
     private fun makeHoldButton(label: String, update: (Boolean) -> Unit): Button {
         return Button(this).apply {
             text = label
@@ -415,7 +480,7 @@ class QuestRetroDepthActivity : QuestVrActivity() {
                 if (pointerMode == 1 && event.pointerCount == 1 && !scaleDetector.isInProgress) {
                     val dx = event.x - lastTouchX
                     val dy = event.y - lastTouchY
-                    orbitYaw -= dx * 0.0065f
+                    orbitYaw += dx * 0.0065f
                     orbitPitch = (orbitPitch - dy * 0.0045f).coerceIn(-1.1f, 1.1f)
                     lastTouchX = event.x
                     lastTouchY = event.y
@@ -474,6 +539,9 @@ class QuestRetroDepthActivity : QuestVrActivity() {
         val visible = nativeMobilePanelVisible()
         sharedPanelOverlay.visibility = if (visible) View.VISIBLE else View.GONE
         gamepadOverlay.visibility = if (visible) View.GONE else View.VISIBLE
+        val scrollVis = if (visible) View.VISIBLE else View.GONE
+        scrollUpBtn.visibility = scrollVis
+        scrollDownBtn.visibility = scrollVis
         if (!visible) {
             sharedPanelGeneration = -1
             return
