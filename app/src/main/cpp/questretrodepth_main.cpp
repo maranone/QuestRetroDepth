@@ -811,7 +811,19 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeLoadRom(
         if (g_activity_global) {
             mobile_load_shared_settings_locked(env, g_activity_global, kind);
         }
+        g_openxr_shell.import_mobile_visual_state(
+            g_mobile_renderer.vr_state,
+            g_mobile_renderer.config,
+            g_mobile_renderer.layer_names,
+            g_mobile_renderer.layer_order,
+            g_mobile_renderer.layer_enabled,
+            g_mobile_renderer.layer_ambilight,
+            g_mobile_renderer.layer_auto_dup_percent,
+            kind);
     }
+    g_last_loaded_rom_filename = basename_from_path(rom_path);
+    g_openxr_shell.set_current_backend_kind(kind);
+    g_openxr_shell.set_current_rom(g_last_loaded_rom_filename);
     g_last_status = "ROM loaded\n\n" + rom_path + "\n\n" + backend->backend_name();
     start_emu_thread();
     return make_jstring(env, g_last_status);
@@ -888,17 +900,90 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeStartMobile(
         std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
         mobile_reset_render_config_locked(g_last_working_backend_kind.value_or(qrd::BackendKind::Snes));
         mobile_load_shared_settings_locked(env, activity, g_mobile_renderer.backend_kind);
+        g_openxr_shell.import_mobile_visual_state(
+            g_mobile_renderer.vr_state,
+            g_mobile_renderer.config,
+            g_mobile_renderer.layer_names,
+            g_mobile_renderer.layer_order,
+            g_mobile_renderer.layer_enabled,
+            g_mobile_renderer.layer_ambilight,
+            g_mobile_renderer.layer_auto_dup_percent,
+            g_mobile_renderer.backend_kind);
     }
+    std::string ui_status;
+    g_openxr_shell.start_headless(vm, env, activity, 30, true, ui_status);
+    {
+        std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
+        g_openxr_shell.import_mobile_visual_state(
+            g_mobile_renderer.vr_state,
+            g_mobile_renderer.config,
+            g_mobile_renderer.layer_names,
+            g_mobile_renderer.layer_order,
+            g_mobile_renderer.layer_enabled,
+            g_mobile_renderer.layer_ambilight,
+            g_mobile_renderer.layer_auto_dup_percent,
+            g_mobile_renderer.backend_kind);
+    }
+    g_openxr_shell.set_rom_loader([](const std::string& path, std::string& err) -> bool {
+        std::lock_guard<std::mutex> lock(g_backend_mutex);
+        const std::string prepared_path = prepare_rom_path(path);
+        const qrd::BackendKind kind = resolve_backend_kind(path, prepared_path);
+        auto* backend = ensure_backend(kind);
+        if (!backend) {
+            err = "Backend creation failed.";
+            return false;
+        }
+        if (!backend->load_content(prepared_path, err)) return false;
+        qrd::EmulatorInputState input;
+        backend->step_frame(input, err);
+        const auto& frame = backend->frame_output();
+        if (frame.width == 0 || frame.rgba8888.empty()) {
+            err = "Backend loaded but emitted no video frame.";
+            return false;
+        }
+        {
+            std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
+            mobile_reset_render_config_locked(kind);
+            g_mobile_renderer.cached_frame = frame;
+            if (g_activity_global) {
+                JNIEnv* loader_env = nullptr;
+                bool detach = false;
+                if (g_vm->GetEnv(reinterpret_cast<void**>(&loader_env), JNI_VERSION_1_6) == JNI_EDETACHED) {
+                    if (g_vm->AttachCurrentThread(&loader_env, nullptr) == JNI_OK) detach = true;
+                }
+                if (loader_env) {
+                    mobile_load_shared_settings_locked(loader_env, g_activity_global, kind);
+                }
+                if (detach) g_vm->DetachCurrentThread();
+            }
+            g_openxr_shell.import_mobile_visual_state(
+                g_mobile_renderer.vr_state,
+                g_mobile_renderer.config,
+                g_mobile_renderer.layer_names,
+                g_mobile_renderer.layer_order,
+                g_mobile_renderer.layer_enabled,
+                g_mobile_renderer.layer_ambilight,
+                g_mobile_renderer.layer_auto_dup_percent,
+                kind);
+        }
+        g_last_loaded_rom_filename = basename_from_path(path);
+        g_openxr_shell.set_current_backend_kind(kind);
+        g_openxr_shell.set_current_rom(g_last_loaded_rom_filename);
+        g_last_status = "ROM loaded\n\n" + path + "\n\n" + backend->backend_name();
+        start_emu_thread();
+        return true;
+    });
     start_emu_thread();
-    g_last_status = "Mobile renderer ready.";
+    g_last_status = ui_status.empty() ? "Mobile renderer ready." : ui_status;
     return make_jstring(env, g_last_status);
 }
 
 extern "C" JNIEXPORT void JNICALL
 Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeStopMobile(
-    JNIEnv*, jobject)
+    JNIEnv* env, jobject)
 {
     stop_emu_thread();
+    g_openxr_shell.stop(env);
     std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
     g_mobile_renderer.surface_ready = false;
 }
@@ -969,11 +1054,98 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeSetMobilePause
 }
 
 extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeMobileOpenMainMenu(
+    JNIEnv*, jobject)
+{
+    g_openxr_shell.mobile_open_main_menu();
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeMobileOpenQuickEdit(
+    JNIEnv*, jobject)
+{
+    g_openxr_shell.mobile_open_quick_edit();
+}
+
+extern "C" JNIEXPORT jboolean JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeMobilePanelVisible(
+    JNIEnv*, jobject)
+{
+    return g_openxr_shell.mobile_panel_visible() ? JNI_TRUE : JNI_FALSE;
+}
+
+extern "C" JNIEXPORT jint JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeMobilePanelGeneration(
+    JNIEnv*, jobject)
+{
+    return (jint)g_openxr_shell.mobile_panel_generation();
+}
+
+extern "C" JNIEXPORT jintArray JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeMobilePanelSize(
+    JNIEnv* env, jobject)
+{
+    std::vector<uint32_t> argb;
+    int w = 0, h = 0;
+    g_openxr_shell.mobile_copy_current_panel_argb(argb, w, h);
+    jintArray out = env->NewIntArray(2);
+    jint size_buf[2] = {(jint)w, (jint)h};
+    env->SetIntArrayRegion(out, 0, 2, size_buf);
+    return out;
+}
+
+extern "C" JNIEXPORT jintArray JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeMobilePanelPixels(
+    JNIEnv* env, jobject)
+{
+    std::vector<uint32_t> argb;
+    int w = 0, h = 0;
+    if (!g_openxr_shell.mobile_copy_current_panel_argb(argb, w, h) || argb.empty()) {
+        return env->NewIntArray(0);
+    }
+    jintArray out = env->NewIntArray((jsize)argb.size());
+    env->SetIntArrayRegion(out, 0, (jsize)argb.size(), reinterpret_cast<const jint*>(argb.data()));
+    return out;
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeMobilePanelTap(
+    JNIEnv*, jobject, jfloat u, jfloat v)
+{
+    g_openxr_shell.mobile_tap((float)u, (float)v);
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeMobilePanelScroll(
+    JNIEnv*, jobject, jint delta)
+{
+    g_openxr_shell.mobile_scroll((int)delta);
+}
+
+extern "C" JNIEXPORT jboolean JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeMobileBack(
+    JNIEnv*, jobject)
+{
+    return g_openxr_shell.mobile_back() ? JNI_TRUE : JNI_FALSE;
+}
+
+extern "C" JNIEXPORT void JNICALL
 Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileDrawFrame(
     JNIEnv*, jobject)
 {
     std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
     if (!g_mobile_renderer.renderer_ready || !g_mobile_renderer.surface_ready) return;
+
+    g_openxr_shell.mobile_refresh_visible_panel();
+    g_openxr_shell.export_mobile_visual_state(
+        g_mobile_renderer.vr_state,
+        g_mobile_renderer.config,
+        g_mobile_renderer.layer_names,
+        g_mobile_renderer.layer_order,
+        g_mobile_renderer.layer_enabled,
+        g_mobile_renderer.layer_ambilight,
+        g_mobile_renderer.layer_auto_dup_percent,
+        g_mobile_renderer.backend_kind);
 
     const uint64_t seq = g_frame_seq.load(std::memory_order_acquire);
     if (g_has_frame.load(std::memory_order_acquire) && seq != g_mobile_renderer.last_frame_seq) {

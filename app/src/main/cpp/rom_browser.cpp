@@ -211,6 +211,8 @@ void RomBrowser::upload_pixels(const jint* pixels) {
                  GL_RGBA, GL_UNSIGNED_BYTE, rgba.data());
     glGenerateMipmap(GL_TEXTURE_2D);
     glBindTexture(GL_TEXTURE_2D, 0);
+    m_bitmap_rgba = rgba;
+    ++m_bitmap_generation;
     m_dirty = false;
 }
 

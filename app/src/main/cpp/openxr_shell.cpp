@@ -309,6 +309,16 @@ static void upload_panel_texture(GLuint& tex_out, int tex_w, int tex_h, const st
     glBindTexture(GL_TEXTURE_2D, 0);
 }
 
+static void cache_mobile_panel_bitmap(OpenXrShell::MobilePanelBitmap* bitmap,
+                                      int tex_w, int tex_h,
+                                      const std::vector<uint8_t>& rgba) {
+    if (!bitmap) return;
+    bitmap->width = tex_w;
+    bitmap->height = tex_h;
+    bitmap->rgba = rgba;
+    ++bitmap->generation;
+}
+
 struct HelpItem {
     std::string input;
     std::string action;
@@ -1764,9 +1774,9 @@ void OpenXrShell::apply_layer_filter_mode(LayerFilterMode mode, bool restore_sav
     m_layer_panel_dirty = true;
 }
 
-bool OpenXrShell::start(JavaVM* vm, JNIEnv* env, jobject activity, bool open_menu_on_startup,
-                        int autosave_interval_seconds, bool load_last_save_enabled,
-                        std::string& status_out) {
+bool OpenXrShell::start_common(JavaVM* vm, JNIEnv* env, jobject activity, bool open_menu_on_startup,
+                               int autosave_interval_seconds, bool load_last_save_enabled,
+                               bool start_xr_thread, std::string& status_out) {
     stop(env);
     if (!vm || !env || !activity) {
         status_out = "OpenXR start failed: invalid Android context.";
@@ -1782,6 +1792,7 @@ bool OpenXrShell::start(JavaVM* vm, JNIEnv* env, jobject activity, bool open_men
     m_avg_render_ms = 0.0f;
     m_max_render_ms = 0.0f;
     m_render_sample_count = 0;
+    m_headless_mode = !start_xr_thread;
 
     m_layer_filter_mode = LayerFilterMode::Hybrid;
     m_saved_layer_mode_state.valid = false;
@@ -1810,11 +1821,30 @@ bool OpenXrShell::start(JavaVM* vm, JNIEnv* env, jobject activity, bool open_men
     presentation::ensure_layer_runtime_state_matches_config(
         m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     sync_layer_capture_mask();
+    refresh_mobile_panel_pose_defaults();
 
-    set_status("Starting OpenXR shell...");
-    m_thread = std::thread([this]() { run(); });
+    set_status(start_xr_thread ? "Starting OpenXR shell..." : "Starting shared UI runtime...");
+    if (start_xr_thread) {
+        m_thread = std::thread([this]() { run(); });
+    } else {
+        m_running = true;
+    }
     status_out = status();
     return true;
+}
+
+bool OpenXrShell::start(JavaVM* vm, JNIEnv* env, jobject activity, bool open_menu_on_startup,
+                        int autosave_interval_seconds, bool load_last_save_enabled,
+                        std::string& status_out) {
+    return start_common(vm, env, activity, open_menu_on_startup,
+                        autosave_interval_seconds, load_last_save_enabled, true, status_out);
+}
+
+bool OpenXrShell::start_headless(JavaVM* vm, JNIEnv* env, jobject activity,
+                                 int autosave_interval_seconds, bool load_last_save_enabled,
+                                 std::string& status_out) {
+    return start_common(vm, env, activity, false,
+                        autosave_interval_seconds, load_last_save_enabled, false, status_out);
 }
 
 void OpenXrShell::request_open_main_menu() {
@@ -1823,6 +1853,552 @@ void OpenXrShell::request_open_main_menu() {
 
 void OpenXrShell::request_open_homebrew() {
     m_request_open_homebrew = true;
+}
+
+void OpenXrShell::refresh_mobile_panel_pose_defaults() {
+    m_main_menu_pose = {{0,0,0,1},{0,0,-1}};
+    m_quick_panel_pose = {{0,0,0,1},{0,0,-1}};
+    m_panel_pose = {{0,0,0,1},{0,0,-1}};
+    m_layer_panel_pose = {{0,0,0,1},{0,0,-1}};
+    m_settings_panel_pose = {{0,0,0,1},{0,0,-1}};
+    m_save_state_panel_pose = {{0,0,0,1},{0,0,-1}};
+    m_code_panel_pose = {{0,0,0,1},{0,0,-1}};
+    m_ctrlmap_panel_pose = {{0,0,0,1},{0,0,-1}};
+    m_homebrew_panel_pose = {{0,0,0,1},{0,0,-1}};
+}
+
+void OpenXrShell::mark_visual_state_dirty() {
+    m_quick_panel_dirty = true;
+    m_layer_panel_dirty = true;
+    m_settings_panel_dirty = true;
+    m_main_menu_dirty = true;
+    m_save_state_panel_dirty = true;
+    m_code_panel_dirty = true;
+    m_ctrlmap_panel_dirty = true;
+    m_hw_dirty = true;
+}
+
+void OpenXrShell::mobile_open_main_menu() {
+    if (m_rom_dir.empty() && m_vm && m_activity_global) {
+        JNIEnv* env = nullptr;
+        bool detach = false;
+        if (m_vm->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6) == JNI_EDETACHED) {
+            if (m_vm->AttachCurrentThread(&env, nullptr) == JNI_OK) detach = true;
+        }
+        if (env) {
+            jclass cls = env->GetObjectClass(m_activity_global);
+            jmethodID mid = env->GetMethodID(cls, "getRomDirectory", "()Ljava/lang/String;");
+            if (mid) {
+                jstring jr = (jstring)env->CallObjectMethod(m_activity_global, mid);
+                if (jr) {
+                    const char* chars = env->GetStringUTFChars(jr, nullptr);
+                    if (chars) {
+                        m_rom_dir = chars;
+                        env->ReleaseStringUTFChars(jr, chars);
+                    }
+                    env->DeleteLocalRef(jr);
+                }
+                if (env->ExceptionCheck()) env->ExceptionClear();
+            }
+            env->DeleteLocalRef(cls);
+        }
+        if (detach) m_vm->DetachCurrentThread();
+    }
+    if (!m_rom_dir.empty()) m_rom_browser.scan(m_rom_dir);
+    refresh_mobile_panel_pose_defaults();
+    m_menu_open = true;
+    m_ctrlmap_mode = false;
+    m_active_sub_panel = 0;
+    m_main_menu_hovered = -1;
+    m_laser_hit = false;
+    m_laser_panel = -1;
+    m_code_input_buf.clear();
+    m_settings_return_to_quick = false;
+    refresh_save_state_slots();
+    mark_visual_state_dirty();
+}
+
+void OpenXrShell::mobile_open_quick_edit() {
+    refresh_quick_layer_presets();
+    refresh_mobile_panel_pose_defaults();
+    m_menu_open = false;
+    m_ctrlmap_mode = false;
+    m_active_sub_panel = k_panel_quick_edit;
+    m_settings_return_to_quick = false;
+    m_laser_hit = false;
+    m_laser_panel = -1;
+    m_quick_panel_layout = make_quick_edit_layout((int)m_quick_settings_presets.size(),
+                                                  (int)m_quick_layer_presets.size());
+    m_quick_panel_dirty = true;
+}
+
+bool OpenXrShell::mobile_panel_visible() const {
+    return m_menu_open || m_active_sub_panel == k_panel_quick_edit ||
+           m_active_sub_panel == k_panel_layers ||
+           m_active_sub_panel == k_panel_settings;
+}
+
+int OpenXrShell::mobile_panel_generation() const {
+    const MobilePanelBitmap* bmp = nullptr;
+    if (m_menu_open) {
+        if (m_ctrlmap_mode) bmp = &m_ctrlmap_bitmap;
+        else if (m_active_sub_panel == 0) bmp = &m_main_menu_bitmap;
+        else if (m_active_sub_panel == 1) return m_rom_browser.bitmap_generation();
+        else if (m_active_sub_panel == 2) bmp = &m_layer_bitmap;
+        else if (m_active_sub_panel == 3) bmp = &m_settings_bitmap;
+        else if (m_active_sub_panel == 4) bmp = &m_save_state_bitmap;
+        else if (m_active_sub_panel == 5) bmp = &m_code_bitmap;
+        else if (m_active_sub_panel == 6) bmp = &m_ctrlmap_bitmap;
+        else if (m_active_sub_panel == k_panel_homebrew) bmp = &m_homebrew_bitmap;
+    } else if (m_active_sub_panel == k_panel_quick_edit) {
+        bmp = &m_quick_bitmap;
+    } else if (m_active_sub_panel == 2) {
+        bmp = &m_layer_bitmap;
+    } else if (m_active_sub_panel == 3) {
+        bmp = &m_settings_bitmap;
+    }
+    return bmp ? bmp->generation : 0;
+}
+
+bool OpenXrShell::mobile_copy_current_panel_argb(std::vector<uint32_t>& argb_out, int& width_out, int& height_out) const {
+    const std::vector<uint8_t>* rgba = nullptr;
+    const MobilePanelBitmap* bmp = nullptr;
+    if (m_menu_open) {
+        if (m_ctrlmap_mode) bmp = &m_ctrlmap_bitmap;
+        else if (m_active_sub_panel == 0) bmp = &m_main_menu_bitmap;
+        else if (m_active_sub_panel == 1) {
+            width_out = m_rom_browser.bitmap_width();
+            height_out = m_rom_browser.bitmap_height();
+            rgba = &m_rom_browser.bitmap_rgba();
+        } else if (m_active_sub_panel == 2) bmp = &m_layer_bitmap;
+        else if (m_active_sub_panel == 3) bmp = &m_settings_bitmap;
+        else if (m_active_sub_panel == 4) bmp = &m_save_state_bitmap;
+        else if (m_active_sub_panel == 5) bmp = &m_code_bitmap;
+        else if (m_active_sub_panel == 6) bmp = &m_ctrlmap_bitmap;
+        else if (m_active_sub_panel == k_panel_homebrew) bmp = &m_homebrew_bitmap;
+    } else if (m_active_sub_panel == k_panel_quick_edit) {
+        bmp = &m_quick_bitmap;
+    } else if (m_active_sub_panel == 2) {
+        bmp = &m_layer_bitmap;
+    } else if (m_active_sub_panel == 3) {
+        bmp = &m_settings_bitmap;
+    }
+    if (bmp) {
+        width_out = bmp->width;
+        height_out = bmp->height;
+        rgba = &bmp->rgba;
+    }
+    if (!rgba || rgba->empty() || width_out <= 0 || height_out <= 0) return false;
+    argb_out.resize((size_t)width_out * (size_t)height_out);
+    for (int i = 0; i < width_out * height_out; ++i) {
+        const uint8_t r = (*rgba)[i * 4 + 0];
+        const uint8_t g = (*rgba)[i * 4 + 1];
+        const uint8_t b = (*rgba)[i * 4 + 2];
+        const uint8_t a = (*rgba)[i * 4 + 3];
+        argb_out[i] = ((uint32_t)a << 24) | ((uint32_t)r << 16) | ((uint32_t)g << 8) | (uint32_t)b;
+    }
+    return true;
+}
+
+void OpenXrShell::mobile_refresh_visible_panel() {
+    if (!m_vm || !m_activity_global) return;
+    if (m_menu_open) {
+        if (m_ctrlmap_mode) rebuild_ctrlmap_panel_texture();
+        else if (m_active_sub_panel == 0) rebuild_main_menu_texture();
+        else if (m_active_sub_panel == 1) m_rom_browser.rebuild_texture(m_vm, m_activity_global);
+        else if (m_active_sub_panel == 2) rebuild_layer_panel_texture();
+        else if (m_active_sub_panel == 3) rebuild_settings_panel_texture();
+        else if (m_active_sub_panel == 4) rebuild_save_state_panel_texture();
+        else if (m_active_sub_panel == 5) rebuild_code_panel_texture();
+        else if (m_active_sub_panel == 6) rebuild_ctrlmap_panel_texture();
+        else if (m_active_sub_panel == k_panel_homebrew) rebuild_homebrew_panel_texture();
+    } else if (m_active_sub_panel == k_panel_quick_edit) {
+        rebuild_quick_edit_panel_texture();
+    } else if (m_active_sub_panel == 2) {
+        rebuild_layer_panel_texture();
+    } else if (m_active_sub_panel == 3) {
+        rebuild_settings_panel_texture();
+    }
+}
+
+bool OpenXrShell::mobile_back() {
+    if (!mobile_panel_visible()) return false;
+    if (m_menu_open) {
+        if (m_ctrlmap_mode) {
+            m_ctrlmap_mode = false;
+            m_active_sub_panel = 0;
+            m_main_menu_dirty = true;
+        } else if (m_active_sub_panel == 0) {
+            m_menu_open = false;
+        } else if (m_active_sub_panel == k_panel_homebrew && m_hw_view == 1) {
+            m_hw_view = 0;
+            m_hw_dirty = true;
+        } else {
+            m_active_sub_panel = 0;
+            m_settings_return_to_quick = false;
+            m_main_menu_dirty = true;
+        }
+    } else if (m_active_sub_panel == k_panel_quick_edit || m_active_sub_panel == 2 || m_active_sub_panel == 3) {
+        m_active_sub_panel = 0;
+        m_menu_open = false;
+        m_settings_return_to_quick = false;
+    }
+    return true;
+}
+
+void OpenXrShell::mobile_scroll(int delta) {
+    if (delta == 0) return;
+    if (m_menu_open && m_active_sub_panel == 1) {
+        m_rom_browser.scroll(delta);
+    } else if (m_menu_open && m_active_sub_panel == k_panel_homebrew && m_hw_view == 0) {
+        m_hw_scroll = std::max(0, m_hw_scroll + delta);
+        m_hw_dirty = true;
+    }
+}
+
+void OpenXrShell::export_mobile_visual_state(
+    VrState& vr_state_out,
+    GameConfig& config_out,
+    std::vector<std::string>& layer_names_out,
+    std::vector<int>& layer_order_out,
+    std::vector<bool>& layer_enabled_out,
+    std::vector<bool>& layer_ambilight_out,
+    int& layer_auto_dup_percent_out,
+    BackendKind& backend_kind_out) const {
+    vr_state_out = m_vr_state;
+    config_out = m_config;
+    layer_names_out = m_layer_names;
+    layer_order_out = m_layer_order;
+    layer_enabled_out = m_layer_enabled;
+    layer_ambilight_out = m_layer_ambilight;
+    layer_auto_dup_percent_out = m_layer_auto_dup_percent;
+    backend_kind_out = m_current_backend_kind;
+}
+
+void OpenXrShell::import_mobile_visual_state(
+    const VrState& vr_state_in,
+    const GameConfig& config_in,
+    const std::vector<std::string>& layer_names_in,
+    const std::vector<int>& layer_order_in,
+    const std::vector<bool>& layer_enabled_in,
+    const std::vector<bool>& layer_ambilight_in,
+    int layer_auto_dup_percent_in,
+    BackendKind backend_kind_in) {
+    m_vr_state = vr_state_in;
+    m_config = config_in;
+    m_layer_names = layer_names_in;
+    m_layer_order = layer_order_in;
+    m_layer_enabled = layer_enabled_in;
+    m_layer_ambilight = layer_ambilight_in;
+    m_layer_auto_dup_percent = layer_auto_dup_percent_in;
+    m_current_backend_kind = backend_kind_in;
+    mark_visual_state_dirty();
+}
+
+void OpenXrShell::mobile_tap(float u, float v) {
+    if (!mobile_panel_visible()) return;
+    u = std::clamp(u, 0.0f, 1.0f);
+    v = std::clamp(v, 0.0f, 1.0f);
+
+    auto open_code_for_share = [&]() {
+        m_code_panel_quick_name_mode = false;
+        m_code_input_buf.clear();
+        m_active_sub_panel = k_panel_code;
+        m_code_panel_dirty = true;
+    };
+
+    auto adjust_setting = [&](int row, int dir) {
+        auto clamp = [](float x, float lo, float hi) {
+            return std::clamp(x, lo, hi);
+        };
+        constexpr float step = 0.1f;
+        switch (row) {
+            case 0: m_vr_state.immersive_beta_enabled = !m_vr_state.immersive_beta_enabled; break;
+            case 1: m_vr_state.upscale = !m_vr_state.upscale; break;
+            case 2: m_vr_state.ambilight = !m_vr_state.ambilight; break;
+            case 3: m_vr_state.environment_sphere_mode = (EnvironmentSphereMode)(((int)m_vr_state.environment_sphere_mode + (dir == 0 ? 1 : dir) + 3) % 3); break;
+            case 4: m_vr_state.shadows = !m_vr_state.shadows; break;
+            case 5: m_vr_state.depth_mode = cycle_depth_mode(m_vr_state.depth_mode, dir == 0 ? 1 : dir); break;
+            case 6:
+                m_experimental_rumble_enabled = !m_experimental_rumble_enabled;
+                if (m_on_experimental_rumble_changed) m_on_experimental_rumble_changed(m_experimental_rumble_enabled);
+                break;
+            case 7: m_vr_state.perspective_comp = !m_vr_state.perspective_comp; break;
+            case 8: m_vr_state.gamma = clamp(m_vr_state.gamma + dir * step, 0.5f, 2.0f); break;
+            case 9: m_vr_state.contrast = clamp(m_vr_state.contrast + dir * step, 0.5f, 2.0f); break;
+            case 10: m_vr_state.saturation = clamp(m_vr_state.saturation + dir * step, 0.0f, 2.0f); break;
+            case 11: m_vr_state.brightness = clamp(m_vr_state.brightness + dir * step, 0.5f, 2.0f); break;
+            case 13: m_vr_state.vr_resolution_scale = clamp(m_vr_state.vr_resolution_scale + dir * 0.25f, 0.25f, 4.0f); break;
+            default: break;
+        }
+        m_settings_panel_dirty = true;
+        mark_visual_state_dirty();
+    };
+
+    if (m_menu_open && m_active_sub_panel == 0) {
+        if (m_main_menu_layout.items.empty()) m_main_menu_layout = make_main_menu_layout(6);
+        const PanelLayoutItem* item = m_main_menu_layout.hit(u, v);
+        if (!item) return;
+        switch (item->row) {
+            case 0: m_active_sub_panel = 1; break;
+            case 1: m_active_sub_panel = 4; refresh_save_state_slots(); m_save_state_panel_dirty = true; break;
+            case 2: m_active_sub_panel = 3; m_settings_return_to_quick = false; m_settings_panel_dirty = true; break;
+            case 3: m_active_sub_panel = 6; m_ctrlmap_mode = true; m_ctrlmap_panel_dirty = true; break;
+            case 4: open_homebrew_panel(true); return;
+            case 5:
+                if (m_vm && m_activity_global) {
+                    JNIEnv* env = nullptr;
+                    bool detach = false;
+                    if (m_vm->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6) == JNI_EDETACHED) {
+                        if (m_vm->AttachCurrentThread(&env, nullptr) == JNI_OK) detach = true;
+                    }
+                    if (env) {
+                        jclass cls = env->GetObjectClass(m_activity_global);
+                        jmethodID mid = env->GetMethodID(cls, "exitApp", "()V");
+                        if (mid) env->CallVoidMethod(m_activity_global, mid);
+                        env->DeleteLocalRef(cls);
+                    }
+                    if (detach) m_vm->DetachCurrentThread();
+                }
+                return;
+        }
+        mark_visual_state_dirty();
+        return;
+    }
+    if (m_menu_open && m_active_sub_panel == 1) {
+        if (m_rom_browser.set_hover_uv(u, v) && !m_rom_browser.hovered_is_dir()) {
+            m_rom_browser.rebuild_texture(m_vm, m_activity_global);
+        }
+        if (m_rom_browser.hovered_is_dir()) {
+            m_rom_browser.enter_hovered();
+            return;
+        }
+        const std::string& path = m_rom_browser.hovered_path();
+        if (!path.empty()) {
+            RomLoader loader;
+            { std::lock_guard<std::mutex> lk(m_mutex); loader = m_rom_loader; }
+            if (loader) {
+                std::string err;
+                const bool ok = loader(path, err);
+                set_status(ok ? ("Loaded: " + path.substr(path.find_last_of("/\\") + 1))
+                              : ("Load failed: " + err));
+                if (ok) m_menu_open = false;
+            }
+        }
+        return;
+    }
+    if ((m_menu_open && m_active_sub_panel == k_panel_quick_edit) || (!m_menu_open && m_active_sub_panel == k_panel_quick_edit)) {
+        if (m_quick_panel_layout.items.empty()) {
+            m_quick_panel_layout = make_quick_edit_layout((int)m_quick_settings_presets.size(), (int)m_quick_layer_presets.size());
+        }
+        const PanelLayoutItem* item = m_quick_panel_layout.hit(u, v);
+        if (!item) return;
+        switch (item->role) {
+            case PanelRole::QuickSettingsPreset: apply_quick_settings_preset(item->id); break;
+            case PanelRole::QuickSettingsSave: request_quick_settings_preset_save(item->id); break;
+            case PanelRole::QuickLayersPreset: {
+                std::string status_text;
+                set_status(apply_quick_layer_preset(item->id, status_text) ? status_text : status_text);
+                break;
+            }
+            case PanelRole::QuickLayersSave: request_quick_layer_preset_save(item->id); break;
+            case PanelRole::QuickResetSettings: m_quick_settings_reset_pending = 1; apply_pending_vr_changes(); break;
+            case PanelRole::QuickResetLayers: m_quick_layers_reset_pending = 1; apply_pending_vr_changes(); break;
+            case PanelRole::QuickManualVisual: m_active_sub_panel = 3; m_settings_return_to_quick = true; break;
+            case PanelRole::QuickManualLayers: m_active_sub_panel = 2; break;
+            case PanelRole::QuickManualEdit: break;
+            default: break;
+        }
+        mark_visual_state_dirty();
+        return;
+    }
+    if ((m_menu_open && m_active_sub_panel == 2) || (!m_menu_open && m_active_sub_panel == 2)) {
+        const bool has_filter_row = is_snes_filter_capable_config(m_config);
+        if (m_layer_panel_layout.items.empty()) m_layer_panel_layout = make_layers_layout((int)m_layer_names.size(), has_filter_row);
+        const PanelLayoutItem* item = m_layer_panel_layout.hit(u, v);
+        if (!item) return;
+        const int n = (int)m_layer_names.size();
+        if (item->row >= 0 && item->row < n) {
+            const int orig = m_layer_order[item->row];
+            if (item->role == PanelRole::Visibility && orig < (int)m_layer_enabled.size()) {
+                m_layer_enabled[orig] = !m_layer_enabled[orig];
+                sync_layer_capture_mask();
+            } else if (item->role == PanelRole::Ambilight && orig < (int)m_layer_ambilight.size()) {
+                m_layer_ambilight[orig] = !m_layer_ambilight[orig];
+            }
+        } else if (item->row == n + 1) {
+            m_layer_auto_dup_percent = next_layer_auto_dup_percent(m_layer_auto_dup_percent);
+        } else if (has_filter_row && item->row == n + 2) {
+            apply_layer_filter_mode(next_layer_filter_mode(m_layer_filter_mode), true);
+        }
+        m_layer_panel_dirty = true;
+        return;
+    }
+    if ((m_menu_open && m_active_sub_panel == 3) || (!m_menu_open && m_active_sub_panel == 3)) {
+        if (m_settings_panel_layout.items.empty()) m_settings_panel_layout = make_settings_layout(20);
+        const PanelLayoutItem* item = m_settings_panel_layout.hit(u, v);
+        if (!item) return;
+        const int row = item->row;
+        if (item->role == PanelRole::Minus) adjust_setting(row, -1);
+        else if (item->role == PanelRole::Plus) adjust_setting(row, +1);
+        else if (row >= 0 && row <= 13) adjust_setting(row, 0);
+        else if (row == 14) { m_settings_action_pending = 5; apply_pending_vr_changes(); }
+        else if (row == 15) { m_settings_action_pending = 1; apply_pending_vr_changes(); }
+        else if (row == 16) { m_settings_action_pending = 2; apply_pending_vr_changes(); }
+        else if (row == 17) { m_settings_action_pending = 3; apply_pending_vr_changes(); }
+        else if (row == 18) { m_settings_action_pending = 4; apply_pending_vr_changes(); }
+        else if (row == 19) { m_active_sub_panel = m_settings_return_to_quick ? k_panel_quick_edit : 0; m_settings_return_to_quick = false; }
+        return;
+    }
+    if (m_menu_open && m_active_sub_panel == 4) {
+        if (m_save_state_panel_layout.items.empty()) m_save_state_panel_layout = make_save_state_layout();
+        const PanelLayoutItem* item = m_save_state_panel_layout.hit(u, v);
+        if (!item) return;
+        std::string err;
+        const int cell = item->id >= 0 ? item->id : item->row;
+        if (cell < k_save_state_slot_count) load_state_from_slot(cell, err);
+        else if (cell < k_save_state_slot_count * 2) save_state_to_slot(cell % k_save_state_slot_count, err);
+        else if (cell == 6) {
+            m_autosave_interval_seconds = next_autosave_interval_seconds(m_autosave_interval_seconds);
+            persist_save_automation_settings();
+            m_save_state_panel_dirty = true;
+        } else if (cell == 7) {
+            m_load_last_save_enabled = !m_load_last_save_enabled;
+            persist_save_automation_settings();
+            m_save_state_panel_dirty = true;
+        }
+        return;
+    }
+    if (m_menu_open && m_ctrlmap_mode) {
+        if (m_ctrlmap_panel_layout.items.empty()) m_ctrlmap_panel_layout = make_ctrlmap_layout(SNES_BUTTON_COUNT, 6);
+        const PanelLayoutItem* item = m_ctrlmap_panel_layout.hit(u, v);
+        if (!item) return;
+        const int n = SNES_BUTTON_COUNT;
+        if (item->row < n) {
+            m_ctrlmap_selected_row = (m_ctrlmap_selected_row == item->row) ? -1 : item->row;
+        } else {
+            switch (item->row - n) {
+                case 0: m_button_map = default_button_map_for_backend(m_current_backend_kind); break;
+                case 1: m_settings_action_pending = 3; apply_pending_vr_changes(); break;
+                case 2: m_settings_action_pending = 4; apply_pending_vr_changes(); break;
+                case 3: m_settings_action_pending = 1; apply_pending_vr_changes(); break;
+                case 4: m_settings_action_pending = 2; apply_pending_vr_changes(); break;
+                case 5: m_ctrlmap_mode = false; m_active_sub_panel = 0; break;
+                default: break;
+            }
+        }
+        m_ctrlmap_panel_dirty = true;
+        return;
+    }
+    if (m_menu_open && m_active_sub_panel == 5) {
+        if (m_code_panel_layout.items.empty()) m_code_panel_layout = make_code_layout();
+        const PanelLayoutItem* item = m_code_panel_layout.hit(u, v);
+        if (!item) return;
+        static const char* k_code_chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        constexpr int k_backspace = 36;
+        if (item->role == PanelRole::CodeCancel) {
+            if (m_code_panel_quick_name_mode) {
+                cancel_quick_preset_name(m_pending_quick_preset_kind, m_pending_quick_preset_slot);
+                m_code_panel_quick_name_mode = false;
+                m_active_sub_panel = k_panel_quick_edit;
+            } else {
+                m_active_sub_panel = 0;
+            }
+        } else if (item->role == PanelRole::CodeSpace) {
+            m_code_input_buf.push_back(' ');
+        } else if (item->role == PanelRole::CodeConfirm) {
+            if (m_code_panel_quick_name_mode) {
+                submit_quick_preset_name(m_pending_quick_preset_kind, m_pending_quick_preset_slot, m_code_input_buf);
+                m_code_panel_quick_name_mode = false;
+                m_active_sub_panel = k_panel_quick_edit;
+            } else if (!m_code_input_buf.empty()) {
+                apply_state_code(m_code_input_buf);
+                apply_pending_vr_changes();
+                m_code_input_buf.clear();
+            }
+        } else if (item->role == PanelRole::Key) {
+            if (item->id == k_backspace) {
+                if (!m_code_input_buf.empty()) m_code_input_buf.pop_back();
+            } else if (item->id >= 0 && item->id < 36) {
+                m_code_input_buf.push_back(k_code_chars[item->id]);
+            }
+        }
+        m_code_panel_dirty = true;
+        return;
+    }
+    if (m_menu_open && m_active_sub_panel == k_panel_homebrew) {
+        if (m_homebrew_panel_layout.items.empty()) m_homebrew_panel_layout = make_homebrew_layout(0, m_hw_view);
+        const PanelLayoutItem* item = m_homebrew_panel_layout.hit(u, v);
+        if (!item) return;
+        const int row = item->row;
+        if (m_hw_view == 0) {
+            const int total_rows = (int)m_homebrew_panel_layout.items.size();
+            if (row == 0) {
+                if (m_vm && m_activity_global) {
+                    JNIEnv* env = nullptr;
+                    bool detach = false;
+                    if (m_vm->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6) == JNI_EDETACHED) {
+                        if (m_vm->AttachCurrentThread(&env, nullptr) == JNI_OK) detach = true;
+                    }
+                    if (env) {
+                        jclass cls = env->GetObjectClass(m_activity_global);
+                        jmethodID mid = env->GetMethodID(cls, "showHomebrewFeedDialog", "(I)V");
+                        if (mid) env->CallVoidMethod(m_activity_global, mid, (jint)m_hw_feed);
+                        env->DeleteLocalRef(cls);
+                    }
+                    if (detach) m_vm->DetachCurrentThread();
+                }
+            } else if (row == total_rows - 1) {
+                m_active_sub_panel = 0;
+            } else {
+                m_hw_selected = m_hw_scroll + row - 1;
+                m_hw_view = 1;
+            }
+        } else {
+            if (row == 0 || row == 3) {
+                m_hw_view = 0;
+            } else if (row == 1 || row == 2) {
+                m_laser_panel = k_panel_homebrew;
+                m_laser_hit_item = *item;
+                m_laser_hit_has_item = true;
+                // Reuse the existing action block by mirroring the row state on next panel refresh.
+                if (row == 1 && m_vm && m_activity_global) {
+                    JNIEnv* env = nullptr;
+                    bool detach = false;
+                    if (m_vm->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6) == JNI_EDETACHED) {
+                        if (m_vm->AttachCurrentThread(&env, nullptr) == JNI_OK) detach = true;
+                    }
+                    if (env) {
+                        jclass cls = env->GetObjectClass(m_activity_global);
+                        jmethodID mid_check = env->GetMethodID(cls, "isHomebrewDownloaded", "(I)Z");
+                        jboolean downloaded = mid_check ? env->CallBooleanMethod(m_activity_global, mid_check, (jint)m_hw_selected) : JNI_FALSE;
+                        jmethodID mid = env->GetMethodID(cls, downloaded ? "homebrewDelete" : "homebrewDownload", "(I)V");
+                        if (mid) env->CallVoidMethod(m_activity_global, mid, (jint)m_hw_selected);
+                        env->DeleteLocalRef(cls);
+                    }
+                    if (detach) m_vm->DetachCurrentThread();
+                } else if (row == 2 && m_vm && m_activity_global) {
+                    JNIEnv* env = nullptr;
+                    bool detach = false;
+                    if (m_vm->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6) == JNI_EDETACHED) {
+                        if (m_vm->AttachCurrentThread(&env, nullptr) == JNI_OK) detach = true;
+                    }
+                    if (env) {
+                        jclass cls = env->GetObjectClass(m_activity_global);
+                        jmethodID mid = env->GetMethodID(cls, "homebrewOpenWebsite", "(I)V");
+                        if (mid) env->CallVoidMethod(m_activity_global, mid, (jint)m_hw_selected);
+                        env->DeleteLocalRef(cls);
+                    }
+                    if (detach) m_vm->DetachCurrentThread();
+                }
+            }
+            m_hw_dirty = true;
+        }
+        return;
+    }
+    if (m_menu_open && m_active_sub_panel == 6 && !m_ctrlmap_mode) {
+        open_code_for_share();
+    }
 }
 
 void OpenXrShell::stop(JNIEnv* env) {
@@ -2567,7 +3143,8 @@ static void rebuild_panel_tex(JavaVM* vm, jobject activity,
                                const std::vector<jvalue>& extra_args,
                                const char* sig,
                                int tex_w, int tex_h,
-                               GLuint& tex_out, bool& dirty_out)
+                               GLuint& tex_out, bool& dirty_out,
+                               OpenXrShell::MobilePanelBitmap* mobile_bitmap)
 {
     JNIEnv* env = nullptr;
     bool detach = false;
@@ -2606,6 +3183,7 @@ static void rebuild_panel_tex(JavaVM* vm, jobject activity,
                 rgba[i*4+2] = (a      ) & 0xFF; // B
                 rgba[i*4+3] = (a >> 24) & 0xFF; // A
             }
+            cache_mobile_panel_bitmap(mobile_bitmap, tex_w, tex_h, rgba);
             upload_panel_texture(tex_out, tex_w, tex_h, rgba);
             env->ReleaseIntArrayElements(pixels, raw, JNI_ABORT);
         }
@@ -2683,7 +3261,8 @@ void OpenXrShell::rebuild_layer_panel_texture() {
     rebuild_panel_tex(m_vm, m_activity_global,
                       "renderLayerPanelBitmap", names_arr, args,
                       "([Ljava/lang/String;[Z[ZIIIIZLjava/lang/String;Ljava/lang/String;Z)[I",
-                      metrics.tex_w, metrics.tex_h, m_layer_panel_tex, m_layer_panel_dirty);
+                      metrics.tex_w, metrics.tex_h, m_layer_panel_tex, m_layer_panel_dirty,
+                      &m_layer_bitmap);
 
     env->DeleteLocalRef(names_arr);
     env->DeleteLocalRef(enabled_arr);
@@ -2828,7 +3407,8 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     rebuild_panel_tex(m_vm, m_activity_global,
                       "renderSettingsPanelBitmap", names_arr, args,
                       "([Ljava/lang/String;[Ljava/lang/String;[ZIIIILjava/lang/String;)[I",
-                      metrics.tex_w, metrics.tex_h, m_settings_panel_tex, m_settings_panel_dirty);
+                      metrics.tex_w, metrics.tex_h, m_settings_panel_tex, m_settings_panel_dirty,
+                      &m_settings_bitmap);
 
     if (env->ExceptionCheck()) env->ExceptionClear();
     env->DeleteLocalRef(jcode);
@@ -2915,6 +3495,7 @@ void OpenXrShell::rebuild_save_state_panel_texture() {
                     rgba[i * 4 + 2] = a & 0xFF;
                     rgba[i * 4 + 3] = (a >> 24) & 0xFF;
                 }
+                cache_mobile_panel_bitmap(&m_save_state_bitmap, metrics.tex_w, metrics.tex_h, rgba);
                 upload_panel_texture(m_save_state_panel_tex, metrics.tex_w, metrics.tex_h, rgba);
                 env->ReleaseIntArrayElements(pixels, raw, JNI_ABORT);
             }
@@ -2993,6 +3574,7 @@ void OpenXrShell::rebuild_code_panel_texture() {
                 rgba[i*4+2] = (a      ) & 0xFF;
                 rgba[i*4+3] = (a >> 24) & 0xFF;
             }
+            cache_mobile_panel_bitmap(&m_code_bitmap, metrics.tex_w, metrics.tex_h, rgba);
             upload_panel_texture(m_code_panel_tex, metrics.tex_w, metrics.tex_h, rgba);
             env->ReleaseIntArrayElements(pixels, raw, JNI_ABORT);
         }
@@ -3068,6 +3650,7 @@ void OpenXrShell::rebuild_ctrlmap_panel_texture() {
                     rgba[i*4+2] = (a      ) & 0xFF;
                     rgba[i*4+3] = (a >> 24) & 0xFF;
                 }
+                cache_mobile_panel_bitmap(&m_ctrlmap_bitmap, metrics.tex_w, metrics.tex_h, rgba);
                 upload_panel_texture(m_ctrlmap_panel_tex, metrics.tex_w, metrics.tex_h, rgba);
                 env->ReleaseIntArrayElements(pixels, raw, JNI_ABORT);
             }
@@ -3152,6 +3735,7 @@ void OpenXrShell::rebuild_help_panel_texture() {
                     rgba[i*4+2] = (a      ) & 0xFF;
                     rgba[i*4+3] = (a >> 24) & 0xFF;
                 }
+                cache_mobile_panel_bitmap(&m_help_bitmap, metrics.tex_w, metrics.tex_h, rgba);
                 upload_panel_texture(m_help_panel_tex, metrics.tex_w, metrics.tex_h, rgba);
                 env->ReleaseIntArrayElements(pixels, raw, JNI_ABORT);
             }
@@ -3214,6 +3798,7 @@ void OpenXrShell::rebuild_homebrew_panel_texture() {
                     rgba[i*4+2] = (a      ) & 0xFF;
                     rgba[i*4+3] = (a >> 24) & 0xFF;
                 }
+                cache_mobile_panel_bitmap(&m_homebrew_bitmap, metrics.tex_w, metrics.tex_h, rgba);
                 upload_panel_texture(m_hw_tex, metrics.tex_w, metrics.tex_h, rgba);
                 env->ReleaseIntArrayElements(pixels, raw, JNI_ABORT);
             }
@@ -3294,6 +3879,7 @@ void OpenXrShell::rebuild_main_menu_texture() {
                     rgba[i*4+2] = (a      ) & 0xFF;
                     rgba[i*4+3] = (a >> 24) & 0xFF;
                 }
+                cache_mobile_panel_bitmap(&m_main_menu_bitmap, metrics.tex_w, metrics.tex_h, rgba);
                 upload_panel_texture(m_main_menu_tex, metrics.tex_w, metrics.tex_h, rgba);
                 env->ReleaseIntArrayElements(pixels, raw, JNI_ABORT);
             }
@@ -3379,7 +3965,8 @@ void OpenXrShell::rebuild_quick_edit_panel_texture() {
     rebuild_panel_tex(m_vm, m_activity_global,
                       "renderQuickEditPanelBitmap", settings_arr, args,
                       "([Ljava/lang/String;[Ljava/lang/String;[ZIIIIIII)[I",
-                      metrics.tex_w, metrics.tex_h, m_quick_panel_tex, m_quick_panel_dirty);
+                      metrics.tex_w, metrics.tex_h, m_quick_panel_tex, m_quick_panel_dirty,
+                      &m_quick_bitmap);
 
     env->DeleteLocalRef(settings_arr);
     env->DeleteLocalRef(layers_arr);
@@ -4363,6 +4950,21 @@ void OpenXrShell::open_homebrew_panel(bool fetch_feed) {
 
 void OpenXrShell::open_quick_edit_panel() {
     const PanelMetrics quick_metrics = panel_metrics(PanelKind::QuickEdit);
+
+    if (!m_impl) {
+        refresh_mobile_panel_pose_defaults();
+        refresh_quick_layer_presets();
+        m_quick_panel_layout = make_quick_edit_layout((int)m_quick_settings_presets.size(),
+                                                      (int)m_quick_layer_presets.size());
+        m_quick_panel_dirty = true;
+        m_settings_return_to_quick = false;
+        m_menu_open = false;
+        m_ctrlmap_mode = false;
+        m_active_sub_panel = k_panel_quick_edit;
+        m_laser_hit = false;
+        m_laser_panel = -1;
+        return;
+    }
 
     const XrQuaternionf& q = m_impl->last_hmd_pose.orientation;
     const XrVector3f& p = m_impl->last_hmd_pose.position;

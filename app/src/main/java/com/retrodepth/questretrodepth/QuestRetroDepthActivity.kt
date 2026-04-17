@@ -3,6 +3,7 @@ package com.retrodepth.questretrodepth
 import android.app.Activity
 import android.app.AlertDialog
 import android.content.Intent
+import android.graphics.Bitmap
 import android.graphics.Color
 import android.net.Uri
 import android.opengl.GLSurfaceView
@@ -18,6 +19,7 @@ import android.view.MotionEvent
 import android.view.ScaleGestureDetector
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.LinearLayout
@@ -30,13 +32,21 @@ import java.util.zip.ZipInputStream
 import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10
 
-class QuestRetroDepthActivity : Activity() {
+class QuestRetroDepthActivity : QuestVrActivity() {
     private val sevenZipBufferSize = 8192
     private lateinit var glView: GLSurfaceView
     private lateinit var statusView: TextView
     private lateinit var romView: TextView
     private lateinit var runButton: Button
     private lateinit var vrButton: Button
+    private lateinit var gamepadOverlay: View
+    private lateinit var sharedPanelOverlay: FrameLayout
+    private lateinit var sharedPanelImage: ImageView
+    private var sharedPanelGeneration = -1
+    private var panelTouchStartX = 0f
+    private var panelTouchStartY = 0f
+    private var panelAccumDy = 0f
+    private var panelDragging = false
 
     private val handler = Handler(Looper.getMainLooper())
     private var loadedRomFile: File? = null
@@ -68,6 +78,7 @@ class QuestRetroDepthActivity : Activity() {
     private val statusPoll = object : Runnable {
         override fun run() {
             statusView.text = nativeGetLastStatus()
+            refreshSharedPanel()
             handler.postDelayed(this, 250L)
         }
     }
@@ -97,6 +108,7 @@ class QuestRetroDepthActivity : Activity() {
         handler.post(statusPoll)
         refreshLocalRomSummary()
         nativeSetMobilePaused(!running)
+        refreshSharedPanel(force = true)
     }
 
     override fun onPause() {
@@ -104,6 +116,14 @@ class QuestRetroDepthActivity : Activity() {
         handler.removeCallbacks(statusPoll)
         glView.onPause()
         nativeStopMobile()
+    }
+
+    override fun onBackPressed() {
+        if (nativeMobileBack()) {
+            refreshSharedPanel(force = true)
+            return
+        }
+        super.onBackPressed()
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -178,6 +198,20 @@ class QuestRetroDepthActivity : Activity() {
             text = "Local ROMs"
             setOnClickListener { openLocalRomChooser() }
         }
+        val menuButton = Button(this).apply {
+            text = "Menu"
+            setOnClickListener {
+                nativeMobileOpenMainMenu()
+                refreshSharedPanel(force = true)
+            }
+        }
+        val quickButton = Button(this).apply {
+            text = "Quick Edit"
+            setOnClickListener {
+                nativeMobileOpenQuickEdit()
+                refreshSharedPanel(force = true)
+            }
+        }
         vrButton = Button(this).apply {
             text = "Enter VR"
             isEnabled = supportsVrRedirect()
@@ -199,6 +233,14 @@ class QuestRetroDepthActivity : Activity() {
 
         controls.addView(openButton)
         controls.addView(localButton, LinearLayout.LayoutParams(
+            ViewGroup.LayoutParams.WRAP_CONTENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT
+        ).apply { leftMargin = dp(8) })
+        controls.addView(menuButton, LinearLayout.LayoutParams(
+            ViewGroup.LayoutParams.WRAP_CONTENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT
+        ).apply { leftMargin = dp(8) })
+        controls.addView(quickButton, LinearLayout.LayoutParams(
             ViewGroup.LayoutParams.WRAP_CONTENT,
             ViewGroup.LayoutParams.WRAP_CONTENT
         ).apply { leftMargin = dp(8) })
@@ -234,7 +276,32 @@ class QuestRetroDepthActivity : Activity() {
             Gravity.TOP
         ))
 
-        root.addView(buildGamepadOverlay(), FrameLayout.LayoutParams(
+        gamepadOverlay = buildGamepadOverlay()
+        root.addView(gamepadOverlay, FrameLayout.LayoutParams(
+            FrameLayout.LayoutParams.MATCH_PARENT,
+            FrameLayout.LayoutParams.MATCH_PARENT
+        ))
+        sharedPanelImage = ImageView(this).apply {
+            adjustViewBounds = true
+            setBackgroundColor(Color.argb(220, 6, 10, 14))
+            setOnTouchListener { _, event ->
+                handleSharedPanelTouch(event)
+                true
+            }
+        }
+        sharedPanelOverlay = FrameLayout(this).apply {
+            setBackgroundColor(Color.argb(150, 0, 0, 0))
+            visibility = View.GONE
+            addView(sharedPanelImage, FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.MATCH_PARENT,
+                FrameLayout.LayoutParams.WRAP_CONTENT,
+                Gravity.CENTER
+            ).apply {
+                leftMargin = dp(20)
+                rightMargin = dp(20)
+            })
+        }
+        root.addView(sharedPanelOverlay, FrameLayout.LayoutParams(
             FrameLayout.LayoutParams.MATCH_PARENT,
             FrameLayout.LayoutParams.MATCH_PARENT
         ))
@@ -330,6 +397,7 @@ class QuestRetroDepthActivity : Activity() {
     }
 
     private fun handleSceneTouch(event: MotionEvent) {
+        if (sharedPanelOverlay.visibility == View.VISIBLE) return
         when (event.actionMasked) {
             MotionEvent.ACTION_DOWN -> {
                 pointerMode = 1
@@ -367,6 +435,58 @@ class QuestRetroDepthActivity : Activity() {
             MotionEvent.ACTION_UP,
             MotionEvent.ACTION_CANCEL -> pointerMode = 0
         }
+    }
+
+    private fun handleSharedPanelTouch(event: MotionEvent) {
+        when (event.actionMasked) {
+            MotionEvent.ACTION_DOWN -> {
+                panelTouchStartX = event.x
+                panelTouchStartY = event.y
+                panelAccumDy = 0f
+                panelDragging = false
+            }
+            MotionEvent.ACTION_MOVE -> {
+                val dy = event.y - panelTouchStartY
+                panelAccumDy += dy
+                if (kotlin.math.abs(panelAccumDy) > dp(28)) {
+                    val step = if (panelAccumDy > 0f) 1 else -1
+                    nativeMobilePanelScroll(step)
+                    panelTouchStartY = event.y
+                    panelAccumDy = 0f
+                    panelDragging = true
+                    refreshSharedPanel(force = true)
+                }
+            }
+            MotionEvent.ACTION_UP -> {
+                if (!panelDragging) {
+                    val w = sharedPanelImage.width.coerceAtLeast(1)
+                    val h = sharedPanelImage.height.coerceAtLeast(1)
+                    val u = (event.x / w.toFloat()).coerceIn(0f, 1f)
+                    val v = (event.y / h.toFloat()).coerceIn(0f, 1f)
+                    nativeMobilePanelTap(u, v)
+                    refreshSharedPanel(force = true)
+                }
+            }
+        }
+    }
+
+    private fun refreshSharedPanel(force: Boolean = false) {
+        val visible = nativeMobilePanelVisible()
+        sharedPanelOverlay.visibility = if (visible) View.VISIBLE else View.GONE
+        gamepadOverlay.visibility = if (visible) View.GONE else View.VISIBLE
+        if (!visible) {
+            sharedPanelGeneration = -1
+            return
+        }
+        val generation = nativeMobilePanelGeneration()
+        if (!force && generation == sharedPanelGeneration) return
+        val widthHeight = nativeMobilePanelSize()
+        if (widthHeight.size < 2 || widthHeight[0] <= 0 || widthHeight[1] <= 0) return
+        val pixels = nativeMobilePanelPixels()
+        if (pixels.isEmpty()) return
+        val bitmap = Bitmap.createBitmap(pixels, widthHeight[0], widthHeight[1], Bitmap.Config.ARGB_8888)
+        sharedPanelImage.setImageBitmap(bitmap)
+        sharedPanelGeneration = generation
     }
 
     private fun syncRunButton() {
@@ -589,12 +709,6 @@ class QuestRetroDepthActivity : Activity() {
         return (value * resources.displayMetrics.density).toInt()
     }
 
-    fun getSettingsDirectory(): String {
-        val dir = File(Environment.getExternalStorageDirectory(), "QuestRetroDepth/config")
-        if (dir.exists() || dir.mkdirs()) return dir.absolutePath
-        return File(getExternalFilesDir(null), "settings").apply { mkdirs() }.absolutePath
-    }
-
     private external fun nativeStartMobile(activity: QuestRetroDepthActivity): String
     private external fun nativeStopMobile()
     private external fun nativeOnMobileSurfaceCreated()
@@ -607,6 +721,15 @@ class QuestRetroDepthActivity : Activity() {
         l: Boolean, r: Boolean, start: Boolean, select: Boolean
     )
     private external fun nativeSetMobilePaused(paused: Boolean)
+    private external fun nativeMobileOpenMainMenu()
+    private external fun nativeMobileOpenQuickEdit()
+    private external fun nativeMobilePanelVisible(): Boolean
+    private external fun nativeMobilePanelGeneration(): Int
+    private external fun nativeMobilePanelPixels(): IntArray
+    private external fun nativeMobilePanelSize(): IntArray
+    private external fun nativeMobilePanelTap(u: Float, v: Float)
+    private external fun nativeMobilePanelScroll(delta: Int)
+    private external fun nativeMobileBack(): Boolean
     private external fun nativeLoadRom(path: String): String
     private external fun nativeGetLastStatus(): String
 

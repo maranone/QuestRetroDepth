@@ -55,6 +55,10 @@ public:
     // GL texture showing the current panel state.
     GLuint texture() const { return m_tex; }
     bool   dirty()   const { return m_dirty; }
+    int    bitmap_generation() const { return m_bitmap_generation; }
+    int    bitmap_width() const { return kTexW; }
+    int    bitmap_height() const { return kTexH; }
+    const std::vector<uint8_t>& bitmap_rgba() const { return m_bitmap_rgba; }
 
     // Rebuild the panel texture. Must be called from the GL thread.
     // vm/activity are used to call the Kotlin rendering method.
@@ -81,6 +85,8 @@ private:
 
     GLuint m_tex   = 0;
     bool   m_dirty = true;
+    int    m_bitmap_generation = 0;
+    std::vector<uint8_t> m_bitmap_rgba;
 };
 
 } // namespace qrd

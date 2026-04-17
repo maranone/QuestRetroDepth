@@ -24,7 +24,7 @@ import java.io.FileOutputStream
 import java.util.Locale
 import java.util.zip.ZipInputStream
 
-class QuestVrActivity : Activity() {
+open class QuestVrActivity : Activity() {
     private lateinit var statusView: TextView
     private val handler = Handler(Looper.getMainLooper())
     private var vrStarted = false
@@ -48,6 +48,7 @@ class QuestVrActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        if (javaClass != QuestVrActivity::class.java) return
         if (!intent.getBooleanExtra("force_vr", false) && !supportsVrRuntime()) {
             startActivity(Intent(this, QuestRetroDepthActivity::class.java))
             finish()
@@ -127,6 +128,7 @@ class QuestVrActivity : Activity() {
 
     override fun onResume() {
         super.onResume()
+        if (javaClass != QuestVrActivity::class.java) return
         // Require external storage access before starting VR so getRomDirectory() can
         // create /storage/emulated/0/QuestRetroDepth/ and find ROMs inside it.
         if (!hasStoragePermission()) {
@@ -454,6 +456,10 @@ class QuestVrActivity : Activity() {
     }
 
     override fun onDestroy() {
+        if (javaClass != QuestVrActivity::class.java) {
+            super.onDestroy()
+            return
+        }
         nativeStopVr()
         vrStarted = false
         super.onDestroy()

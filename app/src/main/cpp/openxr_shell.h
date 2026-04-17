@@ -64,11 +64,41 @@ public:
     bool start(JavaVM* vm, JNIEnv* env, jobject activity, bool open_menu_on_startup,
                int autosave_interval_seconds, bool load_last_save_enabled,
                std::string& status_out);
+    bool start_headless(JavaVM* vm, JNIEnv* env, jobject activity,
+                        int autosave_interval_seconds, bool load_last_save_enabled,
+                        std::string& status_out);
     void stop(JNIEnv* env);
     std::string status() const;
     void set_frame_provider(FrameProvider provider);
     void request_open_main_menu();
     void request_open_homebrew();
+    void mobile_open_main_menu();
+    void mobile_open_quick_edit();
+    bool mobile_panel_visible() const;
+    int mobile_panel_generation() const;
+    bool mobile_copy_current_panel_argb(std::vector<uint32_t>& argb_out, int& width_out, int& height_out) const;
+    void mobile_refresh_visible_panel();
+    void mobile_tap(float u, float v);
+    void mobile_scroll(int delta);
+    bool mobile_back();
+    void export_mobile_visual_state(
+        VrState& vr_state_out,
+        GameConfig& config_out,
+        std::vector<std::string>& layer_names_out,
+        std::vector<int>& layer_order_out,
+        std::vector<bool>& layer_enabled_out,
+        std::vector<bool>& layer_ambilight_out,
+        int& layer_auto_dup_percent_out,
+        BackendKind& backend_kind_out) const;
+    void import_mobile_visual_state(
+        const VrState& vr_state_in,
+        const GameConfig& config_in,
+        const std::vector<std::string>& layer_names_in,
+        const std::vector<int>& layer_order_in,
+        const std::vector<bool>& layer_enabled_in,
+        const std::vector<bool>& layer_ambilight_in,
+        int layer_auto_dup_percent_in,
+        BackendKind backend_kind_in);
 
     // Thread-safe: schedule a randomise on the next XR frame
     void randomize();
@@ -180,12 +210,22 @@ public:
         RevealCooldown,
     };
 
+    struct MobilePanelBitmap {
+        int width = 0;
+        int height = 0;
+        int generation = 0;
+        std::vector<uint8_t> rgba;
+    };
+
     void homebrew_data_ready()        { m_hw_loading = false;     m_hw_dirty = true; }
     void homebrew_download_complete() { m_hw_downloading = false; m_hw_dirty = true; }
     void set_homebrew_feed(int idx)   { m_hw_feed = idx < 0 ? 0 : idx; m_hw_loading = true; m_hw_dirty = true; m_hw_view = 0; m_hw_hovered = -1; m_hw_scroll = 0; }
 
 private:
     void set_status(const std::string& s);
+    bool start_common(JavaVM* vm, JNIEnv* env, jobject activity, bool open_menu_on_startup,
+                      int autosave_interval_seconds, bool load_last_save_enabled,
+                      bool start_xr_thread, std::string& status_out);
 
     // ---------- init chain ----------
     bool initialize_loader();
@@ -247,6 +287,8 @@ private:
     // right=true → right controller, false → left; amplitude 0-1, duration_ms
     void fire_haptic(bool right, float amplitude = 0.4f, int duration_ms = 40);
     void shutdown();
+    void mark_visual_state_dirty();
+    void refresh_mobile_panel_pose_defaults();
 
     // ---------- Android / JNI ----------
     JavaVM*  m_vm              = nullptr;
@@ -283,6 +325,7 @@ private:
     // ---------- ROM browser panel ----------
     RomBrowser  m_rom_browser;
     bool        m_menu_open  = false;
+    bool        m_headless_mode = false;
     std::string m_settings_dir;       // cached path to settings directory
     std::string m_current_rom_name;   // filename stem of currently loaded ROM (for per-game settings)
     std::string m_current_game_name;  // from ROM header (0xFFC0+) for version fallback
@@ -431,6 +474,16 @@ private:
     XrTime      m_last_code_fire     = 0;
     std::string m_code_input_buf;          // chars typed so far (≤ 20)
     bool        m_code_panel_quick_name_mode = false;
+    MobilePanelBitmap m_main_menu_bitmap;
+    MobilePanelBitmap m_browser_bitmap;
+    MobilePanelBitmap m_layer_bitmap;
+    MobilePanelBitmap m_settings_bitmap;
+    MobilePanelBitmap m_save_state_bitmap;
+    MobilePanelBitmap m_code_bitmap;
+    MobilePanelBitmap m_ctrlmap_bitmap;
+    MobilePanelBitmap m_quick_bitmap;
+    MobilePanelBitmap m_help_bitmap;
+    MobilePanelBitmap m_homebrew_bitmap;
 
     // ---------- Controller map panel ----------
     GLuint  m_ctrlmap_panel_tex     = 0;
