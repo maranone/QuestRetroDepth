@@ -16,6 +16,7 @@
 #include <openxr/openxr_platform.h>
 
 #include <atomic>
+#include <array>
 #include <functional>
 #include <memory>
 #include <mutex>
@@ -157,6 +158,7 @@ public:
         float saturation = 0.80f;
         float brightness = 1.00f;
         bool perspective_comp = true;
+        EnvironmentSphereMode environment_sphere_mode = EnvironmentSphereMode::Off;
     };
 
     struct QuickLayerPreset {
@@ -164,6 +166,18 @@ public:
         std::vector<std::string> ordered_ids;
         std::vector<bool> enabled;
         std::vector<bool> ambilight;
+    };
+
+    struct EnvironmentSphereSample {
+        bool valid = false;
+        std::array<std::array<float, 4>, 12> bands{};
+    };
+
+    enum class BlackoutRevealPhase {
+        Normal = 0,
+        BlackoutLatched,
+        RevealAnimating,
+        RevealCooldown,
     };
 
     void homebrew_data_ready()        { m_hw_loading = false;     m_hw_dirty = true; }
@@ -336,6 +350,12 @@ private:
     bool   m_hw_loading     = false;
     bool   m_hw_downloading = false;
     XrTime m_last_hw_fire   = 0;
+    EnvironmentSphereSample m_environment_sphere_sample;
+    BlackoutRevealPhase m_blackout_reveal_phase = BlackoutRevealPhase::Normal;
+    int m_blackout_candidate_frames = 0;
+    int m_blackout_visible_frames = 0;
+    XrTime m_blackout_reveal_start_time = 0;
+    std::vector<std::string> m_blackout_reveal_layer_ids;
 
     // Edit-mode laser state
     XrVector3f  m_edit_laser_l_origin = {0,0,0};

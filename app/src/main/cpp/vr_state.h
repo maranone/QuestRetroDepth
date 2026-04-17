@@ -11,12 +11,27 @@ enum class DepthMode : int {
     BoundingBox = 2,
 };
 
+enum class EnvironmentSphereMode : int {
+    Off = 0,
+    SkyOnly = 1,
+    FullSphere = 2,
+};
+
 inline const char* depth_mode_label(DepthMode mode) {
     switch (mode) {
         case DepthMode::WholeLayer:  return "LAYER";
         case DepthMode::BoundingBox: return "BBOX";
         case DepthMode::Off:
         default:                     return "OFF";
+    }
+}
+
+inline const char* environment_sphere_mode_label(EnvironmentSphereMode mode) {
+    switch (mode) {
+        case EnvironmentSphereMode::SkyOnly:   return "SKY";
+        case EnvironmentSphereMode::FullSphere:return "FULL";
+        case EnvironmentSphereMode::Off:
+        default:                               return "OFF";
     }
 }
 
@@ -46,6 +61,7 @@ struct VrState {
     bool upscale           = false; // sharpened bilinear
     bool shadows           = false; // repurposed as Meta Quest passthrough
     bool ambilight         = true;
+    EnvironmentSphereMode environment_sphere_mode = EnvironmentSphereMode::Off;
 
     // Perspective compensation: scale each layer's quad width so all layers subtend
     // the same visual angle as the nearest layer.

@@ -1,6 +1,7 @@
 #pragma once
 #include <GLES3/gl3.h>
 #include <GLES3/gl31.h>
+#include <array>
 #include <vector>
 #include <string>
 #include "layer_processor.h"
@@ -64,6 +65,12 @@ struct EyeFbo {
     int    height    = 0;
 };
 
+struct SkyDomeInfo {
+    bool enabled = false;
+    EnvironmentSphereMode mode = EnvironmentSphereMode::Off;
+    std::array<std::array<float, 4>, 12> bands{};
+};
+
 class GlesRenderer {
 public:
     static constexpr int   k_max_copies      = 20;
@@ -102,6 +109,7 @@ public:
                     float canvas_el = 0.0f,
                     float canvas_scale = 1.0f,
                     const OverlayInfo* overlay = nullptr,
+                    const SkyDomeInfo* sky_dome = nullptr,
                     float bg_r = 0.01f,
                     float bg_g = 0.01f,
                     float bg_b = 0.02f,
@@ -125,6 +133,10 @@ private:
     GLuint m_flat_prog = 0;
     GLuint m_flat_vao  = 0;
     GLuint m_flat_vbo  = 0;
+    GLuint m_sky_prog  = 0;
+    GLuint m_sky_vao   = 0;
+    GLuint m_sky_vbo   = 0;
+    int    m_sky_vertex_count = 0;
 
     std::vector<LayerTex> m_layers;
 
@@ -196,6 +208,9 @@ private:
 
     GLint m_flat_u_vp    = -1;
     GLint m_flat_u_color = -1;
+    GLint m_sky_u_proj   = -1;
+    GLint m_sky_u_bands  = -1;
+    GLint m_sky_u_mode   = -1;
 
     // UI program — world-space textured quad for ROM panel
     GLuint m_ui_prog = 0;
@@ -209,7 +224,9 @@ private:
     bool init_layer_program(std::string& err);
     bool init_immersive_layer_program(std::string& err);
     bool init_flat_program(std::string& err);
+    bool init_sky_program(std::string& err);
     bool init_ui_program(std::string& err);
+    void draw_sky_dome(const Mat4& proj, const SkyDomeInfo& info);
     void draw_ambilight(const std::vector<LayerFrame*>& frames,
                         const Mat4& vp, const VrState& state);
     void draw_shadow(const LayerFrame& frame, const Mat4& vp, const VrState& state);

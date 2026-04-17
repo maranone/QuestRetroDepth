@@ -48,6 +48,11 @@ class QuestVrActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        if (!intent.getBooleanExtra("force_vr", false) && !supportsVrRuntime()) {
+            startActivity(Intent(this, QuestRetroDepthActivity::class.java))
+            finish()
+            return
+        }
 
         val root = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
@@ -110,6 +115,14 @@ class QuestVrActivity : Activity() {
                 Gravity.TOP))
         }
         setContentView(wrapper)
+    }
+
+    private fun supportsVrRuntime(): Boolean {
+        val brand = Build.BRAND.lowercase(Locale.US)
+        val manufacturer = Build.MANUFACTURER.lowercase(Locale.US)
+        return (brand.contains("oculus") || brand.contains("meta") ||
+            manufacturer.contains("oculus") || manufacturer.contains("meta")) &&
+            packageManager.hasSystemFeature("android.hardware.vr.headtracking")
     }
 
     override fun onResume() {
@@ -971,8 +984,8 @@ class QuestVrActivity : Activity() {
             val isAction = (value == "ACTION")
             val isDisabledAction = (value == "DISABLED")
 
-            // Draw separator before action buttons (row 13)
-            if (i == 13) {
+            // Draw separator before action buttons (row 14)
+            if (i == 14) {
                 paint.color = android.graphics.Color.argb(120, 100, 130, 200)
                 paint.strokeWidth = 2f
                 paint.style = android.graphics.Paint.Style.STROKE
@@ -984,12 +997,12 @@ class QuestVrActivity : Activity() {
             if (isAction) {
                 // Full-width action buttons
                 paint.color = when (i) {
-                    13 -> android.graphics.Color.argb(170, 160, 30, 30)
-                    14 -> android.graphics.Color.argb(170, 35, 140, 65)
-                    15 -> android.graphics.Color.argb(170, 15, 85, 40)
-                    16 -> android.graphics.Color.argb(170, 35, 95, 180)
-                    17 -> android.graphics.Color.argb(170, 20, 50, 130)
-                    18 -> android.graphics.Color.argb(120, 35, 55, 45)
+                    14 -> android.graphics.Color.argb(170, 160, 30, 30)
+                    15 -> android.graphics.Color.argb(170, 35, 140, 65)
+                    16 -> android.graphics.Color.argb(170, 15, 85, 40)
+                    17 -> android.graphics.Color.argb(170, 35, 95, 180)
+                    18 -> android.graphics.Color.argb(170, 20, 50, 130)
+                    19 -> android.graphics.Color.argb(120, 35, 55, 45)
                     else -> android.graphics.Color.argb(140, 40, 70, 120)
                 }
                 canvas.drawRoundRect(6f, y + rowH * 0.12f, width - 6f, y + rowH * 0.88f, 8f, 8f, paint)

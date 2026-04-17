@@ -16,7 +16,12 @@
 
 #include "emulator_backend.h"
 #include "experimental_rumble.h"
+#include "game_config.h"
+#include "gles_renderer.h"
+#include "layer_processor.h"
+#include "mat4.h"
 #include "openxr_shell.h"
+#include "vr_state.h"
 
 namespace {
 
@@ -301,6 +306,345 @@ bool frame_provider_for_vr(qrd::FrameOutput& out_frame, qrd::EmulatorInputState&
 static bool g_has_cached_frame = false;
 static qrd::FrameOutput g_cached_frame;
 
+struct MobileEnvironmentSample {
+    bool valid = false;
+    std::array<std::array<float, 4>, 12> bands{};
+};
+
+enum class MobileBlackoutRevealPhase {
+    Normal = 0,
+    BlackoutLatched,
+    RevealAnimating,
+    RevealCooldown,
+};
+
+struct MobileRendererState {
+    std::mutex mutex;
+    GlesRenderer renderer;
+    bool renderer_ready = false;
+    bool surface_ready = false;
+    int surface_width = 0;
+    int surface_height = 0;
+    qrd::BackendKind backend_kind = qrd::BackendKind::Snes;
+    GameConfig config = GameConfig::make_default_snes();
+    VrState vr_state{};
+    qrd::FrameOutput cached_frame;
+    uint64_t last_frame_seq = 0;
+    std::vector<LayerFrame> layer_frames;
+    std::vector<LayerFrame*> render_refs;
+    MobileEnvironmentSample environment_sample;
+    MobileBlackoutRevealPhase reveal_phase = MobileBlackoutRevealPhase::Normal;
+    int blackout_candidate_frames = 0;
+    int blackout_visible_frames = 0;
+    int64_t reveal_start_ns = 0;
+    std::vector<std::string> reveal_layer_ids;
+    float orbit_yaw = 0.0f;
+    float orbit_pitch = 0.12f;
+    float pan_x = 0.0f;
+    float pan_y = 0.0f;
+    float zoom = 1.0f;
+} g_mobile_renderer;
+
+static int64_t monotonic_time_ns() {
+    return (int64_t)std::chrono::duration_cast<std::chrono::nanoseconds>(
+        std::chrono::steady_clock::now().time_since_epoch()).count();
+}
+
+static VrState default_mobile_vr_state(qrd::BackendKind kind) {
+    VrState vs;
+    vs.gamma = 1.1f;
+    vs.contrast = 1.1f;
+    vs.saturation = 0.75f;
+    vs.brightness = 1.0f;
+    vs.immersive_beta_enabled = false;
+    vs.layers_3d = false;
+    vs.depth_mode = DepthMode::Off;
+    vs.upscale = (kind == qrd::BackendKind::Gba || kind == qrd::BackendKind::Gb);
+    vs.shadows = false;
+    vs.ambilight = true;
+    vs.environment_sphere_mode = EnvironmentSphereMode::SkyOnly;
+    vs.perspective_comp = true;
+    vs.vr_resolution_scale = 1.0f;
+    return vs;
+}
+
+static GameConfig default_game_config_for_backend(qrd::BackendKind kind) {
+    switch (kind) {
+    case qrd::BackendKind::Genesis: return GameConfig::make_default_genesis();
+    case qrd::BackendKind::Gba:     return GameConfig::make_default_gba();
+    case qrd::BackendKind::Gb:      return GameConfig::make_default_gb();
+    case qrd::BackendKind::Nes:     return GameConfig::make_default_nes();
+    case qrd::BackendKind::Pce:     return GameConfig::make_default_pce();
+    case qrd::BackendKind::Sms:     return GameConfig::make_default_sms();
+    default:                        return GameConfig::make_default_snes();
+    }
+}
+
+static std::vector<int> mobile_default_layer_order_for_config(const GameConfig& config) {
+    const int n = (int)config.layers.size();
+    std::vector<int> order;
+    order.reserve(n);
+    for (int i = n - 1; i >= 0; --i) order.push_back(i);
+    return order;
+}
+
+static void mobile_sync_cached_layer_geometry_from_config(std::vector<LayerFrame>& layer_frames,
+                                                          const GameConfig& config) {
+    const int n = std::min((int)layer_frames.size(), (int)config.layers.size());
+    for (int i = 0; i < n; ++i) {
+        const auto& lc = config.layers[i];
+        auto& lf = layer_frames[i];
+        lf.depth_meters = lc.depth_meters;
+        lf.quad_width_meters = lc.quad_width_meters;
+        lf.copies = lc.copies;
+        lf.persp_comp_scale = 1.0f;
+    }
+}
+
+static int mobile_baseline_copy_count(const LayerFrame& frame) {
+    return frame.copies.empty() ? GlesRenderer::k_max_copies : (int)frame.copies.size();
+}
+
+static float mobile_baseline_copy_step(const LayerFrame& frame) {
+    if (!frame.copies.empty() && frame.copies.back() > 0.0f) {
+        return frame.copies.back() / (float)frame.copies.size();
+    }
+    return GlesRenderer::k_default_copy_step;
+}
+
+static void mobile_rebuild_copy_offsets(std::vector<float>& copies, int copy_count, float copy_step) {
+    if (copy_count <= 0) {
+        copies.clear();
+        return;
+    }
+    copies.resize(copy_count);
+    for (int i = 0; i < copy_count; ++i) copies[i] = (float)(i + 1) * copy_step;
+}
+
+static void mobile_apply_layer_auto_dup_visible(std::vector<LayerFrame*>& layer_frames, int auto_dup_percent) {
+    if (auto_dup_percent < 0 || layer_frames.empty() || !layer_frames[0]) return;
+    const int anchor_count = mobile_baseline_copy_count(*layer_frames[0]);
+    const int far_target = std::clamp((int)std::lround((double)anchor_count * (double)auto_dup_percent / 100.0), 0, 64);
+    const int n = (int)layer_frames.size();
+    for (int i = 0; i < n; ++i) {
+        if (!layer_frames[i]) continue;
+        const float t = (n > 1) ? (float)i / (float)(n - 1) : 0.0f;
+        const int target_count = std::clamp((int)std::lround(anchor_count + (far_target - anchor_count) * t), 0, 64);
+        mobile_rebuild_copy_offsets(layer_frames[i]->copies, target_count, mobile_baseline_copy_step(*layer_frames[i]));
+    }
+}
+
+static void mobile_compact_visible_layer_depths(std::vector<LayerFrame*>& layer_frames) {
+    if (layer_frames.size() < 2) return;
+    LayerFrame* first = nullptr;
+    for (LayerFrame* lf : layer_frames) if (lf) { first = lf; break; }
+    if (!first) return;
+    float near_d = first->depth_meters;
+    float far_d = first->depth_meters;
+    for (LayerFrame* lf : layer_frames) {
+        if (!lf) continue;
+        near_d = std::min(near_d, lf->depth_meters);
+        far_d = std::max(far_d, lf->depth_meters);
+    }
+    for (int i = 0; i < (int)layer_frames.size(); ++i) {
+        if (!layer_frames[i]) continue;
+        const float t = (layer_frames.size() > 1) ? (float)i / (float)(layer_frames.size() - 1) : 0.0f;
+        layer_frames[i]->depth_meters = near_d + (far_d - near_d) * t;
+    }
+}
+
+static void mobile_apply_perspective_comp_to_refs(std::vector<LayerFrame*>& refs) {
+    if (refs.size() <= 1) return;
+    int ref = -1;
+    for (int i = 0; i < (int)refs.size(); ++i) {
+        if (!refs[i]) continue;
+        if (ref < 0 || refs[i]->depth_meters < refs[ref]->depth_meters) ref = i;
+    }
+    if (ref < 0 || refs[ref]->depth_meters < 0.01f) return;
+    const float ref_depth = refs[ref]->depth_meters;
+    const float ref_width = refs[ref]->quad_width_meters;
+    for (LayerFrame* lf : refs) {
+        if (!lf) continue;
+        lf->quad_width_meters = ref_width * (lf->depth_meters / ref_depth);
+        lf->persp_comp_scale = 1.0f;
+    }
+}
+
+static bool mobile_sample_environment_band(const LayerFrame& frame, int y0, int y1,
+                                           std::array<float, 4>& out_color) {
+    if (frame.width <= 0 || frame.height <= 0 || frame.rgba.empty()) return false;
+    const int clamped_y0 = std::clamp(y0, 0, frame.height - 1);
+    const int clamped_y1 = std::clamp(y1, clamped_y0 + 1, frame.height);
+    float r = 0.0f, g = 0.0f, b = 0.0f, a = 0.0f;
+    for (int y = clamped_y0; y < clamped_y1; y += 4) {
+        for (int x = 0; x < frame.width; x += 4) {
+            const std::size_t idx = (std::size_t)(y * frame.width + x) * 4u;
+            const float alpha = frame.rgba[idx + 3] / 255.0f;
+            if (alpha <= 0.05f) continue;
+            r += (frame.rgba[idx + 0] / 255.0f) * alpha;
+            g += (frame.rgba[idx + 1] / 255.0f) * alpha;
+            b += (frame.rgba[idx + 2] / 255.0f) * alpha;
+            a += alpha;
+        }
+    }
+    if (a <= 0.0f) return false;
+    out_color = {std::clamp(r / a, 0.0f, 1.0f), std::clamp(g / a, 0.0f, 1.0f), std::clamp(b / a, 0.0f, 1.0f), 1.0f};
+    return true;
+}
+
+static bool mobile_build_environment_sample_from_layer(const LayerFrame& frame,
+                                                       EnvironmentSphereMode mode,
+                                                       MobileEnvironmentSample& out_sample) {
+    out_sample.valid = false;
+    if (!frame.has_pixels || frame.width <= 0 || frame.height <= 0 || frame.rgba.empty()) return false;
+    if (mode == EnvironmentSphereMode::Off) return false;
+    constexpr int kBandCount = 12;
+    const int sample_h = (mode == EnvironmentSphereMode::SkyOnly) ? std::max(1, frame.height / 2) : frame.height;
+    std::array<bool, kBandCount> valid{};
+    for (int i = 0; i < kBandCount; ++i) {
+        const int y0 = (sample_h * i) / kBandCount;
+        const int y1 = (sample_h * (i + 1)) / kBandCount;
+        valid[i] = mobile_sample_environment_band(frame, y0, std::max(y0 + 1, y1), out_sample.bands[i]);
+    }
+    bool any_valid = false;
+    for (bool ok : valid) any_valid = any_valid || ok;
+    if (!any_valid) return false;
+    for (int i = 0; i < kBandCount; ++i) {
+        if (valid[i]) continue;
+        int left = i - 1;
+        int right = i + 1;
+        while (left >= 0 && !valid[left]) --left;
+        while (right < kBandCount && !valid[right]) ++right;
+        if (left >= 0) out_sample.bands[i] = out_sample.bands[left];
+        else if (right < kBandCount) out_sample.bands[i] = out_sample.bands[right];
+    }
+    if (mode == EnvironmentSphereMode::SkyOnly) {
+        for (int i = 6; i < kBandCount; ++i) {
+            out_sample.bands[i] = {out_sample.bands[5][0], out_sample.bands[5][1], out_sample.bands[5][2], 0.0f};
+        }
+    }
+    out_sample.valid = true;
+    return true;
+}
+
+static std::array<float, 4> mobile_lerp_rgba(const std::array<float, 4>& a,
+                                             const std::array<float, 4>& b,
+                                             float t) {
+    return {
+        a[0] + (b[0] - a[0]) * t,
+        a[1] + (b[1] - a[1]) * t,
+        a[2] + (b[2] - a[2]) * t,
+        a[3] + (b[3] - a[3]) * t,
+    };
+}
+
+static void mobile_smooth_environment_sample(MobileEnvironmentSample& current,
+                                             const MobileEnvironmentSample& target,
+                                             float blend) {
+    if (!target.valid) {
+        for (auto& band : current.bands) band[3] *= (1.0f - blend);
+        current.valid = false;
+        for (const auto& band : current.bands) if (band[3] > 0.01f) { current.valid = true; break; }
+        return;
+    }
+    if (!current.valid) {
+        current = target;
+        return;
+    }
+    for (int i = 0; i < (int)current.bands.size(); ++i) current.bands[i] = mobile_lerp_rgba(current.bands[i], target.bands[i], blend);
+    current.valid = true;
+}
+
+static bool mobile_layer_has_bright_samples(const LayerFrame& frame, int& bright_samples_out) {
+    bright_samples_out = 0;
+    if (!frame.has_pixels || frame.width <= 0 || frame.height <= 0 || frame.rgba.empty()) return false;
+    for (int y = 0; y < frame.height; y += 4) {
+        for (int x = 0; x < frame.width; x += 4) {
+            const std::size_t idx = (std::size_t)(y * frame.width + x) * 4u;
+            if (frame.rgba[idx + 3] < 32) continue;
+            const uint8_t bright = std::max({frame.rgba[idx + 0], frame.rgba[idx + 1], frame.rgba[idx + 2]});
+            if (bright > 20) ++bright_samples_out;
+        }
+    }
+    return bright_samples_out > 0;
+}
+
+static bool mobile_is_blackout_candidate(const std::vector<LayerFrame*>& frames, int& bright_samples_out) {
+    bright_samples_out = 0;
+    bool any_pixels = false;
+    for (const LayerFrame* lf : frames) {
+        if (!lf || !lf->has_pixels || lf->width <= 0 || lf->height <= 0 || lf->rgba.empty()) continue;
+        any_pixels = true;
+        int layer_bright = 0;
+        mobile_layer_has_bright_samples(*lf, layer_bright);
+        bright_samples_out += layer_bright;
+    }
+    if (!any_pixels) return true;
+    return bright_samples_out == 0;
+}
+
+static float mobile_blackout_reveal_pulse_scale(int64_t now_ns, int64_t start_ns) {
+    constexpr float kPulseDurationNs = 120000000.0f;
+    const float t = std::clamp((float)(now_ns - start_ns) / kPulseDurationNs, 0.0f, 1.0f);
+    const float ease = 1.0f - (1.0f - t) * (1.0f - t);
+    return 1.015f - 0.015f * ease;
+}
+
+static Mat4 make_perspective_matrix(float fov_y_radians, float aspect, float near_z, float far_z) {
+    const float f = 1.0f / std::tan(fov_y_radians * 0.5f);
+    Mat4 p{};
+    p.m[0] = f / aspect; p.m[1] = 0; p.m[2] = 0; p.m[3] = 0;
+    p.m[4] = 0; p.m[5] = f; p.m[6] = 0; p.m[7] = 0;
+    p.m[8] = 0; p.m[9] = 0; p.m[10] = (far_z + near_z) / (near_z - far_z); p.m[11] = -1.0f;
+    p.m[12] = 0; p.m[13] = 0; p.m[14] = (2.0f * far_z * near_z) / (near_z - far_z); p.m[15] = 0;
+    return p;
+}
+
+static Mat4 make_look_at_matrix(float eye_x, float eye_y, float eye_z,
+                                float center_x, float center_y, float center_z,
+                                float up_x, float up_y, float up_z) {
+    float fx = center_x - eye_x;
+    float fy = center_y - eye_y;
+    float fz = center_z - eye_z;
+    const float fl = std::sqrt(fx * fx + fy * fy + fz * fz);
+    if (fl > 0.0001f) { fx /= fl; fy /= fl; fz /= fl; }
+
+    float sx = fy * up_z - fz * up_y;
+    float sy = fz * up_x - fx * up_z;
+    float sz = fx * up_y - fy * up_x;
+    const float sl = std::sqrt(sx * sx + sy * sy + sz * sz);
+    if (sl > 0.0001f) { sx /= sl; sy /= sl; sz /= sl; }
+
+    float ux = sy * fz - sz * fy;
+    float uy = sz * fx - sx * fz;
+    float uz = sx * fy - sy * fx;
+
+    Mat4 m{};
+    m.m[0] = sx; m.m[1] = ux; m.m[2] = -fx; m.m[3] = 0.0f;
+    m.m[4] = sy; m.m[5] = uy; m.m[6] = -fy; m.m[7] = 0.0f;
+    m.m[8] = sz; m.m[9] = uz; m.m[10] = -fz; m.m[11] = 0.0f;
+    m.m[12] = -(sx * eye_x + sy * eye_y + sz * eye_z);
+    m.m[13] = -(ux * eye_x + uy * eye_y + uz * eye_z);
+    m.m[14] = fx * eye_x + fy * eye_y + fz * eye_z;
+    m.m[15] = 1.0f;
+    return m;
+}
+
+static void mobile_reset_render_config_locked(qrd::BackendKind kind) {
+    g_mobile_renderer.backend_kind = kind;
+    g_mobile_renderer.config = default_game_config_for_backend(kind);
+    g_mobile_renderer.vr_state = default_mobile_vr_state(kind);
+    g_mobile_renderer.layer_frames.clear();
+    g_mobile_renderer.render_refs.clear();
+    g_mobile_renderer.last_frame_seq = 0;
+    g_mobile_renderer.environment_sample = {};
+    g_mobile_renderer.reveal_phase = MobileBlackoutRevealPhase::Normal;
+    g_mobile_renderer.blackout_candidate_frames = 0;
+    g_mobile_renderer.blackout_visible_frames = 0;
+    g_mobile_renderer.reveal_start_ns = 0;
+    g_mobile_renderer.reveal_layer_ids.clear();
+}
+
 } // namespace
 
 // ============================================================
@@ -350,7 +694,13 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeLoadRom(
         g_last_status = "ROM load failed\n\nBackend loaded but emitted no video frame.\nCheck logcat for backend errors.";
         return make_jstring(env, g_last_status);
     }
+    {
+        std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
+        mobile_reset_render_config_locked(detect_backend_kind_from_path(rom_path));
+        g_mobile_renderer.cached_frame = frame;
+    }
     g_last_status = "ROM loaded\n\n" + rom_path + "\n\n" + backend->backend_name();
+    start_emu_thread();
     return make_jstring(env, g_last_status);
 }
 
@@ -410,6 +760,264 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeGetLastStatus(
     std::lock_guard<std::mutex> lock(g_backend_mutex);
     if (g_last_status.empty()) g_last_status = "No status yet.";
     return make_jstring(env, g_last_status);
+}
+
+extern "C" JNIEXPORT jstring JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeStartMobile(
+    JNIEnv* env, jobject, jobject activity)
+{
+    JavaVM* vm = nullptr;
+    env->GetJavaVM(&vm);
+    g_vm = vm;
+    if (g_activity_global) env->DeleteGlobalRef(g_activity_global);
+    g_activity_global = env->NewGlobalRef(activity);
+    {
+        std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
+        mobile_reset_render_config_locked(g_last_working_backend_kind.value_or(qrd::BackendKind::Snes));
+    }
+    start_emu_thread();
+    g_last_status = "Mobile renderer ready.";
+    return make_jstring(env, g_last_status);
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeStopMobile(
+    JNIEnv*, jobject)
+{
+    stop_emu_thread();
+    std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
+    g_mobile_renderer.surface_ready = false;
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileSurfaceCreated(
+    JNIEnv*, jobject)
+{
+    std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
+    std::string err;
+    if (!g_mobile_renderer.renderer_ready) {
+        g_mobile_renderer.renderer_ready = g_mobile_renderer.renderer.init(err);
+        if (!g_mobile_renderer.renderer_ready) {
+            g_last_status = "Mobile GLES init failed: " + err;
+        }
+    }
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileSurfaceChanged(
+    JNIEnv*, jobject, jint width, jint height)
+{
+    std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
+    g_mobile_renderer.surface_width = (int)width;
+    g_mobile_renderer.surface_height = (int)height;
+    g_mobile_renderer.surface_ready = width > 0 && height > 0;
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeSetMobileCamera(
+    JNIEnv*, jobject, jfloat orbit_yaw, jfloat orbit_pitch, jfloat pan_x, jfloat pan_y, jfloat zoom)
+{
+    std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
+    g_mobile_renderer.orbit_yaw = orbit_yaw;
+    g_mobile_renderer.orbit_pitch = std::clamp((float)orbit_pitch, -1.1f, 1.1f);
+    g_mobile_renderer.pan_x = pan_x;
+    g_mobile_renderer.pan_y = pan_y;
+    g_mobile_renderer.zoom = std::clamp((float)zoom, 0.55f, 2.5f);
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeSetMobileInputState(
+    JNIEnv*, jobject,
+    jboolean up, jboolean down, jboolean left, jboolean right,
+    jboolean a, jboolean b, jboolean x, jboolean y,
+    jboolean l, jboolean r, jboolean start, jboolean select)
+{
+    std::lock_guard<std::mutex> il(g_input_write_mutex);
+    g_pending_input.dpad_up = up == JNI_TRUE;
+    g_pending_input.dpad_down = down == JNI_TRUE;
+    g_pending_input.dpad_left = left == JNI_TRUE;
+    g_pending_input.dpad_right = right == JNI_TRUE;
+    g_pending_input.button_a = a == JNI_TRUE;
+    g_pending_input.button_b = b == JNI_TRUE;
+    g_pending_input.button_x = x == JNI_TRUE;
+    g_pending_input.button_y = y == JNI_TRUE;
+    g_pending_input.button_l = l == JNI_TRUE;
+    g_pending_input.button_r = r == JNI_TRUE;
+    g_pending_input.button_start = start == JNI_TRUE;
+    g_pending_input.button_select = select == JNI_TRUE;
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeSetMobilePaused(
+    JNIEnv*, jobject, jboolean paused)
+{
+    g_emu_frozen.store(paused == JNI_TRUE, std::memory_order_release);
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileDrawFrame(
+    JNIEnv*, jobject)
+{
+    std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
+    if (!g_mobile_renderer.renderer_ready || !g_mobile_renderer.surface_ready) return;
+
+    const uint64_t seq = g_frame_seq.load(std::memory_order_acquire);
+    if (g_has_frame.load(std::memory_order_acquire) && seq != g_mobile_renderer.last_frame_seq) {
+        {
+            std::lock_guard<std::mutex> fl(g_frame_mutex);
+            const int front = g_frame_front.load(std::memory_order_acquire);
+            g_mobile_renderer.cached_frame = g_frame_buf[front];
+            g_mobile_renderer.last_frame_seq = g_frame_seq.load(std::memory_order_acquire);
+        }
+
+        LayerProcessor proc(g_mobile_renderer.config);
+        const auto& frame = g_mobile_renderer.cached_frame;
+        const uint8_t* zbuf = frame.zbuffer.empty() ? nullptr : frame.zbuffer.data();
+        const bool build_object_boxes = g_mobile_renderer.vr_state.depth_mode == DepthMode::BoundingBox;
+        proc.process_into(
+            g_mobile_renderer.layer_frames,
+            frame.rgba8888.data(),
+            (int)frame.width,
+            (int)frame.height,
+            zbuf,
+            &frame,
+            build_object_boxes);
+
+        mobile_sync_cached_layer_geometry_from_config(g_mobile_renderer.layer_frames, g_mobile_renderer.config);
+        g_mobile_renderer.render_refs.clear();
+        const std::vector<int> order = mobile_default_layer_order_for_config(g_mobile_renderer.config);
+        g_mobile_renderer.render_refs.reserve(order.size());
+        for (int idx : order) {
+            if (idx < 0 || idx >= (int)g_mobile_renderer.layer_frames.size()) continue;
+            auto& lf = g_mobile_renderer.layer_frames[idx];
+            lf.contrib_ambilight = true;
+            g_mobile_renderer.render_refs.push_back(&lf);
+        }
+        mobile_apply_layer_auto_dup_visible(g_mobile_renderer.render_refs, 75);
+        mobile_compact_visible_layer_depths(g_mobile_renderer.render_refs);
+        if (g_mobile_renderer.vr_state.perspective_comp) {
+            mobile_apply_perspective_comp_to_refs(g_mobile_renderer.render_refs);
+        } else {
+            for (LayerFrame* lf : g_mobile_renderer.render_refs) if (lf) lf->persp_comp_scale = 1.0f;
+        }
+
+        int bright_samples = 0;
+        const bool blackout_candidate = mobile_is_blackout_candidate(g_mobile_renderer.render_refs, bright_samples);
+        if (blackout_candidate) {
+            ++g_mobile_renderer.blackout_candidate_frames;
+            g_mobile_renderer.blackout_visible_frames = 0;
+        } else {
+            g_mobile_renderer.blackout_candidate_frames = 0;
+            g_mobile_renderer.blackout_visible_frames = (bright_samples >= 8)
+                ? (g_mobile_renderer.blackout_visible_frames + 1) : 0;
+        }
+        if (g_mobile_renderer.reveal_phase == MobileBlackoutRevealPhase::Normal &&
+            g_mobile_renderer.blackout_candidate_frames >= 2) {
+            g_mobile_renderer.reveal_phase = MobileBlackoutRevealPhase::BlackoutLatched;
+        } else if (g_mobile_renderer.reveal_phase == MobileBlackoutRevealPhase::BlackoutLatched &&
+                   g_mobile_renderer.blackout_visible_frames >= 2) {
+            g_mobile_renderer.reveal_layer_ids.clear();
+            for (const LayerFrame* lf : g_mobile_renderer.render_refs) {
+                if (!lf || !lf->has_pixels) continue;
+                g_mobile_renderer.reveal_layer_ids.push_back(lf->id);
+            }
+            if (g_mobile_renderer.reveal_layer_ids.size() >= 2) {
+                g_mobile_renderer.reveal_phase = MobileBlackoutRevealPhase::RevealAnimating;
+                g_mobile_renderer.reveal_start_ns = monotonic_time_ns();
+            } else {
+                g_mobile_renderer.reveal_phase = MobileBlackoutRevealPhase::Normal;
+            }
+        }
+
+        MobileEnvironmentSample target_sample{};
+        const LayerFrame* source_layer = nullptr;
+        float source_depth = -1.0f;
+        for (const LayerFrame* lf : g_mobile_renderer.render_refs) {
+            if (!lf || !lf->has_pixels || lf->rgba.empty()) continue;
+            if (lf->depth_meters >= source_depth) {
+                source_depth = lf->depth_meters;
+                source_layer = lf;
+            }
+        }
+        if (source_layer) {
+            mobile_build_environment_sample_from_layer(
+                *source_layer, g_mobile_renderer.vr_state.environment_sphere_mode, target_sample);
+        }
+        mobile_smooth_environment_sample(g_mobile_renderer.environment_sample, target_sample, 0.15f);
+    }
+
+    std::vector<LayerFrame*> render_refs = g_mobile_renderer.render_refs;
+    float canvas_scale = g_mobile_renderer.zoom;
+    const int64_t now_ns = monotonic_time_ns();
+    if (g_mobile_renderer.reveal_phase == MobileBlackoutRevealPhase::RevealAnimating) {
+        constexpr float kRevealDurationNs = 500000000.0f;
+        const float progress = std::clamp((float)(now_ns - g_mobile_renderer.reveal_start_ns) / kRevealDurationNs, 0.0f, 1.0f);
+        const int reveal_count = std::clamp((int)std::ceil(progress * (float)g_mobile_renderer.reveal_layer_ids.size()),
+                                            1, (int)g_mobile_renderer.reveal_layer_ids.size());
+        render_refs.clear();
+        for (LayerFrame* lf : g_mobile_renderer.render_refs) {
+            if (!lf) continue;
+            auto it = std::find(g_mobile_renderer.reveal_layer_ids.begin(),
+                                g_mobile_renderer.reveal_layer_ids.begin() + reveal_count,
+                                lf->id);
+            if (it != g_mobile_renderer.reveal_layer_ids.begin() + reveal_count) render_refs.push_back(lf);
+        }
+        if (progress >= 1.0f) {
+            g_mobile_renderer.reveal_phase = MobileBlackoutRevealPhase::RevealCooldown;
+            g_mobile_renderer.reveal_start_ns = now_ns;
+        }
+    } else if (g_mobile_renderer.reveal_phase == MobileBlackoutRevealPhase::RevealCooldown) {
+        canvas_scale *= mobile_blackout_reveal_pulse_scale(now_ns, g_mobile_renderer.reveal_start_ns);
+        if ((now_ns - g_mobile_renderer.reveal_start_ns) >= 120000000LL) {
+            g_mobile_renderer.reveal_phase = MobileBlackoutRevealPhase::Normal;
+            g_mobile_renderer.reveal_start_ns = 0;
+            g_mobile_renderer.reveal_layer_ids.clear();
+        }
+    }
+
+    const float aspect = std::max(1.0f, (float)g_mobile_renderer.surface_width) /
+                         std::max(1.0f, (float)g_mobile_renderer.surface_height);
+    const Mat4 proj = make_perspective_matrix(60.0f * 3.14159265358979323846f / 180.0f, aspect, 0.05f, 100.0f);
+    const float target_x = g_mobile_renderer.pan_x;
+    const float target_y = g_mobile_renderer.pan_y;
+    const float target_z = -2.2f;
+    const float distance = 2.3f / std::max(0.55f, g_mobile_renderer.zoom);
+    const float eye_x = target_x + std::sin(g_mobile_renderer.orbit_yaw) * std::cos(g_mobile_renderer.orbit_pitch) * distance;
+    const float eye_y = target_y + std::sin(g_mobile_renderer.orbit_pitch) * distance;
+    const float eye_z = target_z + std::cos(g_mobile_renderer.orbit_yaw) * std::cos(g_mobile_renderer.orbit_pitch) * distance;
+    const Mat4 view = make_look_at_matrix(eye_x, eye_y, eye_z, target_x, target_y, target_z, 0.0f, 1.0f, 0.0f);
+
+    SkyDomeInfo environment_info{};
+    const SkyDomeInfo* environment_ptr = nullptr;
+    if (g_mobile_renderer.reveal_phase != MobileBlackoutRevealPhase::BlackoutLatched &&
+        g_mobile_renderer.reveal_phase != MobileBlackoutRevealPhase::RevealAnimating &&
+        g_mobile_renderer.vr_state.environment_sphere_mode != EnvironmentSphereMode::Off &&
+        g_mobile_renderer.environment_sample.valid) {
+        environment_info.enabled = true;
+        environment_info.mode = g_mobile_renderer.vr_state.environment_sphere_mode;
+        environment_info.bands = g_mobile_renderer.environment_sample.bands;
+        environment_ptr = &environment_info;
+    }
+
+    EyeFbo target_fbo{};
+    target_fbo.fbo = 0;
+    target_fbo.width = g_mobile_renderer.surface_width;
+    target_fbo.height = g_mobile_renderer.surface_height;
+    g_mobile_renderer.renderer.render_eye(
+        target_fbo,
+        view,
+        proj,
+        render_refs,
+        g_mobile_renderer.vr_state,
+        g_mobile_renderer.pan_x,
+        g_mobile_renderer.pan_y,
+        0.0f,
+        0.0f,
+        canvas_scale,
+        nullptr,
+        environment_ptr,
+        0.01f, 0.01f, 0.02f, 1.0f,
+        false);
 }
 
 // ============================================================

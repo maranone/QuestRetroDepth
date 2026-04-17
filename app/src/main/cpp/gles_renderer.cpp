@@ -354,6 +354,45 @@ void main() {
 }
 )GLSL";
 
+static const char* kSkyVS = R"GLSL(#version 300 es
+layout(location = 0) in vec3 aPos;
+uniform mat4 uProj;
+out float vSphereY;
+void main() {
+    gl_Position = uProj * vec4(aPos, 1.0);
+    vSphereY = clamp(aPos.y / 18.0, -1.0, 1.0);
+}
+)GLSL";
+
+static const char* kSkyFS = R"GLSL(#version 300 es
+precision highp float;
+uniform vec4 uBands[12];
+uniform int  uMode;
+in float vSphereY;
+out vec4 fragColor;
+
+vec4 sampleBands(float t) {
+    float band_pos = clamp(t, 0.0, 1.0) * 11.0;
+    int idx0 = int(floor(band_pos));
+    int idx1 = min(idx0 + 1, 11);
+    float frac_t = fract(band_pos);
+    return mix(uBands[idx0], uBands[idx1], frac_t);
+}
+
+void main() {
+    float t = vSphereY * 0.5 + 0.5;
+    vec4 env = sampleBands(t);
+    float abs_y = abs(vSphereY);
+    float horizon_fade = smoothstep(0.10, 0.35, abs_y);
+    float upper_boost = mix(0.70, 1.0, smoothstep(0.15, 1.0, max(vSphereY, 0.0)));
+    float alpha = env.a * horizon_fade * upper_boost;
+    if (uMode == 1 && vSphereY < 0.0) {
+        alpha = 0.0;
+    }
+    fragColor = vec4(env.rgb, alpha);
+}
+)GLSL";
+
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
@@ -523,9 +562,24 @@ bool GlesRenderer::init_ui_program(std::string& err) {
     return true;
 }
 
+bool GlesRenderer::init_sky_program(std::string& err) {
+    GLuint vs = compile_shader(GL_VERTEX_SHADER, kSkyVS, err); if (!vs) return false;
+    GLuint fs = compile_shader(GL_FRAGMENT_SHADER, kSkyFS, err);
+    if (!fs) { glDeleteShader(vs); return false; }
+    m_sky_prog = link_program(vs, fs, err);
+    glDeleteShader(vs);
+    glDeleteShader(fs);
+    if (!m_sky_prog) return false;
+    m_sky_u_proj = glGetUniformLocation(m_sky_prog, "uProj");
+    m_sky_u_bands = glGetUniformLocation(m_sky_prog, "uBands[0]");
+    m_sky_u_mode = glGetUniformLocation(m_sky_prog, "uMode");
+    return true;
+}
+
 bool GlesRenderer::init(std::string& error_out) {
     if (!init_layer_program(error_out)) return false;
     if (!init_flat_program(error_out))  return false;
+    if (!init_sky_program(error_out))   return false;
     if (!init_ui_program(error_out))    return false;
     std::string immersive_err;
     if (!init_immersive_layer_program(immersive_err)) {
@@ -600,6 +654,58 @@ bool GlesRenderer::init(std::string& error_out) {
     glVertexAttribPointer(1, 1, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)(3 * sizeof(float)));
     glBindVertexArray(0);
 
+    constexpr float kSkyRadius = 18.0f;
+    constexpr int kSkyLatBands = 24;
+    constexpr int kSkyLonBands = 32;
+    constexpr float kPi = 3.14159265358979323846f;
+    constexpr float kHalfPi = 1.57079632679489661923f;
+    std::vector<float> sky_verts;
+    sky_verts.reserve(kSkyLatBands * kSkyLonBands * 6 * 3);
+    auto push_sky = [&](float x, float y, float z) {
+        sky_verts.push_back(x);
+        sky_verts.push_back(y);
+        sky_verts.push_back(z);
+    };
+    for (int lat = 0; lat < kSkyLatBands; ++lat) {
+        const float v0 = (float)lat / (float)kSkyLatBands;
+        const float v1 = (float)(lat + 1) / (float)kSkyLatBands;
+        const float theta0 = -kHalfPi + v0 * kPi;
+        const float theta1 = -kHalfPi + v1 * kPi;
+        const float y0 = std::sin(theta0) * kSkyRadius;
+        const float y1 = std::sin(theta1) * kSkyRadius;
+        const float r0 = std::cos(theta0) * kSkyRadius;
+        const float r1 = std::cos(theta1) * kSkyRadius;
+        for (int lon = 0; lon < kSkyLonBands; ++lon) {
+            const float u0 = (float)lon / (float)kSkyLonBands;
+            const float u1 = (float)(lon + 1) / (float)kSkyLonBands;
+            const float phi0 = u0 * 2.0f * kPi;
+            const float phi1 = u1 * 2.0f * kPi;
+            const float x00 = std::cos(phi0) * r0;
+            const float z00 = std::sin(phi0) * r0;
+            const float x01 = std::cos(phi1) * r0;
+            const float z01 = std::sin(phi1) * r0;
+            const float x10 = std::cos(phi0) * r1;
+            const float z10 = std::sin(phi0) * r1;
+            const float x11 = std::cos(phi1) * r1;
+            const float z11 = std::sin(phi1) * r1;
+            push_sky(x00, y0, z00);
+            push_sky(x11, y1, z11);
+            push_sky(x10, y1, z10);
+            push_sky(x00, y0, z00);
+            push_sky(x01, y0, z01);
+            push_sky(x11, y1, z11);
+        }
+    }
+    m_sky_vertex_count = (int)(sky_verts.size() / 3);
+    glGenVertexArrays(1, &m_sky_vao);
+    glGenBuffers(1, &m_sky_vbo);
+    glBindVertexArray(m_sky_vao);
+    glBindBuffer(GL_ARRAY_BUFFER, m_sky_vbo);
+    glBufferData(GL_ARRAY_BUFFER, sky_verts.size() * sizeof(float), sky_verts.data(), GL_STATIC_DRAW);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glBindVertexArray(0);
+
     return true;
 }
 
@@ -614,9 +720,12 @@ void GlesRenderer::shutdown() {
     if (m_curve_vao) { glDeleteVertexArrays(1, &m_curve_vao); m_curve_vao = 0; }
     if (m_flat_vbo)  { glDeleteBuffers(1, &m_flat_vbo);  m_flat_vbo  = 0; }
     if (m_flat_vao)  { glDeleteVertexArrays(1, &m_flat_vao); m_flat_vao = 0; }
+    if (m_sky_vbo)   { glDeleteBuffers(1, &m_sky_vbo);   m_sky_vbo   = 0; }
+    if (m_sky_vao)   { glDeleteVertexArrays(1, &m_sky_vao); m_sky_vao = 0; }
     if (m_program)   { glDeleteProgram(m_program);       m_program   = 0; }
     if (m_immersive_program) { glDeleteProgram(m_immersive_program); m_immersive_program = 0; }
     if (m_flat_prog) { glDeleteProgram(m_flat_prog);     m_flat_prog = 0; }
+    if (m_sky_prog)  { glDeleteProgram(m_sky_prog);      m_sky_prog  = 0; }
     if (m_ui_vbo)    { glDeleteBuffers(1, &m_ui_vbo);    m_ui_vbo    = 0; }
     if (m_ui_vao)    { glDeleteVertexArrays(1, &m_ui_vao); m_ui_vao  = 0; }
     if (m_ui_prog)   { glDeleteProgram(m_ui_prog);       m_ui_prog   = 0; }
@@ -1045,6 +1154,28 @@ void GlesRenderer::draw_laser2(const OverlayInfo& ov, const Mat4& vp) {
     glBindVertexArray(0);
 }
 
+void GlesRenderer::draw_sky_dome(const Mat4& proj, const SkyDomeInfo& info) {
+    if (!info.enabled || !m_sky_prog || !m_sky_vao || m_sky_vertex_count <= 0) return;
+    glUseProgram(m_sky_prog);
+    glUniformMatrix4fv(m_sky_u_proj, 1, GL_FALSE, proj.data());
+    glUniform4fv(m_sky_u_bands, (GLsizei)info.bands.size(), info.bands[0].data());
+    glUniform1i(m_sky_u_mode, info.mode == EnvironmentSphereMode::FullSphere ? 2 :
+                              info.mode == EnvironmentSphereMode::SkyOnly ? 1 : 0);
+    glBindVertexArray(m_sky_vao);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glDisable(GL_DEPTH_TEST);
+    glDepthMask(GL_FALSE);
+    glCullFace(GL_FRONT);
+    glEnable(GL_CULL_FACE);
+    glDrawArrays(GL_TRIANGLES, 0, m_sky_vertex_count);
+    glDisable(GL_CULL_FACE);
+    glDepthMask(GL_TRUE);
+    glEnable(GL_DEPTH_TEST);
+    glDisable(GL_BLEND);
+    glBindVertexArray(0);
+}
+
 // ---------------------------------------------------------------------------
 // Render one eye
 // ---------------------------------------------------------------------------
@@ -1060,6 +1191,7 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
                                float canvas_el,
                                float canvas_scale,
                                const OverlayInfo* overlay,
+                               const SkyDomeInfo* sky_dome,
                                float bg_r,
                                float bg_g,
                                float bg_b,
@@ -1074,6 +1206,10 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
     glDepthMask(GL_TRUE);
     glClearColor(bg_r, bg_g, bg_b, bg_a);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+    if (sky_dome && sky_dome->enabled) {
+        draw_sky_dome(proj, *sky_dome);
+    }
 
     // Game layers (skip if no program or no frames, but still draw overlay below)
     if (m_program && !frames.empty()) {

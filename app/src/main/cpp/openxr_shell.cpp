@@ -842,6 +842,149 @@ static VrState effective_render_state(const VrState& state) {
     return render_state;
 }
 
+static std::array<float, 4> lerp_rgba(const std::array<float, 4>& a,
+                                      const std::array<float, 4>& b,
+                                      float t) {
+    std::array<float, 4> out{};
+    for (int i = 0; i < 4; ++i) out[i] = a[i] + (b[i] - a[i]) * t;
+    return out;
+}
+
+static bool sample_environment_band(const LayerFrame& frame,
+                                    int y0,
+                                    int y1,
+                                    std::array<float, 4>& out_color) {
+    if (frame.width <= 0 || frame.height <= 0 || frame.rgba.empty()) return false;
+    const int x_step = std::max(1, frame.width / 64);
+    const int y_step = std::max(1, frame.height / 64);
+    const int clamped_y0 = std::clamp(y0, 0, frame.height);
+    const int clamped_y1 = std::clamp(y1, clamped_y0 + 1, frame.height);
+    float r = 0.0f;
+    float g = 0.0f;
+    float b = 0.0f;
+    float a = 0.0f;
+    float count = 0.0f;
+    for (int y = clamped_y0; y < clamped_y1; y += y_step) {
+        for (int x = 0; x < frame.width; x += x_step) {
+            const std::size_t idx = (std::size_t)(y * frame.width + x) * 4u;
+            const float alpha = frame.rgba[idx + 3] / 255.0f;
+            if (alpha <= 0.05f) continue;
+            r += (frame.rgba[idx + 0] / 255.0f) * alpha;
+            g += (frame.rgba[idx + 1] / 255.0f) * alpha;
+            b += (frame.rgba[idx + 2] / 255.0f) * alpha;
+            a += alpha;
+            count += 1.0f;
+        }
+    }
+    if (count <= 0.0f || a <= 0.0f) return false;
+    out_color = {
+        std::clamp(r / a, 0.0f, 1.0f),
+        std::clamp(g / a, 0.0f, 1.0f),
+        std::clamp(b / a, 0.0f, 1.0f),
+        1.0f
+    };
+    return true;
+}
+
+static bool build_environment_sphere_sample_from_layer(
+    const LayerFrame& frame,
+    EnvironmentSphereMode mode,
+    OpenXrShell::EnvironmentSphereSample& out_sample) {
+    out_sample.valid = false;
+    if (!frame.has_pixels || frame.width <= 0 || frame.height <= 0 || frame.rgba.empty()) return false;
+    if (mode == EnvironmentSphereMode::Off) return false;
+    constexpr int kBandCount = 12;
+    const int sample_y0 = 0;
+    const int sample_y1 = (mode == EnvironmentSphereMode::SkyOnly)
+        ? std::max(1, frame.height / 2)
+        : frame.height;
+    const int sample_h = std::max(1, sample_y1 - sample_y0);
+    std::array<bool, kBandCount> valid{};
+    for (int i = 0; i < kBandCount; ++i) {
+        const int y0 = sample_y0 + (sample_h * i) / kBandCount;
+        const int y1 = sample_y0 + (sample_h * (i + 1)) / kBandCount;
+        valid[i] = sample_environment_band(frame, y0, std::max(y0 + 1, y1), out_sample.bands[i]);
+    }
+    bool any_valid = false;
+    for (bool ok : valid) any_valid = any_valid || ok;
+    if (!any_valid) return false;
+    for (int i = 0; i < kBandCount; ++i) {
+        if (valid[i]) continue;
+        int left = i - 1;
+        int right = i + 1;
+        while (left >= 0 && !valid[left]) --left;
+        while (right < kBandCount && !valid[right]) ++right;
+        if (left >= 0) out_sample.bands[i] = out_sample.bands[left];
+        else if (right < kBandCount) out_sample.bands[i] = out_sample.bands[right];
+    }
+    if (mode == EnvironmentSphereMode::SkyOnly) {
+        for (int i = 6; i < kBandCount; ++i) {
+            out_sample.bands[i] = {out_sample.bands[5][0], out_sample.bands[5][1], out_sample.bands[5][2], 0.0f};
+        }
+    }
+    out_sample.valid = true;
+    return true;
+}
+
+static void smooth_environment_sphere_sample(OpenXrShell::EnvironmentSphereSample& current,
+                                             const OpenXrShell::EnvironmentSphereSample& target,
+                                             float blend) {
+    if (!target.valid) {
+        for (auto& band : current.bands) band[3] *= (1.0f - blend);
+        current.valid = false;
+        for (const auto& band : current.bands) {
+            if (band[3] > 0.01f) { current.valid = true; break; }
+        }
+        return;
+    }
+    if (!current.valid) {
+        current = target;
+        return;
+    }
+    for (int i = 0; i < (int)current.bands.size(); ++i) {
+        current.bands[i] = lerp_rgba(current.bands[i], target.bands[i], blend);
+    }
+    current.valid = true;
+}
+
+static bool layer_has_bright_samples(const LayerFrame& frame, int& bright_samples_out) {
+    bright_samples_out = 0;
+    if (!frame.has_pixels || frame.width <= 0 || frame.height <= 0 || frame.rgba.empty()) return false;
+    const int x_step = 4;
+    const int y_step = 4;
+    for (int y = 0; y < frame.height; y += y_step) {
+        for (int x = 0; x < frame.width; x += x_step) {
+            const std::size_t idx = (std::size_t)(y * frame.width + x) * 4u;
+            const uint8_t alpha = frame.rgba[idx + 3];
+            if (alpha < 32) continue;
+            const uint8_t bright = std::max({frame.rgba[idx + 0], frame.rgba[idx + 1], frame.rgba[idx + 2]});
+            if (bright > 20) ++bright_samples_out;
+        }
+    }
+    return bright_samples_out > 0;
+}
+
+static bool is_blackout_candidate(const std::vector<LayerFrame*>& frames, int& bright_samples_out) {
+    bright_samples_out = 0;
+    bool any_pixels = false;
+    for (const LayerFrame* lf : frames) {
+        if (!lf || !lf->has_pixels || lf->width <= 0 || lf->height <= 0 || lf->rgba.empty()) continue;
+        any_pixels = true;
+        int layer_bright = 0;
+        layer_has_bright_samples(*lf, layer_bright);
+        bright_samples_out += layer_bright;
+    }
+    if (!any_pixels) return true;
+    return bright_samples_out == 0;
+}
+
+static float blackout_reveal_pulse_scale(XrTime now, XrTime start_time) {
+    constexpr float kPulseDurationNs = 120000000.0f;
+    const float t = std::clamp((float)(now - start_time) / kPulseDurationNs, 0.0f, 1.0f);
+    const float ease = 1.0f - (1.0f - t) * (1.0f - t);
+    return 1.015f - 0.015f * ease;
+}
+
 static int baseline_copy_count(const LayerFrame& frame) {
     return frame.copies.empty() ? GlesRenderer::k_max_copies : (int)frame.copies.size();
 }
@@ -1364,6 +1507,7 @@ static OpenXrShell::QuickSettingsPreset make_default_quick_settings_preset(Backe
     preset.saturation = defaults.saturation;
     preset.brightness = defaults.brightness;
     preset.perspective_comp = defaults.perspective_comp;
+    preset.environment_sphere_mode = defaults.environment_sphere_mode;
 
     if (!config.layers.empty()) {
         float near_depth = config.layers[0].depth_meters;
@@ -2561,21 +2705,21 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     }
     if (!env) return;
 
-    constexpr int k_settings_row_count = 19;
+    constexpr int k_settings_row_count = 20;
     // Build name/value/isBool arrays.
-    // Rows 0-3 and 5-6: bools, Row 4: cycle, Rows 7-10: floats, Row 11: Refresh Hz,
-    // Row 12: VR Res Scale, Rows 13-18: action buttons.
+    // Rows 0-3 and 5-7: bools, Row 4: cycle, Rows 8-11: floats, Row 12: Refresh Hz,
+    // Row 13: VR Res Scale, Rows 14-19: action buttons.
     struct SettingDef { const char* name; bool is_bool; };
     static const SettingDef defs[k_settings_row_count] = {
         {"Curve Screen", true }, {"Upscale",      true },
-        {"Ambilight",    true }, {"Passthrough",  true }, {"Depth Mode",   false},
+        {"Ambilight",    true }, {"Env Sphere",   false}, {"Passthrough",  true }, {"Depth Mode",   false},
         {"Experimental Rumble", true},
         {"Persp. Comp.", true},
         {"Gamma",        false}, {"Contrast",     false}, {"Saturation",   false},
         {"Brightness",   false},
         {"Refresh Hz",   false},
         {"VR Res Scale",  false},
-        // Action buttons (rows 13-18) — rendered specially in Kotlin
+        // Action buttons (rows 14-19) — rendered specially in Kotlin
         {"Reset Settings",  false},
         {"",       false},
         {"",       false},
@@ -2591,10 +2735,10 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     const bool has_active_rom = !m_current_rom_name.empty();
     std::array<std::string, k_settings_row_count> dynamic_names;
     for (int i = 0; i < k_settings_row_count; ++i) dynamic_names[i] = defs[i].name;
-    dynamic_names[14] = "Save " + game_target + " Settings";
-    dynamic_names[15] = "Save " + backend_target + " Global Settings";
-    dynamic_names[16] = "Load " + game_target + " Settings";
-    dynamic_names[17] = "Load " + backend_target + " Global Settings";
+    dynamic_names[15] = "Save " + game_target + " Settings";
+    dynamic_names[16] = "Save " + backend_target + " Global Settings";
+    dynamic_names[17] = "Load " + game_target + " Settings";
+    dynamic_names[18] = "Load " + backend_target + " Global Settings";
 
     // Determine display refresh rate label
     char refresh_label[32];
@@ -2623,23 +2767,24 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     snprintf(val_bufs[0], sizeof(val_bufs[0]), "%s", m_vr_state.immersive_beta_enabled ? "ON" : "OFF");
     snprintf(val_bufs[1], sizeof(val_bufs[1]), "%s", m_vr_state.upscale    ? "ON" : "OFF");
     snprintf(val_bufs[2], sizeof(val_bufs[2]), "%s", m_vr_state.ambilight  ? "ON" : "OFF");
-    snprintf(val_bufs[3], sizeof(val_bufs[3]), "%s", m_vr_state.shadows    ? "ON" : "OFF");
-    snprintf(val_bufs[4], sizeof(val_bufs[4]), "%s", depth_mode_label(m_vr_state.depth_mode));
-    snprintf(val_bufs[5], sizeof(val_bufs[5]), "%s", m_experimental_rumble_enabled ? rumble_status.c_str() : "OFF");
-    snprintf(val_bufs[6], sizeof(val_bufs[6]), "%s", m_vr_state.perspective_comp ? "ON" : "OFF");
-    snprintf(val_bufs[7], sizeof(val_bufs[7]), "%.2f", m_vr_state.gamma);
-    snprintf(val_bufs[8], sizeof(val_bufs[8]), "%.2f", m_vr_state.contrast);
-    snprintf(val_bufs[9], sizeof(val_bufs[9]), "%.2f", m_vr_state.saturation);
-    snprintf(val_bufs[10], sizeof(val_bufs[10]), "%.2f", m_vr_state.brightness);
-    snprintf(val_bufs[11], sizeof(val_bufs[11]), "%s", refresh_label);
-    snprintf(val_bufs[12], sizeof(val_bufs[12]), "%.2fx", m_vr_state.vr_resolution_scale);
-    // Action button rows 13-18
-    snprintf(val_bufs[13], sizeof(val_bufs[13]), "ACTION"); // Reset
-    snprintf(val_bufs[14], sizeof(val_bufs[14]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Save Game
-    snprintf(val_bufs[15], sizeof(val_bufs[15]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Save Global
-    snprintf(val_bufs[16], sizeof(val_bufs[16]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Load Game
-    snprintf(val_bufs[17], sizeof(val_bufs[17]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Load Global
-    snprintf(val_bufs[18], sizeof(val_bufs[18]), "ACTION"); // Back
+    snprintf(val_bufs[3], sizeof(val_bufs[3]), "%s", environment_sphere_mode_label(m_vr_state.environment_sphere_mode));
+    snprintf(val_bufs[4], sizeof(val_bufs[4]), "%s", m_vr_state.shadows    ? "ON" : "OFF");
+    snprintf(val_bufs[5], sizeof(val_bufs[5]), "%s", depth_mode_label(m_vr_state.depth_mode));
+    snprintf(val_bufs[6], sizeof(val_bufs[6]), "%s", m_experimental_rumble_enabled ? rumble_status.c_str() : "OFF");
+    snprintf(val_bufs[7], sizeof(val_bufs[7]), "%s", m_vr_state.perspective_comp ? "ON" : "OFF");
+    snprintf(val_bufs[8], sizeof(val_bufs[8]), "%.2f", m_vr_state.gamma);
+    snprintf(val_bufs[9], sizeof(val_bufs[9]), "%.2f", m_vr_state.contrast);
+    snprintf(val_bufs[10], sizeof(val_bufs[10]), "%.2f", m_vr_state.saturation);
+    snprintf(val_bufs[11], sizeof(val_bufs[11]), "%.2f", m_vr_state.brightness);
+    snprintf(val_bufs[12], sizeof(val_bufs[12]), "%s", refresh_label);
+    snprintf(val_bufs[13], sizeof(val_bufs[13]), "%.2fx", m_vr_state.vr_resolution_scale);
+    // Action button rows 14-19
+    snprintf(val_bufs[14], sizeof(val_bufs[14]), "ACTION"); // Reset
+    snprintf(val_bufs[15], sizeof(val_bufs[15]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Save Game
+    snprintf(val_bufs[16], sizeof(val_bufs[16]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Save Global
+    snprintf(val_bufs[17], sizeof(val_bufs[17]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Load Game
+    snprintf(val_bufs[18], sizeof(val_bufs[18]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Load Global
+    snprintf(val_bufs[19], sizeof(val_bufs[19]), "ACTION"); // Back
 
     jclass str_cls = env->FindClass("java/lang/String");
     if (!str_cls) { env->ExceptionClear(); if (detach) m_vm->DetachCurrentThread(); return; }
@@ -3599,6 +3744,7 @@ static void write_quick_settings_presets_file(const std::string& path,
         std::fprintf(f, "saturation_%d=%.6f\n", i, p.saturation);
         std::fprintf(f, "brightness_%d=%.6f\n", i, p.brightness);
         std::fprintf(f, "perspective_comp_%d=%d\n", i, p.perspective_comp ? 1 : 0);
+        std::fprintf(f, "environment_sphere_mode_%d=%d\n", i, (int)p.environment_sphere_mode);
     }
     fclose(f);
 }
@@ -3660,6 +3806,10 @@ static void load_quick_settings_presets_file(const std::string& path,
             presets[idx].brightness = (float)std::atof(value.c_str());
         } else if (std::sscanf(key.c_str(), "perspective_comp_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
             presets[idx].perspective_comp = std::atoi(value.c_str()) != 0;
+        } else if (std::sscanf(key.c_str(), "environment_sphere_mode_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].environment_sphere_mode = (EnvironmentSphereMode)std::clamp(std::atoi(value.c_str()), 0, 2);
+        } else if (std::sscanf(key.c_str(), "sky_dome_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].environment_sphere_mode = std::atoi(value.c_str()) != 0 ? EnvironmentSphereMode::SkyOnly : EnvironmentSphereMode::Off;
         }
     }
     fclose(f);
@@ -4320,6 +4470,7 @@ void OpenXrShell::apply_quick_settings_preset(int idx) {
     m_vr_state.saturation = preset.saturation;
     m_vr_state.brightness = preset.brightness;
     m_vr_state.perspective_comp = preset.perspective_comp;
+    m_vr_state.environment_sphere_mode = preset.environment_sphere_mode;
 
     const int n = (int)m_config.layers.size();
     if (n > 0) {
@@ -5275,7 +5426,7 @@ void OpenXrShell::poll_actions() {
             // Cycle  (row 4): trigger on left/right zones → previous/next
             // Floats (rows 6-9): trigger on left 22% → dec, right 22% → inc
             //                    hold trigger + stick X for continuous tweak
-            // Actions (rows 12-17): trigger → fire action
+            // Actions (rows 14-19): trigger → fire action
             auto adjust_setting = [&](int row, int dir) {
                 // dir: -1 = dec, +1 = inc (ignored for bool rows)
                 auto clamp = [](float v, float lo, float hi) {
@@ -5287,6 +5438,10 @@ void OpenXrShell::poll_actions() {
                     case 1: m_vr_state.upscale     = !m_vr_state.upscale;     m_settings_panel_dirty=true; break;
                     case 2: m_vr_state.ambilight   = !m_vr_state.ambilight;   m_settings_panel_dirty=true; break;
                     case 3:
+                        m_vr_state.environment_sphere_mode = (EnvironmentSphereMode)(((int)m_vr_state.environment_sphere_mode + (dir == 0 ? 1 : dir) + 3) % 3);
+                        m_settings_panel_dirty = true;
+                        break;
+                    case 4:
                         m_vr_state.shadows = !m_vr_state.shadows;
                         m_settings_panel_dirty = true;
                         sync_passthrough_state();
@@ -5294,24 +5449,24 @@ void OpenXrShell::poll_actions() {
                             ? (passthrough_active() ? "Passthrough ON" : "Passthrough unavailable on this OpenXR runtime.")
                             : "Passthrough OFF");
                         break;
-                    case 4:
+                    case 5:
                         m_vr_state.depth_mode = cycle_depth_mode(m_vr_state.depth_mode, dir == 0 ? 1 : dir);
                         m_settings_panel_dirty = true;
                         break;
-                    case 5:
+                    case 6:
                         m_experimental_rumble_enabled = !m_experimental_rumble_enabled;
                         m_settings_panel_dirty = true;
                         if (m_on_experimental_rumble_changed) m_on_experimental_rumble_changed(m_experimental_rumble_enabled);
                         break;
-                    case 6:
+                    case 7:
                         m_vr_state.perspective_comp = !m_vr_state.perspective_comp;
                         m_settings_panel_dirty = true;
                         break;
-                    case 7: m_vr_state.gamma       = clamp(m_vr_state.gamma      + dir*step, 0.5f, 2.0f); m_settings_panel_dirty=true; break;
-                    case 8: m_vr_state.contrast    = clamp(m_vr_state.contrast   + dir*step, 0.5f, 2.0f); m_settings_panel_dirty=true; break;
-                    case 9: m_vr_state.saturation  = clamp(m_vr_state.saturation + dir*step, 0.0f, 2.0f); m_settings_panel_dirty=true; break;
-                    case 10: m_vr_state.brightness  = clamp(m_vr_state.brightness + dir*step, 0.5f, 2.0f); m_settings_panel_dirty=true; break;
-                    case 11: {
+                    case 8: m_vr_state.gamma       = clamp(m_vr_state.gamma      + dir*step, 0.5f, 2.0f); m_settings_panel_dirty=true; break;
+                    case 9: m_vr_state.contrast    = clamp(m_vr_state.contrast   + dir*step, 0.5f, 2.0f); m_settings_panel_dirty=true; break;
+                    case 10: m_vr_state.saturation = clamp(m_vr_state.saturation + dir*step, 0.0f, 2.0f); m_settings_panel_dirty=true; break;
+                    case 11: m_vr_state.brightness = clamp(m_vr_state.brightness + dir*step, 0.5f, 2.0f); m_settings_panel_dirty=true; break;
+                    case 12: {
                         // Refresh rate: cycle through available rates; dir=+1 → higher, dir=-1 → lower
                         if (!m_impl->available_rates.empty()) {
                             // Find current index (default to highest)
@@ -5330,7 +5485,7 @@ void OpenXrShell::poll_actions() {
                         }
                         break;
                     }
-                    case 12: {
+                    case 13: {
                         const int steps = std::clamp((int)std::lround(m_vr_state.vr_resolution_scale * 4.0f) + dir, 1, 16);
                         const float new_scale = steps * 0.25f;
                         if (std::abs(new_scale - m_vr_state.vr_resolution_scale) > 0.001f) {
@@ -5346,18 +5501,18 @@ void OpenXrShell::poll_actions() {
 
             int row = m_settings_panel_hovered;
             if (rtrig_rising && m_laser_hit && row >= 0) {
-                if ((row >= 0 && row <= 3) || row == 5 || row == 6) {
+                if ((row >= 0 && row <= 2) || row == 4 || row == 6 || row == 7) {
                     adjust_setting(row, 0);
                     fire_haptic(true, 0.3f, 25);
                     do_step_one();
-                } else if (row == 4) {
+                } else if (row == 3 || row == 5) {
                     if (m_settings_panel_area != 0) {
                         const int dir = (m_settings_panel_area == 1) ? -1 : 1;
                         adjust_setting(row, dir);
                         fire_haptic(true, 0.2f, 15);
                         do_step_one();
                     }
-                } else if (row <= 11) {
+                } else if (row <= 12) {
                     if (m_settings_panel_area == 0) {
                         // Numeric/cycle rows only act on the visible minus/plus zones.
                     } else {
@@ -5366,7 +5521,7 @@ void OpenXrShell::poll_actions() {
                     fire_haptic(true, 0.2f, 15);
                     do_step_one();
                     }
-                } else if (row == 12) {
+                } else if (row == 13) {
                     if (m_settings_panel_area == 0) {
                         // Numeric rows only act on the visible minus/plus zones.
                     } else {
@@ -5377,38 +5532,39 @@ void OpenXrShell::poll_actions() {
                     do_step_one();
                     }
                 } else {
-                    // Action buttons (rows 13-18)
+                    // Action buttons (rows 14-19)
                     switch (row) {
-                        case 13: m_settings_action_pending = 5; break; // Reset
                         case 14:
+                            m_settings_action_pending = 5; break; // Reset
+                        case 15:
                             if (m_current_rom_name.empty()) {
                                 set_status("Load a ROM before saving game settings.");
                                 fire_haptic(true, 0.2f, 20);
                                 break;
                             }
                             m_settings_action_pending = 1; break; // Save Game
-                        case 15:
+                        case 16:
                             if (m_current_rom_name.empty()) {
                                 set_status("Load a ROM before saving global settings.");
                                 fire_haptic(true, 0.2f, 20);
                                 break;
                             }
                             m_settings_action_pending = 2; break; // Save Global
-                        case 16:
+                        case 17:
                             if (m_current_rom_name.empty()) {
                                 set_status("Load a ROM before loading game settings.");
                                 fire_haptic(true, 0.2f, 20);
                                 break;
                             }
                             m_settings_action_pending = 3; break; // Load Game
-                        case 17:
+                        case 18:
                             if (m_current_rom_name.empty()) {
                                 set_status("Load a ROM before loading global settings.");
                                 fire_haptic(true, 0.2f, 20);
                                 break;
                             }
                             m_settings_action_pending = 4; break; // Load Global
-                        case 18: // Back
+                        case 19: // Back
                             m_active_sub_panel        = m_settings_return_to_quick ? k_panel_quick_edit : 0;
                             m_settings_panel_hovered = -1;
                             m_settings_panel_area    = 0;
@@ -5422,7 +5578,7 @@ void OpenXrShell::poll_actions() {
                 }
             }
             // Continuous adjustment while holding trigger + stick X (only for float rows and int sliders)
-            if (rtrig_now && ((row >= 7 && row <= 10) || row == 12) && std::abs(rx) > 0.5f
+            if (rtrig_now && ((row >= 8 && row <= 11) || row == 13) && std::abs(rx) > 0.5f
                 && now_panel - m_last_settings_fire > k_setting_interval) {
                 m_last_settings_fire = now_panel;
                 adjust_setting(row, rx > 0 ? 1 : -1);
@@ -5944,6 +6100,7 @@ void OpenXrShell::apply_pending_vr_changes() {
             preset.contrast = m_vr_state.contrast;
             preset.saturation = m_vr_state.saturation;
             preset.brightness = m_vr_state.brightness;
+            preset.environment_sphere_mode = m_vr_state.environment_sphere_mode;
             if (!m_config.layers.empty()) {
                 float near_depth = m_config.layers[0].depth_meters;
                 float far_depth = m_config.layers[0].depth_meters;
@@ -6276,6 +6433,95 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         for (LayerFrame* lf : m_render_layer_refs) if (lf) lf->persp_comp_scale = 1.0f;
     }
 
+    const bool blackout_detector_allowed =
+        !m_menu_open &&
+        !m_edit_mode &&
+        !passthrough_active() &&
+        m_active_sub_panel != 2 &&
+        m_active_sub_panel != 3 &&
+        m_active_sub_panel != 7 &&
+        !m_render_layer_refs.empty();
+
+    if (!blackout_detector_allowed) {
+        m_blackout_reveal_phase = BlackoutRevealPhase::Normal;
+        m_blackout_candidate_frames = 0;
+        m_blackout_visible_frames = 0;
+        m_blackout_reveal_start_time = 0;
+        m_blackout_reveal_layer_ids.clear();
+    } else if (frame_updated) {
+        int bright_samples = 0;
+        const bool blackout_candidate = is_blackout_candidate(m_render_layer_refs, bright_samples);
+        if (blackout_candidate) {
+            ++m_blackout_candidate_frames;
+            m_blackout_visible_frames = 0;
+        } else {
+            m_blackout_candidate_frames = 0;
+            m_blackout_visible_frames = (bright_samples >= 8) ? (m_blackout_visible_frames + 1) : 0;
+        }
+
+        if (m_blackout_reveal_phase == BlackoutRevealPhase::RevealAnimating &&
+            m_blackout_candidate_frames >= 2) {
+            m_blackout_reveal_phase = BlackoutRevealPhase::BlackoutLatched;
+            m_blackout_reveal_start_time = 0;
+            m_blackout_reveal_layer_ids.clear();
+        }
+
+        switch (m_blackout_reveal_phase) {
+            case BlackoutRevealPhase::Normal:
+                if (m_blackout_candidate_frames >= 2) {
+                    m_blackout_reveal_phase = BlackoutRevealPhase::BlackoutLatched;
+                    m_blackout_reveal_start_time = 0;
+                    m_blackout_reveal_layer_ids.clear();
+                }
+                break;
+            case BlackoutRevealPhase::BlackoutLatched:
+                if (m_blackout_visible_frames >= 2) {
+                    std::vector<const LayerFrame*> revealable;
+                    revealable.reserve(m_render_layer_refs.size());
+                    for (const LayerFrame* lf : m_render_layer_refs) {
+                        if (!lf || !lf->has_pixels || lf->width <= 0 || lf->height <= 0 || lf->rgba.empty()) continue;
+                        revealable.push_back(lf);
+                    }
+                    std::sort(revealable.begin(), revealable.end(), [](const LayerFrame* a, const LayerFrame* b) {
+                        return a->depth_meters > b->depth_meters;
+                    });
+                    m_blackout_reveal_layer_ids.clear();
+                    for (const LayerFrame* lf : revealable) m_blackout_reveal_layer_ids.push_back(lf->id);
+                    if (m_blackout_reveal_layer_ids.size() >= 2) {
+                        m_blackout_reveal_phase = BlackoutRevealPhase::RevealAnimating;
+                        m_blackout_reveal_start_time = m_frame_predicted_time;
+                    } else {
+                        m_blackout_reveal_phase = BlackoutRevealPhase::Normal;
+                        m_blackout_reveal_start_time = 0;
+                        m_blackout_reveal_layer_ids.clear();
+                    }
+                }
+                break;
+            case BlackoutRevealPhase::RevealAnimating:
+                break;
+            case BlackoutRevealPhase::RevealCooldown:
+                break;
+        }
+    }
+
+    if (frame_updated) {
+        EnvironmentSphereSample target_sample{};
+        const LayerFrame* source_layer = nullptr;
+        float source_depth = -1.0f;
+        for (const LayerFrame* lf : m_render_layer_refs) {
+            if (!lf || !lf->has_pixels || lf->width <= 0 || lf->height <= 0 || lf->rgba.empty()) continue;
+            if (lf->depth_meters >= source_depth) {
+                source_depth = lf->depth_meters;
+                source_layer = lf;
+            }
+        }
+        if (source_layer) {
+            build_environment_sphere_sample_from_layer(
+                *source_layer, m_vr_state.environment_sphere_mode, target_sample);
+        }
+        smooth_environment_sphere_sample(m_environment_sphere_sample, target_sample, 0.15f);
+    }
+
     // ---- Rebuild panel textures on GL thread (one per frame to avoid spike) ----
     // Throttle: JNI bitmap render is expensive; don't rebuild more than once per 100 ms.
     constexpr XrTime k_panel_rebuild_interval = 100'000'000; // 100 ms in nanoseconds
@@ -6593,6 +6839,56 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
     const auto render_start = std::chrono::steady_clock::now();
 
     const VrState render_state = effective_render_state(m_vr_state);
+    const bool pt_active = passthrough_active();
+    std::vector<LayerFrame*> reveal_render_layer_refs = m_render_layer_refs;
+    float render_canvas_scale = m_canvas_scale;
+
+    if (m_blackout_reveal_phase == BlackoutRevealPhase::RevealAnimating) {
+        constexpr float kRevealDurationNs = 500000000.0f;
+        const float progress = std::clamp(
+            (float)(m_frame_predicted_time - m_blackout_reveal_start_time) / kRevealDurationNs,
+            0.0f, 1.0f);
+        const int reveal_count = std::clamp(
+            (int)std::ceil(progress * (float)m_blackout_reveal_layer_ids.size()),
+            1,
+            (int)m_blackout_reveal_layer_ids.size());
+        reveal_render_layer_refs.clear();
+        for (LayerFrame* lf : m_render_layer_refs) {
+            if (!lf) continue;
+            auto it = std::find(m_blackout_reveal_layer_ids.begin(),
+                                m_blackout_reveal_layer_ids.begin() + reveal_count,
+                                lf->id);
+            if (it != m_blackout_reveal_layer_ids.begin() + reveal_count) {
+                reveal_render_layer_refs.push_back(lf);
+            }
+        }
+        if (progress >= 1.0f) {
+            m_blackout_reveal_phase = BlackoutRevealPhase::RevealCooldown;
+            m_blackout_reveal_start_time = m_frame_predicted_time;
+        }
+    } else if (m_blackout_reveal_phase == BlackoutRevealPhase::RevealCooldown) {
+        render_canvas_scale *= blackout_reveal_pulse_scale(m_frame_predicted_time, m_blackout_reveal_start_time);
+        if ((m_frame_predicted_time - m_blackout_reveal_start_time) >= 120000000) {
+            m_blackout_reveal_phase = BlackoutRevealPhase::Normal;
+            m_blackout_reveal_start_time = 0;
+            m_blackout_reveal_layer_ids.clear();
+        }
+    }
+
+    const bool suppress_environment_sphere =
+        m_blackout_reveal_phase == BlackoutRevealPhase::BlackoutLatched ||
+        m_blackout_reveal_phase == BlackoutRevealPhase::RevealAnimating;
+    SkyDomeInfo environment_info{};
+    const SkyDomeInfo* environment_ptr = nullptr;
+    if (!pt_active &&
+        !suppress_environment_sphere &&
+        render_state.environment_sphere_mode != EnvironmentSphereMode::Off &&
+        m_environment_sphere_sample.valid) {
+        environment_info.enabled = true;
+        environment_info.mode = render_state.environment_sphere_mode;
+        environment_info.bands = m_environment_sphere_sample.bands;
+        environment_ptr = &environment_info;
+    }
 
     // Render each eye
     for (int eye = 0; eye < 2; ++eye) {
@@ -6621,11 +6917,11 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         else if (m_active_sub_panel == 3) { bg_r = 0.01f; bg_g = 0.03f; bg_b = 0.04f; }
         else if (m_active_sub_panel == 7) { bg_r = 0.05f; bg_g = 0.03f; bg_b = 0.01f; }
 
-        const bool pt_active = passthrough_active();
         const bool overlay_active = overlay.panel_count > 0 || overlay.show_laser || overlay.show_laser2;
-        m_impl->renderer.render_eye(e.fbos[img_idx], view, proj, m_render_layer_refs, render_state,
-                                    m_canvas_x, m_canvas_y, m_canvas_az, m_canvas_el, m_canvas_scale,
+        m_impl->renderer.render_eye(e.fbos[img_idx], view, proj, reveal_render_layer_refs, render_state,
+                                    m_canvas_x, m_canvas_y, m_canvas_az, m_canvas_el, render_canvas_scale,
                                     overlay_active ? &overlay : nullptr,
+                                    environment_ptr,
                                     bg_r, bg_g, bg_b, pt_active ? 0.0f : 1.0f,
                                     pt_active);
 

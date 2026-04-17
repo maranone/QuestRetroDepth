@@ -89,6 +89,7 @@ static inline bool settings_save(
     settings_write(f, "upscale",         vs.upscale);
     settings_write(f, "passthrough",     vs.shadows);
     settings_write(f, "ambilight",       vs.ambilight);
+    settings_write(f, "environment_sphere_mode", (int)vs.environment_sphere_mode);
     settings_write(f, "perspective_comp",    vs.perspective_comp);
     settings_write(f, "auto_frame_skip",    vs.auto_frame_skip);
     settings_write(f, "emu_resolution_scale", vs.emu_resolution_scale);
@@ -212,6 +213,14 @@ static inline bool settings_load(
         else if (strcmp(key,"upscale")         == 0) readb(vs.upscale);
         else if (strcmp(key,"passthrough")     == 0) readb(vs.shadows);
         else if (strcmp(key,"ambilight")       == 0) readb(vs.ambilight);
+        else if (strcmp(key,"environment_sphere_mode") == 0) {
+            vs.environment_sphere_mode = (EnvironmentSphereMode)std::clamp(atoi(val), 0, 2);
+        }
+        else if (strcmp(key,"sky_dome")        == 0) {
+            bool legacy = false;
+            readb(legacy);
+            vs.environment_sphere_mode = legacy ? EnvironmentSphereMode::SkyOnly : EnvironmentSphereMode::Off;
+        }
         else if (strcmp(key,"perspective_comp") == 0) readb(vs.perspective_comp);
         else if (strcmp(key,"auto_frame_skip") == 0) readb(vs.auto_frame_skip);
         else if (strcmp(key,"emu_resolution_scale") == 0) readi(vs.emu_resolution_scale);
