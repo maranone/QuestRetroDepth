@@ -1661,6 +1661,7 @@ bool OpenXrShell::start(JavaVM* vm, JNIEnv* env, jobject activity, bool open_men
     m_open_menu_on_startup = open_menu_on_startup;
     m_autoload_latest_save_pending = false;
     m_request_open_menu = false;
+    m_request_open_homebrew = false;
     ensure_layer_runtime_state_matches_config(
         m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     sync_layer_capture_mask();
@@ -1673,6 +1674,10 @@ bool OpenXrShell::start(JavaVM* vm, JNIEnv* env, jobject activity, bool open_men
 
 void OpenXrShell::request_open_main_menu() {
     m_request_open_menu = true;
+}
+
+void OpenXrShell::request_open_homebrew() {
+    m_request_open_homebrew = true;
 }
 
 void OpenXrShell::stop(JNIEnv* env) {
@@ -4178,6 +4183,33 @@ void OpenXrShell::open_rom_menu() {
     m_laser_panel = -1;
 }
 
+void OpenXrShell::open_homebrew_panel(bool fetch_feed) {
+    m_active_sub_panel = k_panel_homebrew;
+    m_ctrlmap_mode = false;
+    m_homebrew_panel_pose = m_main_menu_pose;
+    m_hw_view = 0;
+    m_hw_hovered = -1;
+    m_hw_scroll = 0;
+    m_hw_loading = true;
+    m_hw_downloading = false;
+    m_hw_dirty = true;
+    if (fetch_feed && m_vm && m_activity_global) {
+        JNIEnv* env = nullptr;
+        bool detach = false;
+        if (m_vm->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6) == JNI_EDETACHED) {
+            if (m_vm->AttachCurrentThread(&env, nullptr) == JNI_OK) detach = true;
+        }
+        if (env) {
+            jclass cls = env->GetObjectClass(m_activity_global);
+            jmethodID mid = env->GetMethodID(cls, "homebrewFetchFeed", "(I)V");
+            if (mid) env->CallVoidMethod(m_activity_global, mid, (jint)m_hw_feed);
+            env->DeleteLocalRef(cls);
+            if (detach) m_vm->DetachCurrentThread();
+        }
+    }
+    rebuild_homebrew_panel_texture();
+}
+
 void OpenXrShell::open_quick_edit_panel() {
     const PanelMetrics quick_metrics = panel_metrics(PanelKind::QuickEdit);
 
@@ -5003,29 +5035,7 @@ void OpenXrShell::poll_actions() {
                         m_ctrlmap_panel_hovered = -1;
                         break;
                     case 4: // Homebrew manager
-                        m_active_sub_panel = k_panel_homebrew;
-                        m_ctrlmap_mode = false;
-                        m_homebrew_panel_pose = m_main_menu_pose;
-                        m_hw_view = 0;
-                        m_hw_hovered = -1;
-                        m_hw_scroll = 0;
-                        m_hw_loading = true;
-                        m_hw_dirty = true;
-                        if (m_vm && m_activity_global) {
-                            JNIEnv* env = nullptr;
-                            bool detach = false;
-                            if (m_vm->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6) == JNI_EDETACHED) {
-                                if (m_vm->AttachCurrentThread(&env, nullptr) == JNI_OK) detach = true;
-                            }
-                            if (env) {
-                                jclass cls = env->GetObjectClass(m_activity_global);
-                                jmethodID mid = env->GetMethodID(cls, "homebrewFetchFeed", "(I)V");
-                                if (mid) env->CallVoidMethod(m_activity_global, mid, (jint)m_hw_feed);
-                                env->DeleteLocalRef(cls);
-                                if (detach) m_vm->DetachCurrentThread();
-                            }
-                        }
-                        rebuild_homebrew_panel_texture();
+                        open_homebrew_panel(true);
                         break;
                     case 5: { // Exit → close app
                         m_menu_open     = false;
@@ -5835,6 +5845,15 @@ void OpenXrShell::apply_pending_vr_changes() {
         { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
         if (freeze_fn) freeze_fn(true);
         m_emu_frozen_display = true;
+        visual_change = true;
+    }
+    if (m_request_open_homebrew.exchange(false)) {
+        open_rom_menu();
+        EmuFreezeCtrl freeze_fn;
+        { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
+        if (freeze_fn) freeze_fn(true);
+        m_emu_frozen_display = true;
+        open_homebrew_panel(true);
         visual_change = true;
     }
     if (m_randomize_pending.exchange(false)) {

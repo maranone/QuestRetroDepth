@@ -123,8 +123,11 @@ class QuestVrActivity : Activity() {
         if (!vrStarted) {
             vrStarted = true
             val startupPrefs = readSaveAutomationPrefs()
-            val startupCandidate = if (startupPrefs.loadLastSaveEnabled) findStartupRomCandidate() else null
+            val anyRomCandidate = findStartupRomCandidate()
+            val startupCandidate = if (startupPrefs.loadLastSaveEnabled) anyRomCandidate else null
             val openMenuOnStartup = !startupPrefs.loadLastSaveEnabled || startupCandidate == null
+            val openHomebrewOnStartup =
+                anyRomCandidate == null && !prefs.getBoolean(PREF_HOME_BREW_ONBOARDING_DONE, false)
             statusView.text = nativeStartVr(
                 this,
                 openMenuOnStartup,
@@ -132,6 +135,10 @@ class QuestVrActivity : Activity() {
                 startupPrefs.loadLastSaveEnabled
             )
             nativeSetHomebrewFeed(selectedHomebrewFeedIndex())
+            if (openHomebrewOnStartup) {
+                prefs.edit().putBoolean(PREF_HOME_BREW_ONBOARDING_DONE, true).apply()
+                nativeOpenHomebrew()
+            }
             if (startupPrefs.loadLastSaveEnabled && startupCandidate != null) {
                 autoLoadStartupRom(startupCandidate)
             }
@@ -455,6 +462,7 @@ class QuestVrActivity : Activity() {
     private external fun nativeGetLastLoadedRomFilename(): String
     private external fun nativeApplyStateCode(code: String): Boolean
     private external fun nativeOpenMainMenu()
+    private external fun nativeOpenHomebrew()
     private external fun nativeSubmitQuickPresetName(kind: Int, slot: Int, name: String)
     private external fun nativeCancelQuickPresetName(kind: Int, slot: Int)
     private external fun nativeHomebrewDataReady()
@@ -2171,6 +2179,7 @@ class QuestVrActivity : Activity() {
         private const val SAVE_AUTOMATION_FILE_NAME = "save_automation.ini"
         private const val PREF_HOME_BREW_FEED_INDEX = "homebrew_feed_index"
         private const val PREF_HOME_BREW_FEED_FILE_NAME = "homebrew_feed_file_name"
+        private const val PREF_HOME_BREW_ONBOARDING_DONE = "homebrew_onboarding_done"
         private const val HOME_BREW_GITHUB_API_URL =
             "https://api.github.com/repos/maranone/QuestRetroDepth/contents/homebrew?ref=main"
         private val VALID_AUTOSAVE_INTERVALS = setOf(0, 5, 30, 60, 300)

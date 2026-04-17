@@ -67,6 +67,7 @@ public:
     std::string status() const;
     void set_frame_provider(FrameProvider provider);
     void request_open_main_menu();
+    void request_open_homebrew();
 
     // Thread-safe: schedule a randomise on the next XR frame
     void randomize();
@@ -195,6 +196,7 @@ private:
     void apply_pending_vr_changes();
     void recenter_to_hmd();                    // snap canvas to current HMD gaze direction
     void open_rom_menu();                      // scan ROMs + place main menu panel in front of HMD
+    void open_homebrew_panel(bool fetch_feed);
     void open_quick_edit_panel();              // place quick edit panel in front of HMD
     void enter_manual_edit_mode();             // enter controller-driven canvas edit mode
     void apply_quick_settings_preset(int idx);
@@ -454,6 +456,7 @@ private:
     std::atomic<bool> m_load_game_pending{false};
     std::atomic<bool> m_autoload_latest_save_pending{false};
     std::atomic<bool> m_request_open_menu{false};
+    std::atomic<bool> m_request_open_homebrew{false};
 
     // Controller-driven input (written by XR thread, consumed by frame provider)
     std::mutex         m_input_mutex;

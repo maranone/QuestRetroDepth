@@ -591,6 +591,13 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeOpenMainMenu(
 }
 
 extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeOpenHomebrew(
+    JNIEnv*, jobject)
+{
+    g_openxr_shell.request_open_homebrew();
+}
+
+extern "C" JNIEXPORT void JNICALL
 Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeStopVr(
     JNIEnv* env, jobject)
 {
