@@ -1687,90 +1687,147 @@ class QuestVrActivity : Activity() {
     )
 
     data class HomebrewFeedSource(
+        val fileName: String,
         val name: String,
         val url: String
     )
 
     private var hwEntries: List<HomebrewEntry> = emptyList()
-    private var hwFeeds: List<HomebrewFeedSource> = defaultHomebrewFeeds()
+    private var hwFeeds: List<HomebrewFeedSource> = fallbackHomebrewFeeds()
+    private var hasValidatedRemoteHomebrewFeeds = false
     private val hwDownloaded = mutableSetOf<String>()
 
     private val supportedHomebrewSystems = setOf("nes", "gb", "gbc", "gba", "sms", "gg", "snes", "genesis", "pce")
 
-    private fun defaultHomebrewFeeds(): List<HomebrewFeedSource> = listOf(
+    private fun fallbackHomebrewFeeds(): List<HomebrewFeedSource> = listOf(
         HomebrewFeedSource(
+            "all_homebrew.json",
             "All Systems",
-            "https://raw.githubusercontent.com/YOUR_USER/YOUR_REPO/main/homebrew/all_homebrew.json"
+            "https://raw.githubusercontent.com/maranone/QuestRetroDepth/main/homebrew/all_homebrew.json"
         ),
         HomebrewFeedSource(
+            "featured_homebrew.json",
             "Featured",
-            "https://raw.githubusercontent.com/YOUR_USER/YOUR_REPO/main/homebrew/featured_homebrew.json"
+            "https://raw.githubusercontent.com/maranone/QuestRetroDepth/main/homebrew/featured_homebrew.json"
         ),
         HomebrewFeedSource(
+            "ghb_curated.json",
             "GHB",
-            "https://raw.githubusercontent.com/YOUR_USER/YOUR_REPO/main/homebrew/ghb_curated.json"
+            "https://raw.githubusercontent.com/maranone/QuestRetroDepth/main/homebrew/ghb_curated.json"
         )
     )
 
-    private fun loadHomebrewFeeds(): List<HomebrewFeedSource> {
-        val file = File(getSettingsDirectory(), HOME_BREW_FEEDS_FILE_NAME)
-        if (!file.isFile) {
-            hwFeeds = defaultHomebrewFeeds()
-            return hwFeeds
-        }
-        return runCatching {
-            val body = file.readText()
-            val parsed = mutableListOf<HomebrewFeedSource>()
-            val obj = org.json.JSONObject(body)
-            val feeds = obj.optJSONArray("feeds") ?: org.json.JSONArray()
-            for (i in 0 until feeds.length()) {
-                val item = feeds.optJSONObject(i) ?: continue
-                val name = item.optString("name").trim()
-                val url = item.optString("url").trim()
-                if (name.isEmpty() || url.isEmpty()) continue
-                if (!url.startsWith("http://") && !url.startsWith("https://")) continue
-                parsed.add(HomebrewFeedSource(name, url))
+    private fun fetchHttpText(url: String, accept: String? = null): String {
+        val conn = java.net.URL(url).openConnection() as java.net.HttpURLConnection
+        try {
+            conn.connectTimeout = 10_000
+            conn.readTimeout = 15_000
+            conn.setRequestProperty("User-Agent", "QuestRetroDepth")
+            if (!accept.isNullOrBlank()) {
+                conn.setRequestProperty("Accept", accept)
             }
-            hwFeeds = if (parsed.isEmpty()) defaultHomebrewFeeds() else parsed
+            conn.connect()
+            return conn.inputStream.bufferedReader().use { it.readText() }
+        } finally {
+            conn.disconnect()
+        }
+    }
+
+    private fun parseHomebrewCatalogDisplayName(fileName: String, body: String): String {
+        return runCatching {
+            val obj = org.json.JSONObject(body)
+            obj.optString("feed").trim().ifBlank { fileName.removeSuffix(".json") }
+        }.getOrDefault(fileName.removeSuffix(".json"))
+    }
+
+    private fun isValidHomebrewCatalog(body: String): Boolean {
+        return runCatching {
+            val obj = org.json.JSONObject(body)
+            obj.optJSONArray("roms") != null
+        }.getOrDefault(false)
+    }
+
+    private fun refreshHomebrewFeeds(): List<HomebrewFeedSource> {
+        return runCatching {
+            val body = fetchHttpText(HOME_BREW_GITHUB_API_URL, "application/vnd.github+json")
+
+            val parsed = mutableListOf<HomebrewFeedSource>()
+            val arr = org.json.JSONArray(body)
+            for (i in 0 until arr.length()) {
+                val item = arr.optJSONObject(i) ?: continue
+                if (!item.optString("type").equals("file", ignoreCase = true)) continue
+                val fileName = item.optString("name").trim()
+                val downloadUrl = item.optString("download_url").trim()
+                if (!fileName.endsWith(".json", ignoreCase = true)) continue
+                if (downloadUrl.isBlank()) continue
+                val catalogBody = runCatching { fetchHttpText(downloadUrl, "application/json") }.getOrNull() ?: continue
+                if (!isValidHomebrewCatalog(catalogBody)) continue
+                parsed.add(
+                    HomebrewFeedSource(
+                        fileName = fileName,
+                        name = parseHomebrewCatalogDisplayName(fileName, catalogBody),
+                        url = downloadUrl
+                    )
+                )
+            }
+            if (parsed.isNotEmpty()) {
+                hwFeeds = parsed.sortedBy { it.name.lowercase(Locale.US) }
+                hasValidatedRemoteHomebrewFeeds = true
+            } else if (!hasValidatedRemoteHomebrewFeeds) {
+                hwFeeds = fallbackHomebrewFeeds()
+            }
             hwFeeds
         }.getOrElse {
-            Log.e("Homebrew", "Feed config read failed: ${it.message}")
-            hwFeeds = defaultHomebrewFeeds()
+            Log.e("Homebrew", "Feed directory fetch failed: ${it.message}")
+            if (!hasValidatedRemoteHomebrewFeeds || hwFeeds.isEmpty()) {
+                hwFeeds = fallbackHomebrewFeeds()
+            }
             hwFeeds
         }
     }
 
-    private fun selectedHomebrewFeedIndex(): Int {
-        val feeds = loadHomebrewFeeds()
-        val saved = prefs.getInt(PREF_HOME_BREW_FEED_INDEX, 0)
-        return saved.coerceIn(0, maxOf(0, feeds.size - 1))
+    private fun selectedHomebrewFeedIndex(feeds: List<HomebrewFeedSource> = if (hwFeeds.isEmpty()) fallbackHomebrewFeeds() else hwFeeds): Int {
+        val savedFileName = prefs.getString(PREF_HOME_BREW_FEED_FILE_NAME, null)
+        val byFileName = if (!savedFileName.isNullOrBlank()) feeds.indexOfFirst { it.fileName == savedFileName } else -1
+        if (byFileName >= 0) return byFileName
+        val savedIndex = prefs.getInt(PREF_HOME_BREW_FEED_INDEX, 0)
+        return savedIndex.coerceIn(0, maxOf(0, feeds.size - 1))
+    }
+
+    private fun persistHomebrewFeedSelection(feed: HomebrewFeedSource, index: Int) {
+        prefs.edit()
+            .putString(PREF_HOME_BREW_FEED_FILE_NAME, feed.fileName)
+            .putInt(PREF_HOME_BREW_FEED_INDEX, index)
+            .apply()
     }
 
     private fun hwFeedName(feedIdx: Int): String {
-        val feeds = loadHomebrewFeeds()
+        val feeds = if (hwFeeds.isEmpty()) fallbackHomebrewFeeds() else hwFeeds
         return feeds.getOrNull(feedIdx)?.name ?: feeds.firstOrNull()?.name ?: "Homebrew"
     }
 
     fun showHomebrewFeedDialog(currentFeedIdx: Int) {
-        runOnUiThread {
-            if (isFinishing || (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1 && isDestroyed)) {
-                return@runOnUiThread
-            }
-            val feeds = loadHomebrewFeeds()
-            if (feeds.isEmpty()) return@runOnUiThread
-            val labels = feeds.map { it.name }.toTypedArray()
-            val initial = currentFeedIdx.coerceIn(0, feeds.size - 1)
-            AlertDialog.Builder(this)
-                .setTitle("Select Homebrew Feed")
-                .setSingleChoiceItems(labels, initial) { dialog, which ->
-                    prefs.edit().putInt(PREF_HOME_BREW_FEED_INDEX, which).apply()
-                    nativeSetHomebrewFeed(which)
-                    homebrewFetchFeed(which)
-                    dialog.dismiss()
+        Thread {
+            val feeds = refreshHomebrewFeeds()
+            runOnUiThread {
+                if (isFinishing || (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1 && isDestroyed)) {
+                    return@runOnUiThread
                 }
-                .setNegativeButton("Cancel", null)
-                .show()
-        }
+                if (feeds.isEmpty()) return@runOnUiThread
+                val labels = feeds.map { it.name }.toTypedArray()
+                val initial = selectedHomebrewFeedIndex(feeds).coerceIn(0, feeds.size - 1)
+                AlertDialog.Builder(this)
+                    .setTitle("Select Homebrew Feed")
+                    .setSingleChoiceItems(labels, initial) { dialog, which ->
+                        persistHomebrewFeedSelection(feeds[which], which)
+                        nativeSetHomebrewFeed(which)
+                        homebrewFetchFeed(which)
+                        dialog.dismiss()
+                    }
+                    .setNegativeButton("Cancel", null)
+                    .show()
+            }
+        }.start()
     }
 
     private fun normalizeHomebrewSystem(raw: String): String {
@@ -1827,15 +1884,11 @@ class QuestVrActivity : Activity() {
     }
 
     fun homebrewFetchFeed(feedIdx: Int) {
-        val url = loadHomebrewFeeds().getOrNull(feedIdx)?.url ?: return
         Thread {
             try {
-                val conn = java.net.URL(url).openConnection() as java.net.HttpURLConnection
-                conn.connectTimeout = 10_000
-                conn.readTimeout = 15_000
-                conn.connect()
-                val body = conn.inputStream.bufferedReader().readText()
-                conn.disconnect()
+                val feeds = refreshHomebrewFeeds()
+                val url = feeds.getOrNull(feedIdx)?.url ?: return@Thread
+                val body = fetchHttpText(url, "application/json")
                 val entries = mutableListOf<HomebrewEntry>()
                 val obj = org.json.JSONObject(body)
                 val roms = obj.optJSONArray("roms") ?: org.json.JSONArray()
@@ -1861,7 +1914,7 @@ class QuestVrActivity : Activity() {
                     ))
                 }
                 hwEntries = entries
-                prefs.edit().putInt(PREF_HOME_BREW_FEED_INDEX, feedIdx).apply()
+                feeds.getOrNull(feedIdx)?.let { persistHomebrewFeedSelection(it, feedIdx) }
                 hwDownloaded.clear()
                 for (e in entries) { if (hwFile(e).exists()) hwDownloaded.add(e.download) }
             } catch (e: Exception) {
@@ -1878,22 +1931,26 @@ class QuestVrActivity : Activity() {
         Thread {
             try {
                 val conn = java.net.URL(entry.download).openConnection() as java.net.HttpURLConnection
-                conn.connectTimeout = 15_000
-                conn.readTimeout = 60_000
-                conn.instanceFollowRedirects = true
-                conn.connect()
-                val responseFilename = parseContentDispositionFilename(conn.getHeaderField("Content-Disposition"))
-                val resolvedFilename = resolvedHomebrewFilename(entry, responseFilename, conn.url.toString())
-                if (resolvedFilename.isBlank()) {
-                    throw IllegalStateException("Unsupported or missing filename for ${entry.name}")
+                try {
+                    conn.connectTimeout = 15_000
+                    conn.readTimeout = 60_000
+                    conn.instanceFollowRedirects = true
+                    conn.setRequestProperty("User-Agent", "QuestRetroDepth")
+                    conn.connect()
+                    val responseFilename = parseContentDispositionFilename(conn.getHeaderField("Content-Disposition"))
+                    val resolvedFilename = resolvedHomebrewFilename(entry, responseFilename, conn.url.toString())
+                    if (resolvedFilename.isBlank()) {
+                        throw IllegalStateException("Unsupported or missing filename for ${entry.name}")
+                    }
+                    val dest = File(getRomDirectory(), "${entry.system}/${resolvedFilename}")
+                    dest.parentFile?.mkdirs()
+                    conn.inputStream.use { inp ->
+                        FileOutputStream(dest).use { out -> inp.copyTo(out) }
+                    }
+                    hwDownloaded.add(entry.download)
+                } finally {
+                    conn.disconnect()
                 }
-                val dest = File(getRomDirectory(), "${entry.system}/${resolvedFilename}")
-                dest.parentFile?.mkdirs()
-                conn.inputStream.use { inp ->
-                    FileOutputStream(dest).use { out -> inp.copyTo(out) }
-                }
-                conn.disconnect()
-                hwDownloaded.add(entry.download)
             } catch (e: Exception) {
                 Log.e("Homebrew", "Download failed: ${e.message}")
             }
@@ -1992,7 +2049,7 @@ class QuestVrActivity : Activity() {
         paint.textSize = 28f
         paint.textAlign = android.graphics.Paint.Align.CENTER
         paint.typeface = android.graphics.Typeface.DEFAULT
-        canvas.drawText("Switch Feed", width / 2f, y0feed + rowH * 0.65f, paint)
+        canvas.drawText("Select Feed", width / 2f, y0feed + rowH * 0.65f, paint)
 
         // Back row (last row)
         val yBack = titleH + (totalRows - 1) * rowH
@@ -2112,8 +2169,10 @@ class QuestVrActivity : Activity() {
 
     companion object {
         private const val SAVE_AUTOMATION_FILE_NAME = "save_automation.ini"
-        private const val HOME_BREW_FEEDS_FILE_NAME = "homebrew_feeds.json"
         private const val PREF_HOME_BREW_FEED_INDEX = "homebrew_feed_index"
+        private const val PREF_HOME_BREW_FEED_FILE_NAME = "homebrew_feed_file_name"
+        private const val HOME_BREW_GITHUB_API_URL =
+            "https://api.github.com/repos/maranone/QuestRetroDepth/contents/homebrew?ref=main"
         private val VALID_AUTOSAVE_INTERVALS = setOf(0, 5, 30, 60, 300)
         init { System.loadLibrary("questretrodepth_native") }
     }
