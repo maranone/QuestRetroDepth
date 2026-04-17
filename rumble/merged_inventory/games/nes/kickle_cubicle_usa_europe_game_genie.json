@@ -1,0 +1,42 @@
+{
+  "system": "nes",
+  "normalized_title": "kicklecubicle",
+  "display_name": "Kickle Cubicle (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Kickle Cubicle (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kickle Cubicle (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "SXEAATVG",
+          "desc": "Infinite Lives",
+          "address": "0x0628"
+        },
+        {
+          "code": "GZKATXSE",
+          "desc": "Start On Land 2",
+          "address": "0x022E"
+        },
+        {
+          "code": "GZKATXSE",
+          "desc": "Start On Land 3",
+          "address": "0x022E"
+        },
+        {
+          "code": "GZKATXSE",
+          "desc": "Start On Land 4",
+          "address": "0x022E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Davis Cup Tennis - Davis Cup World Tour (USA, Europe) (Action Replay)
+game_key=davis_cup_tennis_davis_cup_world_tour_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff083c	score	0xFF083C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff1026	score	0xFF1026	1	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,27 @@
+{
+  "system": "nes",
+  "normalized_title": "stealthatf",
+  "display_name": "Stealth ATF (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Stealth ATF (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Stealth ATF (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "SZVPXNVV",
+          "desc": "No Damage Taken From Enemy's Bullets",
+          "address": "0x072A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

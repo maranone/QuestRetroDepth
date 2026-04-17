@@ -1,0 +1,9 @@
+game_name=Tetris Attack (U) [f1]
+game_key=tetris_attack_u_f1
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_02ba	level_complete	0x7E02BA	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	score_score_02c2	score	0x7E02C2	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02c3	score	0x7E02C3	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02c4	score	0x7E02C4	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	level_complete_level_0342	level_complete	0x7E0342	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

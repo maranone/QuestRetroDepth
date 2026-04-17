@@ -1,0 +1,28 @@
+{
+  "system": "gb",
+  "normalized_title": "donkeykongland",
+  "display_name": "Donkey Kong Land (USA, Europe) (SGB Enhanced)",
+  "aliases": [
+    "Donkey Kong Land (World) (Game Genie)",
+    "Donkey Kong Land (World) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Donkey Kong Land (World) (GameShark).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0103C1C0",
+          "desc": "The 'K' Code",
+          "address": "0xC1C0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

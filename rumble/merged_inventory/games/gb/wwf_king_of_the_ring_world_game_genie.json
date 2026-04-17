@@ -1,0 +1,28 @@
+{
+  "system": "gb",
+  "normalized_title": "wwfkingofring",
+  "display_name": "WWF King of the Ring (World) (Game Genie)",
+  "aliases": [
+    "WWF King of the Ring (World) (Game Genie)",
+    "WWF King of the Ring (World) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\WWF King of the Ring (World) (GameShark).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "01C0DEC3",
+          "desc": "Infinite Health P1",
+          "address": "0xDEC3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

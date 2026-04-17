@@ -1,0 +1,42 @@
+{
+  "system": "pce",
+  "normalized_title": "veiguestacticalgladiator",
+  "display_name": "Veigues - Tactical Gladiator (Japan)",
+  "aliases": [
+    "Veigues - Tactical Gladiator (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Veigues - Tactical Gladiator (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f00b5:ff",
+          "desc": "Infinite VNR (Venier)",
+          "address": "0x1F00B5"
+        },
+        {
+          "code": "1f00b6:ff",
+          "desc": "Infinite VNR (Venier)",
+          "address": "0x1F00B6"
+        },
+        {
+          "code": "1f00b8:ff",
+          "desc": "Infinite SLD (Shield/Health)",
+          "address": "0x1F00B8"
+        },
+        {
+          "code": "1f00b9:ff",
+          "desc": "Infinite SLD (Shield/Health)",
+          "address": "0x1F00B9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

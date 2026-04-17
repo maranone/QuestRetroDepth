@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "magicofscheherazade",
+  "display_name": "Magic of Scheherazade, The (USA) (Game Genie)",
+  "aliases": [
+    "Magic of Scheherazade, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Magic of Scheherazade, The (USA).cht",
+      "total_cheat_rows": 31,
+      "raw_entry_count": 25,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "008D:18",
+          "desc": "Infinite MP",
+          "address": "0x008D"
+        },
+        {
+          "code": "008B:FA",
+          "desc": "Almost Infinite Rupia (Easily Renewed After Battle)",
+          "address": "0x008B"
+        },
+        {
+          "code": "0081:FF",
+          "desc": "Infinite HP",
+          "address": "0x0081"
+        },
+        {
+          "code": "0086:FF",
+          "desc": "65280 EXP Points Each Enemy Killed",
+          "address": "0x0086"
+        },
+        {
+          "code": "0089:09",
+          "desc": "Infinite/Maximum Rupias",
+          "address": "0x0089"
+        },
+        {
+          "code": "008A:09",
+          "desc": "Infinite/Maximum Rupias",
+          "address": "0x008A"
+        },
+        {
+          "code": "008B:09",
+          "desc": "Infinite/Maximum Rupias",
+          "address": "0x008B"
+        },
+        {
+          "code": "008C:09",
+          "desc": "Infinite/Maximum Magic",
+          "address": "0x008C"
+        },
+        {
+          "code": "008D:09",
+          "desc": "Infinite/Maximum Magic",
+          "address": "0x008D"
+        },
+        {
+          "code": "008E:09",
+          "desc": "Infinite/Maximum Magic",
+          "address": "0x008E"
+        },
+        {
+          "code": "03D7:08",
+          "desc": "Infinite Troopers",
+          "address": "0x03D7"
+        },
+        {
+          "code": "0311:10",
+          "desc": "Infinite Carpets",
+          "address": "0x0311"
+        },
+        {
+          "code": "0310:05",
+          "desc": "Infinite Rseeds",
+          "address": "0x0310"
+        },
+        {
+          "code": "0308:FF",
+          "desc": "Infinite Money",
+          "address": "0x0308"
+        },
+        {
+          "code": "0307:25",
+          "desc": "Infinite Mashroob",
+          "address": "0x0307"
+        },
+        {
+          "code": "0306:25",
+          "desc": "Infinite Bread",
+          "address": "0x0306"
+        },
+        {
+          "code": "POKAOZZU",
+          "desc": "Less energy gained from Bread",
+          "address": "0x0219"
+        },
+        {
+          "code": "ZAEEXGIA",
+          "desc": "Less magic gained from Mashroobs",
+          "address": "0x048A"
+        },
+        {
+          "code": "SZEAEKVK",
+          "desc": "Never lose Mashroobs",
+          "address": "0x0428"
+        },
+        {
+          "code": "TEXAXLLA",
+          "desc": "Get Coins From Anywhere",
+          "address": "0x030A"
+        },
+        {
+          "code": "008D:24",
+          "desc": "Infinite MP",
+          "address": "0x008D"
+        },
+        {
+          "code": "008B:50",
+          "desc": "Almost Infinite Rupia (Easily Renewed After Battle)",
+          "address": "0x008B"
+        },
+        {
+          "code": "0081:55",
+          "desc": "Infinite HP",
+          "address": "0x0081"
+        },
+        {
+          "code": "0086:55",
+          "desc": "65280 EXP Points, Each Enemy Killed",
+          "address": "0x0086"
+        },
+        {
+          "code": "0086:FF",
+          "desc": "65280 EXP Points, Each Enemy Killed",
+          "address": "0x0086"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

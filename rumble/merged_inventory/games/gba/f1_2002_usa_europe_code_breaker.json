@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "f12002",
+  "display_name": "F1 2002 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\F1 2002 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 28,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "830002F8",
+          "desc": "Low Times",
+          "address": "0x020002F8"
+        },
+        {
+          "code": "830002FA",
+          "desc": "Low Times",
+          "address": "0x020002FA"
+        },
+        {
+          "code": "83000390",
+          "desc": "Car Position Modifier (X-Axis)",
+          "address": "0x02000390"
+        },
+        {
+          "code": "83000392",
+          "desc": "Car Position Modifier (X-Axis)",
+          "address": "0x02000392"
+        },
+        {
+          "code": "83000394",
+          "desc": "Car Position Modifier (Y-Axis)",
+          "address": "0x02000394"
+        },
+        {
+          "code": "83000396",
+          "desc": "Car Position Modifier (Y-Axis)",
+          "address": "0x02000396"
+        },
+        {
+          "code": "83000398",
+          "desc": "Camera Height Modifier (Default Is 0000)",
+          "address": "0x02000398"
+        },
+        {
+          "code": "330003AA",
+          "desc": "Infinite Fuel",
+          "address": "0x020003AA"
+        },
+        {
+          "code": "830003AC",
+          "desc": "Always Good Tires",
+          "address": "0x020003AC"
+        },
+        {
+          "code": "830003AE",
+          "desc": "Always Good Tires",
+          "address": "0x020003AE"
+        },
+        {
+          "code": "830003B0",
+          "desc": "No Damage",
+          "address": "0x020003B0"
+        },
+        {
+          "code": "330003B2",
+          "desc": "No Damage",
+          "address": "0x020003B2"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press R Button For Turbo Boost",
+          "address": "0x02000020"
+        },
+        {
+          "code": "830003B8",
+          "desc": "Press R Button For Turbo Boost",
+          "address": "0x020003B8"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press L Button To Instantly Halt",
+          "address": "0x02000020"
+        },
+        {
+          "code": "830003B8",
+          "desc": "Press L Button To Instantly Halt",
+          "address": "0x020003B8"
+        },
+        {
+          "code": "330003D2",
+          "desc": "Drive On Lap Modifier",
+          "address": "0x020003D2"
+        },
+        {
+          "code": "33001D19",
+          "desc": "Max Points (Pilots Ranking)",
+          "address": "0x02001D19"
+        },
+        {
+          "code": "33001D3F",
+          "desc": "Always Drive As Pilot Modifier",
+          "address": "0x02001D3F"
+        },
+        {
+          "code": "33003C30",
+          "desc": "Always Drive On Racetrack Modifier",
+          "address": "0x02003C30"
+        },
+        {
+          "code": "73003C30",
+          "desc": "Start On Racetrack Modifier (Start A New Season)",
+          "address": "0x02003C30"
+        },
+        {
+          "code": "33003C30",
+          "desc": "Start On Racetrack Modifier (Start A New Season)",
+          "address": "0x02003C30"
+        },
+        {
+          "code": "73007D70",
+          "desc": "Start On Racetrack Modifier (Start A New Season)",
+          "address": "0x02007D70"
+        },
+        {
+          "code": "33007D70",
+          "desc": "Start On Racetrack Modifier (Start A New Season)",
+          "address": "0x02007D70"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Game 100% Complete (Press Select)",
+          "address": "0x02000020"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\F1 2002 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 28,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "830002F8",
+          "desc": "Low Times",
+          "address": "0x020002F8"
+        },
+        {
+          "code": "830002FA",
+          "desc": "Low Times",
+          "address": "0x020002FA"
+        },
+        {
+          "code": "83000390",
+          "desc": "Car Position Modifier (X-Axis)",
+          "address": "0x02000390"
+        },
+        {
+          "code": "83000392",
+          "desc": "Car Position Modifier (X-Axis)",
+          "address": "0x02000392"
+        },
+        {
+          "code": "83000394",
+          "desc": "Car Position Modifier (Y-Axis)",
+          "address": "0x02000394"
+        },
+        {
+          "code": "83000396",
+          "desc": "Car Position Modifier (Y-Axis)",
+          "address": "0x02000396"
+        },
+        {
+          "code": "83000398",
+          "desc": "Camera Height Modifier (Default Is 0000)",
+          "address": "0x02000398"
+        },
+        {
+          "code": "330003AA",
+          "desc": "Infinite Fuel",
+          "address": "0x020003AA"
+        },
+        {
+          "code": "830003AC",
+          "desc": "Always Good Tires",
+          "address": "0x020003AC"
+        },
+        {
+          "code": "830003AE",
+          "desc": "Always Good Tires",
+          "address": "0x020003AE"
+        },
+        {
+          "code": "830003B0",
+          "desc": "No Damage",
+          "address": "0x020003B0"
+        },
+        {
+          "code": "330003B2",
+          "desc": "No Damage",
+          "address": "0x020003B2"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press R Button For Turbo Boost",
+          "address": "0x02000020"
+        },
+        {
+          "code": "830003B8",
+          "desc": "Press R Button For Turbo Boost",
+          "address": "0x020003B8"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press L Button To Instantly Halt",
+          "address": "0x02000020"
+        },
+        {
+          "code": "830003B8",
+          "desc": "Press L Button To Instantly Halt",
+          "address": "0x020003B8"
+        },
+        {
+          "code": "330003D2",
+          "desc": "Drive On Lap Modifier",
+          "address": "0x020003D2"
+        },
+        {
+          "code": "33001D19",
+          "desc": "Max Points (Pilots Ranking)",
+          "address": "0x02001D19"
+        },
+        {
+          "code": "33001D3F",
+          "desc": "Always Drive As Pilot Modifier",
+          "address": "0x02001D3F"
+        },
+        {
+          "code": "33003C30",
+          "desc": "Always Drive On Racetrack Modifier",
+          "address": "0x02003C30"
+        },
+        {
+          "code": "73003C30",
+          "desc": "Start On Racetrack Modifier (Start A New Season)",
+          "address": "0x02003C30"
+        },
+        {
+          "code": "33003C30",
+          "desc": "Start On Racetrack Modifier (Start A New Season)",
+          "address": "0x02003C30"
+        },
+        {
+          "code": "73007D70",
+          "desc": "Start On Racetrack Modifier (Start A New Season)",
+          "address": "0x02007D70"
+        },
+        {
+          "code": "33007D70",
+          "desc": "Start On Racetrack Modifier (Start A New Season)",
+          "address": "0x02007D70"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Game 100% Complete (Press Select)",
+          "address": "0x02000020"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "system": "gba",
+  "normalized_title": "invader",
+  "display_name": "Invader (Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Invader (Europe) (Code Breaker).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "100003D2",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020003D2"
+        },
+        {
+          "code": "33000F40",
+          "desc": "Invincible",
+          "address": "0x02000F40"
+        },
+        {
+          "code": "3300107A",
+          "desc": "Infinite Ships",
+          "address": "0x0200107A"
+        },
+        {
+          "code": "3300107B",
+          "desc": "Infinite Bombs",
+          "address": "0x0200107B"
+        },
+        {
+          "code": "33001048",
+          "desc": "Infinite Coins",
+          "address": "0x02001048"
+        },
+        {
+          "code": "33001228",
+          "desc": "Infinite Credits",
+          "address": "0x02001228"
+        },
+        {
+          "code": "3300107E",
+          "desc": "Max Speed",
+          "address": "0x0200107E"
+        },
+        {
+          "code": "330013E0",
+          "desc": "Stop Timer",
+          "address": "0x020013E0"
+        },
+        {
+          "code": "33000F91",
+          "desc": "Weapon 1 Upgraded",
+          "address": "0x02000F91"
+        },
+        {
+          "code": "33000FD9",
+          "desc": "Weapon 2 Upgraded",
+          "address": "0x02000FD9"
+        },
+        {
+          "code": "33000F84",
+          "desc": "Rapid Fire Weapon 1",
+          "address": "0x02000F84"
+        },
+        {
+          "code": "33000FCC",
+          "desc": "Rapid Fire Weapon 2",
+          "address": "0x02000FCC"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Invader (Europe) (Code Breaker).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "100003D2",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020003D2"
+        },
+        {
+          "code": "33000F40",
+          "desc": "Invincible",
+          "address": "0x02000F40"
+        },
+        {
+          "code": "3300107A",
+          "desc": "Infinite Ships",
+          "address": "0x0200107A"
+        },
+        {
+          "code": "3300107B",
+          "desc": "Infinite Bombs",
+          "address": "0x0200107B"
+        },
+        {
+          "code": "33001048",
+          "desc": "Infinite Coins",
+          "address": "0x02001048"
+        },
+        {
+          "code": "33001228",
+          "desc": "Infinite Credits",
+          "address": "0x02001228"
+        },
+        {
+          "code": "3300107E",
+          "desc": "Max Speed",
+          "address": "0x0200107E"
+        },
+        {
+          "code": "330013E0",
+          "desc": "Stop Timer",
+          "address": "0x020013E0"
+        },
+        {
+          "code": "33000F91",
+          "desc": "Weapon 1 Upgraded",
+          "address": "0x02000F91"
+        },
+        {
+          "code": "33000FD9",
+          "desc": "Weapon 2 Upgraded",
+          "address": "0x02000FD9"
+        },
+        {
+          "code": "33000F84",
+          "desc": "Rapid Fire Weapon 1",
+          "address": "0x02000F84"
+        },
+        {
+          "code": "33000FCC",
+          "desc": "Rapid Fire Weapon 2",
+          "address": "0x02000FCC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

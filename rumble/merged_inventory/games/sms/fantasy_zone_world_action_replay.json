@@ -1,0 +1,54 @@
+{
+  "system": "sms",
+  "normalized_title": "fantasyzone",
+  "display_name": "Fantasy Zone (World) (Action Replay)",
+  "aliases": [
+    "Fantasy Zone (World) (Action Replay)",
+    "Fantasy Zone (World) (Beta)",
+    "Fantasy Zone (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\fantasyzone_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xC060",
+        "0xC065"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FantasyZone-Sms-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xC065",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xC060",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Fantasy Zone (World).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

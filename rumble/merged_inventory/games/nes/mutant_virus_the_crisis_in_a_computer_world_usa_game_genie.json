@@ -1,0 +1,47 @@
+{
+  "system": "nes",
+  "normalized_title": "mutantviruscrisisincomputerworld",
+  "display_name": "Mutant Virus, The - Crisis in a Computer World (USA) (Game Genie)",
+  "aliases": [
+    "Mutant Virus, The - Crisis in a Computer World (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mutant Virus, The - Crisis in a Computer World (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0119:0C",
+          "desc": "Infinite Energy",
+          "address": "0x0119"
+        },
+        {
+          "code": "0110:06",
+          "desc": "Infinite Lives",
+          "address": "0x0110"
+        },
+        {
+          "code": "0120:99",
+          "desc": "Max Score P1",
+          "address": "0x0120"
+        },
+        {
+          "code": "0121:99",
+          "desc": "Max Score P1",
+          "address": "0x0121"
+        },
+        {
+          "code": "0122:99",
+          "desc": "Max Score P1",
+          "address": "0x0122"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

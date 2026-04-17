@@ -1,0 +1,59 @@
+{
+  "system": "nes",
+  "normalized_title": "captainamericaandavengers",
+  "display_name": "Captain America and the Avengers (USA, Australia) (Game Genie)",
+  "aliases": [
+    "Captain America and the Avengers (USA)",
+    "Captain America and the Avengers (USA, Australia) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\captainamericaandtheavengers_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x03D9",
+        "0x03E3"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CaptainAmericaAndTheAvengers-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x03D9",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x03E3",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Captain America and the Avengers (USA, Australia) (Game Genie).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "LSUPUELO",
+          "desc": "Hawkeye Shoots Arrows Faster",
+          "address": "0x005B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

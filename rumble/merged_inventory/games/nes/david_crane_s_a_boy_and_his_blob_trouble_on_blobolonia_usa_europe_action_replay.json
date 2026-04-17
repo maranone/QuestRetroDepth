@@ -1,0 +1,43 @@
+{
+  "system": "nes",
+  "normalized_title": "davidcranesboyandhisblobtroubleonblobolonia",
+  "display_name": "David Crane's A Boy and His Blob - Trouble on Blobolonia (USA, Europe) (Action Replay)",
+  "aliases": [
+    "David Crane's A Boy and His Blob - Trouble on Blobolonia (USA, Europe) (Action Replay)",
+    "David Crane's A Boy and His Blob - Trouble on Blobolonia (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\David Crane's A Boy and His Blob - Trouble on Blobolonia (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 37,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "GXXEOPVG",
+          "desc": "Infinite Lives",
+          "address": "0x01A9"
+        },
+        {
+          "code": "SXEEZAAX",
+          "desc": "Fast Play",
+          "address": "0x00AA"
+        },
+        {
+          "code": "AVOPVGEI",
+          "desc": "Never Take Damage From Enemies",
+          "address": "0x046E"
+        },
+        {
+          "code": "AAAAAA",
+          "desc": "Messes Up The Graphics",
+          "address": "0x0000"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

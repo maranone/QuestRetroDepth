@@ -1,0 +1,52 @@
+{
+  "system": "nes",
+  "normalized_title": "bestofbestchampionshipkarate",
+  "display_name": "Best of the Best - Championship Karate (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Best of the Best - Championship Karate (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Best of the Best - Championship Karate (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "ZLEAZETP",
+          "desc": "Start With 50 Resistance Points",
+          "address": "0x003A"
+        },
+        {
+          "code": "ZLEAPEAZ",
+          "desc": "Start With 50 Strength Points",
+          "address": "0x0039"
+        },
+        {
+          "code": "ZLEALAGP",
+          "desc": "Start With 50 Reflex Points",
+          "address": "0x003B"
+        },
+        {
+          "code": "TGEAZETP",
+          "desc": "Start With 70 Resistance Points",
+          "address": "0x004A"
+        },
+        {
+          "code": "TGEAPEAZ",
+          "desc": "Start With 70 Strength Points",
+          "address": "0x0049"
+        },
+        {
+          "code": "TGEALAGP",
+          "desc": "Start With 70 Reflex Points",
+          "address": "0x004B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

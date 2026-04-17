@@ -1,0 +1,8 @@
+game_name=ThunderAndLightning
+game_key=ThunderAndLightning-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_005e	life_lost	0x005E	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_005e	life_gained	0x005E	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_0064	score	0x0064	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_0066	score	0x0066	1	uint	native	prev < curr	0.8	1	right:0.350:60

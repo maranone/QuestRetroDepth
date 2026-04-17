@@ -1,0 +1,11 @@
+game_name=Sheep (Europe) (Code Breaker)
+game_key=sheep_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	level_complete_level_02000020	level_complete	0x02000020	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_020041f4	level_complete	0x020041F4	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_020041f6	level_complete	0x020041F6	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_020041f8	level_complete	0x020041F8	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	score_score_02003dda	score	0x02003DDA	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02003dd0	score	0x02003DD0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02003dd2	score	0x02003DD2	1	uint	little	prev < curr	0.8	1	right:0.350:60

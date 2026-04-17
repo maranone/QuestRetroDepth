@@ -1,0 +1,8 @@
+game_name=Kero Kero Keroppi no Daibouken 2 - Donuts Ike wa Oosawagi! (Japan)
+game_key=kero_kero_keroppi_no_daibouken_2_donuts_ike_wa_oosawagi_japan
+system=nes
+integration_tier=contrib
+trigger	level_complete_level_001f	level_complete	0x001F	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_0395	life_lost	0x0395	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0395	life_gained	0x0395	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_03ea	enemy_defeated	0x03EA	1	uint	little	prev > curr	0.65	1	right:0.450:35

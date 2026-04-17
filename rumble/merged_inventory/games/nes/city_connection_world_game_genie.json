@@ -1,0 +1,100 @@
+{
+  "system": "nes",
+  "normalized_title": "cityconnection",
+  "display_name": "City Connection (World) (Game Genie)",
+  "aliases": [
+    "City Connection (Japan)",
+    "City Connection (USA)",
+    "City Connection (World) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\cityconnection_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0037",
+        "0x00A2"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CityConnection-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x00A2",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0037",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\City Connection (World) (Game Genie).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 9,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "IEKEYIZA",
+          "desc": "Start With Double Lives",
+          "address": "0x058F"
+        },
+        {
+          "code": "AEKEYIZE",
+          "desc": "Start With Triple Lives",
+          "address": "0x058F"
+        },
+        {
+          "code": "SXKPZGVG",
+          "desc": "Infinite Oil",
+          "address": "0x042A"
+        },
+        {
+          "code": "AXSAPIIA",
+          "desc": "Start With Extra Oil",
+          "address": "0x0529"
+        },
+        {
+          "code": "PEKEIIAA",
+          "desc": "Start On Level 1",
+          "address": "0x058D"
+        },
+        {
+          "code": "ZEKEIIAA",
+          "desc": "Start On Level 2",
+          "address": "0x058D"
+        },
+        {
+          "code": "LEKEIIAA",
+          "desc": "Start On Level 3",
+          "address": "0x058D"
+        },
+        {
+          "code": "GEKEIIAA",
+          "desc": "Start On Level 4",
+          "address": "0x058D"
+        },
+        {
+          "code": "IEKEIIAA",
+          "desc": "Start On Level 5",
+          "address": "0x058D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

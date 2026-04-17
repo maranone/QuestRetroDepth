@@ -1,0 +1,29 @@
+{
+  "system": "gb",
+  "normalized_title": "qix",
+  "display_name": "QIX (World) (Game Genie)",
+  "aliases": [
+    "QIX (World) (GameShark)",
+    "QIX (World) (Xploder)",
+    "QIX (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\QIX (World).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0100C2DF",
+          "desc": "Select game over cutscene",
+          "address": "0xC2DF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

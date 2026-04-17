@@ -1,0 +1,42 @@
+game_name=Metal Max Returns (Japan)
+game_key=metal_max_returns_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_800a	damage_taken	0x7E800A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_800a	death	0x7E800A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_800b	damage_taken	0x7E800B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_800b	death	0x7E800B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_800c	damage_taken	0x7E800C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_800c	death	0x7E800C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_800d	damage_taken	0x7E800D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_800d	death	0x7E800D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_810c	damage_taken	0x7E810C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_810c	death	0x7E810C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_810d	damage_taken	0x7E810D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_810d	death	0x7E810D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_810a	damage_taken	0x7E810A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_810a	death	0x7E810A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_810b	damage_taken	0x7E810B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_810b	death	0x7E810B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_820c	damage_taken	0x7E820C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_820c	death	0x7E820C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_820d	damage_taken	0x7E820D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_820d	death	0x7E820D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_820a	damage_taken	0x7E820A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_820a	death	0x7E820A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_820b	damage_taken	0x7E820B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_820b	death	0x7E820B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_8328	damage_taken	0x7E8328	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_8328	death	0x7E8328	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_8329	damage_taken	0x7E8329	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_8329	death	0x7E8329	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_8350	pickup	0x7E8350	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_8316	pickup	0x7E8316	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_8428	damage_taken	0x7E8428	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_8428	death	0x7E8428	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_8429	damage_taken	0x7E8429	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_8429	death	0x7E8429	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_8828	damage_taken	0x7E8828	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_8828	death	0x7E8828	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_8829	damage_taken	0x7E8829	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_8829	death	0x7E8829	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

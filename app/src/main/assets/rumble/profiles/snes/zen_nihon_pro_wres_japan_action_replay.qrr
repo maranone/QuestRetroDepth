@@ -1,0 +1,12 @@
+game_name=Zen-Nihon Pro Wres (Japan) (Action Replay)
+game_key=zen_nihon_pro_wres_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_135a	damage_taken	0x7E135A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_135a	death	0x7E135A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_171c	damage_taken	0x7E171C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_171c	death	0x7E171C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_145a	damage_taken	0x7E145A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_145a	death	0x7E145A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_165a	damage_taken	0x7E165A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_165a	death	0x7E165A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

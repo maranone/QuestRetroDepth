@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "007nightfire",
+  "display_name": "007 - NightFire (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\007 - NightFire (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "100092B8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020092B8"
+        },
+        {
+          "code": "3200074A",
+          "desc": "Infinite Health",
+          "address": "0x0200074A"
+        },
+        {
+          "code": "8201ED74",
+          "desc": "Have All Weapons",
+          "address": "0x0201ED74"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\007 - NightFire (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "100092B8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020092B8"
+        },
+        {
+          "code": "3200074A",
+          "desc": "Infinite Health",
+          "address": "0x0200074A"
+        },
+        {
+          "code": "8201ED74",
+          "desc": "Have All Weapons",
+          "address": "0x0201ED74"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

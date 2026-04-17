@@ -1,0 +1,80 @@
+{
+  "system": "nes",
+  "normalized_title": "crossfire",
+  "display_name": "Cross Fire (USA, Japan) (Game Genie)",
+  "aliases": [
+    "Cross Fire (USA, Japan) (Game Genie)",
+    "CrossFire (Japan)",
+    "CrossFire (USA) (Proto)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\crossfire_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x05B9",
+        "0x05C1"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CrossFire-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x05C1",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x05B9",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\CrossFire (USA) (Proto).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "SXUEYOVK",
+          "desc": "Infinite Lives",
+          "address": "0x01AF"
+        },
+        {
+          "code": "OZNEPYES",
+          "desc": "Infinite Energy",
+          "address": "0x07A9"
+        },
+        {
+          "code": "SANELNSX",
+          "desc": "Infinite Energy",
+          "address": "0x078B"
+        },
+        {
+          "code": "ENVOALEI",
+          "desc": "Invincibility",
+          "address": "0x03F8"
+        },
+        {
+          "code": "ESVPLLEY",
+          "desc": "Invincibility",
+          "address": "0x035B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

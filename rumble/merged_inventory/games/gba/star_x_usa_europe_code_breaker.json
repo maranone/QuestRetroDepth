@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "starx",
+  "display_name": "Star X (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Star X (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "10000834",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000834"
+        },
+        {
+          "code": "83004C30",
+          "desc": "Infinite Health",
+          "address": "0x02004C30"
+        },
+        {
+          "code": "33004C70",
+          "desc": "Infinite Lives",
+          "address": "0x02004C70"
+        },
+        {
+          "code": "33005259",
+          "desc": "Infinite Bombs",
+          "address": "0x02005259"
+        },
+        {
+          "code": "33004C68",
+          "desc": "Max Weapon Power",
+          "address": "0x02004C68"
+        },
+        {
+          "code": "83005350",
+          "desc": "Quick Score Gain",
+          "address": "0x02005350"
+        },
+        {
+          "code": "D0000020",
+          "desc": "PresS Select To Refill Boost Meter",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83004C40",
+          "desc": "PresS Select To Refill Boost Meter",
+          "address": "0x02004C40"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Star X (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "10000834",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000834"
+        },
+        {
+          "code": "83004C30",
+          "desc": "Infinite Health",
+          "address": "0x02004C30"
+        },
+        {
+          "code": "33004C70",
+          "desc": "Infinite Lives",
+          "address": "0x02004C70"
+        },
+        {
+          "code": "33005259",
+          "desc": "Infinite Bombs",
+          "address": "0x02005259"
+        },
+        {
+          "code": "33004C68",
+          "desc": "Max Weapon Power",
+          "address": "0x02004C68"
+        },
+        {
+          "code": "83005350",
+          "desc": "Quick Score Gain",
+          "address": "0x02005350"
+        },
+        {
+          "code": "D0000020",
+          "desc": "PresS Select To Refill Boost Meter",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83004C40",
+          "desc": "PresS Select To Refill Boost Meter",
+          "address": "0x02004C40"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

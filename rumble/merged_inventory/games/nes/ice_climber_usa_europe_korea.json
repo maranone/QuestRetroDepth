@@ -1,0 +1,82 @@
+{
+  "system": "nes",
+  "normalized_title": "iceclimber",
+  "display_name": "Ice Climber (USA, Europe, Korea)",
+  "aliases": [
+    "Ice Climber (Japan)",
+    "Ice Climber (USA, Europe, Korea)",
+    "Ice Climber (World) (Game Genie)",
+    "Ice Climber (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\iceclimber_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0020",
+        "0x07F0"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\IceClimber-Nes-v0\\data.json",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "birds_hit",
+          "address": "0x0363",
+          "type": "|u1"
+        },
+        {
+          "name": "bricks_hit",
+          "address": "0x0364",
+          "type": "|u1"
+        },
+        {
+          "name": "eggplant_hit",
+          "address": "0x0361",
+          "type": "|u1"
+        },
+        {
+          "name": "ice_hit",
+          "address": "0x0362",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0020",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x07F0",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 6
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ice Climber (World) (Game Genie).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Ice Climber (USA, Europe).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

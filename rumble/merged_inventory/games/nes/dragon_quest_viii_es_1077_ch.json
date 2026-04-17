@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "dragonquestviii",
+  "display_name": "Dragon Quest VIII (ES-1077) (Ch) [!]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dragon Quest VIII (ES-1077) (Ch) [!].cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "055E:FF",
+          "desc": "Infinite HP",
+          "address": "0x055E"
+        },
+        {
+          "code": "0560:FF",
+          "desc": "Infinite MP",
+          "address": "0x0560"
+        },
+        {
+          "code": "0562:FF",
+          "desc": "Max ATK",
+          "address": "0x0562"
+        },
+        {
+          "code": "0563:FF",
+          "desc": "Max DEF",
+          "address": "0x0563"
+        },
+        {
+          "code": "055A:FF",
+          "desc": "Infinite Gold",
+          "address": "0x055A"
+        },
+        {
+          "code": "055B:FF",
+          "desc": "Infinite Gold",
+          "address": "0x055B"
+        },
+        {
+          "code": "0484:FF",
+          "desc": "Instant Kill",
+          "address": "0x0484"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

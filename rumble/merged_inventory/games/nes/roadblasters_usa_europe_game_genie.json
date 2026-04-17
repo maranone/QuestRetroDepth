@@ -1,0 +1,87 @@
+{
+  "system": "nes",
+  "normalized_title": "roadblasters",
+  "display_name": "Roadblasters (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Roadblasters (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Roadblasters (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 13,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "PEEAEIIE",
+          "desc": "Extend Lifetime Of UZ Cannon",
+          "address": "0x0508"
+        },
+        {
+          "code": "NNSEOIEE",
+          "desc": "Extend Lifetime Of Nitro Injector",
+          "address": "0x05F9"
+        },
+        {
+          "code": "AKSEOIEA",
+          "desc": "Reduce Lifetime Of Nitro Injector",
+          "address": "0x05C9"
+        },
+        {
+          "code": "SXVEKSVK",
+          "desc": "Infinite Cruise Missiles",
+          "address": "0x05AC"
+        },
+        {
+          "code": "ETOENSTP",
+          "desc": "Infinite Cruise Missiles",
+          "address": "0x05EF"
+        },
+        {
+          "code": "ATNEEISZ",
+          "desc": "Infinite UZ Cannon",
+          "address": "0x05E8"
+        },
+        {
+          "code": "LZOENSTO",
+          "desc": "Infinite UZ Cannon",
+          "address": "0x05AF"
+        },
+        {
+          "code": "AVSEKSVG",
+          "desc": "Infinite Nitro Injectors",
+          "address": "0x05EC"
+        },
+        {
+          "code": "SAOENSTO",
+          "desc": "Infinite Nitro Injectors",
+          "address": "0x058F"
+        },
+        {
+          "code": "GXKEOIEY",
+          "desc": "Infinite Nitro Injectors",
+          "address": "0x05A9"
+        },
+        {
+          "code": "SZSEKVVK",
+          "desc": "Infinite Electro Shield",
+          "address": "0x06AC"
+        },
+        {
+          "code": "PIOENSTP",
+          "desc": "Infinite Electro Shield",
+          "address": "0x05DF"
+        },
+        {
+          "code": "VAXAESSE",
+          "desc": "Infinite Electro Shield",
+          "address": "0x0508"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

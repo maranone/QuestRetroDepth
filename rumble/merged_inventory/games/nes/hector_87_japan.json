@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "hector87",
+  "display_name": "Hector '87 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hector '87 (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "002D:01",
+          "desc": "Invincible",
+          "address": "0x002D"
+        },
+        {
+          "code": "00AF:09",
+          "desc": "Infinite Ships",
+          "address": "0x00AF"
+        },
+        {
+          "code": "00B0:10",
+          "desc": "Almost Infinite Health",
+          "address": "0x00B0"
+        },
+        {
+          "code": "0061:00",
+          "desc": "History (Stage) Modifier",
+          "address": "0x0061"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

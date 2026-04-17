@@ -1,0 +1,92 @@
+{
+  "system": "nes",
+  "normalized_title": "layla",
+  "display_name": "Layla (Japan) (Game Genie)",
+  "aliases": [
+    "Layla (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Layla (Japan).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "0070:00",
+          "desc": "Untouchable",
+          "address": "0x0070"
+        },
+        {
+          "code": "0071:00",
+          "desc": "Untouchable",
+          "address": "0x0071"
+        },
+        {
+          "code": "006E:15",
+          "desc": "Infinite Health",
+          "address": "0x006E"
+        },
+        {
+          "code": "004E:59",
+          "desc": "Infinite Sub-Machine Gun",
+          "address": "0x004E"
+        },
+        {
+          "code": "004F:59",
+          "desc": "Infinite Grenades",
+          "address": "0x004F"
+        },
+        {
+          "code": "0050:63",
+          "desc": "Infinite Flamethrower",
+          "address": "0x0050"
+        },
+        {
+          "code": "0006:00",
+          "desc": "Walk Through Walls",
+          "address": "0x0006"
+        },
+        {
+          "code": "0034:00",
+          "desc": "Speed Modifier",
+          "address": "0x0034"
+        },
+        {
+          "code": "0051:63",
+          "desc": "Infinite Throwing Axes",
+          "address": "0x0051"
+        },
+        {
+          "code": "0052:63",
+          "desc": "Infinite Rocket Launcher",
+          "address": "0x0052"
+        },
+        {
+          "code": "0053:63",
+          "desc": "Infinite Throwing Swords",
+          "address": "0x0053"
+        },
+        {
+          "code": "0054:63",
+          "desc": "Infinite Star Shields",
+          "address": "0x0054"
+        },
+        {
+          "code": "007C:00",
+          "desc": "Asteroid Modifier",
+          "address": "0x007C"
+        },
+        {
+          "code": "0550:01",
+          "desc": "Boss One Hit Kill",
+          "address": "0x0550"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

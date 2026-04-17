@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "chronotrigger",
+  "display_name": "Chrono Trigger",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Chrono Trigger.cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "6022:0F",
+          "desc": "Infinite Gold",
+          "address": "0x6022"
+        },
+        {
+          "code": "6023:27",
+          "desc": "Infinite Gold",
+          "address": "0x6023"
+        },
+        {
+          "code": "6077:FF",
+          "desc": "Crono Infinite HP",
+          "address": "0x6077"
+        },
+        {
+          "code": "608F:FF",
+          "desc": "Crono Infinite MP",
+          "address": "0x608F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

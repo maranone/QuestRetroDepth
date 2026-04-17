@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "tagteamwrestling",
+  "display_name": "Tag Team Wrestling (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tag Team Wrestling (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0042:00",
+          "desc": "Countout Modifier",
+          "address": "0x0042"
+        },
+        {
+          "code": "0048:00",
+          "desc": "P1 Health Modifier",
+          "address": "0x0048"
+        },
+        {
+          "code": "0058:00",
+          "desc": "P2 Health Modifier",
+          "address": "0x0058"
+        },
+        {
+          "code": "005D:00",
+          "desc": "P2 Health Modifier (Tag Team Partner)",
+          "address": "0x005D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

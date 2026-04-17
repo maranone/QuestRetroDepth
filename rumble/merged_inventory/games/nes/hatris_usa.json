@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "hatris",
+  "display_name": "Hatris (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hatris (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "IEXEOKYA",
+          "desc": "You need 10 less &quot;hats&quot; to finish each level",
+          "address": "0x0489"
+        },
+        {
+          "code": "PEXEOKYA",
+          "desc": "You need 14 less &quot;hats&quot; to finish each level",
+          "address": "0x0489"
+        },
+        {
+          "code": "03AA:00",
+          "desc": "Set A Hat And Beat The Level",
+          "address": "0x03AA"
+        },
+        {
+          "code": "03E8:09",
+          "desc": "Infinite Cash (One's Digit)",
+          "address": "0x03E8"
+        },
+        {
+          "code": "03E9:09",
+          "desc": "Infinite Cash (Ten's Digit)",
+          "address": "0x03E9"
+        },
+        {
+          "code": "03EA:09",
+          "desc": "Infinite Cash (Hundred's Digit)",
+          "address": "0x03EA"
+        },
+        {
+          "code": "03EB:09",
+          "desc": "Infinite Cash (Thousand's Digit)",
+          "address": "0x03EB"
+        },
+        {
+          "code": "03EC:09",
+          "desc": "Infinite Cash (Ten Thousand's Digit)",
+          "address": "0x03EC"
+        },
+        {
+          "code": "03ED:09",
+          "desc": "Infinite Cash (Hundred Thousand's Digit)",
+          "address": "0x03ED"
+        },
+        {
+          "code": "03EE:09",
+          "desc": "Infinite Cash (Millions Digit)",
+          "address": "0x03EE"
+        },
+        {
+          "code": "03E7:09",
+          "desc": "Cash Keeps Going Up",
+          "address": "0x03E7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

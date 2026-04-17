@@ -1,0 +1,35 @@
+{
+  "system": "gb",
+  "normalized_title": "kirbynoblockball",
+  "display_name": "Kirby no Block Ball (Japan) (SGB Enhanced)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Kirby no Block Ball (Japan) (SGB Enhanced).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0109C9C1",
+          "desc": "Infinite Lives",
+          "address": "0xC9C1"
+        },
+        {
+          "code": "010FD6C2",
+          "desc": "Always Play In Thru Block Mode With Timer Stuck At 97",
+          "address": "0xD6C2"
+        },
+        {
+          "code": "010FD7C2",
+          "desc": "Always Play In Thru Block Mode With Timer Stuck At 97",
+          "address": "0xD7C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

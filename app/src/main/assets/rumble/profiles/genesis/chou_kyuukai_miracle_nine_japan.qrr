@@ -1,0 +1,6 @@
+game_name=Chou Kyuukai Miracle Nine (Japan)
+game_key=chou_kyuukai_miracle_nine_japan
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffedee	score	0xFFEDEE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffef22	score	0xFFEF22	1	uint	little	prev < curr	0.8	1	right:0.350:60

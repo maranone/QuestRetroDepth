@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "boukendanshakudonlostsunheart",
+  "display_name": "Bouken Danshaku Don - The Lost Sunheart (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Bouken Danshaku Don - The Lost Sunheart (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f0717:08",
+          "desc": "Infinite Energy",
+          "address": "0x1F0717"
+        },
+        {
+          "code": "1f070f:03",
+          "desc": "Infinite Lives",
+          "address": "0x1F070F"
+        },
+        {
+          "code": "1f0718:27",
+          "desc": "Invincibility",
+          "address": "0x1F0718"
+        },
+        {
+          "code": "1f0833:00",
+          "desc": "Kill Bosses With 1 Hit",
+          "address": "0x1F0833"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

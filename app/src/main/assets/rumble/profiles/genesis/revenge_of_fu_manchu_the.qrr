@@ -1,0 +1,6 @@
+game_name=Revenge of Fu Manchu, The
+game_key=revenge_of_fu_manchu_the
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ff088a	life_lost	0xFF088A	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff088a	life_gained	0xFF088A	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

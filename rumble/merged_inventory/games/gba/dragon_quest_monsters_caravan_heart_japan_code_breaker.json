@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "dragonquestmonsterscaravanheart",
+  "display_name": "Dragon Quest Monsters - Caravan Heart (Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Dragon Quest Monsters - Caravan Heart (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10001D28",
+          "desc": "Master Code [SMSH]",
+          "address": "0x02001D28"
+        },
+        {
+          "code": "10011D36",
+          "desc": "Master Code [Pad]",
+          "address": "0x02011D36"
+        },
+        {
+          "code": "3201385C",
+          "desc": "Infinite Caravan Health",
+          "address": "0x0201385C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Dragon Quest Monsters - Caravan Heart (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10001D28",
+          "desc": "Master Code [SMSH]",
+          "address": "0x02001D28"
+        },
+        {
+          "code": "10011D36",
+          "desc": "Master Code [Pad]",
+          "address": "0x02011D36"
+        },
+        {
+          "code": "3201385C",
+          "desc": "Infinite Caravan Health",
+          "address": "0x0201385C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

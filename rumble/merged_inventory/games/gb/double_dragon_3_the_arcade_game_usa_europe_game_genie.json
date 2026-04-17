@@ -1,0 +1,38 @@
+{
+  "system": "gb",
+  "normalized_title": "doubledragon3arcadegame",
+  "display_name": "Double Dragon 3 - The Arcade Game (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Double Dragon 3 - The Arcade Game (USA, Europe) (GameShark)",
+    "Double Dragon 3 - The Arcade Game (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Double Dragon 3 - The Arcade Game (USA, Europe).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0109C4C2",
+          "desc": "Infinite Lives",
+          "address": "0xC4C2"
+        },
+        {
+          "code": "01FFC1C2",
+          "desc": "Repurchase All Items In Shops",
+          "address": "0xC1C2"
+        },
+        {
+          "code": "01FFC1C2",
+          "desc": "Repurchase All Items In Shops",
+          "address": "0xC1C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

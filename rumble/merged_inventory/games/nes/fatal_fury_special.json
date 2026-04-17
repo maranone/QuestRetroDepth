@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "fatalfuryspecial",
+  "display_name": "Fatal Fury Special",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Fatal Fury Special.cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 10,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "00B0:63",
+          "desc": "Infinite Time",
+          "address": "0x00B0"
+        },
+        {
+          "code": "00B6:00",
+          "desc": "Infinite Health P1",
+          "address": "0x00B6"
+        },
+        {
+          "code": "00B7:00",
+          "desc": "Infinite Health P2",
+          "address": "0x00B7"
+        },
+        {
+          "code": "00B0:99",
+          "desc": "Infinite Time",
+          "address": "0x00B0"
+        },
+        {
+          "code": "00B6:00",
+          "desc": "Infinite Health",
+          "address": "0x00B6"
+        },
+        {
+          "code": "00B7:00",
+          "desc": "Infinite Health",
+          "address": "0x00B7"
+        },
+        {
+          "code": "00B6:00",
+          "desc": "Infinite Health",
+          "address": "0x00B6"
+        },
+        {
+          "code": "0059:00",
+          "desc": "Character Modifier",
+          "address": "0x0059"
+        },
+        {
+          "code": "040D:00",
+          "desc": "Rounds Won Modifier",
+          "address": "0x040D"
+        },
+        {
+          "code": "00B7:00",
+          "desc": "Infinite Health",
+          "address": "0x00B7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

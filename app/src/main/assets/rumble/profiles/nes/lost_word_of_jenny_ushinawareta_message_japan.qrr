@@ -1,0 +1,15 @@
+game_name=Lost Word of Jenny - Ushinawareta Message (Japan)
+game_key=lost_word_of_jenny_ushinawareta_message_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_022f	damage_taken	0x022F	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_022f	death	0x022F	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_0239	life_lost	0x0239	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0239	life_gained	0x0239	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_04ad	score	0x04AD	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04ae	score	0x04AE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04af	score	0x04AF	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04b0	score	0x04B0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04b1	score	0x04B1	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04b2	score	0x04B2	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04b3	score	0x04B3	1	uint	little	prev < curr	0.8	1	right:0.350:60

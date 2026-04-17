@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "kingsofbeachprofessionalbeachvolleyball",
+  "display_name": "Kings of the Beach - Professional Beach Volleyball (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kings of the Beach - Professional Beach Volleyball (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "003E:00",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x003E"
+        },
+        {
+          "code": "003F:00",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x003F"
+        },
+        {
+          "code": "002F:00",
+          "desc": "Player 1 Control Modifier",
+          "address": "0x002F"
+        },
+        {
+          "code": "0030:00",
+          "desc": "Player 2 Control Modifier",
+          "address": "0x0030"
+        },
+        {
+          "code": "0031:00",
+          "desc": "Player 3 Control Modifier",
+          "address": "0x0031"
+        },
+        {
+          "code": "0032:00",
+          "desc": "Player 4 Control Modifier",
+          "address": "0x0032"
+        },
+        {
+          "code": "0500:00",
+          "desc": "Player 1 Modifier",
+          "address": "0x0500"
+        },
+        {
+          "code": "0501:00",
+          "desc": "Player 2 Modifier",
+          "address": "0x0501"
+        },
+        {
+          "code": "0502:00",
+          "desc": "Player 3 Modifier",
+          "address": "0x0502"
+        },
+        {
+          "code": "0502:00",
+          "desc": "Player 4 Modifier",
+          "address": "0x0502"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "tatsunokofighter",
+  "display_name": "Tatsunoko Fighter (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Tatsunoko Fighter (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f1c8a:63",
+          "desc": "Max Gold",
+          "address": "0x1F1C8A"
+        },
+        {
+          "code": "1f1c8b:63",
+          "desc": "Max Gold",
+          "address": "0x1F1C8B"
+        },
+        {
+          "code": "1f1c85:50",
+          "desc": "Infinite Health",
+          "address": "0x1F1C85"
+        },
+        {
+          "code": "1f0048:14",
+          "desc": "Invincibility",
+          "address": "0x1F0048"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

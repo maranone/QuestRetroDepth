@@ -1,0 +1,58 @@
+{
+  "system": "nes",
+  "normalized_title": "quarth",
+  "display_name": "Quarth (Japan)",
+  "aliases": [
+    "Quarth (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\quarth_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0050",
+        "0x07E4"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Quarth-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0050",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x07E4",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Quarth (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0072:01",
+          "desc": "Blocks don't fall",
+          "address": "0x0072"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

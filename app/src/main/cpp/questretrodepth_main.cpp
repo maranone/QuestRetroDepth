@@ -98,11 +98,36 @@ bool path_ends_with(const std::string& path, const char* ext) {
 }
 
 qrd::BackendKind detect_backend_kind_from_path(const std::string& rom_path) {
+    // Folder-based detection takes highest priority
     if (path_has_segment(rom_path, "/roms/genesis/") || path_has_segment(rom_path, "\\roms\\genesis\\"))
         return qrd::BackendKind::Genesis;
     if (path_has_segment(rom_path, "/roms/snes/") || path_has_segment(rom_path, "\\roms\\snes\\"))
         return qrd::BackendKind::Snes;
+    if (path_has_segment(rom_path, "/roms/gba/") || path_has_segment(rom_path, "\\roms\\gba\\"))
+        return qrd::BackendKind::Gba;
+    if (path_has_segment(rom_path, "/roms/gb/") || path_has_segment(rom_path, "\\roms\\gb\\") ||
+        path_has_segment(rom_path, "/roms/gbc/") || path_has_segment(rom_path, "\\roms\\gbc\\"))
+        return qrd::BackendKind::Gb;
+    if (path_has_segment(rom_path, "/roms/nes/") || path_has_segment(rom_path, "\\roms\\nes\\"))
+        return qrd::BackendKind::Nes;
+    if (path_has_segment(rom_path, "/roms/pce/") || path_has_segment(rom_path, "\\roms\\pce\\"))
+        return qrd::BackendKind::Pce;
+    if (path_has_segment(rom_path, "/roms/sms/") || path_has_segment(rom_path, "\\roms\\sms\\"))
+        return qrd::BackendKind::Sms;
+    if (path_has_segment(rom_path, "/roms/gg/") || path_has_segment(rom_path, "\\roms\\gg\\"))
+        return qrd::BackendKind::Sms;
 
+    // Extension-based detection
+    if (path_ends_with(rom_path, ".gba"))
+        return qrd::BackendKind::Gba;
+    if (path_ends_with(rom_path, ".gb") || path_ends_with(rom_path, ".gbc"))
+        return qrd::BackendKind::Gb;
+    if (path_ends_with(rom_path, ".nes"))
+        return qrd::BackendKind::Nes;
+    if (path_ends_with(rom_path, ".pce"))
+        return qrd::BackendKind::Pce;
+    if (path_ends_with(rom_path, ".sms") || path_ends_with(rom_path, ".gg"))
+        return qrd::BackendKind::Sms;
     if (path_ends_with(rom_path, ".md") || path_ends_with(rom_path, ".bin") ||
         path_ends_with(rom_path, ".gen") || path_ends_with(rom_path, ".smd")) {
         return qrd::BackendKind::Genesis;
@@ -116,7 +141,14 @@ qrd::BackendKind resolve_backend_kind(const std::string& raw_path, const std::st
 
     const bool raw_has_system_folder =
         path_has_segment(raw_path, "/roms/genesis/") || path_has_segment(raw_path, "\\roms\\genesis\\") ||
-        path_has_segment(raw_path, "/roms/snes/") || path_has_segment(raw_path, "\\roms\\snes\\");
+        path_has_segment(raw_path, "/roms/snes/") || path_has_segment(raw_path, "\\roms\\snes\\") ||
+        path_has_segment(raw_path, "/roms/nes/") || path_has_segment(raw_path, "\\roms\\nes\\") ||
+        path_has_segment(raw_path, "/roms/pce/") || path_has_segment(raw_path, "\\roms\\pce\\") ||
+        path_has_segment(raw_path, "/roms/sms/") || path_has_segment(raw_path, "\\roms\\sms\\") ||
+        path_has_segment(raw_path, "/roms/gg/")  || path_has_segment(raw_path, "\\roms\\gg\\") ||
+        path_has_segment(raw_path, "/roms/gba/") || path_has_segment(raw_path, "\\roms\\gba\\") ||
+        path_has_segment(raw_path, "/roms/gb/")  || path_has_segment(raw_path, "\\roms\\gb\\") ||
+        path_has_segment(raw_path, "/roms/gbc/") || path_has_segment(raw_path, "\\roms\\gbc\\");
     if (raw_has_system_folder) return raw_kind;
 
     return prepared_kind;
@@ -163,12 +195,19 @@ static std::atomic<bool> g_emu_step_one{false};
 static std::atomic<bool> g_auto_frame_skip{false};
 
 static constexpr int64_t k_snes_frame_ns    = 16'639'267LL; // 1/60.0988 s (NTSC)
-static constexpr int64_t k_genesis_frame_ns = 16'666'667LL; // 60 Hz default for Genesis phase 1.
+static constexpr int64_t k_genesis_frame_ns = 16'666'667LL; // 60 Hz
+static constexpr int64_t k_gba_frame_ns     = 16'743'022LL; // 1/59.7275 s (GBA NTSC)
 
 static int64_t current_backend_frame_ns() {
-    if (g_backend_kind.has_value() && *g_backend_kind == qrd::BackendKind::Genesis)
-        return k_genesis_frame_ns;
-    return k_snes_frame_ns;
+    if (!g_backend_kind.has_value()) return k_snes_frame_ns;
+    switch (*g_backend_kind) {
+    case qrd::BackendKind::Genesis: return k_genesis_frame_ns;
+    case qrd::BackendKind::Gba:
+    case qrd::BackendKind::Gb:      return k_gba_frame_ns;
+    case qrd::BackendKind::Nes:     return k_snes_frame_ns;
+    case qrd::BackendKind::Pce:     return k_snes_frame_ns; // PCE NTSC ~59.82 Hz
+    default:                        return k_snes_frame_ns;
+    }
 }
 
 static void emu_thread_main() {
@@ -191,7 +230,9 @@ static void emu_thread_main() {
 
                     std::string err;
                     if (backend->step_frame(inp, err)) {
-                        const auto rumble_events = g_experimental_rumble.evaluate_frame(*backend);
+                        const uint64_t rumble_now_ms = (uint64_t)std::chrono::duration_cast<std::chrono::milliseconds>(
+                            std::chrono::steady_clock::now().time_since_epoch()).count();
+                        const auto rumble_events = g_experimental_rumble.evaluate_frame(*backend, rumble_now_ms);
                         const auto& frame = backend->frame_output();
                         if (frame.width > 0 && !frame.rgba8888.empty()) {
                             {
@@ -304,6 +345,11 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeLoadRom(
 
     qrd::EmulatorInputState input;
     backend->step_frame(input, error);
+    const auto& frame = backend->frame_output();
+    if (frame.width == 0 || frame.rgba8888.empty()) {
+        g_last_status = "ROM load failed\n\nBackend loaded but emitted no video frame.\nCheck logcat for backend errors.";
+        return make_jstring(env, g_last_status);
+    }
     g_last_status = "ROM loaded\n\n" + rom_path + "\n\n" + backend->backend_name();
     return make_jstring(env, g_last_status);
 }
@@ -623,10 +669,11 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeLoadRom(
         qrd::EmulatorInputState input;
         backend->step_frame(input, error); // prime — ignore failure
         const auto& frame = backend->frame_output();
-        if (frame.width > 0 && !frame.rgba8888.empty()) {
-            g_cached_frame     = frame;
-            g_has_cached_frame = true;
+        if (frame.width == 0 || frame.rgba8888.empty()) {
+            return make_jstring(env, "ROM load failed\n\nBackend loaded but emitted no video frame.\nCheck logcat for backend errors.");
         }
+        g_cached_frame     = frame;
+        g_has_cached_frame = true;
         g_last_working_rom_path = rom_path;
         g_last_working_backend_kind = wanted_kind;
         g_last_loaded_rom_filename = basename_from_path(rom_path);
@@ -663,6 +710,27 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeGetStateCode(
     JNIEnv* env, jobject)
 {
     return make_jstring(env, g_openxr_shell.get_state_code());
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeHomebrewDataReady(
+    JNIEnv*, jobject)
+{
+    g_openxr_shell.homebrew_data_ready();
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeHomebrewDownloadComplete(
+    JNIEnv*, jobject, jint /*entryIdx*/)
+{
+    g_openxr_shell.homebrew_download_complete();
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeSetHomebrewFeed(
+    JNIEnv*, jobject, jint idx)
+{
+    g_openxr_shell.set_homebrew_feed((int)idx);
 }
 
 // Returns true if the code was valid and applied.

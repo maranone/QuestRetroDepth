@@ -1,0 +1,11 @@
+game_name=Waterworld (Europe) (Action Replay)
+game_key=waterworld_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ffb06c	pickup	0xFFB06C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_ff0caa	damage_taken	0xFF0CAA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff0caa	death	0xFF0CAA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_ff0ce6	level_complete	0xFF0CE6	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	pickup_coins_ff0744	pickup	0xFF0744	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_ffbbea	damage_taken	0xFFBBEA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffbbea	death	0xFFBBEA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

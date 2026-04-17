@@ -1,0 +1,59 @@
+{
+  "system": "nes",
+  "normalized_title": "battlecity",
+  "display_name": "BattleCity (Japan)",
+  "aliases": [
+    "BattleCity (Japan)"
+  ],
+  "sources": {
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BattleCity-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "enemies",
+          "address": "0x007F",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x003A",
+          "type": ">u2"
+        },
+        {
+          "name": "score",
+          "address": "0x0016",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\BattleCity (Japan).cht",
+      "total_cheat_rows": 31,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0051:02",
+          "desc": "Infinite Lives",
+          "address": "0x0051"
+        },
+        {
+          "code": "0080:00",
+          "desc": "Win Level Now",
+          "address": "0x0080"
+        },
+        {
+          "code": "0089:02",
+          "desc": "Tank Always Have Shield Protection",
+          "address": "0x0089"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

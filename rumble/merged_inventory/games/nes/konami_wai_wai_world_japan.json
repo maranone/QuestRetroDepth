@@ -1,0 +1,115 @@
+{
+  "system": "nes",
+  "normalized_title": "konamiwaiwaiworld",
+  "display_name": "Konami Wai Wai World (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Konami Wai Wai World (Japan).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 19,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "07D0:0E",
+          "desc": "Infinite Health For Konami Man",
+          "address": "0x07D0"
+        },
+        {
+          "code": "07D1:0E",
+          "desc": "Infinite Health For Konami Girl",
+          "address": "0x07D1"
+        },
+        {
+          "code": "07D2:0E",
+          "desc": "Infinite Health For Goemon",
+          "address": "0x07D2"
+        },
+        {
+          "code": "07D3:0E",
+          "desc": "Infinite Health For Simon Belmont",
+          "address": "0x07D3"
+        },
+        {
+          "code": "07D4:0E",
+          "desc": "Infinite Health For Getsufuu-Maden",
+          "address": "0x07D4"
+        },
+        {
+          "code": "07D5:0E",
+          "desc": "Infinite Health For Mikey",
+          "address": "0x07D5"
+        },
+        {
+          "code": "07D6:0E",
+          "desc": "Infinite Health For Moai",
+          "address": "0x07D6"
+        },
+        {
+          "code": "07D7:0E",
+          "desc": "Infinite Health For Kong",
+          "address": "0x07D7"
+        },
+        {
+          "code": "07D8:FF",
+          "desc": "Set All Characters",
+          "address": "0x07D8"
+        },
+        {
+          "code": "07B2:FF",
+          "desc": "Set Weapons For All Characters",
+          "address": "0x07B2"
+        },
+        {
+          "code": "0060:09",
+          "desc": "Infinite Lives For Vic Viper/Twinbee Stages",
+          "address": "0x0060"
+        },
+        {
+          "code": "07DA:FA",
+          "desc": "Infinite Time To Escape",
+          "address": "0x07DA"
+        },
+        {
+          "code": "07CA:00",
+          "desc": "Set Character Modifier",
+          "address": "0x07CA"
+        },
+        {
+          "code": "SXSAKTVG",
+          "desc": "Infinite Lives For Vic Viper/Twinbee Stages",
+          "address": "0x062C"
+        },
+        {
+          "code": "0040:03",
+          "desc": "Invincibility (Player 1)",
+          "address": "0x0040"
+        },
+        {
+          "code": "0041:03",
+          "desc": "Invincibility (Player 2)",
+          "address": "0x0041"
+        },
+        {
+          "code": "07DD:63",
+          "desc": "Set Infinite Power Up(99)",
+          "address": "0x07DD"
+        },
+        {
+          "code": "07DF:63",
+          "desc": "Set Infinite Keys(99)",
+          "address": "0x07DF"
+        },
+        {
+          "code": "0340:80",
+          "desc": "Fix Invincible Flashing",
+          "address": "0x0340"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

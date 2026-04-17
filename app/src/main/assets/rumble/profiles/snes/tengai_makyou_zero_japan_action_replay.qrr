@@ -1,0 +1,18 @@
+game_name=Tengai Makyou Zero (Japan) (Action Replay)
+game_key=tengai_makyou_zero_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_1694	damage_taken	0x7E1694	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1694	death	0x7E1694	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1695	damage_taken	0x7E1695	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1695	death	0x7E1695	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1696	damage_taken	0x7E1696	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1696	death	0x7E1696	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1697	damage_taken	0x7E1697	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1697	death	0x7E1697	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1698	damage_taken	0x7E1698	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1698	death	0x7E1698	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1699	damage_taken	0x7E1699	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1699	death	0x7E1699	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_1950	level_complete	0x7E1950	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_1951	level_complete	0x7E1951	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

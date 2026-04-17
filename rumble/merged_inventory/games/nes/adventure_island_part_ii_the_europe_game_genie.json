@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "adventureislandpartii",
+  "display_name": "Adventure Island Part II, The (Europe) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Adventure Island Part II, The (Europe) (Game Genie).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "POOPSY",
+          "desc": "At The Choose Your Egg Screen, There's Always An Extra Egg To The Left",
+          "address": "0x071D"
+        },
+        {
+          "code": "TOLEXA",
+          "desc": "Honey Girl Egg Turns Into A Peterdon Icon",
+          "address": "0x0092"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

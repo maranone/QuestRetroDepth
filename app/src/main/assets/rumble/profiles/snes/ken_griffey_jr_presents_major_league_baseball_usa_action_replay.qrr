@@ -1,0 +1,6 @@
+game_name=Ken Griffey Jr. Presents Major League Baseball (USA) (Action Replay)
+game_key=ken_griffey_jr_presents_major_league_baseball_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	score_score_1354	score	0x7E1354	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_1363	score	0x7E1363	1	uint	little	prev < curr	0.8	1	right:0.350:60

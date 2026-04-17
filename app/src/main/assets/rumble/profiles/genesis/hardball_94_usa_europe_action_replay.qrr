@@ -1,0 +1,7 @@
+game_name=HardBall '94 (USA, Europe) (Action Replay)
+game_key=hardball_94_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff1c4a	score	0xFF1C4A	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff1c4c	score	0xFF1C4C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff1c48	score	0xFF1C48	1	uint	little	prev < curr	0.8	1	right:0.350:60

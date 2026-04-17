@@ -1,0 +1,37 @@
+{
+  "system": "nes",
+  "normalized_title": "flightofintruder",
+  "display_name": "Flight of the Intruder (USA) (Game Genie)",
+  "aliases": [
+    "Flight of the Intruder (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Flight of the Intruder (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "GZUOZYVG",
+          "desc": "Infinite radar-guided missiles (bombing/strafing screen)",
+          "address": "0x07AA"
+        },
+        {
+          "code": "PAOALZTE",
+          "desc": "Start with 9 radar-guided missiles (bombing/strafing screen)",
+          "address": "0x020B"
+        },
+        {
+          "code": "GZUOLKVK",
+          "desc": "Infinite missiles (cockpit screen)",
+          "address": "0x04AB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

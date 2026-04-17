@@ -1,0 +1,5 @@
+game_name=Nekketsu Koukou Dodgeball-bu - Soccer Hen MD (Japan)
+game_key=nekketsu_koukou_dodgeball_bu_soccer_hen_md_japan
+system=genesis
+integration_tier=contrib
+trigger	score_score_fff8d2	score	0xFFF8D2	1	uint	little	prev < curr	0.8	1	right:0.350:60

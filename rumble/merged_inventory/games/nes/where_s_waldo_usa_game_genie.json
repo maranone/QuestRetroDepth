@@ -1,0 +1,42 @@
+{
+  "system": "nes",
+  "normalized_title": "whereswaldo",
+  "display_name": "Where's Waldo (USA) (Game Genie)",
+  "aliases": [
+    "Where's Waldo (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Where's Waldo (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "07F1:E0",
+          "desc": "Infinite Time",
+          "address": "0x07F1"
+        },
+        {
+          "code": "07F5:E1",
+          "desc": "Infinite Time",
+          "address": "0x07F5"
+        },
+        {
+          "code": "07F9:E2",
+          "desc": "Infinite Time",
+          "address": "0x07F9"
+        },
+        {
+          "code": "07FD:E3",
+          "desc": "Infinite Time",
+          "address": "0x07FD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

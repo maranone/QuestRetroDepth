@@ -1,6 +1,0 @@
-game_name=StreetFighterAlpha2
-game_key=StreetFighterAlpha2-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_73e	damage_taken	0x7E073E	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	damage_taken_1_9be	damage_taken	0x7E09BE	1	uint	native	prev > curr	0.85	1	right:0.750:180

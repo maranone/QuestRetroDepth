@@ -1,0 +1,9 @@
+game_name=Gauntlet - Dark Legacy (USA) (Code Breaker)
+game_key=gauntlet_dark_legacy_usa_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_020009d1	damage_taken	0x020009D1	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020009d1	death	0x020009D1	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020009d2	damage_taken	0x020009D2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020009d2	death	0x020009D2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_020009d9	level_complete	0x020009D9	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

@@ -1,0 +1,94 @@
+{
+  "system": "nes",
+  "normalized_title": "dragonpower",
+  "display_name": "Dragon Power (USA) (Game Genie)",
+  "aliases": [
+    "Dragon Power (USA) (Game Genie)",
+    "Dragon Power (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\dragonpower_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x002E",
+        "0x011E"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DragonPower-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x002E",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x011E",
+          "type": ">n4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dragon Power (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "SZVOSZVG",
+          "desc": "Start with infinite energy",
+          "address": "0x02AD"
+        },
+        {
+          "code": "EAXAILGT",
+          "desc": "Start with extra energy",
+          "address": "0x030D"
+        },
+        {
+          "code": "KAOETLSA",
+          "desc": "Start with 24 Wind Waves",
+          "address": "0x038E"
+        },
+        {
+          "code": "002E:63",
+          "desc": "Infinite Health",
+          "address": "0x002E"
+        },
+        {
+          "code": "00EF:03",
+          "desc": "Increased Running Speed",
+          "address": "0x00EF"
+        },
+        {
+          "code": "012F:09",
+          "desc": "Infinite Turtle Shells (Wind Attacks)",
+          "address": "0x012F"
+        },
+        {
+          "code": "0036:0F",
+          "desc": "Infinite Red Power Pole Time (Spin Attack)",
+          "address": "0x0036"
+        },
+        {
+          "code": "050D:01",
+          "desc": "1 Hit Kills Enemies (Side Scrolling Levels)",
+          "address": "0x050D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

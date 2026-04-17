@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "fifasoccer2004",
+  "display_name": "FIFA Soccer 2004 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\FIFA Soccer 2004 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "100207CE",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020207CE"
+        },
+        {
+          "code": "33002708",
+          "desc": "Player Score Modifier",
+          "address": "0x02002708"
+        },
+        {
+          "code": "33002709",
+          "desc": "CPU Score Modifier",
+          "address": "0x02002709"
+        },
+        {
+          "code": "33002708",
+          "desc": "Player Can't Score",
+          "address": "0x02002708"
+        },
+        {
+          "code": "33002709",
+          "desc": "CUP Can't Score",
+          "address": "0x02002709"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\FIFA Soccer 2004 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "100207CE",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020207CE"
+        },
+        {
+          "code": "33002708",
+          "desc": "Player Score Modifier",
+          "address": "0x02002708"
+        },
+        {
+          "code": "33002709",
+          "desc": "CPU Score Modifier",
+          "address": "0x02002709"
+        },
+        {
+          "code": "33002708",
+          "desc": "Player Can't Score",
+          "address": "0x02002708"
+        },
+        {
+          "code": "33002709",
+          "desc": "CUP Can't Score",
+          "address": "0x02002709"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "landbeforetimeintomysteriousbeyond",
+  "display_name": "Land Before Time, The - Into the Mysterious Beyond (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Land Before Time, The - Into the Mysterious Beyond (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "32009990",
+          "desc": "Infinte Health",
+          "address": "0x02009990"
+        },
+        {
+          "code": "3200995C",
+          "desc": "Infinite Lives",
+          "address": "0x0200995C"
+        },
+        {
+          "code": "82009948",
+          "desc": "Max Fruit",
+          "address": "0x02009948"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Land Before Time, The - Into the Mysterious Beyond (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "32009990",
+          "desc": "Infinte Health",
+          "address": "0x02009990"
+        },
+        {
+          "code": "3200995C",
+          "desc": "Infinite Lives",
+          "address": "0x0200995C"
+        },
+        {
+          "code": "82009948",
+          "desc": "Max Fruit",
+          "address": "0x02009948"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

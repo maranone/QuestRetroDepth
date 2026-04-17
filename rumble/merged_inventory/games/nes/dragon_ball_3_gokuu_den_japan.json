@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "dragonball3gokuuden",
+  "display_name": "Dragon Ball 3 - Gokuu Den (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dragon Ball 3 - Gokuu Den (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "02A3:00",
+          "desc": "Skip Fights",
+          "address": "0x02A3"
+        },
+        {
+          "code": "0496:08",
+          "desc": "Don't Stop On The Map",
+          "address": "0x0496"
+        },
+        {
+          "code": "001A:FF",
+          "desc": "Strong Attacks",
+          "address": "0x001A"
+        },
+        {
+          "code": "0400:90",
+          "desc": "Lots Of Ability Points",
+          "address": "0x0400"
+        },
+        {
+          "code": "0408:FF",
+          "desc": "Quick Level Up",
+          "address": "0x0408"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

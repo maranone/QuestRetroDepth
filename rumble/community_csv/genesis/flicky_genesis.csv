@@ -2,7 +2,7 @@
 # game_name=Flicky (USA, Europe) (Action Replay)
 # match_names=flicky|flickygenesis
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-level_complete_level_ffd82d,0xFFD82D,1,uint,changed,,both,0.800,normal,0,400,75,60,
-life_lost_lives_ffd882,0xFFD882,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
-life_gained_lives_ffd882,0xFFD882,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,
-score_score_ffd87e,0xFFD87E,4,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+level_complete_level_ffd82d,0xFFD82D,1,uint,changed,,both,0.90,heartbeat,0,400,400,60,
+life_lost_lives_ffd882,0xFFD882,1,uint,prev_gt_curr,,both,0.92,fade_in_out,0,300,250,80,
+life_gained_lives_ffd882,0xFFD882,1,uint,prev_lt_curr,,both,0.750,fade_in,0,180,200,50,
+score_score_ffd87e,0xFFD87E,4,bcd,prev_lt_curr,,right,0.350,burst,0,70,15,10,

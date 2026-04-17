@@ -1,0 +1,25 @@
+{
+  "system": "nes",
+  "normalized_title": "digdugii",
+  "display_name": "Dig Dug II (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dig Dug II (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "02C9:03",
+          "desc": "Infinite Lives",
+          "address": "0x02C9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

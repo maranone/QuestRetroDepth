@@ -1,0 +1,8 @@
+game_name=Project S-11 (USA) (GameShark)
+game_key=project_s_11_usa_gameshark
+system=gbc
+integration_tier=contrib
+trigger	score_score_d6c1	score	0xD6C1	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_d7c1	score	0xD7C1	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	life_lost_lives_dac1	life_lost	0xDAC1	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_dac1	life_gained	0xDAC1	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

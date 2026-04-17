@@ -1,0 +1,17 @@
+game_name=Dragon Quest VI - Maboroshi no Daichi (Japan) (Action Replay) (diff)
+game_key=dragon_quest_vi_maboroshi_no_daichi_japan_action_replay_diff
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_3ea2	pickup	0x7E3EA2	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_3ea3	pickup	0x7E3EA3	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_3ea4	pickup	0x7E3EA4	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_3ea5	pickup	0x7E3EA5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_3ea6	pickup	0x7E3EA6	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_4030	damage_taken	0x7E4030	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_4030	death	0x7E4030	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_4031	damage_taken	0x7E4031	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_4031	death	0x7E4031	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_405a	damage_taken	0x7E405A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_405a	death	0x7E405A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_405b	damage_taken	0x7E405B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_405b	death	0x7E405B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

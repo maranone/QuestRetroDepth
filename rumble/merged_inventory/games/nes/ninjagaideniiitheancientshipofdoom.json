@@ -1,0 +1,57 @@
+{
+  "system": "nes",
+  "normalized_title": "ninjagaideniiitheancientshipofdoom",
+  "display_name": "NinjaGaidenIIITheAncientShipOfDoom",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\ninjagaideniiitheancientshipofdoom_nes.json",
+      "trigger_count": 6,
+      "field_names": [
+        "gameover",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0x00A7",
+        "0x00C0",
+        "0x00C4",
+        "0x0486"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\NinjaGaidenIIITheAncientShipOfDoom-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0x0486",
+          "type": "|i1"
+        },
+        {
+          "name": "health",
+          "address": "0x00A7",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x00C4",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x00C0",
+          "type": ">n4"
+        }
+      ],
+      "distinct_address_count": 4
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

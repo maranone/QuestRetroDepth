@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "deadmoongetsusekainoakumu",
+  "display_name": "Dead Moon - Getsu Sekai no Akumu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Dead Moon - Getsu Sekai no Akumu (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f0021:02",
+          "desc": "Infinite Lives",
+          "address": "0x1F0021"
+        },
+        {
+          "code": "1f0022:03",
+          "desc": "Infinite Bombs",
+          "address": "0x1F0022"
+        },
+        {
+          "code": "1f08f6:03",
+          "desc": "Invincibility",
+          "address": "0x1F08F6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Super Baseball Simulator 1.000 (USA) (Game Genie)
+game_key=super_baseball_simulator_1_000_usa_game_genie
+system=snes
+integration_tier=contrib
+trigger	score_score_091b	score	0x7E091B	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_091c	score	0x7E091C	1	uint	little	prev < curr	0.8	1	right:0.350:60

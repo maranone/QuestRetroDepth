@@ -1,0 +1,6 @@
+game_name=NES Play Action Football (USA) (Game Genie)
+game_key=nes_play_action_football_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	score_score_0690	score	0x0690	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0691	score	0x0691	1	uint	little	prev < curr	0.8	1	right:0.350:60

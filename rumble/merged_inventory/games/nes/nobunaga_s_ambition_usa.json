@@ -1,0 +1,145 @@
+{
+  "system": "nes",
+  "normalized_title": "nobunagasambition",
+  "display_name": "Nobunaga's Ambition (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Nobunaga's Ambition (USA).cht",
+      "total_cheat_rows": 55,
+      "raw_entry_count": 99,
+      "distinct_address_count": 99,
+      "sample_raw_entries": [
+        {
+          "code": "6FC6:00",
+          "desc": "Head Enemy Unit Has 0 Energy",
+          "address": "0x6FC6"
+        },
+        {
+          "code": "752F:00",
+          "desc": "Age Modifier",
+          "address": "0x752F"
+        },
+        {
+          "code": "7530:FF",
+          "desc": "Max Health",
+          "address": "0x7530"
+        },
+        {
+          "code": "7531:FF",
+          "desc": "Max Drive",
+          "address": "0x7531"
+        },
+        {
+          "code": "7532:FF",
+          "desc": "Max Luck",
+          "address": "0x7532"
+        },
+        {
+          "code": "7533:FF",
+          "desc": "Max Charisma",
+          "address": "0x7533"
+        },
+        {
+          "code": "7534:FF",
+          "desc": "Max IQ",
+          "address": "0x7534"
+        },
+        {
+          "code": "7001:E7",
+          "desc": "Max Gold",
+          "address": "0x7001"
+        },
+        {
+          "code": "7002:03",
+          "desc": "Max Gold",
+          "address": "0x7002"
+        },
+        {
+          "code": "7003:00",
+          "desc": "Zero Debt",
+          "address": "0x7003"
+        },
+        {
+          "code": "7005:E7",
+          "desc": "Max Town",
+          "address": "0x7005"
+        },
+        {
+          "code": "7006:03",
+          "desc": "Max Town",
+          "address": "0x7006"
+        },
+        {
+          "code": "7007:E7",
+          "desc": "Max Rice",
+          "address": "0x7007"
+        },
+        {
+          "code": "7008:03",
+          "desc": "Max Rice",
+          "address": "0x7008"
+        },
+        {
+          "code": "7009:E7",
+          "desc": "Max Output",
+          "address": "0x7009"
+        },
+        {
+          "code": "700A:03",
+          "desc": "Max Output",
+          "address": "0x700A"
+        },
+        {
+          "code": "700B:E7",
+          "desc": "Max Dams",
+          "address": "0x700B"
+        },
+        {
+          "code": "700C:03",
+          "desc": "Max Dams",
+          "address": "0x700C"
+        },
+        {
+          "code": "700D:E7",
+          "desc": "Max Loyalty",
+          "address": "0x700D"
+        },
+        {
+          "code": "700E:03",
+          "desc": "Max Loyalty",
+          "address": "0x700E"
+        },
+        {
+          "code": "700F:E7",
+          "desc": "Max Wealth",
+          "address": "0x700F"
+        },
+        {
+          "code": "7010:03",
+          "desc": "Max Wealth",
+          "address": "0x7010"
+        },
+        {
+          "code": "7011:E7",
+          "desc": "Max Men",
+          "address": "0x7011"
+        },
+        {
+          "code": "7012:03",
+          "desc": "Max Men",
+          "address": "0x7012"
+        },
+        {
+          "code": "7013:E7",
+          "desc": "Max Morale",
+          "address": "0x7013"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

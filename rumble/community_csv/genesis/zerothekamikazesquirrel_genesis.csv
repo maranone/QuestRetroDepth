@@ -2,8 +2,8 @@
 # game_name=Zero the Kamikaze Squirrel (USA, Europe) (Action Replay)
 # match_names=zerothekamikazesquirrel|zerothekamikazesquirrelgenesis
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-damage_taken_health_ff0139,0xFF0139,1,uint,prev_gt_curr,,left,0.850,normal,0,90,100,70,
-death_health_ff0139,0xFF0139,1,uint,became_zero,,both,1.000,normal,0,600,400,90,
-life_lost_lives_ff0135,0xFF0135,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
-life_gained_lives_ff0135,0xFF0135,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,
-score_score_ff013c,0xFF013C,4,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+damage_taken_health_ff0139,0xFF0139,1,uint,prev_gt_curr,,left,0.850,fade_out,0,110,80,70,
+death_health_ff0139,0xFF0139,1,uint,became_zero,,both,1.000,heartbeat,0,600,400,90,
+life_lost_lives_ff0135,0xFF0135,1,uint,prev_gt_curr,,both,0.92,fade_in_out,0,300,250,80,
+life_gained_lives_ff0135,0xFF0135,1,uint,prev_lt_curr,,both,0.750,fade_in,0,180,200,50,
+score_score_ff013c,0xFF013C,4,bcd,prev_lt_curr,,right,0.350,burst,0,70,15,10,

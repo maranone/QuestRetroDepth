@@ -1,0 +1,8 @@
+game_name=Iridion II (USA) (Code Breaker)
+game_key=iridion_ii_usa_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_02000a01	life_lost	0x02000A01	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02000a01	life_gained	0x02000A01	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_020041a0	damage_taken	0x020041A0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020041a0	death	0x020041A0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

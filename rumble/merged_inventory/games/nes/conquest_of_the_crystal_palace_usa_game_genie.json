@@ -1,0 +1,146 @@
+{
+  "system": "nes",
+  "normalized_title": "conquestofcrystalpalace",
+  "display_name": "Conquest of the Crystal Palace (USA) (Game Genie)",
+  "aliases": [
+    "Conquest of the Crystal Palace (USA) (Game Genie)",
+    "Conquest of the Crystal Palace (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\conquestofthecrystalpalace_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0074",
+        "0x0075",
+        "0x0540"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ConquestOfTheCrystalPalace-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0540",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0074",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0075",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Conquest of the Crystal Palace (USA).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 17,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "KUYEPS",
+          "desc": "Plays Music Only",
+          "address": "0x05B1"
+        },
+        {
+          "code": "KUGAXE",
+          "desc": "Sound Effects Only",
+          "address": "0x0032"
+        },
+        {
+          "code": "0074:03",
+          "desc": "Infinite Lives",
+          "address": "0x0074"
+        },
+        {
+          "code": "0768:FA",
+          "desc": "Invincibility For Farron",
+          "address": "0x0768"
+        },
+        {
+          "code": "0099:01",
+          "desc": "Set Crystal",
+          "address": "0x0099"
+        },
+        {
+          "code": "0079:01",
+          "desc": "Set Jumping Shoes",
+          "address": "0x0079"
+        },
+        {
+          "code": "0076:90",
+          "desc": "Set Infinite Money [9K]",
+          "address": "0x0076"
+        },
+        {
+          "code": "0077:FA",
+          "desc": "Switch F/X On To Levitate Jump",
+          "address": "0x0077"
+        },
+        {
+          "code": "0549:00",
+          "desc": "Defeat Most Enemies/Bosses With 1 Hit #1",
+          "address": "0x0549"
+        },
+        {
+          "code": "054A:00",
+          "desc": "Defeat Most Enemies/Bosses With 1 Hit #2",
+          "address": "0x054A"
+        },
+        {
+          "code": "054B:00",
+          "desc": "Defeat Most Enemies/Bosses With 1 Hit #3",
+          "address": "0x054B"
+        },
+        {
+          "code": "002B:00",
+          "desc": "Stage Select",
+          "address": "0x002B"
+        },
+        {
+          "code": "0074:63",
+          "desc": "Infinite Lives",
+          "address": "0x0074"
+        },
+        {
+          "code": "0540:15",
+          "desc": "Infinite Health Farron (Boy)",
+          "address": "0x0540"
+        },
+        {
+          "code": "0541:2D",
+          "desc": "Infinite Health Zap (Dog)",
+          "address": "0x0541"
+        },
+        {
+          "code": "0076:BF",
+          "desc": "Have Lots of Coins",
+          "address": "0x0076"
+        },
+        {
+          "code": "0076:90",
+          "desc": "Set Infinite Money (9K)",
+          "address": "0x0076"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

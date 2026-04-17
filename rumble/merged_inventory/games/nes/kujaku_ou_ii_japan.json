@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "kujakuouii",
+  "display_name": "Kujaku Ou II (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kujaku Ou II (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "00AB:FF",
+          "desc": "Infinite Magic Power",
+          "address": "0x00AB"
+        },
+        {
+          "code": "0380:FF",
+          "desc": "All Characters Infinite Health",
+          "address": "0x0380"
+        },
+        {
+          "code": "0390:FF",
+          "desc": "All Characters Infinite Health",
+          "address": "0x0390"
+        },
+        {
+          "code": "03A0:FF",
+          "desc": "All Characters Infinite Health",
+          "address": "0x03A0"
+        },
+        {
+          "code": "03B0:FF",
+          "desc": "All Characters Infinite Health",
+          "address": "0x03B0"
+        },
+        {
+          "code": "03C0:00",
+          "desc": "One Hit Kills Enemies",
+          "address": "0x03C0"
+        },
+        {
+          "code": "03C1:00",
+          "desc": "One Hit Kills Enemies",
+          "address": "0x03C1"
+        },
+        {
+          "code": "003B:15",
+          "desc": "Cross River At Mt Koya Without Bridge",
+          "address": "0x003B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

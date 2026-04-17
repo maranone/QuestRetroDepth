@@ -1,0 +1,10 @@
+game_name=WWF Royal Rumble (World) (Action Replay)
+game_key=wwf_royal_rumble_world_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ffcca6	pickup	0xFFCCA6	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffcca8	pickup	0xFFCCA8	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_ffd0c2	damage_taken	0xFFD0C2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffd0c2	death	0xFFD0C2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffd0c4	damage_taken	0xFFD0C4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffd0c4	death	0xFFD0C4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

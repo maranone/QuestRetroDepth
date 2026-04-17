@@ -1,0 +1,82 @@
+{
+  "system": "nes",
+  "normalized_title": "supermariobros3",
+  "display_name": "Super Mario Bros. 3 (World) (Action Replay)",
+  "aliases": [
+    "Super Mario Bros. 3 (Europe)",
+    "Super Mario Bros. 3 (Japan) (Rev 0)",
+    "Super Mario Bros. 3 (Japan) (Rev 1)",
+    "Super Mario Bros. 3 (Rumbles)",
+    "Super Mario Bros. 3 (USA) (Rev 1)",
+    "Super Mario Bros. 3 (USA)",
+    "Super Mario Bros. 3 (World) (Action Replay)",
+    "Super Mario Bros. 3 (World) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\supermariobros3_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0715",
+        "0x0736"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperMarioBros3-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "hpos",
+          "address": "0x0090",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0736",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0715",
+          "type": ">u3"
+        },
+        {
+          "name": "time",
+          "address": "0x0708",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Mario Bros. 3 (World) (Game Genie).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "SLXPLOVS",
+          "desc": "Infinite Lives Mario and Luigi",
+          "address": "0x013B"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Super Mario Bros. 3 (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

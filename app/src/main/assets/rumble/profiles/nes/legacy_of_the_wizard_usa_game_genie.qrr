@@ -1,0 +1,8 @@
+game_name=Legacy of the Wizard (USA) (Game Genie)
+game_key=legacy_of_the_wizard_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_0709	pickup	0x0709	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_070b	pickup	0x070B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_070a	pickup	0x070A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_005a	pickup	0x005A	1	uint	little	prev != curr	0.8	1	right:0.250:18

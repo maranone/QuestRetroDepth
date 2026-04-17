@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "vindicators",
+  "display_name": "Vindicators (USA) (Unl) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Vindicators (USA) (Unl) (Game Genie).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "KLUAGTVI",
+          "desc": "Infinite Lives",
+          "address": "0x063C"
+        },
+        {
+          "code": "GZOEVXON",
+          "desc": "Never Lose Stars",
+          "address": "0x02AE"
+        },
+        {
+          "code": "VVVAAPSA",
+          "desc": "Start With 10 Stars",
+          "address": "0x0168"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

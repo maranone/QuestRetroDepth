@@ -2,5 +2,5 @@
 # game_name=Alcahest
 # match_names=alcahest|alcahestsnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-enemy_defeated_0_1841,0x7E1841,1,uint,changed,,left,0.510,normal,0,100,75,30,
-damage_taken_1_1858,0x7E1858,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
+enemy_defeated_0_1841,0x7E1841,1,uint,changed,,left,0.55,burst,0,100,50,30,
+damage_taken_1_1858,0x7E1858,1,uint,prev_gt_curr,,left,0.78,fade_out,0,180,80,70,

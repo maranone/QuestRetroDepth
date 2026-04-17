@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "snoopyssillysportsspectacular",
+  "display_name": "Snoopy's Silly Sports Spectacular! (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Snoopy's Silly Sports Spectacular! (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0448:FF",
+          "desc": "Infinite Time",
+          "address": "0x0448"
+        },
+        {
+          "code": "0465:00",
+          "desc": "P1 Playing Modifier",
+          "address": "0x0465"
+        },
+        {
+          "code": "0062:00",
+          "desc": "Loss Time",
+          "address": "0x0062"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

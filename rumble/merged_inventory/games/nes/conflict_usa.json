@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "conflict",
+  "display_name": "Conflict (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Conflict (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0038:0F",
+          "desc": "P1 Infinite Energy",
+          "address": "0x0038"
+        },
+        {
+          "code": "0039:00",
+          "desc": "One Hit Kills",
+          "address": "0x0039"
+        },
+        {
+          "code": "0058:0A",
+          "desc": "Infinite Weapons",
+          "address": "0x0058"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

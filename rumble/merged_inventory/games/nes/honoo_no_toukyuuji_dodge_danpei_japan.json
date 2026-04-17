@@ -1,0 +1,100 @@
+{
+  "system": "nes",
+  "normalized_title": "honoonotoukyuujidodgedanpei",
+  "display_name": "Honoo no Toukyuuji - Dodge Danpei (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Honoo no Toukyuuji - Dodge Danpei (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 16,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "0334:00",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x0334"
+        },
+        {
+          "code": "0335:00",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x0335"
+        },
+        {
+          "code": "031C:63",
+          "desc": "Max Strength (Team 1)",
+          "address": "0x031C"
+        },
+        {
+          "code": "031D:63",
+          "desc": "Max Strength (Team 1)",
+          "address": "0x031D"
+        },
+        {
+          "code": "031E:63",
+          "desc": "Max Strength (Team 1)",
+          "address": "0x031E"
+        },
+        {
+          "code": "032F:63",
+          "desc": "Max Strength (Team 1)",
+          "address": "0x032F"
+        },
+        {
+          "code": "0320:63",
+          "desc": "Max Strength (Team 1)",
+          "address": "0x0320"
+        },
+        {
+          "code": "0321:63",
+          "desc": "Max Strength (Team 1)",
+          "address": "0x0321"
+        },
+        {
+          "code": "0322:63",
+          "desc": "Max Strength (Team 1)",
+          "address": "0x0322"
+        },
+        {
+          "code": "0323:00",
+          "desc": "Zero Strength (Team 2)",
+          "address": "0x0323"
+        },
+        {
+          "code": "0324:00",
+          "desc": "Zero Strength (Team 2)",
+          "address": "0x0324"
+        },
+        {
+          "code": "0325:00",
+          "desc": "Zero Strength (Team 2)",
+          "address": "0x0325"
+        },
+        {
+          "code": "0326:00",
+          "desc": "Zero Strength (Team 2)",
+          "address": "0x0326"
+        },
+        {
+          "code": "0327:00",
+          "desc": "Zero Strength (Team 2)",
+          "address": "0x0327"
+        },
+        {
+          "code": "0328:00",
+          "desc": "Zero Strength (Team 2)",
+          "address": "0x0328"
+        },
+        {
+          "code": "0329:00",
+          "desc": "Zero Strength (Team 2)",
+          "address": "0x0329"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

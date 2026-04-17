@@ -1,0 +1,72 @@
+{
+  "system": "pce",
+  "normalized_title": "dragonegg",
+  "display_name": "Dragon Egg (Rumbles)",
+  "aliases": [
+    "Dragon Egg! (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Dragon Egg! (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "1f0365:04",
+          "desc": "Infinite Energy",
+          "address": "0x1F0365"
+        },
+        {
+          "code": "1f18b8:03",
+          "desc": "Infinite Lives",
+          "address": "0x1F18B8"
+        },
+        {
+          "code": "1f1665:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F1665"
+        },
+        {
+          "code": "1f0367:00",
+          "desc": "Easy boss Kill",
+          "address": "0x1F0367"
+        },
+        {
+          "code": "1f16d1:04",
+          "desc": "Have 4 Cure Jars",
+          "address": "0x1F16D1"
+        },
+        {
+          "code": "1f16cd:01",
+          "desc": "Have Barrier",
+          "address": "0x1F16CD"
+        },
+        {
+          "code": "1f16d2:01",
+          "desc": "Have Skull",
+          "address": "0x1F16D2"
+        },
+        {
+          "code": "1f16ce:02",
+          "desc": "Max Strength Up",
+          "address": "0x1F16CE"
+        },
+        {
+          "code": "1f16cf:02",
+          "desc": "Max Dragon Up",
+          "address": "0x1F16CF"
+        },
+        {
+          "code": "1f16d0:02",
+          "desc": "Max Life Up",
+          "address": "0x1F16D0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

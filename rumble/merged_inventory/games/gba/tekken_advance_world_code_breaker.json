@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "tekkenadvance",
+  "display_name": "Tekken Advance (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Tekken Advance (World) (Code Breaker).cht",
+      "total_cheat_rows": 50,
+      "raw_entry_count": 69,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "100008CA",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020008CA"
+        },
+        {
+          "code": "83002414",
+          "desc": "Always Low Overall Time",
+          "address": "0x02002414"
+        },
+        {
+          "code": "83002442",
+          "desc": "Infinite Time",
+          "address": "0x02002442"
+        },
+        {
+          "code": "830047A2",
+          "desc": "Infinite Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "730047A2",
+          "desc": "75% Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "830047A2",
+          "desc": "75% Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "730047A2",
+          "desc": "50% Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "830047A2",
+          "desc": "50% Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "730047A2",
+          "desc": "25% Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "830047A2",
+          "desc": "25% Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "730047A2",
+          "desc": "1-Hit Death P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "830047A2",
+          "desc": "1-Hit Death P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "830047A2",
+          "desc": "No Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "3300244E",
+          "desc": "P1 Always Wins",
+          "address": "0x0200244E"
+        },
+        {
+          "code": "7300244E",
+          "desc": "P1 Needs 1 Win To Win",
+          "address": "0x0200244E"
+        },
+        {
+          "code": "3300244E",
+          "desc": "P1 Needs 1 Win To Win",
+          "address": "0x0200244E"
+        },
+        {
+          "code": "3300244E",
+          "desc": "P1 Never Wins",
+          "address": "0x0200244E"
+        },
+        {
+          "code": "83005852",
+          "desc": "Infinite Health P2",
+          "address": "0x02005852"
+        },
+        {
+          "code": "73005852",
+          "desc": "75% Health P2",
+          "address": "0x02005852"
+        },
+        {
+          "code": "83005852",
+          "desc": "75% Health P2",
+          "address": "0x02005852"
+        },
+        {
+          "code": "73005852",
+          "desc": "50% Health P2",
+          "address": "0x02005852"
+        },
+        {
+          "code": "83005852",
+          "desc": "50% Health P2",
+          "address": "0x02005852"
+        },
+        {
+          "code": "73005852",
+          "desc": "25% Health P2",
+          "address": "0x02005852"
+        },
+        {
+          "code": "83005852",
+          "desc": "25% Health P2",
+          "address": "0x02005852"
+        },
+        {
+          "code": "73005852",
+          "desc": "1-Hit Death P2",
+          "address": "0x02005852"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Tekken Advance (World) (Code Breaker).cht",
+      "total_cheat_rows": 50,
+      "raw_entry_count": 69,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "100008CA",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020008CA"
+        },
+        {
+          "code": "83002414",
+          "desc": "Always Low Overall Time",
+          "address": "0x02002414"
+        },
+        {
+          "code": "83002442",
+          "desc": "Infinite Time",
+          "address": "0x02002442"
+        },
+        {
+          "code": "830047A2",
+          "desc": "Infinite Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "730047A2",
+          "desc": "75% Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "830047A2",
+          "desc": "75% Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "730047A2",
+          "desc": "50% Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "830047A2",
+          "desc": "50% Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "730047A2",
+          "desc": "25% Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "830047A2",
+          "desc": "25% Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "730047A2",
+          "desc": "1-Hit Death P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "830047A2",
+          "desc": "1-Hit Death P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "830047A2",
+          "desc": "No Health P1",
+          "address": "0x020047A2"
+        },
+        {
+          "code": "3300244E",
+          "desc": "P1 Always Wins",
+          "address": "0x0200244E"
+        },
+        {
+          "code": "7300244E",
+          "desc": "P1 Needs 1 Win To Win",
+          "address": "0x0200244E"
+        },
+        {
+          "code": "3300244E",
+          "desc": "P1 Needs 1 Win To Win",
+          "address": "0x0200244E"
+        },
+        {
+          "code": "3300244E",
+          "desc": "P1 Never Wins",
+          "address": "0x0200244E"
+        },
+        {
+          "code": "83005852",
+          "desc": "Infinite Health P2",
+          "address": "0x02005852"
+        },
+        {
+          "code": "73005852",
+          "desc": "75% Health P2",
+          "address": "0x02005852"
+        },
+        {
+          "code": "83005852",
+          "desc": "75% Health P2",
+          "address": "0x02005852"
+        },
+        {
+          "code": "73005852",
+          "desc": "50% Health P2",
+          "address": "0x02005852"
+        },
+        {
+          "code": "83005852",
+          "desc": "50% Health P2",
+          "address": "0x02005852"
+        },
+        {
+          "code": "73005852",
+          "desc": "25% Health P2",
+          "address": "0x02005852"
+        },
+        {
+          "code": "83005852",
+          "desc": "25% Health P2",
+          "address": "0x02005852"
+        },
+        {
+          "code": "73005852",
+          "desc": "1-Hit Death P2",
+          "address": "0x02005852"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "spidermanmysteriosmenace",
+  "display_name": "Spider-Man - Mysterio's Menace (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Spider-Man - Mysterio's Menace (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10004100",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02004100"
+        },
+        {
+          "code": "8200317C",
+          "desc": "Infinite Web Cartridges",
+          "address": "0x0200317C"
+        },
+        {
+          "code": "82003184",
+          "desc": "Infinite Web Meter",
+          "address": "0x02003184"
+        },
+        {
+          "code": "82003158",
+          "desc": "Infinite Health",
+          "address": "0x02003158"
+        },
+        {
+          "code": "820000B8",
+          "desc": "Infinite Lives",
+          "address": "0x020000B8"
+        },
+        {
+          "code": "32003178",
+          "desc": "Have Armor Suit",
+          "address": "0x02003178"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Spider-Man - Mysterio's Menace (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10004100",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02004100"
+        },
+        {
+          "code": "8200317C",
+          "desc": "Infinite Web Cartridges",
+          "address": "0x0200317C"
+        },
+        {
+          "code": "82003184",
+          "desc": "Infinite Web Meter",
+          "address": "0x02003184"
+        },
+        {
+          "code": "82003158",
+          "desc": "Infinite Health",
+          "address": "0x02003158"
+        },
+        {
+          "code": "820000B8",
+          "desc": "Infinite Lives",
+          "address": "0x020000B8"
+        },
+        {
+          "code": "32003178",
+          "desc": "Have Armor Suit",
+          "address": "0x02003178"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

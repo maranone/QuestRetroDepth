@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "froggersadventures2lostwand",
+  "display_name": "Frogger's Adventures 2 - The Lost Wand (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Frogger's Adventures 2 - The Lost Wand (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1000B0A0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200B0A0"
+        },
+        {
+          "code": "830036AC",
+          "desc": "Infinite Lives",
+          "address": "0x020036AC"
+        },
+        {
+          "code": "820036AC",
+          "desc": "Have 19 Crystal Droplets",
+          "address": "0x020036AC"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Frogger's Adventures 2 - The Lost Wand (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1000B0A0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200B0A0"
+        },
+        {
+          "code": "830036AC",
+          "desc": "Infinite Lives",
+          "address": "0x020036AC"
+        },
+        {
+          "code": "820036AC",
+          "desc": "Have 19 Crystal Droplets",
+          "address": "0x020036AC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

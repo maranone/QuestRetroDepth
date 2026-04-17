@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "exerion2",
+  "display_name": "Exerion 2",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Exerion 2.cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "LVEAIZZL",
+          "desc": "Start With 99 Rapid Shots",
+          "address": "0x026D"
+        },
+        {
+          "code": "SXVENYSA",
+          "desc": "Infinite Rapid Shots",
+          "address": "0x07AF"
+        },
+        {
+          "code": "SLOEXLSP",
+          "desc": "Infinite Lives",
+          "address": "0x03BA"
+        },
+        {
+          "code": "PEEAGZLE",
+          "desc": "Start With 9 Lives",
+          "address": "0x020C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Gekitotsu Yonku Battle (Japan)
+game_key=gekitotsu_yonku_battle_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0071	damage_taken	0x0071	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0071	death	0x0071	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_00b0	level_complete	0x00B0	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

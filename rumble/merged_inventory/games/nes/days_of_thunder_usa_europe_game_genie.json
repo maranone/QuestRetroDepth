@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "daysofthunder",
+  "display_name": "Days of Thunder (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Days of Thunder (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Days of Thunder (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "AAVOEXNY",
+          "desc": "Tires Don't Burst",
+          "address": "0x0288"
+        },
+        {
+          "code": "SNXOSKEY",
+          "desc": "Better Left-Hand Cornering",
+          "address": "0x04FD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

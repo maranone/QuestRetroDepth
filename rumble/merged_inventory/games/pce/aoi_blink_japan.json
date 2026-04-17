@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "aoiblink",
+  "display_name": "Aoi Blink (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Aoi Blink (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f1c53:48",
+          "desc": "Infinite Energy",
+          "address": "0x1F1C53"
+        },
+        {
+          "code": "1f1c47:03",
+          "desc": "Infinite Lives",
+          "address": "0x1F1C47"
+        },
+        {
+          "code": "1f0f12:01",
+          "desc": "Invincibility",
+          "address": "0x1F0F12"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

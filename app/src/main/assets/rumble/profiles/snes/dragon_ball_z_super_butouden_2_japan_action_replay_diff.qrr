@@ -1,0 +1,36 @@
+game_name=Dragon Ball Z - Super Butouden 2 (Japan) (Action Replay) (diff)
+game_key=dragon_ball_z_super_butouden_2_japan_action_replay_diff
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_0563	damage_taken	0x7E0563	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0563	death	0x7E0563	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0c88	damage_taken	0x7E0C88	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0c88	death	0x7E0C88	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0c89	damage_taken	0x7E0C89	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0c89	death	0x7E0C89	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0c8a	damage_taken	0x7E0C8A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0c8a	death	0x7E0C8A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0c8c	damage_taken	0x7E0C8C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0c8c	death	0x7E0C8C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0c8d	damage_taken	0x7E0C8D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0c8d	death	0x7E0C8D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0c8e	damage_taken	0x7E0C8E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0c8e	death	0x7E0C8E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0c86	damage_taken	0x7E0C86	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0c86	death	0x7E0C86	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0cac	damage_taken	0x7E0CAC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0cac	death	0x7E0CAC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0cad	damage_taken	0x7E0CAD	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0cad	death	0x7E0CAD	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0cae	damage_taken	0x7E0CAE	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0cae	death	0x7E0CAE	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0cb0	damage_taken	0x7E0CB0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0cb0	death	0x7E0CB0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0cb1	damage_taken	0x7E0CB1	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0cb1	death	0x7E0CB1	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0cb2	damage_taken	0x7E0CB2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0cb2	death	0x7E0CB2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0caa	damage_taken	0x7E0CAA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0caa	death	0x7E0CAA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0cab	damage_taken	0x7E0CAB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0cab	death	0x7E0CAB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

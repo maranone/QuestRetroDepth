@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "dracsnightout",
+  "display_name": "Drac's Night Out (USA) (Proto)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Drac's Night Out (USA) (Proto).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "03C4:00",
+          "desc": "Freeze Time",
+          "address": "0x03C4"
+        },
+        {
+          "code": "03C2:0F",
+          "desc": "Infinite Blood",
+          "address": "0x03C2"
+        },
+        {
+          "code": "03C2:60",
+          "desc": "Infinite Blood",
+          "address": "0x03C2"
+        },
+        {
+          "code": "03C4:00",
+          "desc": "Infinite Time",
+          "address": "0x03C4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

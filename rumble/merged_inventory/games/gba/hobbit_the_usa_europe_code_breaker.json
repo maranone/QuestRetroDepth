@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "hobbit",
+  "display_name": "Hobbit, The (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Hobbit, The (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "33004B58",
+          "desc": "Always Invisible",
+          "address": "0x02004B58"
+        },
+        {
+          "code": "33004AC4",
+          "desc": "Infinite Health",
+          "address": "0x02004AC4"
+        },
+        {
+          "code": "33004BAC",
+          "desc": "Max HP",
+          "address": "0x02004BAC"
+        },
+        {
+          "code": "33005ACC",
+          "desc": "Infinite Lives",
+          "address": "0x02005ACC"
+        },
+        {
+          "code": "33004B78",
+          "desc": "Infinite Keys",
+          "address": "0x02004B78"
+        },
+        {
+          "code": "43004AE0",
+          "desc": "Have Max All Items",
+          "address": "0x02004AE0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Hobbit, The (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "33004B58",
+          "desc": "Always Invisible",
+          "address": "0x02004B58"
+        },
+        {
+          "code": "33004AC4",
+          "desc": "Infinite Health",
+          "address": "0x02004AC4"
+        },
+        {
+          "code": "33004BAC",
+          "desc": "Max HP",
+          "address": "0x02004BAC"
+        },
+        {
+          "code": "33005ACC",
+          "desc": "Infinite Lives",
+          "address": "0x02005ACC"
+        },
+        {
+          "code": "33004B78",
+          "desc": "Infinite Keys",
+          "address": "0x02004B78"
+        },
+        {
+          "code": "43004AE0",
+          "desc": "Have Max All Items",
+          "address": "0x02004AE0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

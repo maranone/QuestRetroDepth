@@ -1,0 +1,103 @@
+{
+  "system": "gba",
+  "normalized_title": "supermarioadvance3yoshisisland",
+  "display_name": "Super Mario Advance 3 - Yoshi's Island (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Super Mario Advance 3 - Yoshi's Island (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 14,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "10002300",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002300"
+        },
+        {
+          "code": "8300628A",
+          "desc": "Have all items",
+          "address": "0x0200628A"
+        },
+        {
+          "code": "8300628C",
+          "desc": "Have all items",
+          "address": "0x0200628C"
+        },
+        {
+          "code": "8300628E",
+          "desc": "Have all items",
+          "address": "0x0200628E"
+        },
+        {
+          "code": "83006290",
+          "desc": "Have all items",
+          "address": "0x02006290"
+        },
+        {
+          "code": "33006292",
+          "desc": "Have all items",
+          "address": "0x02006292"
+        },
+        {
+          "code": "73006DD0",
+          "desc": "Infinite Flutter",
+          "address": "0x02006DD0"
+        },
+        {
+          "code": "83006DD0",
+          "desc": "Infinite Flutter",
+          "address": "0x02006DD0"
+        },
+        {
+          "code": "74000130",
+          "desc": "Moon Jump",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33006D8C",
+          "desc": "Moon Jump",
+          "address": "0x02006D8C"
+        },
+        {
+          "code": "73006B04",
+          "desc": "Red Coins 20/20",
+          "address": "0x02006B04"
+        },
+        {
+          "code": "33006AD6",
+          "desc": "Red Coins 20/20",
+          "address": "0x02006AD6"
+        },
+        {
+          "code": "73006F2A",
+          "desc": "Stop Countdown",
+          "address": "0x02006F2A"
+        },
+        {
+          "code": "83006F2A",
+          "desc": "Stop Countdown",
+          "address": "0x02006F2A"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Super Mario Advance 3 - Yoshi's Island (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "10002300",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002300"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

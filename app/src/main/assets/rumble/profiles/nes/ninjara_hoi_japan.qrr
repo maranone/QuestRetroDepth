@@ -1,0 +1,6 @@
+game_name=Ninjara Hoi! (Japan)
+game_key=ninjara_hoi_japan
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_005b	pickup	0x005B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_005c	pickup	0x005C	1	uint	little	prev != curr	0.8	1	right:0.250:18

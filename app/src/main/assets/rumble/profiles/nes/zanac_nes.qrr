@@ -1,0 +1,7 @@
+game_name=Zanac (USA) (Game Genie)
+game_key=Zanac-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_0032	life_lost	0x0032	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0032	life_gained	0x0032	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_017a	score	0x017A	8	nibble	big	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,110 @@
+{
+  "system": "nes",
+  "normalized_title": "bubblebobble",
+  "display_name": "Bubble Bobble (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Bubble Bobble (Rumbles)",
+    "Bubble Bobble (USA)",
+    "Bubble Bobble (USA, Europe) (Action Replay)",
+    "Bubble Bobble (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\bubblebobble_nes.json",
+      "trigger_count": 4,
+      "field_names": [
+        "level",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x002E",
+        "0x0038",
+        "0x0401"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BubbleBobble-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "enemies",
+          "address": "0x0496",
+          "type": "|u1"
+        },
+        {
+          "name": "level",
+          "address": "0x0401",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x002E",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0038",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bubble Bobble (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 33,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "ZANEAGPA",
+          "desc": "Monsters Move Faster",
+          "address": "0x0488"
+        },
+        {
+          "code": "NNEEAKVN",
+          "desc": "Monsters Move Faster",
+          "address": "0x04F8"
+        },
+        {
+          "code": "LANEAGPA",
+          "desc": "Monsters Move Super Fast",
+          "address": "0x0488"
+        },
+        {
+          "code": "NNEEAKSN",
+          "desc": "Monsters Move Super Fast",
+          "address": "0x04F8"
+        },
+        {
+          "code": "LANEIGZA",
+          "desc": "Angry Monsters Move Faster",
+          "address": "0x048D"
+        },
+        {
+          "code": "SNEEIKVN",
+          "desc": "Angry Monsters Move Faster",
+          "address": "0x04FD"
+        },
+        {
+          "code": "LUNAAA",
+          "desc": "When You Kill The Last Enemy, You'll Skip 2 Stages",
+          "address": "0x0038"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Bubble Bobble (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

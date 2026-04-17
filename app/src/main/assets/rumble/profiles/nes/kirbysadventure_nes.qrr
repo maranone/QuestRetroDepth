@@ -1,0 +1,7 @@
+game_name=Kirby's Adventure (USA, Europe) (Game Genie)
+game_key=KirbysAdventure-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_0599	life_lost	0x0599	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0599	life_gained	0x0599	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0593	score	0x0593	3	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,8 @@
+game_name=Lone Ranger, The (USA) (Game Genie)
+game_key=lone_ranger_the_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_0050	pickup	0x0050	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_005f	damage_taken	0x005F	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_005f	death	0x005F	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_0684	enemy_defeated	0x0684	1	uint	little	prev > curr	0.65	1	right:0.450:35

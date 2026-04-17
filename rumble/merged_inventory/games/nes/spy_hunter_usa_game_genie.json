@@ -1,0 +1,177 @@
+{
+  "system": "nes",
+  "normalized_title": "spyhunter",
+  "display_name": "Spy Hunter (USA) (Game Genie)",
+  "aliases": [
+    "Spy Hunter (USA) (Game Genie)",
+    "Spy Hunter (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\spyhunter_nes.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0x0123"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SpyHunter-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "score",
+          "address": "0x0123",
+          "type": ">n6"
+        },
+        {
+          "name": "time",
+          "address": "0x011B",
+          "type": ">n3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Spy Hunter (USA).cht",
+      "total_cheat_rows": 56,
+      "raw_entry_count": 43,
+      "distinct_address_count": 36,
+      "sample_raw_entries": [
+        {
+          "code": "PEAEEP",
+          "desc": "Everything Moves A Lot Faster Than Normal",
+          "address": "0x0180"
+        },
+        {
+          "code": "PIGPUT",
+          "desc": "All Of The Cars Try To Avoid You",
+          "address": "0x0653"
+        },
+        {
+          "code": "VZPPKG",
+          "desc": "Other Cars Go Very Fast",
+          "address": "0x0424"
+        },
+        {
+          "code": "PEAEEP",
+          "desc": "Game Is Speed Up",
+          "address": "0x0180"
+        },
+        {
+          "code": "POPPIT",
+          "desc": "Can't Turn Your Car To The Left",
+          "address": "0x0615"
+        },
+        {
+          "code": "SOIOSO",
+          "desc": "No Cars Appear At The Beginning, Including Yours",
+          "address": "0x0195"
+        },
+        {
+          "code": "PIPOPO",
+          "desc": "Puddles Appear When You Fire",
+          "address": "0x01D1"
+        },
+        {
+          "code": "PIPOPP",
+          "desc": "Strange",
+          "address": "0x01D1"
+        },
+        {
+          "code": "PIPOPV",
+          "desc": "Your Car Does Weird Stuff When Near The Truck",
+          "address": "0x06D1"
+        },
+        {
+          "code": "SVZEAG",
+          "desc": "Your Car Occasionally Teleports Up",
+          "address": "0x04E0"
+        },
+        {
+          "code": "KXGPLY",
+          "desc": "Game Freezes When You Fire",
+          "address": "0x0723"
+        },
+        {
+          "code": "OPPOPP",
+          "desc": "Odd Crashes",
+          "address": "0x0191"
+        },
+        {
+          "code": "APPOPP",
+          "desc": "Odd Crashes",
+          "address": "0x0191"
+        },
+        {
+          "code": "AAAAAA",
+          "desc": "Changes Background Graphics",
+          "address": "0x0000"
+        },
+        {
+          "code": "PEIPOZ",
+          "desc": "Crash",
+          "address": "0x0201"
+        },
+        {
+          "code": "SPPPEA",
+          "desc": "No Gun",
+          "address": "0x0010"
+        },
+        {
+          "code": "TTPEAK",
+          "desc": "Weird Car Crashes",
+          "address": "0x04E0"
+        },
+        {
+          "code": "KIIOOZ",
+          "desc": "No Other Cars Then You And Weapon Vans",
+          "address": "0x02D1"
+        },
+        {
+          "code": "YKPOOZ",
+          "desc": "No Good Guy Cars And Boats Other Then Trucks",
+          "address": "0x02C1"
+        },
+        {
+          "code": "SXKAYOVK",
+          "desc": "Infinite lives",
+          "address": "0x012F"
+        },
+        {
+          "code": "GXSAKUSE",
+          "desc": "Keep special weapons",
+          "address": "0x032C"
+        },
+        {
+          "code": "GXSANUSE",
+          "desc": "Keep special weapons",
+          "address": "0x032F"
+        },
+        {
+          "code": "SXVPEZSA",
+          "desc": "Infinite Health",
+          "address": "0x0228"
+        },
+        {
+          "code": "AEVOSIGZ",
+          "desc": "Hit Anywhere",
+          "address": "0x058D"
+        },
+        {
+          "code": "AENOKIIP",
+          "desc": "Hit Anywhere",
+          "address": "0x058C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

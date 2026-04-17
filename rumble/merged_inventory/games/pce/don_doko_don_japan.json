@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "dondokodon",
+  "display_name": "Don Doko Don! (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Don Doko Don! (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f1955:03",
+          "desc": "Infinite Lives",
+          "address": "0x1F1955"
+        },
+        {
+          "code": "1f0528:01",
+          "desc": "Invincibility",
+          "address": "0x1F0528"
+        },
+        {
+          "code": "1f0021:09",
+          "desc": "Infinite Credits",
+          "address": "0x1F0021"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

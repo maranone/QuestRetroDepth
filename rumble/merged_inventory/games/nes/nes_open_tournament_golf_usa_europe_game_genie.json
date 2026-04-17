@@ -1,0 +1,27 @@
+{
+  "system": "nes",
+  "normalized_title": "nesopentournamentgolf",
+  "display_name": "NES Open Tournament Golf (USA, Europe) (Game Genie)",
+  "aliases": [
+    "NES Open Tournament Golf (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\NES Open Tournament Golf (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "PEUAGVSP",
+          "desc": "Always On 1st Shot (P1)",
+          "address": "0x060C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

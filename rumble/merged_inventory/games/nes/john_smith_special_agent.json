@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "johnsmithspecialagent",
+  "display_name": "John Smith Special Agent ",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\John Smith Special Agent .cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "SZEOVVVK",
+          "desc": "Infinite jet pack",
+          "address": "0x06AE"
+        },
+        {
+          "code": "SZSPONVK",
+          "desc": "Infinite Air scuba mode",
+          "address": "0x0729"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

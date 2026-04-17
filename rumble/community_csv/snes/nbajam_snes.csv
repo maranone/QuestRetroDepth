@@ -2,5 +2,5 @@
 # game_name=NBAJam
 # match_names=nbajam|nbajamsnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-score_0_ca9,0x7E0CA9,1,uint,prev_lt_curr,,left,0.300,normal,0,80,50,10,
-score_1_caf,0x7E0CAF,1,uint,prev_lt_curr,,left,0.300,normal,0,80,50,10,
+score_0_ca9,0x7E0CA9,1,uint,prev_lt_curr,,left,0.35,burst,0,80,15,10,
+score_1_caf,0x7E0CAF,1,uint,prev_lt_curr,,left,0.35,burst,0,80,15,10,

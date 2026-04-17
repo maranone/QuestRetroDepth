@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "columnscrown",
+  "display_name": "Columns Crown (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Columns Crown (World) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10006E1A",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02006E1A"
+        },
+        {
+          "code": "33003DDF",
+          "desc": "Level Modifier-Flash (00-62)",
+          "address": "0x02003DDF"
+        },
+        {
+          "code": "33003DDF",
+          "desc": "Challenge Stage-Flash",
+          "address": "0x02003DDF"
+        },
+        {
+          "code": "43002A40",
+          "desc": "Have 5 Of All Magic Gems",
+          "address": "0x02002A40"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Columns Crown (World) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10006E1A",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02006E1A"
+        },
+        {
+          "code": "33003DDF",
+          "desc": "Level Modifier-Flash (00-62)",
+          "address": "0x02003DDF"
+        },
+        {
+          "code": "33003DDF",
+          "desc": "Challenge Stage-Flash",
+          "address": "0x02003DDF"
+        },
+        {
+          "code": "43002A40",
+          "desc": "Have 5 Of All Magic Gems",
+          "address": "0x02002A40"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

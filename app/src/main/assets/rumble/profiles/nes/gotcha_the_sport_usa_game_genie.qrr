@@ -1,0 +1,14 @@
+game_name=Gotcha! - The Sport! (USA) (Game Genie)
+game_key=gotcha_the_sport_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_008c	pickup	0x008C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	score_score_0601	score	0x0601	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0602	score	0x0602	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0603	score	0x0603	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0604	score	0x0604	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0605	score	0x0605	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0606	score	0x0606	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	pickup_coins_061a	pickup	0x061A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_061b	pickup	0x061B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_05f1	enemy_defeated	0x05F1	1	uint	little	prev > curr	0.65	1	right:0.450:35

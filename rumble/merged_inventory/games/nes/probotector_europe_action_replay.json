@@ -1,0 +1,38 @@
+{
+  "system": "nes",
+  "normalized_title": "probotector",
+  "display_name": "Probotector (Europe) (Action Replay)",
+  "aliases": [
+    "Probotector (Europe) (Game Genie)",
+    "Probotector (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Probotector (Europe).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "00AE:41",
+          "desc": "Totally Invincible P1",
+          "address": "0x00AE"
+        },
+        {
+          "code": "0032:00",
+          "desc": "Lives Mod P1",
+          "address": "0x0032"
+        },
+        {
+          "code": "00AA:00",
+          "desc": "Weapon Mod",
+          "address": "0x00AA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

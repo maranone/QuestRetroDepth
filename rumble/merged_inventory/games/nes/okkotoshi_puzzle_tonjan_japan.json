@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "okkotoshipuzzletonjan",
+  "display_name": "Okkotoshi Puzzle - Tonjan! (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Okkotoshi Puzzle - Tonjan! (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "048B:03",
+          "desc": "Infinite Lives",
+          "address": "0x048B"
+        },
+        {
+          "code": "041D:01",
+          "desc": "Infinite Drop Tiles",
+          "address": "0x041D"
+        },
+        {
+          "code": "04F1:01",
+          "desc": "Clear One Goal Tile To Win",
+          "address": "0x04F1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

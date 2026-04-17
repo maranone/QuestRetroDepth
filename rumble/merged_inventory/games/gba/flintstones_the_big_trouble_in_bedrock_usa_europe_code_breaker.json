@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "flintstonesbigtroubleinbedrock",
+  "display_name": "Flintstones, The - Big Trouble in Bedrock (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Flintstones, The - Big Trouble in Bedrock (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10000260",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000260"
+        },
+        {
+          "code": "330040B8",
+          "desc": "Infinite Lives",
+          "address": "0x020040B8"
+        },
+        {
+          "code": "330040C8",
+          "desc": "Infinite Health",
+          "address": "0x020040C8"
+        },
+        {
+          "code": "330040C4",
+          "desc": "Max Health",
+          "address": "0x020040C4"
+        },
+        {
+          "code": "330040C0",
+          "desc": "Infinite Clams",
+          "address": "0x020040C0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Flintstones, The - Big Trouble in Bedrock (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10000260",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000260"
+        },
+        {
+          "code": "330040B8",
+          "desc": "Infinite Lives",
+          "address": "0x020040B8"
+        },
+        {
+          "code": "330040C8",
+          "desc": "Infinite Health",
+          "address": "0x020040C8"
+        },
+        {
+          "code": "330040C4",
+          "desc": "Max Health",
+          "address": "0x020040C4"
+        },
+        {
+          "code": "330040C0",
+          "desc": "Infinite Clams",
+          "address": "0x020040C0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "system": "gb",
+  "normalized_title": "bramstokersdracula",
+  "display_name": "Bram Stoker's Dracula (USA, Europe) (GameShark)",
+  "aliases": [
+    "Bram Stoker's Dracula (USA, Europe) (Xploder)",
+    "Bram Stoker's Dracula (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Bram Stoker's Dracula (USA, Europe).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0102D8C6",
+          "desc": "Invincibility",
+          "address": "0xD8C6"
+        },
+        {
+          "code": "010FDEC6",
+          "desc": "Infinite Ammo",
+          "address": "0xDEC6"
+        },
+        {
+          "code": "01FFDFC0",
+          "desc": "Complete Any Level",
+          "address": "0xDFC0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "tabostactics",
+  "display_name": "Tabo's Tactics",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tabo's Tactics.cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "056D:30",
+          "desc": "Infinite Time",
+          "address": "0x056D"
+        },
+        {
+          "code": "00AD:09",
+          "desc": "Infinite Lives",
+          "address": "0x00AD"
+        },
+        {
+          "code": "02D6:00",
+          "desc": "Level Modifier Card Game",
+          "address": "0x02D6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

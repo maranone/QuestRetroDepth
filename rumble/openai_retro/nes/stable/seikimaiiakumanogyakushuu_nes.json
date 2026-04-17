@@ -1,0 +1,57 @@
+{
+  "schema": "qrd.rumble.nes.v1",
+  "game": {
+    "name": "SeikimaIIAkumaNoGyakushuu",
+    "system": "nes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\SeikimaIIAkumaNoGyakushuu-Nes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "SeikimaIIAkumaNoGyakushuu-Nes"
+  },
+  "triggers": [
+    {
+      "id": "score_score_000f",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x000F",
+          "size": 7,
+          "value_type": "nibble",
+          "byte_order": "big",
+          "raw_type": ">n7",
+          "address": "0x000F",
+          "ram_offset": 15
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0x000F",
+          "raw_type": ">n7"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "life",
+      "meta": {
+        "address": 52,
+        "type": ">n4"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

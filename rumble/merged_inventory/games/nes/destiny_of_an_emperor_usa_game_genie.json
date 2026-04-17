@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "destinyofemperor",
+  "display_name": "Destiny of an Emperor (USA) (Game Genie)",
+  "aliases": [
+    "Destiny of an Emperor (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Destiny of an Emperor (USA).cht",
+      "total_cheat_rows": 79,
+      "raw_entry_count": 57,
+      "distinct_address_count": 50,
+      "sample_raw_entries": [
+        {
+          "code": "00EC:00",
+          "desc": "Enemy 1 Health",
+          "address": "0x00EC"
+        },
+        {
+          "code": "00F0:00",
+          "desc": "Enemy 2 Health",
+          "address": "0x00F0"
+        },
+        {
+          "code": "00F4:00",
+          "desc": "Enemy 3 Health",
+          "address": "0x00F4"
+        },
+        {
+          "code": "00F8:00",
+          "desc": "Enemy 4 Health",
+          "address": "0x00F8"
+        },
+        {
+          "code": "00FC:00",
+          "desc": "Enemy 5 Health",
+          "address": "0x00FC"
+        },
+        {
+          "code": "00D0:FF",
+          "desc": "Ally 1 Health",
+          "address": "0x00D0"
+        },
+        {
+          "code": "00D4:FF",
+          "desc": "Ally 2 Health",
+          "address": "0x00D4"
+        },
+        {
+          "code": "00D8:FF",
+          "desc": "Ally 3 Health",
+          "address": "0x00D8"
+        },
+        {
+          "code": "00DC:FF",
+          "desc": "Ally 4 Health",
+          "address": "0x00DC"
+        },
+        {
+          "code": "00E0:FF",
+          "desc": "Ally 5 Health",
+          "address": "0x00E0"
+        },
+        {
+          "code": "0076:00",
+          "desc": "Money",
+          "address": "0x0076"
+        },
+        {
+          "code": "0079:00",
+          "desc": "Food",
+          "address": "0x0079"
+        },
+        {
+          "code": "0011:01",
+          "desc": "No Random Battles",
+          "address": "0x0011"
+        },
+        {
+          "code": "6071:FF",
+          "desc": "65535 Experience Points For Each Battle Won",
+          "address": "0x6071"
+        },
+        {
+          "code": "6110:01",
+          "desc": "Item Modification Slot - 1st Character",
+          "address": "0x6110"
+        },
+        {
+          "code": "6100:00",
+          "desc": "Item Modification Slot - 2nd Character",
+          "address": "0x6100"
+        },
+        {
+          "code": "6108:00",
+          "desc": "Item Modification Slot - 3rd Character",
+          "address": "0x6108"
+        },
+        {
+          "code": "6118:00",
+          "desc": "Item Modification Slot - 4th Character",
+          "address": "0x6118"
+        },
+        {
+          "code": "6120:00",
+          "desc": "Item Modification Slot - 5th Character",
+          "address": "0x6120"
+        },
+        {
+          "code": "6128:00",
+          "desc": "Item Modification Slot - 6th Character",
+          "address": "0x6128"
+        },
+        {
+          "code": "008A:40",
+          "desc": "Smoke Pot Always On",
+          "address": "0x008A"
+        },
+        {
+          "code": "AEKPLZLA",
+          "desc": "Buy 3,000 Provisions [Food] For $232",
+          "address": "0x020B"
+        },
+        {
+          "code": "AEKPLZLA",
+          "desc": "Buy 3,000 Provisions [Food] For Free",
+          "address": "0x020B"
+        },
+        {
+          "code": "AEKPGXET",
+          "desc": "Buy 3,000 Provisions [Food] For Free",
+          "address": "0x020C"
+        },
+        {
+          "code": "LUUPLAPL",
+          "desc": "Allows You To Buy &quot;Elixir C&quot; In The Item Shop In The Town of Xu Zhou [Instead of Steed]",
+          "address": "0x003B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

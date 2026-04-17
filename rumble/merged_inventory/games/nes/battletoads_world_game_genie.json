@@ -1,0 +1,204 @@
+{
+  "system": "nes",
+  "normalized_title": "battletoads",
+  "display_name": "Battletoads (World) (Game Genie)",
+  "aliases": [
+    "Battletoads (Europe)",
+    "Battletoads (Rumbles)",
+    "Battletoads (USA)",
+    "Battletoads (World) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\battletoads_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0011",
+        "0x05F4"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Battletoads-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0011",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x05F4",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Battletoads (World) (Game Genie).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 14,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "EYSAUVEI",
+          "desc": "Mega-Jumping",
+          "address": "0x067B"
+        },
+        {
+          "code": "ZAXAALAA",
+          "desc": "Start On Level 2 (Wookie Hole)",
+          "address": "0x0308"
+        },
+        {
+          "code": "LAXAALAA",
+          "desc": "Start On Level 3 (Turbo Tunnel)",
+          "address": "0x0308"
+        },
+        {
+          "code": "GAXAALAA",
+          "desc": "Start On Level 4 (Arctic Cavern)",
+          "address": "0x0308"
+        },
+        {
+          "code": "IAXAALAA",
+          "desc": "Start On Level 5 (Surf City)",
+          "address": "0x0308"
+        },
+        {
+          "code": "TAXAALAA",
+          "desc": "Start On Level 6 (Karnath's Lair)",
+          "address": "0x0308"
+        },
+        {
+          "code": "YAXAALAA",
+          "desc": "Start On Level 7 (Volkmire's Inferno)",
+          "address": "0x0308"
+        },
+        {
+          "code": "AAXAALAE",
+          "desc": "Start On Level 8 (Intruder Excluder)",
+          "address": "0x0308"
+        },
+        {
+          "code": "PAXAALAE",
+          "desc": "Start On Level 9 (Terra Tubes)",
+          "address": "0x0308"
+        },
+        {
+          "code": "ZAXAALAE",
+          "desc": "Start On Level 10 (Rat Race)",
+          "address": "0x0308"
+        },
+        {
+          "code": "LAXAALAE",
+          "desc": "Start On Level 11 (Clinger Winger)",
+          "address": "0x0308"
+        },
+        {
+          "code": "GAXAALAE",
+          "desc": "Start On Level 12 (The Revolution)",
+          "address": "0x0308"
+        },
+        {
+          "code": "IAXAALAE",
+          "desc": "Start On Level 13 (Armageddon)",
+          "address": "0x0308"
+        },
+        {
+          "code": "PYXAALAE",
+          "desc": "Start In Dark Queen's Tower",
+          "address": "0x0378"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Battletoads (USA).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 14,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "EYSAUVEI",
+          "desc": "Mega-Jumping",
+          "address": "0x067B"
+        },
+        {
+          "code": "ZAXAALAA",
+          "desc": "Start On Level 2 (Wookie Hole)",
+          "address": "0x0308"
+        },
+        {
+          "code": "LAXAALAA",
+          "desc": "Start On Level 3 (Turbo Tunnel)",
+          "address": "0x0308"
+        },
+        {
+          "code": "GAXAALAA",
+          "desc": "Start On Level 4 (Arctic Cavern)",
+          "address": "0x0308"
+        },
+        {
+          "code": "IAXAALAA",
+          "desc": "Start On Level 5 (Surf City)",
+          "address": "0x0308"
+        },
+        {
+          "code": "TAXAALAA",
+          "desc": "Start On Level 6 (Karnath's Lair)",
+          "address": "0x0308"
+        },
+        {
+          "code": "YAXAALAA",
+          "desc": "Start On Level 7 (Volkmire's Inferno)",
+          "address": "0x0308"
+        },
+        {
+          "code": "AAXAALAE",
+          "desc": "Start On Level 8 (Intruder Excluder)",
+          "address": "0x0308"
+        },
+        {
+          "code": "PAXAALAE",
+          "desc": "Start On Level 9 (Terra Tubes)",
+          "address": "0x0308"
+        },
+        {
+          "code": "ZAXAALAE",
+          "desc": "Start On Level 10 (Rat Race)",
+          "address": "0x0308"
+        },
+        {
+          "code": "LAXAALAE",
+          "desc": "Start On Level 11 (Clinger Winger)",
+          "address": "0x0308"
+        },
+        {
+          "code": "GAXAALAE",
+          "desc": "Start On Level 12 (The Revolution)",
+          "address": "0x0308"
+        },
+        {
+          "code": "IAXAALAE",
+          "desc": "Start On Level 13 (Armageddon)",
+          "address": "0x0308"
+        },
+        {
+          "code": "PYXAALAE",
+          "desc": "Start In Dark Queen's Tower",
+          "address": "0x0378"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

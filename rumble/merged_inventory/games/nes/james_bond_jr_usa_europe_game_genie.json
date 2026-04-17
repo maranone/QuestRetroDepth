@@ -1,0 +1,71 @@
+{
+  "system": "nes",
+  "normalized_title": "jamesbondjr",
+  "display_name": "James Bond Jr (USA, Europe) (Game Genie)",
+  "aliases": [
+    "James Bond Jr (USA)",
+    "James Bond Jr (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\jamesbondjr_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0415",
+        "0x042C",
+        "0x0566"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JamesBondJr-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0566",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x042C",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0415",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\James Bond Jr (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "YUSOENYO",
+          "desc": "Slow Down Rate Of Air Loss",
+          "address": "0x07B8"
+        },
+        {
+          "code": "YESOENYO",
+          "desc": "Speed Up Rate Of Air Loss",
+          "address": "0x0788"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=Tenchi o Kurau II - Shokatsu Koumei Den (Japan) (Game Genie)
+game_key=tenchi_o_kurau_ii_shokatsu_koumei_den_japan_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_05fc	pickup	0x05FC	1	uint	little	prev != curr	0.8	1	right:0.250:18

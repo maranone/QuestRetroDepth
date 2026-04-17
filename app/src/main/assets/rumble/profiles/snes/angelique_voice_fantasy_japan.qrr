@@ -1,0 +1,15 @@
+game_name=Angelique - Voice Fantasy (Japan)
+game_key=angelique_voice_fantasy_japan
+system=snes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_2131	enemy_defeated	0x7E2131	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_2132	enemy_defeated	0x7E2132	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_2346	enemy_defeated	0x7E2346	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_2353	enemy_defeated	0x7E2353	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_2360	enemy_defeated	0x7E2360	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_236d	enemy_defeated	0x7E236D	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_237a	enemy_defeated	0x7E237A	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_2387	enemy_defeated	0x7E2387	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_2394	enemy_defeated	0x7E2394	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_23a1	enemy_defeated	0x7E23A1	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_23ae	enemy_defeated	0x7E23AE	1	uint	little	prev > curr	0.65	1	right:0.450:35

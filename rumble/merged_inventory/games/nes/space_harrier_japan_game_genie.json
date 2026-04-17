@@ -1,0 +1,69 @@
+{
+  "system": "nes",
+  "normalized_title": "spaceharrier",
+  "display_name": "Space Harrier (Japan) (Game Genie)",
+  "aliases": [
+    "Space Harrier (Japan) (Game Genie)",
+    "Space Harrier (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\spaceharrier_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x005F",
+        "0x04D8"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SpaceHarrier-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x005F",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x04D8",
+          "type": "<n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Space Harrier (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "SZVEZZSA",
+          "desc": "Invincible",
+          "address": "0x02AA"
+        },
+        {
+          "code": "005F:03",
+          "desc": "Infinite Lives",
+          "address": "0x005F"
+        },
+        {
+          "code": "0062:05",
+          "desc": "Invincible",
+          "address": "0x0062"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

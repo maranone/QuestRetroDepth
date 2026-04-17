@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "ninjajajamarugingadaisakusen",
+  "display_name": "Ninja Jajamaru - Ginga Daisakusen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ninja Jajamaru - Ginga Daisakusen (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "04CB:00",
+          "desc": "Invincibility",
+          "address": "0x04CB"
+        },
+        {
+          "code": "04C4:03",
+          "desc": "Infinite Lives",
+          "address": "0x04C4"
+        },
+        {
+          "code": "002C:0A",
+          "desc": "Fly",
+          "address": "0x002C"
+        },
+        {
+          "code": "SIVOGKVS",
+          "desc": "Infinite Lives",
+          "address": "0x04DC"
+        },
+        {
+          "code": "SZNPGTAX",
+          "desc": "Invincibility",
+          "address": "0x062C"
+        },
+        {
+          "code": "OXKPGPVK",
+          "desc": "Infinite Item Air Fly",
+          "address": "0x012C"
+        },
+        {
+          "code": "PEKPIOAG",
+          "desc": "Infinite Item Air Fly",
+          "address": "0x010D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

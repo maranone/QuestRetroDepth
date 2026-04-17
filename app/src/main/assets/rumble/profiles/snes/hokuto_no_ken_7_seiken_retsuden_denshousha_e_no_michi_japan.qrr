@@ -1,0 +1,12 @@
+game_name=Hokuto no Ken 7 - Seiken Retsuden Denshousha e no Michi (Japan)
+game_key=hokuto_no_ken_7_seiken_retsuden_denshousha_e_no_michi_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_0129	damage_taken	0x7E0129	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0129	death	0x7E0129	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_012e	level_complete	0x7E012E	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_012f	level_complete	0x7E012F	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_02bc	damage_taken	0x7E02BC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02bc	death	0x7E02BC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_02c1	level_complete	0x7E02C1	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_02c2	level_complete	0x7E02C2	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

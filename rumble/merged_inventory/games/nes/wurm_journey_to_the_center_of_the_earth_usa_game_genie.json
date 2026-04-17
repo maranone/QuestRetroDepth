@@ -1,0 +1,37 @@
+{
+  "system": "nes",
+  "normalized_title": "wurmjourneytocenterofearth",
+  "display_name": "Wurm - Journey to the Center of the Earth! (USA) (Game Genie)",
+  "aliases": [
+    "Wurm - Journey to the Center of the Earth! (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wurm - Journey to the Center of the Earth! (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "00CA:10",
+          "desc": "Infinite Shield",
+          "address": "0x00CA"
+        },
+        {
+          "code": "04E5:10",
+          "desc": "&quot;Walk&quot; Through Walls",
+          "address": "0x04E5"
+        },
+        {
+          "code": "04E5:10",
+          "desc": "Walk Through Walls",
+          "address": "0x04E5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

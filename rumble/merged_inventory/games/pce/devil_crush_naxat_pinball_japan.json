@@ -1,0 +1,25 @@
+{
+  "system": "pce",
+  "normalized_title": "devilcrushnaxatpinball",
+  "display_name": "Devil Crush - Naxat Pinball (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Devil Crush - Naxat Pinball (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "1f0d52:64",
+          "desc": "Infinite Balls",
+          "address": "0x1F0D52"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

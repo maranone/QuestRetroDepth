@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "nfl",
+  "display_name": "NFL (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\NFL (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 11,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "008A:00",
+          "desc": "Stop The Play Clock",
+          "address": "0x008A"
+        },
+        {
+          "code": "00AE:00",
+          "desc": "Player 1 Score Modifier",
+          "address": "0x00AE"
+        },
+        {
+          "code": "00AF:00",
+          "desc": "Player 1 Score Modifier",
+          "address": "0x00AF"
+        },
+        {
+          "code": "00BE:00",
+          "desc": "Player 2 Score Modifier",
+          "address": "0x00BE"
+        },
+        {
+          "code": "00BF:00",
+          "desc": "Player 2 Score Modifier",
+          "address": "0x00BF"
+        },
+        {
+          "code": "0085:00",
+          "desc": "Game Clock Modifier",
+          "address": "0x0085"
+        },
+        {
+          "code": "0086:00",
+          "desc": "Game Clock Modifier",
+          "address": "0x0086"
+        },
+        {
+          "code": "0087:00",
+          "desc": "Game Clock Modifier",
+          "address": "0x0087"
+        },
+        {
+          "code": "0088:00",
+          "desc": "Game Clock Modifier",
+          "address": "0x0088"
+        },
+        {
+          "code": "00BE:00",
+          "desc": "Team 2 Score Modifier (Ten's Digit)",
+          "address": "0x00BE"
+        },
+        {
+          "code": "00BF:00",
+          "desc": "Team 2 Score Modifier (One's Digit)",
+          "address": "0x00BF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

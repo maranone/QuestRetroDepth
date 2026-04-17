@@ -1,0 +1,80 @@
+{
+  "system": "nes",
+  "normalized_title": "kinnikumanmuscletagmatch",
+  "display_name": "Kinnikuman - Muscle Tag Match (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kinnikuman - Muscle Tag Match (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "0074:99",
+          "desc": "Infinite Time",
+          "address": "0x0074"
+        },
+        {
+          "code": "0089:40",
+          "desc": "Infinite Health",
+          "address": "0x0089"
+        },
+        {
+          "code": "011B:90",
+          "desc": "No Enemies",
+          "address": "0x011B"
+        },
+        {
+          "code": "0090:09",
+          "desc": "No Enemies",
+          "address": "0x0090"
+        },
+        {
+          "code": "076C:99",
+          "desc": "Max Score",
+          "address": "0x076C"
+        },
+        {
+          "code": "076D:99",
+          "desc": "Max Score",
+          "address": "0x076D"
+        },
+        {
+          "code": "076E:09",
+          "desc": "Max Score",
+          "address": "0x076E"
+        },
+        {
+          "code": "0077:00",
+          "desc": "Character Modifier (P1)",
+          "address": "0x0077"
+        },
+        {
+          "code": "0018:07",
+          "desc": "Weird Hover Code",
+          "address": "0x0018"
+        },
+        {
+          "code": "0099:00",
+          "desc": "Boss Dies Instantly",
+          "address": "0x0099"
+        },
+        {
+          "code": "006E:BE",
+          "desc": "Stage Modifier",
+          "address": "0x006E"
+        },
+        {
+          "code": "0072:00",
+          "desc": "Arrow Progress Modifier",
+          "address": "0x0072"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "system": "nes",
+  "normalized_title": "gradius",
+  "display_name": "Gradius (World) (Game Genie)",
+  "aliases": [
+    "Gradius (Europe)",
+    "Gradius (Japan)",
+    "Gradius (PC10)",
+    "Gradius (USA)",
+    "Gradius (VS)",
+    "Gradius (World) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\gradius_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0020",
+        "0x07E4"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Gradius-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0020",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x07E4",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gradius (World) (Game Genie).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "AENELZLA",
+          "desc": "Both Players Start With 1 Life",
+          "address": "0x028B"
+        },
+        {
+          "code": "IENELZLA",
+          "desc": "Both Players Start With 6 Lives",
+          "address": "0x028B"
+        },
+        {
+          "code": "AENELZLE",
+          "desc": "Both Players Start With 9 Lives",
+          "address": "0x028B"
+        },
+        {
+          "code": "KOXOLYSP",
+          "desc": "Keep Power Capsules",
+          "address": "0x079B"
+        },
+        {
+          "code": "NNOEKPIE",
+          "desc": "Increase Force Field Protection",
+          "address": "0x01FC"
+        },
+        {
+          "code": "YGUONUZS",
+          "desc": "Never Lose Weapons",
+          "address": "0x03CF"
+        },
+        {
+          "code": "YGKPUUIL",
+          "desc": "Never Lose Weapons",
+          "address": "0x034B"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Gradius (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

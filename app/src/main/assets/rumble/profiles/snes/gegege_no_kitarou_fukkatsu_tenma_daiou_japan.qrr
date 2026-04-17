@@ -1,0 +1,9 @@
+game_name=Gegege no Kitarou - Fukkatsu! Tenma Daiou (Japan)
+game_key=gegege_no_kitarou_fukkatsu_tenma_daiou_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_004e	damage_taken	0x7E004E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_004e	death	0x7E004E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_0751	enemy_defeated	0x7E0751	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	pickup_coins_11c5	pickup	0x7E11C5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_11bd	level_complete	0x7E11BD	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

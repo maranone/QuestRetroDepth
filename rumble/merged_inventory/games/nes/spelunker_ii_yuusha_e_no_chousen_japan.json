@@ -1,0 +1,85 @@
+{
+  "system": "nes",
+  "normalized_title": "spelunkeriiyuushaenochousen",
+  "display_name": "Spelunker II - Yuusha e no Chousen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Spelunker II - Yuusha e no Chousen (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "0650:50",
+          "desc": "Infinite Energy",
+          "address": "0x0650"
+        },
+        {
+          "code": "00EA:90",
+          "desc": "Infinite Food",
+          "address": "0x00EA"
+        },
+        {
+          "code": "00E5:09",
+          "desc": "Infinite Bombs",
+          "address": "0x00E5"
+        },
+        {
+          "code": "00E0:20",
+          "desc": "Infinite Bullets [Explorer Only]",
+          "address": "0x00E0"
+        },
+        {
+          "code": "036C:30",
+          "desc": "Freeze Minutes",
+          "address": "0x036C"
+        },
+        {
+          "code": "036D:30",
+          "desc": "Freeze Minutes",
+          "address": "0x036D"
+        },
+        {
+          "code": "036A:30",
+          "desc": "Freeze Hours",
+          "address": "0x036A"
+        },
+        {
+          "code": "036B:30",
+          "desc": "Freeze Hours",
+          "address": "0x036B"
+        },
+        {
+          "code": "0368:30",
+          "desc": "Freeze Days",
+          "address": "0x0368"
+        },
+        {
+          "code": "0369:30",
+          "desc": "Freeze Days",
+          "address": "0x0369"
+        },
+        {
+          "code": "0375:0C",
+          "desc": "Have Boss Orb",
+          "address": "0x0375"
+        },
+        {
+          "code": "0377:0E",
+          "desc": "Infinite Gold Keys",
+          "address": "0x0377"
+        },
+        {
+          "code": "0378:11",
+          "desc": "Infinite Silver Keys",
+          "address": "0x0378"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,17 @@
+game_name=Bomberman (USA) (Game Genie)
+game_key=bomberman_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_0068	life_lost	0x0068	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0068	life_gained	0x0068	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_04a8	life_lost	0x04A8	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_04a8	life_gained	0x04A8	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_0073	pickup	0x0073	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_0058	level_complete	0x0058	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	score_score_0061	score	0x0061	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0062	score	0x0062	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0063	score	0x0063	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0064	score	0x0064	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0065	score	0x0065	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0066	score	0x0066	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0067	score	0x0067	1	uint	little	prev < curr	0.8	1	right:0.350:60

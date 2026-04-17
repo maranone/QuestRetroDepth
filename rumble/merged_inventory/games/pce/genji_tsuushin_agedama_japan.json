@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "genjitsuushinagedama",
+  "display_name": "Genji Tsuushin Agedama (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Genji Tsuushin Agedama (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f0500:02",
+          "desc": "Invincibility",
+          "address": "0x1F0500"
+        },
+        {
+          "code": "1f0d01:00",
+          "desc": "Invincibility",
+          "address": "0x1F0D01"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

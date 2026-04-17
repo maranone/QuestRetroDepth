@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "anticipation",
+  "display_name": "Anticipation (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Anticipation (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Anticipation (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "ZUUPYNPP",
+          "desc": "More Time To Answer Questions",
+          "address": "0x073F"
+        },
+        {
+          "code": "YEUPYNPO",
+          "desc": "Less Time To Answer Questions",
+          "address": "0x070F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

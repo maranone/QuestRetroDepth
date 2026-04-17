@@ -1,0 +1,9 @@
+game_name=James Bond 007 - The Duel (Europe, Brazil) (Action Replay)
+game_key=JamesBond007TheDuel-Sms
+system=sms
+integration_tier=stable
+trigger	damage_taken_health_c113	damage_taken	0xC113	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_c113	death	0xC113	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_c735	life_lost	0xC735	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_c735	life_gained	0xC735	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_c74e	score	0xC74E	2	uint	little	prev < curr	0.8	1	right:0.350:60

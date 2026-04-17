@@ -1,0 +1,14 @@
+game_name=Pokemon - Gold Version (USA, Europe) (SGB Enhanced) (GB Compatible)
+game_key=pokemon_gold_version_usa_europe_sgb_enhanced_gb_compatible
+system=gbc
+integration_tier=contrib
+trigger	pickup_coins_c0d5	pickup	0xC0D5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_c2d5	pickup	0xC2D5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_c4d5	pickup	0xC4D5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_c6d5	pickup	0xC6D5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_c8d5	pickup	0xC8D5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_cad5	pickup	0xCAD5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ccd5	pickup	0xCCD5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ced5	pickup	0xCED5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_d0d5	pickup	0xD0D5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_d2d5	pickup	0xD2D5	1	uint	little	prev != curr	0.8	1	right:0.250:18

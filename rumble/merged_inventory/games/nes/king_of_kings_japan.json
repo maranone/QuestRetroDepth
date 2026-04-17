@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "kingofkings",
+  "display_name": "King of Kings (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\King of Kings (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "040A:63",
+          "desc": "Infinite Food? (Top Number; All Your Blue Characters)",
+          "address": "0x040A"
+        },
+        {
+          "code": "040B:63",
+          "desc": "Infinite Turns? (Bottom Number; All Your Blue Characters)",
+          "address": "0x040B"
+        },
+        {
+          "code": "053C:0A",
+          "desc": "Infinite Money (Thousands' Digit)",
+          "address": "0x053C"
+        },
+        {
+          "code": "053D:0A",
+          "desc": "Infinite Money (Hundred's Digit)",
+          "address": "0x053D"
+        },
+        {
+          "code": "053E:0A",
+          "desc": "Infinite Money (Ten's Digit)",
+          "address": "0x053E"
+        },
+        {
+          "code": "053F:0A",
+          "desc": "Infinite Money (One's Digit)",
+          "address": "0x053F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

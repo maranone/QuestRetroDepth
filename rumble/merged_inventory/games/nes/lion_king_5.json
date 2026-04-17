@@ -1,0 +1,25 @@
+{
+  "system": "nes",
+  "normalized_title": "lionking5",
+  "display_name": "Lion King 5",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Lion King 5.cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0388:0A",
+          "desc": "Infinite Energy",
+          "address": "0x0388"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

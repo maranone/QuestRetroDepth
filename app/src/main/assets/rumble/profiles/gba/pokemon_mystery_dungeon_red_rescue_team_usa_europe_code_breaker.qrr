@@ -1,0 +1,12 @@
+game_name=Pokemon Mystery Dungeon - Red Rescue Team (USA, Europe) (Code Breaker)
+game_key=pokemon_mystery_dungeon_red_rescue_team_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_02004193	damage_taken	0x02004193	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02004193	death	0x02004193	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0200419e	damage_taken	0x0200419E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0200419e	death	0x0200419E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020041a0	damage_taken	0x020041A0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020041a0	death	0x020041A0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_02038c08	pickup	0x02038C08	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_02038c0a	pickup	0x02038C0A	1	uint	little	prev != curr	0.8	1	right:0.250:18

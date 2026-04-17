@@ -1,0 +1,57 @@
+{
+  "system": "nes",
+  "normalized_title": "musashinokentadaimashugyouchuu",
+  "display_name": "Musashi no Ken - Tadaima Shugyou Chuu (Japan) (Game Genie)",
+  "aliases": [
+    "Musashi no Ken - Tadaima Shugyou Chuu (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Musashi no Ken - Tadaima Shugyou Chuu (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "002E:32",
+          "desc": "Infinite Energy",
+          "address": "0x002E"
+        },
+        {
+          "code": "002D:02",
+          "desc": "Infinite Lives",
+          "address": "0x002D"
+        },
+        {
+          "code": "002C:32",
+          "desc": "Infinite Upper Thrusts",
+          "address": "0x002C"
+        },
+        {
+          "code": "002B:32",
+          "desc": "Infinite Middle Thrusts",
+          "address": "0x002B"
+        },
+        {
+          "code": "002A:32",
+          "desc": "Infinite Downward Thrusts",
+          "address": "0x002A"
+        },
+        {
+          "code": "0097:09",
+          "desc": "Speed Up",
+          "address": "0x0097"
+        },
+        {
+          "code": "00B0:02",
+          "desc": "Walk Through Enemies",
+          "address": "0x00B0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

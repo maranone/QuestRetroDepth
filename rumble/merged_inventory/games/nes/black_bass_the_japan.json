@@ -1,0 +1,72 @@
+{
+  "system": "nes",
+  "normalized_title": "blackbass",
+  "display_name": "Black Bass, The (Japan)",
+  "aliases": [
+    "Black Bass, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Black Bass, The (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "0445:01",
+          "desc": "Ranked 1st Place",
+          "address": "0x0445"
+        },
+        {
+          "code": "040D:00",
+          "desc": "Outcome Modifier",
+          "address": "0x040D"
+        },
+        {
+          "code": "0408:00",
+          "desc": "Fish Caught/Hooked Type Modifier",
+          "address": "0x0408"
+        },
+        {
+          "code": "0409:FF",
+          "desc": "Fish Caught/Hooked Size Modifier",
+          "address": "0x0409"
+        },
+        {
+          "code": "040E:03",
+          "desc": "Automatically Hook A Fish",
+          "address": "0x040E"
+        },
+        {
+          "code": "040C:00",
+          "desc": "Fish Status Modifier",
+          "address": "0x040C"
+        },
+        {
+          "code": "03F7:00",
+          "desc": "Fish on Screen Will Always Bite Your Lure",
+          "address": "0x03F7"
+        },
+        {
+          "code": "03C7:FF",
+          "desc": "Always Have Fish Checking Out Your Lure",
+          "address": "0x03C7"
+        },
+        {
+          "code": "03F1:33",
+          "desc": "Casting of Lure Power Modifer",
+          "address": "0x03F1"
+        },
+        {
+          "code": "00A5:30",
+          "desc": "Time Modifier",
+          "address": "0x00A5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

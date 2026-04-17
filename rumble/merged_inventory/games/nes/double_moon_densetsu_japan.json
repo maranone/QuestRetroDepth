@@ -1,0 +1,145 @@
+{
+  "system": "nes",
+  "normalized_title": "doublemoondensetsu",
+  "display_name": "Double Moon Densetsu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Double Moon Densetsu (Japan).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 57,
+      "distinct_address_count": 53,
+      "sample_raw_entries": [
+        {
+          "code": "0546:00",
+          "desc": "Play As Girl",
+          "address": "0x0546"
+        },
+        {
+          "code": "05DC:04",
+          "desc": "Play As Girl",
+          "address": "0x05DC"
+        },
+        {
+          "code": "600A:FF",
+          "desc": "Attack",
+          "address": "0x600A"
+        },
+        {
+          "code": "600B:FE",
+          "desc": "Attack",
+          "address": "0x600B"
+        },
+        {
+          "code": "600B:FF",
+          "desc": "Defense",
+          "address": "0x600B"
+        },
+        {
+          "code": "600C:FF",
+          "desc": "HP in Battle",
+          "address": "0x600C"
+        },
+        {
+          "code": "600D:FF",
+          "desc": "Speed",
+          "address": "0x600D"
+        },
+        {
+          "code": "6003:FF",
+          "desc": "MP",
+          "address": "0x6003"
+        },
+        {
+          "code": "6008:FF",
+          "desc": "Big Exp. After Battle",
+          "address": "0x6008"
+        },
+        {
+          "code": "6029:00",
+          "desc": "Item Slot 1",
+          "address": "0x6029"
+        },
+        {
+          "code": "602A:00",
+          "desc": "Item Slot 2",
+          "address": "0x602A"
+        },
+        {
+          "code": "6483:FF",
+          "desc": "Gold",
+          "address": "0x6483"
+        },
+        {
+          "code": "0596:03",
+          "desc": "No Random Battles - Overworld",
+          "address": "0x0596"
+        },
+        {
+          "code": "0519:03",
+          "desc": "No Random Battles - Underworld",
+          "address": "0x0519"
+        },
+        {
+          "code": "6482:FF",
+          "desc": "Infinite Gold",
+          "address": "0x6482"
+        },
+        {
+          "code": "6483:FF",
+          "desc": "Infinite Gold",
+          "address": "0x6483"
+        },
+        {
+          "code": "6001:FF",
+          "desc": "P1 Health",
+          "address": "0x6001"
+        },
+        {
+          "code": "6002:03",
+          "desc": "P1 Health",
+          "address": "0x6002"
+        },
+        {
+          "code": "6003:FF",
+          "desc": "P1 Magic",
+          "address": "0x6003"
+        },
+        {
+          "code": "6007:FF",
+          "desc": "P1 Experience",
+          "address": "0x6007"
+        },
+        {
+          "code": "6008:FF",
+          "desc": "P1 Experience",
+          "address": "0x6008"
+        },
+        {
+          "code": "6069:FF",
+          "desc": "P2 Health",
+          "address": "0x6069"
+        },
+        {
+          "code": "606A:03",
+          "desc": "P2 Health",
+          "address": "0x606A"
+        },
+        {
+          "code": "606B:FF",
+          "desc": "P2 Magic",
+          "address": "0x606B"
+        },
+        {
+          "code": "606F:FF",
+          "desc": "P2 Experience",
+          "address": "0x606F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

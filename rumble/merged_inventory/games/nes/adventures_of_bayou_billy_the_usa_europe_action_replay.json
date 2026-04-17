@@ -1,0 +1,54 @@
+{
+  "system": "nes",
+  "normalized_title": "adventuresofbayoubilly",
+  "display_name": "Adventures of Bayou Billy, The (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Adventures of Bayou Billy, The (USA, Europe) (Action Replay)",
+    "Adventures of Bayou Billy, The (USA, Europe) (Game Genie)",
+    "Adventures Of Bayou Billy_ The (Rumbles)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\adventuresofbayoubilly_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0039",
+        "0x07E4"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AdventuresOfBayouBilly-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0039",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x07E4",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Adventures Of Bayou Billy_ The (Rumbles).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

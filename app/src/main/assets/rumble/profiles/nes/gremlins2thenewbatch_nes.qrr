@@ -1,0 +1,8 @@
+game_name=Gremlins 2 - The New Batch (USA, Europe) (Action Replay)
+game_key=Gremlins2TheNewBatch-Nes
+system=nes
+integration_tier=stable
+trigger	game_over_gameover_0636	game_over	0x0636	1	bcd	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	damage_taken_health_00ad	damage_taken	0x00AD	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00ad	death	0x00AD	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_056c	score	0x056C	2	uint	little	prev < curr	0.8	1	right:0.350:60

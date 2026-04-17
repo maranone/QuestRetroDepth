@@ -1,0 +1,5 @@
+game_name=World Cup Italia '90 (Europe) (Action Replay)
+game_key=world_cup_italia_90_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_fff01c	score	0xFFF01C	1	uint	little	prev < curr	0.8	1	right:0.350:60

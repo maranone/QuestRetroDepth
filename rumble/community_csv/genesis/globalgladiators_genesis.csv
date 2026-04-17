@@ -2,5 +2,5 @@
 # game_name=Global Gladiators (Europe) (Action Replay)
 # match_names=globalgladiators|globalgladiatorsgenesis
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-game_over_gameover_ff023c,0xFF023C,1,int,became_nonzero,,both,1.000,normal,0,1000,400,100,
-score_score_ff009f,0xFF009F,6,nibble,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+game_over_gameover_ff023c,0xFF023C,1,int,became_nonzero,,both,1.000,heartbeat,0,1000,400,100,
+score_score_ff009f,0xFF009F,6,nibble,prev_lt_curr,,right,0.350,burst,0,70,15,10,

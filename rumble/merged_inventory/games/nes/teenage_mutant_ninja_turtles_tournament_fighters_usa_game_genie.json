@@ -1,0 +1,191 @@
+{
+  "system": "nes",
+  "normalized_title": "teenagemutantninjaturtlestournamentfighters",
+  "display_name": "Teenage Mutant Ninja Turtles - Tournament Fighters (USA) (Game Genie)",
+  "aliases": [
+    "Teenage Mutant Ninja Turtles - Tournament Fighters (USA) (Game Genie)",
+    "Teenage Mutant Ninja Turtles - Tournament Fighters (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\teenagemutantninjaturtlestournamentfighters_nes.json",
+      "trigger_count": 4,
+      "field_names": [
+        "enemy_health",
+        "health",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x00AE",
+        "0x0590",
+        "0x0591"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TeenageMutantNinjaTurtlesTournamentFighters-Nes-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "enemy_health",
+          "address": "0x0591",
+          "type": "|u1"
+        },
+        {
+          "name": "enemy_rounds_won",
+          "address": "0x064A",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0x0590",
+          "type": "|u1"
+        },
+        {
+          "name": "rounds_won",
+          "address": "0x0649",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x00AE",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Teenage Mutant Ninja Turtles - Tournament Fighters (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 24,
+      "distinct_address_count": 22,
+      "sample_raw_entries": [
+        {
+          "code": "AUXAGAEL",
+          "desc": "Both players start with 1/3 energy",
+          "address": "0x003C"
+        },
+        {
+          "code": "YAVAZLGA",
+          "desc": "You can select any character in story mode",
+          "address": "0x030A"
+        },
+        {
+          "code": "OKKEZTVG",
+          "desc": "Infinite continues",
+          "address": "0x06CA"
+        },
+        {
+          "code": "PEXAGAEL",
+          "desc": "Whoever gets the first hit wins the round",
+          "address": "0x000C"
+        },
+        {
+          "code": "0590:B0",
+          "desc": "Infinite Energy",
+          "address": "0x0590"
+        },
+        {
+          "code": "0647:B0",
+          "desc": "Infinite Energy",
+          "address": "0x0647"
+        },
+        {
+          "code": "AENEZPIE",
+          "desc": "Play Hothead Vs Hothead",
+          "address": "0x018A"
+        },
+        {
+          "code": "OZNEOXPV",
+          "desc": "Only Need To Win One Round To Win Match",
+          "address": "0x02A9"
+        },
+        {
+          "code": "ZANEXZPA",
+          "desc": "Only Need To Win One Round To Win Match",
+          "address": "0x028A"
+        },
+        {
+          "code": "0649:02",
+          "desc": "One Round To Win, P1 (Activate After Title Screen)",
+          "address": "0x0649"
+        },
+        {
+          "code": "0590:76",
+          "desc": "Infinite Health P1",
+          "address": "0x0590"
+        },
+        {
+          "code": "0590:B0",
+          "desc": "Infinite Health P1",
+          "address": "0x0590"
+        },
+        {
+          "code": "0591:00",
+          "desc": "No Health P2",
+          "address": "0x0591"
+        },
+        {
+          "code": "0673:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x0673"
+        },
+        {
+          "code": "0672:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x0672"
+        },
+        {
+          "code": "00A2:00",
+          "desc": "Character Highlighter Modifier P1",
+          "address": "0x00A2"
+        },
+        {
+          "code": "00A3:00",
+          "desc": "Character Highlighter Modifier P2",
+          "address": "0x00A3"
+        },
+        {
+          "code": "04A0:00",
+          "desc": "Level Highlighter Modifier (VS Mode)",
+          "address": "0x04A0"
+        },
+        {
+          "code": "06C3:00",
+          "desc": "Turn Off Computer's A.I.",
+          "address": "0x06C3"
+        },
+        {
+          "code": "06C7:00",
+          "desc": "Turn Off Computer's A.I.",
+          "address": "0x06C7"
+        },
+        {
+          "code": "06C9:00",
+          "desc": "Turn Off Computer's A.I.",
+          "address": "0x06C9"
+        },
+        {
+          "code": "06CB:00",
+          "desc": "Turn Off Computer's A.I.",
+          "address": "0x06CB"
+        },
+        {
+          "code": "0551:BE",
+          "desc": "Always Fight XX Instead of Normal Character",
+          "address": "0x0551"
+        },
+        {
+          "code": "009E:02",
+          "desc": "Level Modifier In VS CPU",
+          "address": "0x009E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

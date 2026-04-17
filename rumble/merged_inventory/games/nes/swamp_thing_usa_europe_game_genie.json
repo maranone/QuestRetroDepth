@@ -1,0 +1,67 @@
+{
+  "system": "nes",
+  "normalized_title": "swampthing",
+  "display_name": "Swamp Thing (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Swamp Thing (USA)",
+    "Swamp Thing (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\swampthing_nes.json",
+      "trigger_count": 6,
+      "field_names": [
+        "gameover",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0x0502",
+        "0x050B",
+        "0x0517",
+        "0x05EC"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SwampThing-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0x0517",
+          "type": "|i1"
+        },
+        {
+          "name": "health",
+          "address": "0x05EC",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x050B",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0502",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Swamp Thing (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

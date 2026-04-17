@@ -1,0 +1,6 @@
+game_name=Paperboy (USA, Europe) (Action Replay)
+game_key=Paperboy-Sms
+system=sms
+integration_tier=stable
+trigger	game_over_gameover_d2c0	game_over	0xD2C0	1	uint	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	score_score_d4fd	score	0xD4FD	4	bcd	big	prev < curr	0.8	1	right:0.350:60

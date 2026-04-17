@@ -1,0 +1,7 @@
+game_name=Ikasuze! Koi no Doki Doki Penguin Land MD (Japan) (SegaNet)
+game_key=ikasuze_koi_no_doki_doki_penguin_land_md_japan_seganet
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ff2642	life_lost	0xFF2642	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff2642	life_gained	0xFF2642	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_fff404	level_complete	0xFFF404	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

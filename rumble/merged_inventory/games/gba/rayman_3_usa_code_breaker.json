@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "rayman3",
+  "display_name": "Rayman 3 (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Rayman 3 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "3203FFF6",
+          "desc": "Infinite Lives",
+          "address": "0x0203FFF6"
+        },
+        {
+          "code": "8203FF66",
+          "desc": "Infinite Power",
+          "address": "0x0203FF66"
+        },
+        {
+          "code": "3203FF61",
+          "desc": "Have All Abilities",
+          "address": "0x0203FF61"
+        },
+        {
+          "code": "4203FF70",
+          "desc": "Have All Lums+Cages Collected",
+          "address": "0x0203FF70"
+        },
+        {
+          "code": "3203FFF5",
+          "desc": "Have All Levels Open",
+          "address": "0x0203FFF5"
+        },
+        {
+          "code": "3203FFF7",
+          "desc": "Have All Levels Open",
+          "address": "0x0203FFF7"
+        },
+        {
+          "code": "3203FFF8",
+          "desc": "Have All Levels Open",
+          "address": "0x0203FFF8"
+        },
+        {
+          "code": "33003D1D",
+          "desc": "Mega Jump",
+          "address": "0x02003D1D"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Rayman 3 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "3203FFF6",
+          "desc": "Infinite Lives",
+          "address": "0x0203FFF6"
+        },
+        {
+          "code": "8203FF66",
+          "desc": "Infinite Power",
+          "address": "0x0203FF66"
+        },
+        {
+          "code": "3203FF61",
+          "desc": "Have All Abilities",
+          "address": "0x0203FF61"
+        },
+        {
+          "code": "4203FF70",
+          "desc": "Have All Lums+Cages Collected",
+          "address": "0x0203FF70"
+        },
+        {
+          "code": "3203FFF5",
+          "desc": "Have All Levels Open",
+          "address": "0x0203FFF5"
+        },
+        {
+          "code": "3203FFF7",
+          "desc": "Have All Levels Open",
+          "address": "0x0203FFF7"
+        },
+        {
+          "code": "3203FFF8",
+          "desc": "Have All Levels Open",
+          "address": "0x0203FFF8"
+        },
+        {
+          "code": "33003D1D",
+          "desc": "Mega Jump",
+          "address": "0x02003D1D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

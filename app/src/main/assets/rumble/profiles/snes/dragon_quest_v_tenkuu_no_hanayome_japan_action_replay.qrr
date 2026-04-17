@@ -1,0 +1,6 @@
+game_name=Dragon Quest V - Tenkuu no Hanayome (Japan) (Action Replay)
+game_key=dragon_quest_v_tenkuu_no_hanayome_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_1954	level_complete	0x7E1954	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_10f6	enemy_defeated	0x7E10F6	1	uint	little	prev > curr	0.65	1	right:0.450:35

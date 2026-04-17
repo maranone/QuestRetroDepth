@@ -1,0 +1,157 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "AwesomePossumKicksDrMachinosButt",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\AwesomePossumKicksDrMachinosButt-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "AwesomePossumKicksDrMachinosButt-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "pickup_items_collected_ffe90c",
+      "event": "pickup",
+      "watch": [
+        {
+          "absolute_address": "0xFFE90C",
+          "size": 2,
+          "value_type": "uint",
+          "byte_order": "big",
+          "raw_type": ">u2",
+          "address": "0xFFE90C",
+          "ram_offset": 59660
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.25,
+          "duration_ms": 18
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Pickup-style counter.",
+      "source_fields": [
+        {
+          "name": "items_collected",
+          "address": "0xFFE90C",
+          "raw_type": ">u2"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_lives_ffe8f6",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0xFFE8F6",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFE8F6",
+          "ram_offset": 59638
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xFFE8F6",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_ffe8f6",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0xFFE8F6",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFE8F6",
+          "ram_offset": 59638
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xFFE8F6",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_ffe8a8",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xFFE8A8",
+          "size": 4,
+          "value_type": "uint",
+          "byte_order": "big",
+          "raw_type": ">u4",
+          "address": "0xFFE8A8",
+          "ram_offset": 59560
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xFFE8A8",
+          "raw_type": ">u4"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

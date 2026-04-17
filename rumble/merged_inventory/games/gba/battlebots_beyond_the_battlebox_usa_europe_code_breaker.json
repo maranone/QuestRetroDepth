@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "battlebotsbeyondbattlebox",
+  "display_name": "BattleBots - Beyond the BattleBox (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\BattleBots - Beyond the BattleBox (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "10003208",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003208"
+        },
+        {
+          "code": "83000100",
+          "desc": "Infinite Cash",
+          "address": "0x02000100"
+        },
+        {
+          "code": "33003204",
+          "desc": "Stop Idle Timer",
+          "address": "0x02003204"
+        },
+        {
+          "code": "83003220",
+          "desc": "Infinite Health",
+          "address": "0x02003220"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+L To Freeze Opponent",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83003464",
+          "desc": "Press Select+L To Freeze Opponent",
+          "address": "0x02003464"
+        },
+        {
+          "code": "43000162",
+          "desc": "Have All Parts Repaired",
+          "address": "0x02000162"
+        },
+        {
+          "code": "3300010E",
+          "desc": "Have All Arena's",
+          "address": "0x0200010E"
+        },
+        {
+          "code": "330001A5",
+          "desc": "Have Stage 3 Parts",
+          "address": "0x020001A5"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\BattleBots - Beyond the BattleBox (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "10003208",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003208"
+        },
+        {
+          "code": "83000100",
+          "desc": "Infinite Cash",
+          "address": "0x02000100"
+        },
+        {
+          "code": "33003204",
+          "desc": "Stop Idle Timer",
+          "address": "0x02003204"
+        },
+        {
+          "code": "83003220",
+          "desc": "Infinite Health",
+          "address": "0x02003220"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+L To Freeze Opponent",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83003464",
+          "desc": "Press Select+L To Freeze Opponent",
+          "address": "0x02003464"
+        },
+        {
+          "code": "43000162",
+          "desc": "Have All Parts Repaired",
+          "address": "0x02000162"
+        },
+        {
+          "code": "3300010E",
+          "desc": "Have All Arena's",
+          "address": "0x0200010E"
+        },
+        {
+          "code": "330001A5",
+          "desc": "Have Stage 3 Parts",
+          "address": "0x020001A5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

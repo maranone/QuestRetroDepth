@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "doraemonmeikyuudaisakusen",
+  "display_name": "Doraemon - Meikyuu Daisakusen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Doraemon - Meikyuu Daisakusen (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f1aff:05",
+          "desc": "Infinite Lives",
+          "address": "0x1F1AFF"
+        },
+        {
+          "code": "1f0053:04",
+          "desc": "Invincibility",
+          "address": "0x1F0053"
+        },
+        {
+          "code": "1f1af8:59",
+          "desc": "Infinite Time",
+          "address": "0x1F1AF8"
+        },
+        {
+          "code": "1f1b0c:01",
+          "desc": "One Object Get Key",
+          "address": "0x1F1B0C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

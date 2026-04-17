@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "harrypotterandprisonerofazkaban",
+  "display_name": "Harry Potter and the Prisoner of Azkaban (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Harry Potter and the Prisoner of Azkaban (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "1003EEA4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0203EEA4"
+        },
+        {
+          "code": "830026F0",
+          "desc": "Quick Level Up",
+          "address": "0x020026F0"
+        },
+        {
+          "code": "83003180",
+          "desc": "Infinite Sickles (Cash)",
+          "address": "0x02003180"
+        },
+        {
+          "code": "430031D8",
+          "desc": "Max Cards",
+          "address": "0x020031D8"
+        },
+        {
+          "code": "4300320A",
+          "desc": "Almost All Cards",
+          "address": "0x0200320A"
+        },
+        {
+          "code": "83003210",
+          "desc": "Almost All Cards",
+          "address": "0x02003210"
+        },
+        {
+          "code": "43003190",
+          "desc": "Full Folio Bruti",
+          "address": "0x02003190"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Harry Potter and the Prisoner of Azkaban (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "1003EEA4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0203EEA4"
+        },
+        {
+          "code": "830026F0",
+          "desc": "Quick Level Up",
+          "address": "0x020026F0"
+        },
+        {
+          "code": "83003180",
+          "desc": "Infinite Sickles (Cash)",
+          "address": "0x02003180"
+        },
+        {
+          "code": "430031D8",
+          "desc": "Max Cards",
+          "address": "0x020031D8"
+        },
+        {
+          "code": "4300320A",
+          "desc": "Almost All Cards",
+          "address": "0x0200320A"
+        },
+        {
+          "code": "83003210",
+          "desc": "Almost All Cards",
+          "address": "0x02003210"
+        },
+        {
+          "code": "43003190",
+          "desc": "Full Folio Bruti",
+          "address": "0x02003190"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

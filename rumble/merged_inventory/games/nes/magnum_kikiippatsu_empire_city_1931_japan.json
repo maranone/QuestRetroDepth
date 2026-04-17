@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "magnumkikiippatsuempirecity1931",
+  "display_name": "Magnum Kikiippatsu - Empire City - 1931 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Magnum Kikiippatsu - Empire City - 1931 (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0053:03",
+          "desc": "Infinite Lives",
+          "address": "0x0053"
+        },
+        {
+          "code": "0059:FA",
+          "desc": "Infinite Time",
+          "address": "0x0059"
+        },
+        {
+          "code": "00C8:00",
+          "desc": "Automatically beat a level",
+          "address": "0x00C8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

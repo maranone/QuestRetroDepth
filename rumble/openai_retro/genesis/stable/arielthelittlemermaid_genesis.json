@@ -1,0 +1,187 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "ArielTheLittleMermaid",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\ArielTheLittleMermaid-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "ArielTheLittleMermaid-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_health_ff404d",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0xFF404D",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF404D",
+          "ram_offset": 16461
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFF404D",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_ff404d",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0xFF404D",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF404D",
+          "ram_offset": 16461
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFF404D",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_lives_ffa60f",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0xFFA60F",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFA60F",
+          "ram_offset": 42511
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xFFA60F",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_ffa60f",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0xFFA60F",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFA60F",
+          "ram_offset": 42511
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xFFA60F",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "keys",
+      "meta": {
+        "address": 16754190,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "money",
+      "meta": {
+        "address": 16754188,
+        "type": ">u2"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "prisoners_remaining",
+      "meta": {
+        "address": 16728057,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

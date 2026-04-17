@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "xmenreignofapocalypse",
+  "display_name": "X-Men - Reign of Apocalypse (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\X-Men - Reign of Apocalypse (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10003212",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003212"
+        },
+        {
+          "code": "82000CD4",
+          "desc": "Infinite Time",
+          "address": "0x02000CD4"
+        },
+        {
+          "code": "82000D84",
+          "desc": "Infinite Health",
+          "address": "0x02000D84"
+        },
+        {
+          "code": "82000D88",
+          "desc": "Infinite Lives",
+          "address": "0x02000D88"
+        },
+        {
+          "code": "82000DF0",
+          "desc": "Max Mutant Power",
+          "address": "0x02000DF0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\X-Men - Reign of Apocalypse (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10003212",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003212"
+        },
+        {
+          "code": "82000CD4",
+          "desc": "Infinite Time",
+          "address": "0x02000CD4"
+        },
+        {
+          "code": "82000D84",
+          "desc": "Infinite Health",
+          "address": "0x02000D84"
+        },
+        {
+          "code": "82000D88",
+          "desc": "Infinite Lives",
+          "address": "0x02000D88"
+        },
+        {
+          "code": "82000DF0",
+          "desc": "Max Mutant Power",
+          "address": "0x02000DF0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "system": "nes",
+  "normalized_title": "castlequest",
+  "display_name": "Castle Quest (Japan) (Game Genie)",
+  "aliases": [
+    "Castle Quest (Japan)",
+    "Castlequest (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Castlequest (USA).cht",
+      "total_cheat_rows": 28,
+      "raw_entry_count": 26,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "SXKAVIVG",
+          "desc": "Infinite lives",
+          "address": "0x052E"
+        },
+        {
+          "code": "SZOEIUVK",
+          "desc": "Use sword as long as you like",
+          "address": "0x03AD"
+        },
+        {
+          "code": "XXOAZGYA",
+          "desc": "Now you can move while using sword",
+          "address": "0x042A"
+        },
+        {
+          "code": "IAEEALYP",
+          "desc": "Must use with the last code for permanent sword-wielding ability!",
+          "address": "0x0388"
+        },
+        {
+          "code": "GAXEGIZA",
+          "desc": "Supercharged speed-up",
+          "address": "0x058C"
+        },
+        {
+          "code": "GAUEGIZA",
+          "desc": "Supercharged speed-up",
+          "address": "0x058C"
+        },
+        {
+          "code": "AAXEGIZE",
+          "desc": "Turbo fuel-injected 16-valve speed-up",
+          "address": "0x058C"
+        },
+        {
+          "code": "AAUEGIZE",
+          "desc": "Turbo fuel-injected 16-valve speed-up",
+          "address": "0x058C"
+        },
+        {
+          "code": "0013:20",
+          "desc": "Infinite Lives",
+          "address": "0x0013"
+        },
+        {
+          "code": "0007:01",
+          "desc": "Infinite Yellow Keys",
+          "address": "0x0007"
+        },
+        {
+          "code": "0006:01",
+          "desc": "Infinite Blue Keys",
+          "address": "0x0006"
+        },
+        {
+          "code": "0005:01",
+          "desc": "Infinite Red Keys",
+          "address": "0x0005"
+        },
+        {
+          "code": "0008:01",
+          "desc": "Infinite Green Keys",
+          "address": "0x0008"
+        },
+        {
+          "code": "0009:01",
+          "desc": "Infinite Pink Keys",
+          "address": "0x0009"
+        },
+        {
+          "code": "000A:01",
+          "desc": "Infinite Light Blue Keys",
+          "address": "0x000A"
+        },
+        {
+          "code": "SKKAVIVG",
+          "desc": "Infinite Lives",
+          "address": "0x054E"
+        },
+        {
+          "code": "SXUEXSSE",
+          "desc": "Invincibility",
+          "address": "0x05AA"
+        },
+        {
+          "code": "001E:02",
+          "desc": "Jump To Desired Height/Walk On Air",
+          "address": "0x001E"
+        },
+        {
+          "code": "0772:00",
+          "desc": "Invincible",
+          "address": "0x0772"
+        },
+        {
+          "code": "0013:FF",
+          "desc": "Infinite Lives (Blue Hearts)",
+          "address": "0x0013"
+        },
+        {
+          "code": "000A:09",
+          "desc": "Infinite Cyan Keys",
+          "address": "0x000A"
+        },
+        {
+          "code": "0009:09",
+          "desc": "Infinite Pink Keys",
+          "address": "0x0009"
+        },
+        {
+          "code": "0008:09",
+          "desc": "Infinite Dark Green Keys",
+          "address": "0x0008"
+        },
+        {
+          "code": "0007:09",
+          "desc": "Infinite Golden Keys",
+          "address": "0x0007"
+        },
+        {
+          "code": "0006:09",
+          "desc": "Infinite Dark Blue Keys",
+          "address": "0x0006"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "superjeopardy",
+  "display_name": "Super Jeopardy! (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Jeopardy! (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "079E:00",
+          "desc": "P1 Character Modifier",
+          "address": "0x079E"
+        },
+        {
+          "code": "0332:22",
+          "desc": "Infinite Time To Answer Question (Seconds)",
+          "address": "0x0332"
+        },
+        {
+          "code": "0335:22",
+          "desc": "Infinite Time To Answer Question (Minutes)",
+          "address": "0x0335"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

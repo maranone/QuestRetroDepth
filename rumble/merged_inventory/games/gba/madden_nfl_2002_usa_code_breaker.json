@@ -1,0 +1,198 @@
+{
+  "system": "gba",
+  "normalized_title": "maddennfl2002",
+  "display_name": "Madden NFL 2002 (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Madden NFL 2002 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 17,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10000B34",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000B34"
+        },
+        {
+          "code": "33002096",
+          "desc": "P1 Always Scores 150",
+          "address": "0x02002096"
+        },
+        {
+          "code": "33002096",
+          "desc": "P1 Always Scores 0",
+          "address": "0x02002096"
+        },
+        {
+          "code": "330021E6",
+          "desc": "P2 Always Scores 150",
+          "address": "0x020021E6"
+        },
+        {
+          "code": "330021E6",
+          "desc": "P2 Always Scores 0",
+          "address": "0x020021E6"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select+L For No Time Left On The Playclock",
+          "address": "0x02000020"
+        },
+        {
+          "code": "320007C8",
+          "desc": "Press Select+L For No Time Left On The Playclock",
+          "address": "0x020007C8"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select+R For Max Time On The Playclock",
+          "address": "0x02000020"
+        },
+        {
+          "code": "320007C8",
+          "desc": "Press Select+R For Max Time On The Playclock",
+          "address": "0x020007C8"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For End Of Quarter",
+          "address": "0x02000020"
+        },
+        {
+          "code": "820007CA",
+          "desc": "Press Select For End Of Quarter",
+          "address": "0x020007CA"
+        },
+        {
+          "code": "320007D2",
+          "desc": "Always 1st Down",
+          "address": "0x020007D2"
+        },
+        {
+          "code": "320007D2",
+          "desc": "Always 4th Down",
+          "address": "0x020007D2"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select+Left For 1st Down",
+          "address": "0x02000020"
+        },
+        {
+          "code": "320007D2",
+          "desc": "Press Select+Left For 1st Down",
+          "address": "0x020007D2"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select+Right For 4th Down",
+          "address": "0x02000020"
+        },
+        {
+          "code": "320007D2",
+          "desc": "Press Select+Right For 4th Down",
+          "address": "0x020007D2"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Madden NFL 2002 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 17,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10000B34",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000B34"
+        },
+        {
+          "code": "33002096",
+          "desc": "P1 Always Scores 150",
+          "address": "0x02002096"
+        },
+        {
+          "code": "33002096",
+          "desc": "P1 Always Scores 0",
+          "address": "0x02002096"
+        },
+        {
+          "code": "330021E6",
+          "desc": "P2 Always Scores 150",
+          "address": "0x020021E6"
+        },
+        {
+          "code": "330021E6",
+          "desc": "P2 Always Scores 0",
+          "address": "0x020021E6"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select+L For No Time Left On The Playclock",
+          "address": "0x02000020"
+        },
+        {
+          "code": "320007C8",
+          "desc": "Press Select+L For No Time Left On The Playclock",
+          "address": "0x020007C8"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select+R For Max Time On The Playclock",
+          "address": "0x02000020"
+        },
+        {
+          "code": "320007C8",
+          "desc": "Press Select+R For Max Time On The Playclock",
+          "address": "0x020007C8"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For End Of Quarter",
+          "address": "0x02000020"
+        },
+        {
+          "code": "820007CA",
+          "desc": "Press Select For End Of Quarter",
+          "address": "0x020007CA"
+        },
+        {
+          "code": "320007D2",
+          "desc": "Always 1st Down",
+          "address": "0x020007D2"
+        },
+        {
+          "code": "320007D2",
+          "desc": "Always 4th Down",
+          "address": "0x020007D2"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select+Left For 1st Down",
+          "address": "0x02000020"
+        },
+        {
+          "code": "320007D2",
+          "desc": "Press Select+Left For 1st Down",
+          "address": "0x020007D2"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select+Right For 4th Down",
+          "address": "0x02000020"
+        },
+        {
+          "code": "320007D2",
+          "desc": "Press Select+Right For 4th Down",
+          "address": "0x020007D2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

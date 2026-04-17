@@ -1,0 +1,6 @@
+game_name=Jim Henson's Muppets (USA)
+game_key=jim_henson_s_muppets_usa
+system=gbc
+integration_tier=contrib
+trigger	damage_taken_health_c1da	damage_taken	0xC1DA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_c1da	death	0xC1DA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

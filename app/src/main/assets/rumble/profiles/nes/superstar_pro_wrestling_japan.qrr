@@ -1,0 +1,10 @@
+game_name=Superstar Pro Wrestling (Japan)
+game_key=superstar_pro_wrestling_japan
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_00ce	pickup	0x00CE	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_00cf	pickup	0x00CF	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_0508	damage_taken	0x0508	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0508	death	0x0508	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0518	damage_taken	0x0518	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0518	death	0x0518	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

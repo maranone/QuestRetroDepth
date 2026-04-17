@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "nightshade",
+  "display_name": "Nightshade (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Nightshade (USA).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "02B0:32",
+          "desc": "Infinite Health In Fights",
+          "address": "0x02B0"
+        },
+        {
+          "code": "02AF:00",
+          "desc": "All Bosses 1-Hit Kill",
+          "address": "0x02AF"
+        },
+        {
+          "code": "EXTASK",
+          "desc": "Walk Through Walls And Wall Everywhere On The Screen",
+          "address": "0x0425"
+        },
+        {
+          "code": "02B0:5F",
+          "desc": "Infinite Health (Nightshade)",
+          "address": "0x02B0"
+        },
+        {
+          "code": "02AF:00",
+          "desc": "Enemies Have No Health",
+          "address": "0x02AF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

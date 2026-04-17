@@ -1,0 +1,47 @@
+{
+  "system": "nes",
+  "normalized_title": "krustysfunhouse",
+  "display_name": "Krusty's Fun House (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Krusty's Fun House (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Krusty's Fun House (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "PAKATALA",
+          "desc": "Start With 1 Life",
+          "address": "0x000E"
+        },
+        {
+          "code": "TAKATALA",
+          "desc": "Start With 6 Lives",
+          "address": "0x000E"
+        },
+        {
+          "code": "PAKATALE",
+          "desc": "Start With 9 Lives",
+          "address": "0x000E"
+        },
+        {
+          "code": "TAKELEPA",
+          "desc": "Start With 6 Pies",
+          "address": "0x008B"
+        },
+        {
+          "code": "ZPKELEPA",
+          "desc": "Start With 18 Pies",
+          "address": "0x009B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "advanceddungeonsdragonsdragonsofflame",
+  "display_name": "Advanced Dungeons _ Dragons - Dragons of Flame (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Advanced Dungeons _ Dragons - Dragons of Flame (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "6458:FF",
+          "desc": "Infinite Energy",
+          "address": "0x6458"
+        },
+        {
+          "code": "648F:FF",
+          "desc": "Infinite Magic",
+          "address": "0x648F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

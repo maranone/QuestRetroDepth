@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "tecmonbabasketball",
+  "display_name": "Tecmo NBA Basketball (USA) (Game Genie)",
+  "aliases": [
+    "Tecmo NBA Basketball (USA) (NES-BK)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tecmo NBA Basketball (USA) (NES-BK).cht",
+      "total_cheat_rows": 42,
+      "raw_entry_count": 44,
+      "distinct_address_count": 36,
+      "sample_raw_entries": [
+        {
+          "code": "0742:00",
+          "desc": "Never Be Call For Backcourt Violation [Both Teams]",
+          "address": "0x0742"
+        },
+        {
+          "code": "0743:00",
+          "desc": "Never Be Call For A 5sec Violation [Both Teams]",
+          "address": "0x0743"
+        },
+        {
+          "code": "077F:09",
+          "desc": "Infinite Full Time-Outs [Home]",
+          "address": "0x077F"
+        },
+        {
+          "code": "0781:09",
+          "desc": "Infinite 20sec Time-Out [Home]",
+          "address": "0x0781"
+        },
+        {
+          "code": "0780:09",
+          "desc": "Infinite Full Time-Outs [Visitor]",
+          "address": "0x0780"
+        },
+        {
+          "code": "0782:09",
+          "desc": "Infinite 20sec Time-Out [Visitor]",
+          "address": "0x0782"
+        },
+        {
+          "code": "058A:18",
+          "desc": "Infinite Shot Clock [24] [Visitor]",
+          "address": "0x058A"
+        },
+        {
+          "code": "NYSENZYE",
+          "desc": "5-second violations become 10-second violations",
+          "address": "0x02FF"
+        },
+        {
+          "code": "NYOPTNZE",
+          "desc": "No 10-second violations",
+          "address": "0x077E"
+        },
+        {
+          "code": "075B:00",
+          "desc": "P1 Team 1 Score Modifier",
+          "address": "0x075B"
+        },
+        {
+          "code": "075E:00",
+          "desc": "P2/CPU Team 2 Score Modifier",
+          "address": "0x075E"
+        },
+        {
+          "code": "0742:00",
+          "desc": "Never Be Call For Backcourt Violation (Both Teams)",
+          "address": "0x0742"
+        },
+        {
+          "code": "0743:00",
+          "desc": "Never Be Call For A 5sec Violation (Both Teams)",
+          "address": "0x0743"
+        },
+        {
+          "code": "077F:09",
+          "desc": "Infinite Full Time-Outs (Home)",
+          "address": "0x077F"
+        },
+        {
+          "code": "0781:09",
+          "desc": "Infinite 20sec Time-Out (Home)",
+          "address": "0x0781"
+        },
+        {
+          "code": "0780:09",
+          "desc": "Infinite Full Time-Outs (Visitor)",
+          "address": "0x0780"
+        },
+        {
+          "code": "0782:09",
+          "desc": "Infinite 20sec Time-Out (Visitor)",
+          "address": "0x0782"
+        },
+        {
+          "code": "058A:18",
+          "desc": "Infinite Shot Clock (24) (Visitor)",
+          "address": "0x058A"
+        },
+        {
+          "code": "0744:00",
+          "desc": "No Turnovers",
+          "address": "0x0744"
+        },
+        {
+          "code": "0756:00",
+          "desc": "No Steals",
+          "address": "0x0756"
+        },
+        {
+          "code": "0752:63",
+          "desc": "Rebounds",
+          "address": "0x0752"
+        },
+        {
+          "code": "074C:64",
+          "desc": "3-Point Goals",
+          "address": "0x074C"
+        },
+        {
+          "code": "074A:00",
+          "desc": "3-Point Goals",
+          "address": "0x074A"
+        },
+        {
+          "code": "0750:64",
+          "desc": "Free-Throws",
+          "address": "0x0750"
+        },
+        {
+          "code": "0745:00",
+          "desc": "Free-Throws",
+          "address": "0x0745"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

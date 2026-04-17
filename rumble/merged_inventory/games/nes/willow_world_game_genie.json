@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "willow",
+  "display_name": "Willow (World) (Game Genie)",
+  "aliases": [
+    "Willow (World) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Willow (World) (Game Genie).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "ZASEGOUI",
+          "desc": "Infinite Magic",
+          "address": "0x018C"
+        },
+        {
+          "code": "AVUOXSOZ",
+          "desc": "Start With All Items",
+          "address": "0x05EA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Austin Powers - Welcome to my Underground Lair! (USA)
+game_key=austin_powers_welcome_to_my_underground_lair_usa
+system=gbc
+integration_tier=contrib
+trigger	life_lost_lives_c0d5	life_lost	0xC0D5	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_c0d5	life_gained	0xC0D5	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

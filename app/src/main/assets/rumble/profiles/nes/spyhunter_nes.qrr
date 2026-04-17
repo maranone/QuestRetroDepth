@@ -1,0 +1,5 @@
+game_name=Spy Hunter (USA) (Game Genie)
+game_key=SpyHunter-Nes
+system=nes
+integration_tier=stable
+trigger	score_score_0123	score	0x0123	6	nibble	big	prev < curr	0.8	1	right:0.350:60

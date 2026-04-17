@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "elliottsnascarchallenge",
+  "display_name": "Elliott's NASCAR Challenge (USA) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Elliott's NASCAR Challenge (USA) (Game Genie).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "SZUETKVK",
+          "desc": "Infinite 'Free Time' In The Pits",
+          "address": "0x04AE"
+        },
+        {
+          "code": "SXOAZVVK",
+          "desc": "Freeze Timer While Crew Works On Car In Pits",
+          "address": "0x062A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

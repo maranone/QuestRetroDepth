@@ -1,0 +1,37 @@
+{
+  "system": "pce",
+  "normalized_title": "samuraighost",
+  "display_name": "Samurai-Ghost (Rumbles)",
+  "aliases": [
+    "Samurai-Ghost (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Samurai-Ghost (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f15c8:31",
+          "desc": "Infinite Health",
+          "address": "0x1F15C8"
+        },
+        {
+          "code": "1f15c9:31",
+          "desc": "Infinite Health",
+          "address": "0x1F15C9"
+        },
+        {
+          "code": "1f00a3:17",
+          "desc": "Invincibility",
+          "address": "0x1F00A3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

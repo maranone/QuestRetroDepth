@@ -1,0 +1,157 @@
+{
+  "schema": "qrd.rumble.sms.v1",
+  "game": {
+    "name": "SonicTheHedgehog",
+    "system": "sms"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\SonicTheHedgehog-Sms\\data.json",
+    "integration_tier": "stable",
+    "game_key": "SonicTheHedgehog-Sms"
+  },
+  "triggers": [
+    {
+      "id": "life_lost_lives_d246",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0xD246",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xD246",
+          "ram_offset": 4678
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xD246",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_d246",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0xD246",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xD246",
+          "ram_offset": 4678
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xD246",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "pickup_rings_d2aa",
+      "event": "pickup",
+      "watch": [
+        {
+          "absolute_address": "0xD2AA",
+          "size": 1,
+          "value_type": "bcd",
+          "byte_order": "native",
+          "raw_type": "|d1",
+          "address": "0xD2AA",
+          "ram_offset": 4778
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.25,
+          "duration_ms": 18
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Pickup-style counter.",
+      "source_fields": [
+        {
+          "name": "rings",
+          "address": "0xD2AA",
+          "raw_type": "|d1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_d2bb",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xD2BB",
+          "size": 2,
+          "value_type": "bcd",
+          "byte_order": "big",
+          "raw_type": ">d2",
+          "address": "0xD2BB",
+          "ram_offset": 4795
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xD2BB",
+          "raw_type": ">d2"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

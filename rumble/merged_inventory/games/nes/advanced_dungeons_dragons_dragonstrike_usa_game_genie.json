@@ -1,0 +1,97 @@
+{
+  "system": "nes",
+  "normalized_title": "advanceddungeonsdragonsdragonstrike",
+  "display_name": "Advanced Dungeons _ Dragons - DragonStrike (USA) (Game Genie)",
+  "aliases": [
+    "Advanced Dungeons _ Dragons - DragonStrike (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Advanced Dungeons _ Dragons - DragonStrike (USA).cht",
+      "total_cheat_rows": 28,
+      "raw_entry_count": 15,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "05E7:1C",
+          "desc": "Infinite Energy Bronze",
+          "address": "0x05E7"
+        },
+        {
+          "code": "05E7:03",
+          "desc": "Infinite Energy Silver",
+          "address": "0x05E7"
+        },
+        {
+          "code": "05E7:32",
+          "desc": "Infinite Energy Gold",
+          "address": "0x05E7"
+        },
+        {
+          "code": "ASVEXAEY",
+          "desc": "Hit Anywhere",
+          "address": "0x00DA"
+        },
+        {
+          "code": "YSVEUAVN",
+          "desc": "Hit Anywhere",
+          "address": "0x00DB"
+        },
+        {
+          "code": "05E6:10",
+          "desc": "Dragon Modifier",
+          "address": "0x05E6"
+        },
+        {
+          "code": "05F5:00",
+          "desc": "Shot Modifier",
+          "address": "0x05F5"
+        },
+        {
+          "code": "05F0:05",
+          "desc": "Hyper Mode On",
+          "address": "0x05F0"
+        },
+        {
+          "code": "06FA:00",
+          "desc": "Boss 1 Hit Kill",
+          "address": "0x06FA"
+        },
+        {
+          "code": "00D6:00",
+          "desc": "3 White Dragon Mission Goal Achieved",
+          "address": "0x00D6"
+        },
+        {
+          "code": "02FB:00",
+          "desc": "Warships Mission Goal Achieved",
+          "address": "0x02FB"
+        },
+        {
+          "code": "02F8:00",
+          "desc": "Black Dragon Mission Goal Achieved",
+          "address": "0x02F8"
+        },
+        {
+          "code": "05E7:2F",
+          "desc": "Infinite Health (All Dragons)",
+          "address": "0x05E7"
+        },
+        {
+          "code": "ESUOXIEY",
+          "desc": "Sound Test",
+          "address": "0x05DA"
+        },
+        {
+          "code": "ESVPSIEY",
+          "desc": "Japanese Text Mode",
+          "address": "0x055D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

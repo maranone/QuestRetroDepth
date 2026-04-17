@@ -1,0 +1,42 @@
+{
+  "system": "nes",
+  "normalized_title": "formulaonebuilttowin",
+  "display_name": "Formula One - Built to Win (USA) (Game Genie)",
+  "aliases": [
+    "Formula One - Built to Win (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Formula One - Built to Win (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "003F:01",
+          "desc": "Position Always 1st",
+          "address": "0x003F"
+        },
+        {
+          "code": "00C2:01",
+          "desc": "Position Always 1st",
+          "address": "0x00C2"
+        },
+        {
+          "code": "00B6:64",
+          "desc": "Car Goes Fast",
+          "address": "0x00B6"
+        },
+        {
+          "code": "00B6:FF",
+          "desc": "Car Goes At Max Speed",
+          "address": "0x00B6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

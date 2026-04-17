@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "disneysparty",
+  "display_name": "Disney's Party (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Disney's Party (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1002F170",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202F170"
+        },
+        {
+          "code": "82015BE8",
+          "desc": "Max Stars",
+          "address": "0x02015BE8"
+        },
+        {
+          "code": "8201731C",
+          "desc": "Always Able To Move",
+          "address": "0x0201731C"
+        },
+        {
+          "code": "82015BC2",
+          "desc": "Infinite Time",
+          "address": "0x02015BC2"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Disney's Party (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1002F170",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202F170"
+        },
+        {
+          "code": "82015BE8",
+          "desc": "Max Stars",
+          "address": "0x02015BE8"
+        },
+        {
+          "code": "8201731C",
+          "desc": "Always Able To Move",
+          "address": "0x0201731C"
+        },
+        {
+          "code": "82015BC2",
+          "desc": "Infinite Time",
+          "address": "0x02015BC2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

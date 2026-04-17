@@ -1,0 +1,121 @@
+{
+  "system": "nes",
+  "normalized_title": "spartanx2",
+  "display_name": "Spartan X 2 (Japan) (Game Genie)",
+  "aliases": [
+    "Spartan X 2 (Japan) (Game Genie)",
+    "Spartan X 2 (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\spartanx2_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0721",
+        "0x0725",
+        "0x072A"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SpartanX2-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0725",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0721",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x072A",
+          "type": "<n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Spartan X 2 (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 12,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0725:1C",
+          "desc": "Infinite Energy",
+          "address": "0x0725"
+        },
+        {
+          "code": "0721:09",
+          "desc": "Infinite Lives",
+          "address": "0x0721"
+        },
+        {
+          "code": "0727:09",
+          "desc": "Infinite Time",
+          "address": "0x0727"
+        },
+        {
+          "code": "0721:63",
+          "desc": "Infinite Lives",
+          "address": "0x0721"
+        },
+        {
+          "code": "0725:1C",
+          "desc": "Infinite Health",
+          "address": "0x0725"
+        },
+        {
+          "code": "03A7:00",
+          "desc": "Low Health Bosses",
+          "address": "0x03A7"
+        },
+        {
+          "code": "0727:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x0727"
+        },
+        {
+          "code": "0728:09",
+          "desc": "Infinite Time (Ten's Digit)",
+          "address": "0x0728"
+        },
+        {
+          "code": "0729:09",
+          "desc": "Infinite Time (Hundred's Digit)",
+          "address": "0x0729"
+        },
+        {
+          "code": "PEAAIK",
+          "desc": "Start With 9 Lives",
+          "address": "0x0405"
+        },
+        {
+          "code": "SLIEKA",
+          "desc": "Infinite Lives",
+          "address": "0x00B4"
+        },
+        {
+          "code": "GSYEYK",
+          "desc": "Have 3 Dragons",
+          "address": "0x04D7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

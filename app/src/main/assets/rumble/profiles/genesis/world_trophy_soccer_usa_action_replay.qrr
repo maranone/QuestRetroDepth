@@ -1,0 +1,6 @@
+game_name=World Trophy Soccer (USA) (Action Replay)
+game_key=world_trophy_soccer_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff14ce	score	0xFF14CE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff14d0	score	0xFF14D0	1	uint	little	prev < curr	0.8	1	right:0.350:60

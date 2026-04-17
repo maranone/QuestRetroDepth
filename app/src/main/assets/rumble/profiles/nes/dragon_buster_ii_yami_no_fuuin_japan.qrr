@@ -1,0 +1,5 @@
+game_name=Dragon Buster II - Yami no Fuuin (Japan)
+game_key=dragon_buster_ii_yami_no_fuuin_japan
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_00a7	pickup	0x00A7	1	uint	little	prev != curr	0.8	1	right:0.250:18

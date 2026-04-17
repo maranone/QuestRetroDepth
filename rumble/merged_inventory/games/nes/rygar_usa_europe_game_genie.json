@@ -1,0 +1,281 @@
+{
+  "system": "nes",
+  "normalized_title": "rygar",
+  "display_name": "Rygar (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Rygar (USA, Europe) (Game Genie)",
+    "Rygar (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rygar (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 95,
+      "raw_entry_count": 60,
+      "distinct_address_count": 56,
+      "sample_raw_entries": [
+        {
+          "code": "EPPOOZ",
+          "desc": "No Enemies (Can't Pass First Area)",
+          "address": "0x0291"
+        },
+        {
+          "code": "GAEPOK",
+          "desc": "Game Freezes With Flashing Lines",
+          "address": "0x0409"
+        },
+        {
+          "code": "APAPAP",
+          "desc": "Lines Appear And You Slowly Fall Then Die When You Reach The Bottom",
+          "address": "0x0110"
+        },
+        {
+          "code": "APAAAA",
+          "desc": "Title Screen Freezes",
+          "address": "0x0010"
+        },
+        {
+          "code": "AAAAAO",
+          "desc": "Lines Appear, Music Plays Faster, Enemies Are Invisible, Weapon Doesn't Work",
+          "address": "0x0100"
+        },
+        {
+          "code": "KIPPEG",
+          "desc": "Lines Appear",
+          "address": "0x0450"
+        },
+        {
+          "code": "PYGPEE",
+          "desc": "A Weird Enemy Appears In The Sky And Shoots Things At You",
+          "address": "0x0070"
+        },
+        {
+          "code": "POTPIT",
+          "desc": "There Are No Enemies In The First Area",
+          "address": "0x0615"
+        },
+        {
+          "code": "AAAAAA",
+          "desc": "Game Doesn't Start",
+          "address": "0x0000"
+        },
+        {
+          "code": "PYGPIT",
+          "desc": "You Bounce On A Forcefield At The Beginning Of The Game",
+          "address": "0x0675"
+        },
+        {
+          "code": "PYGPYG",
+          "desc": "You Fall Halfway Through The Ground",
+          "address": "0x0477"
+        },
+        {
+          "code": "TYPOOO",
+          "desc": "Game Freezes With Lines Going Up And Down",
+          "address": "0x01F1"
+        },
+        {
+          "code": "KITPAT",
+          "desc": "Rygar Goes Up And Down, And Left And Right Then Dies",
+          "address": "0x0650"
+        },
+        {
+          "code": "PPPPZZ",
+          "desc": "Able To Walkthrough Wall At The Beginning",
+          "address": "0x0212"
+        },
+        {
+          "code": "PYGAPI",
+          "desc": "Everything Is More Red Than Usual",
+          "address": "0x0571"
+        },
+        {
+          "code": "PIPPIP",
+          "desc": "Rock Wall At Left Is Able To Walkthrough",
+          "address": "0x0155"
+        },
+        {
+          "code": "TYPEGI",
+          "desc": "The Enemies Are Invisible But Can Still Hurt You",
+          "address": "0x05F4"
+        },
+        {
+          "code": "TYPOZY",
+          "desc": "There Is No Sun In The First Area",
+          "address": "0x07F2"
+        },
+        {
+          "code": "TYPPAT",
+          "desc": "The Screen Is Almost All Red, Then You Fall And Die Instantly",
+          "address": "0x0670"
+        },
+        {
+          "code": "TYPPPP",
+          "desc": "It Freezes With Flashing Lines",
+          "address": "0x0171"
+        },
+        {
+          "code": "GPAPPE",
+          "desc": "There Are Dotted Lines In The Sky",
+          "address": "0x0011"
+        },
+        {
+          "code": "PPPPPP",
+          "desc": "Total F%&KING WEIRDNESS!",
+          "address": "0x0111"
+        },
+        {
+          "code": "PEPEPE",
+          "desc": "The Music Goes Really Fast, Lines Appear Then After A Little While It Freezes",
+          "address": "0x0081"
+        },
+        {
+          "code": "PATPIS",
+          "desc": "It Freezes",
+          "address": "0x0505"
+        },
+        {
+          "code": "POPEPI",
+          "desc": "You Can Walkthrough The Stone Wall On The Left And You Go To A Different Place",
+          "address": "0x0591"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Rygar (USA).cht",
+      "total_cheat_rows": 95,
+      "raw_entry_count": 60,
+      "distinct_address_count": 56,
+      "sample_raw_entries": [
+        {
+          "code": "EPPOOZ",
+          "desc": "No Enemies (Can't Pass First Area)",
+          "address": "0x0291"
+        },
+        {
+          "code": "GAEPOK",
+          "desc": "Game Freezes With Flashing Lines",
+          "address": "0x0409"
+        },
+        {
+          "code": "APAPAP",
+          "desc": "Lines Appear And You Slowly Fall Then Die When You Reach The Bottom",
+          "address": "0x0110"
+        },
+        {
+          "code": "APAAAA",
+          "desc": "Title Screen Freezes",
+          "address": "0x0010"
+        },
+        {
+          "code": "AAAAAO",
+          "desc": "Lines Appear, Music Plays Faster, Enemies Are Invisible, Weapon Doesn't Work",
+          "address": "0x0100"
+        },
+        {
+          "code": "KIPPEG",
+          "desc": "Lines Appear",
+          "address": "0x0450"
+        },
+        {
+          "code": "PYGPEE",
+          "desc": "A Weird Enemy Appears In The Sky And Shoots Things At You",
+          "address": "0x0070"
+        },
+        {
+          "code": "POTPIT",
+          "desc": "There Are No Enemies In The First Area",
+          "address": "0x0615"
+        },
+        {
+          "code": "AAAAAA",
+          "desc": "Game Doesn't Start",
+          "address": "0x0000"
+        },
+        {
+          "code": "PYGPIT",
+          "desc": "You Bounce On A Forcefield At The Beginning Of The Game",
+          "address": "0x0675"
+        },
+        {
+          "code": "PYGPYG",
+          "desc": "You Fall Halfway Through The Ground",
+          "address": "0x0477"
+        },
+        {
+          "code": "TYPOOO",
+          "desc": "Game Freezes With Lines Going Up And Down",
+          "address": "0x01F1"
+        },
+        {
+          "code": "KITPAT",
+          "desc": "Rygar Goes Up And Down, And Left And Right Then Dies",
+          "address": "0x0650"
+        },
+        {
+          "code": "PPPPZZ",
+          "desc": "Able To Walkthrough Wall At The Beginning",
+          "address": "0x0212"
+        },
+        {
+          "code": "PYGAPI",
+          "desc": "Everything Is More Red Than Usual",
+          "address": "0x0571"
+        },
+        {
+          "code": "PIPPIP",
+          "desc": "Rock Wall At Left Is Able To Walkthrough",
+          "address": "0x0155"
+        },
+        {
+          "code": "TYPEGI",
+          "desc": "The Enemies Are Invisible But Can Still Hurt You",
+          "address": "0x05F4"
+        },
+        {
+          "code": "TYPOZY",
+          "desc": "There Is No Sun In The First Area",
+          "address": "0x07F2"
+        },
+        {
+          "code": "TYPPAT",
+          "desc": "The Screen Is Almost All Red, Then You Fall And Die Instantly",
+          "address": "0x0670"
+        },
+        {
+          "code": "TYPPPP",
+          "desc": "It Freezes With Flashing Lines",
+          "address": "0x0171"
+        },
+        {
+          "code": "GPAPPE",
+          "desc": "There Are Dotted Lines In The Sky",
+          "address": "0x0011"
+        },
+        {
+          "code": "PPPPPP",
+          "desc": "Total F%&KING WEIRDNESS!",
+          "address": "0x0111"
+        },
+        {
+          "code": "PEPEPE",
+          "desc": "The Music Goes Really Fast, Lines Appear Then After A Little While It Freezes",
+          "address": "0x0081"
+        },
+        {
+          "code": "PATPIS",
+          "desc": "It Freezes",
+          "address": "0x0505"
+        },
+        {
+          "code": "POPEPI",
+          "desc": "You Can Walkthrough The Stone Wall On The Left And You Go To A Different Place",
+          "address": "0x0591"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

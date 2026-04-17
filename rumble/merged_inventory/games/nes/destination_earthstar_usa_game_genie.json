@@ -1,0 +1,82 @@
+{
+  "system": "nes",
+  "normalized_title": "destinationearthstar",
+  "display_name": "Destination Earthstar (USA) (Game Genie)",
+  "aliases": [
+    "Destination Earthstar (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Destination Earthstar (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "ISNEUUOP",
+          "desc": "Less energy",
+          "address": "0x03DB"
+        },
+        {
+          "code": "NNNEUUOO",
+          "desc": "More energy",
+          "address": "0x03FB"
+        },
+        {
+          "code": "05B0:FF",
+          "desc": "Infinite Heat Seekers",
+          "address": "0x05B0"
+        },
+        {
+          "code": "05AE:FF",
+          "desc": "Infinite Argon Lasers",
+          "address": "0x05AE"
+        },
+        {
+          "code": "069B:00",
+          "desc": "Lasers Never Overheat",
+          "address": "0x069B"
+        },
+        {
+          "code": "00D4:00",
+          "desc": "Infinite Damage",
+          "address": "0x00D4"
+        },
+        {
+          "code": "0065:03",
+          "desc": "Infinite Lives While Side Scrolling",
+          "address": "0x0065"
+        },
+        {
+          "code": "05A9:75",
+          "desc": "Infinite Energy (Hundred's Digit)",
+          "address": "0x05A9"
+        },
+        {
+          "code": "05AA:76",
+          "desc": "Infinite Energy (Ten's &amp; One's Digit)",
+          "address": "0x05AA"
+        },
+        {
+          "code": "05A8:99",
+          "desc": "Infinite Energy (Hundred &amp; Ten Thousand's Digits)",
+          "address": "0x05A8"
+        },
+        {
+          "code": "05AD:FF",
+          "desc": "Infinite Ruby Laser",
+          "address": "0x05AD"
+        },
+        {
+          "code": "05AF:FF",
+          "desc": "Infinite Torpedos",
+          "address": "0x05AF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

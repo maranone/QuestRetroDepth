@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "gundec",
+  "display_name": "Gun-Dec (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gun-Dec (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0280:14",
+          "desc": "Infinite Energy",
+          "address": "0x0280"
+        },
+        {
+          "code": "035F:0F",
+          "desc": "Infinite Weapon",
+          "address": "0x035F"
+        },
+        {
+          "code": "0360:0F",
+          "desc": "Infinite Weapon",
+          "address": "0x0360"
+        },
+        {
+          "code": "0011:61",
+          "desc": "Untouchable",
+          "address": "0x0011"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

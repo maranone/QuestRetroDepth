@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "baddudesvsdragonninja",
+  "display_name": "Bad Dudes vs. Dragon Ninja (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bad Dudes vs. Dragon Ninja (Europe).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "0204:28",
+          "desc": "Infinite Time",
+          "address": "0x0204"
+        },
+        {
+          "code": "02BE:04",
+          "desc": "Infinite Lives",
+          "address": "0x02BE"
+        },
+        {
+          "code": "02AB:0A",
+          "desc": "Infinite Health",
+          "address": "0x02AB"
+        },
+        {
+          "code": "0227:2B",
+          "desc": "Always Charged",
+          "address": "0x0227"
+        },
+        {
+          "code": "SZOEAOSE",
+          "desc": "Infinite Health",
+          "address": "0x01A8"
+        },
+        {
+          "code": "AAKEZOLZ",
+          "desc": "Always Charged",
+          "address": "0x018A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

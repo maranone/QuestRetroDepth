@@ -1,0 +1,102 @@
+{
+  "system": "nes",
+  "normalized_title": "terminator2judgmentday",
+  "display_name": "Terminator 2 - Judgment Day (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Terminator 2 - Judgment Day (USA) (Beta)",
+    "Terminator 2 - Judgment Day (USA)",
+    "Terminator 2 - Judgment Day (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\terminator2judgmentday_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0690",
+        "0x071B",
+        "0x071C"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Terminator2JudgmentDay-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x071B",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x071C",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0690",
+          "type": ">n7"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Terminator 2 - Judgment Day (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "SXOATOVK",
+          "desc": "Infinite Lives",
+          "address": "0x012E"
+        },
+        {
+          "code": "XNVOSOKN",
+          "desc": "Super Jump",
+          "address": "0x01FD"
+        },
+        {
+          "code": "PAOOVZZA",
+          "desc": "Slower Running",
+          "address": "0x028E"
+        },
+        {
+          "code": "PAUOXZZA",
+          "desc": "Slower Running",
+          "address": "0x028A"
+        },
+        {
+          "code": "LAOOVZZA",
+          "desc": "Faster Running",
+          "address": "0x028E"
+        },
+        {
+          "code": "LAUOXZZA",
+          "desc": "Faster Running",
+          "address": "0x028A"
+        },
+        {
+          "code": "LESPKGZA",
+          "desc": "Faster And Longer Jumping",
+          "address": "0x040C"
+        },
+        {
+          "code": "LEVPEGZA",
+          "desc": "Faster And Longer Jumping",
+          "address": "0x0408"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

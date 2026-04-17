@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "powerrangers",
+  "display_name": "Power Rangers",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Power Rangers.cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "GXSPGPEL",
+          "desc": "Hit Anywhere (MegaZord Mode)",
+          "address": "0x012C"
+        },
+        {
+          "code": "ASSOGPEP",
+          "desc": "Hit Anywhere (MegaZord Mode)",
+          "address": "0x01DC"
+        },
+        {
+          "code": "0087:00",
+          "desc": "Infinite Health (Ranger Mode)",
+          "address": "0x0087"
+        },
+        {
+          "code": "00A8:4F",
+          "desc": "Infinite Health (Zord Mode)",
+          "address": "0x00A8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,8 @@
+game_name=Back to the Future Part II _ III (USA) (Game Genie)
+game_key=back_to_the_future_part_ii_iii_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_04c5	life_lost	0x04C5	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_04c5	life_gained	0x04C5	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_01ab	life_lost	0x01AB	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_01ab	life_gained	0x01AB	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

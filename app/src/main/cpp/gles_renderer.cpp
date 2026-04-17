@@ -3,6 +3,7 @@
 #include <cmath>
 #include <cstring>
 #include <algorithm>
+#include <array>
 
 #define LOG_TAG "QrdGles"
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
@@ -24,7 +25,11 @@ uniform float uRoundness;
 uniform float uCopyCount;
 uniform float uCopySpan;
 uniform float uDepthMap;
+uniform float uBboxMode;
 uniform float uScreenCurve;
+uniform float uSubrectEnable;
+uniform vec4  uSubrect;
+uniform float uInstanceBase;
 // Canvas placement (edit mode)
 uniform float uCanvasX;   // horizontal translation (metres)
 uniform float uCanvasY;   // vertical translation (metres)
@@ -36,14 +41,32 @@ out vec2  vUV;
 out float vCopyT;
 
 void main() {
-    float inst = float(gl_InstanceID);
     float copy_count = max(1.0, uCopyCount);
+    // BBox: reverse instance order so the deepest copy (gl_InstanceID=0) is drawn first
+    // and the shallowest last — correct back-to-front order for alpha compositing.
+    // Normal: standard front-to-back (closest to viewer last so it composites on top).
+    float inst = uBboxMode > 0.5 ? (copy_count - float(gl_InstanceID))
+                                 : (float(gl_InstanceID) + uInstanceBase);
     float t = min(inst, copy_count) / copy_count;
     float offset = t * uCopySpan;
-    float d = max(0.01, uDepth - offset);
+    // BBox mode: copies go DEEPER (into the screen) so the front face stays closest to
+    // the viewer and the extrusion recedes away, making the object look 3D going inward.
+    // Normal mode: copies come toward the viewer (retrodepth pop-out effect).
+    float d = uBboxMode > 0.5 ? max(0.01, uDepth + offset) : max(0.01, uDepth - offset);
 
-    float scale = 1.0;
-    if (uDepthMap > 0.5 && uRoundness > 0.5) {
+    // scale_x: horizontal-only width factor (bbox wedge expands width, not height).
+    // scale: both-axis factor (WholeLayer bulge).
+    float scale_x = 1.0;
+    float scale   = 1.0;
+    if (uBboxMode > 0.5) {
+        // Ellipse/cylinder profile: wider ramp-in (0→35%), wide plateau (35%→65%),
+        // symmetric ramp-out (65%→100%).
+        float wedge = 0.0;
+        if (t <= 0.35)      wedge = t / 0.35;
+        else if (t < 0.65)  wedge = 1.0;
+        else                wedge = clamp((1.0 - t) / 0.35, 0.0, 1.0);
+        scale_x = 1.0 + wedge * 0.20;
+    } else if (uDepthMap > 0.5 && uRoundness > 0.5) {
         // Tiny bulge only: layers are full-frame quads with large transparent margins,
         // so even small scale changes can visibly drag the sprite inside the frame.
         float wedge = 0.0;
@@ -79,12 +102,19 @@ void main() {
     vec3 right = vec3(cos_az,           0.0,     sin_az);
     vec3 up    = vec3(-sin_az * sin_el, cos_el, -cos_az * sin_el);
 
-    float vx = aPos.x * uQuadW * scale * uCanvasScale;
-    float vy = aPos.y * uQuadH * scale * uCanvasScale;
+    float sub_w = mix(1.0, uSubrect.z - uSubrect.x, uSubrectEnable);
+    float sub_h = mix(1.0, uSubrect.w - uSubrect.y, uSubrectEnable);
+    float sub_cx = mix(0.5, 0.5 * (uSubrect.x + uSubrect.z), uSubrectEnable);
+    float sub_cy = mix(0.5, 0.5 * (uSubrect.y + uSubrect.w), uSubrectEnable);
+    float center_dx = (sub_cx - 0.5) * uQuadW * uCanvasScale;
+    float center_dy = (0.5 - sub_cy) * uQuadH * uCanvasScale;
+
+    float vx = aPos.x * uQuadW * scale_x * scale * uCanvasScale * sub_w;
+    float vy = aPos.y * uQuadH *           scale * uCanvasScale * sub_h;
 
     // Screen curve pushes vertices along the outward normal
-    gl_Position = uVP * vec4(center + right * vx + up * vy + normal * curve_offset, 1.0);
-    vUV    = aUV;
+    gl_Position = uVP * vec4(center + right * (center_dx + vx) + up * (center_dy + vy) + normal * curve_offset, 1.0);
+    vUV    = mix(aUV, mix(uSubrect.xy, uSubrect.zw, aUV), uSubrectEnable);
     vCopyT = t;
 }
 )GLSL";
@@ -102,9 +132,13 @@ uniform float uRoundness;
 uniform float uCopyCount;
 uniform float uCopySpan;
 uniform float uDepthMap;
+uniform float uBboxMode;
 uniform float uScreenCurve;
 uniform float uTiltX;
 uniform float uTiltY;
+uniform float uSubrectEnable;
+uniform vec4  uSubrect;
+uniform float uInstanceBase;
 uniform float uCanvasX;
 uniform float uCanvasY;
 uniform float uCanvasAz;
@@ -115,14 +149,22 @@ out vec2  vUV;
 out float vCopyT;
 
 void main() {
-    float inst = float(gl_InstanceID);
     float copy_count = max(1.0, uCopyCount);
+    float inst = uBboxMode > 0.5 ? (copy_count - float(gl_InstanceID))
+                                 : (float(gl_InstanceID) + uInstanceBase);
     float t = min(inst, copy_count) / copy_count;
     float offset = t * uCopySpan;
-    float d = max(0.01, uDepth - offset);
+    float d = uBboxMode > 0.5 ? max(0.01, uDepth + offset) : max(0.01, uDepth - offset);
 
-    float scale = 1.0;
-    if (uDepthMap > 0.5 && uRoundness > 0.5) {
+    float scale_x = 1.0;
+    float scale   = 1.0;
+    if (uBboxMode > 0.5) {
+        float wedge = 0.0;
+        if (t <= 0.35)      wedge = t / 0.35;
+        else if (t < 0.65)  wedge = 1.0;
+        else                wedge = clamp((1.0 - t) / 0.35, 0.0, 1.0);
+        scale_x = 1.0 + wedge * 0.20;
+    } else if (uDepthMap > 0.5 && uRoundness > 0.5) {
         float wedge = 0.0;
         if (t <= 0.4) {
             wedge = t / 0.4;
@@ -158,15 +200,22 @@ void main() {
     vec3 tilted_normal = right * sty + pitched_normal * cty;
     vec3 tilted_up     = pitched_up;
 
-    float vx = aPos.x * uQuadW * scale * uCanvasScale;
-    float vy = aPos.y * uQuadH * scale * uCanvasScale;
+    float sub_w = mix(1.0, uSubrect.z - uSubrect.x, uSubrectEnable);
+    float sub_h = mix(1.0, uSubrect.w - uSubrect.y, uSubrectEnable);
+    float sub_cx = mix(0.5, 0.5 * (uSubrect.x + uSubrect.z), uSubrectEnable);
+    float sub_cy = mix(0.5, 0.5 * (uSubrect.y + uSubrect.w), uSubrectEnable);
+    float center_dx = (sub_cx - 0.5) * uQuadW * uCanvasScale;
+    float center_dy = (0.5 - sub_cy) * uQuadH * uCanvasScale;
+
+    float vx = aPos.x * uQuadW * scale_x * scale * uCanvasScale * sub_w;
+    float vy = aPos.y * uQuadH *           scale * uCanvasScale * sub_h;
 
     // The strip mesh supplies enough vertices for this depth shift to read as a curve.
     float edge_t = aPos.x * 2.0;
     float curve_offset = uScreenCurve * uQuadW * 0.18 * edge_t * edge_t;
 
-    gl_Position = uVP * vec4(center + tilted_right * vx + tilted_up * vy + tilted_normal * curve_offset, 1.0);
-    vUV    = aUV;
+    gl_Position = uVP * vec4(center + tilted_right * (center_dx + vx) + tilted_up * (center_dy + vy) + tilted_normal * curve_offset, 1.0);
+    vUV    = mix(aUV, mix(uSubrect.xy, uSubrect.zw, aUV), uSubrectEnable);
     vCopyT = t;
 }
 )GLSL";
@@ -185,28 +234,57 @@ uniform float uBrightness;
 uniform float uCopyCount;
 uniform float uSolidStack;  // 1.0 = fill transparent copy pixels with dark extrusion colour
 uniform float uForceOpaqueAlpha; // 1.0 = visible game pixels write full compositor alpha
+uniform float uBboxMode; // 1.0 = apply bbox-centered width shrink on copy instances
+uniform float uBboxDebug; // 1.0 = tint bbox copy instances per detected object
+uniform int uObjectBoxCount;
+uniform vec4 uObjectBoxes[64];
 
 in vec2  vUV;
 in float vCopyT;
 out vec4 fragColor;
 
-void main() {
-    vec4 color;
+vec4 sampleLayer(vec2 uv) {
     if (uUpscale > 0.5) {
-        vec2 tsz  = vec2(textureSize(uTexture, 0));
-        vec2 texel = 1.0 / tsz;
-        vec2 fr   = fract(vUV * tsz);
-        vec2 snap = (floor(vUV * tsz) + 0.5) / tsz;
-        vec2 ramp = clamp((fr - 0.5) * 1.55 + 0.5, 0.0, 1.0);
-        vec2 suv  = snap + (ramp - 0.5) / tsz;
-        color = texture(uTexture, suv);
-        vec4 blur = (texture(uTexture, suv + vec2(texel.x, 0.0)) +
-                     texture(uTexture, suv - vec2(texel.x, 0.0)) +
-                     texture(uTexture, suv + vec2(0.0, texel.y)) +
-                     texture(uTexture, suv - vec2(0.0, texel.y))) * 0.25;
-        color += (color - blur) * 0.6;
+        // Sharp-bilinear ("pixel-perfect") upscale:
+        // Stay on the source pixel center for most of the pixel area; only blend
+        // in a 1-output-pixel-wide border region at each edge.  This gives crisp
+        // pixel art without the blocky hard edge of GL_NEAREST.
+        vec2 tsz = vec2(textureSize(uTexture, 0));
+        vec2 p   = uv * tsz;           // position in source-pixel space
+        vec2 fr  = fract(p);           // fractional part within each source pixel
+        // Derivative of p with respect to screen pixels — gives output/source ratio.
+        vec2 dpdx = dFdx(p);
+        vec2 dpdy = dFdy(p);
+        vec2 scale = vec2(length(dpdx), length(dpdy));  // output pixels per source pixel
+        // Clamp scale to avoid div-by-zero at scale < 1 (downscale path).
+        scale = max(scale, vec2(1.0));
+        // Blend window: 1 output pixel wide, expressed in source-pixel fractions.
+        vec2 w = 0.5 / scale;
+        // Smoothstep within the edge window; flat (=snap to center) everywhere else.
+        vec2 sharp = smoothstep(0.5 - w, 0.5 + w, fr);
+        vec2 suv   = (floor(p) + sharp) / tsz;
+        return texture(uTexture, suv);
     } else {
-        color = texture(uTexture, vUV);
+        return texture(uTexture, uv);
+    }
+}
+
+
+vec3 bbox_debug_color(int idx) {
+    float h = fract(float(idx) * 0.61803398875);
+    float r = abs(h * 6.0 - 3.0) - 1.0;
+    float g = 2.0 - abs(h * 6.0 - 2.0);
+    float b = 2.0 - abs(h * 6.0 - 4.0);
+    return clamp(vec3(r, g, b), 0.0, 1.0);
+}
+
+void main() {
+    vec4 color = sampleLayer(vUV);
+
+    // BBox mode: subrect already constrains UV to the object region — no clip/resample needed.
+    // Depth and sizing are handled entirely in the vertex shader.
+    if (uBboxMode > 0.5 && vCopyT > 0.0 && uBboxDebug > 0.5 && color.a >= 0.01) {
+        color.rgb = mix(color.rgb, bbox_debug_color(0), 0.65);
     }
 
     if (color.a < 0.01) {
@@ -345,6 +423,13 @@ bool GlesRenderer::init_layer_program(std::string& err) {
     m_u_canvas_scale = glGetUniformLocation(m_program, "uCanvasScale");
     m_u_solid_stack  = glGetUniformLocation(m_program, "uSolidStack");
     m_u_force_opaque_alpha = glGetUniformLocation(m_program, "uForceOpaqueAlpha");
+    m_u_bbox_mode    = glGetUniformLocation(m_program, "uBboxMode");
+    m_u_bbox_debug   = glGetUniformLocation(m_program, "uBboxDebug");
+    m_u_subrect_enable = glGetUniformLocation(m_program, "uSubrectEnable");
+    m_u_subrect      = glGetUniformLocation(m_program, "uSubrect");
+    m_u_instance_base = glGetUniformLocation(m_program, "uInstanceBase");
+    m_u_object_box_count = glGetUniformLocation(m_program, "uObjectBoxCount");
+    m_u_object_boxes = glGetUniformLocation(m_program, "uObjectBoxes[0]");
     return true;
 }
 
@@ -381,6 +466,13 @@ bool GlesRenderer::init_immersive_layer_program(std::string& err) {
     m_i_u_canvas_scale = glGetUniformLocation(m_immersive_program, "uCanvasScale");
     m_i_u_solid_stack  = glGetUniformLocation(m_immersive_program, "uSolidStack");
     m_i_u_force_opaque_alpha = glGetUniformLocation(m_immersive_program, "uForceOpaqueAlpha");
+    m_i_u_bbox_mode    = glGetUniformLocation(m_immersive_program, "uBboxMode");
+    m_i_u_bbox_debug   = glGetUniformLocation(m_immersive_program, "uBboxDebug");
+    m_i_u_subrect_enable = glGetUniformLocation(m_immersive_program, "uSubrectEnable");
+    m_i_u_subrect      = glGetUniformLocation(m_immersive_program, "uSubrect");
+    m_i_u_instance_base = glGetUniformLocation(m_immersive_program, "uInstanceBase");
+    m_i_u_object_box_count = glGetUniformLocation(m_immersive_program, "uObjectBoxCount");
+    m_i_u_object_boxes = glGetUniformLocation(m_immersive_program, "uObjectBoxes[0]");
     return true;
 }
 
@@ -1020,12 +1112,50 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
     const GLint u_canvas_scale = immersive_active ? m_i_u_canvas_scale : m_u_canvas_scale;
     const GLint u_solid_stack  = immersive_active ? m_i_u_solid_stack  : m_u_solid_stack;
     const GLint u_force_opaque_alpha = immersive_active ? m_i_u_force_opaque_alpha : m_u_force_opaque_alpha;
+    const GLint u_bbox_mode    = immersive_active ? m_i_u_bbox_mode : m_u_bbox_mode;
+    const GLint u_bbox_debug   = immersive_active ? m_i_u_bbox_debug : m_u_bbox_debug;
+    const GLint u_subrect_enable = immersive_active ? m_i_u_subrect_enable : m_u_subrect_enable;
+    const GLint u_subrect = immersive_active ? m_i_u_subrect : m_u_subrect;
+    const GLint u_instance_base = immersive_active ? m_i_u_instance_base : m_u_instance_base;
+    const GLint u_object_box_count = immersive_active ? m_i_u_object_box_count : m_u_object_box_count;
+    const GLint u_object_boxes = immersive_active ? m_i_u_object_boxes : m_u_object_boxes;
     const int layer_vertex_count = immersive_active ? m_curve_vertex_count : 6;
+
+    // Integer-scale + pixel-grid snap (upscale mode only).
+    // All layers share the same canvas_x/y/scale uniforms, so we snap once using
+    // layer 0's pixel size as the reference grid.  The goal:
+    //   • canvas_scale is rounded to the nearest integer pixel multiplier
+    //     (x1, x2, x3 … — no fractional scales that blur GL_NEAREST output)
+    //   • canvas_x/y are snapped to the nearest whole source-pixel boundary
+    //     so the quad never sits between pixels during head movement
+    float snapped_canvas_x     = canvas_x;
+    float snapped_canvas_y     = canvas_y;
+    float snapped_canvas_scale = canvas_scale;
+    if (state.upscale) {
+        // Find first valid frame to derive the pixel-size grid.
+        for (const LayerFrame* fp : frames) {
+            if (!fp || fp->width <= 0 || fp->quad_width_meters <= 0.0f) continue;
+            // px_size: physical width of one source pixel in metres
+            const float px_size = fp->quad_width_meters / (float)fp->width;
+            // Snap canvas_scale: round to nearest integer multiplier.
+            // scale * qw / qw = scale; integer multiplier = round(scale)
+            // Guard against round-to-zero.
+            const float int_scale = std::max(1.0f, std::round(canvas_scale));
+            snapped_canvas_scale = int_scale;
+            // Snap canvas_x/y to multiples of the scaled pixel size.
+            const float grid = px_size * int_scale;
+            if (grid > 0.0f) {
+                snapped_canvas_x = std::round(canvas_x / grid) * grid;
+                snapped_canvas_y = std::round(canvas_y / grid) * grid;
+            }
+            break;
+        }
+    }
 
     glUseProgram(layer_program);
     glUniformMatrix4fv(u_vp, 1, GL_FALSE, vp.data());
     glUniform1f(u_upscale,      state.upscale ? 1.0f : 0.0f);
-    glUniform1f(u_depthmap,     state.depthmap ? 1.0f : 0.0f);
+    glUniform1f(u_depthmap,     state.depth_mode == DepthMode::WholeLayer ? 1.0f : 0.0f);
     glUniform1f(u_gamma,        state.gamma);
     glUniform1f(u_contrast,     state.contrast);
     glUniform1f(u_saturation,   state.saturation);
@@ -1038,12 +1168,18 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
         glUniform1f(m_i_u_tilt_y, state.tilt_y);
     }
     glUniform1f(u_solid_stack,  0.0f);
-    glUniform1f(u_canvas_x,     canvas_x);
-    glUniform1f(u_canvas_y,     canvas_y);
+    glUniform1f(u_canvas_x,     snapped_canvas_x);
+    glUniform1f(u_canvas_y,     snapped_canvas_y);
     glUniform1f(u_canvas_az,    canvas_az);
     glUniform1f(u_canvas_el,    canvas_el);
-    glUniform1f(u_canvas_scale, canvas_scale);
+    glUniform1f(u_canvas_scale, snapped_canvas_scale);
     glUniform1i(u_texture, 0);
+    glUniform1f(u_bbox_mode, 0.0f);
+    glUniform1f(u_bbox_debug, 0.0f);
+    glUniform1f(u_subrect_enable, 0.0f);
+    glUniform4f(u_subrect, 0.0f, 0.0f, 1.0f, 1.0f);
+    glUniform1f(u_instance_base, 0.0f);
+    glUniform1i(u_object_box_count, 0);
 
     glBindVertexArray(immersive_active ? m_curve_vao : m_vao);
     glActiveTexture(GL_TEXTURE0);
@@ -1063,7 +1199,10 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
         if (!frames[i]) continue;
         const LayerFrame& fr = *frames[i];
         if (fr.width <= 0 || fr.height <= 0 || fr.rgba.empty() || !fr.has_pixels) continue;
-        const bool wedge_active = state.depthmap && fr.wedge_eligible;
+        const bool wedge_active = state.depth_mode == DepthMode::WholeLayer && fr.wedge_eligible;
+        const bool bbox_active = state.depth_mode == DepthMode::BoundingBox &&
+                                 fr.bbox_eligible &&
+                                 !fr.object_boxes.empty();
 
         update_layer(i, fr);
 
@@ -1087,6 +1226,26 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
         glUniform1f(u_copy_count, (float)copy_count);
         glUniform1f(u_copy_span,  copy_span);
         glUniform1f(u_roundness,  wedge_active ? 1.0f : 0.0f);
+        glUniform1f(u_bbox_mode, 0.0f);
+        glUniform1f(u_bbox_debug, 0.0f);
+
+        // Perspective compensation: zoom into the texture centre by 1/scale.
+        // uSubrect shrinks the rendered quad by sub_w=1/S, so we pre-scale uQuadW/H
+        // by S to keep the physical quad size unchanged. Net quad = qw*S*(1/S) = qw.
+        if (fr.persp_comp_scale > 1.001f) {
+            const float S = fr.persp_comp_scale;
+            const float half = 0.5f / S;
+            glUniform1f(u_quad_w, qw * S);
+            glUniform1f(u_quad_h, qh * S);
+            glUniform1f(u_subrect_enable, 1.0f);
+            glUniform4f(u_subrect, 0.5f - half, 0.5f - half, 0.5f + half, 0.5f + half);
+        } else {
+            glUniform1f(u_subrect_enable, 0.0f);
+            glUniform4f(u_subrect, 0.0f, 0.0f, 1.0f, 1.0f);
+        }
+
+        glUniform1f(u_instance_base, 0.0f);
+        glUniform1i(u_object_box_count, 0);
 
         glBindTexture(GL_TEXTURE_2D, m_layers[i].tex);
         // Upscale shader needs smooth input; otherwise keep crisp nearest-neighbour.
@@ -1108,17 +1267,52 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
             glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
         }
 
-        if (state.layers_3d) {
+        if (bbox_active) {
+            // Draw per-object extrusion copies FIRST (they go deeper into the screen).
+            // The original front face is drawn LAST so it composites on top — it is the
+            // closest layer to the viewer and must win the alpha blend.
+            if (copy_count > 0) {
+                glUniform1f(u_depthmap, 1.0f);
+                glUniform1f(u_roundness, 1.0f);
+                glUniform1f(u_bbox_mode, 1.0f);
+                glUniform1f(u_bbox_debug, 0.0f);
+                glUniform1f(u_instance_base, 1.0f);
+                glUniform1i(u_object_box_count, 1);
+
+                for (std::size_t bi = 0; bi < fr.object_boxes.size() && bi < GlesRenderer::k_max_object_boxes; ++bi) {
+                    const ObjectBoundingBox& box = fr.object_boxes[bi];
+                    const float inv_w = 1.0f / (float)fr.width;
+                    const float inv_h = 1.0f / (float)fr.height;
+                    const float u0 = (float)box.min_x * inv_w;
+                    const float v0 = (float)box.min_y * inv_h;
+                    const float u1 = (float)(box.max_x + 1) * inv_w;
+                    const float v1 = (float)(box.max_y + 1) * inv_h;
+                    glUniform1f(u_subrect_enable, 1.0f);
+                    glUniform4f(u_subrect, u0, v0, u1, v1);
+                    glDrawArraysInstanced(GL_TRIANGLES, 0, layer_vertex_count, copy_count);
+                }
+
+                glUniform1f(u_depthmap, state.depth_mode == DepthMode::WholeLayer ? 1.0f : 0.0f);
+                glUniform1f(u_roundness, wedge_active ? 1.0f : 0.0f);
+                glUniform1f(u_bbox_mode, 0.0f);
+                glUniform1f(u_bbox_debug, 0.0f);
+                glUniform1f(u_subrect_enable, 0.0f);
+                glUniform4f(u_subrect, 0.0f, 0.0f, 1.0f, 1.0f);
+                glUniform1f(u_instance_base, 0.0f);
+                glUniform1i(u_object_box_count, 0);
+            }
+
+            // Front face last: original layer at uDepth (closest to viewer), composites on top.
+            glDrawArrays(GL_TRIANGLES, 0, layer_vertex_count);
+        } else if (state.layers_3d) {
+            glDrawArraysInstanced(GL_TRIANGLES, 0, layer_vertex_count, copy_count + 1);
+        } else if (wedge_active) {
             glDrawArraysInstanced(GL_TRIANGLES, 0, layer_vertex_count, copy_count + 1);
         } else {
-            if (wedge_active) {
+            if (copy_count > 0) {
                 glDrawArraysInstanced(GL_TRIANGLES, 0, layer_vertex_count, copy_count + 1);
             } else {
-                if (copy_count > 0) {
-                    glDrawArraysInstanced(GL_TRIANGLES, 0, layer_vertex_count, copy_count + 1);
-                } else {
-                    glDrawArrays(GL_TRIANGLES, 0, layer_vertex_count);
-                }
+                glDrawArrays(GL_TRIANGLES, 0, layer_vertex_count);
             }
         }
 

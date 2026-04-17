@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "metalgunslinger",
+  "display_name": "Metalgun Slinger (Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Metalgun Slinger (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "10001812",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001812"
+        },
+        {
+          "code": "83006D44",
+          "desc": "Stop Timer",
+          "address": "0x02006D44"
+        },
+        {
+          "code": "33006D30",
+          "desc": "Infinite HP",
+          "address": "0x02006D30"
+        },
+        {
+          "code": "33006D32",
+          "desc": "Infinite GF",
+          "address": "0x02006D32"
+        },
+        {
+          "code": "33006D34",
+          "desc": "Infinite Art Ammo",
+          "address": "0x02006D34"
+        },
+        {
+          "code": "320041DB",
+          "desc": "MetalGun Power Maxed",
+          "address": "0x020041DB"
+        },
+        {
+          "code": "320041DC",
+          "desc": "Have 4 Crystals",
+          "address": "0x020041DC"
+        },
+        {
+          "code": "320041DF",
+          "desc": "All Badges",
+          "address": "0x020041DF"
+        },
+        {
+          "code": "320041E0",
+          "desc": "All Arts",
+          "address": "0x020041E0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Metalgun Slinger (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "10001812",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001812"
+        },
+        {
+          "code": "83006D44",
+          "desc": "Stop Timer",
+          "address": "0x02006D44"
+        },
+        {
+          "code": "33006D30",
+          "desc": "Infinite HP",
+          "address": "0x02006D30"
+        },
+        {
+          "code": "33006D32",
+          "desc": "Infinite GF",
+          "address": "0x02006D32"
+        },
+        {
+          "code": "33006D34",
+          "desc": "Infinite Art Ammo",
+          "address": "0x02006D34"
+        },
+        {
+          "code": "320041DB",
+          "desc": "MetalGun Power Maxed",
+          "address": "0x020041DB"
+        },
+        {
+          "code": "320041DC",
+          "desc": "Have 4 Crystals",
+          "address": "0x020041DC"
+        },
+        {
+          "code": "320041DF",
+          "desc": "All Badges",
+          "address": "0x020041DF"
+        },
+        {
+          "code": "320041E0",
+          "desc": "All Arts",
+          "address": "0x020041E0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

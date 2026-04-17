@@ -1,0 +1,20 @@
+game_name=Tenchi Muyou! - Game Hen (Japan) (Action Replay)
+game_key=tenchi_muyou_game_hen_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_0040	damage_taken	0x7F0040	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0040	death	0x7F0040	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0090	damage_taken	0x7F0090	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0090	death	0x7F0090	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_00e0	damage_taken	0x7F00E0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00e0	death	0x7F00E0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0130	damage_taken	0x7F0130	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0130	death	0x7F0130	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0180	damage_taken	0x7F0180	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0180	death	0x7F0180	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0041	damage_taken	0x7F0041	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0041	death	0x7F0041	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0091	damage_taken	0x7F0091	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0091	death	0x7F0091	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_00e1	damage_taken	0x7F00E1	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00e1	death	0x7F00E1	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

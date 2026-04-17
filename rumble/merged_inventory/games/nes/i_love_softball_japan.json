@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "ilovesoftball",
+  "display_name": "I Love Softball (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\I Love Softball (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0091:FF",
+          "desc": "Max Score P1",
+          "address": "0x0091"
+        },
+        {
+          "code": "0092:00",
+          "desc": "P2/CPU Score Modifier",
+          "address": "0x0092"
+        },
+        {
+          "code": "00A2:00",
+          "desc": "Strike Modifier",
+          "address": "0x00A2"
+        },
+        {
+          "code": "00A1:00",
+          "desc": "Out Modifier",
+          "address": "0x00A1"
+        },
+        {
+          "code": "00A3:00",
+          "desc": "Ball Modifier",
+          "address": "0x00A3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

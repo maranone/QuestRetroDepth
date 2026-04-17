@@ -1,0 +1,5 @@
+game_name=Theme Park (USA, Europe) (Action Replay)
+game_key=theme_park_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff2d82	pickup	0xFF2D82	1	uint	little	prev != curr	0.8	1	right:0.250:18

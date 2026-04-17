@@ -1,0 +1,8 @@
+game_name=Tintin in Tibet (Europe) (En,Fr,De,Nl)
+game_key=tintin_in_tibet_europe_en_fr_de_nl
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_05cb	life_lost	0x7E05CB	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_05cb	life_gained	0x7E05CB	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_05c9	damage_taken	0x7E05C9	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05c9	death	0x7E05C9	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

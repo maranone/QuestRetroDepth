@@ -1,0 +1,49 @@
+{
+  "system": "gb",
+  "normalized_title": "castlevaniaiibelmontsrevenge",
+  "display_name": "Castlevania II - Belmont's Revenge (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Castlevania II - Belmont's Revenge (USA, Europe) (GameShark)",
+    "Castlevania II - Belmont's Revenge (USA, Europe) (Xploder)",
+    "Castlevania II - Belmont's Revenge (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Castlevania II - Belmont's Revenge (USA, Europe).cht",
+      "total_cheat_rows": 44,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0102C5C8",
+          "desc": "Infinite Lives",
+          "address": "0xC5C8"
+        },
+        {
+          "code": "0102D1C8",
+          "desc": "Full-Power Whip",
+          "address": "0xD1C8"
+        },
+        {
+          "code": "0100D0C8",
+          "desc": "Weapon Modifier",
+          "address": "0xD0C8"
+        },
+        {
+          "code": "01BEC0C8",
+          "desc": "Level Modifier",
+          "address": "0xC0C8"
+        },
+        {
+          "code": "0199C5C8",
+          "desc": "Infinite Lives",
+          "address": "0xC5C8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

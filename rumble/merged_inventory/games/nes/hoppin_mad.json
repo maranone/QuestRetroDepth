@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "hoppinmad",
+  "display_name": "Hoppin' Mad",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hoppin' Mad.cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "SZVPTXVK",
+          "desc": "Infinite Lives",
+          "address": "0x022E"
+        },
+        {
+          "code": "SUUPNXSO",
+          "desc": "Infinite Energy",
+          "address": "0x023F"
+        },
+        {
+          "code": "SZEPUIVG",
+          "desc": "Infnite Time",
+          "address": "0x052B"
+        },
+        {
+          "code": "ALVAVIAU",
+          "desc": "Start With ? Baloons 2",
+          "address": "0x053E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

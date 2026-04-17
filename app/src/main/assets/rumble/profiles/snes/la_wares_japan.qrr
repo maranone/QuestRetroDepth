@@ -1,0 +1,10 @@
+game_name=La Wares (Japan)
+game_key=la_wares_japan
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_0938	pickup	0x7E0938	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0939	pickup	0x7E0939	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_093a	pickup	0x7E093A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0935	pickup	0x7E0935	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0936	pickup	0x7E0936	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0937	pickup	0x7E0937	1	uint	little	prev != curr	0.8	1	right:0.250:18

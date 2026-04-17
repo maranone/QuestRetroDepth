@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "lasalleishiinochildsquest",
+  "display_name": "Lasalle Ishii no Child's Quest (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Lasalle Ishii no Child's Quest (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "04B1:00",
+          "desc": "No Random Battles",
+          "address": "0x04B1"
+        },
+        {
+          "code": "0500:FF",
+          "desc": "Infinite Health",
+          "address": "0x0500"
+        },
+        {
+          "code": "0501:FF",
+          "desc": "Infinite Magic",
+          "address": "0x0501"
+        },
+        {
+          "code": "0564:FF",
+          "desc": "Maximum Experience",
+          "address": "0x0564"
+        },
+        {
+          "code": "0565:FF",
+          "desc": "Maximum Experience",
+          "address": "0x0565"
+        },
+        {
+          "code": "0440:00",
+          "desc": "1 Hit Kills",
+          "address": "0x0440"
+        },
+        {
+          "code": "0567:FF",
+          "desc": "Infinite Money",
+          "address": "0x0567"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

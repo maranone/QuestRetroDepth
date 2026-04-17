@@ -1,0 +1,8 @@
+game_name=Ys III - Wanderers from Ys (Japan)
+game_key=ys_iii_wanderers_from_ys_japan
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_0506	pickup	0x0506	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_0508	enemy_defeated	0x0508	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	pickup_coins_0505	pickup	0x0505	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_050b	pickup	0x050B	1	uint	little	prev != curr	0.8	1	right:0.250:18

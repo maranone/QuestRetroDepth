@@ -1,0 +1,6 @@
+game_name=Tecmo Super NBA Basketball (USA, Japan) (Action Replay)
+game_key=tecmo_super_nba_basketball_usa_japan_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffa7b5	score	0xFFA7B5	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffa7b7	score	0xFFA7B7	1	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,5 @@
+game_name=Gon (Japan) (En)
+game_key=gon_japan_en
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_1086	level_complete	0x7E1086	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

@@ -1,0 +1,58 @@
+{
+  "system": "sms",
+  "normalized_title": "wonderboyinmonsterworld",
+  "display_name": "Wonder Boy in Monster World (Europe) (Action Replay)",
+  "aliases": [
+    "Wonder Boy in Monster World (Europe) (Action Replay)",
+    "Wonder Boy in Monster World (Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\wonderboyinmonsterworld_sms.json",
+      "trigger_count": 4,
+      "field_names": [
+        "health",
+        "lives"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xC584",
+        "0xC58D"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\WonderBoyInMonsterWorld-Sms-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "gold",
+          "address": "0xC67D",
+          "type": "<u2"
+        },
+        {
+          "name": "health",
+          "address": "0xC58D",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xC584",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Wonder Boy in Monster World (Europe).cht",
+      "total_cheat_rows": 43,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

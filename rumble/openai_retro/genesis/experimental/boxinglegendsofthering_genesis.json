@@ -1,0 +1,135 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "BoxingLegendsOfTheRing",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\experimental\\BoxingLegendsOfTheRing-Genesis\\data.json",
+    "integration_tier": "experimental",
+    "game_key": "BoxingLegendsOfTheRing-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "game_over_gameover_ffc04d",
+      "event": "game_over",
+      "watch": [
+        {
+          "absolute_address": "0xFFC04D",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFC04D",
+          "ram_offset": 49229
+        }
+      ],
+      "condition": "prev == 0 && curr != 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Explicit game-over flag.",
+      "source_fields": [
+        {
+          "name": "gameover",
+          "address": "0xFFC04D",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_ffb461",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xFFB461",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFB461",
+          "ram_offset": 46177
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xFFB461",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "knockdowns",
+      "meta": {
+        "address": 16760667,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "punches_given",
+      "meta": {
+        "address": 16760660,
+        "type": ">u2"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "punches_landed",
+      "meta": {
+        "address": 16760664,
+        "type": ">u2"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "round",
+      "meta": {
+        "address": 16758197,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "total_punches",
+      "meta": {
+        "address": 16760898,
+        "type": ">u2"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "total_punches_landed",
+      "meta": {
+        "address": 16760902,
+        "type": ">u2"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+game_name=Super Bomber Man 5 (Japan) (Action Replay)
+game_key=super_bomber_man_5_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_17ca	pickup	0x7E17CA	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_167a	pickup	0x7E167A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	life_lost_lives_1d23	life_lost	0x7E1D23	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1d23	life_gained	0x7E1D23	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0e14	score	0x7E0E14	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0e17	score	0x7E0E17	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	pickup_coins_4ebe	pickup	0x7E4EBE	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_4ebf	pickup	0x7E4EBF	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_4ec0	pickup	0x7E4EC0	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_4ec1	pickup	0x7E4EC1	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_17cb	pickup	0x7E17CB	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_17cc	pickup	0x7E17CC	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_17cd	pickup	0x7E17CD	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_17ce	pickup	0x7E17CE	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,95 @@
+{
+  "system": "nes",
+  "normalized_title": "shinjinruinewtype",
+  "display_name": "Shin Jinrui - The New Type (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Shin Jinrui - The New Type (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "KUEAAIEE",
+          "desc": "Start Giant",
+          "address": "0x0538"
+        },
+        {
+          "code": "VOEATIAU",
+          "desc": "Start With Double Wings",
+          "address": "0x051E"
+        },
+        {
+          "code": "IEKEKZVG",
+          "desc": "Don't Lose Wings After Using Them",
+          "address": "0x028C"
+        },
+        {
+          "code": "ATEEVXOG",
+          "desc": "Invincible",
+          "address": "0x02EE"
+        },
+        {
+          "code": "AEKAOPZA",
+          "desc": "Don't Die When Falling",
+          "address": "0x0109"
+        },
+        {
+          "code": "ATSEOOOZ",
+          "desc": "Don't Lose Wings After Falling",
+          "address": "0x01E9"
+        },
+        {
+          "code": "AVSAKOOZ",
+          "desc": "Stay Giant After Falling",
+          "address": "0x016C"
+        },
+        {
+          "code": "ATEEVXOG",
+          "desc": "Be Faster After Falling",
+          "address": "0x02EE"
+        },
+        {
+          "code": "LASAVPPA",
+          "desc": "Be Faster After Falling",
+          "address": "0x010E"
+        },
+        {
+          "code": "007D:09",
+          "desc": "Infinite Lives",
+          "address": "0x007D"
+        },
+        {
+          "code": "0089:06",
+          "desc": "Infinite Health",
+          "address": "0x0089"
+        },
+        {
+          "code": "0057:00",
+          "desc": "Invincibility",
+          "address": "0x0057"
+        },
+        {
+          "code": "009A:01",
+          "desc": "Always Giant",
+          "address": "0x009A"
+        },
+        {
+          "code": "009E:01",
+          "desc": "Infinite Wing Usage / Flying",
+          "address": "0x009E"
+        },
+        {
+          "code": "009D:00",
+          "desc": "Weapon Modifier",
+          "address": "0x009D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "system": "nes",
+  "normalized_title": "yoshi",
+  "display_name": "Yoshi (USA) (Game Genie)",
+  "aliases": [
+    "Yoshi (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Yoshi (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "PAVAAPLA",
+          "desc": "Need only 1 Victory Egg to win",
+          "address": "0x0108"
+        },
+        {
+          "code": "ZAVAAPLA",
+          "desc": "Need only 2 Victory Eggs to win",
+          "address": "0x0108"
+        },
+        {
+          "code": "05F3:00",
+          "desc": "Score Modifier (One's Digit)",
+          "address": "0x05F3"
+        },
+        {
+          "code": "05F2:00",
+          "desc": "Score Modifier (Ten's Digit)",
+          "address": "0x05F2"
+        },
+        {
+          "code": "05F1:00",
+          "desc": "Score Modifier (Hundred's Digit)",
+          "address": "0x05F1"
+        },
+        {
+          "code": "05F0:00",
+          "desc": "Score Modifier (Thousand's Digit)",
+          "address": "0x05F0"
+        },
+        {
+          "code": "05EF:00",
+          "desc": "Score Modifier (Ten Thousand's Digit)",
+          "address": "0x05EF"
+        },
+        {
+          "code": "05EE:00",
+          "desc": "Score Modifier (Hundred Thousand's Digit)",
+          "address": "0x05EE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

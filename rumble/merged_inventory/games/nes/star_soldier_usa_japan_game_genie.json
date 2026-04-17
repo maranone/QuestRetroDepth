@@ -1,0 +1,79 @@
+{
+  "system": "nes",
+  "normalized_title": "starsoldier",
+  "display_name": "Star Soldier (USA, Japan) (Game Genie)",
+  "aliases": [
+    "Star Soldier (USA)",
+    "Star Soldier (USA, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\starsoldier_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0037",
+        "0x00C0"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\StarSoldier-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0037",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x00C0",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Star Soldier (USA, Japan) (Game Genie).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "SZOEAPVG",
+          "desc": "Infinite Lives",
+          "address": "0x01A8"
+        },
+        {
+          "code": "PEOAPPAA",
+          "desc": "Start With Laser",
+          "address": "0x0109"
+        },
+        {
+          "code": "GXVPXTVG",
+          "desc": "Infinite Shield Power",
+          "address": "0x062A"
+        },
+        {
+          "code": "ZAOOOYIE",
+          "desc": "Double Shield Power",
+          "address": "0x0789"
+        },
+        {
+          "code": "ZENOGLIE",
+          "desc": "Double Shield Power",
+          "address": "0x038C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

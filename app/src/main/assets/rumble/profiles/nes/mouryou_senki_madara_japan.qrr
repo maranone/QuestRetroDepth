@@ -1,0 +1,12 @@
+game_name=Mouryou Senki Madara (Japan)
+game_key=mouryou_senki_madara_japan
+system=nes
+integration_tier=contrib
+trigger	level_complete_level_05b0	level_complete	0x05B0	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_05b1	level_complete	0x05B1	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_05b3	level_complete	0x05B3	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_05b4	level_complete	0x05B4	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_05b6	level_complete	0x05B6	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_05b7	level_complete	0x05B7	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_05b9	level_complete	0x05B9	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_05ba	level_complete	0x05BA	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

@@ -1,0 +1,11 @@
+game_name=Kaze no Klonoa G2 - Dream Champ Tournament (Japan) (Code Breaker)
+game_key=kaze_no_klonoa_g2_dream_champ_tournament_japan_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_02005282	life_lost	0x02005282	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02005282	life_gained	0x02005282	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_02000130	level_complete	0x02000130	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_02004130	level_complete	0x02004130	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_02004132	level_complete	0x02004132	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_02004134	level_complete	0x02004134	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_02004198	level_complete	0x02004198	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

@@ -1,0 +1,6 @@
+game_name=Terra Cresta II - Mandoler no Gyakushuu (Japan)
+game_key=terra_cresta_ii_mandoler_no_gyakushuu_japan
+system=pce
+integration_tier=contrib
+trigger	life_lost_lives_1f1289	life_lost	0x1F1289	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1f1289	life_gained	0x1F1289	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

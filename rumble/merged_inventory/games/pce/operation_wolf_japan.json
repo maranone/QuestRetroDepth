@@ -1,0 +1,45 @@
+{
+  "system": "pce",
+  "normalized_title": "operationwolf",
+  "display_name": "Operation Wolf (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Operation Wolf (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1f0924:00",
+          "desc": "Infinite Energy",
+          "address": "0x1F0924"
+        },
+        {
+          "code": "1f0926:00",
+          "desc": "Infinite Energy",
+          "address": "0x1F0926"
+        },
+        {
+          "code": "1f0942:48",
+          "desc": "",
+          "address": "0x1F0942"
+        },
+        {
+          "code": "1f0943:48",
+          "desc": "Infinite Second Gun",
+          "address": "0x1F0943"
+        },
+        {
+          "code": "1f0944:05",
+          "desc": "Infinite Grenades",
+          "address": "0x1F0944"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

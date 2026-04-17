@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "joemaccavemanninja",
+  "display_name": "Joe _ Mac - Caveman Ninja (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Joe _ Mac - Caveman Ninja (Europe).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "047D:03",
+          "desc": "Infinite Lives",
+          "address": "0x047D"
+        },
+        {
+          "code": "0498:0A",
+          "desc": "Infinite Energy",
+          "address": "0x0498"
+        },
+        {
+          "code": "064A:0A",
+          "desc": "Infinite Energy",
+          "address": "0x064A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

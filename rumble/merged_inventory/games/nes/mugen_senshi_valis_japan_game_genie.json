@@ -1,0 +1,127 @@
+{
+  "system": "nes",
+  "normalized_title": "mugensenshivalis",
+  "display_name": "Mugen Senshi Valis (Japan) (Game Genie)",
+  "aliases": [
+    "Mugen Senshi Valis (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mugen Senshi Valis (Japan).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 21,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "009F:0A",
+          "desc": "Infinite Energy",
+          "address": "0x009F"
+        },
+        {
+          "code": "00A0:05",
+          "desc": "Walk Through Enemies",
+          "address": "0x00A0"
+        },
+        {
+          "code": "071B:00",
+          "desc": "Shot/Jump Modifier",
+          "address": "0x071B"
+        },
+        {
+          "code": "071C:FF",
+          "desc": "Fully Equipped",
+          "address": "0x071C"
+        },
+        {
+          "code": "071D:00",
+          "desc": "Boomerang Quantity Modifier",
+          "address": "0x071D"
+        },
+        {
+          "code": "071E:00",
+          "desc": "Bomb Quantity Modifier",
+          "address": "0x071E"
+        },
+        {
+          "code": "071F:00",
+          "desc": "V. Quake Quantity Modifier",
+          "address": "0x071F"
+        },
+        {
+          "code": "0720:00",
+          "desc": "Drag Quantity Modifier",
+          "address": "0x0720"
+        },
+        {
+          "code": "0721:00",
+          "desc": "Pot Quantity Modifier",
+          "address": "0x0721"
+        },
+        {
+          "code": "0724:00",
+          "desc": "Map Quantity Modifier",
+          "address": "0x0724"
+        },
+        {
+          "code": "0726:05",
+          "desc": "Have 5 Jewels",
+          "address": "0x0726"
+        },
+        {
+          "code": "0727:00",
+          "desc": "Item Slot 1 Modifier",
+          "address": "0x0727"
+        },
+        {
+          "code": "0728:00",
+          "desc": "Item Slot 2 Modifier",
+          "address": "0x0728"
+        },
+        {
+          "code": "0729:00",
+          "desc": "Item Slot 3 Modifier",
+          "address": "0x0729"
+        },
+        {
+          "code": "072A:00",
+          "desc": "Item Slot 4 Modifier",
+          "address": "0x072A"
+        },
+        {
+          "code": "072B:00",
+          "desc": "Item Slot 5 Modifier",
+          "address": "0x072B"
+        },
+        {
+          "code": "072C:00",
+          "desc": "Item Slot 6 Modifier",
+          "address": "0x072C"
+        },
+        {
+          "code": "072D:00",
+          "desc": "Item Slot 7 Modifier",
+          "address": "0x072D"
+        },
+        {
+          "code": "072E:00",
+          "desc": "Item Slot 8 Modifier",
+          "address": "0x072E"
+        },
+        {
+          "code": "072F:00",
+          "desc": "Item Slot 9 Modifier",
+          "address": "0x072F"
+        },
+        {
+          "code": "0730:00",
+          "desc": "Item Slot 10 Modifier",
+          "address": "0x0730"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

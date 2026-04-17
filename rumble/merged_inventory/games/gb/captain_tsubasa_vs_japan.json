@@ -1,0 +1,40 @@
+{
+  "system": "gb",
+  "normalized_title": "captaintsubasavs",
+  "display_name": "Captain Tsubasa VS (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Captain Tsubasa VS (Japan).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0100C6CC",
+          "desc": "Cpu Score Always In Zero",
+          "address": "0xC6CC"
+        },
+        {
+          "code": "01E7CACD",
+          "desc": "INFINITE ENERGY 2",
+          "address": "0xCACD"
+        },
+        {
+          "code": "0103CBCD",
+          "desc": "INFINITE ENERGY 2",
+          "address": "0xCBCD"
+        },
+        {
+          "code": "0100C5CC",
+          "desc": "P1 Score Modifier",
+          "address": "0xC5CC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

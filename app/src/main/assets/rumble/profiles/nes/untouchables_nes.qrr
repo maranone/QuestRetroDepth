@@ -1,0 +1,5 @@
+game_name=Untouchables, The (USA) (Game Genie)
+game_key=Untouchables-Nes
+system=nes
+integration_tier=stable
+trigger	score_score_009b	score	0x009B	6	nibble	big	prev < curr	0.8	1	right:0.350:60

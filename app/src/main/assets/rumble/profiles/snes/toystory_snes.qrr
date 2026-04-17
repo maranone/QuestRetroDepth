@@ -1,5 +1,0 @@
-game_name=ToyStory
-game_key=ToyStory-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_1c	damage_taken	0x7E001C	1	uint	native	prev > curr	0.85	1	left:0.750:180

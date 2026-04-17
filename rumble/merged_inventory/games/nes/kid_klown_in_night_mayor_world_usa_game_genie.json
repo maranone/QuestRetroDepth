@@ -1,0 +1,161 @@
+{
+  "system": "nes",
+  "normalized_title": "kidklowninnightmayorworld",
+  "display_name": "Kid Klown in Night Mayor World (USA) (Game Genie)",
+  "aliases": [
+    "Kid Klown in Night Mayor World (USA) (Game Genie)",
+    "Kid Klown in Night Mayor World (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\kidklowninnightmayorworld_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0117",
+        "0x043E",
+        "0x043F"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KidKlownInNightMayorWorld-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x043F",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x043E",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0117",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kid Klown in Night Mayor World (USA).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 20,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "AANAUAPA",
+          "desc": "Infinite lives",
+          "address": "0x000B"
+        },
+        {
+          "code": "SZKEOESE",
+          "desc": "Infinite energy",
+          "address": "0x00A9"
+        },
+        {
+          "code": "AAEAUGLA",
+          "desc": "Full energy from hearts",
+          "address": "0x040B"
+        },
+        {
+          "code": "ZENANLIA",
+          "desc": "Less energy from hearts",
+          "address": "0x030F"
+        },
+        {
+          "code": "ZENANLIE",
+          "desc": "More energy from hearts",
+          "address": "0x030F"
+        },
+        {
+          "code": "GZSEIYVG",
+          "desc": "Infinite chances in sub-game (press Start to re-enter the main game)",
+          "address": "0x07AD"
+        },
+        {
+          "code": "043F:0E",
+          "desc": "Infinite Energy",
+          "address": "0x043F"
+        },
+        {
+          "code": "043E:03",
+          "desc": "Infinite Lives",
+          "address": "0x043E"
+        },
+        {
+          "code": "044C:0A",
+          "desc": "Invincibility",
+          "address": "0x044C"
+        },
+        {
+          "code": "0477:00",
+          "desc": "One Hit Kill Boss",
+          "address": "0x0477"
+        },
+        {
+          "code": "SZNAKESE",
+          "desc": "Infinite Lives",
+          "address": "0x002C"
+        },
+        {
+          "code": "0438:A0",
+          "desc": "Super Jump in Midair",
+          "address": "0x0438"
+        },
+        {
+          "code": "044B:00",
+          "desc": "Super Jump",
+          "address": "0x044B"
+        },
+        {
+          "code": "0448:01",
+          "desc": "Speed Modifier",
+          "address": "0x0448"
+        },
+        {
+          "code": "043F:19",
+          "desc": "Infinite Health",
+          "address": "0x043F"
+        },
+        {
+          "code": "043E:09",
+          "desc": "Infinite Lives",
+          "address": "0x043E"
+        },
+        {
+          "code": "0117:63",
+          "desc": "Infinite Chips",
+          "address": "0x0117"
+        },
+        {
+          "code": "044C:22",
+          "desc": "Invincible",
+          "address": "0x044C"
+        },
+        {
+          "code": "0388:09",
+          "desc": "Fake Max Chances",
+          "address": "0x0388"
+        },
+        {
+          "code": "0080:63",
+          "desc": "Max Chances",
+          "address": "0x0080"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

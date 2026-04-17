@@ -1,0 +1,39 @@
+{
+  "system": "gb",
+  "normalized_title": "supermarioland",
+  "display_name": "Super Mario Land (World) (Game Genie)",
+  "aliases": [
+    "Super Mario Land (World) (GameShark)",
+    "Super Mario Land (World) (Rev 1)",
+    "Super Mario Land (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Super Mario Land (World).cht",
+      "total_cheat_rows": 79,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "01F5D3C0",
+          "desc": "Invincibility",
+          "address": "0xD3C0"
+        },
+        {
+          "code": "01ECD3C0",
+          "desc": "Always Have Star",
+          "address": "0xD3C0"
+        },
+        {
+          "code": "01ECD2C0",
+          "desc": "Automatically At End Of Level",
+          "address": "0xD2C0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

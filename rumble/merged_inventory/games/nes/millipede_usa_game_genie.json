@@ -1,0 +1,99 @@
+{
+  "system": "nes",
+  "normalized_title": "millipede",
+  "display_name": "Millipede (USA) (Game Genie)",
+  "aliases": [
+    "Millipede (USA) (Game Genie)",
+    "Millipede (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\millipede_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0025",
+        "0x0066"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Millipede-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0066",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0025",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Millipede (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0066:05",
+          "desc": "Infinite Lives P1",
+          "address": "0x0066"
+        },
+        {
+          "code": "0025:99",
+          "desc": "Max Score P1",
+          "address": "0x0025"
+        },
+        {
+          "code": "0026:99",
+          "desc": "Max Score P1",
+          "address": "0x0026"
+        },
+        {
+          "code": "0027:99",
+          "desc": "Max Score P1",
+          "address": "0x0027"
+        },
+        {
+          "code": "0021:99",
+          "desc": "Max Top Score",
+          "address": "0x0021"
+        },
+        {
+          "code": "0022:99",
+          "desc": "Max Top Score",
+          "address": "0x0022"
+        },
+        {
+          "code": "0023:99",
+          "desc": "Max Top Score",
+          "address": "0x0023"
+        },
+        {
+          "code": "002F:00",
+          "desc": "Round Modifier",
+          "address": "0x002F"
+        },
+        {
+          "code": "0071:00",
+          "desc": "Invincible",
+          "address": "0x0071"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

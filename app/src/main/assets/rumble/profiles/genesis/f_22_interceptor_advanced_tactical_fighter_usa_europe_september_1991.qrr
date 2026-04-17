@@ -1,0 +1,5 @@
+game_name=F-22 Interceptor - Advanced Tactical Fighter (USA, Europe) (September, 1991)
+game_key=f_22_interceptor_advanced_tactical_fighter_usa_europe_september_1991
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ffa550	pickup	0xFFA550	1	uint	little	prev != curr	0.8	1	right:0.250:18

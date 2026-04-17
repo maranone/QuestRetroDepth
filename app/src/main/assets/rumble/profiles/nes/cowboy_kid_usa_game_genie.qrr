@@ -1,0 +1,17 @@
+game_name=Cowboy Kid (USA) (Game Genie)
+game_key=cowboy_kid_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0698	damage_taken	0x0698	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0698	death	0x0698	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_069e	pickup	0x069E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_069f	pickup	0x069F	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_06a0	pickup	0x06A0	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_06a1	pickup	0x06A1	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_06a2	pickup	0x06A2	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_06a3	pickup	0x06A3	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	life_lost_lives_0696	life_lost	0x0696	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0696	life_gained	0x0696	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_0796	pickup	0x0796	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0797	pickup	0x0797	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0798	pickup	0x0798	1	uint	little	prev != curr	0.8	1	right:0.250:18

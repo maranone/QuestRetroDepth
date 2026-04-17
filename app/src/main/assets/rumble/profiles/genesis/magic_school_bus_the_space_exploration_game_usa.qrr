@@ -1,0 +1,6 @@
+game_name=Magic School Bus, The - Space Exploration Game (USA)
+game_key=magic_school_bus_the_space_exploration_game_usa
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ffa5ff	life_lost	0xFFA5FF	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffa5ff	life_gained	0xFFA5FF	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

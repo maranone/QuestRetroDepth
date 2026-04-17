@@ -1,0 +1,138 @@
+{
+  "system": "nes",
+  "normalized_title": "airfortress",
+  "display_name": "Air Fortress (World) (Game Genie)",
+  "aliases": [
+    "Air Fortress (USA)",
+    "Air Fortress (World) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Air Fortress (World) (Game Genie).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 23,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "SZUPKGVG",
+          "desc": "Infinite Lives Outside Fortress",
+          "address": "0x042C"
+        },
+        {
+          "code": "PAVPKZLA",
+          "desc": "Start With 1 Life",
+          "address": "0x020C"
+        },
+        {
+          "code": "TAVPKZLA",
+          "desc": "Start With 6 Lives",
+          "address": "0x020C"
+        },
+        {
+          "code": "PAVPKZLE",
+          "desc": "Start With 9 Lives",
+          "address": "0x020C"
+        },
+        {
+          "code": "AAKPSTPA",
+          "desc": "Infinite Beam Bullets",
+          "address": "0x060D"
+        },
+        {
+          "code": "XZSOXXPZ",
+          "desc": "Start On Level 2",
+          "address": "0x02AA"
+        },
+        {
+          "code": "PASOUZYA",
+          "desc": "Start On Level 2",
+          "address": "0x028B"
+        },
+        {
+          "code": "VASOKZSA",
+          "desc": "Start On Level 2",
+          "address": "0x028C"
+        },
+        {
+          "code": "XZSOXXPZ",
+          "desc": "Start On Level 3",
+          "address": "0x02AA"
+        },
+        {
+          "code": "ZASOUZYA",
+          "desc": "Start On Level 3",
+          "address": "0x028B"
+        },
+        {
+          "code": "VASOKZSA",
+          "desc": "Start On Level 3",
+          "address": "0x028C"
+        },
+        {
+          "code": "XZSOXXPZ",
+          "desc": "Start On Level 4",
+          "address": "0x02AA"
+        },
+        {
+          "code": "LASOUZYA",
+          "desc": "Start On Level 4",
+          "address": "0x028B"
+        },
+        {
+          "code": "VASOKZSA",
+          "desc": "Start On Level 4",
+          "address": "0x028C"
+        },
+        {
+          "code": "XZSOXXPZ",
+          "desc": "Start On Level 5",
+          "address": "0x02AA"
+        },
+        {
+          "code": "GASOUZYA",
+          "desc": "Start On Level 5",
+          "address": "0x028B"
+        },
+        {
+          "code": "VASOKZSA",
+          "desc": "Start On Level 5",
+          "address": "0x028C"
+        },
+        {
+          "code": "XZSOXXPZ",
+          "desc": "Start On Level 6",
+          "address": "0x02AA"
+        },
+        {
+          "code": "IASOUZYA",
+          "desc": "Start On Level 6",
+          "address": "0x028B"
+        },
+        {
+          "code": "VASOKZSA",
+          "desc": "Start On Level 6",
+          "address": "0x028C"
+        },
+        {
+          "code": "XZSOXXPZ",
+          "desc": "Start On Level 7",
+          "address": "0x02AA"
+        },
+        {
+          "code": "TASOUZYA",
+          "desc": "Start On Level 7",
+          "address": "0x028B"
+        },
+        {
+          "code": "VASOKZSA",
+          "desc": "Start On Level 7",
+          "address": "0x028C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

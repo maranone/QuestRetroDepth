@@ -1,0 +1,148 @@
+{
+  "system": "gba",
+  "normalized_title": "froggeradvancegreatquest",
+  "display_name": "Frogger Advance - The Great Quest (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Frogger Advance - The Great Quest (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 12,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "100007CC",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020007CC"
+        },
+        {
+          "code": "32000028",
+          "desc": "Infinite Lives",
+          "address": "0x02000028"
+        },
+        {
+          "code": "32000048",
+          "desc": "Infinite Health",
+          "address": "0x02000048"
+        },
+        {
+          "code": "8200005C",
+          "desc": "Max Coins (Total)",
+          "address": "0x0200005C"
+        },
+        {
+          "code": "82000060",
+          "desc": "Max Gems (Total)",
+          "address": "0x02000060"
+        },
+        {
+          "code": "82000064",
+          "desc": "Max Tokens",
+          "address": "0x02000064"
+        },
+        {
+          "code": "330002A8",
+          "desc": "Invincible/Infinite Time (Race To Be King Mode)",
+          "address": "0x020002A8"
+        },
+        {
+          "code": "82000044",
+          "desc": "Have All Specials",
+          "address": "0x02000044"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press R Button For Moon Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "8201208C",
+          "desc": "Press R Button For Moon Jump",
+          "address": "0x0201208C"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press R Button For Moon Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "8201208E",
+          "desc": "Press R Button For Moon Jump",
+          "address": "0x0201208E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Frogger Advance - The Great Quest (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 12,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "100007CC",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020007CC"
+        },
+        {
+          "code": "32000028",
+          "desc": "Infinite Lives",
+          "address": "0x02000028"
+        },
+        {
+          "code": "32000048",
+          "desc": "Infinite Health",
+          "address": "0x02000048"
+        },
+        {
+          "code": "8200005C",
+          "desc": "Max Coins (Total)",
+          "address": "0x0200005C"
+        },
+        {
+          "code": "82000060",
+          "desc": "Max Gems (Total)",
+          "address": "0x02000060"
+        },
+        {
+          "code": "82000064",
+          "desc": "Max Tokens",
+          "address": "0x02000064"
+        },
+        {
+          "code": "330002A8",
+          "desc": "Invincible/Infinite Time (Race To Be King Mode)",
+          "address": "0x020002A8"
+        },
+        {
+          "code": "82000044",
+          "desc": "Have All Specials",
+          "address": "0x02000044"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press R Button For Moon Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "8201208C",
+          "desc": "Press R Button For Moon Jump",
+          "address": "0x0201208C"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press R Button For Moon Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "8201208E",
+          "desc": "Press R Button For Moon Jump",
+          "address": "0x0201208E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

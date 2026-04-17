@@ -1,0 +1,174 @@
+{
+  "system": "nes",
+  "normalized_title": "gyruss",
+  "display_name": "Gyruss (USA) (Game Genie)",
+  "aliases": [
+    "Gyruss (USA) (Game Genie)",
+    "Gyruss (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\gyruss_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x002E",
+        "0x03F4"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Gyruss-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x002E",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x03F4",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gyruss (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 24,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "00BA:49",
+          "desc": "Invincible",
+          "address": "0x00BA"
+        },
+        {
+          "code": "004D:00",
+          "desc": "High Speed Infinite Balls",
+          "address": "0x004D"
+        },
+        {
+          "code": "AEEOIEZA",
+          "desc": "Infinite lives",
+          "address": "0x008D"
+        },
+        {
+          "code": "PAXEGLGA",
+          "desc": "Start with 1 ship",
+          "address": "0x038C"
+        },
+        {
+          "code": "ZAXEGLGE",
+          "desc": "Start with 10 ships",
+          "address": "0x038C"
+        },
+        {
+          "code": "GAKEATPA",
+          "desc": "Start with 4 phasers",
+          "address": "0x0688"
+        },
+        {
+          "code": "AAKEATPE",
+          "desc": "Start with 8 phasers",
+          "address": "0x0688"
+        },
+        {
+          "code": "ZEEPYAPA",
+          "desc": "Gain 2 phasers when you die with none",
+          "address": "0x000F"
+        },
+        {
+          "code": "GEEPYAPA",
+          "desc": "Gain 4 phasers when you die with none",
+          "address": "0x000F"
+        },
+        {
+          "code": "OAKEATPA",
+          "desc": "Start with twin shots + 1 phaser",
+          "address": "0x0688"
+        },
+        {
+          "code": "KAKEATPA",
+          "desc": "Start with twin shots + 4 phasers",
+          "address": "0x0688"
+        },
+        {
+          "code": "EAKEATPE",
+          "desc": "Start with twin shots + 8 phasers",
+          "address": "0x0688"
+        },
+        {
+          "code": "GEEPIAZA",
+          "desc": "Never lose twin shots",
+          "address": "0x000D"
+        },
+        {
+          "code": "OEEPYAPA",
+          "desc": "Never lose twin shots",
+          "address": "0x000F"
+        },
+        {
+          "code": "00BA:73",
+          "desc": "Invincible",
+          "address": "0x00BA"
+        },
+        {
+          "code": "002E:09",
+          "desc": "Infinite Lives",
+          "address": "0x002E"
+        },
+        {
+          "code": "002F:07",
+          "desc": "Infinite Red Blasts",
+          "address": "0x002F"
+        },
+        {
+          "code": "003D:00",
+          "desc": "Stage Modifier",
+          "address": "0x003D"
+        },
+        {
+          "code": "001B:00",
+          "desc": "Cannot Hit Bottom of 1st Boss",
+          "address": "0x001B"
+        },
+        {
+          "code": "05CA:01",
+          "desc": "1 Hit Destroys Right-Side of 1st Boss",
+          "address": "0x05CA"
+        },
+        {
+          "code": "05CB:01",
+          "desc": "1 Hit Destroys Bottom of 1st Boss",
+          "address": "0x05CB"
+        },
+        {
+          "code": "05CC:01",
+          "desc": "1 Hit Destroys Left-Side of 1st Boss",
+          "address": "0x05CC"
+        },
+        {
+          "code": "05CD:01",
+          "desc": "1 Hit Destroys Top of 1st Boss",
+          "address": "0x05CD"
+        },
+        {
+          "code": "SZXAOPSA",
+          "desc": "Infinite Phasers",
+          "address": "0x0129"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

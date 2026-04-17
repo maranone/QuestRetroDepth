@@ -1,0 +1,10 @@
+game_name=6-Pak (USA)
+game_key=6_pak_usa
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ffc843	pickup	0xFFC843	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffc846	pickup	0xFFC846	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffc844	pickup	0xFFC844	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffc847	pickup	0xFFC847	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffc845	pickup	0xFFC845	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffc848	pickup	0xFFC848	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,43 @@
+{
+  "system": "gb",
+  "normalized_title": "gremlins2newbatch",
+  "display_name": "Gremlins 2 - The New Batch (World) (GameShark)",
+  "aliases": [
+    "Gremlins 2 - The New Batch (World) (Xploder)",
+    "Gremlins 2 - The New Batch (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Gremlins 2 - The New Batch (World).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0108C6C0",
+          "desc": "Infinite Health",
+          "address": "0xC6C0"
+        },
+        {
+          "code": "0102C5C0",
+          "desc": "Infinite Lives",
+          "address": "0xC5C0"
+        },
+        {
+          "code": "0102CBC0",
+          "desc": "Invincibility",
+          "address": "0xCBC0"
+        },
+        {
+          "code": "0101C4C0",
+          "desc": "Levitate & walk in air",
+          "address": "0xC4C0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

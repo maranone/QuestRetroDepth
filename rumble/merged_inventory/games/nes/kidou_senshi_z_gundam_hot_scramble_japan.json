@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "kidousenshizgundamhotscramble",
+  "display_name": "Kidou Senshi Z Gundam - Hot Scramble (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kidou Senshi Z Gundam - Hot Scramble (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "007D:4F",
+          "desc": "Infinite Energy",
+          "address": "0x007D"
+        },
+        {
+          "code": "007E:4F",
+          "desc": "Infinite Energy",
+          "address": "0x007E"
+        },
+        {
+          "code": "0079:01",
+          "desc": "Have Weapon 1",
+          "address": "0x0079"
+        },
+        {
+          "code": "007A:01",
+          "desc": "Have Weapon 2",
+          "address": "0x007A"
+        },
+        {
+          "code": "0042:01",
+          "desc": "Automatically End Flying Levels",
+          "address": "0x0042"
+        },
+        {
+          "code": "0010:00",
+          "desc": "Stage Select",
+          "address": "0x0010"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

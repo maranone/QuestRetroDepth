@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "2gamesin1spongebobsquarepantsbattleforbikinibottom",
+  "display_name": "2 Games in 1 - SpongeBob SquarePants - Battle for Bikini Bottom (Unknown) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\2 Games in 1 - SpongeBob SquarePants - Battle for Bikini Bottom (Unknown) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "32003C08",
+          "desc": "Infinite Lives",
+          "address": "0x02003C08"
+        },
+        {
+          "code": "32003C0C",
+          "desc": "Infinite Health",
+          "address": "0x02003C0C"
+        },
+        {
+          "code": "32003C30",
+          "desc": "Infinite Time",
+          "address": "0x02003C30"
+        },
+        {
+          "code": "32003C18",
+          "desc": "Max Golden Spatulas",
+          "address": "0x02003C18"
+        },
+        {
+          "code": "32003C10",
+          "desc": "Max Krabby Patties",
+          "address": "0x02003C10"
+        },
+        {
+          "code": "32003C35",
+          "desc": "Have Key",
+          "address": "0x02003C35"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\2 Games in 1 - SpongeBob SquarePants - Battle for Bikini Bottom (Unknown) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "32003C08",
+          "desc": "Infinite Lives",
+          "address": "0x02003C08"
+        },
+        {
+          "code": "32003C0C",
+          "desc": "Infinite Health",
+          "address": "0x02003C0C"
+        },
+        {
+          "code": "32003C30",
+          "desc": "Infinite Time",
+          "address": "0x02003C30"
+        },
+        {
+          "code": "32003C18",
+          "desc": "Max Golden Spatulas",
+          "address": "0x02003C18"
+        },
+        {
+          "code": "32003C10",
+          "desc": "Max Krabby Patties",
+          "address": "0x02003C10"
+        },
+        {
+          "code": "32003C35",
+          "desc": "Have Key",
+          "address": "0x02003C35"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

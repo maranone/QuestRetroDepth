@@ -1,0 +1,5 @@
+game_name=Lufia II - Rise of the Sinistrals (USA) (Action Replay)
+game_key=lufia_ii_rise_of_the_sinistrals_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_11e3	level_complete	0x7E11E3	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

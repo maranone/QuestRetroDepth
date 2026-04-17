@@ -1,0 +1,81 @@
+{
+  "system": "nes",
+  "normalized_title": "chipndalerescuerangers",
+  "display_name": "Chip 'n Dale - Rescue Rangers (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Chip 'n Dale - Rescue Rangers (USA)",
+    "Chip 'n Dale - Rescue Rangers (USA, Europe) (Action Replay)",
+    "Chip 'n Dale - Rescue Rangers (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Chip 'n Dale - Rescue Rangers (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "ATUEENSL",
+          "desc": "Freeze Mechanical Bulldog",
+          "address": "0x07E8"
+        },
+        {
+          "code": "AVKAVNSL",
+          "desc": "Freeze Mechanical Mice",
+          "address": "0x076E"
+        },
+        {
+          "code": "AVOPTESL",
+          "desc": "Freeze Buzzer",
+          "address": "0x006E"
+        },
+        {
+          "code": "AVNOLKSL",
+          "desc": "Freeze Buzz Bomb",
+          "address": "0x04EB"
+        },
+        {
+          "code": "AVVPZSSL",
+          "desc": "Freeze Racket-Rod",
+          "address": "0x056A"
+        },
+        {
+          "code": "ATSOYKSL",
+          "desc": "Freeze Ditz",
+          "address": "0x04EF"
+        },
+        {
+          "code": "ATSPANSL",
+          "desc": "Freeze Hawk Bomber",
+          "address": "0x0768"
+        },
+        {
+          "code": "AVVOOUSL",
+          "desc": "Freeze Bouncing Boxes",
+          "address": "0x03E9"
+        },
+        {
+          "code": "AAKAYEPA",
+          "desc": "Really Cool Invincibility Mode Because Enemies Just Bounce Off Of You",
+          "address": "0x000F"
+        },
+        {
+          "code": "VITALE",
+          "desc": "Makes You Invincible After You Go To The Top Of The Screen",
+          "address": "0x0053"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Chip 'n Dale - Rescue Rangers (USA).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

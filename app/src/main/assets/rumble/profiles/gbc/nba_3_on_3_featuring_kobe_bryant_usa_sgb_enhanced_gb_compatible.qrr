@@ -1,0 +1,6 @@
+game_name=NBA 3 on 3 featuring Kobe Bryant (USA) (SGB Enhanced) (GB Compatible)
+game_key=nba_3_on_3_featuring_kobe_bryant_usa_sgb_enhanced_gb_compatible
+system=gbc
+integration_tier=contrib
+trigger	score_score_c7c2	score	0xC7C2	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_c8c2	score	0xC8C2	1	uint	little	prev < curr	0.8	1	right:0.350:60

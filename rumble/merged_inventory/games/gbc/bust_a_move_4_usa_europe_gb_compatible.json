@@ -1,0 +1,25 @@
+{
+  "system": "gbc",
+  "normalized_title": "bustmove4",
+  "display_name": "Bust-A-Move 4 (USA, Europe) (GB Compatible)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Bust-A-Move 4 (USA, Europe) (GB Compatible).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0101DEFF",
+          "desc": "Automatically Beat a Stage",
+          "address": "0xDEFF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

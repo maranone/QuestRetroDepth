@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "ultimatebasketball",
+  "display_name": "Ultimate Basketball (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ultimate Basketball (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "00CC:30",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x00CC"
+        },
+        {
+          "code": "00CD:30",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x00CD"
+        },
+        {
+          "code": "00CE:30",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x00CE"
+        },
+        {
+          "code": "00CF:30",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x00CF"
+        },
+        {
+          "code": "00D0:30",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x00D0"
+        },
+        {
+          "code": "00D1:30",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x00D1"
+        },
+        {
+          "code": "04B4:30",
+          "desc": "Minutes Modifier",
+          "address": "0x04B4"
+        },
+        {
+          "code": "04B6:30",
+          "desc": "Seconds Modifier",
+          "address": "0x04B6"
+        },
+        {
+          "code": "04B7:30",
+          "desc": "Seconds Modifier",
+          "address": "0x04B7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

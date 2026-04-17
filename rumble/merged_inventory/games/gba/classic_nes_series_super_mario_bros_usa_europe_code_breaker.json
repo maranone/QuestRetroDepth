@@ -1,0 +1,178 @@
+{
+  "system": "gba",
+  "normalized_title": "classicnesseriessupermariobros",
+  "display_name": "Classic NES Series - Super Mario Bros. (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Classic NES Series - Super Mario Bros. (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 15,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10001482",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001482"
+        },
+        {
+          "code": "3300799F",
+          "desc": "Always Invincible",
+          "address": "0x0200799F"
+        },
+        {
+          "code": "3300795A",
+          "desc": "Infinite Lives",
+          "address": "0x0200795A"
+        },
+        {
+          "code": "33007956",
+          "desc": "Always Have Fireballs",
+          "address": "0x02007956"
+        },
+        {
+          "code": "33007954",
+          "desc": "Always Able To Break Blocks",
+          "address": "0x02007954"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L+R+Up To Freeze Timer",
+          "address": "0x02000130"
+        },
+        {
+          "code": "32000F75",
+          "desc": "Press L+R+Up To Freeze Timer",
+          "address": "0x02000F75"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L+R+Down To Restart Timer",
+          "address": "0x02000130"
+        },
+        {
+          "code": "32000F75",
+          "desc": "Press L+R+Down To Restart Timer",
+          "address": "0x02000F75"
+        },
+        {
+          "code": "73007224",
+          "desc": "Fireballs Are Unstoppable!",
+          "address": "0x02007224"
+        },
+        {
+          "code": "83007224",
+          "desc": "Fireballs Are Unstoppable!",
+          "address": "0x02007224"
+        },
+        {
+          "code": "73007224",
+          "desc": "Fireballs Are Unstoppable!",
+          "address": "0x02007224"
+        },
+        {
+          "code": "83007224",
+          "desc": "Fireballs Are Unstoppable!",
+          "address": "0x02007224"
+        },
+        {
+          "code": "33007960",
+          "desc": "Level Modifier",
+          "address": "0x02007960"
+        },
+        {
+          "code": "3300795E",
+          "desc": "Coin Modifier (00-62)",
+          "address": "0x0200795E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Classic NES Series - Super Mario Bros. (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 15,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10001482",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001482"
+        },
+        {
+          "code": "3300799F",
+          "desc": "Always Invincible",
+          "address": "0x0200799F"
+        },
+        {
+          "code": "3300795A",
+          "desc": "Infinite Lives",
+          "address": "0x0200795A"
+        },
+        {
+          "code": "33007956",
+          "desc": "Always Have Fireballs",
+          "address": "0x02007956"
+        },
+        {
+          "code": "33007954",
+          "desc": "Always Able To Break Blocks",
+          "address": "0x02007954"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L+R+Up To Freeze Timer",
+          "address": "0x02000130"
+        },
+        {
+          "code": "32000F75",
+          "desc": "Press L+R+Up To Freeze Timer",
+          "address": "0x02000F75"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L+R+Down To Restart Timer",
+          "address": "0x02000130"
+        },
+        {
+          "code": "32000F75",
+          "desc": "Press L+R+Down To Restart Timer",
+          "address": "0x02000F75"
+        },
+        {
+          "code": "73007224",
+          "desc": "Fireballs Are Unstoppable!",
+          "address": "0x02007224"
+        },
+        {
+          "code": "83007224",
+          "desc": "Fireballs Are Unstoppable!",
+          "address": "0x02007224"
+        },
+        {
+          "code": "73007224",
+          "desc": "Fireballs Are Unstoppable!",
+          "address": "0x02007224"
+        },
+        {
+          "code": "83007224",
+          "desc": "Fireballs Are Unstoppable!",
+          "address": "0x02007224"
+        },
+        {
+          "code": "33007960",
+          "desc": "Level Modifier",
+          "address": "0x02007960"
+        },
+        {
+          "code": "3300795E",
+          "desc": "Coin Modifier (00-62)",
+          "address": "0x0200795E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

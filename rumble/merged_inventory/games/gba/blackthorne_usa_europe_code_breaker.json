@@ -1,0 +1,158 @@
+{
+  "system": "gba",
+  "normalized_title": "blackthorne",
+  "display_name": "Blackthorne (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Blackthorne (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "10000406",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000406"
+        },
+        {
+          "code": "83001878",
+          "desc": "Have Iron Key",
+          "address": "0x02001878"
+        },
+        {
+          "code": "8300187A",
+          "desc": "Have Heal Potion",
+          "address": "0x0200187A"
+        },
+        {
+          "code": "8300187C",
+          "desc": "Have Hover Bomb",
+          "address": "0x0200187C"
+        },
+        {
+          "code": "8300187E",
+          "desc": "Have Levitator",
+          "address": "0x0200187E"
+        },
+        {
+          "code": "83001880",
+          "desc": "Have Bridge Key",
+          "address": "0x02001880"
+        },
+        {
+          "code": "83001882",
+          "desc": "Have Remote Wasp",
+          "address": "0x02001882"
+        },
+        {
+          "code": "83001884",
+          "desc": "Have Fire Bomb",
+          "address": "0x02001884"
+        },
+        {
+          "code": "33001018",
+          "desc": "Invincible To Guns",
+          "address": "0x02001018"
+        },
+        {
+          "code": "33000FC8",
+          "desc": "Infinite Health",
+          "address": "0x02000FC8"
+        },
+        {
+          "code": "3300021C",
+          "desc": "Have Best Gun",
+          "address": "0x0200021C"
+        },
+        {
+          "code": "74000130",
+          "desc": "Hold R+B For Safe Fall",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83000D70",
+          "desc": "Hold R+B For Safe Fall",
+          "address": "0x02000D70"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Blackthorne (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "10000406",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000406"
+        },
+        {
+          "code": "83001878",
+          "desc": "Have Iron Key",
+          "address": "0x02001878"
+        },
+        {
+          "code": "8300187A",
+          "desc": "Have Heal Potion",
+          "address": "0x0200187A"
+        },
+        {
+          "code": "8300187C",
+          "desc": "Have Hover Bomb",
+          "address": "0x0200187C"
+        },
+        {
+          "code": "8300187E",
+          "desc": "Have Levitator",
+          "address": "0x0200187E"
+        },
+        {
+          "code": "83001880",
+          "desc": "Have Bridge Key",
+          "address": "0x02001880"
+        },
+        {
+          "code": "83001882",
+          "desc": "Have Remote Wasp",
+          "address": "0x02001882"
+        },
+        {
+          "code": "83001884",
+          "desc": "Have Fire Bomb",
+          "address": "0x02001884"
+        },
+        {
+          "code": "33001018",
+          "desc": "Invincible To Guns",
+          "address": "0x02001018"
+        },
+        {
+          "code": "33000FC8",
+          "desc": "Infinite Health",
+          "address": "0x02000FC8"
+        },
+        {
+          "code": "3300021C",
+          "desc": "Have Best Gun",
+          "address": "0x0200021C"
+        },
+        {
+          "code": "74000130",
+          "desc": "Hold R+B For Safe Fall",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83000D70",
+          "desc": "Hold R+B For Safe Fall",
+          "address": "0x02000D70"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

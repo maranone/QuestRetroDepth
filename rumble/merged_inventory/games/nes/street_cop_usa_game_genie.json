@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "streetcop",
+  "display_name": "Street Cop (USA) (Game Genie)",
+  "aliases": [
+    "Street Cop (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Street Cop (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0090:63",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x0090"
+        },
+        {
+          "code": "0091:63",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x0091"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

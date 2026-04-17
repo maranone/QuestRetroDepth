@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "monsterbassfishing",
+  "display_name": "Monster! Bass Fishing (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Monster! Bass Fishing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1000FFB0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200FFB0"
+        },
+        {
+          "code": "330054A4",
+          "desc": "Infinite Time",
+          "address": "0x020054A4"
+        },
+        {
+          "code": "330050AA",
+          "desc": "Line Never Breaks",
+          "address": "0x020050AA"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Monster! Bass Fishing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1000FFB0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200FFB0"
+        },
+        {
+          "code": "330054A4",
+          "desc": "Infinite Time",
+          "address": "0x020054A4"
+        },
+        {
+          "code": "330050AA",
+          "desc": "Line Never Breaks",
+          "address": "0x020050AA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

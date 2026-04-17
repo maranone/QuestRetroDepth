@@ -1,0 +1,77 @@
+{
+  "system": "nes",
+  "normalized_title": "cyberball",
+  "display_name": "Cyberball (USA) (Game Genie)",
+  "aliases": [
+    "Cyberball (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Cyberball (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 11,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "PENOYLLA",
+          "desc": "Start with level time at 1 minute",
+          "address": "0x038F"
+        },
+        {
+          "code": "ZENOYLLA",
+          "desc": "Start with level time at 2 minutes",
+          "address": "0x038F"
+        },
+        {
+          "code": "IENOYLLA",
+          "desc": "Start with level time at 5 minutes",
+          "address": "0x038F"
+        },
+        {
+          "code": "PENOYLLE",
+          "desc": "Start with level time at 9 minutes",
+          "address": "0x038F"
+        },
+        {
+          "code": "AAXEZAZA",
+          "desc": "Goals worth 0 points",
+          "address": "0x008A"
+        },
+        {
+          "code": "PAXEZAZA",
+          "desc": "Goals worth 1 points",
+          "address": "0x008A"
+        },
+        {
+          "code": "IAXEZAZA",
+          "desc": "Goals worth 5 points",
+          "address": "0x008A"
+        },
+        {
+          "code": "PAXEZAZE",
+          "desc": "Goals worth 9 points",
+          "address": "0x008A"
+        },
+        {
+          "code": "LTXEZAZA",
+          "desc": "Goals worth mega points",
+          "address": "0x00EA"
+        },
+        {
+          "code": "06CA:00",
+          "desc": "Team 1 Score Modifier (Blue Robot Team)",
+          "address": "0x06CA"
+        },
+        {
+          "code": "06CB:00",
+          "desc": "Team 2 Score Modifier (Red Robot Team)",
+          "address": "0x06CB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

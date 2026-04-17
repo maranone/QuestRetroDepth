@@ -1,0 +1,8 @@
+game_name=Radical Psycho Machine Racing (USA) (Game Genie)
+game_key=radical_psycho_machine_racing_usa_game_genie
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_0a25	pickup	0x7E0A25	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0a26	pickup	0x7E0A26	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0a27	pickup	0x7E0A27	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0a28	pickup	0x7E0A28	1	uint	little	prev != curr	0.8	1	right:0.250:18

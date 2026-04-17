@@ -1,0 +1,268 @@
+{
+  "system": "gba",
+  "normalized_title": "gtadvance3proconceptracing",
+  "display_name": "GT Advance 3 - Pro Concept Racing (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\GT Advance 3 - Pro Concept Racing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 24,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "1002BE78",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202BE78"
+        },
+        {
+          "code": "33002865",
+          "desc": "Always Place 1st",
+          "address": "0x02002865"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+L To End Race",
+          "address": "0x02000130"
+        },
+        {
+          "code": "830058BC",
+          "desc": "Press Select+L To End Race",
+          "address": "0x020058BC"
+        },
+        {
+          "code": "830058C0",
+          "desc": "Always On Lap Modifier (01-0A)",
+          "address": "0x020058C0"
+        },
+        {
+          "code": "730058C0",
+          "desc": "Start On Lap Modifier (01-0A)",
+          "address": "0x020058C0"
+        },
+        {
+          "code": "830058C0",
+          "desc": "Start On Lap Modifier (01-0A)",
+          "address": "0x020058C0"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+Up For Auto Pilot On",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83004F00",
+          "desc": "Press Select+Up For Auto Pilot On",
+          "address": "0x02004F00"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+Down For Auto Pilot Off",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83004F00",
+          "desc": "Press Select+Down For Auto Pilot Off",
+          "address": "0x02004F00"
+        },
+        {
+          "code": "730058BC",
+          "desc": "Stop Timer",
+          "address": "0x020058BC"
+        },
+        {
+          "code": "330058BC",
+          "desc": "Stop Timer",
+          "address": "0x020058BC"
+        },
+        {
+          "code": "73004F40",
+          "desc": "No Start Delay",
+          "address": "0x02004F40"
+        },
+        {
+          "code": "33004F40",
+          "desc": "No Start Delay",
+          "address": "0x02004F40"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press A+R For Turbo Xlr8",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33004F0C",
+          "desc": "Press A+R For Turbo Xlr8",
+          "address": "0x02004F0C"
+        },
+        {
+          "code": "33001CF0",
+          "desc": "Have All Tuned Parts",
+          "address": "0x02001CF0"
+        },
+        {
+          "code": "33001CF2",
+          "desc": "Have All Tuned Parts",
+          "address": "0x02001CF2"
+        },
+        {
+          "code": "43001780",
+          "desc": "Have All Races Open/Won",
+          "address": "0x02001780"
+        },
+        {
+          "code": "430017A0",
+          "desc": "Have All Cars Unlocked",
+          "address": "0x020017A0"
+        },
+        {
+          "code": "33001CFC",
+          "desc": "Unlock Kart",
+          "address": "0x02001CFC"
+        },
+        {
+          "code": "33001CFD",
+          "desc": "Unlock Wireframe",
+          "address": "0x02001CFD"
+        },
+        {
+          "code": "33001CFE",
+          "desc": "Unlock Radio Con",
+          "address": "0x02001CFE"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\GT Advance 3 - Pro Concept Racing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 24,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "1002BE78",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202BE78"
+        },
+        {
+          "code": "33002865",
+          "desc": "Always Place 1st",
+          "address": "0x02002865"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+L To End Race",
+          "address": "0x02000130"
+        },
+        {
+          "code": "830058BC",
+          "desc": "Press Select+L To End Race",
+          "address": "0x020058BC"
+        },
+        {
+          "code": "830058C0",
+          "desc": "Always On Lap Modifier (01-0A)",
+          "address": "0x020058C0"
+        },
+        {
+          "code": "730058C0",
+          "desc": "Start On Lap Modifier (01-0A)",
+          "address": "0x020058C0"
+        },
+        {
+          "code": "830058C0",
+          "desc": "Start On Lap Modifier (01-0A)",
+          "address": "0x020058C0"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+Up For Auto Pilot On",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83004F00",
+          "desc": "Press Select+Up For Auto Pilot On",
+          "address": "0x02004F00"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+Down For Auto Pilot Off",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83004F00",
+          "desc": "Press Select+Down For Auto Pilot Off",
+          "address": "0x02004F00"
+        },
+        {
+          "code": "730058BC",
+          "desc": "Stop Timer",
+          "address": "0x020058BC"
+        },
+        {
+          "code": "330058BC",
+          "desc": "Stop Timer",
+          "address": "0x020058BC"
+        },
+        {
+          "code": "73004F40",
+          "desc": "No Start Delay",
+          "address": "0x02004F40"
+        },
+        {
+          "code": "33004F40",
+          "desc": "No Start Delay",
+          "address": "0x02004F40"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press A+R For Turbo Xlr8",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33004F0C",
+          "desc": "Press A+R For Turbo Xlr8",
+          "address": "0x02004F0C"
+        },
+        {
+          "code": "33001CF0",
+          "desc": "Have All Tuned Parts",
+          "address": "0x02001CF0"
+        },
+        {
+          "code": "33001CF2",
+          "desc": "Have All Tuned Parts",
+          "address": "0x02001CF2"
+        },
+        {
+          "code": "43001780",
+          "desc": "Have All Races Open/Won",
+          "address": "0x02001780"
+        },
+        {
+          "code": "430017A0",
+          "desc": "Have All Cars Unlocked",
+          "address": "0x020017A0"
+        },
+        {
+          "code": "33001CFC",
+          "desc": "Unlock Kart",
+          "address": "0x02001CFC"
+        },
+        {
+          "code": "33001CFD",
+          "desc": "Unlock Wireframe",
+          "address": "0x02001CFD"
+        },
+        {
+          "code": "33001CFE",
+          "desc": "Unlock Radio Con",
+          "address": "0x02001CFE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

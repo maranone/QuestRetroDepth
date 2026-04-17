@@ -1,0 +1,159 @@
+{
+  "system": "nes",
+  "normalized_title": "supermariobros2",
+  "display_name": "Super Mario Bros. 2 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Super Mario Bros. 2 (Rumbles)",
+    "Super Mario Bros. 2 (USA) (Beta)",
+    "Super Mario Bros. 2 (USA) (Rev 1)",
+    "Super Mario Bros. 2 (USA)",
+    "Super Mario Bros. 2 (USA, Europe) (Action Replay)",
+    "Super Mario Bros. 2 (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Mario Bros. 2 (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 25,
+      "distinct_address_count": 25,
+      "sample_raw_entries": [
+        {
+          "code": "TINEXE",
+          "desc": "Makes Mushrooms Fall Down",
+          "address": "0x00DA"
+        },
+        {
+          "code": "TINEXI",
+          "desc": "More Enemies (May Only Work In Level 1-1)",
+          "address": "0x05DA"
+        },
+        {
+          "code": "VVOAAOSX",
+          "desc": "Always Have Fire Powers (Even As Small Mario)",
+          "address": "0x0168"
+        },
+        {
+          "code": "PAXAOIAA",
+          "desc": "Princess has mega-float and lunar descent",
+          "address": "0x0509"
+        },
+        {
+          "code": "PESEGLGA",
+          "desc": "Super Moonjumps For Mario",
+          "address": "0x038C"
+        },
+        {
+          "code": "AAEEZGPA",
+          "desc": "Mega Moonjumps For Luigi",
+          "address": "0x048A"
+        },
+        {
+          "code": "PENALLGA",
+          "desc": "Super Moonjumps For Toad",
+          "address": "0x030B"
+        },
+        {
+          "code": "PAXAPGGA",
+          "desc": "Super Moonjumps For Princess",
+          "address": "0x0409"
+        },
+        {
+          "code": "AEXALGZA",
+          "desc": "Speed Up Enemies",
+          "address": "0x040B"
+        },
+        {
+          "code": "GOEANKAO",
+          "desc": "Walk Backwards",
+          "address": "0x041F"
+        },
+        {
+          "code": "USEEEKKA",
+          "desc": "Walk Backwards",
+          "address": "0x04D8"
+        },
+        {
+          "code": "XVVANSZK",
+          "desc": "Super Turbo Running",
+          "address": "0x056F"
+        },
+        {
+          "code": "XVNEXSZV",
+          "desc": "Super Turbo Running",
+          "address": "0x05EA"
+        },
+        {
+          "code": "AEVAVIIA",
+          "desc": "Permanent Turbo Running",
+          "address": "0x050E"
+        },
+        {
+          "code": "AENEEITA",
+          "desc": "Permanent Turbo Running",
+          "address": "0x0588"
+        },
+        {
+          "code": "AXSETUAO",
+          "desc": "Super Fast Run For Mario",
+          "address": "0x03AE"
+        },
+        {
+          "code": "ESVAPUEV",
+          "desc": "Super Fast Run For Mario",
+          "address": "0x0359"
+        },
+        {
+          "code": "AZEEGKAO",
+          "desc": "Super Fast Run For Luigi",
+          "address": "0x04AC"
+        },
+        {
+          "code": "EIEEYKEV",
+          "desc": "Super Fast Run For Luigi",
+          "address": "0x04DF"
+        },
+        {
+          "code": "AXNAIUAO",
+          "desc": "Fast Run For Toad",
+          "address": "0x032D"
+        },
+        {
+          "code": "ESNEAUEV",
+          "desc": "Fast Run For Toad",
+          "address": "0x03D8"
+        },
+        {
+          "code": "AZXALKAO",
+          "desc": "Super Fast Run For Princess",
+          "address": "0x042B"
+        },
+        {
+          "code": "EIXATKEV",
+          "desc": "Super Fast Run For Princess",
+          "address": "0x045E"
+        },
+        {
+          "code": "AXNAZSAA",
+          "desc": "Super Speed Enemies",
+          "address": "0x052A"
+        },
+        {
+          "code": "EVNALSEY",
+          "desc": "Super Speed Enemies",
+          "address": "0x056B"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Super Mario Bros. 2 (USA).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

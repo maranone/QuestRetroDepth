@@ -1,0 +1,42 @@
+{
+  "system": "nes",
+  "normalized_title": "snakesrevenge",
+  "display_name": "Snake's Revenge (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Snake's Revenge (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Snake's Revenge (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "SZEEOUSE",
+          "desc": "Infinite Beretta Ammo",
+          "address": "0x03A9"
+        },
+        {
+          "code": "SXOASKSE",
+          "desc": "Infinite Shotgun Ammo",
+          "address": "0x042D"
+        },
+        {
+          "code": "SZKAKKSE",
+          "desc": "Infinite Grenades",
+          "address": "0x042C"
+        },
+        {
+          "code": "SXVEOKSE",
+          "desc": "Infinite Missiles",
+          "address": "0x04A9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

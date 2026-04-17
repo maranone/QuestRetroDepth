@@ -1,0 +1,95 @@
+{
+  "system": "nes",
+  "normalized_title": "laserinvasion",
+  "display_name": "Laser Invasion (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Laser Invasion (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 15,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "006E:28",
+          "desc": "Infinite Weapon 1",
+          "address": "0x006E"
+        },
+        {
+          "code": "006B:10",
+          "desc": "Infinite Energy",
+          "address": "0x006B"
+        },
+        {
+          "code": "0040:03",
+          "desc": "Infinite Lives",
+          "address": "0x0040"
+        },
+        {
+          "code": "006F:05",
+          "desc": "Infintie Weapon 2",
+          "address": "0x006F"
+        },
+        {
+          "code": "006C:0C",
+          "desc": "Infinite Fuel",
+          "address": "0x006C"
+        },
+        {
+          "code": "068B:14",
+          "desc": "Infinite Energy",
+          "address": "0x068B"
+        },
+        {
+          "code": "068C:63",
+          "desc": "Infinite Ammo",
+          "address": "0x068C"
+        },
+        {
+          "code": "006B:13",
+          "desc": "Infinite Health",
+          "address": "0x006B"
+        },
+        {
+          "code": "0040:09",
+          "desc": "Infinite Lives",
+          "address": "0x0040"
+        },
+        {
+          "code": "0028:09",
+          "desc": "Infinite Continues",
+          "address": "0x0028"
+        },
+        {
+          "code": "006E:63",
+          "desc": "Infinite Missiles",
+          "address": "0x006E"
+        },
+        {
+          "code": "0693:4C",
+          "desc": "Stop Countdown Timer",
+          "address": "0x0693"
+        },
+        {
+          "code": "068B:20",
+          "desc": "Infinite Energy",
+          "address": "0x068B"
+        },
+        {
+          "code": "068C:63",
+          "desc": "Infinite Ammo",
+          "address": "0x068C"
+        },
+        {
+          "code": "06F8:32",
+          "desc": "Enable Start with 9 Lives Cheat",
+          "address": "0x06F8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

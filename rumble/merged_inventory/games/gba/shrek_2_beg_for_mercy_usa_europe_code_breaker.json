@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "shrek2begformercy",
+  "display_name": "Shrek 2 - Beg for Mercy (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Shrek 2 - Beg for Mercy (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1000E3D4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200E3D4"
+        },
+        {
+          "code": "82006588",
+          "desc": "1 Coin For Max Coins",
+          "address": "0x02006588"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Shrek 2 - Beg for Mercy (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1000E3D4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200E3D4"
+        },
+        {
+          "code": "82006588",
+          "desc": "1 Coin For Max Coins",
+          "address": "0x02006588"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

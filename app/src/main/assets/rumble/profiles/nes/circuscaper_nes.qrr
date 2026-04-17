@@ -1,0 +1,7 @@
+game_name=Circus Caper (USA) (Game Genie)
+game_key=CircusCaper-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_0392	damage_taken	0x0392	1	bcd	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0392	death	0x0392	1	bcd	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_038b	score	0x038B	2	uint	little	prev < curr	0.8	1	right:0.350:60

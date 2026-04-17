@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "toprider",
+  "display_name": "Top Rider (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Top Rider (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "049D:FF",
+          "desc": "Max Speed",
+          "address": "0x049D"
+        },
+        {
+          "code": "VAOPKOSE",
+          "desc": "Enable Controller Use",
+          "address": "0x010C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

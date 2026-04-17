@@ -1,0 +1,7 @@
+game_name=Red Zone (USA, Europe)
+game_key=red_zone_usa_europe
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff4e84	damage_taken	0xFF4E84	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff4e84	death	0xFF4E84	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_ff4e9a	pickup	0xFF4E9A	1	uint	little	prev != curr	0.8	1	right:0.250:18

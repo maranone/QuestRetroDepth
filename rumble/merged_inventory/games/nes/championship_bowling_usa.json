@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "championshipbowling",
+  "display_name": "Championship Bowling (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Championship Bowling (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0385:0A",
+          "desc": "Pins Knocked Down Modifier",
+          "address": "0x0385"
+        },
+        {
+          "code": "AASETNZP",
+          "desc": "Hit Anywhere",
+          "address": "0x078E"
+        },
+        {
+          "code": "0004:00",
+          "desc": "Bowling Ball Modifier (At Player Selection Screen)",
+          "address": "0x0004"
+        },
+        {
+          "code": "0385:00",
+          "desc": "First Bowling Ball Score Modifier (0X, '9' Recommended)",
+          "address": "0x0385"
+        },
+        {
+          "code": "0386:00",
+          "desc": "Second Bowling Ball Score Modifier (0X, '9' Recommended)",
+          "address": "0x0386"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

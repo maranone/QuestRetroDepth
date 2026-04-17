@@ -1,0 +1,6 @@
+game_name=WarioWare, Inc. - Mega Microgame$! (USA) (Code Breaker)
+game_key=warioware_inc_mega_microgame_usa_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_020039d5	life_lost	0x020039D5	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_020039d5	life_gained	0x020039D5	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

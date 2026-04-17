@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "smugglersrun",
+  "display_name": "Smuggler's Run (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Smuggler's Run (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "100107A8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020107A8"
+        },
+        {
+          "code": "83003484",
+          "desc": "Infinite Time",
+          "address": "0x02003484"
+        },
+        {
+          "code": "8300323C",
+          "desc": "Quick Score Gain",
+          "address": "0x0200323C"
+        },
+        {
+          "code": "8300323C",
+          "desc": "Max Score",
+          "address": "0x0200323C"
+        },
+        {
+          "code": "8300323E",
+          "desc": "Max Score",
+          "address": "0x0200323E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Smuggler's Run (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "100107A8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020107A8"
+        },
+        {
+          "code": "83003484",
+          "desc": "Infinite Time",
+          "address": "0x02003484"
+        },
+        {
+          "code": "8300323C",
+          "desc": "Quick Score Gain",
+          "address": "0x0200323C"
+        },
+        {
+          "code": "8300323C",
+          "desc": "Max Score",
+          "address": "0x0200323C"
+        },
+        {
+          "code": "8300323E",
+          "desc": "Max Score",
+          "address": "0x0200323E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

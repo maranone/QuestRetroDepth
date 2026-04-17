@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "supermariobrosduckhuntworldclasstrackmeet",
+  "display_name": "Super Mario Bros. + Duck Hunt + World Class Track Meet (USA) (Rev 1)",
+  "aliases": [
+    "Super Mario Bros. + Duck Hunt + World Class Track Meet (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Mario Bros. + Duck Hunt + World Class Track Meet (USA).cht",
+      "total_cheat_rows": 195,
+      "raw_entry_count": 174,
+      "distinct_address_count": 63,
+      "sample_raw_entries": [
+        {
+          "code": "0754:00",
+          "desc": "Mario Modifier",
+          "address": "0x0754"
+        },
+        {
+          "code": "0756:00",
+          "desc": "Mario Modifier",
+          "address": "0x0756"
+        },
+        {
+          "code": "079E:06",
+          "desc": "Invincible (Walk Through Enemies)",
+          "address": "0x079E"
+        },
+        {
+          "code": "079F:18",
+          "desc": "Invincible (Kill Enemies On Contact)",
+          "address": "0x079F"
+        },
+        {
+          "code": "0787:0C",
+          "desc": "Infinite Time",
+          "address": "0x0787"
+        },
+        {
+          "code": "07FC:01",
+          "desc": "Enable Hard Mode",
+          "address": "0x07FC"
+        },
+        {
+          "code": "0700:1C",
+          "desc": "Mario Always Moves As If He Has Gotten A Running Start",
+          "address": "0x0700"
+        },
+        {
+          "code": "07ED:00",
+          "desc": "Coins Modifier (Tens Digit)",
+          "address": "0x07ED"
+        },
+        {
+          "code": "07EE:00",
+          "desc": "Coins Modifier (Seconds Digit)",
+          "address": "0x07EE"
+        },
+        {
+          "code": "075C:00",
+          "desc": "Level Text Modifier (i.e. 1-1, 1-2)",
+          "address": "0x075C"
+        },
+        {
+          "code": "07DC:00",
+          "desc": "Max High Score (Tens)",
+          "address": "0x07DC"
+        },
+        {
+          "code": "07DB:09",
+          "desc": "Max High Score (Hundreds)",
+          "address": "0x07DB"
+        },
+        {
+          "code": "07DA:09",
+          "desc": "Max High Score (Thousands)",
+          "address": "0x07DA"
+        },
+        {
+          "code": "07D9:09",
+          "desc": "Max High Score (Millions)",
+          "address": "0x07D9"
+        },
+        {
+          "code": "07D8:09",
+          "desc": "Max High Score (Billions)",
+          "address": "0x07D8"
+        },
+        {
+          "code": "07D7:09",
+          "desc": "Max High Score (Trillions)",
+          "address": "0x07D7"
+        },
+        {
+          "code": "00C1:00",
+          "desc": "Round Modifier",
+          "address": "0x00C1"
+        },
+        {
+          "code": "0319:09",
+          "desc": "Max High Score (Ones)",
+          "address": "0x0319"
+        },
+        {
+          "code": "0318:09",
+          "desc": "Max High Score (Tens)",
+          "address": "0x0318"
+        },
+        {
+          "code": "0317:09",
+          "desc": "Max High Score (Hundreds)",
+          "address": "0x0317"
+        },
+        {
+          "code": "0316:09",
+          "desc": "Max High Score (Thousands)",
+          "address": "0x0316"
+        },
+        {
+          "code": "0315:09",
+          "desc": "Max High Score (Ten Thousands)",
+          "address": "0x0315"
+        },
+        {
+          "code": "0314:09",
+          "desc": "Max High Score (Hundred Thousands)",
+          "address": "0x0314"
+        },
+        {
+          "code": "00BA:03",
+          "desc": "Infinite Ammo",
+          "address": "0x00BA"
+        },
+        {
+          "code": "EYNOLAEI",
+          "desc": "Enemies Are (Headless) Bowsers",
+          "address": "0x00FB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

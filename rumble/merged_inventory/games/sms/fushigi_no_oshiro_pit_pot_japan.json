@@ -1,0 +1,52 @@
+{
+  "system": "sms",
+  "normalized_title": "fushiginooshiropitpot",
+  "display_name": "Fushigi no Oshiro Pit Pot (Japan)",
+  "aliases": [
+    "Fushigi no Oshiro Pit Pot (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\fushiginooshiropitpot_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xC021",
+        "0xC022"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FushigiNoOshiroPitPot-Sms-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xC021",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xC022",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Fushigi no Oshiro Pit Pot (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

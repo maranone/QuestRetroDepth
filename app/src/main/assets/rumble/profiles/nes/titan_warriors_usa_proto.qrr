@@ -1,0 +1,8 @@
+game_name=Titan Warriors (USA) (Proto)
+game_key=titan_warriors_usa_proto
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_0488	life_lost	0x0488	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0488	life_gained	0x0488	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_042b	life_lost	0x042B	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_042b	life_gained	0x042B	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

@@ -1,0 +1,139 @@
+{
+  "system": "nes",
+  "normalized_title": "teenagemutantninjaturtles",
+  "display_name": "Teenage Mutant Ninja Turtles (USA, Italy, Japan) (Action Replay)",
+  "aliases": [
+    "Teenage Mutant Ninja Turtles (Japan)",
+    "Teenage Mutant Ninja Turtles (Rumbles)",
+    "Teenage Mutant Ninja Turtles (USA)",
+    "Teenage Mutant Ninja Turtles (USA, Italy, Japan) (Action Replay)",
+    "Teenage Mutant Ninja Turtles (USA, Italy, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\teenagemutantninjaturtles_nes.json",
+      "trigger_count": 2,
+      "field_names": [
+        "gameover",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x009E",
+        "0x00C2"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TeenageMutantNinjaTurtles-Nes-v0\\data.json",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0x009E",
+          "type": "|i1"
+        },
+        {
+          "name": "health_1",
+          "address": "0x0077",
+          "type": "|d1"
+        },
+        {
+          "name": "health_2",
+          "address": "0x0078",
+          "type": "|d1"
+        },
+        {
+          "name": "health_3",
+          "address": "0x0079",
+          "type": "|d1"
+        },
+        {
+          "name": "health_4",
+          "address": "0x007A",
+          "type": "|d1"
+        },
+        {
+          "name": "score",
+          "address": "0x00C2",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 6
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Teenage Mutant Ninja Turtles (USA, Italy, Japan) (Game Genie).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "ZENOATGO",
+          "desc": "Pick Up 10 Weapons Only",
+          "address": "0x0688"
+        },
+        {
+          "code": "ZUNOATGP",
+          "desc": "Pick Up 50 Weapons At A Time!",
+          "address": "0x06B8"
+        },
+        {
+          "code": "GXSOUAST",
+          "desc": "Don't Take Most Damage",
+          "address": "0x00AB"
+        },
+        {
+          "code": "AEOOGTZA",
+          "desc": "Full Energy Boost From Pizza Slices",
+          "address": "0x068C"
+        },
+        {
+          "code": "GPUOLNZA",
+          "desc": "20 Missiles On Pick-Up",
+          "address": "0x079B"
+        },
+        {
+          "code": "TAKOPYLA",
+          "desc": "Double Rope On Pick-Up",
+          "address": "0x0789"
+        },
+        {
+          "code": "AOSOUAST",
+          "desc": "Infinite Energy (All Turtles)",
+          "address": "0x009B"
+        },
+        {
+          "code": "LVNOATGP",
+          "desc": "Pick-Up 99 Weapons At A Time",
+          "address": "0x06E8"
+        },
+        {
+          "code": "YTUOLNZA",
+          "desc": "Pick-Up 99 Missiles At A Time",
+          "address": "0x07EB"
+        },
+        {
+          "code": "AYKOPYLY",
+          "desc": "Pick-Up 99 Ropes At One-Time (Not Infinite)",
+          "address": "0x07F9"
+        },
+        {
+          "code": "LVNOATGP",
+          "desc": "Infinite Ammo (All Turtles)",
+          "address": "0x06E8"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Teenage Mutant Ninja Turtles (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

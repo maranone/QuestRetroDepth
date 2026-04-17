@@ -1,0 +1,103 @@
+{
+  "system": "nes",
+  "normalized_title": "superarabian",
+  "display_name": "Super Arabian (Japan)",
+  "aliases": [
+    "Super Arabian (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\superarabian_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0048",
+        "0x0090"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperArabian-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0048",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0090",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Arabian (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "00E0:8D",
+          "desc": "Invincibility",
+          "address": "0x00E0"
+        },
+        {
+          "code": "00E8:0A",
+          "desc": "Invincibility",
+          "address": "0x00E8"
+        },
+        {
+          "code": "030D:00",
+          "desc": "Invincibility",
+          "address": "0x030D"
+        },
+        {
+          "code": "0014:00",
+          "desc": "Invincibility",
+          "address": "0x0014"
+        },
+        {
+          "code": "00DC:38",
+          "desc": "Invincibility",
+          "address": "0x00DC"
+        },
+        {
+          "code": "0048:08",
+          "desc": "Infinite Lives (Both Players)",
+          "address": "0x0048"
+        },
+        {
+          "code": "0049:00",
+          "desc": "Level Modifier",
+          "address": "0x0049"
+        },
+        {
+          "code": "AEEOSGYA",
+          "desc": "Hit Anywhere",
+          "address": "0x048D"
+        },
+        {
+          "code": "KKUOXGSO",
+          "desc": "Hit Anywhere",
+          "address": "0x04CA"
+        },
+        {
+          "code": "SXYAGA",
+          "desc": "Infinite Lives",
+          "address": "0x0024"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

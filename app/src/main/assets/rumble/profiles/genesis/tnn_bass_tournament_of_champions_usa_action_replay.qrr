@@ -1,0 +1,6 @@
+game_name=TNN Bass Tournament of Champions (USA) (Action Replay)
+game_key=tnn_bass_tournament_of_champions_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff180c	pickup	0xFF180C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff180e	pickup	0xFF180E	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,6 @@
+game_name=Arcana (USA) (Action Replay)
+game_key=arcana_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_1559	pickup	0x7E1559	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_155a	pickup	0x7E155A	1	uint	little	prev != curr	0.8	1	right:0.250:18

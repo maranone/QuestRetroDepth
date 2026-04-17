@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "disneyprincess",
+  "display_name": "Disney Princess (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Disney Princess (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "100020F6",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020020F6"
+        },
+        {
+          "code": "3300189A",
+          "desc": "Infinite Health",
+          "address": "0x0200189A"
+        },
+        {
+          "code": "33001892",
+          "desc": "Infinite Ammo",
+          "address": "0x02001892"
+        },
+        {
+          "code": "83001856",
+          "desc": "999 Coins",
+          "address": "0x02001856"
+        },
+        {
+          "code": "33001880",
+          "desc": "Have Gems",
+          "address": "0x02001880"
+        },
+        {
+          "code": "33001888",
+          "desc": "Have Gems",
+          "address": "0x02001888"
+        },
+        {
+          "code": "83001874",
+          "desc": "Have All Chapters",
+          "address": "0x02001874"
+        },
+        {
+          "code": "33001876",
+          "desc": "Have All Chapters",
+          "address": "0x02001876"
+        },
+        {
+          "code": "430017E0",
+          "desc": "Have All Treasures",
+          "address": "0x020017E0"
+        },
+        {
+          "code": "43001858",
+          "desc": "999 Coins All Chapters",
+          "address": "0x02001858"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Disney Princess (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "100020F6",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020020F6"
+        },
+        {
+          "code": "3300189A",
+          "desc": "Infinite Health",
+          "address": "0x0200189A"
+        },
+        {
+          "code": "33001892",
+          "desc": "Infinite Ammo",
+          "address": "0x02001892"
+        },
+        {
+          "code": "83001856",
+          "desc": "999 Coins",
+          "address": "0x02001856"
+        },
+        {
+          "code": "33001880",
+          "desc": "Have Gems",
+          "address": "0x02001880"
+        },
+        {
+          "code": "33001888",
+          "desc": "Have Gems",
+          "address": "0x02001888"
+        },
+        {
+          "code": "83001874",
+          "desc": "Have All Chapters",
+          "address": "0x02001874"
+        },
+        {
+          "code": "33001876",
+          "desc": "Have All Chapters",
+          "address": "0x02001876"
+        },
+        {
+          "code": "430017E0",
+          "desc": "Have All Treasures",
+          "address": "0x020017E0"
+        },
+        {
+          "code": "43001858",
+          "desc": "999 Coins All Chapters",
+          "address": "0x02001858"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

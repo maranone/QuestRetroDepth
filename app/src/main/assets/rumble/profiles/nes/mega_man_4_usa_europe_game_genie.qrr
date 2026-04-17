@@ -1,0 +1,8 @@
+game_name=Mega Man 4 (USA, Europe) (Game Genie)
+game_key=mega_man_4_usa_europe_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_062a	damage_taken	0x062A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_062a	death	0x062A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_000b	enemy_defeated	0x000B	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_06be	enemy_defeated	0x06BE	1	uint	little	prev > curr	0.65	1	right:0.450:35

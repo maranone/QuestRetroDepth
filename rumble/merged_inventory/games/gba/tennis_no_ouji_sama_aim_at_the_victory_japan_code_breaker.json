@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "tennisnooujisamaaimatvictory",
+  "display_name": "Tennis no Ouji-sama - Aim at the Victory! (Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Tennis no Ouji-sama - Aim at the Victory! (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10000C44",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000C44"
+        },
+        {
+          "code": "830026FA",
+          "desc": "Max P1 Gauge",
+          "address": "0x020026FA"
+        },
+        {
+          "code": "830026FA",
+          "desc": "No P1 Gauge",
+          "address": "0x020026FA"
+        },
+        {
+          "code": "830026F6",
+          "desc": "Max P2 Gauge",
+          "address": "0x020026F6"
+        },
+        {
+          "code": "830026F6",
+          "desc": "No P2 Gauge",
+          "address": "0x020026F6"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Tennis no Ouji-sama - Aim at the Victory! (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10000C44",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000C44"
+        },
+        {
+          "code": "830026FA",
+          "desc": "Max P1 Gauge",
+          "address": "0x020026FA"
+        },
+        {
+          "code": "830026FA",
+          "desc": "No P1 Gauge",
+          "address": "0x020026FA"
+        },
+        {
+          "code": "830026F6",
+          "desc": "Max P2 Gauge",
+          "address": "0x020026F6"
+        },
+        {
+          "code": "830026F6",
+          "desc": "No P2 Gauge",
+          "address": "0x020026F6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

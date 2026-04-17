@@ -1,0 +1,28 @@
+{
+  "system": "gb",
+  "normalized_title": "batmanforever",
+  "display_name": "Batman Forever (World) (Game Genie)",
+  "aliases": [
+    "Batman Forever (World) (Game Genie)",
+    "Batman Forever (World) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Batman Forever (World) (GameShark).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0109DFD8",
+          "desc": "Infinite Lives",
+          "address": "0xDFD8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

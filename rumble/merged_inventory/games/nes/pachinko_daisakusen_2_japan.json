@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "pachinkodaisakusen2",
+  "display_name": "Pachinko Daisakusen 2 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Pachinko Daisakusen 2 (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0074:99",
+          "desc": "Infinite Balls",
+          "address": "0x0074"
+        },
+        {
+          "code": "0613:01",
+          "desc": "Auto-Win Pachinko Games",
+          "address": "0x0613"
+        },
+        {
+          "code": "0614:00",
+          "desc": "Auto-Win Pachinko Games",
+          "address": "0x0614"
+        },
+        {
+          "code": "0615:00",
+          "desc": "Auto-Win Pachinko Games",
+          "address": "0x0615"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

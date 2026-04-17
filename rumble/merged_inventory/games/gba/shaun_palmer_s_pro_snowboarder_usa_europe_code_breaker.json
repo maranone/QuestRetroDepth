@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "shaunpalmersprosnowboarder",
+  "display_name": "Shaun Palmer's Pro Snowboarder (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Shaun Palmer's Pro Snowboarder (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10001F04",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001F04"
+        },
+        {
+          "code": "83006724",
+          "desc": "Quick Score Gain",
+          "address": "0x02006724"
+        },
+        {
+          "code": "83006724",
+          "desc": "Max Score",
+          "address": "0x02006724"
+        },
+        {
+          "code": "83006726",
+          "desc": "Max Score",
+          "address": "0x02006726"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Shaun Palmer's Pro Snowboarder (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10001F04",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001F04"
+        },
+        {
+          "code": "83006724",
+          "desc": "Quick Score Gain",
+          "address": "0x02006724"
+        },
+        {
+          "code": "83006724",
+          "desc": "Max Score",
+          "address": "0x02006724"
+        },
+        {
+          "code": "83006726",
+          "desc": "Max Score",
+          "address": "0x02006726"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

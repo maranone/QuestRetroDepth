@@ -1,0 +1,55 @@
+{
+  "system": "pce",
+  "normalized_title": "sonsonii",
+  "display_name": "Son Son II (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Son Son II (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "1f02c8:14",
+          "desc": "Invincibility",
+          "address": "0x1F02C8"
+        },
+        {
+          "code": "1f02b8:0e",
+          "desc": "Infinite Health",
+          "address": "0x1F02B8"
+        },
+        {
+          "code": "1f020e:09",
+          "desc": "Infinite Zenny",
+          "address": "0x1F020E"
+        },
+        {
+          "code": "1f020f:09",
+          "desc": "Infinite Zenny",
+          "address": "0x1F020F"
+        },
+        {
+          "code": "1f0210:09",
+          "desc": "Infinite Zenny",
+          "address": "0x1F0210"
+        },
+        {
+          "code": "1f0211:09",
+          "desc": "Infinite Zenny",
+          "address": "0x1F0211"
+        },
+        {
+          "code": "1f0212:09",
+          "desc": "Infinite Zenny",
+          "address": "0x1F0212"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

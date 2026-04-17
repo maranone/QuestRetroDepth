@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "davemirrafreestylebmx3",
+  "display_name": "Dave Mirra Freestyle BMX 3 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Dave Mirra Freestyle BMX 3 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "820125CC",
+          "desc": "50,000 Cash",
+          "address": "0x020125CC"
+        },
+        {
+          "code": "3200E481",
+          "desc": "Max Rush",
+          "address": "0x0200E481"
+        },
+        {
+          "code": "320125C4",
+          "desc": "All Levels",
+          "address": "0x020125C4"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Dave Mirra Freestyle BMX 3 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "820125CC",
+          "desc": "50,000 Cash",
+          "address": "0x020125CC"
+        },
+        {
+          "code": "3200E481",
+          "desc": "Max Rush",
+          "address": "0x0200E481"
+        },
+        {
+          "code": "320125C4",
+          "desc": "All Levels",
+          "address": "0x020125C4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

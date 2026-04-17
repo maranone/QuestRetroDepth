@@ -1,0 +1,6 @@
+game_name=Boomer's Adventure in ASMIK World (USA) (GameShark)
+game_key=boomer_s_adventure_in_asmik_world_usa_gameshark
+system=gb
+integration_tier=contrib
+trigger	life_lost_lives_dfc0	life_lost	0xDFC0	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_dfc0	life_gained	0xDFC0	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

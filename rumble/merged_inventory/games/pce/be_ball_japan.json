@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "beball",
+  "display_name": "Be Ball (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Be Ball (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f0912:09",
+          "desc": "Infinite Lives",
+          "address": "0x1F0912"
+        },
+        {
+          "code": "1f088c:09",
+          "desc": "Infinite Time",
+          "address": "0x1F088C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "dualblades",
+  "display_name": "Dual Blades (USA, Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Dual Blades (USA, Japan) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "1000A178",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200A178"
+        },
+        {
+          "code": "830029BA",
+          "desc": "Infinite Time",
+          "address": "0x020029BA"
+        },
+        {
+          "code": "830029A8",
+          "desc": "Infinite Health P1",
+          "address": "0x020029A8"
+        },
+        {
+          "code": "830029A8",
+          "desc": "No Health P1",
+          "address": "0x020029A8"
+        },
+        {
+          "code": "830029BE",
+          "desc": "Infinite Pow P1",
+          "address": "0x020029BE"
+        },
+        {
+          "code": "830029BE",
+          "desc": "No Pow P1",
+          "address": "0x020029BE"
+        },
+        {
+          "code": "830034D4",
+          "desc": "Infinite Health P2",
+          "address": "0x020034D4"
+        },
+        {
+          "code": "830034D4",
+          "desc": "No Health P2",
+          "address": "0x020034D4"
+        },
+        {
+          "code": "830034EA",
+          "desc": "Infinite Pow P2",
+          "address": "0x020034EA"
+        },
+        {
+          "code": "830034EA",
+          "desc": "No Pow P2",
+          "address": "0x020034EA"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Dual Blades (USA, Japan) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "1000A178",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200A178"
+        },
+        {
+          "code": "830029BA",
+          "desc": "Infinite Time",
+          "address": "0x020029BA"
+        },
+        {
+          "code": "830029A8",
+          "desc": "Infinite Health P1",
+          "address": "0x020029A8"
+        },
+        {
+          "code": "830029A8",
+          "desc": "No Health P1",
+          "address": "0x020029A8"
+        },
+        {
+          "code": "830029BE",
+          "desc": "Infinite Pow P1",
+          "address": "0x020029BE"
+        },
+        {
+          "code": "830029BE",
+          "desc": "No Pow P1",
+          "address": "0x020029BE"
+        },
+        {
+          "code": "830034D4",
+          "desc": "Infinite Health P2",
+          "address": "0x020034D4"
+        },
+        {
+          "code": "830034D4",
+          "desc": "No Health P2",
+          "address": "0x020034D4"
+        },
+        {
+          "code": "830034EA",
+          "desc": "Infinite Pow P2",
+          "address": "0x020034EA"
+        },
+        {
+          "code": "830034EA",
+          "desc": "No Pow P2",
+          "address": "0x020034EA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

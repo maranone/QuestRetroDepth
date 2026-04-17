@@ -1,6 +1,0 @@
-game_name=Actraiser
-game_key=Actraiser-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_1d	damage_taken	0x7E001D	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	enemy_defeated_1_1f	enemy_defeated	0x7E001F	1	uint	native	prev != curr	0.7	1	left:0.510:100

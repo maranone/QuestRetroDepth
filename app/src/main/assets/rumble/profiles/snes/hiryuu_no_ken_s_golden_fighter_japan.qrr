@@ -1,0 +1,15 @@
+game_name=Hiryuu no Ken S - Golden Fighter (Japan)
+game_key=hiryuu_no_ken_s_golden_fighter_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_1402	damage_taken	0x7E1402	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1402	death	0x7E1402	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_09d7	damage_taken	0x7E09D7	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_09d7	death	0x7E09D7	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_09c9	life_lost	0x7E09C9	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_09c9	life_gained	0x7E09C9	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_0e0c	enemy_defeated	0x7E0E0C	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0e32	enemy_defeated	0x7E0E32	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	score_score_09b9	score	0x7E09B9	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_09ba	score	0x7E09BA	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_09bb	score	0x7E09BB	1	uint	little	prev < curr	0.8	1	right:0.350:60

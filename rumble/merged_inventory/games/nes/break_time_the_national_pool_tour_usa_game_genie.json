@@ -1,0 +1,87 @@
+{
+  "system": "nes",
+  "normalized_title": "breaktimenationalpooltour",
+  "display_name": "Break Time - The National Pool Tour (USA) (Game Genie)",
+  "aliases": [
+    "Break Time - The National Pool Tour (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Break Time - The National Pool Tour (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 13,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "VAVEILSA",
+          "desc": "Start in Milwaukee",
+          "address": "0x038D"
+        },
+        {
+          "code": "PAVEGLAA",
+          "desc": "Start in Milwaukee",
+          "address": "0x038C"
+        },
+        {
+          "code": "VAVEILSA",
+          "desc": "Start in Atlanta",
+          "address": "0x038D"
+        },
+        {
+          "code": "ZAVEGLAA",
+          "desc": "Start in Atlanta",
+          "address": "0x038C"
+        },
+        {
+          "code": "VAVEILSA",
+          "desc": "Start in Los Angeles",
+          "address": "0x038D"
+        },
+        {
+          "code": "LAVEGLAA",
+          "desc": "Start in Los Angeles",
+          "address": "0x038C"
+        },
+        {
+          "code": "VAVEILSA",
+          "desc": "Start in Las Vegas",
+          "address": "0x038D"
+        },
+        {
+          "code": "GAVEGLAA",
+          "desc": "Start in Las Vegas",
+          "address": "0x038C"
+        },
+        {
+          "code": "00AF:00",
+          "desc": "P1 Ball Score Modifier",
+          "address": "0x00AF"
+        },
+        {
+          "code": "00B0:00",
+          "desc": "P1 Ball Score Multiplier",
+          "address": "0x00B0"
+        },
+        {
+          "code": "00B1:00",
+          "desc": "P2/CPU Ball Score Modifier",
+          "address": "0x00B1"
+        },
+        {
+          "code": "00B2:00",
+          "desc": "P2/CPU Ball Score Multiplier",
+          "address": "0x00B2"
+        },
+        {
+          "code": "00A2:10",
+          "desc": "Always P1's Turn (P2 Never Get's A Turn) (PAR)",
+          "address": "0x00A2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

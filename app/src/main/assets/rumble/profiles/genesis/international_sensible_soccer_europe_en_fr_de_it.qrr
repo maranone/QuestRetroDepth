@@ -1,0 +1,5 @@
+game_name=International Sensible Soccer (Europe) (En,Fr,De,It)
+game_key=international_sensible_soccer_europe_en_fr_de_it
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff550e	score	0xFF550E	1	uint	little	prev < curr	0.8	1	right:0.350:60

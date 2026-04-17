@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "ferrarigrandprixchallenge",
+  "display_name": "Ferrari Grand Prix Challenge (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ferrari Grand Prix Challenge (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "06C0:01",
+          "desc": "Always 1st Place",
+          "address": "0x06C0"
+        },
+        {
+          "code": "0078:09",
+          "desc": "Lap Modifier",
+          "address": "0x0078"
+        },
+        {
+          "code": "05E2:00",
+          "desc": "Low Timer (One Digit - Seconds)",
+          "address": "0x05E2"
+        },
+        {
+          "code": "05E1:00",
+          "desc": "Low Timer (Ten Digit - Seconds)",
+          "address": "0x05E1"
+        },
+        {
+          "code": "05E3:00",
+          "desc": "Low Timer (Microsecond Digit)",
+          "address": "0x05E3"
+        },
+        {
+          "code": "0610:0F",
+          "desc": "Car Goes At Max Speed",
+          "address": "0x0610"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

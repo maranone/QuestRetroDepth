@@ -1,0 +1,11 @@
+game_name=Samsara Naga (Japan)
+game_key=samsara_naga_japan
+system=nes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_0388	enemy_defeated	0x0388	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0398	enemy_defeated	0x0398	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_03a8	enemy_defeated	0x03A8	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_03b8	enemy_defeated	0x03B8	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_03c8	enemy_defeated	0x03C8	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_03d8	enemy_defeated	0x03D8	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_03e8	enemy_defeated	0x03E8	1	uint	little	prev > curr	0.65	1	right:0.450:35

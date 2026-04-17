@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "gemsmashers",
+  "display_name": "Gem Smashers (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Gem Smashers (USA) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10029CC0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02029CC0"
+        },
+        {
+          "code": "830043EC",
+          "desc": "Quick Score",
+          "address": "0x020043EC"
+        },
+        {
+          "code": "830043EC",
+          "desc": "Max Score",
+          "address": "0x020043EC"
+        },
+        {
+          "code": "830043EE",
+          "desc": "Max Score",
+          "address": "0x020043EE"
+        },
+        {
+          "code": "8300440C",
+          "desc": "Infinite Lives",
+          "address": "0x0200440C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Gem Smashers (USA) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10029CC0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02029CC0"
+        },
+        {
+          "code": "830043EC",
+          "desc": "Quick Score",
+          "address": "0x020043EC"
+        },
+        {
+          "code": "830043EC",
+          "desc": "Max Score",
+          "address": "0x020043EC"
+        },
+        {
+          "code": "830043EE",
+          "desc": "Max Score",
+          "address": "0x020043EE"
+        },
+        {
+          "code": "8300440C",
+          "desc": "Infinite Lives",
+          "address": "0x0200440C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

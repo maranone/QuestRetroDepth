@@ -1,0 +1,97 @@
+{
+  "system": "nes",
+  "normalized_title": "mafatconspiracy",
+  "display_name": "Mafat Conspiracy, The (USA) (Game Genie)",
+  "aliases": [
+    "Mafat Conspiracy, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mafat Conspiracy, The (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 15,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "005E:39",
+          "desc": "Infinite Time [Seconds - One's Digit]",
+          "address": "0x005E"
+        },
+        {
+          "code": "005D:39",
+          "desc": "Infinite Time [Seconds - Ten's Digit]",
+          "address": "0x005D"
+        },
+        {
+          "code": "005C:39",
+          "desc": "Infinite Time [Minutes - One's Digit]",
+          "address": "0x005C"
+        },
+        {
+          "code": "005B:39",
+          "desc": "Infinite Time [Minutes - Ten's Digit]",
+          "address": "0x005B"
+        },
+        {
+          "code": "0300:50",
+          "desc": "Infinite Health",
+          "address": "0x0300"
+        },
+        {
+          "code": "0079:50",
+          "desc": "Infinite Bullets",
+          "address": "0x0079"
+        },
+        {
+          "code": "005E:39",
+          "desc": "Infinite Time (Seconds - One's Digit)",
+          "address": "0x005E"
+        },
+        {
+          "code": "005D:39",
+          "desc": "Infinite Time (Seconds - Ten's Digit)",
+          "address": "0x005D"
+        },
+        {
+          "code": "005C:39",
+          "desc": "Infinite Time (Minutes - One's Digit)",
+          "address": "0x005C"
+        },
+        {
+          "code": "005B:39",
+          "desc": "Infinite Time (Minutes - Ten's Digit)",
+          "address": "0x005B"
+        },
+        {
+          "code": "0180:05",
+          "desc": "Invincible?",
+          "address": "0x0180"
+        },
+        {
+          "code": "0079:63",
+          "desc": "Have Infinite Bullets",
+          "address": "0x0079"
+        },
+        {
+          "code": "0301:00",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x0301"
+        },
+        {
+          "code": "0201:FF",
+          "desc": "Sports Car Speed Modifier",
+          "address": "0x0201"
+        },
+        {
+          "code": "0076:00",
+          "desc": "Level Modifier",
+          "address": "0x0076"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

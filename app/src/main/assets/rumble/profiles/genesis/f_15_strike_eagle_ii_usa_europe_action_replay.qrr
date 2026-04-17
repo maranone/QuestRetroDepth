@@ -1,0 +1,5 @@
+game_name=F-15 Strike Eagle II (USA, Europe) (Action Replay)
+game_key=f_15_strike_eagle_ii_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff280e	pickup	0xFF280E	1	uint	little	prev != curr	0.8	1	right:0.250:18

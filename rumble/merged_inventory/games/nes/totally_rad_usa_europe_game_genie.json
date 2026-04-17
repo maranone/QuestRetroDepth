@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "totallyradgamegenie",
+  "display_name": "Totally Rad (USA, Europe) Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Totally Rad (USA, Europe) Game Genie).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "SZSEYXVK",
+          "desc": "Infinite Lives",
+          "address": "0x02AF"
+        },
+        {
+          "code": "GXXAPKSN",
+          "desc": "Infinite Magic",
+          "address": "0x0429"
+        },
+        {
+          "code": "AOOAYGAO",
+          "desc": "Super Jump",
+          "address": "0x041F"
+        },
+        {
+          "code": "YOOAYGAO",
+          "desc": "Mega-Jump!",
+          "address": "0x041F"
+        },
+        {
+          "code": "TEEONALA",
+          "desc": "Half A Life Or Half Magic Give Full Energy",
+          "address": "0x008F"
+        },
+        {
+          "code": "SZVAYIVG",
+          "desc": "Immune To Fire And Water!",
+          "address": "0x052F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

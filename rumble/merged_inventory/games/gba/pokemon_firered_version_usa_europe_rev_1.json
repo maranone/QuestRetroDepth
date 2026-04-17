@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "pokemonfireredversion",
+  "display_name": "Pokemon - FireRed Version (USA, Europe) (Rev 1)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Pokemon - FireRed Version (USA, Europe) (Rev 1).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 26,
+      "distinct_address_count": 22,
+      "sample_raw_entries": [
+        {
+          "code": "C4000604",
+          "desc": "Master (Must Be On For Money Cheat)",
+          "address": "0x02000604"
+        },
+        {
+          "code": "1802603C",
+          "desc": "Master (Must Be On For Money Cheat)",
+          "address": "0x0202603C"
+        },
+        {
+          "code": "44018CB4",
+          "desc": "Anti DMA",
+          "address": "0x02018CB4"
+        },
+        {
+          "code": "42024082",
+          "desc": "Weak Opponents",
+          "address": "0x02024082"
+        },
+        {
+          "code": "72023D74",
+          "desc": "Wild PKMN Easily Caught",
+          "address": "0x02023D74"
+        },
+        {
+          "code": "82023D74",
+          "desc": "Wild PKMN Easily Caught",
+          "address": "0x02023D74"
+        },
+        {
+          "code": "820285B0",
+          "desc": "Quick Level Gain",
+          "address": "0x020285B0"
+        },
+        {
+          "code": "8202863C",
+          "desc": "Quick Level Gain",
+          "address": "0x0202863C"
+        },
+        {
+          "code": "72036E3C",
+          "desc": "Ride Bike Over Water",
+          "address": "0x02036E3C"
+        },
+        {
+          "code": "32036E43",
+          "desc": "Ride Bike Over Water",
+          "address": "0x02036E43"
+        },
+        {
+          "code": "18002C02",
+          "desc": "Faster Text Display",
+          "address": "0x02002C02"
+        },
+        {
+          "code": "32028642",
+          "desc": "Quick Egg Hatch",
+          "address": "0x02028642"
+        },
+        {
+          "code": "420242DA",
+          "desc": "1st Pokemon Max Stats",
+          "address": "0x020242DA"
+        },
+        {
+          "code": "4202433E",
+          "desc": "2nd Pokemon Max Stats",
+          "address": "0x0202433E"
+        },
+        {
+          "code": "420243A2",
+          "desc": "3rd Pokemon Max Stats",
+          "address": "0x020243A2"
+        },
+        {
+          "code": "42024406",
+          "desc": "4th Pokemon Max Stats",
+          "address": "0x02024406"
+        },
+        {
+          "code": "4202446A",
+          "desc": "5th Pokemon Max Stats",
+          "address": "0x0202446A"
+        },
+        {
+          "code": "420244CE",
+          "desc": "6th Pokemon Max Stats",
+          "address": "0x020244CE"
+        },
+        {
+          "code": "42023C08",
+          "desc": "Infinite PP",
+          "address": "0x02023C08"
+        },
+        {
+          "code": "82039996",
+          "desc": "Infinite Safari Time",
+          "address": "0x02039996"
+        },
+        {
+          "code": "820370C2",
+          "desc": "Free Daycare",
+          "address": "0x020370C2"
+        },
+        {
+          "code": "80000000",
+          "desc": "Have All Pokeballs",
+          "address": "0x02000000"
+        },
+        {
+          "code": "80000000",
+          "desc": "Have All TMs/HMs",
+          "address": "0x02000000"
+        },
+        {
+          "code": "80000000",
+          "desc": "Have All TMs/HMs",
+          "address": "0x02000000"
+        },
+        {
+          "code": "40000000",
+          "desc": "Have All TMs/HMs",
+          "address": "0x02000000"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Pokemon - FireRed Version (USA, Europe) (Rev 1).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 26,
+      "distinct_address_count": 22,
+      "sample_raw_entries": [
+        {
+          "code": "C4000604",
+          "desc": "Master (Must Be On For Money Cheat)",
+          "address": "0x02000604"
+        },
+        {
+          "code": "1802603C",
+          "desc": "Master (Must Be On For Money Cheat)",
+          "address": "0x0202603C"
+        },
+        {
+          "code": "44018CB4",
+          "desc": "Anti DMA",
+          "address": "0x02018CB4"
+        },
+        {
+          "code": "42024082",
+          "desc": "Weak Opponents",
+          "address": "0x02024082"
+        },
+        {
+          "code": "72023D74",
+          "desc": "Wild PKMN Easily Caught",
+          "address": "0x02023D74"
+        },
+        {
+          "code": "82023D74",
+          "desc": "Wild PKMN Easily Caught",
+          "address": "0x02023D74"
+        },
+        {
+          "code": "820285B0",
+          "desc": "Quick Level Gain",
+          "address": "0x020285B0"
+        },
+        {
+          "code": "8202863C",
+          "desc": "Quick Level Gain",
+          "address": "0x0202863C"
+        },
+        {
+          "code": "72036E3C",
+          "desc": "Ride Bike Over Water",
+          "address": "0x02036E3C"
+        },
+        {
+          "code": "32036E43",
+          "desc": "Ride Bike Over Water",
+          "address": "0x02036E43"
+        },
+        {
+          "code": "18002C02",
+          "desc": "Faster Text Display",
+          "address": "0x02002C02"
+        },
+        {
+          "code": "32028642",
+          "desc": "Quick Egg Hatch",
+          "address": "0x02028642"
+        },
+        {
+          "code": "420242DA",
+          "desc": "1st Pokemon Max Stats",
+          "address": "0x020242DA"
+        },
+        {
+          "code": "4202433E",
+          "desc": "2nd Pokemon Max Stats",
+          "address": "0x0202433E"
+        },
+        {
+          "code": "420243A2",
+          "desc": "3rd Pokemon Max Stats",
+          "address": "0x020243A2"
+        },
+        {
+          "code": "42024406",
+          "desc": "4th Pokemon Max Stats",
+          "address": "0x02024406"
+        },
+        {
+          "code": "4202446A",
+          "desc": "5th Pokemon Max Stats",
+          "address": "0x0202446A"
+        },
+        {
+          "code": "420244CE",
+          "desc": "6th Pokemon Max Stats",
+          "address": "0x020244CE"
+        },
+        {
+          "code": "42023C08",
+          "desc": "Infinite PP",
+          "address": "0x02023C08"
+        },
+        {
+          "code": "82039996",
+          "desc": "Infinite Safari Time",
+          "address": "0x02039996"
+        },
+        {
+          "code": "820370C2",
+          "desc": "Free Daycare",
+          "address": "0x020370C2"
+        },
+        {
+          "code": "80000000",
+          "desc": "Have All Pokeballs",
+          "address": "0x02000000"
+        },
+        {
+          "code": "80000000",
+          "desc": "Have All TMs/HMs",
+          "address": "0x02000000"
+        },
+        {
+          "code": "80000000",
+          "desc": "Have All TMs/HMs",
+          "address": "0x02000000"
+        },
+        {
+          "code": "40000000",
+          "desc": "Have All TMs/HMs",
+          "address": "0x02000000"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "hyakunosekainomonogataritalesonwaterywilderness",
+  "display_name": "Hyaku no Sekai no Monogatari - The Tales on a Watery Wilderness (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hyaku no Sekai no Monogatari - The Tales on a Watery Wilderness (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0600:FF",
+          "desc": "Max Exp",
+          "address": "0x0600"
+        },
+        {
+          "code": "0601:FF",
+          "desc": "Max Exp",
+          "address": "0x0601"
+        },
+        {
+          "code": "060D:FF",
+          "desc": "Max Gold",
+          "address": "0x060D"
+        },
+        {
+          "code": "060D:FF",
+          "desc": "Max Gold",
+          "address": "0x060D"
+        },
+        {
+          "code": "0641:FF",
+          "desc": "Infinite Hp",
+          "address": "0x0641"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

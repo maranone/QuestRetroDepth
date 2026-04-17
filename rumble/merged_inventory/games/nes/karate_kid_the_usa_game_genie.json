@@ -1,0 +1,127 @@
+{
+  "system": "nes",
+  "normalized_title": "karatekid",
+  "display_name": "Karate Kid, The (USA) (Game Genie)",
+  "aliases": [
+    "Karate Kid, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Karate Kid, The (USA).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 21,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "SZOEKAVG",
+          "desc": "Infinite chances",
+          "address": "0x00AC"
+        },
+        {
+          "code": "PENEZTLA",
+          "desc": "Start with 1 chance",
+          "address": "0x068A"
+        },
+        {
+          "code": "TENEZTLA",
+          "desc": "Start with 6 chances",
+          "address": "0x068A"
+        },
+        {
+          "code": "PENEZTLE",
+          "desc": "Start with 9 chances",
+          "address": "0x068A"
+        },
+        {
+          "code": "0085:0F",
+          "desc": "Infinite Energy",
+          "address": "0x0085"
+        },
+        {
+          "code": "0080:00",
+          "desc": "Level Modifier",
+          "address": "0x0080"
+        },
+        {
+          "code": "003A:00",
+          "desc": "Tournament Round Modifier",
+          "address": "0x003A"
+        },
+        {
+          "code": "0082:0F",
+          "desc": "Start At Boss Fight For Each Stage",
+          "address": "0x0082"
+        },
+        {
+          "code": "AETOUT",
+          "desc": "New Enemies Keep Dropping From The Sky",
+          "address": "0x0683"
+        },
+        {
+          "code": "NYTOOU",
+          "desc": "No Enemies",
+          "address": "0x03F1"
+        },
+        {
+          "code": "NYYOEU",
+          "desc": "No Enemies",
+          "address": "0x03F0"
+        },
+        {
+          "code": "NYYOUU",
+          "desc": "No Enemies",
+          "address": "0x03F3"
+        },
+        {
+          "code": "ASVOKAEL",
+          "desc": "Hit Anywhere",
+          "address": "0x00DC"
+        },
+        {
+          "code": "GXVOSALA",
+          "desc": "Hit Anywhere",
+          "address": "0x00AD"
+        },
+        {
+          "code": "AEVOUTPP",
+          "desc": "Enemies Keep Falling From The Sky",
+          "address": "0x068B"
+        },
+        {
+          "code": "0089:63",
+          "desc": "Infinite D",
+          "address": "0x0089"
+        },
+        {
+          "code": "008A:63",
+          "desc": "Infinite C",
+          "address": "0x008A"
+        },
+        {
+          "code": "0085:0F",
+          "desc": "Infinite Health",
+          "address": "0x0085"
+        },
+        {
+          "code": "0035:09",
+          "desc": "Infinite Lives",
+          "address": "0x0035"
+        },
+        {
+          "code": "008B:00",
+          "desc": "Enemy Has No Health",
+          "address": "0x008B"
+        },
+        {
+          "code": "AEOASANI",
+          "desc": "Win Automatically",
+          "address": "0x000D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

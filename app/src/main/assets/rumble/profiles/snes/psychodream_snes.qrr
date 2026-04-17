@@ -1,6 +1,0 @@
-game_name=PsychoDream
-game_key=PsychoDream-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_1e40	damage_taken	0x7E1E40	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	score_3_aee	score	0x7E0AEE	1	uint	native	prev < curr	0.7	1	left:0.300:80

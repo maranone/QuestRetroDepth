@@ -1,0 +1,12 @@
+game_name=Stardust Suplex (Japan)
+game_key=stardust_suplex_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_04bc	damage_taken	0x7E04BC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04bc	death	0x7E04BC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_05bc	damage_taken	0x7E05BC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05bc	death	0x7E05BC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_06bc	damage_taken	0x7E06BC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_06bc	death	0x7E06BC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_07bc	damage_taken	0x7E07BC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_07bc	death	0x7E07BC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

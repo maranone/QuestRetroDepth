@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "donkeykongcountry3",
+  "display_name": "Donkey Kong Country 3 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Donkey Kong Country 3 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1000201A",
+          "desc": "Enable Code",
+          "address": "0x0200201A"
+        },
+        {
+          "code": "33000458",
+          "desc": "Infinite Lives",
+          "address": "0x02000458"
+        },
+        {
+          "code": "830004AE",
+          "desc": "Max Bananas",
+          "address": "0x020004AE"
+        },
+        {
+          "code": "330004E4",
+          "desc": "Max Sliver Coins",
+          "address": "0x020004E4"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Donkey Kong Country 3 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1000201A",
+          "desc": "Enable Code",
+          "address": "0x0200201A"
+        },
+        {
+          "code": "33000458",
+          "desc": "Infinite Lives",
+          "address": "0x02000458"
+        },
+        {
+          "code": "830004AE",
+          "desc": "Max Bananas",
+          "address": "0x020004AE"
+        },
+        {
+          "code": "330004E4",
+          "desc": "Max Sliver Coins",
+          "address": "0x020004E4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

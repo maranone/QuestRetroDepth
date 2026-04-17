@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "ginganosannin",
+  "display_name": "Ginga no Sannin (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ginga no Sannin (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0079:FF",
+          "desc": "Player 1 Infinite Health",
+          "address": "0x0079"
+        },
+        {
+          "code": "007D:0A",
+          "desc": "Player 1 Infinite Missiles",
+          "address": "0x007D"
+        },
+        {
+          "code": "007B:FF",
+          "desc": "Player 2 Infinite Health",
+          "address": "0x007B"
+        },
+        {
+          "code": "007E:0A",
+          "desc": "Player 2 Infinite Missiles",
+          "address": "0x007E"
+        },
+        {
+          "code": "008A:FF",
+          "desc": "Infinite Money",
+          "address": "0x008A"
+        },
+        {
+          "code": "008B:FF",
+          "desc": "Infinite Money",
+          "address": "0x008B"
+        },
+        {
+          "code": "009A:09",
+          "desc": "Infinite Mega Bombs",
+          "address": "0x009A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

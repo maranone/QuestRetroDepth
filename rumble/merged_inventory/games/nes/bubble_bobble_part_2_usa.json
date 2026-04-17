@@ -1,0 +1,178 @@
+{
+  "system": "nes",
+  "normalized_title": "bubblebobblepart2",
+  "display_name": "Bubble Bobble Part 2 (USA)",
+  "aliases": [
+    "Bubble Bobble Part 2 (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\bubblebobblepart2_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0479",
+        "0x0481"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BubbleBobblePart2-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0479",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0481",
+          "type": ">n7"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bubble Bobble Part 2 (USA).cht",
+      "total_cheat_rows": 47,
+      "raw_entry_count": 46,
+      "distinct_address_count": 25,
+      "sample_raw_entries": [
+        {
+          "code": "PAVEAPAA",
+          "desc": "Start With Lightning Bubble",
+          "address": "0x0188"
+        },
+        {
+          "code": "ZAVEAPAA",
+          "desc": "Start With Fire Bubble",
+          "address": "0x0188"
+        },
+        {
+          "code": "LAVEAPAA",
+          "desc": "Start With Water Bubble",
+          "address": "0x0188"
+        },
+        {
+          "code": "GAVEAPAA",
+          "desc": "Start With Star Dust Bubble",
+          "address": "0x0188"
+        },
+        {
+          "code": "IAVEAPAA",
+          "desc": "Start With Tornado Bubble",
+          "address": "0x0188"
+        },
+        {
+          "code": "TAVEAPAA",
+          "desc": "Start With Star Bubble",
+          "address": "0x0188"
+        },
+        {
+          "code": "SXKOZVSE",
+          "desc": "Keep Any Bubble Collected If You Die",
+          "address": "0x06AA"
+        },
+        {
+          "code": "PESATZIE",
+          "desc": "Start With 9 Continues",
+          "address": "0x020E"
+        },
+        {
+          "code": "0479:03",
+          "desc": "Infinite Lives P1",
+          "address": "0x0479"
+        },
+        {
+          "code": "007C:00",
+          "desc": "Invincibility P1",
+          "address": "0x007C"
+        },
+        {
+          "code": "000A:04",
+          "desc": "Turbo Bubbles",
+          "address": "0x000A"
+        },
+        {
+          "code": "047B:02",
+          "desc": "Fly",
+          "address": "0x047B"
+        },
+        {
+          "code": "SLNOASVK",
+          "desc": "Infinite Lives",
+          "address": "0x05B8"
+        },
+        {
+          "code": "GZUEZGEP",
+          "desc": "Bubbles Kill on Contact",
+          "address": "0x04AA"
+        },
+        {
+          "code": "PEXEEALA",
+          "desc": "Start With 1 Life",
+          "address": "0x0088"
+        },
+        {
+          "code": "TEXEEALA",
+          "desc": "Start With 6 Lives",
+          "address": "0x0088"
+        },
+        {
+          "code": "PEXEEALE",
+          "desc": "Start With 9 Lives",
+          "address": "0x0088"
+        },
+        {
+          "code": "TEVATZLA",
+          "desc": "Start With 6 Lives",
+          "address": "0x020E"
+        },
+        {
+          "code": "PEVATZLE",
+          "desc": "Start With 9 Lives",
+          "address": "0x020E"
+        },
+        {
+          "code": "SZNOASVK",
+          "desc": "Infinite Lives (Both Players)",
+          "address": "0x05A8"
+        },
+        {
+          "code": "OXXANUPX",
+          "desc": "Blow Bubbles Farther",
+          "address": "0x032F"
+        },
+        {
+          "code": "IEKEGZPA",
+          "desc": "Start On Level 5",
+          "address": "0x028C"
+        },
+        {
+          "code": "ZEKEGZPE",
+          "desc": "Start On Level 10",
+          "address": "0x028C"
+        },
+        {
+          "code": "YEKEGZPE",
+          "desc": "Start On Level 15",
+          "address": "0x028C"
+        },
+        {
+          "code": "GOKEGZPA",
+          "desc": "Start On Level 20",
+          "address": "0x029C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

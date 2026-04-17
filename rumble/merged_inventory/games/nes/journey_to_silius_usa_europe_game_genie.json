@@ -1,0 +1,94 @@
+{
+  "system": "nes",
+  "normalized_title": "journeytosilius",
+  "display_name": "Journey to Silius (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Journey to Silius (USA)",
+    "Journey to Silius (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\journeytosilius_nes.json",
+      "trigger_count": 4,
+      "field_names": [
+        "health",
+        "lives"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0053",
+        "0x00B0"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JourneyToSilius-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x00B0",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0053",
+          "type": "|u1"
+        },
+        {
+          "name": "progress",
+          "address": "0x002D",
+          "type": ">u4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Journey to Silius (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "TOOETOLA",
+          "desc": "Mega-Jump",
+          "address": "0x019E"
+        },
+        {
+          "code": "AZVALPPA",
+          "desc": "Speed Jump",
+          "address": "0x012B"
+        },
+        {
+          "code": "EVNEYENY",
+          "desc": "Speed Jump",
+          "address": "0x00EF"
+        },
+        {
+          "code": "LPSEYPGA",
+          "desc": "Super Speed",
+          "address": "0x019F"
+        },
+        {
+          "code": "KVNELEKN",
+          "desc": "Super Speed",
+          "address": "0x00EB"
+        },
+        {
+          "code": "LXOETOLE",
+          "desc": "Jump All The Way To The Top of The Screen",
+          "address": "0x01AE"
+        },
+        {
+          "code": "SZUAUTSA",
+          "desc": "Infinite Weapon Power",
+          "address": "0x062B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

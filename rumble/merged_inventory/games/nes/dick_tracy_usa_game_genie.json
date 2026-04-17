@@ -1,0 +1,87 @@
+{
+  "system": "nes",
+  "normalized_title": "dicktracy",
+  "display_name": "Dick Tracy (USA) (Game Genie)",
+  "aliases": [
+    "Dick Tracy (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dick Tracy (USA).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 13,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "KUZEAK",
+          "desc": "Dick Has Gone Into Outer Space!",
+          "address": "0x04B0"
+        },
+        {
+          "code": "GOEPIOZA",
+          "desc": "More super punches on pick-up",
+          "address": "0x011D"
+        },
+        {
+          "code": "GXVOINSV",
+          "desc": "Infinite energy",
+          "address": "0x07AD"
+        },
+        {
+          "code": "AOVOGNAU",
+          "desc": "Take more damage",
+          "address": "0x079C"
+        },
+        {
+          "code": "0663:09",
+          "desc": "Infinite Health (Stars)",
+          "address": "0x0663"
+        },
+        {
+          "code": "0761:31",
+          "desc": "Infinite Handgun",
+          "address": "0x0761"
+        },
+        {
+          "code": "TEXPXSAE",
+          "desc": "Start With 7 Stars",
+          "address": "0x050A"
+        },
+        {
+          "code": "SXNPANSE",
+          "desc": "Infinite Stars",
+          "address": "0x0728"
+        },
+        {
+          "code": "0665:32",
+          "desc": "Start With All And Infinite Weapons",
+          "address": "0x0665"
+        },
+        {
+          "code": "0664:02",
+          "desc": "Start With All And Infinite Weapons",
+          "address": "0x0664"
+        },
+        {
+          "code": "0761:32",
+          "desc": "Start With All And Infinite Weapons",
+          "address": "0x0761"
+        },
+        {
+          "code": "06B9:01",
+          "desc": "Start With All And Infinite Weapons",
+          "address": "0x06B9"
+        },
+        {
+          "code": "06BA:09",
+          "desc": "Start With All And Infinite Weapons",
+          "address": "0x06BA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

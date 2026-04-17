@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "nhlhitz2003",
+  "display_name": "NHL Hitz 20-03 (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\NHL Hitz 20-03 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1000A834",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200A834"
+        },
+        {
+          "code": "33001964",
+          "desc": "Home Team Score Modifier",
+          "address": "0x02001964"
+        },
+        {
+          "code": "33001965",
+          "desc": "Away Team Score Modifier",
+          "address": "0x02001965"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\NHL Hitz 20-03 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1000A834",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200A834"
+        },
+        {
+          "code": "33001964",
+          "desc": "Home Team Score Modifier",
+          "address": "0x02001964"
+        },
+        {
+          "code": "33001965",
+          "desc": "Away Team Score Modifier",
+          "address": "0x02001965"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

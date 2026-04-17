@@ -1,0 +1,67 @@
+{
+  "system": "nes",
+  "normalized_title": "miracleropits2100nennodaibouken",
+  "display_name": "Miracle Ropit's - 2100 Nen no Daibouken (Japan) (Game Genie)",
+  "aliases": [
+    "Miracle Ropit's - 2100 Nen no Daibouken (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Miracle Ropit's - 2100 Nen no Daibouken (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0489:C0",
+          "desc": "Invincibility",
+          "address": "0x0489"
+        },
+        {
+          "code": "00EC:01",
+          "desc": "Infinite Time",
+          "address": "0x00EC"
+        },
+        {
+          "code": "00CB:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x00CB"
+        },
+        {
+          "code": "00C9:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x00C9"
+        },
+        {
+          "code": "00C7:09",
+          "desc": "Infinite Time (Ten's Digit)",
+          "address": "0x00C7"
+        },
+        {
+          "code": "00C5:09",
+          "desc": "Infinite Time (Hundred's Digit)",
+          "address": "0x00C5"
+        },
+        {
+          "code": "05C3:80",
+          "desc": "Speed Modifier",
+          "address": "0x05C3"
+        },
+        {
+          "code": "0627:09",
+          "desc": "Rapid Fire",
+          "address": "0x0627"
+        },
+        {
+          "code": "06DA:00",
+          "desc": "Level Modifier",
+          "address": "0x06DA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "littleleaguebaseballchampionshipseries",
+  "display_name": "Little League Baseball - Championship Series (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Little League Baseball - Championship Series (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "048C:00",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x048C"
+        },
+        {
+          "code": "048B:00",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x048B"
+        },
+        {
+          "code": "0487:00",
+          "desc": "Strikes Modifier",
+          "address": "0x0487"
+        },
+        {
+          "code": "0488:00",
+          "desc": "Ball Modifier",
+          "address": "0x0488"
+        },
+        {
+          "code": "0489:00",
+          "desc": "Out Modifier",
+          "address": "0x0489"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

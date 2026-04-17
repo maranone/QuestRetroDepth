@@ -1,0 +1,189 @@
+{
+  "system": "nes",
+  "normalized_title": "gijoeatlantisfactor",
+  "display_name": "G.I. Joe - The Atlantis Factor (USA) (Game Genie)",
+  "aliases": [
+    "G.I. Joe - The Atlantis Factor (USA) (Game Genie)",
+    "G.I. Joe - The Atlantis Factor (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\gijoetheatlantisfactor_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x065D",
+        "0x0739"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GIJoeTheAtlantisFactor-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x065D",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0739",
+          "type": ">d4"
+        },
+        {
+          "name": "time_minutes",
+          "address": "0x078F",
+          "type": "|i1"
+        },
+        {
+          "name": "time_seconds",
+          "address": "0x078E",
+          "type": "|i1"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\G.I. Joe - The Atlantis Factor (USA).cht",
+      "total_cheat_rows": 46,
+      "raw_entry_count": 56,
+      "distinct_address_count": 53,
+      "sample_raw_entries": [
+        {
+          "code": "SZSOXZSA",
+          "desc": "Invincible After One Hit",
+          "address": "0x02AA"
+        },
+        {
+          "code": "IAEELGPA",
+          "desc": "Start with 500 bullets",
+          "address": "0x048B"
+        },
+        {
+          "code": "AASEZIPA",
+          "desc": "Infinite time",
+          "address": "0x058A"
+        },
+        {
+          "code": "GAXPPYPA",
+          "desc": "Each Pow worth increases player level by one",
+          "address": "0x0709"
+        },
+        {
+          "code": "YUKETLPE",
+          "desc": "Start with all characters",
+          "address": "0x03BE"
+        },
+        {
+          "code": "PAOAAGAE",
+          "desc": "Start with 8 mines and 8 Radios",
+          "address": "0x0408"
+        },
+        {
+          "code": "SUOPEUVS",
+          "desc": "Infinite Mines",
+          "address": "0x0338"
+        },
+        {
+          "code": "OPOEGUNN",
+          "desc": "Get lots of level ups in the Level Up Screen",
+          "address": "0x039C"
+        },
+        {
+          "code": "SZVAZSSE",
+          "desc": "Infinite Time",
+          "address": "0x052A"
+        },
+        {
+          "code": "SZSEYSVK",
+          "desc": "Infinite Time",
+          "address": "0x05AF"
+        },
+        {
+          "code": "SUOAISSO",
+          "desc": "Infinite Stamina",
+          "address": "0x053D"
+        },
+        {
+          "code": "0742:63",
+          "desc": "Infinite Weapon",
+          "address": "0x0742"
+        },
+        {
+          "code": "078E:63",
+          "desc": "Infinite Time",
+          "address": "0x078E"
+        },
+        {
+          "code": "EISPUZEY",
+          "desc": "Invincibility",
+          "address": "0x025B"
+        },
+        {
+          "code": "XTSPNXAU",
+          "desc": "Invincibility",
+          "address": "0x026F"
+        },
+        {
+          "code": "0647:88",
+          "desc": "Maxed Out Levels All Weapons, All Characters",
+          "address": "0x0647"
+        },
+        {
+          "code": "0648:88",
+          "desc": "Maxed Out Levels All Weapons, All Characters",
+          "address": "0x0648"
+        },
+        {
+          "code": "0649:88",
+          "desc": "Maxed Out Levels All Weapons, All Characters",
+          "address": "0x0649"
+        },
+        {
+          "code": "064A:88",
+          "desc": "Maxed Out Levels All Weapons, All Characters",
+          "address": "0x064A"
+        },
+        {
+          "code": "064B:88",
+          "desc": "Maxed Out Levels All Weapons, All Characters",
+          "address": "0x064B"
+        },
+        {
+          "code": "064C:88",
+          "desc": "Maxed Out Levels All Weapons, All Characters",
+          "address": "0x064C"
+        },
+        {
+          "code": "064D:88",
+          "desc": "Maxed Out Levels All Weapons, All Characters",
+          "address": "0x064D"
+        },
+        {
+          "code": "064E:88",
+          "desc": "Maxed Out Levels All Weapons, All Characters",
+          "address": "0x064E"
+        },
+        {
+          "code": "064F:88",
+          "desc": "Maxed Out Levels All Weapons, All Characters",
+          "address": "0x064F"
+        },
+        {
+          "code": "0650:88",
+          "desc": "Maxed Out Levels All Weapons, All Characters",
+          "address": "0x0650"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

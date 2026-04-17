@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "woodypoko",
+  "display_name": "Woody Poko (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Woody Poko (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0063:C8",
+          "desc": "Infinite Energy",
+          "address": "0x0063"
+        },
+        {
+          "code": "0038:00",
+          "desc": "Jump And Float Up",
+          "address": "0x0038"
+        },
+        {
+          "code": "004B:00",
+          "desc": "Adjust Wind Resistance",
+          "address": "0x004B"
+        },
+        {
+          "code": "0067:FF",
+          "desc": "Infinite Money",
+          "address": "0x0067"
+        },
+        {
+          "code": "0068:FF",
+          "desc": "Infinite Money",
+          "address": "0x0068"
+        },
+        {
+          "code": "006D:63",
+          "desc": "Infinite Left Object",
+          "address": "0x006D"
+        },
+        {
+          "code": "006F:63",
+          "desc": "Infinite Right Object",
+          "address": "0x006F"
+        },
+        {
+          "code": "006C:01",
+          "desc": "Change Left Object",
+          "address": "0x006C"
+        },
+        {
+          "code": "006E:01",
+          "desc": "Change Right Object",
+          "address": "0x006E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

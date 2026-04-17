@@ -2,6 +2,6 @@
 # game_name=Super R-Type (World) (Action Replay)
 # match_names=superrtype|superrtypesnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-life_lost_lives_16e1,0x7E16E1,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
-life_gained_lives_16e1,0x7E16E1,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,
-score_score_16e7,0x7E16E7,3,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+life_lost_lives_16e1,0x7E16E1,1,uint,prev_gt_curr,,both,0.92,fade_in_out,0,300,250,80,
+life_gained_lives_16e1,0x7E16E1,1,uint,prev_lt_curr,,both,0.750,fade_in,0,180,200,50,
+score_score_16e7,0x7E16E7,3,bcd,prev_lt_curr,,right,0.350,burst,0,70,15,10,

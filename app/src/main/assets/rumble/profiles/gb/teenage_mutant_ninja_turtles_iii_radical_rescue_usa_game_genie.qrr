@@ -1,0 +1,5 @@
+game_name=Teenage Mutant Ninja Turtles III - Radical Rescue (USA) (Game Genie)
+game_key=teenage_mutant_ninja_turtles_iii_radical_rescue_usa_game_genie
+system=gb
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_cdc0	enemy_defeated	0xCDC0	1	uint	little	prev > curr	0.65	1	right:0.450:35

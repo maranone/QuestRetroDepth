@@ -1,0 +1,109 @@
+{
+  "system": "nes",
+  "normalized_title": "circuscaper",
+  "display_name": "Circus Caper (USA) (Game Genie)",
+  "aliases": [
+    "Circus Caper (USA) (Game Genie)",
+    "Circus Caper (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\circuscaper_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x038B",
+        "0x0392"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CircusCaper-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0392",
+          "type": "|d1"
+        },
+        {
+          "name": "score",
+          "address": "0x038B",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Circus Caper (USA).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "002C:00",
+          "desc": "Area Modifier",
+          "address": "0x002C"
+        },
+        {
+          "code": "00C5:FF",
+          "desc": "Always Jetpack Effects",
+          "address": "0x00C5"
+        },
+        {
+          "code": "0205:01",
+          "desc": "Boss One Hit Kill",
+          "address": "0x0205"
+        },
+        {
+          "code": "0352:01",
+          "desc": "Walk Through Enemies",
+          "address": "0x0352"
+        },
+        {
+          "code": "035B:00",
+          "desc": "Item Box Modifier",
+          "address": "0x035B"
+        },
+        {
+          "code": "0362:FF",
+          "desc": "Shield Always On",
+          "address": "0x0362"
+        },
+        {
+          "code": "039B:09",
+          "desc": "9 Keys",
+          "address": "0x039B"
+        },
+        {
+          "code": "VIEOUUVV",
+          "desc": "Third Boss Gains No Points",
+          "address": "0x03DB"
+        },
+        {
+          "code": "0392:7A",
+          "desc": "Infinite Health (Hearts)",
+          "address": "0x0392"
+        },
+        {
+          "code": "050C:66",
+          "desc": "Have 100+ Points In Fire-Jumping Mini-Game",
+          "address": "0x050C"
+        },
+        {
+          "code": "0510:00",
+          "desc": "White Tiger boss always at 0 points in Teriyaki game",
+          "address": "0x0510"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

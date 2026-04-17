@@ -1,0 +1,6 @@
+game_name=TNN Outdoors Bass Tournament '96 (USA) (Action Replay)
+game_key=tnn_outdoors_bass_tournament_96_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff14de	pickup	0xFF14DE	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff14dc	pickup	0xFF14DC	1	uint	little	prev != curr	0.8	1	right:0.250:18

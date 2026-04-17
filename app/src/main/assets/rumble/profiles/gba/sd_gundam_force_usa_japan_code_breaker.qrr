@@ -1,0 +1,9 @@
+game_name=SD Gundam Force (USA, Japan) (Code Breaker)
+game_key=sd_gundam_force_usa_japan_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_02020842	life_lost	0x02020842	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02020842	life_gained	0x02020842	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_02020832	score	0x02020832	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02020830	score	0x02020830	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0202082c	score	0x0202082C	1	uint	little	prev < curr	0.8	1	right:0.350:60

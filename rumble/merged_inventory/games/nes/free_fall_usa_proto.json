@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "freefall",
+  "display_name": "Free Fall (USA) (Proto)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Free Fall (USA) (Proto).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "0046:09",
+          "desc": "Max Hands",
+          "address": "0x0046"
+        },
+        {
+          "code": "0175:FF",
+          "desc": "Max People Saved",
+          "address": "0x0175"
+        },
+        {
+          "code": "0001:02",
+          "desc": "Level Mod",
+          "address": "0x0001"
+        },
+        {
+          "code": "ZYSOTGVA",
+          "desc": "Allways Have Lots Of Caught",
+          "address": "0x04FE"
+        },
+        {
+          "code": "PASOYGLA",
+          "desc": "Allways Have Lots Of Caught",
+          "address": "0x048F"
+        },
+        {
+          "code": "015A:00",
+          "desc": "Saved #",
+          "address": "0x015A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

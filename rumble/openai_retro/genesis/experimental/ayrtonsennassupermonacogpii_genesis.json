@@ -1,0 +1,55 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "AyrtonSennasSuperMonacoGPII",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\experimental\\AyrtonSennasSuperMonacoGPII-Genesis\\data.json",
+    "integration_tier": "experimental",
+    "game_key": "AyrtonSennasSuperMonacoGPII-Genesis"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "name": "distance",
+      "meta": {
+        "address": 16776384,
+        "type": ">u2"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "position",
+      "meta": {
+        "address": 16777046,
+        "type": ">u2"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time",
+      "meta": {
+        "address": 16776456,
+        "type": ">d4"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time_to_first",
+      "meta": {
+        "address": 16776924,
+        "type": ">d4"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time_total",
+      "meta": {
+        "address": 16776449,
+        "type": ">d3"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

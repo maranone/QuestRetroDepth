@@ -1,0 +1,169 @@
+{
+  "system": "nes",
+  "normalized_title": "xexyz",
+  "display_name": "Xexyz (USA) (Game Genie)",
+  "aliases": [
+    "Xexyz (USA) (Game Genie)",
+    "Xexyz (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\xexyz_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0540",
+        "0x054B"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Xexyz-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x054B",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0540",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Xexyz (USA).cht",
+      "total_cheat_rows": 40,
+      "raw_entry_count": 23,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "055D:01",
+          "desc": "Set Infinite E-Balls",
+          "address": "0x055D"
+        },
+        {
+          "code": "057C:03",
+          "desc": "Invincibility",
+          "address": "0x057C"
+        },
+        {
+          "code": "0553:00",
+          "desc": "Set Magic Item Modifier",
+          "address": "0x0553"
+        },
+        {
+          "code": "0554:03",
+          "desc": "Set Max. Power On All Weapons",
+          "address": "0x0554"
+        },
+        {
+          "code": "0408:40",
+          "desc": "Switch F/X On To Levitate Jump",
+          "address": "0x0408"
+        },
+        {
+          "code": "054E:00",
+          "desc": "Stage Select",
+          "address": "0x054E"
+        },
+        {
+          "code": "0555:03",
+          "desc": "Set Max. Power [Rider Stages]",
+          "address": "0x0555"
+        },
+        {
+          "code": "0556:03",
+          "desc": "Set Max. Speed [Rider Stages]",
+          "address": "0x0556"
+        },
+        {
+          "code": "SZUEPVSE",
+          "desc": "Infinite Energy",
+          "address": "0x06A9"
+        },
+        {
+          "code": "SZKAZVSE",
+          "desc": "Infinite Energy",
+          "address": "0x062A"
+        },
+        {
+          "code": "AGSOXAAA",
+          "desc": "Invincibility When Walking",
+          "address": "0x00CA"
+        },
+        {
+          "code": "IAKOTOVK",
+          "desc": "Invincibility When In Robot",
+          "address": "0x018E"
+        },
+        {
+          "code": "NYUEUZZU",
+          "desc": "Start With 255 Ball",
+          "address": "0x02FB"
+        },
+        {
+          "code": "0549:55",
+          "desc": "Infinite E",
+          "address": "0x0549"
+        },
+        {
+          "code": "054C:55",
+          "desc": "Infinite Health",
+          "address": "0x054C"
+        },
+        {
+          "code": "054B:09",
+          "desc": "Infinite Lives",
+          "address": "0x054B"
+        },
+        {
+          "code": "0552:00",
+          "desc": "Weapon Modifier",
+          "address": "0x0552"
+        },
+        {
+          "code": "054D:05",
+          "desc": "All Stars",
+          "address": "0x054D"
+        },
+        {
+          "code": "0549:FF",
+          "desc": "Infinite E",
+          "address": "0x0549"
+        },
+        {
+          "code": "054C:FF",
+          "desc": "Infinite Health",
+          "address": "0x054C"
+        },
+        {
+          "code": "054D:05",
+          "desc": "Set All Force Stars",
+          "address": "0x054D"
+        },
+        {
+          "code": "0555:03",
+          "desc": "Set Max. Power (Rider Stages)",
+          "address": "0x0555"
+        },
+        {
+          "code": "0556:03",
+          "desc": "Set Max. Speed (Rider Stages)",
+          "address": "0x0556"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

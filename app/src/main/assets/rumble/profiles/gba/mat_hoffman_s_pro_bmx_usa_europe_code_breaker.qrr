@@ -1,0 +1,8 @@
+game_name=Mat Hoffman's Pro BMX (USA, Europe) (Code Breaker)
+game_key=mat_hoffman_s_pro_bmx_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_02004298	score	0x02004298	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0200443c	score	0x0200443C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0200429a	score	0x0200429A	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0200443e	score	0x0200443E	1	uint	little	prev < curr	0.8	1	right:0.350:60

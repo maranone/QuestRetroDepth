@@ -1,0 +1,7 @@
+game_name=Casino Kid (USA)
+game_key=casino_kid_usa
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_020c	pickup	0x020C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_05ad	pickup	0x05AD	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_055e	pickup	0x055E	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,7 @@
+game_name=Section-Z (USA, Europe) (Game Genie)
+game_key=SectionZ-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_005a	damage_taken	0x005A	2	nibble	big	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_005a	death	0x005A	2	nibble	big	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_004a	score	0x004A	6	nibble	big	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "downforce",
+  "display_name": "Downforce (Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Downforce (Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10003760",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003760"
+        },
+        {
+          "code": "83001EC4",
+          "desc": "Always Place 1st",
+          "address": "0x02001EC4"
+        },
+        {
+          "code": "830010E0",
+          "desc": "Pole Position",
+          "address": "0x020010E0"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press R For Turbo Boost",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83007048",
+          "desc": "Press R For Turbo Boost",
+          "address": "0x02007048"
+        },
+        {
+          "code": "83007098",
+          "desc": "Unlock Hidden Cars",
+          "address": "0x02007098"
+        },
+        {
+          "code": "830070A0",
+          "desc": "Unlock Hidden Tracks",
+          "address": "0x020070A0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Downforce (Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10003760",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003760"
+        },
+        {
+          "code": "83001EC4",
+          "desc": "Always Place 1st",
+          "address": "0x02001EC4"
+        },
+        {
+          "code": "830010E0",
+          "desc": "Pole Position",
+          "address": "0x020010E0"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press R For Turbo Boost",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83007048",
+          "desc": "Press R For Turbo Boost",
+          "address": "0x02007048"
+        },
+        {
+          "code": "83007098",
+          "desc": "Unlock Hidden Cars",
+          "address": "0x02007098"
+        },
+        {
+          "code": "830070A0",
+          "desc": "Unlock Hidden Tracks",
+          "address": "0x020070A0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

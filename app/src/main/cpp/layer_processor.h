@@ -4,6 +4,13 @@
 #include <vector>
 #include <cstdint>
 
+struct ObjectBoundingBox {
+    int min_x = 0;
+    int min_y = 0;
+    int max_x = 0;
+    int max_y = 0;
+};
+
 struct LayerFrame {
     std::string id;
     float depth_meters      = 1.5f;
@@ -14,6 +21,10 @@ struct LayerFrame {
     // RGBA bytes (R=byte0, G=byte1, B=byte2, A=byte3).
     // Alpha=0 means fully transparent (color-keyed out).
     std::vector<uint8_t> rgba;
+    // When perspective compensation is active, this is depth_i/ref_depth (>=1.0).
+    // The renderer uses it to zoom into the texture centre so content fills the
+    // correct visual angle without transparent bars at the edges.
+    float persp_comp_scale = 1.0f;
     bool contrib_ambilight = true; // whether this layer feeds the ambilight effect
     // True only when at least one opaque pixel was written (ZBuffer layers may be
     // allocated but contain zero opaque pixels; skip rendering those).
@@ -21,6 +32,9 @@ struct LayerFrame {
     // True when the layer contains both transparent and opaque pixels, so wedge
     // scaling thickens a cutout silhouette without bulging full-frame layers.
     bool wedge_eligible = false;
+    // True when connected-component bounding boxes were extracted successfully.
+    bool bbox_eligible = false;
+    std::vector<ObjectBoundingBox> object_boxes;
 };
 
 // Slices a single RGBA frame into per-layer RGBA frames according to GameConfig.
@@ -37,11 +51,13 @@ public:
     // Returns one LayerFrame per layer in the config.
     std::vector<LayerFrame> process(const uint32_t* src, int src_w, int src_h,
                                     const uint8_t* zbuf = nullptr,
-                                    const qrd::FrameOutput* frame = nullptr);
+                                    const qrd::FrameOutput* frame = nullptr,
+                                    bool build_object_boxes = false);
     void process_into(std::vector<LayerFrame>& out,
                       const uint32_t* src, int src_w, int src_h,
                       const uint8_t* zbuf = nullptr,
-                      const qrd::FrameOutput* frame = nullptr);
+                      const qrd::FrameOutput* frame = nullptr,
+                      bool build_object_boxes = false);
 
 private:
     const GameConfig& m_config;
@@ -90,4 +106,5 @@ private:
     // Returns true if src_pixel colour matches the LayerConfig key within tolerance
     static bool color_match(uint32_t src_pixel, const LayerConfig& lc);
     static void finalize_frame(LayerFrame& frame);
+    static void compute_object_boxes(LayerFrame& frame);
 };

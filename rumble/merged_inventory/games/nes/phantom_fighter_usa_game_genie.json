@@ -1,0 +1,92 @@
+{
+  "system": "nes",
+  "normalized_title": "phantomfighter",
+  "display_name": "Phantom Fighter (USA) (Game Genie)",
+  "aliases": [
+    "Phantom Fighter (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Phantom Fighter (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "0408:C8",
+          "desc": "Infinite HP",
+          "address": "0x0408"
+        },
+        {
+          "code": "040A:C8",
+          "desc": "Max HP",
+          "address": "0x040A"
+        },
+        {
+          "code": "0448:00",
+          "desc": "1 Hit Death On Enemies",
+          "address": "0x0448"
+        },
+        {
+          "code": "0086:63",
+          "desc": "99 Scrolls",
+          "address": "0x0086"
+        },
+        {
+          "code": "0087:03",
+          "desc": "3 Crystal Balls",
+          "address": "0x0087"
+        },
+        {
+          "code": "0076:03",
+          "desc": "Strongest Punch",
+          "address": "0x0076"
+        },
+        {
+          "code": "0077:03",
+          "desc": "Strongest Kick",
+          "address": "0x0077"
+        },
+        {
+          "code": "0078:03",
+          "desc": "Highest Jump",
+          "address": "0x0078"
+        },
+        {
+          "code": "0079:03",
+          "desc": "Best Tiger Move",
+          "address": "0x0079"
+        },
+        {
+          "code": "007A:03",
+          "desc": "Best Mirage Move",
+          "address": "0x007A"
+        },
+        {
+          "code": "0082:01",
+          "desc": "Have Talisman",
+          "address": "0x0082"
+        },
+        {
+          "code": "0083:01",
+          "desc": "Have Tonten",
+          "address": "0x0083"
+        },
+        {
+          "code": "0084:01",
+          "desc": "Have Sacred Sword",
+          "address": "0x0084"
+        },
+        {
+          "code": "0085:01",
+          "desc": "Have Bell",
+          "address": "0x0085"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

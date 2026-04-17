@@ -1,0 +1,6 @@
+game_name=Fever Pitch Soccer (Europe) (En,Fr,De,Es,It)
+game_key=fever_pitch_soccer_europe_en_fr_de_es_it
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffdec8	score	0xFFDEC8	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffdf10	score	0xFFDF10	1	uint	little	prev < curr	0.8	1	right:0.350:60

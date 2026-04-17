@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "magicbubble",
+  "display_name": "Magic Bubble",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Magic Bubble.cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "AEEAAAPE",
+          "desc": "Slide Show",
+          "address": "0x0008"
+        },
+        {
+          "code": "VTXEVLSA",
+          "desc": "Slide Show",
+          "address": "0x03EE"
+        },
+        {
+          "code": "NAXENUAV",
+          "desc": "Slide Show",
+          "address": "0x038F"
+        },
+        {
+          "code": "SZUAELVT",
+          "desc": "Slide Show",
+          "address": "0x0328"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

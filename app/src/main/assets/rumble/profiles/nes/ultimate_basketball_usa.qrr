@@ -1,0 +1,10 @@
+game_name=Ultimate Basketball (USA)
+game_key=ultimate_basketball_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_00cc	score	0x00CC	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00cd	score	0x00CD	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00ce	score	0x00CE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00cf	score	0x00CF	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00d0	score	0x00D0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00d1	score	0x00D1	1	uint	little	prev < curr	0.8	1	right:0.350:60

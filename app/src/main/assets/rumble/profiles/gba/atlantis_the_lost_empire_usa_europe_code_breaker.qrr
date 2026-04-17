@@ -1,0 +1,7 @@
+game_name=Atlantis - The Lost Empire (USA, Europe) (Code Breaker)
+game_key=atlantis_the_lost_empire_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	pickup_coins_02001a0c	pickup	0x02001A0C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_02003890	damage_taken	0x02003890	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02003890	death	0x02003890	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

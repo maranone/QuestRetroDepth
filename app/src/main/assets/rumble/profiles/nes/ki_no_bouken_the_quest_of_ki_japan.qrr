@@ -1,0 +1,6 @@
+game_name=Ki no Bouken - The Quest of Ki (Japan)
+game_key=ki_no_bouken_the_quest_of_ki_japan
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_0052	life_lost	0x0052	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0052	life_gained	0x0052	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

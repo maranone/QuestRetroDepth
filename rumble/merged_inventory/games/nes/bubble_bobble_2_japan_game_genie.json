@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "bubblebobble2",
+  "display_name": "Bubble Bobble 2 (Japan) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bubble Bobble 2 (Japan) (Game Genie).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "PAVEAPAA",
+          "desc": "Start With Lightning Bubble",
+          "address": "0x0188"
+        },
+        {
+          "code": "ZAVEAPAA",
+          "desc": "Start With Fire Bubble",
+          "address": "0x0188"
+        },
+        {
+          "code": "LAVEAPAA",
+          "desc": "Start With Water Bubble",
+          "address": "0x0188"
+        },
+        {
+          "code": "GAVEAPAA",
+          "desc": "Start With Star Dust Bubble",
+          "address": "0x0188"
+        },
+        {
+          "code": "IAVEAPAA",
+          "desc": "Start With Tornado Bubble",
+          "address": "0x0188"
+        },
+        {
+          "code": "TAVEAPAA",
+          "desc": "Start With Star Bubble",
+          "address": "0x0188"
+        },
+        {
+          "code": "SXKOZVSE",
+          "desc": "Keep Any Bubble Collected If You Die (Not On Continues)",
+          "address": "0x06AA"
+        },
+        {
+          "code": "PESATZIE",
+          "desc": "Start With 9 Continues",
+          "address": "0x020E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

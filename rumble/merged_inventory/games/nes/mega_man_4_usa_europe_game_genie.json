@@ -1,0 +1,78 @@
+{
+  "system": "nes",
+  "normalized_title": "megaman4",
+  "display_name": "Mega Man 4 (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Mega Man 4 (USA)",
+    "Mega Man 4 (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mega Man 4 (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "GXNPZTVG",
+          "desc": "Infinite \"Energy\" Pods On Pick-Up",
+          "address": "0x062A"
+        },
+        {
+          "code": "AEOAIEPA",
+          "desc": "Instant Megablast!",
+          "address": "0x000D"
+        },
+        {
+          "code": "YXEAIOZO",
+          "desc": "Longer Sliding",
+          "address": "0x012D"
+        },
+        {
+          "code": "ZOEAIOZP",
+          "desc": "Shorter Sliding",
+          "address": "0x011D"
+        },
+        {
+          "code": "GEOAGPZA",
+          "desc": "Faster Sliding",
+          "address": "0x010C"
+        },
+        {
+          "code": "AAKEYPIE",
+          "desc": "Mega Man Mega-Jumping!",
+          "address": "0x018F"
+        },
+        {
+          "code": "GXVEIPSA",
+          "desc": "Don't Take Damage From Bad Guys",
+          "address": "0x01AD"
+        },
+        {
+          "code": "ZEVALLPA",
+          "desc": "Faster Running",
+          "address": "0x030B"
+        },
+        {
+          "code": "SESALAVG",
+          "desc": "Stay Invincible Against Spikes and Enemies After Being Hit",
+          "address": "0x000B"
+        },
+        {
+          "code": "ILXETVGU",
+          "desc": "Stay Invincible Against Spikes and Enemies After Being Hit",
+          "address": "0x06BE"
+        },
+        {
+          "code": "IAXEUYLA",
+          "desc": "Megaman Can Have Up To 5 Balloon Weapons On Screen Instead of 3",
+          "address": "0x078B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

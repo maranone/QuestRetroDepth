@@ -1,0 +1,55 @@
+{
+  "system": "pce",
+  "normalized_title": "susanooudensetsu",
+  "display_name": "Susanoou Densetsu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Susanoou Densetsu (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "1f03d2:ff",
+          "desc": "Infinite Energy",
+          "address": "0x1F03D2"
+        },
+        {
+          "code": "1f03ea:ff",
+          "desc": "Max HP",
+          "address": "0x1F03EA"
+        },
+        {
+          "code": "1f041a:ff",
+          "desc": "Max Will",
+          "address": "0x1F041A"
+        },
+        {
+          "code": "1f0280:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F0280"
+        },
+        {
+          "code": "1f0281:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F0281"
+        },
+        {
+          "code": "1f0282:ff",
+          "desc": "Max EXP",
+          "address": "0x1F0282"
+        },
+        {
+          "code": "1f0283:ff",
+          "desc": "Max EXP",
+          "address": "0x1F0283"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

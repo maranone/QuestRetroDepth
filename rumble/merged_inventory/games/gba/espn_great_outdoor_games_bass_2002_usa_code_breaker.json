@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "espngreatoutdoorgamesbass2002",
+  "display_name": "ESPN Great Outdoor Games - Bass 2002 (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\ESPN Great Outdoor Games - Bass 2002 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10000802",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000802"
+        },
+        {
+          "code": "320001D6",
+          "desc": "Max Power When Casting",
+          "address": "0x020001D6"
+        },
+        {
+          "code": "320001E6",
+          "desc": "No Line Tension",
+          "address": "0x020001E6"
+        },
+        {
+          "code": "820000D2",
+          "desc": "Catch 1 Fish For Max Weight",
+          "address": "0x020000D2"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\ESPN Great Outdoor Games - Bass 2002 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10000802",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000802"
+        },
+        {
+          "code": "320001D6",
+          "desc": "Max Power When Casting",
+          "address": "0x020001D6"
+        },
+        {
+          "code": "320001E6",
+          "desc": "No Line Tension",
+          "address": "0x020001E6"
+        },
+        {
+          "code": "820000D2",
+          "desc": "Catch 1 Fish For Max Weight",
+          "address": "0x020000D2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

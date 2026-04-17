@@ -1,0 +1,6 @@
+game_name=Momotarou Densetsu Turbo (Japan)
+game_key=momotarou_densetsu_turbo_japan
+system=pce
+integration_tier=contrib
+trigger	pickup_coins_1f1714	pickup	0x1F1714	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_1f1715	pickup	0x1F1715	1	uint	little	prev != curr	0.8	1	right:0.250:18

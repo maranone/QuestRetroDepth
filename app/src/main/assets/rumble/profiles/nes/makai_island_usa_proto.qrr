@@ -1,0 +1,12 @@
+game_name=Makai Island (USA) (Proto)
+game_key=makai_island_usa_proto
+system=nes
+integration_tier=contrib
+trigger	score_score_0480	score	0x0480	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0481	score	0x0481	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0482	score	0x0482	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0483	score	0x0483	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0484	score	0x0484	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0485	score	0x0485	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	pickup_coins_048e	pickup	0x048E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_048d	pickup	0x048D	1	uint	little	prev != curr	0.8	1	right:0.250:18

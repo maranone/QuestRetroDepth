@@ -1,0 +1,93 @@
+{
+  "system": "nes",
+  "normalized_title": "timezone",
+  "display_name": "Time Zone (Japan)",
+  "aliases": [
+    "Time Zone (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\timezone_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x009F",
+        "0x00A2"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TimeZone-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x00A2",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x009F",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Time Zone (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "001A:05",
+          "desc": "Invincibility",
+          "address": "0x001A"
+        },
+        {
+          "code": "00B4:00",
+          "desc": "Invincibility",
+          "address": "0x00B4"
+        },
+        {
+          "code": "0020:A1",
+          "desc": "Invincibility",
+          "address": "0x0020"
+        },
+        {
+          "code": "0021:B6",
+          "desc": "Invincibility",
+          "address": "0x0021"
+        },
+        {
+          "code": "0078:01",
+          "desc": "Turbo Jump Midair",
+          "address": "0x0078"
+        },
+        {
+          "code": "007B:50",
+          "desc": "Skateboard",
+          "address": "0x007B"
+        },
+        {
+          "code": "0097:00",
+          "desc": "Jump Higher",
+          "address": "0x0097"
+        },
+        {
+          "code": "00A2:63",
+          "desc": "Infinite Lives",
+          "address": "0x00A2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

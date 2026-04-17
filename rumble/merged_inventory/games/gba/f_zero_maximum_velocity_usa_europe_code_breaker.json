@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "fzeromaximumvelocity",
+  "display_name": "F-Zero - Maximum Velocity (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\F-Zero - Maximum Velocity (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10000B54",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000B54"
+        },
+        {
+          "code": "32008957",
+          "desc": "Have All Vehicles",
+          "address": "0x02008957"
+        },
+        {
+          "code": "33002B6A",
+          "desc": "Infinite Lives",
+          "address": "0x02002B6A"
+        },
+        {
+          "code": "33002E11",
+          "desc": "Vehicle Modifier",
+          "address": "0x02002E11"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\F-Zero - Maximum Velocity (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10000B54",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000B54"
+        },
+        {
+          "code": "32008957",
+          "desc": "Have All Vehicles",
+          "address": "0x02008957"
+        },
+        {
+          "code": "33002B6A",
+          "desc": "Infinite Lives",
+          "address": "0x02002B6A"
+        },
+        {
+          "code": "33002E11",
+          "desc": "Vehicle Modifier",
+          "address": "0x02002E11"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

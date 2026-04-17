@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "bandaigolfchallengepebblebeach",
+  "display_name": "Bandai Golf - Challenge Pebble Beach (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bandai Golf - Challenge Pebble Beach (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0202:01",
+          "desc": "P1 Is Always On First Shot",
+          "address": "0x0202"
+        },
+        {
+          "code": "AESAGGZA",
+          "desc": "Skip Intro Screen",
+          "address": "0x040C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

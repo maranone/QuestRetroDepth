@@ -1,0 +1,12 @@
+game_name=Back Track (USA, Europe) (Code Breaker)
+game_key=back_track_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_0200eaa6	damage_taken	0x0200EAA6	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0200eaa6	death	0x0200EAA6	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0200eab6	pickup	0x0200EAB6	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0200eab8	pickup	0x0200EAB8	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0200eaba	pickup	0x0200EABA	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0200eabc	pickup	0x0200EABC	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0200eabe	pickup	0x0200EABE	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0200eac0	pickup	0x0200EAC0	1	uint	little	prev != curr	0.8	1	right:0.250:18

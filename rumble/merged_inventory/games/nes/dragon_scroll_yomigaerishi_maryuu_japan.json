@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "dragonscrollyomigaerishimaryuu",
+  "display_name": "Dragon Scroll - Yomigaerishi Maryuu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dragon Scroll - Yomigaerishi Maryuu (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "07E4:0C",
+          "desc": "Infinite Energy",
+          "address": "0x07E4"
+        },
+        {
+          "code": "07E6:99",
+          "desc": "Infinite Magic",
+          "address": "0x07E6"
+        },
+        {
+          "code": "04B0:01",
+          "desc": "Invincible",
+          "address": "0x04B0"
+        },
+        {
+          "code": "07E8:99",
+          "desc": "Kill An Enemy, Gain A Level",
+          "address": "0x07E8"
+        },
+        {
+          "code": "07E9:99",
+          "desc": "Kill An Enemy, Gain A Level",
+          "address": "0x07E9"
+        },
+        {
+          "code": "0331:00",
+          "desc": "Shot Sprite Modifier",
+          "address": "0x0331"
+        },
+        {
+          "code": "0360:00",
+          "desc": "Invincible Flash Fix",
+          "address": "0x0360"
+        },
+        {
+          "code": "0451:00",
+          "desc": "Long Range Shot",
+          "address": "0x0451"
+        },
+        {
+          "code": "0714:00",
+          "desc": "Character Palette Modifiers",
+          "address": "0x0714"
+        },
+        {
+          "code": "0715:00",
+          "desc": "Character Palette Modifiers",
+          "address": "0x0715"
+        },
+        {
+          "code": "0716:00",
+          "desc": "Character Palette Modifiers",
+          "address": "0x0716"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

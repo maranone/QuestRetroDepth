@@ -2,6 +2,12 @@
 # game_name=Example Genesis Game
 # match_names=example genesis game|examplegenesisgame
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-pickup_event,0xFFFE20,2,uint,prev_lt_curr,,right,0.35,normal,0,30,35,20,Value increased
-damage_taken,0xFFFE12,1,uint,prev_gt_curr,,left,0.85,fade_out,0,90,110,70,Player took damage
-death_event,0xFFFE10,1,uint,became_zero,,both,1.00,fade_in_out,0,260,300,95,Death or critical state
+pickup_rings,0xFFFE20,2,uint,prev_lt_curr,,right,0.28,normal,0,22,12,20,Ring or item collected — light stereo tap
+score_increase,0xFFFE24,4,uint,prev_lt_curr,,right,0.35,burst,0,70,15,10,Score went up — rapid machine-gun pulses
+enemy_defeated,0xFFFE30,1,uint,prev_gt_curr,,right,0.55,burst,0,80,50,30,Enemy killed — satisfying burst
+damage_taken,0xFFFE12,1,uint,prev_gt_curr,,left,0.80,fade_out,0,110,80,70,Player took damage — hard hit that decays
+powerup_gained,0xFFFE14,1,uint,became_nonzero,,both,0.68,fade_in,0,120,150,40,Powerup collected — builds up dramatically
+life_gained,0xFFFE16,1,uint,prev_lt_curr,,both,0.70,fade_in,0,130,200,50,Extra life gained
+life_lost,0xFFFE10,1,uint,prev_gt_curr,,both,0.92,fade_in_out,0,220,250,90,Life count decreased — dramatic swell
+death,0xFFFE11,1,uint,became_zero,,both,1.00,heartbeat,0,320,400,95,Player died — ominous double-beat
+level_complete,0xFFFE18,1,uint,equals,1,both,0.90,heartbeat,0,260,400,60,Level cleared — celebratory double-beat

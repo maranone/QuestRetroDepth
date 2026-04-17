@@ -1,0 +1,8 @@
+game_name=Tekken 3 Special (Unknown) (Action Replay)
+game_key=tekken_3_special_unknown_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff0312	damage_taken	0xFF0312	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff0312	death	0xFF0312	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff0212	damage_taken	0xFF0212	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff0212	death	0xFF0212	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

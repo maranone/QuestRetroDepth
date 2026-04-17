@@ -1,0 +1,99 @@
+{
+  "system": "nes",
+  "normalized_title": "silversurfer",
+  "display_name": "Silver Surfer (USA) (Game Genie)",
+  "aliases": [
+    "Silver Surfer (USA) (Game Genie)",
+    "Silver Surfer (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\silversurfer_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0612",
+        "0x0615"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SilverSurfer-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0612",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0615",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Silver Surfer (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "0056:80",
+          "desc": "Invincibility",
+          "address": "0x0056"
+        },
+        {
+          "code": "06EC:00",
+          "desc": "Invincibility",
+          "address": "0x06EC"
+        },
+        {
+          "code": "05E6:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x05E6"
+        },
+        {
+          "code": "003A:00",
+          "desc": "Level Highlighter Modifier",
+          "address": "0x003A"
+        },
+        {
+          "code": "0056:80",
+          "desc": "Be Invincible",
+          "address": "0x0056"
+        },
+        {
+          "code": "061B:80",
+          "desc": "Have Silver Helper",
+          "address": "0x061B"
+        },
+        {
+          "code": "061C:03",
+          "desc": "Infinite Bombs",
+          "address": "0x061C"
+        },
+        {
+          "code": "061D:FF",
+          "desc": "Full Fire Power",
+          "address": "0x061D"
+        },
+        {
+          "code": "061E:FF",
+          "desc": "Full Fire Power",
+          "address": "0x061E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

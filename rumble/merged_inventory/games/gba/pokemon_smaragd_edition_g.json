@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "pokemonsmaragdedition",
+  "display_name": "Pokemon - Smaragd-Edition (G)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Pokemon - Smaragd-Edition (G).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "44018CB4",
+          "desc": "Nur Weibliche Pokemon",
+          "address": "0x02018CB4"
+        },
+        {
+          "code": "1901DDD1",
+          "desc": "Geheimticket im PC",
+          "address": "0x0201DDD1"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Pokemon - Smaragd-Edition (G).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "44018CB4",
+          "desc": "Nur Weibliche Pokemon",
+          "address": "0x02018CB4"
+        },
+        {
+          "code": "1901DDD1",
+          "desc": "Geheimticket im PC",
+          "address": "0x0201DDD1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

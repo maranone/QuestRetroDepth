@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "gijoerealamericanhero",
+  "display_name": "G.I. Joe - A Real American Hero (USA) (Game Genie)",
+  "aliases": [
+    "G.I. Joe - A Real American Hero (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\G.I. Joe - A Real American Hero (USA).cht",
+      "total_cheat_rows": 52,
+      "raw_entry_count": 32,
+      "distinct_address_count": 30,
+      "sample_raw_entries": [
+        {
+          "code": "AEUAGZGA",
+          "desc": "Don't Lose Weapon Levels When You Die",
+          "address": "0x020C"
+        },
+        {
+          "code": "GEUEPAAE",
+          "desc": "When You Start A New Game, Everyone Has A Max. Lev",
+          "address": "0x0089"
+        },
+        {
+          "code": "SXNPLGSA",
+          "desc": "Invincible After One Hit",
+          "address": "0x042B"
+        },
+        {
+          "code": "AENATLPA",
+          "desc": "Stop timer",
+          "address": "0x030E"
+        },
+        {
+          "code": "AAUEPPLA",
+          "desc": "Max energy on pick-up",
+          "address": "0x0189"
+        },
+        {
+          "code": "0649:0D",
+          "desc": "Infinite Energy First Character",
+          "address": "0x0649"
+        },
+        {
+          "code": "064B:0A",
+          "desc": "Infinite Energy Second Character",
+          "address": "0x064B"
+        },
+        {
+          "code": "064D:09",
+          "desc": "Infinite Energy Third Character",
+          "address": "0x064D"
+        },
+        {
+          "code": "0727:63",
+          "desc": "Infinite Weapon",
+          "address": "0x0727"
+        },
+        {
+          "code": "07AF:63",
+          "desc": "Infinite Time",
+          "address": "0x07AF"
+        },
+        {
+          "code": "00D8:9F",
+          "desc": "Everything Passes Right Through You",
+          "address": "0x00D8"
+        },
+        {
+          "code": "064F:00",
+          "desc": "Health Meter For Any Vehicle",
+          "address": "0x064F"
+        },
+        {
+          "code": "0656:00",
+          "desc": "Maximum Meter For Your Vehicle Health Meter",
+          "address": "0x0656"
+        },
+        {
+          "code": "00D6:00",
+          "desc": "Character Modifier",
+          "address": "0x00D6"
+        },
+        {
+          "code": "SXNETUSE",
+          "desc": "Freeze Time",
+          "address": "0x03AE"
+        },
+        {
+          "code": "SXNELUVK",
+          "desc": "Freeze Time",
+          "address": "0x03AB"
+        },
+        {
+          "code": "ESVOGGEY",
+          "desc": "Invincibility",
+          "address": "0x04DC"
+        },
+        {
+          "code": "XVNPAKAU",
+          "desc": "Invincibility",
+          "address": "0x0468"
+        },
+        {
+          "code": "00E7:00",
+          "desc": "Super Jump",
+          "address": "0x00E7"
+        },
+        {
+          "code": "0640:00",
+          "desc": "Character 1 Modifier",
+          "address": "0x0640"
+        },
+        {
+          "code": "0641:00",
+          "desc": "Character 2 Modifier",
+          "address": "0x0641"
+        },
+        {
+          "code": "0642:00",
+          "desc": "Character 3 Modifier",
+          "address": "0x0642"
+        },
+        {
+          "code": "0643:00",
+          "desc": "Character 1 Shot Strength Modifier",
+          "address": "0x0643"
+        },
+        {
+          "code": "0645:00",
+          "desc": "Character 2 Shot Strength Modifier",
+          "address": "0x0645"
+        },
+        {
+          "code": "0647:00",
+          "desc": "Character 3 Shot Strength Modifier",
+          "address": "0x0647"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

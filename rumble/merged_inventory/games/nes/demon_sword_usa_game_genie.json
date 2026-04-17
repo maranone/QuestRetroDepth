@@ -1,0 +1,117 @@
+{
+  "system": "nes",
+  "normalized_title": "demonsword",
+  "display_name": "Demon Sword (USA) (Game Genie)",
+  "aliases": [
+    "Demon Sword (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Demon Sword (USA).cht",
+      "total_cheat_rows": 45,
+      "raw_entry_count": 19,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "007E:08",
+          "desc": "Infinite Energy",
+          "address": "0x007E"
+        },
+        {
+          "code": "007D:02",
+          "desc": "Infinite Lives",
+          "address": "0x007D"
+        },
+        {
+          "code": "0366:00",
+          "desc": "One Hit Kills Enemies",
+          "address": "0x0366"
+        },
+        {
+          "code": "SZUEUZAX",
+          "desc": "Invincibility",
+          "address": "0x02AB"
+        },
+        {
+          "code": "0033:01",
+          "desc": "Can't Be Hit",
+          "address": "0x0033"
+        },
+        {
+          "code": "0040:00",
+          "desc": "Character Sprite Modifier",
+          "address": "0x0040"
+        },
+        {
+          "code": "0057:00",
+          "desc": "Level Modifier",
+          "address": "0x0057"
+        },
+        {
+          "code": "0086:00",
+          "desc": "Float Effect",
+          "address": "0x0086"
+        },
+        {
+          "code": "0200:99",
+          "desc": "Infinite Shields",
+          "address": "0x0200"
+        },
+        {
+          "code": "0201:99",
+          "desc": "Infinite Lightning",
+          "address": "0x0201"
+        },
+        {
+          "code": "0202:99",
+          "desc": "Infinite Wave Beams",
+          "address": "0x0202"
+        },
+        {
+          "code": "0203:01",
+          "desc": "Multishot Shurikens",
+          "address": "0x0203"
+        },
+        {
+          "code": "007D:99",
+          "desc": "Infinite Lives",
+          "address": "0x007D"
+        },
+        {
+          "code": "007E:08",
+          "desc": "Infinite Health",
+          "address": "0x007E"
+        },
+        {
+          "code": "007C:0F",
+          "desc": "Infinite Power",
+          "address": "0x007C"
+        },
+        {
+          "code": "0207:99",
+          "desc": "Infinite Keys",
+          "address": "0x0207"
+        },
+        {
+          "code": "0208:99",
+          "desc": "Infinite Red Balls",
+          "address": "0x0208"
+        },
+        {
+          "code": "0209:99",
+          "desc": "Infinite Black Balls",
+          "address": "0x0209"
+        },
+        {
+          "code": "020A:99",
+          "desc": "Infinite White Flash Object",
+          "address": "0x020A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

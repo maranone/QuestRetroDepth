@@ -1,0 +1,12 @@
+game_name=Yang Jia Jiang - Yang Warrior Family (China) (Action Replay)
+game_key=yang_jia_jiang_yang_warrior_family_china_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ff71cd	life_lost	0xFF71CD	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff71cd	life_gained	0xFF71CD	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_ff71cc	damage_taken	0xFF71CC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff71cc	death	0xFF71CC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ff720d	life_lost	0xFF720D	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff720d	life_gained	0xFF720D	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_ff720c	damage_taken	0xFF720C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff720c	death	0xFF720C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

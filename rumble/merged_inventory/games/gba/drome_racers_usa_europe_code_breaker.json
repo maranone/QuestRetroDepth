@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "dromeracers",
+  "display_name": "Drome Racers (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Drome Racers (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "420001BC",
+          "desc": "Low Lap Times/Always Place 1st",
+          "address": "0x020001BC"
+        },
+        {
+          "code": "3200007B",
+          "desc": "Unlock All Cars",
+          "address": "0x0200007B"
+        },
+        {
+          "code": "3200007C",
+          "desc": "Unlock All Cars",
+          "address": "0x0200007C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Drome Racers (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "420001BC",
+          "desc": "Low Lap Times/Always Place 1st",
+          "address": "0x020001BC"
+        },
+        {
+          "code": "3200007B",
+          "desc": "Unlock All Cars",
+          "address": "0x0200007B"
+        },
+        {
+          "code": "3200007C",
+          "desc": "Unlock All Cars",
+          "address": "0x0200007C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

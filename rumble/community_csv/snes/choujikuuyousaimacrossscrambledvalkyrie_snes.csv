@@ -2,6 +2,6 @@
 # game_name=Choujikuu Yousai Macross - Scrambled Valkyrie (Japan) (Action Replay)
 # match_names=choujikuuyousaimacrossscrambledvalkyrie|choujikuuyousaimacrossscrambledvalkyriesnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-damage_taken_health_0a28,0x7E0A28,2,uint,prev_gt_curr,,left,0.850,normal,0,90,100,70,
-death_health_0a28,0x7E0A28,2,uint,became_zero,,both,1.000,normal,0,600,400,90,
-score_score_0a8a,0x7E0A8A,2,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+damage_taken_health_0a28,0x7E0A28,2,uint,prev_gt_curr,,left,0.850,fade_out,0,110,80,70,
+death_health_0a28,0x7E0A28,2,uint,became_zero,,both,1.000,heartbeat,0,600,400,90,
+score_score_0a8a,0x7E0A8A,2,bcd,prev_lt_curr,,right,0.350,burst,0,70,15,10,

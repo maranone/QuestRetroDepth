@@ -1,0 +1,45 @@
+{
+  "system": "pce",
+  "normalized_title": "motoroader",
+  "display_name": "Moto Roader (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Moto Roader (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1f0b74:28",
+          "desc": "Infinite Energy",
+          "address": "0x1F0B74"
+        },
+        {
+          "code": "1f0ace:09",
+          "desc": "Infinite Money (Activates on Purchase)",
+          "address": "0x1F0ACE"
+        },
+        {
+          "code": "1f0acf:09",
+          "desc": "Infinite Money (Activates on Purchase)",
+          "address": "0x1F0ACF"
+        },
+        {
+          "code": "1f0ad0:09",
+          "desc": "Infinite Money (Activates on Purchase)",
+          "address": "0x1F0AD0"
+        },
+        {
+          "code": "1f0ad1:09",
+          "desc": "Infinite Money (Activates on Purchase)",
+          "address": "0x1F0AD1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

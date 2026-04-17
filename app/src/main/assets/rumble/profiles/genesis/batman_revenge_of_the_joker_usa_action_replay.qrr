@@ -1,0 +1,11 @@
+game_name=Batman - Revenge of the Joker (USA) (Action Replay)
+game_key=batman_revenge_of_the_joker_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff3ff6	damage_taken	0xFF3FF6	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff3ff6	death	0xFF3FF6	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ff5d10	life_lost	0xFF5D10	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff5d10	life_gained	0xFF5D10	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_ff9786	damage_taken	0xFF9786	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff9786	death	0xFF9786	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_ff5d01	level_complete	0xFF5D01	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

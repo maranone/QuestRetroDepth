@@ -68,6 +68,7 @@ class GlesRenderer {
 public:
     static constexpr int   k_max_copies      = 20;
     static constexpr float k_default_copy_step = 0.003f;
+    static constexpr int   k_max_object_boxes = 64;
 
     GlesRenderer() = default;
     ~GlesRenderer() { shutdown(); }
@@ -152,6 +153,13 @@ private:
     GLint m_u_canvas_scale = -1;
     GLint m_u_solid_stack = -1;
     GLint m_u_force_opaque_alpha = -1;
+    GLint m_u_bbox_mode   = -1;
+    GLint m_u_bbox_debug  = -1;
+    GLint m_u_subrect_enable = -1;
+    GLint m_u_subrect = -1;
+    GLint m_u_instance_base = -1;
+    GLint m_u_object_box_count = -1;
+    GLint m_u_object_boxes = -1;
 
     GLint m_i_u_vp           = -1;
     GLint m_i_u_depth        = -1;
@@ -178,6 +186,13 @@ private:
     GLint m_i_u_canvas_scale = -1;
     GLint m_i_u_solid_stack  = -1;
     GLint m_i_u_force_opaque_alpha = -1;
+    GLint m_i_u_bbox_mode   = -1;
+    GLint m_i_u_bbox_debug  = -1;
+    GLint m_i_u_subrect_enable = -1;
+    GLint m_i_u_subrect = -1;
+    GLint m_i_u_instance_base = -1;
+    GLint m_i_u_object_box_count = -1;
+    GLint m_i_u_object_boxes = -1;
 
     GLint m_flat_u_vp    = -1;
     GLint m_flat_u_color = -1;

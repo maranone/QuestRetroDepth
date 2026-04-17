@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "asoarmoredscrumobject",
+  "display_name": "ASO - Armored Scrum Object (Japan) (En)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\ASO - Armored Scrum Object (Japan) (En).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "00DF:09",
+          "desc": "Infinite Lives",
+          "address": "0x00DF"
+        },
+        {
+          "code": "00D2:01",
+          "desc": "Weapon Modifier",
+          "address": "0x00D2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

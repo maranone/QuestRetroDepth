@@ -1,0 +1,8 @@
+game_name=Lester the Unlikely (USA) (Action Replay)
+game_key=lester_the_unlikely_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_859b	damage_taken	0x7E859B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_859b	death	0x7E859B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_8599	life_lost	0x7E8599	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_8599	life_gained	0x7E8599	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

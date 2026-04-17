@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "atlantislostempire",
+  "display_name": "Atlantis - The Lost Empire (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Atlantis - The Lost Empire (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "33001A08",
+          "desc": "Have Dynamite",
+          "address": "0x02001A08"
+        },
+        {
+          "code": "33001A08",
+          "desc": "Have Wrench",
+          "address": "0x02001A08"
+        },
+        {
+          "code": "33001A0C",
+          "desc": "Infinite Ammo",
+          "address": "0x02001A0C"
+        },
+        {
+          "code": "83001A10",
+          "desc": "Max Gems",
+          "address": "0x02001A10"
+        },
+        {
+          "code": "33001A18",
+          "desc": "Infinite Continues",
+          "address": "0x02001A18"
+        },
+        {
+          "code": "83003890",
+          "desc": "Infinite Health",
+          "address": "0x02003890"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Atlantis - The Lost Empire (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "33001A08",
+          "desc": "Have Dynamite",
+          "address": "0x02001A08"
+        },
+        {
+          "code": "33001A08",
+          "desc": "Have Wrench",
+          "address": "0x02001A08"
+        },
+        {
+          "code": "33001A0C",
+          "desc": "Infinite Ammo",
+          "address": "0x02001A0C"
+        },
+        {
+          "code": "83001A10",
+          "desc": "Max Gems",
+          "address": "0x02001A10"
+        },
+        {
+          "code": "33001A18",
+          "desc": "Infinite Continues",
+          "address": "0x02001A18"
+        },
+        {
+          "code": "83003890",
+          "desc": "Infinite Health",
+          "address": "0x02003890"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

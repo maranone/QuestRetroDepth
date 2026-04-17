@@ -23,6 +23,8 @@ namespace {
 
 constexpr float k_runtime_amplitude_scale = 2.0f;
 constexpr int k_runtime_duration_scale = 2;
+constexpr int k_haptic_gap_ms = 8;        // silence between chained events
+constexpr int k_max_haptic_delay_ms = 600; // drop event if queue is already this deep
 
 std::size_t alias_match_score(const std::string& alias, const std::string& normalized_name) {
     if (alias.empty() || normalized_name.empty()) return 0;
@@ -88,6 +90,16 @@ int64_t parse_int_auto(const std::string& value, bool& ok_out) {
     return ok_out ? static_cast<int64_t>(parsed) : 0;
 }
 
+RumbleEffect default_effect_for_event(const std::string& event) {
+    if (event == "death" || event == "game_over")              return RumbleEffect::Heartbeat;
+    if (event == "level_complete")                             return RumbleEffect::Heartbeat;
+    if (event == "life_lost")                                  return RumbleEffect::FadeInOut;
+    if (event == "damage_taken")                               return RumbleEffect::FadeOut;
+    if (event == "life_gained" || event == "powerup_gained")   return RumbleEffect::FadeIn;
+    if (event == "score" || event == "enemy_defeated")         return RumbleEffect::Burst;
+    return RumbleEffect::Normal;
+}
+
 float effect_scale(RumbleEffect effect, int step_index, int total_steps) {
     if (total_steps <= 1) return 1.0f;
     const float t = static_cast<float>(step_index) / static_cast<float>(total_steps - 1);
@@ -137,7 +149,13 @@ bool ExperimentalRumbleManager::read_file_text(const std::string& path, std::str
 }
 
 BackendKind ExperimentalRumbleManager::backend_kind_from_string(const std::string& value) {
-    return value == "genesis" ? BackendKind::Genesis : BackendKind::Snes;
+    if (value == "genesis")              return BackendKind::Genesis;
+    if (value == "sms" || value == "gg") return BackendKind::Sms;
+    if (value == "nes")                  return BackendKind::Nes;
+    if (value == "gba")                  return BackendKind::Gba;
+    if (value == "gb" || value == "gbc") return BackendKind::Gb;
+    if (value == "pce")                  return BackendKind::Pce;
+    return BackendKind::Snes;
 }
 
 std::string ExperimentalRumbleManager::normalize_name(const std::string& value) {
@@ -157,7 +175,7 @@ std::string ExperimentalRumbleManager::normalize_name(const std::string& value) 
     std::string lowered;
     lowered.reserve(out.size());
     for (char c : out) lowered.push_back(static_cast<char>(std::tolower(static_cast<unsigned char>(c))));
-    lowered = std::regex_replace(lowered, std::regex("\\.(sfc|smc|fig|bin|md|gen|smd|zip|7z|csv)$"), " ");
+    lowered = std::regex_replace(lowered, std::regex("\\.(sfc|smc|fig|bin|md|gen|smd|nes|gba|gb|gbc|pce|sms|gg|zip|7z|csv)$"), " ");
     lowered = std::regex_replace(lowered, std::regex("\\b(rev(ision)?|version|ver|proto|beta|demo)\\s*[a-z0-9._-]*\\b"), " ");
     lowered = std::regex_replace(lowered, std::regex("[-_]+"), " ");
     lowered = std::regex_replace(lowered, std::regex("\\b(usa|europe|eur|japan|jpn|es|esp|en|fr|de|it|proto|beta|demo|rev|revision|v[0-9]+(?:\\.[0-9]+)*)\\b"), " ");
@@ -300,9 +318,35 @@ bool ExperimentalRumbleManager::load_profile(AAssetManager* asset_manager, const
         trigger.id = cols[1];
         trigger.event = cols[2];
         const uint32_t absolute_address = static_cast<uint32_t>(std::strtoul(cols[3].c_str(), nullptr, 16));
-        trigger.offset = (entry.backend_kind == BackendKind::Genesis)
-            ? static_cast<std::size_t>(absolute_address - 0xFF0000u)
-            : static_cast<std::size_t>(((absolute_address >> 16) - 0x7Eu) * 0x10000u + (absolute_address & 0xFFFFu));
+        switch (entry.backend_kind) {
+            case BackendKind::Genesis:
+                trigger.offset = static_cast<std::size_t>(absolute_address - 0xFF0000u);
+                break;
+            case BackendKind::Sms:
+                // SMS/GG RAM 0xC000-0xDFFF
+                trigger.offset = static_cast<std::size_t>(absolute_address - 0xC000u);
+                break;
+            case BackendKind::Nes:
+                // NES WRAM 0x0000-0x1FFF (2KB mirrored); mask to canonical 0x0000-0x07FF
+                trigger.offset = static_cast<std::size_t>(absolute_address & 0x07FFu);
+                break;
+            case BackendKind::Gba:
+                // GBA EWRAM 0x02000000-0x0203FFFF
+                trigger.offset = static_cast<std::size_t>(absolute_address - 0x02000000u);
+                break;
+            case BackendKind::Gb:
+                // GB/GBC WRAM 0xC000-0xDFFF
+                trigger.offset = static_cast<std::size_t>(absolute_address - 0xC000u);
+                break;
+            case BackendKind::Pce:
+                // PCE RAM physical 0x1F0000-0x1F1FFF
+                trigger.offset = static_cast<std::size_t>(absolute_address - 0x1F0000u);
+                break;
+            default: // Snes
+                trigger.offset = static_cast<std::size_t>(
+                    ((absolute_address >> 16) - 0x7Eu) * 0x10000u + (absolute_address & 0xFFFFu));
+                break;
+        }
         trigger.size = std::max(1, std::atoi(cols[4].c_str()));
         trigger.value_type = cols[5];
         trigger.byte_order = cols[6];
@@ -318,10 +362,14 @@ bool ExperimentalRumbleManager::load_profile(AAssetManager* asset_manager, const
             spec.amplitude = std::strtof(h[1].c_str(), nullptr);
             spec.duration_ms = std::atoi(h[2].c_str());
             spec.start_ms = 0;
-            spec.effect = RumbleEffect::Normal;
+            spec.effect = RumbleEffect::Normal; // overridden below
             trigger.haptics.push_back(spec);
         }
-        if (!trigger.haptics.empty()) profile_out.triggers.push_back(std::move(trigger));
+        if (!trigger.haptics.empty()) {
+            const RumbleEffect auto_effect = default_effect_for_event(trigger.event);
+            for (auto& spec : trigger.haptics) spec.effect = auto_effect;
+            profile_out.triggers.push_back(std::move(trigger));
+        }
     }
     RLOGI("profile loaded: key=%s game=%s triggers=%zu asset=%s",
           entry.game_key.c_str(), profile_out.game_name.c_str(), profile_out.triggers.size(), entry.asset_path.c_str());
@@ -411,6 +459,21 @@ bool ExperimentalRumbleManager::load_user_profile(BackendKind backend_kind,
         if (backend_kind == BackendKind::Genesis) {
             if (address < 0xFF0000 || address > 0xFFFFFF) return fail("genesis address must be within 0xFF0000-0xFFFFFF");
             trigger.offset = static_cast<std::size_t>(address - 0xFF0000);
+        } else if (backend_kind == BackendKind::Sms) {
+            if (address < 0xC000 || address > 0xDFFF) return fail("sms/gg address must be within 0xC000-0xDFFF");
+            trigger.offset = static_cast<std::size_t>(address - 0xC000);
+        } else if (backend_kind == BackendKind::Nes) {
+            if (address < 0x0000 || address > 0x1FFF) return fail("nes address must be within 0x0000-0x1FFF");
+            trigger.offset = static_cast<std::size_t>(address & 0x07FFu);
+        } else if (backend_kind == BackendKind::Gba) {
+            if (address < 0x02000000 || address > 0x0203FFFF) return fail("gba EWRAM address must be within 0x02000000-0x0203FFFF");
+            trigger.offset = static_cast<std::size_t>(address - 0x02000000);
+        } else if (backend_kind == BackendKind::Gb) {
+            if (address < 0xC000 || address > 0xDFFF) return fail("gb/gbc WRAM address must be within 0xC000-0xDFFF");
+            trigger.offset = static_cast<std::size_t>(address - 0xC000);
+        } else if (backend_kind == BackendKind::Pce) {
+            if (address < 0x1F0000 || address > 0x1F1FFF) return fail("pce RAM address must be within 0x1F0000-0x1F1FFF");
+            trigger.offset = static_cast<std::size_t>(address - 0x1F0000u);
         } else {
             const uint32_t bank = (static_cast<uint32_t>(address) >> 16) & 0xFFu;
             if (bank != 0x7E && bank != 0x7F) return fail("snes address must be in WRAM bank 0x7E/0x7F");
@@ -457,6 +520,8 @@ bool ExperimentalRumbleManager::load_user_profile(BackendKind backend_kind,
         if (effect_name == "fadein") effect = RumbleEffect::FadeIn;
         else if (effect_name == "fadeout") effect = RumbleEffect::FadeOut;
         else if (effect_name == "fadeinout") effect = RumbleEffect::FadeInOut;
+        else if (effect_name == "burst") effect = RumbleEffect::Burst;
+        else if (effect_name == "heartbeat") effect = RumbleEffect::Heartbeat;
         else if (effect_name != "normal") return fail("unsupported effect");
 
         const int start_ms = static_cast<int>(parse_int_auto(get("start_ms"), ok));
@@ -519,7 +584,17 @@ bool ExperimentalRumbleManager::find_matching_user_profile(BackendKind backend_k
                                                            std::string& error_out) {
     error_out.clear();
     if (m_user_root.empty()) return false;
-    const std::string system_dir = m_user_root + "/" + (backend_kind == BackendKind::Genesis ? "genesis" : "snes");
+    std::string system_name;
+    switch (backend_kind) {
+        case BackendKind::Genesis: system_name = "genesis"; break;
+        case BackendKind::Sms:     system_name = "sms";     break;
+        case BackendKind::Nes:     system_name = "nes";     break;
+        case BackendKind::Gba:     system_name = "gba";     break;
+        case BackendKind::Gb:      system_name = "gb";      break;
+        case BackendKind::Pce:     system_name = "pce";     break;
+        default:                   system_name = "snes";    break;
+    }
+    const std::string system_dir = m_user_root + "/" + system_name;
     DIR* dir = opendir(system_dir.c_str());
     if (!dir) return false;
 
@@ -578,6 +653,7 @@ void ExperimentalRumbleManager::set_enabled(bool enabled) {
 
 void ExperimentalRumbleManager::reset_runtime() {
     m_frame_counter = 0;
+    m_haptic_queue_end_ms = 0;
     for (auto& trigger : m_active_profile.triggers) {
         trigger.has_prev = false;
         trigger.prev_value = 0;
@@ -669,7 +745,7 @@ std::string ExperimentalRumbleManager::active_status() const {
     return m_active_status;
 }
 
-std::vector<QueuedHapticEvent> ExperimentalRumbleManager::evaluate_frame(const EmulatorBackend& backend) {
+std::vector<QueuedHapticEvent> ExperimentalRumbleManager::evaluate_frame(const EmulatorBackend& backend, uint64_t now_ms) {
     std::vector<QueuedHapticEvent> out;
     if (!m_enabled || !m_has_active_profile) return out;
     const uint8_t* ram = backend.system_ram_data();
@@ -696,7 +772,8 @@ std::vector<QueuedHapticEvent> ExperimentalRumbleManager::evaluate_frame(const E
         const bool matched = condition_matches(trigger, trigger.prev_value, curr);
         trigger.prev_value = curr;
         if (!matched) continue;
-        if (m_frame_counter - trigger.last_fire_frame < static_cast<uint64_t>(trigger.cooldown_frames)) continue;
+        // Same-frame dedup only — no cooldown; the queue sequencer handles pacing
+        if (trigger.last_fire_frame == m_frame_counter) continue;
         trigger.last_fire_frame = m_frame_counter;
         fired.push_back({trigger.priority, trigger.offset, &trigger});
     }
@@ -708,32 +785,38 @@ std::vector<QueuedHapticEvent> ExperimentalRumbleManager::evaluate_frame(const E
 
     std::vector<std::size_t> used_offsets;
     for (const auto& item : fired) {
-        if (out.size() >= 2) break;
         if (std::find(used_offsets.begin(), used_offsets.end(), item.offset) != used_offsets.end()) continue;
         used_offsets.push_back(item.offset);
         if (item.trigger->haptics.empty()) continue;
 
         float peak_amplitude = 0.0f;
         int peak_duration_ms = 0;
-        int start_ms = 0;
         bool primary_right = item.trigger->haptics.front().right;
         RumbleEffect effect = item.trigger->haptics.front().effect;
         for (const auto& spec : item.trigger->haptics) {
             peak_amplitude = std::max(peak_amplitude, std::min(1.0f, spec.amplitude * k_runtime_amplitude_scale));
             peak_duration_ms = std::max(peak_duration_ms, spec.duration_ms * k_runtime_duration_scale);
-            start_ms = std::max(start_ms, spec.start_ms);
         }
         const RumbleWavePattern pattern =
             item.trigger->haptics.size() >= 2 ? RumbleWavePattern::Both : RumbleWavePattern::Single;
+
+        // Haptic queue sequencing: stagger rapid events so they play one after another
+        int start_delay_ms = 0;
+        if (m_haptic_queue_end_ms > now_ms) {
+            start_delay_ms = static_cast<int>(m_haptic_queue_end_ms - now_ms);
+        }
+        if (start_delay_ms > k_max_haptic_delay_ms) continue; // queue full, skip
+        m_haptic_queue_end_ms = now_ms + static_cast<uint64_t>(start_delay_ms + peak_duration_ms + k_haptic_gap_ms);
+
         QueuedHapticEvent event;
         event.right = primary_right;
         event.amplitude = peak_amplitude;
         event.duration_ms = peak_duration_ms;
         event.pattern = pattern;
         event.effect = effect;
-        event.start_ms = start_ms;
+        event.start_ms = start_delay_ms;
         out.push_back(event);
-        RLOGI("triggered: game=%s id=%s event=%s pattern=%s primary=%s amp=%.2f dur=%dms start=%dms offset=0x%zX frame=%llu",
+        RLOGI("triggered: game=%s id=%s event=%s pattern=%s primary=%s amp=%.2f dur=%dms delay=%dms offset=0x%zX frame=%llu",
               m_active_profile.game_name.c_str(),
               item.trigger->id.c_str(),
               item.trigger->event.c_str(),
@@ -741,7 +824,7 @@ std::vector<QueuedHapticEvent> ExperimentalRumbleManager::evaluate_frame(const E
               primary_right ? "right" : "left",
               peak_amplitude,
               peak_duration_ms,
-              start_ms,
+              start_delay_ms,
               item.offset,
               (unsigned long long)m_frame_counter);
     }

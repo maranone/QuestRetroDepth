@@ -1,0 +1,12 @@
+game_name=Uncanny X-Men, The (USA) (Game Genie)
+game_key=uncanny_x_men_the_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_05aa	damage_taken	0x05AA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05aa	death	0x05AA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_053e	damage_taken	0x053E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_053e	death	0x053E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_055e	damage_taken	0x055E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_055e	death	0x055E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_0063	level_complete	0x0063	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_00b8	level_complete	0x00B8	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

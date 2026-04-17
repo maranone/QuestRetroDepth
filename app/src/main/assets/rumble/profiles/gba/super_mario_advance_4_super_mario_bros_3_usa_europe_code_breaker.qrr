@@ -1,0 +1,8 @@
+game_name=Super Mario Advance 4 - Super Mario Bros. 3 (USA, Europe) (Code Breaker)
+game_key=super_mario_advance_4_super_mario_bros_3_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_02002a6a	life_lost	0x02002A6A	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02002a6a	life_gained	0x02002A6A	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_02002a6c	life_lost	0x02002A6C	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02002a6c	life_gained	0x02002A6C	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

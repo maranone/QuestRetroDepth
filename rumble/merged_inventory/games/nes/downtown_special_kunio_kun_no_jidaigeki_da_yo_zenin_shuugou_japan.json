@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "downtownspecialkuniokunnojidaigekidayozeninshuugou",
+  "display_name": "Downtown Special - Kunio-kun no Jidaigeki Da yo Zenin Shuugou! (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Downtown Special - Kunio-kun no Jidaigeki Da yo Zenin Shuugou! (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "7AE0:FF",
+          "desc": "Infinite Cash",
+          "address": "0x7AE0"
+        },
+        {
+          "code": "7AE1:FF",
+          "desc": "Infinite Cash",
+          "address": "0x7AE1"
+        },
+        {
+          "code": "7A00:44",
+          "desc": "P1 Infinite Health",
+          "address": "0x7A00"
+        },
+        {
+          "code": "7A01:44",
+          "desc": "P2 Infinite Health",
+          "address": "0x7A01"
+        },
+        {
+          "code": "7A02:00",
+          "desc": "Kill Enemies With 1 Hit",
+          "address": "0x7A02"
+        },
+        {
+          "code": "008B:01",
+          "desc": "Infinite Growth Ability Points",
+          "address": "0x008B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

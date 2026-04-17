@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "jurassicparkiiiparkbuilder",
+  "display_name": "Jurassic Park III - Park Builder (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Jurassic Park III - Park Builder (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10000B64",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000B64"
+        },
+        {
+          "code": "82019A38",
+          "desc": "Max Money",
+          "address": "0x02019A38"
+        },
+        {
+          "code": "82019A3A",
+          "desc": "Max Money",
+          "address": "0x02019A3A"
+        },
+        {
+          "code": "32019A30",
+          "desc": "Always Year 01",
+          "address": "0x02019A30"
+        },
+        {
+          "code": "32019A31",
+          "desc": "Always Month 01",
+          "address": "0x02019A31"
+        },
+        {
+          "code": "32019A32",
+          "desc": "Always Week 01",
+          "address": "0x02019A32"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Jurassic Park III - Park Builder (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10000B64",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000B64"
+        },
+        {
+          "code": "82019A38",
+          "desc": "Max Money",
+          "address": "0x02019A38"
+        },
+        {
+          "code": "82019A3A",
+          "desc": "Max Money",
+          "address": "0x02019A3A"
+        },
+        {
+          "code": "32019A30",
+          "desc": "Always Year 01",
+          "address": "0x02019A30"
+        },
+        {
+          "code": "32019A31",
+          "desc": "Always Month 01",
+          "address": "0x02019A31"
+        },
+        {
+          "code": "32019A32",
+          "desc": "Always Week 01",
+          "address": "0x02019A32"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

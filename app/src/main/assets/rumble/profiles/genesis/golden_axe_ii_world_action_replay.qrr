@@ -1,0 +1,16 @@
+game_name=Golden Axe II (World) (Action Replay)
+game_key=golden_axe_ii_world_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ff0880	life_lost	0xFF0880	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff0880	life_gained	0xFF0880	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_ff0888	enemy_defeated	0xFF0888	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	life_lost_lives_ff0924	life_lost	0xFF0924	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff0924	life_gained	0xFF0924	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_ff08e2	damage_taken	0xFF08E2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff08e2	death	0xFF08E2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_ff092c	enemy_defeated	0xFF092C	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_ff083e	damage_taken	0xFF083E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff083e	death	0xFF083E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_ff07e6	level_complete	0xFF07E6	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_ff0b72	enemy_defeated	0xFF0B72	1	uint	little	prev > curr	0.65	1	right:0.450:35

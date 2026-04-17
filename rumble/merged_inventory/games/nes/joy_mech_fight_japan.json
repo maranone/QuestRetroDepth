@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "joymechfight",
+  "display_name": "Joy Mech Fight (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Joy Mech Fight (Japan).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "0529:58",
+          "desc": "Infinite Energy P1",
+          "address": "0x0529"
+        },
+        {
+          "code": "0629:00",
+          "desc": "No Energy P2",
+          "address": "0x0629"
+        },
+        {
+          "code": "053F:00",
+          "desc": "Character Modifier P1",
+          "address": "0x053F"
+        },
+        {
+          "code": "063F:00",
+          "desc": "Character Modifier P2",
+          "address": "0x063F"
+        },
+        {
+          "code": "00B0:00",
+          "desc": "Stage Modifier",
+          "address": "0x00B0"
+        },
+        {
+          "code": "EEUAETGA",
+          "desc": "Access All Other Robots P1 War",
+          "address": "0x0608"
+        },
+        {
+          "code": "EEVOUAGA",
+          "desc": "Access All Other Robots Vs Modes P1",
+          "address": "0x008B"
+        },
+        {
+          "code": "EEOONPGA",
+          "desc": "Access All Other Robots Vs Modes P2",
+          "address": "0x018F"
+        },
+        {
+          "code": "YXUAETGA",
+          "desc": "Access Most Robots P1 War",
+          "address": "0x0628"
+        },
+        {
+          "code": "YXVOUAGA",
+          "desc": "Access Most Robots P1 Vs Modes",
+          "address": "0x00AB"
+        },
+        {
+          "code": "YXOONPGA",
+          "desc": "Access Most Robots P2 Vs Modes",
+          "address": "0x01AF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

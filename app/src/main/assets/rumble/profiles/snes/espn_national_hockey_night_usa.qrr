@@ -1,0 +1,8 @@
+game_name=ESPN National Hockey Night (USA)
+game_key=espn_national_hockey_night_usa
+system=snes
+integration_tier=contrib
+trigger	score_score_19a9	score	0x7E19A9	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_e4c6	score	0x7EE4C6	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_19a7	score	0x7E19A7	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_e458	score	0x7EE458	1	uint	little	prev < curr	0.8	1	right:0.350:60

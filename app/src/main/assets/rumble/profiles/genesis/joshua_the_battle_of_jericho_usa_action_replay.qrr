@@ -1,0 +1,6 @@
+game_name=Joshua _ the Battle of Jericho (USA) (Action Replay)
+game_key=joshua_the_battle_of_jericho_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ff04f7	life_lost	0xFF04F7	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff04f7	life_gained	0xFF04F7	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

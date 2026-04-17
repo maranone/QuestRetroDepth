@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "silvasaga",
+  "display_name": "Silva Saga (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Silva Saga (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "6931:FF",
+          "desc": "Max Gold",
+          "address": "0x6931"
+        },
+        {
+          "code": "6903:FF",
+          "desc": "Quick Level Up",
+          "address": "0x6903"
+        },
+        {
+          "code": "007E:17",
+          "desc": "No Random Battles",
+          "address": "0x007E"
+        },
+        {
+          "code": "6908:FF",
+          "desc": "Main Character Health",
+          "address": "0x6908"
+        },
+        {
+          "code": "690C:64",
+          "desc": "Main Character Magic",
+          "address": "0x690C"
+        },
+        {
+          "code": "6948:FF",
+          "desc": "2nd Character Health",
+          "address": "0x6948"
+        },
+        {
+          "code": "694C:64",
+          "desc": "2nd Character Magic",
+          "address": "0x694C"
+        },
+        {
+          "code": "6943:FF",
+          "desc": "2nd Character Experience",
+          "address": "0x6943"
+        },
+        {
+          "code": "6988:FF",
+          "desc": "3rd Character Health",
+          "address": "0x6988"
+        },
+        {
+          "code": "698C:64",
+          "desc": "3rd Character Magic",
+          "address": "0x698C"
+        },
+        {
+          "code": "6983:FF",
+          "desc": "3rd Character Experience",
+          "address": "0x6983"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

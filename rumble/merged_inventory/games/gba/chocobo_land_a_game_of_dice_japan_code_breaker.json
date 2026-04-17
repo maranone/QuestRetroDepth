@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "chocobolandgameofdice",
+  "display_name": "Chocobo Land - A Game of Dice (Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Chocobo Land - A Game of Dice (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "33004778",
+          "desc": "Have 4 Stones",
+          "address": "0x02004778"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select To Roll 6",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33004733",
+          "desc": "Press Select To Roll 6",
+          "address": "0x02004733"
+        },
+        {
+          "code": "830047A0",
+          "desc": "Max CP",
+          "address": "0x020047A0"
+        },
+        {
+          "code": "830047A2",
+          "desc": "Max CP",
+          "address": "0x020047A2"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Chocobo Land - A Game of Dice (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "33004778",
+          "desc": "Have 4 Stones",
+          "address": "0x02004778"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select To Roll 6",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33004733",
+          "desc": "Press Select To Roll 6",
+          "address": "0x02004733"
+        },
+        {
+          "code": "830047A0",
+          "desc": "Max CP",
+          "address": "0x020047A0"
+        },
+        {
+          "code": "830047A2",
+          "desc": "Max CP",
+          "address": "0x020047A2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

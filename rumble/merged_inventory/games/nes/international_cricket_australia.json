@@ -1,0 +1,25 @@
+{
+  "system": "nes",
+  "normalized_title": "internationalcricket",
+  "display_name": "International Cricket (Australia)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\International Cricket (Australia).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0038:00",
+          "desc": "Runs #",
+          "address": "0x0038"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

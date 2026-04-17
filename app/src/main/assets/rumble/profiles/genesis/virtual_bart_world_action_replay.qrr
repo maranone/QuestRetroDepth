@@ -1,0 +1,8 @@
+game_name=Virtual Bart (World) (Action Replay)
+game_key=virtual_bart_world_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ffc7a0	life_lost	0xFFC7A0	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffc7a0	life_gained	0xFFC7A0	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_ffc7a2	damage_taken	0xFFC7A2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffc7a2	death	0xFFC7A2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "gumshoe",
+  "display_name": "Gumshoe (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Gumshoe (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gumshoe (USA, Europe).cht",
+      "total_cheat_rows": 37,
+      "raw_entry_count": 39,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "YAUENALE",
+          "desc": "Start With Lots Of Lives",
+          "address": "0x008F"
+        },
+        {
+          "code": "PAUENALA",
+          "desc": "Start with 1 life",
+          "address": "0x008F"
+        },
+        {
+          "code": "TAUENALA",
+          "desc": "Start with 6 lives",
+          "address": "0x008F"
+        },
+        {
+          "code": "PAUENALE",
+          "desc": "Start with 9 lives",
+          "address": "0x008F"
+        },
+        {
+          "code": "IZSEEAAI",
+          "desc": "Start with 25 bullets",
+          "address": "0x00A8"
+        },
+        {
+          "code": "PASEKAAA",
+          "desc": "Start with 150 bullets",
+          "address": "0x008C"
+        },
+        {
+          "code": "ZASEKAAA",
+          "desc": "Start with 250 bullets",
+          "address": "0x008C"
+        },
+        {
+          "code": "PASAUALA",
+          "desc": "Gain 1 bullet on pick-up",
+          "address": "0x000B"
+        },
+        {
+          "code": "TASAUALA",
+          "desc": "Gain 6 bullets on pick-up",
+          "address": "0x000B"
+        },
+        {
+          "code": "LAKEGYTA",
+          "desc": "Timer set to 04:00",
+          "address": "0x078C"
+        },
+        {
+          "code": "PAKEGYTE",
+          "desc": "Timer set to 10:00",
+          "address": "0x078C"
+        },
+        {
+          "code": "SAKAVEKE",
+          "desc": "Different attack waves",
+          "address": "0x000E"
+        },
+        {
+          "code": "00E0:52",
+          "desc": "Infinite Time",
+          "address": "0x00E0"
+        },
+        {
+          "code": "00E3:40",
+          "desc": "Infinite Bullets",
+          "address": "0x00E3"
+        },
+        {
+          "code": "008F:01",
+          "desc": "Have Hat On",
+          "address": "0x008F"
+        },
+        {
+          "code": "008B:01",
+          "desc": "Stop Your Character",
+          "address": "0x008B"
+        },
+        {
+          "code": "0038:09",
+          "desc": "Infinite Lives",
+          "address": "0x0038"
+        },
+        {
+          "code": "00E0:59",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x00E0"
+        },
+        {
+          "code": "00E1:09",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x00E1"
+        },
+        {
+          "code": "00E3:99",
+          "desc": "Infinite Bullets (Ten's &amp; One Digit)",
+          "address": "0x00E3"
+        },
+        {
+          "code": "00E4:09",
+          "desc": "Infinite Bullets (Hundred's Digit)",
+          "address": "0x00E4"
+        },
+        {
+          "code": "SXNOILSA",
+          "desc": "Invincibility - Stages 1 and 2",
+          "address": "0x03AD"
+        },
+        {
+          "code": "SZSEILVG",
+          "desc": "Infinite Lives - Stages 1 and 2",
+          "address": "0x03AD"
+        },
+        {
+          "code": "PASEKAAA",
+          "desc": "Start on Stage 2",
+          "address": "0x008C"
+        },
+        {
+          "code": "NTSEVAKT",
+          "desc": "Start on Stage 2",
+          "address": "0x00EE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

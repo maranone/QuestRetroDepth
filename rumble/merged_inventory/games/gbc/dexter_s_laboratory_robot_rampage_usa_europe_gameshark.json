@@ -1,0 +1,27 @@
+{
+  "system": "gbc",
+  "normalized_title": "dexterslaboratoryrobotrampage",
+  "display_name": "Dexter's Laboratory - Robot Rampage (USA, Europe) (GameShark)",
+  "aliases": [
+    "Dexter's Laboratory - Robot Rampage (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Dexter's Laboratory - Robot Rampage (USA, Europe).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0100C4CC",
+          "desc": "Level Modifier",
+          "address": "0xC4CC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

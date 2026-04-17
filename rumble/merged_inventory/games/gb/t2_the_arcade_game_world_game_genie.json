@@ -1,0 +1,33 @@
+{
+  "system": "gb",
+  "normalized_title": "t2arcadegame",
+  "display_name": "T2 - The Arcade Game (World) (Game Genie)",
+  "aliases": [
+    "T2 - The Arcade Game (World) (Game Genie)",
+    "T2 - The Arcade Game (World) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\T2 - The Arcade Game (World) (GameShark).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "010AD7FF",
+          "desc": "Infinite Lives",
+          "address": "0xD7FF"
+        },
+        {
+          "code": "0170DAFF",
+          "desc": "Infinite Energy",
+          "address": "0xDAFF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

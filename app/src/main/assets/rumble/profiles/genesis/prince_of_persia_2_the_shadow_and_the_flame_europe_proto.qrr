@@ -1,0 +1,8 @@
+game_name=Prince of Persia 2 - The Shadow and the Flame (Europe) (Proto)
+game_key=prince_of_persia_2_the_shadow_and_the_flame_europe_proto
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff4a53	damage_taken	0xFF4A53	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff4a53	death	0xFF4A53	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff4c4f	damage_taken	0xFF4C4F	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff4c4f	death	0xFF4C4F	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

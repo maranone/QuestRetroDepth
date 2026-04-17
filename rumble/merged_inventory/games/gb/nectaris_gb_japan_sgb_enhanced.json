@@ -1,0 +1,25 @@
+{
+  "system": "gb",
+  "normalized_title": "nectarisgb",
+  "display_name": "Nectaris GB (Japan) (SGB Enhanced)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Nectaris GB (Japan) (SGB Enhanced).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0100C3D7",
+          "desc": "Some Units Have Infinite Turns",
+          "address": "0xC3D7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

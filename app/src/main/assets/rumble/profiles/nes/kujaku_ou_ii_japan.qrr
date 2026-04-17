@@ -1,0 +1,14 @@
+game_name=Kujaku Ou II (Japan)
+game_key=kujaku_ou_ii_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0380	damage_taken	0x0380	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0380	death	0x0380	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0390	damage_taken	0x0390	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0390	death	0x0390	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_03a0	damage_taken	0x03A0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03a0	death	0x03A0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_03b0	damage_taken	0x03B0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03b0	death	0x03B0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_03c0	enemy_defeated	0x03C0	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_03c1	enemy_defeated	0x03C1	1	uint	little	prev > curr	0.65	1	right:0.450:35

@@ -1,0 +1,35 @@
+{
+  "system": "gbc",
+  "normalized_title": "jimhensonsmuppets",
+  "display_name": "Jim Henson's Muppets (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Jim Henson's Muppets (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "01FFC2DA",
+          "desc": "Infinite Paper Planes &amp; Drumsticks",
+          "address": "0xC2DA"
+        },
+        {
+          "code": "011AC3DA",
+          "desc": "Infinite Special",
+          "address": "0xC3DA"
+        },
+        {
+          "code": "01FFC1DA",
+          "desc": "Infinite Health",
+          "address": "0xC1DA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

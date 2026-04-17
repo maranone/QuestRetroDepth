@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "americantailfievelsgoldrush",
+  "display_name": "American Tail - Fievel's Gold Rush (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\American Tail - Fievel's Gold Rush (USA) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1001668A",
+          "desc": "Master Code",
+          "address": "0x0201668A"
+        },
+        {
+          "code": "330039F8",
+          "desc": "Infinite Health",
+          "address": "0x020039F8"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\American Tail - Fievel's Gold Rush (USA) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1001668A",
+          "desc": "Master Code",
+          "address": "0x0201668A"
+        },
+        {
+          "code": "330039F8",
+          "desc": "Infinite Health",
+          "address": "0x020039F8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

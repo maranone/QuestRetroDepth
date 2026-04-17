@@ -1,0 +1,5 @@
+game_name=Monster World IV (World) (Action Replay)
+game_key=monster_world_iv_world_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ffda80	pickup	0xFFDA80	1	uint	little	prev != curr	0.8	1	right:0.250:18

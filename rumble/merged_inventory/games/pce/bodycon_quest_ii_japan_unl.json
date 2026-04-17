@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "bodyconquestii",
+  "display_name": "Bodycon Quest II (Japan) (Unl)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Bodycon Quest II (Japan) (Unl).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f08fe:ff",
+          "desc": "Infinite HP",
+          "address": "0x1F08FE"
+        },
+        {
+          "code": "1f08ff:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F08FF"
+        },
+        {
+          "code": "1f0900:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F0900"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

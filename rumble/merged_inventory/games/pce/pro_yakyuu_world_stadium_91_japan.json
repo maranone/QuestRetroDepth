@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "proyakyuuworldstadium91",
+  "display_name": "Pro Yakyuu World Stadium '91 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Pro Yakyuu World Stadium '91 (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f0118:63",
+          "desc": "P1 Scores x99",
+          "address": "0x1F0118"
+        },
+        {
+          "code": "1f0119:00",
+          "desc": "CPU/P2 Never Scores",
+          "address": "0x1F0119"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

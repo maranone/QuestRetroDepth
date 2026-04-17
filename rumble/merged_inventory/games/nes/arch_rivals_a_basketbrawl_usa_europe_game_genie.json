@@ -1,0 +1,42 @@
+{
+  "system": "nes",
+  "normalized_title": "archrivalsbasketbrawl",
+  "display_name": "Arch Rivals - A Basketbrawl! (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Arch Rivals - A Basketbrawl! (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Arch Rivals - A Basketbrawl! (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "AVNPLAAZ",
+          "desc": "Run Faster Without Ball",
+          "address": "0x006B"
+        },
+        {
+          "code": "ATVPAPAZ",
+          "desc": "Run Faster Without Ball",
+          "address": "0x0168"
+        },
+        {
+          "code": "IXVOPAGA",
+          "desc": "Super Speed",
+          "address": "0x00A9"
+        },
+        {
+          "code": "IZSPGPGA",
+          "desc": "Super Speed",
+          "address": "0x012C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

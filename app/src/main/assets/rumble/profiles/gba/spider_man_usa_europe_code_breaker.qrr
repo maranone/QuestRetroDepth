@@ -1,0 +1,10 @@
+game_name=Spider-Man (USA, Europe) (Code Breaker)
+game_key=spider_man_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_02025f98	score	0x02025F98	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02025f9a	score	0x02025F9A	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	damage_taken_health_02026098	damage_taken	0x02026098	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02026098	death	0x02026098	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_0202a588	life_lost	0x0202A588	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0202a588	life_gained	0x0202A588	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

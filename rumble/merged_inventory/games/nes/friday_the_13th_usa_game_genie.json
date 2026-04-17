@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "friday13th",
+  "display_name": "Friday the 13th (USA) (Game Genie)",
+  "aliases": [
+    "Friday the 13th (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Friday the 13th (USA).cht",
+      "total_cheat_rows": 78,
+      "raw_entry_count": 34,
+      "distinct_address_count": 27,
+      "sample_raw_entries": [
+        {
+          "code": "0505:20",
+          "desc": "Infinite HP",
+          "address": "0x0505"
+        },
+        {
+          "code": "058D:09",
+          "desc": "Friend Die Time",
+          "address": "0x058D"
+        },
+        {
+          "code": "0506:00",
+          "desc": "Set Weapon Modifier",
+          "address": "0x0506"
+        },
+        {
+          "code": "0507:00",
+          "desc": "Set Character Modifier",
+          "address": "0x0507"
+        },
+        {
+          "code": "0508:00",
+          "desc": "Set Time of Day Modifier",
+          "address": "0x0508"
+        },
+        {
+          "code": "0517:01",
+          "desc": "Set Lighter &quot;Torch&quot;",
+          "address": "0x0517"
+        },
+        {
+          "code": "0518:01",
+          "desc": "Set Flashlight",
+          "address": "0x0518"
+        },
+        {
+          "code": "0519:09",
+          "desc": "Set Infinite Medicine[9]",
+          "address": "0x0519"
+        },
+        {
+          "code": "051A:01",
+          "desc": "Set Key",
+          "address": "0x051A"
+        },
+        {
+          "code": "051B:03",
+          "desc": "Set Powered Character",
+          "address": "0x051B"
+        },
+        {
+          "code": "051C:01",
+          "desc": "Jason only has one health bar left",
+          "address": "0x051C"
+        },
+        {
+          "code": "0504:05",
+          "desc": "Infinite Children",
+          "address": "0x0504"
+        },
+        {
+          "code": "0488:03",
+          "desc": "Invincibility",
+          "address": "0x0488"
+        },
+        {
+          "code": "IEVANTPA",
+          "desc": "Start with 55 children",
+          "address": "0x060F"
+        },
+        {
+          "code": "YUNESVYA",
+          "desc": "Start with 55 children",
+          "address": "0x06BD"
+        },
+        {
+          "code": "OUSESTOP",
+          "desc": "Start with and Keep a Weapon",
+          "address": "0x06BD"
+        },
+        {
+          "code": "AAEAXYLA",
+          "desc": "Start with and Keep a Weapon",
+          "address": "0x070A"
+        },
+        {
+          "code": "TZZOPE",
+          "desc": "Jump And The Screen Freezes",
+          "address": "0x00A1"
+        },
+        {
+          "code": "SIZESO",
+          "desc": "No Energy Is Shown For Active Counsellor (However They Can Still Die)",
+          "address": "0x01D5"
+        },
+        {
+          "code": "SAGEYN",
+          "desc": "Changes Colour Of Some Items And Background",
+          "address": "0x0787"
+        },
+        {
+          "code": "ITPAYY",
+          "desc": "Active Counsellor Is Pink",
+          "address": "0x0767"
+        },
+        {
+          "code": "AVGANY",
+          "desc": "Active Counsellor Cannot Move To The Right And Time Is Misplaced",
+          "address": "0x0767"
+        },
+        {
+          "code": "PPPAIN",
+          "desc": "Active Counsellor Is Grey And Changes Colour When Leaving A Cabin Or After Pressing Start",
+          "address": "0x0715"
+        },
+        {
+          "code": "ANGELS",
+          "desc": "Glitch Backgrounds 2",
+          "address": "0x05F3"
+        },
+        {
+          "code": "INAOVE",
+          "desc": "What Time Of Day It Is Modifier",
+          "address": "0x00F6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

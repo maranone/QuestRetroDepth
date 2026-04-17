@@ -1,0 +1,119 @@
+{
+  "schema": "qrd.rumble.nes.v1",
+  "game": {
+    "name": "Xenophobe",
+    "system": "nes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\Xenophobe-Nes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "Xenophobe-Nes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_health_0750",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x0750",
+          "size": 4,
+          "value_type": "nibble",
+          "byte_order": "big",
+          "raw_type": ">n4",
+          "address": "0x0750",
+          "ram_offset": 1872
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0x0750",
+          "raw_type": ">n4"
+        }
+      ]
+    },
+    {
+      "id": "death_health_0750",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0x0750",
+          "size": 4,
+          "value_type": "nibble",
+          "byte_order": "big",
+          "raw_type": ">n4",
+          "address": "0x0750",
+          "ram_offset": 1872
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0x0750",
+          "raw_type": ">n4"
+        }
+      ]
+    },
+    {
+      "id": "score_score_0760",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x0760",
+          "size": 6,
+          "value_type": "nibble",
+          "byte_order": "big",
+          "raw_type": ">n6",
+          "address": "0x0760",
+          "ram_offset": 1888
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0x0760",
+          "raw_type": ">n6"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

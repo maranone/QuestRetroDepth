@@ -1,0 +1,14 @@
+game_name=Dungeons _ Dragons - Warriors of the Eternal Sun (USA, Europe) (Action Replay)
+game_key=dungeons_dragons_warriors_of_the_eternal_sun_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff10c6	pickup	0xFF10C6	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_ff9152	damage_taken	0xFF9152	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff9152	death	0xFF9152	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff9154	damage_taken	0xFF9154	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff9154	death	0xFF9154	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_ff9159	pickup	0xFF9159	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff915a	pickup	0xFF915A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff915b	pickup	0xFF915B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff915c	pickup	0xFF915C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff915d	pickup	0xFF915D	1	uint	little	prev != curr	0.8	1	right:0.250:18

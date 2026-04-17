@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "clashatdemonhead",
+  "display_name": "Clash at Demonhead (USA) (Game Genie)",
+  "aliases": [
+    "Clash at Demonhead (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Clash at Demonhead (USA).cht",
+      "total_cheat_rows": 44,
+      "raw_entry_count": 34,
+      "distinct_address_count": 31,
+      "sample_raw_entries": [
+        {
+          "code": "SXNEXVVK",
+          "desc": "Infinite Ammo For Rolling Star, Powerball, And Thundershot",
+          "address": "0x06AA"
+        },
+        {
+          "code": "009F:10",
+          "desc": "Infinite Energy",
+          "address": "0x009F"
+        },
+        {
+          "code": "ENOPLZEI",
+          "desc": "Invincibility",
+          "address": "0x027B"
+        },
+        {
+          "code": "ESSPPAEY",
+          "desc": "Invincibility",
+          "address": "0x0059"
+        },
+        {
+          "code": "ZAOEUYGA",
+          "desc": "Your bullets move slower.",
+          "address": "0x078B"
+        },
+        {
+          "code": "AAOEUYGE",
+          "desc": "Your bullets move faster.",
+          "address": "0x078B"
+        },
+        {
+          "code": "GAOEUYGE",
+          "desc": "Your bullets move much faster (and sometimes continue from opposite side of screen).",
+          "address": "0x078B"
+        },
+        {
+          "code": "XTVAPESX",
+          "desc": "Jump in Midair",
+          "address": "0x0069"
+        },
+        {
+          "code": "GZVAZEZZ",
+          "desc": "Jump in Midair",
+          "address": "0x002A"
+        },
+        {
+          "code": "AZVALAIE",
+          "desc": "Jump in Midair",
+          "address": "0x002B"
+        },
+        {
+          "code": "EYVAGAEI",
+          "desc": "Jump in Midair",
+          "address": "0x007C"
+        },
+        {
+          "code": "0578:80",
+          "desc": "Invincibility",
+          "address": "0x0578"
+        },
+        {
+          "code": "009F:33",
+          "desc": "Infinite Health",
+          "address": "0x009F"
+        },
+        {
+          "code": "05B9:00",
+          "desc": "Route Select",
+          "address": "0x05B9"
+        },
+        {
+          "code": "009B:20",
+          "desc": "Infinite Money",
+          "address": "0x009B"
+        },
+        {
+          "code": "0532:FF",
+          "desc": "Infinite Air (Aqua Lung)",
+          "address": "0x0532"
+        },
+        {
+          "code": "04E7:03",
+          "desc": "Infinite Barrier",
+          "address": "0x04E7"
+        },
+        {
+          "code": "04E8:03",
+          "desc": "Infinite Rolling Star",
+          "address": "0x04E8"
+        },
+        {
+          "code": "04E9:03",
+          "desc": "Infinite PowerBall",
+          "address": "0x04E9"
+        },
+        {
+          "code": "04EA:03",
+          "desc": "Infinite ThunderShot",
+          "address": "0x04EA"
+        },
+        {
+          "code": "04EB:03",
+          "desc": "Infinite Shop Call",
+          "address": "0x04EB"
+        },
+        {
+          "code": "04EC:03",
+          "desc": "Infinite Power Boots",
+          "address": "0x04EC"
+        },
+        {
+          "code": "04ED:03",
+          "desc": "Infinite Jet Pak",
+          "address": "0x04ED"
+        },
+        {
+          "code": "04EE:03",
+          "desc": "Infinite Aqua Lung",
+          "address": "0x04EE"
+        },
+        {
+          "code": "04EF:03",
+          "desc": "Infinite Super Suit",
+          "address": "0x04EF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

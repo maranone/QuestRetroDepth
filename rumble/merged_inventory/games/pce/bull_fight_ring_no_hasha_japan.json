@@ -1,0 +1,75 @@
+{
+  "system": "pce",
+  "normalized_title": "bullfightringnohasha",
+  "display_name": "Bull Fight - Ring no Hasha (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Bull Fight - Ring no Hasha (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "1f07a1:48",
+          "desc": "Player 1 Infinite Energy",
+          "address": "0x1F07A1"
+        },
+        {
+          "code": "1f0792:00",
+          "desc": "Player 1 1-Hit for Knockdown",
+          "address": "0x1F0792"
+        },
+        {
+          "code": "1f02b5:03",
+          "desc": "Player 1 1-Hit for TKO",
+          "address": "0x1F02B5"
+        },
+        {
+          "code": "1f0925:63",
+          "desc": "Player 1 Max POW",
+          "address": "0x1F0925"
+        },
+        {
+          "code": "1f0927:63",
+          "desc": "Player 1 Max STA",
+          "address": "0x1F0927"
+        },
+        {
+          "code": "1f0929:63",
+          "desc": "Player 1 Max SPD",
+          "address": "0x1F0929"
+        },
+        {
+          "code": "1f092b:63",
+          "desc": "Player 1 Max TEC",
+          "address": "0x1F092B"
+        },
+        {
+          "code": "1f0926:00",
+          "desc": "CPU/Player 2 No POW",
+          "address": "0x1F0926"
+        },
+        {
+          "code": "1f0928:00",
+          "desc": "CPU/Player 2 No STA",
+          "address": "0x1F0928"
+        },
+        {
+          "code": "1f092a:00",
+          "desc": "CPU/Player 2 No SPD",
+          "address": "0x1F092A"
+        },
+        {
+          "code": "1f092c:00",
+          "desc": "CPU/Player 2 No TEC",
+          "address": "0x1F092C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

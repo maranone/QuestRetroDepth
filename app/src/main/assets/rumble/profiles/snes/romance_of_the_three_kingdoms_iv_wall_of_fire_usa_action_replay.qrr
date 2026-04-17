@@ -1,0 +1,13 @@
+game_name=Romance of the Three Kingdoms IV - Wall of Fire (USA) (Action Replay)
+game_key=romance_of_the_three_kingdoms_iv_wall_of_fire_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_b490	pickup	0x7EB490	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_b491	pickup	0x7EB491	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_b286	pickup	0x7EB286	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_b287	pickup	0x7EB287	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_b07c	pickup	0x7EB07C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_b07d	pickup	0x7EB07D	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_bc61	pickup	0x7EBC61	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_bc62	pickup	0x7EBC62	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_b439	pickup	0x7EB439	1	uint	little	prev != curr	0.8	1	right:0.250:18

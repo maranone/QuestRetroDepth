@@ -1,0 +1,13 @@
+game_name=Heracles no Eikou - Toujin Makyou Den (Japan)
+game_key=heracles_no_eikou_toujin_makyou_den_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0072	damage_taken	0x0072	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0072	death	0x0072	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_007d	pickup	0x007D	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_007e	pickup	0x007E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_007b	damage_taken	0x007B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_007b	death	0x007B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_0076	level_complete	0x0076	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0077	level_complete	0x0077	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_0499	enemy_defeated	0x0499	1	uint	little	prev > curr	0.65	1	right:0.450:35

@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "disneysportsskateboarding",
+  "display_name": "Disney Sports - Skateboarding (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Disney Sports - Skateboarding (World) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "72006044",
+          "desc": "Start With 50,000 Points",
+          "address": "0x02006044"
+        },
+        {
+          "code": "82006044",
+          "desc": "Start With 50,000 Points",
+          "address": "0x02006044"
+        },
+        {
+          "code": "82005FB8",
+          "desc": "Stop Timer",
+          "address": "0x02005FB8"
+        },
+        {
+          "code": "3200C939",
+          "desc": "Max Chance Gauge",
+          "address": "0x0200C939"
+        },
+        {
+          "code": "42005FDA",
+          "desc": "Max Items",
+          "address": "0x02005FDA"
+        },
+        {
+          "code": "420068D0",
+          "desc": "All Tricks",
+          "address": "0x020068D0"
+        },
+        {
+          "code": "32008334",
+          "desc": "All Stages",
+          "address": "0x02008334"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+L To Complete Stage",
+          "address": "0x02000130"
+        },
+        {
+          "code": "32005FBE",
+          "desc": "Press Select+L To Complete Stage",
+          "address": "0x02005FBE"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Disney Sports - Skateboarding (World) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "72006044",
+          "desc": "Start With 50,000 Points",
+          "address": "0x02006044"
+        },
+        {
+          "code": "82006044",
+          "desc": "Start With 50,000 Points",
+          "address": "0x02006044"
+        },
+        {
+          "code": "82005FB8",
+          "desc": "Stop Timer",
+          "address": "0x02005FB8"
+        },
+        {
+          "code": "3200C939",
+          "desc": "Max Chance Gauge",
+          "address": "0x0200C939"
+        },
+        {
+          "code": "42005FDA",
+          "desc": "Max Items",
+          "address": "0x02005FDA"
+        },
+        {
+          "code": "420068D0",
+          "desc": "All Tricks",
+          "address": "0x020068D0"
+        },
+        {
+          "code": "32008334",
+          "desc": "All Stages",
+          "address": "0x02008334"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+L To Complete Stage",
+          "address": "0x02000130"
+        },
+        {
+          "code": "32005FBE",
+          "desc": "Press Select+L To Complete Stage",
+          "address": "0x02005FBE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

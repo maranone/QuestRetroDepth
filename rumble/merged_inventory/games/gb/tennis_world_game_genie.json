@@ -1,0 +1,38 @@
+{
+  "system": "gb",
+  "normalized_title": "tennis",
+  "display_name": "Tennis (World) (Game Genie)",
+  "aliases": [
+    "Tennis (World) (GameShark)",
+    "Tennis (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Tennis (World).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0104DDC0",
+          "desc": "P1 Has 40 Points",
+          "address": "0xDDC0"
+        },
+        {
+          "code": "0101DDC0",
+          "desc": "Player 1 1-Point Win",
+          "address": "0xDDC0"
+        },
+        {
+          "code": "0100DEC0",
+          "desc": "Player 2 1-Point Win",
+          "address": "0xDEC0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

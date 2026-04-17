@@ -1,0 +1,47 @@
+{
+  "system": "gb",
+  "normalized_title": "navyseals",
+  "display_name": "Navy SEALs (USA, Europe) (GameShark)",
+  "aliases": [
+    "Navy SEALs (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Navy SEALs (USA, Europe).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0109C2C3",
+          "desc": "Infinite Lives",
+          "address": "0xC2C3"
+        },
+        {
+          "code": "0103C3C3",
+          "desc": "Infinite Snipers",
+          "address": "0xC3C3"
+        },
+        {
+          "code": "0100CCC7",
+          "desc": "Amount of Hits It Takes To Kill Enemies",
+          "address": "0xCCC7"
+        },
+        {
+          "code": "011CC2C7",
+          "desc": "Enemies Cannot Come Through Doors And Some Enemies Are Froxen In Place",
+          "address": "0xC2C7"
+        },
+        {
+          "code": "0150CDC4",
+          "desc": "Freeze Character",
+          "address": "0xCDC4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "californiagames",
+  "display_name": "California Games (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\California Games (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0052:FF",
+          "desc": "Infinite Time (Half Pipe, Foot Bag, Surfing, BMX)",
+          "address": "0x0052"
+        },
+        {
+          "code": "0413:5F",
+          "desc": "High Score (Foot Bag, Skating, BMX, Flying Disc - Thousands and Hundreds Digits)",
+          "address": "0x0413"
+        },
+        {
+          "code": "0414:7A",
+          "desc": "High Score (Foot Bag, Skating, BMX, Flying Disc - Tens and Ones Digits)",
+          "address": "0x0414"
+        },
+        {
+          "code": "AANEUZLA",
+          "desc": "Skip Intro Screen",
+          "address": "0x028B"
+        },
+        {
+          "code": "SZSAEGVG",
+          "desc": "Infinite Timer",
+          "address": "0x0428"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

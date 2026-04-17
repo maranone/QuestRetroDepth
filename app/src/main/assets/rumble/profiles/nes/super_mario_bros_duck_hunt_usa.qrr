@@ -1,0 +1,10 @@
+game_name=Super Mario Bros. + Duck Hunt (USA)
+game_key=super_mario_bros_duck_hunt_usa
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_00ba	pickup	0x00BA	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_00d1	level_complete	0x00D1	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0082	level_complete	0x0082	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0484	level_complete	0x0484	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_0045	enemy_defeated	0x0045	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	level_complete_level_05e2	level_complete	0x05E2	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

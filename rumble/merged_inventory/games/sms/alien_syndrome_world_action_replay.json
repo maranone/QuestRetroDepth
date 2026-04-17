@@ -1,0 +1,58 @@
+{
+  "system": "sms",
+  "normalized_title": "aliensyndrome",
+  "display_name": "Alien Syndrome (World) (Action Replay)",
+  "aliases": [
+    "Alien Syndrome (USA, Europe, Brazil)",
+    "Alien Syndrome (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\aliensyndrome_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xC02C",
+        "0xC054"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AlienSyndrome-Sms-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "hostages_remaining",
+          "address": "0xC075",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xC054",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xC02C",
+          "type": ">n7"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Alien Syndrome (World) (Action Replay).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

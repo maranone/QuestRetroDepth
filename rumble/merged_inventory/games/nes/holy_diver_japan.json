@@ -1,0 +1,115 @@
+{
+  "system": "nes",
+  "normalized_title": "holydiver",
+  "display_name": "Holy Diver (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Holy Diver (Japan).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 19,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "0440:06",
+          "desc": "Infinite Health",
+          "address": "0x0440"
+        },
+        {
+          "code": "042F:0E",
+          "desc": "Set Max. Health Units",
+          "address": "0x042F"
+        },
+        {
+          "code": "048F:03",
+          "desc": "Infinite Lives",
+          "address": "0x048F"
+        },
+        {
+          "code": "0057:03",
+          "desc": "Invincibility",
+          "address": "0x0057"
+        },
+        {
+          "code": "0490:FA",
+          "desc": "Infinite Magic",
+          "address": "0x0490"
+        },
+        {
+          "code": "0064:FA",
+          "desc": "Set All Items",
+          "address": "0x0064"
+        },
+        {
+          "code": "0065:FA",
+          "desc": "Set All Items",
+          "address": "0x0065"
+        },
+        {
+          "code": "0446:00",
+          "desc": "Defeat Most Bosses With 1 Hit",
+          "address": "0x0446"
+        },
+        {
+          "code": "0066:00",
+          "desc": "Stage Select",
+          "address": "0x0066"
+        },
+        {
+          "code": "00DD:00",
+          "desc": "Character Palette Modifiers",
+          "address": "0x00DD"
+        },
+        {
+          "code": "00DE:00",
+          "desc": "Character Palette Modifiers",
+          "address": "0x00DE"
+        },
+        {
+          "code": "00DF:00",
+          "desc": "Character Palette Modifiers",
+          "address": "0x00DF"
+        },
+        {
+          "code": "0420:05",
+          "desc": "Moon Jump (Hold Jump)",
+          "address": "0x0420"
+        },
+        {
+          "code": "0447:00",
+          "desc": "One Hit Kills Regular Enemies",
+          "address": "0x0447"
+        },
+        {
+          "code": "0448:00",
+          "desc": "One Hit Kills Regular Enemies",
+          "address": "0x0448"
+        },
+        {
+          "code": "0449:00",
+          "desc": "One Hit Kills Regular Enemies",
+          "address": "0x0449"
+        },
+        {
+          "code": "044A:00",
+          "desc": "One Hit Kills Regular Enemies",
+          "address": "0x044A"
+        },
+        {
+          "code": "044B:00",
+          "desc": "One Hit Kills Regular Enemies",
+          "address": "0x044B"
+        },
+        {
+          "code": "0460:09",
+          "desc": "Fix Invincibility Flash",
+          "address": "0x0460"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

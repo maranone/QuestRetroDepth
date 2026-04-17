@@ -1,0 +1,6 @@
+game_name=Bakukyuu Renpatsu!! Super B-Daman (Japan)
+game_key=bakukyuu_renpatsu_super_b_daman_japan
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_1d02	pickup	0x7E1D02	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_1d03	pickup	0x7E1D03	1	uint	little	prev != curr	0.8	1	right:0.250:18

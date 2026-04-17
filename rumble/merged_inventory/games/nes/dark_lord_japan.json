@@ -1,0 +1,145 @@
+{
+  "system": "nes",
+  "normalized_title": "darklord",
+  "display_name": "Dark Lord (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dark Lord (Japan).cht",
+      "total_cheat_rows": 55,
+      "raw_entry_count": 63,
+      "distinct_address_count": 63,
+      "sample_raw_entries": [
+        {
+          "code": "7470:63",
+          "desc": "Level",
+          "address": "0x7470"
+        },
+        {
+          "code": "7471:27",
+          "desc": "Current HP",
+          "address": "0x7471"
+        },
+        {
+          "code": "7472:0F",
+          "desc": "Current HP",
+          "address": "0x7472"
+        },
+        {
+          "code": "747C:27",
+          "desc": "Max HP",
+          "address": "0x747C"
+        },
+        {
+          "code": "747D:0F",
+          "desc": "Max HP",
+          "address": "0x747D"
+        },
+        {
+          "code": "7473:27",
+          "desc": "Current MP",
+          "address": "0x7473"
+        },
+        {
+          "code": "7474:0F",
+          "desc": "Current MP",
+          "address": "0x7474"
+        },
+        {
+          "code": "747E:27",
+          "desc": "Max MP",
+          "address": "0x747E"
+        },
+        {
+          "code": "747F:0F",
+          "desc": "Max MP",
+          "address": "0x747F"
+        },
+        {
+          "code": "7475:63",
+          "desc": "Strenght",
+          "address": "0x7475"
+        },
+        {
+          "code": "7476:63",
+          "desc": "Defense",
+          "address": "0x7476"
+        },
+        {
+          "code": "7477:63",
+          "desc": "Inteligence",
+          "address": "0x7477"
+        },
+        {
+          "code": "7478:63",
+          "desc": "Dexterity",
+          "address": "0x7478"
+        },
+        {
+          "code": "7479:63",
+          "desc": "Agility",
+          "address": "0x7479"
+        },
+        {
+          "code": "747A:63",
+          "desc": "Vitality",
+          "address": "0x747A"
+        },
+        {
+          "code": "747B:63",
+          "desc": "Divinity",
+          "address": "0x747B"
+        },
+        {
+          "code": "7407:11",
+          "desc": "Age",
+          "address": "0x7407"
+        },
+        {
+          "code": "740A:FF",
+          "desc": "Gold",
+          "address": "0x740A"
+        },
+        {
+          "code": "740B:FF",
+          "desc": "Gold",
+          "address": "0x740B"
+        },
+        {
+          "code": "740C:FF",
+          "desc": "Experience",
+          "address": "0x740C"
+        },
+        {
+          "code": "740D:FF",
+          "desc": "Experience",
+          "address": "0x740D"
+        },
+        {
+          "code": "7480:63",
+          "desc": "Level",
+          "address": "0x7480"
+        },
+        {
+          "code": "7481:27",
+          "desc": "Current HP",
+          "address": "0x7481"
+        },
+        {
+          "code": "7482:0F",
+          "desc": "Current HP",
+          "address": "0x7482"
+        },
+        {
+          "code": "748C:27",
+          "desc": "Max HP",
+          "address": "0x748C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

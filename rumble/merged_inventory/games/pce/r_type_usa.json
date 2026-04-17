@@ -1,0 +1,45 @@
+{
+  "system": "pce",
+  "normalized_title": "rtype",
+  "display_name": "R-Type (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\R-Type (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1f0143:09",
+          "desc": "Infinite Credits",
+          "address": "0x1F0143"
+        },
+        {
+          "code": "1f0142:09",
+          "desc": "Infinite Lives",
+          "address": "0x1F0142"
+        },
+        {
+          "code": "1f016f:80",
+          "desc": "Auto Fire (Charged Shot)",
+          "address": "0x1F016F"
+        },
+        {
+          "code": "1f0d81:7b",
+          "desc": "Invulnerability",
+          "address": "0x1F0D81"
+        },
+        {
+          "code": "1f0ac4:00",
+          "desc": "",
+          "address": "0x1F0AC4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

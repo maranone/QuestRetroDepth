@@ -1,0 +1,8 @@
+game_name=Battle Cars (USA) (Action Replay)
+game_key=battle_cars_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_1863	pickup	0x7E1863	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_1864	pickup	0x7E1864	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_1137	damage_taken	0x7E1137	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1137	death	0x7E1137	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

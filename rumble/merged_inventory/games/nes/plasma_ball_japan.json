@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "plasmaball",
+  "display_name": "Plasma Ball (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Plasma Ball (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "015B:03",
+          "desc": "Infinite Attribute Points",
+          "address": "0x015B"
+        },
+        {
+          "code": "0624:C0",
+          "desc": "P1 Infinite Health",
+          "address": "0x0624"
+        },
+        {
+          "code": "0625:08",
+          "desc": "P1 Infinite Special Attacks",
+          "address": "0x0625"
+        },
+        {
+          "code": "0663:01",
+          "desc": "CPU Has No Health",
+          "address": "0x0663"
+        },
+        {
+          "code": "0664:00",
+          "desc": "CPU Has No Special Attacks",
+          "address": "0x0664"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

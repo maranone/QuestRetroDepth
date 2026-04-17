@@ -1,0 +1,25 @@
+{
+  "system": "pce",
+  "normalized_title": "sinistron",
+  "display_name": "Sinistron (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Sinistron (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "1f19f2:0a",
+          "desc": "Infinite Lives",
+          "address": "0x1F19F2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Landstalker (USA) (Action Replay)
+game_key=landstalker_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff543e	damage_taken	0xFF543E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff543e	death	0xFF543E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_ff120e	pickup	0xFF120E	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,10 @@
+game_name=Spyro 2 - Season of Flame (USA, Europe) (Code Breaker)
+game_key=spyro_2_season_of_flame_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_020043c4	damage_taken	0x020043C4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020043c4	death	0x020043C4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_02001c5e	life_lost	0x02001C5E	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02001c5e	life_gained	0x02001C5E	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_0200443c	damage_taken	0x0200443C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0200443c	death	0x0200443C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

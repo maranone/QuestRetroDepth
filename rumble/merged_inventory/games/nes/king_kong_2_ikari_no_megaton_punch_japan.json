@@ -1,0 +1,80 @@
+{
+  "system": "nes",
+  "normalized_title": "kingkong2ikarinomegatonpunch",
+  "display_name": "King Kong 2 - Ikari no Megaton Punch (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\King Kong 2 - Ikari no Megaton Punch (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "07E9:00",
+          "desc": "Hour Modifier",
+          "address": "0x07E9"
+        },
+        {
+          "code": "0062:99",
+          "desc": "Infinite Life",
+          "address": "0x0062"
+        },
+        {
+          "code": "0063:09",
+          "desc": "Infinite Life",
+          "address": "0x0063"
+        },
+        {
+          "code": "0066:99",
+          "desc": "Max Life",
+          "address": "0x0066"
+        },
+        {
+          "code": "0067:09",
+          "desc": "Max Life",
+          "address": "0x0067"
+        },
+        {
+          "code": "0035:09",
+          "desc": "Infinite Lives",
+          "address": "0x0035"
+        },
+        {
+          "code": "0547:99",
+          "desc": "Infinite Rocks",
+          "address": "0x0547"
+        },
+        {
+          "code": "054A:99",
+          "desc": "Max Rocks",
+          "address": "0x054A"
+        },
+        {
+          "code": "0054:09",
+          "desc": "Infinite Keys",
+          "address": "0x0054"
+        },
+        {
+          "code": "054C:FF",
+          "desc": "Invincibilty",
+          "address": "0x054C"
+        },
+        {
+          "code": "SZVEPSSE",
+          "desc": "Infinite Rocks",
+          "address": "0x05A9"
+        },
+        {
+          "code": "AEXENNZA",
+          "desc": "Invulnerability",
+          "address": "0x078F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

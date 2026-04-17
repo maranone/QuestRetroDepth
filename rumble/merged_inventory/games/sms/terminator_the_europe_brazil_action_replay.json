@@ -1,0 +1,53 @@
+{
+  "system": "sms",
+  "normalized_title": "terminator",
+  "display_name": "Terminator, The (Europe, Brazil) (Action Replay)",
+  "aliases": [
+    "Terminator, The (Europe)",
+    "Terminator, The (Europe, Brazil) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\terminator_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xCF0C",
+        "0xCF81"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Terminator-Sms-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xCF81",
+          "type": ">n3"
+        },
+        {
+          "name": "score",
+          "address": "0xCF0C",
+          "type": ">n7"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Terminator, The (Europe, Brazil) (Action Replay).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

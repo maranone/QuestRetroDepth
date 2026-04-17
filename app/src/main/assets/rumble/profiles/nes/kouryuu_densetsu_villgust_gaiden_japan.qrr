@@ -1,0 +1,22 @@
+game_name=Kouryuu Densetsu Villgust Gaiden (Japan)
+game_key=kouryuu_densetsu_villgust_gaiden_japan
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_048a	pickup	0x048A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_048b	pickup	0x048B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_0201	level_complete	0x0201	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_0202	damage_taken	0x0202	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0202	death	0x0202	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02c2	damage_taken	0x02C2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02c2	death	0x02C2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02e2	damage_taken	0x02E2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02e2	death	0x02E2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_04ca	enemy_defeated	0x04CA	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_0222	damage_taken	0x0222	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0222	death	0x0222	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0242	damage_taken	0x0242	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0242	death	0x0242	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0262	damage_taken	0x0262	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0262	death	0x0262	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0282	damage_taken	0x0282	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0282	death	0x0282	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

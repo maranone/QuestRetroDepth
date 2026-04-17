@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "orb3d",
+  "display_name": "Orb-3D (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Orb-3D (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "03FD:50",
+          "desc": "Infinite Fuel",
+          "address": "0x03FD"
+        },
+        {
+          "code": "03C6:01",
+          "desc": "Only Need To Eliminate One Object On Most Of The Levels",
+          "address": "0x03C6"
+        },
+        {
+          "code": "03E2:00",
+          "desc": "Level Select",
+          "address": "0x03E2"
+        },
+        {
+          "code": "03FD:55",
+          "desc": "Infinite Fuel P1",
+          "address": "0x03FD"
+        },
+        {
+          "code": "0468:FF",
+          "desc": "Max Bonus Time",
+          "address": "0x0468"
+        },
+        {
+          "code": "0469:FF",
+          "desc": "Max Bonus Time",
+          "address": "0x0469"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

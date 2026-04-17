@@ -1,0 +1,47 @@
+{
+  "system": "nes",
+  "normalized_title": "rallybike",
+  "display_name": "Rally Bike (USA) (Game Genie)",
+  "aliases": [
+    "Rally Bike (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rally Bike (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0008:03",
+          "desc": "Invincibility",
+          "address": "0x0008"
+        },
+        {
+          "code": "0337:FF",
+          "desc": "Go A Lot Faster Than Normal P1",
+          "address": "0x0337"
+        },
+        {
+          "code": "0339:FF",
+          "desc": "Go A Lot Faster Than Normal P1",
+          "address": "0x0339"
+        },
+        {
+          "code": "0338:01",
+          "desc": "Always Rank #1 P1",
+          "address": "0x0338"
+        },
+        {
+          "code": "042F:00",
+          "desc": "Never Lose Lives (Infinite Lives)",
+          "address": "0x042F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

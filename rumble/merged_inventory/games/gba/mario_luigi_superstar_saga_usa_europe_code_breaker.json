@@ -1,0 +1,40 @@
+{
+  "system": "gba",
+  "normalized_title": "marioluigisuperstarsaga",
+  "display_name": "Mario _ Luigi - Superstar Saga (USA, Europe) (Code Breaker)",
+  "aliases": [
+    "Mario _ Luigi - Superstar Saga (USA, Europe) (Gameshark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Mario _ Luigi - Superstar Saga (USA, Europe) (Gameshark).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "5803D20D",
+          "desc": "Unlimited Health (During Battle)",
+          "address": "0x0203D20D"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Mario _ Luigi - Superstar Saga (USA, Europe) (Gameshark).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "5803D20D",
+          "desc": "Unlimited Health (During Battle)",
+          "address": "0x0203D20D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

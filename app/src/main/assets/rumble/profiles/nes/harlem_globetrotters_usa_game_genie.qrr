@@ -1,0 +1,8 @@
+game_name=Harlem Globetrotters (USA) (Game Genie)
+game_key=harlem_globetrotters_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	score_score_0587	score	0x0587	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0586	score	0x0586	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0583	score	0x0583	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0584	score	0x0584	1	uint	little	prev < curr	0.8	1	right:0.350:60

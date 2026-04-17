@@ -1,0 +1,95 @@
+{
+  "system": "nes",
+  "normalized_title": "metalforce",
+  "display_name": "Metal Force (Korea) (Unl)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Metal Force (Korea) (Unl).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "PANEILLE",
+          "desc": "Start With 9 Lives",
+          "address": "0x038D"
+        },
+        {
+          "code": "PANEALAE",
+          "desc": "Start With 99 Lives",
+          "address": "0x0388"
+        },
+        {
+          "code": "PANEILLE",
+          "desc": "Start With 99 Lives",
+          "address": "0x038D"
+        },
+        {
+          "code": "PANAALAE",
+          "desc": "Start With 99 Continues",
+          "address": "0x0308"
+        },
+        {
+          "code": "ZEOAPLAA",
+          "desc": "Start With Max Weapon Power",
+          "address": "0x0309"
+        },
+        {
+          "code": "031C:10",
+          "desc": "Infinite Energy",
+          "address": "0x031C"
+        },
+        {
+          "code": "031B:09",
+          "desc": "Infinite Lives",
+          "address": "0x031B"
+        },
+        {
+          "code": "031A:09",
+          "desc": "Infinite Lives",
+          "address": "0x031A"
+        },
+        {
+          "code": "03A4:00",
+          "desc": "Weapon Modifier",
+          "address": "0x03A4"
+        },
+        {
+          "code": "0317:09",
+          "desc": "Infinite Continues",
+          "address": "0x0317"
+        },
+        {
+          "code": "0316:09",
+          "desc": "Infinite Continues",
+          "address": "0x0316"
+        },
+        {
+          "code": "03A5:02",
+          "desc": "Max Weapon Power",
+          "address": "0x03A5"
+        },
+        {
+          "code": "0370:01",
+          "desc": "Mission Modifier",
+          "address": "0x0370"
+        },
+        {
+          "code": "AONPTYAA",
+          "desc": "Infinite Energy",
+          "address": "0x071E"
+        },
+        {
+          "code": "GONOLYZE",
+          "desc": "Infinite Energy",
+          "address": "0x079B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "starvoyager",
+  "display_name": "Star Voyager (USA) (Game Genie)",
+  "aliases": [
+    "Star Voyager (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Star Voyager (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "007D:0A",
+          "desc": "Invincible",
+          "address": "0x007D"
+        },
+        {
+          "code": "007E:13",
+          "desc": "Infinite Weapons",
+          "address": "0x007E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

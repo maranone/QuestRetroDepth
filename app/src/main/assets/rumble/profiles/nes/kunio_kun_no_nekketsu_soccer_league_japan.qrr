@@ -1,0 +1,6 @@
+game_name=Kunio-kun no Nekketsu Soccer League (Japan)
+game_key=kunio_kun_no_nekketsu_soccer_league_japan
+system=nes
+integration_tier=contrib
+trigger	score_score_052e	score	0x052E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_052f	score	0x052F	1	uint	little	prev < curr	0.8	1	right:0.350:60

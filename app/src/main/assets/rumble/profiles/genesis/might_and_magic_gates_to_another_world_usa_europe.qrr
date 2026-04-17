@@ -1,0 +1,11 @@
+game_name=Might and Magic - Gates to Another World (USA, Europe)
+game_key=might_and_magic_gates_to_another_world_usa_europe
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ffcea6	pickup	0xFFCEA6	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffcea8	pickup	0xFFCEA8	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_ffce9e	damage_taken	0xFFCE9E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffce9e	death	0xFFCE9E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffceb4	damage_taken	0xFFCEB4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffceb4	death	0xFFCEB4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_ffceb0	level_complete	0xFFCEB0	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

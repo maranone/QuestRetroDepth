@@ -1,0 +1,15 @@
+game_name=IronSword - Wizards _ Warriors II (USA, Europe) (Game Genie)
+game_key=ironsword_wizards_warriors_ii_usa_europe_game_genie
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_002f	life_lost	0x002F	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_002f	life_gained	0x002F	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_0088	damage_taken	0x0088	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0088	death	0x0088	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_010f	damage_taken	0x010F	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_010f	death	0x010F	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020e	damage_taken	0x020E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020e	death	0x020E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_0289	level_complete	0x0289	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0299	level_complete	0x0299	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_02b9	level_complete	0x02B9	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

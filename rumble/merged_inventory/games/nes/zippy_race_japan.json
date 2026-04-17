@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "zippyrace",
+  "display_name": "Zippy Race (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Zippy Race (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "0021:1C",
+          "desc": "Infinite Fuel",
+          "address": "0x0021"
+        },
+        {
+          "code": "SZSPNIVG",
+          "desc": "Infinite Fuel",
+          "address": "0x052F"
+        },
+        {
+          "code": "AEEEGZGA",
+          "desc": "Infinite Fuel",
+          "address": "0x028C"
+        },
+        {
+          "code": "ZEEEGZGA",
+          "desc": "Lose Less Fuel after Dying",
+          "address": "0x028C"
+        },
+        {
+          "code": "PEEEGZGA",
+          "desc": "Lose Even Less Fuel after Dying",
+          "address": "0x028C"
+        },
+        {
+          "code": "AESPOTEA",
+          "desc": "Invincibility",
+          "address": "0x0609"
+        },
+        {
+          "code": "AEEOOTXA",
+          "desc": "Invincibility",
+          "address": "0x0689"
+        },
+        {
+          "code": "SZIPNI",
+          "desc": "Infinite Fuel",
+          "address": "0x0527"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

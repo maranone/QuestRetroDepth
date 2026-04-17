@@ -1,0 +1,12 @@
+game_name=Volguard II (Japan)
+game_key=VolguardII-Nes
+system=nes
+integration_tier=stable
+trigger	score_score0_00ff	score	0x00FF	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_00fe	score	0x00FE	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_00fd	score	0x00FD	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score3_00fc	score	0x00FC	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score4_00fb	score	0x00FB	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score5_00fa	score	0x00FA	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score6_00f9	score	0x00F9	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score7_00f8	score	0x00F8	1	uint	native	prev < curr	0.8	1	right:0.350:60

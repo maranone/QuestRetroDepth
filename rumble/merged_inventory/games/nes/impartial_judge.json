@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "impartialjudge",
+  "display_name": "Impartial Judge",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Impartial Judge.cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "00A5:01",
+          "desc": "Infinite Energy P1",
+          "address": "0x00A5"
+        },
+        {
+          "code": "00A6:60",
+          "desc": "No Health P2",
+          "address": "0x00A6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

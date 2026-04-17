@@ -1,0 +1,6 @@
+game_name=Street Jam Basketball (USA, Europe) (Code Breaker)
+game_key=street_jam_basketball_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_02003ac2	score	0x02003AC2	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02003ada	score	0x02003ADA	1	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,63 @@
+{
+  "system": "nes",
+  "normalized_title": "skydestroyer",
+  "display_name": "Sky Destroyer (Japan)",
+  "aliases": [
+    "Sky Destroyer (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\skydestroyer_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x002C",
+        "0x0034"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SkyDestroyer-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x002C",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0034",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Sky Destroyer (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "002C:02",
+          "desc": "Infinite Lives",
+          "address": "0x002C"
+        },
+        {
+          "code": "0076:00",
+          "desc": "Invincibility",
+          "address": "0x0076"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

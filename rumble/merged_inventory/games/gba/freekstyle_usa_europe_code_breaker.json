@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "freekstyle",
+  "display_name": "Freekstyle (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Freekstyle (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1002EDC8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202EDC8"
+        },
+        {
+          "code": "83001A58",
+          "desc": "Always Have 1st Place",
+          "address": "0x02001A58"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Freekstyle (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1002EDC8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202EDC8"
+        },
+        {
+          "code": "83001A58",
+          "desc": "Always Have 1st Place",
+          "address": "0x02001A58"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

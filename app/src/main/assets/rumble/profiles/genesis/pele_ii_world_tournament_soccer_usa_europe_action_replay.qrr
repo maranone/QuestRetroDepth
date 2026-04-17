@@ -1,0 +1,7 @@
+game_name=Pele II - World Tournament Soccer (USA, Europe) (Action Replay)
+game_key=pele_ii_world_tournament_soccer_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffeb28	score	0xFFEB28	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_fff0f8	score	0xFFF0F8	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_fff0fa	score	0xFFF0FA	1	uint	little	prev < curr	0.8	1	right:0.350:60

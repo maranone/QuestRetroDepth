@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "shafflefight",
+  "display_name": "Shaffle Fight (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Shaffle Fight (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "069F:00",
+          "desc": "Enemy Health",
+          "address": "0x069F"
+        },
+        {
+          "code": "0688:00",
+          "desc": "Player 1 Health",
+          "address": "0x0688"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

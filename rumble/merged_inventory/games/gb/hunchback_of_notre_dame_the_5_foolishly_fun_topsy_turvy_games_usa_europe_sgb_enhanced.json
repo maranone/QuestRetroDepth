@@ -1,0 +1,35 @@
+{
+  "system": "gb",
+  "normalized_title": "hunchbackofnotredame5foolishlyfuntopsyturvygames",
+  "display_name": "Hunchback of Notre Dame, The - 5 Foolishly Fun Topsy Turvy Games (USA, Europe) (SGB Enhanced)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Hunchback of Notre Dame, The - 5 Foolishly Fun Topsy Turvy Games (USA, Europe) (SGB Enhanced).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "010ED8FF",
+          "desc": "Infinite Balls Right",
+          "address": "0xD8FF"
+        },
+        {
+          "code": "010ED7FF",
+          "desc": "Infinite Balls Left",
+          "address": "0xD7FF"
+        },
+        {
+          "code": "0101CEFF",
+          "desc": "Enable Cheat Mode",
+          "address": "0xCEFF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

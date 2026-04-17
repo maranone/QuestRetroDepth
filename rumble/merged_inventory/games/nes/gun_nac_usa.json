@@ -1,0 +1,178 @@
+{
+  "system": "nes",
+  "normalized_title": "gunnac",
+  "display_name": "Gun Nac (USA)",
+  "aliases": [
+    "Gun Nac (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\gunnac_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00DF",
+        "0x018D"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GunNac-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x018D",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x00DF",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gun Nac (USA).cht",
+      "total_cheat_rows": 60,
+      "raw_entry_count": 38,
+      "distinct_address_count": 28,
+      "sample_raw_entries": [
+        {
+          "code": "018F:04",
+          "desc": "Infinite Bombs",
+          "address": "0x018F"
+        },
+        {
+          "code": "0400:02",
+          "desc": "Invincibility",
+          "address": "0x0400"
+        },
+        {
+          "code": "0180:01",
+          "desc": "Level Select",
+          "address": "0x0180"
+        },
+        {
+          "code": "018D:99",
+          "desc": "Infinite Lives",
+          "address": "0x018D"
+        },
+        {
+          "code": "0033:00",
+          "desc": "Weapon Level",
+          "address": "0x0033"
+        },
+        {
+          "code": "0034:00",
+          "desc": "Weapon Type",
+          "address": "0x0034"
+        },
+        {
+          "code": "003B:00",
+          "desc": "Bomb Power",
+          "address": "0x003B"
+        },
+        {
+          "code": "003C:00",
+          "desc": "Turbo Power",
+          "address": "0x003C"
+        },
+        {
+          "code": "0036:06",
+          "desc": "Have Max Weapon Spread",
+          "address": "0x0036"
+        },
+        {
+          "code": "0037:38",
+          "desc": "Have Max Weapon Spread",
+          "address": "0x0037"
+        },
+        {
+          "code": "PASOKGGE",
+          "desc": "Get 9 Bombs For Free At The Start Of The Game, Instead of 4",
+          "address": "0x048C"
+        },
+        {
+          "code": "IPSOKGGA",
+          "desc": "Get 15 Bombs For Free At The Start Of The Game",
+          "address": "0x049C"
+        },
+        {
+          "code": "IZSOKGGA",
+          "desc": "Get 25 Bombs For Free At The Start Of The Game",
+          "address": "0x04AC"
+        },
+        {
+          "code": "AISOKGGA",
+          "desc": "Get 50 Bombs For Free At The Start Of The Game",
+          "address": "0x04DC"
+        },
+        {
+          "code": "IYSOKGGA",
+          "desc": "Get 75 Bombs For Free At The Start Of The Game",
+          "address": "0x04FC"
+        },
+        {
+          "code": "OPSOKGGE",
+          "desc": "Get 99 Bombs For Free At The Start Of The Game",
+          "address": "0x049C"
+        },
+        {
+          "code": "PAEOYZAA",
+          "desc": "Start Every Life With The Screen Buster Weapon, Level 2 Weapon Power, And Level 4 Bomb Power",
+          "address": "0x028F"
+        },
+        {
+          "code": "ZAEOYZAA",
+          "desc": "Start Every Life With The Search Driver Weapon, Level 3 Weapon Power, And Level 4 Bomb Power",
+          "address": "0x028F"
+        },
+        {
+          "code": "LAEOYZAA",
+          "desc": "Start Every Life With The Dragon Napalm Weapon, Level 3 Weapon Power, And Level 4 Bomb Power",
+          "address": "0x028F"
+        },
+        {
+          "code": "GAEOYZAA",
+          "desc": "Start Every Life With The Wide Beam Weapon, Level 3 Weapon Power, And Level 4 Bomb Power",
+          "address": "0x028F"
+        },
+        {
+          "code": "0190:00",
+          "desc": "Bomb Type Mofifier",
+          "address": "0x0190"
+        },
+        {
+          "code": "SZKOAZSA",
+          "desc": "Weapon Pickups Don't Change Current Weapon",
+          "address": "0x02A8"
+        },
+        {
+          "code": "SXXPIVSE",
+          "desc": "Bomb Pickups Don't Change Current Bomb Type",
+          "address": "0x062D"
+        },
+        {
+          "code": "KXXPLTKA",
+          "desc": "Bomb Pickups That Are Different Than Your Current Bomb Type Don't Decrease Current Bomb Power",
+          "address": "0x062B"
+        },
+        {
+          "code": "SZOPZZSA",
+          "desc": "Keep Current Weapon After Dying",
+          "address": "0x022A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

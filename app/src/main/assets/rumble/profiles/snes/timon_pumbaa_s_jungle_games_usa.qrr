@@ -1,0 +1,6 @@
+game_name=Timon _ Pumbaa's Jungle Games (USA)
+game_key=timon_pumbaa_s_jungle_games_usa
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_00dc	life_lost	0x7E00DC	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00dc	life_gained	0x7E00DC	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

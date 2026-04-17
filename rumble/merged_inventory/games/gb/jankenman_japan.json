@@ -1,0 +1,25 @@
+{
+  "system": "gb",
+  "normalized_title": "jankenman",
+  "display_name": "Jankenman (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Jankenman (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "01FFC7CA",
+          "desc": "HP/Timer do not decrease",
+          "address": "0xC7CA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

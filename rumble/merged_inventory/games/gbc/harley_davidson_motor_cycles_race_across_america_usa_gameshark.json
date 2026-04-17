@@ -1,0 +1,32 @@
+{
+  "system": "gbc",
+  "normalized_title": "harleydavidsonmotorcyclesraceacrossamerica",
+  "display_name": "Harley-Davidson Motor Cycles - Race Across America (USA) (GameShark)",
+  "aliases": [
+    "Harley-Davidson Motor Cycles - Race Across America (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Harley-Davidson Motor Cycles - Race Across America (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0101CCC2",
+          "desc": "Always Place 1st",
+          "address": "0xCCC2"
+        },
+        {
+          "code": "0100D0C2",
+          "desc": "Time Always 00:00:00",
+          "address": "0xD0C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

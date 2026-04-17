@@ -1,0 +1,30 @@
+{
+  "system": "gbc",
+  "normalized_title": "legendofriverkinggbc",
+  "display_name": "Legend of the River King GBC (USA) (SGB Enhanced) (GB Compatible)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Legend of the River King GBC (USA) (SGB Enhanced) (GB Compatible).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "01FFCFC9",
+          "desc": "Infinite Health",
+          "address": "0xCFC9"
+        },
+        {
+          "code": "0125D4C9",
+          "desc": "Infinite Money",
+          "address": "0xD4C9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

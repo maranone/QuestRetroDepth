@@ -1,0 +1,81 @@
+{
+  "system": "nes",
+  "normalized_title": "teenagemutantninjaturtlesiiarcadegame",
+  "display_name": "Teenage Mutant Ninja Turtles II - The Arcade Game (USA, Australia) (Game Genie)",
+  "aliases": [
+    "Teenage Mutant Ninja Turtles II - The Arcade Game (USA, Australia) (Game Genie)",
+    "Teenage Mutant Ninja Turtles II - The Arcade Game (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Teenage Mutant Ninja Turtles II - The Arcade Game (USA, Australia) (Game Genie).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "AAEAULPA",
+          "desc": "Infinite Lives",
+          "address": "0x030B"
+        },
+        {
+          "code": "SXEAPZVG",
+          "desc": "In Two-Turtle Mode, When One Player Is Revived The Other Player's Spare Life Won't Get Used Up",
+          "address": "0x0229"
+        },
+        {
+          "code": "SZUAYZVG",
+          "desc": "In Two-Turtle Mode, When One Player Is Revived The Other Player's Spare Life Won't Get Used Up",
+          "address": "0x022F"
+        },
+        {
+          "code": "SUVASVSO",
+          "desc": "Don't Take Most Damage",
+          "address": "0x063D"
+        },
+        {
+          "code": "AAUPPKPA",
+          "desc": "Player 1 And 2 Can Choose The Same Turtle",
+          "address": "0x0409"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Teenage Mutant Ninja Turtles II - The Arcade Game (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "AAEAULPA",
+          "desc": "Infinite Lives",
+          "address": "0x030B"
+        },
+        {
+          "code": "SXEAPZVG",
+          "desc": "In Two-Turtle Mode, When One Player Is Revived The Other Player's Spare Life Won't Get Used Up",
+          "address": "0x0229"
+        },
+        {
+          "code": "SZUAYZVG",
+          "desc": "In Two-Turtle Mode, When One Player Is Revived The Other Player's Spare Life Won't Get Used Up",
+          "address": "0x022F"
+        },
+        {
+          "code": "SUVASVSO",
+          "desc": "Don't Take Most Damage",
+          "address": "0x063D"
+        },
+        {
+          "code": "AAUPPKPA",
+          "desc": "Player 1 And 2 Can Choose The Same Turtle",
+          "address": "0x0409"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

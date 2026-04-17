@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "majoudensetsuiidaimashikyougalious",
+  "display_name": "Majou Densetsu II - Daimashikyou Galious (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Majou Densetsu II - Daimashikyou Galious (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "00B2:08",
+          "desc": "Infinite Energy Man",
+          "address": "0x00B2"
+        },
+        {
+          "code": "00B3:08",
+          "desc": "Infinite Energy Woman",
+          "address": "0x00B3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

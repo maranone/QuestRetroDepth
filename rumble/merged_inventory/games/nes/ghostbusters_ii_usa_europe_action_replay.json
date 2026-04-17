@@ -1,0 +1,38 @@
+{
+  "system": "nes",
+  "normalized_title": "ghostbustersii",
+  "display_name": "Ghostbusters II (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Ghostbusters II (USA, Europe) (Action Replay)",
+    "Ghostbusters II (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ghostbusters II (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "SZXPSXVK",
+          "desc": "Infinite Continues",
+          "address": "0x022D"
+        },
+        {
+          "code": "ZEEOOXYO",
+          "desc": "Rapid-Firing Proton Rifle",
+          "address": "0x0289"
+        },
+        {
+          "code": "KYSOKXVN",
+          "desc": "All Ghostbusters Can Mega-Jump",
+          "address": "0x02FC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

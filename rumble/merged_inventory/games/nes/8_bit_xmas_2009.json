@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "8bitxmas2009",
+  "display_name": "8 BIT XMAS 2009",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\8 BIT XMAS 2009.cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "TAXAYPPA",
+          "desc": "Start With 6 Minutes",
+          "address": "0x010F"
+        },
+        {
+          "code": "YAXAYPPA",
+          "desc": "Start With 7 Minutes",
+          "address": "0x010F"
+        },
+        {
+          "code": "AAXAYPPE",
+          "desc": "Start With 8 Minutes",
+          "address": "0x010F"
+        },
+        {
+          "code": "PAXAYPPE",
+          "desc": "Start With 9 Minutes",
+          "address": "0x010F"
+        },
+        {
+          "code": "ALUANPEY",
+          "desc": "Tripleshot Everyone",
+          "address": "0x013F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,9 @@
+game_name=James Pond 2 - Codename RoboCod (Europe) (Action Replay)
+game_key=JamesPond2CodenameRoboCod-Sms
+system=sms
+integration_tier=stable
+trigger	damage_taken_health_da7e	damage_taken	0xDA7E	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_da7e	death	0xDA7E	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_da7d	life_lost	0xDA7D	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_da7d	life_gained	0xDA7D	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_da84	score	0xDA84	4	nibble	little	prev < curr	0.8	1	right:0.350:60

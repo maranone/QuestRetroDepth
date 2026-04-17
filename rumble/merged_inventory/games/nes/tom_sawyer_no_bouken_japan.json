@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "tomsawyernobouken",
+  "display_name": "Tom Sawyer no Bouken (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tom Sawyer no Bouken (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0620:01",
+          "desc": "Invincibility",
+          "address": "0x0620"
+        },
+        {
+          "code": "00B0:03",
+          "desc": "Infinite Lives",
+          "address": "0x00B0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

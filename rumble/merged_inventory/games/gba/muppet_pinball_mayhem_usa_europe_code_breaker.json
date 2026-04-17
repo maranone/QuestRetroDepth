@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "muppetpinballmayhem",
+  "display_name": "Muppet Pinball Mayhem (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Muppet Pinball Mayhem (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10001444",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001444"
+        },
+        {
+          "code": "83001140",
+          "desc": "Quick Score Gain",
+          "address": "0x02001140"
+        },
+        {
+          "code": "83001140",
+          "desc": "Max Score",
+          "address": "0x02001140"
+        },
+        {
+          "code": "83001142",
+          "desc": "Max Score",
+          "address": "0x02001142"
+        },
+        {
+          "code": "3300347C",
+          "desc": "Infinite Balls",
+          "address": "0x0200347C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Muppet Pinball Mayhem (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10001444",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001444"
+        },
+        {
+          "code": "83001140",
+          "desc": "Quick Score Gain",
+          "address": "0x02001140"
+        },
+        {
+          "code": "83001140",
+          "desc": "Max Score",
+          "address": "0x02001140"
+        },
+        {
+          "code": "83001142",
+          "desc": "Max Score",
+          "address": "0x02001142"
+        },
+        {
+          "code": "3300347C",
+          "desc": "Infinite Balls",
+          "address": "0x0200347C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -193,7 +193,9 @@ The runtime may scale this for feel, but the CSV value is the authored base inte
 
 ### `effect`
 
-Amplitude envelope for the pulse.
+Haptic pattern for the event. Each effect is expanded into multiple timed sub-pulses
+across both controllers by the runtime, so even a single-row CSV entry can produce
+rich stereo movement.
 
 Supported values:
 
@@ -201,13 +203,35 @@ Supported values:
 - `fade_in`
 - `fade_out`
 - `fade_in_out`
+- `burst`
+- `heartbeat`
 
 Meaning:
 
-- `normal`: constant strength
-- `fade_in`: grows stronger
-- `fade_out`: starts strong and decays
-- `fade_in_out`: swells and relaxes
+- `normal`: stereo sweep — primary controller fires first, opposite follows at the midpoint. Good for pickups and light events.
+- `fade_out`: hard impact that decays across three decreasing segments, stereo-offset. Good for `damage_taken`.
+- `fade_in`: three increasing segments that build to full amplitude, stereo-offset. Good for `powerup_gained` and `life_gained`.
+- `fade_in_out`: swell from half to full and back, stereo-offset. Good for `life_lost` and dramatic moments.
+- `burst`: seven rapid alternating L/R pulses (machine-gun feel). Good for `score`, `enemy_defeated`, or rapid-fire events.
+- `heartbeat`: two double-beat pairs (thud-thud ... thud-thud) with a silent gap, symmetric across both controllers. Good for `death`, `game_over`, `level_complete`.
+
+Recommended assignments by event type:
+
+| Event type         | Recommended effect |
+|--------------------|--------------------|
+| pickup / collect   | `normal`           |
+| score              | `burst`            |
+| enemy_defeated     | `burst`            |
+| damage_taken       | `fade_out`         |
+| powerup_gained     | `fade_in`          |
+| life_gained        | `fade_in`          |
+| life_lost          | `fade_in_out`      |
+| death / game_over  | `heartbeat`        |
+| level_complete     | `heartbeat`        |
+
+Bundled `.qrr` profiles auto-assign effects based on the event type above, so no
+manual effect column is needed there. Community CSV files use whatever `effect` is
+written in the row.
 
 ### `start_ms`
 

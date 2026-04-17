@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "busoukeijicybercross",
+  "display_name": "Busou Keiji - Cyber Cross (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Busou Keiji - Cyber Cross (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f1366:71",
+          "desc": "Infinite Energy",
+          "address": "0x1F1366"
+        },
+        {
+          "code": "1f0e82:89",
+          "desc": "Freeze Time",
+          "address": "0x1F0E82"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

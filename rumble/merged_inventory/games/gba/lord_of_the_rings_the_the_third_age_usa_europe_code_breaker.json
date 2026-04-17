@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "lordofringsthirdage",
+  "display_name": "Lord of the Rings, The - The Third Age (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Lord of the Rings, The - The Third Age (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1001B494",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0201B494"
+        },
+        {
+          "code": "42002C48",
+          "desc": "Max EXP-All Characters",
+          "address": "0x02002C48"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Lord of the Rings, The - The Third Age (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1001B494",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0201B494"
+        },
+        {
+          "code": "42002C48",
+          "desc": "Max EXP-All Characters",
+          "address": "0x02002C48"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

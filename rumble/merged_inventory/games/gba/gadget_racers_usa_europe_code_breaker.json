@@ -1,0 +1,158 @@
+{
+  "system": "gba",
+  "normalized_title": "gadgetracers",
+  "display_name": "Gadget Racers (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Gadget Racers (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "100003C0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020003C0"
+        },
+        {
+          "code": "82035408",
+          "desc": "Max Money",
+          "address": "0x02035408"
+        },
+        {
+          "code": "8203540A",
+          "desc": "Max Money",
+          "address": "0x0203540A"
+        },
+        {
+          "code": "83000C14",
+          "desc": "Always Low Time Overall",
+          "address": "0x02000C14"
+        },
+        {
+          "code": "83000C16",
+          "desc": "Always Low Time Overall",
+          "address": "0x02000C16"
+        },
+        {
+          "code": "8300642C",
+          "desc": "Idiot AI Car 1",
+          "address": "0x0200642C"
+        },
+        {
+          "code": "8300642E",
+          "desc": "Idiot AI Car 1",
+          "address": "0x0200642E"
+        },
+        {
+          "code": "830064C4",
+          "desc": "Idiot AI Car 2",
+          "address": "0x020064C4"
+        },
+        {
+          "code": "830064C6",
+          "desc": "Idiot AI Car 2",
+          "address": "0x020064C6"
+        },
+        {
+          "code": "8300655C",
+          "desc": "Idiot AI Car 3",
+          "address": "0x0200655C"
+        },
+        {
+          "code": "8300655E",
+          "desc": "Idiot AI Car 3",
+          "address": "0x0200655E"
+        },
+        {
+          "code": "830065F4",
+          "desc": "Idiot AI Car 4",
+          "address": "0x020065F4"
+        },
+        {
+          "code": "830065F6",
+          "desc": "Idiot AI Car 4",
+          "address": "0x020065F6"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Gadget Racers (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "100003C0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020003C0"
+        },
+        {
+          "code": "82035408",
+          "desc": "Max Money",
+          "address": "0x02035408"
+        },
+        {
+          "code": "8203540A",
+          "desc": "Max Money",
+          "address": "0x0203540A"
+        },
+        {
+          "code": "83000C14",
+          "desc": "Always Low Time Overall",
+          "address": "0x02000C14"
+        },
+        {
+          "code": "83000C16",
+          "desc": "Always Low Time Overall",
+          "address": "0x02000C16"
+        },
+        {
+          "code": "8300642C",
+          "desc": "Idiot AI Car 1",
+          "address": "0x0200642C"
+        },
+        {
+          "code": "8300642E",
+          "desc": "Idiot AI Car 1",
+          "address": "0x0200642E"
+        },
+        {
+          "code": "830064C4",
+          "desc": "Idiot AI Car 2",
+          "address": "0x020064C4"
+        },
+        {
+          "code": "830064C6",
+          "desc": "Idiot AI Car 2",
+          "address": "0x020064C6"
+        },
+        {
+          "code": "8300655C",
+          "desc": "Idiot AI Car 3",
+          "address": "0x0200655C"
+        },
+        {
+          "code": "8300655E",
+          "desc": "Idiot AI Car 3",
+          "address": "0x0200655E"
+        },
+        {
+          "code": "830065F4",
+          "desc": "Idiot AI Car 4",
+          "address": "0x020065F4"
+        },
+        {
+          "code": "830065F6",
+          "desc": "Idiot AI Car 4",
+          "address": "0x020065F6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

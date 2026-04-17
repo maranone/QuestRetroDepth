@@ -1,0 +1,90 @@
+{
+  "system": "nes",
+  "normalized_title": "akumakunmakainowana",
+  "display_name": "Akuma-kun - Makai no Wana (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Akuma-kun - Makai no Wana (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "0200:FF",
+          "desc": "Infinite Energy (1st Character)",
+          "address": "0x0200"
+        },
+        {
+          "code": "0085:10",
+          "desc": "Infinite Magic",
+          "address": "0x0085"
+        },
+        {
+          "code": "0086:10",
+          "desc": "Infinite Magic",
+          "address": "0x0086"
+        },
+        {
+          "code": "0087:10",
+          "desc": "Infinite Magic",
+          "address": "0x0087"
+        },
+        {
+          "code": "0088:10",
+          "desc": "Infinite Magic",
+          "address": "0x0088"
+        },
+        {
+          "code": "0089:10",
+          "desc": "Infinite Magic",
+          "address": "0x0089"
+        },
+        {
+          "code": "008A:10",
+          "desc": "Infinite Magic",
+          "address": "0x008A"
+        },
+        {
+          "code": "00DD:00",
+          "desc": "Attack Continuously",
+          "address": "0x00DD"
+        },
+        {
+          "code": "0209:FF",
+          "desc": "Maximum Experience",
+          "address": "0x0209"
+        },
+        {
+          "code": "020A:FF",
+          "desc": "Maximum Experience",
+          "address": "0x020A"
+        },
+        {
+          "code": "020B:AA",
+          "desc": "Maximum Experience",
+          "address": "0x020B"
+        },
+        {
+          "code": "020C:FF",
+          "desc": "Infinite Gold",
+          "address": "0x020C"
+        },
+        {
+          "code": "020D:AA",
+          "desc": "Infinite Gold",
+          "address": "0x020D"
+        },
+        {
+          "code": "AAKELZIA",
+          "desc": "Skip Intro Screen",
+          "address": "0x028B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

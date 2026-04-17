@@ -1,0 +1,186 @@
+{
+  "system": "nes",
+  "normalized_title": "codenameviper",
+  "display_name": "Code Name - Viper (USA) (Game Genie)",
+  "aliases": [
+    "Code Name - Viper (USA) (Game Genie)",
+    "Code Name - Viper (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\codenameviper_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0089",
+        "0x06E8",
+        "0x06F8"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CodeNameViper-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x06F8",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x06E8",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0089",
+          "type": "<n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Code Name - Viper (USA).cht",
+      "total_cheat_rows": 56,
+      "raw_entry_count": 46,
+      "distinct_address_count": 43,
+      "sample_raw_entries": [
+        {
+          "code": "0757:FF",
+          "desc": "Have All Adults/Children Rescued",
+          "address": "0x0757"
+        },
+        {
+          "code": "06EC:09",
+          "desc": "Have All Adults Rescued",
+          "address": "0x06EC"
+        },
+        {
+          "code": "06EA:09",
+          "desc": "Have All Children Rescued",
+          "address": "0x06EA"
+        },
+        {
+          "code": "SXKEVNOU",
+          "desc": "Upper level jump",
+          "address": "0x07AE"
+        },
+        {
+          "code": "ONEOYEXN",
+          "desc": "Upper level jump",
+          "address": "0x00FF"
+        },
+        {
+          "code": "STVPVOON",
+          "desc": "Infinite energy",
+          "address": "0x016E"
+        },
+        {
+          "code": "AASOVZPA",
+          "desc": "Infinite energy",
+          "address": "0x028E"
+        },
+        {
+          "code": "SZVOSOSE",
+          "desc": "Infinite Energy",
+          "address": "0x01AD"
+        },
+        {
+          "code": "06F8:04",
+          "desc": "Infinite Energy",
+          "address": "0x06F8"
+        },
+        {
+          "code": "06E0:63",
+          "desc": "Infinite Gun",
+          "address": "0x06E0"
+        },
+        {
+          "code": "06E2:63",
+          "desc": "Infinite Machine Gun",
+          "address": "0x06E2"
+        },
+        {
+          "code": "SZOOKKSU",
+          "desc": "Hit Anywhere",
+          "address": "0x04AC"
+        },
+        {
+          "code": "APOOSGLA",
+          "desc": "Hit Anywhere",
+          "address": "0x049D"
+        },
+        {
+          "code": "GLXPEGLP",
+          "desc": "Hit Anywhere",
+          "address": "0x0438"
+        },
+        {
+          "code": "06AA:09",
+          "desc": "Infinite Lives",
+          "address": "0x06AA"
+        },
+        {
+          "code": "06F8:02",
+          "desc": "Infinite Health",
+          "address": "0x06F8"
+        },
+        {
+          "code": "06E6:DF",
+          "desc": "Infinite Time",
+          "address": "0x06E6"
+        },
+        {
+          "code": "0756:09",
+          "desc": "Infinite Continues",
+          "address": "0x0756"
+        },
+        {
+          "code": "06E0:2E",
+          "desc": "Infinite Bullets",
+          "address": "0x06E0"
+        },
+        {
+          "code": "06B1:00",
+          "desc": "Fake Bullets Modifier (Ten's Digit)",
+          "address": "0x06B1"
+        },
+        {
+          "code": "06B2:00",
+          "desc": "Fake Bullets Modifier (One's Digit)",
+          "address": "0x06B2"
+        },
+        {
+          "code": "06BE:09",
+          "desc": "Max Score (Ones)",
+          "address": "0x06BE"
+        },
+        {
+          "code": "06BD:09",
+          "desc": "Max Score (Tens)",
+          "address": "0x06BD"
+        },
+        {
+          "code": "06BC:09",
+          "desc": "Max Score (Hundreds)",
+          "address": "0x06BC"
+        },
+        {
+          "code": "06BB:09",
+          "desc": "Max Score (Thousands)",
+          "address": "0x06BB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

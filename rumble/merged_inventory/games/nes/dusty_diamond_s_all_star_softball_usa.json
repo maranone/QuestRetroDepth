@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "dustydiamondsallstarsoftball",
+  "display_name": "Dusty Diamond's All-Star Softball (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dusty Diamond's All-Star Softball (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "032F:63",
+          "desc": "Team 1 Has A High Score",
+          "address": "0x032F"
+        },
+        {
+          "code": "033F:00",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x033F"
+        },
+        {
+          "code": "065B:00",
+          "desc": "Park Modifier",
+          "address": "0x065B"
+        },
+        {
+          "code": "00AC:00",
+          "desc": "Park Highlighter Modifier",
+          "address": "0x00AC"
+        },
+        {
+          "code": "00AE:00",
+          "desc": "Strikes Modifier",
+          "address": "0x00AE"
+        },
+        {
+          "code": "00AF:00",
+          "desc": "Ball Modifier",
+          "address": "0x00AF"
+        },
+        {
+          "code": "00B0:00",
+          "desc": "Outs Modifier",
+          "address": "0x00B0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

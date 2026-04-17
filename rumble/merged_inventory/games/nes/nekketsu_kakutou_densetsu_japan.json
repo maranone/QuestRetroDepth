@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "nekketsukakutoudensetsu",
+  "display_name": "Nekketsu Kakutou Densetsu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Nekketsu Kakutou Densetsu (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "04C3:CB",
+          "desc": "Infinite Energy",
+          "address": "0x04C3"
+        },
+        {
+          "code": "04C2:B0",
+          "desc": "Infinite Energy",
+          "address": "0x04C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "chessmaster",
+  "display_name": "Chessmaster (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Chessmaster (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10027224",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02027224"
+        },
+        {
+          "code": "32012278",
+          "desc": "Time Always 0:00 (White)",
+          "address": "0x02012278"
+        },
+        {
+          "code": "32012278",
+          "desc": "Quick Time Gain (White)",
+          "address": "0x02012278"
+        },
+        {
+          "code": "32011960",
+          "desc": "Time Always 0:00 (Black)",
+          "address": "0x02011960"
+        },
+        {
+          "code": "32011960",
+          "desc": "Quick Time Gain (Black)",
+          "address": "0x02011960"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Chessmaster (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10027224",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02027224"
+        },
+        {
+          "code": "32012278",
+          "desc": "Time Always 0:00 (White)",
+          "address": "0x02012278"
+        },
+        {
+          "code": "32012278",
+          "desc": "Quick Time Gain (White)",
+          "address": "0x02012278"
+        },
+        {
+          "code": "32011960",
+          "desc": "Time Always 0:00 (Black)",
+          "address": "0x02011960"
+        },
+        {
+          "code": "32011960",
+          "desc": "Quick Time Gain (Black)",
+          "address": "0x02011960"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

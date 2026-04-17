@@ -1,0 +1,8 @@
+game_name=D-Cat 100-in-1
+game_key=d_cat_100_in_1
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_006e	life_lost	0x006E	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_006e	life_gained	0x006E	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_0040	life_lost	0x0040	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0040	life_gained	0x0040	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

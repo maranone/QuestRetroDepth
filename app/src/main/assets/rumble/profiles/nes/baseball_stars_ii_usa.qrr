@@ -1,0 +1,5 @@
+game_name=Baseball Stars II (USA)
+game_key=baseball_stars_ii_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_0498	score	0x0498	1	uint	little	prev < curr	0.8	1	right:0.350:60

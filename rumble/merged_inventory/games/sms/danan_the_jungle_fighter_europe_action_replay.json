@@ -1,0 +1,58 @@
+{
+  "system": "sms",
+  "normalized_title": "dananjunglefighter",
+  "display_name": "Danan - The Jungle Fighter (Europe) (Action Replay)",
+  "aliases": [
+    "Danan - The Jungle Fighter (Europe) (Action Replay)",
+    "Danan - The Jungle Fighter (Europe, Brazil)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\dananthejunglefighter_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xC204",
+        "0xD438"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DananTheJungleFighter-Sms-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xD438",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xC204",
+          "type": "<u2"
+        },
+        {
+          "name": "time",
+          "address": "0xC7D0",
+          "type": "|i1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Danan - The Jungle Fighter (Europe, Brazil).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

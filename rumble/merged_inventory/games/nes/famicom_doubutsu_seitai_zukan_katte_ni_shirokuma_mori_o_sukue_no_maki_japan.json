@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "famicomdoubutsuseitaizukankattenishirokumamoriosukuenomaki",
+  "display_name": "Famicom Doubutsu Seitai Zukan! - Katte ni Shirokuma - Mori o Sukue no Maki! (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Famicom Doubutsu Seitai Zukan! - Katte ni Shirokuma - Mori o Sukue no Maki! (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "001E:FF",
+          "desc": "Bear Infinite Health",
+          "address": "0x001E"
+        },
+        {
+          "code": "0020:FF",
+          "desc": "Pig Infinite Health",
+          "address": "0x0020"
+        },
+        {
+          "code": "0022:FF",
+          "desc": "Chipmunk Infinite Health",
+          "address": "0x0022"
+        },
+        {
+          "code": "00E1:00",
+          "desc": "Instantly Kill Enemies",
+          "address": "0x00E1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

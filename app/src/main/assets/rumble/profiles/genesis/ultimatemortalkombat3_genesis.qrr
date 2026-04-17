@@ -1,6 +1,0 @@
-game_name=UltimateMortalKombat3
-game_key=UltimateMortalKombat3-Genesis
-system=genesis
-integration_tier=manual
-trigger	damage_taken_0_9f7a	damage_taken	0xFF9F7A	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	damage_taken_1_9f7c	damage_taken	0xFF9F7C	1	uint	native	prev > curr	0.85	1	right:0.750:180

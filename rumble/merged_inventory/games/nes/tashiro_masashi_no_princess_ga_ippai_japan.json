@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "tashiromasashinoprincessgaippai",
+  "display_name": "Tashiro Masashi no Princess ga Ippai (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tashiro Masashi no Princess ga Ippai (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0435:32",
+          "desc": "Infinite Energy",
+          "address": "0x0435"
+        },
+        {
+          "code": "0088:96",
+          "desc": "Infinite Time",
+          "address": "0x0088"
+        },
+        {
+          "code": "042B:03",
+          "desc": "Jump Higher and Always Run",
+          "address": "0x042B"
+        },
+        {
+          "code": "043E:01",
+          "desc": "Walk Through Enemies",
+          "address": "0x043E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

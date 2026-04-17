@@ -1,0 +1,8 @@
+game_name=Super Tetris 3 (Japan) (Action Replay)
+game_key=super_tetris_3_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_1500	level_complete	0x7E1500	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	score_score_150c	score	0x7E150C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_150d	score	0x7E150D	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_150e	score	0x7E150E	1	uint	little	prev < curr	0.8	1	right:0.350:60

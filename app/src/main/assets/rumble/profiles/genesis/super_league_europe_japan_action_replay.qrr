@@ -1,0 +1,6 @@
+game_name=Super League (Europe, Japan) (Action Replay)
+game_key=super_league_europe_japan_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffe132	score	0xFFE132	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffe134	score	0xFFE134	1	uint	little	prev < curr	0.8	1	right:0.350:60

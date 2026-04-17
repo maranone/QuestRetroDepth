@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "backyardfootball",
+  "display_name": "Backyard Football (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Backyard Football (USA) (Code Breaker).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 27,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1001E3D8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0201E3D8"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Scores 255",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Scores 150",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Scores 100",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Scores 0",
+          "address": "0x02000062"
+        },
+        {
+          "code": "72000062",
+          "desc": "Away Team Starts With 255 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Starts With 255 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "72000062",
+          "desc": "Away Team Starts With 150 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Starts With 150 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "72000062",
+          "desc": "Away Team Starts With 100 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Starts With 100 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "72000062",
+          "desc": "Away Team Starts With 50 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Starts With 50 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Scores 255",
+          "address": "0x02000262"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Scores 150",
+          "address": "0x02000262"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Scores 100",
+          "address": "0x02000262"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Scores 0",
+          "address": "0x02000262"
+        },
+        {
+          "code": "72000262",
+          "desc": "Home Team Starts With 255 Score",
+          "address": "0x02000262"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Starts With 255 Score",
+          "address": "0x02000262"
+        },
+        {
+          "code": "72000262",
+          "desc": "Home Team Starts With 150 Score",
+          "address": "0x02000262"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Starts With 150 Score",
+          "address": "0x02000262"
+        },
+        {
+          "code": "72000262",
+          "desc": "Home Team Starts With 100 Score",
+          "address": "0x02000262"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Starts With 100 Score",
+          "address": "0x02000262"
+        },
+        {
+          "code": "72000262",
+          "desc": "Home Team Starts With 50 Score",
+          "address": "0x02000262"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Starts With 50 Score",
+          "address": "0x02000262"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Backyard Football (USA) (Code Breaker).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 27,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1001E3D8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0201E3D8"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Scores 255",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Scores 150",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Scores 100",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Scores 0",
+          "address": "0x02000062"
+        },
+        {
+          "code": "72000062",
+          "desc": "Away Team Starts With 255 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Starts With 255 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "72000062",
+          "desc": "Away Team Starts With 150 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Starts With 150 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "72000062",
+          "desc": "Away Team Starts With 100 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Starts With 100 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "72000062",
+          "desc": "Away Team Starts With 50 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000062",
+          "desc": "Away Team Starts With 50 Score",
+          "address": "0x02000062"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Scores 255",
+          "address": "0x02000262"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Scores 150",
+          "address": "0x02000262"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Scores 100",
+          "address": "0x02000262"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Scores 0",
+          "address": "0x02000262"
+        },
+        {
+          "code": "72000262",
+          "desc": "Home Team Starts With 255 Score",
+          "address": "0x02000262"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Starts With 255 Score",
+          "address": "0x02000262"
+        },
+        {
+          "code": "72000262",
+          "desc": "Home Team Starts With 150 Score",
+          "address": "0x02000262"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Starts With 150 Score",
+          "address": "0x02000262"
+        },
+        {
+          "code": "72000262",
+          "desc": "Home Team Starts With 100 Score",
+          "address": "0x02000262"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Starts With 100 Score",
+          "address": "0x02000262"
+        },
+        {
+          "code": "72000262",
+          "desc": "Home Team Starts With 50 Score",
+          "address": "0x02000262"
+        },
+        {
+          "code": "82000262",
+          "desc": "Home Team Starts With 50 Score",
+          "address": "0x02000262"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

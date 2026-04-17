@@ -2,5 +2,5 @@
 # game_name=WildGuns
 # match_names=wildguns|wildgunssnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-score_0_1fd0,0x7E1FD0,1,uint,prev_lt_curr,,left,0.300,normal,0,80,50,10,
-score_2_1fd4,0x7E1FD4,1,uint,prev_lt_curr,,left,0.300,normal,0,80,50,10,
+score_0_1fd0,0x7E1FD0,1,uint,prev_lt_curr,,left,0.35,burst,0,80,15,10,
+score_2_1fd4,0x7E1FD4,1,uint,prev_lt_curr,,left,0.35,burst,0,80,15,10,

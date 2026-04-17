@@ -1,0 +1,45 @@
+{
+  "system": "pce",
+  "normalized_title": "fightingrun",
+  "display_name": "Fighting Run (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Fighting Run (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1f0d7d:00",
+          "desc": "Infinite Energy",
+          "address": "0x1F0D7D"
+        },
+        {
+          "code": "1f14e5:04",
+          "desc": "Max Stats",
+          "address": "0x1F14E5"
+        },
+        {
+          "code": "1f14e6:04",
+          "desc": "Max Stats",
+          "address": "0x1F14E6"
+        },
+        {
+          "code": "1f14e7:04",
+          "desc": "Max Stats",
+          "address": "0x1F14E7"
+        },
+        {
+          "code": "1f0ddd:01",
+          "desc": "1-Hit Kills",
+          "address": "0x1F0DDD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

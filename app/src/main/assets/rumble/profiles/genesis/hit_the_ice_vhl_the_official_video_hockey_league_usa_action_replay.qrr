@@ -1,0 +1,6 @@
+game_name=Hit the Ice - VHL - The Official Video Hockey League (USA) (Action Replay)
+game_key=hit_the_ice_vhl_the_official_video_hockey_league_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffd02c	score	0xFFD02C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffd302	score	0xFFD302	1	uint	little	prev < curr	0.8	1	right:0.350:60

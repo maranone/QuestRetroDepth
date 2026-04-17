@@ -1,0 +1,9 @@
+game_name=Mad Max (USA) (Game Genie)
+game_key=mad_max_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_0628	pickup	0x0628	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_028c	pickup	0x028C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_057e	damage_taken	0x057E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_057e	death	0x057E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_057f	pickup	0x057F	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,25 @@
+{
+  "system": "gb",
+  "normalized_title": "bustmove3dx",
+  "display_name": "Bust-A-Move 3 DX (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Bust-A-Move 3 DX (Europe).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0101D9FF",
+          "desc": "Automatically Beat a Stage",
+          "address": "0xD9FF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

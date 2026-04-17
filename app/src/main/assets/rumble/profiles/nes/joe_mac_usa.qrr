@@ -1,0 +1,14 @@
+game_name=Joe _ Mac (USA)
+game_key=joe_mac_usa
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0499	damage_taken	0x0499	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0499	death	0x0499	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_064d	enemy_defeated	0x064D	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	life_lost_lives_047e	life_lost	0x047E	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_047e	life_gained	0x047E	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_04b4	level_complete	0x04B4	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	score_score_0478	score	0x0478	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0479	score	0x0479	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_047a	score	0x047A	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_047b	score	0x047B	1	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "3dworldrunner",
+  "display_name": "3-D WorldRunner (USA) (Game Genie)",
+  "aliases": [
+    "3-D WorldRunner (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\3-D WorldRunner (USA).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 47,
+      "distinct_address_count": 23,
+      "sample_raw_entries": [
+        {
+          "code": "00E3:01",
+          "desc": "Invincible",
+          "address": "0x00E3"
+        },
+        {
+          "code": "00E0:02",
+          "desc": "Unlimited Lives",
+          "address": "0x00E0"
+        },
+        {
+          "code": "00EE:08",
+          "desc": "World Modifier",
+          "address": "0x00EE"
+        },
+        {
+          "code": "008B:13",
+          "desc": "Infinite Time?",
+          "address": "0x008B"
+        },
+        {
+          "code": "AEUOLTPA",
+          "desc": "Infinite lives",
+          "address": "0x068B"
+        },
+        {
+          "code": "SXUPZGVG",
+          "desc": "Freeze timer",
+          "address": "0x042A"
+        },
+        {
+          "code": "NNXOYGEK",
+          "desc": "Slow down timer",
+          "address": "0x04FF"
+        },
+        {
+          "code": "AVXOYGEG",
+          "desc": "Speed up timer",
+          "address": "0x04EF"
+        },
+        {
+          "code": "AEUOVIGA",
+          "desc": "Start with and keep laser missiles",
+          "address": "0x058E"
+        },
+        {
+          "code": "OXUONISX",
+          "desc": "Autofire",
+          "address": "0x05AF"
+        },
+        {
+          "code": "PEUPPTLA",
+          "desc": "Start with 1 life",
+          "address": "0x0609"
+        },
+        {
+          "code": "PLVOLTLL",
+          "desc": "Start with 1 life",
+          "address": "0x06BB"
+        },
+        {
+          "code": "TEUPPTLA",
+          "desc": "Start with 6 lives",
+          "address": "0x0609"
+        },
+        {
+          "code": "TLVOLTLL",
+          "desc": "Start with 6 lives",
+          "address": "0x06BB"
+        },
+        {
+          "code": "PEUPPTLE",
+          "desc": "Start with 9 lives",
+          "address": "0x0609"
+        },
+        {
+          "code": "PLVOLTLU",
+          "desc": "Start with 9 lives",
+          "address": "0x06BB"
+        },
+        {
+          "code": "AVLOIT",
+          "desc": "Infinite Lives",
+          "address": "0x06E5"
+        },
+        {
+          "code": "AVLPZG",
+          "desc": "Infinite Energy",
+          "address": "0x0462"
+        },
+        {
+          "code": "003A:05",
+          "desc": "No pitfalls nor enemies",
+          "address": "0x003A"
+        },
+        {
+          "code": "XZEAUOOZ",
+          "desc": "Start On World 2",
+          "address": "0x012B"
+        },
+        {
+          "code": "PAEAKPAA",
+          "desc": "Start On World 2",
+          "address": "0x010C"
+        },
+        {
+          "code": "VAEASPSA",
+          "desc": "Start On World 2",
+          "address": "0x010D"
+        },
+        {
+          "code": "XZEAUOOZ",
+          "desc": "Start On World 3",
+          "address": "0x012B"
+        },
+        {
+          "code": "ZAEAKPAA",
+          "desc": "Start On World 3",
+          "address": "0x010C"
+        },
+        {
+          "code": "VAEASPSA",
+          "desc": "Start On World 3",
+          "address": "0x010D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

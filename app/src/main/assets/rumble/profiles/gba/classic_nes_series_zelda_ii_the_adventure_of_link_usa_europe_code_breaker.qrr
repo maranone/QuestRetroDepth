@@ -1,0 +1,11 @@
+game_name=Classic NES Series - Zelda II - The Adventure of Link (USA, Europe) (Code Breaker)
+game_key=classic_nes_series_zelda_ii_the_adventure_of_link_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_02007900	life_lost	0x02007900	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02007900	life_gained	0x02007900	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_02007974	damage_taken	0x02007974	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02007974	death	0x02007974	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_02007979	level_complete	0x02007979	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_02007977	level_complete	0x02007977	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_02007978	level_complete	0x02007978	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

@@ -1,0 +1,8 @@
+game_name=Space Invaders (Japan)
+game_key=SpaceInvaders-Nes
+system=nes
+integration_tier=stable
+trigger	game_over_gameover_0053	game_over	0x0053	1	int	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	life_lost_lives_0029	life_lost	0x0029	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0029	life_gained	0x0029	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0022	score	0x0022	2	uint	little	prev < curr	0.8	1	right:0.350:60

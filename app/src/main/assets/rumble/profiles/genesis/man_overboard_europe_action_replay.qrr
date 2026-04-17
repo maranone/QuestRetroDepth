@@ -1,0 +1,7 @@
+game_name=Man Overboard! (Europe) (Action Replay)
+game_key=man_overboard_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	level_complete_level_ff10e2	level_complete	0xFF10E2	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_ff0750	life_lost	0xFF0750	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff0750	life_gained	0xFF0750	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

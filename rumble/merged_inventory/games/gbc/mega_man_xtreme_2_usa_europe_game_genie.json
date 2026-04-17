@@ -1,0 +1,48 @@
+{
+  "system": "gbc",
+  "normalized_title": "megamanxtreme2",
+  "display_name": "Mega Man Xtreme 2 (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Mega Man Xtreme 2 (USA, Europe) (GameShark)",
+    "Mega Man Xtreme 2 (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Mega Man Xtreme 2 (USA, Europe).cht",
+      "total_cheat_rows": 47,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0100C9C0",
+          "desc": "Character Modifier",
+          "address": "0xC9C0"
+        },
+        {
+          "code": "0108CDC1",
+          "desc": "Ride Armor Has Infinite Health",
+          "address": "0xCDC1"
+        },
+        {
+          "code": "0120D8C0",
+          "desc": "Have Subtank 1",
+          "address": "0xD8C0"
+        },
+        {
+          "code": "0120DDC0",
+          "desc": "Have Subtank 2",
+          "address": "0xDDC0"
+        },
+        {
+          "code": "018CC7C0",
+          "desc": "Subtank 2 Is Full",
+          "address": "0xC7C0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

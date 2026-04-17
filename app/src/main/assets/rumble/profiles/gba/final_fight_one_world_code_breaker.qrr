@@ -1,0 +1,12 @@
+game_name=Final Fight One (World) (Code Breaker)
+game_key=final_fight_one_world_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_02024e5a	damage_taken	0x02024E5A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02024e5a	death	0x02024E5A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_02024edb	life_lost	0x02024EDB	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02024edb	life_gained	0x02024EDB	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_02021360	score	0x02021360	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02021362	score	0x02021362	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	damage_taken_health_02024e5e	damage_taken	0x02024E5E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02024e5e	death	0x02024E5E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,11 @@
+game_name=Beyond Zero Tolerance (USA) (Action Replay)
+game_key=beyond_zero_tolerance_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff105c	pickup	0xFF105C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff1060	pickup	0xFF1060	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff1064	pickup	0xFF1064	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff1068	pickup	0xFF1068	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff106c	pickup	0xFF106C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_ff0dec	damage_taken	0xFF0DEC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff0dec	death	0xFF0DEC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

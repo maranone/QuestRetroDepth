@@ -1,0 +1,72 @@
+{
+  "system": "nes",
+  "normalized_title": "rambo",
+  "display_name": "Rambo (USA, Japan) (Game Genie)",
+  "aliases": [
+    "Rambo (USA, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rambo (USA, Japan) (Game Genie).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "ZEEEITIE",
+          "desc": "More Medicine Bottles",
+          "address": "0x068D"
+        },
+        {
+          "code": "GOEAPVZA",
+          "desc": "More Throwing Knives",
+          "address": "0x0619"
+        },
+        {
+          "code": "ZEEEITIA",
+          "desc": "Start With 2 Medicine Bottles",
+          "address": "0x068D"
+        },
+        {
+          "code": "ZPNEITPP",
+          "desc": "Start With Bow And Arrows",
+          "address": "0x069D"
+        },
+        {
+          "code": "ZOEALTPP",
+          "desc": "Start With Bow And Arrows",
+          "address": "0x061B"
+        },
+        {
+          "code": "LPNEITPP",
+          "desc": "Start With Exploding Arrows",
+          "address": "0x069D"
+        },
+        {
+          "code": "LOEALTPP",
+          "desc": "Start With Exploding Arrows",
+          "address": "0x061B"
+        },
+        {
+          "code": "IPNEITPP",
+          "desc": "Start With Hand Grenades",
+          "address": "0x069D"
+        },
+        {
+          "code": "IOEALTPP",
+          "desc": "Start With Hand Grenades",
+          "address": "0x061B"
+        },
+        {
+          "code": "ZVEEITIA",
+          "desc": "Start With 9 Medicine Bottles",
+          "address": "0x06ED"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Clu Clu Land (World) (Game Genie)
+game_key=CluCluLand-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_0080	life_lost	0x0080	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0080	life_gained	0x0080	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0021	score	0x0021	3	bcd	big	prev < curr	0.8	1	right:0.350:60

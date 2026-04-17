@@ -1,0 +1,188 @@
+{
+  "system": "gba",
+  "normalized_title": "vanhelsing",
+  "display_name": "Van Helsing (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Van Helsing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 16,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10000A4C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000A4C"
+        },
+        {
+          "code": "33004A78",
+          "desc": "Max Health",
+          "address": "0x02004A78"
+        },
+        {
+          "code": "33004B1C",
+          "desc": "Infinite Health",
+          "address": "0x02004B1C"
+        },
+        {
+          "code": "33004A94",
+          "desc": "Infinite Lives",
+          "address": "0x02004A94"
+        },
+        {
+          "code": "33004B2C",
+          "desc": "All Red Life Glyphs",
+          "address": "0x02004B2C"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L+Up For Extra Life",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33004A70",
+          "desc": "Press L+Up For Extra Life",
+          "address": "0x02004A70"
+        },
+        {
+          "code": "83004B68",
+          "desc": "Max Gold Reward Glyphs",
+          "address": "0x02004B68"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Up+R For Cross Bow",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33001140",
+          "desc": "Press Up+R For Cross Bow",
+          "address": "0x02001140"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Down+R For Lightning Gun",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33001140",
+          "desc": "Press Down+R For Lightning Gun",
+          "address": "0x02001140"
+        },
+        {
+          "code": "73004A6C",
+          "desc": "No Reloading Regular Gun",
+          "address": "0x02004A6C"
+        },
+        {
+          "code": "83004A6C",
+          "desc": "No Reloading Regular Gun",
+          "address": "0x02004A6C"
+        },
+        {
+          "code": "73004B64",
+          "desc": "Quick Charge Lightning Gun",
+          "address": "0x02004B64"
+        },
+        {
+          "code": "83004B64",
+          "desc": "Quick Charge Lightning Gun",
+          "address": "0x02004B64"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Van Helsing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 16,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10000A4C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000A4C"
+        },
+        {
+          "code": "33004A78",
+          "desc": "Max Health",
+          "address": "0x02004A78"
+        },
+        {
+          "code": "33004B1C",
+          "desc": "Infinite Health",
+          "address": "0x02004B1C"
+        },
+        {
+          "code": "33004A94",
+          "desc": "Infinite Lives",
+          "address": "0x02004A94"
+        },
+        {
+          "code": "33004B2C",
+          "desc": "All Red Life Glyphs",
+          "address": "0x02004B2C"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L+Up For Extra Life",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33004A70",
+          "desc": "Press L+Up For Extra Life",
+          "address": "0x02004A70"
+        },
+        {
+          "code": "83004B68",
+          "desc": "Max Gold Reward Glyphs",
+          "address": "0x02004B68"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Up+R For Cross Bow",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33001140",
+          "desc": "Press Up+R For Cross Bow",
+          "address": "0x02001140"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Down+R For Lightning Gun",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33001140",
+          "desc": "Press Down+R For Lightning Gun",
+          "address": "0x02001140"
+        },
+        {
+          "code": "73004A6C",
+          "desc": "No Reloading Regular Gun",
+          "address": "0x02004A6C"
+        },
+        {
+          "code": "83004A6C",
+          "desc": "No Reloading Regular Gun",
+          "address": "0x02004A6C"
+        },
+        {
+          "code": "73004B64",
+          "desc": "Quick Charge Lightning Gun",
+          "address": "0x02004B64"
+        },
+        {
+          "code": "83004B64",
+          "desc": "Quick Charge Lightning Gun",
+          "address": "0x02004B64"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

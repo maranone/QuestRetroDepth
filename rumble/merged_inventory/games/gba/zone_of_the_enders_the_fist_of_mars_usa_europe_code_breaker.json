@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "zoneofendersfistofmars",
+  "display_name": "Zone of the Enders - The Fist of Mars (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Zone of the Enders - The Fist of Mars (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10000AE0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000AE0"
+        },
+        {
+          "code": "83001CD0",
+          "desc": "Infinite Money",
+          "address": "0x02001CD0"
+        },
+        {
+          "code": "83001CD0",
+          "desc": "Max Money",
+          "address": "0x02001CD0"
+        },
+        {
+          "code": "83001CD2",
+          "desc": "Max Money",
+          "address": "0x02001CD2"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Zone of the Enders - The Fist of Mars (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10000AE0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000AE0"
+        },
+        {
+          "code": "83001CD0",
+          "desc": "Infinite Money",
+          "address": "0x02001CD0"
+        },
+        {
+          "code": "83001CD0",
+          "desc": "Max Money",
+          "address": "0x02001CD0"
+        },
+        {
+          "code": "83001CD2",
+          "desc": "Max Money",
+          "address": "0x02001CD2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

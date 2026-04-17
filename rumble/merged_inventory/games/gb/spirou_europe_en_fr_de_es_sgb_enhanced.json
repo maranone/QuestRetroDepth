@@ -1,0 +1,30 @@
+{
+  "system": "gb",
+  "normalized_title": "spirou",
+  "display_name": "Spirou (Europe) (En,Fr,De,Es) (SGB Enhanced)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Spirou (Europe) (En,Fr,De,Es) (SGB Enhanced).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0104DDC4",
+          "desc": "Infinite Energy",
+          "address": "0xDDC4"
+        },
+        {
+          "code": "0109DEC4",
+          "desc": "Infinite Lives",
+          "address": "0xDEC4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

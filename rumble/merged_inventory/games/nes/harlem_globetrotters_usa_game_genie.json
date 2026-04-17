@@ -1,0 +1,57 @@
+{
+  "system": "nes",
+  "normalized_title": "harlemglobetrotters",
+  "display_name": "Harlem Globetrotters (USA) (Game Genie)",
+  "aliases": [
+    "Harlem Globetrotters (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Harlem Globetrotters (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0587:09",
+          "desc": "P1 Max Score",
+          "address": "0x0587"
+        },
+        {
+          "code": "0586:09",
+          "desc": "P1 Max Score",
+          "address": "0x0586"
+        },
+        {
+          "code": "0583:00",
+          "desc": "P2/CPU Score Modifier",
+          "address": "0x0583"
+        },
+        {
+          "code": "0584:00",
+          "desc": "P2/CPU Score Modifier",
+          "address": "0x0584"
+        },
+        {
+          "code": "026D:F9",
+          "desc": "Infinite Shot Time",
+          "address": "0x026D"
+        },
+        {
+          "code": "026E:F9",
+          "desc": "Infinite Shot Time",
+          "address": "0x026E"
+        },
+        {
+          "code": "02EE:F9",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x02EE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

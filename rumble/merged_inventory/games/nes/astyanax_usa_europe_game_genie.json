@@ -1,0 +1,123 @@
+{
+  "system": "nes",
+  "normalized_title": "astyanax",
+  "display_name": "Astyanax (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Astyanax (USA)",
+    "Astyanax (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\astyanax_nes.json",
+      "trigger_count": 6,
+      "field_names": [
+        "gameover",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0x0008",
+        "0x0091",
+        "0x0096",
+        "0x0378"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Astyanax-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0x0008",
+          "type": "|d1"
+        },
+        {
+          "name": "health",
+          "address": "0x0091",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0096",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0378",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Astyanax (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 11,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "AZKAVZGO",
+          "desc": "Double Life And Spell Energy",
+          "address": "0x022E"
+        },
+        {
+          "code": "PAKEKZAA",
+          "desc": "Start With Blast Spell",
+          "address": "0x028C"
+        },
+        {
+          "code": "ZAKEKZAA",
+          "desc": "Start With Bind Spell",
+          "address": "0x028C"
+        },
+        {
+          "code": "GPKAXZGA",
+          "desc": "Start With Extra Weapon Power",
+          "address": "0x021A"
+        },
+        {
+          "code": "AEUEUGZA",
+          "desc": "Start With 1 Life",
+          "address": "0x048B"
+        },
+        {
+          "code": "AASAXZZA",
+          "desc": "Start With 1 Life",
+          "address": "0x020A"
+        },
+        {
+          "code": "IEUEUGZA",
+          "desc": "Start With Double Lives",
+          "address": "0x048B"
+        },
+        {
+          "code": "IASAXZZA",
+          "desc": "Start With Double Lives",
+          "address": "0x020A"
+        },
+        {
+          "code": "AEUEUGZE",
+          "desc": "Start With Triple Lives",
+          "address": "0x048B"
+        },
+        {
+          "code": "AASAXZZE",
+          "desc": "Start With Triple Lives",
+          "address": "0x020A"
+        },
+        {
+          "code": "NNPPIS",
+          "desc": "Intro Music Is Changed",
+          "address": "0x0575"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

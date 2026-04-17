@@ -9,7 +9,12 @@ namespace qrd {
 
 enum class BackendKind {
     Snes,
-    Genesis
+    Genesis,
+    Gba,
+    Gb,    // Game Boy / Game Boy Color (also via mGBA)
+    Nes,   // NES (FCEUmm)
+    Pce,   // PC Engine / TurboGrafx-16 (beetle-pce-fast)
+    Sms,   // Sega Master System / Game Gear (PicoDrive, but SMS RAM range differs from Genesis)
 };
 
 struct EmulatorInputState {

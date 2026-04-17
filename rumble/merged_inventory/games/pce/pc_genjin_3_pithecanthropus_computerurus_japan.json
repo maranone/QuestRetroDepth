@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "pcgenjin3pithecanthropuscomputerurus",
+  "display_name": "PC Genjin 3 - Pithecanthropus Computerurus (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\PC Genjin 3 - Pithecanthropus Computerurus (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f09b6:14",
+          "desc": "P1 Invincible",
+          "address": "0x1F09B6"
+        },
+        {
+          "code": "1f09b7:14",
+          "desc": "P2 Invincible",
+          "address": "0x1F09B7"
+        },
+        {
+          "code": "1f0b8d:14",
+          "desc": "Infinite Health (Both Players)",
+          "address": "0x1F0B8D"
+        },
+        {
+          "code": "1f0b8b:09",
+          "desc": "Infinte Lives (Both Players)",
+          "address": "0x1F0B8B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "system": "sms",
+  "normalized_title": "pacmania",
+  "display_name": "Pac-Mania (Europe) (Action Replay)",
+  "aliases": [
+    "Pac-Mania (Europe) (Action Replay)",
+    "Pac-Mania (Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\pacmania_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xC026",
+        "0xC040"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\PacMania-Sms-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xC040",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xC026",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Pac-Mania (Europe).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

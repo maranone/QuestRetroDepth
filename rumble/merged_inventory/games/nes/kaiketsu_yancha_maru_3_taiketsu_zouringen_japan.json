@@ -1,0 +1,110 @@
+{
+  "system": "nes",
+  "normalized_title": "kaiketsuyanchamaru3taiketsuzouringen",
+  "display_name": "Kaiketsu Yancha Maru 3 - Taiketsu! Zouringen (Japan)",
+  "aliases": [
+    "Kaiketsu Yancha Maru 3 - Taiketsu! Zouringen (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\kaiketsuyanchamaru3taiketsuzouringen_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0642",
+        "0x06A3",
+        "0x06EB"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KaiketsuYanchaMaru3TaiketsuZouringen-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x06EB",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x06A3",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0642",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kaiketsu Yancha Maru 3 - Taiketsu! Zouringen (Japan).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "06EB:10",
+          "desc": "Infinite Energy",
+          "address": "0x06EB"
+        },
+        {
+          "code": "EINPZYEL",
+          "desc": "Hit Anywhere",
+          "address": "0x075A"
+        },
+        {
+          "code": "ENXOYZEI",
+          "desc": "Enemies Automatically Die",
+          "address": "0x02FF"
+        },
+        {
+          "code": "05E8:10",
+          "desc": "Walk Through Enemies",
+          "address": "0x05E8"
+        },
+        {
+          "code": "05FD:00",
+          "desc": "Boss 1 Hit Kill",
+          "address": "0x05FD"
+        },
+        {
+          "code": "0641:00",
+          "desc": "Stage Modifier",
+          "address": "0x0641"
+        },
+        {
+          "code": "06A3:09",
+          "desc": "Infinite Lives",
+          "address": "0x06A3"
+        },
+        {
+          "code": "06D8:00",
+          "desc": "Slippery Ground",
+          "address": "0x06D8"
+        },
+        {
+          "code": "06EC:00",
+          "desc": "Doppelganger 1 Hit Kill",
+          "address": "0x06EC"
+        },
+        {
+          "code": "06ED:01",
+          "desc": "Infinite Keys",
+          "address": "0x06ED"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

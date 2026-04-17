@@ -1,0 +1,129 @@
+{
+  "system": "nes",
+  "normalized_title": "mendelpalace",
+  "display_name": "Mendel Palace (USA) (Game Genie)",
+  "aliases": [
+    "Mendel Palace (USA) (Game Genie)",
+    "Mendel Palace (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\mendelpalace_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0012",
+        "0x012F"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MendelPalace-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x012F",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0012",
+          "type": "<n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mendel Palace (USA).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 15,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "051B:00",
+          "desc": "Automatically Beat A Level",
+          "address": "0x051B"
+        },
+        {
+          "code": "012F:63",
+          "desc": "Infinite Lives",
+          "address": "0x012F"
+        },
+        {
+          "code": "06D7:99",
+          "desc": "Infinite Stars",
+          "address": "0x06D7"
+        },
+        {
+          "code": "000D:09",
+          "desc": "Max High Score",
+          "address": "0x000D"
+        },
+        {
+          "code": "000E:09",
+          "desc": "Max High Score",
+          "address": "0x000E"
+        },
+        {
+          "code": "000F:09",
+          "desc": "Max High Score",
+          "address": "0x000F"
+        },
+        {
+          "code": "0010:09",
+          "desc": "Max High Score",
+          "address": "0x0010"
+        },
+        {
+          "code": "0011:09",
+          "desc": "Max High Score",
+          "address": "0x0011"
+        },
+        {
+          "code": "0012:09",
+          "desc": "Max High Score",
+          "address": "0x0012"
+        },
+        {
+          "code": "0013:09",
+          "desc": "Max Score P1",
+          "address": "0x0013"
+        },
+        {
+          "code": "0014:09",
+          "desc": "Max Score P1",
+          "address": "0x0014"
+        },
+        {
+          "code": "0015:09",
+          "desc": "Max Score P1",
+          "address": "0x0015"
+        },
+        {
+          "code": "0016:09",
+          "desc": "Max Score P1",
+          "address": "0x0016"
+        },
+        {
+          "code": "0017:09",
+          "desc": "Max Score P1",
+          "address": "0x0017"
+        },
+        {
+          "code": "0018:09",
+          "desc": "Max Score P1",
+          "address": "0x0018"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

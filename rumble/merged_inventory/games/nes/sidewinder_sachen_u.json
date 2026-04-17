@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "sidewinderu",
+  "display_name": "Sidewinder (Sachen) [U][!]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Sidewinder (Sachen) [U][!].cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "009A:42",
+          "desc": "P1 Infinite Energy",
+          "address": "0x009A"
+        },
+        {
+          "code": "009B:42",
+          "desc": "P2 Infinite Energy",
+          "address": "0x009B"
+        },
+        {
+          "code": "0326:1F",
+          "desc": "P1 Weapon Type",
+          "address": "0x0326"
+        },
+        {
+          "code": "0327:00",
+          "desc": "P2 Weapon Type",
+          "address": "0x0327"
+        },
+        {
+          "code": "0328:00",
+          "desc": "P1 Shot Speed",
+          "address": "0x0328"
+        },
+        {
+          "code": "0329:00",
+          "desc": "P2 Shot Speed",
+          "address": "0x0329"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "system": "gb",
+  "normalized_title": "outofgas",
+  "display_name": "Out of Gas (USA) (Game Genie)",
+  "aliases": [
+    "Out of Gas (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Out of Gas (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0136DCC0",
+          "desc": "Infinite Time",
+          "address": "0xDCC0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

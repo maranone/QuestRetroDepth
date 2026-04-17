@@ -1,0 +1,131 @@
+{
+  "system": "nes",
+  "normalized_title": "taiyounoyuushafighbird",
+  "display_name": "Taiyou no Yuusha - Fighbird (Japan) (Game Genie)",
+  "aliases": [
+    "Taiyou no Yuusha - Fighbird (Japan) (Game Genie)",
+    "Taiyou no Yuusha - Fighbird (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\taiyounoyuushafighbird_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0098",
+        "0x0099",
+        "0x0591"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TaiyouNoYuushaFighbird-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0098",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0099",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0591",
+          "type": "<n5"
+        },
+        {
+          "name": "time",
+          "address": "0x0612",
+          "type": "<n4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Taiyou no Yuusha - Fighbird (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "0098:06",
+          "desc": "Infinite Energy",
+          "address": "0x0098"
+        },
+        {
+          "code": "0099:03",
+          "desc": "Infinite Lives",
+          "address": "0x0099"
+        },
+        {
+          "code": "0056:00",
+          "desc": "Machine Modifier",
+          "address": "0x0056"
+        },
+        {
+          "code": "0077:00",
+          "desc": "Shot Modifier",
+          "address": "0x0077"
+        },
+        {
+          "code": "0094:00",
+          "desc": "Speed Modifier",
+          "address": "0x0094"
+        },
+        {
+          "code": "00BE:FE",
+          "desc": "Big Ship Always Charged Shot",
+          "address": "0x00BE"
+        },
+        {
+          "code": "00A0:01",
+          "desc": "Can't Be Hit",
+          "address": "0x00A0"
+        },
+        {
+          "code": "0500:00",
+          "desc": "Machine 1 Hit Modifier",
+          "address": "0x0500"
+        },
+        {
+          "code": "0501:00",
+          "desc": "Machine 2 Hit Modifier",
+          "address": "0x0501"
+        },
+        {
+          "code": "0502:00",
+          "desc": "Machine 3 Hit Modifier",
+          "address": "0x0502"
+        },
+        {
+          "code": "0503:00",
+          "desc": "Machine 4 Hit Modifier",
+          "address": "0x0503"
+        },
+        {
+          "code": "0504:00",
+          "desc": "Machine 5 Hit Modifier",
+          "address": "0x0504"
+        },
+        {
+          "code": "0612:09",
+          "desc": "Freeze Timer",
+          "address": "0x0612"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

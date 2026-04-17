@@ -1,0 +1,142 @@
+{
+  "system": "nes",
+  "normalized_title": "ringking",
+  "display_name": "Ring King (USA) (Game Genie)",
+  "aliases": [
+    "Ring King (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ring King (USA).cht",
+      "total_cheat_rows": 28,
+      "raw_entry_count": 24,
+      "distinct_address_count": 22,
+      "sample_raw_entries": [
+        {
+          "code": "0369:EE",
+          "desc": "Infinite Health P1",
+          "address": "0x0369"
+        },
+        {
+          "code": "0319:00",
+          "desc": "No Health P2",
+          "address": "0x0319"
+        },
+        {
+          "code": "06E4:09",
+          "desc": "Infinite Time (Ten's Digit)",
+          "address": "0x06E4"
+        },
+        {
+          "code": "06E5:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x06E5"
+        },
+        {
+          "code": "038D:09",
+          "desc": "Infinite Power P1 (Ten's Digit)",
+          "address": "0x038D"
+        },
+        {
+          "code": "038E:09",
+          "desc": "Infinite Power P1 (One's Digit)",
+          "address": "0x038E"
+        },
+        {
+          "code": "06EC:00",
+          "desc": "No Hits On P1 (Hundred's Digit)",
+          "address": "0x06EC"
+        },
+        {
+          "code": "06ED:00",
+          "desc": "No Hits On P1 (Ten's Digit)",
+          "address": "0x06ED"
+        },
+        {
+          "code": "06EE:00",
+          "desc": "No Hits On P1 (One's Digit)",
+          "address": "0x06EE"
+        },
+        {
+          "code": "038F:09",
+          "desc": "Max Punch P1 (Ten's Digit)",
+          "address": "0x038F"
+        },
+        {
+          "code": "0390:09",
+          "desc": "Max Punch P1 (One's Digit)",
+          "address": "0x0390"
+        },
+        {
+          "code": "0391:09",
+          "desc": "Max Speed P1 (Ten's Digit)",
+          "address": "0x0391"
+        },
+        {
+          "code": "0392:09",
+          "desc": "Max Speed P1 (One's Digit)",
+          "address": "0x0392"
+        },
+        {
+          "code": "0393:09",
+          "desc": "Max Stamina P1 (Ten's Digit)",
+          "address": "0x0393"
+        },
+        {
+          "code": "0394:09",
+          "desc": "Max Stamina P1 (One's Digit)",
+          "address": "0x0394"
+        },
+        {
+          "code": "033F:00",
+          "desc": "No Punch P2 (Ten's Digit)",
+          "address": "0x033F"
+        },
+        {
+          "code": "0340:00",
+          "desc": "No Punch P2 (One's Digit)",
+          "address": "0x0340"
+        },
+        {
+          "code": "0341:00",
+          "desc": "No Speed P2 (Ten's Digit)",
+          "address": "0x0341"
+        },
+        {
+          "code": "0342:00",
+          "desc": "No Speed P2 (One's Digit)",
+          "address": "0x0342"
+        },
+        {
+          "code": "0343:00",
+          "desc": "No Stamina P2 (Ten's Digit)",
+          "address": "0x0343"
+        },
+        {
+          "code": "0344:00",
+          "desc": "No Stamina P2 (One's Digit)",
+          "address": "0x0344"
+        },
+        {
+          "code": "06E4:09",
+          "desc": "Infinite Time",
+          "address": "0x06E4"
+        },
+        {
+          "code": "06E5:09",
+          "desc": "Infinite Time",
+          "address": "0x06E5"
+        },
+        {
+          "code": "06DF:09",
+          "desc": "Instant 10-Count",
+          "address": "0x06DF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

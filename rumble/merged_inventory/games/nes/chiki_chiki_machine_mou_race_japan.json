@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "chikichikimachinemourace",
+  "display_name": "Chiki Chiki Machine Mou Race (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Chiki Chiki Machine Mou Race (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "00A4:01",
+          "desc": "Freeze Time",
+          "address": "0x00A4"
+        },
+        {
+          "code": "045D:63",
+          "desc": "Infinite Lives",
+          "address": "0x045D"
+        },
+        {
+          "code": "0459:09",
+          "desc": "Infinite Health",
+          "address": "0x0459"
+        },
+        {
+          "code": "042F:63",
+          "desc": "99 Gems",
+          "address": "0x042F"
+        },
+        {
+          "code": "0444:01",
+          "desc": "Constant Bombs",
+          "address": "0x0444"
+        },
+        {
+          "code": "0452:00",
+          "desc": "Walk Through Enemies",
+          "address": "0x0452"
+        },
+        {
+          "code": "046C:01",
+          "desc": "Jump In Mid/Walk On Air",
+          "address": "0x046C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

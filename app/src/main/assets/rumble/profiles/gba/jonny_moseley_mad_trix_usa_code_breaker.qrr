@@ -1,0 +1,6 @@
+game_name=Jonny Moseley Mad Trix (USA) (Code Breaker)
+game_key=jonny_moseley_mad_trix_usa_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_020015c8	score	0x020015C8	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_020015ca	score	0x020015CA	1	uint	little	prev < curr	0.8	1	right:0.350:60

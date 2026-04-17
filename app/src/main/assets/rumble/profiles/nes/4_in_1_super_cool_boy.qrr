@@ -1,0 +1,6 @@
+game_name=4-in-1 Super Cool Boy
+game_key=4_in_1_super_cool_boy
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_003e	life_lost	0x003E	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_003e	life_gained	0x003E	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

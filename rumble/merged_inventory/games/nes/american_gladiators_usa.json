@@ -1,0 +1,145 @@
+{
+  "system": "nes",
+  "normalized_title": "americangladiators",
+  "display_name": "American Gladiators (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\American Gladiators (USA).cht",
+      "total_cheat_rows": 39,
+      "raw_entry_count": 34,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "0593:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x0593"
+        },
+        {
+          "code": "07F8:63",
+          "desc": "Infinite Timer [Joust]",
+          "address": "0x07F8"
+        },
+        {
+          "code": "07F1:63",
+          "desc": "Infinite Timer [Human Cannonball]",
+          "address": "0x07F1"
+        },
+        {
+          "code": "047E:63",
+          "desc": "Infinite Timer [The Wall]",
+          "address": "0x047E"
+        },
+        {
+          "code": "07F5:63",
+          "desc": "Infinite Timer [Powerball &amp; Assault]",
+          "address": "0x07F5"
+        },
+        {
+          "code": "PEXALTIA",
+          "desc": "Start with 1 life (player 1)",
+          "address": "0x060B"
+        },
+        {
+          "code": "AEXALTIE",
+          "desc": "Start with 8 lives (player 1)",
+          "address": "0x060B"
+        },
+        {
+          "code": "ZEXALTIE",
+          "desc": "Start with 10 lives (player 1)",
+          "address": "0x060B"
+        },
+        {
+          "code": "GOXALTIA",
+          "desc": "Start with 20 lives (player 1)",
+          "address": "0x061B"
+        },
+        {
+          "code": "PEVALTIA",
+          "desc": "Start with 1 life (player 2)",
+          "address": "0x060B"
+        },
+        {
+          "code": "AEVALTIE",
+          "desc": "Start with 8 lives (player 2)",
+          "address": "0x060B"
+        },
+        {
+          "code": "ZEVALTIE",
+          "desc": "Start with 10 lives (player 2)",
+          "address": "0x060B"
+        },
+        {
+          "code": "GOVALTIA",
+          "desc": "Start with 20 lives (player 2)",
+          "address": "0x061B"
+        },
+        {
+          "code": "PEXAPTAA",
+          "desc": "Start on level 2 (player 1)",
+          "address": "0x0609"
+        },
+        {
+          "code": "ZEXAPTAA",
+          "desc": "Start on level 3 (player 1)",
+          "address": "0x0609"
+        },
+        {
+          "code": "LEXAPTAA",
+          "desc": "Start on level 4 (player 1)",
+          "address": "0x0609"
+        },
+        {
+          "code": "PEVAPTAA",
+          "desc": "Start on level 2 (player 2)",
+          "address": "0x0609"
+        },
+        {
+          "code": "ZEVAPTAA",
+          "desc": "Start on level 3 (player 2)",
+          "address": "0x0609"
+        },
+        {
+          "code": "LEVAPTAA",
+          "desc": "Start on level 4 (player 2)",
+          "address": "0x0609"
+        },
+        {
+          "code": "GLUOZGLV",
+          "desc": "Less joust time",
+          "address": "0x04BA"
+        },
+        {
+          "code": "GLOEGALV",
+          "desc": "Less cannonball time",
+          "address": "0x00BC"
+        },
+        {
+          "code": "GZEPGOVK",
+          "desc": "Stop cannonball time",
+          "address": "0x012C"
+        },
+        {
+          "code": "LTXATNIL",
+          "desc": "More assault tim",
+          "address": "0x076E"
+        },
+        {
+          "code": "PZXATNIU",
+          "desc": "Less assault time",
+          "address": "0x072E"
+        },
+        {
+          "code": "GZSAINVK",
+          "desc": "Stop assault timer",
+          "address": "0x072D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "razorfreestylescooter",
+  "display_name": "Razor Freestyle Scooter (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Razor Freestyle Scooter (USA) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "100018F8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020018F8"
+        },
+        {
+          "code": "820005F4",
+          "desc": "Max Wheels",
+          "address": "0x020005F4"
+        },
+        {
+          "code": "82002F78",
+          "desc": "Infinite Time",
+          "address": "0x02002F78"
+        },
+        {
+          "code": "82002F7A",
+          "desc": "Infinite Time",
+          "address": "0x02002F7A"
+        },
+        {
+          "code": "82002F7C",
+          "desc": "Infinite Time",
+          "address": "0x02002F7C"
+        },
+        {
+          "code": "82003834",
+          "desc": "Max Special Meter",
+          "address": "0x02003834"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Razor Freestyle Scooter (USA) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "100018F8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020018F8"
+        },
+        {
+          "code": "820005F4",
+          "desc": "Max Wheels",
+          "address": "0x020005F4"
+        },
+        {
+          "code": "82002F78",
+          "desc": "Infinite Time",
+          "address": "0x02002F78"
+        },
+        {
+          "code": "82002F7A",
+          "desc": "Infinite Time",
+          "address": "0x02002F7A"
+        },
+        {
+          "code": "82002F7C",
+          "desc": "Infinite Time",
+          "address": "0x02002F7C"
+        },
+        {
+          "code": "82003834",
+          "desc": "Max Special Meter",
+          "address": "0x02003834"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

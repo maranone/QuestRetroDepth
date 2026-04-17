@@ -1,0 +1,14 @@
+game_name=Hanjuku Hero - Ah, Sekai yo Hanjuku Nare...!! (Japan)
+game_key=hanjuku_hero_ah_sekai_yo_hanjuku_nare_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_03f0	damage_taken	0x7E03F0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03f0	death	0x7E03F0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_03f1	damage_taken	0x7E03F1	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03f1	death	0x7E03F1	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_03e4	damage_taken	0x7E03E4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03e4	death	0x7E03E4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_03e5	damage_taken	0x7E03E5	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03e5	death	0x7E03E5	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_1608	pickup	0x7E1608	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_1609	pickup	0x7E1609	1	uint	little	prev != curr	0.8	1	right:0.250:18

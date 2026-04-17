@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "threestooges",
+  "display_name": "Three Stooges, The (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Three Stooges, The (USA) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 8,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1000ECD8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200ECD8"
+        },
+        {
+          "code": "720109F4",
+          "desc": "Start With $10000",
+          "address": "0x020109F4"
+        },
+        {
+          "code": "820109F4",
+          "desc": "Start With $10000",
+          "address": "0x020109F4"
+        },
+        {
+          "code": "720109F4",
+          "desc": "Infinite Lives (Doctors)",
+          "address": "0x020109F4"
+        },
+        {
+          "code": "820034C0",
+          "desc": "Infinite Lives (Doctors)",
+          "address": "0x020034C0"
+        },
+        {
+          "code": "720109F4",
+          "desc": "Infinite Lives (Grocers)",
+          "address": "0x020109F4"
+        },
+        {
+          "code": "820034C0",
+          "desc": "Infinite Lives (Grocers)",
+          "address": "0x020034C0"
+        },
+        {
+          "code": "820109B4",
+          "desc": "Always Win $1000",
+          "address": "0x020109B4"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Three Stooges, The (USA) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 8,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1000ECD8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200ECD8"
+        },
+        {
+          "code": "720109F4",
+          "desc": "Start With $10000",
+          "address": "0x020109F4"
+        },
+        {
+          "code": "820109F4",
+          "desc": "Start With $10000",
+          "address": "0x020109F4"
+        },
+        {
+          "code": "720109F4",
+          "desc": "Infinite Lives (Doctors)",
+          "address": "0x020109F4"
+        },
+        {
+          "code": "820034C0",
+          "desc": "Infinite Lives (Doctors)",
+          "address": "0x020034C0"
+        },
+        {
+          "code": "720109F4",
+          "desc": "Infinite Lives (Grocers)",
+          "address": "0x020109F4"
+        },
+        {
+          "code": "820034C0",
+          "desc": "Infinite Lives (Grocers)",
+          "address": "0x020034C0"
+        },
+        {
+          "code": "820109B4",
+          "desc": "Always Win $1000",
+          "address": "0x020109B4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

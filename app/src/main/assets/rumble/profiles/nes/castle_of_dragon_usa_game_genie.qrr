@@ -1,0 +1,13 @@
+game_name=Castle of Dragon (USA) (Game Genie)
+game_key=castle_of_dragon_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_030a	damage_taken	0x030A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_030a	death	0x030A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0536	damage_taken	0x0536	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0536	death	0x0536	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_032a	enemy_defeated	0x032A	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0343	enemy_defeated	0x0343	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0353	enemy_defeated	0x0353	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0363	enemy_defeated	0x0363	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	level_complete_level_052a	level_complete	0x052A	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

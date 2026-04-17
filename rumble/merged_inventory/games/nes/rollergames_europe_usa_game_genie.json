@@ -1,0 +1,187 @@
+{
+  "system": "nes",
+  "normalized_title": "rollergames",
+  "display_name": "Rollergames (Europe, USA) (Game Genie)",
+  "aliases": [
+    "Rollergames (Europe, USA) (Game Genie)",
+    "Rollergames (Rumbles)",
+    "Rollergames (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\rollergames_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0032",
+        "0x04CE",
+        "0x07E5"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Rollergames-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x04CE",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0032",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x07E5",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rollergames (USA).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 26,
+      "distinct_address_count": 22,
+      "sample_raw_entries": [
+        {
+          "code": "PASAZALE",
+          "desc": "9 special moves",
+          "address": "0x000A"
+        },
+        {
+          "code": "TASAZALA",
+          "desc": "6 special moves",
+          "address": "0x000A"
+        },
+        {
+          "code": "GXVPAZVG",
+          "desc": "Infinite special moves",
+          "address": "0x0228"
+        },
+        {
+          "code": "TASATEGA",
+          "desc": "Start with less energy",
+          "address": "0x000E"
+        },
+        {
+          "code": "APSATEGE",
+          "desc": "Start with more energy",
+          "address": "0x001E"
+        },
+        {
+          "code": "PAKAAGAE",
+          "desc": "Mega-jump",
+          "address": "0x0408"
+        },
+        {
+          "code": "GZOENISA",
+          "desc": "Stop timer",
+          "address": "0x05AF"
+        },
+        {
+          "code": "YPOAUSYU",
+          "desc": "Faster timer",
+          "address": "0x051B"
+        },
+        {
+          "code": "YYOAUSYU",
+          "desc": "Slower timer",
+          "address": "0x057B"
+        },
+        {
+          "code": "04CE:0C",
+          "desc": "Infinite Energy",
+          "address": "0x04CE"
+        },
+        {
+          "code": "0082:10",
+          "desc": "Infinite Time",
+          "address": "0x0082"
+        },
+        {
+          "code": "0032:03",
+          "desc": "Infinite Lives",
+          "address": "0x0032"
+        },
+        {
+          "code": "SPSEGVSU",
+          "desc": "Infinite  Energy",
+          "address": "0x069C"
+        },
+        {
+          "code": "0030:00",
+          "desc": "Stage Select",
+          "address": "0x0030"
+        },
+        {
+          "code": "0082:99",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x0082"
+        },
+        {
+          "code": "0081:09",
+          "desc": "Infinite Time (Hundred's Digit)",
+          "address": "0x0081"
+        },
+        {
+          "code": "0032:99",
+          "desc": "Infinite Lives P1",
+          "address": "0x0032"
+        },
+        {
+          "code": "0094:09",
+          "desc": "Infinite Special Moves P1",
+          "address": "0x0094"
+        },
+        {
+          "code": "04CE:0F",
+          "desc": "Infinite Health P1",
+          "address": "0x04CE"
+        },
+        {
+          "code": "0080:09",
+          "desc": "Removes All HUDs",
+          "address": "0x0080"
+        },
+        {
+          "code": "ZAVAPGIL",
+          "desc": "Higher Faster Jump",
+          "address": "0x0409"
+        },
+        {
+          "code": "ENEEIGEI",
+          "desc": "High Slower Jump",
+          "address": "0x04FD"
+        },
+        {
+          "code": "AEEETGAG",
+          "desc": "High Slower Jump",
+          "address": "0x048E"
+        },
+        {
+          "code": "AASEGGPA",
+          "desc": "Bypassing Platforms (Switch off to jump)",
+          "address": "0x048C"
+        },
+        {
+          "code": "AZUEGGEA",
+          "desc": "Press SELECT Button To Jump Instead of A",
+          "address": "0x04AC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

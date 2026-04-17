@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "ultimatemusclekinnikumanlegacypathofsuperhero",
+  "display_name": "Ultimate Muscle - The Kinnikuman Legacy - The Path of the Superhero (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Ultimate Muscle - The Kinnikuman Legacy - The Path of the Superhero (USA) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1003C398",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0203C398"
+        },
+        {
+          "code": "33006E05",
+          "desc": "Infinite Health",
+          "address": "0x02006E05"
+        },
+        {
+          "code": "33006E0B",
+          "desc": "Infinite Special",
+          "address": "0x02006E0B"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Ultimate Muscle - The Kinnikuman Legacy - The Path of the Superhero (USA) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1003C398",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0203C398"
+        },
+        {
+          "code": "33006E05",
+          "desc": "Infinite Health",
+          "address": "0x02006E05"
+        },
+        {
+          "code": "33006E0B",
+          "desc": "Infinite Special",
+          "address": "0x02006E0B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

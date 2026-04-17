@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "eternalcitytoshitensoukeikaku",
+  "display_name": "Eternal City - Toshi Tensou Keikaku (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Eternal City - Toshi Tensou Keikaku (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f0532:50",
+          "desc": "Max Weapon",
+          "address": "0x1F0532"
+        },
+        {
+          "code": "1f0508:50",
+          "desc": "Max Shield",
+          "address": "0x1F0508"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

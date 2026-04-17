@@ -1,0 +1,73 @@
+{
+  "system": "nes",
+  "normalized_title": "wizardsandwarriors",
+  "display_name": "Wizards & Warriors (USA)",
+  "aliases": [
+    "Wizards & Warriors (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\wizardsandwarriors_nes.json",
+      "trigger_count": 7,
+      "field_names": [
+        "health",
+        "lives",
+        "score0",
+        "score1",
+        "score2"
+      ],
+      "field_count": 5,
+      "distinct_addresses": [
+        "0x0070",
+        "0x0071",
+        "0x0072",
+        "0x0076",
+        "0x0077"
+      ],
+      "distinct_address_count": 5
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\WizardsAndWarriors-Nes-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0076",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0077",
+          "type": "|i1"
+        },
+        {
+          "name": "score0",
+          "address": "0x0072",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0x0071",
+          "type": "|u1"
+        },
+        {
+          "name": "score2",
+          "address": "0x0070",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Wizards & Warriors (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

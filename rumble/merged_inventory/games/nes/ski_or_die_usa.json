@@ -1,0 +1,85 @@
+{
+  "system": "nes",
+  "normalized_title": "skiordie",
+  "display_name": "Ski or Die (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ski or Die (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 13,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "OOEPVAAV",
+          "desc": "Start with more time",
+          "address": "0x001E"
+        },
+        {
+          "code": "AKEPVAAT",
+          "desc": "Start with less time",
+          "address": "0x004E"
+        },
+        {
+          "code": "GAUPVAZA",
+          "desc": "Start with more ammo",
+          "address": "0x000E"
+        },
+        {
+          "code": "PAUPVAZA",
+          "desc": "Start with less ammo",
+          "address": "0x000E"
+        },
+        {
+          "code": "0088:06",
+          "desc": "P1 Has Infinite Air In Tubing",
+          "address": "0x0088"
+        },
+        {
+          "code": "0089:06",
+          "desc": "P2/CPU Has No Air In Tubing",
+          "address": "0x0089"
+        },
+        {
+          "code": "005B:99",
+          "desc": "P1 Has Infinite Snowballs (Ten's &amp; One's Digits)",
+          "address": "0x005B"
+        },
+        {
+          "code": "005C:09",
+          "desc": "P1 Has Infinite Snowballs (Hundred's Digit)",
+          "address": "0x005C"
+        },
+        {
+          "code": "0070:00",
+          "desc": "P1 Has Zero Kids Left",
+          "address": "0x0070"
+        },
+        {
+          "code": "0060:00",
+          "desc": "Time Modifier",
+          "address": "0x0060"
+        },
+        {
+          "code": "005C:00",
+          "desc": "Low Timer (Minutes)",
+          "address": "0x005C"
+        },
+        {
+          "code": "005D:00",
+          "desc": "Low Timer (Seconds)",
+          "address": "0x005D"
+        },
+        {
+          "code": "005C:99",
+          "desc": "Have A Score of 9.9",
+          "address": "0x005C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

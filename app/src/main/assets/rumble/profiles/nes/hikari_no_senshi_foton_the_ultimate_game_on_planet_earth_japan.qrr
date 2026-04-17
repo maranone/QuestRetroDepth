@@ -1,0 +1,6 @@
+game_name=Hikari no Senshi Foton - The Ultimate Game on Planet Earth (Japan)
+game_key=hikari_no_senshi_foton_the_ultimate_game_on_planet_earth_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_020f	damage_taken	0x020F	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020f	death	0x020F	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

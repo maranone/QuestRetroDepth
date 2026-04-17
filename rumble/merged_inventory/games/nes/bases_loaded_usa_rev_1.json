@@ -1,0 +1,73 @@
+{
+  "system": "nes",
+  "normalized_title": "basesloaded",
+  "display_name": "Bases Loaded (USA) (Rev 1)",
+  "aliases": [
+    "Bases Loaded (USA) (Rev 2)",
+    "Bases Loaded (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bases Loaded (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "0418:00",
+          "desc": "1st Player Score Modifier",
+          "address": "0x0418"
+        },
+        {
+          "code": "0419:00",
+          "desc": "1st Player Score Modifier",
+          "address": "0x0419"
+        },
+        {
+          "code": "0426:00",
+          "desc": "2nd Player Score Modifier",
+          "address": "0x0426"
+        },
+        {
+          "code": "0427:00",
+          "desc": "2nd Player Score Modifier",
+          "address": "0x0427"
+        },
+        {
+          "code": "0068:09",
+          "desc": "Computer Only Throws Balls",
+          "address": "0x0068"
+        },
+        {
+          "code": "0426:00",
+          "desc": "P2/CPU Never Scores",
+          "address": "0x0426"
+        },
+        {
+          "code": "0427:00",
+          "desc": "Runs In The Inning Modifier P2/CPU",
+          "address": "0x0427"
+        },
+        {
+          "code": "0771:00",
+          "desc": "Outs Modifier",
+          "address": "0x0771"
+        },
+        {
+          "code": "0772:00",
+          "desc": "Strikes Modifier",
+          "address": "0x0772"
+        },
+        {
+          "code": "0773:00",
+          "desc": "Balls Modifier",
+          "address": "0x0773"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

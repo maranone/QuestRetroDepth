@@ -1,0 +1,16 @@
+game_name=Magic Knight Rayearth (Japan) (Action Replay)
+game_key=magic_knight_rayearth_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_0d8a	pickup	0x7E0D8A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0d8b	pickup	0x7E0D8B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0d8c	pickup	0x7E0D8C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_0dd3	damage_taken	0x7E0DD3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0dd3	death	0x7E0DD3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0dd4	damage_taken	0x7E0DD4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0dd4	death	0x7E0DD4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0dd5	damage_taken	0x7E0DD5	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0dd5	death	0x7E0DD5	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0dd6	damage_taken	0x7E0DD6	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0dd6	death	0x7E0DD6	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_0ddc	level_complete	0x7E0DDC	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

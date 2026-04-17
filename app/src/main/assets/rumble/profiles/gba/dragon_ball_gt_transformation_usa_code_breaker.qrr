@@ -1,0 +1,11 @@
+game_name=Dragon Ball GT - Transformation (USA) (Code Breaker)
+game_key=dragon_ball_gt_transformation_usa_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_02001d0c	score	0x02001D0C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02001d0e	score	0x02001D0E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	damage_taken_health_02001af6	damage_taken	0x02001AF6	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02001af6	death	0x02001AF6	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02001af8	damage_taken	0x02001AF8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02001af8	death	0x02001AF8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_02001d04	level_complete	0x02001D04	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

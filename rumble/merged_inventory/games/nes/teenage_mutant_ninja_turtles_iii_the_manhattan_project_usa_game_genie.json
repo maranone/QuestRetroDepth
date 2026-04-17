@@ -1,0 +1,175 @@
+{
+  "system": "nes",
+  "normalized_title": "teenagemutantninjaturtlesiiimanhattanproject",
+  "display_name": "Teenage Mutant Ninja Turtles III - The Manhattan Project (USA) (Game Genie)",
+  "aliases": [
+    "Teenage Mutant Ninja Turtles III - The Manhattan Project (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Teenage Mutant Ninja Turtles III - The Manhattan Project (USA).cht",
+      "total_cheat_rows": 50,
+      "raw_entry_count": 29,
+      "distinct_address_count": 23,
+      "sample_raw_entries": [
+        {
+          "code": "002E:01",
+          "desc": "Enable Hidden OPTION Menu After Choosing Your Character",
+          "address": "0x002E"
+        },
+        {
+          "code": "04FF:14",
+          "desc": "Almost Invincible",
+          "address": "0x04FF"
+        },
+        {
+          "code": "AASEZEPA",
+          "desc": "Push start or select to view all the demos",
+          "address": "0x008A"
+        },
+        {
+          "code": "AEOAALLA",
+          "desc": "Start with 1 life instead of 4",
+          "address": "0x0308"
+        },
+        {
+          "code": "IEOAALLA",
+          "desc": "Start with 6 lives",
+          "address": "0x0308"
+        },
+        {
+          "code": "AEOAALLE",
+          "desc": "Start with 9 lives",
+          "address": "0x0308"
+        },
+        {
+          "code": "ZXOAALLA",
+          "desc": "Infinite Lives Debug",
+          "address": "0x0328"
+        },
+        {
+          "code": "YAOALPGA",
+          "desc": "Start a New Game to View Credits",
+          "address": "0x010B"
+        },
+        {
+          "code": "04F1:27",
+          "desc": "Infinite Health P1",
+          "address": "0x04F1"
+        },
+        {
+          "code": "04F2:27",
+          "desc": "Infinite Health P2",
+          "address": "0x04F2"
+        },
+        {
+          "code": "006A:05",
+          "desc": "Infinite Lives P1",
+          "address": "0x006A"
+        },
+        {
+          "code": "006B:05",
+          "desc": "Infinite Lives P2",
+          "address": "0x006B"
+        },
+        {
+          "code": "0068:00",
+          "desc": "Character Highlighted Modifier P1",
+          "address": "0x0068"
+        },
+        {
+          "code": "0069:00",
+          "desc": "Character Highlighted Modifier P2",
+          "address": "0x0069"
+        },
+        {
+          "code": "07B0:05",
+          "desc": "Infinite Continues",
+          "address": "0x07B0"
+        },
+        {
+          "code": "002E:01",
+          "desc": "Enable Hidden OPTION Menu After Choosing Your Turtle",
+          "address": "0x002E"
+        },
+        {
+          "code": "04F1:7F",
+          "desc": "Infinite Health P1",
+          "address": "0x04F1"
+        },
+        {
+          "code": "04F2:7F",
+          "desc": "Infinite Health P2",
+          "address": "0x04F2"
+        },
+        {
+          "code": "002D:00",
+          "desc": "Hidden Option Menu's Level Highlighter Modifier",
+          "address": "0x002D"
+        },
+        {
+          "code": "0058:00",
+          "desc": "Level Modifier",
+          "address": "0x0058"
+        },
+        {
+          "code": "006C:63",
+          "desc": "P1 Quickly Gains Tons of Points",
+          "address": "0x006C"
+        },
+        {
+          "code": "006D:63",
+          "desc": "P1 Quickly Gains Tons of Points",
+          "address": "0x006D"
+        },
+        {
+          "code": "006E:63",
+          "desc": "P2 Quickly Gains Tons of Points",
+          "address": "0x006E"
+        },
+        {
+          "code": "006F:63",
+          "desc": "P2 Quickly Gains Tons of Points",
+          "address": "0x006F"
+        },
+        {
+          "code": "0628:00",
+          "desc": "1-Hit Kills Bosses",
+          "address": "0x0628"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Teenage Mutant Ninja Turtles III - The Manhattan Project (USA).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "AEOAALLA",
+          "desc": "Start With 1 Life Instead Of 4",
+          "address": "0x0308"
+        },
+        {
+          "code": "IEOAALLA",
+          "desc": "Start With 6 Lives",
+          "address": "0x0308"
+        },
+        {
+          "code": "AEOAALLE",
+          "desc": "Start With 9 Lives",
+          "address": "0x0308"
+        },
+        {
+          "code": "AASEZEPA",
+          "desc": "Push Start Or Select To View All The Demos (You'll Have To Turn The Code Off To Play The Game)",
+          "address": "0x008A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

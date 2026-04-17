@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "taitograndprixeikouenolicense",
+  "display_name": "Taito Grand Prix - Eikou e no License (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Taito Grand Prix - Eikou e no License (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "05B8:37",
+          "desc": "Infinite Time",
+          "address": "0x05B8"
+        },
+        {
+          "code": "0116:00",
+          "desc": "Freeze Timer",
+          "address": "0x0116"
+        },
+        {
+          "code": "073B:99",
+          "desc": "Infinite Money",
+          "address": "0x073B"
+        },
+        {
+          "code": "073C:99",
+          "desc": "Infinite Money",
+          "address": "0x073C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

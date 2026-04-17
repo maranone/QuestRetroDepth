@@ -1,0 +1,33 @@
+{
+  "system": "nes",
+  "normalized_title": "topgunsecondmission",
+  "display_name": "Top Gun - The Second Mission (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Top Gun - The Second Mission (USA, Europe) (Action Replay)",
+    "Top Gun - The Second Mission (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Top Gun - The Second Mission (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "AAKEUYPA",
+          "desc": "Infinite Missiles (1-Player Game)",
+          "address": "0x078B"
+        },
+        {
+          "code": "AENAZIPA",
+          "desc": "Infinite Missiles (2-Player Game)",
+          "address": "0x050A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Super Goal! 2 (USA)
+game_key=super_goal_2_usa
+system=snes
+integration_tier=contrib
+trigger	score_score_0f00	score	0x7E0F00	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0f02	score	0x7E0F02	1	uint	little	prev < curr	0.8	1	right:0.350:60

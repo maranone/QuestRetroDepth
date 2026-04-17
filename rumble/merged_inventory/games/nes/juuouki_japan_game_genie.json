@@ -1,0 +1,67 @@
+{
+  "system": "nes",
+  "normalized_title": "juuouki",
+  "display_name": "Juuouki (Japan) (Game Genie)",
+  "aliases": [
+    "Juuouki (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Juuouki (Japan).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0044:06",
+          "desc": "Start as Altered Beast",
+          "address": "0x0044"
+        },
+        {
+          "code": "0045:07",
+          "desc": "Start as Altered Beast",
+          "address": "0x0045"
+        },
+        {
+          "code": "0072:03",
+          "desc": "Start as Altered Beast",
+          "address": "0x0072"
+        },
+        {
+          "code": "0048:00",
+          "desc": "Stage Modifier",
+          "address": "0x0048"
+        },
+        {
+          "code": "0092:0C",
+          "desc": "Infinite Health",
+          "address": "0x0092"
+        },
+        {
+          "code": "0093:03",
+          "desc": "Infinite Lives",
+          "address": "0x0093"
+        },
+        {
+          "code": "00B2:10",
+          "desc": "Walk Through Enemies",
+          "address": "0x00B2"
+        },
+        {
+          "code": "04FC:00",
+          "desc": "Boss Dies",
+          "address": "0x04FC"
+        },
+        {
+          "code": "03DE:00",
+          "desc": "Don't Get Knocked Back From Damage",
+          "address": "0x03DE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "system": "nes",
+  "normalized_title": "pipedream",
+  "display_name": "Pipe Dream (USA) (Game Genie)",
+  "aliases": [
+    "Pipe Dream (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Pipe Dream (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 6,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "PAOALPLA",
+          "desc": "Start with 1 wrench",
+          "address": "0x010B"
+        },
+        {
+          "code": "TAOALPLA",
+          "desc": "Start with 6 wrenches",
+          "address": "0x010B"
+        },
+        {
+          "code": "PAOALPLE",
+          "desc": "Start with 9 wrenches",
+          "address": "0x010B"
+        },
+        {
+          "code": "KEUAUVSE",
+          "desc": "Tunnels galore",
+          "address": "0x060B"
+        },
+        {
+          "code": "00AC:00",
+          "desc": "Infinite Time To Place Pipes",
+          "address": "0x00AC"
+        },
+        {
+          "code": "00AF:00",
+          "desc": "Infinite Time To Place Pipes",
+          "address": "0x00AF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

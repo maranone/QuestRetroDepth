@@ -1,0 +1,90 @@
+{
+  "system": "nes",
+  "normalized_title": "noahsark",
+  "display_name": "Noah's Ark (Europe)",
+  "aliases": [
+    "Noah's Ark (Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\noahsark_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0009",
+        "0x03AE",
+        "0x03F3"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\NoahsArk-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0009",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x03AE",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x03F3",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Noah's Ark (Europe).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "03AE:0A",
+          "desc": "Infinite Lives",
+          "address": "0x03AE"
+        },
+        {
+          "code": "0009:00",
+          "desc": "Infinite Energy",
+          "address": "0x0009"
+        },
+        {
+          "code": "03AC:DD",
+          "desc": "Water Stops Going Up",
+          "address": "0x03AC"
+        },
+        {
+          "code": "002E:02",
+          "desc": "Invincibility",
+          "address": "0x002E"
+        },
+        {
+          "code": "SKNEGUVK",
+          "desc": "Infinite Lives",
+          "address": "0x03CC"
+        },
+        {
+          "code": "SKSAVEVK",
+          "desc": "Infinite Lives",
+          "address": "0x004E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

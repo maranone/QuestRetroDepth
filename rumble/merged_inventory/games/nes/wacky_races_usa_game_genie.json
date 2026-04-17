@@ -1,0 +1,57 @@
+{
+  "system": "nes",
+  "normalized_title": "wackyraces",
+  "display_name": "Wacky Races (USA) (Game Genie)",
+  "aliases": [
+    "Wacky Races (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wacky Races (USA).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "0459:03",
+          "desc": "Infinite Energy",
+          "address": "0x0459"
+        },
+        {
+          "code": "0452:11",
+          "desc": "Invincibility",
+          "address": "0x0452"
+        },
+        {
+          "code": "0453:01",
+          "desc": "Alternate Invincibility",
+          "address": "0x0453"
+        },
+        {
+          "code": "00A4:59",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x00A4"
+        },
+        {
+          "code": "042F:63",
+          "desc": "Infinite Gems",
+          "address": "0x042F"
+        },
+        {
+          "code": "045D:63",
+          "desc": "Infinite Lives",
+          "address": "0x045D"
+        },
+        {
+          "code": "0459:03",
+          "desc": "Infinite Hits (Hearts)",
+          "address": "0x0459"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

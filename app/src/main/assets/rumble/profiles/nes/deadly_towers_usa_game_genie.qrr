@@ -1,0 +1,18 @@
+game_name=Deadly Towers (USA) (Game Genie)
+game_key=deadly_towers_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_01b3	damage_taken	0x01B3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_01b3	death	0x01B3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_00a3	enemy_defeated	0x00A3	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	pickup_coins_0176	pickup	0x0176	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0177	pickup	0x0177	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0178	pickup	0x0178	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0179	pickup	0x0179	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_017a	pickup	0x017A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_017b	pickup	0x017B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_017c	pickup	0x017C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_017d	pickup	0x017D	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_017e	pickup	0x017E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_009a	damage_taken	0x009A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_009a	death	0x009A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

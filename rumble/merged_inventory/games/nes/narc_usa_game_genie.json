@@ -1,0 +1,179 @@
+{
+  "system": "nes",
+  "normalized_title": "narc",
+  "display_name": "NARC (USA) (Game Genie)",
+  "aliases": [
+    "NARC (USA) (Game Genie)",
+    "NARC (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\narc_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0097",
+        "0x07B5"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\NARC-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0097",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x07B5",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\NARC (USA).cht",
+      "total_cheat_rows": 79,
+      "raw_entry_count": 73,
+      "distinct_address_count": 47,
+      "sample_raw_entries": [
+        {
+          "code": "ENVAGAIL",
+          "desc": "Start With About 170 Missiles",
+          "address": "0x007C"
+        },
+        {
+          "code": "YYUAZPZE",
+          "desc": "Start With Lots of Lives",
+          "address": "0x017A"
+        },
+        {
+          "code": "NYSPTLZE",
+          "desc": "You Pick Up Infinite Bullets",
+          "address": "0x037E"
+        },
+        {
+          "code": "00A8:00",
+          "desc": "P1 Infinite Health [Alternate]",
+          "address": "0x00A8"
+        },
+        {
+          "code": "005E:71",
+          "desc": "P1 Invincibility",
+          "address": "0x005E"
+        },
+        {
+          "code": "0098:05",
+          "desc": "Infinite Lives P2",
+          "address": "0x0098"
+        },
+        {
+          "code": "00A1:58",
+          "desc": "Infinite Energy P2",
+          "address": "0x00A1"
+        },
+        {
+          "code": "07AE:39",
+          "desc": "Infinite Bullets P2 [Ten's Digit]",
+          "address": "0x07AE"
+        },
+        {
+          "code": "07AF:39",
+          "desc": "Infinite Bullets P2 [One's Digit]",
+          "address": "0x07AF"
+        },
+        {
+          "code": "07A2:39",
+          "desc": "Infinite &quot;Drug Baggies&quot; P2 [Ten's Digit]",
+          "address": "0x07A2"
+        },
+        {
+          "code": "07A3:39",
+          "desc": "Infinite &quot;Drug Baggies&quot; P2 [One's Digit]",
+          "address": "0x07A3"
+        },
+        {
+          "code": "07B2:39",
+          "desc": "Infinite Missiles P2 [Ten's Digit]",
+          "address": "0x07B2"
+        },
+        {
+          "code": "07B3:39",
+          "desc": "Infinite Missiles P2 [One's Digit]",
+          "address": "0x07B3"
+        },
+        {
+          "code": "07A6:39",
+          "desc": "Infinite Money P2 [Ten's Digit]",
+          "address": "0x07A6"
+        },
+        {
+          "code": "07A7:39",
+          "desc": "Infinite Money P2 [One's Digit]",
+          "address": "0x07A7"
+        },
+        {
+          "code": "07AA:39",
+          "desc": "Infinite Drug Busts P2 [Ten's Digit]",
+          "address": "0x07AA"
+        },
+        {
+          "code": "07AB:39",
+          "desc": "Infinite Drug Busts P2 [One's Digit]",
+          "address": "0x07AB"
+        },
+        {
+          "code": "00A9:00",
+          "desc": "P2 Infinite Health [Alternate]",
+          "address": "0x00A9"
+        },
+        {
+          "code": "005F:71",
+          "desc": "P2 Invincibility",
+          "address": "0x005F"
+        },
+        {
+          "code": "07C0:39",
+          "desc": "Max Score Tens P2",
+          "address": "0x07C0"
+        },
+        {
+          "code": "07BF:39",
+          "desc": "Max Score Hundreds P2",
+          "address": "0x07BF"
+        },
+        {
+          "code": "07BE:39",
+          "desc": "Max Score Thousands P2",
+          "address": "0x07BE"
+        },
+        {
+          "code": "07BD:39",
+          "desc": "Max Score Hundred-Thousands P2",
+          "address": "0x07BD"
+        },
+        {
+          "code": "07BC:39",
+          "desc": "Max Score Millions P2",
+          "address": "0x07BC"
+        },
+        {
+          "code": "07BB:39",
+          "desc": "Max Score Hundred-Millions P2",
+          "address": "0x07BB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,8 @@
+game_name=Tony Hawk's Pro Skater 2 (USA, Europe) (GameShark)
+game_key=tony_hawk_s_pro_skater_2_usa_europe_gameshark
+system=gbc
+integration_tier=contrib
+trigger	pickup_coins_c5c5	pickup	0xC5C5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_c6c5	pickup	0xC6C5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_d0c5	pickup	0xD0C5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_d1c5	pickup	0xD1C5	1	uint	little	prev != curr	0.8	1	right:0.250:18

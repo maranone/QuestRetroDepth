@@ -1,0 +1,90 @@
+{
+  "system": "nes",
+  "normalized_title": "trackfieldii",
+  "display_name": "Track _ Field II (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Track _ Field II (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 14,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "0066:FF",
+          "desc": "Max. Power/Max. Auto Run Speed [Player 1]",
+          "address": "0x0066"
+        },
+        {
+          "code": "0067:FF",
+          "desc": "Max. Power/Max. Auto Run Speed [Player 2]",
+          "address": "0x0067"
+        },
+        {
+          "code": "0045:FF",
+          "desc": "Infinite Oxygen For Freestyle Swimming Event [Player 1]",
+          "address": "0x0045"
+        },
+        {
+          "code": "0046:FF",
+          "desc": "Infinite Oxygen For Freestyle Swimming Event [Player 2]",
+          "address": "0x0046"
+        },
+        {
+          "code": "0047:FF",
+          "desc": "Max. Power/Infinite Health [Player 1]",
+          "address": "0x0047"
+        },
+        {
+          "code": "0048:FF",
+          "desc": "Max. Power/Infinite Health [Player 2]",
+          "address": "0x0048"
+        },
+        {
+          "code": "0066:FF",
+          "desc": "Max. Power/Max. Auto Run Speed (Player 1)",
+          "address": "0x0066"
+        },
+        {
+          "code": "0067:FF",
+          "desc": "Max. Power/Max. Auto Run Speed (Player 2)",
+          "address": "0x0067"
+        },
+        {
+          "code": "0045:FF",
+          "desc": "Infinite Oxygen For Freestyle Swimming Event (Player 1)",
+          "address": "0x0045"
+        },
+        {
+          "code": "0046:FF",
+          "desc": "Infinite Oxygen For Freestyle Swimming Event (Player 2)",
+          "address": "0x0046"
+        },
+        {
+          "code": "0047:FF",
+          "desc": "Max. Power/Infinite Health (Player 1)",
+          "address": "0x0047"
+        },
+        {
+          "code": "0048:FF",
+          "desc": "Max. Power/Infinite Health (Player 2)",
+          "address": "0x0048"
+        },
+        {
+          "code": "0050:20",
+          "desc": "P1 Score Modifier",
+          "address": "0x0050"
+        },
+        {
+          "code": "0051:00",
+          "desc": "CPU/P2 Score Modifier",
+          "address": "0x0051"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "system": "nes",
+  "normalized_title": "soccer",
+  "display_name": "Soccer (World) (Game Genie)",
+  "aliases": [
+    "Soccer (Japan, USA)",
+    "Soccer (World) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Soccer (World) (Game Genie).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "APOOKZIP",
+          "desc": "Each Half Lasts Only 10 Minutes",
+          "address": "0x029C"
+        },
+        {
+          "code": "AIOOKZIP",
+          "desc": "Each Half Lasts For 50 Minutes!",
+          "address": "0x02DC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

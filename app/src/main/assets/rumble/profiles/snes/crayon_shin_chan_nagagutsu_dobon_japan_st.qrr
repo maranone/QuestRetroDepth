@@ -1,0 +1,15 @@
+game_name=Crayon Shin-chan - Nagagutsu Dobon!! (Japan) (ST)
+game_key=crayon_shin_chan_nagagutsu_dobon_japan_st
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_04c6	level_complete	0x7E04C6	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_052f	life_lost	0x7E052F	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_052f	life_gained	0x7E052F	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_da1e	damage_taken	0x7EDA1E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_da1e	death	0x7EDA1E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_da4e	damage_taken	0x7EDA4E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_da4e	death	0x7EDA4E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_da7e	damage_taken	0x7EDA7E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_da7e	death	0x7EDA7E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_db4c	level_complete	0x7EDB4C	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_db50	level_complete	0x7EDB50	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

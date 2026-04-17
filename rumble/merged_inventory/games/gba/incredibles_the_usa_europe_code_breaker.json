@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "incredibles",
+  "display_name": "Incredibles, The (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Incredibles, The (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "1000F1A2",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200F1A2"
+        },
+        {
+          "code": "3201DC31",
+          "desc": "Infinite Super Bar",
+          "address": "0x0201DC31"
+        },
+        {
+          "code": "3201D517",
+          "desc": "Infinite Double Jumps",
+          "address": "0x0201D517"
+        },
+        {
+          "code": "3201DBE5",
+          "desc": "Infinite Health",
+          "address": "0x0201DBE5"
+        },
+        {
+          "code": "3201D5FB",
+          "desc": "Infinite Lives",
+          "address": "0x0201D5FB"
+        },
+        {
+          "code": "3201D5B1",
+          "desc": "Invincible",
+          "address": "0x0201D5B1"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Incredibles, The (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "1000F1A2",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200F1A2"
+        },
+        {
+          "code": "3201DC31",
+          "desc": "Infinite Super Bar",
+          "address": "0x0201DC31"
+        },
+        {
+          "code": "3201D517",
+          "desc": "Infinite Double Jumps",
+          "address": "0x0201D517"
+        },
+        {
+          "code": "3201DBE5",
+          "desc": "Infinite Health",
+          "address": "0x0201DBE5"
+        },
+        {
+          "code": "3201D5FB",
+          "desc": "Infinite Lives",
+          "address": "0x0201D5FB"
+        },
+        {
+          "code": "3201D5B1",
+          "desc": "Invincible",
+          "address": "0x0201D5B1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

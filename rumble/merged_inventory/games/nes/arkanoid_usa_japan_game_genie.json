@@ -1,0 +1,160 @@
+{
+  "system": "nes",
+  "normalized_title": "arkanoid",
+  "display_name": "Arkanoid (USA, Japan) (Game Genie)",
+  "aliases": [
+    "Arkanoid (Japan)",
+    "Arkanoid (USA)",
+    "Arkanoid (USA, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\arkanoid_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x000D",
+        "0x0370"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Arkanoid-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x000D",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0370",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Arkanoid (USA, Japan) (Game Genie).cht",
+      "total_cheat_rows": 31,
+      "raw_entry_count": 21,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "PAOPUGLA",
+          "desc": "Player 1 Start With 1 Life",
+          "address": "0x040B"
+        },
+        {
+          "code": "TAOPUGLA",
+          "desc": "Player 1 Start With 6 Lives",
+          "address": "0x040B"
+        },
+        {
+          "code": "PAOPUGLE",
+          "desc": "Player 1 Start With 9 Lives",
+          "address": "0x040B"
+        },
+        {
+          "code": "OZNEATVK",
+          "desc": "Infinite Lives (Players 1 & 2)",
+          "address": "0x06A8"
+        },
+        {
+          "code": "IAOONGPA",
+          "desc": "Player 1 Start At Level 5",
+          "address": "0x048F"
+        },
+        {
+          "code": "ZAOONGPE",
+          "desc": "Player 1 Start At Level 10",
+          "address": "0x048F"
+        },
+        {
+          "code": "YAOONGPE",
+          "desc": "Player 1 Start At Level 15",
+          "address": "0x048F"
+        },
+        {
+          "code": "GPOONGPA",
+          "desc": "Player 1 Start At Level 20",
+          "address": "0x049F"
+        },
+        {
+          "code": "PPOONGPE",
+          "desc": "Player 1 Start At Level 25",
+          "address": "0x049F"
+        },
+        {
+          "code": "TPOONGPE",
+          "desc": "Player 1 Start At Level 30",
+          "address": "0x049F"
+        },
+        {
+          "code": "SXNAIAAX",
+          "desc": "No Bat Enhancement Capsules",
+          "address": "0x002D"
+        },
+        {
+          "code": "SXVATAAX",
+          "desc": "No Lasers",
+          "address": "0x002E"
+        },
+        {
+          "code": "OPEEIO",
+          "desc": "Items Fall Through You",
+          "address": "0x019D"
+        },
+        {
+          "code": "EAEEIO",
+          "desc": "Items Fall Through You & Ship Will Not Explode",
+          "address": "0x018D"
+        },
+        {
+          "code": "LKEEIP",
+          "desc": "Demo Plays For You",
+          "address": "0x01CD"
+        },
+        {
+          "code": "LXEEIP",
+          "desc": "Demo Plays For You Except On Levels 10, 20, 30",
+          "address": "0x01AD"
+        },
+        {
+          "code": "ZXEEIO",
+          "desc": "Demo Plays For You On A Few Levels",
+          "address": "0x01AD"
+        },
+        {
+          "code": "XTSPEE",
+          "desc": "Black Background And Blocks",
+          "address": "0x0068"
+        },
+        {
+          "code": "AEIEEI",
+          "desc": "No Points Can Be Scored In The Game",
+          "address": "0x0580"
+        },
+        {
+          "code": "STPOOO",
+          "desc": "Ball Goes Through All Blocks",
+          "address": "0x01E1"
+        },
+        {
+          "code": "NYOPUGLE",
+          "desc": "Lots Of Lives, Probably 255",
+          "address": "0x047B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

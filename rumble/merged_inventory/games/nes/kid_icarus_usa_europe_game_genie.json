@@ -1,0 +1,214 @@
+{
+  "system": "nes",
+  "normalized_title": "kidicarus",
+  "display_name": "Kid Icarus (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Kid Icarus (Rumbles)",
+    "Kid Icarus (USA, Europe) (Game Genie)",
+    "Kid Icarus (USA, Europe) (Rev 1)",
+    "Kid Icarus (USA, Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\kidicarus_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00A6",
+        "0x0131"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KidIcarus-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x00A6",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0131",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kid Icarus (USA, Europe).cht",
+      "total_cheat_rows": 129,
+      "raw_entry_count": 72,
+      "distinct_address_count": 46,
+      "sample_raw_entries": [
+        {
+          "code": "AAUEVAPA",
+          "desc": "Immune to becoming an Egg Plant",
+          "address": "0x008E"
+        },
+        {
+          "code": "SANPPKVV",
+          "desc": "Break a Statue to get 24 Soldiers",
+          "address": "0x0409"
+        },
+        {
+          "code": "PEEEZPAA",
+          "desc": "Get Best Ending With '8uuu...' code",
+          "address": "0x018A"
+        },
+        {
+          "code": "NNEEZPAE",
+          "desc": "Get Second Worst Ending With '8uuu...' code",
+          "address": "0x01FA"
+        },
+        {
+          "code": "VNEEZPAE",
+          "desc": "Get Worst Ending With '8uuu...' code",
+          "address": "0x01FA"
+        },
+        {
+          "code": "003E:FF",
+          "desc": "Enemies Are Hammers",
+          "address": "0x003E"
+        },
+        {
+          "code": "006F:00",
+          "desc": "Never Become an Eggplant",
+          "address": "0x006F"
+        },
+        {
+          "code": "00A5:08",
+          "desc": "Always Fly",
+          "address": "0x00A5"
+        },
+        {
+          "code": "00A6:27",
+          "desc": "Infinite Life",
+          "address": "0x00A6"
+        },
+        {
+          "code": "00AA:04",
+          "desc": "Maximum Life Upgrades",
+          "address": "0x00AA"
+        },
+        {
+          "code": "0144:7F",
+          "desc": "Have Maximum Total",
+          "address": "0x0144"
+        },
+        {
+          "code": "0145:96",
+          "desc": "Have Maximum Total",
+          "address": "0x0145"
+        },
+        {
+          "code": "0146:98",
+          "desc": "Have Maximum Total",
+          "address": "0x0146"
+        },
+        {
+          "code": "0131:7F",
+          "desc": "Have Maximum Score",
+          "address": "0x0131"
+        },
+        {
+          "code": "0132:96",
+          "desc": "Have Maximum Score",
+          "address": "0x0132"
+        },
+        {
+          "code": "0133:98",
+          "desc": "Have Maximum Score",
+          "address": "0x0133"
+        },
+        {
+          "code": "013A:01",
+          "desc": "Have Torch",
+          "address": "0x013A"
+        },
+        {
+          "code": "013B:01",
+          "desc": "Have Pencil",
+          "address": "0x013B"
+        },
+        {
+          "code": "013D:01",
+          "desc": "Have Full Boss Map",
+          "address": "0x013D"
+        },
+        {
+          "code": "013E:01",
+          "desc": "Have Weapon 1 (F-Type Weapon)",
+          "address": "0x013E"
+        },
+        {
+          "code": "013F:01",
+          "desc": "Have Weapon 2 (Bow)",
+          "address": "0x013F"
+        },
+        {
+          "code": "0140:01",
+          "desc": "Have Weapon 3 (Wand)",
+          "address": "0x0140"
+        },
+        {
+          "code": "014A:0F",
+          "desc": "Have 999 Hearts",
+          "address": "0x014A"
+        },
+        {
+          "code": "014B:27",
+          "desc": "Have 999 Hearts",
+          "address": "0x014B"
+        },
+        {
+          "code": "014E:01",
+          "desc": "Have Credit Card",
+          "address": "0x014E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Kid Icarus (USA, Europe).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "AAUEVAPA",
+          "desc": "Immune To Becoming An Egg Plant",
+          "address": "0x008E"
+        },
+        {
+          "code": "SANPPKVV",
+          "desc": "Break A Statue To Get 24 Soldiers",
+          "address": "0x0409"
+        },
+        {
+          "code": "PEEEZPAA",
+          "desc": "Get Best Ending With '8uuu...' Code",
+          "address": "0x018A"
+        },
+        {
+          "code": "NNEEZPAE",
+          "desc": "Get Second Worst Ending With '8uuu...' Code",
+          "address": "0x01FA"
+        },
+        {
+          "code": "VNEEZPAE",
+          "desc": "Get Worst Ending With '8uuu...' Code",
+          "address": "0x01FA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

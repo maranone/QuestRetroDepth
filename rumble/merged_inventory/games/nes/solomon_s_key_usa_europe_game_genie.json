@@ -1,0 +1,103 @@
+{
+  "system": "nes",
+  "normalized_title": "solomonskey",
+  "display_name": "Solomon's Key (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Solomon's Key (USA)",
+    "Solomon's Key (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Solomon's Key (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 16,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "KAXOOEVE",
+          "desc": "Start With 40,000 Life Points",
+          "address": "0x0089"
+        },
+        {
+          "code": "GZUPTOSE",
+          "desc": "Start On Last Level Reached",
+          "address": "0x012E"
+        },
+        {
+          "code": "VTUPTOSE",
+          "desc": "Start On Next Level",
+          "address": "0x016E"
+        },
+        {
+          "code": "SZUOPOSE",
+          "desc": "Start On Level 10",
+          "address": "0x01A9"
+        },
+        {
+          "code": "UPUOLPGA",
+          "desc": "Start On Level 10",
+          "address": "0x019B"
+        },
+        {
+          "code": "PAUPIPAE",
+          "desc": "Start On Level 10",
+          "address": "0x010D"
+        },
+        {
+          "code": "SZUOPOSE",
+          "desc": "Start On Level 20",
+          "address": "0x01A9"
+        },
+        {
+          "code": "UPUOLPGA",
+          "desc": "Start On Level 20",
+          "address": "0x019B"
+        },
+        {
+          "code": "LPUPIPAA",
+          "desc": "Start On Level 20",
+          "address": "0x011D"
+        },
+        {
+          "code": "SZUOPOSE",
+          "desc": "Start On Level 30",
+          "address": "0x01A9"
+        },
+        {
+          "code": "UPUOLPGA",
+          "desc": "Start On Level 30",
+          "address": "0x019B"
+        },
+        {
+          "code": "IPUPIPAE",
+          "desc": "Start On Level 30",
+          "address": "0x011D"
+        },
+        {
+          "code": "SZUOPOSE",
+          "desc": "Start On Level 40",
+          "address": "0x01A9"
+        },
+        {
+          "code": "UPUOLPGA",
+          "desc": "Start On Level 40",
+          "address": "0x019B"
+        },
+        {
+          "code": "YZUPIPAA",
+          "desc": "Start On Level 40",
+          "address": "0x012D"
+        },
+        {
+          "code": "KAXOOEVE",
+          "desc": "Infinite Time",
+          "address": "0x0089"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

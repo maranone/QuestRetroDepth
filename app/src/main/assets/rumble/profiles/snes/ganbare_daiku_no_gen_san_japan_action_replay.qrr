@@ -1,0 +1,12 @@
+game_name=Ganbare! Daiku no Gen-san (Japan) (Action Replay)
+game_key=ganbare_daiku_no_gen_san_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_eccb	life_lost	0x7EECCB	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_eccb	life_gained	0x7EECCB	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_ecd5	damage_taken	0x7EECD5	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ecd5	death	0x7EECD5	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0e4a	damage_taken	0x7E0E4A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0e4a	death	0x7E0E4A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_ecc7	level_complete	0x7EECC7	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_0298	enemy_defeated	0x7E0298	1	uint	little	prev > curr	0.65	1	right:0.450:35

@@ -1,0 +1,12 @@
+game_name=Williams Arcade's Greatest Hits (USA)
+game_key=williams_arcade_s_greatest_hits_usa
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_002c	life_lost	0x7E002C	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_002c	life_gained	0x7E002C	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_002d	life_lost	0x7E002D	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_002d	life_gained	0x7E002D	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_bdec	life_lost	0x7EBDEC	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_bdec	life_gained	0x7EBDEC	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_0301	life_lost	0x7E0301	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0301	life_gained	0x7E0301	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

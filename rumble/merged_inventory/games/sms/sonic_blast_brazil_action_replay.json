@@ -1,0 +1,68 @@
+{
+  "system": "sms",
+  "normalized_title": "sonicblast",
+  "display_name": "Sonic Blast (Brazil) (Action Replay)",
+  "aliases": [
+    "Sonic Blast (Brazil) (Action Replay)",
+    "Sonic Blast (Brazil)",
+    "Sonic Blast (Rumbles)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\sonicblast_sms.json",
+      "trigger_count": 5,
+      "field_names": [
+        "gameover",
+        "lives",
+        "rings",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xD174",
+        "0xD178",
+        "0xD25D",
+        "0xDB42"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SonicBlast-Sms-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xDB42",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xD178",
+          "type": "|i1"
+        },
+        {
+          "name": "rings",
+          "address": "0xD25D",
+          "type": ">d2"
+        },
+        {
+          "name": "score",
+          "address": "0xD174",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Sonic Blast (Rumbles).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

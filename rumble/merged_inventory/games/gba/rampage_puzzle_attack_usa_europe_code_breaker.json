@@ -1,0 +1,138 @@
+{
+  "system": "gba",
+  "normalized_title": "rampagepuzzleattack",
+  "display_name": "Rampage - Puzzle Attack (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Rampage - Puzzle Attack (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 11,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "83004F5C",
+          "desc": "Quick Score Gain",
+          "address": "0x02004F5C"
+        },
+        {
+          "code": "83004F5C",
+          "desc": "Max Score",
+          "address": "0x02004F5C"
+        },
+        {
+          "code": "83004F5E",
+          "desc": "Max Score",
+          "address": "0x02004F5E"
+        },
+        {
+          "code": "83004F70",
+          "desc": "Always Low Time (Seconds)",
+          "address": "0x02004F70"
+        },
+        {
+          "code": "83004F7C",
+          "desc": "Always Low Time (Seconds)",
+          "address": "0x02004F7C"
+        },
+        {
+          "code": "83004F74",
+          "desc": "Always Low Time (Minutes)",
+          "address": "0x02004F74"
+        },
+        {
+          "code": "83004F80",
+          "desc": "Always Low Time (Minutes)",
+          "address": "0x02004F80"
+        },
+        {
+          "code": "83004F70",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x02004F70"
+        },
+        {
+          "code": "83004F7C",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x02004F7C"
+        },
+        {
+          "code": "83004F74",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x02004F74"
+        },
+        {
+          "code": "83004F80",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x02004F80"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Rampage - Puzzle Attack (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 11,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "83004F5C",
+          "desc": "Quick Score Gain",
+          "address": "0x02004F5C"
+        },
+        {
+          "code": "83004F5C",
+          "desc": "Max Score",
+          "address": "0x02004F5C"
+        },
+        {
+          "code": "83004F5E",
+          "desc": "Max Score",
+          "address": "0x02004F5E"
+        },
+        {
+          "code": "83004F70",
+          "desc": "Always Low Time (Seconds)",
+          "address": "0x02004F70"
+        },
+        {
+          "code": "83004F7C",
+          "desc": "Always Low Time (Seconds)",
+          "address": "0x02004F7C"
+        },
+        {
+          "code": "83004F74",
+          "desc": "Always Low Time (Minutes)",
+          "address": "0x02004F74"
+        },
+        {
+          "code": "83004F80",
+          "desc": "Always Low Time (Minutes)",
+          "address": "0x02004F80"
+        },
+        {
+          "code": "83004F70",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x02004F70"
+        },
+        {
+          "code": "83004F7C",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x02004F7C"
+        },
+        {
+          "code": "83004F74",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x02004F74"
+        },
+        {
+          "code": "83004F80",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x02004F80"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

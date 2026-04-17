@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "nikonikopun",
+  "display_name": "Niko Niko Pun (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Niko Niko Pun (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f1621:59",
+          "desc": "Infinite Time",
+          "address": "0x1F1621"
+        },
+        {
+          "code": "1f0523:07",
+          "desc": "Invincibility",
+          "address": "0x1F0523"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "system": "pce",
+  "normalized_title": "zero4champ",
+  "display_name": "Zero4 Champ (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Zero4 Champ (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "1f0645:50",
+          "desc": "50 Stars in Turbo Go! Go!",
+          "address": "0x1F0645"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

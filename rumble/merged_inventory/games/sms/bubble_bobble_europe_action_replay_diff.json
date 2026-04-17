@@ -1,0 +1,53 @@
+{
+  "system": "sms",
+  "normalized_title": "bubblebobble",
+  "display_name": "Bubble Bobble (Europe) (Action Replay) (diff)",
+  "aliases": [
+    "Bubble Bobble (Europe) (Action Replay) (diff)",
+    "Bubble Bobble (Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\bubblebobble_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xCEB7",
+        "0xCEB8"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BubbleBobble-Sms-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xCEB7",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xCEB8",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Bubble Bobble (Europe) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

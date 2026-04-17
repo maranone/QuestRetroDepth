@@ -1,0 +1,282 @@
+{
+  "system": "nes",
+  "normalized_title": "tecmosuperbowl",
+  "display_name": "Tecmo Super Bowl (USA, Japan) (Game Genie) (diff)",
+  "aliases": [
+    "Tecmo Super Bowl (USA, Japan) (Game Genie) (diff)",
+    "Tecmo Super Bowl (USA, Japan) (Game Genie)",
+    "Tecmo Super Bowl (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tecmo Super Bowl (USA, Japan) (Game Genie).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 32,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "AAOATTTA",
+          "desc": "Touchdown Scores 0 Instead Of 6 (Player 1)",
+          "address": "0x060E"
+        },
+        {
+          "code": "AEOEVITA",
+          "desc": "Touchdown Scores 0 (Player 2 Or Computer)",
+          "address": "0x058E"
+        },
+        {
+          "code": "LAOATTTA",
+          "desc": "Touchdown Scores 3 (Player 1)",
+          "address": "0x060E"
+        },
+        {
+          "code": "LEOEVITA",
+          "desc": "Touchdown Scores 3 (Player 2 Or Computer)",
+          "address": "0x058E"
+        },
+        {
+          "code": "PAOATTTE",
+          "desc": "Touchdown Scores 9 (Player 1)",
+          "address": "0x060E"
+        },
+        {
+          "code": "PEOEVITE",
+          "desc": "Touchdown Scores 9 (Player 2 Or Computer)",
+          "address": "0x058E"
+        },
+        {
+          "code": "GAOATTTE",
+          "desc": "Touchdown Scores 12 (Player 1)",
+          "address": "0x060E"
+        },
+        {
+          "code": "GEOEVITE",
+          "desc": "Touchdown Scores 12 (Player 2 Or Computer)",
+          "address": "0x058E"
+        },
+        {
+          "code": "AAEALYPA",
+          "desc": "Extra-Point Kick Scores 0 Instead Of 1 (Player 1)",
+          "address": "0x070B"
+        },
+        {
+          "code": "AEEEUTPA",
+          "desc": "Extra-Point Kick Scores 0 (Player 2 Or Computer)",
+          "address": "0x068B"
+        },
+        {
+          "code": "ZAEALYPA",
+          "desc": "Extra-Point Kick Scores 2 (Player 1)",
+          "address": "0x070B"
+        },
+        {
+          "code": "ZEEEUTPA",
+          "desc": "Extra-Point Kick Scores 2 (Player 2 Or Computer)",
+          "address": "0x068B"
+        },
+        {
+          "code": "LAEALYPA",
+          "desc": "Extra-Point Kick Scores 3 (Player 1)",
+          "address": "0x070B"
+        },
+        {
+          "code": "LEEEUTPA",
+          "desc": "Extra-Point Kick Scores 3 (Player 2 Or Computer)",
+          "address": "0x068B"
+        },
+        {
+          "code": "TAEALYPA",
+          "desc": "Extra-Point Kick Scores 6 (Player 1)",
+          "address": "0x070B"
+        },
+        {
+          "code": "TEEEUTPA",
+          "desc": "Extra-Point Kick Scores 6 (Player 2 Or Computer)",
+          "address": "0x068B"
+        },
+        {
+          "code": "AEKAGGLA",
+          "desc": "Field Goal Scores 0 Instead Of 3 (Player 1)",
+          "address": "0x040C"
+        },
+        {
+          "code": "AAKEKGLA",
+          "desc": "Field Goal Scores 0 (Player 2 Or Computer)",
+          "address": "0x048C"
+        },
+        {
+          "code": "PEKAGGLA",
+          "desc": "Field Goal Scores 1 (Player 1)",
+          "address": "0x040C"
+        },
+        {
+          "code": "PAKEKGLA",
+          "desc": "Field Goal Scores 1 (Player 2 Or Computer)",
+          "address": "0x048C"
+        },
+        {
+          "code": "TEKAGGLA",
+          "desc": "Field Goal Scores 6 (Player 1)",
+          "address": "0x040C"
+        },
+        {
+          "code": "TAKEKGLA",
+          "desc": "Field Goal Scores 6 (Player 2 Or Computer)",
+          "address": "0x048C"
+        },
+        {
+          "code": "PEKAGGLE",
+          "desc": "Field Goal Scores 9 (Player 1)",
+          "address": "0x040C"
+        },
+        {
+          "code": "PAKEKGLE",
+          "desc": "Field Goal Scores 9 (Player 2 Or Computer)",
+          "address": "0x048C"
+        },
+        {
+          "code": "AASASIZA",
+          "desc": "Safety Scores 0 Instead Of 2 (Player 1)",
+          "address": "0x050D"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Tecmo Super Bowl (USA).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 32,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "AAOATTTA",
+          "desc": "Touchdown Scores 0 Instead Of 6 (Player 1)",
+          "address": "0x060E"
+        },
+        {
+          "code": "AEOEVITA",
+          "desc": "Touchdown Scores 0 (Player 2 Or Computer)",
+          "address": "0x058E"
+        },
+        {
+          "code": "LAOATTTA",
+          "desc": "Touchdown Scores 3 (Player 1)",
+          "address": "0x060E"
+        },
+        {
+          "code": "LEOEVITA",
+          "desc": "Touchdown Scores 3 (Player 2 Or Computer)",
+          "address": "0x058E"
+        },
+        {
+          "code": "PAOATTTE",
+          "desc": "Touchdown Scores 9 (Player 1)",
+          "address": "0x060E"
+        },
+        {
+          "code": "PEOEVITE",
+          "desc": "Touchdown Scores 9 (Player 2 Or Computer)",
+          "address": "0x058E"
+        },
+        {
+          "code": "GAOATTTE",
+          "desc": "Touchdown Scores 12 (Player 1)",
+          "address": "0x060E"
+        },
+        {
+          "code": "GEOEVITE",
+          "desc": "Touchdown Scores 12 (Player 2 Or Computer)",
+          "address": "0x058E"
+        },
+        {
+          "code": "AAEALYPA",
+          "desc": "Extra-Point Kick Scores 0 Instead Of 1 (Player 1)",
+          "address": "0x070B"
+        },
+        {
+          "code": "AEEEUTPA",
+          "desc": "Extra-Point Kick Scores 0 (Player 2 Or Computer)",
+          "address": "0x068B"
+        },
+        {
+          "code": "ZAEALYPA",
+          "desc": "Extra-Point Kick Scores 2 (Player 1)",
+          "address": "0x070B"
+        },
+        {
+          "code": "ZEEEUTPA",
+          "desc": "Extra-Point Kick Scores 2 (Player 2 Or Computer)",
+          "address": "0x068B"
+        },
+        {
+          "code": "LAEALYPA",
+          "desc": "Extra-Point Kick Scores 3 (Player 1)",
+          "address": "0x070B"
+        },
+        {
+          "code": "LEEEUTPA",
+          "desc": "Extra-Point Kick Scores 3 (Player 2 Or Computer)",
+          "address": "0x068B"
+        },
+        {
+          "code": "TAEALYPA",
+          "desc": "Extra-Point Kick Scores 6 (Player 1)",
+          "address": "0x070B"
+        },
+        {
+          "code": "TEEEUTPA",
+          "desc": "Extra-Point Kick Scores 6 (Player 2 Or Computer)",
+          "address": "0x068B"
+        },
+        {
+          "code": "AEKAGGLA",
+          "desc": "Field Goal Scores 0 Instead Of 3 (Player 1)",
+          "address": "0x040C"
+        },
+        {
+          "code": "AAKEKGLA",
+          "desc": "Field Goal Scores 0 (Player 2 Or Computer)",
+          "address": "0x048C"
+        },
+        {
+          "code": "PEKAGGLA",
+          "desc": "Field Goal Scores 1 (Player 1)",
+          "address": "0x040C"
+        },
+        {
+          "code": "PAKEKGLA",
+          "desc": "Field Goal Scores 1 (Player 2 Or Computer)",
+          "address": "0x048C"
+        },
+        {
+          "code": "TEKAGGLA",
+          "desc": "Field Goal Scores 6 (Player 1)",
+          "address": "0x040C"
+        },
+        {
+          "code": "TAKEKGLA",
+          "desc": "Field Goal Scores 6 (Player 2 Or Computer)",
+          "address": "0x048C"
+        },
+        {
+          "code": "PEKAGGLE",
+          "desc": "Field Goal Scores 9 (Player 1)",
+          "address": "0x040C"
+        },
+        {
+          "code": "PAKEKGLE",
+          "desc": "Field Goal Scores 9 (Player 2 Or Computer)",
+          "address": "0x048C"
+        },
+        {
+          "code": "AASASIZA",
+          "desc": "Safety Scores 0 Instead Of 2 (Player 1)",
+          "address": "0x050D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

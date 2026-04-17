@@ -1,0 +1,6 @@
+game_name=Pro Sport Hockey (USA)
+game_key=pro_sport_hockey_usa
+system=snes
+integration_tier=contrib
+trigger	score_score_08b2	score	0x7E08B2	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_08b4	score	0x7E08B4	1	uint	little	prev < curr	0.8	1	right:0.350:60

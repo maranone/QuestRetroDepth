@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "akumajoudensetsu",
+  "display_name": "Akumajou Densetsu (Japan) (Game Genie)",
+  "aliases": [
+    "Akumajou Densetsu (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Akumajou Densetsu (Japan).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 42,
+      "distinct_address_count": 38,
+      "sample_raw_entries": [
+        {
+          "code": "SAXANGSZ",
+          "desc": "Infinite Life",
+          "address": "0x040F"
+        },
+        {
+          "code": "004A:40",
+          "desc": "Infinite Energy",
+          "address": "0x004A"
+        },
+        {
+          "code": "0037:99",
+          "desc": "Infinite Lives",
+          "address": "0x0037"
+        },
+        {
+          "code": "0048:00",
+          "desc": "Character switching modifier",
+          "address": "0x0048"
+        },
+        {
+          "code": "0084:00",
+          "desc": "Shot item modifier",
+          "address": "0x0084"
+        },
+        {
+          "code": "PAUAVYAG",
+          "desc": "Start With Energy Modifer",
+          "address": "0x070E"
+        },
+        {
+          "code": "AAXESYZE",
+          "desc": "Start with ? Lives",
+          "address": "0x078D"
+        },
+        {
+          "code": "AAUAXYIA",
+          "desc": "Start With ? Hearts",
+          "address": "0x070A"
+        },
+        {
+          "code": "AANEKLPA",
+          "desc": "Infinite hearts",
+          "address": "0x038C"
+        },
+        {
+          "code": "IEOESPLA",
+          "desc": "Infinite time",
+          "address": "0x018D"
+        },
+        {
+          "code": "SZNEKPSE",
+          "desc": "Infinite Lives",
+          "address": "0x01AC"
+        },
+        {
+          "code": "0081:20",
+          "desc": "Infinite Hearts",
+          "address": "0x0081"
+        },
+        {
+          "code": "007D:01",
+          "desc": "Invincibility",
+          "address": "0x007D"
+        },
+        {
+          "code": "008B:02",
+          "desc": "Whip 3rd Level Of Power",
+          "address": "0x008B"
+        },
+        {
+          "code": "067C:00",
+          "desc": "Bosses Die Automatically",
+          "address": "0x067C"
+        },
+        {
+          "code": "AVSANLAP",
+          "desc": "Jump In Midair",
+          "address": "0x036F"
+        },
+        {
+          "code": "ASSOGYTS",
+          "desc": "Jump In Midair",
+          "address": "0x07DC"
+        },
+        {
+          "code": "ASSOGLTS",
+          "desc": "Jump In Midair",
+          "address": "0x03DC"
+        },
+        {
+          "code": "SZUOEASA",
+          "desc": "Jump In Midair",
+          "address": "0x00A8"
+        },
+        {
+          "code": "SZSOEAGA",
+          "desc": "Jump In Midair",
+          "address": "0x00A8"
+        },
+        {
+          "code": "AZSOOEOK",
+          "desc": "Jump In Midair",
+          "address": "0x00A9"
+        },
+        {
+          "code": "ZASOXEAE",
+          "desc": "Jump In Midair",
+          "address": "0x008A"
+        },
+        {
+          "code": "EPSOUAEL",
+          "desc": "Jump In Midair",
+          "address": "0x009B"
+        },
+        {
+          "code": "SASOSESX",
+          "desc": "Jump In Midair",
+          "address": "0x008D"
+        },
+        {
+          "code": "OZVPEAES",
+          "desc": "Jump In Midair",
+          "address": "0x0028"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

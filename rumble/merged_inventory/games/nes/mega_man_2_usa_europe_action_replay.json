@@ -1,0 +1,68 @@
+{
+  "system": "nes",
+  "normalized_title": "megaman2",
+  "display_name": "Mega Man 2 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Mega Man 2 (Europe)",
+    "Mega Man 2 (Rumbles)",
+    "Mega Man 2 (USA) (Game Genie)",
+    "Mega Man 2 (USA)",
+    "Mega Man 2 (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\megaman2_nes.json",
+      "trigger_count": 4,
+      "field_names": [
+        "health",
+        "lives"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00A8",
+        "0x06C0"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MegaMan2-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x06C0",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x00A8",
+          "type": "|u1"
+        },
+        {
+          "name": "progress",
+          "address": "0x045F",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mega Man 2 (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Mega Man 2 (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

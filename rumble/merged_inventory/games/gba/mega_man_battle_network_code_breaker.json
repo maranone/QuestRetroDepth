@@ -1,0 +1,218 @@
+{
+  "system": "gba",
+  "normalized_title": "megamanbattlenetwork",
+  "display_name": "Mega Man Battle Network (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Mega Man Battle Network (Code Breaker).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 19,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "10000360",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000360"
+        },
+        {
+          "code": "320003F4",
+          "desc": "No Random Battles",
+          "address": "0x020003F4"
+        },
+        {
+          "code": "82000284",
+          "desc": "Unlimited Zenny",
+          "address": "0x02000284"
+        },
+        {
+          "code": "320066D0",
+          "desc": "Player 1 Unlimited HP",
+          "address": "0x020066D0"
+        },
+        {
+          "code": "320002D1",
+          "desc": "Unlimited Ice Blocks",
+          "address": "0x020002D1"
+        },
+        {
+          "code": "320003D5",
+          "desc": "Unlimited Battery Power",
+          "address": "0x020003D5"
+        },
+        {
+          "code": "32006790",
+          "desc": "Enemy 1 No HP",
+          "address": "0x02006790"
+        },
+        {
+          "code": "32006850",
+          "desc": "Enemy 2 No HP",
+          "address": "0x02006850"
+        },
+        {
+          "code": "32006910",
+          "desc": "Enemy 3 No HP",
+          "address": "0x02006910"
+        },
+        {
+          "code": "32000224",
+          "desc": "Max Attack",
+          "address": "0x02000224"
+        },
+        {
+          "code": "32000225",
+          "desc": "Max Rapid",
+          "address": "0x02000225"
+        },
+        {
+          "code": "32000226",
+          "desc": "Max Charge",
+          "address": "0x02000226"
+        },
+        {
+          "code": "82003730",
+          "desc": "Time 0 For Delete",
+          "address": "0x02003730"
+        },
+        {
+          "code": "3200374F",
+          "desc": "Custom Bar Always Full",
+          "address": "0x0200374F"
+        },
+        {
+          "code": "320075F0",
+          "desc": "During Battle Take No Damage",
+          "address": "0x020075F0"
+        },
+        {
+          "code": "82000284",
+          "desc": "Max Zenny",
+          "address": "0x02000284"
+        },
+        {
+          "code": "82000286",
+          "desc": "Max Zenny",
+          "address": "0x02000286"
+        },
+        {
+          "code": "4200001C",
+          "desc": "Have All Cards",
+          "address": "0x0200001C"
+        },
+        {
+          "code": "42019036",
+          "desc": "Max All Chips",
+          "address": "0x02019036"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Mega Man Battle Network (Code Breaker).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 19,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "10000360",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000360"
+        },
+        {
+          "code": "320003F4",
+          "desc": "No Random Battles",
+          "address": "0x020003F4"
+        },
+        {
+          "code": "82000284",
+          "desc": "Unlimited Zenny",
+          "address": "0x02000284"
+        },
+        {
+          "code": "320066D0",
+          "desc": "Player 1 Unlimited HP",
+          "address": "0x020066D0"
+        },
+        {
+          "code": "320002D1",
+          "desc": "Unlimited Ice Blocks",
+          "address": "0x020002D1"
+        },
+        {
+          "code": "320003D5",
+          "desc": "Unlimited Battery Power",
+          "address": "0x020003D5"
+        },
+        {
+          "code": "32006790",
+          "desc": "Enemy 1 No HP",
+          "address": "0x02006790"
+        },
+        {
+          "code": "32006850",
+          "desc": "Enemy 2 No HP",
+          "address": "0x02006850"
+        },
+        {
+          "code": "32006910",
+          "desc": "Enemy 3 No HP",
+          "address": "0x02006910"
+        },
+        {
+          "code": "32000224",
+          "desc": "Max Attack",
+          "address": "0x02000224"
+        },
+        {
+          "code": "32000225",
+          "desc": "Max Rapid",
+          "address": "0x02000225"
+        },
+        {
+          "code": "32000226",
+          "desc": "Max Charge",
+          "address": "0x02000226"
+        },
+        {
+          "code": "82003730",
+          "desc": "Time 0 For Delete",
+          "address": "0x02003730"
+        },
+        {
+          "code": "3200374F",
+          "desc": "Custom Bar Always Full",
+          "address": "0x0200374F"
+        },
+        {
+          "code": "320075F0",
+          "desc": "During Battle Take No Damage",
+          "address": "0x020075F0"
+        },
+        {
+          "code": "82000284",
+          "desc": "Max Zenny",
+          "address": "0x02000284"
+        },
+        {
+          "code": "82000286",
+          "desc": "Max Zenny",
+          "address": "0x02000286"
+        },
+        {
+          "code": "4200001C",
+          "desc": "Have All Cards",
+          "address": "0x0200001C"
+        },
+        {
+          "code": "42019036",
+          "desc": "Max All Chips",
+          "address": "0x02019036"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "othello",
+  "display_name": "Othello (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Othello (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "003D:35",
+          "desc": "Always Win",
+          "address": "0x003D"
+        },
+        {
+          "code": "003B:00",
+          "desc": "White Pieces On Board",
+          "address": "0x003B"
+        },
+        {
+          "code": "003D:00",
+          "desc": "Black Pieces On Board",
+          "address": "0x003D"
+        },
+        {
+          "code": "0024:06",
+          "desc": "Always Choose Black Mode",
+          "address": "0x0024"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

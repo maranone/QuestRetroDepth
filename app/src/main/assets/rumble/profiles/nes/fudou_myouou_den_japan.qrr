@@ -1,0 +1,7 @@
+game_name=Fudou Myouou Den (Japan)
+game_key=fudou_myouou_den_japan
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_0220	pickup	0x0220	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	life_lost_lives_0077	life_lost	0x0077	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0077	life_gained	0x0077	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "beetlejuice",
+  "display_name": "Beetlejuice (USA) (Game Genie)",
+  "aliases": [
+    "Beetlejuice (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Beetlejuice (USA).cht",
+      "total_cheat_rows": 37,
+      "raw_entry_count": 31,
+      "distinct_address_count": 26,
+      "sample_raw_entries": [
+        {
+          "code": "PEOAAALA",
+          "desc": "1 life",
+          "address": "0x0008"
+        },
+        {
+          "code": "TEOAAALA",
+          "desc": "6 lives",
+          "address": "0x0008"
+        },
+        {
+          "code": "PEOAAALE",
+          "desc": "9 lives",
+          "address": "0x0008"
+        },
+        {
+          "code": "PEOAIAZA",
+          "desc": "Take fewer hits to die",
+          "address": "0x000D"
+        },
+        {
+          "code": "01AA:02",
+          "desc": "Infinite Energy",
+          "address": "0x01AA"
+        },
+        {
+          "code": "03D3:03",
+          "desc": "Infinite Lives",
+          "address": "0x03D3"
+        },
+        {
+          "code": "01AD:01",
+          "desc": "Invincibility",
+          "address": "0x01AD"
+        },
+        {
+          "code": "0055:01",
+          "desc": "Area Modifier",
+          "address": "0x0055"
+        },
+        {
+          "code": "0575:00",
+          "desc": "Character Modifier",
+          "address": "0x0575"
+        },
+        {
+          "code": "03D0:FF",
+          "desc": "Jump In Mid/Walk On Air",
+          "address": "0x03D0"
+        },
+        {
+          "code": "01FE:01",
+          "desc": "Always Have Ghost Bottle In House",
+          "address": "0x01FE"
+        },
+        {
+          "code": "01FF:01",
+          "desc": "Always Have Key In House",
+          "address": "0x01FF"
+        },
+        {
+          "code": "059A:00",
+          "desc": "No Ghosts In House",
+          "address": "0x059A"
+        },
+        {
+          "code": "059B:00",
+          "desc": "No Ghosts In House",
+          "address": "0x059B"
+        },
+        {
+          "code": "059C:00",
+          "desc": "No Ghosts In House",
+          "address": "0x059C"
+        },
+        {
+          "code": "0609:00",
+          "desc": "One Hit Kill Sandworm",
+          "address": "0x0609"
+        },
+        {
+          "code": "0657:01",
+          "desc": "Select For Hammer In House",
+          "address": "0x0657"
+        },
+        {
+          "code": "065E:01",
+          "desc": "Select For Hammer In House",
+          "address": "0x065E"
+        },
+        {
+          "code": "VZXPUESE",
+          "desc": "Infinite Hits/Life Inside Houses",
+          "address": "0x002B"
+        },
+        {
+          "code": "03D3:09",
+          "desc": "Infinite Lives",
+          "address": "0x03D3"
+        },
+        {
+          "code": "01AA:02",
+          "desc": "Infinite Hits/Life",
+          "address": "0x01AA"
+        },
+        {
+          "code": "03D1:FF",
+          "desc": "Infinite Help Vouchers",
+          "address": "0x03D1"
+        },
+        {
+          "code": "01AD:FF",
+          "desc": "Invincibility (Flashing)",
+          "address": "0x01AD"
+        },
+        {
+          "code": "03D4:09",
+          "desc": "Infinite Medusa Heads",
+          "address": "0x03D4"
+        },
+        {
+          "code": "03D5:09",
+          "desc": "Infinite Birdman",
+          "address": "0x03D5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

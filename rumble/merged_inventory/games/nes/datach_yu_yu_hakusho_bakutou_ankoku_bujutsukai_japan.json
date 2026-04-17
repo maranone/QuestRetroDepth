@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "datachyuyuhakushobakutouankokubujutsukai",
+  "display_name": "Datach - Yu Yu Hakusho - Bakutou Ankoku Bujutsukai (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Datach - Yu Yu Hakusho - Bakutou Ankoku Bujutsukai (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "0401:00",
+          "desc": "Energy Modifier",
+          "address": "0x0401"
+        },
+        {
+          "code": "0402:00",
+          "desc": "Energy Modifier",
+          "address": "0x0402"
+        },
+        {
+          "code": "0403:00",
+          "desc": "Sp Modifier",
+          "address": "0x0403"
+        },
+        {
+          "code": "0404:00",
+          "desc": "Sp Modifier",
+          "address": "0x0404"
+        },
+        {
+          "code": "0421:00",
+          "desc": "Energy Modifier",
+          "address": "0x0421"
+        },
+        {
+          "code": "0422:00",
+          "desc": "Energy Modifier",
+          "address": "0x0422"
+        },
+        {
+          "code": "0423:00",
+          "desc": "Sp Modifier",
+          "address": "0x0423"
+        },
+        {
+          "code": "0424:00",
+          "desc": "Sp Modifier",
+          "address": "0x0424"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

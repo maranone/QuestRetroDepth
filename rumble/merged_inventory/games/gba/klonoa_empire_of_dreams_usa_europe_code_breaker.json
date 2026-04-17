@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "klonoaempireofdreams",
+  "display_name": "Klonoa - Empire of Dreams (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Klonoa - Empire of Dreams (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10006D94",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02006D94"
+        },
+        {
+          "code": "33005220",
+          "desc": "Infinite Health",
+          "address": "0x02005220"
+        },
+        {
+          "code": "33005220",
+          "desc": "Moon Doors Always Open",
+          "address": "0x02005220"
+        },
+        {
+          "code": "3300526C",
+          "desc": "Infinite Lives",
+          "address": "0x0200526C"
+        },
+        {
+          "code": "8300525E",
+          "desc": "Invincible",
+          "address": "0x0200525E"
+        },
+        {
+          "code": "83005220",
+          "desc": "Infinite Health & Have All Items",
+          "address": "0x02005220"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press A For Floater",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83005248",
+          "desc": "Press A For Floater",
+          "address": "0x02005248"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Klonoa - Empire of Dreams (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10006D94",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02006D94"
+        },
+        {
+          "code": "33005220",
+          "desc": "Infinite Health",
+          "address": "0x02005220"
+        },
+        {
+          "code": "33005220",
+          "desc": "Moon Doors Always Open",
+          "address": "0x02005220"
+        },
+        {
+          "code": "3300526C",
+          "desc": "Infinite Lives",
+          "address": "0x0200526C"
+        },
+        {
+          "code": "8300525E",
+          "desc": "Invincible",
+          "address": "0x0200525E"
+        },
+        {
+          "code": "83005220",
+          "desc": "Infinite Health & Have All Items",
+          "address": "0x02005220"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press A For Floater",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83005248",
+          "desc": "Press A For Floater",
+          "address": "0x02005248"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

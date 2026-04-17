@@ -1,0 +1,21 @@
+game_name=Illusion of Gaia (USA) (Action Replay)
+game_key=illusion_of_gaia_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_0ab0	pickup	0x7E0AB0	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_0aca	damage_taken	0x7E0ACA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0aca	death	0x7E0ACA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0acb	damage_taken	0x7E0ACB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0acb	death	0x7E0ACB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0ace	damage_taken	0x7E0ACE	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0ace	death	0x7E0ACE	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0acd	damage_taken	0x7E0ACD	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0acd	death	0x7E0ACD	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0ab4	pickup	0x7E0AB4	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0ab5	pickup	0x7E0AB5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0ab6	pickup	0x7E0AB6	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0ab7	pickup	0x7E0AB7	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0ab8	pickup	0x7E0AB8	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0ab9	pickup	0x7E0AB9	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0aba	pickup	0x7E0ABA	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0abb	pickup	0x7E0ABB	1	uint	little	prev != curr	0.8	1	right:0.250:18

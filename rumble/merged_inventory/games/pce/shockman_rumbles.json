@@ -1,0 +1,42 @@
+{
+  "system": "pce",
+  "normalized_title": "shockman",
+  "display_name": "Shockman (Rumbles)",
+  "aliases": [
+    "Shockman (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Shockman (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f0e0d:00",
+          "desc": "Bosses Die Automatically (turn off once boss is dead)",
+          "address": "0x1F0E0D"
+        },
+        {
+          "code": "1f1b48:2d",
+          "desc": "Invincibility",
+          "address": "0x1F1B48"
+        },
+        {
+          "code": "1f0e0c:14",
+          "desc": "Infinite Health",
+          "address": "0x1F0E0C"
+        },
+        {
+          "code": "1f1e8a:01",
+          "desc": "Charged Shots",
+          "address": "0x1F1E8A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

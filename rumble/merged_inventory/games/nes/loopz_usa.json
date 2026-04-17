@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "loopz",
+  "display_name": "Loopz (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Loopz (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0090:00",
+          "desc": "Timer",
+          "address": "0x0090"
+        },
+        {
+          "code": "0086:00",
+          "desc": "Level Modifier",
+          "address": "0x0086"
+        },
+        {
+          "code": "0090:FF",
+          "desc": "Infinite Time To Place Blocks",
+          "address": "0x0090"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

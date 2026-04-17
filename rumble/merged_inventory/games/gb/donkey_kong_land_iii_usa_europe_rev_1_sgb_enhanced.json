@@ -1,0 +1,29 @@
+{
+  "system": "gb",
+  "normalized_title": "donkeykonglandiii",
+  "display_name": "Donkey Kong Land III (USA, Europe) (Rev 1) (SGB Enhanced)",
+  "aliases": [
+    "Donkey Kong Land III (USA, Europe) (GameShark)",
+    "Donkey Kong Land III (USA, Europe) (Rev 1) (SGB Enhanced)",
+    "Donkey Kong Land III (USA, Europe) (SGB Enhanced)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Donkey Kong Land III (USA, Europe) (SGB Enhanced).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0104D5DE",
+          "desc": "No Enemies In Level",
+          "address": "0xD5DE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

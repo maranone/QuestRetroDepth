@@ -1,0 +1,120 @@
+{
+  "system": "pce",
+  "normalized_title": "towerofdruaga",
+  "display_name": "Tower of Druaga, The (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Tower of Druaga, The (Japan).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 20,
+      "distinct_address_count": 20,
+      "sample_raw_entries": [
+        {
+          "code": "1f0086:00",
+          "desc": "Invincibility",
+          "address": "0x1F0086"
+        },
+        {
+          "code": "1f008f:ff",
+          "desc": "Current HP (do not use with save states)",
+          "address": "0x1F008F"
+        },
+        {
+          "code": "1f008e:ff",
+          "desc": "Max HP (do not use with save states)",
+          "address": "0x1F008E"
+        },
+        {
+          "code": "1f0058:01",
+          "desc": "Have Floor Key (Deactivate to move on to the next level)",
+          "address": "0x1F0058"
+        },
+        {
+          "code": "1f1d24:02",
+          "desc": "Have Matches",
+          "address": "0x1F1D24"
+        },
+        {
+          "code": "1f1d25:02",
+          "desc": "Have Candle",
+          "address": "0x1F1D25"
+        },
+        {
+          "code": "1f1d26:01",
+          "desc": "Have Book of Light",
+          "address": "0x1F1D26"
+        },
+        {
+          "code": "1f1d27:01",
+          "desc": "Have Book of Keys",
+          "address": "0x1F1D27"
+        },
+        {
+          "code": "1f1d28:01",
+          "desc": "Have Map Viewer",
+          "address": "0x1F1D28"
+        },
+        {
+          "code": "1f1d29:01",
+          "desc": "Have Silver Chime",
+          "address": "0x1F1D29"
+        },
+        {
+          "code": "1f1d2a:01",
+          "desc": "Have Gold Chime",
+          "address": "0x1F1D2A"
+        },
+        {
+          "code": "1f1d2b:01",
+          "desc": "Have Emerald Necklace",
+          "address": "0x1F1D2B"
+        },
+        {
+          "code": "1f1d2c:01",
+          "desc": "Have Ruby Necklace",
+          "address": "0x1F1D2C"
+        },
+        {
+          "code": "1f1d2d:01",
+          "desc": "Have Aquamarine Necklace",
+          "address": "0x1F1D2D"
+        },
+        {
+          "code": "1f1d2e:01",
+          "desc": "Have Red Ring",
+          "address": "0x1F1D2E"
+        },
+        {
+          "code": "1f1d2f:01",
+          "desc": "Have Blue Ring",
+          "address": "0x1F1D2F"
+        },
+        {
+          "code": "1f1d30:04",
+          "desc": "Have Ankh",
+          "address": "0x1F1D30"
+        },
+        {
+          "code": "1f1d31:01",
+          "desc": "Have Red Mace",
+          "address": "0x1F1D31"
+        },
+        {
+          "code": "1f1d32:01",
+          "desc": "Have Mirror",
+          "address": "0x1F1D32"
+        },
+        {
+          "code": "1f1d33:01",
+          "desc": "Have Gold Mirror",
+          "address": "0x1F1D33"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

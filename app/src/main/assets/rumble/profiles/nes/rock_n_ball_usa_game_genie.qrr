@@ -1,0 +1,6 @@
+game_name=Rock 'n' Ball (USA) (Game Genie)
+game_key=rock_n_ball_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	score_score_0473	score	0x0473	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0474	score	0x0474	1	uint	little	prev < curr	0.8	1	right:0.350:60

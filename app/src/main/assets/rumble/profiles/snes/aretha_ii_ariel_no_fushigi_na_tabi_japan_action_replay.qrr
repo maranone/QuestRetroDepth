@@ -1,0 +1,21 @@
+game_name=Aretha II - Ariel no Fushigi na Tabi (Japan) (Action Replay)
+game_key=aretha_ii_ariel_no_fushigi_na_tabi_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_15dc	damage_taken	0x7E15DC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_15dc	death	0x7E15DC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_15dd	damage_taken	0x7E15DD	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_15dd	death	0x7E15DD	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1617	damage_taken	0x7E1617	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1617	death	0x7E1617	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1618	damage_taken	0x7E1618	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1618	death	0x7E1618	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_0d73	level_complete	0x7E0D73	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_0d74	damage_taken	0x7E0D74	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0d74	death	0x7E0D74	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0d75	damage_taken	0x7E0D75	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0d75	death	0x7E0D75	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0d76	damage_taken	0x7E0D76	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0d76	death	0x7E0D76	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0d77	damage_taken	0x7E0D77	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0d77	death	0x7E0D77	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

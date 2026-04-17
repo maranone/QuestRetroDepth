@@ -1,0 +1,145 @@
+{
+  "system": "nes",
+  "normalized_title": "tetris2",
+  "display_name": "Tetris 2 (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tetris 2 (USA).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 27,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "KAGESO",
+          "desc": "Cool Sound Effects",
+          "address": "0x0185"
+        },
+        {
+          "code": "KAGEGO",
+          "desc": "Cool Stage Selection Graphics",
+          "address": "0x0184"
+        },
+        {
+          "code": "KAGETO",
+          "desc": "Less Then Normal Fixed Blocks",
+          "address": "0x0186"
+        },
+        {
+          "code": "PZGEIO",
+          "desc": "Cool Sound Effects",
+          "address": "0x01A5"
+        },
+        {
+          "code": "AAUEUSSO",
+          "desc": "Speed doesn't increase (1-Player Alone)",
+          "address": "0x058B"
+        },
+        {
+          "code": "VNUEUSSO",
+          "desc": "Speed increases much faster (1-Player Alone)",
+          "address": "0x05FB"
+        },
+        {
+          "code": "TEXAKYPA",
+          "desc": "Start and stay at speed of 25 (1-Player Alone)",
+          "address": "0x070C"
+        },
+        {
+          "code": "02AB:FF",
+          "desc": "Drop A Tetrad To Clear The Round",
+          "address": "0x02AB"
+        },
+        {
+          "code": "ZEKESSPP",
+          "desc": "Max Speed Is 2",
+          "address": "0x058D"
+        },
+        {
+          "code": "PESAOSAP",
+          "desc": "Max Speed Is 2",
+          "address": "0x0509"
+        },
+        {
+          "code": "ZEKESSPO",
+          "desc": "Max Speed Is 10",
+          "address": "0x058D"
+        },
+        {
+          "code": "PESAOSAO",
+          "desc": "Max Speed Is 10",
+          "address": "0x0509"
+        },
+        {
+          "code": "YEKESSPO",
+          "desc": "Max Speed Is 15",
+          "address": "0x058D"
+        },
+        {
+          "code": "TESAOSAO",
+          "desc": "Max Speed Is 15",
+          "address": "0x0509"
+        },
+        {
+          "code": "GOKESSPP",
+          "desc": "Max Speed Is 20",
+          "address": "0x059D"
+        },
+        {
+          "code": "LOSAOSAP",
+          "desc": "Max Speed Is 20",
+          "address": "0x0519"
+        },
+        {
+          "code": "OZNETPOU",
+          "desc": "Every Round Starts With 4 Fixed Blocks",
+          "address": "0x01AE"
+        },
+        {
+          "code": "PANEYPAA",
+          "desc": "Every Round Starts With 4 Fixed Blocks",
+          "address": "0x018F"
+        },
+        {
+          "code": "OZNETPOU",
+          "desc": "Every Round Starts With 10 Fixed Blocks",
+          "address": "0x01AE"
+        },
+        {
+          "code": "YANEYPAA",
+          "desc": "Every Round Starts With 10 Fixed Blocks",
+          "address": "0x018F"
+        },
+        {
+          "code": "OZNETPOU",
+          "desc": "Every Round Starts With 15 Fixed Blocks",
+          "address": "0x01AE"
+        },
+        {
+          "code": "GANEYPAE",
+          "desc": "Every Round Starts With 15 Fixed Blocks",
+          "address": "0x018F"
+        },
+        {
+          "code": "OZNETPOU",
+          "desc": "Every Round Starts With 20 Fixed Blocks",
+          "address": "0x01AE"
+        },
+        {
+          "code": "PPNEYPAA",
+          "desc": "Every Round Starts With 20 Fixed Blocks",
+          "address": "0x019F"
+        },
+        {
+          "code": "0340:00",
+          "desc": "Round Modifier",
+          "address": "0x0340"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "rocknrollracing",
+  "display_name": "Rock n' Roll Racing (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Rock n' Roll Racing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10000B88",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000B88"
+        },
+        {
+          "code": "830012EC",
+          "desc": "Lots Of Cash",
+          "address": "0x020012EC"
+        },
+        {
+          "code": "330001A8",
+          "desc": "Max Points",
+          "address": "0x020001A8"
+        },
+        {
+          "code": "330001AA",
+          "desc": "Max Points",
+          "address": "0x020001AA"
+        },
+        {
+          "code": "33000DDF",
+          "desc": "No Damage",
+          "address": "0x02000DDF"
+        },
+        {
+          "code": "73000E06",
+          "desc": "Start On Last Lap",
+          "address": "0x02000E06"
+        },
+        {
+          "code": "33000DF1",
+          "desc": "Start On Last Lap",
+          "address": "0x02000DF1"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select To Kill Opponents",
+          "address": "0x02000020"
+        },
+        {
+          "code": "43000DE0",
+          "desc": "Press Select To Kill Opponents",
+          "address": "0x02000DE0"
+        },
+        {
+          "code": "43000D90",
+          "desc": "Infinite Ammo",
+          "address": "0x02000D90"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Rock n' Roll Racing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10000B88",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000B88"
+        },
+        {
+          "code": "830012EC",
+          "desc": "Lots Of Cash",
+          "address": "0x020012EC"
+        },
+        {
+          "code": "330001A8",
+          "desc": "Max Points",
+          "address": "0x020001A8"
+        },
+        {
+          "code": "330001AA",
+          "desc": "Max Points",
+          "address": "0x020001AA"
+        },
+        {
+          "code": "33000DDF",
+          "desc": "No Damage",
+          "address": "0x02000DDF"
+        },
+        {
+          "code": "73000E06",
+          "desc": "Start On Last Lap",
+          "address": "0x02000E06"
+        },
+        {
+          "code": "33000DF1",
+          "desc": "Start On Last Lap",
+          "address": "0x02000DF1"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select To Kill Opponents",
+          "address": "0x02000020"
+        },
+        {
+          "code": "43000DE0",
+          "desc": "Press Select To Kill Opponents",
+          "address": "0x02000DE0"
+        },
+        {
+          "code": "43000D90",
+          "desc": "Infinite Ammo",
+          "address": "0x02000D90"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

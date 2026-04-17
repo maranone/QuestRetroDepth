@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "batmanvengeance",
+  "display_name": "Batman - Vengeance (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Batman - Vengeance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "82000334",
+          "desc": "Infinite Health",
+          "address": "0x02000334"
+        },
+        {
+          "code": "82000342",
+          "desc": "Invincible",
+          "address": "0x02000342"
+        },
+        {
+          "code": "33000021",
+          "desc": "Infinite Batarangs",
+          "address": "0x02000021"
+        },
+        {
+          "code": "33000022",
+          "desc": "Infinite Smoke Pellets",
+          "address": "0x02000022"
+        },
+        {
+          "code": "33000023",
+          "desc": "Infinite Batgrapple",
+          "address": "0x02000023"
+        },
+        {
+          "code": "33000024",
+          "desc": "Infinite First Aid",
+          "address": "0x02000024"
+        },
+        {
+          "code": "33004310",
+          "desc": "Infinite Time",
+          "address": "0x02004310"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Batman - Vengeance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "82000334",
+          "desc": "Infinite Health",
+          "address": "0x02000334"
+        },
+        {
+          "code": "82000342",
+          "desc": "Invincible",
+          "address": "0x02000342"
+        },
+        {
+          "code": "33000021",
+          "desc": "Infinite Batarangs",
+          "address": "0x02000021"
+        },
+        {
+          "code": "33000022",
+          "desc": "Infinite Smoke Pellets",
+          "address": "0x02000022"
+        },
+        {
+          "code": "33000023",
+          "desc": "Infinite Batgrapple",
+          "address": "0x02000023"
+        },
+        {
+          "code": "33000024",
+          "desc": "Infinite First Aid",
+          "address": "0x02000024"
+        },
+        {
+          "code": "33004310",
+          "desc": "Infinite Time",
+          "address": "0x02004310"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

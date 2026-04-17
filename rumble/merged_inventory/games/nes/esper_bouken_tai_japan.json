@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "esperboukentai",
+  "display_name": "Esper Bouken Tai (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Esper Bouken Tai (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0777:09",
+          "desc": "Infinite Money",
+          "address": "0x0777"
+        },
+        {
+          "code": "0778:09",
+          "desc": "Infinite Money",
+          "address": "0x0778"
+        },
+        {
+          "code": "0779:09",
+          "desc": "Infinite Money",
+          "address": "0x0779"
+        },
+        {
+          "code": "0790:09",
+          "desc": "Max Experience",
+          "address": "0x0790"
+        },
+        {
+          "code": "0791:09",
+          "desc": "Max Experience",
+          "address": "0x0791"
+        },
+        {
+          "code": "0792:09",
+          "desc": "Max Experience",
+          "address": "0x0792"
+        },
+        {
+          "code": "07C0:09",
+          "desc": "Infinite Life",
+          "address": "0x07C0"
+        },
+        {
+          "code": "07C1:09",
+          "desc": "Infinite Life",
+          "address": "0x07C1"
+        },
+        {
+          "code": "07C2:09",
+          "desc": "Infinite Life",
+          "address": "0x07C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

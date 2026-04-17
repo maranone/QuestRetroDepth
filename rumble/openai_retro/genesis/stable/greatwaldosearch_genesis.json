@@ -1,0 +1,73 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "GreatWaldoSearch",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\GreatWaldoSearch-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "GreatWaldoSearch-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "score_score_ff0ec9",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xFF0EC9",
+          "size": 3,
+          "value_type": "uint",
+          "byte_order": "big",
+          "raw_type": ">u3",
+          "address": "0xFF0EC9",
+          "ram_offset": 3785
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xFF0EC9",
+          "raw_type": ">u3"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "scroll_found",
+      "meta": {
+        "address": 16711692,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time",
+      "meta": {
+        "address": 16715549,
+        "type": "|i1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "waldo_found",
+      "meta": {
+        "address": 16715483,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

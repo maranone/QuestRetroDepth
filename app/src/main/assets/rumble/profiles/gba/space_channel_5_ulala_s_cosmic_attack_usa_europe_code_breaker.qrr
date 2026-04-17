@@ -1,0 +1,6 @@
+game_name=Space Channel 5 - Ulala's Cosmic Attack (USA, Europe) (Code Breaker)
+game_key=space_channel_5_ulala_s_cosmic_attack_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_020010a1	damage_taken	0x020010A1	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020010a1	death	0x020010A1	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

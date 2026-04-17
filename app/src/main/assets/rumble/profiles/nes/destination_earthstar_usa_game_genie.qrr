@@ -1,0 +1,16 @@
+game_name=Destination Earthstar (USA) (Game Genie)
+game_key=destination_earthstar_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_03db	damage_taken	0x03DB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03db	death	0x03DB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_03fb	damage_taken	0x03FB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03fb	death	0x03FB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_0065	life_lost	0x0065	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0065	life_gained	0x0065	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_05a9	damage_taken	0x05A9	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05a9	death	0x05A9	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_05aa	damage_taken	0x05AA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05aa	death	0x05AA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_05a8	damage_taken	0x05A8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05a8	death	0x05A8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

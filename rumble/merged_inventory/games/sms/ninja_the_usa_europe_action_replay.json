@@ -1,0 +1,53 @@
+{
+  "system": "sms",
+  "normalized_title": "ninja",
+  "display_name": "Ninja, The (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Ninja, The (USA, Europe) (Action Replay)",
+    "Ninja, The (USA, Europe, Brazil)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\ninja_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xCDC0",
+        "0xCDC1"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Ninja-Sms-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xCDC0",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xCDC1",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Ninja, The (USA, Europe, Brazil).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,19 @@
+game_name=Mega Man 6 (USA) (Game Genie)
+game_key=mega_man_6_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_03e5	damage_taken	0x03E5	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03e5	death	0x03E5	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_067a	damage_taken	0x067A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_067a	death	0x067A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_060e	enemy_defeated	0x060E	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	life_lost_lives_06aa	life_lost	0x06AA	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_06aa	life_gained	0x06AA	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_072c	damage_taken	0x072C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_072c	death	0x072C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_068a	life_lost	0x068A	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_068a	life_gained	0x068A	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_052f	damage_taken	0x052F	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_052f	death	0x052F	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_072e	damage_taken	0x072E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_072e	death	0x072E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

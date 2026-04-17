@@ -1,0 +1,6 @@
+game_name=J.League Winning Goal (Japan)
+game_key=j_league_winning_goal_japan
+system=nes
+integration_tier=contrib
+trigger	score_score_031c	score	0x031C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0320	score	0x0320	1	uint	little	prev < curr	0.8	1	right:0.350:60

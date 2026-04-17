@@ -1,0 +1,84 @@
+{
+  "system": "nes",
+  "normalized_title": "hellokittyworld",
+  "display_name": "Hello Kitty World (Japan) (Game Genie)",
+  "aliases": [
+    "Hello Kitty World (Japan) (Game Genie)",
+    "Hello Kitty World (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\hellokittyworld_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00A7",
+        "0x00C6"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\HelloKittyWorld-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x00A7",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x00C6",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hello Kitty World (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "03B4:05",
+          "desc": "Infinite Invincibility Powerup [On Pick Up]",
+          "address": "0x03B4"
+        },
+        {
+          "code": "00A2:00",
+          "desc": "Stage Modifier",
+          "address": "0x00A2"
+        },
+        {
+          "code": "00A7:63",
+          "desc": "Infinite Lives",
+          "address": "0x00A7"
+        },
+        {
+          "code": "03AE:09",
+          "desc": "Go Through Enemies",
+          "address": "0x03AE"
+        },
+        {
+          "code": "03B1:02",
+          "desc": "Infinite Balloon Ability",
+          "address": "0x03B1"
+        },
+        {
+          "code": "SUSOIXSE",
+          "desc": "DPCM Pop Reducer",
+          "address": "0x02BD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

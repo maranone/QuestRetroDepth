@@ -1,0 +1,66 @@
+{
+  "system": "nes",
+  "normalized_title": "jackiechansactionkungfu",
+  "display_name": "Jackie Chan's Action Kung Fu (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Jackie Chan's Action Kung Fu (USA)",
+    "Jackie Chan's Action Kung Fu (USA, Europe) (Game Genie)",
+    "Jackie Chan s Action Kung Fu"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\jackiechansactionkungfu_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0702",
+        "0x0704"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JackieChansActionKungFu-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "bonus_level_score",
+          "address": "0x0737",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0x0702",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0704",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Jackie Chan's Action Kung Fu (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Jackie Chan s Action Kung Fu.cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

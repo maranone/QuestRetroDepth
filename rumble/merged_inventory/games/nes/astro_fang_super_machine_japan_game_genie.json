@@ -1,0 +1,47 @@
+{
+  "system": "nes",
+  "normalized_title": "astrofangsupermachine",
+  "display_name": "Astro Fang - Super Machine (Japan) (Game Genie)",
+  "aliases": [
+    "Astro Fang - Super Machine (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Astro Fang - Super Machine (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "00D9:00",
+          "desc": "Infinite Missiles",
+          "address": "0x00D9"
+        },
+        {
+          "code": "00C4:00",
+          "desc": "Infinite Fuel",
+          "address": "0x00C4"
+        },
+        {
+          "code": "005A:FF",
+          "desc": "Infinite Money",
+          "address": "0x005A"
+        },
+        {
+          "code": "0095:FF",
+          "desc": "Go at 300 mph",
+          "address": "0x0095"
+        },
+        {
+          "code": "00B9:FF",
+          "desc": "Automatically Reach The Level Boss",
+          "address": "0x00B9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

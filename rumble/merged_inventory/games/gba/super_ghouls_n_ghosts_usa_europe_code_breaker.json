@@ -1,0 +1,158 @@
+{
+  "system": "gba",
+  "normalized_title": "superghoulsnghosts",
+  "display_name": "Super Ghouls'n Ghosts (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Super Ghouls'n Ghosts (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 13,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "100005A4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020005A4"
+        },
+        {
+          "code": "3202044A",
+          "desc": "Infinite Health",
+          "address": "0x0202044A"
+        },
+        {
+          "code": "32005F1C",
+          "desc": "Infinite Lives",
+          "address": "0x02005F1C"
+        },
+        {
+          "code": "32020463",
+          "desc": "Infinite Armor",
+          "address": "0x02020463"
+        },
+        {
+          "code": "32020464",
+          "desc": "Infinite Armor",
+          "address": "0x02020464"
+        },
+        {
+          "code": "720214BC",
+          "desc": "Infinite Double Jump",
+          "address": "0x020214BC"
+        },
+        {
+          "code": "820214BC",
+          "desc": "Infinite Double Jump",
+          "address": "0x020214BC"
+        },
+        {
+          "code": "32000A2A",
+          "desc": "Stop Timer",
+          "address": "0x02000A2A"
+        },
+        {
+          "code": "720016F2",
+          "desc": "Start With Hi-Score",
+          "address": "0x020016F2"
+        },
+        {
+          "code": "820016F2",
+          "desc": "Start With Hi-Score",
+          "address": "0x020016F2"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+L To Skip Level",
+          "address": "0x02000130"
+        },
+        {
+          "code": "830000DC",
+          "desc": "Press Select+L To Skip Level",
+          "address": "0x020000DC"
+        },
+        {
+          "code": "32001388",
+          "desc": "Invinicibility",
+          "address": "0x02001388"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Super Ghouls'n Ghosts (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 13,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "100005A4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020005A4"
+        },
+        {
+          "code": "3202044A",
+          "desc": "Infinite Health",
+          "address": "0x0202044A"
+        },
+        {
+          "code": "32005F1C",
+          "desc": "Infinite Lives",
+          "address": "0x02005F1C"
+        },
+        {
+          "code": "32020463",
+          "desc": "Infinite Armor",
+          "address": "0x02020463"
+        },
+        {
+          "code": "32020464",
+          "desc": "Infinite Armor",
+          "address": "0x02020464"
+        },
+        {
+          "code": "720214BC",
+          "desc": "Infinite Double Jump",
+          "address": "0x020214BC"
+        },
+        {
+          "code": "820214BC",
+          "desc": "Infinite Double Jump",
+          "address": "0x020214BC"
+        },
+        {
+          "code": "32000A2A",
+          "desc": "Stop Timer",
+          "address": "0x02000A2A"
+        },
+        {
+          "code": "720016F2",
+          "desc": "Start With Hi-Score",
+          "address": "0x020016F2"
+        },
+        {
+          "code": "820016F2",
+          "desc": "Start With Hi-Score",
+          "address": "0x020016F2"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+L To Skip Level",
+          "address": "0x02000130"
+        },
+        {
+          "code": "830000DC",
+          "desc": "Press Select+L To Skip Level",
+          "address": "0x020000DC"
+        },
+        {
+          "code": "32001388",
+          "desc": "Invinicibility",
+          "address": "0x02001388"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

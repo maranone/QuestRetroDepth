@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "teentitans2",
+  "display_name": "Teen Titans 2 (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Teen Titans 2 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "820070B0",
+          "desc": "Infinite Life",
+          "address": "0x020070B0"
+        },
+        {
+          "code": "820070B2",
+          "desc": "Infinite Life",
+          "address": "0x020070B2"
+        },
+        {
+          "code": "320070B4",
+          "desc": "Infinite Support",
+          "address": "0x020070B4"
+        },
+        {
+          "code": "820070D0",
+          "desc": "Infinite Special",
+          "address": "0x020070D0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Teen Titans 2 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "820070B0",
+          "desc": "Infinite Life",
+          "address": "0x020070B0"
+        },
+        {
+          "code": "820070B2",
+          "desc": "Infinite Life",
+          "address": "0x020070B2"
+        },
+        {
+          "code": "320070B4",
+          "desc": "Infinite Support",
+          "address": "0x020070B4"
+        },
+        {
+          "code": "820070D0",
+          "desc": "Infinite Special",
+          "address": "0x020070D0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

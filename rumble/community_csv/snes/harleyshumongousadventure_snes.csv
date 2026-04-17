@@ -2,9 +2,9 @@
 # game_name=Harley's Humongous Adventure (USA, Europe) (Action Replay) (diff)
 # match_names=harleyshumongousadventure|harleyshumongousadventuresnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-game_over_gameover_a7e6,0x7EA7E6,1,int,became_nonzero,,both,1.000,normal,0,1000,400,100,
-damage_taken_health_24ba,0x7E24BA,1,int,prev_gt_curr,,left,0.850,normal,0,90,100,70,
-death_health_24ba,0x7E24BA,1,int,became_zero,,both,1.000,normal,0,600,400,90,
-life_lost_lives_24b8,0x7E24B8,1,int,prev_gt_curr,,both,0.900,normal,0,300,160,80,
-life_gained_lives_24b8,0x7E24B8,1,int,prev_lt_curr,,both,0.750,normal,0,180,160,50,
-score_score_24b4,0x7E24B4,4,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+game_over_gameover_a7e6,0x7EA7E6,1,int,became_nonzero,,both,1.000,heartbeat,0,1000,400,100,
+damage_taken_health_24ba,0x7E24BA,1,int,prev_gt_curr,,left,0.850,fade_out,0,110,80,70,
+death_health_24ba,0x7E24BA,1,int,became_zero,,both,1.000,heartbeat,0,600,400,90,
+life_lost_lives_24b8,0x7E24B8,1,int,prev_gt_curr,,both,0.92,fade_in_out,0,300,250,80,
+life_gained_lives_24b8,0x7E24B8,1,int,prev_lt_curr,,both,0.750,fade_in,0,180,200,50,
+score_score_24b4,0x7E24B4,4,bcd,prev_lt_curr,,right,0.350,burst,0,70,15,10,

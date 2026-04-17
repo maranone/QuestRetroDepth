@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "wagyanland2",
+  "display_name": "Wagyan Land 2 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wagyan Land 2 (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "00B8:72",
+          "desc": "Invincibility",
+          "address": "0x00B8"
+        },
+        {
+          "code": "0084:00",
+          "desc": "Level Modifier",
+          "address": "0x0084"
+        },
+        {
+          "code": "008D:90",
+          "desc": "Speed Modifier",
+          "address": "0x008D"
+        },
+        {
+          "code": "00A9:00",
+          "desc": "Shot Modifier",
+          "address": "0x00A9"
+        },
+        {
+          "code": "00EE:20",
+          "desc": "Power Modifier",
+          "address": "0x00EE"
+        },
+        {
+          "code": "0174:15",
+          "desc": "Point Modifier Boss Battles",
+          "address": "0x0174"
+        },
+        {
+          "code": "0432:C2",
+          "desc": "Infinite Lives",
+          "address": "0x0432"
+        },
+        {
+          "code": "0460:27",
+          "desc": "Walk Through Walls",
+          "address": "0x0460"
+        },
+        {
+          "code": "0640:50",
+          "desc": "Always Fire Charge Beam",
+          "address": "0x0640"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

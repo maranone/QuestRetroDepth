@@ -1,0 +1,6 @@
+game_name=Smuggler's Run (USA, Europe) (Code Breaker)
+game_key=smuggler_s_run_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_0200323c	score	0x0200323C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0200323e	score	0x0200323E	1	uint	little	prev < curr	0.8	1	right:0.350:60

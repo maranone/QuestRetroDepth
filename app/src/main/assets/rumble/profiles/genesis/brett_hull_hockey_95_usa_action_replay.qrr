@@ -1,0 +1,6 @@
+game_name=Brett Hull Hockey '95 (USA) (Action Replay)
+game_key=brett_hull_hockey_95_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff6ad9	score	0xFF6AD9	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff6adb	score	0xFF6ADB	1	uint	little	prev < curr	0.8	1	right:0.350:60

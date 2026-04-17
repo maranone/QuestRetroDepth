@@ -1,0 +1,60 @@
+{
+  "system": "sms",
+  "normalized_title": "incrediblehulk",
+  "display_name": "Incredible Hulk, The (Europe) (Action Replay)",
+  "aliases": [
+    "Incredible Hulk, The (Europe) (Action Replay)",
+    "Incredible Hulk, The (Europe, Brazil)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\incrediblehulk_sms.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xC20A",
+        "0xC40F",
+        "0xC418"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\IncredibleHulk-Sms-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xC418",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xC40F",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xC20A",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Incredible Hulk, The (Europe, Brazil).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

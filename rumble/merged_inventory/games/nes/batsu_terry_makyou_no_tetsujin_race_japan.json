@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "batsuterrymakyounotetsujinrace",
+  "display_name": "Batsu _ Terry - Makyou no Tetsujin Race (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Batsu _ Terry - Makyou no Tetsujin Race (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0052:04",
+          "desc": "Infinite Energy",
+          "address": "0x0052"
+        },
+        {
+          "code": "0051:02",
+          "desc": "Infinite Lives",
+          "address": "0x0051"
+        },
+        {
+          "code": "0058:95",
+          "desc": "Infinite Time",
+          "address": "0x0058"
+        },
+        {
+          "code": "0389:20",
+          "desc": "Moon Jump",
+          "address": "0x0389"
+        },
+        {
+          "code": "038D:20",
+          "desc": "Super Moon Jump Add-On",
+          "address": "0x038D"
+        },
+        {
+          "code": "06A0:00",
+          "desc": "Sound Effects Off",
+          "address": "0x06A0"
+        },
+        {
+          "code": "06A0:00",
+          "desc": "Shot Modifier",
+          "address": "0x06A0"
+        },
+        {
+          "code": "0050:63",
+          "desc": "99 Hearts",
+          "address": "0x0050"
+        },
+        {
+          "code": "0518:00",
+          "desc": "1 Shot Kills",
+          "address": "0x0518"
+        },
+        {
+          "code": "0558:00",
+          "desc": "1 Shot Kills",
+          "address": "0x0558"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

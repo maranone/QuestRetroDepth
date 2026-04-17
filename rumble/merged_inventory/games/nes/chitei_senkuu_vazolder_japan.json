@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "chiteisenkuuvazolder",
+  "display_name": "Chitei Senkuu Vazolder (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Chitei Senkuu Vazolder (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "04E6:10",
+          "desc": "Infinite Energy",
+          "address": "0x04E6"
+        },
+        {
+          "code": "00CA:10",
+          "desc": "Infinite Energy",
+          "address": "0x00CA"
+        },
+        {
+          "code": "0051:10",
+          "desc": "Infinite Energy",
+          "address": "0x0051"
+        },
+        {
+          "code": "EIVOIYEY",
+          "desc": "Invincibility",
+          "address": "0x07DD"
+        },
+        {
+          "code": "00C8:38",
+          "desc": "Infinite Fuel/Arms",
+          "address": "0x00C8"
+        },
+        {
+          "code": "00D2:00",
+          "desc": "Area Modifier",
+          "address": "0x00D2"
+        },
+        {
+          "code": "0310:08",
+          "desc": "Can't Be Harmed",
+          "address": "0x0310"
+        },
+        {
+          "code": "04F2:8A",
+          "desc": "Possibility 100%",
+          "address": "0x04F2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,14 @@
+game_name=Teenage Mutant Ninja Turtles III - The Manhattan Project (USA) (Game Genie)
+game_key=teenage_mutant_ninja_turtles_iii_the_manhattan_project_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_04f1	damage_taken	0x04F1	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04f1	death	0x04F1	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04f2	damage_taken	0x04F2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04f2	death	0x04F2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_006a	life_lost	0x006A	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_006a	life_gained	0x006A	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_006b	life_lost	0x006B	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_006b	life_gained	0x006B	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_002d	level_complete	0x002D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0058	level_complete	0x0058	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

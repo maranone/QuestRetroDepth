@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "rugratscastlecapers",
+  "display_name": "Rugrats - Castle Capers (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Rugrats - Castle Capers (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10002ABA",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002ABA"
+        },
+        {
+          "code": "82007388",
+          "desc": "Infinite Health",
+          "address": "0x02007388"
+        },
+        {
+          "code": "8200738C",
+          "desc": "Infinite Throwing Objects",
+          "address": "0x0200738C"
+        },
+        {
+          "code": "82007390",
+          "desc": "No Bonus Point Objects Left",
+          "address": "0x02007390"
+        },
+        {
+          "code": "32007388",
+          "desc": "Max Diapers (Health)",
+          "address": "0x02007388"
+        },
+        {
+          "code": "8200738C",
+          "desc": "Max Ammo (Projectiles)",
+          "address": "0x0200738C"
+        },
+        {
+          "code": "32007390",
+          "desc": "Zero Items Needed",
+          "address": "0x02007390"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Rugrats - Castle Capers (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10002ABA",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002ABA"
+        },
+        {
+          "code": "82007388",
+          "desc": "Infinite Health",
+          "address": "0x02007388"
+        },
+        {
+          "code": "8200738C",
+          "desc": "Infinite Throwing Objects",
+          "address": "0x0200738C"
+        },
+        {
+          "code": "82007390",
+          "desc": "No Bonus Point Objects Left",
+          "address": "0x02007390"
+        },
+        {
+          "code": "32007388",
+          "desc": "Max Diapers (Health)",
+          "address": "0x02007388"
+        },
+        {
+          "code": "8200738C",
+          "desc": "Max Ammo (Projectiles)",
+          "address": "0x0200738C"
+        },
+        {
+          "code": "32007390",
+          "desc": "Zero Items Needed",
+          "address": "0x02007390"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "system": "nes",
+  "normalized_title": "zanac",
+  "display_name": "Zanac (USA) (Game Genie)",
+  "aliases": [
+    "Zanac (USA) (Game Genie)",
+    "Zanac (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\zanac_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0032",
+        "0x017A"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Zanac-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0032",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x017A",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Zanac (USA).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 27,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "0032:03",
+          "desc": "Infinite Lives",
+          "address": "0x0032"
+        },
+        {
+          "code": "00C5:FF",
+          "desc": "Infinite Time",
+          "address": "0x00C5"
+        },
+        {
+          "code": "0764:00",
+          "desc": "Total Invincibility",
+          "address": "0x0764"
+        },
+        {
+          "code": "OXEENYVK",
+          "desc": "Infinite lives",
+          "address": "0x07AF"
+        },
+        {
+          "code": "PEOPAGAA",
+          "desc": "Start with Straight Crusher",
+          "address": "0x0408"
+        },
+        {
+          "code": "ZEOPAGAA",
+          "desc": "Start with Field Shutter",
+          "address": "0x0408"
+        },
+        {
+          "code": "LEOPAGAA",
+          "desc": "Start with the Circular",
+          "address": "0x0408"
+        },
+        {
+          "code": "GEOPAGAA",
+          "desc": "Start with the Vibrator",
+          "address": "0x0408"
+        },
+        {
+          "code": "IEOPAGAA",
+          "desc": "Start with the Rewinder",
+          "address": "0x0408"
+        },
+        {
+          "code": "TEOPAGAA",
+          "desc": "Start with the Plasma Flash",
+          "address": "0x0408"
+        },
+        {
+          "code": "YEOPAGAA",
+          "desc": "Start with rapid fire!",
+          "address": "0x0408"
+        },
+        {
+          "code": "005C:00",
+          "desc": "Sub Weapon Modifier",
+          "address": "0x005C"
+        },
+        {
+          "code": "0091:01",
+          "desc": "Stage Modifier",
+          "address": "0x0091"
+        },
+        {
+          "code": "ALSEGZEU",
+          "desc": "Hit Anywhere",
+          "address": "0x02BC"
+        },
+        {
+          "code": "ATSEIZPL",
+          "desc": "Hit Anywhere",
+          "address": "0x02ED"
+        },
+        {
+          "code": "SZOELXOO",
+          "desc": "Hit Anywhere",
+          "address": "0x02AB"
+        },
+        {
+          "code": "0032:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x0032"
+        },
+        {
+          "code": "0576:24",
+          "desc": "Change Your Ship Into A Ghost/Bomb Thing",
+          "address": "0x0576"
+        },
+        {
+          "code": "019B:FF",
+          "desc": "Weapon Upgrades",
+          "address": "0x019B"
+        },
+        {
+          "code": "IESASIIO",
+          "desc": "Invincibility",
+          "address": "0x050D"
+        },
+        {
+          "code": "SESAVSSX",
+          "desc": "Invincibility",
+          "address": "0x050E"
+        },
+        {
+          "code": "EEVAKIAA",
+          "desc": "Invincibility",
+          "address": "0x050C"
+        },
+        {
+          "code": "EEEEKGAG",
+          "desc": "Temporary Invincibility after Dying and at Start of Level Lasts 2x Longer",
+          "address": "0x048C"
+        },
+        {
+          "code": "EKEEKGAG",
+          "desc": "Temporary Invincibility after Dying and at Start of Level Lasts 3x Longer",
+          "address": "0x04CC"
+        },
+        {
+          "code": "NNEEKGAK",
+          "desc": "Temporary Invincibility after Dying and at Start of Level Lasts 4x Longer",
+          "address": "0x04FC"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Zanac (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 8,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "OXEENYVK",
+          "desc": "Infinite Lives",
+          "address": "0x07AF"
+        },
+        {
+          "code": "PEOPAGAA",
+          "desc": "Start With Straight Crusher",
+          "address": "0x0408"
+        },
+        {
+          "code": "ZEOPAGAA",
+          "desc": "Start With Field Shutter",
+          "address": "0x0408"
+        },
+        {
+          "code": "LEOPAGAA",
+          "desc": "Start With The Circular",
+          "address": "0x0408"
+        },
+        {
+          "code": "GEOPAGAA",
+          "desc": "Start With The Vibrator",
+          "address": "0x0408"
+        },
+        {
+          "code": "IEOPAGAA",
+          "desc": "Start With The Rewinder",
+          "address": "0x0408"
+        },
+        {
+          "code": "TEOPAGAA",
+          "desc": "Start With The Plasma Flash",
+          "address": "0x0408"
+        },
+        {
+          "code": "YEOPAGAA",
+          "desc": "Start With Rapid Fire!",
+          "address": "0x0408"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

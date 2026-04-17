@@ -1,0 +1,109 @@
+{
+  "system": "nes",
+  "normalized_title": "sdherosoukessentaoseakunogundan",
+  "display_name": "SD Hero Soukessen - Taose! Aku no Gundan (Japan) (Game Genie)",
+  "aliases": [
+    "SD Hero Soukessen - Taose! Aku no Gundan (Japan) (Game Genie)",
+    "SD Hero Soukessen - Taose! Aku no Gundan (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\sdherosoukessentaoseakunogundan_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0067",
+        "0x0070"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SDHeroSoukessenTaoseAkuNoGundan-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0070",
+          "type": "<u2"
+        },
+        {
+          "name": "score",
+          "address": "0x0067",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\SD Hero Soukessen - Taose! Aku no Gundan (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "0070:20",
+          "desc": "Infinite Energy",
+          "address": "0x0070"
+        },
+        {
+          "code": "0020:2C",
+          "desc": "Black And White Mode",
+          "address": "0x0020"
+        },
+        {
+          "code": "0021:2D",
+          "desc": "Black And White Mode",
+          "address": "0x0021"
+        },
+        {
+          "code": "0022:2E",
+          "desc": "Black And White Mode",
+          "address": "0x0022"
+        },
+        {
+          "code": "0066:FF",
+          "desc": "Progress Modifier",
+          "address": "0x0066"
+        },
+        {
+          "code": "00B1:02",
+          "desc": "Untouchable",
+          "address": "0x00B1"
+        },
+        {
+          "code": "00BC:08",
+          "desc": "Press Select to Change Characters",
+          "address": "0x00BC"
+        },
+        {
+          "code": "03A0:00",
+          "desc": "Jump Higher",
+          "address": "0x03A0"
+        },
+        {
+          "code": "03A4:D0",
+          "desc": "Moon Jump",
+          "address": "0x03A4"
+        },
+        {
+          "code": "041C:00",
+          "desc": "Boss Dies",
+          "address": "0x041C"
+        },
+        {
+          "code": "041E:00",
+          "desc": "Boss No Recovery Time",
+          "address": "0x041E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

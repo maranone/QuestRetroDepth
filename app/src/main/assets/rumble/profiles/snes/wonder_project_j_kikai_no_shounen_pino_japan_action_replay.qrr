@@ -1,0 +1,11 @@
+game_name=Wonder Project J - Kikai no Shounen Pino (Japan) (Action Replay)
+game_key=wonder_project_j_kikai_no_shounen_pino_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_124f	pickup	0x7E124F	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_11d4	damage_taken	0x7E11D4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_11d4	death	0x7E11D4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_11d5	damage_taken	0x7E11D5	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_11d5	death	0x7E11D5	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1248	damage_taken	0x7E1248	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1248	death	0x7E1248	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

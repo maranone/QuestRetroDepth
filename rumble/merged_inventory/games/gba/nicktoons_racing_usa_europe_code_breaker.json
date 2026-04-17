@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "nicktoonsracing",
+  "display_name": "Nicktoons Racing (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Nicktoons Racing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "100056A4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020056A4"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Turbo Boost",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83006440",
+          "desc": "Turbo Boost",
+          "address": "0x02006440"
+        },
+        {
+          "code": "8201DF5A",
+          "desc": "Unlock Everything",
+          "address": "0x0201DF5A"
+        },
+        {
+          "code": "83004810",
+          "desc": "Infinite Shield Time",
+          "address": "0x02004810"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Nicktoons Racing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "100056A4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020056A4"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Turbo Boost",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83006440",
+          "desc": "Turbo Boost",
+          "address": "0x02006440"
+        },
+        {
+          "code": "8201DF5A",
+          "desc": "Unlock Everything",
+          "address": "0x0201DF5A"
+        },
+        {
+          "code": "83004810",
+          "desc": "Infinite Shield Time",
+          "address": "0x02004810"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

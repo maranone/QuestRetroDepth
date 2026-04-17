@@ -1,0 +1,7 @@
+game_name=Kanshakudama Nage Kantarou no Toukaidou Gojuusan Tsugi (Japan)
+game_key=KanshakudamaNageKantarouNoToukaidouGojuusanTsugi-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_0058	life_lost	0x0058	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0058	life_gained	0x0058	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0032	score	0x0032	3	uint	little	prev < curr	0.8	1	right:0.350:60

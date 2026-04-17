@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "terminator3riseofmachines",
+  "display_name": "Terminator 3 - Rise of the Machines (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Terminator 3 - Rise of the Machines (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10000440",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000440"
+        },
+        {
+          "code": "3201E590",
+          "desc": "Infinite Lives",
+          "address": "0x0201E590"
+        },
+        {
+          "code": "3201EC20",
+          "desc": "Infinite Health",
+          "address": "0x0201EC20"
+        },
+        {
+          "code": "3203B0F4",
+          "desc": "Infinite Energy (Shield)",
+          "address": "0x0203B0F4"
+        },
+        {
+          "code": "42000242",
+          "desc": "Have All Weapons",
+          "address": "0x02000242"
+        },
+        {
+          "code": "42000244",
+          "desc": "Infinite Ammo-All Weapons",
+          "address": "0x02000244"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Terminator 3 - Rise of the Machines (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10000440",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000440"
+        },
+        {
+          "code": "3201E590",
+          "desc": "Infinite Lives",
+          "address": "0x0201E590"
+        },
+        {
+          "code": "3201EC20",
+          "desc": "Infinite Health",
+          "address": "0x0201EC20"
+        },
+        {
+          "code": "3203B0F4",
+          "desc": "Infinite Energy (Shield)",
+          "address": "0x0203B0F4"
+        },
+        {
+          "code": "42000242",
+          "desc": "Have All Weapons",
+          "address": "0x02000242"
+        },
+        {
+          "code": "42000244",
+          "desc": "Infinite Ammo-All Weapons",
+          "address": "0x02000244"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

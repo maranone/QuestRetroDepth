@@ -1,0 +1,181 @@
+{
+  "system": "nes",
+  "normalized_title": "conan",
+  "display_name": "Conan (USA)",
+  "aliases": [
+    "Conan (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\conan_nes.json",
+      "trigger_count": 8,
+      "field_names": [
+        "health",
+        "lives",
+        "score0",
+        "score1",
+        "score2",
+        "score3"
+      ],
+      "field_count": 6,
+      "distinct_addresses": [
+        "0x0053",
+        "0x06AD",
+        "0x076F",
+        "0x0771",
+        "0x0773",
+        "0x0775"
+      ],
+      "distinct_address_count": 6
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Conan-Nes-v0\\data.json",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x06AD",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0053",
+          "type": "|u1"
+        },
+        {
+          "name": "score0",
+          "address": "0x0775",
+          "type": "|n1"
+        },
+        {
+          "name": "score1",
+          "address": "0x0773",
+          "type": "|n1"
+        },
+        {
+          "name": "score2",
+          "address": "0x0771",
+          "type": "|n1"
+        },
+        {
+          "name": "score3",
+          "address": "0x076F",
+          "type": "|n1"
+        }
+      ],
+      "distinct_address_count": 6
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Conan (USA).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 20,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "0053:02",
+          "desc": "Infinite Lives",
+          "address": "0x0053"
+        },
+        {
+          "code": "06AD:80",
+          "desc": "Infinite Energy",
+          "address": "0x06AD"
+        },
+        {
+          "code": "SXUEYYAX",
+          "desc": "Invincibility",
+          "address": "0x07AF"
+        },
+        {
+          "code": "SZVAPGAX",
+          "desc": "Invincibility",
+          "address": "0x0429"
+        },
+        {
+          "code": "06D3:63",
+          "desc": "Fireballs #",
+          "address": "0x06D3"
+        },
+        {
+          "code": "06D4:01",
+          "desc": "Obtain Trident",
+          "address": "0x06D4"
+        },
+        {
+          "code": "06D5:01",
+          "desc": "Obtain Shield",
+          "address": "0x06D5"
+        },
+        {
+          "code": "06D6:63",
+          "desc": "Medusa Heads",
+          "address": "0x06D6"
+        },
+        {
+          "code": "06D7:01",
+          "desc": "Obtain Torch",
+          "address": "0x06D7"
+        },
+        {
+          "code": "06D8:63",
+          "desc": "Daggers #",
+          "address": "0x06D8"
+        },
+        {
+          "code": "06D9:63",
+          "desc": "Eye #",
+          "address": "0x06D9"
+        },
+        {
+          "code": "06DA:01",
+          "desc": "Obtain Cross",
+          "address": "0x06DA"
+        },
+        {
+          "code": "06DB:01",
+          "desc": "Vase 1",
+          "address": "0x06DB"
+        },
+        {
+          "code": "06DC:01",
+          "desc": "Vase 2",
+          "address": "0x06DC"
+        },
+        {
+          "code": "06DD:01",
+          "desc": "Vase 3",
+          "address": "0x06DD"
+        },
+        {
+          "code": "06DE:01",
+          "desc": "Vase 4",
+          "address": "0x06DE"
+        },
+        {
+          "code": "06DF:01",
+          "desc": "Axe #",
+          "address": "0x06DF"
+        },
+        {
+          "code": "0052:00",
+          "desc": "Level Modifier",
+          "address": "0x0052"
+        },
+        {
+          "code": "06AD:9A",
+          "desc": "Infinite Health",
+          "address": "0x06AD"
+        },
+        {
+          "code": "0777:09",
+          "desc": "Infinite Lives",
+          "address": "0x0777"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

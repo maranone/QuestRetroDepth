@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "pitfalllostexpedition",
+  "display_name": "Pitfall - The Lost Expedition (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Pitfall - The Lost Expedition (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "32017195",
+          "desc": "Infinite Health",
+          "address": "0x02017195"
+        },
+        {
+          "code": "33000BC8",
+          "desc": "Infinite Health",
+          "address": "0x02000BC8"
+        },
+        {
+          "code": "32013002",
+          "desc": "Max Bombs",
+          "address": "0x02013002"
+        },
+        {
+          "code": "32013003",
+          "desc": "Max Bee Hives",
+          "address": "0x02013003"
+        },
+        {
+          "code": "32013004",
+          "desc": "Max Fireballs",
+          "address": "0x02013004"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Pitfall - The Lost Expedition (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "32017195",
+          "desc": "Infinite Health",
+          "address": "0x02017195"
+        },
+        {
+          "code": "33000BC8",
+          "desc": "Infinite Health",
+          "address": "0x02000BC8"
+        },
+        {
+          "code": "32013002",
+          "desc": "Max Bombs",
+          "address": "0x02013002"
+        },
+        {
+          "code": "32013003",
+          "desc": "Max Bee Hives",
+          "address": "0x02013003"
+        },
+        {
+          "code": "32013004",
+          "desc": "Max Fireballs",
+          "address": "0x02013004"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

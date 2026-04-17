@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "gradiusgalaxies",
+  "display_name": "Gradius Galaxies (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Gradius Galaxies (USA) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "10000914",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000914"
+        },
+        {
+          "code": "83004D90",
+          "desc": "Invincible",
+          "address": "0x02004D90"
+        },
+        {
+          "code": "83004D46",
+          "desc": "Infinite Lives",
+          "address": "0x02004D46"
+        },
+        {
+          "code": "83004D3C",
+          "desc": "Quick Score Gain",
+          "address": "0x02004D3C"
+        },
+        {
+          "code": "83004D3C",
+          "desc": "Max Score",
+          "address": "0x02004D3C"
+        },
+        {
+          "code": "83004D3E",
+          "desc": "Max Score",
+          "address": "0x02004D3E"
+        },
+        {
+          "code": "33004D9D",
+          "desc": "Super Speed Space Ship",
+          "address": "0x02004D9D"
+        },
+        {
+          "code": "83003A26",
+          "desc": "Have All Powerups",
+          "address": "0x02003A26"
+        },
+        {
+          "code": "33004DA8",
+          "desc": "Have All Powerups",
+          "address": "0x02004DA8"
+        },
+        {
+          "code": "33005984",
+          "desc": "Always Full Shield",
+          "address": "0x02005984"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Gradius Galaxies (USA) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "10000914",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000914"
+        },
+        {
+          "code": "83004D90",
+          "desc": "Invincible",
+          "address": "0x02004D90"
+        },
+        {
+          "code": "83004D46",
+          "desc": "Infinite Lives",
+          "address": "0x02004D46"
+        },
+        {
+          "code": "83004D3C",
+          "desc": "Quick Score Gain",
+          "address": "0x02004D3C"
+        },
+        {
+          "code": "83004D3C",
+          "desc": "Max Score",
+          "address": "0x02004D3C"
+        },
+        {
+          "code": "83004D3E",
+          "desc": "Max Score",
+          "address": "0x02004D3E"
+        },
+        {
+          "code": "33004D9D",
+          "desc": "Super Speed Space Ship",
+          "address": "0x02004D9D"
+        },
+        {
+          "code": "83003A26",
+          "desc": "Have All Powerups",
+          "address": "0x02003A26"
+        },
+        {
+          "code": "33004DA8",
+          "desc": "Have All Powerups",
+          "address": "0x02004DA8"
+        },
+        {
+          "code": "33005984",
+          "desc": "Always Full Shield",
+          "address": "0x02005984"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

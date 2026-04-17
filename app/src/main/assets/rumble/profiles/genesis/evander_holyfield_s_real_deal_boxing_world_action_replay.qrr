@@ -1,0 +1,12 @@
+game_name=Evander Holyfield's 'Real Deal' Boxing (World) (Action Replay)
+game_key=evander_holyfield_s_real_deal_boxing_world_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_fff1a4	damage_taken	0xFFF1A4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_fff1a4	death	0xFFF1A4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_fff222	damage_taken	0xFFF222	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_fff222	death	0xFFF222	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_fff1a6	damage_taken	0xFFF1A6	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_fff1a6	death	0xFFF1A6	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_fff224	damage_taken	0xFFF224	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_fff224	death	0xFFF224	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

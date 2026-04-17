@@ -1,0 +1,138 @@
+{
+  "system": "gba",
+  "normalized_title": "superhornetfa18f",
+  "display_name": "Super Hornet FA 18F (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Super Hornet FA 18F (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10000D84",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000D84"
+        },
+        {
+          "code": "830032AE",
+          "desc": "Max Engine 210%",
+          "address": "0x020032AE"
+        },
+        {
+          "code": "830032B8",
+          "desc": "Max Speed 230M",
+          "address": "0x020032B8"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Up+L To Refill Fuel To Max",
+          "address": "0x02000130"
+        },
+        {
+          "code": "830032C6",
+          "desc": "Press Up+L To Refill Fuel To Max",
+          "address": "0x020032C6"
+        },
+        {
+          "code": "83003328",
+          "desc": "Max AGM-86B",
+          "address": "0x02003328"
+        },
+        {
+          "code": "83003326",
+          "desc": "Max AIM 54",
+          "address": "0x02003326"
+        },
+        {
+          "code": "83003324",
+          "desc": "Max AIM 7",
+          "address": "0x02003324"
+        },
+        {
+          "code": "83003322",
+          "desc": "Max AIM 9",
+          "address": "0x02003322"
+        },
+        {
+          "code": "8300330C",
+          "desc": "Max Chaff",
+          "address": "0x0200330C"
+        },
+        {
+          "code": "83003310",
+          "desc": "Max Flares",
+          "address": "0x02003310"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Super Hornet FA 18F (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10000D84",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000D84"
+        },
+        {
+          "code": "830032AE",
+          "desc": "Max Engine 210%",
+          "address": "0x020032AE"
+        },
+        {
+          "code": "830032B8",
+          "desc": "Max Speed 230M",
+          "address": "0x020032B8"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Up+L To Refill Fuel To Max",
+          "address": "0x02000130"
+        },
+        {
+          "code": "830032C6",
+          "desc": "Press Up+L To Refill Fuel To Max",
+          "address": "0x020032C6"
+        },
+        {
+          "code": "83003328",
+          "desc": "Max AGM-86B",
+          "address": "0x02003328"
+        },
+        {
+          "code": "83003326",
+          "desc": "Max AIM 54",
+          "address": "0x02003326"
+        },
+        {
+          "code": "83003324",
+          "desc": "Max AIM 7",
+          "address": "0x02003324"
+        },
+        {
+          "code": "83003322",
+          "desc": "Max AIM 9",
+          "address": "0x02003322"
+        },
+        {
+          "code": "8300330C",
+          "desc": "Max Chaff",
+          "address": "0x0200330C"
+        },
+        {
+          "code": "83003310",
+          "desc": "Max Flares",
+          "address": "0x02003310"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Ballblazer (Japan)
+game_key=ballblazer_japan
+system=nes
+integration_tier=contrib
+trigger	score_score_0356	score	0x0356	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0364	score	0x0364	1	uint	little	prev < curr	0.8	1	right:0.350:60

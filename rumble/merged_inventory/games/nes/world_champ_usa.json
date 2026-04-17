@@ -1,0 +1,125 @@
+{
+  "system": "nes",
+  "normalized_title": "worldchamp",
+  "display_name": "World Champ (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\World Champ (USA).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 21,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "0740:63",
+          "desc": "Max Speed",
+          "address": "0x0740"
+        },
+        {
+          "code": "0748:63",
+          "desc": "Max Stamina [Player 1]",
+          "address": "0x0748"
+        },
+        {
+          "code": "0758:63",
+          "desc": "Max Defense [Player 1]",
+          "address": "0x0758"
+        },
+        {
+          "code": "0750:63",
+          "desc": "Max Power [Player 1]",
+          "address": "0x0750"
+        },
+        {
+          "code": "05BD:FF",
+          "desc": "Max Power Hook [Player 1]",
+          "address": "0x05BD"
+        },
+        {
+          "code": "05BC:FF",
+          "desc": "Max Power Uppercut [Player 1]",
+          "address": "0x05BC"
+        },
+        {
+          "code": "05BA:FF",
+          "desc": "Max Power Straight [Player 1]",
+          "address": "0x05BA"
+        },
+        {
+          "code": "05BB:FF",
+          "desc": "Max Power Body Shot [Player 1]",
+          "address": "0x05BB"
+        },
+        {
+          "code": "0734:00",
+          "desc": "Player 1 Cannot Be Knocked Down",
+          "address": "0x0734"
+        },
+        {
+          "code": "0739:00",
+          "desc": "Player 2 Cannot Be Knocked Down",
+          "address": "0x0739"
+        },
+        {
+          "code": "05B8:63",
+          "desc": "Infinite Pow Points",
+          "address": "0x05B8"
+        },
+        {
+          "code": "005C:2F",
+          "desc": "Infinite Time",
+          "address": "0x005C"
+        },
+        {
+          "code": "072E:50",
+          "desc": "Infinite Health P1",
+          "address": "0x072E"
+        },
+        {
+          "code": "072F:00",
+          "desc": "Health Modifier P2",
+          "address": "0x072F"
+        },
+        {
+          "code": "0748:63",
+          "desc": "Max Stamina (Player 1)",
+          "address": "0x0748"
+        },
+        {
+          "code": "0758:63",
+          "desc": "Max Defense (Player 1)",
+          "address": "0x0758"
+        },
+        {
+          "code": "0750:63",
+          "desc": "Max Power (Player 1)",
+          "address": "0x0750"
+        },
+        {
+          "code": "05BD:FF",
+          "desc": "Max Power Hook",
+          "address": "0x05BD"
+        },
+        {
+          "code": "05BC:FF",
+          "desc": "Max Power Uppercut",
+          "address": "0x05BC"
+        },
+        {
+          "code": "05BA:FF",
+          "desc": "Max Power Straight",
+          "address": "0x05BA"
+        },
+        {
+          "code": "05BB:FF",
+          "desc": "Max Power Body Shot",
+          "address": "0x05BB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

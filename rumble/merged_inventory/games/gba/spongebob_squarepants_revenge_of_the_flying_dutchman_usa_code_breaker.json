@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "spongebobsquarepantsrevengeofflyingdutchman",
+  "display_name": "SpongeBob SquarePants - Revenge of the Flying Dutchman (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\SpongeBob SquarePants - Revenge of the Flying Dutchman (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "100007C0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020007C0"
+        },
+        {
+          "code": "83001A08",
+          "desc": "Max Coins",
+          "address": "0x02001A08"
+        },
+        {
+          "code": "33001A0C",
+          "desc": "Infinite Health",
+          "address": "0x02001A0C"
+        },
+        {
+          "code": "33001A10",
+          "desc": "Infinite Lives",
+          "address": "0x02001A10"
+        },
+        {
+          "code": "33001A1C",
+          "desc": "Have Float Bubbles",
+          "address": "0x02001A1C"
+        },
+        {
+          "code": "33001A1C",
+          "desc": "Have Strong Bubbles",
+          "address": "0x02001A1C"
+        },
+        {
+          "code": "33001A1C",
+          "desc": "Have Bounce Bubbles",
+          "address": "0x02001A1C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\SpongeBob SquarePants - Revenge of the Flying Dutchman (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "100007C0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020007C0"
+        },
+        {
+          "code": "83001A08",
+          "desc": "Max Coins",
+          "address": "0x02001A08"
+        },
+        {
+          "code": "33001A0C",
+          "desc": "Infinite Health",
+          "address": "0x02001A0C"
+        },
+        {
+          "code": "33001A10",
+          "desc": "Infinite Lives",
+          "address": "0x02001A10"
+        },
+        {
+          "code": "33001A1C",
+          "desc": "Have Float Bubbles",
+          "address": "0x02001A1C"
+        },
+        {
+          "code": "33001A1C",
+          "desc": "Have Strong Bubbles",
+          "address": "0x02001A1C"
+        },
+        {
+          "code": "33001A1C",
+          "desc": "Have Bounce Bubbles",
+          "address": "0x02001A1C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

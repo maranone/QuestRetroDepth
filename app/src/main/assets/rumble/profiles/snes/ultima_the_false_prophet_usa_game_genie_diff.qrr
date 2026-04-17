@@ -1,0 +1,18 @@
+game_name=Ultima - The False Prophet (USA) (Game Genie) (diff)
+game_key=ultima_the_false_prophet_usa_game_genie_diff
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_014b	pickup	0x7E014B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_014c	pickup	0x7E014C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_8603	damage_taken	0x7E8603	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_8603	death	0x7E8603	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_8607	damage_taken	0x7E8607	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_8607	death	0x7E8607	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_8609	damage_taken	0x7E8609	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_8609	death	0x7E8609	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_8605	damage_taken	0x7E8605	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_8605	death	0x7E8605	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_867d	damage_taken	0x7E867D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_867d	death	0x7E867D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_8685	damage_taken	0x7E8685	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_8685	death	0x7E8685	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

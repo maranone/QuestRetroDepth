@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "famicomjumpeiyuuretsuden",
+  "display_name": "Famicom Jump - Eiyuu Retsuden (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Famicom Jump - Eiyuu Retsuden (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "0320:FF",
+          "desc": "Main Character Infinite Health",
+          "address": "0x0320"
+        },
+        {
+          "code": "034F:FF",
+          "desc": "All Characters Infinite Health",
+          "address": "0x034F"
+        },
+        {
+          "code": "040A:00",
+          "desc": "One Hit Kill",
+          "address": "0x040A"
+        },
+        {
+          "code": "040B:00",
+          "desc": "One Hit Kill",
+          "address": "0x040B"
+        },
+        {
+          "code": "00DA:00",
+          "desc": "One Hit Kill",
+          "address": "0x00DA"
+        },
+        {
+          "code": "0309:00",
+          "desc": "Infinite Money",
+          "address": "0x0309"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

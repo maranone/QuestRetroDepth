@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "dragonsaberafterstoryofdragonspirit",
+  "display_name": "Dragon Saber - After Story of Dragon Spirit (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Dragon Saber - After Story of Dragon Spirit (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f17bd:03",
+          "desc": "Infinite Energy",
+          "address": "0x1F17BD"
+        },
+        {
+          "code": "1f17fd:03",
+          "desc": "Infinite Lives",
+          "address": "0x1F17FD"
+        },
+        {
+          "code": "1f151c:02",
+          "desc": "Invincibility",
+          "address": "0x1F151C"
+        },
+        {
+          "code": "1f17ff:09",
+          "desc": "Infinite Credits",
+          "address": "0x1F17FF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

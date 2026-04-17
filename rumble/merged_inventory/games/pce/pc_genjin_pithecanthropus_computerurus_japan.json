@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "pcgenjinpithecanthropuscomputerurus",
+  "display_name": "PC Genjin - Pithecanthropus Computerurus (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\PC Genjin - Pithecanthropus Computerurus (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f0daf:09",
+          "desc": "Infinite Lives",
+          "address": "0x1F0DAF"
+        },
+        {
+          "code": "1f0db2:0f",
+          "desc": "Infinite Health",
+          "address": "0x1F0DB2"
+        },
+        {
+          "code": "1f0c03:4c",
+          "desc": "Invincibility",
+          "address": "0x1F0C03"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

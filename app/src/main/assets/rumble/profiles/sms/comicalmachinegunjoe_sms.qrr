@@ -1,0 +1,7 @@
+game_name=Comical Machine Gun Joe (Japan, Taiwan) (Action Replay)
+game_key=ComicalMachineGunJoe-Sms
+system=sms
+integration_tier=stable
+trigger	life_lost_lives_c142	life_lost	0xC142	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_c142	life_gained	0xC142	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_c13f	score	0xC13F	3	bcd	little	prev < curr	0.8	1	right:0.350:60

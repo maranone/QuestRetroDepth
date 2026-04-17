@@ -1,0 +1,7 @@
+game_name=Fantasy Zone (World) (Action Replay)
+game_key=FantasyZone-Sms
+system=sms
+integration_tier=stable
+trigger	life_lost_lives_c065	life_lost	0xC065	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_c065	life_gained	0xC065	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_c060	score	0xC060	3	bcd	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,226 @@
+{
+  "system": "nes",
+  "normalized_title": "supermariobros",
+  "display_name": "Super Mario Bros. (World) (Action Replay)",
+  "aliases": [
+    "Super Mario Bros. (Europe)",
+    "Super Mario Bros. (Rumbles)",
+    "Super Mario Bros. (World) (Action Replay)",
+    "Super Mario Bros. (World) (Game Genie)",
+    "Super Mario Bros. (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\supermariobros_nes.json",
+      "trigger_count": 4,
+      "field_names": [
+        "coins",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x075A",
+        "0x075E",
+        "0x07DD"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperMarioBros-Nes-v0\\data.json",
+      "field_count": 9,
+      "fields": [
+        {
+          "name": "coins",
+          "address": "0x075E",
+          "type": "|u1"
+        },
+        {
+          "name": "levelHi",
+          "address": "0x075F",
+          "type": "|i1"
+        },
+        {
+          "name": "levelLo",
+          "address": "0x075C",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x075A",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x07DD",
+          "type": ">n6"
+        },
+        {
+          "name": "scrolling",
+          "address": "0x0778",
+          "type": "|i1"
+        },
+        {
+          "name": "time",
+          "address": "0x07F8",
+          "type": ">n3"
+        },
+        {
+          "name": "xscrollHi",
+          "address": "0x071A",
+          "type": "|u1"
+        },
+        {
+          "name": "xscrollLo",
+          "address": "0x071C",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 9
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Mario Bros. (World).cht",
+      "total_cheat_rows": 664,
+      "raw_entry_count": 534,
+      "distinct_address_count": 282,
+      "sample_raw_entries": [
+        {
+          "code": "0754:00",
+          "desc": "Always Big",
+          "address": "0x0754"
+        },
+        {
+          "code": "0756:01",
+          "desc": "Always Big",
+          "address": "0x0756"
+        },
+        {
+          "code": "0754:00",
+          "desc": "Always Have Fireball",
+          "address": "0x0754"
+        },
+        {
+          "code": "0756:02",
+          "desc": "Always Have Fireball",
+          "address": "0x0756"
+        },
+        {
+          "code": "079E:07",
+          "desc": "Totally Invincible",
+          "address": "0x079E"
+        },
+        {
+          "code": "0700:28",
+          "desc": "Mario legs move faster",
+          "address": "0x0700"
+        },
+        {
+          "code": "0783:0A",
+          "desc": "Always Running",
+          "address": "0x0783"
+        },
+        {
+          "code": "079F:01",
+          "desc": "God Mode",
+          "address": "0x079F"
+        },
+        {
+          "code": "07FA:09",
+          "desc": "Infinite Time",
+          "address": "0x07FA"
+        },
+        {
+          "code": "07FC:01",
+          "desc": "Enable Hard Mode",
+          "address": "0x07FC"
+        },
+        {
+          "code": "PAKOPPAA",
+          "desc": "Mario Is Always Swimming",
+          "address": "0x0189"
+        },
+        {
+          "code": "AEAENT",
+          "desc": "Mario Can Jump Higher When Walking, Running, Or Turbo Running! Also, He Jumps Further (only When Normal Running)",
+          "address": "0x0687"
+        },
+        {
+          "code": "ANTOSA",
+          "desc": "Ever Have Trouble Remembering Which Pipes You Can And Can't Go Down? Well, This Code Solves That Problem! The Pipes You Can't Go Down Are Upside-down, The Pipes You Can Go Down Are Normal",
+          "address": "0x00F5"
+        },
+        {
+          "code": "VVAANY",
+          "desc": "Timer Counts Up Instead Of Down!!  This Code Basically Gives You As Much Time As You Want To Finish A Level. The Longer You Take To Finish A Level, The More Points You Get At The End!!",
+          "address": "0x0767"
+        },
+        {
+          "code": "YSAOPE",
+          "desc": "Level Select Code!!",
+          "address": "0x00D1"
+        },
+        {
+          "code": "YEAOZA",
+          "desc": "Level Select Code!!",
+          "address": "0x0082"
+        },
+        {
+          "code": "AAGOPO",
+          "desc": "Mario Can Swim Everywhere, And You Start Some Worlds About 1/2 Way Thru",
+          "address": "0x0181"
+        },
+        {
+          "code": "VGYOKK",
+          "desc": "Time Starts At 900 (instead Of 400)",
+          "address": "0x04C4"
+        },
+        {
+          "code": "GUAOPO",
+          "desc": "Start With 400 More Seconds, And Invincibility For The First 10 Seconds",
+          "address": "0x01B1"
+        },
+        {
+          "code": "OKGASA",
+          "desc": "Everything Is Invisible Except Mario",
+          "address": "0x0045"
+        },
+        {
+          "code": "NLTOGK",
+          "desc": "Mario Starts Out Swimming",
+          "address": "0x04B4"
+        },
+        {
+          "code": "GSAENT",
+          "desc": "You Can Position Mario Anywhere On The Screen (even When He's Moving) By Holding Down The  &quot;A&quot; Button On Controller #2",
+          "address": "0x06D7"
+        },
+        {
+          "code": "PIGOAP",
+          "desc": "Swim Without Water (You're Always Swimming)",
+          "address": "0x01D0"
+        },
+        {
+          "code": "VTPOZI",
+          "desc": "You Can Jump Over The Castle At The End Of World 1-1 And Keep On Going. Also, Going Down Tubes Does Weird Things",
+          "address": "0x05E2"
+        },
+        {
+          "code": "NYTELN",
+          "desc": "Items That Were Worth 1,000 Points, Are Now Worth 1,000,000,000 Points!!",
+          "address": "0x07F3"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Super Mario Bros. (World).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

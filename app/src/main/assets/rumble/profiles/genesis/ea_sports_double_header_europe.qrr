@@ -1,0 +1,6 @@
+game_name=EA Sports Double Header (Europe)
+game_key=ea_sports_double_header_europe
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffd914	score	0xFFD914	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffd99c	score	0xFFD99C	1	uint	little	prev < curr	0.8	1	right:0.350:60

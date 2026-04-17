@@ -1,0 +1,5 @@
+game_name=Arcade Classic No. 1 - Asteroids _ Missile Command (USA, Europe) (SGB Enhanced)
+game_key=arcade_classic_no_1_asteroids_missile_command_usa_europe_sgb_enhanced
+system=gb
+integration_tier=contrib
+trigger	score_score_d2c1	score	0xD2C1	1	uint	little	prev < curr	0.8	1	right:0.350:60

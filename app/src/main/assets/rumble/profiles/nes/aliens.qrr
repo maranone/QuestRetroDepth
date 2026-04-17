@@ -1,0 +1,5 @@
+game_name=Aliens
+game_key=aliens
+system=nes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_00a6	enemy_defeated	0x00A6	1	uint	little	prev > curr	0.65	1	right:0.450:35

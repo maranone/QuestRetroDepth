@@ -1,0 +1,25 @@
+{
+  "system": "nes",
+  "normalized_title": "chessmaster",
+  "display_name": "Chessmaster, The (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Chessmaster, The (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0642:00",
+          "desc": "Game Allows Any Move",
+          "address": "0x0642"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "system": "nes",
+  "normalized_title": "smurfs",
+  "display_name": "Smurfs, The (Europe) (En,Fr,De,Es)",
+  "aliases": [
+    "Smurfs, The (Europe) (En,Fr,De,Es)",
+    "Smurfs, The (Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\smurfs_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0316",
+        "0x0317",
+        "0x031B"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Smurfs-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0317",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0316",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x031B",
+          "type": ">n6"
+        },
+        {
+          "name": "time",
+          "address": "0x0321",
+          "type": ">n2"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Smurfs, The (Europe) (Game Genie).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "SXKPLVVK",
+          "desc": "Infinite Health",
+          "address": "0x062B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "biomiraclebokutteupateng100vice",
+  "display_name": "Bio Miracle Bokutte Upa (J) [T+Eng1.00_Vice]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bio Miracle Bokutte Upa (J) [T+Eng1.00_Vice].cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "AAUAYSZA",
+          "desc": "Enable Level Select on Title Screen",
+          "address": "0x050F"
+        },
+        {
+          "code": "AAUEIIGA",
+          "desc": "Enable Level Select on Title Screen",
+          "address": "0x058D"
+        },
+        {
+          "code": "001D:01",
+          "desc": "Enable Level Select on Title Screen",
+          "address": "0x001D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

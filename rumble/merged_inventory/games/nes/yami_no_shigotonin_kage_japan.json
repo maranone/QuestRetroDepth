@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "yaminoshigotoninkage",
+  "display_name": "Yami no Shigotonin Kage (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Yami no Shigotonin Kage (Japan).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "AAEOPIGA",
+          "desc": "Infinite Health",
+          "address": "0x0589"
+        },
+        {
+          "code": "06B2:00",
+          "desc": "P1 Weapon Modifier",
+          "address": "0x06B2"
+        },
+        {
+          "code": "06B6:00",
+          "desc": "P2 Weapon Modifier",
+          "address": "0x06B6"
+        },
+        {
+          "code": "0680:0A",
+          "desc": "P1 Max Weapon Power",
+          "address": "0x0680"
+        },
+        {
+          "code": "0684:0A",
+          "desc": "P2 Max Weapon Power",
+          "address": "0x0684"
+        },
+        {
+          "code": "0044:09",
+          "desc": "Infinite Continues",
+          "address": "0x0044"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

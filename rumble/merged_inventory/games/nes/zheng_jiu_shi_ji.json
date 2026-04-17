@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "zhengjiushiji",
+  "display_name": "Zheng Jiu Shi Ji",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Zheng Jiu Shi Ji.cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "006A:05",
+          "desc": "Infinite Lives",
+          "address": "0x006A"
+        },
+        {
+          "code": "00B1:08",
+          "desc": "Infinite Energy",
+          "address": "0x00B1"
+        },
+        {
+          "code": "00B2:08",
+          "desc": "Infinite Magic",
+          "address": "0x00B2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

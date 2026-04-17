@@ -1,0 +1,5 @@
+game_name=Ike Ike! Nekketsu Hockey-bu - Subette Koronde Dairantou (Japan)
+game_key=ike_ike_nekketsu_hockey_bu_subette_koronde_dairantou_japan
+system=nes
+integration_tier=contrib
+trigger	score_score_04d6	score	0x04D6	1	uint	little	prev < curr	0.8	1	right:0.350:60

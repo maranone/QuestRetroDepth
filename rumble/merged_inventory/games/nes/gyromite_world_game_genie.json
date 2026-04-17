@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "gyromite",
+  "display_name": "Gyromite (World) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gyromite (World) (Game Genie).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "SUZAAI",
+          "desc": "Infinite Lives",
+          "address": "0x0530"
+        },
+        {
+          "code": "ZEAAUS",
+          "desc": "Slow Down Timer",
+          "address": "0x0503"
+        },
+        {
+          "code": "PEUAGLIA",
+          "desc": "Start With 1 Life",
+          "address": "0x030C"
+        },
+        {
+          "code": "ZEUAGLIE",
+          "desc": "Start With 10 Lives",
+          "address": "0x030C"
+        },
+        {
+          "code": "GOUAGLIA",
+          "desc": "Start With 20 Lives",
+          "address": "0x031C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

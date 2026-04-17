@@ -1,0 +1,7 @@
+game_name=Jeopardy! - Deluxe Edition (USA) (Action Replay)
+game_key=jeopardy_deluxe_edition_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff3ea2	score	0xFF3EA2	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff3ea6	score	0xFF3EA6	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff3eaa	score	0xFF3EAA	1	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,62 @@
+{
+  "system": "nes",
+  "normalized_title": "rollerbladeracer",
+  "display_name": "Rollerblade Racer (USA) (Game Genie)",
+  "aliases": [
+    "Rollerblade Racer (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rollerblade Racer (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "003A:00",
+          "desc": "Infinite Lives",
+          "address": "0x003A"
+        },
+        {
+          "code": "03CF:6A",
+          "desc": "Invincible",
+          "address": "0x03CF"
+        },
+        {
+          "code": "0040:00",
+          "desc": "Infinite Time",
+          "address": "0x0040"
+        },
+        {
+          "code": "04D4:00",
+          "desc": "Score Modifier",
+          "address": "0x04D4"
+        },
+        {
+          "code": "04D5:00",
+          "desc": "Score Modifier",
+          "address": "0x04D5"
+        },
+        {
+          "code": "003A:00",
+          "desc": "No Band-Aids P1",
+          "address": "0x003A"
+        },
+        {
+          "code": "003B:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x003B"
+        },
+        {
+          "code": "003D:46",
+          "desc": "Infinite Time",
+          "address": "0x003D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

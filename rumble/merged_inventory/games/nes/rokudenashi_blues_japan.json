@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "rokudenashiblues",
+  "display_name": "Rokudenashi Blues (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rokudenashi Blues (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "05AE:FF",
+          "desc": "Infinite Money",
+          "address": "0x05AE"
+        },
+        {
+          "code": "05E3:FF",
+          "desc": "Infinite Health",
+          "address": "0x05E3"
+        },
+        {
+          "code": "05E5:FF",
+          "desc": "Infinite Power",
+          "address": "0x05E5"
+        },
+        {
+          "code": "0516:00",
+          "desc": "Enemy No Health",
+          "address": "0x0516"
+        },
+        {
+          "code": "0518:00",
+          "desc": "Enemy No Health",
+          "address": "0x0518"
+        },
+        {
+          "code": "0517:00",
+          "desc": "Enemy No Power",
+          "address": "0x0517"
+        },
+        {
+          "code": "0519:00",
+          "desc": "Enemy No Power",
+          "address": "0x0519"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

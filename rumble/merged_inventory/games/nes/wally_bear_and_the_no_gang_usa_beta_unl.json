@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "wallybearandnogang",
+  "display_name": "Wally Bear and the No! Gang (USA) (Beta) (Unl)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wally Bear and the No! Gang (USA) (Beta) (Unl).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "002D:05",
+          "desc": "Infinite Lives",
+          "address": "0x002D"
+        },
+        {
+          "code": "0066:01",
+          "desc": "Infinite Energy",
+          "address": "0x0066"
+        },
+        {
+          "code": "075E:09",
+          "desc": "Infinite Time",
+          "address": "0x075E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

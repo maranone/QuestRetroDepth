@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "marykateandashleysweet16licensedtodrive",
+  "display_name": "Mary-Kate and Ashley Sweet 16 - Licensed to Drive (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Mary-Kate and Ashley Sweet 16 - Licensed to Drive (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10001500",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001500"
+        },
+        {
+          "code": "8300578A",
+          "desc": "Max Score",
+          "address": "0x0200578A"
+        },
+        {
+          "code": "83005776",
+          "desc": "Infinite Gas",
+          "address": "0x02005776"
+        },
+        {
+          "code": "8300578C",
+          "desc": "Able To Get Infinite Tickets",
+          "address": "0x0200578C"
+        },
+        {
+          "code": "83005774",
+          "desc": "Max Car Health",
+          "address": "0x02005774"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Mary-Kate and Ashley Sweet 16 - Licensed to Drive (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10001500",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001500"
+        },
+        {
+          "code": "8300578A",
+          "desc": "Max Score",
+          "address": "0x0200578A"
+        },
+        {
+          "code": "83005776",
+          "desc": "Infinite Gas",
+          "address": "0x02005776"
+        },
+        {
+          "code": "8300578C",
+          "desc": "Able To Get Infinite Tickets",
+          "address": "0x0200578C"
+        },
+        {
+          "code": "83005774",
+          "desc": "Max Car Health",
+          "address": "0x02005774"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

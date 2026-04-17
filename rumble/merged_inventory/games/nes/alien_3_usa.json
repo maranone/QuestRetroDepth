@@ -1,0 +1,180 @@
+{
+  "system": "nes",
+  "normalized_title": "alien3",
+  "display_name": "Alien 3 (USA)",
+  "aliases": [
+    "Alien 3 (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\alien3_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0739",
+        "0x074A",
+        "0x07FE"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Alien3-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x074A",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x07FE",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0739",
+          "type": ">n8"
+        },
+        {
+          "name": "time",
+          "address": "0x0741",
+          "type": ">n4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Alien 3 (USA).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 23,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "SXOPNKVK",
+          "desc": "Invincibility",
+          "address": "0x042F"
+        },
+        {
+          "code": "074A:12",
+          "desc": "Infinite Energy",
+          "address": "0x074A"
+        },
+        {
+          "code": "074B:3F",
+          "desc": "Infinite Weapon 1",
+          "address": "0x074B"
+        },
+        {
+          "code": "074C:20",
+          "desc": "Infinite Weapon 2",
+          "address": "0x074C"
+        },
+        {
+          "code": "074E:1C",
+          "desc": "Infinite Weapon 3",
+          "address": "0x074E"
+        },
+        {
+          "code": "074D:32",
+          "desc": "Infinite Weapon 4",
+          "address": "0x074D"
+        },
+        {
+          "code": "0747:00",
+          "desc": "Rescue All Now",
+          "address": "0x0747"
+        },
+        {
+          "code": "0749:01",
+          "desc": "Weapon 1 Keeps Firing Constantly",
+          "address": "0x0749"
+        },
+        {
+          "code": "03C8:4A",
+          "desc": "Invincibility",
+          "address": "0x03C8"
+        },
+        {
+          "code": "0742:00",
+          "desc": "Time Modifier",
+          "address": "0x0742"
+        },
+        {
+          "code": "0743:00",
+          "desc": "Time Modifier",
+          "address": "0x0743"
+        },
+        {
+          "code": "0744:00",
+          "desc": "Time Modifier",
+          "address": "0x0744"
+        },
+        {
+          "code": "00A8:00",
+          "desc": "Level Modifier",
+          "address": "0x00A8"
+        },
+        {
+          "code": "03A6:00",
+          "desc": "Guardian 1 Hit Kills",
+          "address": "0x03A6"
+        },
+        {
+          "code": "03A7:00",
+          "desc": "Guardian 1 Hit Kills",
+          "address": "0x03A7"
+        },
+        {
+          "code": "0094:9B",
+          "desc": "Turn Ladder On Wherever",
+          "address": "0x0094"
+        },
+        {
+          "code": "04C0:04",
+          "desc": "Walk Through Walls",
+          "address": "0x04C0"
+        },
+        {
+          "code": "07FE:09",
+          "desc": "Infinite Lives",
+          "address": "0x07FE"
+        },
+        {
+          "code": "074A:1F",
+          "desc": "Infinite Health",
+          "address": "0x074A"
+        },
+        {
+          "code": "074B:58",
+          "desc": "Infinite Ammo (Primary Weapon)",
+          "address": "0x074B"
+        },
+        {
+          "code": "0749:00",
+          "desc": "Gun Never Overheats",
+          "address": "0x0749"
+        },
+        {
+          "code": "0743:09",
+          "desc": "Infinite Time (Ten's Digit)",
+          "address": "0x0743"
+        },
+        {
+          "code": "0744:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x0744"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "diablo",
+  "display_name": "Diablo (NJ037) (Ch)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Diablo (NJ037) (Ch).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "6001:63",
+          "desc": "Hero Infinite HP",
+          "address": "0x6001"
+        },
+        {
+          "code": "600B:63",
+          "desc": "Hero Infinite MP",
+          "address": "0x600B"
+        },
+        {
+          "code": "62C7:02",
+          "desc": "No Random Battles",
+          "address": "0x62C7"
+        },
+        {
+          "code": "62C9:FF",
+          "desc": "Infinite Gold",
+          "address": "0x62C9"
+        },
+        {
+          "code": "62CA:FF",
+          "desc": "Infinite Gold",
+          "address": "0x62CA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

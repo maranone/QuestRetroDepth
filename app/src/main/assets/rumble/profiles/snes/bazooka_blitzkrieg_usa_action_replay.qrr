@@ -1,0 +1,6 @@
+game_name=Bazooka Blitzkrieg (USA) (Action Replay)
+game_key=bazooka_blitzkrieg_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_0305	damage_taken	0x7E0305	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0305	death	0x7E0305	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "magician",
+  "display_name": "Magician (USA) (Game Genie)",
+  "aliases": [
+    "Magician (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Magician (USA).cht",
+      "total_cheat_rows": 43,
+      "raw_entry_count": 54,
+      "distinct_address_count": 42,
+      "sample_raw_entries": [
+        {
+          "code": "004A:FF",
+          "desc": "Infinite High Gold",
+          "address": "0x004A"
+        },
+        {
+          "code": "004C:FF",
+          "desc": "Infinite Mana",
+          "address": "0x004C"
+        },
+        {
+          "code": "004E:FF",
+          "desc": "High Max. Mana",
+          "address": "0x004E"
+        },
+        {
+          "code": "0053:FF",
+          "desc": "Infinite Food %",
+          "address": "0x0053"
+        },
+        {
+          "code": "0054:FF",
+          "desc": "Infinite Water %",
+          "address": "0x0054"
+        },
+        {
+          "code": "0055:63",
+          "desc": "Infinite Water Left",
+          "address": "0x0055"
+        },
+        {
+          "code": "04BF:FF",
+          "desc": "Infinite Health",
+          "address": "0x04BF"
+        },
+        {
+          "code": "04C3:00",
+          "desc": "Always 0% Venom",
+          "address": "0x04C3"
+        },
+        {
+          "code": "04D3:FF",
+          "desc": "Always 100% Phy-Shield",
+          "address": "0x04D3"
+        },
+        {
+          "code": "04D7:FF",
+          "desc": "Always 100% Ven-Shield",
+          "address": "0x04D7"
+        },
+        {
+          "code": "04DB:FF",
+          "desc": "Always 100% Fire-Shield",
+          "address": "0x04DB"
+        },
+        {
+          "code": "04DF:FF",
+          "desc": "Always 100% Pow-Shield",
+          "address": "0x04DF"
+        },
+        {
+          "code": "06DE:63",
+          "desc": "Infinite Game Saves",
+          "address": "0x06DE"
+        },
+        {
+          "code": "06B4:FF",
+          "desc": "Have 3 of Most Items",
+          "address": "0x06B4"
+        },
+        {
+          "code": "06B5:FF",
+          "desc": "Have 3 of Most Items",
+          "address": "0x06B5"
+        },
+        {
+          "code": "06B6:FF",
+          "desc": "Have 3 of Most Items",
+          "address": "0x06B6"
+        },
+        {
+          "code": "06B7:FF",
+          "desc": "Have 3 of Most Items",
+          "address": "0x06B7"
+        },
+        {
+          "code": "06B8:FF",
+          "desc": "Have 3 of Most Items",
+          "address": "0x06B8"
+        },
+        {
+          "code": "06B9:FC",
+          "desc": "Have 3 of Most Items",
+          "address": "0x06B9"
+        },
+        {
+          "code": "06BA:FF",
+          "desc": "Have 3 of Most Items",
+          "address": "0x06BA"
+        },
+        {
+          "code": "06BB:FF",
+          "desc": "Have 3 of Most Items",
+          "address": "0x06BB"
+        },
+        {
+          "code": "06BC:FF",
+          "desc": "Have 3 of Most Items",
+          "address": "0x06BC"
+        },
+        {
+          "code": "06BE:FF",
+          "desc": "Have All Scrolls",
+          "address": "0x06BE"
+        },
+        {
+          "code": "06BF:FF",
+          "desc": "Have All Scrolls",
+          "address": "0x06BF"
+        },
+        {
+          "code": "06C0:FF",
+          "desc": "Have All Scrolls",
+          "address": "0x06C0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

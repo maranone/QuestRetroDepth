@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "garfieldandhisninelives",
+  "display_name": "Garfield and His Nine Lives (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Garfield and His Nine Lives (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10003DB2",
+          "desc": "Master Code [Pad]",
+          "address": "0x02003DB2"
+        },
+        {
+          "code": "320083AC",
+          "desc": "Max Lives",
+          "address": "0x020083AC"
+        },
+        {
+          "code": "32000551",
+          "desc": "Max Lasagna",
+          "address": "0x02000551"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Garfield and His Nine Lives (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10003DB2",
+          "desc": "Master Code [Pad]",
+          "address": "0x02003DB2"
+        },
+        {
+          "code": "320083AC",
+          "desc": "Max Lives",
+          "address": "0x020083AC"
+        },
+        {
+          "code": "32000551",
+          "desc": "Max Lasagna",
+          "address": "0x02000551"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

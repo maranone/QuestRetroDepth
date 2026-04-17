@@ -1,0 +1,10 @@
+game_name=New Horizons (USA)
+game_key=new_horizons_usa
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_25f4	pickup	0x7E25F4	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_25f5	pickup	0x7E25F5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_25f6	pickup	0x7E25F6	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_25f7	pickup	0x7E25F7	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_839d	pickup	0x7E839D	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_839e	pickup	0x7E839E	1	uint	little	prev != curr	0.8	1	right:0.250:18

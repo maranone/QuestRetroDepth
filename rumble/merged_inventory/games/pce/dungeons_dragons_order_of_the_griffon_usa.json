@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "dungeonsdragonsorderofgriffon",
+  "display_name": "Dungeons _ Dragons - Order of the Griffon (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Dungeons _ Dragons - Order of the Griffon (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f08ae:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F08AE"
+        },
+        {
+          "code": "1f08af:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F08AF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

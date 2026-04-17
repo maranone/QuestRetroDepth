@@ -1,0 +1,67 @@
+{
+  "system": "nes",
+  "normalized_title": "greatbattlecyber",
+  "display_name": "Great Battle Cyber (Japan) (Game Genie)",
+  "aliases": [
+    "Great Battle Cyber (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Great Battle Cyber (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "SXEOTOSE",
+          "desc": "Infinite Health",
+          "address": "0x01AE"
+        },
+        {
+          "code": "6504:09",
+          "desc": "Infinite Energy",
+          "address": "0x6504"
+        },
+        {
+          "code": "6584:00",
+          "desc": "Easy Kill",
+          "address": "0x6584"
+        },
+        {
+          "code": "006C:00",
+          "desc": "Higher Jump",
+          "address": "0x006C"
+        },
+        {
+          "code": "00A6:4F",
+          "desc": "Walk Through Spikes",
+          "address": "0x00A6"
+        },
+        {
+          "code": "00B1:02",
+          "desc": "Character Modifier",
+          "address": "0x00B1"
+        },
+        {
+          "code": "0410:00",
+          "desc": "Level Modifier",
+          "address": "0x0410"
+        },
+        {
+          "code": "0506:09",
+          "desc": "Infinite Lives",
+          "address": "0x0506"
+        },
+        {
+          "code": "6003:00",
+          "desc": "Can't Be Hit",
+          "address": "0x6003"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,6 +1,0 @@
-game_name=MajuuOu
-game_key=MajuuOu-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_9f	damage_taken	0x7E009F	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	enemy_defeated_1_87	enemy_defeated	0x7E0087	1	uint	native	prev != curr	0.55	1	left:0.510:100

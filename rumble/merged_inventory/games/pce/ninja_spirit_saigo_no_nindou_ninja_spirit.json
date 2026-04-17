@@ -1,0 +1,55 @@
+{
+  "system": "pce",
+  "normalized_title": "ninjaspirit",
+  "display_name": "Ninja Spirit (Saigo No Nindou- Ninja Spirit)",
+  "aliases": [
+    "Ninja Spirit (Saigo No Nindou- Ninja Spirit)",
+    "Ninja Spirit (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Ninja Spirit (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1f0b68:03",
+          "desc": "Infinite Lives",
+          "address": "0x1F0B68"
+        },
+        {
+          "code": "1f17c9:05",
+          "desc": "Infinite Energy",
+          "address": "0x1F17C9"
+        },
+        {
+          "code": "1f1dee:04",
+          "desc": "Invincibility",
+          "address": "0x1F1DEE"
+        },
+        {
+          "code": "1f184c:67",
+          "desc": "Spirit Doubles",
+          "address": "0x1F184C"
+        },
+        {
+          "code": "1f1e58:01",
+          "desc": "Powered Up Weapons",
+          "address": "0x1F1E58"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\pce\\Ninja Spirit (USA).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

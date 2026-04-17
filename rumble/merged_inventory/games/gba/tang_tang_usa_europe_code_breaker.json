@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "tangtang",
+  "display_name": "Tang Tang (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Tang Tang (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10022670",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02022670"
+        },
+        {
+          "code": "320014E0",
+          "desc": "Infinite Lives",
+          "address": "0x020014E0"
+        },
+        {
+          "code": "3200273C",
+          "desc": "Infinite Power Bolts",
+          "address": "0x0200273C"
+        },
+        {
+          "code": "82003920",
+          "desc": "Infinite Time",
+          "address": "0x02003920"
+        },
+        {
+          "code": "320073D0",
+          "desc": "Max Score",
+          "address": "0x020073D0"
+        },
+        {
+          "code": "320073D2",
+          "desc": "Max Score",
+          "address": "0x020073D2"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Tang Tang (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10022670",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02022670"
+        },
+        {
+          "code": "320014E0",
+          "desc": "Infinite Lives",
+          "address": "0x020014E0"
+        },
+        {
+          "code": "3200273C",
+          "desc": "Infinite Power Bolts",
+          "address": "0x0200273C"
+        },
+        {
+          "code": "82003920",
+          "desc": "Infinite Time",
+          "address": "0x02003920"
+        },
+        {
+          "code": "320073D0",
+          "desc": "Max Score",
+          "address": "0x020073D0"
+        },
+        {
+          "code": "320073D2",
+          "desc": "Max Score",
+          "address": "0x020073D2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

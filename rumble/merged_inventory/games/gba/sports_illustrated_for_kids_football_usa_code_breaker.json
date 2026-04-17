@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "sportsillustratedforkidsfootball",
+  "display_name": "Sports Illustrated for Kids - Football (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Sports Illustrated for Kids - Football (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10000490",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000490"
+        },
+        {
+          "code": "33004BE9",
+          "desc": "Home Team Scores 150",
+          "address": "0x02004BE9"
+        },
+        {
+          "code": "33004BE9",
+          "desc": "Home Team Scores 0",
+          "address": "0x02004BE9"
+        },
+        {
+          "code": "33004D39",
+          "desc": "Away Team Scores 150",
+          "address": "0x02004D39"
+        },
+        {
+          "code": "33004D39",
+          "desc": "Away Team Scores 0",
+          "address": "0x02004D39"
+        },
+        {
+          "code": "33004D63",
+          "desc": "Always 1st Down",
+          "address": "0x02004D63"
+        },
+        {
+          "code": "33004D63",
+          "desc": "Always 4th Down",
+          "address": "0x02004D63"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Sports Illustrated for Kids - Football (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10000490",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000490"
+        },
+        {
+          "code": "33004BE9",
+          "desc": "Home Team Scores 150",
+          "address": "0x02004BE9"
+        },
+        {
+          "code": "33004BE9",
+          "desc": "Home Team Scores 0",
+          "address": "0x02004BE9"
+        },
+        {
+          "code": "33004D39",
+          "desc": "Away Team Scores 150",
+          "address": "0x02004D39"
+        },
+        {
+          "code": "33004D39",
+          "desc": "Away Team Scores 0",
+          "address": "0x02004D39"
+        },
+        {
+          "code": "33004D63",
+          "desc": "Always 1st Down",
+          "address": "0x02004D63"
+        },
+        {
+          "code": "33004D63",
+          "desc": "Always 4th Down",
+          "address": "0x02004D63"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

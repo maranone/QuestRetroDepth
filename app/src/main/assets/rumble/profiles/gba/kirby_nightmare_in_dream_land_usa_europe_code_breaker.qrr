@@ -1,0 +1,10 @@
+game_name=Kirby - Nightmare in Dream Land (USA, Europe) (Code Breaker)
+game_key=kirby_nightmare_in_dream_land_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_02005588	damage_taken	0x02005588	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02005588	death	0x02005588	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_02007d48	life_lost	0x02007D48	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02007d48	life_gained	0x02007D48	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_0200238c	level_complete	0x0200238C	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_020023ec	level_complete	0x020023EC	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

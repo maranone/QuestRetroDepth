@@ -1,0 +1,107 @@
+{
+  "system": "nes",
+  "normalized_title": "dragonfighter",
+  "display_name": "Dragon Fighter (Japan)",
+  "aliases": [
+    "Dragon Fighter (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dragon Fighter (USA).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 17,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "007B:01",
+          "desc": "Enable Hard Mode",
+          "address": "0x007B"
+        },
+        {
+          "code": "004D:4F",
+          "desc": "Invincibility",
+          "address": "0x004D"
+        },
+        {
+          "code": "0058:80",
+          "desc": "Power Charge",
+          "address": "0x0058"
+        },
+        {
+          "code": "0050:08",
+          "desc": "Health",
+          "address": "0x0050"
+        },
+        {
+          "code": "0053:18",
+          "desc": "Dragon Energy",
+          "address": "0x0053"
+        },
+        {
+          "code": "004F:00",
+          "desc": "Shoot Modifier",
+          "address": "0x004F"
+        },
+        {
+          "code": "AESEXTGA",
+          "desc": "Enable Hard Mode",
+          "address": "0x068A"
+        },
+        {
+          "code": "AAVENNGA",
+          "desc": "Enable Hard Mode (Alternate)",
+          "address": "0x078F"
+        },
+        {
+          "code": "0017:00",
+          "desc": "Scrolling Modifier",
+          "address": "0x0017"
+        },
+        {
+          "code": "0050:09",
+          "desc": "Infinite Health",
+          "address": "0x0050"
+        },
+        {
+          "code": "0053:18",
+          "desc": "Max Secondary Bar (Magic?)",
+          "address": "0x0053"
+        },
+        {
+          "code": "0488:00",
+          "desc": "1 Hit Kills 1st, 3rd, 4th Boss",
+          "address": "0x0488"
+        },
+        {
+          "code": "0489:00",
+          "desc": "1 Hit Kills 2nd Boss",
+          "address": "0x0489"
+        },
+        {
+          "code": "004F:01",
+          "desc": "Have Red Suit",
+          "address": "0x004F"
+        },
+        {
+          "code": "004F:02",
+          "desc": "Have Dark Blue Suit",
+          "address": "0x004F"
+        },
+        {
+          "code": "004F:03",
+          "desc": "Have Grey Suit (See Note!)",
+          "address": "0x004F"
+        },
+        {
+          "code": "0002:00",
+          "desc": "Stage Modifier",
+          "address": "0x0002"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

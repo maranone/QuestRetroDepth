@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "piratesofcaribbeandeadmanschest",
+  "display_name": "Pirates of the Caribbean - Dead Man's Chest (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Pirates of the Caribbean - Dead Man's Chest (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1002141E",
+          "desc": "Master Code [Pad]",
+          "address": "0x0202141E"
+        },
+        {
+          "code": "830049DF",
+          "desc": "Infinite Health",
+          "address": "0x020049DF"
+        },
+        {
+          "code": "330049A3",
+          "desc": "Have All Rumors",
+          "address": "0x020049A3"
+        },
+        {
+          "code": "83006E50",
+          "desc": "Max Money",
+          "address": "0x02006E50"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Pirates of the Caribbean - Dead Man's Chest (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1002141E",
+          "desc": "Master Code [Pad]",
+          "address": "0x0202141E"
+        },
+        {
+          "code": "830049DF",
+          "desc": "Infinite Health",
+          "address": "0x020049DF"
+        },
+        {
+          "code": "330049A3",
+          "desc": "Have All Rumors",
+          "address": "0x020049A3"
+        },
+        {
+          "code": "83006E50",
+          "desc": "Max Money",
+          "address": "0x02006E50"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

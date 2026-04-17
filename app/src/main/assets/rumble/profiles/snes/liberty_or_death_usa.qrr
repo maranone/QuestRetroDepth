@@ -1,0 +1,13 @@
+game_name=Liberty or Death (USA)
+game_key=liberty_or_death_usa
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_40b7	pickup	0x7E40B7	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_40b8	pickup	0x7E40B8	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_20d7	pickup	0x7E20D7	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_20d8	pickup	0x7E20D8	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_20e5	pickup	0x7E20E5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_20e6	pickup	0x7E20E6	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_220b	pickup	0x7E220B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_220c	pickup	0x7E220C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_235b	pickup	0x7E235B	1	uint	little	prev != curr	0.8	1	right:0.250:18

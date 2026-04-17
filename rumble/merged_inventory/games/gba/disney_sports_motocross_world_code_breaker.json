@@ -1,0 +1,168 @@
+{
+  "system": "gba",
+  "normalized_title": "disneysportsmotocross",
+  "display_name": "Disney Sports - Motocross (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Disney Sports - Motocross (World) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 14,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10000896",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000896"
+        },
+        {
+          "code": "32013104",
+          "desc": "Always Place 1st",
+          "address": "0x02013104"
+        },
+        {
+          "code": "82013136",
+          "desc": "Infinite Turbo",
+          "address": "0x02013136"
+        },
+        {
+          "code": "32013C50",
+          "desc": "Infinite Turbo",
+          "address": "0x02013C50"
+        },
+        {
+          "code": "32013138",
+          "desc": "Max Trick Gauge",
+          "address": "0x02013138"
+        },
+        {
+          "code": "820139B0",
+          "desc": "Time Always 0:00",
+          "address": "0x020139B0"
+        },
+        {
+          "code": "7201310C",
+          "desc": "Start With Hi-Score",
+          "address": "0x0201310C"
+        },
+        {
+          "code": "8201310C",
+          "desc": "Start With Hi-Score",
+          "address": "0x0201310C"
+        },
+        {
+          "code": "82013C10",
+          "desc": "Max Score",
+          "address": "0x02013C10"
+        },
+        {
+          "code": "42001748",
+          "desc": "Unlock All Items",
+          "address": "0x02001748"
+        },
+        {
+          "code": "320017A8",
+          "desc": "Unlock Extra Options",
+          "address": "0x020017A8"
+        },
+        {
+          "code": "82013100",
+          "desc": "Lap Modifier (00-09)",
+          "address": "0x02013100"
+        },
+        {
+          "code": "72013100",
+          "desc": "Start On Lap Modifier (01-09)",
+          "address": "0x02013100"
+        },
+        {
+          "code": "82013100",
+          "desc": "Start On Lap Modifier (01-09)",
+          "address": "0x02013100"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Disney Sports - Motocross (World) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 14,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10000896",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000896"
+        },
+        {
+          "code": "32013104",
+          "desc": "Always Place 1st",
+          "address": "0x02013104"
+        },
+        {
+          "code": "82013136",
+          "desc": "Infinite Turbo",
+          "address": "0x02013136"
+        },
+        {
+          "code": "32013C50",
+          "desc": "Infinite Turbo",
+          "address": "0x02013C50"
+        },
+        {
+          "code": "32013138",
+          "desc": "Max Trick Gauge",
+          "address": "0x02013138"
+        },
+        {
+          "code": "820139B0",
+          "desc": "Time Always 0:00",
+          "address": "0x020139B0"
+        },
+        {
+          "code": "7201310C",
+          "desc": "Start With Hi-Score",
+          "address": "0x0201310C"
+        },
+        {
+          "code": "8201310C",
+          "desc": "Start With Hi-Score",
+          "address": "0x0201310C"
+        },
+        {
+          "code": "82013C10",
+          "desc": "Max Score",
+          "address": "0x02013C10"
+        },
+        {
+          "code": "42001748",
+          "desc": "Unlock All Items",
+          "address": "0x02001748"
+        },
+        {
+          "code": "320017A8",
+          "desc": "Unlock Extra Options",
+          "address": "0x020017A8"
+        },
+        {
+          "code": "82013100",
+          "desc": "Lap Modifier (00-09)",
+          "address": "0x02013100"
+        },
+        {
+          "code": "72013100",
+          "desc": "Start On Lap Modifier (01-09)",
+          "address": "0x02013100"
+        },
+        {
+          "code": "82013100",
+          "desc": "Start On Lap Modifier (01-09)",
+          "address": "0x02013100"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

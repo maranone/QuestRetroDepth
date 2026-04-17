@@ -1,0 +1,22 @@
+game_name=Parasol Stars - Rainbow Islands II (Europe)
+game_key=parasol_stars_rainbow_islands_ii_europe
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_04ed	life_lost	0x04ED	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_04ed	life_gained	0x04ED	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_04fd	level_complete	0x04FD	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	score_score_04e0	score	0x04E0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04e1	score	0x04E1	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04df	score	0x04DF	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04de	score	0x04DE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04dd	score	0x04DD	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	life_lost_lives_058c	life_lost	0x058C	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_058c	life_gained	0x058C	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_059c	life_lost	0x059C	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_059c	life_gained	0x059C	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_05bc	life_lost	0x05BC	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_05bc	life_gained	0x05BC	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_05ec	life_lost	0x05EC	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_05ec	life_gained	0x05EC	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_010b	life_lost	0x010B	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_010b	life_gained	0x010B	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

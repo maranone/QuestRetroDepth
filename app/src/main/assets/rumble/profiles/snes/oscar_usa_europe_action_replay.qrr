@@ -1,0 +1,6 @@
+game_name=Oscar (USA, Europe) (Action Replay)
+game_key=oscar_usa_europe_action_replay
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_0322	life_lost	0x7E0322	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0322	life_gained	0x7E0322	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

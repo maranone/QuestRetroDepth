@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "dokuganryuumasamune",
+  "display_name": "Dokuganryuu Masamune (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dokuganryuu Masamune (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0069:2F",
+          "desc": "Adjust Age",
+          "address": "0x0069"
+        },
+        {
+          "code": "0303:26",
+          "desc": "Infinite Stats & Gold",
+          "address": "0x0303"
+        },
+        {
+          "code": "0305:26",
+          "desc": "Infinite Stats & Gold",
+          "address": "0x0305"
+        },
+        {
+          "code": "0307:26",
+          "desc": "Infinite Stats & Gold",
+          "address": "0x0307"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

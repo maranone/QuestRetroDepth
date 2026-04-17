@@ -1,0 +1,8 @@
+game_name=X-Men - Mojo World (Brazil) (Action Replay)
+game_key=XMenMojoWorld-Sms
+system=sms
+integration_tier=stable
+trigger	game_over_gameover_c28d	game_over	0xC28D	1	uint	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	damage_taken_health_df8a	damage_taken	0xDF8A	2	int	big	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_df8a	death	0xDF8A	2	int	big	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_df86	score	0xDF86	2	uint	little	prev < curr	0.8	1	right:0.350:60

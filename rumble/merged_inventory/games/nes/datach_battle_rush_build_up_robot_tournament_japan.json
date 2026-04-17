@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "datachbattlerushbuilduprobottournament",
+  "display_name": "Datach - Battle Rush - Build Up Robot Tournament (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Datach - Battle Rush - Build Up Robot Tournament (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "00B9:20",
+          "desc": "Infinite Time",
+          "address": "0x00B9"
+        },
+        {
+          "code": "0302:00",
+          "desc": "Energy Modifier",
+          "address": "0x0302"
+        },
+        {
+          "code": "0305:00",
+          "desc": "Damage Modifier",
+          "address": "0x0305"
+        },
+        {
+          "code": "0332:00",
+          "desc": "Energy Modifier",
+          "address": "0x0332"
+        },
+        {
+          "code": "0335:00",
+          "desc": "Damage Modifier",
+          "address": "0x0335"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

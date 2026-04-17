@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "nbajam2002",
+  "display_name": "NBA Jam 2002 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\NBA Jam 2002 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 30,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "1000C850",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200C850"
+        },
+        {
+          "code": "830013AE",
+          "desc": "Team 1 Scores 999",
+          "address": "0x020013AE"
+        },
+        {
+          "code": "830013B2",
+          "desc": "Team 1 Scores 999",
+          "address": "0x020013B2"
+        },
+        {
+          "code": "830013B6",
+          "desc": "Team 1 Scores 999",
+          "address": "0x020013B6"
+        },
+        {
+          "code": "830013AE",
+          "desc": "Team 1 Scores 0",
+          "address": "0x020013AE"
+        },
+        {
+          "code": "830013B2",
+          "desc": "Team 1 Scores 0",
+          "address": "0x020013B2"
+        },
+        {
+          "code": "830013B6",
+          "desc": "Team 1 Scores 0",
+          "address": "0x020013B6"
+        },
+        {
+          "code": "830013B0",
+          "desc": "Team 2 Scores 999",
+          "address": "0x020013B0"
+        },
+        {
+          "code": "830013B4",
+          "desc": "Team 2 Scores 999",
+          "address": "0x020013B4"
+        },
+        {
+          "code": "830013B8",
+          "desc": "Team 2 Scores 999",
+          "address": "0x020013B8"
+        },
+        {
+          "code": "830013B0",
+          "desc": "Team 2 Scores 0",
+          "address": "0x020013B0"
+        },
+        {
+          "code": "830013B4",
+          "desc": "Team 2 Scores 0",
+          "address": "0x020013B4"
+        },
+        {
+          "code": "830013B8",
+          "desc": "Team 2 Scores 0",
+          "address": "0x020013B8"
+        },
+        {
+          "code": "3300136C",
+          "desc": "Infinite Shot Clock",
+          "address": "0x0200136C"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 1 Second On Shot Clock",
+          "address": "0x02000020"
+        },
+        {
+          "code": "3300136C",
+          "desc": "Press Select For 1 Second On Shot Clock",
+          "address": "0x0200136C"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 9 Seconds",
+          "address": "0x02000020"
+        },
+        {
+          "code": "3300130A",
+          "desc": "Press Select For 9 Seconds",
+          "address": "0x0200130A"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 5x Seconds",
+          "address": "0x02000020"
+        },
+        {
+          "code": "33001309",
+          "desc": "Press Select For 5x Seconds",
+          "address": "0x02001309"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 2 Minutes",
+          "address": "0x02000020"
+        },
+        {
+          "code": "33001308",
+          "desc": "Press Select For 2 Minutes",
+          "address": "0x02001308"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press L For 1 Seconds",
+          "address": "0x02000020"
+        },
+        {
+          "code": "3300130A",
+          "desc": "Press L For 1 Seconds",
+          "address": "0x0200130A"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press L For 0x Seconds",
+          "address": "0x02000020"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\NBA Jam 2002 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 30,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "1000C850",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200C850"
+        },
+        {
+          "code": "830013AE",
+          "desc": "Team 1 Scores 999",
+          "address": "0x020013AE"
+        },
+        {
+          "code": "830013B2",
+          "desc": "Team 1 Scores 999",
+          "address": "0x020013B2"
+        },
+        {
+          "code": "830013B6",
+          "desc": "Team 1 Scores 999",
+          "address": "0x020013B6"
+        },
+        {
+          "code": "830013AE",
+          "desc": "Team 1 Scores 0",
+          "address": "0x020013AE"
+        },
+        {
+          "code": "830013B2",
+          "desc": "Team 1 Scores 0",
+          "address": "0x020013B2"
+        },
+        {
+          "code": "830013B6",
+          "desc": "Team 1 Scores 0",
+          "address": "0x020013B6"
+        },
+        {
+          "code": "830013B0",
+          "desc": "Team 2 Scores 999",
+          "address": "0x020013B0"
+        },
+        {
+          "code": "830013B4",
+          "desc": "Team 2 Scores 999",
+          "address": "0x020013B4"
+        },
+        {
+          "code": "830013B8",
+          "desc": "Team 2 Scores 999",
+          "address": "0x020013B8"
+        },
+        {
+          "code": "830013B0",
+          "desc": "Team 2 Scores 0",
+          "address": "0x020013B0"
+        },
+        {
+          "code": "830013B4",
+          "desc": "Team 2 Scores 0",
+          "address": "0x020013B4"
+        },
+        {
+          "code": "830013B8",
+          "desc": "Team 2 Scores 0",
+          "address": "0x020013B8"
+        },
+        {
+          "code": "3300136C",
+          "desc": "Infinite Shot Clock",
+          "address": "0x0200136C"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 1 Second On Shot Clock",
+          "address": "0x02000020"
+        },
+        {
+          "code": "3300136C",
+          "desc": "Press Select For 1 Second On Shot Clock",
+          "address": "0x0200136C"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 9 Seconds",
+          "address": "0x02000020"
+        },
+        {
+          "code": "3300130A",
+          "desc": "Press Select For 9 Seconds",
+          "address": "0x0200130A"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 5x Seconds",
+          "address": "0x02000020"
+        },
+        {
+          "code": "33001309",
+          "desc": "Press Select For 5x Seconds",
+          "address": "0x02001309"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 2 Minutes",
+          "address": "0x02000020"
+        },
+        {
+          "code": "33001308",
+          "desc": "Press Select For 2 Minutes",
+          "address": "0x02001308"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press L For 1 Seconds",
+          "address": "0x02000020"
+        },
+        {
+          "code": "3300130A",
+          "desc": "Press L For 1 Seconds",
+          "address": "0x0200130A"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press L For 0x Seconds",
+          "address": "0x02000020"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Mario no Super Picross (Japan)
+game_key=mario_no_super_picross_japan
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_1102	level_complete	0x7E1102	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_1103	level_complete	0x7E1103	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_1104	level_complete	0x7E1104	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

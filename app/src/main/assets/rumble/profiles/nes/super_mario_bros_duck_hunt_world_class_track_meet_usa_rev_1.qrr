@@ -1,0 +1,21 @@
+game_name=Super Mario Bros. + Duck Hunt + World Class Track Meet (USA) (Rev 1)
+game_key=super_mario_bros_duck_hunt_world_class_track_meet_usa_rev_1
+system=nes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_079e	enemy_defeated	0x079E	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_079f	enemy_defeated	0x079F	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	level_complete_level_075c	level_complete	0x075C	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	score_score_07dc	score	0x07DC	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_07db	score	0x07DB	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_07da	score	0x07DA	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_07d9	score	0x07D9	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_07d8	score	0x07D8	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_07d7	score	0x07D7	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0319	score	0x0319	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0318	score	0x0318	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0317	score	0x0317	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0316	score	0x0316	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0315	score	0x0315	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0314	score	0x0314	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	pickup_coins_00ba	pickup	0x00BA	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_00fb	enemy_defeated	0x00FB	1	uint	little	prev > curr	0.65	1	right:0.450:35

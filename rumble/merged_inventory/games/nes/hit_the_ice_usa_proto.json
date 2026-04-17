@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "hitice",
+  "display_name": "Hit the Ice (USA) (Proto)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hit the Ice (USA) (Proto).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0406:00",
+          "desc": "P1 Score Modifier",
+          "address": "0x0406"
+        },
+        {
+          "code": "0407:00",
+          "desc": "P2 Always 0 Scores",
+          "address": "0x0407"
+        },
+        {
+          "code": "0168:E7",
+          "desc": "Infinite Gold",
+          "address": "0x0168"
+        },
+        {
+          "code": "0169:03",
+          "desc": "Infinite Gold",
+          "address": "0x0169"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

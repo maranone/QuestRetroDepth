@@ -1,0 +1,57 @@
+{
+  "system": "nes",
+  "normalized_title": "billtedsexcellentvideogameadventure",
+  "display_name": "Bill _ Ted's Excellent Video Game Adventure (USA) (Game Genie)",
+  "aliases": [
+    "Bill _ Ted's Excellent Video Game Adventure (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bill _ Ted's Excellent Video Game Adventure (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "OUOOUEOO",
+          "desc": "Infinite Good Stuff",
+          "address": "0x00BB"
+        },
+        {
+          "code": "03A4:99",
+          "desc": "Infinite Coins",
+          "address": "0x03A4"
+        },
+        {
+          "code": "03A0:99",
+          "desc": "Infinite Pudding",
+          "address": "0x03A0"
+        },
+        {
+          "code": "03A1:99",
+          "desc": "Infinite Fire Crackers",
+          "address": "0x03A1"
+        },
+        {
+          "code": "03A2:99",
+          "desc": "Infinite Highly Dangerous TextBook (With Face On It)",
+          "address": "0x03A2"
+        },
+        {
+          "code": "03A3:99",
+          "desc": "Infinite Boombox",
+          "address": "0x03A3"
+        },
+        {
+          "code": "AENAPPLA",
+          "desc": "Skip Intro Screen",
+          "address": "0x0109"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

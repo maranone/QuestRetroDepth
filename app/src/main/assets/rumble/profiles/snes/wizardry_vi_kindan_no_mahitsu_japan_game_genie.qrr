@@ -1,0 +1,5 @@
+game_name=Wizardry VI - Kindan no Mahitsu (Japan) (Game Genie)
+game_key=wizardry_vi_kindan_no_mahitsu_japan_game_genie
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_a01b	pickup	0x7EA01B	1	uint	little	prev != curr	0.8	1	right:0.250:18

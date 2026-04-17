@@ -1,7 +1,0 @@
-game_name=T2TheArcadeGame
-game_key=T2TheArcadeGame-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_7f	damage_taken	0x7E007F	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	score_1_683	score	0x7E0683	1	uint	native	prev < curr	0.7	1	left:0.300:80
-trigger	damage_taken_3_81	damage_taken	0x7E0081	1	uint	native	prev > curr	0.85	1	right:0.750:180

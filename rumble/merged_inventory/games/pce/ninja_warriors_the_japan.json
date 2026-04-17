@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "ninjawarriors",
+  "display_name": "Ninja Warriors, The (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Ninja Warriors, The (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f0fc8:59",
+          "desc": "Infinite Time",
+          "address": "0x1F0FC8"
+        },
+        {
+          "code": "1f1319:28",
+          "desc": "Infinite Energy",
+          "address": "0x1F1319"
+        },
+        {
+          "code": "1f0e7d:30",
+          "desc": "Infinite Shurikens",
+          "address": "0x1F0E7D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

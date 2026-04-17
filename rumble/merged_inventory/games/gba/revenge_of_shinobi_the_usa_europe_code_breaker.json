@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "revengeofshinobi",
+  "display_name": "Revenge of Shinobi, The (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Revenge of Shinobi, The (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "100205DE",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020205DE"
+        },
+        {
+          "code": "33000DC5",
+          "desc": "Infinite Lives",
+          "address": "0x02000DC5"
+        },
+        {
+          "code": "33000DC4",
+          "desc": "Infinite Stars",
+          "address": "0x02000DC4"
+        },
+        {
+          "code": "82000074",
+          "desc": "Infinite Spirit Magic",
+          "address": "0x02000074"
+        },
+        {
+          "code": "8200006E",
+          "desc": "Have All Spirit Magic",
+          "address": "0x0200006E"
+        },
+        {
+          "code": "82000070",
+          "desc": "Have All Spirit Magic",
+          "address": "0x02000070"
+        },
+        {
+          "code": "32000072",
+          "desc": "Have All Spirit Magic",
+          "address": "0x02000072"
+        },
+        {
+          "code": "33000014",
+          "desc": "Have Key",
+          "address": "0x02000014"
+        },
+        {
+          "code": "33000018",
+          "desc": "Gate Open",
+          "address": "0x02000018"
+        },
+        {
+          "code": "330006DC",
+          "desc": "Access All Paths",
+          "address": "0x020006DC"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Revenge of Shinobi, The (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "100205DE",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020205DE"
+        },
+        {
+          "code": "33000DC5",
+          "desc": "Infinite Lives",
+          "address": "0x02000DC5"
+        },
+        {
+          "code": "33000DC4",
+          "desc": "Infinite Stars",
+          "address": "0x02000DC4"
+        },
+        {
+          "code": "82000074",
+          "desc": "Infinite Spirit Magic",
+          "address": "0x02000074"
+        },
+        {
+          "code": "8200006E",
+          "desc": "Have All Spirit Magic",
+          "address": "0x0200006E"
+        },
+        {
+          "code": "82000070",
+          "desc": "Have All Spirit Magic",
+          "address": "0x02000070"
+        },
+        {
+          "code": "32000072",
+          "desc": "Have All Spirit Magic",
+          "address": "0x02000072"
+        },
+        {
+          "code": "33000014",
+          "desc": "Have Key",
+          "address": "0x02000014"
+        },
+        {
+          "code": "33000018",
+          "desc": "Gate Open",
+          "address": "0x02000018"
+        },
+        {
+          "code": "330006DC",
+          "desc": "Access All Paths",
+          "address": "0x020006DC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "system": "nes",
+  "normalized_title": "kiteretsudaihyakka",
+  "display_name": "Kiteretsu Daihyakka (Japan) (Game Genie)",
+  "aliases": [
+    "Kiteretsu Daihyakka (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kiteretsu Daihyakka (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "SXKEXASA",
+          "desc": "Invincible",
+          "address": "0x00AA"
+        },
+        {
+          "code": "0052:50",
+          "desc": "Infinite Energy",
+          "address": "0x0052"
+        },
+        {
+          "code": "0068:00",
+          "desc": "Invincibility",
+          "address": "0x0068"
+        },
+        {
+          "code": "0068:02",
+          "desc": "Another Invincibility",
+          "address": "0x0068"
+        },
+        {
+          "code": "0055:09",
+          "desc": "Infinite Money",
+          "address": "0x0055"
+        },
+        {
+          "code": "0054:09",
+          "desc": "Infinite Money",
+          "address": "0x0054"
+        },
+        {
+          "code": "0053:09",
+          "desc": "Infinite Money",
+          "address": "0x0053"
+        },
+        {
+          "code": "0050:00",
+          "desc": "Level Modifier",
+          "address": "0x0050"
+        },
+        {
+          "code": "00E8:04",
+          "desc": "Swim Anywhere",
+          "address": "0x00E8"
+        },
+        {
+          "code": "0507:E0",
+          "desc": "Jump Midair",
+          "address": "0x0507"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

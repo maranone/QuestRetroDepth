@@ -1,0 +1,112 @@
+{
+  "system": "nes",
+  "normalized_title": "irontankinvasionofnormandy",
+  "display_name": "Iron Tank - The Invasion of Normandy (USA) (Game Genie)",
+  "aliases": [
+    "Iron Tank - The Invasion of Normandy (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Iron Tank - The Invasion of Normandy (USA).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 18,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "01D1:09",
+          "desc": "Infinite Lives",
+          "address": "0x01D1"
+        },
+        {
+          "code": "0306:FF",
+          "desc": "Infinite Energy",
+          "address": "0x0306"
+        },
+        {
+          "code": "01D1:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x01D1"
+        },
+        {
+          "code": "0306:20",
+          "desc": "Infinite Health P1",
+          "address": "0x0306"
+        },
+        {
+          "code": "0039:25",
+          "desc": "Infinite V P1",
+          "address": "0x0039"
+        },
+        {
+          "code": "003A:25",
+          "desc": "Infinite F P1",
+          "address": "0x003A"
+        },
+        {
+          "code": "003B:25",
+          "desc": "Infinite B P1",
+          "address": "0x003B"
+        },
+        {
+          "code": "003C:25",
+          "desc": "Infinite L P1",
+          "address": "0x003C"
+        },
+        {
+          "code": "0376:00",
+          "desc": "1 Hit Destroys Bosses",
+          "address": "0x0376"
+        },
+        {
+          "code": "01D2:FF",
+          "desc": "High Score P1",
+          "address": "0x01D2"
+        },
+        {
+          "code": "01D3:FF",
+          "desc": "High Score P1",
+          "address": "0x01D3"
+        },
+        {
+          "code": "01D4:25",
+          "desc": "High Score P1",
+          "address": "0x01D4"
+        },
+        {
+          "code": "03F7:FF",
+          "desc": "Fake Infinite Health P1",
+          "address": "0x03F7"
+        },
+        {
+          "code": "03F5:FF",
+          "desc": "Fake Infinite V P1",
+          "address": "0x03F5"
+        },
+        {
+          "code": "003D:28",
+          "desc": "Infinite ?",
+          "address": "0x003D"
+        },
+        {
+          "code": "003E:28",
+          "desc": "Infinite R. Fuel",
+          "address": "0x003E"
+        },
+        {
+          "code": "000E:01",
+          "desc": "Most Tanks & Soldiers Move Much Faster",
+          "address": "0x000E"
+        },
+        {
+          "code": "000F:01",
+          "desc": "Most Tanks & Soldiers Move Much Faster",
+          "address": "0x000F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

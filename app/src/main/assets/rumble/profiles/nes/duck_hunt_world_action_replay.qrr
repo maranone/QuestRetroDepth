@@ -1,0 +1,5 @@
+game_name=Duck Hunt (World) (Action Replay)
+game_key=duck_hunt_world_action_replay
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_00ba	pickup	0x00BA	1	uint	little	prev != curr	0.8	1	right:0.250:18

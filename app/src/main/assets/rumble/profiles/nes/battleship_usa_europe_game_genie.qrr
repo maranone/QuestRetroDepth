@@ -1,0 +1,8 @@
+game_name=Battleship (USA, Europe) (Game Genie)
+game_key=battleship_usa_europe_game_genie
+system=nes
+integration_tier=contrib
+trigger	level_complete_level_040b	level_complete	0x040B	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_040c	level_complete	0x040C	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0489	level_complete	0x0489	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_040d	level_complete	0x040D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

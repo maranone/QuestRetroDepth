@@ -1,0 +1,7 @@
+game_name=Elevator Action (USA, Japan) (Game Genie)
+game_key=ElevatorAction-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_0590	life_lost	0x0590	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0590	life_gained	0x0590	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0586	score	0x0586	8	nibble	big	prev < curr	0.8	1	right:0.350:60

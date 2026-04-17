@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "dragonwarriorii",
+  "display_name": "Dragon Warrior II (USA) (Game Genie)",
+  "aliases": [
+    "Dragon Warrior II (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dragon Warrior II (USA).cht",
+      "total_cheat_rows": 284,
+      "raw_entry_count": 149,
+      "distinct_address_count": 81,
+      "sample_raw_entries": [
+        {
+          "code": "AEVAVGLA",
+          "desc": "The HEAL Spell Uses No MP Outside of Battle",
+          "address": "0x040E"
+        },
+        {
+          "code": "AEVEEGIA",
+          "desc": "The Healmore Spell Uses No MP Outside of Battle",
+          "address": "0x0488"
+        },
+        {
+          "code": "AEVEXKAA",
+          "desc": "The Healall Spell Uses No MP Outside of Battle",
+          "address": "0x048A"
+        },
+        {
+          "code": "AEVESGLA",
+          "desc": "The Antidote Spell Uses No MP Outside of Battle",
+          "address": "0x048D"
+        },
+        {
+          "code": "AEVENGTA",
+          "desc": "The Outside Spell Uses No MP Outside of Battle",
+          "address": "0x048F"
+        },
+        {
+          "code": "AENAOGTA",
+          "desc": "The Return Spell Uses No MP Outside of Battle",
+          "address": "0x0409"
+        },
+        {
+          "code": "AENAUGGA",
+          "desc": "The Stepguard Spell Uses No MP Outside of Battle",
+          "address": "0x040B"
+        },
+        {
+          "code": "AENAKKYA",
+          "desc": "The Revive Spell Uses No MP Outside of Battle",
+          "address": "0x040C"
+        },
+        {
+          "code": "AEUEAAPA",
+          "desc": "No Random Battles",
+          "address": "0x0088"
+        },
+        {
+          "code": "ENVOIYAZ",
+          "desc": "Makes The Lottery Ticket Behave LikeThe Dragon's Potion When You Use It, Letting You Save Anywhere",
+          "address": "0x07FD"
+        },
+        {
+          "code": "GXVOTNTZ",
+          "desc": "Makes The Lottery Ticket Behave LikeThe Dragon's Potion When You Use It, Letting You Save Anywhere",
+          "address": "0x07AE"
+        },
+        {
+          "code": "OZEPOASX",
+          "desc": "The Wizard's Ring Never Breaks When Used On The Field",
+          "address": "0x0029"
+        },
+        {
+          "code": "AESPGYZY",
+          "desc": "Get A Treasure Chest After Every Battle",
+          "address": "0x070C"
+        },
+        {
+          "code": "APUPOTTA",
+          "desc": "The Treasure Chest In The Beginning of The Game Has A Sword of Thunder Instead of A Copper Sword",
+          "address": "0x0619"
+        },
+        {
+          "code": "APVOOGTA",
+          "desc": "The Treasure Chest In The Beginning of The Game Has A Sword of Thunder Instead of A Copper Sword",
+          "address": "0x0499"
+        },
+        {
+          "code": "AEXOEAIA",
+          "desc": "Gold Is Maxed Out To 65,535 After Winning A Battle",
+          "address": "0x0088"
+        },
+        {
+          "code": "XYNPKGZU",
+          "desc": "The Treasure Chest At The Start of The Game Has 250 Gold Instead of 50",
+          "address": "0x047C"
+        },
+        {
+          "code": "PAXEKSOX",
+          "desc": "The Treasure Chest At The Start of The Game Has 12,850 Gold Instead of 50",
+          "address": "0x058C"
+        },
+        {
+          "code": "EPLANE",
+          "desc": "Skip Battles",
+          "address": "0x0017"
+        },
+        {
+          "code": "UPYOUS",
+          "desc": "When In Rhone (The Last Area), Fight A Battle And Rise To The Highest Level After The Battle",
+          "address": "0x0593"
+        },
+        {
+          "code": "VITOAN",
+          "desc": "No Experience Points From Enemies - Just Gold",
+          "address": "0x07D0"
+        },
+        {
+          "code": "OPEOGNXO",
+          "desc": "Get Mega Experience Points After Battle",
+          "address": "0x079C"
+        },
+        {
+          "code": "YEUOUNLU",
+          "desc": "Buy The Sword Of Erdrick At The Tool Shop In The Castle Of Midenhall For Only $2",
+          "address": "0x078B"
+        },
+        {
+          "code": "LOUOKYAE",
+          "desc": "Buy The Armor Of Erdrick At The Tool Shop In The Castle Of Midenhall For Only $4",
+          "address": "0x079C"
+        },
+        {
+          "code": "SZKAKSSE",
+          "desc": "Staying At Inns And Items In Shops Are Free If You Have Enough Gold",
+          "address": "0x052C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

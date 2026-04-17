@@ -1,0 +1,45 @@
+{
+  "system": "pce",
+  "normalized_title": "baribaridensetsu",
+  "display_name": "Bari Bari Densetsu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Bari Bari Densetsu (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1f105b:01",
+          "desc": "Low Lap Time",
+          "address": "0x1F105B"
+        },
+        {
+          "code": "1f0a86:01",
+          "desc": "Instant Win/Last Lap",
+          "address": "0x1F0A86"
+        },
+        {
+          "code": "1f0a84:01",
+          "desc": "Always First Place",
+          "address": "0x1F0A84"
+        },
+        {
+          "code": "1f0a85:01",
+          "desc": "Always First Place",
+          "address": "0x1F0A85"
+        },
+        {
+          "code": "1f0ca7:01",
+          "desc": "Always First Place",
+          "address": "0x1F0CA7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,16 @@
+game_name=SD Gundam Gaiden - Knight Gundam Monogatari (Japan)
+game_key=sd_gundam_gaiden_knight_gundam_monogatari_japan
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_04f8	pickup	0x04F8	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_04f9	pickup	0x04F9	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_0405	damage_taken	0x0405	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0405	death	0x0405	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0443	damage_taken	0x0443	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0443	death	0x0443	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0462	damage_taken	0x0462	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0462	death	0x0462	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0424	damage_taken	0x0424	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0424	death	0x0424	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0481	damage_taken	0x0481	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0481	death	0x0481	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "magicalquest2starringmickeyminnie",
+  "display_name": "Magical Quest 2 Starring Mickey _ Minnie (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Magical Quest 2 Starring Mickey _ Minnie (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10007B56",
+          "desc": "Enabler Code",
+          "address": "0x02007B56"
+        },
+        {
+          "code": "10038624",
+          "desc": "Enabler Code (Alternate)",
+          "address": "0x02038624"
+        },
+        {
+          "code": "320008EA",
+          "desc": "Infinite Hearts",
+          "address": "0x020008EA"
+        },
+        {
+          "code": "32000985",
+          "desc": "Max Lives",
+          "address": "0x02000985"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Magical Quest 2 Starring Mickey _ Minnie (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10007B56",
+          "desc": "Enabler Code",
+          "address": "0x02007B56"
+        },
+        {
+          "code": "10038624",
+          "desc": "Enabler Code (Alternate)",
+          "address": "0x02038624"
+        },
+        {
+          "code": "320008EA",
+          "desc": "Infinite Hearts",
+          "address": "0x020008EA"
+        },
+        {
+          "code": "32000985",
+          "desc": "Max Lives",
+          "address": "0x02000985"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

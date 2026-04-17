@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "stuntkids",
+  "display_name": "Stunt Kids (USA) (Unl) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Stunt Kids (USA) (Unl) (Game Genie).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "SZKOEOVV",
+          "desc": "Coins Worth Nothing On Pick Up",
+          "address": "0x01A8"
+        },
+        {
+          "code": "SLNOYXVS",
+          "desc": "Infinite Time (Player 1)",
+          "address": "0x02BF"
+        },
+        {
+          "code": "SLXOYUVS",
+          "desc": "Infinite Time (Player 2)",
+          "address": "0x03BF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

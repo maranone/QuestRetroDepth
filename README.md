@@ -2,16 +2,24 @@
 
 QuestRetroDepth is a Meta Quest VR emulator experiment.
 
-It runs as an Android/OpenXR app on Quest and tries to render emulator layers at different depths in VR instead of showing one flat screen.
+It runs as an Android/OpenXR app on Quest and renders emulator hardware layers at different depths in stereo VR instead of showing one flat screen.
 
 This is based on RetroDepth https://github.com/maranone/RetroDepth
 
 Source code: https://github.com/maranone/QuestRetroDepth
 
-Right now it has source for:
+## Emulator Support
 
-- SNES, using Snes9x/libretro code
-- Genesis/Mega Drive, using PicoDrive/libretro code
+| System | Core | ROM formats | Status |
+|---|---|---|---|
+| SNES | Snes9x | `.smc` `.sfc` `.fig` `.swc` | Working |
+| Genesis / Mega Drive | PicoDrive | `.md` `.gen` `.smd` `.bin` | Working |
+| SMS / Game Gear | PicoDrive | `.sms` `.gg` | Working |
+| GBA / GB / GBC | mGBA | `.gba` `.gb` `.gbc` | Work in progress |
+| NES | FCEUmm | `.nes` | Work in progress |
+| PC Engine | Beetle PCE | `.pce` | Work in progress |
+
+Archives (`.zip`, `.7z`) are extracted automatically before loading.
 
 No games or ROMs are included.
 
@@ -124,6 +132,12 @@ This project includes third-party emulator code. Keep their license files with t
 - PicoDrive current fork mentioned by upstream: https://github.com/irixxxx/picodrive
 - PicoDrive original repo: https://github.com/notaz/picodrive
 - PicoDrive license in this repo: `third_party/picodrive/COPYING`
+- mGBA: https://github.com/mgba-emu/mgba
+- mGBA license in this repo: `third_party/mgba/LICENSE`
+- FCEUmm: https://github.com/libretro/libretro-fceumm
+- FCEUmm license in this repo: `third_party/fceumm/Copying`
+- Beetle PCE: https://github.com/libretro/beetle-pce-libretro
+- Beetle PCE license in this repo: `third_party/beetle-pce/COPYING`
 
 Some bundled emulator subfolders have their own extra license files too, for example libchdr/zstd/lzma/zlib pieces under PicoDrive and some Snes9x filter/helper code. Check the license files in `third_party/` before redistributing builds.
 

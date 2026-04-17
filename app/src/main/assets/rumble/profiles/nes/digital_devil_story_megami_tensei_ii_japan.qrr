@@ -1,0 +1,38 @@
+game_name=Digital Devil Story - Megami Tensei II (Japan)
+game_key=digital_devil_story_megami_tensei_ii_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_053c	damage_taken	0x053C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_053c	death	0x053C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0578	damage_taken	0x0578	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0578	death	0x0578	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_053d	damage_taken	0x053D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_053d	death	0x053D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0579	damage_taken	0x0579	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0579	death	0x0579	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0405	pickup	0x0405	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_0510	level_complete	0x0510	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0512	level_complete	0x0512	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0511	level_complete	0x0511	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0513	level_complete	0x0513	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_053e	damage_taken	0x053E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_053e	death	0x053E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_057a	damage_taken	0x057A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_057a	death	0x057A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_053f	damage_taken	0x053F	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_053f	death	0x053F	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_057b	damage_taken	0x057B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_057b	death	0x057B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0540	damage_taken	0x0540	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0540	death	0x0540	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_057c	damage_taken	0x057C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_057c	death	0x057C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0541	damage_taken	0x0541	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0541	death	0x0541	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_057d	damage_taken	0x057D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_057d	death	0x057D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_0548	enemy_defeated	0x0548	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0549	enemy_defeated	0x0549	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_054a	enemy_defeated	0x054A	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_054b	enemy_defeated	0x054B	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_054c	enemy_defeated	0x054C	1	uint	little	prev > curr	0.65	1	right:0.450:35

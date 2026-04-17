@@ -1,0 +1,8 @@
+game_name=Sonic The Hedgehog 2 (Europe) (Action Replay)
+game_key=SonicTheHedgehog2-Sms
+system=sms
+integration_tier=stable
+trigger	life_lost_lives_d298	life_lost	0xD298	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_d298	life_gained	0xD298	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_rings_d299	pickup	0xD299	2	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	score_score_d29f	score	0xD29F	3	bcd	little	prev < curr	0.8	1	right:0.350:60

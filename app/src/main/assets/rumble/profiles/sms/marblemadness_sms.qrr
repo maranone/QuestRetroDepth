@@ -1,0 +1,5 @@
+game_name=Marble Madness (Europe) (Action Replay)
+game_key=MarbleMadness-Sms
+system=sms
+integration_tier=stable
+trigger	score_score_dfc5	score	0xDFC5	2	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,103 @@
+{
+  "system": "nes",
+  "normalized_title": "armadillo",
+  "display_name": "Armadillo (Japan)",
+  "aliases": [
+    "Armadillo (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\armadillo_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0166",
+        "0x0168"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Armadillo-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0166",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0168",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Armadillo (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "0166:04",
+          "desc": "Infinite Lives",
+          "address": "0x0166"
+        },
+        {
+          "code": "004C:64",
+          "desc": "Infinite Time",
+          "address": "0x004C"
+        },
+        {
+          "code": "061D:80",
+          "desc": "Invincibility",
+          "address": "0x061D"
+        },
+        {
+          "code": "00D1:FF",
+          "desc": "Walk Freely On The Map",
+          "address": "0x00D1"
+        },
+        {
+          "code": "0038:00",
+          "desc": "World Modifier",
+          "address": "0x0038"
+        },
+        {
+          "code": "03D5:07",
+          "desc": "Always High Bounce As Ball",
+          "address": "0x03D5"
+        },
+        {
+          "code": "05FD:00",
+          "desc": "Boss 1 Hit Kill",
+          "address": "0x05FD"
+        },
+        {
+          "code": "060C:00",
+          "desc": "Attribute Modifier",
+          "address": "0x060C"
+        },
+        {
+          "code": "060D:03",
+          "desc": "Swim Anywhere",
+          "address": "0x060D"
+        },
+        {
+          "code": "0615:FF",
+          "desc": "Walk Behind Scenery",
+          "address": "0x0615"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

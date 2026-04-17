@@ -1,0 +1,69 @@
+{
+  "system": "sms",
+  "normalized_title": "ninjagaiden",
+  "display_name": "Ninja Gaiden (Europe) (Action Replay)",
+  "aliases": [
+    "Ninja Gaiden (Europe) (Action Replay)",
+    "Ninja Gaiden (Europe, Brazil) (Beta)",
+    "Ninja Gaiden (Europe, Brazil)",
+    "Ninja Gaiden (Rumbles)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\ninjagaiden_sms.json",
+      "trigger_count": 6,
+      "field_names": [
+        "gameover",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xC3C3",
+        "0xDFC7",
+        "0xDFC8",
+        "0xDFD8"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\NinjaGaiden-Sms-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xC3C3",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xDFC8",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xDFC7",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xDFD8",
+          "type": "<n6"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Ninja Gaiden (Rumbles).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

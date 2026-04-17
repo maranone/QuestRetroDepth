@@ -1,0 +1,161 @@
+{
+  "system": "nes",
+  "normalized_title": "blastermaster",
+  "display_name": "Blaster Master (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Blaster Master (USA)",
+    "Blaster Master (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Blaster Master (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 13,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "GZSOEEVK",
+          "desc": "Infinite Homing Missiles",
+          "address": "0x00A8"
+        },
+        {
+          "code": "GXKPEOVK",
+          "desc": "Infinite Thunderbreaks",
+          "address": "0x0128"
+        },
+        {
+          "code": "GXSOVXVK",
+          "desc": "Infinite Multi-Warheads",
+          "address": "0x02AE"
+        },
+        {
+          "code": "EKGAAA",
+          "desc": "?",
+          "address": "0x0040"
+        },
+        {
+          "code": "EKGAAA",
+          "desc": "Messes Up Song And Graghics",
+          "address": "0x0040"
+        },
+        {
+          "code": "EKYAAA",
+          "desc": "Cool Music And Sound",
+          "address": "0x0040"
+        },
+        {
+          "code": "SSPAGE",
+          "desc": "Cool Colors",
+          "address": "0x0054"
+        },
+        {
+          "code": "IIPAGE",
+          "desc": "Nighttime With Blue Landscape",
+          "address": "0x0054"
+        },
+        {
+          "code": "IPPAGE",
+          "desc": "Weird Colors, Screen Jerks Around, Enemies Are Frozen",
+          "address": "0x0014"
+        },
+        {
+          "code": "IPEAGE",
+          "desc": "Computer-Like Music And Sound Effects",
+          "address": "0x001C"
+        },
+        {
+          "code": "STOPIT",
+          "desc": "When You Aim The Tank Up, The Cannon Doesn't Go Up All The Way",
+          "address": "0x066D"
+        },
+        {
+          "code": "XVLAKO",
+          "desc": "Infinite Car Energy",
+          "address": "0x0164"
+        },
+        {
+          "code": "OOLAKO",
+          "desc": "Infinite Car Energy, Gain Most Power-Ups Shortly",
+          "address": "0x0114"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Blaster Master (USA).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 13,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "GZSOEEVK",
+          "desc": "Infinite Homing Missiles",
+          "address": "0x00A8"
+        },
+        {
+          "code": "GXKPEOVK",
+          "desc": "Infinite Thunderbreaks",
+          "address": "0x0128"
+        },
+        {
+          "code": "GXSOVXVK",
+          "desc": "Infinite Multi-Warheads",
+          "address": "0x02AE"
+        },
+        {
+          "code": "EKGAAA",
+          "desc": "?",
+          "address": "0x0040"
+        },
+        {
+          "code": "EKGAAA",
+          "desc": "Messes Up Song And Graghics",
+          "address": "0x0040"
+        },
+        {
+          "code": "EKYAAA",
+          "desc": "Cool Music And Sound",
+          "address": "0x0040"
+        },
+        {
+          "code": "SSPAGE",
+          "desc": "Cool Colors",
+          "address": "0x0054"
+        },
+        {
+          "code": "IIPAGE",
+          "desc": "Nighttime With Blue Landscape",
+          "address": "0x0054"
+        },
+        {
+          "code": "IPPAGE",
+          "desc": "Weird Colors, Screen Jerks Around, Enemies Are Frozen",
+          "address": "0x0014"
+        },
+        {
+          "code": "IPEAGE",
+          "desc": "Computer-Like Music And Sound Effects",
+          "address": "0x001C"
+        },
+        {
+          "code": "STOPIT",
+          "desc": "When You Aim The Tank Up, The Cannon Doesn't Go Up All The Way",
+          "address": "0x066D"
+        },
+        {
+          "code": "XVLAKO",
+          "desc": "Infinite Car Energy",
+          "address": "0x0164"
+        },
+        {
+          "code": "OOLAKO",
+          "desc": "Infinite Car Energy, Gain Most Power-Ups Shortly",
+          "address": "0x0114"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

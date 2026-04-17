@@ -1,0 +1,6 @@
+game_name=Shufflepuck Cafe (Japan)
+game_key=shufflepuck_cafe_japan
+system=nes
+integration_tier=contrib
+trigger	score_score_060f	score	0x060F	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_064f	score	0x064F	1	uint	little	prev < curr	0.8	1	right:0.350:60

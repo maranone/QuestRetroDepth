@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "deblock",
+  "display_name": "De-Block (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\De-Block (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "SXNEKYVT",
+          "desc": "Infinite Passes",
+          "address": "0x07AC"
+        },
+        {
+          "code": "PAEPPALA",
+          "desc": "Only 1 Peice Passing Allowed",
+          "address": "0x0009"
+        },
+        {
+          "code": "ZAEPPALA",
+          "desc": "Only 2 Peices Passing Allowed",
+          "address": "0x0009"
+        },
+        {
+          "code": "IAEPPALA",
+          "desc": "5 Peices Passing Allowed",
+          "address": "0x0009"
+        },
+        {
+          "code": "ZAEPPALE",
+          "desc": "10 Peices Passing Allowed",
+          "address": "0x0009"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

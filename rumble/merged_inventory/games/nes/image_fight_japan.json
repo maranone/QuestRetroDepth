@@ -1,0 +1,107 @@
+{
+  "system": "nes",
+  "normalized_title": "imagefight",
+  "display_name": "Image Fight (Japan)",
+  "aliases": [
+    "Image Fight (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Image Fight (USA).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 17,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "ENOPLPEI",
+          "desc": "Invinicible",
+          "address": "0x017B"
+        },
+        {
+          "code": "0042:00",
+          "desc": "Invincible",
+          "address": "0x0042"
+        },
+        {
+          "code": "0048:63",
+          "desc": "Infinite Lives P1",
+          "address": "0x0048"
+        },
+        {
+          "code": "0339:09",
+          "desc": "Max Score",
+          "address": "0x0339"
+        },
+        {
+          "code": "033A:09",
+          "desc": "Max Score",
+          "address": "0x033A"
+        },
+        {
+          "code": "033B:09",
+          "desc": "Max Score",
+          "address": "0x033B"
+        },
+        {
+          "code": "033C:09",
+          "desc": "Max Score",
+          "address": "0x033C"
+        },
+        {
+          "code": "033D:09",
+          "desc": "Max Score",
+          "address": "0x033D"
+        },
+        {
+          "code": "0404:01",
+          "desc": "Have Secondary Weapon (Left Side)",
+          "address": "0x0404"
+        },
+        {
+          "code": "0408:01",
+          "desc": "Have Secondary Weapon (Right Side)",
+          "address": "0x0408"
+        },
+        {
+          "code": "040C:01",
+          "desc": "Have Secondary Weapon (Front)",
+          "address": "0x040C"
+        },
+        {
+          "code": "0405:01",
+          "desc": "Turns Secondary Weapon Red (Instead of Blue)",
+          "address": "0x0405"
+        },
+        {
+          "code": "0409:01",
+          "desc": "Turns Secondary Weapon Red (Instead of Blue)",
+          "address": "0x0409"
+        },
+        {
+          "code": "0042:03",
+          "desc": "Have Ship Armor",
+          "address": "0x0042"
+        },
+        {
+          "code": "0043:01",
+          "desc": "Have Ship Armor",
+          "address": "0x0043"
+        },
+        {
+          "code": "0028:00",
+          "desc": "Bosses Have No Health",
+          "address": "0x0028"
+        },
+        {
+          "code": "0012:00",
+          "desc": "Level Modifier",
+          "address": "0x0012"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

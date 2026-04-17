@@ -1,0 +1,110 @@
+{
+  "system": "nes",
+  "normalized_title": "punchout",
+  "display_name": "Punch-Out (Rumbles)",
+  "aliases": [
+    "Punch-Out (Rumbles)",
+    "Punch-Out!! (USA)"
+  ],
+  "sources": {
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\PunchOut-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health_com",
+          "address": "0x0398",
+          "type": "|u1"
+        },
+        {
+          "name": "health_mac",
+          "address": "0x0391",
+          "type": "|u1"
+        },
+        {
+          "name": "heart",
+          "address": "0x0321",
+          "type": ">n4"
+        },
+        {
+          "name": "score",
+          "address": "0x03E8",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Punch-Out!! (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "0324:09",
+          "desc": "Infinite Energy",
+          "address": "0x0324"
+        },
+        {
+          "code": "0391:60",
+          "desc": "Infinite Life",
+          "address": "0x0391"
+        },
+        {
+          "code": "0342:03",
+          "desc": "Always Have Three Stars",
+          "address": "0x0342"
+        },
+        {
+          "code": "03EC:08",
+          "desc": "Always Have 999999 Points",
+          "address": "0x03EC"
+        },
+        {
+          "code": "03EB:09",
+          "desc": "Always Have 999999 Points",
+          "address": "0x03EB"
+        },
+        {
+          "code": "03EA:09",
+          "desc": "Always Have 999999 Points",
+          "address": "0x03EA"
+        },
+        {
+          "code": "03E9:09",
+          "desc": "Always Have 999999 Points",
+          "address": "0x03E9"
+        },
+        {
+          "code": "03ED:09",
+          "desc": "Always Have 999999 Points",
+          "address": "0x03ED"
+        },
+        {
+          "code": "03E8:09",
+          "desc": "Always Have 999999 Points",
+          "address": "0x03E8"
+        },
+        {
+          "code": "0052:09",
+          "desc": "Infinite Lives",
+          "address": "0x0052"
+        },
+        {
+          "code": "0051:00",
+          "desc": "Invincibility",
+          "address": "0x0051"
+        },
+        {
+          "code": "005F:96",
+          "desc": "Infinite Time",
+          "address": "0x005F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

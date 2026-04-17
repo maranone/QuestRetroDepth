@@ -1,0 +1,50 @@
+{
+  "system": "pce",
+  "normalized_title": "stripfighterii",
+  "display_name": "Strip Fighter II (Japan) (Unl)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Strip Fighter II (Japan) (Unl).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "1f037c:63",
+          "desc": "Infinite Time",
+          "address": "0x1F037C"
+        },
+        {
+          "code": "1f1009:03",
+          "desc": "Show Lots of Naked Chicks",
+          "address": "0x1F1009"
+        },
+        {
+          "code": "1f0f39:00",
+          "desc": "P1 Infinite Health",
+          "address": "0x1F0F39"
+        },
+        {
+          "code": "1f0f3b:00",
+          "desc": "P1 Infinite Health",
+          "address": "0x1F0F3B"
+        },
+        {
+          "code": "1f0f3a:60",
+          "desc": "P1 Instant Win (P2 Life Mod)",
+          "address": "0x1F0F3A"
+        },
+        {
+          "code": "1f0f3c:60",
+          "desc": "P1 Instant Win (P2 Life Mod)",
+          "address": "0x1F0F3C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

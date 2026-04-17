@@ -1,0 +1,13 @@
+game_name=Langrisser, Der (Japan) (Action Replay)
+game_key=langrisser_der_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_b02f	level_complete	0x7EB02F	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_b08f	level_complete	0x7EB08F	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_b0ef	level_complete	0x7EB0EF	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_b14f	level_complete	0x7EB14F	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_b1af	level_complete	0x7EB1AF	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	pickup_coins_1cdd	pickup	0x7E1CDD	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_1cde	pickup	0x7E1CDE	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_b003	damage_taken	0x7EB003	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_b003	death	0x7EB003	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

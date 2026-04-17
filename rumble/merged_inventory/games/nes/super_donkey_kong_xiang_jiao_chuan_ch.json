@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "superdonkeykongxiangjiaochuan",
+  "display_name": "Super Donkey Kong - Xiang Jiao Chuan (Ch)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Donkey Kong - Xiang Jiao Chuan (Ch).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "034E:03",
+          "desc": "Infinite Energy",
+          "address": "0x034E"
+        },
+        {
+          "code": "003C:10",
+          "desc": "Can't Be Hit",
+          "address": "0x003C"
+        },
+        {
+          "code": "0098:B4",
+          "desc": "Jump to Walk On Air",
+          "address": "0x0098"
+        },
+        {
+          "code": "0336:00",
+          "desc": "Character Modifier",
+          "address": "0x0336"
+        },
+        {
+          "code": "0347:03",
+          "desc": "Infinite Lives",
+          "address": "0x0347"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

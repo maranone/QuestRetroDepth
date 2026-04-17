@@ -1,0 +1,123 @@
+{
+  "system": "nes",
+  "normalized_title": "paperboy",
+  "display_name": "Paperboy (World) (Game Genie)",
+  "aliases": [
+    "Paperboy (Japan)",
+    "Paperboy (USA)",
+    "Paperboy (World) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\paperboy_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00B2",
+        "0x00D4"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Paperboy-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x00B2",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x00D4",
+          "type": ">n5"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Paperboy (World) (Game Genie).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "SXSEVZVG",
+          "desc": "Infinite Lives",
+          "address": "0x02AE"
+        },
+        {
+          "code": "PAUOEIGA",
+          "desc": "Start With 1 Life",
+          "address": "0x0588"
+        },
+        {
+          "code": "TAUOEIGA",
+          "desc": "Start With 6 Lives",
+          "address": "0x0588"
+        },
+        {
+          "code": "OZNOKAVK",
+          "desc": "Infinite Papers",
+          "address": "0x00AC"
+        },
+        {
+          "code": "GOXAUOZA",
+          "desc": "Start With 20 Papers",
+          "address": "0x011B"
+        },
+        {
+          "code": "GPUONUZA",
+          "desc": "Gain 20 Papers On Pick-Up",
+          "address": "0x039F"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Paperboy (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "SXSEVZVG",
+          "desc": "Infinite Lives",
+          "address": "0x02AE"
+        },
+        {
+          "code": "PAUOEIGA",
+          "desc": "Start With 1 Life",
+          "address": "0x0588"
+        },
+        {
+          "code": "TAUOEIGA",
+          "desc": "Start With 6 Lives",
+          "address": "0x0588"
+        },
+        {
+          "code": "OZNOKAVK",
+          "desc": "Infinite Papers",
+          "address": "0x00AC"
+        },
+        {
+          "code": "GOXAUOZA",
+          "desc": "Start With 20 Papers",
+          "address": "0x011B"
+        },
+        {
+          "code": "GPUONUZA",
+          "desc": "Gain 20 Papers On Pick-Up",
+          "address": "0x039F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

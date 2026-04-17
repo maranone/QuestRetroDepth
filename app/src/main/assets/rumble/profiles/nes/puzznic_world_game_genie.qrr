@@ -1,0 +1,10 @@
+game_name=Puzznic (World) (Game Genie)
+game_key=puzznic_world_game_genie
+system=nes
+integration_tier=contrib
+trigger	level_complete_level_010d	level_complete	0x010D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_011d	level_complete	0x011D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_012d	level_complete	0x012D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_013d	level_complete	0x013D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_014d	level_complete	0x014D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_015d	level_complete	0x015D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

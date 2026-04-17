@@ -1,0 +1,8 @@
+game_name=Space Invaders (USA, Europe) (Code Breaker)
+game_key=space_invaders_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_02015434	life_lost	0x02015434	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02015434	life_gained	0x02015434	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_02015438	score	0x02015438	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0201543a	score	0x0201543A	1	uint	little	prev < curr	0.8	1	right:0.350:60

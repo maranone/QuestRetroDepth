@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "hotpotato",
+  "display_name": "Hot Potato! (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Hot Potato! (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1000D120",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200D120"
+        },
+        {
+          "code": "83004EC8",
+          "desc": "Max Score",
+          "address": "0x02004EC8"
+        },
+        {
+          "code": "83004ECA",
+          "desc": "Max Score",
+          "address": "0x02004ECA"
+        },
+        {
+          "code": "33002811",
+          "desc": "Max Special Spuds",
+          "address": "0x02002811"
+        },
+        {
+          "code": "83002812",
+          "desc": "Infinite Lives",
+          "address": "0x02002812"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Hot Potato! (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1000D120",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200D120"
+        },
+        {
+          "code": "83004EC8",
+          "desc": "Max Score",
+          "address": "0x02004EC8"
+        },
+        {
+          "code": "83004ECA",
+          "desc": "Max Score",
+          "address": "0x02004ECA"
+        },
+        {
+          "code": "33002811",
+          "desc": "Max Special Spuds",
+          "address": "0x02002811"
+        },
+        {
+          "code": "83002812",
+          "desc": "Infinite Lives",
+          "address": "0x02002812"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

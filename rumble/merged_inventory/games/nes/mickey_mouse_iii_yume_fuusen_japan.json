@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "mickeymouseiiiyumefuusen",
+  "display_name": "Mickey Mouse III - Yume Fuusen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mickey Mouse III - Yume Fuusen (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "043F:0E",
+          "desc": "Infinite Energy",
+          "address": "0x043F"
+        },
+        {
+          "code": "043E:03",
+          "desc": "Infinite Lives",
+          "address": "0x043E"
+        },
+        {
+          "code": "044C:15",
+          "desc": "Invincibility",
+          "address": "0x044C"
+        },
+        {
+          "code": "044F:00",
+          "desc": "Alternate Invincibility",
+          "address": "0x044F"
+        },
+        {
+          "code": "043F:0E",
+          "desc": "Alternate Invincibility",
+          "address": "0x043F"
+        },
+        {
+          "code": "044B:00",
+          "desc": "Moon Jump",
+          "address": "0x044B"
+        },
+        {
+          "code": "SZNAKESE",
+          "desc": "Infinite Lives",
+          "address": "0x002C"
+        },
+        {
+          "code": "SZKEOESE",
+          "desc": "Infinite Energy",
+          "address": "0x00A9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

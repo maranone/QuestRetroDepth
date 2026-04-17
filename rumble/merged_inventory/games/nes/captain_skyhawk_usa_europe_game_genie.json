@@ -1,0 +1,38 @@
+{
+  "system": "nes",
+  "normalized_title": "captainskyhawk",
+  "display_name": "Captain Skyhawk (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Captain Skyhawk (USA)",
+    "Captain Skyhawk (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Captain Skyhawk (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "OZKAIGVK",
+          "desc": "Infinite Lives",
+          "address": "0x042D"
+        },
+        {
+          "code": "OZXPUZVK",
+          "desc": "Infinite Maverick Missiles",
+          "address": "0x022B"
+        },
+        {
+          "code": "OXKPVGVK",
+          "desc": "Infinite Hawk Bombs",
+          "address": "0x042E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

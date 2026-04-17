@@ -1,0 +1,16 @@
+game_name=Rushing Beat Shura (Japan)
+game_key=rushing_beat_shura_japan
+system=snes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_0801	enemy_defeated	0x7E0801	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0802	enemy_defeated	0x7E0802	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0804	enemy_defeated	0x7E0804	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0805	enemy_defeated	0x7E0805	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0901	enemy_defeated	0x7E0901	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0902	enemy_defeated	0x7E0902	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0904	enemy_defeated	0x7E0904	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0905	enemy_defeated	0x7E0905	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0a01	enemy_defeated	0x7E0A01	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0a02	enemy_defeated	0x7E0A02	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0a04	enemy_defeated	0x7E0A04	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0a05	enemy_defeated	0x7E0A05	1	uint	little	prev > curr	0.65	1	right:0.450:35

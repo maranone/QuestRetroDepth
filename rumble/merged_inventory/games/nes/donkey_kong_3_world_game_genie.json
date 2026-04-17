@@ -1,0 +1,79 @@
+{
+  "system": "nes",
+  "normalized_title": "donkeykong3",
+  "display_name": "Donkey Kong 3 (World) (Game Genie)",
+  "aliases": [
+    "Donkey Kong 3 (World) (Game Genie)",
+    "Donkey Kong 3 (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\donkeykong3_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0085",
+        "0x0090"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DonkeyKong3-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0090",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0085",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Donkey Kong 3 (World).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0092:09",
+          "desc": "Fake Infinite Lives",
+          "address": "0x0092"
+        },
+        {
+          "code": "0090:09",
+          "desc": "Infinite Lives",
+          "address": "0x0090"
+        },
+        {
+          "code": "004E:81",
+          "desc": "Infinite Time",
+          "address": "0x004E"
+        },
+        {
+          "code": "0085:00",
+          "desc": "Score Modifier",
+          "address": "0x0085"
+        },
+        {
+          "code": "0086:00",
+          "desc": "Score Modifier",
+          "address": "0x0086"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

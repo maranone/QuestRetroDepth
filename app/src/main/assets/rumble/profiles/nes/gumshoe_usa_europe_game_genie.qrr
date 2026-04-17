@@ -1,0 +1,10 @@
+game_name=Gumshoe (USA, Europe) (Game Genie)
+game_key=gumshoe_usa_europe_game_genie
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_008f	life_lost	0x008F	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_008f	life_gained	0x008F	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_000b	pickup	0x000B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	life_lost_lives_0038	life_lost	0x0038	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0038	life_gained	0x0038	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_00ee	level_complete	0x00EE	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

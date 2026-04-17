@@ -1,0 +1,52 @@
+{
+  "system": "nes",
+  "normalized_title": "klax",
+  "display_name": "Klax (USA, Japan) (Game Genie)",
+  "aliases": [
+    "Klax (USA, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Klax (USA, Japan) (Game Genie).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "PAVESGLA",
+          "desc": "Start With 0 Drops Allowed",
+          "address": "0x048D"
+        },
+        {
+          "code": "IAVESGLA",
+          "desc": "Start With 5 Drops Allowed",
+          "address": "0x048D"
+        },
+        {
+          "code": "PANENGGA",
+          "desc": "When Starting On Level 6: 0 Drops Allowed",
+          "address": "0x048F"
+        },
+        {
+          "code": "IANENGGA",
+          "desc": "When Starting On Level 6: 5 Drops Allowed",
+          "address": "0x048F"
+        },
+        {
+          "code": "PEOAXGIA",
+          "desc": "When Starting On Level 11: 0 Drops Allowed",
+          "address": "0x040A"
+        },
+        {
+          "code": "LEOAXGIA",
+          "desc": "When Starting On Level 11: 3 Drops Allowed",
+          "address": "0x040A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

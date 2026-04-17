@@ -1,0 +1,8 @@
+game_name=Fortress (USA, Europe) (Code Breaker)
+game_key=fortress_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_0203a72c	score	0x0203A72C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0203a72e	score	0x0203A72E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0203aa64	score	0x0203AA64	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0203aa66	score	0x0203AA66	1	uint	little	prev < curr	0.8	1	right:0.350:60

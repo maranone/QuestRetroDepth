@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "saintseiyaougondensetsukanketsuhen",
+  "display_name": "Saint Seiya - Ougon Densetsu Kanketsu Hen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Saint Seiya - Ougon Densetsu Kanketsu Hen (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "0059:40",
+          "desc": "Infinite Cosmos",
+          "address": "0x0059"
+        },
+        {
+          "code": "005A:40",
+          "desc": "Infinite Cosmos",
+          "address": "0x005A"
+        },
+        {
+          "code": "0063:40",
+          "desc": "Infinite Energy",
+          "address": "0x0063"
+        },
+        {
+          "code": "0064:40",
+          "desc": "Infinite Energy",
+          "address": "0x0064"
+        },
+        {
+          "code": "05AA:40",
+          "desc": "Infinite Seventh Sense",
+          "address": "0x05AA"
+        },
+        {
+          "code": "05AB:40",
+          "desc": "Infinite Seventh Sense",
+          "address": "0x05AB"
+        },
+        {
+          "code": "05CF:20",
+          "desc": "Infinite Energy",
+          "address": "0x05CF"
+        },
+        {
+          "code": "05BC:20",
+          "desc": "Infinite Cosmos",
+          "address": "0x05BC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

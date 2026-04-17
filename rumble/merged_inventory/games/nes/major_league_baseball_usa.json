@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "majorleaguebaseball",
+  "display_name": "Major League Baseball (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Major League Baseball (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0109:00",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x0109"
+        },
+        {
+          "code": "010A:00",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x010A"
+        },
+        {
+          "code": "0105:00",
+          "desc": "Strike Modifier",
+          "address": "0x0105"
+        },
+        {
+          "code": "0104:00",
+          "desc": "Out Modifier",
+          "address": "0x0104"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

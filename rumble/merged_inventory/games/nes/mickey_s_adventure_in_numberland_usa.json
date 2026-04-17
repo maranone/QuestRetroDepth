@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "mickeysadventureinnumberland",
+  "display_name": "Mickey's Adventure in Numberland (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mickey's Adventure in Numberland (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0675:05",
+          "desc": "Infinite Energy",
+          "address": "0x0675"
+        },
+        {
+          "code": "061A:00",
+          "desc": "Level Highlight Modifier",
+          "address": "0x061A"
+        },
+        {
+          "code": "0654:00",
+          "desc": "Red Ball Modifier In Numberland Stages",
+          "address": "0x0654"
+        },
+        {
+          "code": "0655:00",
+          "desc": "White Star Modifier In Numberland Stages",
+          "address": "0x0655"
+        },
+        {
+          "code": "0656:00",
+          "desc": "Total Score In Numberland Stages",
+          "address": "0x0656"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

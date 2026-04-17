@@ -1,0 +1,60 @@
+{
+  "system": "pce",
+  "normalized_title": "monsterprowres",
+  "display_name": "Monster Pro Wres (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Monster Pro Wres (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1f0cbd:55",
+          "desc": "Infinite Energy",
+          "address": "0x1F0CBD"
+        },
+        {
+          "code": "1f0085:32",
+          "desc": "Infinite Stat Points",
+          "address": "0x1F0085"
+        },
+        {
+          "code": "1f0ccd:00",
+          "desc": "CPU/P2 No Energy",
+          "address": "0x1F0CCD"
+        },
+        {
+          "code": "1f0ccc:00",
+          "desc": "CPU/P2 No Stats",
+          "address": "0x1F0CCC"
+        },
+        {
+          "code": "1f0cce:00",
+          "desc": "CPU/P2 No Stats",
+          "address": "0x1F0CCE"
+        },
+        {
+          "code": "1f0ccf:00",
+          "desc": "CPU/P2 No Stats",
+          "address": "0x1F0CCF"
+        },
+        {
+          "code": "1f0c37:00",
+          "desc": "CPU/P2 No Stats",
+          "address": "0x1F0C37"
+        },
+        {
+          "code": "1f0cbc:c8",
+          "desc": "P1 Max ST",
+          "address": "0x1F0CBC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

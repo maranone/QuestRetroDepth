@@ -1,0 +1,145 @@
+{
+  "system": "nes",
+  "normalized_title": "zodasrevengestartropicsii",
+  "display_name": "Zoda's Revenge - StarTropics II (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Zoda's Revenge - StarTropics II (USA).cht",
+      "total_cheat_rows": 46,
+      "raw_entry_count": 25,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "005A:40",
+          "desc": "Invincible Against Enemies",
+          "address": "0x005A"
+        },
+        {
+          "code": "0111:28",
+          "desc": "Have Highest Maximum Health",
+          "address": "0x0111"
+        },
+        {
+          "code": "0111:50",
+          "desc": "Infinite Maximum Health",
+          "address": "0x0111"
+        },
+        {
+          "code": "0120:00",
+          "desc": "Weapon 1",
+          "address": "0x0120"
+        },
+        {
+          "code": "0121:0C",
+          "desc": "Weapon 2",
+          "address": "0x0121"
+        },
+        {
+          "code": "0129:0C",
+          "desc": "Weapon 2",
+          "address": "0x0129"
+        },
+        {
+          "code": "0122:0E",
+          "desc": "Weapon 3",
+          "address": "0x0122"
+        },
+        {
+          "code": "0123:0E",
+          "desc": "Weapon 4",
+          "address": "0x0123"
+        },
+        {
+          "code": "0124:83",
+          "desc": "Dungeon Item 1",
+          "address": "0x0124"
+        },
+        {
+          "code": "0125:83",
+          "desc": "Dungeon Item 2",
+          "address": "0x0125"
+        },
+        {
+          "code": "0126:83",
+          "desc": "Dungeon Item 3",
+          "address": "0x0126"
+        },
+        {
+          "code": "0127:83",
+          "desc": "Dungeon Item 4",
+          "address": "0x0127"
+        },
+        {
+          "code": "KAGEIO",
+          "desc": "Some Rooms Graphics Look Like Others Rooms Graphic",
+          "address": "0x0185"
+        },
+        {
+          "code": "0112:08",
+          "desc": "Infinite Health",
+          "address": "0x0112"
+        },
+        {
+          "code": "0111:09",
+          "desc": "Have All Hearts",
+          "address": "0x0111"
+        },
+        {
+          "code": "0117:09",
+          "desc": "Infinite Lives",
+          "address": "0x0117"
+        },
+        {
+          "code": "011C:09",
+          "desc": "Infinite White Stars",
+          "address": "0x011C"
+        },
+        {
+          "code": "0120:00",
+          "desc": "Item In Slot #1 Modifier",
+          "address": "0x0120"
+        },
+        {
+          "code": "0121:0C",
+          "desc": "Item In Slot #2 Modifier",
+          "address": "0x0121"
+        },
+        {
+          "code": "0122:00",
+          "desc": "Item In Slot #3 Modifier (0E-14)",
+          "address": "0x0122"
+        },
+        {
+          "code": "0123:00",
+          "desc": "Item In Slot #4 Modifier (0E-14)",
+          "address": "0x0123"
+        },
+        {
+          "code": "0124:83",
+          "desc": "Dungeon Item 1",
+          "address": "0x0124"
+        },
+        {
+          "code": "0125:83",
+          "desc": "Dungeon Item 2",
+          "address": "0x0125"
+        },
+        {
+          "code": "0126:83",
+          "desc": "Dungeon Item 3",
+          "address": "0x0126"
+        },
+        {
+          "code": "0127:83",
+          "desc": "Dungeon Item 4",
+          "address": "0x0127"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

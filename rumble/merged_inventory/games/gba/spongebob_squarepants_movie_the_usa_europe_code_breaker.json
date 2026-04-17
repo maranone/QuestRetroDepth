@@ -1,0 +1,138 @@
+{
+  "system": "gba",
+  "normalized_title": "spongebobsquarepantsmovie",
+  "display_name": "SpongeBob SquarePants Movie, The (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\SpongeBob SquarePants Movie, The (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 11,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "10008440",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02008440"
+        },
+        {
+          "code": "830071C8",
+          "desc": "Invincibility",
+          "address": "0x020071C8"
+        },
+        {
+          "code": "8300704C",
+          "desc": "Infinite Time",
+          "address": "0x0200704C"
+        },
+        {
+          "code": "33006FC8",
+          "desc": "Infinite Tin Cans",
+          "address": "0x02006FC8"
+        },
+        {
+          "code": "830070AC",
+          "desc": "999 Shells",
+          "address": "0x020070AC"
+        },
+        {
+          "code": "730038A8",
+          "desc": "Infinite Time (Bonus Levels)",
+          "address": "0x020038A8"
+        },
+        {
+          "code": "830038A8",
+          "desc": "Infinite Time (Bonus Levels)",
+          "address": "0x020038A8"
+        },
+        {
+          "code": "33001444",
+          "desc": "Infinite Lives",
+          "address": "0x02001444"
+        },
+        {
+          "code": "73003970",
+          "desc": "Infinite Time (In Race)",
+          "address": "0x02003970"
+        },
+        {
+          "code": "83003970",
+          "desc": "Infinite Time (In Race)",
+          "address": "0x02003970"
+        },
+        {
+          "code": "43007594",
+          "desc": "Have All Levels Open",
+          "address": "0x02007594"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\SpongeBob SquarePants Movie, The (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 11,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "10008440",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02008440"
+        },
+        {
+          "code": "830071C8",
+          "desc": "Invincibility",
+          "address": "0x020071C8"
+        },
+        {
+          "code": "8300704C",
+          "desc": "Infinite Time",
+          "address": "0x0200704C"
+        },
+        {
+          "code": "33006FC8",
+          "desc": "Infinite Tin Cans",
+          "address": "0x02006FC8"
+        },
+        {
+          "code": "830070AC",
+          "desc": "999 Shells",
+          "address": "0x020070AC"
+        },
+        {
+          "code": "730038A8",
+          "desc": "Infinite Time (Bonus Levels)",
+          "address": "0x020038A8"
+        },
+        {
+          "code": "830038A8",
+          "desc": "Infinite Time (Bonus Levels)",
+          "address": "0x020038A8"
+        },
+        {
+          "code": "33001444",
+          "desc": "Infinite Lives",
+          "address": "0x02001444"
+        },
+        {
+          "code": "73003970",
+          "desc": "Infinite Time (In Race)",
+          "address": "0x02003970"
+        },
+        {
+          "code": "83003970",
+          "desc": "Infinite Time (In Race)",
+          "address": "0x02003970"
+        },
+        {
+          "code": "43007594",
+          "desc": "Have All Levels Open",
+          "address": "0x02007594"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

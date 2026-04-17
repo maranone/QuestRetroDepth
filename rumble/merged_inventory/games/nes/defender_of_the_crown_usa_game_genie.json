@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "defenderofcrown",
+  "display_name": "Defender of the Crown (USA) (Game Genie)",
+  "aliases": [
+    "Defender of the Crown (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Defender of the Crown (USA).cht",
+      "total_cheat_rows": 55,
+      "raw_entry_count": 53,
+      "distinct_address_count": 27,
+      "sample_raw_entries": [
+        {
+          "code": "05D7:FF",
+          "desc": "Infinite Money",
+          "address": "0x05D7"
+        },
+        {
+          "code": "0647:32",
+          "desc": "Infinite Catapult Boulders",
+          "address": "0x0647"
+        },
+        {
+          "code": "0645:32",
+          "desc": "Infinite Catapult Greek Fire",
+          "address": "0x0645"
+        },
+        {
+          "code": "0511:0E",
+          "desc": "Great Mace Power",
+          "address": "0x0511"
+        },
+        {
+          "code": "067F:3C",
+          "desc": "Great Siege Defense / Battle Power",
+          "address": "0x067F"
+        },
+        {
+          "code": "0593:FF",
+          "desc": "255 Soldiers Army",
+          "address": "0x0593"
+        },
+        {
+          "code": "0555:FF",
+          "desc": "255 Soldiers Garrison",
+          "address": "0x0555"
+        },
+        {
+          "code": "0599:FF",
+          "desc": "255 Knights Army",
+          "address": "0x0599"
+        },
+        {
+          "code": "0568:FF",
+          "desc": "255 Knights Garrison",
+          "address": "0x0568"
+        },
+        {
+          "code": "059F:FF",
+          "desc": "255 Catapults Army",
+          "address": "0x059F"
+        },
+        {
+          "code": "057B:FF",
+          "desc": "255 Catapults Garrison",
+          "address": "0x057B"
+        },
+        {
+          "code": "00CB:06",
+          "desc": "Infinite Catapult Shots",
+          "address": "0x00CB"
+        },
+        {
+          "code": "AAEOKOAA",
+          "desc": "Knights Cost Nothing",
+          "address": "0x018C"
+        },
+        {
+          "code": "AAEOSOYA",
+          "desc": "Catapults Cost Nothing",
+          "address": "0x018D"
+        },
+        {
+          "code": "AAEOVPGP",
+          "desc": "Castles Cost Nothing",
+          "address": "0x018E"
+        },
+        {
+          "code": "AAEOUPPA",
+          "desc": "Soldiers for free",
+          "address": "0x018B"
+        },
+        {
+          "code": "LAEOUPPA",
+          "desc": "Triple the cost of soldiers",
+          "address": "0x018B"
+        },
+        {
+          "code": "GAEOKOAA",
+          "desc": "Halve the cost of knights",
+          "address": "0x018C"
+        },
+        {
+          "code": "APEOKOAA",
+          "desc": "Double the cost of knights",
+          "address": "0x019C"
+        },
+        {
+          "code": "YAEOSOYA",
+          "desc": "Halve the cost of catapults",
+          "address": "0x018D"
+        },
+        {
+          "code": "ZAEOVPGO",
+          "desc": "Halve the cost of castles",
+          "address": "0x018E"
+        },
+        {
+          "code": "05D7:55",
+          "desc": "Infinite Money (Always 255)",
+          "address": "0x05D7"
+        },
+        {
+          "code": "0647:50",
+          "desc": "Infinite Catapult Boulders",
+          "address": "0x0647"
+        },
+        {
+          "code": "0645:50",
+          "desc": "Infinite Catapult Greek Fire",
+          "address": "0x0645"
+        },
+        {
+          "code": "0646:50",
+          "desc": "Infinite Catapult Disease",
+          "address": "0x0646"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

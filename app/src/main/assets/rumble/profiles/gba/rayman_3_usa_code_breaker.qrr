@@ -1,0 +1,6 @@
+game_name=Rayman 3 (USA) (Code Breaker)
+game_key=rayman_3_usa_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_0203fff6	life_lost	0x0203FFF6	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0203fff6	life_gained	0x0203FFF6	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

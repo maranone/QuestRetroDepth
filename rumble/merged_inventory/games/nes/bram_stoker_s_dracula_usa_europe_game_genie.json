@@ -1,0 +1,53 @@
+{
+  "system": "nes",
+  "normalized_title": "bramstokersdracula",
+  "display_name": "Bram Stoker's Dracula (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Bram Stoker's Dracula (USA)",
+    "Bram Stoker's Dracula (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\bramstokersdracula_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x02BC",
+        "0x0566"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BramStokersDracula-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x02BC",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0566",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bram Stoker's Dracula (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

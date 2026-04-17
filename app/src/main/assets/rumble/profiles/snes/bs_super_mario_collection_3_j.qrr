@@ -1,0 +1,5 @@
+game_name=BS Super Mario Collection 3 (J)
+game_key=bs_super_mario_collection_3_j
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_1da2	pickup	0x7E1DA2	1	uint	little	prev != curr	0.8	1	right:0.250:18

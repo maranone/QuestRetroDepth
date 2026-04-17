@@ -1,0 +1,10 @@
+game_name=Frogger (USA)
+game_key=frogger_usa
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_183d	life_lost	0x7E183D	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_183d	life_gained	0x7E183D	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_183b	level_complete	0x7E183B	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	score_score_1841	score	0x7E1841	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_1840	score	0x7E1840	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_183f	score	0x7E183F	1	uint	little	prev < curr	0.8	1	right:0.350:60

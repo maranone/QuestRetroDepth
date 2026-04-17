@@ -1,0 +1,8 @@
+game_name=Solstice - The Quest for the Staff of Demnos (USA)
+game_key=solstice_the_quest_for_the_staff_of_demnos_usa
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_02ad	life_lost	0x02AD	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02ad	life_gained	0x02AD	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_0789	life_lost	0x0789	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0789	life_gained	0x0789	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

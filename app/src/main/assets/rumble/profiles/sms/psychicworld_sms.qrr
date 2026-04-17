@@ -1,0 +1,13 @@
+game_name=Psychic World (Europe) (Action Replay)
+game_key=PsychicWorld-Sms
+system=sms
+integration_tier=stable
+trigger	damage_taken_health_df11	damage_taken	0xDF11	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_df11	death	0xDF11	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score0_c133	score	0xC133	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_c134	score	0xC134	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_c135	score	0xC135	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score3_c136	score	0xC136	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score4_c137	score	0xC137	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score5_c138	score	0xC138	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score6_c139	score	0xC139	1	uint	native	prev < curr	0.8	1	right:0.350:60

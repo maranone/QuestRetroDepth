@@ -1,0 +1,90 @@
+{
+  "system": "nes",
+  "normalized_title": "ninjarahoi",
+  "display_name": "Ninjara Hoi! (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ninjara Hoi! (Japan).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "005B:FF",
+          "desc": "Infinite Money",
+          "address": "0x005B"
+        },
+        {
+          "code": "005C:FF",
+          "desc": "Infinite Money",
+          "address": "0x005C"
+        },
+        {
+          "code": "6076:FF",
+          "desc": "Infinite Health",
+          "address": "0x6076"
+        },
+        {
+          "code": "6153:FF",
+          "desc": "Max Exp/Quick Level Up",
+          "address": "0x6153"
+        },
+        {
+          "code": "6071:FF",
+          "desc": "Infinite Magic",
+          "address": "0x6071"
+        },
+        {
+          "code": "6086:FF",
+          "desc": "Infinite Health",
+          "address": "0x6086"
+        },
+        {
+          "code": "6154:FF",
+          "desc": "Max Exp/Quick Level Up",
+          "address": "0x6154"
+        },
+        {
+          "code": "6096:FF",
+          "desc": "Infinite Health",
+          "address": "0x6096"
+        },
+        {
+          "code": "6155:FF",
+          "desc": "Max Exp/Quick Level Up",
+          "address": "0x6155"
+        },
+        {
+          "code": "6094:FF",
+          "desc": "Infinite Magic",
+          "address": "0x6094"
+        },
+        {
+          "code": "6011:FF",
+          "desc": "Have All Spells",
+          "address": "0x6011"
+        },
+        {
+          "code": "782B:01",
+          "desc": "Enemies Don't Fight Back",
+          "address": "0x782B"
+        },
+        {
+          "code": "009E:1A",
+          "desc": "No Random Battles",
+          "address": "0x009E"
+        },
+        {
+          "code": "7874:00",
+          "desc": "Kill Final Boss In 1 Hit",
+          "address": "0x7874"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

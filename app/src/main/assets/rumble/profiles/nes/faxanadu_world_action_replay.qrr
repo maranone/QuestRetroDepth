@@ -1,0 +1,7 @@
+game_name=Faxanadu (World) (Action Replay)
+game_key=faxanadu_world_action_replay
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_0589	pickup	0x0589	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0599	pickup	0x0599	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_05f9	pickup	0x05F9	1	uint	little	prev != curr	0.8	1	right:0.250:18

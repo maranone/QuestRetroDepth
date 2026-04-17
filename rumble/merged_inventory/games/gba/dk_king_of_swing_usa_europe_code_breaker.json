@@ -1,0 +1,138 @@
+{
+  "system": "gba",
+  "normalized_title": "dkkingofswing",
+  "display_name": "DK - King of Swing (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\DK - King of Swing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "02022004",
+          "desc": "Joker (0000 Type)",
+          "address": "0x02022004"
+        },
+        {
+          "code": "03000040",
+          "desc": "Joker (0000 Type)",
+          "address": "0x02000040"
+        },
+        {
+          "code": "03000044",
+          "desc": "Joker (0000 Type)",
+          "address": "0x02000044"
+        },
+        {
+          "code": "03000060",
+          "desc": "Joker (0000 Type)",
+          "address": "0x02000060"
+        },
+        {
+          "code": "03000064",
+          "desc": "Joker (0000 Type)",
+          "address": "0x02000064"
+        },
+        {
+          "code": "03000100",
+          "desc": "Joker (0000 Type)",
+          "address": "0x02000100"
+        },
+        {
+          "code": "0300036C",
+          "desc": "Joker (0000 Type)",
+          "address": "0x0200036C"
+        },
+        {
+          "code": "03000046",
+          "desc": "Joker (FFFF Type)",
+          "address": "0x02000046"
+        },
+        {
+          "code": "3300002C",
+          "desc": "Infinite Health",
+          "address": "0x0200002C"
+        },
+        {
+          "code": "83000030",
+          "desc": "Infinite/Max Bannanas",
+          "address": "0x02000030"
+        },
+        {
+          "code": "3300014E",
+          "desc": "Player Modifier (Story)",
+          "address": "0x0200014E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\DK - King of Swing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "02022004",
+          "desc": "Joker (0000 Type)",
+          "address": "0x02022004"
+        },
+        {
+          "code": "03000040",
+          "desc": "Joker (0000 Type)",
+          "address": "0x02000040"
+        },
+        {
+          "code": "03000044",
+          "desc": "Joker (0000 Type)",
+          "address": "0x02000044"
+        },
+        {
+          "code": "03000060",
+          "desc": "Joker (0000 Type)",
+          "address": "0x02000060"
+        },
+        {
+          "code": "03000064",
+          "desc": "Joker (0000 Type)",
+          "address": "0x02000064"
+        },
+        {
+          "code": "03000100",
+          "desc": "Joker (0000 Type)",
+          "address": "0x02000100"
+        },
+        {
+          "code": "0300036C",
+          "desc": "Joker (0000 Type)",
+          "address": "0x0200036C"
+        },
+        {
+          "code": "03000046",
+          "desc": "Joker (FFFF Type)",
+          "address": "0x02000046"
+        },
+        {
+          "code": "3300002C",
+          "desc": "Infinite Health",
+          "address": "0x0200002C"
+        },
+        {
+          "code": "83000030",
+          "desc": "Infinite/Max Bannanas",
+          "address": "0x02000030"
+        },
+        {
+          "code": "3300014E",
+          "desc": "Player Modifier (Story)",
+          "address": "0x0200014E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

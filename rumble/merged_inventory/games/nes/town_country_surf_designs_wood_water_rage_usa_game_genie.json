@@ -1,0 +1,77 @@
+{
+  "system": "nes",
+  "normalized_title": "towncountrysurfdesignswoodwaterrage",
+  "display_name": "Town _ Country Surf Designs - Wood _ Water Rage (USA) (Game Genie)",
+  "aliases": [
+    "Town _ Country Surf Designs - Wood _ Water Rage (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Town _ Country Surf Designs - Wood _ Water Rage (USA).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 11,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "SUPAXX",
+          "desc": "The Skate Courses Are Screwed Up",
+          "address": "0x0232"
+        },
+        {
+          "code": "OOPAXX",
+          "desc": "Never Ending Skate Course",
+          "address": "0x0212"
+        },
+        {
+          "code": "POPAXX",
+          "desc": "Totally Messed Up Skate Course",
+          "address": "0x0212"
+        },
+        {
+          "code": "0047:04",
+          "desc": "Infinite Lives",
+          "address": "0x0047"
+        },
+        {
+          "code": "0037:09",
+          "desc": "Infinite Time",
+          "address": "0x0037"
+        },
+        {
+          "code": "LESPGZPA",
+          "desc": "Increase Time",
+          "address": "0x020C"
+        },
+        {
+          "code": "0047:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x0047"
+        },
+        {
+          "code": "0038:09",
+          "desc": "Infinite Time (Micro-Seconds)",
+          "address": "0x0038"
+        },
+        {
+          "code": "0037:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x0037"
+        },
+        {
+          "code": "0036:09",
+          "desc": "Infinite Time (Ten's Digit)",
+          "address": "0x0036"
+        },
+        {
+          "code": "0035:09",
+          "desc": "Infinite Time (Minutes Digit)",
+          "address": "0x0035"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

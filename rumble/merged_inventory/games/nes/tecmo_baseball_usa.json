@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "tecmobaseball",
+  "display_name": "Tecmo Baseball (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tecmo Baseball (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0347:00",
+          "desc": "P1 Score Modifier",
+          "address": "0x0347"
+        },
+        {
+          "code": "0348:00",
+          "desc": "P2/CPU Score Modifier",
+          "address": "0x0348"
+        },
+        {
+          "code": "0320:00",
+          "desc": "Balls Modifier",
+          "address": "0x0320"
+        },
+        {
+          "code": "0321:00",
+          "desc": "Strikes Modifier",
+          "address": "0x0321"
+        },
+        {
+          "code": "0322:00",
+          "desc": "Outs Modifier",
+          "address": "0x0322"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

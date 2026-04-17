@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "metroidzeromission",
+  "display_name": "Metroid - Zero Mission (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Metroid - Zero Mission (World) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10000968",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000968"
+        },
+        {
+          "code": "3203809D",
+          "desc": "Area Modifier",
+          "address": "0x0203809D"
+        },
+        {
+          "code": "3203809F",
+          "desc": "Room Modifier",
+          "address": "0x0203809F"
+        },
+        {
+          "code": "2300153E",
+          "desc": "Have Morph Ball",
+          "address": "0x0200153E"
+        },
+        {
+          "code": "83001538",
+          "desc": "Infinite Missiles",
+          "address": "0x02001538"
+        },
+        {
+          "code": "3300153A",
+          "desc": "Infinite Super Missiles",
+          "address": "0x0200153A"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Metroid - Zero Mission (World) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10000968",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000968"
+        },
+        {
+          "code": "3203809D",
+          "desc": "Area Modifier",
+          "address": "0x0203809D"
+        },
+        {
+          "code": "3203809F",
+          "desc": "Room Modifier",
+          "address": "0x0203809F"
+        },
+        {
+          "code": "2300153E",
+          "desc": "Have Morph Ball",
+          "address": "0x0200153E"
+        },
+        {
+          "code": "83001538",
+          "desc": "Infinite Missiles",
+          "address": "0x02001538"
+        },
+        {
+          "code": "3300153A",
+          "desc": "Infinite Super Missiles",
+          "address": "0x0200153A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

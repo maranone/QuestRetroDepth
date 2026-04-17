@@ -1,0 +1,18 @@
+game_name=Doraemon - Giga Zombie no Gyakushuu (Japan)
+game_key=doraemon_giga_zombie_no_gyakushuu_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_002b	damage_taken	0x002B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_002b	death	0x002B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0790	pickup	0x0790	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0791	pickup	0x0791	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_0718	damage_taken	0x0718	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0718	death	0x0718	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_071a	damage_taken	0x071A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_071a	death	0x071A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_071c	damage_taken	0x071C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_071c	death	0x071C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_071e	damage_taken	0x071E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_071e	death	0x071E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_0079	enemy_defeated	0x0079	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0082	enemy_defeated	0x0082	1	uint	little	prev > curr	0.65	1	right:0.450:35

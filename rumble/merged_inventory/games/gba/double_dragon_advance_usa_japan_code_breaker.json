@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "doubledragonadvance",
+  "display_name": "Double Dragon Advance (USA, Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Double Dragon Advance (USA, Japan) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1001C480",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0201C480"
+        },
+        {
+          "code": "1001C480",
+          "desc": "Alternate Master Code - SMSH",
+          "address": "0x0201C480"
+        },
+        {
+          "code": "3200170E",
+          "desc": "Infinite Time",
+          "address": "0x0200170E"
+        },
+        {
+          "code": "32037BC2",
+          "desc": "Infinite Health",
+          "address": "0x02037BC2"
+        },
+        {
+          "code": "320016AD",
+          "desc": "Infinite Lives",
+          "address": "0x020016AD"
+        },
+        {
+          "code": "32037BBE",
+          "desc": "Invinciblity",
+          "address": "0x02037BBE"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select To Rise To Ceiling",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32037C06",
+          "desc": "Press Select To Rise To Ceiling",
+          "address": "0x02037C06"
+        },
+        {
+          "code": "320016A5",
+          "desc": "Infinite Credits-Single Player Modes (Alternate Code)",
+          "address": "0x020016A5"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Double Dragon Advance (USA, Japan) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1001C480",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0201C480"
+        },
+        {
+          "code": "1001C480",
+          "desc": "Alternate Master Code - SMSH",
+          "address": "0x0201C480"
+        },
+        {
+          "code": "3200170E",
+          "desc": "Infinite Time",
+          "address": "0x0200170E"
+        },
+        {
+          "code": "32037BC2",
+          "desc": "Infinite Health",
+          "address": "0x02037BC2"
+        },
+        {
+          "code": "320016AD",
+          "desc": "Infinite Lives",
+          "address": "0x020016AD"
+        },
+        {
+          "code": "32037BBE",
+          "desc": "Invinciblity",
+          "address": "0x02037BBE"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select To Rise To Ceiling",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32037C06",
+          "desc": "Press Select To Rise To Ceiling",
+          "address": "0x02037C06"
+        },
+        {
+          "code": "320016A5",
+          "desc": "Infinite Credits-Single Player Modes (Alternate Code)",
+          "address": "0x020016A5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

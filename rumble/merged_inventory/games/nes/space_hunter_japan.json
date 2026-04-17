@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "spacehunter",
+  "display_name": "Space Hunter (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Space Hunter (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "063E:04",
+          "desc": "Infinite Energy",
+          "address": "0x063E"
+        },
+        {
+          "code": "00CC:FF",
+          "desc": "Infinite Power",
+          "address": "0x00CC"
+        },
+        {
+          "code": "0741:34",
+          "desc": "Infinite Escape Time",
+          "address": "0x0741"
+        },
+        {
+          "code": "063E:06",
+          "desc": "Infinite Health",
+          "address": "0x063E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

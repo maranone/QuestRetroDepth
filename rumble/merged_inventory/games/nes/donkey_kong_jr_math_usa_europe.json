@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "donkeykongjrmath",
+  "display_name": "Donkey Kong Jr. Math (USA, Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Donkey Kong Jr. Math (USA, Europe).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "033C:00",
+          "desc": "First Number Modifier",
+          "address": "0x033C"
+        },
+        {
+          "code": "0340:00",
+          "desc": "Second Number Modifier",
+          "address": "0x0340"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

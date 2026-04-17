@@ -1,0 +1,95 @@
+{
+  "system": "nes",
+  "normalized_title": "kamenriderclub",
+  "display_name": "Kamen Rider Club (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kamen Rider Club (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 15,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "011D:5A",
+          "desc": "Player 1 Health",
+          "address": "0x011D"
+        },
+        {
+          "code": "011F:FF",
+          "desc": "Player 1 Max Experience",
+          "address": "0x011F"
+        },
+        {
+          "code": "0125:5A",
+          "desc": "Player 2 Health",
+          "address": "0x0125"
+        },
+        {
+          "code": "0127:FF",
+          "desc": "Player 2 Max Experience",
+          "address": "0x0127"
+        },
+        {
+          "code": "012D:5A",
+          "desc": "Player 3 Health",
+          "address": "0x012D"
+        },
+        {
+          "code": "012F:FF",
+          "desc": "Player 3 Max Experience",
+          "address": "0x012F"
+        },
+        {
+          "code": "00A8:00",
+          "desc": "Instantly Kill Enemies",
+          "address": "0x00A8"
+        },
+        {
+          "code": "00B0:00",
+          "desc": "Instantly Kill Enemies",
+          "address": "0x00B0"
+        },
+        {
+          "code": "00B2:00",
+          "desc": "Instantly Kill Enemies",
+          "address": "0x00B2"
+        },
+        {
+          "code": "014B:FF",
+          "desc": "Maximum Gold",
+          "address": "0x014B"
+        },
+        {
+          "code": "014C:FF",
+          "desc": "Maximum Gold",
+          "address": "0x014C"
+        },
+        {
+          "code": "014D:FF",
+          "desc": "Maximum Gold",
+          "address": "0x014D"
+        },
+        {
+          "code": "0302:00",
+          "desc": "Move Horizontal Axis",
+          "address": "0x0302"
+        },
+        {
+          "code": "0304:00",
+          "desc": "Move Vertical Axis",
+          "address": "0x0304"
+        },
+        {
+          "code": "04FC:01",
+          "desc": "Boss Doors Auto Open",
+          "address": "0x04FC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

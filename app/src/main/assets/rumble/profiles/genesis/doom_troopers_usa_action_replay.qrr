@@ -1,0 +1,12 @@
+game_name=Doom Troopers (USA) (Action Replay)
+game_key=doom_troopers_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff06be	damage_taken	0xFF06BE	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff06be	death	0xFF06BE	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ff0066	life_lost	0xFF0066	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff0066	life_gained	0xFF0066	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_ff076c	damage_taken	0xFF076C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff076c	death	0xFF076C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ff008c	life_lost	0xFF008C	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff008c	life_gained	0xFF008C	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

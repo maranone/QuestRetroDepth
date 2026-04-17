@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "addamsfamilyunclefestersquest",
+  "display_name": "Addams Family, The - Uncle Fester's Quest (USA) (Beta)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Addams Family, The - Uncle Fester's Quest (USA) (Beta).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "04E5:09",
+          "desc": "Unlimited Health",
+          "address": "0x04E5"
+        },
+        {
+          "code": "04E9:09",
+          "desc": "Unlimited Health",
+          "address": "0x04E9"
+        },
+        {
+          "code": "04F8:B0",
+          "desc": "Invincible",
+          "address": "0x04F8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

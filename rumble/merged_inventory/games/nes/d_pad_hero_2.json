@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "dpadhero2",
+  "display_name": "D+pad Hero 2",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\D+pad Hero 2.cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "LVOAYIZA",
+          "desc": "Start With 99 Credits Expert",
+          "address": "0x056F"
+        },
+        {
+          "code": "LVOATIGA",
+          "desc": "Start With 99 Credits Normal",
+          "address": "0x056E"
+        },
+        {
+          "code": "LVOAISAA",
+          "desc": "Start With 99 Credits Beginner",
+          "address": "0x056D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

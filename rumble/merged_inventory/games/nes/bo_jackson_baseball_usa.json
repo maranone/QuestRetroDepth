@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "bojacksonbaseball",
+  "display_name": "Bo Jackson Baseball (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bo Jackson Baseball (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "041B:00",
+          "desc": "P1 Score Modifier",
+          "address": "0x041B"
+        },
+        {
+          "code": "041C:00",
+          "desc": "P2/CPU Never Scores",
+          "address": "0x041C"
+        },
+        {
+          "code": "6C1D:01",
+          "desc": "Batter Gets Hit By Ball (i.e. Auto-Walk)",
+          "address": "0x6C1D"
+        },
+        {
+          "code": "6C18:00",
+          "desc": "Outs Modifier (Ignore The HUD - Read Note)",
+          "address": "0x6C18"
+        },
+        {
+          "code": "6C1A:00",
+          "desc": "Balls Modifier",
+          "address": "0x6C1A"
+        },
+        {
+          "code": "6C1B:00",
+          "desc": "Strikes Modifier",
+          "address": "0x6C1B"
+        },
+        {
+          "code": "6C1C:00",
+          "desc": "Inning Modifier",
+          "address": "0x6C1C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -2,5 +2,5 @@
 # game_name=MickeyMouseCastleOfIllusi
 # match_names=mickeymousecastleofillusi|mickeymousecastleofillusigenesis
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-score_0_f2ea,0xFFF2EA,1,uint,prev_lt_curr,,left,0.300,normal,0,80,50,10,
-life_lost_3_f324,0xFFF324,1,uint,prev_gt_curr,,left,0.630,normal,0,250,160,80,
+score_0_f2ea,0xFFF2EA,1,uint,prev_lt_curr,,left,0.35,burst,0,80,15,10,
+life_lost_3_f324,0xFFF324,1,uint,prev_gt_curr,,left,0.92,fade_in_out,0,250,250,80,

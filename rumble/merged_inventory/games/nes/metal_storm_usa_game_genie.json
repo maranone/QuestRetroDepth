@@ -1,0 +1,197 @@
+{
+  "system": "nes",
+  "normalized_title": "metalstorm",
+  "display_name": "Metal Storm (USA) (Game Genie)",
+  "aliases": [
+    "Metal Storm (USA) (Game Genie)",
+    "Metal Storm (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\metalstorm_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0043",
+        "0x0716"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MetalStorm-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0716",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0043",
+          "type": "<n6"
+        },
+        {
+          "name": "time",
+          "address": "0x0054",
+          "type": "<n3"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Metal Storm (USA).cht",
+      "total_cheat_rows": 47,
+      "raw_entry_count": 64,
+      "distinct_address_count": 45,
+      "sample_raw_entries": [
+        {
+          "code": "0716:09",
+          "desc": "Infinite Lives",
+          "address": "0x0716"
+        },
+        {
+          "code": "0056:00",
+          "desc": "Infinite Time [Left Digit]",
+          "address": "0x0056"
+        },
+        {
+          "code": "0055:00",
+          "desc": "Infinite Time [Middle Digit]",
+          "address": "0x0055"
+        },
+        {
+          "code": "0054:00",
+          "desc": "Infinite Time [Right Digit]",
+          "address": "0x0054"
+        },
+        {
+          "code": "0034:00",
+          "desc": "Invincible",
+          "address": "0x0034"
+        },
+        {
+          "code": "0648:00",
+          "desc": "Invincible",
+          "address": "0x0648"
+        },
+        {
+          "code": "0528:30",
+          "desc": "Have Armor Upgrade",
+          "address": "0x0528"
+        },
+        {
+          "code": "05D0:80",
+          "desc": "Have Armor Upgrade",
+          "address": "0x05D0"
+        },
+        {
+          "code": "043C:80",
+          "desc": "Have Gravity Fireball",
+          "address": "0x043C"
+        },
+        {
+          "code": "0718:80",
+          "desc": "Have Plasma Beam Gun Upgrade",
+          "address": "0x0718"
+        },
+        {
+          "code": "0717:80",
+          "desc": "Have Shield Force",
+          "address": "0x0717"
+        },
+        {
+          "code": "AASOYYPA",
+          "desc": "Infinite lives",
+          "address": "0x078F"
+        },
+        {
+          "code": "0051:00",
+          "desc": "Level Modifier",
+          "address": "0x0051"
+        },
+        {
+          "code": "06F0:00",
+          "desc": "Boss 1 Hit Kill",
+          "address": "0x06F0"
+        },
+        {
+          "code": "05E3:00",
+          "desc": "Bosses 1 Hit Kill",
+          "address": "0x05E3"
+        },
+        {
+          "code": "05E4:00",
+          "desc": "Bosses 1 Hit Kill",
+          "address": "0x05E4"
+        },
+        {
+          "code": "05E5:00",
+          "desc": "Bosses 1 Hit Kill",
+          "address": "0x05E5"
+        },
+        {
+          "code": "05E6:00",
+          "desc": "Bosses 1 Hit Kill",
+          "address": "0x05E6"
+        },
+        {
+          "code": "05E7:00",
+          "desc": "Bosses 1 Hit Kill",
+          "address": "0x05E7"
+        },
+        {
+          "code": "074B:25",
+          "desc": "Walk Through Enemies",
+          "address": "0x074B"
+        },
+        {
+          "code": "0056:00",
+          "desc": "Infinite Time (Left Digit)",
+          "address": "0x0056"
+        },
+        {
+          "code": "0055:00",
+          "desc": "Infinite Time (Middle Digit)",
+          "address": "0x0055"
+        },
+        {
+          "code": "0054:00",
+          "desc": "Infinite Time (Right Digit)",
+          "address": "0x0054"
+        },
+        {
+          "code": "0528:48",
+          "desc": "Have Armor Upgrade",
+          "address": "0x0528"
+        },
+        {
+          "code": "05D0:28",
+          "desc": "Have Armor Upgrade",
+          "address": "0x05D0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Metal Storm (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "AASOYYPA",
+          "desc": "Infinite Lives",
+          "address": "0x078F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

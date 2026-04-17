@@ -1,0 +1,13 @@
+game_name=Joe _ Mac 3 - Lost in the Tropics (Europe) (Action Replay)
+game_key=joe_mac_3_lost_in_the_tropics_europe_action_replay
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_0b42	damage_taken	0x7E0B42	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0b42	death	0x7E0B42	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_16dc	pickup	0x7E16DC	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_16dd	pickup	0x7E16DD	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_0237	enemy_defeated	0x7E0237	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	life_lost_lives_0233	life_lost	0x7E0233	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0233	life_gained	0x7E0233	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_022e	pickup	0x7E022E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	score_score_0cb2	score	0x7E0CB2	1	uint	little	prev < curr	0.8	1	right:0.350:60

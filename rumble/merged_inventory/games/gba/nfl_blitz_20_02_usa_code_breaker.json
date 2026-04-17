@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "nflblitz2002",
+  "display_name": "NFL Blitz 20-02 (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\NFL Blitz 20-02 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10000834",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000834"
+        },
+        {
+          "code": "83001840",
+          "desc": "Team 1 Scores 100",
+          "address": "0x02001840"
+        },
+        {
+          "code": "83001840",
+          "desc": "Team 1 Scores 0",
+          "address": "0x02001840"
+        },
+        {
+          "code": "8300187C",
+          "desc": "Team 2 Scores 100",
+          "address": "0x0200187C"
+        },
+        {
+          "code": "8300187C",
+          "desc": "Team 2 Scores 0",
+          "address": "0x0200187C"
+        },
+        {
+          "code": "83001820",
+          "desc": "Always 1st Down",
+          "address": "0x02001820"
+        },
+        {
+          "code": "83001820",
+          "desc": "Always 4th Down",
+          "address": "0x02001820"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\NFL Blitz 20-02 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10000834",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000834"
+        },
+        {
+          "code": "83001840",
+          "desc": "Team 1 Scores 100",
+          "address": "0x02001840"
+        },
+        {
+          "code": "83001840",
+          "desc": "Team 1 Scores 0",
+          "address": "0x02001840"
+        },
+        {
+          "code": "8300187C",
+          "desc": "Team 2 Scores 100",
+          "address": "0x0200187C"
+        },
+        {
+          "code": "8300187C",
+          "desc": "Team 2 Scores 0",
+          "address": "0x0200187C"
+        },
+        {
+          "code": "83001820",
+          "desc": "Always 1st Down",
+          "address": "0x02001820"
+        },
+        {
+          "code": "83001820",
+          "desc": "Always 4th Down",
+          "address": "0x02001820"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

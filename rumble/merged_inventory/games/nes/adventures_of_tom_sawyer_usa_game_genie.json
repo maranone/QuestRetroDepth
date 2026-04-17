@@ -1,0 +1,127 @@
+{
+  "system": "nes",
+  "normalized_title": "adventuresoftomsawyer",
+  "display_name": "Adventures of Tom Sawyer (USA) (Game Genie)",
+  "aliases": [
+    "Adventures of Tom Sawyer (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Adventures of Tom Sawyer (USA).cht",
+      "total_cheat_rows": 49,
+      "raw_entry_count": 21,
+      "distinct_address_count": 20,
+      "sample_raw_entries": [
+        {
+          "code": "00D4:09",
+          "desc": "Infinite Gold",
+          "address": "0x00D4"
+        },
+        {
+          "code": "00DA:09",
+          "desc": "Maximum Experience",
+          "address": "0x00DA"
+        },
+        {
+          "code": "00C0:E7",
+          "desc": "Infinite HP",
+          "address": "0x00C0"
+        },
+        {
+          "code": "00C1:03",
+          "desc": "Infinite HP",
+          "address": "0x00C1"
+        },
+        {
+          "code": "00C2:E7",
+          "desc": "Infinite MP",
+          "address": "0x00C2"
+        },
+        {
+          "code": "00C3:09",
+          "desc": "Infinite MP",
+          "address": "0x00C3"
+        },
+        {
+          "code": "0160:00",
+          "desc": "Item Slot 1",
+          "address": "0x0160"
+        },
+        {
+          "code": "0162:00",
+          "desc": "Item Slot 2",
+          "address": "0x0162"
+        },
+        {
+          "code": "0164:00",
+          "desc": "Item Slot 3",
+          "address": "0x0164"
+        },
+        {
+          "code": "0166:00",
+          "desc": "Item Slot 4",
+          "address": "0x0166"
+        },
+        {
+          "code": "0168:00",
+          "desc": "Item Slot 5",
+          "address": "0x0168"
+        },
+        {
+          "code": "016A:00",
+          "desc": "Item Slot 6",
+          "address": "0x016A"
+        },
+        {
+          "code": "016C:00",
+          "desc": "Item Slot 7",
+          "address": "0x016C"
+        },
+        {
+          "code": "016E:00",
+          "desc": "Item Slot 8",
+          "address": "0x016E"
+        },
+        {
+          "code": "00B0:03",
+          "desc": "Infinite Lives",
+          "address": "0x00B0"
+        },
+        {
+          "code": "021D:30",
+          "desc": "Infinite Time",
+          "address": "0x021D"
+        },
+        {
+          "code": "00B1:63",
+          "desc": "99 Ts / Every One Gives 1Up",
+          "address": "0x00B1"
+        },
+        {
+          "code": "0472:13",
+          "desc": "Invincible",
+          "address": "0x0472"
+        },
+        {
+          "code": "0473:02",
+          "desc": "Have Slingshot",
+          "address": "0x0473"
+        },
+        {
+          "code": "047E:01",
+          "desc": "Boss 1 Hit Kill",
+          "address": "0x047E"
+        },
+        {
+          "code": "00B0:09",
+          "desc": "Infinite Lives",
+          "address": "0x00B0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

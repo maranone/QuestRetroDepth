@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "finalfightone",
+  "display_name": "Final Fight One (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Final Fight One (World) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "1000CA0A",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200CA0A"
+        },
+        {
+          "code": "82021608",
+          "desc": "Infinite Time",
+          "address": "0x02021608"
+        },
+        {
+          "code": "82024E5A",
+          "desc": "Infinite Health",
+          "address": "0x02024E5A"
+        },
+        {
+          "code": "32024EDB",
+          "desc": "Infinite Lives",
+          "address": "0x02024EDB"
+        },
+        {
+          "code": "320215F5",
+          "desc": "Infinite Continues",
+          "address": "0x020215F5"
+        },
+        {
+          "code": "82021360",
+          "desc": "Max Score",
+          "address": "0x02021360"
+        },
+        {
+          "code": "82021362",
+          "desc": "Max Score",
+          "address": "0x02021362"
+        },
+        {
+          "code": "32024E54",
+          "desc": "Invincible",
+          "address": "0x02024E54"
+        },
+        {
+          "code": "82024E59",
+          "desc": "Character Modifier",
+          "address": "0x02024E59"
+        },
+        {
+          "code": "82024E5E",
+          "desc": "Health Modifier",
+          "address": "0x02024E5E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Final Fight One (World) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "1000CA0A",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200CA0A"
+        },
+        {
+          "code": "82021608",
+          "desc": "Infinite Time",
+          "address": "0x02021608"
+        },
+        {
+          "code": "82024E5A",
+          "desc": "Infinite Health",
+          "address": "0x02024E5A"
+        },
+        {
+          "code": "32024EDB",
+          "desc": "Infinite Lives",
+          "address": "0x02024EDB"
+        },
+        {
+          "code": "320215F5",
+          "desc": "Infinite Continues",
+          "address": "0x020215F5"
+        },
+        {
+          "code": "82021360",
+          "desc": "Max Score",
+          "address": "0x02021360"
+        },
+        {
+          "code": "82021362",
+          "desc": "Max Score",
+          "address": "0x02021362"
+        },
+        {
+          "code": "32024E54",
+          "desc": "Invincible",
+          "address": "0x02024E54"
+        },
+        {
+          "code": "82024E59",
+          "desc": "Character Modifier",
+          "address": "0x02024E59"
+        },
+        {
+          "code": "82024E5E",
+          "desc": "Health Modifier",
+          "address": "0x02024E5E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

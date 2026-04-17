@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "hiryuunokenspecialfightingwars",
+  "display_name": "Hiryuu no Ken Special - Fighting Wars (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hiryuu no Ken Special - Fighting Wars (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0452:90",
+          "desc": "Infinite Energy",
+          "address": "0x0452"
+        },
+        {
+          "code": "00E6:01",
+          "desc": "Infinite Ability Points",
+          "address": "0x00E6"
+        },
+        {
+          "code": "03E0:25",
+          "desc": "Infinite Time",
+          "address": "0x03E0"
+        },
+        {
+          "code": "0099:48",
+          "desc": "Max KO Bar",
+          "address": "0x0099"
+        },
+        {
+          "code": "044D:09",
+          "desc": "Max KO Bar",
+          "address": "0x044D"
+        },
+        {
+          "code": "045A:00",
+          "desc": "Enemy Has Zero Energy",
+          "address": "0x045A"
+        },
+        {
+          "code": "04B9:0A",
+          "desc": "Enemy Can't Let Go of Your Grip",
+          "address": "0x04B9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

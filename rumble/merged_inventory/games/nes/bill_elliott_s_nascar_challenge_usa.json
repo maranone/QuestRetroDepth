@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "billelliottsnascarchallenge",
+  "display_name": "Bill Elliott's NASCAR Challenge (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bill Elliott's NASCAR Challenge (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "SZUETKVK",
+          "desc": "Infinite 'free time' in the pits",
+          "address": "0x04AE"
+        },
+        {
+          "code": "SXOAZVVK",
+          "desc": "Freeze timer while crew works on car in pits",
+          "address": "0x062A"
+        },
+        {
+          "code": "7990:08",
+          "desc": "Complete 1 Lap To Win",
+          "address": "0x7990"
+        },
+        {
+          "code": "7960:FF",
+          "desc": "Maximum Speed/Acceleration P1",
+          "address": "0x7960"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

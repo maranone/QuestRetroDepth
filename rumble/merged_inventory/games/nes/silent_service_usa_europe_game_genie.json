@@ -1,0 +1,52 @@
+{
+  "system": "nes",
+  "normalized_title": "silentservice",
+  "display_name": "Silent Service (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Silent Service (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Silent Service (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "ZLEPOIAI",
+          "desc": "Start With 50 Deck Gun Shells",
+          "address": "0x0539"
+        },
+        {
+          "code": "LTEPOIAI",
+          "desc": "Start With 99 Deck Gun Shells",
+          "address": "0x0569"
+        },
+        {
+          "code": "YXVPUYGP",
+          "desc": "Increases Max Submerged Speed From 10 To 29",
+          "address": "0x072B"
+        },
+        {
+          "code": "GUSOXNTO",
+          "desc": "Increases Max Surfaced Speed From 20 To 50",
+          "address": "0x07BA"
+        },
+        {
+          "code": "SZSPKLVG",
+          "desc": "Infinite Battery Power",
+          "address": "0x032C"
+        },
+        {
+          "code": "SXOPUGSA",
+          "desc": "Don't Sink From Depth Charges (Your Sub Can Still Be Damaged, But You Won't Sink)",
+          "address": "0x042B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

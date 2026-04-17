@@ -1,0 +1,8 @@
+game_name=Micro Machines Turbo Tournament 96 (Europe) (v1.1) (Action Replay)
+game_key=micro_machines_turbo_tournament_96_europe_v1_1_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ffe776	life_lost	0xFFE776	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffe776	life_gained	0xFFE776	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ffe777	life_lost	0xFFE777	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffe777	life_gained	0xFFE777	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

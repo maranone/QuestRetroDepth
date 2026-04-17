@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "aroundworldin80days",
+  "display_name": "Around the World in 80 Days (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Around the World in 80 Days (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "100005FE",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020005FE"
+        },
+        {
+          "code": "83001508",
+          "desc": "Max Coins",
+          "address": "0x02001508"
+        },
+        {
+          "code": "33004AF0",
+          "desc": "Max Health Vials",
+          "address": "0x02004AF0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Around the World in 80 Days (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "100005FE",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020005FE"
+        },
+        {
+          "code": "83001508",
+          "desc": "Max Coins",
+          "address": "0x02001508"
+        },
+        {
+          "code": "33004AF0",
+          "desc": "Max Health Vials",
+          "address": "0x02004AF0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

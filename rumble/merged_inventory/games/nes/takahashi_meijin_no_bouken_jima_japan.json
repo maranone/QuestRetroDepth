@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "takahashimeijinnoboukenjima",
+  "display_name": "Takahashi Meijin no Bouken-jima (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Takahashi Meijin no Bouken-jima (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "EEAAAA",
+          "desc": "Infinite Lives",
+          "address": "0x0000"
+        },
+        {
+          "code": "UULAAA",
+          "desc": "Always Start With Hammer",
+          "address": "0x0030"
+        },
+        {
+          "code": "PVEEEAIV",
+          "desc": "Fruit Pickup Worth 3X More",
+          "address": "0x00E8"
+        },
+        {
+          "code": "ZEEEOAPA",
+          "desc": "Fruit Pickup Worth 3X More",
+          "address": "0x0089"
+        },
+        {
+          "code": "AEVAAGTZ",
+          "desc": "Jump in Midair",
+          "address": "0x0408"
+        },
+        {
+          "code": "AEVAIGPZ",
+          "desc": "Jump in Midair",
+          "address": "0x040D"
+        },
+        {
+          "code": "ZAKOUZPA",
+          "desc": "Bosses Die Automatically",
+          "address": "0x028B"
+        },
+        {
+          "code": "ELOPXLIN",
+          "desc": "Bosses Die Automatically",
+          "address": "0x033A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

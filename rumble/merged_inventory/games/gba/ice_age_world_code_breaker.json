@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "iceage",
+  "display_name": "Ice Age (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Ice Age (World) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "100044E4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020044E4"
+        },
+        {
+          "code": "8300507C",
+          "desc": "Invincible",
+          "address": "0x0200507C"
+        },
+        {
+          "code": "330029F4",
+          "desc": "Infinite Hazelnuts",
+          "address": "0x020029F4"
+        },
+        {
+          "code": "83002A08",
+          "desc": "Have All Golden Hazelnuts",
+          "address": "0x02002A08"
+        },
+        {
+          "code": "83004D84",
+          "desc": "Unlock All Levels",
+          "address": "0x02004D84"
+        },
+        {
+          "code": "33004D88",
+          "desc": "Have Rock",
+          "address": "0x02004D88"
+        },
+        {
+          "code": "83004D8C",
+          "desc": "Have Walnut",
+          "address": "0x02004D8C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Ice Age (World) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "100044E4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020044E4"
+        },
+        {
+          "code": "8300507C",
+          "desc": "Invincible",
+          "address": "0x0200507C"
+        },
+        {
+          "code": "330029F4",
+          "desc": "Infinite Hazelnuts",
+          "address": "0x020029F4"
+        },
+        {
+          "code": "83002A08",
+          "desc": "Have All Golden Hazelnuts",
+          "address": "0x02002A08"
+        },
+        {
+          "code": "83004D84",
+          "desc": "Unlock All Levels",
+          "address": "0x02004D84"
+        },
+        {
+          "code": "33004D88",
+          "desc": "Have Rock",
+          "address": "0x02004D88"
+        },
+        {
+          "code": "83004D8C",
+          "desc": "Have Walnut",
+          "address": "0x02004D8C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

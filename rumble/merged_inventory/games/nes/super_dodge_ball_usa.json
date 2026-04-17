@@ -1,0 +1,85 @@
+{
+  "system": "nes",
+  "normalized_title": "superdodgeball",
+  "display_name": "Super Dodge Ball (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Dodge Ball (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "007B:80",
+          "desc": "P1 Team Modifier",
+          "address": "0x007B"
+        },
+        {
+          "code": "069C:00",
+          "desc": "P1 Team Color Modifier",
+          "address": "0x069C"
+        },
+        {
+          "code": "06AE:0F",
+          "desc": "Captain Face Modifier",
+          "address": "0x06AE"
+        },
+        {
+          "code": "058B:FF",
+          "desc": "P1 1st Member Infinite Energy",
+          "address": "0x058B"
+        },
+        {
+          "code": "0553:FF",
+          "desc": "P1 2nd Member Infinite Energy",
+          "address": "0x0553"
+        },
+        {
+          "code": "051B:FF",
+          "desc": "P1 3rd Member Infinite Energy",
+          "address": "0x051B"
+        },
+        {
+          "code": "043B:00",
+          "desc": "P2 1st Member No Energy (1 Hit Kill)",
+          "address": "0x043B"
+        },
+        {
+          "code": "0403:00",
+          "desc": "P2 2nd Member No Energy (1 Hit Kill)",
+          "address": "0x0403"
+        },
+        {
+          "code": "03CB:00",
+          "desc": "P2 3rd Member No Energy (1 Hit Kill)",
+          "address": "0x03CB"
+        },
+        {
+          "code": "0019:8F",
+          "desc": "Infinite Health (Team 1 - Possibility 1)",
+          "address": "0x0019"
+        },
+        {
+          "code": "001A:8F",
+          "desc": "Infinite Health (Team 1 - Possibility 2)",
+          "address": "0x001A"
+        },
+        {
+          "code": "001B:8F",
+          "desc": "Infinite Health (Team 1 - Possibility 3)",
+          "address": "0x001B"
+        },
+        {
+          "code": "001E:8F",
+          "desc": "Infinite Health (Team 1 - Possibility 4)",
+          "address": "0x001E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

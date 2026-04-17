@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "kyouryuusentaizyuranger",
+  "display_name": "Kyouryuu Sentai Zyuranger (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kyouryuu Sentai Zyuranger (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "008D:10",
+          "desc": "Infinite Energy",
+          "address": "0x008D"
+        },
+        {
+          "code": "0081:01",
+          "desc": "Invincibility",
+          "address": "0x0081"
+        },
+        {
+          "code": "0082:09",
+          "desc": "Infinite Lives",
+          "address": "0x0082"
+        },
+        {
+          "code": "0083:00",
+          "desc": "Level Modifier",
+          "address": "0x0083"
+        },
+        {
+          "code": "008E:00",
+          "desc": "Boss One Hit Kil",
+          "address": "0x008E"
+        },
+        {
+          "code": "0192:00",
+          "desc": "Character Color Modifier",
+          "address": "0x0192"
+        },
+        {
+          "code": "0341:01",
+          "desc": "Jump to Walk On Air",
+          "address": "0x0341"
+        },
+        {
+          "code": "0400:01",
+          "desc": "Weapon Modifier",
+          "address": "0x0400"
+        },
+        {
+          "code": "0500:00",
+          "desc": "Sprite Modifier",
+          "address": "0x0500"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

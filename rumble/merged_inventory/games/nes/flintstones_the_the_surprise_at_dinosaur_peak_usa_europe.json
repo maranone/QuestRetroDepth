@@ -1,0 +1,97 @@
+{
+  "system": "nes",
+  "normalized_title": "flintstonessurpriseatdinosaurpeak",
+  "display_name": "Flintstones, The - The Surprise at Dinosaur Peak! (USA, Europe)",
+  "aliases": [
+    "Flintstones, The - The Surprise at Dinosaur Peak! (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Flintstones, The - The Surprise at Dinosaur Peak! (USA, Europe).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 15,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "AASALPZA",
+          "desc": "Start With 1 Life Instead Of 3",
+          "address": "0x010B"
+        },
+        {
+          "code": "GASALPZA",
+          "desc": "Start With 5 Lives",
+          "address": "0x010B"
+        },
+        {
+          "code": "AASALPZE",
+          "desc": "Start With 9 Lives",
+          "address": "0x010B"
+        },
+        {
+          "code": "SXEETEVK",
+          "desc": "Infinite Lives",
+          "address": "0x00AE"
+        },
+        {
+          "code": "AANONPPA",
+          "desc": "Infinite Energy",
+          "address": "0x018F"
+        },
+        {
+          "code": "LANONPPA",
+          "desc": "Enemies Do More Damage (Take 3 Hearts Away)",
+          "address": "0x018F"
+        },
+        {
+          "code": "SXXOUVSE",
+          "desc": "Infinite Stone Hammers Once You Have Them",
+          "address": "0x06AB"
+        },
+        {
+          "code": "VTNEXOSE",
+          "desc": "Start On Level 2",
+          "address": "0x01EA"
+        },
+        {
+          "code": "PANELPLA",
+          "desc": "Start With 1 Heart",
+          "address": "0x018B"
+        },
+        {
+          "code": "ZANELPLA",
+          "desc": "Start With 2 Hearts",
+          "address": "0x018B"
+        },
+        {
+          "code": "TANELPLA",
+          "desc": "Start With 6 Hearts",
+          "address": "0x018B"
+        },
+        {
+          "code": "PANELPLE",
+          "desc": "Start With 9 Hearts",
+          "address": "0x018B"
+        },
+        {
+          "code": "GOEATOGA",
+          "desc": "Start With Max Power",
+          "address": "0x011E"
+        },
+        {
+          "code": "ZEEEUYPA",
+          "desc": "Get Bowling Ball Instead Of Stone Hammer",
+          "address": "0x078B"
+        },
+        {
+          "code": "LEEEUYPA",
+          "desc": "Get Mystery Item Instead Of Stone Hammer",
+          "address": "0x078B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=Barney's Hide _ Seek Game (USA) (Action Replay)
+game_key=barney_s_hide_seek_game_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	level_complete_level_ffdbfa	level_complete	0xFFDBFA	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

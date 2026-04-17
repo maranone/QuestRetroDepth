@@ -1,0 +1,7 @@
+game_name=Chack'n Pop (Japan) (Game Genie)
+game_key=ChacknPop-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_003a	life_lost	0x003A	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_003a	life_gained	0x003A	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_002f	score	0x002F	3	uint	little	prev < curr	0.8	1	right:0.350:60

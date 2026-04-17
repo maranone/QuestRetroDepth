@@ -1,0 +1,148 @@
+{
+  "system": "nes",
+  "normalized_title": "dragonwarrior",
+  "display_name": "Dragon Warrior (USA) (Game Genie)",
+  "aliases": [
+    "Dragon Warrior (USA) (Rev 1)",
+    "Dragon Warrior (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dragon Warrior (USA).cht",
+      "total_cheat_rows": 278,
+      "raw_entry_count": 182,
+      "distinct_address_count": 51,
+      "sample_raw_entries": [
+        {
+          "code": "00BD:FF",
+          "desc": "Infinite Money",
+          "address": "0x00BD"
+        },
+        {
+          "code": "00BB:FF",
+          "desc": "Big Experience, Any Battle, To Level 30",
+          "address": "0x00BB"
+        },
+        {
+          "code": "00DB:FF",
+          "desc": "Repel Spell Always On",
+          "address": "0x00DB"
+        },
+        {
+          "code": "ONTAIO",
+          "desc": "Takes Away The Sound Of Scrolling Letters When Talking To Someone In The Game",
+          "address": "0x0175"
+        },
+        {
+          "code": "VITOAN",
+          "desc": "People Move Around Fast, And A Lot Of People Are In Different Places",
+          "address": "0x07D0"
+        },
+        {
+          "code": "AKPOOA",
+          "desc": "No Enemies In Caves",
+          "address": "0x00C1"
+        },
+        {
+          "code": "TEOPNPAA",
+          "desc": "Buy ERDRICK'S SWORD at the Weapon Shop in the Town of Brecconary, and it only costs $2",
+          "address": "0x010F"
+        },
+        {
+          "code": "IEOOXPYE",
+          "desc": "Buy ERDRICK'S ARMOR (the best armor in the game) at the Weapon Shop in the Town of Brecconary, and it only costs $2",
+          "address": "0x018A"
+        },
+        {
+          "code": "AAKPNOZA",
+          "desc": "Buy Bamboo Poles for free",
+          "address": "0x010F"
+        },
+        {
+          "code": "AAKOOOGL",
+          "desc": "Buy Clubs for free",
+          "address": "0x0189"
+        },
+        {
+          "code": "AAKOUPKL",
+          "desc": "Buy Copper Swords for free",
+          "address": "0x018B"
+        },
+        {
+          "code": "AAKOVPZA",
+          "desc": "Buy Hand Axes for $48",
+          "address": "0x018E"
+        },
+        {
+          "code": "AASPEPIA",
+          "desc": "Buy Broad Swords for $220",
+          "address": "0x0108"
+        },
+        {
+          "code": "AASPEPIA",
+          "desc": "Buy Broad Swords for free",
+          "address": "0x0108"
+        },
+        {
+          "code": "AAKONOKI",
+          "desc": "Buy Broad Swords for free",
+          "address": "0x018F"
+        },
+        {
+          "code": "AASPXPTZ",
+          "desc": "Buy Flame Swords for $72",
+          "address": "0x010A"
+        },
+        {
+          "code": "AASPNPTG",
+          "desc": "Buy Leather Armor for free",
+          "address": "0x010F"
+        },
+        {
+          "code": "AASOXPPA",
+          "desc": "Buy Chain Mail for $44",
+          "address": "0x018A"
+        },
+        {
+          "code": "AASOKPLA",
+          "desc": "Buy Half Plates for $232",
+          "address": "0x018C"
+        },
+        {
+          "code": "AASOKPLA",
+          "desc": "Buy Half Plates for free",
+          "address": "0x018C"
+        },
+        {
+          "code": "AASOUOET",
+          "desc": "Buy Half Plates for free",
+          "address": "0x018B"
+        },
+        {
+          "code": "AASOVOLA",
+          "desc": "Buy Full Plates for $184",
+          "address": "0x018E"
+        },
+        {
+          "code": "AAVPEOTP",
+          "desc": "Buy Magic Armor for $20",
+          "address": "0x0108"
+        },
+        {
+          "code": "AAVPUOZI",
+          "desc": "Buy Small Shields for free",
+          "address": "0x010B"
+        },
+        {
+          "code": "AAVPVPLA",
+          "desc": "Buy Large Shields for $32",
+          "address": "0x010E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

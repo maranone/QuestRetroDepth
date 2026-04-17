@@ -1,0 +1,50 @@
+{
+  "system": "pce",
+  "normalized_title": "motoroaderii",
+  "display_name": "Moto Roader II (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Moto Roader II (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "1f06f9:63",
+          "desc": "Infinite Energy",
+          "address": "0x1F06F9"
+        },
+        {
+          "code": "1f07ba:99",
+          "desc": "Infinite Money",
+          "address": "0x1F07BA"
+        },
+        {
+          "code": "1f06fa:99",
+          "desc": "Kill All CPUs (2-5)",
+          "address": "0x1F06FA"
+        },
+        {
+          "code": "1f06fb:99",
+          "desc": "Kill All CPUs (2-5)",
+          "address": "0x1F06FB"
+        },
+        {
+          "code": "1f06fc:99",
+          "desc": "Kill All CPUs (2-5)",
+          "address": "0x1F06FC"
+        },
+        {
+          "code": "1f06fd:99",
+          "desc": "Kill All CPUs (2-5)",
+          "address": "0x1F06FD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

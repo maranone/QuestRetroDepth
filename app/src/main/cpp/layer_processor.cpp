@@ -37,13 +37,16 @@ void LayerProcessor::finalize_frame(LayerFrame& frame) {
     }
     frame.has_pixels = saw_opaque;
     frame.wedge_eligible = saw_opaque && saw_transparent;
+    frame.bbox_eligible = false;
+    frame.object_boxes.clear();
 }
 
 std::vector<LayerFrame> LayerProcessor::process(const uint32_t* src, int w, int h,
                                                   const uint8_t* zbuf,
-                                                  const qrd::FrameOutput* frame) {
+                                                  const qrd::FrameOutput* frame,
+                                                  bool build_object_boxes) {
     std::vector<LayerFrame> result;
-    process_into(result, src, w, h, zbuf, frame);
+    process_into(result, src, w, h, zbuf, frame, build_object_boxes);
     return result;
 }
 
@@ -62,12 +65,15 @@ void LayerProcessor::prepare_frame(LayerFrame& f, const LayerConfig& lc, int w, 
     }
     f.has_pixels = false;
     f.wedge_eligible = false;
+    f.bbox_eligible = false;
+    f.object_boxes.clear();
 }
 
 void LayerProcessor::process_into(std::vector<LayerFrame>& result,
                                   const uint32_t* src, int w, int h,
                                   const uint8_t* zbuf,
-                                  const qrd::FrameOutput* frame) {
+                                  const qrd::FrameOutput* frame,
+                                  bool build_object_boxes) {
     result.resize(m_config.layers.size());
 
     // Collect indices of ZBuffer layers so we can fill them in a single pass.
@@ -124,7 +130,10 @@ void LayerProcessor::process_into(std::vector<LayerFrame>& result,
         }
     }
 
-    for (auto& frame_out : result) finalize_frame(frame_out);
+    for (auto& frame_out : result) {
+        finalize_frame(frame_out);
+        if (build_object_boxes) compute_object_boxes(frame_out);
+    }
 }
 
 void LayerProcessor::fill_full_frame(LayerFrame& f, const LayerConfig& lc, const uint32_t* src, int w, int h) {
@@ -320,4 +329,70 @@ void LayerProcessor::extract_all_zbuffer_layers(std::vector<LayerFrame>& frames,
         dst[3] = 255; // opaque
         lf.has_pixels = true;
     }
+}
+
+void LayerProcessor::compute_object_boxes(LayerFrame& frame) {
+    constexpr int k_alpha_threshold = 5;
+    constexpr std::size_t k_max_object_boxes = 64;
+
+    if (!frame.wedge_eligible || frame.width <= 0 || frame.height <= 0) return;
+
+    const int w = frame.width;
+    const int h = frame.height;
+    const std::size_t npix = static_cast<std::size_t>(w) * static_cast<std::size_t>(h);
+    if (frame.rgba.size() < npix * 4u) return;
+
+    std::vector<uint8_t> visited(npix, 0u);
+    std::vector<int> queue;
+    queue.reserve(256);
+
+    auto enqueue_if_valid = [&](int x, int y) {
+        if (x < 0 || x >= w || y < 0 || y >= h) return;
+        const std::size_t ni = static_cast<std::size_t>(y) * static_cast<std::size_t>(w) + static_cast<std::size_t>(x);
+        if (visited[ni]) return;
+        if (frame.rgba[ni * 4u + 3u] <= k_alpha_threshold) return;
+        visited[ni] = 1u;
+        queue.push_back(static_cast<int>(ni));
+    };
+
+    for (std::size_t seed = 0; seed < npix; ++seed) {
+        if (visited[seed]) continue;
+        if (frame.rgba[seed * 4u + 3u] <= k_alpha_threshold) continue;
+
+        if (frame.object_boxes.size() >= k_max_object_boxes) {
+            frame.object_boxes.clear();
+            frame.bbox_eligible = false;
+            return;
+        }
+
+        queue.clear();
+        visited[seed] = 1u;
+        queue.push_back(static_cast<int>(seed));
+
+        int min_x = static_cast<int>(seed % w);
+        int max_x = min_x;
+        int min_y = static_cast<int>(seed / w);
+        int max_y = min_y;
+
+        for (std::size_t q = 0; q < queue.size(); ++q) {
+            const int idx = queue[q];
+            const int x = idx % w;
+            const int y = idx / w;
+            min_x = std::min(min_x, x);
+            max_x = std::max(max_x, x);
+            min_y = std::min(min_y, y);
+            max_y = std::max(max_y, y);
+
+            for (int oy = -1; oy <= 1; ++oy) {
+                for (int ox = -1; ox <= 1; ++ox) {
+                    if (ox == 0 && oy == 0) continue;
+                    enqueue_if_valid(x + ox, y + oy);
+                }
+            }
+        }
+
+        frame.object_boxes.push_back({min_x, min_y, max_x, max_y});
+    }
+
+    frame.bbox_eligible = !frame.object_boxes.empty();
 }

@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "armymenadvance",
+  "display_name": "Army Men Advance (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Army Men Advance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10022618",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02022618"
+        },
+        {
+          "code": "33004510",
+          "desc": "Infinite Grenades",
+          "address": "0x02004510"
+        },
+        {
+          "code": "830047A6",
+          "desc": "Infinite Health",
+          "address": "0x020047A6"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Army Men Advance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10022618",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02022618"
+        },
+        {
+          "code": "33004510",
+          "desc": "Infinite Grenades",
+          "address": "0x02004510"
+        },
+        {
+          "code": "830047A6",
+          "desc": "Infinite Health",
+          "address": "0x020047A6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

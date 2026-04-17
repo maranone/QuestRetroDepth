@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "tonyhawksunderground",
+  "display_name": "Tony Hawk's Underground (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Tony Hawk's Underground (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10011D76",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02011D76"
+        },
+        {
+          "code": "8200D864",
+          "desc": "Infinite Money",
+          "address": "0x0200D864"
+        },
+        {
+          "code": "8200D864",
+          "desc": "Max Money",
+          "address": "0x0200D864"
+        },
+        {
+          "code": "8200D866",
+          "desc": "Max Money",
+          "address": "0x0200D866"
+        },
+        {
+          "code": "4200DE24",
+          "desc": "Unlock All Courses",
+          "address": "0x0200DE24"
+        },
+        {
+          "code": "8200DE4C",
+          "desc": "Unlock All Players",
+          "address": "0x0200DE4C"
+        },
+        {
+          "code": "3200DE4E",
+          "desc": "Unlock All Players",
+          "address": "0x0200DE4E"
+        },
+        {
+          "code": "8200D364",
+          "desc": "Unlock All Cheats",
+          "address": "0x0200D364"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Tony Hawk's Underground (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10011D76",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02011D76"
+        },
+        {
+          "code": "8200D864",
+          "desc": "Infinite Money",
+          "address": "0x0200D864"
+        },
+        {
+          "code": "8200D864",
+          "desc": "Max Money",
+          "address": "0x0200D864"
+        },
+        {
+          "code": "8200D866",
+          "desc": "Max Money",
+          "address": "0x0200D866"
+        },
+        {
+          "code": "4200DE24",
+          "desc": "Unlock All Courses",
+          "address": "0x0200DE24"
+        },
+        {
+          "code": "8200DE4C",
+          "desc": "Unlock All Players",
+          "address": "0x0200DE4C"
+        },
+        {
+          "code": "3200DE4E",
+          "desc": "Unlock All Players",
+          "address": "0x0200DE4E"
+        },
+        {
+          "code": "8200D364",
+          "desc": "Unlock All Cheats",
+          "address": "0x0200D364"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

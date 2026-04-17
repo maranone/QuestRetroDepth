@@ -1,0 +1,38 @@
+{
+  "system": "gba",
+  "normalized_title": "legendofspyronewbeginning",
+  "display_name": "Legend of Spyro, The - A New Beginning (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Legend of Spyro, The - A New Beginning (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "320030B8",
+          "desc": "Instant Win Whack A Bulb Spider",
+          "address": "0x020030B8"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Legend of Spyro, The - A New Beginning (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "320030B8",
+          "desc": "Instant Win Whack A Bulb Spider",
+          "address": "0x020030B8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

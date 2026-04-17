@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "rodland",
+  "display_name": "Rodland (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rodland (Europe).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "SLOPOOTS",
+          "desc": "Infinite lives",
+          "address": "0x0139"
+        },
+        {
+          "code": "002A:00",
+          "desc": "Freeze Time",
+          "address": "0x002A"
+        },
+        {
+          "code": "0300:00",
+          "desc": "Scene Modifier",
+          "address": "0x0300"
+        },
+        {
+          "code": "04F2:01",
+          "desc": "Jump Midair",
+          "address": "0x04F2"
+        },
+        {
+          "code": "065C:10",
+          "desc": "Walk Through Enemies",
+          "address": "0x065C"
+        },
+        {
+          "code": "0679:07",
+          "desc": "Infinite Lives",
+          "address": "0x0679"
+        },
+        {
+          "code": "0788:01",
+          "desc": "Enable Jumps",
+          "address": "0x0788"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

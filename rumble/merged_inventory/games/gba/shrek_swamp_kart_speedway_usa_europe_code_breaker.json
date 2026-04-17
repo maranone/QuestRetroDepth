@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "shrekswampkartspeedway",
+  "display_name": "Shrek - Swamp Kart Speedway (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Shrek - Swamp Kart Speedway (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1000D148",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200D148"
+        },
+        {
+          "code": "3202320E",
+          "desc": "Instant Win",
+          "address": "0x0202320E"
+        },
+        {
+          "code": "32027CE8",
+          "desc": "Unlock Donkey",
+          "address": "0x02027CE8"
+        },
+        {
+          "code": "32027CE9",
+          "desc": "Unlock Wolf",
+          "address": "0x02027CE9"
+        },
+        {
+          "code": "32027CEA",
+          "desc": "Unlock Robin Hood",
+          "address": "0x02027CEA"
+        },
+        {
+          "code": "32027CEB",
+          "desc": "Unlock Prince Farquad",
+          "address": "0x02027CEB"
+        },
+        {
+          "code": "82027CE8",
+          "desc": "Unlock All Characters",
+          "address": "0x02027CE8"
+        },
+        {
+          "code": "82027CEA",
+          "desc": "Unlock All Characters",
+          "address": "0x02027CEA"
+        },
+        {
+          "code": "42027C30",
+          "desc": "Unlock All Areas",
+          "address": "0x02027C30"
+        },
+        {
+          "code": "42027B0E",
+          "desc": "Unlock All Racetracks",
+          "address": "0x02027B0E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Shrek - Swamp Kart Speedway (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1000D148",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200D148"
+        },
+        {
+          "code": "3202320E",
+          "desc": "Instant Win",
+          "address": "0x0202320E"
+        },
+        {
+          "code": "32027CE8",
+          "desc": "Unlock Donkey",
+          "address": "0x02027CE8"
+        },
+        {
+          "code": "32027CE9",
+          "desc": "Unlock Wolf",
+          "address": "0x02027CE9"
+        },
+        {
+          "code": "32027CEA",
+          "desc": "Unlock Robin Hood",
+          "address": "0x02027CEA"
+        },
+        {
+          "code": "32027CEB",
+          "desc": "Unlock Prince Farquad",
+          "address": "0x02027CEB"
+        },
+        {
+          "code": "82027CE8",
+          "desc": "Unlock All Characters",
+          "address": "0x02027CE8"
+        },
+        {
+          "code": "82027CEA",
+          "desc": "Unlock All Characters",
+          "address": "0x02027CEA"
+        },
+        {
+          "code": "42027C30",
+          "desc": "Unlock All Areas",
+          "address": "0x02027C30"
+        },
+        {
+          "code": "42027B0E",
+          "desc": "Unlock All Racetracks",
+          "address": "0x02027B0E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

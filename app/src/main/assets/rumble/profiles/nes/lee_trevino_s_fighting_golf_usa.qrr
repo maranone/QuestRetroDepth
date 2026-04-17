@@ -1,0 +1,5 @@
+game_name=Lee Trevino's Fighting Golf (USA)
+game_key=lee_trevino_s_fighting_golf_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_0490	score	0x0490	1	uint	little	prev < curr	0.8	1	right:0.350:60

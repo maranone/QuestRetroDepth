@@ -1,0 +1,16 @@
+game_name=Mystical Fighter (USA) (Action Replay)
+game_key=mystical_fighter_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ffe538	damage_taken	0xFFE538	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffe538	death	0xFFE538	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffe638	damage_taken	0xFFE638	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffe638	death	0xFFE638	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ffe492	life_lost	0xFFE492	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffe492	life_gained	0xFFE492	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ffe592	life_lost	0xFFE592	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffe592	life_gained	0xFFE592	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_ffc0e8	enemy_defeated	0xFFC0E8	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ffc1e8	enemy_defeated	0xFFC1E8	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ffc2e8	enemy_defeated	0xFFC2E8	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ffc3e8	enemy_defeated	0xFFC3E8	1	uint	little	prev > curr	0.65	1	right:0.450:35

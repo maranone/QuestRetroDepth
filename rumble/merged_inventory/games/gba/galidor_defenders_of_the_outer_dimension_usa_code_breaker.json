@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "galidordefendersofouterdimension",
+  "display_name": "Galidor - Defenders of the Outer Dimension (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Galidor - Defenders of the Outer Dimension (USA) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "10001F78",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001F78"
+        },
+        {
+          "code": "33005B3E",
+          "desc": "Infinite Health",
+          "address": "0x02005B3E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Galidor - Defenders of the Outer Dimension (USA) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "10001F78",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001F78"
+        },
+        {
+          "code": "33005B3E",
+          "desc": "Infinite Health",
+          "address": "0x02005B3E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

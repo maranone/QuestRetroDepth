@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "tecmoworldcupsocceru",
+  "display_name": "Tecmo World Cup Soccer (E) [U][!]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tecmo World Cup Soccer (E) [U][!].cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "OXUEPTOO",
+          "desc": "Never Lose Guts",
+          "address": "0x06A9"
+        },
+        {
+          "code": "KPZEEE",
+          "desc": "Messed Up Graphics",
+          "address": "0x0090"
+        },
+        {
+          "code": "OOPEEE",
+          "desc": "Funny Players",
+          "address": "0x0090"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

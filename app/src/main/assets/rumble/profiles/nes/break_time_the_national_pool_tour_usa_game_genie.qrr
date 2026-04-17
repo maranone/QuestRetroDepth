@@ -1,0 +1,8 @@
+game_name=Break Time - The National Pool Tour (USA) (Game Genie)
+game_key=break_time_the_national_pool_tour_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	score_score_00af	score	0x00AF	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00b0	score	0x00B0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00b1	score	0x00B1	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00b2	score	0x00B2	1	uint	little	prev < curr	0.8	1	right:0.350:60

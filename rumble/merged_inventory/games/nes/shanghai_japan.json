@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "shanghai",
+  "display_name": "Shanghai (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Shanghai (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "00A0:01",
+          "desc": "Freeze Timer",
+          "address": "0x00A0"
+        },
+        {
+          "code": "00A1:01",
+          "desc": "Freeze Timer",
+          "address": "0x00A1"
+        },
+        {
+          "code": "0094:00",
+          "desc": "Instantly Beat Game",
+          "address": "0x0094"
+        },
+        {
+          "code": "0037:90",
+          "desc": "Instantly Beat Level",
+          "address": "0x0037"
+        },
+        {
+          "code": "005A:00",
+          "desc": "Freeze Timer",
+          "address": "0x005A"
+        },
+        {
+          "code": "0040:00",
+          "desc": "Infinite Hints",
+          "address": "0x0040"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

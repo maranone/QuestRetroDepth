@@ -1,0 +1,72 @@
+{
+  "system": "gbc",
+  "normalized_title": "bioniccommandoeliteforces",
+  "display_name": "Bionic Commando - Elite Forces (USA, Australia) (Game Genie)",
+  "aliases": [
+    "Bionic Commando - Elite Forces (USA, Australia)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Bionic Commando - Elite Forces (USA, Australia).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "0109CAC2",
+          "desc": "Infinite Lives",
+          "address": "0xCAC2"
+        },
+        {
+          "code": "0108C7C2",
+          "desc": "Max Health",
+          "address": "0xC7C2"
+        },
+        {
+          "code": "0101C0C2",
+          "desc": "Have Gun Modifier",
+          "address": "0xC0C2"
+        },
+        {
+          "code": "0101C2C2",
+          "desc": "Have Item Modifier",
+          "address": "0xC2C2"
+        },
+        {
+          "code": "0101C4C2",
+          "desc": "Have Armor Modifier",
+          "address": "0xC4C2"
+        },
+        {
+          "code": "0101C6C2",
+          "desc": "Have Decoder Modifier",
+          "address": "0xC6C2"
+        },
+        {
+          "code": "01FFCBC2",
+          "desc": "Have All Levels Completed",
+          "address": "0xCBC2"
+        },
+        {
+          "code": "01FFCCC2",
+          "desc": "Have All Levels Completed",
+          "address": "0xCCC2"
+        },
+        {
+          "code": "0103CDC2",
+          "desc": "Have All Levels Completed",
+          "address": "0xCDC2"
+        },
+        {
+          "code": "0133C3C2",
+          "desc": "Infinite Armor",
+          "address": "0xC3C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

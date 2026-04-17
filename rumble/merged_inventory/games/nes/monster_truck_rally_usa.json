@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "monstertruckrally",
+  "display_name": "Monster Truck Rally (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Monster Truck Rally (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0348:00",
+          "desc": "P1's Truck Always In 0X",
+          "address": "0x0348"
+        },
+        {
+          "code": "0349:00",
+          "desc": "CPU/P2's Truck Always In 0X",
+          "address": "0x0349"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

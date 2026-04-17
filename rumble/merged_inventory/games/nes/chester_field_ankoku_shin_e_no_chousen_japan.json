@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "chesterfieldankokushinenochousen",
+  "display_name": "Chester Field - Ankoku Shin e no Chousen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Chester Field - Ankoku Shin e no Chousen (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0050:FF",
+          "desc": "Infinite Energy",
+          "address": "0x0050"
+        },
+        {
+          "code": "0619:01",
+          "desc": "Invincibility",
+          "address": "0x0619"
+        },
+        {
+          "code": "0056:09",
+          "desc": "Infinite Money",
+          "address": "0x0056"
+        },
+        {
+          "code": "0057:63",
+          "desc": "One Hit Kills Anything",
+          "address": "0x0057"
+        },
+        {
+          "code": "0051:00",
+          "desc": "Sword Modifier",
+          "address": "0x0051"
+        },
+        {
+          "code": "0054:FF",
+          "desc": "255 Exp",
+          "address": "0x0054"
+        },
+        {
+          "code": "0055:00",
+          "desc": "Metal Modifier",
+          "address": "0x0055"
+        },
+        {
+          "code": "05DE:B0",
+          "desc": "Jump In Mid/Walk On Air",
+          "address": "0x05DE"
+        },
+        {
+          "code": "0666:00",
+          "desc": "Sword Shot Stops",
+          "address": "0x0666"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "system": "gba",
+  "normalized_title": "streetjambasketball",
+  "display_name": "Street Jam Basketball (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Street Jam Basketball (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "10022280",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02022280"
+        },
+        {
+          "code": "33003ACA",
+          "desc": "Infinite Speed Bar P1",
+          "address": "0x02003ACA"
+        },
+        {
+          "code": "33003ACB",
+          "desc": "Full Power Meter P1",
+          "address": "0x02003ACB"
+        },
+        {
+          "code": "33003AE2",
+          "desc": "No Speed Bar P2",
+          "address": "0x02003AE2"
+        },
+        {
+          "code": "33003AE3",
+          "desc": "No Power Bar P2",
+          "address": "0x02003AE3"
+        },
+        {
+          "code": "74000130",
+          "desc": "End Match (Press Select)",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83003B04",
+          "desc": "End Match (Press Select)",
+          "address": "0x02003B04"
+        },
+        {
+          "code": "33003AC2",
+          "desc": "P1 Score Modifier",
+          "address": "0x02003AC2"
+        },
+        {
+          "code": "33003ADA",
+          "desc": "P2 Score Modifier",
+          "address": "0x02003ADA"
+        },
+        {
+          "code": "83004100",
+          "desc": "Have All Teams",
+          "address": "0x02004100"
+        },
+        {
+          "code": "33004104",
+          "desc": "Have All Playing Courts",
+          "address": "0x02004104"
+        },
+        {
+          "code": "83004110",
+          "desc": "Have King Rating",
+          "address": "0x02004110"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Street Jam Basketball (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "10022280",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02022280"
+        },
+        {
+          "code": "33003ACA",
+          "desc": "Infinite Speed Bar P1",
+          "address": "0x02003ACA"
+        },
+        {
+          "code": "33003ACB",
+          "desc": "Full Power Meter P1",
+          "address": "0x02003ACB"
+        },
+        {
+          "code": "33003AE2",
+          "desc": "No Speed Bar P2",
+          "address": "0x02003AE2"
+        },
+        {
+          "code": "33003AE3",
+          "desc": "No Power Bar P2",
+          "address": "0x02003AE3"
+        },
+        {
+          "code": "74000130",
+          "desc": "End Match (Press Select)",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83003B04",
+          "desc": "End Match (Press Select)",
+          "address": "0x02003B04"
+        },
+        {
+          "code": "33003AC2",
+          "desc": "P1 Score Modifier",
+          "address": "0x02003AC2"
+        },
+        {
+          "code": "33003ADA",
+          "desc": "P2 Score Modifier",
+          "address": "0x02003ADA"
+        },
+        {
+          "code": "83004100",
+          "desc": "Have All Teams",
+          "address": "0x02004100"
+        },
+        {
+          "code": "33004104",
+          "desc": "Have All Playing Courts",
+          "address": "0x02004104"
+        },
+        {
+          "code": "83004110",
+          "desc": "Have King Rating",
+          "address": "0x02004110"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

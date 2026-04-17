@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "familytrainer10rairaikyonsees",
+  "display_name": "Family Trainer 10 - Rairai Kyonsees (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Family Trainer 10 - Rairai Kyonsees (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0053:00",
+          "desc": "Instantly Beat Stage",
+          "address": "0x0053"
+        },
+        {
+          "code": "0054:00",
+          "desc": "Instantly Beat Stage",
+          "address": "0x0054"
+        },
+        {
+          "code": "0045:14",
+          "desc": "Infinite Lives",
+          "address": "0x0045"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

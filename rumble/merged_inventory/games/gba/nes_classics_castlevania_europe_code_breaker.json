@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "nesclassicscastlevania",
+  "display_name": "NES Classics - Castlevania (Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\NES Classics - Castlevania (Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "33007242",
+          "desc": "Infinite Time",
+          "address": "0x02007242"
+        },
+        {
+          "code": "3300735B",
+          "desc": "Weapon Modifier",
+          "address": "0x0200735B"
+        },
+        {
+          "code": "33007245",
+          "desc": "Infinite Health",
+          "address": "0x02007245"
+        },
+        {
+          "code": "33007271",
+          "desc": "Infinite Hearts",
+          "address": "0x02007271"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\NES Classics - Castlevania (Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "33007242",
+          "desc": "Infinite Time",
+          "address": "0x02007242"
+        },
+        {
+          "code": "3300735B",
+          "desc": "Weapon Modifier",
+          "address": "0x0200735B"
+        },
+        {
+          "code": "33007245",
+          "desc": "Infinite Health",
+          "address": "0x02007245"
+        },
+        {
+          "code": "33007271",
+          "desc": "Infinite Hearts",
+          "address": "0x02007271"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

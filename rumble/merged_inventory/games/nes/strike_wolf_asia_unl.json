@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "strikewolf",
+  "display_name": "Strike Wolf (Asia) (Unl)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Strike Wolf (Asia) (Unl).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "00A7:30",
+          "desc": "Infinite Health",
+          "address": "0x00A7"
+        },
+        {
+          "code": "0668:99",
+          "desc": "Infinite Bullets",
+          "address": "0x0668"
+        },
+        {
+          "code": "0669:99",
+          "desc": "Infinite Grenades",
+          "address": "0x0669"
+        },
+        {
+          "code": "SZSONEVK",
+          "desc": "Infinite Ammo",
+          "address": "0x00AF"
+        },
+        {
+          "code": "SXXPLNVK",
+          "desc": "Infinite Bombs",
+          "address": "0x072B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

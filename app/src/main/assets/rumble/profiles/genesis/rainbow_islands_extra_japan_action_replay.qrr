@@ -1,0 +1,9 @@
+game_name=Rainbow Islands Extra (Japan) (Action Replay)
+game_key=rainbow_islands_extra_japan_action_replay
+system=genesis
+integration_tier=contrib
+trigger	level_complete_level_fff606	level_complete	0xFFF606	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_fff67a	life_lost	0xFFF67A	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff67a	life_gained	0xFFF67A	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_ffff06	score	0xFFFF06	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	enemy_defeated_enemy_health_ffe89a	enemy_defeated	0xFFE89A	1	uint	little	prev > curr	0.65	1	right:0.450:35

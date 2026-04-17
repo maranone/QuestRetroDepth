@@ -1,0 +1,9 @@
+game_name=Arcade Classics (USA, Europe)
+game_key=arcade_classics_usa_europe
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff0006	score	0xFF0006	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	life_lost_lives_ff375a	life_lost	0xFF375A	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff375a	life_gained	0xFF375A	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ff0b46	life_lost	0xFF0B46	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff0b46	life_gained	0xFF0B46	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

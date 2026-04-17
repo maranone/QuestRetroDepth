@@ -1,0 +1,116 @@
+{
+  "system": "nes",
+  "normalized_title": "kidnikiradicalninja",
+  "display_name": "Kid Niki - Radical Ninja (USA) (Game Genie) (diff)",
+  "aliases": [
+    "Kid Niki - Radical Ninja (USA) (Game Genie) (diff)",
+    "Kid Niki - Radical Ninja (USA) (Game Genie)",
+    "Kid Niki - Radical Ninja (USA) (Rev 1)",
+    "Kid Niki - Radical Ninja (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\kidnikiradicalninja_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0078",
+        "0x00CC"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KidNikiRadicalNinja-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x00CC",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0078",
+          "type": "<u3"
+        },
+        {
+          "name": "time_minutes",
+          "address": "0x0622",
+          "type": "|u1"
+        },
+        {
+          "name": "time_seconds",
+          "address": "0x0621",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kid Niki - Radical Ninja (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "EEKEPPAA",
+          "desc": "Debug Invincibility",
+          "address": "0x0189"
+        },
+        {
+          "code": "AANPXXLP",
+          "desc": "Moon Jump",
+          "address": "0x020A"
+        },
+        {
+          "code": "NYNPUXOE",
+          "desc": "Moon Jump",
+          "address": "0x027B"
+        },
+        {
+          "code": "GZSPKZEY",
+          "desc": "Moon Jump",
+          "address": "0x022C"
+        },
+        {
+          "code": "GZSOXZEY",
+          "desc": "Moon Jump",
+          "address": "0x02AA"
+        },
+        {
+          "code": "AOOENSXE",
+          "desc": "Hit Anywhere",
+          "address": "0x059F"
+        },
+        {
+          "code": "AVXAESAG",
+          "desc": "Hit Anywhere",
+          "address": "0x0568"
+        },
+        {
+          "code": "00CC:04",
+          "desc": "Infinite Lives P1",
+          "address": "0x00CC"
+        },
+        {
+          "code": "0015:67",
+          "desc": "Infinite Time",
+          "address": "0x0015"
+        },
+        {
+          "code": "0261:00",
+          "desc": "1 Hit Kills 1st Boss",
+          "address": "0x0261"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

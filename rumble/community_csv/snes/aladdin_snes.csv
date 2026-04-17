@@ -2,5 +2,5 @@
 # game_name=Aladdin
 # match_names=aladdin|aladdinsnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-damage_taken_0_366,0x7E0366,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
-pickup_2_36a,0x7E036A,1,uint,changed,,left,0.220,normal,0,80,35,20,
+damage_taken_0_366,0x7E0366,1,uint,prev_gt_curr,,left,0.78,fade_out,0,180,80,70,
+pickup_2_36a,0x7E036A,1,uint,changed,,left,0.28,normal,0,80,12,20,

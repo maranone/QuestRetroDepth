@@ -1,0 +1,137 @@
+{
+  "system": "nes",
+  "normalized_title": "kiwikrazebirdbrainedadventure",
+  "display_name": "Kiwi Kraze - A Bird-Brained Adventure! (USA) (Game Genie)",
+  "aliases": [
+    "Kiwi Kraze - A Bird-Brained Adventure! (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kiwi Kraze - A Bird-Brained Adventure! (USA).cht",
+      "total_cheat_rows": 39,
+      "raw_entry_count": 23,
+      "distinct_address_count": 20,
+      "sample_raw_entries": [
+        {
+          "code": "0007:02",
+          "desc": "Infinite Lives",
+          "address": "0x0007"
+        },
+        {
+          "code": "04C3:01",
+          "desc": "Invincibility",
+          "address": "0x04C3"
+        },
+        {
+          "code": "04C4:01",
+          "desc": "Another Invincibility",
+          "address": "0x04C4"
+        },
+        {
+          "code": "0089:30",
+          "desc": "Infinite Air",
+          "address": "0x0089"
+        },
+        {
+          "code": "008F:01",
+          "desc": "One Hit Kill Boss",
+          "address": "0x008F"
+        },
+        {
+          "code": "0007:09",
+          "desc": "Infinite Lives",
+          "address": "0x0007"
+        },
+        {
+          "code": "049F:00",
+          "desc": "Weapon Modifier",
+          "address": "0x049F"
+        },
+        {
+          "code": "045C:09",
+          "desc": "Max Score P1",
+          "address": "0x045C"
+        },
+        {
+          "code": "045D:09",
+          "desc": "Max Score P1",
+          "address": "0x045D"
+        },
+        {
+          "code": "045E:09",
+          "desc": "Max Score P1",
+          "address": "0x045E"
+        },
+        {
+          "code": "045F:09",
+          "desc": "Max Score P1",
+          "address": "0x045F"
+        },
+        {
+          "code": "0460:09",
+          "desc": "Max Score P1",
+          "address": "0x0460"
+        },
+        {
+          "code": "0461:09",
+          "desc": "Max Score P1",
+          "address": "0x0461"
+        },
+        {
+          "code": "0462:09",
+          "desc": "Max Score P1",
+          "address": "0x0462"
+        },
+        {
+          "code": "0004:01",
+          "desc": "Fake Level Modifier",
+          "address": "0x0004"
+        },
+        {
+          "code": "0006:01",
+          "desc": "Moves Enemies Around, But Cannot Complete Level",
+          "address": "0x0006"
+        },
+        {
+          "code": "008F:01",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x008F"
+        },
+        {
+          "code": "0060:00",
+          "desc": "Turbo Jump to Fly",
+          "address": "0x0060"
+        },
+        {
+          "code": "0080:08",
+          "desc": "Float Jump",
+          "address": "0x0080"
+        },
+        {
+          "code": "0092:15",
+          "desc": "Infinite Time",
+          "address": "0x0092"
+        },
+        {
+          "code": "0091:FF",
+          "desc": "Infinite Time (alt)",
+          "address": "0x0091"
+        },
+        {
+          "code": "0089:30",
+          "desc": "Infinite Time Underwater",
+          "address": "0x0089"
+        },
+        {
+          "code": "008A:1D",
+          "desc": "Infinite Time Underwater (alt)",
+          "address": "0x008A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,9 @@
+game_name=Rygar (USA, Europe) (Game Genie)
+game_key=rygar_usa_europe_game_genie
+system=nes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_0291	enemy_defeated	0x0291	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0100	enemy_defeated	0x0100	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0070	enemy_defeated	0x0070	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0615	enemy_defeated	0x0615	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_05f4	enemy_defeated	0x05F4	1	uint	little	prev > curr	0.65	1	right:0.450:35

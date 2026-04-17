@@ -1,0 +1,5 @@
+game_name=Dr. Jekyll and Mr. Hyde (USA) (Game Genie)
+game_key=dr_jekyll_and_mr_hyde_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	level_complete_level_001a	level_complete	0x001A	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

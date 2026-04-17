@@ -1,0 +1,81 @@
+{
+  "system": "nes",
+  "normalized_title": "tecmobowl",
+  "display_name": "Tecmo Bowl (USA, Japan) (Game Genie)",
+  "aliases": [
+    "Tecmo Bowl (USA, Japan) (Game Genie)",
+    "Tecmo Bowl (USA) (Rev A)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tecmo Bowl (USA, Japan) (Game Genie).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "GAOATSPA",
+          "desc": "More Time For The 1st Quarter",
+          "address": "0x050E"
+        },
+        {
+          "code": "ZAXAYIGA",
+          "desc": "Only 2 Downs Allowed",
+          "address": "0x050F"
+        },
+        {
+          "code": "ZAXOTPGA",
+          "desc": "Only 2 Downs Allowed",
+          "address": "0x018E"
+        },
+        {
+          "code": "TAXAYIGA",
+          "desc": "6 Downs Allowed",
+          "address": "0x050F"
+        },
+        {
+          "code": "TAXOTPGA",
+          "desc": "6 Downs Allowed",
+          "address": "0x018E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Tecmo Bowl (USA) (Rev A).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "GAOATSPA",
+          "desc": "More Time For The 1st Quarter",
+          "address": "0x050E"
+        },
+        {
+          "code": "ZAXAYIGA",
+          "desc": "Only 2 Downs Allowed",
+          "address": "0x050F"
+        },
+        {
+          "code": "ZAXOTPGA",
+          "desc": "Only 2 Downs Allowed",
+          "address": "0x018E"
+        },
+        {
+          "code": "TAXAYIGA",
+          "desc": "6 Downs Allowed",
+          "address": "0x050F"
+        },
+        {
+          "code": "TAXOTPGA",
+          "desc": "6 Downs Allowed",
+          "address": "0x018E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

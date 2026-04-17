@@ -1,0 +1,42 @@
+{
+  "system": "nes",
+  "normalized_title": "ghostbusters",
+  "display_name": "Ghostbusters (USA, Japan) (Game Genie)",
+  "aliases": [
+    "Ghostbusters (USA, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ghostbusters (USA, Japan) (Game Genie).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "AVVETNTI",
+          "desc": "Start With $1,000,000",
+          "address": "0x07EE"
+        },
+        {
+          "code": "PAEEXKPX",
+          "desc": "Permanent Ghost Alarm",
+          "address": "0x048A"
+        },
+        {
+          "code": "PASPLOPX",
+          "desc": "Permanent Ghost Vacuum",
+          "address": "0x010B"
+        },
+        {
+          "code": "OXSESGSX",
+          "desc": "Self-Emptying Traps",
+          "address": "0x04AD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "system": "nes",
+  "normalized_title": "ninjagaideniidarkswordofchaos",
+  "display_name": "Ninja Gaiden II - The Dark Sword of Chaos (USA) (Game Genie)",
+  "aliases": [
+    "Ninja Gaiden II - The Dark Sword of Chaos (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ninja Gaiden II - The Dark Sword of Chaos (USA).cht",
+      "total_cheat_rows": 125,
+      "raw_entry_count": 101,
+      "distinct_address_count": 68,
+      "sample_raw_entries": [
+        {
+          "code": "OKLOSS",
+          "desc": "Instant Death",
+          "address": "0x05C5"
+        },
+        {
+          "code": "ESTATE",
+          "desc": "Strange Music",
+          "address": "0x0056"
+        },
+        {
+          "code": "STAAIK",
+          "desc": "Adds tapping sound to drum beats / Weird SFX",
+          "address": "0x0465"
+        },
+        {
+          "code": "00AB:04",
+          "desc": "Infinite time",
+          "address": "0x00AB"
+        },
+        {
+          "code": "00B1:F4",
+          "desc": "Infinite time",
+          "address": "0x00B1"
+        },
+        {
+          "code": "0080:16",
+          "desc": "Infinite health",
+          "address": "0x0080"
+        },
+        {
+          "code": "00A5:03",
+          "desc": "Infinite lives",
+          "address": "0x00A5"
+        },
+        {
+          "code": "00AE:63",
+          "desc": "Infinite Spiritual energy",
+          "address": "0x00AE"
+        },
+        {
+          "code": "007D:02",
+          "desc": "Every Art shoots like Fire Wave [Except Fire Wheel]",
+          "address": "0x007D"
+        },
+        {
+          "code": "0068:09",
+          "desc": "Untouchable",
+          "address": "0x0068"
+        },
+        {
+          "code": "060F:01",
+          "desc": "Kill any boss, 1 hit",
+          "address": "0x060F"
+        },
+        {
+          "code": "007D:00",
+          "desc": "Set Arts Modifier",
+          "address": "0x007D"
+        },
+        {
+          "code": "007E:00",
+          "desc": "Stage Select",
+          "address": "0x007E"
+        },
+        {
+          "code": "0049:07",
+          "desc": "Fire Wheel Timer Doesn't Run Out",
+          "address": "0x0049"
+        },
+        {
+          "code": "AOPAGI",
+          "desc": "Music is scrambled",
+          "address": "0x0514"
+        },
+        {
+          "code": "LEUOSATA",
+          "desc": "Half-energy from medicine",
+          "address": "0x008D"
+        },
+        {
+          "code": "GEUOSATE",
+          "desc": "Double energy from medicine",
+          "address": "0x008D"
+        },
+        {
+          "code": "IAUONEZA",
+          "desc": "Half-energy from Blue Ninja power",
+          "address": "0x008F"
+        },
+        {
+          "code": "IAKOOEZA",
+          "desc": "Half-energy from Blue Ninja power",
+          "address": "0x0089"
+        },
+        {
+          "code": "GPUONEZA",
+          "desc": "Double energy from Blue Ninja power",
+          "address": "0x009F"
+        },
+        {
+          "code": "GPKOOEZA",
+          "desc": "Double energy from Blue Ninja power",
+          "address": "0x0099"
+        },
+        {
+          "code": "GOEPOEZA",
+          "desc": "Double maximum Ninja power from scroll",
+          "address": "0x0019"
+        },
+        {
+          "code": "ZEOOEAPA",
+          "desc": "Double maximum Ninja power from scroll",
+          "address": "0x0088"
+        },
+        {
+          "code": "SVOPXXSN",
+          "desc": "All powers use up only 5 points",
+          "address": "0x026A"
+        },
+        {
+          "code": "SVOOKXSN",
+          "desc": "All powers use up only 5 points",
+          "address": "0x02EC"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Ninja Gaiden II - The Dark Sword of Chaos (USA).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 16,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "LEUOSATA",
+          "desc": "Half-Energy From Medicine",
+          "address": "0x008D"
+        },
+        {
+          "code": "GEUOSATE",
+          "desc": "Double Energy From Medicine",
+          "address": "0x008D"
+        },
+        {
+          "code": "IAUONEZA",
+          "desc": "Half-Energy From Blue Ninja Power",
+          "address": "0x008F"
+        },
+        {
+          "code": "IAKOOEZA",
+          "desc": "Half-Energy From Blue Ninja Power",
+          "address": "0x0089"
+        },
+        {
+          "code": "GPUONEZA",
+          "desc": "Double Energy From Blue Ninja Power",
+          "address": "0x009F"
+        },
+        {
+          "code": "GPKOOEZA",
+          "desc": "Double Energy From Blue Ninja Power",
+          "address": "0x0099"
+        },
+        {
+          "code": "GOEPOEZA",
+          "desc": "Double Maximum Ninja Power From Scroll",
+          "address": "0x0019"
+        },
+        {
+          "code": "ZEOOEAPA",
+          "desc": "Double Maximum Ninja Power From Scroll",
+          "address": "0x0088"
+        },
+        {
+          "code": "SVOPXXSN",
+          "desc": "All Powers Use Up Only 5 Points",
+          "address": "0x026A"
+        },
+        {
+          "code": "SVOOKXSN",
+          "desc": "All Powers Use Up Only 5 Points",
+          "address": "0x02EC"
+        },
+        {
+          "code": "SVXOXXSN",
+          "desc": "All Powers Use Up Only 5 Points",
+          "address": "0x02EA"
+        },
+        {
+          "code": "XXEOSZVZ",
+          "desc": "Infinite Ninja Power",
+          "address": "0x02AD"
+        },
+        {
+          "code": "LOEOVXIY",
+          "desc": "Infinite Ninja Power",
+          "address": "0x029E"
+        },
+        {
+          "code": "PUOOSXLK",
+          "desc": "Infinite Ninja Power",
+          "address": "0x02BD"
+        },
+        {
+          "code": "OKLOSS",
+          "desc": "Instant Death",
+          "address": "0x05C5"
+        },
+        {
+          "code": "ESTATE",
+          "desc": "Strange Music",
+          "address": "0x0056"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

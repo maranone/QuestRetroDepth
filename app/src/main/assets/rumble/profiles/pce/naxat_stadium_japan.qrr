@@ -1,0 +1,5 @@
+game_name=Naxat Stadium (Japan)
+game_key=naxat_stadium_japan
+system=pce
+integration_tier=contrib
+trigger	score_score_1f16f2	score	0x1F16F2	1	uint	little	prev < curr	0.8	1	right:0.350:60

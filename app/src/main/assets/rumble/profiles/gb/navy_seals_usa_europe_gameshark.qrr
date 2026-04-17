@@ -1,0 +1,8 @@
+game_name=Navy SEALs (USA, Europe) (GameShark)
+game_key=navy_seals_usa_europe_gameshark
+system=gb
+integration_tier=contrib
+trigger	life_lost_lives_c2c3	life_lost	0xC2C3	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_c2c3	life_gained	0xC2C3	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_ccc7	enemy_defeated	0xCCC7	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_c2c7	enemy_defeated	0xC2C7	1	uint	little	prev > curr	0.65	1	right:0.450:35

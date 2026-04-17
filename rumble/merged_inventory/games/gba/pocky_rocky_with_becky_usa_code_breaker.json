@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "pockyrockywithbecky",
+  "display_name": "Pocky _ Rocky with Becky (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Pocky _ Rocky with Becky (USA) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "83003898",
+          "desc": "Hella Points",
+          "address": "0x02003898"
+        },
+        {
+          "code": "83001F44",
+          "desc": "Infinite Lives",
+          "address": "0x02001F44"
+        },
+        {
+          "code": "83001F46",
+          "desc": "Infinite Health",
+          "address": "0x02001F46"
+        },
+        {
+          "code": "83001F4C",
+          "desc": "Infinite Crescendo Attacks",
+          "address": "0x02001F4C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Pocky _ Rocky with Becky (USA) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "83003898",
+          "desc": "Hella Points",
+          "address": "0x02003898"
+        },
+        {
+          "code": "83001F44",
+          "desc": "Infinite Lives",
+          "address": "0x02001F44"
+        },
+        {
+          "code": "83001F46",
+          "desc": "Infinite Health",
+          "address": "0x02001F46"
+        },
+        {
+          "code": "83001F4C",
+          "desc": "Infinite Crescendo Attacks",
+          "address": "0x02001F4C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

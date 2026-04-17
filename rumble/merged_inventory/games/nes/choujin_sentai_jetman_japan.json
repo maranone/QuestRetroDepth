@@ -1,0 +1,85 @@
+{
+  "system": "nes",
+  "normalized_title": "choujinsentaijetman",
+  "display_name": "Choujin Sentai Jetman (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Choujin Sentai Jetman (Japan).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "003B:01",
+          "desc": "Character Modifier",
+          "address": "0x003B"
+        },
+        {
+          "code": "0086:00",
+          "desc": "Weapon Modifier",
+          "address": "0x0086"
+        },
+        {
+          "code": "0087:08",
+          "desc": "Infinite Health",
+          "address": "0x0087"
+        },
+        {
+          "code": "0088:01",
+          "desc": "Infinite Special Attacks",
+          "address": "0x0088"
+        },
+        {
+          "code": "008A:00",
+          "desc": "Walk Through Enemies",
+          "address": "0x008A"
+        },
+        {
+          "code": "0617:00",
+          "desc": "Boss 1 Hit Kill",
+          "address": "0x0617"
+        },
+        {
+          "code": "004B:01",
+          "desc": "Area A Clear",
+          "address": "0x004B"
+        },
+        {
+          "code": "004C:01",
+          "desc": "Area B Clear",
+          "address": "0x004C"
+        },
+        {
+          "code": "004D:01",
+          "desc": "Area c Clear",
+          "address": "0x004D"
+        },
+        {
+          "code": "004E:01",
+          "desc": "Area d Clear",
+          "address": "0x004E"
+        },
+        {
+          "code": "004F:01",
+          "desc": "Area E Clear",
+          "address": "0x004F"
+        },
+        {
+          "code": "ASSPGPEL",
+          "desc": "Hit Anywhere Normal Bosses",
+          "address": "0x015C"
+        },
+        {
+          "code": "YESPIPGU",
+          "desc": "Hit Anywhere Normal Bosses",
+          "address": "0x010D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

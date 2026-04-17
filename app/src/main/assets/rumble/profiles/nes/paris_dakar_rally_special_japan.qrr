@@ -1,0 +1,6 @@
+game_name=Paris-Dakar Rally Special (Japan)
+game_key=paris_dakar_rally_special_japan
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_00c5	life_lost	0x00C5	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00c5	life_gained	0x00C5	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

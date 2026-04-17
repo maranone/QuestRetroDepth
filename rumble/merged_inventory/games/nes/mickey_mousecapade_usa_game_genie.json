@@ -1,0 +1,186 @@
+{
+  "system": "nes",
+  "normalized_title": "mickeymousecapade",
+  "display_name": "Mickey Mousecapade (USA) (Game Genie)",
+  "aliases": [
+    "Mickey Mousecapade (USA) (Game Genie)",
+    "Mickey Mousecapade (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\mickeymousecapade_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x00A6",
+        "0x00C1",
+        "0x00C2"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MickeyMousecapade-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x00C2",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x00C1",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x00A6",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mickey Mousecapade (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 37,
+      "distinct_address_count": 31,
+      "sample_raw_entries": [
+        {
+          "code": "SZSOPZVG",
+          "desc": "Infinite lives",
+          "address": "0x02A9"
+        },
+        {
+          "code": "PESOIPGA",
+          "desc": "Start with 2 lives",
+          "address": "0x018D"
+        },
+        {
+          "code": "IESOIPGA",
+          "desc": "Start with 6 lives",
+          "address": "0x018D"
+        },
+        {
+          "code": "AESOIPGE",
+          "desc": "Start with 9 lives",
+          "address": "0x018D"
+        },
+        {
+          "code": "OVOPPTSV",
+          "desc": "Infinite energy",
+          "address": "0x0669"
+        },
+        {
+          "code": "00C2:0C",
+          "desc": "Infinite Energy",
+          "address": "0x00C2"
+        },
+        {
+          "code": "00C1:03",
+          "desc": "Infinite Lives",
+          "address": "0x00C1"
+        },
+        {
+          "code": "00BB:43",
+          "desc": "Invincibility",
+          "address": "0x00BB"
+        },
+        {
+          "code": "00BB:00",
+          "desc": "Alternate Invincibility",
+          "address": "0x00BB"
+        },
+        {
+          "code": "00C2:0C",
+          "desc": "Alternate Invincibility",
+          "address": "0x00C2"
+        },
+        {
+          "code": "SGSOPZVG",
+          "desc": "Infinite Lives",
+          "address": "0x02C9"
+        },
+        {
+          "code": "SXOPLTSA",
+          "desc": "Infinite Energy",
+          "address": "0x062B"
+        },
+        {
+          "code": "ESEPKZEY",
+          "desc": "Invincibility",
+          "address": "0x025C"
+        },
+        {
+          "code": "ESVPNZEY",
+          "desc": "Invincibility",
+          "address": "0x025F"
+        },
+        {
+          "code": "AAIOSA",
+          "desc": "Hit Anywhere",
+          "address": "0x0085"
+        },
+        {
+          "code": "APIPXA",
+          "desc": "Hit Anywhere",
+          "address": "0x0012"
+        },
+        {
+          "code": "AAYOPI",
+          "desc": "Hit Anywhere",
+          "address": "0x0581"
+        },
+        {
+          "code": "AATPGI",
+          "desc": "One Hit Kills",
+          "address": "0x0504"
+        },
+        {
+          "code": "AASOSAVY",
+          "desc": "Hit Anywhere",
+          "address": "0x008D"
+        },
+        {
+          "code": "APSPXAEY",
+          "desc": "Hit Anywhere",
+          "address": "0x001A"
+        },
+        {
+          "code": "AANOPILA",
+          "desc": "Hit Anywhere",
+          "address": "0x0589"
+        },
+        {
+          "code": "AAVPGSAP",
+          "desc": "One Hit Kills",
+          "address": "0x050C"
+        },
+        {
+          "code": "AOEEILEI",
+          "desc": "Can Always Shoot",
+          "address": "0x039D"
+        },
+        {
+          "code": "00C2:0A",
+          "desc": "Infinite Health",
+          "address": "0x00C2"
+        },
+        {
+          "code": "00C1:09",
+          "desc": "Infinite Lives",
+          "address": "0x00C1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "system": "nes",
+  "normalized_title": "karatechamp",
+  "display_name": "Karate Champ (USA) (Game Genie)",
+  "aliases": [
+    "Karate Champ (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Karate Champ (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 12,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "0069:20",
+          "desc": "One Hit Wins Round",
+          "address": "0x0069"
+        },
+        {
+          "code": "005D:02",
+          "desc": "One Win Wins Stage",
+          "address": "0x005D"
+        },
+        {
+          "code": "PIIOZZ",
+          "desc": "After First Point, The Game Resets To The Title Screen At The First Attack",
+          "address": "0x02D2"
+        },
+        {
+          "code": "KIIOZZ",
+          "desc": "Game Freezes On First Attack",
+          "address": "0x02D2"
+        },
+        {
+          "code": "0066:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x0066"
+        },
+        {
+          "code": "0067:09",
+          "desc": "Infinite Time (Ten's Digit)",
+          "address": "0x0067"
+        },
+        {
+          "code": "006E:09",
+          "desc": "Max Score P1",
+          "address": "0x006E"
+        },
+        {
+          "code": "006F:09",
+          "desc": "Max Score P1",
+          "address": "0x006F"
+        },
+        {
+          "code": "0070:09",
+          "desc": "Max Score P1",
+          "address": "0x0070"
+        },
+        {
+          "code": "0071:09",
+          "desc": "Max Score P1",
+          "address": "0x0071"
+        },
+        {
+          "code": "0072:09",
+          "desc": "Max Score P1",
+          "address": "0x0072"
+        },
+        {
+          "code": "0073:09",
+          "desc": "Max Score P1",
+          "address": "0x0073"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

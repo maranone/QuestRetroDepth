@@ -1,0 +1,8 @@
+game_name=WDL - World Destruction League - Thunder Tanks (USA) (En,Fr,De)
+game_key=wdl_world_destruction_league_thunder_tanks_usa_en_fr_de
+system=gbc
+integration_tier=contrib
+trigger	damage_taken_health_c1c1	damage_taken	0xC1C1	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_c1c1	death	0xC1C1	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_d8c1	life_lost	0xD8C1	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_d8c1	life_gained	0xD8C1	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

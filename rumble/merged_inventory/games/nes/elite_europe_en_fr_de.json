@@ -1,0 +1,80 @@
+{
+  "system": "nes",
+  "normalized_title": "elite",
+  "display_name": "Elite (Europe) (En,Fr,De)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Elite (Europe) (En,Fr,De).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "SZOPYXVK",
+          "desc": "Infinite Missiles",
+          "address": "0x022F"
+        },
+        {
+          "code": "SXVOAUSE",
+          "desc": "Infinite Laser",
+          "address": "0x03A8"
+        },
+        {
+          "code": "03A1:FF",
+          "desc": "Infinite Credits",
+          "address": "0x03A1"
+        },
+        {
+          "code": "03A2:FF",
+          "desc": "Infinite Credits",
+          "address": "0x03A2"
+        },
+        {
+          "code": "03A3:FF",
+          "desc": "Infinite Credits",
+          "address": "0x03A3"
+        },
+        {
+          "code": "03A4:FF",
+          "desc": "Infinite Credits",
+          "address": "0x03A4"
+        },
+        {
+          "code": "0485:FF",
+          "desc": "Infinite FS",
+          "address": "0x0485"
+        },
+        {
+          "code": "03C8:04",
+          "desc": "Infinite Missiles",
+          "address": "0x03C8"
+        },
+        {
+          "code": "0390:00",
+          "desc": "Infinite Laser",
+          "address": "0x0390"
+        },
+        {
+          "code": "0486:FF",
+          "desc": "Infinite Shields",
+          "address": "0x0486"
+        },
+        {
+          "code": "0487:FF",
+          "desc": "Infinite Energy",
+          "address": "0x0487"
+        },
+        {
+          "code": "03DD:19",
+          "desc": "Elite Ranking",
+          "address": "0x03DD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,13 @@
+game_name=Dokapon Q - Monster Hunter! (Japan) (Code Breaker)
+game_key=dokapon_q_monster_hunter_japan_code_breaker
+system=gba
+integration_tier=contrib
+trigger	pickup_coins_02004aac	pickup	0x02004AAC	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_02004aae	pickup	0x02004AAE	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_02004a88	level_complete	0x02004A88	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_02004a90	damage_taken	0x02004A90	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02004a90	death	0x02004A90	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02004a98	damage_taken	0x02004A98	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02004a98	death	0x02004A98	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_02004b60	enemy_defeated	0x02004B60	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_02004b3e	enemy_defeated	0x02004B3E	1	uint	little	prev > curr	0.65	1	right:0.450:35

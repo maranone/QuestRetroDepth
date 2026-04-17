@@ -1,0 +1,12 @@
+game_name=Perman (Japan)
+game_key=perman_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_03bb	damage_taken	0x03BB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03bb	death	0x03BB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_03a2	damage_taken	0x03A2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03a2	death	0x03A2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_0729	enemy_defeated	0x0729	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	level_complete_level_00ec	level_complete	0x00EC	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_01a9	life_lost	0x01A9	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_01a9	life_gained	0x01A9	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

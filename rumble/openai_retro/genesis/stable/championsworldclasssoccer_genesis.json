@@ -1,0 +1,39 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "ChampionsWorldClassSoccer",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\ChampionsWorldClassSoccer-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "ChampionsWorldClassSoccer-Genesis"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "name": "chile_score",
+      "meta": {
+        "address": 16712897,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "germany_score",
+      "meta": {
+        "address": 16712896,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time_minutes",
+      "meta": {
+        "address": 16712251,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

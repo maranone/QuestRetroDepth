@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "backtofuture",
+  "display_name": "Back to the Future (USA) (Game Genie)",
+  "aliases": [
+    "Back to the Future (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Back to the Future (USA).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 30,
+      "distinct_address_count": 26,
+      "sample_raw_entries": [
+        {
+          "code": "PEXEGAGA",
+          "desc": "Start with 1 life",
+          "address": "0x008C"
+        },
+        {
+          "code": "AEXEGAGE",
+          "desc": "Start with 8 lives",
+          "address": "0x008C"
+        },
+        {
+          "code": "SZKEGOVK",
+          "desc": "Never lose a life in Hill Valley game",
+          "address": "0x01AC"
+        },
+        {
+          "code": "SXOELOVK",
+          "desc": "Never lose a life in Cafe game",
+          "address": "0x01AB"
+        },
+        {
+          "code": "SXKALOVK",
+          "desc": "Never lose a life in School game",
+          "address": "0x012B"
+        },
+        {
+          "code": "SXVELOVK",
+          "desc": "Never lose a life in Dancing Hall game",
+          "address": "0x01AB"
+        },
+        {
+          "code": "AVVOUZSZ",
+          "desc": "Disable all timers",
+          "address": "0x02EB"
+        },
+        {
+          "code": "0393:04",
+          "desc": "Infinite Lives",
+          "address": "0x0393"
+        },
+        {
+          "code": "04EC:3A",
+          "desc": "Infinite Time",
+          "address": "0x04EC"
+        },
+        {
+          "code": "04B8:FF",
+          "desc": "Infinite Photo Timer",
+          "address": "0x04B8"
+        },
+        {
+          "code": "SGGEGO",
+          "desc": "Infinite Lives",
+          "address": "0x01C4"
+        },
+        {
+          "code": "ATPOEL",
+          "desc": "Infinite Time",
+          "address": "0x03E0"
+        },
+        {
+          "code": "AVPPSL",
+          "desc": "Infinite Picture Time",
+          "address": "0x0365"
+        },
+        {
+          "code": "NYTEXO",
+          "desc": "Untouchable",
+          "address": "0x01F2"
+        },
+        {
+          "code": "00D2:00",
+          "desc": "Level Modifier",
+          "address": "0x00D2"
+        },
+        {
+          "code": "0089:32",
+          "desc": "Auto Win In Diner",
+          "address": "0x0089"
+        },
+        {
+          "code": "0089:64",
+          "desc": "Auto Win In School",
+          "address": "0x0089"
+        },
+        {
+          "code": "047A:13",
+          "desc": "Auto Win In Dance",
+          "address": "0x047A"
+        },
+        {
+          "code": "0660:58",
+          "desc": "Always Drive 88/Mph",
+          "address": "0x0660"
+        },
+        {
+          "code": "SZOESLSA",
+          "desc": "Invincibility Hill Valley Game",
+          "address": "0x03AD"
+        },
+        {
+          "code": "YNEPIKEX",
+          "desc": "Auto Win Hill Valley Levels",
+          "address": "0x047D"
+        },
+        {
+          "code": "PEEPTGGA",
+          "desc": "Auto Win Hill Valley Levels",
+          "address": "0x040E"
+        },
+        {
+          "code": "AENEXZIA",
+          "desc": "Invincibility",
+          "address": "0x028A"
+        },
+        {
+          "code": "AONENZYL",
+          "desc": "Invincibility",
+          "address": "0x029F"
+        },
+        {
+          "code": "APUEKLEY",
+          "desc": "Invincibility",
+          "address": "0x039C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

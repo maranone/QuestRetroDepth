@@ -1,0 +1,62 @@
+{
+  "system": "nes",
+  "normalized_title": "moaikun",
+  "display_name": "Moai-kun (Japan) (Game Genie)",
+  "aliases": [
+    "Moai-kun (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Moai-kun (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "SZOAUGVG",
+          "desc": "Infinite Lives",
+          "address": "0x042B"
+        },
+        {
+          "code": "PEEOZYGT",
+          "desc": "Fall From High Places Without Laying Down And Crying",
+          "address": "0x078A"
+        },
+        {
+          "code": "AUSEGZPE",
+          "desc": "Start On Last Level",
+          "address": "0x02BC"
+        },
+        {
+          "code": "0043:00",
+          "desc": "Exit Always Open",
+          "address": "0x0043"
+        },
+        {
+          "code": "00CE:01",
+          "desc": "Infinite Bombs",
+          "address": "0x00CE"
+        },
+        {
+          "code": "AXNPZNOL",
+          "desc": "Jump in Midair",
+          "address": "0x072A"
+        },
+        {
+          "code": "EKNPLNIL",
+          "desc": "Jump in Midair",
+          "address": "0x074B"
+        },
+        {
+          "code": "NNNPGYUK",
+          "desc": "Jump in Midair",
+          "address": "0x077C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

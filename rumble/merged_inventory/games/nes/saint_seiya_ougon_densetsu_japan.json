@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "saintseiyaougondensetsu",
+  "display_name": "Saint Seiya - Ougon Densetsu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Saint Seiya - Ougon Densetsu (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "008B:C8",
+          "desc": "Fly",
+          "address": "0x008B"
+        },
+        {
+          "code": "0689:40",
+          "desc": "Infinite Energy",
+          "address": "0x0689"
+        },
+        {
+          "code": "068A:40",
+          "desc": "Infinite Energy",
+          "address": "0x068A"
+        },
+        {
+          "code": "0685:40",
+          "desc": "Infinite Power",
+          "address": "0x0685"
+        },
+        {
+          "code": "0686:40",
+          "desc": "Infinite Power",
+          "address": "0x0686"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

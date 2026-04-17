@@ -1,0 +1,6 @@
+game_name=NHL All-Star Hockey '95 (USA) (Action Replay)
+game_key=nhl_all_star_hockey_95_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff50b0	score	0xFF50B0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff5b02	score	0xFF5B02	1	uint	little	prev < curr	0.8	1	right:0.350:60

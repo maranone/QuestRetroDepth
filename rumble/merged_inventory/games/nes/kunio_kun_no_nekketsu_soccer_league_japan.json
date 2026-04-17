@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "kuniokunnonekketsusoccerleague",
+  "display_name": "Kunio-kun no Nekketsu Soccer League (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kunio-kun no Nekketsu Soccer League (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "OLNOKVOO",
+          "desc": "All Chars are Stronger",
+          "address": "0x06BC"
+        },
+        {
+          "code": "052E:63",
+          "desc": "P1 Score Always In 99 Goals",
+          "address": "0x052E"
+        },
+        {
+          "code": "052F:00",
+          "desc": "Cpu Score Always In Zero Goals",
+          "address": "0x052F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

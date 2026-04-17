@@ -12,6 +12,10 @@
 #include "pico_int.h"
 #include <platform/common/upscale.h>
 
+#ifdef PICODRIVE_QRD_SMS_LAYER_CAPTURE
+#include "picodrive_sms_layer_capture.h"
+#endif
+
 static void (*FinalizeLineSMS)(int line);
 static int skip_next_line;
 static int screen_offset, line_offset;
@@ -319,6 +323,13 @@ static void DrawDisplayM4(int scanline)
   // sprites
   if (!(pv->debug_p & PVD_KILL_S_LO))
     DrawSpritesM4();
+
+#ifdef PICODRIVE_QRD_SMS_LAYER_CAPTURE
+  // Capture per-pixel source IDs before the first-column mask overwrites HighCol.
+  // HighCol + 8 = pixel 0..255 of this scanline:
+  //   byte==0 -> backdrop, byte&0x10 -> sprite, else -> BG tile.
+  picodrive_sms_lc_capture_line(scanline, Pico.est.HighCol + 8, 256);
+#endif
 
   if ((pv->reg[0] & 0x20) && !(Pico.m.hardware & PMS_HW_LCD)) {
     // first column masked with background, caculate offset to start of line

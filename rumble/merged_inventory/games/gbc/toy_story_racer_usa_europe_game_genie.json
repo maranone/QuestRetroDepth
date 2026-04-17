@@ -1,0 +1,58 @@
+{
+  "system": "gbc",
+  "normalized_title": "toystoryracer",
+  "display_name": "Toy Story Racer (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Toy Story Racer (USA, Europe) (GameShark)",
+    "Toy Story Racer (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Toy Story Racer (USA, Europe).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0114C8FF",
+          "desc": "Car Setup Menu",
+          "address": "0xC8FF"
+        },
+        {
+          "code": "0100C5C6",
+          "desc": "Friction Value",
+          "address": "0xC5C6"
+        },
+        {
+          "code": "0100C6C6",
+          "desc": "Break Value",
+          "address": "0xC6C6"
+        },
+        {
+          "code": "0100C7C6",
+          "desc": "Steer Value",
+          "address": "0xC7C6"
+        },
+        {
+          "code": "0100C8C6",
+          "desc": "Traction",
+          "address": "0xC8C6"
+        },
+        {
+          "code": "0100C9C6",
+          "desc": "Spin Value",
+          "address": "0xC9C6"
+        },
+        {
+          "code": "0100CAC6",
+          "desc": "Acceleration Value",
+          "address": "0xCAC6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

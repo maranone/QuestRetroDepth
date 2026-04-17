@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "cars",
+  "display_name": "Cars (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Cars (World) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1000F784",
+          "desc": "Master Code",
+          "address": "0x0200F784"
+        },
+        {
+          "code": "32015BF8",
+          "desc": "Max Boltz",
+          "address": "0x02015BF8"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Cars (World) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1000F784",
+          "desc": "Master Code",
+          "address": "0x0200F784"
+        },
+        {
+          "code": "32015BF8",
+          "desc": "Max Boltz",
+          "address": "0x02015BF8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

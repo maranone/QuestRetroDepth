@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "battlechess",
+  "display_name": "Battle Chess (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Battle Chess (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0091:00",
+          "desc": "Cool Graphical Glitches",
+          "address": "0x0091"
+        },
+        {
+          "code": "040F:00",
+          "desc": "Cool Graphical Glitches",
+          "address": "0x040F"
+        },
+        {
+          "code": "0467:00",
+          "desc": "Cool Graphical Glitches",
+          "address": "0x0467"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,22 @@
+game_name=SD Gundam Gaiden - Knight Gundam Monogatari 2 - Hikari no Knight (Japan)
+game_key=sd_gundam_gaiden_knight_gundam_monogatari_2_hikari_no_knight_japan
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_0300	pickup	0x0300	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0301	pickup	0x0301	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_040c	damage_taken	0x040C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_040c	death	0x040C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_041e	damage_taken	0x041E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_041e	death	0x041E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0430	damage_taken	0x0430	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0430	death	0x0430	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0442	damage_taken	0x0442	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0442	death	0x0442	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0454	damage_taken	0x0454	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0454	death	0x0454	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0466	damage_taken	0x0466	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0466	death	0x0466	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_0275	enemy_defeated	0x0275	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0287	enemy_defeated	0x0287	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0299	enemy_defeated	0x0299	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_02ab	enemy_defeated	0x02AB	1	uint	little	prev > curr	0.65	1	right:0.450:35

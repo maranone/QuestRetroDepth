@@ -1,0 +1,7 @@
+game_name=Tabo's Tactics
+game_key=tabo_s_tactics
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_00ad	life_lost	0x00AD	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00ad	life_gained	0x00AD	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_02d6	level_complete	0x02D6	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

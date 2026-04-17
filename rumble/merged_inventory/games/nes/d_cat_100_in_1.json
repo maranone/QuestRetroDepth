@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "dcat100in1",
+  "display_name": "D-Cat 100-in-1",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\D-Cat 100-in-1.cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "006E:03",
+          "desc": "Infinite Lives",
+          "address": "0x006E"
+        },
+        {
+          "code": "0040:03",
+          "desc": "Infinite Lives",
+          "address": "0x0040"
+        },
+        {
+          "code": "00E3:00",
+          "desc": "Infinite Time",
+          "address": "0x00E3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "rocketpowerbeachbandits",
+  "display_name": "Rocket Power - Beach Bandits (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Rocket Power - Beach Bandits (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "10027900",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02027900"
+        },
+        {
+          "code": "3200B37A",
+          "desc": "Infinite Health",
+          "address": "0x0200B37A"
+        },
+        {
+          "code": "3200B2C9",
+          "desc": "Infinite Yellow Rockets",
+          "address": "0x0200B2C9"
+        },
+        {
+          "code": "3200B2E9",
+          "desc": "Infinite Red Rockets",
+          "address": "0x0200B2E9"
+        },
+        {
+          "code": "3200B3C9",
+          "desc": "Infinite Pucks",
+          "address": "0x0200B3C9"
+        },
+        {
+          "code": "7200B3CC",
+          "desc": "Have All Arcade Prizes",
+          "address": "0x0200B3CC"
+        },
+        {
+          "code": "3200B171",
+          "desc": "Have All Arcade Prizes",
+          "address": "0x0200B171"
+        },
+        {
+          "code": "3200B170",
+          "desc": "Have Oil Squirter",
+          "address": "0x0200B170"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Rocket Power - Beach Bandits (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "10027900",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02027900"
+        },
+        {
+          "code": "3200B37A",
+          "desc": "Infinite Health",
+          "address": "0x0200B37A"
+        },
+        {
+          "code": "3200B2C9",
+          "desc": "Infinite Yellow Rockets",
+          "address": "0x0200B2C9"
+        },
+        {
+          "code": "3200B2E9",
+          "desc": "Infinite Red Rockets",
+          "address": "0x0200B2E9"
+        },
+        {
+          "code": "3200B3C9",
+          "desc": "Infinite Pucks",
+          "address": "0x0200B3C9"
+        },
+        {
+          "code": "7200B3CC",
+          "desc": "Have All Arcade Prizes",
+          "address": "0x0200B3CC"
+        },
+        {
+          "code": "3200B171",
+          "desc": "Have All Arcade Prizes",
+          "address": "0x0200B171"
+        },
+        {
+          "code": "3200B170",
+          "desc": "Have Oil Squirter",
+          "address": "0x0200B170"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

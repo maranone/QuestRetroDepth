@@ -1,0 +1,36 @@
+game_name=Dai-3-ji Super Robot Taisen (Japan) (Action Replay)
+game_key=dai_3_ji_super_robot_taisen_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_1806	damage_taken	0x7E1806	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1806	death	0x7E1806	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1807	damage_taken	0x7E1807	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1807	death	0x7E1807	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1886	damage_taken	0x7E1886	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1886	death	0x7E1886	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1887	damage_taken	0x7E1887	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1887	death	0x7E1887	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1808	damage_taken	0x7E1808	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1808	death	0x7E1808	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1809	damage_taken	0x7E1809	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1809	death	0x7E1809	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1888	damage_taken	0x7E1888	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1888	death	0x7E1888	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1889	damage_taken	0x7E1889	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1889	death	0x7E1889	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_180a	damage_taken	0x7E180A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_180a	death	0x7E180A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_180b	damage_taken	0x7E180B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_180b	death	0x7E180B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_188a	damage_taken	0x7E188A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_188a	death	0x7E188A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_188b	damage_taken	0x7E188B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_188b	death	0x7E188B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_180c	damage_taken	0x7E180C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_180c	death	0x7E180C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_180d	damage_taken	0x7E180D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_180d	death	0x7E180D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_188c	damage_taken	0x7E188C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_188c	death	0x7E188C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_188d	damage_taken	0x7E188D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_188d	death	0x7E188D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

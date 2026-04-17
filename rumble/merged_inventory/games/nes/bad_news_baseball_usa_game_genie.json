@@ -1,0 +1,72 @@
+{
+  "system": "nes",
+  "normalized_title": "badnewsbaseball",
+  "display_name": "Bad News Baseball (USA) (Game Genie)",
+  "aliases": [
+    "Bad News Baseball (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bad News Baseball (USA).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "PUGEON",
+          "desc": "Lots Of Weird Stuff",
+          "address": "0x07B1"
+        },
+        {
+          "code": "OGLOPP",
+          "desc": "You Hit The Ball As Usual [Weird Pitching] And It Flies As Usual, But Everyone That Is Moving Goes To The Left Of The Field Forever [Cannot Finish Game]",
+          "address": "0x01C1"
+        },
+        {
+          "code": "PIIANT",
+          "desc": "Game Resets Or Crashes When Switching Sides",
+          "address": "0x0657"
+        },
+        {
+          "code": "050D:00",
+          "desc": "Outs Modifier",
+          "address": "0x050D"
+        },
+        {
+          "code": "0305:00",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x0305"
+        },
+        {
+          "code": "0306:00",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x0306"
+        },
+        {
+          "code": "XTOPAKEV",
+          "desc": "Balls Are Strikes",
+          "address": "0x0468"
+        },
+        {
+          "code": "04DE:00",
+          "desc": "Pitcher Posistion Modifier",
+          "address": "0x04DE"
+        },
+        {
+          "code": "04E6:00",
+          "desc": "Batter Handedness Modifier",
+          "address": "0x04E6"
+        },
+        {
+          "code": "046C:00",
+          "desc": "Runners Run Toward the dugout instead of to 1st Base",
+          "address": "0x046C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "system": "nes",
+  "normalized_title": "whoframedrogerrabbit",
+  "display_name": "Who Framed Roger Rabbit (USA) (Game Genie)",
+  "aliases": [
+    "Who Framed Roger Rabbit (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Who Framed Roger Rabbit (USA).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "SXVOYIVG",
+          "desc": "Never lose a life except in Punch lines",
+          "address": "0x05AF"
+        },
+        {
+          "code": "SXKELNVK",
+          "desc": "Infinite continues",
+          "address": "0x07AB"
+        },
+        {
+          "code": "03EB:01",
+          "desc": "Fly Mode",
+          "address": "0x03EB"
+        },
+        {
+          "code": "03E4:00",
+          "desc": "Enemy Modifiers",
+          "address": "0x03E4"
+        },
+        {
+          "code": "03E5:00",
+          "desc": "Enemy Modifiers",
+          "address": "0x03E5"
+        },
+        {
+          "code": "03E6:00",
+          "desc": "Enemy Modifiers",
+          "address": "0x03E6"
+        },
+        {
+          "code": "03E7:00",
+          "desc": "Enemy Modifiers",
+          "address": "0x03E7"
+        },
+        {
+          "code": "03E8:00",
+          "desc": "Enemy Modifiers",
+          "address": "0x03E8"
+        },
+        {
+          "code": "03E9:00",
+          "desc": "Enemy Modifiers",
+          "address": "0x03E9"
+        },
+        {
+          "code": "00C4:09",
+          "desc": "Infinite Lives",
+          "address": "0x00C4"
+        },
+        {
+          "code": "0090:BE",
+          "desc": "Building Modifier",
+          "address": "0x0090"
+        },
+        {
+          "code": "057A:09",
+          "desc": "Infinite Bombs",
+          "address": "0x057A"
+        },
+        {
+          "code": "00CF:C1",
+          "desc": "Infinite Health vs Judge Doom",
+          "address": "0x00CF"
+        },
+        {
+          "code": "00CE:78",
+          "desc": "Judge Doom already dead when you get to him",
+          "address": "0x00CE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

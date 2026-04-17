@@ -1,0 +1,7 @@
+game_name=Adventure Island II (USA)
+game_key=AdventureIslandII-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_07d2	life_lost	0x07D2	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_07d2	life_gained	0x07D2	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_07d8	score	0x07D8	4	nibble	little	prev < curr	0.8	1	right:0.350:60

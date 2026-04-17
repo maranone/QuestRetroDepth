@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "bugsbunnyfunhouse",
+  "display_name": "Bugs Bunny Fun House (USA) (Beta)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bugs Bunny Fun House (USA) (Beta).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "007C:63",
+          "desc": "Infinite Lives",
+          "address": "0x007C"
+        },
+        {
+          "code": "0068:05",
+          "desc": "Stage Modifier",
+          "address": "0x0068"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

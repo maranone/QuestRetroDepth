@@ -1,0 +1,53 @@
+{
+  "system": "gbc",
+  "normalized_title": "paperboy",
+  "display_name": "Paperboy (USA, Europe) (GameShark)",
+  "aliases": [
+    "Paperboy (USA, Europe) (Xploder)",
+    "Paperboy (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Paperboy (USA, Europe).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "010AD8D0",
+          "desc": "Infinite Papers",
+          "address": "0xD8D0"
+        },
+        {
+          "code": "0100CBC8",
+          "desc": "Fake Difficulty Screen Timer Modifier (Graphic)",
+          "address": "0xCBC8"
+        },
+        {
+          "code": "0100D2C8",
+          "desc": "Music Modifier",
+          "address": "0xD2C8"
+        },
+        {
+          "code": "0100D3C8",
+          "desc": "SFX Modifier",
+          "address": "0xD3C8"
+        },
+        {
+          "code": "0100D1C8",
+          "desc": "Difficulty Pace Modifier",
+          "address": "0xD1C8"
+        },
+        {
+          "code": "0100C8C0",
+          "desc": "Day Modifier",
+          "address": "0xC8C0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

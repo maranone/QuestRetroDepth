@@ -1,0 +1,8 @@
+game_name=NFL (USA)
+game_key=nfl_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_00ae	score	0x00AE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00af	score	0x00AF	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00be	score	0x00BE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00bf	score	0x00BF	1	uint	little	prev < curr	0.8	1	right:0.350:60

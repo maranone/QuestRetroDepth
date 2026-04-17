@@ -1,0 +1,152 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "KingOfTheMonsters2",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\KingOfTheMonsters2-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "KingOfTheMonsters2-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_health_ff0993",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0xFF0993",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF0993",
+          "ram_offset": 2451
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFF0993",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_ff0993",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0xFF0993",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF0993",
+          "ram_offset": 2451
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFF0993",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_ff0528",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xFF0528",
+          "size": 4,
+          "value_type": "bcd",
+          "byte_order": "big",
+          "raw_type": ">d4",
+          "address": "0xFF0528",
+          "ram_offset": 1320
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xFF0528",
+          "raw_type": ">d4"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "enemy_matches_won",
+      "meta": {
+        "address": 16713011,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "matches_won",
+      "meta": {
+        "address": 16713009,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "power",
+      "meta": {
+        "address": 16714125,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time",
+      "meta": {
+        "address": 16713231,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

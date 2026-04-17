@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "medabotsaxmetabeever",
+  "display_name": "Medabots AX - Metabee Ver. (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Medabots AX - Metabee Ver. (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10000568",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000568"
+        },
+        {
+          "code": "320100B0",
+          "desc": "Max Medaforce Leader",
+          "address": "0x020100B0"
+        },
+        {
+          "code": "320103C8",
+          "desc": "Max Medaforce Partner",
+          "address": "0x020103C8"
+        },
+        {
+          "code": "8201003A",
+          "desc": "Max/Infinite Rounds Leader",
+          "address": "0x0201003A"
+        },
+        {
+          "code": "82010352",
+          "desc": "Max/Infinite Rounds Partner",
+          "address": "0x02010352"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Medabots AX - Metabee Ver. (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10000568",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000568"
+        },
+        {
+          "code": "320100B0",
+          "desc": "Max Medaforce Leader",
+          "address": "0x020100B0"
+        },
+        {
+          "code": "320103C8",
+          "desc": "Max Medaforce Partner",
+          "address": "0x020103C8"
+        },
+        {
+          "code": "8201003A",
+          "desc": "Max/Infinite Rounds Leader",
+          "address": "0x0201003A"
+        },
+        {
+          "code": "82010352",
+          "desc": "Max/Infinite Rounds Partner",
+          "address": "0x02010352"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

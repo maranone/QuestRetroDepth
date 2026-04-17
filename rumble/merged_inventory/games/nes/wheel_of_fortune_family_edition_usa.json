@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "wheeloffortunefamilyedition",
+  "display_name": "Wheel of Fortune - Family Edition (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wheel of Fortune - Family Edition (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "YENOIAYA",
+          "desc": "Less time for choosing",
+          "address": "0x008D"
+        },
+        {
+          "code": "GEKPOAYA",
+          "desc": "Less time for choosing",
+          "address": "0x0009"
+        },
+        {
+          "code": "YENOIAYE",
+          "desc": "More time for choosing",
+          "address": "0x008D"
+        },
+        {
+          "code": "YEKPOAYE",
+          "desc": "More time for choosing",
+          "address": "0x0009"
+        },
+        {
+          "code": "0058:63",
+          "desc": "Infinite Time To Decide Your Actions P1",
+          "address": "0x0058"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

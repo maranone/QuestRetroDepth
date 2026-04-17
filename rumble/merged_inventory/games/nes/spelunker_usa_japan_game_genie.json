@@ -1,0 +1,105 @@
+{
+  "system": "nes",
+  "normalized_title": "spelunker",
+  "display_name": "Spelunker (USA, Japan) (Game Genie)",
+  "aliases": [
+    "Spelunker (Japan)",
+    "Spelunker (USA)",
+    "Spelunker (USA, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\spelunker_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x022E",
+        "0x0234"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Spelunker-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0234",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x022E",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Spelunker (USA, Japan) (Game Genie).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 10,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "IXOOPSVK",
+          "desc": "Infinite Lives",
+          "address": "0x05A9"
+        },
+        {
+          "code": "AANATPZA",
+          "desc": "Start With 1 Life",
+          "address": "0x010E"
+        },
+        {
+          "code": "IANATPZA",
+          "desc": "Start With 6 Lives",
+          "address": "0x010E"
+        },
+        {
+          "code": "AANATPZE",
+          "desc": "Start With 9 Lives",
+          "address": "0x010E"
+        },
+        {
+          "code": "AEXAYTAP",
+          "desc": "Become Invisible!",
+          "address": "0x060F"
+        },
+        {
+          "code": "ATKPAIAZ",
+          "desc": "Become Invincible",
+          "address": "0x0568"
+        },
+        {
+          "code": "TUEEYKNN",
+          "desc": "Become Invincible",
+          "address": "0x04BF"
+        },
+        {
+          "code": "GXOAPKIX",
+          "desc": "Become Invincible",
+          "address": "0x0429"
+        },
+        {
+          "code": "SNEAKEVN",
+          "desc": "Jump A Little Higher",
+          "address": "0x007C"
+        },
+        {
+          "code": "EANEEAAA",
+          "desc": "Jump A Little Higher",
+          "address": "0x0088"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

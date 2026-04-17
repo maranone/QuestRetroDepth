@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "caesarspalaceadvancemillenniumgoldedition",
+  "display_name": "Caesars Palace Advance - Millennium Gold Edition (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Caesars Palace Advance - Millennium Gold Edition (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10002278",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002278"
+        },
+        {
+          "code": "83004030",
+          "desc": "Infinite Money",
+          "address": "0x02004030"
+        },
+        {
+          "code": "83004030",
+          "desc": "Max Money",
+          "address": "0x02004030"
+        },
+        {
+          "code": "83004032",
+          "desc": "Max Money",
+          "address": "0x02004032"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Caesars Palace Advance - Millennium Gold Edition (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10002278",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002278"
+        },
+        {
+          "code": "83004030",
+          "desc": "Infinite Money",
+          "address": "0x02004030"
+        },
+        {
+          "code": "83004030",
+          "desc": "Max Money",
+          "address": "0x02004030"
+        },
+        {
+          "code": "83004032",
+          "desc": "Max Money",
+          "address": "0x02004032"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

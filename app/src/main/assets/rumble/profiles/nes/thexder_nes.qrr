@@ -1,0 +1,7 @@
+game_name=Thexder (Japan)
+game_key=Thexder-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_00da	damage_taken	0x00DA	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00da	death	0x00DA	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_00d4	score	0x00D4	2	uint	little	prev < curr	0.8	1	right:0.350:60

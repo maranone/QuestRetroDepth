@@ -1,0 +1,6 @@
+game_name=Capcom's Soccer Shootout (USA)
+game_key=capcom_s_soccer_shootout_usa
+system=snes
+integration_tier=contrib
+trigger	score_score_06ce	score	0x7E06CE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_06cf	score	0x7E06CF	1	uint	little	prev < curr	0.8	1	right:0.350:60

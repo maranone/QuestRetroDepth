@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "eragon",
+  "display_name": "Eragon (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Eragon (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "43005124",
+          "desc": "Have All 'Craft' Items",
+          "address": "0x02005124"
+        },
+        {
+          "code": "33005123",
+          "desc": "Have All 'Craft' Items",
+          "address": "0x02005123"
+        },
+        {
+          "code": "430050E4",
+          "desc": "Have All 'Forge' Items",
+          "address": "0x020050E4"
+        },
+        {
+          "code": "430050F0",
+          "desc": "Have All 'Consumable' Items",
+          "address": "0x020050F0"
+        },
+        {
+          "code": "33005122",
+          "desc": "Have All 'Consumable' Items",
+          "address": "0x02005122"
+        },
+        {
+          "code": "730051C4",
+          "desc": "Access Debug/Cheat Menu (Press L To Activate)",
+          "address": "0x020051C4"
+        },
+        {
+          "code": "83005660",
+          "desc": "Access Debug/Cheat Menu (Press L To Activate)",
+          "address": "0x02005660"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Eragon (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "43005124",
+          "desc": "Have All 'Craft' Items",
+          "address": "0x02005124"
+        },
+        {
+          "code": "33005123",
+          "desc": "Have All 'Craft' Items",
+          "address": "0x02005123"
+        },
+        {
+          "code": "430050E4",
+          "desc": "Have All 'Forge' Items",
+          "address": "0x020050E4"
+        },
+        {
+          "code": "430050F0",
+          "desc": "Have All 'Consumable' Items",
+          "address": "0x020050F0"
+        },
+        {
+          "code": "33005122",
+          "desc": "Have All 'Consumable' Items",
+          "address": "0x02005122"
+        },
+        {
+          "code": "730051C4",
+          "desc": "Access Debug/Cheat Menu (Press L To Activate)",
+          "address": "0x020051C4"
+        },
+        {
+          "code": "83005660",
+          "desc": "Access Debug/Cheat Menu (Press L To Activate)",
+          "address": "0x02005660"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

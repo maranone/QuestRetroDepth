@@ -1,0 +1,77 @@
+{
+  "system": "nes",
+  "normalized_title": "wolverine",
+  "display_name": "Wolverine (USA) (Game Genie)",
+  "aliases": [
+    "Wolverine (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wolverine (USA).cht",
+      "total_cheat_rows": 33,
+      "raw_entry_count": 11,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "EPPOTV",
+          "desc": "No &quot;Snikt&quot; Noise When Wolverine Pops Out Claws",
+          "address": "0x0696"
+        },
+        {
+          "code": "00CD:30",
+          "desc": "Infinite Energy",
+          "address": "0x00CD"
+        },
+        {
+          "code": "04DA:03",
+          "desc": "Infinite Lives",
+          "address": "0x04DA"
+        },
+        {
+          "code": "00CD:3F",
+          "desc": "Infinite Health",
+          "address": "0x00CD"
+        },
+        {
+          "code": "04DA:63",
+          "desc": "Infinite Lives",
+          "address": "0x04DA"
+        },
+        {
+          "code": "00CD:40",
+          "desc": "Infinite Strength",
+          "address": "0x00CD"
+        },
+        {
+          "code": "06A9:40",
+          "desc": "Infinite Strength",
+          "address": "0x06A9"
+        },
+        {
+          "code": "001D:40",
+          "desc": "In Berserker Rage",
+          "address": "0x001D"
+        },
+        {
+          "code": "06AA:40",
+          "desc": "In Berserker Rage",
+          "address": "0x06AA"
+        },
+        {
+          "code": "06E1:63",
+          "desc": "Infinite Air",
+          "address": "0x06E1"
+        },
+        {
+          "code": "00CA:00",
+          "desc": "Level Modifier",
+          "address": "0x00CA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

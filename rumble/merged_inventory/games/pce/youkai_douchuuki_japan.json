@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "youkaidouchuuki",
+  "display_name": "Youkai Douchuuki (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Youkai Douchuuki (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f0028:16",
+          "desc": "Infinite Energy",
+          "address": "0x1F0028"
+        },
+        {
+          "code": "1f125b:09",
+          "desc": "Invincibility",
+          "address": "0x1F125B"
+        },
+        {
+          "code": "1f123b:09",
+          "desc": "Lots of Cash",
+          "address": "0x1F123B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

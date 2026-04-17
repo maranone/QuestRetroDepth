@@ -1,0 +1,11 @@
+game_name=Ferias Frustradas do Pica Pau (Brazil)
+game_key=ferias_frustradas_do_pica_pau_brazil
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ff01d6	life_lost	0xFF01D6	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff01d6	life_gained	0xFF01D6	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_ff01d8	damage_taken	0xFF01D8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff01d8	death	0xFF01D8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_ff01da	pickup	0xFF01DA	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_ff01dc	enemy_defeated	0xFF01DC	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	level_complete_level_ff0ec2	level_complete	0xFF0EC2	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

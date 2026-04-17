@@ -1,0 +1,6 @@
+game_name=I Love Softball (Japan)
+game_key=i_love_softball_japan
+system=nes
+integration_tier=contrib
+trigger	score_score_0091	score	0x0091	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0092	score	0x0092	1	uint	little	prev < curr	0.8	1	right:0.350:60

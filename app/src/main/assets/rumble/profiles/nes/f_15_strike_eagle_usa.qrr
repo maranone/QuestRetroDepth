@@ -1,0 +1,7 @@
+game_name=F-15 Strike Eagle (USA)
+game_key=f_15_strike_eagle_usa
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_006f	damage_taken	0x006F	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_006f	death	0x006F	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0019	pickup	0x0019	1	uint	little	prev != curr	0.8	1	right:0.250:18

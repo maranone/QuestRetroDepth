@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "klonoaheroesdensetsunostarmedal",
+  "display_name": "Klonoa Heroes - Densetsu no Star Medal (Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Klonoa Heroes - Densetsu no Star Medal (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "83003134",
+          "desc": "Max Gold",
+          "address": "0x02003134"
+        },
+        {
+          "code": "830037D0",
+          "desc": "Max Gold",
+          "address": "0x020037D0"
+        },
+        {
+          "code": "33006D62",
+          "desc": "Max Red Health Items",
+          "address": "0x02006D62"
+        },
+        {
+          "code": "33006D62",
+          "desc": "Max Red Health Items",
+          "address": "0x02006D62"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Klonoa Heroes - Densetsu no Star Medal (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "83003134",
+          "desc": "Max Gold",
+          "address": "0x02003134"
+        },
+        {
+          "code": "830037D0",
+          "desc": "Max Gold",
+          "address": "0x020037D0"
+        },
+        {
+          "code": "33006D62",
+          "desc": "Max Red Health Items",
+          "address": "0x02006D62"
+        },
+        {
+          "code": "33006D62",
+          "desc": "Max Red Health Items",
+          "address": "0x02006D62"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

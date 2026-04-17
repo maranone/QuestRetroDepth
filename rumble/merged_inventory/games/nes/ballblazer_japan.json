@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "ballblazer",
+  "display_name": "Ballblazer (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ballblazer (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "00BC:09",
+          "desc": "Infinite Time",
+          "address": "0x00BC"
+        },
+        {
+          "code": "00BD:09",
+          "desc": "Infinite Time",
+          "address": "0x00BD"
+        },
+        {
+          "code": "00BE:09",
+          "desc": "Infinite Time",
+          "address": "0x00BE"
+        },
+        {
+          "code": "00BF:09",
+          "desc": "Infinite Time",
+          "address": "0x00BF"
+        },
+        {
+          "code": "0356:0A",
+          "desc": "Max Score for top player",
+          "address": "0x0356"
+        },
+        {
+          "code": "0358:00",
+          "desc": "Top Player modifier",
+          "address": "0x0358"
+        },
+        {
+          "code": "0364:0A",
+          "desc": "Max Score for Bottom Player",
+          "address": "0x0364"
+        },
+        {
+          "code": "0366:00",
+          "desc": "Bottom Player Modifier",
+          "address": "0x0366"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

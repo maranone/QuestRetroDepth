@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "palamedes",
+  "display_name": "Palamedes (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Palamedes (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0585:00",
+          "desc": "Automatically Beat Levels",
+          "address": "0x0585"
+        },
+        {
+          "code": "0445:00",
+          "desc": "Opponent Does Nothing",
+          "address": "0x0445"
+        },
+        {
+          "code": "0017:00",
+          "desc": "Level Select Highlighter Modifier (0-4)",
+          "address": "0x0017"
+        },
+        {
+          "code": "0012:09",
+          "desc": "Max High Score",
+          "address": "0x0012"
+        },
+        {
+          "code": "0013:09",
+          "desc": "Max High Score",
+          "address": "0x0013"
+        },
+        {
+          "code": "0014:09",
+          "desc": "Max High Score",
+          "address": "0x0014"
+        },
+        {
+          "code": "0053:09",
+          "desc": "Max Score P1",
+          "address": "0x0053"
+        },
+        {
+          "code": "0054:09",
+          "desc": "Max Score P1",
+          "address": "0x0054"
+        },
+        {
+          "code": "0055:09",
+          "desc": "Max Score P1",
+          "address": "0x0055"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

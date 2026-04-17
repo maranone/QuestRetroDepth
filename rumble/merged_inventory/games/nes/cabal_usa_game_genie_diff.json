@@ -1,0 +1,148 @@
+{
+  "system": "nes",
+  "normalized_title": "cabal",
+  "display_name": "Cabal (USA) (Game Genie) (diff)",
+  "aliases": [
+    "Cabal (USA) (Game Genie)",
+    "Cabal (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Cabal (USA).cht",
+      "total_cheat_rows": 50,
+      "raw_entry_count": 50,
+      "distinct_address_count": 29,
+      "sample_raw_entries": [
+        {
+          "code": "KYVEOZUN",
+          "desc": "Both Players Start With 100 Grenades",
+          "address": "0x02F9"
+        },
+        {
+          "code": "00D7:09",
+          "desc": "Infinite Grenades P1",
+          "address": "0x00D7"
+        },
+        {
+          "code": "009F:02",
+          "desc": "Invincibility P1",
+          "address": "0x009F"
+        },
+        {
+          "code": "00DF:FB",
+          "desc": "P1 Max Score [Tens]",
+          "address": "0x00DF"
+        },
+        {
+          "code": "00DE:FB",
+          "desc": "P1 Max Score [Hundred]",
+          "address": "0x00DE"
+        },
+        {
+          "code": "00DD:FB",
+          "desc": "P1 Max Score [Thousand]",
+          "address": "0x00DD"
+        },
+        {
+          "code": "00DC:FB",
+          "desc": "P1 Max Score [Hundred Thousand]",
+          "address": "0x00DC"
+        },
+        {
+          "code": "00DB:FB",
+          "desc": "P1 Max Score [Millions]",
+          "address": "0x00DB"
+        },
+        {
+          "code": "00DA:FB",
+          "desc": "P1 Max Score [Billions]",
+          "address": "0x00DA"
+        },
+        {
+          "code": "00D5:FB",
+          "desc": "Infinite Lives P2",
+          "address": "0x00D5"
+        },
+        {
+          "code": "00D8:FB",
+          "desc": "Infinite Grenades P2",
+          "address": "0x00D8"
+        },
+        {
+          "code": "00D9:FB",
+          "desc": "Infinite Grenades P2",
+          "address": "0x00D9"
+        },
+        {
+          "code": "00A0:01",
+          "desc": "Invincibility P2",
+          "address": "0x00A0"
+        },
+        {
+          "code": "00E5:FB",
+          "desc": "P2 Max Score [Tens]",
+          "address": "0x00E5"
+        },
+        {
+          "code": "00E4:FB",
+          "desc": "P2 Max Score [Hundreds]",
+          "address": "0x00E4"
+        },
+        {
+          "code": "00E3:FB",
+          "desc": "P2 Max Score [Thousands]",
+          "address": "0x00E3"
+        },
+        {
+          "code": "00E2:FB",
+          "desc": "P2 Max Score [Hundred Thousands]",
+          "address": "0x00E2"
+        },
+        {
+          "code": "00E1:FB",
+          "desc": "P2 Max Score [Millions]",
+          "address": "0x00E1"
+        },
+        {
+          "code": "00E0:FB",
+          "desc": "P2 Max Score [Billions]",
+          "address": "0x00E0"
+        },
+        {
+          "code": "00D2:00",
+          "desc": "Start On Level",
+          "address": "0x00D2"
+        },
+        {
+          "code": "00D3:00",
+          "desc": "Start On Level",
+          "address": "0x00D3"
+        },
+        {
+          "code": "UNUOTTNN",
+          "desc": "9 lives for players 1 and 2",
+          "address": "0x06FE"
+        },
+        {
+          "code": "UNUOTTNY",
+          "desc": "1 life for players 1 and 2",
+          "address": "0x06FE"
+        },
+        {
+          "code": "GXEOZZVI",
+          "desc": "Infinite lives",
+          "address": "0x02AA"
+        },
+        {
+          "code": "KYVEOZUY",
+          "desc": "Start with 20 grenades",
+          "address": "0x02F9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

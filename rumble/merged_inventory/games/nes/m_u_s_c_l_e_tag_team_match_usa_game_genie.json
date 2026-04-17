@@ -1,0 +1,112 @@
+{
+  "system": "nes",
+  "normalized_title": "muscletagteammatch",
+  "display_name": "M.U.S.C.L.E. - Tag Team Match (USA) (Game Genie)",
+  "aliases": [
+    "M.U.S.C.L.E. - Tag Team Match (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\M.U.S.C.L.E. - Tag Team Match (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 18,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "ZESELPLA",
+          "desc": "Set bout length timer to 20",
+          "address": "0x018B"
+        },
+        {
+          "code": "TESELPLA",
+          "desc": "Set bout length timer to 60",
+          "address": "0x018B"
+        },
+        {
+          "code": "PESELPLE",
+          "desc": "Set bout length timer to 90",
+          "address": "0x018B"
+        },
+        {
+          "code": "ZEUOUPPA",
+          "desc": "Computer controlled players jump faster",
+          "address": "0x018B"
+        },
+        {
+          "code": "OZUEPZSX",
+          "desc": "Invincibility player 1 team",
+          "address": "0x02A9"
+        },
+        {
+          "code": "LTUEZXYG",
+          "desc": "Invincibility player 1 team",
+          "address": "0x02EA"
+        },
+        {
+          "code": "004F:62",
+          "desc": "Infinite Energy",
+          "address": "0x004F"
+        },
+        {
+          "code": "0050:00",
+          "desc": "Easy Win",
+          "address": "0x0050"
+        },
+        {
+          "code": "004F:63",
+          "desc": "P1 Has Infinite Health",
+          "address": "0x004F"
+        },
+        {
+          "code": "0050:00",
+          "desc": "P2 Has No Health",
+          "address": "0x0050"
+        },
+        {
+          "code": "0026:00",
+          "desc": "Character Modifier P1",
+          "address": "0x0026"
+        },
+        {
+          "code": "0028:00",
+          "desc": "Character Modifier P2",
+          "address": "0x0028"
+        },
+        {
+          "code": "0338:00",
+          "desc": "P1 Win Modifier (0-2)",
+          "address": "0x0338"
+        },
+        {
+          "code": "0339:00",
+          "desc": "P2 Win Modifier (0-2)",
+          "address": "0x0339"
+        },
+        {
+          "code": "0092:09",
+          "desc": "Infinite Time (Seconds - Ten's Digit)",
+          "address": "0x0092"
+        },
+        {
+          "code": "0091:09",
+          "desc": "Infinite Time (Seconds - One's Digit)",
+          "address": "0x0091"
+        },
+        {
+          "code": "0090:09",
+          "desc": "Infinite Time (Micro-Seconds - Ten's Digit)",
+          "address": "0x0090"
+        },
+        {
+          "code": "008F:09",
+          "desc": "Infinite Time (Micro-Seconds - One's Digit)",
+          "address": "0x008F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

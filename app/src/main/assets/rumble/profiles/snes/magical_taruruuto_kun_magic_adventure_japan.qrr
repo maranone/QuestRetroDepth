@@ -1,0 +1,14 @@
+game_name=Magical Taruruuto-kun - Magic Adventure (Japan)
+game_key=magical_taruruuto_kun_magic_adventure_japan
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_0056	life_lost	0x7E0056	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0056	life_gained	0x7E0056	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_0062	pickup	0x7E0062	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0063	pickup	0x7E0063	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0064	pickup	0x7E0064	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_091a	enemy_defeated	0x7E091A	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	score_score_0058	score	0x7E0058	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0059	score	0x7E0059	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_005a	score	0x7E005A	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_005b	score	0x7E005B	1	uint	little	prev < curr	0.8	1	right:0.350:60

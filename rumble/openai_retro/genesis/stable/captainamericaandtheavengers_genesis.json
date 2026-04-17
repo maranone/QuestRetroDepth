@@ -1,0 +1,195 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "CaptainAmericaAndTheAvengers",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\CaptainAmericaAndTheAvengers-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "CaptainAmericaAndTheAvengers-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_health_ff9f0b",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0xFF9F0B",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF9F0B",
+          "ram_offset": 40715
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFF9F0B",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_ff9f0b",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0xFF9F0B",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF9F0B",
+          "ram_offset": 40715
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFF9F0B",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_lives_ff9e81",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0xFF9E81",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF9E81",
+          "ram_offset": 40577
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xFF9E81",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_ff9e81",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0xFF9E81",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF9E81",
+          "ram_offset": 40577
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xFF9E81",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_ff9f16",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xFF9F16",
+          "size": 4,
+          "value_type": "uint",
+          "byte_order": "big",
+          "raw_type": ">u4",
+          "address": "0xFF9F16",
+          "ram_offset": 40726
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xFF9F16",
+          "raw_type": ">u4"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

@@ -1,0 +1,8 @@
+game_name=Rex Ronan - Experimental Surgeon (USA) (En,Es)
+game_key=rex_ronan_experimental_surgeon_usa_en_es
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_03b0	damage_taken	0x7E03B0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03b0	death	0x7E03B0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_03c4	damage_taken	0x7E03C4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03c4	death	0x7E03C4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

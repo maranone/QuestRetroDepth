@@ -1,0 +1,9 @@
+game_name=Deep Duck Trouble Starring Donald Duck (Europe) (Action Replay)
+game_key=DeepDuckTroubleStarringDonaldDuck-Sms
+system=sms
+integration_tier=stable
+trigger	damage_taken_health_d2b2	damage_taken	0xD2B2	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_d2b2	death	0xD2B2	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_d2b1	life_lost	0xD2B1	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_d2b1	life_gained	0xD2B1	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_d2b3	score	0xD2B3	4	bcd	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,10 @@
+game_name=Kikou Keisatsu Metal Jack (Japan) (Action Replay)
+game_key=kikou_keisatsu_metal_jack_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_0018	level_complete	0x7E0018	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_0060	damage_taken	0x7E0060	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0060	death	0x7E0060	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_0061	life_lost	0x7E0061	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0061	life_gained	0x7E0061	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_006b	pickup	0x7E006B	1	uint	little	prev != curr	0.8	1	right:0.250:18

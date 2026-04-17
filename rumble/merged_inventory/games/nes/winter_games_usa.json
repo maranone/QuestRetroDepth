@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "wintergames",
+  "display_name": "Winter Games (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Winter Games (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "031F:00",
+          "desc": "P1's Timer Modifier (Minutes)",
+          "address": "0x031F"
+        },
+        {
+          "code": "0320:00",
+          "desc": "P1's Timer Modifier (Ten's Digit - Seconds)",
+          "address": "0x0320"
+        },
+        {
+          "code": "0321:00",
+          "desc": "P1's Timer Modifier (One's Digit - Seconds)",
+          "address": "0x0321"
+        },
+        {
+          "code": "031D:00",
+          "desc": "CPU's Timer Modifier",
+          "address": "0x031D"
+        },
+        {
+          "code": "032D:00",
+          "desc": "Infinite Time (Minutezxs)",
+          "address": "0x032D"
+        },
+        {
+          "code": "032E:33",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x032E"
+        },
+        {
+          "code": "032F:09",
+          "desc": "Infinite Time (Micro-Seconds)",
+          "address": "0x032F"
+        },
+        {
+          "code": "0337:00",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x0337"
+        },
+        {
+          "code": "0338:00",
+          "desc": "Infinite Time (Ten's Digit - Micro-Seconds)",
+          "address": "0x0338"
+        },
+        {
+          "code": "0339:00",
+          "desc": "Infinite Time (One's Digit - Micro-Seconds)",
+          "address": "0x0339"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

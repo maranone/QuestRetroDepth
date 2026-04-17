@@ -1,0 +1,168 @@
+{
+  "system": "gba",
+  "normalized_title": "battlebotsdesigndestroy",
+  "display_name": "BattleBots - Design _ Destroy (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\BattleBots - Design _ Destroy (USA) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 14,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10002AAC",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002AAC"
+        },
+        {
+          "code": "83000100",
+          "desc": "Infinite Money",
+          "address": "0x02000100"
+        },
+        {
+          "code": "83000100",
+          "desc": "Max Money",
+          "address": "0x02000100"
+        },
+        {
+          "code": "83000102",
+          "desc": "Max Money",
+          "address": "0x02000102"
+        },
+        {
+          "code": "83000190",
+          "desc": "No Penalty Timer",
+          "address": "0x02000190"
+        },
+        {
+          "code": "83003396",
+          "desc": "No K.O. Timer",
+          "address": "0x02003396"
+        },
+        {
+          "code": "330033A2",
+          "desc": "Never Get Flipped Over",
+          "address": "0x020033A2"
+        },
+        {
+          "code": "330033A3",
+          "desc": "Can't Lose From Damage",
+          "address": "0x020033A3"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select To Reset Time",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83003158",
+          "desc": "Press Select To Reset Time",
+          "address": "0x02003158"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L For Instant Win",
+          "address": "0x02000130"
+        },
+        {
+          "code": "830035DA",
+          "desc": "Press L For Instant Win",
+          "address": "0x020035DA"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L For Instant Win",
+          "address": "0x02000130"
+        },
+        {
+          "code": "830035E6",
+          "desc": "Press L For Instant Win",
+          "address": "0x020035E6"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\BattleBots - Design _ Destroy (USA) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 14,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10002AAC",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002AAC"
+        },
+        {
+          "code": "83000100",
+          "desc": "Infinite Money",
+          "address": "0x02000100"
+        },
+        {
+          "code": "83000100",
+          "desc": "Max Money",
+          "address": "0x02000100"
+        },
+        {
+          "code": "83000102",
+          "desc": "Max Money",
+          "address": "0x02000102"
+        },
+        {
+          "code": "83000190",
+          "desc": "No Penalty Timer",
+          "address": "0x02000190"
+        },
+        {
+          "code": "83003396",
+          "desc": "No K.O. Timer",
+          "address": "0x02003396"
+        },
+        {
+          "code": "330033A2",
+          "desc": "Never Get Flipped Over",
+          "address": "0x020033A2"
+        },
+        {
+          "code": "330033A3",
+          "desc": "Can't Lose From Damage",
+          "address": "0x020033A3"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select To Reset Time",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83003158",
+          "desc": "Press Select To Reset Time",
+          "address": "0x02003158"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L For Instant Win",
+          "address": "0x02000130"
+        },
+        {
+          "code": "830035DA",
+          "desc": "Press L For Instant Win",
+          "address": "0x020035DA"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L For Instant Win",
+          "address": "0x02000130"
+        },
+        {
+          "code": "830035E6",
+          "desc": "Press L For Instant Win",
+          "address": "0x020035E6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

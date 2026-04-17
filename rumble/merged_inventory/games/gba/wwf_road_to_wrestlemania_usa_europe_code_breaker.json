@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "wwfroadtowrestlemania",
+  "display_name": "WWF - Road to WrestleMania (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\WWF - Road to WrestleMania (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 26,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "1000044C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200044C"
+        },
+        {
+          "code": "83002ADC",
+          "desc": "Infinite Time",
+          "address": "0x02002ADC"
+        },
+        {
+          "code": "33001840",
+          "desc": "P1 Max Stamina Bar (Left)",
+          "address": "0x02001840"
+        },
+        {
+          "code": "33001840",
+          "desc": "P1 No Stamina Bar (Left)",
+          "address": "0x02001840"
+        },
+        {
+          "code": "3300183E",
+          "desc": "P1 Max Stamina Bar (Right)",
+          "address": "0x0200183E"
+        },
+        {
+          "code": "3300183E",
+          "desc": "P1 No Stamina Bar (Right)",
+          "address": "0x0200183E"
+        },
+        {
+          "code": "3300183D",
+          "desc": "P1 Max Special Bar",
+          "address": "0x0200183D"
+        },
+        {
+          "code": "3300183D",
+          "desc": "P1 No Special Bar",
+          "address": "0x0200183D"
+        },
+        {
+          "code": "33001980",
+          "desc": "P2 Max Stamina Bar (Left)",
+          "address": "0x02001980"
+        },
+        {
+          "code": "33001980",
+          "desc": "P2 No Stamina Bar (Left)",
+          "address": "0x02001980"
+        },
+        {
+          "code": "3300197E",
+          "desc": "P2 Max Stamina Bar (Right)",
+          "address": "0x0200197E"
+        },
+        {
+          "code": "3300197E",
+          "desc": "P2 No Stamina Bar (Right)",
+          "address": "0x0200197E"
+        },
+        {
+          "code": "3300197D",
+          "desc": "P2 Max Special Bar",
+          "address": "0x0200197D"
+        },
+        {
+          "code": "3300197D",
+          "desc": "P2 No Special Bar",
+          "address": "0x0200197D"
+        },
+        {
+          "code": "33001AC0",
+          "desc": "P3 Max Stamina Bar (Left)",
+          "address": "0x02001AC0"
+        },
+        {
+          "code": "33001AC0",
+          "desc": "P3 No Stamina Bar (Left)",
+          "address": "0x02001AC0"
+        },
+        {
+          "code": "33001ABE",
+          "desc": "P3 Max Stamina Bar (Right)",
+          "address": "0x02001ABE"
+        },
+        {
+          "code": "33001ABE",
+          "desc": "P3 No Stamina Bar (Right)",
+          "address": "0x02001ABE"
+        },
+        {
+          "code": "33001ABD",
+          "desc": "P3 Max Special Bar",
+          "address": "0x02001ABD"
+        },
+        {
+          "code": "33001ABD",
+          "desc": "P3 No Special Bar",
+          "address": "0x02001ABD"
+        },
+        {
+          "code": "33001980",
+          "desc": "P4 Max Stamina Bar (Left)",
+          "address": "0x02001980"
+        },
+        {
+          "code": "33001980",
+          "desc": "P4 No Stamina Bar (Left)",
+          "address": "0x02001980"
+        },
+        {
+          "code": "3300197E",
+          "desc": "P4 Max Stamina Bar (Right)",
+          "address": "0x0200197E"
+        },
+        {
+          "code": "3300197E",
+          "desc": "P4 No Stamina Bar (Right)",
+          "address": "0x0200197E"
+        },
+        {
+          "code": "3300197D",
+          "desc": "P4 Max Special Bar",
+          "address": "0x0200197D"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\WWF - Road to WrestleMania (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 26,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "1000044C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200044C"
+        },
+        {
+          "code": "83002ADC",
+          "desc": "Infinite Time",
+          "address": "0x02002ADC"
+        },
+        {
+          "code": "33001840",
+          "desc": "P1 Max Stamina Bar (Left)",
+          "address": "0x02001840"
+        },
+        {
+          "code": "33001840",
+          "desc": "P1 No Stamina Bar (Left)",
+          "address": "0x02001840"
+        },
+        {
+          "code": "3300183E",
+          "desc": "P1 Max Stamina Bar (Right)",
+          "address": "0x0200183E"
+        },
+        {
+          "code": "3300183E",
+          "desc": "P1 No Stamina Bar (Right)",
+          "address": "0x0200183E"
+        },
+        {
+          "code": "3300183D",
+          "desc": "P1 Max Special Bar",
+          "address": "0x0200183D"
+        },
+        {
+          "code": "3300183D",
+          "desc": "P1 No Special Bar",
+          "address": "0x0200183D"
+        },
+        {
+          "code": "33001980",
+          "desc": "P2 Max Stamina Bar (Left)",
+          "address": "0x02001980"
+        },
+        {
+          "code": "33001980",
+          "desc": "P2 No Stamina Bar (Left)",
+          "address": "0x02001980"
+        },
+        {
+          "code": "3300197E",
+          "desc": "P2 Max Stamina Bar (Right)",
+          "address": "0x0200197E"
+        },
+        {
+          "code": "3300197E",
+          "desc": "P2 No Stamina Bar (Right)",
+          "address": "0x0200197E"
+        },
+        {
+          "code": "3300197D",
+          "desc": "P2 Max Special Bar",
+          "address": "0x0200197D"
+        },
+        {
+          "code": "3300197D",
+          "desc": "P2 No Special Bar",
+          "address": "0x0200197D"
+        },
+        {
+          "code": "33001AC0",
+          "desc": "P3 Max Stamina Bar (Left)",
+          "address": "0x02001AC0"
+        },
+        {
+          "code": "33001AC0",
+          "desc": "P3 No Stamina Bar (Left)",
+          "address": "0x02001AC0"
+        },
+        {
+          "code": "33001ABE",
+          "desc": "P3 Max Stamina Bar (Right)",
+          "address": "0x02001ABE"
+        },
+        {
+          "code": "33001ABE",
+          "desc": "P3 No Stamina Bar (Right)",
+          "address": "0x02001ABE"
+        },
+        {
+          "code": "33001ABD",
+          "desc": "P3 Max Special Bar",
+          "address": "0x02001ABD"
+        },
+        {
+          "code": "33001ABD",
+          "desc": "P3 No Special Bar",
+          "address": "0x02001ABD"
+        },
+        {
+          "code": "33001980",
+          "desc": "P4 Max Stamina Bar (Left)",
+          "address": "0x02001980"
+        },
+        {
+          "code": "33001980",
+          "desc": "P4 No Stamina Bar (Left)",
+          "address": "0x02001980"
+        },
+        {
+          "code": "3300197E",
+          "desc": "P4 Max Stamina Bar (Right)",
+          "address": "0x0200197E"
+        },
+        {
+          "code": "3300197E",
+          "desc": "P4 No Stamina Bar (Right)",
+          "address": "0x0200197E"
+        },
+        {
+          "code": "3300197D",
+          "desc": "P4 Max Special Bar",
+          "address": "0x0200197D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,17 @@
+game_name=Front Mission (Japan) (Action Replay)
+game_key=front_mission_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_129c	pickup	0x7E129C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_129d	pickup	0x7E129D	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_129e	pickup	0x7E129E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_d592	damage_taken	0x7ED592	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_d592	death	0x7ED592	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_d594	damage_taken	0x7ED594	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_d594	death	0x7ED594	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_d580	damage_taken	0x7ED580	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_d580	death	0x7ED580	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_d582	damage_taken	0x7ED582	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_d582	death	0x7ED582	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_d586	damage_taken	0x7ED586	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_d586	death	0x7ED586	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

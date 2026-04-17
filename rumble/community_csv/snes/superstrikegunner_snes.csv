@@ -2,5 +2,5 @@
 # game_name=Super Strike Gunner
 # match_names=superstrikegunner|superstrikegunnersnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-life_lost_lives_023a,0x7E023A,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
-life_gained_lives_023a,0x7E023A,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,
+life_lost_lives_023a,0x7E023A,1,uint,prev_gt_curr,,both,0.92,fade_in_out,0,300,250,80,
+life_gained_lives_023a,0x7E023A,1,uint,prev_lt_curr,,both,0.750,fade_in,0,180,200,50,

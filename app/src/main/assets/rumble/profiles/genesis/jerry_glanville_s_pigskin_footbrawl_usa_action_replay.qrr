@@ -1,0 +1,6 @@
+game_name=Jerry Glanville's Pigskin Footbrawl (USA) (Action Replay)
+game_key=jerry_glanville_s_pigskin_footbrawl_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffb79c	score	0xFFB79C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffb79e	score	0xFFB79E	1	uint	little	prev < curr	0.8	1	right:0.350:60

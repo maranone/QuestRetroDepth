@@ -1,0 +1,80 @@
+{
+  "system": "nes",
+  "normalized_title": "palamedesiistartwinklehoshinomabataki",
+  "display_name": "Palamedes II - Star Twinkle, Hoshi no Mabataki (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Palamedes II - Star Twinkle, Hoshi no Mabataki (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "0582:8C",
+          "desc": "Keep Speed at 0 in Single Game",
+          "address": "0x0582"
+        },
+        {
+          "code": "0083:63",
+          "desc": "Level Select in Single Game",
+          "address": "0x0083"
+        },
+        {
+          "code": "0081:00",
+          "desc": "Number of Sets won in Quest Game",
+          "address": "0x0081"
+        },
+        {
+          "code": "0040:C0",
+          "desc": "Automatically beat opponent in Quest Game",
+          "address": "0x0040"
+        },
+        {
+          "code": "0548:01",
+          "desc": "Player 1 Have Lines Modifier",
+          "address": "0x0548"
+        },
+        {
+          "code": "0549:01",
+          "desc": "Player 1 Have Lines Modifier",
+          "address": "0x0549"
+        },
+        {
+          "code": "054A:01",
+          "desc": "Player 1 Have Lines Modifier",
+          "address": "0x054A"
+        },
+        {
+          "code": "054B:01",
+          "desc": "Player 1 Have Lines Modifier",
+          "address": "0x054B"
+        },
+        {
+          "code": "054C:01",
+          "desc": "Player 2 Have Lines Modifier",
+          "address": "0x054C"
+        },
+        {
+          "code": "054D:01",
+          "desc": "Player 2 Have Lines Modifier",
+          "address": "0x054D"
+        },
+        {
+          "code": "054E:01",
+          "desc": "Player 2 Have Lines Modifier",
+          "address": "0x054E"
+        },
+        {
+          "code": "054F:01",
+          "desc": "Player 2 Have Lines Modifier",
+          "address": "0x054F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

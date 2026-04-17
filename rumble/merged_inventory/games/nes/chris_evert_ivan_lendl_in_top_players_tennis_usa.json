@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "chrisevertivanlendlintopplayerstennis",
+  "display_name": "Chris Evert _ Ivan Lendl in Top Players' Tennis (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Chris Evert _ Ivan Lendl in Top Players' Tennis (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0409:03",
+          "desc": "P1 Score Modifier",
+          "address": "0x0409"
+        },
+        {
+          "code": "040A:00",
+          "desc": "P2 Score Modifier",
+          "address": "0x040A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "system": "gba",
+  "normalized_title": "ready2rumbleboxinground2",
+  "display_name": "Ready 2 Rumble Boxing - Round 2 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Ready 2 Rumble Boxing - Round 2 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 14,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "10001268",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001268"
+        },
+        {
+          "code": "82008BBC",
+          "desc": "Infinite Health P1",
+          "address": "0x02008BBC"
+        },
+        {
+          "code": "82008BBC",
+          "desc": "No Health P1",
+          "address": "0x02008BBC"
+        },
+        {
+          "code": "82008BBE",
+          "desc": "Max Stamina P1",
+          "address": "0x02008BBE"
+        },
+        {
+          "code": "82008BBE",
+          "desc": "No Stamina P1",
+          "address": "0x02008BBE"
+        },
+        {
+          "code": "8200D5BC",
+          "desc": "Max RUMBLE Meter P1",
+          "address": "0x0200D5BC"
+        },
+        {
+          "code": "8200D5BC",
+          "desc": "No RUMBLE Meter P1",
+          "address": "0x0200D5BC"
+        },
+        {
+          "code": "8200B10C",
+          "desc": "Infinite Health P2/CPU",
+          "address": "0x0200B10C"
+        },
+        {
+          "code": "8200B10C",
+          "desc": "No Health P2/CPU",
+          "address": "0x0200B10C"
+        },
+        {
+          "code": "8200B10E",
+          "desc": "Max Stamina P2/CPU",
+          "address": "0x0200B10E"
+        },
+        {
+          "code": "8200B10E",
+          "desc": "No Stamina P2/CPU",
+          "address": "0x0200B10E"
+        },
+        {
+          "code": "8200D5F8",
+          "desc": "Max RUMBLE Meter P2/CPU",
+          "address": "0x0200D5F8"
+        },
+        {
+          "code": "8200D5F8",
+          "desc": "No RUMBLE Meter P2/CPU",
+          "address": "0x0200D5F8"
+        },
+        {
+          "code": "8200D638",
+          "desc": "Infinite Time",
+          "address": "0x0200D638"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Ready 2 Rumble Boxing - Round 2 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 14,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "10001268",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001268"
+        },
+        {
+          "code": "82008BBC",
+          "desc": "Infinite Health P1",
+          "address": "0x02008BBC"
+        },
+        {
+          "code": "82008BBC",
+          "desc": "No Health P1",
+          "address": "0x02008BBC"
+        },
+        {
+          "code": "82008BBE",
+          "desc": "Max Stamina P1",
+          "address": "0x02008BBE"
+        },
+        {
+          "code": "82008BBE",
+          "desc": "No Stamina P1",
+          "address": "0x02008BBE"
+        },
+        {
+          "code": "8200D5BC",
+          "desc": "Max RUMBLE Meter P1",
+          "address": "0x0200D5BC"
+        },
+        {
+          "code": "8200D5BC",
+          "desc": "No RUMBLE Meter P1",
+          "address": "0x0200D5BC"
+        },
+        {
+          "code": "8200B10C",
+          "desc": "Infinite Health P2/CPU",
+          "address": "0x0200B10C"
+        },
+        {
+          "code": "8200B10C",
+          "desc": "No Health P2/CPU",
+          "address": "0x0200B10C"
+        },
+        {
+          "code": "8200B10E",
+          "desc": "Max Stamina P2/CPU",
+          "address": "0x0200B10E"
+        },
+        {
+          "code": "8200B10E",
+          "desc": "No Stamina P2/CPU",
+          "address": "0x0200B10E"
+        },
+        {
+          "code": "8200D5F8",
+          "desc": "Max RUMBLE Meter P2/CPU",
+          "address": "0x0200D5F8"
+        },
+        {
+          "code": "8200D5F8",
+          "desc": "No RUMBLE Meter P2/CPU",
+          "address": "0x0200D5F8"
+        },
+        {
+          "code": "8200D638",
+          "desc": "Infinite Time",
+          "address": "0x0200D638"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

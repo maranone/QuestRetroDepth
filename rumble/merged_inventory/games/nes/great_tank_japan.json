@@ -1,0 +1,115 @@
+{
+  "system": "nes",
+  "normalized_title": "greattank",
+  "display_name": "Great Tank (Japan)",
+  "aliases": [
+    "Great Tank (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\greattank_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x01D1",
+        "0x01D2",
+        "0x0306"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GreatTank-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0306",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x01D1",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x01D2",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Great Tank (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "0074:20",
+          "desc": "Infinite Health",
+          "address": "0x0074"
+        },
+        {
+          "code": "0306:20",
+          "desc": "Infinite Health",
+          "address": "0x0306"
+        },
+        {
+          "code": "01D1:09",
+          "desc": "Infinite Lives",
+          "address": "0x01D1"
+        },
+        {
+          "code": "0039:28",
+          "desc": "Infinite",
+          "address": "0x0039"
+        },
+        {
+          "code": "003A:28",
+          "desc": "Infinite",
+          "address": "0x003A"
+        },
+        {
+          "code": "003B:28",
+          "desc": "Infinite",
+          "address": "0x003B"
+        },
+        {
+          "code": "003C:28",
+          "desc": "Infinite",
+          "address": "0x003C"
+        },
+        {
+          "code": "003D:18",
+          "desc": "Infinite",
+          "address": "0x003D"
+        },
+        {
+          "code": "003E:28",
+          "desc": "Infinite R. Fuel",
+          "address": "0x003E"
+        },
+        {
+          "code": "000E:01",
+          "desc": "Most Tanks & Soldiers Move Much Faster",
+          "address": "0x000E"
+        },
+        {
+          "code": "000F:01",
+          "desc": "Most Tanks & Soldiers Move Much Faster",
+          "address": "0x000F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

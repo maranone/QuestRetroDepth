@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "musashinobouken",
+  "display_name": "Musashi no Bouken (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Musashi no Bouken (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0074:FF",
+          "desc": "No Random Battles",
+          "address": "0x0074"
+        },
+        {
+          "code": "0074:00",
+          "desc": "Lost Of Random Battles",
+          "address": "0x0074"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

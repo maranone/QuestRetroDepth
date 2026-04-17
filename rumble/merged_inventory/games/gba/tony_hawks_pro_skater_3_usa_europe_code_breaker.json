@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "tonyhawksproskater3",
+  "display_name": "Tony Hawks Pro Skater 3 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Tony Hawks Pro Skater 3 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "32007691",
+          "desc": "Have Wolverine",
+          "address": "0x02007691"
+        },
+        {
+          "code": "320076F1",
+          "desc": "Have Shaun Palmer",
+          "address": "0x020076F1"
+        },
+        {
+          "code": "32007751",
+          "desc": "Have Mindy",
+          "address": "0x02007751"
+        },
+        {
+          "code": "3200778D",
+          "desc": "Unlock Trial Mode",
+          "address": "0x0200778D"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Tony Hawks Pro Skater 3 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "32007691",
+          "desc": "Have Wolverine",
+          "address": "0x02007691"
+        },
+        {
+          "code": "320076F1",
+          "desc": "Have Shaun Palmer",
+          "address": "0x020076F1"
+        },
+        {
+          "code": "32007751",
+          "desc": "Have Mindy",
+          "address": "0x02007751"
+        },
+        {
+          "code": "3200778D",
+          "desc": "Unlock Trial Mode",
+          "address": "0x0200778D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

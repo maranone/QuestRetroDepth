@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "janggunuiadeul",
+  "display_name": "Janggun-ui Adeul",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Janggun-ui Adeul.cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "065B:70",
+          "desc": "Infinite Energy P1",
+          "address": "0x065B"
+        },
+        {
+          "code": "065C:00",
+          "desc": "No Health P2",
+          "address": "0x065C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Kid Icarus (USA, Europe) (Game Genie)
+game_key=KidIcarus-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_00a6	damage_taken	0x00A6	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00a6	death	0x00A6	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_0131	score	0x0131	3	uint	little	prev < curr	0.8	1	right:0.350:60

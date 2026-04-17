@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "devilman",
+  "display_name": "Devil Man (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Devil Man (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0617:30",
+          "desc": "Infinite Energy",
+          "address": "0x0617"
+        },
+        {
+          "code": "0619:29",
+          "desc": "Max Anger",
+          "address": "0x0619"
+        },
+        {
+          "code": "061C:30",
+          "desc": "Infinite Energy [Dr. Yamanobe]",
+          "address": "0x061C"
+        },
+        {
+          "code": "00CC:00",
+          "desc": "Untouchable",
+          "address": "0x00CC"
+        },
+        {
+          "code": "0617:35",
+          "desc": "Infinite Health",
+          "address": "0x0617"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

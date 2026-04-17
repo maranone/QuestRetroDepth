@@ -1,0 +1,145 @@
+{
+  "system": "nes",
+  "normalized_title": "dragonwars",
+  "display_name": "Dragon Wars (USA) (Proto)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dragon Wars (USA) (Proto).cht",
+      "total_cheat_rows": 136,
+      "raw_entry_count": 166,
+      "distinct_address_count": 161,
+      "sample_raw_entries": [
+        {
+          "code": "60A0:63",
+          "desc": "Infinite Bonus Pts",
+          "address": "0x60A0"
+        },
+        {
+          "code": "6107:FF",
+          "desc": "Infinite Gold",
+          "address": "0x6107"
+        },
+        {
+          "code": "6108:FF",
+          "desc": "Infinite Gold",
+          "address": "0x6108"
+        },
+        {
+          "code": "6109:00",
+          "desc": "Exp Modifier",
+          "address": "0x6109"
+        },
+        {
+          "code": "610A:00",
+          "desc": "Exp Modifier",
+          "address": "0x610A"
+        },
+        {
+          "code": "6101:FF",
+          "desc": "Infinite Hp",
+          "address": "0x6101"
+        },
+        {
+          "code": "6102:FF",
+          "desc": "Infinite Hp",
+          "address": "0x6102"
+        },
+        {
+          "code": "6103:FF",
+          "desc": "Infinite Spirit",
+          "address": "0x6103"
+        },
+        {
+          "code": "6104:FF",
+          "desc": "Infinite Spirit",
+          "address": "0x6104"
+        },
+        {
+          "code": "6105:FF",
+          "desc": "Infinite Mp",
+          "address": "0x6105"
+        },
+        {
+          "code": "6106:FF",
+          "desc": "Infinite Mp",
+          "address": "0x6106"
+        },
+        {
+          "code": "6110:FF",
+          "desc": "Max Hp/Spirit",
+          "address": "0x6110"
+        },
+        {
+          "code": "6111:FF",
+          "desc": "Max Hp/Spirit",
+          "address": "0x6111"
+        },
+        {
+          "code": "6143:FF",
+          "desc": "Max Ap",
+          "address": "0x6143"
+        },
+        {
+          "code": "6142:7F",
+          "desc": "Max Ac",
+          "address": "0x6142"
+        },
+        {
+          "code": "6141:7F",
+          "desc": "Max Dv",
+          "address": "0x6141"
+        },
+        {
+          "code": "6140:7F",
+          "desc": "Mav Av",
+          "address": "0x6140"
+        },
+        {
+          "code": "610C:7F",
+          "desc": "Max Power",
+          "address": "0x610C"
+        },
+        {
+          "code": "610D:7F",
+          "desc": "Max Nimble",
+          "address": "0x610D"
+        },
+        {
+          "code": "610E:FF",
+          "desc": "Max Intell.",
+          "address": "0x610E"
+        },
+        {
+          "code": "610F:FF",
+          "desc": "Max Mental",
+          "address": "0x610F"
+        },
+        {
+          "code": "6112:A3",
+          "desc": "Max Bandage/Climb",
+          "address": "0x6112"
+        },
+        {
+          "code": "6113:3F",
+          "desc": "Max Hiding/Bargin",
+          "address": "0x6113"
+        },
+        {
+          "code": "6114:FF",
+          "desc": "Max Lockpick/Steal",
+          "address": "0x6114"
+        },
+        {
+          "code": "6115:13",
+          "desc": "Max Swim/Track",
+          "address": "0x6115"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

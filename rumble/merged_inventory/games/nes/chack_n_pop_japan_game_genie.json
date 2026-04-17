@@ -1,0 +1,109 @@
+{
+  "system": "nes",
+  "normalized_title": "chacknpop",
+  "display_name": "Chack'n Pop (Japan) (Game Genie)",
+  "aliases": [
+    "Chack'n Pop (Japan) (Game Genie)",
+    "Chack'n Pop (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\chacknpop_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x002F",
+        "0x003A"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ChacknPop-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x003A",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x002F",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Chack'n Pop (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 11,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "OXNOOYEK",
+          "desc": "Invincible Against Bombs",
+          "address": "0x07A9"
+        },
+        {
+          "code": "AUSOVYZG",
+          "desc": "Super Jump",
+          "address": "0x07BE"
+        },
+        {
+          "code": "SZEEYPVG",
+          "desc": "Infinite Lives",
+          "address": "0x01AF"
+        },
+        {
+          "code": "003A:01",
+          "desc": "Infinite Lives P1",
+          "address": "0x003A"
+        },
+        {
+          "code": "0057:07",
+          "desc": "Right Bubble Has Higher Bounce",
+          "address": "0x0057"
+        },
+        {
+          "code": "003B:03",
+          "desc": "Level Modifier",
+          "address": "0x003B"
+        },
+        {
+          "code": "ALPEIX",
+          "desc": "Start With 7 Lives",
+          "address": "0x02B5"
+        },
+        {
+          "code": "EZPEIZ",
+          "desc": "Start With 85 Lives",
+          "address": "0x02A5"
+        },
+        {
+          "code": "TGPEIZ",
+          "desc": "Start With 97 Lives On Maze 82",
+          "address": "0x02C5"
+        },
+        {
+          "code": "ZLPEIX",
+          "desc": "Start With 32 Lives On Maze 39",
+          "address": "0x02B5"
+        },
+        {
+          "code": "GLPEIZ",
+          "desc": "Start With 96 Lives On Maze 3",
+          "address": "0x02B5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

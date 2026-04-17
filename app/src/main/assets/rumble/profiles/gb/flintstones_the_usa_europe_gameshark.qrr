@@ -1,0 +1,6 @@
+game_name=Flintstones, The (USA, Europe) (GameShark)
+game_key=flintstones_the_usa_europe_gameshark
+system=gb
+integration_tier=contrib
+trigger	damage_taken_health_d6de	damage_taken	0xD6DE	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_d6de	death	0xD6DE	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

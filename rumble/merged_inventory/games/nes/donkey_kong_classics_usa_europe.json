@@ -1,0 +1,90 @@
+{
+  "system": "nes",
+  "normalized_title": "donkeykongclassics",
+  "display_name": "Donkey Kong Classics (USA, Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Donkey Kong Classics (USA, Europe).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 14,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "SXYAOP",
+          "desc": "Infinite lives",
+          "address": "0x0121"
+        },
+        {
+          "code": "PETANA",
+          "desc": "Start with 1 life",
+          "address": "0x0007"
+        },
+        {
+          "code": "TETANA",
+          "desc": "Start with 6 lives",
+          "address": "0x0007"
+        },
+        {
+          "code": "PETANE",
+          "desc": "Start with 9 lives",
+          "address": "0x0007"
+        },
+        {
+          "code": "AEVAVSIA",
+          "desc": "Controllable jump",
+          "address": "0x050E"
+        },
+        {
+          "code": "EAKOLSLG",
+          "desc": "Keep hammer for longer",
+          "address": "0x058B"
+        },
+        {
+          "code": "OKNAOPVK",
+          "desc": "Infinite Lives",
+          "address": "0x0149"
+        },
+        {
+          "code": "PESPYSNY",
+          "desc": "Invincibility",
+          "address": "0x050F"
+        },
+        {
+          "code": "PAVPPSNY",
+          "desc": "Invincibility",
+          "address": "0x0509"
+        },
+        {
+          "code": "PAKPGOAA",
+          "desc": "Walk On Air",
+          "address": "0x010C"
+        },
+        {
+          "code": "0055:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x0055"
+        },
+        {
+          "code": "004C:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x004C"
+        },
+        {
+          "code": "AUSPTSOZ",
+          "desc": "Can Fall Off Platforms",
+          "address": "0x053E"
+        },
+        {
+          "code": "AAXOYIYZ",
+          "desc": "Can Fall Off Platforms",
+          "address": "0x058F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

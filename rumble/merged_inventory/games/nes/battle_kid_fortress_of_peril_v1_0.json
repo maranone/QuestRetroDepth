@@ -1,0 +1,62 @@
+{
+  "system": "nes",
+  "normalized_title": "battlekidfortressofperil",
+  "display_name": "Battle Kid- Fortress of Peril (v1.0)",
+  "aliases": [
+    "Battle Kid- Fortress of Peril (v1.1)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Battle Kid- Fortress of Peril (v1.1).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "AAVALKZA",
+          "desc": "Skip Intro Screens",
+          "address": "0x040B"
+        },
+        {
+          "code": "GTVONGZL",
+          "desc": "Start a Hard Game with 100 Continues",
+          "address": "0x04EF"
+        },
+        {
+          "code": "PANPKGAA",
+          "desc": "Start a New Hard Game with Damage Amp",
+          "address": "0x040C"
+        },
+        {
+          "code": "PANPUGAA",
+          "desc": "Start a New Normal Game with Damage Amp",
+          "address": "0x040B"
+        },
+        {
+          "code": "PANPVGAA",
+          "desc": "Start a New Unfair Game with Damage Amp",
+          "address": "0x040E"
+        },
+        {
+          "code": "PANPSGAA",
+          "desc": "Start a New Very Hard Game with Damage Amp",
+          "address": "0x040D"
+        },
+        {
+          "code": "GTNPEGGP",
+          "desc": "Start a Very Hard Game with 100 Continues",
+          "address": "0x0468"
+        },
+        {
+          "code": "GTNPOGAA",
+          "desc": "Start an Unfair Game with 100 Continues",
+          "address": "0x0469"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

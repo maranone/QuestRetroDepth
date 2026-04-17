@@ -1,0 +1,145 @@
+{
+  "system": "nes",
+  "normalized_title": "firenice",
+  "display_name": "Fire 'n Ice (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Fire 'n Ice (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 25,
+      "distinct_address_count": 25,
+      "sample_raw_entries": [
+        {
+          "code": "0400:FF",
+          "desc": "Complete All Levels of World 1",
+          "address": "0x0400"
+        },
+        {
+          "code": "0401:C3",
+          "desc": "Complete All Levels of World 1",
+          "address": "0x0401"
+        },
+        {
+          "code": "0402:FF",
+          "desc": "Complete All Levels of World 2",
+          "address": "0x0402"
+        },
+        {
+          "code": "0403:C3",
+          "desc": "Complete All Levels of World 2",
+          "address": "0x0403"
+        },
+        {
+          "code": "0404:FF",
+          "desc": "Complete All Levels of World 3",
+          "address": "0x0404"
+        },
+        {
+          "code": "0405:C3",
+          "desc": "Complete All Levels of World 3",
+          "address": "0x0405"
+        },
+        {
+          "code": "0406:FF",
+          "desc": "Complete All Levels of World 4",
+          "address": "0x0406"
+        },
+        {
+          "code": "0407:C3",
+          "desc": "Complete All Levels of World 4",
+          "address": "0x0407"
+        },
+        {
+          "code": "0408:FF",
+          "desc": "Complete All Levels of World 5",
+          "address": "0x0408"
+        },
+        {
+          "code": "0409:C3",
+          "desc": "Complete All Levels of World 5",
+          "address": "0x0409"
+        },
+        {
+          "code": "040A:FF",
+          "desc": "Complete All Levels of World 6",
+          "address": "0x040A"
+        },
+        {
+          "code": "040B:C3",
+          "desc": "Complete All Levels of World 6",
+          "address": "0x040B"
+        },
+        {
+          "code": "040C:FF",
+          "desc": "Complete All Levels of World 7",
+          "address": "0x040C"
+        },
+        {
+          "code": "040D:C3",
+          "desc": "Complete All Levels of World 7",
+          "address": "0x040D"
+        },
+        {
+          "code": "040E:FF",
+          "desc": "Complete All Levels of World 8",
+          "address": "0x040E"
+        },
+        {
+          "code": "040F:C3",
+          "desc": "Complete All Levels of World 8",
+          "address": "0x040F"
+        },
+        {
+          "code": "0410:FF",
+          "desc": "Complete All Levels of World 9",
+          "address": "0x0410"
+        },
+        {
+          "code": "0411:C3",
+          "desc": "Complete All Levels of World 9",
+          "address": "0x0411"
+        },
+        {
+          "code": "0412:FF",
+          "desc": "Complete All Levels of World 10 except for Final Stage",
+          "address": "0x0412"
+        },
+        {
+          "code": "0413:43",
+          "desc": "Complete All Levels of World 10 except for Final Stage",
+          "address": "0x0413"
+        },
+        {
+          "code": "AEXAATGT",
+          "desc": "Opens all Levels when cheat activated",
+          "address": "0x0608"
+        },
+        {
+          "code": "PEXEGTGT",
+          "desc": "Opens all Levels when cheat activated",
+          "address": "0x068C"
+        },
+        {
+          "code": "0425:00",
+          "desc": "Infinite Time (Seconds Digits)",
+          "address": "0x0425"
+        },
+        {
+          "code": "00B4:03",
+          "desc": "Round/Level Modifier",
+          "address": "0x00B4"
+        },
+        {
+          "code": "ASEEAPEI",
+          "desc": "Skip Intro Screen",
+          "address": "0x01D8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

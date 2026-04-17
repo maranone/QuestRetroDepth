@@ -1,0 +1,14 @@
+game_name=Double Strike v1.1 (1990)(American Video Entertainment)(US)
+game_key=double_strike_v1_1_1990_american_video_entertainment_us
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_03be	life_lost	0x03BE	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_03be	life_gained	0x03BE	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_062b	life_lost	0x062B	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_062b	life_gained	0x062B	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_06ea	life_lost	0x06EA	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_06ea	life_gained	0x06EA	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_06ba	life_lost	0x06BA	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_06ba	life_gained	0x06BA	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_068a	life_lost	0x068A	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_068a	life_gained	0x068A	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

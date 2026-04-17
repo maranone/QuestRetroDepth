@@ -1,0 +1,114 @@
+{
+  "system": "nes",
+  "normalized_title": "bwings",
+  "display_name": "B-Wings (Japan) (Game Genie)",
+  "aliases": [
+    "B-Wings (Japan) (Game Genie)",
+    "B-Wings (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\bwings_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x053B",
+        "0x053E"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BWings-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x053E",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x053B",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\B-Wings (Japan).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 12,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "PEUAZZLE",
+          "desc": "Start With 9 Lives",
+          "address": "0x020A"
+        },
+        {
+          "code": "YEUAZZLE",
+          "desc": "Start With 15 Lives",
+          "address": "0x020A"
+        },
+        {
+          "code": "POUAZZLE",
+          "desc": "Start With 25 Lives",
+          "address": "0x021A"
+        },
+        {
+          "code": "ZUUAZZLA",
+          "desc": "Start With 50 Lives",
+          "address": "0x023A"
+        },
+        {
+          "code": "NUUAZZLE",
+          "desc": "Start With 91 Lives",
+          "address": "0x023A"
+        },
+        {
+          "code": "053E:03",
+          "desc": "Infinite Lives",
+          "address": "0x053E"
+        },
+        {
+          "code": "0017:00",
+          "desc": "Invincibility",
+          "address": "0x0017"
+        },
+        {
+          "code": "00A0:FF",
+          "desc": "Disable 4 Way Laser Wall Glitch",
+          "address": "0x00A0"
+        },
+        {
+          "code": "00A1:FF",
+          "desc": "Disable 4 Way Laser Wall Glitch",
+          "address": "0x00A1"
+        },
+        {
+          "code": "00CF:01",
+          "desc": "Weapon Modifier",
+          "address": "0x00CF"
+        },
+        {
+          "code": "0541:09",
+          "desc": "Infinite Morphs",
+          "address": "0x0541"
+        },
+        {
+          "code": "053E:02",
+          "desc": "Infinite Lives",
+          "address": "0x053E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

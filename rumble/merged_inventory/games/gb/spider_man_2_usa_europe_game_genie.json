@@ -1,0 +1,28 @@
+{
+  "system": "gb",
+  "normalized_title": "spiderman2",
+  "display_name": "Spider-Man 2 (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Spider-Man 2 (USA, Europe) (GameShark)",
+    "Spider-Man 2 (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Spider-Man 2 (USA, Europe).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "01FFDFD0",
+          "desc": "Infinite Energy",
+          "address": "0xDFD0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

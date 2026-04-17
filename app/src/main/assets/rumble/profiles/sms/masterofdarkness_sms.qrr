@@ -1,0 +1,10 @@
+game_name=Master of Darkness (Europe) (Action Replay) (diff)
+game_key=MasterOfDarkness-Sms
+system=sms
+integration_tier=stable
+trigger	game_over_gameover_ca10	game_over	0xCA10	1	int	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	damage_taken_health_ca3a	damage_taken	0xCA3A	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ca3a	death	0xCA3A	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_dfba	life_lost	0xDFBA	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_dfba	life_gained	0xDFBA	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_dfc8	score	0xDFC8	6	nibble	little	prev < curr	0.8	1	right:0.350:60

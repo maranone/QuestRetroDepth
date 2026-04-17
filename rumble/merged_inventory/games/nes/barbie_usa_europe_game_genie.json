@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "barbie",
+  "display_name": "Barbie (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Barbie (USA) (Rev 1)",
+    "Barbie (USA)",
+    "Barbie (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\barbie_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x04C5",
+        "0x0542"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Barbie-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x04C5",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0542",
+          "type": ">n7"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Barbie (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "SZVAAVVK",
+          "desc": "Can Re-Enter Barbie's Dream An Infinite Number Of Times",
+          "address": "0x0628"
+        },
+        {
+          "code": "AEEEYAZA",
+          "desc": "Cannot Re-Enter Barbie's Dream",
+          "address": "0x008F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

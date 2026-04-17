@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "hokutonoken",
+  "display_name": "Hokuto no Ken (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hokuto no Ken (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "SZKAAZVI",
+          "desc": "Infinite Lives",
+          "address": "0x0228"
+        },
+        {
+          "code": "SZXAXISA",
+          "desc": "Infinite Energy",
+          "address": "0x052A"
+        },
+        {
+          "code": "SXVATYAX",
+          "desc": "Invincibility",
+          "address": "0x072E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

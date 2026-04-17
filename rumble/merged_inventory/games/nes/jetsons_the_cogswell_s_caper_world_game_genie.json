@@ -1,0 +1,119 @@
+{
+  "system": "nes",
+  "normalized_title": "jetsonscogswellscaper",
+  "display_name": "Jetsons, The - Cogswell's Caper (World) (Game Genie)",
+  "aliases": [
+    "Jetsons, The - Cogswell's Caper (USA)",
+    "Jetsons, The - Cogswell's Caper (World) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\jetsonscogswellscaper_nes.json",
+      "trigger_count": 4,
+      "field_names": [
+        "health",
+        "lives"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0141",
+        "0x0142"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\JetsonsCogswellsCaper-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0141",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0142",
+          "type": "|u1"
+        },
+        {
+          "name": "packs",
+          "address": "0x0144",
+          "type": "|d1"
+        },
+        {
+          "name": "stars",
+          "address": "0x0145",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Jetsons, The - Cogswell's Caper (World) (Game Genie).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "IEEPPILA",
+          "desc": "Start With More Lives And Hearts",
+          "address": "0x0509"
+        },
+        {
+          "code": "ZEVEZLPA",
+          "desc": "2 Power Packs On Pick-Up",
+          "address": "0x038A"
+        },
+        {
+          "code": "IEVEZLPA",
+          "desc": "5 Power Packs On Pick-Up",
+          "address": "0x038A"
+        },
+        {
+          "code": "AUEOGIAP",
+          "desc": "Start With 30 Power Packs",
+          "address": "0x05BC"
+        },
+        {
+          "code": "ASEOGIAP",
+          "desc": "Start With 50 Power Packs",
+          "address": "0x05DC"
+        },
+        {
+          "code": "AAKAIGTA",
+          "desc": "Small Hearts Gives Full Health",
+          "address": "0x040D"
+        },
+        {
+          "code": "SZEELUVK",
+          "desc": "Infinite Hearts",
+          "address": "0x03AB"
+        },
+        {
+          "code": "GXUENESE",
+          "desc": "Defenses Don't Use Up Power Packs",
+          "address": "0x00AF"
+        },
+        {
+          "code": "IAUAKAAZ",
+          "desc": "Shield Uses Fewer Power Packs",
+          "address": "0x000C"
+        },
+        {
+          "code": "ZENEIYAP",
+          "desc": "Flashlight Uses Fewer Power Packs",
+          "address": "0x078D"
+        },
+        {
+          "code": "SZOAIOVK",
+          "desc": "Infinite Energy (Rock Concert Hall Stage)",
+          "address": "0x012D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

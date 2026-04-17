@@ -1,0 +1,145 @@
+{
+  "system": "nes",
+  "normalized_title": "baseballstarsii",
+  "display_name": "Baseball Stars II (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Baseball Stars II (USA).cht",
+      "total_cheat_rows": 47,
+      "raw_entry_count": 32,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "PAOAILLA",
+          "desc": "One out per side instead of 3",
+          "address": "0x030D"
+        },
+        {
+          "code": "ZAOAILLA",
+          "desc": "Two outs per side",
+          "address": "0x030D"
+        },
+        {
+          "code": "GAOAILLA",
+          "desc": "Four outs per side",
+          "address": "0x030D"
+        },
+        {
+          "code": "PEXPVGLZ",
+          "desc": "Game ends after 1 inning",
+          "address": "0x040E"
+        },
+        {
+          "code": "LEXPVGLZ",
+          "desc": "Game ends after 2 innings",
+          "address": "0x040E"
+        },
+        {
+          "code": "TEXPVGLZ",
+          "desc": "Game ends after 3 innings",
+          "address": "0x040E"
+        },
+        {
+          "code": "AEXPVGLX",
+          "desc": "Game ends after 4 innings",
+          "address": "0x040E"
+        },
+        {
+          "code": "ZEXPVGLX",
+          "desc": "Game ends after 5 innings",
+          "address": "0x040E"
+        },
+        {
+          "code": "GEXPVGLX",
+          "desc": "Game ends after 6 innings",
+          "address": "0x040E"
+        },
+        {
+          "code": "TEXPVGLX",
+          "desc": "Game ends after 7 innings",
+          "address": "0x040E"
+        },
+        {
+          "code": "AOXPVGLZ",
+          "desc": "Game ends after 8 innings",
+          "address": "0x041E"
+        },
+        {
+          "code": "0498:FF",
+          "desc": "P1 High Score",
+          "address": "0x0498"
+        },
+        {
+          "code": "0499:00",
+          "desc": "P2/CPU Never Scores",
+          "address": "0x0499"
+        },
+        {
+          "code": "0569:00",
+          "desc": "Most Players Cost Only $3000",
+          "address": "0x0569"
+        },
+        {
+          "code": "056A:00",
+          "desc": "Most Players Cost Only $3000",
+          "address": "0x056A"
+        },
+        {
+          "code": "056B:00",
+          "desc": "Most Players Cost Only $3000",
+          "address": "0x056B"
+        },
+        {
+          "code": "056C:00",
+          "desc": "Most Players Cost Only $3000",
+          "address": "0x056C"
+        },
+        {
+          "code": "056D:00",
+          "desc": "Most Players Cost Only $3000",
+          "address": "0x056D"
+        },
+        {
+          "code": "056E:00",
+          "desc": "Most Players Cost Only $3000",
+          "address": "0x056E"
+        },
+        {
+          "code": "056F:00",
+          "desc": "Most Players Cost Only $3000",
+          "address": "0x056F"
+        },
+        {
+          "code": "0560:63",
+          "desc": "Infinite Player Attribute Points",
+          "address": "0x0560"
+        },
+        {
+          "code": "056A:63",
+          "desc": "Maxed Out Hitting",
+          "address": "0x056A"
+        },
+        {
+          "code": "056B:63",
+          "desc": "Batting",
+          "address": "0x056B"
+        },
+        {
+          "code": "056C:63",
+          "desc": "Running",
+          "address": "0x056C"
+        },
+        {
+          "code": "056D:63",
+          "desc": "Defense",
+          "address": "0x056D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Shaman King - Legacy of the Spirits - Soaring Hawk (USA) (Code Breaker)
+game_key=shaman_king_legacy_of_the_spirits_soaring_hawk_usa_code_breaker
+system=gba
+integration_tier=contrib
+trigger	level_complete_level_02022e30	level_complete	0x02022E30	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	pickup_coins_0201d580	pickup	0x0201D580	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0201d582	pickup	0x0201D582	1	uint	little	prev != curr	0.8	1	right:0.250:18

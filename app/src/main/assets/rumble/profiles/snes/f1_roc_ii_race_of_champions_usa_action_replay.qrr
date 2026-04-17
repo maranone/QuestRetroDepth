@@ -1,0 +1,5 @@
+game_name=F1-ROC II - Race of Champions (USA) (Action Replay)
+game_key=f1_roc_ii_race_of_champions_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_0595	pickup	0x7E0595	1	uint	little	prev != curr	0.8	1	right:0.250:18

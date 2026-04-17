@@ -1,0 +1,5 @@
+game_name=Yu-Gi-Oh! - Dungeon Dice Monsters (World) (Code Breaker)
+game_key=yu_gi_oh_dungeon_dice_monsters_world_code_breaker
+system=gba
+integration_tier=contrib
+trigger	pickup_coins_0203e304	pickup	0x0203E304	1	uint	little	prev != curr	0.8	1	right:0.250:18

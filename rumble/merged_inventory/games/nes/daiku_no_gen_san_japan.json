@@ -1,0 +1,80 @@
+{
+  "system": "nes",
+  "normalized_title": "daikunogensan",
+  "display_name": "Daiku no Gen-san (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Daiku no Gen-san (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "0068:02",
+          "desc": "Jump Midair",
+          "address": "0x0068"
+        },
+        {
+          "code": "0123:09",
+          "desc": "Stop Timer",
+          "address": "0x0123"
+        },
+        {
+          "code": "0131:09",
+          "desc": "99 Count Bonus Stages",
+          "address": "0x0131"
+        },
+        {
+          "code": "0132:09",
+          "desc": "99 Count Bonus Stages",
+          "address": "0x0132"
+        },
+        {
+          "code": "0369:00",
+          "desc": "Level Modifier",
+          "address": "0x0369"
+        },
+        {
+          "code": "036B:00",
+          "desc": "Weapon Modifier",
+          "address": "0x036B"
+        },
+        {
+          "code": "036F:20",
+          "desc": "Jump Height Modifier",
+          "address": "0x036F"
+        },
+        {
+          "code": "0504:00",
+          "desc": "Enemies Die Automatically",
+          "address": "0x0504"
+        },
+        {
+          "code": "0505:00",
+          "desc": "Enemies Die Automatically",
+          "address": "0x0505"
+        },
+        {
+          "code": "0506:00",
+          "desc": "Enemies Die Automatically",
+          "address": "0x0506"
+        },
+        {
+          "code": "0507:00",
+          "desc": "Enemies Die Automatically",
+          "address": "0x0507"
+        },
+        {
+          "code": "0508:00",
+          "desc": "Enemies Die Automatically",
+          "address": "0x0508"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

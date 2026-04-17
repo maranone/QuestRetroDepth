@@ -1,0 +1,60 @@
+{
+  "system": "pce",
+  "normalized_title": "championsforeverboxing",
+  "display_name": "Champions Forever Boxing (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Champions Forever Boxing (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1f0254:48",
+          "desc": "P1 Infinite Strength",
+          "address": "0x1F0254"
+        },
+        {
+          "code": "1f0245:02",
+          "desc": "Infinite Time",
+          "address": "0x1F0245"
+        },
+        {
+          "code": "1f0246:05",
+          "desc": "Infinite Time",
+          "address": "0x1F0246"
+        },
+        {
+          "code": "1f0247:09",
+          "desc": "Infinite Time",
+          "address": "0x1F0247"
+        },
+        {
+          "code": "1f0258:48",
+          "desc": "P1 Infinite Stamina",
+          "address": "0x1F0258"
+        },
+        {
+          "code": "1f0256:00",
+          "desc": "P2 No Strength",
+          "address": "0x1F0256"
+        },
+        {
+          "code": "1f025a:00",
+          "desc": "P2 No Stamina",
+          "address": "0x1F025A"
+        },
+        {
+          "code": "1f05ac:03",
+          "desc": "P1 Knockdown for TKO",
+          "address": "0x1F05AC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

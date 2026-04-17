@@ -1,0 +1,19 @@
+game_name=Ninja Gaiden Trilogy (Rumbles)
+game_key=ninja_gaiden_trilogy_rumbles
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_006d	level_complete	0x7E006D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_00a5	life_lost	0x7E00A5	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00a5	life_gained	0x7E00A5	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_007e	level_complete	0x7E007E	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_00c4	life_lost	0x7E00C4	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00c4	life_gained	0x7E00C4	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_00ad	enemy_defeated	0x7E00AD	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_00a7	damage_taken	0x7E00A7	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00a7	death	0x7E00A7	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_005f	level_complete	0x7E005F	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_0120	damage_taken	0x7E0120	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0120	death	0x7E0120	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_01a3	life_lost	0x7E01A3	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_01a3	life_gained	0x7E01A3	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_01d7	pickup	0x7E01D7	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "asmikkunland",
+  "display_name": "Asmik-kun Land (Japan) (Game Genie)",
+  "aliases": [
+    "Asmik-kun Land (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Asmik-kun Land (Japan).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 28,
+      "distinct_address_count": 27,
+      "sample_raw_entries": [
+        {
+          "code": "0542:00",
+          "desc": "Points modifier",
+          "address": "0x0542"
+        },
+        {
+          "code": "0543:00",
+          "desc": "Points modifier",
+          "address": "0x0543"
+        },
+        {
+          "code": "0545:00",
+          "desc": "Lives modifier",
+          "address": "0x0545"
+        },
+        {
+          "code": "0546:00",
+          "desc": "Eggs modifier",
+          "address": "0x0546"
+        },
+        {
+          "code": "0545:02",
+          "desc": "Infinite Lives",
+          "address": "0x0545"
+        },
+        {
+          "code": "00A6:00",
+          "desc": "Invincibility",
+          "address": "0x00A6"
+        },
+        {
+          "code": "0074:04",
+          "desc": "Super Jump",
+          "address": "0x0074"
+        },
+        {
+          "code": "0081:01",
+          "desc": "Swimming Mode",
+          "address": "0x0081"
+        },
+        {
+          "code": "0098:00",
+          "desc": "Can't Be Confused",
+          "address": "0x0098"
+        },
+        {
+          "code": "009F:01",
+          "desc": "Speed Up",
+          "address": "0x009F"
+        },
+        {
+          "code": "02F7:80",
+          "desc": "Stop Balance Bar Moving",
+          "address": "0x02F7"
+        },
+        {
+          "code": "02FB:80",
+          "desc": "Stop Balance Bar Moving",
+          "address": "0x02FB"
+        },
+        {
+          "code": "032F:09",
+          "desc": "Infinite All Items",
+          "address": "0x032F"
+        },
+        {
+          "code": "0330:09",
+          "desc": "Infinite All Items",
+          "address": "0x0330"
+        },
+        {
+          "code": "0331:09",
+          "desc": "Infinite All Items",
+          "address": "0x0331"
+        },
+        {
+          "code": "0332:09",
+          "desc": "Infinite All Items",
+          "address": "0x0332"
+        },
+        {
+          "code": "0333:09",
+          "desc": "Infinite All Items",
+          "address": "0x0333"
+        },
+        {
+          "code": "0334:09",
+          "desc": "Infinite All Items",
+          "address": "0x0334"
+        },
+        {
+          "code": "0335:09",
+          "desc": "Infinite All Items",
+          "address": "0x0335"
+        },
+        {
+          "code": "0336:09",
+          "desc": "Infinite All Items",
+          "address": "0x0336"
+        },
+        {
+          "code": "0337:09",
+          "desc": "Infinite All Items",
+          "address": "0x0337"
+        },
+        {
+          "code": "0338:09",
+          "desc": "Infinite All Items",
+          "address": "0x0338"
+        },
+        {
+          "code": "0339:09",
+          "desc": "Infinite All Items",
+          "address": "0x0339"
+        },
+        {
+          "code": "03F3:0B",
+          "desc": "Power Modifier",
+          "address": "0x03F3"
+        },
+        {
+          "code": "053C:FF",
+          "desc": "Progress Modifier",
+          "address": "0x053C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

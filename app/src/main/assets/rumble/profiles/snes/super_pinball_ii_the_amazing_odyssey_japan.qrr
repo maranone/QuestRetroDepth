@@ -1,0 +1,13 @@
+game_name=Super Pinball II - The Amazing Odyssey (Japan)
+game_key=super_pinball_ii_the_amazing_odyssey_japan
+system=snes
+integration_tier=contrib
+trigger	score_score_18b8	score	0x7E18B8	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_18b9	score	0x7E18B9	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_18ba	score	0x7E18BA	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_18bb	score	0x7E18BB	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_18bc	score	0x7E18BC	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_18bd	score	0x7E18BD	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_18be	score	0x7E18BE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_18bf	score	0x7E18BF	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_18c0	score	0x7E18C0	1	uint	little	prev < curr	0.8	1	right:0.350:60

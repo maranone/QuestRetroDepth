@@ -1,0 +1,148 @@
+{
+  "system": "gba",
+  "normalized_title": "catwoman",
+  "display_name": "Catwoman (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Catwoman (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "1002E3DA",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202E3DA"
+        },
+        {
+          "code": "33000B75",
+          "desc": "Infinite Health",
+          "address": "0x02000B75"
+        },
+        {
+          "code": "8300052E",
+          "desc": "Infinite Time",
+          "address": "0x0200052E"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Mega Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83000B2A",
+          "desc": "Mega Jump",
+          "address": "0x02000B2A"
+        },
+        {
+          "code": "33000A56",
+          "desc": "255 Blue Gems Collected",
+          "address": "0x02000A56"
+        },
+        {
+          "code": "33000A55",
+          "desc": "255 Yellow Gems Collected",
+          "address": "0x02000A55"
+        },
+        {
+          "code": "33000A54",
+          "desc": "255 Green Gems Collected",
+          "address": "0x02000A54"
+        },
+        {
+          "code": "33000B7D",
+          "desc": "Full Special Meter",
+          "address": "0x02000B7D"
+        },
+        {
+          "code": "83000B7E",
+          "desc": "Full Special Meter",
+          "address": "0x02000B7E"
+        },
+        {
+          "code": "83000A2A",
+          "desc": "Have All Moves Learned",
+          "address": "0x02000A2A"
+        },
+        {
+          "code": "83000A2C",
+          "desc": "Have All Moves Learned",
+          "address": "0x02000A2C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Catwoman (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "1002E3DA",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202E3DA"
+        },
+        {
+          "code": "33000B75",
+          "desc": "Infinite Health",
+          "address": "0x02000B75"
+        },
+        {
+          "code": "8300052E",
+          "desc": "Infinite Time",
+          "address": "0x0200052E"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Mega Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83000B2A",
+          "desc": "Mega Jump",
+          "address": "0x02000B2A"
+        },
+        {
+          "code": "33000A56",
+          "desc": "255 Blue Gems Collected",
+          "address": "0x02000A56"
+        },
+        {
+          "code": "33000A55",
+          "desc": "255 Yellow Gems Collected",
+          "address": "0x02000A55"
+        },
+        {
+          "code": "33000A54",
+          "desc": "255 Green Gems Collected",
+          "address": "0x02000A54"
+        },
+        {
+          "code": "33000B7D",
+          "desc": "Full Special Meter",
+          "address": "0x02000B7D"
+        },
+        {
+          "code": "83000B7E",
+          "desc": "Full Special Meter",
+          "address": "0x02000B7E"
+        },
+        {
+          "code": "83000A2A",
+          "desc": "Have All Moves Learned",
+          "address": "0x02000A2A"
+        },
+        {
+          "code": "83000A2C",
+          "desc": "Have All Moves Learned",
+          "address": "0x02000A2C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "system": "gba",
+  "normalized_title": "segarallychampionship",
+  "display_name": "Sega Rally Championship (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Sega Rally Championship (World) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10005E00",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02005E00"
+        },
+        {
+          "code": "33002A4B",
+          "desc": "Always Win Championship",
+          "address": "0x02002A4B"
+        },
+        {
+          "code": "830005D8",
+          "desc": "Infinite Checkpoint Time",
+          "address": "0x020005D8"
+        },
+        {
+          "code": "83000604",
+          "desc": "Infinite RP",
+          "address": "0x02000604"
+        },
+        {
+          "code": "830005CE",
+          "desc": "Low Total Time",
+          "address": "0x020005CE"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press R For Turbo Boost",
+          "address": "0x02000020"
+        },
+        {
+          "code": "33002A35",
+          "desc": "Press R For Turbo Boost",
+          "address": "0x02002A35"
+        },
+        {
+          "code": "330005C4",
+          "desc": "Access All Cups (In Shop)",
+          "address": "0x020005C4"
+        },
+        {
+          "code": "830005B0",
+          "desc": "All Extras Bought",
+          "address": "0x020005B0"
+        },
+        {
+          "code": "830005B2",
+          "desc": "All Extras Bought",
+          "address": "0x020005B2"
+        },
+        {
+          "code": "830005B4",
+          "desc": "All Extras Bought",
+          "address": "0x020005B4"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Sega Rally Championship (World) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10005E00",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02005E00"
+        },
+        {
+          "code": "33002A4B",
+          "desc": "Always Win Championship",
+          "address": "0x02002A4B"
+        },
+        {
+          "code": "830005D8",
+          "desc": "Infinite Checkpoint Time",
+          "address": "0x020005D8"
+        },
+        {
+          "code": "83000604",
+          "desc": "Infinite RP",
+          "address": "0x02000604"
+        },
+        {
+          "code": "830005CE",
+          "desc": "Low Total Time",
+          "address": "0x020005CE"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press R For Turbo Boost",
+          "address": "0x02000020"
+        },
+        {
+          "code": "33002A35",
+          "desc": "Press R For Turbo Boost",
+          "address": "0x02002A35"
+        },
+        {
+          "code": "330005C4",
+          "desc": "Access All Cups (In Shop)",
+          "address": "0x020005C4"
+        },
+        {
+          "code": "830005B0",
+          "desc": "All Extras Bought",
+          "address": "0x020005B0"
+        },
+        {
+          "code": "830005B2",
+          "desc": "All Extras Bought",
+          "address": "0x020005B2"
+        },
+        {
+          "code": "830005B4",
+          "desc": "All Extras Bought",
+          "address": "0x020005B4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

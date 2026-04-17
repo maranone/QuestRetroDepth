@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "adventuresinmagickingdom",
+  "display_name": "Adventures in the Magic Kingdom (USA, Europe) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Adventures in the Magic Kingdom (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 6,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "PEVEIALA",
+          "desc": "Start With 1 Life",
+          "address": "0x008D"
+        },
+        {
+          "code": "TEVEIALA",
+          "desc": "Start With 6 Lives",
+          "address": "0x008D"
+        },
+        {
+          "code": "PEVEIALE",
+          "desc": "Start With 9 Lives",
+          "address": "0x008D"
+        },
+        {
+          "code": "PAVAZPLA",
+          "desc": "Start With Less Energy In Attractions",
+          "address": "0x010A"
+        },
+        {
+          "code": "IAVAZPLA",
+          "desc": "Start With More Energy In Attractions",
+          "address": "0x010A"
+        },
+        {
+          "code": "PAVAZPLE",
+          "desc": "Start With Even More Energy In Attractions",
+          "address": "0x010A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Shanghai III (Japan)
+game_key=shanghai_iii_japan
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_43ea	level_complete	0x7E43EA	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_43eb	level_complete	0x7E43EB	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

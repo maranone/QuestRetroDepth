@@ -1,0 +1,7 @@
+game_name=Teenage Mutant Ninja Turtles - Turtles in Time (Japan)
+game_key=teenage_mutant_ninja_turtles_turtles_in_time_japan
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_1f90	level_complete	0x7E1F90	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_1ffa	life_lost	0x7E1FFA	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1ffa	life_gained	0x7E1FFA	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

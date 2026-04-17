@@ -1,0 +1,18 @@
+game_name=Grand Master (Japan)
+game_key=grand_master_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_044f	damage_taken	0x044F	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_044f	death	0x044F	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_0451	level_complete	0x0451	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_053b	enemy_defeated	0x053B	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_053c	enemy_defeated	0x053C	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_053d	enemy_defeated	0x053D	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_053e	enemy_defeated	0x053E	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_0520	damage_taken	0x0520	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0520	death	0x0520	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0430	pickup	0x0430	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_055e	enemy_defeated	0x055E	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_055f	enemy_defeated	0x055F	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0560	enemy_defeated	0x0560	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0561	enemy_defeated	0x0561	1	uint	little	prev > curr	0.65	1	right:0.450:35

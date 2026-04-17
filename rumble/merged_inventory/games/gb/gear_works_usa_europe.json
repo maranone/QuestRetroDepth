@@ -1,0 +1,25 @@
+{
+  "system": "gb",
+  "normalized_title": "gearworks",
+  "display_name": "Gear Works (USA, Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Gear Works (USA, Europe).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0100DAC5",
+          "desc": "Freeze Time",
+          "address": "0xDAC5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

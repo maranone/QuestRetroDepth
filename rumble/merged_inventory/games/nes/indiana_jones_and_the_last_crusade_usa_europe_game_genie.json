@@ -1,0 +1,68 @@
+{
+  "system": "nes",
+  "normalized_title": "indianajonesandlastcrusade",
+  "display_name": "Indiana Jones and the Last Crusade (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Indiana Jones and the Last Crusade (USA) (UBI Soft)",
+    "Indiana Jones and the Last Crusade (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Indiana Jones and the Last Crusade (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 9,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "SZUEEIVG",
+          "desc": "Infinite Lives On Bike Section",
+          "address": "0x05A8"
+        },
+        {
+          "code": "PAVAGYIE",
+          "desc": "More Lives On Ship Section",
+          "address": "0x070C"
+        },
+        {
+          "code": "PAVAGYIA",
+          "desc": "Fewer Lives On Ship Section",
+          "address": "0x070C"
+        },
+        {
+          "code": "PAEPIITE",
+          "desc": "More Lives On Tank Section",
+          "address": "0x050D"
+        },
+        {
+          "code": "PAEPIITA",
+          "desc": "Fewer Lives On Tank Section",
+          "address": "0x050D"
+        },
+        {
+          "code": "PEXPTALE",
+          "desc": "More Lives On Castle Section",
+          "address": "0x000E"
+        },
+        {
+          "code": "PEXPTALA",
+          "desc": "Fewer Lives On Castle Section",
+          "address": "0x000E"
+        },
+        {
+          "code": "AEKPXLPA",
+          "desc": "Heart Does Nothing (May Goof-Up Energy Bar)",
+          "address": "0x030A"
+        },
+        {
+          "code": "AEEOYTPA",
+          "desc": "Infinite Time",
+          "address": "0x068F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

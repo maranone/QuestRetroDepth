@@ -1,0 +1,144 @@
+{
+  "system": "nes",
+  "normalized_title": "contraforce",
+  "display_name": "Contra Force (USA) (Game Genie)",
+  "aliases": [
+    "Contra Force (USA) (Game Genie)",
+    "Contra Force (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\contraforce_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x006E",
+        "0x00B3"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ContraForce-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x00B3",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x006E",
+          "type": ">d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Contra Force (USA).cht",
+      "total_cheat_rows": 28,
+      "raw_entry_count": 18,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "00B3:03",
+          "desc": "Infinite Lives: Burns",
+          "address": "0x00B3"
+        },
+        {
+          "code": "00B4:03",
+          "desc": "Infinite Lives: Smith",
+          "address": "0x00B4"
+        },
+        {
+          "code": "00B5:03",
+          "desc": "Infinite Lives: Iron",
+          "address": "0x00B5"
+        },
+        {
+          "code": "00B6:03",
+          "desc": "Infinite Lives: Beans",
+          "address": "0x00B6"
+        },
+        {
+          "code": "SXSPGGAX",
+          "desc": "Hit Anywhere",
+          "address": "0x042C"
+        },
+        {
+          "code": "007F:00",
+          "desc": "Weapon Modifier",
+          "address": "0x007F"
+        },
+        {
+          "code": "0798:01",
+          "desc": "Boss 1 Hit Kill",
+          "address": "0x0798"
+        },
+        {
+          "code": "079A:01",
+          "desc": "Some Other One Hit Kills",
+          "address": "0x079A"
+        },
+        {
+          "code": "079B:01",
+          "desc": "Some Other One Hit Kills",
+          "address": "0x079B"
+        },
+        {
+          "code": "0093:09",
+          "desc": "Infinite Lives",
+          "address": "0x0093"
+        },
+        {
+          "code": "07C8:86",
+          "desc": "Invincible",
+          "address": "0x07C8"
+        },
+        {
+          "code": "00B3:99",
+          "desc": "Infinite Lives (Burns)",
+          "address": "0x00B3"
+        },
+        {
+          "code": "00B6:99",
+          "desc": "Infinite Lives (Beans)",
+          "address": "0x00B6"
+        },
+        {
+          "code": "00B5:99",
+          "desc": "Infinite Lives (Iron)",
+          "address": "0x00B5"
+        },
+        {
+          "code": "00B4:99",
+          "desc": "Infinite Lives (Smith)",
+          "address": "0x00B4"
+        },
+        {
+          "code": "00B1:00",
+          "desc": "Character Modifier P1",
+          "address": "0x00B1"
+        },
+        {
+          "code": "07C8:00",
+          "desc": "Invincibility P1",
+          "address": "0x07C8"
+        },
+        {
+          "code": "0075:00",
+          "desc": "Level Modifier",
+          "address": "0x0075"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

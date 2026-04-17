@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "nekketsukouhakuniokun",
+  "display_name": "Nekketsu Kouha Kunio-kun (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Nekketsu Kouha Kunio-kun (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "007D:28",
+          "desc": "Infinite Energy",
+          "address": "0x007D"
+        },
+        {
+          "code": "0472:63",
+          "desc": "Infinite Time",
+          "address": "0x0472"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

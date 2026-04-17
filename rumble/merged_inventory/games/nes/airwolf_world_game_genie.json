@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "airwolf",
+  "display_name": "Airwolf (World) (Game Genie)",
+  "aliases": [
+    "Airwolf (Japan) (Kyugo)",
+    "Airwolf (USA) (Acclaim)",
+    "Airwolf (World) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\airwolf_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00A7",
+        "0x0245"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Airwolf-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x00A7",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0245",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Airwolf (World) (Game Genie).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "TPVAPXYE",
+          "desc": "Start With 30 Missiles",
+          "address": "0x0219"
+        },
+        {
+          "code": "IZVAPXYE",
+          "desc": "Start With 45 Missiles",
+          "address": "0x0229"
+        },
+        {
+          "code": "IEVAISYA",
+          "desc": "Sets Missiles To 5 When You Refuel",
+          "address": "0x050D"
+        },
+        {
+          "code": "TOVAISYE",
+          "desc": "Sets Missiles To 30 When You Refuel",
+          "address": "0x051D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

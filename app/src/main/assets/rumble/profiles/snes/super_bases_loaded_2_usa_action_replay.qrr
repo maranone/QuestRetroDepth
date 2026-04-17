@@ -1,0 +1,5 @@
+game_name=Super Bases Loaded 2 (USA) (Action Replay)
+game_key=super_bases_loaded_2_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	score_score_0b15	score	0x7E0B15	1	uint	little	prev < curr	0.8	1	right:0.350:60

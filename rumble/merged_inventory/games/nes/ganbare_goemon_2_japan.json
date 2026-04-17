@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "ganbaregoemon2",
+  "display_name": "Ganbare Goemon 2 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ganbare Goemon 2 (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "07A8:00",
+          "desc": "Money Modifier",
+          "address": "0x07A8"
+        },
+        {
+          "code": "07A9:00",
+          "desc": "Money Modifier",
+          "address": "0x07A9"
+        },
+        {
+          "code": "07D2:03",
+          "desc": "3 Passes",
+          "address": "0x07D2"
+        },
+        {
+          "code": "07C8:FF",
+          "desc": "All Items",
+          "address": "0x07C8"
+        },
+        {
+          "code": "07E3:09",
+          "desc": "Infinite Candle Time",
+          "address": "0x07E3"
+        },
+        {
+          "code": "07AE:01",
+          "desc": "Goemon's Lives",
+          "address": "0x07AE"
+        },
+        {
+          "code": "07AF:01",
+          "desc": "Ebi's Lives",
+          "address": "0x07AF"
+        },
+        {
+          "code": "07C7:02",
+          "desc": "Max Speed Powerup",
+          "address": "0x07C7"
+        },
+        {
+          "code": "07AA:00",
+          "desc": "Health Modifier",
+          "address": "0x07AA"
+        },
+        {
+          "code": "07AC:00",
+          "desc": "Health Modifier",
+          "address": "0x07AC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

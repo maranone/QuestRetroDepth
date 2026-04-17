@@ -1,0 +1,112 @@
+{
+  "system": "nes",
+  "normalized_title": "baseballsimulator1000",
+  "display_name": "Baseball Simulator 1.000 (USA) (Game Genie)",
+  "aliases": [
+    "Baseball Simulator 1.000 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Baseball Simulator 1.000 (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 18,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "PESEPTLA",
+          "desc": "1 strike and you're out",
+          "address": "0x0689"
+        },
+        {
+          "code": "ZESEPTLA",
+          "desc": "2 strikes and you're out",
+          "address": "0x0689"
+        },
+        {
+          "code": "IESEPTLA",
+          "desc": "5 strikes and you're out",
+          "address": "0x0689"
+        },
+        {
+          "code": "SZVAYTVT",
+          "desc": "Strikes aren't counted",
+          "address": "0x062F"
+        },
+        {
+          "code": "SZNAATVT",
+          "desc": "Balls aren't counted",
+          "address": "0x0628"
+        },
+        {
+          "code": "PESALTGA",
+          "desc": "1 ball and you walk",
+          "address": "0x060B"
+        },
+        {
+          "code": "ZESALTGA",
+          "desc": "2 balls and you walk",
+          "address": "0x060B"
+        },
+        {
+          "code": "LESALTGA",
+          "desc": "3 balls and you walk",
+          "address": "0x060B"
+        },
+        {
+          "code": "PESALTGE",
+          "desc": "9 balls and you walk",
+          "address": "0x060B"
+        },
+        {
+          "code": "0694:FF",
+          "desc": "P1 High Score",
+          "address": "0x0694"
+        },
+        {
+          "code": "0695:00",
+          "desc": "P2/CPU No Score",
+          "address": "0x0695"
+        },
+        {
+          "code": "00A0:00",
+          "desc": "Strikes Modifier",
+          "address": "0x00A0"
+        },
+        {
+          "code": "00A1:00",
+          "desc": "Balls Modifier",
+          "address": "0x00A1"
+        },
+        {
+          "code": "00A2:00",
+          "desc": "Outs Modifier",
+          "address": "0x00A2"
+        },
+        {
+          "code": "PAKPKTZA",
+          "desc": "Balls Are Strikes",
+          "address": "0x060C"
+        },
+        {
+          "code": "PGVEIOXG",
+          "desc": "Auto Fielding",
+          "address": "0x01CD"
+        },
+        {
+          "code": "OXSALXPX",
+          "desc": "Skip Intro Screens",
+          "address": "0x022B"
+        },
+        {
+          "code": "OXXALXPX",
+          "desc": "Skip Intro Screens",
+          "address": "0x022B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

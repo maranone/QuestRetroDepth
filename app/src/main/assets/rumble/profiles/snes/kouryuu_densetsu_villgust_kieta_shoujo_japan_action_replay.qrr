@@ -1,0 +1,23 @@
+game_name=Kouryuu Densetsu Villgust - Kieta Shoujo (Japan) (Action Replay)
+game_key=kouryuu_densetsu_villgust_kieta_shoujo_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_0942	pickup	0x7E0942	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_0701	level_complete	0x7E0701	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_0704	damage_taken	0x7E0704	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0704	death	0x7E0704	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0705	damage_taken	0x7E0705	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0705	death	0x7E0705	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0707	damage_taken	0x7E0707	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0707	death	0x7E0707	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0708	damage_taken	0x7E0708	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0708	death	0x7E0708	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_0715	level_complete	0x7E0715	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	pickup_coins_0724	pickup	0x7E0724	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0725	pickup	0x7E0725	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0726	pickup	0x7E0726	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0727	pickup	0x7E0727	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_0728	damage_taken	0x7E0728	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0728	death	0x7E0728	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0729	pickup	0x7E0729	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_072a	pickup	0x7E072A	1	uint	little	prev != curr	0.8	1	right:0.250:18

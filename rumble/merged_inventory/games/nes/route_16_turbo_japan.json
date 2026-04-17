@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "route16turbo",
+  "display_name": "Route-16 Turbo (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Route-16 Turbo (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "0184:00",
+          "desc": "Instantly Beat Level",
+          "address": "0x0184"
+        },
+        {
+          "code": "0183:09",
+          "desc": "Infinite Lives",
+          "address": "0x0183"
+        },
+        {
+          "code": "018F:00",
+          "desc": "No Fuel (One's Digit)",
+          "address": "0x018F"
+        },
+        {
+          "code": "018E:00",
+          "desc": "No Fuel (Ten's Digit)",
+          "address": "0x018E"
+        },
+        {
+          "code": "018D:00",
+          "desc": "No Fuel (Hundred's Digit)",
+          "address": "0x018D"
+        },
+        {
+          "code": "PAYAPN",
+          "desc": "Start With 9 Lives",
+          "address": "0x0701"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

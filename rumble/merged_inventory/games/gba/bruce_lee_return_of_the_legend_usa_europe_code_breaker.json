@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "bruceleereturnoflegend",
+  "display_name": "Bruce Lee - Return of the Legend (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Bruce Lee - Return of the Legend (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10001516",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001516"
+        },
+        {
+          "code": "32008F34",
+          "desc": "Unlock All Modes & Outfits",
+          "address": "0x02008F34"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+R To Skip Level",
+          "address": "0x02000130"
+        },
+        {
+          "code": "320057EC",
+          "desc": "Press Select+R To Skip Level",
+          "address": "0x020057EC"
+        },
+        {
+          "code": "72009810",
+          "desc": "Have Keys",
+          "address": "0x02009810"
+        },
+        {
+          "code": "32009810",
+          "desc": "Have Keys",
+          "address": "0x02009810"
+        },
+        {
+          "code": "32009818",
+          "desc": "Infinite Weapon",
+          "address": "0x02009818"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Bruce Lee - Return of the Legend (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10001516",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001516"
+        },
+        {
+          "code": "32008F34",
+          "desc": "Unlock All Modes & Outfits",
+          "address": "0x02008F34"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+R To Skip Level",
+          "address": "0x02000130"
+        },
+        {
+          "code": "320057EC",
+          "desc": "Press Select+R To Skip Level",
+          "address": "0x020057EC"
+        },
+        {
+          "code": "72009810",
+          "desc": "Have Keys",
+          "address": "0x02009810"
+        },
+        {
+          "code": "32009810",
+          "desc": "Have Keys",
+          "address": "0x02009810"
+        },
+        {
+          "code": "32009818",
+          "desc": "Infinite Weapon",
+          "address": "0x02009818"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

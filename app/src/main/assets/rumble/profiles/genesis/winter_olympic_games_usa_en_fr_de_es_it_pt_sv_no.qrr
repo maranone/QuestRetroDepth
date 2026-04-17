@@ -1,0 +1,5 @@
+game_name=Winter Olympic Games (USA) (En,Fr,De,Es,It,Pt,Sv,No)
+game_key=winter_olympic_games_usa_en_fr_de_es_it_pt_sv_no
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ffe65e	pickup	0xFFE65E	1	uint	little	prev != curr	0.8	1	right:0.250:18

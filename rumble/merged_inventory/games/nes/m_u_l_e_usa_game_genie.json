@@ -1,0 +1,97 @@
+{
+  "system": "nes",
+  "normalized_title": "mule",
+  "display_name": "M.U.L.E. (USA) (Game Genie)",
+  "aliases": [
+    "M.U.L.E. (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\M.U.L.E. (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 15,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "GEKALTTA",
+          "desc": "4 'months' for beginner game",
+          "address": "0x060B"
+        },
+        {
+          "code": "PEKALTTE",
+          "desc": "9 'months' for beginner game",
+          "address": "0x060B"
+        },
+        {
+          "code": "TEXAIVGA",
+          "desc": "6 'months' for standard game",
+          "address": "0x060D"
+        },
+        {
+          "code": "GOXAIVGA",
+          "desc": "20 'months' for standard game",
+          "address": "0x061D"
+        },
+        {
+          "code": "EPOEPNAI",
+          "desc": "Humanoids start with $400",
+          "address": "0x0799"
+        },
+        {
+          "code": "PAOETYZA",
+          "desc": "Humanoids start with $400",
+          "address": "0x078E"
+        },
+        {
+          "code": "AZOEPNAI",
+          "desc": "Humanoids start with $800",
+          "address": "0x07A9"
+        },
+        {
+          "code": "LAOETYZA",
+          "desc": "Humanoids start with $800",
+          "address": "0x078E"
+        },
+        {
+          "code": "GPUAAYAG",
+          "desc": "Flappers start with $1300",
+          "address": "0x0718"
+        },
+        {
+          "code": "IAUAIYTA",
+          "desc": "Flappers start with $1300",
+          "address": "0x070D"
+        },
+        {
+          "code": "EIUAAYAG",
+          "desc": "Flappers start with $2000",
+          "address": "0x0758"
+        },
+        {
+          "code": "YAUAIYTA",
+          "desc": "Flappers start with $2000",
+          "address": "0x070D"
+        },
+        {
+          "code": "00E8:3B",
+          "desc": "Freeze Turn Timer",
+          "address": "0x00E8"
+        },
+        {
+          "code": "00A6:FF",
+          "desc": "Infinite Cash",
+          "address": "0x00A6"
+        },
+        {
+          "code": "00E8:60",
+          "desc": "Infinite Time",
+          "address": "0x00E8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

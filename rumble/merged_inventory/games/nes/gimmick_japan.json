@@ -1,0 +1,108 @@
+{
+  "system": "nes",
+  "normalized_title": "gimmick",
+  "display_name": "Gimmick! (Japan)",
+  "aliases": [
+    "Gimmick! (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\gimmick_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x002E",
+        "0x0104"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Gimmick-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0104",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x002E",
+          "type": ">n7"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gimmick! (Japan).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "0346:03",
+          "desc": "Infinite Energy",
+          "address": "0x0346"
+        },
+        {
+          "code": "0104:03",
+          "desc": "Infinite Lives",
+          "address": "0x0104"
+        },
+        {
+          "code": "038C:02",
+          "desc": "Invincibility",
+          "address": "0x038C"
+        },
+        {
+          "code": "AVPEEG",
+          "desc": "Infinite Energy",
+          "address": "0x04E0"
+        },
+        {
+          "code": "001B:00",
+          "desc": "Level Modifier",
+          "address": "0x001B"
+        },
+        {
+          "code": "0036:00",
+          "desc": "Item Box Modifier",
+          "address": "0x0036"
+        },
+        {
+          "code": "009B:80",
+          "desc": "Shot Angle Modifier",
+          "address": "0x009B"
+        },
+        {
+          "code": "0348:00",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x0348"
+        },
+        {
+          "code": "0349:00",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x0349"
+        },
+        {
+          "code": "034A:00",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x034A"
+        },
+        {
+          "code": "036E:80",
+          "desc": "Jump in Midair",
+          "address": "0x036E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

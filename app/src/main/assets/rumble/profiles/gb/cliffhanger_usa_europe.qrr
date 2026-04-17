@@ -1,0 +1,8 @@
+game_name=Cliffhanger (USA, Europe)
+game_key=cliffhanger_usa_europe
+system=gb
+integration_tier=contrib
+trigger	life_lost_lives_d7da	life_lost	0xD7DA	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_d7da	life_gained	0xD7DA	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_d6da	damage_taken	0xD6DA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_d6da	death	0xD6DA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

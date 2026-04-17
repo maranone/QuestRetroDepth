@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "allnightnipponsupermariobrosa1",
+  "display_name": "All Night Nippon Super Mario Bros. (J) (FDS Conversion) [a1]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\All Night Nippon Super Mario Bros. (J) (FDS Conversion) [a1].cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "07FA:09",
+          "desc": "Infinite Time",
+          "address": "0x07FA"
+        },
+        {
+          "code": "075A:08",
+          "desc": "Infinite Lives",
+          "address": "0x075A"
+        },
+        {
+          "code": "0756:00",
+          "desc": "Form Modifier",
+          "address": "0x0756"
+        },
+        {
+          "code": "07FC:01",
+          "desc": "Enable Level Select",
+          "address": "0x07FC"
+        },
+        {
+          "code": "0760:00",
+          "desc": "Sub Level Modifier",
+          "address": "0x0760"
+        },
+        {
+          "code": "075F:00",
+          "desc": "Main Level Modifier",
+          "address": "0x075F"
+        },
+        {
+          "code": "AANAAXZG",
+          "desc": "Enable World Select on Title Screen without Hard Mode (Press B to change Worlds)",
+          "address": "0x0208"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "heyarnoldmovie",
+  "display_name": "Hey Arnold! - The Movie (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Hey Arnold! - The Movie (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "100011EA",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020011EA"
+        },
+        {
+          "code": "83002398",
+          "desc": "Infinite Health",
+          "address": "0x02002398"
+        },
+        {
+          "code": "8300239C",
+          "desc": "Infinite Lives",
+          "address": "0x0200239C"
+        },
+        {
+          "code": "83004152",
+          "desc": "Max Speed",
+          "address": "0x02004152"
+        },
+        {
+          "code": "83004154",
+          "desc": "Max Power",
+          "address": "0x02004154"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For Invincible",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83004158",
+          "desc": "Press Select For Invincible",
+          "address": "0x02004158"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press A For Moon Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "33003DC0",
+          "desc": "Press A For Moon Jump",
+          "address": "0x02003DC0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Hey Arnold! - The Movie (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "100011EA",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020011EA"
+        },
+        {
+          "code": "83002398",
+          "desc": "Infinite Health",
+          "address": "0x02002398"
+        },
+        {
+          "code": "8300239C",
+          "desc": "Infinite Lives",
+          "address": "0x0200239C"
+        },
+        {
+          "code": "83004152",
+          "desc": "Max Speed",
+          "address": "0x02004152"
+        },
+        {
+          "code": "83004154",
+          "desc": "Max Power",
+          "address": "0x02004154"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For Invincible",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83004158",
+          "desc": "Press Select For Invincible",
+          "address": "0x02004158"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press A For Moon Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "33003DC0",
+          "desc": "Press A For Moon Jump",
+          "address": "0x02003DC0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

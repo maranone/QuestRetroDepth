@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "navyblue",
+  "display_name": "Navy Blue (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Navy Blue (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "02C2:50",
+          "desc": "Infinite Ability Points",
+          "address": "0x02C2"
+        },
+        {
+          "code": "02C2:63",
+          "desc": "Infinite Units At Ship/Unit Menu",
+          "address": "0x02C2"
+        },
+        {
+          "code": "02A0:63",
+          "desc": "Infinite Ships At Ship/Unit Menu (First Menu - First Ship Choice)",
+          "address": "0x02A0"
+        },
+        {
+          "code": "02A1:63",
+          "desc": "Infinite Ships At Ship/Unit Menu (First Menu - Second Ship Choice)",
+          "address": "0x02A1"
+        },
+        {
+          "code": "029D:63",
+          "desc": "Infinite Ships At Ship/Unit Menu (Second Menu - First Ship Choice)",
+          "address": "0x029D"
+        },
+        {
+          "code": "029E:63",
+          "desc": "Infinite Ships At Ship/Unit Menu (Second Menu - Second Ship Choice)",
+          "address": "0x029E"
+        },
+        {
+          "code": "029A:63",
+          "desc": "Infinite Ships At Ship/Unit Menu (Third Menu - First Ship Choice)",
+          "address": "0x029A"
+        },
+        {
+          "code": "029B:63",
+          "desc": "Infinite Ships At Ship/Unit Menu (Third Menu - Second Ship Choice)",
+          "address": "0x029B"
+        },
+        {
+          "code": "029C:63",
+          "desc": "Infinite Ships At Ship/Unit Menu (Third Menu - Third Ship Choice)",
+          "address": "0x029C"
+        },
+        {
+          "code": "0297:63",
+          "desc": "Infinite Ships At Ship/Unit Menu (Fourth Menu - First Ship Choice)",
+          "address": "0x0297"
+        },
+        {
+          "code": "0298:63",
+          "desc": "Infinite Ships At Ship/Unit Menu (Fourth Menu - Second Ship Choice)",
+          "address": "0x0298"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,12 @@
+game_name=Fire Emblem - The Sacred Stones (USA, Australia) (CodeBreaker)
+game_key=fire_emblem_the_sacred_stones_usa_australia_codebreaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_0202be5e	damage_taken	0x0202BE5E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0202be5e	death	0x0202BE5E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_0203a4f5	level_complete	0x0203A4F5	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0203a50b	level_complete	0x0203A50B	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0203a55a	level_complete	0x0203A55A	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0203a575	level_complete	0x0203A575	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	pickup_coins_0202bcf8	pickup	0x0202BCF8	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0202bcfa	pickup	0x0202BCFA	1	uint	little	prev != curr	0.8	1	right:0.250:18

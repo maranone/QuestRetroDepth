@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "wweroadtowrestlemaniax8",
+  "display_name": "WWE - Road to WrestleMania X8 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\WWE - Road to WrestleMania X8 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1000068C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200068C"
+        },
+        {
+          "code": "83005658",
+          "desc": "Infinite Special P1",
+          "address": "0x02005658"
+        },
+        {
+          "code": "83005658",
+          "desc": "No Special P1",
+          "address": "0x02005658"
+        },
+        {
+          "code": "830063B0",
+          "desc": "Infinite Special P2",
+          "address": "0x020063B0"
+        },
+        {
+          "code": "830063B0",
+          "desc": "No Special P2",
+          "address": "0x020063B0"
+        },
+        {
+          "code": "83006A5C",
+          "desc": "Infinite Special P3",
+          "address": "0x02006A5C"
+        },
+        {
+          "code": "83006A5C",
+          "desc": "No Special P3",
+          "address": "0x02006A5C"
+        },
+        {
+          "code": "83005D04",
+          "desc": "Infinite Special P4",
+          "address": "0x02005D04"
+        },
+        {
+          "code": "83005D04",
+          "desc": "No Special P4",
+          "address": "0x02005D04"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\WWE - Road to WrestleMania X8 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1000068C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200068C"
+        },
+        {
+          "code": "83005658",
+          "desc": "Infinite Special P1",
+          "address": "0x02005658"
+        },
+        {
+          "code": "83005658",
+          "desc": "No Special P1",
+          "address": "0x02005658"
+        },
+        {
+          "code": "830063B0",
+          "desc": "Infinite Special P2",
+          "address": "0x020063B0"
+        },
+        {
+          "code": "830063B0",
+          "desc": "No Special P2",
+          "address": "0x020063B0"
+        },
+        {
+          "code": "83006A5C",
+          "desc": "Infinite Special P3",
+          "address": "0x02006A5C"
+        },
+        {
+          "code": "83006A5C",
+          "desc": "No Special P3",
+          "address": "0x02006A5C"
+        },
+        {
+          "code": "83005D04",
+          "desc": "Infinite Special P4",
+          "address": "0x02005D04"
+        },
+        {
+          "code": "83005D04",
+          "desc": "No Special P4",
+          "address": "0x02005D04"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

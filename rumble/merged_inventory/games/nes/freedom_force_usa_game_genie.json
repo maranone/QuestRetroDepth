@@ -1,0 +1,97 @@
+{
+  "system": "nes",
+  "normalized_title": "freedomforce",
+  "display_name": "Freedom Force (USA) (Game Genie)",
+  "aliases": [
+    "Freedom Force (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Freedom Force (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 15,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "GZVAYLSA",
+          "desc": "Infinite health",
+          "address": "0x032F"
+        },
+        {
+          "code": "0516:18",
+          "desc": "Infinite Energy",
+          "address": "0x0516"
+        },
+        {
+          "code": "0515:24",
+          "desc": "Infinite Ammo",
+          "address": "0x0515"
+        },
+        {
+          "code": "0526:18",
+          "desc": "Infinite Health for Manic Jackson (2nd Player)",
+          "address": "0x0526"
+        },
+        {
+          "code": "0525:24",
+          "desc": "Infinite Ammo for Manic Jackson (2nd Player)",
+          "address": "0x0525"
+        },
+        {
+          "code": "0527:00",
+          "desc": "Infinite Errors allowed for Manic Jackson (2nd Player)",
+          "address": "0x0527"
+        },
+        {
+          "code": "0517:00",
+          "desc": "Infinite Errors allowed for Rad Rex (1st Player)",
+          "address": "0x0517"
+        },
+        {
+          "code": "00C2:3C",
+          "desc": "Automatically finish Stage",
+          "address": "0x00C2"
+        },
+        {
+          "code": "0089:09",
+          "desc": "Infinite Time in Bonus Stage (turn off to move on)",
+          "address": "0x0089"
+        },
+        {
+          "code": "0516:14",
+          "desc": "Infinite Health P1",
+          "address": "0x0516"
+        },
+        {
+          "code": "0517:00",
+          "desc": "No Errors P1 (In Level)",
+          "address": "0x0517"
+        },
+        {
+          "code": "0515:25",
+          "desc": "Infinite Ammo P1",
+          "address": "0x0515"
+        },
+        {
+          "code": "0088:09",
+          "desc": "Infinite Time Codebreakers (Tens)",
+          "address": "0x0088"
+        },
+        {
+          "code": "0089:09",
+          "desc": "Infinite Time Codebreakers (Ones)",
+          "address": "0x0089"
+        },
+        {
+          "code": "00A5:00",
+          "desc": "Have Zero Errors P1",
+          "address": "0x00A5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

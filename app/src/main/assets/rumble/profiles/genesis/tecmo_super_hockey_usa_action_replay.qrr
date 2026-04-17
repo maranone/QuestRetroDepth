@@ -1,0 +1,6 @@
+game_name=Tecmo Super Hockey (USA) (Action Replay)
+game_key=tecmo_super_hockey_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffc710	score	0xFFC710	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffc712	score	0xFFC712	1	uint	little	prev < curr	0.8	1	right:0.350:60

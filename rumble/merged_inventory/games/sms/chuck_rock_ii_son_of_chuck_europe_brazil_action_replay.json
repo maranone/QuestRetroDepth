@@ -1,0 +1,67 @@
+{
+  "system": "sms",
+  "normalized_title": "chuckrockiisonofchuck",
+  "display_name": "Chuck Rock II - Son of Chuck (Europe, Brazil) (Action Replay)",
+  "aliases": [
+    "Chuck Rock II - Son of Chuck (Europe)",
+    "Chuck Rock II - Son of Chuck (Europe, Brazil) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\chuckrockiisonofchuck_sms.json",
+      "trigger_count": 6,
+      "field_names": [
+        "health",
+        "lives",
+        "score",
+        "score_in_progress"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xD2E4",
+        "0xD2ED",
+        "0xDD5C",
+        "0xDD5D"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ChuckRockIISonOfChuck-Sms-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xDD5D",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xDD5C",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xD2E4",
+          "type": "<d4"
+        },
+        {
+          "name": "score_in_progress",
+          "address": "0xD2ED",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Chuck Rock II - Son of Chuck (Europe, Brazil) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "artelius",
+  "display_name": "Artelius (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Artelius (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "0426:FF",
+          "desc": "Max Experience",
+          "address": "0x0426"
+        },
+        {
+          "code": "0427:FF",
+          "desc": "Max Experience",
+          "address": "0x0427"
+        },
+        {
+          "code": "0431:FF",
+          "desc": "Max Money",
+          "address": "0x0431"
+        },
+        {
+          "code": "0432:FF",
+          "desc": "Max Money",
+          "address": "0x0432"
+        },
+        {
+          "code": "0068:00",
+          "desc": "No Doors",
+          "address": "0x0068"
+        },
+        {
+          "code": "003E:0F",
+          "desc": "Stage Select",
+          "address": "0x003E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

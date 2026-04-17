@@ -1,0 +1,161 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "SamuraiShodown",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\SamuraiShodown-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "SamuraiShodown-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "enemy_defeated_enemy_health_ff498f",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0xFF498F",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF498F",
+          "ram_offset": 18831
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.65,
+      "needs_review": true,
+      "reason": "Enemy health reaching zero is a strong kill proxy.",
+      "source_fields": [
+        {
+          "name": "enemy_health",
+          "address": "0xFF498F",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_health_ff483f",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0xFF483F",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF483F",
+          "ram_offset": 18495
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFF483F",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_ff483f",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0xFF483F",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF483F",
+          "ram_offset": 18495
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFF483F",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_ff4836",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xFF4836",
+          "size": 4,
+          "value_type": "bcd",
+          "byte_order": "big",
+          "raw_type": ">d4",
+          "address": "0xFF4836",
+          "ram_offset": 18486
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xFF4836",
+          "raw_type": ">d4"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "round",
+      "meta": {
+        "address": 16755265,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

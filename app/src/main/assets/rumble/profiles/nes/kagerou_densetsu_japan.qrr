@@ -1,0 +1,7 @@
+game_name=Kagerou Densetsu (Japan)
+game_key=kagerou_densetsu_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_047d	damage_taken	0x047D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_047d	death	0x047D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_04a0	enemy_defeated	0x04A0	1	uint	little	prev > curr	0.65	1	right:0.450:35

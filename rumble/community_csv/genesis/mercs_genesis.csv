@@ -2,5 +2,5 @@
 # game_name=Mercs
 # match_names=mercs|mercsgenesis
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-damage_taken_0_c348,0xFFC348,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
-powerup_lost_1_c350,0xFFC350,1,uint,prev_gt_curr,,left,1.000,normal,0,250,75,40,
+damage_taken_0_c348,0xFFC348,1,uint,prev_gt_curr,,left,0.78,fade_out,0,180,80,70,
+powerup_lost_1_c350,0xFFC350,1,uint,prev_gt_curr,,left,1.000,fade_in,0,250,150,40,

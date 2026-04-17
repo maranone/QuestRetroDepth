@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "volleyball",
+  "display_name": "Volleyball (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Volleyball (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Volleyball (USA, Europe).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0063:00",
+          "desc": "Team 1 P1 Score Modifier",
+          "address": "0x0063"
+        },
+        {
+          "code": "0062:00",
+          "desc": "Team 2 P2/CPU Score Modifier",
+          "address": "0x0062"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

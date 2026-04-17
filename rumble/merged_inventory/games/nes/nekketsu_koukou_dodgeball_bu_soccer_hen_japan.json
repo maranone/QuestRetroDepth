@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "nekketsukoukoudodgeballbusoccerhen",
+  "display_name": "Nekketsu Koukou Dodgeball-bu - Soccer Hen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Nekketsu Koukou Dodgeball-bu - Soccer Hen (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "050B:63",
+          "desc": "Score Always With 99 Goals",
+          "address": "0x050B"
+        },
+        {
+          "code": "050E:00",
+          "desc": "Finish Time Now",
+          "address": "0x050E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,18 @@
+game_name=Super Bomberman 3 (Europe) (Action Replay)
+game_key=super_bomberman_3_europe_action_replay
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_034a	life_lost	0x7E034A	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_034a	life_gained	0x7E034A	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_12ec	enemy_defeated	0x7E12EC	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_12ed	enemy_defeated	0x7E12ED	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	level_complete_level_6c6e	level_complete	0x7E6C6E	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	score_score_17db	score	0x7E17DB	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_17dd	score	0x7E17DD	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	pickup_coins_48b9	pickup	0x7E48B9	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_48ba	pickup	0x7E48BA	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_48bb	pickup	0x7E48BB	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_48bc	pickup	0x7E48BC	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_48bd	pickup	0x7E48BD	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_144f	pickup	0x7E144F	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_1450	pickup	0x7E1450	1	uint	little	prev != curr	0.8	1	right:0.250:18

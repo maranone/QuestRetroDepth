@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "takedashingen",
+  "display_name": "Takeda Shingen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Takeda Shingen (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f0021:50",
+          "desc": "Infinite Energy",
+          "address": "0x1F0021"
+        },
+        {
+          "code": "1f0832:14",
+          "desc": "Invincibility",
+          "address": "0x1F0832"
+        },
+        {
+          "code": "1f0758:00",
+          "desc": "1-Hit Boss Kill",
+          "address": "0x1F0758"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

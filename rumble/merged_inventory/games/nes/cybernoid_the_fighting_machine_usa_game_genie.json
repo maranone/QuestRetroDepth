@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "cybernoidfightingmachine",
+  "display_name": "Cybernoid - The Fighting Machine (USA) (Game Genie)",
+  "aliases": [
+    "Cybernoid - The Fighting Machine (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Cybernoid - The Fighting Machine (USA).cht",
+      "total_cheat_rows": 35,
+      "raw_entry_count": 28,
+      "distinct_address_count": 27,
+      "sample_raw_entries": [
+        {
+          "code": "NYEATXNY",
+          "desc": "Start with 1 life",
+          "address": "0x027E"
+        },
+        {
+          "code": "UYEATXNN",
+          "desc": "Start with 5 lives",
+          "address": "0x027E"
+        },
+        {
+          "code": "AAEATXNN",
+          "desc": "Start with 18 lives",
+          "address": "0x020E"
+        },
+        {
+          "code": "SXOPUSVK",
+          "desc": "Infinite shields",
+          "address": "0x052B"
+        },
+        {
+          "code": "GPUETZPA",
+          "desc": "Start new life with 20 shields",
+          "address": "0x029E"
+        },
+        {
+          "code": "SZNPVOVK",
+          "desc": "Infinite bombs",
+          "address": "0x012E"
+        },
+        {
+          "code": "AZUALZGO",
+          "desc": "Start with double bombs",
+          "address": "0x022B"
+        },
+        {
+          "code": "SZNOLNVK",
+          "desc": "Infinite seekers",
+          "address": "0x07AB"
+        },
+        {
+          "code": "GPKAZZIA",
+          "desc": "Start with 20 seekers and bouncers",
+          "address": "0x021A"
+        },
+        {
+          "code": "NNOEPPAE",
+          "desc": "Start with rear laser",
+          "address": "0x01F9"
+        },
+        {
+          "code": "06D5:FF",
+          "desc": "Infinite Lives",
+          "address": "0x06D5"
+        },
+        {
+          "code": "06D4:00",
+          "desc": "Invincibility",
+          "address": "0x06D4"
+        },
+        {
+          "code": "0169:01",
+          "desc": "Enable Backshot",
+          "address": "0x0169"
+        },
+        {
+          "code": "016B:50",
+          "desc": "Bouncers Don't Fade",
+          "address": "0x016B"
+        },
+        {
+          "code": "016A:50",
+          "desc": "Bouncers Don't Fade",
+          "address": "0x016A"
+        },
+        {
+          "code": "0229:0E",
+          "desc": "Enable Protector 1",
+          "address": "0x0229"
+        },
+        {
+          "code": "022D:0E",
+          "desc": "Enable Protector 2",
+          "address": "0x022D"
+        },
+        {
+          "code": "UOSATZAA",
+          "desc": "Ultimate Cheat (start new game)",
+          "address": "0x021E"
+        },
+        {
+          "code": "AAVEANPA",
+          "desc": "Protectors Always Rotate Quickly",
+          "address": "0x0788"
+        },
+        {
+          "code": "SXOOKUVK",
+          "desc": "Infinite Bouncers",
+          "address": "0x03AC"
+        },
+        {
+          "code": "ELXPSGEI",
+          "desc": "Bouncers Don't Fade Away",
+          "address": "0x043D"
+        },
+        {
+          "code": "PEOEPPAA",
+          "desc": "Start New Game With Backshot",
+          "address": "0x0189"
+        },
+        {
+          "code": "06E1:14",
+          "desc": "Infinite Bombs",
+          "address": "0x06E1"
+        },
+        {
+          "code": "06E2:02",
+          "desc": "Infinite Genocide",
+          "address": "0x06E2"
+        },
+        {
+          "code": "06E3:01",
+          "desc": "Infinite Shields",
+          "address": "0x06E3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

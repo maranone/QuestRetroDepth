@@ -1,0 +1,5 @@
+game_name=Wizardry II - Llylgamyn no Isan (Japan) (Game Genie)
+game_key=wizardry_ii_llylgamyn_no_isan_japan_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_0331	pickup	0x0331	1	uint	little	prev != curr	0.8	1	right:0.250:18

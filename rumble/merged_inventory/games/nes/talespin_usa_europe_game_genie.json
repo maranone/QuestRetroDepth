@@ -1,0 +1,27 @@
+{
+  "system": "nes",
+  "normalized_title": "talespin",
+  "display_name": "TaleSpin (USA, Europe) (Game Genie)",
+  "aliases": [
+    "TaleSpin (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\TaleSpin (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "AAXEGPTA",
+          "desc": "Infinite Energy",
+          "address": "0x018C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

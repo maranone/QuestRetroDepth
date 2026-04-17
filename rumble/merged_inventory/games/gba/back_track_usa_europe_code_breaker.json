@@ -1,0 +1,168 @@
+{
+  "system": "gba",
+  "normalized_title": "backtrack",
+  "display_name": "Back Track (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Back Track (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 14,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "1000CD70",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200CD70"
+        },
+        {
+          "code": "8200EAA6",
+          "desc": "Infinite Health",
+          "address": "0x0200EAA6"
+        },
+        {
+          "code": "8200EAB6",
+          "desc": "Infinite Ammo (Shotgun)",
+          "address": "0x0200EAB6"
+        },
+        {
+          "code": "8200EAB8",
+          "desc": "Infinite Ammo (Raygun)",
+          "address": "0x0200EAB8"
+        },
+        {
+          "code": "8200EABA",
+          "desc": "Infinite Ammo (Flamable Spray Paint Canister)",
+          "address": "0x0200EABA"
+        },
+        {
+          "code": "8200EABC",
+          "desc": "Infinite Ammo (Sling Shot)",
+          "address": "0x0200EABC"
+        },
+        {
+          "code": "8200EABE",
+          "desc": "Infinite Ammo (Bubbles)",
+          "address": "0x0200EABE"
+        },
+        {
+          "code": "8200EAC0",
+          "desc": "Infinite Ammo (Vacuum)",
+          "address": "0x0200EAC0"
+        },
+        {
+          "code": "8200EAC4",
+          "desc": "Have All Weapons",
+          "address": "0x0200EAC4"
+        },
+        {
+          "code": "8200EAC6",
+          "desc": "Have All Cards",
+          "address": "0x0200EAC6"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Rapid Fire",
+          "address": "0x02000020"
+        },
+        {
+          "code": "8200EBE0",
+          "desc": "Rapid Fire",
+          "address": "0x0200EBE0"
+        },
+        {
+          "code": "7200EAA4",
+          "desc": "Only 2 Humans To Free",
+          "address": "0x0200EAA4"
+        },
+        {
+          "code": "8200EAA4",
+          "desc": "Only 2 Humans To Free",
+          "address": "0x0200EAA4"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Back Track (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 14,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "1000CD70",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200CD70"
+        },
+        {
+          "code": "8200EAA6",
+          "desc": "Infinite Health",
+          "address": "0x0200EAA6"
+        },
+        {
+          "code": "8200EAB6",
+          "desc": "Infinite Ammo (Shotgun)",
+          "address": "0x0200EAB6"
+        },
+        {
+          "code": "8200EAB8",
+          "desc": "Infinite Ammo (Raygun)",
+          "address": "0x0200EAB8"
+        },
+        {
+          "code": "8200EABA",
+          "desc": "Infinite Ammo (Flamable Spray Paint Canister)",
+          "address": "0x0200EABA"
+        },
+        {
+          "code": "8200EABC",
+          "desc": "Infinite Ammo (Sling Shot)",
+          "address": "0x0200EABC"
+        },
+        {
+          "code": "8200EABE",
+          "desc": "Infinite Ammo (Bubbles)",
+          "address": "0x0200EABE"
+        },
+        {
+          "code": "8200EAC0",
+          "desc": "Infinite Ammo (Vacuum)",
+          "address": "0x0200EAC0"
+        },
+        {
+          "code": "8200EAC4",
+          "desc": "Have All Weapons",
+          "address": "0x0200EAC4"
+        },
+        {
+          "code": "8200EAC6",
+          "desc": "Have All Cards",
+          "address": "0x0200EAC6"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Rapid Fire",
+          "address": "0x02000020"
+        },
+        {
+          "code": "8200EBE0",
+          "desc": "Rapid Fire",
+          "address": "0x0200EBE0"
+        },
+        {
+          "code": "7200EAA4",
+          "desc": "Only 2 Humans To Free",
+          "address": "0x0200EAA4"
+        },
+        {
+          "code": "8200EAA4",
+          "desc": "Only 2 Humans To Free",
+          "address": "0x0200EAA4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

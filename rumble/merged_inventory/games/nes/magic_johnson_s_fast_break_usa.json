@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "magicjohnsonsfastbreak",
+  "display_name": "Magic Johnson's Fast Break (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Magic Johnson's Fast Break (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "04F9:09",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x04F9"
+        },
+        {
+          "code": "04FA:09",
+          "desc": "Infinite Time (Seconds - Ten's Digit)",
+          "address": "0x04FA"
+        },
+        {
+          "code": "04FB:09",
+          "desc": "Infinite Time (Seconds - One's Digit)",
+          "address": "0x04FB"
+        },
+        {
+          "code": "0508:00",
+          "desc": "Team 1's Score Modifier (One's Digit)",
+          "address": "0x0508"
+        },
+        {
+          "code": "0507:00",
+          "desc": "Team 1's Score Modifier (Ten's Digit)",
+          "address": "0x0507"
+        },
+        {
+          "code": "0506:00",
+          "desc": "Team 1's Score Modifier (Hundred's Digit)",
+          "address": "0x0506"
+        },
+        {
+          "code": "050B:00",
+          "desc": "Team 2's Score Modifier (One's Digit)",
+          "address": "0x050B"
+        },
+        {
+          "code": "050A:00",
+          "desc": "Team 2's Score Modifier (Ten's Digit)",
+          "address": "0x050A"
+        },
+        {
+          "code": "0509:00",
+          "desc": "Team 2's Score Modifier (Hundred's Digit)",
+          "address": "0x0509"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

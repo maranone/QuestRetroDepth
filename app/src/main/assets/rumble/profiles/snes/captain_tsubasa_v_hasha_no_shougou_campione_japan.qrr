@@ -1,0 +1,49 @@
+game_name=Captain Tsubasa V - Hasha no Shougou Campione (Japan)
+game_key=captain_tsubasa_v_hasha_no_shougou_campione_japan
+system=snes
+integration_tier=contrib
+trigger	score_score_181b	score	0x7E181B	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	damage_taken_health_3002	damage_taken	0x7E3002	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3002	death	0x7E3002	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3003	damage_taken	0x7E3003	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3003	death	0x7E3003	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3032	damage_taken	0x7E3032	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3032	death	0x7E3032	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3033	damage_taken	0x7E3033	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3033	death	0x7E3033	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3062	damage_taken	0x7E3062	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3062	death	0x7E3062	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3063	damage_taken	0x7E3063	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3063	death	0x7E3063	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3092	damage_taken	0x7E3092	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3092	death	0x7E3092	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3093	damage_taken	0x7E3093	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3093	death	0x7E3093	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_30c2	damage_taken	0x7E30C2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_30c2	death	0x7E30C2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_30c3	damage_taken	0x7E30C3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_30c3	death	0x7E30C3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_30f2	damage_taken	0x7E30F2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_30f2	death	0x7E30F2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_30f3	damage_taken	0x7E30F3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_30f3	death	0x7E30F3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3122	damage_taken	0x7E3122	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3122	death	0x7E3122	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3123	damage_taken	0x7E3123	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3123	death	0x7E3123	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3152	damage_taken	0x7E3152	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3152	death	0x7E3152	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3153	damage_taken	0x7E3153	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3153	death	0x7E3153	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3182	damage_taken	0x7E3182	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3182	death	0x7E3182	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3183	damage_taken	0x7E3183	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3183	death	0x7E3183	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_31b2	damage_taken	0x7E31B2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_31b2	death	0x7E31B2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_31b3	damage_taken	0x7E31B3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_31b3	death	0x7E31B3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_31e2	damage_taken	0x7E31E2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_31e2	death	0x7E31E2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_31e3	damage_taken	0x7E31E3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_31e3	death	0x7E31E3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

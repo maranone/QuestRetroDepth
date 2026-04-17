@@ -1,0 +1,5 @@
+game_name=Monopoly (USA) (Action Replay)
+game_key=monopoly_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff84e4	pickup	0xFF84E4	1	uint	little	prev != curr	0.8	1	right:0.250:18

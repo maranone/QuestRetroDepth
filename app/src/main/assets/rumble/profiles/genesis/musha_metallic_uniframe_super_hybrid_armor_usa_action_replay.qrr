@@ -1,0 +1,6 @@
+game_name=MUSHA - Metallic Uniframe Super Hybrid Armor (USA) (Action Replay)
+game_key=musha_metallic_uniframe_super_hybrid_armor_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ffd113	life_lost	0xFFD113	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffd113	life_gained	0xFFD113	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

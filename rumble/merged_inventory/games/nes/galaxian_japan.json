@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "galaxian",
+  "display_name": "Galaxian (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Galaxian (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "078D:00",
+          "desc": "Enemy Shooting Affected",
+          "address": "0x078D"
+        },
+        {
+          "code": "0042:00",
+          "desc": "Lives Mod",
+          "address": "0x0042"
+        },
+        {
+          "code": "0044:01",
+          "desc": "Auto-fire",
+          "address": "0x0044"
+        },
+        {
+          "code": "004F:00",
+          "desc": "Invincible",
+          "address": "0x004F"
+        },
+        {
+          "code": "0059:00",
+          "desc": "Stage Modifier",
+          "address": "0x0059"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

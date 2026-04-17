@@ -1,0 +1,231 @@
+{
+  "system": "nes",
+  "normalized_title": "megaman6",
+  "display_name": "Mega Man 6 (USA) (Game Genie)",
+  "aliases": [
+    "Mega Man 6 (USA) (Game Genie)",
+    "Mega Man 6 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mega Man 6 (USA).cht",
+      "total_cheat_rows": 115,
+      "raw_entry_count": 119,
+      "distinct_address_count": 96,
+      "sample_raw_entries": [
+        {
+          "code": "03E5:1B",
+          "desc": "Infinite Energy",
+          "address": "0x03E5"
+        },
+        {
+          "code": "009E:07",
+          "desc": "Auto Fire Mega Buster    F",
+          "address": "0x009E"
+        },
+        {
+          "code": "NNXPXVOO",
+          "desc": "Infinite Energy For All Weapons (Alternate)",
+          "address": "0x067A"
+        },
+        {
+          "code": "SEXAVTVG",
+          "desc": "Stay Invincible Against Spikes And Enemies After Being Hit",
+          "address": "0x060E"
+        },
+        {
+          "code": "OXEEOZSX",
+          "desc": "Always Invincible Against Spikes",
+          "address": "0x02A9"
+        },
+        {
+          "code": "SXXAVTVG",
+          "desc": "Invincible",
+          "address": "0x062E"
+        },
+        {
+          "code": "OILOIL",
+          "desc": "Start With The POW Suit",
+          "address": "0x03D5"
+        },
+        {
+          "code": "AAXOYSOI",
+          "desc": "Can Always Use An E-Tank",
+          "address": "0x058F"
+        },
+        {
+          "code": "TAZOIL",
+          "desc": "Start With The JET Suit",
+          "address": "0x0385"
+        },
+        {
+          "code": "TAAPIL",
+          "desc": "Have All The Letters, But You Don't Have Beat",
+          "address": "0x0305"
+        },
+        {
+          "code": "AOSATTAK",
+          "desc": "Always Underwater Jump",
+          "address": "0x061E"
+        },
+        {
+          "code": "PESATTAG",
+          "desc": "Super Moon Jump+ (Land Only)",
+          "address": "0x060E"
+        },
+        {
+          "code": "PESEYVAP",
+          "desc": "Super Moon Jump+ (Water Only)",
+          "address": "0x068F"
+        },
+        {
+          "code": "IEOPSTAL",
+          "desc": "Weapons Continue To Fire When Depleted",
+          "address": "0x060D"
+        },
+        {
+          "code": "SZXAYTSA",
+          "desc": "Charge M. Buster For Autofire Full Power Blasts",
+          "address": "0x062F"
+        },
+        {
+          "code": "XYLOLO",
+          "desc": "Charges The M. Buster A Little Faster",
+          "address": "0x01F3"
+        },
+        {
+          "code": "GOGOTS",
+          "desc": "Shoot Half Charged Shots",
+          "address": "0x0596"
+        },
+        {
+          "code": "SZEPUXSE",
+          "desc": "Bosses Don't Get Invincibility When Hit",
+          "address": "0x022B"
+        },
+        {
+          "code": "SXEEXTVG",
+          "desc": "Infinite lives",
+          "address": "0x06AA"
+        },
+        {
+          "code": "GXEAKYST",
+          "desc": "Infinite energy (except fires, falling into pits and spikes still kill you)",
+          "address": "0x072C"
+        },
+        {
+          "code": "LOOEKGPP",
+          "desc": "Normal shots do more damage",
+          "address": "0x049C"
+        },
+        {
+          "code": "TOKENGLP",
+          "desc": "Mega-shots do more damage",
+          "address": "0x049F"
+        },
+        {
+          "code": "SEEEXTVG",
+          "desc": "Infinite Lives",
+          "address": "0x068A"
+        },
+        {
+          "code": "SZUPYSVK",
+          "desc": "Infinite Energy Tanks",
+          "address": "0x052F"
+        },
+        {
+          "code": "SXEAVNSE",
+          "desc": "Infinite Energy",
+          "address": "0x072E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Mega Man 6 (USA).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "SXEEXTVG",
+          "desc": "Infinite Lives (Can Sometimes Die And Go To Another Part Of The Game)",
+          "address": "0x06AA"
+        },
+        {
+          "code": "GXEAKYST",
+          "desc": "Infinite Energy (Except Fires, Falling Into Pits And Spikes Still Kill You)",
+          "address": "0x072C"
+        },
+        {
+          "code": "LOOEKGPP",
+          "desc": "Normal Shots Do More Damage",
+          "address": "0x049C"
+        },
+        {
+          "code": "TOKENGLP",
+          "desc": "Mega-Shots Do More Damage",
+          "address": "0x049F"
+        },
+        {
+          "code": "IEOPSTAL",
+          "desc": "Weapons Continue To Fire When Depleted",
+          "address": "0x060D"
+        },
+        {
+          "code": "NNXPXVOO",
+          "desc": "Infinite Energy For All Weapons (Alternate)",
+          "address": "0x067A"
+        },
+        {
+          "code": "SZXAYTSA",
+          "desc": "Charge M. Buster For Autofire Full Power Blasts",
+          "address": "0x062F"
+        },
+        {
+          "code": "SXXAVTVG",
+          "desc": "Invincible",
+          "address": "0x062E"
+        },
+        {
+          "code": "SZEPUXSE",
+          "desc": "Bosses Don't Get Invincibility When Hit 1",
+          "address": "0x022B"
+        },
+        {
+          "code": "SEXAVTVG",
+          "desc": "Stay Invincible Against Spikes and Enemies After Being Hit",
+          "address": "0x060E"
+        },
+        {
+          "code": "OXEEOZSX",
+          "desc": "Always Invincible Against Spikes",
+          "address": "0x02A9"
+        },
+        {
+          "code": "AAXOYSOI",
+          "desc": "Can Always Use An E-Tank",
+          "address": "0x058F"
+        },
+        {
+          "code": "AOSATTAK",
+          "desc": "Always Water Jump",
+          "address": "0x061E"
+        },
+        {
+          "code": "PESATTAG",
+          "desc": "Super Moon Jump+ (Land Only)",
+          "address": "0x060E"
+        },
+        {
+          "code": "PESEYVAP",
+          "desc": "Super Moon Jump+ (Water Only)",
+          "address": "0x068F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

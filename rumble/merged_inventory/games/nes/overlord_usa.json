@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "overlord",
+  "display_name": "Overlord (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Overlord (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "GPEAPOIE",
+          "desc": "Food Not Decreased",
+          "address": "0x0119"
+        },
+        {
+          "code": "SZKOPOVK",
+          "desc": "Ballistic Missiles never decrease in battle",
+          "address": "0x01A9"
+        },
+        {
+          "code": "SZSPGOVK",
+          "desc": "Homing Missiles never decrease in battle",
+          "address": "0x012C"
+        },
+        {
+          "code": "ESKALPEL",
+          "desc": "Constantly Get 9999999 Cash on All Planets with 1% or Higher Tax",
+          "address": "0x015B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

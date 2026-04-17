@@ -1,0 +1,5 @@
+game_name=Davis Cup II (USA) (Proto) (1994-07-28)
+game_key=davis_cup_ii_usa_proto_1994_07_28
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff88de	score	0xFF88DE	1	uint	little	prev < curr	0.8	1	right:0.350:60

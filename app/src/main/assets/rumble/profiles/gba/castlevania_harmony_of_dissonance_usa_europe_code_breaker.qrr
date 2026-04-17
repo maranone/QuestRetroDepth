@@ -1,0 +1,6 @@
+game_name=Castlevania - Harmony of Dissonance (USA, Europe) (Code Breaker)
+game_key=castlevania_harmony_of_dissonance_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	level_complete_level_0201879a	level_complete	0x0201879A	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_02018854	enemy_defeated	0x02018854	1	uint	little	prev > curr	0.65	1	right:0.450:35

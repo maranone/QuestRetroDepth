@@ -1,0 +1,97 @@
+{
+  "system": "nes",
+  "normalized_title": "whompem",
+  "display_name": "Whomp 'Em (USA) (Game Genie)",
+  "aliases": [
+    "Whomp 'Em (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Whomp 'Em (USA).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 15,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "SXEEZPVG",
+          "desc": "Don't lose a life from energy loss",
+          "address": "0x01AA"
+        },
+        {
+          "code": "SXXOUPVG",
+          "desc": "Creatures can't steal extra lives",
+          "address": "0x01AB"
+        },
+        {
+          "code": "SZNATPSA",
+          "desc": "Infinite energy",
+          "address": "0x012E"
+        },
+        {
+          "code": "SZKEGPVG",
+          "desc": "Keep buffalo headdress for present level",
+          "address": "0x01AC"
+        },
+        {
+          "code": "ZAKELOAA",
+          "desc": "Always have buffalo headdress",
+          "address": "0x018B"
+        },
+        {
+          "code": "AYUOZLEP",
+          "desc": "Enemies Continually Hit Anywhere (Exludes Bosses)",
+          "address": "0x03FA"
+        },
+        {
+          "code": "ATSELPEY",
+          "desc": "Invincible",
+          "address": "0x01EB"
+        },
+        {
+          "code": "0035:0C",
+          "desc": "Infinite Health",
+          "address": "0x0035"
+        },
+        {
+          "code": "009F:63",
+          "desc": "Infinite Lives",
+          "address": "0x009F"
+        },
+        {
+          "code": "0069:01",
+          "desc": "Levitate Jump",
+          "address": "0x0069"
+        },
+        {
+          "code": "006A:20",
+          "desc": "Walk Behind Scenery",
+          "address": "0x006A"
+        },
+        {
+          "code": "006B:10",
+          "desc": "Walk Through Enemies",
+          "address": "0x006B"
+        },
+        {
+          "code": "0083:00",
+          "desc": "Weapon Length Mod",
+          "address": "0x0083"
+        },
+        {
+          "code": "0084:00",
+          "desc": "Weapon Modifier",
+          "address": "0x0084"
+        },
+        {
+          "code": "0646:02",
+          "desc": "Climb Anywhere",
+          "address": "0x0646"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

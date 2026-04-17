@@ -1,0 +1,18 @@
+game_name=Shining in the Darkness (USA, Europe)
+game_key=shining_in_the_darkness_usa_europe
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff16a5	pickup	0xFF16A5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff16eb	pickup	0xFF16EB	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_ff16a9	damage_taken	0xFF16A9	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff16a9	death	0xFF16A9	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff16b5	damage_taken	0xFF16B5	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff16b5	death	0xFF16B5	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff16ab	damage_taken	0xFF16AB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff16ab	death	0xFF16AB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff16b7	damage_taken	0xFF16B7	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff16b7	death	0xFF16B7	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff16ad	damage_taken	0xFF16AD	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff16ad	death	0xFF16AD	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff16b9	damage_taken	0xFF16B9	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff16b9	death	0xFF16B9	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

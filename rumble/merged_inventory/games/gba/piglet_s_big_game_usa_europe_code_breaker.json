@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "pigletsbiggame",
+  "display_name": "Piglet's Big Game (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Piglet's Big Game (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10000264",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000264"
+        },
+        {
+          "code": "32004864",
+          "desc": "Max Cookies",
+          "address": "0x02004864"
+        },
+        {
+          "code": "82004862",
+          "desc": "Full Life",
+          "address": "0x02004862"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Piglet's Big Game (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10000264",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000264"
+        },
+        {
+          "code": "32004864",
+          "desc": "Max Cookies",
+          "address": "0x02004864"
+        },
+        {
+          "code": "82004862",
+          "desc": "Full Life",
+          "address": "0x02004862"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

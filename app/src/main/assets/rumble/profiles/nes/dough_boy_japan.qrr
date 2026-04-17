@@ -1,0 +1,11 @@
+game_name=Dough Boy (Japan)
+game_key=dough_boy_japan
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_0062	life_lost	0x0062	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0062	life_gained	0x0062	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_0074	pickup	0x0074	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	life_lost_lives_0472	life_lost	0x0472	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0472	life_gained	0x0472	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_0726	life_lost	0x0726	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0726	life_gained	0x0726	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

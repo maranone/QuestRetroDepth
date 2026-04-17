@@ -1,0 +1,11 @@
+game_name=Summon Night - Swordcraft Story (USA) (Code Breaker)
+game_key=summon_night_swordcraft_story_usa_code_breaker
+system=gba
+integration_tier=contrib
+trigger	level_complete_level_02000130	level_complete	0x02000130	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_02001477	level_complete	0x02001477	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	pickup_coins_0200000c	pickup	0x0200000C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0200000e	pickup	0x0200000E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_020022b4	pickup	0x020022B4	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_02002044	level_complete	0x02002044	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_02002124	level_complete	0x02002124	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

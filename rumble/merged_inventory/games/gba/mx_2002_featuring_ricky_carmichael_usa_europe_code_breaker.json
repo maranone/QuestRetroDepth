@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "mx2002featuringrickycarmichael",
+  "display_name": "MX 2002 featuring Ricky Carmichael (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\MX 2002 featuring Ricky Carmichael (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10001F84",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001F84"
+        },
+        {
+          "code": "43002270",
+          "desc": "Always Low Timer",
+          "address": "0x02002270"
+        },
+        {
+          "code": "430021C0",
+          "desc": "Always Low Lap Timer",
+          "address": "0x020021C0"
+        },
+        {
+          "code": "73001654",
+          "desc": "Start On Last Lap",
+          "address": "0x02001654"
+        },
+        {
+          "code": "83001654",
+          "desc": "Start On Last Lap",
+          "address": "0x02001654"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\MX 2002 featuring Ricky Carmichael (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10001F84",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001F84"
+        },
+        {
+          "code": "43002270",
+          "desc": "Always Low Timer",
+          "address": "0x02002270"
+        },
+        {
+          "code": "430021C0",
+          "desc": "Always Low Lap Timer",
+          "address": "0x020021C0"
+        },
+        {
+          "code": "73001654",
+          "desc": "Start On Last Lap",
+          "address": "0x02001654"
+        },
+        {
+          "code": "83001654",
+          "desc": "Start On Last Lap",
+          "address": "0x02001654"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

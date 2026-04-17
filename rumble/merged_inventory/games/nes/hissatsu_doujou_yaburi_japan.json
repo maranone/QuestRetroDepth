@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "hissatsudoujouyaburi",
+  "display_name": "Hissatsu Doujou Yaburi (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hissatsu Doujou Yaburi (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0016:10",
+          "desc": "Infinite Attribute",
+          "address": "0x0016"
+        },
+        {
+          "code": "007E:10",
+          "desc": "Infinite Health",
+          "address": "0x007E"
+        },
+        {
+          "code": "008C:00",
+          "desc": "Opponent Dies",
+          "address": "0x008C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

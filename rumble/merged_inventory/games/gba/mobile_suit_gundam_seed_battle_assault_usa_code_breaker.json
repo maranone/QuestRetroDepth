@@ -1,0 +1,148 @@
+{
+  "system": "gba",
+  "normalized_title": "mobilesuitgundamseedbattleassault",
+  "display_name": "Mobile Suit Gundam Seed - Battle Assault (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Mobile Suit Gundam Seed - Battle Assault (USA) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 12,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "100003D6",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020003D6"
+        },
+        {
+          "code": "3300053F",
+          "desc": "Infinite HP P1",
+          "address": "0x0200053F"
+        },
+        {
+          "code": "33000541",
+          "desc": "Infinite PS P1",
+          "address": "0x02000541"
+        },
+        {
+          "code": "330005A5",
+          "desc": "No PS P2",
+          "address": "0x020005A5"
+        },
+        {
+          "code": "33000543",
+          "desc": "Infinite Truster Power P1",
+          "address": "0x02000543"
+        },
+        {
+          "code": "330005A7",
+          "desc": "No Trust Power P2",
+          "address": "0x020005A7"
+        },
+        {
+          "code": "33000515",
+          "desc": "Unlock Very Hard Mode",
+          "address": "0x02000515"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 1-Hit Kill",
+          "address": "0x02000020"
+        },
+        {
+          "code": "830005A3",
+          "desc": "Press Select For 1-Hit Kill",
+          "address": "0x020005A3"
+        },
+        {
+          "code": "83007618",
+          "desc": "Infinite Time (Time Limit Mode)",
+          "address": "0x02007618"
+        },
+        {
+          "code": "83007618",
+          "desc": "No Time For Time Trials Mode",
+          "address": "0x02007618"
+        },
+        {
+          "code": "83007638",
+          "desc": "Have All Characters Unlocked/Cleared",
+          "address": "0x02007638"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Mobile Suit Gundam Seed - Battle Assault (USA) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 12,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "100003D6",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020003D6"
+        },
+        {
+          "code": "3300053F",
+          "desc": "Infinite HP P1",
+          "address": "0x0200053F"
+        },
+        {
+          "code": "33000541",
+          "desc": "Infinite PS P1",
+          "address": "0x02000541"
+        },
+        {
+          "code": "330005A5",
+          "desc": "No PS P2",
+          "address": "0x020005A5"
+        },
+        {
+          "code": "33000543",
+          "desc": "Infinite Truster Power P1",
+          "address": "0x02000543"
+        },
+        {
+          "code": "330005A7",
+          "desc": "No Trust Power P2",
+          "address": "0x020005A7"
+        },
+        {
+          "code": "33000515",
+          "desc": "Unlock Very Hard Mode",
+          "address": "0x02000515"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 1-Hit Kill",
+          "address": "0x02000020"
+        },
+        {
+          "code": "830005A3",
+          "desc": "Press Select For 1-Hit Kill",
+          "address": "0x020005A3"
+        },
+        {
+          "code": "83007618",
+          "desc": "Infinite Time (Time Limit Mode)",
+          "address": "0x02007618"
+        },
+        {
+          "code": "83007618",
+          "desc": "No Time For Time Trials Mode",
+          "address": "0x02007618"
+        },
+        {
+          "code": "83007638",
+          "desc": "Have All Characters Unlocked/Cleared",
+          "address": "0x02007638"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

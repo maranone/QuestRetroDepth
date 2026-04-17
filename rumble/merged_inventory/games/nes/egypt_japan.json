@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "egypt",
+  "display_name": "Egypt (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Egypt (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "OUEPXNOO",
+          "desc": "Infinite Power Ups",
+          "address": "0x073A"
+        },
+        {
+          "code": "00E3:00",
+          "desc": "Zero Steps Taken",
+          "address": "0x00E3"
+        },
+        {
+          "code": "00E5:00",
+          "desc": "Zero Rotates",
+          "address": "0x00E5"
+        },
+        {
+          "code": "00F2:98",
+          "desc": "Infinite Lightning Bolt",
+          "address": "0x00F2"
+        },
+        {
+          "code": "00F3:94",
+          "desc": "Infinite Feather",
+          "address": "0x00F3"
+        },
+        {
+          "code": "00F4:90",
+          "desc": "Infinite Star",
+          "address": "0x00F4"
+        },
+        {
+          "code": "00EF:01",
+          "desc": "Level Exit Active",
+          "address": "0x00EF"
+        },
+        {
+          "code": "SXVAULVT",
+          "desc": "No Steps",
+          "address": "0x032B"
+        },
+        {
+          "code": "SXVANLVT",
+          "desc": "No Steps",
+          "address": "0x032F"
+        },
+        {
+          "code": "SZEANGVT",
+          "desc": "No Rotates",
+          "address": "0x042F"
+        },
+        {
+          "code": "SZEAUGVT",
+          "desc": "No Rotates",
+          "address": "0x042B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

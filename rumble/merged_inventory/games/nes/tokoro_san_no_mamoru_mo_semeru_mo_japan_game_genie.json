@@ -1,0 +1,87 @@
+{
+  "system": "nes",
+  "normalized_title": "tokorosannomamorumosemerumo",
+  "display_name": "Tokoro-san no Mamoru mo Semeru mo (Japan) (Game Genie)",
+  "aliases": [
+    "Tokoro-san no Mamoru mo Semeru mo (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tokoro-san no Mamoru mo Semeru mo (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "SXOOPGSA",
+          "desc": "Infinite Health",
+          "address": "0x04A9"
+        },
+        {
+          "code": "SXUOZGSA",
+          "desc": "Infinite Water",
+          "address": "0x04AA"
+        },
+        {
+          "code": "008D:10",
+          "desc": "Infinite Energy",
+          "address": "0x008D"
+        },
+        {
+          "code": "008C:28",
+          "desc": "Infinite Weapon",
+          "address": "0x008C"
+        },
+        {
+          "code": "0090:07",
+          "desc": "Infinite Time",
+          "address": "0x0090"
+        },
+        {
+          "code": "0086:00",
+          "desc": "Infinite Lives",
+          "address": "0x0086"
+        },
+        {
+          "code": "0501:05",
+          "desc": "Shoot Straight",
+          "address": "0x0501"
+        },
+        {
+          "code": "0519:05",
+          "desc": "Shoot Straight",
+          "address": "0x0519"
+        },
+        {
+          "code": "0531:05",
+          "desc": "Shoot Straight",
+          "address": "0x0531"
+        },
+        {
+          "code": "0549:05",
+          "desc": "Shoot Straight",
+          "address": "0x0549"
+        },
+        {
+          "code": "0712:08",
+          "desc": "Climb Anywhere",
+          "address": "0x0712"
+        },
+        {
+          "code": "0718:0F",
+          "desc": "Walk Over Street Cones",
+          "address": "0x0718"
+        },
+        {
+          "code": "OEKESLEA",
+          "desc": "Infinite Life",
+          "address": "0x038D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=Bo Jackson Baseball (USA)
+game_key=bo_jackson_baseball_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_041b	score	0x041B	1	uint	little	prev < curr	0.8	1	right:0.350:60

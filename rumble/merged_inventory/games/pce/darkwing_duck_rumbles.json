@@ -1,0 +1,32 @@
+{
+  "system": "pce",
+  "normalized_title": "darkwingduck",
+  "display_name": "Darkwing Duck (Rumbles)",
+  "aliases": [
+    "Darkwing Duck (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Darkwing Duck (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f02ff:02",
+          "desc": "Infinite Lives",
+          "address": "0x1F02FF"
+        },
+        {
+          "code": "1f1fb6:09",
+          "desc": "Infinite Ammo",
+          "address": "0x1F1FB6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

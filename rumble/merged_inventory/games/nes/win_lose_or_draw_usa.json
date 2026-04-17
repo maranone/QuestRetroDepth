@@ -1,0 +1,25 @@
+{
+  "system": "nes",
+  "normalized_title": "winloseordraw",
+  "display_name": "Win, Lose or Draw (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Win, Lose or Draw (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "02C3:DB",
+          "desc": "Fake Infinite Time",
+          "address": "0x02C3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

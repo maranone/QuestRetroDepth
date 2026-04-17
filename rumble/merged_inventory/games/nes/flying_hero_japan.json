@@ -1,0 +1,73 @@
+{
+  "system": "nes",
+  "normalized_title": "flyinghero",
+  "display_name": "Flying Hero (Japan)",
+  "aliases": [
+    "Flying Hero (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\flyinghero_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0401",
+        "0x0410"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FlyingHero-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0410",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0401",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Flying Hero (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0400:03",
+          "desc": "Infinite Lives",
+          "address": "0x0400"
+        },
+        {
+          "code": "03A9:00",
+          "desc": "Finish Levels Automatically",
+          "address": "0x03A9"
+        },
+        {
+          "code": "04B0:03",
+          "desc": "Max Bounce",
+          "address": "0x04B0"
+        },
+        {
+          "code": "0510:80",
+          "desc": "Kill Fires In 1 Hit",
+          "address": "0x0510"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

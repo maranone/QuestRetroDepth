@@ -1,0 +1,120 @@
+{
+  "system": "nes",
+  "normalized_title": "bardstale",
+  "display_name": "Bard's Tale, The (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bard's Tale, The (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 20,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "ATSOOZOL",
+          "desc": "Take No Damage In Battle",
+          "address": "0x02E9"
+        },
+        {
+          "code": "ENVPYTLE",
+          "desc": "Infinite Magic In Battle",
+          "address": "0x067F"
+        },
+        {
+          "code": "1040:E0",
+          "desc": "Gain 800-P And 355-404 Gold After Every Bat",
+          "address": "0x1040"
+        },
+        {
+          "code": "033E:C8",
+          "desc": "Gain 800-P And 355-404 Gold After Every Bat",
+          "address": "0x033E"
+        },
+        {
+          "code": "032B:00",
+          "desc": "Instant Battle Win",
+          "address": "0x032B"
+        },
+        {
+          "code": "032C:00",
+          "desc": "Instant Battle Win",
+          "address": "0x032C"
+        },
+        {
+          "code": "032D:00",
+          "desc": "Instant Battle Win",
+          "address": "0x032D"
+        },
+        {
+          "code": "02C9:39",
+          "desc": "Torch Never Dies",
+          "address": "0x02C9"
+        },
+        {
+          "code": "033E:C8",
+          "desc": "Gain 800-1040 EXP And 355-404 Gold After Every Battle",
+          "address": "0x033E"
+        },
+        {
+          "code": "6AA5:63",
+          "desc": "Infinite AC",
+          "address": "0x6AA5"
+        },
+        {
+          "code": "6AA6:FF",
+          "desc": "Infinite HP",
+          "address": "0x6AA6"
+        },
+        {
+          "code": "6AA8:FF",
+          "desc": "Infinite MP",
+          "address": "0x6AA8"
+        },
+        {
+          "code": "6AD1:FF",
+          "desc": "Infinite HP",
+          "address": "0x6AD1"
+        },
+        {
+          "code": "6AD3:FF",
+          "desc": "Infinite MP",
+          "address": "0x6AD3"
+        },
+        {
+          "code": "6AFC:FF",
+          "desc": "Infinite HP",
+          "address": "0x6AFC"
+        },
+        {
+          "code": "6AFE:FF",
+          "desc": "Infinite MP",
+          "address": "0x6AFE"
+        },
+        {
+          "code": "6B27:FF",
+          "desc": "Infinite HP",
+          "address": "0x6B27"
+        },
+        {
+          "code": "6B29:FF",
+          "desc": "Infinite MP",
+          "address": "0x6B29"
+        },
+        {
+          "code": "6B52:FF",
+          "desc": "Infinite HP",
+          "address": "0x6B52"
+        },
+        {
+          "code": "6B54:FF",
+          "desc": "Infinite MP",
+          "address": "0x6B54"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,8 @@
+game_name=Blodia Land - Puzzle Quest (Japan)
+game_key=blodia_land_puzzle_quest_japan
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_00b4	life_lost	0x00B4	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00b4	life_gained	0x00B4	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_00b5	life_lost	0x00B5	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00b5	life_gained	0x00B5	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

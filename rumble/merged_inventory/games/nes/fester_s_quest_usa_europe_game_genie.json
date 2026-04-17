@@ -1,0 +1,67 @@
+{
+  "system": "nes",
+  "normalized_title": "festersquest",
+  "display_name": "Fester's Quest (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Fester's Quest (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Fester's Quest (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 37,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "AYIPOG",
+          "desc": "Invincibility",
+          "address": "0x0471"
+        },
+        {
+          "code": "KIKEAG",
+          "desc": "Strange Music And Sound Effects",
+          "address": "0x04D8"
+        },
+        {
+          "code": "OPIETA",
+          "desc": "No Enemies (Doesn't Work Inside Buildings)",
+          "address": "0x0096"
+        },
+        {
+          "code": "XVEPUKVK",
+          "desc": "Infinite Health!",
+          "address": "0x046B"
+        },
+        {
+          "code": "XVXOUEVK",
+          "desc": "Red Gun Icons Don't Decrease Gun Power",
+          "address": "0x00EB"
+        },
+        {
+          "code": "VVXOUEVK",
+          "desc": "Red Gun Icons Increase Gun Power (Instead of Decreasing)",
+          "address": "0x00EB"
+        },
+        {
+          "code": "XVKOOEVK",
+          "desc": "Red Whip Icons Don't Decrease Whip Power",
+          "address": "0x00E9"
+        },
+        {
+          "code": "SXEPUKVK",
+          "desc": "Infinite Health! (Alternate Code)",
+          "address": "0x042B"
+        },
+        {
+          "code": "OZVPEGSX",
+          "desc": "Invincibility",
+          "address": "0x0428"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

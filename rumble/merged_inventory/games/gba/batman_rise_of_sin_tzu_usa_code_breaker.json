@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "batmanriseofsintzu",
+  "display_name": "Batman - Rise of Sin Tzu (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Batman - Rise of Sin Tzu (USA) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "330077D0",
+          "desc": "Have Door Card",
+          "address": "0x020077D0"
+        },
+        {
+          "code": "330077DE",
+          "desc": "Infinite Health",
+          "address": "0x020077DE"
+        },
+        {
+          "code": "330077DF",
+          "desc": "Full Combo Meter",
+          "address": "0x020077DF"
+        },
+        {
+          "code": "330077E3",
+          "desc": "Infinite Flash Pellets",
+          "address": "0x020077E3"
+        },
+        {
+          "code": "33004B0A",
+          "desc": "Easier Boss Fights",
+          "address": "0x02004B0A"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Batman - Rise of Sin Tzu (USA) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "330077D0",
+          "desc": "Have Door Card",
+          "address": "0x020077D0"
+        },
+        {
+          "code": "330077DE",
+          "desc": "Infinite Health",
+          "address": "0x020077DE"
+        },
+        {
+          "code": "330077DF",
+          "desc": "Full Combo Meter",
+          "address": "0x020077DF"
+        },
+        {
+          "code": "330077E3",
+          "desc": "Infinite Flash Pellets",
+          "address": "0x020077E3"
+        },
+        {
+          "code": "33004B0A",
+          "desc": "Easier Boss Fights",
+          "address": "0x02004B0A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

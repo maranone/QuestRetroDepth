@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "adventuresofjimmyneutronboygeniusjetfusion",
+  "display_name": "Adventures of Jimmy Neutron Boy Genius, The - Jet Fusion (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Adventures of Jimmy Neutron Boy Genius, The - Jet Fusion (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10007AAC",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02007AAC"
+        },
+        {
+          "code": "82000C50",
+          "desc": "Infinite Health",
+          "address": "0x02000C50"
+        },
+        {
+          "code": "82000DDA",
+          "desc": "Infinite Potions",
+          "address": "0x02000DDA"
+        },
+        {
+          "code": "82000DDC",
+          "desc": "Max Potions",
+          "address": "0x02000DDC"
+        },
+        {
+          "code": "32001330",
+          "desc": "Quick Score Gain",
+          "address": "0x02001330"
+        },
+        {
+          "code": "82001330",
+          "desc": "Max Score",
+          "address": "0x02001330"
+        },
+        {
+          "code": "82001332",
+          "desc": "Max Score",
+          "address": "0x02001332"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Adventures of Jimmy Neutron Boy Genius, The - Jet Fusion (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10007AAC",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02007AAC"
+        },
+        {
+          "code": "82000C50",
+          "desc": "Infinite Health",
+          "address": "0x02000C50"
+        },
+        {
+          "code": "82000DDA",
+          "desc": "Infinite Potions",
+          "address": "0x02000DDA"
+        },
+        {
+          "code": "82000DDC",
+          "desc": "Max Potions",
+          "address": "0x02000DDC"
+        },
+        {
+          "code": "32001330",
+          "desc": "Quick Score Gain",
+          "address": "0x02001330"
+        },
+        {
+          "code": "82001330",
+          "desc": "Max Score",
+          "address": "0x02001330"
+        },
+        {
+          "code": "82001332",
+          "desc": "Max Score",
+          "address": "0x02001332"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

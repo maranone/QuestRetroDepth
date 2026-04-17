@@ -1,0 +1,8 @@
+game_name=Super Mario Bros. 2 (USA, Europe) (Action Replay)
+game_key=super_mario_bros_2_usa_europe_action_replay
+system=nes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_05da	enemy_defeated	0x05DA	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_040b	enemy_defeated	0x040B	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_052a	enemy_defeated	0x052A	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_056b	enemy_defeated	0x056B	1	uint	little	prev > curr	0.65	1	right:0.450:35

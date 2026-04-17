@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "shrekreekinhavoc",
+  "display_name": "Shrek - Reekin' Havoc (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Shrek - Reekin' Havoc (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "8200949C",
+          "desc": "Infinite Health",
+          "address": "0x0200949C"
+        },
+        {
+          "code": "82004DA4",
+          "desc": "Quick Score",
+          "address": "0x02004DA4"
+        },
+        {
+          "code": "82004DA4",
+          "desc": "Max Score",
+          "address": "0x02004DA4"
+        },
+        {
+          "code": "82004DA6",
+          "desc": "Max Score",
+          "address": "0x02004DA6"
+        },
+        {
+          "code": "3200003E",
+          "desc": "Infinite Lives",
+          "address": "0x0200003E"
+        },
+        {
+          "code": "32004D9D",
+          "desc": "99 Coins",
+          "address": "0x02004D9D"
+        },
+        {
+          "code": "3202320F",
+          "desc": "Have Item Modifier",
+          "address": "0x0202320F"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Shrek - Reekin' Havoc (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "8200949C",
+          "desc": "Infinite Health",
+          "address": "0x0200949C"
+        },
+        {
+          "code": "82004DA4",
+          "desc": "Quick Score",
+          "address": "0x02004DA4"
+        },
+        {
+          "code": "82004DA4",
+          "desc": "Max Score",
+          "address": "0x02004DA4"
+        },
+        {
+          "code": "82004DA6",
+          "desc": "Max Score",
+          "address": "0x02004DA6"
+        },
+        {
+          "code": "3200003E",
+          "desc": "Infinite Lives",
+          "address": "0x0200003E"
+        },
+        {
+          "code": "32004D9D",
+          "desc": "99 Coins",
+          "address": "0x02004D9D"
+        },
+        {
+          "code": "3202320F",
+          "desc": "Have Item Modifier",
+          "address": "0x0202320F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Kirby's Ghost Trap (Europe)
+game_key=kirby_s_ghost_trap_europe
+system=snes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_0712	enemy_defeated	0x7E0712	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0737	enemy_defeated	0x7E0737	1	uint	little	prev > curr	0.65	1	right:0.450:35

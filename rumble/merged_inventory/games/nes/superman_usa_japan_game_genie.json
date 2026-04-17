@@ -1,0 +1,97 @@
+{
+  "system": "nes",
+  "normalized_title": "superman",
+  "display_name": "Superman (USA, Japan) (Game Genie)",
+  "aliases": [
+    "Superman (USA, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Superman (USA, Japan) (Game Genie).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 15,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "AVEOUIAL",
+          "desc": "Double Max Power Of All Items At Start",
+          "address": "0x05EB"
+        },
+        {
+          "code": "AXUPYLAP",
+          "desc": "Double Usual Item Power On Item Power Crystal Pick-Up",
+          "address": "0x032F"
+        },
+        {
+          "code": "EXUPYLAP",
+          "desc": "Full Item Power On Item Power Crystal Pick-Up",
+          "address": "0x032F"
+        },
+        {
+          "code": "EZVPKSOZ",
+          "desc": "Start At Mission 2",
+          "address": "0x052C"
+        },
+        {
+          "code": "PAVPSIAA",
+          "desc": "Start At Mission 2",
+          "address": "0x050D"
+        },
+        {
+          "code": "KANPXSSE",
+          "desc": "Start At Mission 2",
+          "address": "0x050A"
+        },
+        {
+          "code": "EZVPKSOZ",
+          "desc": "Start At Mission 3",
+          "address": "0x052C"
+        },
+        {
+          "code": "ZAVPSIAA",
+          "desc": "Start At Mission 3",
+          "address": "0x050D"
+        },
+        {
+          "code": "KANPXSSE",
+          "desc": "Start At Mission 3",
+          "address": "0x050A"
+        },
+        {
+          "code": "EZVPKSOZ",
+          "desc": "Start At Mission 4",
+          "address": "0x052C"
+        },
+        {
+          "code": "LAVPSIAA",
+          "desc": "Start At Mission 4",
+          "address": "0x050D"
+        },
+        {
+          "code": "KANPXSSE",
+          "desc": "Start At Mission 4",
+          "address": "0x050A"
+        },
+        {
+          "code": "EZVPKSOZ",
+          "desc": "Start At Mission 5",
+          "address": "0x052C"
+        },
+        {
+          "code": "GAVPSIAA",
+          "desc": "Start At Mission 5",
+          "address": "0x050D"
+        },
+        {
+          "code": "KANPXSSE",
+          "desc": "Start At Mission 5",
+          "address": "0x050A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

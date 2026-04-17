@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "tianwangxiangmozhuan",
+  "display_name": "Tian Wang Xiang Mo Zhuan",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tian Wang Xiang Mo Zhuan.cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "04A6:03",
+          "desc": "Infinite Energy P1",
+          "address": "0x04A6"
+        },
+        {
+          "code": "04AC:02",
+          "desc": "Infinite Lives P1",
+          "address": "0x04AC"
+        },
+        {
+          "code": "04A7:03",
+          "desc": "Infinite Energy P2",
+          "address": "0x04A7"
+        },
+        {
+          "code": "04AD:02",
+          "desc": "Infinite Lives P2",
+          "address": "0x04AD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

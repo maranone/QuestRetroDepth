@@ -1,0 +1,7 @@
+game_name=Terminator, The (Europe, Brazil) (Action Replay)
+game_key=Terminator-Sms
+system=sms
+integration_tier=stable
+trigger	damage_taken_health_cf81	damage_taken	0xCF81	3	nibble	big	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_cf81	death	0xCF81	3	nibble	big	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_cf0c	score	0xCF0C	7	nibble	big	prev < curr	0.8	1	right:0.350:60

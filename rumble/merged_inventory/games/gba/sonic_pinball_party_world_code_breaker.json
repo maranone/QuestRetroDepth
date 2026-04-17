@@ -1,0 +1,138 @@
+{
+  "system": "gba",
+  "normalized_title": "sonicpinballparty",
+  "display_name": "Sonic Pinball Party (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Sonic Pinball Party (World) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "100008E6",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020008E6"
+        },
+        {
+          "code": "83002988",
+          "desc": "Quick Score",
+          "address": "0x02002988"
+        },
+        {
+          "code": "83002988",
+          "desc": "Max Score",
+          "address": "0x02002988"
+        },
+        {
+          "code": "8300298A",
+          "desc": "Max Score",
+          "address": "0x0200298A"
+        },
+        {
+          "code": "330019B6",
+          "desc": "Infinite Tries (Chao Mini-Game)",
+          "address": "0x020019B6"
+        },
+        {
+          "code": "83001970",
+          "desc": "Infinite Rings (Chao Mini-Game)",
+          "address": "0x02001970"
+        },
+        {
+          "code": "83006194",
+          "desc": "Infinite Rings (Chao Garden)",
+          "address": "0x02006194"
+        },
+        {
+          "code": "43001568",
+          "desc": "Max Levels Chao",
+          "address": "0x02001568"
+        },
+        {
+          "code": "82035740",
+          "desc": "Ball Always Saved",
+          "address": "0x02035740"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select To Reset Time In Timed Events",
+          "address": "0x02000130"
+        },
+        {
+          "code": "82034F8C",
+          "desc": "Press Select To Reset Time In Timed Events",
+          "address": "0x02034F8C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Sonic Pinball Party (World) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "100008E6",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020008E6"
+        },
+        {
+          "code": "83002988",
+          "desc": "Quick Score",
+          "address": "0x02002988"
+        },
+        {
+          "code": "83002988",
+          "desc": "Max Score",
+          "address": "0x02002988"
+        },
+        {
+          "code": "8300298A",
+          "desc": "Max Score",
+          "address": "0x0200298A"
+        },
+        {
+          "code": "330019B6",
+          "desc": "Infinite Tries (Chao Mini-Game)",
+          "address": "0x020019B6"
+        },
+        {
+          "code": "83001970",
+          "desc": "Infinite Rings (Chao Mini-Game)",
+          "address": "0x02001970"
+        },
+        {
+          "code": "83006194",
+          "desc": "Infinite Rings (Chao Garden)",
+          "address": "0x02006194"
+        },
+        {
+          "code": "43001568",
+          "desc": "Max Levels Chao",
+          "address": "0x02001568"
+        },
+        {
+          "code": "82035740",
+          "desc": "Ball Always Saved",
+          "address": "0x02035740"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select To Reset Time In Timed Events",
+          "address": "0x02000130"
+        },
+        {
+          "code": "82034F8C",
+          "desc": "Press Select To Reset Time In Timed Events",
+          "address": "0x02034F8C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

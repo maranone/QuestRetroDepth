@@ -1,0 +1,10 @@
+game_name=Jackie Chan Adventures - Legend of the Darkhand (USA, Europe) (Code Breaker)
+game_key=jackie_chan_adventures_legend_of_the_darkhand_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_02006218	damage_taken	0x02006218	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02006218	death	0x02006218	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_020062c5	life_lost	0x020062C5	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_020062c5	life_gained	0x020062C5	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_020062d4	score	0x020062D4	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_020062d6	score	0x020062D6	1	uint	little	prev < curr	0.8	1	right:0.350:60

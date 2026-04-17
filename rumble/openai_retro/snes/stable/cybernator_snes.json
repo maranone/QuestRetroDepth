@@ -1,0 +1,88 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "Cybernator",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\Cybernator-Snes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "Cybernator-Snes"
+  },
+  "triggers": [
+    {
+      "id": "game_over_gameover_0720",
+      "event": "game_over",
+      "watch": [
+        {
+          "absolute_address": "0x7E0720",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x0720",
+          "wram_offset": 1824
+        }
+      ],
+      "condition": "prev == 0 && curr != 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Explicit game-over flag.",
+      "source_fields": [
+        {
+          "name": "gameover",
+          "address": "0x7E0720",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_01f4",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E01F4",
+          "size": 4,
+          "value_type": "bcd",
+          "byte_order": "little",
+          "raw_type": "<d4",
+          "bank": "7E",
+          "address": "0x01F4",
+          "wram_offset": 500
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0x7E01F4",
+          "raw_type": "<d4"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

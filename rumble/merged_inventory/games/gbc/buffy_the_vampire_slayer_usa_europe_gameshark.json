@@ -1,0 +1,28 @@
+{
+  "system": "gbc",
+  "normalized_title": "buffyvampireslayer",
+  "display_name": "Buffy the Vampire Slayer (USA, Europe) (GameShark)",
+  "aliases": [
+    "Buffy the Vampire Slayer (USA, Europe) (Xploder)",
+    "Buffy the Vampire Slayer (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Buffy the Vampire Slayer (USA, Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0100DFC7",
+          "desc": "No Life [Enemy]",
+          "address": "0xDFC7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

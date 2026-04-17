@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "solomonskey2",
+  "display_name": "Solomon's Key 2 (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Solomon's Key 2 (Europe).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0425:00",
+          "desc": "Infinite Time",
+          "address": "0x0425"
+        },
+        {
+          "code": "00AB:00",
+          "desc": "Finish Level Now",
+          "address": "0x00AB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

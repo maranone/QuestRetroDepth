@@ -1,0 +1,74 @@
+{
+  "system": "nes",
+  "normalized_title": "kirbysadventure",
+  "display_name": "Kirby's Adventure (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Kirby's Adventure (Europe)",
+    "Kirby's Adventure (USA) (Rev 1)",
+    "Kirby's Adventure (USA)",
+    "Kirby's Adventure (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\kirbysadventure_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0593",
+        "0x0599"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KirbysAdventure-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0599",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0593",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kirby's Adventure (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "SZEPSVSE",
+          "desc": "Infinite Energy",
+          "address": "0x062D"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Kirby's Adventure (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "SZEPSVSE",
+          "desc": "Infinite Energy",
+          "address": "0x062D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

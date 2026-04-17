@@ -1,0 +1,8 @@
+game_name=Double Dare (USA)
+game_key=double_dare_usa
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_0606	pickup	0x0606	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0607	pickup	0x0607	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_05f2	pickup	0x05F2	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_05f5	pickup	0x05F5	1	uint	little	prev != curr	0.8	1	right:0.250:18

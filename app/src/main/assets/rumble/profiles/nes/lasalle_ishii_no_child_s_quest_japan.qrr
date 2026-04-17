@@ -1,0 +1,7 @@
+game_name=Lasalle Ishii no Child's Quest (Japan)
+game_key=lasalle_ishii_no_child_s_quest_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0500	damage_taken	0x0500	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0500	death	0x0500	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0567	pickup	0x0567	1	uint	little	prev != curr	0.8	1	right:0.250:18

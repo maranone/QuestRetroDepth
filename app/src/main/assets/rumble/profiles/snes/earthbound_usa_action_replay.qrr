@@ -1,0 +1,19 @@
+game_name=EarthBound (USA) (Action Replay)
+game_key=earthbound_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_9831	pickup	0x7E9831	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_9832	pickup	0x7E9832	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_9833	pickup	0x7E9833	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_9835	pickup	0x7E9835	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_9836	pickup	0x7E9836	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_9837	pickup	0x7E9837	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_99d3	level_complete	0x7E99D3	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_99d8	damage_taken	0x7E99D8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_99d8	death	0x7E99D8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_99d9	damage_taken	0x7E99D9	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_99d9	death	0x7E99D9	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_9a15	damage_taken	0x7E9A15	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_9a15	death	0x7E9A15	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_9a16	damage_taken	0x7E9A16	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_9a16	death	0x7E9A16	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

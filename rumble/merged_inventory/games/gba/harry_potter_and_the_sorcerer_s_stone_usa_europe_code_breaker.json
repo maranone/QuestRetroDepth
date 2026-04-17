@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "harrypotterandsorcerersstone",
+  "display_name": "Harry Potter and the Sorcerer's Stone (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Harry Potter and the Sorcerer's Stone (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1001A7A4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0201A7A4"
+        },
+        {
+          "code": "3200F217",
+          "desc": "Infinite Health",
+          "address": "0x0200F217"
+        },
+        {
+          "code": "83003734",
+          "desc": "Max Stars",
+          "address": "0x02003734"
+        },
+        {
+          "code": "2200F1F0",
+          "desc": "Invincible",
+          "address": "0x0200F1F0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Harry Potter and the Sorcerer's Stone (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1001A7A4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0201A7A4"
+        },
+        {
+          "code": "3200F217",
+          "desc": "Infinite Health",
+          "address": "0x0200F217"
+        },
+        {
+          "code": "83003734",
+          "desc": "Max Stars",
+          "address": "0x02003734"
+        },
+        {
+          "code": "2200F1F0",
+          "desc": "Invincible",
+          "address": "0x0200F1F0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

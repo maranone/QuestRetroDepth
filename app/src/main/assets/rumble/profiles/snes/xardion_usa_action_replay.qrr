@@ -1,0 +1,8 @@
+game_name=Xardion (USA) (Action Replay)
+game_key=xardion_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_0d2e	level_complete	0x7E0D2E	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_0d1a	damage_taken	0x7E0D1A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0d1a	death	0x7E0D1A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_0d2c	level_complete	0x7E0D2C	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

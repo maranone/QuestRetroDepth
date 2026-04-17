@@ -1,0 +1,6 @@
+game_name=Solar Jetman - Hunt for the Golden Warpship (USA, Europe) (Game Genie)
+game_key=solar_jetman_hunt_for_the_golden_warpship_usa_europe_game_genie
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_05af	life_lost	0x05AF	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_05af	life_gained	0x05AF	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

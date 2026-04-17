@@ -1,0 +1,168 @@
+{
+  "system": "gba",
+  "normalized_title": "loderunner",
+  "display_name": "Lode Runner (Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Lode Runner (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 14,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10001632",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001632"
+        },
+        {
+          "code": "3200078C",
+          "desc": "Infinite Lives",
+          "address": "0x0200078C"
+        },
+        {
+          "code": "3200078E",
+          "desc": "0 Total Deaths",
+          "address": "0x0200078E"
+        },
+        {
+          "code": "32000792",
+          "desc": "Run Very Fast",
+          "address": "0x02000792"
+        },
+        {
+          "code": "72000C90",
+          "desc": "Hold R To Walk Through Walls",
+          "address": "0x02000C90"
+        },
+        {
+          "code": "E20019DC",
+          "desc": "Hold R To Walk Through Walls",
+          "address": "0x020019DC"
+        },
+        {
+          "code": "72000C90",
+          "desc": "Hold R To Walk Through Walls",
+          "address": "0x02000C90"
+        },
+        {
+          "code": "E20019DC",
+          "desc": "Hold R To Walk Through Walls",
+          "address": "0x020019DC"
+        },
+        {
+          "code": "72000C90",
+          "desc": "Hold R To Walk Through Walls",
+          "address": "0x02000C90"
+        },
+        {
+          "code": "E20019DE",
+          "desc": "Hold R To Walk Through Walls",
+          "address": "0x020019DE"
+        },
+        {
+          "code": "72000C90",
+          "desc": "Press L To Get Unstuck",
+          "address": "0x02000C90"
+        },
+        {
+          "code": "820019DC",
+          "desc": "Press L To Get Unstuck",
+          "address": "0x020019DC"
+        },
+        {
+          "code": "72000C90",
+          "desc": "Press L To Get Unstuck",
+          "address": "0x02000C90"
+        },
+        {
+          "code": "820019DE",
+          "desc": "Press L To Get Unstuck",
+          "address": "0x020019DE"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Lode Runner (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 14,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10001632",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001632"
+        },
+        {
+          "code": "3200078C",
+          "desc": "Infinite Lives",
+          "address": "0x0200078C"
+        },
+        {
+          "code": "3200078E",
+          "desc": "0 Total Deaths",
+          "address": "0x0200078E"
+        },
+        {
+          "code": "32000792",
+          "desc": "Run Very Fast",
+          "address": "0x02000792"
+        },
+        {
+          "code": "72000C90",
+          "desc": "Hold R To Walk Through Walls",
+          "address": "0x02000C90"
+        },
+        {
+          "code": "E20019DC",
+          "desc": "Hold R To Walk Through Walls",
+          "address": "0x020019DC"
+        },
+        {
+          "code": "72000C90",
+          "desc": "Hold R To Walk Through Walls",
+          "address": "0x02000C90"
+        },
+        {
+          "code": "E20019DC",
+          "desc": "Hold R To Walk Through Walls",
+          "address": "0x020019DC"
+        },
+        {
+          "code": "72000C90",
+          "desc": "Hold R To Walk Through Walls",
+          "address": "0x02000C90"
+        },
+        {
+          "code": "E20019DE",
+          "desc": "Hold R To Walk Through Walls",
+          "address": "0x020019DE"
+        },
+        {
+          "code": "72000C90",
+          "desc": "Press L To Get Unstuck",
+          "address": "0x02000C90"
+        },
+        {
+          "code": "820019DC",
+          "desc": "Press L To Get Unstuck",
+          "address": "0x020019DC"
+        },
+        {
+          "code": "72000C90",
+          "desc": "Press L To Get Unstuck",
+          "address": "0x02000C90"
+        },
+        {
+          "code": "820019DE",
+          "desc": "Press L To Get Unstuck",
+          "address": "0x020019DE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

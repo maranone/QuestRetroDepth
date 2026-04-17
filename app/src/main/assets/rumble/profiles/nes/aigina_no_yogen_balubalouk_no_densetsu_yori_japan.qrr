@@ -1,0 +1,10 @@
+game_name=Aigina no Yogen - Balubalouk no Densetsu Yori (Japan)
+game_key=aigina_no_yogen_balubalouk_no_densetsu_yori_japan
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_002f	life_lost	0x002F	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_002f	life_gained	0x002F	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_04b1	life_lost	0x04B1	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_04b1	life_gained	0x04B1	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_0058	pickup	0x0058	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_005c	pickup	0x005C	1	uint	little	prev != curr	0.8	1	right:0.250:18

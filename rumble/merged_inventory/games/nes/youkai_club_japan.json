@@ -1,0 +1,128 @@
+{
+  "system": "nes",
+  "normalized_title": "youkaiclub",
+  "display_name": "Youkai Club (Japan)",
+  "aliases": [
+    "Youkai Club (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\youkaiclub_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0048",
+        "0x0079"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\YoukaiClub-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0079",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0048",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Youkai Club (Japan).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 15,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "0079:18",
+          "desc": "Infinite Energy",
+          "address": "0x0079"
+        },
+        {
+          "code": "008A:FF",
+          "desc": "Infinite Time",
+          "address": "0x008A"
+        },
+        {
+          "code": "AESEVAIA",
+          "desc": "Start on Level 2",
+          "address": "0x008E"
+        },
+        {
+          "code": "PESEVAIA",
+          "desc": "Start on Level 3",
+          "address": "0x008E"
+        },
+        {
+          "code": "ZESEVAIA",
+          "desc": "Start on Level 4",
+          "address": "0x008E"
+        },
+        {
+          "code": "LESEVAIA",
+          "desc": "Start on Level 5",
+          "address": "0x008E"
+        },
+        {
+          "code": "GESEVAIA",
+          "desc": "Start on Level 6",
+          "address": "0x008E"
+        },
+        {
+          "code": "0399:05",
+          "desc": "Have Level Key",
+          "address": "0x0399"
+        },
+        {
+          "code": "00B0:09",
+          "desc": "Infinite Flashlights",
+          "address": "0x00B0"
+        },
+        {
+          "code": "00B1:09",
+          "desc": "Infinite Bombs",
+          "address": "0x00B1"
+        },
+        {
+          "code": "00B2:09",
+          "desc": "Infinite Finger Pointer",
+          "address": "0x00B2"
+        },
+        {
+          "code": "00B3:09",
+          "desc": "Infinite Glasses",
+          "address": "0x00B3"
+        },
+        {
+          "code": "038A:0C",
+          "desc": "Max Experience",
+          "address": "0x038A"
+        },
+        {
+          "code": "007B:0C",
+          "desc": "Alternate Max Experience Code",
+          "address": "0x007B"
+        },
+        {
+          "code": "0086:40",
+          "desc": "Max Shots Powerup Time",
+          "address": "0x0086"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

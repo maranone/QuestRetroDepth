@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "needforspeedunderground2",
+  "display_name": "Need for Speed - Underground 2 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Need for Speed - Underground 2 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "82000904",
+          "desc": "Max Points",
+          "address": "0x02000904"
+        },
+        {
+          "code": "83006378",
+          "desc": "9999 x5 For Drifting",
+          "address": "0x02006378"
+        },
+        {
+          "code": "82000A7C",
+          "desc": "Unlock All Cars/Upgrades",
+          "address": "0x02000A7C"
+        },
+        {
+          "code": "82000A7E",
+          "desc": "Unlock All Cars/Upgrades",
+          "address": "0x02000A7E"
+        },
+        {
+          "code": "82000F66",
+          "desc": "Unlock All Cars/Upgrades",
+          "address": "0x02000F66"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Need for Speed - Underground 2 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "82000904",
+          "desc": "Max Points",
+          "address": "0x02000904"
+        },
+        {
+          "code": "83006378",
+          "desc": "9999 x5 For Drifting",
+          "address": "0x02006378"
+        },
+        {
+          "code": "82000A7C",
+          "desc": "Unlock All Cars/Upgrades",
+          "address": "0x02000A7C"
+        },
+        {
+          "code": "82000A7E",
+          "desc": "Unlock All Cars/Upgrades",
+          "address": "0x02000A7E"
+        },
+        {
+          "code": "82000F66",
+          "desc": "Unlock All Cars/Upgrades",
+          "address": "0x02000F66"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

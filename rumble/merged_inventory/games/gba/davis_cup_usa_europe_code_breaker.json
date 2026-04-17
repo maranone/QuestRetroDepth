@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "daviscup",
+  "display_name": "Davis Cup (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Davis Cup (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1002C368",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202C368"
+        },
+        {
+          "code": "33002141",
+          "desc": "P1 Score Always 40 (Score Once To Win)",
+          "address": "0x02002141"
+        },
+        {
+          "code": "33002141",
+          "desc": "P1 Always Scores 0",
+          "address": "0x02002141"
+        },
+        {
+          "code": "33002142",
+          "desc": "P2 Score Always 40 (Score Once To Win)",
+          "address": "0x02002142"
+        },
+        {
+          "code": "33002142",
+          "desc": "P2 Always Scores 0",
+          "address": "0x02002142"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Davis Cup (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1002C368",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202C368"
+        },
+        {
+          "code": "33002141",
+          "desc": "P1 Score Always 40 (Score Once To Win)",
+          "address": "0x02002141"
+        },
+        {
+          "code": "33002141",
+          "desc": "P1 Always Scores 0",
+          "address": "0x02002141"
+        },
+        {
+          "code": "33002142",
+          "desc": "P2 Score Always 40 (Score Once To Win)",
+          "address": "0x02002142"
+        },
+        {
+          "code": "33002142",
+          "desc": "P2 Always Scores 0",
+          "address": "0x02002142"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

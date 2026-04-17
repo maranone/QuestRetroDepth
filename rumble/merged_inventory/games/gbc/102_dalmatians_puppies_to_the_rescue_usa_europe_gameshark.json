@@ -1,0 +1,33 @@
+{
+  "system": "gbc",
+  "normalized_title": "102dalmatianspuppiestorescue",
+  "display_name": "102 Dalmatians - Puppies to the Rescue (USA, Europe) (GameShark)",
+  "aliases": [
+    "102 Dalmatians - Puppies to the Rescue (USA, Europe) (Xploder)",
+    "102 Dalmatians - Puppies to the Rescue (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\102 Dalmatians - Puppies to the Rescue (USA, Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0109DBC0",
+          "desc": "Max Bones",
+          "address": "0xDBC0"
+        },
+        {
+          "code": "0103D7C0",
+          "desc": "Infinite Lives",
+          "address": "0xD7C0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

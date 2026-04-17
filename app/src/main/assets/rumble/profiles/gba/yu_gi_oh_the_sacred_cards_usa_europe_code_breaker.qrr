@@ -1,0 +1,7 @@
+game_name=Yu-Gi-Oh! - The Sacred Cards (USA, Europe) (Code Breaker)
+game_key=yu_gi_oh_the_sacred_cards_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	pickup_coins_02020da0	pickup	0x02020DA0	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_02020da2	pickup	0x02020DA2	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_02020c40	level_complete	0x02020C40	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

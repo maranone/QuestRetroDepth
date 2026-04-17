@@ -1,0 +1,36 @@
+{
+  "system": "nes",
+  "normalized_title": "ducktales",
+  "display_name": "DuckTales (USA, Europe) (Action Replay)",
+  "aliases": [
+    "DuckTales (USA, Europe) (Action Replay)",
+    "DuckTales (USA, Europe) (Game Genie)",
+    "DuckTales (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\DuckTales (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "NATANA",
+          "desc": "Mix The Music Of The Game",
+          "address": "0x0007"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\DuckTales (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,8 @@
+game_name=Race Drivin' (USA)
+game_key=race_drivin_usa
+system=snes
+integration_tier=contrib
+trigger	score_score_027c	score	0x7E027C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_027e	score	0x7E027E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0280	score	0x7E0280	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0282	score	0x7E0282	1	uint	little	prev < curr	0.8	1	right:0.350:60

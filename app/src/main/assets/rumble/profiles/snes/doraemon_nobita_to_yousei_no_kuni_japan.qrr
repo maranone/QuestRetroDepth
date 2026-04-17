@@ -1,0 +1,10 @@
+game_name=Doraemon - Nobita to Yousei no Kuni (Japan)
+game_key=doraemon_nobita_to_yousei_no_kuni_japan
+system=snes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_046a	enemy_defeated	0x7E046A	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	life_lost_lives_0438	life_lost	0x7E0438	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0438	life_gained	0x7E0438	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_04a5	enemy_defeated	0x7E04A5	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	level_complete_level_0e33	level_complete	0x7E0E33	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0e34	level_complete	0x7E0E34	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

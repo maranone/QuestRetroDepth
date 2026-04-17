@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "raceamerica",
+  "display_name": "Race America (USA) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Race America (USA) (Game Genie).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "OZNOAAEN",
+          "desc": "Go Super Fast In 6th Gear",
+          "address": "0x00A8"
+        },
+        {
+          "code": "NYNOPAIE",
+          "desc": "Go Super Fast In 6th Gear",
+          "address": "0x00F9"
+        },
+        {
+          "code": "SAXPGZVT",
+          "desc": "Go Super Fast In 6th Gear",
+          "address": "0x020C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

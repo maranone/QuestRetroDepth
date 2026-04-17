@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "jurassicparklostworld",
+  "display_name": "Jurassic Park- The Lost World",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Jurassic Park- The Lost World.cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "03AE:07",
+          "desc": "Infinite Energy",
+          "address": "0x03AE"
+        },
+        {
+          "code": "03AF:03",
+          "desc": "Infinite Lives",
+          "address": "0x03AF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

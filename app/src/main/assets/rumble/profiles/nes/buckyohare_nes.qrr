@@ -1,0 +1,10 @@
+game_name=Bucky O'Hare (World) (Game Genie)
+game_key=BuckyOHare-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_05a0	damage_taken	0x05A0	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05a0	death	0x05A0	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_004c	life_lost	0x004C	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_004c	life_gained	0x004C	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_0047	score	0x0047	1	uint	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_0046	score	0x0046	1	uint	native	prev < curr	0.8	1	right:0.350:60

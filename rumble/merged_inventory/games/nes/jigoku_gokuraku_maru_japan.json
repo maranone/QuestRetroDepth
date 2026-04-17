@@ -1,0 +1,80 @@
+{
+  "system": "nes",
+  "normalized_title": "jigokugokurakumaru",
+  "display_name": "Jigoku Gokuraku Maru (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Jigoku Gokuraku Maru (Japan).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "068C:0A",
+          "desc": "Infinite Energy",
+          "address": "0x068C"
+        },
+        {
+          "code": "068E:0C",
+          "desc": "Infinite Power",
+          "address": "0x068E"
+        },
+        {
+          "code": "0084:00",
+          "desc": "Super Jump",
+          "address": "0x0084"
+        },
+        {
+          "code": "0089:50",
+          "desc": "Walk Through Enemies",
+          "address": "0x0089"
+        },
+        {
+          "code": "00D0:00",
+          "desc": "Weapon Modifier",
+          "address": "0x00D0"
+        },
+        {
+          "code": "0476:00",
+          "desc": "Jump to Walk On Air",
+          "address": "0x0476"
+        },
+        {
+          "code": "0499:50",
+          "desc": "Seeker Shots Don't Fade Away",
+          "address": "0x0499"
+        },
+        {
+          "code": "04A5:50",
+          "desc": "Seeker Shots Don't Fade Away",
+          "address": "0x04A5"
+        },
+        {
+          "code": "04B1:50",
+          "desc": "Seeker Shots Don't Fade Away",
+          "address": "0x04B1"
+        },
+        {
+          "code": "04B8:00",
+          "desc": "Boss Dies",
+          "address": "0x04B8"
+        },
+        {
+          "code": "06B8:00",
+          "desc": "Level Modifier",
+          "address": "0x06B8"
+        },
+        {
+          "code": "0691:09",
+          "desc": "Infinite Time",
+          "address": "0x0691"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

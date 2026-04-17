@@ -1,0 +1,6 @@
+game_name=Lion King 3, The
+game_key=lion_king_3_the
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff7216	damage_taken	0xFF7216	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff7216	death	0xFF7216	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

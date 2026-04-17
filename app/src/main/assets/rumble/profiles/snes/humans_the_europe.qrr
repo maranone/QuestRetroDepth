@@ -1,0 +1,8 @@
+game_name=Humans, The (Europe)
+game_key=humans_the_europe
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_0109	level_complete	0x7E0109	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0294	level_complete	0x7E0294	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0295	level_complete	0x7E0295	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0296	level_complete	0x7E0296	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

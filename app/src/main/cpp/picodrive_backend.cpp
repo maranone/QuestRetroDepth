@@ -1,4 +1,5 @@
 #include "picodrive_backend.h"
+#include "picodrive_sms_layer_capture.h"
 
 #include <android/log.h>
 #include <aaudio/AAudio.h>
@@ -232,10 +233,24 @@ bool PicoDriveBackend::load_content(const std::string& rom_path, std::string& er
     }
     if (!ensure_core_initialized(error_out)) return false;
 
+    {
+        std::ifstream f(rom_path, std::ios::binary | std::ios::ate);
+        if (!f) { error_out = "PicoDrive: unable to open ROM file."; return false; }
+        const std::streamsize sz = f.tellg();
+        if (sz <= 0) { error_out = "PicoDrive: ROM file is empty."; return false; }
+        m_rom_bytes.assign(static_cast<std::size_t>(sz), 0);
+        f.seekg(0, std::ios::beg);
+        if (!f.read(reinterpret_cast<char*>(m_rom_bytes.data()), sz)) {
+            error_out = "PicoDrive: failed to read ROM file.";
+            m_rom_bytes.clear();
+            return false;
+        }
+    }
+
     retro_game_info game_info{};
     game_info.path = rom_path.c_str();
-    game_info.data = nullptr;
-    game_info.size = 0;
+    game_info.data = m_rom_bytes.data();
+    game_info.size = m_rom_bytes.size();
     game_info.meta = nullptr;
     if (!picodrive_retro_load_game(&game_info)) {
         error_out = "PicoDrive: retro_load_game failed.";
@@ -444,6 +459,18 @@ void PicoDriveBackend::handle_video_frame(const void* data, unsigned width, unsi
     if (owner && owner_w == width && owner_h == height &&
         m_frame.visible_source_id.size() == static_cast<std::size_t>(width) * height) {
         std::memcpy(m_frame.visible_source_id.data(), owner, m_frame.visible_source_id.size());
+    }
+
+    // SMS / Game Gear: use per-pixel source IDs from Mode 4 renderer hook.
+    // Only applies when frame dimensions match SMS (256×192); GG (160×144) falls back to FullFrame.
+    {
+        unsigned sms_w = 0, sms_h = 0;
+        const uint8_t* sms_src = picodrive_sms_lc_get_visible_source(&sms_w, &sms_h);
+        if (sms_src && sms_w == width && sms_h == height &&
+            m_frame.visible_source_id.size() == static_cast<std::size_t>(width) * height) {
+            std::memcpy(m_frame.visible_source_id.data(), sms_src,
+                        static_cast<std::size_t>(width) * height);
+        }
     }
 
     update_layer_captures(width, height);

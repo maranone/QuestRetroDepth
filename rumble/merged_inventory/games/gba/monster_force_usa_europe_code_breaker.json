@@ -1,0 +1,148 @@
+{
+  "system": "gba",
+  "normalized_title": "monsterforce",
+  "display_name": "Monster Force (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Monster Force (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 12,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10000C98",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000C98"
+        },
+        {
+          "code": "330007DA",
+          "desc": "Invincible",
+          "address": "0x020007DA"
+        },
+        {
+          "code": "330007E0",
+          "desc": "Infinite HP",
+          "address": "0x020007E0"
+        },
+        {
+          "code": "33000840",
+          "desc": "Max HP",
+          "address": "0x02000840"
+        },
+        {
+          "code": "33000843",
+          "desc": "Max Force",
+          "address": "0x02000843"
+        },
+        {
+          "code": "33000842",
+          "desc": "Max Attack",
+          "address": "0x02000842"
+        },
+        {
+          "code": "330007D0",
+          "desc": "Infinite Keys",
+          "address": "0x020007D0"
+        },
+        {
+          "code": "730007C2",
+          "desc": "Quick Charge",
+          "address": "0x020007C2"
+        },
+        {
+          "code": "830007C2",
+          "desc": "Quick Charge",
+          "address": "0x020007C2"
+        },
+        {
+          "code": "73003594",
+          "desc": "Start With 50,000 Atoms",
+          "address": "0x02003594"
+        },
+        {
+          "code": "83003594",
+          "desc": "Start With 50,000 Atoms",
+          "address": "0x02003594"
+        },
+        {
+          "code": "3300358C",
+          "desc": "Low Level Time",
+          "address": "0x0200358C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Monster Force (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 12,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10000C98",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000C98"
+        },
+        {
+          "code": "330007DA",
+          "desc": "Invincible",
+          "address": "0x020007DA"
+        },
+        {
+          "code": "330007E0",
+          "desc": "Infinite HP",
+          "address": "0x020007E0"
+        },
+        {
+          "code": "33000840",
+          "desc": "Max HP",
+          "address": "0x02000840"
+        },
+        {
+          "code": "33000843",
+          "desc": "Max Force",
+          "address": "0x02000843"
+        },
+        {
+          "code": "33000842",
+          "desc": "Max Attack",
+          "address": "0x02000842"
+        },
+        {
+          "code": "330007D0",
+          "desc": "Infinite Keys",
+          "address": "0x020007D0"
+        },
+        {
+          "code": "730007C2",
+          "desc": "Quick Charge",
+          "address": "0x020007C2"
+        },
+        {
+          "code": "830007C2",
+          "desc": "Quick Charge",
+          "address": "0x020007C2"
+        },
+        {
+          "code": "73003594",
+          "desc": "Start With 50,000 Atoms",
+          "address": "0x02003594"
+        },
+        {
+          "code": "83003594",
+          "desc": "Start With 50,000 Atoms",
+          "address": "0x02003594"
+        },
+        {
+          "code": "3300358C",
+          "desc": "Low Level Time",
+          "address": "0x0200358C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

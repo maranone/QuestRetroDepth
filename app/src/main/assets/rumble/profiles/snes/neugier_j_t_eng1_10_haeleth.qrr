@@ -1,0 +1,6 @@
+game_name=Neugier (J) [T+Eng1.10_Haeleth]
+game_key=neugier_j_t_eng1_10_haeleth
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_006a	damage_taken	0x7E006A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_006a	death	0x7E006A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

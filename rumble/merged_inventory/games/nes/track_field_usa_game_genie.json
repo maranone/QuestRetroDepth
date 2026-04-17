@@ -1,0 +1,132 @@
+{
+  "system": "nes",
+  "normalized_title": "trackfield",
+  "display_name": "Track _ Field (USA) (Game Genie)",
+  "aliases": [
+    "Track _ Field (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Track _ Field (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 22,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "007A:08",
+          "desc": "Set Infinite Arrows [Archery]",
+          "address": "0x007A"
+        },
+        {
+          "code": "0791:80",
+          "desc": "Score More Points 1st Try [Archery]",
+          "address": "0x0791"
+        },
+        {
+          "code": "0795:80",
+          "desc": "Score More Points 2nd Try [Archery]",
+          "address": "0x0795"
+        },
+        {
+          "code": "0799:80",
+          "desc": "Score More Points 3rd Try [Archery]",
+          "address": "0x0799"
+        },
+        {
+          "code": "0095:06",
+          "desc": "Auto Run At 1536 cm/sec (Player 1)",
+          "address": "0x0095"
+        },
+        {
+          "code": "00A5:06",
+          "desc": "Auto Run At 1536 cm/sec (Player 1&amp;2)",
+          "address": "0x00A5"
+        },
+        {
+          "code": "007B:06",
+          "desc": "Auto Run At 1536 cm/sec (Player 1&amp;2)",
+          "address": "0x007B"
+        },
+        {
+          "code": "0095:06",
+          "desc": "Auto Run At 1536 cm/sec (Player 1)",
+          "address": "0x0095"
+        },
+        {
+          "code": "00A5:06",
+          "desc": "Auto Run At 1536 cm/sec (Player 1&2)",
+          "address": "0x00A5"
+        },
+        {
+          "code": "007B:06",
+          "desc": "Auto Run At 1536 cm/sec (Player 1&2)",
+          "address": "0x007B"
+        },
+        {
+          "code": "007A:08",
+          "desc": "Set Infinite Arrows (Archery)",
+          "address": "0x007A"
+        },
+        {
+          "code": "0791:80",
+          "desc": "Score More Points 1st Try (Archery)",
+          "address": "0x0791"
+        },
+        {
+          "code": "0795:80",
+          "desc": "Score More Points 2nd Try (Archery)",
+          "address": "0x0795"
+        },
+        {
+          "code": "0799:80",
+          "desc": "Score More Points 3rd Try (Archery)",
+          "address": "0x0799"
+        },
+        {
+          "code": "0070:00",
+          "desc": "P1 Never Has Any False Starts",
+          "address": "0x0070"
+        },
+        {
+          "code": "00E4:00",
+          "desc": "Low Timer (Ten's Digit - Seconds)",
+          "address": "0x00E4"
+        },
+        {
+          "code": "00E3:00",
+          "desc": "Low Timer (One's Digit - Seconds)",
+          "address": "0x00E3"
+        },
+        {
+          "code": "00E2:00",
+          "desc": "Low Timer (Ten's Digit - Micro-Seconds)",
+          "address": "0x00E2"
+        },
+        {
+          "code": "00E1:00",
+          "desc": "Low Timer (One's Digit - Micro-Seconds)",
+          "address": "0x00E1"
+        },
+        {
+          "code": "0604:31",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x0604"
+        },
+        {
+          "code": "0606:31",
+          "desc": "Infinite Time (Ten's Digit - Seconds)",
+          "address": "0x0606"
+        },
+        {
+          "code": "0607:31",
+          "desc": "Infinite Time (One's Digit - Seconds)",
+          "address": "0x0607"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

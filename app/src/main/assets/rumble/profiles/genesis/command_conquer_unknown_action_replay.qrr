@@ -1,0 +1,6 @@
+game_name=Command _ Conquer (Unknown) (Action Replay)
+game_key=command_conquer_unknown_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff0015	pickup	0xFF0015	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff0027	pickup	0xFF0027	1	uint	little	prev != curr	0.8	1	right:0.250:18

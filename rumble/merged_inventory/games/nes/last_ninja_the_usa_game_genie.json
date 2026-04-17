@@ -1,0 +1,72 @@
+{
+  "system": "nes",
+  "normalized_title": "lastninja",
+  "display_name": "Last Ninja, The (USA) (Game Genie)",
+  "aliases": [
+    "Last Ninja, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Last Ninja, The (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "SXSEEZSA",
+          "desc": "Infinte Health",
+          "address": "0x02A8"
+        },
+        {
+          "code": "0081:25",
+          "desc": "Infinite Health",
+          "address": "0x0081"
+        },
+        {
+          "code": "0082:00",
+          "desc": "No Health For Enemies",
+          "address": "0x0082"
+        },
+        {
+          "code": "007D:09",
+          "desc": "Infinite Lives",
+          "address": "0x007D"
+        },
+        {
+          "code": "0369:00",
+          "desc": "Infinite Time (Seconds - One's Digit)",
+          "address": "0x0369"
+        },
+        {
+          "code": "036A:00",
+          "desc": "Infinite Time (Seconds - Ten's Digit)",
+          "address": "0x036A"
+        },
+        {
+          "code": "036B:00",
+          "desc": "Infinite Time (Minutes - One's Digit)",
+          "address": "0x036B"
+        },
+        {
+          "code": "036C:00",
+          "desc": "Infinite Time (Minutes - Ten's Digit)",
+          "address": "0x036C"
+        },
+        {
+          "code": "036D:00",
+          "desc": "Infinite Time (Hours - One's Digit)",
+          "address": "0x036D"
+        },
+        {
+          "code": "036E:00",
+          "desc": "Infinite Time (Hours - Ten's Digit)",
+          "address": "0x036E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "teraonodosukoioozumou",
+  "display_name": "Terao no Dosukoi Oozumou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Terao no Dosukoi Oozumou (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0304:00",
+          "desc": "Player One Health",
+          "address": "0x0304"
+        },
+        {
+          "code": "0324:00",
+          "desc": "Player Two Health",
+          "address": "0x0324"
+        },
+        {
+          "code": "07F6:FF",
+          "desc": "Unlimited Money",
+          "address": "0x07F6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

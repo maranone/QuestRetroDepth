@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "ivanironmanstewartssuperoffroad",
+  "display_name": "Ivan 'Ironman' Stewart's Super Off Road (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Ivan 'Ironman' Stewart's Super Off Road (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ivan 'Ironman' Stewart's Super Off Road (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "AAUEIEPP",
+          "desc": "Computer Starts With No Nitro Boosts",
+          "address": "0x008D"
+        },
+        {
+          "code": "ZLUEIEPP",
+          "desc": "Computer Starts With Double Nitro Boosts",
+          "address": "0x00BD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

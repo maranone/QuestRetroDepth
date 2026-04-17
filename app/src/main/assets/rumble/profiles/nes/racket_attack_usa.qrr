@@ -1,0 +1,6 @@
+game_name=Racket Attack (USA)
+game_key=racket_attack_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_005c	score	0x005C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_005d	score	0x005D	1	uint	little	prev < curr	0.8	1	right:0.350:60

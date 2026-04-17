@@ -1,0 +1,17 @@
+game_name=Shining Force II (USA, Europe) (Action Replay)
+game_key=shining_force_ii_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff6020	pickup	0xFF6020	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_fff027	damage_taken	0xFFF027	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_fff027	death	0xFFF027	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffefef	damage_taken	0xFFEFEF	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffefef	death	0xFFEFEF	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffefb7	damage_taken	0xFFEFB7	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffefb7	death	0xFFEFB7	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffef0f	damage_taken	0xFFEF0F	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffef0f	death	0xFFEF0F	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffef47	damage_taken	0xFFEF47	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffef47	death	0xFFEF47	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffef7f	damage_taken	0xFFEF7F	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffef7f	death	0xFFEF7F	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,16 @@
+game_name=Traysia (USA) (Action Replay)
+game_key=traysia_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_fff6ef	pickup	0xFFF6EF	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_fff6f0	pickup	0xFFF6F0	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_fff703	level_complete	0xFFF703	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_fff802	damage_taken	0xFFF802	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_fff802	death	0xFFF802	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_fff80c	damage_taken	0xFFF80C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_fff80c	death	0xFFF80C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_fff719	level_complete	0xFFF719	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_fff804	damage_taken	0xFFF804	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_fff804	death	0xFFF804	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_fff80e	damage_taken	0xFFF80E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_fff80e	death	0xFFF80E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

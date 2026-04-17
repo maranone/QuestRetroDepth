@@ -1,0 +1,37 @@
+{
+  "system": "nes",
+  "normalized_title": "parodiusda",
+  "display_name": "Parodius Da! (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Parodius Da! (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Parodius Da! (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "ZGKEAPPE",
+          "desc": "Invincibility",
+          "address": "0x01C8"
+        },
+        {
+          "code": "OAKEPPEA",
+          "desc": "Invincibility",
+          "address": "0x0189"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "bobwin",
+  "notes": [
+    "BOBwin cheat addresses available as fallback source."
+  ]
+}

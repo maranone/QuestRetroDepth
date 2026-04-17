@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "shikinjou",
+  "display_name": "Shikinjou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Shikinjou (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "07F0:15",
+          "desc": "Choose any Stage",
+          "address": "0x07F0"
+        },
+        {
+          "code": "07F1:01",
+          "desc": "Choose any Stage",
+          "address": "0x07F1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

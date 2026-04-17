@@ -1,0 +1,6 @@
+game_name=Goal! (USA)
+game_key=goal_usa
+system=snes
+integration_tier=contrib
+trigger	score_score_1dac	score	0x7E1DAC	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_1dae	score	0x7E1DAE	1	uint	little	prev < curr	0.8	1	right:0.350:60

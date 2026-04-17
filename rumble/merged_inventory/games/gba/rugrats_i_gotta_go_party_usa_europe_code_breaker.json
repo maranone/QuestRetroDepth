@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "rugratsigottagoparty",
+  "display_name": "Rugrats - I Gotta Go Party (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Rugrats - I Gotta Go Party (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 10,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "100006C4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020006C4"
+        },
+        {
+          "code": "32001780",
+          "desc": "Unlock All Games",
+          "address": "0x02001780"
+        },
+        {
+          "code": "32002662",
+          "desc": "Have 99 Points",
+          "address": "0x02002662"
+        },
+        {
+          "code": "3200171C",
+          "desc": "Infinite Chances",
+          "address": "0x0200171C"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+Up To Stop Timer On 10sec's",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83004000",
+          "desc": "Press Select+Up To Stop Timer On 10sec's",
+          "address": "0x02004000"
+        },
+        {
+          "code": "73004000",
+          "desc": "Press Select+Up To Stop Timer On 10sec's",
+          "address": "0x02004000"
+        },
+        {
+          "code": "32002608",
+          "desc": "Press Select+Up To Stop Timer On 10sec's",
+          "address": "0x02002608"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+Down To Resume Timer",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83004000",
+          "desc": "Press Select+Down To Resume Timer",
+          "address": "0x02004000"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Rugrats - I Gotta Go Party (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 10,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "100006C4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020006C4"
+        },
+        {
+          "code": "32001780",
+          "desc": "Unlock All Games",
+          "address": "0x02001780"
+        },
+        {
+          "code": "32002662",
+          "desc": "Have 99 Points",
+          "address": "0x02002662"
+        },
+        {
+          "code": "3200171C",
+          "desc": "Infinite Chances",
+          "address": "0x0200171C"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+Up To Stop Timer On 10sec's",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83004000",
+          "desc": "Press Select+Up To Stop Timer On 10sec's",
+          "address": "0x02004000"
+        },
+        {
+          "code": "73004000",
+          "desc": "Press Select+Up To Stop Timer On 10sec's",
+          "address": "0x02004000"
+        },
+        {
+          "code": "32002608",
+          "desc": "Press Select+Up To Stop Timer On 10sec's",
+          "address": "0x02002608"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select+Down To Resume Timer",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83004000",
+          "desc": "Press Select+Down To Resume Timer",
+          "address": "0x02004000"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

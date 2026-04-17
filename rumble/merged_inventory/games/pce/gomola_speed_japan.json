@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "gomolaspeed",
+  "display_name": "Gomola Speed (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Gomola Speed (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f0216:03",
+          "desc": "Infinite Lives",
+          "address": "0x1F0216"
+        },
+        {
+          "code": "1f0219:09",
+          "desc": "Infinite Credits",
+          "address": "0x1F0219"
+        },
+        {
+          "code": "1f11b6:00",
+          "desc": "Have All Food Collected",
+          "address": "0x1F11B6"
+        },
+        {
+          "code": "1f0217:02",
+          "desc": "Have 2 Keys (Upon Pick-up)",
+          "address": "0x1F0217"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

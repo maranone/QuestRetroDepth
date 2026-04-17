@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "klax",
+  "display_name": "Klax (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Klax (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f0048:00",
+          "desc": "Need No Klax to Finish (catch a piece to finish wave)",
+          "address": "0x1F0048"
+        },
+        {
+          "code": "1f006b:09",
+          "desc": "Infinite Credits",
+          "address": "0x1F006B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

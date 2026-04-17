@@ -1,0 +1,6 @@
+game_name=NBA Live 95 (USA, Europe, Korea) (Action Replay)
+game_key=nba_live_95_usa_europe_korea_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffee53	score	0xFFEE53	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffedd3	score	0xFFEDD3	1	uint	little	prev < curr	0.8	1	right:0.350:60

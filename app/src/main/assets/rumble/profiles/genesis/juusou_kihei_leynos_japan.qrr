@@ -1,0 +1,6 @@
+game_name=Juusou Kihei Leynos (Japan)
+game_key=juusou_kihei_leynos_japan
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ffb044	damage_taken	0xFFB044	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffb044	death	0xFFB044	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "dragonknife",
+  "display_name": "Dragon Knife",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dragon Knife.cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0557:04",
+          "desc": "Infinite Lives P1",
+          "address": "0x0557"
+        },
+        {
+          "code": "0553:7F",
+          "desc": "Infinite Energy P1",
+          "address": "0x0553"
+        },
+        {
+          "code": "0558:04",
+          "desc": "Infinite Lives P2",
+          "address": "0x0558"
+        },
+        {
+          "code": "0554:7F",
+          "desc": "Infinite Energy P2",
+          "address": "0x0554"
+        },
+        {
+          "code": "0557:00",
+          "desc": "One Knockdown Kills, all foes(FCEU)",
+          "address": "0x0557"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

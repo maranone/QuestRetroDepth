@@ -1,0 +1,28 @@
+{
+  "system": "gb",
+  "normalized_title": "superchasehq",
+  "display_name": "Super Chase H.Q. (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Super Chase H.Q. (USA, Europe) (GameShark)",
+    "Super Chase H.Q. (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Super Chase H.Q. (USA, Europe).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0102CFC7",
+          "desc": "Infinite Nitros",
+          "address": "0xCFC7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

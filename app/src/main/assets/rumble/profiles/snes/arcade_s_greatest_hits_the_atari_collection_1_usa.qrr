@@ -1,0 +1,10 @@
+game_name=Arcade's Greatest Hits - The Atari Collection 1 (USA)
+game_key=arcade_s_greatest_hits_the_atari_collection_1_usa
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_0057	life_lost	0x7E0057	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0057	life_gained	0x7E0057	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_00a5	life_lost	0x7E00A5	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00a5	life_gained	0x7E00A5	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_0048	life_lost	0x7E0048	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0048	life_gained	0x7E0048	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

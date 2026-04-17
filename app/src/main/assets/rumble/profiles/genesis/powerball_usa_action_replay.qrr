@@ -1,0 +1,6 @@
+game_name=Powerball (USA) (Action Replay)
+game_key=powerball_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_fff538	score	0xFFF538	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_fff53a	score	0xFFF53A	1	uint	little	prev < curr	0.8	1	right:0.350:60

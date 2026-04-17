@@ -1,0 +1,80 @@
+{
+  "system": "nes",
+  "normalized_title": "heraclesnoeikoutoujinmakyouden",
+  "display_name": "Heracles no Eikou - Toujin Makyou Den (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Heracles no Eikou - Toujin Makyou Den (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "0072:FF",
+          "desc": "Infinite HP",
+          "address": "0x0072"
+        },
+        {
+          "code": "007D:FF",
+          "desc": "Infinite Money",
+          "address": "0x007D"
+        },
+        {
+          "code": "007E:FF",
+          "desc": "Infinite Money",
+          "address": "0x007E"
+        },
+        {
+          "code": "0078:FF",
+          "desc": "Max Weapon Power",
+          "address": "0x0078"
+        },
+        {
+          "code": "007B:FF",
+          "desc": "Max Shield Power",
+          "address": "0x007B"
+        },
+        {
+          "code": "007C:FF",
+          "desc": "Max Armor Power",
+          "address": "0x007C"
+        },
+        {
+          "code": "0076:FF",
+          "desc": "Quick Level Up",
+          "address": "0x0076"
+        },
+        {
+          "code": "0077:AA",
+          "desc": "Quick Level Up",
+          "address": "0x0077"
+        },
+        {
+          "code": "0499:00",
+          "desc": "1 Hit Kill Any Enemy",
+          "address": "0x0499"
+        },
+        {
+          "code": "007F:01",
+          "desc": "Change Weapon",
+          "address": "0x007F"
+        },
+        {
+          "code": "0083:16",
+          "desc": "Change Armor",
+          "address": "0x0083"
+        },
+        {
+          "code": "0084:09",
+          "desc": "Infinite Medicine",
+          "address": "0x0084"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

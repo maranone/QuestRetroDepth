@@ -1,0 +1,179 @@
+{
+  "system": "nes",
+  "normalized_title": "laststarfighter",
+  "display_name": "Last Starfighter, The (USA) (Game Genie)",
+  "aliases": [
+    "Last Starfighter, The (USA) (Game Genie)",
+    "Last Starfighter, The (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\laststarfighter_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0070",
+        "0x06B5"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\LastStarfighter-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0070",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x06B5",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Last Starfighter, The (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 33,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "PANENLIA",
+          "desc": "Players 1 and 2 start with 1 life",
+          "address": "0x038F"
+        },
+        {
+          "code": "TANENLIA",
+          "desc": "Players 1 and 2 start with 6 lives",
+          "address": "0x038F"
+        },
+        {
+          "code": "PANENLIE",
+          "desc": "Players 1 and 2 start with 9 lives",
+          "address": "0x038F"
+        },
+        {
+          "code": "KEEAVLSA",
+          "desc": "Player 2 starts with 1 life",
+          "address": "0x030E"
+        },
+        {
+          "code": "SZVPATVG",
+          "desc": "Players 1 and 2 haveinfinite lives",
+          "address": "0x0628"
+        },
+        {
+          "code": "GXUPLGSA",
+          "desc": "Stop irritating shake",
+          "address": "0x042B"
+        },
+        {
+          "code": "GAVEKLAA",
+          "desc": "Player 1 start on level 5",
+          "address": "0x038C"
+        },
+        {
+          "code": "GZVENLSA",
+          "desc": "Player 1 start on level 5",
+          "address": "0x03AF"
+        },
+        {
+          "code": "GZNAOLSA",
+          "desc": "Player 1 start on level 5",
+          "address": "0x0329"
+        },
+        {
+          "code": "PAVEKLAE",
+          "desc": "Player 1 start on level 10",
+          "address": "0x038C"
+        },
+        {
+          "code": "GZVENLSA",
+          "desc": "Player 1 start on level 10",
+          "address": "0x03AF"
+        },
+        {
+          "code": "GZNAOLSA",
+          "desc": "Player 1 start on level 10",
+          "address": "0x0329"
+        },
+        {
+          "code": "IAVEKLAE",
+          "desc": "Player 1 start on level 14",
+          "address": "0x038C"
+        },
+        {
+          "code": "GZVENLSA",
+          "desc": "Player 1 start on level 14",
+          "address": "0x03AF"
+        },
+        {
+          "code": "GZNAOLSA",
+          "desc": "Player 1 start on level 14",
+          "address": "0x0329"
+        },
+        {
+          "code": "006F:00",
+          "desc": "Level #",
+          "address": "0x006F"
+        },
+        {
+          "code": "GAVEKLAA",
+          "desc": "Player 1 Start On Level 5",
+          "address": "0x038C"
+        },
+        {
+          "code": "GZVENLSA",
+          "desc": "Player 1 Start On Level 5",
+          "address": "0x03AF"
+        },
+        {
+          "code": "GZNAOLSA",
+          "desc": "Player 1 Start On Level 5",
+          "address": "0x0329"
+        },
+        {
+          "code": "PAVEKLAE",
+          "desc": "Player 1 Start On Level 10",
+          "address": "0x038C"
+        },
+        {
+          "code": "GZVENLSA",
+          "desc": "Player 1 Start On Level 10",
+          "address": "0x03AF"
+        },
+        {
+          "code": "GZNAOLSA",
+          "desc": "Player 1 Start On Level 10",
+          "address": "0x0329"
+        },
+        {
+          "code": "IAVEKLAE",
+          "desc": "Player 1 Start On Level 14",
+          "address": "0x038C"
+        },
+        {
+          "code": "GZVENLSA",
+          "desc": "Player 1 Start On Level 14",
+          "address": "0x03AF"
+        },
+        {
+          "code": "GZNAOLSA",
+          "desc": "Player 1 Start On Level 14",
+          "address": "0x0329"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

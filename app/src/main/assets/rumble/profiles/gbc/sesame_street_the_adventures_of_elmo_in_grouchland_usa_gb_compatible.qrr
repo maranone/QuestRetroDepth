@@ -1,0 +1,6 @@
+game_name=Sesame Street - The Adventures of Elmo in Grouchland (USA) (GB Compatible)
+game_key=sesame_street_the_adventures_of_elmo_in_grouchland_usa_gb_compatible
+system=gbc
+integration_tier=contrib
+trigger	life_lost_lives_c7da	life_lost	0xC7DA	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_c7da	life_gained	0xC7DA	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

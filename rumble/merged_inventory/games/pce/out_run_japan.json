@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "outrun",
+  "display_name": "Out Run (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Out Run (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f002b:75",
+          "desc": "Infinite Time",
+          "address": "0x1F002B"
+        },
+        {
+          "code": "1f0091:02",
+          "desc": "Input Test Shown on Title Screen",
+          "address": "0x1F0091"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

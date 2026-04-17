@@ -1,0 +1,5 @@
+game_name=Tennis (World) (Game Genie)
+game_key=tennis_world_game_genie
+system=gb
+integration_tier=contrib
+trigger	score_score_dec0	score	0xDEC0	1	uint	little	prev < curr	0.8	1	right:0.350:60

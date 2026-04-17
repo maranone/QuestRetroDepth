@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "tonyhawksproskater2",
+  "display_name": "Tony Hawk's Pro Skater 2 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Tony Hawk's Pro Skater 2 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10022224",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02022224"
+        },
+        {
+          "code": "320013D7",
+          "desc": "Unlock SpiderMan",
+          "address": "0x020013D7"
+        },
+        {
+          "code": "42000D64",
+          "desc": "Max Career & Personal Cash (Affects Everyone)",
+          "address": "0x02000D64"
+        },
+        {
+          "code": "420014CC",
+          "desc": "Max Career & Personal Cash (Affects Everyone)",
+          "address": "0x020014CC"
+        },
+        {
+          "code": "42006F24",
+          "desc": "Max Career & Personal Cash (Affects Everyone)",
+          "address": "0x02006F24"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Tony Hawk's Pro Skater 2 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10022224",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02022224"
+        },
+        {
+          "code": "320013D7",
+          "desc": "Unlock SpiderMan",
+          "address": "0x020013D7"
+        },
+        {
+          "code": "42000D64",
+          "desc": "Max Career & Personal Cash (Affects Everyone)",
+          "address": "0x02000D64"
+        },
+        {
+          "code": "420014CC",
+          "desc": "Max Career & Personal Cash (Affects Everyone)",
+          "address": "0x020014CC"
+        },
+        {
+          "code": "42006F24",
+          "desc": "Max Career & Personal Cash (Affects Everyone)",
+          "address": "0x02006F24"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

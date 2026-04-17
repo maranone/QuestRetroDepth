@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "parisdakarrallyspecial",
+  "display_name": "Paris-Dakar Rally Special (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Paris-Dakar Rally Special (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "00C5:03",
+          "desc": "Infinite Lives",
+          "address": "0x00C5"
+        },
+        {
+          "code": "007D:00",
+          "desc": "Freeze Seconds Timer",
+          "address": "0x007D"
+        },
+        {
+          "code": "007E:00",
+          "desc": "Freeze Minutes Timer",
+          "address": "0x007E"
+        },
+        {
+          "code": "007F:40",
+          "desc": "Infinite Fuel",
+          "address": "0x007F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

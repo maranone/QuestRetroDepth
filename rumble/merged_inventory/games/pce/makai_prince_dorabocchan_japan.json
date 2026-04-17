@@ -1,0 +1,60 @@
+{
+  "system": "pce",
+  "normalized_title": "makaiprincedorabocchan",
+  "display_name": "Makai Prince Dorabocchan (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Makai Prince Dorabocchan (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1f083f:02",
+          "desc": "Infinite Lives",
+          "address": "0x1F083F"
+        },
+        {
+          "code": "1f1841:06",
+          "desc": "Infinite Energy",
+          "address": "0x1F1841"
+        },
+        {
+          "code": "1f0425:01",
+          "desc": "1-Hit Boss Kill",
+          "address": "0x1F0425"
+        },
+        {
+          "code": "1f0838:09",
+          "desc": "Max Tomatoes",
+          "address": "0x1F0838"
+        },
+        {
+          "code": "1f0839:09",
+          "desc": "Max Tomatoes",
+          "address": "0x1F0839"
+        },
+        {
+          "code": "1f0870:01",
+          "desc": "Have Upgraded Gun",
+          "address": "0x1F0870"
+        },
+        {
+          "code": "1f0833:03",
+          "desc": "Infinite Suit Health (Upon Pickup)",
+          "address": "0x1F0833"
+        },
+        {
+          "code": "1f0864:01",
+          "desc": "Have Double Jump",
+          "address": "0x1F0864"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

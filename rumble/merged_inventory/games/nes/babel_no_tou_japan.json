@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "babelnotou",
+  "display_name": "Babel no Tou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Babel no Tou (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0026:02",
+          "desc": "Infinite Lives",
+          "address": "0x0026"
+        },
+        {
+          "code": "0085:00",
+          "desc": "Invincibility",
+          "address": "0x0085"
+        },
+        {
+          "code": "010F:00",
+          "desc": "Exit Always Open",
+          "address": "0x010F"
+        },
+        {
+          "code": "0203:01",
+          "desc": "Change Horizontal Location",
+          "address": "0x0203"
+        },
+        {
+          "code": "006C:C8",
+          "desc": "Change Vertical Location",
+          "address": "0x006C"
+        },
+        {
+          "code": "0091:63",
+          "desc": "Infinite Power",
+          "address": "0x0091"
+        },
+        {
+          "code": "009F:00",
+          "desc": "Floor Modifier",
+          "address": "0x009F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

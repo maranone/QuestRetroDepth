@@ -1,0 +1,8 @@
+game_name=Aero Blasters (Japan) (Action Replay)
+game_key=aero_blasters_japan_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ffc016	life_lost	0xFFC016	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffc016	life_gained	0xFFC016	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ffc216	life_lost	0xFFC216	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffc216	life_gained	0xFFC216	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

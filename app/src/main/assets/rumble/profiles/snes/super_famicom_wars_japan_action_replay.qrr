@@ -1,0 +1,12 @@
+game_name=Super Famicom Wars (Japan) (Action Replay)
+game_key=super_famicom_wars_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_7179	pickup	0x7E7179	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_717a	pickup	0x7E717A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_71d0	pickup	0x7E71D0	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_71d1	pickup	0x7E71D1	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_7227	pickup	0x7E7227	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_7228	pickup	0x7E7228	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_727e	pickup	0x7E727E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_727f	pickup	0x7E727F	1	uint	little	prev != curr	0.8	1	right:0.250:18

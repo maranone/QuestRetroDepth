@@ -1,0 +1,10 @@
+game_name=Jim Lee's WildC.A.T.S - Covert-Action-Teams (USA) (Action Replay)
+game_key=jim_lee_s_wildc_a_t_s_covert_action_teams_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_401e	damage_taken	0x7E401E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_401e	death	0x7E401E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_1f93	life_lost	0x7E1F93	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1f93	life_gained	0x7E1F93	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_00de	level_complete	0x7E00DE	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_c1fe	enemy_defeated	0x7EC1FE	1	uint	little	prev > curr	0.65	1	right:0.450:35

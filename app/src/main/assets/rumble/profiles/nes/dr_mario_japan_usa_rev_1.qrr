@@ -1,0 +1,5 @@
+game_name=Dr. Mario (Japan, USA) (Rev 1)
+game_key=dr_mario_japan_usa_rev_1
+system=nes
+integration_tier=contrib
+trigger	level_complete_level_0191	level_complete	0x0191	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

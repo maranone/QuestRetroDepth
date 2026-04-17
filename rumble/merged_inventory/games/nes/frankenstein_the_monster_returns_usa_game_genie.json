@@ -1,0 +1,122 @@
+{
+  "system": "nes",
+  "normalized_title": "frankensteinmonsterreturns",
+  "display_name": "Frankenstein - The Monster Returns (USA (Game Genie)",
+  "aliases": [
+    "Frankenstein - The Monster Returns (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Frankenstein - The Monster Returns (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 20,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "SXKELLSA",
+          "desc": "Almost infinite energy",
+          "address": "0x03AB"
+        },
+        {
+          "code": "SZKEPASA",
+          "desc": "Invincible after you die once",
+          "address": "0x00A9"
+        },
+        {
+          "code": "SZEEULSA",
+          "desc": "Can't collect extra energy",
+          "address": "0x03AB"
+        },
+        {
+          "code": "EEKAYLEL",
+          "desc": "1 hit is fatal",
+          "address": "0x030F"
+        },
+        {
+          "code": "SZKEPASA",
+          "desc": "Infinite Invincibility",
+          "address": "0x00A9"
+        },
+        {
+          "code": "SXKELLSA",
+          "desc": "Infinite Health",
+          "address": "0x03AB"
+        },
+        {
+          "code": "SZNOYASA",
+          "desc": "Infinite Health",
+          "address": "0x00AF"
+        },
+        {
+          "code": "SXKEOLSA",
+          "desc": "Infinite Health",
+          "address": "0x03A9"
+        },
+        {
+          "code": "SXUOZASA",
+          "desc": "Infinite Health",
+          "address": "0x00AA"
+        },
+        {
+          "code": "SXUOGASA",
+          "desc": "Infinite Health",
+          "address": "0x00AC"
+        },
+        {
+          "code": "00AD:00",
+          "desc": "Shot Modifier",
+          "address": "0x00AD"
+        },
+        {
+          "code": "00A2:00",
+          "desc": "Weapon Modifier",
+          "address": "0x00A2"
+        },
+        {
+          "code": "0561:02",
+          "desc": "Infinite Continues",
+          "address": "0x0561"
+        },
+        {
+          "code": "007D:08",
+          "desc": "Infinite Energy",
+          "address": "0x007D"
+        },
+        {
+          "code": "007A:02",
+          "desc": "Walk Through Enemies",
+          "address": "0x007A"
+        },
+        {
+          "code": "006F:21",
+          "desc": "Level Modifier",
+          "address": "0x006F"
+        },
+        {
+          "code": "SZKEPASA",
+          "desc": "Invincible",
+          "address": "0x00A9"
+        },
+        {
+          "code": "007D:08",
+          "desc": "Infinite Health",
+          "address": "0x007D"
+        },
+        {
+          "code": "0607:00",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x0607"
+        },
+        {
+          "code": "0070:03",
+          "desc": "Weird FAKE Level Modifier",
+          "address": "0x0070"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

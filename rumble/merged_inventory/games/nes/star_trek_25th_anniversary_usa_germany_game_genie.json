@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "startrek25thanniversary",
+  "display_name": "Star Trek - 25th Anniversary (USA, Germany) (Game Genie)",
+  "aliases": [
+    "Star Trek - 25th Anniversary (USA, Germany) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Star Trek - 25th Anniversary (USA, Germany) (Game Genie).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "LEOOVGYE",
+          "desc": "Kirk Has More Energy",
+          "address": "0x048E"
+        },
+        {
+          "code": "GEOOVGYA",
+          "desc": "Kirk Has Less Energy",
+          "address": "0x048E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

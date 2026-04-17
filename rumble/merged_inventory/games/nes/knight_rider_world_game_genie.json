@@ -1,0 +1,62 @@
+{
+  "system": "nes",
+  "normalized_title": "knightrider",
+  "display_name": "Knight Rider (World) (Game Genie)",
+  "aliases": [
+    "Knight Rider (World) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Knight Rider (World) (Game Genie).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "AEVALAZA",
+          "desc": "Start With 1 Life After Continue",
+          "address": "0x000B"
+        },
+        {
+          "code": "IEVALAZA",
+          "desc": "Start With 6 Lives After Continue",
+          "address": "0x000B"
+        },
+        {
+          "code": "AEVALAZE",
+          "desc": "Start With 9 Lives After Continue",
+          "address": "0x000B"
+        },
+        {
+          "code": "SXXEGEVK",
+          "desc": "Infinite Lives",
+          "address": "0x00AC"
+        },
+        {
+          "code": "SXKEIEVK",
+          "desc": "Infinite Lives",
+          "address": "0x00AD"
+        },
+        {
+          "code": "VIVPVLVG",
+          "desc": "Infinite Time (Except When Shooting Blue Cars)",
+          "address": "0x035E"
+        },
+        {
+          "code": "SZKOPOSE",
+          "desc": "Infinite Fuel (Except When Using Turbo Boost)",
+          "address": "0x01A9"
+        },
+        {
+          "code": "SZKOLXSE",
+          "desc": "Turbo Boost Uses No Fuel",
+          "address": "0x02AB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

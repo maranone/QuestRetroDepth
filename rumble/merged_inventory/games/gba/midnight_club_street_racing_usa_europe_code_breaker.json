@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "midnightclubstreetracing",
+  "display_name": "Midnight Club - Street Racing (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Midnight Club - Street Racing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1000534A",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200534A"
+        },
+        {
+          "code": "83004FEA",
+          "desc": "No Damage",
+          "address": "0x02004FEA"
+        },
+        {
+          "code": "83004780",
+          "desc": "Low Time",
+          "address": "0x02004780"
+        },
+        {
+          "code": "33004FEE",
+          "desc": "Infinite Boosts",
+          "address": "0x02004FEE"
+        },
+        {
+          "code": "33005C58",
+          "desc": "No Traffic",
+          "address": "0x02005C58"
+        },
+        {
+          "code": "43001FF0",
+          "desc": "Unlock All Cars",
+          "address": "0x02001FF0"
+        },
+        {
+          "code": "33001FA9",
+          "desc": "Unlock London",
+          "address": "0x02001FA9"
+        },
+        {
+          "code": "43001F90",
+          "desc": "Unlock All Events",
+          "address": "0x02001F90"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Midnight Club - Street Racing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1000534A",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200534A"
+        },
+        {
+          "code": "83004FEA",
+          "desc": "No Damage",
+          "address": "0x02004FEA"
+        },
+        {
+          "code": "83004780",
+          "desc": "Low Time",
+          "address": "0x02004780"
+        },
+        {
+          "code": "33004FEE",
+          "desc": "Infinite Boosts",
+          "address": "0x02004FEE"
+        },
+        {
+          "code": "33005C58",
+          "desc": "No Traffic",
+          "address": "0x02005C58"
+        },
+        {
+          "code": "43001FF0",
+          "desc": "Unlock All Cars",
+          "address": "0x02001FF0"
+        },
+        {
+          "code": "33001FA9",
+          "desc": "Unlock London",
+          "address": "0x02001FA9"
+        },
+        {
+          "code": "43001F90",
+          "desc": "Unlock All Events",
+          "address": "0x02001F90"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

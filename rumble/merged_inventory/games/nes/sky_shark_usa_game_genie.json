@@ -1,0 +1,154 @@
+{
+  "system": "nes",
+  "normalized_title": "skyshark",
+  "display_name": "Sky Shark (USA) (Game Genie)",
+  "aliases": [
+    "Sky Shark (USA) (Game Genie)",
+    "Sky Shark (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\skyshark_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0021",
+        "0x05DF"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SkyShark-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0021",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x05DF",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Sky Shark (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 20,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "OZNEAAVS",
+          "desc": "Infinite lives",
+          "address": "0x00A8"
+        },
+        {
+          "code": "GXUEALVI",
+          "desc": "Infinite bombs",
+          "address": "0x03A8"
+        },
+        {
+          "code": "GZNEIOVS",
+          "desc": "Infinite credits",
+          "address": "0x01AD"
+        },
+        {
+          "code": "GZXATEOZ",
+          "desc": "Start with 1 life (player 1)",
+          "address": "0x002E"
+        },
+        {
+          "code": "AAUALAGA",
+          "desc": "Start with 1 life (player 2)",
+          "address": "0x000B"
+        },
+        {
+          "code": "AAUALAGE",
+          "desc": "Start with 9 lives (player 2)",
+          "address": "0x000B"
+        },
+        {
+          "code": "AAEELOGI",
+          "desc": "Autofire",
+          "address": "0x018B"
+        },
+        {
+          "code": "TAVPSTLA",
+          "desc": "Double bombs",
+          "address": "0x060D"
+        },
+        {
+          "code": "TAUAYALA",
+          "desc": "Double credits",
+          "address": "0x000F"
+        },
+        {
+          "code": "AANEZPGA",
+          "desc": "1 life after continue (both players)",
+          "address": "0x018A"
+        },
+        {
+          "code": "AANEZPGE",
+          "desc": "9 lives after continue (both players)",
+          "address": "0x018A"
+        },
+        {
+          "code": "TAXEZAXZ",
+          "desc": "Start with 9 lives (player 1)",
+          "address": "0x008A"
+        },
+        {
+          "code": "PZXELENY",
+          "desc": "Start with 9 lives (player 1)",
+          "address": "0x00AB"
+        },
+        {
+          "code": "EZXAPPKZ",
+          "desc": "Start with maximum firepower",
+          "address": "0x0129"
+        },
+        {
+          "code": "TAXAZOIL",
+          "desc": "Start with maximum firepower",
+          "address": "0x010A"
+        },
+        {
+          "code": "0044:00",
+          "desc": "&quot;Almost&quot; Invincibility",
+          "address": "0x0044"
+        },
+        {
+          "code": "0021:04",
+          "desc": "Infinite Lives",
+          "address": "0x0021"
+        },
+        {
+          "code": "0023:03",
+          "desc": "Infinite Bombs",
+          "address": "0x0023"
+        },
+        {
+          "code": "0021:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x0021"
+        },
+        {
+          "code": "0023:09",
+          "desc": "Infinite Secondary Weapon P1",
+          "address": "0x0023"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

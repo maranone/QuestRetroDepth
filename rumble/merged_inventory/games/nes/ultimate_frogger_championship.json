@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "ultimatefroggerchampionship",
+  "display_name": "Ultimate Frogger Championship",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ultimate Frogger Championship.cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "SXSEGKVK",
+          "desc": "Infinite Time",
+          "address": "0x04AC"
+        },
+        {
+          "code": "SXVEXKSE",
+          "desc": "Invincibility Against Most Things",
+          "address": "0x04AA"
+        },
+        {
+          "code": "SZOAAESE",
+          "desc": "Invincibility Against Most Things",
+          "address": "0x0028"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

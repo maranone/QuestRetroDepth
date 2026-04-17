@@ -1,0 +1,100 @@
+{
+  "system": "nes",
+  "normalized_title": "grandmaster",
+  "display_name": "Grand Master (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Grand Master (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 16,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "044F:20",
+          "desc": "Infinite HP",
+          "address": "0x044F"
+        },
+        {
+          "code": "0450:20",
+          "desc": "Infinite MP",
+          "address": "0x0450"
+        },
+        {
+          "code": "0420:02",
+          "desc": "Invincible",
+          "address": "0x0420"
+        },
+        {
+          "code": "0451:FF",
+          "desc": "Quick Level Up",
+          "address": "0x0451"
+        },
+        {
+          "code": "053B:FF",
+          "desc": "Enemies Don't Attack You",
+          "address": "0x053B"
+        },
+        {
+          "code": "053C:FF",
+          "desc": "Enemies Don't Attack You",
+          "address": "0x053C"
+        },
+        {
+          "code": "053D:FF",
+          "desc": "Enemies Don't Attack You",
+          "address": "0x053D"
+        },
+        {
+          "code": "053E:FF",
+          "desc": "Enemies Don't Attack You",
+          "address": "0x053E"
+        },
+        {
+          "code": "0520:00",
+          "desc": "Bosses Have No Energy",
+          "address": "0x0520"
+        },
+        {
+          "code": "0430:01",
+          "desc": "Item Modifier",
+          "address": "0x0430"
+        },
+        {
+          "code": "055E:28",
+          "desc": "Enemies Give Lots Of Exp",
+          "address": "0x055E"
+        },
+        {
+          "code": "055F:28",
+          "desc": "Enemies Give Lots Of Exp",
+          "address": "0x055F"
+        },
+        {
+          "code": "0560:28",
+          "desc": "Enemies Give Lots Of Exp",
+          "address": "0x0560"
+        },
+        {
+          "code": "0561:28",
+          "desc": "Enemies Give Lots Of Exp",
+          "address": "0x0561"
+        },
+        {
+          "code": "AEUEZUZP",
+          "desc": "Hit Anywhere",
+          "address": "0x038A"
+        },
+        {
+          "code": "OXKELLEU",
+          "desc": "Hit Anywhere",
+          "address": "0x03AB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

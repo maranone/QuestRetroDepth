@@ -1,0 +1,100 @@
+{
+  "system": "nes",
+  "normalized_title": "galaxy5000racingin51stcentury",
+  "display_name": "Galaxy 5000 - Racing in the 51st Century (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Galaxy 5000 - Racing in the 51st Century (USA).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 16,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "SLKPAEVS",
+          "desc": "Stop timer",
+          "address": "0x0038"
+        },
+        {
+          "code": "TEEOZGVV",
+          "desc": "More damage from shots",
+          "address": "0x048A"
+        },
+        {
+          "code": "NUEOLKVN",
+          "desc": "More damage from shots",
+          "address": "0x04BB"
+        },
+        {
+          "code": "05A7:39",
+          "desc": "Fly Over Everything",
+          "address": "0x05A7"
+        },
+        {
+          "code": "0517:00",
+          "desc": "Ship Modifier",
+          "address": "0x0517"
+        },
+        {
+          "code": "069A:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x069A"
+        },
+        {
+          "code": "069B:09",
+          "desc": "Infinite Time (Ten's Digit)",
+          "address": "0x069B"
+        },
+        {
+          "code": "069C:09",
+          "desc": "Infinite Time (Hundred's Digit)",
+          "address": "0x069C"
+        },
+        {
+          "code": "017F:01",
+          "desc": "Very Fast Music",
+          "address": "0x017F"
+        },
+        {
+          "code": "00AB:00",
+          "desc": "P1 Position Modifier",
+          "address": "0x00AB"
+        },
+        {
+          "code": "00AC:00",
+          "desc": "P2 Position Modifier",
+          "address": "0x00AC"
+        },
+        {
+          "code": "00AD:00",
+          "desc": "P3 Position Modifier",
+          "address": "0x00AD"
+        },
+        {
+          "code": "00AE:00",
+          "desc": "P4 Position Modifier",
+          "address": "0x00AE"
+        },
+        {
+          "code": "NYOOXPAE",
+          "desc": "Enable Dr Daves Cheat Screen after starting a 1P game",
+          "address": "0x01FA"
+        },
+        {
+          "code": "04C7:FF",
+          "desc": "Enable Dr Daves Cheat Screen after starting a 1P game",
+          "address": "0x04C7"
+        },
+        {
+          "code": "0715:09",
+          "desc": "Infinite Continues",
+          "address": "0x0715"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

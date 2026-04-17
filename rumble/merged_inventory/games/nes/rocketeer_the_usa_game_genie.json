@@ -1,0 +1,62 @@
+{
+  "system": "nes",
+  "normalized_title": "rocketeer",
+  "display_name": "Rocketeer, The (USA) (Game Genie)",
+  "aliases": [
+    "Rocketeer, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rocketeer, The (USA).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 8,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "05C5:08",
+          "desc": "Infinite Energy",
+          "address": "0x05C5"
+        },
+        {
+          "code": "05BF:0A",
+          "desc": "Infinite Ammo",
+          "address": "0x05BF"
+        },
+        {
+          "code": "05B0:3C",
+          "desc": "Infinite Fuel",
+          "address": "0x05B0"
+        },
+        {
+          "code": "05C5:0A",
+          "desc": "Infinite Health",
+          "address": "0x05C5"
+        },
+        {
+          "code": "05BF:63",
+          "desc": "Infinite Ammo/Rockets, Etc.",
+          "address": "0x05BF"
+        },
+        {
+          "code": "05B0:27",
+          "desc": "Infinite Rocket Power",
+          "address": "0x05B0"
+        },
+        {
+          "code": "03EC:00",
+          "desc": "Area Modifier",
+          "address": "0x03EC"
+        },
+        {
+          "code": "05B8:10",
+          "desc": "Can't Be Hit",
+          "address": "0x05B8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

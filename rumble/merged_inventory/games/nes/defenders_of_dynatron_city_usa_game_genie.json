@@ -1,0 +1,47 @@
+{
+  "system": "nes",
+  "normalized_title": "defendersofdynatroncity",
+  "display_name": "Defenders of Dynatron City (USA) (Game Genie)",
+  "aliases": [
+    "Defenders of Dynatron City (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Defenders of Dynatron City (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0702:FF",
+          "desc": "Infinite Maximum Money",
+          "address": "0x0702"
+        },
+        {
+          "code": "00E1:00",
+          "desc": "Fake Character Modifier (See Note)",
+          "address": "0x00E1"
+        },
+        {
+          "code": "00E7:BE",
+          "desc": "Character Modifier (See Note)",
+          "address": "0x00E7"
+        },
+        {
+          "code": "07FF:99",
+          "desc": "Infinite Timer (Seconds)",
+          "address": "0x07FF"
+        },
+        {
+          "code": "07FE:99",
+          "desc": "Infinite Timer (Minutes)",
+          "address": "0x07FE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

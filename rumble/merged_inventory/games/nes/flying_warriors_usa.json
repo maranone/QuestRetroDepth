@@ -1,0 +1,95 @@
+{
+  "system": "nes",
+  "normalized_title": "flyingwarriors",
+  "display_name": "Flying Warriors (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Flying Warriors (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "SZXEZZVG",
+          "desc": "Infnite Credits",
+          "address": "0x02AA"
+        },
+        {
+          "code": "0120:05",
+          "desc": "Invincibility (Flickering)",
+          "address": "0x0120"
+        },
+        {
+          "code": "0357:FF",
+          "desc": "Max Coins",
+          "address": "0x0357"
+        },
+        {
+          "code": "034B:05",
+          "desc": "Infinite Charm",
+          "address": "0x034B"
+        },
+        {
+          "code": "034D:05",
+          "desc": "Infinite Bait",
+          "address": "0x034D"
+        },
+        {
+          "code": "0352:05",
+          "desc": "Infinite Windyshoes",
+          "address": "0x0352"
+        },
+        {
+          "code": "00E8:01",
+          "desc": "No Enemies",
+          "address": "0x00E8"
+        },
+        {
+          "code": "0076:09",
+          "desc": "Infinite Credits",
+          "address": "0x0076"
+        },
+        {
+          "code": "033B:FF",
+          "desc": "Infinite Health (Rick)",
+          "address": "0x033B"
+        },
+        {
+          "code": "00E8:00",
+          "desc": "Opponent Has No Health",
+          "address": "0x00E8"
+        },
+        {
+          "code": "0353:63",
+          "desc": "Infinite Potions",
+          "address": "0x0353"
+        },
+        {
+          "code": "034A:FF",
+          "desc": "Infinite K.O.'s",
+          "address": "0x034A"
+        },
+        {
+          "code": "0362:FF",
+          "desc": "Infinite Life Bottles",
+          "address": "0x0362"
+        },
+        {
+          "code": "04F0:50",
+          "desc": "Music Speed Modifier",
+          "address": "0x04F0"
+        },
+        {
+          "code": "0364:2A",
+          "desc": "Level Progression Modifier",
+          "address": "0x0364"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "system": "nes",
+  "normalized_title": "videomation",
+  "display_name": "Videomation (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Videomation (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "07DD:01",
+          "desc": "It Plays Music Without Drawing Anything",
+          "address": "0x07DD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Earthworm Jim (USA, Europe) (Action Replay)
+game_key=earthworm_jim_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_fffbf7	pickup	0xFFFBF7	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_fffbf6	pickup	0xFFFBF6	1	uint	little	prev != curr	0.8	1	right:0.250:18

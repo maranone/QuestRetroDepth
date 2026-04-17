@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "mariotennisadvance",
+  "display_name": "Mario Tennis Advance (Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Mario Tennis Advance (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "74000130",
+          "desc": "Infinite EXP (Hold R+A)",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83002C38",
+          "desc": "Infinite EXP (Hold R+A)",
+          "address": "0x02002C38"
+        },
+        {
+          "code": "320004CD",
+          "desc": "Infinite Special",
+          "address": "0x020004CD"
+        },
+        {
+          "code": "820002BC",
+          "desc": "Always Win",
+          "address": "0x020002BC"
+        },
+        {
+          "code": "420003F0",
+          "desc": "Max Status (Boy)",
+          "address": "0x020003F0"
+        },
+        {
+          "code": "420003FC",
+          "desc": "Max Status (Boy)",
+          "address": "0x020003FC"
+        },
+        {
+          "code": "42000440",
+          "desc": "Max Status (Girl)",
+          "address": "0x02000440"
+        },
+        {
+          "code": "4200044C",
+          "desc": "Max Status (Girl)",
+          "address": "0x0200044C"
+        },
+        {
+          "code": "420005D0",
+          "desc": "Max SS Status",
+          "address": "0x020005D0"
+        },
+        {
+          "code": "420005E0",
+          "desc": "Max SS Status",
+          "address": "0x020005E0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Mario Tennis Advance (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "74000130",
+          "desc": "Infinite EXP (Hold R+A)",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83002C38",
+          "desc": "Infinite EXP (Hold R+A)",
+          "address": "0x02002C38"
+        },
+        {
+          "code": "320004CD",
+          "desc": "Infinite Special",
+          "address": "0x020004CD"
+        },
+        {
+          "code": "820002BC",
+          "desc": "Always Win",
+          "address": "0x020002BC"
+        },
+        {
+          "code": "420003F0",
+          "desc": "Max Status (Boy)",
+          "address": "0x020003F0"
+        },
+        {
+          "code": "420003FC",
+          "desc": "Max Status (Boy)",
+          "address": "0x020003FC"
+        },
+        {
+          "code": "42000440",
+          "desc": "Max Status (Girl)",
+          "address": "0x02000440"
+        },
+        {
+          "code": "4200044C",
+          "desc": "Max Status (Girl)",
+          "address": "0x0200044C"
+        },
+        {
+          "code": "420005D0",
+          "desc": "Max SS Status",
+          "address": "0x020005D0"
+        },
+        {
+          "code": "420005E0",
+          "desc": "Max SS Status",
+          "address": "0x020005E0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

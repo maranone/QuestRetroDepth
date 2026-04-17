@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "nutsmilk",
+  "display_name": "Nuts _ Milk (Japan) (Game Genie)",
+  "aliases": [
+    "Nuts _ Milk (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Nuts _ Milk (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "003C:01",
+          "desc": "Invincibility",
+          "address": "0x003C"
+        },
+        {
+          "code": "0057:00",
+          "desc": "Invincibility",
+          "address": "0x0057"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

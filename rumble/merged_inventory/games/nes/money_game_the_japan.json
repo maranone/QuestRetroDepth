@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "moneygame",
+  "display_name": "Money Game, The (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Money Game, The (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "63B2:00",
+          "desc": "Level Select",
+          "address": "0x63B2"
+        },
+        {
+          "code": "63B9:FF",
+          "desc": "Lots of Cash & Stocks",
+          "address": "0x63B9"
+        },
+        {
+          "code": "63B8:FF",
+          "desc": "Tons of Cash & Stocks",
+          "address": "0x63B8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

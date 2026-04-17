@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "titan",
+  "display_name": "Titan (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Titan (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f0040:09",
+          "desc": "Infinite Time",
+          "address": "0x1F0040"
+        },
+        {
+          "code": "1f003f:99",
+          "desc": "Infinite Time",
+          "address": "0x1F003F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

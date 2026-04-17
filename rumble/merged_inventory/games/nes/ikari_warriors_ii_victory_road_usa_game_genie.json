@@ -1,0 +1,97 @@
+{
+  "system": "nes",
+  "normalized_title": "ikariwarriorsiivictoryroad",
+  "display_name": "Ikari Warriors II - Victory Road (USA) (Game Genie)",
+  "aliases": [
+    "Ikari Warriors II - Victory Road (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ikari Warriors II - Victory Road (USA).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 15,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "06D1:20",
+          "desc": "Infinite Health P1 (Ignore Display)",
+          "address": "0x06D1"
+        },
+        {
+          "code": "06C7:04",
+          "desc": "Boomerang",
+          "address": "0x06C7"
+        },
+        {
+          "code": "06C5:04",
+          "desc": "Bazooka",
+          "address": "0x06C5"
+        },
+        {
+          "code": "06C3:04",
+          "desc": "Machine Gun",
+          "address": "0x06C3"
+        },
+        {
+          "code": "06C9:04",
+          "desc": "Sword",
+          "address": "0x06C9"
+        },
+        {
+          "code": "06CB:04",
+          "desc": "Grenades",
+          "address": "0x06CB"
+        },
+        {
+          "code": "06CD:04",
+          "desc": "Land Mines",
+          "address": "0x06CD"
+        },
+        {
+          "code": "00F8:80",
+          "desc": "Mucho/Infinite Hearts",
+          "address": "0x00F8"
+        },
+        {
+          "code": "00F2:01",
+          "desc": "Arrow",
+          "address": "0x00F2"
+        },
+        {
+          "code": "00EA:01",
+          "desc": "Lightning",
+          "address": "0x00EA"
+        },
+        {
+          "code": "00EC:01",
+          "desc": "Earthquake",
+          "address": "0x00EC"
+        },
+        {
+          "code": "00EE:01",
+          "desc": "Wings",
+          "address": "0x00EE"
+        },
+        {
+          "code": "00F0:01",
+          "desc": "Shield",
+          "address": "0x00F0"
+        },
+        {
+          "code": "00F6:01",
+          "desc": "Elixir",
+          "address": "0x00F6"
+        },
+        {
+          "code": "00F4:01",
+          "desc": "Time Stopper",
+          "address": "0x00F4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

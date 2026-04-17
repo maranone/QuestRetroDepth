@@ -1,0 +1,14 @@
+game_name=Spider-Man - X-Men - Arcade's Revenge (USA, Europe) (Action Replay)
+game_key=spider_man_x_men_arcade_s_revenge_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff0224	damage_taken	0xFF0224	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff0224	death	0xFF0224	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ff0f74	life_lost	0xFF0F74	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff0f74	life_gained	0xFF0F74	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ff0088	life_lost	0xFF0088	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff0088	life_gained	0xFF0088	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_ff1828	damage_taken	0xFF1828	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff1828	death	0xFF1828	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff3f94	damage_taken	0xFF3F94	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff3f94	death	0xFF3F94	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

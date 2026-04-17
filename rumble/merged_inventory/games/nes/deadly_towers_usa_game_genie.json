@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "deadlytowers",
+  "display_name": "Deadly Towers (USA) (Game Genie)",
+  "aliases": [
+    "Deadly Towers (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Deadly Towers (USA).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 25,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "01B3:FF",
+          "desc": "Max HP",
+          "address": "0x01B3"
+        },
+        {
+          "code": "009B:FA",
+          "desc": "Always max ludder",
+          "address": "0x009B"
+        },
+        {
+          "code": "00A3:00",
+          "desc": "Enemy hits don't knock Meyer back as far",
+          "address": "0x00A3"
+        },
+        {
+          "code": "00A2:00",
+          "desc": "Invincible",
+          "address": "0x00A2"
+        },
+        {
+          "code": "00A3:00",
+          "desc": "Invincible",
+          "address": "0x00A3"
+        },
+        {
+          "code": "0176:00",
+          "desc": "First item slot",
+          "address": "0x0176"
+        },
+        {
+          "code": "0177:00",
+          "desc": "2nd item slot",
+          "address": "0x0177"
+        },
+        {
+          "code": "0178:00",
+          "desc": "3rd item slot",
+          "address": "0x0178"
+        },
+        {
+          "code": "0179:00",
+          "desc": "4th item slot",
+          "address": "0x0179"
+        },
+        {
+          "code": "017A:00",
+          "desc": "5th item slot",
+          "address": "0x017A"
+        },
+        {
+          "code": "017B:00",
+          "desc": "6th item slot",
+          "address": "0x017B"
+        },
+        {
+          "code": "017C:00",
+          "desc": "7th item slot",
+          "address": "0x017C"
+        },
+        {
+          "code": "017D:00",
+          "desc": "8th item slot",
+          "address": "0x017D"
+        },
+        {
+          "code": "017E:00",
+          "desc": "9th item slot",
+          "address": "0x017E"
+        },
+        {
+          "code": "YYXELPZU",
+          "desc": "Start With 127 Ludder",
+          "address": "0x01FB"
+        },
+        {
+          "code": "LGXELPZU",
+          "desc": "Start with 75 Ludder",
+          "address": "0x01CB"
+        },
+        {
+          "code": "GXSONPST",
+          "desc": "You won't take any damage",
+          "address": "0x01AF"
+        },
+        {
+          "code": "ZEUPKYPE",
+          "desc": "Pick up 1 Ludder and it becomes 10",
+          "address": "0x070C"
+        },
+        {
+          "code": "GOUPUYIA",
+          "desc": "Pick up 5 Ludder and it becomes 20",
+          "address": "0x071B"
+        },
+        {
+          "code": "01B4:07",
+          "desc": "All bells burned",
+          "address": "0x01B4"
+        },
+        {
+          "code": "009A:FF",
+          "desc": "Max Health",
+          "address": "0x009A"
+        },
+        {
+          "code": "00A2:00",
+          "desc": "Enemy Hits Don't Knock Meyer Back As Far",
+          "address": "0x00A2"
+        },
+        {
+          "code": "00A3:00",
+          "desc": "Enemy Hits Don't Knock Meyer Back As Far",
+          "address": "0x00A3"
+        },
+        {
+          "code": "0176:00",
+          "desc": "1st Item Slot",
+          "address": "0x0176"
+        },
+        {
+          "code": "OXXOXOPX",
+          "desc": "Invincibility",
+          "address": "0x01AA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

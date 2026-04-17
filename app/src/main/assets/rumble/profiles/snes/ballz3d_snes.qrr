@@ -1,6 +1,0 @@
-game_name=Ballz3d
-game_key=Ballz3d-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_2ae	damage_taken	0x7E02AE	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	damage_taken_1_eba	damage_taken	0x7E0EBA	1	uint	native	prev > curr	0.85	1	right:0.750:180

@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "megamanbattlenetwork2",
+  "display_name": "Mega Man Battle Network 2 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Mega Man Battle Network 2 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "100003C0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020003C0"
+        },
+        {
+          "code": "82008A9A",
+          "desc": "Invincible",
+          "address": "0x02008A9A"
+        },
+        {
+          "code": "82008A94",
+          "desc": "Infinite HP",
+          "address": "0x02008A94"
+        },
+        {
+          "code": "82001132",
+          "desc": "Maximum HP",
+          "address": "0x02001132"
+        },
+        {
+          "code": "82004F0C",
+          "desc": "Full Custom Bar",
+          "address": "0x02004F0C"
+        },
+        {
+          "code": "82008A60",
+          "desc": "Infinite Zenny",
+          "address": "0x02008A60"
+        },
+        {
+          "code": "82009082",
+          "desc": "No Random Battles",
+          "address": "0x02009082"
+        },
+        {
+          "code": "42008B54",
+          "desc": "Weak Enemies",
+          "address": "0x02008B54"
+        },
+        {
+          "code": "82009B28",
+          "desc": "Cheap Chip Trader",
+          "address": "0x02009B28"
+        },
+        {
+          "code": "32000DD7",
+          "desc": "99MB Regular Mem",
+          "address": "0x02000DD7"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Mega Man Battle Network 2 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "100003C0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020003C0"
+        },
+        {
+          "code": "82008A9A",
+          "desc": "Invincible",
+          "address": "0x02008A9A"
+        },
+        {
+          "code": "82008A94",
+          "desc": "Infinite HP",
+          "address": "0x02008A94"
+        },
+        {
+          "code": "82001132",
+          "desc": "Maximum HP",
+          "address": "0x02001132"
+        },
+        {
+          "code": "82004F0C",
+          "desc": "Full Custom Bar",
+          "address": "0x02004F0C"
+        },
+        {
+          "code": "82008A60",
+          "desc": "Infinite Zenny",
+          "address": "0x02008A60"
+        },
+        {
+          "code": "82009082",
+          "desc": "No Random Battles",
+          "address": "0x02009082"
+        },
+        {
+          "code": "42008B54",
+          "desc": "Weak Enemies",
+          "address": "0x02008B54"
+        },
+        {
+          "code": "82009B28",
+          "desc": "Cheap Chip Trader",
+          "address": "0x02009B28"
+        },
+        {
+          "code": "32000DD7",
+          "desc": "99MB Regular Mem",
+          "address": "0x02000DD7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

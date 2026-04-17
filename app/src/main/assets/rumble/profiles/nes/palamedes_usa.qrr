@@ -1,0 +1,11 @@
+game_name=Palamedes (USA)
+game_key=palamedes_usa
+system=nes
+integration_tier=contrib
+trigger	level_complete_level_0017	level_complete	0x0017	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	score_score_0012	score	0x0012	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0013	score	0x0013	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0014	score	0x0014	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0053	score	0x0053	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0054	score	0x0054	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0055	score	0x0055	1	uint	little	prev < curr	0.8	1	right:0.350:60

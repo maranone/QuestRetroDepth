@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "ufouriasaga",
+  "display_name": "Ufouria - The Saga (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ufouria - The Saga (Europe).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "04E5:10",
+          "desc": "Infinite Energy",
+          "address": "0x04E5"
+        },
+        {
+          "code": "051C:02",
+          "desc": "Invincibility",
+          "address": "0x051C"
+        },
+        {
+          "code": "051A:00",
+          "desc": "Alternate Invincibility",
+          "address": "0x051A"
+        },
+        {
+          "code": "0511:00",
+          "desc": "Alternate Invincibility",
+          "address": "0x0511"
+        },
+        {
+          "code": "EIVETAEY",
+          "desc": "Invincibility",
+          "address": "0x00DE"
+        },
+        {
+          "code": "EIKELYEY",
+          "desc": "Invincibility",
+          "address": "0x07DB"
+        },
+        {
+          "code": "04E5:99",
+          "desc": "Infinite Health",
+          "address": "0x04E5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "marykateandashleygirlsnightout",
+  "display_name": "Mary-Kate and Ashley - Girls Night Out (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Mary-Kate and Ashley - Girls Night Out (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "100013F4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020013F4"
+        },
+        {
+          "code": "8300375C",
+          "desc": "Quick Score Gain",
+          "address": "0x0200375C"
+        },
+        {
+          "code": "8300375C",
+          "desc": "Max Score",
+          "address": "0x0200375C"
+        },
+        {
+          "code": "8300375E",
+          "desc": "Max Score",
+          "address": "0x0200375E"
+        },
+        {
+          "code": "8300376C",
+          "desc": "Max Rank Meter",
+          "address": "0x0200376C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Mary-Kate and Ashley - Girls Night Out (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "100013F4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020013F4"
+        },
+        {
+          "code": "8300375C",
+          "desc": "Quick Score Gain",
+          "address": "0x0200375C"
+        },
+        {
+          "code": "8300375C",
+          "desc": "Max Score",
+          "address": "0x0200375C"
+        },
+        {
+          "code": "8300375E",
+          "desc": "Max Score",
+          "address": "0x0200375E"
+        },
+        {
+          "code": "8300376C",
+          "desc": "Max Rank Meter",
+          "address": "0x0200376C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

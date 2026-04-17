@@ -1,0 +1,13 @@
+game_name=Grand Theft Auto Advance (USA, Europe) (Code Breaker)
+game_key=grand_theft_auto_advance_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_02000f22	damage_taken	0x02000F22	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02000f22	death	0x02000F22	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0202582a	damage_taken	0x0202582A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0202582a	death	0x0202582A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0200108e	pickup	0x0200108E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0202581c	pickup	0x0202581C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_02025824	pickup	0x02025824	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0202581e	pickup	0x0202581E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_02025826	pickup	0x02025826	1	uint	little	prev != curr	0.8	1	right:0.250:18

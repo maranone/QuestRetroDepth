@@ -1,0 +1,18 @@
+game_name=Final Fantasy IV Advance (World) (Code Breaker)
+game_key=final_fantasy_iv_advance_world_code_breaker
+system=gba
+integration_tier=contrib
+trigger	pickup_coins_020072bc	pickup	0x020072BC	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_020072be	pickup	0x020072BE	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_020069f8	damage_taken	0x020069F8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020069f8	death	0x020069F8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020069fa	damage_taken	0x020069FA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020069fa	death	0x020069FA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02024c68	damage_taken	0x02024C68	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02024c68	death	0x02024C68	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02024c44	damage_taken	0x02024C44	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02024c44	death	0x02024C44	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02024a50	damage_taken	0x02024A50	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02024a50	death	0x02024A50	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02024a2c	damage_taken	0x02024A2C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02024a2c	death	0x02024A2C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

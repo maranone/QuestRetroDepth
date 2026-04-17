@@ -1,0 +1,5 @@
+game_name=Sampras Tennis 96 (Europe) (Action Replay)
+game_key=sampras_tennis_96_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff2a0a	score	0xFF2A0A	1	uint	little	prev < curr	0.8	1	right:0.350:60

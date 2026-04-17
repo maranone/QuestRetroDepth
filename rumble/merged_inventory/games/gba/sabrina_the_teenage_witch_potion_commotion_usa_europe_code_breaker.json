@@ -1,0 +1,38 @@
+{
+  "system": "gba",
+  "normalized_title": "sabrinateenagewitchpotioncommotion",
+  "display_name": "Sabrina - The Teenage Witch - Potion Commotion (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Sabrina - The Teenage Witch - Potion Commotion (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "83003E92",
+          "desc": "Infinite Health",
+          "address": "0x02003E92"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Sabrina - The Teenage Witch - Potion Commotion (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "83003E92",
+          "desc": "Infinite Health",
+          "address": "0x02003E92"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

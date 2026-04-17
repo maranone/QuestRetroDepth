@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "waynegretzkyhockey",
+  "display_name": "Wayne Gretzky Hockey (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wayne Gretzky Hockey (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "00D3:00",
+          "desc": "Team 1 - P1 Score Modifier",
+          "address": "0x00D3"
+        },
+        {
+          "code": "00D4:00",
+          "desc": "Team 2 - P2/CPU Score Modifier",
+          "address": "0x00D4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

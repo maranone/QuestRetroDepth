@@ -1,6 +1,0 @@
-game_name=NBAJam
-game_key=NBAJam-Snes
-system=snes
-integration_tier=manual
-trigger	score_0_ca9	score	0x7E0CA9	1	uint	native	prev < curr	0.7	1	left:0.300:80
-trigger	score_1_caf	score	0x7E0CAF	1	uint	native	prev < curr	0.7	1	left:0.300:80

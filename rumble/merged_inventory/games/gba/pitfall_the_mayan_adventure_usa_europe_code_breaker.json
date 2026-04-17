@@ -1,0 +1,158 @@
+{
+  "system": "gba",
+  "normalized_title": "pitfallmayanadventure",
+  "display_name": "Pitfall - The Mayan Adventure (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Pitfall - The Mayan Adventure (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 13,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "100023EC",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020023EC"
+        },
+        {
+          "code": "320000A8",
+          "desc": "Infinite Bullets",
+          "address": "0x020000A8"
+        },
+        {
+          "code": "320000AA",
+          "desc": "Infinite Boomerangs",
+          "address": "0x020000AA"
+        },
+        {
+          "code": "320000B4",
+          "desc": "Infinite Nuts",
+          "address": "0x020000B4"
+        },
+        {
+          "code": "820000B8",
+          "desc": "Max Score",
+          "address": "0x020000B8"
+        },
+        {
+          "code": "820000BC",
+          "desc": "Max Score",
+          "address": "0x020000BC"
+        },
+        {
+          "code": "320000C0",
+          "desc": "Infinite Lives",
+          "address": "0x020000C0"
+        },
+        {
+          "code": "320002CE",
+          "desc": "Infinite Continues",
+          "address": "0x020002CE"
+        },
+        {
+          "code": "320010C1",
+          "desc": "Infinite Health",
+          "address": "0x020010C1"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press B For Moon Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "02000C12",
+          "desc": "Press B For Moon Jump",
+          "address": "0x02000C12"
+        },
+        {
+          "code": "72000254",
+          "desc": "Freeze Enemies",
+          "address": "0x02000254"
+        },
+        {
+          "code": "82000254",
+          "desc": "Freeze Enemies",
+          "address": "0x02000254"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Pitfall - The Mayan Adventure (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 13,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "100023EC",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020023EC"
+        },
+        {
+          "code": "320000A8",
+          "desc": "Infinite Bullets",
+          "address": "0x020000A8"
+        },
+        {
+          "code": "320000AA",
+          "desc": "Infinite Boomerangs",
+          "address": "0x020000AA"
+        },
+        {
+          "code": "320000B4",
+          "desc": "Infinite Nuts",
+          "address": "0x020000B4"
+        },
+        {
+          "code": "820000B8",
+          "desc": "Max Score",
+          "address": "0x020000B8"
+        },
+        {
+          "code": "820000BC",
+          "desc": "Max Score",
+          "address": "0x020000BC"
+        },
+        {
+          "code": "320000C0",
+          "desc": "Infinite Lives",
+          "address": "0x020000C0"
+        },
+        {
+          "code": "320002CE",
+          "desc": "Infinite Continues",
+          "address": "0x020002CE"
+        },
+        {
+          "code": "320010C1",
+          "desc": "Infinite Health",
+          "address": "0x020010C1"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press B For Moon Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "02000C12",
+          "desc": "Press B For Moon Jump",
+          "address": "0x02000C12"
+        },
+        {
+          "code": "72000254",
+          "desc": "Freeze Enemies",
+          "address": "0x02000254"
+        },
+        {
+          "code": "82000254",
+          "desc": "Freeze Enemies",
+          "address": "0x02000254"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

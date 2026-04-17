@@ -1,0 +1,32 @@
+{
+  "system": "gbc",
+  "normalized_title": "wcwmayhem",
+  "display_name": "WCW Mayhem (USA, Europe) (Xploder)",
+  "aliases": [
+    "WCW Mayhem (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\WCW Mayhem (USA, Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "01DCC1C5",
+          "desc": "Infinite Health P1",
+          "address": "0xC1C5"
+        },
+        {
+          "code": "0100C1C5",
+          "desc": "No Health P1",
+          "address": "0xC1C5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

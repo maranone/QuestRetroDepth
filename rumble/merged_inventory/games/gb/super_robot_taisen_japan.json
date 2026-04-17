@@ -1,0 +1,30 @@
+{
+  "system": "gb",
+  "normalized_title": "superrobottaisen",
+  "display_name": "Super Robot Taisen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Super Robot Taisen (Japan).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0100D7C4",
+          "desc": "Player 7th Unit Mech Modifier",
+          "address": "0xD7C4"
+        },
+        {
+          "code": "0100D7C4",
+          "desc": "Player 7th Unit Mech Modifier",
+          "address": "0xD7C4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

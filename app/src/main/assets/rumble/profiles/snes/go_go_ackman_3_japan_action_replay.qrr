@@ -1,0 +1,20 @@
+game_name=Go Go Ackman 3 (Japan) (Action Replay)
+game_key=go_go_ackman_3_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_0168	life_lost	0x7E0168	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0168	life_gained	0x7E0168	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_0bd4	enemy_defeated	0x7E0BD4	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	pickup_coins_014a	pickup	0x7E014A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_014c	pickup	0x7E014C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_014e	pickup	0x7E014E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0150	pickup	0x7E0150	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0152	pickup	0x7E0152	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0154	pickup	0x7E0154	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0156	pickup	0x7E0156	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0158	pickup	0x7E0158	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_0084	level_complete	0x7E0084	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_0134	damage_taken	0x7E0134	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0134	death	0x7E0134	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0142	pickup	0x7E0142	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0147	pickup	0x7E0147	1	uint	little	prev != curr	0.8	1	right:0.250:18

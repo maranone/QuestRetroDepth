@@ -1,0 +1,35 @@
+game_name=Milandra (Japan)
+game_key=milandra_japan
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_5fa5	pickup	0x7E5FA5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_5fa6	pickup	0x7E5FA6	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_5fa7	pickup	0x7E5FA7	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_5005	damage_taken	0x7E5005	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_5005	death	0x7E5005	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_5006	damage_taken	0x7E5006	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_5006	death	0x7E5006	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_5045	damage_taken	0x7E5045	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_5045	death	0x7E5045	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_5046	damage_taken	0x7E5046	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_5046	death	0x7E5046	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_5085	damage_taken	0x7E5085	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_5085	death	0x7E5085	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_5086	damage_taken	0x7E5086	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_5086	death	0x7E5086	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_50c5	damage_taken	0x7E50C5	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_50c5	death	0x7E50C5	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_50c6	damage_taken	0x7E50C6	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_50c6	death	0x7E50C6	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_5105	damage_taken	0x7E5105	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_5105	death	0x7E5105	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_5106	damage_taken	0x7E5106	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_5106	death	0x7E5106	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_5145	damage_taken	0x7E5145	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_5145	death	0x7E5145	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_5146	damage_taken	0x7E5146	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_5146	death	0x7E5146	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_5185	damage_taken	0x7E5185	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_5185	death	0x7E5185	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_5186	damage_taken	0x7E5186	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_5186	death	0x7E5186	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

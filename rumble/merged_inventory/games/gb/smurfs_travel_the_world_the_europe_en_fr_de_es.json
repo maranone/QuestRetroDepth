@@ -1,0 +1,33 @@
+{
+  "system": "gb",
+  "normalized_title": "smurfstravelworld",
+  "display_name": "Smurfs Travel the World, The (Europe) (En,Fr,De,Es)",
+  "aliases": [
+    "Smurfs Travel the World, The (Europe) (Game Genie)",
+    "Smurfs Travel the World, The (Europe) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Smurfs Travel the World, The (Europe) (GameShark).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "010AC0D8",
+          "desc": "Infinite Lives",
+          "address": "0xC0D8"
+        },
+        {
+          "code": "0101C5D8",
+          "desc": "Only Need 1 Crystal To Pass Level",
+          "address": "0xC5D8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

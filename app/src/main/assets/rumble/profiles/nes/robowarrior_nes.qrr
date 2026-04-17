@@ -1,0 +1,7 @@
+game_name=Robo Warrior (USA, Europe) (Game Genie)
+game_key=RoboWarrior-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_01c7	damage_taken	0x01C7	1	nibble	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_01c7	death	0x01C7	1	nibble	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_0045	score	0x0045	5	nibble	big	prev < curr	0.8	1	right:0.350:60

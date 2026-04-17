@@ -1,0 +1,10 @@
+game_name=Dungeon Magic - Sword of the Elements (USA) (Game Genie)
+game_key=dungeon_magic_sword_of_the_elements_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_00dc	damage_taken	0x00DC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00dc	death	0x00DC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0040	pickup	0x0040	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_00db	damage_taken	0x00DB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00db	death	0x00DB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_004a	level_complete	0x004A	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

@@ -1,0 +1,258 @@
+{
+  "system": "gba",
+  "normalized_title": "mlbslugfest2004",
+  "display_name": "MLB SlugFest 20-04 (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\MLB SlugFest 20-04 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 23,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "3300016A",
+          "desc": "Home Team Score Modifier",
+          "address": "0x0200016A"
+        },
+        {
+          "code": "7300016A",
+          "desc": "Home Team Start With Score Modifier",
+          "address": "0x0200016A"
+        },
+        {
+          "code": "3300016A",
+          "desc": "Home Team Start With Score Modifier",
+          "address": "0x0200016A"
+        },
+        {
+          "code": "3300019A",
+          "desc": "Away Team Score Modifier",
+          "address": "0x0200019A"
+        },
+        {
+          "code": "7300019A",
+          "desc": "Away Team Start With Score Modifier",
+          "address": "0x0200019A"
+        },
+        {
+          "code": "3300019A",
+          "desc": "Away Team Start With Score Modifier",
+          "address": "0x0200019A"
+        },
+        {
+          "code": "3300013C",
+          "desc": "Infinite Outs",
+          "address": "0x0200013C"
+        },
+        {
+          "code": "7300013C",
+          "desc": "1 Out And You Are Out",
+          "address": "0x0200013C"
+        },
+        {
+          "code": "3300013C",
+          "desc": "1 Out And You Are Out",
+          "address": "0x0200013C"
+        },
+        {
+          "code": "7300013C",
+          "desc": "2 Outs And You Are Out",
+          "address": "0x0200013C"
+        },
+        {
+          "code": "3300013C",
+          "desc": "2 Outs And You Are Out",
+          "address": "0x0200013C"
+        },
+        {
+          "code": "3300013B",
+          "desc": "Infinite Strikes",
+          "address": "0x0200013B"
+        },
+        {
+          "code": "7300013A",
+          "desc": "1 Strike And You Are Out",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "3300013B",
+          "desc": "1 Strike And You Are Out",
+          "address": "0x0200013B"
+        },
+        {
+          "code": "7300013A",
+          "desc": "2 Strikes And You Are Out",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "3300013B",
+          "desc": "2 Strikes And You Are Out",
+          "address": "0x0200013B"
+        },
+        {
+          "code": "3300013A",
+          "desc": "Infinite Balls",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "7300013A",
+          "desc": "1 Ball And You Walk",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "3300013A",
+          "desc": "1 Ball And You Walk",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "7300013A",
+          "desc": "2 Balls And You Walk",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "3300013A",
+          "desc": "2 Balls And You Walk",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "7300013A",
+          "desc": "3 Balls And You Walk",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "3300013A",
+          "desc": "3 Balls And You Walk",
+          "address": "0x0200013A"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\MLB SlugFest 20-04 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 23,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "3300016A",
+          "desc": "Home Team Score Modifier",
+          "address": "0x0200016A"
+        },
+        {
+          "code": "7300016A",
+          "desc": "Home Team Start With Score Modifier",
+          "address": "0x0200016A"
+        },
+        {
+          "code": "3300016A",
+          "desc": "Home Team Start With Score Modifier",
+          "address": "0x0200016A"
+        },
+        {
+          "code": "3300019A",
+          "desc": "Away Team Score Modifier",
+          "address": "0x0200019A"
+        },
+        {
+          "code": "7300019A",
+          "desc": "Away Team Start With Score Modifier",
+          "address": "0x0200019A"
+        },
+        {
+          "code": "3300019A",
+          "desc": "Away Team Start With Score Modifier",
+          "address": "0x0200019A"
+        },
+        {
+          "code": "3300013C",
+          "desc": "Infinite Outs",
+          "address": "0x0200013C"
+        },
+        {
+          "code": "7300013C",
+          "desc": "1 Out And You Are Out",
+          "address": "0x0200013C"
+        },
+        {
+          "code": "3300013C",
+          "desc": "1 Out And You Are Out",
+          "address": "0x0200013C"
+        },
+        {
+          "code": "7300013C",
+          "desc": "2 Outs And You Are Out",
+          "address": "0x0200013C"
+        },
+        {
+          "code": "3300013C",
+          "desc": "2 Outs And You Are Out",
+          "address": "0x0200013C"
+        },
+        {
+          "code": "3300013B",
+          "desc": "Infinite Strikes",
+          "address": "0x0200013B"
+        },
+        {
+          "code": "7300013A",
+          "desc": "1 Strike And You Are Out",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "3300013B",
+          "desc": "1 Strike And You Are Out",
+          "address": "0x0200013B"
+        },
+        {
+          "code": "7300013A",
+          "desc": "2 Strikes And You Are Out",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "3300013B",
+          "desc": "2 Strikes And You Are Out",
+          "address": "0x0200013B"
+        },
+        {
+          "code": "3300013A",
+          "desc": "Infinite Balls",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "7300013A",
+          "desc": "1 Ball And You Walk",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "3300013A",
+          "desc": "1 Ball And You Walk",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "7300013A",
+          "desc": "2 Balls And You Walk",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "3300013A",
+          "desc": "2 Balls And You Walk",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "7300013A",
+          "desc": "3 Balls And You Walk",
+          "address": "0x0200013A"
+        },
+        {
+          "code": "3300013A",
+          "desc": "3 Balls And You Walk",
+          "address": "0x0200013A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

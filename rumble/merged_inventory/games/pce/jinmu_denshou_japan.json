@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "jinmudenshou",
+  "display_name": "Jinmu Denshou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Jinmu Denshou (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f001d:32",
+          "desc": "Infinite Energy",
+          "address": "0x1F001D"
+        },
+        {
+          "code": "1f008c:55",
+          "desc": "Invincibility",
+          "address": "0x1F008C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

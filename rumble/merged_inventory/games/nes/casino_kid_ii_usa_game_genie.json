@@ -1,0 +1,57 @@
+{
+  "system": "nes",
+  "normalized_title": "casinokidii",
+  "display_name": "Casino Kid II (USA) (Game Genie)",
+  "aliases": [
+    "Casino Kid II (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Casino Kid II (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "PAOASGIE",
+          "desc": "Can't double down in blackjack",
+          "address": "0x040D"
+        },
+        {
+          "code": "PAKAVIIE",
+          "desc": "Can't split in blackjack",
+          "address": "0x050E"
+        },
+        {
+          "code": "050F:FF",
+          "desc": "Lots of Money",
+          "address": "0x050F"
+        },
+        {
+          "code": "AASAOVIA",
+          "desc": "Always Win",
+          "address": "0x0609"
+        },
+        {
+          "code": "SVUOKKSI",
+          "desc": "Always Win",
+          "address": "0x04EC"
+        },
+        {
+          "code": "SXNPOSSK",
+          "desc": "Always Win",
+          "address": "0x0529"
+        },
+        {
+          "code": "ENNPUIYE",
+          "desc": "Always Win",
+          "address": "0x057B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

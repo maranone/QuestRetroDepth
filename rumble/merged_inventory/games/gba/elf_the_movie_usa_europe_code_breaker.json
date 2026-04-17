@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "elfmovie",
+  "display_name": "Elf - The Movie (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Elf - The Movie (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "100015D8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020015D8"
+        },
+        {
+          "code": "320008B4",
+          "desc": "Infinite Health",
+          "address": "0x020008B4"
+        },
+        {
+          "code": "83001430",
+          "desc": "Quick Score Gain",
+          "address": "0x02001430"
+        },
+        {
+          "code": "83001430",
+          "desc": "Max Score",
+          "address": "0x02001430"
+        },
+        {
+          "code": "83001432",
+          "desc": "Max Score",
+          "address": "0x02001432"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Elf - The Movie (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "100015D8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020015D8"
+        },
+        {
+          "code": "320008B4",
+          "desc": "Infinite Health",
+          "address": "0x020008B4"
+        },
+        {
+          "code": "83001430",
+          "desc": "Quick Score Gain",
+          "address": "0x02001430"
+        },
+        {
+          "code": "83001430",
+          "desc": "Max Score",
+          "address": "0x02001430"
+        },
+        {
+          "code": "83001432",
+          "desc": "Max Score",
+          "address": "0x02001432"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

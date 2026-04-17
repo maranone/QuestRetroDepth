@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "terracrestaiimandolernogyakushuu",
+  "display_name": "Terra Cresta II - Mandoler no Gyakushuu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Terra Cresta II - Mandoler no Gyakushuu (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f1289:09",
+          "desc": "Infinite Lives",
+          "address": "0x1F1289"
+        },
+        {
+          "code": "1f1370:76",
+          "desc": "Invincibility",
+          "address": "0x1F1370"
+        },
+        {
+          "code": "1f128a:03",
+          "desc": "Infinite F",
+          "address": "0x1F128A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "dragontalesdragonadventures",
+  "display_name": "Dragon Tales - Dragon Adventures (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Dragon Tales - Dragon Adventures (USA) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "830044C8",
+          "desc": "Max Cup Cakes",
+          "address": "0x020044C8"
+        },
+        {
+          "code": "830044CC",
+          "desc": "Max Blue Jewels",
+          "address": "0x020044CC"
+        },
+        {
+          "code": "830044D4",
+          "desc": "Max Music Notes",
+          "address": "0x020044D4"
+        },
+        {
+          "code": "83004470",
+          "desc": "Max Dragon Berries",
+          "address": "0x02004470"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Dragon Tales - Dragon Adventures (USA) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "830044C8",
+          "desc": "Max Cup Cakes",
+          "address": "0x020044C8"
+        },
+        {
+          "code": "830044CC",
+          "desc": "Max Blue Jewels",
+          "address": "0x020044CC"
+        },
+        {
+          "code": "830044D4",
+          "desc": "Max Music Notes",
+          "address": "0x020044D4"
+        },
+        {
+          "code": "83004470",
+          "desc": "Max Dragon Berries",
+          "address": "0x02004470"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "kekkyokunankyokudaibouken",
+  "display_name": "Kekkyoku Nankyoku Daibouken (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kekkyoku Nankyoku Daibouken (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "0009:32",
+          "desc": "Infinite Time",
+          "address": "0x0009"
+        },
+        {
+          "code": "00D5:00",
+          "desc": "Win Level Now",
+          "address": "0x00D5"
+        },
+        {
+          "code": "00A9:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x00A9"
+        },
+        {
+          "code": "00AA:09",
+          "desc": "Infinite Time (Ten's Digit)",
+          "address": "0x00AA"
+        },
+        {
+          "code": "00AB:09",
+          "desc": "Infinite Time (Hundred's Digit)",
+          "address": "0x00AB"
+        },
+        {
+          "code": "00AC:09",
+          "desc": "Infinite Time (Thousand's Digit)",
+          "address": "0x00AC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

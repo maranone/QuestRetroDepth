@@ -1,0 +1,70 @@
+{
+  "system": "pce",
+  "normalized_title": "ladyswordryakudatsusareta10ninnootome",
+  "display_name": "Lady Sword - Ryakudatsu Sareta 10-nin no Otome (Japan) (Unl)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Lady Sword - Ryakudatsu Sareta 10-nin no Otome (Japan) (Unl).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "1f17d7:ff",
+          "desc": "Infinite Hit Points",
+          "address": "0x1F17D7"
+        },
+        {
+          "code": "1f17d8:ff",
+          "desc": "Infinite Hit Points",
+          "address": "0x1F17D8"
+        },
+        {
+          "code": "1f17d5:ff",
+          "desc": "Stats Max Hit Points",
+          "address": "0x1F17D5"
+        },
+        {
+          "code": "1f17d6:ff",
+          "desc": "Stats Max Hit Points",
+          "address": "0x1F17D6"
+        },
+        {
+          "code": "1f17d9:ff",
+          "desc": "Stats Max Attack",
+          "address": "0x1F17D9"
+        },
+        {
+          "code": "1f17da:ff",
+          "desc": "Stats Max Attack",
+          "address": "0x1F17DA"
+        },
+        {
+          "code": "1f17db:ff",
+          "desc": "Stats Max Defense",
+          "address": "0x1F17DB"
+        },
+        {
+          "code": "1f17dc:ff",
+          "desc": "Stats Max Defense",
+          "address": "0x1F17DC"
+        },
+        {
+          "code": "1f17dd:ff",
+          "desc": "Stats Max Agility",
+          "address": "0x1F17DD"
+        },
+        {
+          "code": "1f17de:ff",
+          "desc": "Stats Max Agility",
+          "address": "0x1F17DE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

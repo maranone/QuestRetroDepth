@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "hajanofuuin",
+  "display_name": "Haja no Fuuin (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Haja no Fuuin (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0084:01",
+          "desc": "No Random Battles",
+          "address": "0x0084"
+        },
+        {
+          "code": "0416:FF",
+          "desc": "Player 1 Health",
+          "address": "0x0416"
+        },
+        {
+          "code": "0417:FF",
+          "desc": "Player 2 Health",
+          "address": "0x0417"
+        },
+        {
+          "code": "0418:FF",
+          "desc": "Player 3 Health",
+          "address": "0x0418"
+        },
+        {
+          "code": "0419:FF",
+          "desc": "Player 4 Health",
+          "address": "0x0419"
+        },
+        {
+          "code": "0471:00",
+          "desc": "Kill Enemies Faster",
+          "address": "0x0471"
+        },
+        {
+          "code": "0472:00",
+          "desc": "Kill Enemies Faster",
+          "address": "0x0472"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

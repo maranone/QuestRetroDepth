@@ -1,0 +1,13 @@
+game_name=Dragon View (USA) (Action Replay)
+game_key=dragon_view_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_2131	pickup	0x7E2131	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_2132	pickup	0x7E2132	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_6fca	damage_taken	0x7E6FCA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6fca	death	0x7E6FCA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_6fcb	damage_taken	0x7E6FCB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6fcb	death	0x7E6FCB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_210a	pickup	0x7E210A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_210c	pickup	0x7E210C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_210e	pickup	0x7E210E	1	uint	little	prev != curr	0.8	1	right:0.250:18

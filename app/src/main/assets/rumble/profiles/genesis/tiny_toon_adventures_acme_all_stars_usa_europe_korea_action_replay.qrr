@@ -1,0 +1,10 @@
+game_name=Tiny Toon Adventures - Acme All-Stars (USA, Europe, Korea) (Action Replay)
+game_key=tiny_toon_adventures_acme_all_stars_usa_europe_korea_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffe02a	score	0xFFE02A	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffe02c	score	0xFFE02C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffa050	score	0xFFA050	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffa052	score	0xFFA052	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffa0d0	score	0xFFA0D0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffa0d2	score	0xFFA0D2	1	uint	little	prev < curr	0.8	1	right:0.350:60

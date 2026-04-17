@@ -1,0 +1,38 @@
+{
+  "system": "gb",
+  "normalized_title": "kiddracula",
+  "display_name": "Kid Dracula (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Kid Dracula (USA, Europe) (GameShark)",
+    "Kid Dracula (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Kid Dracula (USA, Europe).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0199C6C8",
+          "desc": "Max Coins",
+          "address": "0xC6C8"
+        },
+        {
+          "code": "0105C4C8",
+          "desc": "Max Energy Bar",
+          "address": "0xC4C8"
+        },
+        {
+          "code": "0105C3C8",
+          "desc": "Infinite Lives",
+          "address": "0xC3C8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

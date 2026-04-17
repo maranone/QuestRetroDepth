@@ -1,0 +1,36 @@
+game_name=Ultraman Club 3 - Matamata Shutsugeki!! Ultra Kyoudai (Japan)
+game_key=ultraman_club_3_matamata_shutsugeki_ultra_kyoudai_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0532	damage_taken	0x0532	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0532	death	0x0532	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0533	damage_taken	0x0533	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0533	death	0x0533	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0522	damage_taken	0x0522	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0522	death	0x0522	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0523	damage_taken	0x0523	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0523	death	0x0523	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0512	damage_taken	0x0512	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0512	death	0x0512	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0513	damage_taken	0x0513	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0513	death	0x0513	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0502	damage_taken	0x0502	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0502	death	0x0502	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0503	damage_taken	0x0503	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0503	death	0x0503	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04f2	damage_taken	0x04F2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04f2	death	0x04F2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04f3	damage_taken	0x04F3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04f3	death	0x04F3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04e2	damage_taken	0x04E2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04e2	death	0x04E2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04e3	damage_taken	0x04E3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04e3	death	0x04E3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04c2	damage_taken	0x04C2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04c2	death	0x04C2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04a2	damage_taken	0x04A2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04a2	death	0x04A2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0482	damage_taken	0x0482	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0482	death	0x0482	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0462	damage_taken	0x0462	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0462	death	0x0462	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

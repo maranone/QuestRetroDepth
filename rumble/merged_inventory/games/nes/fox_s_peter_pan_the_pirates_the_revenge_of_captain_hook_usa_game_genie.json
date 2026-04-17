@@ -1,0 +1,67 @@
+{
+  "system": "nes",
+  "normalized_title": "foxspeterpanpiratesrevengeofcaptainhook",
+  "display_name": "Fox's Peter Pan _ the Pirates - The Revenge of Captain Hook (USA) (Game Genie)",
+  "aliases": [
+    "Fox's Peter Pan _ the Pirates - The Revenge of Captain Hook (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Fox's Peter Pan _ the Pirates - The Revenge of Captain Hook (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 9,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0051:63",
+          "desc": "Infinite Energy",
+          "address": "0x0051"
+        },
+        {
+          "code": "0640:63",
+          "desc": "Infinite Fly",
+          "address": "0x0640"
+        },
+        {
+          "code": "0051:FF",
+          "desc": "Infinite Health (Peter Pan)",
+          "address": "0x0051"
+        },
+        {
+          "code": "0050:00",
+          "desc": "Infinite Lives (Peter Pan)",
+          "address": "0x0050"
+        },
+        {
+          "code": "0052:00",
+          "desc": "Pirates Remaining Modifier",
+          "address": "0x0052"
+        },
+        {
+          "code": "0640:FF",
+          "desc": "Infinite Flight Pouch",
+          "address": "0x0640"
+        },
+        {
+          "code": "0036:00",
+          "desc": "Level Modifier",
+          "address": "0x0036"
+        },
+        {
+          "code": "001F:FF",
+          "desc": "Max Score P1",
+          "address": "0x001F"
+        },
+        {
+          "code": "0020:FF",
+          "desc": "Max Score P1",
+          "address": "0x0020"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "system": "nes",
+  "normalized_title": "ikariiiirescue",
+  "display_name": "Ikari III - The Rescue (USA) (Game Genie)",
+  "aliases": [
+    "Ikari III - The Rescue (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ikari III - The Rescue (USA).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 8,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0438:01",
+          "desc": "Current Weapon",
+          "address": "0x0438"
+        },
+        {
+          "code": "043A:09",
+          "desc": "Infinite Lives",
+          "address": "0x043A"
+        },
+        {
+          "code": "0424:20",
+          "desc": "Infinite Energy",
+          "address": "0x0424"
+        },
+        {
+          "code": "043A:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x043A"
+        },
+        {
+          "code": "0424:20",
+          "desc": "Infinite Health P1",
+          "address": "0x0424"
+        },
+        {
+          "code": "0438:01",
+          "desc": "Weapon Modifier P1",
+          "address": "0x0438"
+        },
+        {
+          "code": "078B:01",
+          "desc": "1 Hit Destroys 1st Boss",
+          "address": "0x078B"
+        },
+        {
+          "code": "0050:00",
+          "desc": "Act Modifier",
+          "address": "0x0050"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

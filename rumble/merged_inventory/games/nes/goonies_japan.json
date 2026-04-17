@@ -1,0 +1,95 @@
+{
+  "system": "nes",
+  "normalized_title": "goonies",
+  "display_name": "Goonies (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Goonies (Japan).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 15,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "00A1:18",
+          "desc": "Infinite Health",
+          "address": "0x00A1"
+        },
+        {
+          "code": "0046:03",
+          "desc": "Infinite Lives",
+          "address": "0x0046"
+        },
+        {
+          "code": "05F6:40",
+          "desc": "Invincibility",
+          "address": "0x05F6"
+        },
+        {
+          "code": "0090:80",
+          "desc": "Infinite Time",
+          "address": "0x0090"
+        },
+        {
+          "code": "05F3:FA",
+          "desc": "Set Infinite Bombs",
+          "address": "0x05F3"
+        },
+        {
+          "code": "05DF:04",
+          "desc": "Set Infinite Keys",
+          "address": "0x05DF"
+        },
+        {
+          "code": "0049:FF",
+          "desc": "Set All Equipment",
+          "address": "0x0049"
+        },
+        {
+          "code": "05D8:03",
+          "desc": "Set Max. Diamonds",
+          "address": "0x05D8"
+        },
+        {
+          "code": "05D6:07",
+          "desc": "Set Max. Goonies Rescued",
+          "address": "0x05D6"
+        },
+        {
+          "code": "AVIOOI",
+          "desc": "Invincibility",
+          "address": "0x05E1"
+        },
+        {
+          "code": "OZEALLVK",
+          "desc": "Infinite Lives",
+          "address": "0x032B"
+        },
+        {
+          "code": "SSOOUZVI",
+          "desc": "Freeze Time",
+          "address": "0x02DB"
+        },
+        {
+          "code": "05F2:64",
+          "desc": "Set Infinite Slingshot (99)",
+          "address": "0x05F2"
+        },
+        {
+          "code": "AEOEPOUY",
+          "desc": "Skip Title Scroll",
+          "address": "0x0189"
+        },
+        {
+          "code": "SXNPTZAX",
+          "desc": "Walk Through Walls",
+          "address": "0x022E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

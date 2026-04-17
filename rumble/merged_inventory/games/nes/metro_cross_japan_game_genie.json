@@ -1,0 +1,57 @@
+{
+  "system": "nes",
+  "normalized_title": "metrocross",
+  "display_name": "Metro-Cross (Japan) (Game Genie)",
+  "aliases": [
+    "Metro-Cross (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Metro-Cross (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "0774:64",
+          "desc": "Infinite Time",
+          "address": "0x0774"
+        },
+        {
+          "code": "079E:01",
+          "desc": "Infinite Drinks",
+          "address": "0x079E"
+        },
+        {
+          "code": "0506:34",
+          "desc": "FAKE Infinite Time (One's Digit)",
+          "address": "0x0506"
+        },
+        {
+          "code": "0774:37",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x0774"
+        },
+        {
+          "code": "007D:00",
+          "desc": "Nothing Can Stop You Speed Modifier",
+          "address": "0x007D"
+        },
+        {
+          "code": "0716:00",
+          "desc": "Light Blue Squares Don't Slow You Down",
+          "address": "0x0716"
+        },
+        {
+          "code": "07B4:00",
+          "desc": "Round Modifier",
+          "address": "0x07B4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

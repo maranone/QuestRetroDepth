@@ -1,0 +1,6 @@
+game_name=Caesars Palace (USA) (Action Replay)
+game_key=caesars_palace_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ffcdd2	pickup	0xFFCDD2	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffcdd0	pickup	0xFFCDD0	1	uint	little	prev != curr	0.8	1	right:0.250:18

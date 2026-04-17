@@ -1,0 +1,29 @@
+{
+  "system": "gb",
+  "normalized_title": "burningpaper",
+  "display_name": "Burning Paper (Japan) (Game Genie)",
+  "aliases": [
+    "Burning Paper (Japan) (GameShark)",
+    "Burning Paper (Japan) (Xploder)",
+    "Burning Paper (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Burning Paper (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0122C4F3",
+          "desc": "Immer nur 1 Bug zu besiegen",
+          "address": "0xC4F3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

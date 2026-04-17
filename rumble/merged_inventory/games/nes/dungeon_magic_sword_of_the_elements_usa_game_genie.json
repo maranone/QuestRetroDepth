@@ -1,0 +1,52 @@
+{
+  "system": "nes",
+  "normalized_title": "dungeonmagicswordofelements",
+  "display_name": "Dungeon Magic - Sword of the Elements (USA) (Game Genie)",
+  "aliases": [
+    "Dungeon Magic - Sword of the Elements (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dungeon Magic - Sword of the Elements (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "00DC:FF",
+          "desc": "Infinite Health",
+          "address": "0x00DC"
+        },
+        {
+          "code": "004B:FF",
+          "desc": "Max/Infinite EXP",
+          "address": "0x004B"
+        },
+        {
+          "code": "004C:FF",
+          "desc": "Max/Infinite EXP",
+          "address": "0x004C"
+        },
+        {
+          "code": "0040:FF",
+          "desc": "Max/Infinite Gold",
+          "address": "0x0040"
+        },
+        {
+          "code": "00DB:00",
+          "desc": "Enemy Has Little Health",
+          "address": "0x00DB"
+        },
+        {
+          "code": "004A:09",
+          "desc": "Character Starts At Level 9",
+          "address": "0x004A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

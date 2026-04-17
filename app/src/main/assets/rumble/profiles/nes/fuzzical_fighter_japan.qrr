@@ -1,0 +1,14 @@
+game_name=Fuzzical Fighter (Japan)
+game_key=fuzzical_fighter_japan
+system=nes
+integration_tier=contrib
+trigger	level_complete_level_0015	level_complete	0x0015	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	pickup_coins_002b	pickup	0x002B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_002c	pickup	0x002C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_0450	damage_taken	0x0450	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0450	death	0x0450	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0026	damage_taken	0x0026	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0026	death	0x0026	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0652	damage_taken	0x0652	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0652	death	0x0652	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0654	pickup	0x0654	1	uint	little	prev != curr	0.8	1	right:0.250:18

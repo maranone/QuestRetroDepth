@@ -1,0 +1,39 @@
+{
+  "system": "gb",
+  "normalized_title": "streetfighterii",
+  "display_name": "Street Fighter II (USA, Europe) (Rev 1) (SGB Enhanced)",
+  "aliases": [
+    "Street Fighter II (USA, Europe) (Rev 1) (SGB Enhanced)",
+    "Street Fighter II (World) (Game Genie)",
+    "Street Fighter II (World) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Street Fighter II (World) (GameShark).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0170C0C0",
+          "desc": "P1 Invincible",
+          "address": "0xC0C0"
+        },
+        {
+          "code": "0120C0C0",
+          "desc": "P1 Invincible",
+          "address": "0xC0C0"
+        },
+        {
+          "code": "0120C0C1",
+          "desc": "P2 Invincible",
+          "address": "0xC0C1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

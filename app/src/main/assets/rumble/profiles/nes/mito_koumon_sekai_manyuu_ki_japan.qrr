@@ -1,0 +1,12 @@
+game_name=Mito Koumon - Sekai Manyuu Ki (Japan)
+game_key=mito_koumon_sekai_manyuu_ki_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0632	damage_taken	0x0632	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0632	death	0x0632	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04dc	damage_taken	0x04DC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04dc	death	0x04DC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04f4	damage_taken	0x04F4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04f4	death	0x04F4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04f5	damage_taken	0x04F5	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04f5	death	0x04F5	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

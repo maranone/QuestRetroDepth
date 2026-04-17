@@ -1,0 +1,175 @@
+{
+  "system": "nes",
+  "normalized_title": "biosenshidanincreasertonotatakai",
+  "display_name": "Bio Senshi Dan - Increaser Tono Tatakai (Japan)",
+  "aliases": [
+    "Bio Senshi Dan - Increaser Tono Tatakai (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\biosenshidanincreasertonotatakai_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0720",
+        "0x0722",
+        "0x0727"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BioSenshiDanIncreaserTonoTatakai-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0720",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0727",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0722",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bio Senshi Dan - Increaser Tono Tatakai (Japan).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 23,
+      "distinct_address_count": 22,
+      "sample_raw_entries": [
+        {
+          "code": "0720:0A",
+          "desc": "Infinite Energy",
+          "address": "0x0720"
+        },
+        {
+          "code": "0603:00",
+          "desc": "Invincibility",
+          "address": "0x0603"
+        },
+        {
+          "code": "SXUOIVSE",
+          "desc": "Infinite Energy",
+          "address": "0x06AD"
+        },
+        {
+          "code": "SXEOYOSE",
+          "desc": "No Queen Vitality",
+          "address": "0x01AF"
+        },
+        {
+          "code": "SZEAZXSE",
+          "desc": "Infinite Gold",
+          "address": "0x022A"
+        },
+        {
+          "code": "0180:03",
+          "desc": "Infinite Gold",
+          "address": "0x0180"
+        },
+        {
+          "code": "0181:E7",
+          "desc": "Infinite Gold",
+          "address": "0x0181"
+        },
+        {
+          "code": "0727:09",
+          "desc": "Infinite Lives",
+          "address": "0x0727"
+        },
+        {
+          "code": "0096:01",
+          "desc": "Heat Knife Power Up",
+          "address": "0x0096"
+        },
+        {
+          "code": "0097:01",
+          "desc": "Heat Spud Gun Power Up",
+          "address": "0x0097"
+        },
+        {
+          "code": "0095:FF",
+          "desc": "All Weapons",
+          "address": "0x0095"
+        },
+        {
+          "code": "0185:7F",
+          "desc": "All Items",
+          "address": "0x0185"
+        },
+        {
+          "code": "APVEAAAO",
+          "desc": "Start With Max Health",
+          "address": "0x0098"
+        },
+        {
+          "code": "SAXELESX",
+          "desc": "Start With Heat Knife And Spud Gun Power Up",
+          "address": "0x008B"
+        },
+        {
+          "code": "SZEPGNSE",
+          "desc": "Infinite Health When Fighting Bosses",
+          "address": "0x072C"
+        },
+        {
+          "code": "ASOPPGEI",
+          "desc": "Invincible To Enemies",
+          "address": "0x0459"
+        },
+        {
+          "code": "AIXPEPEI",
+          "desc": "Invincible To Spikes",
+          "address": "0x0158"
+        },
+        {
+          "code": "ASSPLGEI",
+          "desc": "Invincible To Bosses",
+          "address": "0x045B"
+        },
+        {
+          "code": "SENENPXA",
+          "desc": "Jump Higher While Standing",
+          "address": "0x018F"
+        },
+        {
+          "code": "EOVOGAKE",
+          "desc": "Jump Higher While Walking",
+          "address": "0x009C"
+        },
+        {
+          "code": "EPEOIPUE",
+          "desc": "Jump Higher While Walking",
+          "address": "0x019D"
+        },
+        {
+          "code": "0720:18",
+          "desc": "Infinite Health",
+          "address": "0x0720"
+        },
+        {
+          "code": "00D2:FF",
+          "desc": "Untouchable",
+          "address": "0x00D2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "system": "gb",
+  "normalized_title": "radarmission",
+  "display_name": "Radar Mission (USA, Europe)",
+  "aliases": [
+    "Radar Mission (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Radar Mission (USA, Europe).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0100D7FF",
+          "desc": "Attack To Beat A Stage Automatically",
+          "address": "0xD7FF"
+        },
+        {
+          "code": "0100D8FF",
+          "desc": "Attack To Beat A Stage Automatically",
+          "address": "0xD8FF"
+        },
+        {
+          "code": "0100D9FF",
+          "desc": "Attack To Beat A Stage Automatically",
+          "address": "0xD9FF"
+        },
+        {
+          "code": "0100DAFF",
+          "desc": "Attack To Beat A Stage Automatically",
+          "address": "0xDAFF"
+        },
+        {
+          "code": "0100DBFF",
+          "desc": "Attack To Beat A Stage Automatically",
+          "address": "0xDBFF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

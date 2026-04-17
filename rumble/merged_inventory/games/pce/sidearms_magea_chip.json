@@ -1,0 +1,42 @@
+{
+  "system": "pce",
+  "normalized_title": "sidearms",
+  "display_name": "Sidearms (Magea Chip)",
+  "aliases": [
+    "SideArms (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\SideArms (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f006c:90",
+          "desc": "Infinite Lives",
+          "address": "0x1F006C"
+        },
+        {
+          "code": "1f0625:14",
+          "desc": "Invincibility",
+          "address": "0x1F0625"
+        },
+        {
+          "code": "1f0636:03",
+          "desc": "Max Gun Upgrade",
+          "address": "0x1F0636"
+        },
+        {
+          "code": "1f0070:09",
+          "desc": "Infinite Credits",
+          "address": "0x1F0070"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

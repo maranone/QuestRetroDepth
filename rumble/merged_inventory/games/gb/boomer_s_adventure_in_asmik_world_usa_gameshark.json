@@ -1,0 +1,33 @@
+{
+  "system": "gb",
+  "normalized_title": "boomersadventureinasmikworld",
+  "display_name": "Boomer's Adventure in ASMIK World (USA) (GameShark)",
+  "aliases": [
+    "Boomer's Adventure in ASMIK World (USA) (Xploder)",
+    "Boomer's Adventure in ASMIK World (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Boomer's Adventure in ASMIK World (USA).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0103DFC0",
+          "desc": "Infinite Lives",
+          "address": "0xDFC0"
+        },
+        {
+          "code": "01A9DCC0",
+          "desc": "Infinite Time",
+          "address": "0xDCC0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

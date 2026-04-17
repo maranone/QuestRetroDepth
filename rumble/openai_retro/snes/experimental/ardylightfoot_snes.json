@@ -1,0 +1,166 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "ArdyLightfoot",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\experimental\\ArdyLightfoot-Snes\\data.json",
+    "integration_tier": "experimental",
+    "game_key": "ArdyLightfoot-Snes"
+  },
+  "triggers": [
+    {
+      "id": "game_over_gameover_3023",
+      "event": "game_over",
+      "watch": [
+        {
+          "absolute_address": "0x7F3023",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "bank": "7F",
+          "address": "0x3023",
+          "wram_offset": 77859
+        }
+      ],
+      "condition": "prev == 0 && curr != 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Explicit game-over flag.",
+      "source_fields": [
+        {
+          "name": "gameover",
+          "address": "0x7F3023",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_lives_0c36",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0x7F0C36",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7F",
+          "address": "0x0C36",
+          "wram_offset": 68662
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x7F0C36",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_0c36",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0x7F0C36",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7F",
+          "address": "0x0C36",
+          "wram_offset": 68662
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x7F0C36",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_0c34",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7F0C34",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "bank": "7F",
+          "address": "0x0C34",
+          "wram_offset": 68660
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score ",
+          "address": "0x7F0C34",
+          "raw_type": "|i1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

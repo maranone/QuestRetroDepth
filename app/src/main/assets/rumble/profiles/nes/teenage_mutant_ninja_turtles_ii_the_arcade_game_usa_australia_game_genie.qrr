@@ -1,0 +1,6 @@
+game_name=Teenage Mutant Ninja Turtles II - The Arcade Game (USA, Australia) (Game Genie)
+game_key=teenage_mutant_ninja_turtles_ii_the_arcade_game_usa_australia_game_genie
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_030b	life_lost	0x030B	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_030b	life_gained	0x030B	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

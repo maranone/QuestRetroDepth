@@ -1,0 +1,8 @@
+game_name=1943 - The Battle of Midway (USA) (Game Genie)
+game_key=1943_the_battle_of_midway_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0411	damage_taken	0x0411	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0411	death	0x0411	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0412	damage_taken	0x0412	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0412	death	0x0412	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

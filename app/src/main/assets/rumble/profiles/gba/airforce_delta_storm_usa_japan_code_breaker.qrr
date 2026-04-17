@@ -1,0 +1,6 @@
+game_name=AirForce Delta Storm (USA, Japan) (Code Breaker)
+game_key=airforce_delta_storm_usa_japan_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_0200020c	score	0x0200020C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0200020e	score	0x0200020E	1	uint	little	prev < curr	0.8	1	right:0.350:60

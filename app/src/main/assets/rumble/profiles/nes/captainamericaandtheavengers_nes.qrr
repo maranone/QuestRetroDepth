@@ -1,0 +1,7 @@
+game_name=Captain America and the Avengers (USA, Australia) (Game Genie)
+game_key=CaptainAmericaAndTheAvengers-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_03d9	damage_taken	0x03D9	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03d9	death	0x03D9	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_03e3	score	0x03E3	2	uint	big	prev < curr	0.8	1	right:0.350:60

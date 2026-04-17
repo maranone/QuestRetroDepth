@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "justiceleagueinjusticeforall",
+  "display_name": "Justice League - Injustice for All (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Justice League - Injustice for All (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "100058A0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020058A0"
+        },
+        {
+          "code": "8300190C",
+          "desc": "Max Blue Coins",
+          "address": "0x0200190C"
+        },
+        {
+          "code": "83001D60",
+          "desc": "Infinite Lives",
+          "address": "0x02001D60"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Justice League - Injustice for All (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "100058A0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020058A0"
+        },
+        {
+          "code": "8300190C",
+          "desc": "Max Blue Coins",
+          "address": "0x0200190C"
+        },
+        {
+          "code": "83001D60",
+          "desc": "Infinite Lives",
+          "address": "0x02001D60"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

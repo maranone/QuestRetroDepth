@@ -1,0 +1,22 @@
+game_name=BS Dragon Quest (J)
+game_key=bs_dragon_quest_j
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_0c81	pickup	0x7E0C81	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0c82	pickup	0x7E0C82	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0c83	pickup	0x7E0C83	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_0c39	damage_taken	0x7E0C39	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0c39	death	0x7E0C39	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0c2c	damage_taken	0x7E0C2C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0c2c	death	0x7E0C2C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0c2d	damage_taken	0x7E0C2D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0c2d	death	0x7E0C2D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0cbe	pickup	0x7E0CBE	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0cbf	pickup	0x7E0CBF	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0cc0	pickup	0x7E0CC0	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0cc1	pickup	0x7E0CC1	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0cc2	pickup	0x7E0CC2	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0cc3	pickup	0x7E0CC3	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0cc4	pickup	0x7E0CC4	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0cc5	pickup	0x7E0CC5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0cc6	pickup	0x7E0CC6	1	uint	little	prev != curr	0.8	1	right:0.250:18

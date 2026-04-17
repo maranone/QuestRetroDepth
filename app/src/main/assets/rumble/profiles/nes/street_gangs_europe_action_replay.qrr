@@ -1,0 +1,7 @@
+game_name=Street Gangs (Europe) (Action Replay)
+game_key=street_gangs_europe_action_replay
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_04ca	pickup	0x04CA	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_04cb	pickup	0x04CB	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_04cc	pickup	0x04CC	1	uint	little	prev != curr	0.8	1	right:0.250:18

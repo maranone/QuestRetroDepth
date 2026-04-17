@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "powerleague",
+  "display_name": "Power League (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Power League (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f0349:63",
+          "desc": "P1 Scores x99",
+          "address": "0x1F0349"
+        },
+        {
+          "code": "1f034a:00",
+          "desc": "CPU Never Scores (Pennant Mode)",
+          "address": "0x1F034A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

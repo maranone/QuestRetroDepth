@@ -1,0 +1,30 @@
+{
+  "system": "gbc",
+  "normalized_title": "bombermanmaxredchallenger",
+  "display_name": "Bomberman Max - Red Challenger (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Bomberman Max - Red Challenger (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0100D0C2",
+          "desc": "World Modifier [00-04]",
+          "address": "0xD0C2"
+        },
+        {
+          "code": "0100D1C2",
+          "desc": "Level Modifier [00-03]",
+          "address": "0xD1C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

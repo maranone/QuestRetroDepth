@@ -1,0 +1,19 @@
+game_name=Spider-Man . Venom - Maximum Carnage (World) (Action Replay)
+game_key=spider_man_venom_maximum_carnage_world_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff0966	damage_taken	0xFF0966	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff0966	death	0xFF0966	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ff077e	life_lost	0xFF077E	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff077e	life_gained	0xFF077E	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_ff0bbe	enemy_defeated	0xFF0BBE	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0b46	enemy_defeated	0xFF0B46	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0cae	enemy_defeated	0xFF0CAE	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0c36	enemy_defeated	0xFF0C36	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0d26	enemy_defeated	0xFF0D26	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	level_complete_level_ff07fc	level_complete	0xFF07FC	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_ff0b6a	enemy_defeated	0xFF0B6A	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0b6c	enemy_defeated	0xFF0B6C	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0b6e	enemy_defeated	0xFF0B6E	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0be2	enemy_defeated	0xFF0BE2	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0be4	enemy_defeated	0xFF0BE4	1	uint	little	prev > curr	0.65	1	right:0.450:35

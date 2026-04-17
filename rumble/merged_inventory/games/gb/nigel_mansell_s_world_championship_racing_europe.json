@@ -1,0 +1,30 @@
+{
+  "system": "gb",
+  "normalized_title": "nigelmansellsworldchampionshipracing",
+  "display_name": "Nigel Mansell's World Championship Racing (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Nigel Mansell's World Championship Racing (Europe).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0101C0C2",
+          "desc": "1st Place Single",
+          "address": "0xC0C2"
+        },
+        {
+          "code": "0101DCC4",
+          "desc": "1st Place Mansell",
+          "address": "0xDCC4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "tecmocupsoccergame",
+  "display_name": "Tecmo Cup - Soccer Game (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tecmo Cup - Soccer Game (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "05E0:00",
+          "desc": "1st Player Score Modifier",
+          "address": "0x05E0"
+        },
+        {
+          "code": "05E1:00",
+          "desc": "2nd Player / CPU Score Modifier",
+          "address": "0x05E1"
+        },
+        {
+          "code": "06A1:A7",
+          "desc": "Infinite Time",
+          "address": "0x06A1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

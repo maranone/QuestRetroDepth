@@ -1,0 +1,98 @@
+{
+  "system": "nes",
+  "normalized_title": "insectorx",
+  "display_name": "Insector X (Japan)",
+  "aliases": [
+    "Insector X (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\insectorx_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00D8",
+        "0x00D9"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\InsectorX-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x00D8",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x00D9",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Insector X (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "00CA:00",
+          "desc": "Invincible",
+          "address": "0x00CA"
+        },
+        {
+          "code": "00D8:03",
+          "desc": "Infinite Lives",
+          "address": "0x00D8"
+        },
+        {
+          "code": "00CC:06",
+          "desc": "Max Shot Powerup",
+          "address": "0x00CC"
+        },
+        {
+          "code": "00CE:03",
+          "desc": "Speed Modifier",
+          "address": "0x00CE"
+        },
+        {
+          "code": "003C:00",
+          "desc": "Character Color Modifier",
+          "address": "0x003C"
+        },
+        {
+          "code": "00C9:00",
+          "desc": "Character Modifier",
+          "address": "0x00C9"
+        },
+        {
+          "code": "00CB:80",
+          "desc": "Rocket Rider",
+          "address": "0x00CB"
+        },
+        {
+          "code": "00CD:BE",
+          "desc": "Rocket Shot Modifier",
+          "address": "0x00CD"
+        },
+        {
+          "code": "ENKAEAEI",
+          "desc": "Invincibility",
+          "address": "0x0078"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

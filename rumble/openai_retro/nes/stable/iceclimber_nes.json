@@ -1,0 +1,157 @@
+{
+  "schema": "qrd.rumble.nes.v1",
+  "game": {
+    "name": "IceClimber",
+    "system": "nes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\IceClimber-Nes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "IceClimber-Nes"
+  },
+  "triggers": [
+    {
+      "id": "life_lost_lives_0020",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0x0020",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "address": "0x0020",
+          "ram_offset": 32
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x0020",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_0020",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0x0020",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "address": "0x0020",
+          "ram_offset": 32
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x0020",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_07f0",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x07F0",
+          "size": 4,
+          "value_type": "bcd",
+          "byte_order": "big",
+          "raw_type": ">d4",
+          "address": "0x07F0",
+          "ram_offset": 2032
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0x07F0",
+          "raw_type": ">d4"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "birds_hit",
+      "meta": {
+        "address": 867,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "bricks_hit",
+      "meta": {
+        "address": 868,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "eggplant_hit",
+      "meta": {
+        "address": 865,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "ice_hit",
+      "meta": {
+        "address": 866,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

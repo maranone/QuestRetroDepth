@@ -1,0 +1,27 @@
+{
+  "system": "gb",
+  "normalized_title": "knightquest",
+  "display_name": "Knight Quest (USA, Japan) (GameShark)",
+  "aliases": [
+    "Knight Quest (USA, Japan) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Knight Quest (USA, Japan) (GameShark).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0114C0C1",
+          "desc": "Infinite Health",
+          "address": "0xC0C1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

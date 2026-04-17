@@ -1,0 +1,104 @@
+{
+  "system": "nes",
+  "normalized_title": "stinger",
+  "display_name": "Stinger (USA) (Game Genie)",
+  "aliases": [
+    "Stinger (USA) (Game Genie)",
+    "Stinger (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\stinger_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0038",
+        "0x07EC"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Stinger-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0038",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x07EC",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Stinger (USA).cht",
+      "total_cheat_rows": 28,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0038:09",
+          "desc": "Infinite Lives",
+          "address": "0x0038"
+        },
+        {
+          "code": "0056:80",
+          "desc": "1st Player Invincibility",
+          "address": "0x0056"
+        },
+        {
+          "code": "0057:80",
+          "desc": "2nd Player Invincibility",
+          "address": "0x0057"
+        },
+        {
+          "code": "0058:80",
+          "desc": "3rd Player Invincibility",
+          "address": "0x0058"
+        },
+        {
+          "code": "0038:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x0038"
+        },
+        {
+          "code": "0039:09",
+          "desc": "Infinite Lives P2",
+          "address": "0x0039"
+        },
+        {
+          "code": "0047:00",
+          "desc": "Weapon Modifier",
+          "address": "0x0047"
+        },
+        {
+          "code": "00DD:01",
+          "desc": "Stage Modifier",
+          "address": "0x00DD"
+        },
+        {
+          "code": "00DE:01",
+          "desc": "Stage Modifier",
+          "address": "0x00DE"
+        },
+        {
+          "code": "0775:0E",
+          "desc": "One Hit Kills Boss",
+          "address": "0x0775"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "system": "nes",
+  "normalized_title": "heroquest",
+  "display_name": "HeroQuest (USA) (Proto)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\HeroQuest (USA) (Proto).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 20,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "0084:FF",
+          "desc": "Infinite Steps",
+          "address": "0x0084"
+        },
+        {
+          "code": "009A:FF",
+          "desc": "Infinite Body Points",
+          "address": "0x009A"
+        },
+        {
+          "code": "008D:FF",
+          "desc": "Infinite Gold",
+          "address": "0x008D"
+        },
+        {
+          "code": "008E:FF",
+          "desc": "Infinite Gold",
+          "address": "0x008E"
+        },
+        {
+          "code": "009B:FF",
+          "desc": "Infinite Body Points",
+          "address": "0x009B"
+        },
+        {
+          "code": "008F:FF",
+          "desc": "Max Gold",
+          "address": "0x008F"
+        },
+        {
+          "code": "0090:FF",
+          "desc": "Max Gold",
+          "address": "0x0090"
+        },
+        {
+          "code": "00B1:00",
+          "desc": "Equipped Armor Modifier",
+          "address": "0x00B1"
+        },
+        {
+          "code": "009C:FF",
+          "desc": "Infinite Body Points",
+          "address": "0x009C"
+        },
+        {
+          "code": "0091:FF",
+          "desc": "Infinite Gold",
+          "address": "0x0091"
+        },
+        {
+          "code": "0092:FF",
+          "desc": "Infinite Gold",
+          "address": "0x0092"
+        },
+        {
+          "code": "00B2:00",
+          "desc": "Equipped Armor Modifier",
+          "address": "0x00B2"
+        },
+        {
+          "code": "00C1:00",
+          "desc": "Spell modifier 1",
+          "address": "0x00C1"
+        },
+        {
+          "code": "00C2:00",
+          "desc": "Spell Modifier 2",
+          "address": "0x00C2"
+        },
+        {
+          "code": "0093:FF",
+          "desc": "Infinite Gold",
+          "address": "0x0093"
+        },
+        {
+          "code": "0094:FF",
+          "desc": "Infinite Gold",
+          "address": "0x0094"
+        },
+        {
+          "code": "00B3:00",
+          "desc": "Equipped Armor Modifier",
+          "address": "0x00B3"
+        },
+        {
+          "code": "00C2:00",
+          "desc": "Spell Modifier 1",
+          "address": "0x00C2"
+        },
+        {
+          "code": "00C3:00",
+          "desc": "Spell Modifier 2",
+          "address": "0x00C3"
+        },
+        {
+          "code": "009D:FF",
+          "desc": "Infinite Body Points",
+          "address": "0x009D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

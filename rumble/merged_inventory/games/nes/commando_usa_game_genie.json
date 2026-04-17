@@ -1,0 +1,47 @@
+{
+  "system": "nes",
+  "normalized_title": "commando",
+  "display_name": "Commando (USA) (Game Genie)",
+  "aliases": [
+    "Commando (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Commando (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "049C:09",
+          "desc": "Infinite Lives",
+          "address": "0x049C"
+        },
+        {
+          "code": "04A6:09",
+          "desc": "Infinite Grenades",
+          "address": "0x04A6"
+        },
+        {
+          "code": "04AB:E9",
+          "desc": "P1 & P2 Have All Power Ups",
+          "address": "0x04AB"
+        },
+        {
+          "code": "0074:00",
+          "desc": "P1 & P2 Rapid Fire",
+          "address": "0x0074"
+        },
+        {
+          "code": "049E:00",
+          "desc": "Area Modifier",
+          "address": "0x049E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

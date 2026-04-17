@@ -1,0 +1,33 @@
+{
+  "system": "gbc",
+  "normalized_title": "micromachinesv3",
+  "display_name": "Micro Machines V3 (USA, Europe) (GameShark)",
+  "aliases": [
+    "Micro Machines V3 (USA, Europe) (Xploder)",
+    "Micro Machines V3 (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Micro Machines V3 (USA, Europe).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0100DAC7",
+          "desc": "Stop Timer",
+          "address": "0xDAC7"
+        },
+        {
+          "code": "0100DDC7",
+          "desc": "Stop Timer",
+          "address": "0xDDC7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

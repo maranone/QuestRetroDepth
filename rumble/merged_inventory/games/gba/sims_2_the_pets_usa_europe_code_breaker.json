@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "sims2pets",
+  "display_name": "Sims 2, The - Pets (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Sims 2, The - Pets (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "8200B95C",
+          "desc": "Max & Infinite Money",
+          "address": "0x0200B95C"
+        },
+        {
+          "code": "8200B95E",
+          "desc": "Max & Infinite Money",
+          "address": "0x0200B95E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Sims 2, The - Pets (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "8200B95C",
+          "desc": "Max & Infinite Money",
+          "address": "0x0200B95C"
+        },
+        {
+          "code": "8200B95E",
+          "desc": "Max & Infinite Money",
+          "address": "0x0200B95E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

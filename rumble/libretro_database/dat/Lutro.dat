@@ -1,0 +1,83 @@
+clrmamepro (
+	name "Lutro"
+	description "Lutro"
+	comment "DAT file containing Lutro games."
+	version 0.1.0
+	date "2016-06-29"
+	author "libretro"
+	homepage https://github.com/libretro/libretro-lutro
+	url https://github.com/libretro/libretro-lutro
+)
+
+game (
+	name "Deep Dungeon"
+	description "Deep Dungeon"
+	developer "Jean-André Santoni"
+	rom ( name "lutro-deepdungeon.lutro" size 1032395 )
+)
+
+game (
+	name "Game of Life"
+	description "Game of Life"
+	rom ( name "game-of-life.lutro" size 2207 )
+)
+
+game (
+	name "In Your Face City Trains"
+	description "In Your Face City Trains"
+	developer "Tangram Games"
+	rom ( name "lutro-iyfct.lutro" size 1729829 )
+)
+
+game (
+	name "Platformer"
+	description "Platformer"
+	developer "Jean-André Santoni"
+	rom ( name "lutro-platformer.lutro" size 1048975 )
+)
+
+game (
+	name "Pong"
+	description "Pong"
+	developer "Rob Loach"
+	genre "Action"
+	users 1
+	publisher "libretro"
+	releasemonth 3
+	releaseyear 2015
+	releaseday 10
+	rom ( name "lutro-pong.lutro" size 63530 )
+)
+
+game (
+	name "Sienna"
+	description "Sienna"
+	developer "Tangram Games"
+	rom ( name "lutro-sienna.lutro" size 1646071 )
+)
+
+game (
+	name "Snake"
+	description "Snake"
+	developer "Jean-André Santoni"
+	rom ( name "lutro-snake.lutro" size 1739 )
+)
+
+game (
+	name "Spaceship"
+	description "Spaceship"
+	developer "Jean-André Santoni"
+	rom ( name "lutro-spaceship.lutro" size 642195 )
+)
+
+game (
+	name "Tetris"
+	description "Tetris"
+	rom ( name "lutro-tetris.lutro" size 1485936 )
+)
+
+game (
+	name "Lutris Launcher"
+	description "Lutris Launcher"
+	rom ( name "love-lutris.lutro" )
+)

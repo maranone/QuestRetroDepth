@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "lingjiehufa",
+  "display_name": "Ling Jie Hu Fa",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ling Jie Hu Fa.cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0428:05",
+          "desc": "Infinite Energy",
+          "address": "0x0428"
+        },
+        {
+          "code": "006B:01",
+          "desc": "Start on X level",
+          "address": "0x006B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

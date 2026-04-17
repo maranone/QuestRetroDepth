@@ -1,6 +1,0 @@
-game_name=AdventuresOfBatmanandRobinThe
-game_key=AdventuresOfBatmanandRobinThe-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_58	damage_taken	0x7E0058	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	enemy_defeated_1_6a	enemy_defeated	0x7E006A	1	uint	native	prev != curr	0.7	1	left:0.510:100

@@ -1,0 +1,117 @@
+{
+  "system": "nes",
+  "normalized_title": "renstimpyshowbuckeroo",
+  "display_name": "Ren _ Stimpy Show, The - Buckeroo$! (USA) (Game Genie)",
+  "aliases": [
+    "Ren _ Stimpy Show, The - Buckeroo$! (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ren _ Stimpy Show, The - Buckeroo$! (USA).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 19,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "PEUAPZLA",
+          "desc": "Start with 2 lives",
+          "address": "0x0209"
+        },
+        {
+          "code": "IEUAPZLA",
+          "desc": "Start with 6 lives",
+          "address": "0x0209"
+        },
+        {
+          "code": "YEUAPZLA",
+          "desc": "Start with 8 lives",
+          "address": "0x0209"
+        },
+        {
+          "code": "PEUAPZLE",
+          "desc": "Start with 10 lives",
+          "address": "0x0209"
+        },
+        {
+          "code": "VNXELSSO",
+          "desc": "Start with $11 instead of 0",
+          "address": "0x05FB"
+        },
+        {
+          "code": "OUEAXXOO",
+          "desc": "Infinite collectibles",
+          "address": "0x023A"
+        },
+        {
+          "code": "OZEEPYES",
+          "desc": "Start on Rescue the Maiden level",
+          "address": "0x07A9"
+        },
+        {
+          "code": "PAEEZYZZ",
+          "desc": "Start on Rescue the Maiden level",
+          "address": "0x078A"
+        },
+        {
+          "code": "OZEEPYES",
+          "desc": "Start on Out West level",
+          "address": "0x07A9"
+        },
+        {
+          "code": "PAEEZYZZ",
+          "desc": "Start on Out West level",
+          "address": "0x078A"
+        },
+        {
+          "code": "SAEELNVV",
+          "desc": "Start on Out West level",
+          "address": "0x078B"
+        },
+        {
+          "code": "OZEEPYES",
+          "desc": "Start on Robin Hoek level",
+          "address": "0x07A9"
+        },
+        {
+          "code": "ZAEEZYZZ",
+          "desc": "Start on Robin Hoek level",
+          "address": "0x078A"
+        },
+        {
+          "code": "SAEELNVV",
+          "desc": "Start on Robin Hoek level",
+          "address": "0x078B"
+        },
+        {
+          "code": "07A3:14",
+          "desc": "Infinite Energy",
+          "address": "0x07A3"
+        },
+        {
+          "code": "0744:FF",
+          "desc": "Fly",
+          "address": "0x0744"
+        },
+        {
+          "code": "05E5:09",
+          "desc": "Infinite Lives",
+          "address": "0x05E5"
+        },
+        {
+          "code": "07B9:00",
+          "desc": "Invincibility",
+          "address": "0x07B9"
+        },
+        {
+          "code": "07A3:14",
+          "desc": "Infinite Health",
+          "address": "0x07A3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

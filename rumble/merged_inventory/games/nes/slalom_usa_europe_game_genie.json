@@ -1,0 +1,38 @@
+{
+  "system": "nes",
+  "normalized_title": "slalom",
+  "display_name": "Slalom (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Slalom (USA)",
+    "Slalom (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Slalom (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "AAEPLIPA",
+          "desc": "No Track Obstacles",
+          "address": "0x050B"
+        },
+        {
+          "code": "XZXPATVZ",
+          "desc": "Timer At 5 Minutes For All Tracks",
+          "address": "0x0628"
+        },
+        {
+          "code": "PAXPPVPN",
+          "desc": "Timer At 5 Minutes For All Tracks",
+          "address": "0x0609"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

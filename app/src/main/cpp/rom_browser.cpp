@@ -27,11 +27,23 @@ static bool ci_ends_with(const char* name, const char* ext) {
 }
 
 static bool is_supported(const char* name) {
-    return ci_ends_with(name, ".smc") || ci_ends_with(name, ".sfc") ||
-           ci_ends_with(name, ".fig") || ci_ends_with(name, ".swc") ||
-           ci_ends_with(name, ".nes") || ci_ends_with(name, ".md")  ||
-           ci_ends_with(name, ".sms") || ci_ends_with(name, ".gg")  ||
-           ci_ends_with(name, ".zip") || ci_ends_with(name, ".7z");
+    // SNES
+    if (ci_ends_with(name, ".smc") || ci_ends_with(name, ".sfc") ||
+        ci_ends_with(name, ".fig") || ci_ends_with(name, ".swc")) return true;
+    // Genesis / SMS / Game Gear
+    if (ci_ends_with(name, ".md")  || ci_ends_with(name, ".gen") ||
+        ci_ends_with(name, ".smd") || ci_ends_with(name, ".sms") ||
+        ci_ends_with(name, ".gg"))  return true;
+    // NES
+    if (ci_ends_with(name, ".nes")) return true;
+    // GBA / GB / GBC
+    if (ci_ends_with(name, ".gba") || ci_ends_with(name, ".gb") ||
+        ci_ends_with(name, ".gbc")) return true;
+    // PC Engine
+    if (ci_ends_with(name, ".pce")) return true;
+    // Archives
+    if (ci_ends_with(name, ".zip") || ci_ends_with(name, ".7z")) return true;
+    return false;
 }
 
 // ---------------------------------------------------------------------------

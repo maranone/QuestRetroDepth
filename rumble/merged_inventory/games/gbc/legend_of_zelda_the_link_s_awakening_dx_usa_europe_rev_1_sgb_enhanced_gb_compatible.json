@@ -1,0 +1,66 @@
+{
+  "system": "gbc",
+  "normalized_title": "legendofzeldalinksawakeningdx",
+  "display_name": "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (Rev 1) (SGB Enhanced) (GB Compatible)",
+  "aliases": [
+    "Legend of Zelda, The - Link's Awakening DX (Germany) (SGB Enhanced) (GB Compatible)",
+    "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (Game Genie)",
+    "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (Rev 1) (SGB Enhanced) (GB Compatible)",
+    "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (Rev 2) (SGB Enhanced) (GB Compatible)",
+    "Legend of Zelda, The - Link's Awakening DX (USA, Europe) (SGB Enhanced) (GB Compatible)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Legend of Zelda, The - Link's Awakening DX (USA, Europe) (SGB Enhanced) (GB Compatible).cht",
+      "total_cheat_rows": 128,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0101D0DB",
+          "desc": "Infinite Small Keys",
+          "address": "0xD0DB"
+        },
+        {
+          "code": "0100CBFF",
+          "desc": "Rapid Fire",
+          "address": "0xCBFF"
+        },
+        {
+          "code": "0101CCDB",
+          "desc": "Map",
+          "address": "0xCCDB"
+        },
+        {
+          "code": "0101CDDB",
+          "desc": "Compass",
+          "address": "0xCDDB"
+        },
+        {
+          "code": "0101CEDB",
+          "desc": "Stone Beak",
+          "address": "0xCEDB"
+        },
+        {
+          "code": "013CC7DB",
+          "desc": "Invincible",
+          "address": "0xC7DB"
+        },
+        {
+          "code": "0134C7DB",
+          "desc": "Become Dark Link",
+          "address": "0xC7DB"
+        },
+        {
+          "code": "0170C8DB",
+          "desc": "Spider Man Link",
+          "address": "0xC8DB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

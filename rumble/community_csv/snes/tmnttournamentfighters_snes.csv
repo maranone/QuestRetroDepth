@@ -2,5 +2,5 @@
 # game_name=TmntTournamentFighters
 # match_names=tmnttournamentfighters|tmnttournamentfighterssnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-damage_taken_0_ee4,0x7E0EE4,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
-damage_taken_1_fc4,0x7E0FC4,1,uint,prev_gt_curr,,right,0.750,normal,0,180,100,70,
+damage_taken_0_ee4,0x7E0EE4,1,uint,prev_gt_curr,,left,0.78,fade_out,0,180,80,70,
+damage_taken_1_fc4,0x7E0FC4,1,uint,prev_gt_curr,,right,0.78,fade_out,0,180,80,70,

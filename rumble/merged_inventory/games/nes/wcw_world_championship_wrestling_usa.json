@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "wcwworldchampionshipwrestling",
+  "display_name": "WCW World Championship Wrestling (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\WCW World Championship Wrestling (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "0104:00",
+          "desc": "Character Modifier P1",
+          "address": "0x0104"
+        },
+        {
+          "code": "0106:00",
+          "desc": "Character Modifier P2",
+          "address": "0x0106"
+        },
+        {
+          "code": "00BE:03",
+          "desc": "Instant 3-Count",
+          "address": "0x00BE"
+        },
+        {
+          "code": "00CE:00",
+          "desc": "Infinite Time Out of the Ring",
+          "address": "0x00CE"
+        },
+        {
+          "code": "00CF:00",
+          "desc": "Infinite Time Out of the Ring",
+          "address": "0x00CF"
+        },
+        {
+          "code": "00AC:09",
+          "desc": "Infinite Time",
+          "address": "0x00AC"
+        },
+        {
+          "code": "00AD:05",
+          "desc": "Infinite Time",
+          "address": "0x00AD"
+        },
+        {
+          "code": "00AE:09",
+          "desc": "Infinite Time",
+          "address": "0x00AE"
+        },
+        {
+          "code": "00AF:09",
+          "desc": "Infinite Time",
+          "address": "0x00AF"
+        },
+        {
+          "code": "0508:FF",
+          "desc": "Player 1 Has Infinite Health",
+          "address": "0x0508"
+        },
+        {
+          "code": "0518:00",
+          "desc": "Player 2 Has No Health",
+          "address": "0x0518"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

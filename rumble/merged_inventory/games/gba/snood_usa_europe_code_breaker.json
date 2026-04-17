@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "snood",
+  "display_name": "Snood (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Snood (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10003A20",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003A20"
+        },
+        {
+          "code": "33000158",
+          "desc": "Never Drown",
+          "address": "0x02000158"
+        },
+        {
+          "code": "33000120",
+          "desc": "Never Drown (Time Attack)",
+          "address": "0x02000120"
+        },
+        {
+          "code": "33000EA8",
+          "desc": "Infinite Lives",
+          "address": "0x02000EA8"
+        },
+        {
+          "code": "83000E8C",
+          "desc": "Quick Score Gain",
+          "address": "0x02000E8C"
+        },
+        {
+          "code": "83000E8C",
+          "desc": "Max Score",
+          "address": "0x02000E8C"
+        },
+        {
+          "code": "83000E8E",
+          "desc": "Max Score",
+          "address": "0x02000E8E"
+        },
+        {
+          "code": "8300013C",
+          "desc": "Infinite Time (Time Attack)",
+          "address": "0x0200013C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Snood (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10003A20",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003A20"
+        },
+        {
+          "code": "33000158",
+          "desc": "Never Drown",
+          "address": "0x02000158"
+        },
+        {
+          "code": "33000120",
+          "desc": "Never Drown (Time Attack)",
+          "address": "0x02000120"
+        },
+        {
+          "code": "33000EA8",
+          "desc": "Infinite Lives",
+          "address": "0x02000EA8"
+        },
+        {
+          "code": "83000E8C",
+          "desc": "Quick Score Gain",
+          "address": "0x02000E8C"
+        },
+        {
+          "code": "83000E8C",
+          "desc": "Max Score",
+          "address": "0x02000E8C"
+        },
+        {
+          "code": "83000E8E",
+          "desc": "Max Score",
+          "address": "0x02000E8E"
+        },
+        {
+          "code": "8300013C",
+          "desc": "Infinite Time (Time Attack)",
+          "address": "0x0200013C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "BullsVsLakersAndTheNBAPlayoffs",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\BullsVsLakersAndTheNBAPlayoffs-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "BullsVsLakersAndTheNBAPlayoffs-Genesis"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "name": "bulls_score",
+      "meta": {
+        "address": 16753869,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "lakers_score",
+      "meta": {
+        "address": 16753867,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "period",
+      "meta": {
+        "address": 16753871,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time_minutes",
+      "meta": {
+        "address": 16753877,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time_seconds",
+      "meta": {
+        "address": 16753873,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

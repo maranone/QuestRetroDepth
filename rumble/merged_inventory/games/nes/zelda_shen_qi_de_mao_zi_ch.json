@@ -1,0 +1,80 @@
+{
+  "system": "nes",
+  "normalized_title": "zeldashenqidemaozi",
+  "display_name": "Zelda - Shen Qi De Mao Zi (Ch)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Zelda - Shen Qi De Mao Zi (Ch).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "60CB:FF",
+          "desc": "Quick Level Gain",
+          "address": "0x60CB"
+        },
+        {
+          "code": "6020:1A",
+          "desc": "No Random Battles",
+          "address": "0x6020"
+        },
+        {
+          "code": "60E2:0F",
+          "desc": "Max Mp",
+          "address": "0x60E2"
+        },
+        {
+          "code": "60E3:27",
+          "desc": "Max Mp",
+          "address": "0x60E3"
+        },
+        {
+          "code": "6022:FF",
+          "desc": "Infinite Rupies",
+          "address": "0x6022"
+        },
+        {
+          "code": "6023:FF",
+          "desc": "Infinite Rupies",
+          "address": "0x6023"
+        },
+        {
+          "code": "60D4:0F",
+          "desc": "Infinite Hp",
+          "address": "0x60D4"
+        },
+        {
+          "code": "60D5:27",
+          "desc": "Infinite Hp",
+          "address": "0x60D5"
+        },
+        {
+          "code": "60D6:0F",
+          "desc": "Max Hp",
+          "address": "0x60D6"
+        },
+        {
+          "code": "60D7:27",
+          "desc": "Max Hp",
+          "address": "0x60D7"
+        },
+        {
+          "code": "60E0:0F",
+          "desc": "Infinite Mp",
+          "address": "0x60E0"
+        },
+        {
+          "code": "60E1:27",
+          "desc": "Infinite Mp",
+          "address": "0x60E1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

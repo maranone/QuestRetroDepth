@@ -1,0 +1,6 @@
+game_name=Heiankyo Alien (USA)
+game_key=heiankyo_alien_usa
+system=gb
+integration_tier=contrib
+trigger	life_lost_lives_ceda	life_lost	0xCEDA	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ceda	life_gained	0xCEDA	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

@@ -1,0 +1,67 @@
+{
+  "system": "nes",
+  "normalized_title": "ninjacopsaizou",
+  "display_name": "Ninja Cop Saizou (Japan) (Game Genie)",
+  "aliases": [
+    "Ninja Cop Saizou (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ninja Cop Saizou (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0549:03",
+          "desc": "Infinite Energy",
+          "address": "0x0549"
+        },
+        {
+          "code": "0547:09",
+          "desc": "Infinite Lives",
+          "address": "0x0547"
+        },
+        {
+          "code": "0589:01",
+          "desc": "Invincibility",
+          "address": "0x0589"
+        },
+        {
+          "code": "0551:01",
+          "desc": "Always Have Ninja Art of Fire Bomb",
+          "address": "0x0551"
+        },
+        {
+          "code": "0552:01",
+          "desc": "Always Have Ninja Art of Lightning",
+          "address": "0x0552"
+        },
+        {
+          "code": "0555:01",
+          "desc": "Always Have Ninja Art of Fire Rain",
+          "address": "0x0555"
+        },
+        {
+          "code": "0556:01",
+          "desc": "Always Have Ninja Art of Spider",
+          "address": "0x0556"
+        },
+        {
+          "code": "0558:01",
+          "desc": "Always Have Ninja Art of Invisibility",
+          "address": "0x0558"
+        },
+        {
+          "code": "0559:01",
+          "desc": "Always Have Ninja Art of Teleportation",
+          "address": "0x0559"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Little League Baseball 2002 (USA) (Code Breaker)
+game_key=little_league_baseball_2002_usa_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_0200002e	score	0x0200002E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0200005a	score	0x0200005A	1	uint	little	prev < curr	0.8	1	right:0.350:60

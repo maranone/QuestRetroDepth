@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "dragonninja",
+  "display_name": "Dragon Ninja (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dragon Ninja (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "029B:10",
+          "desc": "Infinite Energy",
+          "address": "0x029B"
+        },
+        {
+          "code": "03FB:10",
+          "desc": "Invincibility",
+          "address": "0x03FB"
+        },
+        {
+          "code": "0292:00",
+          "desc": "Weapon Modifier",
+          "address": "0x0292"
+        },
+        {
+          "code": "0204:30",
+          "desc": "Infinite Time",
+          "address": "0x0204"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

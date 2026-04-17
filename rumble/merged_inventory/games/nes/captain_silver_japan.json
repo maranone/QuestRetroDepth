@@ -1,0 +1,160 @@
+{
+  "system": "nes",
+  "normalized_title": "captainsilver",
+  "display_name": "Captain Silver (Japan)",
+  "aliases": [
+    "Captain Silver (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\captainsilver_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0302",
+        "0x030C",
+        "0x032D"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CaptainSilver-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x032D",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x030C",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0302",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Captain Silver (Japan).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 20,
+      "distinct_address_count": 20,
+      "sample_raw_entries": [
+        {
+          "code": "032D:05",
+          "desc": "Infinite Energy",
+          "address": "0x032D"
+        },
+        {
+          "code": "0309:06",
+          "desc": "Infinite Time",
+          "address": "0x0309"
+        },
+        {
+          "code": "0302:09",
+          "desc": "Max Score/Money",
+          "address": "0x0302"
+        },
+        {
+          "code": "0303:09",
+          "desc": "Max Score/Money",
+          "address": "0x0303"
+        },
+        {
+          "code": "0304:09",
+          "desc": "Max Score/Money",
+          "address": "0x0304"
+        },
+        {
+          "code": "0305:09",
+          "desc": "Max Score/Money",
+          "address": "0x0305"
+        },
+        {
+          "code": "0335:1D",
+          "desc": "Have Jump Boots",
+          "address": "0x0335"
+        },
+        {
+          "code": "0336:1D",
+          "desc": "Have Sword Upgrade",
+          "address": "0x0336"
+        },
+        {
+          "code": "0338:01",
+          "desc": "Have Crescent Blast",
+          "address": "0x0338"
+        },
+        {
+          "code": "0339:01",
+          "desc": "Have Fireball",
+          "address": "0x0339"
+        },
+        {
+          "code": "033A:01",
+          "desc": "Have Super Fireball",
+          "address": "0x033A"
+        },
+        {
+          "code": "033B:01",
+          "desc": "Have Lightning",
+          "address": "0x033B"
+        },
+        {
+          "code": "033C:01",
+          "desc": "Have 1-Way Shot",
+          "address": "0x033C"
+        },
+        {
+          "code": "033D:01",
+          "desc": "Have Multi Directional Shot",
+          "address": "0x033D"
+        },
+        {
+          "code": "033E:01",
+          "desc": "Have Three-Way Shot",
+          "address": "0x033E"
+        },
+        {
+          "code": "0340:00",
+          "desc": "Weapon Modifier",
+          "address": "0x0340"
+        },
+        {
+          "code": "03CB:BE",
+          "desc": "Level Modifier",
+          "address": "0x03CB"
+        },
+        {
+          "code": "03CC:BE",
+          "desc": "Level Modifier",
+          "address": "0x03CC"
+        },
+        {
+          "code": "0424:00",
+          "desc": "No Random Enemies",
+          "address": "0x0424"
+        },
+        {
+          "code": "0428:00",
+          "desc": "Boss Dies",
+          "address": "0x0428"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

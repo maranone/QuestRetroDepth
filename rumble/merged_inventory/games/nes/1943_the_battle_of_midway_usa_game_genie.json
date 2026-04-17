@@ -1,0 +1,154 @@
+{
+  "system": "nes",
+  "normalized_title": "1943battleofmidway",
+  "display_name": "1943 - The Battle of Midway (USA) (Game Genie)",
+  "aliases": [
+    "1943 - The Battle of Midway (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\1943 - The Battle of Midway (USA).cht",
+      "total_cheat_rows": 39,
+      "raw_entry_count": 51,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "0347:01",
+          "desc": "Infinite Power Up Points in Power Up Distribution Screen",
+          "address": "0x0347"
+        },
+        {
+          "code": "0410:09",
+          "desc": "God Mode",
+          "address": "0x0410"
+        },
+        {
+          "code": "04F6:09",
+          "desc": "Infinite Time, digits",
+          "address": "0x04F6"
+        },
+        {
+          "code": "04F7:09",
+          "desc": "Infinite Time, Tens",
+          "address": "0x04F7"
+        },
+        {
+          "code": "04F8:09",
+          "desc": "Infinite Time, Hundreds",
+          "address": "0x04F8"
+        },
+        {
+          "code": "040E:60",
+          "desc": "Invincible",
+          "address": "0x040E"
+        },
+        {
+          "code": "LEEPXLAE",
+          "desc": "Always Shoot Power Shots",
+          "address": "0x030A"
+        },
+        {
+          "code": "0347:05",
+          "desc": "Infinite Stat Distribution Points",
+          "address": "0x0347"
+        },
+        {
+          "code": "0410:09",
+          "desc": "Infinite Health Energy",
+          "address": "0x0410"
+        },
+        {
+          "code": "0411:09",
+          "desc": "Infinite Health Energy",
+          "address": "0x0411"
+        },
+        {
+          "code": "0412:09",
+          "desc": "Infinite Health Energy",
+          "address": "0x0412"
+        },
+        {
+          "code": "04F6:09",
+          "desc": "Infinite Weapon Energy",
+          "address": "0x04F6"
+        },
+        {
+          "code": "04F7:09",
+          "desc": "Infinite Weapon Energy",
+          "address": "0x04F7"
+        },
+        {
+          "code": "04F8:09",
+          "desc": "Infinite Weapon Energy",
+          "address": "0x04F8"
+        },
+        {
+          "code": "0402:0A",
+          "desc": "Have Most Powerful Normal Weapon (Quadruple Lasers)",
+          "address": "0x0402"
+        },
+        {
+          "code": "XZXOXLEI",
+          "desc": "Always Have Default Weapon",
+          "address": "0x03AA"
+        },
+        {
+          "code": "AAXOULSY",
+          "desc": "Always Have Default Weapon",
+          "address": "0x038B"
+        },
+        {
+          "code": "VAXOKUVX",
+          "desc": "Always Have Default Weapon",
+          "address": "0x038C"
+        },
+        {
+          "code": "XZXOXLEI",
+          "desc": "Always Have Short Spread Weapon",
+          "address": "0x03AA"
+        },
+        {
+          "code": "PAXOULSY",
+          "desc": "Always Have Short Spread Weapon",
+          "address": "0x038B"
+        },
+        {
+          "code": "VAXOKUVX",
+          "desc": "Always Have Short Spread Weapon",
+          "address": "0x038C"
+        },
+        {
+          "code": "XZXOXLEI",
+          "desc": "Always Have Long Spread Weapon",
+          "address": "0x03AA"
+        },
+        {
+          "code": "ZAXOULSY",
+          "desc": "Always Have Long Spread Weapon",
+          "address": "0x038B"
+        },
+        {
+          "code": "VAXOKUVX",
+          "desc": "Always Have Long Spread Weapon",
+          "address": "0x038C"
+        },
+        {
+          "code": "XZXOXLEI",
+          "desc": "Always Have Vulcan (Rapid Fire) Weapon",
+          "address": "0x03AA"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\1943 - The Battle of Midway (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

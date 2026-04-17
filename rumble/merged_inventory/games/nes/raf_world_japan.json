@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "rafworld",
+  "display_name": "Raf World (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Raf World (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "SZUAUTSA",
+          "desc": "Infinite Weapons",
+          "address": "0x062B"
+        },
+        {
+          "code": "00B0:0F",
+          "desc": "Infinite Energy",
+          "address": "0x00B0"
+        },
+        {
+          "code": "00B1:3F",
+          "desc": "Infinite Weapon",
+          "address": "0x00B1"
+        },
+        {
+          "code": "AVKEIOOZ",
+          "desc": "Double Jump",
+          "address": "0x01ED"
+        },
+        {
+          "code": "KEKAIPEE",
+          "desc": "Moon Jump",
+          "address": "0x010D"
+        },
+        {
+          "code": "PUEELOPO",
+          "desc": "Multi Jump",
+          "address": "0x01BB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

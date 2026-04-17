@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "2in1cosmocopcybermonsteru",
+  "display_name": "2-in-1 Cosmo Cop + Cyber Monster (Sachen) [U][!]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\2-in-1 Cosmo Cop + Cyber Monster (Sachen) [U][!].cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0334:03",
+          "desc": "Infinite Lives",
+          "address": "0x0334"
+        },
+        {
+          "code": "0332:99",
+          "desc": "Infinite Ammo",
+          "address": "0x0332"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

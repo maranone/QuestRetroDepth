@@ -1,0 +1,9 @@
+game_name=Dragon Quest VIII (ES-1077) (Ch) [!]
+game_key=dragon_quest_viii_es_1077_ch
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_055e	damage_taken	0x055E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_055e	death	0x055E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_055a	pickup	0x055A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_055b	pickup	0x055B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_0484	enemy_defeated	0x0484	1	uint	little	prev > curr	0.65	1	right:0.450:35

@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "solstice",
+  "display_name": "Solstice (Japan) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Solstice (Japan) (Game Genie).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 8,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "SZSESXVK",
+          "desc": "Infinite Lives",
+          "address": "0x02AD"
+        },
+        {
+          "code": "PAKAVIGA",
+          "desc": "Start With 1 Life",
+          "address": "0x050E"
+        },
+        {
+          "code": "AAKAVIGE",
+          "desc": "Start With 8 Lives",
+          "address": "0x050E"
+        },
+        {
+          "code": "PAXELPLA",
+          "desc": "1 Life After Continue",
+          "address": "0x018B"
+        },
+        {
+          "code": "AAXELPLE",
+          "desc": "8 Lives After Continue",
+          "address": "0x018B"
+        },
+        {
+          "code": "GAOEUIZA",
+          "desc": "Start With Full Flasks Of Potions",
+          "address": "0x058B"
+        },
+        {
+          "code": "AAOEUIZA",
+          "desc": "Start With No Potions",
+          "address": "0x058B"
+        },
+        {
+          "code": "SUSPIXVS",
+          "desc": "Never Use Up Potions",
+          "address": "0x023D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

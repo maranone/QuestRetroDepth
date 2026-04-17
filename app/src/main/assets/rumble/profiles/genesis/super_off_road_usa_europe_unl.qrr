@@ -1,0 +1,10 @@
+game_name=Super Off Road (USA, Europe) (Unl)
+game_key=super_off_road_usa_europe_unl
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff084e	pickup	0xFF084E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff0850	pickup	0xFF0850	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff0852	pickup	0xFF0852	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff0854	pickup	0xFF0854	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff0856	pickup	0xFF0856	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff0858	pickup	0xFF0858	1	uint	little	prev != curr	0.8	1	right:0.250:18

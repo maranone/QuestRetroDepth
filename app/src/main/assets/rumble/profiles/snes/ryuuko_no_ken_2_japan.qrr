@@ -1,0 +1,8 @@
+game_name=Ryuuko no Ken 2 (Japan)
+game_key=ryuuko_no_ken_2_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_4562	damage_taken	0x7F4562	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_4562	death	0x7F4562	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_4a62	damage_taken	0x7F4A62	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_4a62	death	0x7F4A62	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

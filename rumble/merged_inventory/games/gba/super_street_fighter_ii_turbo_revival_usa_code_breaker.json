@@ -1,0 +1,248 @@
+{
+  "system": "gba",
+  "normalized_title": "superstreetfighteriiturborevival",
+  "display_name": "Super Street Fighter II Turbo - Revival (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Super Street Fighter II Turbo - Revival (USA) (Code Breaker).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 22,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "100004E4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020004E4"
+        },
+        {
+          "code": "33002254",
+          "desc": "Infinite Time",
+          "address": "0x02002254"
+        },
+        {
+          "code": "83006788",
+          "desc": "Max Score",
+          "address": "0x02006788"
+        },
+        {
+          "code": "8300678A",
+          "desc": "Max Score",
+          "address": "0x0200678A"
+        },
+        {
+          "code": "830064C2",
+          "desc": "Infinite Health P1",
+          "address": "0x020064C2"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 1-Hit Death P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "830064C2",
+          "desc": "Press Select For 1-Hit Death P1",
+          "address": "0x020064C2"
+        },
+        {
+          "code": "330066D4",
+          "desc": "Max Super Meter P1",
+          "address": "0x020066D4"
+        },
+        {
+          "code": "330066D4",
+          "desc": "No Super Meter P1",
+          "address": "0x020066D4"
+        },
+        {
+          "code": "7300677C",
+          "desc": "P1 Needs 1 Win To Win",
+          "address": "0x0200677C"
+        },
+        {
+          "code": "8300677C",
+          "desc": "P1 Needs 1 Win To Win",
+          "address": "0x0200677C"
+        },
+        {
+          "code": "3300677C",
+          "desc": "P1 Never Wins",
+          "address": "0x0200677C"
+        },
+        {
+          "code": "830068D2",
+          "desc": "Infinite Health P2",
+          "address": "0x020068D2"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 1-Hit Death P2",
+          "address": "0x02000020"
+        },
+        {
+          "code": "830068D2",
+          "desc": "Press Select For 1-Hit Death P2",
+          "address": "0x020068D2"
+        },
+        {
+          "code": "33006AE4",
+          "desc": "Max Super Meter P2",
+          "address": "0x02006AE4"
+        },
+        {
+          "code": "33006AE4",
+          "desc": "No Super Meter P2",
+          "address": "0x02006AE4"
+        },
+        {
+          "code": "73006B8C",
+          "desc": "P2 Needs 1 Win To Win",
+          "address": "0x02006B8C"
+        },
+        {
+          "code": "83006B8C",
+          "desc": "P2 Needs 1 Win To Win",
+          "address": "0x02006B8C"
+        },
+        {
+          "code": "33006B8C",
+          "desc": "P2 Never Wins",
+          "address": "0x02006B8C"
+        },
+        {
+          "code": "820071C8",
+          "desc": "Max VS Point",
+          "address": "0x020071C8"
+        },
+        {
+          "code": "330064B5",
+          "desc": "Funky Moves P1",
+          "address": "0x020064B5"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Super Street Fighter II Turbo - Revival (USA) (Code Breaker).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 22,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "100004E4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020004E4"
+        },
+        {
+          "code": "33002254",
+          "desc": "Infinite Time",
+          "address": "0x02002254"
+        },
+        {
+          "code": "83006788",
+          "desc": "Max Score",
+          "address": "0x02006788"
+        },
+        {
+          "code": "8300678A",
+          "desc": "Max Score",
+          "address": "0x0200678A"
+        },
+        {
+          "code": "830064C2",
+          "desc": "Infinite Health P1",
+          "address": "0x020064C2"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 1-Hit Death P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "830064C2",
+          "desc": "Press Select For 1-Hit Death P1",
+          "address": "0x020064C2"
+        },
+        {
+          "code": "330066D4",
+          "desc": "Max Super Meter P1",
+          "address": "0x020066D4"
+        },
+        {
+          "code": "330066D4",
+          "desc": "No Super Meter P1",
+          "address": "0x020066D4"
+        },
+        {
+          "code": "7300677C",
+          "desc": "P1 Needs 1 Win To Win",
+          "address": "0x0200677C"
+        },
+        {
+          "code": "8300677C",
+          "desc": "P1 Needs 1 Win To Win",
+          "address": "0x0200677C"
+        },
+        {
+          "code": "3300677C",
+          "desc": "P1 Never Wins",
+          "address": "0x0200677C"
+        },
+        {
+          "code": "830068D2",
+          "desc": "Infinite Health P2",
+          "address": "0x020068D2"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 1-Hit Death P2",
+          "address": "0x02000020"
+        },
+        {
+          "code": "830068D2",
+          "desc": "Press Select For 1-Hit Death P2",
+          "address": "0x020068D2"
+        },
+        {
+          "code": "33006AE4",
+          "desc": "Max Super Meter P2",
+          "address": "0x02006AE4"
+        },
+        {
+          "code": "33006AE4",
+          "desc": "No Super Meter P2",
+          "address": "0x02006AE4"
+        },
+        {
+          "code": "73006B8C",
+          "desc": "P2 Needs 1 Win To Win",
+          "address": "0x02006B8C"
+        },
+        {
+          "code": "83006B8C",
+          "desc": "P2 Needs 1 Win To Win",
+          "address": "0x02006B8C"
+        },
+        {
+          "code": "33006B8C",
+          "desc": "P2 Never Wins",
+          "address": "0x02006B8C"
+        },
+        {
+          "code": "820071C8",
+          "desc": "Max VS Point",
+          "address": "0x020071C8"
+        },
+        {
+          "code": "330064B5",
+          "desc": "Funky Moves P1",
+          "address": "0x020064B5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

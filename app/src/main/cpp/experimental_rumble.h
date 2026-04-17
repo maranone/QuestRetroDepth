@@ -21,6 +21,8 @@ enum class RumbleEffect {
     FadeIn,
     FadeOut,
     FadeInOut,
+    Burst,      // machine-gun: rapid alternating pulses
+    Heartbeat,  // dramatic double-beat pattern
 };
 
 struct QueuedHapticEvent {
@@ -48,7 +50,7 @@ public:
                        const std::string& game_name);
     std::string active_status() const;
 
-    std::vector<QueuedHapticEvent> evaluate_frame(const EmulatorBackend& backend);
+    std::vector<QueuedHapticEvent> evaluate_frame(const EmulatorBackend& backend, uint64_t now_ms);
 
 private:
     struct HapticSpec {
@@ -117,6 +119,7 @@ private:
 
     bool m_enabled = true;
     uint64_t m_frame_counter = 0;
+    uint64_t m_haptic_queue_end_ms = 0; // shared queue end (wall-clock ms)
     std::vector<CatalogEntry> m_catalog;
     bool m_catalog_loaded = false;
     bool m_has_active_profile = false;

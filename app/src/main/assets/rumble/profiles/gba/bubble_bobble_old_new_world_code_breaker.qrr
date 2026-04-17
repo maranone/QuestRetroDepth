@@ -1,0 +1,6 @@
+game_name=Bubble Bobble - Old _ New (World) (Code Breaker)
+game_key=bubble_bobble_old_new_world_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_02002fbe	life_lost	0x02002FBE	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02002fbe	life_gained	0x02002FBE	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "jj",
+  "display_name": "JJ (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\JJ (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "00E0:02",
+          "desc": "Infinite Lives",
+          "address": "0x00E0"
+        },
+        {
+          "code": "008B:13",
+          "desc": "Infinite Time",
+          "address": "0x008B"
+        },
+        {
+          "code": "003A:05",
+          "desc": "No Enemies, No Pitfalls",
+          "address": "0x003A"
+        },
+        {
+          "code": "AVUOPTPA",
+          "desc": "Infinite Lives",
+          "address": "0x06E9"
+        },
+        {
+          "code": "AVUPZGVG",
+          "desc": "Freeze Time",
+          "address": "0x046A"
+        },
+        {
+          "code": "PEXEEYAA",
+          "desc": "Invincibility",
+          "address": "0x0788"
+        },
+        {
+          "code": "SZOOXLSA",
+          "desc": "Invincibility",
+          "address": "0x03AA"
+        },
+        {
+          "code": "0394:00",
+          "desc": "Only Beat 1 Dragon To Pass Level",
+          "address": "0x0394"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

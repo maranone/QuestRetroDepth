@@ -1,0 +1,124 @@
+{
+  "schema": "qrd.rumble.nes.v1",
+  "game": {
+    "name": "MCKids",
+    "system": "nes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\MCKids-Nes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "MCKids-Nes"
+  },
+  "triggers": [
+    {
+      "id": "life_lost_lives_057f",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0x057F",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "address": "0x057F",
+          "ram_offset": 1407
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x057F",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_057f",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0x057F",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "address": "0x057F",
+          "ram_offset": 1407
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x057F",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_057d",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x057D",
+          "size": 1,
+          "value_type": "bcd",
+          "byte_order": "native",
+          "raw_type": "|d1",
+          "address": "0x057D",
+          "ram_offset": 1405
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0x057D",
+          "raw_type": "|d1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

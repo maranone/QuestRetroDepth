@@ -1,0 +1,53 @@
+{
+  "system": "sms",
+  "normalized_title": "fantasyzonemaze",
+  "display_name": "Fantasy Zone - The Maze (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Fantasy Zone - The Maze (USA, Europe) (Action Replay)",
+    "Fantasy Zone - The Maze (USA, Europe, Brazil)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\fantasyzonethemaze_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xC04F",
+        "0xC069"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FantasyZoneTheMaze-Sms-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xC069",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xC04F",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Fantasy Zone - The Maze (USA, Europe, Brazil).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

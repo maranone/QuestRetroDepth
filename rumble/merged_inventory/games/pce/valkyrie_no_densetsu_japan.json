@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "valkyrienodensetsu",
+  "display_name": "Valkyrie no Densetsu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Valkyrie no Densetsu (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f00bf:0e",
+          "desc": "Infinite Energy",
+          "address": "0x1F00BF"
+        },
+        {
+          "code": "1f09d8:14",
+          "desc": "Invincibility",
+          "address": "0x1F09D8"
+        },
+        {
+          "code": "1f00c4:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F00C4"
+        },
+        {
+          "code": "1f00c5:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F00C5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

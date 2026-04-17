@@ -1,0 +1,6 @@
+game_name=Dungeons _ Dragons - Order of the Griffon (USA)
+game_key=dungeons_dragons_order_of_the_griffon_usa
+system=pce
+integration_tier=contrib
+trigger	pickup_coins_1f08ae	pickup	0x1F08AE	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_1f08af	pickup	0x1F08AF	1	uint	little	prev != curr	0.8	1	right:0.250:18

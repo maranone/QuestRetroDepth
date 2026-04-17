@@ -1,0 +1,12 @@
+game_name=Godzilla 2 - War of the Monsters (USA)
+game_key=godzilla_2_war_of_the_monsters_usa
+system=nes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_067e	enemy_defeated	0x067E	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_067f	enemy_defeated	0x067F	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0680	enemy_defeated	0x0680	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0681	enemy_defeated	0x0681	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0682	enemy_defeated	0x0682	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0683	enemy_defeated	0x0683	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0684	enemy_defeated	0x0684	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0685	enemy_defeated	0x0685	1	uint	little	prev > curr	0.65	1	right:0.450:35

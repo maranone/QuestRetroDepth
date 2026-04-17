@@ -1,0 +1,6 @@
+game_name=Major League Baseball (USA)
+game_key=major_league_baseball_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_0109	score	0x0109	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_010a	score	0x010A	1	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,34 @@
+{
+  "system": "gb",
+  "normalized_title": "gauntletii",
+  "display_name": "Gauntlet II (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Gauntlet II (USA, Europe) (GameShark)",
+    "Gauntlet II (USA, Europe) (Xploder)",
+    "Gauntlet II (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Gauntlet II (USA, Europe).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0123D7F3",
+          "desc": "Unendlich Schl\u00fcssel",
+          "address": "0xD7F3"
+        },
+        {
+          "code": "0101C1D6",
+          "desc": "Infinite Potions P1",
+          "address": "0xC1D6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

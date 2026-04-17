@@ -1,0 +1,9 @@
+game_name=Running Battle (Europe) (Action Replay)
+game_key=RunningBattle-Sms
+system=sms
+integration_tier=stable
+trigger	damage_taken_health_ceb8	damage_taken	0xCEB8	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ceb8	death	0xCEB8	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_cebe	life_lost	0xCEBE	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_cebe	life_gained	0xCEBE	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_cee9	score	0xCEE9	2	uint	little	prev < curr	0.8	1	right:0.350:60

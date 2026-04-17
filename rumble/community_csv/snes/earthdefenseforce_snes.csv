@@ -2,6 +2,6 @@
 # game_name=Earth Defense Force (USA)
 # match_names=earthdefenseforce|earthdefenseforcesnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-damage_taken_health_0181,0x7E0181,1,uint,prev_gt_curr,,left,0.850,normal,0,90,100,70,
-death_health_0181,0x7E0181,1,uint,became_zero,,both,1.000,normal,0,600,400,90,
-score_score_0157,0x7E0157,4,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+damage_taken_health_0181,0x7E0181,1,uint,prev_gt_curr,,left,0.850,fade_out,0,110,80,70,
+death_health_0181,0x7E0181,1,uint,became_zero,,both,1.000,heartbeat,0,600,400,90,
+score_score_0157,0x7E0157,4,bcd,prev_lt_curr,,right,0.350,burst,0,70,15,10,

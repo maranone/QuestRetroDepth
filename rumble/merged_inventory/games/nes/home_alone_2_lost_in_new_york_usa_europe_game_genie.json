@@ -1,0 +1,116 @@
+{
+  "system": "nes",
+  "normalized_title": "homealone2lostinnewyork",
+  "display_name": "Home Alone 2 - Lost in New York (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Home Alone 2 - Lost in New York (USA)",
+    "Home Alone 2 - Lost in New York (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\homealone2lostinnewyork_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0635",
+        "0x063C",
+        "0x063F"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\HomeAlone2LostInNewYork-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x063F",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x063C",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0635",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Home Alone 2 - Lost in New York (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 11,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "PEEPILLA",
+          "desc": "Start With 1 Life Instead Of 3",
+          "address": "0x030D"
+        },
+        {
+          "code": "IEEPILLA",
+          "desc": "Start With 5 Lives",
+          "address": "0x030D"
+        },
+        {
+          "code": "YEEPILLA",
+          "desc": "Start With 7 Lives",
+          "address": "0x030D"
+        },
+        {
+          "code": "PEEPILLE",
+          "desc": "Start With 9 Lives",
+          "address": "0x030D"
+        },
+        {
+          "code": "POEPILLE",
+          "desc": "Start With 25 Lives",
+          "address": "0x031D"
+        },
+        {
+          "code": "ZUEPILLA",
+          "desc": "Start With 50 Lives",
+          "address": "0x033D"
+        },
+        {
+          "code": "LKEPILLE",
+          "desc": "Start With 75 Lives",
+          "address": "0x034D"
+        },
+        {
+          "code": "LVEPILLA",
+          "desc": "Start With 99 Lives",
+          "address": "0x036D"
+        },
+        {
+          "code": "SZOELKVK",
+          "desc": "Infinite Slides On Pick-Up",
+          "address": "0x04AB"
+        },
+        {
+          "code": "SZVETKVK",
+          "desc": "Infinite Darts On Pick-Up",
+          "address": "0x04AE"
+        },
+        {
+          "code": "SZSAAKVK",
+          "desc": "Infinite Flying Fists On Pick-Up",
+          "address": "0x0428"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

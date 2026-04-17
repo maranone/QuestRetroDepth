@@ -1,0 +1,5 @@
+game_name=F-117A Stealth Fighter (USA)
+game_key=f_117a_stealth_fighter_usa
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_0023	pickup	0x0023	1	uint	little	prev != curr	0.8	1	right:0.250:18

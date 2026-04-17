@@ -7,6 +7,7 @@
 #include "vr_state.h"
 #include "game_config.h"
 #include "button_map.h"
+#include <algorithm>
 #include <string>
 #include <vector>
 #include <cstdio>
@@ -84,11 +85,11 @@ static inline bool settings_save(
     settings_write(f, "tilt_y",       vs.tilt_y);
     settings_write(f, "immersive_beta_enabled", vs.immersive_beta_enabled);
     settings_write(f, "layers_3d",       vs.layers_3d);
-    settings_write(f, "depthmap",        vs.depthmap);
-    settings_write(f, "depthmap_mirror", vs.depthmap_mirror);
+    settings_write(f, "depth_mode",      (int)vs.depth_mode);
     settings_write(f, "upscale",         vs.upscale);
     settings_write(f, "passthrough",     vs.shadows);
     settings_write(f, "ambilight",       vs.ambilight);
+    settings_write(f, "perspective_comp",    vs.perspective_comp);
     settings_write(f, "auto_frame_skip",    vs.auto_frame_skip);
     settings_write(f, "emu_resolution_scale", vs.emu_resolution_scale);
     settings_write(f, "vr_resolution_scale",  vs.vr_resolution_scale);
@@ -206,11 +207,12 @@ static inline bool settings_load(
         else if (strcmp(key,"immersive_beta_enabled") == 0) readb(vs.immersive_beta_enabled);
         else if (strcmp(key,"layers_3d")       == 0) readb(vs.layers_3d);
         else if (strcmp(key,"solid_stack")     == 0) readb(vs.solid_stack);
-        else if (strcmp(key,"depthmap")        == 0) readb(vs.depthmap);
-        else if (strcmp(key,"depthmap_mirror") == 0) readb(vs.depthmap_mirror);
+        else if (strcmp(key,"depth_mode")      == 0) vs.depth_mode = (DepthMode)std::clamp(atoi(val), 0, 2);
+        else if (strcmp(key,"depthmap")        == 0) vs.depth_mode = atoi(val) != 0 ? DepthMode::WholeLayer : DepthMode::Off;
         else if (strcmp(key,"upscale")         == 0) readb(vs.upscale);
         else if (strcmp(key,"passthrough")     == 0) readb(vs.shadows);
         else if (strcmp(key,"ambilight")       == 0) readb(vs.ambilight);
+        else if (strcmp(key,"perspective_comp") == 0) readb(vs.perspective_comp);
         else if (strcmp(key,"auto_frame_skip") == 0) readb(vs.auto_frame_skip);
         else if (strcmp(key,"emu_resolution_scale") == 0) readi(vs.emu_resolution_scale);
         else if (strcmp(key,"vr_resolution_scale")  == 0) readf(vs.vr_resolution_scale);

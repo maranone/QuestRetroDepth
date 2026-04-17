@@ -1,0 +1,6 @@
+game_name=Side Pocket (World) (Action Replay)
+game_key=side_pocket_world_action_replay
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_10a2	level_complete	0x7E10A2	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_10a3	level_complete	0x7E10A3	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

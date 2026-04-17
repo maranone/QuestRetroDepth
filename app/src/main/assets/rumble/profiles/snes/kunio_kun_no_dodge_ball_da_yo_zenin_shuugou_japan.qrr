@@ -1,0 +1,6 @@
+game_name=Kunio-kun no Dodge Ball Da yo Zenin Shuugou! (Japan)
+game_key=kunio_kun_no_dodge_ball_da_yo_zenin_shuugou_japan
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_044a	pickup	0x7E044A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_044b	pickup	0x7E044B	1	uint	little	prev != curr	0.8	1	right:0.250:18

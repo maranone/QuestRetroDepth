@@ -1,0 +1,6 @@
+game_name=NHL Hitz 20-03 (USA) (Code Breaker)
+game_key=nhl_hitz_20_03_usa_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_02001964	score	0x02001964	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02001965	score	0x02001965	1	uint	little	prev < curr	0.8	1	right:0.350:60

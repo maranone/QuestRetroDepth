@@ -1,0 +1,67 @@
+{
+  "system": "nes",
+  "normalized_title": "immortal",
+  "display_name": "Immortal, The (USA) (Game Genie)",
+  "aliases": [
+    "Immortal, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Immortal, The (USA).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 9,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "0363:10",
+          "desc": "Infinite Energy",
+          "address": "0x0363"
+        },
+        {
+          "code": "0362:00",
+          "desc": "Enemies Have No Health",
+          "address": "0x0362"
+        },
+        {
+          "code": "042C:30",
+          "desc": "Infinite Gold",
+          "address": "0x042C"
+        },
+        {
+          "code": "0362:00",
+          "desc": "Autokill Opponent",
+          "address": "0x0362"
+        },
+        {
+          "code": "0363:0F",
+          "desc": "Infinite Health",
+          "address": "0x0363"
+        },
+        {
+          "code": "042C:FF",
+          "desc": "Infinite Gold",
+          "address": "0x042C"
+        },
+        {
+          "code": "0488:00",
+          "desc": "Menu Item Modifier (Bottom of Screen)",
+          "address": "0x0488"
+        },
+        {
+          "code": "048B:00",
+          "desc": "Menu Item Modifier (Right of Screen)",
+          "address": "0x048B"
+        },
+        {
+          "code": "04B8:00",
+          "desc": "Menu Item Modifier (Left of Screen)",
+          "address": "0x04B8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "jajamarugekimadenmaboroshinokinmajou",
+  "display_name": "Jajamaru Gekimaden - Maboroshi no Kinmajou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Jajamaru Gekimaden - Maboroshi no Kinmajou (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "040F:08",
+          "desc": "Infinite Energy",
+          "address": "0x040F"
+        },
+        {
+          "code": "04BB:01",
+          "desc": "Invincibility",
+          "address": "0x04BB"
+        },
+        {
+          "code": "0433:FF",
+          "desc": "Infinite Money",
+          "address": "0x0433"
+        },
+        {
+          "code": "0411:32",
+          "desc": "Infinite JP",
+          "address": "0x0411"
+        },
+        {
+          "code": "040F:32",
+          "desc": "Infinite HP",
+          "address": "0x040F"
+        },
+        {
+          "code": "0418:32",
+          "desc": "Infinite Shuriken",
+          "address": "0x0418"
+        },
+        {
+          "code": "041A:32",
+          "desc": "Infinite Bombs",
+          "address": "0x041A"
+        },
+        {
+          "code": "0474:00",
+          "desc": "Walk Through Walls",
+          "address": "0x0474"
+        },
+        {
+          "code": "0475:00",
+          "desc": "Walk Through Walls",
+          "address": "0x0475"
+        },
+        {
+          "code": "0476:00",
+          "desc": "Walk Through Walls",
+          "address": "0x0476"
+        },
+        {
+          "code": "0477:00",
+          "desc": "Walk Through Walls",
+          "address": "0x0477"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

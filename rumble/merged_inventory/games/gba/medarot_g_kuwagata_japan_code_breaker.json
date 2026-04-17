@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "medarotgkuwagata",
+  "display_name": "Medarot G - Kuwagata (Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Medarot G - Kuwagata (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "72039550",
+          "desc": "Quick Level Gain",
+          "address": "0x02039550"
+        },
+        {
+          "code": "82039540",
+          "desc": "Quick Level Gain",
+          "address": "0x02039540"
+        },
+        {
+          "code": "4203EB30",
+          "desc": "All Medals",
+          "address": "0x0203EB30"
+        },
+        {
+          "code": "4203EBEC",
+          "desc": "All Parts",
+          "address": "0x0203EBEC"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Medarot G - Kuwagata (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "72039550",
+          "desc": "Quick Level Gain",
+          "address": "0x02039550"
+        },
+        {
+          "code": "82039540",
+          "desc": "Quick Level Gain",
+          "address": "0x02039540"
+        },
+        {
+          "code": "4203EB30",
+          "desc": "All Medals",
+          "address": "0x0203EB30"
+        },
+        {
+          "code": "4203EBEC",
+          "desc": "All Parts",
+          "address": "0x0203EBEC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

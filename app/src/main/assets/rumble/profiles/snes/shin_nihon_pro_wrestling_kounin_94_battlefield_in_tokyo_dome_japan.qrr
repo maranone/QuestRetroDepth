@@ -1,0 +1,20 @@
+game_name=Shin Nihon Pro Wrestling Kounin - '94 Battlefield in Tokyo Dome (Japan)
+game_key=shin_nihon_pro_wrestling_kounin_94_battlefield_in_tokyo_dome_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_04ad	damage_taken	0x7E04AD	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04ad	death	0x7E04AD	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04af	damage_taken	0x7E04AF	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04af	death	0x7E04AF	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_05ad	damage_taken	0x7E05AD	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05ad	death	0x7E05AD	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_05af	damage_taken	0x7E05AF	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05af	death	0x7E05AF	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_06ad	damage_taken	0x7E06AD	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_06ad	death	0x7E06AD	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_06af	damage_taken	0x7E06AF	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_06af	death	0x7E06AF	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_07ad	damage_taken	0x7E07AD	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_07ad	death	0x7E07AD	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_07af	damage_taken	0x7E07AF	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_07af	death	0x7E07AF	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

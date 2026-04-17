@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "arkanoidii",
+  "display_name": "Arkanoid II (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Arkanoid II (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "00D9:03",
+          "desc": "Infinite Lives",
+          "address": "0x00D9"
+        },
+        {
+          "code": "07E8:00",
+          "desc": "Win Level Now",
+          "address": "0x07E8"
+        },
+        {
+          "code": "SZKPYLSA",
+          "desc": "Invincibility",
+          "address": "0x032F"
+        },
+        {
+          "code": "SXXPSPSA",
+          "desc": "Invincibility Final Boss",
+          "address": "0x012D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

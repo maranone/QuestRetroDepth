@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "thunderandlightning",
+  "display_name": "ThunderAndLightning",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\thunderandlightning_nes.json",
+      "trigger_count": 4,
+      "field_names": [
+        "lives",
+        "score0",
+        "score1"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x005E",
+        "0x0064",
+        "0x0066"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ThunderAndLightning-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x005E",
+          "type": "|i1"
+        },
+        {
+          "name": "score0",
+          "address": "0x0064",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0x0066",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

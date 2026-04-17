@@ -1,0 +1,149 @@
+{
+  "schema": "qrd.rumble.nes.v1",
+  "game": {
+    "name": "GhostsnGoblins",
+    "system": "nes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\GhostsnGoblins-Nes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "GhostsnGoblins-Nes"
+  },
+  "triggers": [
+    {
+      "id": "life_lost_lives_0715",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0x0715",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0715",
+          "ram_offset": 1813
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x0715",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_0715",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0x0715",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0715",
+          "ram_offset": 1813
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x0715",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_008e",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x008E",
+          "size": 6,
+          "value_type": "nibble",
+          "byte_order": "big",
+          "raw_type": ">n6",
+          "address": "0x008E",
+          "ram_offset": 142
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0x008E",
+          "raw_type": ">n6"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "time_minutes",
+      "meta": {
+        "address": 1782,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time_ones",
+      "meta": {
+        "address": 1788,
+        "type": "|n1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time_tens",
+      "meta": {
+        "address": 1786,
+        "type": "|n1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

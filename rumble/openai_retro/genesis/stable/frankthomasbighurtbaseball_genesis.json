@@ -1,0 +1,79 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "FrankThomasBigHurtBaseball",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\FrankThomasBigHurtBaseball-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "FrankThomasBigHurtBaseball-Genesis"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "name": "at_bat",
+      "meta": {
+        "address": 16720241,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "hits",
+      "meta": {
+        "address": 16720899,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "hits_opponent",
+      "meta": {
+        "address": 16720901,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "inning",
+      "meta": {
+        "address": 16720934,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "outs",
+      "meta": {
+        "address": 16720599,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "runs",
+      "meta": {
+        "address": 16720891,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "runs_opponent",
+      "meta": {
+        "address": 16720893,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "strikes",
+      "meta": {
+        "address": 16720600,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

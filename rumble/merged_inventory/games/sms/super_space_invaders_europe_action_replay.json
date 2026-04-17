@@ -1,0 +1,53 @@
+{
+  "system": "sms",
+  "normalized_title": "superspaceinvaders",
+  "display_name": "Super Space Invaders (Europe) (Action Replay)",
+  "aliases": [
+    "Super Space Invaders (Europe) (Action Replay)",
+    "Super Space Invaders (Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\superspaceinvaders_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xC2EE",
+        "0xC363"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperSpaceInvaders-Sms-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xC2EE",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xC363",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Super Space Invaders (Europe).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "system": "nes",
+  "normalized_title": "wizardryiillylgamynnoisan",
+  "display_name": "Wizardry II - Llylgamyn no Isan (Japan) (Game Genie)",
+  "aliases": [
+    "Wizardry II - Llylgamyn no Isan (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wizardry II - Llylgamyn no Isan (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "ISIEZU",
+          "desc": "More Experience, No Combat, Repeating Chests",
+          "address": "0x03D2"
+        },
+        {
+          "code": "KIIAOL",
+          "desc": "No Combat Damage",
+          "address": "0x0351"
+        },
+        {
+          "code": "NUAAOU",
+          "desc": "More Gold In Level 1",
+          "address": "0x0331"
+        },
+        {
+          "code": "POPOPO",
+          "desc": "Randomly Changes One Character",
+          "address": "0x0191"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

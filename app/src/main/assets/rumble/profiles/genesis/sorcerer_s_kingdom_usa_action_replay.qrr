@@ -1,0 +1,11 @@
+game_name=Sorcerer's Kingdom (USA) (Action Replay)
+game_key=sorcerer_s_kingdom_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff04ba	damage_taken	0xFF04BA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff04ba	death	0xFF04BA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff04a8	damage_taken	0xFF04A8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff04a8	death	0xFF04A8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff04b6	damage_taken	0xFF04B6	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff04b6	death	0xFF04B6	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_ff0490	pickup	0xFF0490	1	uint	little	prev != curr	0.8	1	right:0.250:18

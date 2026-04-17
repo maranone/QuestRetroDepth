@@ -1,0 +1,107 @@
+{
+  "system": "nes",
+  "normalized_title": "adventuresofgilligansisland",
+  "display_name": "Adventures of Gilligan's Island, The (USA) (Game Genie)",
+  "aliases": [
+    "Adventures of Gilligan's Island, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Adventures of Gilligan's Island, The (USA).cht",
+      "total_cheat_rows": 28,
+      "raw_entry_count": 17,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "009A:00",
+          "desc": "Skipper Walk On Water, Sand, Mud",
+          "address": "0x009A"
+        },
+        {
+          "code": "009D:10",
+          "desc": "Skipper Walk Through Enemies",
+          "address": "0x009D"
+        },
+        {
+          "code": "00A5:00",
+          "desc": "Gilligan Walk Through Enemies",
+          "address": "0x00A5"
+        },
+        {
+          "code": "00AD:00",
+          "desc": "Gilligan Walk On Water, Sand, Mud",
+          "address": "0x00AD"
+        },
+        {
+          "code": "007C:63",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x007C"
+        },
+        {
+          "code": "007B:3D",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x007B"
+        },
+        {
+          "code": "007E:08",
+          "desc": "Infinite Health",
+          "address": "0x007E"
+        },
+        {
+          "code": "039A:00",
+          "desc": "Weapon Modifier",
+          "address": "0x039A"
+        },
+        {
+          "code": "0340:09",
+          "desc": "Music Screwers",
+          "address": "0x0340"
+        },
+        {
+          "code": "0341:09",
+          "desc": "Music Screwers",
+          "address": "0x0341"
+        },
+        {
+          "code": "0344:09",
+          "desc": "Sound Screwer",
+          "address": "0x0344"
+        },
+        {
+          "code": "0345:09",
+          "desc": "Sound Screwer",
+          "address": "0x0345"
+        },
+        {
+          "code": "0346:09",
+          "desc": "Sound Screwer",
+          "address": "0x0346"
+        },
+        {
+          "code": "0081:00",
+          "desc": "Episode Modifier (00-03)",
+          "address": "0x0081"
+        },
+        {
+          "code": "0399:09",
+          "desc": "Infinite Food",
+          "address": "0x0399"
+        },
+        {
+          "code": "039B:09",
+          "desc": "Infinite Rope",
+          "address": "0x039B"
+        },
+        {
+          "code": "039C:09",
+          "desc": "Infinite Tablets",
+          "address": "0x039C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

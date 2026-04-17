@@ -1,0 +1,5 @@
+game_name=Advanced Dungeons _ Dragons - Pool of Radiance (USA, Japan) (Game Genie)
+game_key=advanced_dungeons_dragons_pool_of_radiance_usa_japan_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_0723	pickup	0x0723	1	uint	little	prev != curr	0.8	1	right:0.250:18

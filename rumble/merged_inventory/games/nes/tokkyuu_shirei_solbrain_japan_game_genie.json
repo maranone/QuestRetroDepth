@@ -1,0 +1,87 @@
+{
+  "system": "nes",
+  "normalized_title": "tokkyuushireisolbrain",
+  "display_name": "Tokkyuu Shirei Solbrain (Japan) (Game Genie)",
+  "aliases": [
+    "Tokkyuu Shirei Solbrain (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tokkyuu Shirei Solbrain (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "SXUATUSE",
+          "desc": "Infinite Energy",
+          "address": "0x032E"
+        },
+        {
+          "code": "05C5:08",
+          "desc": "Infinite Health",
+          "address": "0x05C5"
+        },
+        {
+          "code": "071C:09",
+          "desc": "Infinite Lives",
+          "address": "0x071C"
+        },
+        {
+          "code": "0089:8A",
+          "desc": "Untouchable",
+          "address": "0x0089"
+        },
+        {
+          "code": "05A3:1F",
+          "desc": "invincibility",
+          "address": "0x05A3"
+        },
+        {
+          "code": "05AC:01",
+          "desc": "Moon Jump",
+          "address": "0x05AC"
+        },
+        {
+          "code": "060C:01",
+          "desc": "Always Airplane Aide",
+          "address": "0x060C"
+        },
+        {
+          "code": "061B:FF",
+          "desc": "Start With Airplane Space",
+          "address": "0x061B"
+        },
+        {
+          "code": "061C:F5",
+          "desc": "Start With Airplane Space",
+          "address": "0x061C"
+        },
+        {
+          "code": "062B:1A",
+          "desc": "Start With Airplane Space",
+          "address": "0x062B"
+        },
+        {
+          "code": "062C:04",
+          "desc": "Start With Airplane Space",
+          "address": "0x062C"
+        },
+        {
+          "code": "065B:88",
+          "desc": "Start With Airplane Space",
+          "address": "0x065B"
+        },
+        {
+          "code": "05C8:03",
+          "desc": "Super Body",
+          "address": "0x05C8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

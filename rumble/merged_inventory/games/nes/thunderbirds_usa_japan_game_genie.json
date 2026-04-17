@@ -1,0 +1,52 @@
+{
+  "system": "nes",
+  "normalized_title": "thunderbirds",
+  "display_name": "Thunderbirds (USA, Japan) (Game Genie)",
+  "aliases": [
+    "Thunderbirds (USA, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Thunderbirds (USA, Japan) (Game Genie).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "ATXEANAA",
+          "desc": "Limited Forward Movement",
+          "address": "0x07E8"
+        },
+        {
+          "code": "ATXEGNAA",
+          "desc": "Limited Forward Movement",
+          "address": "0x07EC"
+        },
+        {
+          "code": "GEXETTZA",
+          "desc": "Faster Craft",
+          "address": "0x068E"
+        },
+        {
+          "code": "GEXEZTZA",
+          "desc": "Faster Craft",
+          "address": "0x068A"
+        },
+        {
+          "code": "EZUAETEG",
+          "desc": "Full Firepower On First Pick Up",
+          "address": "0x0628"
+        },
+        {
+          "code": "XTUAKVEK",
+          "desc": "Full Firepower On First Pick Up",
+          "address": "0x066C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

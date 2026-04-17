@@ -1,0 +1,101 @@
+{
+  "system": "nes",
+  "normalized_title": "batmanreturnofjoker",
+  "display_name": "Batman - Return of the Joker (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Batman - Return of the Joker (USA, Europe) (Game Genie)",
+    "Batman - Return of the Joker (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Batman - Return of the Joker (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "SXSATXSE",
+          "desc": "Protection From \"Electric Grids\"",
+          "address": "0x022E"
+        },
+        {
+          "code": "AAKOPIZA",
+          "desc": "Invincibility Lasts Until Next Stage",
+          "address": "0x0589"
+        },
+        {
+          "code": "GASOTOTA",
+          "desc": "Continue Game With 3 Life Increments Instead Of 8",
+          "address": "0x018E"
+        },
+        {
+          "code": "KATOES",
+          "desc": "The Evil Code!",
+          "address": "0x0580"
+        },
+        {
+          "code": "NUTAIS",
+          "desc": "Softer Music",
+          "address": "0x0535"
+        },
+        {
+          "code": "PILONS",
+          "desc": "Batman Can Only Shoot Upwards Until He Manages To Pick Up A Power Weapon",
+          "address": "0x05D7"
+        },
+        {
+          "code": "ANZAST",
+          "desc": "Changes Colour",
+          "address": "0x0675"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Batman - Return of the Joker (USA).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "SXSATXSE",
+          "desc": "Protection From \"Electric Grids\"",
+          "address": "0x022E"
+        },
+        {
+          "code": "AAKOPIZA",
+          "desc": "Invincibility Lasts Until Next Stage",
+          "address": "0x0589"
+        },
+        {
+          "code": "GASOTOTA",
+          "desc": "Continue Game With 3 Life Increments Instead Of 8",
+          "address": "0x018E"
+        },
+        {
+          "code": "KATOES",
+          "desc": "The Evil Code!",
+          "address": "0x0580"
+        },
+        {
+          "code": "NUTAIS",
+          "desc": "Softer Music",
+          "address": "0x0535"
+        },
+        {
+          "code": "PILONS",
+          "desc": "Batman Can Only Shoot Upwards Until He Manages To Pick Up A Power Weapon",
+          "address": "0x05D7"
+        },
+        {
+          "code": "ANZAST",
+          "desc": "Changes Colour",
+          "address": "0x0675"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

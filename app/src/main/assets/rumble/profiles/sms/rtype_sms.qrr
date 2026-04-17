@@ -1,0 +1,7 @@
+game_name=R-Type (World) (Action Replay)
+game_key=RType-Sms
+system=sms
+integration_tier=stable
+trigger	life_lost_lives_ce01	life_lost	0xCE01	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ce01	life_gained	0xCE01	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_cc09	score	0xCC09	4	bcd	little	prev < curr	0.8	1	right:0.350:60

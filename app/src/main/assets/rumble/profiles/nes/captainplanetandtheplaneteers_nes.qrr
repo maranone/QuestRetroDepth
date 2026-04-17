@@ -1,0 +1,7 @@
+game_name=Captain Planet and the Planeteers (USA, Europe) (Game Genie)
+game_key=CaptainPlanetAndThePlaneteers-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_0713	life_lost	0x0713	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0713	life_gained	0x0713	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_07c5	score	0x07C5	4	nibble	big	prev < curr	0.8	1	right:0.350:60

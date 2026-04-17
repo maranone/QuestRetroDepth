@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "squashed",
+  "display_name": "Squashed (USA) (Proto)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Squashed (USA) (Proto).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "SINPTKVS",
+          "desc": "Infinite Lives",
+          "address": "0x045E"
+        },
+        {
+          "code": "SXOOZTAX",
+          "desc": "Invincibility",
+          "address": "0x06AA"
+        },
+        {
+          "code": "04CE:63",
+          "desc": "Infinite Boomerangs (On Pick Up)",
+          "address": "0x04CE"
+        },
+        {
+          "code": "0048:63",
+          "desc": "Infinite Rocket Pack (On Pick Up)",
+          "address": "0x0048"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

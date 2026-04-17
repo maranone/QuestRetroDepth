@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "muppetsonwithshow",
+  "display_name": "Muppets, The - On with the Show! (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Muppets, The - On with the Show! (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10000270",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000270"
+        },
+        {
+          "code": "82004A44",
+          "desc": "Infinite Time",
+          "address": "0x02004A44"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select For Low Time",
+          "address": "0x02000130"
+        },
+        {
+          "code": "82004A44",
+          "desc": "Press Select For Low Time",
+          "address": "0x02004A44"
+        },
+        {
+          "code": "32004A68",
+          "desc": "Infinite Health",
+          "address": "0x02004A68"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Muppets, The - On with the Show! (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10000270",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000270"
+        },
+        {
+          "code": "82004A44",
+          "desc": "Infinite Time",
+          "address": "0x02004A44"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select For Low Time",
+          "address": "0x02000130"
+        },
+        {
+          "code": "82004A44",
+          "desc": "Press Select For Low Time",
+          "address": "0x02004A44"
+        },
+        {
+          "code": "32004A68",
+          "desc": "Infinite Health",
+          "address": "0x02004A68"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

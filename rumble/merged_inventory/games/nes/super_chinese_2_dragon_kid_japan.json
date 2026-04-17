@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "superchinese2dragonkid",
+  "display_name": "Super Chinese 2 - Dragon Kid (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Chinese 2 - Dragon Kid (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0543:63",
+          "desc": "Infinite Health",
+          "address": "0x0543"
+        },
+        {
+          "code": "0436:FF",
+          "desc": "Infinite Money",
+          "address": "0x0436"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

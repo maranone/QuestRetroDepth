@@ -1,0 +1,8 @@
+game_name=Super Aleste (Japan)
+game_key=super_aleste_japan
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_0153	pickup	0x7E0153	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	life_lost_lives_0157	life_lost	0x7E0157	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0157	life_gained	0x7E0157	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_006f	level_complete	0x7E006F	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

@@ -131,6 +131,7 @@ class QuestVrActivity : Activity() {
                 startupPrefs.autosaveIntervalSeconds,
                 startupPrefs.loadLastSaveEnabled
             )
+            nativeSetHomebrewFeed(selectedHomebrewFeedIndex())
             if (startupPrefs.loadLastSaveEnabled && startupCandidate != null) {
                 autoLoadStartupRom(startupCandidate)
             }
@@ -320,8 +321,67 @@ class QuestVrActivity : Activity() {
                lower.endsWith(".gen") || lower.endsWith(".smd")
     }
 
+    private fun isNesExtension(name: String): Boolean {
+        val lower = name.lowercase(Locale.US)
+        return lower.endsWith(".nes") || lower.endsWith(".unf") || lower.endsWith(".unif")
+    }
+
+    private fun isGbExtension(name: String): Boolean {
+        val lower = name.lowercase(Locale.US)
+        return lower.endsWith(".gb") || lower.endsWith(".gbc")
+    }
+
+    private fun isGbaExtension(name: String): Boolean {
+        val lower = name.lowercase(Locale.US)
+        return lower.endsWith(".gba")
+    }
+
+    private fun isGgExtension(name: String): Boolean {
+        val lower = name.lowercase(Locale.US)
+        return lower.endsWith(".gg") || lower.endsWith(".sms")
+    }
+
+    private fun isPceExtension(name: String): Boolean {
+        val lower = name.lowercase(Locale.US)
+        return lower.endsWith(".pce") || lower.endsWith(".sgx")
+    }
+
+    private fun is32xExtension(name: String): Boolean {
+        val lower = name.lowercase(Locale.US)
+        return lower.endsWith(".32x")
+    }
+
+    private fun isAtari2600Extension(name: String): Boolean {
+        val lower = name.lowercase(Locale.US)
+        return lower.endsWith(".a26")
+    }
+
+    private fun isN64Extension(name: String): Boolean {
+        val lower = name.lowercase(Locale.US)
+        return lower.endsWith(".z64") || lower.endsWith(".n64") || lower.endsWith(".v64")
+    }
+
+    private fun isDsExtension(name: String): Boolean {
+        val lower = name.lowercase(Locale.US)
+        return lower.endsWith(".nds")
+    }
+
+    private fun isSaturnExtension(name: String): Boolean {
+        val lower = name.lowercase(Locale.US)
+        return lower.endsWith(".cue") || lower.endsWith(".iso") || lower.endsWith(".chd")
+    }
+
+    private fun isDreamcastExtension(name: String): Boolean {
+        val lower = name.lowercase(Locale.US)
+        return lower.endsWith(".gdi") || lower.endsWith(".cdi")
+    }
+
     private fun isSupportedRomExtension(name: String): Boolean {
-        return isSnesExtension(name) || isGenesisExtension(name)
+        return isSnesExtension(name) || isGenesisExtension(name) || isNesExtension(name) ||
+               isGbExtension(name) || isGbaExtension(name) || isGgExtension(name) ||
+               isPceExtension(name) || is32xExtension(name) || isAtari2600Extension(name) ||
+               isN64Extension(name) || isDsExtension(name) || isSaturnExtension(name) ||
+               isDreamcastExtension(name)
     }
 
     private fun isSupportedOrArchiveFile(file: File): Boolean {
@@ -332,6 +392,17 @@ class QuestVrActivity : Activity() {
     private fun romFamilyForName(name: String): RomFamily? = when {
         isSnesExtension(name) -> RomFamily.Snes
         isGenesisExtension(name) -> RomFamily.Genesis
+        isNesExtension(name) -> RomFamily.Nes
+        isGbExtension(name) -> RomFamily.Gb
+        isGbaExtension(name) -> RomFamily.Gba
+        isGgExtension(name) -> RomFamily.Gg
+        isPceExtension(name) -> RomFamily.Pce
+        is32xExtension(name) -> RomFamily.Sega32x
+        isAtari2600Extension(name) -> RomFamily.Atari2600
+        isN64Extension(name) -> RomFamily.N64
+        isDsExtension(name) -> RomFamily.Ds
+        isSaturnExtension(name) -> RomFamily.Saturn
+        isDreamcastExtension(name) -> RomFamily.Dreamcast
         else -> null
     }
 
@@ -340,6 +411,17 @@ class QuestVrActivity : Activity() {
         return when {
             path.contains("/roms/snes/") || path.contains("\\roms\\snes\\") -> RomFamily.Snes
             path.contains("/roms/genesis/") || path.contains("\\roms\\genesis\\") -> RomFamily.Genesis
+            path.contains("/roms/nes/") || path.contains("\\roms\\nes\\") -> RomFamily.Nes
+            path.contains("/roms/gb/") || path.contains("\\roms\\gb\\") -> RomFamily.Gb
+            path.contains("/roms/gba/") || path.contains("\\roms\\gba\\") -> RomFamily.Gba
+            path.contains("/roms/gg/") || path.contains("\\roms\\gg\\") -> RomFamily.Gg
+            path.contains("/roms/pce/") || path.contains("\\roms\\pce\\") -> RomFamily.Pce
+            path.contains("/roms/32x/") || path.contains("\\roms\\32x\\") -> RomFamily.Sega32x
+            path.contains("/roms/atari2600/") || path.contains("\\roms\\atari2600\\") -> RomFamily.Atari2600
+            path.contains("/roms/n64/") || path.contains("\\roms\\n64\\") -> RomFamily.N64
+            path.contains("/roms/ds/") || path.contains("\\roms\\ds\\") -> RomFamily.Ds
+            path.contains("/roms/saturn/") || path.contains("\\roms\\saturn\\") -> RomFamily.Saturn
+            path.contains("/roms/dreamcast/") || path.contains("\\roms\\dreamcast\\") -> RomFamily.Dreamcast
             else -> romFamilyForName(file.name)
         }
     }
@@ -375,6 +457,9 @@ class QuestVrActivity : Activity() {
     private external fun nativeOpenMainMenu()
     private external fun nativeSubmitQuickPresetName(kind: Int, slot: Int, name: String)
     private external fun nativeCancelQuickPresetName(kind: Int, slot: Int)
+    private external fun nativeHomebrewDataReady()
+    private external fun nativeHomebrewDownloadComplete(entryIdx: Int)
+    private external fun nativeSetHomebrewFeed(idx: Int)
 
     fun showQuickPresetRenameDialog(kind: Int, slot: Int, currentName: String) {
         runOnUiThread {
@@ -878,8 +963,8 @@ class QuestVrActivity : Activity() {
             val isAction = (value == "ACTION")
             val isDisabledAction = (value == "DISABLED")
 
-            // Draw separator before action buttons (row 12)
-            if (i == 12) {
+            // Draw separator before action buttons (row 13)
+            if (i == 13) {
                 paint.color = android.graphics.Color.argb(120, 100, 130, 200)
                 paint.strokeWidth = 2f
                 paint.style = android.graphics.Paint.Style.STROKE
@@ -891,12 +976,12 @@ class QuestVrActivity : Activity() {
             if (isAction) {
                 // Full-width action buttons
                 paint.color = when (i) {
-                    12 -> android.graphics.Color.argb(170, 160, 30, 30)
-                    13 -> android.graphics.Color.argb(170, 35, 140, 65)
-                    14 -> android.graphics.Color.argb(170, 15, 85, 40)
-                    15 -> android.graphics.Color.argb(170, 35, 95, 180)
-                    16 -> android.graphics.Color.argb(170, 20, 50, 130)
-                    17 -> android.graphics.Color.argb(120, 35, 55, 45)
+                    13 -> android.graphics.Color.argb(170, 160, 30, 30)
+                    14 -> android.graphics.Color.argb(170, 35, 140, 65)
+                    15 -> android.graphics.Color.argb(170, 15, 85, 40)
+                    16 -> android.graphics.Color.argb(170, 35, 95, 180)
+                    17 -> android.graphics.Color.argb(170, 20, 50, 130)
+                    18 -> android.graphics.Color.argb(120, 35, 55, 45)
                     else -> android.graphics.Color.argb(140, 40, 70, 120)
                 }
                 canvas.drawRoundRect(6f, y + rowH * 0.12f, width - 6f, y + rowH * 0.88f, 8f, 8f, paint)
@@ -1544,15 +1629,20 @@ class QuestVrActivity : Activity() {
     fun getRomDirectory(): String {
         val dir = java.io.File(Environment.getExternalStorageDirectory(), "QuestRetroDepth/roms")
         if (dir.exists() || dir.mkdirs()) {
-            File(dir, "snes").mkdirs()
-            File(dir, "genesis").mkdirs()
+            createRomSubfolders(dir)
             return dir.absolutePath
         }
         return java.io.File(getExternalFilesDir(null), "roms").apply {
             mkdirs()
-            File(this, "snes").mkdirs()
-            File(this, "genesis").mkdirs()
+            createRomSubfolders(this)
         }.absolutePath
+    }
+
+    private fun createRomSubfolders(base: File) {
+        for (name in listOf("snes", "genesis", "nes", "gb", "gba", "gg", "pce", "32x",
+                            "atari2600", "n64", "ds", "saturn", "dreamcast", "arcade")) {
+            File(base, name).mkdirs()
+        }
     }
 
     // Called from C++ to get the settings directory path (created if needed).
@@ -1567,19 +1657,463 @@ class QuestVrActivity : Activity() {
     fun getRumbleDirectory(): String {
         val dir = java.io.File(Environment.getExternalStorageDirectory(), "QuestRetroDepth/rumble")
         if (dir.exists() || dir.mkdirs()) {
-            File(dir, "snes").mkdirs()
-            File(dir, "genesis").mkdirs()
+            createRomSubfolders(dir)
             return dir.absolutePath
         }
         return java.io.File(getExternalFilesDir(null), "rumble").apply {
             mkdirs()
-            File(this, "snes").mkdirs()
-            File(this, "genesis").mkdirs()
+            createRomSubfolders(this)
         }.absolutePath
+    }
+
+    // -----------------------------------------------------------------------
+    // Homebrew Manager
+    // -----------------------------------------------------------------------
+
+    data class HomebrewEntry(
+        val name: String,
+        val author: String,
+        val license: String,
+        val website: String,
+        val download: String,
+        val system: String,
+        val filename: String = "",
+        val licenseUrl: String = "",
+        val source: String = "",
+        val sourceEntryUrl: String = "",
+        val distributionMode: String = "official",
+        val mirrorAllowed: Boolean = false,
+        val notes: String = ""
+    )
+
+    data class HomebrewFeedSource(
+        val name: String,
+        val url: String
+    )
+
+    private var hwEntries: List<HomebrewEntry> = emptyList()
+    private var hwFeeds: List<HomebrewFeedSource> = defaultHomebrewFeeds()
+    private val hwDownloaded = mutableSetOf<String>()
+
+    private val supportedHomebrewSystems = setOf("nes", "gb", "gbc", "gba", "sms", "gg", "snes", "genesis", "pce")
+
+    private fun defaultHomebrewFeeds(): List<HomebrewFeedSource> = listOf(
+        HomebrewFeedSource(
+            "All Systems",
+            "https://raw.githubusercontent.com/YOUR_USER/YOUR_REPO/main/homebrew/all_homebrew.json"
+        ),
+        HomebrewFeedSource(
+            "Featured",
+            "https://raw.githubusercontent.com/YOUR_USER/YOUR_REPO/main/homebrew/featured_homebrew.json"
+        ),
+        HomebrewFeedSource(
+            "GHB",
+            "https://raw.githubusercontent.com/YOUR_USER/YOUR_REPO/main/homebrew/ghb_curated.json"
+        )
+    )
+
+    private fun loadHomebrewFeeds(): List<HomebrewFeedSource> {
+        val file = File(getSettingsDirectory(), HOME_BREW_FEEDS_FILE_NAME)
+        if (!file.isFile) {
+            hwFeeds = defaultHomebrewFeeds()
+            return hwFeeds
+        }
+        return runCatching {
+            val body = file.readText()
+            val parsed = mutableListOf<HomebrewFeedSource>()
+            val obj = org.json.JSONObject(body)
+            val feeds = obj.optJSONArray("feeds") ?: org.json.JSONArray()
+            for (i in 0 until feeds.length()) {
+                val item = feeds.optJSONObject(i) ?: continue
+                val name = item.optString("name").trim()
+                val url = item.optString("url").trim()
+                if (name.isEmpty() || url.isEmpty()) continue
+                if (!url.startsWith("http://") && !url.startsWith("https://")) continue
+                parsed.add(HomebrewFeedSource(name, url))
+            }
+            hwFeeds = if (parsed.isEmpty()) defaultHomebrewFeeds() else parsed
+            hwFeeds
+        }.getOrElse {
+            Log.e("Homebrew", "Feed config read failed: ${it.message}")
+            hwFeeds = defaultHomebrewFeeds()
+            hwFeeds
+        }
+    }
+
+    private fun selectedHomebrewFeedIndex(): Int {
+        val feeds = loadHomebrewFeeds()
+        val saved = prefs.getInt(PREF_HOME_BREW_FEED_INDEX, 0)
+        return saved.coerceIn(0, maxOf(0, feeds.size - 1))
+    }
+
+    private fun hwFeedName(feedIdx: Int): String {
+        val feeds = loadHomebrewFeeds()
+        return feeds.getOrNull(feedIdx)?.name ?: feeds.firstOrNull()?.name ?: "Homebrew"
+    }
+
+    fun showHomebrewFeedDialog(currentFeedIdx: Int) {
+        runOnUiThread {
+            if (isFinishing || (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1 && isDestroyed)) {
+                return@runOnUiThread
+            }
+            val feeds = loadHomebrewFeeds()
+            if (feeds.isEmpty()) return@runOnUiThread
+            val labels = feeds.map { it.name }.toTypedArray()
+            val initial = currentFeedIdx.coerceIn(0, feeds.size - 1)
+            AlertDialog.Builder(this)
+                .setTitle("Select Homebrew Feed")
+                .setSingleChoiceItems(labels, initial) { dialog, which ->
+                    prefs.edit().putInt(PREF_HOME_BREW_FEED_INDEX, which).apply()
+                    nativeSetHomebrewFeed(which)
+                    homebrewFetchFeed(which)
+                    dialog.dismiss()
+                }
+                .setNegativeButton("Cancel", null)
+                .show()
+        }
+    }
+
+    private fun normalizeHomebrewSystem(raw: String): String {
+        val normalized = raw.trim().lowercase(Locale.US)
+        return if (normalized in supportedHomebrewSystems) normalized else ""
+    }
+
+    private fun parseContentDispositionFilename(header: String?): String {
+        if (header.isNullOrBlank()) return ""
+        val starMatch = Regex("""filename\*\s*=\s*([^']*)''([^;]+)""", RegexOption.IGNORE_CASE).find(header)
+        if (starMatch != null) {
+            val encoded = starMatch.groupValues.getOrElse(2) { "" }
+            return runCatching { java.net.URLDecoder.decode(encoded, "UTF-8") }.getOrDefault(encoded)
+        }
+        val plainMatch = Regex("""filename\s*=\s*"?([^\";]+)"?""", RegexOption.IGNORE_CASE).find(header)
+        return plainMatch?.groupValues?.getOrElse(1) { "" } ?: ""
+    }
+
+    private fun inferredFilenameFromUrl(url: String): String {
+        val clean = url.substringBefore('#').substringBefore('?').substringAfterLast('/')
+        return clean
+    }
+
+    private fun resolvedHomebrewFilename(
+        entry: HomebrewEntry,
+        responseFilename: String = "",
+        finalUrl: String = entry.download
+    ): String {
+        val candidates = listOf(
+            entry.filename,
+            responseFilename,
+            inferredFilenameFromUrl(finalUrl),
+            inferredFilenameFromUrl(entry.download)
+        )
+        for (candidate in candidates) {
+            val sanitized = sanitize(candidate.trim())
+            if (sanitized.isNotBlank() && isSupportedOrArchiveFile(File(sanitized))) {
+                return sanitized
+            }
+        }
+        return ""
+    }
+
+    private fun hwFile(entry: HomebrewEntry): File =
+        File(
+            getRomDirectory(),
+            "${entry.system}/${resolvedHomebrewFilename(entry).ifBlank { "__invalid_homebrew__" }}"
+        )
+
+    fun isHomebrewDownloaded(entryIdx: Int): Boolean {
+        val list = hwEntries
+        if (entryIdx < 0 || entryIdx >= list.size) return false
+        return hwFile(list[entryIdx]).exists()
+    }
+
+    fun homebrewFetchFeed(feedIdx: Int) {
+        val url = loadHomebrewFeeds().getOrNull(feedIdx)?.url ?: return
+        Thread {
+            try {
+                val conn = java.net.URL(url).openConnection() as java.net.HttpURLConnection
+                conn.connectTimeout = 10_000
+                conn.readTimeout = 15_000
+                conn.connect()
+                val body = conn.inputStream.bufferedReader().readText()
+                conn.disconnect()
+                val entries = mutableListOf<HomebrewEntry>()
+                val obj = org.json.JSONObject(body)
+                val roms = obj.optJSONArray("roms") ?: org.json.JSONArray()
+                for (i in 0 until roms.length()) {
+                    val r = roms.getJSONObject(i)
+                    val system = normalizeHomebrewSystem(r.optString("system"))
+                    val download = r.optString("download").trim()
+                    if (system.isEmpty() || download.isEmpty()) continue
+                    entries.add(HomebrewEntry(
+                        name     = r.optString("name"),
+                        author   = r.optString("author"),
+                        license  = r.optString("license"),
+                        website  = r.optString("website"),
+                        download = download,
+                        system   = system,
+                        filename = sanitize(r.optString("filename")),
+                        licenseUrl = r.optString("license_url"),
+                        source = r.optString("source"),
+                        sourceEntryUrl = r.optString("source_entry_url"),
+                        distributionMode = r.optString("distribution_mode", "official"),
+                        mirrorAllowed = r.optBoolean("mirror_allowed", false),
+                        notes = r.optString("notes")
+                    ))
+                }
+                hwEntries = entries
+                prefs.edit().putInt(PREF_HOME_BREW_FEED_INDEX, feedIdx).apply()
+                hwDownloaded.clear()
+                for (e in entries) { if (hwFile(e).exists()) hwDownloaded.add(e.download) }
+            } catch (e: Exception) {
+                Log.e("Homebrew", "Fetch failed: ${e.message}")
+            }
+            runOnUiThread { nativeHomebrewDataReady() }
+        }.start()
+    }
+
+    fun homebrewDownload(entryIdx: Int) {
+        val list = hwEntries
+        if (entryIdx < 0 || entryIdx >= list.size) return
+        val entry = list[entryIdx]
+        Thread {
+            try {
+                val conn = java.net.URL(entry.download).openConnection() as java.net.HttpURLConnection
+                conn.connectTimeout = 15_000
+                conn.readTimeout = 60_000
+                conn.instanceFollowRedirects = true
+                conn.connect()
+                val responseFilename = parseContentDispositionFilename(conn.getHeaderField("Content-Disposition"))
+                val resolvedFilename = resolvedHomebrewFilename(entry, responseFilename, conn.url.toString())
+                if (resolvedFilename.isBlank()) {
+                    throw IllegalStateException("Unsupported or missing filename for ${entry.name}")
+                }
+                val dest = File(getRomDirectory(), "${entry.system}/${resolvedFilename}")
+                dest.parentFile?.mkdirs()
+                conn.inputStream.use { inp ->
+                    FileOutputStream(dest).use { out -> inp.copyTo(out) }
+                }
+                conn.disconnect()
+                hwDownloaded.add(entry.download)
+            } catch (e: Exception) {
+                Log.e("Homebrew", "Download failed: ${e.message}")
+            }
+            runOnUiThread { nativeHomebrewDownloadComplete(entryIdx) }
+        }.start()
+    }
+
+    fun homebrewDelete(entryIdx: Int) {
+        val list = hwEntries
+        if (entryIdx < 0 || entryIdx >= list.size) return
+        val entry = list[entryIdx]
+        hwFile(entry).delete()
+        hwDownloaded.remove(entry.download)
+        nativeHomebrewDataReady()
+    }
+
+    fun homebrewOpenWebsite(entryIdx: Int) {
+        val list = hwEntries
+        if (entryIdx < 0 || entryIdx >= list.size) return
+        val url = list[entryIdx].website.ifBlank { list[entryIdx].sourceEntryUrl }
+        if (url.isNotBlank()) {
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+        }
+    }
+
+    fun renderHomebrewListBitmap(
+        hovered: Int, scroll: Int, feedIdx: Int, loading: Boolean, width: Int, height: Int
+    ): IntArray {
+        val bmp = android.graphics.Bitmap.createBitmap(width, height, android.graphics.Bitmap.Config.ARGB_8888)
+        val canvas = android.graphics.Canvas(bmp)
+        val paint = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG)
+
+        paint.color = android.graphics.Color.argb(240, 12, 12, 22)
+        canvas.drawRect(0f, 0f, width.toFloat(), height.toFloat(), paint)
+
+        val titleH = 88f
+        paint.color = android.graphics.Color.argb(255, 20, 50, 90)
+        canvas.drawRect(0f, 0f, width.toFloat(), titleH, paint)
+
+        val feedName = hwFeedName(feedIdx)
+        paint.color = android.graphics.Color.WHITE
+        paint.textSize = 38f
+        paint.typeface = android.graphics.Typeface.DEFAULT_BOLD
+        paint.textAlign = android.graphics.Paint.Align.CENTER
+        canvas.drawText("◀  $feedName  ▶", width / 2f, titleH - 22f, paint)
+
+        val entries = hwEntries
+        val totalRows = entries.size + 2
+        val rowH = ((height - titleH) / totalRows).coerceIn(44f, 80f)
+
+        if (loading) {
+            paint.color = android.graphics.Color.argb(200, 0, 200, 255)
+            paint.textSize = 34f
+            paint.typeface = android.graphics.Typeface.DEFAULT
+            paint.textAlign = android.graphics.Paint.Align.CENTER
+            canvas.drawText("Loading…", width / 2f, titleH + rowH + rowH / 2f, paint)
+        } else {
+            for (i in 1 until totalRows - 1) {
+                val entryIdx = scroll + i - 1
+                if (entryIdx < 0 || entryIdx >= entries.size) continue
+                val entry = entries[entryIdx]
+                val y0 = titleH + i * rowH
+                val downloaded = hwDownloaded.contains(entry.download)
+
+                if (i - 1 == hovered - 1) {
+                    paint.color = android.graphics.Color.argb(80, 0, 180, 255)
+                    canvas.drawRect(0f, y0, width.toFloat(), y0 + rowH, paint)
+                }
+
+                val sysTag = "[${entry.system.uppercase().take(4)}]"
+                paint.textSize = 28f
+                paint.typeface = android.graphics.Typeface.DEFAULT_BOLD
+                paint.textAlign = android.graphics.Paint.Align.LEFT
+                paint.color = android.graphics.Color.argb(200, 100, 200, 255)
+                canvas.drawText(sysTag, 16f, y0 + rowH * 0.62f, paint)
+
+                paint.color = android.graphics.Color.WHITE
+                paint.textSize = 30f
+                canvas.drawText(entry.name, 100f, y0 + rowH * 0.62f, paint)
+
+                val indicator = if (downloaded) "✓" else "↓"
+                paint.color = if (downloaded) android.graphics.Color.argb(255, 80, 220, 80)
+                              else android.graphics.Color.argb(200, 180, 180, 180)
+                paint.textAlign = android.graphics.Paint.Align.RIGHT
+                canvas.drawText(indicator, width - 16f, y0 + rowH * 0.62f, paint)
+            }
+        }
+
+        // Feed toggle row (row 0)
+        val y0feed = titleH
+        if (hovered == 0) {
+            paint.color = android.graphics.Color.argb(80, 0, 180, 255)
+            canvas.drawRect(0f, y0feed, width.toFloat(), y0feed + rowH, paint)
+        }
+        paint.color = android.graphics.Color.argb(220, 160, 220, 255)
+        paint.textSize = 28f
+        paint.textAlign = android.graphics.Paint.Align.CENTER
+        paint.typeface = android.graphics.Typeface.DEFAULT
+        canvas.drawText("Switch Feed", width / 2f, y0feed + rowH * 0.65f, paint)
+
+        // Back row (last row)
+        val yBack = titleH + (totalRows - 1) * rowH
+        if (hovered == totalRows - 1) {
+            paint.color = android.graphics.Color.argb(80, 0, 180, 255)
+            canvas.drawRect(0f, yBack, width.toFloat(), yBack + rowH, paint)
+        }
+        paint.color = android.graphics.Color.argb(220, 160, 160, 255)
+        paint.textSize = 28f
+        paint.textAlign = android.graphics.Paint.Align.CENTER
+        canvas.drawText("← Back", width / 2f, yBack + rowH * 0.65f, paint)
+
+        val pixels = IntArray(width * height)
+        bmp.getPixels(pixels, 0, width, 0, 0, width, height)
+        bmp.recycle()
+        return pixels
+    }
+
+    fun renderHomebrewDetailBitmap(
+        entryIdx: Int, isDownloading: Boolean, width: Int, height: Int
+    ): IntArray {
+        val bmp = android.graphics.Bitmap.createBitmap(width, height, android.graphics.Bitmap.Config.ARGB_8888)
+        val canvas = android.graphics.Canvas(bmp)
+        val paint = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG)
+
+        paint.color = android.graphics.Color.argb(240, 12, 12, 22)
+        canvas.drawRect(0f, 0f, width.toFloat(), height.toFloat(), paint)
+
+        val entries = hwEntries
+        val entry = entries.getOrNull(entryIdx)
+
+        val titleH = 88f
+        paint.color = android.graphics.Color.argb(255, 20, 50, 90)
+        canvas.drawRect(0f, 0f, width.toFloat(), titleH, paint)
+
+        paint.color = android.graphics.Color.WHITE
+        paint.textSize = 36f
+        paint.typeface = android.graphics.Typeface.DEFAULT_BOLD
+        paint.textAlign = android.graphics.Paint.Align.CENTER
+        canvas.drawText(entry?.name ?: "—", width / 2f, titleH - 22f, paint)
+
+        val rowH = (height - titleH) / 4f
+        val rows = listOf("← Back", "", "Open Website", "")
+
+        if (entry != null) {
+            // Info block
+            val infoY = titleH + rowH * 0.15f
+            paint.textAlign = android.graphics.Paint.Align.LEFT
+            paint.textSize = 26f
+            paint.typeface = android.graphics.Typeface.DEFAULT
+            paint.color = android.graphics.Color.argb(200, 160, 200, 255)
+            canvas.drawText("Author: ${entry.author}", 24f, infoY + 30f, paint)
+            canvas.drawText("License: ${entry.license}", 24f, infoY + 64f, paint)
+            canvas.drawText("System: ${entry.system.uppercase()}", 24f, infoY + 98f, paint)
+            val mode = if (entry.distributionMode.equals("mirror", ignoreCase = true)) "Mirror"
+                       else "Official"
+            canvas.drawText("Source: ${entry.source.ifBlank { "Manual" }}", 24f, infoY + 132f, paint)
+            canvas.drawText("Delivery: $mode", 24f, infoY + 166f, paint)
+            paint.textSize = 20f
+            paint.color = android.graphics.Color.argb(180, 120, 160, 220)
+            val website = entry.website.ifBlank { entry.sourceEntryUrl }.take(52)
+            canvas.drawText(website, 24f, infoY + 198f, paint)
+
+            // Download/Delete button (row 1)
+            val downloaded = hwDownloaded.contains(entry.download)
+            val btnY1 = titleH + rowH
+            val btnLabel = when {
+                isDownloading -> "Downloading…"
+                downloaded    -> "Delete"
+                else          -> "Download"
+            }
+            val btnColor = when {
+                isDownloading -> android.graphics.Color.argb(200, 80, 80, 80)
+                downloaded    -> android.graphics.Color.argb(220, 180, 40, 40)
+                else          -> android.graphics.Color.argb(220, 0, 160, 200)
+            }
+            paint.color = btnColor
+            canvas.drawRoundRect(
+                android.graphics.RectF(24f, btnY1 + 8f, width - 24f, btnY1 + rowH - 8f),
+                16f, 16f, paint)
+            paint.color = android.graphics.Color.WHITE
+            paint.textSize = 32f
+            paint.typeface = android.graphics.Typeface.DEFAULT_BOLD
+            paint.textAlign = android.graphics.Paint.Align.CENTER
+            canvas.drawText(btnLabel, width / 2f, btnY1 + rowH * 0.62f, paint)
+
+            // Open Website button (row 2)
+            val btnY2 = titleH + rowH * 2f
+            paint.color = android.graphics.Color.argb(220, 30, 80, 160)
+            canvas.drawRoundRect(
+                android.graphics.RectF(24f, btnY2 + 8f, width - 24f, btnY2 + rowH - 8f),
+                16f, 16f, paint)
+            paint.color = android.graphics.Color.WHITE
+            paint.textSize = 30f
+            paint.typeface = android.graphics.Typeface.DEFAULT_BOLD
+            paint.textAlign = android.graphics.Paint.Align.CENTER
+            canvas.drawText("Open Website", width / 2f, btnY2 + rowH * 0.62f, paint)
+        }
+
+        // Back button (row 3)
+        val btnY3 = titleH + rowH * 3f
+        paint.color = android.graphics.Color.argb(180, 40, 40, 70)
+        canvas.drawRoundRect(
+            android.graphics.RectF(24f, btnY3 + 8f, width - 24f, btnY3 + rowH - 8f),
+            16f, 16f, paint)
+        paint.color = android.graphics.Color.argb(220, 160, 160, 255)
+        paint.textSize = 30f
+        paint.typeface = android.graphics.Typeface.DEFAULT_BOLD
+        paint.textAlign = android.graphics.Paint.Align.CENTER
+        canvas.drawText("← Back", width / 2f, btnY3 + rowH * 0.62f, paint)
+
+        val pixels = IntArray(width * height)
+        bmp.getPixels(pixels, 0, width, 0, 0, width, height)
+        bmp.recycle()
+        return pixels
     }
 
     companion object {
         private const val SAVE_AUTOMATION_FILE_NAME = "save_automation.ini"
+        private const val HOME_BREW_FEEDS_FILE_NAME = "homebrew_feeds.json"
+        private const val PREF_HOME_BREW_FEED_INDEX = "homebrew_feed_index"
         private val VALID_AUTOSAVE_INTERVALS = setOf(0, 5, 30, 60, 300)
         init { System.loadLibrary("questretrodepth_native") }
     }
@@ -1590,7 +2124,6 @@ class QuestVrActivity : Activity() {
     )
 
     private enum class RomFamily {
-        Snes,
-        Genesis
+        Snes, Genesis, Nes, Gb, Gba, Gg, Pce, Sega32x, Atari2600, N64, Ds, Saturn, Dreamcast
     }
 }

@@ -1,0 +1,138 @@
+{
+  "system": "gba",
+  "normalized_title": "disneysportsfootball",
+  "display_name": "Disney Sports - Football (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Disney Sports - Football (USA) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 11,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "10000580",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000580"
+        },
+        {
+          "code": "320074A2",
+          "desc": "Home Team Score Modifier",
+          "address": "0x020074A2"
+        },
+        {
+          "code": "320074A5",
+          "desc": "Away Team Score Modifier",
+          "address": "0x020074A5"
+        },
+        {
+          "code": "3200774C",
+          "desc": "Home Team Infinite Time-Outs",
+          "address": "0x0200774C"
+        },
+        {
+          "code": "3200774C",
+          "desc": "Home Team No Time-Outs",
+          "address": "0x0200774C"
+        },
+        {
+          "code": "3200774D",
+          "desc": "Away Team Infinite Time-Outs",
+          "address": "0x0200774D"
+        },
+        {
+          "code": "3200774D",
+          "desc": "Away Team No Time-Outs",
+          "address": "0x0200774D"
+        },
+        {
+          "code": "32008709",
+          "desc": "Infinite Time",
+          "address": "0x02008709"
+        },
+        {
+          "code": "32007664",
+          "desc": "Infintite Play Time",
+          "address": "0x02007664"
+        },
+        {
+          "code": "320091E8",
+          "desc": "Always 1st Down",
+          "address": "0x020091E8"
+        },
+        {
+          "code": "320091E8",
+          "desc": "Always 4th Down",
+          "address": "0x020091E8"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Disney Sports - Football (USA) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 11,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "10000580",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000580"
+        },
+        {
+          "code": "320074A2",
+          "desc": "Home Team Score Modifier",
+          "address": "0x020074A2"
+        },
+        {
+          "code": "320074A5",
+          "desc": "Away Team Score Modifier",
+          "address": "0x020074A5"
+        },
+        {
+          "code": "3200774C",
+          "desc": "Home Team Infinite Time-Outs",
+          "address": "0x0200774C"
+        },
+        {
+          "code": "3200774C",
+          "desc": "Home Team No Time-Outs",
+          "address": "0x0200774C"
+        },
+        {
+          "code": "3200774D",
+          "desc": "Away Team Infinite Time-Outs",
+          "address": "0x0200774D"
+        },
+        {
+          "code": "3200774D",
+          "desc": "Away Team No Time-Outs",
+          "address": "0x0200774D"
+        },
+        {
+          "code": "32008709",
+          "desc": "Infinite Time",
+          "address": "0x02008709"
+        },
+        {
+          "code": "32007664",
+          "desc": "Infintite Play Time",
+          "address": "0x02007664"
+        },
+        {
+          "code": "320091E8",
+          "desc": "Always 1st Down",
+          "address": "0x020091E8"
+        },
+        {
+          "code": "320091E8",
+          "desc": "Always 4th Down",
+          "address": "0x020091E8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "007everythingornothing",
+  "display_name": "007 - Everything or Nothing (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\007 - Everything or Nothing (World) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "100193C0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020193C0"
+        },
+        {
+          "code": "8201A454",
+          "desc": "Infinite Time (Timed Missions)",
+          "address": "0x0201A454"
+        },
+        {
+          "code": "3200E924",
+          "desc": "Infinite Health",
+          "address": "0x0200E924"
+        },
+        {
+          "code": "330034B8",
+          "desc": "Infinite Health",
+          "address": "0x020034B8"
+        },
+        {
+          "code": "33003981",
+          "desc": "Infinite Ammo (All Guns)",
+          "address": "0x02003981"
+        },
+        {
+          "code": "33003982",
+          "desc": "Infinite Ammo (All Guns)",
+          "address": "0x02003982"
+        },
+        {
+          "code": "33003983",
+          "desc": "Infinite Ammo (All Guns)",
+          "address": "0x02003983"
+        },
+        {
+          "code": "3300397F",
+          "desc": "Always Have Silencer",
+          "address": "0x0200397F"
+        },
+        {
+          "code": "32019EC5",
+          "desc": "Have Alot Of Points (Shop)",
+          "address": "0x02019EC5"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\007 - Everything or Nothing (World) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "100193C0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020193C0"
+        },
+        {
+          "code": "8201A454",
+          "desc": "Infinite Time (Timed Missions)",
+          "address": "0x0201A454"
+        },
+        {
+          "code": "3200E924",
+          "desc": "Infinite Health",
+          "address": "0x0200E924"
+        },
+        {
+          "code": "330034B8",
+          "desc": "Infinite Health",
+          "address": "0x020034B8"
+        },
+        {
+          "code": "33003981",
+          "desc": "Infinite Ammo (All Guns)",
+          "address": "0x02003981"
+        },
+        {
+          "code": "33003982",
+          "desc": "Infinite Ammo (All Guns)",
+          "address": "0x02003982"
+        },
+        {
+          "code": "33003983",
+          "desc": "Infinite Ammo (All Guns)",
+          "address": "0x02003983"
+        },
+        {
+          "code": "3300397F",
+          "desc": "Always Have Silencer",
+          "address": "0x0200397F"
+        },
+        {
+          "code": "32019EC5",
+          "desc": "Have Alot Of Points (Shop)",
+          "address": "0x02019EC5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

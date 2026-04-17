@@ -1,0 +1,36 @@
+game_name=Yumemaboroshi no Gotoku (Japan) (Action Replay)
+game_key=yumemaboroshi_no_gotoku_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_0693	damage_taken	0x7E0693	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0693	death	0x7E0693	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0694	damage_taken	0x7E0694	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0694	death	0x7E0694	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_06c1	damage_taken	0x7E06C1	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_06c1	death	0x7E06C1	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_06c2	damage_taken	0x7E06C2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_06c2	death	0x7E06C2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0695	damage_taken	0x7E0695	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0695	death	0x7E0695	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0696	damage_taken	0x7E0696	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0696	death	0x7E0696	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_06c3	damage_taken	0x7E06C3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_06c3	death	0x7E06C3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_06c4	damage_taken	0x7E06C4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_06c4	death	0x7E06C4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0697	damage_taken	0x7E0697	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0697	death	0x7E0697	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0698	damage_taken	0x7E0698	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0698	death	0x7E0698	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_06c5	damage_taken	0x7E06C5	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_06c5	death	0x7E06C5	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_06c6	damage_taken	0x7E06C6	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_06c6	death	0x7E06C6	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0699	damage_taken	0x7E0699	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0699	death	0x7E0699	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_069a	damage_taken	0x7E069A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_069a	death	0x7E069A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_06c7	damage_taken	0x7E06C7	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_06c7	death	0x7E06C7	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_06c8	damage_taken	0x7E06C8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_06c8	death	0x7E06C8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

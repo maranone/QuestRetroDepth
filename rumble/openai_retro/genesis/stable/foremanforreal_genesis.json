@@ -1,0 +1,55 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "ForemanForReal",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\ForemanForReal-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "ForemanForReal-Genesis"
+  },
+  "triggers": [],
+  "unsupported_evidence": [
+    {
+      "name": "TKO",
+      "meta": {
+        "address": 16733713,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "punches_landed",
+      "meta": {
+        "address": 16734810,
+        "type": ">u2"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "punches_thrown",
+      "meta": {
+        "address": 16734808,
+        "type": ">u2"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "round",
+      "meta": {
+        "address": 16724637,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time",
+      "meta": {
+        "address": 16724606,
+        "type": ">n4"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

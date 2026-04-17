@@ -1,0 +1,61 @@
+{
+  "system": "sms",
+  "normalized_title": "kungfukid",
+  "display_name": "Kung Fu Kid (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Kung Fu Kid (Rumbles)",
+    "Kung Fu Kid (USA, Europe) (Action Replay)",
+    "Kung Fu Kid (USA, Europe, Brazil)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\kungfukid_sms.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xC081",
+        "0xC085",
+        "0xC459"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KungFuKid-Sms-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xC459",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xC081",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xC085",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Kung Fu Kid (USA, Europe, Brazil).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

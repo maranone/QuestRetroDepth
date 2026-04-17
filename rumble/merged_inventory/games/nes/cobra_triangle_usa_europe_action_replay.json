@@ -1,0 +1,89 @@
+{
+  "system": "nes",
+  "normalized_title": "cobratriangle",
+  "display_name": "Cobra Triangle (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Cobra Triangle (USA)",
+    "Cobra Triangle (USA, Europe) (Action Replay)",
+    "Cobra Triangle (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\cobratriangle_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "lives",
+        "score0",
+        "score1",
+        "score2"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0x0703",
+        "0x0704",
+        "0x0705",
+        "0x0738"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CobraTriangle-Nes-v0\\data.json",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0738",
+          "type": "|i1"
+        },
+        {
+          "name": "score0",
+          "address": "0x0705",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0x0704",
+          "type": "|u1"
+        },
+        {
+          "name": "score2",
+          "address": "0x0703",
+          "type": "|u1"
+        },
+        {
+          "name": "time",
+          "address": "0x0714",
+          "type": "|u1"
+        },
+        {
+          "name": "time_mins",
+          "address": "0x0713",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 6
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Cobra Triangle (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "VVXEAUSE",
+          "desc": "Gain An Extra Minute",
+          "address": "0x03E8"
+        },
+        {
+          "code": "LOXEPLIP",
+          "desc": "Gain An Extra Minute",
+          "address": "0x0399"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

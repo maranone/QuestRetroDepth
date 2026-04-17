@@ -1,0 +1,6 @@
+game_name=Ultimate Soccer (Europe) (En,Fr,De,Es,It)
+game_key=ultimate_soccer_europe_en_fr_de_es_it
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff10ea	score	0xFF10EA	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff10ec	score	0xFF10EC	1	uint	little	prev < curr	0.8	1	right:0.350:60

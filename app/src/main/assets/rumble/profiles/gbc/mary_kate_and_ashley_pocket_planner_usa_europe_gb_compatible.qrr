@@ -1,0 +1,8 @@
+game_name=Mary-Kate and Ashley - Pocket Planner (USA, Europe) (GB Compatible)
+game_key=mary_kate_and_ashley_pocket_planner_usa_europe_gb_compatible
+system=gbc
+integration_tier=contrib
+trigger	score_score_d8c9	score	0xD8C9	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_d9c9	score	0xD9C9	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_dac9	score	0xDAC9	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_dbc9	score	0xDBC9	1	uint	little	prev < curr	0.8	1	right:0.350:60

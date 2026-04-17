@@ -1,0 +1,143 @@
+{
+  "system": "nes",
+  "normalized_title": "guerrillawar",
+  "display_name": "Guerrilla War (USA)",
+  "aliases": [
+    "Guerrilla War (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\guerrillawar_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0028",
+        "0x0190"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GuerrillaWar-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0028",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0190",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Guerrilla War (USA).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 18,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "0601:00",
+          "desc": "Set Gun &amp; Bomb Weapons Type Modifier [Player 2]",
+          "address": "0x0601"
+        },
+        {
+          "code": "04C2:FA",
+          "desc": "Infinite Time For Tank",
+          "address": "0x04C2"
+        },
+        {
+          "code": "0039:00",
+          "desc": "Stage Select",
+          "address": "0x0039"
+        },
+        {
+          "code": "0028:05",
+          "desc": "Infinite Lives (Player 1)",
+          "address": "0x0028"
+        },
+        {
+          "code": "0029:04",
+          "desc": "Infinite Lives (Player 2)",
+          "address": "0x0029"
+        },
+        {
+          "code": "0680:02",
+          "desc": "Invincibility (Player 1)",
+          "address": "0x0680"
+        },
+        {
+          "code": "0681:02",
+          "desc": "Invincibility (Player 2)",
+          "address": "0x0681"
+        },
+        {
+          "code": "0600:00",
+          "desc": "Set Gun &amp; Bomb Weapons Type Modifier (Player 1)",
+          "address": "0x0600"
+        },
+        {
+          "code": "0601:00",
+          "desc": "Set Gun & Bomb Weapons Type Modifier (Player 2)",
+          "address": "0x0601"
+        },
+        {
+          "code": "0196:3F",
+          "desc": "Max High Score (Player 1)",
+          "address": "0x0196"
+        },
+        {
+          "code": "0197:42",
+          "desc": "Max High Score (Player 1)",
+          "address": "0x0197"
+        },
+        {
+          "code": "0198:0F",
+          "desc": "Max High Score (Player 1)",
+          "address": "0x0198"
+        },
+        {
+          "code": "0190:3F",
+          "desc": "Max Score (Player 1)",
+          "address": "0x0190"
+        },
+        {
+          "code": "0191:42",
+          "desc": "Max Score (Player 1)",
+          "address": "0x0191"
+        },
+        {
+          "code": "0192:0F",
+          "desc": "Max Score (Player 1)",
+          "address": "0x0192"
+        },
+        {
+          "code": "0193:3F",
+          "desc": "Max Score (Player 2)",
+          "address": "0x0193"
+        },
+        {
+          "code": "0194:42",
+          "desc": "Max Score (Player 2)",
+          "address": "0x0194"
+        },
+        {
+          "code": "0195:0F",
+          "desc": "Max Score (Player 2)",
+          "address": "0x0195"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

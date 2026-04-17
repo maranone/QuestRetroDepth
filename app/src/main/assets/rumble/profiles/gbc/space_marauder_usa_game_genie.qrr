@@ -1,0 +1,10 @@
+game_name=Space Marauder (USA) (Game Genie)
+game_key=space_marauder_usa_game_genie
+system=gbc
+integration_tier=contrib
+trigger	life_lost_lives_c9c0	life_lost	0xC9C0	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_c9c0	life_gained	0xC9C0	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_cac0	score	0xCAC0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_cbc0	score	0xCBC0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ccc0	score	0xCCC0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_cdc0	score	0xCDC0	1	uint	little	prev < curr	0.8	1	right:0.350:60

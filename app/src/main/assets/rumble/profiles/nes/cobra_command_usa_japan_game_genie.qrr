@@ -1,0 +1,6 @@
+game_name=Cobra Command (USA, Japan) (Game Genie)
+game_key=cobra_command_usa_japan_game_genie
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_0128	life_lost	0x0128	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0128	life_gained	0x0128	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

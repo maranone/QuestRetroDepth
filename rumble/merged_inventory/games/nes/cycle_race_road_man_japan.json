@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "cycleraceroadman",
+  "display_name": "Cycle Race - Road Man (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Cycle Race - Road Man (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "031D:7F",
+          "desc": "Infinite Power",
+          "address": "0x031D"
+        },
+        {
+          "code": "0335:5F",
+          "desc": "Infinite Damage",
+          "address": "0x0335"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

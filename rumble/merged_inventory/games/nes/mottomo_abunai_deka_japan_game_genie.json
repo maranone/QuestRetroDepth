@@ -1,0 +1,37 @@
+{
+  "system": "nes",
+  "normalized_title": "mottomoabunaideka",
+  "display_name": "Mottomo Abunai Deka (Japan) (Game Genie)",
+  "aliases": [
+    "Mottomo Abunai Deka (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mottomo Abunai Deka (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "06E1:0A",
+          "desc": "Infinite Energy",
+          "address": "0x06E1"
+        },
+        {
+          "code": "05F6:63",
+          "desc": "Infinite Time",
+          "address": "0x05F6"
+        },
+        {
+          "code": "0674:03",
+          "desc": "No Enemies",
+          "address": "0x0674"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

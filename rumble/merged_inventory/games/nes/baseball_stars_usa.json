@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "baseballstars",
+  "display_name": "Baseball Stars (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Baseball Stars (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0496:01",
+          "desc": "Infinite Ability Points",
+          "address": "0x0496"
+        },
+        {
+          "code": "683C:09",
+          "desc": "9 Million Dollars",
+          "address": "0x683C"
+        },
+        {
+          "code": "0496:00",
+          "desc": "Outs Modifier",
+          "address": "0x0496"
+        },
+        {
+          "code": "0494:00",
+          "desc": "Strikes Modifier",
+          "address": "0x0494"
+        },
+        {
+          "code": "0495:00",
+          "desc": "Balls Modifier",
+          "address": "0x0495"
+        },
+        {
+          "code": "0498:00",
+          "desc": "Team 1 Runs Modifier",
+          "address": "0x0498"
+        },
+        {
+          "code": "0499:00",
+          "desc": "Team 2 Runs Modifier",
+          "address": "0x0499"
+        },
+        {
+          "code": "ASSONPAL",
+          "desc": "Auto Fielding",
+          "address": "0x01DF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

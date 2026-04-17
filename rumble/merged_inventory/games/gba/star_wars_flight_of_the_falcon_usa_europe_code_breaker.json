@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "starwarsflightoffalcon",
+  "display_name": "Star Wars - Flight of the Falcon (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Star Wars - Flight of the Falcon (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "32010078",
+          "desc": "Infinite Lives",
+          "address": "0x02010078"
+        },
+        {
+          "code": "32010084",
+          "desc": "Infinite Shields",
+          "address": "0x02010084"
+        },
+        {
+          "code": "32010160",
+          "desc": "Infinite Torpedos",
+          "address": "0x02010160"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press R Trigger+Select To Pass Mission",
+          "address": "0x02000130"
+        },
+        {
+          "code": "320101B8",
+          "desc": "Press R Trigger+Select To Pass Mission",
+          "address": "0x020101B8"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L Trigger+Select To Be Invincible For Rest Of Mission",
+          "address": "0x02000130"
+        },
+        {
+          "code": "320101B8",
+          "desc": "Press L Trigger+Select To Be Invincible For Rest Of Mission",
+          "address": "0x020101B8"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Star Wars - Flight of the Falcon (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "32010078",
+          "desc": "Infinite Lives",
+          "address": "0x02010078"
+        },
+        {
+          "code": "32010084",
+          "desc": "Infinite Shields",
+          "address": "0x02010084"
+        },
+        {
+          "code": "32010160",
+          "desc": "Infinite Torpedos",
+          "address": "0x02010160"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press R Trigger+Select To Pass Mission",
+          "address": "0x02000130"
+        },
+        {
+          "code": "320101B8",
+          "desc": "Press R Trigger+Select To Pass Mission",
+          "address": "0x020101B8"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L Trigger+Select To Be Invincible For Rest Of Mission",
+          "address": "0x02000130"
+        },
+        {
+          "code": "320101B8",
+          "desc": "Press L Trigger+Select To Be Invincible For Rest Of Mission",
+          "address": "0x020101B8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

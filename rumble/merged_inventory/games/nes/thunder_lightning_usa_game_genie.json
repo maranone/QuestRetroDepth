@@ -1,0 +1,97 @@
+{
+  "system": "nes",
+  "normalized_title": "thunderlightning",
+  "display_name": "Thunder _ Lightning (USA) (Game Genie)",
+  "aliases": [
+    "Thunder _ Lightning (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Thunder _ Lightning (USA).cht",
+      "total_cheat_rows": 28,
+      "raw_entry_count": 15,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "SINPPLVI",
+          "desc": "Infinite Lives P1",
+          "address": "0x0359"
+        },
+        {
+          "code": "006A:04",
+          "desc": "Have long paddle",
+          "address": "0x006A"
+        },
+        {
+          "code": "006A:21",
+          "desc": "Have 3 Balls Full-time",
+          "address": "0x006A"
+        },
+        {
+          "code": "006A:43",
+          "desc": "Have Missiles",
+          "address": "0x006A"
+        },
+        {
+          "code": "0085:01",
+          "desc": "Have Big Power Ball",
+          "address": "0x0085"
+        },
+        {
+          "code": "006A:81",
+          "desc": "Catch Ball On Paddle",
+          "address": "0x006A"
+        },
+        {
+          "code": "005E:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x005E"
+        },
+        {
+          "code": "005F:09",
+          "desc": "Infinite Lives P2",
+          "address": "0x005F"
+        },
+        {
+          "code": "GANPVIPA",
+          "desc": "Start With Longer Paddle",
+          "address": "0x050E"
+        },
+        {
+          "code": "EUUOXAEP",
+          "desc": "Watch The Stage Complete Itself",
+          "address": "0x00BA"
+        },
+        {
+          "code": "ELVPNPEP",
+          "desc": "Powerup Enemy Always Drops Items",
+          "address": "0x013F"
+        },
+        {
+          "code": "ENSPSYEI",
+          "desc": "Instantly Clear The Current Stage (Alt)",
+          "address": "0x077D"
+        },
+        {
+          "code": "EINONPEY",
+          "desc": "Right Side Of Your Paddle Hits Anywhere",
+          "address": "0x01DF"
+        },
+        {
+          "code": "ESKOUPEY",
+          "desc": "Hit Anywhere",
+          "address": "0x01DB"
+        },
+        {
+          "code": "ELVOKPEP",
+          "desc": "Hit The Powerup Ship From Anywhere",
+          "address": "0x01BC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

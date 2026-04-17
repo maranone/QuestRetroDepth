@@ -1,0 +1,33 @@
+{
+  "system": "gb",
+  "normalized_title": "bugsbunnycrazycastle2",
+  "display_name": "Bugs Bunny Crazy Castle 2, The (USA) (Game Genie)",
+  "aliases": [
+    "Bugs Bunny Crazy Castle 2, The (USA) (GameShark)",
+    "Bugs Bunny Crazy Castle 2, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Bugs Bunny Crazy Castle 2, The (USA).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0108CDC3",
+          "desc": "Infinite Arrows, Bombs",
+          "address": "0xCDC3"
+        },
+        {
+          "code": "0180CCC3",
+          "desc": "Have Hammer",
+          "address": "0xCCC3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

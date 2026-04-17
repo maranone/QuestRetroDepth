@@ -1,0 +1,5 @@
+game_name=Tricky Kick (USA)
+game_key=tricky_kick_usa
+system=pce
+integration_tier=contrib
+trigger	level_complete_level_1f0bd7	level_complete	0x1F0BD7	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

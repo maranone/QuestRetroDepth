@@ -1,0 +1,7 @@
+game_name=Mickey Mania - The Timeless Adventures of Mickey Mouse (USA) (Beta) (July, 1994)
+game_key=mickey_mania_the_timeless_adventures_of_mickey_mouse_usa_beta_july_1994
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ff0467	life_lost	0xFF0467	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff0467	life_gained	0xFF0467	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_ff045b	level_complete	0xFF045B	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

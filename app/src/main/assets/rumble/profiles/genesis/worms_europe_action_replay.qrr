@@ -1,0 +1,12 @@
+game_name=Worms (Europe) (Action Replay)
+game_key=worms_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff0cee	damage_taken	0xFF0CEE	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff0cee	death	0xFF0CEE	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff0cec	damage_taken	0xFF0CEC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff0cec	death	0xFF0CEC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff0cf0	damage_taken	0xFF0CF0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff0cf0	death	0xFF0CF0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff0cf2	damage_taken	0xFF0CF2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff0cf2	death	0xFF0CF2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

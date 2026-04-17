@@ -1,0 +1,24 @@
+game_name=Williams Arcade's Greatest Hits (USA)
+game_key=williams_arcade_s_greatest_hits_usa
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ffa2b6	life_lost	0xFFA2B6	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffa2b6	life_gained	0xFFA2B6	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ffa2f4	life_lost	0xFFA2F4	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffa2f4	life_gained	0xFFA2F4	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ffb7fe	life_lost	0xFFB7FE	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffb7fe	life_gained	0xFFB7FE	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ffb83e	life_lost	0xFFB83E	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffb83e	life_gained	0xFFB83E	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ff299c	life_lost	0xFF299C	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff299c	life_gained	0xFF299C	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ff299e	life_lost	0xFF299E	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff299e	life_gained	0xFF299E	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ff29a6	life_lost	0xFF29A6	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff29a6	life_gained	0xFF29A6	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ff29a8	life_lost	0xFF29A8	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff29a8	life_gained	0xFF29A8	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ffdb64	life_lost	0xFFDB64	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffdb64	life_gained	0xFFDB64	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ff1f42	life_lost	0xFF1F42	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff1f42	life_gained	0xFF1F42	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

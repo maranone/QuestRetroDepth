@@ -1,0 +1,11 @@
+game_name=Solomon's Key (USA, Europe) (Game Genie)
+game_key=solomon_s_key_usa_europe_game_genie
+system=nes
+integration_tier=contrib
+trigger	level_complete_level_012e	level_complete	0x012E	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_016e	level_complete	0x016E	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_01a9	level_complete	0x01A9	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_019b	level_complete	0x019B	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_010d	level_complete	0x010D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_011d	level_complete	0x011D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_012d	level_complete	0x012D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

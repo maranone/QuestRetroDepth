@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "finalfantasyivadvance",
+  "display_name": "Final Fantasy IV Advance (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Final Fantasy IV Advance (World) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 62,
+      "distinct_address_count": 33,
+      "sample_raw_entries": [
+        {
+          "code": "820072BC",
+          "desc": "Infinite Money",
+          "address": "0x020072BC"
+        },
+        {
+          "code": "820072BE",
+          "desc": "Infinite Money",
+          "address": "0x020072BE"
+        },
+        {
+          "code": "3200E064",
+          "desc": "No Random Battles",
+          "address": "0x0200E064"
+        },
+        {
+          "code": "7200E002",
+          "desc": "Enter Debug Room",
+          "address": "0x0200E002"
+        },
+        {
+          "code": "8200E04E",
+          "desc": "Enter Debug Room",
+          "address": "0x0200E04E"
+        },
+        {
+          "code": "7200E002",
+          "desc": "Enter Debug Room",
+          "address": "0x0200E002"
+        },
+        {
+          "code": "8200E3C4",
+          "desc": "Enter Debug Room",
+          "address": "0x0200E3C4"
+        },
+        {
+          "code": "7200E002",
+          "desc": "Enter Debug Room",
+          "address": "0x0200E002"
+        },
+        {
+          "code": "8200E3C8",
+          "desc": "Enter Debug Room",
+          "address": "0x0200E3C8"
+        },
+        {
+          "code": "420069F8",
+          "desc": "Max HP/Infinite HP (Out Battle) (ALL)",
+          "address": "0x020069F8"
+        },
+        {
+          "code": "420069FA",
+          "desc": "Max HP/Infinite HP (Out Battle) (ALL)",
+          "address": "0x020069FA"
+        },
+        {
+          "code": "420069FC",
+          "desc": "Max MP/Infinite MP (Out Battle) (ALL)",
+          "address": "0x020069FC"
+        },
+        {
+          "code": "420069FE",
+          "desc": "Max MP/Infinite MP (Out Battle) (ALL)",
+          "address": "0x020069FE"
+        },
+        {
+          "code": "42006A0C",
+          "desc": "Max Status (ALL)",
+          "address": "0x02006A0C"
+        },
+        {
+          "code": "42006A0E",
+          "desc": "Max Status (ALL)",
+          "address": "0x02006A0E"
+        },
+        {
+          "code": "42006A10",
+          "desc": "Max Status (ALL)",
+          "address": "0x02006A10"
+        },
+        {
+          "code": "42006A12",
+          "desc": "Max Status (ALL)",
+          "address": "0x02006A12"
+        },
+        {
+          "code": "42006A14",
+          "desc": "Max Status (ALL)",
+          "address": "0x02006A14"
+        },
+        {
+          "code": "42006A16",
+          "desc": "Max Status (ALL)",
+          "address": "0x02006A16"
+        },
+        {
+          "code": "42006A18",
+          "desc": "Max Status (ALL)",
+          "address": "0x02006A18"
+        },
+        {
+          "code": "72024C68",
+          "desc": "Infinite HP & MP (Battle)",
+          "address": "0x02024C68"
+        },
+        {
+          "code": "42024C44",
+          "desc": "Infinite HP & MP (Battle)",
+          "address": "0x02024C44"
+        },
+        {
+          "code": "72024A50",
+          "desc": "Infinite HP & MP (Battle)",
+          "address": "0x02024A50"
+        },
+        {
+          "code": "42024A2C",
+          "desc": "Infinite HP & MP (Battle)",
+          "address": "0x02024A2C"
+        },
+        {
+          "code": "72024C68",
+          "desc": "Infinite HP & MP (Battle)",
+          "address": "0x02024C68"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Final Fantasy IV Advance (World) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 62,
+      "distinct_address_count": 33,
+      "sample_raw_entries": [
+        {
+          "code": "820072BC",
+          "desc": "Infinite Money",
+          "address": "0x020072BC"
+        },
+        {
+          "code": "820072BE",
+          "desc": "Infinite Money",
+          "address": "0x020072BE"
+        },
+        {
+          "code": "3200E064",
+          "desc": "No Random Battles",
+          "address": "0x0200E064"
+        },
+        {
+          "code": "7200E002",
+          "desc": "Enter Debug Room",
+          "address": "0x0200E002"
+        },
+        {
+          "code": "8200E04E",
+          "desc": "Enter Debug Room",
+          "address": "0x0200E04E"
+        },
+        {
+          "code": "7200E002",
+          "desc": "Enter Debug Room",
+          "address": "0x0200E002"
+        },
+        {
+          "code": "8200E3C4",
+          "desc": "Enter Debug Room",
+          "address": "0x0200E3C4"
+        },
+        {
+          "code": "7200E002",
+          "desc": "Enter Debug Room",
+          "address": "0x0200E002"
+        },
+        {
+          "code": "8200E3C8",
+          "desc": "Enter Debug Room",
+          "address": "0x0200E3C8"
+        },
+        {
+          "code": "420069F8",
+          "desc": "Max HP/Infinite HP (Out Battle) (ALL)",
+          "address": "0x020069F8"
+        },
+        {
+          "code": "420069FA",
+          "desc": "Max HP/Infinite HP (Out Battle) (ALL)",
+          "address": "0x020069FA"
+        },
+        {
+          "code": "420069FC",
+          "desc": "Max MP/Infinite MP (Out Battle) (ALL)",
+          "address": "0x020069FC"
+        },
+        {
+          "code": "420069FE",
+          "desc": "Max MP/Infinite MP (Out Battle) (ALL)",
+          "address": "0x020069FE"
+        },
+        {
+          "code": "42006A0C",
+          "desc": "Max Status (ALL)",
+          "address": "0x02006A0C"
+        },
+        {
+          "code": "42006A0E",
+          "desc": "Max Status (ALL)",
+          "address": "0x02006A0E"
+        },
+        {
+          "code": "42006A10",
+          "desc": "Max Status (ALL)",
+          "address": "0x02006A10"
+        },
+        {
+          "code": "42006A12",
+          "desc": "Max Status (ALL)",
+          "address": "0x02006A12"
+        },
+        {
+          "code": "42006A14",
+          "desc": "Max Status (ALL)",
+          "address": "0x02006A14"
+        },
+        {
+          "code": "42006A16",
+          "desc": "Max Status (ALL)",
+          "address": "0x02006A16"
+        },
+        {
+          "code": "42006A18",
+          "desc": "Max Status (ALL)",
+          "address": "0x02006A18"
+        },
+        {
+          "code": "72024C68",
+          "desc": "Infinite HP & MP (Battle)",
+          "address": "0x02024C68"
+        },
+        {
+          "code": "42024C44",
+          "desc": "Infinite HP & MP (Battle)",
+          "address": "0x02024C44"
+        },
+        {
+          "code": "72024A50",
+          "desc": "Infinite HP & MP (Battle)",
+          "address": "0x02024A50"
+        },
+        {
+          "code": "42024A2C",
+          "desc": "Infinite HP & MP (Battle)",
+          "address": "0x02024A2C"
+        },
+        {
+          "code": "72024C68",
+          "desc": "Infinite HP & MP (Battle)",
+          "address": "0x02024C68"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Nekketsu! Street Basket - Ganbare Dunk Heroes (Japan)
+game_key=nekketsu_street_basket_ganbare_dunk_heroes_japan
+system=nes
+integration_tier=contrib
+trigger	score_score_0166	score	0x0166	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0167	score	0x0167	1	uint	little	prev < curr	0.8	1	right:0.350:60

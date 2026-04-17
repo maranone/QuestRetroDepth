@@ -1,0 +1,6 @@
+game_name=F-Zero - Maximum Velocity (USA, Europe) (Code Breaker)
+game_key=f_zero_maximum_velocity_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_02002b6a	life_lost	0x02002B6A	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02002b6a	life_gained	0x02002B6A	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

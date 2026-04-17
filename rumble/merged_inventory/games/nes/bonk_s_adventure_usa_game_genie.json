@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "bonksadventure",
+  "display_name": "Bonk's Adventure (USA) (Game Genie)",
+  "aliases": [
+    "Bonk's Adventure (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bonk's Adventure (USA).cht",
+      "total_cheat_rows": 38,
+      "raw_entry_count": 36,
+      "distinct_address_count": 29,
+      "sample_raw_entries": [
+        {
+          "code": "SXSPVOSE",
+          "desc": "Infinite Health",
+          "address": "0x012E"
+        },
+        {
+          "code": "AEKAAAZA",
+          "desc": "Start with 1 life",
+          "address": "0x0008"
+        },
+        {
+          "code": "IEKAAAZA",
+          "desc": "Start with 6 lives",
+          "address": "0x0008"
+        },
+        {
+          "code": "AEKAAAZE",
+          "desc": "Start with 9 lives",
+          "address": "0x0008"
+        },
+        {
+          "code": "GEUAAEGA",
+          "desc": "Start with less initial energy (but more maximum energy)",
+          "address": "0x0008"
+        },
+        {
+          "code": "AOUAAEGE",
+          "desc": "Start with more energy",
+          "address": "0x0018"
+        },
+        {
+          "code": "GXEEYEGA",
+          "desc": "Super jump when normal",
+          "address": "0x00AF"
+        },
+        {
+          "code": "GXVPIKSE",
+          "desc": "Keep &quot;speed up&quot; after powered down",
+          "address": "0x042D"
+        },
+        {
+          "code": "0444:0C",
+          "desc": "Infinite Energy",
+          "address": "0x0444"
+        },
+        {
+          "code": "0441:03",
+          "desc": "Infinite Lives",
+          "address": "0x0441"
+        },
+        {
+          "code": "0482:01",
+          "desc": "Invincibility",
+          "address": "0x0482"
+        },
+        {
+          "code": "ESNOXPEY",
+          "desc": "Invincibility",
+          "address": "0x01DA"
+        },
+        {
+          "code": "ENNONPEI",
+          "desc": "Invincibility",
+          "address": "0x01FF"
+        },
+        {
+          "code": "035A:00",
+          "desc": "Vertical Hold Modifier",
+          "address": "0x035A"
+        },
+        {
+          "code": "043D:63",
+          "desc": "99 Carrots Bonus Round",
+          "address": "0x043D"
+        },
+        {
+          "code": "0449:00",
+          "desc": "Anger Modifier",
+          "address": "0x0449"
+        },
+        {
+          "code": "0453:01",
+          "desc": "Enemies Die On Contact",
+          "address": "0x0453"
+        },
+        {
+          "code": "0459:00",
+          "desc": "Level Modifier",
+          "address": "0x0459"
+        },
+        {
+          "code": "0477:0F",
+          "desc": "Super Jump",
+          "address": "0x0477"
+        },
+        {
+          "code": "04A5:FF",
+          "desc": "Jump In Midair, See Note",
+          "address": "0x04A5"
+        },
+        {
+          "code": "YEXELAAA",
+          "desc": "Start On Stage 2-1",
+          "address": "0x008B"
+        },
+        {
+          "code": "IEXELAAE",
+          "desc": "Start On Stage 3-1",
+          "address": "0x008B"
+        },
+        {
+          "code": "ZOXELAAA",
+          "desc": "Start On Stage 4-1",
+          "address": "0x009B"
+        },
+        {
+          "code": "YOXELAAA",
+          "desc": "Start On Stage 5-1",
+          "address": "0x009B"
+        },
+        {
+          "code": "PXXELAAA",
+          "desc": "Start On Stage 6-1",
+          "address": "0x00AB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

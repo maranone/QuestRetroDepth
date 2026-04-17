@@ -1,0 +1,12 @@
+game_name=Lemmings 2 - The Tribes (USA, Europe) (Action Replay)
+game_key=lemmings_2_the_tribes_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff42c7	pickup	0xFF42C7	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff42c9	pickup	0xFF42C9	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff42cb	pickup	0xFF42CB	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff42cd	pickup	0xFF42CD	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff42cf	pickup	0xFF42CF	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff42d1	pickup	0xFF42D1	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff42d3	pickup	0xFF42D3	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff42d5	pickup	0xFF42D5	1	uint	little	prev != curr	0.8	1	right:0.250:18

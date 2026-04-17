@@ -1,0 +1,91 @@
+{
+  "system": "nes",
+  "normalized_title": "battletoadsdoubledragon",
+  "display_name": "Battletoads-Double Dragon (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Battletoads-Double Dragon (USA, Europe) (Game Genie)",
+    "Battletoads-Double Dragon (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Battletoads-Double Dragon (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "IEEOOALA",
+          "desc": "Start With Full Lives",
+          "address": "0x0089"
+        },
+        {
+          "code": "AEEOOALA",
+          "desc": "Start With 1 Life",
+          "address": "0x0089"
+        },
+        {
+          "code": "GZSOXPVI",
+          "desc": "Infinite Lives On Stage 4",
+          "address": "0x01AA"
+        },
+        {
+          "code": "PEVELZZE",
+          "desc": "Start With 10 Continues",
+          "address": "0x028B"
+        },
+        {
+          "code": "AOSEVAZA",
+          "desc": "Double Dragon Super Punch",
+          "address": "0x009E"
+        },
+        {
+          "code": "AOUEUAGA",
+          "desc": "Battletoads Super Punch",
+          "address": "0x009B"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Battletoads-Double Dragon (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "IEEOOALA",
+          "desc": "Start With Full Lives",
+          "address": "0x0089"
+        },
+        {
+          "code": "AEEOOALA",
+          "desc": "Start With 1 Life",
+          "address": "0x0089"
+        },
+        {
+          "code": "GZSOXPVI",
+          "desc": "Infinite Lives On Stage 4",
+          "address": "0x01AA"
+        },
+        {
+          "code": "PEVELZZE",
+          "desc": "Start With 10 Continues",
+          "address": "0x028B"
+        },
+        {
+          "code": "AOSEVAZA",
+          "desc": "Double Dragon Super Punch",
+          "address": "0x009E"
+        },
+        {
+          "code": "AOUEUAGA",
+          "desc": "Battletoads Super Punch",
+          "address": "0x009B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

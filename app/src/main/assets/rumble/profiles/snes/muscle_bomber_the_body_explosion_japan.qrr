@@ -1,0 +1,15 @@
+game_name=Muscle Bomber - The Body Explosion (Japan)
+game_key=muscle_bomber_the_body_explosion_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_0879	damage_taken	0x7E0879	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0879	death	0x7E0879	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0a79	damage_taken	0x7E0A79	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0a79	death	0x7E0A79	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0c79	damage_taken	0x7E0C79	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0c79	death	0x7E0C79	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0e79	damage_taken	0x7E0E79	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0e79	death	0x7E0E79	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_1a60	pickup	0x7E1A60	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_08a1	pickup	0x7E08A1	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0aa1	pickup	0x7E0AA1	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "trollsincrazyland",
+  "display_name": "Trolls in Crazyland, The (Europe)",
+  "aliases": [
+    "Trolls in Crazyland, The (Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\trollsincrazyland_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x010C",
+        "0x06DC",
+        "0x0725"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TrollsInCrazyland-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x06DC",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0725",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x010C",
+          "type": "<n8"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Trolls in Crazyland, The (Europe).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "06DC:04",
+          "desc": "Inifnite Energy",
+          "address": "0x06DC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

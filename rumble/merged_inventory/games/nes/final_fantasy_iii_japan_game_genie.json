@@ -1,0 +1,182 @@
+{
+  "system": "nes",
+  "normalized_title": "finalfantasyiii",
+  "display_name": "Final Fantasy III (Japan) (Game Genie)",
+  "aliases": [
+    "Final Fantasy III (Japan) (Game Genie)",
+    "Final Fantasy III (Japan)",
+    "Final Fantasy III (Japan)(S)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Final Fantasy III (Japan).cht",
+      "total_cheat_rows": 1075,
+      "raw_entry_count": 993,
+      "distinct_address_count": 516,
+      "sample_raw_entries": [
+        {
+          "code": "601B:FF",
+          "desc": "Infinite 'Capacity'",
+          "address": "0x601B"
+        },
+        {
+          "code": "601E:97",
+          "desc": "Infinite High Gold",
+          "address": "0x601E"
+        },
+        {
+          "code": "6021:FF",
+          "desc": "Have All Classes",
+          "address": "0x6021"
+        },
+        {
+          "code": "6022:FF",
+          "desc": "Have All Classes",
+          "address": "0x6022"
+        },
+        {
+          "code": "0046:00",
+          "desc": "Overworld Appearance/Ability Modifier",
+          "address": "0x0046"
+        },
+        {
+          "code": "6101:62",
+          "desc": "Level 99",
+          "address": "0x6101"
+        },
+        {
+          "code": "6102:00",
+          "desc": "No Status Ailments",
+          "address": "0x6102"
+        },
+        {
+          "code": "610C:E7",
+          "desc": "999 HP",
+          "address": "0x610C"
+        },
+        {
+          "code": "610E:03",
+          "desc": "999 HP",
+          "address": "0x610E"
+        },
+        {
+          "code": "610F:E7",
+          "desc": "999 Max. HP",
+          "address": "0x610F"
+        },
+        {
+          "code": "6110:03",
+          "desc": "999 Max. HP",
+          "address": "0x6110"
+        },
+        {
+          "code": "6117:FF",
+          "desc": "Max. Strength",
+          "address": "0x6117"
+        },
+        {
+          "code": "6118:FF",
+          "desc": "Max. Agility",
+          "address": "0x6118"
+        },
+        {
+          "code": "6119:FF",
+          "desc": "Max. Vitality",
+          "address": "0x6119"
+        },
+        {
+          "code": "611A:FF",
+          "desc": "Max. Intellect",
+          "address": "0x611A"
+        },
+        {
+          "code": "611B:FF",
+          "desc": "Max. Spirit",
+          "address": "0x611B"
+        },
+        {
+          "code": "611E:FF",
+          "desc": "Max. M.Evade",
+          "address": "0x611E"
+        },
+        {
+          "code": "611F:FF",
+          "desc": "Max. M.Def",
+          "address": "0x611F"
+        },
+        {
+          "code": "6121:FF",
+          "desc": "Max. # Attacks(?x#)",
+          "address": "0x6121"
+        },
+        {
+          "code": "6122:FF",
+          "desc": "Max. Hit %",
+          "address": "0x6122"
+        },
+        {
+          "code": "6123:FF",
+          "desc": "Max. Attacks(#x?)",
+          "address": "0x6123"
+        },
+        {
+          "code": "612B:FF",
+          "desc": "Max. Defense(?x#)",
+          "address": "0x612B"
+        },
+        {
+          "code": "612C:FF",
+          "desc": "Max. Evade",
+          "address": "0x612C"
+        },
+        {
+          "code": "612D:FF",
+          "desc": "Max. Defense(#x?)",
+          "address": "0x612D"
+        },
+        {
+          "code": "6130:63",
+          "desc": "99 L1 Magic Points",
+          "address": "0x6130"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Final Fantasy III (Japan)(S).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "NNXOLYEE",
+          "desc": "Enemies Do Nothing",
+          "address": "0x07FB"
+        },
+        {
+          "code": "AAVOKPPA",
+          "desc": "Infinite MP (Outside of Battle)",
+          "address": "0x018C"
+        },
+        {
+          "code": "VPKOXXPP",
+          "desc": "Fire 1 Is Much Stronger",
+          "address": "0x029A"
+        },
+        {
+          "code": "IISPXXPP",
+          "desc": "Ice 1 Is Much Stronger",
+          "address": "0x025A"
+        },
+        {
+          "code": "KLVPXXZZ",
+          "desc": "Cure 1 Is Much Stronger",
+          "address": "0x023A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

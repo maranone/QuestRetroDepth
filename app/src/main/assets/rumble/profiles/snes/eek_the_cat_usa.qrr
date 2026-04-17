@@ -1,0 +1,10 @@
+game_name=Eek! The Cat (USA)
+game_key=eek_the_cat_usa
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_1fe5	life_lost	0x7E1FE5	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1fe5	life_gained	0x7E1FE5	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_004e	damage_taken	0x7E004E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_004e	death	0x7E004E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_0fb3	enemy_defeated	0x7E0FB3	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0fbb	enemy_defeated	0x7E0FBB	1	uint	little	prev > curr	0.65	1	right:0.450:35

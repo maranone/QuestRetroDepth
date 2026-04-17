@@ -1,0 +1,82 @@
+{
+  "system": "nes",
+  "normalized_title": "heavyshreddin",
+  "display_name": "Heavy Shreddin (USA) (Game Genie)",
+  "aliases": [
+    "Heavy Shreddin' (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Heavy Shreddin' (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 12,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "PEKAPLGA",
+          "desc": "1 penalty",
+          "address": "0x0309"
+        },
+        {
+          "code": "AEKAPLGE",
+          "desc": "8 penalties",
+          "address": "0x0309"
+        },
+        {
+          "code": "AOKAPLGA",
+          "desc": "16 penalties",
+          "address": "0x0319"
+        },
+        {
+          "code": "NNUEYLAE",
+          "desc": "Select any level",
+          "address": "0x03FF"
+        },
+        {
+          "code": "ZESEKLPA",
+          "desc": "Faster left and right movement",
+          "address": "0x038C"
+        },
+        {
+          "code": "ZEVEKLPA",
+          "desc": "Faster left and right movement",
+          "address": "0x038C"
+        },
+        {
+          "code": "SXSOYIVG",
+          "desc": "Infinite penalties",
+          "address": "0x05AF"
+        },
+        {
+          "code": "SXOPPLVG",
+          "desc": "Infinite penalties",
+          "address": "0x0329"
+        },
+        {
+          "code": "SXUOZLVG",
+          "desc": "Infinite penalties",
+          "address": "0x03AA"
+        },
+        {
+          "code": "006C:63",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x006C"
+        },
+        {
+          "code": "006B:63",
+          "desc": "Infinite Time (Micro-Seconds)",
+          "address": "0x006B"
+        },
+        {
+          "code": "00BC:63",
+          "desc": "Infinite Lives",
+          "address": "0x00BC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

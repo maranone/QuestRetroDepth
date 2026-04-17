@@ -1,0 +1,9 @@
+game_name=Gauntlet IV (USA, Europe) (Action Replay)
+game_key=gauntlet_iv_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff00f8	damage_taken	0xFF00F8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff00f8	death	0xFF00F8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_ff0108	score	0xFF0108	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	damage_taken_health_ff03bc	damage_taken	0xFF03BC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff03bc	death	0xFF03BC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,8 @@
+game_name=Mighty Morphin Power Rangers - The Fighting Edition (USA, Europe) (Action Replay) (diff)
+game_key=mighty_morphin_power_rangers_the_fighting_edition_usa_europe_action_replay_diff
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_1a22	damage_taken	0x7E1A22	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1a22	death	0x7E1A22	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1a26	damage_taken	0x7E1A26	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1a26	death	0x7E1A26	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,6 @@
+game_name=True Lies (USA, Europe) (Game Genie)
+game_key=true_lies_usa_europe_game_genie
+system=gb
+integration_tier=contrib
+trigger	pickup_coins_c1c3	pickup	0xC1C3	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_c2c3	pickup	0xC2C3	1	uint	little	prev != curr	0.8	1	right:0.250:18

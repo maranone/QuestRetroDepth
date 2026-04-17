@@ -1,0 +1,26 @@
+game_name=Sougou Kakutougi - Astral Bout 2 - The Total Fighters (Japan) (Action Replay)
+game_key=sougou_kakutougi_astral_bout_2_the_total_fighters_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_041c	damage_taken	0x7E041C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_041c	death	0x7E041C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_041f	damage_taken	0x7E041F	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_041f	death	0x7E041F	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0421	damage_taken	0x7E0421	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0421	death	0x7E0421	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0423	damage_taken	0x7E0423	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0423	death	0x7E0423	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0425	damage_taken	0x7E0425	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0425	death	0x7E0425	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04bc	damage_taken	0x7E04BC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04bc	death	0x7E04BC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04bd	damage_taken	0x7E04BD	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04bd	death	0x7E04BD	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04bf	damage_taken	0x7E04BF	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04bf	death	0x7E04BF	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04c1	damage_taken	0x7E04C1	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04c1	death	0x7E04C1	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04c3	damage_taken	0x7E04C3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04c3	death	0x7E04C3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04c5	damage_taken	0x7E04C5	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04c5	death	0x7E04C5	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,110 @@
+{
+  "system": "nes",
+  "normalized_title": "splatterhousewanpakugraffiti",
+  "display_name": "Splatterhouse - Wanpaku Graffiti (Japan) (Translated En)",
+  "aliases": [
+    "Splatterhouse - Wanpaku Graffiti (Japan)",
+    "Splatterhouse - Wanpaku Graffiti (Japan) (Translated En)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Splatterhouse - Wanpaku Graffiti (Japan).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 16,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "03C7:04",
+          "desc": "Infinite Energy",
+          "address": "0x03C7"
+        },
+        {
+          "code": "008D:00",
+          "desc": "Invincibility",
+          "address": "0x008D"
+        },
+        {
+          "code": "008E:00",
+          "desc": "Invincibility",
+          "address": "0x008E"
+        },
+        {
+          "code": "03C7:44",
+          "desc": "Infinite Health",
+          "address": "0x03C7"
+        },
+        {
+          "code": "03AF:44",
+          "desc": "Have All Health Upgrades Maxed",
+          "address": "0x03AF"
+        },
+        {
+          "code": "007C:00",
+          "desc": "Walk On Water",
+          "address": "0x007C"
+        },
+        {
+          "code": "0086:04",
+          "desc": "Shotgun",
+          "address": "0x0086"
+        },
+        {
+          "code": "0090:20",
+          "desc": "Super Jump",
+          "address": "0x0090"
+        },
+        {
+          "code": "00B2:02",
+          "desc": "Can't Be Slowed Down",
+          "address": "0x00B2"
+        },
+        {
+          "code": "00EE:01",
+          "desc": "Open Door",
+          "address": "0x00EE"
+        },
+        {
+          "code": "0161:01",
+          "desc": "Boss One Hit Kill",
+          "address": "0x0161"
+        },
+        {
+          "code": "03C6:0A",
+          "desc": "Infinite Shotgun Ammo",
+          "address": "0x03C6"
+        },
+        {
+          "code": "0600:07",
+          "desc": "Walk Behind Scenery",
+          "address": "0x0600"
+        },
+        {
+          "code": "0038:01",
+          "desc": "Buckethead",
+          "address": "0x0038"
+        },
+        {
+          "code": "0793:10",
+          "desc": "Buckethead",
+          "address": "0x0793"
+        },
+        {
+          "code": "0797:10",
+          "desc": "Buckethead",
+          "address": "0x0797"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Splatterhouse - Wanpaku Graffiti (Japan) (Translated En).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

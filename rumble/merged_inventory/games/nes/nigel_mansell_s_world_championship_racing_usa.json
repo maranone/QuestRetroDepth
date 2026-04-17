@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "nigelmansellsworldchampionshipracing",
+  "display_name": "Nigel Mansell's World Championship Racing (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Nigel Mansell's World Championship Racing (USA).cht",
+      "total_cheat_rows": 46,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "0618:FF",
+          "desc": "Go At Maximum Speed (And Beyond!)",
+          "address": "0x0618"
+        },
+        {
+          "code": "0689:00",
+          "desc": "Lap Modifier",
+          "address": "0x0689"
+        },
+        {
+          "code": "036F:0F",
+          "desc": "Infinite Tire Damage (Green Bar On HUD)",
+          "address": "0x036F"
+        },
+        {
+          "code": "0609:00",
+          "desc": "Lap Time Modifier (Minutes)",
+          "address": "0x0609"
+        },
+        {
+          "code": "060A:00",
+          "desc": "Lap Time Modifier (Seconds - Tens)",
+          "address": "0x060A"
+        },
+        {
+          "code": "060B:00",
+          "desc": "Lap Time Modifier (Seconds - Ones)",
+          "address": "0x060B"
+        },
+        {
+          "code": "060C:00",
+          "desc": "Lap Time Modifier (Micro-Seconds - Tens Digit)",
+          "address": "0x060C"
+        },
+        {
+          "code": "060D:00",
+          "desc": "Lap Time Modifier (Micro-Seconds - Ones Digit)",
+          "address": "0x060D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

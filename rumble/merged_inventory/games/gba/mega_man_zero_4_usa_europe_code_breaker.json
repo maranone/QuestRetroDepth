@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "megamanzero4",
+  "display_name": "Mega Man Zero 4 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Mega Man Zero 4 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "320366A4",
+          "desc": "Infinite Energy - Level F",
+          "address": "0x020366A4"
+        },
+        {
+          "code": "32035910",
+          "desc": "Always Have 9 Lives",
+          "address": "0x02035910"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Mega Man Zero 4 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "320366A4",
+          "desc": "Infinite Energy - Level F",
+          "address": "0x020366A4"
+        },
+        {
+          "code": "32035910",
+          "desc": "Always Have 9 Lives",
+          "address": "0x02035910"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

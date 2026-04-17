@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "fortress",
+  "display_name": "Fortress (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Fortress (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 10,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "100028A0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020028A0"
+        },
+        {
+          "code": "8203AA8C",
+          "desc": "Infinite Time",
+          "address": "0x0203AA8C"
+        },
+        {
+          "code": "8203A72C",
+          "desc": "Max Score (Red Player)",
+          "address": "0x0203A72C"
+        },
+        {
+          "code": "8203A72E",
+          "desc": "Max Score (Red Player)",
+          "address": "0x0203A72E"
+        },
+        {
+          "code": "8203A72C",
+          "desc": "No Score (Red Player)",
+          "address": "0x0203A72C"
+        },
+        {
+          "code": "8203A72E",
+          "desc": "No Score (Red Player)",
+          "address": "0x0203A72E"
+        },
+        {
+          "code": "8203AA64",
+          "desc": "Max Score (Green Player)",
+          "address": "0x0203AA64"
+        },
+        {
+          "code": "8203AA66",
+          "desc": "Max Score (Green Player)",
+          "address": "0x0203AA66"
+        },
+        {
+          "code": "8203AA64",
+          "desc": "No Score (Green Player)",
+          "address": "0x0203AA64"
+        },
+        {
+          "code": "8203AA66",
+          "desc": "No Score (Green Player)",
+          "address": "0x0203AA66"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Fortress (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 10,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "100028A0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020028A0"
+        },
+        {
+          "code": "8203AA8C",
+          "desc": "Infinite Time",
+          "address": "0x0203AA8C"
+        },
+        {
+          "code": "8203A72C",
+          "desc": "Max Score (Red Player)",
+          "address": "0x0203A72C"
+        },
+        {
+          "code": "8203A72E",
+          "desc": "Max Score (Red Player)",
+          "address": "0x0203A72E"
+        },
+        {
+          "code": "8203A72C",
+          "desc": "No Score (Red Player)",
+          "address": "0x0203A72C"
+        },
+        {
+          "code": "8203A72E",
+          "desc": "No Score (Red Player)",
+          "address": "0x0203A72E"
+        },
+        {
+          "code": "8203AA64",
+          "desc": "Max Score (Green Player)",
+          "address": "0x0203AA64"
+        },
+        {
+          "code": "8203AA66",
+          "desc": "Max Score (Green Player)",
+          "address": "0x0203AA66"
+        },
+        {
+          "code": "8203AA64",
+          "desc": "No Score (Green Player)",
+          "address": "0x0203AA64"
+        },
+        {
+          "code": "8203AA66",
+          "desc": "No Score (Green Player)",
+          "address": "0x0203AA66"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

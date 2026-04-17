@@ -1,0 +1,253 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "MazinSagaMutantFighter",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\experimental\\MazinSagaMutantFighter-Genesis\\data.json",
+    "integration_tier": "experimental",
+    "game_key": "MazinSagaMutantFighter-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "enemy_defeated_enemy_health_ffceb1",
+      "event": "enemy_defeated",
+      "watch": [
+        {
+          "absolute_address": "0xFFCEB1",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFCEB1",
+          "ram_offset": 52913
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.45,
+          "duration_ms": 35
+        }
+      ],
+      "confidence": 0.65,
+      "needs_review": true,
+      "reason": "Enemy health reaching zero is a strong kill proxy.",
+      "source_fields": [
+        {
+          "name": "enemy_health",
+          "address": "0xFFCEB1",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_health_ffcded",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0xFFCDED",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFCDED",
+          "ram_offset": 52717
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFFCDED",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_ffcded",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0xFFCDED",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFCDED",
+          "ram_offset": 52717
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFFCDED",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_lives_ffebd9",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0xFFEBD9",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFEBD9",
+          "ram_offset": 60377
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xFFEBD9",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_ffebd9",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0xFFEBD9",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFEBD9",
+          "ram_offset": 60377
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xFFEBD9",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_fff28a",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xFFF28A",
+          "size": 4,
+          "value_type": "uint",
+          "byte_order": "big",
+          "raw_type": ">u4",
+          "address": "0xFFF28A",
+          "ram_offset": 62090
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xFFF28A",
+          "raw_type": ">u4"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "fight_health",
+      "meta": {
+        "address": 16773767,
+        "type": "|i1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "round",
+      "meta": {
+        "address": 16773778,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "subround",
+      "meta": {
+        "address": 16773779,
+        "type": "|i1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

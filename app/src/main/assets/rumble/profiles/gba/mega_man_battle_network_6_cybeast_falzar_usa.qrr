@@ -1,0 +1,10 @@
+game_name=Mega Man Battle Network 6 - Cybeast Falzar (USA)
+game_key=mega_man_battle_network_6_cybeast_falzar_usa
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_0203aa04	damage_taken	0x0203AA04	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0203aa04	death	0x0203AA04	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0203a9d4	damage_taken	0x0203A9D4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0203a9d4	death	0x0203A9D4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0200480a	damage_taken	0x0200480A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0200480a	death	0x0200480A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

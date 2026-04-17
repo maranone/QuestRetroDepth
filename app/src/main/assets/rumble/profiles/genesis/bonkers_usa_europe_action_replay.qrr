@@ -1,0 +1,11 @@
+game_name=Bonkers (USA, Europe) (Action Replay)
+game_key=bonkers_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ff8b94	life_lost	0xFF8B94	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff8b94	life_gained	0xFF8B94	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_ff8b34	damage_taken	0xFF8B34	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff8b34	death	0xFF8B34	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_ff8d94	level_complete	0xFF8D94	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	pickup_coins_ff892a	pickup	0xFF892A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_ff898a	level_complete	0xFF898A	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

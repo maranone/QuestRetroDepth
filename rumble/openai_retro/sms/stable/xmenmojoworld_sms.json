@@ -1,0 +1,157 @@
+{
+  "schema": "qrd.rumble.sms.v1",
+  "game": {
+    "name": "XMenMojoWorld",
+    "system": "sms"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\XMenMojoWorld-Sms\\data.json",
+    "integration_tier": "stable",
+    "game_key": "XMenMojoWorld-Sms"
+  },
+  "triggers": [
+    {
+      "id": "game_over_gameover_c28d",
+      "event": "game_over",
+      "watch": [
+        {
+          "absolute_address": "0xC28D",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xC28D",
+          "ram_offset": 653
+        }
+      ],
+      "condition": "prev == 0 && curr != 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Explicit game-over flag.",
+      "source_fields": [
+        {
+          "name": "gameover",
+          "address": "0xC28D",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_health_df8a",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0xDF8A",
+          "size": 2,
+          "value_type": "int",
+          "byte_order": "big",
+          "raw_type": ">i2",
+          "address": "0xDF8A",
+          "ram_offset": 8074
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xDF8A",
+          "raw_type": ">i2"
+        }
+      ]
+    },
+    {
+      "id": "death_health_df8a",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0xDF8A",
+          "size": 2,
+          "value_type": "int",
+          "byte_order": "big",
+          "raw_type": ">i2",
+          "address": "0xDF8A",
+          "ram_offset": 8074
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xDF8A",
+          "raw_type": ">i2"
+        }
+      ]
+    },
+    {
+      "id": "score_score_df86",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xDF86",
+          "size": 2,
+          "value_type": "uint",
+          "byte_order": "little",
+          "raw_type": "<u2",
+          "address": "0xDF86",
+          "ram_offset": 8070
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xDF86",
+          "raw_type": "<u2"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

@@ -1,0 +1,47 @@
+{
+  "system": "nes",
+  "normalized_title": "legendsofdiamondbaseballchampionshipgame",
+  "display_name": "Legends of the Diamond - The Baseball Championship Game (USA) (Game Genie)",
+  "aliases": [
+    "Legends of the Diamond - The Baseball Championship Game (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Legends of the Diamond - The Baseball Championship Game (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0656:00",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x0656"
+        },
+        {
+          "code": "0657:00",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x0657"
+        },
+        {
+          "code": "065B:00",
+          "desc": "Strike Modifier",
+          "address": "0x065B"
+        },
+        {
+          "code": "065D:00",
+          "desc": "Ball Modifier",
+          "address": "0x065D"
+        },
+        {
+          "code": "064A:00",
+          "desc": "Outs Modifier",
+          "address": "0x064A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

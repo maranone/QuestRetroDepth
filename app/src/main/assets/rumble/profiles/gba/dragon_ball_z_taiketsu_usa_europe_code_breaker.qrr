@@ -1,0 +1,8 @@
+game_name=Dragon Ball Z - Taiketsu (USA, Europe) (Code Breaker)
+game_key=dragon_ball_z_taiketsu_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_020035c6	damage_taken	0x020035C6	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020035c6	death	0x020035C6	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_02000020	enemy_defeated	0x02000020	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_020037f2	enemy_defeated	0x020037F2	1	uint	little	prev > curr	0.65	1	right:0.450:35

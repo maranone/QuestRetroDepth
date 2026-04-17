@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "britneysdancebeat",
+  "display_name": "Britney's Dance Beat (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Britney's Dance Beat (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10001050",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001050"
+        },
+        {
+          "code": "83002C28",
+          "desc": "Have All Photos+Video+Puzzles",
+          "address": "0x02002C28"
+        },
+        {
+          "code": "83002C2A",
+          "desc": "Have All Photos+Video+Puzzles",
+          "address": "0x02002C2A"
+        },
+        {
+          "code": "83002BE8",
+          "desc": "Have All Practice+Concert Modes Complete",
+          "address": "0x02002BE8"
+        },
+        {
+          "code": "83002BEA",
+          "desc": "Have All Practice+Concert Modes Complete",
+          "address": "0x02002BEA"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Britney's Dance Beat (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10001050",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001050"
+        },
+        {
+          "code": "83002C28",
+          "desc": "Have All Photos+Video+Puzzles",
+          "address": "0x02002C28"
+        },
+        {
+          "code": "83002C2A",
+          "desc": "Have All Photos+Video+Puzzles",
+          "address": "0x02002C2A"
+        },
+        {
+          "code": "83002BE8",
+          "desc": "Have All Practice+Concert Modes Complete",
+          "address": "0x02002BE8"
+        },
+        {
+          "code": "83002BEA",
+          "desc": "Have All Practice+Concert Modes Complete",
+          "address": "0x02002BEA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

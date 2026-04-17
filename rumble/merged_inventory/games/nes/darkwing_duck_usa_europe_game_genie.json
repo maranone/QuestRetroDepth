@@ -1,0 +1,71 @@
+{
+  "system": "nes",
+  "normalized_title": "darkwingduck",
+  "display_name": "Darkwing Duck (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Darkwing Duck (USA, Europe) (Game Genie)",
+    "Darkwing Duck (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Darkwing Duck (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "AVUEUOSZ",
+          "desc": "Infinite Gas (If You Avoid The \"Go\" Missions)",
+          "address": "0x01EB"
+        },
+        {
+          "code": "IYEAKPAY",
+          "desc": "More Gas Picked Up",
+          "address": "0x017C"
+        },
+        {
+          "code": "PZPEOX",
+          "desc": "Auto Pick-Up On Certain Items",
+          "address": "0x02A1"
+        },
+        {
+          "code": "GKYEVA",
+          "desc": "Get A Lot of Gas Form Small Gas Containers",
+          "address": "0x00C6"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Darkwing Duck (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "AVUEUOSZ",
+          "desc": "Infinite Gas (If You Avoid The \"Go\" Missions)",
+          "address": "0x01EB"
+        },
+        {
+          "code": "IYEAKPAY",
+          "desc": "More Gas Picked Up",
+          "address": "0x017C"
+        },
+        {
+          "code": "PZPEOX",
+          "desc": "Auto Pick-Up On Certain Items",
+          "address": "0x02A1"
+        },
+        {
+          "code": "GKYEVA",
+          "desc": "Get A Lot of Gas Form Small Gas Containers",
+          "address": "0x00C6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

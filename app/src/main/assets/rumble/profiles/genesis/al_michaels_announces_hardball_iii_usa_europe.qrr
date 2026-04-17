@@ -1,0 +1,5 @@
+game_name=Al Michaels Announces HardBall III (USA, Europe)
+game_key=al_michaels_announces_hardball_iii_usa_europe
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff00b0	score	0xFF00B0	1	uint	little	prev < curr	0.8	1	right:0.350:60

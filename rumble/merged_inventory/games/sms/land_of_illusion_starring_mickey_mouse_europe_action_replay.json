@@ -1,0 +1,53 @@
+{
+  "system": "sms",
+  "normalized_title": "landofillusionstarringmickeymouse",
+  "display_name": "Land of Illusion Starring Mickey Mouse (Europe) (Action Replay)",
+  "aliases": [
+    "Land of Illusion Starring Mickey Mouse (Europe) (Action Replay)",
+    "Land of Illusion Starring Mickey Mouse (Europe, Brazil)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\landofillusionstarringmickeymouse_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xC09F",
+        "0xC0A7"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\LandOfIllusionStarringMickeyMouse-Sms-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xC09F",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xC0A7",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Land of Illusion Starring Mickey Mouse (Europe, Brazil).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

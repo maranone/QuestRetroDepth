@@ -1,0 +1,179 @@
+{
+  "schema": "qrd.rumble.nes.v1",
+  "game": {
+    "name": "Contra",
+    "system": "nes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\experimental\\Contra-Nes\\data.json",
+    "integration_tier": "experimental",
+    "game_key": "Contra-Nes"
+  },
+  "triggers": [
+    {
+      "id": "level_complete_level_0030",
+      "event": "level_complete",
+      "watch": [
+        {
+          "absolute_address": "0x0030",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0030",
+          "ram_offset": 48
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.8,
+          "duration_ms": 400
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.8,
+          "duration_ms": 400
+        }
+      ],
+      "confidence": 0.65,
+      "needs_review": true,
+      "reason": "Stage/zone progression field; review in gameplay.",
+      "source_fields": [
+        {
+          "name": "level",
+          "address": "0x0030",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_lives_0032",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0x0032",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "address": "0x0032",
+          "ram_offset": 50
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x0032",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_0032",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0x0032",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "address": "0x0032",
+          "ram_offset": 50
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x0032",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_07e2",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x07E2",
+          "size": 2,
+          "value_type": "uint",
+          "byte_order": "little",
+          "raw_type": "<u2",
+          "address": "0x07E2",
+          "ram_offset": 2018
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0x07E2",
+          "raw_type": "<u2"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "player_state",
+      "meta": {
+        "address": 326,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "xscroll",
+      "meta": {
+        "address": 100,
+        "type": ">u2"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

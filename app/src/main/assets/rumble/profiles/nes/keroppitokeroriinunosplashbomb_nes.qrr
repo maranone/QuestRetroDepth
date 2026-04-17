@@ -1,0 +1,7 @@
+game_name=Keroppi to Keroriinu no Splash Bomb! (Japan)
+game_key=KeroppiToKeroriinuNoSplashBomb-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_00cb	life_lost	0x00CB	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00cb	life_gained	0x00CB	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_00c5	score	0x00C5	2	uint	little	prev < curr	0.8	1	right:0.350:60

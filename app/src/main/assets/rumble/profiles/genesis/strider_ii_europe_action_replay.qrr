@@ -1,0 +1,6 @@
+game_name=Strider II (Europe) (Action Replay)
+game_key=strider_ii_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_fff5da	life_lost	0xFFF5DA	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff5da	life_gained	0xFFF5DA	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

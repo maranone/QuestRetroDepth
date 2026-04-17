@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "chouwakuseisenkimetafight",
+  "display_name": "Chou-Wakusei Senki - MetaFight (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Chou-Wakusei Senki - MetaFight (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "EAUPVATA",
+          "desc": "Infinite homing missiles",
+          "address": "0x000E"
+        },
+        {
+          "code": "040D:FF",
+          "desc": "infinite health",
+          "address": "0x040D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

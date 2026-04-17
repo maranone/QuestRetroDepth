@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "hellokittynoohanabatake",
+  "display_name": "Hello Kitty no Ohanabatake (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hello Kitty no Ohanabatake (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "0029:00",
+          "desc": "Stage Modifier",
+          "address": "0x0029"
+        },
+        {
+          "code": "0386:D9",
+          "desc": "Infinite 99 Lives",
+          "address": "0x0386"
+        },
+        {
+          "code": "0387:D9",
+          "desc": "Infinite 99 Lives",
+          "address": "0x0387"
+        },
+        {
+          "code": "038A:D9",
+          "desc": "Infinite Time",
+          "address": "0x038A"
+        },
+        {
+          "code": "038B:D9",
+          "desc": "Infinite Time",
+          "address": "0x038B"
+        },
+        {
+          "code": "0390:01",
+          "desc": "Sort of Jump Midair",
+          "address": "0x0390"
+        },
+        {
+          "code": "066E:00",
+          "desc": "Jump Higher",
+          "address": "0x066E"
+        },
+        {
+          "code": "066D:00",
+          "desc": "Rise Up",
+          "address": "0x066D"
+        },
+        {
+          "code": "039E:00",
+          "desc": "Can't Be Hit",
+          "address": "0x039E"
+        },
+        {
+          "code": "03E5:00",
+          "desc": "No Enemies",
+          "address": "0x03E5"
+        },
+        {
+          "code": "0616:08",
+          "desc": "Auto Complete Levels",
+          "address": "0x0616"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

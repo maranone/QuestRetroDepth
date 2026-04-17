@@ -1,0 +1,6 @@
+game_name=Tecmo Baseball (USA)
+game_key=tecmo_baseball_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_0347	score	0x0347	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0348	score	0x0348	1	uint	little	prev < curr	0.8	1	right:0.350:60

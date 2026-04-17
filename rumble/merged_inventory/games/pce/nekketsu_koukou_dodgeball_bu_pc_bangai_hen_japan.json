@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "nekketsukoukoudodgeballbupcbangaihen",
+  "display_name": "Nekketsu Koukou Dodgeball-bu - PC Bangai Hen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Nekketsu Koukou Dodgeball-bu - PC Bangai Hen (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f06e2:00",
+          "desc": "Enemy Has Zero Energy",
+          "address": "0x1F06E2"
+        },
+        {
+          "code": "1f0634:00",
+          "desc": "Enemy Has Zero Energy",
+          "address": "0x1F0634"
+        },
+        {
+          "code": "1f06e6:00",
+          "desc": "Enemy Has Zero Energy",
+          "address": "0x1F06E6"
+        },
+        {
+          "code": "1f06e8:00",
+          "desc": "Enemy Has Zero Energy",
+          "address": "0x1F06E8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

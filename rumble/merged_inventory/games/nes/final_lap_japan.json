@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "finallap",
+  "display_name": "Final Lap (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Final Lap (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0404:05",
+          "desc": "Infinite Ability Points",
+          "address": "0x0404"
+        },
+        {
+          "code": "050F:FF",
+          "desc": "Max Speed",
+          "address": "0x050F"
+        },
+        {
+          "code": "00DC:03",
+          "desc": "One Lap To Go",
+          "address": "0x00DC"
+        },
+        {
+          "code": "00DC:3F",
+          "desc": "Infinite Nitro",
+          "address": "0x00DC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

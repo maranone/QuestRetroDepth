@@ -1,0 +1,52 @@
+{
+  "system": "nes",
+  "normalized_title": "lionking",
+  "display_name": "Lion King, The (Europe) (Game Genie)",
+  "aliases": [
+    "Lion King, The (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Lion King, The (Europe).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "SXNEAKVK",
+          "desc": "Infinite Lives",
+          "address": "0x04A8"
+        },
+        {
+          "code": "059A:04",
+          "desc": "Infinite Energy",
+          "address": "0x059A"
+        },
+        {
+          "code": "059B:09",
+          "desc": "Infinite Lives",
+          "address": "0x059B"
+        },
+        {
+          "code": "05A2:01",
+          "desc": "Invincibility",
+          "address": "0x05A2"
+        },
+        {
+          "code": "EINEILEY",
+          "desc": "Invincibility",
+          "address": "0x03DD"
+        },
+        {
+          "code": "EIUEGYEY",
+          "desc": "Stage Skip",
+          "address": "0x07DC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

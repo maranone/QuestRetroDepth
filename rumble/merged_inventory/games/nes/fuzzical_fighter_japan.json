@@ -1,0 +1,90 @@
+{
+  "system": "nes",
+  "normalized_title": "fuzzicalfighter",
+  "display_name": "Fuzzical Fighter (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Fuzzical Fighter (Japan).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "0015:00",
+          "desc": "Stage Modifier",
+          "address": "0x0015"
+        },
+        {
+          "code": "002B:FF",
+          "desc": "Infinite Gold",
+          "address": "0x002B"
+        },
+        {
+          "code": "002C:FF",
+          "desc": "Infinite Gold",
+          "address": "0x002C"
+        },
+        {
+          "code": "0450:FF",
+          "desc": "Max Hp",
+          "address": "0x0450"
+        },
+        {
+          "code": "0026:FF",
+          "desc": "Infinite Hp",
+          "address": "0x0026"
+        },
+        {
+          "code": "0028:FF",
+          "desc": "Max Mp",
+          "address": "0x0028"
+        },
+        {
+          "code": "0029:FF",
+          "desc": "Infinite Mp",
+          "address": "0x0029"
+        },
+        {
+          "code": "0657:09",
+          "desc": "Max Fp",
+          "address": "0x0657"
+        },
+        {
+          "code": "0650:00",
+          "desc": "Shot Modifier",
+          "address": "0x0650"
+        },
+        {
+          "code": "0651:00",
+          "desc": "Engine Modifier",
+          "address": "0x0651"
+        },
+        {
+          "code": "0652:00",
+          "desc": "Shield Modifier",
+          "address": "0x0652"
+        },
+        {
+          "code": "0653:01",
+          "desc": "Magic Modifier",
+          "address": "0x0653"
+        },
+        {
+          "code": "0654:01",
+          "desc": "Item Modifier",
+          "address": "0x0654"
+        },
+        {
+          "code": "0655:09",
+          "desc": "Max Fuzz",
+          "address": "0x0655"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "system": "nes",
+  "normalized_title": "wreckingcrew",
+  "display_name": "Wrecking Crew (World) (Game Genie)",
+  "aliases": [
+    "Wrecking Crew (World) (Game Genie)",
+    "Wrecking Crew (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\wreckingcrew_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0085",
+        "0x0090"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\WreckingCrew-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0090",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0085",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wrecking Crew (World).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "004C:01",
+          "desc": "Die to Complete Stage",
+          "address": "0x004C"
+        },
+        {
+          "code": "0090:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x0090"
+        },
+        {
+          "code": "0091:09",
+          "desc": "Infinite Lives P2",
+          "address": "0x0091"
+        },
+        {
+          "code": "0060:00",
+          "desc": "Phase Modifier",
+          "address": "0x0060"
+        },
+        {
+          "code": "0317:FD",
+          "desc": "Stops all monsters and allows you to go through them",
+          "address": "0x0317"
+        },
+        {
+          "code": "0055:7F",
+          "desc": "Freeze monsters, freeze timer",
+          "address": "0x0055"
+        },
+        {
+          "code": "03DD:FF",
+          "desc": "Fireball timer",
+          "address": "0x03DD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

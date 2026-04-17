@@ -1,0 +1,28 @@
+{
+  "system": "gb",
+  "normalized_title": "digdug",
+  "display_name": "Dig Dug (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Dig Dug (USA, Europe) (Game Genie)",
+    "Dig Dug (USA, Europe) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Dig Dug (USA, Europe) (GameShark).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0103CFC1",
+          "desc": "Door Always Open On New Dig Dug Mode",
+          "address": "0xCFC1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

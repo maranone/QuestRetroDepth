@@ -1,0 +1,57 @@
+{
+  "system": "nes",
+  "normalized_title": "bumpnjump",
+  "display_name": "Bump'n'Jump (USA) (Game Genie)",
+  "aliases": [
+    "Bump'n'Jump (USA) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bump'n'Jump (USA) (Game Genie).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 7,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "AAVPNLGP",
+          "desc": "Jump OK, Even With No Power",
+          "address": "0x030F"
+        },
+        {
+          "code": "AGVONLAA",
+          "desc": "Jump OK At Any Speed",
+          "address": "0x03CF"
+        },
+        {
+          "code": "PANPNLIE",
+          "desc": "Set Jump OK Speed To 190",
+          "address": "0x030F"
+        },
+        {
+          "code": "LANPNLIA",
+          "desc": "Set Jump OK Speed To 130",
+          "address": "0x030F"
+        },
+        {
+          "code": "GEOAGGAA",
+          "desc": "Start On Scene 5",
+          "address": "0x040C"
+        },
+        {
+          "code": "PEOAGGAE",
+          "desc": "Start On Scene 10",
+          "address": "0x040C"
+        },
+        {
+          "code": "TEOAGGAE",
+          "desc": "Start On Scene 15",
+          "address": "0x040C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

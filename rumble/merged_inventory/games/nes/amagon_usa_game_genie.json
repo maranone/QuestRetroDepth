@@ -1,0 +1,129 @@
+{
+  "system": "nes",
+  "normalized_title": "amagon",
+  "display_name": "Amagon (USA) (Game Genie)",
+  "aliases": [
+    "Amagon (USA) (Game Genie)",
+    "Amagon (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\amagon_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x007A",
+        "0x0084"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Amagon-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0084",
+          "type": "|d1"
+        },
+        {
+          "name": "score",
+          "address": "0x007A",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Amagon (USA).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 15,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "0084:04",
+          "desc": "Infinite Lives",
+          "address": "0x0084"
+        },
+        {
+          "code": "0080:64",
+          "desc": "Infinite Bullets",
+          "address": "0x0080"
+        },
+        {
+          "code": "01A0:01",
+          "desc": "Start/stay Super Amagon",
+          "address": "0x01A0"
+        },
+        {
+          "code": "0085:12",
+          "desc": "Start/stay Super Amagon",
+          "address": "0x0085"
+        },
+        {
+          "code": "0327:32",
+          "desc": "Untouchable, regular or super Amagon",
+          "address": "0x0327"
+        },
+        {
+          "code": "0022:00",
+          "desc": "Level Modifier",
+          "address": "0x0022"
+        },
+        {
+          "code": "0196:00",
+          "desc": "No Enemies",
+          "address": "0x0196"
+        },
+        {
+          "code": "01A0:01",
+          "desc": "Start/stay Super Amagon",
+          "address": "0x01A0"
+        },
+        {
+          "code": "0085:18",
+          "desc": "Start/stay Super Amagon",
+          "address": "0x0085"
+        },
+        {
+          "code": "0080:00",
+          "desc": "Infinite Bullets",
+          "address": "0x0080"
+        },
+        {
+          "code": "0084:09",
+          "desc": "Infinite Lives",
+          "address": "0x0084"
+        },
+        {
+          "code": "0082:07",
+          "desc": "Infinite Ammo (One's Digit)",
+          "address": "0x0082"
+        },
+        {
+          "code": "0327:50",
+          "desc": "Untouchable, Regular Or Super Amagon",
+          "address": "0x0327"
+        },
+        {
+          "code": "EPVETTEL",
+          "desc": "No Audio",
+          "address": "0x069E"
+        },
+        {
+          "code": "0061:03",
+          "desc": "Super Jump / Speed Up",
+          "address": "0x0061"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

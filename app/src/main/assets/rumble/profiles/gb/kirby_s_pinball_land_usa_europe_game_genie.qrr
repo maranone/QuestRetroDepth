@@ -1,0 +1,8 @@
+game_name=Kirby's Pinball Land (USA, Europe) (Game Genie)
+game_key=kirby_s_pinball_land_usa_europe_game_genie
+system=gb
+integration_tier=contrib
+trigger	score_score_c1c0	score	0xC1C0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_c0c0	score	0xC0C0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	level_complete_level_c1c3	level_complete	0xC1C3	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_c2c3	level_complete	0xC2C3	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

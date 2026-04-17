@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "earthwormjim",
+  "display_name": "Earthworm Jim (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Earthworm Jim (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1002C320",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202C320"
+        },
+        {
+          "code": "830018BC",
+          "desc": "Infinite Ammo (Normal Gun)",
+          "address": "0x020018BC"
+        },
+        {
+          "code": "83002B0C",
+          "desc": "Infinite Lives",
+          "address": "0x02002B0C"
+        },
+        {
+          "code": "83000010",
+          "desc": "Infinite Health",
+          "address": "0x02000010"
+        },
+        {
+          "code": "830018F4",
+          "desc": "Infinite Ammo (Blaster)",
+          "address": "0x020018F4"
+        },
+        {
+          "code": "83006630",
+          "desc": "Infinite Oxygen",
+          "address": "0x02006630"
+        },
+        {
+          "code": "83003F10",
+          "desc": "Strong Snot Cord",
+          "address": "0x02003F10"
+        },
+        {
+          "code": "73003F20",
+          "desc": "Weak Snot Cord (Opponent)",
+          "address": "0x02003F20"
+        },
+        {
+          "code": "83003F20",
+          "desc": "Weak Snot Cord (Opponent)",
+          "address": "0x02003F20"
+        },
+        {
+          "code": "8300335C",
+          "desc": "Infinite Turbo (Andy Asteroid)",
+          "address": "0x0200335C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Earthworm Jim (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1002C320",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202C320"
+        },
+        {
+          "code": "830018BC",
+          "desc": "Infinite Ammo (Normal Gun)",
+          "address": "0x020018BC"
+        },
+        {
+          "code": "83002B0C",
+          "desc": "Infinite Lives",
+          "address": "0x02002B0C"
+        },
+        {
+          "code": "83000010",
+          "desc": "Infinite Health",
+          "address": "0x02000010"
+        },
+        {
+          "code": "830018F4",
+          "desc": "Infinite Ammo (Blaster)",
+          "address": "0x020018F4"
+        },
+        {
+          "code": "83006630",
+          "desc": "Infinite Oxygen",
+          "address": "0x02006630"
+        },
+        {
+          "code": "83003F10",
+          "desc": "Strong Snot Cord",
+          "address": "0x02003F10"
+        },
+        {
+          "code": "73003F20",
+          "desc": "Weak Snot Cord (Opponent)",
+          "address": "0x02003F20"
+        },
+        {
+          "code": "83003F20",
+          "desc": "Weak Snot Cord (Opponent)",
+          "address": "0x02003F20"
+        },
+        {
+          "code": "8300335C",
+          "desc": "Infinite Turbo (Andy Asteroid)",
+          "address": "0x0200335C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

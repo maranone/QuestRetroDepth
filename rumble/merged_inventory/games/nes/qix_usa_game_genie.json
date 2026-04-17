@@ -1,0 +1,102 @@
+{
+  "system": "nes",
+  "normalized_title": "qix",
+  "display_name": "QIX (USA) (Game Genie)",
+  "aliases": [
+    "QIX (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\QIX (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 16,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "OZOEGYVK",
+          "desc": "Infinite Lives",
+          "address": "0x07AC"
+        },
+        {
+          "code": "PEEAPZGA",
+          "desc": "1 life for player 1",
+          "address": "0x0209"
+        },
+        {
+          "code": "PEEEAZGA",
+          "desc": "1 life for player 2",
+          "address": "0x0288"
+        },
+        {
+          "code": "IANAZZPA",
+          "desc": "Start on Level 5, player 1 game",
+          "address": "0x020A"
+        },
+        {
+          "code": "ZANAZZPE",
+          "desc": "Start on Level 10, player 1 game",
+          "address": "0x020A"
+        },
+        {
+          "code": "GPNAZZPA",
+          "desc": "Start on Level 20, player 1 game",
+          "address": "0x021A"
+        },
+        {
+          "code": "IEEEGZPA",
+          "desc": "Start on Level 5, player 2 game",
+          "address": "0x028C"
+        },
+        {
+          "code": "ZEEEGZPE",
+          "desc": "Start on Level 10, player 2 game",
+          "address": "0x028C"
+        },
+        {
+          "code": "GOEEGZPA",
+          "desc": "Start on Level 20, player 2 game",
+          "address": "0x029C"
+        },
+        {
+          "code": "0066:63",
+          "desc": "Finish Level Now",
+          "address": "0x0066"
+        },
+        {
+          "code": "0064:03",
+          "desc": "Infinite Lives",
+          "address": "0x0064"
+        },
+        {
+          "code": "0063:00",
+          "desc": "Level #",
+          "address": "0x0063"
+        },
+        {
+          "code": "SZOEGYVG",
+          "desc": "Infinite Lives",
+          "address": "0x07AC"
+        },
+        {
+          "code": "SZSAGZVT",
+          "desc": "Infinite Lives",
+          "address": "0x022C"
+        },
+        {
+          "code": "0054:FF",
+          "desc": "Infinite Time To Make A Move",
+          "address": "0x0054"
+        },
+        {
+          "code": "YEEAPZGA",
+          "desc": "Have 7 Lives",
+          "address": "0x0209"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

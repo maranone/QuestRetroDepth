@@ -1,0 +1,90 @@
+{
+  "system": "nes",
+  "normalized_title": "gargoylesquestii",
+  "display_name": "Gargoyle's Quest II (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gargoyle's Quest II (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 14,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "OXSELPSX",
+          "desc": "Infinite Flight",
+          "address": "0x01AB"
+        },
+        {
+          "code": "OESAKAIE",
+          "desc": "Invincible Against Enemies",
+          "address": "0x000C"
+        },
+        {
+          "code": "0544:04",
+          "desc": "Invincibility",
+          "address": "0x0544"
+        },
+        {
+          "code": "APOEGLEP",
+          "desc": "Walk Through Walls",
+          "address": "0x039C"
+        },
+        {
+          "code": "003B:5F",
+          "desc": "Infinite Wing (In Battle Mode)",
+          "address": "0x003B"
+        },
+        {
+          "code": "0038:03",
+          "desc": "Infinite Health (In Battle Mode)",
+          "address": "0x0038"
+        },
+        {
+          "code": "0039:09",
+          "desc": "Infinite Lives (In Battle Mode)",
+          "address": "0x0039"
+        },
+        {
+          "code": "0030:04",
+          "desc": "Max Wing Attribute",
+          "address": "0x0030"
+        },
+        {
+          "code": "0036:09",
+          "desc": "Max Life Attribute",
+          "address": "0x0036"
+        },
+        {
+          "code": "007E:99",
+          "desc": "Infinite Vials",
+          "address": "0x007E"
+        },
+        {
+          "code": "0030:00",
+          "desc": "Invincibility",
+          "address": "0x0030"
+        },
+        {
+          "code": "007D:03",
+          "desc": "Set Max. Jump",
+          "address": "0x007D"
+        },
+        {
+          "code": "03B4:FF",
+          "desc": "Switch F/X On To Levitate Jump",
+          "address": "0x03B4"
+        },
+        {
+          "code": "041D:00",
+          "desc": "Defeat Most Bosses With 1 Hit",
+          "address": "0x041D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "system": "gb",
+  "normalized_title": "stopthatroach",
+  "display_name": "Stop That Roach! (USA) (Game Genie)",
+  "aliases": [
+    "Stop That Roach! (USA) (GameShark)",
+    "Stop That Roach! (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Stop That Roach! (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0105D5C4",
+          "desc": "Infinite Turns",
+          "address": "0xD5C4"
+        },
+        {
+          "code": "0105DDC4",
+          "desc": "Infinite Moves",
+          "address": "0xDDC4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

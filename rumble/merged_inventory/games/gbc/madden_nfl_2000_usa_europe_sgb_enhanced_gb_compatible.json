@@ -1,0 +1,30 @@
+{
+  "system": "gbc",
+  "normalized_title": "maddennfl2000",
+  "display_name": "Madden NFL 2000 (USA, Europe) (SGB Enhanced) (GB Compatible)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Madden NFL 2000 (USA, Europe) (SGB Enhanced) (GB Compatible).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0100C6C2",
+          "desc": "Home Team Score Modifier",
+          "address": "0xC6C2"
+        },
+        {
+          "code": "0100C7C2",
+          "desc": "Away Team Score Modifier",
+          "address": "0xC7C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

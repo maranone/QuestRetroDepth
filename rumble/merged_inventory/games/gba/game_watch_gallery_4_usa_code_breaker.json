@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "gamewatchgallery4",
+  "display_name": "Game _ Watch Gallery 4 (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Game _ Watch Gallery 4 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7200CF3A",
+          "desc": "Access All Games",
+          "address": "0x0200CF3A"
+        },
+        {
+          "code": "32003B39",
+          "desc": "Access All Games",
+          "address": "0x02003B39"
+        },
+        {
+          "code": "7200CF3A",
+          "desc": "Access All Games",
+          "address": "0x0200CF3A"
+        },
+        {
+          "code": "42003B3A",
+          "desc": "Access All Games",
+          "address": "0x02003B3A"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Game _ Watch Gallery 4 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "7200CF3A",
+          "desc": "Access All Games",
+          "address": "0x0200CF3A"
+        },
+        {
+          "code": "32003B39",
+          "desc": "Access All Games",
+          "address": "0x02003B39"
+        },
+        {
+          "code": "7200CF3A",
+          "desc": "Access All Games",
+          "address": "0x0200CF3A"
+        },
+        {
+          "code": "42003B3A",
+          "desc": "Access All Games",
+          "address": "0x02003B3A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

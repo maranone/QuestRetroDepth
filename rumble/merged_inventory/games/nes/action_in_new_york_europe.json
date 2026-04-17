@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "actioninnewyork",
+  "display_name": "Action in New York (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Action in New York (Europe).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "05DC:02",
+          "desc": "Invincibility P1",
+          "address": "0x05DC"
+        },
+        {
+          "code": "001C:06",
+          "desc": "Infinite Energy P1",
+          "address": "0x001C"
+        },
+        {
+          "code": "001D:06",
+          "desc": "Infinite Energy P2",
+          "address": "0x001D"
+        },
+        {
+          "code": "0012:00",
+          "desc": "Weapon Modifier",
+          "address": "0x0012"
+        },
+        {
+          "code": "001E:00",
+          "desc": "Level Modifier",
+          "address": "0x001E"
+        },
+        {
+          "code": "04AA:00",
+          "desc": "Bosses 1 Hit Kill",
+          "address": "0x04AA"
+        },
+        {
+          "code": "001C:0F",
+          "desc": "Infinite Health P1",
+          "address": "0x001C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

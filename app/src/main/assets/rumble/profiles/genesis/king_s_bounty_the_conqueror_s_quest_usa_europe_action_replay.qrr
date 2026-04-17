@@ -1,0 +1,16 @@
+game_name=King's Bounty - The Conqueror's Quest (USA, Europe) (Action Replay)
+game_key=king_s_bounty_the_conqueror_s_quest_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ffe644	damage_taken	0xFFE644	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffe644	death	0xFFE644	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffe646	damage_taken	0xFFE646	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffe646	death	0xFFE646	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffe64e	damage_taken	0xFFE64E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffe64e	death	0xFFE64E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffe650	damage_taken	0xFFE650	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffe650	death	0xFFE650	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffe652	damage_taken	0xFFE652	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffe652	death	0xFFE652	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffe654	damage_taken	0xFFE654	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffe654	death	0xFFE654	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

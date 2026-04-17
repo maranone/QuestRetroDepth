@@ -1,0 +1,50 @@
+{
+  "system": "pce",
+  "normalized_title": "shinobi",
+  "display_name": "Shinobi (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Shinobi (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "1f07e5:06",
+          "desc": "Infinite Lives",
+          "address": "0x1F07E5"
+        },
+        {
+          "code": "1f082c:00",
+          "desc": "No Rescues Needed",
+          "address": "0x1F082C"
+        },
+        {
+          "code": "1f079f:01",
+          "desc": "No Enemy Spawns (turn off before you reach bosses)",
+          "address": "0x1F079F"
+        },
+        {
+          "code": "1f07eb:00",
+          "desc": "Instant boss Kill (turn off once boss is defeated)",
+          "address": "0x1F07EB"
+        },
+        {
+          "code": "1f07e2:03",
+          "desc": "Start on Final Boss",
+          "address": "0x1F07E2"
+        },
+        {
+          "code": "1f07e3:03",
+          "desc": "Start on Final Boss",
+          "address": "0x1F07E3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

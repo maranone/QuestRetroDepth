@@ -1,0 +1,80 @@
+{
+  "system": "nes",
+  "normalized_title": "captained",
+  "display_name": "Captain ED (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Captain ED (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "0020:3F",
+          "desc": "Infinite Energy",
+          "address": "0x0020"
+        },
+        {
+          "code": "SXOAXZSA",
+          "desc": "Infinite Energy",
+          "address": "0x022A"
+        },
+        {
+          "code": "SXEEVGSA",
+          "desc": "Infinite Energy",
+          "address": "0x04AE"
+        },
+        {
+          "code": "SXKASLSA",
+          "desc": "Infinite Energy",
+          "address": "0x032D"
+        },
+        {
+          "code": "SXOEXZSA",
+          "desc": "Infinite Energy",
+          "address": "0x02AA"
+        },
+        {
+          "code": "SXVENZSA",
+          "desc": "Infinite Energy",
+          "address": "0x02AF"
+        },
+        {
+          "code": "070B:FF",
+          "desc": "Infinite Energy (Sidescrolling Levels)",
+          "address": "0x070B"
+        },
+        {
+          "code": "0022:09",
+          "desc": "Tons Of Cash",
+          "address": "0x0022"
+        },
+        {
+          "code": "003C:5F",
+          "desc": "Infinite Double Laser",
+          "address": "0x003C"
+        },
+        {
+          "code": "003E:10",
+          "desc": "Infinite Missiles",
+          "address": "0x003E"
+        },
+        {
+          "code": "0056:10",
+          "desc": "Always See Breakable Floor Panels",
+          "address": "0x0056"
+        },
+        {
+          "code": "0036:81",
+          "desc": "Infinite Invincibility",
+          "address": "0x0036"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

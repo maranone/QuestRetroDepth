@@ -1,0 +1,25 @@
+{
+  "system": "pce",
+  "normalized_title": "timecruiseii",
+  "display_name": "Time Cruise II (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Time Cruise II (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "1f0630:0a",
+          "desc": "Infinite Balls",
+          "address": "0x1F0630"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

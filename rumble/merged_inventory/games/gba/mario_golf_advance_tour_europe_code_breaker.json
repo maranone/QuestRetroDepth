@@ -1,0 +1,218 @@
+{
+  "system": "gba",
+  "normalized_title": "mariogolfadvancetour",
+  "display_name": "Mario Golf - Advance Tour (Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Mario Golf - Advance Tour (Europe) (Code Breaker).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 19,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "10000600",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000600"
+        },
+        {
+          "code": "32000936",
+          "desc": "Always Have 0 Shots (Perfect Score)",
+          "address": "0x02000936"
+        },
+        {
+          "code": "8200052E",
+          "desc": "Max Score",
+          "address": "0x0200052E"
+        },
+        {
+          "code": "83002610",
+          "desc": "Max Exp",
+          "address": "0x02002610"
+        },
+        {
+          "code": "83002614",
+          "desc": "Go To Level 99 With No Exp Usage",
+          "address": "0x02002614"
+        },
+        {
+          "code": "83002618",
+          "desc": "Go To Level 99 With No Exp Usage",
+          "address": "0x02002618"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L+R+Up To Refill Stat Points",
+          "address": "0x02000130"
+        },
+        {
+          "code": "330019F6",
+          "desc": "Press L+R+Up To Refill Stat Points",
+          "address": "0x020019F6"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L+R+Down To Deplete Stat Points",
+          "address": "0x02000130"
+        },
+        {
+          "code": "330019F6",
+          "desc": "Press L+R+Down To Deplete Stat Points",
+          "address": "0x020019F6"
+        },
+        {
+          "code": "4300262E",
+          "desc": "Max Stats On Level Up",
+          "address": "0x0200262E"
+        },
+        {
+          "code": "720083A0",
+          "desc": "Play Main Menu Music Modifier",
+          "address": "0x020083A0"
+        },
+        {
+          "code": "820083A0",
+          "desc": "Play Main Menu Music Modifier",
+          "address": "0x020083A0"
+        },
+        {
+          "code": "320009D4",
+          "desc": "Infinite Power Shots",
+          "address": "0x020009D4"
+        },
+        {
+          "code": "320313B2",
+          "desc": "Infinite Power Shots",
+          "address": "0x020313B2"
+        },
+        {
+          "code": "320009D6",
+          "desc": "Infinite Mulligans",
+          "address": "0x020009D6"
+        },
+        {
+          "code": "720083A0",
+          "desc": "Wireless Adaptor Option In Multiplayer Menu/Club Exchange Menu (L & R)",
+          "address": "0x020083A0"
+        },
+        {
+          "code": "74000130",
+          "desc": "Wireless Adaptor Option In Multiplayer Menu/Club Exchange Menu (L & R)",
+          "address": "0x02000130"
+        },
+        {
+          "code": "330038C8",
+          "desc": "Wireless Adaptor Option In Multiplayer Menu/Club Exchange Menu (L & R)",
+          "address": "0x020038C8"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Mario Golf - Advance Tour (Europe) (Code Breaker).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 19,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "10000600",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000600"
+        },
+        {
+          "code": "32000936",
+          "desc": "Always Have 0 Shots (Perfect Score)",
+          "address": "0x02000936"
+        },
+        {
+          "code": "8200052E",
+          "desc": "Max Score",
+          "address": "0x0200052E"
+        },
+        {
+          "code": "83002610",
+          "desc": "Max Exp",
+          "address": "0x02002610"
+        },
+        {
+          "code": "83002614",
+          "desc": "Go To Level 99 With No Exp Usage",
+          "address": "0x02002614"
+        },
+        {
+          "code": "83002618",
+          "desc": "Go To Level 99 With No Exp Usage",
+          "address": "0x02002618"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L+R+Up To Refill Stat Points",
+          "address": "0x02000130"
+        },
+        {
+          "code": "330019F6",
+          "desc": "Press L+R+Up To Refill Stat Points",
+          "address": "0x020019F6"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L+R+Down To Deplete Stat Points",
+          "address": "0x02000130"
+        },
+        {
+          "code": "330019F6",
+          "desc": "Press L+R+Down To Deplete Stat Points",
+          "address": "0x020019F6"
+        },
+        {
+          "code": "4300262E",
+          "desc": "Max Stats On Level Up",
+          "address": "0x0200262E"
+        },
+        {
+          "code": "720083A0",
+          "desc": "Play Main Menu Music Modifier",
+          "address": "0x020083A0"
+        },
+        {
+          "code": "820083A0",
+          "desc": "Play Main Menu Music Modifier",
+          "address": "0x020083A0"
+        },
+        {
+          "code": "320009D4",
+          "desc": "Infinite Power Shots",
+          "address": "0x020009D4"
+        },
+        {
+          "code": "320313B2",
+          "desc": "Infinite Power Shots",
+          "address": "0x020313B2"
+        },
+        {
+          "code": "320009D6",
+          "desc": "Infinite Mulligans",
+          "address": "0x020009D6"
+        },
+        {
+          "code": "720083A0",
+          "desc": "Wireless Adaptor Option In Multiplayer Menu/Club Exchange Menu (L & R)",
+          "address": "0x020083A0"
+        },
+        {
+          "code": "74000130",
+          "desc": "Wireless Adaptor Option In Multiplayer Menu/Club Exchange Menu (L & R)",
+          "address": "0x02000130"
+        },
+        {
+          "code": "330038C8",
+          "desc": "Wireless Adaptor Option In Multiplayer Menu/Club Exchange Menu (L & R)",
+          "address": "0x020038C8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

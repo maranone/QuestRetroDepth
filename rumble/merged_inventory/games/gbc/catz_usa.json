@@ -1,0 +1,40 @@
+{
+  "system": "gbc",
+  "normalized_title": "catz",
+  "display_name": "Catz (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Catz (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "01AAD180",
+          "desc": "Full Bar Happiness",
+          "address": "0xD180"
+        },
+        {
+          "code": "01AAD6A1",
+          "desc": "Max Affection",
+          "address": "0xD6A1"
+        },
+        {
+          "code": "01AAD6A0",
+          "desc": "Max Affection",
+          "address": "0xD6A0"
+        },
+        {
+          "code": "01AAD1A1",
+          "desc": "Max Happiness",
+          "address": "0xD1A1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

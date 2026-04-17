@@ -1,0 +1,50 @@
+{
+  "system": "pce",
+  "normalized_title": "ninjaryuukenden",
+  "display_name": "Ninja Ryuukenden (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Ninja Ryuukenden (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "1f0eaf:02",
+          "desc": "Infinite Lives",
+          "address": "0x1F0EAF"
+        },
+        {
+          "code": "1f0ead:16",
+          "desc": "Infinite Energy",
+          "address": "0x1F0EAD"
+        },
+        {
+          "code": "1f0edb:09",
+          "desc": "Infinite Time",
+          "address": "0x1F0EDB"
+        },
+        {
+          "code": "1f0eae:0d",
+          "desc": "Invincibility",
+          "address": "0x1F0EAE"
+        },
+        {
+          "code": "1f1277:01",
+          "desc": "English Text Mode",
+          "address": "0x1F1277"
+        },
+        {
+          "code": "1f115a:09",
+          "desc": "Infinite Ninjutsu",
+          "address": "0x1F115A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

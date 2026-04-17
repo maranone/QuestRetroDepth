@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "jacknicklauschampionshipgolf",
+  "display_name": "Jack Nicklaus - Championship Golf (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Jack Nicklaus - Championship Golf (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f07b1:00",
+          "desc": "Always Hole-In-One",
+          "address": "0x1F07B1"
+        },
+        {
+          "code": "1f07f9:00",
+          "desc": "Always Hole-In-One",
+          "address": "0x1F07F9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

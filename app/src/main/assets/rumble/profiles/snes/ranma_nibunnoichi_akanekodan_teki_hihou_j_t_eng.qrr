@@ -1,0 +1,12 @@
+game_name=Ranma Nibunnoichi - Akanekodan Teki Hihou (J) [T-Eng]
+game_key=ranma_nibunnoichi_akanekodan_teki_hihou_j_t_eng
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_0cc7	damage_taken	0x7E0CC7	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0cc7	death	0x7E0CC7	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0cc9	damage_taken	0x7E0CC9	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0cc9	death	0x7E0CC9	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_10ec	pickup	0x7E10EC	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_10ed	pickup	0x7E10ED	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_10ee	pickup	0x7E10EE	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_1964	level_complete	0x7E1964	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

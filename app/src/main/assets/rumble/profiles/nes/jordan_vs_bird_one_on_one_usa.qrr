@@ -1,0 +1,6 @@
+game_name=Jordan vs Bird - One on One (USA)
+game_key=jordan_vs_bird_one_on_one_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_062a	score	0x062A	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_062c	score	0x062C	1	uint	little	prev < curr	0.8	1	right:0.350:60

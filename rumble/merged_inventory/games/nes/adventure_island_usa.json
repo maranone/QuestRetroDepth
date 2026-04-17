@@ -1,0 +1,145 @@
+{
+  "system": "nes",
+  "normalized_title": "adventureisland",
+  "display_name": "Adventure Island (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Adventure Island (USA).cht",
+      "total_cheat_rows": 92,
+      "raw_entry_count": 91,
+      "distinct_address_count": 66,
+      "sample_raw_entries": [
+        {
+          "code": "SZXEAPSA",
+          "desc": "Keep Weapons After Death",
+          "address": "0x01A8"
+        },
+        {
+          "code": "SZXEZPSA",
+          "desc": "Keep Weapons After Death",
+          "address": "0x01AA"
+        },
+        {
+          "code": "SXAEPI",
+          "desc": "Moonwalking",
+          "address": "0x05A1"
+        },
+        {
+          "code": "PEEEPALA",
+          "desc": "Start with 1 life",
+          "address": "0x0089"
+        },
+        {
+          "code": "TEEEPALA",
+          "desc": "Start with 6 lives",
+          "address": "0x0089"
+        },
+        {
+          "code": "PEEEPALE",
+          "desc": "Start with 9 lives",
+          "address": "0x0089"
+        },
+        {
+          "code": "SZOEGPVG",
+          "desc": "Start with infinite lives",
+          "address": "0x01AC"
+        },
+        {
+          "code": "GZXEAPSA",
+          "desc": "Keep weapons",
+          "address": "0x01A8"
+        },
+        {
+          "code": "SPEEIIEG",
+          "desc": "Can mega jump while at rest",
+          "address": "0x059D"
+        },
+        {
+          "code": "SPEETSOZ",
+          "desc": "Can mega jump while running",
+          "address": "0x059E"
+        },
+        {
+          "code": "0072:00",
+          "desc": "Invincibility",
+          "address": "0x0072"
+        },
+        {
+          "code": "00AB:82",
+          "desc": "Invincibility",
+          "address": "0x00AB"
+        },
+        {
+          "code": "GXVAGGEI",
+          "desc": "Jump In Midair",
+          "address": "0x042C"
+        },
+        {
+          "code": "GXVEPGEI",
+          "desc": "Jump In Midair",
+          "address": "0x04A9"
+        },
+        {
+          "code": "PANEPAAA",
+          "desc": "Start On Area 2, Round 1",
+          "address": "0x0089"
+        },
+        {
+          "code": "YLNEIEAL",
+          "desc": "Start On Area 2, Round 1",
+          "address": "0x00BD"
+        },
+        {
+          "code": "ZANEPAAA",
+          "desc": "Start On Area 3, Round 1.",
+          "address": "0x0089"
+        },
+        {
+          "code": "YLNEIEAL",
+          "desc": "Start On Area 3, Round 1.",
+          "address": "0x00BD"
+        },
+        {
+          "code": "LANEPAAA",
+          "desc": "Start On Area 4, Round 1",
+          "address": "0x0089"
+        },
+        {
+          "code": "YLNEIEAL",
+          "desc": "Start On Area 4, Round 1",
+          "address": "0x00BD"
+        },
+        {
+          "code": "GANEPAAA",
+          "desc": "Start On Area 5, Round 1",
+          "address": "0x0089"
+        },
+        {
+          "code": "YLNEIEAL",
+          "desc": "Start On Area 5, Round 1",
+          "address": "0x00BD"
+        },
+        {
+          "code": "IANEPAAA",
+          "desc": "Start On Area 6, Round 1",
+          "address": "0x0089"
+        },
+        {
+          "code": "YLNEIEAL",
+          "desc": "Start On Area 6, Round 1",
+          "address": "0x00BD"
+        },
+        {
+          "code": "TANEPAAA",
+          "desc": "Start On Area 7, Round 1",
+          "address": "0x0089"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

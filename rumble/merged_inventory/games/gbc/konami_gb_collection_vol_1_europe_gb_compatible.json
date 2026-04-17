@@ -1,0 +1,25 @@
+{
+  "system": "gbc",
+  "normalized_title": "konamigbcollectionvol1",
+  "display_name": "Konami GB Collection Vol.1 (Europe) (GB Compatible)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Konami GB Collection Vol.1 (Europe) (GB Compatible).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0101DADE",
+          "desc": "Enable Stage Select (Press Start on Title Screen)",
+          "address": "0xDADE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

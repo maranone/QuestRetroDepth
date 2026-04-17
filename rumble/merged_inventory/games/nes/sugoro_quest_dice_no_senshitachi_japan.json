@@ -1,0 +1,90 @@
+{
+  "system": "nes",
+  "normalized_title": "sugoroquestdicenosenshitachi",
+  "display_name": "Sugoro Quest - Dice no Senshitachi (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Sugoro Quest - Dice no Senshitachi (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "044A:FF",
+          "desc": "Infinite Money",
+          "address": "0x044A"
+        },
+        {
+          "code": "04D8:00",
+          "desc": "Dice Modifier",
+          "address": "0x04D8"
+        },
+        {
+          "code": "03EA:06",
+          "desc": "Max Experience (Fighter)",
+          "address": "0x03EA"
+        },
+        {
+          "code": "03EE:55",
+          "desc": "Max Experience (Fighter)",
+          "address": "0x03EE"
+        },
+        {
+          "code": "03F2:35",
+          "desc": "Max Experience (Fighter)",
+          "address": "0x03F2"
+        },
+        {
+          "code": "03EB:06",
+          "desc": "Max Experience (Dwarf)",
+          "address": "0x03EB"
+        },
+        {
+          "code": "03EF:55",
+          "desc": "Max Experience (Dwarf)",
+          "address": "0x03EF"
+        },
+        {
+          "code": "03F3:35",
+          "desc": "Max Experience (Dwarf)",
+          "address": "0x03F3"
+        },
+        {
+          "code": "03EC:06",
+          "desc": "Max Experience (Elf)",
+          "address": "0x03EC"
+        },
+        {
+          "code": "03F0:55",
+          "desc": "Max Experience (Elf)",
+          "address": "0x03F0"
+        },
+        {
+          "code": "03F4:35",
+          "desc": "Max Experience (Elf)",
+          "address": "0x03F4"
+        },
+        {
+          "code": "03ED:06",
+          "desc": "Max Experience (Half-Elf)",
+          "address": "0x03ED"
+        },
+        {
+          "code": "03F1:55",
+          "desc": "Max Experience (Half-Elf)",
+          "address": "0x03F1"
+        },
+        {
+          "code": "03F5:35",
+          "desc": "Max Experience (Half-Elf)",
+          "address": "0x03F5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

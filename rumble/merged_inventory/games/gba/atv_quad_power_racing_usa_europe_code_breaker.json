@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "atvquadpowerracing",
+  "display_name": "ATV - Quad Power Racing (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\ATV - Quad Power Racing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "820003A0",
+          "desc": "Always Place 1st",
+          "address": "0x020003A0"
+        },
+        {
+          "code": "33000020",
+          "desc": "Unlock Pro/Open Modes",
+          "address": "0x02000020"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\ATV - Quad Power Racing (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "820003A0",
+          "desc": "Always Place 1st",
+          "address": "0x020003A0"
+        },
+        {
+          "code": "33000020",
+          "desc": "Unlock Pro/Open Modes",
+          "address": "0x02000020"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

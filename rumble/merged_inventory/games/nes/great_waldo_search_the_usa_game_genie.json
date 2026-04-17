@@ -1,0 +1,62 @@
+{
+  "system": "nes",
+  "normalized_title": "greatwaldosearch",
+  "display_name": "Great Waldo Search, The (USA) (Game Genie)",
+  "aliases": [
+    "Great Waldo Search, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Great Waldo Search, The (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "006D:00",
+          "desc": "Level Modifier?",
+          "address": "0x006D"
+        },
+        {
+          "code": "00B9:00",
+          "desc": "Infinite Time",
+          "address": "0x00B9"
+        },
+        {
+          "code": "0094:09",
+          "desc": "Score Modifier (Hundred Thousands)",
+          "address": "0x0094"
+        },
+        {
+          "code": "0095:09",
+          "desc": "Score Modifier (Ten Thousands)",
+          "address": "0x0095"
+        },
+        {
+          "code": "0096:09",
+          "desc": "Score Modifier (Thousands)",
+          "address": "0x0096"
+        },
+        {
+          "code": "0097:09",
+          "desc": "Score Modifier (Hundreds)",
+          "address": "0x0097"
+        },
+        {
+          "code": "0098:09",
+          "desc": "Score Modifier (Tens)",
+          "address": "0x0098"
+        },
+        {
+          "code": "0099:09",
+          "desc": "Score Modifier (Ones)",
+          "address": "0x0099"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

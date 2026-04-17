@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "challengeofdragonu",
+  "display_name": "Challenge of the Dragon (Sachen) [U][!]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Challenge of the Dragon (Sachen) [U][!].cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0046:63",
+          "desc": "Infinite Lives",
+          "address": "0x0046"
+        },
+        {
+          "code": "0520:1F",
+          "desc": "Infinite Health",
+          "address": "0x0520"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

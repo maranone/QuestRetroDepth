@@ -1,0 +1,75 @@
+{
+  "system": "pce",
+  "normalized_title": "bikkurimanworld",
+  "display_name": "Bikkuriman World (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Bikkuriman World (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "1f1295:09",
+          "desc": "Infinite Money",
+          "address": "0x1F1295"
+        },
+        {
+          "code": "1f1296:09",
+          "desc": "Infinite Money",
+          "address": "0x1F1296"
+        },
+        {
+          "code": "1f1297:09",
+          "desc": "Infinite Money",
+          "address": "0x1F1297"
+        },
+        {
+          "code": "1f1292:05",
+          "desc": "Have Best Sword",
+          "address": "0x1F1292"
+        },
+        {
+          "code": "1f1293:01",
+          "desc": "Have Best Sword",
+          "address": "0x1F1293"
+        },
+        {
+          "code": "1f1299:01",
+          "desc": "Have Shield",
+          "address": "0x1F1299"
+        },
+        {
+          "code": "1f129c:01",
+          "desc": "Have Tunic",
+          "address": "0x1F129C"
+        },
+        {
+          "code": "1f129d:03",
+          "desc": "Have Best Boots",
+          "address": "0x1F129D"
+        },
+        {
+          "code": "1f1706:74",
+          "desc": "Invulnerable to Enemy Damage",
+          "address": "0x1F1706"
+        },
+        {
+          "code": "1f1746:01",
+          "desc": "Invulnerability",
+          "address": "0x1F1746"
+        },
+        {
+          "code": "1f1399:fb",
+          "desc": "Infinite Time",
+          "address": "0x1F1399"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

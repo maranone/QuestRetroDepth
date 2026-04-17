@@ -1,0 +1,62 @@
+{
+  "system": "nes",
+  "normalized_title": "flappy",
+  "display_name": "Flappy (Japan) (Game Genie)",
+  "aliases": [
+    "Flappy (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Flappy (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "PEKEYZIE",
+          "desc": "Start with 9 lives instead of 5",
+          "address": "0x028F"
+        },
+        {
+          "code": "YEKEYZIE",
+          "desc": "Start with 15 lives",
+          "address": "0x028F"
+        },
+        {
+          "code": "POKEYZIE",
+          "desc": "Start with 25 lives",
+          "address": "0x029F"
+        },
+        {
+          "code": "0082:01",
+          "desc": "Instant Level Win",
+          "address": "0x0082"
+        },
+        {
+          "code": "008E:05",
+          "desc": "Infinite Lives",
+          "address": "0x008E"
+        },
+        {
+          "code": "004B:00",
+          "desc": "Freeze Timer",
+          "address": "0x004B"
+        },
+        {
+          "code": "SXPAPG",
+          "desc": "Infinite Time",
+          "address": "0x0421"
+        },
+        {
+          "code": "SUYAAZ",
+          "desc": "Infinite Lives",
+          "address": "0x0230"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

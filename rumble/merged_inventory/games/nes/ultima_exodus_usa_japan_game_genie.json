@@ -1,0 +1,132 @@
+{
+  "system": "nes",
+  "normalized_title": "ultimaexodus",
+  "display_name": "Ultima - Exodus (USA, Japan) (Game Genie)",
+  "aliases": [
+    "Ultima - Exodus (USA, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ultima - Exodus (USA, Japan) (Game Genie).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 22,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "AEOAKVAA",
+          "desc": "No Limit On Stat Points",
+          "address": "0x060C"
+        },
+        {
+          "code": "IEOPTPPA",
+          "desc": "Start With 5 Of Each Item",
+          "address": "0x010E"
+        },
+        {
+          "code": "ZEOPTPPE",
+          "desc": "Start With 10 Of Each Item",
+          "address": "0x010E"
+        },
+        {
+          "code": "EKEOAPGV",
+          "desc": "Start With 200 GPs",
+          "address": "0x01C8"
+        },
+        {
+          "code": "AAUEPYPA",
+          "desc": "Rapid Magic Recovery",
+          "address": "0x0789"
+        },
+        {
+          "code": "OLUAGYOI",
+          "desc": "Rapid Magic Recovery",
+          "address": "0x073C"
+        },
+        {
+          "code": "ZEEOAPGT",
+          "desc": "Start With 512 GPs",
+          "address": "0x0188"
+        },
+        {
+          "code": "PUEPTPAL",
+          "desc": "Start With 512 GPs",
+          "address": "0x013E"
+        },
+        {
+          "code": "YKEAUVTZ",
+          "desc": "75 Stat Points To Start, Not 50",
+          "address": "0x064B"
+        },
+        {
+          "code": "LKUAVYZU",
+          "desc": "75 Stat Points To Start, Not 50",
+          "address": "0x074E"
+        },
+        {
+          "code": "LGSOPAZU",
+          "desc": "75 Stat Points To Start, Not 50",
+          "address": "0x00C9"
+        },
+        {
+          "code": "LSEAUVTX",
+          "desc": "95 Stat Points To Start, Not 50",
+          "address": "0x065B"
+        },
+        {
+          "code": "YSUAVYZU",
+          "desc": "95 Stat Points To Start, Not 50",
+          "address": "0x075E"
+        },
+        {
+          "code": "YISOPAZU",
+          "desc": "95 Stat Points To Start, Not 50",
+          "address": "0x00D9"
+        },
+        {
+          "code": "YNEOAPGT",
+          "desc": "Start With Thousands And Thousands Of Gold",
+          "address": "0x01F8"
+        },
+        {
+          "code": "PUEPTPAL",
+          "desc": "Start With Thousands And Thousands Of Gold",
+          "address": "0x013E"
+        },
+        {
+          "code": "XEEOAPGV",
+          "desc": "Start With 35,328 Gold",
+          "address": "0x0188"
+        },
+        {
+          "code": "PUEPTPAL",
+          "desc": "Start With 35,328 Gold",
+          "address": "0x013E"
+        },
+        {
+          "code": "ENOPTPPA",
+          "desc": "Start With 40 of Each Item That You Normally Start With",
+          "address": "0x017E"
+        },
+        {
+          "code": "NNEAUVTX",
+          "desc": "Start With 255 Stat Points",
+          "address": "0x067B"
+        },
+        {
+          "code": "NNUAVYZU",
+          "desc": "Start With 255 Stat Points",
+          "address": "0x077E"
+        },
+        {
+          "code": "NYSOPAZU",
+          "desc": "Start With 255 Stat Points",
+          "address": "0x00F9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

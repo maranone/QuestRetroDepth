@@ -1,0 +1,138 @@
+{
+  "system": "gba",
+  "normalized_title": "samuraijackamuletoftime",
+  "display_name": "Samurai Jack - The Amulet of Time (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Samurai Jack - The Amulet of Time (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10003BFA",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003BFA"
+        },
+        {
+          "code": "8200C25C",
+          "desc": "Infinite Health",
+          "address": "0x0200C25C"
+        },
+        {
+          "code": "8200C1EE",
+          "desc": "Maximum Health",
+          "address": "0x0200C1EE"
+        },
+        {
+          "code": "8200C260",
+          "desc": "Infinite Special",
+          "address": "0x0200C260"
+        },
+        {
+          "code": "8200C1F2",
+          "desc": "Maximum Special",
+          "address": "0x0200C1F2"
+        },
+        {
+          "code": "8200C1E4",
+          "desc": "Stop Timer",
+          "address": "0x0200C1E4"
+        },
+        {
+          "code": "4200C224",
+          "desc": "100% Complete",
+          "address": "0x0200C224"
+        },
+        {
+          "code": "4200C6AC",
+          "desc": "Have All Items",
+          "address": "0x0200C6AC"
+        },
+        {
+          "code": "4200C6C0",
+          "desc": "Have All Equipment",
+          "address": "0x0200C6C0"
+        },
+        {
+          "code": "8200C24C",
+          "desc": "Have All Collected",
+          "address": "0x0200C24C"
+        },
+        {
+          "code": "4200C1F4",
+          "desc": "Max All Stats",
+          "address": "0x0200C1F4"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Samurai Jack - The Amulet of Time (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10003BFA",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003BFA"
+        },
+        {
+          "code": "8200C25C",
+          "desc": "Infinite Health",
+          "address": "0x0200C25C"
+        },
+        {
+          "code": "8200C1EE",
+          "desc": "Maximum Health",
+          "address": "0x0200C1EE"
+        },
+        {
+          "code": "8200C260",
+          "desc": "Infinite Special",
+          "address": "0x0200C260"
+        },
+        {
+          "code": "8200C1F2",
+          "desc": "Maximum Special",
+          "address": "0x0200C1F2"
+        },
+        {
+          "code": "8200C1E4",
+          "desc": "Stop Timer",
+          "address": "0x0200C1E4"
+        },
+        {
+          "code": "4200C224",
+          "desc": "100% Complete",
+          "address": "0x0200C224"
+        },
+        {
+          "code": "4200C6AC",
+          "desc": "Have All Items",
+          "address": "0x0200C6AC"
+        },
+        {
+          "code": "4200C6C0",
+          "desc": "Have All Equipment",
+          "address": "0x0200C6C0"
+        },
+        {
+          "code": "8200C24C",
+          "desc": "Have All Collected",
+          "address": "0x0200C24C"
+        },
+        {
+          "code": "4200C1F4",
+          "desc": "Max All Stats",
+          "address": "0x0200C1F4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

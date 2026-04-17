@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "jurassicparkiiiislandattack",
+  "display_name": "Jurassic Park III - Island Attack (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Jurassic Park III - Island Attack (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "100008E0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020008E0"
+        },
+        {
+          "code": "33006F61",
+          "desc": "Infinite Continues",
+          "address": "0x02006F61"
+        },
+        {
+          "code": "83006F6C",
+          "desc": "Always Low Time",
+          "address": "0x02006F6C"
+        },
+        {
+          "code": "33006D88",
+          "desc": "Max Tranquilizer Ammo",
+          "address": "0x02006D88"
+        },
+        {
+          "code": "33006D89",
+          "desc": "Max Smokescreen Launcher",
+          "address": "0x02006D89"
+        },
+        {
+          "code": "33006D8C",
+          "desc": "Max Med Kits",
+          "address": "0x02006D8C"
+        },
+        {
+          "code": "33006D8D",
+          "desc": "Max First Aid Kits",
+          "address": "0x02006D8D"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Jurassic Park III - Island Attack (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "100008E0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020008E0"
+        },
+        {
+          "code": "33006F61",
+          "desc": "Infinite Continues",
+          "address": "0x02006F61"
+        },
+        {
+          "code": "83006F6C",
+          "desc": "Always Low Time",
+          "address": "0x02006F6C"
+        },
+        {
+          "code": "33006D88",
+          "desc": "Max Tranquilizer Ammo",
+          "address": "0x02006D88"
+        },
+        {
+          "code": "33006D89",
+          "desc": "Max Smokescreen Launcher",
+          "address": "0x02006D89"
+        },
+        {
+          "code": "33006D8C",
+          "desc": "Max Med Kits",
+          "address": "0x02006D8C"
+        },
+        {
+          "code": "33006D8D",
+          "desc": "Max First Aid Kits",
+          "address": "0x02006D8D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

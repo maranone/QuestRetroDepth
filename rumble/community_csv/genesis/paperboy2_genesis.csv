@@ -2,12 +2,12 @@
 # game_name=Paperboy 2 (USA, Europe) (Action Replay)
 # match_names=paperboy2|paperboy2genesis
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-life_lost_lives_ff59d9,0xFF59D9,1,int,prev_gt_curr,,both,0.900,normal,0,300,160,80,
-life_gained_lives_ff59d9,0xFF59D9,1,int,prev_lt_curr,,both,0.750,normal,0,180,160,50,
-score_score0_ff5a3d,0xFF5A3D,1,nibble,prev_lt_curr,,right,0.350,normal,0,60,50,10,
-score_score1_ff5a3b,0xFF5A3B,1,nibble,prev_lt_curr,,right,0.350,normal,0,60,50,10,
-score_score2_ff5a39,0xFF5A39,1,nibble,prev_lt_curr,,right,0.350,normal,0,60,50,10,
-score_score3_ff5a37,0xFF5A37,1,nibble,prev_lt_curr,,right,0.350,normal,0,60,50,10,
-score_score4_ff5a35,0xFF5A35,1,nibble,prev_lt_curr,,right,0.350,normal,0,60,50,10,
-score_score5_ff5a33,0xFF5A33,1,nibble,prev_lt_curr,,right,0.350,normal,0,60,50,10,
-score_score6_ff5a31,0xFF5A31,1,nibble,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+life_lost_lives_ff59d9,0xFF59D9,1,int,prev_gt_curr,,both,0.92,fade_in_out,0,300,250,80,
+life_gained_lives_ff59d9,0xFF59D9,1,int,prev_lt_curr,,both,0.750,fade_in,0,180,200,50,
+score_score0_ff5a3d,0xFF5A3D,1,nibble,prev_lt_curr,,right,0.350,burst,0,70,15,10,
+score_score1_ff5a3b,0xFF5A3B,1,nibble,prev_lt_curr,,right,0.350,burst,0,70,15,10,
+score_score2_ff5a39,0xFF5A39,1,nibble,prev_lt_curr,,right,0.350,burst,0,70,15,10,
+score_score3_ff5a37,0xFF5A37,1,nibble,prev_lt_curr,,right,0.350,burst,0,70,15,10,
+score_score4_ff5a35,0xFF5A35,1,nibble,prev_lt_curr,,right,0.350,burst,0,70,15,10,
+score_score5_ff5a33,0xFF5A33,1,nibble,prev_lt_curr,,right,0.350,burst,0,70,15,10,
+score_score6_ff5a31,0xFF5A31,1,nibble,prev_lt_curr,,right,0.350,burst,0,70,15,10,

@@ -1,0 +1,40 @@
+{
+  "system": "gb",
+  "normalized_title": "volleyfire",
+  "display_name": "Volley Fire (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Volley Fire (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0103C4FF",
+          "desc": "Infinite Lives",
+          "address": "0xC4FF"
+        },
+        {
+          "code": "0108C5FF",
+          "desc": "Invincibility",
+          "address": "0xC5FF"
+        },
+        {
+          "code": "0100CCFF",
+          "desc": "Zero Lives",
+          "address": "0xCCFF"
+        },
+        {
+          "code": "0100CDFF",
+          "desc": "Computer Has Zero Energy",
+          "address": "0xCDFF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

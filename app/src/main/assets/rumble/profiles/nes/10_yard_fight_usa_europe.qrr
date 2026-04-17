@@ -1,0 +1,5 @@
+game_name=10-Yard Fight (USA, Europe)
+game_key=10_yard_fight_usa_europe
+system=nes
+integration_tier=contrib
+trigger	score_score_0025	score	0x0025	1	uint	little	prev < curr	0.8	1	right:0.350:60

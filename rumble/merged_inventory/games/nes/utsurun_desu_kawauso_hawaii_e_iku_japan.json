@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "utsurundesukawausohawaiieiku",
+  "display_name": "Utsurun Desu - Kawauso Hawaii e Iku (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Utsurun Desu - Kawauso Hawaii e Iku (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0418:10",
+          "desc": "Infinite Energy",
+          "address": "0x0418"
+        },
+        {
+          "code": "0417:09",
+          "desc": "Infinite Lives",
+          "address": "0x0417"
+        },
+        {
+          "code": "0420:00",
+          "desc": "Invincibility",
+          "address": "0x0420"
+        },
+        {
+          "code": "0094:03",
+          "desc": "Invincibility",
+          "address": "0x0094"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

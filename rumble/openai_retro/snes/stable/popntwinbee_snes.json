@@ -1,0 +1,122 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "PopnTwinBee",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\PopnTwinBee-Snes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "PopnTwinBee-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_health_009c",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E009C",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x009C",
+          "wram_offset": 156
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0x7E009C",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_009c",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0x7E009C",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x009C",
+          "wram_offset": 156
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0x7E009C",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_1f08",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E1F08",
+          "size": 4,
+          "value_type": "bcd",
+          "byte_order": "little",
+          "raw_type": "<d4",
+          "bank": "7E",
+          "address": "0x1F08",
+          "wram_offset": 7944
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0x7E1F08",
+          "raw_type": "<d4"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

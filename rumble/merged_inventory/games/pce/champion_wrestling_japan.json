@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "championwrestling",
+  "display_name": "Champion Wrestling (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Champion Wrestling (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f020c:80",
+          "desc": "Infinite Energy",
+          "address": "0x1F020C"
+        },
+        {
+          "code": "1f0752:05",
+          "desc": "Infinite Time",
+          "address": "0x1F0752"
+        },
+        {
+          "code": "1f0753:00",
+          "desc": "Infinite Time",
+          "address": "0x1F0753"
+        },
+        {
+          "code": "1f0754:00",
+          "desc": "Infinite Time",
+          "address": "0x1F0754"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

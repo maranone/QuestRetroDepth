@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "wolfenstein3d",
+  "display_name": "Wolfenstein 3D (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Wolfenstein 3D (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "10000D00",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000D00"
+        },
+        {
+          "code": "8200B0D8",
+          "desc": "Quick Score Gain",
+          "address": "0x0200B0D8"
+        },
+        {
+          "code": "8200B0D8",
+          "desc": "Max Score",
+          "address": "0x0200B0D8"
+        },
+        {
+          "code": "8200B0DA",
+          "desc": "Max Score",
+          "address": "0x0200B0DA"
+        },
+        {
+          "code": "8200B0E0",
+          "desc": "Infinite Lives",
+          "address": "0x0200B0E0"
+        },
+        {
+          "code": "8200B0E2",
+          "desc": "Infinite Health",
+          "address": "0x0200B0E2"
+        },
+        {
+          "code": "8200B0E4",
+          "desc": "Infinite Ammo",
+          "address": "0x0200B0E4"
+        },
+        {
+          "code": "8200B0E6",
+          "desc": "Have All Keys",
+          "address": "0x0200B0E6"
+        },
+        {
+          "code": "8200B0E8",
+          "desc": "Have All Weapons",
+          "address": "0x0200B0E8"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Wolfenstein 3D (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "10000D00",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000D00"
+        },
+        {
+          "code": "8200B0D8",
+          "desc": "Quick Score Gain",
+          "address": "0x0200B0D8"
+        },
+        {
+          "code": "8200B0D8",
+          "desc": "Max Score",
+          "address": "0x0200B0D8"
+        },
+        {
+          "code": "8200B0DA",
+          "desc": "Max Score",
+          "address": "0x0200B0DA"
+        },
+        {
+          "code": "8200B0E0",
+          "desc": "Infinite Lives",
+          "address": "0x0200B0E0"
+        },
+        {
+          "code": "8200B0E2",
+          "desc": "Infinite Health",
+          "address": "0x0200B0E2"
+        },
+        {
+          "code": "8200B0E4",
+          "desc": "Infinite Ammo",
+          "address": "0x0200B0E4"
+        },
+        {
+          "code": "8200B0E6",
+          "desc": "Have All Keys",
+          "address": "0x0200B0E6"
+        },
+        {
+          "code": "8200B0E8",
+          "desc": "Have All Weapons",
+          "address": "0x0200B0E8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

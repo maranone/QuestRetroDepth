@@ -1,0 +1,6 @@
+game_name=SD Hiryuu no Ken Gaiden (Japan) (SGB Enhanced)
+game_key=sd_hiryuu_no_ken_gaiden_japan_sgb_enhanced
+system=gb
+integration_tier=contrib
+trigger	damage_taken_health_dbd4	damage_taken	0xDBD4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_dbd4	death	0xDBD4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

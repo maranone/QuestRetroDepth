@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "championshiploderunner",
+  "display_name": "Championship Lode Runner (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Championship Lode Runner (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0098:05",
+          "desc": "Infinite Lives",
+          "address": "0x0098"
+        },
+        {
+          "code": "0093:00",
+          "desc": "Win Level Now",
+          "address": "0x0093"
+        },
+        {
+          "code": "009A:FF",
+          "desc": "Invincibility",
+          "address": "0x009A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "system": "nes",
+  "normalized_title": "homealone",
+  "display_name": "Home Alone (USA) (Game Genie)",
+  "aliases": [
+    "Home Alone (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Home Alone (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "OOLAZO",
+          "desc": "The Hiding Code!",
+          "address": "0x0112"
+        },
+        {
+          "code": "002E:00",
+          "desc": "Instantly Win Game",
+          "address": "0x002E"
+        },
+        {
+          "code": "002F:00",
+          "desc": "Instantly Win Game",
+          "address": "0x002F"
+        },
+        {
+          "code": "002E:00",
+          "desc": "No Time Left",
+          "address": "0x002E"
+        },
+        {
+          "code": "002B:FF",
+          "desc": "High Score",
+          "address": "0x002B"
+        },
+        {
+          "code": "002C:FF",
+          "desc": "High Score",
+          "address": "0x002C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

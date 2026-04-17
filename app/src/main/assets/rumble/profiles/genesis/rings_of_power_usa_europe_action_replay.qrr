@@ -1,0 +1,7 @@
+game_name=Rings of Power (USA, Europe) (Action Replay)
+game_key=rings_of_power_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff02de	pickup	0xFF02DE	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_ff0304	damage_taken	0xFF0304	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff0304	death	0xFF0304	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

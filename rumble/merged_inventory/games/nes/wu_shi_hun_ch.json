@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "wushihun",
+  "display_name": "Wu Shi Hun (Ch)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wu Shi Hun (Ch).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0316:D0",
+          "desc": "Infinite Health P1",
+          "address": "0x0316"
+        },
+        {
+          "code": "0356:D0",
+          "desc": "Infinite Health P2",
+          "address": "0x0356"
+        },
+        {
+          "code": "6019:02",
+          "desc": "No Random Battle",
+          "address": "0x6019"
+        },
+        {
+          "code": "601C:FF",
+          "desc": "Money",
+          "address": "0x601C"
+        },
+        {
+          "code": "601D:FF",
+          "desc": "Money",
+          "address": "0x601D"
+        },
+        {
+          "code": "6208:00",
+          "desc": "Exp Modifire",
+          "address": "0x6208"
+        },
+        {
+          "code": "6209:00",
+          "desc": "Exp Modifire",
+          "address": "0x6209"
+        },
+        {
+          "code": "620C:0F",
+          "desc": "Refill Health",
+          "address": "0x620C"
+        },
+        {
+          "code": "620D:27",
+          "desc": "Refill Health",
+          "address": "0x620D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

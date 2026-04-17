@@ -1,0 +1,7 @@
+game_name=Pagemaster, The (USA) (Beta)
+game_key=pagemaster_the_usa_beta
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_01e8	life_lost	0x7E01E8	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_01e8	life_gained	0x7E01E8	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_01ec	pickup	0x7E01EC	1	uint	little	prev != curr	0.8	1	right:0.250:18

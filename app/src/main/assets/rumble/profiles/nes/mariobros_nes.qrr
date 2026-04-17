@@ -1,0 +1,8 @@
+game_name=Mario Bros. (Europe) (PAL-MC-0, Classic Series)
+game_key=MarioBros-Nes
+system=nes
+integration_tier=stable
+trigger	level_complete_level_0041	level_complete	0x0041	1	bcd	native	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_0048	life_lost	0x0048	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0048	life_gained	0x0048	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0094	score	0x0094	4	bcd	big	prev < curr	0.8	1	right:0.350:60

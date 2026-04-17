@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "adventuresoflolo",
+  "display_name": "Adventures of Lolo (World) (Game Genie)",
+  "aliases": [
+    "Adventures of Lolo (Japan)",
+    "Adventures Of Lolo (Rumbles)",
+    "Adventures of Lolo (USA)",
+    "Adventures of Lolo (World) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Adventures of Lolo (World) (Game Genie).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "SXOPSPVG",
+          "desc": "Infinite Lives",
+          "address": "0x012D"
+        },
+        {
+          "code": "PEKPOAIA",
+          "desc": "1 Life For Lolo",
+          "address": "0x0009"
+        },
+        {
+          "code": "PEKPOAIE",
+          "desc": "9 Lives For Lolo",
+          "address": "0x0009"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

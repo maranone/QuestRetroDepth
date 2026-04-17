@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "shinobi",
+  "display_name": "Shinobi (USA) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Shinobi (USA) (Game Genie).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "SZEOLXVK",
+          "desc": "Infinite Lives",
+          "address": "0x02AB"
+        },
+        {
+          "code": "AANOLAZA",
+          "desc": "1 Life",
+          "address": "0x008B"
+        },
+        {
+          "code": "IANOLAZA",
+          "desc": "6 Lives",
+          "address": "0x008B"
+        },
+        {
+          "code": "AANOLAZE",
+          "desc": "9 Lives",
+          "address": "0x008B"
+        },
+        {
+          "code": "IEKONILA",
+          "desc": "Turbo Running",
+          "address": "0x058F"
+        },
+        {
+          "code": "GAXOTATE",
+          "desc": "Start With Double Normal Energy",
+          "address": "0x008E"
+        },
+        {
+          "code": "GENPGPTE",
+          "desc": "Start With Double Normal Energy",
+          "address": "0x010C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

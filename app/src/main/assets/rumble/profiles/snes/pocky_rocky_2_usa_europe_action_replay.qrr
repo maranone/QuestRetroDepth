@@ -1,0 +1,11 @@
+game_name=Pocky _ Rocky 2 (USA, Europe) (Action Replay)
+game_key=pocky_rocky_2_usa_europe_action_replay
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_19f4	life_lost	0x7E19F4	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_19f4	life_gained	0x7E19F4	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_05b0	pickup	0x7E05B0	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_05b1	pickup	0x7E05B1	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_05ea	damage_taken	0x7E05EA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05ea	death	0x7E05EA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_1792	enemy_defeated	0x7E1792	1	uint	little	prev > curr	0.65	1	right:0.450:35

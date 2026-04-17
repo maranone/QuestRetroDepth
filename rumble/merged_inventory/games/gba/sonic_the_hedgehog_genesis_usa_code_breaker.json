@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "sonichedgehoggenesis",
+  "display_name": "Sonic The Hedgehog - Genesis (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Sonic The Hedgehog - Genesis (USA) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "330030EE",
+          "desc": "Infinite Lives",
+          "address": "0x020030EE"
+        },
+        {
+          "code": "830030EC",
+          "desc": "Max/Infinite Rings",
+          "address": "0x020030EC"
+        },
+        {
+          "code": "83002208",
+          "desc": "Infinite Time",
+          "address": "0x02002208"
+        },
+        {
+          "code": "830021F0",
+          "desc": "Max Score",
+          "address": "0x020021F0"
+        },
+        {
+          "code": "830021F2",
+          "desc": "Max Score",
+          "address": "0x020021F2"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Sonic The Hedgehog - Genesis (USA) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "330030EE",
+          "desc": "Infinite Lives",
+          "address": "0x020030EE"
+        },
+        {
+          "code": "830030EC",
+          "desc": "Max/Infinite Rings",
+          "address": "0x020030EC"
+        },
+        {
+          "code": "83002208",
+          "desc": "Infinite Time",
+          "address": "0x02002208"
+        },
+        {
+          "code": "830021F0",
+          "desc": "Max Score",
+          "address": "0x020021F0"
+        },
+        {
+          "code": "830021F2",
+          "desc": "Max Score",
+          "address": "0x020021F2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

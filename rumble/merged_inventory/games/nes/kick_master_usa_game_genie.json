@@ -1,0 +1,127 @@
+{
+  "system": "nes",
+  "normalized_title": "kickmaster",
+  "display_name": "Kick Master (USA) (Game Genie)",
+  "aliases": [
+    "KickMaster (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\KickMaster (USA).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 21,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "00D1:C0",
+          "desc": "Super Float Jump",
+          "address": "0x00D1"
+        },
+        {
+          "code": "00D2:10",
+          "desc": "Walk Through Enemies",
+          "address": "0x00D2"
+        },
+        {
+          "code": "00EA:69",
+          "desc": "Infinite MP",
+          "address": "0x00EA"
+        },
+        {
+          "code": "00EB:69",
+          "desc": "Infinite MP",
+          "address": "0x00EB"
+        },
+        {
+          "code": "00EC:69",
+          "desc": "Infinite MP",
+          "address": "0x00EC"
+        },
+        {
+          "code": "06BE:FF",
+          "desc": "Have All Spells",
+          "address": "0x06BE"
+        },
+        {
+          "code": "06BF:FF",
+          "desc": "Have All Spells",
+          "address": "0x06BF"
+        },
+        {
+          "code": "0590:10",
+          "desc": "Infinite Lightning Time",
+          "address": "0x0590"
+        },
+        {
+          "code": "0591:10",
+          "desc": "Infinite Lightning Time",
+          "address": "0x0591"
+        },
+        {
+          "code": "0592:10",
+          "desc": "Infinite Lightning Time",
+          "address": "0x0592"
+        },
+        {
+          "code": "05A7:96",
+          "desc": "Infinite Lightning Time",
+          "address": "0x05A7"
+        },
+        {
+          "code": "06B9:36",
+          "desc": "Infinite Health",
+          "address": "0x06B9"
+        },
+        {
+          "code": "030E:09",
+          "desc": "Infinite Lives",
+          "address": "0x030E"
+        },
+        {
+          "code": "06EF:69",
+          "desc": "Automatically Kill Enemies",
+          "address": "0x06EF"
+        },
+        {
+          "code": "00ED:69",
+          "desc": "Max Experience (Fake?)",
+          "address": "0x00ED"
+        },
+        {
+          "code": "00EE:69",
+          "desc": "Max Experience (Fake?)",
+          "address": "0x00EE"
+        },
+        {
+          "code": "00EF:69",
+          "desc": "Max Experience (Fake?)",
+          "address": "0x00EF"
+        },
+        {
+          "code": "00F0:69",
+          "desc": "Max Experience (Fake?)",
+          "address": "0x00F0"
+        },
+        {
+          "code": "0437:00",
+          "desc": "Bosses Have No Health",
+          "address": "0x0437"
+        },
+        {
+          "code": "00D3:06",
+          "desc": "Have Powered Up Character",
+          "address": "0x00D3"
+        },
+        {
+          "code": "009A:0B",
+          "desc": "Level Modifier",
+          "address": "0x009A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,10 @@
+game_name=Star Wars Trilogy - Apprentice of the Force (USA, Europe) (Code Breaker)
+game_key=star_wars_trilogy_apprentice_of_the_force_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_02004433	damage_taken	0x02004433	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02004433	death	0x02004433	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02000130	damage_taken	0x02000130	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02000130	death	0x02000130	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020077eb	damage_taken	0x020077EB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020077eb	death	0x020077EB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

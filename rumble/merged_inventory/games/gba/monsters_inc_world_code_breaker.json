@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "monstersinc",
+  "display_name": "Monsters, Inc. (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Monsters, Inc. (World) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10024C20",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02024C20"
+        },
+        {
+          "code": "33002754",
+          "desc": "Infinite Live",
+          "address": "0x02002754"
+        },
+        {
+          "code": "33002850",
+          "desc": "Infinite Laugh Cannisters",
+          "address": "0x02002850"
+        },
+        {
+          "code": "3300286C",
+          "desc": "Infinite Candies",
+          "address": "0x0200286C"
+        },
+        {
+          "code": "33003983",
+          "desc": "Infinite Health",
+          "address": "0x02003983"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Monsters, Inc. (World) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10024C20",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02024C20"
+        },
+        {
+          "code": "33002754",
+          "desc": "Infinite Live",
+          "address": "0x02002754"
+        },
+        {
+          "code": "33002850",
+          "desc": "Infinite Laugh Cannisters",
+          "address": "0x02002850"
+        },
+        {
+          "code": "3300286C",
+          "desc": "Infinite Candies",
+          "address": "0x0200286C"
+        },
+        {
+          "code": "33003983",
+          "desc": "Infinite Health",
+          "address": "0x02003983"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

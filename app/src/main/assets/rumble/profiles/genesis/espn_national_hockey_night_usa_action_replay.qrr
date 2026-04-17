@@ -1,0 +1,6 @@
+game_name=ESPN National Hockey Night (USA) (Action Replay)
+game_key=espn_national_hockey_night_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff7cf8	score	0xFF7CF8	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff7d08	score	0xFF7D08	1	uint	little	prev < curr	0.8	1	right:0.350:60

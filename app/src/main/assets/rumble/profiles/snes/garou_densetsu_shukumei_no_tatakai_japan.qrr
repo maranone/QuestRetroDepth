@@ -1,0 +1,10 @@
+game_name=Garou Densetsu - Shukumei no Tatakai (Japan)
+game_key=garou_densetsu_shukumei_no_tatakai_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_0613	damage_taken	0x7E0613	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0613	death	0x7E0613	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_0614	score	0x7E0614	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	damage_taken_health_0623	damage_taken	0x7E0623	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0623	death	0x7E0623	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_0624	score	0x7E0624	1	uint	little	prev < curr	0.8	1	right:0.350:60

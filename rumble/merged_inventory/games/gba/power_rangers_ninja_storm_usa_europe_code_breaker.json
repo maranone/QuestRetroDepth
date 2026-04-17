@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "powerrangersninjastorm",
+  "display_name": "Power Rangers - Ninja Storm (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Power Rangers - Ninja Storm (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "330026AF",
+          "desc": "Infinite Special",
+          "address": "0x020026AF"
+        },
+        {
+          "code": "3300268C",
+          "desc": "Infinite HP",
+          "address": "0x0200268C"
+        },
+        {
+          "code": "3300005D",
+          "desc": "Infinite Lives",
+          "address": "0x0200005D"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Power Rangers - Ninja Storm (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "330026AF",
+          "desc": "Infinite Special",
+          "address": "0x020026AF"
+        },
+        {
+          "code": "3300268C",
+          "desc": "Infinite HP",
+          "address": "0x0200268C"
+        },
+        {
+          "code": "3300005D",
+          "desc": "Infinite Lives",
+          "address": "0x0200005D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

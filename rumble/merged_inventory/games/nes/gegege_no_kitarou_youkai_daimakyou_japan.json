@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "gegegenokitarouyoukaidaimakyou",
+  "display_name": "Gegege no Kitarou - Youkai Daimakyou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gegege no Kitarou - Youkai Daimakyou (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "00B2:09",
+          "desc": "Infinite Lives",
+          "address": "0x00B2"
+        },
+        {
+          "code": "0068:FF",
+          "desc": "Invincibility - Alternative",
+          "address": "0x0068"
+        },
+        {
+          "code": "0064:00",
+          "desc": "Invincibility",
+          "address": "0x0064"
+        },
+        {
+          "code": "0067:00",
+          "desc": "Invincibility",
+          "address": "0x0067"
+        },
+        {
+          "code": "SZXATZVG",
+          "desc": "Infinite Lives",
+          "address": "0x022E"
+        },
+        {
+          "code": "ATVOZASA",
+          "desc": "Invincibility",
+          "address": "0x00EA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

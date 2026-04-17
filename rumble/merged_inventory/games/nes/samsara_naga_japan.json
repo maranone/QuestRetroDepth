@@ -1,0 +1,80 @@
+{
+  "system": "nes",
+  "normalized_title": "samsaranaga",
+  "display_name": "Samsara Naga (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Samsara Naga (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "0029:01",
+          "desc": "No Random Battles",
+          "address": "0x0029"
+        },
+        {
+          "code": "7710:FF",
+          "desc": "Infinite Gold",
+          "address": "0x7710"
+        },
+        {
+          "code": "7711:FF",
+          "desc": "Infinite Gold",
+          "address": "0x7711"
+        },
+        {
+          "code": "7720:FF",
+          "desc": "Infinite Warrior Health",
+          "address": "0x7720"
+        },
+        {
+          "code": "7750:FF",
+          "desc": "Infinite Dragon Health",
+          "address": "0x7750"
+        },
+        {
+          "code": "0388:00",
+          "desc": "Kill Enemies Faster",
+          "address": "0x0388"
+        },
+        {
+          "code": "0398:00",
+          "desc": "Kill Enemies Faster",
+          "address": "0x0398"
+        },
+        {
+          "code": "03A8:00",
+          "desc": "Kill Enemies Faster",
+          "address": "0x03A8"
+        },
+        {
+          "code": "03B8:00",
+          "desc": "Kill Enemies Faster",
+          "address": "0x03B8"
+        },
+        {
+          "code": "03C8:00",
+          "desc": "Kill Enemies Faster",
+          "address": "0x03C8"
+        },
+        {
+          "code": "03D8:00",
+          "desc": "Kill Enemies Faster",
+          "address": "0x03D8"
+        },
+        {
+          "code": "03E8:00",
+          "desc": "Kill Enemies Faster",
+          "address": "0x03E8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

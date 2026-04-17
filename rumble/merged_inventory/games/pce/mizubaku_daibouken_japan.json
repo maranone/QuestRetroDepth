@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "mizubakudaibouken",
+  "display_name": "Mizubaku Daibouken (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Mizubaku Daibouken (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f0611:03",
+          "desc": "Infinite Energy",
+          "address": "0x1F0611"
+        },
+        {
+          "code": "1f0676:36",
+          "desc": "Invincibility",
+          "address": "0x1F0676"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

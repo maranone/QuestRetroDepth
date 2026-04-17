@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "tomandjerrymagicring",
+  "display_name": "Tom and Jerry - The Magic Ring (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Tom and Jerry - The Magic Ring (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10006E8C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02006E8C"
+        },
+        {
+          "code": "3203E4B8",
+          "desc": "Infinite Health",
+          "address": "0x0203E4B8"
+        },
+        {
+          "code": "3203E6F8",
+          "desc": "1-Hit Death (Bosses)",
+          "address": "0x0203E6F8"
+        },
+        {
+          "code": "33006002",
+          "desc": "Invincible",
+          "address": "0x02006002"
+        },
+        {
+          "code": "3300600D",
+          "desc": "Have Cheese/Fish",
+          "address": "0x0200600D"
+        },
+        {
+          "code": "330067F1",
+          "desc": "Infinite Eggs/Bottles",
+          "address": "0x020067F1"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Tom and Jerry - The Magic Ring (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10006E8C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02006E8C"
+        },
+        {
+          "code": "3203E4B8",
+          "desc": "Infinite Health",
+          "address": "0x0203E4B8"
+        },
+        {
+          "code": "3203E6F8",
+          "desc": "1-Hit Death (Bosses)",
+          "address": "0x0203E6F8"
+        },
+        {
+          "code": "33006002",
+          "desc": "Invincible",
+          "address": "0x02006002"
+        },
+        {
+          "code": "3300600D",
+          "desc": "Have Cheese/Fish",
+          "address": "0x0200600D"
+        },
+        {
+          "code": "330067F1",
+          "desc": "Infinite Eggs/Bottles",
+          "address": "0x020067F1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,6 +1,0 @@
-game_name=7thSaga
-game_key=7thSaga-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_1dc4	damage_taken	0x7E1DC4	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	enemy_defeated_1_1f04	enemy_defeated	0x7E1F04	1	uint	native	prev != curr	0.55	1	left:0.510:100

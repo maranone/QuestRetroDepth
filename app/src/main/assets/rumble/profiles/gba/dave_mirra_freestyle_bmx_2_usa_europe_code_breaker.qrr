@@ -1,0 +1,6 @@
+game_name=Dave Mirra Freestyle BMX 2 (USA, Europe) (Code Breaker)
+game_key=dave_mirra_freestyle_bmx_2_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_0200dc04	score	0x0200DC04	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0200dc06	score	0x0200DC06	1	uint	little	prev < curr	0.8	1	right:0.350:60

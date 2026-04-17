@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "prosporthockey",
+  "display_name": "Pro Sport Hockey (USA) (Game Genie)",
+  "aliases": [
+    "Pro Sport Hockey (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Pro Sport Hockey (USA).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 30,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "VVNPTOSE",
+          "desc": "Player 1 starts with 1 point",
+          "address": "0x016E"
+        },
+        {
+          "code": "VVNOPOSE",
+          "desc": "Player 2 starts with 1 point",
+          "address": "0x01E9"
+        },
+        {
+          "code": "ZENPIPAA",
+          "desc": "Player 1 starts with 2 points",
+          "address": "0x010D"
+        },
+        {
+          "code": "VVNOZPNT",
+          "desc": "Player 1 starts with 2 points",
+          "address": "0x01EA"
+        },
+        {
+          "code": "GENPIPAA",
+          "desc": "Player 1 starts with 4 points",
+          "address": "0x010D"
+        },
+        {
+          "code": "VVNOZPNT",
+          "desc": "Player 1 starts with 4 points",
+          "address": "0x01EA"
+        },
+        {
+          "code": "TENPIPAA",
+          "desc": "Player 1 starts with 6 points",
+          "address": "0x010D"
+        },
+        {
+          "code": "VVNOZPNT",
+          "desc": "Player 1 starts with 6 points",
+          "address": "0x01EA"
+        },
+        {
+          "code": "AENPIPAE",
+          "desc": "Player 1 starts with 8 points",
+          "address": "0x010D"
+        },
+        {
+          "code": "VVNOZPNT",
+          "desc": "Player 1 starts with 8 points",
+          "address": "0x01EA"
+        },
+        {
+          "code": "ZENPIPAE",
+          "desc": "Player 1 starts with 10 points",
+          "address": "0x010D"
+        },
+        {
+          "code": "VVNOZPNT",
+          "desc": "Player 1 starts with 10 points",
+          "address": "0x01EA"
+        },
+        {
+          "code": "ZENPIPAA",
+          "desc": "Player 2 starts with 2 points",
+          "address": "0x010D"
+        },
+        {
+          "code": "NVNPYPVT",
+          "desc": "Player 2 starts with 2 points",
+          "address": "0x016F"
+        },
+        {
+          "code": "GENPIPAA",
+          "desc": "Player 2 starts with 4 points",
+          "address": "0x010D"
+        },
+        {
+          "code": "NVNPYPVT",
+          "desc": "Player 2 starts with 4 points",
+          "address": "0x016F"
+        },
+        {
+          "code": "TENPIPAA",
+          "desc": "Player 2 starts with 6 points",
+          "address": "0x010D"
+        },
+        {
+          "code": "NVNPYPVT",
+          "desc": "Player 2 starts with 6 points",
+          "address": "0x016F"
+        },
+        {
+          "code": "AENPIPAE",
+          "desc": "Player 2 starts with 8 points",
+          "address": "0x010D"
+        },
+        {
+          "code": "NVNPYPVT",
+          "desc": "Player 2 starts with 8 points",
+          "address": "0x016F"
+        },
+        {
+          "code": "ZENPIPAE",
+          "desc": "Player 2 starts with 10 points",
+          "address": "0x010D"
+        },
+        {
+          "code": "NVNPYPVT",
+          "desc": "Player 2 starts with 10 points",
+          "address": "0x016F"
+        },
+        {
+          "code": "04E6:00",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x04E6"
+        },
+        {
+          "code": "04E7:00",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x04E7"
+        },
+        {
+          "code": "0058:00",
+          "desc": "Minutes Modifier",
+          "address": "0x0058"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

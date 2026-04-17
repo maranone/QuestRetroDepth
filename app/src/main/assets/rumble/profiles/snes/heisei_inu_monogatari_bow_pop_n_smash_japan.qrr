@@ -1,0 +1,5 @@
+game_name=Heisei Inu Monogatari Bow - Pop'n Smash!! (Japan)
+game_key=heisei_inu_monogatari_bow_pop_n_smash_japan
+system=snes
+integration_tier=contrib
+trigger	score_score_1bf8	score	0x7E1BF8	1	uint	little	prev < curr	0.8	1	right:0.350:60

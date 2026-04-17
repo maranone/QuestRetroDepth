@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "battlestadiumsenbatsuproyakyuu",
+  "display_name": "Battle Stadium - Senbatsu Pro Yakyuu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Battle Stadium - Senbatsu Pro Yakyuu (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0549:FF",
+          "desc": "Max Player Stats",
+          "address": "0x0549"
+        },
+        {
+          "code": "054A:FF",
+          "desc": "Max Player Stats",
+          "address": "0x054A"
+        },
+        {
+          "code": "AASAKLNY",
+          "desc": "Skip Intro Screens",
+          "address": "0x030C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

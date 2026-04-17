@@ -1,0 +1,6 @@
+game_name=Turrican (USA, Europe) (Game Genie)
+game_key=turrican_usa_europe_game_genie
+system=gb
+integration_tier=contrib
+trigger	life_lost_lives_ddc5	life_lost	0xDDC5	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ddc5	life_gained	0xDDC5	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

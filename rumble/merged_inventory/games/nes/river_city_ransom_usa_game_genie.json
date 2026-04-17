@@ -1,0 +1,165 @@
+{
+  "system": "nes",
+  "normalized_title": "rivercityransom",
+  "display_name": "River City Ransom (USA) (Game Genie)",
+  "aliases": [
+    "River City Ransom (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\River City Ransom (USA).cht",
+      "total_cheat_rows": 117,
+      "raw_entry_count": 63,
+      "distinct_address_count": 45,
+      "sample_raw_entries": [
+        {
+          "code": "SUNEUKSO",
+          "desc": "Infinite Lives",
+          "address": "0x04BB"
+        },
+        {
+          "code": "SOIPPP",
+          "desc": "1-Hit And The Enemies Die",
+          "address": "0x0111"
+        },
+        {
+          "code": "04BF:63",
+          "desc": "Infinite HP",
+          "address": "0x04BF"
+        },
+        {
+          "code": "045D:63",
+          "desc": "Infinite HP2",
+          "address": "0x045D"
+        },
+        {
+          "code": "04C8:99",
+          "desc": "Infinite Money",
+          "address": "0x04C8"
+        },
+        {
+          "code": "049F:99",
+          "desc": "P1 Punch At 99",
+          "address": "0x049F"
+        },
+        {
+          "code": "04A3:99",
+          "desc": "P1 Kick At 99",
+          "address": "0x04A3"
+        },
+        {
+          "code": "04A7:99",
+          "desc": "P1 Weapon At 99",
+          "address": "0x04A7"
+        },
+        {
+          "code": "04AB:99",
+          "desc": "P1 Throwing At 99",
+          "address": "0x04AB"
+        },
+        {
+          "code": "04AF:99",
+          "desc": "P1 Agility At 99",
+          "address": "0x04AF"
+        },
+        {
+          "code": "04B3:99",
+          "desc": "P1 Defense At 99",
+          "address": "0x04B3"
+        },
+        {
+          "code": "04B7:99",
+          "desc": "P1 Strength At 99",
+          "address": "0x04B7"
+        },
+        {
+          "code": "04BB:99",
+          "desc": "P1 Willpower At 99",
+          "address": "0x04BB"
+        },
+        {
+          "code": "04A0:99",
+          "desc": "P2 Punch At 99",
+          "address": "0x04A0"
+        },
+        {
+          "code": "04A4:99",
+          "desc": "P2 Kick At 99",
+          "address": "0x04A4"
+        },
+        {
+          "code": "04A8:99",
+          "desc": "P2 Weapon At 99",
+          "address": "0x04A8"
+        },
+        {
+          "code": "04AC:99",
+          "desc": "P2 Throwing At 99",
+          "address": "0x04AC"
+        },
+        {
+          "code": "04B0:99",
+          "desc": "P2 Agility At 99",
+          "address": "0x04B0"
+        },
+        {
+          "code": "04B4:99",
+          "desc": "P2 Defense At 99",
+          "address": "0x04B4"
+        },
+        {
+          "code": "04B8:99",
+          "desc": "P2 Strength At 99",
+          "address": "0x04B8"
+        },
+        {
+          "code": "04BC:99",
+          "desc": "P2 Willpower At 99",
+          "address": "0x04BC"
+        },
+        {
+          "code": "YYVOIUYU",
+          "desc": "Max Punch",
+          "address": "0x03FD"
+        },
+        {
+          "code": "YYVOTUYU",
+          "desc": "Max Kick",
+          "address": "0x03FE"
+        },
+        {
+          "code": "YYVOYUYU",
+          "desc": "Max Weapon",
+          "address": "0x03FF"
+        },
+        {
+          "code": "YYNPAUYU",
+          "desc": "Max Throw",
+          "address": "0x0378"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\River City Ransom (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "SOSPPP",
+          "desc": "1-Hit And The Enemies Die",
+          "address": "0x0119"
+        },
+        {
+          "code": "SUNEUKSO",
+          "desc": "Infinite Lives",
+          "address": "0x04BB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

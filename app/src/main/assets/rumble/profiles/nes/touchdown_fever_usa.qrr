@@ -1,0 +1,6 @@
+game_name=Touchdown Fever (USA)
+game_key=touchdown_fever_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_0088	score	0x0088	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0089	score	0x0089	1	uint	little	prev < curr	0.8	1	right:0.350:60

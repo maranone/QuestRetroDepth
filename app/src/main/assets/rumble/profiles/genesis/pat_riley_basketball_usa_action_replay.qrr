@@ -1,0 +1,6 @@
+game_name=Pat Riley Basketball (USA) (Action Replay)
+game_key=pat_riley_basketball_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff0038	score	0xFF0038	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff003a	score	0xFF003A	1	uint	little	prev < curr	0.8	1	right:0.350:60

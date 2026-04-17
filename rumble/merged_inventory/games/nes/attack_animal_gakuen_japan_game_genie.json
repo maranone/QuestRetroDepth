@@ -1,0 +1,79 @@
+{
+  "system": "nes",
+  "normalized_title": "attackanimalgakuen",
+  "display_name": "Attack Animal Gakuen (Japan) (Game Genie)",
+  "aliases": [
+    "Attack Animal Gakuen (Japan) (Game Genie)",
+    "Attack Animal Gakuen (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\attackanimalgakuen_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0103",
+        "0x04E4"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AttackAnimalGakuen-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x04E4",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0103",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Attack Animal Gakuen (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "PAUAUYLE",
+          "desc": "Start With 9 Lives [Instead Of 3]",
+          "address": "0x070B"
+        },
+        {
+          "code": "YAUAUYLE",
+          "desc": "Start With 15 Lives",
+          "address": "0x070B"
+        },
+        {
+          "code": "PPUAUYLE",
+          "desc": "Start With 25 Lives",
+          "address": "0x071B"
+        },
+        {
+          "code": "ZLUAUYLA",
+          "desc": "Start With 50 Lives",
+          "address": "0x073B"
+        },
+        {
+          "code": "04E4:03",
+          "desc": "Infinite Lives",
+          "address": "0x04E4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

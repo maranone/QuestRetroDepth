@@ -1,0 +1,33 @@
+{
+  "system": "gb",
+  "normalized_title": "toxiccrusaders",
+  "display_name": "Toxic Crusaders (USA) (Game Genie)",
+  "aliases": [
+    "Toxic Crusaders (USA) (GameShark)",
+    "Toxic Crusaders (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Toxic Crusaders (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "010BC6C0",
+          "desc": "Infinite Energy",
+          "address": "0xC6C0"
+        },
+        {
+          "code": "0109CDC0",
+          "desc": "Infinite Hi-Jump",
+          "address": "0xCDC0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

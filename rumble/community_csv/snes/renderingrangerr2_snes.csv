@@ -2,10 +2,10 @@
 # game_name=Rendering Ranger R2 (Japan) (Action Replay)
 # match_names=renderingrangerr2|renderingrangerr2snes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-life_lost_lives_0515,0x7E0515,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
-life_gained_lives_0515,0x7E0515,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,
-score_score0_052b,0x7E052B,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
-score_score1_052a,0x7E052A,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
-score_score2_0529,0x7E0529,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
-score_score3_0528,0x7E0528,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
-score_score4_0527,0x7E0527,1,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+life_lost_lives_0515,0x7E0515,1,uint,prev_gt_curr,,both,0.92,fade_in_out,0,300,250,80,
+life_gained_lives_0515,0x7E0515,1,uint,prev_lt_curr,,both,0.750,fade_in,0,180,200,50,
+score_score0_052b,0x7E052B,1,uint,prev_lt_curr,,right,0.350,burst,0,70,15,10,
+score_score1_052a,0x7E052A,1,uint,prev_lt_curr,,right,0.350,burst,0,70,15,10,
+score_score2_0529,0x7E0529,1,uint,prev_lt_curr,,right,0.350,burst,0,70,15,10,
+score_score3_0528,0x7E0528,1,uint,prev_lt_curr,,right,0.350,burst,0,70,15,10,
+score_score4_0527,0x7E0527,1,uint,prev_lt_curr,,right,0.350,burst,0,70,15,10,

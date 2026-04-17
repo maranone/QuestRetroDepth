@@ -1,0 +1,6 @@
+game_name=Captain Skyhawk (USA, Europe) (Game Genie)
+game_key=captain_skyhawk_usa_europe_game_genie
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_042d	life_lost	0x042D	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_042d	life_gained	0x042D	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

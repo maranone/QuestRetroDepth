@@ -1,0 +1,35 @@
+{
+  "system": "gb",
+  "normalized_title": "flipull",
+  "display_name": "Flipull (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Flipull (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0102C5FF",
+          "desc": "Infinite Tries",
+          "address": "0xC5FF"
+        },
+        {
+          "code": "0109CBFF",
+          "desc": "Freeze Time",
+          "address": "0xCBFF"
+        },
+        {
+          "code": "0103C4FF",
+          "desc": "Infinite Credits",
+          "address": "0xC4FF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

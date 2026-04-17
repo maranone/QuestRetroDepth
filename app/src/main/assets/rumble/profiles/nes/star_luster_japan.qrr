@@ -1,0 +1,8 @@
+game_name=Star Luster (Japan)
+game_key=star_luster_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0045	damage_taken	0x0045	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0045	death	0x0045	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0043	damage_taken	0x0043	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0043	death	0x0043	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

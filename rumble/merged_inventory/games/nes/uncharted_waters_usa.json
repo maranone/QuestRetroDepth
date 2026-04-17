@@ -1,0 +1,85 @@
+{
+  "system": "nes",
+  "normalized_title": "unchartedwaters",
+  "display_name": "Uncharted Waters (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Uncharted Waters (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 13,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "666C:FF",
+          "desc": "Unlimited Gold",
+          "address": "0x666C"
+        },
+        {
+          "code": "6BC4:FF",
+          "desc": "Max Battle Experience",
+          "address": "0x6BC4"
+        },
+        {
+          "code": "6BC5:29",
+          "desc": "Max Battle Experience",
+          "address": "0x6BC5"
+        },
+        {
+          "code": "6BC6:FF",
+          "desc": "Max Sailing Experience",
+          "address": "0x6BC6"
+        },
+        {
+          "code": "6BC6:29",
+          "desc": "Max Sailing Experience",
+          "address": "0x6BC6"
+        },
+        {
+          "code": "6F72:FF",
+          "desc": "Max Fame",
+          "address": "0x6F72"
+        },
+        {
+          "code": "6F73:FF",
+          "desc": "Max Fame",
+          "address": "0x6F73"
+        },
+        {
+          "code": "6F73:01",
+          "desc": "Adjust Rank",
+          "address": "0x6F73"
+        },
+        {
+          "code": "6C94:0A",
+          "desc": "Number Of Crewmen",
+          "address": "0x6C94"
+        },
+        {
+          "code": "058C:0A",
+          "desc": "Battle Timer",
+          "address": "0x058C"
+        },
+        {
+          "code": "05AB:FF",
+          "desc": "Infinite Bonus Points",
+          "address": "0x05AB"
+        },
+        {
+          "code": "6AB5:FF",
+          "desc": "Infinite Food",
+          "address": "0x6AB5"
+        },
+        {
+          "code": "6AB7:FF",
+          "desc": "Infinite Water",
+          "address": "0x6AB7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

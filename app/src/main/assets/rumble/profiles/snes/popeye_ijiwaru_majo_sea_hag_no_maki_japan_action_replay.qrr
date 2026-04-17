@@ -1,0 +1,13 @@
+game_name=Popeye - Ijiwaru Majo Sea Hag no Maki (Japan) (Action Replay)
+game_key=popeye_ijiwaru_majo_sea_hag_no_maki_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_d45c	pickup	0x7ED45C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_d460	damage_taken	0x7ED460	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_d460	death	0x7ED460	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_d45e	life_lost	0x7ED45E	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_d45e	life_gained	0x7ED45E	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_ec06	enemy_defeated	0x7EEC06	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	pickup_coins_ccdd	pickup	0x7ECCDD	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_cce3	pickup	0x7ECCE3	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_0e82	enemy_defeated	0x7E0E82	1	uint	little	prev > curr	0.65	1	right:0.450:35

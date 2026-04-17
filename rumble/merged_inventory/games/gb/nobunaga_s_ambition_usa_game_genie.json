@@ -1,0 +1,57 @@
+{
+  "system": "gb",
+  "normalized_title": "nobunagasambition",
+  "display_name": "Nobunaga's Ambition (USA) (Game Genie)",
+  "aliases": [
+    "Nobunaga's Ambition (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Nobunaga's Ambition (USA).cht",
+      "total_cheat_rows": 144,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "01FFC3D2",
+          "desc": "Max Money",
+          "address": "0xC3D2"
+        },
+        {
+          "code": "01FFC5D2",
+          "desc": "Max Rice",
+          "address": "0xC5D2"
+        },
+        {
+          "code": "01FFC7D2",
+          "desc": "Max Men",
+          "address": "0xC7D2"
+        },
+        {
+          "code": "01FFD1D2",
+          "desc": "Max Money",
+          "address": "0xD1D2"
+        },
+        {
+          "code": "01FFD3D2",
+          "desc": "Max Rice",
+          "address": "0xD3D2"
+        },
+        {
+          "code": "01FFD5D2",
+          "desc": "Max Men",
+          "address": "0xD5D2"
+        },
+        {
+          "code": "01FFDFD2",
+          "desc": "Max Money",
+          "address": "0xDFD2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

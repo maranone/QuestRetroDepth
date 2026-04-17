@@ -1,0 +1,98 @@
+{
+  "system": "nes",
+  "normalized_title": "exerion",
+  "display_name": "Exerion (Japan) (En)",
+  "aliases": [
+    "Exerion (Japan) (En)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\exerion_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0023",
+        "0x003C"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Exerion-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x003C",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0023",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Exerion (Japan) (En).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "AVXAKNOZ",
+          "desc": "Invincibility Against The Second Enemies",
+          "address": "0x076C"
+        },
+        {
+          "code": "AVEOZOOZ",
+          "desc": "Invincibility Against The Third Enemies",
+          "address": "0x01EA"
+        },
+        {
+          "code": "SXUAOTSA",
+          "desc": "Infinite Rapid Shots",
+          "address": "0x0629"
+        },
+        {
+          "code": "0044:05",
+          "desc": "Infinite Lives",
+          "address": "0x0044"
+        },
+        {
+          "code": "VETETP",
+          "desc": "Start On Stage 3 With 3 Lives",
+          "address": "0x0186"
+        },
+        {
+          "code": "SOTETP",
+          "desc": "Start On Stage 4 With 4 Lives",
+          "address": "0x0196"
+        },
+        {
+          "code": "NXTEIO",
+          "desc": "Start On Stage 6 With 6 Lives",
+          "address": "0x01A5"
+        },
+        {
+          "code": "YXTEIO",
+          "desc": "Start On Stage 7 With 7 Lives",
+          "address": "0x01A5"
+        },
+        {
+          "code": "SUTASP",
+          "desc": "Infinite Lives",
+          "address": "0x0135"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

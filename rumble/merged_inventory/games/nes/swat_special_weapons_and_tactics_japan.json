@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "swatspecialweaponsandtactics",
+  "display_name": "SWAT - Special Weapons and Tactics (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\SWAT - Special Weapons and Tactics (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "06D4:D1",
+          "desc": "All Characters Infinite Health",
+          "address": "0x06D4"
+        },
+        {
+          "code": "06D5:D1",
+          "desc": "All Characters Infinite Health",
+          "address": "0x06D5"
+        },
+        {
+          "code": "06D6:D1",
+          "desc": "All Characters Infinite Health",
+          "address": "0x06D6"
+        },
+        {
+          "code": "06D7:D1",
+          "desc": "All Characters Infinite Health",
+          "address": "0x06D7"
+        },
+        {
+          "code": "06D8:D1",
+          "desc": "All Characters Infinite Health",
+          "address": "0x06D8"
+        },
+        {
+          "code": "06D2:02",
+          "desc": "Freeze Timer",
+          "address": "0x06D2"
+        },
+        {
+          "code": "00D3:44",
+          "desc": "Perfect Score",
+          "address": "0x00D3"
+        },
+        {
+          "code": "00D2:97",
+          "desc": "Perfect Score",
+          "address": "0x00D2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

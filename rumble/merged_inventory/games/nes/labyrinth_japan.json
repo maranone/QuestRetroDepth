@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "labyrinth",
+  "display_name": "Labyrinth (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Labyrinth (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "04CA:FF",
+          "desc": "Max Money",
+          "address": "0x04CA"
+        },
+        {
+          "code": "04BD:59",
+          "desc": "Infinite Time &amp; Energy",
+          "address": "0x04BD"
+        },
+        {
+          "code": "062B:01",
+          "desc": "Untouchable",
+          "address": "0x062B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

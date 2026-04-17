@@ -1,0 +1,93 @@
+{
+  "system": "nes",
+  "normalized_title": "youkaidouchuuki",
+  "display_name": "Youkai Douchuuki (Japan)",
+  "aliases": [
+    "Youkai Douchuuki (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\youkaidouchuuki_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x03C3",
+        "0x03D8"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\YoukaiDouchuuki-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x03C3",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x03D8",
+          "type": "<n4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Youkai Douchuuki (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "03C3:10",
+          "desc": "Infinite Energy",
+          "address": "0x03C3"
+        },
+        {
+          "code": "0656:00",
+          "desc": "One Hit Kill The Boss",
+          "address": "0x0656"
+        },
+        {
+          "code": "008E:05",
+          "desc": "Invincibility",
+          "address": "0x008E"
+        },
+        {
+          "code": "03FC:09",
+          "desc": "Infinite Charms",
+          "address": "0x03FC"
+        },
+        {
+          "code": "03DB:39",
+          "desc": "Infinite Cash",
+          "address": "0x03DB"
+        },
+        {
+          "code": "03DC:39",
+          "desc": "Infinite Cash",
+          "address": "0x03DC"
+        },
+        {
+          "code": "03CF:30",
+          "desc": "Pious Modifier",
+          "address": "0x03CF"
+        },
+        {
+          "code": "03D0:30",
+          "desc": "Pious Modifier",
+          "address": "0x03D0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "system": "nes",
+  "normalized_title": "arkistasring",
+  "display_name": "Arkista's Ring (USA) (Game Genie)",
+  "aliases": [
+    "Arkista's Ring (USA) (Game Genie)",
+    "Arkista's Ring (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\arkistasring_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x03D6",
+        "0x03DB",
+        "0x03F6"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ArkistasRing-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x03D6",
+          "type": "|n1"
+        },
+        {
+          "name": "lives",
+          "address": "0x03DB",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x03F6",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Arkista's Ring (USA).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 36,
+      "distinct_address_count": 26,
+      "sample_raw_entries": [
+        {
+          "code": "03D6:05",
+          "desc": "Infinite Hearts",
+          "address": "0x03D6"
+        },
+        {
+          "code": "0001:FF",
+          "desc": "Unlock Doors",
+          "address": "0x0001"
+        },
+        {
+          "code": "03D8:01",
+          "desc": "Health Potions",
+          "address": "0x03D8"
+        },
+        {
+          "code": "03D9:00",
+          "desc": "Staff (fireball ability)",
+          "address": "0x03D9"
+        },
+        {
+          "code": "03DA:00",
+          "desc": "Little...flash device found near beginning",
+          "address": "0x03DA"
+        },
+        {
+          "code": "SZOPTIST",
+          "desc": "Infinite Energy [Fixed]",
+          "address": "0x052E"
+        },
+        {
+          "code": "PAKETILA",
+          "desc": "1 life",
+          "address": "0x058E"
+        },
+        {
+          "code": "TAKETILA",
+          "desc": "6 lives",
+          "address": "0x058E"
+        },
+        {
+          "code": "PAKETILE",
+          "desc": "9 lives",
+          "address": "0x058E"
+        },
+        {
+          "code": "ZAKATIIA",
+          "desc": "Start with fewer hearts",
+          "address": "0x050E"
+        },
+        {
+          "code": "PAKATIIE",
+          "desc": "Start with more hearts",
+          "address": "0x050E"
+        },
+        {
+          "code": "LAEPYSYA",
+          "desc": "Less damage from powerful monsters",
+          "address": "0x050F"
+        },
+        {
+          "code": "GZOPTIST",
+          "desc": "Infinite energy",
+          "address": "0x052E"
+        },
+        {
+          "code": "IPUAGSLA",
+          "desc": "20 continues",
+          "address": "0x051C"
+        },
+        {
+          "code": "TAUAGSLA",
+          "desc": "5 continues",
+          "address": "0x050C"
+        },
+        {
+          "code": "SZOOASSE",
+          "desc": "Infinite Energy",
+          "address": "0x05A8"
+        },
+        {
+          "code": "0022:40",
+          "desc": "Have Fire Ball",
+          "address": "0x0022"
+        },
+        {
+          "code": "03DC:FF",
+          "desc": "Have Ring ,Necklace, Mirror",
+          "address": "0x03DC"
+        },
+        {
+          "code": "03D0:00",
+          "desc": "Stage Modifier",
+          "address": "0x03D0"
+        },
+        {
+          "code": "03D7:03",
+          "desc": "Max Item Slots",
+          "address": "0x03D7"
+        },
+        {
+          "code": "03D5:0A",
+          "desc": "Have All Armor",
+          "address": "0x03D5"
+        },
+        {
+          "code": "03D6:0A",
+          "desc": "Have All Armor",
+          "address": "0x03D6"
+        },
+        {
+          "code": "03DB:00",
+          "desc": "Level modifier",
+          "address": "0x03DB"
+        },
+        {
+          "code": "0030:00",
+          "desc": "Level number modifier",
+          "address": "0x0030"
+        },
+        {
+          "code": "0031:00",
+          "desc": "Continues modifier",
+          "address": "0x0031"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

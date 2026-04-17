@@ -1,0 +1,27 @@
+{
+  "system": "nes",
+  "normalized_title": "marioopengolf",
+  "display_name": "Mario Open Golf (Japan) (Rev 1)",
+  "aliases": [
+    "Mario Open Golf (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mario Open Golf (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "SOVETAAT",
+          "desc": "Unlock all courses",
+          "address": "0x009E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

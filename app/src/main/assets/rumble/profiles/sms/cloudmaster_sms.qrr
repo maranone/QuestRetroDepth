@@ -1,0 +1,8 @@
+game_name=Cloud Master (USA, Europe) (Action Replay)
+game_key=CloudMaster-Sms
+system=sms
+integration_tier=stable
+trigger	life_lost_lives_c4c9	life_lost	0xC4C9	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_c4c9	life_gained	0xC4C9	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_c4ca	score	0xC4CA	2	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score6_c4cc	score	0xC4CC	1	uint	native	prev < curr	0.8	1	right:0.350:60

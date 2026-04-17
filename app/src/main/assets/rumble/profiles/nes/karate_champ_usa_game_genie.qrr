@@ -1,0 +1,12 @@
+game_name=Karate Champ (USA) (Game Genie)
+game_key=karate_champ_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	level_complete_level_005d	level_complete	0x005D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	score_score_02d2	score	0x02D2	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_006e	score	0x006E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_006f	score	0x006F	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0070	score	0x0070	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0071	score	0x0071	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0072	score	0x0072	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0073	score	0x0073	1	uint	little	prev < curr	0.8	1	right:0.350:60

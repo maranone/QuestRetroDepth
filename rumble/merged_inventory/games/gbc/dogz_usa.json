@@ -1,0 +1,30 @@
+{
+  "system": "gbc",
+  "normalized_title": "dogz",
+  "display_name": "Dogz (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Dogz (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "01AAD180",
+          "desc": "Max Happiness",
+          "address": "0xD180"
+        },
+        {
+          "code": "01AAD1A1",
+          "desc": "Max Happiness",
+          "address": "0xD1A1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

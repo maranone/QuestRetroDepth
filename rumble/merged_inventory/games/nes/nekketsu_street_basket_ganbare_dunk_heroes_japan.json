@@ -1,0 +1,100 @@
+{
+  "system": "nes",
+  "normalized_title": "nekketsustreetbasketganbaredunkheroes",
+  "display_name": "Nekketsu! Street Basket - Ganbare Dunk Heroes (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Nekketsu! Street Basket - Ganbare Dunk Heroes (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 16,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "0166:FF",
+          "desc": "Score Always With 255 Points",
+          "address": "0x0166"
+        },
+        {
+          "code": "06C2:00",
+          "desc": "Time Modifier",
+          "address": "0x06C2"
+        },
+        {
+          "code": "06C3:00",
+          "desc": "Time Modifier",
+          "address": "0x06C3"
+        },
+        {
+          "code": "06C4:00",
+          "desc": "Time Modifier",
+          "address": "0x06C4"
+        },
+        {
+          "code": "0167:00",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x0167"
+        },
+        {
+          "code": "0621:07",
+          "desc": "Max Stamina",
+          "address": "0x0621"
+        },
+        {
+          "code": "0625:07",
+          "desc": "Max Power",
+          "address": "0x0625"
+        },
+        {
+          "code": "0615:07",
+          "desc": "Max Speed",
+          "address": "0x0615"
+        },
+        {
+          "code": "0619:07",
+          "desc": "Max Jump",
+          "address": "0x0619"
+        },
+        {
+          "code": "061D:07",
+          "desc": "Max Shoot",
+          "address": "0x061D"
+        },
+        {
+          "code": "057E:00",
+          "desc": "Bottom Left Hoop",
+          "address": "0x057E"
+        },
+        {
+          "code": "057F:00",
+          "desc": "Bottom Right Hoop",
+          "address": "0x057F"
+        },
+        {
+          "code": "0580:00",
+          "desc": "Middle Left Hoop",
+          "address": "0x0580"
+        },
+        {
+          "code": "0581:00",
+          "desc": "Middle Right Hoop",
+          "address": "0x0581"
+        },
+        {
+          "code": "0582:00",
+          "desc": "Top Left Hoop",
+          "address": "0x0582"
+        },
+        {
+          "code": "0583:00",
+          "desc": "Top Right Hoop",
+          "address": "0x0583"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

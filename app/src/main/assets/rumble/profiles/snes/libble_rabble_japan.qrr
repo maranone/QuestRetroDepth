@@ -1,0 +1,7 @@
+game_name=Libble Rabble (Japan)
+game_key=libble_rabble_japan
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_00de	life_lost	0x7E00DE	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00de	life_gained	0x7E00DE	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_1902	level_complete	0x7E1902	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

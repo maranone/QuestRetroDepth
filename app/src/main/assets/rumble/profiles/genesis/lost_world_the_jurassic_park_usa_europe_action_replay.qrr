@@ -1,0 +1,10 @@
+game_name=Lost World, The - Jurassic Park (USA, Europe) (Action Replay)
+game_key=lost_world_the_jurassic_park_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff00da	damage_taken	0xFF00DA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff00da	death	0xFF00DA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff01be	damage_taken	0xFF01BE	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff01be	death	0xFF01BE	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ffa848	life_lost	0xFFA848	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffa848	life_gained	0xFFA848	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

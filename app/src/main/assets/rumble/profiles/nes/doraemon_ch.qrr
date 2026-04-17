@@ -1,0 +1,5 @@
+game_name=Doraemon (Ch)
+game_key=doraemon_ch
+system=nes
+integration_tier=contrib
+trigger	level_complete_level_020a	level_complete	0x020A	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

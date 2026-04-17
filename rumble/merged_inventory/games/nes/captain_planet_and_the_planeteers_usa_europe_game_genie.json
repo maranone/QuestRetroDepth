@@ -1,0 +1,53 @@
+{
+  "system": "nes",
+  "normalized_title": "captainplanetandplaneteers",
+  "display_name": "Captain Planet and the Planeteers (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Captain Planet and the Planeteers (USA)",
+    "Captain Planet and the Planeteers (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\captainplanetandtheplaneteers_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0713",
+        "0x07C5"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\CaptainPlanetAndThePlaneteers-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0713",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x07C5",
+          "type": ">n4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Captain Planet and the Planeteers (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

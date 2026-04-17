@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "spaceinvaders",
+  "display_name": "Space Invaders (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Space Invaders (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10000EEC",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000EEC"
+        },
+        {
+          "code": "82015434",
+          "desc": "Infinite Lives (1st Time Playing Only)",
+          "address": "0x02015434"
+        },
+        {
+          "code": "82015438",
+          "desc": "Quick Score Gain (1st Time Playing Only)",
+          "address": "0x02015438"
+        },
+        {
+          "code": "82015438",
+          "desc": "Max Score (1st Time Playing Only)",
+          "address": "0x02015438"
+        },
+        {
+          "code": "8201543A",
+          "desc": "Max Score (1st Time Playing Only)",
+          "address": "0x0201543A"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Space Invaders (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10000EEC",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000EEC"
+        },
+        {
+          "code": "82015434",
+          "desc": "Infinite Lives (1st Time Playing Only)",
+          "address": "0x02015434"
+        },
+        {
+          "code": "82015438",
+          "desc": "Quick Score Gain (1st Time Playing Only)",
+          "address": "0x02015438"
+        },
+        {
+          "code": "82015438",
+          "desc": "Max Score (1st Time Playing Only)",
+          "address": "0x02015438"
+        },
+        {
+          "code": "8201543A",
+          "desc": "Max Score (1st Time Playing Only)",
+          "address": "0x0201543A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

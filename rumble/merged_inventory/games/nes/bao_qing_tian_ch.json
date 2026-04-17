@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "baoqingtian",
+  "display_name": "Bao Qing Tian (Ch)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bao Qing Tian (Ch).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "006E:09",
+          "desc": "Infinite Lives",
+          "address": "0x006E"
+        },
+        {
+          "code": "006D:06",
+          "desc": "Infinite Energy",
+          "address": "0x006D"
+        },
+        {
+          "code": "0076:09",
+          "desc": "Unlimited Special",
+          "address": "0x0076"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

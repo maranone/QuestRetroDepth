@@ -1,0 +1,23 @@
+game_name=Live A Live (Japan) (Action Replay)
+game_key=live_a_live_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_0d06	level_complete	0x7E0D06	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_0d08	damage_taken	0x7E0D08	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0d08	death	0x7E0D08	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0d09	damage_taken	0x7E0D09	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0d09	death	0x7E0D09	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0d0a	damage_taken	0x7E0D0A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0d0a	death	0x7E0D0A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0d0b	damage_taken	0x7E0D0B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0d0b	death	0x7E0D0B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_0d1e	level_complete	0x7E0D1E	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0d46	level_complete	0x7E0D46	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_0d48	damage_taken	0x7E0D48	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0d48	death	0x7E0D48	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0d49	damage_taken	0x7E0D49	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0d49	death	0x7E0D49	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0d4a	damage_taken	0x7E0D4A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0d4a	death	0x7E0D4A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0d4b	damage_taken	0x7E0D4B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0d4b	death	0x7E0D4B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

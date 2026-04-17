@@ -1,0 +1,7 @@
+game_name=Youkai Douchuuki (Japan)
+game_key=YoukaiDouchuuki-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_03c3	damage_taken	0x03C3	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03c3	death	0x03C3	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_03d8	score	0x03D8	4	nibble	little	prev < curr	0.8	1	right:0.350:60

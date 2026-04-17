@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "legobionicle",
+  "display_name": "LEGO Bionicle (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\LEGO Bionicle (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "10000B68",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000B68"
+        },
+        {
+          "code": "33002500",
+          "desc": "Max Energy",
+          "address": "0x02002500"
+        },
+        {
+          "code": "330029E4",
+          "desc": "Max Health",
+          "address": "0x020029E4"
+        },
+        {
+          "code": "33002524",
+          "desc": "Infinite Health",
+          "address": "0x02002524"
+        },
+        {
+          "code": "330029E0",
+          "desc": "Infinite Energy",
+          "address": "0x020029E0"
+        },
+        {
+          "code": "33003A78",
+          "desc": "Infinite Black Magu Fruit",
+          "address": "0x02003A78"
+        },
+        {
+          "code": "33003A9C",
+          "desc": "Infinite Blue Magu Fruit",
+          "address": "0x02003A9C"
+        },
+        {
+          "code": "33003AB0",
+          "desc": "Infinite Explosive Red Magu Fruit",
+          "address": "0x02003AB0"
+        },
+        {
+          "code": "33003B04",
+          "desc": "Infinite Gray Magu Fruit",
+          "address": "0x02003B04"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\LEGO Bionicle (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "10000B68",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000B68"
+        },
+        {
+          "code": "33002500",
+          "desc": "Max Energy",
+          "address": "0x02002500"
+        },
+        {
+          "code": "330029E4",
+          "desc": "Max Health",
+          "address": "0x020029E4"
+        },
+        {
+          "code": "33002524",
+          "desc": "Infinite Health",
+          "address": "0x02002524"
+        },
+        {
+          "code": "330029E0",
+          "desc": "Infinite Energy",
+          "address": "0x020029E0"
+        },
+        {
+          "code": "33003A78",
+          "desc": "Infinite Black Magu Fruit",
+          "address": "0x02003A78"
+        },
+        {
+          "code": "33003A9C",
+          "desc": "Infinite Blue Magu Fruit",
+          "address": "0x02003A9C"
+        },
+        {
+          "code": "33003AB0",
+          "desc": "Infinite Explosive Red Magu Fruit",
+          "address": "0x02003AB0"
+        },
+        {
+          "code": "33003B04",
+          "desc": "Infinite Gray Magu Fruit",
+          "address": "0x02003B04"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

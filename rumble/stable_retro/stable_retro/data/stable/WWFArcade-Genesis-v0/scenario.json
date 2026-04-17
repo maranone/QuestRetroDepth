@@ -1,0 +1,36 @@
+{
+  "crop": [
+    0,
+    0,
+    256,
+    224
+  ],
+  "done": {
+    "variables": {
+      "enemy_wons": {
+        "op": "equal",
+        "reference": 2
+      },
+      "won_rounds": {
+        "op": "equal",
+        "reference": 2
+      }
+    }
+  },
+  "reward": {
+    "variables": {
+      "enemy2_health": {
+        "penalty": -1.0
+      },
+      "enemy3_health": {
+        "penalty": -1.0
+      },
+      "enemy_health": {
+        "penalty": -1.0
+      },
+      "health": {
+        "penalty": 1.0
+      }
+    }
+  }
+}

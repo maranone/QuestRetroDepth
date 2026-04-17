@@ -1,0 +1,8 @@
+game_name=Caesars Palace (World) (GameShark)
+game_key=caesars_palace_world_gameshark
+system=gb
+integration_tier=contrib
+trigger	pickup_coins_d8c0	pickup	0xD8C0	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_dac0	pickup	0xDAC0	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_dcc0	pickup	0xDCC0	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ded0	pickup	0xDED0	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,82 @@
+{
+  "system": "nes",
+  "normalized_title": "wizardswarriorsiiikurosvisionsofpower",
+  "display_name": "Wizards _ Warriors III - Kuros...Visions of Power (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Wizards _ Warriors III - Kuros...Visions of Power (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wizards _ Warriors III - Kuros...Visions of Power (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 12,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "POSAGGZU",
+          "desc": "Coins Worth 25",
+          "address": "0x041C"
+        },
+        {
+          "code": "GVSAGGZL",
+          "desc": "Coins Worth 100",
+          "address": "0x046C"
+        },
+        {
+          "code": "NNSAGGZU",
+          "desc": "Coins Worth 255",
+          "address": "0x047C"
+        },
+        {
+          "code": "IESAZKZA",
+          "desc": "Bags Worth 5",
+          "address": "0x040A"
+        },
+        {
+          "code": "ZUSAZKZA",
+          "desc": "Bags Worth 50",
+          "address": "0x043A"
+        },
+        {
+          "code": "NNSAZKZE",
+          "desc": "Bags Worth 255",
+          "address": "0x047A"
+        },
+        {
+          "code": "KAGEIO",
+          "desc": "Have Furthest Powers Of The 3 Guilds (Thief, Knight, Wizard)",
+          "address": "0x0185"
+        },
+        {
+          "code": "POPOPO",
+          "desc": "Some Weird Glitches And Color Changes When You Jump A Certain Way Or Spot",
+          "address": "0x0191"
+        },
+        {
+          "code": "NNSAGGZU",
+          "desc": "Bottle, Meat And Coins Give You 255, And The Bag Gives You 550",
+          "address": "0x047C"
+        },
+        {
+          "code": "NNSAZKZE",
+          "desc": "Bottle, Meat And Coins Give You 255, And The Bag Gives You 550",
+          "address": "0x047A"
+        },
+        {
+          "code": "AESAGGZL",
+          "desc": "Coins, Meat, And Diamonds Give You 0, Bags Give You 40",
+          "address": "0x040C"
+        },
+        {
+          "code": "AESAZKZA",
+          "desc": "Coins, Meat, And Diamonds Give You 0, Bags Give You 40",
+          "address": "0x040A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

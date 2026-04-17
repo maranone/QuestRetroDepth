@@ -1,0 +1,32 @@
+{
+  "system": "pce",
+  "normalized_title": "spaceharrier",
+  "display_name": "Space Harrier (Japan)",
+  "aliases": [
+    "Space Harrier (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Space Harrier (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f000e:16",
+          "desc": "Invincibility",
+          "address": "0x1F000E"
+        },
+        {
+          "code": "1f000d:05",
+          "desc": "Infinite Lives",
+          "address": "0x1F000D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

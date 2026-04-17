@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "moerojuudouwarriors",
+  "display_name": "Moero!! Juudou Warriors (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Moero!! Juudou Warriors (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "00AB:44",
+          "desc": "P1 Max Power",
+          "address": "0x00AB"
+        },
+        {
+          "code": "00AC:44",
+          "desc": "P1 Max Chance",
+          "address": "0x00AC"
+        },
+        {
+          "code": "00DB:00",
+          "desc": "Com No Power",
+          "address": "0x00DB"
+        },
+        {
+          "code": "00DC:00",
+          "desc": "Com No Chance",
+          "address": "0x00DC"
+        },
+        {
+          "code": "068F:FF",
+          "desc": "Max Attributes",
+          "address": "0x068F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

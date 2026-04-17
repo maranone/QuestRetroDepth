@@ -1,0 +1,42 @@
+{
+  "system": "nes",
+  "normalized_title": "720degrees",
+  "display_name": "720 Degrees (USA) (Game Genie)",
+  "aliases": [
+    "720 Degrees (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\720 Degrees (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0572:19",
+          "desc": "Infinite Time (In Main Area)",
+          "address": "0x0572"
+        },
+        {
+          "code": "0578:09",
+          "desc": "Infinite Continues/Skateboards?",
+          "address": "0x0578"
+        },
+        {
+          "code": "0573:09",
+          "desc": "Infinite Time (One's Digit - In Skateboard Pipe - i.e. Lower Left Timer)",
+          "address": "0x0573"
+        },
+        {
+          "code": "0574:09",
+          "desc": "Infinite Time (Ten's Digit - In Skateboard Pipe - i.e. Lower Left Timer)",
+          "address": "0x0574"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

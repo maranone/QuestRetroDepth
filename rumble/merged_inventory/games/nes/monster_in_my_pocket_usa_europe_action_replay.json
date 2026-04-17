@@ -1,0 +1,100 @@
+{
+  "system": "nes",
+  "normalized_title": "monsterinmypocket",
+  "display_name": "Monster in My Pocket (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Monster in My Pocket (Europe)",
+    "Monster in My Pocket (USA)",
+    "Monster in My Pocket (USA, Europe) (Action Replay)",
+    "Monster in My Pocket (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\monsterinmypocket_nes.json",
+      "trigger_count": 6,
+      "field_names": [
+        "health",
+        "lives",
+        "score0",
+        "score1"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0x0716",
+        "0x072E",
+        "0x0730",
+        "0x0742"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MonsterInMyPocket-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0716",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0742",
+          "type": "|u1"
+        },
+        {
+          "name": "score0",
+          "address": "0x072E",
+          "type": "|d1"
+        },
+        {
+          "name": "score1",
+          "address": "0x0730",
+          "type": "|d1"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Monster in My Pocket (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "SLSAASVS",
+          "desc": "Infinite Lives P1 & P2",
+          "address": "0x0538"
+        },
+        {
+          "code": "SUSEIVVS",
+          "desc": "Infinite Energy P1 & P2",
+          "address": "0x06BD"
+        },
+        {
+          "code": "SAZEGS",
+          "desc": "Infinite Lives (Only For Player 1)",
+          "address": "0x0584"
+        },
+        {
+          "code": "AAAETV",
+          "desc": "Virtually Invincible",
+          "address": "0x0686"
+        },
+        {
+          "code": "TAZEGS",
+          "desc": "Get Lives Faster",
+          "address": "0x0584"
+        },
+        {
+          "code": "VTSAASVS",
+          "desc": "Infinite Lives [BOTH Players!]",
+          "address": "0x0568"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

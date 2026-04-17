@@ -1,0 +1,10 @@
+game_name=Tecmo Super NBA Basketball (USA) (SNS-XM)
+game_key=tecmo_super_nba_basketball_usa_sns_xm
+system=snes
+integration_tier=contrib
+trigger	score_score_04bc	score	0x7E04BC	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04bd	score	0x7E04BD	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04be	score	0x7E04BE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04bf	score	0x7E04BF	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04c0	score	0x7E04C0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04c1	score	0x7E04C1	1	uint	little	prev < curr	0.8	1	right:0.350:60

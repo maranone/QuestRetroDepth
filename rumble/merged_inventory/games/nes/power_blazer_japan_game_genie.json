@@ -1,0 +1,77 @@
+{
+  "system": "nes",
+  "normalized_title": "powerblazer",
+  "display_name": "Power Blazer (Japan) (Game Genie)",
+  "aliases": [
+    "Power Blazer (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Power Blazer (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "SXNENESE",
+          "desc": "Infinite Health",
+          "address": "0x00AF"
+        },
+        {
+          "code": "0490:10",
+          "desc": "Infinite Energy",
+          "address": "0x0490"
+        },
+        {
+          "code": "0027:99",
+          "desc": "Infinite Lives",
+          "address": "0x0027"
+        },
+        {
+          "code": "0059:3F",
+          "desc": "Start On Last Stage",
+          "address": "0x0059"
+        },
+        {
+          "code": "005A:04",
+          "desc": "Infinite Bombs",
+          "address": "0x005A"
+        },
+        {
+          "code": "005B:04",
+          "desc": "Infinite Energy Refills",
+          "address": "0x005B"
+        },
+        {
+          "code": "005C:10",
+          "desc": "Power Bar Full",
+          "address": "0x005C"
+        },
+        {
+          "code": "005E:03",
+          "desc": "Powered Up Boomerang",
+          "address": "0x005E"
+        },
+        {
+          "code": "049F:00",
+          "desc": "Boss One Hit Kill",
+          "address": "0x049F"
+        },
+        {
+          "code": "04F0:00",
+          "desc": "Moon Jump",
+          "address": "0x04F0"
+        },
+        {
+          "code": "0530:10",
+          "desc": "Walk Through Enemies",
+          "address": "0x0530"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

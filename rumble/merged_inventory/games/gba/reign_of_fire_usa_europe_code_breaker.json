@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "reignoffire",
+  "display_name": "Reign of Fire (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Reign of Fire (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "100035F0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020035F0"
+        },
+        {
+          "code": "820218CA",
+          "desc": "Infinite Health",
+          "address": "0x020218CA"
+        },
+        {
+          "code": "82003060",
+          "desc": "Quick Score Gain",
+          "address": "0x02003060"
+        },
+        {
+          "code": "82003060",
+          "desc": "Max Score",
+          "address": "0x02003060"
+        },
+        {
+          "code": "82003062",
+          "desc": "Max Score",
+          "address": "0x02003062"
+        },
+        {
+          "code": "82003050",
+          "desc": "Infinite Time",
+          "address": "0x02003050"
+        },
+        {
+          "code": "82003052",
+          "desc": "Infinite Time",
+          "address": "0x02003052"
+        },
+        {
+          "code": "82003054",
+          "desc": "Infinite Time",
+          "address": "0x02003054"
+        },
+        {
+          "code": "82003056",
+          "desc": "Infinite Time",
+          "address": "0x02003056"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Reign of Fire (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "100035F0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020035F0"
+        },
+        {
+          "code": "820218CA",
+          "desc": "Infinite Health",
+          "address": "0x020218CA"
+        },
+        {
+          "code": "82003060",
+          "desc": "Quick Score Gain",
+          "address": "0x02003060"
+        },
+        {
+          "code": "82003060",
+          "desc": "Max Score",
+          "address": "0x02003060"
+        },
+        {
+          "code": "82003062",
+          "desc": "Max Score",
+          "address": "0x02003062"
+        },
+        {
+          "code": "82003050",
+          "desc": "Infinite Time",
+          "address": "0x02003050"
+        },
+        {
+          "code": "82003052",
+          "desc": "Infinite Time",
+          "address": "0x02003052"
+        },
+        {
+          "code": "82003054",
+          "desc": "Infinite Time",
+          "address": "0x02003054"
+        },
+        {
+          "code": "82003056",
+          "desc": "Infinite Time",
+          "address": "0x02003056"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

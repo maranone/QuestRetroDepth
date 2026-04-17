@@ -1,0 +1,179 @@
+{
+  "system": "nes",
+  "normalized_title": "monsterparty",
+  "display_name": "Monster Party (USA) (Game Genie)",
+  "aliases": [
+    "Monster Party (USA) (Game Genie)",
+    "Monster Party (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\monsterparty_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x008A",
+        "0x009E"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MonsterParty-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x009E",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x008A",
+          "type": "<n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Monster Party (USA).cht",
+      "total_cheat_rows": 33,
+      "raw_entry_count": 51,
+      "distinct_address_count": 38,
+      "sample_raw_entries": [
+        {
+          "code": "YAKOZIAA",
+          "desc": "Level 8 Warp",
+          "address": "0x058A"
+        },
+        {
+          "code": "AVOEZYSZ",
+          "desc": "Invincible",
+          "address": "0x07EA"
+        },
+        {
+          "code": "EYEEIIEL",
+          "desc": "One Hit Kills Normal Enemies",
+          "address": "0x05FD"
+        },
+        {
+          "code": "AAUEUIZA",
+          "desc": "One Hit Kills Guardians",
+          "address": "0x058B"
+        },
+        {
+          "code": "SXXAYYVG",
+          "desc": "Take no damage, except from Guardians",
+          "address": "0x072F"
+        },
+        {
+          "code": "VVXAIYVG",
+          "desc": "Take no damage from Guardians",
+          "address": "0x076D"
+        },
+        {
+          "code": "APUPZSGE",
+          "desc": "Start with boosted energy",
+          "address": "0x051A"
+        },
+        {
+          "code": "AOKPTKGE",
+          "desc": "Start with boosted energy",
+          "address": "0x041E"
+        },
+        {
+          "code": "GZUPZSGE",
+          "desc": "Start with super-boosted energy",
+          "address": "0x052A"
+        },
+        {
+          "code": "GXKPTKGE",
+          "desc": "Start with super-boosted energy",
+          "address": "0x042E"
+        },
+        {
+          "code": "PAKOZIAA",
+          "desc": "Start on level 2",
+          "address": "0x058A"
+        },
+        {
+          "code": "ZAKOZIAA",
+          "desc": "Start on level 3",
+          "address": "0x058A"
+        },
+        {
+          "code": "LAKOZIAA",
+          "desc": "Start on level 4",
+          "address": "0x058A"
+        },
+        {
+          "code": "GAKOZIAA",
+          "desc": "Start on level 5",
+          "address": "0x058A"
+        },
+        {
+          "code": "IAKOZIAA",
+          "desc": "Start on level 6",
+          "address": "0x058A"
+        },
+        {
+          "code": "TAKOZIAA",
+          "desc": "Start on level 7",
+          "address": "0x058A"
+        },
+        {
+          "code": "009E:1E",
+          "desc": "Infinite Energy",
+          "address": "0x009E"
+        },
+        {
+          "code": "APSAIIGA",
+          "desc": "Jump Higher",
+          "address": "0x051D"
+        },
+        {
+          "code": "APSATIGA",
+          "desc": "Jump Higher",
+          "address": "0x051E"
+        },
+        {
+          "code": "AASAYIGE",
+          "desc": "Jump Higher",
+          "address": "0x050F"
+        },
+        {
+          "code": "AZSAIIGA",
+          "desc": "Jump Higher Yet",
+          "address": "0x052D"
+        },
+        {
+          "code": "APSATIGA",
+          "desc": "Jump Higher Yet",
+          "address": "0x051E"
+        },
+        {
+          "code": "AASAYIGE",
+          "desc": "Jump Higher Yet",
+          "address": "0x050F"
+        },
+        {
+          "code": "VNKETXNN",
+          "desc": "Walk Twice As Fast",
+          "address": "0x02FE"
+        },
+        {
+          "code": "ZEUEAZPA",
+          "desc": "Walk Twice As Fast",
+          "address": "0x0288"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

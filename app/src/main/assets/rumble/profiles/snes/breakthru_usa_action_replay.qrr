@@ -1,0 +1,6 @@
+game_name=BreakThru! (USA) (Action Replay)
+game_key=breakthru_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_1257	level_complete	0x7E1257	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_1258	level_complete	0x7E1258	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

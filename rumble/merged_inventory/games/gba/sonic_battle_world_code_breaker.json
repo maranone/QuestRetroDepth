@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "sonicbattle",
+  "display_name": "Sonic Battle (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Sonic Battle (World) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "100201A2",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020201A2"
+        },
+        {
+          "code": "33001CFF",
+          "desc": "Infinite HP",
+          "address": "0x02001CFF"
+        },
+        {
+          "code": "33001CD3",
+          "desc": "Max Power Bar",
+          "address": "0x02001CD3"
+        },
+        {
+          "code": "73001D08",
+          "desc": "Hold A To Float Upwards",
+          "address": "0x02001D08"
+        },
+        {
+          "code": "83001C70",
+          "desc": "Hold A To Float Upwards",
+          "address": "0x02001C70"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Sonic Battle (World) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "100201A2",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020201A2"
+        },
+        {
+          "code": "33001CFF",
+          "desc": "Infinite HP",
+          "address": "0x02001CFF"
+        },
+        {
+          "code": "33001CD3",
+          "desc": "Max Power Bar",
+          "address": "0x02001CD3"
+        },
+        {
+          "code": "73001D08",
+          "desc": "Hold A To Float Upwards",
+          "address": "0x02001D08"
+        },
+        {
+          "code": "83001C70",
+          "desc": "Hold A To Float Upwards",
+          "address": "0x02001C70"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

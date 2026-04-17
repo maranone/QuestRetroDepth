@@ -1,0 +1,6 @@
+game_name=Kirby no Block Ball (Japan) (SGB Enhanced)
+game_key=kirby_no_block_ball_japan_sgb_enhanced
+system=gb
+integration_tier=contrib
+trigger	life_lost_lives_c9c1	life_lost	0xC9C1	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_c9c1	life_gained	0xC9C1	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

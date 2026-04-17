@@ -1,0 +1,25 @@
+{
+  "system": "gbc",
+  "normalized_title": "jeffgordonxsracing",
+  "display_name": "Jeff Gordon XS Racing (USA) (GB Compatible)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Jeff Gordon XS Racing (USA) (GB Compatible).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0100D4C5",
+          "desc": "Points Modifier [00-63]",
+          "address": "0xD4C5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

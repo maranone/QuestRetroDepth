@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "americanbasschallenge",
+  "display_name": "American Bass Challenge (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\American Bass Challenge (USA) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "100004D4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020004D4"
+        },
+        {
+          "code": "82023626",
+          "desc": "Infinite Time",
+          "address": "0x02023626"
+        },
+        {
+          "code": "82023F80",
+          "desc": "Temperature Always 47.8",
+          "address": "0x02023F80"
+        },
+        {
+          "code": "82023F80",
+          "desc": "Temperature Always 62.6",
+          "address": "0x02023F80"
+        },
+        {
+          "code": "82023F80",
+          "desc": "Temperature Always 65.6",
+          "address": "0x02023F80"
+        },
+        {
+          "code": "82023F80",
+          "desc": "Temperature Always 68.7",
+          "address": "0x02023F80"
+        },
+        {
+          "code": "82023F80",
+          "desc": "Temperature Always 71.1",
+          "address": "0x02023F80"
+        },
+        {
+          "code": "82023F80",
+          "desc": "Temperature Always 74.8",
+          "address": "0x02023F80"
+        },
+        {
+          "code": "82023F80",
+          "desc": "Temperature Always 77.9",
+          "address": "0x02023F80"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\American Bass Challenge (USA) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "100004D4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020004D4"
+        },
+        {
+          "code": "82023626",
+          "desc": "Infinite Time",
+          "address": "0x02023626"
+        },
+        {
+          "code": "82023F80",
+          "desc": "Temperature Always 47.8",
+          "address": "0x02023F80"
+        },
+        {
+          "code": "82023F80",
+          "desc": "Temperature Always 62.6",
+          "address": "0x02023F80"
+        },
+        {
+          "code": "82023F80",
+          "desc": "Temperature Always 65.6",
+          "address": "0x02023F80"
+        },
+        {
+          "code": "82023F80",
+          "desc": "Temperature Always 68.7",
+          "address": "0x02023F80"
+        },
+        {
+          "code": "82023F80",
+          "desc": "Temperature Always 71.1",
+          "address": "0x02023F80"
+        },
+        {
+          "code": "82023F80",
+          "desc": "Temperature Always 74.8",
+          "address": "0x02023F80"
+        },
+        {
+          "code": "82023F80",
+          "desc": "Temperature Always 77.9",
+          "address": "0x02023F80"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

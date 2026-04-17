@@ -1,0 +1,91 @@
+{
+  "system": "nes",
+  "normalized_title": "rcproam",
+  "display_name": "R.C. Pro-Am (USA, Europe) (Game Genie)",
+  "aliases": [
+    "R.C. Pro-Am (USA)",
+    "R.C. Pro-Am (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\R.C. Pro-Am (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 6,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "AEXEPPZA",
+          "desc": "No Continues",
+          "address": "0x0189"
+        },
+        {
+          "code": "AAUAGZZA",
+          "desc": "No Continues",
+          "address": "0x020C"
+        },
+        {
+          "code": "IEXEPPZA",
+          "desc": "5 Continues",
+          "address": "0x0189"
+        },
+        {
+          "code": "IAUAGZZA",
+          "desc": "5 Continues",
+          "address": "0x020C"
+        },
+        {
+          "code": "AEXEPPZE",
+          "desc": "8 Continues",
+          "address": "0x0189"
+        },
+        {
+          "code": "AAUAGZZE",
+          "desc": "8 Continues",
+          "address": "0x020C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\R.C. Pro-Am (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 6,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "AEXEPPZA",
+          "desc": "No Continues",
+          "address": "0x0189"
+        },
+        {
+          "code": "AAUAGZZA",
+          "desc": "No Continues",
+          "address": "0x020C"
+        },
+        {
+          "code": "IEXEPPZA",
+          "desc": "5 Continues",
+          "address": "0x0189"
+        },
+        {
+          "code": "IAUAGZZA",
+          "desc": "5 Continues",
+          "address": "0x020C"
+        },
+        {
+          "code": "AEXEPPZE",
+          "desc": "8 Continues",
+          "address": "0x0189"
+        },
+        {
+          "code": "AAUAGZZE",
+          "desc": "8 Continues",
+          "address": "0x020C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

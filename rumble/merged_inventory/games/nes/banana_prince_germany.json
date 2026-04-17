@@ -1,0 +1,190 @@
+{
+  "system": "nes",
+  "normalized_title": "bananaprince",
+  "display_name": "Banana Prince (Germany)",
+  "aliases": [
+    "Banana Prince (Germany)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\bananaprince_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0109",
+        "0x05A3",
+        "0x05E5"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BananaPrince-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x05A3",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x05E5",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0109",
+          "type": "<n4"
+        },
+        {
+          "name": "time",
+          "address": "0x0111",
+          "type": ">n3"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Banana Prince (Germany).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 31,
+      "distinct_address_count": 31,
+      "sample_raw_entries": [
+        {
+          "code": "05A3:06",
+          "desc": "Infinite Energy",
+          "address": "0x05A3"
+        },
+        {
+          "code": "05E5:03",
+          "desc": "Infinite Lives",
+          "address": "0x05E5"
+        },
+        {
+          "code": "05A4:00",
+          "desc": "Invincibility",
+          "address": "0x05A4"
+        },
+        {
+          "code": "006E:40",
+          "desc": "Swim Anywhere",
+          "address": "0x006E"
+        },
+        {
+          "code": "009E:00",
+          "desc": "Level/Area Modifier",
+          "address": "0x009E"
+        },
+        {
+          "code": "00E1:20",
+          "desc": "Climbing Mode",
+          "address": "0x00E1"
+        },
+        {
+          "code": "010E:09",
+          "desc": "999 Rings",
+          "address": "0x010E"
+        },
+        {
+          "code": "010F:09",
+          "desc": "999 Rings",
+          "address": "0x010F"
+        },
+        {
+          "code": "0110:09",
+          "desc": "999 Rings",
+          "address": "0x0110"
+        },
+        {
+          "code": "0113:09",
+          "desc": "Freeze Timer",
+          "address": "0x0113"
+        },
+        {
+          "code": "03E0:01",
+          "desc": "Night Mode",
+          "address": "0x03E0"
+        },
+        {
+          "code": "03E1:17",
+          "desc": "Night Mode",
+          "address": "0x03E1"
+        },
+        {
+          "code": "03E2:0F",
+          "desc": "Night Mode",
+          "address": "0x03E2"
+        },
+        {
+          "code": "03E4:01",
+          "desc": "Night Mode",
+          "address": "0x03E4"
+        },
+        {
+          "code": "03E5:09",
+          "desc": "Night Mode",
+          "address": "0x03E5"
+        },
+        {
+          "code": "03E6:06",
+          "desc": "Night Mode",
+          "address": "0x03E6"
+        },
+        {
+          "code": "03E8:01",
+          "desc": "Night Mode",
+          "address": "0x03E8"
+        },
+        {
+          "code": "03E9:1B",
+          "desc": "Night Mode",
+          "address": "0x03E9"
+        },
+        {
+          "code": "03EA:0F",
+          "desc": "Night Mode",
+          "address": "0x03EA"
+        },
+        {
+          "code": "03EB:0F",
+          "desc": "Night Mode",
+          "address": "0x03EB"
+        },
+        {
+          "code": "03EC:01",
+          "desc": "Night Mode",
+          "address": "0x03EC"
+        },
+        {
+          "code": "03ED:10",
+          "desc": "Night Mode",
+          "address": "0x03ED"
+        },
+        {
+          "code": "03EE:11",
+          "desc": "Night Mode",
+          "address": "0x03EE"
+        },
+        {
+          "code": "03EF:0F",
+          "desc": "Night Mode",
+          "address": "0x03EF"
+        },
+        {
+          "code": "03F0:01",
+          "desc": "Night Mode",
+          "address": "0x03F0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=Defenders of Dynatron City (USA) (Game Genie)
+game_key=defenders_of_dynatron_city_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_0702	pickup	0x0702	1	uint	little	prev != curr	0.8	1	right:0.250:18

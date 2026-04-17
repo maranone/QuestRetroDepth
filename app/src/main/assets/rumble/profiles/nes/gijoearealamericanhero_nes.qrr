@@ -1,0 +1,6 @@
+game_name=GIJoeARealAmericanHero
+game_key=GIJoeARealAmericanHero-Nes
+system=nes
+integration_tier=stable
+trigger	game_over_gameover_0420	game_over	0x0420	1	uint	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	score_score_0724	score	0x0724	2	uint	little	prev < curr	0.8	1	right:0.350:60

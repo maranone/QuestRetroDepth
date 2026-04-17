@@ -1,0 +1,179 @@
+{
+  "system": "nes",
+  "normalized_title": "chubbycherub",
+  "display_name": "Chubby Cherub (USA) (Game Genie)",
+  "aliases": [
+    "Chubby Cherub (USA) (Game Genie)",
+    "Chubby Cherub (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\chubbycherub_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x002D",
+        "0x004F"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ChubbyCherub-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x004F",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x002D",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Chubby Cherub (USA).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 26,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "SZEAYZVG",
+          "desc": "Infinite lives",
+          "address": "0x022F"
+        },
+        {
+          "code": "AEOAAZZA",
+          "desc": "Start with 1 life",
+          "address": "0x0208"
+        },
+        {
+          "code": "IEOAAZZA",
+          "desc": "Start with double lives",
+          "address": "0x0208"
+        },
+        {
+          "code": "AEOAAZZE",
+          "desc": "Start with triple lives",
+          "address": "0x0208"
+        },
+        {
+          "code": "GEVAKVAA",
+          "desc": "Half regular power  gained from food",
+          "address": "0x060C"
+        },
+        {
+          "code": "ZANEVSUT",
+          "desc": "Infinite Gau (shots)",
+          "address": "0x058E"
+        },
+        {
+          "code": "IEOALZPA",
+          "desc": "Start on Stage 5",
+          "address": "0x020B"
+        },
+        {
+          "code": "GEOAPZAA",
+          "desc": "Start on Stage 5",
+          "address": "0x0209"
+        },
+        {
+          "code": "ZEOALZPE",
+          "desc": "Start on Stage 10",
+          "address": "0x020B"
+        },
+        {
+          "code": "PEOAPZAE",
+          "desc": "Start on Stage 10",
+          "address": "0x0209"
+        },
+        {
+          "code": "004F:02",
+          "desc": "Infinite Energy",
+          "address": "0x004F"
+        },
+        {
+          "code": "02FF:00",
+          "desc": "Invincibility",
+          "address": "0x02FF"
+        },
+        {
+          "code": "SGEAYZVG",
+          "desc": "Infinite Lives",
+          "address": "0x024F"
+        },
+        {
+          "code": "0067:50",
+          "desc": "Can't Be Touched",
+          "address": "0x0067"
+        },
+        {
+          "code": "0050:01",
+          "desc": "Stage Modifier",
+          "address": "0x0050"
+        },
+        {
+          "code": "0052:01",
+          "desc": "Stage Modifier",
+          "address": "0x0052"
+        },
+        {
+          "code": "IEOALZPA",
+          "desc": "Start On Stage 5",
+          "address": "0x020B"
+        },
+        {
+          "code": "GEOAPZAA",
+          "desc": "Start On Stage 5",
+          "address": "0x0209"
+        },
+        {
+          "code": "ZEOALZPE",
+          "desc": "Start On Stage 10",
+          "address": "0x020B"
+        },
+        {
+          "code": "PEOAPZAE",
+          "desc": "Start On Stage 10",
+          "address": "0x0209"
+        },
+        {
+          "code": "004F:09",
+          "desc": "Infinite Lives (Hearts)",
+          "address": "0x004F"
+        },
+        {
+          "code": "006F:00",
+          "desc": "Time Modifier (Minute's Digit)",
+          "address": "0x006F"
+        },
+        {
+          "code": "0071:00",
+          "desc": "Time Modifier (Ten's Digit)",
+          "address": "0x0071"
+        },
+        {
+          "code": "006B:00",
+          "desc": "Time Modifier (Second's Digit)",
+          "address": "0x006B"
+        },
+        {
+          "code": "0060:09",
+          "desc": "Infinite Gau",
+          "address": "0x0060"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

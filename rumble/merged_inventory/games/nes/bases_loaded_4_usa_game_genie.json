@@ -1,0 +1,82 @@
+{
+  "system": "nes",
+  "normalized_title": "basesloaded4",
+  "display_name": "Bases Loaded 4 (USA) (Game Genie)",
+  "aliases": [
+    "Bases Loaded 4 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bases Loaded 4 (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 12,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "PANPUTAA",
+          "desc": "Some batters start with count of 1 and 1 (2 Player mode)",
+          "address": "0x060B"
+        },
+        {
+          "code": "PEOETGAA",
+          "desc": "Some batters start with count of 1 and 1 (2 Player mode)",
+          "address": "0x048E"
+        },
+        {
+          "code": "ZANPUTAA",
+          "desc": "Some batters start with count of 2 and 2 (2 Player mode)",
+          "address": "0x060B"
+        },
+        {
+          "code": "ZEOETGAA",
+          "desc": "Some batters start with count of 2 and 2 (2 Player mode)",
+          "address": "0x048E"
+        },
+        {
+          "code": "PANPUTAA",
+          "desc": "Some Batters Start With Count Of 1 And 1",
+          "address": "0x060B"
+        },
+        {
+          "code": "PEOETGAA",
+          "desc": "Some Batters Start With Count Of 1 And 1",
+          "address": "0x048E"
+        },
+        {
+          "code": "ZANPUTAA",
+          "desc": "Some Batters Start With Count Of 2 And 2",
+          "address": "0x060B"
+        },
+        {
+          "code": "ZEOETGAA",
+          "desc": "Some Batters Start With Count Of 2 And 2",
+          "address": "0x048E"
+        },
+        {
+          "code": "0391:00",
+          "desc": "P2/CPU Never Scores",
+          "address": "0x0391"
+        },
+        {
+          "code": "037C:00",
+          "desc": "Strikes Modifier",
+          "address": "0x037C"
+        },
+        {
+          "code": "037D:00",
+          "desc": "Balls Modifier",
+          "address": "0x037D"
+        },
+        {
+          "code": "037E:00",
+          "desc": "Outs Modifier",
+          "address": "0x037E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

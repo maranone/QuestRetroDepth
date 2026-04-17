@@ -1,0 +1,25 @@
+{
+  "system": "nes",
+  "normalized_title": "happilyeverafter",
+  "display_name": "Happily Ever After ",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Happily Ever After .cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "00CB:06",
+          "desc": "Invincibility",
+          "address": "0x00CB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

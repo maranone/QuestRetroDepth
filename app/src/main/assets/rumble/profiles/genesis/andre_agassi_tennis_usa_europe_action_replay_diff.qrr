@@ -1,0 +1,6 @@
+game_name=Andre Agassi Tennis (USA, Europe) (Action Replay) (diff)
+game_key=andre_agassi_tennis_usa_europe_action_replay_diff
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffcea7	score	0xFFCEA7	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffcea9	score	0xFFCEA9	1	uint	little	prev < curr	0.8	1	right:0.350:60

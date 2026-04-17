@@ -1,0 +1,27 @@
+{
+  "system": "nes",
+  "normalized_title": "fcgenjinfreakthoropuscomputerus",
+  "display_name": "FC Genjin - Freakthoropus Computerus (Japan) (Game Genie)",
+  "aliases": [
+    "FC Genjin - Freakthoropus Computerus (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\FC Genjin - Freakthoropus Computerus (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "SZKPKOSE",
+          "desc": "Infinite Health",
+          "address": "0x012C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

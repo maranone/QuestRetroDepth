@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "genpeitoumadencomputerboardgame",
+  "display_name": "Genpei Touma Den - Computer Boardgame (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Genpei Touma Den - Computer Boardgame (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "00D1:00",
+          "desc": "Quickly Kill Enemies",
+          "address": "0x00D1"
+        },
+        {
+          "code": "00D8:63",
+          "desc": "Infinite Energy",
+          "address": "0x00D8"
+        },
+        {
+          "code": "00DB:FF",
+          "desc": "Infinite Money",
+          "address": "0x00DB"
+        },
+        {
+          "code": "04B1:03",
+          "desc": "Infinite Magic",
+          "address": "0x04B1"
+        },
+        {
+          "code": "00D4:99",
+          "desc": "Max Attack",
+          "address": "0x00D4"
+        },
+        {
+          "code": "00D5:99",
+          "desc": "Max Flame",
+          "address": "0x00D5"
+        },
+        {
+          "code": "00D6:99",
+          "desc": "Max 3rd Stat",
+          "address": "0x00D6"
+        },
+        {
+          "code": "00D7:99",
+          "desc": "Max Speed Stat",
+          "address": "0x00D7"
+        },
+        {
+          "code": "00D9:FF",
+          "desc": "Infinite Gems",
+          "address": "0x00D9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

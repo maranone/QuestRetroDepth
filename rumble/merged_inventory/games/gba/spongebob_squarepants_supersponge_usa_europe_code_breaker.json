@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "spongebobsquarepantssupersponge",
+  "display_name": "SpongeBob SquarePants - SuperSponge (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\SpongeBob SquarePants - SuperSponge (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10000422",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000422"
+        },
+        {
+          "code": "33000F32",
+          "desc": "Infinite Spatulas",
+          "address": "0x02000F32"
+        },
+        {
+          "code": "33000F33",
+          "desc": "Infinite Lives",
+          "address": "0x02000F33"
+        },
+        {
+          "code": "330012FA",
+          "desc": "Infinite Health",
+          "address": "0x020012FA"
+        },
+        {
+          "code": "330012FB",
+          "desc": "Invincible",
+          "address": "0x020012FB"
+        },
+        {
+          "code": "330012F5",
+          "desc": "Infinite Jellyfish",
+          "address": "0x020012F5"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\SpongeBob SquarePants - SuperSponge (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10000422",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000422"
+        },
+        {
+          "code": "33000F32",
+          "desc": "Infinite Spatulas",
+          "address": "0x02000F32"
+        },
+        {
+          "code": "33000F33",
+          "desc": "Infinite Lives",
+          "address": "0x02000F33"
+        },
+        {
+          "code": "330012FA",
+          "desc": "Infinite Health",
+          "address": "0x020012FA"
+        },
+        {
+          "code": "330012FB",
+          "desc": "Invincible",
+          "address": "0x020012FB"
+        },
+        {
+          "code": "330012F5",
+          "desc": "Infinite Jellyfish",
+          "address": "0x020012F5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

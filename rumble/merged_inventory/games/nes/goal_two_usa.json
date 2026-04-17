@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "goaltwo",
+  "display_name": "Goal! Two (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Goal! Two (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "SXNELNSE",
+          "desc": "Player 2 or computer can't score",
+          "address": "0x07AB"
+        },
+        {
+          "code": "0047:2E",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x0047"
+        },
+        {
+          "code": "0048:63",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x0048"
+        },
+        {
+          "code": "052D:00",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x052D"
+        },
+        {
+          "code": "052C:00",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x052C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

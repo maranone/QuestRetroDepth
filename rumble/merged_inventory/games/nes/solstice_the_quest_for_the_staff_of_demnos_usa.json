@@ -1,0 +1,85 @@
+{
+  "system": "nes",
+  "normalized_title": "solsticequestforstaffofdemnos",
+  "display_name": "Solstice - The Quest for the Staff of Demnos (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Solstice - The Quest for the Staff of Demnos (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 13,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "SZSESXVK",
+          "desc": "Infinite lives",
+          "address": "0x02AD"
+        },
+        {
+          "code": "PAKAVIGA",
+          "desc": "Start with 1 life",
+          "address": "0x050E"
+        },
+        {
+          "code": "AAKAVIGE",
+          "desc": "Start with 8 lives",
+          "address": "0x050E"
+        },
+        {
+          "code": "PAXELPLA",
+          "desc": "1 life after continue",
+          "address": "0x018B"
+        },
+        {
+          "code": "AAXELPLE",
+          "desc": "8 lives after continue",
+          "address": "0x018B"
+        },
+        {
+          "code": "GAOEUIZA",
+          "desc": "Start with full flasks of potions",
+          "address": "0x058B"
+        },
+        {
+          "code": "AAOEUIZA",
+          "desc": "Start with no potions",
+          "address": "0x058B"
+        },
+        {
+          "code": "SUSPIXVS",
+          "desc": "Never use up potions",
+          "address": "0x023D"
+        },
+        {
+          "code": "0789:09",
+          "desc": "Infinite Lives (Hats)",
+          "address": "0x0789"
+        },
+        {
+          "code": "0784:04",
+          "desc": "Infinite Green Potion",
+          "address": "0x0784"
+        },
+        {
+          "code": "0785:04",
+          "desc": "Infinite Yellow Potion",
+          "address": "0x0785"
+        },
+        {
+          "code": "0786:04",
+          "desc": "Infinite Light Purple Potion",
+          "address": "0x0786"
+        },
+        {
+          "code": "0787:04",
+          "desc": "Infinite Dark Purple Potion",
+          "address": "0x0787"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

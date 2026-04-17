@@ -1,0 +1,53 @@
+{
+  "system": "nes",
+  "normalized_title": "1942",
+  "display_name": "1942 (USA, Japan) (Game Genie)",
+  "aliases": [
+    "1942 (Japan, USA)",
+    "1942 (USA, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\1942_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0427",
+        "0x0432"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\1942-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0432",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0427",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\1942 (USA, Japan) (Game Genie).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

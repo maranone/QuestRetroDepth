@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "yugiohdestinyboardtraveler",
+  "display_name": "Yu-Gi-Oh! - Destiny Board Traveler (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Yu-Gi-Oh! - Destiny Board Traveler (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10019D14",
+          "desc": "Enable Code",
+          "address": "0x02019D14"
+        },
+        {
+          "code": "32023B00",
+          "desc": "Enable Super Power",
+          "address": "0x02023B00"
+        },
+        {
+          "code": "42023B0E",
+          "desc": "Control CPU",
+          "address": "0x02023B0E"
+        },
+        {
+          "code": "42023B08",
+          "desc": "1 LP CPU",
+          "address": "0x02023B08"
+        },
+        {
+          "code": "42023B10",
+          "desc": "CPU Doesn't Play (Disable If You Want To Control CPU)",
+          "address": "0x02023B10"
+        },
+        {
+          "code": "42023B10",
+          "desc": "Enable Super Power (CPU)",
+          "address": "0x02023B10"
+        },
+        {
+          "code": "4201D774",
+          "desc": "Unlock All Characters",
+          "address": "0x0201D774"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Yu-Gi-Oh! - Destiny Board Traveler (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10019D14",
+          "desc": "Enable Code",
+          "address": "0x02019D14"
+        },
+        {
+          "code": "32023B00",
+          "desc": "Enable Super Power",
+          "address": "0x02023B00"
+        },
+        {
+          "code": "42023B0E",
+          "desc": "Control CPU",
+          "address": "0x02023B0E"
+        },
+        {
+          "code": "42023B08",
+          "desc": "1 LP CPU",
+          "address": "0x02023B08"
+        },
+        {
+          "code": "42023B10",
+          "desc": "CPU Doesn't Play (Disable If You Want To Control CPU)",
+          "address": "0x02023B10"
+        },
+        {
+          "code": "42023B10",
+          "desc": "Enable Super Power (CPU)",
+          "address": "0x02023B10"
+        },
+        {
+          "code": "4201D774",
+          "desc": "Unlock All Characters",
+          "address": "0x0201D774"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

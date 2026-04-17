@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "cimaenemy",
+  "display_name": "CIMA - The Enemy (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\CIMA - The Enemy (USA) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "100001DE",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020001DE"
+        },
+        {
+          "code": "3201FF84",
+          "desc": "Max Brown Jewels",
+          "address": "0x0201FF84"
+        },
+        {
+          "code": "3201FF85",
+          "desc": "Max Blue Jewels",
+          "address": "0x0201FF85"
+        },
+        {
+          "code": "3201FF86",
+          "desc": "Max Red Jewels",
+          "address": "0x0201FF86"
+        },
+        {
+          "code": "3201FF87",
+          "desc": "Max White Jewels",
+          "address": "0x0201FF87"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\CIMA - The Enemy (USA) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "100001DE",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020001DE"
+        },
+        {
+          "code": "3201FF84",
+          "desc": "Max Brown Jewels",
+          "address": "0x0201FF84"
+        },
+        {
+          "code": "3201FF85",
+          "desc": "Max Blue Jewels",
+          "address": "0x0201FF85"
+        },
+        {
+          "code": "3201FF86",
+          "desc": "Max Red Jewels",
+          "address": "0x0201FF86"
+        },
+        {
+          "code": "3201FF87",
+          "desc": "Max White Jewels",
+          "address": "0x0201FF87"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

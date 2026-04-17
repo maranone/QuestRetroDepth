@@ -1,0 +1,92 @@
+{
+  "system": "nes",
+  "normalized_title": "loneranger",
+  "display_name": "Lone Ranger, The (USA) (Game Genie)",
+  "aliases": [
+    "Lone Ranger, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Lone Ranger, The (USA).cht",
+      "total_cheat_rows": 31,
+      "raw_entry_count": 14,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "0052:06",
+          "desc": "Infinite Bullets In Gun",
+          "address": "0x0052"
+        },
+        {
+          "code": "0050:FF",
+          "desc": "Infinite Money",
+          "address": "0x0050"
+        },
+        {
+          "code": "DF30:FF",
+          "desc": "Infinite Money",
+          "address": "0xDF30"
+        },
+        {
+          "code": "0050:55",
+          "desc": "Infinite Money",
+          "address": "0x0050"
+        },
+        {
+          "code": "DF30:55",
+          "desc": "Infinite Money",
+          "address": "0xDF30"
+        },
+        {
+          "code": "0054:63",
+          "desc": "Infinite Silver Bullets In Gun",
+          "address": "0x0054"
+        },
+        {
+          "code": "0055:63",
+          "desc": "Infinite T.N.T.",
+          "address": "0x0055"
+        },
+        {
+          "code": "005F:0C",
+          "desc": "Infinite Health",
+          "address": "0x005F"
+        },
+        {
+          "code": "04A8:01",
+          "desc": "Jump Higher",
+          "address": "0x04A8"
+        },
+        {
+          "code": "05DD:00",
+          "desc": "Long Range Shots",
+          "address": "0x05DD"
+        },
+        {
+          "code": "05DE:00",
+          "desc": "Long Range Shots",
+          "address": "0x05DE"
+        },
+        {
+          "code": "05DF:00",
+          "desc": "Long Range Shots",
+          "address": "0x05DF"
+        },
+        {
+          "code": "0630:10",
+          "desc": "Invincible",
+          "address": "0x0630"
+        },
+        {
+          "code": "0684:00",
+          "desc": "Boss 1 Hit Kill",
+          "address": "0x0684"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

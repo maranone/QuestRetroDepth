@@ -1,0 +1,142 @@
+{
+  "system": "nes",
+  "normalized_title": "saiyuukiworld",
+  "display_name": "Saiyuuki World (Japan) (Game Genie)",
+  "aliases": [
+    "Saiyuuki World (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Saiyuuki World (Japan).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 24,
+      "distinct_address_count": 23,
+      "sample_raw_entries": [
+        {
+          "code": "SZOAAVVK",
+          "desc": "Infinite Health",
+          "address": "0x0628"
+        },
+        {
+          "code": "0113:01",
+          "desc": "Infinite Energy",
+          "address": "0x0113"
+        },
+        {
+          "code": "0109:FF",
+          "desc": "Infinite Cash",
+          "address": "0x0109"
+        },
+        {
+          "code": "SXVEZSVK",
+          "desc": "Stop Health Drain",
+          "address": "0x05AA"
+        },
+        {
+          "code": "AVVEXGOY",
+          "desc": "Items Are Free",
+          "address": "0x04EA"
+        },
+        {
+          "code": "0105:14",
+          "desc": "Infinite Health",
+          "address": "0x0105"
+        },
+        {
+          "code": "0111:22",
+          "desc": "Untouchable",
+          "address": "0x0111"
+        },
+        {
+          "code": "0109:FF",
+          "desc": "Infinite Money",
+          "address": "0x0109"
+        },
+        {
+          "code": "010A:FF",
+          "desc": "Infinite Money",
+          "address": "0x010A"
+        },
+        {
+          "code": "0118:63",
+          "desc": "Tornado Leaf",
+          "address": "0x0118"
+        },
+        {
+          "code": "011A:63",
+          "desc": "Snail Bomb",
+          "address": "0x011A"
+        },
+        {
+          "code": "011C:63",
+          "desc": "Fire Ball",
+          "address": "0x011C"
+        },
+        {
+          "code": "011E:63",
+          "desc": "Thunder",
+          "address": "0x011E"
+        },
+        {
+          "code": "SUSEGXVS",
+          "desc": "Infinite Sub Weapon",
+          "address": "0x02BC"
+        },
+        {
+          "code": "0102:00",
+          "desc": "Level Modifier",
+          "address": "0x0102"
+        },
+        {
+          "code": "010C:01",
+          "desc": "Have Knife",
+          "address": "0x010C"
+        },
+        {
+          "code": "010D:00",
+          "desc": "Speed Modifier",
+          "address": "0x010D"
+        },
+        {
+          "code": "010E:02",
+          "desc": "Have Sheild",
+          "address": "0x010E"
+        },
+        {
+          "code": "0116:00",
+          "desc": "Weapon Modifier",
+          "address": "0x0116"
+        },
+        {
+          "code": "036B:00",
+          "desc": "One Hit Kills",
+          "address": "0x036B"
+        },
+        {
+          "code": "037B:00",
+          "desc": "One Hit Kills",
+          "address": "0x037B"
+        },
+        {
+          "code": "038B:00",
+          "desc": "One Hit Kills",
+          "address": "0x038B"
+        },
+        {
+          "code": "039B:00",
+          "desc": "One Hit Kills",
+          "address": "0x039B"
+        },
+        {
+          "code": "03AB:00",
+          "desc": "One Hit Kills",
+          "address": "0x03AB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,12 @@
+game_name=Duke Nukem 3D (Brazil) (Action Replay)
+game_key=duke_nukem_3d_brazil_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff5572	damage_taken	0xFF5572	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff5572	death	0xFF5572	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_ff5566	pickup	0xFF5566	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff5568	pickup	0xFF5568	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff556a	pickup	0xFF556A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff556c	pickup	0xFF556C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff556e	pickup	0xFF556E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff5570	pickup	0xFF5570	1	uint	little	prev != curr	0.8	1	right:0.250:18

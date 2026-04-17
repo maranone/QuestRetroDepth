@@ -1,0 +1,148 @@
+{
+  "system": "gba",
+  "normalized_title": "norulesgetphat",
+  "display_name": "No Rules - Get Phat (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\No Rules - Get Phat (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 12,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10000800",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000800"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For To Refill Health",
+          "address": "0x02000020"
+        },
+        {
+          "code": "33004020",
+          "desc": "Press Select For To Refill Health",
+          "address": "0x02004020"
+        },
+        {
+          "code": "33004014",
+          "desc": "Infinite Lives",
+          "address": "0x02004014"
+        },
+        {
+          "code": "83004010",
+          "desc": "Quick Score Gain",
+          "address": "0x02004010"
+        },
+        {
+          "code": "83004010",
+          "desc": "Max Score",
+          "address": "0x02004010"
+        },
+        {
+          "code": "83004012",
+          "desc": "Max Score",
+          "address": "0x02004012"
+        },
+        {
+          "code": "33004026",
+          "desc": "Have 10 Tires",
+          "address": "0x02004026"
+        },
+        {
+          "code": "3300401A",
+          "desc": "Infinite Red Shots",
+          "address": "0x0200401A"
+        },
+        {
+          "code": "3300401C",
+          "desc": "Infinite Blue Shots",
+          "address": "0x0200401C"
+        },
+        {
+          "code": "33004024",
+          "desc": "Always Have Shield",
+          "address": "0x02004024"
+        },
+        {
+          "code": "33004024",
+          "desc": "Always Have Freeze",
+          "address": "0x02004024"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\No Rules - Get Phat (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 12,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10000800",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000800"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For To Refill Health",
+          "address": "0x02000020"
+        },
+        {
+          "code": "33004020",
+          "desc": "Press Select For To Refill Health",
+          "address": "0x02004020"
+        },
+        {
+          "code": "33004014",
+          "desc": "Infinite Lives",
+          "address": "0x02004014"
+        },
+        {
+          "code": "83004010",
+          "desc": "Quick Score Gain",
+          "address": "0x02004010"
+        },
+        {
+          "code": "83004010",
+          "desc": "Max Score",
+          "address": "0x02004010"
+        },
+        {
+          "code": "83004012",
+          "desc": "Max Score",
+          "address": "0x02004012"
+        },
+        {
+          "code": "33004026",
+          "desc": "Have 10 Tires",
+          "address": "0x02004026"
+        },
+        {
+          "code": "3300401A",
+          "desc": "Infinite Red Shots",
+          "address": "0x0200401A"
+        },
+        {
+          "code": "3300401C",
+          "desc": "Infinite Blue Shots",
+          "address": "0x0200401C"
+        },
+        {
+          "code": "33004024",
+          "desc": "Always Have Shield",
+          "address": "0x02004024"
+        },
+        {
+          "code": "33004024",
+          "desc": "Always Have Freeze",
+          "address": "0x02004024"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

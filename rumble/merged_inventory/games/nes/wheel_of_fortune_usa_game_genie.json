@@ -1,0 +1,47 @@
+{
+  "system": "nes",
+  "normalized_title": "wheeloffortune",
+  "display_name": "Wheel of Fortune (USA) (Game Genie)",
+  "aliases": [
+    "Wheel of Fortune (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wheel of Fortune (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0058:63",
+          "desc": "Infinite Time To Decide Your Actions P1",
+          "address": "0x0058"
+        },
+        {
+          "code": "TPSPGGYE",
+          "desc": "More Time to Choose",
+          "address": "0x041C"
+        },
+        {
+          "code": "TPEPNGYE",
+          "desc": "More Time to Choose",
+          "address": "0x041F"
+        },
+        {
+          "code": "TOXOUZYE",
+          "desc": "More Time to Buy A Vowel",
+          "address": "0x029B"
+        },
+        {
+          "code": "TOSOKLIE",
+          "desc": "More Time to Choose (Speed Round)",
+          "address": "0x039C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

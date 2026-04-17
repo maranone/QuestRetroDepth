@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "choujinrousenkiwarwolf",
+  "display_name": "Choujinrou Senki - Warwolf (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Choujinrou Senki - Warwolf (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "00BC:14",
+          "desc": "Infinite Energy",
+          "address": "0x00BC"
+        },
+        {
+          "code": "0087:08",
+          "desc": "Infinite Energy",
+          "address": "0x0087"
+        },
+        {
+          "code": "00A8:50",
+          "desc": "Infinite Energy",
+          "address": "0x00A8"
+        },
+        {
+          "code": "00A9:50",
+          "desc": "Infinite Energy",
+          "address": "0x00A9"
+        },
+        {
+          "code": "00A2:20",
+          "desc": "Infinite Special Power",
+          "address": "0x00A2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

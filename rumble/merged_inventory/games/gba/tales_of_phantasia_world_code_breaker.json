@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "talesofphantasia",
+  "display_name": "Tales of Phantasia (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Tales of Phantasia (World) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "33001524",
+          "desc": "No Random Battles",
+          "address": "0x02001524"
+        },
+        {
+          "code": "32019D03",
+          "desc": "Enable All Title Screen Selections",
+          "address": "0x02019D03"
+        },
+        {
+          "code": "4201A394",
+          "desc": "Enable All Title Screen Selections",
+          "address": "0x0201A394"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Tales of Phantasia (World) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "33001524",
+          "desc": "No Random Battles",
+          "address": "0x02001524"
+        },
+        {
+          "code": "32019D03",
+          "desc": "Enable All Title Screen Selections",
+          "address": "0x02019D03"
+        },
+        {
+          "code": "4201A394",
+          "desc": "Enable All Title Screen Selections",
+          "address": "0x0201A394"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "lilostitch2haemstervielhavoc",
+  "display_name": "Lilo _ Stitch 2 - Haemsterviel Havoc (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Lilo _ Stitch 2 - Haemsterviel Havoc (USA) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10004AF8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02004AF8"
+        },
+        {
+          "code": "8200ACB4",
+          "desc": "Max Score",
+          "address": "0x0200ACB4"
+        },
+        {
+          "code": "32009E86",
+          "desc": "Infinite Health",
+          "address": "0x02009E86"
+        },
+        {
+          "code": "8200ACC4",
+          "desc": "Infinite Special Ammo",
+          "address": "0x0200ACC4"
+        },
+        {
+          "code": "8200ACCA",
+          "desc": "Infinite Grenades",
+          "address": "0x0200ACCA"
+        },
+        {
+          "code": "8200ACCE",
+          "desc": "Infinite Coffee Cups",
+          "address": "0x0200ACCE"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Lilo _ Stitch 2 - Haemsterviel Havoc (USA) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10004AF8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02004AF8"
+        },
+        {
+          "code": "8200ACB4",
+          "desc": "Max Score",
+          "address": "0x0200ACB4"
+        },
+        {
+          "code": "32009E86",
+          "desc": "Infinite Health",
+          "address": "0x02009E86"
+        },
+        {
+          "code": "8200ACC4",
+          "desc": "Infinite Special Ammo",
+          "address": "0x0200ACC4"
+        },
+        {
+          "code": "8200ACCA",
+          "desc": "Infinite Grenades",
+          "address": "0x0200ACCA"
+        },
+        {
+          "code": "8200ACCE",
+          "desc": "Infinite Coffee Cups",
+          "address": "0x0200ACCE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

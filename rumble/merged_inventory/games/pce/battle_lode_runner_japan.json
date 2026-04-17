@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "battleloderunner",
+  "display_name": "Battle Lode Runner (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Battle Lode Runner (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f0972:02",
+          "desc": "Infinite Lives",
+          "address": "0x1F0972"
+        },
+        {
+          "code": "1f0c7b:00",
+          "desc": "Invincibility Against Enemies",
+          "address": "0x1F0C7B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

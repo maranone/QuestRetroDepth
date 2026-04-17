@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "rcproamii",
+  "display_name": "R.C. Pro-Am II (USA) (Game Genie)",
+  "aliases": [
+    "R.C. Pro-Am II (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\R.C. Pro-Am II (USA).cht",
+      "total_cheat_rows": 141,
+      "raw_entry_count": 74,
+      "distinct_address_count": 67,
+      "sample_raw_entries": [
+        {
+          "code": "AESOLAZA",
+          "desc": "Start with 1 credit instead of 3",
+          "address": "0x008B"
+        },
+        {
+          "code": "GESOLAZA",
+          "desc": "Start with 5 credits",
+          "address": "0x008B"
+        },
+        {
+          "code": "TESOLAZA",
+          "desc": "Start with 7 credits",
+          "address": "0x008B"
+        },
+        {
+          "code": "AESOLAZE",
+          "desc": "Start with 9 credits",
+          "address": "0x008B"
+        },
+        {
+          "code": "SUEEGXVS",
+          "desc": "Infinite credits",
+          "address": "0x02BC"
+        },
+        {
+          "code": "076D:01",
+          "desc": "Always Finish First",
+          "address": "0x076D"
+        },
+        {
+          "code": "0431:63",
+          "desc": "Infinite Time At Continue Screen",
+          "address": "0x0431"
+        },
+        {
+          "code": "0771:09",
+          "desc": "Infinite Continues At Continue Screen",
+          "address": "0x0771"
+        },
+        {
+          "code": "0750:00",
+          "desc": "Race Number Modifier",
+          "address": "0x0750"
+        },
+        {
+          "code": "0771:09",
+          "desc": "P1 Infinite Continues",
+          "address": "0x0771"
+        },
+        {
+          "code": "0772:09",
+          "desc": "P2 Infinite Continues",
+          "address": "0x0772"
+        },
+        {
+          "code": "0773:09",
+          "desc": "P3 Infinite Continues",
+          "address": "0x0773"
+        },
+        {
+          "code": "0774:09",
+          "desc": "P4 Infinite Continues",
+          "address": "0x0774"
+        },
+        {
+          "code": "075F:27",
+          "desc": "P1 Infinite Money",
+          "address": "0x075F"
+        },
+        {
+          "code": "075B:0F",
+          "desc": "P1 Infinite Money",
+          "address": "0x075B"
+        },
+        {
+          "code": "0760:27",
+          "desc": "P2 Infinite Money",
+          "address": "0x0760"
+        },
+        {
+          "code": "075C:0F",
+          "desc": "P2 Infinite Money",
+          "address": "0x075C"
+        },
+        {
+          "code": "0761:27",
+          "desc": "P3 Infinite Money",
+          "address": "0x0761"
+        },
+        {
+          "code": "075D:0F",
+          "desc": "P3 Infinite Money",
+          "address": "0x075D"
+        },
+        {
+          "code": "0762:27",
+          "desc": "P4 Infinite Money",
+          "address": "0x0762"
+        },
+        {
+          "code": "075E:0F",
+          "desc": "P4 Infinite Money",
+          "address": "0x075E"
+        },
+        {
+          "code": "0700:00",
+          "desc": "P1 Motor Modifier",
+          "address": "0x0700"
+        },
+        {
+          "code": "0701:00",
+          "desc": "P2 Motor Modifier",
+          "address": "0x0701"
+        },
+        {
+          "code": "0702:00",
+          "desc": "P3 Motor Modifier",
+          "address": "0x0702"
+        },
+        {
+          "code": "0703:00",
+          "desc": "P4 Motor Modifier",
+          "address": "0x0703"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

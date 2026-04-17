@@ -1,0 +1,5 @@
+game_name=Super Morph (Europe)
+game_key=super_morph_europe
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_bd80	pickup	0x7EBD80	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,115 @@
+{
+  "system": "nes",
+  "normalized_title": "asterix",
+  "display_name": "Asterix (Europe) (En,Fr,De,Es,It)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Asterix (Europe) (En,Fr,De,Es,It).cht",
+      "total_cheat_rows": 44,
+      "raw_entry_count": 19,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "0022:00",
+          "desc": "Lives modifier",
+          "address": "0x0022"
+        },
+        {
+          "code": "0023:00",
+          "desc": "Health modifier",
+          "address": "0x0023"
+        },
+        {
+          "code": "0024:00",
+          "desc": "Stars modifier",
+          "address": "0x0024"
+        },
+        {
+          "code": "0741:0C",
+          "desc": "Time modifier",
+          "address": "0x0741"
+        },
+        {
+          "code": "073D:0C",
+          "desc": "Time modifier",
+          "address": "0x073D"
+        },
+        {
+          "code": "0036:16",
+          "desc": "Invincibility",
+          "address": "0x0036"
+        },
+        {
+          "code": "SKVOYZVG",
+          "desc": "Infinite Energy",
+          "address": "0x02CF"
+        },
+        {
+          "code": "0022:63",
+          "desc": "Infinite Lives",
+          "address": "0x0022"
+        },
+        {
+          "code": "0023:04",
+          "desc": "Infinite Health",
+          "address": "0x0023"
+        },
+        {
+          "code": "0036:FF",
+          "desc": "Invincibility",
+          "address": "0x0036"
+        },
+        {
+          "code": "0024:63",
+          "desc": "99 Stars",
+          "address": "0x0024"
+        },
+        {
+          "code": "SXVOYZVG",
+          "desc": "Infinite Health",
+          "address": "0x02AF"
+        },
+        {
+          "code": "ASVPLZEI",
+          "desc": "Invincibility",
+          "address": "0x025B"
+        },
+        {
+          "code": "ANUPOZAP",
+          "desc": "Enemies Walk Slower",
+          "address": "0x0279"
+        },
+        {
+          "code": "ELVPIYEP",
+          "desc": "Enemies Can't Drop To Lower Ledges",
+          "address": "0x073D"
+        },
+        {
+          "code": "EIKELAEY",
+          "desc": "No Music",
+          "address": "0x00DB"
+        },
+        {
+          "code": "EINOZTEY",
+          "desc": "Stars Fall Instead Of Float",
+          "address": "0x06DA"
+        },
+        {
+          "code": "ESVOXZEY",
+          "desc": "Enemies Have Hyper Animations",
+          "address": "0x02DA"
+        },
+        {
+          "code": "ENUOKZEI",
+          "desc": "Enemies Can't Move Horizontally",
+          "address": "0x02FC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

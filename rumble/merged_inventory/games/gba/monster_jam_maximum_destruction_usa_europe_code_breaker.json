@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "monsterjammaximumdestruction",
+  "display_name": "Monster Jam - Maximum Destruction (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Monster Jam - Maximum Destruction (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1000BF80",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200BF80"
+        },
+        {
+          "code": "8300292A",
+          "desc": "Infinite Mayhem",
+          "address": "0x0200292A"
+        },
+        {
+          "code": "83002944",
+          "desc": "Infinite Guided Missiles",
+          "address": "0x02002944"
+        },
+        {
+          "code": "8300011C",
+          "desc": "Infinite Money",
+          "address": "0x0200011C"
+        },
+        {
+          "code": "830028A8",
+          "desc": "Jump Always Charged",
+          "address": "0x020028A8"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Down & Select For Start On Elite+All Cars (Championship)",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83000120",
+          "desc": "Press Down & Select For Start On Elite+All Cars (Championship)",
+          "address": "0x02000120"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Down & Select For Start On Elite+All Cars (Championship)",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83000122",
+          "desc": "Press Down & Select For Start On Elite+All Cars (Championship)",
+          "address": "0x02000122"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Monster Jam - Maximum Destruction (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1000BF80",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200BF80"
+        },
+        {
+          "code": "8300292A",
+          "desc": "Infinite Mayhem",
+          "address": "0x0200292A"
+        },
+        {
+          "code": "83002944",
+          "desc": "Infinite Guided Missiles",
+          "address": "0x02002944"
+        },
+        {
+          "code": "8300011C",
+          "desc": "Infinite Money",
+          "address": "0x0200011C"
+        },
+        {
+          "code": "830028A8",
+          "desc": "Jump Always Charged",
+          "address": "0x020028A8"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Down & Select For Start On Elite+All Cars (Championship)",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83000120",
+          "desc": "Press Down & Select For Start On Elite+All Cars (Championship)",
+          "address": "0x02000120"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Down & Select For Start On Elite+All Cars (Championship)",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83000122",
+          "desc": "Press Down & Select For Start On Elite+All Cars (Championship)",
+          "address": "0x02000122"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

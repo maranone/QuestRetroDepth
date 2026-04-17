@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "cavemangames",
+  "display_name": "Caveman Games (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Caveman Games (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "0656:00",
+          "desc": "Fake Character Modifier P1",
+          "address": "0x0656"
+        },
+        {
+          "code": "0566:FF",
+          "desc": "P1 Floats Forward In Dino Race",
+          "address": "0x0566"
+        },
+        {
+          "code": "0277:34",
+          "desc": "Infinite Energy (Clubbing event)",
+          "address": "0x0277"
+        },
+        {
+          "code": "0273:0F",
+          "desc": "Maximum swing speed in Mate Toss event",
+          "address": "0x0273"
+        },
+        {
+          "code": "02EF:07",
+          "desc": "Maximum angle in Mate Toss event",
+          "address": "0x02EF"
+        },
+        {
+          "code": "04D9:FF",
+          "desc": "Maximum running speed in Dino Vault event",
+          "address": "0x04D9"
+        },
+        {
+          "code": "049D:09",
+          "desc": "Maximum Speed in Dino Race event",
+          "address": "0x049D"
+        },
+        {
+          "code": "04DD:FF",
+          "desc": "Can't get knocked silly in Fire Start event",
+          "address": "0x04DD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

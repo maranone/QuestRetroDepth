@@ -1,0 +1,148 @@
+{
+  "system": "gba",
+  "normalized_title": "yuyuhakushoghostfilesspiritdetective",
+  "display_name": "Yu Yu Hakusho - Ghostfiles - Spirit Detective (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Yu Yu Hakusho - Ghostfiles - Spirit Detective (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 12,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10021762",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02021762"
+        },
+        {
+          "code": "43001020",
+          "desc": "Infinite Health-All Characters",
+          "address": "0x02001020"
+        },
+        {
+          "code": "43001022",
+          "desc": "Infinite Spirit Energy-All Characters",
+          "address": "0x02001022"
+        },
+        {
+          "code": "43001026",
+          "desc": "Max Levels/Stats-All Characters",
+          "address": "0x02001026"
+        },
+        {
+          "code": "83000E4A",
+          "desc": "Have All Spirit Attacks-All Characters",
+          "address": "0x02000E4A"
+        },
+        {
+          "code": "83000E4C",
+          "desc": "Have All Spirit Attacks-All Characters",
+          "address": "0x02000E4C"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press R Trigger+L Trigger To Reset Timer (Timed Levels)",
+          "address": "0x02000130"
+        },
+        {
+          "code": "3300203D",
+          "desc": "Press R Trigger+L Trigger To Reset Timer (Timed Levels)",
+          "address": "0x0200203D"
+        },
+        {
+          "code": "74000130",
+          "desc": "Level Select Menu",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33007DC9",
+          "desc": "Level Select Menu",
+          "address": "0x02007DC9"
+        },
+        {
+          "code": "33007E52",
+          "desc": "Unlock Extras Menu",
+          "address": "0x02007E52"
+        },
+        {
+          "code": "830010F4",
+          "desc": "4095 Score (Genkai Test)",
+          "address": "0x020010F4"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Yu Yu Hakusho - Ghostfiles - Spirit Detective (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 12,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10021762",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02021762"
+        },
+        {
+          "code": "43001020",
+          "desc": "Infinite Health-All Characters",
+          "address": "0x02001020"
+        },
+        {
+          "code": "43001022",
+          "desc": "Infinite Spirit Energy-All Characters",
+          "address": "0x02001022"
+        },
+        {
+          "code": "43001026",
+          "desc": "Max Levels/Stats-All Characters",
+          "address": "0x02001026"
+        },
+        {
+          "code": "83000E4A",
+          "desc": "Have All Spirit Attacks-All Characters",
+          "address": "0x02000E4A"
+        },
+        {
+          "code": "83000E4C",
+          "desc": "Have All Spirit Attacks-All Characters",
+          "address": "0x02000E4C"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press R Trigger+L Trigger To Reset Timer (Timed Levels)",
+          "address": "0x02000130"
+        },
+        {
+          "code": "3300203D",
+          "desc": "Press R Trigger+L Trigger To Reset Timer (Timed Levels)",
+          "address": "0x0200203D"
+        },
+        {
+          "code": "74000130",
+          "desc": "Level Select Menu",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33007DC9",
+          "desc": "Level Select Menu",
+          "address": "0x02007DC9"
+        },
+        {
+          "code": "33007E52",
+          "desc": "Unlock Extras Menu",
+          "address": "0x02007E52"
+        },
+        {
+          "code": "830010F4",
+          "desc": "4095 Score (Genkai Test)",
+          "address": "0x020010F4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

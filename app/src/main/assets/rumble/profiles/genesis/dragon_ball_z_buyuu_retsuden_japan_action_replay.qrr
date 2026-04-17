@@ -1,0 +1,12 @@
+game_name=Dragon Ball Z - Buyuu Retsuden (Japan) (Action Replay)
+game_key=dragon_ball_z_buyuu_retsuden_japan_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ffe782	damage_taken	0xFFE782	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffe782	death	0xFFE782	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffe784	damage_taken	0xFFE784	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffe784	death	0xFFE784	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffe8aa	damage_taken	0xFFE8AA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffe8aa	death	0xFFE8AA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffe8ac	damage_taken	0xFFE8AC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffe8ac	death	0xFFE8AC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

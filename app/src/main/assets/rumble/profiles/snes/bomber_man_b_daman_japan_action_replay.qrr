@@ -1,0 +1,9 @@
+game_name=Bomber Man B-Daman (Japan) (Action Replay)
+game_key=bomber_man_b_daman_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_0d99	level_complete	0x7E0D99	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0db2	level_complete	0x7E0DB2	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	score_score_02d8	score	0x7E02D8	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0258	score	0x7E0258	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0332	score	0x7E0332	1	uint	little	prev < curr	0.8	1	right:0.350:60

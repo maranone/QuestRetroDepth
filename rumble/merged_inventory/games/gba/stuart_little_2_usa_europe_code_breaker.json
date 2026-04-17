@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "stuartlittle2",
+  "display_name": "Stuart Little 2 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Stuart Little 2 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10007464",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02007464"
+        },
+        {
+          "code": "82009748",
+          "desc": "Infinite Lives",
+          "address": "0x02009748"
+        },
+        {
+          "code": "82007298",
+          "desc": "Infinite Health",
+          "address": "0x02007298"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Stuart Little 2 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10007464",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02007464"
+        },
+        {
+          "code": "82009748",
+          "desc": "Infinite Lives",
+          "address": "0x02009748"
+        },
+        {
+          "code": "82007298",
+          "desc": "Infinite Health",
+          "address": "0x02007298"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

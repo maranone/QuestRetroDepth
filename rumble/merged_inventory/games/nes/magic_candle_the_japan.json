@@ -1,0 +1,85 @@
+{
+  "system": "nes",
+  "normalized_title": "magiccandle",
+  "display_name": "Magic Candle, The (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Magic Candle, The (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "6CC1:39",
+          "desc": "Infinite HP",
+          "address": "0x6CC1"
+        },
+        {
+          "code": "6CC2:39",
+          "desc": "Infinite HP",
+          "address": "0x6CC2"
+        },
+        {
+          "code": "6CC3:39",
+          "desc": "Infinite HP",
+          "address": "0x6CC3"
+        },
+        {
+          "code": "6CC4:39",
+          "desc": "Infinite MP",
+          "address": "0x6CC4"
+        },
+        {
+          "code": "6CC5:39",
+          "desc": "Infinite MP",
+          "address": "0x6CC5"
+        },
+        {
+          "code": "6CC6:39",
+          "desc": "Infinite MP",
+          "address": "0x6CC6"
+        },
+        {
+          "code": "6CD4:39",
+          "desc": "Max Cash",
+          "address": "0x6CD4"
+        },
+        {
+          "code": "6CD5:39",
+          "desc": "Max Cash",
+          "address": "0x6CD5"
+        },
+        {
+          "code": "6CD6:39",
+          "desc": "Max Cash",
+          "address": "0x6CD6"
+        },
+        {
+          "code": "6CD7:39",
+          "desc": "Max Cash",
+          "address": "0x6CD7"
+        },
+        {
+          "code": "6CD8:39",
+          "desc": "Max Cash",
+          "address": "0x6CD8"
+        },
+        {
+          "code": "0006:F9",
+          "desc": "Sound Test",
+          "address": "0x0006"
+        },
+        {
+          "code": "0007:C9",
+          "desc": "Sound Test",
+          "address": "0x0007"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

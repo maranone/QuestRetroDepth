@@ -1,0 +1,7 @@
+game_name=Dragon Power (USA) (Game Genie)
+game_key=DragonPower-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_002e	damage_taken	0x002E	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_002e	death	0x002E	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_011e	score	0x011E	4	nibble	big	prev < curr	0.8	1	right:0.350:60

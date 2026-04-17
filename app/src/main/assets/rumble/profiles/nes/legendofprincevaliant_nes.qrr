@@ -1,0 +1,7 @@
+game_name=Legend of Prince Valiant, The (Europe)
+game_key=LegendOfPrinceValiant-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_00f7	life_lost	0x00F7	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00f7	life_gained	0x00F7	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_00f4	score	0x00F4	3	bcd	big	prev < curr	0.8	1	right:0.350:60

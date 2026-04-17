@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "princeofpersia",
+  "display_name": "Prince of Persia (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Prince of Persia (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "04EF:80",
+          "desc": "Infinite Time",
+          "address": "0x04EF"
+        },
+        {
+          "code": "06CF:03",
+          "desc": "Infinite Energy",
+          "address": "0x06CF"
+        },
+        {
+          "code": "SLXAINSO",
+          "desc": "Infinite Health",
+          "address": "0x073D"
+        },
+        {
+          "code": "06CF:03",
+          "desc": "Infinite Health",
+          "address": "0x06CF"
+        },
+        {
+          "code": "0070:BE",
+          "desc": "Level Modifier",
+          "address": "0x0070"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

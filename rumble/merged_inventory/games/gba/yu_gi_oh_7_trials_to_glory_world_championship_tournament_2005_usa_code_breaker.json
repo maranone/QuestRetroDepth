@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "yugioh7trialstogloryworldchampionshiptournament2005",
+  "display_name": "Yu-Gi-Oh! - 7 Trials to Glory - World Championship Tournament 2005 (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Yu-Gi-Oh! - 7 Trials to Glory - World Championship Tournament 2005 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "82020AB0",
+          "desc": "Infinite HP",
+          "address": "0x02020AB0"
+        },
+        {
+          "code": "82001808",
+          "desc": "9999 DPS",
+          "address": "0x02001808"
+        },
+        {
+          "code": "82001808",
+          "desc": "Max DPS",
+          "address": "0x02001808"
+        },
+        {
+          "code": "8200180A",
+          "desc": "Max DPS",
+          "address": "0x0200180A"
+        },
+        {
+          "code": "42000008",
+          "desc": "All Cards",
+          "address": "0x02000008"
+        },
+        {
+          "code": "82020AA0",
+          "desc": "65,535 LP",
+          "address": "0x02020AA0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Yu-Gi-Oh! - 7 Trials to Glory - World Championship Tournament 2005 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "82020AB0",
+          "desc": "Infinite HP",
+          "address": "0x02020AB0"
+        },
+        {
+          "code": "82001808",
+          "desc": "9999 DPS",
+          "address": "0x02001808"
+        },
+        {
+          "code": "82001808",
+          "desc": "Max DPS",
+          "address": "0x02001808"
+        },
+        {
+          "code": "8200180A",
+          "desc": "Max DPS",
+          "address": "0x0200180A"
+        },
+        {
+          "code": "42000008",
+          "desc": "All Cards",
+          "address": "0x02000008"
+        },
+        {
+          "code": "82020AA0",
+          "desc": "65,535 LP",
+          "address": "0x02020AA0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

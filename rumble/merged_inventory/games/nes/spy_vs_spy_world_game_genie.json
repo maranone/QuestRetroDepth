@@ -1,0 +1,48 @@
+{
+  "system": "nes",
+  "normalized_title": "spyvsspy",
+  "display_name": "Spy vs Spy (World) (Game Genie)",
+  "aliases": [
+    "Spy vs Spy (USA)",
+    "Spy vs Spy (World) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Spy vs Spy (World) (Game Genie).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "SZVAYUVK",
+          "desc": "Stop Black Spy's Clock",
+          "address": "0x032F"
+        },
+        {
+          "code": "SXUELUVK",
+          "desc": "Stop White Spy's Clock",
+          "address": "0x03AB"
+        },
+        {
+          "code": "PUEAPLIU",
+          "desc": "Black Spy Has 100 Seconds In A Minute",
+          "address": "0x0339"
+        },
+        {
+          "code": "PUSAILIU",
+          "desc": "White Spy Has 100 Seconds In A Minute",
+          "address": "0x033D"
+        },
+        {
+          "code": "NETEAOSS",
+          "desc": "New Levels",
+          "address": "0x0180"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

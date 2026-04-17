@@ -1,0 +1,235 @@
+{
+  "system": "nes",
+  "normalized_title": "bombermanii",
+  "display_name": "Bomberman II (USA) (Game Genie)",
+  "aliases": [
+    "Bomberman II (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bomberman II (USA).cht",
+      "total_cheat_rows": 48,
+      "raw_entry_count": 44,
+      "distinct_address_count": 36,
+      "sample_raw_entries": [
+        {
+          "code": "0090:0C",
+          "desc": "Set Max. Bomb Quantity [Player 1]",
+          "address": "0x0090"
+        },
+        {
+          "code": "0091:0C",
+          "desc": "Set Max. Bomb Quantity [Player 2]",
+          "address": "0x0091"
+        },
+        {
+          "code": "0092:0C",
+          "desc": "Set Max. Bomb Quantity [Player 3]",
+          "address": "0x0092"
+        },
+        {
+          "code": "0093:0C",
+          "desc": "Set Max. Bomb Power [Player 1]",
+          "address": "0x0093"
+        },
+        {
+          "code": "0094:0C",
+          "desc": "Set Max. Bomb Power [Player 2]",
+          "address": "0x0094"
+        },
+        {
+          "code": "0095:0C",
+          "desc": "Set Max. Bomb Power [Player 3]",
+          "address": "0x0095"
+        },
+        {
+          "code": "GXXONEVK",
+          "desc": "Infinite timer",
+          "address": "0x00AF"
+        },
+        {
+          "code": "LVXOUELL",
+          "desc": "Slower timer",
+          "address": "0x00EB"
+        },
+        {
+          "code": "TOXOUELU",
+          "desc": "Faster timer",
+          "address": "0x009B"
+        },
+        {
+          "code": "AEKAZYLA",
+          "desc": "Always have detonator",
+          "address": "0x070A"
+        },
+        {
+          "code": "YNEOLXLK",
+          "desc": "Bomb has a longer fuse",
+          "address": "0x02FB"
+        },
+        {
+          "code": "AXEOLXLG",
+          "desc": "Bomb has a shorter fuse",
+          "address": "0x02AB"
+        },
+        {
+          "code": "EASPTANG",
+          "desc": "Dollar sign acts as flame face",
+          "address": "0x000E"
+        },
+        {
+          "code": "GYSPTANG",
+          "desc": "Dollar sign acts as bomb",
+          "address": "0x007E"
+        },
+        {
+          "code": "KASPTANK",
+          "desc": "Dollar sign acts as heart with bomb",
+          "address": "0x000E"
+        },
+        {
+          "code": "OPSPTANG",
+          "desc": "Dollar sign acts as skate",
+          "address": "0x001E"
+        },
+        {
+          "code": "OZSPTANK",
+          "desc": "Dollar sign acts as vest for a short time",
+          "address": "0x002E"
+        },
+        {
+          "code": "SLVAPZSP",
+          "desc": "Invincibility",
+          "address": "0x0239"
+        },
+        {
+          "code": "SZXATLOU",
+          "desc": "Hit Anywhere",
+          "address": "0x032E"
+        },
+        {
+          "code": "LPXAYUYX",
+          "desc": "Hit Anywhere",
+          "address": "0x031F"
+        },
+        {
+          "code": "PTXEAUPZ",
+          "desc": "Hit Anywhere",
+          "address": "0x03E8"
+        },
+        {
+          "code": "XTXEPLEE",
+          "desc": "Hit Anywhere",
+          "address": "0x03E9"
+        },
+        {
+          "code": "OXXAPYSX",
+          "desc": "Always Walk Through Bombs",
+          "address": "0x0729"
+        },
+        {
+          "code": "PEXAZNVZ",
+          "desc": "Always Walk Through Bombs",
+          "address": "0x070A"
+        },
+        {
+          "code": "OXOEGYSX",
+          "desc": "Always Walk Through Walls",
+          "address": "0x07AC"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Bomberman II (USA).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 16,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "GXXONEVK",
+          "desc": "Infinite Timer",
+          "address": "0x00AF"
+        },
+        {
+          "code": "LVXOUELL",
+          "desc": "Slower Timer",
+          "address": "0x00EB"
+        },
+        {
+          "code": "TOXOUELU",
+          "desc": "Faster Timer",
+          "address": "0x009B"
+        },
+        {
+          "code": "AEKAZYLA",
+          "desc": "Always Have Detonator",
+          "address": "0x070A"
+        },
+        {
+          "code": "YNEOLXLK",
+          "desc": "Bomb Has A Longer Fuse",
+          "address": "0x02FB"
+        },
+        {
+          "code": "AXEOLXLG",
+          "desc": "Bomb Has A Shorter Fuse",
+          "address": "0x02AB"
+        },
+        {
+          "code": "EASPTANG",
+          "desc": "Dollar Sign Acts As Flame Face",
+          "address": "0x000E"
+        },
+        {
+          "code": "GYSPTANG",
+          "desc": "Dollar Sign Acts As Bomb",
+          "address": "0x007E"
+        },
+        {
+          "code": "KASPTANK",
+          "desc": "Dollar Sign Acts As Heart With Bomb",
+          "address": "0x000E"
+        },
+        {
+          "code": "OPSPTANG",
+          "desc": "Dollar Sign Acts As Skate",
+          "address": "0x001E"
+        },
+        {
+          "code": "OZSPTANK",
+          "desc": "Dollar Sign Acts As Vest For A Short Time",
+          "address": "0x002E"
+        },
+        {
+          "code": "OXXAPYSX",
+          "desc": "Always Walk Through Bombs",
+          "address": "0x0729"
+        },
+        {
+          "code": "PEXAZNVZ",
+          "desc": "Always Walk Through Bombs",
+          "address": "0x070A"
+        },
+        {
+          "code": "OXOEGYSX",
+          "desc": "Always Walk Through Walls",
+          "address": "0x07AC"
+        },
+        {
+          "code": "PEOEINSZ",
+          "desc": "Always Walk Through Walls",
+          "address": "0x078D"
+        },
+        {
+          "code": "XTUEIZSO",
+          "desc": "Invincible",
+          "address": "0x02ED"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

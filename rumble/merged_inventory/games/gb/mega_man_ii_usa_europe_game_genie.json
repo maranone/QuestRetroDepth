@@ -1,0 +1,28 @@
+{
+  "system": "gb",
+  "normalized_title": "megamanii",
+  "display_name": "Mega Man II (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Mega Man II (USA, Europe) (Game Genie)",
+    "Mega Man II (USA, Europe) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Mega Man II (USA, Europe) (GameShark).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "01A5D0CF",
+          "desc": "Infinite Energy",
+          "address": "0xD0CF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

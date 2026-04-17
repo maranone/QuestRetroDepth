@@ -1,0 +1,105 @@
+{
+  "system": "nes",
+  "normalized_title": "familyboxing",
+  "display_name": "Family Boxing (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Family Boxing (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 17,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "06E4:09",
+          "desc": "Infinite Time",
+          "address": "0x06E4"
+        },
+        {
+          "code": "06E5:09",
+          "desc": "Infinite Time",
+          "address": "0x06E5"
+        },
+        {
+          "code": "06DF:09",
+          "desc": "Instant 10-Count",
+          "address": "0x06DF"
+        },
+        {
+          "code": "0369:EE",
+          "desc": "Player 1 Has Infinite Health",
+          "address": "0x0369"
+        },
+        {
+          "code": "0319:00",
+          "desc": "Player 2 Has No Health",
+          "address": "0x0319"
+        },
+        {
+          "code": "038F:09",
+          "desc": "Player 1 Has Maximum Punching Attributes",
+          "address": "0x038F"
+        },
+        {
+          "code": "0390:09",
+          "desc": "Player 1 Has Maximum Punching Attributes",
+          "address": "0x0390"
+        },
+        {
+          "code": "0391:09",
+          "desc": "Player 1 Has Maximum Speed Attributes",
+          "address": "0x0391"
+        },
+        {
+          "code": "0392:09",
+          "desc": "Player 1 Has Maximum Speed Attributes",
+          "address": "0x0392"
+        },
+        {
+          "code": "0393:09",
+          "desc": "Player 1 Has Maximum Stamina Attributes",
+          "address": "0x0393"
+        },
+        {
+          "code": "0394:09",
+          "desc": "Player 1 Has Maximum Stamina Attributes",
+          "address": "0x0394"
+        },
+        {
+          "code": "033F:00",
+          "desc": "Player 2 Has No Punching Attributes",
+          "address": "0x033F"
+        },
+        {
+          "code": "0340:00",
+          "desc": "Player 2 Has No Punching Attributes",
+          "address": "0x0340"
+        },
+        {
+          "code": "0341:00",
+          "desc": "Player 2 Has No Speed Attributes",
+          "address": "0x0341"
+        },
+        {
+          "code": "0342:00",
+          "desc": "Player 2 Has No Speed Attributes",
+          "address": "0x0342"
+        },
+        {
+          "code": "0343:00",
+          "desc": "Player 2 Has No Stamina Attributes",
+          "address": "0x0343"
+        },
+        {
+          "code": "0344:00",
+          "desc": "Player 2 Has No Stamina Attributes",
+          "address": "0x0344"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

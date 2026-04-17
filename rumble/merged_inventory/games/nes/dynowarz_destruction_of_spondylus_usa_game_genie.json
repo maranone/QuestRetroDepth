@@ -1,0 +1,72 @@
+{
+  "system": "nes",
+  "normalized_title": "dynowarzdestructionofspondylus",
+  "display_name": "Dynowarz - Destruction of Spondylus (USA) (Game Genie)",
+  "aliases": [
+    "Dynowarz - The Destruction of Spondylus (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dynowarz - The Destruction of Spondylus (USA).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "KEIPOS",
+          "desc": "Some Music Is Missing",
+          "address": "0x0501"
+        },
+        {
+          "code": "003B:05",
+          "desc": "Jump Height Modifier",
+          "address": "0x003B"
+        },
+        {
+          "code": "003D:01",
+          "desc": "Jump Midair",
+          "address": "0x003D"
+        },
+        {
+          "code": "009C:15",
+          "desc": "Walk Through Enemies",
+          "address": "0x009C"
+        },
+        {
+          "code": "060A:14",
+          "desc": "Infinite Health",
+          "address": "0x060A"
+        },
+        {
+          "code": "03B3:52",
+          "desc": "Fake Infinite Health",
+          "address": "0x03B3"
+        },
+        {
+          "code": "0610:00",
+          "desc": "Weapon Modifier (Red Dinosaur)",
+          "address": "0x0610"
+        },
+        {
+          "code": "0620:00",
+          "desc": "1 Hit Kills Most Mini-Bosses",
+          "address": "0x0620"
+        },
+        {
+          "code": "063D:00",
+          "desc": "1 Hit Kills Most Bosses",
+          "address": "0x063D"
+        },
+        {
+          "code": "0084:01",
+          "desc": "Stage Modifier",
+          "address": "0x0084"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,8 @@
+game_name=Time Slip (USA, Europe) (Action Replay)
+game_key=time_slip_usa_europe_action_replay
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_3d7c	life_lost	0x7E3D7C	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_3d7c	life_gained	0x7E3D7C	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_50d8	damage_taken	0x7E50D8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_50d8	death	0x7E50D8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "daisenpuu",
+  "display_name": "Daisenpuu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Daisenpuu (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f02a4:02",
+          "desc": "Infinite Lives",
+          "address": "0x1F02A4"
+        },
+        {
+          "code": "1f0a21:02",
+          "desc": "Infinite Bombs",
+          "address": "0x1F0A21"
+        },
+        {
+          "code": "1f0380:03",
+          "desc": "Invincibility",
+          "address": "0x1F0380"
+        },
+        {
+          "code": "1f061d:27",
+          "desc": "Invincibility",
+          "address": "0x1F061D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

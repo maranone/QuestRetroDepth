@@ -1,0 +1,7 @@
+game_name=Fantasy Zone - The Maze (USA, Europe) (Action Replay)
+game_key=FantasyZoneTheMaze-Sms
+system=sms
+integration_tier=stable
+trigger	life_lost_lives_c069	life_lost	0xC069	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_c069	life_gained	0xC069	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_c04f	score	0xC04F	2	uint	little	prev < curr	0.8	1	right:0.350:60

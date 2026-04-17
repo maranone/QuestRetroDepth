@@ -1,0 +1,116 @@
+{
+  "system": "nes",
+  "normalized_title": "tetris",
+  "display_name": "Tetris (Bulletproof) (Japan) (Rev 1)",
+  "aliases": [
+    "Tetris (Bulletproof) (Japan) (Rev 2)",
+    "Tetris (Bulletproof) (Japan)",
+    "Tetris (Europe)",
+    "Tetris (Rumbles)",
+    "Tetris (USA)",
+    "Tetris (USA, Europe) (Game Genie)",
+    "Tetris (USA) (Nintendo)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tetris (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "TVLOVA",
+          "desc": "Delayed Auto-Fall",
+          "address": "0x00E6"
+        },
+        {
+          "code": "AISEGYIZ",
+          "desc": "Must Complete 50 Lines In Game B",
+          "address": "0x07DC"
+        },
+        {
+          "code": "EASEGYIZ",
+          "desc": "Must Complete 80 Lines In Game B",
+          "address": "0x078C"
+        },
+        {
+          "code": "PASAUPPE",
+          "desc": "Faster 'Forced' Fall Rate",
+          "address": "0x010B"
+        },
+        {
+          "code": "EYSEGYIX",
+          "desc": "In Game B You Only Need 1 Line",
+          "address": "0x07FC"
+        },
+        {
+          "code": "AASEGYIO",
+          "desc": "In Game B You Only Need To Touch Something",
+          "address": "0x078C"
+        },
+        {
+          "code": "SXVPKASA",
+          "desc": "All Pieces Will Be The Same",
+          "address": "0x002C"
+        },
+        {
+          "code": "AEEOUKAA",
+          "desc": "Max Score With 1 Piece",
+          "address": "0x048B"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Tetris (USA) (Nintendo).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "TVLOVA",
+          "desc": "Delayed Auto-Fall",
+          "address": "0x00E6"
+        },
+        {
+          "code": "AISEGYIZ",
+          "desc": "Must Complete 50 Lines In Game B",
+          "address": "0x07DC"
+        },
+        {
+          "code": "EASEGYIZ",
+          "desc": "Must Complete 80 Lines In Game B",
+          "address": "0x078C"
+        },
+        {
+          "code": "PASAUPPE",
+          "desc": "Faster 'Forced' Fall Rate",
+          "address": "0x010B"
+        },
+        {
+          "code": "EYSEGYIX",
+          "desc": "In Game B You Only Need 1 Line",
+          "address": "0x07FC"
+        },
+        {
+          "code": "AASEGYIO",
+          "desc": "In Game B You Only Need To Touch Something",
+          "address": "0x078C"
+        },
+        {
+          "code": "SXVPKASA",
+          "desc": "All Pieces Will Be The Same",
+          "address": "0x002C"
+        },
+        {
+          "code": "AEEOUKAA",
+          "desc": "Max Score With 1 Piece",
+          "address": "0x048B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

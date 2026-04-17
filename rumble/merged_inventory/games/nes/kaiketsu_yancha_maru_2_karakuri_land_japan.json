@@ -1,0 +1,105 @@
+{
+  "system": "nes",
+  "normalized_title": "kaiketsuyanchamaru2karakuriland",
+  "display_name": "Kaiketsu Yancha Maru 2 - Karakuri Land (Japan)",
+  "aliases": [
+    "Kaiketsu Yancha Maru 2 - Karakuri Land (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\kaiketsuyanchamaru2karakuriland_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0094",
+        "0x009F",
+        "0x0190"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KaiketsuYanchaMaru2KarakuriLand-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0094",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x009F",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0190",
+          "type": "<n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kaiketsu Yancha Maru 2 - Karakuri Land (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0094:03",
+          "desc": "Infinite Energy",
+          "address": "0x0094"
+        },
+        {
+          "code": "005E:00",
+          "desc": "Level Modifier",
+          "address": "0x005E"
+        },
+        {
+          "code": "0075:00",
+          "desc": "Jump Higher",
+          "address": "0x0075"
+        },
+        {
+          "code": "0099:09",
+          "desc": "Infinite Animal Time",
+          "address": "0x0099"
+        },
+        {
+          "code": "009B:63",
+          "desc": "Infinite Shield Time / Crescent Blast",
+          "address": "0x009B"
+        },
+        {
+          "code": "00A1:09",
+          "desc": "Infinite Transformations",
+          "address": "0x00A1"
+        },
+        {
+          "code": "0096:08",
+          "desc": "Invincibility [Flashing]",
+          "address": "0x0096"
+        },
+        {
+          "code": "009F:09",
+          "desc": "Infinite Lives",
+          "address": "0x009F"
+        },
+        {
+          "code": "0072:01",
+          "desc": "Have Quick Running",
+          "address": "0x0072"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

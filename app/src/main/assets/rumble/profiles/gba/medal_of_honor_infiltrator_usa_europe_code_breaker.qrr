@@ -1,0 +1,14 @@
+game_name=Medal of Honor - Infiltrator (USA, Europe) (Code Breaker)
+game_key=medal_of_honor_infiltrator_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_02003c38	life_lost	0x02003C38	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02003c38	life_gained	0x02003C38	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_02011ca4	damage_taken	0x02011CA4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02011ca4	death	0x02011CA4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0200a7c5	damage_taken	0x0200A7C5	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0200a7c5	death	0x0200A7C5	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_02011ee1	pickup	0x02011EE1	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_02011ee2	pickup	0x02011EE2	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_02011ee5	pickup	0x02011EE5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_02011ee6	pickup	0x02011EE6	1	uint	little	prev != curr	0.8	1	right:0.250:18

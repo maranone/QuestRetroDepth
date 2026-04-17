@@ -1,0 +1,15 @@
+game_name=Batman - The Video Game (USA) (Beta) (Earlier)
+game_key=batman_the_video_game_usa_beta_earlier
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_00b7	damage_taken	0x00B7	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00b7	death	0x00B7	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_0228	enemy_defeated	0x0228	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_04ad	enemy_defeated	0x04AD	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_032f	enemy_defeated	0x032F	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_0609	damage_taken	0x0609	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0609	death	0x0609	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0248	damage_taken	0x0248	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0248	death	0x0248	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0431	pickup	0x0431	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_02ad	enemy_defeated	0x02AD	1	uint	little	prev > curr	0.65	1	right:0.450:35

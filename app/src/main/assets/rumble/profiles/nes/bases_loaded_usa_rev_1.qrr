@@ -1,0 +1,8 @@
+game_name=Bases Loaded (USA) (Rev 1)
+game_key=bases_loaded_usa_rev_1
+system=nes
+integration_tier=contrib
+trigger	score_score_0418	score	0x0418	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0419	score	0x0419	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0426	score	0x0426	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0427	score	0x0427	1	uint	little	prev < curr	0.8	1	right:0.350:60

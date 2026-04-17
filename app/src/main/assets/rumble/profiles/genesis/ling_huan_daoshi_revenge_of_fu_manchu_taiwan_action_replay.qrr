@@ -1,0 +1,6 @@
+game_name=Ling Huan Daoshi -Revenge of Fu Manchu- (Taiwan) (Action Replay)
+game_key=ling_huan_daoshi_revenge_of_fu_manchu_taiwan_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ff088b	life_lost	0xFF088B	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff088b	life_gained	0xFF088B	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

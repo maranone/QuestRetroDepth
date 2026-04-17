@@ -1,0 +1,44 @@
+{
+  "system": "gb",
+  "normalized_title": "spotcooladventure",
+  "display_name": "Spot - The Cool Adventure (USA, Japan) (GameShark) (diff)",
+  "aliases": [
+    "Spot - The Cool Adventure (USA, Japan) (Game Genie)",
+    "Spot - The Cool Adventure (USA, Japan) (GameShark) (diff)",
+    "Spot - The Cool Adventure (USA, Japan) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Spot - The Cool Adventure (USA, Japan) (GameShark).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "010FD0D3",
+          "desc": "Invincible",
+          "address": "0xD0D3"
+        },
+        {
+          "code": "0199D1D3",
+          "desc": "999999 Score",
+          "address": "0xD1D3"
+        },
+        {
+          "code": "0199D2D3",
+          "desc": "999999 Score",
+          "address": "0xD2D3"
+        },
+        {
+          "code": "0199D3D3",
+          "desc": "999999 Score",
+          "address": "0xD3D3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "cosmicwars",
+  "display_name": "Cosmic Wars (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Cosmic Wars (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "69C0:00",
+          "desc": "Money Modifier (Blue Team)",
+          "address": "0x69C0"
+        },
+        {
+          "code": "69C1:00",
+          "desc": "Money Modifier (Blue Team)",
+          "address": "0x69C1"
+        },
+        {
+          "code": "69C3:00",
+          "desc": "Money Modifier (Red Team)",
+          "address": "0x69C3"
+        },
+        {
+          "code": "69C4:00",
+          "desc": "Money Modifier (Red Team)",
+          "address": "0x69C4"
+        },
+        {
+          "code": "6C8C:03",
+          "desc": "Infinite Turns",
+          "address": "0x6C8C"
+        },
+        {
+          "code": "660A:3F",
+          "desc": "In Battle Infinite Steps &amp; Weapons (Blue Team)",
+          "address": "0x660A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

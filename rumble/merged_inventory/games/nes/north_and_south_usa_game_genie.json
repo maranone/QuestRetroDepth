@@ -1,0 +1,72 @@
+{
+  "system": "nes",
+  "normalized_title": "northandsouth",
+  "display_name": "North and South (USA) (Game Genie)",
+  "aliases": [
+    "North and South (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\North and South (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "IEUATOPA",
+          "desc": "Cannon has 5 shots",
+          "address": "0x010E"
+        },
+        {
+          "code": "YEUATOPE",
+          "desc": "Cannon has 15 shots",
+          "address": "0x010E"
+        },
+        {
+          "code": "SZXPYUVS",
+          "desc": "Cannon has infinite shots",
+          "address": "0x032F"
+        },
+        {
+          "code": "GXXATOSO",
+          "desc": "No cannons allowed!",
+          "address": "0x012E"
+        },
+        {
+          "code": "ZAUAGPGA",
+          "desc": "Only 2 daggers in the fortress",
+          "address": "0x010C"
+        },
+        {
+          "code": "GXXPLKVS",
+          "desc": "Infinite daggers in the fortress",
+          "address": "0x042B"
+        },
+        {
+          "code": "ZAUETOZA",
+          "desc": "2 men in the fortress",
+          "address": "0x018E"
+        },
+        {
+          "code": "IAUETOZA",
+          "desc": "5 men in the fortress",
+          "address": "0x018E"
+        },
+        {
+          "code": "ZASAGOZA",
+          "desc": "2 men on the train",
+          "address": "0x010C"
+        },
+        {
+          "code": "IASAGOZA",
+          "desc": "5 men on the train",
+          "address": "0x010C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

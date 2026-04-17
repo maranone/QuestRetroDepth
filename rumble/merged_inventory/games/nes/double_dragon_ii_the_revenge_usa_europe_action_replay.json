@@ -1,0 +1,121 @@
+{
+  "system": "nes",
+  "normalized_title": "doubledragoniirevenge",
+  "display_name": "Double Dragon II - The Revenge (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Double Dragon II - The Revenge (USA)",
+    "Double Dragon II - The Revenge (USA, Europe) (Action Replay)",
+    "Double Dragon II - The Revenge (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Double Dragon II - The Revenge (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 41,
+      "raw_entry_count": 18,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "SZXAYKVS",
+          "desc": "Never Lose Lives From Falling",
+          "address": "0x042F"
+        },
+        {
+          "code": "SXOANXVS",
+          "desc": "Never Lose Lives From Low Energy",
+          "address": "0x022F"
+        },
+        {
+          "code": "SZVESUVS",
+          "desc": "Never Lose Lives From Water",
+          "address": "0x03AD"
+        },
+        {
+          "code": "YUPOET",
+          "desc": "Slower Moving Characters",
+          "address": "0x06B0"
+        },
+        {
+          "code": "OZOOLA",
+          "desc": "Fewer Enemies (Do Not Pick Up Weapons)",
+          "address": "0x00AB"
+        },
+        {
+          "code": "SUNETO",
+          "desc": "No Music",
+          "address": "0x01BE"
+        },
+        {
+          "code": "SAPAIA",
+          "desc": "Slow-Motion, Streetfighter Style Death For Enemies",
+          "address": "0x0005"
+        },
+        {
+          "code": "YYEAEA",
+          "desc": "Strange Fighting (Can't Pass First Stage)",
+          "address": "0x0078"
+        },
+        {
+          "code": "TOKEXT",
+          "desc": "Rising Knee Goes Higher",
+          "address": "0x069A"
+        },
+        {
+          "code": "PVOEXG",
+          "desc": "Punch To Do Teleporting Jumpkick",
+          "address": "0x04EA"
+        },
+        {
+          "code": "ZZNEXV",
+          "desc": "Cyclone Kick Makes You Grab The Last Thing You Held",
+          "address": "0x06AA"
+        },
+        {
+          "code": "AAAAAG",
+          "desc": "Fast Music",
+          "address": "0x0400"
+        },
+        {
+          "code": "IANEAA",
+          "desc": "P1 Can't Be Touched",
+          "address": "0x0088"
+        },
+        {
+          "code": "AELEXZ",
+          "desc": "Enemies Vanish Instantly Upon Death",
+          "address": "0x0282"
+        },
+        {
+          "code": "PEPENG",
+          "desc": "Billy Uses Closest Arm To Punch",
+          "address": "0x0487"
+        },
+        {
+          "code": "NNZASK",
+          "desc": "Billy Uses Farthest Arm To Punch",
+          "address": "0x0475"
+        },
+        {
+          "code": "PAYEXT",
+          "desc": "Strange Cyclone Kick",
+          "address": "0x0682"
+        },
+        {
+          "code": "PELAVG",
+          "desc": "Billy Punches Slowly",
+          "address": "0x0406"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Double Dragon II - The Revenge (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "bignosecaveman",
+  "display_name": "Big Nose the Caveman (USA) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Big Nose the Caveman (USA) (Game Genie).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "TEUAITLA",
+          "desc": "1 Life",
+          "address": "0x060D"
+        },
+        {
+          "code": "TEUAITLA",
+          "desc": "6 Lives",
+          "address": "0x060D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

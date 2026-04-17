@@ -1,0 +1,60 @@
+{
+  "system": "sms",
+  "normalized_title": "tazmania",
+  "display_name": "Taz-Mania (Europe) (Action Replay)",
+  "aliases": [
+    "Taz-Mania (Europe) (Action Replay)",
+    "Taz-Mania (Europe, Brazil)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\tazmania_sms.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xC05A",
+        "0xC103",
+        "0xC1A0"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TazMania-Sms-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xC103",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xC05A",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xC1A0",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Taz-Mania (Europe, Brazil).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

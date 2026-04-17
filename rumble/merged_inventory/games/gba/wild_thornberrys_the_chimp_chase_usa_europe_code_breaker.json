@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "wildthornberryschimpchase",
+  "display_name": "Wild Thornberrys, The - Chimp Chase (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Wild Thornberrys, The - Chimp Chase (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10009D24",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02009D24"
+        },
+        {
+          "code": "3203D352",
+          "desc": "Infinite Health",
+          "address": "0x0203D352"
+        },
+        {
+          "code": "3203D358",
+          "desc": "Infinite Lives",
+          "address": "0x0203D358"
+        },
+        {
+          "code": "3203D359",
+          "desc": "Max Cheese Curls",
+          "address": "0x0203D359"
+        },
+        {
+          "code": "3203D38D",
+          "desc": "Max Cheese Curls",
+          "address": "0x0203D38D"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Wild Thornberrys, The - Chimp Chase (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10009D24",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02009D24"
+        },
+        {
+          "code": "3203D352",
+          "desc": "Infinite Health",
+          "address": "0x0203D352"
+        },
+        {
+          "code": "3203D358",
+          "desc": "Infinite Lives",
+          "address": "0x0203D358"
+        },
+        {
+          "code": "3203D359",
+          "desc": "Max Cheese Curls",
+          "address": "0x0203D359"
+        },
+        {
+          "code": "3203D38D",
+          "desc": "Max Cheese Curls",
+          "address": "0x0203D38D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

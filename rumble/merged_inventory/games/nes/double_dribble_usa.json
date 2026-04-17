@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "doubledribble",
+  "display_name": "Double Dribble (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Double Dribble (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "OXKAINVK",
+          "desc": "Perfect Accuracy Free Throws",
+          "address": "0x072D"
+        },
+        {
+          "code": "AVKATNGL",
+          "desc": "Perfect Accuracy Free Throws",
+          "address": "0x076E"
+        },
+        {
+          "code": "XVKAYYLE",
+          "desc": "Perfect Accuracy Free Throws",
+          "address": "0x076F"
+        },
+        {
+          "code": "SEKEANVK",
+          "desc": "Perfect Accuracy Free Throws",
+          "address": "0x0788"
+        },
+        {
+          "code": "07F4:00",
+          "desc": "Team 1 Score Modifier (P1)",
+          "address": "0x07F4"
+        },
+        {
+          "code": "07F8:00",
+          "desc": "Team 2 Score Modifier (P2/CPU)",
+          "address": "0x07F8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

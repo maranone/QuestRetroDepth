@@ -1,0 +1,8 @@
+game_name=Sansuu5And6NenKeisanGame
+game_key=Sansuu5And6NenKeisanGame-Nes
+system=nes
+integration_tier=stable
+trigger	game_over_gameover_0484	game_over	0x0484	1	int	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	life_lost_lives_0076	life_lost	0x0076	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0076	life_gained	0x0076	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_007e	score	0x007E	6	nibble	big	prev < curr	0.8	1	right:0.350:60

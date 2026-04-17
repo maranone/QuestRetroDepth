@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "magicaltaruruutokun2mahoudaibouken",
+  "display_name": "Magical Taruruuto-kun 2 - Mahou Daibouken (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Magical Taruruuto-kun 2 - Mahou Daibouken (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0102:03",
+          "desc": "Infinite Lives",
+          "address": "0x0102"
+        },
+        {
+          "code": "0408:7F",
+          "desc": "Another Invincibility",
+          "address": "0x0408"
+        },
+        {
+          "code": "00CC:81",
+          "desc": "Invincibility",
+          "address": "0x00CC"
+        },
+        {
+          "code": "002E:3B",
+          "desc": "Infinite Time",
+          "address": "0x002E"
+        },
+        {
+          "code": "SGOASEVK",
+          "desc": "Infinite Lives",
+          "address": "0x004D"
+        },
+        {
+          "code": "GEOELKYP",
+          "desc": "Invincibility",
+          "address": "0x048B"
+        },
+        {
+          "code": "EEXAPGAA",
+          "desc": "Invincibility",
+          "address": "0x0409"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

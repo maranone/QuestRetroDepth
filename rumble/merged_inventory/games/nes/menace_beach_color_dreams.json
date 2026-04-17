@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "menacebeach",
+  "display_name": "Menace Beach (Color Dreams) [!]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Menace Beach (Color Dreams) [!].cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0510:13",
+          "desc": "Infinite Energy",
+          "address": "0x0510"
+        },
+        {
+          "code": "0510:1F",
+          "desc": "Infinite Health",
+          "address": "0x0510"
+        },
+        {
+          "code": "0176:09",
+          "desc": "Infinite Lives",
+          "address": "0x0176"
+        },
+        {
+          "code": "003B:FE",
+          "desc": "Enable Level Skip",
+          "address": "0x003B"
+        },
+        {
+          "code": "0520:00",
+          "desc": "Less Down Time After Hit",
+          "address": "0x0520"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "yoshiscookie",
+  "display_name": "Yoshi's Cookie (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Yoshi's Cookie (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 10,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "040B:00",
+          "desc": "Round Modifier [0-A]",
+          "address": "0x040B"
+        },
+        {
+          "code": "040C:00",
+          "desc": "Stage Modifier",
+          "address": "0x040C"
+        },
+        {
+          "code": "0540:27",
+          "desc": "Time Modifier P1 [In VS Mode]",
+          "address": "0x0540"
+        },
+        {
+          "code": "05B0:03",
+          "desc": "P1 Always Wins Matches [In VS Mode]",
+          "address": "0x05B0"
+        },
+        {
+          "code": "05B3:03",
+          "desc": "P2 Always Wins Matches [In VS Mode]",
+          "address": "0x05B3"
+        },
+        {
+          "code": "040B:00",
+          "desc": "Round Modifier (0-A)",
+          "address": "0x040B"
+        },
+        {
+          "code": "0540:27",
+          "desc": "Time Modifier P1 (In VS Mode)",
+          "address": "0x0540"
+        },
+        {
+          "code": "0541:00",
+          "desc": "Time Modifier P2 (In VS Mode)",
+          "address": "0x0541"
+        },
+        {
+          "code": "05B0:03",
+          "desc": "P1 Always Wins Matches (In VS Mode)",
+          "address": "0x05B0"
+        },
+        {
+          "code": "05B3:03",
+          "desc": "P2 Always Wins Matches (In VS Mode)",
+          "address": "0x05B3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

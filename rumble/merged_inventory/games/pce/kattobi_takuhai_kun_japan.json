@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "kattobitakuhaikun",
+  "display_name": "Kattobi! Takuhai-kun (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Kattobi! Takuhai-kun (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f0707:99",
+          "desc": "Infinite Time",
+          "address": "0x1F0707"
+        },
+        {
+          "code": "1f0057:fb",
+          "desc": "Max Power",
+          "address": "0x1F0057"
+        },
+        {
+          "code": "1f0e24:64",
+          "desc": "Max Damage",
+          "address": "0x1F0E24"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

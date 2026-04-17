@@ -1,0 +1,6 @@
+game_name=Lakers versus Celtics and the NBA Playoffs (USA) (Action Replay)
+game_key=lakers_versus_celtics_and_the_nba_playoffs_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffa0e0	score	0xFFA0E0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffa0e2	score	0xFFA0E2	1	uint	little	prev < curr	0.8	1	right:0.350:60

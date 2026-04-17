@@ -1,0 +1,85 @@
+{
+  "system": "nes",
+  "normalized_title": "mappykids",
+  "display_name": "Mappy Kids (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mappy Kids (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "0029:10",
+          "desc": "Infinite Energy",
+          "address": "0x0029"
+        },
+        {
+          "code": "0028:03",
+          "desc": "Infinite Lives",
+          "address": "0x0028"
+        },
+        {
+          "code": "010E:01",
+          "desc": "Invincibility",
+          "address": "0x010E"
+        },
+        {
+          "code": "0011:00",
+          "desc": "Level Modifier",
+          "address": "0x0011"
+        },
+        {
+          "code": "002A:FF",
+          "desc": "Have All House Items",
+          "address": "0x002A"
+        },
+        {
+          "code": "002B:FF",
+          "desc": "Have All House Items",
+          "address": "0x002B"
+        },
+        {
+          "code": "004B:09",
+          "desc": "Infinite Money",
+          "address": "0x004B"
+        },
+        {
+          "code": "004C:09",
+          "desc": "Infinite Money",
+          "address": "0x004C"
+        },
+        {
+          "code": "004D:09",
+          "desc": "Infinite Money",
+          "address": "0x004D"
+        },
+        {
+          "code": "004E:09",
+          "desc": "Infinite Money",
+          "address": "0x004E"
+        },
+        {
+          "code": "006D:01",
+          "desc": "Roller Skates Enabled",
+          "address": "0x006D"
+        },
+        {
+          "code": "010B:00",
+          "desc": "Higher Jump with Infinite Flying Time",
+          "address": "0x010B"
+        },
+        {
+          "code": "050D:09",
+          "desc": "Infinite Time Picture Bonus Rounds",
+          "address": "0x050D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

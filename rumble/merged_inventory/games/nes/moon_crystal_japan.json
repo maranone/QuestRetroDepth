@@ -1,0 +1,140 @@
+{
+  "system": "nes",
+  "normalized_title": "mooncrystal",
+  "display_name": "Moon Crystal (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Moon Crystal (Japan).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 24,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "05ED:03",
+          "desc": "Inf Lives",
+          "address": "0x05ED"
+        },
+        {
+          "code": "05F0:04",
+          "desc": "Inf Health",
+          "address": "0x05F0"
+        },
+        {
+          "code": "05EC:05",
+          "desc": "Always have 5 large hearts",
+          "address": "0x05EC"
+        },
+        {
+          "code": "05EB:03",
+          "desc": "Always have sword and double jump",
+          "address": "0x05EB"
+        },
+        {
+          "code": "03AE:4F",
+          "desc": "Inf Time while escaping the lab",
+          "address": "0x03AE"
+        },
+        {
+          "code": "0607:00",
+          "desc": "Bosses die automatically",
+          "address": "0x0607"
+        },
+        {
+          "code": "0499:FA",
+          "desc": "Invincible After 1st Hit",
+          "address": "0x0499"
+        },
+        {
+          "code": "03B0:FA",
+          "desc": "Enable All Switches In Stage 3",
+          "address": "0x03B0"
+        },
+        {
+          "code": "05EA:00",
+          "desc": "Stage Select",
+          "address": "0x05EA"
+        },
+        {
+          "code": "SXOEKUVK",
+          "desc": "Invincibility Once Hit",
+          "address": "0x03AC"
+        },
+        {
+          "code": "EIXOXGEY",
+          "desc": "Invincibility",
+          "address": "0x04DA"
+        },
+        {
+          "code": "05ED:03",
+          "desc": "Infinite Lives",
+          "address": "0x05ED"
+        },
+        {
+          "code": "05F0:05",
+          "desc": "Infinite Health",
+          "address": "0x05F0"
+        },
+        {
+          "code": "05EC:05",
+          "desc": "Set 5 Health Hearts",
+          "address": "0x05EC"
+        },
+        {
+          "code": "05EB:00",
+          "desc": "Set Abilities Modifier",
+          "address": "0x05EB"
+        },
+        {
+          "code": "03AE:50",
+          "desc": "Infinite Time To Escape In Stage 7",
+          "address": "0x03AE"
+        },
+        {
+          "code": "0607:00",
+          "desc": "All Bosses Defeated Instantly",
+          "address": "0x0607"
+        },
+        {
+          "code": "049F:00",
+          "desc": "Infinite Double Jump",
+          "address": "0x049F"
+        },
+        {
+          "code": "AVSOGTTA",
+          "desc": "Jump in Midair",
+          "address": "0x06EC"
+        },
+        {
+          "code": "NOSOIVEP",
+          "desc": "Jump in Midair",
+          "address": "0x069D"
+        },
+        {
+          "code": "SZNOLNSE",
+          "desc": "Jump in Midair",
+          "address": "0x07AB"
+        },
+        {
+          "code": "GESPTVGP",
+          "desc": "Jump in Midair",
+          "address": "0x060E"
+        },
+        {
+          "code": "AAUPULZA",
+          "desc": "Skip Intro Screens",
+          "address": "0x030B"
+        },
+        {
+          "code": "AEXOTVYZ",
+          "desc": "Skip Intro Screens",
+          "address": "0x068E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

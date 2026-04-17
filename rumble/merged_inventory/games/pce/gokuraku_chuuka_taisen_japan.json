@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "gokurakuchuukataisen",
+  "display_name": "Gokuraku! Chuuka Taisen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Gokuraku! Chuuka Taisen (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f0e0c:09",
+          "desc": "Infinite Lives",
+          "address": "0x1F0E0C"
+        },
+        {
+          "code": "1f0e0d:09",
+          "desc": "Infinite Credits",
+          "address": "0x1F0E0D"
+        },
+        {
+          "code": "1f0e03:04",
+          "desc": "Increased Speed",
+          "address": "0x1F0E03"
+        },
+        {
+          "code": "1f0210:01",
+          "desc": "Invincibility",
+          "address": "0x1F0210"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

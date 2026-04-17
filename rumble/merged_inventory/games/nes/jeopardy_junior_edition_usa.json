@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "jeopardyjunioredition",
+  "display_name": "Jeopardy! Junior Edition (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Jeopardy! Junior Edition (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "05A2:00",
+          "desc": "P1 Character Modifier",
+          "address": "0x05A2"
+        },
+        {
+          "code": "05F3:00",
+          "desc": "P1 Colour Modifier",
+          "address": "0x05F3"
+        },
+        {
+          "code": "0079:09",
+          "desc": "Infinite Time To Consider Question/Answer Question",
+          "address": "0x0079"
+        },
+        {
+          "code": "001F:63",
+          "desc": "P1 Is Loaded With $$$$",
+          "address": "0x001F"
+        },
+        {
+          "code": "001C:63",
+          "desc": "P1 Is Loaded With $$$$",
+          "address": "0x001C"
+        },
+        {
+          "code": "0020:99",
+          "desc": "P2 Goes Heavily Into The Negatives of $$$",
+          "address": "0x0020"
+        },
+        {
+          "code": "0021:99",
+          "desc": "P2 Goes Heavily Into The Negatives of $$$",
+          "address": "0x0021"
+        },
+        {
+          "code": "0022:99",
+          "desc": "P2 Goes Heavily Into The Negatives of $$$",
+          "address": "0x0022"
+        },
+        {
+          "code": "0025:99",
+          "desc": "P3 Goes Heavily Into The Negatives of $$$",
+          "address": "0x0025"
+        },
+        {
+          "code": "0024:99",
+          "desc": "P3 Goes Heavily Into The Negatives of $$$",
+          "address": "0x0024"
+        },
+        {
+          "code": "0023:99",
+          "desc": "P3 Goes Heavily Into The Negatives of $$$",
+          "address": "0x0023"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

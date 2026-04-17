@@ -1,0 +1,6 @@
+game_name=Sega Sports 1 (Europe)
+game_key=sega_sports_1_europe
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff0c60	score	0xFF0C60	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff10ea	score	0xFF10EA	1	uint	little	prev < curr	0.8	1	right:0.350:60

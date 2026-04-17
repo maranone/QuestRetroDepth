@@ -1,0 +1,92 @@
+{
+  "system": "nes",
+  "normalized_title": "crashnboysstreetchallenge",
+  "display_name": "Crash 'n' the Boys - Street Challenge (USA) (Game Genie)",
+  "aliases": [
+    "Crash 'n' the Boys - Street Challenge (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Crash 'n' the Boys - Street Challenge (USA).cht",
+      "total_cheat_rows": 28,
+      "raw_entry_count": 14,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "OZOATYSX",
+          "desc": "Buy something to set Gold Coins to 27",
+          "address": "0x072E"
+        },
+        {
+          "code": "OZOATYSX",
+          "desc": "Buy something to set Gold Coins to 99",
+          "address": "0x072E"
+        },
+        {
+          "code": "OPOAYYYX",
+          "desc": "Buy something to set Gold Coins to 99",
+          "address": "0x071F"
+        },
+        {
+          "code": "0331:63",
+          "desc": "Infinite Gold Coins (Ignore The Numbers)",
+          "address": "0x0331"
+        },
+        {
+          "code": "0332:63",
+          "desc": "Infinite Silver Coins (Ignore The Numbers)",
+          "address": "0x0332"
+        },
+        {
+          "code": "0333:63",
+          "desc": "Infinite Bronze Coins (Ignore The Numbers)",
+          "address": "0x0333"
+        },
+        {
+          "code": "0359:FF",
+          "desc": "Infinite Health P1 (400 Meter Hurdles/Swimming)",
+          "address": "0x0359"
+        },
+        {
+          "code": "035A:00",
+          "desc": "No Health P2/CPU (400 Meter Hurdles/Swimming)",
+          "address": "0x035A"
+        },
+        {
+          "code": "062B:00",
+          "desc": "Low Time",
+          "address": "0x062B"
+        },
+        {
+          "code": "0666:FF",
+          "desc": "Characters Have Maximum Power Or PP (In Hammer Throw Or Fighting Scene Respectively)",
+          "address": "0x0666"
+        },
+        {
+          "code": "0667:00",
+          "desc": "P2 Has No PP (In Fighting Scene)",
+          "address": "0x0667"
+        },
+        {
+          "code": "0670:FF",
+          "desc": "P1 Has Infinite Oxygen (Swimming)",
+          "address": "0x0670"
+        },
+        {
+          "code": "0671:00",
+          "desc": "P2 Has No Oxygen (Swimming)",
+          "address": "0x0671"
+        },
+        {
+          "code": "SLNEYUVV",
+          "desc": "Player 1 - Building Miss Count Never Increases",
+          "address": "0x03BF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

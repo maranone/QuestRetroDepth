@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "banditkingsofancientchina",
+  "display_name": "Bandit Kings of Ancient China (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bandit Kings of Ancient China (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "6052:FF",
+          "desc": "255 Men",
+          "address": "0x6052"
+        },
+        {
+          "code": "6053:FF",
+          "desc": "255 Men",
+          "address": "0x6053"
+        },
+        {
+          "code": "6054:FF",
+          "desc": "255 Strength",
+          "address": "0x6054"
+        },
+        {
+          "code": "6055:FF",
+          "desc": "255 Dexterity",
+          "address": "0x6055"
+        },
+        {
+          "code": "6056:FF",
+          "desc": "255 Wisdom",
+          "address": "0x6056"
+        },
+        {
+          "code": "605B:27",
+          "desc": "9999 Popularity",
+          "address": "0x605B"
+        },
+        {
+          "code": "605C:0F",
+          "desc": "9999 Popularity",
+          "address": "0x605C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "system": "nes",
+  "normalized_title": "hydlide",
+  "display_name": "Hydlide (USA) (Game Genie)",
+  "aliases": [
+    "Hydlide (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hydlide (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 22,
+      "distinct_address_count": 22,
+      "sample_raw_entries": [
+        {
+          "code": "YYKAAVZA",
+          "desc": "Start With Full Life, Strength And Magic",
+          "address": "0x0678"
+        },
+        {
+          "code": "EPPOZX",
+          "desc": "Play As Hydlide's Head",
+          "address": "0x0292"
+        },
+        {
+          "code": "PIIOZT",
+          "desc": "Different Colors",
+          "address": "0x06D2"
+        },
+        {
+          "code": "0038:64",
+          "desc": "Max Health",
+          "address": "0x0038"
+        },
+        {
+          "code": "0039:64",
+          "desc": "Max STR",
+          "address": "0x0039"
+        },
+        {
+          "code": "003A:64",
+          "desc": "Max Experience",
+          "address": "0x003A"
+        },
+        {
+          "code": "003B:64",
+          "desc": "Max Magic",
+          "address": "0x003B"
+        },
+        {
+          "code": "0059:FF",
+          "desc": "Start With Sword",
+          "address": "0x0059"
+        },
+        {
+          "code": "005A:FF",
+          "desc": "Start With Shield",
+          "address": "0x005A"
+        },
+        {
+          "code": "005B:FF",
+          "desc": "Start With Lamp",
+          "address": "0x005B"
+        },
+        {
+          "code": "005C:FF",
+          "desc": "Start With Cross",
+          "address": "0x005C"
+        },
+        {
+          "code": "005D:FF",
+          "desc": "Start With Pot",
+          "address": "0x005D"
+        },
+        {
+          "code": "005E:FF",
+          "desc": "Start With Medicine",
+          "address": "0x005E"
+        },
+        {
+          "code": "005F:FF",
+          "desc": "Start With Key",
+          "address": "0x005F"
+        },
+        {
+          "code": "0060:FF",
+          "desc": "Start With Ruby",
+          "address": "0x0060"
+        },
+        {
+          "code": "0061:FF",
+          "desc": "Start With Ring",
+          "address": "0x0061"
+        },
+        {
+          "code": "0062:FF",
+          "desc": "Start With Jewel",
+          "address": "0x0062"
+        },
+        {
+          "code": "AZKAAVZE",
+          "desc": "Boost strength, life, magic",
+          "address": "0x0628"
+        },
+        {
+          "code": "GTKAAVZA",
+          "desc": "Super boost strength, life, magic",
+          "address": "0x0668"
+        },
+        {
+          "code": "AEUEKVIA",
+          "desc": "Rapid healing",
+          "address": "0x068C"
+        },
+        {
+          "code": "AANOVZZA",
+          "desc": "Rapid magic healing",
+          "address": "0x028E"
+        },
+        {
+          "code": "GTGAAT",
+          "desc": "Start With Max Life, STR And Magic",
+          "address": "0x0660"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

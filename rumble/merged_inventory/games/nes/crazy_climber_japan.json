@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "crazyclimber",
+  "display_name": "Crazy Climber (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Crazy Climber (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0701:02",
+          "desc": "Infinite Lives",
+          "address": "0x0701"
+        },
+        {
+          "code": "0706:34",
+          "desc": "Invincible",
+          "address": "0x0706"
+        },
+        {
+          "code": "0739:09",
+          "desc": "Infinite Time",
+          "address": "0x0739"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

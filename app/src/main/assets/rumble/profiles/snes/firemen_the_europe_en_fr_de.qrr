@@ -1,0 +1,6 @@
+game_name=Firemen, The (Europe) (En,Fr,De)
+game_key=firemen_the_europe_en_fr_de
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_15c3	damage_taken	0x7E15C3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_15c3	death	0x7E15C3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

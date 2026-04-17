@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "rocketpowerdreamscheme",
+  "display_name": "Rocket Power - Dream Scheme (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Rocket Power - Dream Scheme (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10022CC0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02022CC0"
+        },
+        {
+          "code": "3200AE6F",
+          "desc": "Pickup 1 Star For Max Stars",
+          "address": "0x0200AE6F"
+        },
+        {
+          "code": "8200AF58",
+          "desc": "Infinite Zzz's",
+          "address": "0x0200AF58"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Rocket Power - Dream Scheme (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10022CC0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02022CC0"
+        },
+        {
+          "code": "3200AE6F",
+          "desc": "Pickup 1 Star For Max Stars",
+          "address": "0x0200AE6F"
+        },
+        {
+          "code": "8200AF58",
+          "desc": "Infinite Zzz's",
+          "address": "0x0200AF58"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

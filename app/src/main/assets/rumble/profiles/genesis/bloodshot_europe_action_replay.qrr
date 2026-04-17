@@ -1,0 +1,17 @@
+game_name=Bloodshot (Europe) (Action Replay)
+game_key=bloodshot_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff81c8	damage_taken	0xFF81C8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff81c8	death	0xFF81C8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ff81c2	life_lost	0xFF81C2	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff81c2	life_gained	0xFF81C2	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_ff812e	pickup	0xFF812E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff8136	pickup	0xFF8136	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff813e	pickup	0xFF813E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff8146	pickup	0xFF8146	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff814e	pickup	0xFF814E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff8156	pickup	0xFF8156	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff815e	pickup	0xFF815E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff8166	pickup	0xFF8166	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff816e	pickup	0xFF816E	1	uint	little	prev != curr	0.8	1	right:0.250:18

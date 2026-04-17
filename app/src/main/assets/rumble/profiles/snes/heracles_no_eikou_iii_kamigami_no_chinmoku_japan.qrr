@@ -1,0 +1,20 @@
+game_name=Heracles no Eikou III - Kamigami no Chinmoku (Japan)
+game_key=heracles_no_eikou_iii_kamigami_no_chinmoku_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_0852	damage_taken	0x7E0852	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0852	death	0x7E0852	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0853	damage_taken	0x7E0853	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0853	death	0x7E0853	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_08a2	damage_taken	0x7E08A2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_08a2	death	0x7E08A2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_08a3	damage_taken	0x7E08A3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_08a3	death	0x7E08A3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0862	damage_taken	0x7E0862	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0862	death	0x7E0862	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0863	damage_taken	0x7E0863	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0863	death	0x7E0863	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_08b2	damage_taken	0x7E08B2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_08b2	death	0x7E08B2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_08b3	damage_taken	0x7E08B3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_08b3	death	0x7E08B3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

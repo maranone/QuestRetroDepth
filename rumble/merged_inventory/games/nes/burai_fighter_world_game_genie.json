@@ -1,0 +1,54 @@
+{
+  "system": "nes",
+  "normalized_title": "buraifighter",
+  "display_name": "Burai Fighter (World) (Game Genie)",
+  "aliases": [
+    "Burai Fighter (USA)",
+    "Burai Fighter (World) (Game Genie)",
+    "Burai_Fighter (Rumbles)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\buraifighter_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x072F",
+        "0x0732"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BuraiFighter-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x072F",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0732",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Burai_Fighter (Rumbles).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,13 @@
+game_name=Thunder _ Lightning (USA) (Game Genie)
+game_key=thunder_lightning_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_0359	life_lost	0x0359	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0359	life_gained	0x0359	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_005e	life_lost	0x005E	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_005e	life_gained	0x005E	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_005f	life_lost	0x005F	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_005f	life_gained	0x005F	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_00ba	level_complete	0x00BA	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_013f	enemy_defeated	0x013F	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	level_complete_level_077d	level_complete	0x077D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

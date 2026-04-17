@@ -1,0 +1,5 @@
+game_name=Penguin-kun Wars (Japan)
+game_key=PenguinKunWars-Nes
+system=nes
+integration_tier=stable
+trigger	score_score_0530	score	0x0530	4	bcd	big	prev < curr	0.8	1	right:0.350:60

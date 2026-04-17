@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "ganbarepennantrace",
+  "display_name": "Ganbare Pennant Race! (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ganbare Pennant Race! (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "057C:00",
+          "desc": "1st Player Score Modifier",
+          "address": "0x057C"
+        },
+        {
+          "code": "057D:00",
+          "desc": "2nd Player Score Modifier",
+          "address": "0x057D"
+        },
+        {
+          "code": "0120:FF",
+          "desc": "Max Ability Points (Pennant Race Mode)",
+          "address": "0x0120"
+        },
+        {
+          "code": "0071:00",
+          "desc": "Inning Modifier",
+          "address": "0x0071"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

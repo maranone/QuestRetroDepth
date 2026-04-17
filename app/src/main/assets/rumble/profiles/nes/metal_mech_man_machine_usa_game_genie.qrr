@@ -1,0 +1,13 @@
+game_name=Metal Mech - Man _ Machine (USA) (Game Genie)
+game_key=metal_mech_man_machine_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_05dd	damage_taken	0x05DD	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05dd	death	0x05DD	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_072f	damage_taken	0x072F	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_072f	death	0x072F	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_00a8	damage_taken	0x00A8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00a8	death	0x00A8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_05c0	damage_taken	0x05C0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05c0	death	0x05C0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_00f8	level_complete	0x00F8	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

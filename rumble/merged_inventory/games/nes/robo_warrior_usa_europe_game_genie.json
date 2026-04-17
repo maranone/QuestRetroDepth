@@ -1,0 +1,58 @@
+{
+  "system": "nes",
+  "normalized_title": "robowarrior",
+  "display_name": "Robo Warrior (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Robo Warrior (USA)",
+    "Robo Warrior (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\robowarrior_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0045",
+        "0x01C7"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\RoboWarrior-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "energy",
+          "address": "0x01C6",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0x01C7",
+          "type": "|n1"
+        },
+        {
+          "name": "score",
+          "address": "0x0045",
+          "type": ">n5"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Robo Warrior (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

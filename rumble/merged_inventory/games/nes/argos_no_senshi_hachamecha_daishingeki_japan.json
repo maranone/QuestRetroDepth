@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "argosnosenshihachamechadaishingeki",
+  "display_name": "Argos no Senshi - Hachamecha Daishingeki (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Argos no Senshi - Hachamecha Daishingeki (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "00CB:06",
+          "desc": "Infinite Energy",
+          "address": "0x00CB"
+        },
+        {
+          "code": "0532:31",
+          "desc": "Untouchable",
+          "address": "0x0532"
+        },
+        {
+          "code": "00C3:08",
+          "desc": "Infinite Mind",
+          "address": "0x00C3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "doubledare",
+  "display_name": "Double Dare (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Double Dare (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "SXXANUVK",
+          "desc": "Infinite Time To Answer Questions",
+          "address": "0x032F"
+        },
+        {
+          "code": "0606:00",
+          "desc": "Team 1 Money Modifier",
+          "address": "0x0606"
+        },
+        {
+          "code": "0607:00",
+          "desc": "Team 2 Money Modifier",
+          "address": "0x0607"
+        },
+        {
+          "code": "05F2:00",
+          "desc": "Fake? Team 2 Money Modifier (See Note)",
+          "address": "0x05F2"
+        },
+        {
+          "code": "05F5:00",
+          "desc": "Fake? Team 2 Money Modifier (See Above Note)",
+          "address": "0x05F5"
+        },
+        {
+          "code": "0568:0F",
+          "desc": "Infinite Time To Answer Question",
+          "address": "0x0568"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "system": "gb",
+  "normalized_title": "mortalkombat3",
+  "display_name": "Mortal Kombat 3 (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Mortal Kombat 3 (USA, Europe) (Game Genie)",
+    "Mortal Kombat 3 (USA, Europe) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Mortal Kombat 3 (USA, Europe) (GameShark).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0109DFC0",
+          "desc": "Infinite Time",
+          "address": "0xDFC0"
+        },
+        {
+          "code": "0103DBD4",
+          "desc": "P1 Infinite Lives",
+          "address": "0xDBD4"
+        },
+        {
+          "code": "0109CED4",
+          "desc": "Player 1 Is Shao Khan",
+          "address": "0xCED4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

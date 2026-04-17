@@ -1,0 +1,45 @@
+{
+  "system": "pce",
+  "normalized_title": "necrosnoyousai",
+  "display_name": "Necros no Yousai (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Necros no Yousai (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1f0314:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F0314"
+        },
+        {
+          "code": "1f0315:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F0315"
+        },
+        {
+          "code": "1f028c:ff",
+          "desc": "Stats Current HP",
+          "address": "0x1F028C"
+        },
+        {
+          "code": "1f0292:ff",
+          "desc": "Stats Max HP",
+          "address": "0x1F0292"
+        },
+        {
+          "code": "1f02f0:ff",
+          "desc": "Stats MP",
+          "address": "0x1F02F0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

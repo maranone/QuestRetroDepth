@@ -1,0 +1,58 @@
+{
+  "system": "nes",
+  "normalized_title": "gijoearealamericanhero",
+  "display_name": "GIJoeARealAmericanHero",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\gijoearealamericanhero_nes.json",
+      "trigger_count": 2,
+      "field_names": [
+        "gameover",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0420",
+        "0x0724"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GIJoeARealAmericanHero-Nes-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0x0420",
+          "type": "|u1"
+        },
+        {
+          "name": "health1",
+          "address": "0x0649",
+          "type": "|u1"
+        },
+        {
+          "name": "health2",
+          "address": "0x064B",
+          "type": "|u1"
+        },
+        {
+          "name": "health3",
+          "address": "0x064D",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0724",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 5
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

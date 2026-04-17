@@ -1,0 +1,108 @@
+{
+  "system": "nes",
+  "normalized_title": "tetsuwanatom",
+  "display_name": "Tetsuwan Atom (Japan)",
+  "aliases": [
+    "Tetsuwan Atom (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\tetsuwanatom_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0078",
+        "0x0081"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TetsuwanAtom-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0081",
+          "type": "<n4"
+        },
+        {
+          "name": "score",
+          "address": "0x0078",
+          "type": "<u3"
+        },
+        {
+          "name": "time",
+          "address": "0x0096",
+          "type": "<n4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tetsuwan Atom (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "07D0:00",
+          "desc": "Invincibility",
+          "address": "0x07D0"
+        },
+        {
+          "code": "07EE:09",
+          "desc": "Infinite Flight Meter",
+          "address": "0x07EE"
+        },
+        {
+          "code": "0096:05",
+          "desc": "Infinite Time",
+          "address": "0x0096"
+        },
+        {
+          "code": "0094:FF",
+          "desc": "Unlimited Coins",
+          "address": "0x0094"
+        },
+        {
+          "code": "005D:00",
+          "desc": "Level Modifier",
+          "address": "0x005D"
+        },
+        {
+          "code": "0685:03",
+          "desc": "Initiate Jet Pack",
+          "address": "0x0685"
+        },
+        {
+          "code": "068B:00",
+          "desc": "Speed Modifier",
+          "address": "0x068B"
+        },
+        {
+          "code": "0693:19",
+          "desc": "Jump Height Modifier",
+          "address": "0x0693"
+        },
+        {
+          "code": "074A:10",
+          "desc": "Levitate Jump / Walk Through Walls",
+          "address": "0x074A"
+        },
+        {
+          "code": "07EC:01",
+          "desc": "Walk Through Enemies",
+          "address": "0x07EC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

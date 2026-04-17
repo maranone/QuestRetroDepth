@@ -1,0 +1,6 @@
+game_name=FIFA 98 - Road to World Cup (Europe) (En,Fr,Es,It,Sv)
+game_key=fifa_98_road_to_world_cup_europe_en_fr_es_it_sv
+system=genesis
+integration_tier=contrib
+trigger	score_score_fff89a	score	0xFFF89A	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_fff89c	score	0xFFF89C	1	uint	little	prev < curr	0.8	1	right:0.350:60

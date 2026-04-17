@@ -1,0 +1,85 @@
+{
+  "system": "nes",
+  "normalized_title": "perman",
+  "display_name": "Perman (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Perman (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "03BB:0C",
+          "desc": "Infinite Energy",
+          "address": "0x03BB"
+        },
+        {
+          "code": "03A2:06",
+          "desc": "Infinite Energy: Against The Boss",
+          "address": "0x03A2"
+        },
+        {
+          "code": "0729:00",
+          "desc": "One Hit Kill The Boss",
+          "address": "0x0729"
+        },
+        {
+          "code": "03DE:01",
+          "desc": "Invincibility",
+          "address": "0x03DE"
+        },
+        {
+          "code": "03CD:03",
+          "desc": "Max Pow",
+          "address": "0x03CD"
+        },
+        {
+          "code": "04C2:0C",
+          "desc": "Max Pow",
+          "address": "0x04C2"
+        },
+        {
+          "code": "009B:00",
+          "desc": "Walk Through Walls",
+          "address": "0x009B"
+        },
+        {
+          "code": "00EC:00",
+          "desc": "Stage Modifier",
+          "address": "0x00EC"
+        },
+        {
+          "code": "01A9:03",
+          "desc": "Infinite Lives",
+          "address": "0x01A9"
+        },
+        {
+          "code": "03A8:40",
+          "desc": "Jump Midair",
+          "address": "0x03A8"
+        },
+        {
+          "code": "03BC:04",
+          "desc": "Have 4 Ps",
+          "address": "0x03BC"
+        },
+        {
+          "code": "03CE:00",
+          "desc": "Shot Modifier",
+          "address": "0x03CE"
+        },
+        {
+          "code": "065C:05",
+          "desc": "Super Jump",
+          "address": "0x065C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

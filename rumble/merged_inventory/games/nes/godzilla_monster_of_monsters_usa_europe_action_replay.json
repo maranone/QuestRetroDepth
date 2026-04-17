@@ -1,0 +1,36 @@
+{
+  "system": "nes",
+  "normalized_title": "godzillamonsterofmonsters",
+  "display_name": "Godzilla - Monster of Monsters! (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Godzilla - Monster of Monsters! (USA, Europe) (Action Replay)",
+    "Godzilla - Monster of Monsters! (USA, Europe) (Game Genie)",
+    "Godzilla - Monster of Monsters! (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Godzilla - Monster of Monsters! (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "AEZAEZ",
+          "desc": "Godzilla's Electric Blasts Are Useless",
+          "address": "0x0200"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Godzilla - Monster of Monsters! (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

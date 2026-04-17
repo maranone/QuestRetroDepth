@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "jleaguegreatesteleven",
+  "display_name": "J.League Greatest Eleven (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\J.League Greatest Eleven (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f1016:05",
+          "desc": "Infinite Time",
+          "address": "0x1F1016"
+        },
+        {
+          "code": "1f0f56:00",
+          "desc": "CPU/P2 Never Scores",
+          "address": "0x1F0F56"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

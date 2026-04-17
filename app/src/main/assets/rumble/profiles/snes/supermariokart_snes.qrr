@@ -1,6 +1,0 @@
-game_name=SuperMarioKart
-game_key=SuperMarioKart-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_1_e00	damage_taken	0x7E0E00	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	damage_taken_6_e02	damage_taken	0x7E0E02	1	uint	native	prev > curr	0.85	1	right:0.750:180

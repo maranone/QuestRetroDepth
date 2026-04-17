@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "simcity2000",
+  "display_name": "SimCity 2000 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\SimCity 2000 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "74000130",
+          "desc": "Hold R Trigger To Increase Money",
+          "address": "0x02000130"
+        },
+        {
+          "code": "E3002ABC",
+          "desc": "Hold R Trigger To Increase Money",
+          "address": "0x02002ABC"
+        },
+        {
+          "code": "83002ABC",
+          "desc": "Always Have Max Money (Only Use 1 Money Code At A Time)",
+          "address": "0x02002ABC"
+        },
+        {
+          "code": "33000598",
+          "desc": "Have All Monuments",
+          "address": "0x02000598"
+        },
+        {
+          "code": "33000580",
+          "desc": "Have All Power Plants",
+          "address": "0x02000580"
+        },
+        {
+          "code": "33000582",
+          "desc": "Have All Power Plants",
+          "address": "0x02000582"
+        },
+        {
+          "code": "33000588",
+          "desc": "Have All Road Types",
+          "address": "0x02000588"
+        },
+        {
+          "code": "33000596",
+          "desc": "Have All Ports",
+          "address": "0x02000596"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\SimCity 2000 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "74000130",
+          "desc": "Hold R Trigger To Increase Money",
+          "address": "0x02000130"
+        },
+        {
+          "code": "E3002ABC",
+          "desc": "Hold R Trigger To Increase Money",
+          "address": "0x02002ABC"
+        },
+        {
+          "code": "83002ABC",
+          "desc": "Always Have Max Money (Only Use 1 Money Code At A Time)",
+          "address": "0x02002ABC"
+        },
+        {
+          "code": "33000598",
+          "desc": "Have All Monuments",
+          "address": "0x02000598"
+        },
+        {
+          "code": "33000580",
+          "desc": "Have All Power Plants",
+          "address": "0x02000580"
+        },
+        {
+          "code": "33000582",
+          "desc": "Have All Power Plants",
+          "address": "0x02000582"
+        },
+        {
+          "code": "33000588",
+          "desc": "Have All Road Types",
+          "address": "0x02000588"
+        },
+        {
+          "code": "33000596",
+          "desc": "Have All Ports",
+          "address": "0x02000596"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

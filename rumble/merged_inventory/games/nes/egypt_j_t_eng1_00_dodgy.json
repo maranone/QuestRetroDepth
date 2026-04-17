@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "egyptteng100dodgy",
+  "display_name": "Egypt (J) [T+Eng1.00_Dodgy]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Egypt (J) [T+Eng1.00_Dodgy].cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "00E3:00",
+          "desc": "Zero Step Taken",
+          "address": "0x00E3"
+        },
+        {
+          "code": "00E5:00",
+          "desc": "Zero Rotates",
+          "address": "0x00E5"
+        },
+        {
+          "code": "00F2:98",
+          "desc": "Infinite Lightning Bolt",
+          "address": "0x00F2"
+        },
+        {
+          "code": "00F3:94",
+          "desc": "Infinite Feather",
+          "address": "0x00F3"
+        },
+        {
+          "code": "00F4:90",
+          "desc": "Infinite Star",
+          "address": "0x00F4"
+        },
+        {
+          "code": "00EF:01",
+          "desc": "Level Exit Active",
+          "address": "0x00EF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

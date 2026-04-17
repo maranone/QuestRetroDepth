@@ -2,11 +2,11 @@
 # game_name=Tick
 # match_names=tick|ticksnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-damage_taken_health_1ae7,0x7E1AE7,1,uint,prev_gt_curr,,left,0.850,normal,0,90,100,70,
-death_health_1ae7,0x7E1AE7,1,uint,became_zero,,both,1.000,normal,0,600,400,90,
-life_lost_lives_1b77,0x7E1B77,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
-life_gained_lives_1b77,0x7E1B77,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,
-score_score0_1b67,0x7E1B67,1,nibble,prev_lt_curr,,right,0.350,normal,0,60,50,10,
-score_score1_1b69,0x7E1B69,1,nibble,prev_lt_curr,,right,0.350,normal,0,60,50,10,
-score_score2_1b6b,0x7E1B6B,1,nibble,prev_lt_curr,,right,0.350,normal,0,60,50,10,
-score_score3_1b6d,0x7E1B6D,1,nibble,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+damage_taken_health_1ae7,0x7E1AE7,1,uint,prev_gt_curr,,left,0.850,fade_out,0,110,80,70,
+death_health_1ae7,0x7E1AE7,1,uint,became_zero,,both,1.000,heartbeat,0,600,400,90,
+life_lost_lives_1b77,0x7E1B77,1,uint,prev_gt_curr,,both,0.92,fade_in_out,0,300,250,80,
+life_gained_lives_1b77,0x7E1B77,1,uint,prev_lt_curr,,both,0.750,fade_in,0,180,200,50,
+score_score0_1b67,0x7E1B67,1,nibble,prev_lt_curr,,right,0.350,burst,0,70,15,10,
+score_score1_1b69,0x7E1B69,1,nibble,prev_lt_curr,,right,0.350,burst,0,70,15,10,
+score_score2_1b6b,0x7E1B6B,1,nibble,prev_lt_curr,,right,0.350,burst,0,70,15,10,
+score_score3_1b6d,0x7E1B6D,1,nibble,prev_lt_curr,,right,0.350,burst,0,70,15,10,

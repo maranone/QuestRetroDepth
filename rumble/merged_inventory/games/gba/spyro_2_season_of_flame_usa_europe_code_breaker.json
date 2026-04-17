@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "spyro2seasonofflame",
+  "display_name": "Spyro 2 - Season of Flame (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Spyro 2 - Season of Flame (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "330043C4",
+          "desc": "Infinite Health",
+          "address": "0x020043C4"
+        },
+        {
+          "code": "33001C5E",
+          "desc": "Infinite Lives",
+          "address": "0x02001C5E"
+        },
+        {
+          "code": "83001C58",
+          "desc": "Have 8000 Gems",
+          "address": "0x02001C58"
+        },
+        {
+          "code": "83001C5A",
+          "desc": "8000/8000 Total Gems",
+          "address": "0x02001C5A"
+        },
+        {
+          "code": "83001618",
+          "desc": "Reset Timer",
+          "address": "0x02001618"
+        },
+        {
+          "code": "8300161A",
+          "desc": "Reset Timer",
+          "address": "0x0200161A"
+        },
+        {
+          "code": "83001C64",
+          "desc": "All Bosses Beaten",
+          "address": "0x02001C64"
+        },
+        {
+          "code": "7300443C",
+          "desc": "Infinite Health (Boss Fights)",
+          "address": "0x0200443C"
+        },
+        {
+          "code": "3300443C",
+          "desc": "Infinite Health (Boss Fights)",
+          "address": "0x0200443C"
+        },
+        {
+          "code": "33001CAC",
+          "desc": "Unlock Sparx Panic",
+          "address": "0x02001CAC"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Spyro 2 - Season of Flame (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "330043C4",
+          "desc": "Infinite Health",
+          "address": "0x020043C4"
+        },
+        {
+          "code": "33001C5E",
+          "desc": "Infinite Lives",
+          "address": "0x02001C5E"
+        },
+        {
+          "code": "83001C58",
+          "desc": "Have 8000 Gems",
+          "address": "0x02001C58"
+        },
+        {
+          "code": "83001C5A",
+          "desc": "8000/8000 Total Gems",
+          "address": "0x02001C5A"
+        },
+        {
+          "code": "83001618",
+          "desc": "Reset Timer",
+          "address": "0x02001618"
+        },
+        {
+          "code": "8300161A",
+          "desc": "Reset Timer",
+          "address": "0x0200161A"
+        },
+        {
+          "code": "83001C64",
+          "desc": "All Bosses Beaten",
+          "address": "0x02001C64"
+        },
+        {
+          "code": "7300443C",
+          "desc": "Infinite Health (Boss Fights)",
+          "address": "0x0200443C"
+        },
+        {
+          "code": "3300443C",
+          "desc": "Infinite Health (Boss Fights)",
+          "address": "0x0200443C"
+        },
+        {
+          "code": "33001CAC",
+          "desc": "Unlock Sparx Panic",
+          "address": "0x02001CAC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

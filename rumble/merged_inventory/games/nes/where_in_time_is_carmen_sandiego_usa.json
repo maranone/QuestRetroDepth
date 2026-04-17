@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "whereintimeiscarmensandiego",
+  "display_name": "Where in Time Is Carmen Sandiego (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Where in Time Is Carmen Sandiego (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0075:3F",
+          "desc": "Infinite Time",
+          "address": "0x0075"
+        },
+        {
+          "code": "0484:3F",
+          "desc": "Start With 99 Hours",
+          "address": "0x0484"
+        },
+        {
+          "code": "SZXOIYVG",
+          "desc": "Infinite Time",
+          "address": "0x07AD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

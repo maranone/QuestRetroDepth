@@ -1,0 +1,8 @@
+game_name=Scooby-Doo 2 - Monsters Unleashed (USA, Europe) (Code Breaker)
+game_key=scooby_doo_2_monsters_unleashed_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	level_complete_level_02000130	level_complete	0x02000130	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_020067e6	level_complete	0x020067E6	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_020068fc	level_complete	0x020068FC	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_020068fe	level_complete	0x020068FE	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

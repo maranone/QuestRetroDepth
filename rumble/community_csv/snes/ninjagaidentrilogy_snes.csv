@@ -2,6 +2,6 @@
 # game_name=NinjaGaidenTrilogy
 # match_names=ninjagaidentrilogy|ninjagaidentrilogysnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-damage_taken_0_65,0x7E0065,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
-damage_taken_1_a7,0x7E00A7,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
-damage_taken_2_80,0x7E0080,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
+damage_taken_0_65,0x7E0065,1,uint,prev_gt_curr,,left,0.78,fade_out,0,180,80,70,
+damage_taken_1_a7,0x7E00A7,1,uint,prev_gt_curr,,left,0.78,fade_out,0,180,80,70,
+damage_taken_2_80,0x7E0080,1,uint,prev_gt_curr,,left,0.78,fade_out,0,180,80,70,

@@ -1,0 +1,145 @@
+{
+  "system": "nes",
+  "normalized_title": "honoonotoukyuujidodgedanpei2",
+  "display_name": "Honoo no Toukyuuji - Dodge Danpei 2 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Honoo no Toukyuuji - Dodge Danpei 2 (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 54,
+      "distinct_address_count": 54,
+      "sample_raw_entries": [
+        {
+          "code": "0443:00",
+          "desc": "Team 1 Score Modifier",
+          "address": "0x0443"
+        },
+        {
+          "code": "0444:00",
+          "desc": "Team 2 Score Modifier",
+          "address": "0x0444"
+        },
+        {
+          "code": "0471:10",
+          "desc": "Max Cash",
+          "address": "0x0471"
+        },
+        {
+          "code": "6A42:00",
+          "desc": "Player 1 Energy Modifier",
+          "address": "0x6A42"
+        },
+        {
+          "code": "6A82:00",
+          "desc": "Player 2 Energy Modifier",
+          "address": "0x6A82"
+        },
+        {
+          "code": "6C10:FF",
+          "desc": "Infinite Hp",
+          "address": "0x6C10"
+        },
+        {
+          "code": "6C11:FF",
+          "desc": "Infinite Hp",
+          "address": "0x6C11"
+        },
+        {
+          "code": "6C12:FF",
+          "desc": "Infinite Hp",
+          "address": "0x6C12"
+        },
+        {
+          "code": "6C13:FF",
+          "desc": "Infinite Hp",
+          "address": "0x6C13"
+        },
+        {
+          "code": "6C14:FF",
+          "desc": "Infinite Hp",
+          "address": "0x6C14"
+        },
+        {
+          "code": "6C15:FF",
+          "desc": "Infinite Hp",
+          "address": "0x6C15"
+        },
+        {
+          "code": "6C16:FF",
+          "desc": "Infinite Hp",
+          "address": "0x6C16"
+        },
+        {
+          "code": "6C30:FF",
+          "desc": "Infinite Power",
+          "address": "0x6C30"
+        },
+        {
+          "code": "6C31:FF",
+          "desc": "Infinite Power",
+          "address": "0x6C31"
+        },
+        {
+          "code": "6C32:FF",
+          "desc": "Infinite Power",
+          "address": "0x6C32"
+        },
+        {
+          "code": "6C33:FF",
+          "desc": "Infinite Power",
+          "address": "0x6C33"
+        },
+        {
+          "code": "6C34:FF",
+          "desc": "Infinite Power",
+          "address": "0x6C34"
+        },
+        {
+          "code": "6C35:FF",
+          "desc": "Infinite Power",
+          "address": "0x6C35"
+        },
+        {
+          "code": "6C36:FF",
+          "desc": "Infinite Power",
+          "address": "0x6C36"
+        },
+        {
+          "code": "6C50:FF",
+          "desc": "Infinite Shot",
+          "address": "0x6C50"
+        },
+        {
+          "code": "6C51:FF",
+          "desc": "Infinite Shot",
+          "address": "0x6C51"
+        },
+        {
+          "code": "6C52:FF",
+          "desc": "Infinite Shot",
+          "address": "0x6C52"
+        },
+        {
+          "code": "6C53:FF",
+          "desc": "Infinite Shot",
+          "address": "0x6C53"
+        },
+        {
+          "code": "6C54:FF",
+          "desc": "Infinite Shot",
+          "address": "0x6C54"
+        },
+        {
+          "code": "6C55:FF",
+          "desc": "Infinite Shot",
+          "address": "0x6C55"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

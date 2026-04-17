@@ -1,0 +1,8 @@
+game_name=Pro Sport Hockey (USA) (Game Genie)
+game_key=pro_sport_hockey_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	score_score_016e	score	0x016E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_01e9	score	0x01E9	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04e6	score	0x04E6	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04e7	score	0x04E7	1	uint	little	prev < curr	0.8	1	right:0.350:60

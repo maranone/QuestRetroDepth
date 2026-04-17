@@ -1,0 +1,12 @@
+game_name=Shin Megami Tensei (Japan) (Action Replay)
+game_key=shin_megami_tensei_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_0405	pickup	0x7E0405	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0406	pickup	0x7E0406	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0407	pickup	0x7E0407	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_0588	damage_taken	0x7E0588	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0588	death	0x7E0588	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0589	damage_taken	0x7E0589	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0589	death	0x7E0589	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_100a	level_complete	0x7E100A	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

@@ -1,0 +1,77 @@
+{
+  "system": "nes",
+  "normalized_title": "nightmareonelmstreet",
+  "display_name": "Nightmare on Elm Street, A (USA) (Game Genie)",
+  "aliases": [
+    "Nightmare on Elm Street, A (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Nightmare on Elm Street, A (USA).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 11,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "06BA:52",
+          "desc": "Totally Invincible",
+          "address": "0x06BA"
+        },
+        {
+          "code": "SZUPPEVS",
+          "desc": "Infinite Zzz",
+          "address": "0x0029"
+        },
+        {
+          "code": "AAXOLAPA",
+          "desc": "Don't lose 'zzz' when standing still",
+          "address": "0x008B"
+        },
+        {
+          "code": "ZAXOLAPA",
+          "desc": "Lose 'zzz' quicker",
+          "address": "0x008B"
+        },
+        {
+          "code": "010A:00",
+          "desc": "Infinite Health",
+          "address": "0x010A"
+        },
+        {
+          "code": "06BE:07",
+          "desc": "Have All Characters",
+          "address": "0x06BE"
+        },
+        {
+          "code": "06C8:0A",
+          "desc": "Infinite Zzz's (Health)",
+          "address": "0x06C8"
+        },
+        {
+          "code": "06C8:0A",
+          "desc": "Infinite Zzz's",
+          "address": "0x06C8"
+        },
+        {
+          "code": "0139:09",
+          "desc": "Infinite Lives",
+          "address": "0x0139"
+        },
+        {
+          "code": "ASNEEPEY",
+          "desc": "Skip Intro Screens",
+          "address": "0x01D8"
+        },
+        {
+          "code": "OZOEVLES",
+          "desc": "Skip Intro Screens",
+          "address": "0x03AE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

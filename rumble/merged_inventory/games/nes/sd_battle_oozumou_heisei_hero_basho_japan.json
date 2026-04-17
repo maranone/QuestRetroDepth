@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "sdbattleoozumouheiseiherobasho",
+  "display_name": "SD Battle Oozumou - Heisei Hero Basho (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\SD Battle Oozumou - Heisei Hero Basho (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "03D0:00",
+          "desc": "P1 Health",
+          "address": "0x03D0"
+        },
+        {
+          "code": "03D4:00",
+          "desc": "P1 Power",
+          "address": "0x03D4"
+        },
+        {
+          "code": "03D1:00",
+          "desc": "P2 Health",
+          "address": "0x03D1"
+        },
+        {
+          "code": "03D5:00",
+          "desc": "P2 Power",
+          "address": "0x03D5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

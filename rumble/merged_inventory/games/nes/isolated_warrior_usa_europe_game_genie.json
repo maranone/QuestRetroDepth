@@ -1,0 +1,144 @@
+{
+  "system": "nes",
+  "normalized_title": "isolatedwarrior",
+  "display_name": "Isolated Warrior (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Isolated Warrior (USA)",
+    "Isolated Warrior (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\isolatedwarrior_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00D8",
+        "0x06B1"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\IsolatedWarrior-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x00D8",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x06B1",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Isolated Warrior (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 18,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "SZXOXSVK",
+          "desc": "Infinite Bombs",
+          "address": "0x05AA"
+        },
+        {
+          "code": "TEOAAYZA",
+          "desc": "More Energy Restored On Pick-Up",
+          "address": "0x0708"
+        },
+        {
+          "code": "PEOAAYZA",
+          "desc": "Less Energy Restored On Pick-Up",
+          "address": "0x0708"
+        },
+        {
+          "code": "PANEGAAA",
+          "desc": "Start On Scene 2",
+          "address": "0x008C"
+        },
+        {
+          "code": "VANEYESE",
+          "desc": "Start On Scene 2",
+          "address": "0x008F"
+        },
+        {
+          "code": "VEEAZESE",
+          "desc": "Start On Scene 2",
+          "address": "0x000A"
+        },
+        {
+          "code": "ZANEGAAA",
+          "desc": "Start On Scene 3",
+          "address": "0x008C"
+        },
+        {
+          "code": "VANEYESE",
+          "desc": "Start On Scene 3",
+          "address": "0x008F"
+        },
+        {
+          "code": "VEEAZESE",
+          "desc": "Start On Scene 3",
+          "address": "0x000A"
+        },
+        {
+          "code": "LANEGAAA",
+          "desc": "Start On Scene 4",
+          "address": "0x008C"
+        },
+        {
+          "code": "VANEYESE",
+          "desc": "Start On Scene 4",
+          "address": "0x008F"
+        },
+        {
+          "code": "VEEAZESE",
+          "desc": "Start On Scene 4",
+          "address": "0x000A"
+        },
+        {
+          "code": "GANEGAAA",
+          "desc": "Start On Scene 5",
+          "address": "0x008C"
+        },
+        {
+          "code": "VANEYESE",
+          "desc": "Start On Scene 5",
+          "address": "0x008F"
+        },
+        {
+          "code": "VEEAZESE",
+          "desc": "Start On Scene 5",
+          "address": "0x000A"
+        },
+        {
+          "code": "IANEGAAA",
+          "desc": "Start On Scene 6",
+          "address": "0x008C"
+        },
+        {
+          "code": "VANEYESE",
+          "desc": "Start On Scene 6",
+          "address": "0x008F"
+        },
+        {
+          "code": "VEEAZESE",
+          "desc": "Start On Scene 6",
+          "address": "0x000A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

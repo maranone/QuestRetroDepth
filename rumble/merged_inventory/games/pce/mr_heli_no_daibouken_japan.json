@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "mrhelinodaibouken",
+  "display_name": "Mr. Heli no Daibouken (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Mr. Heli no Daibouken (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f1004:0a",
+          "desc": "Infinite Energy",
+          "address": "0x1F1004"
+        },
+        {
+          "code": "1f1003:03",
+          "desc": "Infinite Lives",
+          "address": "0x1F1003"
+        },
+        {
+          "code": "1f04f4:43",
+          "desc": "Infinite Time",
+          "address": "0x1F04F4"
+        },
+        {
+          "code": "1f1005:06",
+          "desc": "Instantly Beat Current Stage",
+          "address": "0x1F1005"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

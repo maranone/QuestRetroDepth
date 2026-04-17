@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "kaizouchoujinshubibinman",
+  "display_name": "Kaizou Choujin Shubibinman (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Kaizou Choujin Shubibinman (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f1725:09",
+          "desc": "Infinite Gold",
+          "address": "0x1F1725"
+        },
+        {
+          "code": "1f1726:09",
+          "desc": "Infinite Gold",
+          "address": "0x1F1726"
+        },
+        {
+          "code": "1f1727:09",
+          "desc": "Infinite Gold",
+          "address": "0x1F1727"
+        },
+        {
+          "code": "1f0c40:00",
+          "desc": "Infinite Energy",
+          "address": "0x1F0C40"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

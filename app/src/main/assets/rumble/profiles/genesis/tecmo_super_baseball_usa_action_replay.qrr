@@ -1,0 +1,6 @@
+game_name=Tecmo Super Baseball (USA) (Action Replay)
+game_key=tecmo_super_baseball_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_fff062	score	0xFFF062	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffce46	score	0xFFCE46	1	uint	little	prev < curr	0.8	1	right:0.350:60

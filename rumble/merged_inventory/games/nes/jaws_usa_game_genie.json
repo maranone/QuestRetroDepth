@@ -1,0 +1,179 @@
+{
+  "system": "nes",
+  "normalized_title": "jaws",
+  "display_name": "Jaws (USA) (Game Genie)",
+  "aliases": [
+    "Jaws (USA) (Game Genie)",
+    "Jaws (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\jaws_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0380",
+        "0x0387"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Jaws-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0387",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0380",
+          "type": ">n7"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Jaws (USA).cht",
+      "total_cheat_rows": 38,
+      "raw_entry_count": 38,
+      "distinct_address_count": 36,
+      "sample_raw_entries": [
+        {
+          "code": "OZLOSS",
+          "desc": "No Fire Power",
+          "address": "0x05A5"
+        },
+        {
+          "code": "AVGANY",
+          "desc": "The Maximum Power Code! (Cannot Go Anywhere Though)",
+          "address": "0x0767"
+        },
+        {
+          "code": "EVGENY",
+          "desc": "Always Hit Something Immediately",
+          "address": "0x07E7"
+        },
+        {
+          "code": "ZZYANK",
+          "desc": "Never Hit Anything Except Jaws [May Freeze]",
+          "address": "0x0427"
+        },
+        {
+          "code": "ALLEYK",
+          "desc": "Never Fight Jaws",
+          "address": "0x04B7"
+        },
+        {
+          "code": "TTTANK",
+          "desc": "Bonus Points",
+          "address": "0x0467"
+        },
+        {
+          "code": "EEGOOO",
+          "desc": "Jaws Cannot Knock Character Off The Boat (Other Sea Creatures Can)",
+          "address": "0x0181"
+        },
+        {
+          "code": "SZSATSVK",
+          "desc": "Infinite lives",
+          "address": "0x052E"
+        },
+        {
+          "code": "SZVEYNSE",
+          "desc": "Infinite shells",
+          "address": "0x07AF"
+        },
+        {
+          "code": "PEOAGZLA",
+          "desc": "Start with 1 life",
+          "address": "0x020C"
+        },
+        {
+          "code": "TEOAGZLA",
+          "desc": "Start with double lives",
+          "address": "0x020C"
+        },
+        {
+          "code": "SZSELSTK",
+          "desc": "Don't lose shells on dying",
+          "address": "0x05AB"
+        },
+        {
+          "code": "SZSETSVK",
+          "desc": "Don't lose power on dying",
+          "address": "0x05AE"
+        },
+        {
+          "code": "YATPVP",
+          "desc": "Untouchable",
+          "address": "0x0106"
+        },
+        {
+          "code": "ZLPAIS",
+          "desc": "Exit Stage When Hit",
+          "address": "0x0535"
+        },
+        {
+          "code": "AAIOYY",
+          "desc": "Debug Mode/Enemy View",
+          "address": "0x0787"
+        },
+        {
+          "code": "APLOSP",
+          "desc": "Attack Jaws Without Firing",
+          "address": "0x0195"
+        },
+        {
+          "code": "SZVEASVK",
+          "desc": "Keep Speed (Crabs) after dying",
+          "address": "0x05A8"
+        },
+        {
+          "code": "AESEGZGP",
+          "desc": "no power for jaws",
+          "address": "0x028C"
+        },
+        {
+          "code": "AEKEPIGP",
+          "desc": "no power for jaws",
+          "address": "0x0589"
+        },
+        {
+          "code": "SZKEISSE",
+          "desc": "no power for jaws",
+          "address": "0x05AD"
+        },
+        {
+          "code": "ZLOAISIU",
+          "desc": "Exit water when you get hit without dying",
+          "address": "0x053D"
+        },
+        {
+          "code": "APUOSPEI",
+          "desc": "Attack Jaws without firing",
+          "address": "0x019D"
+        },
+        {
+          "code": "AAOOEPIP",
+          "desc": "Hit Anywhere",
+          "address": "0x0188"
+        },
+        {
+          "code": "AAOOEPIP",
+          "desc": "Continually Hit Anywhere",
+          "address": "0x0188"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

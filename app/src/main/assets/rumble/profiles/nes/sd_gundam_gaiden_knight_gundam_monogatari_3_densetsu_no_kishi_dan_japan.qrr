@@ -1,0 +1,18 @@
+game_name=SD Gundam Gaiden - Knight Gundam Monogatari 3 - Densetsu no Kishi Dan (Japan)
+game_key=sd_gundam_gaiden_knight_gundam_monogatari_3_densetsu_no_kishi_dan_japan
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_0351	pickup	0x0351	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0325	pickup	0x0325	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_0373	damage_taken	0x0373	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0373	death	0x0373	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0383	damage_taken	0x0383	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0383	death	0x0383	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0393	damage_taken	0x0393	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0393	death	0x0393	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_03a3	damage_taken	0x03A3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03a3	death	0x03A3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_03b3	damage_taken	0x03B3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03b3	death	0x03B3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_03c3	damage_taken	0x03C3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03c3	death	0x03C3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

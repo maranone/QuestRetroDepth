@@ -1,0 +1,10 @@
+game_name=WeaponLord (USA) (Action Replay)
+game_key=weaponlord_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff17fe	damage_taken	0xFF17FE	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff17fe	death	0xFF17FE	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff1802	damage_taken	0xFF1802	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff1802	death	0xFF1802	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff1800	damage_taken	0xFF1800	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff1800	death	0xFF1800	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

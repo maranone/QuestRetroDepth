@@ -1,0 +1,62 @@
+{
+  "system": "nes",
+  "normalized_title": "monopoly",
+  "display_name": "Monopoly (USA, France, Germany, Japan) (Game Genie)",
+  "aliases": [
+    "Monopoly (USA, France, Germany, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Monopoly (USA, France, Germany, Japan) (Game Genie).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 8,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "LOOAVKZP",
+          "desc": "Pay $30 For Luxury Tax",
+          "address": "0x041E"
+        },
+        {
+          "code": "IOOAVKZO",
+          "desc": "Pay $100 For Luxury Tax",
+          "address": "0x041E"
+        },
+        {
+          "code": "PUOAVKZP",
+          "desc": "Pay $200 For Luxury Tax",
+          "address": "0x043E"
+        },
+        {
+          "code": "AESAVGPL",
+          "desc": "Pay $0 For Income Tax",
+          "address": "0x040E"
+        },
+        {
+          "code": "LOSAVGPL",
+          "desc": "Pay $30 For Income Tax",
+          "address": "0x041E"
+        },
+        {
+          "code": "IOSAVGPU",
+          "desc": "Pay $100 For Income Tax",
+          "address": "0x041E"
+        },
+        {
+          "code": "YUSAVGPU",
+          "desc": "Pay $300 For Income Tax",
+          "address": "0x043E"
+        },
+        {
+          "code": "YAOAILLA",
+          "desc": "Go Back 7 Spaces Instead Of 3 On Chance",
+          "address": "0x030D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

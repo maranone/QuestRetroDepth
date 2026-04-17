@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "phantasystarcollection",
+  "display_name": "Phantasy Star Collection (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Phantasy Star Collection (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "82003FBC",
+          "desc": "Infinite Mesetas",
+          "address": "0x02003FBC"
+        },
+        {
+          "code": "82003FBE",
+          "desc": "Infinite Mesetas",
+          "address": "0x02003FBE"
+        },
+        {
+          "code": "32003FC0",
+          "desc": "No Random Battles",
+          "address": "0x02003FC0"
+        },
+        {
+          "code": "82002CFC",
+          "desc": "Max Party XP Gain",
+          "address": "0x02002CFC"
+        },
+        {
+          "code": "32002FD8",
+          "desc": "Access All Characters",
+          "address": "0x02002FD8"
+        },
+        {
+          "code": "72003D7E",
+          "desc": "Access All Characters",
+          "address": "0x02003D7E"
+        },
+        {
+          "code": "42003D7E",
+          "desc": "Access All Characters",
+          "address": "0x02003D7E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Phantasy Star Collection (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "82003FBC",
+          "desc": "Infinite Mesetas",
+          "address": "0x02003FBC"
+        },
+        {
+          "code": "82003FBE",
+          "desc": "Infinite Mesetas",
+          "address": "0x02003FBE"
+        },
+        {
+          "code": "32003FC0",
+          "desc": "No Random Battles",
+          "address": "0x02003FC0"
+        },
+        {
+          "code": "82002CFC",
+          "desc": "Max Party XP Gain",
+          "address": "0x02002CFC"
+        },
+        {
+          "code": "32002FD8",
+          "desc": "Access All Characters",
+          "address": "0x02002FD8"
+        },
+        {
+          "code": "72003D7E",
+          "desc": "Access All Characters",
+          "address": "0x02003D7E"
+        },
+        {
+          "code": "42003D7E",
+          "desc": "Access All Characters",
+          "address": "0x02003D7E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

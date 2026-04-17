@@ -1,0 +1,26 @@
+game_name=Destiny of an Emperor (USA) (Game Genie)
+game_key=destiny_of_an_emperor_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_00ec	damage_taken	0x00EC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00ec	death	0x00EC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_00f0	damage_taken	0x00F0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00f0	death	0x00F0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_00f4	damage_taken	0x00F4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00f4	death	0x00F4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_00f8	damage_taken	0x00F8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00f8	death	0x00F8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_00fc	damage_taken	0x00FC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00fc	death	0x00FC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_00d0	damage_taken	0x00D0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00d0	death	0x00D0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_00d4	damage_taken	0x00D4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00d4	death	0x00D4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_00d8	damage_taken	0x00D8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00d8	death	0x00D8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_00dc	damage_taken	0x00DC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00dc	death	0x00DC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_00e0	damage_taken	0x00E0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00e0	death	0x00E0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0076	pickup	0x0076	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_003b	pickup	0x003B	1	uint	little	prev != curr	0.8	1	right:0.250:18

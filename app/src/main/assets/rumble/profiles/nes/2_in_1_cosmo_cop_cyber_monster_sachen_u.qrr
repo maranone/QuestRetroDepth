@@ -1,0 +1,7 @@
+game_name=2-in-1 Cosmo Cop + Cyber Monster (Sachen) [U][!]
+game_key=2_in_1_cosmo_cop_cyber_monster_sachen_u
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_0334	life_lost	0x0334	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0334	life_gained	0x0334	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_0332	pickup	0x0332	1	uint	little	prev != curr	0.8	1	right:0.250:18

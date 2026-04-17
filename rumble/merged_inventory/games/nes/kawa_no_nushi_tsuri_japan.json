@@ -1,0 +1,115 @@
+{
+  "system": "nes",
+  "normalized_title": "kawanonushitsuri",
+  "display_name": "Kawa no Nushi Tsuri (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kawa no Nushi Tsuri (Japan).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 19,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "0755:00",
+          "desc": "No Random Battles",
+          "address": "0x0755"
+        },
+        {
+          "code": "0747:00",
+          "desc": "Quick Reel In",
+          "address": "0x0747"
+        },
+        {
+          "code": "009D:FF",
+          "desc": "Infinite Health",
+          "address": "0x009D"
+        },
+        {
+          "code": "009E:FF",
+          "desc": "Max Experience",
+          "address": "0x009E"
+        },
+        {
+          "code": "00C6:00",
+          "desc": "Instant Enemy Kill",
+          "address": "0x00C6"
+        },
+        {
+          "code": "00AB:09",
+          "desc": "Bug Lures",
+          "address": "0x00AB"
+        },
+        {
+          "code": "00AC:09",
+          "desc": "Fish Egg Lures",
+          "address": "0x00AC"
+        },
+        {
+          "code": "00AD:09",
+          "desc": "Red Bug Lures",
+          "address": "0x00AD"
+        },
+        {
+          "code": "00AE:09",
+          "desc": "Minnow Lures",
+          "address": "0x00AE"
+        },
+        {
+          "code": "00AF:09",
+          "desc": "Worm Lures",
+          "address": "0x00AF"
+        },
+        {
+          "code": "00B1:09",
+          "desc": "Fish Hooks",
+          "address": "0x00B1"
+        },
+        {
+          "code": "00B2:09",
+          "desc": "Fish Lines",
+          "address": "0x00B2"
+        },
+        {
+          "code": "07F7:09",
+          "desc": "Master Lines",
+          "address": "0x07F7"
+        },
+        {
+          "code": "0169:09",
+          "desc": "Master Bait",
+          "address": "0x0169"
+        },
+        {
+          "code": "00EE:09",
+          "desc": "00cm~10cm Fish",
+          "address": "0x00EE"
+        },
+        {
+          "code": "00EF:09",
+          "desc": "11cm~20cm Fish",
+          "address": "0x00EF"
+        },
+        {
+          "code": "00F0:09",
+          "desc": "21cm~30cm Fish",
+          "address": "0x00F0"
+        },
+        {
+          "code": "00F1:09",
+          "desc": "31cm~50cm Fish",
+          "address": "0x00F1"
+        },
+        {
+          "code": "00F2:09",
+          "desc": "51+cm Fish",
+          "address": "0x00F2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,8 @@
+game_name=Arkanoid (Europe)
+game_key=arkanoid_europe
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_0168	life_lost	0x7E0168	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0168	life_gained	0x7E0168	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_1a31	score	0x7E1A31	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_1a32	score	0x7E1A32	1	uint	little	prev < curr	0.8	1	right:0.350:60

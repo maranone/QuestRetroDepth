@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "pinobeephoebee",
+  "display_name": "Pinobee _ Phoebee (Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Pinobee _ Phoebee (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "100034EC",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020034EC"
+        },
+        {
+          "code": "33001310",
+          "desc": "Unlock Specials",
+          "address": "0x02001310"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Pinobee _ Phoebee (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "100034EC",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020034EC"
+        },
+        {
+          "code": "33001310",
+          "desc": "Unlock Specials",
+          "address": "0x02001310"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

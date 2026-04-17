@@ -1,0 +1,10 @@
+game_name=Necros no Yousai (Japan)
+game_key=necros_no_yousai_japan
+system=pce
+integration_tier=contrib
+trigger	pickup_coins_1f0314	pickup	0x1F0314	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_1f0315	pickup	0x1F0315	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_1f028c	damage_taken	0x1F028C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1f028c	death	0x1F028C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1f0292	damage_taken	0x1F0292	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1f0292	death	0x1F0292	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

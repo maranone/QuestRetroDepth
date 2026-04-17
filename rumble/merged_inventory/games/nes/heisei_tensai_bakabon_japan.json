@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "heiseitensaibakabon",
+  "display_name": "Heisei Tensai Bakabon (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Heisei Tensai Bakabon (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0023:06",
+          "desc": "Infinite Energy",
+          "address": "0x0023"
+        },
+        {
+          "code": "017F:18",
+          "desc": "Invincibility",
+          "address": "0x017F"
+        },
+        {
+          "code": "0049:09",
+          "desc": "Infinite Time",
+          "address": "0x0049"
+        },
+        {
+          "code": "SXKEOZSA",
+          "desc": "Freeze Time",
+          "address": "0x02A9"
+        },
+        {
+          "code": "0055:00",
+          "desc": "Level Modifier",
+          "address": "0x0055"
+        },
+        {
+          "code": "007F:BE",
+          "desc": "Speed Modifier",
+          "address": "0x007F"
+        },
+        {
+          "code": "019A:FF",
+          "desc": "Auto Complete Levels",
+          "address": "0x019A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "fisherpricefirehouserescue",
+  "display_name": "Fisher-Price - Firehouse Rescue (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Fisher-Price - Firehouse Rescue (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "SXNATIVG",
+          "desc": "Infinite Time",
+          "address": "0x052E"
+        },
+        {
+          "code": "TESENEZE",
+          "desc": "Start On Last Map",
+          "address": "0x008F"
+        },
+        {
+          "code": "OXSEVEZE",
+          "desc": "Start On Last Map",
+          "address": "0x00AE"
+        },
+        {
+          "code": "049C:00",
+          "desc": "Fake Level Modifier (0 - 3)",
+          "address": "0x049C"
+        },
+        {
+          "code": "0209:29",
+          "desc": "Fake Infinite Time (One's Digit)",
+          "address": "0x0209"
+        },
+        {
+          "code": "04AA:5C",
+          "desc": "Infinite Time",
+          "address": "0x04AA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "finallaptwin",
+  "display_name": "Final Lap Twin (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Final Lap Twin (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f05b0:23",
+          "desc": "Infinite Time",
+          "address": "0x1F05B0"
+        },
+        {
+          "code": "1f05b1:b3",
+          "desc": "Infinite Time",
+          "address": "0x1F05B1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

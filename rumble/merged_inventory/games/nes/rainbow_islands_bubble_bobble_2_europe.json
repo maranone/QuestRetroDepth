@@ -1,0 +1,115 @@
+{
+  "system": "nes",
+  "normalized_title": "rainbowislandsbubblebobble2",
+  "display_name": "Rainbow Islands - Bubble Bobble 2 (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rainbow Islands - Bubble Bobble 2 (Europe).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 19,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "00A4:02",
+          "desc": "Invincibility",
+          "address": "0x00A4"
+        },
+        {
+          "code": "05D5:09",
+          "desc": "Infinite Time",
+          "address": "0x05D5"
+        },
+        {
+          "code": "008B:02",
+          "desc": "Triple Rainbow",
+          "address": "0x008B"
+        },
+        {
+          "code": "008D:01",
+          "desc": "Fast Rainbow",
+          "address": "0x008D"
+        },
+        {
+          "code": "04E7:01",
+          "desc": "Speed Shoes",
+          "address": "0x04E7"
+        },
+        {
+          "code": "0472:01",
+          "desc": "Special Attack",
+          "address": "0x0472"
+        },
+        {
+          "code": "04C9:01",
+          "desc": "Have All The Small Diamonds",
+          "address": "0x04C9"
+        },
+        {
+          "code": "04CA:01",
+          "desc": "Have All The Small Diamonds",
+          "address": "0x04CA"
+        },
+        {
+          "code": "04CB:01",
+          "desc": "Have All The Small Diamonds",
+          "address": "0x04CB"
+        },
+        {
+          "code": "04CC:01",
+          "desc": "Have All The Small Diamonds",
+          "address": "0x04CC"
+        },
+        {
+          "code": "04CD:01",
+          "desc": "Have All The Small Diamonds",
+          "address": "0x04CD"
+        },
+        {
+          "code": "04CE:01",
+          "desc": "Have All The Small Diamonds",
+          "address": "0x04CE"
+        },
+        {
+          "code": "04CF:01",
+          "desc": "Have All The Small Diamonds",
+          "address": "0x04CF"
+        },
+        {
+          "code": "SEKEGPSZ",
+          "desc": "Invincibility - Both Players",
+          "address": "0x018C"
+        },
+        {
+          "code": "AEKEYPPA",
+          "desc": "Invincibility - Both Players",
+          "address": "0x018F"
+        },
+        {
+          "code": "TAUEPPLA",
+          "desc": "Continue with 6 Lives - Both Players",
+          "address": "0x0189"
+        },
+        {
+          "code": "PAUEPPLE",
+          "desc": "Continue with 9 Lives - Both Players",
+          "address": "0x0189"
+        },
+        {
+          "code": "SVNEANVV",
+          "desc": "Special Attacks Don't Run Out (Last until you die or complete the stage)",
+          "address": "0x07E8"
+        },
+        {
+          "code": "05D5:00",
+          "desc": "Infinite Time (Water doesn't rise)",
+          "address": "0x05D5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "skweek",
+  "display_name": "Skweek (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Skweek (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f07ac:99",
+          "desc": "Infinite Time",
+          "address": "0x1F07AC"
+        },
+        {
+          "code": "1f1110:00",
+          "desc": "Need 1 Tile to Complete Round",
+          "address": "0x1F1110"
+        },
+        {
+          "code": "1f1111:00",
+          "desc": "Need 1 Tile to Complete Round",
+          "address": "0x1F1111"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

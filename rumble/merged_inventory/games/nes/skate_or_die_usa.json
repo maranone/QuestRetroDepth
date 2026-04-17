@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "skateordie",
+  "display_name": "Skate or Die (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Skate or Die (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "005C:00",
+          "desc": "No Passes",
+          "address": "0x005C"
+        },
+        {
+          "code": "0069:00",
+          "desc": "P1's Win Modifier",
+          "address": "0x0069"
+        },
+        {
+          "code": "006A:00",
+          "desc": "P2/CPU's Win Modifier",
+          "address": "0x006A"
+        },
+        {
+          "code": "005D:01",
+          "desc": "Low Timer P1 (One's Digit)",
+          "address": "0x005D"
+        },
+        {
+          "code": "0061:00",
+          "desc": "Low Timer P1 (Minute's Digit)",
+          "address": "0x0061"
+        },
+        {
+          "code": "0067:01",
+          "desc": "Low Timer P2/CPU (One's Digit)",
+          "address": "0x0067"
+        },
+        {
+          "code": "0068:00",
+          "desc": "Low Timer P2/CPU (Ten's Digit)",
+          "address": "0x0068"
+        },
+        {
+          "code": "0069:00",
+          "desc": "Low Timer P2/CPU (Minute's Digit)",
+          "address": "0x0069"
+        },
+        {
+          "code": "SLVEAOSE",
+          "desc": "DPCM Pop Reducer",
+          "address": "0x01B8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "system": "nes",
+  "normalized_title": "superc",
+  "display_name": "Super C (USA) (Game Genie)",
+  "aliases": [
+    "Super C (USA) (Game Genie)",
+    "Super C (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\superc_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0053",
+        "0x07E3"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperC-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0053",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x07E3",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super C (USA).cht",
+      "total_cheat_rows": 80,
+      "raw_entry_count": 90,
+      "distinct_address_count": 64,
+      "sample_raw_entries": [
+        {
+          "code": "07E0:99",
+          "desc": "Both Players Have High Score Maxed [Tens &amp; Hundred",
+          "address": "0x07E0"
+        },
+        {
+          "code": "07E1:99",
+          "desc": "Both Players Have High Score Maxed [Thousands &amp; Mi",
+          "address": "0x07E1"
+        },
+        {
+          "code": "07E2:99",
+          "desc": "Both Players Have High Score Maxed [Billions]",
+          "address": "0x07E2"
+        },
+        {
+          "code": "07E3:99",
+          "desc": "Player 1 Max Score [Tens &amp; Hundreds]",
+          "address": "0x07E3"
+        },
+        {
+          "code": "07E4:99",
+          "desc": "Player 1 Max Score [Thousands &amp; Millions]",
+          "address": "0x07E4"
+        },
+        {
+          "code": "07E5:99",
+          "desc": "Player 1 Max Score [Billions]",
+          "address": "0x07E5"
+        },
+        {
+          "code": "07E6:99",
+          "desc": "Player 2 Max Score [Tens &amp; Hundreds]",
+          "address": "0x07E6"
+        },
+        {
+          "code": "07E7:99",
+          "desc": "Player 2 Max Score [Thousands &amp; Millions]",
+          "address": "0x07E7"
+        },
+        {
+          "code": "07E8:99",
+          "desc": "Player 2 Max Score [Billions]",
+          "address": "0x07E8"
+        },
+        {
+          "code": "00B8:80",
+          "desc": "Weapon Modifier V2 P1 (All weapons rapid fire)",
+          "address": "0x00B8"
+        },
+        {
+          "code": "XYSAEEUN",
+          "desc": "Jump Higher",
+          "address": "0x0078"
+        },
+        {
+          "code": "GANAOAPA",
+          "desc": "Walk Faster In Horizontal Stages",
+          "address": "0x0009"
+        },
+        {
+          "code": "KYNASENN",
+          "desc": "Walk Faster In Horizontal Stages",
+          "address": "0x007D"
+        },
+        {
+          "code": "KYNESENN",
+          "desc": "Walk Faster In Horizontal Stages",
+          "address": "0x00FD"
+        },
+        {
+          "code": "KNOENUNN",
+          "desc": "Walk Faster In Aerial View Stages",
+          "address": "0x03FF"
+        },
+        {
+          "code": "GEEENLPA",
+          "desc": "Walk Faster In Aerial View Stages",
+          "address": "0x038F"
+        },
+        {
+          "code": "GEOEOLPA",
+          "desc": "Walk Faster In Aerial View Stages",
+          "address": "0x0389"
+        },
+        {
+          "code": "KNEEOUNN",
+          "desc": "Walk Faster In Aerial View Stages",
+          "address": "0x03F9"
+        },
+        {
+          "code": "KNXAUUNN",
+          "desc": "Walk Faster In Aerial View Stages",
+          "address": "0x037B"
+        },
+        {
+          "code": "KNXASUNN",
+          "desc": "Walk Faster In Aerial View Stages",
+          "address": "0x037D"
+        },
+        {
+          "code": "GEOAULAA",
+          "desc": "Walk Faster In Aerial View Stages",
+          "address": "0x030B"
+        },
+        {
+          "code": "GEOASLAA",
+          "desc": "Walk Faster In Aerial View Stages",
+          "address": "0x030D"
+        },
+        {
+          "code": "GEEEULAA",
+          "desc": "Walk Faster In Aerial View Stages",
+          "address": "0x038B"
+        },
+        {
+          "code": "KNEESUNN",
+          "desc": "Walk Faster In Aerial View Stages",
+          "address": "0x03FD"
+        },
+        {
+          "code": "KNOEUUNN",
+          "desc": "Walk Faster In Aerial View Stages",
+          "address": "0x03FB"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Super C (USA).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "SUPEPS",
+          "desc": "Out Of Ammo (Plus Some Music Is Missing)",
+          "address": "0x05B1"
+        },
+        {
+          "code": "SOKEIPSL",
+          "desc": "Both Characters Are Invincible",
+          "address": "0x019D"
+        },
+        {
+          "code": "GZVAZTSP",
+          "desc": "Keep Equipped Weapon After Dying",
+          "address": "0x062A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

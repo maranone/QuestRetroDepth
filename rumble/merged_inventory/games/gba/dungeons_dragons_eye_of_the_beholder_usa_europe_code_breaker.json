@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "dungeonsdragonseyeofbeholder",
+  "display_name": "Dungeons _ Dragons - Eye of the Beholder (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Dungeons _ Dragons - Eye of the Beholder (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1002AAB0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202AAB0"
+        },
+        {
+          "code": "830010F4",
+          "desc": "Infinite Skill Points",
+          "address": "0x020010F4"
+        },
+        {
+          "code": "83002154",
+          "desc": "Infinite Gold",
+          "address": "0x02002154"
+        },
+        {
+          "code": "83002154",
+          "desc": "Max Gold",
+          "address": "0x02002154"
+        },
+        {
+          "code": "83002156",
+          "desc": "Max Gold",
+          "address": "0x02002156"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Dungeons _ Dragons - Eye of the Beholder (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1002AAB0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202AAB0"
+        },
+        {
+          "code": "830010F4",
+          "desc": "Infinite Skill Points",
+          "address": "0x020010F4"
+        },
+        {
+          "code": "83002154",
+          "desc": "Infinite Gold",
+          "address": "0x02002154"
+        },
+        {
+          "code": "83002154",
+          "desc": "Max Gold",
+          "address": "0x02002154"
+        },
+        {
+          "code": "83002156",
+          "desc": "Max Gold",
+          "address": "0x02002156"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

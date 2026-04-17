@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "spaceshadow",
+  "display_name": "Space Shadow (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Space Shadow (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "00A0:18",
+          "desc": "Infinite Energy",
+          "address": "0x00A0"
+        },
+        {
+          "code": "0098:63",
+          "desc": "Infinite Bullets",
+          "address": "0x0098"
+        },
+        {
+          "code": "009C:09",
+          "desc": "Infinite Grenades",
+          "address": "0x009C"
+        },
+        {
+          "code": "033E:00",
+          "desc": "1 Hit to Kill Enemies",
+          "address": "0x033E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

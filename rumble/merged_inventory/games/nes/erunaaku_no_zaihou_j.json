@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "erunaakunozaihou",
+  "display_name": "Erunaaku no Zaihou (J)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Erunaaku no Zaihou (J).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0400:1F",
+          "desc": "Infinite Life",
+          "address": "0x0400"
+        },
+        {
+          "code": "0402:05",
+          "desc": "Change Weapon",
+          "address": "0x0402"
+        },
+        {
+          "code": "0407:00",
+          "desc": "Adjust Light/Dark Meter",
+          "address": "0x0407"
+        },
+        {
+          "code": "031F:04",
+          "desc": "Untouchable",
+          "address": "0x031F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

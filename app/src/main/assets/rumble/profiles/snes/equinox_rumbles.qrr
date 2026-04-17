@@ -1,0 +1,10 @@
+game_name=Equinox (Rumbles)
+game_key=equinox_rumbles
+system=snes
+integration_tier=contrib
+trigger	score_score_1f05	score	0x7E1F05	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_1f06	score	0x7E1F06	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	enemy_defeated_enemy_health_116c	enemy_defeated	0x7E116C	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_11bc	enemy_defeated	0x7E11BC	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_120c	enemy_defeated	0x7E120C	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_125c	enemy_defeated	0x7E125C	1	uint	little	prev > curr	0.65	1	right:0.450:35

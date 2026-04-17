@@ -1,0 +1,8 @@
+game_name=Theme Park (Europe) (En,Fr,De)
+game_key=theme_park_europe_en_fr_de
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_a598	pickup	0x7EA598	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_a599	pickup	0x7EA599	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_a59a	pickup	0x7EA59A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_a59b	pickup	0x7EA59B	1	uint	little	prev != curr	0.8	1	right:0.250:18

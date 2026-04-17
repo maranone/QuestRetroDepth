@@ -1,0 +1,102 @@
+{
+  "system": "pce",
+  "normalized_title": "nightcreatures",
+  "display_name": "Night Creatures (Japan)",
+  "aliases": [
+    "Night Creatures (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Night Creatures (USA).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 16,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "1f0422:80",
+          "desc": "Infinite Energy",
+          "address": "0x1F0422"
+        },
+        {
+          "code": "1f0988:01",
+          "desc": "Have Badger Morph",
+          "address": "0x1F0988"
+        },
+        {
+          "code": "1f0989:01",
+          "desc": "Have Owl Morph",
+          "address": "0x1F0989"
+        },
+        {
+          "code": "1f0991:01",
+          "desc": "Have Bear Morph",
+          "address": "0x1F0991"
+        },
+        {
+          "code": "1f098a:01",
+          "desc": "Have Club (Mace)",
+          "address": "0x1F098A"
+        },
+        {
+          "code": "1f098b:01",
+          "desc": "Have Throwing Spear",
+          "address": "0x1F098B"
+        },
+        {
+          "code": "1f098c:01",
+          "desc": "Have Sword",
+          "address": "0x1F098C"
+        },
+        {
+          "code": "1f098d:01",
+          "desc": "Have Axe",
+          "address": "0x1F098D"
+        },
+        {
+          "code": "1f098e:01",
+          "desc": "Have Crossbow",
+          "address": "0x1F098E"
+        },
+        {
+          "code": "1f098f:01",
+          "desc": "Have Gun",
+          "address": "0x1F098F"
+        },
+        {
+          "code": "1f0990:01",
+          "desc": "Have Cheese",
+          "address": "0x1F0990"
+        },
+        {
+          "code": "1f0992:01",
+          "desc": "Have Holy Water",
+          "address": "0x1F0992"
+        },
+        {
+          "code": "1f0993:09",
+          "desc": "Have Lantern",
+          "address": "0x1F0993"
+        },
+        {
+          "code": "1f0994:09",
+          "desc": "Have Fish-bone",
+          "address": "0x1F0994"
+        },
+        {
+          "code": "1f0995:09",
+          "desc": "Have Meat",
+          "address": "0x1F0995"
+        },
+        {
+          "code": "1f043d:1e",
+          "desc": "Invincibility",
+          "address": "0x1F043D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

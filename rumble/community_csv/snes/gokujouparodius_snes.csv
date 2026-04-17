@@ -2,6 +2,6 @@
 # game_name=Gokujou Parodius (Japan) (Action Replay)
 # match_names=gokujouparodius|gokujouparodiussnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-life_lost_lives_00a4,0x7E00A4,1,uint,prev_gt_curr,,both,0.900,normal,0,300,160,80,
-life_gained_lives_00a4,0x7E00A4,1,uint,prev_lt_curr,,both,0.750,normal,0,180,160,50,
-score_score_1f08,0x7E1F08,4,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+life_lost_lives_00a4,0x7E00A4,1,uint,prev_gt_curr,,both,0.92,fade_in_out,0,300,250,80,
+life_gained_lives_00a4,0x7E00A4,1,uint,prev_lt_curr,,both,0.750,fade_in,0,180,200,50,
+score_score_1f08,0x7E1F08,4,bcd,prev_lt_curr,,right,0.350,burst,0,70,15,10,

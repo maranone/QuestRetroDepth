@@ -1,0 +1,27 @@
+{
+  "system": "gb",
+  "normalized_title": "gameofharmony",
+  "display_name": "Game of Harmony, The (USA) (GameShark)",
+  "aliases": [
+    "Game of Harmony, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Game of Harmony, The (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0150CDCB",
+          "desc": "Freeze Chain Time Bar",
+          "address": "0xCDCB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

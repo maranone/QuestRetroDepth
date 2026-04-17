@@ -1,0 +1,47 @@
+{
+  "system": "nes",
+  "normalized_title": "paperboy2",
+  "display_name": "Paperboy 2 (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Paperboy 2 (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Paperboy 2 (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "AAKEZLPA",
+          "desc": "Infinite Lives",
+          "address": "0x038A"
+        },
+        {
+          "code": "AEVPNLPA",
+          "desc": "Infinite Papers",
+          "address": "0x030F"
+        },
+        {
+          "code": "IEOAEOZA",
+          "desc": "Pick Up 5 Papers",
+          "address": "0x0108"
+        },
+        {
+          "code": "YEOAEOZE",
+          "desc": "Pick Up 15 Papers",
+          "address": "0x0108"
+        },
+        {
+          "code": "GOOAEOZA",
+          "desc": "Pick Up 20 Papers",
+          "address": "0x0118"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

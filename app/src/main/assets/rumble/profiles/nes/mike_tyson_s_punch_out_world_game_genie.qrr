@@ -1,0 +1,10 @@
+game_name=Mike Tyson's Punch-Out!! (World) (Game Genie)
+game_key=mike_tyson_s_punch_out_world_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_056b	damage_taken	0x056B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_056b	death	0x056B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_05cb	damage_taken	0x05CB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05cb	death	0x05CB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_01ab	damage_taken	0x01AB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_01ab	death	0x01AB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "knightskingdom",
+  "display_name": "Knights' Kingdom (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Knights' Kingdom (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "3200F41A",
+          "desc": "Infinite Weapon Bar",
+          "address": "0x0200F41A"
+        },
+        {
+          "code": "3200F168",
+          "desc": "Infinite Health",
+          "address": "0x0200F168"
+        },
+        {
+          "code": "42000F64",
+          "desc": "Unlock Everything",
+          "address": "0x02000F64"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L+R+Down To Play As Golden Knight",
+          "address": "0x02000130"
+        },
+        {
+          "code": "3200F164",
+          "desc": "Press L+R+Down To Play As Golden Knight",
+          "address": "0x0200F164"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L+R+Up To Play As Vladek",
+          "address": "0x02000130"
+        },
+        {
+          "code": "3200F164",
+          "desc": "Press L+R+Up To Play As Vladek",
+          "address": "0x0200F164"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Knights' Kingdom (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "3200F41A",
+          "desc": "Infinite Weapon Bar",
+          "address": "0x0200F41A"
+        },
+        {
+          "code": "3200F168",
+          "desc": "Infinite Health",
+          "address": "0x0200F168"
+        },
+        {
+          "code": "42000F64",
+          "desc": "Unlock Everything",
+          "address": "0x02000F64"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L+R+Down To Play As Golden Knight",
+          "address": "0x02000130"
+        },
+        {
+          "code": "3200F164",
+          "desc": "Press L+R+Down To Play As Golden Knight",
+          "address": "0x0200F164"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L+R+Up To Play As Vladek",
+          "address": "0x02000130"
+        },
+        {
+          "code": "3200F164",
+          "desc": "Press L+R+Up To Play As Vladek",
+          "address": "0x0200F164"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

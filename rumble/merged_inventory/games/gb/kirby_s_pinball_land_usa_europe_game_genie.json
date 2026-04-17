@@ -1,0 +1,63 @@
+{
+  "system": "gb",
+  "normalized_title": "kirbyspinballland",
+  "display_name": "Kirby's Pinball Land (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Kirby's Pinball Land (USA, Europe) (Xploder)",
+    "Kirby's Pinball Land (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Kirby's Pinball Land (USA, Europe).cht",
+      "total_cheat_rows": 63,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0105D4C0",
+          "desc": "Full Spring Star",
+          "address": "0xD4C0"
+        },
+        {
+          "code": "0100C1C0",
+          "desc": "Bonus Score Modifier",
+          "address": "0xC1C0"
+        },
+        {
+          "code": "0100C2C0",
+          "desc": "Bonus Multiplier",
+          "address": "0xC2C0"
+        },
+        {
+          "code": "0100C0C0",
+          "desc": "Score Modifier-Sixth &amp; Seventh Digit",
+          "address": "0xC0C0"
+        },
+        {
+          "code": "0101C1C0",
+          "desc": "Score Modifier-Eighth Digit",
+          "address": "0xC1C0"
+        },
+        {
+          "code": "0101D1C0",
+          "desc": "Always Fight Bosses",
+          "address": "0xD1C0"
+        },
+        {
+          "code": "01B7C1C3",
+          "desc": "Have Left Poppy [Middle Stage]",
+          "address": "0xC1C3"
+        },
+        {
+          "code": "0113C2C3",
+          "desc": "Have Right Poppy [Middle Stage]",
+          "address": "0xC2C3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

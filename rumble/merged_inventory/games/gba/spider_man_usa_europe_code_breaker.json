@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "spiderman",
+  "display_name": "Spider-Man (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Spider-Man (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10003544",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003544"
+        },
+        {
+          "code": "82025F98",
+          "desc": "Quick Score Gain",
+          "address": "0x02025F98"
+        },
+        {
+          "code": "82025F98",
+          "desc": "Max Score",
+          "address": "0x02025F98"
+        },
+        {
+          "code": "82025F9A",
+          "desc": "Max Score",
+          "address": "0x02025F9A"
+        },
+        {
+          "code": "82026098",
+          "desc": "Infinite Health",
+          "address": "0x02026098"
+        },
+        {
+          "code": "8202A588",
+          "desc": "Infinite Lives",
+          "address": "0x0202A588"
+        },
+        {
+          "code": "82027A40",
+          "desc": "Infinite Webbing",
+          "address": "0x02027A40"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Spider-Man (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10003544",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003544"
+        },
+        {
+          "code": "82025F98",
+          "desc": "Quick Score Gain",
+          "address": "0x02025F98"
+        },
+        {
+          "code": "82025F98",
+          "desc": "Max Score",
+          "address": "0x02025F98"
+        },
+        {
+          "code": "82025F9A",
+          "desc": "Max Score",
+          "address": "0x02025F9A"
+        },
+        {
+          "code": "82026098",
+          "desc": "Infinite Health",
+          "address": "0x02026098"
+        },
+        {
+          "code": "8202A588",
+          "desc": "Infinite Lives",
+          "address": "0x0202A588"
+        },
+        {
+          "code": "82027A40",
+          "desc": "Infinite Webbing",
+          "address": "0x02027A40"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

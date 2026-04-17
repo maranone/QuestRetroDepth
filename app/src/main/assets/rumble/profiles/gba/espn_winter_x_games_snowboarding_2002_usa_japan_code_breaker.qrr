@@ -1,0 +1,6 @@
+game_name=ESPN Winter X-Games Snowboarding 2002 (USA, Japan) (Code Breaker)
+game_key=espn_winter_x_games_snowboarding_2002_usa_japan_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_020008a4	score	0x020008A4	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_020008a6	score	0x020008A6	1	uint	little	prev < curr	0.8	1	right:0.350:60

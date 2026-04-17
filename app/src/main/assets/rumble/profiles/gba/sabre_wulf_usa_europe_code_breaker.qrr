@@ -1,0 +1,6 @@
+game_name=Sabre Wulf (USA, Europe) (Code Breaker)
+game_key=sabre_wulf_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	pickup_coins_020002a4	pickup	0x020002A4	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0200029e	pickup	0x0200029E	1	uint	little	prev != curr	0.8	1	right:0.250:18

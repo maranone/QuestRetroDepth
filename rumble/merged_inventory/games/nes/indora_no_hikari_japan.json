@@ -1,0 +1,130 @@
+{
+  "system": "nes",
+  "normalized_title": "indoranohikari",
+  "display_name": "Indora no Hikari (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Indora no Hikari (Japan).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 22,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "0433:FF",
+          "desc": "Character 1 Infinite Hp",
+          "address": "0x0433"
+        },
+        {
+          "code": "0434:FF",
+          "desc": "Character 1 Infinite Mp",
+          "address": "0x0434"
+        },
+        {
+          "code": "0431:FF",
+          "desc": "Character 1 Max Exp",
+          "address": "0x0431"
+        },
+        {
+          "code": "0432:FF",
+          "desc": "Character 1 Max Exp",
+          "address": "0x0432"
+        },
+        {
+          "code": "0437:FF",
+          "desc": "Character 1 Max Power",
+          "address": "0x0437"
+        },
+        {
+          "code": "0438:FF",
+          "desc": "Character 1 Max Power",
+          "address": "0x0438"
+        },
+        {
+          "code": "0438:FF",
+          "desc": "Character 1 Max Power",
+          "address": "0x0438"
+        },
+        {
+          "code": "0463:FF",
+          "desc": "Character 2 Infinite Hp",
+          "address": "0x0463"
+        },
+        {
+          "code": "0464:FF",
+          "desc": "Character 2 Infinte Mp",
+          "address": "0x0464"
+        },
+        {
+          "code": "0461:FF",
+          "desc": "Character 2 Max Exp",
+          "address": "0x0461"
+        },
+        {
+          "code": "0462:FF",
+          "desc": "Character 2 Max Exp",
+          "address": "0x0462"
+        },
+        {
+          "code": "0493:FF",
+          "desc": "Character 3 Infinite Hp",
+          "address": "0x0493"
+        },
+        {
+          "code": "0494:FF",
+          "desc": "Character 3 Infinite Mp",
+          "address": "0x0494"
+        },
+        {
+          "code": "0491:FF",
+          "desc": "Character 3 Max Exp",
+          "address": "0x0491"
+        },
+        {
+          "code": "0492:FF",
+          "desc": "Character 3 Max Exp",
+          "address": "0x0492"
+        },
+        {
+          "code": "04F6:FF",
+          "desc": "Infinite Money",
+          "address": "0x04F6"
+        },
+        {
+          "code": "04F7:FF",
+          "desc": "Infinite Money",
+          "address": "0x04F7"
+        },
+        {
+          "code": "00D8:00",
+          "desc": "Inventory Items 00D0 ~",
+          "address": "0x00D8"
+        },
+        {
+          "code": "0423:00",
+          "desc": "Character 1 Y Axis",
+          "address": "0x0423"
+        },
+        {
+          "code": "0453:00",
+          "desc": "Character 2 Y Axis",
+          "address": "0x0453"
+        },
+        {
+          "code": "0483:00",
+          "desc": "Character 3 Y Axis",
+          "address": "0x0483"
+        },
+        {
+          "code": "OZEOVYSK",
+          "desc": "Skip Battles",
+          "address": "0x07AE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

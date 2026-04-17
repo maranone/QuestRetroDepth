@@ -1,0 +1,43 @@
+{
+  "system": "sms",
+  "normalized_title": "fireandice",
+  "display_name": "FireAndIce",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\fireandice_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xD56B",
+        "0xD9A1"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FireAndIce-Sms-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xD56B",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xD9A1",
+          "type": ">n4"
+        }
+      ],
+      "distinct_address_count": 2
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Frogger's Adventures - Temple of the Frog (USA, Europe) (Code Breaker)
+game_key=frogger_s_adventures_temple_of_the_frog_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_020035e0	life_lost	0x020035E0	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_020035e0	life_gained	0x020035E0	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

@@ -1,0 +1,8 @@
+game_name=Wario's Woods (USA, Europe) (Action Replay)
+game_key=wario_s_woods_usa_europe_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_1b8b	pickup	0x7E1B8B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	life_lost_lives_24fc	life_lost	0x7F24FC	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_24fc	life_gained	0x7F24FC	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_1b88	score	0x7E1B88	1	uint	little	prev < curr	0.8	1	right:0.350:60

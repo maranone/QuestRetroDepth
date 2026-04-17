@@ -1,0 +1,188 @@
+{
+  "system": "nes",
+  "normalized_title": "ninjagaiden",
+  "display_name": "Ninja Gaiden (USA) (Game Genie)",
+  "aliases": [
+    "Ninja Gaiden (Rumbles)",
+    "Ninja Gaiden (USA) (Game Genie)",
+    "Ninja Gaiden (USA)",
+    "Ninja Gaiden"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\ninjagaiden_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0060",
+        "0x0076"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\NinjaGaiden-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0076",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0060",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ninja Gaiden (USA).cht",
+      "total_cheat_rows": 69,
+      "raw_entry_count": 26,
+      "distinct_address_count": 22,
+      "sample_raw_entries": [
+        {
+          "code": "GASETAVT",
+          "desc": "Hold Down And Press Start For Sound Test",
+          "address": "0x008E"
+        },
+        {
+          "code": "0063:91",
+          "desc": "Infinite Time",
+          "address": "0x0063"
+        },
+        {
+          "code": "0065:10",
+          "desc": "Infinite Health",
+          "address": "0x0065"
+        },
+        {
+          "code": "0076:03",
+          "desc": "Infinite Lives",
+          "address": "0x0076"
+        },
+        {
+          "code": "0064:63",
+          "desc": "Max/Inf. Spiritual energy",
+          "address": "0x0064"
+        },
+        {
+          "code": "00C9:80",
+          "desc": "Always have Fire Wave art",
+          "address": "0x00C9"
+        },
+        {
+          "code": "0095:FA",
+          "desc": "Untouchable after 1  hit",
+          "address": "0x0095"
+        },
+        {
+          "code": "0089:40",
+          "desc": "Super jump",
+          "address": "0x0089"
+        },
+        {
+          "code": "0497:00",
+          "desc": "Beat any boss w/1 hit",
+          "address": "0x0497"
+        },
+        {
+          "code": "04C8:FA",
+          "desc": "Infinite Time For Hourglass",
+          "address": "0x04C8"
+        },
+        {
+          "code": "04ED:FA",
+          "desc": "Icons Never Disappear #1",
+          "address": "0x04ED"
+        },
+        {
+          "code": "04EE:FA",
+          "desc": "Icons Never Disappear #2",
+          "address": "0x04EE"
+        },
+        {
+          "code": "04EF:FA",
+          "desc": "Icons Never Disappear #3",
+          "address": "0x04EF"
+        },
+        {
+          "code": "04F0:FA",
+          "desc": "Icons Never Disappear #4",
+          "address": "0x04F0"
+        },
+        {
+          "code": "006D:00",
+          "desc": "Stage Select",
+          "address": "0x006D"
+        },
+        {
+          "code": "0095:02",
+          "desc": "Invincibility",
+          "address": "0x0095"
+        },
+        {
+          "code": "0093:80",
+          "desc": "Invincibility",
+          "address": "0x0093"
+        },
+        {
+          "code": "000D:00",
+          "desc": "Sound Test Number Modifier",
+          "address": "0x000D"
+        },
+        {
+          "code": "0073:00",
+          "desc": "No Enemies",
+          "address": "0x0073"
+        },
+        {
+          "code": "0064:63",
+          "desc": "Infinite Arts",
+          "address": "0x0064"
+        },
+        {
+          "code": "0095:FA",
+          "desc": "Invincible After 1st Hit",
+          "address": "0x0095"
+        },
+        {
+          "code": "0497:00",
+          "desc": "Defeat All Bosses With 1 Hit",
+          "address": "0x0497"
+        },
+        {
+          "code": "008C:10",
+          "desc": "Walk Through Walls / Levitate Jump",
+          "address": "0x008C"
+        },
+        {
+          "code": "00D0:00",
+          "desc": "Hour Glass / Time Stopper power-up has no effect on enemies",
+          "address": "0x00D0"
+        },
+        {
+          "code": "OZXELOPX",
+          "desc": "Skip Intro Screens",
+          "address": "0x01AB"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Ninja Gaiden.cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

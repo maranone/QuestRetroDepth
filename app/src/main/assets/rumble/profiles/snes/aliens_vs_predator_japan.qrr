@@ -1,0 +1,18 @@
+game_name=Aliens vs. Predator (Japan)
+game_key=aliens_vs_predator_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_1024	damage_taken	0x7E1024	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1024	death	0x7E1024	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_105c	life_lost	0x7E105C	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_105c	life_gained	0x7E105C	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_10a5	enemy_defeated	0x7E10A5	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_1125	enemy_defeated	0x7E1125	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_1aa5	enemy_defeated	0x7E1AA5	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	score_score_0d0e	score	0x7E0D0E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0d0f	score	0x7E0D0F	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0d12	score	0x7E0D12	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0d13	score	0x7E0D13	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	enemy_defeated_enemy_health_1a04	enemy_defeated	0x7E1A04	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_1124	enemy_defeated	0x7E1124	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_1aa4	enemy_defeated	0x7E1AA4	1	uint	little	prev > curr	0.65	1	right:0.450:35

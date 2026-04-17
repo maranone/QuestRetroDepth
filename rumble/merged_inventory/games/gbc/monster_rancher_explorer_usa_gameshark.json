@@ -1,0 +1,78 @@
+{
+  "system": "gbc",
+  "normalized_title": "monsterrancherexplorer",
+  "display_name": "Monster Rancher Explorer (USA) (GameShark)",
+  "aliases": [
+    "Monster Rancher Explorer (USA) (Xploder)",
+    "Monster Rancher Explorer (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Monster Rancher Explorer (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "0199D2C2",
+          "desc": "Infinite Time [Turn Switch Off After Levels]",
+          "address": "0xD2C2"
+        },
+        {
+          "code": "0199C6C2",
+          "desc": "Max Score",
+          "address": "0xC6C2"
+        },
+        {
+          "code": "0199C7C2",
+          "desc": "Max Score",
+          "address": "0xC7C2"
+        },
+        {
+          "code": "0199C8C2",
+          "desc": "Max Score",
+          "address": "0xC8C2"
+        },
+        {
+          "code": "0199C9C2",
+          "desc": "Max Score",
+          "address": "0xC9C2"
+        },
+        {
+          "code": "0100C0C2",
+          "desc": "Level Modifier",
+          "address": "0xC0C2"
+        },
+        {
+          "code": "0109C4C2",
+          "desc": "Max Monsters Rescued",
+          "address": "0xC4C2"
+        },
+        {
+          "code": "0199C3C2",
+          "desc": "Infinite Lives",
+          "address": "0xC3C2"
+        },
+        {
+          "code": "0103C5C2",
+          "desc": "Invulnerable",
+          "address": "0xC5C2"
+        },
+        {
+          "code": "0103CCC2",
+          "desc": "Infinite Ammo",
+          "address": "0xCCC2"
+        },
+        {
+          "code": "0101C0C2",
+          "desc": "Levelanwahl",
+          "address": "0xC0C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

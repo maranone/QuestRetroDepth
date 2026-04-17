@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "legendsofwrestlingii",
+  "display_name": "Legends of Wrestling II (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Legends of Wrestling II (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1000120C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200120C"
+        },
+        {
+          "code": "4201B298",
+          "desc": "Unlock All Wrestlers",
+          "address": "0x0201B298"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Legends of Wrestling II (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1000120C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200120C"
+        },
+        {
+          "code": "4201B298",
+          "desc": "Unlock All Wrestlers",
+          "address": "0x0201B298"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

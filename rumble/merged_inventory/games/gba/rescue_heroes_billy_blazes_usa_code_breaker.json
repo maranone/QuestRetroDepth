@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "rescueheroesbillyblazes",
+  "display_name": "Rescue Heroes - Billy Blazes! (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Rescue Heroes - Billy Blazes! (USA) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1000CE08",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200CE08"
+        },
+        {
+          "code": "83002054",
+          "desc": "Infinite Water",
+          "address": "0x02002054"
+        },
+        {
+          "code": "830020CC",
+          "desc": "Max Health",
+          "address": "0x020020CC"
+        },
+        {
+          "code": "830020F4",
+          "desc": "Infinite Lives",
+          "address": "0x020020F4"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Rescue Heroes - Billy Blazes! (USA) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1000CE08",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200CE08"
+        },
+        {
+          "code": "83002054",
+          "desc": "Infinite Water",
+          "address": "0x02002054"
+        },
+        {
+          "code": "830020CC",
+          "desc": "Max Health",
+          "address": "0x020020CC"
+        },
+        {
+          "code": "830020F4",
+          "desc": "Infinite Lives",
+          "address": "0x020020F4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

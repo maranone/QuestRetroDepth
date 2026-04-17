@@ -1,0 +1,32 @@
+{
+  "system": "gb",
+  "normalized_title": "chasehq",
+  "display_name": "Chase H.Q. (USA, Europe) (GameShark)",
+  "aliases": [
+    "Chase H.Q. (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Chase H.Q. (USA, Europe).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0103CFC7",
+          "desc": "Infinite Nitro",
+          "address": "0xCFC7"
+        },
+        {
+          "code": "0100DEC8",
+          "desc": "Quickly Reach The Boss",
+          "address": "0xDEC8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "system": "nes",
+  "normalized_title": "spaceshuttleproject",
+  "display_name": "Space Shuttle Project (USA) (Game Genie)",
+  "aliases": [
+    "Space Shuttle Project (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Space Shuttle Project (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "YYOEAPTE",
+          "desc": "Start missions with 127 tries",
+          "address": "0x01F8"
+        },
+        {
+          "code": "0031:3B",
+          "desc": "Infinite Time In Space Station Construction missions",
+          "address": "0x0031"
+        },
+        {
+          "code": "001F:09",
+          "desc": "Infinite Security Attempts",
+          "address": "0x001F"
+        },
+        {
+          "code": "0031:63",
+          "desc": "Infinite Time In Countdown (Seconds)",
+          "address": "0x0031"
+        },
+        {
+          "code": "0030:01",
+          "desc": "Infinite Time In Countdown (Minutes)",
+          "address": "0x0030"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

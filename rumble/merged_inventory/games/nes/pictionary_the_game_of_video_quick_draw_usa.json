@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "pictionarygameofvideoquickdraw",
+  "display_name": "Pictionary - The Game of Video Quick Draw (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Pictionary - The Game of Video Quick Draw (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0084:20",
+          "desc": "Infinite Time",
+          "address": "0x0084"
+        },
+        {
+          "code": "0089:01",
+          "desc": "Move Anywhere On The Board",
+          "address": "0x0089"
+        },
+        {
+          "code": "0084:8F",
+          "desc": "Infinite Time",
+          "address": "0x0084"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "kamennoninjahanamaru",
+  "display_name": "Kamen no Ninja - Hanamaru (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kamen no Ninja - Hanamaru (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "04B2:32",
+          "desc": "Infinite Lives",
+          "address": "0x04B2"
+        },
+        {
+          "code": "04B5:42",
+          "desc": "Infinite Lives",
+          "address": "0x04B5"
+        },
+        {
+          "code": "00DD:14",
+          "desc": "Infinite Power",
+          "address": "0x00DD"
+        },
+        {
+          "code": "00A8:63",
+          "desc": "Invincibility",
+          "address": "0x00A8"
+        },
+        {
+          "code": "00A9:01",
+          "desc": "Stage Select",
+          "address": "0x00A9"
+        },
+        {
+          "code": "05E4:82",
+          "desc": "Upper Right Card In Sub Game is Always A III Multiplier",
+          "address": "0x05E4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

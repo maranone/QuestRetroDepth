@@ -1,0 +1,25 @@
+{
+  "system": "pce",
+  "normalized_title": "powergate",
+  "display_name": "Power Gate (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Power Gate (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "1f1c6c:09",
+          "desc": "Infinite Lives",
+          "address": "0x1F1C6C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

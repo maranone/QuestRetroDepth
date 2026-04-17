@@ -1,0 +1,57 @@
+{
+  "system": "nes",
+  "normalized_title": "funhouse",
+  "display_name": "Fun House (USA) (Game Genie)",
+  "aliases": [
+    "Fun House (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Fun House (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "EAXOLVGL",
+          "desc": "Slower timer",
+          "address": "0x068B"
+        },
+        {
+          "code": "YPXOLVGU",
+          "desc": "Faster timer",
+          "address": "0x069B"
+        },
+        {
+          "code": "TOVOUEYE",
+          "desc": "More time from Large Glop Clocks",
+          "address": "0x009B"
+        },
+        {
+          "code": "YEVOUEYA",
+          "desc": "Less time from Large Glop Clocks",
+          "address": "0x008B"
+        },
+        {
+          "code": "04EE:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x04EE"
+        },
+        {
+          "code": "04EF:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x04EF"
+        },
+        {
+          "code": "07BB:09",
+          "desc": "Infinite Lives",
+          "address": "0x07BB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

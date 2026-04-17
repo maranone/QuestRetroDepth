@@ -1,0 +1,27 @@
+{
+  "system": "nes",
+  "normalized_title": "superchinese",
+  "display_name": "Super Chinese (Japan) (Game Genie)",
+  "aliases": [
+    "Super Chinese (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Chinese (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "04D0:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x04D0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

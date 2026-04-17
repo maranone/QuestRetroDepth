@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "abarenboutengu",
+  "display_name": "Abarenbou Tengu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Abarenbou Tengu (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0017:7F",
+          "desc": "Infinite Energy",
+          "address": "0x0017"
+        },
+        {
+          "code": "054F:08",
+          "desc": "Infinite Credits",
+          "address": "0x054F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

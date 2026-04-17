@@ -1,0 +1,19 @@
+game_name=Seijuu Maden Beasts _ Blades (Japan)
+game_key=seijuu_maden_beasts_blades_japan
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_600c	pickup	0x7E600C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_600d	pickup	0x7E600D	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_600e	pickup	0x7E600E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_11a8	damage_taken	0x7E11A8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_11a8	death	0x7E11A8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_11aa	damage_taken	0x7E11AA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_11aa	death	0x7E11AA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_11a9	damage_taken	0x7E11A9	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_11a9	death	0x7E11A9	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_11ab	damage_taken	0x7E11AB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_11ab	death	0x7E11AB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_11ac	damage_taken	0x7E11AC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_11ac	death	0x7E11AC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_11ad	damage_taken	0x7E11AD	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_11ad	death	0x7E11AD	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

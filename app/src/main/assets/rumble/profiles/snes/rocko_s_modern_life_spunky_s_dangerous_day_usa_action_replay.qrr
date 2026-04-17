@@ -1,0 +1,6 @@
+game_name=Rocko's Modern Life - Spunky's Dangerous Day (USA) (Action Replay)
+game_key=rocko_s_modern_life_spunky_s_dangerous_day_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_0202	life_lost	0x7E0202	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0202	life_gained	0x7E0202	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

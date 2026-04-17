@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "f117stealthfighter",
+  "display_name": "F-117A Stealth Fighter (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\F-117A Stealth Fighter (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0026:00",
+          "desc": "Invincibility",
+          "address": "0x0026"
+        },
+        {
+          "code": "SXXOATSA",
+          "desc": "Invincibility",
+          "address": "0x06A8"
+        },
+        {
+          "code": "001F:63",
+          "desc": "Infinite Missiles (AAM)",
+          "address": "0x001F"
+        },
+        {
+          "code": "0020:63",
+          "desc": "Infinite Bombs (AGM)",
+          "address": "0x0020"
+        },
+        {
+          "code": "0021:63",
+          "desc": "Infinite Flares",
+          "address": "0x0021"
+        },
+        {
+          "code": "0022:63",
+          "desc": "Infinite Chaff",
+          "address": "0x0022"
+        },
+        {
+          "code": "0175:FF",
+          "desc": "Start With 5 Million+ Points",
+          "address": "0x0175"
+        },
+        {
+          "code": "006D:70",
+          "desc": "Infinite Fuel",
+          "address": "0x006D"
+        },
+        {
+          "code": "0022:63",
+          "desc": "Have 99 Flares",
+          "address": "0x0022"
+        },
+        {
+          "code": "0023:E1",
+          "desc": "Infinite Ammo",
+          "address": "0x0023"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "system": "sms",
+  "normalized_title": "ottifants",
+  "display_name": "Ottifants, The (Europe, Brazil) (En,Fr,De,Es,It)",
+  "aliases": [
+    "Ottifants, The (Europe) (Action Replay)",
+    "Ottifants, The (Europe, Brazil) (En,Fr,De,Es,It)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\ottifants_sms.json",
+      "trigger_count": 6,
+      "field_names": [
+        "gameover",
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0xC335",
+        "0xD121",
+        "0xD7C1",
+        "0xD7D3"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Ottifants-Sms-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xC335",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xD7D3",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xD121",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xD7C1",
+          "type": ">n4"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Ottifants, The (Europe, Brazil) (En,Fr,De,Es,It).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

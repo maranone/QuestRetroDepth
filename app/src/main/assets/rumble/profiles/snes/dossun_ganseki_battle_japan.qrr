@@ -1,0 +1,11 @@
+game_name=Dossun! Ganseki Battle (Japan)
+game_key=dossun_ganseki_battle_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_31a0	damage_taken	0x7E31A0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_31a0	death	0x7E31A0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3877	damage_taken	0x7E3877	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3877	death	0x7E3877	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_3b20	enemy_defeated	0x7E3B20	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	level_complete_level_06da	level_complete	0x7E06DA	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_3b29	enemy_defeated	0x7E3B29	1	uint	little	prev > curr	0.65	1	right:0.450:35

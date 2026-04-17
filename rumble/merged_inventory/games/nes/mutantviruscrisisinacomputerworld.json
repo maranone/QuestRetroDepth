@@ -1,0 +1,43 @@
+{
+  "system": "nes",
+  "normalized_title": "mutantviruscrisisinacomputerworld",
+  "display_name": "MutantVirusCrisisInAComputerWorld",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\mutantviruscrisisinacomputerworld_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0069",
+        "0x0120"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MutantVirusCrisisInAComputerWorld-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0069",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0120",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

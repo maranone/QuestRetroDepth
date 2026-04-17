@@ -1,0 +1,7 @@
+game_name=Rambo - First Blood Part II (USA) (Action Replay) (diff)
+game_key=RamboFirstBloodPartII-Sms
+system=sms
+integration_tier=stable
+trigger	life_lost_lives_ca72	life_lost	0xCA72	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ca72	life_gained	0xCA72	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_c119	score	0xC119	4	bcd	little	prev < curr	0.8	1	right:0.350:60

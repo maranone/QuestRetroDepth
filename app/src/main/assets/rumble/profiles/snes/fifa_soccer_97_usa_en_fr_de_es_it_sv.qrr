@@ -1,0 +1,6 @@
+game_name=FIFA Soccer 97 (USA) (En,Fr,De,Es,It,Sv)
+game_key=fifa_soccer_97_usa_en_fr_de_es_it_sv
+system=snes
+integration_tier=contrib
+trigger	score_score_18d7	score	0x7E18D7	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_18d6	score	0x7E18D6	1	uint	little	prev < curr	0.8	1	right:0.350:60

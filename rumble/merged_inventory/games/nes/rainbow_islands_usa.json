@@ -1,0 +1,178 @@
+{
+  "system": "nes",
+  "normalized_title": "rainbowislands",
+  "display_name": "Rainbow Islands (USA)",
+  "aliases": [
+    "Rainbow Islands (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\rainbowislands_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0022",
+        "0x002D"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\RainbowIslands-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0022",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x002D",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rainbow Islands (USA).cht",
+      "total_cheat_rows": 41,
+      "raw_entry_count": 25,
+      "distinct_address_count": 24,
+      "sample_raw_entries": [
+        {
+          "code": "0022:09",
+          "desc": "Infinite Lives",
+          "address": "0x0022"
+        },
+        {
+          "code": "054F:FF",
+          "desc": "Get The Big Diamond At The End Of Each Island",
+          "address": "0x054F"
+        },
+        {
+          "code": "0038:00",
+          "desc": "Bosses Die Automatically",
+          "address": "0x0038"
+        },
+        {
+          "code": "0024:00",
+          "desc": "Ability Modifier",
+          "address": "0x0024"
+        },
+        {
+          "code": "0033:25",
+          "desc": "Infinite Invincibility Time",
+          "address": "0x0033"
+        },
+        {
+          "code": "0022:63",
+          "desc": "Infinite Lives (Works)",
+          "address": "0x0022"
+        },
+        {
+          "code": "0501:00",
+          "desc": "Level Modifier",
+          "address": "0x0501"
+        },
+        {
+          "code": "0031:09",
+          "desc": "Max Score P1",
+          "address": "0x0031"
+        },
+        {
+          "code": "0030:09",
+          "desc": "Max Score P1",
+          "address": "0x0030"
+        },
+        {
+          "code": "002F:09",
+          "desc": "Max Score P1",
+          "address": "0x002F"
+        },
+        {
+          "code": "002E:09",
+          "desc": "Max Score P1",
+          "address": "0x002E"
+        },
+        {
+          "code": "002D:09",
+          "desc": "Max Score P1",
+          "address": "0x002D"
+        },
+        {
+          "code": "002C:09",
+          "desc": "Max Score P1",
+          "address": "0x002C"
+        },
+        {
+          "code": "05AC:00",
+          "desc": "Unlock Sound Select / World Select",
+          "address": "0x05AC"
+        },
+        {
+          "code": "05AD:00",
+          "desc": "Unlock Sound Select / World Select",
+          "address": "0x05AD"
+        },
+        {
+          "code": "05AE:00",
+          "desc": "Unlock Sound Select / World Select",
+          "address": "0x05AE"
+        },
+        {
+          "code": "05AF:00",
+          "desc": "Unlock Sound Select / World Select",
+          "address": "0x05AF"
+        },
+        {
+          "code": "05B0:00",
+          "desc": "Unlock Sound Select / World Select",
+          "address": "0x05B0"
+        },
+        {
+          "code": "05B1:00",
+          "desc": "Unlock Sound Select / World Select",
+          "address": "0x05B1"
+        },
+        {
+          "code": "05B2:00",
+          "desc": "Unlock Sound Select / World Select",
+          "address": "0x05B2"
+        },
+        {
+          "code": "05B3:00",
+          "desc": "Unlock Sound Select / World Select",
+          "address": "0x05B3"
+        },
+        {
+          "code": "05B4:00",
+          "desc": "Unlock Sound Select / World Select",
+          "address": "0x05B4"
+        },
+        {
+          "code": "SZUEOSVK",
+          "desc": "Infinite Time (Water doesn't rise)",
+          "address": "0x05A9"
+        },
+        {
+          "code": "054B:78",
+          "desc": "Infinite Time (Water doesn't rise)",
+          "address": "0x054B"
+        },
+        {
+          "code": "0598:7F",
+          "desc": "Have all 7 Big Diamonds",
+          "address": "0x0598"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

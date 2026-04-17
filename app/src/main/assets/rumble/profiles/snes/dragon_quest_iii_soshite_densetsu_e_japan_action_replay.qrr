@@ -1,0 +1,13 @@
+game_name=Dragon Quest III - Soshite Densetsu e... (Japan) (Action Replay)
+game_key=dragon_quest_iii_soshite_densetsu_e_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_3696	pickup	0x7E3696	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_3697	pickup	0x7E3697	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_3698	pickup	0x7E3698	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_3933	damage_taken	0x7E3933	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3933	death	0x7E3933	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_3929	damage_taken	0x7E3929	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3929	death	0x7E3929	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_392a	damage_taken	0x7E392A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_392a	death	0x7E392A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

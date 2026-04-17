@@ -44,6 +44,7 @@ private:
 
     FrameOutput m_frame;
     EmulatorInputState m_input;
+    std::vector<uint8_t> m_rom_bytes;
     std::string m_loaded_rom_path;
     std::string m_backend_name;
     bool m_core_initialized = false;

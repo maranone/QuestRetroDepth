@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "topgunfirestormadvance",
+  "display_name": "Top Gun - Firestorm Advance (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Top Gun - Firestorm Advance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10000522",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000522"
+        },
+        {
+          "code": "330071F8",
+          "desc": "Infinite Health",
+          "address": "0x020071F8"
+        },
+        {
+          "code": "33000AF8",
+          "desc": "Infinite Lives",
+          "address": "0x02000AF8"
+        },
+        {
+          "code": "33000500",
+          "desc": "Infinite Fuel",
+          "address": "0x02000500"
+        },
+        {
+          "code": "33005AFC",
+          "desc": "Infinite Bombs",
+          "address": "0x02005AFC"
+        },
+        {
+          "code": "33005AF8",
+          "desc": "Infinite Guided Missiles",
+          "address": "0x02005AF8"
+        },
+        {
+          "code": "33005AF4",
+          "desc": "Infinite Rockets",
+          "address": "0x02005AF4"
+        },
+        {
+          "code": "33000AF0",
+          "desc": "All Weapons",
+          "address": "0x02000AF0"
+        },
+        {
+          "code": "73007EB4",
+          "desc": "Start With 1000 Points",
+          "address": "0x02007EB4"
+        },
+        {
+          "code": "83007EAC",
+          "desc": "Start With 1000 Points",
+          "address": "0x02007EAC"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Top Gun - Firestorm Advance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10000522",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000522"
+        },
+        {
+          "code": "330071F8",
+          "desc": "Infinite Health",
+          "address": "0x020071F8"
+        },
+        {
+          "code": "33000AF8",
+          "desc": "Infinite Lives",
+          "address": "0x02000AF8"
+        },
+        {
+          "code": "33000500",
+          "desc": "Infinite Fuel",
+          "address": "0x02000500"
+        },
+        {
+          "code": "33005AFC",
+          "desc": "Infinite Bombs",
+          "address": "0x02005AFC"
+        },
+        {
+          "code": "33005AF8",
+          "desc": "Infinite Guided Missiles",
+          "address": "0x02005AF8"
+        },
+        {
+          "code": "33005AF4",
+          "desc": "Infinite Rockets",
+          "address": "0x02005AF4"
+        },
+        {
+          "code": "33000AF0",
+          "desc": "All Weapons",
+          "address": "0x02000AF0"
+        },
+        {
+          "code": "73007EB4",
+          "desc": "Start With 1000 Points",
+          "address": "0x02007EB4"
+        },
+        {
+          "code": "83007EAC",
+          "desc": "Start With 1000 Points",
+          "address": "0x02007EAC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

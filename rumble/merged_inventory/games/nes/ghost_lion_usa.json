@@ -1,0 +1,90 @@
+{
+  "system": "nes",
+  "normalized_title": "ghostlion",
+  "display_name": "Ghost Lion (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ghost Lion (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 14,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "SZUPNNSE",
+          "desc": "Infinite Courage Points! (take no damage.)",
+          "address": "0x072F"
+        },
+        {
+          "code": "041A:FF",
+          "desc": "Max Rubies",
+          "address": "0x041A"
+        },
+        {
+          "code": "04A1:FF",
+          "desc": "Infinite Health [Main Character]",
+          "address": "0x04A1"
+        },
+        {
+          "code": "04A0:FF",
+          "desc": "Max Hope [Main Character]",
+          "address": "0x04A0"
+        },
+        {
+          "code": "04A3:FF",
+          "desc": "Max Dream [Main Character]",
+          "address": "0x04A3"
+        },
+        {
+          "code": "04A4:FF",
+          "desc": "Max Dream [Main Character]",
+          "address": "0x04A4"
+        },
+        {
+          "code": "04A5:FF",
+          "desc": "Max Dream Total [Main Character]",
+          "address": "0x04A5"
+        },
+        {
+          "code": "0562:2B",
+          "desc": "Start With F-Sword",
+          "address": "0x0562"
+        },
+        {
+          "code": "0562:2A",
+          "desc": "Start With #2 Whip",
+          "address": "0x0562"
+        },
+        {
+          "code": "04A1:FF",
+          "desc": "Infinite Health (Courage)",
+          "address": "0x04A1"
+        },
+        {
+          "code": "04A0:FF",
+          "desc": "Max Hope (Levels)",
+          "address": "0x04A0"
+        },
+        {
+          "code": "04A3:FF",
+          "desc": "Max Dream (Part 1)",
+          "address": "0x04A3"
+        },
+        {
+          "code": "04A4:FF",
+          "desc": "Max Dream (Part 2)",
+          "address": "0x04A4"
+        },
+        {
+          "code": "04A5:FF",
+          "desc": "Max Dream Total",
+          "address": "0x04A5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Dreamworld Pogie (Unknown) (Proto 1) (1993-10-19) (Unl)
+game_key=dreamworld_pogie_unknown_proto_1_1993_10_19_unl
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_04e7	life_lost	0x04E7	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_04e7	life_gained	0x04E7	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

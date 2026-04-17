@@ -1,0 +1,45 @@
+{
+  "system": "pce",
+  "normalized_title": "fushiginoyumenoalice",
+  "display_name": "Fushigi no Yume no Alice (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Fushigi no Yume no Alice (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1f071a:05",
+          "desc": "Infinite Lives",
+          "address": "0x1F071A"
+        },
+        {
+          "code": "1f1e00:97",
+          "desc": "Invincibility",
+          "address": "0x1F1E00"
+        },
+        {
+          "code": "1f1e01:97",
+          "desc": "Invincibility",
+          "address": "0x1F1E01"
+        },
+        {
+          "code": "1f0717:07",
+          "desc": "Infinite Energy",
+          "address": "0x1F0717"
+        },
+        {
+          "code": "1f0719:03",
+          "desc": "Instant Power Charges",
+          "address": "0x1F0719"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

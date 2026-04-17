@@ -1,0 +1,100 @@
+{
+  "schema": "qrd.rumble.sms.v1",
+  "game": {
+    "name": "MsPacMan",
+    "system": "sms"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\MsPacMan-Sms\\data.json",
+    "integration_tier": "stable",
+    "game_key": "MsPacMan-Sms"
+  },
+  "triggers": [
+    {
+      "id": "life_lost_lives_dc76",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0xDC76",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "address": "0xDC76",
+          "ram_offset": 7286
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xDC76",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_dc76",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0xDC76",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "address": "0xDC76",
+          "ram_offset": 7286
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xDC76",
+          "raw_type": "|i1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "score",
+      "meta": {
+        "address": 55878,
+        "type": "><d4"
+      },
+      "reason": "invalid literal for int() with base 10: 'd4'"
+    }
+  ]
+}

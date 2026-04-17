@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "finalfantasytacticsadvance",
+  "display_name": "Final Fantasy Tactics Advance (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Final Fantasy Tactics Advance (Code Breaker).cht",
+      "total_cheat_rows": 93,
+      "raw_entry_count": 126,
+      "distinct_address_count": 115,
+      "sample_raw_entries": [
+        {
+          "code": "1000048A",
+          "desc": "Enable Code",
+          "address": "0x0200048A"
+        },
+        {
+          "code": "82001F64",
+          "desc": "Max Money",
+          "address": "0x02001F64"
+        },
+        {
+          "code": "82001F66",
+          "desc": "Max Money",
+          "address": "0x02001F66"
+        },
+        {
+          "code": "8201F514",
+          "desc": "Gets Lots Of AP",
+          "address": "0x0201F514"
+        },
+        {
+          "code": "8200009A",
+          "desc": "Max Hp P1 In Battle",
+          "address": "0x0200009A"
+        },
+        {
+          "code": "82000098",
+          "desc": "Inf Hp P1 In Battle",
+          "address": "0x02000098"
+        },
+        {
+          "code": "3200009C",
+          "desc": "Inf Mp P1 In Battle",
+          "address": "0x0200009C"
+        },
+        {
+          "code": "3200009E",
+          "desc": "Max Mp P1 In Battle",
+          "address": "0x0200009E"
+        },
+        {
+          "code": "32000156",
+          "desc": "Max JP P1 In Battle",
+          "address": "0x02000156"
+        },
+        {
+          "code": "820001A2",
+          "desc": "Max Hp P2 in Battle",
+          "address": "0x020001A2"
+        },
+        {
+          "code": "820001A0",
+          "desc": "Inf Hp P2 In Battle",
+          "address": "0x020001A0"
+        },
+        {
+          "code": "320001A6",
+          "desc": "Max Mp P2 In Battle",
+          "address": "0x020001A6"
+        },
+        {
+          "code": "320001A4",
+          "desc": "Inf Mp P2 In Battle",
+          "address": "0x020001A4"
+        },
+        {
+          "code": "3200025E",
+          "desc": "Max Jp P2 In Battle",
+          "address": "0x0200025E"
+        },
+        {
+          "code": "820002A8",
+          "desc": "Inf Hp P3 In Battle",
+          "address": "0x020002A8"
+        },
+        {
+          "code": "820002AA",
+          "desc": "Max Hp P3 in Battle",
+          "address": "0x020002AA"
+        },
+        {
+          "code": "320002AC",
+          "desc": "Inf Mp P3 in Battle",
+          "address": "0x020002AC"
+        },
+        {
+          "code": "320002AE",
+          "desc": "Max Mp P3 In Battle",
+          "address": "0x020002AE"
+        },
+        {
+          "code": "32000366",
+          "desc": "Max Jp P3 In Battle",
+          "address": "0x02000366"
+        },
+        {
+          "code": "3200046E",
+          "desc": "Max Jp P4 In Battle",
+          "address": "0x0200046E"
+        },
+        {
+          "code": "820003B0",
+          "desc": "Inf Hp P4 In Battle",
+          "address": "0x020003B0"
+        },
+        {
+          "code": "820003B2",
+          "desc": "Max Hp P4 In Battle",
+          "address": "0x020003B2"
+        },
+        {
+          "code": "320003B4",
+          "desc": "Inf Mp P4 In Battle",
+          "address": "0x020003B4"
+        },
+        {
+          "code": "320003B6",
+          "desc": "Max Mp P4 In Battle",
+          "address": "0x020003B6"
+        },
+        {
+          "code": "32000576",
+          "desc": "Max Jp P5 In Battle",
+          "address": "0x02000576"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Final Fantasy Tactics Advance (Code Breaker).cht",
+      "total_cheat_rows": 93,
+      "raw_entry_count": 126,
+      "distinct_address_count": 115,
+      "sample_raw_entries": [
+        {
+          "code": "1000048A",
+          "desc": "Enable Code",
+          "address": "0x0200048A"
+        },
+        {
+          "code": "82001F64",
+          "desc": "Max Money",
+          "address": "0x02001F64"
+        },
+        {
+          "code": "82001F66",
+          "desc": "Max Money",
+          "address": "0x02001F66"
+        },
+        {
+          "code": "8201F514",
+          "desc": "Gets Lots Of AP",
+          "address": "0x0201F514"
+        },
+        {
+          "code": "8200009A",
+          "desc": "Max Hp P1 In Battle",
+          "address": "0x0200009A"
+        },
+        {
+          "code": "82000098",
+          "desc": "Inf Hp P1 In Battle",
+          "address": "0x02000098"
+        },
+        {
+          "code": "3200009C",
+          "desc": "Inf Mp P1 In Battle",
+          "address": "0x0200009C"
+        },
+        {
+          "code": "3200009E",
+          "desc": "Max Mp P1 In Battle",
+          "address": "0x0200009E"
+        },
+        {
+          "code": "32000156",
+          "desc": "Max JP P1 In Battle",
+          "address": "0x02000156"
+        },
+        {
+          "code": "820001A2",
+          "desc": "Max Hp P2 in Battle",
+          "address": "0x020001A2"
+        },
+        {
+          "code": "820001A0",
+          "desc": "Inf Hp P2 In Battle",
+          "address": "0x020001A0"
+        },
+        {
+          "code": "320001A6",
+          "desc": "Max Mp P2 In Battle",
+          "address": "0x020001A6"
+        },
+        {
+          "code": "320001A4",
+          "desc": "Inf Mp P2 In Battle",
+          "address": "0x020001A4"
+        },
+        {
+          "code": "3200025E",
+          "desc": "Max Jp P2 In Battle",
+          "address": "0x0200025E"
+        },
+        {
+          "code": "820002A8",
+          "desc": "Inf Hp P3 In Battle",
+          "address": "0x020002A8"
+        },
+        {
+          "code": "820002AA",
+          "desc": "Max Hp P3 in Battle",
+          "address": "0x020002AA"
+        },
+        {
+          "code": "320002AC",
+          "desc": "Inf Mp P3 in Battle",
+          "address": "0x020002AC"
+        },
+        {
+          "code": "320002AE",
+          "desc": "Max Mp P3 In Battle",
+          "address": "0x020002AE"
+        },
+        {
+          "code": "32000366",
+          "desc": "Max Jp P3 In Battle",
+          "address": "0x02000366"
+        },
+        {
+          "code": "3200046E",
+          "desc": "Max Jp P4 In Battle",
+          "address": "0x0200046E"
+        },
+        {
+          "code": "820003B0",
+          "desc": "Inf Hp P4 In Battle",
+          "address": "0x020003B0"
+        },
+        {
+          "code": "820003B2",
+          "desc": "Max Hp P4 In Battle",
+          "address": "0x020003B2"
+        },
+        {
+          "code": "320003B4",
+          "desc": "Inf Mp P4 In Battle",
+          "address": "0x020003B4"
+        },
+        {
+          "code": "320003B6",
+          "desc": "Max Mp P4 In Battle",
+          "address": "0x020003B6"
+        },
+        {
+          "code": "32000576",
+          "desc": "Max Jp P5 In Battle",
+          "address": "0x02000576"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

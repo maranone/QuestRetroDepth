@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "qboyu",
+  "display_name": "Q Boy (Sachen) [U][!]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Q Boy (Sachen) [U][!].cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "SZSAKNVK",
+          "desc": "Infinite Lives",
+          "address": "0x072C"
+        },
+        {
+          "code": "AVXPYIVG",
+          "desc": "Invincibility After First Hit",
+          "address": "0x056F"
+        },
+        {
+          "code": "004D:00",
+          "desc": "Character Modifier",
+          "address": "0x004D"
+        },
+        {
+          "code": "00A3:0C",
+          "desc": "Always Large Shot",
+          "address": "0x00A3"
+        },
+        {
+          "code": "00AD:51",
+          "desc": "Can't Be Hit",
+          "address": "0x00AD"
+        },
+        {
+          "code": "03F0:06",
+          "desc": "Always Full Power",
+          "address": "0x03F0"
+        },
+        {
+          "code": "05D1:63",
+          "desc": "Infinite Money",
+          "address": "0x05D1"
+        },
+        {
+          "code": "05D2:03",
+          "desc": "Infinite Health",
+          "address": "0x05D2"
+        },
+        {
+          "code": "05D3:63",
+          "desc": "Infinite Lives",
+          "address": "0x05D3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

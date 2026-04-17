@@ -2,5 +2,5 @@
 # game_name=Aero the Acro-Bat (USA, Europe) (Action Replay)
 # match_names=aerotheacrobat|aerotheacrobatsnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-game_over_gameover_0c0a,0x7E0C0A,1,uint,became_nonzero,,both,1.000,normal,0,1000,400,100,
-score_score_0c99,0x7E0C99,4,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+game_over_gameover_0c0a,0x7E0C0A,1,uint,became_nonzero,,both,1.000,heartbeat,0,1000,400,100,
+score_score_0c99,0x7E0C99,4,bcd,prev_lt_curr,,right,0.350,burst,0,70,15,10,

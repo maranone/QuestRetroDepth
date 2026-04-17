@@ -1,0 +1,95 @@
+{
+  "system": "nes",
+  "normalized_title": "joemac",
+  "display_name": "Joe _ Mac (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Joe _ Mac (USA).cht",
+      "total_cheat_rows": 35,
+      "raw_entry_count": 15,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "0499:0F",
+          "desc": "Infinite Health",
+          "address": "0x0499"
+        },
+        {
+          "code": "064D:00",
+          "desc": "All Bosses 1-Hit Kill",
+          "address": "0x064D"
+        },
+        {
+          "code": "047E:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x047E"
+        },
+        {
+          "code": "0499:0F",
+          "desc": "Infinite Health P1",
+          "address": "0x0499"
+        },
+        {
+          "code": "064C:00",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x064C"
+        },
+        {
+          "code": "064D:00",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x064D"
+        },
+        {
+          "code": "04B4:00",
+          "desc": "Level Modifier",
+          "address": "0x04B4"
+        },
+        {
+          "code": "0478:09",
+          "desc": "Max Score P1",
+          "address": "0x0478"
+        },
+        {
+          "code": "0479:09",
+          "desc": "Max Score P1",
+          "address": "0x0479"
+        },
+        {
+          "code": "047A:09",
+          "desc": "Max Score P1",
+          "address": "0x047A"
+        },
+        {
+          "code": "047B:09",
+          "desc": "Max Score P1",
+          "address": "0x047B"
+        },
+        {
+          "code": "0496:01",
+          "desc": "Untouchable",
+          "address": "0x0496"
+        },
+        {
+          "code": "04A5:65",
+          "desc": "Shot Length Modifier",
+          "address": "0x04A5"
+        },
+        {
+          "code": "05A8:E0",
+          "desc": "Weapon Modifier",
+          "address": "0x05A8"
+        },
+        {
+          "code": "058C:01",
+          "desc": "Jump Midair",
+          "address": "0x058C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

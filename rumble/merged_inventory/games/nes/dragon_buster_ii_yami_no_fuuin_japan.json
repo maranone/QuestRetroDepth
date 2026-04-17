@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "dragonbusteriiyaminofuuin",
+  "display_name": "Dragon Buster II - Yami no Fuuin (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dragon Buster II - Yami no Fuuin (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0145:03",
+          "desc": "Infinite Hits",
+          "address": "0x0145"
+        },
+        {
+          "code": "0149:09",
+          "desc": "Infinite Arrows",
+          "address": "0x0149"
+        },
+        {
+          "code": "014A:09",
+          "desc": "Have Fire Arrows",
+          "address": "0x014A"
+        },
+        {
+          "code": "014E:09",
+          "desc": "Have Protective Barrier",
+          "address": "0x014E"
+        },
+        {
+          "code": "00A7:01",
+          "desc": "Have Exit Key",
+          "address": "0x00A7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "system": "nes",
+  "normalized_title": "garfieldnoisshukan",
+  "display_name": "Garfield no Isshukan (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Garfield no Isshukan (Japan).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "0079:00",
+          "desc": "Boss 1 Hit Kill",
+          "address": "0x0079"
+        },
+        {
+          "code": "00D4:01",
+          "desc": "Always Have Key",
+          "address": "0x00D4"
+        },
+        {
+          "code": "0311:00",
+          "desc": "Day Modifier",
+          "address": "0x0311"
+        },
+        {
+          "code": "0346:04",
+          "desc": "High Jump",
+          "address": "0x0346"
+        },
+        {
+          "code": "0349:0F",
+          "desc": "Walk Through Enemies",
+          "address": "0x0349"
+        },
+        {
+          "code": "034B:C0",
+          "desc": "Speedy Socks",
+          "address": "0x034B"
+        },
+        {
+          "code": "0358:05",
+          "desc": "Infinite Bones",
+          "address": "0x0358"
+        },
+        {
+          "code": "0359:05",
+          "desc": "Infinite Cookies",
+          "address": "0x0359"
+        },
+        {
+          "code": "035A:05",
+          "desc": "Infinite Bombs",
+          "address": "0x035A"
+        },
+        {
+          "code": "0318:63",
+          "desc": "Infinite Power (Health)",
+          "address": "0x0318"
+        },
+        {
+          "code": "0315:00",
+          "desc": "Low Time (One's Digit)",
+          "address": "0x0315"
+        },
+        {
+          "code": "0316:00",
+          "desc": "Low Time (Ten's Digit)",
+          "address": "0x0316"
+        },
+        {
+          "code": "0317:00",
+          "desc": "Low Time (Hundred's Digit)",
+          "address": "0x0317"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -2,6 +2,6 @@
 # game_name=T2TheArcadeGame
 # match_names=t2thearcadegame|t2thearcadegamesnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-damage_taken_0_7f,0x7E007F,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
-score_1_683,0x7E0683,1,uint,prev_lt_curr,,left,0.300,normal,0,80,50,10,
-damage_taken_3_81,0x7E0081,1,uint,prev_gt_curr,,right,0.750,normal,0,180,100,70,
+damage_taken_0_7f,0x7E007F,1,uint,prev_gt_curr,,left,0.78,fade_out,0,180,80,70,
+score_1_683,0x7E0683,1,uint,prev_lt_curr,,left,0.35,burst,0,80,15,10,
+damage_taken_3_81,0x7E0081,1,uint,prev_gt_curr,,right,0.78,fade_out,0,180,80,70,

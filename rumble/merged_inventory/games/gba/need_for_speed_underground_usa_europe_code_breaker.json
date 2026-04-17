@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "needforspeedunderground",
+  "display_name": "Need for Speed - Underground (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Need for Speed - Underground (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "820008D4",
+          "desc": "Infinite Credits",
+          "address": "0x020008D4"
+        },
+        {
+          "code": "820008D6",
+          "desc": "Infinite Credits",
+          "address": "0x020008D6"
+        },
+        {
+          "code": "82000838",
+          "desc": "Unlock All Upgrades/Cars/Tracks",
+          "address": "0x02000838"
+        },
+        {
+          "code": "8200083A",
+          "desc": "Unlock All Upgrades/Cars/Tracks",
+          "address": "0x0200083A"
+        },
+        {
+          "code": "83005F0C",
+          "desc": "Race Time Is 0:0:01 (You Win The Race)",
+          "address": "0x02005F0C"
+        },
+        {
+          "code": "83005F0E",
+          "desc": "Race Time Is 0:0:01 (You Win The Race)",
+          "address": "0x02005F0E"
+        },
+        {
+          "code": "83006A24",
+          "desc": "Drift Score is 999,999",
+          "address": "0x02006A24"
+        },
+        {
+          "code": "83006A26",
+          "desc": "Drift Score is 999,999",
+          "address": "0x02006A26"
+        },
+        {
+          "code": "33006A0C",
+          "desc": "Drift Multiplier is 99",
+          "address": "0x02006A0C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Need for Speed - Underground (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "820008D4",
+          "desc": "Infinite Credits",
+          "address": "0x020008D4"
+        },
+        {
+          "code": "820008D6",
+          "desc": "Infinite Credits",
+          "address": "0x020008D6"
+        },
+        {
+          "code": "82000838",
+          "desc": "Unlock All Upgrades/Cars/Tracks",
+          "address": "0x02000838"
+        },
+        {
+          "code": "8200083A",
+          "desc": "Unlock All Upgrades/Cars/Tracks",
+          "address": "0x0200083A"
+        },
+        {
+          "code": "83005F0C",
+          "desc": "Race Time Is 0:0:01 (You Win The Race)",
+          "address": "0x02005F0C"
+        },
+        {
+          "code": "83005F0E",
+          "desc": "Race Time Is 0:0:01 (You Win The Race)",
+          "address": "0x02005F0E"
+        },
+        {
+          "code": "83006A24",
+          "desc": "Drift Score is 999,999",
+          "address": "0x02006A24"
+        },
+        {
+          "code": "83006A26",
+          "desc": "Drift Score is 999,999",
+          "address": "0x02006A26"
+        },
+        {
+          "code": "33006A0C",
+          "desc": "Drift Multiplier is 99",
+          "address": "0x02006A0C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

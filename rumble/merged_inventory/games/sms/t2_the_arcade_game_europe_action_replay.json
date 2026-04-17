@@ -1,0 +1,53 @@
+{
+  "system": "sms",
+  "normalized_title": "t2arcadegame",
+  "display_name": "T2 - The Arcade Game (Europe) (Action Replay)",
+  "aliases": [
+    "T2 - The Arcade Game (Europe) (Action Replay)",
+    "T2 - The Arcade Game (Europe)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\t2thearcadegame_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xCDF4",
+        "0xCDFB"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\T2TheArcadeGame-Sms-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xCDFB",
+          "type": "<u2"
+        },
+        {
+          "name": "score",
+          "address": "0xCDF4",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\T2 - The Arcade Game (Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

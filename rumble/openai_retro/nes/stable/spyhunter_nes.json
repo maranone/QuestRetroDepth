@@ -1,0 +1,57 @@
+{
+  "schema": "qrd.rumble.nes.v1",
+  "game": {
+    "name": "SpyHunter",
+    "system": "nes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\SpyHunter-Nes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "SpyHunter-Nes"
+  },
+  "triggers": [
+    {
+      "id": "score_score_0123",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x0123",
+          "size": 6,
+          "value_type": "nibble",
+          "byte_order": "big",
+          "raw_type": ">n6",
+          "address": "0x0123",
+          "ram_offset": 291
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0x0123",
+          "raw_type": ">n6"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "time",
+      "meta": {
+        "address": 283,
+        "type": ">n3"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

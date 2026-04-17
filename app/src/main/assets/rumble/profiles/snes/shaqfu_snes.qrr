@@ -1,6 +1,0 @@
-game_name=ShaqFu
-game_key=ShaqFu-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_1bc	damage_taken	0x7E01BC	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	damage_taken_1_1e9	damage_taken	0x7E01E9	1	uint	native	prev > curr	0.85	1	right:0.750:180

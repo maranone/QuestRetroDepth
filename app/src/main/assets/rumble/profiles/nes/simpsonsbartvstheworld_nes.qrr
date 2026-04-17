@@ -1,0 +1,9 @@
+game_name=Simpsons, The - Bart vs. the World (USA, Europe) (Game Genie) (diff)
+game_key=SimpsonsBartVsTheWorld-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_06bc	damage_taken	0x06BC	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_06bc	death	0x06BC	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_06c1	life_lost	0x06C1	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_06c1	life_gained	0x06C1	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_06b0	score	0x06B0	8	nibble	big	prev < curr	0.8	1	right:0.350:60

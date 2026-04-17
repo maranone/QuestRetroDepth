@@ -1,0 +1,32 @@
+{
+  "system": "gb",
+  "normalized_title": "pyramidsofra",
+  "display_name": "Pyramids of Ra (USA) (Game Genie)",
+  "aliases": [
+    "Pyramids of Ra (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Pyramids of Ra (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0125CAC3",
+          "desc": "Automatically Beat Levels",
+          "address": "0xCAC3"
+        },
+        {
+          "code": "0125CBC3",
+          "desc": "Automatically Beat Levels",
+          "address": "0xCBC3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

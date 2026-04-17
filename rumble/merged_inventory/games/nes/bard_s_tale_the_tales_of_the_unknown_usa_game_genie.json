@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "bardstaletalesofunknown",
+  "display_name": "Bard's Tale, The - Tales of the Unknown (USA) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bard's Tale, The - Tales of the Unknown (USA) (Game Genie).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "ATSOOZOL",
+          "desc": "Take No Damage In Battle",
+          "address": "0x02E9"
+        },
+        {
+          "code": "ENVPYTLE",
+          "desc": "Infinite Magic In Battle",
+          "address": "0x067F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

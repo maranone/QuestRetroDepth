@@ -1,0 +1,6 @@
+game_name=FIFA International Soccer (USA)
+game_key=fifa_international_soccer_usa
+system=snes
+integration_tier=contrib
+trigger	score_score_2f5e	score	0x7E2F5E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_2f5c	score	0x7E2F5C	1	uint	little	prev < curr	0.8	1	right:0.350:60

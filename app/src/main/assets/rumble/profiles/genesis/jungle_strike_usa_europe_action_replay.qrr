@@ -1,0 +1,7 @@
+game_name=Jungle Strike (USA, Europe) (Action Replay)
+game_key=jungle_strike_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ff10ce	life_lost	0xFF10CE	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff10ce	life_gained	0xFF10CE	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_ffbf46	pickup	0xFFBF46	1	uint	little	prev != curr	0.8	1	right:0.250:18

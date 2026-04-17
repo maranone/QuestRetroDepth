@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "spotvideogame",
+  "display_name": "Spot - The Video Game (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Spot - The Video Game (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "05ED:09",
+          "desc": "High Score P1 (Ten's Digit)",
+          "address": "0x05ED"
+        },
+        {
+          "code": "05E9:09",
+          "desc": "High Score P1 (One's Digit)",
+          "address": "0x05E9"
+        },
+        {
+          "code": "05EE:00",
+          "desc": "Score Modifier P2/CPU (Ten's Digit)",
+          "address": "0x05EE"
+        },
+        {
+          "code": "05EA:00",
+          "desc": "Score Modifier P2/CPU (One's Digit)",
+          "address": "0x05EA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

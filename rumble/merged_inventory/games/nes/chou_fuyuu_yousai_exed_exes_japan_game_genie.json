@@ -1,0 +1,69 @@
+{
+  "system": "nes",
+  "normalized_title": "choufuyuuyousaiexedexes",
+  "display_name": "Chou Fuyuu Yousai Exed Exes (Japan) (Game Genie)",
+  "aliases": [
+    "Chou Fuyuu Yousai Exed Exes (Japan) (Game Genie)",
+    "Chou Fuyuu Yousai Exed Exes (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\choufuyuuyousaiexedexes_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0422",
+        "0x0425"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ChouFuyuuYousaiExedExes-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0422",
+          "type": "|d1"
+        },
+        {
+          "name": "score",
+          "address": "0x0425",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Chou Fuyuu Yousai Exed Exes (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0422:03",
+          "desc": "Infinite Lives",
+          "address": "0x0422"
+        },
+        {
+          "code": "00B4:03",
+          "desc": "Infinite Stars",
+          "address": "0x00B4"
+        },
+        {
+          "code": "0689:20",
+          "desc": "Invincibility",
+          "address": "0x0689"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

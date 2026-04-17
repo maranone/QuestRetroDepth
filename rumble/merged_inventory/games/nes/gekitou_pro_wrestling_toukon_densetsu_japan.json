@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "gekitouprowrestlingtoukondensetsu",
+  "display_name": "Gekitou Pro Wrestling!! - Toukon Densetsu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gekitou Pro Wrestling!! - Toukon Densetsu (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "0004:09",
+          "desc": "Infinite Training Time",
+          "address": "0x0004"
+        },
+        {
+          "code": "0092:01",
+          "desc": "Player 1 has Faster Animations",
+          "address": "0x0092"
+        },
+        {
+          "code": "00C2:01",
+          "desc": "Player 2 has Faster Animations",
+          "address": "0x00C2"
+        },
+        {
+          "code": "00C4:01",
+          "desc": "Player 2 Palette Modifier",
+          "address": "0x00C4"
+        },
+        {
+          "code": "00A2:82",
+          "desc": "Player 1 has Infinite Health",
+          "address": "0x00A2"
+        },
+        {
+          "code": "00D2:00",
+          "desc": "Player 2 has No Health",
+          "address": "0x00D2"
+        },
+        {
+          "code": "00E9:09",
+          "desc": "Infinite Match Time",
+          "address": "0x00E9"
+        },
+        {
+          "code": "00EA:09",
+          "desc": "Infinite Match Time",
+          "address": "0x00EA"
+        },
+        {
+          "code": "00EE:09",
+          "desc": "Infinite Match Time",
+          "address": "0x00EE"
+        },
+        {
+          "code": "00EC:02",
+          "desc": "Quicker Pinfalls",
+          "address": "0x00EC"
+        },
+        {
+          "code": "0041:00",
+          "desc": "CPU Doesn't Fight at All",
+          "address": "0x0041"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Final Fantasy - Mystic Quest (USA) (Action Replay)
+game_key=final_fantasy_mystic_quest_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_1121	enemy_defeated	0x7E1121	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_11a1	enemy_defeated	0x7E11A1	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_1221	enemy_defeated	0x7E1221	1	uint	little	prev > curr	0.65	1	right:0.450:35

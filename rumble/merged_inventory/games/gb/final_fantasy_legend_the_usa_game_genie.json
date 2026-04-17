@@ -1,0 +1,42 @@
+{
+  "system": "gb",
+  "normalized_title": "finalfantasylegend",
+  "display_name": "Final Fantasy Legend, The (USA) (Game Genie)",
+  "aliases": [
+    "Final Fantasy Legend, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Final Fantasy Legend, The (USA).cht",
+      "total_cheat_rows": 209,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "019EC4F8",
+          "desc": "Secondary Character 2",
+          "address": "0xC4F8"
+        },
+        {
+          "code": "019FD5C8",
+          "desc": "Secondary Character 3",
+          "address": "0xD5C8"
+        },
+        {
+          "code": "01FFC6C5",
+          "desc": "Quick Level Gain (3rd Character)",
+          "address": "0xC6C5"
+        },
+        {
+          "code": "0100C2CC",
+          "desc": "Map Modifier",
+          "address": "0xC2CC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

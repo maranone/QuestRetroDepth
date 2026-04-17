@@ -1,0 +1,12 @@
+game_name=Street Racer (Europe) (Action Replay)
+game_key=street_racer_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff0a26	score	0xFF0A26	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff0a24	score	0xFF0A24	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff0a22	score	0xFF0A22	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff0a20	score	0xFF0A20	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff0a1e	score	0xFF0A1E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff0a1c	score	0xFF0A1C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff0a1a	score	0xFF0A1A	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff0a18	score	0xFF0A18	1	uint	little	prev < curr	0.8	1	right:0.350:60

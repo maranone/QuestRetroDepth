@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "mizushimashinjinodaikoushien",
+  "display_name": "Mizushima Shinji no Daikoushien (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mizushima Shinji no Daikoushien (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0394:00",
+          "desc": "Strikes Modifier",
+          "address": "0x0394"
+        },
+        {
+          "code": "0395:00",
+          "desc": "Balls Modifier",
+          "address": "0x0395"
+        },
+        {
+          "code": "0396:00",
+          "desc": "Outs Modifier",
+          "address": "0x0396"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

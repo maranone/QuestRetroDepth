@@ -1,0 +1,22 @@
+game_name=J.R.R. Tolkien's The Lord of the Rings - Volume 1 (USA) (Action Replay)
+game_key=j_r_r_tolkien_s_the_lord_of_the_rings_volume_1_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_0224	damage_taken	0x7E0224	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0224	death	0x7E0224	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0225	damage_taken	0x7E0225	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0225	death	0x7E0225	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0236	damage_taken	0x7E0236	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0236	death	0x7E0236	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0237	damage_taken	0x7E0237	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0237	death	0x7E0237	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_0256	level_complete	0x7E0256	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_0226	damage_taken	0x7E0226	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0226	death	0x7E0226	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0227	damage_taken	0x7E0227	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0227	death	0x7E0227	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0238	damage_taken	0x7E0238	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0238	death	0x7E0238	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0239	damage_taken	0x7E0239	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0239	death	0x7E0239	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_0258	level_complete	0x7E0258	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

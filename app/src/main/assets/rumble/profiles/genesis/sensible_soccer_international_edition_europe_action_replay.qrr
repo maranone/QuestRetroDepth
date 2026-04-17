@@ -1,0 +1,5 @@
+game_name=Sensible Soccer - International Edition (Europe) (Action Replay)
+game_key=sensible_soccer_international_edition_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff550f	score	0xFF550F	1	uint	little	prev < curr	0.8	1	right:0.350:60

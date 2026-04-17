@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "operationarmoredliberty",
+  "display_name": "Operation Armored Liberty (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Operation Armored Liberty (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "100014E0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020014E0"
+        },
+        {
+          "code": "33001940",
+          "desc": "Infinite Health",
+          "address": "0x02001940"
+        },
+        {
+          "code": "33001AE8",
+          "desc": "Infinite Gas(energy)",
+          "address": "0x02001AE8"
+        },
+        {
+          "code": "33001BD8",
+          "desc": "Infinite 120 HH",
+          "address": "0x02001BD8"
+        },
+        {
+          "code": "33001BDC",
+          "desc": "Infinite Laser",
+          "address": "0x02001BDC"
+        },
+        {
+          "code": "33001BE0",
+          "desc": "Infinite Smoke",
+          "address": "0x02001BE0"
+        },
+        {
+          "code": "33001BE4",
+          "desc": "Infinite 7.52 HH",
+          "address": "0x02001BE4"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Operation Armored Liberty (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "100014E0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020014E0"
+        },
+        {
+          "code": "33001940",
+          "desc": "Infinite Health",
+          "address": "0x02001940"
+        },
+        {
+          "code": "33001AE8",
+          "desc": "Infinite Gas(energy)",
+          "address": "0x02001AE8"
+        },
+        {
+          "code": "33001BD8",
+          "desc": "Infinite 120 HH",
+          "address": "0x02001BD8"
+        },
+        {
+          "code": "33001BDC",
+          "desc": "Infinite Laser",
+          "address": "0x02001BDC"
+        },
+        {
+          "code": "33001BE0",
+          "desc": "Infinite Smoke",
+          "address": "0x02001BE0"
+        },
+        {
+          "code": "33001BE4",
+          "desc": "Infinite 7.52 HH",
+          "address": "0x02001BE4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Super Baseball 2020 (USA, Europe) (Action Replay)
+game_key=super_baseball_2020_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff9944	score	0xFF9944	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	pickup_coins_ff864a	pickup	0xFF864A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff864c	pickup	0xFF864C	1	uint	little	prev != curr	0.8	1	right:0.250:18

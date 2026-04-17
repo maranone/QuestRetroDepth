@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "motogp",
+  "display_name": "Moto GP (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Moto GP (World) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "100007E8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020007E8"
+        },
+        {
+          "code": "33001BD5",
+          "desc": "Low Times",
+          "address": "0x02001BD5"
+        },
+        {
+          "code": "33001BD6",
+          "desc": "Low Times",
+          "address": "0x02001BD6"
+        },
+        {
+          "code": "33005E40",
+          "desc": "Low Times",
+          "address": "0x02005E40"
+        },
+        {
+          "code": "33005FF8",
+          "desc": "Low Times",
+          "address": "0x02005FF8"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Moto GP (World) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "100007E8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020007E8"
+        },
+        {
+          "code": "33001BD5",
+          "desc": "Low Times",
+          "address": "0x02001BD5"
+        },
+        {
+          "code": "33001BD6",
+          "desc": "Low Times",
+          "address": "0x02001BD6"
+        },
+        {
+          "code": "33005E40",
+          "desc": "Low Times",
+          "address": "0x02005E40"
+        },
+        {
+          "code": "33005FF8",
+          "desc": "Low Times",
+          "address": "0x02005FF8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

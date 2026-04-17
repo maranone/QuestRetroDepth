@@ -1,0 +1,85 @@
+{
+  "system": "nes",
+  "normalized_title": "meikyuunotatsujindaimeiro",
+  "display_name": "Meikyuu no Tatsujin - Daimeiro (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Meikyuu no Tatsujin - Daimeiro (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "0030:01",
+          "desc": "Have Full Key",
+          "address": "0x0030"
+        },
+        {
+          "code": "002F:FF",
+          "desc": "Have Full Key",
+          "address": "0x002F"
+        },
+        {
+          "code": "002D:1E",
+          "desc": "Infinite Power",
+          "address": "0x002D"
+        },
+        {
+          "code": "002E:1E",
+          "desc": "Max Power",
+          "address": "0x002E"
+        },
+        {
+          "code": "004D:01",
+          "desc": "Have Compass",
+          "address": "0x004D"
+        },
+        {
+          "code": "004E:09",
+          "desc": "Infinite Witch's Broom",
+          "address": "0x004E"
+        },
+        {
+          "code": "004F:01",
+          "desc": "Have Magic Glasses",
+          "address": "0x004F"
+        },
+        {
+          "code": "0050:09",
+          "desc": "Infinite Bombs",
+          "address": "0x0050"
+        },
+        {
+          "code": "0051:09",
+          "desc": "Infinite Power Rings",
+          "address": "0x0051"
+        },
+        {
+          "code": "SZSENLVG",
+          "desc": "Infinite Bombs",
+          "address": "0x03AF"
+        },
+        {
+          "code": "SXVAVLVG",
+          "desc": "Infinite Power Rings",
+          "address": "0x032E"
+        },
+        {
+          "code": "SXKEKLVG",
+          "desc": "Infinite Witches Brooms",
+          "address": "0x03AC"
+        },
+        {
+          "code": "SXUEOTSA",
+          "desc": "Infinite Rotation Cube Game",
+          "address": "0x06A9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "maharaja",
+  "display_name": "Maharaja (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Maharaja (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 10,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "0642:FF",
+          "desc": "Huge Hp",
+          "address": "0x0642"
+        },
+        {
+          "code": "0645:FF",
+          "desc": "Huge Mp",
+          "address": "0x0645"
+        },
+        {
+          "code": "0646:E7",
+          "desc": "Str 999",
+          "address": "0x0646"
+        },
+        {
+          "code": "0648:03",
+          "desc": "Str 999",
+          "address": "0x0648"
+        },
+        {
+          "code": "0648:E7",
+          "desc": "Def 999",
+          "address": "0x0648"
+        },
+        {
+          "code": "0649:03",
+          "desc": "Def 999",
+          "address": "0x0649"
+        },
+        {
+          "code": "064A:E7",
+          "desc": "Agi 999",
+          "address": "0x064A"
+        },
+        {
+          "code": "0649:03",
+          "desc": "Agi 999",
+          "address": "0x0649"
+        },
+        {
+          "code": "064D:FF",
+          "desc": "Huge Gold",
+          "address": "0x064D"
+        },
+        {
+          "code": "064F:FF",
+          "desc": "Exp. 65545 One Fight",
+          "address": "0x064F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

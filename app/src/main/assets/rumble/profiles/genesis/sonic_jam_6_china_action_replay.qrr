@@ -1,0 +1,10 @@
+game_name=Sonic Jam 6 (China) (Action Replay)
+game_key=sonic_jam_6_china_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ff0094	life_lost	0xFF0094	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff0094	life_gained	0xFF0094	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_ff0061	damage_taken	0xFF0061	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff0061	death	0xFF0061	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_ff00a1	level_complete	0xFF00A1	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_ff0043	level_complete	0xFF0043	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "donaldduckadvance",
+  "display_name": "Donald Duck Advance (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Donald Duck Advance (World) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10003A88",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003A88"
+        },
+        {
+          "code": "33005F10",
+          "desc": "Infinite Lives",
+          "address": "0x02005F10"
+        },
+        {
+          "code": "33005F11",
+          "desc": "Max Stars",
+          "address": "0x02005F11"
+        },
+        {
+          "code": "33005F12",
+          "desc": "Have All Energy Spheres",
+          "address": "0x02005F12"
+        },
+        {
+          "code": "33005F14",
+          "desc": "Infinite Time",
+          "address": "0x02005F14"
+        },
+        {
+          "code": "33005908",
+          "desc": "Unlock All Levels",
+          "address": "0x02005908"
+        },
+        {
+          "code": "83005C64",
+          "desc": "All Stars Collected/Unlock Pics In Gallery",
+          "address": "0x02005C64"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Donald Duck Advance (World) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10003A88",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003A88"
+        },
+        {
+          "code": "33005F10",
+          "desc": "Infinite Lives",
+          "address": "0x02005F10"
+        },
+        {
+          "code": "33005F11",
+          "desc": "Max Stars",
+          "address": "0x02005F11"
+        },
+        {
+          "code": "33005F12",
+          "desc": "Have All Energy Spheres",
+          "address": "0x02005F12"
+        },
+        {
+          "code": "33005F14",
+          "desc": "Infinite Time",
+          "address": "0x02005F14"
+        },
+        {
+          "code": "33005908",
+          "desc": "Unlock All Levels",
+          "address": "0x02005908"
+        },
+        {
+          "code": "83005C64",
+          "desc": "All Stars Collected/Unlock Pics In Gallery",
+          "address": "0x02005C64"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

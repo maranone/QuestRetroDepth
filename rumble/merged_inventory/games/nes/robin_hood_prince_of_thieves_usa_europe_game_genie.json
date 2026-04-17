@@ -1,0 +1,38 @@
+{
+  "system": "nes",
+  "normalized_title": "robinhoodprinceofthieves",
+  "display_name": "Robin Hood - Prince of Thieves (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Robin Hood - Prince of Thieves (USA)",
+    "Robin Hood - Prince of Thieves (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Robin Hood - Prince of Thieves (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "VAXEOLSA",
+          "desc": "Infinite Hit Points For Robin In 'Main Combat'",
+          "address": "0x0389"
+        },
+        {
+          "code": "EYXAOPAL",
+          "desc": "Infinite Hit Points For Robin In 'Dueling Combat'",
+          "address": "0x0179"
+        },
+        {
+          "code": "AASPIZPA",
+          "desc": "Infinite Arrows",
+          "address": "0x020D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

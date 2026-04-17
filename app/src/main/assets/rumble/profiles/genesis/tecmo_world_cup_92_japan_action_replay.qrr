@@ -1,0 +1,6 @@
+game_name=Tecmo World Cup '92 (Japan) (Action Replay)
+game_key=tecmo_world_cup_92_japan_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_fff124	score	0xFFF124	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_fff126	score	0xFFF126	1	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "maerchenmaze",
+  "display_name": "Maerchen Maze (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Maerchen Maze (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f0625:02",
+          "desc": "Infinite Lives",
+          "address": "0x1F0625"
+        },
+        {
+          "code": "1f0b69:00",
+          "desc": "1-Hit Boss Kill",
+          "address": "0x1F0B69"
+        },
+        {
+          "code": "1f0769:01",
+          "desc": "Invincibility",
+          "address": "0x1F0769"
+        },
+        {
+          "code": "1f0815:02",
+          "desc": "Invincibility",
+          "address": "0x1F0815"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

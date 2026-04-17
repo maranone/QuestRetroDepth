@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "raymanadvance",
+  "display_name": "Rayman Advance (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Rayman Advance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "100072C4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020072C4"
+        },
+        {
+          "code": "3202EEA6",
+          "desc": "Max Blue Orbs",
+          "address": "0x0202EEA6"
+        },
+        {
+          "code": "3202EEA0",
+          "desc": "Infinite Lives",
+          "address": "0x0202EEA0"
+        },
+        {
+          "code": "3202FCF4",
+          "desc": "Infinite Health",
+          "address": "0x0202FCF4"
+        },
+        {
+          "code": "3202EEA9",
+          "desc": "Max Health",
+          "address": "0x0202EEA9"
+        },
+        {
+          "code": "8202FCD4",
+          "desc": "Invincible",
+          "address": "0x0202FCD4"
+        },
+        {
+          "code": "3202BEE4",
+          "desc": "Have Throwing Fist",
+          "address": "0x0202BEE4"
+        },
+        {
+          "code": "3202EE8C",
+          "desc": "Have Golden Fist",
+          "address": "0x0202EE8C"
+        },
+        {
+          "code": "3202FCC0",
+          "desc": "Mega Jump",
+          "address": "0x0202FCC0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Rayman Advance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "100072C4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020072C4"
+        },
+        {
+          "code": "3202EEA6",
+          "desc": "Max Blue Orbs",
+          "address": "0x0202EEA6"
+        },
+        {
+          "code": "3202EEA0",
+          "desc": "Infinite Lives",
+          "address": "0x0202EEA0"
+        },
+        {
+          "code": "3202FCF4",
+          "desc": "Infinite Health",
+          "address": "0x0202FCF4"
+        },
+        {
+          "code": "3202EEA9",
+          "desc": "Max Health",
+          "address": "0x0202EEA9"
+        },
+        {
+          "code": "8202FCD4",
+          "desc": "Invincible",
+          "address": "0x0202FCD4"
+        },
+        {
+          "code": "3202BEE4",
+          "desc": "Have Throwing Fist",
+          "address": "0x0202BEE4"
+        },
+        {
+          "code": "3202EE8C",
+          "desc": "Have Golden Fist",
+          "address": "0x0202EE8C"
+        },
+        {
+          "code": "3202FCC0",
+          "desc": "Mega Jump",
+          "address": "0x0202FCC0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

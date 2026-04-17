@@ -1,0 +1,39 @@
+{
+  "system": "gbc",
+  "normalized_title": "buzzlightyearofstarcommand",
+  "display_name": "Buzz Lightyear of Star Command (USA, Europe) (GameShark) (diff)",
+  "aliases": [
+    "Buzz Lightyear of Star Command (USA, Europe) (GameShark) (diff)",
+    "Buzz Lightyear of Star Command (USA, Europe) (GameShark)",
+    "Buzz Lightyear of Star Command (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Buzz Lightyear of Star Command (USA, Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0164DACC",
+          "desc": "Infinite Health",
+          "address": "0xDACC"
+        },
+        {
+          "code": "0105C8CC",
+          "desc": "Always Have 5 Coins",
+          "address": "0xC8CC"
+        },
+        {
+          "code": "0163DACC",
+          "desc": "Infinite Health",
+          "address": "0xDACC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

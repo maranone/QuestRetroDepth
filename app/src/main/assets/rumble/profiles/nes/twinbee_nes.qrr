@@ -1,0 +1,7 @@
+game_name=TwinBee (Japan)
+game_key=TwinBee-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_0080	life_lost	0x0080	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0080	life_gained	0x0080	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_005d	score	0x005D	2	bcd	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,122 @@
+{
+  "system": "nes",
+  "normalized_title": "towncountrysurfdesignsthrillassurfari",
+  "display_name": "Town _ Country Surf Designs - Thrilla's Surfari (USA) (Game Genie)",
+  "aliases": [
+    "Town _ Country Surf Designs - Thrilla's Surfari (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Town _ Country Surf Designs - Thrilla's Surfari (USA).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 20,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "PAXEPPLA",
+          "desc": "Start with 1 life",
+          "address": "0x0189"
+        },
+        {
+          "code": "IAXEPPLA",
+          "desc": "Start with 5 Ilives",
+          "address": "0x0189"
+        },
+        {
+          "code": "YAXEPPLA",
+          "desc": "Start with 7 Ilives",
+          "address": "0x0189"
+        },
+        {
+          "code": "PAXEPPLE",
+          "desc": "Start with 9 Ilives",
+          "address": "0x0189"
+        },
+        {
+          "code": "OPXEPPLE",
+          "desc": "Strat with mega lives",
+          "address": "0x0199"
+        },
+        {
+          "code": "IAUALPAA",
+          "desc": "Start with 5 coconuts plus what you've collected in sub-game",
+          "address": "0x010B"
+        },
+        {
+          "code": "ZAUALPAE",
+          "desc": "Start with 10 coconuts plus what you've collected in sub-game",
+          "address": "0x010B"
+        },
+        {
+          "code": "YAUALPAE",
+          "desc": "Start with 15 coconuts plus what you've collected in sub-game",
+          "address": "0x010B"
+        },
+        {
+          "code": "PAXEIPZA",
+          "desc": "Start with less health",
+          "address": "0x018D"
+        },
+        {
+          "code": "LAXEIPZA",
+          "desc": "Start with a little more health",
+          "address": "0x018D"
+        },
+        {
+          "code": "GAXEIPZA",
+          "desc": "Start with 2x health",
+          "address": "0x018D"
+        },
+        {
+          "code": "PAXEIPZE",
+          "desc": "Start with a lot more health",
+          "address": "0x018D"
+        },
+        {
+          "code": "0003:02",
+          "desc": "Invincibility",
+          "address": "0x0003"
+        },
+        {
+          "code": "00B1:00",
+          "desc": "Invincibility",
+          "address": "0x00B1"
+        },
+        {
+          "code": "04E0:00",
+          "desc": "Invincibility",
+          "address": "0x04E0"
+        },
+        {
+          "code": "043F:58",
+          "desc": "Infinite Energy",
+          "address": "0x043F"
+        },
+        {
+          "code": "0440:00",
+          "desc": "1 Hit To Kill Bosses",
+          "address": "0x0440"
+        },
+        {
+          "code": "0006:08",
+          "desc": "Have all 8 energy slots",
+          "address": "0x0006"
+        },
+        {
+          "code": "0016:63",
+          "desc": "Infinite Lives",
+          "address": "0x0016"
+        },
+        {
+          "code": "0003:02",
+          "desc": "Infinite Health",
+          "address": "0x0003"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

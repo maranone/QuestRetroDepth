@@ -1,0 +1,152 @@
+{
+  "system": "nes",
+  "normalized_title": "guardianlegend",
+  "display_name": "Guardian Legend, The (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Guardian Legend, The (USA)",
+    "Guardian Legend, The (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\guardianlegend_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0048",
+        "0x0170"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GuardianLegend-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0048",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0170",
+          "type": ">n7"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Guardian Legend, The (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "AXVAIAAG",
+          "desc": "Start With Less Energy",
+          "address": "0x002D"
+        },
+        {
+          "code": "EEVAIAAG",
+          "desc": "Start With More Energy",
+          "address": "0x000D"
+        },
+        {
+          "code": "OVOAKLSV",
+          "desc": "Use Up Minimum Shots",
+          "address": "0x036C"
+        },
+        {
+          "code": "PEOASLAP",
+          "desc": "Use Up Minimum Shots",
+          "address": "0x030D"
+        },
+        {
+          "code": "GXOAKLST",
+          "desc": "Never Use Up Shots",
+          "address": "0x032C"
+        },
+        {
+          "code": "YUGAEK",
+          "desc": "You Will Only Do The Flying Scenes And You Cannot Die",
+          "address": "0x0430"
+        },
+        {
+          "code": "ZSTEKP",
+          "desc": "Press Select To Get More Energy Tanks And A Higher Score",
+          "address": "0x01D4"
+        },
+        {
+          "code": "ZUTEKP",
+          "desc": "Press Select To Get More Energy Whenever You Need It",
+          "address": "0x01B4"
+        },
+        {
+          "code": "NNVAIAAK",
+          "desc": "Start With Lots Of Energy, More Than The Max",
+          "address": "0x007D"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Guardian Legend, The (USA).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "AXVAIAAG",
+          "desc": "Start With Less Energy",
+          "address": "0x002D"
+        },
+        {
+          "code": "EEVAIAAG",
+          "desc": "Start With More Energy",
+          "address": "0x000D"
+        },
+        {
+          "code": "OVOAKLSV",
+          "desc": "Use Up Minimum Shots",
+          "address": "0x036C"
+        },
+        {
+          "code": "PEOASLAP",
+          "desc": "Use Up Minimum Shots",
+          "address": "0x030D"
+        },
+        {
+          "code": "GXOAKLST",
+          "desc": "Never Use Up Shots",
+          "address": "0x032C"
+        },
+        {
+          "code": "YUGAEK",
+          "desc": "You Will Only Do The Flying Scenes And You Cannot Die",
+          "address": "0x0430"
+        },
+        {
+          "code": "ZSTEKP",
+          "desc": "Press Select To Get More Energy Tanks And A Higher Score",
+          "address": "0x01D4"
+        },
+        {
+          "code": "ZUTEKP",
+          "desc": "Press Select To Get More Energy Whenever You Need It",
+          "address": "0x01B4"
+        },
+        {
+          "code": "NNVAIAAK",
+          "desc": "Start With Lots Of Energy, More Than The Max",
+          "address": "0x007D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

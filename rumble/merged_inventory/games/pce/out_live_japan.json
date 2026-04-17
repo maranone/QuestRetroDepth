@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "outlive",
+  "display_name": "Out Live (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Out Live (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f0651:ff",
+          "desc": "Infinite Credits",
+          "address": "0x1F0651"
+        },
+        {
+          "code": "1f0652:ff",
+          "desc": "Infinite Credits",
+          "address": "0x1F0652"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

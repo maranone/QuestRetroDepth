@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "gauntlet",
+  "display_name": "Gauntlet (USA) (Game Genie)",
+  "aliases": [
+    "Gauntlet (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gauntlet (USA).cht",
+      "total_cheat_rows": 51,
+      "raw_entry_count": 50,
+      "distinct_address_count": 38,
+      "sample_raw_entries": [
+        {
+          "code": "GGAEEE",
+          "desc": "Walk Through Walls",
+          "address": "0x00C0"
+        },
+        {
+          "code": "ZZPOOO",
+          "desc": "Move Slowly",
+          "address": "0x01A1"
+        },
+        {
+          "code": "XVOONAVK",
+          "desc": "Infinite Time In Puzzle And Treasure Rooms",
+          "address": "0x00EF"
+        },
+        {
+          "code": "00AF:09",
+          "desc": "P2 Infinite Keys",
+          "address": "0x00AF"
+        },
+        {
+          "code": "00B1:09",
+          "desc": "P2 Infinite Bombs",
+          "address": "0x00B1"
+        },
+        {
+          "code": "00B3:FF",
+          "desc": "P2 Infinite Health",
+          "address": "0x00B3"
+        },
+        {
+          "code": "00AC:3F",
+          "desc": "P1 Have All Power-Ups",
+          "address": "0x00AC"
+        },
+        {
+          "code": "00AD:3F",
+          "desc": "P2 Have All Power-Ups",
+          "address": "0x00AD"
+        },
+        {
+          "code": "00C0:1E",
+          "desc": "Infinite Time In Puzzle And Treasure Rooms",
+          "address": "0x00C0"
+        },
+        {
+          "code": "00AA:BE",
+          "desc": "P1 Have Temporary Power-Ups",
+          "address": "0x00AA"
+        },
+        {
+          "code": "00AC:00",
+          "desc": "P2 Have Temporary Power-Ups",
+          "address": "0x00AC"
+        },
+        {
+          "code": "00B6:00",
+          "desc": "Score Modifier P1",
+          "address": "0x00B6"
+        },
+        {
+          "code": "SLNAEYSP",
+          "desc": "Infinite Energy",
+          "address": "0x0738"
+        },
+        {
+          "code": "SLVPOASP",
+          "desc": "Infinite Energy",
+          "address": "0x0039"
+        },
+        {
+          "code": "SLVPOASP",
+          "desc": "Infinite Health",
+          "address": "0x0039"
+        },
+        {
+          "code": "SLNAEYSP",
+          "desc": "Infinite Health",
+          "address": "0x0738"
+        },
+        {
+          "code": "EZVPLISP",
+          "desc": "Start With 9 Keys &amp; 9 Bombs",
+          "address": "0x052B"
+        },
+        {
+          "code": "PAVPGIVS",
+          "desc": "Start With 9 Keys &amp; 9 Bombs",
+          "address": "0x050C"
+        },
+        {
+          "code": "KPVPIISP",
+          "desc": "Start With 9 Keys &amp; 9 Bombs",
+          "address": "0x051D"
+        },
+        {
+          "code": "KPVPYISP",
+          "desc": "Start With 9 Keys &amp; 9 Bombs",
+          "address": "0x051F"
+        },
+        {
+          "code": "EZVPLISP",
+          "desc": "Start With 99 Keys &amp; 99 Bombs",
+          "address": "0x052B"
+        },
+        {
+          "code": "LTVPGIVI",
+          "desc": "Start With 99 Keys &amp; 99 Bombs",
+          "address": "0x056C"
+        },
+        {
+          "code": "KPVPIISP",
+          "desc": "Start With 99 Keys &amp; 99 Bombs",
+          "address": "0x051D"
+        },
+        {
+          "code": "KPVPYISP",
+          "desc": "Start With 99 Keys &amp; 99 Bombs",
+          "address": "0x051F"
+        },
+        {
+          "code": "SZSAENOU",
+          "desc": "Max Health",
+          "address": "0x0728"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

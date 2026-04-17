@@ -1,0 +1,115 @@
+{
+  "system": "nes",
+  "normalized_title": "radracerii",
+  "display_name": "Rad Racer II (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rad Racer II (USA).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 19,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "000A:00",
+          "desc": "Stage Select",
+          "address": "0x000A"
+        },
+        {
+          "code": "004B:0C",
+          "desc": "Power Meter Always Full",
+          "address": "0x004B"
+        },
+        {
+          "code": "005F:FF",
+          "desc": "Instant Boost",
+          "address": "0x005F"
+        },
+        {
+          "code": "0039:FF",
+          "desc": "Instant Finish",
+          "address": "0x0039"
+        },
+        {
+          "code": "005B:00",
+          "desc": "Never Wipeout When You Hit Anything",
+          "address": "0x005B"
+        },
+        {
+          "code": "000B:00",
+          "desc": "Always Play Song",
+          "address": "0x000B"
+        },
+        {
+          "code": "005F:FF",
+          "desc": "Go Very, Very Fast (Almost Lightspeed)",
+          "address": "0x005F"
+        },
+        {
+          "code": "003B:09",
+          "desc": "Infinite Time Remaining (Minutes)",
+          "address": "0x003B"
+        },
+        {
+          "code": "003C:3B",
+          "desc": "Infinite Time Remaining (Seconds)",
+          "address": "0x003C"
+        },
+        {
+          "code": "003D:1A",
+          "desc": "Infinite Time Remaining (Micro-Seconds)",
+          "address": "0x003D"
+        },
+        {
+          "code": "003E:00",
+          "desc": "Low Timer Lap 1 (Micro-Seconds Timer Counting Upwards)",
+          "address": "0x003E"
+        },
+        {
+          "code": "003F:00",
+          "desc": "Low Timer Lap 1 (Seconds Timer Counting Upwards)",
+          "address": "0x003F"
+        },
+        {
+          "code": "0040:00",
+          "desc": "Low Timer Lap 1 (Minutes Timer Counting Upwards)",
+          "address": "0x0040"
+        },
+        {
+          "code": "0041:00",
+          "desc": "Low Timer Lap 2 (Micro-Seconds Timer Counting Upwards)",
+          "address": "0x0041"
+        },
+        {
+          "code": "0042:00",
+          "desc": "Low Timer Lap 2 (Seconds Timer Counting Upwards)",
+          "address": "0x0042"
+        },
+        {
+          "code": "0043:00",
+          "desc": "Low Timer Lap 2 (Minutes Timer Counting Upwards)",
+          "address": "0x0043"
+        },
+        {
+          "code": "0044:00",
+          "desc": "Low Timer Lap 3 (Micro-Seconds Timer Counting Upwards)",
+          "address": "0x0044"
+        },
+        {
+          "code": "0045:00",
+          "desc": "Low Timer Lap 3 (Seconds Timer Counting Upwards)",
+          "address": "0x0045"
+        },
+        {
+          "code": "0046:00",
+          "desc": "Low Timer Lap 3 (Minutes Timer Counting Upwards)",
+          "address": "0x0046"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

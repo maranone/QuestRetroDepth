@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "permanpart2himitsukesshamadoodanotaose",
+  "display_name": "Perman Part 2 - Himitsu Kessha Madoodan o Taose! (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Perman Part 2 - Himitsu Kessha Madoodan o Taose! (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "009C:07",
+          "desc": "Infinite Energy",
+          "address": "0x009C"
+        },
+        {
+          "code": "0086:00",
+          "desc": "Super Jump",
+          "address": "0x0086"
+        },
+        {
+          "code": "008B:00",
+          "desc": "Weapon Modifier",
+          "address": "0x008B"
+        },
+        {
+          "code": "008D:00",
+          "desc": "Weapon Modifier",
+          "address": "0x008D"
+        },
+        {
+          "code": "0096:01",
+          "desc": "Walk Through Enemies",
+          "address": "0x0096"
+        },
+        {
+          "code": "009B:09",
+          "desc": "Infinite Lives",
+          "address": "0x009B"
+        },
+        {
+          "code": "0636:09",
+          "desc": "Freeze Time Puzzle Rooms",
+          "address": "0x0636"
+        },
+        {
+          "code": "0766:01",
+          "desc": "Boss One Hit Kill",
+          "address": "0x0766"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=Defender of the Crown (USA) (Game Genie)
+game_key=defender_of_the_crown_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_05d7	pickup	0x05D7	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "firehawk",
+  "display_name": "Fire Hawk (USA) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Fire Hawk (USA) (Game Genie).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "PAOEPALA",
+          "desc": "Start With 1 Life",
+          "address": "0x0089"
+        },
+        {
+          "code": "TAOEPALA",
+          "desc": "Start With 6 Lives",
+          "address": "0x0089"
+        },
+        {
+          "code": "PAOEPALE",
+          "desc": "Start With 9 Lives",
+          "address": "0x0089"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

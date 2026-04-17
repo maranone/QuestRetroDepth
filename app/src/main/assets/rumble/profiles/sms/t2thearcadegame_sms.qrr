@@ -1,0 +1,7 @@
+game_name=T2 - The Arcade Game (Europe) (Action Replay)
+game_key=T2TheArcadeGame-Sms
+system=sms
+integration_tier=stable
+trigger	damage_taken_health_cdfb	damage_taken	0xCDFB	2	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_cdfb	death	0xCDFB	2	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_cdf4	score	0xCDF4	4	bcd	little	prev < curr	0.8	1	right:0.350:60

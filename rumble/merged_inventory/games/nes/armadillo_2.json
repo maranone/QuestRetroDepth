@@ -1,0 +1,25 @@
+{
+  "system": "nes",
+  "normalized_title": "armadillo2",
+  "display_name": "Armadillo 2",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Armadillo 2.cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "ATOAGESA",
+          "desc": "Invincibility",
+          "address": "0x006C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

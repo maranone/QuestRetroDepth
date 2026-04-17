@@ -1,0 +1,8 @@
+game_name=Parasol Stars - The Story of Bubble Bobble III (Japan)
+game_key=parasol_stars_the_story_of_bubble_bobble_iii_japan
+system=pce
+integration_tier=contrib
+trigger	life_lost_lives_1f19ad	life_lost	0x1F19AD	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1f19ad	life_gained	0x1F19AD	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_1f19b0	life_lost	0x1F19B0	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1f19b0	life_gained	0x1F19B0	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

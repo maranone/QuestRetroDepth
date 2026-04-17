@@ -1,0 +1,13 @@
+game_name=International Superstar Soccer (USA)
+game_key=international_superstar_soccer_usa
+system=snes
+integration_tier=contrib
+trigger	score_score_1774	score	0x7E1774	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_1775	score	0x7E1775	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_1724	score	0x7E1724	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_1725	score	0x7E1725	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	level_complete_level_1fa2	level_complete	0x7E1FA2	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_1f96	level_complete	0x7E1F96	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_1f98	level_complete	0x7E1F98	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_1f90	level_complete	0x7E1F90	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_1f92	level_complete	0x7E1F92	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

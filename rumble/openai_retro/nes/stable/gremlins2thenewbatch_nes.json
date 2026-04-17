@@ -1,0 +1,157 @@
+{
+  "schema": "qrd.rumble.nes.v1",
+  "game": {
+    "name": "Gremlins2TheNewBatch",
+    "system": "nes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\Gremlins2TheNewBatch-Nes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "Gremlins2TheNewBatch-Nes"
+  },
+  "triggers": [
+    {
+      "id": "game_over_gameover_0636",
+      "event": "game_over",
+      "watch": [
+        {
+          "absolute_address": "0x0636",
+          "size": 1,
+          "value_type": "bcd",
+          "byte_order": "native",
+          "raw_type": "|d1",
+          "address": "0x0636",
+          "ram_offset": 1590
+        }
+      ],
+      "condition": "prev == 0 && curr != 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Explicit game-over flag.",
+      "source_fields": [
+        {
+          "name": "gameover",
+          "address": "0x0636",
+          "raw_type": "|d1"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_health_00ad",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x00AD",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x00AD",
+          "ram_offset": 173
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0x00AD",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_00ad",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0x00AD",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x00AD",
+          "ram_offset": 173
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0x00AD",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_056c",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x056C",
+          "size": 2,
+          "value_type": "uint",
+          "byte_order": "little",
+          "raw_type": "<u2",
+          "address": "0x056C",
+          "ram_offset": 1388
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0x056C",
+          "raw_type": "<u2"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

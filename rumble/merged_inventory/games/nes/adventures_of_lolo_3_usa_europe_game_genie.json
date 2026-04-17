@@ -1,0 +1,61 @@
+{
+  "system": "nes",
+  "normalized_title": "adventuresoflolo3",
+  "display_name": "Adventures of Lolo 3 (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Adventures of Lolo 3 (USA)",
+    "Adventures of Lolo 3 (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Adventures of Lolo 3 (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "SXOASZVG",
+          "desc": "Infinite Shots For Each Room On Pick-Up",
+          "address": "0x022D"
+        },
+        {
+          "code": "ZZZEZZ",
+          "desc": "Makes All Enemies Do Nothing, Medusaa's Don't Shoot, Etc. (You Can't Cross Water)",
+          "address": "0x02A2"
+        },
+        {
+          "code": "ZEOAKXUY",
+          "desc": "Always Have Shot Ability",
+          "address": "0x020C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Adventures of Lolo 3 (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "SXOASZVG",
+          "desc": "Infinite Shots For Each Room On Pick-Up",
+          "address": "0x022D"
+        },
+        {
+          "code": "ZZZEZZ",
+          "desc": "Makes All Enemies Do Nothing, Medusaa's Don't Shoot, Etc. (You Can't Cross Water)",
+          "address": "0x02A2"
+        },
+        {
+          "code": "ZEOAKXUY",
+          "desc": "Always Have Shot Ability",
+          "address": "0x020C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

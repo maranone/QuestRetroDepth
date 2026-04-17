@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "rugratsgowild",
+  "display_name": "Rugrats - Go Wild (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Rugrats - Go Wild (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10027448",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02027448"
+        },
+        {
+          "code": "32015700",
+          "desc": "Max Purple Pieces",
+          "address": "0x02015700"
+        },
+        {
+          "code": "32015704",
+          "desc": "Max Health",
+          "address": "0x02015704"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Rugrats - Go Wild (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10027448",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02027448"
+        },
+        {
+          "code": "32015700",
+          "desc": "Max Purple Pieces",
+          "address": "0x02015700"
+        },
+        {
+          "code": "32015704",
+          "desc": "Max Health",
+          "address": "0x02015704"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

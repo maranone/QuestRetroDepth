@@ -1,0 +1,202 @@
+{
+  "system": "nes",
+  "normalized_title": "ghostsngoblins",
+  "display_name": "Ghosts'n Goblins (USA) (Action Replay)",
+  "aliases": [
+    "Ghosts'n Goblins (USA) (Action Replay)",
+    "Ghosts'n Goblins (USA) (Game Genie)",
+    "Ghosts'n Goblins (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\ghostsngoblins_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x008E",
+        "0x0715"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GhostsnGoblins-Nes-v0\\data.json",
+      "field_count": 5,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0715",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x008E",
+          "type": ">n6"
+        },
+        {
+          "name": "time_minutes",
+          "address": "0x06F6",
+          "type": "|u1"
+        },
+        {
+          "name": "time_ones",
+          "address": "0x06FC",
+          "type": "|n1"
+        },
+        {
+          "name": "time_tens",
+          "address": "0x06FA",
+          "type": "|n1"
+        }
+      ],
+      "distinct_address_count": 5
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ghosts'n Goblins (USA).cht",
+      "total_cheat_rows": 131,
+      "raw_entry_count": 46,
+      "distinct_address_count": 30,
+      "sample_raw_entries": [
+        {
+          "code": "PAVEPOZE",
+          "desc": "Weapon 1 in Level 5 is the Cross",
+          "address": "0x0189"
+        },
+        {
+          "code": "PEXEPPTE",
+          "desc": "Weapon 2 in Level 5 is the Cross",
+          "address": "0x0189"
+        },
+        {
+          "code": "IKAEIA",
+          "desc": "The Armor From The Intro Is Left Everywhere On The 1st Stage And Can Sometimes Equip It",
+          "address": "0x00C5"
+        },
+        {
+          "code": "AAOEVPPA",
+          "desc": "Zombies That Carry A Basket Will Drop $500",
+          "address": "0x018E"
+        },
+        {
+          "code": "ZAOEVPPA",
+          "desc": "Zombies That Carry A Basket Will Drop 5000 Point I",
+          "address": "0x018E"
+        },
+        {
+          "code": "LAOEVPPA",
+          "desc": "Zombies That Carry A Basket Will Drop 10,000 Point",
+          "address": "0x018E"
+        },
+        {
+          "code": "GAOEVPPA",
+          "desc": "Zombies That Carry A Basket Will Drop An Extra Life",
+          "address": "0x018E"
+        },
+        {
+          "code": "IAOEVPPA",
+          "desc": "Zombies That Carry A Basket Will Drop Armor",
+          "address": "0x018E"
+        },
+        {
+          "code": "TAOEVPPA",
+          "desc": "Zombies That Carry A Basket Will Drop Fireball",
+          "address": "0x018E"
+        },
+        {
+          "code": "YAOEVPPA",
+          "desc": "Zombies That Carry A Basket Will Drop Axe",
+          "address": "0x018E"
+        },
+        {
+          "code": "AAOEVPPE",
+          "desc": "Zombies That Carry A Basket Will Drop Dagger",
+          "address": "0x018E"
+        },
+        {
+          "code": "PAOEVPPE",
+          "desc": "Zombies That Carry A Basket Will Drop Cross",
+          "address": "0x018E"
+        },
+        {
+          "code": "ZAOEVPPE",
+          "desc": "Zombies That Carry A Basket Will Drop Lance",
+          "address": "0x018E"
+        },
+        {
+          "code": "LAOEVPPE",
+          "desc": "Zombies That Carry A Basket Will Drop Statue That Turns You Into A Form",
+          "address": "0x018E"
+        },
+        {
+          "code": "GAOEVPPE",
+          "desc": "Zombies That Carry A Basket Will Drop Item That Reduces Timer By 30 Seconds",
+          "address": "0x018E"
+        },
+        {
+          "code": "IAOEVPPE",
+          "desc": "Zombies That Carry A Basket Will Drop Item That Adds 1 Minute To Timer",
+          "address": "0x018E"
+        },
+        {
+          "code": "SZEAXOSE",
+          "desc": "Most Zombies Are Carrying Baskets",
+          "address": "0x012A"
+        },
+        {
+          "code": "0716:06",
+          "desc": "Infinite Lives [Player 2]",
+          "address": "0x0716"
+        },
+        {
+          "code": "00A6:01",
+          "desc": "Skip Intro For Stage 1",
+          "address": "0x00A6"
+        },
+        {
+          "code": "00AA:00",
+          "desc": "Game Difficulty Modifier",
+          "address": "0x00AA"
+        },
+        {
+          "code": "00AC:00",
+          "desc": "Stage Select",
+          "address": "0x00AC"
+        },
+        {
+          "code": "00A7:0F",
+          "desc": "Enable Stage Select Option",
+          "address": "0x00A7"
+        },
+        {
+          "code": "04F3:A4",
+          "desc": "Invincibility [Player 1 &amp; 2]",
+          "address": "0x04F3"
+        },
+        {
+          "code": "0708:00",
+          "desc": "Set Monster Drop Modifier",
+          "address": "0x0708"
+        },
+        {
+          "code": "00BF:01",
+          "desc": "Complete Level Now",
+          "address": "0x00BF"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Ghosts'n Goblins (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

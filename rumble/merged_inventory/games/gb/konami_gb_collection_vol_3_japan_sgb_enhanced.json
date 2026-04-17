@@ -1,0 +1,30 @@
+{
+  "system": "gb",
+  "normalized_title": "konamigbcollectionvol3",
+  "display_name": "Konami GB Collection Vol.3 (Japan) (SGB Enhanced)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Konami GB Collection Vol.3 (Japan) (SGB Enhanced).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0109C2D0",
+          "desc": "Infinite Energy",
+          "address": "0xC2D0"
+        },
+        {
+          "code": "0100C5D0",
+          "desc": "Computer Has Zero Energy",
+          "address": "0xC5D0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

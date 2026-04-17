@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "jumpinkidjacktomamenokimonogatari",
+  "display_name": "Jumpin' Kid - Jack to Mame no Ki Monogatari (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Jumpin' Kid - Jack to Mame no Ki Monogatari (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "05FB:50",
+          "desc": "Infinite Energy",
+          "address": "0x05FB"
+        },
+        {
+          "code": "03A0:00",
+          "desc": "Walk Through Walls",
+          "address": "0x03A0"
+        },
+        {
+          "code": "03B0:00",
+          "desc": "Walk Through Walls",
+          "address": "0x03B0"
+        },
+        {
+          "code": "03D0:01",
+          "desc": "Jump to Walk on Air",
+          "address": "0x03D0"
+        },
+        {
+          "code": "0591:08",
+          "desc": "Jump Height Modifier",
+          "address": "0x0591"
+        },
+        {
+          "code": "0592:00",
+          "desc": "Jump Length Modifier",
+          "address": "0x0592"
+        },
+        {
+          "code": "05B9:00",
+          "desc": "Untouchable",
+          "address": "0x05B9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Jordan vs Bird - One on One (Japan) (Action Replay)
+game_key=jordan_vs_bird_one_on_one_japan_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff56db	score	0xFF56DB	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff577b	score	0xFF577B	1	uint	little	prev < curr	0.8	1	right:0.350:60

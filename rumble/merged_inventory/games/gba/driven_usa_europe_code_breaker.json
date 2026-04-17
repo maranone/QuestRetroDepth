@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "driven",
+  "display_name": "Driven (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Driven (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1000048C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200048C"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For More Time",
+          "address": "0x02000020"
+        },
+        {
+          "code": "82027870",
+          "desc": "Press Select For More Time",
+          "address": "0x02027870"
+        },
+        {
+          "code": "82027840",
+          "desc": "Low Lap Time",
+          "address": "0x02027840"
+        },
+        {
+          "code": "8202C5FC",
+          "desc": "Car Takes No Damage",
+          "address": "0x0202C5FC"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Driven (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1000048C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200048C"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For More Time",
+          "address": "0x02000020"
+        },
+        {
+          "code": "82027870",
+          "desc": "Press Select For More Time",
+          "address": "0x02027870"
+        },
+        {
+          "code": "82027840",
+          "desc": "Low Lap Time",
+          "address": "0x02027840"
+        },
+        {
+          "code": "8202C5FC",
+          "desc": "Car Takes No Damage",
+          "address": "0x0202C5FC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

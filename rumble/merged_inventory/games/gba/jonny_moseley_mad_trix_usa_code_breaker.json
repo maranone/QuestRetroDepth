@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "jonnymoseleymadtrix",
+  "display_name": "Jonny Moseley Mad Trix (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Jonny Moseley Mad Trix (USA) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10000598",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000598"
+        },
+        {
+          "code": "830015C8",
+          "desc": "Quick Score Gain",
+          "address": "0x020015C8"
+        },
+        {
+          "code": "830015C8",
+          "desc": "Max Score",
+          "address": "0x020015C8"
+        },
+        {
+          "code": "830015CA",
+          "desc": "Max Score",
+          "address": "0x020015CA"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For Super Speed",
+          "address": "0x02000020"
+        },
+        {
+          "code": "830015F0",
+          "desc": "Press Select For Super Speed",
+          "address": "0x020015F0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Jonny Moseley Mad Trix (USA) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10000598",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000598"
+        },
+        {
+          "code": "830015C8",
+          "desc": "Quick Score Gain",
+          "address": "0x020015C8"
+        },
+        {
+          "code": "830015C8",
+          "desc": "Max Score",
+          "address": "0x020015C8"
+        },
+        {
+          "code": "830015CA",
+          "desc": "Max Score",
+          "address": "0x020015CA"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For Super Speed",
+          "address": "0x02000020"
+        },
+        {
+          "code": "830015F0",
+          "desc": "Press Select For Super Speed",
+          "address": "0x020015F0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

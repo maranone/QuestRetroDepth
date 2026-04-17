@@ -1,0 +1,5 @@
+game_name=Sugoro Quest - Dice no Senshitachi (Japan)
+game_key=sugoro_quest_dice_no_senshitachi_japan
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_044a	pickup	0x044A	1	uint	little	prev != curr	0.8	1	right:0.250:18

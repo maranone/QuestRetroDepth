@@ -1,0 +1,8 @@
+game_name=Warlock (USA, Europe) (Action Replay)
+game_key=warlock_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ffa18e	damage_taken	0xFFA18E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffa18e	death	0xFFA18E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffb29d	damage_taken	0xFFB29D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffb29d	death	0xFFB29D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

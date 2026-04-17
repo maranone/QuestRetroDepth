@@ -1,0 +1,84 @@
+{
+  "system": "nes",
+  "normalized_title": "challenger",
+  "display_name": "Challenger (Japan) (Game Genie)",
+  "aliases": [
+    "Challenger (Japan) (Game Genie)",
+    "Challenger (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\challenger_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0083",
+        "0x0087"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Challenger-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0087",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0083",
+          "type": "<u2"
+        },
+        {
+          "name": "time",
+          "address": "0x0084",
+          "type": ">u2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Challenger (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "PEXONYGE",
+          "desc": "Start with 9 lives",
+          "address": "0x078F"
+        },
+        {
+          "code": "YEXONYGE",
+          "desc": "Start with 15 lives",
+          "address": "0x078F"
+        },
+        {
+          "code": "POXONYGE",
+          "desc": "Start with 25 lives",
+          "address": "0x079F"
+        },
+        {
+          "code": "ZUXONYGA",
+          "desc": "Start with 50 lives",
+          "address": "0x07BF"
+        },
+        {
+          "code": "SZOENTSA",
+          "desc": "Invincibility",
+          "address": "0x06AF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

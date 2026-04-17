@@ -1,0 +1,5 @@
+game_name=Donkey Kong Land III (USA, Europe) (Rev 1) (SGB Enhanced)
+game_key=donkey_kong_land_iii_usa_europe_rev_1_sgb_enhanced
+system=gb
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_d5de	enemy_defeated	0xD5DE	1	uint	little	prev > curr	0.65	1	right:0.450:35

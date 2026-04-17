@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "viruscleaner",
+  "display_name": "Virus Cleaner",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Virus Cleaner.cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "SXNOGSVK",
+          "desc": "Infinite Time",
+          "address": "0x05AC"
+        },
+        {
+          "code": "SZKPILVG",
+          "desc": "Invincibility",
+          "address": "0x032D"
+        },
+        {
+          "code": "TEEEYAAE",
+          "desc": "Start at APU",
+          "address": "0x008F"
+        },
+        {
+          "code": "AOEEYAAE",
+          "desc": "Start at PPU",
+          "address": "0x009F"
+        },
+        {
+          "code": "ZXEEYAAA",
+          "desc": "Start at CPU",
+          "address": "0x00AF"
+        },
+        {
+          "code": "GXEEYAAE",
+          "desc": "Start at Virii",
+          "address": "0x00AF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

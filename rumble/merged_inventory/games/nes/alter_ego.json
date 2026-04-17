@@ -1,0 +1,25 @@
+{
+  "system": "nes",
+  "normalized_title": "alterego",
+  "display_name": "Alter Ego",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Alter Ego.cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "PEUOXILA",
+          "desc": "Restart Level To Clear It",
+          "address": "0x058A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

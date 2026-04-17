@@ -1,0 +1,70 @@
+{
+  "system": "gbc",
+  "normalized_title": "dragonwarriormonsters",
+  "display_name": "Dragon Warrior Monsters (USA, Europe) (SGB Enhanced) (GB Compatible)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Dragon Warrior Monsters (USA, Europe) (SGB Enhanced) (GB Compatible).cht",
+      "total_cheat_rows": 84,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "01FFC3DB",
+          "desc": "1st Slot Infinite MP [In Battle]",
+          "address": "0xC3DB"
+        },
+        {
+          "code": "01FFC5DB",
+          "desc": "2nd Slot Infinite MP [In Battle]",
+          "address": "0xC5DB"
+        },
+        {
+          "code": "01FFC7DB",
+          "desc": "3rd Slot Infinite MP [In Battle]",
+          "address": "0xC7DB"
+        },
+        {
+          "code": "01FFD8CC",
+          "desc": "Max Attack",
+          "address": "0xD8CC"
+        },
+        {
+          "code": "01FFDACC",
+          "desc": "Max Defense",
+          "address": "0xDACC"
+        },
+        {
+          "code": "01FFDCCC",
+          "desc": "Max Agility",
+          "address": "0xDCCC"
+        },
+        {
+          "code": "01FFDECC",
+          "desc": "Max Intelligence",
+          "address": "0xDECC"
+        },
+        {
+          "code": "0100CACA",
+          "desc": "Monster Farm Modifier [Slot 1]",
+          "address": "0xCACA"
+        },
+        {
+          "code": "0101CCCA",
+          "desc": "Turn 1st Monster Into A Female",
+          "address": "0xCCCA"
+        },
+        {
+          "code": "0102CCCA",
+          "desc": "Turn 1st Monster Into A Male",
+          "address": "0xCCCA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

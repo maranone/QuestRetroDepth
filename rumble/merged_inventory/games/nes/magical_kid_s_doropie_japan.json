@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "magicalkidsdoropie",
+  "display_name": "Magical Kid's Doropie (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Magical Kid's Doropie (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "004C:14",
+          "desc": "Infinite Energy",
+          "address": "0x004C"
+        },
+        {
+          "code": "0041:00",
+          "desc": "Level Select",
+          "address": "0x0041"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

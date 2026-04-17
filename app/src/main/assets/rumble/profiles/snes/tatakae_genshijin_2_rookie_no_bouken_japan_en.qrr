@@ -1,0 +1,9 @@
+game_name=Tatakae Genshijin 2 - Rookie no Bouken (Japan) (En)
+game_key=tatakae_genshijin_2_rookie_no_bouken_japan_en
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_003c	pickup	0x7E003C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	life_lost_lives_0042	life_lost	0x7E0042	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0042	life_gained	0x7E0042	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_003b	enemy_defeated	0x7E003B	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	level_complete_level_0544	level_complete	0x7E0544	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

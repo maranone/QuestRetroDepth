@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "takahashimeijinnoboukenshimaivteng99",
+  "display_name": "Takahashi Meijin no Bouken Shima IV (J) [T-Eng.99]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Takahashi Meijin no Bouken Shima IV (J) [T-Eng.99].cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0085:20",
+          "desc": "Infinite Health",
+          "address": "0x0085"
+        },
+        {
+          "code": "0086:20",
+          "desc": "All Hearts",
+          "address": "0x0086"
+        },
+        {
+          "code": "0087:08",
+          "desc": "Maximum Fruit",
+          "address": "0x0087"
+        },
+        {
+          "code": "009E:FF",
+          "desc": "Have Special Items",
+          "address": "0x009E"
+        },
+        {
+          "code": "009C:FF",
+          "desc": "Have All Weapons/Items/Powers",
+          "address": "0x009C"
+        },
+        {
+          "code": "009D:FF",
+          "desc": "Have All Weapons/Items/Powers",
+          "address": "0x009D"
+        },
+        {
+          "code": "009F:FF",
+          "desc": "Have All Weapons/Items/Powers",
+          "address": "0x009F"
+        },
+        {
+          "code": "076F:01",
+          "desc": "Always Invincible",
+          "address": "0x076F"
+        },
+        {
+          "code": "018D:14",
+          "desc": "Have A Score of 20 On The Whackamole Game",
+          "address": "0x018D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

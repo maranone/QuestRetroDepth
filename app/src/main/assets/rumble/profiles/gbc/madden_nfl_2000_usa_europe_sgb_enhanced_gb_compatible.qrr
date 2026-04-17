@@ -1,0 +1,6 @@
+game_name=Madden NFL 2000 (USA, Europe) (SGB Enhanced) (GB Compatible)
+game_key=madden_nfl_2000_usa_europe_sgb_enhanced_gb_compatible
+system=gbc
+integration_tier=contrib
+trigger	score_score_c6c2	score	0xC6C2	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_c7c2	score	0xC7C2	1	uint	little	prev < curr	0.8	1	right:0.350:60

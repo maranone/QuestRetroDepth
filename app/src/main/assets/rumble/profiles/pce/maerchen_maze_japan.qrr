@@ -1,0 +1,7 @@
+game_name=Maerchen Maze (Japan)
+game_key=maerchen_maze_japan
+system=pce
+integration_tier=contrib
+trigger	life_lost_lives_1f0625	life_lost	0x1F0625	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1f0625	life_gained	0x1F0625	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_1f0b69	enemy_defeated	0x1F0B69	1	uint	little	prev > curr	0.65	1	right:0.450:35

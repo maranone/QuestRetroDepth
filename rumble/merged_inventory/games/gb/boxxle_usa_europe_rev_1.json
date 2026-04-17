@@ -1,0 +1,30 @@
+{
+  "system": "gb",
+  "normalized_title": "boxxle",
+  "display_name": "Boxxle (USA, Europe) (Rev 1)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Boxxle (USA, Europe) (Rev 1).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0100D7C2",
+          "desc": "Always Have One Movement Only",
+          "address": "0xD7C2"
+        },
+        {
+          "code": "0100D6C2",
+          "desc": "Always Have One Movement Only",
+          "address": "0xD6C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

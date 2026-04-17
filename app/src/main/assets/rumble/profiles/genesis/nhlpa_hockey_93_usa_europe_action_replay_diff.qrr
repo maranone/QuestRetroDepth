@@ -1,0 +1,6 @@
+game_name=NHLPA Hockey 93 (USA, Europe) (Action Replay) (diff)
+game_key=nhlpa_hockey_93_usa_europe_action_replay_diff
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffc4f2	score	0xFFC4F2	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffc694	score	0xFFC694	1	uint	little	prev < curr	0.8	1	right:0.350:60

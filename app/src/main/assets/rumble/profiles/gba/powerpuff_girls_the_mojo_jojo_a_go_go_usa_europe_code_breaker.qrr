@@ -1,0 +1,12 @@
+game_name=Powerpuff Girls, The - Mojo Jojo A-Go-Go (USA, Europe) (Code Breaker)
+game_key=powerpuff_girls_the_mojo_jojo_a_go_go_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_02003ba0	score	0x02003BA0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02003ba2	score	0x02003BA2	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	damage_taken_health_02003d18	damage_taken	0x02003D18	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02003d18	death	0x02003D18	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02003d1a	damage_taken	0x02003D1A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02003d1a	death	0x02003D1A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02003d1c	damage_taken	0x02003D1C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02003d1c	death	0x02003D1C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

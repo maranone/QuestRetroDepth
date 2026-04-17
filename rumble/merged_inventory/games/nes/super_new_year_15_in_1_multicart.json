@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "supernewyear15in1multicart",
+  "display_name": "Super New Year 15-in-1 Multicart",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super New Year 15-in-1 Multicart.cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0573:03",
+          "desc": "Infinite Lives",
+          "address": "0x0573"
+        },
+        {
+          "code": "0572:03",
+          "desc": "Infinite Grenades",
+          "address": "0x0572"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

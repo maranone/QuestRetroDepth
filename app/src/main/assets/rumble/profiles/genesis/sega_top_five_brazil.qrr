@@ -1,0 +1,9 @@
+game_name=Sega Top Five (Brazil)
+game_key=sega_top_five_brazil
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ffd882	life_lost	0xFFD882	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffd882	life_gained	0xFFD882	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_fff01c	score	0xFFF01C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	life_lost_lives_ff13de	life_lost	0xFF13DE	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff13de	life_gained	0xFF13DE	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

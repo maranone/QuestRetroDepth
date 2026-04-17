@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "trickykick",
+  "display_name": "Tricky Kick (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Tricky Kick (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f0b9e:05",
+          "desc": "Infinite Time",
+          "address": "0x1F0B9E"
+        },
+        {
+          "code": "1f0ba6:01",
+          "desc": "Unlock All Special Levels (MILKYWAY)",
+          "address": "0x1F0BA6"
+        },
+        {
+          "code": "1f0bd6:01",
+          "desc": "Unlock All Normal Levels (EARTHIAN)",
+          "address": "0x1F0BD6"
+        },
+        {
+          "code": "1f0bd7:01",
+          "desc": "Press Select to Complete Level (MINDSIZE)",
+          "address": "0x1F0BD7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

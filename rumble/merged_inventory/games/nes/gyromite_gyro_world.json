@@ -1,0 +1,85 @@
+{
+  "system": "nes",
+  "normalized_title": "gyromitegyro",
+  "display_name": "Gyromite _ Gyro (World)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gyromite _ Gyro (World).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 13,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "SUZAAI",
+          "desc": "Infinite lives",
+          "address": "0x0530"
+        },
+        {
+          "code": "ZEAAUS",
+          "desc": "Slow down timer",
+          "address": "0x0503"
+        },
+        {
+          "code": "PEUAGLIA",
+          "desc": "Start with 1 life",
+          "address": "0x030C"
+        },
+        {
+          "code": "ZEUAGLIE",
+          "desc": "Start with 10 lives",
+          "address": "0x030C"
+        },
+        {
+          "code": "GOUAGLIA",
+          "desc": "Start with 20 lives",
+          "address": "0x031C"
+        },
+        {
+          "code": "0039:05",
+          "desc": "Infinite Lives",
+          "address": "0x0039"
+        },
+        {
+          "code": "OLEPAIOP",
+          "desc": "Makes Radishes Useless",
+          "address": "0x0538"
+        },
+        {
+          "code": "0031:00",
+          "desc": "Phase Highlighter Modifier (00-27)",
+          "address": "0x0031"
+        },
+        {
+          "code": "0032:00",
+          "desc": "Phase Modifier (00-27)",
+          "address": "0x0032"
+        },
+        {
+          "code": "0039:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x0039"
+        },
+        {
+          "code": "005D:99",
+          "desc": "Infinite Time (Ten's &amp; One's)",
+          "address": "0x005D"
+        },
+        {
+          "code": "005E:09",
+          "desc": "Infinite Time (Hundred's Digit)",
+          "address": "0x005E"
+        },
+        {
+          "code": "SZIEKI",
+          "desc": "Infinite Time",
+          "address": "0x05A4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

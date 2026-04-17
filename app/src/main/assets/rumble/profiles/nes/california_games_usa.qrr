@@ -1,0 +1,6 @@
+game_name=California Games (USA)
+game_key=california_games_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_0413	score	0x0413	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0414	score	0x0414	1	uint	little	prev < curr	0.8	1	right:0.350:60

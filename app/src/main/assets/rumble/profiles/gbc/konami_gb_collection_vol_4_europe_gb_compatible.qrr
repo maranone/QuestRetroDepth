@@ -1,0 +1,6 @@
+game_name=Konami GB Collection Vol.4 (Europe) (GB Compatible)
+game_key=konami_gb_collection_vol_4_europe_gb_compatible
+system=gbc
+integration_tier=contrib
+trigger	life_lost_lives_c5c8	life_lost	0xC5C8	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_c5c8	life_gained	0xC5C8	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

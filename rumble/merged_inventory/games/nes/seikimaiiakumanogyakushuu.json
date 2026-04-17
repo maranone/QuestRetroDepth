@@ -1,0 +1,41 @@
+{
+  "system": "nes",
+  "normalized_title": "seikimaiiakumanogyakushuu",
+  "display_name": "SeikimaIIAkumaNoGyakushuu",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\seikimaiiakumanogyakushuu_nes.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0x000F"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SeikimaIIAkumaNoGyakushuu-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "life",
+          "address": "0x0034",
+          "type": ">n4"
+        },
+        {
+          "name": "score",
+          "address": "0x000F",
+          "type": ">n7"
+        }
+      ],
+      "distinct_address_count": 2
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

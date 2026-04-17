@@ -1,0 +1,11 @@
+game_name=Makeruna! Makendou 2 - Kimero! Youkai Souridaijin (Japan)
+game_key=makeruna_makendou_2_kimero_youkai_souridaijin_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_0805	damage_taken	0x7E0805	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0805	death	0x7E0805	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0865	damage_taken	0x7E0865	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0865	death	0x7E0865	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_0d18	score	0x7E0D18	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0d78	score	0x7E0D78	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	level_complete_level_0815	level_complete	0x7E0815	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

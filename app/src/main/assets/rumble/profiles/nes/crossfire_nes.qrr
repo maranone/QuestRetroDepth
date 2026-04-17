@@ -1,0 +1,7 @@
+game_name=Cross Fire (USA, Japan) (Game Genie)
+game_key=CrossFire-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_05c1	life_lost	0x05C1	1	int	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_05c1	life_gained	0x05C1	1	int	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_05b9	score	0x05B9	8	nibble	big	prev < curr	0.8	1	right:0.350:60

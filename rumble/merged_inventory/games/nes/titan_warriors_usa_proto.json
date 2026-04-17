@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "titanwarriors",
+  "display_name": "Titan Warriors (USA) (Proto)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Titan Warriors (USA) (Proto).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0488:09",
+          "desc": "Infinite Lives",
+          "address": "0x0488"
+        },
+        {
+          "code": "0070:08",
+          "desc": "Invincibility",
+          "address": "0x0070"
+        },
+        {
+          "code": "0580:80",
+          "desc": "Have Triple Shot",
+          "address": "0x0580"
+        },
+        {
+          "code": "0598:80",
+          "desc": "Have Triple Shot",
+          "address": "0x0598"
+        },
+        {
+          "code": "SZSPLKVK",
+          "desc": "Infinite Lives",
+          "address": "0x042B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

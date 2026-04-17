@@ -1,0 +1,59 @@
+{
+  "system": "nes",
+  "normalized_title": "castelian",
+  "display_name": "Castelian (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Castelian (Europe)",
+    "Castelian (USA)",
+    "Castelian (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\castelian_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x000C",
+        "0x0012"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Castelian-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0012",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x000C",
+          "type": "<u3"
+        },
+        {
+          "name": "time",
+          "address": "0x0040",
+          "type": ">n4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Castelian (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

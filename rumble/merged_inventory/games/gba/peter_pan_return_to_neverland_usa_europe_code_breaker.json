@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "peterpanreturntoneverland",
+  "display_name": "Peter Pan - Return to Neverland (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Peter Pan - Return to Neverland (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 33,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "10000BC4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000BC4"
+        },
+        {
+          "code": "33005434",
+          "desc": "Infinite Health",
+          "address": "0x02005434"
+        },
+        {
+          "code": "32005000",
+          "desc": "Infinite Features",
+          "address": "0x02005000"
+        },
+        {
+          "code": "32004FCC",
+          "desc": "Invincible",
+          "address": "0x02004FCC"
+        },
+        {
+          "code": "8200B1E8",
+          "desc": "Infinite Pixie Dust",
+          "address": "0x0200B1E8"
+        },
+        {
+          "code": "72005008",
+          "desc": "Start With 1 Life",
+          "address": "0x02005008"
+        },
+        {
+          "code": "32005008",
+          "desc": "Start With 1 Life",
+          "address": "0x02005008"
+        },
+        {
+          "code": "72005008",
+          "desc": "Start With 3 Lives",
+          "address": "0x02005008"
+        },
+        {
+          "code": "32005008",
+          "desc": "Start With 3 Lives",
+          "address": "0x02005008"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 9 Lives",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32005008",
+          "desc": "Press Select For 9 Lives",
+          "address": "0x02005008"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 20 Lives",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32005008",
+          "desc": "Press Select For 20 Lives",
+          "address": "0x02005008"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 50 Lives",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32005008",
+          "desc": "Press Select For 50 Lives",
+          "address": "0x02005008"
+        },
+        {
+          "code": "32005008",
+          "desc": "Infinite Lives",
+          "address": "0x02005008"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 1 Continue",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32004F90",
+          "desc": "Press Select For 1 Continue",
+          "address": "0x02004F90"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 9 Continues",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32004F90",
+          "desc": "Press Select For 9 Continues",
+          "address": "0x02004F90"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 20 Continues",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32004F90",
+          "desc": "Press Select For 20 Continues",
+          "address": "0x02004F90"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 50 Continues",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32004F90",
+          "desc": "Press Select For 50 Continues",
+          "address": "0x02004F90"
+        },
+        {
+          "code": "32004F90",
+          "desc": "Infinite Continues",
+          "address": "0x02004F90"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Peter Pan - Return to Neverland (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 33,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "10000BC4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000BC4"
+        },
+        {
+          "code": "33005434",
+          "desc": "Infinite Health",
+          "address": "0x02005434"
+        },
+        {
+          "code": "32005000",
+          "desc": "Infinite Features",
+          "address": "0x02005000"
+        },
+        {
+          "code": "32004FCC",
+          "desc": "Invincible",
+          "address": "0x02004FCC"
+        },
+        {
+          "code": "8200B1E8",
+          "desc": "Infinite Pixie Dust",
+          "address": "0x0200B1E8"
+        },
+        {
+          "code": "72005008",
+          "desc": "Start With 1 Life",
+          "address": "0x02005008"
+        },
+        {
+          "code": "32005008",
+          "desc": "Start With 1 Life",
+          "address": "0x02005008"
+        },
+        {
+          "code": "72005008",
+          "desc": "Start With 3 Lives",
+          "address": "0x02005008"
+        },
+        {
+          "code": "32005008",
+          "desc": "Start With 3 Lives",
+          "address": "0x02005008"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 9 Lives",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32005008",
+          "desc": "Press Select For 9 Lives",
+          "address": "0x02005008"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 20 Lives",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32005008",
+          "desc": "Press Select For 20 Lives",
+          "address": "0x02005008"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 50 Lives",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32005008",
+          "desc": "Press Select For 50 Lives",
+          "address": "0x02005008"
+        },
+        {
+          "code": "32005008",
+          "desc": "Infinite Lives",
+          "address": "0x02005008"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 1 Continue",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32004F90",
+          "desc": "Press Select For 1 Continue",
+          "address": "0x02004F90"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 9 Continues",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32004F90",
+          "desc": "Press Select For 9 Continues",
+          "address": "0x02004F90"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 20 Continues",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32004F90",
+          "desc": "Press Select For 20 Continues",
+          "address": "0x02004F90"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 50 Continues",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32004F90",
+          "desc": "Press Select For 50 Continues",
+          "address": "0x02004F90"
+        },
+        {
+          "code": "32004F90",
+          "desc": "Infinite Continues",
+          "address": "0x02004F90"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

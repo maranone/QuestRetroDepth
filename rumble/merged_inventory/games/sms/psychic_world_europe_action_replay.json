@@ -1,0 +1,100 @@
+{
+  "system": "sms",
+  "normalized_title": "psychicworld",
+  "display_name": "Psychic World (Europe) (Action Replay)",
+  "aliases": [
+    "Psychic World (Europe) (Action Replay)",
+    "Psychic World (Europe, Brazil)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\psychicworld_sms.json",
+      "trigger_count": 9,
+      "field_names": [
+        "health",
+        "score0",
+        "score1",
+        "score2",
+        "score3",
+        "score4",
+        "score5",
+        "score6"
+      ],
+      "field_count": 8,
+      "distinct_addresses": [
+        "0xC133",
+        "0xC134",
+        "0xC135",
+        "0xC136",
+        "0xC137",
+        "0xC138",
+        "0xC139",
+        "0xDF11"
+      ],
+      "distinct_address_count": 8
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\PsychicWorld-Sms-v0\\data.json",
+      "field_count": 9,
+      "fields": [
+        {
+          "name": "esp_health",
+          "address": "0xDF12",
+          "type": "|u1"
+        },
+        {
+          "name": "health",
+          "address": "0xDF11",
+          "type": "|u1"
+        },
+        {
+          "name": "score0",
+          "address": "0xC133",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0xC134",
+          "type": "|u1"
+        },
+        {
+          "name": "score2",
+          "address": "0xC135",
+          "type": "|u1"
+        },
+        {
+          "name": "score3",
+          "address": "0xC136",
+          "type": "|u1"
+        },
+        {
+          "name": "score4",
+          "address": "0xC137",
+          "type": "|u1"
+        },
+        {
+          "name": "score5",
+          "address": "0xC138",
+          "type": "|u1"
+        },
+        {
+          "name": "score6",
+          "address": "0xC139",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 9
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Psychic World (Europe, Brazil).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

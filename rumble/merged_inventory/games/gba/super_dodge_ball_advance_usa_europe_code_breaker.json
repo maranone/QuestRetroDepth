@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "superdodgeballadvance",
+  "display_name": "Super Dodge Ball Advance (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Super Dodge Ball Advance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1000E840",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200E840"
+        },
+        {
+          "code": "820010EE",
+          "desc": "Team 1-P1 Infinite Health",
+          "address": "0x020010EE"
+        },
+        {
+          "code": "82001216",
+          "desc": "Team 1-P2 Infinite Health",
+          "address": "0x02001216"
+        },
+        {
+          "code": "8200133E",
+          "desc": "Team 1-P3 Infinite Health",
+          "address": "0x0200133E"
+        },
+        {
+          "code": "82001466",
+          "desc": "Team 1-P4 Infinite Health",
+          "address": "0x02001466"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Super Dodge Ball Advance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1000E840",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200E840"
+        },
+        {
+          "code": "820010EE",
+          "desc": "Team 1-P1 Infinite Health",
+          "address": "0x020010EE"
+        },
+        {
+          "code": "82001216",
+          "desc": "Team 1-P2 Infinite Health",
+          "address": "0x02001216"
+        },
+        {
+          "code": "8200133E",
+          "desc": "Team 1-P3 Infinite Health",
+          "address": "0x0200133E"
+        },
+        {
+          "code": "82001466",
+          "desc": "Team 1-P4 Infinite Health",
+          "address": "0x02001466"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

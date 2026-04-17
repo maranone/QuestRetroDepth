@@ -1,0 +1,14 @@
+game_name=Ganbare Goemon 2 - Kiteretsu Shougun Magginesu (Japan) (Action Replay)
+game_key=ganbare_goemon_2_kiteretsu_shougun_magginesu_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_0498	life_lost	0x7E0498	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0498	life_gained	0x7E0498	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_0475	pickup	0x7E0475	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_1b49	damage_taken	0x7E1B49	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1b49	death	0x7E1B49	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_05c6	damage_taken	0x7E05C6	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05c6	death	0x7E05C6	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0446	damage_taken	0x7E0446	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0446	death	0x7E0446	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0474	pickup	0x7E0474	1	uint	little	prev != curr	0.8	1	right:0.250:18

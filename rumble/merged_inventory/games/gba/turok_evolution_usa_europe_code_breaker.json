@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "turokevolution",
+  "display_name": "Turok Evolution (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Turok Evolution (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1000B844",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200B844"
+        },
+        {
+          "code": "33005025",
+          "desc": "Infinite Health",
+          "address": "0x02005025"
+        },
+        {
+          "code": "33005024",
+          "desc": "Infinite Armor",
+          "address": "0x02005024"
+        },
+        {
+          "code": "33005031",
+          "desc": "Infinite Stars",
+          "address": "0x02005031"
+        },
+        {
+          "code": "330050A2",
+          "desc": "Invincible",
+          "address": "0x020050A2"
+        },
+        {
+          "code": "3300518C",
+          "desc": "Rapid Fire",
+          "address": "0x0200518C"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press A For Moon Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "830050B2",
+          "desc": "Press A For Moon Jump",
+          "address": "0x020050B2"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Turok Evolution (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1000B844",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200B844"
+        },
+        {
+          "code": "33005025",
+          "desc": "Infinite Health",
+          "address": "0x02005025"
+        },
+        {
+          "code": "33005024",
+          "desc": "Infinite Armor",
+          "address": "0x02005024"
+        },
+        {
+          "code": "33005031",
+          "desc": "Infinite Stars",
+          "address": "0x02005031"
+        },
+        {
+          "code": "330050A2",
+          "desc": "Invincible",
+          "address": "0x020050A2"
+        },
+        {
+          "code": "3300518C",
+          "desc": "Rapid Fire",
+          "address": "0x0200518C"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press A For Moon Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "830050B2",
+          "desc": "Press A For Moon Jump",
+          "address": "0x020050B2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

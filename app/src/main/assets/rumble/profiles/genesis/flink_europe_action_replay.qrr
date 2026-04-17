@@ -1,0 +1,7 @@
+game_name=Flink (Europe) (Action Replay)
+game_key=flink_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ffa2ca	life_lost	0xFFA2CA	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffa2ca	life_gained	0xFFA2CA	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_ffc86a	enemy_defeated	0xFFC86A	1	uint	little	prev > curr	0.65	1	right:0.450:35

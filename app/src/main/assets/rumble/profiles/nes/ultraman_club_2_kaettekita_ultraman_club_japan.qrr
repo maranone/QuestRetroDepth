@@ -1,0 +1,11 @@
+game_name=Ultraman Club 2 - Kaettekita Ultraman Club (Japan)
+game_key=ultraman_club_2_kaettekita_ultraman_club_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0400	damage_taken	0x0400	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0400	death	0x0400	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0401	damage_taken	0x0401	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0401	death	0x0401	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0402	damage_taken	0x0402	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0402	death	0x0402	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_00d4	level_complete	0x00D4	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

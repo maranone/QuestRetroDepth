@@ -1,0 +1,152 @@
+{
+  "system": "nes",
+  "normalized_title": "rampage",
+  "display_name": "Rampage (USA) (Game Genie)",
+  "aliases": [
+    "Rampage (USA) (Game Genie)",
+    "Rampage (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\rampage_nes.json",
+      "trigger_count": 7,
+      "field_names": [
+        "health",
+        "score0",
+        "score1",
+        "score2",
+        "score3",
+        "score4"
+      ],
+      "field_count": 6,
+      "distinct_addresses": [
+        "0x011C",
+        "0x011D",
+        "0x011E",
+        "0x011F",
+        "0x0120",
+        "0x012B"
+      ],
+      "distinct_address_count": 6
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Rampage-Nes-v0\\data.json",
+      "field_count": 6,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x012B",
+          "type": "|u1"
+        },
+        {
+          "name": "score0",
+          "address": "0x0120",
+          "type": "|i1"
+        },
+        {
+          "name": "score1",
+          "address": "0x011F",
+          "type": "|i1"
+        },
+        {
+          "name": "score2",
+          "address": "0x011E",
+          "type": "|i1"
+        },
+        {
+          "name": "score3",
+          "address": "0x011D",
+          "type": "|i1"
+        },
+        {
+          "name": "score4",
+          "address": "0x011C",
+          "type": "|i1"
+        }
+      ],
+      "distinct_address_count": 6
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rampage (USA).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "GAPEOZ",
+          "desc": "Sometimes Punching Buildings Will Increase Or Decrease Your Health",
+          "address": "0x0281"
+        },
+        {
+          "code": "STZOPY",
+          "desc": "Same Music Every Level",
+          "address": "0x07E1"
+        },
+        {
+          "code": "012B:FF",
+          "desc": "Infinite Health P1",
+          "address": "0x012B"
+        },
+        {
+          "code": "0119:09",
+          "desc": "Max Score P1",
+          "address": "0x0119"
+        },
+        {
+          "code": "011A:09",
+          "desc": "Max Score P1",
+          "address": "0x011A"
+        },
+        {
+          "code": "011B:09",
+          "desc": "Max Score P1",
+          "address": "0x011B"
+        },
+        {
+          "code": "011C:09",
+          "desc": "Max Score P1",
+          "address": "0x011C"
+        },
+        {
+          "code": "011D:09",
+          "desc": "Max Score P1",
+          "address": "0x011D"
+        },
+        {
+          "code": "011E:09",
+          "desc": "Max Score P1",
+          "address": "0x011E"
+        },
+        {
+          "code": "011F:09",
+          "desc": "Max Score P1",
+          "address": "0x011F"
+        },
+        {
+          "code": "0120:09",
+          "desc": "Max Score P1",
+          "address": "0x0120"
+        },
+        {
+          "code": "00B4:01",
+          "desc": "Day Modifier",
+          "address": "0x00B4"
+        },
+        {
+          "code": "0100:01",
+          "desc": "Character Highlight Modifier P1",
+          "address": "0x0100"
+        },
+        {
+          "code": "058E:01",
+          "desc": "Enable Day Select after Character Select Screen",
+          "address": "0x058E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

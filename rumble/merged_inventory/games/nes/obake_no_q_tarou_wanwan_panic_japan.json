@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "obakenoqtarouwanwanpanic",
+  "display_name": "Obake no Q Tarou - Wanwan Panic (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Obake no Q Tarou - Wanwan Panic (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "02FF:00",
+          "desc": "Invincibility",
+          "address": "0x02FF"
+        },
+        {
+          "code": "002B:3F",
+          "desc": "Infinite Power",
+          "address": "0x002B"
+        },
+        {
+          "code": "0060:04",
+          "desc": "Infinite Weapon",
+          "address": "0x0060"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

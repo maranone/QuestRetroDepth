@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "dinotopiatimestonepirates",
+  "display_name": "Dinotopia - The Timestone Pirates (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Dinotopia - The Timestone Pirates (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10009948",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02009948"
+        },
+        {
+          "code": "33001A1C",
+          "desc": "Infinite Health",
+          "address": "0x02001A1C"
+        },
+        {
+          "code": "33000664",
+          "desc": "Infinite Power",
+          "address": "0x02000664"
+        },
+        {
+          "code": "330019BF",
+          "desc": "Infinite Oxygen",
+          "address": "0x020019BF"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select To Have Egg",
+          "address": "0x02000020"
+        },
+        {
+          "code": "330005B0",
+          "desc": "Press Select To Have Egg",
+          "address": "0x020005B0"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Floater (Jump Then Hold R)",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83001A08",
+          "desc": "Floater (Jump Then Hold R)",
+          "address": "0x02001A08"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Dinotopia - The Timestone Pirates (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10009948",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02009948"
+        },
+        {
+          "code": "33001A1C",
+          "desc": "Infinite Health",
+          "address": "0x02001A1C"
+        },
+        {
+          "code": "33000664",
+          "desc": "Infinite Power",
+          "address": "0x02000664"
+        },
+        {
+          "code": "330019BF",
+          "desc": "Infinite Oxygen",
+          "address": "0x020019BF"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select To Have Egg",
+          "address": "0x02000020"
+        },
+        {
+          "code": "330005B0",
+          "desc": "Press Select To Have Egg",
+          "address": "0x020005B0"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Floater (Jump Then Hold R)",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83001A08",
+          "desc": "Floater (Jump Then Hold R)",
+          "address": "0x02001A08"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

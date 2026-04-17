@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "karateka",
+  "display_name": "Karateka (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Karateka (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 9,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0229:01",
+          "desc": "Easy Win",
+          "address": "0x0229"
+        },
+        {
+          "code": "0209:0F",
+          "desc": "Infinite Energy",
+          "address": "0x0209"
+        },
+        {
+          "code": "0201:FF",
+          "desc": "Completes Each Stage For You",
+          "address": "0x0201"
+        },
+        {
+          "code": "0205:00",
+          "desc": "Action Modifier",
+          "address": "0x0205"
+        },
+        {
+          "code": "0225:00",
+          "desc": "Enemy Action Modifier",
+          "address": "0x0225"
+        },
+        {
+          "code": "0012:00",
+          "desc": "Stage (Background) Horizontal Control",
+          "address": "0x0012"
+        },
+        {
+          "code": "0013:00",
+          "desc": "Stage (Background) Vertical Control",
+          "address": "0x0013"
+        },
+        {
+          "code": "0201:BE",
+          "desc": "Your Position In Stage",
+          "address": "0x0201"
+        },
+        {
+          "code": "0209:0C",
+          "desc": "Infinite Hits",
+          "address": "0x0209"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

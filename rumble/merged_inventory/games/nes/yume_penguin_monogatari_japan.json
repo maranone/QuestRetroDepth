@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "yumepenguinmonogatari",
+  "display_name": "Yume Penguin Monogatari (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Yume Penguin Monogatari (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "07E0:01",
+          "desc": "Always Thin",
+          "address": "0x07E0"
+        },
+        {
+          "code": "0075:00",
+          "desc": "Always Invincible After Pickup",
+          "address": "0x0075"
+        },
+        {
+          "code": "004B:03",
+          "desc": "Always Invincible/Copter",
+          "address": "0x004B"
+        },
+        {
+          "code": "0022:FF",
+          "desc": "Infinite Maximum Time",
+          "address": "0x0022"
+        },
+        {
+          "code": "0048:02",
+          "desc": "Invincibility",
+          "address": "0x0048"
+        },
+        {
+          "code": "SXKEAVSE",
+          "desc": "Never Get Fat",
+          "address": "0x06A8"
+        },
+        {
+          "code": "EIUATLEY",
+          "desc": "Invincibility",
+          "address": "0x035E"
+        },
+        {
+          "code": "ESSEXTEY",
+          "desc": "Invincibility",
+          "address": "0x06DA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

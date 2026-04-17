@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "legoislandxtremestunts",
+  "display_name": "LEGO Island - Xtreme Stunts (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\LEGO Island - Xtreme Stunts (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10003824",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003824"
+        },
+        {
+          "code": "32024B7C",
+          "desc": "Infinite Time",
+          "address": "0x02024B7C"
+        },
+        {
+          "code": "82024B8C",
+          "desc": "Infinite Health",
+          "address": "0x02024B8C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\LEGO Island - Xtreme Stunts (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10003824",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003824"
+        },
+        {
+          "code": "32024B7C",
+          "desc": "Infinite Time",
+          "address": "0x02024B7C"
+        },
+        {
+          "code": "82024B8C",
+          "desc": "Infinite Health",
+          "address": "0x02024B8C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "duelmastersshadowofcode",
+  "display_name": "Duel Masters - Shadow of the Code (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Duel Masters - Shadow of the Code (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "430047E0",
+          "desc": "Access All Area",
+          "address": "0x020047E0"
+        },
+        {
+          "code": "83004A30",
+          "desc": "Give 50000 Credits {Money)",
+          "address": "0x02004A30"
+        },
+        {
+          "code": "43004A36",
+          "desc": "Have All Cards",
+          "address": "0x02004A36"
+        },
+        {
+          "code": "4300481E",
+          "desc": "All Shadow Code (Use at your own risk)",
+          "address": "0x0200481E"
+        },
+        {
+          "code": "43004CAC",
+          "desc": "Have All Games",
+          "address": "0x02004CAC"
+        },
+        {
+          "code": "43004804",
+          "desc": "Have All Picture",
+          "address": "0x02004804"
+        },
+        {
+          "code": "430047EE",
+          "desc": "Win All House Rule Tournament (Can be used anytime)",
+          "address": "0x020047EE"
+        },
+        {
+          "code": "33001635",
+          "desc": "Enemy Has No Shields",
+          "address": "0x02001635"
+        },
+        {
+          "code": "33001609",
+          "desc": "Infinite Shields",
+          "address": "0x02001609"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Duel Masters - Shadow of the Code (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "430047E0",
+          "desc": "Access All Area",
+          "address": "0x020047E0"
+        },
+        {
+          "code": "83004A30",
+          "desc": "Give 50000 Credits {Money)",
+          "address": "0x02004A30"
+        },
+        {
+          "code": "43004A36",
+          "desc": "Have All Cards",
+          "address": "0x02004A36"
+        },
+        {
+          "code": "4300481E",
+          "desc": "All Shadow Code (Use at your own risk)",
+          "address": "0x0200481E"
+        },
+        {
+          "code": "43004CAC",
+          "desc": "Have All Games",
+          "address": "0x02004CAC"
+        },
+        {
+          "code": "43004804",
+          "desc": "Have All Picture",
+          "address": "0x02004804"
+        },
+        {
+          "code": "430047EE",
+          "desc": "Win All House Rule Tournament (Can be used anytime)",
+          "address": "0x020047EE"
+        },
+        {
+          "code": "33001635",
+          "desc": "Enemy Has No Shields",
+          "address": "0x02001635"
+        },
+        {
+          "code": "33001609",
+          "desc": "Infinite Shields",
+          "address": "0x02001609"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "system": "nes",
+  "normalized_title": "trog",
+  "display_name": "Trog! (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Trog! (USA)",
+    "Trog! (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\trog_nes.json",
+      "trigger_count": 4,
+      "field_names": [
+        "gameover",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x03E4",
+        "0x03EC",
+        "0x0662"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Trog-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0x0662",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x03E4",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x03EC",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Trog! (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "XTXATOVS",
+          "desc": "Infinite Lives",
+          "address": "0x016E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "vssupermariobros",
+  "display_name": "VS. Super Mario Bros. (VS)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\VS. Super Mario Bros. (VS).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "LZPOAY",
+          "desc": "Goto -1 World",
+          "address": "0x07A0"
+        },
+        {
+          "code": "YIPOZN",
+          "desc": "Goto -1 World",
+          "address": "0x07D2"
+        },
+        {
+          "code": "YAPOLY",
+          "desc": "Goto -1 World",
+          "address": "0x0783"
+        },
+        {
+          "code": "SXAOUE",
+          "desc": "Infinite Lives",
+          "address": "0x00A3"
+        },
+        {
+          "code": "SXEOUEVK",
+          "desc": "Infinite Lives",
+          "address": "0x00AB"
+        },
+        {
+          "code": "IENPYTZA",
+          "desc": "Start with 6 Lives",
+          "address": "0x060F"
+        },
+        {
+          "code": "AENPYTZE",
+          "desc": "Start with 9 Lives",
+          "address": "0x060F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "system": "pce",
+  "normalized_title": "rastansagaii",
+  "display_name": "Rastan Saga II (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Rastan Saga II (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1f10ef:09",
+          "desc": "Infinite Time",
+          "address": "0x1F10EF"
+        },
+        {
+          "code": "1f10f0:09",
+          "desc": "Infinite Time",
+          "address": "0x1F10F0"
+        },
+        {
+          "code": "1f10f1:09",
+          "desc": "Infinite Time",
+          "address": "0x1F10F1"
+        },
+        {
+          "code": "1f0219:0a",
+          "desc": "Infinite Energy",
+          "address": "0x1F0219"
+        },
+        {
+          "code": "1f121a:14",
+          "desc": "Invincibility",
+          "address": "0x1F121A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

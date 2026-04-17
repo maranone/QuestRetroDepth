@@ -1,0 +1,7 @@
+game_name=Bikkuriman World - Gekitou Sei Senshi (Japan)
+game_key=bikkuriman_world_gekitou_sei_senshi_japan
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_058d	pickup	0x058D	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_0636	enemy_defeated	0x0636	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0637	enemy_defeated	0x0637	1	uint	little	prev > curr	0.65	1	right:0.450:35

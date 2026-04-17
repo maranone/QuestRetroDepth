@@ -2,5 +2,5 @@
 # game_name=SoulBlazer
 # match_names=soulblazer|soulblazersnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-damage_taken_0_1b88,0x7E1B88,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
-death_1_a65,0x7E0A65,1,uint,became_zero,,both,1.000,normal,0,500,400,90,
+damage_taken_0_1b88,0x7E1B88,1,uint,prev_gt_curr,,left,0.78,fade_out,0,180,80,70,
+death_1_a65,0x7E0A65,1,uint,became_zero,,both,1.000,heartbeat,0,500,400,90,

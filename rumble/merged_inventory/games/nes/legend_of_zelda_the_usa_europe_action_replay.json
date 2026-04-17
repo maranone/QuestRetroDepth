@@ -1,0 +1,139 @@
+{
+  "system": "nes",
+  "normalized_title": "legendofzelda",
+  "display_name": "Legend of Zelda, The (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Legend of Zelda, The (Europe)",
+    "Legend of Zelda, The (USA) (Rev 1)",
+    "Legend of Zelda, The (USA)",
+    "Legend of Zelda, The (USA, Europe) (Action Replay)",
+    "Legend of Zelda, The (USA, Europe) (Game Genie)",
+    "Legend of Zelda, The (USA) (S)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Legend of Zelda, The (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 21,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "YYKPOYZZ",
+          "desc": "Create Character With 8 Life Hearts",
+          "address": "0x0779"
+        },
+        {
+          "code": "NYKPOYZX",
+          "desc": "Create Character With 16 Life Hearts",
+          "address": "0x0779"
+        },
+        {
+          "code": "AEVEVALG",
+          "desc": "All Items For Free",
+          "address": "0x008E"
+        },
+        {
+          "code": "AAVATTEZ",
+          "desc": "Buy The Large Shield For Free (Instead Of $160) In The Cave Just Northwest Of Where You Start The Game",
+          "address": "0x060E"
+        },
+        {
+          "code": "AAVAYTGT",
+          "desc": "Buy Keys For Free (Instead Of $100) In The Cave Just Northwest Of Where You Start The Game",
+          "address": "0x060F"
+        },
+        {
+          "code": "AAVEAVGL",
+          "desc": "Buy The Blue Candle For Free (Instead Of $60) In The Cave Just Northwest Of Where You Start The Game",
+          "address": "0x0688"
+        },
+        {
+          "code": "XPZAYV",
+          "desc": "All Items Are Free",
+          "address": "0x0617"
+        },
+        {
+          "code": "AAVATTEZ",
+          "desc": "Buy The Large Shield For Free (Instead of $160) In The Cave Just Northwest of Where You Start The Game",
+          "address": "0x060E"
+        },
+        {
+          "code": "AAVAYTGT",
+          "desc": "Buy Keys For Free (Instead of $100) In The Cave Just Northwest of Where You Start The Game",
+          "address": "0x060F"
+        },
+        {
+          "code": "AAVEAVGL",
+          "desc": "Buy The Blue Candle For Free (Instead of $60) In The Cave Just Northwest of Where You Start The Game",
+          "address": "0x0688"
+        },
+        {
+          "code": "SXPAPO",
+          "desc": "Some Enemies Can't Move",
+          "address": "0x0121"
+        },
+        {
+          "code": "SXYAPO",
+          "desc": "Walk Up A Screen, And You Can Walk All Over At The Top",
+          "address": "0x0121"
+        },
+        {
+          "code": "YGAEXP",
+          "desc": "Enemies In Shop, Enemies In Top Corner Outside And Some Enemies Are Stuck In The Laburnums",
+          "address": "0x01C2"
+        },
+        {
+          "code": "AEOANAEG",
+          "desc": "Fewer Monsters",
+          "address": "0x000F"
+        },
+        {
+          "code": "AEVATVAA",
+          "desc": "No Zolas",
+          "address": "0x060E"
+        },
+        {
+          "code": "ZAVEIVXY",
+          "desc": "Blue Ring Costs 2 Rupies",
+          "address": "0x068D"
+        },
+        {
+          "code": "ZPOPTLYO",
+          "desc": "Link Has Green Hair In Overworld",
+          "address": "0x031E"
+        },
+        {
+          "code": "TLOEKYAK",
+          "desc": "Music In Overworld Is One Note Flat",
+          "address": "0x07BC"
+        },
+        {
+          "code": "SLKEUVSY",
+          "desc": "Armos Statue Has 6 Spots On Shield",
+          "address": "0x06BB"
+        },
+        {
+          "code": "SPVEGGSA",
+          "desc": "Enemy Attacks Do Not Disable Sword",
+          "address": "0x049C"
+        },
+        {
+          "code": "OPPEEA",
+          "desc": "Faster Text Scrolling",
+          "address": "0x0090"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Legend of Zelda, The (USA) (S).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Socks the Cat Rocks the Hill (World) (Unl)
+game_key=socks_the_cat_rocks_the_hill_world_unl
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_183a	life_lost	0x7E183A	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_183a	life_gained	0x7E183A	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

@@ -1,0 +1,72 @@
+{
+  "system": "nes",
+  "normalized_title": "drmario",
+  "display_name": "Dr. Mario (Japan, USA) (Rev 1)",
+  "aliases": [
+    "Dr. Mario (Japan, USA)",
+    "Dr. Mario (World) (Game Genie)",
+    "Dr. Mario (Japan, USA) (Rev A)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dr. Mario (World) (Game Genie).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "GZNEVIVT",
+          "desc": "Vitamin Capsules Don't Fall",
+          "address": "0x05AE"
+        },
+        {
+          "code": "ZULOLZ",
+          "desc": "Game Freezes After First Capsule",
+          "address": "0x02B3"
+        },
+        {
+          "code": "POPOOP",
+          "desc": "Glitched Graphics For Level Select Screen",
+          "address": "0x0191"
+        },
+        {
+          "code": "PELOLZ",
+          "desc": "Game Freezes, The Music Stops",
+          "address": "0x0283"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Dr. Mario (Japan, USA) (Rev A).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "GZNEVIVT",
+          "desc": "Vitamin Capsules Don't Fall",
+          "address": "0x05AE"
+        },
+        {
+          "code": "ZULOLZ",
+          "desc": "Game Freezes After First Capsule",
+          "address": "0x02B3"
+        },
+        {
+          "code": "POPOOP",
+          "desc": "Glitched Graphics For Level Select Screen",
+          "address": "0x0191"
+        },
+        {
+          "code": "PELOLZ",
+          "desc": "Game Freezes, The Music Stops",
+          "address": "0x0283"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "f1triplebattle",
+  "display_name": "F1 Triple Battle (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\F1 Triple Battle (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f07aa:00",
+          "desc": "Unlimited Time",
+          "address": "0x1F07AA"
+        },
+        {
+          "code": "1f07ab:00",
+          "desc": "Unlimited Time",
+          "address": "0x1F07AB"
+        },
+        {
+          "code": "1f05d3:ff",
+          "desc": "Max Speed",
+          "address": "0x1F05D3"
+        },
+        {
+          "code": "1f05d4:ff",
+          "desc": "Max Speed",
+          "address": "0x1F05D4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

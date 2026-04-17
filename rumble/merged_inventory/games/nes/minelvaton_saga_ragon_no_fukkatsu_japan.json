@@ -1,0 +1,105 @@
+{
+  "system": "nes",
+  "normalized_title": "minelvatonsagaragonnofukkatsu",
+  "display_name": "Minelvaton Saga - Ragon no Fukkatsu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Minelvaton Saga - Ragon no Fukkatsu (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 17,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "0039:FF",
+          "desc": "Mucho Gold",
+          "address": "0x0039"
+        },
+        {
+          "code": "003E:FF",
+          "desc": "Mucho HP",
+          "address": "0x003E"
+        },
+        {
+          "code": "009B:1C",
+          "desc": "No Random Battles",
+          "address": "0x009B"
+        },
+        {
+          "code": "009C:FF",
+          "desc": "No Random Battles",
+          "address": "0x009C"
+        },
+        {
+          "code": "009D:2B",
+          "desc": "No Random Battles",
+          "address": "0x009D"
+        },
+        {
+          "code": "003E:FF",
+          "desc": "Infinite Health",
+          "address": "0x003E"
+        },
+        {
+          "code": "003F:01",
+          "desc": "Infinite Health",
+          "address": "0x003F"
+        },
+        {
+          "code": "004A:FF",
+          "desc": "Infinite Magic",
+          "address": "0x004A"
+        },
+        {
+          "code": "0039:FF",
+          "desc": "Infinite Gold",
+          "address": "0x0039"
+        },
+        {
+          "code": "0041:00",
+          "desc": "Quick Kill Enemy",
+          "address": "0x0041"
+        },
+        {
+          "code": "0042:00",
+          "desc": "Quick Kill Enemy",
+          "address": "0x0042"
+        },
+        {
+          "code": "0043:00",
+          "desc": "Quick Kill Enemy",
+          "address": "0x0043"
+        },
+        {
+          "code": "07F2:01",
+          "desc": "Infinite Keys",
+          "address": "0x07F2"
+        },
+        {
+          "code": "07EC:01",
+          "desc": "Infinite Lightning Power",
+          "address": "0x07EC"
+        },
+        {
+          "code": "07ED:01",
+          "desc": "Infinite Lightning Power",
+          "address": "0x07ED"
+        },
+        {
+          "code": "07F0:01",
+          "desc": "Infinite Dungeon Warp",
+          "address": "0x07F0"
+        },
+        {
+          "code": "07F1:01",
+          "desc": "Infinite City Warp",
+          "address": "0x07F1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

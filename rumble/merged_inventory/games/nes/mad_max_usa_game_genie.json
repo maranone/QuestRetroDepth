@@ -1,0 +1,132 @@
+{
+  "system": "nes",
+  "normalized_title": "madmax",
+  "display_name": "Mad Max (USA) (Game Genie)",
+  "aliases": [
+    "Mad Max (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mad Max (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 22,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "SXNAUSSE",
+          "desc": "Infinite Fuel",
+          "address": "0x052B"
+        },
+        {
+          "code": "SXVAEVVK",
+          "desc": "Infinite ammo",
+          "address": "0x0628"
+        },
+        {
+          "code": "AENEPYAP",
+          "desc": "No damage done to car",
+          "address": "0x0789"
+        },
+        {
+          "code": "GENEPYAP",
+          "desc": "Less damage done to car",
+          "address": "0x0789"
+        },
+        {
+          "code": "AXNEPYAP",
+          "desc": "More damage done to car",
+          "address": "0x07A9"
+        },
+        {
+          "code": "AAUAUEAA",
+          "desc": "No damage done to you",
+          "address": "0x000B"
+        },
+        {
+          "code": "GAUAUEAA",
+          "desc": "Less damage done to you",
+          "address": "0x000B"
+        },
+        {
+          "code": "APUAUEAA",
+          "desc": "More damage done to you",
+          "address": "0x001B"
+        },
+        {
+          "code": "AANEPZPA",
+          "desc": "Dynamite is free",
+          "address": "0x0289"
+        },
+        {
+          "code": "AAVEGZPA",
+          "desc": "Ammo is free",
+          "address": "0x028C"
+        },
+        {
+          "code": "GEEATZYA",
+          "desc": "Cheaper arena pass",
+          "address": "0x020E"
+        },
+        {
+          "code": "GLKELZYL",
+          "desc": "Cheaper arena pass",
+          "address": "0x02BB"
+        },
+        {
+          "code": "0579:5F",
+          "desc": "Infinite Fuel",
+          "address": "0x0579"
+        },
+        {
+          "code": "0579:FF",
+          "desc": "Infinite Fuel",
+          "address": "0x0579"
+        },
+        {
+          "code": "057A:FF",
+          "desc": "Infinite Food",
+          "address": "0x057A"
+        },
+        {
+          "code": "057B:FF",
+          "desc": "Infinite Water",
+          "address": "0x057B"
+        },
+        {
+          "code": "057C:00",
+          "desc": "No Damage",
+          "address": "0x057C"
+        },
+        {
+          "code": "057D:00",
+          "desc": "Infinite Dynamite",
+          "address": "0x057D"
+        },
+        {
+          "code": "057E:FF",
+          "desc": "Infinite Health",
+          "address": "0x057E"
+        },
+        {
+          "code": "057F:FF",
+          "desc": "Infinite Ammo",
+          "address": "0x057F"
+        },
+        {
+          "code": "0580:FF",
+          "desc": "Infinite Keys",
+          "address": "0x0580"
+        },
+        {
+          "code": "0581:FF",
+          "desc": "Have Pass",
+          "address": "0x0581"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

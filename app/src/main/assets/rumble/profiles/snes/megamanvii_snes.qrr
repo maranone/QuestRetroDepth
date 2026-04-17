@@ -1,5 +1,0 @@
-game_name=MegamanVii
-game_key=MegamanVii-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_bd1	damage_taken	0x7E0BD1	1	uint	native	prev > curr	0.85	1	left:0.750:180

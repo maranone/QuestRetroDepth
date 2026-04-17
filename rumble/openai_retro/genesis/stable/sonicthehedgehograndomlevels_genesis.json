@@ -1,0 +1,70 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "SonicTheHedgehogRandomLevels",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\SonicTheHedgehogRandomLevels-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "SonicTheHedgehogRandomLevels-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "game_over_gameover_ffd038",
+      "event": "game_over",
+      "watch": [
+        {
+          "absolute_address": "0xFFD038",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFD038",
+          "ram_offset": 53304
+        }
+      ],
+      "condition": "prev == 0 && curr != 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Explicit game-over flag.",
+      "source_fields": [
+        {
+          "name": "gameover",
+          "address": "0xFFD038",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "preset",
+      "meta": {
+        "address": 16763216,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "x",
+      "meta": {
+        "address": 16764936,
+        "type": ">i2"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Hat Trick Hero 2 (Japan)
+game_key=hat_trick_hero_2_japan
+system=snes
+integration_tier=contrib
+trigger	score_score_07ae	score	0x7E07AE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_07af	score	0x7E07AF	1	uint	little	prev < curr	0.8	1	right:0.350:60

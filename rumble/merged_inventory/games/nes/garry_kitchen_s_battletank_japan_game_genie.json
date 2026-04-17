@@ -1,0 +1,87 @@
+{
+  "system": "nes",
+  "normalized_title": "garrykitchensbattletank",
+  "display_name": "Garry Kitchen's BattleTank (Japan) (Game Genie)",
+  "aliases": [
+    "Garry Kitchen's Battletank (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Garry Kitchen's Battletank (USA).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 13,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "SXOPAAVT",
+          "desc": "Take infinite hits",
+          "address": "0x0028"
+        },
+        {
+          "code": "SKOPAAVT",
+          "desc": "Infinite Energy",
+          "address": "0x0048"
+        },
+        {
+          "code": "SKUAANSE",
+          "desc": "Infinite Fuel",
+          "address": "0x0748"
+        },
+        {
+          "code": "00A2:00",
+          "desc": "Infinite Energy",
+          "address": "0x00A2"
+        },
+        {
+          "code": "0663:FF",
+          "desc": "Infinite Fuel",
+          "address": "0x0663"
+        },
+        {
+          "code": "053E:32",
+          "desc": "Infinite 150 mm",
+          "address": "0x053E"
+        },
+        {
+          "code": "0540:01",
+          "desc": "Infinite Wires",
+          "address": "0x0540"
+        },
+        {
+          "code": "0541:01",
+          "desc": "Infinite Smoke",
+          "address": "0x0541"
+        },
+        {
+          "code": "0542:96",
+          "desc": "Infinite .50 cal",
+          "address": "0x0542"
+        },
+        {
+          "code": "053E:FF",
+          "desc": "Infinite 150mm",
+          "address": "0x053E"
+        },
+        {
+          "code": "0540:FF",
+          "desc": "Infinite Wires",
+          "address": "0x0540"
+        },
+        {
+          "code": "0541:FF",
+          "desc": "Infinite Smoke",
+          "address": "0x0541"
+        },
+        {
+          "code": "0542:FF",
+          "desc": "Infinite .50 Cal",
+          "address": "0x0542"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

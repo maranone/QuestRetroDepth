@@ -1,0 +1,6 @@
+game_name=Little League Baseball - Championship Series (USA)
+game_key=little_league_baseball_championship_series_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_048c	score	0x048C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_048b	score	0x048B	1	uint	little	prev < curr	0.8	1	right:0.350:60

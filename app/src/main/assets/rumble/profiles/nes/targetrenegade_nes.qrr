@@ -1,0 +1,7 @@
+game_name=Target Renegade (USA) (Game Genie)
+game_key=TargetRenegade-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_00da	damage_taken	0x00DA	1	int	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00da	death	0x00DA	1	int	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_03c3	score	0x03C3	6	nibble	big	prev < curr	0.8	1	right:0.350:60

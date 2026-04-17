@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "ninjajajamarukun",
+  "display_name": "Ninja Jajamaru-kun (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ninja Jajamaru-kun (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0028:00",
+          "desc": "Win Level Now",
+          "address": "0x0028"
+        },
+        {
+          "code": "0021:02",
+          "desc": "Infinite Lives",
+          "address": "0x0021"
+        },
+        {
+          "code": "002A:78",
+          "desc": "Infinite Time",
+          "address": "0x002A"
+        },
+        {
+          "code": "0440:00",
+          "desc": "Stop Fireballs",
+          "address": "0x0440"
+        },
+        {
+          "code": "0025:09",
+          "desc": "Always Have 9 Souls",
+          "address": "0x0025"
+        },
+        {
+          "code": "AAVPEZPZ",
+          "desc": "Hit Anywhere",
+          "address": "0x0208"
+        },
+        {
+          "code": "SXXPXXSE",
+          "desc": "Hit Anywhere",
+          "address": "0x022A"
+        },
+        {
+          "code": "AANPEZTA",
+          "desc": "Hit Anywhere",
+          "address": "0x0208"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

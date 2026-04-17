@@ -1,0 +1,36 @@
+game_name=First Queen - Ornic Senki (Japan)
+game_key=first_queen_ornic_senki_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_5fd3	damage_taken	0x7E5FD3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_5fd3	death	0x7E5FD3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_6013	damage_taken	0x7E6013	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6013	death	0x7E6013	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_6053	damage_taken	0x7E6053	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6053	death	0x7E6053	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_6093	damage_taken	0x7E6093	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6093	death	0x7E6093	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_60d3	damage_taken	0x7E60D3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_60d3	death	0x7E60D3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_6113	damage_taken	0x7E6113	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6113	death	0x7E6113	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_6153	damage_taken	0x7E6153	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6153	death	0x7E6153	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_6193	damage_taken	0x7E6193	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6193	death	0x7E6193	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_61d3	damage_taken	0x7E61D3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_61d3	death	0x7E61D3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_6213	damage_taken	0x7E6213	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6213	death	0x7E6213	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_6253	damage_taken	0x7E6253	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6253	death	0x7E6253	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_6293	damage_taken	0x7E6293	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6293	death	0x7E6293	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_62d3	damage_taken	0x7E62D3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_62d3	death	0x7E62D3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_6313	damage_taken	0x7E6313	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6313	death	0x7E6313	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_6353	damage_taken	0x7E6353	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6353	death	0x7E6353	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_6393	damage_taken	0x7E6393	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6393	death	0x7E6393	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

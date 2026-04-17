@@ -1,0 +1,8 @@
+game_name=Pac-Man 2 - The New Adventures (USA) (Action Replay)
+game_key=pac_man_2_the_new_adventures_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ff0da4	life_lost	0xFF0DA4	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff0da4	life_gained	0xFF0DA4	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_ff0da5	life_lost	0xFF0DA5	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff0da5	life_gained	0xFF0DA5	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

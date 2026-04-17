@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "gegegenokitaroukikiippatsuyoukairettou",
+  "display_name": "Gegege no Kitarou - Kikiippatsu! Youkai Rettou (Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Gegege no Kitarou - Kikiippatsu! Youkai Rettou (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "100013C0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020013C0"
+        },
+        {
+          "code": "33000CD4",
+          "desc": "Infinite HP",
+          "address": "0x02000CD4"
+        },
+        {
+          "code": "33000CD6",
+          "desc": "Infinite MP",
+          "address": "0x02000CD6"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press A For Moon Jump",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83000C88",
+          "desc": "Press A For Moon Jump",
+          "address": "0x02000C88"
+        },
+        {
+          "code": "33000CAE",
+          "desc": "Infinite Mid-Air Jumps",
+          "address": "0x02000CAE"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Gegege no Kitarou - Kikiippatsu! Youkai Rettou (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "100013C0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020013C0"
+        },
+        {
+          "code": "33000CD4",
+          "desc": "Infinite HP",
+          "address": "0x02000CD4"
+        },
+        {
+          "code": "33000CD6",
+          "desc": "Infinite MP",
+          "address": "0x02000CD6"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press A For Moon Jump",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83000C88",
+          "desc": "Press A For Moon Jump",
+          "address": "0x02000C88"
+        },
+        {
+          "code": "33000CAE",
+          "desc": "Infinite Mid-Air Jumps",
+          "address": "0x02000CAE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

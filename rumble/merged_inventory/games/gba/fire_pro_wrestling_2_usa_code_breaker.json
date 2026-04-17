@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "fireprowrestling2",
+  "display_name": "Fire Pro Wrestling 2 (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Fire Pro Wrestling 2 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "82014592",
+          "desc": "Low Timer",
+          "address": "0x02014592"
+        },
+        {
+          "code": "82013D28",
+          "desc": "Human Never Out Of Breath P1",
+          "address": "0x02013D28"
+        },
+        {
+          "code": "83004340",
+          "desc": "CPU Can't Do Grapple Moves",
+          "address": "0x02004340"
+        },
+        {
+          "code": "820140CC",
+          "desc": "CPU Is Weak",
+          "address": "0x020140CC"
+        },
+        {
+          "code": "82013D24",
+          "desc": "Human Is Strong",
+          "address": "0x02013D24"
+        },
+        {
+          "code": "82013F5C",
+          "desc": "Infinite Creation Points",
+          "address": "0x02013F5C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Fire Pro Wrestling 2 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "82014592",
+          "desc": "Low Timer",
+          "address": "0x02014592"
+        },
+        {
+          "code": "82013D28",
+          "desc": "Human Never Out Of Breath P1",
+          "address": "0x02013D28"
+        },
+        {
+          "code": "83004340",
+          "desc": "CPU Can't Do Grapple Moves",
+          "address": "0x02004340"
+        },
+        {
+          "code": "820140CC",
+          "desc": "CPU Is Weak",
+          "address": "0x020140CC"
+        },
+        {
+          "code": "82013D24",
+          "desc": "Human Is Strong",
+          "address": "0x02013D24"
+        },
+        {
+          "code": "82013F5C",
+          "desc": "Infinite Creation Points",
+          "address": "0x02013F5C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

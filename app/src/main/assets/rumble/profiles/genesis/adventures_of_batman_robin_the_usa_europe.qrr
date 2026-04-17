@@ -1,0 +1,10 @@
+game_name=Adventures of Batman _ Robin, The (USA, Europe)
+game_key=adventures_of_batman_robin_the_usa_europe
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_fff657	life_lost	0xFFF657	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff657	life_gained	0xFFF657	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_ffc1b0	damage_taken	0xFFC1B0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffc1b0	death	0xFFC1B0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_fff697	life_lost	0xFFF697	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff697	life_gained	0xFFF697	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

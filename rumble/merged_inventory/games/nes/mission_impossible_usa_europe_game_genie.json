@@ -1,0 +1,62 @@
+{
+  "system": "nes",
+  "normalized_title": "missionimpossible",
+  "display_name": "Mission Impossible (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Mission Impossible (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mission Impossible (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "SXUETVOU",
+          "desc": "Take Less Damage",
+          "address": "0x06AE"
+        },
+        {
+          "code": "ZENETTPA",
+          "desc": "Take More Damage",
+          "address": "0x068E"
+        },
+        {
+          "code": "AAUPIZPA",
+          "desc": "Infinite Type B Weapons For All",
+          "address": "0x020D"
+        },
+        {
+          "code": "VKOAVOSX",
+          "desc": "Longer Disguise Time",
+          "address": "0x014E"
+        },
+        {
+          "code": "GAEOPLPA",
+          "desc": "Longer Disguise Time",
+          "address": "0x0389"
+        },
+        {
+          "code": "OLUPTXOO",
+          "desc": "Infinite Weapon B",
+          "address": "0x023E"
+        },
+        {
+          "code": "KVXEGTEU",
+          "desc": "Invincible",
+          "address": "0x06EC"
+        },
+        {
+          "code": "KNOANPUY",
+          "desc": "Infinite Disguise On Use",
+          "address": "0x017F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

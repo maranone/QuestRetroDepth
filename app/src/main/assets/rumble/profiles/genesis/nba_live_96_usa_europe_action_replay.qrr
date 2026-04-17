@@ -1,0 +1,6 @@
+game_name=NBA Live 96 (USA, Europe) (Action Replay)
+game_key=nba_live_96_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_fff97e	score	0xFFF97E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_fff8e6	score	0xFFF8E6	1	uint	little	prev < curr	0.8	1	right:0.350:60

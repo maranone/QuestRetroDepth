@@ -1,0 +1,87 @@
+{
+  "system": "nes",
+  "normalized_title": "takahashimeijinnoboukenjimaiv",
+  "display_name": "Takahashi Meijin no Bouken-jima IV (Japan) (Game Genie)",
+  "aliases": [
+    "Takahashi Meijin no Bouken-jima IV (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Takahashi Meijin no Bouken-jima IV (Japan).cht",
+      "total_cheat_rows": 55,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "0085:20",
+          "desc": "Infinite Health",
+          "address": "0x0085"
+        },
+        {
+          "code": "009E:FF",
+          "desc": "Have Special Items",
+          "address": "0x009E"
+        },
+        {
+          "code": "076F:01",
+          "desc": "Always Invincible",
+          "address": "0x076F"
+        },
+        {
+          "code": "0080:0E",
+          "desc": "Infinite Energy",
+          "address": "0x0080"
+        },
+        {
+          "code": "GAVESKZE",
+          "desc": "Enable Test Mode",
+          "address": "0x048D"
+        },
+        {
+          "code": "AANAOGGA",
+          "desc": "Enable Test Mode",
+          "address": "0x0409"
+        },
+        {
+          "code": "0086:20",
+          "desc": "All Hearts",
+          "address": "0x0086"
+        },
+        {
+          "code": "0087:08",
+          "desc": "Maximum Fruit",
+          "address": "0x0087"
+        },
+        {
+          "code": "009C:FF",
+          "desc": "Have All Weapons/Items/Powers",
+          "address": "0x009C"
+        },
+        {
+          "code": "009D:FF",
+          "desc": "Have All Weapons/Items/Powers",
+          "address": "0x009D"
+        },
+        {
+          "code": "009F:FF",
+          "desc": "Have All Weapons/Items/Powers",
+          "address": "0x009F"
+        },
+        {
+          "code": "018D:14",
+          "desc": "Have A Score of 20 On The Whackamole Game",
+          "address": "0x018D"
+        },
+        {
+          "code": "AEEETPYA",
+          "desc": "Skip Intro Screen",
+          "address": "0x018E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

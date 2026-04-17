@@ -1,0 +1,268 @@
+{
+  "system": "gba",
+  "normalized_title": "fzerogplegend",
+  "display_name": "F-Zero - GP Legend (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\F-Zero - GP Legend (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 24,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "10000B42",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000B42"
+        },
+        {
+          "code": "7201759C",
+          "desc": "Always Low Time",
+          "address": "0x0201759C"
+        },
+        {
+          "code": "8201759C",
+          "desc": "Always Low Time",
+          "address": "0x0201759C"
+        },
+        {
+          "code": "820149BA",
+          "desc": "Infinite Health",
+          "address": "0x020149BA"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Turbo Boost",
+          "address": "0x02000020"
+        },
+        {
+          "code": "820149A4",
+          "desc": "Turbo Boost",
+          "address": "0x020149A4"
+        },
+        {
+          "code": "720149BC",
+          "desc": "Infinite Boost Time",
+          "address": "0x020149BC"
+        },
+        {
+          "code": "320149BC",
+          "desc": "Infinite Boost Time",
+          "address": "0x020149BC"
+        },
+        {
+          "code": "320149EB",
+          "desc": "Have Booster",
+          "address": "0x020149EB"
+        },
+        {
+          "code": "3300122D",
+          "desc": "Infinite Spare Machines",
+          "address": "0x0200122D"
+        },
+        {
+          "code": "83001250",
+          "desc": "Always Place 1st",
+          "address": "0x02001250"
+        },
+        {
+          "code": "83001252",
+          "desc": "Always Place 1st",
+          "address": "0x02001252"
+        },
+        {
+          "code": "720149DC",
+          "desc": "Start On Last Lap",
+          "address": "0x020149DC"
+        },
+        {
+          "code": "820149DC",
+          "desc": "Start On Last Lap",
+          "address": "0x020149DC"
+        },
+        {
+          "code": "83001690",
+          "desc": "Max Race Points",
+          "address": "0x02001690"
+        },
+        {
+          "code": "82008C18",
+          "desc": "Have All Cars",
+          "address": "0x02008C18"
+        },
+        {
+          "code": "82008C1A",
+          "desc": "Have All Cars",
+          "address": "0x02008C1A"
+        },
+        {
+          "code": "82008C2C",
+          "desc": "Have All Cups Open",
+          "address": "0x02008C2C"
+        },
+        {
+          "code": "82008C28",
+          "desc": "Have All Cups Open",
+          "address": "0x02008C28"
+        },
+        {
+          "code": "82008C2A",
+          "desc": "Have All Gran Prix Races Won",
+          "address": "0x02008C2A"
+        },
+        {
+          "code": "32008C48",
+          "desc": "Have All Zero Test Classes Open",
+          "address": "0x02008C48"
+        },
+        {
+          "code": "42008CAC",
+          "desc": "Have All Zero Tests Complete",
+          "address": "0x02008CAC"
+        },
+        {
+          "code": "42008C38",
+          "desc": "Max Cash In Story Mode",
+          "address": "0x02008C38"
+        },
+        {
+          "code": "42008C30",
+          "desc": "Have All Story Levels Open",
+          "address": "0x02008C30"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\F-Zero - GP Legend (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 24,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "10000B42",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000B42"
+        },
+        {
+          "code": "7201759C",
+          "desc": "Always Low Time",
+          "address": "0x0201759C"
+        },
+        {
+          "code": "8201759C",
+          "desc": "Always Low Time",
+          "address": "0x0201759C"
+        },
+        {
+          "code": "820149BA",
+          "desc": "Infinite Health",
+          "address": "0x020149BA"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Turbo Boost",
+          "address": "0x02000020"
+        },
+        {
+          "code": "820149A4",
+          "desc": "Turbo Boost",
+          "address": "0x020149A4"
+        },
+        {
+          "code": "720149BC",
+          "desc": "Infinite Boost Time",
+          "address": "0x020149BC"
+        },
+        {
+          "code": "320149BC",
+          "desc": "Infinite Boost Time",
+          "address": "0x020149BC"
+        },
+        {
+          "code": "320149EB",
+          "desc": "Have Booster",
+          "address": "0x020149EB"
+        },
+        {
+          "code": "3300122D",
+          "desc": "Infinite Spare Machines",
+          "address": "0x0200122D"
+        },
+        {
+          "code": "83001250",
+          "desc": "Always Place 1st",
+          "address": "0x02001250"
+        },
+        {
+          "code": "83001252",
+          "desc": "Always Place 1st",
+          "address": "0x02001252"
+        },
+        {
+          "code": "720149DC",
+          "desc": "Start On Last Lap",
+          "address": "0x020149DC"
+        },
+        {
+          "code": "820149DC",
+          "desc": "Start On Last Lap",
+          "address": "0x020149DC"
+        },
+        {
+          "code": "83001690",
+          "desc": "Max Race Points",
+          "address": "0x02001690"
+        },
+        {
+          "code": "82008C18",
+          "desc": "Have All Cars",
+          "address": "0x02008C18"
+        },
+        {
+          "code": "82008C1A",
+          "desc": "Have All Cars",
+          "address": "0x02008C1A"
+        },
+        {
+          "code": "82008C2C",
+          "desc": "Have All Cups Open",
+          "address": "0x02008C2C"
+        },
+        {
+          "code": "82008C28",
+          "desc": "Have All Cups Open",
+          "address": "0x02008C28"
+        },
+        {
+          "code": "82008C2A",
+          "desc": "Have All Gran Prix Races Won",
+          "address": "0x02008C2A"
+        },
+        {
+          "code": "32008C48",
+          "desc": "Have All Zero Test Classes Open",
+          "address": "0x02008C48"
+        },
+        {
+          "code": "42008CAC",
+          "desc": "Have All Zero Tests Complete",
+          "address": "0x02008CAC"
+        },
+        {
+          "code": "42008C38",
+          "desc": "Max Cash In Story Mode",
+          "address": "0x02008C38"
+        },
+        {
+          "code": "42008C30",
+          "desc": "Have All Story Levels Open",
+          "address": "0x02008C30"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

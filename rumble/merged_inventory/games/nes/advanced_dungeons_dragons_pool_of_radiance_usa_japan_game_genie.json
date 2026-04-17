@@ -1,0 +1,47 @@
+{
+  "system": "nes",
+  "normalized_title": "advanceddungeonsdragonspoolofradiance",
+  "display_name": "Advanced Dungeons _ Dragons - Pool of Radiance (USA, Japan) (Game Genie)",
+  "aliases": [
+    "Advanced Dungeons _ Dragons - Pool of Radiance (USA, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Advanced Dungeons _ Dragons - Pool of Radiance (USA, Japan) (Game Genie).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "SOLAUN",
+          "desc": "Create Super Characters",
+          "address": "0x0713"
+        },
+        {
+          "code": "GGLAUN",
+          "desc": "Unlimited Cloaks Of Displacements To Sell",
+          "address": "0x0743"
+        },
+        {
+          "code": "TLGAXL",
+          "desc": "Extra Experience Points",
+          "address": "0x0332"
+        },
+        {
+          "code": "AXLALN",
+          "desc": "1-Hit Ends Battle With No Gold Or Experience",
+          "address": "0x0723"
+        },
+        {
+          "code": "GGLAUP",
+          "desc": "Duplicates Items By Trading",
+          "address": "0x0143"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

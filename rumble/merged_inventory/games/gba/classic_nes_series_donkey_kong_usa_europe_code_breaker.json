@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "classicnesseriesdonkeykong",
+  "display_name": "Classic NES Series - Donkey Kong (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Classic NES Series - Donkey Kong (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "100014A8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020014A8"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select & Jump Into The Air To Get Hammer",
+          "address": "0x02000020"
+        },
+        {
+          "code": "330072A0",
+          "desc": "Press Select & Jump Into The Air To Get Hammer",
+          "address": "0x020072A0"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select & Jump Into The Air To Get Hammer",
+          "address": "0x02000020"
+        },
+        {
+          "code": "3300723F",
+          "desc": "Press Select & Jump Into The Air To Get Hammer",
+          "address": "0x0200723F"
+        },
+        {
+          "code": "83007226",
+          "desc": "Score Modifier",
+          "address": "0x02007226"
+        },
+        {
+          "code": "33007225",
+          "desc": "Score Modifier",
+          "address": "0x02007225"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Classic NES Series - Donkey Kong (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "100014A8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020014A8"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select & Jump Into The Air To Get Hammer",
+          "address": "0x02000020"
+        },
+        {
+          "code": "330072A0",
+          "desc": "Press Select & Jump Into The Air To Get Hammer",
+          "address": "0x020072A0"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select & Jump Into The Air To Get Hammer",
+          "address": "0x02000020"
+        },
+        {
+          "code": "3300723F",
+          "desc": "Press Select & Jump Into The Air To Get Hammer",
+          "address": "0x0200723F"
+        },
+        {
+          "code": "83007226",
+          "desc": "Score Modifier",
+          "address": "0x02007226"
+        },
+        {
+          "code": "33007225",
+          "desc": "Score Modifier",
+          "address": "0x02007225"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

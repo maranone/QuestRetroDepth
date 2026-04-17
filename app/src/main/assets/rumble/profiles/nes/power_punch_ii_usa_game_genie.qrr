@@ -1,0 +1,7 @@
+game_name=Power Punch II (USA) (Game Genie)
+game_key=power_punch_ii_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_00ce	damage_taken	0x00CE	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00ce	death	0x00CE	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_02d1	level_complete	0x02D1	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

@@ -1,0 +1,6 @@
+game_name=Roger Clemens' MVP Baseball (USA) (Action Replay)
+game_key=roger_clemens_mvp_baseball_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff8c18	score	0xFF8C18	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff8c16	score	0xFF8C16	1	uint	little	prev < curr	0.8	1	right:0.350:60

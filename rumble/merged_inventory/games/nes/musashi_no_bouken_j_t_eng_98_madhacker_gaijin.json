@@ -1,0 +1,145 @@
+{
+  "system": "nes",
+  "normalized_title": "musashinoboukenteng98madhackergaijin",
+  "display_name": "Musashi no Bouken (J) [T+Eng.98_MadHacker+Gaijin]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Musashi no Bouken (J) [T+Eng.98_MadHacker+Gaijin].cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 32,
+      "distinct_address_count": 32,
+      "sample_raw_entries": [
+        {
+          "code": "6500:01",
+          "desc": "Start With Sword",
+          "address": "0x6500"
+        },
+        {
+          "code": "6501:0A",
+          "desc": "Start With Armor",
+          "address": "0x6501"
+        },
+        {
+          "code": "6502:11",
+          "desc": "Start With Gloves",
+          "address": "0x6502"
+        },
+        {
+          "code": "6503:14",
+          "desc": "Start With Hats",
+          "address": "0x6503"
+        },
+        {
+          "code": "6504:17",
+          "desc": "Start With Shoes",
+          "address": "0x6504"
+        },
+        {
+          "code": "64C6:00",
+          "desc": "Money Enemy Leaves",
+          "address": "0x64C6"
+        },
+        {
+          "code": "64C7:00",
+          "desc": "Exp Enemy Leaves",
+          "address": "0x64C7"
+        },
+        {
+          "code": "64C9:FF",
+          "desc": "Enemy Always Drops Item",
+          "address": "0x64C9"
+        },
+        {
+          "code": "64C8:1A",
+          "desc": "Item Enemy Leaves",
+          "address": "0x64C8"
+        },
+        {
+          "code": "64EE:00",
+          "desc": "Current HP",
+          "address": "0x64EE"
+        },
+        {
+          "code": "64EF:00",
+          "desc": "Max HP",
+          "address": "0x64EF"
+        },
+        {
+          "code": "64F0:00",
+          "desc": "Current MP",
+          "address": "0x64F0"
+        },
+        {
+          "code": "64F1:00",
+          "desc": "Max MP",
+          "address": "0x64F1"
+        },
+        {
+          "code": "64F2:00",
+          "desc": "Might",
+          "address": "0x64F2"
+        },
+        {
+          "code": "64F3:00",
+          "desc": "Speed",
+          "address": "0x64F3"
+        },
+        {
+          "code": "6505:00",
+          "desc": "Item slot 6 Modifier",
+          "address": "0x6505"
+        },
+        {
+          "code": "6506:00",
+          "desc": "Item slot 7 Modifier",
+          "address": "0x6506"
+        },
+        {
+          "code": "6507:00",
+          "desc": "Item slot 8 Modifier",
+          "address": "0x6507"
+        },
+        {
+          "code": "6508:00",
+          "desc": "Item slot 9 Modifier",
+          "address": "0x6508"
+        },
+        {
+          "code": "6509:00",
+          "desc": "Item slot 10 Modifier",
+          "address": "0x6509"
+        },
+        {
+          "code": "650A:00",
+          "desc": "Item slot 11 Modifier",
+          "address": "0x650A"
+        },
+        {
+          "code": "650B:00",
+          "desc": "Item slot 12 Modifier",
+          "address": "0x650B"
+        },
+        {
+          "code": "650C:00",
+          "desc": "Item slot 13 Modifier",
+          "address": "0x650C"
+        },
+        {
+          "code": "650D:00",
+          "desc": "Item slot 14 Modifier",
+          "address": "0x650D"
+        },
+        {
+          "code": "64EB:00",
+          "desc": "Level Modifier",
+          "address": "0x64EB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

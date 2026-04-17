@@ -1,6 +1,0 @@
-game_name=NankokuShounenPapuwaKun
-game_key=NankokuShounenPapuwaKun-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_740	damage_taken	0x7E0740	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	enemy_defeated_1_2c0	enemy_defeated	0x7E02C0	1	uint	native	prev != curr	0.55	1	left:0.510:100

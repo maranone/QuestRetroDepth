@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "pachinkodaisakusen",
+  "display_name": "Pachinko Daisakusen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Pachinko Daisakusen (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0615:00",
+          "desc": "Automatically Win in a Pachinko Machine",
+          "address": "0x0615"
+        },
+        {
+          "code": "0614:00",
+          "desc": "Automatically Win in a Pachinko Machine",
+          "address": "0x0614"
+        },
+        {
+          "code": "0613:00",
+          "desc": "Automatically Win in a Pachinko Machine",
+          "address": "0x0613"
+        },
+        {
+          "code": "0069:09",
+          "desc": "Max Balls",
+          "address": "0x0069"
+        },
+        {
+          "code": "0068:99",
+          "desc": "Max Balls",
+          "address": "0x0068"
+        },
+        {
+          "code": "0067:99",
+          "desc": "Max Balls",
+          "address": "0x0067"
+        },
+        {
+          "code": "0754:63",
+          "desc": "Infinite Hand Grenades",
+          "address": "0x0754"
+        },
+        {
+          "code": "0755:63",
+          "desc": "Infinite Rocket Launchers",
+          "address": "0x0755"
+        },
+        {
+          "code": "0756:63",
+          "desc": "Infinite Missiles",
+          "address": "0x0756"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

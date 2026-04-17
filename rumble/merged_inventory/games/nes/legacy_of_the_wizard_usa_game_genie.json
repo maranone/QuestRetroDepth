@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "legacyofwizard",
+  "display_name": "Legacy of the Wizard (USA) (Game Genie)",
+  "aliases": [
+    "Legacy of the Wizard (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Legacy of the Wizard (USA).cht",
+      "total_cheat_rows": 112,
+      "raw_entry_count": 43,
+      "distinct_address_count": 29,
+      "sample_raw_entries": [
+        {
+          "code": "AAOAOYZL",
+          "desc": "The first item in the shop is free",
+          "address": "0x0709"
+        },
+        {
+          "code": "AAOAUNYI",
+          "desc": "The second item in the shop is free",
+          "address": "0x070B"
+        },
+        {
+          "code": "AAOAENGA",
+          "desc": "Lets you buy &quot;Wings&quot; in the shop",
+          "address": "0x0708"
+        },
+        {
+          "code": "PAOAENGA",
+          "desc": "Lets you buy &quot;Armor&quot; in the shop",
+          "address": "0x0708"
+        },
+        {
+          "code": "ZAOAENGA",
+          "desc": "Lets you buy a &quot;Mattock&quot; in the shop",
+          "address": "0x0708"
+        },
+        {
+          "code": "LAOAENGA",
+          "desc": "Lets you buy a &quot;Glove&quot; in the shop",
+          "address": "0x0708"
+        },
+        {
+          "code": "GAOAENGA",
+          "desc": "Lets you buy a &quot;Rod&quot; in the shop",
+          "address": "0x0708"
+        },
+        {
+          "code": "IAOAENGA",
+          "desc": "Lets you buy &quot;Power Boots&quot; in the shop",
+          "address": "0x0708"
+        },
+        {
+          "code": "TAOAENGA",
+          "desc": "Lets you buy &quot;Jump Shoes&quot; in the shop",
+          "address": "0x0708"
+        },
+        {
+          "code": "YAOAXNIA",
+          "desc": "Lets you buy a &quot;Key Stick&quot; in the shop",
+          "address": "0x070A"
+        },
+        {
+          "code": "AAOAXNIE",
+          "desc": "Lets you buy a &quot;Power Knuckle&quot; in the shop",
+          "address": "0x070A"
+        },
+        {
+          "code": "PAOAXNIE",
+          "desc": "Lets you buy a &quot;Fire Rod&quot; in the shop",
+          "address": "0x070A"
+        },
+        {
+          "code": "ZAOAXNIE",
+          "desc": "Lets you buy a &quot;Shield&quot; in the shop",
+          "address": "0x070A"
+        },
+        {
+          "code": "LAOAXNIE",
+          "desc": "Lets you buy &quot;Elixer&quot; in the shop",
+          "address": "0x070A"
+        },
+        {
+          "code": "TAOAXNIE",
+          "desc": "Lets you buy a &quot;Crown&quot; in the shop",
+          "address": "0x070A"
+        },
+        {
+          "code": "YAOAXNIE",
+          "desc": "Lets you buy the &quot;Dragon Slayer&quot; in the shop",
+          "address": "0x070A"
+        },
+        {
+          "code": "005D:63",
+          "desc": "Max Strength",
+          "address": "0x005D"
+        },
+        {
+          "code": "005C:24",
+          "desc": "High Jump",
+          "address": "0x005C"
+        },
+        {
+          "code": "005F:63",
+          "desc": "Max Distance",
+          "address": "0x005F"
+        },
+        {
+          "code": "0059:FF",
+          "desc": "Infinite Magic",
+          "address": "0x0059"
+        },
+        {
+          "code": "0058:FF",
+          "desc": "Infinite Life",
+          "address": "0x0058"
+        },
+        {
+          "code": "005A:FF",
+          "desc": "Infinite Gold",
+          "address": "0x005A"
+        },
+        {
+          "code": "005B:FF",
+          "desc": "Infinite Keys",
+          "address": "0x005B"
+        },
+        {
+          "code": "0060:63",
+          "desc": "Start W/99 Wings(Note: You Have But One Turn To Equip A Char Unless Ya Return Home &amp; Re-Select Him/Her.",
+          "address": "0x0060"
+        },
+        {
+          "code": "0061:63",
+          "desc": "Have 99 Armor",
+          "address": "0x0061"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

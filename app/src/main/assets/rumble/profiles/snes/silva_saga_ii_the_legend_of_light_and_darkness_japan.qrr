@@ -1,0 +1,29 @@
+game_name=Silva Saga II - The Legend of Light and Darkness (Japan)
+game_key=silva_saga_ii_the_legend_of_light_and_darkness_japan
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_0313	level_complete	0x7E0313	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_034c	damage_taken	0x7E034C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_034c	death	0x7E034C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_034d	damage_taken	0x7E034D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_034d	death	0x7E034D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_034b	damage_taken	0x7E034B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_034b	death	0x7E034B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_034a	damage_taken	0x7E034A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_034a	death	0x7E034A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_038c	damage_taken	0x7E038C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_038c	death	0x7E038C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_038d	damage_taken	0x7E038D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_038d	death	0x7E038D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_038b	damage_taken	0x7E038B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_038b	death	0x7E038B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_038a	damage_taken	0x7E038A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_038a	death	0x7E038A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_040c	damage_taken	0x7E040C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_040c	death	0x7E040C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_040d	damage_taken	0x7E040D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_040d	death	0x7E040D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_040b	damage_taken	0x7E040B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_040b	death	0x7E040B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_040a	damage_taken	0x7E040A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_040a	death	0x7E040A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

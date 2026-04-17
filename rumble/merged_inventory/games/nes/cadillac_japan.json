@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "cadillac",
+  "display_name": "Cadillac (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Cadillac (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "05B4:FF",
+          "desc": "Instantly See The Ending",
+          "address": "0x05B4"
+        },
+        {
+          "code": "0504:33",
+          "desc": "Card Modifier",
+          "address": "0x0504"
+        },
+        {
+          "code": "05B6:FF",
+          "desc": "Infinite Money",
+          "address": "0x05B6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=Buffy the Vampire Slayer (USA, Europe) (GameShark)
+game_key=buffy_the_vampire_slayer_usa_europe_gameshark
+system=gbc
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_dfc7	enemy_defeated	0xDFC7	1	uint	little	prev > curr	0.65	1	right:0.450:35

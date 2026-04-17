@@ -1,0 +1,42 @@
+{
+  "system": "gb",
+  "normalized_title": "caesarspalace",
+  "display_name": "Caesars Palace (World) (GameShark)",
+  "aliases": [
+    "Caesars Palace (World) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Caesars Palace (World) (GameShark).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "01FFD8C0",
+          "desc": "Infinite Money",
+          "address": "0xD8C0"
+        },
+        {
+          "code": "01FFDAC0",
+          "desc": "Infinite Money",
+          "address": "0xDAC0"
+        },
+        {
+          "code": "01FFDCC0",
+          "desc": "Infinite Money",
+          "address": "0xDCC0"
+        },
+        {
+          "code": "01FFDED0",
+          "desc": "Infinite Money",
+          "address": "0xDED0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

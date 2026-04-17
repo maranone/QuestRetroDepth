@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "dynamitebatman",
+  "display_name": "Dynamite Batman (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dynamite Batman (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0478:0C",
+          "desc": "Infinite Health (Platforming Stages)",
+          "address": "0x0478"
+        },
+        {
+          "code": "00B3:2A",
+          "desc": "Infinite Health (Boss Battles)",
+          "address": "0x00B3"
+        },
+        {
+          "code": "0482:09",
+          "desc": "Infinite Lives",
+          "address": "0x0482"
+        },
+        {
+          "code": "0479:00",
+          "desc": "Invincible After 1st Hit",
+          "address": "0x0479"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

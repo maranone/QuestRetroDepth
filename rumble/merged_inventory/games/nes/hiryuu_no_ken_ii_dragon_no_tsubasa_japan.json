@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "hiryuunokeniidragonnotsubasa",
+  "display_name": "Hiryuu no Ken II - Dragon no Tsubasa (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hiryuu no Ken II - Dragon no Tsubasa (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "033B:63",
+          "desc": "Infinite Energy",
+          "address": "0x033B"
+        },
+        {
+          "code": "EIVAZZEY",
+          "desc": "Invincibility",
+          "address": "0x025A"
+        },
+        {
+          "code": "0120:01",
+          "desc": "Invincibility",
+          "address": "0x0120"
+        },
+        {
+          "code": "034A:64",
+          "desc": "Full KO Bar",
+          "address": "0x034A"
+        },
+        {
+          "code": "0353:09",
+          "desc": "Max Potions",
+          "address": "0x0353"
+        },
+        {
+          "code": "00E8:00",
+          "desc": "Enemies Have No Energy",
+          "address": "0x00E8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

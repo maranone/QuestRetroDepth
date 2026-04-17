@@ -1,0 +1,16 @@
+game_name=Battle Dodge Ball (Japan)
+game_key=battle_dodge_ball_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_09e8	damage_taken	0x7E09E8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_09e8	death	0x7E09E8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_09e9	damage_taken	0x7E09E9	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_09e9	death	0x7E09E9	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0a48	damage_taken	0x7E0A48	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0a48	death	0x7E0A48	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0a49	damage_taken	0x7E0A49	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0a49	death	0x7E0A49	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0aa8	damage_taken	0x7E0AA8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0aa8	death	0x7E0AA8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0aa9	damage_taken	0x7E0AA9	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0aa9	death	0x7E0AA9	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

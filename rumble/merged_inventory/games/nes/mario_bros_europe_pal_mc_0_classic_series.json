@@ -1,0 +1,188 @@
+{
+  "system": "nes",
+  "normalized_title": "mariobros",
+  "display_name": "Mario Bros. (Europe) (PAL-MC-0, Classic Series)",
+  "aliases": [
+    "Mario Bros. (Europe) (PAL-MA-0)",
+    "Mario Bros. (Europe) (PAL-MC-0, Classic Series)",
+    "Mario Bros. (World) (Game Genie)",
+    "Mario Bros. (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\mariobros_nes.json",
+      "trigger_count": 4,
+      "field_names": [
+        "level",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0041",
+        "0x0048",
+        "0x0094"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MarioBros-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "level",
+          "address": "0x0041",
+          "type": "|d1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0048",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0094",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mario Bros. (World).cht",
+      "total_cheat_rows": 60,
+      "raw_entry_count": 30,
+      "distinct_address_count": 29,
+      "sample_raw_entries": [
+        {
+          "code": "0048:04",
+          "desc": "Infinite Lives P1",
+          "address": "0x0048"
+        },
+        {
+          "code": "004C:04",
+          "desc": "Infinite Lives P2",
+          "address": "0x004C"
+        },
+        {
+          "code": "04B1:99",
+          "desc": "Infinite Time In Bonus Rounds (Seconds)",
+          "address": "0x04B1"
+        },
+        {
+          "code": "04B2:09",
+          "desc": "Infinite Time In Bonus Rounds (Microseconds)",
+          "address": "0x04B2"
+        },
+        {
+          "code": "0070:03",
+          "desc": "Pow Box Doesn't Lose Strength",
+          "address": "0x0070"
+        },
+        {
+          "code": "0041:00",
+          "desc": "Phase Text Modifier",
+          "address": "0x0041"
+        },
+        {
+          "code": "0031:04",
+          "desc": "Phase Modifier (Ignore The Phase Text)",
+          "address": "0x0031"
+        },
+        {
+          "code": "0221:16",
+          "desc": "Goro-ish Mario (Have More Than Two Arms)",
+          "address": "0x0221"
+        },
+        {
+          "code": "052E:FE",
+          "desc": "Koopa Paratroopa (Two Koopas Go Airborne)",
+          "address": "0x052E"
+        },
+        {
+          "code": "0532:BB",
+          "desc": "Koopa Paratroopa (Two Koopas Go Airborne)",
+          "address": "0x0532"
+        },
+        {
+          "code": "0594:09",
+          "desc": "Max Score P1",
+          "address": "0x0594"
+        },
+        {
+          "code": "0595:09",
+          "desc": "Max Score P1",
+          "address": "0x0595"
+        },
+        {
+          "code": "0596:09",
+          "desc": "Max Score P1",
+          "address": "0x0596"
+        },
+        {
+          "code": "0597:09",
+          "desc": "Max Score P1",
+          "address": "0x0597"
+        },
+        {
+          "code": "0598:09",
+          "desc": "Max Score P1",
+          "address": "0x0598"
+        },
+        {
+          "code": "0599:09",
+          "desc": "Max Score P1",
+          "address": "0x0599"
+        },
+        {
+          "code": "059D:09",
+          "desc": "Max Top Score",
+          "address": "0x059D"
+        },
+        {
+          "code": "059E:09",
+          "desc": "Max Top Score",
+          "address": "0x059E"
+        },
+        {
+          "code": "059F:09",
+          "desc": "Max Top Score",
+          "address": "0x059F"
+        },
+        {
+          "code": "05A0:09",
+          "desc": "Max Top Score",
+          "address": "0x05A0"
+        },
+        {
+          "code": "05A1:09",
+          "desc": "Max Top Score",
+          "address": "0x05A1"
+        },
+        {
+          "code": "05A2:09",
+          "desc": "Max Top Score",
+          "address": "0x05A2"
+        },
+        {
+          "code": "04D1:00",
+          "desc": "Enemy Reward Points Modifier",
+          "address": "0x04D1"
+        },
+        {
+          "code": "0374:00",
+          "desc": "Enemy 1 Speed Modifier",
+          "address": "0x0374"
+        },
+        {
+          "code": "0394:00",
+          "desc": "Enemy 2 Speed Modifier",
+          "address": "0x0394"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

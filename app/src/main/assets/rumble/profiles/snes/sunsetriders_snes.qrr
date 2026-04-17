@@ -1,6 +1,0 @@
-game_name=SunsetRiders
-game_key=SunsetRiders-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_1_1fba	damage_taken	0x7E1FBA	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	damage_taken_4_1fbc	damage_taken	0x7E1FBC	1	uint	native	prev > curr	0.85	1	right:0.750:180

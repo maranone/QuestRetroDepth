@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "formula1sensation",
+  "display_name": "Formula 1 Sensation (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Formula 1 Sensation (Europe).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "00B2:FF",
+          "desc": "Max Speed",
+          "address": "0x00B2"
+        },
+        {
+          "code": "00AC:14",
+          "desc": "Max Engine",
+          "address": "0x00AC"
+        },
+        {
+          "code": "00AD:14",
+          "desc": "Max Tire",
+          "address": "0x00AD"
+        },
+        {
+          "code": "00AE:14",
+          "desc": "Max Wing",
+          "address": "0x00AE"
+        },
+        {
+          "code": "00B6:00",
+          "desc": "One Lap To Go",
+          "address": "0x00B6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "sukebandekaiii",
+  "display_name": "Sukeban Deka III (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Sukeban Deka III (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "045B:63",
+          "desc": "Infinite Energy",
+          "address": "0x045B"
+        },
+        {
+          "code": "045A:FF",
+          "desc": "Infinite Health",
+          "address": "0x045A"
+        },
+        {
+          "code": "045B:FF",
+          "desc": "Infinite Health",
+          "address": "0x045B"
+        },
+        {
+          "code": "045C:FF",
+          "desc": "Infinite Health",
+          "address": "0x045C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

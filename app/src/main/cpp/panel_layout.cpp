@@ -29,6 +29,7 @@ PanelMetrics panel_metrics(PanelKind kind) {
     case PanelKind::Code:     return {1536,  768, 1.20f, 0.60f};
     case PanelKind::CtrlMap:  return {1408, 1536, 1.20f, 1.20f * (1536.0f / 1408.0f)};
     case PanelKind::Help:     return {1024, 1536, 0.82f, 1.23f};
+    case PanelKind::Homebrew: return {1024, 1536, 0.80f, 1.20f};
     }
     return {};
 }
@@ -161,7 +162,7 @@ PanelLayout make_settings_layout(int row_count) {
     const float row_h = clamp_row_h((1.0f - title_v) / (float)row_count, 52.0f / (float)m.tex_h, 96.0f / (float)m.tex_h);
     for (int i = 0; i < row_count; ++i) {
         add_row(layout, i, i, title_v + i * row_h, title_v + (i + 1) * row_h);
-        const bool has_step_buttons = (i >= 6 && i <= 11);
+        const bool has_step_buttons = (i == 4) || (i >= 6 && i <= 11);
         if (has_step_buttons) {
             layout.items.push_back({{0.0f, title_v + i * row_h, 0.20f, title_v + (i + 1) * row_h}, i, i, PanelRole::Minus});
             layout.items.push_back({{0.80f, title_v + i * row_h, 1.00f, title_v + (i + 1) * row_h}, i, i, PanelRole::Plus});
@@ -210,6 +211,34 @@ PanelLayout make_save_state_layout() {
     }
     layout.items.push_back({{0.0f, title_v + 2.0f * row_h, 1.0f, title_v + 3.0f * row_h}, 2, 6, PanelRole::SaveAutosaveOption});
     layout.items.push_back({{0.0f, title_v + 3.0f * row_h, 1.0f, 1.0f}, 3, 7, PanelRole::SaveAutoloadOption});
+    return layout;
+}
+
+PanelLayout make_homebrew_layout(int entry_count, int view) {
+    PanelLayout layout;
+    layout.kind = PanelKind::Homebrew;
+    const auto m = panel_metrics(layout.kind);
+    const float title_v = 88.0f / (float)m.tex_h;
+    if (view == 1) {
+        // detail view: fixed rows for back, download, delete, open website
+        const int detail_rows = 4;
+        const float row_h = (1.0f - title_v) / (float)detail_rows;
+        for (int i = 0; i < detail_rows; ++i) {
+            add_row(layout, i, i, title_v + i * row_h, title_v + (i + 1) * row_h);
+        }
+    } else {
+        // list view: feed toggle (row 0) + entry rows + back row
+        const int total = entry_count + 2;
+        if (total <= 2) {
+            add_row(layout, 0, 0, title_v, title_v + (1.0f - title_v) / 2.0f);
+            add_row(layout, 1, 1, title_v + (1.0f - title_v) / 2.0f, 1.0f);
+            return layout;
+        }
+        const float row_h = clamp_row_h((1.0f - title_v) / (float)total, 44.0f / (float)m.tex_h, 80.0f / (float)m.tex_h);
+        for (int i = 0; i < total; ++i) {
+            add_row(layout, i, i, title_v + i * row_h, title_v + (i + 1) * row_h);
+        }
+    }
     return layout;
 }
 

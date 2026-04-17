@@ -1,0 +1,62 @@
+{
+  "system": "nes",
+  "normalized_title": "metalmechmanmachine",
+  "display_name": "Metal Mech - Man _ Machine (USA) (Game Genie)",
+  "aliases": [
+    "MetalMech - Man _ Machine (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\MetalMech - Man _ Machine (USA).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "05DD:1F",
+          "desc": "Infinite Energy",
+          "address": "0x05DD"
+        },
+        {
+          "code": "SXNPYNSE",
+          "desc": "Infinite Energy",
+          "address": "0x072F"
+        },
+        {
+          "code": "SZVOEESE",
+          "desc": "Infinite Energy",
+          "address": "0x00A8"
+        },
+        {
+          "code": "SZUAXYAX",
+          "desc": "Invincibility",
+          "address": "0x072A"
+        },
+        {
+          "code": "05C0:FF",
+          "desc": "Infinite Health",
+          "address": "0x05C0"
+        },
+        {
+          "code": "00F8:00",
+          "desc": "Level Modifier",
+          "address": "0x00F8"
+        },
+        {
+          "code": "05B7:00",
+          "desc": "Can't Be Hit",
+          "address": "0x05B7"
+        },
+        {
+          "code": "05B8:00",
+          "desc": "Can't Be Hit",
+          "address": "0x05B8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

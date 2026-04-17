@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "zombiehunter",
+  "display_name": "Zombie Hunter (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Zombie Hunter (Japan).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "00C2:25",
+          "desc": "Infinite Energy",
+          "address": "0x00C2"
+        },
+        {
+          "code": "00CA:FF",
+          "desc": "Infinite Money",
+          "address": "0x00CA"
+        },
+        {
+          "code": "00D2:63",
+          "desc": "Max Exp",
+          "address": "0x00D2"
+        },
+        {
+          "code": "00D3:63",
+          "desc": "Max Exp",
+          "address": "0x00D3"
+        },
+        {
+          "code": "00D4:63",
+          "desc": "Max Exp",
+          "address": "0x00D4"
+        },
+        {
+          "code": "00C4:63",
+          "desc": "Max Power",
+          "address": "0x00C4"
+        },
+        {
+          "code": "00CD:63",
+          "desc": "Max Strength",
+          "address": "0x00CD"
+        },
+        {
+          "code": "00BA:63",
+          "desc": "Max Energy",
+          "address": "0x00BA"
+        },
+        {
+          "code": "00B9:63",
+          "desc": "Max Defence",
+          "address": "0x00B9"
+        },
+        {
+          "code": "00D0:63",
+          "desc": "Max Magic",
+          "address": "0x00D0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "system": "nes",
+  "normalized_title": "fieldcombat",
+  "display_name": "Field Combat (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Field Combat (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "VTVEGPVG",
+          "desc": "Infinite Lives",
+          "address": "0x01EC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,12 @@
+game_name=Phantom 2040 (USA, Europe) (Action Replay)
+game_key=phantom_2040_usa_europe_action_replay
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_02b4	life_lost	0x7E02B4	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02b4	life_gained	0x7E02B4	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_044a	damage_taken	0x7E044A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_044a	death	0x7E044A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02b9	damage_taken	0x7E02B9	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02b9	death	0x7E02B9	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_044c	damage_taken	0x7E044C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_044c	death	0x7E044C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

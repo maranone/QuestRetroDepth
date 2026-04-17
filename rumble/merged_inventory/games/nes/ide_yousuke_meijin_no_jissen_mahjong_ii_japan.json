@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "ideyousukemeijinnojissenmahjongii",
+  "display_name": "Ide Yousuke Meijin no Jissen Mahjong II (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ide Yousuke Meijin no Jissen Mahjong II (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "7C31:05",
+          "desc": "No Random Battles",
+          "address": "0x7C31"
+        },
+        {
+          "code": "7C06:64",
+          "desc": "Infinite Health",
+          "address": "0x7C06"
+        },
+        {
+          "code": "7C08:64",
+          "desc": "Infinite Special",
+          "address": "0x7C08"
+        },
+        {
+          "code": "7C0F:FF",
+          "desc": "Max Money",
+          "address": "0x7C0F"
+        },
+        {
+          "code": "7C10:FF",
+          "desc": "Max Money",
+          "address": "0x7C10"
+        },
+        {
+          "code": "7A03:00",
+          "desc": "Enemy No Health",
+          "address": "0x7A03"
+        },
+        {
+          "code": "7A04:00",
+          "desc": "Enemy No Health",
+          "address": "0x7A04"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

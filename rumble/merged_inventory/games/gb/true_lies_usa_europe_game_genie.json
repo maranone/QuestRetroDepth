@@ -1,0 +1,53 @@
+{
+  "system": "gb",
+  "normalized_title": "truelies",
+  "display_name": "True Lies (USA, Europe) (Game Genie)",
+  "aliases": [
+    "True Lies (USA, Europe) (GameShark)",
+    "True Lies (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\True Lies (USA, Europe).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "010FC0C3",
+          "desc": "Infinite Bullets",
+          "address": "0xC0C3"
+        },
+        {
+          "code": "0109C1C3",
+          "desc": "Infinite Shotgun Ammo",
+          "address": "0xC1C3"
+        },
+        {
+          "code": "0115C2C3",
+          "desc": "Infinite Machine Gun Ammo",
+          "address": "0xC2C3"
+        },
+        {
+          "code": "0109C3C3",
+          "desc": "Infinite Grenades",
+          "address": "0xC3C3"
+        },
+        {
+          "code": "0109C4C3",
+          "desc": "Infinite Landmines",
+          "address": "0xC4C3"
+        },
+        {
+          "code": "011ECBC3",
+          "desc": "Have All Weapons",
+          "address": "0xCBC3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

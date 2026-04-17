@@ -1,0 +1,15 @@
+game_name=Tatakae! Chou Robot Seimeitai Transformers - Convoy no Nazo (Japan)
+game_key=tatakae_chou_robot_seimeitai_transformers_convoy_no_nazo_japan
+system=nes
+integration_tier=contrib
+trigger	score_score_0701	score	0x0701	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0705	score	0x0705	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0709	score	0x0709	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_070d	score	0x070D	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0711	score	0x0711	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0715	score	0x0715	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0719	score	0x0719	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	level_complete_level_006a	level_complete	0x006A	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_02f8	level_complete	0x02F8	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_0069	life_lost	0x0069	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0069	life_gained	0x0069	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

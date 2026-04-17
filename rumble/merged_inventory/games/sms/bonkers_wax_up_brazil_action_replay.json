@@ -1,0 +1,65 @@
+{
+  "system": "sms",
+  "normalized_title": "bonkerswaxup",
+  "display_name": "Bonkers Wax Up! (Brazil) (Action Replay)",
+  "aliases": [
+    "Bonkers Wax Up! (Brazil) (Action Replay)",
+    "Bonkers Wax Up! (Brazil)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\bonkerswaxup_sms.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xC372",
+        "0xC375",
+        "0xC376"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BonkersWaxUp-Sms-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0xC376",
+          "type": "<u2"
+        },
+        {
+          "name": "items_found",
+          "address": "0xD628",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0xC375",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xC372",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Bonkers Wax Up! (Brazil).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

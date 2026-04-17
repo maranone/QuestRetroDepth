@@ -1,6 +1,0 @@
-game_name=BsZeldaAncientStoneTablets
-game_key=BsZeldaAncientStoneTablets-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_f36f	damage_taken	0x7EF36F	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	enemy_defeated_2_3a	enemy_defeated	0x7E003A	1	uint	native	prev != curr	0.55	1	left:0.510:100

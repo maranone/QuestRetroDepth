@@ -1,0 +1,7 @@
+game_name=SCATSpecialCyberneticAttackTeam
+game_key=SCATSpecialCyberneticAttackTeam-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_001c	damage_taken	0x001C	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_001c	death	0x001C	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_008a	score	0x008A	3	uint	little	prev < curr	0.8	1	right:0.350:60

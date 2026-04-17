@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "wonderlanddizzy",
+  "display_name": "Wonderland Dizzy (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wonderland Dizzy (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "AIOEUTEL",
+          "desc": "Invincibility",
+          "address": "0x06DB"
+        },
+        {
+          "code": "ATKAUVVZ",
+          "desc": "Invincibility",
+          "address": "0x066B"
+        },
+        {
+          "code": "ATVEVVSZ",
+          "desc": "Invincibility",
+          "address": "0x06EE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

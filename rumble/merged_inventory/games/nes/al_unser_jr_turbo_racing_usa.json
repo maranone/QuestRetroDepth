@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "alunserjrturboracing",
+  "display_name": "Al Unser Jr. Turbo Racing (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Al Unser Jr. Turbo Racing (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0045:63",
+          "desc": "Infinite Turbo",
+          "address": "0x0045"
+        },
+        {
+          "code": "003C:00",
+          "desc": "Shift Modifier",
+          "address": "0x003C"
+        },
+        {
+          "code": "0046:00",
+          "desc": "Lap Modifier",
+          "address": "0x0046"
+        },
+        {
+          "code": "6484:00",
+          "desc": "Race Points Modifier",
+          "address": "0x6484"
+        },
+        {
+          "code": "00CB:63",
+          "desc": "Infinite Points",
+          "address": "0x00CB"
+        },
+        {
+          "code": "003F:00",
+          "desc": "Low Timer (Seconds)",
+          "address": "0x003F"
+        },
+        {
+          "code": "0040:00",
+          "desc": "Low Timer (Minutes)",
+          "address": "0x0040"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

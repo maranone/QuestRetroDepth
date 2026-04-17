@@ -1,0 +1,6 @@
+game_name=Mega Bomberman (USA, Europe) (Action Replay)
+game_key=mega_bomberman_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ff9543	life_lost	0xFF9543	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff9543	life_gained	0xFF9543	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

@@ -2,5 +2,5 @@
 # game_name=BsZeldaAncientStoneTablets
 # match_names=bszeldaancientstonetablets|bszeldaancientstonetabletssnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-damage_taken_0_f36f,0x7EF36F,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
-enemy_defeated_2_3a,0x7E003A,1,uint,changed,,left,0.510,normal,0,100,75,30,
+damage_taken_0_f36f,0x7EF36F,1,uint,prev_gt_curr,,left,0.78,fade_out,0,180,80,70,
+enemy_defeated_2_3a,0x7E003A,1,uint,changed,,left,0.55,burst,0,100,50,30,

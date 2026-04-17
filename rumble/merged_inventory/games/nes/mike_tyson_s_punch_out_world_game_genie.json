@@ -1,0 +1,96 @@
+{
+  "system": "nes",
+  "normalized_title": "miketysonspunchout",
+  "display_name": "Mike Tyson's Punch-Out!! (World) (Game Genie)",
+  "aliases": [
+    "Mike Tyson's Punch-Out!! (World) (Game Genie)",
+    "Mike Tysons Punch-Out (Rumbles)",
+    "Mike Tyson's Punch-Out!! (Japan, USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mike Tysons Punch-Out (Rumbles).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Mike Tyson's Punch-Out!! (Japan, USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "ATEALIXZ",
+          "desc": "Infinite Health",
+          "address": "0x056B"
+        },
+        {
+          "code": "KVKAAGLA",
+          "desc": "Refill Stamina Between Rounds",
+          "address": "0x0468"
+        },
+        {
+          "code": "GZKETGST",
+          "desc": "Never Lose Hearts",
+          "address": "0x04AE"
+        },
+        {
+          "code": "ALNEVPEY",
+          "desc": "Never Lose Stars",
+          "address": "0x01BE"
+        },
+        {
+          "code": "SZVAAOIV",
+          "desc": "Take Less Damage",
+          "address": "0x0128"
+        },
+        {
+          "code": "SZVALPAX",
+          "desc": "Take Even Less Damage",
+          "address": "0x012B"
+        },
+        {
+          "code": "AGUELIGA",
+          "desc": "Energy Replenishment",
+          "address": "0x05CB"
+        },
+        {
+          "code": "SZSELPAX",
+          "desc": "No Energy Replenishment For Oppenent",
+          "address": "0x01AB"
+        },
+        {
+          "code": "AAVETLGA",
+          "desc": "Normal Punches Do More Damage",
+          "address": "0x038E"
+        },
+        {
+          "code": "STNAPUIV",
+          "desc": "Stunned Punches Do Less Damage",
+          "address": "0x0369"
+        },
+        {
+          "code": "LASAEPAA",
+          "desc": "Start Each Round With 3 Stars",
+          "address": "0x0108"
+        },
+        {
+          "code": "XXXELNVA",
+          "desc": "Stop Timer",
+          "address": "0x07AB"
+        },
+        {
+          "code": "SUSETNSO",
+          "desc": "Stop Timer",
+          "address": "0x07BE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "bobwin",
+  "notes": [
+    "BOBwin cheat addresses available as fallback source."
+  ]
+}

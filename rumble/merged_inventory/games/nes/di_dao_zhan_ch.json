@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "didaozhan",
+  "display_name": "Di Dao Zhan (Ch)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Di Dao Zhan (Ch).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "005C:18",
+          "desc": "Infinite Energy",
+          "address": "0x005C"
+        },
+        {
+          "code": "0078:20",
+          "desc": "Infinite Grenades",
+          "address": "0x0078"
+        },
+        {
+          "code": "006E:32",
+          "desc": "Infinite Ammo",
+          "address": "0x006E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

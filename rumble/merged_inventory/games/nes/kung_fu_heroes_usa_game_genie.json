@@ -1,0 +1,129 @@
+{
+  "system": "nes",
+  "normalized_title": "kungfuheroes",
+  "display_name": "Kung-Fu Heroes (USA) (Game Genie)",
+  "aliases": [
+    "Kung-Fu Heroes (USA) (Game Genie)",
+    "Kung-Fu Heroes (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\kungfuheroes_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x04C0",
+        "0x04D0"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\KungFuHeroes-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x04D0",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x04C0",
+          "type": ">n8"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kung-Fu Heroes (USA).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "04D0:05",
+          "desc": "Infinite Lives",
+          "address": "0x04D0"
+        },
+        {
+          "code": "0029:00",
+          "desc": "Easy Win",
+          "address": "0x0029"
+        },
+        {
+          "code": "04D0:63",
+          "desc": "Infinite Lives P1",
+          "address": "0x04D0"
+        },
+        {
+          "code": "04D1:63",
+          "desc": "Infinite K P1",
+          "address": "0x04D1"
+        },
+        {
+          "code": "002B:09",
+          "desc": "Infinite Money P1",
+          "address": "0x002B"
+        },
+        {
+          "code": "04C0:09",
+          "desc": "Max Score P1",
+          "address": "0x04C0"
+        },
+        {
+          "code": "04C1:09",
+          "desc": "Max Score P1",
+          "address": "0x04C1"
+        },
+        {
+          "code": "04C2:09",
+          "desc": "Max Score P1",
+          "address": "0x04C2"
+        },
+        {
+          "code": "04C3:09",
+          "desc": "Max Score P1",
+          "address": "0x04C3"
+        },
+        {
+          "code": "04C4:09",
+          "desc": "Max Score P1",
+          "address": "0x04C4"
+        },
+        {
+          "code": "04C5:09",
+          "desc": "Max Score P1",
+          "address": "0x04C5"
+        },
+        {
+          "code": "04C6:09",
+          "desc": "Max Score P1",
+          "address": "0x04C6"
+        },
+        {
+          "code": "04C7:09",
+          "desc": "Max Score P1",
+          "address": "0x04C7"
+        },
+        {
+          "code": "0028:00",
+          "desc": "Level Modifier",
+          "address": "0x0028"
+        },
+        {
+          "code": "04DD:50",
+          "desc": "Untouchable",
+          "address": "0x04DD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

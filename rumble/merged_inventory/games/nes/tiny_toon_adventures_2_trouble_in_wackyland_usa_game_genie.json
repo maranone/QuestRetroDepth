@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "tinytoonadventures2troubleinwackyland",
+  "display_name": "Tiny Toon Adventures 2 - Trouble in Wackyland (USA) (Game Genie)",
+  "aliases": [
+    "Tiny Toon Adventures 2 - Trouble in Wackyland (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tiny Toon Adventures 2 - Trouble in Wackyland (USA).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 28,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "SZSEASVK",
+          "desc": "Protection against hits on train",
+          "address": "0x05A8"
+        },
+        {
+          "code": "SZOOUXVK",
+          "desc": "Protection against hits on bumper cars",
+          "address": "0x02AB"
+        },
+        {
+          "code": "SXKAYUVK",
+          "desc": "Protection against hits on roller coaster",
+          "address": "0x032F"
+        },
+        {
+          "code": "SZSALOVK",
+          "desc": "Protection against hits in fun house",
+          "address": "0x012B"
+        },
+        {
+          "code": "AANPYPLA",
+          "desc": "Log ride costs nothing instead of 3 tickets",
+          "address": "0x010F"
+        },
+        {
+          "code": "IANPYPLA",
+          "desc": "Log ride costs 5 tickets",
+          "address": "0x010F"
+        },
+        {
+          "code": "AANPIPZA",
+          "desc": "Train costs nothing instead of 2 tickets",
+          "address": "0x010D"
+        },
+        {
+          "code": "IANPIPZA",
+          "desc": "Train costs 5 tickets",
+          "address": "0x010D"
+        },
+        {
+          "code": "AANPPPGA",
+          "desc": "Roller coaster costs nothing instead of 4 tickets",
+          "address": "0x0109"
+        },
+        {
+          "code": "TANPPPGA",
+          "desc": "Roller coaster costs 6 tickets",
+          "address": "0x0109"
+        },
+        {
+          "code": "AANPLPPA",
+          "desc": "Bumper cars cost nothing instead of 1 ticket",
+          "address": "0x010B"
+        },
+        {
+          "code": "GANPLPPA",
+          "desc": "Bumper cars cost 4 tickets",
+          "address": "0x010B"
+        },
+        {
+          "code": "AANOZPIA",
+          "desc": "Fun house costs nothing instead of 50 normal tickets",
+          "address": "0x018A"
+        },
+        {
+          "code": "PANOZPIA",
+          "desc": "Fun house costs 10 normal tickets",
+          "address": "0x018A"
+        },
+        {
+          "code": "PANOZPIE",
+          "desc": "Fun house costs 90 normal tickets",
+          "address": "0x018A"
+        },
+        {
+          "code": "07C0:03",
+          "desc": "Infinite Energy",
+          "address": "0x07C0"
+        },
+        {
+          "code": "SAOAZASZ",
+          "desc": "Invincibility",
+          "address": "0x000A"
+        },
+        {
+          "code": "EIOAGAEY",
+          "desc": "Invincibility",
+          "address": "0x005C"
+        },
+        {
+          "code": "07C0:04",
+          "desc": "Infinite Health",
+          "address": "0x07C0"
+        },
+        {
+          "code": "0025:00",
+          "desc": "Level Modifier",
+          "address": "0x0025"
+        },
+        {
+          "code": "07D0:09",
+          "desc": "Infinite Tickets (One's Digit)",
+          "address": "0x07D0"
+        },
+        {
+          "code": "07CF:09",
+          "desc": "Infinite Tickets (Ten's Digit)",
+          "address": "0x07CF"
+        },
+        {
+          "code": "0707:99",
+          "desc": "Infinite Time (Micro-Seconds)",
+          "address": "0x0707"
+        },
+        {
+          "code": "0708:59",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x0708"
+        },
+        {
+          "code": "0709:09",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x0709"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

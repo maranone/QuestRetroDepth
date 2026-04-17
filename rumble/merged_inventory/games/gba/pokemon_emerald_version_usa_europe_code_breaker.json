@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "pokemonemeraldversion",
+  "display_name": "Pokemon - Emerald Version (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Pokemon - Emerald Version (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 74,
+      "raw_entry_count": 199,
+      "distinct_address_count": 69,
+      "sample_raw_entries": [
+        {
+          "code": "320375D4",
+          "desc": "No Random Battle",
+          "address": "0x020375D4"
+        },
+        {
+          "code": "73005E00",
+          "desc": "Skip Intro",
+          "address": "0x02005E00"
+        },
+        {
+          "code": "83005E00",
+          "desc": "Skip Intro",
+          "address": "0x02005E00"
+        },
+        {
+          "code": "73005E00",
+          "desc": "Skip Intro",
+          "address": "0x02005E00"
+        },
+        {
+          "code": "83005E00",
+          "desc": "Skip Intro",
+          "address": "0x02005E00"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Enable National Dex [Press Select]",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83000E48",
+          "desc": "Enable National Dex [Press Select]",
+          "address": "0x02000E48"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Enable National Dex [Press Select]",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83000E4A",
+          "desc": "Enable National Dex [Press Select]",
+          "address": "0x02000E4A"
+        },
+        {
+          "code": "32024AB0",
+          "desc": "Complete Pokedex",
+          "address": "0x02024AB0"
+        },
+        {
+          "code": "32024AE0",
+          "desc": "Complete Pokedex",
+          "address": "0x02024AE0"
+        },
+        {
+          "code": "32026388",
+          "desc": "Complete Pokedex",
+          "address": "0x02026388"
+        },
+        {
+          "code": "320263B8",
+          "desc": "Complete Pokedex",
+          "address": "0x020263B8"
+        },
+        {
+          "code": "32029524",
+          "desc": "Complete Pokedex",
+          "address": "0x02029524"
+        },
+        {
+          "code": "32029554",
+          "desc": "Complete Pokedex",
+          "address": "0x02029554"
+        },
+        {
+          "code": "32024A7C",
+          "desc": "Complete Pokedex",
+          "address": "0x02024A7C"
+        },
+        {
+          "code": "32024AAC",
+          "desc": "Complete Pokedex",
+          "address": "0x02024AAC"
+        },
+        {
+          "code": "82000568",
+          "desc": "Max Money",
+          "address": "0x02000568"
+        },
+        {
+          "code": "8200056A",
+          "desc": "Max Money",
+          "address": "0x0200056A"
+        },
+        {
+          "code": "82002DEC",
+          "desc": "Max Coins",
+          "address": "0x02002DEC"
+        },
+        {
+          "code": "8202309C",
+          "desc": "Mini EXP Gain After Battle",
+          "address": "0x0202309C"
+        },
+        {
+          "code": "820241F0",
+          "desc": "Mini EXP Gain After Battle",
+          "address": "0x020241F0"
+        },
+        {
+          "code": "8202309C",
+          "desc": "Medium EXP Gain After Battle",
+          "address": "0x0202309C"
+        },
+        {
+          "code": "820241F0",
+          "desc": "Medium EXP Gain After Battle",
+          "address": "0x020241F0"
+        },
+        {
+          "code": "8202309C",
+          "desc": "Max EXP Gain After Battle",
+          "address": "0x0202309C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Pokemon - Emerald Version (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 74,
+      "raw_entry_count": 199,
+      "distinct_address_count": 69,
+      "sample_raw_entries": [
+        {
+          "code": "320375D4",
+          "desc": "No Random Battle",
+          "address": "0x020375D4"
+        },
+        {
+          "code": "73005E00",
+          "desc": "Skip Intro",
+          "address": "0x02005E00"
+        },
+        {
+          "code": "83005E00",
+          "desc": "Skip Intro",
+          "address": "0x02005E00"
+        },
+        {
+          "code": "73005E00",
+          "desc": "Skip Intro",
+          "address": "0x02005E00"
+        },
+        {
+          "code": "83005E00",
+          "desc": "Skip Intro",
+          "address": "0x02005E00"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Enable National Dex [Press Select]",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83000E48",
+          "desc": "Enable National Dex [Press Select]",
+          "address": "0x02000E48"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Enable National Dex [Press Select]",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83000E4A",
+          "desc": "Enable National Dex [Press Select]",
+          "address": "0x02000E4A"
+        },
+        {
+          "code": "32024AB0",
+          "desc": "Complete Pokedex",
+          "address": "0x02024AB0"
+        },
+        {
+          "code": "32024AE0",
+          "desc": "Complete Pokedex",
+          "address": "0x02024AE0"
+        },
+        {
+          "code": "32026388",
+          "desc": "Complete Pokedex",
+          "address": "0x02026388"
+        },
+        {
+          "code": "320263B8",
+          "desc": "Complete Pokedex",
+          "address": "0x020263B8"
+        },
+        {
+          "code": "32029524",
+          "desc": "Complete Pokedex",
+          "address": "0x02029524"
+        },
+        {
+          "code": "32029554",
+          "desc": "Complete Pokedex",
+          "address": "0x02029554"
+        },
+        {
+          "code": "32024A7C",
+          "desc": "Complete Pokedex",
+          "address": "0x02024A7C"
+        },
+        {
+          "code": "32024AAC",
+          "desc": "Complete Pokedex",
+          "address": "0x02024AAC"
+        },
+        {
+          "code": "82000568",
+          "desc": "Max Money",
+          "address": "0x02000568"
+        },
+        {
+          "code": "8200056A",
+          "desc": "Max Money",
+          "address": "0x0200056A"
+        },
+        {
+          "code": "82002DEC",
+          "desc": "Max Coins",
+          "address": "0x02002DEC"
+        },
+        {
+          "code": "8202309C",
+          "desc": "Mini EXP Gain After Battle",
+          "address": "0x0202309C"
+        },
+        {
+          "code": "820241F0",
+          "desc": "Mini EXP Gain After Battle",
+          "address": "0x020241F0"
+        },
+        {
+          "code": "8202309C",
+          "desc": "Medium EXP Gain After Battle",
+          "address": "0x0202309C"
+        },
+        {
+          "code": "820241F0",
+          "desc": "Medium EXP Gain After Battle",
+          "address": "0x020241F0"
+        },
+        {
+          "code": "8202309C",
+          "desc": "Max EXP Gain After Battle",
+          "address": "0x0202309C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

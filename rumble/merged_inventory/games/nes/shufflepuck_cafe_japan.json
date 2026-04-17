@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "shufflepuckcafe",
+  "display_name": "Shufflepuck Cafe (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Shufflepuck Cafe (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "060F:0F",
+          "desc": "Only 1 Point Needed To Win",
+          "address": "0x060F"
+        },
+        {
+          "code": "064F:00",
+          "desc": "Opponent Can't Score",
+          "address": "0x064F"
+        },
+        {
+          "code": "064D:06",
+          "desc": "Opponent Doesn't Move",
+          "address": "0x064D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

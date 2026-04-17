@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "famicomwars",
+  "display_name": "Famicom Wars (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Famicom Wars (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "60AB:FF",
+          "desc": "Max Cash (1st Player)",
+          "address": "0x60AB"
+        },
+        {
+          "code": "60AE:00",
+          "desc": "Zero Cash (Opponent)",
+          "address": "0x60AE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

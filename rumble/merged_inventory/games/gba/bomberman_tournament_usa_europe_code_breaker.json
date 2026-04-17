@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "bombermantournament",
+  "display_name": "Bomberman Tournament (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Bomberman Tournament (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "100004F8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020004F8"
+        },
+        {
+          "code": "32035194",
+          "desc": "Infinite Health",
+          "address": "0x02035194"
+        },
+        {
+          "code": "32035195",
+          "desc": "Max Health",
+          "address": "0x02035195"
+        },
+        {
+          "code": "32035196",
+          "desc": "Max Bombs",
+          "address": "0x02035196"
+        },
+        {
+          "code": "32035197",
+          "desc": "Max Explosion",
+          "address": "0x02035197"
+        },
+        {
+          "code": "82035198",
+          "desc": "Max Coins",
+          "address": "0x02035198"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Bomberman Tournament (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "100004F8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020004F8"
+        },
+        {
+          "code": "32035194",
+          "desc": "Infinite Health",
+          "address": "0x02035194"
+        },
+        {
+          "code": "32035195",
+          "desc": "Max Health",
+          "address": "0x02035195"
+        },
+        {
+          "code": "32035196",
+          "desc": "Max Bombs",
+          "address": "0x02035196"
+        },
+        {
+          "code": "32035197",
+          "desc": "Max Explosion",
+          "address": "0x02035197"
+        },
+        {
+          "code": "82035198",
+          "desc": "Max Coins",
+          "address": "0x02035198"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

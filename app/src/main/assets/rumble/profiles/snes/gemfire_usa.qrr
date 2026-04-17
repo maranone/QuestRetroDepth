@@ -1,0 +1,8 @@
+game_name=Gemfire (USA)
+game_key=gemfire_usa
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_c333	pickup	0x7EC333	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_c357	pickup	0x7EC357	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_c37b	pickup	0x7EC37B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_c39f	pickup	0x7EC39F	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,104 @@
+{
+  "system": "nes",
+  "normalized_title": "popeye",
+  "display_name": "Popeye (World) (Rev 1)",
+  "aliases": [
+    "Popeye (Japan)",
+    "Popeye (World) (Rev 1)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\popeye_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0024",
+        "0x006C"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Popeye-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x006C",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0024",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Popeye (World) (Rev 1).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "0334:09",
+          "desc": "Fake Infinite Lives",
+          "address": "0x0334"
+        },
+        {
+          "code": "0344:09",
+          "desc": "Infinite Lives",
+          "address": "0x0344"
+        },
+        {
+          "code": "0021:99",
+          "desc": "Max Top Score",
+          "address": "0x0021"
+        },
+        {
+          "code": "0022:99",
+          "desc": "Max Top Score",
+          "address": "0x0022"
+        },
+        {
+          "code": "0023:99",
+          "desc": "Max Top Score",
+          "address": "0x0023"
+        },
+        {
+          "code": "0025:99",
+          "desc": "Max Score P1",
+          "address": "0x0025"
+        },
+        {
+          "code": "0026:99",
+          "desc": "Max Score P1",
+          "address": "0x0026"
+        },
+        {
+          "code": "0027:99",
+          "desc": "Max Score P1",
+          "address": "0x0027"
+        },
+        {
+          "code": "0093:05",
+          "desc": "Freeze Enemy In The Corner (Bluto)",
+          "address": "0x0093"
+        },
+        {
+          "code": "0064:00",
+          "desc": "Round Modifier",
+          "address": "0x0064"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

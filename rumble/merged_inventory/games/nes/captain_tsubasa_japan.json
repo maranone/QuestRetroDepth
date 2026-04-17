@@ -1,0 +1,90 @@
+{
+  "system": "nes",
+  "normalized_title": "captaintsubasa",
+  "display_name": "Captain Tsubasa (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Captain Tsubasa (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "05E1:00",
+          "desc": "Cpu Score Always Zero",
+          "address": "0x05E1"
+        },
+        {
+          "code": "05E0:63",
+          "desc": "P1 Score Always 99",
+          "address": "0x05E0"
+        },
+        {
+          "code": "0484:FF",
+          "desc": "Infinte Energy For The Entire Team",
+          "address": "0x0484"
+        },
+        {
+          "code": "0418:FF",
+          "desc": "Infinte Energy For The Entire Team",
+          "address": "0x0418"
+        },
+        {
+          "code": "04BA:FF",
+          "desc": "Infinte Energy For The Entire Team",
+          "address": "0x04BA"
+        },
+        {
+          "code": "042A:FF",
+          "desc": "Infinte Energy For The Entire Team",
+          "address": "0x042A"
+        },
+        {
+          "code": "043C:FF",
+          "desc": "Infinte Energy For The Entire Team",
+          "address": "0x043C"
+        },
+        {
+          "code": "04A8:FF",
+          "desc": "Infinte Energy For The Entire Team",
+          "address": "0x04A8"
+        },
+        {
+          "code": "044E:FF",
+          "desc": "Infinte Energy For The Entire Team",
+          "address": "0x044E"
+        },
+        {
+          "code": "0460:FF",
+          "desc": "Infinte Energy For The Entire Team",
+          "address": "0x0460"
+        },
+        {
+          "code": "0496:FF",
+          "desc": "Infinte Energy For The Entire Team",
+          "address": "0x0496"
+        },
+        {
+          "code": "0472:FF",
+          "desc": "Infinte Energy For The Entire Team",
+          "address": "0x0472"
+        },
+        {
+          "code": "EKUEZTOO",
+          "desc": "All Players Infinite Energy Except GK",
+          "address": "0x06CA"
+        },
+        {
+          "code": "06A1:00",
+          "desc": "Time Modifier",
+          "address": "0x06A1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,10 @@
+game_name=Rollerblade Racer (USA) (Game Genie)
+game_key=rollerblade_racer_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_003a	life_lost	0x003A	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_003a	life_gained	0x003A	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_04d4	score	0x04D4	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04d5	score	0x04D5	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	life_lost_lives_003b	life_lost	0x003B	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_003b	life_gained	0x003B	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

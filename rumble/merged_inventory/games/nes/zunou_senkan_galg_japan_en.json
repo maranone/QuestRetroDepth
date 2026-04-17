@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "zunousenkangalg",
+  "display_name": "Zunou Senkan Galg (Japan) (En)",
+  "aliases": [
+    "Zunou Senkan Galg (Japan) (En)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Zunou Senkan Galg (Japan) (En).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "OXNEAAVK",
+          "desc": "Infinite Lives",
+          "address": "0x00A8"
+        },
+        {
+          "code": "ATEEIVAT",
+          "desc": "Invincibility",
+          "address": "0x06ED"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "zipang",
+  "display_name": "Zipang (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Zipang (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f009f:99",
+          "desc": "Infinite Life",
+          "address": "0x1F009F"
+        },
+        {
+          "code": "1f0604:00",
+          "desc": "Invincibility",
+          "address": "0x1F0604"
+        },
+        {
+          "code": "1f00ab:09",
+          "desc": "Infinite Elephants",
+          "address": "0x1F00AB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,9 @@
+game_name=Mario vs. Donkey Kong (World) (Code Breaker)
+game_key=mario_vs_donkey_kong_world_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_02000bbc	life_lost	0x02000BBC	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02000bbc	life_gained	0x02000BBC	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_02001a80	pickup	0x02001A80	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_02003528	damage_taken	0x02003528	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02003528	death	0x02003528	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

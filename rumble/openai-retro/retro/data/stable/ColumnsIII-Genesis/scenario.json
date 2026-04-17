@@ -1,0 +1,17 @@
+{
+  "done": {
+    "variables": {
+      "rounds_lost": {
+        "op": "equal",
+        "reference": 4
+      }
+    }
+  },
+  "reward": {
+    "variables": {
+      "rounds_won": {
+        "reward": 1.0
+      }
+    }
+  }
+}

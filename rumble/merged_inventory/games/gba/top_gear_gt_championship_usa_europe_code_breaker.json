@@ -1,0 +1,38 @@
+{
+  "system": "gba",
+  "normalized_title": "topgeargtchampionship",
+  "display_name": "Top Gear GT Championship (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Top Gear GT Championship (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "83003A04",
+          "desc": "Always Low Timer",
+          "address": "0x02003A04"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Top Gear GT Championship (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "83003A04",
+          "desc": "Always Low Timer",
+          "address": "0x02003A04"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

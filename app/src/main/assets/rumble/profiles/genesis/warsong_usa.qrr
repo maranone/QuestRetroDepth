@@ -1,0 +1,7 @@
+game_name=Warsong (USA)
+game_key=warsong_usa
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ffaeae	pickup	0xFFAEAE	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffaeaf	pickup	0xFFAEAF	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_ff5584	level_complete	0xFF5584	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

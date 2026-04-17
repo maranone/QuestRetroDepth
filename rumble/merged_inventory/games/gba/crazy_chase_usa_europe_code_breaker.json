@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "crazychase",
+  "display_name": "Crazy Chase (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Crazy Chase (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "10008C8C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02008C8C"
+        },
+        {
+          "code": "83005D58",
+          "desc": "Infinite HP",
+          "address": "0x02005D58"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Crazy Chase (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "10008C8C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02008C8C"
+        },
+        {
+          "code": "83005D58",
+          "desc": "Infinite HP",
+          "address": "0x02005D58"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "system": "nes",
+  "normalized_title": "hebereke",
+  "display_name": "Hebereke (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hebereke (Japan).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 14,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "04E5:10",
+          "desc": "Infinite Energy",
+          "address": "0x04E5"
+        },
+        {
+          "code": "002C:88",
+          "desc": "Infinite Hits on Boss Fights",
+          "address": "0x002C"
+        },
+        {
+          "code": "002D:80",
+          "desc": "Boss Instant Win",
+          "address": "0x002D"
+        },
+        {
+          "code": "04E0:FF",
+          "desc": "Have Keys + Some Items",
+          "address": "0x04E0"
+        },
+        {
+          "code": "04E1:07",
+          "desc": "Have All Characters",
+          "address": "0x04E1"
+        },
+        {
+          "code": "04E2:FF",
+          "desc": "Health Reserve Tanks",
+          "address": "0x04E2"
+        },
+        {
+          "code": "04E3:FF",
+          "desc": "Health Reserve Tanks",
+          "address": "0x04E3"
+        },
+        {
+          "code": "04E6:FF",
+          "desc": "Most Other Items",
+          "address": "0x04E6"
+        },
+        {
+          "code": "0503:00",
+          "desc": "Jump to Float at the top of the Screen",
+          "address": "0x0503"
+        },
+        {
+          "code": "0505:00",
+          "desc": "Slow Descent",
+          "address": "0x0505"
+        },
+        {
+          "code": "050A:00",
+          "desc": "Slippery Floor Modifier",
+          "address": "0x050A"
+        },
+        {
+          "code": "0510:00",
+          "desc": "Character Modifier",
+          "address": "0x0510"
+        },
+        {
+          "code": "051B:00",
+          "desc": "Sprite Modifier",
+          "address": "0x051B"
+        },
+        {
+          "code": "051C:0F",
+          "desc": "Walk Through Enemies",
+          "address": "0x051C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

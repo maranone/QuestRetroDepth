@@ -1,0 +1,8 @@
+game_name=Tang Tang (USA, Europe) (Code Breaker)
+game_key=tang_tang_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_020014e0	life_lost	0x020014E0	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_020014e0	life_gained	0x020014E0	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_020073d0	score	0x020073D0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_020073d2	score	0x020073D2	1	uint	little	prev < curr	0.8	1	right:0.350:60

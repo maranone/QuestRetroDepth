@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "minnanotaabounonakayoshidaisakusen",
+  "display_name": "Minna no Taabou no Nakayoshi Daisakusen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Minna no Taabou no Nakayoshi Daisakusen (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "00AF:09",
+          "desc": "Invincibility (flashing)",
+          "address": "0x00AF"
+        },
+        {
+          "code": "056D:1E",
+          "desc": "Infinite Time",
+          "address": "0x056D"
+        },
+        {
+          "code": "00AD:05",
+          "desc": "Infinite Lives",
+          "address": "0x00AD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

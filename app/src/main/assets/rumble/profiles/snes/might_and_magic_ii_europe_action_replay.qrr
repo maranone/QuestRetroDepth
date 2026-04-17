@@ -1,0 +1,17 @@
+game_name=Might and Magic II (Europe) (Action Replay)
+game_key=might_and_magic_ii_europe_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_198a	pickup	0x7E198A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_198b	pickup	0x7E198B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_e062	damage_taken	0x7FE062	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_e062	death	0x7FE062	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_e06c	pickup	0x7FE06C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_e06d	pickup	0x7FE06D	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_e063	damage_taken	0x7FE063	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_e063	death	0x7FE063	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_e078	damage_taken	0x7FE078	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_e078	death	0x7FE078	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_e079	damage_taken	0x7FE079	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_e079	death	0x7FE079	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_e075	level_complete	0x7FE075	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

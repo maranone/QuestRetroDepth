@@ -1,0 +1,95 @@
+{
+  "system": "nes",
+  "normalized_title": "mouryousenkimadara",
+  "display_name": "Mouryou Senki Madara (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mouryou Senki Madara (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 15,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "YLKEZAKN",
+          "desc": "Start with max coins",
+          "address": "0x00BA"
+        },
+        {
+          "code": "ZGKEYAPA",
+          "desc": "Start with max coins",
+          "address": "0x00CF"
+        },
+        {
+          "code": "YASAGAAE",
+          "desc": "Start with max coins",
+          "address": "0x000C"
+        },
+        {
+          "code": "05EC:00",
+          "desc": "No Random Battles",
+          "address": "0x05EC"
+        },
+        {
+          "code": "05B0:00",
+          "desc": "P1 Instant Level Up",
+          "address": "0x05B0"
+        },
+        {
+          "code": "05B1:00",
+          "desc": "P1 Instant Level Up",
+          "address": "0x05B1"
+        },
+        {
+          "code": "05B3:00",
+          "desc": "P2 Instant Level Up",
+          "address": "0x05B3"
+        },
+        {
+          "code": "05B4:00",
+          "desc": "P2 Instant Level Up",
+          "address": "0x05B4"
+        },
+        {
+          "code": "05B6:00",
+          "desc": "P3 Instant Level Up",
+          "address": "0x05B6"
+        },
+        {
+          "code": "05B7:00",
+          "desc": "P3 Instant Level Up",
+          "address": "0x05B7"
+        },
+        {
+          "code": "05B9:00",
+          "desc": "P4 Instant Level Up",
+          "address": "0x05B9"
+        },
+        {
+          "code": "05BA:00",
+          "desc": "P4 Instant Level Up",
+          "address": "0x05BA"
+        },
+        {
+          "code": "0474:11",
+          "desc": "Walk Anywhere",
+          "address": "0x0474"
+        },
+        {
+          "code": "0478:11",
+          "desc": "Walk Anywhere",
+          "address": "0x0478"
+        },
+        {
+          "code": "GESAATPX",
+          "desc": "Sound Test",
+          "address": "0x0608"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

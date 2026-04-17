@@ -1,0 +1,5 @@
+game_name=Punch-Out (Rumbles)
+game_key=PunchOut-Nes
+system=nes
+integration_tier=stable
+trigger	score_score_03e8	score	0x03E8	6	nibble	big	prev < curr	0.8	1	right:0.350:60

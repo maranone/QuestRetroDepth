@@ -1,0 +1,95 @@
+{
+  "system": "nes",
+  "normalized_title": "desertcommander",
+  "display_name": "Desert Commander (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Desert Commander (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "008D:63",
+          "desc": "Have 99 Infinite Units Left",
+          "address": "0x008D"
+        },
+        {
+          "code": "0060:63",
+          "desc": "Have 99 Infinite Units Left",
+          "address": "0x0060"
+        },
+        {
+          "code": "0064:63",
+          "desc": "Have 99 Infinite Units Left",
+          "address": "0x0064"
+        },
+        {
+          "code": "00A4:63",
+          "desc": "Have 99 Infinite Units Left",
+          "address": "0x00A4"
+        },
+        {
+          "code": "0084:63",
+          "desc": "Have 99 Tank Units",
+          "address": "0x0084"
+        },
+        {
+          "code": "0085:63",
+          "desc": "Have 99 Tank #2 Units",
+          "address": "0x0085"
+        },
+        {
+          "code": "0086:63",
+          "desc": "Have 99 Trucks Units",
+          "address": "0x0086"
+        },
+        {
+          "code": "0087:63",
+          "desc": "Have 99 Troop Units",
+          "address": "0x0087"
+        },
+        {
+          "code": "0088:63",
+          "desc": "Have 99 Grenades (?) Units",
+          "address": "0x0088"
+        },
+        {
+          "code": "0089:63",
+          "desc": "Have 99 Stationary Artillery",
+          "address": "0x0089"
+        },
+        {
+          "code": "008A:63",
+          "desc": "Have 99 Transport Trucks",
+          "address": "0x008A"
+        },
+        {
+          "code": "008B:63",
+          "desc": "Have 99 Heavy Airplanes",
+          "address": "0x008B"
+        },
+        {
+          "code": "008C:63",
+          "desc": "Have 99 Light Airplanes",
+          "address": "0x008C"
+        },
+        {
+          "code": "0064:00",
+          "desc": "Units Modifier",
+          "address": "0x0064"
+        },
+        {
+          "code": "0094:00",
+          "desc": "Have XX Tank Units",
+          "address": "0x0094"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

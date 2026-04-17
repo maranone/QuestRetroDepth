@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "mickeyssafariinletterland",
+  "display_name": "Mickey's Safari in Letterland (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mickey's Safari in Letterland (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0217:00",
+          "desc": "Level Highlight Modifier",
+          "address": "0x0217"
+        },
+        {
+          "code": "0219:00",
+          "desc": "Level Modifier",
+          "address": "0x0219"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

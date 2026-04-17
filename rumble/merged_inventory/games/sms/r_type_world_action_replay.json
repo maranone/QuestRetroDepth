@@ -1,0 +1,53 @@
+{
+  "system": "sms",
+  "normalized_title": "rtype",
+  "display_name": "R-Type (World) (Action Replay)",
+  "aliases": [
+    "R-Type (World) (Action Replay)",
+    "R-Type (World)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\rtype_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xCC09",
+        "0xCE01"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\RType-Sms-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xCE01",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xCC09",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\R-Type (World).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

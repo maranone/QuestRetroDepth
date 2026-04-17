@@ -1,0 +1,88 @@
+{
+  "system": "nes",
+  "normalized_title": "flintstonesrescueofdinohoppy",
+  "display_name": "Flintstones, The - The Rescue of Dino _ Hoppy (World) (Action Replay)",
+  "aliases": [
+    "Flintstones, The - The Rescue of Dino _ Hoppy (World) (Action Replay)",
+    "Flintstones, The - The Rescue of Dino _ Hoppy (World) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Flintstones, The - The Rescue of Dino _ Hoppy (World) (Game Genie).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 13,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "SXOAAEVK",
+          "desc": "Infinite Lives",
+          "address": "0x0028"
+        },
+        {
+          "code": "AAVAYPZA",
+          "desc": "Start With 1 Life",
+          "address": "0x010F"
+        },
+        {
+          "code": "IAVAYPZA",
+          "desc": "Start With 6 Lives",
+          "address": "0x010F"
+        },
+        {
+          "code": "AAVAYPZE",
+          "desc": "Start With 9 Lives",
+          "address": "0x010F"
+        },
+        {
+          "code": "LTNELOZA",
+          "desc": "Start With 99 Coins",
+          "address": "0x01EB"
+        },
+        {
+          "code": "PEEAAPAA",
+          "desc": "Start With Slingshot",
+          "address": "0x0108"
+        },
+        {
+          "code": "ZEEAAPAA",
+          "desc": "Start With Axe",
+          "address": "0x0108"
+        },
+        {
+          "code": "GEEAAPAA",
+          "desc": "Start With Bomb",
+          "address": "0x0108"
+        },
+        {
+          "code": "AAUAXTLA",
+          "desc": "Slingshot Doesn't Use Up Coins",
+          "address": "0x060A"
+        },
+        {
+          "code": "AAUAUTLA",
+          "desc": "Axe Doesn't Use Up Coins",
+          "address": "0x060B"
+        },
+        {
+          "code": "AAUAKVZA",
+          "desc": "Bomb Doesn't Use Up Coins",
+          "address": "0x060C"
+        },
+        {
+          "code": "SXOPZOVK",
+          "desc": "Infinite Energy",
+          "address": "0x012A"
+        },
+        {
+          "code": "AETEKI",
+          "desc": "Infinite Fire Power",
+          "address": "0x0584"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

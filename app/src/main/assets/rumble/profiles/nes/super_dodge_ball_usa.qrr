@@ -1,0 +1,24 @@
+game_name=Super Dodge Ball (USA)
+game_key=super_dodge_ball_usa
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_058b	damage_taken	0x058B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_058b	death	0x058B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0553	damage_taken	0x0553	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0553	death	0x0553	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_051b	damage_taken	0x051B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_051b	death	0x051B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_043b	damage_taken	0x043B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_043b	death	0x043B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0403	damage_taken	0x0403	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0403	death	0x0403	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_03cb	damage_taken	0x03CB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03cb	death	0x03CB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0019	damage_taken	0x0019	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0019	death	0x0019	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_001a	damage_taken	0x001A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_001a	death	0x001A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_001b	damage_taken	0x001B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_001b	death	0x001B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_001e	damage_taken	0x001E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_001e	death	0x001E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

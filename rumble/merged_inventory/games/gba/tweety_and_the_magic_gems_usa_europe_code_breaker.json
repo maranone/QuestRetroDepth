@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "tweetyandmagicgems",
+  "display_name": "Tweety and the Magic Gems (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Tweety and the Magic Gems (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10025E10",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02025E10"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 10 Moves",
+          "address": "0x02000020"
+        },
+        {
+          "code": "33000B04",
+          "desc": "Press Select For 10 Moves",
+          "address": "0x02000B04"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Tweety and the Magic Gems (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10025E10",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02025E10"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For 10 Moves",
+          "address": "0x02000020"
+        },
+        {
+          "code": "33000B04",
+          "desc": "Press Select For 10 Moves",
+          "address": "0x02000B04"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

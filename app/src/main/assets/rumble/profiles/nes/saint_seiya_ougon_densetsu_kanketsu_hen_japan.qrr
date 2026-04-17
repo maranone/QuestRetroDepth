@@ -1,0 +1,10 @@
+game_name=Saint Seiya - Ougon Densetsu Kanketsu Hen (Japan)
+game_key=saint_seiya_ougon_densetsu_kanketsu_hen_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0063	damage_taken	0x0063	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0063	death	0x0063	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0064	damage_taken	0x0064	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0064	death	0x0064	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_05cf	damage_taken	0x05CF	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_05cf	death	0x05CF	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

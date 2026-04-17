@@ -1,0 +1,5 @@
+game_name=Pirates! (USA, Europe) (Game Genie)
+game_key=pirates_usa_europe_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_068c	pickup	0x068C	1	uint	little	prev != curr	0.8	1	right:0.250:18

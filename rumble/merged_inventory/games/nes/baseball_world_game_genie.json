@@ -1,0 +1,28 @@
+{
+  "system": "nes",
+  "normalized_title": "baseball",
+  "display_name": "Baseball (World) (Game Genie)",
+  "aliases": [
+    "Baseball (USA, Europe)",
+    "Baseball (World) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Baseball (World) (Game Genie).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "OGLOPP",
+          "desc": "You Hit The Ball As Usual (Weird Pitching) And It Flies As Usual, But Everyone That Is Moving Goes To The Left Of The Field Forever (Cannot Finish Game)",
+          "address": "0x01C1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

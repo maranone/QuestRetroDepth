@@ -1,0 +1,8 @@
+game_name=Rock n' Roll Racing (USA) (Action Replay)
+game_key=rock_n_roll_racing_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ffd323	pickup	0xFFD323	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffd324	pickup	0xFFD324	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffd325	pickup	0xFFD325	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffd322	pickup	0xFFD322	1	uint	little	prev != curr	0.8	1	right:0.250:18

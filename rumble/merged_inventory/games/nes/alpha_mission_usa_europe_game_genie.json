@@ -1,0 +1,100 @@
+{
+  "system": "nes",
+  "normalized_title": "alphamission",
+  "display_name": "Alpha Mission (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Alpha Mission (Rumbles)",
+    "Alpha Mission (USA)",
+    "Alpha Mission (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\alphamission_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00DC",
+        "0x00DF"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AlphaMission-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x00DF",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x00DC",
+          "type": "<d2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Alpha Mission (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 9,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "SXSPYZVG",
+          "desc": "Infinite Lives",
+          "address": "0x022F"
+        },
+        {
+          "code": "PASATLLA",
+          "desc": "Start With 1 Life",
+          "address": "0x030E"
+        },
+        {
+          "code": "TASATLLA",
+          "desc": "Start With Double Lives",
+          "address": "0x030E"
+        },
+        {
+          "code": "PASATLLE",
+          "desc": "Start With Triple Lives",
+          "address": "0x030E"
+        },
+        {
+          "code": "NYKAYLLE",
+          "desc": "Start With All Weapons Available",
+          "address": "0x037F"
+        },
+        {
+          "code": "GZNAILSA",
+          "desc": "Keep Power Up After Death",
+          "address": "0x032D"
+        },
+        {
+          "code": "GZNAYLSA",
+          "desc": "Keep Energy After Death",
+          "address": "0x032F"
+        },
+        {
+          "code": "GAEOUEAA",
+          "desc": "Thunder Uses 25% Normal Energy",
+          "address": "0x008B"
+        },
+        {
+          "code": "IZNAEGSA",
+          "desc": "You Can Re-Use Weapon After Selecting",
+          "address": "0x0428"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

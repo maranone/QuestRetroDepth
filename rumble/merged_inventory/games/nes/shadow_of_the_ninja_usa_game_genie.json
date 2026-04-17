@@ -1,0 +1,127 @@
+{
+  "system": "nes",
+  "normalized_title": "shadowofninja",
+  "display_name": "Shadow of the Ninja (USA) (Game Genie)",
+  "aliases": [
+    "Shadow of the Ninja (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Shadow of the Ninja (USA).cht",
+      "total_cheat_rows": 37,
+      "raw_entry_count": 21,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "AAVPGIGA",
+          "desc": "Don't lose energy from falling",
+          "address": "0x050C"
+        },
+        {
+          "code": "APOEOGGA",
+          "desc": "Maximum energy gained from potion",
+          "address": "0x0499"
+        },
+        {
+          "code": "PAOEOGGA",
+          "desc": "Less energy gained from potion",
+          "address": "0x0489"
+        },
+        {
+          "code": "AZUAOGGO",
+          "desc": "40 throwing stars on pick-up",
+          "address": "0x0429"
+        },
+        {
+          "code": "GPKAVGIA",
+          "desc": "20 bombs on pick-up",
+          "address": "0x041E"
+        },
+        {
+          "code": "06F0:10",
+          "desc": "Infinite Health",
+          "address": "0x06F0"
+        },
+        {
+          "code": "0601:26",
+          "desc": "Invincibility",
+          "address": "0x0601"
+        },
+        {
+          "code": "0662:63",
+          "desc": "Infinite Ammo",
+          "address": "0x0662"
+        },
+        {
+          "code": "0671:00",
+          "desc": "Weapon - Shuriken",
+          "address": "0x0671"
+        },
+        {
+          "code": "0671:01",
+          "desc": "Weapon - Bombs",
+          "address": "0x0671"
+        },
+        {
+          "code": "0640:00",
+          "desc": "Y Axys",
+          "address": "0x0640"
+        },
+        {
+          "code": "SLVOGSSO",
+          "desc": "No Health loss when falling",
+          "address": "0x05BC"
+        },
+        {
+          "code": "06F0:10",
+          "desc": "Infinite Health P1",
+          "address": "0x06F0"
+        },
+        {
+          "code": "0662:63",
+          "desc": "Infinite Shurikens P1",
+          "address": "0x0662"
+        },
+        {
+          "code": "07F8:00",
+          "desc": "Boss Health Modifier",
+          "address": "0x07F8"
+        },
+        {
+          "code": "0040:00",
+          "desc": "Level Modifier",
+          "address": "0x0040"
+        },
+        {
+          "code": "06B2:00",
+          "desc": "P1 Weapon Modifier",
+          "address": "0x06B2"
+        },
+        {
+          "code": "06B6:00",
+          "desc": "P2 Weapon Modifier",
+          "address": "0x06B6"
+        },
+        {
+          "code": "0680:0A",
+          "desc": "P1 Max Weapon Power",
+          "address": "0x0680"
+        },
+        {
+          "code": "0684:0A",
+          "desc": "P2 Max Weapon Power",
+          "address": "0x0684"
+        },
+        {
+          "code": "0044:09",
+          "desc": "Infinite Continues",
+          "address": "0x0044"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "system": "nes",
+  "normalized_title": "basesloaded3",
+  "display_name": "Bases Loaded 3 (USA) (Game Genie)",
+  "aliases": [
+    "Bases Loaded 3 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bases Loaded 3 (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 19,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "SXOPSEVV",
+          "desc": "Some strikes aren't counted",
+          "address": "0x002D"
+        },
+        {
+          "code": "AEOPXAZA",
+          "desc": "1 strike and you're out",
+          "address": "0x000A"
+        },
+        {
+          "code": "PEOPXAZA",
+          "desc": "2 strikes and you're out",
+          "address": "0x000A"
+        },
+        {
+          "code": "SXKOXEVV",
+          "desc": "Balls aren't counted",
+          "address": "0x00AA"
+        },
+        {
+          "code": "SXOAIUVV",
+          "desc": "Strike outs aren't counted",
+          "address": "0x032D"
+        },
+        {
+          "code": "PEOEGLLA",
+          "desc": "Each strike out counts as 3 outs",
+          "address": "0x038C"
+        },
+        {
+          "code": "ZEOEGLLA",
+          "desc": "Each strike out counts as 2 outs",
+          "address": "0x038C"
+        },
+        {
+          "code": "IEOEGLLA",
+          "desc": "5 strike outs allowed",
+          "address": "0x038C"
+        },
+        {
+          "code": "0383:FF",
+          "desc": "High Score P1",
+          "address": "0x0383"
+        },
+        {
+          "code": "0384:00",
+          "desc": "Runs In The Inning Modifier P1",
+          "address": "0x0384"
+        },
+        {
+          "code": "0394:00",
+          "desc": "No Score P2/CPU",
+          "address": "0x0394"
+        },
+        {
+          "code": "0385:00",
+          "desc": "Runs In The Inning Modifier P2",
+          "address": "0x0385"
+        },
+        {
+          "code": "037D:00",
+          "desc": "Strikes Modifier",
+          "address": "0x037D"
+        },
+        {
+          "code": "037F:00",
+          "desc": "Outs Modifier",
+          "address": "0x037F"
+        },
+        {
+          "code": "NYVPOETE",
+          "desc": "Balls Are Strikes",
+          "address": "0x0079"
+        },
+        {
+          "code": "TAVPUEON",
+          "desc": "Balls Are Strikes",
+          "address": "0x000B"
+        },
+        {
+          "code": "AIUOUGEY",
+          "desc": "Auto Fielding 1 Player Game",
+          "address": "0x04DB"
+        },
+        {
+          "code": "AIUOUGEY",
+          "desc": "Auto Fielding 2 Player Game",
+          "address": "0x04DB"
+        },
+        {
+          "code": "AAUOEKZA",
+          "desc": "Auto Fielding 2 Player Game",
+          "address": "0x0488"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

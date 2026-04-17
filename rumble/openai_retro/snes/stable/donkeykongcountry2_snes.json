@@ -1,0 +1,102 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "DonkeyKongCountry2",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\DonkeyKongCountry2-Snes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "DonkeyKongCountry2-Snes"
+  },
+  "triggers": [
+    {
+      "id": "life_lost_lives_08c0",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0x7E08C0",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "bank": "7E",
+          "address": "0x08C0",
+          "wram_offset": 2240
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x7E08C0",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_08c0",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0x7E08C0",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "bank": "7E",
+          "address": "0x08C0",
+          "wram_offset": 2240
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x7E08C0",
+          "raw_type": "|i1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "bananas",
+      "meta": {
+        "address": 8259948,
+        "type": ">d2"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

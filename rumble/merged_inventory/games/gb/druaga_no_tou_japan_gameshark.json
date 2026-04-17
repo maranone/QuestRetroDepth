@@ -1,0 +1,27 @@
+{
+  "system": "gb",
+  "normalized_title": "druaganotou",
+  "display_name": "Druaga no Tou (Japan) (GameShark)",
+  "aliases": [
+    "Druaga no Tou (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Druaga no Tou (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0127C2C2",
+          "desc": "Infinite Time",
+          "address": "0xC2C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Rocket Power - Zero Gravity Zone (USA) (Code Breaker)
+game_key=rocket_power_zero_gravity_zone_usa_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_02005620	score	0x02005620	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02005622	score	0x02005622	1	uint	little	prev < curr	0.8	1	right:0.350:60

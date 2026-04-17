@@ -1,0 +1,8 @@
+game_name=Untouchables, The (USA) (Action Replay)
+game_key=untouchables_the_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_1b89	pickup	0x7E1B89	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	life_lost_lives_1b86	life_lost	0x7E1B86	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1b86	life_gained	0x7E1B86	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_173d	pickup	0x7E173D	1	uint	little	prev != curr	0.8	1	right:0.250:18

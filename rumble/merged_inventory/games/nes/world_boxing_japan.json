@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "worldboxing",
+  "display_name": "World Boxing (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\World Boxing (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "03EA:50",
+          "desc": "Infinite Energy",
+          "address": "0x03EA"
+        },
+        {
+          "code": "03EB:00",
+          "desc": "One Hit To Win",
+          "address": "0x03EB"
+        },
+        {
+          "code": "AASAISLA",
+          "desc": "Debug Mode",
+          "address": "0x050D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

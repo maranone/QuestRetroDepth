@@ -1,0 +1,10 @@
+game_name=Premier Manager 97 (Europe) (Action Replay)
+game_key=premier_manager_97_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff8cba	pickup	0xFF8CBA	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff8cbc	pickup	0xFF8CBC	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff8cc0	pickup	0xFF8CC0	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff8cc2	pickup	0xFF8CC2	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff8cc4	pickup	0xFF8CC4	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ff8cc6	pickup	0xFF8CC6	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,5 @@
+game_name=Astro Robo Sasa (Japan)
+game_key=AstroRoboSasa-Nes
+system=nes
+integration_tier=stable
+trigger	score_score_0024	score	0x0024	4	nibble	little	prev < curr	0.8	1	right:0.350:60

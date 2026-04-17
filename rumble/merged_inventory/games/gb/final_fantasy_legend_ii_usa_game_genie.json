@@ -1,0 +1,27 @@
+{
+  "system": "gb",
+  "normalized_title": "finalfantasylegendii",
+  "display_name": "Final Fantasy Legend II (USA) (Game Genie)",
+  "aliases": [
+    "Final Fantasy Legend II (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Final Fantasy Legend II (USA).cht",
+      "total_cheat_rows": 432,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "010EC6C7",
+          "desc": "Character's on Sub Screen & Save Screen Can't Move",
+          "address": "0xC6C7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

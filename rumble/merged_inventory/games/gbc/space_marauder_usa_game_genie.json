@@ -1,0 +1,69 @@
+{
+  "system": "gbc",
+  "normalized_title": "spacemarauder",
+  "display_name": "Space Marauder (USA) (Game Genie)",
+  "aliases": [
+    "Space Marauder (USA) (GameShark)",
+    "Space Marauder (USA) (Xploder)",
+    "Space Marauder (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Space Marauder (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 9,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0109C9C0",
+          "desc": "Infinite Lives",
+          "address": "0xC9C0"
+        },
+        {
+          "code": "0100CAC0",
+          "desc": "Score Modifier",
+          "address": "0xCAC0"
+        },
+        {
+          "code": "0100CBC0",
+          "desc": "Score Modifier",
+          "address": "0xCBC0"
+        },
+        {
+          "code": "0100CCC0",
+          "desc": "Score Modifier",
+          "address": "0xCCC0"
+        },
+        {
+          "code": "0100CDC0",
+          "desc": "Score Modifier",
+          "address": "0xCDC0"
+        },
+        {
+          "code": "0199CAC0",
+          "desc": "Max Score",
+          "address": "0xCAC0"
+        },
+        {
+          "code": "0199CBC0",
+          "desc": "Max Score",
+          "address": "0xCBC0"
+        },
+        {
+          "code": "0199CCC0",
+          "desc": "Max Score",
+          "address": "0xCCC0"
+        },
+        {
+          "code": "0199CDC0",
+          "desc": "Max Score",
+          "address": "0xCDC0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

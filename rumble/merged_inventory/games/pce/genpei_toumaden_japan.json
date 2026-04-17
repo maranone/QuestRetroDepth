@@ -1,0 +1,25 @@
+{
+  "system": "pce",
+  "normalized_title": "genpeitoumaden",
+  "display_name": "Genpei Toumaden (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Genpei Toumaden (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "1f00b4:02",
+          "desc": "Invincibility",
+          "address": "0x1F00B4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

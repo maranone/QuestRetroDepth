@@ -1,0 +1,7 @@
+game_name=Thundercade (USA) (Game Genie)
+game_key=Thundercade-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_008b	life_lost	0x008B	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_008b	life_gained	0x008B	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0090	score	0x0090	4	nibble	big	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "froggersadventurestempleoffrog",
+  "display_name": "Frogger's Adventures - Temple of the Frog (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Frogger's Adventures - Temple of the Frog (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "100004C4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020004C4"
+        },
+        {
+          "code": "33003502",
+          "desc": "Infinite Contines",
+          "address": "0x02003502"
+        },
+        {
+          "code": "330035E0",
+          "desc": "Infinite Lives",
+          "address": "0x020035E0"
+        },
+        {
+          "code": "330035E4",
+          "desc": "Have All Elements",
+          "address": "0x020035E4"
+        },
+        {
+          "code": "330035E2",
+          "desc": "Max Coins",
+          "address": "0x020035E2"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Frogger's Adventures - Temple of the Frog (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "100004C4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020004C4"
+        },
+        {
+          "code": "33003502",
+          "desc": "Infinite Contines",
+          "address": "0x02003502"
+        },
+        {
+          "code": "330035E0",
+          "desc": "Infinite Lives",
+          "address": "0x020035E0"
+        },
+        {
+          "code": "330035E4",
+          "desc": "Have All Elements",
+          "address": "0x020035E4"
+        },
+        {
+          "code": "330035E2",
+          "desc": "Max Coins",
+          "address": "0x020035E2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

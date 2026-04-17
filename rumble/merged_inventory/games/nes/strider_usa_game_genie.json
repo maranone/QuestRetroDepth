@@ -1,0 +1,92 @@
+{
+  "system": "nes",
+  "normalized_title": "strider",
+  "display_name": "Strider (USA) (Game Genie)",
+  "aliases": [
+    "Strider (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Strider (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 14,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "0569:63",
+          "desc": "Infinite Energy",
+          "address": "0x0569"
+        },
+        {
+          "code": "056B:63",
+          "desc": "Infinite Power",
+          "address": "0x056B"
+        },
+        {
+          "code": "OXNAUKPX",
+          "desc": "Infinite Energy",
+          "address": "0x042B"
+        },
+        {
+          "code": "PVNAVGIU",
+          "desc": "Infinite Energy",
+          "address": "0x046E"
+        },
+        {
+          "code": "EKNAKKYE",
+          "desc": "Allways Have 200 Hp",
+          "address": "0x044C"
+        },
+        {
+          "code": "0538:0A",
+          "desc": "Always Hi Jump",
+          "address": "0x0538"
+        },
+        {
+          "code": "0563:00",
+          "desc": "Unmovable",
+          "address": "0x0563"
+        },
+        {
+          "code": "055D:A7",
+          "desc": "Plasma Sword Instant Charge",
+          "address": "0x055D"
+        },
+        {
+          "code": "048E:FF",
+          "desc": "Have All Data Files",
+          "address": "0x048E"
+        },
+        {
+          "code": "048C:FF",
+          "desc": "Have All Keys And Start On Red Dragon Level",
+          "address": "0x048C"
+        },
+        {
+          "code": "048B:09",
+          "desc": "Max Stats, All Tricks, Have Slide In And Plasma Arrow",
+          "address": "0x048B"
+        },
+        {
+          "code": "048D:01",
+          "desc": "Max Stats, All Tricks, Have Slide In And Plasma Arrow",
+          "address": "0x048D"
+        },
+        {
+          "code": "0569:FF",
+          "desc": "Infinite Health",
+          "address": "0x0569"
+        },
+        {
+          "code": "056B:FF",
+          "desc": "Infinite Energy",
+          "address": "0x056B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

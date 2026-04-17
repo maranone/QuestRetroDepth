@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "johnelwaysquarterback",
+  "display_name": "John Elway's Quarterback (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\John Elway's Quarterback (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "072F:00",
+          "desc": "P1's Total Score Modifier",
+          "address": "0x072F"
+        },
+        {
+          "code": "0730:00",
+          "desc": "P2/CPU's Total Score Modifier",
+          "address": "0x0730"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

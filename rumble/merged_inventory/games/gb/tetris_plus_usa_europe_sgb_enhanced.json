@@ -1,0 +1,27 @@
+{
+  "system": "gb",
+  "normalized_title": "tetrisplus",
+  "display_name": "Tetris Plus (USA, Europe) (SGB Enhanced)",
+  "aliases": [
+    "Tetris Plus (World) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Tetris Plus (World) (GameShark).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0100C6C6",
+          "desc": "Stop Ceiling",
+          "address": "0xC6C6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

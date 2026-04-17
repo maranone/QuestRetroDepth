@@ -1,0 +1,6 @@
+game_name=Honoo no Toukyuuji - Dodge Danpei (Japan)
+game_key=honoo_no_toukyuuji_dodge_danpei_japan
+system=nes
+integration_tier=contrib
+trigger	score_score_0334	score	0x0334	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0335	score	0x0335	1	uint	little	prev < curr	0.8	1	right:0.350:60

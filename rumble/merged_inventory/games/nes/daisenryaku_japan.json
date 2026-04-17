@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "daisenryaku",
+  "display_name": "Daisenryaku (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Daisenryaku (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "63D3:FF",
+          "desc": "P1 Infinite Money",
+          "address": "0x63D3"
+        },
+        {
+          "code": "63D4:FF",
+          "desc": "P1 Infinite Money",
+          "address": "0x63D4"
+        },
+        {
+          "code": "63D7:00",
+          "desc": "Cpu No Money",
+          "address": "0x63D7"
+        },
+        {
+          "code": "63D8:00",
+          "desc": "Cpu No Money",
+          "address": "0x63D8"
+        },
+        {
+          "code": "007E:01",
+          "desc": "P1 Unlimited Moves",
+          "address": "0x007E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,22 @@
+game_name=Final Fantasy Tactics Advance (Code Breaker)
+game_key=final_fantasy_tactics_advance_code_breaker
+system=gba
+integration_tier=contrib
+trigger	pickup_coins_02001f64	pickup	0x02001F64	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_02001f66	pickup	0x02001F66	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_0200009a	damage_taken	0x0200009A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0200009a	death	0x0200009A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02000098	damage_taken	0x02000098	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02000098	death	0x02000098	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020001a2	damage_taken	0x020001A2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020001a2	death	0x020001A2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020001a0	damage_taken	0x020001A0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020001a0	death	0x020001A0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020002a8	damage_taken	0x020002A8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020002a8	death	0x020002A8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020002aa	damage_taken	0x020002AA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020002aa	death	0x020002AA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020003b0	damage_taken	0x020003B0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020003b0	death	0x020003B0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020003b2	damage_taken	0x020003B2	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020003b2	death	0x020003B2	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

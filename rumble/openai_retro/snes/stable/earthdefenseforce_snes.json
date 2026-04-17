@@ -1,0 +1,122 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "EarthDefenseForce",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\EarthDefenseForce-Snes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "EarthDefenseForce-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_health_0181",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E0181",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x0181",
+          "wram_offset": 385
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0x7E0181",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_0181",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0x7E0181",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x0181",
+          "wram_offset": 385
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0x7E0181",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_0157",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E0157",
+          "size": 4,
+          "value_type": "bcd",
+          "byte_order": "little",
+          "raw_type": "<d4",
+          "bank": "7E",
+          "address": "0x0157",
+          "wram_offset": 343
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0x7E0157",
+          "raw_type": "<d4"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": []
+}

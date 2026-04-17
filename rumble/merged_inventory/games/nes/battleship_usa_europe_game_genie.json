@@ -1,0 +1,147 @@
+{
+  "system": "nes",
+  "normalized_title": "battleship",
+  "display_name": "Battleship (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Battleship (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Battleship (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 25,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "PEUAUGIA",
+          "desc": "1 Round Per Level",
+          "address": "0x040B"
+        },
+        {
+          "code": "LEUAUGIA",
+          "desc": "3 Rounds Per Level",
+          "address": "0x040B"
+        },
+        {
+          "code": "SZUAOSOU",
+          "desc": "Each Ship Can Take Only 1 Hit",
+          "address": "0x0529"
+        },
+        {
+          "code": "SAXAOISP",
+          "desc": "You Only Have RIM-66 Missiles",
+          "address": "0x0509"
+        },
+        {
+          "code": "PASAKGAA",
+          "desc": "Start On Level 2",
+          "address": "0x040C"
+        },
+        {
+          "code": "VASEOGSA",
+          "desc": "Start On Level 2",
+          "address": "0x0489"
+        },
+        {
+          "code": "VASASGSA",
+          "desc": "Start On Level 2",
+          "address": "0x040D"
+        },
+        {
+          "code": "ZASAKGAA",
+          "desc": "Start On Level 3",
+          "address": "0x040C"
+        },
+        {
+          "code": "VASEOGSA",
+          "desc": "Start On Level 3",
+          "address": "0x0489"
+        },
+        {
+          "code": "VASASGSA",
+          "desc": "Start On Level 3",
+          "address": "0x040D"
+        },
+        {
+          "code": "LASAKGAA",
+          "desc": "Start On Level 4",
+          "address": "0x040C"
+        },
+        {
+          "code": "VASEOGSA",
+          "desc": "Start On Level 4",
+          "address": "0x0489"
+        },
+        {
+          "code": "VASASGSA",
+          "desc": "Start On Level 4",
+          "address": "0x040D"
+        },
+        {
+          "code": "GASAKGAA",
+          "desc": "Start On Level 5",
+          "address": "0x040C"
+        },
+        {
+          "code": "VASEOGSA",
+          "desc": "Start On Level 5",
+          "address": "0x0489"
+        },
+        {
+          "code": "VASASGSA",
+          "desc": "Start On Level 5",
+          "address": "0x040D"
+        },
+        {
+          "code": "IASAKGAA",
+          "desc": "Start On Level 6",
+          "address": "0x040C"
+        },
+        {
+          "code": "VASEOGSA",
+          "desc": "Start On Level 6",
+          "address": "0x0489"
+        },
+        {
+          "code": "VASASGSA",
+          "desc": "Start On Level 6",
+          "address": "0x040D"
+        },
+        {
+          "code": "TASAKGAA",
+          "desc": "Start On Level 7",
+          "address": "0x040C"
+        },
+        {
+          "code": "VASEOGSA",
+          "desc": "Start On Level 7",
+          "address": "0x0489"
+        },
+        {
+          "code": "VASASGSA",
+          "desc": "Start On Level 7",
+          "address": "0x040D"
+        },
+        {
+          "code": "YASAKGAA",
+          "desc": "Start On Level 8",
+          "address": "0x040C"
+        },
+        {
+          "code": "VASEOGSA",
+          "desc": "Start On Level 8",
+          "address": "0x0489"
+        },
+        {
+          "code": "VASASGSA",
+          "desc": "Start On Level 8",
+          "address": "0x040D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

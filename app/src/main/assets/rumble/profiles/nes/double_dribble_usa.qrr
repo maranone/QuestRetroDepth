@@ -1,0 +1,6 @@
+game_name=Double Dribble (USA)
+game_key=double_dribble_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_07f4	score	0x07F4	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_07f8	score	0x07F8	1	uint	little	prev < curr	0.8	1	right:0.350:60

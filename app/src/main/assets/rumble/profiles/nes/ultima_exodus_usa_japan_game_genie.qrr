@@ -1,0 +1,7 @@
+game_name=Ultima - Exodus (USA, Japan) (Game Genie)
+game_key=ultima_exodus_usa_japan_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_010e	pickup	0x010E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_01f8	pickup	0x01F8	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_017e	pickup	0x017E	1	uint	little	prev != curr	0.8	1	right:0.250:18

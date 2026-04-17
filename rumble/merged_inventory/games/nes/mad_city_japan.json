@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "madcity",
+  "display_name": "Mad City (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mad City (Japan).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "07C5:07",
+          "desc": "Infinite Health",
+          "address": "0x07C5"
+        },
+        {
+          "code": "0039:09",
+          "desc": "Infinite Lives",
+          "address": "0x0039"
+        },
+        {
+          "code": "002A:01",
+          "desc": "Music is Disabled",
+          "address": "0x002A"
+        },
+        {
+          "code": "002A:04",
+          "desc": "Access Quiz Mode",
+          "address": "0x002A"
+        },
+        {
+          "code": "07C0:63",
+          "desc": "Infinite Ammo",
+          "address": "0x07C0"
+        },
+        {
+          "code": "07DC:25",
+          "desc": "Infinite Time (Driving Stages)",
+          "address": "0x07DC"
+        },
+        {
+          "code": "0046:01",
+          "desc": "Weird Stage Display",
+          "address": "0x0046"
+        },
+        {
+          "code": "0048:01",
+          "desc": "Respawning Enemy",
+          "address": "0x0048"
+        },
+        {
+          "code": "07BB:05",
+          "desc": "Have All Practice Bonuses",
+          "address": "0x07BB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

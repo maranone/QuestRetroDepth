@@ -1,0 +1,6 @@
+game_name=David Crane's Amazing Tennis (USA) (Action Replay)
+game_key=david_crane_s_amazing_tennis_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffb788	score	0xFFB788	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff8f04	score	0xFF8F04	1	uint	little	prev < curr	0.8	1	right:0.350:60

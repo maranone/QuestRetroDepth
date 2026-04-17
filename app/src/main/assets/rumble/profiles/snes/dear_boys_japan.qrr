@@ -1,0 +1,5 @@
+game_name=Dear Boys (Japan)
+game_key=dear_boys_japan
+system=snes
+integration_tier=contrib
+trigger	score_score_078a	score	0x7E078A	1	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,8 +1,0 @@
-game_name=ChronoTrigger
-game_key=ChronoTrigger-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_5e30	damage_taken	0x7E5E30	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	damage_taken_1_5eb0	damage_taken	0x7E5EB0	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	damage_taken_2_5f30	damage_taken	0x7E5F30	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	death_3_cd00	death	0x7ECD00	1	uint	native	prev > 0 && curr == 0	0.85	1	left:1.000:500;right:1.000:500

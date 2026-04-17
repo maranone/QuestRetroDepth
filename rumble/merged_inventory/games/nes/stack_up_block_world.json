@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "stackupblock",
+  "display_name": "Stack-Up _ Block (World)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Stack-Up _ Block (World).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0070:00",
+          "desc": "Phase Modifier",
+          "address": "0x0070"
+        },
+        {
+          "code": "066C:09",
+          "desc": "High Bonus (One's Digit)",
+          "address": "0x066C"
+        },
+        {
+          "code": "066B:09",
+          "desc": "High Bonus (Ten's Digit)",
+          "address": "0x066B"
+        },
+        {
+          "code": "066A:09",
+          "desc": "High Bonus (Hundred's Digit)",
+          "address": "0x066A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

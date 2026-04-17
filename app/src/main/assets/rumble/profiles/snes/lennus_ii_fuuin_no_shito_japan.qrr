@@ -1,0 +1,14 @@
+game_name=Lennus II - Fuuin no Shito (Japan)
+game_key=lennus_ii_fuuin_no_shito_japan
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_23e2	pickup	0x7E23E2	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_23e3	pickup	0x7E23E3	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_2057	level_complete	0x7E2057	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_2058	level_complete	0x7E2058	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_2059	level_complete	0x7E2059	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	pickup_coins_205a	pickup	0x7E205A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_205b	level_complete	0x7E205B	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_205c	level_complete	0x7E205C	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_205d	level_complete	0x7E205D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_205e	level_complete	0x7E205E	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

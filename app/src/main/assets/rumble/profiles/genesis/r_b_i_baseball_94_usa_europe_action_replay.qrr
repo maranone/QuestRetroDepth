@@ -1,0 +1,6 @@
+game_name=R.B.I. Baseball '94 (USA, Europe) Action Replay)
+game_key=r_b_i_baseball_94_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffcc42	score	0xFFCC42	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffcc43	score	0xFFCC43	1	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,14 @@
+game_name=Warrior of Rome II (USA)
+game_key=warrior_of_rome_ii_usa
+system=genesis
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_ff0b78	enemy_defeated	0xFF0B78	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0b79	enemy_defeated	0xFF0B79	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0b7a	enemy_defeated	0xFF0B7A	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0b7b	enemy_defeated	0xFF0B7B	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0b7c	enemy_defeated	0xFF0B7C	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0b7d	enemy_defeated	0xFF0B7D	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0b7e	enemy_defeated	0xFF0B7E	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0b7f	enemy_defeated	0xFF0B7F	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0b80	enemy_defeated	0xFF0B80	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ff0b81	enemy_defeated	0xFF0B81	1	uint	little	prev > curr	0.65	1	right:0.450:35

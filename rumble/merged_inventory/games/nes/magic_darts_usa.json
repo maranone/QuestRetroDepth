@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "magicdarts",
+  "display_name": "Magic Darts (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Magic Darts (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "04B6:00",
+          "desc": "Character Modifier P1",
+          "address": "0x04B6"
+        },
+        {
+          "code": "0455:63",
+          "desc": "P1 Shot Points Modifier",
+          "address": "0x0455"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

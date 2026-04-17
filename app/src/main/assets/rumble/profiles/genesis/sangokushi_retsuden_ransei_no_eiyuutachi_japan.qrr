@@ -1,0 +1,17 @@
+game_name=Sangokushi Retsuden - Ransei no Eiyuutachi (Japan)
+game_key=sangokushi_retsuden_ransei_no_eiyuutachi_japan
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ffe008	pickup	0xFFE008	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffe00a	pickup	0xFFE00A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffe004	pickup	0xFFE004	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffe006	pickup	0xFFE006	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffe00c	pickup	0xFFE00C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffe00e	pickup	0xFFE00E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffe05c	pickup	0xFFE05C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffe05e	pickup	0xFFE05E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffe034	pickup	0xFFE034	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffe036	pickup	0xFFE036	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffe018	pickup	0xFFE018	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffe01a	pickup	0xFFE01A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffe038	pickup	0xFFE038	1	uint	little	prev != curr	0.8	1	right:0.250:18

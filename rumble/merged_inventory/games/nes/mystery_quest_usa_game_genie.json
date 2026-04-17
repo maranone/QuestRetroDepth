@@ -1,0 +1,159 @@
+{
+  "system": "nes",
+  "normalized_title": "mysteryquest",
+  "display_name": "Mystery Quest (USA) (Game Genie)",
+  "aliases": [
+    "Mystery Quest (USA) (Game Genie)",
+    "Mystery Quest (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\mysteryquest_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00BC",
+        "0x0118"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MysteryQuest-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x00BC",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0118",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mystery Quest (USA).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 21,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "GXNPYAVG",
+          "desc": "Invincibility",
+          "address": "0x002F"
+        },
+        {
+          "code": "AEXOGEEY",
+          "desc": "Immune to monster attacks",
+          "address": "0x008C"
+        },
+        {
+          "code": "AEUOAENY",
+          "desc": "Immune to shallow water",
+          "address": "0x0088"
+        },
+        {
+          "code": "ATSEUYAG",
+          "desc": "Start with more energy",
+          "address": "0x07EB"
+        },
+        {
+          "code": "AZSEUYAG",
+          "desc": "Start with less energy",
+          "address": "0x07AB"
+        },
+        {
+          "code": "PEUOKPAA",
+          "desc": "Start with raft and key",
+          "address": "0x018C"
+        },
+        {
+          "code": "GXVOOYSA",
+          "desc": "Never lose key",
+          "address": "0x07A9"
+        },
+        {
+          "code": "PENOPTAA",
+          "desc": "Never lose raft",
+          "address": "0x0689"
+        },
+        {
+          "code": "00BC:40",
+          "desc": "Infinite Energy",
+          "address": "0x00BC"
+        },
+        {
+          "code": "SXNPYAVG",
+          "desc": "Infinite Energy",
+          "address": "0x002F"
+        },
+        {
+          "code": "00BC:41",
+          "desc": "Infinite Vitality (Health)",
+          "address": "0x00BC"
+        },
+        {
+          "code": "011D:09",
+          "desc": "Max Score P1",
+          "address": "0x011D"
+        },
+        {
+          "code": "011C:09",
+          "desc": "Max Score P1",
+          "address": "0x011C"
+        },
+        {
+          "code": "011B:09",
+          "desc": "Max Score P1",
+          "address": "0x011B"
+        },
+        {
+          "code": "011A:09",
+          "desc": "Max Score P1",
+          "address": "0x011A"
+        },
+        {
+          "code": "0119:09",
+          "desc": "Max Score P1",
+          "address": "0x0119"
+        },
+        {
+          "code": "0118:09",
+          "desc": "Max Score P1",
+          "address": "0x0118"
+        },
+        {
+          "code": "0046:F0",
+          "desc": "Super Jump",
+          "address": "0x0046"
+        },
+        {
+          "code": "009B:10",
+          "desc": "Walk Through Enemies",
+          "address": "0x009B"
+        },
+        {
+          "code": "00CC:01",
+          "desc": "Always Have Key",
+          "address": "0x00CC"
+        },
+        {
+          "code": "00CD:01",
+          "desc": "Always Have SOS",
+          "address": "0x00CD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

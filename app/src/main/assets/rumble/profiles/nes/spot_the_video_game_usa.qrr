@@ -1,0 +1,8 @@
+game_name=Spot - The Video Game (USA)
+game_key=spot_the_video_game_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_05ed	score	0x05ED	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_05e9	score	0x05E9	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_05ee	score	0x05EE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_05ea	score	0x05EA	1	uint	little	prev < curr	0.8	1	right:0.350:60

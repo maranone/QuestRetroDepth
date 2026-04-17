@@ -1,0 +1,51 @@
+{
+  "system": "pce",
+  "normalized_title": "detanatwinbee",
+  "display_name": "Detana Twinbee (Rumbles)",
+  "aliases": [
+    "Detana Twinbee",
+    "Detana! Twinbee (Japan)",
+    "Detana!! TwinBee (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Detana! Twinbee (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f0087:09",
+          "desc": "P1 Infinite Lives",
+          "address": "0x1F0087"
+        },
+        {
+          "code": "1f180d:14",
+          "desc": "P1 Invincible",
+          "address": "0x1F180D"
+        },
+        {
+          "code": "1f0088:09",
+          "desc": "P2 Infinite Lives",
+          "address": "0x1F0088"
+        },
+        {
+          "code": "1f180e:14",
+          "desc": "P2 Invincible",
+          "address": "0x1F180E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\pce\\Detana!! TwinBee (Japan).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Volleyball (USA, Europe) (Game Genie)
+game_key=volleyball_usa_europe_game_genie
+system=nes
+integration_tier=contrib
+trigger	score_score_0063	score	0x0063	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0062	score	0x0062	1	uint	little	prev < curr	0.8	1	right:0.350:60

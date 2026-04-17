@@ -1,0 +1,122 @@
+{
+  "system": "nes",
+  "normalized_title": "georgeforemanskoboxing",
+  "display_name": "George Foreman's KO Boxing (USA) (Game Genie)",
+  "aliases": [
+    "George Foreman's KO Boxing (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\George Foreman's KO Boxing (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 20,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "POZEAK",
+          "desc": "Any One Of These Will Give Different Colour Patter",
+          "address": "0x0490"
+        },
+        {
+          "code": "YOZEAK",
+          "desc": "Any One Of These Will Give Different Colour Patter",
+          "address": "0x0490"
+        },
+        {
+          "code": "NOZEAK",
+          "desc": "Any One Of These Will Give Different Colour Patter",
+          "address": "0x0490"
+        },
+        {
+          "code": "VOZEAK",
+          "desc": "Any One Of These Will Give Different Colour Patter",
+          "address": "0x0490"
+        },
+        {
+          "code": "KOZEAK",
+          "desc": "Any One Of These Will Give Different Colour Patter",
+          "address": "0x0490"
+        },
+        {
+          "code": "LOZEAK",
+          "desc": "Any One Of These Will Give Different Colour Patter",
+          "address": "0x0490"
+        },
+        {
+          "code": "036E:43",
+          "desc": "Infinite Energy",
+          "address": "0x036E"
+        },
+        {
+          "code": "036F:01",
+          "desc": "Knock Down Opponent With 1 Punch",
+          "address": "0x036F"
+        },
+        {
+          "code": "POZEAK",
+          "desc": "Any One Of These Will Give Different Colour Patterns",
+          "address": "0x0490"
+        },
+        {
+          "code": "YOZEAK",
+          "desc": "Any One Of These Will Give Different Colour Patterns",
+          "address": "0x0490"
+        },
+        {
+          "code": "NOZEAK",
+          "desc": "Any One Of These Will Give Different Colour Patterns",
+          "address": "0x0490"
+        },
+        {
+          "code": "VOZEAK",
+          "desc": "Any One Of These Will Give Different Colour Patterns",
+          "address": "0x0490"
+        },
+        {
+          "code": "KOZEAK",
+          "desc": "Any One Of These Will Give Different Colour Patterns",
+          "address": "0x0490"
+        },
+        {
+          "code": "LOZEAK",
+          "desc": "Any One Of These Will Give Different Colour Patterns",
+          "address": "0x0490"
+        },
+        {
+          "code": "036E:43",
+          "desc": "Infinite Health P1",
+          "address": "0x036E"
+        },
+        {
+          "code": "036E:00",
+          "desc": "No Health P2",
+          "address": "0x036E"
+        },
+        {
+          "code": "0345:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x0345"
+        },
+        {
+          "code": "0344:09",
+          "desc": "Infinite Time (Ten's Digit)",
+          "address": "0x0344"
+        },
+        {
+          "code": "0343:09",
+          "desc": "Infinite Time (Minute's Digit)",
+          "address": "0x0343"
+        },
+        {
+          "code": "0360:07",
+          "desc": "Fake High Count For Opponent T.K.O.",
+          "address": "0x0360"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

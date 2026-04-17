@@ -1,0 +1,14 @@
+game_name=Paladin's Quest (USA) (Action Replay)
+game_key=paladin_s_quest_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_17c3	pickup	0x7E17C3	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_15fa	level_complete	0x7E15FA	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_15fe	damage_taken	0x7E15FE	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_15fe	death	0x7E15FE	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_15ff	damage_taken	0x7E15FF	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_15ff	death	0x7E15FF	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1600	damage_taken	0x7E1600	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1600	death	0x7E1600	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1601	damage_taken	0x7E1601	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1601	death	0x7E1601	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

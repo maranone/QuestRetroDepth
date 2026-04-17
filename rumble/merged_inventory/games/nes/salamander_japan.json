@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "salamander",
+  "display_name": "Salamander (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Salamander (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0074:20",
+          "desc": "Untouchable",
+          "address": "0x0074"
+        },
+        {
+          "code": "0070:08",
+          "desc": "Speed",
+          "address": "0x0070"
+        },
+        {
+          "code": "0076:02",
+          "desc": "Start with/keep Missiles",
+          "address": "0x0076"
+        },
+        {
+          "code": "0034:09",
+          "desc": "Infinite Lives",
+          "address": "0x0034"
+        },
+        {
+          "code": "0068:02",
+          "desc": "Start with/keep Powerups",
+          "address": "0x0068"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

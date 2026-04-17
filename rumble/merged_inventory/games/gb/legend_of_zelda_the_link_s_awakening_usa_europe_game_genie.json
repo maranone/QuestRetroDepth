@@ -1,0 +1,49 @@
+{
+  "system": "gb",
+  "normalized_title": "legendofzeldalinksawakening",
+  "display_name": "Legend of Zelda, The - Link's Awakening (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Legend of Zelda, The - Link's Awakening (USA, Europe) (Rev 1)",
+    "Legend of Zelda, The - Link's Awakening (USA, Europe) (Rev 2)",
+    "Legend of Zelda, The - Link's Awakening (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Legend of Zelda, The - Link's Awakening (USA, Europe).cht",
+      "total_cheat_rows": 94,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0101D0DB",
+          "desc": "Infinite Small Keys",
+          "address": "0xD0DB"
+        },
+        {
+          "code": "0101CFDB",
+          "desc": "Have Nightmare Key",
+          "address": "0xCFDB"
+        },
+        {
+          "code": "0101CCDB",
+          "desc": "Have Map",
+          "address": "0xCCDB"
+        },
+        {
+          "code": "0101CDDB",
+          "desc": "Have Compass",
+          "address": "0xCDDB"
+        },
+        {
+          "code": "0101CEDB",
+          "desc": "Have Stone Beak",
+          "address": "0xCEDB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

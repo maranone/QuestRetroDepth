@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "starwarstrilogyapprenticeofforce",
+  "display_name": "Star Wars Trilogy - Apprentice of the Force (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Star Wars Trilogy - Apprentice of the Force (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "33004433",
+          "desc": "Infinite Health Ship",
+          "address": "0x02004433"
+        },
+        {
+          "code": "33004432",
+          "desc": "Infinite R2-D2's On Ship",
+          "address": "0x02004432"
+        },
+        {
+          "code": "33004431",
+          "desc": "Infinite Boost For Ship",
+          "address": "0x02004431"
+        },
+        {
+          "code": "74000130",
+          "desc": "Pres Select For Low Boss Energy",
+          "address": "0x02000130"
+        },
+        {
+          "code": "330077EB",
+          "desc": "Pres Select For Low Boss Energy",
+          "address": "0x020077EB"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Star Wars Trilogy - Apprentice of the Force (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "33004433",
+          "desc": "Infinite Health Ship",
+          "address": "0x02004433"
+        },
+        {
+          "code": "33004432",
+          "desc": "Infinite R2-D2's On Ship",
+          "address": "0x02004432"
+        },
+        {
+          "code": "33004431",
+          "desc": "Infinite Boost For Ship",
+          "address": "0x02004431"
+        },
+        {
+          "code": "74000130",
+          "desc": "Pres Select For Low Boss Energy",
+          "address": "0x02000130"
+        },
+        {
+          "code": "330077EB",
+          "desc": "Pres Select For Low Boss Energy",
+          "address": "0x020077EB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

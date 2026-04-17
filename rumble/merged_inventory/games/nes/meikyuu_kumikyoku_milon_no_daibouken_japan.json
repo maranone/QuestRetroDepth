@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "meikyuukumikyokumilonnodaibouken",
+  "display_name": "Meikyuu Kumikyoku - Milon no Daibouken (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Meikyuu Kumikyoku - Milon no Daibouken (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "00B2:20",
+          "desc": "Infinite Energy",
+          "address": "0x00B2"
+        },
+        {
+          "code": "00A3:09",
+          "desc": "Infinite Money",
+          "address": "0x00A3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

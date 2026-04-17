@@ -1,0 +1,6 @@
+game_name=Dino Dini's Soccer (Europe) (Action Replay)
+game_key=dino_dini_s_soccer_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff6d44	score	0xFF6D44	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff6d42	score	0xFF6D42	1	uint	little	prev < curr	0.8	1	right:0.350:60

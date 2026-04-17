@@ -1,0 +1,54 @@
+{
+  "system": "sms",
+  "normalized_title": "paperboy",
+  "display_name": "Paperboy (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Paperboy (Europe)",
+    "Paperboy (USA, Brazil)",
+    "Paperboy (USA, Europe) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\paperboy_sms.json",
+      "trigger_count": 2,
+      "field_names": [
+        "gameover",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xD2C0",
+        "0xD4FD"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Paperboy-Sms-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0xD2C0",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0xD4FD",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Paperboy (USA, Europe) (Action Replay).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

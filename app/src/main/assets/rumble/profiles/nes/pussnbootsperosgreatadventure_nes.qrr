@@ -1,0 +1,9 @@
+game_name=Puss n Boots - Pero's Great Adventure (USA) (Game Genie)
+game_key=PussNBootsPerosGreatAdventure-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_0092	damage_taken	0x0092	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0092	death	0x0092	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_000a	life_lost	0x000A	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_000a	life_gained	0x000A	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_00f0	score	0x00F0	5	nibble	little	prev < curr	0.8	1	right:0.350:60

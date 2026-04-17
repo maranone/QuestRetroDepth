@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "sweethome",
+  "display_name": "Sweet Home (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Sweet Home (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "SUSEPVSO",
+          "desc": "Wood Never Breaks",
+          "address": "0x06B9"
+        },
+        {
+          "code": "617D:01",
+          "desc": "No Random Battles",
+          "address": "0x617D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

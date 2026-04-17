@@ -1,0 +1,42 @@
+{
+  "system": "pce",
+  "normalized_title": "newzealandstory",
+  "display_name": "NewZealand Story, The (Japan)",
+  "aliases": [
+    "NewZealand Story, The (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\NewZealand Story, The (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f002c:03",
+          "desc": "Infinite Lives",
+          "address": "0x1F002C"
+        },
+        {
+          "code": "1f02b2:50",
+          "desc": "Infinite Fuel (Water)",
+          "address": "0x1F02B2"
+        },
+        {
+          "code": "1f0053:04",
+          "desc": "Invincibility",
+          "address": "0x1F0053"
+        },
+        {
+          "code": "1f0055:02",
+          "desc": "Invincibility",
+          "address": "0x1F0055"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

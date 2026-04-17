@@ -1,0 +1,45 @@
+{
+  "system": "pce",
+  "normalized_title": "momotaroukatsugeki",
+  "display_name": "Momotarou Katsugeki (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Momotarou Katsugeki (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1f1b42:ff",
+          "desc": "Infinite Money",
+          "address": "0x1F1B42"
+        },
+        {
+          "code": "1f1b43:ff",
+          "desc": "Infinite Money",
+          "address": "0x1F1B43"
+        },
+        {
+          "code": "1f1bb8:02",
+          "desc": "Infinite Lives",
+          "address": "0x1F1BB8"
+        },
+        {
+          "code": "1f199a:01",
+          "desc": "Invincibility",
+          "address": "0x1F199A"
+        },
+        {
+          "code": "1f1c49:20",
+          "desc": "Infinite Time",
+          "address": "0x1F1C49"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

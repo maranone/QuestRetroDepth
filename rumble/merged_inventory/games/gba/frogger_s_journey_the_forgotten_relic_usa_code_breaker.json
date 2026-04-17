@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "froggersjourneyforgottenrelic",
+  "display_name": "Frogger's Journey - The Forgotten Relic (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Frogger's Journey - The Forgotten Relic (USA) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1000241C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200241C"
+        },
+        {
+          "code": "8200041A",
+          "desc": "Have All Special Items",
+          "address": "0x0200041A"
+        },
+        {
+          "code": "8200041C",
+          "desc": "Have All Letters",
+          "address": "0x0200041C"
+        },
+        {
+          "code": "82000416",
+          "desc": "Have All Weapons",
+          "address": "0x02000416"
+        },
+        {
+          "code": "820003D6",
+          "desc": "Max Coins",
+          "address": "0x020003D6"
+        },
+        {
+          "code": "320003CC",
+          "desc": "Max Health Hearts",
+          "address": "0x020003CC"
+        },
+        {
+          "code": "320003CD",
+          "desc": "Infinite Health",
+          "address": "0x020003CD"
+        },
+        {
+          "code": "320041B1",
+          "desc": "Invincible",
+          "address": "0x020041B1"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Frogger's Journey - The Forgotten Relic (USA) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1000241C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200241C"
+        },
+        {
+          "code": "8200041A",
+          "desc": "Have All Special Items",
+          "address": "0x0200041A"
+        },
+        {
+          "code": "8200041C",
+          "desc": "Have All Letters",
+          "address": "0x0200041C"
+        },
+        {
+          "code": "82000416",
+          "desc": "Have All Weapons",
+          "address": "0x02000416"
+        },
+        {
+          "code": "820003D6",
+          "desc": "Max Coins",
+          "address": "0x020003D6"
+        },
+        {
+          "code": "320003CC",
+          "desc": "Max Health Hearts",
+          "address": "0x020003CC"
+        },
+        {
+          "code": "320003CD",
+          "desc": "Infinite Health",
+          "address": "0x020003CD"
+        },
+        {
+          "code": "320041B1",
+          "desc": "Invincible",
+          "address": "0x020041B1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

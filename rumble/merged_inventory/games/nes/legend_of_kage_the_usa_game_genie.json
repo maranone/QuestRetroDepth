@@ -1,0 +1,159 @@
+{
+  "system": "nes",
+  "normalized_title": "legendofkage",
+  "display_name": "Legend of Kage, The (USA) (Game Genie)",
+  "aliases": [
+    "Legend of Kage, The (USA) (Game Genie)",
+    "Legend of Kage, The (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\legendofkage_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0013",
+        "0x002B"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\LegendOfKage-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x002B",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0013",
+          "type": "<u4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Legend of Kage, The (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 21,
+      "distinct_address_count": 21,
+      "sample_raw_entries": [
+        {
+          "code": "SZNPVLSA",
+          "desc": "Untouchable",
+          "address": "0x032E"
+        },
+        {
+          "code": "SXVALZVG",
+          "desc": "Both players have infinite lives",
+          "address": "0x022B"
+        },
+        {
+          "code": "KEOATAVA",
+          "desc": "Both players start with 28 lives",
+          "address": "0x000E"
+        },
+        {
+          "code": "GASAOLZA",
+          "desc": "Super-ninja-power running ability",
+          "address": "0x0309"
+        },
+        {
+          "code": "0041:00",
+          "desc": "Suit Modifier",
+          "address": "0x0041"
+        },
+        {
+          "code": "0046:00",
+          "desc": "Special Power Modifier",
+          "address": "0x0046"
+        },
+        {
+          "code": "0047:0C",
+          "desc": "Phantom Double Distance Modifier",
+          "address": "0x0047"
+        },
+        {
+          "code": "0048:01",
+          "desc": "Egao Modifier",
+          "address": "0x0048"
+        },
+        {
+          "code": "004E:00",
+          "desc": "Invincible",
+          "address": "0x004E"
+        },
+        {
+          "code": "0084:00",
+          "desc": "No Enemies Left (Water Stage)",
+          "address": "0x0084"
+        },
+        {
+          "code": "0098:80",
+          "desc": "Enemies Die",
+          "address": "0x0098"
+        },
+        {
+          "code": "0099:80",
+          "desc": "Enemies Die",
+          "address": "0x0099"
+        },
+        {
+          "code": "009A:80",
+          "desc": "Enemies Die",
+          "address": "0x009A"
+        },
+        {
+          "code": "002B:63",
+          "desc": "Infinite Lives P1",
+          "address": "0x002B"
+        },
+        {
+          "code": "0110:39",
+          "desc": "Max Score P1",
+          "address": "0x0110"
+        },
+        {
+          "code": "0111:39",
+          "desc": "Max Score P1",
+          "address": "0x0111"
+        },
+        {
+          "code": "0112:39",
+          "desc": "Max Score P1",
+          "address": "0x0112"
+        },
+        {
+          "code": "0113:39",
+          "desc": "Max Score P1",
+          "address": "0x0113"
+        },
+        {
+          "code": "0114:39",
+          "desc": "Max Score P1",
+          "address": "0x0114"
+        },
+        {
+          "code": "0115:39",
+          "desc": "Max Score P1",
+          "address": "0x0115"
+        },
+        {
+          "code": "AEVELEAI",
+          "desc": "Skip Title Screen",
+          "address": "0x008B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

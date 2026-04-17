@@ -1,0 +1,6 @@
+game_name=All-Star Baseball 2004 (USA) (Code Breaker)
+game_key=all_star_baseball_2004_usa_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_0200075c	score	0x0200075C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0200075d	score	0x0200075D	1	uint	little	prev < curr	0.8	1	right:0.350:60

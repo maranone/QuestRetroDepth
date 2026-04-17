@@ -1,0 +1,6 @@
+game_name=Taito Grand Prix - Eikou e no License (Japan)
+game_key=taito_grand_prix_eikou_e_no_license_japan
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_073b	pickup	0x073B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_073c	pickup	0x073C	1	uint	little	prev != curr	0.8	1	right:0.250:18

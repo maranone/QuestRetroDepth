@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "gorbynopipelinedaisakusen",
+  "display_name": "Gorby no Pipeline Daisakusen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gorby no Pipeline Daisakusen (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0040:14",
+          "desc": "Every Piece Is 2 Horizontal Segments",
+          "address": "0x0040"
+        },
+        {
+          "code": "0050:14",
+          "desc": "Every Piece Is 2 Horizontal Segments",
+          "address": "0x0050"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

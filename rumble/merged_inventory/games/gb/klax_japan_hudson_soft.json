@@ -1,0 +1,47 @@
+{
+  "system": "gb",
+  "normalized_title": "klax",
+  "display_name": "Klax (Japan) (Hudson Soft)",
+  "aliases": [
+    "Klax (USA) (Mindscape)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Klax (USA) (Mindscape).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0100D5E9",
+          "desc": "Instantly Complete Wave",
+          "address": "0xD5E9"
+        },
+        {
+          "code": "0100D6E9",
+          "desc": "Instantly Complete Wave",
+          "address": "0xD6E9"
+        },
+        {
+          "code": "0100D7E9",
+          "desc": "Instantly Complete Wave",
+          "address": "0xD7E9"
+        },
+        {
+          "code": "0100D8E9",
+          "desc": "Instantly Complete Wave",
+          "address": "0xD8E9"
+        },
+        {
+          "code": "0100D9E9",
+          "desc": "Instantly Complete Wave",
+          "address": "0xD9E9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

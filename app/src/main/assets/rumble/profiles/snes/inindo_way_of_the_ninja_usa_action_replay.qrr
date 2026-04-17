@@ -1,0 +1,24 @@
+game_name=Inindo - Way of the Ninja (USA) (Action Replay)
+game_key=inindo_way_of_the_ninja_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_f01b	pickup	0x7EF01B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_f01c	pickup	0x7EF01C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_9606	damage_taken	0x7E9606	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_9606	death	0x7E9606	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_9607	damage_taken	0x7E9607	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_9607	death	0x7E9607	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_f0b6	damage_taken	0x7EF0B6	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_f0b6	death	0x7EF0B6	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_f0b7	damage_taken	0x7EF0B7	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_f0b7	death	0x7EF0B7	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_f0ba	damage_taken	0x7EF0BA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_f0ba	death	0x7EF0BA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_f0bb	damage_taken	0x7EF0BB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_f0bb	death	0x7EF0BB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_f0bc	damage_taken	0x7EF0BC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_f0bc	death	0x7EF0BC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_f0bd	damage_taken	0x7EF0BD	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_f0bd	death	0x7EF0BD	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_f0be	level_complete	0x7EF0BE	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_f0bf	level_complete	0x7EF0BF	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

@@ -1,0 +1,5 @@
+game_name=Dave Mirra Freestyle BMX 3 (USA, Europe) (Code Breaker)
+game_key=dave_mirra_freestyle_bmx_3_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	pickup_coins_020125cc	pickup	0x020125CC	1	uint	little	prev != curr	0.8	1	right:0.250:18

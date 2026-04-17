@@ -1,0 +1,97 @@
+{
+  "system": "nes",
+  "normalized_title": "muppetadventurechaosatcarnival",
+  "display_name": "Muppet Adventure - Chaos at the Carnival (USA) (Game Genie)",
+  "aliases": [
+    "Muppet Adventure - Chaos at the Carnival (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Muppet Adventure - Chaos at the Carnival (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "SZKANZVG",
+          "desc": "Infinite Power",
+          "address": "0x022F"
+        },
+        {
+          "code": "0031:05",
+          "desc": "Infinite Energy",
+          "address": "0x0031"
+        },
+        {
+          "code": "0031:06",
+          "desc": "Infinite Health (All Levels)",
+          "address": "0x0031"
+        },
+        {
+          "code": "0032:09",
+          "desc": "Infinite Rides (Lives - One's Digit)",
+          "address": "0x0032"
+        },
+        {
+          "code": "0033:09",
+          "desc": "Infinite Rides (Lives - Ten's Digit)",
+          "address": "0x0033"
+        },
+        {
+          "code": "002A:09",
+          "desc": "Max Score P1",
+          "address": "0x002A"
+        },
+        {
+          "code": "002B:09",
+          "desc": "Max Score P1",
+          "address": "0x002B"
+        },
+        {
+          "code": "002C:09",
+          "desc": "Max Score P1",
+          "address": "0x002C"
+        },
+        {
+          "code": "002D:09",
+          "desc": "Max Score P1",
+          "address": "0x002D"
+        },
+        {
+          "code": "002E:09",
+          "desc": "Max Score P1",
+          "address": "0x002E"
+        },
+        {
+          "code": "002F:09",
+          "desc": "Max Score P1",
+          "address": "0x002F"
+        },
+        {
+          "code": "0030:09",
+          "desc": "Max Score P1",
+          "address": "0x0030"
+        },
+        {
+          "code": "02D4:08",
+          "desc": "Invincibility P1?",
+          "address": "0x02D4"
+        },
+        {
+          "code": "0019:04",
+          "desc": "Start on final stage",
+          "address": "0x0019"
+        },
+        {
+          "code": "02EB:01",
+          "desc": "1 Hit Kill on Dr. Grump",
+          "address": "0x02EB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

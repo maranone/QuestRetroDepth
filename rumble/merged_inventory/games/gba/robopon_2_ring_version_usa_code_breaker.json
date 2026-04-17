@@ -1,0 +1,148 @@
+{
+  "system": "gba",
+  "normalized_title": "robopon2ringversion",
+  "display_name": "Robopon 2 - Ring Version (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Robopon 2 - Ring Version (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 12,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10000712",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000712"
+        },
+        {
+          "code": "82010000",
+          "desc": "No Time On Clock",
+          "address": "0x02010000"
+        },
+        {
+          "code": "82010004",
+          "desc": "Max Money",
+          "address": "0x02010004"
+        },
+        {
+          "code": "82010006",
+          "desc": "Max Money",
+          "address": "0x02010006"
+        },
+        {
+          "code": "8201069C",
+          "desc": "0 Saves",
+          "address": "0x0201069C"
+        },
+        {
+          "code": "8201013A",
+          "desc": "Infinite Batteries",
+          "address": "0x0201013A"
+        },
+        {
+          "code": "720003D4",
+          "desc": "Speed Up Leveling",
+          "address": "0x020003D4"
+        },
+        {
+          "code": "320003D4",
+          "desc": "Speed Up Leveling",
+          "address": "0x020003D4"
+        },
+        {
+          "code": "720159EE",
+          "desc": "Hella Exp",
+          "address": "0x020159EE"
+        },
+        {
+          "code": "82015A04",
+          "desc": "Hella Exp",
+          "address": "0x02015A04"
+        },
+        {
+          "code": "720159EE",
+          "desc": "Hella Exp",
+          "address": "0x020159EE"
+        },
+        {
+          "code": "82015C88",
+          "desc": "Hella Exp",
+          "address": "0x02015C88"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Robopon 2 - Ring Version (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 12,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10000712",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000712"
+        },
+        {
+          "code": "82010000",
+          "desc": "No Time On Clock",
+          "address": "0x02010000"
+        },
+        {
+          "code": "82010004",
+          "desc": "Max Money",
+          "address": "0x02010004"
+        },
+        {
+          "code": "82010006",
+          "desc": "Max Money",
+          "address": "0x02010006"
+        },
+        {
+          "code": "8201069C",
+          "desc": "0 Saves",
+          "address": "0x0201069C"
+        },
+        {
+          "code": "8201013A",
+          "desc": "Infinite Batteries",
+          "address": "0x0201013A"
+        },
+        {
+          "code": "720003D4",
+          "desc": "Speed Up Leveling",
+          "address": "0x020003D4"
+        },
+        {
+          "code": "320003D4",
+          "desc": "Speed Up Leveling",
+          "address": "0x020003D4"
+        },
+        {
+          "code": "720159EE",
+          "desc": "Hella Exp",
+          "address": "0x020159EE"
+        },
+        {
+          "code": "82015A04",
+          "desc": "Hella Exp",
+          "address": "0x02015A04"
+        },
+        {
+          "code": "720159EE",
+          "desc": "Hella Exp",
+          "address": "0x020159EE"
+        },
+        {
+          "code": "82015C88",
+          "desc": "Hella Exp",
+          "address": "0x02015C88"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

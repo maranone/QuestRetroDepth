@@ -1,0 +1,19 @@
+game_name=Super Bomber Man 4 (Japan) (Action Replay)
+game_key=super_bomber_man_4_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_0343	pickup	0x7E0343	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0344	pickup	0x7E0344	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0397	pickup	0x7E0397	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	life_lost_lives_1eac	life_lost	0x7E1EAC	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1eac	life_gained	0x7E1EAC	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_1d23	life_lost	0x7E1D23	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1d23	life_gained	0x7E1D23	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_coins_4ed5	pickup	0x7E4ED5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_0092	level_complete	0x7E0092	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_01a8	life_lost	0x7E01A8	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_01a8	life_gained	0x7E01A8	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_1ee8	score	0x7E1EE8	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_1eec	score	0x7E1EEC	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	enemy_defeated_enemy_health_1eba	enemy_defeated	0x7E1EBA	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	pickup_coins_0441	pickup	0x7E0441	1	uint	little	prev != curr	0.8	1	right:0.250:18

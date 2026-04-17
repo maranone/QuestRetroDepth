@@ -1,0 +1,26 @@
+{
+  "done": {
+    "variables": {
+      "end": {
+        "op": "equal",
+        "reference": -1
+      }
+    }
+  },
+  "reward": {
+    "variables": {
+      "centiseconds": {
+        "penalty": -1.0,
+        "reward": -1.0
+      },
+      "minutes": {
+        "reward": -6000.0
+      }
+    }
+  },
+  "actions": [
+    [[], ["UP"], ["DOWN"]],
+    [[], ["LEFT"], ["RIGHT"]],
+    [[]]
+  ]
+}

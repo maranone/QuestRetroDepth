@@ -1,0 +1,19 @@
+game_name=Doraemon 4 - Nobita to Tsuki no Oukoku (Japan)
+game_key=doraemon_4_nobita_to_tsuki_no_oukoku_japan
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_1cf7	life_lost	0x7E1CF7	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1cf7	life_gained	0x7E1CF7	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_1cf4	damage_taken	0x7E1CF4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1cf4	death	0x7E1CF4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_1cef	level_complete	0x7E1CEF	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_1cd8	level_complete	0x7E1CD8	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_1cb8	enemy_defeated	0x7E1CB8	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_1cb9	enemy_defeated	0x7E1CB9	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_123e	enemy_defeated	0x7E123E	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_127e	enemy_defeated	0x7E127E	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_12be	enemy_defeated	0x7E12BE	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_12fe	enemy_defeated	0x7E12FE	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_133e	enemy_defeated	0x7E133E	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_137e	enemy_defeated	0x7E137E	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_13be	enemy_defeated	0x7E13BE	1	uint	little	prev > curr	0.65	1	right:0.450:35

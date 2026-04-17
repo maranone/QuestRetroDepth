@@ -1,0 +1,77 @@
+{
+  "system": "nes",
+  "normalized_title": "powerpunchii",
+  "display_name": "Power Punch II (USA) (Game Genie)",
+  "aliases": [
+    "Power Punch II (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Power Punch II (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "00CE:FF",
+          "desc": "Infinite Health",
+          "address": "0x00CE"
+        },
+        {
+          "code": "00CD:00",
+          "desc": "Opponents Defeated Instantly",
+          "address": "0x00CD"
+        },
+        {
+          "code": "00C4:FF",
+          "desc": "Set Max. Stamina",
+          "address": "0x00C4"
+        },
+        {
+          "code": "00C3:FF",
+          "desc": "Set Max. Punch",
+          "address": "0x00C3"
+        },
+        {
+          "code": "00C8:FF",
+          "desc": "Speed Increased At Training Ship",
+          "address": "0x00C8"
+        },
+        {
+          "code": "03E0:09",
+          "desc": "No Count For Knockdown",
+          "address": "0x03E0"
+        },
+        {
+          "code": "0390:09",
+          "desc": "Infinite Time In Training Ship",
+          "address": "0x0390"
+        },
+        {
+          "code": "02D1:00",
+          "desc": "Stage Match Select",
+          "address": "0x02D1"
+        },
+        {
+          "code": "SXSEKSVS",
+          "desc": "Infinite Time In Rounds",
+          "address": "0x05AC"
+        },
+        {
+          "code": "KKOPYGEG",
+          "desc": "Max Stats",
+          "address": "0x044F"
+        },
+        {
+          "code": "KKOOPGOG",
+          "desc": "Max Stats",
+          "address": "0x04C9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

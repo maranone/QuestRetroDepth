@@ -1,0 +1,10 @@
+game_name=Blackthorne (USA, Europe) (Code Breaker)
+game_key=blackthorne_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	pickup_coins_02001878	pickup	0x02001878	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0200187c	pickup	0x0200187C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_02001880	pickup	0x02001880	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_02001884	pickup	0x02001884	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_02000fc8	damage_taken	0x02000FC8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02000fc8	death	0x02000FC8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

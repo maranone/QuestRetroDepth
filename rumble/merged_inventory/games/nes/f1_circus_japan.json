@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "f1circus",
+  "display_name": "F1 Circus (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\F1 Circus (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "00CA:00",
+          "desc": "Always Qualify First",
+          "address": "0x00CA"
+        },
+        {
+          "code": "00CB:00",
+          "desc": "Always Qualify First",
+          "address": "0x00CB"
+        },
+        {
+          "code": "65E4:99",
+          "desc": "1st Place In Season",
+          "address": "0x65E4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "system": "nes",
+  "normalized_title": "viceprojectdoom",
+  "display_name": "Vice - Project Doom (USA) (Game Genie)",
+  "aliases": [
+    "Vice - Project Doom (Rumbles)",
+    "Vice - Project Doom (USA) (Game Genie)",
+    "Vice - Project Doom (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\viceprojectdoom_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0362",
+        "0x0363"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ViceProjectDoom-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0362",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0363",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Vice - Project Doom (USA).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 16,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "VPOEPKXY",
+          "desc": "Start timer for round 1 at 150",
+          "address": "0x0499"
+        },
+        {
+          "code": "VPUAZKXY",
+          "desc": "Start timer for round 2 at 150",
+          "address": "0x041A"
+        },
+        {
+          "code": "0280:14",
+          "desc": "Infinite Energy",
+          "address": "0x0280"
+        },
+        {
+          "code": "035F:1E",
+          "desc": "Infinite First Weapon",
+          "address": "0x035F"
+        },
+        {
+          "code": "0360:0A",
+          "desc": "Infinite Second Weapon",
+          "address": "0x0360"
+        },
+        {
+          "code": "035E:FF",
+          "desc": "Infinite Time",
+          "address": "0x035E"
+        },
+        {
+          "code": "0280:16",
+          "desc": "Infinite Health",
+          "address": "0x0280"
+        },
+        {
+          "code": "0285:16",
+          "desc": "Infinite Energy",
+          "address": "0x0285"
+        },
+        {
+          "code": "0160:80",
+          "desc": "Jump Midair",
+          "address": "0x0160"
+        },
+        {
+          "code": "0170:20",
+          "desc": "Walk Behind Scenery",
+          "address": "0x0170"
+        },
+        {
+          "code": "0180:01",
+          "desc": "Walk/Drive Through Enemies",
+          "address": "0x0180"
+        },
+        {
+          "code": "0190:01",
+          "desc": "Super Jump",
+          "address": "0x0190"
+        },
+        {
+          "code": "0284:00",
+          "desc": "Boss One Hit Kill",
+          "address": "0x0284"
+        },
+        {
+          "code": "0285:00",
+          "desc": "Car Bosses One Hit Kill",
+          "address": "0x0285"
+        },
+        {
+          "code": "0361:63",
+          "desc": "99 Coins / Every Coin Gives 1UP",
+          "address": "0x0361"
+        },
+        {
+          "code": "0362:09",
+          "desc": "Infinite Lives",
+          "address": "0x0362"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Vice - Project Doom (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "VPOEPKXY",
+          "desc": "Start Timer For Round 1 At 150",
+          "address": "0x0499"
+        },
+        {
+          "code": "VPUAZKXY",
+          "desc": "Start Timer For Round 2 At 150",
+          "address": "0x041A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,7 @@
+game_name=Road Rash 3 (USA, Europe) (Alpha 5) (1994-11-19)
+game_key=road_rash_3_usa_europe_alpha_5_1994_11_19
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff746e	pickup	0xFF746E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_ff005c	damage_taken	0xFF005C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff005c	death	0xFF005C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

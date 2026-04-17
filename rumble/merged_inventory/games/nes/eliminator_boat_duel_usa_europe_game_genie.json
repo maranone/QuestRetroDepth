@@ -1,0 +1,37 @@
+{
+  "system": "nes",
+  "normalized_title": "eliminatorboatduel",
+  "display_name": "Eliminator Boat Duel (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Eliminator Boat Duel (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Eliminator Boat Duel (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "IZEEZZGA",
+          "desc": "Start With 36 Nitros",
+          "address": "0x02AA"
+        },
+        {
+          "code": "AAEEZZGA",
+          "desc": "Start With 0 Nitros",
+          "address": "0x028A"
+        },
+        {
+          "code": "IENEYPPA",
+          "desc": "Boat Starts With Full Turbo, Steering, Hull, Max Engine Power",
+          "address": "0x018F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

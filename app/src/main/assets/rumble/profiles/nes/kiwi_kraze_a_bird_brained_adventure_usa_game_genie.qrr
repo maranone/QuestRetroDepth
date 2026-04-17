@@ -1,0 +1,16 @@
+game_name=Kiwi Kraze - A Bird-Brained Adventure! (USA) (Game Genie)
+game_key=kiwi_kraze_a_bird_brained_adventure_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_0007	life_lost	0x0007	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0007	life_gained	0x0007	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_008f	enemy_defeated	0x008F	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	score_score_045c	score	0x045C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_045d	score	0x045D	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_045e	score	0x045E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_045f	score	0x045F	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0460	score	0x0460	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0461	score	0x0461	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0462	score	0x0462	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	level_complete_level_0004	level_complete	0x0004	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_0006	enemy_defeated	0x0006	1	uint	little	prev > curr	0.65	1	right:0.450:35

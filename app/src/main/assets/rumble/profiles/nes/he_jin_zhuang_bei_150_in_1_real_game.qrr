@@ -1,0 +1,6 @@
+game_name=He Jin Zhuang Bei 150-in-1 Real Game
+game_key=he_jin_zhuang_bei_150_in_1_real_game
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_0453	life_lost	0x0453	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0453	life_gained	0x0453	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

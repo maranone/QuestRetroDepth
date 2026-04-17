@@ -1,0 +1,6 @@
+game_name=Team USA Basketball (USA) (Action Replay)
+game_key=team_usa_basketball_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffa644	score	0xFFA644	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffa646	score	0xFFA646	1	uint	little	prev < curr	0.8	1	right:0.350:60

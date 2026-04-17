@@ -1,0 +1,192 @@
+{
+  "system": "nes",
+  "normalized_title": "megaman5",
+  "display_name": "Mega Man 5 (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Mega Man 5 (USA)",
+    "Mega Man 5 (USA, Europe) (Game Genie)",
+    "Mega Man 5 (USA)(S)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mega Man 5 (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 41,
+      "raw_entry_count": 16,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "GXSEYZSA",
+          "desc": "Infinite MegaMan(tm) Energy",
+          "address": "0x02AF"
+        },
+        {
+          "code": "GXXAAIVG",
+          "desc": "Infinite Lives",
+          "address": "0x0528"
+        },
+        {
+          "code": "GXSEPZVG",
+          "desc": "Infinite Mega-Tanks On Pick-Up",
+          "address": "0x02A9"
+        },
+        {
+          "code": "GZSATPVG",
+          "desc": "Infinite Energy Tanks On Pick-Up",
+          "address": "0x012E"
+        },
+        {
+          "code": "YEXETAIA",
+          "desc": "Super-Jumping MegaMan",
+          "address": "0x008E"
+        },
+        {
+          "code": "ONUELEUN",
+          "desc": "Super-Jumping MegaMan",
+          "address": "0x00FB"
+        },
+        {
+          "code": "PEXETAIA",
+          "desc": "Mega-Jumping MegaMan",
+          "address": "0x008E"
+        },
+        {
+          "code": "NNUELEUY",
+          "desc": "Mega-Jumping MegaMan",
+          "address": "0x00FB"
+        },
+        {
+          "code": "OTKPYISV",
+          "desc": "Infinite Energy For Most Weapons",
+          "address": "0x056F"
+        },
+        {
+          "code": "SAKEZAIA",
+          "desc": "Invincible Against Spikes",
+          "address": "0x008A"
+        },
+        {
+          "code": "SEEEPAIA",
+          "desc": "Invincible Against Enemies",
+          "address": "0x0089"
+        },
+        {
+          "code": "SEUEZZIA",
+          "desc": "Invincible Against Enemies",
+          "address": "0x028A"
+        },
+        {
+          "code": "OXVOPUPX",
+          "desc": "Have Infinite Star Shield When You Equip And Activate It",
+          "address": "0x03A9"
+        },
+        {
+          "code": "ZNNAPEZO",
+          "desc": "Megaman Can Slide A Lot Longer",
+          "address": "0x0079"
+        },
+        {
+          "code": "EOUAPPEL",
+          "desc": "Kill Enemies And Bosses In 1-2 Shots",
+          "address": "0x0119"
+        },
+        {
+          "code": "AAEEYPAP",
+          "desc": "Allows You To Have All Weapons And Beat",
+          "address": "0x018F"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Mega Man 5 (USA)(S).cht",
+      "total_cheat_rows": 41,
+      "raw_entry_count": 16,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "GXSEYZSA",
+          "desc": "Infinite MegaMan(tm) Energy",
+          "address": "0x02AF"
+        },
+        {
+          "code": "GXXAAIVG",
+          "desc": "Infinite Lives",
+          "address": "0x0528"
+        },
+        {
+          "code": "GXSEPZVG",
+          "desc": "Infinite Mega-Tanks On Pick-Up",
+          "address": "0x02A9"
+        },
+        {
+          "code": "GZSATPVG",
+          "desc": "Infinite Energy Tanks On Pick-Up",
+          "address": "0x012E"
+        },
+        {
+          "code": "YEXETAIA",
+          "desc": "Super-Jumping MegaMan",
+          "address": "0x008E"
+        },
+        {
+          "code": "ONUELEUN",
+          "desc": "Super-Jumping MegaMan",
+          "address": "0x00FB"
+        },
+        {
+          "code": "PEXETAIA",
+          "desc": "Mega-Jumping MegaMan",
+          "address": "0x008E"
+        },
+        {
+          "code": "NNUELEUY",
+          "desc": "Mega-Jumping MegaMan",
+          "address": "0x00FB"
+        },
+        {
+          "code": "OTKPYISV",
+          "desc": "Infinite Energy For Most Weapons",
+          "address": "0x056F"
+        },
+        {
+          "code": "SAKEZAIA",
+          "desc": "Invincible Against Spikes",
+          "address": "0x008A"
+        },
+        {
+          "code": "SEEEPAIA",
+          "desc": "Invincible Against Enemies",
+          "address": "0x0089"
+        },
+        {
+          "code": "SEUEZZIA",
+          "desc": "Invincible Against Enemies",
+          "address": "0x028A"
+        },
+        {
+          "code": "OXVOPUPX",
+          "desc": "Have Infinite Star Shield When You Equip And Activate It",
+          "address": "0x03A9"
+        },
+        {
+          "code": "ZNNAPEZO",
+          "desc": "Megaman Can Slide A Lot Longer",
+          "address": "0x0079"
+        },
+        {
+          "code": "EOUAPPEL",
+          "desc": "Kill Enemies And Bosses In 1-2 Shots",
+          "address": "0x0119"
+        },
+        {
+          "code": "AAEEYPAP",
+          "desc": "Allows You To Have All Weapons And Beat",
+          "address": "0x018F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

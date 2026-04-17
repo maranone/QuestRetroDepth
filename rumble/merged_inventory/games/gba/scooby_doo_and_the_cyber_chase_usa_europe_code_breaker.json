@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "scoobydooandcyberchase",
+  "display_name": "Scooby-Doo and the Cyber Chase (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Scooby-Doo and the Cyber Chase (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10005480",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02005480"
+        },
+        {
+          "code": "82006FD4",
+          "desc": "Infinite Lives",
+          "address": "0x02006FD4"
+        },
+        {
+          "code": "82006FCC",
+          "desc": "Infinite Health",
+          "address": "0x02006FCC"
+        },
+        {
+          "code": "32006FE3",
+          "desc": "Infinite Disguises",
+          "address": "0x02006FE3"
+        },
+        {
+          "code": "83000318",
+          "desc": "Invincible",
+          "address": "0x02000318"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Scooby-Doo and the Cyber Chase (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10005480",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02005480"
+        },
+        {
+          "code": "82006FD4",
+          "desc": "Infinite Lives",
+          "address": "0x02006FD4"
+        },
+        {
+          "code": "82006FCC",
+          "desc": "Infinite Health",
+          "address": "0x02006FCC"
+        },
+        {
+          "code": "32006FE3",
+          "desc": "Infinite Disguises",
+          "address": "0x02006FE3"
+        },
+        {
+          "code": "83000318",
+          "desc": "Invincible",
+          "address": "0x02000318"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

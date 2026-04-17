@@ -1,0 +1,87 @@
+{
+  "system": "nes",
+  "normalized_title": "championshippool",
+  "display_name": "Championship Pool (USA) (Game Genie)",
+  "aliases": [
+    "Championship Pool (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Championship Pool (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 13,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "OZVETASX",
+          "desc": "Player 1 always breaks in 9- or 10-ball",
+          "address": "0x00AE"
+        },
+        {
+          "code": "AAVEYEST",
+          "desc": "Player 1 always breaks in 9- or 10-ball",
+          "address": "0x008F"
+        },
+        {
+          "code": "OZVETASX",
+          "desc": "Player 2 always breaks in 9- or 10-ball",
+          "address": "0x00AE"
+        },
+        {
+          "code": "PAVEYEST",
+          "desc": "Player 2 always breaks in 9- or 10-ball",
+          "address": "0x008F"
+        },
+        {
+          "code": "OZVETASX",
+          "desc": "Player 1 Always Breaks In 9 Or 10-Ball",
+          "address": "0x00AE"
+        },
+        {
+          "code": "AAVEYEST",
+          "desc": "Player 1 Always Breaks In 9 Or 10-Ball",
+          "address": "0x008F"
+        },
+        {
+          "code": "OZVETASX",
+          "desc": "Player 2 Always Breaks In 9 Or 10-Ball",
+          "address": "0x00AE"
+        },
+        {
+          "code": "PAVEYEST",
+          "desc": "Player 2 Always Breaks In 9 Or 10-Ball",
+          "address": "0x008F"
+        },
+        {
+          "code": "045F:00",
+          "desc": "P1 Score Modifier (FF For 'High Score')",
+          "address": "0x045F"
+        },
+        {
+          "code": "0460:FF",
+          "desc": "P1 Has A -247 Score",
+          "address": "0x0460"
+        },
+        {
+          "code": "0461:00",
+          "desc": "P2 Score Modifier (FF For 'High Score')",
+          "address": "0x0461"
+        },
+        {
+          "code": "0462:FF",
+          "desc": "P2 Has A -247 Score",
+          "address": "0x0462"
+        },
+        {
+          "code": "0589:00",
+          "desc": "Menu Modifier",
+          "address": "0x0589"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

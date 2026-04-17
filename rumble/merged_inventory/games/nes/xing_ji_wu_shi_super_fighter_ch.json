@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "xingjiwushisuperfighter",
+  "display_name": "Xing Ji Wu Shi - Super Fighter (Ch)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Xing Ji Wu Shi - Super Fighter (Ch).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "009A:00",
+          "desc": "P1 Infinite Health",
+          "address": "0x009A"
+        },
+        {
+          "code": "009B:FF",
+          "desc": "P2 No Health",
+          "address": "0x009B"
+        },
+        {
+          "code": "0048:9A",
+          "desc": "Infinite Time",
+          "address": "0x0048"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

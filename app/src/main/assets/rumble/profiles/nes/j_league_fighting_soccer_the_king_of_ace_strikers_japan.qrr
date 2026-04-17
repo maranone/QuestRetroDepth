@@ -1,0 +1,6 @@
+game_name=J.League Fighting Soccer - The King of Ace Strikers (Japan)
+game_key=j_league_fighting_soccer_the_king_of_ace_strikers_japan
+system=nes
+integration_tier=contrib
+trigger	score_score_039b	score	0x039B	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_039e	score	0x039E	1	uint	little	prev < curr	0.8	1	right:0.350:60

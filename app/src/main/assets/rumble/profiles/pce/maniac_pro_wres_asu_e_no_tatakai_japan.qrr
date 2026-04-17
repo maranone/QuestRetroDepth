@@ -1,0 +1,8 @@
+game_name=Maniac Pro Wres - Asu e no Tatakai (Japan)
+game_key=maniac_pro_wres_asu_e_no_tatakai_japan
+system=pce
+integration_tier=contrib
+trigger	damage_taken_health_1f1332	damage_taken	0x1F1332	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1f1332	death	0x1F1332	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1f1453	damage_taken	0x1F1453	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1f1453	death	0x1F1453	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

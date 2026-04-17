@@ -1,0 +1,9 @@
+game_name=Inspector Gadget - Advance Mission (USA, Europe) (Code Breaker)
+game_key=inspector_gadget_advance_mission_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_02000139	damage_taken	0x02000139	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02000139	death	0x02000139	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_0200013c	life_lost	0x0200013C	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0200013c	life_gained	0x0200013C	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_02002af6	score	0x02002AF6	1	uint	little	prev < curr	0.8	1	right:0.350:60

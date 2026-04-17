@@ -1,0 +1,16 @@
+game_name=Kamen Rider Club (Japan)
+game_key=kamen_rider_club_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_011d	damage_taken	0x011D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_011d	death	0x011D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0125	damage_taken	0x0125	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0125	death	0x0125	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_012d	damage_taken	0x012D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_012d	death	0x012D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_00a8	enemy_defeated	0x00A8	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_00b0	enemy_defeated	0x00B0	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_00b2	enemy_defeated	0x00B2	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	pickup_coins_014b	pickup	0x014B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_014c	pickup	0x014C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_014d	pickup	0x014D	1	uint	little	prev != curr	0.8	1	right:0.250:18

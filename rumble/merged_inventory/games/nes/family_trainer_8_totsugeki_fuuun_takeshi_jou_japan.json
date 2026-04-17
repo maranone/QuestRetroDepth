@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "familytrainer8totsugekifuuuntakeshijou",
+  "display_name": "Family Trainer 8 - Totsugeki! Fuuun Takeshi-jou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Family Trainer 8 - Totsugeki! Fuuun Takeshi-jou (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "067C:FF",
+          "desc": "Freeze Timer",
+          "address": "0x067C"
+        },
+        {
+          "code": "044E:4E",
+          "desc": "Freeze Cannonballs",
+          "address": "0x044E"
+        },
+        {
+          "code": "045A:4E",
+          "desc": "Freeze Cannonballs",
+          "address": "0x045A"
+        },
+        {
+          "code": "0064:00",
+          "desc": "Win Surfboard Game",
+          "address": "0x0064"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

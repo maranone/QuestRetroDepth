@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "famicommini21supermariobros2",
+  "display_name": "Famicom Mini 21 - Super Mario Bros. 2 (Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Famicom Mini 21 - Super Mario Bros. 2 (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "330079EE",
+          "desc": "Infinite Time",
+          "address": "0x020079EE"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Super Jump (Press Up +A)",
+          "address": "0x02000020"
+        },
+        {
+          "code": "3300729F",
+          "desc": "Super Jump (Press Up +A)",
+          "address": "0x0200729F"
+        },
+        {
+          "code": "33007960",
+          "desc": "Level Modifier",
+          "address": "0x02007960"
+        },
+        {
+          "code": "3300799F",
+          "desc": "Always Have Starman",
+          "address": "0x0200799F"
+        },
+        {
+          "code": "33007956",
+          "desc": "Can Always Throw Fireballs",
+          "address": "0x02007956"
+        },
+        {
+          "code": "3300795A",
+          "desc": "Infinite Lives",
+          "address": "0x0200795A"
+        },
+        {
+          "code": "3300795E",
+          "desc": "Every Coin Gives A 1-Up",
+          "address": "0x0200795E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Famicom Mini 21 - Super Mario Bros. 2 (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "330079EE",
+          "desc": "Infinite Time",
+          "address": "0x020079EE"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Super Jump (Press Up +A)",
+          "address": "0x02000020"
+        },
+        {
+          "code": "3300729F",
+          "desc": "Super Jump (Press Up +A)",
+          "address": "0x0200729F"
+        },
+        {
+          "code": "33007960",
+          "desc": "Level Modifier",
+          "address": "0x02007960"
+        },
+        {
+          "code": "3300799F",
+          "desc": "Always Have Starman",
+          "address": "0x0200799F"
+        },
+        {
+          "code": "33007956",
+          "desc": "Can Always Throw Fireballs",
+          "address": "0x02007956"
+        },
+        {
+          "code": "3300795A",
+          "desc": "Infinite Lives",
+          "address": "0x0200795A"
+        },
+        {
+          "code": "3300795E",
+          "desc": "Every Coin Gives A 1-Up",
+          "address": "0x0200795E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

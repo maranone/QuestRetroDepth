@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "hollywoodsquares",
+  "display_name": "Hollywood Squares (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hollywood Squares (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "005A:00",
+          "desc": "P1's Character Modifier",
+          "address": "0x005A"
+        },
+        {
+          "code": "005B:00",
+          "desc": "P2's Character Modifier",
+          "address": "0x005B"
+        },
+        {
+          "code": "02E9:19",
+          "desc": "Fake Infinite Time To Answer Question",
+          "address": "0x02E9"
+        },
+        {
+          "code": "0006:09",
+          "desc": "Infinite Time To Answer Question",
+          "address": "0x0006"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

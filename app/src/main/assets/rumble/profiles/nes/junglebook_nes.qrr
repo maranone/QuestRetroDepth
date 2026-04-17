@@ -1,0 +1,9 @@
+game_name=Jungle Book, The (USA, Europe) (Game Genie)
+game_key=JungleBook-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_0337	damage_taken	0x0337	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0337	death	0x0337	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_032f	life_lost	0x032F	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_032f	life_gained	0x032F	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0330	score	0x0330	6	nibble	big	prev < curr	0.8	1	right:0.350:60

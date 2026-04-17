@@ -1,0 +1,126 @@
+{
+  "system": "nes",
+  "normalized_title": "dirtyharry",
+  "display_name": "Dirty Harry (USA) (Game Genie)",
+  "aliases": [
+    "Dirty Harry (USA) (Game Genie)",
+    "Dirty Harry (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\dirtyharry_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x06DC",
+        "0x06DD",
+        "0x06E1"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DirtyHarry-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x06DD",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x06DC",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x06E1",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dirty Harry (USA).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "06D3:63",
+          "desc": "Infinite Time Bombs",
+          "address": "0x06D3"
+        },
+        {
+          "code": "06D4:63",
+          "desc": "Infinite Hot Dogs",
+          "address": "0x06D4"
+        },
+        {
+          "code": "06D5:63",
+          "desc": "Infinite Spear Gun",
+          "address": "0x06D5"
+        },
+        {
+          "code": "06D6:63",
+          "desc": "Infinite Bazooka",
+          "address": "0x06D6"
+        },
+        {
+          "code": "06D7:63",
+          "desc": "Infinite Rope",
+          "address": "0x06D7"
+        },
+        {
+          "code": "06D8:63",
+          "desc": "Infinite Armor Vest",
+          "address": "0x06D8"
+        },
+        {
+          "code": "06D9:63",
+          "desc": "Infinite Mask",
+          "address": "0x06D9"
+        },
+        {
+          "code": "06DA:63",
+          "desc": "Infinite Flashlight",
+          "address": "0x06DA"
+        },
+        {
+          "code": "06DB:63",
+          "desc": "Infinite Prybars",
+          "address": "0x06DB"
+        },
+        {
+          "code": "06DD:4D",
+          "desc": "Infinite Health",
+          "address": "0x06DD"
+        },
+        {
+          "code": "06DC:09",
+          "desc": "Infinite Lives",
+          "address": "0x06DC"
+        },
+        {
+          "code": "06D2:63",
+          "desc": "Infinite Ammo",
+          "address": "0x06D2"
+        },
+        {
+          "code": "07C3:25",
+          "desc": "Invulnerability",
+          "address": "0x07C3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "system": "nes",
+  "normalized_title": "fistofnorthstar",
+  "display_name": "Fist of the North Star (USA) (Game Genie)",
+  "aliases": [
+    "Fist of the North Star (USA) (Game Genie)",
+    "Fist of the North Star (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\fistofthenorthstar_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x000B",
+        "0x0073",
+        "0x00F2"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FistOfTheNorthStar-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0073",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x000B",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x00F2",
+          "type": "<n7"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Fist of the North Star (USA).cht",
+      "total_cheat_rows": 27,
+      "raw_entry_count": 18,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "0073:38",
+          "desc": "Infinite Energy",
+          "address": "0x0073"
+        },
+        {
+          "code": "0066:01",
+          "desc": "Invincible",
+          "address": "0x0066"
+        },
+        {
+          "code": "0065:09",
+          "desc": "Infinite Time",
+          "address": "0x0065"
+        },
+        {
+          "code": "006C:07",
+          "desc": "Max Stars",
+          "address": "0x006C"
+        },
+        {
+          "code": "0063:07",
+          "desc": "Max Bombs",
+          "address": "0x0063"
+        },
+        {
+          "code": "0064:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x0064"
+        },
+        {
+          "code": "0065:09",
+          "desc": "Infinite Time (Ten's Digit)",
+          "address": "0x0065"
+        },
+        {
+          "code": "0073:3C",
+          "desc": "Infinite Health P1 (Ken)",
+          "address": "0x0073"
+        },
+        {
+          "code": "000B:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x000B"
+        },
+        {
+          "code": "00F0:09",
+          "desc": "Max Hits",
+          "address": "0x00F0"
+        },
+        {
+          "code": "00F1:09",
+          "desc": "Max Hits",
+          "address": "0x00F1"
+        },
+        {
+          "code": "00F2:09",
+          "desc": "Max Hits",
+          "address": "0x00F2"
+        },
+        {
+          "code": "00F3:09",
+          "desc": "Max Hits",
+          "address": "0x00F3"
+        },
+        {
+          "code": "0067:D4",
+          "desc": "Always Dual Translucent Ken",
+          "address": "0x0067"
+        },
+        {
+          "code": "0068:02",
+          "desc": "Always Dual Translucent Ken",
+          "address": "0x0068"
+        },
+        {
+          "code": "0086:00",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x0086"
+        },
+        {
+          "code": "0394:00",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x0394"
+        },
+        {
+          "code": "00EE:00",
+          "desc": "Stage Modifier",
+          "address": "0x00EE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

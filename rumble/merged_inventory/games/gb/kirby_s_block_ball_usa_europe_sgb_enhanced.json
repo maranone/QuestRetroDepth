@@ -1,0 +1,32 @@
+{
+  "system": "gb",
+  "normalized_title": "kirbysblockball",
+  "display_name": "Kirby's Block Ball (USA, Europe) (SGB Enhanced)",
+  "aliases": [
+    "Kirby's Block Ball (USA, Europe) (SGB Enhanced)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Kirby's Block Ball (USA, Europe) (SGB Enhanced).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0109C9C1",
+          "desc": "Infinite Lives",
+          "address": "0xC9C1"
+        },
+        {
+          "code": "0100C9C1",
+          "desc": "Lives You Start With (0-63 Hexidecimal) (From Debug)",
+          "address": "0xC9C1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

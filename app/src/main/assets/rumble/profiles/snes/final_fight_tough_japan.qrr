@@ -1,0 +1,21 @@
+game_name=Final Fight Tough (Japan)
+game_key=final_fight_tough_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_0758	damage_taken	0x7E0758	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0758	death	0x7E0758	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0858	damage_taken	0x7E0858	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0858	death	0x7E0858	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0958	damage_taken	0x7E0958	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0958	death	0x7E0958	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0a58	damage_taken	0x7E0A58	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0a58	death	0x7E0A58	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_1f03	level_complete	0x7E1F03	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_0558	damage_taken	0x7E0558	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0558	death	0x7E0558	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_0515	life_lost	0x7E0515	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0515	life_gained	0x7E0515	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_0580	enemy_defeated	0x7E0580	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	life_lost_lives_0615	life_lost	0x7E0615	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0615	life_gained	0x7E0615	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_0680	enemy_defeated	0x7E0680	1	uint	little	prev > curr	0.65	1	right:0.450:35

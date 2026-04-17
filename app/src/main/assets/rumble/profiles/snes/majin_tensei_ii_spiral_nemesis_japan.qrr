@@ -1,0 +1,27 @@
+game_name=Majin Tensei II - Spiral Nemesis (Japan)
+game_key=majin_tensei_ii_spiral_nemesis_japan
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_00b2	pickup	0x7E00B2	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_00b3	pickup	0x7E00B3	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_00b4	pickup	0x7E00B4	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_2000	damage_taken	0x7E2000	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_2000	death	0x7E2000	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_2001	damage_taken	0x7E2001	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_2001	death	0x7E2001	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_2040	damage_taken	0x7E2040	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_2040	death	0x7E2040	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_2041	damage_taken	0x7E2041	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_2041	death	0x7E2041	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_2080	damage_taken	0x7E2080	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_2080	death	0x7E2080	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_2081	damage_taken	0x7E2081	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_2081	death	0x7E2081	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_20c0	damage_taken	0x7E20C0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_20c0	death	0x7E20C0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_20c1	damage_taken	0x7E20C1	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_20c1	death	0x7E20C1	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_2100	damage_taken	0x7E2100	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_2100	death	0x7E2100	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_2101	damage_taken	0x7E2101	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_2101	death	0x7E2101	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,52 @@
+{
+  "system": "nes",
+  "normalized_title": "terminator",
+  "display_name": "Terminator, The (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Terminator, The (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Terminator, The (USA, Europe).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 6,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0701:7F",
+          "desc": "Infinite Energy",
+          "address": "0x0701"
+        },
+        {
+          "code": "055B:08",
+          "desc": "Infinite Bombs",
+          "address": "0x055B"
+        },
+        {
+          "code": "0532:1B",
+          "desc": "Infinite Lives",
+          "address": "0x0532"
+        },
+        {
+          "code": "0701:6F",
+          "desc": "Infinite Health",
+          "address": "0x0701"
+        },
+        {
+          "code": "055B:63",
+          "desc": "Infinite Grenades",
+          "address": "0x055B"
+        },
+        {
+          "code": "0526:04",
+          "desc": "Weapon Select",
+          "address": "0x0526"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

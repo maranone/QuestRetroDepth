@@ -1,0 +1,8 @@
+game_name=Super Contra (Japan) (Game Genie)
+game_key=super_contra_japan_game_genie
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_050c	life_lost	0x050C	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_050c	life_gained	0x050C	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_053c	life_lost	0x053C	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_053c	life_gained	0x053C	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

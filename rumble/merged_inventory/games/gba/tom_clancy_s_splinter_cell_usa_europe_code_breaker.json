@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "tomclancyssplintercell",
+  "display_name": "Tom Clancy's Splinter Cell (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Tom Clancy's Splinter Cell (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "83007700",
+          "desc": "Open All Missions",
+          "address": "0x02007700"
+        },
+        {
+          "code": "8300770A",
+          "desc": "Infinite Ammo",
+          "address": "0x0200770A"
+        },
+        {
+          "code": "3300766C",
+          "desc": "No Alarms Tripped",
+          "address": "0x0200766C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Tom Clancy's Splinter Cell (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "83007700",
+          "desc": "Open All Missions",
+          "address": "0x02007700"
+        },
+        {
+          "code": "8300770A",
+          "desc": "Infinite Ammo",
+          "address": "0x0200770A"
+        },
+        {
+          "code": "3300766C",
+          "desc": "No Alarms Tripped",
+          "address": "0x0200766C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

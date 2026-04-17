@@ -1,0 +1,61 @@
+{
+  "system": "sms",
+  "normalized_title": "sonichedgehog",
+  "display_name": "Sonic The Hedgehog (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Sonic The Hedgehog (Rumbles)",
+    "Sonic The Hedgehog (USA, Europe) (Action Replay)",
+    "Sonic The Hedgehog (USA, Europe, Brazil)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\sonicthehedgehog_sms.json",
+      "trigger_count": 4,
+      "field_names": [
+        "lives",
+        "rings",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0xD246",
+        "0xD2AA",
+        "0xD2BB"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SonicTheHedgehog-Sms-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xD246",
+          "type": "|u1"
+        },
+        {
+          "name": "rings",
+          "address": "0xD2AA",
+          "type": "|d1"
+        },
+        {
+          "name": "score",
+          "address": "0xD2BB",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Sonic The Hedgehog (USA, Europe, Brazil).cht",
+      "total_cheat_rows": 37,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

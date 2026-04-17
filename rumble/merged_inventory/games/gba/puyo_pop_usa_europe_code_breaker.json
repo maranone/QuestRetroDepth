@@ -1,0 +1,148 @@
+{
+  "system": "gba",
+  "normalized_title": "puyopop",
+  "display_name": "Puyo Pop (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Puyo Pop (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 12,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "100200A4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020200A4"
+        },
+        {
+          "code": "8300061C",
+          "desc": "P1 Max Score",
+          "address": "0x0200061C"
+        },
+        {
+          "code": "8300061E",
+          "desc": "P1 Max Score",
+          "address": "0x0200061E"
+        },
+        {
+          "code": "8300061C",
+          "desc": "P1 Quick Score Gain",
+          "address": "0x0200061C"
+        },
+        {
+          "code": "8300061C",
+          "desc": "P1 No Score",
+          "address": "0x0200061C"
+        },
+        {
+          "code": "8300061E",
+          "desc": "P1 No Score",
+          "address": "0x0200061E"
+        },
+        {
+          "code": "830009EC",
+          "desc": "P2 Max Score",
+          "address": "0x020009EC"
+        },
+        {
+          "code": "830009EE",
+          "desc": "P2 Max Score",
+          "address": "0x020009EE"
+        },
+        {
+          "code": "830009EC",
+          "desc": "P2 Quick Score Gain",
+          "address": "0x020009EC"
+        },
+        {
+          "code": "830009EC",
+          "desc": "P2 No Score",
+          "address": "0x020009EC"
+        },
+        {
+          "code": "830009EE",
+          "desc": "P2 No Score",
+          "address": "0x020009EE"
+        },
+        {
+          "code": "83000268",
+          "desc": "Have All Courses",
+          "address": "0x02000268"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Puyo Pop (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 12,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "100200A4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020200A4"
+        },
+        {
+          "code": "8300061C",
+          "desc": "P1 Max Score",
+          "address": "0x0200061C"
+        },
+        {
+          "code": "8300061E",
+          "desc": "P1 Max Score",
+          "address": "0x0200061E"
+        },
+        {
+          "code": "8300061C",
+          "desc": "P1 Quick Score Gain",
+          "address": "0x0200061C"
+        },
+        {
+          "code": "8300061C",
+          "desc": "P1 No Score",
+          "address": "0x0200061C"
+        },
+        {
+          "code": "8300061E",
+          "desc": "P1 No Score",
+          "address": "0x0200061E"
+        },
+        {
+          "code": "830009EC",
+          "desc": "P2 Max Score",
+          "address": "0x020009EC"
+        },
+        {
+          "code": "830009EE",
+          "desc": "P2 Max Score",
+          "address": "0x020009EE"
+        },
+        {
+          "code": "830009EC",
+          "desc": "P2 Quick Score Gain",
+          "address": "0x020009EC"
+        },
+        {
+          "code": "830009EC",
+          "desc": "P2 No Score",
+          "address": "0x020009EC"
+        },
+        {
+          "code": "830009EE",
+          "desc": "P2 No Score",
+          "address": "0x020009EE"
+        },
+        {
+          "code": "83000268",
+          "desc": "Have All Courses",
+          "address": "0x02000268"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

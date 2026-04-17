@@ -1,0 +1,28 @@
+game_name=Captain Tsubasa (Japan)
+game_key=captain_tsubasa_japan
+system=nes
+integration_tier=contrib
+trigger	score_score_05e1	score	0x05E1	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_05e0	score	0x05E0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	damage_taken_health_0484	damage_taken	0x0484	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0484	death	0x0484	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0418	damage_taken	0x0418	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0418	death	0x0418	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04ba	damage_taken	0x04BA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04ba	death	0x04BA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_042a	damage_taken	0x042A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_042a	death	0x042A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_043c	damage_taken	0x043C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_043c	death	0x043C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04a8	damage_taken	0x04A8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04a8	death	0x04A8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_044e	damage_taken	0x044E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_044e	death	0x044E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0460	damage_taken	0x0460	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0460	death	0x0460	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0496	damage_taken	0x0496	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0496	death	0x0496	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0472	damage_taken	0x0472	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0472	death	0x0472	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_06ca	damage_taken	0x06CA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_06ca	death	0x06CA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

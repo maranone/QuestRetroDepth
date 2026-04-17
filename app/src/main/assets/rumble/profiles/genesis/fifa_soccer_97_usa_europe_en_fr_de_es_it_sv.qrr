@@ -1,0 +1,5 @@
+game_name=FIFA Soccer 97 (USA, Europe) (En,Fr,De,Es,It,Sv)
+game_key=fifa_soccer_97_usa_europe_en_fr_de_es_it_sv
+system=genesis
+integration_tier=contrib
+trigger	score_score_fff8a2	score	0xFFF8A2	1	uint	little	prev < curr	0.8	1	right:0.350:60

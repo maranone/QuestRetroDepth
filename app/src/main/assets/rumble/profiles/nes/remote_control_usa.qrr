@@ -1,0 +1,10 @@
+game_name=Remote Control (USA)
+game_key=remote_control_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_0353	score	0x0353	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0349	score	0x0349	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0354	score	0x0354	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0351	score	0x0351	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0355	score	0x0355	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0352	score	0x0352	1	uint	little	prev < curr	0.8	1	right:0.350:60

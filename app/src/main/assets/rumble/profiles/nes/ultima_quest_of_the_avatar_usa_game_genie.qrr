@@ -1,0 +1,10 @@
+game_name=Ultima - Quest of the Avatar (USA) (Game Genie)
+game_key=ultima_quest_of_the_avatar_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_057e	pickup	0x057E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_070e	pickup	0x070E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_070d	pickup	0x070D	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0689	pickup	0x0689	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_068c	pickup	0x068C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_068b	pickup	0x068B	1	uint	little	prev != curr	0.8	1	right:0.250:18

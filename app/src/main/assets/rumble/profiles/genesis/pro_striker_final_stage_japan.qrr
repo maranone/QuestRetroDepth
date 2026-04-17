@@ -1,0 +1,6 @@
+game_name=Pro Striker Final Stage (Japan)
+game_key=pro_striker_final_stage_japan
+system=genesis
+integration_tier=contrib
+trigger	score_score_fff50c	score	0xFFF50C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_fff50e	score	0xFFF50E	1	uint	little	prev < curr	0.8	1	right:0.350:60

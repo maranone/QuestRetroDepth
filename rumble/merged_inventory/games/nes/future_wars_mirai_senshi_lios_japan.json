@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "futurewarsmiraisenshilios",
+  "display_name": "Future Wars - Mirai Senshi Lios (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Future Wars - Mirai Senshi Lios (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "PASEGOGA",
+          "desc": "Song 1 Plays at the title screen",
+          "address": "0x018C"
+        },
+        {
+          "code": "ZASEGOGA",
+          "desc": "Song 2 Plays at the title screen",
+          "address": "0x018C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

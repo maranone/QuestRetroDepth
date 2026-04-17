@@ -1,0 +1,58 @@
+{
+  "system": "sms",
+  "normalized_title": "predator2",
+  "display_name": "Predator 2 (Europe, Brazil) (Action Replay)",
+  "aliases": [
+    "Predator 2 (Europe)",
+    "Predator 2 (Europe, Brazil) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\predator2_sms.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0xC47A",
+        "0xC47F"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Predator2-Sms-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "hostages",
+          "address": "0xC4D7",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0xC47F",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xC47A",
+          "type": ">d4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Predator 2 (Europe, Brazil) (Action Replay).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

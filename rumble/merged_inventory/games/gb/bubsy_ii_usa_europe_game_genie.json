@@ -1,0 +1,28 @@
+{
+  "system": "gb",
+  "normalized_title": "bubsyii",
+  "display_name": "Bubsy II (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Bubsy II (USA, Europe) (Game Genie)",
+    "Bubsy II (USA, Europe) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Bubsy II (USA, Europe) (GameShark).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0103C3DE",
+          "desc": "Infinite Health",
+          "address": "0xC3DE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

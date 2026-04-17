@@ -1,0 +1,90 @@
+{
+  "system": "nes",
+  "normalized_title": "parasolhenbee",
+  "display_name": "Parasol Henbee (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Parasol Henbee (Japan).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 14,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "0110:05",
+          "desc": "Infinite Energy",
+          "address": "0x0110"
+        },
+        {
+          "code": "010E:63",
+          "desc": "Infinite Lives",
+          "address": "0x010E"
+        },
+        {
+          "code": "0106:02",
+          "desc": "Invincibility",
+          "address": "0x0106"
+        },
+        {
+          "code": "0106:00",
+          "desc": "Alternate Invincibility",
+          "address": "0x0106"
+        },
+        {
+          "code": "0110:05",
+          "desc": "Alternate Invincibility",
+          "address": "0x0110"
+        },
+        {
+          "code": "0078:00",
+          "desc": "Level Modifier",
+          "address": "0x0078"
+        },
+        {
+          "code": "0102:09",
+          "desc": "Super Jump",
+          "address": "0x0102"
+        },
+        {
+          "code": "0111:03",
+          "desc": "Infinite Gold",
+          "address": "0x0111"
+        },
+        {
+          "code": "0112:E9",
+          "desc": "Infinite Gold",
+          "address": "0x0112"
+        },
+        {
+          "code": "0113:03",
+          "desc": "Infinite Parasols",
+          "address": "0x0113"
+        },
+        {
+          "code": "0114:E9",
+          "desc": "Infinite Parasols",
+          "address": "0x0114"
+        },
+        {
+          "code": "011D:E9",
+          "desc": "Freeze Time",
+          "address": "0x011D"
+        },
+        {
+          "code": "012A:01",
+          "desc": "Swim Anywhere",
+          "address": "0x012A"
+        },
+        {
+          "code": "012D:20",
+          "desc": "Walk Behind Scenery",
+          "address": "0x012D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "system": "pce",
+  "normalized_title": "magicalchase",
+  "display_name": "Magical Chase (Rumbles)",
+  "aliases": [
+    "Magical Chase (Rumbles)",
+    "Magical Chase (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Magical Chase (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1f0e40:10",
+          "desc": "Infinite Health",
+          "address": "0x1F0E40"
+        },
+        {
+          "code": "1f0f40:10",
+          "desc": "Infinite Health",
+          "address": "0x1F0F40"
+        },
+        {
+          "code": "1f1f3a:ff",
+          "desc": "Infinite Money",
+          "address": "0x1F1F3A"
+        },
+        {
+          "code": "1f1f3b:ff",
+          "desc": "Infinite Money",
+          "address": "0x1F1F3B"
+        },
+        {
+          "code": "1f0ec5:23",
+          "desc": "Invincibility",
+          "address": "0x1F0EC5"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\pce\\Magical Chase (USA).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

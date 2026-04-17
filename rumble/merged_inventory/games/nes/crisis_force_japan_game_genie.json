@@ -1,0 +1,67 @@
+{
+  "system": "nes",
+  "normalized_title": "crisisforce",
+  "display_name": "Crisis Force (Japan) (Game Genie)",
+  "aliases": [
+    "Crisis Force (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Crisis Force (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "SUNEITVI",
+          "desc": "Infinite Lives",
+          "address": "0x06BD"
+        },
+        {
+          "code": "0068:03",
+          "desc": "Infinite Lives",
+          "address": "0x0068"
+        },
+        {
+          "code": "0492:09",
+          "desc": "Infinite Bombs",
+          "address": "0x0492"
+        },
+        {
+          "code": "049A:50",
+          "desc": "Infinite Time With The Invincible Ship Transformation",
+          "address": "0x049A"
+        },
+        {
+          "code": "SLOEGVVS",
+          "desc": "Infinite Bombs",
+          "address": "0x06BC"
+        },
+        {
+          "code": "AAOOATGP",
+          "desc": "Hit Anywhere",
+          "address": "0x0688"
+        },
+        {
+          "code": "AEVOTSTL",
+          "desc": "Hit Anywhere",
+          "address": "0x058E"
+        },
+        {
+          "code": "AVSOYVSZ",
+          "desc": "Hit Anywhere",
+          "address": "0x06EF"
+        },
+        {
+          "code": "AVSOYVSZ",
+          "desc": "Invincibility",
+          "address": "0x06EF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

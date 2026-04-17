@@ -1,0 +1,175 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "MegaManX",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\experimental\\MegaManX-Snes\\data.json",
+    "integration_tier": "experimental",
+    "game_key": "MegaManX-Snes"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_health_0bcf",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0x7E0BCF",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "bank": "7E",
+          "address": "0x0BCF",
+          "wram_offset": 3023
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0x7E0BCF",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_0bcf",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0x7E0BCF",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "bank": "7E",
+          "address": "0x0BCF",
+          "wram_offset": 3023
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0x7E0BCF",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_lives_1f80",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0x7E1F80",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x1F80",
+          "wram_offset": 8064
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x7E1F80",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_1f80",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0x7E1F80",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x1F80",
+          "wram_offset": 8064
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x7E1F80",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "xpos",
+      "meta": {
+        "address": 8257720,
+        "type": "<u2"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

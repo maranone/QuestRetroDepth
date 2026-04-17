@@ -1,0 +1,14 @@
+game_name=Who Framed Roger Rabbit (USA) (Game Genie)
+game_key=who_framed_roger_rabbit_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_03e4	enemy_defeated	0x03E4	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_03e5	enemy_defeated	0x03E5	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_03e6	enemy_defeated	0x03E6	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_03e7	enemy_defeated	0x03E7	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_03e8	enemy_defeated	0x03E8	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_03e9	enemy_defeated	0x03E9	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	life_lost_lives_00c4	life_lost	0x00C4	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00c4	life_gained	0x00C4	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_00cf	damage_taken	0x00CF	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00cf	death	0x00CF	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

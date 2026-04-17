@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "goal",
+  "display_name": "Goal! (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Goal! (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "0075:25",
+          "desc": "Player 1 kicks/shoots the ball farther",
+          "address": "0x0075"
+        },
+        {
+          "code": "0078:25",
+          "desc": "Player 1 kicks/shoots the ball farther",
+          "address": "0x0078"
+        },
+        {
+          "code": "0714:14",
+          "desc": "Time Modifier (Minutes)",
+          "address": "0x0714"
+        },
+        {
+          "code": "0713:63",
+          "desc": "Time Modifier (Seconds)",
+          "address": "0x0713"
+        },
+        {
+          "code": "04F9:00",
+          "desc": "Team 1 Score Modifier (First Half)",
+          "address": "0x04F9"
+        },
+        {
+          "code": "04FA:00",
+          "desc": "Team 1 Score Modifier (Second Half)",
+          "address": "0x04FA"
+        },
+        {
+          "code": "04FB:00",
+          "desc": "Team 1 Score Modifier (Final Score)",
+          "address": "0x04FB"
+        },
+        {
+          "code": "04FC:00",
+          "desc": "Team 2 Score Modifier (First Half)",
+          "address": "0x04FC"
+        },
+        {
+          "code": "04FD:00",
+          "desc": "Team 2 Score Modifier (Second Half)",
+          "address": "0x04FD"
+        },
+        {
+          "code": "04FE:00",
+          "desc": "Team 2 Score Modifier (Final Score)",
+          "address": "0x04FE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

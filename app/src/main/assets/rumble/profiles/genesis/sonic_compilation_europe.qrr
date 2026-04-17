@@ -1,0 +1,14 @@
+game_name=Sonic Compilation (Europe)
+game_key=sonic_compilation_europe
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_fffe12	life_lost	0xFFFE12	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fffe12	life_gained	0xFFFE12	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_fffe10	level_complete	0xFFFE10	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_ffd030	enemy_defeated	0xFFD030	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	damage_taken_health_fffe2c	damage_taken	0xFFFE2C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_fffe2c	death	0xFFFE2C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_ffd920	level_complete	0xFFD920	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_ffd820	level_complete	0xFFD820	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_ffda20	level_complete	0xFFDA20	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_fffe5e	level_complete	0xFFFE5E	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

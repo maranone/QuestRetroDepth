@@ -1,0 +1,97 @@
+{
+  "system": "nes",
+  "normalized_title": "digitaldevilstorymegamitensei",
+  "display_name": "Digital Devil Story - Megami Tensei (Japan) (Game Genie)",
+  "aliases": [
+    "Digital Devil Story - Megami Tensei (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Digital Devil Story - Megami Tensei (Japan).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 15,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "24C3:03",
+          "desc": "Have 210 Points On The Character Setup Screens",
+          "address": "0x24C3"
+        },
+        {
+          "code": "0485:63",
+          "desc": "Have Infinite Points",
+          "address": "0x0485"
+        },
+        {
+          "code": "0480:14",
+          "desc": "Max Points - Position 1",
+          "address": "0x0480"
+        },
+        {
+          "code": "0481:14",
+          "desc": "Max Points - Position 2",
+          "address": "0x0481"
+        },
+        {
+          "code": "0482:14",
+          "desc": "Max Points - Position 3",
+          "address": "0x0482"
+        },
+        {
+          "code": "0483:14",
+          "desc": "Max Points - Position 4",
+          "address": "0x0483"
+        },
+        {
+          "code": "0484:14",
+          "desc": "Max Points - Position 5",
+          "address": "0x0484"
+        },
+        {
+          "code": "04B5:FF",
+          "desc": "Hero 1 - Health",
+          "address": "0x04B5"
+        },
+        {
+          "code": "04C3:FF",
+          "desc": "Hero 2 - Health",
+          "address": "0x04C3"
+        },
+        {
+          "code": "055C:0A",
+          "desc": "Unlimited Map Use",
+          "address": "0x055C"
+        },
+        {
+          "code": "0554:FF",
+          "desc": "Unlimited Magic For Map",
+          "address": "0x0554"
+        },
+        {
+          "code": "0550:FF",
+          "desc": "Infinite Gold",
+          "address": "0x0550"
+        },
+        {
+          "code": "0551:FF",
+          "desc": "Infinite Gold",
+          "address": "0x0551"
+        },
+        {
+          "code": "0780:00",
+          "desc": "Horizontal Axis Position",
+          "address": "0x0780"
+        },
+        {
+          "code": "0781:00",
+          "desc": "Vertical Axis Position",
+          "address": "0x0781"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

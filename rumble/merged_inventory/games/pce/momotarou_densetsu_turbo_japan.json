@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "momotaroudensetsuturbo",
+  "display_name": "Momotarou Densetsu Turbo (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Momotarou Densetsu Turbo (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f1714:ff",
+          "desc": "Infinite Money",
+          "address": "0x1F1714"
+        },
+        {
+          "code": "1f1715:ff",
+          "desc": "Infinite Money",
+          "address": "0x1F1715"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

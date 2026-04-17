@@ -1,0 +1,27 @@
+{
+  "system": "nes",
+  "normalized_title": "f1race",
+  "display_name": "F-1 Race (Japan) (Game Genie)",
+  "aliases": [
+    "F1 Race (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\F1 Race (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0077:09",
+          "desc": "Infinite Time",
+          "address": "0x0077"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

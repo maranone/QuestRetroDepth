@@ -1,0 +1,45 @@
+{
+  "system": "pce",
+  "normalized_title": "1943kai",
+  "display_name": "1943 Kai (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\1943 Kai (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1f1548:64",
+          "desc": "Infinite Energy",
+          "address": "0x1F1548"
+        },
+        {
+          "code": "1f155a:02",
+          "desc": "Infinite Rolls",
+          "address": "0x1F155A"
+        },
+        {
+          "code": "1f1549:40",
+          "desc": "Infinite Energy (Player 2)",
+          "address": "0x1F1549"
+        },
+        {
+          "code": "1f1551:99",
+          "desc": "Infinite Weapon Time (Player 1)",
+          "address": "0x1F1551"
+        },
+        {
+          "code": "1f1552:99",
+          "desc": "Infinite Weapon Time (Player 2)",
+          "address": "0x1F1552"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

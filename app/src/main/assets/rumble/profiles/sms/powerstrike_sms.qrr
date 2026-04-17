@@ -1,0 +1,7 @@
+game_name=Power Strike (USA, Europe) (Action Replay) (diff)
+game_key=PowerStrike-Sms
+system=sms
+integration_tier=stable
+trigger	life_lost_lives_c812	life_lost	0xC812	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_c812	life_gained	0xC812	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_cef8	score	0xCEF8	4	bcd	big	prev < curr	0.8	1	right:0.350:60

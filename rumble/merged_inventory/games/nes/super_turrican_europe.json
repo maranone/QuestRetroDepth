@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "superturrican",
+  "display_name": "Super Turrican (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Turrican (Europe).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "038A:06",
+          "desc": "Infinite Health",
+          "address": "0x038A"
+        },
+        {
+          "code": "7051:09",
+          "desc": "Infinite Lives",
+          "address": "0x7051"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

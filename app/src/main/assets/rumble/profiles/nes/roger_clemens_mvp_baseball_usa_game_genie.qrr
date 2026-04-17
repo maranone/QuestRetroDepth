@@ -1,0 +1,5 @@
+game_name=Roger Clemens' MVP Baseball (USA) (Game Genie)
+game_key=roger_clemens_mvp_baseball_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	score_score_063c	score	0x063C	1	uint	little	prev < curr	0.8	1	right:0.350:60

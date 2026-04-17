@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "megamanbattlenetwork4bluemoon",
+  "display_name": "Mega Man Battle Network 4 - Blue Moon (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Mega Man Battle Network 4 - Blue Moon (USA).cht",
+      "total_cheat_rows": 439,
+      "raw_entry_count": 560,
+      "distinct_address_count": 75,
+      "sample_raw_entries": [
+        {
+          "code": "1000036C",
+          "desc": "[M] Must Be On",
+          "address": "0x0200036C"
+        },
+        {
+          "code": "82001790",
+          "desc": "[M] Must Be On",
+          "address": "0x02001790"
+        },
+        {
+          "code": "82001792",
+          "desc": "[M] Must Be On",
+          "address": "0x02001792"
+        },
+        {
+          "code": "820023BE",
+          "desc": "No Random Battles",
+          "address": "0x020023BE"
+        },
+        {
+          "code": "8203B1A4",
+          "desc": "Infinite HP",
+          "address": "0x0203B1A4"
+        },
+        {
+          "code": "82035844",
+          "desc": "Infinite HP",
+          "address": "0x02035844"
+        },
+        {
+          "code": "72035810",
+          "desc": "Transparent",
+          "address": "0x02035810"
+        },
+        {
+          "code": "32039A28",
+          "desc": "Transparent",
+          "address": "0x02039A28"
+        },
+        {
+          "code": "32036415",
+          "desc": "Custom Gauge Full",
+          "address": "0x02036415"
+        },
+        {
+          "code": "42035CBE",
+          "desc": "Chips Deal 5000 Damage",
+          "address": "0x02035CBE"
+        },
+        {
+          "code": "8203B840",
+          "desc": "Max Bug Frags After Battle",
+          "address": "0x0203B840"
+        },
+        {
+          "code": "3203582E",
+          "desc": "Buster Level S",
+          "address": "0x0203582E"
+        },
+        {
+          "code": "72035842",
+          "desc": "Low Delete Time",
+          "address": "0x02035842"
+        },
+        {
+          "code": "82035850",
+          "desc": "Low Delete Time",
+          "address": "0x02035850"
+        },
+        {
+          "code": "72035B2A",
+          "desc": "Rapid Fire",
+          "address": "0x02035B2A"
+        },
+        {
+          "code": "32035B64",
+          "desc": "Rapid Fire",
+          "address": "0x02035B64"
+        },
+        {
+          "code": "72035B52",
+          "desc": "Quick Weapon Charge",
+          "address": "0x02035B52"
+        },
+        {
+          "code": "32035B52",
+          "desc": "Quick Weapon Charge",
+          "address": "0x02035B52"
+        },
+        {
+          "code": "7200A534",
+          "desc": "Quick Zenny Gain",
+          "address": "0x0200A534"
+        },
+        {
+          "code": "8200A554",
+          "desc": "Quick Zenny Gain",
+          "address": "0x0200A554"
+        },
+        {
+          "code": "3200B1C0",
+          "desc": "Cheap Chip Trader",
+          "address": "0x0200B1C0"
+        },
+        {
+          "code": "7200A512",
+          "desc": "Free Net Deals",
+          "address": "0x0200A512"
+        },
+        {
+          "code": "4201A006",
+          "desc": "Free Net Deals",
+          "address": "0x0201A006"
+        },
+        {
+          "code": "82001790",
+          "desc": "Freeze RNG",
+          "address": "0x02001790"
+        },
+        {
+          "code": "82001792",
+          "desc": "Freeze RNG",
+          "address": "0x02001792"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Mega Man Battle Network 4 - Blue Moon (USA).cht",
+      "total_cheat_rows": 439,
+      "raw_entry_count": 560,
+      "distinct_address_count": 75,
+      "sample_raw_entries": [
+        {
+          "code": "1000036C",
+          "desc": "[M] Must Be On",
+          "address": "0x0200036C"
+        },
+        {
+          "code": "82001790",
+          "desc": "[M] Must Be On",
+          "address": "0x02001790"
+        },
+        {
+          "code": "82001792",
+          "desc": "[M] Must Be On",
+          "address": "0x02001792"
+        },
+        {
+          "code": "820023BE",
+          "desc": "No Random Battles",
+          "address": "0x020023BE"
+        },
+        {
+          "code": "8203B1A4",
+          "desc": "Infinite HP",
+          "address": "0x0203B1A4"
+        },
+        {
+          "code": "82035844",
+          "desc": "Infinite HP",
+          "address": "0x02035844"
+        },
+        {
+          "code": "72035810",
+          "desc": "Transparent",
+          "address": "0x02035810"
+        },
+        {
+          "code": "32039A28",
+          "desc": "Transparent",
+          "address": "0x02039A28"
+        },
+        {
+          "code": "32036415",
+          "desc": "Custom Gauge Full",
+          "address": "0x02036415"
+        },
+        {
+          "code": "42035CBE",
+          "desc": "Chips Deal 5000 Damage",
+          "address": "0x02035CBE"
+        },
+        {
+          "code": "8203B840",
+          "desc": "Max Bug Frags After Battle",
+          "address": "0x0203B840"
+        },
+        {
+          "code": "3203582E",
+          "desc": "Buster Level S",
+          "address": "0x0203582E"
+        },
+        {
+          "code": "72035842",
+          "desc": "Low Delete Time",
+          "address": "0x02035842"
+        },
+        {
+          "code": "82035850",
+          "desc": "Low Delete Time",
+          "address": "0x02035850"
+        },
+        {
+          "code": "72035B2A",
+          "desc": "Rapid Fire",
+          "address": "0x02035B2A"
+        },
+        {
+          "code": "32035B64",
+          "desc": "Rapid Fire",
+          "address": "0x02035B64"
+        },
+        {
+          "code": "72035B52",
+          "desc": "Quick Weapon Charge",
+          "address": "0x02035B52"
+        },
+        {
+          "code": "32035B52",
+          "desc": "Quick Weapon Charge",
+          "address": "0x02035B52"
+        },
+        {
+          "code": "7200A534",
+          "desc": "Quick Zenny Gain",
+          "address": "0x0200A534"
+        },
+        {
+          "code": "8200A554",
+          "desc": "Quick Zenny Gain",
+          "address": "0x0200A554"
+        },
+        {
+          "code": "3200B1C0",
+          "desc": "Cheap Chip Trader",
+          "address": "0x0200B1C0"
+        },
+        {
+          "code": "7200A512",
+          "desc": "Free Net Deals",
+          "address": "0x0200A512"
+        },
+        {
+          "code": "4201A006",
+          "desc": "Free Net Deals",
+          "address": "0x0201A006"
+        },
+        {
+          "code": "82001790",
+          "desc": "Freeze RNG",
+          "address": "0x02001790"
+        },
+        {
+          "code": "82001792",
+          "desc": "Freeze RNG",
+          "address": "0x02001792"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "zombienation",
+  "display_name": "Zombie Nation (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Zombie Nation (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "053B:05",
+          "desc": "Infinite Continues",
+          "address": "0x053B"
+        },
+        {
+          "code": "0017:FF",
+          "desc": "Infinite Energy",
+          "address": "0x0017"
+        },
+        {
+          "code": "0018:FF",
+          "desc": "Infinite Energy",
+          "address": "0x0018"
+        },
+        {
+          "code": "011A:99",
+          "desc": "Max Score P1",
+          "address": "0x011A"
+        },
+        {
+          "code": "011B:99",
+          "desc": "Max Score P1",
+          "address": "0x011B"
+        },
+        {
+          "code": "028D:00",
+          "desc": "Round Highlighter Modifier",
+          "address": "0x028D"
+        },
+        {
+          "code": "0079:10",
+          "desc": "Round Modifier",
+          "address": "0x0079"
+        },
+        {
+          "code": "0017:63",
+          "desc": "Infinite Health P1",
+          "address": "0x0017"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

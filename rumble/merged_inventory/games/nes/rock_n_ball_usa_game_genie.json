@@ -1,0 +1,42 @@
+{
+  "system": "nes",
+  "normalized_title": "rocknball",
+  "display_name": "Rock 'n' Ball (USA) (Game Genie)",
+  "aliases": [
+    "Rock 'n' Ball (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rock 'n' Ball (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0473:03",
+          "desc": "Score 1 Goal or Allow 1 Goal To Win",
+          "address": "0x0473"
+        },
+        {
+          "code": "0474:04",
+          "desc": "Score 1 Goal or Allow 1 Goal To Win",
+          "address": "0x0474"
+        },
+        {
+          "code": "03D1:09",
+          "desc": "Infinite Balls P1",
+          "address": "0x03D1"
+        },
+        {
+          "code": "0020:00",
+          "desc": "Character Highlighter Modifier P1",
+          "address": "0x0020"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

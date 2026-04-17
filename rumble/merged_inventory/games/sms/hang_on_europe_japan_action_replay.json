@@ -1,0 +1,50 @@
+{
+  "system": "sms",
+  "normalized_title": "hangon",
+  "display_name": "Hang-On (Europe, Japan) (Action Replay)",
+  "aliases": [
+    "Hang-On (Europe)",
+    "Hang-On (Europe, Japan) (Action Replay)",
+    "Hang-On (Japan)"
+  ],
+  "sources": {
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\HangOn-Sms-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "left",
+          "address": "0xC060",
+          "type": ">d2"
+        },
+        {
+          "name": "score",
+          "address": "0xC002",
+          "type": ">d5"
+        },
+        {
+          "name": "speed",
+          "address": "0xC31A",
+          "type": "<u2"
+        },
+        {
+          "name": "time",
+          "address": "0xC00D",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Hang-On (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

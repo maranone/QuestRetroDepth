@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "spyroattackofrhynocs",
+  "display_name": "Spyro - Attack of the Rhynocs (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Spyro - Attack of the Rhynocs (USA) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "10001342",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001342"
+        },
+        {
+          "code": "8300301C",
+          "desc": "Infinite Jewels",
+          "address": "0x0200301C"
+        },
+        {
+          "code": "8300301E",
+          "desc": "Have All Jewels Game Total",
+          "address": "0x0200301E"
+        },
+        {
+          "code": "33003029",
+          "desc": "Have All Hearts Found",
+          "address": "0x02003029"
+        },
+        {
+          "code": "43002FE6",
+          "desc": "Have Everything Unlocked",
+          "address": "0x02002FE6"
+        },
+        {
+          "code": "83003000",
+          "desc": "Have All Levels Open",
+          "address": "0x02003000"
+        },
+        {
+          "code": "43002922",
+          "desc": "Time Always 00:00:00",
+          "address": "0x02002922"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select To Escape Any Level",
+          "address": "0x02000130"
+        },
+        {
+          "code": "32039E94",
+          "desc": "Press Select To Escape Any Level",
+          "address": "0x02039E94"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Spyro - Attack of the Rhynocs (USA) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "10001342",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001342"
+        },
+        {
+          "code": "8300301C",
+          "desc": "Infinite Jewels",
+          "address": "0x0200301C"
+        },
+        {
+          "code": "8300301E",
+          "desc": "Have All Jewels Game Total",
+          "address": "0x0200301E"
+        },
+        {
+          "code": "33003029",
+          "desc": "Have All Hearts Found",
+          "address": "0x02003029"
+        },
+        {
+          "code": "43002FE6",
+          "desc": "Have Everything Unlocked",
+          "address": "0x02002FE6"
+        },
+        {
+          "code": "83003000",
+          "desc": "Have All Levels Open",
+          "address": "0x02003000"
+        },
+        {
+          "code": "43002922",
+          "desc": "Time Always 00:00:00",
+          "address": "0x02002922"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select To Escape Any Level",
+          "address": "0x02000130"
+        },
+        {
+          "code": "32039E94",
+          "desc": "Press Select To Escape Any Level",
+          "address": "0x02039E94"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

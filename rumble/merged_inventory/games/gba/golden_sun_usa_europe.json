@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "goldensun",
+  "display_name": "Golden Sun (USA, Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Golden Sun (USA, Europe).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 29,
+      "distinct_address_count": 28,
+      "sample_raw_entries": [
+        {
+          "code": "42000538",
+          "desc": "Infinite HP",
+          "address": "0x02000538"
+        },
+        {
+          "code": "4200053A",
+          "desc": "Infinite PP",
+          "address": "0x0200053A"
+        },
+        {
+          "code": "82000250",
+          "desc": "Infinite Money",
+          "address": "0x02000250"
+        },
+        {
+          "code": "82000252",
+          "desc": "Infinite Money",
+          "address": "0x02000252"
+        },
+        {
+          "code": "42000380",
+          "desc": "All Artifacts Available in Shops",
+          "address": "0x02000380"
+        },
+        {
+          "code": "42000518",
+          "desc": "Max Attack (Requires Equipping/Removing an item on each character to take effect)",
+          "address": "0x02000518"
+        },
+        {
+          "code": "4200051A",
+          "desc": "Max Defense (Requires Equipping/Removing an item on each character to take effect)",
+          "address": "0x0200051A"
+        },
+        {
+          "code": "4200051C",
+          "desc": "Max Agility (Requires Equipping/Removing an item on each character to take effect)",
+          "address": "0x0200051C"
+        },
+        {
+          "code": "3200051E",
+          "desc": "Max Luck (Requires Equipping/Removing an item on each character to take effect)",
+          "address": "0x0200051E"
+        },
+        {
+          "code": "3200066A",
+          "desc": "Max Luck (Requires Equipping/Removing an item on each character to take effect)",
+          "address": "0x0200066A"
+        },
+        {
+          "code": "320007B6",
+          "desc": "Max Luck (Requires Equipping/Removing an item on each character to take effect)",
+          "address": "0x020007B6"
+        },
+        {
+          "code": "32000902",
+          "desc": "Max Luck (Requires Equipping/Removing an item on each character to take effect)",
+          "address": "0x02000902"
+        },
+        {
+          "code": "32000A4E",
+          "desc": "Max Luck (Requires Equipping/Removing an item on each character to take effect)",
+          "address": "0x02000A4E"
+        },
+        {
+          "code": "32000B9A",
+          "desc": "Max Luck (Requires Equipping/Removing an item on each character to take effect)",
+          "address": "0x02000B9A"
+        },
+        {
+          "code": "32000CE6",
+          "desc": "Max Luck (Requires Equipping/Removing an item on each character to take effect)",
+          "address": "0x02000CE6"
+        },
+        {
+          "code": "82030580",
+          "desc": "2000 Experience Per Battle",
+          "address": "0x02030580"
+        },
+        {
+          "code": "82030580",
+          "desc": "9,999,999 Experience Per Battle",
+          "address": "0x02030580"
+        },
+        {
+          "code": "82030582",
+          "desc": "9,999,999 Experience Per Battle",
+          "address": "0x02030582"
+        },
+        {
+          "code": "3200047A",
+          "desc": "No Random Battles (Scripted Encounters Still Happen)",
+          "address": "0x0200047A"
+        },
+        {
+          "code": "32000257",
+          "desc": "Infinite Summons",
+          "address": "0x02000257"
+        },
+        {
+          "code": "32000644",
+          "desc": "Always Have Two Turns in Battle (Only Works After Gaining Access To Djinn)",
+          "address": "0x02000644"
+        },
+        {
+          "code": "32000790",
+          "desc": "Always Have Two Turns in Battle (Only Works After Gaining Access To Djinn)",
+          "address": "0x02000790"
+        },
+        {
+          "code": "320008DC",
+          "desc": "Always Have Two Turns in Battle (Only Works After Gaining Access To Djinn)",
+          "address": "0x020008DC"
+        },
+        {
+          "code": "32000A28",
+          "desc": "Always Have Two Turns in Battle (Only Works After Gaining Access To Djinn)",
+          "address": "0x02000A28"
+        },
+        {
+          "code": "3200062B",
+          "desc": "Take Less DMG In Battle",
+          "address": "0x0200062B"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Golden Sun (USA, Europe).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 32,
+      "distinct_address_count": 27,
+      "sample_raw_entries": [
+        {
+          "code": "82000250",
+          "desc": "Unlimited Money",
+          "address": "0x02000250"
+        },
+        {
+          "code": "82000252",
+          "desc": "Unlimited Money",
+          "address": "0x02000252"
+        },
+        {
+          "code": "8200024C",
+          "desc": "Access All Summons",
+          "address": "0x0200024C"
+        },
+        {
+          "code": "42035998",
+          "desc": "Access All Summons",
+          "address": "0x02035998"
+        },
+        {
+          "code": "82030580",
+          "desc": "Quick Level Gain",
+          "address": "0x02030580"
+        },
+        {
+          "code": "3200047A",
+          "desc": "No Random Battle (Scripted Encounter Still Happened)",
+          "address": "0x0200047A"
+        },
+        {
+          "code": "82000070",
+          "desc": "Show Full Map",
+          "address": "0x02000070"
+        },
+        {
+          "code": "82000072",
+          "desc": "Show Full Map",
+          "address": "0x02000072"
+        },
+        {
+          "code": "82000074",
+          "desc": "Show Full Map",
+          "address": "0x02000074"
+        },
+        {
+          "code": "82000076",
+          "desc": "Show Full Map",
+          "address": "0x02000076"
+        },
+        {
+          "code": "32000257",
+          "desc": "Infinite Summons",
+          "address": "0x02000257"
+        },
+        {
+          "code": "82030580",
+          "desc": "9,999,999 EXP From Single Battle",
+          "address": "0x02030580"
+        },
+        {
+          "code": "82030582",
+          "desc": "9,999,999 EXP From Single Battle",
+          "address": "0x02030582"
+        },
+        {
+          "code": "3200062B",
+          "desc": "Access Djinn",
+          "address": "0x0200062B"
+        },
+        {
+          "code": "32000777",
+          "desc": "Access Djinn",
+          "address": "0x02000777"
+        },
+        {
+          "code": "320008C3",
+          "desc": "Access Djinn",
+          "address": "0x020008C3"
+        },
+        {
+          "code": "32000A0F",
+          "desc": "Access Djinn",
+          "address": "0x02000A0F"
+        },
+        {
+          "code": "820008AC",
+          "desc": "Ivan Has All Seven Wind Djinn",
+          "address": "0x020008AC"
+        },
+        {
+          "code": "320009FD",
+          "desc": "Mia Has All Seven Water Djinn",
+          "address": "0x020009FD"
+        },
+        {
+          "code": "32000A01",
+          "desc": "Mia Has All Seven Water Djinn",
+          "address": "0x02000A01"
+        },
+        {
+          "code": "820009E0",
+          "desc": "Mia Has All Seven Water Djinn",
+          "address": "0x020009E0"
+        },
+        {
+          "code": "820009F0",
+          "desc": "Mia Has All Seven Water Djinn",
+          "address": "0x020009F0"
+        },
+        {
+          "code": "32000644",
+          "desc": "Have Two Turns (Only Use it After Having Access To Djinn)",
+          "address": "0x02000644"
+        },
+        {
+          "code": "32000790",
+          "desc": "Have Two Turns (Only Use it After Having Access To Djinn)",
+          "address": "0x02000790"
+        },
+        {
+          "code": "320008DC",
+          "desc": "Have Two Turns (Only Use it After Having Access To Djinn)",
+          "address": "0x020008DC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=Tom Clancy's Splinter Cell (USA, Europe) (Code Breaker)
+game_key=tom_clancy_s_splinter_cell_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	pickup_coins_0200770a	pickup	0x0200770A	1	uint	little	prev != curr	0.8	1	right:0.250:18

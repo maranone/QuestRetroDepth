@@ -1,0 +1,5 @@
+game_name=Konami GB Collection Vol.2 (Japan) (SGB Enhanced)
+game_key=konami_gb_collection_vol_2_japan_sgb_enhanced
+system=gb
+integration_tier=contrib
+trigger	level_complete_level_d5c3	level_complete	0xD5C3	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

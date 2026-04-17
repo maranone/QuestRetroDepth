@@ -1,0 +1,142 @@
+{
+  "system": "nes",
+  "normalized_title": "zeldaiiadventureoflink",
+  "display_name": "Zelda II - The Adventure of Link (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Zelda II - The Adventure of Link (USA)",
+    "Zelda II - The Adventure of Link (USA, Europe) (Game Genie)",
+    "Zelda II - The Adventure of Link (USA)(S)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Zelda II - The Adventure of Link (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 11,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "AZUOLIAL",
+          "desc": "Mega-Jump",
+          "address": "0x05AB"
+        },
+        {
+          "code": "OYKEEVSA",
+          "desc": "Swap Shield Spell For Fire Spell",
+          "address": "0x06F8"
+        },
+        {
+          "code": "NPKEOVVA",
+          "desc": "Swap Shield Spell For Fire Spell",
+          "address": "0x0699"
+        },
+        {
+          "code": "LYKEEVSA",
+          "desc": "Swap Shield Spell For Spell Spell",
+          "address": "0x06F8"
+        },
+        {
+          "code": "VAKEOVVE",
+          "desc": "Swap Shield Spell For Spell Spell",
+          "address": "0x0689"
+        },
+        {
+          "code": "LZKEEVSA",
+          "desc": "Swap Shield Spell For Fairy Spell",
+          "address": "0x06A8"
+        },
+        {
+          "code": "OPKEOVVA",
+          "desc": "Swap Shield Spell For Fairy Spell",
+          "address": "0x0699"
+        },
+        {
+          "code": "IIKEEVSE",
+          "desc": "Swap Shield Spell For Life Spell",
+          "address": "0x06D8"
+        },
+        {
+          "code": "VAKEOVVE",
+          "desc": "Swap Shield Spell For Life Spell",
+          "address": "0x0689"
+        },
+        {
+          "code": "VTKEEVSA",
+          "desc": "Swap Shield Spell For Thunder Spell",
+          "address": "0x06E8"
+        },
+        {
+          "code": "OPKEOVVA",
+          "desc": "Swap Shield Spell For Thunder Spell",
+          "address": "0x0699"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Zelda II - The Adventure of Link (USA)(S).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 11,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "AZUOLIAL",
+          "desc": "Mega-Jump",
+          "address": "0x05AB"
+        },
+        {
+          "code": "OYKEEVSA",
+          "desc": "Swap Shield Spell For Fire Spell",
+          "address": "0x06F8"
+        },
+        {
+          "code": "NPKEOVVA",
+          "desc": "Swap Shield Spell For Fire Spell",
+          "address": "0x0699"
+        },
+        {
+          "code": "LYKEEVSA",
+          "desc": "Swap Shield Spell For Spell Spell",
+          "address": "0x06F8"
+        },
+        {
+          "code": "VAKEOVVE",
+          "desc": "Swap Shield Spell For Spell Spell",
+          "address": "0x0689"
+        },
+        {
+          "code": "LZKEEVSA",
+          "desc": "Swap Shield Spell For Fairy Spell",
+          "address": "0x06A8"
+        },
+        {
+          "code": "OPKEOVVA",
+          "desc": "Swap Shield Spell For Fairy Spell",
+          "address": "0x0699"
+        },
+        {
+          "code": "IIKEEVSE",
+          "desc": "Swap Shield Spell For Life Spell",
+          "address": "0x06D8"
+        },
+        {
+          "code": "VAKEOVVE",
+          "desc": "Swap Shield Spell For Life Spell",
+          "address": "0x0689"
+        },
+        {
+          "code": "VTKEEVSA",
+          "desc": "Swap Shield Spell For Thunder Spell",
+          "address": "0x06E8"
+        },
+        {
+          "code": "OPKEOVVA",
+          "desc": "Swap Shield Spell For Thunder Spell",
+          "address": "0x0699"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

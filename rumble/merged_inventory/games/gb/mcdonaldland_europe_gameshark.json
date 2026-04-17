@@ -1,0 +1,27 @@
+{
+  "system": "gb",
+  "normalized_title": "mcdonaldland",
+  "display_name": "McDonaldland (Europe) (GameShark)",
+  "aliases": [
+    "McDonaldland (Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\McDonaldland (Europe).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0105D0D3",
+          "desc": "Infinite Energy",
+          "address": "0xD0D3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

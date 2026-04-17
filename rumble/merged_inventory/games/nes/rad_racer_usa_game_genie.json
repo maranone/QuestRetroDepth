@@ -1,0 +1,67 @@
+{
+  "system": "nes",
+  "normalized_title": "radracer",
+  "display_name": "Rad Racer (USA) (Game Genie)",
+  "aliases": [
+    "Rad Racer (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rad Racer (USA).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 9,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "0585:39",
+          "desc": "Infinite Time [Micro-Seconds]",
+          "address": "0x0585"
+        },
+        {
+          "code": "0584:39",
+          "desc": "Infinite Time [Seconds]",
+          "address": "0x0584"
+        },
+        {
+          "code": "0583:39",
+          "desc": "Infinite Time [Minutes]",
+          "address": "0x0583"
+        },
+        {
+          "code": "00E5:00",
+          "desc": "Start On Level",
+          "address": "0x00E5"
+        },
+        {
+          "code": "0062:FF",
+          "desc": "Infinite Time",
+          "address": "0x0062"
+        },
+        {
+          "code": "0038:FF",
+          "desc": "Go Very, Very Fast (Almost Lightspeed)",
+          "address": "0x0038"
+        },
+        {
+          "code": "0585:39",
+          "desc": "Infinite Time (Micro-Seconds)",
+          "address": "0x0585"
+        },
+        {
+          "code": "0584:39",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x0584"
+        },
+        {
+          "code": "0583:39",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x0583"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "acesironeagleiii",
+  "display_name": "Aces - Iron Eagle III (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Aces - Iron Eagle III (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0242:FF",
+          "desc": "Inf. &amp; Max Fuel",
+          "address": "0x0242"
+        },
+        {
+          "code": "0207:09",
+          "desc": "Missiles, Ground-Attack Phase",
+          "address": "0x0207"
+        },
+        {
+          "code": "0208:09",
+          "desc": "Missiles, Ground-Attack Phase",
+          "address": "0x0208"
+        },
+        {
+          "code": "0209:09",
+          "desc": "Large Rockets, Ground-Attack Phase",
+          "address": "0x0209"
+        },
+        {
+          "code": "020A:09",
+          "desc": "Bombs, Ground-Attack Phase",
+          "address": "0x020A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

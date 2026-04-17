@@ -1,0 +1,14 @@
+game_name=Shooting Range (USA) (Game Genie)
+game_key=shooting_range_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	level_complete_level_030d	level_complete	0x030D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_068e	level_complete	0x068E	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0608	level_complete	0x0608	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0609	level_complete	0x0609	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0639	level_complete	0x0639	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_060a	level_complete	0x060A	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_063b	level_complete	0x063B	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_060b	level_complete	0x060B	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_0302	damage_taken	0x0302	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0302	death	0x0302	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

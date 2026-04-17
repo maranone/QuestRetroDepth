@@ -1,0 +1,42 @@
+{
+  "system": "pce",
+  "normalized_title": "chewmanfu",
+  "display_name": "Chew-Man-Fu (USA)",
+  "aliases": [
+    "Chew-Man-Fu (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Chew-Man-Fu (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f0912:02",
+          "desc": "Infinite Lives",
+          "address": "0x1F0912"
+        },
+        {
+          "code": "1f00db:20",
+          "desc": "Invincibility",
+          "address": "0x1F00DB"
+        },
+        {
+          "code": "1f088b:93",
+          "desc": "Infinite Time",
+          "address": "0x1F088B"
+        },
+        {
+          "code": "1f088c:09",
+          "desc": "Infinite Time",
+          "address": "0x1F088C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,6 +1,0 @@
-game_name=MickeyMouseCastleOfIllusi
-game_key=MickeyMouseCastleOfIllusi-Genesis
-system=genesis
-integration_tier=manual
-trigger	score_0_f2ea	score	0xFFF2EA	1	uint	native	prev < curr	0.7	1	left:0.300:80
-trigger	life_lost_3_f324	life_lost	0xFFF324	1	uint	native	prev > curr	0.9	1	left:0.630:250

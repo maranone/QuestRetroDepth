@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "pinballtycoon",
+  "display_name": "Pinball Tycoon (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Pinball Tycoon (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1000F518",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200F518"
+        },
+        {
+          "code": "83000354",
+          "desc": "Always Ball 1 Of 5",
+          "address": "0x02000354"
+        },
+        {
+          "code": "830015A0",
+          "desc": "Quick Score Gain",
+          "address": "0x020015A0"
+        },
+        {
+          "code": "830015A0",
+          "desc": "Max Score",
+          "address": "0x020015A0"
+        },
+        {
+          "code": "830015A2",
+          "desc": "Max Score",
+          "address": "0x020015A2"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Pinball Tycoon (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1000F518",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200F518"
+        },
+        {
+          "code": "83000354",
+          "desc": "Always Ball 1 Of 5",
+          "address": "0x02000354"
+        },
+        {
+          "code": "830015A0",
+          "desc": "Quick Score Gain",
+          "address": "0x020015A0"
+        },
+        {
+          "code": "830015A0",
+          "desc": "Max Score",
+          "address": "0x020015A0"
+        },
+        {
+          "code": "830015A2",
+          "desc": "Max Score",
+          "address": "0x020015A2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

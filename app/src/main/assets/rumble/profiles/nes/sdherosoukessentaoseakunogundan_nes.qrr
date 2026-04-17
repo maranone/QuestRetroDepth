@@ -1,0 +1,7 @@
+game_name=SD Hero Soukessen - Taose! Aku no Gundan (Japan) (Game Genie)
+game_key=SDHeroSoukessenTaoseAkuNoGundan-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_0070	damage_taken	0x0070	2	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0070	death	0x0070	2	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_0067	score	0x0067	2	uint	little	prev < curr	0.8	1	right:0.350:60

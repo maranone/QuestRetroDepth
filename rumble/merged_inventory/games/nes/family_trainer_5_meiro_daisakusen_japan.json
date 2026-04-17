@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "familytrainer5meirodaisakusen",
+  "display_name": "Family Trainer 5 - Meiro Daisakusen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Family Trainer 5 - Meiro Daisakusen (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "07F5:18",
+          "desc": "Infinite Health",
+          "address": "0x07F5"
+        },
+        {
+          "code": "07F3:09",
+          "desc": "Infinite Time",
+          "address": "0x07F3"
+        },
+        {
+          "code": "004B:09",
+          "desc": "Unlimited Map Viewing",
+          "address": "0x004B"
+        },
+        {
+          "code": "0537:40",
+          "desc": "See Exit Location",
+          "address": "0x0537"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

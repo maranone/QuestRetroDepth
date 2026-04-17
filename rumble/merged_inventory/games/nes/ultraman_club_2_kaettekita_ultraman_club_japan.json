@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "ultramanclub2kaettekitaultramanclub",
+  "display_name": "Ultraman Club 2 - Kaettekita Ultraman Club (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ultraman Club 2 - Kaettekita Ultraman Club (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "054D:01",
+          "desc": "No Random Battles",
+          "address": "0x054D"
+        },
+        {
+          "code": "0400:64",
+          "desc": "Infinite Health 1",
+          "address": "0x0400"
+        },
+        {
+          "code": "0401:64",
+          "desc": "Infinite Health 2",
+          "address": "0x0401"
+        },
+        {
+          "code": "0402:64",
+          "desc": "Infinite Health 3",
+          "address": "0x0402"
+        },
+        {
+          "code": "00D4:FF",
+          "desc": "Quick Level Up",
+          "address": "0x00D4"
+        },
+        {
+          "code": "04B4:00",
+          "desc": "One Hit Kills",
+          "address": "0x04B4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

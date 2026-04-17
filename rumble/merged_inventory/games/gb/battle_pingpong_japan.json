@@ -1,0 +1,30 @@
+{
+  "system": "gb",
+  "normalized_title": "battlepingpong",
+  "display_name": "Battle Pingpong (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Battle Pingpong (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0114C1C1",
+          "desc": "Win Match",
+          "address": "0xC1C1"
+        },
+        {
+          "code": "0100C2C1",
+          "desc": "CPU Always In Zero",
+          "address": "0xC2C1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

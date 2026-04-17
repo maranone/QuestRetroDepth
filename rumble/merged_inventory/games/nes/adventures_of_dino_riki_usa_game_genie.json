@@ -1,0 +1,179 @@
+{
+  "system": "nes",
+  "normalized_title": "adventuresofdinoriki",
+  "display_name": "Adventures of Dino Riki (USA) (Game Genie)",
+  "aliases": [
+    "Adventures of Dino Riki (USA) (Game Genie)",
+    "Adventures of Dino Riki (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\adventuresofdinoriki_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x007D",
+        "0x04CE"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AdventuresOfDinoRiki-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x007D",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x04CE",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Adventures of Dino Riki (USA).cht",
+      "total_cheat_rows": 40,
+      "raw_entry_count": 56,
+      "distinct_address_count": 40,
+      "sample_raw_entries": [
+        {
+          "code": "SZEETTVG",
+          "desc": "Start with infinite lives",
+          "address": "0x06AE"
+        },
+        {
+          "code": "AESEPGZA",
+          "desc": "Start with 1 life",
+          "address": "0x0489"
+        },
+        {
+          "code": "IESEPGZA",
+          "desc": "Start with 6 lives",
+          "address": "0x0489"
+        },
+        {
+          "code": "AESEPGZE",
+          "desc": "Start with 9 lives",
+          "address": "0x0489"
+        },
+        {
+          "code": "SZUENZVG",
+          "desc": "Start with infinite life hearts",
+          "address": "0x02AF"
+        },
+        {
+          "code": "GESEIGZA",
+          "desc": "Start with 4 life hearts",
+          "address": "0x048D"
+        },
+        {
+          "code": "AESEIGZE",
+          "desc": "Start with 8 life hearts",
+          "address": "0x048D"
+        },
+        {
+          "code": "VKEAPISA",
+          "desc": "Start Macho (big), stay Macho",
+          "address": "0x0549"
+        },
+        {
+          "code": "VVEAPISA",
+          "desc": "Start as Macho-Riki",
+          "address": "0x0569"
+        },
+        {
+          "code": "IEVASPIG",
+          "desc": "Once Macho, stay Macho",
+          "address": "0x010D"
+        },
+        {
+          "code": "0089:02",
+          "desc": "Infinite Energy",
+          "address": "0x0089"
+        },
+        {
+          "code": "007D:02",
+          "desc": "Infinite Lives",
+          "address": "0x007D"
+        },
+        {
+          "code": "0057:00",
+          "desc": "Partial Invincibility",
+          "address": "0x0057"
+        },
+        {
+          "code": "009D:01",
+          "desc": "Weapon Modifier",
+          "address": "0x009D"
+        },
+        {
+          "code": "002F:02",
+          "desc": "Speed Modifier",
+          "address": "0x002F"
+        },
+        {
+          "code": "ATLAEZ",
+          "desc": "Invincibility",
+          "address": "0x0260"
+        },
+        {
+          "code": "AEKAOPZA",
+          "desc": "Don't Fall In Pits",
+          "address": "0x0109"
+        },
+        {
+          "code": "009A:01",
+          "desc": "Always Be Macho Riki",
+          "address": "0x009A"
+        },
+        {
+          "code": "009E:01",
+          "desc": "Always Have Wings",
+          "address": "0x009E"
+        },
+        {
+          "code": "KUEAAIEE",
+          "desc": "Start Giant",
+          "address": "0x0538"
+        },
+        {
+          "code": "ATEEVXOG",
+          "desc": "Be Faster After Falling",
+          "address": "0x02EE"
+        },
+        {
+          "code": "LASAVPPA",
+          "desc": "Be Faster After Falling",
+          "address": "0x010E"
+        },
+        {
+          "code": "AVSAKOOZ",
+          "desc": "Stay Giant After Falling",
+          "address": "0x016C"
+        },
+        {
+          "code": "ATSEOOOZ",
+          "desc": "Don't Lose Wings After Falling",
+          "address": "0x01E9"
+        },
+        {
+          "code": "ATEEVXOG",
+          "desc": "Invincible",
+          "address": "0x02EE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "system": "pce",
+  "normalized_title": "chasehq",
+  "display_name": "Chase H.Q. (USA)",
+  "aliases": [
+    "Chase H.Q. (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Chase H.Q. (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f07a7:03",
+          "desc": "Infinite Turbo",
+          "address": "0x1F07A7"
+        },
+        {
+          "code": "1f00a3:ff",
+          "desc": "Max Speed",
+          "address": "0x1F00A3"
+        },
+        {
+          "code": "1f0053:50",
+          "desc": "Infinite Time",
+          "address": "0x1F0053"
+        },
+        {
+          "code": "1f07d2:14",
+          "desc": "Boss Has No Energy",
+          "address": "0x1F07D2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

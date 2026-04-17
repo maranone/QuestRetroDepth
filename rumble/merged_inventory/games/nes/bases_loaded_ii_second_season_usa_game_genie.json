@@ -1,0 +1,72 @@
+{
+  "system": "nes",
+  "normalized_title": "basesloadediisecondseason",
+  "display_name": "Bases Loaded II - Second Season (USA) (Game Genie)",
+  "aliases": [
+    "Bases Loaded II - Second Season (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bases Loaded II - Second Season (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "SXNAXOVV",
+          "desc": "Strikes aren't counted",
+          "address": "0x012A"
+        },
+        {
+          "code": "SZEEXXVV",
+          "desc": "Balls aren't counted",
+          "address": "0x02AA"
+        },
+        {
+          "code": "SZEESXVV",
+          "desc": "Balls aren't counted",
+          "address": "0x02AD"
+        },
+        {
+          "code": "SZOEVXVV",
+          "desc": "Outs aren't counted",
+          "address": "0x02AE"
+        },
+        {
+          "code": "PAOEUZZA",
+          "desc": "Only 2 outs allowed",
+          "address": "0x028B"
+        },
+        {
+          "code": "AAOEUZZA",
+          "desc": "Only 1 out allowed",
+          "address": "0x028B"
+        },
+        {
+          "code": "05F3:FF",
+          "desc": "High Score P1",
+          "address": "0x05F3"
+        },
+        {
+          "code": "05F4:00",
+          "desc": "Runs In The Inning Modifier P1",
+          "address": "0x05F4"
+        },
+        {
+          "code": "0354:00",
+          "desc": "Strikes Modifier",
+          "address": "0x0354"
+        },
+        {
+          "code": "0356:00",
+          "desc": "Outs Modifier",
+          "address": "0x0356"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

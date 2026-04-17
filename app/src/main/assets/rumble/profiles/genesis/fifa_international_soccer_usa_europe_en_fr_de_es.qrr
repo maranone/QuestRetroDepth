@@ -1,0 +1,6 @@
+game_name=FIFA International Soccer (USA, Europe) (En,Fr,De,Es)
+game_key=fifa_international_soccer_usa_europe_en_fr_de_es
+system=genesis
+integration_tier=contrib
+trigger	score_score_fffc47	score	0xFFFC47	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_fffc48	score	0xFFFC48	1	uint	little	prev < curr	0.8	1	right:0.350:60

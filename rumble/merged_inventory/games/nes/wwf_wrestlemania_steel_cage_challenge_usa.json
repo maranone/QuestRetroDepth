@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "wwfwrestlemaniasteelcagechallenge",
+  "display_name": "WWF Wrestlemania Steel Cage Challenge (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\WWF Wrestlemania Steel Cage Challenge (USA).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "SUOAKKSE",
+          "desc": "Player 2 Loses On 1 Count Outside Ring... Player 2 Can't Lose Match Via Pinfall",
+          "address": "0x043C"
+        },
+        {
+          "code": "EINANGEY",
+          "desc": "Player 2 Loses On A 1 Count",
+          "address": "0x045F"
+        },
+        {
+          "code": "VZNAOKVK",
+          "desc": "Player 2 Cannot Lose By Pinfall Or Countout",
+          "address": "0x0429"
+        },
+        {
+          "code": "SUNEEUSE",
+          "desc": "Player 1 Loses On 1 Count Outside Ring... Player 1 Can't Lose Match Via Pinfall",
+          "address": "0x03B8"
+        },
+        {
+          "code": "ESSEULEY",
+          "desc": "Player 1 Loses On A 1 Count",
+          "address": "0x03DB"
+        },
+        {
+          "code": "VXSASUVK",
+          "desc": "Player 1 Cannot Lose By Pinfall Or Countout",
+          "address": "0x032D"
+        },
+        {
+          "code": "00B5:00",
+          "desc": "P1 Character Modifier",
+          "address": "0x00B5"
+        },
+        {
+          "code": "00B7:00",
+          "desc": "P2 Character Modifier",
+          "address": "0x00B7"
+        },
+        {
+          "code": "0504:FF",
+          "desc": "P1 Infinite Health",
+          "address": "0x0504"
+        },
+        {
+          "code": "0506:00",
+          "desc": "P2 Health Modifier",
+          "address": "0x0506"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

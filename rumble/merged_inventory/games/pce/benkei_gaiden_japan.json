@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "benkeigaiden",
+  "display_name": "Benkei Gaiden (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Benkei Gaiden (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f00b7:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F00B7"
+        },
+        {
+          "code": "1f00b8:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F00B8"
+        },
+        {
+          "code": "1f0201:ff",
+          "desc": "Stats Current Health",
+          "address": "0x1F0201"
+        },
+        {
+          "code": "1f02c3:ff",
+          "desc": "Stats Max Health",
+          "address": "0x1F02C3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

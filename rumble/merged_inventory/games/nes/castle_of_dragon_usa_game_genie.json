@@ -1,0 +1,82 @@
+{
+  "system": "nes",
+  "normalized_title": "castleofdragon",
+  "display_name": "Castle of Dragon (USA) (Game Genie)",
+  "aliases": [
+    "Castle of Dragon (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Castle of Dragon (USA).cht",
+      "total_cheat_rows": 26,
+      "raw_entry_count": 12,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "PEVPULAP",
+          "desc": "Stop skeletons from fighting",
+          "address": "0x030B"
+        },
+        {
+          "code": "030A:64",
+          "desc": "Infinite Energy",
+          "address": "0x030A"
+        },
+        {
+          "code": "0536:80",
+          "desc": "Max Out Energy Bar",
+          "address": "0x0536"
+        },
+        {
+          "code": "0512:00",
+          "desc": "Weapon/Armor Modifier",
+          "address": "0x0512"
+        },
+        {
+          "code": "032A:00",
+          "desc": "No Enemies",
+          "address": "0x032A"
+        },
+        {
+          "code": "0343:00",
+          "desc": "No Enemies",
+          "address": "0x0343"
+        },
+        {
+          "code": "0353:00",
+          "desc": "No Enemies",
+          "address": "0x0353"
+        },
+        {
+          "code": "0363:00",
+          "desc": "No Enemies",
+          "address": "0x0363"
+        },
+        {
+          "code": "030A:3F",
+          "desc": "Infinite Health",
+          "address": "0x030A"
+        },
+        {
+          "code": "0536:3F",
+          "desc": "Fake Infinite Upgrades",
+          "address": "0x0536"
+        },
+        {
+          "code": "052A:03",
+          "desc": "Stage Modifier",
+          "address": "0x052A"
+        },
+        {
+          "code": "032A:00",
+          "desc": "Some Enemies Automatically Die",
+          "address": "0x032A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

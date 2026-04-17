@@ -149,12 +149,13 @@ public:
         bool upscale = false;
         bool ambilight = true;
         bool passthrough = false;
-        bool depthmap = false;
+        DepthMode depth_mode = DepthMode::Off;
         bool layers_3d = false;
         float gamma = 1.08f;
         float contrast = 0.85f;
         float saturation = 0.80f;
         float brightness = 1.00f;
+        bool perspective_comp = true;
     };
 
     struct QuickLayerPreset {
@@ -163,6 +164,10 @@ public:
         std::vector<bool> enabled;
         std::vector<bool> ambilight;
     };
+
+    void homebrew_data_ready()        { m_hw_loading = false;     m_hw_dirty = true; }
+    void homebrew_download_complete() { m_hw_downloading = false; m_hw_dirty = true; }
+    void set_homebrew_feed(int idx)   { m_hw_feed = idx < 0 ? 0 : idx; m_hw_loading = true; m_hw_dirty = true; m_hw_view = 0; m_hw_hovered = -1; m_hw_scroll = 0; }
 
 private:
     void set_status(const std::string& s);
@@ -207,6 +212,7 @@ private:
     void rebuild_code_panel_texture();         // call Kotlin → upload GL texture
     void rebuild_ctrlmap_panel_texture();      // call Kotlin → upload GL texture
     void rebuild_help_panel_texture();         // call Kotlin → upload GL texture
+    void rebuild_homebrew_panel_texture();     // call Kotlin → upload GL texture
     std::string get_settings_dir();            // call Kotlin → returns settings directory path
     void save_settings(bool game_scope);       // save current state to disk
     void load_settings(bool game_scope);       // load state from disk (if file exists)
@@ -282,6 +288,7 @@ private:
     static constexpr int k_panel_code       = 5;
     static constexpr int k_panel_ctrlmap    = 6;
     static constexpr int k_panel_quick_edit = 7;
+    static constexpr int k_panel_homebrew  = 8;
     XrPosef m_main_menu_pose       = {{0,0,0,1},{0,0,-1}};
     XrPosef m_quick_panel_pose     = {{0,0,0,1},{0,0,-1}};
     XrPosef m_panel_pose           = {{0,0,0,1},{0,0,-1}}; // browser (centre)
@@ -292,8 +299,10 @@ private:
     XrPosef m_ctrlmap_panel_pose   = {{0,0,0,1},{0,0,-1}};
     bool    m_ctrlmap_mode         = false; // true = showing ctrlmap panel only
 
+    XrPosef m_homebrew_panel_pose  = {{0,0,0,1},{0,0,-1}};
+
     // Main menu / standalone panel tracking
-    // 0 = main menu, 1 = browser, 2 = layers, 3 = settings, 4 = save states, 5 = code, 6 = ctrlmap, 7 = quick edit
+    // 0 = main menu, 1 = browser, 2 = layers, 3 = settings, 4 = save states, 5 = code, 6 = ctrlmap, 7 = quick edit, 8 = homebrew
     int     m_active_sub_panel     = 0;
 
     // Multi-panel laser state (menu mode — right controller)
@@ -312,6 +321,19 @@ private:
     PanelLayout m_save_state_panel_layout;
     PanelLayout m_code_panel_layout;
     PanelLayout m_ctrlmap_panel_layout;
+    PanelLayout m_homebrew_panel_layout;
+
+    // ---------- Homebrew panel ----------
+    GLuint m_hw_tex         = 0;
+    int    m_hw_view        = 0;   // 0 = list, 1 = detail
+    int    m_hw_hovered     = -1;
+    int    m_hw_scroll      = 0;
+    int    m_hw_selected    = -1;
+    int    m_hw_feed        = 0;
+    bool   m_hw_dirty       = true;
+    bool   m_hw_loading     = false;
+    bool   m_hw_downloading = false;
+    XrTime m_last_hw_fire   = 0;
 
     // Edit-mode laser state
     XrVector3f  m_edit_laser_l_origin = {0,0,0};

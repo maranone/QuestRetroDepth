@@ -1,0 +1,28 @@
+{
+  "system": "gbc",
+  "normalized_title": "xmenmutantwars",
+  "display_name": "X-Men - Mutant Wars (USA, Europe) (Game Genie)",
+  "aliases": [
+    "X-Men - Mutant Wars (USA, Europe) (GameShark)",
+    "X-Men - Mutant Wars (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\X-Men - Mutant Wars (USA, Europe).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0114D8D4",
+          "desc": "Infinite XP",
+          "address": "0xD8D4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

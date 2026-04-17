@@ -1,0 +1,6 @@
+game_name=Bram Stoker's Dracula (USA, Europe) (GameShark)
+game_key=bram_stoker_s_dracula_usa_europe_gameshark
+system=gb
+integration_tier=contrib
+trigger	pickup_coins_dec6	pickup	0xDEC6	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_dfc0	level_complete	0xDFC0	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

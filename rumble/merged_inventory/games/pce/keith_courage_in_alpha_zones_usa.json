@@ -1,0 +1,45 @@
+{
+  "system": "pce",
+  "normalized_title": "keithcourageinalphazones",
+  "display_name": "Keith Courage in Alpha Zones (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Keith Courage in Alpha Zones (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1f00c8:5f",
+          "desc": "Infinite Energy",
+          "address": "0x1F00C8"
+        },
+        {
+          "code": "1f0048:02",
+          "desc": "Invincibility",
+          "address": "0x1F0048"
+        },
+        {
+          "code": "1f00cb:63",
+          "desc": "Infinite Bolt Bombs",
+          "address": "0x1F00CB"
+        },
+        {
+          "code": "1f00cd:27",
+          "desc": "Max Money",
+          "address": "0x1F00CD"
+        },
+        {
+          "code": "1f00ce:63",
+          "desc": "Max Money",
+          "address": "0x1F00CE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

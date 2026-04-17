@@ -1,0 +1,7 @@
+game_name=Nobunaga's Ambition (USA) (Game Genie)
+game_key=nobunaga_s_ambition_usa_game_genie
+system=gb
+integration_tier=contrib
+trigger	pickup_coins_c3d2	pickup	0xC3D2	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_d1d2	pickup	0xD1D2	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_dfd2	pickup	0xDFD2	1	uint	little	prev != curr	0.8	1	right:0.250:18

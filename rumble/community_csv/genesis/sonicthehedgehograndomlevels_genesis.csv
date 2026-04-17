@@ -2,4 +2,4 @@
 # game_name=SonicTheHedgehogRandomLevels
 # match_names=sonicthehedgehograndomlevels|sonicthehedgehograndomlevelsgenesis
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-game_over_gameover_ffd038,0xFFD038,1,uint,became_nonzero,,both,1.000,normal,0,1000,400,100,
+game_over_gameover_ffd038,0xFFD038,1,uint,became_nonzero,,both,1.000,heartbeat,0,1000,400,100,

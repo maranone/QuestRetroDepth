@@ -1,0 +1,138 @@
+{
+  "system": "gba",
+  "normalized_title": "advancegt2",
+  "display_name": "Advance GT2 (Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Advance GT2 (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10002430",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002430"
+        },
+        {
+          "code": "3300581E",
+          "desc": "Always 1st Place",
+          "address": "0x0200581E"
+        },
+        {
+          "code": "83006228",
+          "desc": "Low Timer",
+          "address": "0x02006228"
+        },
+        {
+          "code": "8300622A",
+          "desc": "Low Timer",
+          "address": "0x0200622A"
+        },
+        {
+          "code": "43002130",
+          "desc": "Unlock All Cars",
+          "address": "0x02002130"
+        },
+        {
+          "code": "3300213C",
+          "desc": "Unlock All Cars",
+          "address": "0x0200213C"
+        },
+        {
+          "code": "83002680",
+          "desc": "Unlock All Tuning Parts",
+          "address": "0x02002680"
+        },
+        {
+          "code": "83002682",
+          "desc": "Unlock All Tuning Parts",
+          "address": "0x02002682"
+        },
+        {
+          "code": "8300268C",
+          "desc": "Unlock All Extras",
+          "address": "0x0200268C"
+        },
+        {
+          "code": "8300268E",
+          "desc": "Unlock All Extras",
+          "address": "0x0200268E"
+        },
+        {
+          "code": "43002110",
+          "desc": "Unlock All Tracks",
+          "address": "0x02002110"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Advance GT2 (Japan) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "10002430",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002430"
+        },
+        {
+          "code": "3300581E",
+          "desc": "Always 1st Place",
+          "address": "0x0200581E"
+        },
+        {
+          "code": "83006228",
+          "desc": "Low Timer",
+          "address": "0x02006228"
+        },
+        {
+          "code": "8300622A",
+          "desc": "Low Timer",
+          "address": "0x0200622A"
+        },
+        {
+          "code": "43002130",
+          "desc": "Unlock All Cars",
+          "address": "0x02002130"
+        },
+        {
+          "code": "3300213C",
+          "desc": "Unlock All Cars",
+          "address": "0x0200213C"
+        },
+        {
+          "code": "83002680",
+          "desc": "Unlock All Tuning Parts",
+          "address": "0x02002680"
+        },
+        {
+          "code": "83002682",
+          "desc": "Unlock All Tuning Parts",
+          "address": "0x02002682"
+        },
+        {
+          "code": "8300268C",
+          "desc": "Unlock All Extras",
+          "address": "0x0200268C"
+        },
+        {
+          "code": "8300268E",
+          "desc": "Unlock All Extras",
+          "address": "0x0200268E"
+        },
+        {
+          "code": "43002110",
+          "desc": "Unlock All Tracks",
+          "address": "0x02002110"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

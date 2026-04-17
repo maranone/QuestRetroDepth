@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "shortordereggsplode",
+  "display_name": "Short Order + Eggsplode! (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Short Order + Eggsplode! (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "004D:63",
+          "desc": "Level Select",
+          "address": "0x004D"
+        },
+        {
+          "code": "0051:03",
+          "desc": "Infinite Misses",
+          "address": "0x0051"
+        },
+        {
+          "code": "0051:02",
+          "desc": "Infinite Misses",
+          "address": "0x0051"
+        },
+        {
+          "code": "0051:02",
+          "desc": "Infinite Misses",
+          "address": "0x0051"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,9 @@
+game_name=Dahna - Megami Tanjou (Japan)
+game_key=dahna_megami_tanjou_japan
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff055a	damage_taken	0xFF055A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff055a	death	0xFF055A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff6b44	damage_taken	0xFF6B44	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff6b44	death	0xFF6B44	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_ff056a	level_complete	0xFF056A	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

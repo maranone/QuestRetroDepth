@@ -1,0 +1,20 @@
+{
+  "reward": {
+    "variables": {
+      "score": {
+        "reward": 1
+      }
+    }
+  },
+  "done": {
+    "condition": "all",
+    "variables": {
+      "lives": {
+        "op": "zero"
+      },
+      "health": {
+        "op": "zero"
+      }
+    }
+  }
+}

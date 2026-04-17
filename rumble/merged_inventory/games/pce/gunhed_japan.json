@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "gunhed",
+  "display_name": "Gunhed (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Gunhed (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f037d:09",
+          "desc": "Infinite Lives",
+          "address": "0x1F037D"
+        },
+        {
+          "code": "1f0381:09",
+          "desc": "Infinite Bombs",
+          "address": "0x1F0381"
+        },
+        {
+          "code": "1f0310:02",
+          "desc": "Invincibility",
+          "address": "0x1F0310"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

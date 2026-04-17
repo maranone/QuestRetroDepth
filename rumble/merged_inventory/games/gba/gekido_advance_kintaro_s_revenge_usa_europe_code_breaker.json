@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "gekidoadvancekintarosrevenge",
+  "display_name": "Gekido Advance - Kintaro's Revenge (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Gekido Advance - Kintaro's Revenge (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1000F8E2",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200F8E2"
+        },
+        {
+          "code": "330021C4",
+          "desc": "Invincible",
+          "address": "0x020021C4"
+        },
+        {
+          "code": "330021A4",
+          "desc": "Infinite Health",
+          "address": "0x020021A4"
+        },
+        {
+          "code": "330021A0",
+          "desc": "Infinite Special Meter",
+          "address": "0x020021A0"
+        },
+        {
+          "code": "33000BE0",
+          "desc": "Infinite Continues",
+          "address": "0x02000BE0"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select+Jump For Mega Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "33002160",
+          "desc": "Press Select+Jump For Mega Jump",
+          "address": "0x02002160"
+        },
+        {
+          "code": "33000BD1",
+          "desc": "Always Have Powerup/Down Modifier",
+          "address": "0x02000BD1"
+        },
+        {
+          "code": "3300081C",
+          "desc": "Always Have Powerup/Down Modifier",
+          "address": "0x0200081C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Gekido Advance - Kintaro's Revenge (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1000F8E2",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200F8E2"
+        },
+        {
+          "code": "330021C4",
+          "desc": "Invincible",
+          "address": "0x020021C4"
+        },
+        {
+          "code": "330021A4",
+          "desc": "Infinite Health",
+          "address": "0x020021A4"
+        },
+        {
+          "code": "330021A0",
+          "desc": "Infinite Special Meter",
+          "address": "0x020021A0"
+        },
+        {
+          "code": "33000BE0",
+          "desc": "Infinite Continues",
+          "address": "0x02000BE0"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select+Jump For Mega Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "33002160",
+          "desc": "Press Select+Jump For Mega Jump",
+          "address": "0x02002160"
+        },
+        {
+          "code": "33000BD1",
+          "desc": "Always Have Powerup/Down Modifier",
+          "address": "0x02000BD1"
+        },
+        {
+          "code": "3300081C",
+          "desc": "Always Have Powerup/Down Modifier",
+          "address": "0x0200081C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

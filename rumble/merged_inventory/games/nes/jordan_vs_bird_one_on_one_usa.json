@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "jordanvsbirdoneonone",
+  "display_name": "Jordan vs Bird - One on One (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Jordan vs Bird - One on One (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0626:63",
+          "desc": "Infinite Shoot Time",
+          "address": "0x0626"
+        },
+        {
+          "code": "0628:FF",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x0628"
+        },
+        {
+          "code": "0629:FF",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x0629"
+        },
+        {
+          "code": "062A:00",
+          "desc": "Score Modifier (Player 1)",
+          "address": "0x062A"
+        },
+        {
+          "code": "062C:00",
+          "desc": "Score Modifier (Player 2)",
+          "address": "0x062C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

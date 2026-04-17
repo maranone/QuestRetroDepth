@@ -1,0 +1,95 @@
+{
+  "system": "nes",
+  "normalized_title": "superchinese3",
+  "display_name": "Super Chinese 3 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Chinese 3 (Japan).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 15,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "04E3:80",
+          "desc": "Infinite Energy",
+          "address": "0x04E3"
+        },
+        {
+          "code": "03C3:80",
+          "desc": "Infinite Energy In Rpg Mode",
+          "address": "0x03C3"
+        },
+        {
+          "code": "03B4:00",
+          "desc": "Money Modifier",
+          "address": "0x03B4"
+        },
+        {
+          "code": "03B5:00",
+          "desc": "Money Modifier",
+          "address": "0x03B5"
+        },
+        {
+          "code": "03FF:09",
+          "desc": "Max \u00a5",
+          "address": "0x03FF"
+        },
+        {
+          "code": "03B7:00",
+          "desc": "Experience Modifier",
+          "address": "0x03B7"
+        },
+        {
+          "code": "03B8:00",
+          "desc": "Experience Modifier",
+          "address": "0x03B8"
+        },
+        {
+          "code": "03B9:09",
+          "desc": "Max Level After 1 Battle",
+          "address": "0x03B9"
+        },
+        {
+          "code": "03BB:00",
+          "desc": "HP Modifier",
+          "address": "0x03BB"
+        },
+        {
+          "code": "03BC:00",
+          "desc": "NP Modifier",
+          "address": "0x03BC"
+        },
+        {
+          "code": "03BD:00",
+          "desc": "1st Stat Modifier",
+          "address": "0x03BD"
+        },
+        {
+          "code": "03BE:00",
+          "desc": "2nd Stat Modifier",
+          "address": "0x03BE"
+        },
+        {
+          "code": "03BF:00",
+          "desc": "3rd Stat Modifier",
+          "address": "0x03BF"
+        },
+        {
+          "code": "03F6:00",
+          "desc": "Scene Modifier",
+          "address": "0x03F6"
+        },
+        {
+          "code": "0435:00",
+          "desc": "Automatically Win Battles",
+          "address": "0x0435"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

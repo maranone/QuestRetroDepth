@@ -1,0 +1,15 @@
+game_name=Pirates! Gold (USA) (Action Replay)
+game_key=pirates_gold_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ff01e8	damage_taken	0xFF01E8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff01e8	death	0xFF01E8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff12fa	damage_taken	0xFF12FA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff12fa	death	0xFF12FA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ff69be	damage_taken	0xFF69BE	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ff69be	death	0xFF69BE	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_ff01e0	pickup	0xFF01E0	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_ff69de	enemy_defeated	0xFF69DE	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	pickup_coins_fffe1c	pickup	0xFFFE1C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_fffe3a	pickup	0xFFFE3A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_ffff20	pickup	0xFFFF20	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,8 @@
+game_name=Cacoma Knight (Japan)
+game_key=cacoma_knight_japan
+system=snes
+integration_tier=contrib
+trigger	level_complete_level_0e2e	level_complete	0x7E0E2E	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0e2f	level_complete	0x7E0E2F	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_0e4c	life_lost	0x7E0E4C	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0e4c	life_gained	0x7E0E4C	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

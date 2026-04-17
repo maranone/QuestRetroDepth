@@ -1,0 +1,10 @@
+game_name=Goal! (USA)
+game_key=goal_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_04f9	score	0x04F9	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04fa	score	0x04FA	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04fb	score	0x04FB	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04fc	score	0x04FC	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04fd	score	0x04FD	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_04fe	score	0x04FE	1	uint	little	prev < curr	0.8	1	right:0.350:60

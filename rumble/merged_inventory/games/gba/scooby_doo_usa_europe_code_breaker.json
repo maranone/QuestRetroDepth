@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "scoobydoo",
+  "display_name": "Scooby-Doo (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Scooby-Doo (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10008A56",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02008A56"
+        },
+        {
+          "code": "8201FAC0",
+          "desc": "Scooby/Shaggy Infinite Health",
+          "address": "0x0201FAC0"
+        },
+        {
+          "code": "8201FAC2",
+          "desc": "Velma/Fred Infinite Health",
+          "address": "0x0201FAC2"
+        },
+        {
+          "code": "8201FAC4",
+          "desc": "Shaggy Stamina/Daphne Infinite Health",
+          "address": "0x0201FAC4"
+        },
+        {
+          "code": "8201FAC8",
+          "desc": "LFred/Daphne Stamina",
+          "address": "0x0201FAC8"
+        },
+        {
+          "code": "8201F9E8",
+          "desc": "Selma Stamina",
+          "address": "0x0201F9E8"
+        },
+        {
+          "code": "8201FAD4",
+          "desc": "Have 100 Tokens",
+          "address": "0x0201FAD4"
+        },
+        {
+          "code": "8201FAE2",
+          "desc": "Have Mojo Balls",
+          "address": "0x0201FAE2"
+        },
+        {
+          "code": "82001804",
+          "desc": "Infinite Time On Chests/Mini Games",
+          "address": "0x02001804"
+        },
+        {
+          "code": "82001074",
+          "desc": "Infinite Tries On Musical Mayhem (Timer Must Be On)",
+          "address": "0x02001074"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Scooby-Doo (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10008A56",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02008A56"
+        },
+        {
+          "code": "8201FAC0",
+          "desc": "Scooby/Shaggy Infinite Health",
+          "address": "0x0201FAC0"
+        },
+        {
+          "code": "8201FAC2",
+          "desc": "Velma/Fred Infinite Health",
+          "address": "0x0201FAC2"
+        },
+        {
+          "code": "8201FAC4",
+          "desc": "Shaggy Stamina/Daphne Infinite Health",
+          "address": "0x0201FAC4"
+        },
+        {
+          "code": "8201FAC8",
+          "desc": "LFred/Daphne Stamina",
+          "address": "0x0201FAC8"
+        },
+        {
+          "code": "8201F9E8",
+          "desc": "Selma Stamina",
+          "address": "0x0201F9E8"
+        },
+        {
+          "code": "8201FAD4",
+          "desc": "Have 100 Tokens",
+          "address": "0x0201FAD4"
+        },
+        {
+          "code": "8201FAE2",
+          "desc": "Have Mojo Balls",
+          "address": "0x0201FAE2"
+        },
+        {
+          "code": "82001804",
+          "desc": "Infinite Time On Chests/Mini Games",
+          "address": "0x02001804"
+        },
+        {
+          "code": "82001074",
+          "desc": "Infinite Tries On Musical Mayhem (Timer Must Be On)",
+          "address": "0x02001074"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

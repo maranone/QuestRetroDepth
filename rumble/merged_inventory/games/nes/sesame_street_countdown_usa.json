@@ -1,0 +1,25 @@
+{
+  "system": "nes",
+  "normalized_title": "sesamestreetcountdown",
+  "display_name": "Sesame Street - Countdown (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Sesame Street - Countdown (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "045C:00",
+          "desc": "Lightning Bolts Modifier (In Count's Game)",
+          "address": "0x045C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,22 @@
+game_name=Niji no Silk Road (Japan)
+game_key=niji_no_silk_road_japan
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_03f8	pickup	0x03F8	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_03f9	pickup	0x03F9	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_0417	damage_taken	0x0417	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0417	death	0x0417	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0418	damage_taken	0x0418	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0418	death	0x0418	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0419	damage_taken	0x0419	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0419	death	0x0419	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_041a	damage_taken	0x041A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_041a	death	0x041A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_03e7	pickup	0x03E7	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_03e8	pickup	0x03E8	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_03e9	pickup	0x03E9	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_03ea	pickup	0x03EA	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_03eb	pickup	0x03EB	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_03ec	pickup	0x03EC	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_03ed	pickup	0x03ED	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_03ee	pickup	0x03EE	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,99 @@
+{
+  "system": "nes",
+  "normalized_title": "dragonspiritnewlegend",
+  "display_name": "Dragon Spirit - The New Legend (USA) (Game Genie)",
+  "aliases": [
+    "Dragon Spirit - The New Legend (USA) (Game Genie)",
+    "Dragon Spirit - The New Legend (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\dragonspiritthenewlegend_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x003D",
+        "0x0051"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DragonSpiritTheNewLegend-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0051",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x003D",
+          "type": "<n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dragon Spirit - The New Legend (USA).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "0054:01",
+          "desc": "Blue Dragon Mode",
+          "address": "0x0054"
+        },
+        {
+          "code": "0054:00",
+          "desc": "Gold Dragon Mode",
+          "address": "0x0054"
+        },
+        {
+          "code": "0053:66",
+          "desc": "Infinite Health",
+          "address": "0x0053"
+        },
+        {
+          "code": "004C:0E",
+          "desc": "Strong Green Dragon",
+          "address": "0x004C"
+        },
+        {
+          "code": "004B:2B",
+          "desc": "3 Heads & Invincible",
+          "address": "0x004B"
+        },
+        {
+          "code": "0588:00",
+          "desc": "Invincible",
+          "address": "0x0588"
+        },
+        {
+          "code": "0647:00",
+          "desc": "1 Hit Kills Bosses",
+          "address": "0x0647"
+        },
+        {
+          "code": "0051:09",
+          "desc": "Infinite Lives",
+          "address": "0x0051"
+        },
+        {
+          "code": "0055:00",
+          "desc": "Area Modifier",
+          "address": "0x0055"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

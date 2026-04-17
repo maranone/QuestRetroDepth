@@ -1,0 +1,37 @@
+{
+  "system": "gb",
+  "normalized_title": "buraifighterdeluxe",
+  "display_name": "Burai Fighter Deluxe (USA, Europe) (Xploder)",
+  "aliases": [
+    "Burai Fighter Deluxe (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Burai Fighter Deluxe (USA, Europe).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0104C9C0",
+          "desc": "Infinite Lives",
+          "address": "0xC9C0"
+        },
+        {
+          "code": "0100DBC0",
+          "desc": "No Enemies",
+          "address": "0xDBC0"
+        },
+        {
+          "code": "012ADDEE",
+          "desc": "Unendlich Leben",
+          "address": "0xDDEE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

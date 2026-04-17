@@ -1,0 +1,6 @@
+game_name=NBA All-Star Challenge (USA, Europe) (Action Replay)
+game_key=nba_all_star_challenge_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff90be	score	0xFF90BE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff90ca	score	0xFF90CA	1	uint	little	prev < curr	0.8	1	right:0.350:60

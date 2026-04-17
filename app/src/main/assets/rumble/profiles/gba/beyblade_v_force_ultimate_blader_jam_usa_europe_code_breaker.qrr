@@ -1,0 +1,6 @@
+game_name=Beyblade V-Force - Ultimate Blader Jam (USA, Europe) (Code Breaker)
+game_key=beyblade_v_force_ultimate_blader_jam_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	level_complete_level_0200f3d8	level_complete	0x0200F3D8	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0200f4dc	level_complete	0x0200F4DC	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

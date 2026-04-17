@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "chuukataisen",
+  "display_name": "Chuuka Taisen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Chuuka Taisen (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "00A8:03",
+          "desc": "Infinite Lives",
+          "address": "0x00A8"
+        },
+        {
+          "code": "00A2:00",
+          "desc": "Invincibility",
+          "address": "0x00A2"
+        },
+        {
+          "code": "SXVELGVG",
+          "desc": "Infinite Lives",
+          "address": "0x04AB"
+        },
+        {
+          "code": "00A0:00",
+          "desc": "Fly Through Barriers",
+          "address": "0x00A0"
+        },
+        {
+          "code": "00A2:01",
+          "desc": "Autofire Invincible",
+          "address": "0x00A2"
+        },
+        {
+          "code": "00A3:12",
+          "desc": "Shot Modifier 00-12",
+          "address": "0x00A3"
+        },
+        {
+          "code": "00BD:06",
+          "desc": "Round Modifier 00-06",
+          "address": "0x00BD"
+        },
+        {
+          "code": "GZZAKP",
+          "desc": "Autofire",
+          "address": "0x0124"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "ghostngoblins",
+  "display_name": "Ghost'n Goblins (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ghost'n Goblins (Europe).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "PAVEPOZE",
+          "desc": "Weapon 1 In Level 5 Is The Cross",
+          "address": "0x0189"
+        },
+        {
+          "code": "PEXEPPTE",
+          "desc": "Weapon 2 In Level 5 Is The Cross",
+          "address": "0x0189"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

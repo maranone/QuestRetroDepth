@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "madoolanotsubasa",
+  "display_name": "Madoola no Tsubasa (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Madoola no Tsubasa (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0099:20",
+          "desc": "Infinite Energy",
+          "address": "0x0099"
+        },
+        {
+          "code": "009A:20",
+          "desc": "Infinite Energy",
+          "address": "0x009A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

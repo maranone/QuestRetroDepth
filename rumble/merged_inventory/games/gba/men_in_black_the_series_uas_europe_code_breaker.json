@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "meninblackseries",
+  "display_name": "Men in Black - The Series (UAS, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Men in Black - The Series (UAS, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "100004D8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020004D8"
+        },
+        {
+          "code": "83000A8A",
+          "desc": "Infinite Health",
+          "address": "0x02000A8A"
+        },
+        {
+          "code": "83005DCC",
+          "desc": "Infinite Lives",
+          "address": "0x02005DCC"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Men in Black - The Series (UAS, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "100004D8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020004D8"
+        },
+        {
+          "code": "83000A8A",
+          "desc": "Infinite Health",
+          "address": "0x02000A8A"
+        },
+        {
+          "code": "83005DCC",
+          "desc": "Infinite Lives",
+          "address": "0x02005DCC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

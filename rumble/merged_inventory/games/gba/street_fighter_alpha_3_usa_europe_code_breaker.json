@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "streetfighteralpha3",
+  "display_name": "Street Fighter Alpha 3 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Street Fighter Alpha 3 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1002CF80",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202CF80"
+        },
+        {
+          "code": "320064E8",
+          "desc": "Unlock All Modes",
+          "address": "0x020064E8"
+        },
+        {
+          "code": "320064E9",
+          "desc": "Unlock All Fighters",
+          "address": "0x020064E9"
+        },
+        {
+          "code": "82006500",
+          "desc": "Unlock All Game Options",
+          "address": "0x02006500"
+        },
+        {
+          "code": "82006502",
+          "desc": "Unlock All Game Options",
+          "address": "0x02006502"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Street Fighter Alpha 3 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1002CF80",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202CF80"
+        },
+        {
+          "code": "320064E8",
+          "desc": "Unlock All Modes",
+          "address": "0x020064E8"
+        },
+        {
+          "code": "320064E9",
+          "desc": "Unlock All Fighters",
+          "address": "0x020064E9"
+        },
+        {
+          "code": "82006500",
+          "desc": "Unlock All Game Options",
+          "address": "0x02006500"
+        },
+        {
+          "code": "82006502",
+          "desc": "Unlock All Game Options",
+          "address": "0x02006502"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

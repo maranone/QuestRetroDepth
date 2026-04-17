@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "cityadventuretouchmysteryoftriangle",
+  "display_name": "City Adventure Touch - Mystery of Triangle (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\City Adventure Touch - Mystery of Triangle (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "07B8:FA",
+          "desc": "Infinite Energy First Character",
+          "address": "0x07B8"
+        },
+        {
+          "code": "07B9:FA",
+          "desc": "Infinite Energy Second Character",
+          "address": "0x07B9"
+        },
+        {
+          "code": "0627:1E",
+          "desc": "Instantly find one of the 10 cats",
+          "address": "0x0627"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

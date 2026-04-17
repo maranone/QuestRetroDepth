@@ -1,7 +1,0 @@
-game_name=Skyblazer
-game_key=Skyblazer-Snes
-system=snes
-integration_tier=manual
-trigger	enemy_defeated_0_f002	enemy_defeated	0x7EF002	1	uint	native	prev != curr	0.55	1	left:0.510:100
-trigger	death_2_168	death	0x7E0168	1	uint	native	prev > 0 && curr == 0	0.85	1	left:1.000:500;right:1.000:500
-trigger	damage_taken_3_200a	damage_taken	0x7E200A	1	uint	native	prev > curr	0.85	1	left:0.750:180

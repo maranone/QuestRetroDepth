@@ -1,0 +1,14 @@
+game_name=Indiana Jones and the Last Crusade (USA, Europe) (Game Genie)
+game_key=indiana_jones_and_the_last_crusade_usa_europe_game_genie
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_05a8	life_lost	0x05A8	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_05a8	life_gained	0x05A8	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_070c	life_lost	0x070C	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_070c	life_gained	0x070C	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_050d	life_lost	0x050D	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_050d	life_gained	0x050D	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_000e	life_lost	0x000E	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_000e	life_gained	0x000E	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_030a	damage_taken	0x030A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_030a	death	0x030A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,105 @@
+{
+  "system": "nes",
+  "normalized_title": "sqoon",
+  "display_name": "Sqoon (USA, Japan) (Game Genie)",
+  "aliases": [
+    "Sqoon (Japan) (Rev A)",
+    "Sqoon (USA)",
+    "Sqoon (USA, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\sqoon_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x002F",
+        "0x0037"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Sqoon-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x002F",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0037",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Sqoon (USA, Japan) (Game Genie).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "AEEAAIPA",
+          "desc": "Infinite Lives",
+          "address": "0x0508"
+        },
+        {
+          "code": "AEUESLZA",
+          "desc": "Start With 1 Life",
+          "address": "0x038D"
+        },
+        {
+          "code": "IEUESLZA",
+          "desc": "Start With 6 Lives",
+          "address": "0x038D"
+        },
+        {
+          "code": "AEUESLZE",
+          "desc": "Start With 9 Lives",
+          "address": "0x038D"
+        },
+        {
+          "code": "LASEXLPA",
+          "desc": "Start At Phase 3",
+          "address": "0x038A"
+        },
+        {
+          "code": "IASEXLPA",
+          "desc": "Start At Phase 5",
+          "address": "0x038A"
+        },
+        {
+          "code": "AASEXLPE",
+          "desc": "Start At Phase 8",
+          "address": "0x038A"
+        },
+        {
+          "code": "SZEEOSVK",
+          "desc": "Never Lose Your Special Weapon",
+          "address": "0x05A9"
+        },
+        {
+          "code": "ZEOOEYPA",
+          "desc": "Gain Main Weapon On Rescuing 9 Humans",
+          "address": "0x0788"
+        },
+        {
+          "code": "GXEAKKSE",
+          "desc": "Never Lose Humans On Dying",
+          "address": "0x042C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

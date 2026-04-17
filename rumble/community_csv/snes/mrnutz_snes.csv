@@ -2,7 +2,7 @@
 # game_name=Mr. Nutz (World) (Action Replay)
 # match_names=mrnutz|mrnutzsnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-game_over_gameover_19b5,0x7E19B5,1,int,became_nonzero,,both,1.000,normal,0,1000,400,100,
-damage_taken_health_18a6,0x7E18A6,1,int,prev_gt_curr,,left,0.850,normal,0,90,100,70,
-death_health_18a6,0x7E18A6,1,int,became_zero,,both,1.000,normal,0,600,400,90,
-score_score_1879,0x7E1879,4,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+game_over_gameover_19b5,0x7E19B5,1,int,became_nonzero,,both,1.000,heartbeat,0,1000,400,100,
+damage_taken_health_18a6,0x7E18A6,1,int,prev_gt_curr,,left,0.850,fade_out,0,110,80,70,
+death_health_18a6,0x7E18A6,1,int,became_zero,,both,1.000,heartbeat,0,600,400,90,
+score_score_1879,0x7E1879,4,bcd,prev_lt_curr,,right,0.350,burst,0,70,15,10,

@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "caesarspalace",
+  "display_name": "Caesars Palace (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Caesars Palace (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "00A9:FF",
+          "desc": "Never Run Out Of Money",
+          "address": "0x00A9"
+        },
+        {
+          "code": "00AB:09",
+          "desc": "Infinite Money (One's Digit)",
+          "address": "0x00AB"
+        },
+        {
+          "code": "052B:05",
+          "desc": "Have 5 Coins Inserted Into Machine (Ignore HUD)",
+          "address": "0x052B"
+        },
+        {
+          "code": "07F7:01",
+          "desc": "Add New Sounds While Playing Machine",
+          "address": "0x07F7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

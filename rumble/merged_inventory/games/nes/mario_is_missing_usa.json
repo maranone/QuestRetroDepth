@@ -1,0 +1,25 @@
+{
+  "system": "nes",
+  "normalized_title": "marioismissing",
+  "display_name": "Mario is Missing! (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mario is Missing! (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0486:07",
+          "desc": "Have All Stolen Items",
+          "address": "0x0486"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

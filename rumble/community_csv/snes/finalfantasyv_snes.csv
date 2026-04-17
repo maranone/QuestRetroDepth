@@ -2,6 +2,6 @@
 # game_name=FinalFantasyV
 # match_names=finalfantasyv|finalfantasyvsnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-damage_taken_0_382c,0x7E382C,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
-damage_taken_1_3834,0x7E3834,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
-damage_taken_2_383c,0x7E383C,1,uint,prev_gt_curr,,left,0.750,normal,0,180,100,70,
+damage_taken_0_382c,0x7E382C,1,uint,prev_gt_curr,,left,0.78,fade_out,0,180,80,70,
+damage_taken_1_3834,0x7E3834,1,uint,prev_gt_curr,,left,0.78,fade_out,0,180,80,70,
+damage_taken_2_383c,0x7E383C,1,uint,prev_gt_curr,,left,0.78,fade_out,0,180,80,70,

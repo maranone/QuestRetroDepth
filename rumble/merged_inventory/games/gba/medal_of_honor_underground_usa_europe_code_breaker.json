@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "medalofhonorunderground",
+  "display_name": "Medal of Honor - Underground (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Medal of Honor - Underground (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10003730",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003730"
+        },
+        {
+          "code": "33005224",
+          "desc": "Infinite Health",
+          "address": "0x02005224"
+        },
+        {
+          "code": "43005E90",
+          "desc": "Have All Weapons/Infinite Ammo",
+          "address": "0x02005E90"
+        },
+        {
+          "code": "33005260",
+          "desc": "Unlock All Missions",
+          "address": "0x02005260"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Medal of Honor - Underground (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10003730",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003730"
+        },
+        {
+          "code": "33005224",
+          "desc": "Infinite Health",
+          "address": "0x02005224"
+        },
+        {
+          "code": "43005E90",
+          "desc": "Have All Weapons/Infinite Ammo",
+          "address": "0x02005E90"
+        },
+        {
+          "code": "33005260",
+          "desc": "Unlock All Missions",
+          "address": "0x02005260"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

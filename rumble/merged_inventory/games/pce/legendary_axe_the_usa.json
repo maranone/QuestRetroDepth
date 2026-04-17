@@ -1,0 +1,50 @@
+{
+  "system": "pce",
+  "normalized_title": "legendaryaxe",
+  "display_name": "Legendary Axe, The (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Legendary Axe, The (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "1f00ac:14",
+          "desc": "Invincibility",
+          "address": "0x1F00AC"
+        },
+        {
+          "code": "1f0009:03",
+          "desc": "Infinite Lives",
+          "address": "0x1F0009"
+        },
+        {
+          "code": "1f0093:10",
+          "desc": "Infinite Energy",
+          "address": "0x1F0093"
+        },
+        {
+          "code": "1f11f4:09",
+          "desc": "Infinite Credits",
+          "address": "0x1F11F4"
+        },
+        {
+          "code": "1f048f:02",
+          "desc": "Have Max Wing Upgrades",
+          "address": "0x1F048F"
+        },
+        {
+          "code": "1f0497:04",
+          "desc": "Have Max Power Supply Upgrades",
+          "address": "0x1F0497"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

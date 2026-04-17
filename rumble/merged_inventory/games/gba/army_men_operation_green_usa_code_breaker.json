@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "armymenoperationgreen",
+  "display_name": "Army Men - Operation Green (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Army Men - Operation Green (USA) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10002720",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002720"
+        },
+        {
+          "code": "33001290",
+          "desc": "Infinite Grenades",
+          "address": "0x02001290"
+        },
+        {
+          "code": "33001BC4",
+          "desc": "Infinite Lives",
+          "address": "0x02001BC4"
+        },
+        {
+          "code": "3300544A",
+          "desc": "Infinite Health",
+          "address": "0x0200544A"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Army Men - Operation Green (USA) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10002720",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002720"
+        },
+        {
+          "code": "33001290",
+          "desc": "Infinite Grenades",
+          "address": "0x02001290"
+        },
+        {
+          "code": "33001BC4",
+          "desc": "Infinite Lives",
+          "address": "0x02001BC4"
+        },
+        {
+          "code": "3300544A",
+          "desc": "Infinite Health",
+          "address": "0x0200544A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

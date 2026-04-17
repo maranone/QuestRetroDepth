@@ -1,0 +1,11 @@
+game_name=Doraemon 2 - Nobita no Toys Land Daibouken (Japan)
+game_key=doraemon_2_nobita_no_toys_land_daibouken_japan
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_0b25	life_lost	0x7E0B25	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0b25	life_gained	0x7E0B25	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_0b27	damage_taken	0x7E0B27	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0b27	death	0x7E0B27	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_0b4a	enemy_defeated	0x7E0B4A	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	level_complete_level_0b20	level_complete	0x7E0B20	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0b21	level_complete	0x7E0B21	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

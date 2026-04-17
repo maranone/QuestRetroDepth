@@ -1,0 +1,145 @@
+{
+  "system": "nes",
+  "normalized_title": "supermariobrosduckhunt",
+  "display_name": "Super Mario Bros. + Duck Hunt (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Mario Bros. + Duck Hunt (USA).cht",
+      "total_cheat_rows": 181,
+      "raw_entry_count": 68,
+      "distinct_address_count": 65,
+      "sample_raw_entries": [
+        {
+          "code": "00BA:03",
+          "desc": "Infinite Ammo",
+          "address": "0x00BA"
+        },
+        {
+          "code": "VVAANY",
+          "desc": "Timer counts up instead of down!!",
+          "address": "0x0767"
+        },
+        {
+          "code": "AEAENT",
+          "desc": "Mario can jump higher when walking, running, or turbo running!  Also, he jumps further only when normal running.",
+          "address": "0x0687"
+        },
+        {
+          "code": "ANTOSA",
+          "desc": "The pipes you can't go down are upside-down, the pipes you can go down are normal.",
+          "address": "0x00F5"
+        },
+        {
+          "code": "YSAOPE",
+          "desc": "&quot;Level Select&quot; code!!",
+          "address": "0x00D1"
+        },
+        {
+          "code": "YEAOZA",
+          "desc": "&quot;Level Select&quot; code!!",
+          "address": "0x0082"
+        },
+        {
+          "code": "AAGOPO",
+          "desc": "Mario can swim everywhere, and you start some worlds about 1/2 way thru",
+          "address": "0x0181"
+        },
+        {
+          "code": "VGYOKK",
+          "desc": "Time starts at 900 instead of 400",
+          "address": "0x04C4"
+        },
+        {
+          "code": "GUAOPO",
+          "desc": "Start with 400 more seconds, and invincibility for the first 10 seconds.",
+          "address": "0x01B1"
+        },
+        {
+          "code": "LEAOGK",
+          "desc": "Opens route to minus world! at end of 1-2",
+          "address": "0x0484"
+        },
+        {
+          "code": "OKGASA",
+          "desc": "Everything is invisible except mario &amp; enemies",
+          "address": "0x0045"
+        },
+        {
+          "code": "NLTOGK",
+          "desc": "Mario starts out swimming",
+          "address": "0x04B4"
+        },
+        {
+          "code": "GSAENT",
+          "desc": "You can position Mario anywhere on the screen even when he's moving by holding down the &quot;A&quot; button on controller #2.",
+          "address": "0x06D7"
+        },
+        {
+          "code": "VTPOZI",
+          "desc": "You can jump over the castle at the end of world 1-1 and keep on going. Also, going down tubes does weird things.",
+          "address": "0x05E2"
+        },
+        {
+          "code": "NYTELN",
+          "desc": "Items that were worth 1,000 points, are now worth 1,000,000,000 points!!",
+          "address": "0x07F3"
+        },
+        {
+          "code": "YNAOPO",
+          "desc": "Time starts at 150 instead of 400 plus about 30 seconds of invincibility at the start of every life",
+          "address": "0x01F1"
+        },
+        {
+          "code": "LEAOPO",
+          "desc": "Time starts with one extra minute 460 instead of 400",
+          "address": "0x0181"
+        },
+        {
+          "code": "LXAOPP",
+          "desc": "Time starts at 600 instead of 400 plus about 10 seconds of invincibility at the start of every life",
+          "address": "0x01A1"
+        },
+        {
+          "code": "GVAOPP",
+          "desc": "Time starts at 995 instead of 400 plus about 20 seconds of invincibility at the start of every life",
+          "address": "0x01E1"
+        },
+        {
+          "code": "NEPELA",
+          "desc": "Play as Game Boy mario (everything is black &amp; white)",
+          "address": "0x0083"
+        },
+        {
+          "code": "NTPOLE",
+          "desc": "Everything is offset by about 2 inches",
+          "address": "0x00E3"
+        },
+        {
+          "code": "ZSYENT",
+          "desc": "Mario turns into the invisible man",
+          "address": "0x06D7"
+        },
+        {
+          "code": "ASTETE",
+          "desc": "Play at night",
+          "address": "0x00D6"
+        },
+        {
+          "code": "PIGOAP",
+          "desc": "Swim without water (you're always swimming)",
+          "address": "0x01D0"
+        },
+        {
+          "code": "OVAAAE",
+          "desc": "Slow-motion, plus other neat stuff",
+          "address": "0x0060"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

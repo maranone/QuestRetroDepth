@@ -1,0 +1,7 @@
+game_name=FireAndIce
+game_key=FireAndIce-Sms
+system=sms
+integration_tier=stable
+trigger	damage_taken_health_d56b	damage_taken	0xD56B	1	int	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_d56b	death	0xD56B	1	int	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_d9a1	score	0xD9A1	4	nibble	big	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,14 @@
+game_name=Dead Dance (Japan) (Action Replay)
+game_key=dead_dance_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_0f4e	damage_taken	0x7E0F4E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0f4e	death	0x7E0F4E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0fa7	damage_taken	0x7E0FA7	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0fa7	death	0x7E0FA7	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_00ce	score	0x7E00CE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00cf	score	0x7E00CF	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00d0	score	0x7E00D0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00d1	score	0x7E00D1	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00d2	score	0x7E00D2	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00d3	score	0x7E00D3	1	uint	little	prev < curr	0.8	1	right:0.350:60

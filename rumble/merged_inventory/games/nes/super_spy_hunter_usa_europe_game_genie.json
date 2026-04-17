@@ -1,0 +1,52 @@
+{
+  "system": "nes",
+  "normalized_title": "superspyhunter",
+  "display_name": "Super Spy Hunter (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Super Spy Hunter (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Spy Hunter (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "AGZAPZ",
+          "desc": "Strange Noises",
+          "address": "0x0241"
+        },
+        {
+          "code": "PEZPEZ",
+          "desc": "Weird Enemies",
+          "address": "0x0200"
+        },
+        {
+          "code": "PIZPIZ",
+          "desc": "Major Graphics Problems And Invisible Obstacles",
+          "address": "0x0255"
+        },
+        {
+          "code": "OAOAOA",
+          "desc": "Invisible Gun Turrets And Weird Helicopters",
+          "address": "0x0009"
+        },
+        {
+          "code": "ZIPPIZ",
+          "desc": "Invisible Gun Turrets And You Turn Invisible When You Go Under The Bridge In Level 1",
+          "address": "0x0255"
+        },
+        {
+          "code": "SZPATO",
+          "desc": "No Sound",
+          "address": "0x0126"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

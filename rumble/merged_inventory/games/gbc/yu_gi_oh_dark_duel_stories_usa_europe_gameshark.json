@@ -1,0 +1,27 @@
+{
+  "system": "gbc",
+  "normalized_title": "yugiohdarkduelstories",
+  "display_name": "Yu-Gi-Oh! - Dark Duel Stories (USA, Europe) (GameShark)",
+  "aliases": [
+    "Yu-Gi-Oh! - Dark Duel Stories (USA, Europe) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Yu-Gi-Oh! - Dark Duel Stories (USA, Europe) (GameShark).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0103D5CA",
+          "desc": "No Sacrifices/Offerings Needed",
+          "address": "0xD5CA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "system": "nes",
+  "normalized_title": "krionconquest",
+  "display_name": "Krion Conquest, The (USA) (Game Genie)",
+  "aliases": [
+    "Krion Conquest, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Krion Conquest, The (USA).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 24,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "GAXEZPAA",
+          "desc": "Start On Stage 5",
+          "address": "0x018A"
+        },
+        {
+          "code": "EZXEPOOZ",
+          "desc": "Start On Stage 5",
+          "address": "0x01A9"
+        },
+        {
+          "code": "KAXEIPSA",
+          "desc": "Start On Stage 5",
+          "address": "0x018D"
+        },
+        {
+          "code": "03DE:02",
+          "desc": "Invincible",
+          "address": "0x03DE"
+        },
+        {
+          "code": "03E0:3A",
+          "desc": "Invincible",
+          "address": "0x03E0"
+        },
+        {
+          "code": "0318:05",
+          "desc": "Infinite Oxygen In Underwater Stage",
+          "address": "0x0318"
+        },
+        {
+          "code": "AAKAAPZA",
+          "desc": "1 life",
+          "address": "0x0108"
+        },
+        {
+          "code": "IAKAAPZA",
+          "desc": "6 lives",
+          "address": "0x0108"
+        },
+        {
+          "code": "AAKAAPZE",
+          "desc": "9 lives",
+          "address": "0x0108"
+        },
+        {
+          "code": "0043:02",
+          "desc": "Infinite Lives",
+          "address": "0x0043"
+        },
+        {
+          "code": "PAXEZPAA",
+          "desc": "Start On Stage 2",
+          "address": "0x018A"
+        },
+        {
+          "code": "EZXEPOOZ",
+          "desc": "Start On Stage 2",
+          "address": "0x01A9"
+        },
+        {
+          "code": "KAXEIPSA",
+          "desc": "Start On Stage 2",
+          "address": "0x018D"
+        },
+        {
+          "code": "ZAXEZPAA",
+          "desc": "Start On Stage 3",
+          "address": "0x018A"
+        },
+        {
+          "code": "EZXEPOOZ",
+          "desc": "Start On Stage 3",
+          "address": "0x01A9"
+        },
+        {
+          "code": "KAXEIPSA",
+          "desc": "Start On Stage 3",
+          "address": "0x018D"
+        },
+        {
+          "code": "LAXEZPAA",
+          "desc": "Start On Stage 4",
+          "address": "0x018A"
+        },
+        {
+          "code": "EZXEPOOZ",
+          "desc": "Start On Stage 4",
+          "address": "0x01A9"
+        },
+        {
+          "code": "KAXEIPSA",
+          "desc": "Start On Stage 4",
+          "address": "0x018D"
+        },
+        {
+          "code": "0043:99",
+          "desc": "Infinite Lives",
+          "address": "0x0043"
+        },
+        {
+          "code": "004C:1C",
+          "desc": "Infinite Health",
+          "address": "0x004C"
+        },
+        {
+          "code": "0057:1F",
+          "desc": "Moon Jump (Disable In Underwater Stage)",
+          "address": "0x0057"
+        },
+        {
+          "code": "038D:04",
+          "desc": "Max Charge",
+          "address": "0x038D"
+        },
+        {
+          "code": "00A5:F0",
+          "desc": "Boss One Hit Kill",
+          "address": "0x00A5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

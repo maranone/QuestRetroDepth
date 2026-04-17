@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "jleaguefightingsoccerkingofacestrikers",
+  "display_name": "J.League Fighting Soccer - The King of Ace Strikers (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\J.League Fighting Soccer - The King of Ace Strikers (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "039B:00",
+          "desc": "Player 1 Score Modifier",
+          "address": "0x039B"
+        },
+        {
+          "code": "039E:00",
+          "desc": "Player 2 Score Modifier",
+          "address": "0x039E"
+        },
+        {
+          "code": "036E:00",
+          "desc": "Seconds Modifier",
+          "address": "0x036E"
+        },
+        {
+          "code": "036F:00",
+          "desc": "Minutes Modifier",
+          "address": "0x036F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

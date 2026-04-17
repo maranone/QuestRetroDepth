@@ -1,0 +1,83 @@
+{
+  "system": "nes",
+  "normalized_title": "argus",
+  "display_name": "Argus (Japan)",
+  "aliases": [
+    "Argus (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\argus_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0017",
+        "0x0022"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Argus-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0022",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0017",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Argus (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0022:02",
+          "desc": "Infinite Lives",
+          "address": "0x0022"
+        },
+        {
+          "code": "0083:80",
+          "desc": "Invincibility",
+          "address": "0x0083"
+        },
+        {
+          "code": "SGXEYPVG",
+          "desc": "Infinite Lives",
+          "address": "0x01CF"
+        },
+        {
+          "code": "SZEOKASA",
+          "desc": "Invincibility",
+          "address": "0x00AC"
+        },
+        {
+          "code": "0022:63",
+          "desc": "Infinite Lives P1",
+          "address": "0x0022"
+        },
+        {
+          "code": "GONOEUAL",
+          "desc": "Can Always Land Ship",
+          "address": "0x0398"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "castleexcellent",
+  "display_name": "Castle Excellent (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Castle Excellent (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "0005:09",
+          "desc": "Infinite Red Keys",
+          "address": "0x0005"
+        },
+        {
+          "code": "0006:09",
+          "desc": "Infinite Dark Blue Keys",
+          "address": "0x0006"
+        },
+        {
+          "code": "000A:09",
+          "desc": "Infinite Light Blue Keys",
+          "address": "0x000A"
+        },
+        {
+          "code": "0009:09",
+          "desc": "Infinite Pink Keys",
+          "address": "0x0009"
+        },
+        {
+          "code": "0008:09",
+          "desc": "Infinite Green Keys",
+          "address": "0x0008"
+        },
+        {
+          "code": "0007:09",
+          "desc": "Infinite Yellow Keys",
+          "address": "0x0007"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

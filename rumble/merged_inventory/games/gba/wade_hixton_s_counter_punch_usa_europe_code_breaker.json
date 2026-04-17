@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "wadehixtonscounterpunch",
+  "display_name": "Wade Hixton's Counter Punch (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Wade Hixton's Counter Punch (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1000A2C8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200A2C8"
+        },
+        {
+          "code": "330012D2",
+          "desc": "Infinite Health",
+          "address": "0x020012D2"
+        },
+        {
+          "code": "830011BE",
+          "desc": "Infinite Stamina",
+          "address": "0x020011BE"
+        },
+        {
+          "code": "33001190",
+          "desc": "Infinite Time",
+          "address": "0x02001190"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select For 1-Hit Death On P2",
+          "address": "0x02000130"
+        },
+        {
+          "code": "8300131E",
+          "desc": "Press Select For 1-Hit Death On P2",
+          "address": "0x0200131E"
+        },
+        {
+          "code": "83001326",
+          "desc": "No Power Bar P2",
+          "address": "0x02001326"
+        },
+        {
+          "code": "330012DA",
+          "desc": "Full Super Bar",
+          "address": "0x020012DA"
+        },
+        {
+          "code": "830011D4",
+          "desc": "Infinite Money",
+          "address": "0x020011D4"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Wade Hixton's Counter Punch (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1000A2C8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200A2C8"
+        },
+        {
+          "code": "330012D2",
+          "desc": "Infinite Health",
+          "address": "0x020012D2"
+        },
+        {
+          "code": "830011BE",
+          "desc": "Infinite Stamina",
+          "address": "0x020011BE"
+        },
+        {
+          "code": "33001190",
+          "desc": "Infinite Time",
+          "address": "0x02001190"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select For 1-Hit Death On P2",
+          "address": "0x02000130"
+        },
+        {
+          "code": "8300131E",
+          "desc": "Press Select For 1-Hit Death On P2",
+          "address": "0x0200131E"
+        },
+        {
+          "code": "83001326",
+          "desc": "No Power Bar P2",
+          "address": "0x02001326"
+        },
+        {
+          "code": "330012DA",
+          "desc": "Full Super Bar",
+          "address": "0x020012DA"
+        },
+        {
+          "code": "830011D4",
+          "desc": "Infinite Money",
+          "address": "0x020011D4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

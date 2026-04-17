@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "guiltygearxadvanceedition",
+  "display_name": "Guilty Gear X - Advance Edition (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Guilty Gear X - Advance Edition (World) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10010D18",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02010D18"
+        },
+        {
+          "code": "32000024",
+          "desc": "Unlock Extra Fighters",
+          "address": "0x02000024"
+        },
+        {
+          "code": "32000028",
+          "desc": "Unlock Extra Options",
+          "address": "0x02000028"
+        },
+        {
+          "code": "8200060C",
+          "desc": "Max Level In Survival Mode",
+          "address": "0x0200060C"
+        },
+        {
+          "code": "82002F7E",
+          "desc": "Infinite Death Meter",
+          "address": "0x02002F7E"
+        },
+        {
+          "code": "72002F74",
+          "desc": "Always Have Death Meter",
+          "address": "0x02002F74"
+        },
+        {
+          "code": "82002F74",
+          "desc": "Always Have Death Meter",
+          "address": "0x02002F74"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Guilty Gear X - Advance Edition (World) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10010D18",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02010D18"
+        },
+        {
+          "code": "32000024",
+          "desc": "Unlock Extra Fighters",
+          "address": "0x02000024"
+        },
+        {
+          "code": "32000028",
+          "desc": "Unlock Extra Options",
+          "address": "0x02000028"
+        },
+        {
+          "code": "8200060C",
+          "desc": "Max Level In Survival Mode",
+          "address": "0x0200060C"
+        },
+        {
+          "code": "82002F7E",
+          "desc": "Infinite Death Meter",
+          "address": "0x02002F7E"
+        },
+        {
+          "code": "72002F74",
+          "desc": "Always Have Death Meter",
+          "address": "0x02002F74"
+        },
+        {
+          "code": "82002F74",
+          "desc": "Always Have Death Meter",
+          "address": "0x02002F74"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

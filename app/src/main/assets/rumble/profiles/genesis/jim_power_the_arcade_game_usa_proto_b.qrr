@@ -1,0 +1,6 @@
+game_name=Jim Power - The Arcade Game (USA) (Proto) [b]
+game_key=jim_power_the_arcade_game_usa_proto_b
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ffe85a	life_lost	0xFFE85A	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffe85a	life_gained	0xFFE85A	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

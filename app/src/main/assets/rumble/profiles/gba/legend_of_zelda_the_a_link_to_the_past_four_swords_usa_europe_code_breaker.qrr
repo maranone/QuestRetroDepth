@@ -1,0 +1,8 @@
+game_name=Legend of Zelda, The - A Link to the Past _ Four Swords (USA, Europe) (Code Breaker)
+game_key=legend_of_zelda_the_a_link_to_the_past_four_swords_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_0200234c	damage_taken	0x0200234C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0200234c	death	0x0200234C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0200234d	damage_taken	0x0200234D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0200234d	death	0x0200234D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,42 @@
+{
+  "system": "gbc",
+  "normalized_title": "magicaldrop",
+  "display_name": "Magical Drop (USA, Europe) (GameShark)",
+  "aliases": [
+    "Magical Drop (USA, Europe) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Magical Drop (USA, Europe) (GameShark).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0100C7C2",
+          "desc": "1 Balloon On Screen",
+          "address": "0xC7C2"
+        },
+        {
+          "code": "0100CFC2",
+          "desc": "1 Balloon On Screen",
+          "address": "0xCFC2"
+        },
+        {
+          "code": "0100D7C2",
+          "desc": "1 Balloon On Screen",
+          "address": "0xD7C2"
+        },
+        {
+          "code": "0100DFC2",
+          "desc": "1 Balloon On Screen",
+          "address": "0xDFC2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

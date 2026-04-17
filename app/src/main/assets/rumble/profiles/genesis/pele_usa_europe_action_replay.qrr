@@ -1,0 +1,5 @@
+game_name=Pele! (USA, Europe) (Action Replay)
+game_key=pele_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffdaf2	score	0xFFDAF2	1	uint	little	prev < curr	0.8	1	right:0.350:60

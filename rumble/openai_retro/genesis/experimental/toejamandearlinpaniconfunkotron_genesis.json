@@ -1,0 +1,308 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "ToeJamAndEarlInPanicOnFunkotron",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\experimental\\ToeJamAndEarlInPanicOnFunkotron-Genesis\\data.json",
+    "integration_tier": "experimental",
+    "game_key": "ToeJamAndEarlInPanicOnFunkotron-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "pickup_ammo_ffa928",
+      "event": "pickup",
+      "watch": [
+        {
+          "absolute_address": "0xFFA928",
+          "size": 2,
+          "value_type": "uint",
+          "byte_order": "big",
+          "raw_type": ">u2",
+          "address": "0xFFA928",
+          "ram_offset": 43304
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.25,
+          "duration_ms": 18
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Pickup-style counter.",
+      "source_fields": [
+        {
+          "name": "ammo",
+          "address": "0xFFA928",
+          "raw_type": ">u2"
+        }
+      ]
+    },
+    {
+      "id": "pickup_coins_ffa920",
+      "event": "pickup",
+      "watch": [
+        {
+          "absolute_address": "0xFFA920",
+          "size": 4,
+          "value_type": "uint",
+          "byte_order": "big",
+          "raw_type": ">u4",
+          "address": "0xFFA920",
+          "ram_offset": 43296
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.25,
+          "duration_ms": 18
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Pickup-style counter.",
+      "source_fields": [
+        {
+          "name": "coins",
+          "address": "0xFFA920",
+          "raw_type": ">u4"
+        }
+      ]
+    },
+    {
+      "id": "damage_taken_health_ffa92b",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0xFFA92B",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFA92B",
+          "ram_offset": 43307
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFFA92B",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_ffa92b",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0xFFA92B",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFA92B",
+          "ram_offset": 43307
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFFA92B",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "level_complete_level_ff855f",
+      "event": "level_complete",
+      "watch": [
+        {
+          "absolute_address": "0xFF855F",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFF855F",
+          "ram_offset": 34143
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.8,
+          "duration_ms": 400
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.8,
+          "duration_ms": 400
+        }
+      ],
+      "confidence": 0.65,
+      "needs_review": true,
+      "reason": "Stage/zone progression field; review in gameplay.",
+      "source_fields": [
+        {
+          "name": "level",
+          "address": "0xFF855F",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_lives_ffa925",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0xFFA925",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFA925",
+          "ram_offset": 43301
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xFFA925",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_ffa925",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0xFFA925",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFA925",
+          "ram_offset": 43301
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0xFFA925",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_ffa912",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xFFA912",
+          "size": 4,
+          "value_type": "uint",
+          "byte_order": "big",
+          "raw_type": ">u4",
+          "address": "0xFFA912",
+          "ram_offset": 43282
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xFFA912",
+          "raw_type": ">u4"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "x",
+      "meta": {
+        "address": 16747996,
+        "type": ">i2"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "bombermanmax2redadvance",
+  "display_name": "Bomberman Max 2 - Red Advance (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Bomberman Max 2 - Red Advance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "10001D70",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001D70"
+        },
+        {
+          "code": "830055A8",
+          "desc": "Stop Time",
+          "address": "0x020055A8"
+        },
+        {
+          "code": "8200004C",
+          "desc": "Max Speed",
+          "address": "0x0200004C"
+        },
+        {
+          "code": "8200006E",
+          "desc": "Invincible",
+          "address": "0x0200006E"
+        },
+        {
+          "code": "82005194",
+          "desc": "Infinite Bombs",
+          "address": "0x02005194"
+        },
+        {
+          "code": "82008098",
+          "desc": "Infinite Lives",
+          "address": "0x02008098"
+        },
+        {
+          "code": "32000051",
+          "desc": "Max Bombs",
+          "address": "0x02000051"
+        },
+        {
+          "code": "32000052",
+          "desc": "Max Fire",
+          "address": "0x02000052"
+        },
+        {
+          "code": "42005B10",
+          "desc": "All Charabombs",
+          "address": "0x02005B10"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Bomberman Max 2 - Red Advance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "10001D70",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001D70"
+        },
+        {
+          "code": "830055A8",
+          "desc": "Stop Time",
+          "address": "0x020055A8"
+        },
+        {
+          "code": "8200004C",
+          "desc": "Max Speed",
+          "address": "0x0200004C"
+        },
+        {
+          "code": "8200006E",
+          "desc": "Invincible",
+          "address": "0x0200006E"
+        },
+        {
+          "code": "82005194",
+          "desc": "Infinite Bombs",
+          "address": "0x02005194"
+        },
+        {
+          "code": "82008098",
+          "desc": "Infinite Lives",
+          "address": "0x02008098"
+        },
+        {
+          "code": "32000051",
+          "desc": "Max Bombs",
+          "address": "0x02000051"
+        },
+        {
+          "code": "32000052",
+          "desc": "Max Fire",
+          "address": "0x02000052"
+        },
+        {
+          "code": "42005B10",
+          "desc": "All Charabombs",
+          "address": "0x02005B10"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

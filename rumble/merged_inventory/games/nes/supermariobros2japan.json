@@ -1,0 +1,74 @@
+{
+  "system": "nes",
+  "normalized_title": "supermariobros2japan",
+  "display_name": "SuperMarioBros2Japan",
+  "aliases": [],
+  "sources": {
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SuperMarioBros2Japan-Nes-v0\\data.json",
+      "field_count": 11,
+      "fields": [
+        {
+          "name": "coins",
+          "address": "0x075E",
+          "type": "|u1"
+        },
+        {
+          "name": "deathsound",
+          "address": "0x0712",
+          "type": "|u1"
+        },
+        {
+          "name": "levelHi",
+          "address": "0x075F",
+          "type": "|i1"
+        },
+        {
+          "name": "levelLo",
+          "address": "0x075C",
+          "type": "|i1"
+        },
+        {
+          "name": "lives",
+          "address": "0x075A",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x07DD",
+          "type": ">n6"
+        },
+        {
+          "name": "scrolling",
+          "address": "0x0778",
+          "type": "|i1"
+        },
+        {
+          "name": "time",
+          "address": "0x07F8",
+          "type": ">n3"
+        },
+        {
+          "name": "worldskip",
+          "address": "0x0770",
+          "type": "|n1"
+        },
+        {
+          "name": "xscrollHi",
+          "address": "0x071A",
+          "type": "|u1"
+        },
+        {
+          "name": "xscrollLo",
+          "address": "0x071C",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 11
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

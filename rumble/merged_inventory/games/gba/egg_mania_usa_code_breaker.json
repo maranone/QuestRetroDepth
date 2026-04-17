@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "eggmania",
+  "display_name": "Egg Mania (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Egg Mania (USA) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "10003140",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003140"
+        },
+        {
+          "code": "82011A9C",
+          "desc": "Time Always 00:00",
+          "address": "0x02011A9C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Egg Mania (USA) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "10003140",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003140"
+        },
+        {
+          "code": "82011A9C",
+          "desc": "Time Always 00:00",
+          "address": "0x02011A9C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

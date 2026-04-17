@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "digdug",
+  "display_name": "Dig Dug (Japan) (Game Genie)",
+  "aliases": [
+    "Dig Dug (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dig Dug (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0060:03",
+          "desc": "Infinite Lives (Player 1&2)",
+          "address": "0x0060"
+        },
+        {
+          "code": "006E:01",
+          "desc": "Stage Round Select",
+          "address": "0x006E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

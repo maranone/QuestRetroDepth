@@ -1,0 +1,42 @@
+{
+  "system": "gb",
+  "normalized_title": "solomonsclub",
+  "display_name": "Solomon's Club (World) (GameShark)",
+  "aliases": [
+    "Solomon's Club (World) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Solomon's Club (World) (GameShark).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "010AC8FF",
+          "desc": "Infinite Lives",
+          "address": "0xC8FF"
+        },
+        {
+          "code": "0109C1FF",
+          "desc": "Infinite Time",
+          "address": "0xC1FF"
+        },
+        {
+          "code": "0199CCFF",
+          "desc": "Infinite Money",
+          "address": "0xCCFF"
+        },
+        {
+          "code": "0109D8FF",
+          "desc": "Infinite Fireball",
+          "address": "0xD8FF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

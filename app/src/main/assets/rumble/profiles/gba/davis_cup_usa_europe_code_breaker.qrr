@@ -1,0 +1,6 @@
+game_name=Davis Cup (USA, Europe) (Code Breaker)
+game_key=davis_cup_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_02002141	score	0x02002141	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02002142	score	0x02002142	1	uint	little	prev < curr	0.8	1	right:0.350:60

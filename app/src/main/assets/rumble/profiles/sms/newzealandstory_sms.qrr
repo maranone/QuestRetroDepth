@@ -1,0 +1,7 @@
+game_name=New Zealand Story, The (Europe) (Action Replay)
+game_key=NewZealandStory-Sms
+system=sms
+integration_tier=stable
+trigger	life_lost_lives_ddec	life_lost	0xDDEC	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ddec	life_gained	0xDDEC	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_dde9	score	0xDDE9	3	bcd	big	prev < curr	0.8	1	right:0.350:60

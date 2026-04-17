@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "allprobasketball",
+  "display_name": "All-Pro Basketball (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\All-Pro Basketball (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "AUOAXIPL",
+          "desc": "Quarters 1:11 Long",
+          "address": "0x053A"
+        },
+        {
+          "code": "PUOEXIAL",
+          "desc": "Quarters 1:11 Long",
+          "address": "0x05BA"
+        },
+        {
+          "code": "0077:30",
+          "desc": "Team 1 Points Modifier",
+          "address": "0x0077"
+        },
+        {
+          "code": "0078:30",
+          "desc": "Team 1 Points Modifier",
+          "address": "0x0078"
+        },
+        {
+          "code": "0079:30",
+          "desc": "Team 1 Points Modifier",
+          "address": "0x0079"
+        },
+        {
+          "code": "007A:30",
+          "desc": "Team 2 Points Modifier",
+          "address": "0x007A"
+        },
+        {
+          "code": "007B:30",
+          "desc": "Team 2 Points Modifier",
+          "address": "0x007B"
+        },
+        {
+          "code": "007C:30",
+          "desc": "Team 2 Points Modifier",
+          "address": "0x007C"
+        },
+        {
+          "code": "006E:30",
+          "desc": "Time Modifier",
+          "address": "0x006E"
+        },
+        {
+          "code": "006F:30",
+          "desc": "Time Modifier",
+          "address": "0x006F"
+        },
+        {
+          "code": "0070:30",
+          "desc": "Time Modifier",
+          "address": "0x0070"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

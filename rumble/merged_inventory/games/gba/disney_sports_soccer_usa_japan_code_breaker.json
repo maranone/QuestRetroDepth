@@ -1,0 +1,158 @@
+{
+  "system": "gba",
+  "normalized_title": "disneysportssoccer",
+  "display_name": "Disney Sports - Soccer (USA, Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Disney Sports - Soccer (USA, Japan) (Code Breaker).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 13,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10000CE0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000CE0"
+        },
+        {
+          "code": "32009FF8",
+          "desc": "Home Team Scores 100",
+          "address": "0x02009FF8"
+        },
+        {
+          "code": "32009FF8",
+          "desc": "Home Team Scores 50",
+          "address": "0x02009FF8"
+        },
+        {
+          "code": "32009FF8",
+          "desc": "Home Team Scores 20",
+          "address": "0x02009FF8"
+        },
+        {
+          "code": "32009FF8",
+          "desc": "Home Team Scores 10",
+          "address": "0x02009FF8"
+        },
+        {
+          "code": "32009FF8",
+          "desc": "Home Team Scores 5",
+          "address": "0x02009FF8"
+        },
+        {
+          "code": "32009FF8",
+          "desc": "Home Team Scores 0",
+          "address": "0x02009FF8"
+        },
+        {
+          "code": "32009FF9",
+          "desc": "Away Team Scores 100",
+          "address": "0x02009FF9"
+        },
+        {
+          "code": "32009FF9",
+          "desc": "Away Team Scores 50",
+          "address": "0x02009FF9"
+        },
+        {
+          "code": "32009FF9",
+          "desc": "Away Team Scores 20",
+          "address": "0x02009FF9"
+        },
+        {
+          "code": "32009FF9",
+          "desc": "Away Team Scores 10",
+          "address": "0x02009FF9"
+        },
+        {
+          "code": "32009FF9",
+          "desc": "Away Team Scores 5",
+          "address": "0x02009FF9"
+        },
+        {
+          "code": "32009FF9",
+          "desc": "Away Team Scores 0",
+          "address": "0x02009FF9"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Disney Sports - Soccer (USA, Japan) (Code Breaker).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 13,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10000CE0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000CE0"
+        },
+        {
+          "code": "32009FF8",
+          "desc": "Home Team Scores 100",
+          "address": "0x02009FF8"
+        },
+        {
+          "code": "32009FF8",
+          "desc": "Home Team Scores 50",
+          "address": "0x02009FF8"
+        },
+        {
+          "code": "32009FF8",
+          "desc": "Home Team Scores 20",
+          "address": "0x02009FF8"
+        },
+        {
+          "code": "32009FF8",
+          "desc": "Home Team Scores 10",
+          "address": "0x02009FF8"
+        },
+        {
+          "code": "32009FF8",
+          "desc": "Home Team Scores 5",
+          "address": "0x02009FF8"
+        },
+        {
+          "code": "32009FF8",
+          "desc": "Home Team Scores 0",
+          "address": "0x02009FF8"
+        },
+        {
+          "code": "32009FF9",
+          "desc": "Away Team Scores 100",
+          "address": "0x02009FF9"
+        },
+        {
+          "code": "32009FF9",
+          "desc": "Away Team Scores 50",
+          "address": "0x02009FF9"
+        },
+        {
+          "code": "32009FF9",
+          "desc": "Away Team Scores 20",
+          "address": "0x02009FF9"
+        },
+        {
+          "code": "32009FF9",
+          "desc": "Away Team Scores 10",
+          "address": "0x02009FF9"
+        },
+        {
+          "code": "32009FF9",
+          "desc": "Away Team Scores 5",
+          "address": "0x02009FF9"
+        },
+        {
+          "code": "32009FF9",
+          "desc": "Away Team Scores 0",
+          "address": "0x02009FF9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

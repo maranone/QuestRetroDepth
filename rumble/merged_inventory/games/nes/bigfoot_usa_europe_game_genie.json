@@ -1,0 +1,62 @@
+{
+  "system": "nes",
+  "normalized_title": "bigfoot",
+  "display_name": "Bigfoot (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Bigfoot (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bigfoot (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 8,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "GEKAOKAA",
+          "desc": "Engines Are Half Price",
+          "address": "0x0409"
+        },
+        {
+          "code": "PEKAOKAE",
+          "desc": "Engines Cost More",
+          "address": "0x0409"
+        },
+        {
+          "code": "LEKAXGTA",
+          "desc": "Tires Are Half Price",
+          "address": "0x040A"
+        },
+        {
+          "code": "PEKAXGTE",
+          "desc": "Tires Cost More",
+          "address": "0x040A"
+        },
+        {
+          "code": "ZEKAUGGA",
+          "desc": "Transmission Work Is Half Price",
+          "address": "0x040B"
+        },
+        {
+          "code": "AEKAUGGE",
+          "desc": "Transmission Work Is Double Price",
+          "address": "0x040B"
+        },
+        {
+          "code": "PEKAKGZA",
+          "desc": "Suspension Is Half Price",
+          "address": "0x040C"
+        },
+        {
+          "code": "TEKAKGZA",
+          "desc": "Suspension Is Triple Price",
+          "address": "0x040C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

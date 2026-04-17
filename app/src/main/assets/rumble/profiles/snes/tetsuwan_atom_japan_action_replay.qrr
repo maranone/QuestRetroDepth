@@ -1,0 +1,6 @@
+game_name=Tetsuwan Atom (Japan) (Action Replay)
+game_key=tetsuwan_atom_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	score_score_047e	score	0x7E047E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_047f	score	0x7E047F	1	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,114 @@
+{
+  "system": "nes",
+  "normalized_title": "xenophobe",
+  "display_name": "Xenophobe (USA) (Game Genie)",
+  "aliases": [
+    "Xenophobe (USA) (Game Genie)",
+    "Xenophobe (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\xenophobe_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0750",
+        "0x0760"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Xenophobe-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0750",
+          "type": ">n4"
+        },
+        {
+          "name": "score",
+          "address": "0x0760",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Xenophobe (USA).cht",
+      "total_cheat_rows": 19,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "070E:09",
+          "desc": "Invincible",
+          "address": "0x070E"
+        },
+        {
+          "code": "060E:00",
+          "desc": "One Shot Kills Most Enemies",
+          "address": "0x060E"
+        },
+        {
+          "code": "061E:00",
+          "desc": "One Shot Kills Most Enemies",
+          "address": "0x061E"
+        },
+        {
+          "code": "0795:00",
+          "desc": "Character Modifier P1",
+          "address": "0x0795"
+        },
+        {
+          "code": "0753:09",
+          "desc": "Infinite Health P1 (One's Digit)",
+          "address": "0x0753"
+        },
+        {
+          "code": "0752:0A",
+          "desc": "Infinite Health P1 (Ten's Digit)",
+          "address": "0x0752"
+        },
+        {
+          "code": "0751:09",
+          "desc": "Infinite Health P1 (Hundred's Digit)",
+          "address": "0x0751"
+        },
+        {
+          "code": "0750:09",
+          "desc": "Infinite Health P1 (Thousand's Digit)",
+          "address": "0x0750"
+        },
+        {
+          "code": "0754:09",
+          "desc": "Infinite Health P2 (Thousand's Digit)",
+          "address": "0x0754"
+        },
+        {
+          "code": "0755:09",
+          "desc": "Infinite Health P2 (Hundred's Digit)",
+          "address": "0x0755"
+        },
+        {
+          "code": "0756:0B",
+          "desc": "Infinite Health P2 (Ten's Digit)",
+          "address": "0x0756"
+        },
+        {
+          "code": "0757:0B",
+          "desc": "Infinite Health P2 (One's Digit)",
+          "address": "0x0757"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

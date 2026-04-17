@@ -1,0 +1,27 @@
+{
+  "system": "nes",
+  "normalized_title": "roadfighter",
+  "display_name": "Road Fighter (Europe)",
+  "aliases": [
+    "Road Fighter (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Road Fighter (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "00C8:64",
+          "desc": "Infinite Fuel",
+          "address": "0x00C8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

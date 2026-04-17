@@ -1,0 +1,6 @@
+game_name=Sims, The - Bustin' Out (USA, Europe) (Code Breaker)
+game_key=sims_the_bustin_out_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	pickup_coins_02003954	pickup	0x02003954	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_02003946	pickup	0x02003946	1	uint	little	prev != curr	0.8	1	right:0.250:18

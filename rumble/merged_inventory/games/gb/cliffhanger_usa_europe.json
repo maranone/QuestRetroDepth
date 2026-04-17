@@ -1,0 +1,30 @@
+{
+  "system": "gb",
+  "normalized_title": "cliffhanger",
+  "display_name": "Cliffhanger (USA, Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Cliffhanger (USA, Europe).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0109D7DA",
+          "desc": "Infinite Lives",
+          "address": "0xD7DA"
+        },
+        {
+          "code": "0110D6DA",
+          "desc": "Infinite Energy",
+          "address": "0xD6DA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

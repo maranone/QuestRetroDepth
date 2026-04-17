@@ -1,0 +1,30 @@
+game_name=Dragon Ball Z II - Gekishin Freeza!! (Japan) (Rev 1)
+game_key=dragon_ball_z_ii_gekishin_freeza_japan_rev_1
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0330	damage_taken	0x0330	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0330	death	0x0330	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0202	damage_taken	0x0202	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0202	death	0x0202	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0203	damage_taken	0x0203	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0203	death	0x0203	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0214	damage_taken	0x0214	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0214	death	0x0214	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0215	damage_taken	0x0215	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0215	death	0x0215	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0226	damage_taken	0x0226	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0226	death	0x0226	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0227	damage_taken	0x0227	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0227	death	0x0227	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0238	damage_taken	0x0238	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0238	death	0x0238	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0239	damage_taken	0x0239	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0239	death	0x0239	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_024a	damage_taken	0x024A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_024a	death	0x024A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_024b	damage_taken	0x024B	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_024b	death	0x024B	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_025c	damage_taken	0x025C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_025c	death	0x025C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_025d	damage_taken	0x025D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_025d	death	0x025D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

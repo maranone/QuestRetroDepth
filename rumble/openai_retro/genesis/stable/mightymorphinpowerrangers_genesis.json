@@ -1,0 +1,103 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "MightyMorphinPowerRangers",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\MightyMorphinPowerRangers-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "MightyMorphinPowerRangers-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "damage_taken_health_ffd080",
+      "event": "damage_taken",
+      "watch": [
+        {
+          "absolute_address": "0xFFD080",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "address": "0xFFD080",
+          "ram_offset": 53376
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.85,
+          "duration_ms": 90
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "High-confidence gameplay field.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFFD080",
+          "raw_type": "|i1"
+        }
+      ]
+    },
+    {
+      "id": "death_health_ffd080",
+      "event": "death",
+      "watch": [
+        {
+          "absolute_address": "0xFFD080",
+          "size": 1,
+          "value_type": "int",
+          "byte_order": "native",
+          "raw_type": "|i1",
+          "address": "0xFFD080",
+          "ram_offset": 53376
+        }
+      ],
+      "condition": "prev > 0 && curr == 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 600
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Derived from health reaching zero.",
+      "source_fields": [
+        {
+          "name": "health",
+          "address": "0xFFD080",
+          "raw_type": "|i1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "enemyHealth",
+      "meta": {
+        "address": 16765440,
+        "type": "|i1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time",
+      "meta": {
+        "address": 16761104,
+        "type": "|d1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

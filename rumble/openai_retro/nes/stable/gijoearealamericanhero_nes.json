@@ -1,0 +1,111 @@
+{
+  "schema": "qrd.rumble.nes.v1",
+  "game": {
+    "name": "GIJoeARealAmericanHero",
+    "system": "nes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\GIJoeARealAmericanHero-Nes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "GIJoeARealAmericanHero-Nes"
+  },
+  "triggers": [
+    {
+      "id": "game_over_gameover_0420",
+      "event": "game_over",
+      "watch": [
+        {
+          "absolute_address": "0x0420",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0x0420",
+          "ram_offset": 1056
+        }
+      ],
+      "condition": "prev == 0 && curr != 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Explicit game-over flag.",
+      "source_fields": [
+        {
+          "name": "gameover",
+          "address": "0x0420",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_0724",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x0724",
+          "size": 2,
+          "value_type": "uint",
+          "byte_order": "little",
+          "raw_type": "<u2",
+          "address": "0x0724",
+          "ram_offset": 1828
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0x0724",
+          "raw_type": "<u2"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "health1",
+      "meta": {
+        "address": 1609,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "health2",
+      "meta": {
+        "address": 1611,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "health3",
+      "meta": {
+        "address": 1613,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

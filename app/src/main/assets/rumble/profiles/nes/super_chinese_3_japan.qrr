@@ -1,0 +1,13 @@
+game_name=Super Chinese 3 (Japan)
+game_key=super_chinese_3_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_04e3	damage_taken	0x04E3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04e3	death	0x04E3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_03c3	damage_taken	0x03C3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03c3	death	0x03C3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_03b4	pickup	0x03B4	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_03b5	pickup	0x03B5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_03b9	level_complete	0x03B9	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_03bb	damage_taken	0x03BB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03bb	death	0x03BB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,27 @@
+{
+  "system": "gbc",
+  "normalized_title": "hotwheelsstunttrackdriver",
+  "display_name": "Hot Wheels - Stunt Track Driver (USA, Europe) (SGB Enhanced) (GB Compatible)",
+  "aliases": [
+    "Hot Wheels - Stunt Track Driver (USA, Europe) (SGB Enhanced) (GB Compatible)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Hot Wheels - Stunt Track Driver (USA, Europe) (SGB Enhanced) (GB Compatible).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0102DDC7",
+          "desc": "Display Unused Super Game Boy Link Error Message",
+          "address": "0xDDC7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

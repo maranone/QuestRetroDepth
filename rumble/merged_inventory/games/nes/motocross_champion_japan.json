@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "motocrosschampion",
+  "display_name": "Motocross Champion (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Motocross Champion (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0638:00",
+          "desc": "Time Modifier",
+          "address": "0x0638"
+        },
+        {
+          "code": "0681:00",
+          "desc": "Lap Modifier",
+          "address": "0x0681"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

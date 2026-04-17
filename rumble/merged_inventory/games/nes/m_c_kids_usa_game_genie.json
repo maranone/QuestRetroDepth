@@ -1,0 +1,160 @@
+{
+  "system": "nes",
+  "normalized_title": "mckids",
+  "display_name": "M.C. Kids (USA) (Game Genie)",
+  "aliases": [
+    "M.C. Kids (USA) (Beta)",
+    "M.C. Kids (USA) (Game Genie)",
+    "M.C. Kids (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\mckids_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x057D",
+        "0x057F"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MCKids-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x057F",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x057D",
+          "type": "|d1"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\M.C. Kids (USA).cht",
+      "total_cheat_rows": 37,
+      "raw_entry_count": 21,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "0580:03",
+          "desc": "Infinite Energy",
+          "address": "0x0580"
+        },
+        {
+          "code": "057F:03",
+          "desc": "Infinite Lives",
+          "address": "0x057F"
+        },
+        {
+          "code": "0520:02",
+          "desc": "Invincibility",
+          "address": "0x0520"
+        },
+        {
+          "code": "057D:99",
+          "desc": "Infinite M Arches",
+          "address": "0x057D"
+        },
+        {
+          "code": "0460:80",
+          "desc": "Y Axys",
+          "address": "0x0460"
+        },
+        {
+          "code": "ESNAUIEY",
+          "desc": "Invincibility",
+          "address": "0x055B"
+        },
+        {
+          "code": "0480:09",
+          "desc": "Moon Jump",
+          "address": "0x0480"
+        },
+        {
+          "code": "OZXEGOSX",
+          "desc": "Jump in Midair",
+          "address": "0x01AC"
+        },
+        {
+          "code": "GLXEIPEK",
+          "desc": "Jump in Midair",
+          "address": "0x01BD"
+        },
+        {
+          "code": "XTXETPGE",
+          "desc": "Jump in Midair",
+          "address": "0x01EE"
+        },
+        {
+          "code": "AEXALGPA",
+          "desc": "Access Any Level on the Map",
+          "address": "0x040B"
+        },
+        {
+          "code": "AOVEGTGE",
+          "desc": "Super Jump",
+          "address": "0x069C"
+        },
+        {
+          "code": "AEVEPTLA",
+          "desc": "Super Jump",
+          "address": "0x0689"
+        },
+        {
+          "code": "KIPEPO",
+          "desc": "Music Is Way Different And So Is This Code",
+          "address": "0x01D1"
+        },
+        {
+          "code": "LUGEIE",
+          "desc": "Lives Say Zero And So Does The Amount Of Arches You Gather Except On The Map And You Have Invisible Lives Just Not Hearts (Card Thing Says Different At End Of Level)",
+          "address": "0x00B5"
+        },
+        {
+          "code": "POTOZX",
+          "desc": "Stay In The Air When You Jump And Move Sideways",
+          "address": "0x0292"
+        },
+        {
+          "code": "057F:99",
+          "desc": "Infinite Lives",
+          "address": "0x057F"
+        },
+        {
+          "code": "057D:99",
+          "desc": "Infinite Arches",
+          "address": "0x057D"
+        },
+        {
+          "code": "0580:04",
+          "desc": "Infinite Health",
+          "address": "0x0580"
+        },
+        {
+          "code": "06DE:00",
+          "desc": "Level Modifier",
+          "address": "0x06DE"
+        },
+        {
+          "code": "0520:69",
+          "desc": "Invincible/Enemies Walk Toward You And Go Away Or Stick Around You",
+          "address": "0x0520"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "proyakyuusatsujinjiken",
+  "display_name": "Pro Yakyuu Satsujin Jiken! (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Pro Yakyuu Satsujin Jiken! (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0205:09",
+          "desc": "Infinite LP (Ten's Digit)",
+          "address": "0x0205"
+        },
+        {
+          "code": "0201:09",
+          "desc": "Infinite LP (One's Digit)",
+          "address": "0x0201"
+        },
+        {
+          "code": "6606:09",
+          "desc": "Infinite LP (One's Digit)",
+          "address": "0x6606"
+        },
+        {
+          "code": "6604:09",
+          "desc": "Infinite LP (Ten's Digit)",
+          "address": "0x6604"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

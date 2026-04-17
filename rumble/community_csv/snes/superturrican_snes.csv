@@ -2,8 +2,8 @@
 # game_name=Super Turrican (World) (Action Replay)
 # match_names=superturrican|superturricansnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-damage_taken_health_04ff,0x7E04FF,1,uint,prev_gt_curr,,left,0.850,normal,0,90,100,70,
-death_health_04ff,0x7E04FF,1,uint,became_zero,,both,1.000,normal,0,600,400,90,
-life_lost_lives_04fb,0x7E04FB,1,int,prev_gt_curr,,both,0.900,normal,0,300,160,80,
-life_gained_lives_04fb,0x7E04FB,1,int,prev_lt_curr,,both,0.750,normal,0,180,160,50,
-score_score_050c,0x7E050C,6,nibble,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+damage_taken_health_04ff,0x7E04FF,1,uint,prev_gt_curr,,left,0.850,fade_out,0,110,80,70,
+death_health_04ff,0x7E04FF,1,uint,became_zero,,both,1.000,heartbeat,0,600,400,90,
+life_lost_lives_04fb,0x7E04FB,1,int,prev_gt_curr,,both,0.92,fade_in_out,0,300,250,80,
+life_gained_lives_04fb,0x7E04FB,1,int,prev_lt_curr,,both,0.750,fade_in,0,180,200,50,
+score_score_050c,0x7E050C,6,nibble,prev_lt_curr,,right,0.350,burst,0,70,15,10,

@@ -1,0 +1,78 @@
+{
+  "system": "nes",
+  "normalized_title": "frontline",
+  "display_name": "Front Line (Japan)",
+  "aliases": [
+    "Front Line (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\frontline_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0021",
+        "0x03B4"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\FrontLine-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0021",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x03B4",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Front Line (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0025:01",
+          "desc": "Invincible",
+          "address": "0x0025"
+        },
+        {
+          "code": "002F:0B",
+          "desc": "Start As Tank",
+          "address": "0x002F"
+        },
+        {
+          "code": "0030:E3",
+          "desc": "Start As Tank",
+          "address": "0x0030"
+        },
+        {
+          "code": "003B:17",
+          "desc": "Start As Tank",
+          "address": "0x003B"
+        },
+        {
+          "code": "003C:E3",
+          "desc": "Start As Tank",
+          "address": "0x003C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "boxingfever",
+  "display_name": "Boxing Fever (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Boxing Fever (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 31,
+      "raw_entry_count": 52,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1000E8E0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200E8E0"
+        },
+        {
+          "code": "32015129",
+          "desc": "Infinite Health P1",
+          "address": "0x02015129"
+        },
+        {
+          "code": "32015129",
+          "desc": "No Health P1",
+          "address": "0x02015129"
+        },
+        {
+          "code": "3201512D",
+          "desc": "Infinite Stamina P1",
+          "address": "0x0201512D"
+        },
+        {
+          "code": "3201512D",
+          "desc": "No Stamina P1",
+          "address": "0x0201512D"
+        },
+        {
+          "code": "32015379",
+          "desc": "Infinite Health CPU",
+          "address": "0x02015379"
+        },
+        {
+          "code": "32015379",
+          "desc": "No Health CPU",
+          "address": "0x02015379"
+        },
+        {
+          "code": "3201537D",
+          "desc": "Infinite Stamina CPU",
+          "address": "0x0201537D"
+        },
+        {
+          "code": "3201537D",
+          "desc": "No Stamina CPU",
+          "address": "0x0201537D"
+        },
+        {
+          "code": "32014F64",
+          "desc": "Always Round 1",
+          "address": "0x02014F64"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Tiny",
+          "address": "0x0200F53C"
+        },
+        {
+          "code": "3200F688",
+          "desc": "P1 Always Tiny",
+          "address": "0x0200F688"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Mickey",
+          "address": "0x0200F53C"
+        },
+        {
+          "code": "3200F688",
+          "desc": "P1 Always Mickey",
+          "address": "0x0200F688"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Jackpot",
+          "address": "0x0200F53C"
+        },
+        {
+          "code": "3200F688",
+          "desc": "P1 Always Jackpot",
+          "address": "0x0200F688"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Royal",
+          "address": "0x0200F53C"
+        },
+        {
+          "code": "3200F688",
+          "desc": "P1 Always Royal",
+          "address": "0x0200F688"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Hammer",
+          "address": "0x0200F53C"
+        },
+        {
+          "code": "3200F688",
+          "desc": "P1 Always Hammer",
+          "address": "0x0200F688"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Major",
+          "address": "0x0200F53C"
+        },
+        {
+          "code": "3200F688",
+          "desc": "P1 Always Major",
+          "address": "0x0200F688"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Nadine",
+          "address": "0x0200F53C"
+        },
+        {
+          "code": "3200F688",
+          "desc": "P1 Always Nadine",
+          "address": "0x0200F688"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Maiagaru",
+          "address": "0x0200F53C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Boxing Fever (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 31,
+      "raw_entry_count": 52,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1000E8E0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200E8E0"
+        },
+        {
+          "code": "32015129",
+          "desc": "Infinite Health P1",
+          "address": "0x02015129"
+        },
+        {
+          "code": "32015129",
+          "desc": "No Health P1",
+          "address": "0x02015129"
+        },
+        {
+          "code": "3201512D",
+          "desc": "Infinite Stamina P1",
+          "address": "0x0201512D"
+        },
+        {
+          "code": "3201512D",
+          "desc": "No Stamina P1",
+          "address": "0x0201512D"
+        },
+        {
+          "code": "32015379",
+          "desc": "Infinite Health CPU",
+          "address": "0x02015379"
+        },
+        {
+          "code": "32015379",
+          "desc": "No Health CPU",
+          "address": "0x02015379"
+        },
+        {
+          "code": "3201537D",
+          "desc": "Infinite Stamina CPU",
+          "address": "0x0201537D"
+        },
+        {
+          "code": "3201537D",
+          "desc": "No Stamina CPU",
+          "address": "0x0201537D"
+        },
+        {
+          "code": "32014F64",
+          "desc": "Always Round 1",
+          "address": "0x02014F64"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Tiny",
+          "address": "0x0200F53C"
+        },
+        {
+          "code": "3200F688",
+          "desc": "P1 Always Tiny",
+          "address": "0x0200F688"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Mickey",
+          "address": "0x0200F53C"
+        },
+        {
+          "code": "3200F688",
+          "desc": "P1 Always Mickey",
+          "address": "0x0200F688"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Jackpot",
+          "address": "0x0200F53C"
+        },
+        {
+          "code": "3200F688",
+          "desc": "P1 Always Jackpot",
+          "address": "0x0200F688"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Royal",
+          "address": "0x0200F53C"
+        },
+        {
+          "code": "3200F688",
+          "desc": "P1 Always Royal",
+          "address": "0x0200F688"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Hammer",
+          "address": "0x0200F53C"
+        },
+        {
+          "code": "3200F688",
+          "desc": "P1 Always Hammer",
+          "address": "0x0200F688"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Major",
+          "address": "0x0200F53C"
+        },
+        {
+          "code": "3200F688",
+          "desc": "P1 Always Major",
+          "address": "0x0200F688"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Nadine",
+          "address": "0x0200F53C"
+        },
+        {
+          "code": "3200F688",
+          "desc": "P1 Always Nadine",
+          "address": "0x0200F688"
+        },
+        {
+          "code": "3200F53C",
+          "desc": "P1 Always Maiagaru",
+          "address": "0x0200F53C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

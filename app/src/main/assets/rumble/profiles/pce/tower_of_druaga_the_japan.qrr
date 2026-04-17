@@ -1,0 +1,13 @@
+game_name=Tower of Druaga, The (Japan)
+game_key=tower_of_druaga_the_japan
+system=pce
+integration_tier=contrib
+trigger	damage_taken_health_1f008f	damage_taken	0x1F008F	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1f008f	death	0x1F008F	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_1f008e	damage_taken	0x1F008E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1f008e	death	0x1F008E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_1f0058	pickup	0x1F0058	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_1f1d2a	pickup	0x1F1D2A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_1f1d2e	pickup	0x1F1D2E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_1f1d2f	pickup	0x1F1D2F	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_1f1d33	pickup	0x1F1D33	1	uint	little	prev != curr	0.8	1	right:0.250:18

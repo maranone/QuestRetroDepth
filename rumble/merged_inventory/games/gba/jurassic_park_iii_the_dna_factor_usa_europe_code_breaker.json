@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "jurassicparkiiidnafactor",
+  "display_name": "Jurassic Park III - The DNA Factor (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Jurassic Park III - The DNA Factor (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10000F8C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000F8C"
+        },
+        {
+          "code": "33007008",
+          "desc": "Max Blue DNA Particles",
+          "address": "0x02007008"
+        },
+        {
+          "code": "33007009",
+          "desc": "Max Red DNA Particles",
+          "address": "0x02007009"
+        },
+        {
+          "code": "3300700A",
+          "desc": "Max Orange DNA Particles",
+          "address": "0x0200700A"
+        },
+        {
+          "code": "3300700B",
+          "desc": "Max Green DNA Particles",
+          "address": "0x0200700B"
+        },
+        {
+          "code": "32000069",
+          "desc": "Infinite Health",
+          "address": "0x02000069"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Jurassic Park III - The DNA Factor (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10000F8C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000F8C"
+        },
+        {
+          "code": "33007008",
+          "desc": "Max Blue DNA Particles",
+          "address": "0x02007008"
+        },
+        {
+          "code": "33007009",
+          "desc": "Max Red DNA Particles",
+          "address": "0x02007009"
+        },
+        {
+          "code": "3300700A",
+          "desc": "Max Orange DNA Particles",
+          "address": "0x0200700A"
+        },
+        {
+          "code": "3300700B",
+          "desc": "Max Green DNA Particles",
+          "address": "0x0200700B"
+        },
+        {
+          "code": "32000069",
+          "desc": "Infinite Health",
+          "address": "0x02000069"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

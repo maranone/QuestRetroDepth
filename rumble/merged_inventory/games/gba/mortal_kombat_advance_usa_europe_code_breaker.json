@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "mortalkombatadvance",
+  "display_name": "Mortal Kombat Advance (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Mortal Kombat Advance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 47,
+      "raw_entry_count": 57,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "100040F0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020040F0"
+        },
+        {
+          "code": "32000020",
+          "desc": "Infinite Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "72000020",
+          "desc": "75% Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32000020",
+          "desc": "75% Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "72000020",
+          "desc": "50% Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32000020",
+          "desc": "50% Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "72000020",
+          "desc": "25% Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32000020",
+          "desc": "25% Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "72000020",
+          "desc": "1-Hit Death P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32000020",
+          "desc": "1-Hit Death P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32000020",
+          "desc": "No Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32000088",
+          "desc": "Infinite Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "72000088",
+          "desc": "75% Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "32000088",
+          "desc": "75% Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "72000088",
+          "desc": "50% Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "32000088",
+          "desc": "50% Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "72000088",
+          "desc": "25% Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "32000088",
+          "desc": "25% Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "72000088",
+          "desc": "1-Hit Death P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "32000088",
+          "desc": "1-Hit Death P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "32000088",
+          "desc": "No Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "320001AC",
+          "desc": "Infinite Time",
+          "address": "0x020001AC"
+        },
+        {
+          "code": "72000028",
+          "desc": "P1 Needs 1 Win To Win",
+          "address": "0x02000028"
+        },
+        {
+          "code": "32000029",
+          "desc": "P1 Needs 1 Win To Win",
+          "address": "0x02000029"
+        },
+        {
+          "code": "32000029",
+          "desc": "P1 Never Wins",
+          "address": "0x02000029"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Mortal Kombat Advance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 47,
+      "raw_entry_count": 57,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "100040F0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020040F0"
+        },
+        {
+          "code": "32000020",
+          "desc": "Infinite Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "72000020",
+          "desc": "75% Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32000020",
+          "desc": "75% Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "72000020",
+          "desc": "50% Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32000020",
+          "desc": "50% Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "72000020",
+          "desc": "25% Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32000020",
+          "desc": "25% Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "72000020",
+          "desc": "1-Hit Death P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32000020",
+          "desc": "1-Hit Death P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32000020",
+          "desc": "No Health P1",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32000088",
+          "desc": "Infinite Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "72000088",
+          "desc": "75% Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "32000088",
+          "desc": "75% Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "72000088",
+          "desc": "50% Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "32000088",
+          "desc": "50% Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "72000088",
+          "desc": "25% Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "32000088",
+          "desc": "25% Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "72000088",
+          "desc": "1-Hit Death P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "32000088",
+          "desc": "1-Hit Death P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "32000088",
+          "desc": "No Health P2",
+          "address": "0x02000088"
+        },
+        {
+          "code": "320001AC",
+          "desc": "Infinite Time",
+          "address": "0x020001AC"
+        },
+        {
+          "code": "72000028",
+          "desc": "P1 Needs 1 Win To Win",
+          "address": "0x02000028"
+        },
+        {
+          "code": "32000029",
+          "desc": "P1 Needs 1 Win To Win",
+          "address": "0x02000029"
+        },
+        {
+          "code": "32000029",
+          "desc": "P1 Never Wins",
+          "address": "0x02000029"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

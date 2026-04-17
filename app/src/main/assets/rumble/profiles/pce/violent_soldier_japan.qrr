@@ -1,0 +1,6 @@
+game_name=Violent Soldier (Japan)
+game_key=violent_soldier_japan
+system=pce
+integration_tier=contrib
+trigger	life_lost_lives_1f19f3	life_lost	0x1F19F3	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1f19f3	life_gained	0x1F19F3	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

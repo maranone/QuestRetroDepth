@@ -1,0 +1,27 @@
+game_name=Shining Force (USA, Europe) (Action Replay)
+game_key=shining_force_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff9c8f	pickup	0xFF9C8F	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_ffc755	damage_taken	0xFFC755	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffc755	death	0xFFC755	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffc705	damage_taken	0xFFC705	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffc705	death	0xFFC705	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffc665	damage_taken	0xFFC665	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffc665	death	0xFFC665	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffc72d	damage_taken	0xFFC72D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffc72d	death	0xFFC72D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffc6b5	damage_taken	0xFFC6B5	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffc6b5	death	0xFFC6B5	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffc68d	damage_taken	0xFFC68D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffc68d	death	0xFFC68D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffc6dd	damage_taken	0xFFC6DD	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffc6dd	death	0xFFC6DD	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffc63d	damage_taken	0xFFC63D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffc63d	death	0xFFC63D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffc7a5	damage_taken	0xFFC7A5	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffc7a5	death	0xFFC7A5	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffc7cd	damage_taken	0xFFC7CD	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffc7cd	death	0xFFC7CD	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_ffc77d	damage_taken	0xFFC77D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffc77d	death	0xFFC77D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

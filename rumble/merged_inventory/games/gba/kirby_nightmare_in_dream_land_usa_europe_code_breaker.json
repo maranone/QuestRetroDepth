@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "kirbynightmareindreamland",
+  "display_name": "Kirby - Nightmare in Dream Land (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Kirby - Nightmare in Dream Land (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "100011E6",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020011E6"
+        },
+        {
+          "code": "32005588",
+          "desc": "Infinite Health",
+          "address": "0x02005588"
+        },
+        {
+          "code": "32007D48",
+          "desc": "Infinite Lives",
+          "address": "0x02007D48"
+        },
+        {
+          "code": "33002182",
+          "desc": "Invincible",
+          "address": "0x02002182"
+        },
+        {
+          "code": "3200E610",
+          "desc": "Unlock All Sub-Games",
+          "address": "0x0200E610"
+        },
+        {
+          "code": "3300238C",
+          "desc": "World Modifier",
+          "address": "0x0200238C"
+        },
+        {
+          "code": "330023EC",
+          "desc": "Level Modifier",
+          "address": "0x020023EC"
+        },
+        {
+          "code": "33002468",
+          "desc": "Room Modifier",
+          "address": "0x02002468"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Kirby - Nightmare in Dream Land (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "100011E6",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020011E6"
+        },
+        {
+          "code": "32005588",
+          "desc": "Infinite Health",
+          "address": "0x02005588"
+        },
+        {
+          "code": "32007D48",
+          "desc": "Infinite Lives",
+          "address": "0x02007D48"
+        },
+        {
+          "code": "33002182",
+          "desc": "Invincible",
+          "address": "0x02002182"
+        },
+        {
+          "code": "3200E610",
+          "desc": "Unlock All Sub-Games",
+          "address": "0x0200E610"
+        },
+        {
+          "code": "3300238C",
+          "desc": "World Modifier",
+          "address": "0x0200238C"
+        },
+        {
+          "code": "330023EC",
+          "desc": "Level Modifier",
+          "address": "0x020023EC"
+        },
+        {
+          "code": "33002468",
+          "desc": "Room Modifier",
+          "address": "0x02002468"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

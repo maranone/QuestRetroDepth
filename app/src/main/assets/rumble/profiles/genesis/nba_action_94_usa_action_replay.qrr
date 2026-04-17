@@ -1,0 +1,6 @@
+game_name=NBA Action '94 (USA) (Action Replay)
+game_key=nba_action_94_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff01d0	score	0xFF01D0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff01d2	score	0xFF01D2	1	uint	little	prev < curr	0.8	1	right:0.350:60

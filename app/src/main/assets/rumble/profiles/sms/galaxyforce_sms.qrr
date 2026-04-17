@@ -1,0 +1,8 @@
+game_name=Galaxy Force (USA, Europe) (Action Replay)
+game_key=GalaxyForce-Sms
+system=sms
+integration_tier=stable
+trigger	damage_taken_health_c07f	damage_taken	0xC07F	1	int	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_c07f	death	0xC07F	1	int	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	score_score_c010	score	0xC010	6	nibble	big	prev < curr	0.8	1	right:0.350:60
+trigger	score_scoreinprogress_c017	score	0xC017	2	uint	big	prev < curr	0.8	1	right:0.350:60

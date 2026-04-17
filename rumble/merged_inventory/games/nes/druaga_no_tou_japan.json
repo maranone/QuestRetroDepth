@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "druaganotou",
+  "display_name": "Druaga no Tou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Druaga no Tou (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "00CB:03",
+          "desc": "Infinite Lives",
+          "address": "0x00CB"
+        },
+        {
+          "code": "00B7:69",
+          "desc": "Infinite Time",
+          "address": "0x00B7"
+        },
+        {
+          "code": "0099:40",
+          "desc": "Doors Always Opened",
+          "address": "0x0099"
+        },
+        {
+          "code": "00C0:00",
+          "desc": "Stage &quot;Floor&quot; Modifier",
+          "address": "0x00C0"
+        },
+        {
+          "code": "00E5:01",
+          "desc": "Treasure Instantly Appears",
+          "address": "0x00E5"
+        },
+        {
+          "code": "00C0:00",
+          "desc": "Stage Floor Modifier",
+          "address": "0x00C0"
+        },
+        {
+          "code": "SZLOOT",
+          "desc": "Infinite Lives",
+          "address": "0x06A1"
+        },
+        {
+          "code": "SUAPOS",
+          "desc": "Infinite Time",
+          "address": "0x0531"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

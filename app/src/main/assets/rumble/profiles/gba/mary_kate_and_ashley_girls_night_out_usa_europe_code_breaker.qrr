@@ -1,0 +1,6 @@
+game_name=Mary-Kate and Ashley - Girls Night Out (USA, Europe) (Code Breaker)
+game_key=mary_kate_and_ashley_girls_night_out_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_0200375c	score	0x0200375C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0200375e	score	0x0200375E	1	uint	little	prev < curr	0.8	1	right:0.350:60

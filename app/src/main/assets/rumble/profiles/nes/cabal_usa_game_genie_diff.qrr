@@ -1,0 +1,24 @@
+game_name=Cabal (USA) (Game Genie) (diff)
+game_key=cabal_usa_game_genie_diff
+system=nes
+integration_tier=contrib
+trigger	score_score_00df	score	0x00DF	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00de	score	0x00DE	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00dd	score	0x00DD	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00dc	score	0x00DC	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00db	score	0x00DB	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00da	score	0x00DA	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	life_lost_lives_00d5	life_lost	0x00D5	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00d5	life_gained	0x00D5	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_00e5	score	0x00E5	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00e4	score	0x00E4	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00e3	score	0x00E3	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00e2	score	0x00E2	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00e1	score	0x00E1	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_00e0	score	0x00E0	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	level_complete_level_00d2	level_complete	0x00D2	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_00d3	level_complete	0x00D3	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_06fe	life_lost	0x06FE	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_06fe	life_gained	0x06FE	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_02aa	life_lost	0x02AA	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02aa	life_gained	0x02AA	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

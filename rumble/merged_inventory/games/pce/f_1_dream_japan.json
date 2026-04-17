@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "f1dream",
+  "display_name": "F-1 Dream (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\F-1 Dream (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f0060:00",
+          "desc": "Unlimited Time",
+          "address": "0x1F0060"
+        },
+        {
+          "code": "1f0061:00",
+          "desc": "Unlimited Time",
+          "address": "0x1F0061"
+        },
+        {
+          "code": "1f006e:26",
+          "desc": "No Tire Damage",
+          "address": "0x1F006E"
+        },
+        {
+          "code": "1f006f:26",
+          "desc": "No G/B Damage",
+          "address": "0x1F006F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

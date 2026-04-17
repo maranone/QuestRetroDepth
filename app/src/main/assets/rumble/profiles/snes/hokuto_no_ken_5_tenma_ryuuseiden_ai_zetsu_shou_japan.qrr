@@ -1,0 +1,10 @@
+game_name=Hokuto no Ken 5 - Tenma Ryuuseiden Ai Zetsu Shou (Japan)
+game_key=hokuto_no_ken_5_tenma_ryuuseiden_ai_zetsu_shou_japan
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_2ecb	pickup	0x7E2ECB	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_2ecc	pickup	0x7E2ECC	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_3058	damage_taken	0x7E3058	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_3058	death	0x7E3058	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_6af0	damage_taken	0x7E6AF0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_6af0	death	0x7E6AF0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

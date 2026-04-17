@@ -1,0 +1,127 @@
+{
+  "system": "nes",
+  "normalized_title": "akumajouspecialbokudraculakun",
+  "display_name": "Akumajou Special - Boku Dracula-kun (Japan) (Game Genie)",
+  "aliases": [
+    "Akumajou Special - Boku Dracula-kun (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Akumajou Special - Boku Dracula-kun (Japan).cht",
+      "total_cheat_rows": 25,
+      "raw_entry_count": 21,
+      "distinct_address_count": 20,
+      "sample_raw_entries": [
+        {
+          "code": "0032:03",
+          "desc": "Infinite Lives",
+          "address": "0x0032"
+        },
+        {
+          "code": "00AA:05",
+          "desc": "Infinite Health",
+          "address": "0x00AA"
+        },
+        {
+          "code": "0066:05",
+          "desc": "Set Max. Health Units [5]",
+          "address": "0x0066"
+        },
+        {
+          "code": "005D:FA",
+          "desc": "Gain More Coins/Infinite Coins",
+          "address": "0x005D"
+        },
+        {
+          "code": "00A8:50",
+          "desc": "Set Auto Max. Fire Charge",
+          "address": "0x00A8"
+        },
+        {
+          "code": "003C:00",
+          "desc": "Stage Select",
+          "address": "0x003C"
+        },
+        {
+          "code": "00C0:02",
+          "desc": "Invincibility",
+          "address": "0x00C0"
+        },
+        {
+          "code": "0062:02",
+          "desc": "Super Jump",
+          "address": "0x0062"
+        },
+        {
+          "code": "00A6:00",
+          "desc": "Jump to Walk On Air",
+          "address": "0x00A6"
+        },
+        {
+          "code": "00AC:02",
+          "desc": "Power Modifier",
+          "address": "0x00AC"
+        },
+        {
+          "code": "00B5:00",
+          "desc": "Jump With Slow Descent",
+          "address": "0x00B5"
+        },
+        {
+          "code": "03F0:00",
+          "desc": "Background Palette Modifier",
+          "address": "0x03F0"
+        },
+        {
+          "code": "03F1:00",
+          "desc": "Character Palette Modifiers",
+          "address": "0x03F1"
+        },
+        {
+          "code": "03F2:00",
+          "desc": "Character Palette Modifiers",
+          "address": "0x03F2"
+        },
+        {
+          "code": "03F3:00",
+          "desc": "Character Palette Modifiers",
+          "address": "0x03F3"
+        },
+        {
+          "code": "05D8:00",
+          "desc": "Boss One Hit Kill",
+          "address": "0x05D8"
+        },
+        {
+          "code": "003C:00",
+          "desc": "Start On Stage",
+          "address": "0x003C"
+        },
+        {
+          "code": "GGXETOOK",
+          "desc": "Walk on Spikes",
+          "address": "0x01CE"
+        },
+        {
+          "code": "ALXEYOLE",
+          "desc": "Walk on Spikes",
+          "address": "0x01BF"
+        },
+        {
+          "code": "OAUAAPEI",
+          "desc": "Walk on Spikes",
+          "address": "0x0108"
+        },
+        {
+          "code": "XTUAPPTE",
+          "desc": "Walk on Spikes",
+          "address": "0x0169"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

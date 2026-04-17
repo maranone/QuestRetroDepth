@@ -1,0 +1,8 @@
+game_name=NHL Hockey (USA) (Action Replay)
+game_key=nhl_hockey_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffc6da	score	0xFFC6DA	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffca3e	score	0xFFCA3E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffd914	score	0xFFD914	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffd99c	score	0xFFD99C	1	uint	little	prev < curr	0.8	1	right:0.350:60

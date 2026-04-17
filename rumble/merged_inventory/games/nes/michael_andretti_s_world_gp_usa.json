@@ -1,0 +1,95 @@
+{
+  "system": "nes",
+  "normalized_title": "michaelandrettisworldgp",
+  "display_name": "Michael Andretti's World GP (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Michael Andretti's World GP (USA).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 15,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "0565:00",
+          "desc": "Infinite Time (One's Digits)",
+          "address": "0x0565"
+        },
+        {
+          "code": "051F:00",
+          "desc": "Laps Remaining Modifier (Ignore HUD)",
+          "address": "0x051F"
+        },
+        {
+          "code": "03BD:00",
+          "desc": "Fake Infinite Time (One's Digits)",
+          "address": "0x03BD"
+        },
+        {
+          "code": "04C3:6A",
+          "desc": "Auto Race At 999+ MPH (Player 1)",
+          "address": "0x04C3"
+        },
+        {
+          "code": "04C4:66",
+          "desc": "Auto Race At 999+ MPH (Player 2/CPU 2)",
+          "address": "0x04C4"
+        },
+        {
+          "code": "04C5:66",
+          "desc": "Auto Race At 999+ MPH (CPU 3)",
+          "address": "0x04C5"
+        },
+        {
+          "code": "04C6:66",
+          "desc": "Auto Race At 999+ MPH (CPU 4)",
+          "address": "0x04C6"
+        },
+        {
+          "code": "05D6:64",
+          "desc": "Set 100 Points For GP Mode (Player 1)",
+          "address": "0x05D6"
+        },
+        {
+          "code": "05D7:00",
+          "desc": "Set 0 Points For GP Mode (CPU 2)",
+          "address": "0x05D7"
+        },
+        {
+          "code": "05D8:00",
+          "desc": "Set 0 Points For GP Mode (CPU 3)",
+          "address": "0x05D8"
+        },
+        {
+          "code": "05D9:00",
+          "desc": "Set 0 Points For GP Mode (CPU 4)",
+          "address": "0x05D9"
+        },
+        {
+          "code": "051F:01",
+          "desc": "Race Only 2 Laps For Every Stage (Player 1)",
+          "address": "0x051F"
+        },
+        {
+          "code": "0520:01",
+          "desc": "Race Only 2 Laps For Every Stage (Player 2)",
+          "address": "0x0520"
+        },
+        {
+          "code": "05D5:00",
+          "desc": "Stage Level Select",
+          "address": "0x05D5"
+        },
+        {
+          "code": "05D4:00",
+          "desc": "Stage Round Select",
+          "address": "0x05D4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

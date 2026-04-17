@@ -1,0 +1,148 @@
+{
+  "system": "gba",
+  "normalized_title": "f14tomcat",
+  "display_name": "F-14 Tomcat (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\F-14 Tomcat (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "10021D80",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02021D80"
+        },
+        {
+          "code": "330030F8",
+          "desc": "Guns Never Overheat",
+          "address": "0x020030F8"
+        },
+        {
+          "code": "830030F2",
+          "desc": "Infinite Fuel",
+          "address": "0x020030F2"
+        },
+        {
+          "code": "33004548",
+          "desc": "Infinite Lives",
+          "address": "0x02004548"
+        },
+        {
+          "code": "83003148",
+          "desc": "Infinite M-61",
+          "address": "0x02003148"
+        },
+        {
+          "code": "330031F9",
+          "desc": "Take No Damage",
+          "address": "0x020031F9"
+        },
+        {
+          "code": "33003464",
+          "desc": "All Planes Destroyed",
+          "address": "0x02003464"
+        },
+        {
+          "code": "8300314A",
+          "desc": "Infinite Aim 9",
+          "address": "0x0200314A"
+        },
+        {
+          "code": "8300314C",
+          "desc": "Infinite Aim 7",
+          "address": "0x0200314C"
+        },
+        {
+          "code": "8300314E",
+          "desc": "Infinite Aim 54",
+          "address": "0x0200314E"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press R For Speed Modifier",
+          "address": "0x02000130"
+        },
+        {
+          "code": "330030DA",
+          "desc": "Press R For Speed Modifier",
+          "address": "0x020030DA"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\F-14 Tomcat (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "10021D80",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02021D80"
+        },
+        {
+          "code": "330030F8",
+          "desc": "Guns Never Overheat",
+          "address": "0x020030F8"
+        },
+        {
+          "code": "830030F2",
+          "desc": "Infinite Fuel",
+          "address": "0x020030F2"
+        },
+        {
+          "code": "33004548",
+          "desc": "Infinite Lives",
+          "address": "0x02004548"
+        },
+        {
+          "code": "83003148",
+          "desc": "Infinite M-61",
+          "address": "0x02003148"
+        },
+        {
+          "code": "330031F9",
+          "desc": "Take No Damage",
+          "address": "0x020031F9"
+        },
+        {
+          "code": "33003464",
+          "desc": "All Planes Destroyed",
+          "address": "0x02003464"
+        },
+        {
+          "code": "8300314A",
+          "desc": "Infinite Aim 9",
+          "address": "0x0200314A"
+        },
+        {
+          "code": "8300314C",
+          "desc": "Infinite Aim 7",
+          "address": "0x0200314C"
+        },
+        {
+          "code": "8300314E",
+          "desc": "Infinite Aim 54",
+          "address": "0x0200314E"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press R For Speed Modifier",
+          "address": "0x02000130"
+        },
+        {
+          "code": "330030DA",
+          "desc": "Press R For Speed Modifier",
+          "address": "0x020030DA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

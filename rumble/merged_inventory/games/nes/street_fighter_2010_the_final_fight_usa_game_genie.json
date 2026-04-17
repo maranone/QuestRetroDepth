@@ -1,0 +1,107 @@
+{
+  "system": "nes",
+  "normalized_title": "streetfighter2010finalfight",
+  "display_name": "Street Fighter 2010 - The Final Fight (USA) (Game Genie)",
+  "aliases": [
+    "Street Fighter 2010 - The Final Fight (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Street Fighter 2010 - The Final Fight (USA).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 17,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "AAEETAGA",
+          "desc": "Start with 1 life",
+          "address": "0x008E"
+        },
+        {
+          "code": "PAEETAGE",
+          "desc": "Start with 9 lives",
+          "address": "0x008E"
+        },
+        {
+          "code": "SZUATPVG",
+          "desc": "Infinite lives",
+          "address": "0x012E"
+        },
+        {
+          "code": "GZOAZPSA",
+          "desc": "Keep power-ups after losing a life",
+          "address": "0x012A"
+        },
+        {
+          "code": "ZESESPPA",
+          "desc": "Faster Ken",
+          "address": "0x018D"
+        },
+        {
+          "code": "0649:0A",
+          "desc": "Infinite Time",
+          "address": "0x0649"
+        },
+        {
+          "code": "00B8:09",
+          "desc": "Infinite Time",
+          "address": "0x00B8"
+        },
+        {
+          "code": "00B8:09",
+          "desc": "Infinite Time",
+          "address": "0x00B8"
+        },
+        {
+          "code": "00B5:05",
+          "desc": "Infinite Lives",
+          "address": "0x00B5"
+        },
+        {
+          "code": "00B1:0A",
+          "desc": "Infinite Health",
+          "address": "0x00B1"
+        },
+        {
+          "code": "00B2:0A",
+          "desc": "Maximum Power",
+          "address": "0x00B2"
+        },
+        {
+          "code": "007D:0A",
+          "desc": "Dimensional Gate Opens Quicker",
+          "address": "0x007D"
+        },
+        {
+          "code": "00B4:01",
+          "desc": "Always Have the O Power-Up",
+          "address": "0x00B4"
+        },
+        {
+          "code": "00B3:01",
+          "desc": "Always Have the S Power-Up",
+          "address": "0x00B3"
+        },
+        {
+          "code": "TENEUAGA",
+          "desc": "Super Jump",
+          "address": "0x008B"
+        },
+        {
+          "code": "YENEUAGA",
+          "desc": "Mega Jump",
+          "address": "0x008B"
+        },
+        {
+          "code": "AENEUAGE",
+          "desc": "Ultra Jump",
+          "address": "0x008B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

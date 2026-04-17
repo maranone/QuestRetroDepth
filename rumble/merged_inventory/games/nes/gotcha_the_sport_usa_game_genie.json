@@ -1,0 +1,112 @@
+{
+  "system": "nes",
+  "normalized_title": "gotchasport",
+  "display_name": "Gotcha! - The Sport! (USA) (Game Genie)",
+  "aliases": [
+    "Gotcha! - The Sport! (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gotcha! - The Sport! (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 18,
+      "distinct_address_count": 16,
+      "sample_raw_entries": [
+        {
+          "code": "ZAEOKAPA",
+          "desc": "Start with double rations of ammo",
+          "address": "0x008C"
+        },
+        {
+          "code": "IAEPOAGA",
+          "desc": "Increase timer to 59 seconds",
+          "address": "0x0009"
+        },
+        {
+          "code": "PAEPVAIE",
+          "desc": "Increase timer to 59 seconds",
+          "address": "0x000E"
+        },
+        {
+          "code": "ZAEPOAGA",
+          "desc": "Decrease timer to 25 seconds",
+          "address": "0x0009"
+        },
+        {
+          "code": "IAEPVAIA",
+          "desc": "Decrease timer to 25 seconds",
+          "address": "0x000E"
+        },
+        {
+          "code": "0601:00",
+          "desc": "Score Modier",
+          "address": "0x0601"
+        },
+        {
+          "code": "0602:00",
+          "desc": "Score Modier",
+          "address": "0x0602"
+        },
+        {
+          "code": "0603:00",
+          "desc": "Score Modier",
+          "address": "0x0603"
+        },
+        {
+          "code": "0604:00",
+          "desc": "Score Modier",
+          "address": "0x0604"
+        },
+        {
+          "code": "0605:00",
+          "desc": "Score Modier",
+          "address": "0x0605"
+        },
+        {
+          "code": "0606:00",
+          "desc": "Score Modier",
+          "address": "0x0606"
+        },
+        {
+          "code": "061C:01",
+          "desc": "Round Modifier",
+          "address": "0x061C"
+        },
+        {
+          "code": "061D:01",
+          "desc": "Round Modifier",
+          "address": "0x061D"
+        },
+        {
+          "code": "061E:09",
+          "desc": "Infinite Time",
+          "address": "0x061E"
+        },
+        {
+          "code": "061F:09",
+          "desc": "Infinite Time",
+          "address": "0x061F"
+        },
+        {
+          "code": "061A:09",
+          "desc": "Infinite Ammo",
+          "address": "0x061A"
+        },
+        {
+          "code": "061B:09",
+          "desc": "Infinite Ammo",
+          "address": "0x061B"
+        },
+        {
+          "code": "05F1:99",
+          "desc": "Enemies Will Not Shoot At You",
+          "address": "0x05F1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

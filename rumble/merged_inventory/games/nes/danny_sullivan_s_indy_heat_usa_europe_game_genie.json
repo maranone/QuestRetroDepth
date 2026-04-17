@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "dannysullivansindyheat",
+  "display_name": "Danny Sullivan's Indy Heat (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Danny Sullivan's Indy Heat (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Danny Sullivan's Indy Heat (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "SXVASVSO",
+          "desc": "Infinite Fuel",
+          "address": "0x062D"
+        },
+        {
+          "code": "NYUOZLGV",
+          "desc": "Start With $255,000",
+          "address": "0x03FA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

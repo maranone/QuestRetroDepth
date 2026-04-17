@@ -2,6 +2,6 @@
 # game_name=Pac-Mania (USA, Europe) (Action Replay)
 # match_names=pacmania|pacmaniagenesis
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-life_lost_lives_ff428b,0xFF428B,1,int,prev_gt_curr,,both,0.900,normal,0,300,160,80,
-life_gained_lives_ff428b,0xFF428B,1,int,prev_lt_curr,,both,0.750,normal,0,180,160,50,
-score_score_ff4283,0xFF4283,3,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+life_lost_lives_ff428b,0xFF428B,1,int,prev_gt_curr,,both,0.92,fade_in_out,0,300,250,80,
+life_gained_lives_ff428b,0xFF428B,1,int,prev_lt_curr,,both,0.750,fade_in,0,180,200,50,
+score_score_ff4283,0xFF4283,3,uint,prev_lt_curr,,right,0.350,burst,0,70,15,10,

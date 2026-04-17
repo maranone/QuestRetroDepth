@@ -1,0 +1,12 @@
+game_name=Tiny Toon Adventures - Wacky Sports Challenge (USA) (Action Replay)
+game_key=tiny_toon_adventures_wacky_sports_challenge_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	score_score_1877	score	0x7E1877	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_1878	score	0x7E1878	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_1879	score	0x7E1879	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_187a	score	0x7E187A	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_187b	score	0x7E187B	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_187c	score	0x7E187C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_187d	score	0x7E187D	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_187e	score	0x7E187E	1	uint	little	prev < curr	0.8	1	right:0.350:60

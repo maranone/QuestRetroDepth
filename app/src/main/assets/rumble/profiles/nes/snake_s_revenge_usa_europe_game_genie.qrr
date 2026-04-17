@@ -1,0 +1,6 @@
+game_name=Snake's Revenge (USA, Europe) (Game Genie)
+game_key=snake_s_revenge_usa_europe_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_03a9	pickup	0x03A9	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_042d	pickup	0x042D	1	uint	little	prev != curr	0.8	1	right:0.250:18

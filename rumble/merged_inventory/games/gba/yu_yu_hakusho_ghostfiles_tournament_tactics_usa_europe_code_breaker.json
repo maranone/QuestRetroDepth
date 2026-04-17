@@ -1,0 +1,38 @@
+{
+  "system": "gba",
+  "normalized_title": "yuyuhakushoghostfilestournamenttactics",
+  "display_name": "Yu Yu Hakusho - Ghostfiles - Tournament Tactics (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Yu Yu Hakusho - Ghostfiles - Tournament Tactics (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "100323FE",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020323FE"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Yu Yu Hakusho - Ghostfiles - Tournament Tactics (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "100323FE",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020323FE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,5 @@
+game_name=Top Striker (Japan)
+game_key=top_striker_japan
+system=nes
+integration_tier=contrib
+trigger	score_score_0430	score	0x0430	1	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "familyfeud",
+  "display_name": "Family Feud (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Family Feud (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "ZESOGALE",
+          "desc": "10 Strike Game",
+          "address": "0x008C"
+        },
+        {
+          "code": "04CA:63",
+          "desc": "Infinite Time To Answer A Question",
+          "address": "0x04CA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

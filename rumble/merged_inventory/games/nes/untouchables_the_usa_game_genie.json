@@ -1,0 +1,182 @@
+{
+  "system": "nes",
+  "normalized_title": "untouchables",
+  "display_name": "Untouchables, The (USA) (Game Genie)",
+  "aliases": [
+    "Untouchables, The (USA) (Game Genie)",
+    "Untouchables, The (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\untouchables_nes.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0x009B"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Untouchables-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "enemies_remaining",
+          "address": "0x00C8",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x009B",
+          "type": ">n6"
+        },
+        {
+          "name": "time",
+          "address": "0x0097",
+          "type": ">n4"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Untouchables, The (USA).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 26,
+      "distinct_address_count": 18,
+      "sample_raw_entries": [
+        {
+          "code": "SXUAZGVG",
+          "desc": "Infinite time on scenes 1 and 4",
+          "address": "0x042A"
+        },
+        {
+          "code": "GEXELPZA",
+          "desc": "More time on scene 1",
+          "address": "0x018B"
+        },
+        {
+          "code": "PEXELPZA",
+          "desc": "Less time on scene 1",
+          "address": "0x018B"
+        },
+        {
+          "code": "TAXELAGA",
+          "desc": "More time on scene 2",
+          "address": "0x008B"
+        },
+        {
+          "code": "ZAXELAGA",
+          "desc": "Less time on scene 2",
+          "address": "0x008B"
+        },
+        {
+          "code": "TAXEYAGA",
+          "desc": "More time on scene 3",
+          "address": "0x008F"
+        },
+        {
+          "code": "ZAXEYAGA",
+          "desc": "Less time on scene 3",
+          "address": "0x008F"
+        },
+        {
+          "code": "TAXAPAIA",
+          "desc": "More time on scene 5",
+          "address": "0x0009"
+        },
+        {
+          "code": "LAXAPAIA",
+          "desc": "Less time on scene 5",
+          "address": "0x0009"
+        },
+        {
+          "code": "ZAOEAAPA",
+          "desc": "More time on scene 7",
+          "address": "0x0088"
+        },
+        {
+          "code": "SLOEAGVI",
+          "desc": "Infinite energy on scenes 1 and 4 only",
+          "address": "0x04B8"
+        },
+        {
+          "code": "SXKAATVG",
+          "desc": "Infinite energy on scene 2 only",
+          "address": "0x0628"
+        },
+        {
+          "code": "AZNETGAP",
+          "desc": "More ammo picked up on scene 2",
+          "address": "0x04AE"
+        },
+        {
+          "code": "IANETGAP",
+          "desc": "Less ammo picked up on scene 2",
+          "address": "0x048E"
+        },
+        {
+          "code": "PAOEGATE",
+          "desc": "More ammo picked up on scene 7",
+          "address": "0x008C"
+        },
+        {
+          "code": "00C6:02",
+          "desc": "Infinite Ammo",
+          "address": "0x00C6"
+        },
+        {
+          "code": "00C8:02",
+          "desc": "Infinite Ammo",
+          "address": "0x00C8"
+        },
+        {
+          "code": "009A:09",
+          "desc": "Infinite Time",
+          "address": "0x009A"
+        },
+        {
+          "code": "0092:40",
+          "desc": "Infinite Energy",
+          "address": "0x0092"
+        },
+        {
+          "code": "00C8:00",
+          "desc": "Enemy Remaining Modifier",
+          "address": "0x00C8"
+        },
+        {
+          "code": "0092:43",
+          "desc": "Infinite Health",
+          "address": "0x0092"
+        },
+        {
+          "code": "00C6:02",
+          "desc": "Infinite Ammo",
+          "address": "0x00C6"
+        },
+        {
+          "code": "009A:09",
+          "desc": "Infinite Time (Seconds - One's Digit)",
+          "address": "0x009A"
+        },
+        {
+          "code": "0099:09",
+          "desc": "Infinite Time (Seconds - Ten's Digit)",
+          "address": "0x0099"
+        },
+        {
+          "code": "0098:09",
+          "desc": "Infinite Time (Ten's Digit)",
+          "address": "0x0098"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

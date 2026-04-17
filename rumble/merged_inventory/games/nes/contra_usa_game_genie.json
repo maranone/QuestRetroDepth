@@ -1,0 +1,156 @@
+{
+  "system": "nes",
+  "normalized_title": "contra",
+  "display_name": "Contra (USA) (Game Genie)",
+  "aliases": [
+    "Contra (Rumbles)",
+    "Contra (USA) (Game Genie)",
+    "Contra (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Contra (USA).cht",
+      "total_cheat_rows": 59,
+      "raw_entry_count": 37,
+      "distinct_address_count": 35,
+      "sample_raw_entries": [
+        {
+          "code": "00AE:41",
+          "desc": "Totally Invincible P1",
+          "address": "0x00AE"
+        },
+        {
+          "code": "0033:09",
+          "desc": "Infinite Lives P2",
+          "address": "0x0033"
+        },
+        {
+          "code": "0024:01",
+          "desc": "Enable 30 Lives Option",
+          "address": "0x0024"
+        },
+        {
+          "code": "00AB:00",
+          "desc": "Weapon Modifier P2",
+          "address": "0x00AB"
+        },
+        {
+          "code": "OIGEAU",
+          "desc": "Weapon Capsules Fly By Slower",
+          "address": "0x03D0"
+        },
+        {
+          "code": "APAEUY",
+          "desc": "One Hit Kills",
+          "address": "0x0793"
+        },
+        {
+          "code": "0368:27",
+          "desc": "Shoot Enemies, Literally!",
+          "address": "0x0368"
+        },
+        {
+          "code": "0369:27",
+          "desc": "Shoot Enemies, Literally!",
+          "address": "0x0369"
+        },
+        {
+          "code": "036A:27",
+          "desc": "Shoot Enemies, Literally!",
+          "address": "0x036A"
+        },
+        {
+          "code": "036B:27",
+          "desc": "Shoot Enemies, Literally!",
+          "address": "0x036B"
+        },
+        {
+          "code": "0090:01",
+          "desc": "Alternate Invincible",
+          "address": "0x0090"
+        },
+        {
+          "code": "00B2:00",
+          "desc": "Walk On Water",
+          "address": "0x00B2"
+        },
+        {
+          "code": "0030:00",
+          "desc": "Level Modifier",
+          "address": "0x0030"
+        },
+        {
+          "code": "00AE:77",
+          "desc": "Invincible",
+          "address": "0x00AE"
+        },
+        {
+          "code": "00AA:16",
+          "desc": "Choose Your Weapon! (All Rapid Fire!)",
+          "address": "0x00AA"
+        },
+        {
+          "code": "0032:09",
+          "desc": "Infinite Lives P1",
+          "address": "0x0032"
+        },
+        {
+          "code": "00AE:4D",
+          "desc": "Invincible P1 (Flashing)",
+          "address": "0x00AE"
+        },
+        {
+          "code": "00B0:FE",
+          "desc": "Invincibility (Star Effect) (Player 1)",
+          "address": "0x00B0"
+        },
+        {
+          "code": "00AF:4D",
+          "desc": "Invincible P2 (Flashing)",
+          "address": "0x00AF"
+        },
+        {
+          "code": "00B1:FE",
+          "desc": "Invincibility (Star Effect) (Player 2)",
+          "address": "0x00B1"
+        },
+        {
+          "code": "057D:01",
+          "desc": "Kill Any Enemy Or Boss With One Hit, Any Weapon",
+          "address": "0x057D"
+        },
+        {
+          "code": "057E:01",
+          "desc": "Kill Any Enemy Or Boss With One Hit, Any Weapon",
+          "address": "0x057E"
+        },
+        {
+          "code": "057F:01",
+          "desc": "Kill Any Enemy Or Boss With One Hit, Any Weapon",
+          "address": "0x057F"
+        },
+        {
+          "code": "0580:01",
+          "desc": "Kill Any Enemy Or Boss With One Hit, Any Weapon",
+          "address": "0x0580"
+        },
+        {
+          "code": "0581:01",
+          "desc": "Kill Any Enemy Or Boss With One Hit, Any Weapon",
+          "address": "0x0581"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Contra (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

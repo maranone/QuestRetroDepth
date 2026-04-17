@@ -1,0 +1,77 @@
+{
+  "system": "nes",
+  "normalized_title": "uncannyxmen",
+  "display_name": "Uncanny X-Men, The (USA) (Game Genie)",
+  "aliases": [
+    "Uncanny X-Men, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Uncanny X-Men, The (USA).cht",
+      "total_cheat_rows": 22,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "SXEEXIST",
+          "desc": "Infinite energy",
+          "address": "0x05AA"
+        },
+        {
+          "code": "053E:99",
+          "desc": "Infinite Health (Character 1)",
+          "address": "0x053E"
+        },
+        {
+          "code": "055E:99",
+          "desc": "Infinite Health (Character 2)",
+          "address": "0x055E"
+        },
+        {
+          "code": "0023:00",
+          "desc": "Character Highlighter Modifier",
+          "address": "0x0023"
+        },
+        {
+          "code": "053D:00",
+          "desc": "Character Modifier P1",
+          "address": "0x053D"
+        },
+        {
+          "code": "055D:00",
+          "desc": "Character Modifier P2",
+          "address": "0x055D"
+        },
+        {
+          "code": "0063:00",
+          "desc": "Stage Highlighter Modifier",
+          "address": "0x0063"
+        },
+        {
+          "code": "SLVAKKSO",
+          "desc": "Walk Anywhere",
+          "address": "0x043C"
+        },
+        {
+          "code": "SLNAXKSO",
+          "desc": "Walk Anywhere",
+          "address": "0x043A"
+        },
+        {
+          "code": "0544:63",
+          "desc": "Alternate Invincibility",
+          "address": "0x0544"
+        },
+        {
+          "code": "00B8:A3",
+          "desc": "Unlimited time for boss fight and escaping stage",
+          "address": "0x00B8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

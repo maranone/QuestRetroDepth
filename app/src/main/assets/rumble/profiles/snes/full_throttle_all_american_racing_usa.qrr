@@ -1,0 +1,6 @@
+game_name=Full Throttle - All-American Racing (USA)
+game_key=full_throttle_all_american_racing_usa
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_06c3	pickup	0x7E06C3	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_06c5	pickup	0x7E06C5	1	uint	little	prev != curr	0.8	1	right:0.250:18

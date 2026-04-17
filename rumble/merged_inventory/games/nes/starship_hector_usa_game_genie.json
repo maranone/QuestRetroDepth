@@ -1,0 +1,74 @@
+{
+  "system": "nes",
+  "normalized_title": "starshiphector",
+  "display_name": "Starship Hector (USA) (Game Genie)",
+  "aliases": [
+    "Starship Hector (USA) (Game Genie)",
+    "Starship Hector (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\starshiphector_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00AF",
+        "0x06E0"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\StarshipHector-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x00AF",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x06E0",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Starship Hector (USA).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "00B0:10",
+          "desc": "Infinite Energy",
+          "address": "0x00B0"
+        },
+        {
+          "code": "005F:01",
+          "desc": "Play as Bomberking",
+          "address": "0x005F"
+        },
+        {
+          "code": "00AF:09",
+          "desc": "Infinite Lives",
+          "address": "0x00AF"
+        },
+        {
+          "code": "00B0:10",
+          "desc": "Infinite Health",
+          "address": "0x00B0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

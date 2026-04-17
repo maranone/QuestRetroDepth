@@ -1,7 +1,0 @@
-game_name=SuperPunchOut
-game_key=SuperPunchOut-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_88f	damage_taken	0x7E088F	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	enemy_defeated_1_98f	enemy_defeated	0x7E098F	1	uint	native	prev != curr	0.55	1	left:0.510:100
-trigger	enemy_defeated_3_b9b	enemy_defeated	0x7E0B9B	1	uint	native	prev != curr	0.55	1	left:0.510:100

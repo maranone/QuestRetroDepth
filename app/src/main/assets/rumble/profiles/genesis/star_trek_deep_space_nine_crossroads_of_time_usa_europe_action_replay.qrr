@@ -1,0 +1,6 @@
+game_name=Star Trek - Deep Space Nine - Crossroads of Time (USA, Europe) (Action Replay)
+game_key=star_trek_deep_space_nine_crossroads_of_time_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	level_complete_level_ffde0d	level_complete	0xFFDE0D	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_ffe001	level_complete	0xFFE001	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

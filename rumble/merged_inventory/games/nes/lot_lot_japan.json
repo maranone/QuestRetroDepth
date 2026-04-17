@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "lotlot",
+  "display_name": "Lot Lot (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Lot Lot (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0062:03",
+          "desc": "Infinite Lives",
+          "address": "0x0062"
+        },
+        {
+          "code": "0042:D2",
+          "desc": "Freeze Crab",
+          "address": "0x0042"
+        },
+        {
+          "code": "0117:0A",
+          "desc": "50 Point Walls Always Open",
+          "address": "0x0117"
+        },
+        {
+          "code": "011B:0A",
+          "desc": "50 Point Walls Always Open",
+          "address": "0x011B"
+        },
+        {
+          "code": "011F:0A",
+          "desc": "50 Point Walls Always Open",
+          "address": "0x011F"
+        },
+        {
+          "code": "0123:0A",
+          "desc": "50 Point Walls Always Open",
+          "address": "0x0123"
+        },
+        {
+          "code": "SUKEZPVI",
+          "desc": "Infinite Lives",
+          "address": "0x01BA"
+        },
+        {
+          "code": "SZVPIPSA",
+          "desc": "Freeze Crab",
+          "address": "0x012D"
+        },
+        {
+          "code": "PEAELE",
+          "desc": "Start With 9 Lives",
+          "address": "0x0083"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

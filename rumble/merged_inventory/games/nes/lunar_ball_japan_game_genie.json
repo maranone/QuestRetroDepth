@@ -1,0 +1,42 @@
+{
+  "system": "nes",
+  "normalized_title": "lunarball",
+  "display_name": "Lunar Ball (Japan) (Game Genie)",
+  "aliases": [
+    "Lunar Ball (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Lunar Ball (Japan).cht",
+      "total_cheat_rows": 16,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "036A:03",
+          "desc": "P1 Infinite Shots",
+          "address": "0x036A"
+        },
+        {
+          "code": "0368:63",
+          "desc": "P1 Infinite Balls",
+          "address": "0x0368"
+        },
+        {
+          "code": "036B:03",
+          "desc": "P2 Infinite Shots",
+          "address": "0x036B"
+        },
+        {
+          "code": "0369:63",
+          "desc": "P2 Infinite Balls",
+          "address": "0x0369"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

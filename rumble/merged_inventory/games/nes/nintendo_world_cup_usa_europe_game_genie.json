@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "nintendoworldcup",
+  "display_name": "Nintendo World Cup (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Nintendo World Cup (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Nintendo World Cup (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "KPZEEE",
+          "desc": "Messed-Up Graphics",
+          "address": "0x0090"
+        },
+        {
+          "code": "OOOEEE",
+          "desc": "Funny Players",
+          "address": "0x0098"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

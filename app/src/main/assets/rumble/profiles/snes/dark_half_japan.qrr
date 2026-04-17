@@ -1,0 +1,12 @@
+game_name=Dark Half (Japan)
+game_key=dark_half_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_9909	damage_taken	0x7E9909	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_9909	death	0x7E9909	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_9925	damage_taken	0x7E9925	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_9925	death	0x7E9925	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_9929	damage_taken	0x7E9929	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_9929	death	0x7E9929	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_992d	damage_taken	0x7E992D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_992d	death	0x7E992D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

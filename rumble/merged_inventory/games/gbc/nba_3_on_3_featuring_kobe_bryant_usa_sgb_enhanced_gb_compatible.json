@@ -1,0 +1,30 @@
+{
+  "system": "gbc",
+  "normalized_title": "nba3on3featuringkobebryant",
+  "display_name": "NBA 3 on 3 featuring Kobe Bryant (USA) (SGB Enhanced) (GB Compatible)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\NBA 3 on 3 featuring Kobe Bryant (USA) (SGB Enhanced) (GB Compatible).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0100C7C2",
+          "desc": "Score Modifier Team 1",
+          "address": "0xC7C2"
+        },
+        {
+          "code": "0100C8C2",
+          "desc": "Score Modifier Team 2",
+          "address": "0xC8C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

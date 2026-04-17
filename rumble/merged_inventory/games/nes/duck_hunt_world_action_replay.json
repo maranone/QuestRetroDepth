@@ -1,0 +1,41 @@
+{
+  "system": "nes",
+  "normalized_title": "duckhunt",
+  "display_name": "Duck Hunt (World) (Action Replay)",
+  "aliases": [
+    "Duck Hunt (World) (Action Replay)",
+    "Duck Hunt (World) (Game Genie)",
+    "Duck Hunt (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Duck Hunt (World).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "00C1:00",
+          "desc": "Round Modifier",
+          "address": "0x00C1"
+        },
+        {
+          "code": "00BA:03",
+          "desc": "Infinite Ammo",
+          "address": "0x00BA"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Duck Hunt (World).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

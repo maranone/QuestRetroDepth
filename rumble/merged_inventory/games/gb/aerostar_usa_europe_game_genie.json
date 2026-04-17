@@ -1,0 +1,28 @@
+{
+  "system": "gb",
+  "normalized_title": "aerostar",
+  "display_name": "Aerostar (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Aerostar (USA, Europe) (GameShark)",
+    "Aerostar (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Aerostar (USA, Europe).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0101C3FF",
+          "desc": "Invincibility",
+          "address": "0xC3FF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

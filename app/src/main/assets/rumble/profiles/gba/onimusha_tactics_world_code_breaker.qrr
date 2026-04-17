@@ -1,0 +1,28 @@
+game_name=Onimusha Tactics (World) (Code Breaker)
+game_key=onimusha_tactics_world_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_02000286	damage_taken	0x02000286	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02000286	death	0x02000286	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02000288	damage_taken	0x02000288	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02000288	death	0x02000288	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020002ca	damage_taken	0x020002CA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020002ca	death	0x020002CA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020002cc	damage_taken	0x020002CC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020002cc	death	0x020002CC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020004ea	damage_taken	0x020004EA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020004ea	death	0x020004EA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020004ec	damage_taken	0x020004EC	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020004ec	death	0x020004EC	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0200052e	damage_taken	0x0200052E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0200052e	death	0x0200052E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02000530	damage_taken	0x02000530	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02000530	death	0x02000530	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02000572	damage_taken	0x02000572	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02000572	death	0x02000572	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02000574	damage_taken	0x02000574	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02000574	death	0x02000574	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020004a6	damage_taken	0x020004A6	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020004a6	death	0x020004A6	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020004a8	damage_taken	0x020004A8	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020004a8	death	0x020004A8	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

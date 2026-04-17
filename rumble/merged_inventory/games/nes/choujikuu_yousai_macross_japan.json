@@ -1,0 +1,58 @@
+{
+  "system": "nes",
+  "normalized_title": "choujikuuyousaimacross",
+  "display_name": "Choujikuu Yousai - Macross (Japan)",
+  "aliases": [
+    "Choujikuu Yousai - Macross (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\choujikuuyousaimacross_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00E1",
+        "0x00F4"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\ChoujikuuYousaiMacross-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x00F4",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x00E1",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Choujikuu Yousai - Macross (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "00EB:30",
+          "desc": "Infinite Energy",
+          "address": "0x00EB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

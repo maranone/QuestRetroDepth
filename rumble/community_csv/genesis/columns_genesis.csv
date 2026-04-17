@@ -2,5 +2,5 @@
 # game_name=Columns (World) (Action Replay)
 # match_names=columns|columnsgenesis
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-game_over_gameover_ffc840,0xFFC840,1,uint,became_nonzero,,both,1.000,normal,0,1000,400,100,
-score_score_ffc81c,0xFFC81C,4,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+game_over_gameover_ffc840,0xFFC840,1,uint,became_nonzero,,both,1.000,heartbeat,0,1000,400,100,
+score_score_ffc81c,0xFFC81C,4,uint,prev_lt_curr,,right,0.350,burst,0,70,15,10,

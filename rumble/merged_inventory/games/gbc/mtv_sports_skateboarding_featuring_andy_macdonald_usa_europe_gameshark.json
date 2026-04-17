@@ -1,0 +1,53 @@
+{
+  "system": "gbc",
+  "normalized_title": "mtvsportsskateboardingfeaturingandymacdonald",
+  "display_name": "MTV Sports - Skateboarding featuring Andy MacDonald (USA, Europe) (GameShark)",
+  "aliases": [
+    "MTV Sports - Skateboarding featuring Andy MacDonald (USA, Europe) (Xploder)",
+    "MTV Sports - Skateboarding featuring Andy MacDonald (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\MTV Sports - Skateboarding featuring Andy MacDonald (USA, Europe).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0100C1C7",
+          "desc": "Score Modifier",
+          "address": "0xC1C7"
+        },
+        {
+          "code": "0100C2C7",
+          "desc": "Score Modifier",
+          "address": "0xC2C7"
+        },
+        {
+          "code": "0100C3C7",
+          "desc": "Score Modifier",
+          "address": "0xC3C7"
+        },
+        {
+          "code": "0199C1C7",
+          "desc": "Max Score",
+          "address": "0xC1C7"
+        },
+        {
+          "code": "0199C2C7",
+          "desc": "Max Score",
+          "address": "0xC2C7"
+        },
+        {
+          "code": "0199C3C7",
+          "desc": "Max Score",
+          "address": "0xC3C7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

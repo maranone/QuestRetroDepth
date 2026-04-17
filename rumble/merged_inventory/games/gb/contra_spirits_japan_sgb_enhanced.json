@@ -1,0 +1,32 @@
+{
+  "system": "gb",
+  "normalized_title": "contraspirits",
+  "display_name": "Contra Spirits (Japan) (SGB Enhanced)",
+  "aliases": [
+    "Contra Spirits (Japan) (SGB Enhanced)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Contra Spirits (Japan) (SGB Enhanced).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0103D8C1",
+          "desc": "Infinite Lives",
+          "address": "0xD8C1"
+        },
+        {
+          "code": "0109DAC1",
+          "desc": "Infinite Smart Bombs",
+          "address": "0xDAC1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "romancia",
+  "display_name": "Romancia (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Romancia (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0153:14",
+          "desc": "Infinite Energy",
+          "address": "0x0153"
+        },
+        {
+          "code": "0001:17",
+          "desc": "Sound Test",
+          "address": "0x0001"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "ikariiii",
+  "display_name": "Ikari III (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ikari III (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0424:20",
+          "desc": "P1 Infinite Health",
+          "address": "0x0424"
+        },
+        {
+          "code": "0425:20",
+          "desc": "P2 Infinite Health",
+          "address": "0x0425"
+        },
+        {
+          "code": "043A:63",
+          "desc": "Infinite Lives",
+          "address": "0x043A"
+        },
+        {
+          "code": "0438:00",
+          "desc": "Weapon Modifier P1",
+          "address": "0x0438"
+        },
+        {
+          "code": "0439:00",
+          "desc": "Weapon Modifier P2",
+          "address": "0x0439"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

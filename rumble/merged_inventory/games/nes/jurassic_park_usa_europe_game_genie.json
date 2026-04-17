@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "jurassicpark",
+  "display_name": "Jurassic Park (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Jurassic Park (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Jurassic Park (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 2,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "PAVPAGZE",
+          "desc": "More Bullets Picked Up From Small Dinosaurs",
+          "address": "0x0408"
+        },
+        {
+          "code": "PAVPAGZA",
+          "desc": "Fewer Bullets Picked Up From Small Dinosaurs",
+          "address": "0x0408"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

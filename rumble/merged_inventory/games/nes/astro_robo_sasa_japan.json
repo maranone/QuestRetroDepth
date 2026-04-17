@@ -1,0 +1,161 @@
+{
+  "system": "nes",
+  "normalized_title": "astrorobosasa",
+  "display_name": "Astro Robo Sasa (Japan)",
+  "aliases": [
+    "Astro Robo Sasa (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\astrorobosasa_nes.json",
+      "trigger_count": 1,
+      "field_names": [
+        "score"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0x0024"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AstroRoboSasa-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "energy",
+          "address": "0x003C",
+          "type": "<n4"
+        },
+        {
+          "name": "score",
+          "address": "0x0024",
+          "type": "<n4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Astro Robo Sasa (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 22,
+      "distinct_address_count": 22,
+      "sample_raw_entries": [
+        {
+          "code": "0023:00",
+          "desc": "Stage modifier",
+          "address": "0x0023"
+        },
+        {
+          "code": "003C:00",
+          "desc": "P1 shots modifier",
+          "address": "0x003C"
+        },
+        {
+          "code": "003D:00",
+          "desc": "P1 shots modifier",
+          "address": "0x003D"
+        },
+        {
+          "code": "003E:00",
+          "desc": "P1 shots modifier",
+          "address": "0x003E"
+        },
+        {
+          "code": "003F:00",
+          "desc": "P1 shots modifier",
+          "address": "0x003F"
+        },
+        {
+          "code": "0040:00",
+          "desc": "P2 shots modifier",
+          "address": "0x0040"
+        },
+        {
+          "code": "0041:00",
+          "desc": "P2 shots modifier",
+          "address": "0x0041"
+        },
+        {
+          "code": "0042:00",
+          "desc": "P2 shots modifier",
+          "address": "0x0042"
+        },
+        {
+          "code": "0043:00",
+          "desc": "P2 shots modifier",
+          "address": "0x0043"
+        },
+        {
+          "code": "0024:00",
+          "desc": "P1 score modifier",
+          "address": "0x0024"
+        },
+        {
+          "code": "0025:00",
+          "desc": "P1 score modifier",
+          "address": "0x0025"
+        },
+        {
+          "code": "0026:00",
+          "desc": "P1 score modifier",
+          "address": "0x0026"
+        },
+        {
+          "code": "0027:00",
+          "desc": "P1 score modifier",
+          "address": "0x0027"
+        },
+        {
+          "code": "0028:00",
+          "desc": "P1 score modifier",
+          "address": "0x0028"
+        },
+        {
+          "code": "0029:00",
+          "desc": "P1 score modifier",
+          "address": "0x0029"
+        },
+        {
+          "code": "002C:00",
+          "desc": "P2 score modifier",
+          "address": "0x002C"
+        },
+        {
+          "code": "002D:00",
+          "desc": "P2 score modifier",
+          "address": "0x002D"
+        },
+        {
+          "code": "002E:00",
+          "desc": "P2 score modifier",
+          "address": "0x002E"
+        },
+        {
+          "code": "002F:00",
+          "desc": "P2 score modifier",
+          "address": "0x002F"
+        },
+        {
+          "code": "0030:00",
+          "desc": "P2 score modifier",
+          "address": "0x0030"
+        },
+        {
+          "code": "0031:00",
+          "desc": "P2 score modifier",
+          "address": "0x0031"
+        },
+        {
+          "code": "SULEIA",
+          "desc": "Infinite Energy",
+          "address": "0x00B5"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

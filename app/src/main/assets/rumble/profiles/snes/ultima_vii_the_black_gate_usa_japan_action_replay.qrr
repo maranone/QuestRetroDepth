@@ -1,0 +1,8 @@
+game_name=Ultima VII - The Black Gate (USA, Japan) (Action Replay)
+game_key=ultima_vii_the_black_gate_usa_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_1ce6	pickup	0x7E1CE6	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_1ce7	pickup	0x7E1CE7	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_1cfa	damage_taken	0x7E1CFA	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_1cfa	death	0x7E1CFA	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

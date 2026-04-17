@@ -1,0 +1,27 @@
+{
+  "system": "gb",
+  "normalized_title": "spudsadventure",
+  "display_name": "Spud's Adventure (USA) (Game Genie)",
+  "aliases": [
+    "Spud's Adventure (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Spud's Adventure (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0101CFE3",
+          "desc": "Always Have Key",
+          "address": "0xCFE3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

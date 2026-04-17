@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "gauntletdarklegacy",
+  "display_name": "Gauntlet - Dark Legacy (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Gauntlet - Dark Legacy (USA) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10002FE0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002FE0"
+        },
+        {
+          "code": "330009D0",
+          "desc": "Invincibility",
+          "address": "0x020009D0"
+        },
+        {
+          "code": "330009D1",
+          "desc": "Infinite Health",
+          "address": "0x020009D1"
+        },
+        {
+          "code": "330009D2",
+          "desc": "Infinite Health",
+          "address": "0x020009D2"
+        },
+        {
+          "code": "330009DF",
+          "desc": "Infinite Potions",
+          "address": "0x020009DF"
+        },
+        {
+          "code": "730009D4",
+          "desc": "Start With 50,0000 Coins",
+          "address": "0x020009D4"
+        },
+        {
+          "code": "830009D4",
+          "desc": "Start With 50,0000 Coins",
+          "address": "0x020009D4"
+        },
+        {
+          "code": "330009D9",
+          "desc": "Level 99",
+          "address": "0x020009D9"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Gauntlet - Dark Legacy (USA) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 8,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "10002FE0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002FE0"
+        },
+        {
+          "code": "330009D0",
+          "desc": "Invincibility",
+          "address": "0x020009D0"
+        },
+        {
+          "code": "330009D1",
+          "desc": "Infinite Health",
+          "address": "0x020009D1"
+        },
+        {
+          "code": "330009D2",
+          "desc": "Infinite Health",
+          "address": "0x020009D2"
+        },
+        {
+          "code": "330009DF",
+          "desc": "Infinite Potions",
+          "address": "0x020009DF"
+        },
+        {
+          "code": "730009D4",
+          "desc": "Start With 50,0000 Coins",
+          "address": "0x020009D4"
+        },
+        {
+          "code": "830009D4",
+          "desc": "Start With 50,0000 Coins",
+          "address": "0x020009D4"
+        },
+        {
+          "code": "330009D9",
+          "desc": "Level 99",
+          "address": "0x020009D9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

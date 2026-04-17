@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "denkiblocks",
+  "display_name": "Denki Blocks! (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Denki Blocks! (World) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1000176C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200176C"
+        },
+        {
+          "code": "83006A2C",
+          "desc": "Infinite Time",
+          "address": "0x02006A2C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Denki Blocks! (World) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1000176C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200176C"
+        },
+        {
+          "code": "83006A2C",
+          "desc": "Infinite Time",
+          "address": "0x02006A2C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

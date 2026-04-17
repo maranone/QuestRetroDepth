@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "dragonballzlegacyofgokuii",
+  "display_name": "Dragon Ball Z - The Legacy of Goku II (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Dragon Ball Z - The Legacy of Goku II (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10020D70",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02020D70"
+        },
+        {
+          "code": "83000E98",
+          "desc": "Infinite Super Saiyan Power/Namek Power",
+          "address": "0x02000E98"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L For All Nameks Found",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83000F68",
+          "desc": "Press L For All Nameks Found",
+          "address": "0x02000F68"
+        },
+        {
+          "code": "83000CFC",
+          "desc": "Can Always Attack (Even When U Have The Egg)",
+          "address": "0x02000CFC"
+        },
+        {
+          "code": "83000EA2",
+          "desc": "Gohan Codes",
+          "address": "0x02000EA2"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Dragon Ball Z - The Legacy of Goku II (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10020D70",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02020D70"
+        },
+        {
+          "code": "83000E98",
+          "desc": "Infinite Super Saiyan Power/Namek Power",
+          "address": "0x02000E98"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L For All Nameks Found",
+          "address": "0x02000130"
+        },
+        {
+          "code": "83000F68",
+          "desc": "Press L For All Nameks Found",
+          "address": "0x02000F68"
+        },
+        {
+          "code": "83000CFC",
+          "desc": "Can Always Attack (Even When U Have The Egg)",
+          "address": "0x02000CFC"
+        },
+        {
+          "code": "83000EA2",
+          "desc": "Gohan Codes",
+          "address": "0x02000EA2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

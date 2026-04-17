@@ -1,0 +1,8 @@
+game_name=M_M's Minis Madness (USA, Europe) (GameShark)
+game_key=m_m_s_minis_madness_usa_europe_gameshark
+system=gbc
+integration_tier=contrib
+trigger	damage_taken_health_dbc0	damage_taken	0xDBC0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_dbc0	death	0xDBC0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_d8c0	life_lost	0xD8C0	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_d8c0	life_gained	0xD8C0	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

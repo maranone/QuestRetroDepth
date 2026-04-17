@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "rockballu",
+  "display_name": "Rockball (Sachen) [U][!]",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rockball (Sachen) [U][!].cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0040:03",
+          "desc": "Infinite Lives P1",
+          "address": "0x0040"
+        },
+        {
+          "code": "0041:03",
+          "desc": "Infinite Lives P2",
+          "address": "0x0041"
+        },
+        {
+          "code": "00E3:00",
+          "desc": "Infinite Time",
+          "address": "0x00E3"
+        },
+        {
+          "code": "0054:01",
+          "desc": "Walk Through Enemies",
+          "address": "0x0054"
+        },
+        {
+          "code": "0058:00",
+          "desc": "Long Range Shot",
+          "address": "0x0058"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

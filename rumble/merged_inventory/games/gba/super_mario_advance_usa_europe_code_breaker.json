@@ -1,0 +1,158 @@
+{
+  "system": "gba",
+  "normalized_title": "supermarioadvance",
+  "display_name": "Super Mario Advance (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Super Mario Advance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 13,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "33001C76",
+          "desc": "Infinite Health",
+          "address": "0x02001C76"
+        },
+        {
+          "code": "74000130",
+          "desc": "Invinc.ON Select+L",
+          "address": "0x02000130"
+        },
+        {
+          "code": "82003500",
+          "desc": "Invinc.ON Select+L",
+          "address": "0x02003500"
+        },
+        {
+          "code": "72003500",
+          "desc": "Invinc.ON Select+L",
+          "address": "0x02003500"
+        },
+        {
+          "code": "83001C88",
+          "desc": "Invinc.ON Select+L",
+          "address": "0x02001C88"
+        },
+        {
+          "code": "74000130",
+          "desc": "Invinc.OFF Select+R",
+          "address": "0x02000130"
+        },
+        {
+          "code": "82003500",
+          "desc": "Invinc.OFF Select+R",
+          "address": "0x02003500"
+        },
+        {
+          "code": "72003500",
+          "desc": "Invinc.OFF Select+R",
+          "address": "0x02003500"
+        },
+        {
+          "code": "83001C88",
+          "desc": "Invinc.OFF Select+R",
+          "address": "0x02001C88"
+        },
+        {
+          "code": "33001CCF",
+          "desc": "Infinite Bonus Room Time",
+          "address": "0x02001CCF"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Moon Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83001C5A",
+          "desc": "Moon Jump",
+          "address": "0x02001C5A"
+        },
+        {
+          "code": "33001BD3",
+          "desc": "Access All Worlds",
+          "address": "0x02001BD3"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Super Mario Advance (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 13,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "33001C76",
+          "desc": "Infinite Health",
+          "address": "0x02001C76"
+        },
+        {
+          "code": "74000130",
+          "desc": "Invinc.ON Select+L",
+          "address": "0x02000130"
+        },
+        {
+          "code": "82003500",
+          "desc": "Invinc.ON Select+L",
+          "address": "0x02003500"
+        },
+        {
+          "code": "72003500",
+          "desc": "Invinc.ON Select+L",
+          "address": "0x02003500"
+        },
+        {
+          "code": "83001C88",
+          "desc": "Invinc.ON Select+L",
+          "address": "0x02001C88"
+        },
+        {
+          "code": "74000130",
+          "desc": "Invinc.OFF Select+R",
+          "address": "0x02000130"
+        },
+        {
+          "code": "82003500",
+          "desc": "Invinc.OFF Select+R",
+          "address": "0x02003500"
+        },
+        {
+          "code": "72003500",
+          "desc": "Invinc.OFF Select+R",
+          "address": "0x02003500"
+        },
+        {
+          "code": "83001C88",
+          "desc": "Invinc.OFF Select+R",
+          "address": "0x02001C88"
+        },
+        {
+          "code": "33001CCF",
+          "desc": "Infinite Bonus Room Time",
+          "address": "0x02001CCF"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Moon Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83001C5A",
+          "desc": "Moon Jump",
+          "address": "0x02001C5A"
+        },
+        {
+          "code": "33001BD3",
+          "desc": "Access All Worlds",
+          "address": "0x02001BD3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

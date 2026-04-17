@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "wagyanland",
+  "display_name": "Wagyan Land (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wagyan Land (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "00B8:01",
+          "desc": "Invincibility",
+          "address": "0x00B8"
+        },
+        {
+          "code": "00DA:FF",
+          "desc": "Stay Invincible",
+          "address": "0x00DA"
+        },
+        {
+          "code": "00A9:03",
+          "desc": "Max Power Shot",
+          "address": "0x00A9"
+        },
+        {
+          "code": "0084:00",
+          "desc": "Level Modifier",
+          "address": "0x0084"
+        },
+        {
+          "code": "008D:28",
+          "desc": "Speed Modifier",
+          "address": "0x008D"
+        },
+        {
+          "code": "0174:02",
+          "desc": "Point Modifier Boss Rounds",
+          "address": "0x0174"
+        },
+        {
+          "code": "0179:45",
+          "desc": "Infinite Time Boss Rounds",
+          "address": "0x0179"
+        },
+        {
+          "code": "017C:55",
+          "desc": "Infinite Time Boss Rounds",
+          "address": "0x017C"
+        },
+        {
+          "code": "0432:C2",
+          "desc": "Infinite Lives",
+          "address": "0x0432"
+        },
+        {
+          "code": "0460:3D",
+          "desc": "Walk Through Walls",
+          "address": "0x0460"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

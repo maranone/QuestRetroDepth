@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "tmnetworkliveinpowerbowl",
+  "display_name": "TM Network - Live in Power Bowl (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\TM Network - Live in Power Bowl (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "008B:56",
+          "desc": "Freeze Red Enemies",
+          "address": "0x008B"
+        },
+        {
+          "code": "008D:FE",
+          "desc": "Freeze Red Enemies",
+          "address": "0x008D"
+        },
+        {
+          "code": "008E:FE",
+          "desc": "Freeze Red Enemies",
+          "address": "0x008E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

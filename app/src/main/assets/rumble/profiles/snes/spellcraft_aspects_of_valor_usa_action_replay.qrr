@@ -1,0 +1,8 @@
+game_name=SpellCraft - Aspects of Valor (USA) (Action Replay)
+game_key=spellcraft_aspects_of_valor_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_0193	enemy_defeated	0x7E0193	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	level_complete_level_00fd	level_complete	0x7E00FD	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_018d	damage_taken	0x7E018D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_018d	death	0x7E018D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "starluster",
+  "display_name": "Star Luster (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Star Luster (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "0045:64",
+          "desc": "Infinite Energy",
+          "address": "0x0045"
+        },
+        {
+          "code": "0043:06",
+          "desc": "Infinite Shield",
+          "address": "0x0043"
+        },
+        {
+          "code": "0066:00",
+          "desc": "Freeze Date Value (Clock)",
+          "address": "0x0066"
+        },
+        {
+          "code": "009B:08",
+          "desc": "Infinite Photo Torpedoes",
+          "address": "0x009B"
+        },
+        {
+          "code": "007D:00",
+          "desc": "Immune Radar (RAD)",
+          "address": "0x007D"
+        },
+        {
+          "code": "007E:00",
+          "desc": "Immune Communications (COM)",
+          "address": "0x007E"
+        },
+        {
+          "code": "007F:00",
+          "desc": "Immune Engine (ENG)",
+          "address": "0x007F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

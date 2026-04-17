@@ -1,0 +1,313 @@
+{
+  "system": "nes",
+  "normalized_title": "doubledragon",
+  "display_name": "Double Dragon (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Double Dragon (Rumbles)",
+    "Double Dragon (USA)",
+    "Double Dragon (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\doubledragon_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0043",
+        "0x0044"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\DoubleDragon-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0043",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0044",
+          "type": "<d3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Double Dragon (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 67,
+      "raw_entry_count": 27,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "IIIEOO",
+          "desc": "Enemies Will Not Fight Back",
+          "address": "0x01D1"
+        },
+        {
+          "code": "ANGEIS",
+          "desc": "Psychedelic Music And Some Sound Is Messed Up",
+          "address": "0x05F5"
+        },
+        {
+          "code": "ZOLAZO",
+          "desc": "No Sound",
+          "address": "0x0112"
+        },
+        {
+          "code": "ZUPPIL",
+          "desc": "Stronger Lindas",
+          "address": "0x0335"
+        },
+        {
+          "code": "TEPPIL",
+          "desc": "Weaker Lindas",
+          "address": "0x0305"
+        },
+        {
+          "code": "TEAOIL",
+          "desc": "Williams Has Half As Much Life",
+          "address": "0x0385"
+        },
+        {
+          "code": "YEAOIU",
+          "desc": "Williams Has 1 Half Times As Much Life",
+          "address": "0x0385"
+        },
+        {
+          "code": "IOAOIL",
+          "desc": "Williams Has Twice As Much Life",
+          "address": "0x0395"
+        },
+        {
+          "code": "AEPPPL",
+          "desc": "Rowper Has Half As Much Life",
+          "address": "0x0301"
+        },
+        {
+          "code": "YEPPPU",
+          "desc": "Rowper Has 1 Half Times As Much Life",
+          "address": "0x0301"
+        },
+        {
+          "code": "IOPPPL",
+          "desc": "Rowper Has Twice As Much Life",
+          "address": "0x0311"
+        },
+        {
+          "code": "AEPPIL",
+          "desc": "Linda Has Half As Much Life",
+          "address": "0x0305"
+        },
+        {
+          "code": "YEPPIU",
+          "desc": "Linda Has 1 Half Times As Much Life",
+          "address": "0x0305"
+        },
+        {
+          "code": "IOPPIL",
+          "desc": "Linda Has Twice As Much Life",
+          "address": "0x0315"
+        },
+        {
+          "code": "ZEPOPU",
+          "desc": "Chin Has Half As Much Life",
+          "address": "0x0381"
+        },
+        {
+          "code": "YOPOPU",
+          "desc": "Chin Has 1 Half Times As Much Life",
+          "address": "0x0391"
+        },
+        {
+          "code": "AUPOPL",
+          "desc": "Chin Has Twice As Much Life",
+          "address": "0x03B1"
+        },
+        {
+          "code": "ZEPOIU",
+          "desc": "Abobo Has Half As Much Life",
+          "address": "0x0385"
+        },
+        {
+          "code": "YOPOIU",
+          "desc": "Abobo Has 1 Half Times As Much Life",
+          "address": "0x0395"
+        },
+        {
+          "code": "ZXPOIU",
+          "desc": "Abobo Has Twice As Much Life",
+          "address": "0x03A5"
+        },
+        {
+          "code": "ZOZPPU",
+          "desc": "Willie Has Half As Much Life",
+          "address": "0x0311"
+        },
+        {
+          "code": "ZKZPPU",
+          "desc": "Willie Has 1 Half Times As Much Life",
+          "address": "0x0341"
+        },
+        {
+          "code": "ANZPPU",
+          "desc": "Willie Has Twice As Much Life",
+          "address": "0x0371"
+        },
+        {
+          "code": "ZUAOPU",
+          "desc": "Jimmy (Final Boss) Has Half As Much Life",
+          "address": "0x03B1"
+        },
+        {
+          "code": "EKAOPL",
+          "desc": "Jimmy (Final Boss) Has 1 Half Times As Much Life",
+          "address": "0x03C1"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Double Dragon (USA).cht",
+      "total_cheat_rows": 67,
+      "raw_entry_count": 27,
+      "distinct_address_count": 19,
+      "sample_raw_entries": [
+        {
+          "code": "IIIEOO",
+          "desc": "Enemies Will Not Fight Back",
+          "address": "0x01D1"
+        },
+        {
+          "code": "ANGEIS",
+          "desc": "Psychedelic Music And Some Sound Is Messed Up",
+          "address": "0x05F5"
+        },
+        {
+          "code": "ZOLAZO",
+          "desc": "No Sound",
+          "address": "0x0112"
+        },
+        {
+          "code": "ZUPPIL",
+          "desc": "Stronger Lindas",
+          "address": "0x0335"
+        },
+        {
+          "code": "TEPPIL",
+          "desc": "Weaker Lindas",
+          "address": "0x0305"
+        },
+        {
+          "code": "TEAOIL",
+          "desc": "Williams Has Half As Much Life",
+          "address": "0x0385"
+        },
+        {
+          "code": "YEAOIU",
+          "desc": "Williams Has 1 Half Times As Much Life",
+          "address": "0x0385"
+        },
+        {
+          "code": "IOAOIL",
+          "desc": "Williams Has Twice As Much Life",
+          "address": "0x0395"
+        },
+        {
+          "code": "AEPPPL",
+          "desc": "Rowper Has Half As Much Life",
+          "address": "0x0301"
+        },
+        {
+          "code": "YEPPPU",
+          "desc": "Rowper Has 1 Half Times As Much Life",
+          "address": "0x0301"
+        },
+        {
+          "code": "IOPPPL",
+          "desc": "Rowper Has Twice As Much Life",
+          "address": "0x0311"
+        },
+        {
+          "code": "AEPPIL",
+          "desc": "Linda Has Half As Much Life",
+          "address": "0x0305"
+        },
+        {
+          "code": "YEPPIU",
+          "desc": "Linda Has 1 Half Times As Much Life",
+          "address": "0x0305"
+        },
+        {
+          "code": "IOPPIL",
+          "desc": "Linda Has Twice As Much Life",
+          "address": "0x0315"
+        },
+        {
+          "code": "ZEPOPU",
+          "desc": "Chin Has Half As Much Life",
+          "address": "0x0381"
+        },
+        {
+          "code": "YOPOPU",
+          "desc": "Chin Has 1 Half Times As Much Life",
+          "address": "0x0391"
+        },
+        {
+          "code": "AUPOPL",
+          "desc": "Chin Has Twice As Much Life",
+          "address": "0x03B1"
+        },
+        {
+          "code": "ZEPOIU",
+          "desc": "Abobo Has Half As Much Life",
+          "address": "0x0385"
+        },
+        {
+          "code": "YOPOIU",
+          "desc": "Abobo Has 1 Half Times As Much Life",
+          "address": "0x0395"
+        },
+        {
+          "code": "ZXPOIU",
+          "desc": "Abobo Has Twice As Much Life",
+          "address": "0x03A5"
+        },
+        {
+          "code": "ZOZPPU",
+          "desc": "Willie Has Half As Much Life",
+          "address": "0x0311"
+        },
+        {
+          "code": "ZKZPPU",
+          "desc": "Willie Has 1 Half Times As Much Life",
+          "address": "0x0341"
+        },
+        {
+          "code": "ANZPPU",
+          "desc": "Willie Has Twice As Much Life",
+          "address": "0x0371"
+        },
+        {
+          "code": "ZUAOPU",
+          "desc": "Jimmy (Final Boss) Has Half As Much Life",
+          "address": "0x03B1"
+        },
+        {
+          "code": "EKAOPL",
+          "desc": "Jimmy (Final Boss) Has 1 Half Times As Much Life",
+          "address": "0x03C1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

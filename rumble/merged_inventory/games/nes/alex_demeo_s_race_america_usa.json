@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "alexdemeosraceamerica",
+  "display_name": "Alex DeMeo's Race America (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Alex DeMeo's Race America (USA).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "OZNOAAEN",
+          "desc": "Go super fast in 6th gear",
+          "address": "0x00A8"
+        },
+        {
+          "code": "NYNOPAIE",
+          "desc": "Go super fast in 6th gear",
+          "address": "0x00F9"
+        },
+        {
+          "code": "SAXPGZVT",
+          "desc": "Go super fast in 6th gear",
+          "address": "0x020C"
+        },
+        {
+          "code": "04FC:0C",
+          "desc": "Infinite Fuel",
+          "address": "0x04FC"
+        },
+        {
+          "code": "0080:00",
+          "desc": "CPU Never Can Finish A Race",
+          "address": "0x0080"
+        },
+        {
+          "code": "0008:03",
+          "desc": "Invincibility",
+          "address": "0x0008"
+        },
+        {
+          "code": "0055:FF",
+          "desc": "Go Very, Very Fast (Almost Lightspeed)",
+          "address": "0x0055"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

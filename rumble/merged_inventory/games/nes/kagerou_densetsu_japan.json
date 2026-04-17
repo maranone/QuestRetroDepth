@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "kageroudensetsu",
+  "display_name": "Kagerou Densetsu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kagerou Densetsu (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "047D:30",
+          "desc": "Infinite Hp",
+          "address": "0x047D"
+        },
+        {
+          "code": "047F:63",
+          "desc": "Infinite Mp",
+          "address": "0x047F"
+        },
+        {
+          "code": "0698:63",
+          "desc": "Infinite Shurikens",
+          "address": "0x0698"
+        },
+        {
+          "code": "04A5:09",
+          "desc": "Infinite Orbs",
+          "address": "0x04A5"
+        },
+        {
+          "code": "04A0:00",
+          "desc": "Auto Kill Enemies",
+          "address": "0x04A0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

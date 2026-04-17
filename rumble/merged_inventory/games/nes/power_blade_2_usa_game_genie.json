@@ -1,0 +1,122 @@
+{
+  "system": "nes",
+  "normalized_title": "powerblade2",
+  "display_name": "Power Blade 2 (USA) (Game Genie)",
+  "aliases": [
+    "Power Blade 2 (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Power Blade 2 (USA).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 20,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "AEKEPTZA",
+          "desc": "Start with 1 life",
+          "address": "0x0689"
+        },
+        {
+          "code": "IEKEPTZA",
+          "desc": "Start with 6 lives",
+          "address": "0x0689"
+        },
+        {
+          "code": "AEKEPTZE",
+          "desc": "Start with 9 lives",
+          "address": "0x0689"
+        },
+        {
+          "code": "049A:10",
+          "desc": "Infinite Health",
+          "address": "0x049A"
+        },
+        {
+          "code": "0054:10",
+          "desc": "Maximum Weapon Power",
+          "address": "0x0054"
+        },
+        {
+          "code": "00A0:10",
+          "desc": "Infinite Energy",
+          "address": "0x00A0"
+        },
+        {
+          "code": "058B:10",
+          "desc": "Almost Invincible",
+          "address": "0x058B"
+        },
+        {
+          "code": "009F:04",
+          "desc": "Infinite Lives",
+          "address": "0x009F"
+        },
+        {
+          "code": "0096:81",
+          "desc": "Freeze Timer",
+          "address": "0x0096"
+        },
+        {
+          "code": "049A:12",
+          "desc": "Infinite Health",
+          "address": "0x049A"
+        },
+        {
+          "code": "009F:99",
+          "desc": "Infinite Lives",
+          "address": "0x009F"
+        },
+        {
+          "code": "0095:09",
+          "desc": "Infinite Time (Hundred's &amp; Thousand's Digits)",
+          "address": "0x0095"
+        },
+        {
+          "code": "0096:99",
+          "desc": "Infinite Time (Ten's &amp; One's Digits)",
+          "address": "0x0096"
+        },
+        {
+          "code": "0099:01",
+          "desc": "Have Dual Power-Blades (Can Be Combined With Code Below)",
+          "address": "0x0099"
+        },
+        {
+          "code": "00A2:01",
+          "desc": "Have Red Power-Blades (Can Be Combined With Code Above)",
+          "address": "0x00A2"
+        },
+        {
+          "code": "00A0:12",
+          "desc": "Have Maximum Energy",
+          "address": "0x00A0"
+        },
+        {
+          "code": "0054:0F",
+          "desc": "Have Maximum Power",
+          "address": "0x0054"
+        },
+        {
+          "code": "0053:00",
+          "desc": "Level Modifier (Read Note!)",
+          "address": "0x0053"
+        },
+        {
+          "code": "0022:00",
+          "desc": "Stage Highlighter",
+          "address": "0x0022"
+        },
+        {
+          "code": "0018:07",
+          "desc": "Seeing Ending of Game",
+          "address": "0x0018"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

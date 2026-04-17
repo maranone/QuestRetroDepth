@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "elysion",
+  "display_name": "Elysion (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Elysion (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "069E:FF",
+          "desc": "Infinite Energy",
+          "address": "0x069E"
+        },
+        {
+          "code": "069F:60",
+          "desc": "Infinite Magic",
+          "address": "0x069F"
+        },
+        {
+          "code": "06A0:10",
+          "desc": "Max Level",
+          "address": "0x06A0"
+        },
+        {
+          "code": "06A5:10",
+          "desc": "Max Gold",
+          "address": "0x06A5"
+        },
+        {
+          "code": "069C:00",
+          "desc": "Character Modifier",
+          "address": "0x069C"
+        },
+        {
+          "code": "069E:FF",
+          "desc": "Infinite HP",
+          "address": "0x069E"
+        },
+        {
+          "code": "069F:FF",
+          "desc": "Infinite MP",
+          "address": "0x069F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

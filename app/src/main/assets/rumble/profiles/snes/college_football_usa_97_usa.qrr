@@ -1,0 +1,8 @@
+game_name=College Football USA 97 (USA)
+game_key=college_football_usa_97_usa
+system=snes
+integration_tier=contrib
+trigger	score_score_b140	score	0x7FB140	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_b726	score	0x7FB726	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_b431	score	0x7FB431	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_b728	score	0x7FB728	1	uint	little	prev < curr	0.8	1	right:0.350:60

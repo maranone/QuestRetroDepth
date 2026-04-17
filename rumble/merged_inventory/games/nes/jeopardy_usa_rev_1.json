@@ -1,0 +1,87 @@
+{
+  "system": "nes",
+  "normalized_title": "jeopardy",
+  "display_name": "Jeopardy! (USA) (Rev 1)",
+  "aliases": [
+    "Jeopardy! (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Jeopardy! (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "AEVOINYA",
+          "desc": "Computer Opponents Always Guess Wrong",
+          "address": "0x078D"
+        },
+        {
+          "code": "0522:00",
+          "desc": "P1 Character Modifier",
+          "address": "0x0522"
+        },
+        {
+          "code": "0565:00",
+          "desc": "P1 Colour Modifier",
+          "address": "0x0565"
+        },
+        {
+          "code": "0079:09",
+          "desc": "Infinite Time To Consider Question/Answer Question",
+          "address": "0x0079"
+        },
+        {
+          "code": "001D:63",
+          "desc": "P1 Is Loaded With $$$$",
+          "address": "0x001D"
+        },
+        {
+          "code": "001E:63",
+          "desc": "P1 Is Loaded With $$$$",
+          "address": "0x001E"
+        },
+        {
+          "code": "001F:63",
+          "desc": "P1 Is Loaded With $$$$",
+          "address": "0x001F"
+        },
+        {
+          "code": "0020:99",
+          "desc": "P2 Goes Heavily Into The Negatives of $$$",
+          "address": "0x0020"
+        },
+        {
+          "code": "0021:99",
+          "desc": "P2 Goes Heavily Into The Negatives of $$$",
+          "address": "0x0021"
+        },
+        {
+          "code": "0022:99",
+          "desc": "P2 Goes Heavily Into The Negatives of $$$",
+          "address": "0x0022"
+        },
+        {
+          "code": "0025:99",
+          "desc": "P3 Goes Heavily Into The Negatives of $$$",
+          "address": "0x0025"
+        },
+        {
+          "code": "0024:99",
+          "desc": "P3 Goes Heavily Into The Negatives of $$$",
+          "address": "0x0024"
+        },
+        {
+          "code": "0023:99",
+          "desc": "P3 Goes Heavily Into The Negatives of $$$",
+          "address": "0x0023"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

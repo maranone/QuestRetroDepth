@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "kyuukyokutiger",
+  "display_name": "Kyuukyoku Tiger (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Kyuukyoku Tiger (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f167b:04",
+          "desc": "Infinite Lives",
+          "address": "0x1F167B"
+        },
+        {
+          "code": "1f1684:08",
+          "desc": "Infinite Credits",
+          "address": "0x1F1684"
+        },
+        {
+          "code": "1f1671:09",
+          "desc": "Infinite Bombs",
+          "address": "0x1F1671"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

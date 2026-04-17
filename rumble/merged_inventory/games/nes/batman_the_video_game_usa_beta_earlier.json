@@ -1,0 +1,218 @@
+{
+  "system": "nes",
+  "normalized_title": "batmanvideogame",
+  "display_name": "Batman - The Video Game (USA) (Beta) (Earlier)",
+  "aliases": [
+    "Batman - The Video Game (Europe)",
+    "Batman - The Video Game (USA) (Beta) (Earlier)",
+    "Batman - The Video Game (USA) (Beta) (Later)",
+    "Batman - The Video Game (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Batman - The Video Game (USA).cht",
+      "total_cheat_rows": 59,
+      "raw_entry_count": 75,
+      "distinct_address_count": 70,
+      "sample_raw_entries": [
+        {
+          "code": "00B7:08",
+          "desc": "Infinite Health",
+          "address": "0x00B7"
+        },
+        {
+          "code": "00B8:63",
+          "desc": "Infinite weapons, all 3 kinds",
+          "address": "0x00B8"
+        },
+        {
+          "code": "00CC:A4",
+          "desc": "Completely Invincible",
+          "address": "0x00CC"
+        },
+        {
+          "code": "PPOPEZVG",
+          "desc": "Infinite Life",
+          "address": "0x0218"
+        },
+        {
+          "code": "NZUOAUPA",
+          "desc": "Moon jump",
+          "address": "0x03A8"
+        },
+        {
+          "code": "SZOPEZVK",
+          "desc": "Walk Through Enemies/Invincible",
+          "address": "0x0228"
+        },
+        {
+          "code": "SZOPKZSE",
+          "desc": "Take 4X The Damage",
+          "address": "0x022C"
+        },
+        {
+          "code": "LATESO",
+          "desc": "Changes Color In Cinema Screens, Music Is Different",
+          "address": "0x0185"
+        },
+        {
+          "code": "OXOESGSK",
+          "desc": "Very few enemies",
+          "address": "0x04AD"
+        },
+        {
+          "code": "SZKPNUGK",
+          "desc": "Punch to kill all enemies on screen",
+          "address": "0x032F"
+        },
+        {
+          "code": "GEEPOTPA",
+          "desc": "Extra energy on heart pick-up",
+          "address": "0x0609"
+        },
+        {
+          "code": "GZNOUGST",
+          "desc": "Infinite pellets after pick-up",
+          "address": "0x04AB"
+        },
+        {
+          "code": "GPSPXVZA",
+          "desc": "Double usual pellets on pick-up",
+          "address": "0x061A"
+        },
+        {
+          "code": "IASPXVZA",
+          "desc": "Half usual pellets on pick-up",
+          "address": "0x060A"
+        },
+        {
+          "code": "SGOPEZVG",
+          "desc": "Infinite Energy",
+          "address": "0x0248"
+        },
+        {
+          "code": "SXEPOGSA",
+          "desc": "Infinite Weapons",
+          "address": "0x0429"
+        },
+        {
+          "code": "ATOPEZVG",
+          "desc": "Invincibility",
+          "address": "0x0268"
+        },
+        {
+          "code": "SNUPIKKI",
+          "desc": "Jump In Midair",
+          "address": "0x047D"
+        },
+        {
+          "code": "AAXPOLIZ",
+          "desc": "Hit Anywhere Punch",
+          "address": "0x0309"
+        },
+        {
+          "code": "AAVOUZKI",
+          "desc": "Hit Anywhere Weapons",
+          "address": "0x028B"
+        },
+        {
+          "code": "ELIAPK",
+          "desc": "Start with 35 Ammo",
+          "address": "0x0431"
+        },
+        {
+          "code": "ELTAIT",
+          "desc": "Distorted Music",
+          "address": "0x0635"
+        },
+        {
+          "code": "IXTAZU",
+          "desc": "Bombs that drop from the ceiling don't drop down",
+          "address": "0x0322"
+        },
+        {
+          "code": "GZXOSZEY",
+          "desc": "Enemies Continually Hit Anywhere",
+          "address": "0x02AD"
+        },
+        {
+          "code": "AAXPOLIZ",
+          "desc": "Enemies Continually Hit Anywhere",
+          "address": "0x0309"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Batman - The Video Game (USA).cht",
+      "total_cheat_rows": 21,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "GEEPOTPA",
+          "desc": "Extra Energy On Heart Pick-Up",
+          "address": "0x0609"
+        },
+        {
+          "code": "GZNOUGST",
+          "desc": "Infinite Pellets After Pick-Up",
+          "address": "0x04AB"
+        },
+        {
+          "code": "GPSPXVZA",
+          "desc": "Double Usual Pellets On Pick-Up",
+          "address": "0x061A"
+        },
+        {
+          "code": "IASPXVZA",
+          "desc": "Half Usual Pellets On Pick-Up",
+          "address": "0x060A"
+        },
+        {
+          "code": "SZOPEZVK",
+          "desc": "Walk Through Enemies/Invincible (Read Note)",
+          "address": "0x0228"
+        },
+        {
+          "code": "SZOPKZSE",
+          "desc": "Take 4X The Damage",
+          "address": "0x022C"
+        },
+        {
+          "code": "LATESO",
+          "desc": "Changes Colour In Cinema Screens, Music Is Different When Pressing Pause",
+          "address": "0x0185"
+        },
+        {
+          "code": "OISOSK",
+          "desc": "Ghostly Batman",
+          "address": "0x04DD"
+        },
+        {
+          "code": "NZUOAUPA",
+          "desc": "Semi-Controllable Mega-Jump",
+          "address": "0x03A8"
+        },
+        {
+          "code": "PPOPEZVG",
+          "desc": "Infinite Life",
+          "address": "0x0218"
+        },
+        {
+          "code": "OXOESGSK",
+          "desc": "Very Few Enemies",
+          "address": "0x04AD"
+        },
+        {
+          "code": "SZKPNUGK",
+          "desc": "Punch To Kill All Enemies On Screen",
+          "address": "0x032F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

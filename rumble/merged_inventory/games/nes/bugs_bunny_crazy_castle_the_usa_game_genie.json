@@ -1,0 +1,42 @@
+{
+  "system": "nes",
+  "normalized_title": "bugsbunnycrazycastle",
+  "display_name": "Bugs Bunny Crazy Castle, The (USA) (Game Genie)",
+  "aliases": [
+    "Bugs Bunny Crazy Castle, The (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bugs Bunny Crazy Castle, The (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "007C:05",
+          "desc": "Infinite Lives",
+          "address": "0x007C"
+        },
+        {
+          "code": "0068:00",
+          "desc": "Level Modifier",
+          "address": "0x0068"
+        },
+        {
+          "code": "007C:63",
+          "desc": "Infinite Lives",
+          "address": "0x007C"
+        },
+        {
+          "code": "0068:05",
+          "desc": "Stage Modifier",
+          "address": "0x0068"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

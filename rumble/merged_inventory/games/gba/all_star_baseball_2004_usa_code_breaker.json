@@ -1,0 +1,268 @@
+{
+  "system": "gba",
+  "normalized_title": "allstarbaseball2004",
+  "display_name": "All-Star Baseball 2004 (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\All-Star Baseball 2004 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 24,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "1003F8A4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0203F8A4"
+        },
+        {
+          "code": "3300075C",
+          "desc": "Away Team Score Modifier",
+          "address": "0x0200075C"
+        },
+        {
+          "code": "7300075C",
+          "desc": "Away Team Start With Score Modifier",
+          "address": "0x0200075C"
+        },
+        {
+          "code": "3300075C",
+          "desc": "Away Team Start With Score Modifier",
+          "address": "0x0200075C"
+        },
+        {
+          "code": "3300075D",
+          "desc": "Home Team Score Modifier",
+          "address": "0x0200075D"
+        },
+        {
+          "code": "7300075C",
+          "desc": "Home Team Start With Score Modifier",
+          "address": "0x0200075C"
+        },
+        {
+          "code": "3300075D",
+          "desc": "Home Team Start With Score Modifier",
+          "address": "0x0200075D"
+        },
+        {
+          "code": "83000768",
+          "desc": "Infinite Outs",
+          "address": "0x02000768"
+        },
+        {
+          "code": "73000768",
+          "desc": "1 Out And You Are Out",
+          "address": "0x02000768"
+        },
+        {
+          "code": "83000768",
+          "desc": "1 Out And You Are Out",
+          "address": "0x02000768"
+        },
+        {
+          "code": "73000768",
+          "desc": "2 Outs And You Are Out",
+          "address": "0x02000768"
+        },
+        {
+          "code": "83000768",
+          "desc": "2 Outs And You Are Out",
+          "address": "0x02000768"
+        },
+        {
+          "code": "83002C2A",
+          "desc": "Infinite Strikes",
+          "address": "0x02002C2A"
+        },
+        {
+          "code": "73002C2A",
+          "desc": "1 Strike And You Are Out",
+          "address": "0x02002C2A"
+        },
+        {
+          "code": "83002C2A",
+          "desc": "1 Strike And You Are Out",
+          "address": "0x02002C2A"
+        },
+        {
+          "code": "73002C2A",
+          "desc": "2 Strikes And You Are Out",
+          "address": "0x02002C2A"
+        },
+        {
+          "code": "83002C2A",
+          "desc": "2 Strikes And You Are Out",
+          "address": "0x02002C2A"
+        },
+        {
+          "code": "83002C2C",
+          "desc": "Infinite Balls",
+          "address": "0x02002C2C"
+        },
+        {
+          "code": "73002C2C",
+          "desc": "1 Ball And You Walk",
+          "address": "0x02002C2C"
+        },
+        {
+          "code": "83002C2C",
+          "desc": "1 Ball And You Walk",
+          "address": "0x02002C2C"
+        },
+        {
+          "code": "73002C2C",
+          "desc": "2 Balls And You Walk",
+          "address": "0x02002C2C"
+        },
+        {
+          "code": "83002C2C",
+          "desc": "2 Balls And You Walk",
+          "address": "0x02002C2C"
+        },
+        {
+          "code": "73002C2C",
+          "desc": "1 Ball And You Walk",
+          "address": "0x02002C2C"
+        },
+        {
+          "code": "83002C2C",
+          "desc": "1 Ball And You Walk",
+          "address": "0x02002C2C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\All-Star Baseball 2004 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 24,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "1003F8A4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0203F8A4"
+        },
+        {
+          "code": "3300075C",
+          "desc": "Away Team Score Modifier",
+          "address": "0x0200075C"
+        },
+        {
+          "code": "7300075C",
+          "desc": "Away Team Start With Score Modifier",
+          "address": "0x0200075C"
+        },
+        {
+          "code": "3300075C",
+          "desc": "Away Team Start With Score Modifier",
+          "address": "0x0200075C"
+        },
+        {
+          "code": "3300075D",
+          "desc": "Home Team Score Modifier",
+          "address": "0x0200075D"
+        },
+        {
+          "code": "7300075C",
+          "desc": "Home Team Start With Score Modifier",
+          "address": "0x0200075C"
+        },
+        {
+          "code": "3300075D",
+          "desc": "Home Team Start With Score Modifier",
+          "address": "0x0200075D"
+        },
+        {
+          "code": "83000768",
+          "desc": "Infinite Outs",
+          "address": "0x02000768"
+        },
+        {
+          "code": "73000768",
+          "desc": "1 Out And You Are Out",
+          "address": "0x02000768"
+        },
+        {
+          "code": "83000768",
+          "desc": "1 Out And You Are Out",
+          "address": "0x02000768"
+        },
+        {
+          "code": "73000768",
+          "desc": "2 Outs And You Are Out",
+          "address": "0x02000768"
+        },
+        {
+          "code": "83000768",
+          "desc": "2 Outs And You Are Out",
+          "address": "0x02000768"
+        },
+        {
+          "code": "83002C2A",
+          "desc": "Infinite Strikes",
+          "address": "0x02002C2A"
+        },
+        {
+          "code": "73002C2A",
+          "desc": "1 Strike And You Are Out",
+          "address": "0x02002C2A"
+        },
+        {
+          "code": "83002C2A",
+          "desc": "1 Strike And You Are Out",
+          "address": "0x02002C2A"
+        },
+        {
+          "code": "73002C2A",
+          "desc": "2 Strikes And You Are Out",
+          "address": "0x02002C2A"
+        },
+        {
+          "code": "83002C2A",
+          "desc": "2 Strikes And You Are Out",
+          "address": "0x02002C2A"
+        },
+        {
+          "code": "83002C2C",
+          "desc": "Infinite Balls",
+          "address": "0x02002C2C"
+        },
+        {
+          "code": "73002C2C",
+          "desc": "1 Ball And You Walk",
+          "address": "0x02002C2C"
+        },
+        {
+          "code": "83002C2C",
+          "desc": "1 Ball And You Walk",
+          "address": "0x02002C2C"
+        },
+        {
+          "code": "73002C2C",
+          "desc": "2 Balls And You Walk",
+          "address": "0x02002C2C"
+        },
+        {
+          "code": "83002C2C",
+          "desc": "2 Balls And You Walk",
+          "address": "0x02002C2C"
+        },
+        {
+          "code": "73002C2C",
+          "desc": "1 Ball And You Walk",
+          "address": "0x02002C2C"
+        },
+        {
+          "code": "83002C2C",
+          "desc": "1 Ball And You Walk",
+          "address": "0x02002C2C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

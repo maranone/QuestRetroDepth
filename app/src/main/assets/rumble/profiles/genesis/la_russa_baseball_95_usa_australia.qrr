@@ -1,0 +1,5 @@
+game_name=La Russa Baseball 95 (USA, Australia)
+game_key=la_russa_baseball_95_usa_australia
+system=genesis
+integration_tier=contrib
+trigger	score_score_fff668	score	0xFFF668	1	uint	little	prev < curr	0.8	1	right:0.350:60

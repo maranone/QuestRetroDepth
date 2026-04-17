@@ -1,0 +1,6 @@
+game_name=Dungeon Explorer (USA)
+game_key=dungeon_explorer_usa
+system=pce
+integration_tier=contrib
+trigger	life_lost_lives_1f02d4	life_lost	0x1F02D4	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1f02d4	life_gained	0x1F02D4	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

@@ -1,0 +1,120 @@
+{
+  "system": "nes",
+  "normalized_title": "ghoulschool",
+  "display_name": "Ghoul School (USA)",
+  "aliases": [
+    "Ghoul School (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\ghoulschool_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0467",
+        "0x046D",
+        "0x060A"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GhoulSchool-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x060A",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0467",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x046D",
+          "type": "<n7"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ghoul School (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "05FA:09",
+          "desc": "Walk Through Enemies",
+          "address": "0x05FA"
+        },
+        {
+          "code": "0467:09",
+          "desc": "Infinite Lives",
+          "address": "0x0467"
+        },
+        {
+          "code": "060A:FF",
+          "desc": "Infinite Health",
+          "address": "0x060A"
+        },
+        {
+          "code": "045E:00",
+          "desc": "Fake Room Modifier",
+          "address": "0x045E"
+        },
+        {
+          "code": "060D:00",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0x060D"
+        },
+        {
+          "code": "060E:00",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0x060E"
+        },
+        {
+          "code": "060F:00",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0x060F"
+        },
+        {
+          "code": "0610:00",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0x0610"
+        },
+        {
+          "code": "0611:00",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0x0611"
+        },
+        {
+          "code": "0612:00",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0x0612"
+        },
+        {
+          "code": "0613:00",
+          "desc": "1 Hit Kills Most Enemies",
+          "address": "0x0613"
+        },
+        {
+          "code": "06E3:05",
+          "desc": "Enable Debug Menu (Press Select on Electro Brain Presents Screen)",
+          "address": "0x06E3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

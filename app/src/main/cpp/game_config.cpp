@@ -2,6 +2,39 @@
 #include <algorithm>
 #include <cmath>
 
+namespace {
+
+constexpr float k_genesis_default_near_depth = 2.920264f;
+constexpr float k_genesis_default_far_depth = 5.343064f;
+constexpr float k_genesis_default_quad_width = 2.56f;
+constexpr int k_genesis_default_copy_count = 28;
+constexpr float k_genesis_default_copy_step = 0.003f;
+
+static void apply_uniform_width_and_copies(LayerConfig& lc, float width, int copy_count, float copy_step) {
+    lc.quad_width_meters = width;
+    lc.copies.resize(copy_count);
+    for (int i = 0; i < copy_count; ++i) {
+        lc.copies[i] = (float)(i + 1) * copy_step;
+    }
+}
+
+static void apply_even_default_depth_envelope(std::vector<LayerConfig>& layers,
+                                              float near_depth,
+                                              float far_depth,
+                                              float width,
+                                              int copy_count,
+                                              float copy_step) {
+    const int n = (int)layers.size();
+    if (n <= 0) return;
+    for (int i = 0; i < n; ++i) {
+        const float t = n > 1 ? (float)i / (float)(n - 1) : 0.0f;
+        layers[i].depth_meters = far_depth + (near_depth - far_depth) * t;
+        apply_uniform_width_and_copies(layers[i], width, copy_count, copy_step);
+    }
+}
+
+} // namespace
+
 // Find z-values that have non-empty pixels.
 static std::vector<int> find_occupied_z(const uint32_t histogram[256]) {
     std::vector<int> occupied;
@@ -147,6 +180,13 @@ GameConfig GameConfig::make_default_snes() {
         cfg.layers.push_back(std::move(lc));
     }
 
+    apply_even_default_depth_envelope(cfg.layers,
+                                      k_genesis_default_near_depth,
+                                      k_genesis_default_far_depth,
+                                      k_genesis_default_quad_width,
+                                      k_genesis_default_copy_count,
+                                      k_genesis_default_copy_step);
+
     return cfg;
 }
 
@@ -157,17 +197,14 @@ GameConfig GameConfig::make_default_genesis() {
     cfg.virtual_height = 224;
     cfg.quad_y_meters  = 1.6f;
 
-    // Match the SNES Hybrid default screen distance envelope so Genesis boots
-    // with the same overall default depth feel and the Quick Edit "Default"
-    // settings preset resolves to the same near/far range.
     static const struct { const char* id; float depth; float width; int layer_index; } k[] = {
-        { "background",   5.00f, 2.56f, 0 },
-        { "plane_b_low",  4.83f, 2.56f, 1 },
-        { "plane_b_high", 4.66f, 2.56f, 2 },
-        { "plane_a_low",  4.49f, 2.56f, 3 },
-        { "plane_a_high", 4.32f, 2.56f, 4 },
-        { "sprites_low",  4.15f, 2.56f, 5 },
-        { "sprites_high", 3.98f, 2.56f, 6 },
+        { "background",   5.343064f, 2.56f, 0 },
+        { "plane_b_low",  2.920264f, 2.56f, 1 },
+        { "plane_b_high", 3.324065f, 2.56f, 2 },
+        { "plane_a_low",  3.727862f, 2.56f, 3 },
+        { "plane_a_high", 4.131662f, 2.56f, 4 },
+        { "sprites_low",  4.535461f, 2.56f, 5 },
+        { "sprites_high", 4.939260f, 2.56f, 6 },
     };
     for (const auto& s : k) {
         LayerConfig lc;
@@ -176,55 +213,164 @@ GameConfig GameConfig::make_default_genesis() {
         lc.quad_width_meters = s.width;
         lc.extraction_type  = ExtractionType::VisibleSourceHybrid;
         lc.layer_index      = s.layer_index;
+        apply_uniform_width_and_copies(lc,
+                                       k_genesis_default_quad_width,
+                                       k_genesis_default_copy_count,
+                                       k_genesis_default_copy_step);
         cfg.layers.push_back(std::move(lc));
     }
     return cfg;
 }
 
 GameConfig GameConfig::make_default_nes() {
+    // NES: 3 hardware planes (backdrop, BG tiles, sprites).
+    // Per-pixel source IDs captured by fceux_layer_capture from FCEUmm PPU:
+    //   0 = backdrop, 1 = background, 2 = sprites.
     GameConfig cfg;
     cfg.game           = "nes";
     cfg.virtual_width  = 256;
     cfg.virtual_height = 240;
     cfg.quad_y_meters  = 1.6f;
 
-    // Matching retrodepth naming
-    static const struct { const char* id; float depth; float width; } k[] = {
-        { "backdrop",       2.00f, 2.56f },
-        { "background",     1.52f, 2.56f },
-        { "sprites_behind", 1.28f, 2.56f },
-        { "sprites_front",  1.02f, 2.56f },
+    static const struct { const char* id; float depth; int layer_index; } k[] = {
+        { "backdrop",    k_genesis_default_far_depth,  0 },
+        { "background",  3.5f,                          1 },
+        { "sprites",     k_genesis_default_near_depth,  2 },
     };
     for (const auto& s : k) {
         LayerConfig lc;
         lc.id               = s.id;
         lc.depth_meters     = s.depth;
-        lc.quad_width_meters = s.width;
-        lc.extraction_type  = ExtractionType::FullFrame;
+        lc.extraction_type  = ExtractionType::VisibleSourceFinal;
+        lc.layer_index      = s.layer_index;
+        apply_uniform_width_and_copies(lc,
+                                       k_genesis_default_quad_width,
+                                       k_genesis_default_copy_count,
+                                       k_genesis_default_copy_step);
         cfg.layers.push_back(std::move(lc));
     }
     return cfg;
 }
 
 GameConfig GameConfig::make_default_sms() {
+    // SMS: 3 hardware planes (backdrop, BG tile layer, sprites).
+    // Per-pixel source IDs captured by picodrive_sms_layer_capture from Mode 4 renderer:
+    //   0 = backdrop, 1 = bg_plane, 2 = sprites.
+    // GG (160x144) dimension mismatch means it falls back to FullFrame — deferred.
     GameConfig cfg;
     cfg.game           = "sms";
     cfg.virtual_width  = 256;
     cfg.virtual_height = 192;
     cfg.quad_y_meters  = 1.6f;
 
-    static const struct { const char* id; float depth; float width; } k[] = {
-        { "backdrop", 2.00f, 2.56f },
-        { "bg_low",   1.62f, 2.56f },
-        { "bg_high",  1.28f, 2.56f },
-        { "sprites",  0.96f, 2.56f },
+    static const struct { const char* id; float depth; int layer_index; } k[] = {
+        { "backdrop",  k_genesis_default_far_depth,  0 },
+        { "bg_plane",  3.5f,                          1 },
+        { "sprites",   k_genesis_default_near_depth,  2 },
     };
     for (const auto& s : k) {
         LayerConfig lc;
         lc.id               = s.id;
         lc.depth_meters     = s.depth;
-        lc.quad_width_meters = s.width;
-        lc.extraction_type  = ExtractionType::FullFrame;
+        lc.quad_width_meters = 2.56f;
+        lc.extraction_type  = ExtractionType::VisibleSourceFinal;
+        lc.layer_index      = s.layer_index;
+        apply_uniform_width_and_copies(lc,
+                                       k_genesis_default_quad_width,
+                                       k_genesis_default_copy_count,
+                                       k_genesis_default_copy_step);
+        cfg.layers.push_back(std::move(lc));
+    }
+    return cfg;
+}
+
+GameConfig GameConfig::make_default_gba() {
+    // GBA: 240x160, 5 hardware layers — BG0-3 and OBJ.
+    // mGBA renders via VisibleSourceFinal (visible_source_id: 0=BG0,1=BG1,2=BG2,3=BG3,4=OBJ).
+    // BG0 is typically the HUD/text (front), BG3 the sky/background (back).
+    GameConfig cfg;
+    cfg.game           = "gba";
+    cfg.virtual_width  = 240;
+    cfg.virtual_height = 160;
+    cfg.quad_y_meters  = 1.6f;
+
+    // far → near: BG3(sky) … BG0(HUD) … OBJ(sprites)
+    static const struct { const char* id; float depth; int layer_index; } k[] = {
+        { "bg3",  k_genesis_default_far_depth,                                          3 },
+        { "bg2",  k_genesis_default_far_depth * 0.75f + k_genesis_default_near_depth * 0.25f, 2 },
+        { "bg1",  k_genesis_default_far_depth * 0.50f + k_genesis_default_near_depth * 0.50f, 1 },
+        { "bg0",  k_genesis_default_far_depth * 0.25f + k_genesis_default_near_depth * 0.75f, 0 },
+        { "obj",  k_genesis_default_near_depth,                                          4 },
+    };
+    for (const auto& s : k) {
+        LayerConfig lc;
+        lc.id               = s.id;
+        lc.depth_meters     = s.depth;
+        lc.extraction_type  = ExtractionType::VisibleSourceFinal;
+        lc.layer_index      = s.layer_index;
+        apply_uniform_width_and_copies(lc,
+                                       k_genesis_default_quad_width,
+                                       k_genesis_default_copy_count,
+                                       k_genesis_default_copy_step);
+        cfg.layers.push_back(std::move(lc));
+    }
+    return cfg;
+}
+
+GameConfig GameConfig::make_default_gb() {
+    // GB/GBC: 160x144, 3 planes (BG, Window overlay, OBJ sprites).
+    // mGBA visible_source_id: 0=BG, 1=window (maps to BG1), 4=OBJ.
+    // Window (BG1) is the HUD overlay — sits in front of BG, behind sprites.
+    GameConfig cfg;
+    cfg.game           = "gb";
+    cfg.virtual_width  = 160;
+    cfg.virtual_height = 144;
+    cfg.quad_y_meters  = 1.6f;
+
+    static const struct { const char* id; float depth; int layer_index; } k[] = {
+        { "bg",     k_genesis_default_far_depth,  0 },  // BG tilemap
+        { "window", 3.5f,                          1 },  // Window overlay (HUD)
+        { "obj",    k_genesis_default_near_depth,  4 },  // Sprites
+    };
+    for (const auto& s : k) {
+        LayerConfig lc;
+        lc.id               = s.id;
+        lc.depth_meters     = s.depth;
+        lc.extraction_type  = ExtractionType::VisibleSourceFinal;
+        lc.layer_index      = s.layer_index;
+        apply_uniform_width_and_copies(lc,
+                                       k_genesis_default_quad_width,
+                                       k_genesis_default_copy_count,
+                                       k_genesis_default_copy_step);
+        cfg.layers.push_back(std::move(lc));
+    }
+    return cfg;
+}
+
+GameConfig GameConfig::make_default_pce() {
+    // PC Engine: 512x243 internal VDC surface, 3 planes (backdrop, bg_plane, sprites).
+    // beetle-pce visible_source_id: 0=backdrop, 1=bg_plane, 2=sprites.
+    GameConfig cfg;
+    cfg.game           = "pce";
+    cfg.virtual_width  = 256;  // typical PCE game width; VDC surface is 512 wide
+    cfg.virtual_height = 243;
+    cfg.quad_y_meters  = 1.6f;
+
+    static const struct { const char* id; float depth; int layer_index; } k[] = {
+        { "backdrop",  k_genesis_default_far_depth,  0 },
+        { "bg_plane",  3.5f,                          1 },
+        { "sprites",   k_genesis_default_near_depth,  2 },
+    };
+    for (const auto& s : k) {
+        LayerConfig lc;
+        lc.id               = s.id;
+        lc.depth_meters     = s.depth;
+        lc.extraction_type  = ExtractionType::VisibleSourceFinal;
+        lc.layer_index      = s.layer_index;
+        apply_uniform_width_and_copies(lc,
+                                       k_genesis_default_quad_width,
+                                       k_genesis_default_copy_count,
+                                       k_genesis_default_copy_step);
         cfg.layers.push_back(std::move(lc));
     }
     return cfg;

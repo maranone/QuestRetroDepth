@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "lastarmageddon",
+  "display_name": "Last Armageddon (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Last Armageddon (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "0068:00",
+          "desc": "Low Time",
+          "address": "0x0068"
+        },
+        {
+          "code": "6777:FF",
+          "desc": "Max HP",
+          "address": "0x6777"
+        },
+        {
+          "code": "677C:FF",
+          "desc": "Max MP",
+          "address": "0x677C"
+        },
+        {
+          "code": "6727:FF",
+          "desc": "Max HP",
+          "address": "0x6727"
+        },
+        {
+          "code": "672C:FF",
+          "desc": "Max MP",
+          "address": "0x672C"
+        },
+        {
+          "code": "6957:FF",
+          "desc": "Max HP",
+          "address": "0x6957"
+        },
+        {
+          "code": "675C:FF",
+          "desc": "Max MP",
+          "address": "0x675C"
+        },
+        {
+          "code": "6867:FF",
+          "desc": "Max HP",
+          "address": "0x6867"
+        },
+        {
+          "code": "686C:FF",
+          "desc": "Max MP",
+          "address": "0x686C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "tatakaerahmenmansakuretsuchoujin102gei",
+  "display_name": "Tatakae!! Rahmen Man - Sakuretsu Choujin 102 Gei (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tatakae!! Rahmen Man - Sakuretsu Choujin 102 Gei (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "00B2:00",
+          "desc": "Character Energy Modifier",
+          "address": "0x00B2"
+        },
+        {
+          "code": "00C2:00",
+          "desc": "Enemy Energy Modifier",
+          "address": "0x00C2"
+        },
+        {
+          "code": "6B7B:3A",
+          "desc": "Infinite Special Attacks",
+          "address": "0x6B7B"
+        },
+        {
+          "code": "6B69:01",
+          "desc": "Modify Inventory",
+          "address": "0x6B69"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

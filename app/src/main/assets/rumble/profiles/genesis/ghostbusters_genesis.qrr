@@ -1,6 +1,0 @@
-game_name=Ghostbusters
-game_key=Ghostbusters-Genesis
-system=genesis
-integration_tier=manual
-trigger	damage_taken_0_fe2d	damage_taken	0xFFFE2D	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	powerup_lost_1_fe1c	powerup_lost	0xFFFE1C	1	uint	native	prev > curr	0.9	1	left:1.000:250

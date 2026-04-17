@@ -1,0 +1,58 @@
+{
+  "system": "gba",
+  "normalized_title": "ctspecialforces",
+  "display_name": "CT Special Forces (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\CT Special Forces (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1001A5A4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0201A5A4"
+        },
+        {
+          "code": "330000E4",
+          "desc": "Infinite HP",
+          "address": "0x020000E4"
+        },
+        {
+          "code": "330000E0",
+          "desc": "Infinite Lives",
+          "address": "0x020000E0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\CT Special Forces (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1001A5A4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0201A5A4"
+        },
+        {
+          "code": "330000E4",
+          "desc": "Infinite HP",
+          "address": "0x020000E4"
+        },
+        {
+          "code": "330000E0",
+          "desc": "Infinite Lives",
+          "address": "0x020000E0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

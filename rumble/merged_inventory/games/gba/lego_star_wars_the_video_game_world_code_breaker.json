@@ -1,0 +1,38 @@
+{
+  "system": "gba",
+  "normalized_title": "legostarwarsvideogame",
+  "display_name": "LEGO Star Wars - The Video Game (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\LEGO Star Wars - The Video Game (World) (Code Breaker).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "10011D78",
+          "desc": "Enable Code",
+          "address": "0x02011D78"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\LEGO Star Wars - The Video Game (World) (Code Breaker).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "10011D78",
+          "desc": "Enable Code",
+          "address": "0x02011D78"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

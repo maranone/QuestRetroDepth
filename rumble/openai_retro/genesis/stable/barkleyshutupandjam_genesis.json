@@ -1,0 +1,73 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "BarkleyShutUpAndJam",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\BarkleyShutUpAndJam-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "BarkleyShutUpAndJam-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "score_score_ffc8e8",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0xFFC8E8",
+          "size": 2,
+          "value_type": "bcd",
+          "byte_order": "big",
+          "raw_type": ">d2",
+          "address": "0xFFC8E8",
+          "ram_offset": 51432
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0xFFC8E8",
+          "raw_type": ">d2"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "opponent_score",
+      "meta": {
+        "address": 16763114,
+        "type": ">d2"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "quarter",
+      "meta": {
+        "address": 16763101,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "time",
+      "meta": {
+        "address": 16763084,
+        "type": ">d2"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

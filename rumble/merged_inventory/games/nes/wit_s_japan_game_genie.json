@@ -1,0 +1,27 @@
+{
+  "system": "nes",
+  "normalized_title": "wits",
+  "display_name": "Wit's (Japan) (Game Genie)",
+  "aliases": [
+    "Wit's (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wit's (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "040C:01",
+          "desc": "Invincibility",
+          "address": "0x040C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

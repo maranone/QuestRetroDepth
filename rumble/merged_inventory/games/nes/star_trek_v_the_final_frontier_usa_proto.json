@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "startrekvfinalfrontier",
+  "display_name": "Star Trek V - The Final Frontier (USA) (Proto)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Star Trek V - The Final Frontier (USA) (Proto).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "050F:60",
+          "desc": "Infinite Energy",
+          "address": "0x050F"
+        },
+        {
+          "code": "05FD:63",
+          "desc": "Infinite Bombs",
+          "address": "0x05FD"
+        },
+        {
+          "code": "05FF:50",
+          "desc": "Infinite P Energy",
+          "address": "0x05FF"
+        },
+        {
+          "code": "050D:02",
+          "desc": "Fast Walking",
+          "address": "0x050D"
+        },
+        {
+          "code": "0148:00",
+          "desc": "Stage Modifier",
+          "address": "0x0148"
+        },
+        {
+          "code": "SZNAXOSE",
+          "desc": "Infinite Energy",
+          "address": "0x012A"
+        },
+        {
+          "code": "SZEPYSSE",
+          "desc": "Infinite Energy",
+          "address": "0x052F"
+        },
+        {
+          "code": "SXOPVSSE",
+          "desc": "Infinite Phasers",
+          "address": "0x052E"
+        },
+        {
+          "code": "EINONZEY",
+          "desc": "Invincibility",
+          "address": "0x02DF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

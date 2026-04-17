@@ -1,0 +1,5 @@
+game_name=Bust-A-Move 3 DX (Europe)
+game_key=bust_a_move_3_dx_europe
+system=gb
+integration_tier=contrib
+trigger	level_complete_level_d9ff	level_complete	0xD9FF	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

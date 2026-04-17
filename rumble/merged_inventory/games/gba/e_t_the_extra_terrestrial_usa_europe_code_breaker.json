@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "etextraterrestrial",
+  "display_name": "E.T. - The Extra-Terrestrial (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\E.T. - The Extra-Terrestrial (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10003EE4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003EE4"
+        },
+        {
+          "code": "830007E0",
+          "desc": "Infinite Health",
+          "address": "0x020007E0"
+        },
+        {
+          "code": "33002CEB",
+          "desc": "Infinite Continues",
+          "address": "0x02002CEB"
+        },
+        {
+          "code": "74000130",
+          "desc": "Set Timer Back (Press Select)",
+          "address": "0x02000130"
+        },
+        {
+          "code": "3300314A",
+          "desc": "Set Timer Back (Press Select)",
+          "address": "0x0200314A"
+        },
+        {
+          "code": "74000130",
+          "desc": "Set Timer Back (Press Select)",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003174",
+          "desc": "Set Timer Back (Press Select)",
+          "address": "0x02003174"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\E.T. - The Extra-Terrestrial (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 7,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10003EE4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02003EE4"
+        },
+        {
+          "code": "830007E0",
+          "desc": "Infinite Health",
+          "address": "0x020007E0"
+        },
+        {
+          "code": "33002CEB",
+          "desc": "Infinite Continues",
+          "address": "0x02002CEB"
+        },
+        {
+          "code": "74000130",
+          "desc": "Set Timer Back (Press Select)",
+          "address": "0x02000130"
+        },
+        {
+          "code": "3300314A",
+          "desc": "Set Timer Back (Press Select)",
+          "address": "0x0200314A"
+        },
+        {
+          "code": "74000130",
+          "desc": "Set Timer Back (Press Select)",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003174",
+          "desc": "Set Timer Back (Press Select)",
+          "address": "0x02003174"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

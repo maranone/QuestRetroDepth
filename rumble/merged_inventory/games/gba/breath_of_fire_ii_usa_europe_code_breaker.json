@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "breathoffireii",
+  "display_name": "Breath of Fire II (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Breath of Fire II (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "100002E8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020002E8"
+        },
+        {
+          "code": "82006870",
+          "desc": "Infinite Money",
+          "address": "0x02006870"
+        },
+        {
+          "code": "820069EC",
+          "desc": "Lotsa Money In Bank",
+          "address": "0x020069EC"
+        },
+        {
+          "code": "83004700",
+          "desc": "No Random Battles",
+          "address": "0x02004700"
+        },
+        {
+          "code": "82006A00",
+          "desc": "Play As Windian Lady Instead Of Ryu (Out Of Battle) Ryu's Mother? (Blue Hair And Gold Wings)",
+          "address": "0x02006A00"
+        },
+        {
+          "code": "82006BAA",
+          "desc": "Max Luck (Works On All Positions)",
+          "address": "0x02006BAA"
+        },
+        {
+          "code": "8300270A",
+          "desc": "Invincible (Against Physical Attacks)",
+          "address": "0x0200270A"
+        },
+        {
+          "code": "82006E76",
+          "desc": "Enable All Shaman",
+          "address": "0x02006E76"
+        },
+        {
+          "code": "83004C7C",
+          "desc": "Infinite Time Underwater At Sky Tower",
+          "address": "0x02004C7C"
+        },
+        {
+          "code": "83002714",
+          "desc": "Receive A Lot Of Exp After Battle",
+          "address": "0x02002714"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Breath of Fire II (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "100002E8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020002E8"
+        },
+        {
+          "code": "82006870",
+          "desc": "Infinite Money",
+          "address": "0x02006870"
+        },
+        {
+          "code": "820069EC",
+          "desc": "Lotsa Money In Bank",
+          "address": "0x020069EC"
+        },
+        {
+          "code": "83004700",
+          "desc": "No Random Battles",
+          "address": "0x02004700"
+        },
+        {
+          "code": "82006A00",
+          "desc": "Play As Windian Lady Instead Of Ryu (Out Of Battle) Ryu's Mother? (Blue Hair And Gold Wings)",
+          "address": "0x02006A00"
+        },
+        {
+          "code": "82006BAA",
+          "desc": "Max Luck (Works On All Positions)",
+          "address": "0x02006BAA"
+        },
+        {
+          "code": "8300270A",
+          "desc": "Invincible (Against Physical Attacks)",
+          "address": "0x0200270A"
+        },
+        {
+          "code": "82006E76",
+          "desc": "Enable All Shaman",
+          "address": "0x02006E76"
+        },
+        {
+          "code": "83004C7C",
+          "desc": "Infinite Time Underwater At Sky Tower",
+          "address": "0x02004C7C"
+        },
+        {
+          "code": "83002714",
+          "desc": "Receive A Lot Of Exp After Battle",
+          "address": "0x02002714"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

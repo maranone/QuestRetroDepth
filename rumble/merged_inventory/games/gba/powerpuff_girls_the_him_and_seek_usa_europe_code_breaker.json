@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "powerpuffgirlshimandseek",
+  "display_name": "Powerpuff Girls, The - Him and Seek (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Powerpuff Girls, The - Him and Seek (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10000290",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000290"
+        },
+        {
+          "code": "42003B0C",
+          "desc": "Infinite Health",
+          "address": "0x02003B0C"
+        },
+        {
+          "code": "42003B18",
+          "desc": "Infinite Power",
+          "address": "0x02003B18"
+        },
+        {
+          "code": "82002200",
+          "desc": "All Items Found",
+          "address": "0x02002200"
+        },
+        {
+          "code": "82002202",
+          "desc": "All Items Found",
+          "address": "0x02002202"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Powerpuff Girls, The - Him and Seek (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "10000290",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000290"
+        },
+        {
+          "code": "42003B0C",
+          "desc": "Infinite Health",
+          "address": "0x02003B0C"
+        },
+        {
+          "code": "42003B18",
+          "desc": "Infinite Power",
+          "address": "0x02003B18"
+        },
+        {
+          "code": "82002200",
+          "desc": "All Items Found",
+          "address": "0x02002200"
+        },
+        {
+          "code": "82002202",
+          "desc": "All Items Found",
+          "address": "0x02002202"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

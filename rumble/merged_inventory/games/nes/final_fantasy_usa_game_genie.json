@@ -1,0 +1,231 @@
+{
+  "system": "nes",
+  "normalized_title": "finalfantasy",
+  "display_name": "Final Fantasy (USA) (Game Genie)",
+  "aliases": [
+    "Final Fantasy (USA)",
+    "Final Fantasy (USA)(S)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Final Fantasy (USA).cht",
+      "total_cheat_rows": 1499,
+      "raw_entry_count": 1240,
+      "distinct_address_count": 372,
+      "sample_raw_entries": [
+        {
+          "code": "6110:63",
+          "desc": "Str",
+          "address": "0x6110"
+        },
+        {
+          "code": "6111:63",
+          "desc": "Agi",
+          "address": "0x6111"
+        },
+        {
+          "code": "6112:63",
+          "desc": "Int",
+          "address": "0x6112"
+        },
+        {
+          "code": "6113:63",
+          "desc": "Vit",
+          "address": "0x6113"
+        },
+        {
+          "code": "6114:63",
+          "desc": "Luck",
+          "address": "0x6114"
+        },
+        {
+          "code": "610A:FF",
+          "desc": "HP",
+          "address": "0x610A"
+        },
+        {
+          "code": "6150:63",
+          "desc": "Str",
+          "address": "0x6150"
+        },
+        {
+          "code": "6151:63",
+          "desc": "Agi",
+          "address": "0x6151"
+        },
+        {
+          "code": "6152:63",
+          "desc": "Int",
+          "address": "0x6152"
+        },
+        {
+          "code": "6153:63",
+          "desc": "Vit",
+          "address": "0x6153"
+        },
+        {
+          "code": "6154:63",
+          "desc": "Luck",
+          "address": "0x6154"
+        },
+        {
+          "code": "614A:FF",
+          "desc": "HP",
+          "address": "0x614A"
+        },
+        {
+          "code": "6190:63",
+          "desc": "Str",
+          "address": "0x6190"
+        },
+        {
+          "code": "6191:63",
+          "desc": "Agi",
+          "address": "0x6191"
+        },
+        {
+          "code": "6192:63",
+          "desc": "Int",
+          "address": "0x6192"
+        },
+        {
+          "code": "6193:63",
+          "desc": "Vit",
+          "address": "0x6193"
+        },
+        {
+          "code": "6194:63",
+          "desc": "Luck",
+          "address": "0x6194"
+        },
+        {
+          "code": "618A:FF",
+          "desc": "HP",
+          "address": "0x618A"
+        },
+        {
+          "code": "61D0:63",
+          "desc": "Str",
+          "address": "0x61D0"
+        },
+        {
+          "code": "61D1:63",
+          "desc": "Agi",
+          "address": "0x61D1"
+        },
+        {
+          "code": "61D2:62",
+          "desc": "Int",
+          "address": "0x61D2"
+        },
+        {
+          "code": "61D3:63",
+          "desc": "Vit",
+          "address": "0x61D3"
+        },
+        {
+          "code": "61D4:63",
+          "desc": "Luck",
+          "address": "0x61D4"
+        },
+        {
+          "code": "61CA:FF",
+          "desc": "HP",
+          "address": "0x61CA"
+        },
+        {
+          "code": "6320:08",
+          "desc": "Infinite Magic uses, Char.1",
+          "address": "0x6320"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Final Fantasy (USA)(S).cht",
+      "total_cheat_rows": 69,
+      "raw_entry_count": 15,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "SLVPZVVS",
+          "desc": "Infinite Heal And Pure Potions In Battle",
+          "address": "0x063A"
+        },
+        {
+          "code": "AESPVVOY",
+          "desc": "At The End of Battle, Each Surviving Member Gets Full EXP",
+          "address": "0x060E"
+        },
+        {
+          "code": "AESPXTPA",
+          "desc": "At The End of Battle, Each Surviving Member Gets Full EXP",
+          "address": "0x060A"
+        },
+        {
+          "code": "XVSPNLAV",
+          "desc": "All Party Members Gain EXP. After Battle, Even If",
+          "address": "0x036F"
+        },
+        {
+          "code": "AEXOVZYA",
+          "desc": "At The End of Battle, All Status Ailments Are Cured",
+          "address": "0x028E"
+        },
+        {
+          "code": "AAUPKVTA",
+          "desc": "After Battle, The Party's Gold Will Be Maxed-Out At 999,999",
+          "address": "0x060C"
+        },
+        {
+          "code": "AAEOXIGA",
+          "desc": "All Stats Increase At Level-Up",
+          "address": "0x058A"
+        },
+        {
+          "code": "AEKPVKZA",
+          "desc": "All Level-Ups Will Be &quot;Strong&quot; Level-Ups",
+          "address": "0x040E"
+        },
+        {
+          "code": "AASPSVTA",
+          "desc": "At Level-Up, Max HP For Surviving Party Members Wi",
+          "address": "0x060D"
+        },
+        {
+          "code": "AAOONTZA",
+          "desc": "At Level-Up, Both Hit % and Magic Defense (Hidden Stat) Are Set To Their Maximum Value of 200",
+          "address": "0x068F"
+        },
+        {
+          "code": "OZKOXSOK",
+          "desc": "At Level-Up, When The Damage Rating Increases, It Is Set To The Maximum Value of 200",
+          "address": "0x05AA"
+        },
+        {
+          "code": "EGKOUSOK",
+          "desc": "At Level-Up, When The Damage Rating Increases, It Is Set To The Maximum Value of 200",
+          "address": "0x05CB"
+        },
+        {
+          "code": "OZSOKSOK",
+          "desc": "At Level-Up, When The Evade % Rating Increases, It Is Set To The Maximum Value of 200",
+          "address": "0x05AC"
+        },
+        {
+          "code": "EGSOSSOK",
+          "desc": "At Level-Up, When The Evade % Rating Increases, It Is Set To The Maximum Value of 200",
+          "address": "0x05CD"
+        },
+        {
+          "code": "EETPUO",
+          "desc": "Enemies Can't Find You!",
+          "address": "0x0103"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

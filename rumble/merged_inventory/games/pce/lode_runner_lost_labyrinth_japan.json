@@ -1,0 +1,30 @@
+{
+  "system": "pce",
+  "normalized_title": "loderunnerlostlabyrinth",
+  "display_name": "Lode Runner - Lost Labyrinth (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Lode Runner - Lost Labyrinth (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1f09af:00",
+          "desc": "Exit Ladder Automatically Appears",
+          "address": "0x1F09AF"
+        },
+        {
+          "code": "1f07bd:05",
+          "desc": "Infinite Lives",
+          "address": "0x1F07BD"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

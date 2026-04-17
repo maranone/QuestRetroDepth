@@ -1,0 +1,27 @@
+{
+  "system": "nes",
+  "normalized_title": "chaosworld",
+  "display_name": "Chaos World (Japan) (Game Genie)",
+  "aliases": [
+    "Chaos World (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Chaos World (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "OZXENGVK",
+          "desc": "Infinite Status Points",
+          "address": "0x04AF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

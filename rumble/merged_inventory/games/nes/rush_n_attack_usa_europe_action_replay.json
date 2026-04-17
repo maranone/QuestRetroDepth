@@ -1,0 +1,80 @@
+{
+  "system": "nes",
+  "normalized_title": "rushnattack",
+  "display_name": "Rush'n Attack (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Rush'n Attack (USA)",
+    "Rush'n Attack (USA, Europe) (Action Replay)",
+    "Rush'n Attack (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\rushnattack_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0022",
+        "0x07E4"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\RushnAttack-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0022",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x07E4",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Rush'n Attack (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "GZOEAYVG",
+          "desc": "Infinite Lives (Player 1)",
+          "address": "0x07A8"
+        },
+        {
+          "code": "GZOEIYVG",
+          "desc": "Infinite Lives (Player 2)",
+          "address": "0x07AD"
+        },
+        {
+          "code": "AENASIPA",
+          "desc": "Never Lose POW",
+          "address": "0x050D"
+        },
+        {
+          "code": "KAXAGYIA",
+          "desc": "Invincible (Always Have In-Game Invincibility)",
+          "address": "0x070C"
+        },
+        {
+          "code": "KAXEYYIA",
+          "desc": "Invincible (Always Have In-Game Invincibility)",
+          "address": "0x078F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

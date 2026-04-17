@@ -1,0 +1,9 @@
+game_name=Bio Senshi Dan - Increaser Tono Tatakai (Japan)
+game_key=BioSenshiDanIncreaserTonoTatakai-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_0720	damage_taken	0x0720	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0720	death	0x0720	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_0727	life_lost	0x0727	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0727	life_gained	0x0727	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0722	score	0x0722	2	uint	little	prev < curr	0.8	1	right:0.350:60

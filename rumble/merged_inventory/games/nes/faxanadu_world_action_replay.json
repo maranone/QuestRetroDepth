@@ -1,0 +1,52 @@
+{
+  "system": "nes",
+  "normalized_title": "faxanadu",
+  "display_name": "Faxanadu (World) (Action Replay)",
+  "aliases": [
+    "Faxanadu (USA)",
+    "Faxanadu (World) (Action Replay)",
+    "Faxanadu (World) (Game Genie)",
+    "Faxanadu (USA) (S)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Faxanadu (World) (Game Genie).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "IASEPSZA",
+          "desc": "Half Normal Amount Of Gold",
+          "address": "0x0589"
+        },
+        {
+          "code": "GPSEPSZA",
+          "desc": "Double Normal Amount Of Gold",
+          "address": "0x0599"
+        },
+        {
+          "code": "YYSEPSZE",
+          "desc": "King Gives 19 050 Gold Instead of 1500",
+          "address": "0x05F9"
+        },
+        {
+          "code": "NYSEPSZE",
+          "desc": "King Gives 38,250 Gold",
+          "address": "0x05F9"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Faxanadu (USA) (S).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

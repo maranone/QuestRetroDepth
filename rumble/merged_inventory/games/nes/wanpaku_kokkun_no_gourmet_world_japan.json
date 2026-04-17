@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "wanpakukokkunnogourmetworld",
+  "display_name": "Wanpaku Kokkun no Gourmet World (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wanpaku Kokkun no Gourmet World (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "00D7:04",
+          "desc": "Infinite Energy",
+          "address": "0x00D7"
+        },
+        {
+          "code": "00DE:63",
+          "desc": "Infinite time",
+          "address": "0x00DE"
+        },
+        {
+          "code": "00D8:00",
+          "desc": "Item modifier",
+          "address": "0x00D8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

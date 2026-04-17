@@ -1,0 +1,11 @@
+game_name=Hyper Iria (Japan)
+game_key=hyper_iria_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_a6de	damage_taken	0x7EA6DE	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_a6de	death	0x7EA6DE	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_a6df	damage_taken	0x7EA6DF	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_a6df	death	0x7EA6DF	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_f91d	pickup	0x7EF91D	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_bc64	pickup	0x7EBC64	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_bc65	pickup	0x7EBC65	1	uint	little	prev != curr	0.8	1	right:0.250:18

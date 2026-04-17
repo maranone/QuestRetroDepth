@@ -1,0 +1,27 @@
+{
+  "system": "gb",
+  "normalized_title": "saigononindou",
+  "display_name": "Saigo no Nindou (Japan) (GameShark)",
+  "aliases": [
+    "Saigo no Nindou (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Saigo no Nindou (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0104DDFF",
+          "desc": "Infinite Energy",
+          "address": "0xDDFF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

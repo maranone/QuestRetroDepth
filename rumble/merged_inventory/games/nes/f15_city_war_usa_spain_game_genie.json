@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "f15citywar",
+  "display_name": "F15 City War (USA, Spain) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\F15 City War (USA, Spain) (Game Genie).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "GXEETVVS",
+          "desc": "No Forward Movement On Top-View Sections",
+          "address": "0x06AE"
+        },
+        {
+          "code": "GXOEIUVN",
+          "desc": "Slower Left And Right Movement On 3-D Sections",
+          "address": "0x03AD"
+        },
+        {
+          "code": "GXVALUVS",
+          "desc": "Slower Left And Right Movement On 3-D Sections",
+          "address": "0x032B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

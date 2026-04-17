@@ -1,0 +1,78 @@
+{
+  "system": "gba",
+  "normalized_title": "spongebobsquarepantscreaturefromkrustykrab",
+  "display_name": "SpongeBob SquarePants - Creature from the Krusty Krab (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\SpongeBob SquarePants - Creature from the Krusty Krab (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1000FE3A",
+          "desc": "Enabler Code",
+          "address": "0x0200FE3A"
+        },
+        {
+          "code": "10010544",
+          "desc": "Enabler Code (Alternate)",
+          "address": "0x02010544"
+        },
+        {
+          "code": "320017FE",
+          "desc": "Max Lives",
+          "address": "0x020017FE"
+        },
+        {
+          "code": "33006FE0",
+          "desc": "Max Lives",
+          "address": "0x02006FE0"
+        },
+        {
+          "code": "3200183A",
+          "desc": "Need To Collect Only 1 Hot Rod Part",
+          "address": "0x0200183A"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\SpongeBob SquarePants - Creature from the Krusty Krab (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "1000FE3A",
+          "desc": "Enabler Code",
+          "address": "0x0200FE3A"
+        },
+        {
+          "code": "10010544",
+          "desc": "Enabler Code (Alternate)",
+          "address": "0x02010544"
+        },
+        {
+          "code": "320017FE",
+          "desc": "Max Lives",
+          "address": "0x020017FE"
+        },
+        {
+          "code": "33006FE0",
+          "desc": "Max Lives",
+          "address": "0x02006FE0"
+        },
+        {
+          "code": "3200183A",
+          "desc": "Need To Collect Only 1 Hot Rod Part",
+          "address": "0x0200183A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

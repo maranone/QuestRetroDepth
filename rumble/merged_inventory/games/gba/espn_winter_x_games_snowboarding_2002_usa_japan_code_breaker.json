@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "espnwinterxgamessnowboarding2002",
+  "display_name": "ESPN Winter X-Games Snowboarding 2002 (USA, Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\ESPN Winter X-Games Snowboarding 2002 (USA, Japan) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "100005D0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020005D0"
+        },
+        {
+          "code": "8300089C",
+          "desc": "Always Low Time",
+          "address": "0x0200089C"
+        },
+        {
+          "code": "8300089E",
+          "desc": "Always Low Time",
+          "address": "0x0200089E"
+        },
+        {
+          "code": "830008A4",
+          "desc": "Quick Score Gain",
+          "address": "0x020008A4"
+        },
+        {
+          "code": "830008A4",
+          "desc": "Max Score",
+          "address": "0x020008A4"
+        },
+        {
+          "code": "830008A6",
+          "desc": "Max Score",
+          "address": "0x020008A6"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\ESPN Winter X-Games Snowboarding 2002 (USA, Japan) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "100005D0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020005D0"
+        },
+        {
+          "code": "8300089C",
+          "desc": "Always Low Time",
+          "address": "0x0200089C"
+        },
+        {
+          "code": "8300089E",
+          "desc": "Always Low Time",
+          "address": "0x0200089E"
+        },
+        {
+          "code": "830008A4",
+          "desc": "Quick Score Gain",
+          "address": "0x020008A4"
+        },
+        {
+          "code": "830008A4",
+          "desc": "Max Score",
+          "address": "0x020008A4"
+        },
+        {
+          "code": "830008A6",
+          "desc": "Max Score",
+          "address": "0x020008A6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

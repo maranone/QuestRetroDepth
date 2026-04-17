@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "override",
+  "display_name": "Override (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Override (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f0056:24",
+          "desc": "Infinite Energy",
+          "address": "0x1F0056"
+        },
+        {
+          "code": "1f0bc0:01",
+          "desc": "Invincibility",
+          "address": "0x1F0BC0"
+        },
+        {
+          "code": "1f0057:02",
+          "desc": "Infinite Lives",
+          "address": "0x1F0057"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

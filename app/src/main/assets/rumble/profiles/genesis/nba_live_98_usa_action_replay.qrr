@@ -1,0 +1,6 @@
+game_name=NBA Live 98 (USA) (Action Replay)
+game_key=nba_live_98_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_fff972	score	0xFFF972	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_fff8da	score	0xFFF8DA	1	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,75 @@
+{
+  "system": "nes",
+  "normalized_title": "jajamaruninpouchou",
+  "display_name": "Jajamaru Ninpou Chou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Jajamaru Ninpou Chou (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 11,
+      "distinct_address_count": 11,
+      "sample_raw_entries": [
+        {
+          "code": "0661:FF",
+          "desc": "P1 Infinite Health",
+          "address": "0x0661"
+        },
+        {
+          "code": "0663:FF",
+          "desc": "P1 Infinite Magic",
+          "address": "0x0663"
+        },
+        {
+          "code": "0698:FF",
+          "desc": "P1 Max Experience",
+          "address": "0x0698"
+        },
+        {
+          "code": "0699:FF",
+          "desc": "P1 Max Experience",
+          "address": "0x0699"
+        },
+        {
+          "code": "0662:FF",
+          "desc": "P2 Infinite Health",
+          "address": "0x0662"
+        },
+        {
+          "code": "0664:FF",
+          "desc": "P2 Infinite Magic",
+          "address": "0x0664"
+        },
+        {
+          "code": "069A:FF",
+          "desc": "P2 Max Experience",
+          "address": "0x069A"
+        },
+        {
+          "code": "069B:FF",
+          "desc": "P2 Max Experience",
+          "address": "0x069B"
+        },
+        {
+          "code": "0659:FF",
+          "desc": "Infinite Money",
+          "address": "0x0659"
+        },
+        {
+          "code": "065A:FF",
+          "desc": "Infinite Money",
+          "address": "0x065A"
+        },
+        {
+          "code": "067E:00",
+          "desc": "One Hit Kills",
+          "address": "0x067E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

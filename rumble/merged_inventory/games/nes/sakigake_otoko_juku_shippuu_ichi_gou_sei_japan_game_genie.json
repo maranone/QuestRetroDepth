@@ -1,0 +1,62 @@
+{
+  "system": "nes",
+  "normalized_title": "sakigakeotokojukushippuuichigousei",
+  "display_name": "Sakigake!! Otoko Juku - Shippuu Ichi Gou Sei (Japan) (Game Genie)",
+  "aliases": [
+    "Sakigake!! Otoko Juku - Shippuu Ichi Gou Sei (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Sakigake!! Otoko Juku - Shippuu Ichi Gou Sei (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "0087:C0",
+          "desc": "Infinite Energy",
+          "address": "0x0087"
+        },
+        {
+          "code": "0041:01",
+          "desc": "Can't Be Knocked Down",
+          "address": "0x0041"
+        },
+        {
+          "code": "0088:C0",
+          "desc": "2nd Character Infinite Energy",
+          "address": "0x0088"
+        },
+        {
+          "code": "0089:C0",
+          "desc": "3rd Character Infinite Energy",
+          "address": "0x0089"
+        },
+        {
+          "code": "008A:C0",
+          "desc": "4th Character Infinite Energy",
+          "address": "0x008A"
+        },
+        {
+          "code": "0050:FF",
+          "desc": "Arena Opponent No Recovery Time",
+          "address": "0x0050"
+        },
+        {
+          "code": "00BD:05",
+          "desc": "Speed Modifier",
+          "address": "0x00BD"
+        },
+        {
+          "code": "030A:00",
+          "desc": "Arena Opponent One Hit Kill",
+          "address": "0x030A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

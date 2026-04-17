@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "charlieandchocolatefactory",
+  "display_name": "Charlie and the Chocolate Factory (USA, Europe)(Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Charlie and the Chocolate Factory (USA, Europe)(Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "10004072",
+          "desc": "Enabler Code",
+          "address": "0x02004072"
+        },
+        {
+          "code": "32002748",
+          "desc": "Max Lives",
+          "address": "0x02002748"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Charlie and the Chocolate Factory (USA, Europe)(Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "10004072",
+          "desc": "Enabler Code",
+          "address": "0x02004072"
+        },
+        {
+          "code": "32002748",
+          "desc": "Max Lives",
+          "address": "0x02002748"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

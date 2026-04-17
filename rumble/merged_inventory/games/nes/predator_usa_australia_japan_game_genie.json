@@ -1,0 +1,48 @@
+{
+  "system": "nes",
+  "normalized_title": "predator",
+  "display_name": "Predator (USA, Australia, Japan) (Game Genie)",
+  "aliases": [
+    "Predator (USA)",
+    "Predator (USA, Australia, Japan) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Predator (USA, Australia, Japan) (Game Genie).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "AEOETOPE",
+          "desc": "Mega-Jumps In Jungle Mode",
+          "address": "0x018E"
+        },
+        {
+          "code": "NTEENEGE",
+          "desc": "Don't Die If You Fall Down Holes",
+          "address": "0x00EF"
+        },
+        {
+          "code": "ATOAEEOZ",
+          "desc": "Don't Die If You Fall Down Holes",
+          "address": "0x0068"
+        },
+        {
+          "code": "LASEOELA",
+          "desc": "Start Each Life With Laser Rifle",
+          "address": "0x0089"
+        },
+        {
+          "code": "XLSEUEVX",
+          "desc": "Start Each Life With Laser Rifle",
+          "address": "0x00BB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

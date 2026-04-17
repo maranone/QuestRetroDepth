@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "pinkpantherpinkadelicpursuit",
+  "display_name": "Pink Panther - Pinkadelic Pursuit (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Pink Panther - Pinkadelic Pursuit (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10022A3C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02022A3C"
+        },
+        {
+          "code": "3300528E",
+          "desc": "Infinite Health",
+          "address": "0x0200528E"
+        },
+        {
+          "code": "3300528D",
+          "desc": "Infinite Lives",
+          "address": "0x0200528D"
+        },
+        {
+          "code": "430052EE",
+          "desc": "Infinite Ammo",
+          "address": "0x020052EE"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Multi Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83005230",
+          "desc": "Multi Jump",
+          "address": "0x02005230"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Multi Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83005230",
+          "desc": "Multi Jump",
+          "address": "0x02005230"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Pink Panther - Pinkadelic Pursuit (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10022A3C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02022A3C"
+        },
+        {
+          "code": "3300528E",
+          "desc": "Infinite Health",
+          "address": "0x0200528E"
+        },
+        {
+          "code": "3300528D",
+          "desc": "Infinite Lives",
+          "address": "0x0200528D"
+        },
+        {
+          "code": "430052EE",
+          "desc": "Infinite Ammo",
+          "address": "0x020052EE"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Multi Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83005230",
+          "desc": "Multi Jump",
+          "address": "0x02005230"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Multi Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83005230",
+          "desc": "Multi Jump",
+          "address": "0x02005230"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

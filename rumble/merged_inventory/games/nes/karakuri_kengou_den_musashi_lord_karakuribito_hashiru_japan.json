@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "karakurikengoudenmusashilordkarakuribitohashiru",
+  "display_name": "Karakuri Kengou Den Musashi Lord - Karakuribito Hashiru (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Karakuri Kengou Den Musashi Lord - Karakuribito Hashiru (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0364:FF",
+          "desc": "Infinite Health",
+          "address": "0x0364"
+        },
+        {
+          "code": "694E:FF",
+          "desc": "Infinite Money",
+          "address": "0x694E"
+        },
+        {
+          "code": "694F:AA",
+          "desc": "Infinite Money",
+          "address": "0x694F"
+        },
+        {
+          "code": "694A:FF",
+          "desc": "Quick Level Up",
+          "address": "0x694A"
+        },
+        {
+          "code": "69FB:AA",
+          "desc": "Quick Level Up",
+          "address": "0x69FB"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

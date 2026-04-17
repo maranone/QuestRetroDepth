@@ -1,0 +1,6 @@
+game_name=Harry Potter und der Stein der Weisen (Russia) (Action Replay)
+game_key=harry_potter_und_der_stein_der_weisen_russia_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_ff0007	life_lost	0xFF0007	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ff0007	life_gained	0xFF0007	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

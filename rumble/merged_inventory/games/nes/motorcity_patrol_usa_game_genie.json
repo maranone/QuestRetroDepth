@@ -1,0 +1,42 @@
+{
+  "system": "nes",
+  "normalized_title": "motorcitypatrol",
+  "display_name": "MotorCity Patrol (USA) (Game Genie)",
+  "aliases": [
+    "MotorCity Patrol (USA) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\MotorCity Patrol (USA) (Game Genie).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "ANOEIOGL",
+          "desc": "Slow Down Timer",
+          "address": "0x01FD"
+        },
+        {
+          "code": "YOOEIOGU",
+          "desc": "Speed Up Timer",
+          "address": "0x019D"
+        },
+        {
+          "code": "GXUESKVK",
+          "desc": "Free Equipment",
+          "address": "0x04AD"
+        },
+        {
+          "code": "APUAUGEI",
+          "desc": "Free Equipment",
+          "address": "0x041B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

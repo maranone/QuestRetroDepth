@@ -1,0 +1,28 @@
+game_name=Bahamut Lagoon (Japan) (Game Genie)
+game_key=bahamut_lagoon_japan_game_genie
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_3bd5	pickup	0x7E3BD5	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_38d0	enemy_defeated	0x7E38D0	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_38d3	enemy_defeated	0x7E38D3	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_38d4	enemy_defeated	0x7E38D4	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_38d5	enemy_defeated	0x7E38D5	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_38d6	enemy_defeated	0x7E38D6	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_38f0	enemy_defeated	0x7E38F0	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_38f3	enemy_defeated	0x7E38F3	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_38f4	enemy_defeated	0x7E38F4	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_38f5	enemy_defeated	0x7E38F5	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_38f6	enemy_defeated	0x7E38F6	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_3910	enemy_defeated	0x7E3910	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_3913	enemy_defeated	0x7E3913	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_3914	enemy_defeated	0x7E3914	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_3915	enemy_defeated	0x7E3915	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_3916	enemy_defeated	0x7E3916	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_3930	enemy_defeated	0x7E3930	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_3933	enemy_defeated	0x7E3933	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_3934	enemy_defeated	0x7E3934	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_3935	enemy_defeated	0x7E3935	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_3936	enemy_defeated	0x7E3936	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_3950	enemy_defeated	0x7E3950	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_3953	enemy_defeated	0x7E3953	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_3954	enemy_defeated	0x7E3954	1	uint	little	prev > curr	0.65	1	right:0.450:35

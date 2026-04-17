@@ -1,0 +1,65 @@
+{
+  "system": "nes",
+  "normalized_title": "alfredchicken",
+  "display_name": "Alfred Chicken (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Alfred Chicken (USA)",
+    "Alfred Chicken (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\alfredchicken_nes.json",
+      "trigger_count": 4,
+      "field_names": [
+        "gameover",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x01AB",
+        "0x01AE",
+        "0x0745"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AlfredChicken-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "gameover",
+          "address": "0x0745",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x01AE",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x01AB",
+          "type": "<u2"
+        },
+        {
+          "name": "time",
+          "address": "0x01A8",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Alfred Chicken (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

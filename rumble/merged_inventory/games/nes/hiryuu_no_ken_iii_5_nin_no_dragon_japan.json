@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "hiryuunokeniii5ninnodragon",
+  "display_name": "Hiryuu no Ken III - 5 Nin no Dragon (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hiryuu no Ken III - 5 Nin no Dragon (Japan).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "044E:C8",
+          "desc": "Infinite Energy (1st Character)",
+          "address": "0x044E"
+        },
+        {
+          "code": "0450:BE",
+          "desc": "Infinite Energy (2nd Character)",
+          "address": "0x0450"
+        },
+        {
+          "code": "0452:E6",
+          "desc": "Infinite Energy (3rd Character)",
+          "address": "0x0452"
+        },
+        {
+          "code": "0454:A0",
+          "desc": "Infinite Energy (4th Character)",
+          "address": "0x0454"
+        },
+        {
+          "code": "0456:A0",
+          "desc": "Infinite Energy (5th Character)",
+          "address": "0x0456"
+        },
+        {
+          "code": "00FC:00",
+          "desc": "Bosses Have 0 Energy",
+          "address": "0x00FC"
+        },
+        {
+          "code": "00FD:00",
+          "desc": "Bosses Have 0 Energy",
+          "address": "0x00FD"
+        },
+        {
+          "code": "0458:64",
+          "desc": "Max KO Bar",
+          "address": "0x0458"
+        },
+        {
+          "code": "045A:03",
+          "desc": "Infinite Refill Potions",
+          "address": "0x045A"
+        },
+        {
+          "code": "043B:40",
+          "desc": "Invincible",
+          "address": "0x043B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

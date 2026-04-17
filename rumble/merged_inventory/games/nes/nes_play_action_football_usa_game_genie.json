@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "nesplayactionfootball",
+  "display_name": "NES Play Action Football (USA) (Game Genie)",
+  "aliases": [
+    "NES Play Action Football (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\NES Play Action Football (USA).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0690:00",
+          "desc": "Score Modifier Team 1/P1 (Right Side of Screen)",
+          "address": "0x0690"
+        },
+        {
+          "code": "0691:00",
+          "desc": "Score Modifier Team 2/P2/CPU (Left Side of Screen)",
+          "address": "0x0691"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,8 @@
+game_name=Monster House (USA, Europe) (Code Breaker)
+game_key=monster_house_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_02003e9e	damage_taken	0x02003E9E	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02003e9e	death	0x02003E9E	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02003ea0	damage_taken	0x02003EA0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02003ea0	death	0x02003EA0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

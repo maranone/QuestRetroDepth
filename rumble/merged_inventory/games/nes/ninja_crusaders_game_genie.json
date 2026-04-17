@@ -1,0 +1,179 @@
+{
+  "system": "nes",
+  "normalized_title": "ninjacrusaders",
+  "display_name": "Ninja Crusaders (Game Genie)",
+  "aliases": [
+    "Ninja Crusaders (Game Genie)",
+    "Ninja Crusaders (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\ninjacrusaders_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0303",
+        "0x030A"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\NinjaCrusaders-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0303",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x030A",
+          "type": "<n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ninja Crusaders (USA).cht",
+      "total_cheat_rows": 31,
+      "raw_entry_count": 33,
+      "distinct_address_count": 24,
+      "sample_raw_entries": [
+        {
+          "code": "SYXESUVN",
+          "desc": "Super speed Ninjas",
+          "address": "0x03FD"
+        },
+        {
+          "code": "ZAXEULPA",
+          "desc": "Super speed Ninjas",
+          "address": "0x038B"
+        },
+        {
+          "code": "PAEPTGAA",
+          "desc": "Start on stage 1-2",
+          "address": "0x040E"
+        },
+        {
+          "code": "ZAEPTGAA",
+          "desc": "Start on stage 2-1",
+          "address": "0x040E"
+        },
+        {
+          "code": "LAEPTGAA",
+          "desc": "Start on stage 2-2",
+          "address": "0x040E"
+        },
+        {
+          "code": "GAEPTGAA",
+          "desc": "Start on stage 3-1",
+          "address": "0x040E"
+        },
+        {
+          "code": "IAEPTGAA",
+          "desc": "Start on stage 3-2",
+          "address": "0x040E"
+        },
+        {
+          "code": "TAEPTGAA",
+          "desc": "Start on stage 4-1",
+          "address": "0x040E"
+        },
+        {
+          "code": "YAEPTGAA",
+          "desc": "Start on stage 4-2",
+          "address": "0x040E"
+        },
+        {
+          "code": "AAEPTGAE",
+          "desc": "Start on stage 5-1",
+          "address": "0x040E"
+        },
+        {
+          "code": "0300:01",
+          "desc": "Invincibility",
+          "address": "0x0300"
+        },
+        {
+          "code": "0303:03",
+          "desc": "Infinite Lives, Player 1",
+          "address": "0x0303"
+        },
+        {
+          "code": "0303:06",
+          "desc": "Infinite Lives P1",
+          "address": "0x0303"
+        },
+        {
+          "code": "0309:00",
+          "desc": "Weapon Modifier P1",
+          "address": "0x0309"
+        },
+        {
+          "code": "030A:09",
+          "desc": "Max Score P1",
+          "address": "0x030A"
+        },
+        {
+          "code": "030B:09",
+          "desc": "Max Score P1",
+          "address": "0x030B"
+        },
+        {
+          "code": "030C:09",
+          "desc": "Max Score P1",
+          "address": "0x030C"
+        },
+        {
+          "code": "030D:09",
+          "desc": "Max Score P1",
+          "address": "0x030D"
+        },
+        {
+          "code": "030E:09",
+          "desc": "Max Score P1",
+          "address": "0x030E"
+        },
+        {
+          "code": "030F:09",
+          "desc": "Max Score P1",
+          "address": "0x030F"
+        },
+        {
+          "code": "0383:09",
+          "desc": "Infinite Lives P2",
+          "address": "0x0383"
+        },
+        {
+          "code": "0389:00",
+          "desc": "Weapon Modifier P2",
+          "address": "0x0389"
+        },
+        {
+          "code": "038A:09",
+          "desc": "Max Score P2",
+          "address": "0x038A"
+        },
+        {
+          "code": "038B:09",
+          "desc": "Max Score P2",
+          "address": "0x038B"
+        },
+        {
+          "code": "038C:09",
+          "desc": "Max Score P2",
+          "address": "0x038C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

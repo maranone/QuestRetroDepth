@@ -1,0 +1,21 @@
+game_name=Valkyrie no Bouken - Toki no Kagi Densetsu (Japan)
+game_key=valkyrie_no_bouken_toki_no_kagi_densetsu_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_00c0	damage_taken	0x00C0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00c0	death	0x00C0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_00d0	pickup	0x00D0	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_00d1	pickup	0x00D1	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_00d2	pickup	0x00D2	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_00d3	pickup	0x00D3	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_00d4	pickup	0x00D4	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_00c1	damage_taken	0x00C1	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_00c1	death	0x00C1	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_0160	pickup	0x0160	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0162	pickup	0x0162	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0164	pickup	0x0164	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0166	pickup	0x0166	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0168	pickup	0x0168	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_016a	pickup	0x016A	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_016c	pickup	0x016C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_016e	pickup	0x016E	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,48 @@
+{
+  "system": "gba",
+  "normalized_title": "mechplatoon",
+  "display_name": "Mech Platoon (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Mech Platoon (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1000E1A8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200E1A8"
+        },
+        {
+          "code": "330034EC",
+          "desc": "99 Start Points",
+          "address": "0x020034EC"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Mech Platoon (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "1000E1A8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200E1A8"
+        },
+        {
+          "code": "330034EC",
+          "desc": "99 Start Points",
+          "address": "0x020034EC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

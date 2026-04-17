@@ -1,0 +1,15 @@
+game_name=Asterix (Europe) (En,Fr,De,Es,It)
+game_key=asterix_europe_en_fr_de_es_it
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_0022	life_lost	0x0022	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0022	life_gained	0x0022	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_0023	damage_taken	0x0023	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0023	death	0x0023	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02cf	damage_taken	0x02CF	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02cf	death	0x02CF	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02af	damage_taken	0x02AF	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02af	death	0x02AF	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_0279	enemy_defeated	0x0279	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_02da	enemy_defeated	0x02DA	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_02fc	enemy_defeated	0x02FC	1	uint	little	prev > curr	0.65	1	right:0.450:35

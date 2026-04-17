@@ -1,0 +1,112 @@
+{
+  "system": "nes",
+  "normalized_title": "cyberstadiumseriesbasewars",
+  "display_name": "Cyber Stadium Series - Base Wars (USA) (Game Genie)",
+  "aliases": [
+    "Cyber Stadium Series - Base Wars (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Cyber Stadium Series - Base Wars (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 18,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "0445:63",
+          "desc": "High Score P1",
+          "address": "0x0445"
+        },
+        {
+          "code": "0446:00",
+          "desc": "No Score P2/CPU",
+          "address": "0x0446"
+        },
+        {
+          "code": "044A:00",
+          "desc": "Innings Modifier",
+          "address": "0x044A"
+        },
+        {
+          "code": "0068:00",
+          "desc": "Strikes Modifier",
+          "address": "0x0068"
+        },
+        {
+          "code": "0069:00",
+          "desc": "Balls Modifier",
+          "address": "0x0069"
+        },
+        {
+          "code": "006A:00",
+          "desc": "Outs Modifier",
+          "address": "0x006A"
+        },
+        {
+          "code": "GZEAEZEI",
+          "desc": "Super Slow Pitches",
+          "address": "0x0228"
+        },
+        {
+          "code": "ASEENPEY",
+          "desc": "Every Pitch is a &quot;Strike&quot;",
+          "address": "0x01DF"
+        },
+        {
+          "code": "ASOAUPEI",
+          "desc": "Every Pitch is a &quot;Ball&quot;",
+          "address": "0x015B"
+        },
+        {
+          "code": "GZEAPIVT",
+          "desc": "Strikes Don't Count Against Batter",
+          "address": "0x0529"
+        },
+        {
+          "code": "GXOAZIVT",
+          "desc": "Balls Don't Count Against Pitcher",
+          "address": "0x052A"
+        },
+        {
+          "code": "GZNOTLVT",
+          "desc": "Foul Balls Don't Count as Strikes",
+          "address": "0x03AE"
+        },
+        {
+          "code": "0069:00",
+          "desc": "No Balls",
+          "address": "0x0069"
+        },
+        {
+          "code": "0068:00",
+          "desc": "No Strikes",
+          "address": "0x0068"
+        },
+        {
+          "code": "006A:00",
+          "desc": "No Outs",
+          "address": "0x006A"
+        },
+        {
+          "code": "002D:00",
+          "desc": "Team Selection Modifier (Pennant Mode)",
+          "address": "0x002D"
+        },
+        {
+          "code": "0464:00",
+          "desc": "Pitcher Position Modifier",
+          "address": "0x0464"
+        },
+        {
+          "code": "046C:00",
+          "desc": "Batter Position Modifier",
+          "address": "0x046C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

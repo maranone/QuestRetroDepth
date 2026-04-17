@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "chiptodalenodaisakusen",
+  "display_name": "Chip to Dale no Daisakusen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Chip to Dale no Daisakusen (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "ENOAUPEI",
+          "desc": "Select Button Shows Debug Mode",
+          "address": "0x017B"
+        },
+        {
+          "code": "EYOAUZEI",
+          "desc": "Select Button Removes Enemies And Apples",
+          "address": "0x027B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

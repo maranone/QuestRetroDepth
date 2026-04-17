@@ -1,0 +1,42 @@
+{
+  "system": "nes",
+  "normalized_title": "excitebike",
+  "display_name": "Excitebike (USA) (GameCube Edition)",
+  "aliases": [
+    "Excitebike (Japan, USA)",
+    "Excitebike (World) (Game Genie)",
+    "Excitebike (USA) (GameCube Edition)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Excitebike (World) (Game Genie).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "AGPPPO",
+          "desc": "Tem. Builds Up Faster",
+          "address": "0x0141"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Excitebike (USA) (GameCube Edition).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "AGPPPO",
+          "desc": "Tem. Builds Up Faster",
+          "address": "0x0141"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

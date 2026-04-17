@@ -1,0 +1,60 @@
+{
+  "system": "pce",
+  "normalized_title": "bonksadventure",
+  "display_name": "Bonks Adventure (Rumbles)",
+  "aliases": [
+    "Bonks Adventure (USA)",
+    "Bonk's Adventure (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Bonks Adventure (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "1f0db4:0f",
+          "desc": "Infinite Energy",
+          "address": "0x1F0DB4"
+        },
+        {
+          "code": "1f0db1:02",
+          "desc": "Infinite Lives",
+          "address": "0x1F0DB1"
+        },
+        {
+          "code": "1f0c03:01",
+          "desc": "Invincibility",
+          "address": "0x1F0C03"
+        },
+        {
+          "code": "1f0db6:63",
+          "desc": "Max Jump Height",
+          "address": "0x1F0DB6"
+        },
+        {
+          "code": "1f0db7:07",
+          "desc": "Max Speed",
+          "address": "0x1F0DB7"
+        },
+        {
+          "code": "1f0dba:02",
+          "desc": "Big Meat Bonk",
+          "address": "0x1F0DBA"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\pce\\Bonk's Adventure (USA).cht",
+      "total_cheat_rows": 0,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=NHL 97 (USA, Europe) (Action Replay)
+game_key=nhl_97_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffcadc	score	0xFFCADC	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffc73e	score	0xFFC73E	1	uint	little	prev < curr	0.8	1	right:0.350:60

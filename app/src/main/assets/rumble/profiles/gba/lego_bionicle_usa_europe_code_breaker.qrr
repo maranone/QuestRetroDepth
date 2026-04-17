@@ -1,0 +1,12 @@
+game_name=LEGO Bionicle (USA, Europe) (Code Breaker)
+game_key=lego_bionicle_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_02002500	damage_taken	0x02002500	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02002500	death	0x02002500	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020029e4	damage_taken	0x020029E4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020029e4	death	0x020029E4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02002524	damage_taken	0x02002524	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02002524	death	0x02002524	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_020029e0	damage_taken	0x020029E0	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020029e0	death	0x020029E0	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,33 @@
+{
+  "system": "gb",
+  "normalized_title": "operationc",
+  "display_name": "Operation C (USA) (Game Genie)",
+  "aliases": [
+    "Operation C (USA) (GameShark)",
+    "Operation C (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Operation C (USA).cht",
+      "total_cheat_rows": 33,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0101C9DE",
+          "desc": "Sound Menu",
+          "address": "0xC9DE"
+        },
+        {
+          "code": "0101DADE",
+          "desc": "Enable Stage Select (Press Start on Title Screen)",
+          "address": "0xDADE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

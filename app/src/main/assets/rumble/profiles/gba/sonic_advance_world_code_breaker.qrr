@@ -1,0 +1,12 @@
+game_name=Sonic Advance (World) (Code Breaker)
+game_key=sonic_advance_world_code_breaker
+system=gba
+integration_tier=contrib
+trigger	level_complete_level_02005034	level_complete	0x02005034	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	life_lost_lives_02005024	life_lost	0x02005024	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02005024	life_gained	0x02005024	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_02005030	score	0x02005030	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02005032	score	0x02005032	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	level_complete_level_02005078	level_complete	0x02005078	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_02005a46	damage_taken	0x02005A46	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02005a46	death	0x02005A46	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

@@ -1,0 +1,83 @@
+{
+  "system": "nes",
+  "normalized_title": "adventuresoflolo2",
+  "display_name": "Adventures of Lolo 2 (World) (Game Genie)",
+  "aliases": [
+    "Adventures of Lolo 2 (USA)",
+    "Adventures of Lolo 2 (World) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Adventures of Lolo 2 (World) (Game Genie).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 12,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "GZXPVLVG",
+          "desc": "Infinite Lives",
+          "address": "0x032E"
+        },
+        {
+          "code": "PESPXPIA",
+          "desc": "Start With 1 Life",
+          "address": "0x010A"
+        },
+        {
+          "code": "ZESPXPIE",
+          "desc": "Start With 10 Lives",
+          "address": "0x010A"
+        },
+        {
+          "code": "YESPXPIE",
+          "desc": "Start With 15 Lives",
+          "address": "0x010A"
+        },
+        {
+          "code": "ZAEPSZAA",
+          "desc": "Start With 2 Magic Shots",
+          "address": "0x020D"
+        },
+        {
+          "code": "GAEPSZAA",
+          "desc": "Start With 4 Magic Shots",
+          "address": "0x020D"
+        },
+        {
+          "code": "GEUPKPAA",
+          "desc": "Start At World 5",
+          "address": "0x010C"
+        },
+        {
+          "code": "PEUPKPAE",
+          "desc": "Start At World 10",
+          "address": "0x010C"
+        },
+        {
+          "code": "TEUPKPAE",
+          "desc": "Start At World 15",
+          "address": "0x010C"
+        },
+        {
+          "code": "LOUPKPAA",
+          "desc": "Start At World 20",
+          "address": "0x011C"
+        },
+        {
+          "code": "AOUPKPAE",
+          "desc": "Start At World 25",
+          "address": "0x011C"
+        },
+        {
+          "code": "IOUPKPAE",
+          "desc": "Start At World 30",
+          "address": "0x011C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

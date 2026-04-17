@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "roadtripshiftinggears",
+  "display_name": "Road Trip - Shifting Gears (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Road Trip - Shifting Gears (USA) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10036AC0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02036AC0"
+        },
+        {
+          "code": "82000F30",
+          "desc": "Max Money",
+          "address": "0x02000F30"
+        },
+        {
+          "code": "82000F32",
+          "desc": "Max Money",
+          "address": "0x02000F32"
+        },
+        {
+          "code": "83005C0C",
+          "desc": "Low Time & Always Place 1st",
+          "address": "0x02005C0C"
+        },
+        {
+          "code": "33005C72",
+          "desc": "100 Points",
+          "address": "0x02005C72"
+        },
+        {
+          "code": "32013DE0",
+          "desc": "Weapon Modifier",
+          "address": "0x02013DE0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Road Trip - Shifting Gears (USA) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10036AC0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02036AC0"
+        },
+        {
+          "code": "82000F30",
+          "desc": "Max Money",
+          "address": "0x02000F30"
+        },
+        {
+          "code": "82000F32",
+          "desc": "Max Money",
+          "address": "0x02000F32"
+        },
+        {
+          "code": "83005C0C",
+          "desc": "Low Time & Always Place 1st",
+          "address": "0x02005C0C"
+        },
+        {
+          "code": "33005C72",
+          "desc": "100 Points",
+          "address": "0x02005C72"
+        },
+        {
+          "code": "32013DE0",
+          "desc": "Weapon Modifier",
+          "address": "0x02013DE0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

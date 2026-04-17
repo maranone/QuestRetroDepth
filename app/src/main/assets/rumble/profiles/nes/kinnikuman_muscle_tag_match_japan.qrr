@@ -1,0 +1,13 @@
+game_name=Kinnikuman - Muscle Tag Match (Japan)
+game_key=kinnikuman_muscle_tag_match_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0089	damage_taken	0x0089	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0089	death	0x0089	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_011b	enemy_defeated	0x011B	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_0090	enemy_defeated	0x0090	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	score_score_076c	score	0x076C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_076d	score	0x076D	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_076e	score	0x076E	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	level_complete_level_006e	level_complete	0x006E	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	pickup_coins_0072	pickup	0x0072	1	uint	little	prev != curr	0.8	1	right:0.250:18

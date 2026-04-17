@@ -1,0 +1,102 @@
+{
+  "system": "gbc",
+  "normalized_title": "crystalis",
+  "display_name": "Crystalis (USA) (Game Genie)",
+  "aliases": [
+    "Crystalis (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Crystalis (USA).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 16,
+      "distinct_address_count": 14,
+      "sample_raw_entries": [
+        {
+          "code": "01FFC8C2",
+          "desc": "Infinite HP",
+          "address": "0xC8C2"
+        },
+        {
+          "code": "01FFC7C2",
+          "desc": "Max HP",
+          "address": "0xC7C2"
+        },
+        {
+          "code": "01FFCAC2",
+          "desc": "Infinite MP",
+          "address": "0xCAC2"
+        },
+        {
+          "code": "01FFC9C2",
+          "desc": "Max MP",
+          "address": "0xC9C2"
+        },
+        {
+          "code": "0163CCC2",
+          "desc": "Max Attack",
+          "address": "0xCCC2"
+        },
+        {
+          "code": "0163CEC2",
+          "desc": "Max Defense Armor",
+          "address": "0xCEC2"
+        },
+        {
+          "code": "0163D0C2",
+          "desc": "Max Defense Shield",
+          "address": "0xD0C2"
+        },
+        {
+          "code": "0110D9C2",
+          "desc": "Max Level",
+          "address": "0xD9C2"
+        },
+        {
+          "code": "01FFDAC2",
+          "desc": "Quick Exp",
+          "address": "0xDAC2"
+        },
+        {
+          "code": "01FFDCC2",
+          "desc": "Have All Swords",
+          "address": "0xDCC2"
+        },
+        {
+          "code": "01FFDDC2",
+          "desc": "Have All Armors",
+          "address": "0xDDC2"
+        },
+        {
+          "code": "01FFDEC2",
+          "desc": "Have All Shields",
+          "address": "0xDEC2"
+        },
+        {
+          "code": "01FFDFC2",
+          "desc": "Have All Powers",
+          "address": "0xDFC2"
+        },
+        {
+          "code": "01FFDBC2",
+          "desc": "65280 exp for Each Enemy Killed",
+          "address": "0xDBC2"
+        },
+        {
+          "code": "01FECAC2",
+          "desc": "Max/Infinite Magic Points",
+          "address": "0xCAC2"
+        },
+        {
+          "code": "01FAC8C2",
+          "desc": "Max/Infinite Hit Points",
+          "address": "0xC8C2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

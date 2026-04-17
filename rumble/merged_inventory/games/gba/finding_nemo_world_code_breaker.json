@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "findingnemo",
+  "display_name": "Finding Nemo (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Finding Nemo (World) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10010880",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02010880"
+        },
+        {
+          "code": "32002F74",
+          "desc": "Max Air Rings",
+          "address": "0x02002F74"
+        },
+        {
+          "code": "32002F78",
+          "desc": "Max Star Rings",
+          "address": "0x02002F78"
+        },
+        {
+          "code": "32006204",
+          "desc": "Always Play Level Modifier (00-0B)",
+          "address": "0x02006204"
+        },
+        {
+          "code": "72006204",
+          "desc": "Start On Level Modifier (01-0B)",
+          "address": "0x02006204"
+        },
+        {
+          "code": "32006204",
+          "desc": "Start On Level Modifier (01-0B)",
+          "address": "0x02006204"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Finding Nemo (World) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10010880",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02010880"
+        },
+        {
+          "code": "32002F74",
+          "desc": "Max Air Rings",
+          "address": "0x02002F74"
+        },
+        {
+          "code": "32002F78",
+          "desc": "Max Star Rings",
+          "address": "0x02002F78"
+        },
+        {
+          "code": "32006204",
+          "desc": "Always Play Level Modifier (00-0B)",
+          "address": "0x02006204"
+        },
+        {
+          "code": "72006204",
+          "desc": "Start On Level Modifier (01-0B)",
+          "address": "0x02006204"
+        },
+        {
+          "code": "32006204",
+          "desc": "Start On Level Modifier (01-0B)",
+          "address": "0x02006204"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

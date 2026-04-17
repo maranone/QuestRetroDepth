@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "threestooges",
+  "display_name": "Three Stooges, The (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Three Stooges, The (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "0092:09",
+          "desc": "Infinite Pies (In Pie-Throwing Contest)",
+          "address": "0x0092"
+        },
+        {
+          "code": "007C:01",
+          "desc": "Always Day 1",
+          "address": "0x007C"
+        },
+        {
+          "code": "00AA:01",
+          "desc": "Boxing Round Always Set To 1",
+          "address": "0x00AA"
+        },
+        {
+          "code": "0072:01",
+          "desc": "Stooge Moves Faster (When Running During Boxing Match)",
+          "address": "0x0072"
+        },
+        {
+          "code": "00D8:00",
+          "desc": "Mini-Game Option Timer Starts At X Modifier (0 - 9)",
+          "address": "0x00D8"
+        },
+        {
+          "code": "0099:09",
+          "desc": "Infinite Time In Hospital Mini-Game (One's Digit)",
+          "address": "0x0099"
+        },
+        {
+          "code": "009A:09",
+          "desc": "Infinite Time In Hospital Mini-Game (Ten's Digit)",
+          "address": "0x009A"
+        },
+        {
+          "code": "0082:FF",
+          "desc": "Earn Lots of Money",
+          "address": "0x0082"
+        },
+        {
+          "code": "007E:FF",
+          "desc": "Have lots of Money",
+          "address": "0x007E"
+        },
+        {
+          "code": "007F:FF",
+          "desc": "Have lots of Money",
+          "address": "0x007F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

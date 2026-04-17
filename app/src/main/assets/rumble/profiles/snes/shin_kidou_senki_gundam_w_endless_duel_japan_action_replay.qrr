@@ -1,0 +1,7 @@
+game_name=Shin Kidou Senki Gundam W - Endless Duel (Japan) (Action Replay)
+game_key=shin_kidou_senki_gundam_w_endless_duel_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_1b80	pickup	0x7E1B80	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_1b84	pickup	0x7E1B84	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_051c	level_complete	0x7E051C	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

@@ -1,0 +1,11 @@
+game_name=Battle Tycoon - Flash Hiders SFX (Japan)
+game_key=battle_tycoon_flash_hiders_sfx_japan
+system=snes
+integration_tier=contrib
+trigger	damage_taken_health_02ab	damage_taken	0x7E02AB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02ab	death	0x7E02AB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_03ab	damage_taken	0x7E03AB	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_03ab	death	0x7E03AB	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	pickup_coins_213b	pickup	0x7E213B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_213c	pickup	0x7E213C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_213d	pickup	0x7E213D	1	uint	little	prev != curr	0.8	1	right:0.250:18

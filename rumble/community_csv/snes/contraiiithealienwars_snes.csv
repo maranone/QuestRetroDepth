@@ -2,9 +2,9 @@
 # game_name=ContraIIITheAlienWars
 # match_names=contraiiithealienwars|contraiiithealienwarssnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-p1_life_lost_1746,0x7E1746,1,uint,prev_gt_curr,,left,0.630,normal,0,250,160,80,
+p1_life_lost_1746,0x7E1746,1,uint,prev_gt_curr,,left,0.92,fade_in_out,0,250,250,80,
 p1_megabomb_used_1f8c,0x7E1F8C,1,uint,prev_gt_curr,,left,1.000,normal,0,250,75,25,
-p1_enemy_hit_1fa1,0x7E1FA1,1,uint,changed,,left,0.510,normal,0,100,75,30,
-p2_life_lost_1766,0x7E1766,1,uint,prev_gt_curr,,right,0.630,normal,0,250,160,80,
+p1_enemy_hit_1fa1,0x7E1FA1,1,uint,changed,,left,0.55,burst,0,100,50,30,
+p2_life_lost_1766,0x7E1766,1,uint,prev_gt_curr,,right,0.92,fade_in_out,0,250,250,80,
 p2_megabomb_used_1fcc,0x7E1FCC,1,uint,prev_gt_curr,,right,1.000,normal,0,250,75,25,
-p2_enemy_hit_1fe0,0x7E1FE0,1,uint,changed,,right,0.510,normal,0,100,75,30,
+p2_enemy_hit_1fe0,0x7E1FE0,1,uint,changed,,right,0.55,burst,0,100,50,30,

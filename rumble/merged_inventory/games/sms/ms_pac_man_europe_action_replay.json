@@ -1,0 +1,51 @@
+{
+  "system": "sms",
+  "normalized_title": "mspacman",
+  "display_name": "Ms. Pac-Man (Europe) (Action Replay)",
+  "aliases": [
+    "Ms. Pac-Man (Europe) (Action Replay)",
+    "Ms. Pac-Man (Europe, Brazil)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\sms\\stable\\mspacman_sms.json",
+      "trigger_count": 2,
+      "field_names": [
+        "lives"
+      ],
+      "field_count": 1,
+      "distinct_addresses": [
+        "0xDC76"
+      ],
+      "distinct_address_count": 1
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\MsPacMan-Sms-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0xDC76",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0xDA46",
+          "type": "><d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Sega - Master System - Mark III\\Ms. Pac-Man (Europe, Brazil).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

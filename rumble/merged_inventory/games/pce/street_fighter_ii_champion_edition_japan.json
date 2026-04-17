@@ -1,0 +1,80 @@
+{
+  "system": "pce",
+  "normalized_title": "streetfighteriichampionedition",
+  "display_name": "Street Fighter II' - Champion Edition (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Street Fighter II' - Champion Edition (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 12,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "1f0dbc:99",
+          "desc": "Infinite Time",
+          "address": "0x1F0DBC"
+        },
+        {
+          "code": "1f1410:b0",
+          "desc": "P1 Infinite Health",
+          "address": "0x1F1410"
+        },
+        {
+          "code": "1f1424:b0",
+          "desc": "P1 Infinite Health",
+          "address": "0x1F1424"
+        },
+        {
+          "code": "1f1411:ff",
+          "desc": "P1 Instant Win (P2 Life Mod)",
+          "address": "0x1F1411"
+        },
+        {
+          "code": "1f1425:26",
+          "desc": "P1 Instant Win (P2 Life Mod)",
+          "address": "0x1F1425"
+        },
+        {
+          "code": "1f17c8:20",
+          "desc": "P1 Bonus Stage 2 Perfect",
+          "address": "0x1F17C8"
+        },
+        {
+          "code": "1f1410:b0",
+          "desc": "P1 Unlimited Energy",
+          "address": "0x1F1410"
+        },
+        {
+          "code": "1f177a:b0",
+          "desc": "P1 Unlimited Energy",
+          "address": "0x1F177A"
+        },
+        {
+          "code": "1f1411:b0",
+          "desc": "P2 Unlimited Energy",
+          "address": "0x1F1411"
+        },
+        {
+          "code": "1f177b:b0",
+          "desc": "P2 Unlimited Energy",
+          "address": "0x1F177B"
+        },
+        {
+          "code": "1f1634:00",
+          "desc": "P1 Can Do Most Moves in Mid-Air",
+          "address": "0x1F1634"
+        },
+        {
+          "code": "1f1635:00",
+          "desc": "P2 Can Do Most Moves in Mid-Air",
+          "address": "0x1F1635"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

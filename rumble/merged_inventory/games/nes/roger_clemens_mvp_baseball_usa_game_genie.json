@@ -1,0 +1,87 @@
+{
+  "system": "nes",
+  "normalized_title": "rogerclemensmvpbaseball",
+  "display_name": "Roger Clemens' MVP Baseball (USA) (Game Genie)",
+  "aliases": [
+    "Roger Clemens' MVP Baseball (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Roger Clemens' MVP Baseball (USA).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 13,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "ZANEAPLA",
+          "desc": "2 strikes and you're out",
+          "address": "0x0188"
+        },
+        {
+          "code": "PANEAPLA",
+          "desc": "1 strike and you're out",
+          "address": "0x0188"
+        },
+        {
+          "code": "GANAAPZA",
+          "desc": "Strikes are not called when batter swings",
+          "address": "0x0108"
+        },
+        {
+          "code": "SLNALPVY",
+          "desc": "Infinite balls and strikes",
+          "address": "0x013B"
+        },
+        {
+          "code": "063B:00",
+          "desc": "Runs For Your Team",
+          "address": "0x063B"
+        },
+        {
+          "code": "00AE:00",
+          "desc": "Balls",
+          "address": "0x00AE"
+        },
+        {
+          "code": "00AF:00",
+          "desc": "Strikes",
+          "address": "0x00AF"
+        },
+        {
+          "code": "063C:00",
+          "desc": "Team 2 Score",
+          "address": "0x063C"
+        },
+        {
+          "code": "063B:00",
+          "desc": "P1 Score Modifier",
+          "address": "0x063B"
+        },
+        {
+          "code": "063C:00",
+          "desc": "P2/CPU Score Modifier",
+          "address": "0x063C"
+        },
+        {
+          "code": "00AF:00",
+          "desc": "Strike Modifier",
+          "address": "0x00AF"
+        },
+        {
+          "code": "00AE:00",
+          "desc": "Balls Modifier",
+          "address": "0x00AE"
+        },
+        {
+          "code": "00B0:00",
+          "desc": "Outs Modifier",
+          "address": "0x00B0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

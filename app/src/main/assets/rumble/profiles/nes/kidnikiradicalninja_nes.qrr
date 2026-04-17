@@ -1,0 +1,7 @@
+game_name=Kid Niki - Radical Ninja (USA) (Game Genie) (diff)
+game_key=KidNikiRadicalNinja-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_00cc	life_lost	0x00CC	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00cc	life_gained	0x00CC	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0078	score	0x0078	3	uint	little	prev < curr	0.8	1	right:0.350:60

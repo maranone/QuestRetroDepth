@@ -1,0 +1,6 @@
+game_name=Sword of Mana (USA, Europe) (Code Breaker)
+game_key=sword_of_mana_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	pickup_coins_02020d20	pickup	0x02020D20	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	level_complete_level_020203f2	level_complete	0x020203F2	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

@@ -1,0 +1,6 @@
+game_name=Classic NES Series - Donkey Kong (USA, Europe) (Code Breaker)
+game_key=classic_nes_series_donkey_kong_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	score_score_02007226	score	0x02007226	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02007225	score	0x02007225	1	uint	little	prev < curr	0.8	1	right:0.350:60

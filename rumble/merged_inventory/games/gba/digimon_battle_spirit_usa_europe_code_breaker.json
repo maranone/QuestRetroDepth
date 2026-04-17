@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "digimonbattlespirit",
+  "display_name": "Digimon - Battle Spirit (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Digimon - Battle Spirit (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "32011776",
+          "desc": "250 Points",
+          "address": "0x02011776"
+        },
+        {
+          "code": "83004500",
+          "desc": "Stop Timer",
+          "address": "0x02004500"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Moon Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32011754",
+          "desc": "Moon Jump",
+          "address": "0x02011754"
+        },
+        {
+          "code": "32011774",
+          "desc": "Infinite Health",
+          "address": "0x02011774"
+        },
+        {
+          "code": "8201177A",
+          "desc": "Infinite Power",
+          "address": "0x0201177A"
+        },
+        {
+          "code": "7201188C",
+          "desc": "Weak Boss",
+          "address": "0x0201188C"
+        },
+        {
+          "code": "3201188C",
+          "desc": "Weak Boss",
+          "address": "0x0201188C"
+        },
+        {
+          "code": "33002329",
+          "desc": "Unlock All Characters",
+          "address": "0x02002329"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Digimon - Battle Spirit (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "32011776",
+          "desc": "250 Points",
+          "address": "0x02011776"
+        },
+        {
+          "code": "83004500",
+          "desc": "Stop Timer",
+          "address": "0x02004500"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Moon Jump",
+          "address": "0x02000020"
+        },
+        {
+          "code": "32011754",
+          "desc": "Moon Jump",
+          "address": "0x02011754"
+        },
+        {
+          "code": "32011774",
+          "desc": "Infinite Health",
+          "address": "0x02011774"
+        },
+        {
+          "code": "8201177A",
+          "desc": "Infinite Power",
+          "address": "0x0201177A"
+        },
+        {
+          "code": "7201188C",
+          "desc": "Weak Boss",
+          "address": "0x0201188C"
+        },
+        {
+          "code": "3201188C",
+          "desc": "Weak Boss",
+          "address": "0x0201188C"
+        },
+        {
+          "code": "33002329",
+          "desc": "Unlock All Characters",
+          "address": "0x02002329"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "dondokodon2",
+  "display_name": "Don Doko Don 2 (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Don Doko Don 2 (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0110:07",
+          "desc": "Infinite Energy",
+          "address": "0x0110"
+        },
+        {
+          "code": "0124:0A",
+          "desc": "Infinite Lives",
+          "address": "0x0124"
+        },
+        {
+          "code": "0146:01",
+          "desc": "Invincibility",
+          "address": "0x0146"
+        },
+        {
+          "code": "0120:00",
+          "desc": "Weapon Modifier",
+          "address": "0x0120"
+        },
+        {
+          "code": "0126:01",
+          "desc": "Always Have Key",
+          "address": "0x0126"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

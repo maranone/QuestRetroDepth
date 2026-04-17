@@ -1,0 +1,6 @@
+game_name=Kyuukyoku Tiger (Japan)
+game_key=kyuukyoku_tiger_japan
+system=pce
+integration_tier=contrib
+trigger	life_lost_lives_1f167b	life_lost	0x1F167B	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_1f167b	life_gained	0x1F167B	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

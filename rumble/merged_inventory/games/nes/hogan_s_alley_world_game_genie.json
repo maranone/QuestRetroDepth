@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "hogansalley",
+  "display_name": "Hogan's Alley (World) (Game Genie)",
+  "aliases": [
+    "Hogan's Alley (World)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Hogan's Alley (World).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "00B2:00",
+          "desc": "Round Modifier",
+          "address": "0x00B2"
+        },
+        {
+          "code": "00B3:00",
+          "desc": "Never Miss",
+          "address": "0x00B3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

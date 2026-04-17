@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "incrediblehulk",
+  "display_name": "Incredible Hulk, The (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Incredible Hulk, The (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10016B24",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02016B24"
+        },
+        {
+          "code": "32000EFF",
+          "desc": "Full Rage Meter",
+          "address": "0x02000EFF"
+        },
+        {
+          "code": "32000EC0",
+          "desc": "Infinite Health",
+          "address": "0x02000EC0"
+        },
+        {
+          "code": "3300043C",
+          "desc": "All Fists",
+          "address": "0x0200043C"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Incredible Hulk, The (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10016B24",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02016B24"
+        },
+        {
+          "code": "32000EFF",
+          "desc": "Full Rage Meter",
+          "address": "0x02000EFF"
+        },
+        {
+          "code": "32000EC0",
+          "desc": "Infinite Health",
+          "address": "0x02000EC0"
+        },
+        {
+          "code": "3300043C",
+          "desc": "All Fists",
+          "address": "0x0200043C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

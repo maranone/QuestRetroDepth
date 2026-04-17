@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "touchdownfever",
+  "display_name": "Touchdown Fever (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Touchdown Fever (USA).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 6,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0088:00",
+          "desc": "Player 1 Score Modifier",
+          "address": "0x0088"
+        },
+        {
+          "code": "0089:00",
+          "desc": "Opponent/Player 2 Score Modifier",
+          "address": "0x0089"
+        },
+        {
+          "code": "0040:00",
+          "desc": "Minutes Modifier",
+          "address": "0x0040"
+        },
+        {
+          "code": "0041:00",
+          "desc": "Seconds Modifier",
+          "address": "0x0041"
+        },
+        {
+          "code": "0040:63",
+          "desc": "Infinite Time (Minutes)",
+          "address": "0x0040"
+        },
+        {
+          "code": "0041:31",
+          "desc": "Infinite Time (Seconds)",
+          "address": "0x0041"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,6 @@
+game_name=Bard's Tale, The (USA)
+game_key=bard_s_tale_the_usa
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_1040	pickup	0x1040	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_033e	pickup	0x033E	1	uint	little	prev != curr	0.8	1	right:0.250:18

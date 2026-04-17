@@ -1,0 +1,53 @@
+{
+  "system": "gb",
+  "normalized_title": "contraalienwars",
+  "display_name": "Contra - The Alien Wars (USA) (SGB Enhanced)",
+  "aliases": [
+    "Contra - The Alien Wars (USA) (GameShark)",
+    "Contra - The Alien Wars (USA) (SGB Enhanced)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Contra - The Alien Wars (USA) (SGB Enhanced).cht",
+      "total_cheat_rows": 34,
+      "raw_entry_count": 6,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0109DAC1",
+          "desc": "Infinite Bombs",
+          "address": "0xDAC1"
+        },
+        {
+          "code": "0109DBC1",
+          "desc": "Infinite Continues",
+          "address": "0xDBC1"
+        },
+        {
+          "code": "0100D6C1",
+          "desc": "Difficulty Modifier",
+          "address": "0xD6C1"
+        },
+        {
+          "code": "0103D8C1",
+          "desc": "Infinite Lives",
+          "address": "0xD8C1"
+        },
+        {
+          "code": "0109D8C1",
+          "desc": "Infinite Lives",
+          "address": "0xD8C1"
+        },
+        {
+          "code": "0100D7C1",
+          "desc": "Stage Modifier",
+          "address": "0xD7C1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

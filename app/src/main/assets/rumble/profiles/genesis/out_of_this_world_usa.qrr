@@ -1,0 +1,20 @@
+game_name=Out of this World (USA)
+game_key=out_of_this_world_usa
+system=genesis
+integration_tier=contrib
+trigger	level_complete_level_ffeb41	level_complete	0xFFEB41	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_ffebed	level_complete	0xFFEBED	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_ffec54	level_complete	0xFFEC54	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_ffec55	level_complete	0xFFEC55	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_ffec56	level_complete	0xFFEC56	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	enemy_defeated_enemy_health_ffeb2b	enemy_defeated	0xFFEB2B	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ffeb31	enemy_defeated	0xFFEB31	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ffeb37	enemy_defeated	0xFFEB37	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ffeb74	enemy_defeated	0xFFEB74	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ffeb7f	enemy_defeated	0xFFEB7F	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ffebac	enemy_defeated	0xFFEBAC	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ffebb0	enemy_defeated	0xFFEBB0	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ffebb4	enemy_defeated	0xFFEBB4	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ffebb8	enemy_defeated	0xFFEBB8	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ffebbc	enemy_defeated	0xFFEBBC	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	enemy_defeated_enemy_health_ffebc0	enemy_defeated	0xFFEBC0	1	uint	little	prev > curr	0.65	1	right:0.450:35

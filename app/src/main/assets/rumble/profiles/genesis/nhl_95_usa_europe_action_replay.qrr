@@ -1,0 +1,6 @@
+game_name=NHL 95 (USA, Europe) (Action Replay)
+game_key=nhl_95_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ffc5fa	score	0xFFC5FA	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ffc294	score	0xFFC294	1	uint	little	prev < curr	0.8	1	right:0.350:60

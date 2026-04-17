@@ -1,0 +1,6 @@
+game_name=Probotector (Europe) (En,Fr,De)
+game_key=probotector_europe_en_fr_de
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_fffa0c	life_lost	0xFFFA0C	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fffa0c	life_gained	0xFFFA0C	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

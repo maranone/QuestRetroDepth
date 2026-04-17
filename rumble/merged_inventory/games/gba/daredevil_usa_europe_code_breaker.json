@@ -1,0 +1,138 @@
+{
+  "system": "gba",
+  "normalized_title": "daredevil",
+  "display_name": "Daredevil (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Daredevil (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10006180",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02006180"
+        },
+        {
+          "code": "32009364",
+          "desc": "Infinite Health",
+          "address": "0x02009364"
+        },
+        {
+          "code": "3300640E",
+          "desc": "Infinite Sense",
+          "address": "0x0200640E"
+        },
+        {
+          "code": "33005296",
+          "desc": "Infinite Lives",
+          "address": "0x02005296"
+        },
+        {
+          "code": "32009368",
+          "desc": "Transparent",
+          "address": "0x02009368"
+        },
+        {
+          "code": "72009362",
+          "desc": "Multi Jump",
+          "address": "0x02009362"
+        },
+        {
+          "code": "32009362",
+          "desc": "Multi Jump",
+          "address": "0x02009362"
+        },
+        {
+          "code": "33005294",
+          "desc": "Have Billy Club",
+          "address": "0x02005294"
+        },
+        {
+          "code": "33006492",
+          "desc": "Have Billy Club",
+          "address": "0x02006492"
+        },
+        {
+          "code": "33006496",
+          "desc": "Have Double Strength",
+          "address": "0x02006496"
+        },
+        {
+          "code": "43006580",
+          "desc": "Unlock All Secrets",
+          "address": "0x02006580"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Daredevil (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 11,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10006180",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02006180"
+        },
+        {
+          "code": "32009364",
+          "desc": "Infinite Health",
+          "address": "0x02009364"
+        },
+        {
+          "code": "3300640E",
+          "desc": "Infinite Sense",
+          "address": "0x0200640E"
+        },
+        {
+          "code": "33005296",
+          "desc": "Infinite Lives",
+          "address": "0x02005296"
+        },
+        {
+          "code": "32009368",
+          "desc": "Transparent",
+          "address": "0x02009368"
+        },
+        {
+          "code": "72009362",
+          "desc": "Multi Jump",
+          "address": "0x02009362"
+        },
+        {
+          "code": "32009362",
+          "desc": "Multi Jump",
+          "address": "0x02009362"
+        },
+        {
+          "code": "33005294",
+          "desc": "Have Billy Club",
+          "address": "0x02005294"
+        },
+        {
+          "code": "33006492",
+          "desc": "Have Billy Club",
+          "address": "0x02006492"
+        },
+        {
+          "code": "33006496",
+          "desc": "Have Double Strength",
+          "address": "0x02006496"
+        },
+        {
+          "code": "43006580",
+          "desc": "Unlock All Secrets",
+          "address": "0x02006580"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

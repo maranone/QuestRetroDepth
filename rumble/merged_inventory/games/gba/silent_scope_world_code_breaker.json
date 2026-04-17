@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "silentscope",
+  "display_name": "Silent Scope (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Silent Scope (World) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "100021D4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020021D4"
+        },
+        {
+          "code": "3300A048",
+          "desc": "Infinite Health",
+          "address": "0x0200A048"
+        },
+        {
+          "code": "330043B5",
+          "desc": "Infinite Credits",
+          "address": "0x020043B5"
+        },
+        {
+          "code": "3200A068",
+          "desc": "Max Hit Points",
+          "address": "0x0200A068"
+        },
+        {
+          "code": "3200A050",
+          "desc": "Quick Shot",
+          "address": "0x0200A050"
+        },
+        {
+          "code": "330043F8",
+          "desc": "Stop Timer",
+          "address": "0x020043F8"
+        },
+        {
+          "code": "330043E4",
+          "desc": "Low Total Time",
+          "address": "0x020043E4"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Silent Scope (World) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "100021D4",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020021D4"
+        },
+        {
+          "code": "3300A048",
+          "desc": "Infinite Health",
+          "address": "0x0200A048"
+        },
+        {
+          "code": "330043B5",
+          "desc": "Infinite Credits",
+          "address": "0x020043B5"
+        },
+        {
+          "code": "3200A068",
+          "desc": "Max Hit Points",
+          "address": "0x0200A068"
+        },
+        {
+          "code": "3200A050",
+          "desc": "Quick Shot",
+          "address": "0x0200A050"
+        },
+        {
+          "code": "330043F8",
+          "desc": "Stop Timer",
+          "address": "0x020043F8"
+        },
+        {
+          "code": "330043E4",
+          "desc": "Low Total Time",
+          "address": "0x020043E4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

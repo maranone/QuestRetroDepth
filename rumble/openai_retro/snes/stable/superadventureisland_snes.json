@@ -1,0 +1,175 @@
+{
+  "schema": "qrd.rumble.snes.v1",
+  "game": {
+    "name": "SuperAdventureIsland",
+    "system": "snes"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\SuperAdventureIsland-Snes\\data.json",
+    "integration_tier": "stable",
+    "game_key": "SuperAdventureIsland-Snes"
+  },
+  "triggers": [
+    {
+      "id": "game_over_gameover_00cf",
+      "event": "game_over",
+      "watch": [
+        {
+          "absolute_address": "0x7E00CF",
+          "size": 1,
+          "value_type": "nibble",
+          "byte_order": "native",
+          "raw_type": "|n1",
+          "bank": "7E",
+          "address": "0x00CF",
+          "wram_offset": 207
+        }
+      ],
+      "condition": "prev == 0 && curr != 0",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        },
+        {
+          "hand": "right",
+          "amplitude": 1.0,
+          "duration_ms": 1000
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Explicit game-over flag.",
+      "source_fields": [
+        {
+          "name": "gameover",
+          "address": "0x7E00CF",
+          "raw_type": "|n1"
+        }
+      ]
+    },
+    {
+      "id": "life_lost_lives_030d",
+      "event": "life_lost",
+      "watch": [
+        {
+          "absolute_address": "0x7E030D",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x030D",
+          "wram_offset": 781
+        }
+      ],
+      "condition": "prev > curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.9,
+          "duration_ms": 300
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives decreasing is a stable event.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x7E030D",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "life_gained_lives_030d",
+      "event": "life_gained",
+      "watch": [
+        {
+          "absolute_address": "0x7E030D",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "bank": "7E",
+          "address": "0x030D",
+          "wram_offset": 781
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.75,
+          "duration_ms": 180
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Lives increasing captures extra-life events.",
+      "source_fields": [
+        {
+          "name": "lives",
+          "address": "0x7E030D",
+          "raw_type": "|u1"
+        }
+      ]
+    },
+    {
+      "id": "score_score_0c93",
+      "event": "score",
+      "watch": [
+        {
+          "absolute_address": "0x7E0C93",
+          "size": 3,
+          "value_type": "bcd",
+          "byte_order": "little",
+          "raw_type": "<d3",
+          "bank": "7E",
+          "address": "0x0C93",
+          "wram_offset": 3219
+        }
+      ],
+      "condition": "prev < curr",
+      "haptic": [
+        {
+          "hand": "right",
+          "amplitude": 0.35,
+          "duration_ms": 60
+        }
+      ],
+      "confidence": 0.8,
+      "needs_review": true,
+      "reason": "Score increasing is a stable reward/progress event.",
+      "source_fields": [
+        {
+          "name": "score",
+          "address": "0x7E0C93",
+          "raw_type": "<d3"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "time",
+      "meta": {
+        "address": 8260972,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

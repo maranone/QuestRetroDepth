@@ -1,0 +1,7 @@
+game_name=Duel Masters - Kaijudo Showdown (USA, Europe) (Code Breaker)
+game_key=duel_masters_kaijudo_showdown_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	pickup_coins_020043bc	pickup	0x020043BC	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_020043be	pickup	0x020043BE	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_020016a5	enemy_defeated	0x020016A5	1	uint	little	prev > curr	0.65	1	right:0.450:35

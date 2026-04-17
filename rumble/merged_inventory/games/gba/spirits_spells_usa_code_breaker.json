@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "spiritsspells",
+  "display_name": "Spirits _ Spells (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Spirits _ Spells (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "83000924",
+          "desc": "Invincible",
+          "address": "0x02000924"
+        },
+        {
+          "code": "33000874",
+          "desc": "Max/Infinite Stars (Health)",
+          "address": "0x02000874"
+        },
+        {
+          "code": "33000875",
+          "desc": "Infinite Lives",
+          "address": "0x02000875"
+        },
+        {
+          "code": "33000876",
+          "desc": "Max Souls Found",
+          "address": "0x02000876"
+        },
+        {
+          "code": "33000877",
+          "desc": "Max Food Found",
+          "address": "0x02000877"
+        },
+        {
+          "code": "33000935",
+          "desc": "Infinite Double Jumps",
+          "address": "0x02000935"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Spirits _ Spells (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "83000924",
+          "desc": "Invincible",
+          "address": "0x02000924"
+        },
+        {
+          "code": "33000874",
+          "desc": "Max/Infinite Stars (Health)",
+          "address": "0x02000874"
+        },
+        {
+          "code": "33000875",
+          "desc": "Infinite Lives",
+          "address": "0x02000875"
+        },
+        {
+          "code": "33000876",
+          "desc": "Max Souls Found",
+          "address": "0x02000876"
+        },
+        {
+          "code": "33000877",
+          "desc": "Max Food Found",
+          "address": "0x02000877"
+        },
+        {
+          "code": "33000935",
+          "desc": "Infinite Double Jumps",
+          "address": "0x02000935"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "nightpearl",
+  "display_name": "Night Pearl",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Night Pearl.cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "009A:00",
+          "desc": "Infinite Energy P1",
+          "address": "0x009A"
+        },
+        {
+          "code": "0048:99",
+          "desc": "Infinite Time",
+          "address": "0x0048"
+        },
+        {
+          "code": "009B:FF",
+          "desc": "No Health P2",
+          "address": "0x009B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

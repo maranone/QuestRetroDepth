@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "powerrangerstimeforce",
+  "display_name": "Power Rangers - Time Force (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Power Rangers - Time Force (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10000900",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000900"
+        },
+        {
+          "code": "8200229C",
+          "desc": "Max Special Meter",
+          "address": "0x0200229C"
+        },
+        {
+          "code": "8200225C",
+          "desc": "Infinite Health",
+          "address": "0x0200225C"
+        },
+        {
+          "code": "82000030",
+          "desc": "Infinite Continues",
+          "address": "0x02000030"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Power Rangers - Time Force (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "10000900",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000900"
+        },
+        {
+          "code": "8200229C",
+          "desc": "Max Special Meter",
+          "address": "0x0200229C"
+        },
+        {
+          "code": "8200225C",
+          "desc": "Infinite Health",
+          "address": "0x0200225C"
+        },
+        {
+          "code": "82000030",
+          "desc": "Infinite Continues",
+          "address": "0x02000030"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

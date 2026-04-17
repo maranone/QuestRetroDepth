@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "wheeloffortunefeaturingvannawhite",
+  "display_name": "Wheel of Fortune Featuring Vanna White (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wheel of Fortune Featuring Vanna White (USA).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "0697:00",
+          "desc": "Character Modifier P1",
+          "address": "0x0697"
+        },
+        {
+          "code": "0698:01",
+          "desc": "Character Modifier P2",
+          "address": "0x0698"
+        },
+        {
+          "code": "0699:01",
+          "desc": "Character Modifier P3",
+          "address": "0x0699"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

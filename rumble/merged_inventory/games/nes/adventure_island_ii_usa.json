@@ -1,0 +1,183 @@
+{
+  "system": "nes",
+  "normalized_title": "adventureislandii",
+  "display_name": "Adventure Island II (USA)",
+  "aliases": [
+    "Adventure Island II (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\adventureislandii_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x07D2",
+        "0x07D8"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AdventureIslandII-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x07D2",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x07D8",
+          "type": "<n4"
+        },
+        {
+          "name": "time",
+          "address": "0x07D3",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Adventure Island II (USA).cht",
+      "total_cheat_rows": 146,
+      "raw_entry_count": 30,
+      "distinct_address_count": 29,
+      "sample_raw_entries": [
+        {
+          "code": "07D3:0F",
+          "desc": "Infinite Energy",
+          "address": "0x07D3"
+        },
+        {
+          "code": "POPPSY",
+          "desc": "At The Choose Your Egg Screen, There's Always An Egg",
+          "address": "0x0715"
+        },
+        {
+          "code": "TOLEXA",
+          "desc": "Honey Girl Egg Turns Into A Peterdon Icon",
+          "address": "0x0092"
+        },
+        {
+          "code": "0076:00",
+          "desc": "Invincibility",
+          "address": "0x0076"
+        },
+        {
+          "code": "0085:01",
+          "desc": "Levitate Jump",
+          "address": "0x0085"
+        },
+        {
+          "code": "0086:40",
+          "desc": "Super Jump",
+          "address": "0x0086"
+        },
+        {
+          "code": "0408:F2",
+          "desc": "Jump Mid / Walk On Air",
+          "address": "0x0408"
+        },
+        {
+          "code": "07D2:09",
+          "desc": "Infinite Lives",
+          "address": "0x07D2"
+        },
+        {
+          "code": "07D5:01",
+          "desc": "Always Have Axe",
+          "address": "0x07D5"
+        },
+        {
+          "code": "07C7:01",
+          "desc": "Invincible",
+          "address": "0x07C7"
+        },
+        {
+          "code": "07C8:09",
+          "desc": "Infinite Power Up Slot 1",
+          "address": "0x07C8"
+        },
+        {
+          "code": "07C9:09",
+          "desc": "Infinite Power Up Slot 2",
+          "address": "0x07C9"
+        },
+        {
+          "code": "07CA:09",
+          "desc": "Infinite Power Up Slot 3",
+          "address": "0x07CA"
+        },
+        {
+          "code": "07CB:09",
+          "desc": "Infinite Power Up Slot 4",
+          "address": "0x07CB"
+        },
+        {
+          "code": "07CC:09",
+          "desc": "Infinite Power Up Slot 5",
+          "address": "0x07CC"
+        },
+        {
+          "code": "00E5:01",
+          "desc": "Always Have Fairy",
+          "address": "0x00E5"
+        },
+        {
+          "code": "007C:20",
+          "desc": "Dinosaur Modifier",
+          "address": "0x007C"
+        },
+        {
+          "code": "07D7:09",
+          "desc": "Max Score",
+          "address": "0x07D7"
+        },
+        {
+          "code": "07D8:09",
+          "desc": "Max Score",
+          "address": "0x07D8"
+        },
+        {
+          "code": "07D9:09",
+          "desc": "Max Score",
+          "address": "0x07D9"
+        },
+        {
+          "code": "07DA:09",
+          "desc": "Max Score",
+          "address": "0x07DA"
+        },
+        {
+          "code": "07DB:09",
+          "desc": "Max Score",
+          "address": "0x07DB"
+        },
+        {
+          "code": "07DC:09",
+          "desc": "Max Score",
+          "address": "0x07DC"
+        },
+        {
+          "code": "007C:00",
+          "desc": "Animal/Utility Modifier",
+          "address": "0x007C"
+        },
+        {
+          "code": "0087:01",
+          "desc": "Low Gravity Jumps",
+          "address": "0x0087"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

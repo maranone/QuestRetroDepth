@@ -1,0 +1,72 @@
+{
+  "system": "nes",
+  "normalized_title": "startropics",
+  "display_name": "StarTropics (USA, Europe) (Game Genie)",
+  "aliases": [
+    "StarTropics (USA)",
+    "StarTropics (USA, Europe) (Game Genie)",
+    "StarTropics"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\StarTropics (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 33,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "XELPNE",
+          "desc": "Always Same Music On Land",
+          "address": "0x0007"
+        },
+        {
+          "code": "NYAEPO",
+          "desc": "Strange Movement (Pause To See Where You Really Are)",
+          "address": "0x01F1"
+        },
+        {
+          "code": "ATLAST",
+          "desc": "Strange Screens",
+          "address": "0x0665"
+        },
+        {
+          "code": "PIZAZZ",
+          "desc": "Invisible Character",
+          "address": "0x0252"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\StarTropics.cht",
+      "total_cheat_rows": 33,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "XELPNE",
+          "desc": "Always Same Music On Land",
+          "address": "0x0007"
+        },
+        {
+          "code": "NYAEPO",
+          "desc": "Strange Movement (Pause To See Where You Really Are)",
+          "address": "0x01F1"
+        },
+        {
+          "code": "ATLAST",
+          "desc": "Strange Screens",
+          "address": "0x0665"
+        },
+        {
+          "code": "PIZAZZ",
+          "desc": "Invisible Character",
+          "address": "0x0252"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

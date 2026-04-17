@@ -1,0 +1,8 @@
+game_name=ESWAT - City Under Siege (USA, Europe) (Action Replay)
+game_key=eswat_city_under_siege_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	damage_taken_health_ffff28	damage_taken	0xFFFF28	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_ffff28	death	0xFFFF28	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_ffff38	life_lost	0xFFFF38	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_ffff38	life_gained	0xFFFF38	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

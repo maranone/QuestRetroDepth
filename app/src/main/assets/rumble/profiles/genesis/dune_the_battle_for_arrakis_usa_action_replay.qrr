@@ -1,0 +1,5 @@
+game_name=Dune - The Battle for Arrakis (USA) (Action Replay)
+game_key=dune_the_battle_for_arrakis_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ffd6c2	pickup	0xFFD6C2	1	uint	little	prev != curr	0.8	1	right:0.250:18

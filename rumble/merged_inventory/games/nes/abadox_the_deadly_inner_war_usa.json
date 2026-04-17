@@ -1,0 +1,118 @@
+{
+  "system": "nes",
+  "normalized_title": "abadoxdeadlyinnerwar",
+  "display_name": "Abadox - The Deadly Inner War (USA)",
+  "aliases": [
+    "Abadox - The Deadly Inner War (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\abadoxthedeadlyinnerwar_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0087",
+        "0x0300"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\AbadoxTheDeadlyInnerWar-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0087",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x0300",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Abadox - The Deadly Inner War (USA).cht",
+      "total_cheat_rows": 24,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "0087:09",
+          "desc": "Infinite Lives",
+          "address": "0x0087"
+        },
+        {
+          "code": "0086:00",
+          "desc": "Invincibility",
+          "address": "0x0086"
+        },
+        {
+          "code": "008A:00",
+          "desc": "Invincibility",
+          "address": "0x008A"
+        },
+        {
+          "code": "03DE:00",
+          "desc": "Bosses 1 Hit Kill",
+          "address": "0x03DE"
+        },
+        {
+          "code": "003D:00",
+          "desc": "Level Modifier",
+          "address": "0x003D"
+        },
+        {
+          "code": "0300:09",
+          "desc": "Score Modifier",
+          "address": "0x0300"
+        },
+        {
+          "code": "0301:09",
+          "desc": "Score Modifier",
+          "address": "0x0301"
+        },
+        {
+          "code": "0302:09",
+          "desc": "Score Modifier",
+          "address": "0x0302"
+        },
+        {
+          "code": "0303:09",
+          "desc": "Score Modifier",
+          "address": "0x0303"
+        },
+        {
+          "code": "0304:09",
+          "desc": "Score Modifier",
+          "address": "0x0304"
+        },
+        {
+          "code": "0305:09",
+          "desc": "Score Modifier",
+          "address": "0x0305"
+        },
+        {
+          "code": "008B:0A",
+          "desc": "Set Speed",
+          "address": "0x008B"
+        },
+        {
+          "code": "008C:FF",
+          "desc": "Weapon Shoots Clones",
+          "address": "0x008C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

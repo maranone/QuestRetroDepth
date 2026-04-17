@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "waronwheels",
+  "display_name": "War on Wheels",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\War on Wheels.cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "AAUAUALA",
+          "desc": "3 Minute Periods",
+          "address": "0x000B"
+        },
+        {
+          "code": "LAUAXAPA",
+          "desc": "3 Minute Periods",
+          "address": "0x000A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

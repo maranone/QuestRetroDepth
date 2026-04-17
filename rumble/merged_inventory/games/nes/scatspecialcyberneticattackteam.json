@@ -1,0 +1,43 @@
+{
+  "system": "nes",
+  "normalized_title": "scatspecialcyberneticattackteam",
+  "display_name": "SCATSpecialCyberneticAttackTeam",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\scatspecialcyberneticattackteam_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x001C",
+        "0x008A"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\SCATSpecialCyberneticAttackTeam-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x001C",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x008A",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

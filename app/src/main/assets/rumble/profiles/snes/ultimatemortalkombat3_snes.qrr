@@ -1,6 +1,0 @@
-game_name=UltimateMortalKombat3
-game_key=UltimateMortalKombat3-Snes
-system=snes
-integration_tier=manual
-trigger	damage_taken_0_36d4	damage_taken	0x7E36D4	1	uint	native	prev > curr	0.85	1	left:0.750:180
-trigger	damage_taken_1_3898	damage_taken	0x7E3898	1	uint	native	prev > curr	0.85	1	right:0.750:180

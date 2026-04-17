@@ -1,0 +1,145 @@
+{
+  "system": "pce",
+  "normalized_title": "supermetalcrusher",
+  "display_name": "Super Metal Crusher (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Super Metal Crusher (Japan).cht",
+      "total_cheat_rows": 29,
+      "raw_entry_count": 29,
+      "distinct_address_count": 29,
+      "sample_raw_entries": [
+        {
+          "code": "1f189e:ff",
+          "desc": "Infinite Adjustment Points",
+          "address": "0x1F189E"
+        },
+        {
+          "code": "1f0700:ff",
+          "desc": "P1 Infinite HP",
+          "address": "0x1F0700"
+        },
+        {
+          "code": "1f0701:ff",
+          "desc": "P1 Infinite FL",
+          "address": "0x1F0701"
+        },
+        {
+          "code": "1f0702:ff",
+          "desc": "P1 Infinite CG",
+          "address": "0x1F0702"
+        },
+        {
+          "code": "1f0720:00",
+          "desc": "CPU No HP",
+          "address": "0x1F0720"
+        },
+        {
+          "code": "1f0721:00",
+          "desc": "CPU No FL",
+          "address": "0x1F0721"
+        },
+        {
+          "code": "1f0722:00",
+          "desc": "CPU No CG",
+          "address": "0x1F0722"
+        },
+        {
+          "code": "1f18a1:20",
+          "desc": "Stat Max IQ",
+          "address": "0x1F18A1"
+        },
+        {
+          "code": "1f18a2:20",
+          "desc": "Stat Max Thinking",
+          "address": "0x1F18A2"
+        },
+        {
+          "code": "1f18a3:20",
+          "desc": "Stat Max Nature",
+          "address": "0x1F18A3"
+        },
+        {
+          "code": "1f18a4:20",
+          "desc": "Stat Max Ferocity",
+          "address": "0x1F18A4"
+        },
+        {
+          "code": "1f18a5:20",
+          "desc": "Stat Max Speed",
+          "address": "0x1F18A5"
+        },
+        {
+          "code": "1f18a6:20",
+          "desc": "Stat Max Dexterity",
+          "address": "0x1F18A6"
+        },
+        {
+          "code": "1f18a7:20",
+          "desc": "Stat Max Durability",
+          "address": "0x1F18A7"
+        },
+        {
+          "code": "1f18a8:20",
+          "desc": "Stat Max Shield",
+          "address": "0x1F18A8"
+        },
+        {
+          "code": "1f18a9:20",
+          "desc": "Stat Max Torque",
+          "address": "0x1F18A9"
+        },
+        {
+          "code": "1f18aa:20",
+          "desc": "Stat Max Tank",
+          "address": "0x1F18AA"
+        },
+        {
+          "code": "1f18ab:20",
+          "desc": "Stat Max Target",
+          "address": "0x1F18AB"
+        },
+        {
+          "code": "1f18ac:20",
+          "desc": "Stat Max Destructive",
+          "address": "0x1F18AC"
+        },
+        {
+          "code": "1f18ad:20",
+          "desc": "Stat Max Attack Range",
+          "address": "0x1F18AD"
+        },
+        {
+          "code": "1f18ae:20",
+          "desc": "Stat Max Scanner",
+          "address": "0x1F18AE"
+        },
+        {
+          "code": "1f18af:20",
+          "desc": "Stat Max Charge",
+          "address": "0x1F18AF"
+        },
+        {
+          "code": "1f1880:01",
+          "desc": "Unlock Super Battle & 2x2 Practice Modes",
+          "address": "0x1F1880"
+        },
+        {
+          "code": "1f0710:ff",
+          "desc": "P1 Partner HP (Super Battle)",
+          "address": "0x1F0710"
+        },
+        {
+          "code": "1f0711:ff",
+          "desc": "P1 Partner FL (Super Battle)",
+          "address": "0x1F0711"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

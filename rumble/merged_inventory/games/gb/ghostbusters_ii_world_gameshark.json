@@ -1,0 +1,32 @@
+{
+  "system": "gb",
+  "normalized_title": "ghostbustersii",
+  "display_name": "Ghostbusters II (World) (GameShark)",
+  "aliases": [
+    "Ghostbusters II (World) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Ghostbusters II (World) (GameShark).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0104DED9",
+          "desc": "Infinite Health Ghostbuster 1",
+          "address": "0xDED9"
+        },
+        {
+          "code": "0104DFD9",
+          "desc": "Infinite Health Ghostbuster 2",
+          "address": "0xDFD9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

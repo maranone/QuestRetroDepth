@@ -1,0 +1,54 @@
+{
+  "system": "nes",
+  "normalized_title": "overhorizon",
+  "display_name": "Over Horizon (Europe, Japan) (Game Genie)",
+  "aliases": [
+    "Over Horizon (Europe)",
+    "Over Horizon (Europe, Japan) (Game Genie)",
+    "Over Horizon (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\overhorizon_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00C3",
+        "0x07D5"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\OverHorizon-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x07D5",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x00C3",
+          "type": "<u3"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Over Horizon (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

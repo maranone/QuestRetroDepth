@@ -1,0 +1,116 @@
+{
+  "system": "nes",
+  "normalized_title": "athena",
+  "display_name": "Athena (Japan, USA) (Game Genie)",
+  "aliases": [
+    "Athena (Japan, USA) (Game Genie)",
+    "Athena (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\athena_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x008B",
+        "0x0095",
+        "0x009B"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Athena-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0095",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x009B",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x008B",
+          "type": ">n6"
+        },
+        {
+          "name": "time",
+          "address": "0x0091",
+          "type": ">d2"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Athena (USA).cht",
+      "total_cheat_rows": 23,
+      "raw_entry_count": 10,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "0095:0C",
+          "desc": "Infinite Energy",
+          "address": "0x0095"
+        },
+        {
+          "code": "009B:02",
+          "desc": "Infinite Lives",
+          "address": "0x009B"
+        },
+        {
+          "code": "AOKEOPEL",
+          "desc": "Collect Items From Anywhere",
+          "address": "0x0199"
+        },
+        {
+          "code": "005A:00",
+          "desc": "No Enemies",
+          "address": "0x005A"
+        },
+        {
+          "code": "07A3:00",
+          "desc": "Suit Color Modifier",
+          "address": "0x07A3"
+        },
+        {
+          "code": "07A4:00",
+          "desc": "Hair/Helmet Color Modifier",
+          "address": "0x07A4"
+        },
+        {
+          "code": "07A6:01",
+          "desc": "Weapon Modifier",
+          "address": "0x07A6"
+        },
+        {
+          "code": "0092:59",
+          "desc": "Infinite Time (Seconds Digits)",
+          "address": "0x0092"
+        },
+        {
+          "code": "0095:0F",
+          "desc": "Infinite Health",
+          "address": "0x0095"
+        },
+        {
+          "code": "009B:09",
+          "desc": "Infinite Lives",
+          "address": "0x009B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

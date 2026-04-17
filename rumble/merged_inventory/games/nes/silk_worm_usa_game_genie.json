@@ -1,0 +1,47 @@
+{
+  "system": "nes",
+  "normalized_title": "silkworm",
+  "display_name": "Silk Worm (USA) (Game Genie)",
+  "aliases": [
+    "Silk Worm (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Silk Worm (USA).cht",
+      "total_cheat_rows": 28,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "003D:00",
+          "desc": "P1 Vehicle Modifier",
+          "address": "0x003D"
+        },
+        {
+          "code": "0057:09",
+          "desc": "Infinite Lives (Heli)",
+          "address": "0x0057"
+        },
+        {
+          "code": "0068:09",
+          "desc": "Infinite Lives (Jeep)",
+          "address": "0x0068"
+        },
+        {
+          "code": "AAVALPLA",
+          "desc": "One Hit to kill Bosses",
+          "address": "0x010B"
+        },
+        {
+          "code": "AESESOAA",
+          "desc": "One Hit to kill Bonus Vehicle:Works even during construction",
+          "address": "0x018D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

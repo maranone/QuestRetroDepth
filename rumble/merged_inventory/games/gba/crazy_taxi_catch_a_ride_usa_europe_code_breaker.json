@@ -1,0 +1,88 @@
+{
+  "system": "gba",
+  "normalized_title": "crazytaxicatchride",
+  "display_name": "Crazy Taxi - Catch a Ride (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Crazy Taxi - Catch a Ride (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10026348",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02026348"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Win Crazy Box Event",
+          "address": "0x02000020"
+        },
+        {
+          "code": "8200153C",
+          "desc": "Win Crazy Box Event",
+          "address": "0x0200153C"
+        },
+        {
+          "code": "820016A8",
+          "desc": "Infinite Time",
+          "address": "0x020016A8"
+        },
+        {
+          "code": "820016AC",
+          "desc": "Infinite Time For Passengers",
+          "address": "0x020016AC"
+        },
+        {
+          "code": "820016A0",
+          "desc": "Max Fare Multiplier",
+          "address": "0x020016A0"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Crazy Taxi - Catch a Ride (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "10026348",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02026348"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Win Crazy Box Event",
+          "address": "0x02000020"
+        },
+        {
+          "code": "8200153C",
+          "desc": "Win Crazy Box Event",
+          "address": "0x0200153C"
+        },
+        {
+          "code": "820016A8",
+          "desc": "Infinite Time",
+          "address": "0x020016A8"
+        },
+        {
+          "code": "820016AC",
+          "desc": "Infinite Time For Passengers",
+          "address": "0x020016AC"
+        },
+        {
+          "code": "820016A0",
+          "desc": "Max Fare Multiplier",
+          "address": "0x020016A0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

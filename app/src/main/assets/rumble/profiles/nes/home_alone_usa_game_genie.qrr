@@ -1,0 +1,6 @@
+game_name=Home Alone (USA) (Game Genie)
+game_key=home_alone_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	score_score_002b	score	0x002B	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_002c	score	0x002C	1	uint	little	prev < curr	0.8	1	right:0.350:60

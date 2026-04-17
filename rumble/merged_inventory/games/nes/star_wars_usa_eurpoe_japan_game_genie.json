@@ -1,0 +1,61 @@
+{
+  "system": "nes",
+  "normalized_title": "starwars",
+  "display_name": "Star Wars (USA, Eurpoe, Japan) (Game Genie)",
+  "aliases": [
+    "Star Wars (Japan) (Namco)",
+    "Star Wars (Rumbles)",
+    "Star Wars (USA)",
+    "Star Wars (USA, Eurpoe, Japan) (Game Genie)",
+    "Star Wars (World) (Action Replay)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\starwars_nes.json",
+      "trigger_count": 4,
+      "field_names": [
+        "health",
+        "lives"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x06DF",
+        "0x0729"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\StarWars-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x0729",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x06DF",
+          "type": "|i1"
+        },
+        {
+          "name": "percent_complete",
+          "address": "0x073B",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Star Wars (World) (Action Replay).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

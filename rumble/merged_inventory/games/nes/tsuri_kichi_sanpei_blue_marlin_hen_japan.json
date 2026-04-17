@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "tsurikichisanpeibluemarlinhen",
+  "display_name": "Tsuri Kichi Sanpei - Blue Marlin Hen (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tsuri Kichi Sanpei - Blue Marlin Hen (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "03F2:FF",
+          "desc": "Top Score",
+          "address": "0x03F2"
+        },
+        {
+          "code": "03F3:FF",
+          "desc": "Top Score",
+          "address": "0x03F3"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

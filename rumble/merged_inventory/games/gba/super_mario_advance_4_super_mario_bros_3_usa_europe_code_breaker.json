@@ -1,0 +1,278 @@
+{
+  "system": "gba",
+  "normalized_title": "supermarioadvance4supermariobros3",
+  "display_name": "Super Mario Advance 4 - Super Mario Bros. 3 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Super Mario Advance 4 - Super Mario Bros. 3 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 68,
+      "raw_entry_count": 104,
+      "distinct_address_count": 84,
+      "sample_raw_entries": [
+        {
+          "code": "10002884",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002884"
+        },
+        {
+          "code": "33003D0E",
+          "desc": "Stop Timer",
+          "address": "0x02003D0E"
+        },
+        {
+          "code": "33002A6A",
+          "desc": "Infinite Lives (Mario)",
+          "address": "0x02002A6A"
+        },
+        {
+          "code": "33002A6C",
+          "desc": "Infinite Lives (Luigi)",
+          "address": "0x02002A6C"
+        },
+        {
+          "code": "33002C58",
+          "desc": "Mario Always Has 98 Coins",
+          "address": "0x02002C58"
+        },
+        {
+          "code": "33002C83",
+          "desc": "Luigi Always Has 98 Coins",
+          "address": "0x02002C83"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L To Hide Behind Stuff",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003D06",
+          "desc": "Press L To Hide Behind Stuff",
+          "address": "0x02003D06"
+        },
+        {
+          "code": "33003C9F",
+          "desc": "P Meter Always Full",
+          "address": "0x02003C9F"
+        },
+        {
+          "code": "33003F48",
+          "desc": "P Meter Always Full",
+          "address": "0x02003F48"
+        },
+        {
+          "code": "33004F08",
+          "desc": "Infinite Turns Card Matching Game",
+          "address": "0x02004F08"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press R For Pow Time",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003CF8",
+          "desc": "Press R For Pow Time",
+          "address": "0x02003CF8"
+        },
+        {
+          "code": "33002C2E",
+          "desc": "Infinite Star Power",
+          "address": "0x02002C2E"
+        },
+        {
+          "code": "33003F64",
+          "desc": "Invincibility",
+          "address": "0x02003F64"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L Trigger+Up For Fire Powers",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003F5F",
+          "desc": "Press L Trigger+Up For Fire Powers",
+          "address": "0x02003F5F"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L Trigger+Down For Leaf Powers",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003F5F",
+          "desc": "Press L Trigger+Down For Leaf Powers",
+          "address": "0x02003F5F"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L Trigger+Left For Frog Powers",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003F5F",
+          "desc": "Press L Trigger+Left For Frog Powers",
+          "address": "0x02003F5F"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press R Trigger+Right For Racoon Powers",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003F5F",
+          "desc": "Press R Trigger+Right For Racoon Powers",
+          "address": "0x02003F5F"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press R Trigger+Up For Hammer Bros. Powers",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003F5F",
+          "desc": "Press R Trigger+Up For Hammer Bros. Powers",
+          "address": "0x02003F5F"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Super Mario Advance 4 - Super Mario Bros. 3 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 68,
+      "raw_entry_count": 104,
+      "distinct_address_count": 84,
+      "sample_raw_entries": [
+        {
+          "code": "10002884",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02002884"
+        },
+        {
+          "code": "33003D0E",
+          "desc": "Stop Timer",
+          "address": "0x02003D0E"
+        },
+        {
+          "code": "33002A6A",
+          "desc": "Infinite Lives (Mario)",
+          "address": "0x02002A6A"
+        },
+        {
+          "code": "33002A6C",
+          "desc": "Infinite Lives (Luigi)",
+          "address": "0x02002A6C"
+        },
+        {
+          "code": "33002C58",
+          "desc": "Mario Always Has 98 Coins",
+          "address": "0x02002C58"
+        },
+        {
+          "code": "33002C83",
+          "desc": "Luigi Always Has 98 Coins",
+          "address": "0x02002C83"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L To Hide Behind Stuff",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003D06",
+          "desc": "Press L To Hide Behind Stuff",
+          "address": "0x02003D06"
+        },
+        {
+          "code": "33003C9F",
+          "desc": "P Meter Always Full",
+          "address": "0x02003C9F"
+        },
+        {
+          "code": "33003F48",
+          "desc": "P Meter Always Full",
+          "address": "0x02003F48"
+        },
+        {
+          "code": "33004F08",
+          "desc": "Infinite Turns Card Matching Game",
+          "address": "0x02004F08"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press R For Pow Time",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003CF8",
+          "desc": "Press R For Pow Time",
+          "address": "0x02003CF8"
+        },
+        {
+          "code": "33002C2E",
+          "desc": "Infinite Star Power",
+          "address": "0x02002C2E"
+        },
+        {
+          "code": "33003F64",
+          "desc": "Invincibility",
+          "address": "0x02003F64"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L Trigger+Up For Fire Powers",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003F5F",
+          "desc": "Press L Trigger+Up For Fire Powers",
+          "address": "0x02003F5F"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L Trigger+Down For Leaf Powers",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003F5F",
+          "desc": "Press L Trigger+Down For Leaf Powers",
+          "address": "0x02003F5F"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press L Trigger+Left For Frog Powers",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003F5F",
+          "desc": "Press L Trigger+Left For Frog Powers",
+          "address": "0x02003F5F"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press R Trigger+Right For Racoon Powers",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003F5F",
+          "desc": "Press R Trigger+Right For Racoon Powers",
+          "address": "0x02003F5F"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press R Trigger+Up For Hammer Bros. Powers",
+          "address": "0x02000130"
+        },
+        {
+          "code": "33003F5F",
+          "desc": "Press R Trigger+Up For Hammer Bros. Powers",
+          "address": "0x02003F5F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "chuchurocket",
+  "display_name": "ChuChu Rocket! (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\ChuChu Rocket! (World) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "1002426C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202426C"
+        },
+        {
+          "code": "83003FF0",
+          "desc": "All Normal Puzzles Complete",
+          "address": "0x02003FF0"
+        },
+        {
+          "code": "83003FF2",
+          "desc": "All Normal Puzzles Complete",
+          "address": "0x02003FF2"
+        },
+        {
+          "code": "83004000",
+          "desc": "All Original Puzzles Complete",
+          "address": "0x02004000"
+        },
+        {
+          "code": "83004002",
+          "desc": "All Original Puzzles Complete",
+          "address": "0x02004002"
+        },
+        {
+          "code": "830042A8",
+          "desc": "All Normal Stage Challenges Complete",
+          "address": "0x020042A8"
+        },
+        {
+          "code": "830042AA",
+          "desc": "All Normal Stage Challenges Complete",
+          "address": "0x020042AA"
+        },
+        {
+          "code": "830042AC",
+          "desc": "All Original Stage Challenges Complete",
+          "address": "0x020042AC"
+        },
+        {
+          "code": "830042AE",
+          "desc": "All Original Stage Challenges Complete",
+          "address": "0x020042AE"
+        },
+        {
+          "code": "83002DB8",
+          "desc": "Infinite Time (Stage Challenge)",
+          "address": "0x02002DB8"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\ChuChu Rocket! (World) (Code Breaker).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "1002426C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202426C"
+        },
+        {
+          "code": "83003FF0",
+          "desc": "All Normal Puzzles Complete",
+          "address": "0x02003FF0"
+        },
+        {
+          "code": "83003FF2",
+          "desc": "All Normal Puzzles Complete",
+          "address": "0x02003FF2"
+        },
+        {
+          "code": "83004000",
+          "desc": "All Original Puzzles Complete",
+          "address": "0x02004000"
+        },
+        {
+          "code": "83004002",
+          "desc": "All Original Puzzles Complete",
+          "address": "0x02004002"
+        },
+        {
+          "code": "830042A8",
+          "desc": "All Normal Stage Challenges Complete",
+          "address": "0x020042A8"
+        },
+        {
+          "code": "830042AA",
+          "desc": "All Normal Stage Challenges Complete",
+          "address": "0x020042AA"
+        },
+        {
+          "code": "830042AC",
+          "desc": "All Original Stage Challenges Complete",
+          "address": "0x020042AC"
+        },
+        {
+          "code": "830042AE",
+          "desc": "All Original Stage Challenges Complete",
+          "address": "0x020042AE"
+        },
+        {
+          "code": "83002DB8",
+          "desc": "Infinite Time (Stage Challenge)",
+          "address": "0x02002DB8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

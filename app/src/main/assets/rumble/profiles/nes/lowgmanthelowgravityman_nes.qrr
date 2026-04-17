@@ -1,0 +1,9 @@
+game_name=Low G Man - The Low Gravity Man (USA, Europe) (Action Replay)
+game_key=LowGManTheLowGravityMan-Nes
+system=nes
+integration_tier=stable
+trigger	damage_taken_health_0639	damage_taken	0x0639	1	uint	native	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0639	death	0x0639	1	uint	native	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_06d6	life_lost	0x06D6	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_06d6	life_gained	0x06D6	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0314	score	0x0314	6	nibble	big	prev < curr	0.8	1	right:0.350:60

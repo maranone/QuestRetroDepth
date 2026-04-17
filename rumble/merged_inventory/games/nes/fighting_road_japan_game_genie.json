@@ -1,0 +1,42 @@
+{
+  "system": "nes",
+  "normalized_title": "fightingroad",
+  "display_name": "Fighting Road (Japan) (Game Genie)",
+  "aliases": [
+    "Fighting Road (Japan)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Fighting Road (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "005D:A0",
+          "desc": "Infinite Energy",
+          "address": "0x005D"
+        },
+        {
+          "code": "008D:00",
+          "desc": "Easy Win",
+          "address": "0x008D"
+        },
+        {
+          "code": "0090:00",
+          "desc": "Enemy Modifier",
+          "address": "0x0090"
+        },
+        {
+          "code": "0028:00",
+          "desc": "Ruin Modifier",
+          "address": "0x0028"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

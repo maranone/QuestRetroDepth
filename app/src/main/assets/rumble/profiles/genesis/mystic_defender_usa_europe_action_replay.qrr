@@ -1,0 +1,16 @@
+game_name=Mystic Defender (USA, Europe) (Action Replay)
+game_key=mystic_defender_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	life_lost_lives_fff620	life_lost	0xFFF620	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff620	life_gained	0xFFF620	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_fff62e	life_lost	0xFFF62E	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff62e	life_gained	0xFFF62E	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_fff776	life_lost	0xFFF776	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff776	life_gained	0xFFF776	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_fff628	life_lost	0xFFF628	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff628	life_gained	0xFFF628	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_fff7c2	life_lost	0xFFF7C2	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff7c2	life_gained	0xFFF7C2	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_fff62a	life_lost	0xFFF62A	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_fff62a	life_gained	0xFFF62A	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

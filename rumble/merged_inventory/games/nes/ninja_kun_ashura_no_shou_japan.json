@@ -1,0 +1,50 @@
+{
+  "system": "nes",
+  "normalized_title": "ninjakunashuranoshou",
+  "display_name": "Ninja-kun - Ashura no Shou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ninja-kun - Ashura no Shou (Japan).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 6,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "00C4:03",
+          "desc": "Infinite Lives",
+          "address": "0x00C4"
+        },
+        {
+          "code": "00EF:00",
+          "desc": "Open Exit Now",
+          "address": "0x00EF"
+        },
+        {
+          "code": "00BA:05",
+          "desc": "Freeze Timer",
+          "address": "0x00BA"
+        },
+        {
+          "code": "00BC:05",
+          "desc": "Freeze Timer",
+          "address": "0x00BC"
+        },
+        {
+          "code": "00E6:56",
+          "desc": "Weapon Modifier",
+          "address": "0x00E6"
+        },
+        {
+          "code": "06B2:00",
+          "desc": "Scene Select",
+          "address": "0x06B2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

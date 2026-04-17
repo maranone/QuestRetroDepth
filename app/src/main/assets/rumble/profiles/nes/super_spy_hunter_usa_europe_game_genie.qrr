@@ -1,0 +1,5 @@
+game_name=Super Spy Hunter (USA, Europe) (Game Genie)
+game_key=super_spy_hunter_usa_europe_game_genie
+system=nes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_0200	enemy_defeated	0x0200	1	uint	little	prev > curr	0.65	1	right:0.450:35

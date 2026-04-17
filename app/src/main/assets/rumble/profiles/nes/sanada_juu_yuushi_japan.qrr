@@ -1,0 +1,6 @@
+game_name=Sanada Juu Yuushi (Japan)
+game_key=sanada_juu_yuushi_japan
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_00b2	pickup	0x00B2	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	enemy_defeated_enemy_health_046d	enemy_defeated	0x046D	1	uint	little	prev > curr	0.65	1	right:0.450:35

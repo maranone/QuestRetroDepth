@@ -1,0 +1,105 @@
+{
+  "system": "nes",
+  "normalized_title": "ysiiancientysvanishedfinalchapter",
+  "display_name": "Ys II - Ancient Ys Vanished - The Final Chapter (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ys II - Ancient Ys Vanished - The Final Chapter (Japan).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 17,
+      "distinct_address_count": 17,
+      "sample_raw_entries": [
+        {
+          "code": "00AC:FF",
+          "desc": "Set Infinite Gold",
+          "address": "0x00AC"
+        },
+        {
+          "code": "00AD:FF",
+          "desc": "Set Infinite Gold",
+          "address": "0x00AD"
+        },
+        {
+          "code": "00AA:FF",
+          "desc": "Set Max. Exp.",
+          "address": "0x00AA"
+        },
+        {
+          "code": "00AB:FF",
+          "desc": "Set Max. Exp.",
+          "address": "0x00AB"
+        },
+        {
+          "code": "009C:FF",
+          "desc": "Infinite HP",
+          "address": "0x009C"
+        },
+        {
+          "code": "00A6:FF",
+          "desc": "Set Infinite/Max. MP",
+          "address": "0x00A6"
+        },
+        {
+          "code": "00A8:FF",
+          "desc": "Set Infinite/Max. MP",
+          "address": "0x00A8"
+        },
+        {
+          "code": "053B:7F",
+          "desc": "Set All Swords",
+          "address": "0x053B"
+        },
+        {
+          "code": "053D:7F",
+          "desc": "Set All Armor",
+          "address": "0x053D"
+        },
+        {
+          "code": "0565:FF",
+          "desc": "Set All Inventory #1",
+          "address": "0x0565"
+        },
+        {
+          "code": "0566:FF",
+          "desc": "Set All Inventory #2",
+          "address": "0x0566"
+        },
+        {
+          "code": "0567:FF",
+          "desc": "Set All Inventory #3",
+          "address": "0x0567"
+        },
+        {
+          "code": "0568:FF",
+          "desc": "Set All Inventory #4",
+          "address": "0x0568"
+        },
+        {
+          "code": "0569:FF",
+          "desc": "Set All Inventory #5",
+          "address": "0x0569"
+        },
+        {
+          "code": "SZXELISA",
+          "desc": "Infinite Gold",
+          "address": "0x05AB"
+        },
+        {
+          "code": "SZUAZISA",
+          "desc": "Infinite Gold",
+          "address": "0x052A"
+        },
+        {
+          "code": "SXNPZLSA",
+          "desc": "Return Spell don't reduce MP",
+          "address": "0x032A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

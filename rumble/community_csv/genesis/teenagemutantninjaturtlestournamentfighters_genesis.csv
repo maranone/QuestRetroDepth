@@ -2,7 +2,7 @@
 # game_name=Teenage Mutant Ninja Turtles - Tournament Fighters (USA, Japan) (Action Replay)
 # match_names=teenagemutantninjaturtlestournamentfighters|teenagemutantninjaturtlestournamentfightersgenesis
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-enemy_defeated_enemy_health_ff0071,0xFF0071,1,uint,prev_gt_curr,,right,0.450,normal,0,35,75,30,
-damage_taken_health_ff0031,0xFF0031,1,uint,prev_gt_curr,,left,0.850,normal,0,90,100,70,
-death_health_ff0031,0xFF0031,1,uint,became_zero,,both,1.000,normal,0,600,400,90,
-score_score_ff892a,0xFF892A,6,nibble,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+enemy_defeated_enemy_health_ff0071,0xFF0071,1,uint,prev_gt_curr,,right,0.55,burst,0,80,50,30,
+damage_taken_health_ff0031,0xFF0031,1,uint,prev_gt_curr,,left,0.850,fade_out,0,110,80,70,
+death_health_ff0031,0xFF0031,1,uint,became_zero,,both,1.000,heartbeat,0,600,400,90,
+score_score_ff892a,0xFF892A,6,nibble,prev_lt_curr,,right,0.350,burst,0,70,15,10,

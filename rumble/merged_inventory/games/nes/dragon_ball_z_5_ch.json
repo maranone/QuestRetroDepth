@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "dragonballz5",
+  "display_name": "Dragon Ball Z 5 (Ch)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dragon Ball Z 5 (Ch).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0501:1C",
+          "desc": "Infinite Energy P1",
+          "address": "0x0501"
+        },
+        {
+          "code": "0511:1C",
+          "desc": "Infinite Energy P2",
+          "address": "0x0511"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

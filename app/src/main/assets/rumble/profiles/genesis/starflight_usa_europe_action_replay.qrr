@@ -1,0 +1,5 @@
+game_name=Starflight (USA, Europe) (Action Replay)
+game_key=starflight_usa_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	pickup_coins_ff9782	pickup	0xFF9782	1	uint	little	prev != curr	0.8	1	right:0.250:18

@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "tomjerryandtuffy",
+  "display_name": "Tom _ Jerry and Tuffy",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Tom _ Jerry and Tuffy.cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "045E:00",
+          "desc": "Go Through Walls / Speed Mod",
+          "address": "0x045E"
+        },
+        {
+          "code": "04A7:00",
+          "desc": "Level / Area Modifier",
+          "address": "0x04A7"
+        },
+        {
+          "code": "04AF:08",
+          "desc": "Climb Anywhere / Spider Webs have no effect",
+          "address": "0x04AF"
+        },
+        {
+          "code": "04B0:08",
+          "desc": "Climb Anywhere / Spider Webs have no effect",
+          "address": "0x04B0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

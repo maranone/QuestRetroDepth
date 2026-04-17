@@ -1,0 +1,6 @@
+game_name=John Elway's Quarterback (USA)
+game_key=john_elway_s_quarterback_usa
+system=nes
+integration_tier=contrib
+trigger	score_score_072f	score	0x072F	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0730	score	0x0730	1	uint	little	prev < curr	0.8	1	right:0.350:60

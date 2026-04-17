@@ -1,0 +1,6 @@
+game_name=Mega Man Soccer (USA) (Action Replay)
+game_key=mega_man_soccer_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	score_score_0abc	score	0x7E0ABC	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0adc	score	0x7E0ADC	1	uint	little	prev < curr	0.8	1	right:0.350:60

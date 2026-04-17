@@ -2,5 +2,5 @@
 # game_name=Dr. Robotnik's Mean Bean Machine (USA)
 # match_names=drrobotniksmeanbeanmachine|drrobotniksmeanbeanmachinegenesis
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-game_over_gameover_ffe329,0xFFE329,1,int,became_nonzero,,both,1.000,normal,0,1000,400,100,
-score_score_ffe00c,0xFFE00C,2,uint,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+game_over_gameover_ffe329,0xFFE329,1,int,became_nonzero,,both,1.000,heartbeat,0,1000,400,100,
+score_score_ffe00c,0xFFE00C,2,uint,prev_lt_curr,,right,0.350,burst,0,70,15,10,

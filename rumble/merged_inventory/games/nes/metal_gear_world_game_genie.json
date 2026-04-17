@@ -1,0 +1,41 @@
+{
+  "system": "nes",
+  "normalized_title": "metalgear",
+  "display_name": "Metal Gear (World) (Game Genie)",
+  "aliases": [
+    "Metal Gear (World) (Game Genie)",
+    "Metal Gear (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Metal Gear (World) (Game Genie).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "AKAAZT",
+          "desc": "Sleeping Enemies Won't Wake Up (Might Not Work)",
+          "address": "0x0642"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Metal Gear (USA).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "AKAAZT",
+          "desc": "Sleeping Enemies Won't Wake Up (Might Not Work)",
+          "address": "0x0642"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

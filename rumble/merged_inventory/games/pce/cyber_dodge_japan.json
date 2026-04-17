@@ -1,0 +1,60 @@
+{
+  "system": "pce",
+  "normalized_title": "cyberdodge",
+  "display_name": "Cyber Dodge (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Cyber Dodge (Japan).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "1f060f:18",
+          "desc": "P1 Char 1 Infinite Health",
+          "address": "0x1F060F"
+        },
+        {
+          "code": "1f061f:18",
+          "desc": "P1 Char 2 Infinite Health",
+          "address": "0x1F061F"
+        },
+        {
+          "code": "1f062f:18",
+          "desc": "P1 Char 3 Infinite Health",
+          "address": "0x1F062F"
+        },
+        {
+          "code": "1f063f:18",
+          "desc": "P1 Char 4 Infinite Health",
+          "address": "0x1F063F"
+        },
+        {
+          "code": "1f0607:00",
+          "desc": "CPU/P2 Char 1 1-Hit Kill",
+          "address": "0x1F0607"
+        },
+        {
+          "code": "1f0608:00",
+          "desc": "CPU/P2 Char 2 1-Hit Kill",
+          "address": "0x1F0608"
+        },
+        {
+          "code": "1f0609:00",
+          "desc": "CPU/P2 Char 3 1-Hit Kill",
+          "address": "0x1F0609"
+        },
+        {
+          "code": "1f060a:00",
+          "desc": "CPU/P2 Char 4 1-Hit Kill",
+          "address": "0x1F060A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

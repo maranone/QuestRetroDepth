@@ -1,0 +1,32 @@
+{
+  "system": "nes",
+  "normalized_title": "pirates",
+  "display_name": "Pirates! (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Pirates! (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Pirates! (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "AEEEKVAA",
+          "desc": "Trade With A Merchant For Maximum Gold",
+          "address": "0x068C"
+        },
+        {
+          "code": "OXUAOVOK",
+          "desc": "Have 2560 Cargo Space In Store/When Seizing Goods",
+          "address": "0x0629"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,11 @@
+game_name=Fox's Peter Pan _ the Pirates - The Revenge of Captain Hook (USA) (Game Genie)
+game_key=fox_s_peter_pan_the_pirates_the_revenge_of_captain_hook_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_0051	damage_taken	0x0051	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0051	death	0x0051	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_0050	life_lost	0x0050	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0050	life_gained	0x0050	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	level_complete_level_0036	level_complete	0x0036	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	score_score_001f	score	0x001F	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0020	score	0x0020	1	uint	little	prev < curr	0.8	1	right:0.350:60

@@ -1,0 +1,43 @@
+{
+  "system": "nes",
+  "normalized_title": "1943",
+  "display_name": "1943",
+  "aliases": [],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\1943_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x004E",
+        "0x0771"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\1943-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x004E",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0771",
+          "type": ">n4"
+        }
+      ],
+      "distinct_address_count": 2
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

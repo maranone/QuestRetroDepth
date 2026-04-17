@@ -1,0 +1,35 @@
+{
+  "system": "pce",
+  "normalized_title": "kaizouchoujinshubibinman2aratanaruteki",
+  "display_name": "Kaizou Choujin Shubibinman 2 - Aratanaru Teki (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Kaizou Choujin Shubibinman 2 - Aratanaru Teki (Japan).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "1f15c8:03",
+          "desc": "Invincibility",
+          "address": "0x1F15C8"
+        },
+        {
+          "code": "1f0e0c:18",
+          "desc": "Infinite Energy",
+          "address": "0x1F0E0C"
+        },
+        {
+          "code": "1f0e0d:00",
+          "desc": "1-Hit Boss Kill",
+          "address": "0x1F0E0D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

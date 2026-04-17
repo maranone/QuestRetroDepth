@@ -1,0 +1,40 @@
+{
+  "system": "gbc",
+  "normalized_title": "worlddestructionleaguethundertanks",
+  "display_name": "World Destruction League - Thunder Tanks (USA) (GameShark)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\World Destruction League - Thunder Tanks (USA) (GameShark).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "012EC1C1",
+          "desc": "Infinite Health",
+          "address": "0xC1C1"
+        },
+        {
+          "code": "0108D8C1",
+          "desc": "Infinite Lives",
+          "address": "0xD8C1"
+        },
+        {
+          "code": "0102C3C1",
+          "desc": "Infinite Secondary Weapon",
+          "address": "0xC3C1"
+        },
+        {
+          "code": "010BC4C1",
+          "desc": "Infinite Tertiary Weapon",
+          "address": "0xC4C1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

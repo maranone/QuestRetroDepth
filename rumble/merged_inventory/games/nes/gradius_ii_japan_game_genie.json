@@ -1,0 +1,126 @@
+{
+  "system": "nes",
+  "normalized_title": "gradiusii",
+  "display_name": "Gradius II (Japan) (Game Genie)",
+  "aliases": [
+    "Gradius II (Japan) (Game Genie)",
+    "Gradius II (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\gradiusii_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "lives",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x0056",
+        "0x07E4"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\GradiusII-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "lives",
+          "address": "0x0056",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x07E4",
+          "type": "<d4"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Gradius II (Japan).cht",
+      "total_cheat_rows": 20,
+      "raw_entry_count": 13,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "0501:05",
+          "desc": "Have 6th Powerup Both Players (Shield)",
+          "address": "0x0501"
+        },
+        {
+          "code": "04FB:00",
+          "desc": "Set Weapon Modifier",
+          "address": "0x04FB"
+        },
+        {
+          "code": "0056:05",
+          "desc": "Infinite Lives (Player 1)",
+          "address": "0x0056"
+        },
+        {
+          "code": "0057:03",
+          "desc": "Infinite Lives (Player 2)",
+          "address": "0x0057"
+        },
+        {
+          "code": "07FE:01",
+          "desc": "Enable 30 Lives Cheat",
+          "address": "0x07FE"
+        },
+        {
+          "code": "0500:07",
+          "desc": "Set Max. Speed",
+          "address": "0x0500"
+        },
+        {
+          "code": "0503:01",
+          "desc": "Set Missiles",
+          "address": "0x0503"
+        },
+        {
+          "code": "0516:02",
+          "desc": "Set Max. Option",
+          "address": "0x0516"
+        },
+        {
+          "code": "0501:05",
+          "desc": "Set Max ? (Forcefield)",
+          "address": "0x0501"
+        },
+        {
+          "code": "008B:01",
+          "desc": "Have 3rd Power-Up (Both Players)",
+          "address": "0x008B"
+        },
+        {
+          "code": "008A:03",
+          "desc": "Have 4th Power-Up (Both Players)",
+          "address": "0x008A"
+        },
+        {
+          "code": "0513:01",
+          "desc": "Have 5th Power-Up (Both Players) (Option)",
+          "address": "0x0513"
+        },
+        {
+          "code": "051B:16",
+          "desc": "Have 5th Power-Up (Both Players) (Option)",
+          "address": "0x051B"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Gradius II (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "jikuuyuudendebias",
+  "display_name": "Jikuu Yuuden - Debias (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Jikuu Yuuden - Debias (Japan).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "00CF:0F",
+          "desc": "Infinite Energy",
+          "address": "0x00CF"
+        },
+        {
+          "code": "00D1:99",
+          "desc": "Max Tech",
+          "address": "0x00D1"
+        },
+        {
+          "code": "00D0:48",
+          "desc": "Max Spirit",
+          "address": "0x00D0"
+        },
+        {
+          "code": "0079:05",
+          "desc": "Invincibility",
+          "address": "0x0079"
+        },
+        {
+          "code": "035D:09",
+          "desc": "Max Gold",
+          "address": "0x035D"
+        },
+        {
+          "code": "035E:09",
+          "desc": "Max Gold",
+          "address": "0x035E"
+        },
+        {
+          "code": "035F:09",
+          "desc": "Max Gold",
+          "address": "0x035F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

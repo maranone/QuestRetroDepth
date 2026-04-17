@@ -1,0 +1,80 @@
+{
+  "system": "nes",
+  "normalized_title": "aladdin",
+  "display_name": "Aladdin (Europe)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Aladdin (Europe).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "00DD:00",
+          "desc": "Health modifier",
+          "address": "0x00DD"
+        },
+        {
+          "code": "0106:00",
+          "desc": "Lives modifier",
+          "address": "0x0106"
+        },
+        {
+          "code": "0033:00",
+          "desc": "Stage modifier",
+          "address": "0x0033"
+        },
+        {
+          "code": "0100:00",
+          "desc": "Points modifier",
+          "address": "0x0100"
+        },
+        {
+          "code": "0101:00",
+          "desc": "Points modifier",
+          "address": "0x0101"
+        },
+        {
+          "code": "0102:00",
+          "desc": "Points modifier",
+          "address": "0x0102"
+        },
+        {
+          "code": "0103:00",
+          "desc": "Points modifier",
+          "address": "0x0103"
+        },
+        {
+          "code": "0104:00",
+          "desc": "Points modifier",
+          "address": "0x0104"
+        },
+        {
+          "code": "0105:00",
+          "desc": "Points modifier",
+          "address": "0x0105"
+        },
+        {
+          "code": "0107:00",
+          "desc": "Apples modifier",
+          "address": "0x0107"
+        },
+        {
+          "code": "0109:00",
+          "desc": "Gems modifier",
+          "address": "0x0109"
+        },
+        {
+          "code": "008D:11",
+          "desc": "Invincibility",
+          "address": "0x008D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

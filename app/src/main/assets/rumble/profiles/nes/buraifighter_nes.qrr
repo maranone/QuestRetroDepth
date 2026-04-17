@@ -1,0 +1,7 @@
+game_name=Burai Fighter (World) (Game Genie)
+game_key=BuraiFighter-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_072f	life_lost	0x072F	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_072f	life_gained	0x072F	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0732	score	0x0732	8	nibble	big	prev < curr	0.8	1	right:0.350:60

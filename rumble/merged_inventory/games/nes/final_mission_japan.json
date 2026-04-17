@@ -1,0 +1,55 @@
+{
+  "system": "nes",
+  "normalized_title": "finalmission",
+  "display_name": "Final Mission (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Final Mission (Japan).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "001C:09",
+          "desc": "P1 Infinite Energy",
+          "address": "0x001C"
+        },
+        {
+          "code": "001D:09",
+          "desc": "P2 Infinite Energy",
+          "address": "0x001D"
+        },
+        {
+          "code": "05DC:01",
+          "desc": "P1 Invincibility",
+          "address": "0x05DC"
+        },
+        {
+          "code": "0012:00",
+          "desc": "P1 Weapon Modifier",
+          "address": "0x0012"
+        },
+        {
+          "code": "001E:00",
+          "desc": "Level Modifier",
+          "address": "0x001E"
+        },
+        {
+          "code": "05DD:01",
+          "desc": "P2 Invincibility",
+          "address": "0x05DD"
+        },
+        {
+          "code": "0013:00",
+          "desc": "P2 Weapon Modifier",
+          "address": "0x0013"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

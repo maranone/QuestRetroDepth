@@ -1,0 +1,7 @@
+game_name=Daffy Duck in Hollywood (Europe, Brazil) (En,Fr,De,Es,It)
+game_key=DaffyDuckInHollywood-Sms
+system=sms
+integration_tier=stable
+trigger	life_lost_lives_c58a	life_lost	0xC58A	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_c58a	life_gained	0xC58A	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_c381	score	0xC381	6	nibble	big	prev < curr	0.8	1	right:0.350:60

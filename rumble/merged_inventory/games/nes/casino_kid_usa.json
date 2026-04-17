@@ -1,0 +1,70 @@
+{
+  "system": "nes",
+  "normalized_title": "casinokid",
+  "display_name": "Casino Kid (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Casino Kid (USA).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "ZPVEKELP",
+          "desc": "Hold A During Play for &quot;DEBUG MONITOR SWITCH ON&quot; Debug Menu",
+          "address": "0x009C"
+        },
+        {
+          "code": "OZVESASX",
+          "desc": "2-Controller Debug Menu",
+          "address": "0x00AD"
+        },
+        {
+          "code": "OZVESASX",
+          "desc": "1-Controller Debug Menu",
+          "address": "0x00AD"
+        },
+        {
+          "code": "NYNEEEEY",
+          "desc": "1-Controller Debug Menu",
+          "address": "0x00F8"
+        },
+        {
+          "code": "SZOOUKGK",
+          "desc": "Always Win Hand (Poker)",
+          "address": "0x04AB"
+        },
+        {
+          "code": "OXKEPTES",
+          "desc": "Always Win Hand (Blackjack)",
+          "address": "0x06A9"
+        },
+        {
+          "code": "VAVAKXAT",
+          "desc": "Can Always &quot;Bet All Money&quot; (Poker)",
+          "address": "0x020C"
+        },
+        {
+          "code": "OXOEIIEO",
+          "desc": "Can Always &quot;Bet All Money&quot; (Blackjack)",
+          "address": "0x05AD"
+        },
+        {
+          "code": "OZNANYOU",
+          "desc": "Freeze All Moving People",
+          "address": "0x072F"
+        },
+        {
+          "code": "055E:FF",
+          "desc": "Lots of Money",
+          "address": "0x055E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

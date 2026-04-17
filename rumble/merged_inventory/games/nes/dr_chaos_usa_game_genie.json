@@ -1,0 +1,47 @@
+{
+  "system": "nes",
+  "normalized_title": "drchaos",
+  "display_name": "Dr. Chaos (USA) (Game Genie)",
+  "aliases": [
+    "Dr. Chaos (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dr. Chaos (USA).cht",
+      "total_cheat_rows": 17,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0073:03",
+          "desc": "Invincibility",
+          "address": "0x0073"
+        },
+        {
+          "code": "0746:63",
+          "desc": "Infinite Ammo For Gun",
+          "address": "0x0746"
+        },
+        {
+          "code": "0747:63",
+          "desc": "Infinite Ammo For Machine Gun",
+          "address": "0x0747"
+        },
+        {
+          "code": "0748:63",
+          "desc": "Infinite Grenades",
+          "address": "0x0748"
+        },
+        {
+          "code": "0744:FF",
+          "desc": "Infinite Health",
+          "address": "0x0744"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

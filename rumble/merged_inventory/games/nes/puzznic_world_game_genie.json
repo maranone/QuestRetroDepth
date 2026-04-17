@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "puzznic",
+  "display_name": "Puzznic (World) (Game Genie)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Puzznic (World) (Game Genie).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "ZEUAIPAE",
+          "desc": "Start On Level 2-1",
+          "address": "0x010D"
+        },
+        {
+          "code": "GOUAIPAA",
+          "desc": "Start On Level 3-1",
+          "address": "0x011D"
+        },
+        {
+          "code": "TOUAIPAE",
+          "desc": "Start On Level 4-1",
+          "address": "0x011D"
+        },
+        {
+          "code": "AXUAIPAE",
+          "desc": "Start On Level 5-1",
+          "address": "0x012D"
+        },
+        {
+          "code": "ZUUAIPAA",
+          "desc": "Start On Level 6-1",
+          "address": "0x013D"
+        },
+        {
+          "code": "GUUAIPAE",
+          "desc": "Start On Level 7-1",
+          "address": "0x013D"
+        },
+        {
+          "code": "TKUAIPAA",
+          "desc": "Start On Level 8-1",
+          "address": "0x014D"
+        },
+        {
+          "code": "ASUAIPAA",
+          "desc": "Start On Level 9-1",
+          "address": "0x015D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

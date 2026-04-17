@@ -1,0 +1,73 @@
+{
+  "system": "nes",
+  "normalized_title": "buckyohare",
+  "display_name": "Bucky O'Hare (World) (Game Genie)",
+  "aliases": [
+    "Bucky O'Hare (USA)",
+    "Bucky O'Hare (World) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\buckyohare_nes.json",
+      "trigger_count": 6,
+      "field_names": [
+        "health",
+        "lives",
+        "score0",
+        "score1"
+      ],
+      "field_count": 4,
+      "distinct_addresses": [
+        "0x0046",
+        "0x0047",
+        "0x004C",
+        "0x05A0"
+      ],
+      "distinct_address_count": 4
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BuckyOHare-Nes-v0\\data.json",
+      "field_count": 4,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x05A0",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x004C",
+          "type": "|u1"
+        },
+        {
+          "name": "score0",
+          "address": "0x0047",
+          "type": "|u1"
+        },
+        {
+          "name": "score1",
+          "address": "0x0046",
+          "type": "|u1"
+        }
+      ],
+      "distinct_address_count": 4
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Bucky O'Hare (World) (Game Genie).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "XTVATSSE",
+          "desc": "Infinite Energy",
+          "address": "0x056E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "system": "gba",
+  "normalized_title": "konamicollectorsseriesarcadeadvanced",
+  "display_name": "Konami Collector's Series - Arcade Advanced (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Konami Collector's Series - Arcade Advanced (USA) (Code Breaker).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "10001CD8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001CD8"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Konami Collector's Series - Arcade Advanced (USA) (Code Breaker).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "10001CD8",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02001CD8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

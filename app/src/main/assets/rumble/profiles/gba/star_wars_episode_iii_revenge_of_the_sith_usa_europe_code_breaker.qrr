@@ -1,0 +1,10 @@
+game_name=Star Wars - Episode III - Revenge of the Sith (USA, Europe) (Code Breaker)
+game_key=star_wars_episode_iii_revenge_of_the_sith_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	damage_taken_health_020077ae	damage_taken	0x020077AE	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_020077ae	death	0x020077AE	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0200775a	damage_taken	0x0200775A	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0200775a	death	0x0200775A	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	life_lost_lives_020077b2	life_lost	0x020077B2	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_020077b2	life_gained	0x020077B2	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

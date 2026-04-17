@@ -1,0 +1,51 @@
+{
+  "system": "nes",
+  "normalized_title": "megaman3",
+  "display_name": "Mega Man 3 (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Mega Man 3 (USA)",
+    "Mega Man 3 (USA, Europe) (Action Replay)",
+    "Mega Man 3 (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Mega Man 3 (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 4,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "PAOONPZA",
+          "desc": "1 Life After Continue",
+          "address": "0x018F"
+        },
+        {
+          "code": "IAOONPZA",
+          "desc": "6 Lives After Continue",
+          "address": "0x018F"
+        },
+        {
+          "code": "AAOONPZE",
+          "desc": "9 Lives After Continue",
+          "address": "0x018F"
+        },
+        {
+          "code": "GXVAAASA",
+          "desc": "Infinite Energy",
+          "address": "0x0028"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Mega Man 3 (USA).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

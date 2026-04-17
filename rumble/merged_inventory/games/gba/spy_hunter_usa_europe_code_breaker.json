@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "spyhunter",
+  "display_name": "Spy Hunter (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Spy Hunter (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1002484C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202484C"
+        },
+        {
+          "code": "83000E4C",
+          "desc": "Infinite Damage",
+          "address": "0x02000E4C"
+        },
+        {
+          "code": "83000E92",
+          "desc": "Infinite Bullets",
+          "address": "0x02000E92"
+        },
+        {
+          "code": "83000E98",
+          "desc": "Infinite Missiles",
+          "address": "0x02000E98"
+        },
+        {
+          "code": "83000EAC",
+          "desc": "Infinite Boost",
+          "address": "0x02000EAC"
+        },
+        {
+          "code": "83000C6C",
+          "desc": "Infinite Time",
+          "address": "0x02000C6C"
+        },
+        {
+          "code": "830007F0",
+          "desc": "Open All Missions",
+          "address": "0x020007F0"
+        },
+        {
+          "code": "830007F4",
+          "desc": "Unlock All Cheats & Arcade",
+          "address": "0x020007F4"
+        },
+        {
+          "code": "830007F6",
+          "desc": "Unlock All Cheats & Arcade",
+          "address": "0x020007F6"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Spy Hunter (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1002484C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0202484C"
+        },
+        {
+          "code": "83000E4C",
+          "desc": "Infinite Damage",
+          "address": "0x02000E4C"
+        },
+        {
+          "code": "83000E92",
+          "desc": "Infinite Bullets",
+          "address": "0x02000E92"
+        },
+        {
+          "code": "83000E98",
+          "desc": "Infinite Missiles",
+          "address": "0x02000E98"
+        },
+        {
+          "code": "83000EAC",
+          "desc": "Infinite Boost",
+          "address": "0x02000EAC"
+        },
+        {
+          "code": "83000C6C",
+          "desc": "Infinite Time",
+          "address": "0x02000C6C"
+        },
+        {
+          "code": "830007F0",
+          "desc": "Open All Missions",
+          "address": "0x020007F0"
+        },
+        {
+          "code": "830007F4",
+          "desc": "Unlock All Cheats & Arcade",
+          "address": "0x020007F4"
+        },
+        {
+          "code": "830007F6",
+          "desc": "Unlock All Cheats & Arcade",
+          "address": "0x020007F6"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

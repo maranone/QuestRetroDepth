@@ -2,6 +2,6 @@
 # game_name=Hunt For Red October (Rumbles)
 # match_names=huntforredoctober|huntforredoctobersnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-damage_taken_damage_14e5,0x7E14E5,1,uint,prev_gt_curr,,left,0.850,normal,0,90,100,70,
-death_damage_14e5,0x7E14E5,1,uint,became_zero,,both,1.000,normal,0,600,100,90,
-level_complete_level_1ed1,0x7E1ED1,1,uint,changed,,both,0.800,normal,0,400,75,60,
+damage_taken_damage_14e5,0x7E14E5,1,uint,prev_gt_curr,,left,0.850,fade_out,0,110,80,70,
+death_damage_14e5,0x7E14E5,1,uint,became_zero,,both,1.000,heartbeat,0,600,400,90,
+level_complete_level_1ed1,0x7E1ED1,1,uint,changed,,both,0.90,heartbeat,0,400,400,60,

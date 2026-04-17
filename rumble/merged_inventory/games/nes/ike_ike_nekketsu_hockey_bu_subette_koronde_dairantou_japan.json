@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "ikeikenekketsuhockeybusubettekorondedairantou",
+  "display_name": "Ike Ike! Nekketsu Hockey-bu - Subette Koronde Dairantou (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ike Ike! Nekketsu Hockey-bu - Subette Koronde Dairantou (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "04D6:00",
+          "desc": "Cpu Score Always In Zero",
+          "address": "0x04D6"
+        },
+        {
+          "code": "0309:00",
+          "desc": "Finish Time Now",
+          "address": "0x0309"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

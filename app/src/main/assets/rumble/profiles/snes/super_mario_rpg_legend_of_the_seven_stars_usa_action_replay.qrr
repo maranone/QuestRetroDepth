@@ -1,0 +1,14 @@
+game_name=Super Mario RPG - Legend of the Seven Stars (USA) (Action Replay)
+game_key=super_mario_rpg_legend_of_the_seven_stars_usa_action_replay
+system=snes
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_1f2a	enemy_defeated	0x7E1F2A	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	level_complete_level_f800	level_complete	0x7FF800	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	damage_taken_health_f801	damage_taken	0x7FF801	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_f801	death	0x7FF801	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_f802	damage_taken	0x7FF802	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_f802	death	0x7FF802	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_f803	damage_taken	0x7FF803	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_f803	death	0x7FF803	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_f804	damage_taken	0x7FF804	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_f804	death	0x7FF804	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

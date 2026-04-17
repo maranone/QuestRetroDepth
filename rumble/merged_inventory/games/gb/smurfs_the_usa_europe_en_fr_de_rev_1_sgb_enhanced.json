@@ -1,0 +1,29 @@
+{
+  "system": "gb",
+  "normalized_title": "smurfs",
+  "display_name": "Smurfs, The (USA, Europe) (En,Fr,De) (Rev 1) (SGB Enhanced)",
+  "aliases": [
+    "Smurfs, The (USA, Europe) (En,Fr,De) (Rev 1) (SGB Enhanced)",
+    "Smurfs, The (USA, Europe) (Game Genie)",
+    "Smurfs, The (USA, Europe) (GameShark)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Smurfs, The (USA, Europe) (GameShark).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0108CDD9",
+          "desc": "Infinite Time",
+          "address": "0xCDD9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

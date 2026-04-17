@@ -1,0 +1,8 @@
+game_name=Snood (USA, Europe) (Code Breaker)
+game_key=snood_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_02000ea8	life_lost	0x02000EA8	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02000ea8	life_gained	0x02000EA8	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_02000e8c	score	0x02000E8C	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_02000e8e	score	0x02000E8E	1	uint	little	prev < curr	0.8	1	right:0.350:60

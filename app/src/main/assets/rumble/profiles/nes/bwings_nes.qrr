@@ -1,0 +1,7 @@
+game_name=B-Wings (Japan) (Game Genie)
+game_key=BWings-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_053e	life_lost	0x053E	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_053e	life_gained	0x053E	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_053b	score	0x053B	2	uint	little	prev < curr	0.8	1	right:0.350:60

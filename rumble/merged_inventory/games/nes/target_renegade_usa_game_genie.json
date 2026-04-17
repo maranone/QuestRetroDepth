@@ -1,0 +1,114 @@
+{
+  "system": "nes",
+  "normalized_title": "targetrenegade",
+  "display_name": "Target Renegade (USA) (Game Genie)",
+  "aliases": [
+    "Target - Renegade (USA)",
+    "Target Renegade (USA) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\targetrenegade_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00DA",
+        "0x03C3"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\TargetRenegade-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x00DA",
+          "type": "|i1"
+        },
+        {
+          "name": "score",
+          "address": "0x03C3",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Target Renegade (USA) (Game Genie).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 12,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "SZEAOZVG",
+          "desc": "Freeze Timer",
+          "address": "0x0229"
+        },
+        {
+          "code": "SXEATXSU",
+          "desc": "Set Timer To 5:00 For All Levels",
+          "address": "0x022E"
+        },
+        {
+          "code": "AEKESZZA",
+          "desc": "Hearts Replenish Energy To Maximum",
+          "address": "0x028D"
+        },
+        {
+          "code": "TASPSPGP",
+          "desc": "Take Half Damage From Bosses",
+          "address": "0x010D"
+        },
+        {
+          "code": "PAOOYZAA",
+          "desc": "Start On Level 2",
+          "address": "0x028F"
+        },
+        {
+          "code": "ZAOOYZAA",
+          "desc": "Start On Level 3",
+          "address": "0x028F"
+        },
+        {
+          "code": "LAOOYZAA",
+          "desc": "Start On Level 4",
+          "address": "0x028F"
+        },
+        {
+          "code": "GAOOYZAA",
+          "desc": "Start On Level 5",
+          "address": "0x028F"
+        },
+        {
+          "code": "IAOOYZAA",
+          "desc": "Start On Level 6",
+          "address": "0x028F"
+        },
+        {
+          "code": "TAOOYZAA",
+          "desc": "Start On Level 7",
+          "address": "0x028F"
+        },
+        {
+          "code": "SXEATXSU",
+          "desc": "Set Timer To 3:00 For All Levels",
+          "address": "0x022E"
+        },
+        {
+          "code": "NKEEAZEE",
+          "desc": "Set Timer To 3:00 For All Levels",
+          "address": "0x02C8"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

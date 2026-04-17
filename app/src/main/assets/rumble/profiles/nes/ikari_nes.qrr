@@ -1,0 +1,13 @@
+game_name=Ikari (Japan)
+game_key=Ikari-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_00e4	life_lost	0x00E4	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_00e4	life_gained	0x00E4	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score0_00f2	score	0x00F2	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score1_00f0	score	0x00F0	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score2_00ee	score	0x00EE	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score3_00ec	score	0x00EC	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score4_00ea	score	0x00EA	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score5_00e8	score	0x00E8	1	nibble	native	prev < curr	0.8	1	right:0.350:60
+trigger	score_score6_00e6	score	0x00E6	1	nibble	native	prev < curr	0.8	1	right:0.350:60

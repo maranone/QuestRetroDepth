@@ -1,0 +1,47 @@
+{
+  "system": "gbc",
+  "normalized_title": "roboponsunversion",
+  "display_name": "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible)",
+  "aliases": [
+    "Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Robopon - Sun Version (USA) (SGB Enhanced) (GB Compatible).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "0163C6C9",
+          "desc": "Infinite HP",
+          "address": "0xC6C9"
+        },
+        {
+          "code": "0163C8C9",
+          "desc": "Infinite HP",
+          "address": "0xC8C9"
+        },
+        {
+          "code": "0163CAC9",
+          "desc": "Infinite EP",
+          "address": "0xCAC9"
+        },
+        {
+          "code": "0163CCC9",
+          "desc": "Infinite EP",
+          "address": "0xCCC9"
+        },
+        {
+          "code": "0163C1C9",
+          "desc": "Max Level",
+          "address": "0xC1C9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

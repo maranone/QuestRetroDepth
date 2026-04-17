@@ -1,0 +1,8 @@
+game_name=Battletoads-Double Dragon (USA, Europe) (Game Genie)
+game_key=battletoads_double_dragon_usa_europe_game_genie
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_0089	life_lost	0x0089	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_0089	life_gained	0x0089	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	life_lost_lives_01aa	life_lost	0x01AA	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_01aa	life_gained	0x01AA	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

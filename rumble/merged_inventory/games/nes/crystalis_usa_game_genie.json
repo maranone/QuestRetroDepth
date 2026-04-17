@@ -1,0 +1,148 @@
+{
+  "system": "nes",
+  "normalized_title": "crystalis",
+  "display_name": "Crystalis (USA) (Game Genie)",
+  "aliases": [
+    "Crystalis (USA) (Game Genie)",
+    "Crystalis (USA)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Crystalis (USA).cht",
+      "total_cheat_rows": 132,
+      "raw_entry_count": 147,
+      "distinct_address_count": 101,
+      "sample_raw_entries": [
+        {
+          "code": "03C1:FF",
+          "desc": "Infinite Life",
+          "address": "0x03C1"
+        },
+        {
+          "code": "03C0:FF",
+          "desc": "Max Life",
+          "address": "0x03C0"
+        },
+        {
+          "code": "0708:FF",
+          "desc": "Infinite + Max Magic",
+          "address": "0x0708"
+        },
+        {
+          "code": "0705:FF",
+          "desc": "Max Money",
+          "address": "0x0705"
+        },
+        {
+          "code": "0421:62",
+          "desc": "Attack Power And Level",
+          "address": "0x0421"
+        },
+        {
+          "code": "0710:00",
+          "desc": "Cannot Be Poisoned",
+          "address": "0x0710"
+        },
+        {
+          "code": "0711:01",
+          "desc": "Have Wind Sword",
+          "address": "0x0711"
+        },
+        {
+          "code": "0711:02",
+          "desc": "Have Fire Sword",
+          "address": "0x0711"
+        },
+        {
+          "code": "0711:03",
+          "desc": "Have Water Sword",
+          "address": "0x0711"
+        },
+        {
+          "code": "0711:04",
+          "desc": "Have Thunder Sword",
+          "address": "0x0711"
+        },
+        {
+          "code": "0719:02",
+          "desc": "Have All Bracelets For All Swords",
+          "address": "0x0719"
+        },
+        {
+          "code": "0712:01",
+          "desc": "Have Refresh Spell",
+          "address": "0x0712"
+        },
+        {
+          "code": "0712:02",
+          "desc": "Have Paralysis Spell",
+          "address": "0x0712"
+        },
+        {
+          "code": "0712:03",
+          "desc": "Have Telepathy Spell",
+          "address": "0x0712"
+        },
+        {
+          "code": "0712:04",
+          "desc": "Have Teleport Spell",
+          "address": "0x0712"
+        },
+        {
+          "code": "0712:05",
+          "desc": "Have Recover Spell",
+          "address": "0x0712"
+        },
+        {
+          "code": "0712:06",
+          "desc": "Have Barrier Spell",
+          "address": "0x0712"
+        },
+        {
+          "code": "0712:07",
+          "desc": "Have Change Spell",
+          "address": "0x0712"
+        },
+        {
+          "code": "0712:08",
+          "desc": "Have Flight Spell",
+          "address": "0x0712"
+        },
+        {
+          "code": "0716:0F",
+          "desc": "Have Warrior Ring",
+          "address": "0x0716"
+        },
+        {
+          "code": "SLOPAKSO",
+          "desc": "No Damage From Monsters",
+          "address": "0x0438"
+        },
+        {
+          "code": "SXEELOSE",
+          "desc": "Infinite Telepathy Magic",
+          "address": "0x01AB"
+        },
+        {
+          "code": "AEKOUPTA",
+          "desc": "Walk Through Walls",
+          "address": "0x018B"
+        },
+        {
+          "code": "AOSAULPA",
+          "desc": "Sword of Wind much stronger",
+          "address": "0x031B"
+        },
+        {
+          "code": "TEKAELAE",
+          "desc": "When Armor Is Unequipped Your Armor Defense Will Be Increased By 14",
+          "address": "0x0308"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,8 @@
+game_name=Tiny Toon Adventures (World) (Game Genie)
+game_key=TinyToonAdventures-Nes
+system=nes
+integration_tier=stable
+trigger	game_over_gameover_060a	game_over	0x060A	1	int	native	prev == 0 && curr != 0	0.8	1	left:1.000:1000;right:1.000:1000
+trigger	life_lost_lives_07e0	life_lost	0x07E0	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_07e0	life_gained	0x07E0	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_07f5	score	0x07F5	2	bcd	little	prev < curr	0.8	1	right:0.350:60

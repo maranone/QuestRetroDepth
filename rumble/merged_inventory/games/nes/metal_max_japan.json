@@ -1,0 +1,130 @@
+{
+  "system": "nes",
+  "normalized_title": "metalmax",
+  "display_name": "Metal Max (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Metal Max (Japan).cht",
+      "total_cheat_rows": 12,
+      "raw_entry_count": 22,
+      "distinct_address_count": 22,
+      "sample_raw_entries": [
+        {
+          "code": "0544:00",
+          "desc": "No Random Battles",
+          "address": "0x0544"
+        },
+        {
+          "code": "645D:FF",
+          "desc": "Infinite Gold",
+          "address": "0x645D"
+        },
+        {
+          "code": "645E:FF",
+          "desc": "Infinite Gold",
+          "address": "0x645E"
+        },
+        {
+          "code": "645F:FF",
+          "desc": "Infinite Gold",
+          "address": "0x645F"
+        },
+        {
+          "code": "6466:FF",
+          "desc": "P1 Health",
+          "address": "0x6466"
+        },
+        {
+          "code": "6468:FF",
+          "desc": "P2 Health",
+          "address": "0x6468"
+        },
+        {
+          "code": "64EA:FF",
+          "desc": "P3 Health",
+          "address": "0x64EA"
+        },
+        {
+          "code": "64EE:FF",
+          "desc": "P4 Health",
+          "address": "0x64EE"
+        },
+        {
+          "code": "64C9:FF",
+          "desc": "P1 Experience",
+          "address": "0x64C9"
+        },
+        {
+          "code": "64CA:FF",
+          "desc": "P1 Experience",
+          "address": "0x64CA"
+        },
+        {
+          "code": "64CB:FF",
+          "desc": "P1 Experience",
+          "address": "0x64CB"
+        },
+        {
+          "code": "64CC:FF",
+          "desc": "P2 Experience",
+          "address": "0x64CC"
+        },
+        {
+          "code": "64CD:FF",
+          "desc": "P2 Experience",
+          "address": "0x64CD"
+        },
+        {
+          "code": "64CE:FF",
+          "desc": "P2 Experience",
+          "address": "0x64CE"
+        },
+        {
+          "code": "64CF:FF",
+          "desc": "P3 Experience",
+          "address": "0x64CF"
+        },
+        {
+          "code": "64D0:FF",
+          "desc": "P3 Experience",
+          "address": "0x64D0"
+        },
+        {
+          "code": "64D1:FF",
+          "desc": "P3 Experience",
+          "address": "0x64D1"
+        },
+        {
+          "code": "64D2:FF",
+          "desc": "P4 Experience",
+          "address": "0x64D2"
+        },
+        {
+          "code": "64D3:FF",
+          "desc": "P4 Experience",
+          "address": "0x64D3"
+        },
+        {
+          "code": "64D4:FF",
+          "desc": "P4 Experience",
+          "address": "0x64D4"
+        },
+        {
+          "code": "035C:00",
+          "desc": "Vertical Position",
+          "address": "0x035C"
+        },
+        {
+          "code": "0358:00",
+          "desc": "Horizontal Position",
+          "address": "0x0358"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

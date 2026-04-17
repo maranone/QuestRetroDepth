@@ -1,0 +1,21 @@
+game_name=Arabian Nights - Sabaku no Seirei Ou (Japan) (Action Replay)
+game_key=arabian_nights_sabaku_no_seirei_ou_japan_action_replay
+system=snes
+integration_tier=contrib
+trigger	pickup_coins_f78e	pickup	0x7EF78E	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_f78f	pickup	0x7EF78F	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_0473	damage_taken	0x7E0473	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0473	death	0x7E0473	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0474	damage_taken	0x7E0474	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0474	death	0x7E0474	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04d3	damage_taken	0x7E04D3	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04d3	death	0x7E04D3	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_04d4	damage_taken	0x7E04D4	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_04d4	death	0x7E04D4	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0533	damage_taken	0x7E0533	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0533	death	0x7E0533	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_0534	damage_taken	0x7E0534	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0534	death	0x7E0534	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	level_complete_level_0493	level_complete	0x7E0493	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0494	level_complete	0x7E0494	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
+trigger	level_complete_level_0553	level_complete	0x7E0553	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400

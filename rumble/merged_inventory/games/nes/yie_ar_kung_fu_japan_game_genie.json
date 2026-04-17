@@ -1,0 +1,33 @@
+{
+  "system": "nes",
+  "normalized_title": "yiearkungfu",
+  "display_name": "Yie Ar Kung-Fu (Japan) (Game Genie)",
+  "aliases": [
+    "Yie Ar Kung-Fu (Japan) (Rev 1.2)",
+    "Yie Ar Kung-Fu (Japan) (Rev 1.4)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Yie Ar Kung-Fu (Japan) (Rev 1.4).cht",
+      "total_cheat_rows": 6,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "00DB:00",
+          "desc": "Infinite Energy",
+          "address": "0x00DB"
+        },
+        {
+          "code": "0068:00",
+          "desc": "Opponet  Modifier",
+          "address": "0x0068"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

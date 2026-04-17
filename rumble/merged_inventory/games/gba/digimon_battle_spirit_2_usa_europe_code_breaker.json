@@ -1,0 +1,108 @@
+{
+  "system": "gba",
+  "normalized_title": "digimonbattlespirit2",
+  "display_name": "Digimon - Battle Spirit 2 (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Digimon - Battle Spirit 2 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "82031AC2",
+          "desc": "Max Blue Spheres",
+          "address": "0x02031AC2"
+        },
+        {
+          "code": "32031AC5",
+          "desc": "Max Diamonds",
+          "address": "0x02031AC5"
+        },
+        {
+          "code": "82031AC8",
+          "desc": "Max Digivolution Meter",
+          "address": "0x02031AC8"
+        },
+        {
+          "code": "82031A68",
+          "desc": "Invincible",
+          "address": "0x02031A68"
+        },
+        {
+          "code": "83000D68",
+          "desc": "Extra Fighters",
+          "address": "0x02000D68"
+        },
+        {
+          "code": "83001CB2",
+          "desc": "Always Attack/Strongest Shot for Digi Shoot Mini Game",
+          "address": "0x02001CB2"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For No Timer/End Match",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83002660",
+          "desc": "Press Select For No Timer/End Match",
+          "address": "0x02002660"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Digimon - Battle Spirit 2 (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "82031AC2",
+          "desc": "Max Blue Spheres",
+          "address": "0x02031AC2"
+        },
+        {
+          "code": "32031AC5",
+          "desc": "Max Diamonds",
+          "address": "0x02031AC5"
+        },
+        {
+          "code": "82031AC8",
+          "desc": "Max Digivolution Meter",
+          "address": "0x02031AC8"
+        },
+        {
+          "code": "82031A68",
+          "desc": "Invincible",
+          "address": "0x02031A68"
+        },
+        {
+          "code": "83000D68",
+          "desc": "Extra Fighters",
+          "address": "0x02000D68"
+        },
+        {
+          "code": "83001CB2",
+          "desc": "Always Attack/Strongest Shot for Digi Shoot Mini Game",
+          "address": "0x02001CB2"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Select For No Timer/End Match",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83002660",
+          "desc": "Press Select For No Timer/End Match",
+          "address": "0x02002660"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

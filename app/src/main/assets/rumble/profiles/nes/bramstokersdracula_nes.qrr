@@ -1,0 +1,7 @@
+game_name=Bram Stoker's Dracula (USA, Europe) (Game Genie)
+game_key=BramStokersDracula-Nes
+system=nes
+integration_tier=stable
+trigger	life_lost_lives_02bc	life_lost	0x02BC	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02bc	life_gained	0x02BC	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	score_score_0566	score	0x0566	8	nibble	big	prev < curr	0.8	1	right:0.350:60

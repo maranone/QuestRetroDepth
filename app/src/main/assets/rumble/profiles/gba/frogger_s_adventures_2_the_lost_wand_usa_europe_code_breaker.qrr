@@ -1,0 +1,6 @@
+game_name=Frogger's Adventures 2 - The Lost Wand (USA, Europe) (Code Breaker)
+game_key=frogger_s_adventures_2_the_lost_wand_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_020036ac	life_lost	0x020036AC	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_020036ac	life_gained	0x020036AC	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

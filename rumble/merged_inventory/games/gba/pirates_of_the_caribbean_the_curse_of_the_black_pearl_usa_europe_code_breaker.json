@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "piratesofcaribbeancurseofblackpearl",
+  "display_name": "Pirates of the Caribbean - The Curse of the Black Pearl (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Pirates of the Caribbean - The Curse of the Black Pearl (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1000A1F6",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200A1F6"
+        },
+        {
+          "code": "830057AE",
+          "desc": "Infinite Health",
+          "address": "0x020057AE"
+        },
+        {
+          "code": "330008D0",
+          "desc": "Infinite Lives",
+          "address": "0x020008D0"
+        },
+        {
+          "code": "330055E8",
+          "desc": "Invincible",
+          "address": "0x020055E8"
+        },
+        {
+          "code": "830054E0",
+          "desc": "Max Gold",
+          "address": "0x020054E0"
+        },
+        {
+          "code": "330054DE",
+          "desc": "Infinite Big Cannon Balls",
+          "address": "0x020054DE"
+        },
+        {
+          "code": "33005479",
+          "desc": "Infinite Ammo Gun",
+          "address": "0x02005479"
+        },
+        {
+          "code": "4300547E",
+          "desc": "Infinite Items",
+          "address": "0x0200547E"
+        },
+        {
+          "code": "33005476",
+          "desc": "Enable Max Item Slots (00-17)",
+          "address": "0x02005476"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Pirates of the Caribbean - The Curse of the Black Pearl (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1000A1F6",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200A1F6"
+        },
+        {
+          "code": "830057AE",
+          "desc": "Infinite Health",
+          "address": "0x020057AE"
+        },
+        {
+          "code": "330008D0",
+          "desc": "Infinite Lives",
+          "address": "0x020008D0"
+        },
+        {
+          "code": "330055E8",
+          "desc": "Invincible",
+          "address": "0x020055E8"
+        },
+        {
+          "code": "830054E0",
+          "desc": "Max Gold",
+          "address": "0x020054E0"
+        },
+        {
+          "code": "330054DE",
+          "desc": "Infinite Big Cannon Balls",
+          "address": "0x020054DE"
+        },
+        {
+          "code": "33005479",
+          "desc": "Infinite Ammo Gun",
+          "address": "0x02005479"
+        },
+        {
+          "code": "4300547E",
+          "desc": "Infinite Items",
+          "address": "0x0200547E"
+        },
+        {
+          "code": "33005476",
+          "desc": "Enable Max Item Slots (00-17)",
+          "address": "0x02005476"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "system": "gba",
+  "normalized_title": "legostarwarsiioriginaltrilogy",
+  "display_name": "LEGO Star Wars II - The Original Trilogy (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\LEGO Star Wars II - The Original Trilogy (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "1002BECC",
+          "desc": "Enable Code",
+          "address": "0x0202BECC"
+        },
+        {
+          "code": "1002BECA",
+          "desc": "Enable Code (Alternate)",
+          "address": "0x0202BECA"
+        },
+        {
+          "code": "83004788",
+          "desc": "Max Studs (Bar)",
+          "address": "0x02004788"
+        },
+        {
+          "code": "8300478A",
+          "desc": "Max Studs (Bar)",
+          "address": "0x0200478A"
+        },
+        {
+          "code": "83004830",
+          "desc": "Max Studs (Missions)",
+          "address": "0x02004830"
+        },
+        {
+          "code": "83004832",
+          "desc": "Max Studs (Missions)",
+          "address": "0x02004832"
+        },
+        {
+          "code": "33004B1F",
+          "desc": "10 SuperKits",
+          "address": "0x02004B1F"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\LEGO Star Wars II - The Original Trilogy (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 7,
+      "distinct_address_count": 7,
+      "sample_raw_entries": [
+        {
+          "code": "1002BECC",
+          "desc": "Enable Code",
+          "address": "0x0202BECC"
+        },
+        {
+          "code": "1002BECA",
+          "desc": "Enable Code (Alternate)",
+          "address": "0x0202BECA"
+        },
+        {
+          "code": "83004788",
+          "desc": "Max Studs (Bar)",
+          "address": "0x02004788"
+        },
+        {
+          "code": "8300478A",
+          "desc": "Max Studs (Bar)",
+          "address": "0x0200478A"
+        },
+        {
+          "code": "83004830",
+          "desc": "Max Studs (Missions)",
+          "address": "0x02004830"
+        },
+        {
+          "code": "83004832",
+          "desc": "Max Studs (Missions)",
+          "address": "0x02004832"
+        },
+        {
+          "code": "33004B1F",
+          "desc": "10 SuperKits",
+          "address": "0x02004B1F"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

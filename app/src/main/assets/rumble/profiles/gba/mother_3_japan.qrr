@@ -1,0 +1,8 @@
+game_name=Mother 3 (Japan)
+game_key=mother_3_japan
+system=gba
+integration_tier=contrib
+trigger	enemy_defeated_enemy_health_0200c492	enemy_defeated	0x0200C492	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	pickup_coins_02034429	pickup	0x02034429	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	damage_taken_health_0203441d	damage_taken	0x0203441D	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_0203441d	death	0x0203441D	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

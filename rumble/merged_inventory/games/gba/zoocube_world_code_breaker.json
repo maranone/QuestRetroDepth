@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "zoocube",
+  "display_name": "ZooCube (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\ZooCube (World) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "100078E0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020078E0"
+        },
+        {
+          "code": "830026D0",
+          "desc": "Quick Score Gain",
+          "address": "0x020026D0"
+        },
+        {
+          "code": "830026D0",
+          "desc": "Max Score",
+          "address": "0x020026D0"
+        },
+        {
+          "code": "830026D2",
+          "desc": "Max Score",
+          "address": "0x020026D2"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\ZooCube (World) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "100078E0",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x020078E0"
+        },
+        {
+          "code": "830026D0",
+          "desc": "Quick Score Gain",
+          "address": "0x020026D0"
+        },
+        {
+          "code": "830026D0",
+          "desc": "Max Score",
+          "address": "0x020026D0"
+        },
+        {
+          "code": "830026D2",
+          "desc": "Max Score",
+          "address": "0x020026D2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

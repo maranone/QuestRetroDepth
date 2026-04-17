@@ -1,0 +1,8 @@
+game_name=Sonic The Hedgehog (USA, Europe) (Action Replay)
+game_key=SonicTheHedgehog-Sms
+system=sms
+integration_tier=stable
+trigger	life_lost_lives_d246	life_lost	0xD246	1	uint	native	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_d246	life_gained	0xD246	1	uint	native	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	pickup_rings_d2aa	pickup	0xD2AA	1	bcd	native	prev != curr	0.8	1	right:0.250:18
+trigger	score_score_d2bb	score	0xD2BB	2	bcd	big	prev < curr	0.8	1	right:0.350:60

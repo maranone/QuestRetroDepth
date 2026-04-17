@@ -78,6 +78,9 @@ struct GameConfig {
     static GameConfig make_default_genesis();
     static GameConfig make_default_nes();
     static GameConfig make_default_sms();
+    static GameConfig make_default_gba();
+    static GameConfig make_default_gb();
+    static GameConfig make_default_pce();
 
     // Update dynamic z-splits based on z-buffer histogram analysis.
     // Finds natural z-value clusters and adjusts z_min/z_max for dynamic layers.

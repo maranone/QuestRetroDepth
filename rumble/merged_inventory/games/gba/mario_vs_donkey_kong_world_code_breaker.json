@@ -1,0 +1,148 @@
+{
+  "system": "gba",
+  "normalized_title": "mariovsdonkeykong",
+  "display_name": "Mario vs. Donkey Kong (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Mario vs. Donkey Kong (World) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "10033200",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02033200"
+        },
+        {
+          "code": "83000B54",
+          "desc": "Infinite Time",
+          "address": "0x02000B54"
+        },
+        {
+          "code": "83001A30",
+          "desc": "Have Bonus Packages",
+          "address": "0x02001A30"
+        },
+        {
+          "code": "33001A32",
+          "desc": "Have Bonus Packages",
+          "address": "0x02001A32"
+        },
+        {
+          "code": "83001A34",
+          "desc": "Have T O Y Letters",
+          "address": "0x02001A34"
+        },
+        {
+          "code": "33001A33",
+          "desc": "Have T O Y Letters",
+          "address": "0x02001A33"
+        },
+        {
+          "code": "33001BA0",
+          "desc": "Have Mini Marios In Box",
+          "address": "0x02001BA0"
+        },
+        {
+          "code": "33000BBC",
+          "desc": "Infinite Lives",
+          "address": "0x02000BBC"
+        },
+        {
+          "code": "83001A80",
+          "desc": "Infinite Key Time",
+          "address": "0x02001A80"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select To Cripple DK",
+          "address": "0x02000130"
+        },
+        {
+          "code": "430035D8",
+          "desc": "Press Select To Cripple DK",
+          "address": "0x020035D8"
+        },
+        {
+          "code": "33003528",
+          "desc": "Infinite Health",
+          "address": "0x02003528"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Mario vs. Donkey Kong (World) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 12,
+      "distinct_address_count": 12,
+      "sample_raw_entries": [
+        {
+          "code": "10033200",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02033200"
+        },
+        {
+          "code": "83000B54",
+          "desc": "Infinite Time",
+          "address": "0x02000B54"
+        },
+        {
+          "code": "83001A30",
+          "desc": "Have Bonus Packages",
+          "address": "0x02001A30"
+        },
+        {
+          "code": "33001A32",
+          "desc": "Have Bonus Packages",
+          "address": "0x02001A32"
+        },
+        {
+          "code": "83001A34",
+          "desc": "Have T O Y Letters",
+          "address": "0x02001A34"
+        },
+        {
+          "code": "33001A33",
+          "desc": "Have T O Y Letters",
+          "address": "0x02001A33"
+        },
+        {
+          "code": "33001BA0",
+          "desc": "Have Mini Marios In Box",
+          "address": "0x02001BA0"
+        },
+        {
+          "code": "33000BBC",
+          "desc": "Infinite Lives",
+          "address": "0x02000BBC"
+        },
+        {
+          "code": "83001A80",
+          "desc": "Infinite Key Time",
+          "address": "0x02001A80"
+        },
+        {
+          "code": "74000130",
+          "desc": "Press Select To Cripple DK",
+          "address": "0x02000130"
+        },
+        {
+          "code": "430035D8",
+          "desc": "Press Select To Cripple DK",
+          "address": "0x020035D8"
+        },
+        {
+          "code": "33003528",
+          "desc": "Infinite Health",
+          "address": "0x02003528"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

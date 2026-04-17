@@ -1,0 +1,12 @@
+game_name=R.C. Pro-Am II (USA) (Game Genie)
+game_key=r_c_pro_am_ii_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_075f	pickup	0x075F	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_075b	pickup	0x075B	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0760	pickup	0x0760	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_075c	pickup	0x075C	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0761	pickup	0x0761	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_075d	pickup	0x075D	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0762	pickup	0x0762	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_075e	pickup	0x075E	1	uint	little	prev != curr	0.8	1	right:0.250:18

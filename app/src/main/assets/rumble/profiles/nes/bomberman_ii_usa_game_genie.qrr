@@ -1,0 +1,13 @@
+game_name=Bomberman II (USA) (Game Genie)
+game_key=bomberman_ii_usa_game_genie
+system=nes
+integration_tier=contrib
+trigger	pickup_coins_0090	pickup	0x0090	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0091	pickup	0x0091	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0092	pickup	0x0092	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0093	pickup	0x0093	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0094	pickup	0x0094	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_0095	pickup	0x0095	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_02fb	pickup	0x02FB	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_02ab	pickup	0x02AB	1	uint	little	prev != curr	0.8	1	right:0.250:18
+trigger	pickup_coins_007e	pickup	0x007E	1	uint	little	prev != curr	0.8	1	right:0.250:18

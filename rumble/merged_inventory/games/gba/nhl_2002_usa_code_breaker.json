@@ -1,0 +1,138 @@
+{
+  "system": "gba",
+  "normalized_title": "nhl2002",
+  "display_name": "NHL 2002 (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\NHL 2002 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 11,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1000532C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200532C"
+        },
+        {
+          "code": "82001926",
+          "desc": "Home Team Scores 150",
+          "address": "0x02001926"
+        },
+        {
+          "code": "82001926",
+          "desc": "Home Team Scores 0",
+          "address": "0x02001926"
+        },
+        {
+          "code": "82001928",
+          "desc": "Away Team Scores 150",
+          "address": "0x02001928"
+        },
+        {
+          "code": "82001928",
+          "desc": "Away Team Scores 0",
+          "address": "0x02001928"
+        },
+        {
+          "code": "82001912",
+          "desc": "Home Team Max Shots On Goal",
+          "address": "0x02001912"
+        },
+        {
+          "code": "82001914",
+          "desc": "Away Team Max Shots On Goal",
+          "address": "0x02001914"
+        },
+        {
+          "code": "82001942",
+          "desc": "Home Team Never On The Ice",
+          "address": "0x02001942"
+        },
+        {
+          "code": "82001944",
+          "desc": "Away Team Never On The Ice",
+          "address": "0x02001944"
+        },
+        {
+          "code": "82001946",
+          "desc": "Home Teams Goalie Always Pulled",
+          "address": "0x02001946"
+        },
+        {
+          "code": "82001948",
+          "desc": "Away Teams Goalie Always Pulled",
+          "address": "0x02001948"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\NHL 2002 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 11,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1000532C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200532C"
+        },
+        {
+          "code": "82001926",
+          "desc": "Home Team Scores 150",
+          "address": "0x02001926"
+        },
+        {
+          "code": "82001926",
+          "desc": "Home Team Scores 0",
+          "address": "0x02001926"
+        },
+        {
+          "code": "82001928",
+          "desc": "Away Team Scores 150",
+          "address": "0x02001928"
+        },
+        {
+          "code": "82001928",
+          "desc": "Away Team Scores 0",
+          "address": "0x02001928"
+        },
+        {
+          "code": "82001912",
+          "desc": "Home Team Max Shots On Goal",
+          "address": "0x02001912"
+        },
+        {
+          "code": "82001914",
+          "desc": "Away Team Max Shots On Goal",
+          "address": "0x02001914"
+        },
+        {
+          "code": "82001942",
+          "desc": "Home Team Never On The Ice",
+          "address": "0x02001942"
+        },
+        {
+          "code": "82001944",
+          "desc": "Away Team Never On The Ice",
+          "address": "0x02001944"
+        },
+        {
+          "code": "82001946",
+          "desc": "Home Teams Goalie Always Pulled",
+          "address": "0x02001946"
+        },
+        {
+          "code": "82001948",
+          "desc": "Away Teams Goalie Always Pulled",
+          "address": "0x02001948"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

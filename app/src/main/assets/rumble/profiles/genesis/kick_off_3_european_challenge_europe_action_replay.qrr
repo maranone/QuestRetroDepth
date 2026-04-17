@@ -1,0 +1,6 @@
+game_name=Kick Off 3 - European Challenge (Europe) (Action Replay)
+game_key=kick_off_3_european_challenge_europe_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff33ca	score	0xFF33CA	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_ff33cc	score	0xFF33CC	1	uint	little	prev < curr	0.8	1	right:0.350:60

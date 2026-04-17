@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "kinoboukenquestofki",
+  "display_name": "Ki no Bouken - The Quest of Ki (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Ki no Bouken - The Quest of Ki (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0052:09",
+          "desc": "Infinite Lives",
+          "address": "0x0052"
+        },
+        {
+          "code": "0051:00",
+          "desc": "Invincibility",
+          "address": "0x0051"
+        },
+        {
+          "code": "005F:96",
+          "desc": "Infinite Time",
+          "address": "0x005F"
+        },
+        {
+          "code": "0053:01",
+          "desc": "Exit Always Open",
+          "address": "0x0053"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

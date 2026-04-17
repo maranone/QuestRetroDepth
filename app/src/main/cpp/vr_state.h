@@ -5,6 +5,21 @@
 #include <vector>
 #include <cmath>
 
+enum class DepthMode : int {
+    Off = 0,
+    WholeLayer = 1,
+    BoundingBox = 2,
+};
+
+inline const char* depth_mode_label(DepthMode mode) {
+    switch (mode) {
+        case DepthMode::WholeLayer:  return "LAYER";
+        case DepthMode::BoundingBox: return "BBOX";
+        case DepthMode::Off:
+        default:                     return "OFF";
+    }
+}
+
 // -----------------------------------------------------------------------
 // Complete VR visual state — every knob that can be randomised or tweaked
 // -----------------------------------------------------------------------
@@ -27,11 +42,14 @@ struct VrState {
     bool immersive_beta_enabled = false; // master flag for beta immersive presentation work
     bool layers_3d         = false; // depth-write on copies (volumetric)
     bool solid_stack       = false; // disabled — always off
-    bool depthmap          = false; // silhouette wedge scaling across the copy stack
-    bool depthmap_mirror   = false;
+    DepthMode depth_mode   = DepthMode::Off; // off / whole-layer wedge / bbox-per-object wedge
     bool upscale           = false; // sharpened bilinear
     bool shadows           = false; // repurposed as Meta Quest passthrough
     bool ambilight         = true;
+
+    // Perspective compensation: scale each layer's quad width so all layers subtend
+    // the same visual angle as the nearest layer.
+    bool perspective_comp = true;
 
     // Performance settings
     bool  auto_frame_skip      = false; // let emulator decide to skip frames
@@ -82,8 +100,7 @@ struct VrState {
 
         layers_3d       = randb(0.68f);
         solid_stack     = false;
-        depthmap        = randb(0.18f);
-        depthmap_mirror = false;
+        depth_mode      = randb(0.18f) ? DepthMode::WholeLayer : DepthMode::Off;
         upscale         = randb(0.35f);
         shadows         = false;
         ambilight       = randb(0.62f);

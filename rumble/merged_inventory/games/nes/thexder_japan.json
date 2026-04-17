@@ -1,0 +1,118 @@
+{
+  "system": "nes",
+  "normalized_title": "thexder",
+  "display_name": "Thexder (Japan)",
+  "aliases": [
+    "Thexder (Japan)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\thexder_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x00D4",
+        "0x00DA"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Thexder-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x00DA",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x00D4",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Thexder (Japan).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 13,
+      "distinct_address_count": 13,
+      "sample_raw_entries": [
+        {
+          "code": "SXEPSISA",
+          "desc": "Infinite Energy",
+          "address": "0x052D"
+        },
+        {
+          "code": "SZEOKAVG",
+          "desc": "Infinite Shield",
+          "address": "0x00AC"
+        },
+        {
+          "code": "00D8:C8",
+          "desc": "Infinite Health",
+          "address": "0x00D8"
+        },
+        {
+          "code": "00CE:26",
+          "desc": "Infinite Shield",
+          "address": "0x00CE"
+        },
+        {
+          "code": "0074:BE",
+          "desc": "Level Select",
+          "address": "0x0074"
+        },
+        {
+          "code": "00AD:80",
+          "desc": "Remain as Ship Always",
+          "address": "0x00AD"
+        },
+        {
+          "code": "00B0:FF",
+          "desc": "Super Jump Midair",
+          "address": "0x00B0"
+        },
+        {
+          "code": "AYTONI",
+          "desc": "Infinite Health",
+          "address": "0x05F7"
+        },
+        {
+          "code": "SZYPNI",
+          "desc": "Infinite Health (Alt)",
+          "address": "0x0527"
+        },
+        {
+          "code": "SZYPSI",
+          "desc": "Infinite Health (Alt)",
+          "address": "0x0525"
+        },
+        {
+          "code": "AALOUI",
+          "desc": "Infinite Shield",
+          "address": "0x0583"
+        },
+        {
+          "code": "SZAOKA",
+          "desc": "Infinite Shield",
+          "address": "0x00A4"
+        },
+        {
+          "code": "NYZOEK",
+          "desc": "Jump In Mid-Air",
+          "address": "0x04F0"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

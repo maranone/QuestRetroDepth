@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "spartanx",
+  "display_name": "Spartan X (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Spartan X (Japan).cht",
+      "total_cheat_rows": 18,
+      "raw_entry_count": 8,
+      "distinct_address_count": 6,
+      "sample_raw_entries": [
+        {
+          "code": "005C:0A",
+          "desc": "Infinite Lives",
+          "address": "0x005C"
+        },
+        {
+          "code": "04A6:30",
+          "desc": "Infinite Energy",
+          "address": "0x04A6"
+        },
+        {
+          "code": "0374:00",
+          "desc": "Invincibility",
+          "address": "0x0374"
+        },
+        {
+          "code": "0056:00",
+          "desc": "Level Select",
+          "address": "0x0056"
+        },
+        {
+          "code": "0068:09",
+          "desc": "Famous Kung Fu Crawling Stance!",
+          "address": "0x0068"
+        },
+        {
+          "code": "04A6:1E",
+          "desc": "Infinite Health",
+          "address": "0x04A6"
+        },
+        {
+          "code": "005C:09",
+          "desc": "Infinite Lives",
+          "address": "0x005C"
+        },
+        {
+          "code": "020B:53",
+          "desc": "FAKE Infinite Health",
+          "address": "0x020B"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

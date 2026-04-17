@@ -1,0 +1,10 @@
+game_name=Perman Part 2 - Himitsu Kessha Madoodan o Taose! (Japan)
+game_key=perman_part_2_himitsu_kessha_madoodan_o_taose_japan
+system=nes
+integration_tier=contrib
+trigger	damage_taken_health_009c	damage_taken	0x009C	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_009c	death	0x009C	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	enemy_defeated_enemy_health_0096	enemy_defeated	0x0096	1	uint	little	prev > curr	0.65	1	right:0.450:35
+trigger	life_lost_lives_009b	life_lost	0x009B	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_009b	life_gained	0x009B	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	enemy_defeated_enemy_health_0766	enemy_defeated	0x0766	1	uint	little	prev > curr	0.65	1	right:0.450:35

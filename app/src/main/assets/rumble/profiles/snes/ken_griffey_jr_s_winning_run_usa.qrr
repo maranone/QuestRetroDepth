@@ -1,0 +1,6 @@
+game_name=Ken Griffey Jr.'s Winning Run (USA)
+game_key=ken_griffey_jr_s_winning_run_usa
+system=snes
+integration_tier=contrib
+trigger	score_score_0000	score	0x7F0000	1	uint	little	prev < curr	0.8	1	right:0.350:60
+trigger	score_score_0064	score	0x7F0064	1	uint	little	prev < curr	0.8	1	right:0.350:60

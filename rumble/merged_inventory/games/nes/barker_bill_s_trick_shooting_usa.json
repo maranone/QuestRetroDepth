@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "barkerbillstrickshooting",
+  "display_name": "Barker Bill's Trick Shooting (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Barker Bill's Trick Shooting (USA).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "005B:03",
+          "desc": "Infinite Gun Rounds",
+          "address": "0x005B"
+        },
+        {
+          "code": "06F2:00",
+          "desc": "Round Modifier",
+          "address": "0x06F2"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

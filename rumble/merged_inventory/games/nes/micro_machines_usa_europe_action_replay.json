@@ -1,0 +1,130 @@
+{
+  "system": "nes",
+  "normalized_title": "micromachines",
+  "display_name": "Micro Machines (USA, Europe) (Action Replay)",
+  "aliases": [
+    "Micro Machines (USA, Europe) (Game Genie)",
+    "Micro Machines (USA) (Unl)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Micro Machines (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 30,
+      "raw_entry_count": 20,
+      "distinct_address_count": 15,
+      "sample_raw_entries": [
+        {
+          "code": "AAOEIAIA",
+          "desc": "Faster Boat Acceleration",
+          "address": "0x008D"
+        },
+        {
+          "code": "AAOEGAIA",
+          "desc": "Faster Sports Car Acceleration",
+          "address": "0x008C"
+        },
+        {
+          "code": "AAOETAIA",
+          "desc": "Faster Formula 1 Acceleration",
+          "address": "0x008E"
+        },
+        {
+          "code": "AAOEYAIA",
+          "desc": "Faster Turbo Wheels(tm) Acceleration",
+          "address": "0x008F"
+        },
+        {
+          "code": "AAXAAAIA",
+          "desc": "Faster 4X4 Acceleration",
+          "address": "0x0008"
+        },
+        {
+          "code": "AAXAZAZA",
+          "desc": "Faster Tank Acceleration",
+          "address": "0x000A"
+        },
+        {
+          "code": "AAXALAIA",
+          "desc": "Faster Chopper Acceleration",
+          "address": "0x000B"
+        },
+        {
+          "code": "AAXATEPA",
+          "desc": "Quicker Boat Deceleration",
+          "address": "0x000E"
+        },
+        {
+          "code": "AAXAIEPA",
+          "desc": "Quicker Sports Car Deceleration",
+          "address": "0x000D"
+        },
+        {
+          "code": "AAXAYEPA",
+          "desc": "Quicker Formula 1 Deceleration",
+          "address": "0x000F"
+        },
+        {
+          "code": "AAXEAEPA",
+          "desc": "Quicker Turbo Wheels Deceleration",
+          "address": "0x0088"
+        },
+        {
+          "code": "AAXEPEPA",
+          "desc": "Quicker 4X4 Deceleration",
+          "address": "0x0089"
+        },
+        {
+          "code": "AAXELAZA",
+          "desc": "Quicker Tank Deceleration",
+          "address": "0x008B"
+        },
+        {
+          "code": "AAXEGEYA",
+          "desc": "Quicker Chopper Deceleration",
+          "address": "0x008C"
+        },
+        {
+          "code": "YAEAZAPA",
+          "desc": "Higher Bounce For Boats",
+          "address": "0x000A"
+        },
+        {
+          "code": "IAEAPAPA",
+          "desc": "Higher Bounce For Sports Cars",
+          "address": "0x0009"
+        },
+        {
+          "code": "YAEALAPA",
+          "desc": "Higher Bounce For Formula 1's",
+          "address": "0x000B"
+        },
+        {
+          "code": "YAEAGAPA",
+          "desc": "Higher Bounce For Turbo Wheels",
+          "address": "0x000C"
+        },
+        {
+          "code": "YAEAIAPA",
+          "desc": "Higher Bounce For 4X4's",
+          "address": "0x000D"
+        },
+        {
+          "code": "YAEAYAPA",
+          "desc": "Higher Bounce For Tanks",
+          "address": "0x000F"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\nes\\Micro Machines (USA) (Unl).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 0,
+      "distinct_address_count": 0,
+      "sample_raw_entries": []
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

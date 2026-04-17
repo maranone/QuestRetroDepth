@@ -1,0 +1,28 @@
+{
+  "system": "gb",
+  "normalized_title": "ninjaboy",
+  "display_name": "Ninja Boy (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Ninja Boy (USA, Europe) (GameShark)",
+    "Ninja Boy (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Ninja Boy (USA, Europe).cht",
+      "total_cheat_rows": 15,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0100D9C9",
+          "desc": "Door Is Always Open",
+          "address": "0xD9C9"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

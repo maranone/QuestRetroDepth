@@ -1,0 +1,5 @@
+game_name=HardBall '95 (USA) (Action Replay)
+game_key=hardball_95_usa_action_replay
+system=genesis
+integration_tier=contrib
+trigger	score_score_ff1d20	score	0xFF1D20	1	uint	little	prev < curr	0.8	1	right:0.350:60

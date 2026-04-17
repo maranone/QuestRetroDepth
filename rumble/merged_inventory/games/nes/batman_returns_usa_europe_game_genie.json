@@ -1,0 +1,79 @@
+{
+  "system": "nes",
+  "normalized_title": "batmanreturns",
+  "display_name": "Batman Returns (USA, Europe) (Game Genie)",
+  "aliases": [
+    "Batman Returns (USA)",
+    "Batman Returns (USA, Europe) (Game Genie)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\batmanreturns_nes.json",
+      "trigger_count": 3,
+      "field_names": [
+        "health",
+        "score"
+      ],
+      "field_count": 2,
+      "distinct_addresses": [
+        "0x013D",
+        "0x0142"
+      ],
+      "distinct_address_count": 2
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\BatmanReturns-Nes-v0\\data.json",
+      "field_count": 2,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x013D",
+          "type": ">u4"
+        },
+        {
+          "name": "score",
+          "address": "0x0142",
+          "type": "<u2"
+        }
+      ],
+      "distinct_address_count": 2
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Batman Returns (USA, Europe) (Game Genie).cht",
+      "total_cheat_rows": 10,
+      "raw_entry_count": 5,
+      "distinct_address_count": 5,
+      "sample_raw_entries": [
+        {
+          "code": "PAXELAIE",
+          "desc": "Start With 9 Batarangs",
+          "address": "0x008B"
+        },
+        {
+          "code": "YLOALEAX",
+          "desc": "Start With Full Energy",
+          "address": "0x003B"
+        },
+        {
+          "code": "APOALEAZ",
+          "desc": "Start With Less Energy",
+          "address": "0x001B"
+        },
+        {
+          "code": "AAVASZZA",
+          "desc": "Don't Lose Energy From Spin Attack",
+          "address": "0x020D"
+        },
+        {
+          "code": "AUSAPPAP",
+          "desc": "Lots More Energy From Small Hearts",
+          "address": "0x0139"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

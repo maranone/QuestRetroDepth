@@ -1,0 +1,178 @@
+{
+  "system": "gba",
+  "normalized_title": "virtuatennis",
+  "display_name": "Virtua Tennis (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Virtua Tennis (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 15,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10000994",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000994"
+        },
+        {
+          "code": "3300120B",
+          "desc": "P1 Always Score 0",
+          "address": "0x0200120B"
+        },
+        {
+          "code": "7300120A",
+          "desc": "P1 Start With 15",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "3300120B",
+          "desc": "P1 Start With 15",
+          "address": "0x0200120B"
+        },
+        {
+          "code": "7300120A",
+          "desc": "P1 Start With 30",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "3300120B",
+          "desc": "P1 Start With 30",
+          "address": "0x0200120B"
+        },
+        {
+          "code": "7300120A",
+          "desc": "P1 Start With 40",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "3300120B",
+          "desc": "P1 Start With 40",
+          "address": "0x0200120B"
+        },
+        {
+          "code": "3300120A",
+          "desc": "P2 Always Score 0",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "7300120A",
+          "desc": "P2 Start With 15",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "3300120A",
+          "desc": "P2 Start With 15",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "7300120A",
+          "desc": "P2 Start With 30",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "3300120A",
+          "desc": "P2 Start With 30",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "7300120A",
+          "desc": "P2 Start With 40",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "3300120A",
+          "desc": "P2 Start With 40",
+          "address": "0x0200120A"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Virtua Tennis (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 15,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "10000994",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000994"
+        },
+        {
+          "code": "3300120B",
+          "desc": "P1 Always Score 0",
+          "address": "0x0200120B"
+        },
+        {
+          "code": "7300120A",
+          "desc": "P1 Start With 15",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "3300120B",
+          "desc": "P1 Start With 15",
+          "address": "0x0200120B"
+        },
+        {
+          "code": "7300120A",
+          "desc": "P1 Start With 30",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "3300120B",
+          "desc": "P1 Start With 30",
+          "address": "0x0200120B"
+        },
+        {
+          "code": "7300120A",
+          "desc": "P1 Start With 40",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "3300120B",
+          "desc": "P1 Start With 40",
+          "address": "0x0200120B"
+        },
+        {
+          "code": "3300120A",
+          "desc": "P2 Always Score 0",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "7300120A",
+          "desc": "P2 Start With 15",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "3300120A",
+          "desc": "P2 Start With 15",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "7300120A",
+          "desc": "P2 Start With 30",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "3300120A",
+          "desc": "P2 Start With 30",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "7300120A",
+          "desc": "P2 Start With 40",
+          "address": "0x0200120A"
+        },
+        {
+          "code": "3300120A",
+          "desc": "P2 Start With 40",
+          "address": "0x0200120A"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

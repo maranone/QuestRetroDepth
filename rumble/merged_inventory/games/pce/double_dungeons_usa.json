@@ -1,0 +1,65 @@
+{
+  "system": "pce",
+  "normalized_title": "doubledungeons",
+  "display_name": "Double Dungeons (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Double Dungeons (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1f0364:00",
+          "desc": "Free Inn Visits",
+          "address": "0x1F0364"
+        },
+        {
+          "code": "1f0315:ff",
+          "desc": "Max Level Up",
+          "address": "0x1F0315"
+        },
+        {
+          "code": "1f0316:ff",
+          "desc": "Max Level Up",
+          "address": "0x1F0316"
+        },
+        {
+          "code": "1f0313:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F0313"
+        },
+        {
+          "code": "1f0314:ff",
+          "desc": "Infinite Gold",
+          "address": "0x1F0314"
+        },
+        {
+          "code": "1f0309:00",
+          "desc": "Stat Current HP",
+          "address": "0x1F0309"
+        },
+        {
+          "code": "1f030a:04",
+          "desc": "Stat Current HP",
+          "address": "0x1F030A"
+        },
+        {
+          "code": "1f030b:00",
+          "desc": "Stat Max HP",
+          "address": "0x1F030B"
+        },
+        {
+          "code": "1f030c:04",
+          "desc": "Stat Max HP",
+          "address": "0x1F030C"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

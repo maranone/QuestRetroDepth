@@ -1,0 +1,186 @@
+{
+  "system": "nes",
+  "normalized_title": "toki",
+  "display_name": "Toki (USA) (Game Genie)",
+  "aliases": [
+    "Toki (USA) (Game Genie)",
+    "Toki (USA)"
+  ],
+  "sources": {
+    "openai_retro": {
+      "path": "openai_retro\\nes\\stable\\toki_nes.json",
+      "trigger_count": 5,
+      "field_names": [
+        "health",
+        "lives",
+        "score"
+      ],
+      "field_count": 3,
+      "distinct_addresses": [
+        "0x0114",
+        "0x011C",
+        "0x0146"
+      ],
+      "distinct_address_count": 3
+    },
+    "stable_retro": {
+      "path": "stable_retro\\stable_retro\\data\\stable\\Toki-Nes-v0\\data.json",
+      "field_count": 3,
+      "fields": [
+        {
+          "name": "health",
+          "address": "0x011C",
+          "type": "|u1"
+        },
+        {
+          "name": "lives",
+          "address": "0x0114",
+          "type": "|u1"
+        },
+        {
+          "name": "score",
+          "address": "0x0146",
+          "type": ">n6"
+        }
+      ],
+      "distinct_address_count": 3
+    },
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Toki (USA).cht",
+      "total_cheat_rows": 32,
+      "raw_entry_count": 28,
+      "distinct_address_count": 22,
+      "sample_raw_entries": [
+        {
+          "code": "EESEYEVG",
+          "desc": "Infinite energy",
+          "address": "0x008F"
+        },
+        {
+          "code": "AAKEVYPA",
+          "desc": "Infinite time",
+          "address": "0x078E"
+        },
+        {
+          "code": "PAKAGALA",
+          "desc": "Start with less time",
+          "address": "0x000C"
+        },
+        {
+          "code": "IAKAGALA",
+          "desc": "Start with more time",
+          "address": "0x000C"
+        },
+        {
+          "code": "PAKAGALE",
+          "desc": "Start with even more time",
+          "address": "0x000C"
+        },
+        {
+          "code": "SZNOGUVV",
+          "desc": "Weapons don't run out",
+          "address": "0x03AC"
+        },
+        {
+          "code": "SXEOLUVV",
+          "desc": "Weapons don't run out",
+          "address": "0x03AB"
+        },
+        {
+          "code": "SXOOZUSE",
+          "desc": "Weapons don't run out",
+          "address": "0x03AA"
+        },
+        {
+          "code": "PEOPTLAA",
+          "desc": "When your weapon runs out of ammo its replaced with the double weapon",
+          "address": "0x030E"
+        },
+        {
+          "code": "ZEOPTLAA",
+          "desc": "When your weapon runs out of ammo its replaced with the wave weapon",
+          "address": "0x030E"
+        },
+        {
+          "code": "LEOPTLAA",
+          "desc": "When your weapon runs out of ammo its replaced with the 3-way weapon",
+          "address": "0x030E"
+        },
+        {
+          "code": "GEOPTLAA",
+          "desc": "When your weapon runs out of ammo its replaced with the flame weapon",
+          "address": "0x030E"
+        },
+        {
+          "code": "IEOPTLAA",
+          "desc": "When your weapon runs out of ammo its replaced with the fireball weapon",
+          "address": "0x030E"
+        },
+        {
+          "code": "011F:00",
+          "desc": "Invincibility",
+          "address": "0x011F"
+        },
+        {
+          "code": "XVEAPTAV",
+          "desc": "Hit Anywhere Normal Enemies",
+          "address": "0x0669"
+        },
+        {
+          "code": "SXSETVSO",
+          "desc": "Hit Anywhere Normal Enemies",
+          "address": "0x06AE"
+        },
+        {
+          "code": "011C:02",
+          "desc": "Infinite Health P1",
+          "address": "0x011C"
+        },
+        {
+          "code": "0116:00",
+          "desc": "Level Modifier (Ignore Stage X Text)",
+          "address": "0x0116"
+        },
+        {
+          "code": "0118:09",
+          "desc": "Infinite Coins (Ten's Digit)",
+          "address": "0x0118"
+        },
+        {
+          "code": "0119:09",
+          "desc": "Infinite Coins (One's Digit)",
+          "address": "0x0119"
+        },
+        {
+          "code": "0576:09",
+          "desc": "Infinite Time (Hundred's Digit)",
+          "address": "0x0576"
+        },
+        {
+          "code": "0577:09",
+          "desc": "Infinite Time (Ten's Digit)",
+          "address": "0x0577"
+        },
+        {
+          "code": "0578:09",
+          "desc": "Infinite Time (One's Digit)",
+          "address": "0x0578"
+        },
+        {
+          "code": "051C:FF",
+          "desc": "Swim Everywhere",
+          "address": "0x051C"
+        },
+        {
+          "code": "0527:FF",
+          "desc": "Have Jump Shoes",
+          "address": "0x0527"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "stable_retro",
+  "notes": [
+    "Semantic labeled RAM fields available."
+  ]
+}

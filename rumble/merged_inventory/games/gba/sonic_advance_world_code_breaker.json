@@ -1,0 +1,178 @@
+{
+  "system": "gba",
+  "normalized_title": "sonicadvance",
+  "display_name": "Sonic Advance (World) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Sonic Advance (World) (Code Breaker).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 15,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "1000122A",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200122A"
+        },
+        {
+          "code": "83005034",
+          "desc": "Get Best Time For The End Of A Zone",
+          "address": "0x02005034"
+        },
+        {
+          "code": "83004FEC",
+          "desc": "Infinite Rings",
+          "address": "0x02004FEC"
+        },
+        {
+          "code": "33005024",
+          "desc": "Infinite Lives",
+          "address": "0x02005024"
+        },
+        {
+          "code": "83005030",
+          "desc": "Quick Score Gain",
+          "address": "0x02005030"
+        },
+        {
+          "code": "83005030",
+          "desc": "Max Score",
+          "address": "0x02005030"
+        },
+        {
+          "code": "83005032",
+          "desc": "Max Score",
+          "address": "0x02005032"
+        },
+        {
+          "code": "33005078",
+          "desc": "Max Rings (Special Stage)",
+          "address": "0x02005078"
+        },
+        {
+          "code": "3300517C",
+          "desc": "Have All Chaos Emeralds",
+          "address": "0x0200517C"
+        },
+        {
+          "code": "33005A46",
+          "desc": "Normal Shield Effects",
+          "address": "0x02005A46"
+        },
+        {
+          "code": "33005A46",
+          "desc": "Lightning Shield Effects",
+          "address": "0x02005A46"
+        },
+        {
+          "code": "33005084",
+          "desc": "Play As Sonic",
+          "address": "0x02005084"
+        },
+        {
+          "code": "33005084",
+          "desc": "Play As Tails",
+          "address": "0x02005084"
+        },
+        {
+          "code": "33005084",
+          "desc": "Play As Knuckles",
+          "address": "0x02005084"
+        },
+        {
+          "code": "33005084",
+          "desc": "Play As Amy",
+          "address": "0x02005084"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Sonic Advance (World) (Code Breaker).cht",
+      "total_cheat_rows": 14,
+      "raw_entry_count": 15,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "1000122A",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200122A"
+        },
+        {
+          "code": "83005034",
+          "desc": "Get Best Time For The End Of A Zone",
+          "address": "0x02005034"
+        },
+        {
+          "code": "83004FEC",
+          "desc": "Infinite Rings",
+          "address": "0x02004FEC"
+        },
+        {
+          "code": "33005024",
+          "desc": "Infinite Lives",
+          "address": "0x02005024"
+        },
+        {
+          "code": "83005030",
+          "desc": "Quick Score Gain",
+          "address": "0x02005030"
+        },
+        {
+          "code": "83005030",
+          "desc": "Max Score",
+          "address": "0x02005030"
+        },
+        {
+          "code": "83005032",
+          "desc": "Max Score",
+          "address": "0x02005032"
+        },
+        {
+          "code": "33005078",
+          "desc": "Max Rings (Special Stage)",
+          "address": "0x02005078"
+        },
+        {
+          "code": "3300517C",
+          "desc": "Have All Chaos Emeralds",
+          "address": "0x0200517C"
+        },
+        {
+          "code": "33005A46",
+          "desc": "Normal Shield Effects",
+          "address": "0x02005A46"
+        },
+        {
+          "code": "33005A46",
+          "desc": "Lightning Shield Effects",
+          "address": "0x02005A46"
+        },
+        {
+          "code": "33005084",
+          "desc": "Play As Sonic",
+          "address": "0x02005084"
+        },
+        {
+          "code": "33005084",
+          "desc": "Play As Tails",
+          "address": "0x02005084"
+        },
+        {
+          "code": "33005084",
+          "desc": "Play As Knuckles",
+          "address": "0x02005084"
+        },
+        {
+          "code": "33005084",
+          "desc": "Play As Amy",
+          "address": "0x02005084"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

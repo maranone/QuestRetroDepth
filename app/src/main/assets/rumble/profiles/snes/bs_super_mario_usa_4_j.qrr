@@ -1,0 +1,6 @@
+game_name=BS Super Mario USA 4 (J)
+game_key=bs_super_mario_usa_4_j
+system=snes
+integration_tier=contrib
+trigger	life_lost_lives_053a	life_lost	0x7E053A	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_053a	life_gained	0x7E053A	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

@@ -1,0 +1,128 @@
+{
+  "system": "gba",
+  "normalized_title": "powerrangerswildforce",
+  "display_name": "Power Rangers - Wild Force (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Power Rangers - Wild Force (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10000324",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000324"
+        },
+        {
+          "code": "83001590",
+          "desc": "Infinite Health",
+          "address": "0x02001590"
+        },
+        {
+          "code": "33001861",
+          "desc": "Infinite Lives",
+          "address": "0x02001861"
+        },
+        {
+          "code": "33001752",
+          "desc": "Infinite Energy",
+          "address": "0x02001752"
+        },
+        {
+          "code": "3300175A",
+          "desc": "Invincible",
+          "address": "0x0200175A"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Start To Open Exits",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83001830",
+          "desc": "Press Start To Open Exits",
+          "address": "0x02001830"
+        },
+        {
+          "code": "33001502",
+          "desc": "Max Strength",
+          "address": "0x02001502"
+        },
+        {
+          "code": "3300158A",
+          "desc": "Max Speed",
+          "address": "0x0200158A"
+        },
+        {
+          "code": "33001592",
+          "desc": "Quick Recovery",
+          "address": "0x02001592"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Power Rangers - Wild Force (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 9,
+      "raw_entry_count": 10,
+      "distinct_address_count": 10,
+      "sample_raw_entries": [
+        {
+          "code": "10000324",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000324"
+        },
+        {
+          "code": "83001590",
+          "desc": "Infinite Health",
+          "address": "0x02001590"
+        },
+        {
+          "code": "33001861",
+          "desc": "Infinite Lives",
+          "address": "0x02001861"
+        },
+        {
+          "code": "33001752",
+          "desc": "Infinite Energy",
+          "address": "0x02001752"
+        },
+        {
+          "code": "3300175A",
+          "desc": "Invincible",
+          "address": "0x0200175A"
+        },
+        {
+          "code": "D0000020",
+          "desc": "Press Start To Open Exits",
+          "address": "0x02000020"
+        },
+        {
+          "code": "83001830",
+          "desc": "Press Start To Open Exits",
+          "address": "0x02001830"
+        },
+        {
+          "code": "33001502",
+          "desc": "Max Strength",
+          "address": "0x02001502"
+        },
+        {
+          "code": "3300158A",
+          "desc": "Max Speed",
+          "address": "0x0200158A"
+        },
+        {
+          "code": "33001592",
+          "desc": "Quick Recovery",
+          "address": "0x02001592"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "excitingboxing",
+  "display_name": "Exciting Boxing (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Exciting Boxing (Japan).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "0453:FF",
+          "desc": "Infinite Energy",
+          "address": "0x0453"
+        },
+        {
+          "code": "0444:00",
+          "desc": "Don't Get Knocked Out",
+          "address": "0x0444"
+        },
+        {
+          "code": "0454:00",
+          "desc": "Zero Energy For The Opponent",
+          "address": "0x0454"
+        },
+        {
+          "code": "04B4:B4",
+          "desc": "Infinite Time",
+          "address": "0x04B4"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

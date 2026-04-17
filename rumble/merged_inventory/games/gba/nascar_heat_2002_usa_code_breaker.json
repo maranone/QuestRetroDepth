@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "nascarheat2002",
+  "display_name": "NASCAR Heat 2002 (USA) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\NASCAR Heat 2002 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "10000490",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000490"
+        },
+        {
+          "code": "7202A59C",
+          "desc": "Start On Lap 10",
+          "address": "0x0202A59C"
+        },
+        {
+          "code": "8202A59C",
+          "desc": "Start On Lap 10",
+          "address": "0x0202A59C"
+        },
+        {
+          "code": "8202A5EC",
+          "desc": "Infinite Fuel",
+          "address": "0x0202A5EC"
+        },
+        {
+          "code": "820251FC",
+          "desc": "Low Lap Times",
+          "address": "0x020251FC"
+        },
+        {
+          "code": "8202CADC",
+          "desc": "Low Event Times (Beat The Heat)",
+          "address": "0x0202CADC"
+        },
+        {
+          "code": "8202EF08",
+          "desc": "Unlock All Levels (Beat The Heat)",
+          "address": "0x0202EF08"
+        },
+        {
+          "code": "8202EF0A",
+          "desc": "Unlock All Levels (Beat The Heat)",
+          "address": "0x0202EF0A"
+        },
+        {
+          "code": "4202EF60",
+          "desc": "Beat The Heat Complete",
+          "address": "0x0202EF60"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\NASCAR Heat 2002 (USA) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 9,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "10000490",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x02000490"
+        },
+        {
+          "code": "7202A59C",
+          "desc": "Start On Lap 10",
+          "address": "0x0202A59C"
+        },
+        {
+          "code": "8202A59C",
+          "desc": "Start On Lap 10",
+          "address": "0x0202A59C"
+        },
+        {
+          "code": "8202A5EC",
+          "desc": "Infinite Fuel",
+          "address": "0x0202A5EC"
+        },
+        {
+          "code": "820251FC",
+          "desc": "Low Lap Times",
+          "address": "0x020251FC"
+        },
+        {
+          "code": "8202CADC",
+          "desc": "Low Event Times (Beat The Heat)",
+          "address": "0x0202CADC"
+        },
+        {
+          "code": "8202EF08",
+          "desc": "Unlock All Levels (Beat The Heat)",
+          "address": "0x0202EF08"
+        },
+        {
+          "code": "8202EF0A",
+          "desc": "Unlock All Levels (Beat The Heat)",
+          "address": "0x0202EF0A"
+        },
+        {
+          "code": "4202EF60",
+          "desc": "Beat The Heat Complete",
+          "address": "0x0202EF60"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

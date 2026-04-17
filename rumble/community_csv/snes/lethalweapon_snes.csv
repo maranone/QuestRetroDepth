@@ -2,8 +2,8 @@
 # game_name=Lethal Weapon (USA, Europe) (Action Replay)
 # match_names=lethalweapon|lethalweaponsnes
 event_id,address,size,value_type,condition,compare_value,controller,amplitude,effect,start_ms,duration_ms,cooldown_ms,priority,notes
-game_over_gameover_0029,0x7E0029,1,uint,became_nonzero,,both,1.000,normal,0,1000,400,100,
-damage_taken_health_0226,0x7E0226,1,int,prev_gt_curr,,left,0.850,normal,0,90,100,70,
-death_health_0226,0x7E0226,1,int,became_zero,,both,1.000,normal,0,600,400,90,
-score_score0_026a,0x7E026A,2,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,
-score_score1_0268,0x7E0268,1,bcd,prev_lt_curr,,right,0.350,normal,0,60,50,10,
+game_over_gameover_0029,0x7E0029,1,uint,became_nonzero,,both,1.000,heartbeat,0,1000,400,100,
+damage_taken_health_0226,0x7E0226,1,int,prev_gt_curr,,left,0.850,fade_out,0,110,80,70,
+death_health_0226,0x7E0226,1,int,became_zero,,both,1.000,heartbeat,0,600,400,90,
+score_score0_026a,0x7E026A,2,bcd,prev_lt_curr,,right,0.350,burst,0,70,15,10,
+score_score1_0268,0x7E0268,1,bcd,prev_lt_curr,,right,0.350,burst,0,70,15,10,

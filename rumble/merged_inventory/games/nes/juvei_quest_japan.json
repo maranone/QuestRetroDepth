@@ -1,0 +1,145 @@
+{
+  "system": "nes",
+  "normalized_title": "juveiquest",
+  "display_name": "Juvei Quest (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Juvei Quest (Japan).cht",
+      "total_cheat_rows": 75,
+      "raw_entry_count": 90,
+      "distinct_address_count": 85,
+      "sample_raw_entries": [
+        {
+          "code": "0508:FF",
+          "desc": "Infinite Gold",
+          "address": "0x0508"
+        },
+        {
+          "code": "0509:FF",
+          "desc": "Infinite Gold",
+          "address": "0x0509"
+        },
+        {
+          "code": "0560:FF",
+          "desc": "P1 Health - Juvie",
+          "address": "0x0560"
+        },
+        {
+          "code": "0570:FF",
+          "desc": "P1 Infinite Magic",
+          "address": "0x0570"
+        },
+        {
+          "code": "05B8:FF",
+          "desc": "P1 Attack",
+          "address": "0x05B8"
+        },
+        {
+          "code": "05C0:FF",
+          "desc": "P1 Defense",
+          "address": "0x05C0"
+        },
+        {
+          "code": "05C8:FF",
+          "desc": "P1 Speed",
+          "address": "0x05C8"
+        },
+        {
+          "code": "05D0:FF",
+          "desc": "P1 Heavenly Defense",
+          "address": "0x05D0"
+        },
+        {
+          "code": "05D8:FF",
+          "desc": "P1 Inner Strength",
+          "address": "0x05D8"
+        },
+        {
+          "code": "05E0:FF",
+          "desc": "P1 Intelligence",
+          "address": "0x05E0"
+        },
+        {
+          "code": "0562:FF",
+          "desc": "P2 Health - Ryuuhime",
+          "address": "0x0562"
+        },
+        {
+          "code": "0564:FF",
+          "desc": "P3 Health - Onitan Native",
+          "address": "0x0564"
+        },
+        {
+          "code": "0565:FF",
+          "desc": "P4 Health - Shiro Wolf",
+          "address": "0x0565"
+        },
+        {
+          "code": "0566:FF",
+          "desc": "P5 Health - Hinotori Duck",
+          "address": "0x0566"
+        },
+        {
+          "code": "0567:FF",
+          "desc": "P6 Health - Monkey Boss",
+          "address": "0x0567"
+        },
+        {
+          "code": "0561:FF",
+          "desc": "P7 Health - Wolf/Dog",
+          "address": "0x0561"
+        },
+        {
+          "code": "0563:FF",
+          "desc": "P8 Health - Ivan Demon",
+          "address": "0x0563"
+        },
+        {
+          "code": "0572:FF",
+          "desc": "P2 Magic",
+          "address": "0x0572"
+        },
+        {
+          "code": "0574:FF",
+          "desc": "P3 Magic",
+          "address": "0x0574"
+        },
+        {
+          "code": "0575:FF",
+          "desc": "P4 Magic",
+          "address": "0x0575"
+        },
+        {
+          "code": "0576:FF",
+          "desc": "P5 Magic",
+          "address": "0x0576"
+        },
+        {
+          "code": "0577:FF",
+          "desc": "P6 Magic",
+          "address": "0x0577"
+        },
+        {
+          "code": "0571:FF",
+          "desc": "P7 Magic",
+          "address": "0x0571"
+        },
+        {
+          "code": "0573:FF",
+          "desc": "P8 Magic",
+          "address": "0x0573"
+        },
+        {
+          "code": "05BA:FF",
+          "desc": "P2 Attack",
+          "address": "0x05BA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

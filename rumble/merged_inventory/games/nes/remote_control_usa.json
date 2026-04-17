@@ -1,0 +1,60 @@
+{
+  "system": "nes",
+  "normalized_title": "remotecontrol",
+  "display_name": "Remote Control (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Remote Control (USA).cht",
+      "total_cheat_rows": 8,
+      "raw_entry_count": 8,
+      "distinct_address_count": 8,
+      "sample_raw_entries": [
+        {
+          "code": "0364:00",
+          "desc": "Time Modifier",
+          "address": "0x0364"
+        },
+        {
+          "code": "0392:63",
+          "desc": "Current Player Has Infinite Guesses At Questions",
+          "address": "0x0392"
+        },
+        {
+          "code": "0353:09",
+          "desc": "P1 Has A High Score (Ten's &amp; Hundred's Digit)",
+          "address": "0x0353"
+        },
+        {
+          "code": "0349:09",
+          "desc": "P1 Has A High Score (Ten's Digit)",
+          "address": "0x0349"
+        },
+        {
+          "code": "0354:00",
+          "desc": "P2 Has No Score (Ten's Digit)",
+          "address": "0x0354"
+        },
+        {
+          "code": "0351:00",
+          "desc": "P2 Has No Score (One's Digit)",
+          "address": "0x0351"
+        },
+        {
+          "code": "0355:00",
+          "desc": "P3 Has No Score (Ten's Digit)",
+          "address": "0x0355"
+        },
+        {
+          "code": "0352:00",
+          "desc": "P3 Has No Score (One's Digit)",
+          "address": "0x0352"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

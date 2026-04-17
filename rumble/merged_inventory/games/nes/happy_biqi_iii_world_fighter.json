@@ -1,0 +1,35 @@
+{
+  "system": "nes",
+  "normalized_title": "happybiqiiiiworldfighter",
+  "display_name": "Happy Biqi III- World Fighter",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Happy Biqi III- World Fighter.cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 3,
+      "distinct_address_count": 3,
+      "sample_raw_entries": [
+        {
+          "code": "006B:05",
+          "desc": "Infinite Lives",
+          "address": "0x006B"
+        },
+        {
+          "code": "006C:64",
+          "desc": "Infinite Energy",
+          "address": "0x006C"
+        },
+        {
+          "code": "0078:FF",
+          "desc": "Infinite Ammo",
+          "address": "0x0078"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

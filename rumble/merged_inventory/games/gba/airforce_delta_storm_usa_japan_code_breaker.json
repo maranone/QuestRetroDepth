@@ -1,0 +1,68 @@
+{
+  "system": "gba",
+  "normalized_title": "airforcedeltastorm",
+  "display_name": "AirForce Delta Storm (USA, Japan) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\AirForce Delta Storm (USA, Japan) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "33004DD8",
+          "desc": "Infinite MSL",
+          "address": "0x02004DD8"
+        },
+        {
+          "code": "83004448",
+          "desc": "Max Time Bonus",
+          "address": "0x02004448"
+        },
+        {
+          "code": "8300020C",
+          "desc": "Max Score",
+          "address": "0x0200020C"
+        },
+        {
+          "code": "8300020E",
+          "desc": "Max Score",
+          "address": "0x0200020E"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\AirForce Delta Storm (USA, Japan) (Code Breaker).cht",
+      "total_cheat_rows": 3,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "33004DD8",
+          "desc": "Infinite MSL",
+          "address": "0x02004DD8"
+        },
+        {
+          "code": "83004448",
+          "desc": "Max Time Bonus",
+          "address": "0x02004448"
+        },
+        {
+          "code": "8300020C",
+          "desc": "Max Score",
+          "address": "0x0200020C"
+        },
+        {
+          "code": "8300020E",
+          "desc": "Max Score",
+          "address": "0x0200020E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

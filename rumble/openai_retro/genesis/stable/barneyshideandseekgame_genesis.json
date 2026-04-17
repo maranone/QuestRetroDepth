@@ -1,0 +1,78 @@
+{
+  "schema": "qrd.rumble.genesis.v1",
+  "game": {
+    "name": "BarneysHideAndSeekGame",
+    "system": "genesis"
+  },
+  "source": {
+    "data_json": "rumble\\openai-retro\\retro\\data\\stable\\BarneysHideAndSeekGame-Genesis\\data.json",
+    "integration_tier": "stable",
+    "game_key": "BarneysHideAndSeekGame-Genesis"
+  },
+  "triggers": [
+    {
+      "id": "level_complete_level_ffdbfb",
+      "event": "level_complete",
+      "watch": [
+        {
+          "absolute_address": "0xFFDBFB",
+          "size": 1,
+          "value_type": "uint",
+          "byte_order": "native",
+          "raw_type": "|u1",
+          "address": "0xFFDBFB",
+          "ram_offset": 56315
+        }
+      ],
+      "condition": "prev != curr",
+      "haptic": [
+        {
+          "hand": "left",
+          "amplitude": 0.8,
+          "duration_ms": 400
+        },
+        {
+          "hand": "right",
+          "amplitude": 0.8,
+          "duration_ms": 400
+        }
+      ],
+      "confidence": 0.65,
+      "needs_review": true,
+      "reason": "Stage/zone progression field; review in gameplay.",
+      "source_fields": [
+        {
+          "name": "level",
+          "address": "0xFFDBFB",
+          "raw_type": "|u1"
+        }
+      ]
+    }
+  ],
+  "unsupported_evidence": [
+    {
+      "name": "kids_found",
+      "meta": {
+        "address": 16768008,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "kids_found_total",
+      "meta": {
+        "address": 16767998,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    },
+    {
+      "name": "toys_found",
+      "meta": {
+        "address": 16767996,
+        "type": "|u1"
+      },
+      "reason": "No rumble mapping rule."
+    }
+  ]
+}

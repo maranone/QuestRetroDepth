@@ -1,0 +1,6 @@
+game_name=Hacker, The (NJ032) (Ch) [!]
+game_key=hacker_the_nj032_ch
+system=nes
+integration_tier=contrib
+trigger	life_lost_lives_03ec	life_lost	0x03EC	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_03ec	life_gained	0x03EC	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180

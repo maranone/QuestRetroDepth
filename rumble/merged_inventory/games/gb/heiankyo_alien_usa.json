@@ -1,0 +1,30 @@
+{
+  "system": "gb",
+  "normalized_title": "heiankyoalien",
+  "display_name": "Heiankyo Alien (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Heiankyo Alien (USA).cht",
+      "total_cheat_rows": 11,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0105CBDA",
+          "desc": "Invincibility",
+          "address": "0xCBDA"
+        },
+        {
+          "code": "0105CEDA",
+          "desc": "Infinite Lives",
+          "address": "0xCEDA"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

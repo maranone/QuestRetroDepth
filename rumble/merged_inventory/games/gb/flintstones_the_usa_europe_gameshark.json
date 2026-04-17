@@ -1,0 +1,27 @@
+{
+  "system": "gb",
+  "normalized_title": "flintstones",
+  "display_name": "Flintstones, The (USA, Europe) (GameShark)",
+  "aliases": [
+    "Flintstones, The (USA, Europe)"
+  ],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy\\Flintstones, The (USA, Europe).cht",
+      "total_cheat_rows": 13,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0100D6DE",
+          "desc": "Infinite Energy",
+          "address": "0xD6DE"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

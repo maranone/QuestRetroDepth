@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "supergloveball",
+  "display_name": "Super Glove Ball (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Super Glove Ball (USA).cht",
+      "total_cheat_rows": 5,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "00A3:05",
+          "desc": "Infinite Lives",
+          "address": "0x00A3"
+        },
+        {
+          "code": "00A6:1A",
+          "desc": "Infinite Health (Glove)",
+          "address": "0x00A6"
+        },
+        {
+          "code": "00A3:63",
+          "desc": "Infinite Balls",
+          "address": "0x00A3"
+        },
+        {
+          "code": "00A4:63",
+          "desc": "Infinite Hands",
+          "address": "0x00A4"
+        },
+        {
+          "code": "00A7:63",
+          "desc": "Infinite Fire Blasts",
+          "address": "0x00A7"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

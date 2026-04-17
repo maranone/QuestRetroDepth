@@ -1,0 +1,45 @@
+{
+  "system": "nes",
+  "normalized_title": "wallstreetkid",
+  "display_name": "Wall Street Kid (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Wall Street Kid (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 5,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "03E1:FF",
+          "desc": "Infinite Money",
+          "address": "0x03E1"
+        },
+        {
+          "code": "NYEELPYE",
+          "desc": "Sart A New Game With $16,777,215",
+          "address": "0x01FB"
+        },
+        {
+          "code": "NYEEZPOX",
+          "desc": "Sart A New Game With $16,777,215",
+          "address": "0x01FA"
+        },
+        {
+          "code": "NYEEPPAX",
+          "desc": "Sart A New Game With $16,777,215",
+          "address": "0x01F9"
+        },
+        {
+          "code": "03E1:FF",
+          "desc": "Have Tons of Money",
+          "address": "0x03E1"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

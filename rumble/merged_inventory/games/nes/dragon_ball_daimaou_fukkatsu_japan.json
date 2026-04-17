@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "dragonballdaimaoufukkatsu",
+  "display_name": "Dragon Ball - Daimaou Fukkatsu (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Dragon Ball - Daimaou Fukkatsu (Japan).cht",
+      "total_cheat_rows": 2,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "030F:70",
+          "desc": "Infinite Energy",
+          "address": "0x030F"
+        },
+        {
+          "code": "030E:63",
+          "desc": "Have 99 Levels",
+          "address": "0x030E"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

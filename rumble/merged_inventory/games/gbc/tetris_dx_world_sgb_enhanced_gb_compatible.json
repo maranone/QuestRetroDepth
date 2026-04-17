@@ -1,0 +1,25 @@
+{
+  "system": "gbc",
+  "normalized_title": "tetrisdx",
+  "display_name": "Tetris DX (World) (SGB Enhanced) (GB Compatible)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Color\\Tetris DX (World) (SGB Enhanced) (GB Compatible).cht",
+      "total_cheat_rows": 36,
+      "raw_entry_count": 1,
+      "distinct_address_count": 1,
+      "sample_raw_entries": [
+        {
+          "code": "0112D0AF",
+          "desc": "Instant Win (Versus Mode)",
+          "address": "0xD0AF"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

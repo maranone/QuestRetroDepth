@@ -1,0 +1,30 @@
+{
+  "system": "nes",
+  "normalized_title": "kakefukunnojumptengokuspeedjigoku",
+  "display_name": "Kakefu-kun no Jump Tengoku - Speed Jigoku (Japan)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Kakefu-kun no Jump Tengoku - Speed Jigoku (Japan).cht",
+      "total_cheat_rows": 1,
+      "raw_entry_count": 2,
+      "distinct_address_count": 2,
+      "sample_raw_entries": [
+        {
+          "code": "0500:03",
+          "desc": "Invincibility",
+          "address": "0x0500"
+        },
+        {
+          "code": "050D:01",
+          "desc": "Invincibility",
+          "address": "0x050D"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

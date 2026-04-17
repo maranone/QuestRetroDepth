@@ -1,0 +1,40 @@
+{
+  "system": "nes",
+  "normalized_title": "vegasdream",
+  "display_name": "Vegas Dream (USA)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Nintendo Entertainment System\\Vegas Dream (USA).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "7C13:09",
+          "desc": "Infinite Money (Ten Thousand's Digit)",
+          "address": "0x7C13"
+        },
+        {
+          "code": "7C14:09",
+          "desc": "Infinite Money (Hundred's Digit)",
+          "address": "0x7C14"
+        },
+        {
+          "code": "7C15:09",
+          "desc": "Infinite Money (One's Digit)",
+          "address": "0x7C15"
+        },
+        {
+          "code": "7C16:09",
+          "desc": "Infinite Money (Cents - One's Digit)",
+          "address": "0x7C16"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

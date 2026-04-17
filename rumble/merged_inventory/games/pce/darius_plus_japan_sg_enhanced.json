@@ -1,0 +1,40 @@
+{
+  "system": "pce",
+  "normalized_title": "dariusplus",
+  "display_name": "Darius Plus (Japan) (SG Enhanced)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\NEC - PC Engine - TurboGrafx 16\\Darius Plus (Japan) (SG Enhanced).cht",
+      "total_cheat_rows": 4,
+      "raw_entry_count": 4,
+      "distinct_address_count": 4,
+      "sample_raw_entries": [
+        {
+          "code": "1f09c6:04",
+          "desc": "Infinite Lives",
+          "address": "0x1F09C6"
+        },
+        {
+          "code": "1f09b3:36",
+          "desc": "Invincibility",
+          "address": "0x1F09B3"
+        },
+        {
+          "code": "1f09be:23",
+          "desc": "Max Miss",
+          "address": "0x1F09BE"
+        },
+        {
+          "code": "1f09bc:23",
+          "desc": "Max Bomb",
+          "address": "0x1F09BC"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

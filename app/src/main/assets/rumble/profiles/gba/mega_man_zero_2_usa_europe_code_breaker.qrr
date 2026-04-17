@@ -1,0 +1,10 @@
+game_name=Mega Man Zero 2 (USA, Europe) (Code Breaker)
+game_key=mega_man_zero_2_usa_europe_code_breaker
+system=gba
+integration_tier=contrib
+trigger	life_lost_lives_02036bb4	life_lost	0x02036BB4	1	uint	little	prev > curr	0.8	1	left:0.900:300;right:0.900:300
+trigger	life_gained_lives_02036bb4	life_gained	0x02036BB4	1	uint	little	prev < curr	0.8	1	left:0.750:180;right:0.750:180
+trigger	damage_taken_health_02037d94	damage_taken	0x02037D94	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02037d94	death	0x02037D94	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600
+trigger	damage_taken_health_02037eed	damage_taken	0x02037EED	1	uint	little	prev > curr	0.8	1	left:0.850:90
+trigger	death_health_02037eed	death	0x02037EED	1	uint	little	prev > 0 && curr == 0	0.8	1	left:1.000:600;right:1.000:600

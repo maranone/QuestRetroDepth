@@ -4,14 +4,15 @@
 //
 // FORMAT:
 //   Chars 0-4  — base block:
-//     [0]  all 5 bools packed: layers_3d(1)+upscale(2)+ambilight(4)+passthrough(8)+depthmap(16)
+//     [0]  all 5 bools packed: layers_3d(1)+upscale(2)+ambilight(4)+passthrough(8)+depthmap_legacy(16)
 //              → value 0–31, fits in base-36
 //     [1]  gamma       [0.5..2.0] step 0.1  → base-36 index (0–15)
 //     [2]  contrast    [0.5..2.0] step 0.1  → base-36 index (0–15)
 //     [3]  saturation  [0.0..2.0] step 0.1  → base-36 index (0–20)
 //     [4]  brightness  [0.5..2.0] step 0.1  → base-36 index (0–15)
 //
-//   Optional Char 5 — SNES layer-filter mode (0-3) when present.
+//   New optional Char 5 — depth_mode (0=OFF, 1=LAYER, 2=BBOX).
+//   Optional next char — SNES layer-filter mode (0-3) when present.
 //   Remaining chars — per-layer block (2 chars per layer, N layers):
 //     [0]  layer_order index  0–35          → base-36
 //     [1]  flags: enabled(1) + ambilight(2) → 0–3
@@ -62,11 +63,12 @@ static inline std::string vr_state_encode(
     int layer_filter_mode = -1)
 {
     char base[6];
+    const bool depthmap_legacy = vs.depth_mode == DepthMode::WholeLayer;
     int flags = (vs.layers_3d  ?  1 : 0)
               | (vs.upscale    ?  2 : 0)
               | (vs.ambilight  ?  4 : 0)
               | (vs.shadows    ?  8 : 0)
-              | (vs.depthmap   ? 16 : 0);
+              | (depthmap_legacy ? 16 : 0);
     base[0] = int_to_b36(flags);
     base[1] = int_to_b36(float_to_idx(vs.gamma,      0.5f, 0.1f));
     base[2] = int_to_b36(float_to_idx(vs.contrast,   0.5f, 0.1f));
@@ -75,6 +77,8 @@ static inline std::string vr_state_encode(
     base[5] = '\0';
 
     std::string code(base);
+
+    code += int_to_b36((int)vs.depth_mode);
 
     if (!cfg) return code;
 
@@ -118,9 +122,14 @@ static inline bool vr_state_decode(
 
     int n = cfg ? (int)cfg->layers.size() : 0;
     const int expected_old = 5 + 2 * n;
+    const int expected_old_filter = 6 + 2 * n;
     const int expected_new = 6 + 2 * n;
-    const bool has_filter_mode = layer_filter_mode && (int)s.size() == expected_new;
-    if ((int)s.size() != expected_old && !has_filter_mode) return false;
+    const int expected_new_filter = 7 + 2 * n;
+    const bool old_no_filter = (int)s.size() == expected_old;
+    const bool old_with_filter = layer_filter_mode && (int)s.size() == expected_old_filter;
+    const bool new_no_filter = (int)s.size() == expected_new && (!layer_filter_mode || n == 0);
+    const bool new_with_filter = layer_filter_mode && (int)s.size() == expected_new_filter;
+    if (!old_no_filter && !old_with_filter && !new_no_filter && !new_with_filter) return false;
 
     int gc      = b36_to_int(s[0]); if (gc < 0 || gc > 31) return false;
     int i_gamma = b36_to_int(s[1]); if (i_gamma < 0)        return false;
@@ -133,7 +142,7 @@ static inline bool vr_state_decode(
     vs.upscale      = (gc &  2) != 0;
     vs.ambilight    = (gc &  4) != 0;
     vs.shadows      = (gc &  8) != 0;
-    vs.depthmap     = (gc & 16) != 0;
+    vs.depth_mode   = (gc & 16) != 0 ? DepthMode::WholeLayer : DepthMode::Off;
     vs.solid_stack  = false;
     vs.gamma        = idx_to_float(i_gamma, 0.5f, 0.1f, 2.0f);
     vs.contrast     = idx_to_float(i_con,   0.5f, 0.1f, 2.0f);
@@ -142,14 +151,21 @@ static inline bool vr_state_decode(
     vs.roundness    = 0.0f;
     vs.screen_curve = 0.0f;
 
+    int base_pos = 5;
+    if (new_no_filter || new_with_filter) {
+        const int depth_mode = b36_to_int(s[5]);
+        if (depth_mode < 0 || depth_mode > 2) return false;
+        vs.depth_mode = (DepthMode)depth_mode;
+        base_pos = 6;
+    }
+
     if (n == 0) return true;
 
-    int base_pos = 5;
-    if (has_filter_mode) {
-        const int mode = b36_to_int(s[5]);
+    if (old_with_filter || new_with_filter) {
+        const int mode = b36_to_int(s[base_pos]);
         if (mode < 0) return false;
         *layer_filter_mode = mode;
-        base_pos = 6;
+        ++base_pos;
     } else if (layer_filter_mode) {
         *layer_filter_mode = -1;
     }

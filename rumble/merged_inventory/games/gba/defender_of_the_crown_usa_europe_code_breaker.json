@@ -1,0 +1,118 @@
+{
+  "system": "gba",
+  "normalized_title": "defenderofcrown",
+  "display_name": "Defender of the Crown (USA, Europe) (Code Breaker)",
+  "aliases": [],
+  "sources": {
+    "libretro_database": {
+      "path": "libretro_database\\cht\\Nintendo - Game Boy Advance\\Defender of the Crown (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1000064C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200064C"
+        },
+        {
+          "code": "83001150",
+          "desc": "Infinite Cash",
+          "address": "0x02001150"
+        },
+        {
+          "code": "73001ACA",
+          "desc": "Infinite Health (1 On 1 Combat)",
+          "address": "0x02001ACA"
+        },
+        {
+          "code": "33001AC4",
+          "desc": "Infinite Health (1 On 1 Combat)",
+          "address": "0x02001AC4"
+        },
+        {
+          "code": "73001AEA",
+          "desc": "Weak Enemies (1 On 1 Combat)",
+          "address": "0x02001AEA"
+        },
+        {
+          "code": "33001AF0",
+          "desc": "Weak Enemies (1 On 1 Combat)",
+          "address": "0x02001AF0"
+        },
+        {
+          "code": "33004EBC",
+          "desc": "Infinite Boulders",
+          "address": "0x02004EBC"
+        },
+        {
+          "code": "33004E9C",
+          "desc": "Infinite Greek Fires",
+          "address": "0x02004E9C"
+        },
+        {
+          "code": "33004F08",
+          "desc": "Infinite Diseases",
+          "address": "0x02004F08"
+        }
+      ]
+    },
+    "bobwin": {
+      "path": "bobwin\\gba\\Defender of the Crown (USA, Europe) (Code Breaker).cht",
+      "total_cheat_rows": 7,
+      "raw_entry_count": 9,
+      "distinct_address_count": 9,
+      "sample_raw_entries": [
+        {
+          "code": "1000064C",
+          "desc": "Enable Code (Must Be On)",
+          "address": "0x0200064C"
+        },
+        {
+          "code": "83001150",
+          "desc": "Infinite Cash",
+          "address": "0x02001150"
+        },
+        {
+          "code": "73001ACA",
+          "desc": "Infinite Health (1 On 1 Combat)",
+          "address": "0x02001ACA"
+        },
+        {
+          "code": "33001AC4",
+          "desc": "Infinite Health (1 On 1 Combat)",
+          "address": "0x02001AC4"
+        },
+        {
+          "code": "73001AEA",
+          "desc": "Weak Enemies (1 On 1 Combat)",
+          "address": "0x02001AEA"
+        },
+        {
+          "code": "33001AF0",
+          "desc": "Weak Enemies (1 On 1 Combat)",
+          "address": "0x02001AF0"
+        },
+        {
+          "code": "33004EBC",
+          "desc": "Infinite Boulders",
+          "address": "0x02004EBC"
+        },
+        {
+          "code": "33004E9C",
+          "desc": "Infinite Greek Fires",
+          "address": "0x02004E9C"
+        },
+        {
+          "code": "33004F08",
+          "desc": "Infinite Diseases",
+          "address": "0x02004F08"
+        }
+      ]
+    }
+  },
+  "recommended_primary_source": "libretro_database",
+  "notes": [
+    "Only cheat-address style raw entries available."
+  ]
+}

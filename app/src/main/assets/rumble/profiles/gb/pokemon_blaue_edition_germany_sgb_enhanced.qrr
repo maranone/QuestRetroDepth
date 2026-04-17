@@ -1,0 +1,5 @@
+game_name=Pokemon - Blaue Edition (Germany) (SGB Enhanced)
+game_key=pokemon_blaue_edition_germany_sgb_enhanced
+system=gb
+integration_tier=contrib
+trigger	level_complete_level_dede	level_complete	0xDEDE	1	uint	little	prev != curr	0.65	1	left:0.800:400;right:0.800:400
