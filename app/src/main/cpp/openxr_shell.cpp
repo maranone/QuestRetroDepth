@@ -2,6 +2,7 @@
 #include "button_map.h"
 #include "experimental_rumble.h"
 #include "panel_layout.h"
+#include "presentation_shared.h"
 #include "settings_io.h"
 #include "vr_state_code.h"
 
@@ -1489,7 +1490,7 @@ static OpenXrShell::QuickLayerPreset make_default_quick_layer_preset(const GameC
 static OpenXrShell::QuickSettingsPreset make_default_quick_settings_preset(BackendKind kind,
                                                                            const GameConfig& config) {
     OpenXrShell::QuickSettingsPreset preset;
-    const VrState defaults = default_vr_state_for_backend(kind);
+    const VrState defaults = presentation::default_vr_state_for_backend(kind);
     preset.name = "Default";
     preset.canvas_x = 0.0f;
     preset.canvas_y = 0.0f;
@@ -1751,12 +1752,12 @@ void OpenXrShell::apply_layer_filter_mode(LayerFilterMode mode, bool restore_sav
         m_layer_enabled = m_saved_layer_mode_state.enabled;
         m_layer_ambilight = m_saved_layer_mode_state.ambilight;
     } else {
-        m_config = default_config_for_backend(m_current_backend_kind, mode);
+        m_config = presentation::default_config_for_backend(m_current_backend_kind, (int)mode);
         m_layer_order.clear();
         m_layer_enabled.clear();
         m_layer_ambilight.clear();
     }
-    ensure_layer_runtime_state_matches_config(
+    presentation::ensure_layer_runtime_state_matches_config(
         m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     sync_layer_capture_mask();
     refresh_quick_layer_presets();
@@ -1784,8 +1785,8 @@ bool OpenXrShell::start(JavaVM* vm, JNIEnv* env, jobject activity, bool open_men
 
     m_layer_filter_mode = LayerFilterMode::Hybrid;
     m_saved_layer_mode_state.valid = false;
-    m_vr_state    = default_vr_state_for_backend(m_current_backend_kind);
-    m_config      = default_config_for_backend(m_current_backend_kind, m_layer_filter_mode);
+    m_vr_state    = presentation::default_vr_state_for_backend(m_current_backend_kind);
+    m_config      = presentation::default_config_for_backend(m_current_backend_kind, (int)m_layer_filter_mode);
     m_presets     = make_default_vr_presets();
     m_quick_settings_presets = make_quick_settings_presets();
     {
@@ -1806,7 +1807,7 @@ bool OpenXrShell::start(JavaVM* vm, JNIEnv* env, jobject activity, bool open_men
     m_autoload_latest_save_pending = false;
     m_request_open_menu = false;
     m_request_open_homebrew = false;
-    ensure_layer_runtime_state_matches_config(
+    presentation::ensure_layer_runtime_state_matches_config(
         m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     sync_layer_capture_mask();
 
@@ -3447,16 +3448,16 @@ void OpenXrShell::set_current_backend_kind(BackendKind kind) {
     if (!is_snes_filter_capable_config(m_config) && kind == BackendKind::Genesis) {
         m_layer_filter_mode = LayerFilterMode::Hybrid;
     }
-    m_vr_state = default_vr_state_for_backend(kind);
+    m_vr_state = presentation::default_vr_state_for_backend(kind);
     m_vr_state.vr_resolution_scale = snap_vr_resolution_scale(m_vr_state.vr_resolution_scale);
-    m_config = default_config_for_backend(kind, m_layer_filter_mode);
+    m_config = presentation::default_config_for_backend(kind, (int)m_layer_filter_mode);
     refresh_default_quick_settings_preset(m_current_backend_kind, m_config, m_quick_settings_presets);
     m_button_map = default_button_map_for_backend(kind);
     m_saved_layer_mode_state.valid = false;
     m_layer_order.clear();
     m_layer_enabled.clear();
     m_layer_ambilight.clear();
-    ensure_layer_runtime_state_matches_config(
+    presentation::ensure_layer_runtime_state_matches_config(
         m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     sync_layer_capture_mask();
     refresh_quick_layer_presets();
@@ -3595,10 +3596,10 @@ void OpenXrShell::enqueue_haptic(const QueuedHapticEvent& event) {
 
 void OpenXrShell::reset_settings() {
     const float prev_vr_scale = m_vr_state.vr_resolution_scale;
-    m_vr_state   = default_vr_state_for_backend(m_current_backend_kind);
+    m_vr_state   = presentation::default_vr_state_for_backend(m_current_backend_kind);
     m_vr_state.vr_resolution_scale = snap_vr_resolution_scale(m_vr_state.vr_resolution_scale);
     m_layer_filter_mode = LayerFilterMode::Hybrid;
-    m_config     = default_config_for_backend(m_current_backend_kind, m_layer_filter_mode);
+    m_config     = presentation::default_config_for_backend(m_current_backend_kind, (int)m_layer_filter_mode);
     refresh_default_quick_settings_preset(m_current_backend_kind, m_config, m_quick_settings_presets);
     m_button_map = default_button_map_for_backend(m_current_backend_kind);
     m_layer_auto_dup_percent = 75;
@@ -3607,7 +3608,7 @@ void OpenXrShell::reset_settings() {
     m_layer_order.clear();
     m_layer_enabled.clear();
     m_layer_ambilight.clear();
-    ensure_layer_runtime_state_matches_config(m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
+    presentation::ensure_layer_runtime_state_matches_config(m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     sync_layer_capture_mask();
     refresh_quick_layer_presets();
     if (m_on_vr_state_changed) m_on_vr_state_changed(m_vr_state.auto_frame_skip);
@@ -3893,14 +3894,14 @@ void OpenXrShell::load_settings(bool game_scope) {
         sniff_settings_layer_mode(path, sniffed_mode, sniffed_layers);
         if (is_snes_filter_capable_config(m_config)) {
             m_layer_filter_mode = sniffed_mode;
-            m_config = default_config_for_backend(m_current_backend_kind, m_layer_filter_mode);
+            m_config = presentation::default_config_for_backend(m_current_backend_kind, (int)m_layer_filter_mode);
         }
         if (!settings_load(path, m_vr_state, m_config, m_layer_order, m_layer_enabled, m_layer_ambilight,
                            &loaded_mode, &m_layer_auto_dup_percent, &loaded_rr, &loaded_rumble, &m_button_map,
                            m_current_backend_kind)) return;
         if (loaded_mode >= 0 && loaded_mode <= (int)LayerFilterMode::Hybrid && is_snes_filter_capable_config(m_config)) {
             m_layer_filter_mode = (LayerFilterMode)loaded_mode;
-            m_config = default_config_for_backend(m_current_backend_kind, m_layer_filter_mode);
+            m_config = presentation::default_config_for_backend(m_current_backend_kind, (int)m_layer_filter_mode);
             m_layer_order.clear();
             m_layer_enabled.clear();
             m_layer_ambilight.clear();
@@ -3913,7 +3914,7 @@ void OpenXrShell::load_settings(bool game_scope) {
             m_desired_refresh_rate = loaded_rr;
             m_apply_refresh_pending = true;
         }
-        ensure_layer_runtime_state_matches_config(
+        presentation::ensure_layer_runtime_state_matches_config(
             m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     } else {
         // Try exact match first (e.g., "Super Mario World (USA).ini")
@@ -3930,14 +3931,14 @@ void OpenXrShell::load_settings(bool game_scope) {
             sniff_settings_layer_mode(path, sniffed_mode, sniffed_layers);
             if (is_snes_filter_capable_config(m_config)) {
                 m_layer_filter_mode = sniffed_mode;
-                m_config = default_config_for_backend(m_current_backend_kind, m_layer_filter_mode);
+                m_config = presentation::default_config_for_backend(m_current_backend_kind, (int)m_layer_filter_mode);
             }
             loaded = settings_load(path, m_vr_state, m_config, m_layer_order, m_layer_enabled,
                                    m_layer_ambilight, &loaded_mode, &m_layer_auto_dup_percent, nullptr, &loaded_rumble, &m_button_map,
                                    m_current_backend_kind);
             if (loaded && loaded_mode >= 0 && loaded_mode <= (int)LayerFilterMode::Hybrid && is_snes_filter_capable_config(m_config)) {
                 m_layer_filter_mode = (LayerFilterMode)loaded_mode;
-                m_config = default_config_for_backend(m_current_backend_kind, m_layer_filter_mode);
+                m_config = presentation::default_config_for_backend(m_current_backend_kind, (int)m_layer_filter_mode);
                 m_layer_order.clear();
                 m_layer_enabled.clear();
                 m_layer_ambilight.clear();
@@ -3969,7 +3970,7 @@ void OpenXrShell::load_settings(bool game_scope) {
                             sniff_settings_layer_mode(path, sniffed_mode, sniffed_layers);
                             if (is_snes_filter_capable_config(m_config)) {
                                 m_layer_filter_mode = sniffed_mode;
-                                m_config = default_config_for_backend(m_current_backend_kind, m_layer_filter_mode);
+                                m_config = presentation::default_config_for_backend(m_current_backend_kind, (int)m_layer_filter_mode);
                             }
                             loaded = settings_load(path, m_vr_state, m_config, m_layer_order,
                                                  m_layer_enabled, m_layer_ambilight,
@@ -3978,7 +3979,7 @@ void OpenXrShell::load_settings(bool game_scope) {
                             if (loaded && loaded_mode >= 0 && loaded_mode <= (int)LayerFilterMode::Hybrid
                                 && is_snes_filter_capable_config(m_config)) {
                                 m_layer_filter_mode = (LayerFilterMode)loaded_mode;
-                                m_config = default_config_for_backend(m_current_backend_kind, m_layer_filter_mode);
+                                m_config = presentation::default_config_for_backend(m_current_backend_kind, (int)m_layer_filter_mode);
                                 m_layer_order.clear();
                                 m_layer_enabled.clear();
                                 m_layer_ambilight.clear();
@@ -3996,7 +3997,7 @@ void OpenXrShell::load_settings(bool game_scope) {
         }
         if (!loaded) return; // no settings found
         m_experimental_rumble_enabled = loaded_rumble;
-        ensure_layer_runtime_state_matches_config(
+        presentation::ensure_layer_runtime_state_matches_config(
             m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     }
     sync_layer_capture_mask();
@@ -4528,7 +4529,7 @@ bool OpenXrShell::apply_quick_layer_preset(int idx, std::string& status_out) {
     m_layer_order = std::move(order);
     m_layer_enabled = std::move(enabled);
     m_layer_ambilight = std::move(ambi);
-    ensure_layer_runtime_state_matches_config(
+    presentation::ensure_layer_runtime_state_matches_config(
         m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     m_layer_panel_dirty = true;
     m_quick_panel_dirty = true;
@@ -6180,7 +6181,7 @@ void OpenXrShell::apply_pending_vr_changes() {
                 m_layer_order = std::move(decoded_order);
                 m_layer_enabled = std::move(decoded_enabled);
                 m_layer_ambilight = std::move(decoded_ambilight);
-                ensure_layer_runtime_state_matches_config(
+                presentation::ensure_layer_runtime_state_matches_config(
                     m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
                 sync_layer_capture_mask();
                 refresh_quick_layer_presets();
@@ -6389,7 +6390,7 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         }
     }
 
-    sync_cached_layer_geometry_from_config(m_cached_layer_frames, m_config);
+    presentation::sync_cached_layer_geometry_from_config(m_cached_layer_frames, m_config);
 
     // Keep runtime layer state aligned with the active config. This also repairs
     // legacy Genesis identity order during autoload paths that do not rebuild UI state.
@@ -6398,7 +6399,7 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         const std::vector<bool> prev_enabled = m_layer_enabled;
         const std::vector<bool> prev_ambilight = m_layer_ambilight;
         const std::size_t prev_name_count = m_layer_names.size();
-        ensure_layer_runtime_state_matches_config(
+        presentation::ensure_layer_runtime_state_matches_config(
             m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
         if (m_layer_order != prev_order ||
             m_layer_enabled != prev_enabled ||
@@ -6425,10 +6426,10 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         for (auto& lf : m_cached_layer_frames) m_render_layer_refs.push_back(&lf);
     }
 
-    apply_layer_auto_dup_visible(m_render_layer_refs, m_layer_auto_dup_percent);
-    compact_visible_layer_depths(m_render_layer_refs);
+    presentation::apply_layer_auto_dup_visible(m_render_layer_refs, m_layer_auto_dup_percent);
+    presentation::compact_visible_layer_depths(m_render_layer_refs);
     if (m_vr_state.perspective_comp) {
-        apply_perspective_comp_to_refs(m_render_layer_refs);
+        presentation::apply_perspective_comp_to_refs(m_render_layer_refs);
     } else {
         for (LayerFrame* lf : m_render_layer_refs) if (lf) lf->persp_comp_scale = 1.0f;
     }
@@ -6450,7 +6451,7 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         m_blackout_reveal_layer_ids.clear();
     } else if (frame_updated) {
         int bright_samples = 0;
-        const bool blackout_candidate = is_blackout_candidate(m_render_layer_refs, bright_samples);
+        const bool blackout_candidate = presentation::is_blackout_candidate(m_render_layer_refs, bright_samples);
         if (blackout_candidate) {
             ++m_blackout_candidate_frames;
             m_blackout_visible_frames = 0;
@@ -6516,10 +6517,10 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
             }
         }
         if (source_layer) {
-            build_environment_sphere_sample_from_layer(
+            presentation::build_environment_sample_from_layer(
                 *source_layer, m_vr_state.environment_sphere_mode, target_sample);
         }
-        smooth_environment_sphere_sample(m_environment_sphere_sample, target_sample, 0.15f);
+        presentation::smooth_environment_sample(m_environment_sphere_sample, target_sample, 0.15f);
     }
 
     // ---- Rebuild panel textures on GL thread (one per frame to avoid spike) ----
@@ -6867,7 +6868,7 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
             m_blackout_reveal_start_time = m_frame_predicted_time;
         }
     } else if (m_blackout_reveal_phase == BlackoutRevealPhase::RevealCooldown) {
-        render_canvas_scale *= blackout_reveal_pulse_scale(m_frame_predicted_time, m_blackout_reveal_start_time);
+        render_canvas_scale *= presentation::blackout_reveal_pulse_scale(m_frame_predicted_time, m_blackout_reveal_start_time);
         if ((m_frame_predicted_time - m_blackout_reveal_start_time) >= 120000000) {
             m_blackout_reveal_phase = BlackoutRevealPhase::Normal;
             m_blackout_reveal_start_time = 0;

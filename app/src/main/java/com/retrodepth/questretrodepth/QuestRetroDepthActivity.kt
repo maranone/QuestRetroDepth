@@ -8,6 +8,7 @@ import android.net.Uri
 import android.opengl.GLSurfaceView
 import android.os.Build
 import android.os.Bundle
+import android.os.Environment
 import android.os.Handler
 import android.os.Looper
 import android.provider.OpenableColumns
@@ -586,6 +587,12 @@ class QuestRetroDepthActivity : Activity() {
 
     private fun dp(value: Int): Int {
         return (value * resources.displayMetrics.density).toInt()
+    }
+
+    fun getSettingsDirectory(): String {
+        val dir = File(Environment.getExternalStorageDirectory(), "QuestRetroDepth/config")
+        if (dir.exists() || dir.mkdirs()) return dir.absolutePath
+        return File(getExternalFilesDir(null), "settings").apply { mkdirs() }.absolutePath
     }
 
     private external fun nativeStartMobile(activity: QuestRetroDepthActivity): String

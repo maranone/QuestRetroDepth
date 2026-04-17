@@ -8,6 +8,7 @@
 #include <vector>
 #include <chrono>
 #include <cctype>
+#include <cstring>
 #include <android/asset_manager_jni.h>
 #include <android/log.h>
 
@@ -21,6 +22,8 @@
 #include "layer_processor.h"
 #include "mat4.h"
 #include "openxr_shell.h"
+#include "presentation_shared.h"
+#include "settings_io.h"
 #include "vr_state.h"
 
 namespace {
@@ -306,17 +309,8 @@ bool frame_provider_for_vr(qrd::FrameOutput& out_frame, qrd::EmulatorInputState&
 static bool g_has_cached_frame = false;
 static qrd::FrameOutput g_cached_frame;
 
-struct MobileEnvironmentSample {
-    bool valid = false;
-    std::array<std::array<float, 4>, 12> bands{};
-};
-
-enum class MobileBlackoutRevealPhase {
-    Normal = 0,
-    BlackoutLatched,
-    RevealAnimating,
-    RevealCooldown,
-};
+using MobileEnvironmentSample = qrd::OpenXrShell::EnvironmentSphereSample;
+using MobileBlackoutRevealPhase = qrd::OpenXrShell::BlackoutRevealPhase;
 
 struct MobileRendererState {
     std::mutex mutex;
@@ -326,18 +320,24 @@ struct MobileRendererState {
     int surface_width = 0;
     int surface_height = 0;
     qrd::BackendKind backend_kind = qrd::BackendKind::Snes;
-    GameConfig config = GameConfig::make_default_snes();
+    GameConfig config = qrd::presentation::default_config_for_backend(qrd::BackendKind::Snes, 3);
     VrState vr_state{};
     qrd::FrameOutput cached_frame;
     uint64_t last_frame_seq = 0;
     std::vector<LayerFrame> layer_frames;
     std::vector<LayerFrame*> render_refs;
-    MobileEnvironmentSample environment_sample;
-    MobileBlackoutRevealPhase reveal_phase = MobileBlackoutRevealPhase::Normal;
+    qrd::OpenXrShell::EnvironmentSphereSample environment_sample;
+    qrd::OpenXrShell::BlackoutRevealPhase reveal_phase = qrd::OpenXrShell::BlackoutRevealPhase::Normal;
     int blackout_candidate_frames = 0;
     int blackout_visible_frames = 0;
     int64_t reveal_start_ns = 0;
     std::vector<std::string> reveal_layer_ids;
+    std::vector<std::string> layer_names;
+    std::vector<int> layer_order;
+    std::vector<bool> layer_enabled;
+    std::vector<bool> layer_ambilight;
+    int layer_auto_dup_percent = 75;
+    int snes_filter_mode = 3;
     float orbit_yaw = 0.0f;
     float orbit_pitch = 0.12f;
     float pan_x = 0.0f;
@@ -351,33 +351,130 @@ static int64_t monotonic_time_ns() {
 }
 
 static VrState default_mobile_vr_state(qrd::BackendKind kind) {
-    VrState vs;
-    vs.gamma = 1.1f;
-    vs.contrast = 1.1f;
-    vs.saturation = 0.75f;
-    vs.brightness = 1.0f;
-    vs.immersive_beta_enabled = false;
-    vs.layers_3d = false;
-    vs.depth_mode = DepthMode::Off;
-    vs.upscale = (kind == qrd::BackendKind::Gba || kind == qrd::BackendKind::Gb);
-    vs.shadows = false;
-    vs.ambilight = true;
-    vs.environment_sphere_mode = EnvironmentSphereMode::SkyOnly;
-    vs.perspective_comp = true;
-    vs.vr_resolution_scale = 1.0f;
-    return vs;
+    return qrd::presentation::default_vr_state_for_backend(kind);
 }
 
 static GameConfig default_game_config_for_backend(qrd::BackendKind kind) {
-    switch (kind) {
-    case qrd::BackendKind::Genesis: return GameConfig::make_default_genesis();
-    case qrd::BackendKind::Gba:     return GameConfig::make_default_gba();
-    case qrd::BackendKind::Gb:      return GameConfig::make_default_gb();
-    case qrd::BackendKind::Nes:     return GameConfig::make_default_nes();
-    case qrd::BackendKind::Pce:     return GameConfig::make_default_pce();
-    case qrd::BackendKind::Sms:     return GameConfig::make_default_sms();
-    default:                        return GameConfig::make_default_snes();
+    return qrd::presentation::default_config_for_backend(kind, 3);
+}
+
+static std::string get_settings_directory_from_activity(JNIEnv* env, jobject activity) {
+    if (!env || !activity) return {};
+    jclass cls = env->GetObjectClass(activity);
+    if (!cls) return {};
+    jmethodID mid = env->GetMethodID(cls, "getSettingsDirectory", "()Ljava/lang/String;");
+    std::string out;
+    if (mid) {
+        jstring js = (jstring)env->CallObjectMethod(activity, mid);
+        if (js) {
+            const char* cstr = env->GetStringUTFChars(js, nullptr);
+            if (cstr) {
+                out = cstr;
+                env->ReleaseStringUTFChars(js, cstr);
+            }
+            env->DeleteLocalRef(js);
+        }
+        if (env->ExceptionCheck()) env->ExceptionClear();
     }
+    env->DeleteLocalRef(cls);
+    return out;
+}
+
+static const char* mobile_backend_settings_subdir(qrd::BackendKind kind) {
+    switch (kind) {
+    case qrd::BackendKind::Genesis: return "genesis";
+    case qrd::BackendKind::Nes:     return "nes";
+    case qrd::BackendKind::Gba:     return "gba";
+    case qrd::BackendKind::Gb:      return "gb";
+    case qrd::BackendKind::Pce:     return "pce";
+    case qrd::BackendKind::Sms:     return "sms";
+    default:                        return "snes";
+    }
+}
+
+static bool mobile_sniff_settings_layer_mode(const std::string& path, int& mode_out) {
+    FILE* f = fopen(path.c_str(), "r");
+    if (!f) return false;
+    mode_out = 3;
+    int num_layers_out = -1;
+    char line[256];
+    while (fgets(line, sizeof(line), f)) {
+        char* eq = strchr(line, '=');
+        if (!eq) continue;
+        *eq = '\0';
+        const char* key = line;
+        const char* val = eq + 1;
+        if (strcmp(key, "layer_filter_mode") == 0) {
+            const int mode = atoi(val);
+            if (mode >= 0 && mode <= 3) mode_out = mode;
+        } else if (strcmp(key, "num_layers") == 0) {
+            num_layers_out = atoi(val);
+        }
+    }
+    fclose(f);
+    if (num_layers_out == 11) mode_out = 1;
+    else if (num_layers_out == 16) mode_out = 0;
+    return true;
+}
+
+static void mobile_load_shared_settings_locked(JNIEnv* env, jobject activity, qrd::BackendKind kind) {
+    const std::string root_dir = get_settings_directory_from_activity(env, activity);
+    if (root_dir.empty()) return;
+    const std::string system_dir = root_dir + "/" + mobile_backend_settings_subdir(kind);
+    std::string path = system_dir + "/global.ini";
+    FILE* f = fopen(path.c_str(), "r");
+    if (!f) {
+        path = root_dir + "/global.ini";
+        f = fopen(path.c_str(), "r");
+    }
+    if (!f) return;
+    fclose(f);
+
+    int sniffed_mode = 3;
+    mobile_sniff_settings_layer_mode(path, sniffed_mode);
+    g_mobile_renderer.snes_filter_mode = sniffed_mode;
+    g_mobile_renderer.config = qrd::presentation::default_config_for_backend(kind, sniffed_mode);
+    g_mobile_renderer.vr_state = qrd::presentation::default_vr_state_for_backend(kind);
+    g_mobile_renderer.layer_names.clear();
+    g_mobile_renderer.layer_order.clear();
+    g_mobile_renderer.layer_enabled.clear();
+    g_mobile_renderer.layer_ambilight.clear();
+    qrd::presentation::ensure_layer_runtime_state_matches_config(
+        g_mobile_renderer.config,
+        g_mobile_renderer.layer_names,
+        g_mobile_renderer.layer_order,
+        g_mobile_renderer.layer_enabled,
+        g_mobile_renderer.layer_ambilight);
+
+    settings_load(
+        path,
+        g_mobile_renderer.vr_state,
+        g_mobile_renderer.config,
+        g_mobile_renderer.layer_order,
+        g_mobile_renderer.layer_enabled,
+        g_mobile_renderer.layer_ambilight,
+        &g_mobile_renderer.snes_filter_mode,
+        &g_mobile_renderer.layer_auto_dup_percent);
+
+    if (kind == qrd::BackendKind::Snes) {
+        g_mobile_renderer.config = qrd::presentation::default_config_for_backend(kind, g_mobile_renderer.snes_filter_mode);
+        settings_load(
+            path,
+            g_mobile_renderer.vr_state,
+            g_mobile_renderer.config,
+            g_mobile_renderer.layer_order,
+            g_mobile_renderer.layer_enabled,
+            g_mobile_renderer.layer_ambilight,
+            nullptr,
+            &g_mobile_renderer.layer_auto_dup_percent);
+    }
+
+    qrd::presentation::ensure_layer_runtime_state_matches_config(
+        g_mobile_renderer.config,
+        g_mobile_renderer.layer_names,
+        g_mobile_renderer.layer_order,
+        g_mobile_renderer.layer_enabled,
+        g_mobile_renderer.layer_ambilight);
 }
 
 static std::vector<int> mobile_default_layer_order_for_config(const GameConfig& config) {
@@ -632,17 +729,29 @@ static Mat4 make_look_at_matrix(float eye_x, float eye_y, float eye_z,
 
 static void mobile_reset_render_config_locked(qrd::BackendKind kind) {
     g_mobile_renderer.backend_kind = kind;
+    g_mobile_renderer.snes_filter_mode = 3;
     g_mobile_renderer.config = default_game_config_for_backend(kind);
     g_mobile_renderer.vr_state = default_mobile_vr_state(kind);
     g_mobile_renderer.layer_frames.clear();
     g_mobile_renderer.render_refs.clear();
     g_mobile_renderer.last_frame_seq = 0;
     g_mobile_renderer.environment_sample = {};
-    g_mobile_renderer.reveal_phase = MobileBlackoutRevealPhase::Normal;
+    g_mobile_renderer.reveal_phase = qrd::OpenXrShell::BlackoutRevealPhase::Normal;
     g_mobile_renderer.blackout_candidate_frames = 0;
     g_mobile_renderer.blackout_visible_frames = 0;
     g_mobile_renderer.reveal_start_ns = 0;
     g_mobile_renderer.reveal_layer_ids.clear();
+    g_mobile_renderer.layer_names.clear();
+    g_mobile_renderer.layer_order.clear();
+    g_mobile_renderer.layer_enabled.clear();
+    g_mobile_renderer.layer_ambilight.clear();
+    g_mobile_renderer.layer_auto_dup_percent = 75;
+    qrd::presentation::ensure_layer_runtime_state_matches_config(
+        g_mobile_renderer.config,
+        g_mobile_renderer.layer_names,
+        g_mobile_renderer.layer_order,
+        g_mobile_renderer.layer_enabled,
+        g_mobile_renderer.layer_ambilight);
 }
 
 } // namespace
@@ -680,7 +789,8 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeLoadRom(
     std::string rom_path = raw ? raw : "";
     env->ReleaseStringUTFChars(path, raw);
 
-    auto* backend = ensure_backend(detect_backend_kind_from_path(rom_path));
+    const qrd::BackendKind kind = detect_backend_kind_from_path(rom_path);
+    auto* backend = ensure_backend(kind);
     if (!backend) return make_jstring(env, "Backend creation failed.");
 
     std::string error;
@@ -696,8 +806,11 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeLoadRom(
     }
     {
         std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
-        mobile_reset_render_config_locked(detect_backend_kind_from_path(rom_path));
+        mobile_reset_render_config_locked(kind);
         g_mobile_renderer.cached_frame = frame;
+        if (g_activity_global) {
+            mobile_load_shared_settings_locked(env, g_activity_global, kind);
+        }
     }
     g_last_status = "ROM loaded\n\n" + rom_path + "\n\n" + backend->backend_name();
     start_emu_thread();
@@ -774,6 +887,7 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeStartMobile(
     {
         std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
         mobile_reset_render_config_locked(g_last_working_backend_kind.value_or(qrd::BackendKind::Snes));
+        mobile_load_shared_settings_locked(env, activity, g_mobile_renderer.backend_kind);
     }
     start_emu_thread();
     g_last_status = "Mobile renderer ready.";
@@ -883,53 +997,55 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileDrawFr
             &frame,
             build_object_boxes);
 
-        mobile_sync_cached_layer_geometry_from_config(g_mobile_renderer.layer_frames, g_mobile_renderer.config);
+        qrd::presentation::sync_cached_layer_geometry_from_config(g_mobile_renderer.layer_frames, g_mobile_renderer.config);
+        qrd::presentation::ensure_layer_runtime_state_matches_config(
+            g_mobile_renderer.config,
+            g_mobile_renderer.layer_names,
+            g_mobile_renderer.layer_order,
+            g_mobile_renderer.layer_enabled,
+            g_mobile_renderer.layer_ambilight);
         g_mobile_renderer.render_refs.clear();
-        const std::vector<int> order = mobile_default_layer_order_for_config(g_mobile_renderer.config);
-        g_mobile_renderer.render_refs.reserve(order.size());
-        for (int idx : order) {
-            if (idx < 0 || idx >= (int)g_mobile_renderer.layer_frames.size()) continue;
-            auto& lf = g_mobile_renderer.layer_frames[idx];
-            lf.contrib_ambilight = true;
-            g_mobile_renderer.render_refs.push_back(&lf);
+        const std::vector<int>& order = g_mobile_renderer.layer_order;
+        g_mobile_renderer.render_refs.reserve(g_mobile_renderer.layer_frames.size());
+        if (!order.empty() && order.size() == g_mobile_renderer.layer_frames.size()) {
+            for (int idx : order) {
+                if (idx < 0 || idx >= (int)g_mobile_renderer.layer_frames.size()) continue;
+                if (idx < (int)g_mobile_renderer.layer_enabled.size() && !g_mobile_renderer.layer_enabled[idx]) continue;
+                auto& lf = g_mobile_renderer.layer_frames[idx];
+                lf.contrib_ambilight = (idx < (int)g_mobile_renderer.layer_ambilight.size())
+                    ? (bool)g_mobile_renderer.layer_ambilight[idx] : true;
+                g_mobile_renderer.render_refs.push_back(&lf);
+            }
+        } else {
+            for (auto& lf : g_mobile_renderer.layer_frames) {
+                lf.contrib_ambilight = true;
+                g_mobile_renderer.render_refs.push_back(&lf);
+            }
         }
-        mobile_apply_layer_auto_dup_visible(g_mobile_renderer.render_refs, 75);
-        mobile_compact_visible_layer_depths(g_mobile_renderer.render_refs);
+        qrd::presentation::apply_layer_auto_dup_visible(
+            g_mobile_renderer.render_refs,
+            g_mobile_renderer.layer_auto_dup_percent);
+        qrd::presentation::compact_visible_layer_depths(g_mobile_renderer.render_refs);
         if (g_mobile_renderer.vr_state.perspective_comp) {
-            mobile_apply_perspective_comp_to_refs(g_mobile_renderer.render_refs);
+            qrd::presentation::apply_perspective_comp_to_refs(g_mobile_renderer.render_refs);
         } else {
             for (LayerFrame* lf : g_mobile_renderer.render_refs) if (lf) lf->persp_comp_scale = 1.0f;
         }
 
-        int bright_samples = 0;
-        const bool blackout_candidate = mobile_is_blackout_candidate(g_mobile_renderer.render_refs, bright_samples);
-        if (blackout_candidate) {
-            ++g_mobile_renderer.blackout_candidate_frames;
-            g_mobile_renderer.blackout_visible_frames = 0;
-        } else {
-            g_mobile_renderer.blackout_candidate_frames = 0;
-            g_mobile_renderer.blackout_visible_frames = (bright_samples >= 8)
-                ? (g_mobile_renderer.blackout_visible_frames + 1) : 0;
-        }
-        if (g_mobile_renderer.reveal_phase == MobileBlackoutRevealPhase::Normal &&
-            g_mobile_renderer.blackout_candidate_frames >= 2) {
-            g_mobile_renderer.reveal_phase = MobileBlackoutRevealPhase::BlackoutLatched;
-        } else if (g_mobile_renderer.reveal_phase == MobileBlackoutRevealPhase::BlackoutLatched &&
-                   g_mobile_renderer.blackout_visible_frames >= 2) {
-            g_mobile_renderer.reveal_layer_ids.clear();
-            for (const LayerFrame* lf : g_mobile_renderer.render_refs) {
-                if (!lf || !lf->has_pixels) continue;
-                g_mobile_renderer.reveal_layer_ids.push_back(lf->id);
-            }
-            if (g_mobile_renderer.reveal_layer_ids.size() >= 2) {
-                g_mobile_renderer.reveal_phase = MobileBlackoutRevealPhase::RevealAnimating;
-                g_mobile_renderer.reveal_start_ns = monotonic_time_ns();
-            } else {
-                g_mobile_renderer.reveal_phase = MobileBlackoutRevealPhase::Normal;
-            }
-        }
+        int reveal_phase = (int)g_mobile_renderer.reveal_phase;
+        qrd::presentation::update_blackout_reveal_state(
+            reveal_phase,
+            g_mobile_renderer.blackout_candidate_frames,
+            g_mobile_renderer.blackout_visible_frames,
+            g_mobile_renderer.reveal_start_ns,
+            g_mobile_renderer.reveal_layer_ids,
+            !g_mobile_renderer.render_refs.empty(),
+            true,
+            g_mobile_renderer.render_refs,
+            monotonic_time_ns());
+        g_mobile_renderer.reveal_phase = (qrd::OpenXrShell::BlackoutRevealPhase)reveal_phase;
 
-        MobileEnvironmentSample target_sample{};
+        qrd::OpenXrShell::EnvironmentSphereSample target_sample{};
         const LayerFrame* source_layer = nullptr;
         float source_depth = -1.0f;
         for (const LayerFrame* lf : g_mobile_renderer.render_refs) {
@@ -940,16 +1056,16 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileDrawFr
             }
         }
         if (source_layer) {
-            mobile_build_environment_sample_from_layer(
+            qrd::presentation::build_environment_sample_from_layer(
                 *source_layer, g_mobile_renderer.vr_state.environment_sphere_mode, target_sample);
         }
-        mobile_smooth_environment_sample(g_mobile_renderer.environment_sample, target_sample, 0.15f);
+        qrd::presentation::smooth_environment_sample(g_mobile_renderer.environment_sample, target_sample, 0.15f);
     }
 
     std::vector<LayerFrame*> render_refs = g_mobile_renderer.render_refs;
     float canvas_scale = g_mobile_renderer.zoom;
     const int64_t now_ns = monotonic_time_ns();
-    if (g_mobile_renderer.reveal_phase == MobileBlackoutRevealPhase::RevealAnimating) {
+    if (g_mobile_renderer.reveal_phase == qrd::OpenXrShell::BlackoutRevealPhase::RevealAnimating) {
         constexpr float kRevealDurationNs = 500000000.0f;
         const float progress = std::clamp((float)(now_ns - g_mobile_renderer.reveal_start_ns) / kRevealDurationNs, 0.0f, 1.0f);
         const int reveal_count = std::clamp((int)std::ceil(progress * (float)g_mobile_renderer.reveal_layer_ids.size()),
@@ -963,13 +1079,13 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileDrawFr
             if (it != g_mobile_renderer.reveal_layer_ids.begin() + reveal_count) render_refs.push_back(lf);
         }
         if (progress >= 1.0f) {
-            g_mobile_renderer.reveal_phase = MobileBlackoutRevealPhase::RevealCooldown;
+            g_mobile_renderer.reveal_phase = qrd::OpenXrShell::BlackoutRevealPhase::RevealCooldown;
             g_mobile_renderer.reveal_start_ns = now_ns;
         }
-    } else if (g_mobile_renderer.reveal_phase == MobileBlackoutRevealPhase::RevealCooldown) {
-        canvas_scale *= mobile_blackout_reveal_pulse_scale(now_ns, g_mobile_renderer.reveal_start_ns);
+    } else if (g_mobile_renderer.reveal_phase == qrd::OpenXrShell::BlackoutRevealPhase::RevealCooldown) {
+        canvas_scale *= qrd::presentation::blackout_reveal_pulse_scale(now_ns, g_mobile_renderer.reveal_start_ns);
         if ((now_ns - g_mobile_renderer.reveal_start_ns) >= 120000000LL) {
-            g_mobile_renderer.reveal_phase = MobileBlackoutRevealPhase::Normal;
+            g_mobile_renderer.reveal_phase = qrd::OpenXrShell::BlackoutRevealPhase::Normal;
             g_mobile_renderer.reveal_start_ns = 0;
             g_mobile_renderer.reveal_layer_ids.clear();
         }
@@ -989,8 +1105,8 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileDrawFr
 
     SkyDomeInfo environment_info{};
     const SkyDomeInfo* environment_ptr = nullptr;
-    if (g_mobile_renderer.reveal_phase != MobileBlackoutRevealPhase::BlackoutLatched &&
-        g_mobile_renderer.reveal_phase != MobileBlackoutRevealPhase::RevealAnimating &&
+    if (g_mobile_renderer.reveal_phase != qrd::OpenXrShell::BlackoutRevealPhase::BlackoutLatched &&
+        g_mobile_renderer.reveal_phase != qrd::OpenXrShell::BlackoutRevealPhase::RevealAnimating &&
         g_mobile_renderer.vr_state.environment_sphere_mode != EnvironmentSphereMode::Off &&
         g_mobile_renderer.environment_sample.valid) {
         environment_info.enabled = true;
