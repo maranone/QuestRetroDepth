@@ -18,6 +18,10 @@
 // backend's dimension check — GG frames are ignored here).
 static const int k_sms_w = 256;
 static const int k_sms_h = 192;
+static const int k_gg_x = 48;
+static const int k_gg_y = 48;
+static const int k_gg_w = 160;
+static const int k_gg_h = 144;
 
 static uint8_t s_buf[k_sms_w * k_sms_h];
 static int     s_valid = 0; // set after at least one frame has been captured
@@ -49,4 +53,27 @@ extern "C" const uint8_t* picodrive_sms_lc_get_visible_source(unsigned* out_w,
     *out_w = (unsigned)k_sms_w;
     *out_h = (unsigned)k_sms_h;
     return s_buf;
+}
+
+extern "C" int picodrive_sms_lc_copy_visible_source(uint8_t* dst,
+                                                     unsigned dst_w,
+                                                     unsigned dst_h)
+{
+    if (!s_valid || !dst) return 0;
+
+    if (dst_w == (unsigned)k_sms_w && dst_h == (unsigned)k_sms_h) {
+        memcpy(dst, s_buf, (size_t)k_sms_w * k_sms_h);
+        return 1;
+    }
+
+    if (dst_w == (unsigned)k_gg_w && dst_h == (unsigned)k_gg_h) {
+        for (int y = 0; y < k_gg_h; ++y) {
+            memcpy(dst + (size_t)y * k_gg_w,
+                   s_buf + (size_t)(y + k_gg_y) * k_sms_w + k_gg_x,
+                   k_gg_w);
+        }
+        return 1;
+    }
+
+    return 0;
 }

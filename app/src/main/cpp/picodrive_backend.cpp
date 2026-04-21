@@ -463,15 +463,14 @@ void PicoDriveBackend::handle_video_frame(const void* data, unsigned width, unsi
 
     // SMS / Game Gear: use per-pixel source IDs from Mode 4 renderer hook.
     // Only applies when frame dimensions match SMS (256×192); GG (160×144) falls back to FullFrame.
-    {
-        unsigned sms_w = 0, sms_h = 0;
-        const uint8_t* sms_src = picodrive_sms_lc_get_visible_source(&sms_w, &sms_h);
-        if (sms_src && sms_w == width && sms_h == height &&
-            m_frame.visible_source_id.size() == static_cast<std::size_t>(width) * height) {
-            std::memcpy(m_frame.visible_source_id.data(), sms_src,
-                        static_cast<std::size_t>(width) * height);
-        }
-    }
+      {
+          const std::size_t npix = static_cast<std::size_t>(width) * height;
+          if (m_frame.visible_source_id.size() == npix) {
+              if (!picodrive_sms_lc_copy_visible_source(m_frame.visible_source_id.data(), width, height)) {
+                  std::fill(m_frame.visible_source_id.begin(), m_frame.visible_source_id.end(), 0xFFu);
+              }
+          }
+      }
 
     update_layer_captures(width, height);
 }

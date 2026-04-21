@@ -119,6 +119,18 @@ static DepthMode cycle_depth_mode(DepthMode current, int dir) {
     return (DepthMode)idx;
 }
 
+static constexpr float k_parallax_steps[] = {0.0f, 0.05f, 0.1f, 0.25f, 0.5f, 1.0f};
+static constexpr int   k_parallax_step_count = 6;
+
+static const char* parallax_label(float r) {
+    if (r <= 0.0f)   return "OFF";
+    if (r < 0.075f)  return "1:0.05";
+    if (r < 0.175f)  return "1:0.1";
+    if (r < 0.375f)  return "1:0.25";
+    if (r < 0.75f)   return "1:0.5";
+    return "1:1";
+}
+
 static std::string compact_settings_target(std::string name, std::size_t max_len = 18) {
     for (char& c : name) {
         const unsigned char uc = static_cast<unsigned char>(c);
@@ -2149,7 +2161,16 @@ void OpenXrShell::mobile_tap(float u, float v) {
             case 2: m_vr_state.ambilight = !m_vr_state.ambilight; break;
             case 3: m_vr_state.environment_sphere_mode = (EnvironmentSphereMode)(((int)m_vr_state.environment_sphere_mode + (dir == 0 ? 1 : dir) + 3) % 3); break;
             case 4: m_vr_state.shadows = !m_vr_state.shadows; break;
-            case 5: m_vr_state.depth_mode = cycle_depth_mode(m_vr_state.depth_mode, dir == 0 ? 1 : dir); break;
+            case 5: {
+                int cur = 0;
+                for (int s = 0; s < k_parallax_step_count; ++s) {
+                    if (m_vr_state.parallax_ratio >= k_parallax_steps[s] - 0.01f) cur = s;
+                }
+                const int d = (dir == 0 ? 1 : dir);
+                cur = (cur + d + k_parallax_step_count) % k_parallax_step_count;
+                m_vr_state.parallax_ratio = k_parallax_steps[cur];
+                break;
+            }
             case 6:
                 m_experimental_rumble_enabled = !m_experimental_rumble_enabled;
                 if (m_on_experimental_rumble_changed) m_on_experimental_rumble_changed(m_experimental_rumble_enabled);
@@ -2167,7 +2188,7 @@ void OpenXrShell::mobile_tap(float u, float v) {
     };
 
     if (m_menu_open && m_active_sub_panel == 0) {
-        if (m_main_menu_layout.items.empty()) m_main_menu_layout = make_main_menu_layout(6);
+        if (m_main_menu_layout.items.empty()) m_main_menu_layout = make_main_menu_layout(5);
         const PanelLayoutItem* item = m_main_menu_layout.hit(u, v);
         if (!item) return;
         switch (item->row) {
@@ -2175,8 +2196,7 @@ void OpenXrShell::mobile_tap(float u, float v) {
             case 1: m_active_sub_panel = 4; refresh_save_state_slots(); m_save_state_panel_dirty = true; break;
             case 2: m_active_sub_panel = 3; m_settings_return_to_quick = false; m_settings_panel_dirty = true; break;
             case 3: m_active_sub_panel = 6; m_ctrlmap_mode = true; m_ctrlmap_panel_dirty = true; break;
-            case 4: open_homebrew_panel(true); return;
-            case 5:
+            case 4:
                 if (m_vm && m_activity_global) {
                     JNIEnv* env = nullptr;
                     bool detach = false;
@@ -2950,11 +2970,7 @@ void OpenXrShell::run() {
         if (first_frame_since_session && m_open_menu_on_startup.load()) {
             m_open_menu_on_startup = false;
             open_rom_menu();
-            // Freeze emulator while menu is open
-            EmuFreezeCtrl freeze_fn;
-            { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
-            if (freeze_fn) freeze_fn(true);
-            m_emu_frozen_display = true;
+            m_emu_frozen_display = false;
         }
         first_frame_since_session = false;
         if (!m_impl || !m_impl->session_running) {
@@ -3323,7 +3339,7 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     struct SettingDef { const char* name; bool is_bool; };
     static const SettingDef defs[k_settings_row_count] = {
         {"Curve Screen", true }, {"Upscale",      true },
-        {"Ambilight",    true }, {"Env Sphere",   false}, {"Passthrough",  true }, {"Depth Mode",   false},
+        {"Ambilight",    true }, {"Env Sphere",   false}, {"Passthrough",  true }, {"Parallax",     false},
         {"Experimental Rumble", true},
         {"Persp. Comp.", true},
         {"Gamma",        false}, {"Contrast",     false}, {"Saturation",   false},
@@ -3380,7 +3396,7 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     snprintf(val_bufs[2], sizeof(val_bufs[2]), "%s", m_vr_state.ambilight  ? "ON" : "OFF");
     snprintf(val_bufs[3], sizeof(val_bufs[3]), "%s", environment_sphere_mode_label(m_vr_state.environment_sphere_mode));
     snprintf(val_bufs[4], sizeof(val_bufs[4]), "%s", m_vr_state.shadows    ? "ON" : "OFF");
-    snprintf(val_bufs[5], sizeof(val_bufs[5]), "%s", depth_mode_label(m_vr_state.depth_mode));
+    snprintf(val_bufs[5], sizeof(val_bufs[5]), "%s", parallax_label(m_vr_state.parallax_ratio));
     snprintf(val_bufs[6], sizeof(val_bufs[6]), "%s", m_experimental_rumble_enabled ? rumble_status.c_str() : "OFF");
     snprintf(val_bufs[7], sizeof(val_bufs[7]), "%s", m_vr_state.perspective_comp ? "ON" : "OFF");
     snprintf(val_bufs[8], sizeof(val_bufs[8]), "%.2f", m_vr_state.gamma);
@@ -3861,10 +3877,9 @@ void OpenXrShell::rebuild_main_menu_texture() {
         "Save States",
         "Settings",
         "Mappings",
-        "Homebrew",
         "Exit"
     };
-    constexpr int k_item_count = 6;
+    constexpr int k_item_count = 5;
     m_main_menu_layout = make_main_menu_layout(k_item_count);
 
     jclass str_cls = env->FindClass("java/lang/String");
@@ -5325,19 +5340,12 @@ void OpenXrShell::poll_actions() {
                 m_menu_open     = false;
                 m_ctrlmap_mode  = false;
                 m_laser_hit     = false;
-                // Unfreeze emulator when closing menu
-                EmuFreezeCtrl freeze_fn;
-                { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
-                if (freeze_fn) freeze_fn(false);
                 m_emu_frozen_display = false;
             }
         } else {
             m_edit_mode = false; // exit edit mode when entering menu
             open_rom_menu();
-            // Freeze emulator while menu is open
-            EmuFreezeCtrl freeze_fn;
-            { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
-            if (freeze_fn) freeze_fn(true);
+            m_emu_frozen_display = false;
         }
         fire_haptic(false, 0.35f, 50); // left controller click feedback
     }
@@ -5524,7 +5532,7 @@ void OpenXrShell::poll_actions() {
             };
 
             if (best_panel == k_panel_main_menu) {
-                if (m_main_menu_layout.items.empty()) m_main_menu_layout = make_main_menu_layout(6);
+                if (m_main_menu_layout.items.empty()) m_main_menu_layout = make_main_menu_layout(5);
                 const PanelLayoutItem* item = assign_hit(m_main_menu_layout);
                 int row = item ? item->row : -1;
                 if (row != m_main_menu_hovered) m_main_menu_hovered = row;
@@ -5544,7 +5552,7 @@ void OpenXrShell::poll_actions() {
                 int row = item ? item->row : -1;
                 if (row != m_layer_panel_hovered) m_layer_panel_hovered = row;
             } else if (best_panel == k_panel_settings) {
-                if (m_settings_panel_layout.items.empty()) m_settings_panel_layout = make_settings_layout(19);
+                if (m_settings_panel_layout.items.empty()) m_settings_panel_layout = make_settings_layout(20);
                 const PanelLayoutItem* item = assign_hit(m_settings_panel_layout);
                 int row = item ? item->row : -1;
                 int area = 0;
@@ -5802,7 +5810,6 @@ void OpenXrShell::poll_actions() {
                         m_save_state_panel_hovered = -1;
                         refresh_save_state_slots();
                         m_save_state_panel_dirty = true;
-                        rebuild_save_state_panel_texture();
                         break;
                     case 2: // Settings → show settings panel (centered, no main menu)
                         m_active_sub_panel = 3;
@@ -5810,7 +5817,6 @@ void OpenXrShell::poll_actions() {
                         m_settings_return_to_quick = false;
                         m_settings_panel_pose = m_main_menu_pose;
                         m_settings_panel_dirty = true;
-                        rebuild_settings_panel_texture();
                         break;
                     case 3: // Mappings → show ctrlmap panel
                         m_active_sub_panel = 6;
@@ -5819,10 +5825,7 @@ void OpenXrShell::poll_actions() {
                         m_ctrlmap_selected_row = -1;
                         m_ctrlmap_panel_hovered = -1;
                         break;
-                    case 4: // Homebrew manager
-                        open_homebrew_panel(true);
-                        break;
-                    case 5: { // Exit → close app
+                    case 4: { // Exit → close app
                         m_menu_open     = false;
                         m_ctrlmap_mode  = false;
                         m_active_sub_panel = 0;
@@ -5895,14 +5898,12 @@ void OpenXrShell::poll_actions() {
                         m_settings_return_to_quick = true;
                         m_settings_panel_pose = m_quick_panel_pose;
                         m_settings_panel_dirty = true;
-                        rebuild_settings_panel_texture();
                         fire_haptic(true, 0.3f, 30);
                         break;
                     case PanelRole::QuickManualLayers:
                         m_active_sub_panel = 2;
                         m_layer_panel_pose = m_quick_panel_pose;
                         m_layer_panel_dirty = true;
-                        rebuild_layer_panel_texture();
                         fire_haptic(true, 0.3f, 30);
                         break;
                     default:
@@ -6083,10 +6084,17 @@ void OpenXrShell::poll_actions() {
                             ? (passthrough_active() ? "Passthrough ON" : "Passthrough unavailable on this OpenXR runtime.")
                             : "Passthrough OFF");
                         break;
-                    case 5:
-                        m_vr_state.depth_mode = cycle_depth_mode(m_vr_state.depth_mode, dir == 0 ? 1 : dir);
+                    case 5: {
+                        int cur = 0;
+                        for (int s = 0; s < k_parallax_step_count; ++s) {
+                            if (m_vr_state.parallax_ratio >= k_parallax_steps[s] - 0.01f) cur = s;
+                        }
+                        const int d = (dir == 0 ? 1 : dir);
+                        cur = (cur + d + k_parallax_step_count) % k_parallax_step_count;
+                        m_vr_state.parallax_ratio = k_parallax_steps[cur];
                         m_settings_panel_dirty = true;
                         break;
+                    }
                     case 6:
                         m_experimental_rumble_enabled = !m_experimental_rumble_enabled;
                         m_settings_panel_dirty = true;
@@ -6135,11 +6143,11 @@ void OpenXrShell::poll_actions() {
 
             int row = m_settings_panel_hovered;
             if (rtrig_rising && m_laser_hit && row >= 0) {
-                if ((row >= 0 && row <= 2) || row == 4 || row == 6 || row == 7) {
+                if ((row >= 0 && row <= 2) || row == 4 || row == 5 || row == 6 || row == 7) {
                     adjust_setting(row, 0);
                     fire_haptic(true, 0.3f, 25);
                     do_step_one();
-                } else if (row == 3 || row == 5) {
+                } else if (row == 3) {
                     if (m_settings_panel_area != 0) {
                         const int dir = (m_settings_panel_area == 1) ? -1 : 1;
                         adjust_setting(row, dir);
@@ -6631,20 +6639,11 @@ void OpenXrShell::apply_pending_vr_changes() {
     bool visual_change = false;
     if (m_request_open_menu.exchange(false)) {
         open_rom_menu();
-        EmuFreezeCtrl freeze_fn;
-        { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
-        if (freeze_fn) freeze_fn(true);
-        m_emu_frozen_display = true;
+        m_emu_frozen_display = false;
         visual_change = true;
     }
     if (m_request_open_homebrew.exchange(false)) {
-        open_rom_menu();
-        EmuFreezeCtrl freeze_fn;
-        { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
-        if (freeze_fn) freeze_fn(true);
-        m_emu_frozen_display = true;
-        open_homebrew_panel(true);
-        visual_change = true;
+        // Homebrew opening is currently disabled from the user-facing flow.
     }
     if (m_randomize_pending.exchange(false)) {
         m_vr_state.randomize(m_config, m_rng);
@@ -6978,6 +6977,53 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
             &m_cached_frame_out,
             build_object_boxes);
 
+        const bool visible_source_backend =
+            m_current_backend_kind == BackendKind::Nes ||
+            m_current_backend_kind == BackendKind::Gba ||
+            m_current_backend_kind == BackendKind::Gb ||
+            m_current_backend_kind == BackendKind::Pce ||
+            m_current_backend_kind == BackendKind::Sms;
+        if (visible_source_backend) {
+            bool any_visible_source_layer = false;
+            for (const auto& layer : m_cached_layer_frames) {
+                if (layer.has_pixels) {
+                    any_visible_source_layer = true;
+                    break;
+                }
+            }
+            if (!any_visible_source_layer) {
+                std::array<int, 8> source_counts{};
+                const std::size_t npix = static_cast<std::size_t>(m_cached_frame_out.width) * m_cached_frame_out.height;
+                const std::size_t count = std::min(npix, m_cached_frame_out.visible_source_id.size());
+                for (std::size_t i = 0; i < count; ++i) {
+                    const uint8_t src_id = m_cached_frame_out.visible_source_id[i];
+                    if (src_id < source_counts.size()) {
+                        source_counts[src_id]++;
+                    }
+                }
+                const char* backend_name = "visible-source";
+                switch (m_current_backend_kind) {
+                case BackendKind::Nes: backend_name = "NES"; break;
+                case BackendKind::Gba: backend_name = "GBA"; break;
+                case BackendKind::Gb:  backend_name = "GB/GBC"; break;
+                case BackendKind::Pce: backend_name = "PCE"; break;
+                case BackendKind::Sms: backend_name = "SMS/GG"; break;
+                default: break;
+                }
+                LOGE("%s layered extraction produced no visible layers for %ux%u frame; visible_source bytes=%zu counts=[0:%d 1:%d 2:%d 3:%d 4:%d 5:%d]",
+                     backend_name,
+                     m_cached_frame_out.width,
+                     m_cached_frame_out.height,
+                     m_cached_frame_out.visible_source_id.size(),
+                     source_counts[0],
+                     source_counts[1],
+                     source_counts[2],
+                     source_counts[3],
+                     source_counts[4],
+                     source_counts[5]);
+            }
+        }
+
         if (m_current_backend_kind == BackendKind::Genesis &&
             !m_cached_layer_frames.empty() &&
             m_cached_layer_frames[0].has_pixels) {
@@ -7140,20 +7186,15 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
 
     if (frame_updated) {
         EnvironmentSphereSample target_sample{};
-        const LayerFrame* source_layer = nullptr;
-        float source_depth = -1.0f;
-        for (const LayerFrame* lf : m_render_layer_refs) {
-            if (!lf || !lf->has_pixels || lf->width <= 0 || lf->height <= 0 || lf->rgba.empty()) continue;
-            if (lf->depth_meters >= source_depth) {
-                source_depth = lf->depth_meters;
-                source_layer = lf;
-            }
-        }
-        if (source_layer) {
-            presentation::build_environment_sample_from_layer(
-                *source_layer, m_vr_state.environment_sphere_mode, target_sample);
-        }
+        bool build_ok = presentation::build_environment_sample_from_visible_layers(
+            m_render_layer_refs, m_vr_state.environment_sphere_mode, target_sample);
         presentation::smooth_environment_sample(m_environment_sphere_sample, target_sample, 0.15f);
+        static int sky_build_log = 0;
+        if (++sky_build_log % 120 == 1) {
+            LOGE("SKY_DBG build_ok=%d target.valid=%d smooth.valid=%d refs=%zu mode=%d",
+                 (int)build_ok, (int)target_sample.valid, (int)m_environment_sphere_sample.valid,
+                 m_render_layer_refs.size(), (int)m_vr_state.environment_sphere_mode);
+        }
     }
 
     // ---- Rebuild panel textures on GL thread (one per frame to avoid spike) ----
@@ -7523,6 +7564,29 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         environment_info.bands = m_environment_sphere_sample.bands;
         environment_ptr = &environment_info;
     }
+    {
+        static int sky_gate_log = 0;
+        if (++sky_gate_log % 120 == 1) {
+            LOGE("SKY_DBG gate: pt=%d suppress=%d mode=%d valid=%d ptr=%s",
+                 (int)pt_active, (int)suppress_environment_sphere,
+                 (int)render_state.environment_sphere_mode,
+                 (int)m_environment_sphere_sample.valid,
+                 environment_ptr ? "SET" : "null");
+        }
+    }
+
+    // Parallax peek: compute per-eye-independent head offsets once before the loop.
+    float parallax_yaw = 0.0f, parallax_pitch = 0.0f;
+    if (m_vr_state.parallax_ratio > 0.0f) {
+        const XrQuaternionf& q = m_impl->last_hmd_pose.orientation;
+        const float siny  = 2.0f * (q.w * q.y + q.x * q.z);
+        const float cosy  = 1.0f - 2.0f * (q.y * q.y + q.x * q.x);
+        const float sinp  = 2.0f * (q.w * q.x - q.y * q.z);
+        const float hmd_yaw   = std::atan2f(siny, cosy);
+        const float hmd_pitch = std::asinf(std::clamp(sinp, -1.0f, 1.0f));
+        parallax_yaw   = (m_canvas_az - hmd_yaw)   * m_vr_state.parallax_ratio;
+        parallax_pitch = (hmd_pitch - m_canvas_el) * m_vr_state.parallax_ratio;
+    }
 
     // Render each eye
     for (int eye = 0; eye < 2; ++eye) {
@@ -7557,7 +7621,8 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
                                     overlay_active ? &overlay : nullptr,
                                     environment_ptr,
                                     bg_r, bg_g, bg_b, pt_active ? 0.0f : 1.0f,
-                                    pt_active);
+                                    pt_active,
+                                    parallax_yaw, parallax_pitch);
 
         XrSwapchainImageReleaseInfo ri{XR_TYPE_SWAPCHAIN_IMAGE_RELEASE_INFO};
         xrReleaseSwapchainImage(e.swapchain, &ri);

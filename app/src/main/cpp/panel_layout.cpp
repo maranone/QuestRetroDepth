@@ -162,7 +162,10 @@ PanelLayout make_settings_layout(int row_count) {
     const float row_h = clamp_row_h((1.0f - title_v) / (float)row_count, 52.0f / (float)m.tex_h, 96.0f / (float)m.tex_h);
     for (int i = 0; i < row_count; ++i) {
         add_row(layout, i, i, title_v + i * row_h, title_v + (i + 1) * row_h);
-        const bool has_step_buttons = (i == 4) || (i >= 6 && i <= 11);
+        const bool has_step_buttons =
+            (i == 3) ||     // Env Sphere
+            (i == 5) ||     // Depth Mode
+            (i >= 8 && i <= 13); // Gamma..VR Res Scale
         if (has_step_buttons) {
             layout.items.push_back({{0.0f, title_v + i * row_h, 0.20f, title_v + (i + 1) * row_h}, i, i, PanelRole::Minus});
             layout.items.push_back({{0.80f, title_v + i * row_h, 1.00f, title_v + (i + 1) * row_h}, i, i, PanelRole::Plus});

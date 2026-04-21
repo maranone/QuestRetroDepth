@@ -22,7 +22,7 @@ static bool ci_ends_with(const char* name, const char* ext) {
     if (nl < el) return false;
     const char* tail = name + nl - el;
     for (size_t i = 0; i < el; ++i)
-        if (tolower(tail[i]) != tolower(ext[i])) return false;
+        if (std::tolower((unsigned char)tail[i]) != std::tolower((unsigned char)ext[i])) return false;
     return true;
 }
 
@@ -51,29 +51,56 @@ static bool is_supported(const char* name) {
 // ---------------------------------------------------------------------------
 
 void RomBrowser::scan(const std::string& dir) {
-    if (m_root_dir.empty()) m_root_dir = dir;
-    scan_impl(dir);
+    if (!dir.empty()) {
+        if (m_root_dir.empty()) m_root_dir = dir;
+        scan_impl(dir);
+        return;
+    }
+    if (!m_current_dir.empty()) {
+        scan_impl(m_current_dir);
+        return;
+    }
+    if (!m_root_dir.empty()) {
+        scan_impl(m_root_dir);
+        return;
+    }
+    m_entries.clear();
+    m_hovered = 0;
+    m_scroll = 0;
+    m_dirty = true;
 }
 
 void RomBrowser::scan_impl(const std::string& dir) {
+    std::string effective_dir = dir;
+    if (effective_dir.empty()) {
+        if (!m_current_dir.empty()) effective_dir = m_current_dir;
+        else effective_dir = m_root_dir;
+    }
+
     m_entries.clear();
     m_hovered = 0;
     m_scroll  = 0;
     m_dirty   = true;
-    m_current_dir = dir;
+    m_current_dir = effective_dir;
+    if (m_root_dir.empty() && !effective_dir.empty()) m_root_dir = effective_dir;
 
     // "Back" entry when not at root
-    if (dir != m_root_dir) {
+    if (!effective_dir.empty() && effective_dir != m_root_dir) {
         RomEntry back;
         back.name   = ".. (Back)";
-        back.path   = dir;   // placeholder; enter_hovered() will compute parent
+        back.path   = effective_dir;   // placeholder; enter_hovered() will compute parent
         back.is_dir = true;
         m_entries.push_back(std::move(back));
     }
 
-    DIR* d = opendir(dir.c_str());
+    if (effective_dir.empty()) {
+        LOGI("scan_impl: empty path, nothing to scan");
+        return;
+    }
+
+    DIR* d = opendir(effective_dir.c_str());
     if (!d) {
-        LOGI("scan_impl: cannot open '%s'", dir.c_str());
+        LOGI("scan_impl: cannot open '%s'", effective_dir.c_str());
         return;
     }
 
@@ -86,13 +113,13 @@ void RomBrowser::scan_impl(const std::string& dir) {
         // DT_UNKNOWN: stat to determine type
         if (ent->d_type == DT_UNKNOWN) {
             struct stat st{};
-            std::string full = dir + "/" + ent->d_name;
+            std::string full = effective_dir + "/" + ent->d_name;
             if (stat(full.c_str(), &st) == 0) is_dir_entry = S_ISDIR(st.st_mode);
         }
 
         RomEntry e;
         e.name   = ent->d_name;
-        e.path   = dir + "/" + ent->d_name;
+        e.path   = effective_dir + "/" + ent->d_name;
         e.is_dir = is_dir_entry;
 
         if (is_dir_entry) {
@@ -111,7 +138,7 @@ void RomBrowser::scan_impl(const std::string& dir) {
     for (auto& e : files) m_entries.push_back(std::move(e));
 
     LOGI("scan_impl: %d dirs, %d ROMs in '%s'",
-         (int)dirs.size(), (int)files.size(), dir.c_str());
+         (int)dirs.size(), (int)files.size(), effective_dir.c_str());
 }
 
 // ---------------------------------------------------------------------------
@@ -170,11 +197,22 @@ bool RomBrowser::enter_hovered() {
         std::string parent = m_current_dir;
         auto slash = parent.rfind('/');
         if (slash != std::string::npos) parent = parent.substr(0, slash);
+        else parent.clear();
         // Don't go above root
         if (parent.size() < m_root_dir.size() || parent.empty()) parent = m_root_dir;
         scan_impl(parent);
     } else {
-        scan_impl(m_entries[idx].path);
+        std::string next = m_entries[idx].path;
+        if (next.empty()) {
+            next = m_current_dir;
+            if (!next.empty() && next.back() != '/') next += '/';
+            next += m_entries[idx].name;
+        } else if (next.front() != '/' && !m_current_dir.empty()) {
+            std::string abs = m_current_dir;
+            if (abs.back() != '/') abs += '/';
+            next = abs + next;
+        }
+        scan_impl(next);
     }
     return true;
 }

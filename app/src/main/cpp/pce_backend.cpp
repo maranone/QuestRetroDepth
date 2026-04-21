@@ -411,10 +411,17 @@ void PceBackend::handle_video_frame(
     // Copy the per-pixel visible-source IDs captured by the VDC hook
     unsigned vs_w = 0, vs_h = 0;
     const uint8_t* vs = pce_lc_get_visible_source(&vs_w, &vs_h);
-    if (vs && vs_w == width && vs_h == height &&
-        m_frame.visible_source_id.size() == static_cast<std::size_t>(width) * height) {
-        std::memcpy(m_frame.visible_source_id.data(), vs,
-                    static_cast<std::size_t>(width) * height);
+    const std::size_t npix = static_cast<std::size_t>(width) * height;
+    if (vs && m_frame.visible_source_id.size() == npix) {
+        if (vs_w == width && vs_h == height) {
+            std::memcpy(m_frame.visible_source_id.data(), vs, npix);
+        } else {
+            if (!pce_lc_copy_visible_source(m_frame.visible_source_id.data(), width, height)) {
+                std::fill(m_frame.visible_source_id.begin(), m_frame.visible_source_id.end(), 0xFFu);
+            }
+        }
+    } else if (m_frame.visible_source_id.size() == npix) {
+        std::fill(m_frame.visible_source_id.begin(), m_frame.visible_source_id.end(), 0xFFu);
     }
 
     // No separate per-layer RGBA captures — LayerProcessor uses VisibleSourceFinal

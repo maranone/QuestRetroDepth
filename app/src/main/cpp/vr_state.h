@@ -67,6 +67,10 @@ struct VrState {
     // the same visual angle as the nearest layer.
     bool perspective_comp = true;
 
+    // Parallax peek: head rotation shifts deeper layers proportionally.
+    // 0=off; steps: 0.25, 0.5, 1.0, 1.5, 2.0 (farthest-layer multiplier).
+    float parallax_ratio = 0.0f;
+
     // Performance settings
     bool  auto_frame_skip      = false; // let emulator decide to skip frames
     int   emu_resolution_scale = 1;     // emulator internal render scale (1-4)

@@ -25,6 +25,12 @@ void picodrive_sms_lc_capture_line(int scanline,
 const uint8_t* picodrive_sms_lc_get_visible_source(unsigned* out_w,
                                                     unsigned* out_h);
 
+/* Copies the last captured visible-source frame into a destination geometry.
+ * Supports SMS native 256x192 and GG crop 160x144 from the centered LCD area.
+ * Returns 1 on success, 0 otherwise.
+ */
+int picodrive_sms_lc_copy_visible_source(uint8_t* dst, unsigned dst_w, unsigned dst_h);
+
 #ifdef __cplusplus
 }
 #endif

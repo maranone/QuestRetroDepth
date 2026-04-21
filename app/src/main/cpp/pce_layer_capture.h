@@ -53,6 +53,12 @@ void pce_lc_capture_line(int row, int x_off, int width,
  *   Each byte: 0 = backdrop, 1 = bg_plane, 2 = sprite. */
 const uint8_t* pce_lc_get_visible_source(unsigned* out_w, unsigned* out_h);
 
+/* Copies the visible-source buffer into a destination frame size.
+ * Smaller outputs are taken as a centered crop of the internal VDC surface.
+ * Returns 1 when the copy succeeds, 0 otherwise.
+ */
+int pce_lc_copy_visible_source(uint8_t* dst, unsigned dst_w, unsigned dst_h);
+
 #ifdef __cplusplus
 }
 #endif

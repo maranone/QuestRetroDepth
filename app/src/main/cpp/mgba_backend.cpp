@@ -402,11 +402,19 @@ void MgbaBackend::handle_video_frame(
     ensure_frame_size(width, height);
     write_rgb565_frame(static_cast<const uint16_t*>(data), width, height, pitch);
 
-    // Copy the per-pixel visible-source IDs captured by the renderer hook
-    const uint8_t* vs = mgba_lc_get_visible_source();
+    // Copy the per-pixel visible-source IDs captured by the renderer hook.
+    // GBA and GB/GBC use distinct capture paths inside mGBA.
+    const uint8_t* vs = nullptr;
+    if (width == MGBA_GB_LC_W && height == MGBA_GB_LC_H) {
+        vs = mgba_gb_lc_get_visible_source();
+    } else {
+        vs = mgba_lc_get_visible_source();
+    }
     if (vs && m_frame.visible_source_id.size() == static_cast<std::size_t>(width) * height) {
         std::memcpy(m_frame.visible_source_id.data(), vs,
                     static_cast<std::size_t>(width) * height);
+    } else if (m_frame.visible_source_id.size() == static_cast<std::size_t>(width) * height) {
+        std::fill(m_frame.visible_source_id.begin(), m_frame.visible_source_id.end(), 0xFFu);
     }
 
     // No separate per-layer RGBA captures — LayerProcessor uses VisibleSourceFinal

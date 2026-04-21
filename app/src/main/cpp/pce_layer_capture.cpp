@@ -49,3 +49,17 @@ const uint8_t* pce_lc_get_visible_source(unsigned* out_w, unsigned* out_h) {
     if (out_h) *out_h = g_h;
     return &g_buf[0][0];
 }
+
+int pce_lc_copy_visible_source(uint8_t* dst, unsigned dst_w, unsigned dst_h) {
+    if (!dst || dst_w == 0 || dst_h == 0) return 0;
+    if (dst_w > PCE_LC_W || dst_h > PCE_LC_H) return 0;
+
+    const unsigned x_off = (PCE_LC_W - dst_w) / 2;
+    const unsigned y_off = (PCE_LC_H - dst_h) / 2;
+    for (unsigned y = 0; y < dst_h; ++y) {
+        std::memcpy(dst + static_cast<std::size_t>(y) * dst_w,
+                    &g_buf[y + y_off][x_off],
+                    dst_w);
+    }
+    return 1;
+}

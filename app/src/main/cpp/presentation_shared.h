@@ -385,6 +385,92 @@ inline bool build_environment_sample_from_layer(const LayerFrame& frame,
 }
 
 template <typename Sample>
+inline bool build_environment_sample_from_visible_layers(const std::vector<LayerFrame*>& frames,
+                                                         EnvironmentSphereMode mode,
+                                                         Sample& out_sample) {
+    out_sample.valid = false;
+    if (mode == EnvironmentSphereMode::Off) return false;
+
+    const LayerFrame* farthest_valid = nullptr;
+    float near_depth = 0.0f;
+    float far_depth = 0.0f;
+    bool have_depth_range = false;
+    int valid_layer_count = 0;
+
+    for (const LayerFrame* lf : frames) {
+        if (!lf || !lf->has_pixels || lf->width <= 0 || lf->height <= 0 || lf->rgba.empty()) continue;
+        if (!farthest_valid || lf->depth_meters > farthest_valid->depth_meters) {
+            farthest_valid = lf;
+        }
+        if (!have_depth_range) {
+            near_depth = far_depth = lf->depth_meters;
+            have_depth_range = true;
+        } else {
+            near_depth = std::min(near_depth, lf->depth_meters);
+            far_depth = std::max(far_depth, lf->depth_meters);
+        }
+        ++valid_layer_count;
+    }
+
+    if (!farthest_valid) return false;
+    if (mode != EnvironmentSphereMode::FullSphere || valid_layer_count <= 1) {
+        return build_environment_sample_from_layer(*farthest_valid, mode, out_sample);
+    }
+
+    constexpr int kBandCount = 12;
+    std::array<bool, kBandCount> valid{};
+    std::array<std::array<float, 5>, kBandCount> accum{};
+
+    for (const LayerFrame* lf : frames) {
+        if (!lf || !lf->has_pixels || lf->width <= 0 || lf->height <= 0 || lf->rgba.empty()) continue;
+
+        const float norm_depth = (far_depth > near_depth)
+            ? std::clamp((lf->depth_meters - near_depth) / (far_depth - near_depth), 0.0f, 1.0f)
+            : 1.0f;
+        const float layer_weight = 0.15f + 0.85f * std::pow(norm_depth, 1.5f);
+
+        for (int i = 0; i < kBandCount; ++i) {
+            const int y0 = (lf->height * i) / kBandCount;
+            const int y1 = (lf->height * (i + 1)) / kBandCount;
+            std::array<float, 4> band{};
+            if (!sample_environment_band(*lf, y0, std::max(y0 + 1, y1), band)) continue;
+            accum[i][0] += band[0] * layer_weight;
+            accum[i][1] += band[1] * layer_weight;
+            accum[i][2] += band[2] * layer_weight;
+            accum[i][3] += band[3] * layer_weight;
+            accum[i][4] += layer_weight;
+            valid[i] = true;
+        }
+    }
+
+    bool any_valid = false;
+    for (int i = 0; i < kBandCount; ++i) {
+        if (!valid[i] || accum[i][4] <= 0.0f) continue;
+        out_sample.bands[i] = {
+            std::clamp(accum[i][0] / accum[i][4], 0.0f, 1.0f),
+            std::clamp(accum[i][1] / accum[i][4], 0.0f, 1.0f),
+            std::clamp(accum[i][2] / accum[i][4], 0.0f, 1.0f),
+            std::clamp(accum[i][3] / accum[i][4], 0.0f, 1.0f),
+        };
+        any_valid = true;
+    }
+    if (!any_valid) return false;
+
+    for (int i = 0; i < kBandCount; ++i) {
+        if (valid[i]) continue;
+        int left = i - 1;
+        int right = i + 1;
+        while (left >= 0 && !valid[left]) --left;
+        while (right < kBandCount && !valid[right]) ++right;
+        if (left >= 0) out_sample.bands[i] = out_sample.bands[left];
+        else if (right < kBandCount) out_sample.bands[i] = out_sample.bands[right];
+    }
+
+    out_sample.valid = true;
+    return true;
+}
+
+template <typename Sample>
 inline void smooth_environment_sample(Sample& current, const Sample& target, float blend) {
     if (!target.valid) {
         for (auto& band : current.bands) band[3] *= (1.0f - blend);

@@ -11,6 +11,10 @@
 #include <mgba-util/math.h>
 #include <mgba-util/memory.h>
 
+#ifdef MGBA_QRD_LAYER_CAPTURE
+#include "mgba_layer_capture.h"
+#endif
+
 #define PAL_BG 0
 #define PAL_OBJ 0x20
 #define PAL_HIGHLIGHT 0x80
@@ -791,6 +795,21 @@ static void GBVideoSoftwareRendererDrawRange(struct GBVideoRenderer* renderer, i
 
 static void GBVideoSoftwareRendererFinishScanline(struct GBVideoRenderer* renderer, int y) {
 	struct GBVideoSoftwareRenderer* softwareRenderer = (struct GBVideoSoftwareRenderer*) renderer;
+
+#ifdef MGBA_QRD_LAYER_CAPTURE
+	if (y >= 0 && y < MGBA_GB_LC_H) {
+		int windowX = MGBA_GB_LC_W;
+		if (GBRegisterLCDCIsWindow(softwareRenderer->lcdc) &&
+		    softwareRenderer->hasWindow &&
+		    !softwareRenderer->d.disableWIN) {
+			windowX = softwareRenderer->wx + softwareRenderer->currentWx - 7;
+			if (windowX < 0) {
+				windowX = 0;
+			}
+		}
+		mgba_gb_lc_capture_scanline(softwareRenderer->row, y, windowX);
+	}
+#endif
 
 	softwareRenderer->lastX = 0;
 	softwareRenderer->currentWx = 0;

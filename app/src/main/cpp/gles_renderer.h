@@ -114,7 +114,9 @@ public:
                     float bg_g = 0.01f,
                     float bg_b = 0.02f,
                     float bg_a = 1.0f,
-                    bool passthrough_alpha = false);
+                    bool passthrough_alpha = false,
+                    float parallax_yaw   = 0.0f,
+                    float parallax_pitch = 0.0f);
 
     bool ok() const { return m_program != 0; }
 
@@ -209,6 +211,7 @@ private:
     GLint m_flat_u_vp    = -1;
     GLint m_flat_u_color = -1;
     GLint m_sky_u_proj   = -1;
+    GLint m_sky_u_view   = -1;
     GLint m_sky_u_bands  = -1;
     GLint m_sky_u_mode   = -1;
 
@@ -226,7 +229,7 @@ private:
     bool init_flat_program(std::string& err);
     bool init_sky_program(std::string& err);
     bool init_ui_program(std::string& err);
-    void draw_sky_dome(const Mat4& proj, const SkyDomeInfo& info);
+    void draw_sky_dome(const Mat4& view, const Mat4& proj, const SkyDomeInfo& info);
     void draw_ambilight(const std::vector<LayerFrame*>& frames,
                         const Mat4& vp, const VrState& state);
     void draw_shadow(const LayerFrame& frame, const Mat4& vp, const VrState& state);

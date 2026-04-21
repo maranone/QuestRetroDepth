@@ -22,6 +22,10 @@ extern "C" {
 #define MGBA_LC_W 240
 #define MGBA_LC_H 160
 
+/* GB/GBC screen dimensions */
+#define MGBA_GB_LC_W 160
+#define MGBA_GB_LC_H 144
+
 /* Number of logical layer capture sources:
  *   0-3 = BG0-BG3, 4 = OBJ, 5 = backdrop
  */
@@ -40,6 +44,22 @@ void mgba_lc_capture_scanline(const uint32_t* row, int y);
  *   MGBA_LC_H * MGBA_LC_W bytes, row-major.
  *   Each byte: 0-3 = BG0-BG3, 4 = OBJ, 5 = backdrop. */
 const uint8_t* mgba_lc_get_visible_source(void);
+
+/* Called from the GB/GBC software renderer once a composed scanline is ready.
+ * row:      GB renderer row[] values before palette lookup
+ * y:        scanline index [0, MGBA_GB_LC_H)
+ * window_x: first on-screen x position covered by the window, or >= MGBA_GB_LC_W
+ *           when the window is inactive for this scanline.
+ *
+ * Source IDs written into the GB/GBC visible-source buffer:
+ *   0 = BG, 1 = window, 4 = OBJ
+ */
+void mgba_gb_lc_capture_scanline(const uint16_t* row, int y, int window_x);
+
+/* Returns pointer to the GB/GBC visible_source_id buffer:
+ *   MGBA_GB_LC_H * MGBA_GB_LC_W bytes, row-major.
+ *   Each byte: 0 = BG, 1 = window, 4 = OBJ. */
+const uint8_t* mgba_gb_lc_get_visible_source(void);
 
 #ifdef __cplusplus
 }

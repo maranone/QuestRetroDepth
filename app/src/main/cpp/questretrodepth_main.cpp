@@ -239,6 +239,7 @@ static void emu_thread_main() {
     using Clock = std::chrono::steady_clock;
     auto deadline = Clock::now();
     static int log_ctr = 0;
+    static int perf_log_ctr = 0;
 
     while (!g_emu_stop.load(std::memory_order_relaxed)) {
         bool frozen   = g_emu_frozen.load(std::memory_order_acquire);
@@ -254,12 +255,16 @@ static void emu_thread_main() {
                     { std::lock_guard<std::mutex> il(g_input_write_mutex); inp = g_pending_input; }
 
                     std::string err;
+                    const auto step_start = Clock::now();
                     if (backend->step_frame(inp, err)) {
+                        const auto step_end = Clock::now();
+                        const float step_ms = std::chrono::duration<float, std::milli>(step_end - step_start).count();
                         const uint64_t rumble_now_ms = (uint64_t)std::chrono::duration_cast<std::chrono::milliseconds>(
                             std::chrono::steady_clock::now().time_since_epoch()).count();
                         const auto rumble_events = g_experimental_rumble.evaluate_frame(*backend, rumble_now_ms);
                         const auto& frame = backend->frame_output();
                         if (frame.width > 0 && !frame.rgba8888.empty()) {
+                            const auto publish_start = Clock::now();
                             {
                                 std::lock_guard<std::mutex> fl(g_frame_mutex);
                                 int back = 1 - g_frame_front.load(std::memory_order_relaxed);
@@ -268,8 +273,16 @@ static void emu_thread_main() {
                                 g_frame_seq.fetch_add(1, std::memory_order_release);
                                 g_has_frame.store(true, std::memory_order_release);
                             }
+                            const float publish_ms = std::chrono::duration<float, std::milli>(
+                                Clock::now() - publish_start).count();
                             if (log_ctr++ % 600 == 0)
                                 LOGI("emu_thread: %ux%u running", frame.width, frame.height);
+                            if (g_backend_kind.has_value() &&
+                                *g_backend_kind == qrd::BackendKind::Genesis &&
+                                (++perf_log_ctr % 120 == 0 || step_ms > 16.7f || publish_ms > 4.0f)) {
+                                LOGI("Genesis perf: step=%.2f ms publish_copy=%.2f ms frame=%ux%u layers=%zu",
+                                     step_ms, publish_ms, frame.width, frame.height, frame.layers.size());
+                            }
                         }
                         for (const auto& event : rumble_events) {
                             g_openxr_shell.enqueue_haptic(event);
@@ -309,15 +322,25 @@ static void stop_emu_thread() {
 // XR render thread: feed latest input, return latest completed frame immediately.
 bool frame_provider_for_vr(qrd::FrameOutput& out_frame, qrd::EmulatorInputState& input,
                            uint64_t& last_seen_seq) {
+    using Clock = std::chrono::steady_clock;
+    static int provider_perf_log_ctr = 0;
     { std::lock_guard<std::mutex> il(g_input_write_mutex); g_pending_input = input; }
     if (!g_has_frame.load(std::memory_order_acquire)) return false;
     const uint64_t seq = g_frame_seq.load(std::memory_order_acquire);
     if (seq != last_seen_seq) {
+        const auto copy_start = Clock::now();
         std::lock_guard<std::mutex> fl(g_frame_mutex);
         const uint64_t locked_seq = g_frame_seq.load(std::memory_order_acquire);
         int front = g_frame_front.load(std::memory_order_acquire);
         out_frame = g_frame_buf[front];
         last_seen_seq = locked_seq;
+        const float copy_ms = std::chrono::duration<float, std::milli>(Clock::now() - copy_start).count();
+        if (g_backend_kind.has_value() &&
+            *g_backend_kind == qrd::BackendKind::Genesis &&
+            (++provider_perf_log_ctr % 120 == 0 || copy_ms > 4.0f)) {
+            LOGI("Genesis perf: xr_frame_copy=%.2f ms frame=%ux%u layers=%zu",
+                 copy_ms, out_frame.width, out_frame.height, out_frame.layers.size());
+        }
     }
     return out_frame.width > 0 && !out_frame.rgba8888.empty();
 }
@@ -1226,19 +1249,10 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileDrawFr
         g_mobile_renderer.reveal_phase = (qrd::OpenXrShell::BlackoutRevealPhase)reveal_phase;
 
         qrd::OpenXrShell::EnvironmentSphereSample target_sample{};
-        const LayerFrame* source_layer = nullptr;
-        float source_depth = -1.0f;
-        for (const LayerFrame* lf : g_mobile_renderer.render_refs) {
-            if (!lf || !lf->has_pixels || lf->rgba.empty()) continue;
-            if (lf->depth_meters >= source_depth) {
-                source_depth = lf->depth_meters;
-                source_layer = lf;
-            }
-        }
-        if (source_layer) {
-            qrd::presentation::build_environment_sample_from_layer(
-                *source_layer, g_mobile_renderer.vr_state.environment_sphere_mode, target_sample);
-        }
+        qrd::presentation::build_environment_sample_from_visible_layers(
+            g_mobile_renderer.render_refs,
+            g_mobile_renderer.vr_state.environment_sphere_mode,
+            target_sample);
         qrd::presentation::smooth_environment_sample(g_mobile_renderer.environment_sample, target_sample, 0.15f);
     }
 

@@ -357,9 +357,10 @@ void main() {
 static const char* kSkyVS = R"GLSL(#version 300 es
 layout(location = 0) in vec3 aPos;
 uniform mat4 uProj;
+uniform mat4 uViewRot;
 out float vSphereY;
 void main() {
-    gl_Position = uProj * vec4(aPos, 1.0);
+    gl_Position = uProj * uViewRot * vec4(aPos, 1.0);
     vSphereY = clamp(aPos.y / 18.0, -1.0, 1.0);
 }
 )GLSL";
@@ -380,12 +381,17 @@ vec4 sampleBands(float t) {
 }
 
 void main() {
-    float t = vSphereY * 0.5 + 0.5;
+    float t = -vSphereY * 0.5 + 0.5;
     vec4 env = sampleBands(t);
     float abs_y = abs(vSphereY);
-    float horizon_fade = smoothstep(0.10, 0.35, abs_y);
-    float upper_boost = mix(0.70, 1.0, smoothstep(0.15, 1.0, max(vSphereY, 0.0)));
-    float alpha = env.a * horizon_fade * upper_boost;
+    float alpha = 0.0;
+    if (uMode == 2) {
+        alpha = env.a;
+    } else {
+        float horizon_fade = smoothstep(0.10, 0.35, abs_y);
+        float upper_boost = mix(0.70, 1.0, smoothstep(0.15, 1.0, max(vSphereY, 0.0)));
+        alpha = env.a * horizon_fade * upper_boost;
+    }
     if (uMode == 1 && vSphereY < 0.0) {
         alpha = 0.0;
     }
@@ -571,6 +577,7 @@ bool GlesRenderer::init_sky_program(std::string& err) {
     glDeleteShader(fs);
     if (!m_sky_prog) return false;
     m_sky_u_proj = glGetUniformLocation(m_sky_prog, "uProj");
+    m_sky_u_view = glGetUniformLocation(m_sky_prog, "uViewRot");
     m_sky_u_bands = glGetUniformLocation(m_sky_prog, "uBands[0]");
     m_sky_u_mode = glGetUniformLocation(m_sky_prog, "uMode");
     return true;
@@ -1154,10 +1161,22 @@ void GlesRenderer::draw_laser2(const OverlayInfo& ov, const Mat4& vp) {
     glBindVertexArray(0);
 }
 
-void GlesRenderer::draw_sky_dome(const Mat4& proj, const SkyDomeInfo& info) {
+void GlesRenderer::draw_sky_dome(const Mat4& view, const Mat4& proj, const SkyDomeInfo& info) {
+    {
+        static int sky_draw_log = 0;
+        if (++sky_draw_log % 120 == 1) {
+            LOGE("SKY_DBG draw_sky_dome: enabled=%d prog=%u vao=%u verts=%d mode=%d",
+                 (int)info.enabled, m_sky_prog, m_sky_vao, m_sky_vertex_count, (int)info.mode);
+        }
+    }
     if (!info.enabled || !m_sky_prog || !m_sky_vao || m_sky_vertex_count <= 0) return;
+    Mat4 view_rot = view;
+    view_rot.m[12] = 0.0f;
+    view_rot.m[13] = 0.0f;
+    view_rot.m[14] = 0.0f;
     glUseProgram(m_sky_prog);
     glUniformMatrix4fv(m_sky_u_proj, 1, GL_FALSE, proj.data());
+    glUniformMatrix4fv(m_sky_u_view, 1, GL_FALSE, view_rot.data());
     glUniform4fv(m_sky_u_bands, (GLsizei)info.bands.size(), info.bands[0].data());
     glUniform1i(m_sky_u_mode, info.mode == EnvironmentSphereMode::FullSphere ? 2 :
                               info.mode == EnvironmentSphereMode::SkyOnly ? 1 : 0);
@@ -1196,7 +1215,9 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
                                float bg_g,
                                float bg_b,
                                float bg_a,
-                               bool passthrough_alpha) {
+                               bool passthrough_alpha,
+                               float parallax_yaw,
+                               float parallax_pitch) {
     const Mat4 vp = Mat4::mul(proj, view);
 
     glBindFramebuffer(GL_FRAMEBUFFER, fbo.fbo);
@@ -1208,7 +1229,7 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     if (sky_dome && sky_dome->enabled) {
-        draw_sky_dome(proj, *sky_dome);
+        draw_sky_dome(view, proj, *sky_dome);
     }
 
     // Game layers (skip if no program or no frames, but still draw overlay below)
@@ -1320,6 +1341,19 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
     glBindVertexArray(immersive_active ? m_curve_vao : m_vao);
     glActiveTexture(GL_TEXTURE0);
 
+    // Parallax peek: compute depth range once for per-layer az/el offsets.
+    float parallax_min_d = 1e9f, parallax_depth_range = 0.0f;
+    if (parallax_yaw != 0.0f || parallax_pitch != 0.0f) {
+        float max_d = -1e9f;
+        for (const LayerFrame* fp : frames) {
+            if (!fp) continue;
+            parallax_min_d = std::min(parallax_min_d, fp->depth_meters);
+            max_d          = std::max(max_d,           fp->depth_meters);
+        }
+        if (max_d > parallax_min_d + 0.001f)
+            parallax_depth_range = max_d - parallax_min_d;
+    }
+
     // Build draw order: farthest layer first so depth buffer is populated from back
     // to front. Closer layers then pass GL_LESS and overwrite — transparent pixels
     // (discarded in the fragment shader) leave the farther depth intact.
@@ -1378,6 +1412,13 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
         } else {
             glUniform1f(u_subrect_enable, 0.0f);
             glUniform4f(u_subrect, 0.0f, 0.0f, 1.0f, 1.0f);
+        }
+
+        // Parallax peek: shift deeper layers toward current gaze direction.
+        if (parallax_depth_range > 0.0f) {
+            const float t = (fr.depth_meters - parallax_min_d) / parallax_depth_range;
+            glUniform1f(u_canvas_az, canvas_az + parallax_yaw   * t);
+            glUniform1f(u_canvas_el, canvas_el + parallax_pitch * t);
         }
 
         glUniform1f(u_instance_base, 0.0f);

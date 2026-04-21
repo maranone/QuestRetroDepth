@@ -98,6 +98,11 @@ class QuestRetroDepthActivity : QuestVrActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        startActivity(Intent(this, QuestVrActivity::class.java).apply {
+            putExtra("force_vr", true)
+        })
+        finish()
+        return
         setContentView(buildUi())
         statusView.text = nativeStartMobile(this)
         syncCamera()

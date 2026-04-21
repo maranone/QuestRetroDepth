@@ -49,11 +49,6 @@ open class QuestVrActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (javaClass != QuestVrActivity::class.java) return
-        if (!intent.getBooleanExtra("force_vr", false) && !supportsVrRuntime()) {
-            startActivity(Intent(this, QuestRetroDepthActivity::class.java))
-            finish()
-            return
-        }
 
         val root = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
@@ -118,14 +113,6 @@ open class QuestVrActivity : Activity() {
         setContentView(wrapper)
     }
 
-    private fun supportsVrRuntime(): Boolean {
-        val brand = Build.BRAND.lowercase(Locale.US)
-        val manufacturer = Build.MANUFACTURER.lowercase(Locale.US)
-        return (brand.contains("oculus") || brand.contains("meta") ||
-            manufacturer.contains("oculus") || manufacturer.contains("meta")) &&
-            packageManager.hasSystemFeature("android.hardware.vr.headtracking")
-    }
-
     override fun onResume() {
         super.onResume()
         if (javaClass != QuestVrActivity::class.java) return
@@ -141,8 +128,6 @@ open class QuestVrActivity : Activity() {
             val anyRomCandidate = findStartupRomCandidate()
             val startupCandidate = if (startupPrefs.loadLastSaveEnabled) anyRomCandidate else null
             val openMenuOnStartup = !startupPrefs.loadLastSaveEnabled || startupCandidate == null
-            val openHomebrewOnStartup =
-                anyRomCandidate == null && !prefs.getBoolean(PREF_HOME_BREW_ONBOARDING_DONE, false)
             statusView.text = nativeStartVr(
                 this,
                 openMenuOnStartup,
@@ -150,10 +135,6 @@ open class QuestVrActivity : Activity() {
                 startupPrefs.loadLastSaveEnabled
             )
             nativeSetHomebrewFeed(selectedHomebrewFeedIndex())
-            if (openHomebrewOnStartup) {
-                prefs.edit().putBoolean(PREF_HOME_BREW_ONBOARDING_DONE, true).apply()
-                nativeOpenHomebrew()
-            }
             if (startupPrefs.loadLastSaveEnabled && startupCandidate != null) {
                 autoLoadStartupRom(startupCandidate)
             }
@@ -1666,8 +1647,7 @@ open class QuestVrActivity : Activity() {
     }
 
     private fun createRomSubfolders(base: File) {
-        for (name in listOf("snes", "genesis", "nes", "gb", "gba", "gg", "pce", "32x",
-                            "atari2600", "n64", "ds", "saturn", "dreamcast", "arcade")) {
+        for (name in listOf("pce", "snes", "genesis", "sms", "nes", "gb", "gg", "gba", "gbc")) {
             File(base, name).mkdirs()
         }
     }
