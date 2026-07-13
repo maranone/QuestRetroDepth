@@ -1,3 +1,30 @@
+Quest Retro Depth Guide by: Gunstar Gamer
+
+Added Roms - Go to QuestRetroDepth - Roms. Add the correct system roms to the pre existing system folder.
+
+Turn off Auto Save for improved performance.
+On the left controller press the left menu button to bring up the main menu and go to the Save States menu. Turn off Auto Save. While your here you can choose to also turn off Load Last Save if you don't want to automatically load from your last save file when you start a game.
+
+Faster Game Selecting - When selecting roms pressing left or right lets you move faster through the games list.
+
+Recenter Screen - Pressing the right analog stick click in lets you recenter the screen.
+
+Quick Edit Menu left side
+Pressing the left analog click in button brings up the Quick Edit menu. On the right side of the menu their are different screen distance and position profiles. Clicking on Manual Edit allows you to set the screen where ever you want. Pressing up and down on the right analog stick lets you control the distance of the screen. On the right and left of your view is a detailed brake down of what each button does. You can make some really crazy and wild pop out effect playing around with these options.
+
+Return to Default Screen Size
+To return the game screen back to its original size click on Defaults in the quick edit menu and go back to the main menu and go to settings and click on Reset Settings.
+
+Quick Edit Manu right side
+On the right side of the Quick Edit menu their are different layer profiles you can switch between. You can also manually adjust layers. When manually adjusting layers you can turn on & off different layers and the ambient lighting. You can also grab different layers and move them around to different depth planes. For example you can grab the background layer and move that up to the 1st layer plane.
+
+Increase 3D Depth - To increase 3D Depth Go to the Quick Edit Menu and on the left side of the menu select Poster Left. Recenter the screen and go to the manual Edit mode. Pressing left and right will bring the layers closer or furter apart. You now have control over how much the characters and other elements pops out.
+
+Save Settings. When you get the screen setup the exactly the way you want it. You can go to the Main Menu - Settings. Click on Save (Name of game) Settings.
+
+
+
+
 # QuestRetroDepth
 
 QuestRetroDepth is a Meta Quest VR emulator experiment.
