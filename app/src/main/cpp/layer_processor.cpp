@@ -69,11 +69,64 @@ void LayerProcessor::prepare_frame(LayerFrame& f, const LayerConfig& lc, int w, 
     f.object_boxes.clear();
 }
 
+bool LayerProcessor::can_use_genesis_hybrid_fast_path(const qrd::FrameOutput* frame, int w, int h) const {
+    if (!frame || m_config.game != "genesis") return false;
+    const int layer_count = (int)m_config.layers.size();
+    if (layer_count <= 0 || (int)frame->layers.size() < layer_count) return false;
+    const std::size_t npix = static_cast<std::size_t>(w) * static_cast<std::size_t>(h);
+    if (frame->visible_source_id.size() < npix) return false;
+
+    for (int i = 0; i < layer_count; ++i) {
+        const auto& lc = m_config.layers[i];
+        if (lc.extraction_type != ExtractionType::VisibleSourceHybrid || lc.layer_index != i) return false;
+        if (frame->layers[i].rgba.size() < npix) return false;
+    }
+    return true;
+}
+
+void LayerProcessor::process_genesis_hybrid_fast(std::vector<LayerFrame>& result,
+                                                 const uint32_t* src,
+                                                 const qrd::FrameOutput* frame,
+                                                 int w, int h) {
+    const int layer_count = (int)m_config.layers.size();
+    const std::size_t npix = static_cast<std::size_t>(w) * static_cast<std::size_t>(h);
+    result.resize(layer_count);
+
+    for (int i = 0; i < layer_count; ++i) {
+        const auto& lc = m_config.layers[i];
+        auto& out = result[i];
+        prepare_frame(out, lc, w, h, true);
+        const auto& src_rgba = frame->layers[i].rgba;
+        if (!src_rgba.empty()) {
+            std::memcpy(out.rgba.data(), src_rgba.data(),
+                        std::min(out.rgba.size(), src_rgba.size()) * sizeof(uint8_t));
+        }
+    }
+
+    if (!src) return;
+    for (std::size_t i = 0; i < npix; ++i) {
+        const uint8_t src_id = frame->visible_source_id[i];
+        if (src_id >= (uint8_t)layer_count) continue;
+        LayerFrame& out = result[src_id];
+        to_rgba(src[i], out.rgba.data() + i * 4u);
+        out.rgba[i * 4u + 3u] = 255;
+    }
+}
+
 void LayerProcessor::process_into(std::vector<LayerFrame>& result,
                                   const uint32_t* src, int w, int h,
                                   const uint8_t* zbuf,
                                   const qrd::FrameOutput* frame,
                                   bool build_object_boxes) {
+    if (can_use_genesis_hybrid_fast_path(frame, w, h)) {
+        process_genesis_hybrid_fast(result, src, frame, w, h);
+        for (auto& frame_out : result) {
+            finalize_frame(frame_out);
+            if (build_object_boxes) compute_object_boxes(frame_out);
+        }
+        return;
+    }
+
     result.resize(m_config.layers.size());
 
     // Collect indices of ZBuffer layers so we can fill them in a single pass.

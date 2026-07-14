@@ -16,6 +16,7 @@ public:
     ~PicoDriveBackend() override;
 
     const char* backend_name() const override;
+    double frame_rate_hz() const override;
     bool load_content(const std::string& rom_path, std::string& error_out) override;
     bool step_frame(const EmulatorInputState& input, std::string& error_out) override;
     const FrameOutput& frame_output() const override;
@@ -55,6 +56,7 @@ private:
     bool m_auto_frame_skip = false;
     bool m_variables_dirty = false;
     uint32_t m_layer_capture_mask = 0x7Fu;
+    double m_frame_rate_hz = 60.0;
 };
 
 } // namespace qrd

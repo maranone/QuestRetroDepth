@@ -16,6 +16,7 @@ public:
     ~MgbaBackend() override;
 
     const char* backend_name() const override;
+    double frame_rate_hz() const override;
     bool load_content(const std::string& rom_path, std::string& error_out) override;
     bool step_frame(const EmulatorInputState& input, std::string& error_out) override;
     const FrameOutput& frame_output() const override;
@@ -47,6 +48,7 @@ private:
     bool                  m_game_loaded      = false;
     std::uint64_t         m_video_frame_count = 0;
     bool                  m_last_frame_had_visible_pixels = false;
+    double                m_frame_rate_hz = 59.7275;
 };
 
 } // namespace qrd

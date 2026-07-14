@@ -6,6 +6,7 @@
 #include <array>
 
 #define LOG_TAG "QrdGles"
+#define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
 #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
 
 // ---------------------------------------------------------------------------
@@ -762,6 +763,11 @@ void GlesRenderer::update_layer(int idx, const LayerFrame& frame) {
     if (frame.width <= 0 || frame.height <= 0 || frame.rgba.empty()) return;
     resize_layers(idx + 1);
     auto& lt = m_layers[idx];
+    if (lt.width == frame.width &&
+        lt.height == frame.height &&
+        lt.uploaded_revision == frame.content_revision) {
+        return;
+    }
     glBindTexture(GL_TEXTURE_2D, lt.tex);
     glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
     if (lt.width != frame.width || lt.height != frame.height) {
@@ -775,6 +781,7 @@ void GlesRenderer::update_layer(int idx, const LayerFrame& frame) {
                         frame.width, frame.height,
                         GL_RGBA, GL_UNSIGNED_BYTE, frame.rgba.data());
     }
+    lt.uploaded_revision = frame.content_revision;
     glMemoryBarrier(GL_TEXTURE_UPDATE_BARRIER_BIT);
     glBindTexture(GL_TEXTURE_2D, 0);
 }
@@ -1218,6 +1225,7 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
                                bool passthrough_alpha,
                                float parallax_yaw,
                                float parallax_pitch) {
+    using Clock = std::chrono::steady_clock;
     const Mat4 vp = Mat4::mul(proj, view);
 
     glBindFramebuffer(GL_FRAMEBUFFER, fbo.fbo);
@@ -1232,6 +1240,9 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
         draw_sky_dome(view, proj, *sky_dome);
     }
 
+    float upload_ms_total = 0.0f;
+    float draw_ms_total = 0.0f;
+    int uploaded_layers = 0;
     // Game layers (skip if no program or no frames, but still draw overlay below)
     if (m_program && !frames.empty()) {
 
@@ -1374,7 +1385,13 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
                                  fr.bbox_eligible &&
                                  !fr.object_boxes.empty();
 
+        const auto upload_start = Clock::now();
+        const std::uint64_t prev_revision = (i < (int)m_layers.size()) ? m_layers[i].uploaded_revision : 0;
         update_layer(i, fr);
+        upload_ms_total += std::chrono::duration<float, std::milli>(Clock::now() - upload_start).count();
+        if (i < (int)m_layers.size() && m_layers[i].uploaded_revision != prev_revision) {
+            ++uploaded_layers;
+        }
 
         const float qw = fr.quad_width_meters;
         const float qh = qw * (float)fr.height / (float)fr.width;
@@ -1444,6 +1461,7 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
             glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
         }
 
+        const auto draw_start = Clock::now();
         if (bbox_active) {
             // Draw per-object extrusion copies FIRST (they go deeper into the screen).
             // The original front face is drawn LAST so it composites on top — it is the
@@ -1492,7 +1510,17 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
                 glDrawArrays(GL_TRIANGLES, 0, layer_vertex_count);
             }
         }
+        draw_ms_total += std::chrono::duration<float, std::milli>(Clock::now() - draw_start).count();
 
+    }
+
+    static int genesis_render_log_ctr = 0;
+    const bool looks_like_genesis =
+        frames.size() == 7 && frames[0] != nullptr && frames[0]->id == "background";
+    if (looks_like_genesis &&
+        (++genesis_render_log_ctr % 240 == 0 || upload_ms_total > 2.0f || draw_ms_total > 6.0f)) {
+        LOGI("Genesis perf: xr_upload=%.2f ms xr_draw=%.2f ms uploaded_layers=%d visible_layers=%zu",
+             upload_ms_total, draw_ms_total, uploaded_layers, frames.size());
     }
 
     glBindVertexArray(0);

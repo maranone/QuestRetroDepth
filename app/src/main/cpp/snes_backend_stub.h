@@ -9,6 +9,7 @@ public:
     SnesBackendStub();
 
     const char* backend_name() const override;
+    double frame_rate_hz() const override { return 60.0988; }
     bool load_content(const std::string& rom_path, std::string& error_out) override;
     bool step_frame(const EmulatorInputState& input, std::string& error_out) override;
     const FrameOutput& frame_output() const override;

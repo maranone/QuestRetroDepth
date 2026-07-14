@@ -6948,6 +6948,8 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         }
     }
     if (!m_menu_open && m_cached_frame_out.width > 0 && m_cached_frame_out.height > 0 && frame_updated) {
+        using Clock = std::chrono::steady_clock;
+        const auto extraction_start = Clock::now();
         // Update dynamic z-splits every ~0.5s to track moving sprites
         static uint32_t s_histogram[256] = {};
         static int s_frame_skip = 0;
@@ -7066,6 +7068,22 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
                          m_cached_frame_out.width, m_cached_frame_out.height);
                 }
             }
+        }
+
+        for (auto& layer : m_cached_layer_frames) {
+            layer.content_revision = m_cached_frame_seq;
+        }
+
+        const float extraction_ms = std::chrono::duration<float, std::milli>(
+            Clock::now() - extraction_start).count();
+        static int genesis_extract_log_ctr = 0;
+        if (m_current_backend_kind == BackendKind::Genesis &&
+            (++genesis_extract_log_ctr % 120 == 0 || extraction_ms > 4.0f)) {
+            LOGI("Genesis perf: layer_extract=%.2f ms frame=%ux%u layers=%zu",
+                 extraction_ms,
+                 m_cached_frame_out.width,
+                 m_cached_frame_out.height,
+                 m_cached_layer_frames.size());
         }
     }
 

@@ -71,6 +71,7 @@ public:
     virtual ~EmulatorBackend() = default;
 
     virtual const char* backend_name() const = 0;
+    virtual double frame_rate_hz() const = 0;
     virtual bool load_content(const std::string& rom_path, std::string& error_out) = 0;
     virtual bool step_frame(const EmulatorInputState& input, std::string& error_out) = 0;
     virtual const FrameOutput& frame_output() const = 0;

@@ -16,6 +16,7 @@ public:
     ~SnesLibretroBackend() override;
 
     const char* backend_name() const override;
+    double frame_rate_hz() const override;
     bool load_content(const std::string& rom_path, std::string& error_out) override;
     bool step_frame(const EmulatorInputState& input, std::string& error_out) override;
     const FrameOutput& frame_output() const override;
@@ -57,6 +58,7 @@ private:
     uint32_t m_layer_capture_mask = 0x1Fu;
     mutable uint32_t m_z_histogram[256] = {};
     mutable bool m_histogram_valid = false;
+    double m_frame_rate_hz = 60.0988;
 };
 
 } // namespace qrd

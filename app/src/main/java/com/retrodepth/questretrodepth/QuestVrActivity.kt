@@ -13,6 +13,9 @@ import android.os.Looper
 import android.provider.Settings
 import android.util.Log
 import android.view.Gravity
+import android.view.InputDevice
+import android.view.KeyEvent
+import android.view.MotionEvent
 import android.widget.Button
 import android.widget.EditText
 import android.widget.FrameLayout
@@ -32,6 +35,75 @@ open class QuestVrActivity : Activity() {
 
     private var lastSavedRomFilename = ""
     private val prefs by lazy { getSharedPreferences("qrd_prefs", MODE_PRIVATE) }
+
+    // BT gamepad state — digital keys and hat/stick axes tracked separately so they
+    // can't cancel each other out (e.g. a centered stick won't clear a held dpad key).
+    private var btKeyUp = false; private var btKeyDown = false
+    private var btKeyLeft = false; private var btKeyRight = false
+    private var btAxisUp = false; private var btAxisDown = false
+    private var btAxisLeft = false; private var btAxisRight = false
+    private var btA = false; private var btB = false
+    private var btX = false; private var btY = false
+    private var btL = false; private var btR = false
+    private var btStart = false; private var btSelect = false
+
+    private fun syncBtInput() = nativeSetBtInputState(
+        btKeyUp || btAxisUp, btKeyDown || btAxisDown,
+        btKeyLeft || btAxisLeft, btKeyRight || btAxisRight,
+        btA, btB, btX, btY, btL, btR, btStart, btSelect
+    )
+
+    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+        if (updateBtKey(keyCode, true)) return true
+        return super.onKeyDown(keyCode, event)
+    }
+
+    override fun onKeyUp(keyCode: Int, event: KeyEvent?): Boolean {
+        if (updateBtKey(keyCode, false)) return true
+        return super.onKeyUp(keyCode, event)
+    }
+
+    private fun updateBtKey(keyCode: Int, pressed: Boolean): Boolean {
+        val handled = when (keyCode) {
+            KeyEvent.KEYCODE_DPAD_UP              -> { btKeyUp    = pressed; true }
+            KeyEvent.KEYCODE_DPAD_DOWN            -> { btKeyDown  = pressed; true }
+            KeyEvent.KEYCODE_DPAD_LEFT            -> { btKeyLeft  = pressed; true }
+            KeyEvent.KEYCODE_DPAD_RIGHT           -> { btKeyRight = pressed; true }
+            KeyEvent.KEYCODE_BUTTON_A             -> { btA        = pressed; true }
+            KeyEvent.KEYCODE_BUTTON_B             -> { btB        = pressed; true }
+            KeyEvent.KEYCODE_BUTTON_X             -> { btX        = pressed; true }
+            KeyEvent.KEYCODE_BUTTON_Y             -> { btY        = pressed; true }
+            KeyEvent.KEYCODE_BUTTON_L1            -> { btL        = pressed; true }
+            KeyEvent.KEYCODE_BUTTON_R1            -> { btR        = pressed; true }
+            KeyEvent.KEYCODE_BUTTON_L2            -> { btL        = pressed; true }
+            KeyEvent.KEYCODE_BUTTON_R2            -> { btR        = pressed; true }
+            KeyEvent.KEYCODE_BUTTON_START         -> { btStart    = pressed; true }
+            KeyEvent.KEYCODE_BUTTON_SELECT,
+            KeyEvent.KEYCODE_BUTTON_MODE          -> { btSelect   = pressed; true }
+            else -> false
+        }
+        if (handled) syncBtInput()
+        return handled
+    }
+
+    override fun onGenericMotionEvent(event: MotionEvent): Boolean {
+        val src = event.source
+        if (src and InputDevice.SOURCE_JOYSTICK == 0 &&
+            src and InputDevice.SOURCE_GAMEPAD  == 0) {
+            return super.onGenericMotionEvent(event)
+        }
+        val deadzone = 0.5f
+        val hatX  = event.getAxisValue(MotionEvent.AXIS_HAT_X)
+        val hatY  = event.getAxisValue(MotionEvent.AXIS_HAT_Y)
+        val stickX = event.getAxisValue(MotionEvent.AXIS_X)
+        val stickY = event.getAxisValue(MotionEvent.AXIS_Y)
+        btAxisLeft  = hatX < -deadzone || stickX < -deadzone
+        btAxisRight = hatX >  deadzone || stickX >  deadzone
+        btAxisUp    = hatY < -deadzone || stickY < -deadzone
+        btAxisDown  = hatY >  deadzone || stickY >  deadzone
+        syncBtInput()
+        return true
+    }
 
     private val statusPoll = object : Runnable {
         override fun run() {
@@ -446,6 +518,11 @@ open class QuestVrActivity : Activity() {
         super.onDestroy()
     }
 
+    private external fun nativeSetBtInputState(
+        up: Boolean, down: Boolean, left: Boolean, right: Boolean,
+        a: Boolean, b: Boolean, x: Boolean, y: Boolean,
+        l: Boolean, r: Boolean, start: Boolean, select: Boolean
+    )
     private external fun nativeStartVr(
         activity: Activity,
         openMenuOnStartup: Boolean,

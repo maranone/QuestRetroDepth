@@ -35,6 +35,7 @@ struct LayerFrame {
     // True when connected-component bounding boxes were extracted successfully.
     bool bbox_eligible = false;
     std::vector<ObjectBoundingBox> object_boxes;
+    std::uint64_t content_revision = 0;
 };
 
 // Slices a single RGBA frame into per-layer RGBA frames according to GameConfig.
@@ -107,4 +108,9 @@ private:
     static bool color_match(uint32_t src_pixel, const LayerConfig& lc);
     static void finalize_frame(LayerFrame& frame);
     static void compute_object_boxes(LayerFrame& frame);
+    bool can_use_genesis_hybrid_fast_path(const qrd::FrameOutput* frame, int w, int h) const;
+    void process_genesis_hybrid_fast(std::vector<LayerFrame>& result,
+                                     const uint32_t* src,
+                                     const qrd::FrameOutput* frame,
+                                     int w, int h);
 };

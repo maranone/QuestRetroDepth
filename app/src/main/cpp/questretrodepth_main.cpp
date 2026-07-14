@@ -204,6 +204,7 @@ static std::thread              g_emu_thread;
 static std::atomic<bool>        g_emu_stop{true};
 static std::mutex               g_input_write_mutex;
 static qrd::EmulatorInputState  g_pending_input;
+static qrd::EmulatorInputState  g_bt_input;      // BT gamepad, OR'd into Touch input each XR frame
 
 // Double buffer: emu thread writes back, XR thread reads front. FrameOutput
 // owns vectors, so publish/read must be guarded while copying.
@@ -218,21 +219,20 @@ static std::atomic<uint64_t>    g_frame_seq{0};
 static std::atomic<bool> g_emu_frozen{false};
 static std::atomic<bool> g_emu_step_one{false};
 static std::atomic<bool> g_auto_frame_skip{false};
+static std::atomic<int64_t> g_backend_frame_ns{16'639'267LL};
 
 static constexpr int64_t k_snes_frame_ns    = 16'639'267LL; // 1/60.0988 s (NTSC)
 static constexpr int64_t k_genesis_frame_ns = 16'666'667LL; // 60 Hz
 static constexpr int64_t k_gba_frame_ns     = 16'743'022LL; // 1/59.7275 s (GBA NTSC)
 
+static int64_t frame_ns_from_hz(double hz, int64_t fallback_ns) {
+    if (hz <= 0.0) return fallback_ns;
+    const double ns = 1'000'000'000.0 / hz;
+    return ns > 0.0 ? static_cast<int64_t>(ns + 0.5) : fallback_ns;
+}
+
 static int64_t current_backend_frame_ns() {
-    if (!g_backend_kind.has_value()) return k_snes_frame_ns;
-    switch (*g_backend_kind) {
-    case qrd::BackendKind::Genesis: return k_genesis_frame_ns;
-    case qrd::BackendKind::Gba:
-    case qrd::BackendKind::Gb:      return k_gba_frame_ns;
-    case qrd::BackendKind::Nes:     return k_snes_frame_ns;
-    case qrd::BackendKind::Pce:     return k_snes_frame_ns; // PCE NTSC ~59.82 Hz
-    default:                        return k_snes_frame_ns;
-    }
+    return g_backend_frame_ns.load(std::memory_order_acquire);
 }
 
 static void emu_thread_main() {
@@ -250,6 +250,8 @@ static void emu_thread_main() {
                 std::lock_guard<std::mutex> lock(g_backend_mutex);
                 auto* backend = ensure_backend(g_backend_kind.value_or(qrd::BackendKind::Snes));
                 if (backend) {
+                    const int64_t frame_ns = frame_ns_from_hz(backend->frame_rate_hz(), k_snes_frame_ns);
+                    g_backend_frame_ns.store(frame_ns, std::memory_order_release);
                     backend->set_auto_frame_skip(g_auto_frame_skip.load(std::memory_order_acquire));
                     qrd::EmulatorInputState inp;
                     { std::lock_guard<std::mutex> il(g_input_write_mutex); inp = g_pending_input; }
@@ -324,7 +326,22 @@ bool frame_provider_for_vr(qrd::FrameOutput& out_frame, qrd::EmulatorInputState&
                            uint64_t& last_seen_seq) {
     using Clock = std::chrono::steady_clock;
     static int provider_perf_log_ctr = 0;
-    { std::lock_guard<std::mutex> il(g_input_write_mutex); g_pending_input = input; }
+    {
+        std::lock_guard<std::mutex> il(g_input_write_mutex);
+        g_pending_input = input;
+        g_pending_input.dpad_up    |= g_bt_input.dpad_up;
+        g_pending_input.dpad_down  |= g_bt_input.dpad_down;
+        g_pending_input.dpad_left  |= g_bt_input.dpad_left;
+        g_pending_input.dpad_right |= g_bt_input.dpad_right;
+        g_pending_input.button_a   |= g_bt_input.button_a;
+        g_pending_input.button_b   |= g_bt_input.button_b;
+        g_pending_input.button_x   |= g_bt_input.button_x;
+        g_pending_input.button_y   |= g_bt_input.button_y;
+        g_pending_input.button_l   |= g_bt_input.button_l;
+        g_pending_input.button_r   |= g_bt_input.button_r;
+        g_pending_input.button_start  |= g_bt_input.button_start;
+        g_pending_input.button_select |= g_bt_input.button_select;
+    }
     if (!g_has_frame.load(std::memory_order_acquire)) return false;
     const uint64_t seq = g_frame_seq.load(std::memory_order_acquire);
     if (seq != last_seen_seq) {
@@ -1076,6 +1093,28 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeSetMobileInput
     g_pending_input.button_r = r == JNI_TRUE;
     g_pending_input.button_start = start == JNI_TRUE;
     g_pending_input.button_select = select == JNI_TRUE;
+}
+
+extern "C" JNIEXPORT void JNICALL
+Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeSetBtInputState(
+    JNIEnv*, jobject,
+    jboolean up, jboolean down, jboolean left, jboolean right,
+    jboolean a, jboolean b, jboolean x, jboolean y,
+    jboolean l, jboolean r, jboolean start, jboolean select)
+{
+    std::lock_guard<std::mutex> il(g_input_write_mutex);
+    g_bt_input.dpad_up    = up     == JNI_TRUE;
+    g_bt_input.dpad_down  = down   == JNI_TRUE;
+    g_bt_input.dpad_left  = left   == JNI_TRUE;
+    g_bt_input.dpad_right = right  == JNI_TRUE;
+    g_bt_input.button_a   = a      == JNI_TRUE;
+    g_bt_input.button_b   = b      == JNI_TRUE;
+    g_bt_input.button_x   = x      == JNI_TRUE;
+    g_bt_input.button_y   = y      == JNI_TRUE;
+    g_bt_input.button_l   = l      == JNI_TRUE;
+    g_bt_input.button_r   = r      == JNI_TRUE;
+    g_bt_input.button_start  = start  == JNI_TRUE;
+    g_bt_input.button_select = select == JNI_TRUE;
 }
 
 extern "C" JNIEXPORT void JNICALL

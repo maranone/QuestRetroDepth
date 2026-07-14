@@ -188,6 +188,10 @@ const char* SnesLibretroBackend::backend_name() const {
     return m_backend_name.c_str();
 }
 
+double SnesLibretroBackend::frame_rate_hz() const {
+    return m_frame_rate_hz;
+}
+
 bool SnesLibretroBackend::load_content(const std::string& rom_path, std::string& error_out) {
     reset_core();
 
@@ -219,8 +223,15 @@ bool SnesLibretroBackend::load_content(const std::string& rom_path, std::string&
     retro_system_av_info av_info{};
     retro_get_system_av_info(&av_info);
     update_geometry(av_info.geometry);
+    m_frame_rate_hz = (av_info.timing.fps > 0.0) ? av_info.timing.fps : 60.0988;
     g_audio_sample_rate = (av_info.timing.sample_rate > 0)
         ? (int)av_info.timing.sample_rate : 32000;
+    __android_log_print(ANDROID_LOG_INFO, kLogTag,
+                        "Snes9x AV: fps=%.4f sample_rate=%.1f geometry=%ux%u",
+                        m_frame_rate_hz,
+                        av_info.timing.sample_rate,
+                        av_info.geometry.base_width,
+                        av_info.geometry.base_height);
     open_aaudio_stream(g_audio_sample_rate);
 
     m_loaded_rom_path = rom_path;

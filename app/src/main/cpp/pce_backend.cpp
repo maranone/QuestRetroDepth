@@ -221,6 +221,8 @@ PceBackend::~PceBackend() {
 
 const char* PceBackend::backend_name() const { return m_backend_name.c_str(); }
 
+double PceBackend::frame_rate_hz() const { return m_frame_rate_hz; }
+
 bool PceBackend::load_content(const std::string& rom_path, std::string& error_out) {
     reset_core();
     if (rom_path.empty()) { error_out = "PCE: ROM path is empty."; return false; }
@@ -254,8 +256,15 @@ bool PceBackend::load_content(const std::string& rom_path, std::string& error_ou
     retro_system_av_info av_info{};
     pce_retro_get_system_av_info(&av_info);
     ensure_frame_size(av_info.geometry.base_width, av_info.geometry.base_height);
+    m_frame_rate_hz = (av_info.timing.fps > 0.0) ? av_info.timing.fps : 59.82;
     g_audio_sample_rate = (av_info.timing.sample_rate > 0.0)
         ? static_cast<int>(av_info.timing.sample_rate) : 44100;
+    __android_log_print(ANDROID_LOG_INFO, kLogTag,
+                        "PCE AV: fps=%.4f sample_rate=%.1f geometry=%ux%u",
+                        m_frame_rate_hz,
+                        av_info.timing.sample_rate,
+                        av_info.geometry.base_width,
+                        av_info.geometry.base_height);
     open_aaudio_stream(g_audio_sample_rate);
 
     m_loaded_rom_path = rom_path;

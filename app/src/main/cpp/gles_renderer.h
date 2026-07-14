@@ -54,6 +54,7 @@ struct LayerTex {
     GLuint tex    = 0;
     int    width  = 0;
     int    height = 0;
+    std::uint64_t uploaded_revision = 0;
 };
 
 // Per-eye resources: FBO + colour (from swapchain) + depth renderbuffer
