@@ -139,12 +139,13 @@ PanelLayout make_layers_layout(int layer_count, bool has_filter_row) {
     PanelLayout layout;
     layout.kind = PanelKind::Layers;
     const auto m = panel_metrics(layout.kind);
-    const int total = layer_count + 2 + (has_filter_row ? 1 : 0);
+    const int total = layer_count + 3 + (has_filter_row ? 1 : 0);
     if (total <= 0) return layout;
     const float title_v = 88.0f / (float)m.tex_h;
     const float row_h = std::max((1.0f - title_v) / (float)total, 56.0f / (float)m.tex_h);
     for (int i = 0; i < total; ++i) {
-        add_row(layout, i, i, title_v + i * row_h, title_v + (i + 1) * row_h);
+        const PanelRole row_role = (i == layer_count + 2) ? PanelRole::ResetDepths : PanelRole::Row;
+        layout.items.push_back({{0.0f, title_v + i * row_h, 1.0f, title_v + (i + 1) * row_h}, i, i, row_role});
         if (i < layer_count) {
             layout.items.push_back({{0.60f, title_v + i * row_h, 0.80f, title_v + (i + 1) * row_h}, i, i, PanelRole::Visibility});
             layout.items.push_back({{0.80f, title_v + i * row_h, 1.00f, title_v + (i + 1) * row_h}, i, i, PanelRole::Ambilight});

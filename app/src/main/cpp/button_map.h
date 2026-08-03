@@ -63,12 +63,54 @@ inline const char* genesis_button_name(int b) {
     }
 }
 
+inline const char* gba_button_name(int b) {
+    switch (b) {
+        case SNES_B:      return "B";
+        case SNES_A:      return "A";
+        case SNES_Y:      return "Unused";
+        case SNES_X:      return "Unused";
+        case SNES_L:      return "L";
+        case SNES_R:      return "R";
+        case SNES_START:  return "Start";
+        case SNES_SELECT: return "Select";
+        case SNES_UP:     return "Up";
+        case SNES_DOWN:   return "Down";
+        case SNES_LEFT:   return "Left";
+        case SNES_RIGHT:  return "Right";
+        default:          return "?";
+    }
+}
+
+inline const char* gb_button_name(int b) {
+    switch (b) {
+        case SNES_B:      return "B";
+        case SNES_A:      return "A";
+        case SNES_Y:      return "Unused";
+        case SNES_X:      return "Unused";
+        case SNES_L:      return "Unused";
+        case SNES_R:      return "Unused";
+        case SNES_START:  return "Start";
+        case SNES_SELECT: return "Select";
+        case SNES_UP:     return "Up";
+        case SNES_DOWN:   return "Down";
+        case SNES_LEFT:   return "Left";
+        case SNES_RIGHT:  return "Right";
+        default:          return "?";
+    }
+}
+
 inline const char* button_name_for_backend(BackendKind kind, int b) {
-    return kind == BackendKind::Genesis ? genesis_button_name(b) : snes_button_name(b);
+    if (kind == BackendKind::Genesis) return genesis_button_name(b);
+    if (kind == BackendKind::Gba) return gba_button_name(b);
+    if (kind == BackendKind::Gb) return gb_button_name(b);
+    return snes_button_name(b);
 }
 
 inline const char* button_map_title_for_backend(BackendKind kind) {
-    return kind == BackendKind::Genesis ? "Genesis Controller Map" : "SNES Controller Map";
+    if (kind == BackendKind::Genesis) return "Genesis Controller Map";
+    if (kind == BackendKind::Gba) return "GBA Controller Map";
+    if (kind == BackendKind::Gb) return "GB/GBC Controller Map";
+    return "SNES Controller Map";
 }
 
 // Quest physical inputs that can be bound to a libretro joypad slot
@@ -153,8 +195,45 @@ inline ButtonMap default_genesis_button_map() {
     return m;
 }
 
+inline ButtonMap default_gba_button_map() {
+    ButtonMap m{};
+    m[SNES_B]      = QI_B;
+    m[SNES_A]      = QI_A;
+    m[SNES_Y]      = QI_NONE;
+    m[SNES_X]      = QI_NONE;
+    m[SNES_L]      = QI_LTRIG;
+    m[SNES_R]      = QI_RTRIG;
+    m[SNES_START]  = QI_X;
+    m[SNES_SELECT] = QI_Y;
+    m[SNES_UP]     = QI_LSTICK_UP;
+    m[SNES_DOWN]   = QI_LSTICK_DOWN;
+    m[SNES_LEFT]   = QI_LSTICK_LEFT;
+    m[SNES_RIGHT]  = QI_LSTICK_RIGHT;
+    return m;
+}
+
+inline ButtonMap default_gb_button_map() {
+    ButtonMap m{};
+    m[SNES_B]      = QI_B;
+    m[SNES_A]      = QI_A;
+    m[SNES_Y]      = QI_NONE;
+    m[SNES_X]      = QI_NONE;
+    m[SNES_L]      = QI_NONE;
+    m[SNES_R]      = QI_NONE;
+    m[SNES_START]  = QI_X;
+    m[SNES_SELECT] = QI_Y;
+    m[SNES_UP]     = QI_LSTICK_UP;
+    m[SNES_DOWN]   = QI_LSTICK_DOWN;
+    m[SNES_LEFT]   = QI_LSTICK_LEFT;
+    m[SNES_RIGHT]  = QI_LSTICK_RIGHT;
+    return m;
+}
+
 inline ButtonMap default_button_map_for_backend(BackendKind kind) {
-    return kind == BackendKind::Genesis ? default_genesis_button_map() : default_button_map();
+    if (kind == BackendKind::Genesis) return default_genesis_button_map();
+    if (kind == BackendKind::Gba) return default_gba_button_map();
+    if (kind == BackendKind::Gb) return default_gb_button_map();
+    return default_button_map();
 }
 
 } // namespace qrd

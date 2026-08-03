@@ -4,8 +4,8 @@
 build/
 app/build/
 app/.cxx/
-apk/
 controller/
+third_party/scummvm_libretro/
 local.properties
 sidequest.md
 *.apk
@@ -14,3 +14,8 @@ sidequest.md
 *.keystore
 *.jks
 *.7z
+apk/_romsync/
+roms/**
+roms/README.md
+roms/*/
+roms/*/.gitkeep

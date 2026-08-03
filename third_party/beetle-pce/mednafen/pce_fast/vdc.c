@@ -815,6 +815,10 @@ void VDC_RunFrame(EmulateSpecStruct *espec, bool IsHES)
          }
 
          DisplayRect->w = defined_width[vce.dot_clock];
+#ifdef PCE_QRD_LAYER_CAPTURE
+         pce_lc_set_display_rect(DisplayRect->x, DisplayRect->y,
+                                 DisplayRect->w, DisplayRect->h);
+#endif
       }
 
       {

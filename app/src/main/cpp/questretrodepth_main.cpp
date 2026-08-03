@@ -7,19 +7,25 @@
 #include <atomic>
 #include <vector>
 #include <chrono>
+#include <algorithm>
+#include <array>
 #include <cctype>
 #include <cstring>
+#include <sys/stat.h>
 #include <android/asset_manager_jni.h>
 #include <android/log.h>
 
 #define LOG_TAG "QuestRetroDepthXR"
 #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, LOG_TAG, __VA_ARGS__)
+#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, __VA_ARGS__)
 
+#include "audio_processor.h"
 #include "emulator_backend.h"
 #include "experimental_rumble.h"
 #include "game_config.h"
 #include "gles_renderer.h"
 #include "layer_processor.h"
+#include "mgba_backend.h"
 #include "mat4.h"
 #include "openxr_shell.h"
 #include "presentation_shared.h"
@@ -141,13 +147,16 @@ qrd::BackendKind detect_backend_kind_from_path(const std::string& rom_path) {
         return qrd::BackendKind::Sms;
     if (path_has_segment(rom_path, "/roms/gg/") || path_has_segment(rom_path, "\\roms\\gg\\"))
         return qrd::BackendKind::Sms;
+    if (path_has_segment(rom_path, "/roms/scummvm/") || path_has_segment(rom_path, "\\roms\\scummvm\\"))
+        return qrd::BackendKind::ScummVm;
 
     // Extension-based detection
     if (path_ends_with(rom_path, ".gba"))
         return qrd::BackendKind::Gba;
     if (path_ends_with(rom_path, ".gb") || path_ends_with(rom_path, ".gbc"))
         return qrd::BackendKind::Gb;
-    if (path_ends_with(rom_path, ".nes"))
+    if (path_ends_with(rom_path, ".nes") || path_ends_with(rom_path, ".unf") ||
+        path_ends_with(rom_path, ".unif"))
         return qrd::BackendKind::Nes;
     if (path_ends_with(rom_path, ".pce"))
         return qrd::BackendKind::Pce;
@@ -157,6 +166,8 @@ qrd::BackendKind detect_backend_kind_from_path(const std::string& rom_path) {
         path_ends_with(rom_path, ".gen") || path_ends_with(rom_path, ".smd")) {
         return qrd::BackendKind::Genesis;
     }
+    if (path_ends_with(rom_path, ".scummvm"))
+        return qrd::BackendKind::ScummVm;
     return qrd::BackendKind::Snes;
 }
 
@@ -172,8 +183,9 @@ qrd::BackendKind resolve_backend_kind(const std::string& raw_path, const std::st
         path_has_segment(raw_path, "/roms/sms/") || path_has_segment(raw_path, "\\roms\\sms\\") ||
         path_has_segment(raw_path, "/roms/gg/")  || path_has_segment(raw_path, "\\roms\\gg\\") ||
         path_has_segment(raw_path, "/roms/gba/") || path_has_segment(raw_path, "\\roms\\gba\\") ||
-        path_has_segment(raw_path, "/roms/gb/")  || path_has_segment(raw_path, "\\roms\\gb\\") ||
-        path_has_segment(raw_path, "/roms/gbc/") || path_has_segment(raw_path, "\\roms\\gbc\\");
+        path_has_segment(raw_path, "/roms/gb/")     || path_has_segment(raw_path, "\\roms\\gb\\") ||
+        path_has_segment(raw_path, "/roms/gbc/")    || path_has_segment(raw_path, "\\roms\\gbc\\") ||
+        path_has_segment(raw_path, "/roms/scummvm/") || path_has_segment(raw_path, "\\roms\\scummvm\\");
     if (raw_has_system_folder) return raw_kind;
 
     return prepared_kind;
@@ -234,6 +246,9 @@ static int64_t frame_ns_from_hz(double hz, int64_t fallback_ns) {
 static int64_t current_backend_frame_ns() {
     return g_backend_frame_ns.load(std::memory_order_acquire);
 }
+// Legacy cached-frame kept for the 2-D launcher path (nativeStepFrame etc.)
+static bool g_has_cached_frame = false;
+static qrd::FrameOutput g_cached_frame;
 
 static void emu_thread_main() {
     using Clock = std::chrono::steady_clock;
@@ -321,6 +336,37 @@ static void stop_emu_thread() {
     if (g_emu_thread.joinable()) g_emu_thread.join();
 }
 
+static void clear_published_emulation_state() {
+    {
+        std::lock_guard<std::mutex> il(g_input_write_mutex);
+        g_pending_input = {};
+        g_bt_input = {};
+    }
+    {
+        std::lock_guard<std::mutex> fl(g_frame_mutex);
+        g_frame_buf[0] = {};
+        g_frame_buf[1] = {};
+        g_frame_front.store(0, std::memory_order_release);
+        g_frame_seq.fetch_add(1, std::memory_order_release);
+        g_has_frame.store(false, std::memory_order_release);
+    }
+    g_cached_frame = {};
+    g_has_cached_frame = false;
+    g_emu_step_one.store(false, std::memory_order_release);
+    g_backend_frame_ns.store(k_snes_frame_ns, std::memory_order_release);
+}
+
+static void begin_fresh_rom_load() {
+    stop_emu_thread();
+    clear_published_emulation_state();
+}
+
+static qrd::EmulatorBackend* recreate_backend_locked(qrd::BackendKind wanted) {
+    g_backend.reset();
+    g_backend_kind.reset();
+    return ensure_backend(wanted);
+}
+
 // XR render thread: feed latest input, return latest completed frame immediately.
 bool frame_provider_for_vr(qrd::FrameOutput& out_frame, qrd::EmulatorInputState& input,
                            uint64_t& last_seen_seq) {
@@ -362,9 +408,6 @@ bool frame_provider_for_vr(qrd::FrameOutput& out_frame, qrd::EmulatorInputState&
     return out_frame.width > 0 && !out_frame.rgba8888.empty();
 }
 
-// Legacy cached-frame kept for the 2-D launcher path (nativeStepFrame etc.)
-static bool g_has_cached_frame = false;
-static qrd::FrameOutput g_cached_frame;
 
 using MobileEnvironmentSample = qrd::OpenXrShell::EnvironmentSphereSample;
 using MobileBlackoutRevealPhase = qrd::OpenXrShell::BlackoutRevealPhase;
@@ -442,6 +485,37 @@ static const char* mobile_backend_settings_subdir(qrd::BackendKind kind) {
     case qrd::BackendKind::Sms:     return "sms";
     default:                        return "snes";
     }
+}
+
+static bool is_visible_source_backend(qrd::BackendKind kind) {
+    return kind == qrd::BackendKind::Nes ||
+           kind == qrd::BackendKind::Gba ||
+           kind == qrd::BackendKind::Gb ||
+           kind == qrd::BackendKind::Pce ||
+           kind == qrd::BackendKind::Sms;
+}
+
+static const char* visible_source_backend_log_name(qrd::BackendKind kind) {
+    switch (kind) {
+    case qrd::BackendKind::Nes: return "NES";
+    case qrd::BackendKind::Gba: return "GBA";
+    case qrd::BackendKind::Gb:  return "GB/GBC";
+    case qrd::BackendKind::Pce: return "PCE";
+    case qrd::BackendKind::Sms: return "SMS/GG";
+    default:                   return "visible-source";
+    }
+}
+
+static void configure_mgba_frontend_dirs_from_activity(JNIEnv* env, jobject activity) {
+    const std::string root_dir = get_settings_directory_from_activity(env, activity);
+    if (root_dir.empty()) return;
+    const std::string mgba_root = root_dir + "/mgba";
+    mkdir(mgba_root.c_str(), 0755);
+    const std::string system_dir = mgba_root + "/system";
+    const std::string save_dir = mgba_root + "/saves";
+    mkdir(system_dir.c_str(), 0755);
+    mkdir(save_dir.c_str(), 0755);
+    qrd::set_mgba_frontend_directories(system_dir, save_dir);
 }
 
 static bool mobile_sniff_settings_layer_mode(const std::string& path, int& mode_out) {
@@ -548,6 +622,40 @@ static void mobile_sync_cached_layer_geometry_from_config(std::vector<LayerFrame
         lf.copies = lc.copies;
         lf.persp_comp_scale = 1.0f;
     }
+}
+
+static void mobile_ensure_layer_runtime_state_matches_frames(
+    const std::vector<LayerFrame>& layer_frames,
+    std::vector<std::string>& layer_names,
+    std::vector<int>& layer_order,
+    std::vector<bool>& layer_enabled,
+    std::vector<bool>& layer_ambilight) {
+    const int n = (int)layer_frames.size();
+    layer_names.clear();
+    layer_names.reserve(n);
+    for (const auto& frame : layer_frames)
+        layer_names.push_back(frame.id.empty() ? "Layer" : frame.id);
+
+    bool needs_order_repair = ((int)layer_order.size() != n);
+    if (!needs_order_repair) {
+        std::vector<bool> seen(n, false);
+        for (int idx : layer_order) {
+            if (idx < 0 || idx >= n || seen[idx]) {
+                needs_order_repair = true;
+                break;
+            }
+            seen[idx] = true;
+        }
+    }
+
+    if (needs_order_repair) {
+        layer_order.clear();
+        layer_order.reserve(n);
+        for (int i = 0; i < n; ++i) layer_order.push_back(i);
+    }
+
+    layer_enabled.resize(n, true);
+    layer_ambilight.resize(n, true);
 }
 
 static int mobile_baseline_copy_count(const LayerFrame& frame) {
@@ -784,6 +892,7 @@ static void mobile_reset_render_config_locked(qrd::BackendKind kind) {
     g_mobile_renderer.snes_filter_mode = 3;
     g_mobile_renderer.config = default_game_config_for_backend(kind);
     g_mobile_renderer.vr_state = default_mobile_vr_state(kind);
+    g_audio_processor.mode.store(g_mobile_renderer.vr_state.audio_spatial_mode, std::memory_order_relaxed);
     g_mobile_renderer.layer_frames.clear();
     g_mobile_renderer.render_refs.clear();
     g_mobile_renderer.last_frame_seq = 0;
@@ -804,6 +913,7 @@ static void mobile_reset_render_config_locked(qrd::BackendKind kind) {
         g_mobile_renderer.layer_order,
         g_mobile_renderer.layer_enabled,
         g_mobile_renderer.layer_ambilight);
+    g_audio_processor.mode.store(g_mobile_renderer.vr_state.audio_spatial_mode, std::memory_order_relaxed);
 }
 
 } // namespace
@@ -834,15 +944,18 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeGetBuildInfo(
 
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeLoadRom(
-    JNIEnv* env, jobject, jstring path)
+    JNIEnv* env, jobject activity, jstring path)
 {
+    begin_fresh_rom_load();
     std::lock_guard<std::mutex> lock(g_backend_mutex);
     const char* raw = env->GetStringUTFChars(path, nullptr);
     std::string rom_path = raw ? raw : "";
     env->ReleaseStringUTFChars(path, raw);
 
     const qrd::BackendKind kind = detect_backend_kind_from_path(rom_path);
-    auto* backend = ensure_backend(kind);
+    if (kind == qrd::BackendKind::Gba || kind == qrd::BackendKind::Gb)
+        configure_mgba_frontend_dirs_from_activity(env, activity);
+    auto* backend = recreate_backend_locked(kind);
     if (!backend) return make_jstring(env, "Backend creation failed.");
 
     std::string error;
@@ -946,6 +1059,7 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeStartMobile(
     g_vm = vm;
     if (g_activity_global) env->DeleteGlobalRef(g_activity_global);
     g_activity_global = env->NewGlobalRef(activity);
+    configure_mgba_frontend_dirs_from_activity(env, activity);
     {
         std::lock_guard<std::mutex> ml(g_mobile_renderer.mutex);
         mobile_reset_render_config_locked(g_last_working_backend_kind.value_or(qrd::BackendKind::Snes));
@@ -975,10 +1089,21 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeStartMobile(
             g_mobile_renderer.backend_kind);
     }
     g_openxr_shell.set_rom_loader([](const std::string& path, std::string& err) -> bool {
+        begin_fresh_rom_load();
         std::lock_guard<std::mutex> lock(g_backend_mutex);
         const std::string prepared_path = prepare_rom_path(path);
         const qrd::BackendKind kind = resolve_backend_kind(path, prepared_path);
-        auto* backend = ensure_backend(kind);
+        if (kind == qrd::BackendKind::Gba || kind == qrd::BackendKind::Gb) {
+            JNIEnv* loader_env = nullptr;
+            bool detach = false;
+            if (g_vm && g_vm->GetEnv(reinterpret_cast<void**>(&loader_env), JNI_VERSION_1_6) == JNI_EDETACHED) {
+                if (g_vm->AttachCurrentThread(&loader_env, nullptr) == JNI_OK) detach = true;
+            }
+            if (loader_env && g_activity_global)
+                configure_mgba_frontend_dirs_from_activity(loader_env, g_activity_global);
+            if (detach) g_vm->DetachCurrentThread();
+        }
+        auto* backend = recreate_backend_locked(kind);
         if (!backend) {
             err = "Backend creation failed.";
             return false;
@@ -1226,26 +1351,137 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileDrawFr
             g_mobile_renderer.last_frame_seq = g_frame_seq.load(std::memory_order_acquire);
         }
 
-        LayerProcessor proc(g_mobile_renderer.config);
         const auto& frame = g_mobile_renderer.cached_frame;
         const uint8_t* zbuf = frame.zbuffer.empty() ? nullptr : frame.zbuffer.data();
         const bool build_object_boxes = g_mobile_renderer.vr_state.depth_mode == DepthMode::BoundingBox;
-        proc.process_into(
-            g_mobile_renderer.layer_frames,
-            frame.rgba8888.data(),
-            (int)frame.width,
-            (int)frame.height,
-            zbuf,
-            &frame,
-            build_object_boxes);
+        const bool using_native_layers = !frame.native_layers.empty();
+        if (using_native_layers) {
+            // ScummVM per-actor layers: convert NativeLayerFrame → LayerFrame directly,
+            // bypassing LayerProcessor (which doesn't support dynamic layer counts).
+            g_mobile_renderer.layer_frames.resize(frame.native_layers.size());
+            for (size_t ni = 0; ni < frame.native_layers.size(); ++ni) {
+                const auto& nl = frame.native_layers[ni];
+                auto& lf = g_mobile_renderer.layer_frames[ni];
+                lf.id               = nl.id;
+                lf.depth_meters     = nl.depth_meters;
+                lf.quad_width_meters = nl.quad_width_meters;
+                lf.copies.clear();
+                lf.width            = nl.width;
+                lf.height           = nl.height;
+                lf.rgba             = nl.rgba;
+                lf.depth_map.clear();
+                lf.has_pixels       = !nl.rgba.empty();
+                lf.is_ui_bar        = nl.is_ui_bar;
+                lf.wedge_eligible   = false;
+                lf.bbox_eligible    = false;
+                lf.object_boxes.clear();
+            }
+        } else {
+            LayerProcessor proc(g_mobile_renderer.config);
+            proc.process_into(
+                g_mobile_renderer.layer_frames,
+                frame.rgba8888.data(),
+                (int)frame.width,
+                (int)frame.height,
+                zbuf,
+                &frame,
+                build_object_boxes);
 
-        qrd::presentation::sync_cached_layer_geometry_from_config(g_mobile_renderer.layer_frames, g_mobile_renderer.config);
-        qrd::presentation::ensure_layer_runtime_state_matches_config(
-            g_mobile_renderer.config,
-            g_mobile_renderer.layer_names,
-            g_mobile_renderer.layer_order,
-            g_mobile_renderer.layer_enabled,
-            g_mobile_renderer.layer_ambilight);
+            const auto current_kind = g_backend_kind.value_or(qrd::BackendKind::Snes);
+            if (is_visible_source_backend(current_kind)) {
+                static int mobile_visible_source_empty_log_counter = 0;
+                bool any_visible_source_layer = false;
+                for (const auto& layer : g_mobile_renderer.layer_frames) {
+                    if (layer.has_pixels) {
+                        any_visible_source_layer = true;
+                        break;
+                    }
+                }
+                if (!any_visible_source_layer) {
+                    const bool should_log_empty = (++mobile_visible_source_empty_log_counter % 120) == 1;
+                    if (should_log_empty) {
+                        std::array<int, 8> source_counts{};
+                        const std::size_t npix = static_cast<std::size_t>(frame.width) * frame.height;
+                        const std::size_t count = std::min(npix, frame.visible_source_id.size());
+                        for (std::size_t i = 0; i < count; ++i) {
+                            const uint8_t src_id = frame.visible_source_id[i];
+                            if (src_id < source_counts.size()) {
+                                source_counts[src_id]++;
+                            }
+                        }
+                        LOGE("%s mobile layered extraction produced no visible layers for %ux%u frame; visible_source bytes=%zu counts=[0:%d 1:%d 2:%d 3:%d 4:%d 5:%d]",
+                             visible_source_backend_log_name(current_kind),
+                             frame.width,
+                             frame.height,
+                             frame.visible_source_id.size(),
+                             source_counts[0],
+                             source_counts[1],
+                             source_counts[2],
+                             source_counts[3],
+                             source_counts[4],
+                             source_counts[5]);
+                    }
+                    if (!g_mobile_renderer.layer_frames.empty() && !frame.rgba8888.empty()) {
+                        GameConfig fallback_cfg = GameConfig::make_flat();
+                        fallback_cfg.virtual_width = (int)frame.width;
+                        fallback_cfg.virtual_height = (int)frame.height;
+                        fallback_cfg.quad_y_meters = g_mobile_renderer.config.quad_y_meters;
+                        fallback_cfg.layers[0].id = g_mobile_renderer.layer_frames[0].id;
+                        fallback_cfg.layers[0].depth_meters = g_mobile_renderer.layer_frames[0].depth_meters;
+                        fallback_cfg.layers[0].quad_width_meters = g_mobile_renderer.layer_frames[0].quad_width_meters;
+                        fallback_cfg.layers[0].copies = g_mobile_renderer.layer_frames[0].copies;
+
+                        std::vector<LayerFrame> fallback_frames;
+                        LayerProcessor fallback_proc(fallback_cfg);
+                        fallback_proc.process_into(
+                            fallback_frames,
+                            frame.rgba8888.data(),
+                            (int)frame.width,
+                            (int)frame.height,
+                            nullptr,
+                            &frame,
+                            build_object_boxes);
+
+                        if (!fallback_frames.empty()) {
+                            g_mobile_renderer.layer_frames[0] = std::move(fallback_frames[0]);
+                            for (std::size_t i = 1; i < g_mobile_renderer.layer_frames.size(); ++i) {
+                                auto& layer = g_mobile_renderer.layer_frames[i];
+                                layer.has_pixels = false;
+                                layer.wedge_eligible = false;
+                                layer.bbox_eligible = false;
+                                layer.object_boxes.clear();
+                                std::fill(layer.rgba.begin(), layer.rgba.end(), 0u);
+                            }
+                            if (should_log_empty) {
+                                LOGI("%s mobile render fallback engaged: flat full-frame extraction for %ux%u frame",
+                                     visible_source_backend_log_name(current_kind),
+                                     frame.width,
+                                     frame.height);
+                            }
+                        }
+                    }
+                } else {
+                    mobile_visible_source_empty_log_counter = 0;
+                }
+            }
+        }
+
+        if (using_native_layers) {
+            mobile_ensure_layer_runtime_state_matches_frames(
+                g_mobile_renderer.layer_frames,
+                g_mobile_renderer.layer_names,
+                g_mobile_renderer.layer_order,
+                g_mobile_renderer.layer_enabled,
+                g_mobile_renderer.layer_ambilight);
+        } else {
+            qrd::presentation::sync_cached_layer_geometry_from_config(g_mobile_renderer.layer_frames, g_mobile_renderer.config);
+            qrd::presentation::ensure_layer_runtime_state_matches_config(
+                g_mobile_renderer.config,
+                g_mobile_renderer.layer_names,
+                g_mobile_renderer.layer_order,
+                g_mobile_renderer.layer_enabled,
+                g_mobile_renderer.layer_ambilight);
+        }
         g_mobile_renderer.render_refs.clear();
         const std::vector<int>& order = g_mobile_renderer.layer_order;
         g_mobile_renderer.render_refs.reserve(g_mobile_renderer.layer_frames.size());
@@ -1386,6 +1622,7 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeStartVr(
     g_vm = vm;
     if (g_activity_global) env->DeleteGlobalRef(g_activity_global);
     g_activity_global = env->NewGlobalRef(activity);
+    configure_mgba_frontend_dirs_from_activity(env, activity);
     g_asset_manager = nullptr;
     {
         jclass activity_cls = env->GetObjectClass(activity);
@@ -1424,16 +1661,25 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeStartVr(
 
     // Wire up emulator freeze controls so the XR thread can pause/resume the emu thread.
     g_openxr_shell.set_emu_freeze_ctrl([](bool freeze) {
-        g_emu_frozen.store(freeze, std::memory_order_release);
-        if (!freeze) g_emu_step_one.store(false, std::memory_order_release); // cancel any pending step
+        if (freeze) {
+            { std::lock_guard<std::mutex> lock(g_backend_mutex);
+              if (g_backend) g_backend->on_emu_freeze(); }
+            g_emu_frozen.store(true, std::memory_order_release);
+        } else {
+            g_emu_frozen.store(false, std::memory_order_release);
+            g_emu_step_one.store(false, std::memory_order_release);
+            { std::lock_guard<std::mutex> lock(g_backend_mutex);
+              if (g_backend) g_backend->on_emu_unfreeze(); }
+        }
     });
     g_openxr_shell.set_emu_step_one([]() {
         g_emu_step_one.store(true, std::memory_order_release);
     });
 
     // Wire up vr_state callbacks so settings changes propagate to emulator thread
-    g_openxr_shell.set_on_vr_state_changed([](bool auto_frame_skip) {
+    g_openxr_shell.set_on_vr_state_changed([](bool auto_frame_skip, int audio_spatial_mode) {
         g_auto_frame_skip.store(auto_frame_skip, std::memory_order_release);
+        g_audio_processor.mode.store(audio_spatial_mode, std::memory_order_relaxed);
     });
     g_openxr_shell.set_on_experimental_rumble_changed([](bool enabled) {
         std::lock_guard<std::mutex> lock(g_backend_mutex);
@@ -1475,45 +1721,81 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeStartVr(
     // Extracts archives via Kotlin, restores the previous ROM if load fails
     // (snes9x clears its state on failed load, which would cause "no ROM loaded").
     g_openxr_shell.set_rom_loader([](const std::string& raw_path, std::string& err) -> bool {
+        LOGI("ROM loader: begin raw=%s", raw_path.c_str());
+        begin_fresh_rom_load();
         const std::string path = prepare_rom_path(raw_path);
         const auto wanted_kind = resolve_backend_kind(raw_path, path);
+        LOGI("ROM loader: prepared=%s backend=%s",
+             path.c_str(), qrd::backend_kind_name(wanted_kind));
+        const std::string previous_rom_path = g_last_working_rom_path;
+        const std::optional<qrd::BackendKind> previous_kind = g_last_working_backend_kind;
         std::string backend_name;
         std::string game_name;
+        bool restored_previous_rom = false;
+        bool load_failed = false;
         {
             std::lock_guard<std::mutex> lock(g_backend_mutex);
-            auto* backend = ensure_backend(wanted_kind);
+            LOGI("ROM loader: recreate backend start backend=%s",
+                 qrd::backend_kind_name(wanted_kind));
+            auto* backend = recreate_backend_locked(wanted_kind);
+            LOGI("ROM loader: recreate backend done backend=%s ptr=%p",
+                 qrd::backend_kind_name(wanted_kind), backend);
             if (!backend) { err = "Backend unavailable"; return false; }
 
+            LOGI("ROM loader: load_content start backend=%s path=%s",
+                 qrd::backend_kind_name(wanted_kind), path.c_str());
             if (!backend->load_content(path, err)) {
-                // Restore last working ROM so the display doesn't go blank
-                if (!g_last_working_rom_path.empty() && g_last_working_backend_kind == wanted_kind) {
+                LOGI("ROM loader: load_content failed backend=%s err=%s",
+                     qrd::backend_kind_name(wanted_kind), err.c_str());
+                const std::string load_error = err;
+                // Restore last working ROM so the display doesn't go blank.
+                // This must also handle cross-backend failures, since the failed
+                // load recreated the backend and stopped the emu thread.
+                if (!previous_rom_path.empty() && previous_kind.has_value()) {
                     std::string restore_err;
-                    backend->load_content(g_last_working_rom_path, restore_err);
-                    qrd::EmulatorInputState ei;
-                    backend->step_frame(ei, restore_err);
+                    backend = recreate_backend_locked(*previous_kind);
+                    if (backend && backend->load_content(previous_rom_path, restore_err)) {
+                        qrd::EmulatorInputState ei;
+                        backend->step_frame(ei, restore_err);
+                        restored_previous_rom = true;
+                    }
                 }
-                return false;
+                err = load_error;
+                load_failed = true;
             }
 
-            qrd::EmulatorInputState empty_input;
-            backend->step_frame(empty_input, err); // prime — ignore failure
-            const auto& frame = backend->frame_output();
-            if (frame.width > 0 && !frame.rgba8888.empty()) {
-                g_cached_frame     = frame;
-                g_has_cached_frame = true;
+            if (!load_failed) {
+                LOGI("ROM loader: load_content OK backend=%s",
+                     qrd::backend_kind_name(wanted_kind));
+                qrd::EmulatorInputState empty_input;
+                LOGI("ROM loader: prime frame start backend=%s",
+                     qrd::backend_kind_name(wanted_kind));
+                backend->step_frame(empty_input, err); // prime — ignore failure
+                LOGI("ROM loader: prime frame done backend=%s err=%s",
+                     qrd::backend_kind_name(wanted_kind), err.c_str());
+                const auto& frame = backend->frame_output();
+                if (frame.width > 0 && !frame.rgba8888.empty()) {
+                    g_cached_frame     = frame;
+                    g_has_cached_frame = true;
+                }
+                g_last_working_rom_path    = path;
+                g_last_working_backend_kind = wanted_kind;
+                g_last_loaded_rom_filename = basename_from_path(path);
+                g_last_loaded_rom_prefs_name = basename_from_path(raw_path);
+                auto info = backend->get_rom_header_info();
+                if (info.has_header && !info.game_name.empty()) {
+                    game_name = info.game_name;
+                }
+                g_last_loaded_game_name = game_name;
+                g_experimental_rumble.on_rom_loaded(g_asset_manager, wanted_kind, g_last_loaded_rom_filename, game_name);
+                g_openxr_shell.set_experimental_rumble_status(g_experimental_rumble.active_status());
+                backend_name = backend->backend_name();
             }
-            g_last_working_rom_path    = path;
-            g_last_working_backend_kind = wanted_kind;
-            g_last_loaded_rom_filename = basename_from_path(path);
-            g_last_loaded_rom_prefs_name = basename_from_path(raw_path);
-            auto info = backend->get_rom_header_info();
-            if (info.has_header && !info.game_name.empty()) {
-                game_name = info.game_name;
-            }
-            g_last_loaded_game_name = game_name;
-            g_experimental_rumble.on_rom_loaded(g_asset_manager, wanted_kind, g_last_loaded_rom_filename, game_name);
-            g_openxr_shell.set_experimental_rumble_status(g_experimental_rumble.active_status());
-            backend_name = backend->backend_name();
+        }
+
+        if (load_failed) {
+            if (restored_previous_rom) start_emu_thread();
+            return false;
         }
 
         g_openxr_shell.set_current_backend_kind(wanted_kind);
@@ -1613,8 +1895,10 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeGetVrStateSummary(
 
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeLoadRom(
-    JNIEnv* env, jobject, jstring path, jstring source_name)
+    JNIEnv* env, jobject activity, jstring path, jstring source_name)
 {
+    LOGI("nativeLoadRom: begin");
+    begin_fresh_rom_load();
     const char* raw = env->GetStringUTFChars(path, nullptr);
     std::string rom_path = raw ? raw : "";
     env->ReleaseStringUTFChars(path, raw);
@@ -1623,18 +1907,37 @@ Java_com_retrodepth_questretrodepth_QuestVrActivity_nativeLoadRom(
     if (source_name && raw_source) env->ReleaseStringUTFChars(source_name, raw_source);
 
     const auto wanted_kind = detect_backend_kind_from_path(rom_path);
+    if (wanted_kind == qrd::BackendKind::Gba || wanted_kind == qrd::BackendKind::Gb)
+        configure_mgba_frontend_dirs_from_activity(env, activity);
+    LOGI("nativeLoadRom: path=%s source=%s backend=%s",
+         rom_path.c_str(), prefs_name.c_str(), qrd::backend_kind_name(wanted_kind));
     std::string game_name;
     {
         std::lock_guard<std::mutex> lock(g_backend_mutex);
-        auto* backend = ensure_backend(wanted_kind);
+        LOGI("nativeLoadRom: recreate backend start backend=%s",
+             qrd::backend_kind_name(wanted_kind));
+        auto* backend = recreate_backend_locked(wanted_kind);
+        LOGI("nativeLoadRom: recreate backend done backend=%s ptr=%p",
+             qrd::backend_kind_name(wanted_kind), backend);
         if (!backend) return make_jstring(env, "Backend creation failed.");
 
         std::string error;
-        if (!backend->load_content(rom_path, error))
+        LOGI("nativeLoadRom: load_content start backend=%s path=%s",
+             qrd::backend_kind_name(wanted_kind), rom_path.c_str());
+        if (!backend->load_content(rom_path, error)) {
+            LOGI("nativeLoadRom: load_content failed backend=%s err=%s",
+                 qrd::backend_kind_name(wanted_kind), error.c_str());
             return make_jstring(env, "ROM load failed\n\n" + error);
+        }
+        LOGI("nativeLoadRom: load_content OK backend=%s",
+             qrd::backend_kind_name(wanted_kind));
 
         qrd::EmulatorInputState input;
+        LOGI("nativeLoadRom: prime frame start backend=%s",
+             qrd::backend_kind_name(wanted_kind));
         backend->step_frame(input, error); // prime — ignore failure
+        LOGI("nativeLoadRom: prime frame done backend=%s err=%s",
+             qrd::backend_kind_name(wanted_kind), error.c_str());
         const auto& frame = backend->frame_output();
         if (frame.width == 0 || frame.rgba8888.empty()) {
             return make_jstring(env, "ROM load failed\n\nBackend loaded but emitted no video frame.\nCheck logcat for backend errors.");

@@ -769,9 +769,12 @@ class QuestRetroDepthActivity : QuestVrActivity() {
             lower.endsWith(".gb") ||
             lower.endsWith(".gbc") ||
             lower.endsWith(".nes") ||
+            lower.endsWith(".unf") ||
+            lower.endsWith(".unif") ||
             lower.endsWith(".pce") ||
             lower.endsWith(".sms") ||
-            lower.endsWith(".gg")
+            lower.endsWith(".gg") ||
+            lower.endsWith(".scummvm")
     }
 
     private fun sanitizeFileName(name: String): String {

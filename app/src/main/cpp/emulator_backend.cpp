@@ -3,6 +3,7 @@
 #include "mgba_backend.h"
 #include "pce_backend.h"
 #include "picodrive_backend.h"
+#include "scummvm_backend.h"
 #include "snes_libretro_backend.h"
 #include "snes_backend_stub.h"
 
@@ -22,6 +23,8 @@ std::unique_ptr<EmulatorBackend> create_backend(BackendKind kind) {
         return std::make_unique<FceuxBackend>();
     case BackendKind::Pce:
         return std::make_unique<PceBackend>();
+    case BackendKind::ScummVm:
+        return std::make_unique<ScummVmBackend>();
     default:
         return {};
     }
@@ -36,6 +39,7 @@ const char* backend_kind_name(BackendKind kind) {
     case BackendKind::Nes:     return "NES";
     case BackendKind::Pce:     return "PCE";
     case BackendKind::Sms:     return "SMS/GG";
+    case BackendKind::ScummVm: return "ScummVM";
     default:                   return "Unknown";
     }
 }

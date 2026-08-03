@@ -451,12 +451,17 @@ open class QuestVrActivity : Activity() {
         return lower.endsWith(".gdi") || lower.endsWith(".cdi")
     }
 
+    private fun isScummVmExtension(name: String): Boolean {
+        val lower = name.lowercase(Locale.US)
+        return lower.endsWith(".scummvm")
+    }
+
     private fun isSupportedRomExtension(name: String): Boolean {
         return isSnesExtension(name) || isGenesisExtension(name) || isNesExtension(name) ||
                isGbExtension(name) || isGbaExtension(name) || isGgExtension(name) ||
                isPceExtension(name) || is32xExtension(name) || isAtari2600Extension(name) ||
                isN64Extension(name) || isDsExtension(name) || isSaturnExtension(name) ||
-               isDreamcastExtension(name)
+               isDreamcastExtension(name) || isScummVmExtension(name)
     }
 
     private fun isSupportedOrArchiveFile(file: File): Boolean {
@@ -478,6 +483,7 @@ open class QuestVrActivity : Activity() {
         isDsExtension(name) -> RomFamily.Ds
         isSaturnExtension(name) -> RomFamily.Saturn
         isDreamcastExtension(name) -> RomFamily.Dreamcast
+        isScummVmExtension(name) -> RomFamily.ScummVm
         else -> null
     }
 
@@ -497,6 +503,7 @@ open class QuestVrActivity : Activity() {
             path.contains("/roms/ds/") || path.contains("\\roms\\ds\\") -> RomFamily.Ds
             path.contains("/roms/saturn/") || path.contains("\\roms\\saturn\\") -> RomFamily.Saturn
             path.contains("/roms/dreamcast/") || path.contains("\\roms\\dreamcast\\") -> RomFamily.Dreamcast
+            path.contains("/roms/scummvm/") || path.contains("\\roms\\scummvm\\") -> RomFamily.ScummVm
             else -> romFamilyForName(file.name)
         }
     }
@@ -673,11 +680,13 @@ open class QuestVrActivity : Activity() {
         layerNames: Array<String>,
         layerEnabled: BooleanArray,
         layerAmbilight: BooleanArray,
-        grabbed: Int,       // row being dragged (-1 = none)
-        dropTarget: Int,   // row laser is pointing at while dragging (-1 = none)
+        grabbed: Int,           // row being dragged (-1 = none)
+        dropTarget: Int,        // row laser is pointing at while dragging (-1 = none)
+        depthValues: FloatArray, // depth_meters per layer in display order
+        depthSelectedRow: Int,  // row in depth-edit mode (-1 = none)
         width: Int,
         height: Int,
-        frozen: Boolean,   // frozen state for play/pause button
+        frozen: Boolean,        // frozen state for play/pause button
         autoDupLabel: String,
         filterLabel: String,
         showFilter: Boolean
@@ -701,7 +710,7 @@ open class QuestVrActivity : Activity() {
 
         val titleH = 88f
         val n      = layerNames.size
-        val totalRows = n + 2 + if (showFilter) 1 else 0  // layers + play/pause + auto-dup + optional filter row
+        val totalRows = n + 3 + if (showFilter) 1 else 0  // layers + play/pause + auto-dup + reset-depths + optional filter
         if (n == 0) {
             paint.color = android.graphics.Color.argb(160, 150, 150, 160)
             paint.textSize = 36f
@@ -713,14 +722,34 @@ open class QuestVrActivity : Activity() {
 
         val isDragging = (grabbed >= 0)
 
+        // Compute depth display scale: map depth_meters → 0–10 using min/max of the array
+        val depthMin = if (depthValues.isNotEmpty()) depthValues.min() else 0.9f
+        val depthMax = if (depthValues.isNotEmpty()) depthValues.max() else 2.0f
+        val depthRange = if (depthMax > depthMin) depthMax - depthMin else 1.0f
+
+        fun depthDisplay(depthMeters: Float): String {
+            val t = (depthMeters - depthMin) / depthRange
+            val d = (1.0f - t) * 10.0f
+            return "%.1f".format(d.coerceIn(0.0f, 10.0f))
+        }
+
         // Render layer rows (indices 0 to n-1)
         for (i in 0 until n) {
-            val y       = titleH + i * rowH
-            val enabled = if (i < layerEnabled.size) layerEnabled[i] else true
-            val isGrabbed = (i == grabbed)
+            val y          = titleH + i * rowH
+            val enabled    = if (i < layerEnabled.size) layerEnabled[i] else true
+            val isGrabbed  = (i == grabbed)
+            val isDepthSel = (i == depthSelectedRow)
 
             // Row background
             when {
+                isDepthSel -> {
+                    paint.color = android.graphics.Color.argb(120, 40, 100, 60)
+                    canvas.drawRect(0f, y, width * 0.60f, y + rowH, paint)
+                    if (i % 2 == 0) {
+                        paint.color = android.graphics.Color.argb(70, 40, 40, 65)
+                        canvas.drawRect(width * 0.60f, y, width.toFloat(), y + rowH, paint)
+                    }
+                }
                 isGrabbed -> {
                     paint.color = android.graphics.Color.argb(100, 60, 120, 220)
                     canvas.drawRect(2f, y + 1f, width - 2f, y + rowH - 1f, paint)
@@ -731,9 +760,13 @@ open class QuestVrActivity : Activity() {
                 }
             }
 
-            // Drag handle (≡)
-            paint.color = android.graphics.Color.argb(if (isGrabbed) 60 else 120, 180, 180, 200)
-            canvas.drawText("≡", 8f, y + rowH * 0.70f, paint)
+            // Depth value in left zone
+            val depthStr = if (i < depthValues.size) depthDisplay(depthValues[i]) else ""
+            paint.textSize = rowH * 0.38f
+            paint.color = if (isDepthSel) android.graphics.Color.argb(255, 100, 240, 140)
+                          else android.graphics.Color.argb(160, 140, 200, 160)
+            canvas.drawText(depthStr, 8f, y + rowH * 0.65f, paint)
+            paint.textSize = rowH * 0.46f
 
             // Layer name
             paint.color = when {
@@ -742,8 +775,8 @@ open class QuestVrActivity : Activity() {
                 else        -> android.graphics.Color.argb(220, 200, 210, 230)
             }
             canvas.save()
-            canvas.clipRect(32f, y, width * 0.58f, y + rowH)
-            canvas.drawText(layerNames[i], 32f, y + rowH * 0.70f, paint)
+            canvas.clipRect(width * 0.22f, y, width * 0.58f, y + rowH)
+            canvas.drawText(layerNames[i], width * 0.22f, y + rowH * 0.70f, paint)
             canvas.restore()
 
             // Visibility toggle and ambilight toggle
@@ -813,10 +846,22 @@ open class QuestVrActivity : Activity() {
         val autoDupW = paint.measureText(autoDupLabel)
         canvas.drawText(autoDupLabel, width - autoDupW - 16f, autoDupY + rowH * 0.68f, paint)
 
+        // Reset depths row (index n + 2)
+        val resetY = titleH + (n + 2) * rowH
+        val isResetHovered = (dropTarget == n + 2)
+        paint.color = if (isResetHovered) android.graphics.Color.argb(120, 60, 130, 80)
+                      else android.graphics.Color.argb(70, 30, 55, 40)
+        canvas.drawRect(0f, resetY, width.toFloat(), resetY + rowH, paint)
+        paint.textSize = rowH * 0.42f
+        paint.color = android.graphics.Color.argb(200, 120, 220, 140)
+        val resetLabel = "RESET DEPTHS"
+        val resetW = paint.measureText(resetLabel)
+        canvas.drawText(resetLabel, (width - resetW) / 2f, resetY + rowH * 0.68f, paint)
+
         if (showFilter) {
-            // Layer filter row after auto-dup (index n + 2)
-            val filterY = titleH + (n + 2) * rowH
-            val isFilterHovered = (dropTarget == n + 2)
+            // Layer filter row (index n + 3)
+            val filterY = titleH + (n + 3) * rowH
+            val isFilterHovered = (dropTarget == n + 3)
             paint.color = if (isFilterHovered) android.graphics.Color.argb(100, 100, 140, 200)
                           else android.graphics.Color.argb(70, 40, 40, 65)
             canvas.drawRect(0f, filterY, width.toFloat(), filterY + rowH, paint)
@@ -1724,7 +1769,7 @@ open class QuestVrActivity : Activity() {
     }
 
     private fun createRomSubfolders(base: File) {
-        for (name in listOf("pce", "snes", "genesis", "sms", "nes", "gb", "gg", "gba", "gbc")) {
+        for (name in listOf("pce", "snes", "genesis", "sms", "nes", "gb", "gg", "gba", "gbc", "scummvm")) {
             File(base, name).mkdirs()
         }
     }
@@ -2268,6 +2313,6 @@ open class QuestVrActivity : Activity() {
     )
 
     private enum class RomFamily {
-        Snes, Genesis, Nes, Gb, Gba, Gg, Pce, Sega32x, Atari2600, N64, Ds, Saturn, Dreamcast
+        Snes, Genesis, Nes, Gb, Gba, Gg, Pce, Sega32x, Atari2600, N64, Ds, Saturn, Dreamcast, ScummVm
     }
 }

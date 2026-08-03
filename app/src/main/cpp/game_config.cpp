@@ -9,6 +9,14 @@ constexpr float k_genesis_default_far_depth = 5.343064f;
 constexpr float k_genesis_default_quad_width = 2.56f;
 constexpr int k_genesis_default_copy_count = 28;
 constexpr float k_genesis_default_copy_step = 0.003f;
+constexpr float k_snes_default_near_depth = 1.18f;
+constexpr float k_snes_default_far_depth = 2.25f;
+constexpr float k_snes_default_quad_width = 2.56f;
+constexpr int k_snes_default_copy_count = 16;
+constexpr float k_snes_default_copy_step = 0.002f;
+constexpr float k_nes_default_quad_width = 2.15f;
+constexpr int k_nes_default_copy_count = 4;
+constexpr float k_nes_default_copy_step = 0.001f;
 
 static void apply_uniform_width_and_copies(LayerConfig& lc, float width, int copy_count, float copy_step) {
     lc.quad_width_meters = width;
@@ -181,11 +189,11 @@ GameConfig GameConfig::make_default_snes() {
     }
 
     apply_even_default_depth_envelope(cfg.layers,
-                                      k_genesis_default_near_depth,
-                                      k_genesis_default_far_depth,
-                                      k_genesis_default_quad_width,
-                                      k_genesis_default_copy_count,
-                                      k_genesis_default_copy_step);
+                                      k_snes_default_near_depth,
+                                      k_snes_default_far_depth,
+                                      k_snes_default_quad_width,
+                                      k_snes_default_copy_count,
+                                      k_snes_default_copy_step);
 
     return cfg;
 }
@@ -223,19 +231,28 @@ GameConfig GameConfig::make_default_genesis() {
 }
 
 GameConfig GameConfig::make_default_nes() {
-    // NES: 3 hardware planes (backdrop, BG tiles, sprites).
+    // NES: one hardware BG plane plus sprites. The backend classifies true
+    // backdrop pixels and splits visible BG pixels into generic far/mid/near
+    // buckets so the headset renderer has useful depth planes.
     // Per-pixel source IDs captured by fceux_layer_capture from FCEUmm PPU:
-    //   0 = backdrop, 1 = background, 2 = sprites.
+    //   0 = backdrop, 1 = bg_far, 2 = sprites, 3 = bg_mid, 4 = bg_near.
     GameConfig cfg;
     cfg.game           = "nes";
     cfg.virtual_width  = 256;
     cfg.virtual_height = 240;
     cfg.quad_y_meters  = 1.6f;
 
-    static const struct { const char* id; float depth; int layer_index; } k[] = {
-        { "backdrop",    k_genesis_default_far_depth,  0 },
-        { "background",  3.5f,                          1 },
-        { "sprites",     k_genesis_default_near_depth,  2 },
+    static const struct {
+        const char* id;
+        float depth;
+        int layer_index;
+        bool enabled;
+    } k[] = {
+        { "backdrop", 2.15f, 0, true  },
+        { "bg_far",   1.98f, 1, true  },
+        { "bg_mid",   1.82f, 3, true  },
+        { "bg_near",  1.74f, 4, false },
+        { "sprites",  1.66f, 2, true  },
     };
     for (const auto& s : k) {
         LayerConfig lc;
@@ -243,10 +260,11 @@ GameConfig GameConfig::make_default_nes() {
         lc.depth_meters     = s.depth;
         lc.extraction_type  = ExtractionType::VisibleSourceFinal;
         lc.layer_index      = s.layer_index;
+        lc.default_enabled  = s.enabled;
         apply_uniform_width_and_copies(lc,
-                                       k_genesis_default_quad_width,
-                                       k_genesis_default_copy_count,
-                                       k_genesis_default_copy_step);
+                                       k_nes_default_quad_width,
+                                       k_nes_default_copy_count,
+                                       k_nes_default_copy_step);
         cfg.layers.push_back(std::move(lc));
     }
     return cfg;
@@ -344,6 +362,28 @@ GameConfig GameConfig::make_default_gb() {
                                        k_genesis_default_copy_step);
         cfg.layers.push_back(std::move(lc));
     }
+    return cfg;
+}
+
+GameConfig GameConfig::make_default_scummvm() {
+    // ScummVM: classic 320x200 SCUMM games rendered as a single composite frame.
+    // No hardware layers — Y-position is used as the depth proxy (zbuffer generated
+    // per-row in ScummVmBackend::step_frame): top=far(0), bottom=near(255).
+    GameConfig cfg;
+    cfg.game           = "scummvm";
+    cfg.virtual_width  = 320;
+    cfg.virtual_height = 200;
+    cfg.quad_y_meters  = 1.6f;
+
+    LayerConfig lc;
+    lc.id              = "composite";
+    lc.depth_meters    = 2.5f;
+    lc.extraction_type = ExtractionType::FullFrame;
+    apply_uniform_width_and_copies(lc,
+                                   k_genesis_default_quad_width,
+                                   k_genesis_default_copy_count,
+                                   k_genesis_default_copy_step);
+    cfg.layers.push_back(std::move(lc));
     return cfg;
 }
 

@@ -10,6 +10,8 @@
 
 namespace qrd {
 
+void set_mgba_frontend_directories(std::string system_dir, std::string save_dir);
+
 class MgbaBackend final : public EmulatorBackend {
 public:
     MgbaBackend();
@@ -38,6 +40,7 @@ private:
     void reset_core();
     void ensure_frame_size(unsigned width, unsigned height);
     void write_rgb565_frame(const uint16_t* pixels, unsigned width, unsigned height, std::size_t pitch);
+    void write_xrgb8888_frame(const uint32_t* pixels, unsigned width, unsigned height, std::size_t pitch);
 
     FrameOutput           m_frame;
     EmulatorInputState    m_input;
@@ -48,6 +51,8 @@ private:
     bool                  m_game_loaded      = false;
     std::uint64_t         m_video_frame_count = 0;
     bool                  m_last_frame_had_visible_pixels = false;
+    uint32_t              m_layer_capture_mask = 0x1Fu;
+    retro_pixel_format    m_pixel_format = RETRO_PIXEL_FORMAT_RGB565;
     double                m_frame_rate_hz = 59.7275;
 };
 

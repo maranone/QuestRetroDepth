@@ -1,5 +1,6 @@
 #include "mgba_backend.h"
 #include "mgba_layer_capture.h"
+#include "audio_processor.h"
 
 #include <android/log.h>
 #include <aaudio/AAudio.h>
@@ -10,6 +11,8 @@
 #include <cstring>
 #include <fstream>
 #include <sstream>
+#include <sys/stat.h>
+#include <unordered_map>
 
 extern "C" {
 void     mgba_retro_set_environment(retro_environment_t cb);
@@ -46,10 +49,14 @@ namespace {
 constexpr const char* kLogTag       = "QuestRetroDepth";
 constexpr const char* kFrontendDir  = ".";
 constexpr int         kWarmupFrames = 12;
-// GBA: 5 visible-source IDs (BG0-3 + OBJ); backdrop (5) handled as implicit far layer
+// GB/GBC: 3 capture layers — 0=BG, 1=Window, 2=OBJ
+constexpr int kGbLayerCount = 3;
+// GBA: 5 capture layers — BG0-BG3, OBJ; backdrop (source_id 5) goes transparent
 constexpr int kGbaLayerCount = 5;
 
 MgbaBackend* g_active_backend = nullptr;
+std::string g_mgba_system_dir = kFrontendDir;
+std::string g_mgba_save_dir   = kFrontendDir;
 
 // AAudio ring buffer (same design as PicoDrive backend)
 constexpr int kAudioRingFrames = 8192;
@@ -101,6 +108,7 @@ static aaudio_data_callback_result_t audio_data_callback(
         }
     }
     g_ring_read.store(r, std::memory_order_release);
+    g_audio_processor.process(out, numFrames);
     return AAUDIO_CALLBACK_RESULT_CONTINUE;
 }
 
@@ -118,7 +126,10 @@ static void open_aaudio_stream(int sample_rate) {
     AAudioStreamBuilder_setDataCallback(builder, audio_data_callback, nullptr);
     AAudioStreamBuilder_openStream(builder, &g_aaudio_stream);
     AAudioStreamBuilder_delete(builder);
-    if (g_aaudio_stream) AAudioStream_requestStart(g_aaudio_stream);
+    if (g_aaudio_stream) {
+        g_audio_processor.set_sample_rate(sample_rate);
+        AAudioStream_requestStart(g_aaudio_stream);
+    }
 }
 
 static void close_aaudio_stream() {
@@ -189,7 +200,43 @@ static std::string rom_name_from_path(const std::string& path) {
     return (dot == std::string::npos) ? base : base.substr(0, dot);
 }
 
+static void ensure_dir_exists(const std::string& path) {
+    if (!path.empty()) mkdir(path.c_str(), 0755);
+}
+
+static const char* mgba_option_value(const char* key) {
+    static const std::unordered_map<std::string, const char*> kOptions = {
+        {"mgba_gb_model", "Autodetect"},
+        {"mgba_use_bios", "ON"},
+        {"mgba_skip_bios", "OFF"},
+        {"mgba_gb_colors", "Grayscale"},
+        {"mgba_gb_colors_preset", "0"},
+        {"mgba_sgb_borders", "ON"},
+        {"mgba_audio_low_pass_filter", "disabled"},
+        {"mgba_audio_low_pass_range", "60"},
+        {"mgba_allow_opposing_directions", "no"},
+        {"mgba_solar_sensor_level", "0"},
+        {"mgba_force_gbp", "OFF"},
+        {"mgba_idle_optimization", "Remove Known"},
+        {"mgba_frameskip", "0"},
+        {"mgba_frameskip_threshold", "33"},
+        {"mgba_frameskip_interval", "0"},
+    };
+    if (!key) return nullptr;
+    const auto it = kOptions.find(key);
+    return it == kOptions.end() ? nullptr : it->second;
+}
+
 } // namespace
+
+void set_mgba_frontend_directories(std::string system_dir, std::string save_dir) {
+    if (system_dir.empty()) system_dir = kFrontendDir;
+    if (save_dir.empty()) save_dir = system_dir;
+    ensure_dir_exists(system_dir);
+    ensure_dir_exists(save_dir);
+    g_mgba_system_dir = std::move(system_dir);
+    g_mgba_save_dir = std::move(save_dir);
+}
 
 // ---------------------------------------------------------------------------
 // MgbaBackend
@@ -226,6 +273,8 @@ double MgbaBackend::frame_rate_hz() const { return m_frame_rate_hz; }
 bool MgbaBackend::load_content(const std::string& rom_path, std::string& error_out) {
     reset_core();
     if (rom_path.empty()) { error_out = "mGBA: ROM path is empty."; return false; }
+    __android_log_print(ANDROID_LOG_INFO, kLogTag,
+                        "mGBA load_content: start path='%s'", rom_path.c_str());
     if (!ensure_core_initialized(error_out)) return false;
 
     {
@@ -252,6 +301,7 @@ bool MgbaBackend::load_content(const std::string& rom_path, std::string& error_o
         reset_core();
         return false;
     }
+    __android_log_print(ANDROID_LOG_INFO, kLogTag, "mGBA load_content: retro_load_game OK");
 
     retro_system_av_info av_info{};
     mgba_retro_get_system_av_info(&av_info);
@@ -278,6 +328,10 @@ bool MgbaBackend::load_content(const std::string& rom_path, std::string& error_o
         mgba_retro_run();
         if (m_video_frame_count > 0 && m_last_frame_had_visible_pixels) break;
     }
+    __android_log_print(ANDROID_LOG_INFO, kLogTag,
+                        "mGBA load_content: warmup done video_frame_count=%llu visible=%d",
+                        static_cast<unsigned long long>(m_video_frame_count),
+                        m_last_frame_had_visible_pixels ? 1 : 0);
 
     if (m_video_frame_count == 0) {
         error_out = "mGBA: ROM loaded but emitted no video frames.";
@@ -327,7 +381,9 @@ bool MgbaBackend::load_state(const void* data, std::size_t size, std::string& er
 }
 
 void MgbaBackend::set_auto_frame_skip(bool /*enabled*/) {}
-void MgbaBackend::set_layer_capture_mask(uint32_t /*mask*/) {}
+void MgbaBackend::set_layer_capture_mask(uint32_t mask) {
+    m_layer_capture_mask = mask;
+}
 
 RomHeaderInfo MgbaBackend::get_rom_header_info() const {
     RomHeaderInfo info;
@@ -358,14 +414,20 @@ bool MgbaBackend::handle_environment(unsigned cmd, void* data) {
         return true;
     }
     case RETRO_ENVIRONMENT_GET_SYSTEM_DIRECTORY:
+        if (!data) return false;
+        *static_cast<const char**>(data) = g_mgba_system_dir.c_str();
+        return true;
     case RETRO_ENVIRONMENT_GET_SAVE_DIRECTORY: {
         if (!data) return false;
         auto** dir = static_cast<const char**>(data);
-        *dir = kFrontendDir;
+        *dir = g_mgba_save_dir.c_str();
         return true;
     }
     case RETRO_ENVIRONMENT_SET_PIXEL_FORMAT: {
-        // mGBA libretro always uses RGB565 (COLOR_16_BIT + COLOR_5_6_5)
+        if (!data) return false;
+        const auto fmt = *static_cast<const retro_pixel_format*>(data);
+        if (fmt != RETRO_PIXEL_FORMAT_RGB565 && fmt != RETRO_PIXEL_FORMAT_XRGB8888) return false;
+        m_pixel_format = fmt;
         return true;
     }
     case RETRO_ENVIRONMENT_SET_AUDIO_BUFFER_STATUS_CALLBACK: {
@@ -379,8 +441,11 @@ bool MgbaBackend::handle_environment(unsigned cmd, void* data) {
         return true;
     }
     case RETRO_ENVIRONMENT_GET_VARIABLE: {
-        // mGBA queries several variables; return false = use core defaults
-        return false;
+        if (!data) return false;
+        auto* var = static_cast<retro_variable*>(data);
+        if (!var || !var->key) return false;
+        var->value = mgba_option_value(var->key);
+        return var->value != nullptr;
     }
     case RETRO_ENVIRONMENT_GET_INPUT_BITMASKS: {
         if (data) *static_cast<bool*>(data) = true;
@@ -397,6 +462,41 @@ bool MgbaBackend::handle_environment(unsigned cmd, void* data) {
             ensure_frame_size(geom.base_width, geom.base_height);
         }
         return true;
+    case RETRO_ENVIRONMENT_SET_SUPPORT_ACHIEVEMENTS:
+    case RETRO_ENVIRONMENT_SET_INPUT_DESCRIPTORS:
+    case RETRO_ENVIRONMENT_SET_CONTROLLER_INFO:
+    case RETRO_ENVIRONMENT_SET_MEMORY_MAPS:
+    case RETRO_ENVIRONMENT_SET_PERFORMANCE_LEVEL:
+    case RETRO_ENVIRONMENT_SET_MESSAGE:
+    case RETRO_ENVIRONMENT_SET_MESSAGE_EXT:
+    case RETRO_ENVIRONMENT_SET_VARIABLES:
+    case RETRO_ENVIRONMENT_SET_CORE_OPTIONS:
+    case RETRO_ENVIRONMENT_SET_CORE_OPTIONS_V2:
+    case RETRO_ENVIRONMENT_SET_CORE_OPTIONS_INTL:
+    case RETRO_ENVIRONMENT_SET_CORE_OPTIONS_V2_INTL:
+    case RETRO_ENVIRONMENT_SET_CORE_OPTIONS_DISPLAY:
+    case RETRO_ENVIRONMENT_SET_CORE_OPTIONS_UPDATE_DISPLAY_CALLBACK:
+    case RETRO_ENVIRONMENT_SET_SERIALIZATION_QUIRKS:
+    case RETRO_ENVIRONMENT_SET_SUBSYSTEM_INFO:
+    case RETRO_ENVIRONMENT_SET_SUPPORT_NO_GAME:
+    case RETRO_ENVIRONMENT_SET_CONTENT_INFO_OVERRIDE:
+    case RETRO_ENVIRONMENT_SET_MINIMUM_AUDIO_LATENCY:
+        return true;
+    case RETRO_ENVIRONMENT_GET_CORE_OPTIONS_VERSION:
+        if (data) *static_cast<unsigned*>(data) = 2;
+        return true;
+    case RETRO_ENVIRONMENT_GET_LANGUAGE:
+        if (data) *static_cast<unsigned*>(data) = RETRO_LANGUAGE_ENGLISH;
+        return true;
+    case RETRO_ENVIRONMENT_GET_MESSAGE_INTERFACE_VERSION:
+        if (data) *static_cast<unsigned*>(data) = 1;
+        return true;
+    case RETRO_ENVIRONMENT_GET_RUMBLE_INTERFACE:
+    case RETRO_ENVIRONMENT_GET_SENSOR_INTERFACE:
+    case RETRO_ENVIRONMENT_GET_CAMERA_INTERFACE:
+    case RETRO_ENVIRONMENT_GET_GAME_INFO_EXT:
+    case RETRO_ENVIRONMENT_GET_VFS_INTERFACE:
+        return false;
     // Silently accept anything we don't need to handle
     default:
         return false;
@@ -409,7 +509,11 @@ void MgbaBackend::handle_video_frame(
 
     ++m_video_frame_count;
     ensure_frame_size(width, height);
-    write_rgb565_frame(static_cast<const uint16_t*>(data), width, height, pitch);
+    if (m_pixel_format == RETRO_PIXEL_FORMAT_XRGB8888) {
+        write_xrgb8888_frame(static_cast<const uint32_t*>(data), width, height, pitch);
+    } else {
+        write_rgb565_frame(static_cast<const uint16_t*>(data), width, height, pitch);
+    }
 
     // Copy the per-pixel visible-source IDs captured by the renderer hook.
     // GBA and GB/GBC use distinct capture paths inside mGBA.
@@ -426,8 +530,59 @@ void MgbaBackend::handle_video_frame(
         std::fill(m_frame.visible_source_id.begin(), m_frame.visible_source_id.end(), 0xFFu);
     }
 
-    // No separate per-layer RGBA captures — LayerProcessor uses VisibleSourceFinal
-    for (auto& layer : m_frame.layers) layer.rgba.clear();
+    // Split final RGBA frame into per-layer buffers using visible-source IDs.
+    const std::size_t npix = static_cast<std::size_t>(width) * height;
+    const auto& vsid = m_frame.visible_source_id;
+    const auto& src  = m_frame.rgba8888;
+    const bool is_gb = (width == MGBA_GB_LC_W && height == MGBA_GB_LC_H);
+    const int lcount = is_gb ? kGbLayerCount : kGbaLayerCount;
+    m_frame.layers.resize(lcount);
+
+    if (vsid.size() == npix && src.size() == npix && m_layer_capture_mask) {
+        for (int li = 0; li < lcount; ++li) {
+            if (m_frame.layers[li].rgba.size() != npix)
+                m_frame.layers[li].rgba.resize(npix);
+        }
+        if (is_gb) {
+            // GB/GBC: source IDs 0=BG, 1=Window, 4=OBJ → layers 0,1,2; OBJ (li=2) gets depth_map
+            auto& dmap = m_frame.layers[2].depth_map;
+            if (dmap.size() != npix) dmap.resize(npix);
+            for (unsigned y = 0; y < height; ++y) {
+                const uint8_t depth_y = (height > 1u)
+                    ? static_cast<uint8_t>(y * 255u / (height - 1u)) : 128u;
+                for (unsigned x = 0; x < width; ++x) {
+                    const std::size_t i = static_cast<std::size_t>(y) * width + x;
+                    const uint8_t sid = vsid[i];
+                    const uint32_t px = src[i];
+                    m_frame.layers[0].rgba[i] = (sid == 0u) ? px : 0u;
+                    m_frame.layers[1].rgba[i] = (sid == 1u) ? px : 0u;
+                    m_frame.layers[2].rgba[i] = (sid == 4u) ? px : 0u;
+                    dmap[i] = (sid == 4u) ? depth_y : 0u;
+                }
+            }
+        } else {
+            // GBA: source IDs 0-3=BG0-3, 4=OBJ, 5=backdrop (transparent); OBJ (li=4) gets depth_map
+            auto& dmap = m_frame.layers[4].depth_map;
+            if (dmap.size() != npix) dmap.resize(npix);
+            for (unsigned y = 0; y < height; ++y) {
+                const uint8_t depth_y = (height > 1u)
+                    ? static_cast<uint8_t>(y * 255u / (height - 1u)) : 128u;
+                for (unsigned x = 0; x < width; ++x) {
+                    const std::size_t i = static_cast<std::size_t>(y) * width + x;
+                    const uint8_t sid = vsid[i];
+                    const uint32_t px = (sid < 5u) ? src[i] : 0u;
+                    m_frame.layers[0].rgba[i] = (sid == 0u) ? px : 0u;
+                    m_frame.layers[1].rgba[i] = (sid == 1u) ? px : 0u;
+                    m_frame.layers[2].rgba[i] = (sid == 2u) ? px : 0u;
+                    m_frame.layers[3].rgba[i] = (sid == 3u) ? px : 0u;
+                    m_frame.layers[4].rgba[i] = (sid == 4u) ? px : 0u;
+                    dmap[i] = (sid == 4u) ? depth_y : 0u;
+                }
+            }
+        }
+    } else {
+        for (auto& layer : m_frame.layers) { layer.rgba.clear(); layer.depth_map.clear(); }
+    }
 }
 
 bool MgbaBackend::ensure_core_initialized(std::string& error_out) {
@@ -463,7 +618,7 @@ void MgbaBackend::reset_core() {
     m_frame.zbuffer.clear();
     m_frame.visible_source_id.clear();
     m_frame.layers.resize(kGbaLayerCount);
-    for (auto& layer : m_frame.layers) layer.rgba.clear();
+    for (auto& layer : m_frame.layers) { layer.rgba.clear(); layer.depth_map.clear(); }
     if (g_active_backend == this) g_active_backend = nullptr;
 }
 
@@ -480,7 +635,7 @@ void MgbaBackend::ensure_frame_size(unsigned width, unsigned height) {
     m_frame.zbuffer.clear();
     m_frame.visible_source_id.assign(npix, 0xFFu);
     m_frame.layers.resize(kGbaLayerCount);
-    for (auto& layer : m_frame.layers) layer.rgba.clear();
+    for (auto& layer : m_frame.layers) { layer.rgba.clear(); layer.depth_map.clear(); }
 }
 
 void MgbaBackend::write_rgb565_frame(
@@ -492,6 +647,26 @@ void MgbaBackend::write_rgb565_frame(
         auto* dst = m_frame.rgba8888.data() + static_cast<std::size_t>(y) * width;
         for (unsigned x = 0; x < width; ++x) {
             const auto rgba = rgba_from_rgb565(row[x]);
+            dst[x] = rgba;
+            has_visible = has_visible || ((rgba & 0x00FFFFFFu) != 0);
+        }
+    }
+    m_last_frame_had_visible_pixels = has_visible;
+}
+
+void MgbaBackend::write_xrgb8888_frame(
+    const uint32_t* pixels, unsigned width, unsigned height, std::size_t pitch) {
+    bool has_visible = false;
+    for (unsigned y = 0; y < height; ++y) {
+        const auto* row = reinterpret_cast<const uint32_t*>(
+            reinterpret_cast<const uint8_t*>(pixels) + y * pitch);
+        auto* dst = m_frame.rgba8888.data() + static_cast<std::size_t>(y) * width;
+        for (unsigned x = 0; x < width; ++x) {
+            const uint32_t xrgb = row[x];
+            const uint32_t rgba = 0xFF000000u |
+                ((xrgb >> 16) & 0x000000FFu) << 16 |
+                ((xrgb >> 8)  & 0x000000FFu) << 8  |
+                (xrgb & 0x000000FFu);
             dst[x] = rgba;
             has_visible = has_visible || ((rgba & 0x00FFFFFFu) != 0);
         }

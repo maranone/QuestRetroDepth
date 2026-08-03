@@ -141,9 +141,12 @@ static inline int rd_owner_enabled(void)
 
 static inline uint32_t rd_rgba_from_rgb565(uint16_t pixel)
 {
-  uint8_t r = (uint8_t)(((pixel >> 11) & 0x1f) * 255 / 31);
-  uint8_t g = (uint8_t)(((pixel >> 5) & 0x3f) * 255 / 63);
-  uint8_t b = (uint8_t)((pixel & 0x1f) * 255 / 31);
+  uint8_t r5 = (pixel >> 11) & 0x1f;
+  uint8_t g6 = (pixel >> 5)  & 0x3f;
+  uint8_t b5 =  pixel        & 0x1f;
+  uint8_t r = (r5 << 3) | (r5 >> 2);
+  uint8_t g = (g6 << 2) | (g6 >> 4);
+  uint8_t b = (b5 << 3) | (b5 >> 2);
   return 0xff000000u | ((uint32_t)b << 16) | ((uint32_t)g << 8) | (uint32_t)r;
 }
 

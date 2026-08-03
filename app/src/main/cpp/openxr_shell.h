@@ -149,7 +149,7 @@ public:
         std::lock_guard<std::mutex> lk(m_mutex);
         m_save_state_apply = std::move(fn);
     }
-    using VrStateChanged = std::function<void(bool auto_frame_skip)>;
+    using VrStateChanged = std::function<void(bool auto_frame_skip, int audio_spatial_mode)>;
     void set_on_vr_state_changed(VrStateChanged fn) {
         std::lock_guard<std::mutex> lk(m_mutex);
         m_on_vr_state_changed = std::move(fn);
@@ -196,6 +196,7 @@ public:
         std::vector<std::string> ordered_ids;
         std::vector<bool> enabled;
         std::vector<bool> ambilight;
+        std::vector<float> depths;
     };
 
     struct EnvironmentSphereSample {
@@ -283,6 +284,7 @@ private:
     bool try_load_latest_state(std::string& loaded_name_out, std::string& error_out, bool& found_any);
     void persist_save_automation_settings();
     void maybe_run_autosave();
+    void reset_emulation_cache_for_rom_change();
     void flush_pending_haptics();
     // right=true → right controller, false → left; amplitude 0-1, duration_ms
     void fire_haptic(bool right, float amplitude = 0.4f, int duration_ms = 40);
@@ -413,6 +415,11 @@ private:
     float       m_edit_raim_ref_el   = 0.0f;
     bool        m_edit_raim_ref_valid = false;
 
+    // ScummVM game-mode laser state (right controller points at game screen)
+    bool        m_scummvm_laser_hit    = false;
+    XrVector3f  m_scummvm_laser_origin = {0,0,0};
+    XrVector3f  m_scummvm_laser_end    = {0,0,0};
+
     // ROM loader callback (set by main.cpp)
     RomLoader m_rom_loader;
 
@@ -439,6 +446,7 @@ private:
     bool    m_layer_panel_dirty   = true;
     int     m_layer_panel_hovered = -1; // display row under laser
     int     m_layer_panel_grabbed = -1; // display row being dragged (-1 = none)
+    int     m_layer_depth_selected = -1; // display row in depth-edit mode (-1 = none)
     XrTime  m_last_layer_fire     = 0;
     bool    m_emu_frozen_display  = false; // frozen state for play/pause button display
     struct LayerModeSnapshot {
@@ -466,6 +474,7 @@ private:
     int     m_autosave_interval_seconds = 30;
     bool    m_load_last_save_enabled = true;
     std::uint64_t m_last_autosave_time_ms = 0;
+    std::atomic<bool> m_autosave_in_progress{false};
 
     // ---------- Code-input panel (floats above ROM browser) ----------
     GLuint      m_code_panel_tex     = 0;
@@ -555,6 +564,7 @@ private:
     XrTime m_last_copy_fire   = 0;
     bool   m_lstick_click_prev = false;
     bool   m_rstick_click_prev = false;
+    XrTime m_rclick_press_time = 0;   // XrTime when right stick click began (0 = not held)
 
     // Edit mode — toggled by left thumbstick click
     bool  m_edit_mode = false;

@@ -27,10 +27,13 @@ inline VrState default_vr_state_for_backend(BackendKind kind) {
     vs.shadows = false;
     vs.ambilight = true;
     vs.perspective_comp = true;
+    vs.audio_spatial_mode = 3;
+    vs.audio_screen_lock = true;
     switch (kind) {
     case BackendKind::Genesis: vs.vr_resolution_scale = 1.5f; break;
     case BackendKind::Gba:
     case BackendKind::Gb:      vs.vr_resolution_scale = 1.0f; vs.upscale = true; break;
+    case BackendKind::ScummVm: vs.vr_resolution_scale = 1.0f; vs.sprite_y_depth = true; break;
     default:                   vs.vr_resolution_scale = 1.0f; break;
     }
     return vs;
@@ -124,6 +127,7 @@ inline GameConfig default_config_for_backend(BackendKind kind, int snes_mode = 3
     case BackendKind::Nes:     return GameConfig::make_default_nes();
     case BackendKind::Pce:     return GameConfig::make_default_pce();
     case BackendKind::Sms:     return GameConfig::make_default_sms();
+    case BackendKind::ScummVm: return GameConfig::make_default_scummvm();
     }
     return GameConfig::make_flat();
 }

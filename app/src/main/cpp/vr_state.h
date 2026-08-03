@@ -71,6 +71,14 @@ struct VrState {
     // 0=off; steps: 0.25, 0.5, 1.0, 1.5, 2.0 (farthest-layer multiplier).
     float parallax_ratio = 0.0f;
 
+    // Sprite Y-depth: per-pixel Z displacement on sprite/OBJ layers
+    bool  sprite_y_depth        = false;
+    float sprite_y_depth_spread = 0.5f; // total Z range in metres (close−far)
+
+    // Spatial audio mode: 0=off  1=spatial EQ  2=spatial EQ + haptics
+    int  audio_spatial_mode  = 0;     // 0=off  1=wide  2=spatial EQ  3=spatial EQ + haptics
+    bool audio_screen_lock   = false; // anchor stereo field to screen world position
+
     // Performance settings
     bool  auto_frame_skip      = false; // let emulator decide to skip frames
     int   emu_resolution_scale = 1;     // emulator internal render scale (1-4)
@@ -129,6 +137,11 @@ struct VrState {
         screen_curve = 0.0f;
         tilt_x       = randf(-0.075f, 0.075f);
         tilt_y       = randf(-0.11f,  0.11f);
+
+        perspective_comp      = true;
+        parallax_ratio        = randb(0.40f) ? randf(0.0f, 1.5f) : 0.0f;
+        sprite_y_depth        = randb(0.30f);
+        sprite_y_depth_spread = sprite_y_depth ? randf(0.25f, 0.85f) : 0.5f;
 
         const int n = (int)cfg.layers.size();
         if (n == 0) return;

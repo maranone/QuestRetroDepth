@@ -1,5 +1,6 @@
 #include "pce_backend.h"
 #include "pce_layer_capture.h"
+#include "audio_processor.h"
 
 #include <android/log.h>
 #include <aaudio/AAudio.h>
@@ -46,8 +47,8 @@ namespace {
 constexpr const char* kLogTag       = "QuestRetroDepth";
 constexpr const char* kFrontendDir  = ".";
 constexpr int         kWarmupFrames = 12;
-// PC Engine: 3 visible-source IDs: backdrop, bg_plane, sprites
-constexpr int kPceLayerCount = 3;
+// PC Engine: 2 capture layers — 0=BG plane, 1=sprites (backdrop transparent in both)
+constexpr int kPceLayerCount = 2;
 
 PceBackend* g_active_backend = nullptr;
 
@@ -101,6 +102,7 @@ static aaudio_data_callback_result_t audio_data_callback(
         }
     }
     g_ring_read.store(r, std::memory_order_release);
+    g_audio_processor.process(out, numFrames);
     return AAUDIO_CALLBACK_RESULT_CONTINUE;
 }
 
@@ -118,7 +120,10 @@ static void open_aaudio_stream(int sample_rate) {
     AAudioStreamBuilder_setDataCallback(builder, audio_data_callback, nullptr);
     AAudioStreamBuilder_openStream(builder, &g_aaudio_stream);
     AAudioStreamBuilder_delete(builder);
-    if (g_aaudio_stream) AAudioStream_requestStart(g_aaudio_stream);
+    if (g_aaudio_stream) {
+        g_audio_processor.set_sample_rate(sample_rate);
+        AAudioStream_requestStart(g_aaudio_stream);
+    }
 }
 
 static void close_aaudio_stream() {
@@ -327,7 +332,9 @@ bool PceBackend::load_state(const void* data, std::size_t size, std::string& err
 }
 
 void PceBackend::set_auto_frame_skip(bool /*enabled*/) {}
-void PceBackend::set_layer_capture_mask(uint32_t /*mask*/) {}
+void PceBackend::set_layer_capture_mask(uint32_t mask) {
+    m_layer_capture_mask = mask;
+}
 
 RomHeaderInfo PceBackend::get_rom_header_info() const {
     RomHeaderInfo info;
@@ -422,7 +429,7 @@ void PceBackend::handle_video_frame(
     const uint8_t* vs = pce_lc_get_visible_source(&vs_w, &vs_h);
     const std::size_t npix = static_cast<std::size_t>(width) * height;
     if (vs && m_frame.visible_source_id.size() == npix) {
-        if (vs_w == width && vs_h == height) {
+        if (vs_w == width && vs_h == height && height == PCE_LC_H) {
             std::memcpy(m_frame.visible_source_id.data(), vs, npix);
         } else {
             if (!pce_lc_copy_visible_source(m_frame.visible_source_id.data(), width, height)) {
@@ -433,8 +440,33 @@ void PceBackend::handle_video_frame(
         std::fill(m_frame.visible_source_id.begin(), m_frame.visible_source_id.end(), 0xFFu);
     }
 
-    // No separate per-layer RGBA captures — LayerProcessor uses VisibleSourceFinal
-    for (auto& layer : m_frame.layers) layer.rgba.clear();
+    // Split final RGBA frame into per-layer buffers using visible-source IDs.
+    // Layer 0 = BG plane (sid==1), Layer 1 = sprites (sid==2); backdrop transparent.
+    m_frame.layers.resize(kPceLayerCount);
+    const auto& vsid = m_frame.visible_source_id;
+    const auto& src  = m_frame.rgba8888;
+    if (vsid.size() == npix && src.size() == npix && (m_layer_capture_mask & 0x3u)) {
+        for (int li = 0; li < kPceLayerCount; ++li) {
+            if (m_frame.layers[li].rgba.size() != npix)
+                m_frame.layers[li].rgba.resize(npix);
+        }
+        // Sprite layer (li=1, sid==2) gets Y-depth map
+        auto& dmap = m_frame.layers[1].depth_map;
+        if (dmap.size() != npix) dmap.resize(npix);
+        for (unsigned y = 0; y < height; ++y) {
+            const uint8_t depth_y = (height > 1u)
+                ? static_cast<uint8_t>(y * 255u / (height - 1u)) : 128u;
+            for (unsigned x = 0; x < width; ++x) {
+                const std::size_t i = static_cast<std::size_t>(y) * width + x;
+                const uint8_t sid = vsid[i];
+                m_frame.layers[0].rgba[i] = (sid == 1u) ? src[i] : 0u;
+                m_frame.layers[1].rgba[i] = (sid == 2u) ? src[i] : 0u;
+                dmap[i] = (sid == 2u) ? depth_y : 0u;
+            }
+        }
+    } else {
+        for (auto& layer : m_frame.layers) { layer.rgba.clear(); layer.depth_map.clear(); }
+    }
 }
 
 bool PceBackend::ensure_core_initialized(std::string& error_out) {
@@ -458,7 +490,7 @@ bool PceBackend::ensure_core_initialized(std::string& error_out) {
 void PceBackend::reset_core() {
     close_aaudio_stream();
     if (m_core_initialized) {
-        pce_retro_unload_game();
+        if (m_game_loaded) pce_retro_unload_game();
         pce_retro_deinit();
     }
     m_core_initialized = false;
@@ -470,7 +502,7 @@ void PceBackend::reset_core() {
     m_frame.zbuffer.clear();
     m_frame.visible_source_id.clear();
     m_frame.layers.resize(kPceLayerCount);
-    for (auto& layer : m_frame.layers) layer.rgba.clear();
+    for (auto& layer : m_frame.layers) { layer.rgba.clear(); layer.depth_map.clear(); }
     if (g_active_backend == this) g_active_backend = nullptr;
 }
 
@@ -487,7 +519,7 @@ void PceBackend::ensure_frame_size(unsigned width, unsigned height) {
     m_frame.zbuffer.clear();
     m_frame.visible_source_id.assign(npix, 0xFFu);
     m_frame.layers.resize(kPceLayerCount);
-    for (auto& layer : m_frame.layers) layer.rgba.clear();
+    for (auto& layer : m_frame.layers) { layer.rgba.clear(); layer.depth_map.clear(); }
 }
 
 void PceBackend::write_rgb565_frame(

@@ -12,9 +12,9 @@
  * retro_run() completes, before the frame is consumed.
  *
  * Pixel encoding (XBuf / sprlinebuf before colour emphasis):
- *   target[x] == 0xFF        : unrendered (backdrop — no BG tile drawn here)
- *   target[x]  0x00–0x3F     : BG tile pixel (NES palette index, bit 6 clear)
- *   target[x]  0x40–0x7F     : behind-BG sprite written here (BG was transparent)
+ *   target[x] bit 6 set      : transparent BG/unrendered backdrop colour
+ *   target[x]  0x00–0x3F     : opaque BG tile pixel (NES palette index)
+ *   target[x]  0x40–0x7F     : behind-BG sprite or backdrop colour
  *   spr_buf[x] == 0x80       : no sprite pixel on this column
  *   spr_buf[x] & 0x40 == 0   : front-priority sprite pixel
  *   spr_buf[x] & 0x40 != 0   : behind-BG sprite pixel
@@ -30,6 +30,9 @@ void fceux_lc_capture_line(int scanline,
                             const uint8_t* target,
                             const uint8_t* spr_buf,
                             int width);
+
+/* Enable / disable per-layer RGBA capture.  Bits 0-1 select layers 0-1. */
+void fceux_lc_set_capture_mask(uint32_t mask);
 
 /* Returns the 256×240 per-pixel source-ID buffer (0/1/2), sets *out_w / *out_h.
  * Returns NULL if no frame has been captured yet. */

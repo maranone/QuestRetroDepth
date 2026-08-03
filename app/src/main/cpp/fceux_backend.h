@@ -37,17 +37,26 @@ private:
     bool ensure_core_initialized(std::string& error_out);
     void reset_core();
     void ensure_frame_size(unsigned width, unsigned height);
+    void prepare_game_info_ext(const std::string& rom_path);
     void write_rgb565_frame(const uint16_t* pixels, unsigned width, unsigned height, std::size_t pitch);
+    void write_0rgb1555_frame(const uint16_t* pixels, unsigned width, unsigned height, std::size_t pitch);
+    void write_xrgb8888_frame(const uint32_t* pixels, unsigned width, unsigned height, std::size_t pitch);
 
     FrameOutput           m_frame;
     EmulatorInputState    m_input;
     std::vector<uint8_t>  m_rom_bytes;
     std::string           m_loaded_rom_path;
+    std::string           m_content_dir;
+    std::string           m_content_name;
+    std::string           m_content_ext;
+    retro_game_info_ext   m_game_info_ext{};
     std::string           m_backend_name;
     bool                  m_core_initialized = false;
     bool                  m_game_loaded      = false;
     std::uint64_t         m_video_frame_count = 0;
     bool                  m_last_frame_had_visible_pixels = false;
+    uint32_t              m_layer_capture_mask = 0x1Fu;
+    retro_pixel_format    m_pixel_format = RETRO_PIXEL_FORMAT_0RGB1555;
     double                m_frame_rate_hz = 60.0988;
 };
 

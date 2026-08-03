@@ -51,7 +51,8 @@ struct OverlayInfo {
 
 // One GPU texture per game layer
 struct LayerTex {
-    GLuint tex    = 0;
+    GLuint tex       = 0;
+    GLuint depth_tex = 0;  // GL_R8 sprite Y-depth texture; 0 when unused
     int    width  = 0;
     int    height = 0;
     std::uint64_t uploaded_revision = 0;
@@ -143,6 +144,19 @@ private:
 
     std::vector<LayerTex> m_layers;
 
+    // Tessellated depth mesh cache (regenerated when layer dimensions change)
+    GLuint m_dm_vao         = 0;
+    GLuint m_dm_vbo         = 0;
+    GLuint m_dm_ebo         = 0;
+    int    m_dm_W           = 0;
+    int    m_dm_H           = 0;
+    int    m_dm_index_count = 0;
+
+    // Sprite Y-depth uniform locations (m_program / flat mode only)
+    GLint  m_u_has_y_depth    = -1;
+    GLint  m_u_y_depth_tex    = -1;
+    GLint  m_u_y_depth_spread = -1;
+
     // Cached uniform locations
     GLint m_u_vp           = -1;
     GLint m_u_depth        = -1;
@@ -230,6 +244,7 @@ private:
     bool init_flat_program(std::string& err);
     bool init_sky_program(std::string& err);
     bool init_ui_program(std::string& err);
+    void ensure_depth_mesh(int W, int H);
     void draw_sky_dome(const Mat4& view, const Mat4& proj, const SkyDomeInfo& info);
     void draw_ambilight(const std::vector<LayerFrame*>& frames,
                         const Mat4& vp, const VrState& state);

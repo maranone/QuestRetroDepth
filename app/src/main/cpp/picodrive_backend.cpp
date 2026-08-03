@@ -1,5 +1,6 @@
 #include "picodrive_backend.h"
 #include "picodrive_sms_layer_capture.h"
+#include "audio_processor.h"
 
 #include <android/log.h>
 #include <aaudio/AAudio.h>
@@ -52,6 +53,7 @@ constexpr const char* kLogTag = "QuestRetroDepth";
 constexpr const char* kFrontendDir = ".";
 constexpr int kWarmupFrames = 12;
 constexpr int kGenesisLayerCount = 7;
+constexpr int kSmsLayerCount     = 2;
 
 PicoDriveBackend* g_active_backend = nullptr;
 
@@ -104,6 +106,7 @@ static aaudio_data_callback_result_t audio_data_callback(
         }
     }
     g_ring_read.store(r, std::memory_order_release);
+    g_audio_processor.process(out, numFrames);
     return AAUDIO_CALLBACK_RESULT_CONTINUE;
 }
 
@@ -121,7 +124,20 @@ static void open_aaudio_stream(int sample_rate) {
     AAudioStreamBuilder_setDataCallback(builder, audio_data_callback, nullptr);
     AAudioStreamBuilder_openStream(builder, &g_aaudio_stream);
     AAudioStreamBuilder_delete(builder);
-    if (g_aaudio_stream) AAudioStream_requestStart(g_aaudio_stream);
+    if (g_aaudio_stream) {
+        g_audio_processor.set_sample_rate(sample_rate);
+        AAudioStream_requestStart(g_aaudio_stream);
+    }
+}
+
+static void pause_aaudio_stream() {
+    if (g_aaudio_stream)
+        AAudioStream_requestPause(g_aaudio_stream);
+}
+
+static void resume_aaudio_stream() {
+    if (g_aaudio_stream)
+        AAudioStream_requestStart(g_aaudio_stream);
 }
 
 static void close_aaudio_stream() {
@@ -282,7 +298,6 @@ bool PicoDriveBackend::load_content(const std::string& rom_path, std::string& er
     EmulatorInputState warmup_input{};
     for (int i = 0; i < kWarmupFrames; ++i) {
         m_input = warmup_input;
-        report_audio_buffer_status();
         picodrive_retro_run();
         if (m_video_frame_count > 0 && m_last_frame_had_visible_pixels) break;
     }
@@ -303,8 +318,8 @@ bool PicoDriveBackend::step_frame(const EmulatorInputState& input, std::string& 
         return false;
     }
     m_input = input;
-    report_audio_buffer_status();
     picodrive_retro_run();
+    report_audio_buffer_status();
     error_out.clear();
     return true;
 }
@@ -472,16 +487,18 @@ void PicoDriveBackend::handle_video_frame(const void* data, unsigned width, unsi
         std::memcpy(m_frame.visible_source_id.data(), owner, m_frame.visible_source_id.size());
     }
 
-    // SMS / Game Gear: use per-pixel source IDs from Mode 4 renderer hook.
-    // Only applies when frame dimensions match SMS (256×192); GG (160×144) falls back to FullFrame.
-      {
-          const std::size_t npix = static_cast<std::size_t>(width) * height;
-          if (m_frame.visible_source_id.size() == npix) {
-              if (!picodrive_sms_lc_copy_visible_source(m_frame.visible_source_id.data(), width, height)) {
-                  std::fill(m_frame.visible_source_id.begin(), m_frame.visible_source_id.end(), 0xFFu);
-              }
-          }
-      }
+    // SMS / Game Gear: use per-pixel source IDs from the Mode 4 renderer hook.
+    // Keep this off Genesis frames so the Genesis visible-source map remains intact.
+    const bool is_sms = (width == 256 && height == 192);
+    const bool is_gg  = (width == 160 && height == 144);
+    if (is_sms || is_gg) {
+        const std::size_t npix = static_cast<std::size_t>(width) * height;
+        if (m_frame.visible_source_id.size() == npix) {
+            if (!picodrive_sms_lc_copy_visible_source(m_frame.visible_source_id.data(), width, height)) {
+                std::fill(m_frame.visible_source_id.begin(), m_frame.visible_source_id.end(), 0xFFu);
+            }
+        }
+    }
 
     update_layer_captures(width, height);
 }
@@ -508,7 +525,7 @@ bool PicoDriveBackend::ensure_core_initialized(std::string& error_out) {
 void PicoDriveBackend::reset_core() {
     close_aaudio_stream();
     if (m_core_initialized) {
-        picodrive_retro_unload_game();
+        if (m_game_loaded) picodrive_retro_unload_game();
         picodrive_retro_deinit();
     }
 
@@ -522,7 +539,7 @@ void PicoDriveBackend::reset_core() {
     m_frame.zbuffer.clear();
     m_frame.visible_source_id.clear();
     m_frame.layers.resize(kGenesisLayerCount);
-    for (auto& layer : m_frame.layers) layer.rgba.clear();
+    for (auto& layer : m_frame.layers) { layer.rgba.clear(); layer.depth_map.clear(); }
     if (g_active_backend == this) g_active_backend = nullptr;
 }
 
@@ -541,7 +558,7 @@ void PicoDriveBackend::ensure_frame_size(unsigned width, unsigned height) {
     m_frame.zbuffer.clear();
     m_frame.visible_source_id.assign(npix, 0xFFu);
     m_frame.layers.resize(kGenesisLayerCount);
-    for (auto& layer : m_frame.layers) layer.rgba.clear();
+    for (auto& layer : m_frame.layers) { layer.rgba.clear(); layer.depth_map.clear(); }
 }
 
 void PicoDriveBackend::update_geometry(const retro_game_geometry& geometry) {
@@ -625,8 +642,9 @@ void PicoDriveBackend::set_auto_frame_skip(bool enabled) {
 }
 
 void PicoDriveBackend::set_layer_capture_mask(uint32_t mask) {
-    m_layer_capture_mask = mask & 0x7Fu;
-    picodrive_rd_set_capture_mask(m_layer_capture_mask);
+    m_layer_capture_mask = mask;
+    picodrive_rd_set_capture_mask(mask & 0x7Fu);          // Genesis (7 layers)
+    picodrive_sms_lc_set_capture_mask(mask & 0x3u);       // SMS/GG (2 layers)
 }
 
 RomHeaderInfo PicoDriveBackend::get_rom_header_info() const {
@@ -651,12 +669,51 @@ std::size_t PicoDriveBackend::system_ram_size() const {
     return picodrive_retro_get_memory_size(RETRO_MEMORY_SYSTEM_RAM);
 }
 
+void PicoDriveBackend::on_emu_freeze()   { pause_aaudio_stream(); }
+void PicoDriveBackend::on_emu_unfreeze() { resume_aaudio_stream(); }
+
 void PicoDriveBackend::update_layer_captures(unsigned width, unsigned height) {
-    m_frame.layers.resize(kGenesisLayerCount);
-    for (auto& layer : m_frame.layers) {
-        if (!layer.rgba.empty()) layer.rgba.clear();
+    const bool is_sms = (width == 256 && height == 192);
+    const bool is_gg  = (width == 160 && height == 144);
+
+    if (is_sms || is_gg) {
+        m_frame.layers.resize(kSmsLayerCount);
+        for (auto& layer : m_frame.layers) {
+            layer.rgba.clear();
+            layer.depth_map.clear();
+        }
+        const std::size_t npix = static_cast<std::size_t>(width) * height;
+        for (int li = 0; li < kSmsLayerCount; ++li) {
+            if ((m_layer_capture_mask & (1u << li)) == 0) continue;
+            auto& dst = m_frame.layers[li].rgba;
+            if (dst.size() != npix) dst.resize(npix);
+            if (!picodrive_sms_lc_copy_layer_rgba(li, dst.data(), width, height)) {
+                dst.clear();
+                continue;
+            }
+            if (li == 1) {
+                // Sprite layer: populate Y-depth map from opaque pixels
+                auto& dmap = m_frame.layers[1].depth_map;
+                if (dmap.size() != npix) dmap.resize(npix);
+                for (unsigned y = 0; y < height; ++y) {
+                    const uint8_t depth_y = (height > 1u)
+                        ? static_cast<uint8_t>(y * 255u / (height - 1u)) : 128u;
+                    for (unsigned x = 0; x < width; ++x) {
+                        const std::size_t i = static_cast<std::size_t>(y) * width + x;
+                        dmap[i] = (dst[i] >> 24) ? depth_y : 0u;
+                    }
+                }
+            }
+        }
+        return;
     }
 
+    // Genesis path
+    m_frame.layers.resize(kGenesisLayerCount);
+    for (auto& layer : m_frame.layers) {
+        layer.rgba.clear();
+        layer.depth_map.clear();
+    }
     for (int li = 0; li < kGenesisLayerCount; ++li) {
         if ((m_layer_capture_mask & (1u << li)) == 0) continue;
         unsigned cap_w = 0;

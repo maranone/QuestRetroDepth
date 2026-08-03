@@ -1,4 +1,5 @@
 #include "openxr_shell.h"
+#include "audio_processor.h"
 #include "button_map.h"
 #include "experimental_rumble.h"
 #include "panel_layout.h"
@@ -48,6 +49,8 @@ static VrState default_vr_state_for_backend(BackendKind kind) {
     vs.shadows = false;
     vs.ambilight = true;
     vs.perspective_comp = true;
+    vs.audio_spatial_mode = 3;
+    vs.audio_screen_lock = true;
     switch (kind) {
     case BackendKind::Genesis: vs.vr_resolution_scale = 1.5f; break;
     case BackendKind::Gba:
@@ -819,6 +822,8 @@ static GameConfig default_config_for_backend(BackendKind kind, LayerFilterMode s
         return GameConfig::make_default_pce();
     case BackendKind::Sms:
         return GameConfig::make_default_sms();
+    case BackendKind::ScummVm:
+        return GameConfig::make_default_scummvm();
     }
     return GameConfig::make_flat();
 }
@@ -830,7 +835,8 @@ static uint32_t layer_capture_mask_for_config(const GameConfig& config,
         if (enabled && i < (int)enabled->size() && !(*enabled)[i]) continue;
         const auto& layer = config.layers[i];
         if (layer.extraction_type != ExtractionType::PerLayerCapture &&
-            layer.extraction_type != ExtractionType::VisibleSourceHybrid) continue;
+            layer.extraction_type != ExtractionType::VisibleSourceHybrid &&
+            layer.extraction_type != ExtractionType::VisibleSourceFinal) continue;
         if (layer.layer_index < 0 || layer.layer_index >= 32) continue;
         mask |= (1u << layer.layer_index);
     }
@@ -1136,6 +1142,39 @@ static void ensure_layer_runtime_state_matches_config(const GameConfig& config,
     layer_ambilight.resize(n, true);
     for (std::size_t i = old_amb; i < layer_ambilight.size(); ++i)
         layer_ambilight[i] = config.layers[i].default_ambilight;
+}
+
+static void ensure_layer_runtime_state_matches_frames(const std::vector<LayerFrame>& frames,
+                                                      std::vector<std::string>& layer_names,
+                                                      std::vector<int>& layer_order,
+                                                      std::vector<bool>& layer_enabled,
+                                                      std::vector<bool>& layer_ambilight) {
+    const int n = (int)frames.size();
+    layer_names.clear();
+    layer_names.reserve(n);
+    for (const auto& frame : frames)
+        layer_names.push_back(frame.id.empty() ? "Layer" : frame.id);
+
+    bool needs_order_repair = ((int)layer_order.size() != n);
+    if (!needs_order_repair) {
+        std::vector<bool> seen(n, false);
+        for (int idx : layer_order) {
+            if (idx < 0 || idx >= n || seen[idx]) {
+                needs_order_repair = true;
+                break;
+            }
+            seen[idx] = true;
+        }
+    }
+
+    if (needs_order_repair) {
+        layer_order.clear();
+        layer_order.reserve(n);
+        for (int i = 0; i < n; ++i) layer_order.push_back(i);
+    }
+
+    layer_enabled.resize(n, true);
+    layer_ambilight.resize(n, true);
 }
 
 static void apply_layer_auto_dup_visible(std::vector<LayerFrame>& layer_frames,
@@ -2181,10 +2220,17 @@ void OpenXrShell::mobile_tap(float u, float v) {
             case 10: m_vr_state.saturation = clamp(m_vr_state.saturation + dir * step, 0.0f, 2.0f); break;
             case 11: m_vr_state.brightness = clamp(m_vr_state.brightness + dir * step, 0.5f, 2.0f); break;
             case 13: m_vr_state.vr_resolution_scale = clamp(m_vr_state.vr_resolution_scale + dir * 0.25f, 0.25f, 4.0f); break;
+            case 14: m_vr_state.sprite_y_depth = !m_vr_state.sprite_y_depth; break;
+            case 15: m_vr_state.sprite_y_depth_spread = clamp(m_vr_state.sprite_y_depth_spread + dir * step, 0.0f, 2.0f); break;
+            case 16: m_vr_state.audio_spatial_mode = (m_vr_state.audio_spatial_mode + (dir == 0 ? 1 : dir) + 4) % 4; break;
+            case 17: m_vr_state.audio_screen_lock = !m_vr_state.audio_screen_lock; break;
             default: break;
         }
         m_settings_panel_dirty = true;
         mark_visual_state_dirty();
+        if (m_on_vr_state_changed) {
+            m_on_vr_state_changed(m_vr_state.auto_frame_skip, m_vr_state.audio_spatial_mode);
+        }
     };
 
     if (m_menu_open && m_active_sub_panel == 0) {
@@ -2279,26 +2325,29 @@ void OpenXrShell::mobile_tap(float u, float v) {
             }
         } else if (item->row == n + 1) {
             m_layer_auto_dup_percent = next_layer_auto_dup_percent(m_layer_auto_dup_percent);
-        } else if (has_filter_row && item->row == n + 2) {
+        } else if (item->row == n + 2) {
+            even_spread_layer_depths(m_config.layers);
+            m_layer_depth_selected = -1;
+        } else if (has_filter_row && item->row == n + 3) {
             apply_layer_filter_mode(next_layer_filter_mode(m_layer_filter_mode), true);
         }
         m_layer_panel_dirty = true;
         return;
     }
     if ((m_menu_open && m_active_sub_panel == 3) || (!m_menu_open && m_active_sub_panel == 3)) {
-        if (m_settings_panel_layout.items.empty()) m_settings_panel_layout = make_settings_layout(20);
+        if (m_settings_panel_layout.items.empty()) m_settings_panel_layout = make_settings_layout(24);
         const PanelLayoutItem* item = m_settings_panel_layout.hit(u, v);
         if (!item) return;
         const int row = item->row;
         if (item->role == PanelRole::Minus) adjust_setting(row, -1);
         else if (item->role == PanelRole::Plus) adjust_setting(row, +1);
-        else if (row >= 0 && row <= 13) adjust_setting(row, 0);
-        else if (row == 14) { m_settings_action_pending = 5; apply_pending_vr_changes(); }
-        else if (row == 15) { m_settings_action_pending = 1; apply_pending_vr_changes(); }
-        else if (row == 16) { m_settings_action_pending = 2; apply_pending_vr_changes(); }
-        else if (row == 17) { m_settings_action_pending = 3; apply_pending_vr_changes(); }
-        else if (row == 18) { m_settings_action_pending = 4; apply_pending_vr_changes(); }
-        else if (row == 19) { m_active_sub_panel = m_settings_return_to_quick ? k_panel_quick_edit : 0; m_settings_return_to_quick = false; }
+        else if (row >= 0 && row <= 17) adjust_setting(row, 0);
+        else if (row == 18) { m_settings_action_pending = 5; apply_pending_vr_changes(); }
+        else if (row == 19) { m_settings_action_pending = 1; apply_pending_vr_changes(); }
+        else if (row == 20) { m_settings_action_pending = 2; apply_pending_vr_changes(); }
+        else if (row == 21) { m_settings_action_pending = 3; apply_pending_vr_changes(); }
+        else if (row == 22) { m_settings_action_pending = 4; apply_pending_vr_changes(); }
+        else if (row == 23) { m_active_sub_panel = m_settings_return_to_quick ? k_panel_quick_edit : 0; m_settings_return_to_quick = false; }
         return;
     }
     if (m_menu_open && m_active_sub_panel == 4) {
@@ -3288,32 +3337,47 @@ void OpenXrShell::rebuild_layer_panel_texture() {
         env->SetBooleanArrayRegion(ambilight_arr, 0, n, av.data());
     }
 
+    // Build depth array in display order
+    jfloatArray depth_arr = env->NewFloatArray(n);
+    {
+        std::vector<jfloat> dv(n);
+        for (int i = 0; i < n; ++i) {
+            int orig = (i < (int)m_layer_order.size()) ? m_layer_order[i] : i;
+            dv[i] = (orig < (int)m_config.layers.size())
+                    ? m_config.layers[orig].depth_meters : 1.5f;
+        }
+        env->SetFloatArrayRegion(depth_arr, 0, n, dv.data());
+    }
+
     const PanelMetrics metrics = panel_metrics(PanelKind::Layers);
     const bool has_filter_row = is_snes_filter_capable_config(m_config);
     m_layer_panel_layout = make_layers_layout(n, has_filter_row);
     std::vector<jvalue> args;
-    jvalue a; a.l = enabled_arr;           args.push_back(a);
-    jvalue b; b.l = ambilight_arr;         args.push_back(b);
-    jvalue c; c.i = m_layer_panel_grabbed; args.push_back(c);
-    jvalue d; d.i = m_layer_panel_hovered; args.push_back(d); // drop-target row
-    jvalue e; e.i = metrics.tex_w;         args.push_back(e);
-    jvalue f; f.i = metrics.tex_h;         args.push_back(f);
+    jvalue a; a.l = enabled_arr;               args.push_back(a);
+    jvalue b; b.l = ambilight_arr;             args.push_back(b);
+    jvalue c; c.i = m_layer_panel_grabbed;     args.push_back(c);
+    jvalue d; d.i = m_layer_panel_hovered;     args.push_back(d); // drop-target row
+    jvalue da; da.l = depth_arr;               args.push_back(da);
+    jvalue ds; ds.i = m_layer_depth_selected;  args.push_back(ds);
+    jvalue e; e.i = metrics.tex_w;             args.push_back(e);
+    jvalue f; f.i = metrics.tex_h;             args.push_back(f);
     jstring auto_dup_label = env->NewStringUTF(layer_auto_dup_label(m_layer_auto_dup_percent).c_str());
     jstring filter_label = env->NewStringUTF(layer_filter_mode_label(m_layer_filter_mode));
-    jvalue g; g.z = m_emu_frozen_display;   args.push_back(g); // frozen state for play/pause button
-    jvalue h; h.l = auto_dup_label;         args.push_back(h);
-    jvalue i; i.l = filter_label;           args.push_back(i);
+    jvalue g; g.z = m_emu_frozen_display;      args.push_back(g);
+    jvalue h; h.l = auto_dup_label;            args.push_back(h);
+    jvalue i; i.l = filter_label;              args.push_back(i);
     jvalue j; j.z = has_filter_row ? JNI_TRUE : JNI_FALSE; args.push_back(j);
 
     rebuild_panel_tex(m_vm, m_activity_global,
                       "renderLayerPanelBitmap", names_arr, args,
-                      "([Ljava/lang/String;[Z[ZIIIIZLjava/lang/String;Ljava/lang/String;Z)[I",
+                      "([Ljava/lang/String;[Z[ZII[FIIZLjava/lang/String;Ljava/lang/String;Z)[I",
                       metrics.tex_w, metrics.tex_h, m_layer_panel_tex, m_layer_panel_dirty,
                       &m_layer_bitmap);
 
     env->DeleteLocalRef(names_arr);
     env->DeleteLocalRef(enabled_arr);
     env->DeleteLocalRef(ambilight_arr);
+    env->DeleteLocalRef(depth_arr);
     env->DeleteLocalRef(auto_dup_label);
     env->DeleteLocalRef(filter_label);
     if (detach) m_vm->DetachCurrentThread();
@@ -3332,10 +3396,11 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     }
     if (!env) return;
 
-    constexpr int k_settings_row_count = 20;
+    constexpr int k_settings_row_count = 24;
     // Build name/value/isBool arrays.
     // Rows 0-3 and 5-7: bools, Row 4: cycle, Rows 8-11: floats, Row 12: Refresh Hz,
-    // Row 13: VR Res Scale, Rows 14-19: action buttons.
+    // Row 13: VR Res Scale, Row 14: Sprite Y-Depth, Row 15: Y-Depth Spread,
+    // Row 16: Audio Spatial, Row 17: Audio direction lock, Rows 18-23: action buttons.
     struct SettingDef { const char* name; bool is_bool; };
     static const SettingDef defs[k_settings_row_count] = {
         {"Curve Screen", true }, {"Upscale",      true },
@@ -3346,7 +3411,11 @@ void OpenXrShell::rebuild_settings_panel_texture() {
         {"Brightness",   false},
         {"Refresh Hz",   false},
         {"VR Res Scale",  false},
-        // Action buttons (rows 14-19) — rendered specially in Kotlin
+        {"Sprite Y-Depth", true},
+        {"Y-Depth Spread", false},
+        {"Audio Spatial",  false},
+        {"Audio direction locked to screen", true},
+        // Action buttons (rows 18-23) — rendered specially in Kotlin
         {"Reset Settings",  false},
         {"",       false},
         {"",       false},
@@ -3362,10 +3431,10 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     const bool has_active_rom = !m_current_rom_name.empty();
     std::array<std::string, k_settings_row_count> dynamic_names;
     for (int i = 0; i < k_settings_row_count; ++i) dynamic_names[i] = defs[i].name;
-    dynamic_names[15] = "Save " + game_target + " Settings";
-    dynamic_names[16] = "Save " + backend_target + " Global Settings";
-    dynamic_names[17] = "Load " + game_target + " Settings";
-    dynamic_names[18] = "Load " + backend_target + " Global Settings";
+    dynamic_names[19] = "Save " + game_target + " Settings";
+    dynamic_names[20] = "Save " + backend_target + " Global Settings";
+    dynamic_names[21] = "Load " + game_target + " Settings";
+    dynamic_names[22] = "Load " + backend_target + " Global Settings";
 
     // Determine display refresh rate label
     char refresh_label[32];
@@ -3405,13 +3474,18 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     snprintf(val_bufs[11], sizeof(val_bufs[11]), "%.2f", m_vr_state.brightness);
     snprintf(val_bufs[12], sizeof(val_bufs[12]), "%s", refresh_label);
     snprintf(val_bufs[13], sizeof(val_bufs[13]), "%.2fx", m_vr_state.vr_resolution_scale);
-    // Action button rows 14-19
-    snprintf(val_bufs[14], sizeof(val_bufs[14]), "ACTION"); // Reset
-    snprintf(val_bufs[15], sizeof(val_bufs[15]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Save Game
-    snprintf(val_bufs[16], sizeof(val_bufs[16]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Save Global
-    snprintf(val_bufs[17], sizeof(val_bufs[17]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Load Game
-    snprintf(val_bufs[18], sizeof(val_bufs[18]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Load Global
-    snprintf(val_bufs[19], sizeof(val_bufs[19]), "ACTION"); // Back
+    snprintf(val_bufs[14], sizeof(val_bufs[14]), "%s", m_vr_state.sprite_y_depth ? "ON" : "OFF");
+    snprintf(val_bufs[15], sizeof(val_bufs[15]), "%.2fm", m_vr_state.sprite_y_depth_spread);
+    { static const char* k_spatial_labels[] = {"OFF", "WIDE", "SPATIAL", "SPAT+HAP"};
+      snprintf(val_bufs[16], sizeof(val_bufs[16]), "%s", k_spatial_labels[m_vr_state.audio_spatial_mode]); }
+    snprintf(val_bufs[17], sizeof(val_bufs[17]), "%s", m_vr_state.audio_screen_lock ? "ON" : "OFF");
+    // Action button rows 18-23
+    snprintf(val_bufs[18], sizeof(val_bufs[18]), "ACTION"); // Reset
+    snprintf(val_bufs[19], sizeof(val_bufs[19]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Save Game
+    snprintf(val_bufs[20], sizeof(val_bufs[20]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Save Global
+    snprintf(val_bufs[21], sizeof(val_bufs[21]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Load Game
+    snprintf(val_bufs[22], sizeof(val_bufs[22]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Load Global
+    snprintf(val_bufs[23], sizeof(val_bufs[23]), "ACTION"); // Back
 
     jclass str_cls = env->FindClass("java/lang/String");
     if (!str_cls) { env->ExceptionClear(); if (detach) m_vm->DetachCurrentThread(); return; }
@@ -4078,6 +4152,7 @@ void OpenXrShell::set_current_rom(const std::string& rom_filename) {
 
 void OpenXrShell::set_current_backend_kind(BackendKind kind) {
     m_current_backend_kind = kind;
+    reset_emulation_cache_for_rom_change();
     if (!is_snes_filter_capable_config(m_config) && kind == BackendKind::Genesis) {
         m_layer_filter_mode = LayerFilterMode::Hybrid;
     }
@@ -4094,10 +4169,18 @@ void OpenXrShell::set_current_backend_kind(BackendKind kind) {
         m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     sync_layer_capture_mask();
     refresh_quick_layer_presets();
+    if (m_on_vr_state_changed) m_on_vr_state_changed(m_vr_state.auto_frame_skip, m_vr_state.audio_spatial_mode);
     m_layer_panel_dirty = true;
     m_settings_panel_dirty = true;
     refresh_save_state_slots();
     m_save_state_panel_dirty = true;
+}
+
+void OpenXrShell::reset_emulation_cache_for_rom_change() {
+    m_cached_frame_out = {};
+    m_cached_frame_seq = 0;
+    m_cached_layer_frames.clear();
+    m_render_layer_refs.clear();
 }
 
 void OpenXrShell::set_current_game_name(const std::string& name) {
@@ -4244,7 +4327,7 @@ void OpenXrShell::reset_settings() {
     presentation::ensure_layer_runtime_state_matches_config(m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
     sync_layer_capture_mask();
     refresh_quick_layer_presets();
-    if (m_on_vr_state_changed) m_on_vr_state_changed(m_vr_state.auto_frame_skip);
+    if (m_on_vr_state_changed) m_on_vr_state_changed(m_vr_state.auto_frame_skip, m_vr_state.audio_spatial_mode);
     if (m_on_experimental_rumble_changed) m_on_experimental_rumble_changed(m_experimental_rumble_enabled);
     m_settings_panel_dirty = true;
     m_layer_panel_dirty    = true;
@@ -4459,6 +4542,16 @@ static void write_quick_layer_presets_file(const std::string& path,
         std::fprintf(f, "ordered_ids_%d=%s\n", i, join_ids(p.ordered_ids).c_str());
         std::fprintf(f, "enabled_%d=%s\n", i, join_bools(p.enabled).c_str());
         std::fprintf(f, "ambilight_%d=%s\n", i, join_bools(p.ambilight).c_str());
+        if (!p.depths.empty()) {
+            std::string ds;
+            for (int j = 0; j < (int)p.depths.size(); ++j) {
+                if (j > 0) ds += ',';
+                char buf[32];
+                std::snprintf(buf, sizeof(buf), "%.4f", p.depths[j]);
+                ds += buf;
+            }
+            std::fprintf(f, "depths_%d=%s\n", i, ds.c_str());
+        }
     }
     fclose(f);
 }
@@ -4484,6 +4577,17 @@ static void load_quick_layer_presets_file(const std::string& path,
             presets[idx].enabled = parse_bools(value);
         } else if (std::sscanf(key.c_str(), "ambilight_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
             presets[idx].ambilight = parse_bools(value);
+        } else if (std::sscanf(key.c_str(), "depths_%d", &idx) == 1 && idx >= 0 && idx < (int)presets.size()) {
+            presets[idx].depths.clear();
+            std::string tok;
+            for (size_t pos = 0, end; pos <= value.size(); pos = end + 1) {
+                end = value.find(',', pos);
+                if (end == std::string::npos) end = value.size();
+                tok = value.substr(pos, end - pos);
+                if (!tok.empty()) {
+                    try { presets[idx].depths.push_back(std::stof(tok)); } catch (...) {}
+                }
+            }
         }
     }
     fclose(f);
@@ -4542,6 +4646,14 @@ void OpenXrShell::load_settings(bool game_scope) {
                           nullptr, &m_layer_auto_dup_percent, &loaded_rr, &loaded_rumble, &m_button_map,
                           m_current_backend_kind);
         }
+        if (!is_snes_filter_capable_config(m_config) &&
+            sniffed_layers > 0 &&
+            sniffed_layers != (int)m_config.layers.size()) {
+            m_config = presentation::default_config_for_backend(m_current_backend_kind, (int)m_layer_filter_mode);
+            m_layer_order.clear();
+            m_layer_enabled.clear();
+            m_layer_ambilight.clear();
+        }
         m_experimental_rumble_enabled = loaded_rumble;
         if (loaded_rr >= 0.0f) {
             m_desired_refresh_rate = loaded_rr;
@@ -4578,6 +4690,15 @@ void OpenXrShell::load_settings(bool game_scope) {
                 loaded = settings_load(path, m_vr_state, m_config, m_layer_order, m_layer_enabled,
                                        m_layer_ambilight, nullptr, &m_layer_auto_dup_percent, nullptr, &loaded_rumble, &m_button_map,
                                        m_current_backend_kind);
+            }
+            if (loaded &&
+                !is_snes_filter_capable_config(m_config) &&
+                sniffed_layers > 0 &&
+                sniffed_layers != (int)m_config.layers.size()) {
+                m_config = presentation::default_config_for_backend(m_current_backend_kind, (int)m_layer_filter_mode);
+                m_layer_order.clear();
+                m_layer_enabled.clear();
+                m_layer_ambilight.clear();
             }
         }
         // If no exact match and we have header-derived game name, scan for any version match
@@ -4621,6 +4742,15 @@ void OpenXrShell::load_settings(bool game_scope) {
                                                        nullptr, &m_layer_auto_dup_percent, nullptr, &loaded_rumble, &m_button_map,
                                                        m_current_backend_kind);
                             }
+                            if (loaded &&
+                                !is_snes_filter_capable_config(m_config) &&
+                                sniffed_layers > 0 &&
+                                sniffed_layers != (int)m_config.layers.size()) {
+                                m_config = presentation::default_config_for_backend(m_current_backend_kind, (int)m_layer_filter_mode);
+                                m_layer_order.clear();
+                                m_layer_enabled.clear();
+                                m_layer_ambilight.clear();
+                            }
                             break;
                         }
                     }
@@ -4642,7 +4772,7 @@ void OpenXrShell::load_settings(bool game_scope) {
     m_saved_layer_mode_state.enabled = m_layer_enabled;
     m_saved_layer_mode_state.ambilight = m_layer_ambilight;
     m_vr_state.vr_resolution_scale = snap_vr_resolution_scale(m_vr_state.vr_resolution_scale);
-    if (m_on_vr_state_changed) m_on_vr_state_changed(m_vr_state.auto_frame_skip);
+    if (m_on_vr_state_changed) m_on_vr_state_changed(m_vr_state.auto_frame_skip, m_vr_state.audio_spatial_mode);
     if (m_on_experimental_rumble_changed) m_on_experimental_rumble_changed(m_experimental_rumble_enabled);
     m_settings_panel_dirty  = true;
     m_layer_panel_dirty     = true;
@@ -4853,6 +4983,7 @@ bool OpenXrShell::try_load_latest_state(std::string& loaded_name_out, std::strin
 void OpenXrShell::maybe_run_autosave() {
     if (m_autosave_interval_seconds <= 0 || m_current_rom_name.empty()) return;
     if (m_menu_open || m_emu_frozen_display) return;
+    if (m_autosave_in_progress.load(std::memory_order_relaxed)) return;
 
     const std::uint64_t now_ms = monotonic_time_ms();
     const std::uint64_t interval_ms = (std::uint64_t)m_autosave_interval_seconds * 1000ull;
@@ -4860,13 +4991,36 @@ void OpenXrShell::maybe_run_autosave() {
 
     const std::string dir = get_settings_dir();
     if (dir.empty()) return;
-    const std::string path =
+
+    SaveStateCapture capture;
+    {
+        std::lock_guard<std::mutex> lk(m_mutex);
+        capture = m_save_state_capture;
+    }
+    if (!capture) return;
+
+    std::string path =
         dir + "/" + backend_storage_subdir(m_current_backend_kind) + "/savestates/" +
         m_current_rom_name + "/" + k_autosave_file_name;
-    std::string err;
-    if (save_state_to_path(path, err)) {
-        m_last_autosave_time_ms = now_ms;
-    }
+
+    m_last_autosave_time_ms = now_ms;
+    m_autosave_in_progress.store(true, std::memory_order_relaxed);
+
+    std::thread([this,
+                 path    = std::move(path),
+                 capture = std::move(capture)]() {
+        std::vector<uint8_t> bytes;
+        std::string err;
+        if (capture(bytes, err) && !bytes.empty()) {
+            std::ofstream out(path, std::ios::binary | std::ios::trunc);
+            if (out) {
+                out.write(reinterpret_cast<const char*>(bytes.data()),
+                          (std::streamsize)bytes.size());
+                out.close();
+            }
+        }
+        m_autosave_in_progress.store(false, std::memory_order_relaxed);
+    }).detach();
 }
 
 // ============================================================
@@ -5173,6 +5327,13 @@ bool OpenXrShell::apply_quick_layer_preset(int idx, std::string& status_out) {
     for (int i = 0; i < (int)preset.ordered_ids.size() && i < (int)preset.ambilight.size(); ++i) {
         const int layer_idx = layer_index_by_id(m_config, preset.ordered_ids[i].c_str());
         if (layer_idx >= 0 && layer_idx < (int)ambi.size()) ambi[layer_idx] = preset.ambilight[i];
+    }
+    if (!preset.depths.empty()) {
+        for (int i = 0; i < (int)preset.ordered_ids.size() && i < (int)preset.depths.size(); ++i) {
+            const int layer_idx = layer_index_by_id(m_config, preset.ordered_ids[i].c_str());
+            if (layer_idx >= 0 && layer_idx < (int)m_config.layers.size())
+                m_config.layers[layer_idx].depth_meters = preset.depths[i];
+        }
     }
     m_layer_order = std::move(order);
     m_layer_enabled = std::move(enabled);
@@ -5552,7 +5713,7 @@ void OpenXrShell::poll_actions() {
                 int row = item ? item->row : -1;
                 if (row != m_layer_panel_hovered) m_layer_panel_hovered = row;
             } else if (best_panel == k_panel_settings) {
-                if (m_settings_panel_layout.items.empty()) m_settings_panel_layout = make_settings_layout(20);
+                if (m_settings_panel_layout.items.empty()) m_settings_panel_layout = make_settings_layout(24);
                 const PanelLayoutItem* item = assign_hit(m_settings_panel_layout);
                 int row = item ? item->row : -1;
                 int area = 0;
@@ -5978,7 +6139,15 @@ void OpenXrShell::poll_actions() {
                 fire_haptic(true, 0.35f, 40);
                 do_step_one();
             }
-            else if (has_filter_row && rtrig_rising && m_laser_hit && row == n + 2) {
+            // Reset depths button: row == n + 2
+            else if (rtrig_rising && m_laser_hit && row == n + 2) {
+                even_spread_layer_depths(m_config.layers);
+                m_layer_depth_selected = -1;
+                m_layer_panel_dirty = true;
+                fire_haptic(true, 0.35f, 40);
+                do_step_one();
+            }
+            else if (has_filter_row && rtrig_rising && m_laser_hit && row == n + 3) {
                 apply_layer_filter_mode(next_layer_filter_mode(m_layer_filter_mode), true);
                 m_layer_panel_dirty = true;
                 fire_haptic(true, 0.35f, 40);
@@ -6003,7 +6172,12 @@ void OpenXrShell::poll_actions() {
                     fire_haptic(true, 0.3f, 30);
                     do_step_one();
                 } else {
-                    // Start drag (left 60%)
+                    // Left 60%: toggle depth-edit mode, also start drag
+                    if (m_layer_depth_selected == row) {
+                        m_layer_depth_selected = -1;
+                    } else {
+                        m_layer_depth_selected = row;
+                    }
                     m_layer_panel_grabbed = row;
                     m_layer_panel_dirty   = true;
                     fire_haptic(true, 0.25f, 20);
@@ -6054,6 +6228,23 @@ void OpenXrShell::poll_actions() {
                 s_prev_hover = row;
             }
             if (m_layer_panel_grabbed < 0) s_prev_hover = -1;
+
+            // Right stick Y: adjust depth of selected layer (rate-limited)
+            if (m_layer_depth_selected >= 0 && m_layer_depth_selected < n
+                && std::abs(ry) > 0.5f
+                && now_panel - m_last_layer_fire > k_setting_interval) {
+                m_last_layer_fire = now_panel;
+                const int orig = m_layer_order[m_layer_depth_selected];
+                if (orig < (int)m_config.layers.size()) {
+                    constexpr float step = 0.05f;
+                    float& d = m_config.layers[orig].depth_meters;
+                    d += (ry > 0 ? -step : step); // stick up = closer = decrease depth
+                    if (d < 0.05f) d = 0.05f;
+                    if (d > 10.0f) d = 10.0f;
+                    m_layer_panel_dirty = true;
+                    do_step_one();
+                }
+            }
 
         } else if (m_laser_panel == k_panel_settings) {
             // ---- Settings panel ---------------------------------------------
@@ -6137,13 +6328,18 @@ void OpenXrShell::poll_actions() {
                         m_settings_panel_dirty = true;
                         break;
                     }
+                    case 16: m_vr_state.audio_spatial_mode = (m_vr_state.audio_spatial_mode + (dir == 0 ? 1 : dir) + 4) % 4; m_settings_panel_dirty=true; break;
+                    case 17: m_vr_state.audio_screen_lock = !m_vr_state.audio_screen_lock; m_settings_panel_dirty=true; break;
                     default: break;
+                }
+                if (m_on_vr_state_changed) {
+                    m_on_vr_state_changed(m_vr_state.auto_frame_skip, m_vr_state.audio_spatial_mode);
                 }
             };
 
             int row = m_settings_panel_hovered;
             if (rtrig_rising && m_laser_hit && row >= 0) {
-                if ((row >= 0 && row <= 2) || row == 4 || row == 5 || row == 6 || row == 7) {
+                if ((row >= 0 && row <= 2) || row == 4 || row == 5 || row == 6 || row == 7 || row == 14 || row == 16 || row == 17) {
                     adjust_setting(row, 0);
                     fire_haptic(true, 0.3f, 25);
                     do_step_one();
@@ -6163,50 +6359,49 @@ void OpenXrShell::poll_actions() {
                     fire_haptic(true, 0.2f, 15);
                     do_step_one();
                     }
-                } else if (row == 13) {
+                } else if (row == 13 || row == 15) {
                     if (m_settings_panel_area == 0) {
                         // Numeric rows only act on the visible minus/plus zones.
                     } else {
-                    // VR Res Scale
                     int dir = (m_settings_panel_area == 1) ? -1 : 1;
                     adjust_setting(row, dir);
                     fire_haptic(true, 0.2f, 15);
                     do_step_one();
                     }
                 } else {
-                    // Action buttons (rows 14-19)
+                    // Action buttons (rows 18-23)
                     switch (row) {
-                        case 14:
+                        case 18:
                             m_settings_action_pending = 5; break; // Reset
-                        case 15:
+                        case 19:
                             if (m_current_rom_name.empty()) {
                                 set_status("Load a ROM before saving game settings.");
                                 fire_haptic(true, 0.2f, 20);
                                 break;
                             }
                             m_settings_action_pending = 1; break; // Save Game
-                        case 16:
+                        case 20:
                             if (m_current_rom_name.empty()) {
                                 set_status("Load a ROM before saving global settings.");
                                 fire_haptic(true, 0.2f, 20);
                                 break;
                             }
                             m_settings_action_pending = 2; break; // Save Global
-                        case 17:
+                        case 21:
                             if (m_current_rom_name.empty()) {
                                 set_status("Load a ROM before loading game settings.");
                                 fire_haptic(true, 0.2f, 20);
                                 break;
                             }
                             m_settings_action_pending = 3; break; // Load Game
-                        case 18:
+                        case 22:
                             if (m_current_rom_name.empty()) {
                                 set_status("Load a ROM before loading global settings.");
                                 fire_haptic(true, 0.2f, 20);
                                 break;
                             }
                             m_settings_action_pending = 4; break; // Load Global
-                        case 19: // Back
+                        case 23: // Back
                             m_active_sub_panel        = m_settings_return_to_quick ? k_panel_quick_edit : 0;
                             m_settings_panel_hovered = -1;
                             m_settings_panel_area    = 0;
@@ -6220,7 +6415,7 @@ void OpenXrShell::poll_actions() {
                 }
             }
             // Continuous adjustment while holding trigger + stick X (only for float rows and int sliders)
-            if (rtrig_now && ((row >= 8 && row <= 11) || row == 13) && std::abs(rx) > 0.5f
+            if (rtrig_now && ((row >= 8 && row <= 11) || row == 13 || row == 15) && std::abs(rx) > 0.5f
                 && now_panel - m_last_settings_fire > k_setting_interval) {
                 m_last_settings_fire = now_panel;
                 adjust_setting(row, rx > 0 ? 1 : -1);
@@ -6622,11 +6817,86 @@ void OpenXrShell::poll_actions() {
             m_input_state.button_r      = btn_r;
             m_input_state.button_start  = btn_start;
             m_input_state.button_select = btn_select;
+
+            // ScummVM: raycast right controller aim against game screen quad, inject mouse coords
+            m_scummvm_laser_hit = false;
+            if (m_current_backend_kind == BackendKind::ScummVm &&
+                !m_config.layers.empty() &&
+                m_impl->raim_space != XR_NULL_HANDLE) {
+
+                XrPosef aim{};
+                if (get_controller_pose(m_impl->raim_space, aim)) {
+                    const XrVector3f& O = aim.position;
+                    const XrQuaternionf& aq = aim.orientation;
+                    XrVector3f D;
+                    D.x = -2.0f*(aq.x*aq.z + aq.w*aq.y);
+                    D.y =  2.0f*(aq.w*aq.x - aq.y*aq.z);
+                    D.z =  2.0f*aq.x*aq.x + 2.0f*aq.y*aq.y - 1.0f;
+
+                    const float depth  = m_config.layers[0].depth_meters;
+                    const float quad_w = m_config.layers[0].quad_width_meters * m_canvas_scale;
+                    const float aspect = (m_config.virtual_width > 0 && m_config.virtual_height > 0)
+                                         ? (float)m_config.virtual_height / (float)m_config.virtual_width
+                                         : 0.625f;
+                    const float quad_h = quad_w * aspect;
+
+                    const float cos_el = std::cos(m_canvas_el);
+                    const float sin_el = std::sin(m_canvas_el);
+                    const float cos_az = std::cos(m_canvas_az);
+                    const float sin_az = std::sin(m_canvas_az);
+
+                    const XrVector3f N = { sin_az * cos_el,  sin_el,  -cos_az * cos_el };
+                    const XrVector3f R = { cos_az,            0.0f,    sin_az           };
+                    const XrVector3f U = { -sin_az * sin_el,  cos_el,  -cos_az * sin_el };
+                    const XrVector3f P = {
+                        depth * sin_az * cos_el + m_canvas_x,
+                        depth * sin_el          + m_canvas_y,
+                       -depth * cos_az * cos_el
+                    };
+
+                    const float dN = D.x*N.x + D.y*N.y + D.z*N.z;
+                    m_scummvm_laser_origin = O;
+                    constexpr float k_scumm_laser_max = 5.0f;
+                    if (std::abs(dN) > 0.001f) {
+                        const float t = ((P.x-O.x)*N.x + (P.y-O.y)*N.y + (P.z-O.z)*N.z) / dN;
+                        m_scummvm_laser_end = { O.x + t*D.x, O.y + t*D.y, O.z + t*D.z };
+                        if (t > 0.01f && t < k_scumm_laser_max) {
+                            const float hx = m_scummvm_laser_end.x - P.x;
+                            const float hy = m_scummvm_laser_end.y - P.y;
+                            const float hz = m_scummvm_laser_end.z - P.z;
+                            const float u = (hx*R.x + hy*R.y + hz*R.z) / (quad_w * 0.5f) * 0.5f + 0.5f;
+                            const float v = -(hx*U.x + hy*U.y + hz*U.z) / (quad_h * 0.5f) * 0.5f + 0.5f;
+                            if (u >= 0.0f && u <= 1.0f && v >= 0.0f && v <= 1.0f) {
+                                m_scummvm_laser_hit = true;
+                                m_input_state.mouse_x = (int16_t)std::clamp(
+                                    (int)(u * (float)m_config.virtual_width),
+                                    0, m_config.virtual_width - 1);
+                                m_input_state.mouse_y = (int16_t)std::clamp(
+                                    (int)(v * (float)m_config.virtual_height),
+                                    0, m_config.virtual_height - 1);
+                                m_input_state.mouse_left_button  = qi_state[QI_RTRIG];
+                                m_input_state.mouse_right_button = qi_state[QI_A];
+                            }
+                        }
+                    } else {
+                        m_scummvm_laser_end = { O.x + D.x*k_scumm_laser_max,
+                                                O.y + D.y*k_scumm_laser_max,
+                                                O.z + D.z*k_scumm_laser_max };
+                    }
+                }
+            }
         }
 
-        // Right stick click → recenter
+        // Right stick click: short press → recenter, long press (≥500 ms) → randomize
         bool rclick = get_bool(m_impl->act_rclick);
-        if (rclick && !m_rstick_click_prev) recenter_to_hmd();
+        if (rclick && !m_rstick_click_prev) {
+            m_rclick_press_time = m_frame_predicted_time;
+        } else if (!rclick && m_rstick_click_prev) {
+            const XrTime held_ns = m_frame_predicted_time - m_rclick_press_time;
+            if (held_ns >= 500'000'000LL) randomize();
+            else                          recenter_to_hmd();
+            m_rclick_press_time = 0;
+        }
         m_rstick_click_prev = rclick;
         m_rtrig_prev = false;
     }
@@ -6759,12 +7029,14 @@ void OpenXrShell::apply_pending_vr_changes() {
             preset.ordered_ids.clear();
             preset.enabled.clear();
             preset.ambilight.clear();
+            preset.depths.clear();
             for (int display_idx = 0; display_idx < (int)m_layer_order.size(); ++display_idx) {
                 const int orig = m_layer_order[display_idx];
                 if (orig < 0 || orig >= (int)m_config.layers.size()) continue;
                 preset.ordered_ids.push_back(m_config.layers[orig].id);
                 preset.enabled.push_back(orig < (int)m_layer_enabled.size() ? m_layer_enabled[orig] : true);
                 preset.ambilight.push_back(orig < (int)m_layer_ambilight.size() ? m_layer_ambilight[orig] : true);
+                preset.depths.push_back(m_config.layers[orig].depth_meters);
             }
             const std::string root_dir = get_settings_dir();
             if (!root_dir.empty()) {
@@ -6826,7 +7098,7 @@ void OpenXrShell::apply_pending_vr_changes() {
             m_vr_state = decoded;
             m_vr_state.vr_resolution_scale = snap_vr_resolution_scale(m_vr_state.vr_resolution_scale);
             if (std::abs(prev_vr_scale - m_vr_state.vr_resolution_scale) > 0.001f) destroy_swapchains();
-            if (m_on_vr_state_changed) m_on_vr_state_changed(m_vr_state.auto_frame_skip);
+            if (m_on_vr_state_changed) m_on_vr_state_changed(m_vr_state.auto_frame_skip, m_vr_state.audio_spatial_mode);
             sync_layer_capture_mask();
             m_saved_layer_mode_state.valid = is_snes_filter_capable_config(m_config);
             m_saved_layer_mode_state.mode = m_layer_filter_mode;
@@ -6888,6 +7160,32 @@ void OpenXrShell::apply_pending_vr_changes() {
         EmuStepOne step_fn;
         { std::lock_guard<std::mutex> lk(m_mutex); step_fn = m_emu_step_one; }
         if (step_fn) step_fn();
+    }
+    // Screen-lock: compute head yaw relative to screen and head pitch, store atomically
+    if (m_vr_state.audio_screen_lock && m_impl) {
+        const XrPosef& hmd = m_impl->last_hmd_pose;
+        const float qx = hmd.orientation.x, qy = hmd.orientation.y,
+                    qz = hmd.orientation.z, qw = hmd.orientation.w;
+        const float fwd_x =  2.f*(qx*qz - qw*qy);
+        const float fwd_y =  2.f*(qy*qz + qw*qx);
+        const float fwd_z = -(1.f - 2.f*(qx*qx + qy*qy));
+        const float dx = m_panel_pose.position.x - hmd.position.x;
+        const float dz = m_panel_pose.position.z - hmd.position.z;
+        const float yaw   = atan2f(fwd_x*dz - fwd_z*dx, fwd_x*dx + fwd_z*dz);
+        const float pitch = asinf(std::clamp(fwd_y, -1.f, 1.f));
+        constexpr float kMaxYaw = 1.22f, kMaxPitch = 0.785f;
+        g_audio_processor.screen_yaw.store(std::clamp(yaw/kMaxYaw,   -1.f, 1.f), std::memory_order_relaxed);
+        g_audio_processor.head_pitch.store(std::clamp(pitch/kMaxPitch,-1.f, 1.f), std::memory_order_relaxed);
+    } else {
+        g_audio_processor.screen_yaw.store(0.f, std::memory_order_relaxed);
+        g_audio_processor.head_pitch.store(0.f, std::memory_order_relaxed);
+    }
+    if (m_vr_state.audio_spatial_mode == 3) {
+        const float rms = g_audio_processor.bass_rms.load(std::memory_order_relaxed);
+        if (rms > 0.05f) {
+            fire_haptic(false, rms, 16);
+            fire_haptic(true,  rms, 16);
+        }
     }
     flush_pending_haptics();
 }
@@ -6967,17 +7265,38 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
             }
         }
 
-        LayerProcessor proc(m_config);
-        const uint8_t* zbuf = m_cached_frame_out.zbuffer.empty() ? nullptr : m_cached_frame_out.zbuffer.data();
         const bool build_object_boxes = m_vr_state.depth_mode == DepthMode::BoundingBox;
-        proc.process_into(
-            m_cached_layer_frames,
-            m_cached_frame_out.rgba8888.data(),
-            (int)m_cached_frame_out.width,
-            (int)m_cached_frame_out.height,
-            zbuf,
-            &m_cached_frame_out,
-            build_object_boxes);
+        if (!m_cached_frame_out.native_layers.empty()) {
+            m_cached_layer_frames.resize(m_cached_frame_out.native_layers.size());
+            for (std::size_t ni = 0; ni < m_cached_frame_out.native_layers.size(); ++ni) {
+                const auto& nl = m_cached_frame_out.native_layers[ni];
+                auto& lf = m_cached_layer_frames[ni];
+                lf.id = nl.id;
+                lf.depth_meters = nl.depth_meters;
+                lf.quad_width_meters = nl.quad_width_meters;
+                lf.copies.clear();
+                lf.width = nl.width;
+                lf.height = nl.height;
+                lf.rgba = nl.rgba;
+                lf.depth_map.clear();
+                lf.has_pixels = !nl.rgba.empty();
+                lf.is_ui_bar = nl.is_ui_bar;
+                lf.wedge_eligible = false;
+                lf.bbox_eligible = false;
+                lf.object_boxes.clear();
+            }
+        } else {
+            LayerProcessor proc(m_config);
+            const uint8_t* zbuf = m_cached_frame_out.zbuffer.empty() ? nullptr : m_cached_frame_out.zbuffer.data();
+            proc.process_into(
+                m_cached_layer_frames,
+                m_cached_frame_out.rgba8888.data(),
+                (int)m_cached_frame_out.width,
+                (int)m_cached_frame_out.height,
+                zbuf,
+                &m_cached_frame_out,
+                build_object_boxes);
+        }
 
         const bool visible_source_backend =
             m_current_backend_kind == BackendKind::Nes ||
@@ -6986,6 +7305,7 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
             m_current_backend_kind == BackendKind::Pce ||
             m_current_backend_kind == BackendKind::Sms;
         if (visible_source_backend) {
+            static int visible_source_empty_log_counter = 0;
             bool any_visible_source_layer = false;
             for (const auto& layer : m_cached_layer_frames) {
                 if (layer.has_pixels) {
@@ -6994,35 +7314,88 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
                 }
             }
             if (!any_visible_source_layer) {
-                std::array<int, 8> source_counts{};
-                const std::size_t npix = static_cast<std::size_t>(m_cached_frame_out.width) * m_cached_frame_out.height;
-                const std::size_t count = std::min(npix, m_cached_frame_out.visible_source_id.size());
-                for (std::size_t i = 0; i < count; ++i) {
-                    const uint8_t src_id = m_cached_frame_out.visible_source_id[i];
-                    if (src_id < source_counts.size()) {
-                        source_counts[src_id]++;
+                const bool should_log_empty = (++visible_source_empty_log_counter % 120) == 1;
+                if (should_log_empty) {
+                    std::array<int, 8> source_counts{};
+                    const std::size_t npix = static_cast<std::size_t>(m_cached_frame_out.width) * m_cached_frame_out.height;
+                    const std::size_t count = std::min(npix, m_cached_frame_out.visible_source_id.size());
+                    for (std::size_t i = 0; i < count; ++i) {
+                        const uint8_t src_id = m_cached_frame_out.visible_source_id[i];
+                        if (src_id < source_counts.size()) {
+                            source_counts[src_id]++;
+                        }
+                    }
+                    const char* backend_name = "visible-source";
+                    switch (m_current_backend_kind) {
+                    case BackendKind::Nes: backend_name = "NES"; break;
+                    case BackendKind::Gba: backend_name = "GBA"; break;
+                    case BackendKind::Gb:  backend_name = "GB/GBC"; break;
+                    case BackendKind::Pce: backend_name = "PCE"; break;
+                    case BackendKind::Sms: backend_name = "SMS/GG"; break;
+                    default: break;
+                    }
+                    LOGE("%s layered extraction produced no visible layers for %ux%u frame; visible_source bytes=%zu counts=[0:%d 1:%d 2:%d 3:%d 4:%d 5:%d]",
+                         backend_name,
+                         m_cached_frame_out.width,
+                         m_cached_frame_out.height,
+                         m_cached_frame_out.visible_source_id.size(),
+                         source_counts[0],
+                         source_counts[1],
+                         source_counts[2],
+                         source_counts[3],
+                         source_counts[4],
+                         source_counts[5]);
+                }
+                if (visible_source_backend &&
+                    !m_cached_layer_frames.empty() &&
+                    !m_cached_frame_out.rgba8888.empty()) {
+                    GameConfig fallback_cfg = GameConfig::make_flat();
+                    fallback_cfg.virtual_width = (int)m_cached_frame_out.width;
+                    fallback_cfg.virtual_height = (int)m_cached_frame_out.height;
+                    fallback_cfg.quad_y_meters = m_config.quad_y_meters;
+                    fallback_cfg.layers[0].id = m_cached_layer_frames[0].id;
+                    fallback_cfg.layers[0].depth_meters = m_cached_layer_frames[0].depth_meters;
+                    fallback_cfg.layers[0].quad_width_meters = m_cached_layer_frames[0].quad_width_meters;
+                    fallback_cfg.layers[0].copies = m_cached_layer_frames[0].copies;
+
+                    std::vector<LayerFrame> fallback_frames;
+                    LayerProcessor fallback_proc(fallback_cfg);
+                    fallback_proc.process_into(
+                        fallback_frames,
+                        m_cached_frame_out.rgba8888.data(),
+                        (int)m_cached_frame_out.width,
+                        (int)m_cached_frame_out.height,
+                        nullptr,
+                        &m_cached_frame_out,
+                        build_object_boxes);
+
+                    if (!fallback_frames.empty()) {
+                        m_cached_layer_frames[0] = std::move(fallback_frames[0]);
+                        for (std::size_t i = 1; i < m_cached_layer_frames.size(); ++i) {
+                            m_cached_layer_frames[i].has_pixels = false;
+                            m_cached_layer_frames[i].wedge_eligible = false;
+                            m_cached_layer_frames[i].bbox_eligible = false;
+                            m_cached_layer_frames[i].object_boxes.clear();
+                            std::fill(m_cached_layer_frames[i].rgba.begin(),
+                                      m_cached_layer_frames[i].rgba.end(), 0u);
+                        }
+                        if (should_log_empty) {
+                            const char* backend_name = "visible-source";
+                            switch (m_current_backend_kind) {
+                            case BackendKind::Nes: backend_name = "NES"; break;
+                            case BackendKind::Gba: backend_name = "GBA"; break;
+                            case BackendKind::Gb:  backend_name = "GB/GBC"; break;
+                            case BackendKind::Pce: backend_name = "PCE"; break;
+                            case BackendKind::Sms: backend_name = "SMS/GG"; break;
+                            default: break;
+                            }
+                            LOGI("%s render fallback engaged: flat full-frame extraction for %ux%u frame",
+                                 backend_name, m_cached_frame_out.width, m_cached_frame_out.height);
+                        }
                     }
                 }
-                const char* backend_name = "visible-source";
-                switch (m_current_backend_kind) {
-                case BackendKind::Nes: backend_name = "NES"; break;
-                case BackendKind::Gba: backend_name = "GBA"; break;
-                case BackendKind::Gb:  backend_name = "GB/GBC"; break;
-                case BackendKind::Pce: backend_name = "PCE"; break;
-                case BackendKind::Sms: backend_name = "SMS/GG"; break;
-                default: break;
-                }
-                LOGE("%s layered extraction produced no visible layers for %ux%u frame; visible_source bytes=%zu counts=[0:%d 1:%d 2:%d 3:%d 4:%d 5:%d]",
-                     backend_name,
-                     m_cached_frame_out.width,
-                     m_cached_frame_out.height,
-                     m_cached_frame_out.visible_source_id.size(),
-                     source_counts[0],
-                     source_counts[1],
-                     source_counts[2],
-                     source_counts[3],
-                     source_counts[4],
-                     source_counts[5]);
+            } else {
+                visible_source_empty_log_counter = 0;
             }
         }
 
@@ -7087,7 +7460,9 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         }
     }
 
-    presentation::sync_cached_layer_geometry_from_config(m_cached_layer_frames, m_config);
+    const bool using_native_layers = !m_cached_frame_out.native_layers.empty();
+    if (!using_native_layers)
+        presentation::sync_cached_layer_geometry_from_config(m_cached_layer_frames, m_config);
 
     // Keep runtime layer state aligned with the active config. This also repairs
     // legacy Genesis identity order during autoload paths that do not rebuild UI state.
@@ -7096,8 +7471,13 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         const std::vector<bool> prev_enabled = m_layer_enabled;
         const std::vector<bool> prev_ambilight = m_layer_ambilight;
         const std::size_t prev_name_count = m_layer_names.size();
-        presentation::ensure_layer_runtime_state_matches_config(
-            m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
+        if (using_native_layers) {
+            ensure_layer_runtime_state_matches_frames(
+                m_cached_layer_frames, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
+        } else {
+            presentation::ensure_layer_runtime_state_matches_config(
+                m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
+        }
         if (m_layer_order != prev_order ||
             m_layer_enabled != prev_enabled ||
             m_layer_ambilight != prev_ambilight ||
@@ -7124,7 +7504,29 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
     }
 
     presentation::apply_layer_auto_dup_visible(m_render_layer_refs, m_layer_auto_dup_percent);
-    presentation::compact_visible_layer_depths(m_render_layer_refs);
+    // Backends with explicit per-layer depths (VisibleSourceFinal) must not have
+    // their depths redistributed — compact is only needed for z-buffer-derived
+    // systems (Genesis, SNES) where all depths may cluster at the same value.
+    {
+        static int s_depth_log = 0;
+        if ((s_depth_log++ % 120) == 0) {
+            for (int _i = 0; _i < (int)m_render_layer_refs.size(); ++_i) {
+                const LayerFrame* _lf = m_render_layer_refs[_i];
+                LOGI("QRD_DEPTH render_ref[%d] id=%s depth=%.3fm has_pixels=%d",
+                     _i, _lf ? _lf->id.c_str() : "(null)",
+                     _lf ? _lf->depth_meters : 0.f,
+                     _lf ? (int)_lf->has_pixels : 0);
+            }
+        }
+    }
+    const bool explicit_depth_backend =
+        m_current_backend_kind == BackendKind::Nes ||
+        m_current_backend_kind == BackendKind::Gba ||
+        m_current_backend_kind == BackendKind::Gb  ||
+        m_current_backend_kind == BackendKind::Pce ||
+        m_current_backend_kind == BackendKind::Sms;
+    if (!explicit_depth_backend)
+        presentation::compact_visible_layer_depths(m_render_layer_refs);
     if (m_vr_state.perspective_comp) {
         presentation::apply_perspective_comp_to_refs(m_render_layer_refs);
     } else {
@@ -7510,6 +7912,13 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         overlay.laser_hit_u     = m_laser_hit_u;
         overlay.laser_hit_v     = m_laser_hit_v;
         overlay.laser_hit_panel = m_laser_panel;
+    } else if (m_current_backend_kind == BackendKind::ScummVm && !m_menu_open && !m_edit_mode) {
+        // ScummVM game mode: show right-controller laser pointing at game screen
+        overlay.show_laser    = true;
+        overlay.laser_origin  = m_scummvm_laser_origin;
+        overlay.laser_end     = m_scummvm_laser_end;
+        overlay.laser_hit     = m_scummvm_laser_hit;
+        overlay.laser_hit_panel = -1;
     }
 
     if (m_help_panel_tex) {

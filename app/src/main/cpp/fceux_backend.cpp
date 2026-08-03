@@ -1,11 +1,13 @@
 #include "fceux_backend.h"
 #include "fceux_layer_capture.h"
+#include "audio_processor.h"
 
 #include <android/log.h>
 #include <aaudio/AAudio.h>
 
 #include <algorithm>
 #include <atomic>
+#include <cctype>
 #include <cstdarg>
 #include <cstring>
 #include <fstream>
@@ -46,8 +48,9 @@ namespace {
 constexpr const char* kLogTag       = "QuestRetroDepth";
 constexpr const char* kFrontendDir  = ".";
 constexpr int         kWarmupFrames = 12;
-// NES: 3 visible-source IDs (backdrop, BG, sprites)
-constexpr int kNesLayerCount = 3;
+// NES visible-source layers:
+// 0=backdrop, 1=BG far, 2=sprites, 3=BG mid, 4=BG near.
+constexpr int kNesLayerCount = 5;
 
 FceuxBackend* g_active_backend = nullptr;
 
@@ -101,6 +104,7 @@ static aaudio_data_callback_result_t audio_data_callback(
         }
     }
     g_ring_read.store(r, std::memory_order_release);
+    g_audio_processor.process(out, numFrames);
     return AAUDIO_CALLBACK_RESULT_CONTINUE;
 }
 
@@ -118,7 +122,10 @@ static void open_aaudio_stream(int sample_rate) {
     AAudioStreamBuilder_setDataCallback(builder, audio_data_callback, nullptr);
     AAudioStreamBuilder_openStream(builder, &g_aaudio_stream);
     AAudioStreamBuilder_delete(builder);
-    if (g_aaudio_stream) AAudioStream_requestStart(g_aaudio_stream);
+    if (g_aaudio_stream) {
+        g_audio_processor.set_sample_rate(sample_rate);
+        AAudioStream_requestStart(g_aaudio_stream);
+    }
 }
 
 static void close_aaudio_stream() {
@@ -182,6 +189,39 @@ static uint32_t rgba_from_rgb565(uint16_t pixel) {
            (static_cast<uint32_t>(g) << 8) | static_cast<uint32_t>(b);
 }
 
+static uint32_t rgba_from_0rgb1555(uint16_t pixel) {
+    const uint8_t r = static_cast<uint8_t>(((pixel >> 10) & 0x1F) * 255 / 31);
+    const uint8_t g = static_cast<uint8_t>(((pixel >> 5)  & 0x1F) * 255 / 31);
+    const uint8_t b = static_cast<uint8_t>((pixel & 0x1F) * 255 / 31);
+    return 0xFF000000u | (static_cast<uint32_t>(r) << 16) |
+           (static_cast<uint32_t>(g) << 8) | static_cast<uint32_t>(b);
+}
+
+static uint32_t rgba_from_xrgb8888(uint32_t pixel) {
+    return 0xFF000000u | (pixel & 0x00FFFFFFu);
+}
+
+static uint8_t nes_synthetic_bg_source_id_for_score(float luma, unsigned y, unsigned height) {
+    const float yf = (height > 1u) ? static_cast<float>(y) / static_cast<float>(height - 1u) : 0.5f;
+    const float near_score = yf * 0.65f + (1.0f - luma) * 0.35f;
+    if (near_score < 0.50f) return 1u;
+    return 3u;
+}
+
+static float luma_from_rgba(uint32_t rgba) {
+    const float r = static_cast<float>((rgba >> 16) & 0xFFu) / 255.0f;
+    const float g = static_cast<float>((rgba >>  8) & 0xFFu) / 255.0f;
+    const float b = static_cast<float>( rgba        & 0xFFu) / 255.0f;
+    return 0.2126f * r + 0.7152f * g + 0.0722f * b;
+}
+
+static std::string lower_ascii(std::string s) {
+    for (char& c : s) {
+        c = static_cast<char>(std::tolower(static_cast<unsigned char>(c)));
+    }
+    return s;
+}
+
 static std::string rom_name_from_path(const std::string& path) {
     const auto slash = path.find_last_of("/\\");
     const auto base  = (slash == std::string::npos) ? path : path.substr(slash + 1);
@@ -196,19 +236,7 @@ static std::string rom_name_from_path(const std::string& path) {
 // ---------------------------------------------------------------------------
 
 FceuxBackend::FceuxBackend() {
-    retro_system_info info{};
-    fceux_retro_get_system_info(&info);
-
-    std::ostringstream name;
-    if (info.library_name && info.library_name[0] != '\0') {
-        name << info.library_name;
-        if (info.library_version && info.library_version[0] != '\0')
-            name << " " << info.library_version;
-        name << " (libretro)";
-    } else {
-        name << "FCEUmm (libretro)";
-    }
-    m_backend_name = name.str();
+    m_backend_name = "FCEUmm (libretro)";
 
     // NES: backdrop, BG, sprites — visible-source extraction, no raw layer captures needed
     m_frame.layers.resize(kNesLayerCount);
@@ -225,8 +253,20 @@ double FceuxBackend::frame_rate_hz() const { return m_frame_rate_hz; }
 
 bool FceuxBackend::load_content(const std::string& rom_path, std::string& error_out) {
     reset_core();
+    __android_log_print(ANDROID_LOG_INFO, kLogTag, "FCEUmm load: begin path=%s", rom_path.c_str());
     if (rom_path.empty()) { error_out = "FCEUmm: ROM path is empty."; return false; }
     if (!ensure_core_initialized(error_out)) return false;
+    __android_log_print(ANDROID_LOG_INFO, kLogTag, "FCEUmm load: core initialized");
+    retro_system_info system_info{};
+    fceux_retro_get_system_info(&system_info);
+    if (system_info.library_name && system_info.library_name[0] != '\0') {
+        std::ostringstream name;
+        name << system_info.library_name;
+        if (system_info.library_version && system_info.library_version[0] != '\0')
+            name << " " << system_info.library_version;
+        name << " (libretro)";
+        m_backend_name = name.str();
+    }
 
     {
         std::ifstream f(rom_path, std::ios::binary | std::ios::ate);
@@ -241,17 +281,22 @@ bool FceuxBackend::load_content(const std::string& rom_path, std::string& error_
             return false;
         }
     }
+    __android_log_print(ANDROID_LOG_INFO, kLogTag, "FCEUmm load: read %zu bytes",
+                        m_rom_bytes.size());
 
     retro_game_info game_info{};
     game_info.path = rom_path.c_str();
     game_info.data = m_rom_bytes.data();
     game_info.size = m_rom_bytes.size();
     game_info.meta = nullptr;
+    prepare_game_info_ext(rom_path);
+    __android_log_print(ANDROID_LOG_INFO, kLogTag, "FCEUmm load: calling retro_load_game");
     if (!fceux_retro_load_game(&game_info)) {
         error_out = "FCEUmm: retro_load_game failed.";
         reset_core();
         return false;
     }
+    __android_log_print(ANDROID_LOG_INFO, kLogTag, "FCEUmm load: retro_load_game OK");
 
     retro_system_av_info av_info{};
     fceux_retro_get_system_av_info(&av_info);
@@ -266,6 +311,7 @@ bool FceuxBackend::load_content(const std::string& rom_path, std::string& error_
                         av_info.geometry.base_width,
                         av_info.geometry.base_height);
     open_aaudio_stream(g_audio_sample_rate);
+    __android_log_print(ANDROID_LOG_INFO, kLogTag, "FCEUmm load: audio opened");
 
     m_loaded_rom_path = rom_path;
     m_game_loaded = true;
@@ -277,6 +323,10 @@ bool FceuxBackend::load_content(const std::string& rom_path, std::string& error_
         fceux_retro_run();
         if (m_video_frame_count > 0 && m_last_frame_had_visible_pixels) break;
     }
+    __android_log_print(ANDROID_LOG_INFO, kLogTag,
+                        "FCEUmm load: warmup frames=%llu visible=%d",
+                        static_cast<unsigned long long>(m_video_frame_count),
+                        m_last_frame_had_visible_pixels ? 1 : 0);
 
     if (m_video_frame_count == 0) {
         error_out = "FCEUmm: ROM loaded but emitted no video frames.";
@@ -325,7 +375,10 @@ bool FceuxBackend::load_state(const void* data, std::size_t size, std::string& e
 }
 
 void FceuxBackend::set_auto_frame_skip(bool /*enabled*/) {}
-void FceuxBackend::set_layer_capture_mask(uint32_t /*mask*/) {}
+void FceuxBackend::set_layer_capture_mask(uint32_t mask) {
+    m_layer_capture_mask = mask;
+    fceux_lc_set_capture_mask(mask & 0x1Fu);
+}
 
 RomHeaderInfo FceuxBackend::get_rom_header_info() const {
     RomHeaderInfo info;
@@ -363,7 +416,14 @@ bool FceuxBackend::handle_environment(unsigned cmd, void* data) {
         return true;
     }
     case RETRO_ENVIRONMENT_SET_PIXEL_FORMAT: {
-        // Accept RGB565 (which FCEUmm uses by default)
+        if (!data) return false;
+        const auto fmt = *static_cast<const retro_pixel_format*>(data);
+        if (fmt != RETRO_PIXEL_FORMAT_0RGB1555 &&
+            fmt != RETRO_PIXEL_FORMAT_RGB565 &&
+            fmt != RETRO_PIXEL_FORMAT_XRGB8888) {
+            return false;
+        }
+        m_pixel_format = fmt;
         return true;
     }
     case RETRO_ENVIRONMENT_SET_AUDIO_BUFFER_STATUS_CALLBACK: {
@@ -388,12 +448,43 @@ bool FceuxBackend::handle_environment(unsigned cmd, void* data) {
         *static_cast<int*>(data) = 3; // enable both audio and video
         return true;
     }
+    case RETRO_ENVIRONMENT_GET_GAME_INFO_EXT: {
+        return false;
+    }
     case RETRO_ENVIRONMENT_SET_GEOMETRY:
         if (data) {
             const auto& geom = *static_cast<const retro_game_geometry*>(data);
             ensure_frame_size(geom.base_width, geom.base_height);
         }
         return true;
+    case RETRO_ENVIRONMENT_SET_SUPPORT_ACHIEVEMENTS:
+    case RETRO_ENVIRONMENT_SET_INPUT_DESCRIPTORS:
+    case RETRO_ENVIRONMENT_SET_CONTROLLER_INFO:
+    case RETRO_ENVIRONMENT_SET_MEMORY_MAPS:
+    case RETRO_ENVIRONMENT_SET_PERFORMANCE_LEVEL:
+    case RETRO_ENVIRONMENT_SET_MESSAGE:
+    case RETRO_ENVIRONMENT_SET_MESSAGE_EXT:
+    case RETRO_ENVIRONMENT_SET_VARIABLES:
+    case RETRO_ENVIRONMENT_SET_CORE_OPTIONS:
+    case RETRO_ENVIRONMENT_SET_CORE_OPTIONS_V2:
+    case RETRO_ENVIRONMENT_SET_CORE_OPTIONS_INTL:
+    case RETRO_ENVIRONMENT_SET_CORE_OPTIONS_V2_INTL:
+    case RETRO_ENVIRONMENT_SET_CORE_OPTIONS_DISPLAY:
+    case RETRO_ENVIRONMENT_SET_CORE_OPTIONS_UPDATE_DISPLAY_CALLBACK:
+        return true;
+    case RETRO_ENVIRONMENT_GET_CORE_OPTIONS_VERSION:
+        if (data) *static_cast<unsigned*>(data) = 2;
+        return true;
+    case RETRO_ENVIRONMENT_GET_LANGUAGE:
+        if (data) *static_cast<unsigned*>(data) = RETRO_LANGUAGE_ENGLISH;
+        return true;
+    case RETRO_ENVIRONMENT_GET_MESSAGE_INTERFACE_VERSION:
+        if (data) *static_cast<unsigned*>(data) = 1;
+        return true;
+    case RETRO_ENVIRONMENT_SET_CONTENT_INFO_OVERRIDE:
+        return false;
+    case RETRO_ENVIRONMENT_SET_VARIABLE:
+        return false;
     default:
         return false;
     }
@@ -405,33 +496,141 @@ void FceuxBackend::handle_video_frame(
 
     ++m_video_frame_count;
     ensure_frame_size(width, height);
-    write_rgb565_frame(static_cast<const uint16_t*>(data), width, height, pitch);
-
-    // Copy the per-pixel visible-source IDs captured by the PPU hook
-    unsigned nes_w = 0, nes_h = 0;
-    const uint8_t* vs = fceux_lc_get_visible_source(&nes_w, &nes_h);
-    if (vs && nes_w == width && nes_h == height &&
-        m_frame.visible_source_id.size() == static_cast<std::size_t>(width) * height) {
-        std::memcpy(m_frame.visible_source_id.data(), vs,
-                    static_cast<std::size_t>(width) * height);
+    switch (m_pixel_format) {
+    case RETRO_PIXEL_FORMAT_RGB565:
+        write_rgb565_frame(static_cast<const uint16_t*>(data), width, height, pitch);
+        break;
+    case RETRO_PIXEL_FORMAT_XRGB8888:
+        write_xrgb8888_frame(static_cast<const uint32_t*>(data), width, height, pitch);
+        break;
+    case RETRO_PIXEL_FORMAT_0RGB1555:
+    default:
+        write_0rgb1555_frame(static_cast<const uint16_t*>(data), width, height, pitch);
+        break;
     }
 
-    // No separate per-layer RGBA captures — LayerProcessor uses VisibleSourceFinal
-    for (auto& layer : m_frame.layers) layer.rgba.clear();
+    // Copy the per-pixel visible-source IDs captured by the PPU hook.
+    // The capture buffer is always 256x240. FCEUmm may report a smaller rendered
+    // frame (e.g. 240x224) when overscan cropping is active, so copy the
+    // crop-centred sub-region row by row when the sizes differ.
+    unsigned nes_w = 0, nes_h = 0;
+    const uint8_t* vs = fceux_lc_get_visible_source(&nes_w, &nes_h);
+    if (vs && nes_w >= width && nes_h >= height &&
+        m_frame.visible_source_id.size() == static_cast<std::size_t>(width) * height) {
+        const unsigned h_off = (nes_w - width) / 2;
+        const unsigned v_off = (nes_h - height) / 2;
+        if (h_off == 0 && v_off == 0) {
+            std::memcpy(m_frame.visible_source_id.data(), vs,
+                        static_cast<std::size_t>(width) * height);
+        } else {
+            for (unsigned row = 0; row < height; ++row) {
+                std::memcpy(m_frame.visible_source_id.data() + row * width,
+                            vs + (row + v_off) * nes_w + h_off,
+                            width);
+            }
+        }
+    } else if (m_frame.visible_source_id.size() == static_cast<std::size_t>(width) * height) {
+        std::fill(m_frame.visible_source_id.begin(), m_frame.visible_source_id.end(), 0xFFu);
+    }
+
+    // Split final RGBA frame into per-layer buffers using visible-source IDs.
+    // NES only has one hardware BG plane, so visible BG pixels are split into
+    // generic far/mid/near buckets to avoid rendering the entire BG as one flat
+    // depth sheet. Sprites stay on their real hardware layer.
+    const std::size_t npix = static_cast<std::size_t>(width) * height;
+    m_frame.layers.resize(kNesLayerCount);
+    auto& vsid = m_frame.visible_source_id;
+    const auto& src  = m_frame.rgba8888;
+    if (vsid.size() == npix && src.size() == npix && (m_layer_capture_mask & 0x1Fu)) {
+        for (int li = 0; li < kNesLayerCount; ++li) {
+            if (m_frame.layers[li].rgba.size() != npix)
+                m_frame.layers[li].rgba.resize(npix);
+            std::fill(m_frame.layers[li].rgba.begin(), m_frame.layers[li].rgba.end(), 0u);
+        }
+        m_frame.layers[2].depth_map.clear();
+
+        constexpr unsigned kTileCell = 8;
+        const unsigned tile_cols = (width + kTileCell - 1u) / kTileCell;
+        const unsigned tile_rows = (height + kTileCell - 1u) / kTileCell;
+        std::vector<uint8_t> bg_tile_source(static_cast<std::size_t>(tile_cols) * tile_rows, 1u);
+        for (unsigned ty = 0; ty < tile_rows; ++ty) {
+            for (unsigned tx = 0; tx < tile_cols; ++tx) {
+                float luma_sum = 0.0f;
+                unsigned bg_count = 0;
+                const unsigned x0 = tx * kTileCell;
+                const unsigned y0 = ty * kTileCell;
+                const unsigned x1 = std::min(width, x0 + kTileCell);
+                const unsigned y1 = std::min(height, y0 + kTileCell);
+                for (unsigned y = y0; y < y1; ++y) {
+                    for (unsigned x = x0; x < x1; ++x) {
+                        const std::size_t i = static_cast<std::size_t>(y) * width + x;
+                        if (vsid[i] != 1u) continue;
+                        luma_sum += luma_from_rgba(src[i]);
+                        bg_count++;
+                    }
+                }
+                if (bg_count > 0) {
+                    const float avg_luma = luma_sum / static_cast<float>(bg_count);
+                    const unsigned cy = std::min(height - 1u, y0 + kTileCell / 2u);
+                    bg_tile_source[static_cast<std::size_t>(ty) * tile_cols + tx] =
+                        nes_synthetic_bg_source_id_for_score(avg_luma, cy, height);
+                }
+            }
+        }
+
+        for (unsigned y = 0; y < height; ++y) {
+            for (unsigned x = 0; x < width; ++x) {
+                const std::size_t i = static_cast<std::size_t>(y) * width + x;
+                uint8_t sid = vsid[i];
+                if (sid == 1u) {
+                    const unsigned tx = std::min(tile_cols - 1u, x / kTileCell);
+                    const unsigned ty = std::min(tile_rows - 1u, y / kTileCell);
+                    sid = bg_tile_source[static_cast<std::size_t>(ty) * tile_cols + tx];
+                    vsid[i] = sid;
+                }
+                if (sid < kNesLayerCount) {
+                    m_frame.layers[sid].rgba[i] = src[i];
+                }
+            }
+        }
+        static int s_synthetic_log_frame = 0;
+        if ((s_synthetic_log_frame++ % 120) == 0) {
+            int cnt[kNesLayerCount] = {0, 0, 0, 0, 0};
+            int other = 0;
+            for (std::size_t i = 0; i < npix; ++i) {
+                const uint8_t sid = vsid[i];
+                if (sid < kNesLayerCount) cnt[sid]++;
+                else other++;
+            }
+            __android_log_print(ANDROID_LOG_INFO, kLogTag,
+                "NES synthetic layers: backdrop=%d bg_far=%d sprites=%d bg_mid=%d bg_near=%d other=%d mask=0x%X",
+                cnt[0], cnt[1], cnt[2], cnt[3], cnt[4], other, m_layer_capture_mask);
+        }
+    } else {
+        static int s_synthetic_skip_log_frame = 0;
+        if ((s_synthetic_skip_log_frame++ % 120) == 0) {
+            __android_log_print(ANDROID_LOG_WARN, kLogTag,
+                "NES synthetic layers skipped: vsid=%zu rgba=%zu npix=%zu mask=0x%X",
+                vsid.size(), src.size(), npix, m_layer_capture_mask);
+        }
+        for (auto& layer : m_frame.layers) { layer.rgba.clear(); layer.depth_map.clear(); }
+    }
 }
 
 bool FceuxBackend::ensure_core_initialized(std::string& error_out) {
     if (m_core_initialized) return true;
 
     g_active_backend = this;
+    __android_log_print(ANDROID_LOG_INFO, kLogTag, "FCEUmm init: set callbacks start");
     fceux_retro_set_environment(frontend_environment);
     fceux_retro_set_video_refresh(frontend_video_refresh);
     fceux_retro_set_audio_sample(frontend_audio_sample);
     fceux_retro_set_audio_sample_batch(frontend_audio_sample_batch);
     fceux_retro_set_input_poll(frontend_input_poll);
     fceux_retro_set_input_state(frontend_input_state);
+    __android_log_print(ANDROID_LOG_INFO, kLogTag, "FCEUmm init: retro_init start");
     fceux_retro_init();
-    fceux_retro_set_controller_port_device(0, RETRO_DEVICE_JOYPAD);
+    __android_log_print(ANDROID_LOG_INFO, kLogTag, "FCEUmm init: retro_init done");
 
     m_core_initialized = true;
     error_out.clear();
@@ -441,36 +640,75 @@ bool FceuxBackend::ensure_core_initialized(std::string& error_out) {
 void FceuxBackend::reset_core() {
     close_aaudio_stream();
     if (m_core_initialized) {
-        fceux_retro_unload_game();
+        if (m_game_loaded) fceux_retro_unload_game();
         fceux_retro_deinit();
     }
     m_core_initialized = false;
     m_game_loaded      = false;
     m_loaded_rom_path.clear();
+    m_content_dir.clear();
+    m_content_name.clear();
+    m_content_ext.clear();
+    m_game_info_ext = {};
+    m_pixel_format = RETRO_PIXEL_FORMAT_0RGB1555;
     m_video_frame_count = 0;
     m_last_frame_had_visible_pixels = false;
     g_audio_buffer_status_callback = nullptr;
     m_frame.zbuffer.clear();
     m_frame.visible_source_id.clear();
     m_frame.layers.resize(kNesLayerCount);
-    for (auto& layer : m_frame.layers) layer.rgba.clear();
+    for (auto& layer : m_frame.layers) { layer.rgba.clear(); layer.depth_map.clear(); }
     if (g_active_backend == this) g_active_backend = nullptr;
 }
 
 void FceuxBackend::ensure_frame_size(unsigned width, unsigned height) {
     const auto w = std::max(1u, width);
     const auto h = std::max(1u, height);
+    const std::size_t npix = static_cast<std::size_t>(w) * h;
     if (m_frame.width == w && m_frame.height == h &&
-        m_frame.rgba8888.size() == static_cast<std::size_t>(w) * h) return;
+        m_frame.rgba8888.size() == npix &&
+        m_frame.visible_source_id.size() == npix &&
+        m_frame.layers.size() == kNesLayerCount) return;
 
     m_frame.width  = w;
     m_frame.height = h;
-    const std::size_t npix = static_cast<std::size_t>(w) * h;
-    m_frame.rgba8888.assign(npix, 0xFF000000u);
+    if (m_frame.rgba8888.size() != npix) {
+        m_frame.rgba8888.assign(npix, 0xFF000000u);
+    }
     m_frame.zbuffer.clear();
     m_frame.visible_source_id.assign(npix, 0xFFu);
     m_frame.layers.resize(kNesLayerCount);
-    for (auto& layer : m_frame.layers) layer.rgba.clear();
+    for (auto& layer : m_frame.layers) { layer.rgba.clear(); layer.depth_map.clear(); }
+}
+
+void FceuxBackend::prepare_game_info_ext(const std::string& rom_path) {
+    m_loaded_rom_path = rom_path;
+
+    const auto slash = rom_path.find_last_of("/\\");
+    const std::string base = (slash == std::string::npos) ? rom_path : rom_path.substr(slash + 1);
+    m_content_dir = (slash == std::string::npos) ? "." : rom_path.substr(0, slash);
+
+    const auto dot = base.find_last_of('.');
+    if (dot == std::string::npos) {
+        m_content_name = base;
+        m_content_ext.clear();
+    } else {
+        m_content_name = base.substr(0, dot);
+        m_content_ext = lower_ascii(base.substr(dot + 1));
+    }
+
+    m_game_info_ext = {};
+    m_game_info_ext.full_path = m_loaded_rom_path.c_str();
+    m_game_info_ext.archive_path = nullptr;
+    m_game_info_ext.archive_file = nullptr;
+    m_game_info_ext.dir = m_content_dir.c_str();
+    m_game_info_ext.name = m_content_name.c_str();
+    m_game_info_ext.ext = m_content_ext.c_str();
+    m_game_info_ext.meta = nullptr;
+    m_game_info_ext.data = m_rom_bytes.data();
+    m_game_info_ext.size = m_rom_bytes.size();
+    m_game_info_ext.file_in_archive = false;
+    m_game_info_ext.persistent_data = true;
 }
 
 void FceuxBackend::write_rgb565_frame(
@@ -482,6 +720,38 @@ void FceuxBackend::write_rgb565_frame(
         auto* dst = m_frame.rgba8888.data() + static_cast<std::size_t>(y) * width;
         for (unsigned x = 0; x < width; ++x) {
             const auto rgba = rgba_from_rgb565(row[x]);
+            dst[x] = rgba;
+            has_visible = has_visible || ((rgba & 0x00FFFFFFu) != 0);
+        }
+    }
+    m_last_frame_had_visible_pixels = has_visible;
+}
+
+void FceuxBackend::write_0rgb1555_frame(
+    const uint16_t* pixels, unsigned width, unsigned height, std::size_t pitch) {
+    bool has_visible = false;
+    for (unsigned y = 0; y < height; ++y) {
+        const auto* row = reinterpret_cast<const uint16_t*>(
+            reinterpret_cast<const uint8_t*>(pixels) + y * pitch);
+        auto* dst = m_frame.rgba8888.data() + static_cast<std::size_t>(y) * width;
+        for (unsigned x = 0; x < width; ++x) {
+            const auto rgba = rgba_from_0rgb1555(row[x]);
+            dst[x] = rgba;
+            has_visible = has_visible || ((rgba & 0x00FFFFFFu) != 0);
+        }
+    }
+    m_last_frame_had_visible_pixels = has_visible;
+}
+
+void FceuxBackend::write_xrgb8888_frame(
+    const uint32_t* pixels, unsigned width, unsigned height, std::size_t pitch) {
+    bool has_visible = false;
+    for (unsigned y = 0; y < height; ++y) {
+        const auto* row = reinterpret_cast<const uint32_t*>(
+            reinterpret_cast<const uint8_t*>(pixels) + y * pitch);
+        auto* dst = m_frame.rgba8888.data() + static_cast<std::size_t>(y) * width;
+        for (unsigned x = 0; x < width; ++x) {
+            const auto rgba = rgba_from_xrgb8888(row[x]);
             dst[x] = rgba;
             has_visible = has_visible || ((rgba & 0x00FFFFFFu) != 0);
         }

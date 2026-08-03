@@ -26,9 +26,13 @@ struct LayerFrame {
     // correct visual angle without transparent bars at the edges.
     float persp_comp_scale = 1.0f;
     bool contrib_ambilight = true; // whether this layer feeds the ambilight effect
+    // Y-depth map for sprite layers (non-empty when sprite_y_depth is enabled and backend supplied it).
+    // One uint8_t per pixel: 0=top of screen (far), 255=bottom (close).
+    std::vector<uint8_t> depth_map;
     // True only when at least one opaque pixel was written (ZBuffer layers may be
     // allocated but contain zero opaque pixels; skip rendering those).
     bool has_pixels = true;
+    bool is_ui_bar = false; // ScummVM: render detached below game screen at front depth
     // True when the layer contains both transparent and opaque pixels, so wedge
     // scaling thickens a cutout silhouette without bulging full-frame layers.
     bool wedge_eligible = false;
@@ -64,7 +68,8 @@ private:
     const GameConfig& m_config;
 
     void prepare_frame(LayerFrame& f, const LayerConfig& lc, int w, int h, bool clear_pixels);
-    void fill_full_frame    (LayerFrame& f, const LayerConfig& lc, const uint32_t* src, int w, int h);
+    void fill_full_frame    (LayerFrame& f, const LayerConfig& lc, const uint32_t* src, int w, int h,
+                             const uint8_t* depth_map_src = nullptr, std::size_t depth_map_npix = 0);
     void fill_region        (LayerFrame& f, const LayerConfig& lc, const uint32_t* src, int w, int h);
     void fill_color_key     (LayerFrame& f, const LayerConfig& lc, const uint32_t* src, int w, int h, bool invert);
     void fill_per_layer_capture(LayerFrame& f, const LayerConfig& lc,

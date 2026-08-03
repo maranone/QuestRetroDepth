@@ -321,14 +321,16 @@ static void DrawDisplayM4(int scanline)
   }
 
   // sprites
+#ifdef PICODRIVE_QRD_SMS_LAYER_CAPTURE
+  // Snapshot BG state (palette indices) before sprites are drawn.
+  picodrive_sms_lc_capture_bg_line(scanline, Pico.est.HighCol + 8, 256);
+#endif
   if (!(pv->debug_p & PVD_KILL_S_LO))
     DrawSpritesM4();
 
 #ifdef PICODRIVE_QRD_SMS_LAYER_CAPTURE
-  // Capture per-pixel source IDs before the first-column mask overwrites HighCol.
-  // HighCol + 8 = pixel 0..255 of this scanline:
-  //   byte==0 -> backdrop, byte&0x10 -> sprite, else -> BG tile.
-  picodrive_sms_lc_capture_line(scanline, Pico.est.HighCol + 8, 256);
+  // Fill visible_source and record sprite pixels (changed since bg snapshot).
+  picodrive_sms_lc_capture_spr_line(scanline, Pico.est.HighCol + 8, 256);
 #endif
 
   if ((pv->reg[0] & 0x20) && !(Pico.m.hardware & PMS_HW_LCD)) {
@@ -743,6 +745,10 @@ void PicoFrameStartSMS(void)
   struct PicoEState *est = &Pico.est;
   int lines = 192, columns = 256, loffs, coffs;
 
+#ifdef PICODRIVE_QRD_SMS_LAYER_CAPTURE
+  picodrive_sms_lc_frame_begin();
+#endif
+
   skip_next_line = 0;
   loffs = screen_offset = 24; // 192 lines is really 224 with top/bottom bars
   est->rendstatus = PDRAW_32_COLS;
@@ -863,6 +869,12 @@ void PicoLineSMS(int line)
 
   if (FinalizeLineSMS != NULL)
     FinalizeLineSMS(line);
+
+#ifdef PICODRIVE_QRD_SMS_LAYER_CAPTURE
+  // Convert BG/sprite raw palette indices to RGBA after FinalizeLineSMS so HighPal is current.
+  if (FinalizeLineSMS != NULL)
+    picodrive_sms_lc_finalize_line(line, Pico.est.HighPal);
+#endif
 
   if (PicoScanEnd != NULL)
     skip_next_line = PicoScanEnd(line + screen_offset);

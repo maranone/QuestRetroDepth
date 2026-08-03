@@ -680,12 +680,13 @@ static void DoLine(void)
 		FCEU_dwmemset(target, tem, 256);
 	}
 
+	int qrd_sprite_line_active = spork;
 	if (SpriteON)
 		CopySprites(target);
 
 #ifdef FCEUMM_QRD_LAYER_CAPTURE
 	if (scanline < 240) {
-		fceux_lc_capture_line(scanline, target, SpriteON ? sprlinebuf : 0, 256);
+		fceux_lc_capture_line(scanline, target, (SpriteON && qrd_sprite_line_active) ? sprlinebuf : 0, 256);
 	}
 #endif
 

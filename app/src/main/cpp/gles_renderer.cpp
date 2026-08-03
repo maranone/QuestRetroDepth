@@ -36,7 +36,10 @@ uniform float uCanvasX;   // horizontal translation (metres)
 uniform float uCanvasY;   // vertical translation (metres)
 uniform float uCanvasAz;  // azimuth arc angle (radians)
 uniform float uCanvasEl;  // elevation arc angle (radians)
-uniform float uCanvasScale;
+uniform float     uCanvasScale;
+uniform int       uHasYDepth;    // 1 = sprite Y-depth active
+uniform sampler2D uYDepthTex;    // GL_R8 depth map on texture unit 1
+uniform float     uYDepthSpread; // total Z range in metres
 
 out vec2  vUV;
 out float vCopyT;
@@ -54,6 +57,13 @@ void main() {
     // the viewer and the extrusion recedes away, making the object look 3D going inward.
     // Normal mode: copies come toward the viewer (retrodepth pop-out effect).
     float d = uBboxMode > 0.5 ? max(0.01, uDepth + offset) : max(0.01, uDepth - offset);
+
+    // Sprite Y-depth: per-vertex Z displacement sampled from the depth texture.
+    // dv=0 (top of screen) → farther; dv=1 (bottom) → closer.
+    if (uHasYDepth != 0) {
+        float dv = texture(uYDepthTex, aUV).r;
+        d = max(0.01, d - (dv - 0.5) * uYDepthSpread);
+    }
 
     // scale_x: horizontal-only width factor (bbox wedge expands width, not height).
     // scale: both-axis factor (WholeLayer bulge).
@@ -476,6 +486,15 @@ bool GlesRenderer::init_layer_program(std::string& err) {
     m_u_instance_base = glGetUniformLocation(m_program, "uInstanceBase");
     m_u_object_box_count = glGetUniformLocation(m_program, "uObjectBoxCount");
     m_u_object_boxes = glGetUniformLocation(m_program, "uObjectBoxes[0]");
+    m_u_has_y_depth    = glGetUniformLocation(m_program, "uHasYDepth");
+    m_u_y_depth_tex    = glGetUniformLocation(m_program, "uYDepthTex");
+    m_u_y_depth_spread = glGetUniformLocation(m_program, "uYDepthSpread");
+    // Bind the Y-depth sampler permanently to texture unit 1
+    if (m_u_y_depth_tex >= 0) {
+        glUseProgram(m_program);
+        glUniform1i(m_u_y_depth_tex, 1);
+        glUseProgram(0);
+    }
     return true;
 }
 
@@ -719,9 +738,14 @@ bool GlesRenderer::init(std::string& error_out) {
 
 void GlesRenderer::shutdown() {
     for (auto& lt : m_layers) {
-        if (lt.tex) { glDeleteTextures(1, &lt.tex); lt.tex = 0; }
+        if (lt.tex)       { glDeleteTextures(1, &lt.tex);       lt.tex       = 0; }
+        if (lt.depth_tex) { glDeleteTextures(1, &lt.depth_tex); lt.depth_tex = 0; }
     }
     m_layers.clear();
+    if (m_dm_ebo) { glDeleteBuffers(1, &m_dm_ebo);        m_dm_ebo = 0; }
+    if (m_dm_vbo) { glDeleteBuffers(1, &m_dm_vbo);        m_dm_vbo = 0; }
+    if (m_dm_vao) { glDeleteVertexArrays(1, &m_dm_vao);   m_dm_vao = 0; }
+    m_dm_W = m_dm_H = m_dm_index_count = 0;
     if (m_vbo)       { glDeleteBuffers(1, &m_vbo);       m_vbo       = 0; }
     if (m_vao)       { glDeleteVertexArrays(1, &m_vao);  m_vao       = 0; }
     if (m_curve_vbo) { glDeleteBuffers(1, &m_curve_vbo); m_curve_vbo = 0; }
@@ -759,6 +783,59 @@ void GlesRenderer::resize_layers(int n) {
     }
 }
 
+void GlesRenderer::ensure_depth_mesh(int W, int H) {
+    if (m_dm_W == W && m_dm_H == H && m_dm_vao != 0) return;
+
+    if (m_dm_ebo) { glDeleteBuffers(1, &m_dm_ebo);      m_dm_ebo = 0; }
+    if (m_dm_vbo) { glDeleteBuffers(1, &m_dm_vbo);      m_dm_vbo = 0; }
+    if (m_dm_vao) { glDeleteVertexArrays(1, &m_dm_vao); m_dm_vao = 0; }
+
+    // (W+1)*(H+1) vertices: [x, y, z, u, v], positions in [-0.5, 0.5]
+    const int nverts = (W + 1) * (H + 1);
+    std::vector<float> verts(nverts * 5);
+    for (int vy = 0; vy <= H; ++vy) {
+        const float v =  (float)vy / (float)H;   // 0=top, 1=bottom
+        const float y =  0.5f - v;               // 0.5=top, -0.5=bottom
+        for (int vx = 0; vx <= W; ++vx) {
+            const float u = (float)vx / (float)W; // 0=left, 1=right
+            const float x = u - 0.5f;
+            float* p = verts.data() + (vy * (W + 1) + vx) * 5;
+            p[0] = x; p[1] = y; p[2] = 0.0f; p[3] = u; p[4] = v;
+        }
+    }
+
+    m_dm_index_count = W * H * 6;
+    std::vector<unsigned int> idx(m_dm_index_count);
+    int ii = 0;
+    for (int qy = 0; qy < H; ++qy) {
+        for (int qx = 0; qx < W; ++qx) {
+            unsigned int tl = (unsigned int)(qy * (W + 1) + qx);
+            unsigned int tr = tl + 1u;
+            unsigned int bl = tl + (unsigned int)(W + 1);
+            unsigned int br = bl + 1u;
+            idx[ii++] = tl; idx[ii++] = bl; idx[ii++] = tr;
+            idx[ii++] = tr; idx[ii++] = bl; idx[ii++] = br;
+        }
+    }
+
+    glGenVertexArrays(1, &m_dm_vao);
+    glGenBuffers(1, &m_dm_vbo);
+    glGenBuffers(1, &m_dm_ebo);
+    glBindVertexArray(m_dm_vao);
+    glBindBuffer(GL_ARRAY_BUFFER, m_dm_vbo);
+    glBufferData(GL_ARRAY_BUFFER, (GLsizeiptr)(verts.size() * sizeof(float)), verts.data(), GL_STATIC_DRAW);
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(1);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_dm_ebo);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, (GLsizeiptr)(idx.size() * sizeof(unsigned int)), idx.data(), GL_STATIC_DRAW);
+    glBindVertexArray(0);
+
+    m_dm_W = W;
+    m_dm_H = H;
+}
+
 void GlesRenderer::update_layer(int idx, const LayerFrame& frame) {
     if (frame.width <= 0 || frame.height <= 0 || frame.rgba.empty()) return;
     resize_layers(idx + 1);
@@ -784,6 +861,21 @@ void GlesRenderer::update_layer(int idx, const LayerFrame& frame) {
     lt.uploaded_revision = frame.content_revision;
     glMemoryBarrier(GL_TEXTURE_UPDATE_BARRIER_BIT);
     glBindTexture(GL_TEXTURE_2D, 0);
+
+    // Upload depth_map as GL_R8 (always glTexImage2D — size may vary with game)
+    if (!frame.depth_map.empty()) {
+        if (lt.depth_tex == 0) glGenTextures(1, &lt.depth_tex);
+        glBindTexture(GL_TEXTURE_2D, lt.depth_tex);
+        glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_R8,
+                     frame.width, frame.height, 0,
+                     GL_RED, GL_UNSIGNED_BYTE, frame.depth_map.data());
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+        glBindTexture(GL_TEXTURE_2D, 0);
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -1349,6 +1441,13 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
     glUniform1f(u_instance_base, 0.0f);
     glUniform1i(u_object_box_count, 0);
 
+    // Sprite Y-depth uniforms default off (flat mode only — immersive uses separate program)
+    if (!immersive_active && m_u_has_y_depth >= 0) {
+        glUniform1i(m_u_has_y_depth, 0);
+        if (m_u_y_depth_spread >= 0)
+            glUniform1f(m_u_y_depth_spread, state.sprite_y_depth_spread);
+    }
+
     glBindVertexArray(immersive_active ? m_curve_vao : m_vao);
     glActiveTexture(GL_TEXTURE0);
 
@@ -1363,6 +1462,15 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
         }
         if (max_d > parallax_min_d + 0.001f)
             parallax_depth_range = max_d - parallax_min_d;
+    }
+
+    // Compute reference screen height from first non-ui-bar frame so we can
+    // position the ScummVM UI bar below the game screen.
+    float scene_qh_ref = 0.0f;
+    for (const LayerFrame* fp : frames) {
+        if (!fp || fp->is_ui_bar || fp->width <= 0 || fp->height <= 0) continue;
+        scene_qh_ref = fp->quad_width_meters * (float)fp->height / (float)fp->width;
+        break;
     }
 
     // Build draw order: farthest layer first so depth buffer is populated from back
@@ -1406,10 +1514,17 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
             copy_span  = fr.copies.back();
         }
 
+        // ScummVM UI bar: detach below the game screen with a small gap.
+        float eff_quad_y = 0.0f; // eye level (app_space origin = HMD position)
+        if (fr.is_ui_bar && scene_qh_ref > 1e-5f) {
+            constexpr float gap = 0.02f;
+            eff_quad_y = -scene_qh_ref * 0.5f - qh * 0.5f - gap;
+        }
+
         glUniform1f(u_depth,      fr.depth_meters);
         glUniform1f(u_quad_w,     qw);
         glUniform1f(u_quad_h,     qh);
-        glUniform1f(u_quad_y,     0.0f);   // eye level (app_space origin = HMD position)
+        glUniform1f(u_quad_y,     eff_quad_y);
         glUniform1f(u_copy_count, (float)copy_count);
         glUniform1f(u_copy_span,  copy_span);
         glUniform1f(u_roundness,  wedge_active ? 1.0f : 0.0f);
@@ -1461,8 +1576,30 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
             glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
         }
 
+        // Sprite Y-depth: tessellated mesh with per-vertex Z from depth texture.
+        // Only active in flat (non-immersive) mode.
+        const bool ydepth_active = !immersive_active
+            && state.sprite_y_depth
+            && !fr.depth_map.empty()
+            && m_u_has_y_depth >= 0
+            && i < (int)m_layers.size()
+            && m_layers[i].depth_tex != 0;
+
         const auto draw_start = Clock::now();
-        if (bbox_active) {
+        if (ydepth_active) {
+            ensure_depth_mesh(fr.width, fr.height);
+            glUniform1i(m_u_has_y_depth, 1);
+            glActiveTexture(GL_TEXTURE1);
+            glBindTexture(GL_TEXTURE_2D, m_layers[i].depth_tex);
+            glActiveTexture(GL_TEXTURE0);
+            glBindVertexArray(m_dm_vao);
+            glDrawElements(GL_TRIANGLES, m_dm_index_count, GL_UNSIGNED_INT, nullptr);
+            glBindVertexArray(m_vao);
+            glUniform1i(m_u_has_y_depth, 0);
+            glActiveTexture(GL_TEXTURE1);
+            glBindTexture(GL_TEXTURE_2D, 0);
+            glActiveTexture(GL_TEXTURE0);
+        } else if (bbox_active) {
             // Draw per-object extrusion copies FIRST (they go deeper into the screen).
             // The original front face is drawn LAST so it composites on top — it is the
             // closest layer to the viewer and must win the alpha blend.

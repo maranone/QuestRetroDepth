@@ -81,6 +81,7 @@ struct GameConfig {
     static GameConfig make_default_gba();
     static GameConfig make_default_gb();
     static GameConfig make_default_pce();
+    static GameConfig make_default_scummvm();
 
     // Update dynamic z-splits based on z-buffer histogram analysis.
     // Finds natural z-value clusters and adjusts z_min/z_max for dynamic layers.

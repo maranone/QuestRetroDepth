@@ -95,6 +95,10 @@ static inline bool settings_save(
     settings_write(f, "auto_frame_skip",    vs.auto_frame_skip);
     settings_write(f, "emu_resolution_scale", vs.emu_resolution_scale);
     settings_write(f, "vr_resolution_scale",  vs.vr_resolution_scale);
+    settings_write(f, "sprite_y_depth",        vs.sprite_y_depth);
+    settings_write(f, "sprite_y_depth_spread", vs.sprite_y_depth_spread);
+    settings_write(f, "audio_spatial_mode",    vs.audio_spatial_mode);
+    settings_write(f, "audio_screen_lock",     vs.audio_screen_lock);
     settings_write(f, "layer_filter_mode", layer_filter_mode);
     settings_write(f, "layer_auto_dup_percent", layer_auto_dup_percent);
 
@@ -227,6 +231,10 @@ static inline bool settings_load(
         else if (strcmp(key,"auto_frame_skip") == 0) readb(vs.auto_frame_skip);
         else if (strcmp(key,"emu_resolution_scale") == 0) readi(vs.emu_resolution_scale);
         else if (strcmp(key,"vr_resolution_scale")  == 0) readf(vs.vr_resolution_scale);
+        else if (strcmp(key,"sprite_y_depth")        == 0) readb(vs.sprite_y_depth);
+        else if (strcmp(key,"sprite_y_depth_spread") == 0) readf(vs.sprite_y_depth_spread);
+        else if (strcmp(key,"audio_spatial_mode")    == 0) vs.audio_spatial_mode = std::clamp(atoi(val), 0, 3);
+        else if (strcmp(key,"audio_screen_lock")     == 0) readb(vs.audio_screen_lock);
         else if (strcmp(key,"layer_filter_mode") == 0) {
             if (layer_filter_mode) *layer_filter_mode = atoi(val);
         }

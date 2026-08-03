@@ -4,10 +4,25 @@
 static uint8_t g_buf[PCE_LC_H][PCE_LC_W];
 static unsigned g_w = PCE_LC_W;
 static unsigned g_h = PCE_LC_H;
+static int g_rect_x = 0;
+static int g_rect_y = 0;
+static int g_rect_w = PCE_LC_W;
+static int g_rect_h = PCE_LC_H;
 
 void pce_lc_frame_begin() {
     // Default everything to backdrop; only rendered columns are overwritten.
     memset(g_buf, PCE_LC_SRC_BACKDROP, sizeof(g_buf));
+}
+
+void pce_lc_set_display_rect(int x, int y, int width, int height) {
+    g_rect_x = x < 0 ? 0 : x;
+    g_rect_y = y < 0 ? 0 : y;
+    g_rect_w = width < 0 ? 0 : width;
+    g_rect_h = height < 0 ? 0 : height;
+    if (g_rect_x > PCE_LC_W) g_rect_x = PCE_LC_W;
+    if (g_rect_y > PCE_LC_H) g_rect_y = PCE_LC_H;
+    if (g_rect_x + g_rect_w > PCE_LC_W) g_rect_w = PCE_LC_W - g_rect_x;
+    if (g_rect_y + g_rect_h > PCE_LC_H) g_rect_h = PCE_LC_H - g_rect_y;
 }
 
 void pce_lc_capture_line(int row, int x_off, int width,
@@ -54,8 +69,12 @@ int pce_lc_copy_visible_source(uint8_t* dst, unsigned dst_w, unsigned dst_h) {
     if (!dst || dst_w == 0 || dst_h == 0) return 0;
     if (dst_w > PCE_LC_W || dst_h > PCE_LC_H) return 0;
 
-    const unsigned x_off = (PCE_LC_W - dst_w) / 2;
-    const unsigned y_off = (PCE_LC_H - dst_h) / 2;
+    unsigned x_off = static_cast<unsigned>(g_rect_x);
+    unsigned y_off = static_cast<unsigned>(g_rect_y);
+    if (g_rect_w != static_cast<int>(dst_w)) x_off = 0;
+    if (g_rect_h != static_cast<int>(dst_h)) y_off = 0;
+    if (x_off + dst_w > PCE_LC_W || y_off + dst_h > PCE_LC_H) return 0;
+
     for (unsigned y = 0; y < dst_h; ++y) {
         std::memcpy(dst + static_cast<std::size_t>(y) * dst_w,
                     &g_buf[y + y_off][x_off],

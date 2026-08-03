@@ -35,12 +35,15 @@ static bool is_supported(const char* name) {
         ci_ends_with(name, ".smd") || ci_ends_with(name, ".sms") ||
         ci_ends_with(name, ".gg"))  return true;
     // NES
-    if (ci_ends_with(name, ".nes")) return true;
+    if (ci_ends_with(name, ".nes") || ci_ends_with(name, ".unf") ||
+        ci_ends_with(name, ".unif")) return true;
     // GBA / GB / GBC
     if (ci_ends_with(name, ".gba") || ci_ends_with(name, ".gb") ||
         ci_ends_with(name, ".gbc")) return true;
     // PC Engine
     if (ci_ends_with(name, ".pce")) return true;
+    // ScummVM shortcut files
+    if (ci_ends_with(name, ".scummvm")) return true;
     // Archives
     if (ci_ends_with(name, ".zip") || ci_ends_with(name, ".7z")) return true;
     return false;

@@ -1,5 +1,6 @@
 #include "snes_libretro_backend.h"
 #include "snes9x_layer_capture.h"
+#include "audio_processor.h"
 
 #include <android/log.h>
 #include <aaudio/AAudio.h>
@@ -68,6 +69,7 @@ static aaudio_data_callback_result_t audio_data_callback(
         }
     }
     g_ring_read.store(r, std::memory_order_release);
+    g_audio_processor.process(out, numFrames);
     return AAUDIO_CALLBACK_RESULT_CONTINUE;
 }
 
@@ -85,7 +87,10 @@ static void open_aaudio_stream(int sample_rate) {
     AAudioStreamBuilder_setDataCallback(builder, audio_data_callback, nullptr);
     AAudioStreamBuilder_openStream(builder, &g_aaudio_stream);
     AAudioStreamBuilder_delete(builder);
-    if (g_aaudio_stream) AAudioStream_requestStart(g_aaudio_stream);
+    if (g_aaudio_stream) {
+        g_audio_processor.set_sample_rate(sample_rate);
+        AAudioStream_requestStart(g_aaudio_stream);
+    }
 }
 
 static void close_aaudio_stream() {
@@ -438,8 +443,14 @@ void SnesLibretroBackend::handle_video_frame(const void* data, unsigned width, u
                 const uint16_t* lpix  = snes9x_get_layer_pixels(li, &lstride);
                 const uint8_t*  lmask = snes9x_get_layer_mask(li, nullptr);
                 auto& out = m_frame.layers[li].rgba;
+                const bool is_obj = (li == 4); // OBJ layer gets Y-depth map
+                auto& dmap = m_frame.layers[li].depth_map;
                 if (lpix && lmask && lstride > 0 && !out.empty()) {
+                    if (is_obj && dmap.size() != out.size())
+                        dmap.resize(out.size());
                     for (unsigned y = 0; y < height; ++y) {
+                        const uint8_t depth_y = (height > 1u)
+                            ? static_cast<uint8_t>(y * 255u / (height - 1u)) : 128u;
                         for (unsigned x = 0; x < width; ++x) {
                             const uint16_t px   = lpix [y * lstride + x];
                             const uint8_t  opaq = lmask[y * lstride + x];
@@ -451,8 +462,12 @@ void SnesLibretroBackend::handle_video_frame(const void* data, unsigned width, u
                                                  (static_cast<uint32_t>(b) << 16) |
                                                  (static_cast<uint32_t>(g) <<  8) |
                                                   static_cast<uint32_t>(r);
+                            if (is_obj)
+                                dmap[y * width + x] = opaq ? depth_y : 0u;
                         }
                     }
+                } else if (is_obj) {
+                    dmap.clear();
                 }
             }
 
@@ -558,8 +573,10 @@ void SnesLibretroBackend::ensure_frame_size(unsigned width, unsigned height) {
     m_frame.zbuffer.assign(npix, 0u);
     m_frame.visible_source_id.assign(npix, 0xFFu);
     m_frame.layers.resize(SNES9X_LAYER_COUNT);
-    for (auto& lc : m_frame.layers)
+    for (auto& lc : m_frame.layers) {
         lc.rgba.assign(npix, 0u);
+        lc.depth_map.clear();
+    }
 }
 
 void SnesLibretroBackend::update_geometry(const retro_game_geometry& geometry) {

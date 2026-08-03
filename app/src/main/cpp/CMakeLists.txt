@@ -475,6 +475,7 @@ target_compile_definitions(picodrive_libretro PRIVATE
 
 target_compile_options(picodrive_libretro PRIVATE
     -fno-strict-aliasing
+    -O3
 )
 
 # ================================================================
@@ -564,6 +565,7 @@ target_include_directories(fceumm_libretro PRIVATE
 
 target_compile_definitions(fceumm_libretro PRIVATE
     __LIBRETRO__
+    FRONTEND_SUPPORTS_RGB565
     FCEUMM_QRD_LAYER_CAPTURE
     FCEU_VERSION_NUMERIC=9813
     PATH_MAX=1024
@@ -894,6 +896,30 @@ target_compile_definitions(beetle_pce_libretro PRIVATE
 
 target_compile_options(beetle_pce_libretro PRIVATE -fno-strict-aliasing)
 
+# ================================================================
+# ScummVM libretro — classic point-and-click adventure emulator
+# Checkout: third_party/scummvm_libretro  (https://github.com/scummvm/scummvm)
+# Expected libretro entrypoint:
+#   backends/platform/libretro/src/libretro-core.cpp
+# ================================================================
+set(SCUMMVM_LR_DIR "${QUESTRETRODEPTH_ROOT}/third_party/scummvm_libretro")
+set(SCUMMVM_LR_BACKEND_DIR "${SCUMMVM_LR_DIR}/backends/platform/libretro")
+
+# ScummVM is built by its own Android libretro ndk-build files and packaged as
+# libscummvm_libretro.so. The QuestRetroDepth backend loads it with dlopen() so
+# its retro_* symbols do not collide with the statically linked libretro cores.
+if (EXISTS "${SCUMMVM_LR_BACKEND_DIR}/src/libretro-core.cpp")
+    set(SCUMMVM_LIBRETRO_TARGET "")
+    set(SCUMMVM_BACKEND_SOURCE scummvm_backend.cpp)
+else()
+    # Submodule not yet populated — build the stub so the project still links.
+    # To enable real ScummVM support:
+    #   git clone https://github.com/scummvm/scummvm third_party/scummvm_libretro
+    message(STATUS "ScummVM libretro submodule not found — using stub backend.")
+    set(SCUMMVM_LIBRETRO_TARGET "")
+    set(SCUMMVM_BACKEND_SOURCE scummvm_backend_stub.cpp)
+endif()
+
 add_library(questretrodepth_native SHARED
     emulator_backend.cpp
     experimental_rumble.cpp
@@ -911,8 +937,10 @@ add_library(questretrodepth_native SHARED
     pce_backend.cpp
     pce_layer_capture.cpp
     rom_browser.cpp
+    audio_processor.cpp
     snes_libretro_backend.cpp
     snes_backend_stub.cpp
+    ${SCUMMVM_BACKEND_SOURCE}
     questretrodepth_main.cpp
 )
 
@@ -925,6 +953,7 @@ find_library(gles-lib GLESv3)
 find_library(aaudio-lib aaudio)
 find_library(android-lib android)
 find_library(z-lib z)
+find_library(dl-lib dl)
 
 target_include_directories(questretrodepth_native PRIVATE
     ${PICODRIVE_DIR}
@@ -945,12 +974,20 @@ target_include_directories(questretrodepth_native PRIVATE
     ${PCE_LIBRETRO_COMMON_DIR}/include
 )
 
+if (SCUMMVM_LR_BACKEND_DIR)
+    target_include_directories(questretrodepth_native PRIVATE
+        ${SCUMMVM_LR_DIR}
+        ${SCUMMVM_LR_BACKEND_DIR}/include
+    )
+endif()
+
 target_link_libraries(questretrodepth_native
     snes9x_libretro
     picodrive_libretro
     mgba_libretro
     fceumm_libretro
     beetle_pce_libretro
+    ${SCUMMVM_LIBRETRO_TARGET}
     OpenXR::openxr_loader
     OpenXR::headers
     ${log-lib}
@@ -960,4 +997,5 @@ target_link_libraries(questretrodepth_native
     ${aaudio-lib}
     ${android-lib}
     ${z-lib}
+    ${dl-lib}
 )

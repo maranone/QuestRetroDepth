@@ -40,6 +40,7 @@ enum class PanelRole {
     QuickManualEdit,
     QuickManualVisual,
     QuickManualLayers,
+    ResetDepths,
 };
 
 struct PanelMetrics {

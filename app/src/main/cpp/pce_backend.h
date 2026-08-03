@@ -48,6 +48,7 @@ private:
     bool                  m_game_loaded      = false;
     std::uint64_t         m_video_frame_count = 0;
     bool                  m_last_frame_had_visible_pixels = false;
+    uint32_t              m_layer_capture_mask = 0x3u;
     double                m_frame_rate_hz = 59.82;
 };
 

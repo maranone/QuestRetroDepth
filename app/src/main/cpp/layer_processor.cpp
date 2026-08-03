@@ -98,8 +98,9 @@ void LayerProcessor::process_genesis_hybrid_fast(std::vector<LayerFrame>& result
         prepare_frame(out, lc, w, h, true);
         const auto& src_rgba = frame->layers[i].rgba;
         if (!src_rgba.empty()) {
+            const std::size_t copy_pix = std::min(npix, src_rgba.size());
             std::memcpy(out.rgba.data(), src_rgba.data(),
-                        std::min(out.rgba.size(), src_rgba.size()) * sizeof(uint8_t));
+                        copy_pix * sizeof(uint32_t));
         }
     }
 
@@ -137,7 +138,9 @@ void LayerProcessor::process_into(std::vector<LayerFrame>& result,
         auto& out = result[i];
         switch (lc.extraction_type) {
         case ExtractionType::FullFrame:
-            fill_full_frame(out, lc, src, w, h);
+            fill_full_frame(out, lc, src, w, h,
+                frame ? frame->depth_map.data() : nullptr,
+                frame ? frame->depth_map.size() : 0);
             break;
         case ExtractionType::Region:
             fill_region(out, lc, src, w, h);
@@ -178,7 +181,9 @@ void LayerProcessor::process_into(std::vector<LayerFrame>& result,
             for (int ri : zbuf_indices) {
                 auto& f = result[ri];
                 const auto& lc = m_config.layers[ri];
-                fill_full_frame(f, lc, src, w, h);
+                fill_full_frame(f, lc, src, w, h,
+                    frame ? frame->depth_map.data() : nullptr,
+                    frame ? frame->depth_map.size() : 0);
             }
         }
     }
@@ -189,12 +194,18 @@ void LayerProcessor::process_into(std::vector<LayerFrame>& result,
     }
 }
 
-void LayerProcessor::fill_full_frame(LayerFrame& f, const LayerConfig& lc, const uint32_t* src, int w, int h) {
+void LayerProcessor::fill_full_frame(LayerFrame& f, const LayerConfig& lc, const uint32_t* src, int w, int h,
+                                     const uint8_t* depth_map_src, std::size_t depth_map_npix) {
     prepare_frame(f, lc, w, h, false);
-    for (int i = 0; i < w * h; ++i) {
+    const std::size_t npix = static_cast<std::size_t>(w) * h;
+    for (std::size_t i = 0; i < npix; ++i) {
         to_rgba(src[i], &f.rgba[i * 4]);
         f.rgba[i * 4 + 3] = 255; // fully opaque
     }
+    if (depth_map_src && depth_map_npix == npix)
+        f.depth_map.assign(depth_map_src, depth_map_src + npix);
+    else
+        f.depth_map.clear();
 }
 
 LayerFrame LayerProcessor::extract_full_frame(const LayerConfig& lc, const uint32_t* src, int w, int h) {
@@ -343,6 +354,16 @@ void LayerProcessor::fill_per_layer_capture(
     const std::size_t copy_pix = std::min(npix, src_rgba.size());
     if (copy_pix > 0) {
         std::memcpy(f.rgba.data(), src_rgba.data(), copy_pix * sizeof(uint32_t));
+    }
+
+    // Propagate Y-depth map for sprite layers when available
+    const auto& src_dmap = frame->layers[li].depth_map;
+    if (!src_dmap.empty()) {
+        const std::size_t dcopy = std::min(npix, src_dmap.size());
+        f.depth_map.resize(npix, 0u);
+        std::memcpy(f.depth_map.data(), src_dmap.data(), dcopy);
+    } else {
+        f.depth_map.clear();
     }
 }
 
