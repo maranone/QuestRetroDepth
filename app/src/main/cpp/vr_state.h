@@ -61,6 +61,7 @@ struct VrState {
     bool upscale           = false; // sharpened bilinear
     bool shadows           = false; // repurposed as Meta Quest passthrough
     bool ambilight         = true;
+    bool show_help_panels  = false; // passive left/right instruction panels
     EnvironmentSphereMode environment_sphere_mode = EnvironmentSphereMode::Off;
 
     // Perspective compensation: scale each layer's quad width so all layers subtend
@@ -132,6 +133,7 @@ struct VrState {
         upscale         = randb(0.35f);
         shadows         = false;
         ambilight       = randb(0.62f);
+        show_help_panels = false;
 
         roundness    = 0.0f;
         screen_curve = 0.0f;

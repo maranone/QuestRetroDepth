@@ -15,6 +15,22 @@
 #define VIDEO_CHECKS true
 #endif
 
+#ifdef MGBA_QRD_LAYER_CAPTURE
+#include "mgba_layer_capture.h"
+#define MGBA_QRD_BG_CAP(bg, pixel_ptr, pal, idx) \
+    mgba_lc_bg_pixel((bg), (int)((pixel_ptr) - renderer->row), (uint16_t)((pal)[idx]))
+// Same as MGBA_QRD_BG_CAP but for bitmap-mode BGs (3/4/5) that already have a
+// resolved RGB565 color in hand rather than a palette+index pair.
+#define MGBA_QRD_BG_CAP_RAW(bg, pixel_ptr, colorVal) \
+    mgba_lc_bg_pixel((bg), (int)((pixel_ptr) - renderer->row), (uint16_t)(colorVal))
+#define MGBA_QRD_OBJ_CAP(x, colorVal) \
+    mgba_lc_obj_pixel((x), (uint16_t)(colorVal))
+#else
+#define MGBA_QRD_BG_CAP(bg, pixel_ptr, pal, idx) ((void)0)
+#define MGBA_QRD_BG_CAP_RAW(bg, pixel_ptr, colorVal) ((void)0)
+#define MGBA_QRD_OBJ_CAP(x, colorVal) ((void)0)
+#endif
+
 #define ENABLED_MAX 4
 
 void GBAVideoSoftwareRendererDrawBackgroundMode0(struct GBAVideoSoftwareRenderer* renderer,
@@ -139,16 +155,22 @@ static inline void _compositeNoBlendNoObjwin(struct GBAVideoSoftwareRenderer* re
 #define BACKGROUND_DRAW_PIXEL_16(BLEND, OBJWIN, IDX) \
 	pixelData = tileData & 0xF; \
 	current = pixel[IDX]; \
-	if (pixelData && IS_WRITABLE(current)) { \
-		COMPOSITE_16_ ## OBJWIN (BLEND, IDX); \
+	if (pixelData) { \
+		MGBA_QRD_BG_CAP(background->index, pixel + IDX, palette, paletteData | pixelData); \
+		if (IS_WRITABLE(current)) { \
+			COMPOSITE_16_ ## OBJWIN (BLEND, IDX); \
+		} \
 	} \
 	tileData >>= 4;
 
 #define BACKGROUND_DRAW_PIXEL_256(BLEND, OBJWIN, IDX) \
 	pixelData = tileData & 0xFF; \
 	current = pixel[IDX]; \
-	if (pixelData && IS_WRITABLE(current)) { \
-		COMPOSITE_256_ ## OBJWIN (BLEND, IDX); \
+	if (pixelData) { \
+		MGBA_QRD_BG_CAP(background->index, pixel + IDX, palette, pixelData); \
+		if (IS_WRITABLE(current)) { \
+			COMPOSITE_256_ ## OBJWIN (BLEND, IDX); \
+		} \
 	} \
 	tileData >>= 8;
 

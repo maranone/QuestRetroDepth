@@ -609,6 +609,13 @@ static void GBAVideoSoftwareRendererDrawScanline(struct GBAVideoRenderer* render
 				softwareRenderer->bg[3].sy += softwareRenderer->bg[3].dmy;
 			}
 		}
+#ifdef MGBA_QRD_LAYER_CAPTURE
+		{
+			mColor* row = &softwareRenderer->outputBuffer[softwareRenderer->outputBufferStride * y];
+			mgba_lc_begin_scanline(y);
+			mgba_lc_capture_scanline(row, y);
+		}
+#endif
 		return;
 	}
 
@@ -624,6 +631,9 @@ static void GBAVideoSoftwareRendererDrawScanline(struct GBAVideoRenderer* render
 	}
 
 	GBAVideoSoftwareRendererPreprocessBuffer(softwareRenderer);
+#ifdef MGBA_QRD_LAYER_CAPTURE
+	mgba_lc_begin_scanline_redraw(y);
+#endif
 	softwareRenderer->spriteCyclesRemaining = GBARegisterDISPCNTIsHblankIntervalFree(softwareRenderer->dispcnt) ? OBJ_HBLANK_FREE_LENGTH : OBJ_LENGTH;
 	int spriteLayers = GBAVideoSoftwareRendererPreprocessSpriteLayer(softwareRenderer, y);
 

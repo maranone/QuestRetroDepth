@@ -13,9 +13,13 @@
 // GLSL shaders
 // ---------------------------------------------------------------------------
 
-static const char* kLayerVS = R"GLSL(#version 300 es
+static const char* kLayerVS = R"GLSL(#version 310 es
 layout(location = 0) in vec3 aPos;
 layout(location = 1) in vec2 aUV;
+
+layout(std430, binding = 0) readonly buffer ObjectBoxes {
+    vec4 uBoxRects[];   // (u0, v0, u1, v1) per detected object, UV space
+};
 
 uniform mat4  uVP;
 uniform float uDepth;
@@ -46,10 +50,16 @@ out float vCopyT;
 
 void main() {
     float copy_count = max(1.0, uCopyCount);
-    // BBox: reverse instance order so the deepest copy (gl_InstanceID=0) is drawn first
+    // BBox mode packs (boxIndex, copyIndex) into a single instanced draw: all boxes ×
+    // all copies for this layer in one glDrawArraysInstanced call.
+    int copyIndex = uBboxMode > 0.5 ? (gl_InstanceID % int(copy_count)) : gl_InstanceID;
+    int boxIndex  = uBboxMode > 0.5 ? (gl_InstanceID / int(copy_count)) : 0;
+    vec4 boxRect  = uBboxMode > 0.5 ? uBoxRects[boxIndex] : vec4(0.0, 0.0, 1.0, 1.0);
+
+    // BBox: reverse instance order so the deepest copy (copyIndex=0) is drawn first
     // and the shallowest last — correct back-to-front order for alpha compositing.
     // Normal: standard front-to-back (closest to viewer last so it composites on top).
-    float inst = uBboxMode > 0.5 ? (copy_count - float(gl_InstanceID))
+    float inst = uBboxMode > 0.5 ? (copy_count - float(copyIndex))
                                  : (float(gl_InstanceID) + uInstanceBase);
     float t = min(inst, copy_count) / copy_count;
     float offset = t * uCopySpan;
@@ -113,10 +123,12 @@ void main() {
     vec3 right = vec3(cos_az,           0.0,     sin_az);
     vec3 up    = vec3(-sin_az * sin_el, cos_el, -cos_az * sin_el);
 
-    float sub_w = mix(1.0, uSubrect.z - uSubrect.x, uSubrectEnable);
-    float sub_h = mix(1.0, uSubrect.w - uSubrect.y, uSubrectEnable);
-    float sub_cx = mix(0.5, 0.5 * (uSubrect.x + uSubrect.z), uSubrectEnable);
-    float sub_cy = mix(0.5, 0.5 * (uSubrect.y + uSubrect.w), uSubrectEnable);
+    vec4 subrect = uBboxMode > 0.5 ? boxRect : uSubrect;
+    float subrectEnable = uBboxMode > 0.5 ? 1.0 : uSubrectEnable;
+    float sub_w = mix(1.0, subrect.z - subrect.x, subrectEnable);
+    float sub_h = mix(1.0, subrect.w - subrect.y, subrectEnable);
+    float sub_cx = mix(0.5, 0.5 * (subrect.x + subrect.z), subrectEnable);
+    float sub_cy = mix(0.5, 0.5 * (subrect.y + subrect.w), subrectEnable);
     float center_dx = (sub_cx - 0.5) * uQuadW * uCanvasScale;
     float center_dy = (0.5 - sub_cy) * uQuadH * uCanvasScale;
 
@@ -125,14 +137,18 @@ void main() {
 
     // Screen curve pushes vertices along the outward normal
     gl_Position = uVP * vec4(center + right * (center_dx + vx) + up * (center_dy + vy) + normal * curve_offset, 1.0);
-    vUV    = mix(aUV, mix(uSubrect.xy, uSubrect.zw, aUV), uSubrectEnable);
+    vUV    = mix(aUV, mix(subrect.xy, subrect.zw, aUV), subrectEnable);
     vCopyT = t;
 }
 )GLSL";
 
-static const char* kImmersiveLayerVS = R"GLSL(#version 300 es
+static const char* kImmersiveLayerVS = R"GLSL(#version 310 es
 layout(location = 0) in vec3 aPos;
 layout(location = 1) in vec2 aUV;
+
+layout(std430, binding = 0) readonly buffer ObjectBoxes {
+    vec4 uBoxRects[];   // (u0, v0, u1, v1) per detected object, UV space
+};
 
 uniform mat4  uVP;
 uniform float uDepth;
@@ -161,7 +177,11 @@ out float vCopyT;
 
 void main() {
     float copy_count = max(1.0, uCopyCount);
-    float inst = uBboxMode > 0.5 ? (copy_count - float(gl_InstanceID))
+    int copyIndex = uBboxMode > 0.5 ? (gl_InstanceID % int(copy_count)) : gl_InstanceID;
+    int boxIndex  = uBboxMode > 0.5 ? (gl_InstanceID / int(copy_count)) : 0;
+    vec4 boxRect  = uBboxMode > 0.5 ? uBoxRects[boxIndex] : vec4(0.0, 0.0, 1.0, 1.0);
+
+    float inst = uBboxMode > 0.5 ? (copy_count - float(copyIndex))
                                  : (float(gl_InstanceID) + uInstanceBase);
     float t = min(inst, copy_count) / copy_count;
     float offset = t * uCopySpan;
@@ -211,10 +231,12 @@ void main() {
     vec3 tilted_normal = right * sty + pitched_normal * cty;
     vec3 tilted_up     = pitched_up;
 
-    float sub_w = mix(1.0, uSubrect.z - uSubrect.x, uSubrectEnable);
-    float sub_h = mix(1.0, uSubrect.w - uSubrect.y, uSubrectEnable);
-    float sub_cx = mix(0.5, 0.5 * (uSubrect.x + uSubrect.z), uSubrectEnable);
-    float sub_cy = mix(0.5, 0.5 * (uSubrect.y + uSubrect.w), uSubrectEnable);
+    vec4 subrect = uBboxMode > 0.5 ? boxRect : uSubrect;
+    float subrectEnable = uBboxMode > 0.5 ? 1.0 : uSubrectEnable;
+    float sub_w = mix(1.0, subrect.z - subrect.x, subrectEnable);
+    float sub_h = mix(1.0, subrect.w - subrect.y, subrectEnable);
+    float sub_cx = mix(0.5, 0.5 * (subrect.x + subrect.z), subrectEnable);
+    float sub_cy = mix(0.5, 0.5 * (subrect.y + subrect.w), subrectEnable);
     float center_dx = (sub_cx - 0.5) * uQuadW * uCanvasScale;
     float center_dy = (0.5 - sub_cy) * uQuadH * uCanvasScale;
 
@@ -226,7 +248,7 @@ void main() {
     float curve_offset = uScreenCurve * uQuadW * 0.18 * edge_t * edge_t;
 
     gl_Position = uVP * vec4(center + tilted_right * (center_dx + vx) + tilted_up * (center_dy + vy) + tilted_normal * curve_offset, 1.0);
-    vUV    = mix(aUV, mix(uSubrect.xy, uSubrect.zw, aUV), uSubrectEnable);
+    vUV    = mix(aUV, mix(subrect.xy, subrect.zw, aUV), subrectEnable);
     vCopyT = t;
 }
 )GLSL";
@@ -248,7 +270,6 @@ uniform float uForceOpaqueAlpha; // 1.0 = visible game pixels write full composi
 uniform float uBboxMode; // 1.0 = apply bbox-centered width shrink on copy instances
 uniform float uBboxDebug; // 1.0 = tint bbox copy instances per detected object
 uniform int uObjectBoxCount;
-uniform vec4 uObjectBoxes[64];
 
 in vec2  vUV;
 in float vCopyT;
@@ -256,10 +277,11 @@ out vec4 fragColor;
 
 vec4 sampleLayer(vec2 uv) {
     if (uUpscale > 0.5) {
-        // Sharp-bilinear ("pixel-perfect") upscale:
-        // Stay on the source pixel center for most of the pixel area; only blend
-        // in a 1-output-pixel-wide border region at each edge.  This gives crisp
-        // pixel art without the blocky hard edge of GL_NEAREST.
+        // Pixel-aware reconstruction followed by a small alpha-safe unsharp pass.
+        // The reconstruction keeps most of each source pixel flat and only blends
+        // at its boundary; the sharpen pass restores edge contrast lost to that
+        // blend.  Filtering premultiplied RGB avoids dark/bright fringes around
+        // transparent cutout pixels.
         vec2 tsz = vec2(textureSize(uTexture, 0));
         vec2 p   = uv * tsz;           // position in source-pixel space
         vec2 fr  = fract(p);           // fractional part within each source pixel
@@ -273,8 +295,38 @@ vec4 sampleLayer(vec2 uv) {
         vec2 w = 0.5 / scale;
         // Smoothstep within the edge window; flat (=snap to center) everywhere else.
         vec2 sharp = smoothstep(0.5 - w, 0.5 + w, fr);
-        vec2 suv   = (floor(p) + sharp) / tsz;
-        return texture(uTexture, suv);
+        // Sample from texel centres.  The previous coordinate landed on texel
+        // boundaries, which made GL_LINEAR blend four source pixels everywhere.
+        vec2 suv   = (floor(p) + vec2(0.5) + sharp) / tsz;
+
+        vec4 base = texture(uTexture, suv);
+        vec2 texel = 1.0 / tsz;
+        vec4 left  = texture(uTexture, suv - vec2(texel.x, 0.0));
+        vec4 right = texture(uTexture, suv + vec2(texel.x, 0.0));
+        vec4 down  = texture(uTexture, suv - vec2(0.0, texel.y));
+        vec4 up    = texture(uTexture, suv + vec2(0.0, texel.y));
+
+        vec3 blurPremul = base.rgb * base.a * 4.0
+                        + left.rgb * left.a
+                        + right.rgb * right.a
+                        + down.rgb * down.a
+                        + up.rgb * up.a;
+        float blurAlpha = base.a * 4.0 + left.a + right.a + down.a + up.a;
+        blurPremul /= 8.0;
+        blurAlpha  /= 8.0;
+
+        // Disable sharpening across the transparent silhouette boundary. This
+        // keeps the cutout edge clean while retaining crisp opaque interiors.
+        float edgeConfidence = smoothstep(0.35, 0.95, min(base.a, blurAlpha));
+        // Keep the source character dominant; this is detail restoration, not a
+        // high-contrast filter that can make contours look synthetic.
+        float strength = 0.24 * edgeConfidence;
+        vec3 basePremul = base.rgb * base.a;
+        vec3 sharpenedPremul = basePremul + (basePremul - blurPremul) * strength;
+        if (base.a > 0.001) {
+            return vec4(clamp(sharpenedPremul / base.a, 0.0, 1.0), base.a);
+        }
+        return base;
     } else {
         return texture(uTexture, uv);
     }
@@ -485,7 +537,6 @@ bool GlesRenderer::init_layer_program(std::string& err) {
     m_u_subrect      = glGetUniformLocation(m_program, "uSubrect");
     m_u_instance_base = glGetUniformLocation(m_program, "uInstanceBase");
     m_u_object_box_count = glGetUniformLocation(m_program, "uObjectBoxCount");
-    m_u_object_boxes = glGetUniformLocation(m_program, "uObjectBoxes[0]");
     m_u_has_y_depth    = glGetUniformLocation(m_program, "uHasYDepth");
     m_u_y_depth_tex    = glGetUniformLocation(m_program, "uYDepthTex");
     m_u_y_depth_spread = glGetUniformLocation(m_program, "uYDepthSpread");
@@ -537,7 +588,6 @@ bool GlesRenderer::init_immersive_layer_program(std::string& err) {
     m_i_u_subrect      = glGetUniformLocation(m_immersive_program, "uSubrect");
     m_i_u_instance_base = glGetUniformLocation(m_immersive_program, "uInstanceBase");
     m_i_u_object_box_count = glGetUniformLocation(m_immersive_program, "uObjectBoxCount");
-    m_i_u_object_boxes = glGetUniformLocation(m_immersive_program, "uObjectBoxes[0]");
     return true;
 }
 
@@ -634,6 +684,8 @@ bool GlesRenderer::init(std::string& error_out) {
     glEnableVertexAttribArray(1);
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
     glBindVertexArray(0);
+
+    glGenBuffers(1, &m_object_box_ssbo);
 
     constexpr int kCurveStrips = 48;
     std::vector<float> curve_verts;
@@ -748,6 +800,7 @@ void GlesRenderer::shutdown() {
     m_dm_W = m_dm_H = m_dm_index_count = 0;
     if (m_vbo)       { glDeleteBuffers(1, &m_vbo);       m_vbo       = 0; }
     if (m_vao)       { glDeleteVertexArrays(1, &m_vao);  m_vao       = 0; }
+    if (m_object_box_ssbo) { glDeleteBuffers(1, &m_object_box_ssbo); m_object_box_ssbo = 0; }
     if (m_curve_vbo) { glDeleteBuffers(1, &m_curve_vbo); m_curve_vbo = 0; }
     if (m_curve_vao) { glDeleteVertexArrays(1, &m_curve_vao); m_curve_vao = 0; }
     if (m_flat_vbo)  { glDeleteBuffers(1, &m_flat_vbo);  m_flat_vbo  = 0; }
@@ -1378,7 +1431,6 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
     const GLint u_subrect = immersive_active ? m_i_u_subrect : m_u_subrect;
     const GLint u_instance_base = immersive_active ? m_i_u_instance_base : m_u_instance_base;
     const GLint u_object_box_count = immersive_active ? m_i_u_object_box_count : m_u_object_box_count;
-    const GLint u_object_boxes = immersive_active ? m_i_u_object_boxes : m_u_object_boxes;
     const int layer_vertex_count = immersive_active ? m_curve_vertex_count : 6;
 
     // Integer-scale + pixel-grid snap (upscale mode only).
@@ -1506,7 +1558,7 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
 
         int   copy_count;
         float copy_span;
-        if (fr.copies.empty()) {
+        if (fr.copies.empty() || fr.copies.back() <= 0.0f) {
             copy_count = k_max_copies;
             copy_span  = (float)k_max_copies * k_default_copy_step;
         } else {
@@ -1530,6 +1582,10 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
         glUniform1f(u_roundness,  wedge_active ? 1.0f : 0.0f);
         glUniform1f(u_bbox_mode, 0.0f);
         glUniform1f(u_bbox_debug, 0.0f);
+        // EXPERIMENT: fill transparent silhouette holes in WholeLayer copies with a solid
+        // extrusion shade instead of discarding, so the layer reads as a solid 3D block.
+        // Revert: change `wedge_active ? 1.0f : 0.0f` back to `0.0f`.
+        glUniform1f(u_solid_stack, wedge_active ? 1.0f : 0.0f);
 
         // Perspective compensation: zoom into the texture centre by 1/scale.
         // uSubrect shrinks the rendered quad by sub_w=1/S, so we pre-scale uQuadW/H
@@ -1603,33 +1659,44 @@ void GlesRenderer::render_eye(const EyeFbo& fbo,
             // Draw per-object extrusion copies FIRST (they go deeper into the screen).
             // The original front face is drawn LAST so it composites on top — it is the
             // closest layer to the viewer and must win the alpha blend.
-            if (copy_count > 0) {
+            //
+            // All boxes x all copies for this layer are packed into ONE instanced draw:
+            // the vertex shader derives (boxIndex, copyIndex) from gl_InstanceID and fetches
+            // the box's UV rect from the uBoxRects SSBO. This avoids a CPU draw call (and
+            // uniform upload) per detected object, so raising the number of boxes or copies
+            // costs GPU fill-rate only, not CPU/driver overhead.
+            if (copy_count > 0 && !fr.object_boxes.empty()) {
+                const std::size_t box_count = fr.object_boxes.size();
+                std::vector<float> box_rects;
+                box_rects.reserve(box_count * 4);
+                const float inv_w = 1.0f / (float)fr.width;
+                const float inv_h = 1.0f / (float)fr.height;
+                for (const ObjectBoundingBox& box : fr.object_boxes) {
+                    box_rects.push_back((float)box.min_x * inv_w);
+                    box_rects.push_back((float)box.min_y * inv_h);
+                    box_rects.push_back((float)(box.max_x + 1) * inv_w);
+                    box_rects.push_back((float)(box.max_y + 1) * inv_h);
+                }
+                glBindBuffer(GL_SHADER_STORAGE_BUFFER, m_object_box_ssbo);
+                glBufferData(GL_SHADER_STORAGE_BUFFER,
+                             (GLsizeiptr)(box_rects.size() * sizeof(float)),
+                             box_rects.data(), GL_DYNAMIC_DRAW);
+                glBindBufferBase(GL_SHADER_STORAGE_BUFFER, 0, m_object_box_ssbo);
+
                 glUniform1f(u_depthmap, 1.0f);
                 glUniform1f(u_roundness, 1.0f);
                 glUniform1f(u_bbox_mode, 1.0f);
                 glUniform1f(u_bbox_debug, 0.0f);
                 glUniform1f(u_instance_base, 1.0f);
-                glUniform1i(u_object_box_count, 1);
+                glUniform1i(u_object_box_count, (int)box_count);
 
-                for (std::size_t bi = 0; bi < fr.object_boxes.size() && bi < GlesRenderer::k_max_object_boxes; ++bi) {
-                    const ObjectBoundingBox& box = fr.object_boxes[bi];
-                    const float inv_w = 1.0f / (float)fr.width;
-                    const float inv_h = 1.0f / (float)fr.height;
-                    const float u0 = (float)box.min_x * inv_w;
-                    const float v0 = (float)box.min_y * inv_h;
-                    const float u1 = (float)(box.max_x + 1) * inv_w;
-                    const float v1 = (float)(box.max_y + 1) * inv_h;
-                    glUniform1f(u_subrect_enable, 1.0f);
-                    glUniform4f(u_subrect, u0, v0, u1, v1);
-                    glDrawArraysInstanced(GL_TRIANGLES, 0, layer_vertex_count, copy_count);
-                }
+                glDrawArraysInstanced(GL_TRIANGLES, 0, layer_vertex_count,
+                                       (GLsizei)(box_count * (std::size_t)copy_count));
 
                 glUniform1f(u_depthmap, state.depth_mode == DepthMode::WholeLayer ? 1.0f : 0.0f);
                 glUniform1f(u_roundness, wedge_active ? 1.0f : 0.0f);
                 glUniform1f(u_bbox_mode, 0.0f);
                 glUniform1f(u_bbox_debug, 0.0f);
-                glUniform1f(u_subrect_enable, 0.0f);
-                glUniform4f(u_subrect, 0.0f, 0.0f, 1.0f, 1.0f);
                 glUniform1f(u_instance_base, 0.0f);
                 glUniform1i(u_object_box_count, 0);
             }

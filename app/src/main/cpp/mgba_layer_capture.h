@@ -61,6 +61,36 @@ void mgba_gb_lc_capture_scanline(const uint16_t* row, int y, int window_x);
  *   Each byte: 0 = BG, 1 = window, 4 = OBJ. */
 const uint8_t* mgba_gb_lc_get_visible_source(void);
 
+/* Direct-write OBJ (sprite) capture for GBA, mirroring the per-BG capture below
+ * instead of inferring sprite identity from the composited framebuffer's flag
+ * bits. Called from GBAVideoSoftwareRendererPostprocessSprite() right where a
+ * sprite pixel is determined to actually composite onto the current scanline.
+ * x is the absolute screen column; uses the same "current scanline" set by
+ * mgba_lc_begin_scanline()/mgba_lc_begin_scanline_redraw(). */
+void mgba_lc_obj_pixel(int x, uint16_t color_rgb565);
+const uint16_t* mgba_lc_get_obj_pixels(void);
+const uint8_t*  mgba_lc_get_obj_mask(void);
+
+/* Per-BG full-tile pixel capture for GBA BG0-3.
+ * Call mgba_lc_begin_scanline(y) before each scanline's BG drawing.
+ * mgba_lc_bg_pixel() is called from BACKGROUND_DRAW_PIXEL macros for every
+ * non-transparent BG pixel, independently of compositing priority.
+ * Buffers are reset by mgba_lc_clear() at frame start. */
+void mgba_lc_begin_scanline(int y);
+
+/* Same as mgba_lc_begin_scanline(), but also clears this scanline's
+ * per-BG pixel/mask data for all 4 BGs first. Call only when the renderer
+ * is about to actually redraw this scanline's backgrounds; mGBA's own
+ * scanline cache skips redrawing (and thus skips mgba_lc_bg_pixel calls)
+ * for scanlines whose IO registers didn't change since last frame, so
+ * mgba_lc_begin_scanline() (no clear) must be used on that fast path to
+ * preserve the previously-captured data instead of losing it. */
+void mgba_lc_begin_scanline_redraw(int y);
+
+void mgba_lc_bg_pixel(int bg_index, int x, uint16_t color_rgb565);
+const uint16_t* mgba_lc_get_bg_pixels(int bg_index);
+const uint8_t*  mgba_lc_get_bg_mask(int bg_index);
+
 #ifdef __cplusplus
 }
 #endif

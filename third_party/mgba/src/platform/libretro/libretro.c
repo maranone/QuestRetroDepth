@@ -1220,16 +1220,22 @@ void GBARetroLog(struct mLogger* logger, int category, enum mLogLevel level, con
 		retroLevel = RETRO_LOG_DEBUG;
 		break;
 	}
-#ifdef NDEBUG
+	// gba.bios (per-SWI-call) and gba.dma (per-transfer) logging is extremely
+	// high-frequency (thousands of calls/sec during normal gameplay) and floods
+	// logcat badly enough to itself cause frame hitches. Always suppress it,
+	// not just in NDEBUG release builds — debug builds (the ones actually
+	// shipped by build_apk.bat) need this quiet too.
 	static int biosCat = -1;
+	static int dmaCat = -1;
 	if (biosCat < 0) {
 		biosCat = mLogCategoryById("gba.bios");
 	}
-
-	if (category == biosCat) {
+	if (dmaCat < 0) {
+		dmaCat = mLogCategoryById("gba.dma");
+	}
+	if ((category == biosCat || category == dmaCat) && level != mLOG_ERROR && level != mLOG_FATAL) {
 		return;
 	}
-#endif
 	logCallback(retroLevel, "%s: %s\n", mLogCategoryName(category), message);
 }
 

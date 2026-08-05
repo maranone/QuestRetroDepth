@@ -63,21 +63,10 @@ android {
         }
     }
 
-    sourceSets {
-        main {
-            jniLibs.srcDir(layout.buildDirectory.dir('generated/scummvmJniLibs'))
-        }
-    }
 }
 
 def rumbleSourceDir = rootProject.file('rumble/merged_inventory')
 def rumbleAssetScript = rootProject.file('scripts/package_rumble_assets.py')
-def scummvmLibretroDir = rootProject.file('third_party/scummvm_libretro/backends/platform/libretro')
-def scummvmJniDir = rootProject.file('third_party/scummvm_libretro/backends/platform/libretro/jni')
-def generatedScummvmJniDir = layout.buildDirectory.dir('generated/scummvmJniLibs')
-def scummvmNdkOutDir = file('C:/qrd_svm_obj')
-def scummvmNdkLibsDir = file('C:/qrd_svm_libs')
-def scummvmBuiltCore = new File(scummvmNdkLibsDir, 'arm64-v8a/libretro.so')
 
 tasks.register('packageRumbleAssets', Exec) {
     workingDir rootProject.projectDir
@@ -87,63 +76,9 @@ tasks.register('packageRumbleAssets', Exec) {
     outputs.dir(file('src/main/assets/rumble'))
 }
 
-tasks.register('buildScummvmLibretro', Exec) {
-    workingDir scummvmJniDir
-    inputs.files(
-            new File(scummvmJniDir, 'Android.mk'),
-            new File(scummvmJniDir, 'Application.mk'),
-            new File(scummvmLibretroDir, 'Makefile.common'),
-            new File(scummvmLibretroDir, 'dependencies.mk'),
-            new File(scummvmLibretroDir, 'sharedlib_test.mk'),
-            new File(scummvmLibretroDir, 'qrd_config.mk.engines'),
-            new File(scummvmLibretroDir, 'link.T'),
-            rootProject.file('third_party/scummvm_libretro/engines/scumm/actor.cpp'),
-            rootProject.file('third_party/scummvm_libretro/engines/scumm/gfx.cpp'),
-            new File(scummvmLibretroDir, 'src/libretro-core.cpp'),
-            new File(scummvmLibretroDir, 'src/libretro-graphics-surface.cpp')
-    )
-    outputs.file(scummvmBuiltCore)
-    onlyIf {
-        new File(scummvmJniDir, 'Android.mk').exists() &&
-        new File(scummvmJniDir, 'Application.mk').exists() &&
-        android.ndkDirectory != null &&
-        new File(android.ndkDirectory, 'ndk-build.cmd').exists()
-    }
-    doFirst {
-        commandLine new File(android.ndkDirectory, 'ndk-build.cmd').absolutePath,
-                '-j1',
-                'APP_ABI=arm64-v8a',
-                'APP_PLATFORM=android-29',
-                "NDK_OUT=${scummvmNdkOutDir.absolutePath}",
-                "NDK_LIBS_OUT=${scummvmNdkLibsDir.absolutePath}",
-                'QRD_SKIP_SCUMMVM_CONFIGURE=1'
-    }
-}
-
-tasks.register('copyScummvmLibretro', Copy) {
-    dependsOn(tasks.named('buildScummvmLibretro'))
-    def outDir = generatedScummvmJniDir.map { it.dir('arm64-v8a') }
-    from(new File(scummvmJniDir, 'libs/arm64-v8a/libretro.so')) {
-        rename { 'libscummvm_libretro.so' }
-    }
-    from(new File(scummvmLibretroDir, 'libs/arm64-v8a/libretro.so')) {
-        rename { 'libscummvm_libretro.so' }
-    }
-    from(scummvmBuiltCore) {
-        rename { 'libscummvm_libretro.so' }
-    }
-    into(outDir)
-    doLast {
-        def packaged = outDir.get().file('libscummvm_libretro.so').asFile
-        if (!packaged.exists()) {
-            throw new GradleException("ScummVM libretro core was not built at ${packaged}. Check ndk-build output.")
-        }
-    }
-}
 
 tasks.named('preBuild').configure {
     dependsOn(tasks.named('packageRumbleAssets'))
-    dependsOn(tasks.named('copyScummvmLibretro'))
 }
 
 dependencies {

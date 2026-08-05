@@ -33,6 +33,7 @@ namespace {
 constexpr float k_min_vr_resolution_scale = 0.25f;
 constexpr float k_max_vr_resolution_scale = 4.0f;
 constexpr int k_save_state_slot_count = 3;
+constexpr int k_settings_row_count = 25;
 constexpr const char* k_autosave_file_name = "autosave.state";
 constexpr const char* k_save_automation_file_name = "save_automation.ini";
 
@@ -48,6 +49,7 @@ static VrState default_vr_state_for_backend(BackendKind kind) {
     vs.upscale = false;
     vs.shadows = false;
     vs.ambilight = true;
+    vs.show_help_panels = false;
     vs.perspective_comp = true;
     vs.audio_spatial_mode = 3;
     vs.audio_screen_lock = true;
@@ -79,6 +81,9 @@ static const char* backend_storage_subdir(BackendKind kind) {
     case BackendKind::Genesis: return "genesis";
     case BackendKind::Gba:     return "gba";
     case BackendKind::Gb:      return "gb";
+    case BackendKind::Nes:     return "nes";
+    case BackendKind::Pce:     return "pce";
+    case BackendKind::Sms:     return "sms";
     default:                   return "snes";
     }
 }
@@ -402,6 +407,27 @@ static void pose_axes(const XrPosef& pose, XrVector3f& right, XrVector3f& up, Xr
     normal.z = 1.0f - 2.0f * (q.x * q.x + q.y * q.y);
 }
 
+// Yaw-locked pose centred in front of the current head pose (upright, ignores
+// pitch/roll). Same math as open_rom_menu()'s main-menu placement — used so
+// wing-style panels anchor to where the player is actually looking instead of
+// a stale/default-identity pose.
+static XrPosef yaw_locked_pose_in_front(const XrPosef& hmd_pose, float dist) {
+    const XrQuaternionf& q = hmd_pose.orientation;
+    const XrVector3f&    p = hmd_pose.position;
+
+    float siny = 2.0f * (q.w * q.y + q.x * q.z);
+    float cosy = 1.0f - 2.0f * (q.y * q.y + q.x * q.x);
+    float yaw  = std::atan2f(siny, cosy);
+
+    XrPosef out{};
+    out.orientation = { 0.0f, std::sinf(yaw * 0.5f), 0.0f, std::cosf(yaw * 0.5f) };
+
+    const float fwd_x = -std::sinf(yaw);
+    const float fwd_z = -std::cosf(yaw);
+    out.position = { p.x + fwd_x * dist, p.y, p.z + fwd_z * dist };
+    return out;
+}
+
 static XrQuaternionf quat_from_axes(XrVector3f right, XrVector3f up, XrVector3f normal) {
     right = vec_normalize(right);
     up = vec_normalize(up);
@@ -515,6 +541,64 @@ static void add_help_wings(OverlayInfo& overlay,
 
     add_wing(true);
     add_wing(false);
+}
+
+// Computes the world-space poses for the two manual-dashboard wing panels
+// (left = dashboard controls, right = layer management), 1.1m to either side
+// of the current head position. Called once per frame from the main input/
+// update path so the stored poses (used for laser hit-testing) always match
+// what gets rendered this same frame via add_dashboard_wings() below.
+static void compute_dashboard_wing_poses(const XrPosef& anchor, const XrPosef& hmd_pose,
+                                          XrPosef& left_pose, XrPosef& right_pose) {
+    XrVector3f anchor_right{}, anchor_up{}, anchor_normal{};
+    pose_axes(anchor, anchor_right, anchor_up, anchor_normal);
+
+    constexpr float k_dashboard_distance_m = 1.1f;
+    const XrVector3f hmd_pos = hmd_pose.position;
+    const XrVector3f world_up = {0.0f, 1.0f, 0.0f};
+
+    // Left wing (dashboard left panel)
+    {
+        const XrVector3f wing_normal = anchor_right;
+        const XrVector3f wing_right = vec_cross(world_up, wing_normal);
+        const XrVector3f side = vec_scale(anchor_right, -k_dashboard_distance_m);
+        left_pose.position = vec_add(hmd_pos, side);
+        left_pose.orientation = quat_from_axes(wing_right, world_up, wing_normal);
+    }
+
+    // Right wing (layer panel)
+    {
+        const XrVector3f wing_normal = vec_scale(anchor_right, -1.0f);
+        const XrVector3f wing_right = vec_cross(world_up, wing_normal);
+        const XrVector3f side = vec_scale(anchor_right, k_dashboard_distance_m);
+        right_pose.position = vec_add(hmd_pos, side);
+        right_pose.orientation = quat_from_axes(wing_right, world_up, wing_normal);
+    }
+}
+
+static void add_dashboard_wings(OverlayInfo& overlay,
+                                GLuint left_tex,
+                                const PanelMetrics& left_metrics,
+                                GLuint right_tex,
+                                const PanelMetrics& right_metrics,
+                                const XrPosef& left_pose,
+                                const XrPosef& right_pose) {
+    if (!left_tex || !right_tex || overlay.panel_count + 2 > OverlayInfo::k_max_panels) return;
+
+    {
+        auto& panel = overlay.panels[overlay.panel_count++];
+        panel.tex = left_tex;
+        panel.pose = left_pose;
+        panel.w = left_metrics.world_w;
+        panel.h = left_metrics.world_h;
+    }
+    {
+        auto& panel = overlay.panels[overlay.panel_count++];
+        panel.tex = right_tex;
+        panel.pose = right_pose;
+        panel.w = right_metrics.world_w;
+        panel.h = right_metrics.world_h;
+    }
 }
 
 static HelpModel build_help_model(bool menu_open,
@@ -822,8 +906,6 @@ static GameConfig default_config_for_backend(BackendKind kind, LayerFilterMode s
         return GameConfig::make_default_pce();
     case BackendKind::Sms:
         return GameConfig::make_default_sms();
-    case BackendKind::ScummVm:
-        return GameConfig::make_default_scummvm();
     }
     return GameConfig::make_flat();
 }
@@ -1322,7 +1404,7 @@ static float current_copy_step(const LayerConfig& layer) {
 }
 
 static void set_all_layer_copy_counts(GameConfig& config, int copy_count) {
-    const int clamped = std::clamp(copy_count, 1, 32);
+    const int clamped = std::clamp(copy_count, 1, 100);
     for (auto& layer : config.layers) {
         rebuild_copy_offsets(layer.copies, clamped, current_copy_step(layer));
     }
@@ -1528,6 +1610,99 @@ static std::vector<OpenXrShell::QuickLayerPreset> make_quick_layer_presets_for_s
              {false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false}},
         };
     }
+    if (signature.rfind("nes:", 0) == 0) {
+        return {
+            default_preset,
+            {"Sprites Pop",
+             {"sprites","bg_near","bg_mid","bg_far","backdrop"},
+             {true,true,true,true,true},
+             {true,true,false,false,false}},
+            {"Backdrop Calm",
+             {"bg_far","bg_mid","sprites","bg_near","backdrop"},
+             {true,true,true,true,true},
+             {true,false,false,false,true}},
+            {"Layer Study",
+             {"backdrop","bg_far","bg_mid","bg_near","sprites"},
+             {true,true,true,true,true},
+             {false,false,false,false,false}},
+            {"Minimal Mix",
+             {"sprites","backdrop","bg_far","bg_mid","bg_near"},
+             {true,true,false,false,false},
+             {false,false,false,false,false}},
+        };
+    }
+    if (signature.rfind("sms:", 0) == 0) {
+        return {
+            default_preset,
+            {"Sprites Pop",
+             {"sprites","bg_plane","backdrop"},
+             {true,true,true},
+             {true,false,false}},
+            {"Backdrop Calm",
+             {"bg_plane","sprites","backdrop"},
+             {true,true,true},
+             {false,false,true}},
+            {"Minimal Mix",
+             {"sprites","backdrop","bg_plane"},
+             {true,true,false},
+             {false,false,false}},
+        };
+    }
+    if (signature.rfind("pce:", 0) == 0) {
+        return {
+            default_preset,
+            {"Sprites Pop",
+             {"sprites","bg_plane","backdrop"},
+             {true,true,true},
+             {true,false,false}},
+            {"Backdrop Calm",
+             {"bg_plane","sprites","backdrop"},
+             {true,true,true},
+             {false,false,true}},
+            {"Minimal Mix",
+             {"sprites","backdrop","bg_plane"},
+             {true,true,false},
+             {false,false,false}},
+        };
+    }
+    if (signature.rfind("gba:", 0) == 0) {
+        return {
+            default_preset,
+            {"OBJ Punch",
+             {"obj","bg0","bg1","bg2","bg3"},
+             {true,true,true,true,true},
+             {true,true,false,false,false}},
+            {"Layer Study",
+             {"bg3","bg2","bg1","obj","bg0"},
+             {true,true,true,true,true},
+             {false,false,false,false,false}},
+            {"Backdrop Heavy",
+             {"bg3","bg2","obj","bg1","bg0"},
+             {true,true,true,true,true},
+             {true,true,false,false,false}},
+            {"Minimal Mix",
+             {"obj","bg0","bg1","bg2","bg3"},
+             {true,true,false,false,false},
+             {false,false,false,false,false}},
+        };
+    }
+    if (signature.rfind("gb:", 0) == 0) {
+        return {
+            default_preset,
+            {"Sprites Pop",
+             {"obj","window","bg"},
+             {true,true,true},
+             {true,false,false}},
+            {"Window Focus",
+             {"window","obj","bg"},
+             {true,true,true},
+             {true,false,false}},
+            {"Minimal",
+             {"obj","bg","window"},
+             {true,true,false},
+             {false,false,false}},
+        };
+    }
     return {};
 }
 
@@ -1687,6 +1862,7 @@ void OpenXrShell::set_frame_provider(FrameProvider p) {
     std::lock_guard<std::mutex> lk(m_mutex);
     m_frame_provider = std::move(p);
 }
+
 void OpenXrShell::set_status(const std::string& s) {
     std::lock_guard<std::mutex> lk(m_mutex);
     m_status = s;
@@ -2057,7 +2233,7 @@ void OpenXrShell::mobile_refresh_visible_panel() {
         std::chrono::steady_clock::now().time_since_epoch()).count();
     constexpr std::int64_t k_mobile_panel_refresh_interval_ns = 100000000LL;
     if ((now_ns - m_last_mobile_panel_refresh_ns) < k_mobile_panel_refresh_interval_ns) return;
-    if (m_menu_open) {
+    if (m_menu_open && m_active_sub_panel != k_panel_manual_dashboard) {
         if (m_ctrlmap_mode) {
             if (m_ctrlmap_panel_dirty) rebuild_ctrlmap_panel_texture();
             else return;
@@ -2220,10 +2396,14 @@ void OpenXrShell::mobile_tap(float u, float v) {
             case 10: m_vr_state.saturation = clamp(m_vr_state.saturation + dir * step, 0.0f, 2.0f); break;
             case 11: m_vr_state.brightness = clamp(m_vr_state.brightness + dir * step, 0.5f, 2.0f); break;
             case 13: m_vr_state.vr_resolution_scale = clamp(m_vr_state.vr_resolution_scale + dir * 0.25f, 0.25f, 4.0f); break;
-            case 14: m_vr_state.sprite_y_depth = !m_vr_state.sprite_y_depth; break;
+            case 14: m_vr_state.depth_mode = cycle_depth_mode(m_vr_state.depth_mode, dir); break;
             case 15: m_vr_state.sprite_y_depth_spread = clamp(m_vr_state.sprite_y_depth_spread + dir * step, 0.0f, 2.0f); break;
             case 16: m_vr_state.audio_spatial_mode = (m_vr_state.audio_spatial_mode + (dir == 0 ? 1 : dir) + 4) % 4; break;
             case 17: m_vr_state.audio_screen_lock = !m_vr_state.audio_screen_lock; break;
+            case 18:
+                m_vr_state.show_help_panels = !m_vr_state.show_help_panels;
+                m_help_panel_dirty = true;
+                break;
             default: break;
         }
         m_settings_panel_dirty = true;
@@ -2234,7 +2414,7 @@ void OpenXrShell::mobile_tap(float u, float v) {
     };
 
     if (m_menu_open && m_active_sub_panel == 0) {
-        if (m_main_menu_layout.items.empty()) m_main_menu_layout = make_main_menu_layout(5);
+        if (m_main_menu_layout.items.empty()) m_main_menu_layout = make_main_menu_layout(6);
         const PanelLayoutItem* item = m_main_menu_layout.hit(u, v);
         if (!item) return;
         switch (item->row) {
@@ -2279,7 +2459,16 @@ void OpenXrShell::mobile_tap(float u, float v) {
                 const bool ok = loader(path, err);
                 set_status(ok ? ("Loaded: " + path.substr(path.find_last_of("/\\") + 1))
                               : ("Load failed: " + err));
-                if (ok) m_menu_open = false;
+                if (ok) {
+                    m_menu_open = false;
+                    m_ctrlmap_mode = false;
+                    m_active_sub_panel = 0;
+                    m_laser_hit = false;
+                    EmuFreezeCtrl freeze_fn;
+                    { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
+                    if (freeze_fn) freeze_fn(false);
+                    m_emu_frozen_display = false;
+                }
             }
         }
         return;
@@ -2335,19 +2524,19 @@ void OpenXrShell::mobile_tap(float u, float v) {
         return;
     }
     if ((m_menu_open && m_active_sub_panel == 3) || (!m_menu_open && m_active_sub_panel == 3)) {
-        if (m_settings_panel_layout.items.empty()) m_settings_panel_layout = make_settings_layout(24);
+        if (m_settings_panel_layout.items.empty()) m_settings_panel_layout = make_settings_layout(k_settings_row_count);
         const PanelLayoutItem* item = m_settings_panel_layout.hit(u, v);
         if (!item) return;
         const int row = item->row;
         if (item->role == PanelRole::Minus) adjust_setting(row, -1);
         else if (item->role == PanelRole::Plus) adjust_setting(row, +1);
-        else if (row >= 0 && row <= 17) adjust_setting(row, 0);
-        else if (row == 18) { m_settings_action_pending = 5; apply_pending_vr_changes(); }
-        else if (row == 19) { m_settings_action_pending = 1; apply_pending_vr_changes(); }
-        else if (row == 20) { m_settings_action_pending = 2; apply_pending_vr_changes(); }
-        else if (row == 21) { m_settings_action_pending = 3; apply_pending_vr_changes(); }
-        else if (row == 22) { m_settings_action_pending = 4; apply_pending_vr_changes(); }
-        else if (row == 23) { m_active_sub_panel = m_settings_return_to_quick ? k_panel_quick_edit : 0; m_settings_return_to_quick = false; }
+        else if (row >= 0 && row <= 20) adjust_setting(row, 0);
+        else if (row == 21) { m_settings_action_pending = 5; apply_pending_vr_changes(); }
+        else if (row == 22) { m_settings_action_pending = 1; apply_pending_vr_changes(); }
+        else if (row == 23) { m_settings_action_pending = 2; apply_pending_vr_changes(); }
+        else if (row == 24) { m_settings_action_pending = 3; apply_pending_vr_changes(); }
+        else if (row == 25) { m_settings_action_pending = 4; apply_pending_vr_changes(); }
+        else if (row == 26) { m_active_sub_panel = m_settings_return_to_quick ? k_panel_quick_edit : 0; m_settings_return_to_quick = false; }
         return;
     }
     if (m_menu_open && m_active_sub_panel == 4) {
@@ -3251,7 +3440,10 @@ static void rebuild_panel_tex(JavaVM* vm, jobject activity,
 
     jclass cls = env->GetObjectClass(activity);
     jmethodID mid = env->GetMethodID(cls, method, sig);
-    if (!mid) { env->ExceptionClear(); env->DeleteLocalRef(cls); if (detach) vm->DetachCurrentThread(); return; }
+    if (!mid) {
+        LOGE("rebuild_panel_tex: GetMethodID failed for %s sig=%s", method, sig);
+        env->ExceptionClear(); env->DeleteLocalRef(cls); if (detach) vm->DetachCurrentThread(); return;
+    }
 
     // Build args: names_arr first, then extra args
     std::vector<jvalue> args;
@@ -3262,12 +3454,14 @@ static void rebuild_panel_tex(JavaVM* vm, jobject activity,
     env->DeleteLocalRef(cls);
 
     if (!pixels || env->ExceptionCheck()) {
+        LOGE("rebuild_panel_tex: %s call failed (pixels=%p exc=%d)", method, (void*)pixels, (int)env->ExceptionCheck());
         env->ExceptionClear();
         if (detach) vm->DetachCurrentThread();
         return;
     }
 
     jsize count = env->GetArrayLength(pixels);
+    LOGE("rebuild_panel_tex: %s ok count=%d expect=%d tex_out(before)=%u", method, (int)count, tex_w*tex_h, tex_out);
     if (count == tex_w * tex_h) {
         jint* raw = env->GetIntArrayElements(pixels, nullptr);
         if (raw) {
@@ -3370,7 +3564,7 @@ void OpenXrShell::rebuild_layer_panel_texture() {
 
     rebuild_panel_tex(m_vm, m_activity_global,
                       "renderLayerPanelBitmap", names_arr, args,
-                      "([Ljava/lang/String;[Z[ZII[FIIZLjava/lang/String;Ljava/lang/String;Z)[I",
+                      "([Ljava/lang/String;[Z[ZII[FIIIZLjava/lang/String;Ljava/lang/String;Z)[I",
                       metrics.tex_w, metrics.tex_h, m_layer_panel_tex, m_layer_panel_dirty,
                       &m_layer_bitmap);
 
@@ -3396,11 +3590,9 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     }
     if (!env) return;
 
-    constexpr int k_settings_row_count = 24;
     // Build name/value/isBool arrays.
-    // Rows 0-3 and 5-7: bools, Row 4: cycle, Rows 8-11: floats, Row 12: Refresh Hz,
-    // Row 13: VR Res Scale, Row 14: Sprite Y-Depth, Row 15: Y-Depth Spread,
-    // Row 16: Audio Spatial, Row 17: Audio direction lock, Rows 18-23: action buttons.
+    // Rows 0-2, 4, 6-7, 14, 17, 19-20: bools; Rows 3, 5, 16: cycle/stepped;
+    // Rows 8-13, 15: numeric; Rows 19-24: action buttons.
     struct SettingDef { const char* name; bool is_bool; };
     static const SettingDef defs[k_settings_row_count] = {
         {"Curve Screen", true }, {"Upscale",      true },
@@ -3411,11 +3603,12 @@ void OpenXrShell::rebuild_settings_panel_texture() {
         {"Brightness",   false},
         {"Refresh Hz",   false},
         {"VR Res Scale",  false},
-        {"Sprite Y-Depth", true},
+        {"Depth Mode",     false},
         {"Y-Depth Spread", false},
         {"Audio Spatial",  false},
         {"Audio direction locked to screen", true},
-        // Action buttons (rows 18-23) — rendered specially in Kotlin
+        {"Side Help Panels", true},
+        // Action buttons (rows 19-24) — rendered specially in Kotlin
         {"Reset Settings",  false},
         {"",       false},
         {"",       false},
@@ -3431,10 +3624,10 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     const bool has_active_rom = !m_current_rom_name.empty();
     std::array<std::string, k_settings_row_count> dynamic_names;
     for (int i = 0; i < k_settings_row_count; ++i) dynamic_names[i] = defs[i].name;
-    dynamic_names[19] = "Save " + game_target + " Settings";
-    dynamic_names[20] = "Save " + backend_target + " Global Settings";
-    dynamic_names[21] = "Load " + game_target + " Settings";
-    dynamic_names[22] = "Load " + backend_target + " Global Settings";
+    dynamic_names[20] = "Save " + game_target + " Settings";
+    dynamic_names[21] = "Save " + backend_target + " Global Settings";
+    dynamic_names[22] = "Load " + game_target + " Settings";
+    dynamic_names[23] = "Load " + backend_target + " Global Settings";
 
     // Determine display refresh rate label
     char refresh_label[32];
@@ -3474,18 +3667,19 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     snprintf(val_bufs[11], sizeof(val_bufs[11]), "%.2f", m_vr_state.brightness);
     snprintf(val_bufs[12], sizeof(val_bufs[12]), "%s", refresh_label);
     snprintf(val_bufs[13], sizeof(val_bufs[13]), "%.2fx", m_vr_state.vr_resolution_scale);
-    snprintf(val_bufs[14], sizeof(val_bufs[14]), "%s", m_vr_state.sprite_y_depth ? "ON" : "OFF");
+    snprintf(val_bufs[14], sizeof(val_bufs[14]), "%s", depth_mode_label(m_vr_state.depth_mode));
     snprintf(val_bufs[15], sizeof(val_bufs[15]), "%.2fm", m_vr_state.sprite_y_depth_spread);
     { static const char* k_spatial_labels[] = {"OFF", "WIDE", "SPATIAL", "SPAT+HAP"};
       snprintf(val_bufs[16], sizeof(val_bufs[16]), "%s", k_spatial_labels[m_vr_state.audio_spatial_mode]); }
     snprintf(val_bufs[17], sizeof(val_bufs[17]), "%s", m_vr_state.audio_screen_lock ? "ON" : "OFF");
-    // Action button rows 18-23
-    snprintf(val_bufs[18], sizeof(val_bufs[18]), "ACTION"); // Reset
-    snprintf(val_bufs[19], sizeof(val_bufs[19]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Save Game
-    snprintf(val_bufs[20], sizeof(val_bufs[20]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Save Global
-    snprintf(val_bufs[21], sizeof(val_bufs[21]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Load Game
-    snprintf(val_bufs[22], sizeof(val_bufs[22]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Load Global
-    snprintf(val_bufs[23], sizeof(val_bufs[23]), "ACTION"); // Back
+    snprintf(val_bufs[18], sizeof(val_bufs[18]), "%s", m_vr_state.show_help_panels ? "ON" : "OFF");
+    // Action button rows 19-24
+    snprintf(val_bufs[19], sizeof(val_bufs[19]), "ACTION"); // Reset
+    snprintf(val_bufs[20], sizeof(val_bufs[20]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Save Game
+    snprintf(val_bufs[21], sizeof(val_bufs[21]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Save Global
+    snprintf(val_bufs[22], sizeof(val_bufs[22]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Load Game
+    snprintf(val_bufs[23], sizeof(val_bufs[23]), "%s", has_active_rom ? "ACTION" : "DISABLED"); // Load Global
+    snprintf(val_bufs[24], sizeof(val_bufs[24]), "ACTION"); // Back
 
     jclass str_cls = env->FindClass("java/lang/String");
     if (!str_cls) { env->ExceptionClear(); if (detach) m_vm->DetachCurrentThread(); return; }
@@ -3536,6 +3730,76 @@ void OpenXrShell::rebuild_settings_panel_texture() {
     env->DeleteLocalRef(names_arr);
     env->DeleteLocalRef(values_arr);
     env->DeleteLocalRef(bool_arr);
+    if (detach) m_vm->DetachCurrentThread();
+}
+
+// ============================================================
+// rebuild_dashboard_left_panel_texture
+// ============================================================
+void OpenXrShell::rebuild_dashboard_left_panel_texture() {
+    if (!m_vm || !m_activity_global) return;
+
+    JNIEnv* env = nullptr;
+    bool detach = false;
+    if (m_vm->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6) == JNI_EDETACHED) {
+        if (m_vm->AttachCurrentThread(&env, nullptr) == JNI_OK) detach = true;
+    }
+    if (!env) return;
+
+    // Dashboard left panel: 7 rows
+    // 0: Screen Size, 1: Near Distance, 2: Far Distance, 3: X Position, 4: Y Position, 5: Dup Count, 6: Dup Spacing
+    constexpr int row_count = 7;
+    static const char* row_names[row_count] = {
+        "Screen Size", "Near Distance", "Far Distance", "X Position", "Y Position", "Dup Count", "Dup Spacing"
+    };
+
+    char val_bufs[row_count][64];
+    snprintf(val_bufs[0], sizeof(val_bufs[0]), "%.2fx", m_canvas_scale);
+    // Near: first visible layer depth, Far: last layer depth
+    float near_d = 1.0f, far_d = 2.0f;
+    if (!m_config.layers.empty()) {
+        near_d = m_config.layers[0].depth_meters;
+        far_d = m_config.layers.back().depth_meters;
+    }
+    snprintf(val_bufs[1], sizeof(val_bufs[1]), "%.2fm", near_d);
+    snprintf(val_bufs[2], sizeof(val_bufs[2]), "%.2fm", far_d);
+    snprintf(val_bufs[3], sizeof(val_bufs[3]), "%.2fm", m_canvas_x);
+    snprintf(val_bufs[4], sizeof(val_bufs[4]), "%.2fm", m_canvas_y);
+    snprintf(val_bufs[5], sizeof(val_bufs[5]), "%d", current_base_copy_count(m_config, m_layer_order));
+    snprintf(val_bufs[6], sizeof(val_bufs[6]), "%.4f", m_dashboard_duplication_spacing);
+
+    jclass str_cls = env->FindClass("java/lang/String");
+    if (!str_cls) { env->ExceptionClear(); if (detach) m_vm->DetachCurrentThread(); return; }
+    jobjectArray names_arr  = env->NewObjectArray(row_count, str_cls, nullptr);
+    jobjectArray values_arr = env->NewObjectArray(row_count, str_cls, nullptr);
+    for (int i = 0; i < row_count; ++i) {
+        jstring jn = env->NewStringUTF(row_names[i]);
+        jstring jv = env->NewStringUTF(val_bufs[i]);
+        env->SetObjectArrayElement(names_arr, i, jn);
+        env->SetObjectArrayElement(values_arr, i, jv);
+        env->DeleteLocalRef(jn);
+        env->DeleteLocalRef(jv);
+    }
+    env->DeleteLocalRef(str_cls);
+
+    const PanelMetrics metrics = panel_metrics(PanelKind::DashboardLeft);
+    m_dashboard_left_panel_layout = make_manual_dashboard_left_layout();
+
+    std::vector<jvalue> args;
+    jvalue a; a.l = values_arr;                    args.push_back(a);
+    jvalue b; b.i = m_dashboard_left_panel_hovered; args.push_back(b);
+    jvalue c; c.i = metrics.tex_w;                args.push_back(c);
+    jvalue d; d.i = metrics.tex_h;                args.push_back(d);
+
+    rebuild_panel_tex(m_vm, m_activity_global,
+                      "renderDashboardLeftPanelBitmap", names_arr, args,
+                      "([Ljava/lang/String;[Ljava/lang/String;III)[I",
+                      metrics.tex_w, metrics.tex_h, m_dashboard_left_panel_tex, m_dashboard_left_panel_dirty,
+                      nullptr);
+
+    if (env->ExceptionCheck()) env->ExceptionClear();
+    env->DeleteLocalRef(names_arr);
+    env->DeleteLocalRef(values_arr);
     if (detach) m_vm->DetachCurrentThread();
 }
 
@@ -3951,15 +4215,18 @@ void OpenXrShell::rebuild_main_menu_texture() {
         "Save States",
         "Settings",
         "Mappings",
+        "Wipe Settings",
         "Exit"
     };
-    constexpr int k_item_count = 5;
+    constexpr int k_item_count = 6;
     m_main_menu_layout = make_main_menu_layout(k_item_count);
 
     jclass str_cls = env->FindClass("java/lang/String");
     jobjectArray items_arr = env->NewObjectArray(k_item_count, str_cls, nullptr);
     for (int i = 0; i < k_item_count; ++i) {
-        jstring js = env->NewStringUTF(k_menu_items[i]);
+        const char* label = k_menu_items[i];
+        if (i == 4 && m_wipe_settings_armed) label = "Tap again to confirm";
+        jstring js = env->NewStringUTF(label);
         env->SetObjectArrayElement(items_arr, i, js);
         env->DeleteLocalRef(js);
     }
@@ -4336,6 +4603,19 @@ void OpenXrShell::reset_settings() {
     m_save_state_panel_dirty = true;
     persist_save_automation_settings();
     if (std::abs(prev_vr_scale - m_vr_state.vr_resolution_scale) > 0.001f) destroy_swapchains();
+}
+
+void OpenXrShell::wipe_all_settings() {
+    const std::string root_dir = get_settings_dir();
+    if (!root_dir.empty()) settings_wipe_all_ini(root_dir);
+    reset_settings();
+    m_quick_settings_presets = make_quick_settings_presets();
+    refresh_default_quick_settings_preset(m_current_backend_kind, m_config, m_quick_settings_presets);
+    const std::string signature = quick_layer_signature(m_current_backend_kind, m_layer_filter_mode, m_config);
+    m_quick_layer_presets = make_quick_layer_presets_for_signature(signature, m_config);
+    m_quick_panel_dirty = true;
+    m_main_menu_dirty = true;
+    set_status("All settings wiped and reset to defaults.");
 }
 
 static std::string system_settings_dir(const std::string& root, BackendKind kind);
@@ -5512,8 +5792,17 @@ void OpenXrShell::poll_actions() {
     }
     m_menu_prev = menu_btn;
 
+    // ---- Manual dashboard wings follow head yaw (continuous tracking) ----
+    // Recomputed every frame from the current head pose so the hit-test
+    // descriptors (m_dashboard_left_pose / m_dashboard_right_pose) always
+    // match what add_dashboard_wings() renders this same frame.
+    if (m_active_sub_panel == k_panel_manual_dashboard) {
+        compute_dashboard_wing_poses(m_main_menu_pose, m_impl->last_hmd_pose,
+                                      m_dashboard_left_pose, m_dashboard_right_pose);
+    }
+
     // ---- laser + multi-panel hover (runs for menu panels and standalone quick/manual panels) -----------
-    if ((m_menu_open || m_active_sub_panel == 2 || m_active_sub_panel == 3 || m_active_sub_panel == 7)
+    if ((m_menu_open || m_active_sub_panel == k_panel_manual_dashboard || m_active_sub_panel == 2 || m_active_sub_panel == 3 || m_active_sub_panel == 7)
         && m_impl->raim_space != XR_NULL_HANDLE) {
         XrPosef aim{};
         if (get_controller_pose(m_impl->raim_space, aim)) {
@@ -5539,6 +5828,7 @@ void OpenXrShell::poll_actions() {
             const PanelMetrics code_metrics     = panel_metrics(PanelKind::Code);
             const PanelMetrics ctrlmap_metrics  = panel_metrics(PanelKind::CtrlMap);
             const PanelMetrics quick_metrics    = panel_metrics(PanelKind::QuickEdit);
+            const PanelMetrics dashboard_left_metrics = panel_metrics(PanelKind::DashboardLeft);
 
             // Determine which panels are visible based on current mode
             PanelDesc* descs = nullptr;
@@ -5564,6 +5854,19 @@ void OpenXrShell::poll_actions() {
                 descs_main[1].w = code_metrics.world_w;
                 descs_main[1].h = code_metrics.world_h;
                 descs = descs_main;
+                descs_count = 2;
+            } else if (m_active_sub_panel == k_panel_manual_dashboard) {
+                // Manual dashboard: dashboard left control panel on the left wing,
+                // layer management on the right wing (reusing layer panel texture).
+                static PanelDesc descs_dashboard[2] = {
+                    { &m_dashboard_left_pose,  0.0f, 0.0f, k_panel_manual_dashboard },
+                    { &m_dashboard_right_pose, 0.0f, 0.0f, k_panel_layers },
+                };
+                descs_dashboard[0].w = dashboard_left_metrics.world_w;
+                descs_dashboard[0].h = dashboard_left_metrics.world_h;
+                descs_dashboard[1].w = layer_metrics.world_w;
+                descs_dashboard[1].h = layer_metrics.world_h;
+                descs = descs_dashboard;
                 descs_count = 2;
             } else {
                 // A sub-panel is active: show only that panel (+ code panel for browser)
@@ -5693,7 +5996,7 @@ void OpenXrShell::poll_actions() {
             };
 
             if (best_panel == k_panel_main_menu) {
-                if (m_main_menu_layout.items.empty()) m_main_menu_layout = make_main_menu_layout(5);
+                if (m_main_menu_layout.items.empty()) m_main_menu_layout = make_main_menu_layout(6);
                 const PanelLayoutItem* item = assign_hit(m_main_menu_layout);
                 int row = item ? item->row : -1;
                 if (row != m_main_menu_hovered) m_main_menu_hovered = row;
@@ -5713,7 +6016,7 @@ void OpenXrShell::poll_actions() {
                 int row = item ? item->row : -1;
                 if (row != m_layer_panel_hovered) m_layer_panel_hovered = row;
             } else if (best_panel == k_panel_settings) {
-                if (m_settings_panel_layout.items.empty()) m_settings_panel_layout = make_settings_layout(24);
+                if (m_settings_panel_layout.items.empty()) m_settings_panel_layout = make_settings_layout(k_settings_row_count);
                 const PanelLayoutItem* item = assign_hit(m_settings_panel_layout);
                 int row = item ? item->row : -1;
                 int area = 0;
@@ -5746,6 +6049,18 @@ void OpenXrShell::poll_actions() {
                     m_hw_hovered = row;
                     m_hw_dirty = true;
                 }
+            } else if (best_panel == k_panel_manual_dashboard) {
+                // Dashboard left panel (global controls)
+                m_dashboard_left_panel_layout = make_manual_dashboard_left_layout();
+                const PanelLayoutItem* item = assign_hit(m_dashboard_left_panel_layout);
+                int row = item ? item->row : -1;
+                if (row != m_dashboard_left_panel_hovered) m_dashboard_left_panel_hovered = row;
+            } else if (best_panel == k_panel_layers && m_active_sub_panel == k_panel_manual_dashboard) {
+                // Dashboard right panel (layer management, reuses layer layout)
+                m_layer_panel_layout = make_layers_layout((int)m_layer_names.size(), is_snes_filter_capable_config(m_config));
+                const PanelLayoutItem* item = assign_hit(m_layer_panel_layout);
+                int row = item ? item->row : -1;
+                if (row != m_layer_panel_hovered) m_layer_panel_hovered = row;
             } else {
                 m_laser_hit_has_item = false;
             }
@@ -5903,7 +6218,7 @@ void OpenXrShell::poll_actions() {
         if (std::abs(lx) > k_adj_thresh && (now - m_last_copy_fire > k_fire_interval)) {
             m_last_copy_fire = now;
             const int delta = (lx > 0.0f) ? 1 : -1;
-            const int next_count = std::clamp(current_base_copy_count(m_config, m_layer_order) + delta, 1, 32);
+            const int next_count = std::clamp(current_base_copy_count(m_config, m_layer_order) + delta, 1, 100);
             set_all_layer_copy_counts(m_config, next_count);
             set_status(copy_count_status_text(m_config, m_layer_order, m_layer_auto_dup_percent));
         }
@@ -5927,7 +6242,7 @@ void OpenXrShell::poll_actions() {
             m_input_state = EmulatorInputState{};
         }
 
-    } else if (m_menu_open || m_active_sub_panel == 2 || m_active_sub_panel == 3 || m_active_sub_panel == 7) {
+    } else if (m_menu_open || m_active_sub_panel == k_panel_manual_dashboard || m_active_sub_panel == 2 || m_active_sub_panel == 3 || m_active_sub_panel == 7) {
         // ==============================================================
         // PANEL MODE — multi-panel dispatch
         // (also runs when layers panel is open over live game via thumbstick)
@@ -5957,6 +6272,10 @@ void OpenXrShell::poll_actions() {
             int row = m_main_menu_hovered;
             if (rtrig_rising && m_laser_hit && row >= 0) {
                 fire_haptic(true, 0.3f, 30);
+                if (row != 4 && m_wipe_settings_armed) {
+                    m_wipe_settings_armed = false;
+                    m_main_menu_dirty = true;
+                }
                 switch (row) {
                     case 0: // Open ROM → show browser panel (centered, no main menu)
                         m_active_sub_panel = 1;
@@ -5986,7 +6305,20 @@ void OpenXrShell::poll_actions() {
                         m_ctrlmap_selected_row = -1;
                         m_ctrlmap_panel_hovered = -1;
                         break;
-                    case 4: { // Exit → close app
+                    case 4: { // Wipe Settings → arm, then confirm on second tap
+                        constexpr XrTime k_wipe_arm_timeout = 4'000'000'000; // 4 s
+                        if (m_wipe_settings_armed && (now_panel - m_wipe_settings_arm_time) < k_wipe_arm_timeout) {
+                            m_wipe_settings_armed = false;
+                            wipe_all_settings();
+                        } else {
+                            m_wipe_settings_armed = true;
+                            m_wipe_settings_arm_time = now_panel;
+                            m_main_menu_dirty = true;
+                            set_status("Tap Wipe Settings again to permanently erase all saved settings.");
+                        }
+                        break;
+                    }
+                    case 5: { // Exit → close app
                         m_menu_open     = false;
                         m_ctrlmap_mode  = false;
                         m_active_sub_panel = 0;
@@ -6246,6 +6578,245 @@ void OpenXrShell::poll_actions() {
                 }
             }
 
+        } else if (m_laser_panel == k_panel_manual_dashboard) {
+            // ---- Manual Dashboard Left Panel (Global Controls) ----
+            // All 7 rows have +/- buttons: Screen Size, Near, Far, X, Y, Dup Count, Dup Spacing
+            int row = m_dashboard_left_panel_hovered;
+            if (rtrig_rising && m_laser_hit && row >= 0 && row < 7) {
+                if (m_laser_hit_has_item && m_laser_hit_item.role == PanelRole::Minus) {
+                    // Minus button clicked
+                    auto adjust_dashboard_setting = [&](int r, int dir) {
+                        if (dir == 0) return;
+                        switch (r) {
+                            case 0: // Screen Size
+                                m_canvas_scale = std::clamp(m_canvas_scale * (dir > 0 ? 1.1f : 0.91f), 0.25f, 6.0f);
+                                m_dashboard_left_panel_dirty = true;
+                                break;
+                            case 1: // Near Distance
+                                {
+                                    float near_d = !m_config.layers.empty() ? m_config.layers[0].depth_meters : 1.0f;
+                                    near_d = std::clamp(near_d + dir*0.05f, 0.05f, 10.0f);
+                                    for (auto& lc : m_config.layers) {
+                                        if (lc.depth_meters < 5.0f) lc.depth_meters = near_d;
+                                    }
+                                    m_layer_panel_dirty = true;
+                                    m_dashboard_left_panel_dirty = true;
+                                }
+                                break;
+                            case 2: // Far Distance
+                                {
+                                    float far_d = !m_config.layers.empty() ? m_config.layers.back().depth_meters : 2.0f;
+                                    far_d = std::clamp(far_d + dir*0.05f, 0.05f, 10.0f);
+                                    for (auto& lc : m_config.layers) {
+                                        if (lc.depth_meters >= 5.0f) lc.depth_meters = far_d;
+                                    }
+                                    m_layer_panel_dirty = true;
+                                    m_dashboard_left_panel_dirty = true;
+                                }
+                                break;
+                            case 3: // X Position
+                                m_canvas_x = std::clamp(m_canvas_x + dir*0.05f, -2.0f, 2.0f);
+                                m_dashboard_left_panel_dirty = true;
+                                break;
+                            case 4: // Y Position
+                                m_canvas_y = std::clamp(m_canvas_y + dir*0.05f, -2.0f, 2.0f);
+                                m_dashboard_left_panel_dirty = true;
+                                break;
+                            case 5: // Duplication Count
+                                {
+                                    const int next_count = std::clamp(current_base_copy_count(m_config, m_layer_order) + dir, 1, 100);
+                                    set_all_layer_copy_counts(m_config, next_count);
+                                    m_layer_panel_dirty = true;
+                                    m_dashboard_left_panel_dirty = true;
+                                }
+                                break;
+                            case 6: // Duplication Spacing
+                                m_dashboard_duplication_spacing = std::clamp(m_dashboard_duplication_spacing + dir*0.0005f, 0.0001f, 0.02f);
+                                m_dashboard_left_panel_dirty = true;
+                                break;
+                        }
+                    };
+                    adjust_dashboard_setting(row, -1);
+                    fire_haptic(true, 0.2f, 15);
+                    do_step_one();
+                } else if (m_laser_hit_has_item && m_laser_hit_item.role == PanelRole::Plus) {
+                    // Plus button clicked
+                    auto adjust_dashboard_setting = [&](int r, int dir) {
+                        if (dir == 0) return;
+                        switch (r) {
+                            case 0: // Screen Size
+                                m_canvas_scale = std::clamp(m_canvas_scale * (dir > 0 ? 1.1f : 0.91f), 0.25f, 6.0f);
+                                m_dashboard_left_panel_dirty = true;
+                                break;
+                            case 1: // Near Distance
+                                {
+                                    float near_d = !m_config.layers.empty() ? m_config.layers[0].depth_meters : 1.0f;
+                                    near_d = std::clamp(near_d + dir*0.05f, 0.05f, 10.0f);
+                                    for (auto& lc : m_config.layers) {
+                                        if (lc.depth_meters < 5.0f) lc.depth_meters = near_d;
+                                    }
+                                    m_layer_panel_dirty = true;
+                                    m_dashboard_left_panel_dirty = true;
+                                }
+                                break;
+                            case 2: // Far Distance
+                                {
+                                    float far_d = !m_config.layers.empty() ? m_config.layers.back().depth_meters : 2.0f;
+                                    far_d = std::clamp(far_d + dir*0.05f, 0.05f, 10.0f);
+                                    for (auto& lc : m_config.layers) {
+                                        if (lc.depth_meters >= 5.0f) lc.depth_meters = far_d;
+                                    }
+                                    m_layer_panel_dirty = true;
+                                    m_dashboard_left_panel_dirty = true;
+                                }
+                                break;
+                            case 3: // X Position
+                                m_canvas_x = std::clamp(m_canvas_x + dir*0.05f, -2.0f, 2.0f);
+                                m_dashboard_left_panel_dirty = true;
+                                break;
+                            case 4: // Y Position
+                                m_canvas_y = std::clamp(m_canvas_y + dir*0.05f, -2.0f, 2.0f);
+                                m_dashboard_left_panel_dirty = true;
+                                break;
+                            case 5: // Duplication Count
+                                {
+                                    const int next_count = std::clamp(current_base_copy_count(m_config, m_layer_order) + dir, 1, 100);
+                                    set_all_layer_copy_counts(m_config, next_count);
+                                    m_layer_panel_dirty = true;
+                                    m_dashboard_left_panel_dirty = true;
+                                }
+                                break;
+                            case 6: // Duplication Spacing
+                                m_dashboard_duplication_spacing = std::clamp(m_dashboard_duplication_spacing + dir*0.0005f, 0.0001f, 0.02f);
+                                m_dashboard_left_panel_dirty = true;
+                                break;
+                        }
+                    };
+                    adjust_dashboard_setting(row, 1);
+                    fire_haptic(true, 0.2f, 15);
+                    do_step_one();
+                }
+            }
+        } else if (m_laser_panel == k_panel_layers && m_active_sub_panel == k_panel_manual_dashboard) {
+            // ---- Manual Dashboard Right Panel (Layer Management, reuses layer panel logic) ----
+            int n = (int)m_layer_names.size();
+            int row = m_layer_panel_hovered;
+            const bool has_filter_row = is_snes_filter_capable_config(m_config);
+
+            // Play/Pause button: row == n
+            if (rtrig_rising && m_laser_hit && row == n) {
+                EmuFreezeCtrl freeze_fn;
+                { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
+                if (freeze_fn) {
+                    m_emu_frozen_display = !m_emu_frozen_display;
+                    freeze_fn(m_emu_frozen_display);
+                    m_layer_panel_dirty = true;
+                    fire_haptic(true, 0.35f, 40);
+                }
+            }
+            // Auto-dup cycle button: row == n + 1
+            else if (rtrig_rising && m_laser_hit && row == n + 1) {
+                m_layer_auto_dup_percent = next_layer_auto_dup_percent(m_layer_auto_dup_percent);
+                m_layer_panel_dirty = true;
+                fire_haptic(true, 0.35f, 40);
+                do_step_one();
+            }
+            // Reset depths button: row == n + 2
+            else if (rtrig_rising && m_laser_hit && row == n + 2) {
+                even_spread_layer_depths(m_config.layers);
+                m_layer_depth_selected = -1;
+                m_layer_panel_dirty = true;
+                fire_haptic(true, 0.35f, 40);
+                do_step_one();
+            }
+            else if (has_filter_row && rtrig_rising && m_laser_hit && row == n + 3) {
+                apply_layer_filter_mode(next_layer_filter_mode(m_layer_filter_mode), true);
+                m_layer_panel_dirty = true;
+                fire_haptic(true, 0.35f, 40);
+                do_step_one();
+            }
+            // Layer row interactions (rows 0 to n-1)
+            else if (rtrig_rising && m_laser_hit && row >= 0 && row < n) {
+                int orig = m_layer_order[row];
+                if (m_laser_hit_has_item && m_laser_hit_item.role == PanelRole::Ambilight) {
+                    if (orig < (int)m_layer_ambilight.size())
+                        m_layer_ambilight[orig] = !m_layer_ambilight[orig];
+                    m_layer_panel_dirty = true;
+                    fire_haptic(true, 0.3f, 30);
+                    do_step_one();
+                } else if (m_laser_hit_has_item && m_laser_hit_item.role == PanelRole::Visibility) {
+                    if (orig < (int)m_layer_enabled.size())
+                        m_layer_enabled[orig] = !m_layer_enabled[orig];
+                    sync_layer_capture_mask();
+                    m_layer_panel_dirty = true;
+                    fire_haptic(true, 0.3f, 30);
+                    do_step_one();
+                } else {
+                    if (m_layer_depth_selected == row) {
+                        m_layer_depth_selected = -1;
+                    } else {
+                        m_layer_depth_selected = row;
+                    }
+                    m_layer_panel_grabbed = row;
+                    m_layer_panel_dirty = true;
+                    fire_haptic(true, 0.25f, 20);
+                }
+            }
+
+            if (!rtrig_now && m_layer_panel_grabbed >= 0) {
+                int src = m_layer_panel_grabbed;
+                int dst = (m_laser_hit && row >= 0 && row < n) ? row : src;
+                if (src != dst) {
+                    std::vector<float> depths(n);
+                    for (int i = 0; i < n; ++i)
+                        depths[i] = (m_layer_order[i] < (int)m_config.layers.size())
+                                    ? m_config.layers[m_layer_order[i]].depth_meters : 1.5f;
+
+                    if (src < dst) {
+                        for (int i = src; i < dst; ++i)
+                            std::swap(m_layer_order[i], m_layer_order[i + 1]);
+                    } else {
+                        for (int i = src; i > dst; --i)
+                            std::swap(m_layer_order[i], m_layer_order[i - 1]);
+                    }
+
+                    std::sort(depths.begin(), depths.end());
+                    for (int i = 0; i < n; ++i) {
+                        int orig = m_layer_order[i];
+                        if (orig < (int)m_config.layers.size())
+                            m_config.layers[orig].depth_meters = depths[i];
+                    }
+                }
+                m_layer_panel_grabbed = -1;
+                m_layer_panel_dirty = true;
+                if (src != dst) {
+                    fire_haptic(true, 0.4f, 50);
+                    do_step_one();
+                }
+            }
+
+            static int s_prev_hover_dashboard = -1;
+            if (m_layer_panel_grabbed >= 0 && row != s_prev_hover_dashboard) {
+                m_layer_panel_dirty = true;
+                s_prev_hover_dashboard = row;
+            }
+            if (m_layer_panel_grabbed < 0) s_prev_hover_dashboard = -1;
+
+            if (m_layer_depth_selected >= 0 && m_layer_depth_selected < n
+                && std::abs(ry) > 0.5f
+                && now_panel - m_last_layer_fire > k_setting_interval) {
+                m_last_layer_fire = now_panel;
+                const int orig = m_layer_order[m_layer_depth_selected];
+                if (orig < (int)m_config.layers.size()) {
+                    constexpr float step = 0.05f;
+                    float& d = m_config.layers[orig].depth_meters;
+                    d += (ry > 0 ? -step : step);
+                    if (d < 0.05f) d = 0.05f;
+                    if (d > 10.0f) d = 10.0f;
+                    m_layer_panel_dirty = true;
+                    do_step_one();
+                }
+            }
         } else if (m_laser_panel == k_panel_settings) {
             // ---- Settings panel ---------------------------------------------
             // Bools  (rows 0-3, 5): trigger anywhere → toggle
@@ -6328,8 +6899,18 @@ void OpenXrShell::poll_actions() {
                         m_settings_panel_dirty = true;
                         break;
                     }
+                    case 14:
+                        m_vr_state.depth_mode = cycle_depth_mode(m_vr_state.depth_mode, dir);
+                        m_settings_panel_dirty = true;
+                        break;
+                    case 15: m_vr_state.sprite_y_depth_spread = clamp(m_vr_state.sprite_y_depth_spread + dir*step, 0.0f, 2.0f); m_settings_panel_dirty=true; break;
                     case 16: m_vr_state.audio_spatial_mode = (m_vr_state.audio_spatial_mode + (dir == 0 ? 1 : dir) + 4) % 4; m_settings_panel_dirty=true; break;
                     case 17: m_vr_state.audio_screen_lock = !m_vr_state.audio_screen_lock; m_settings_panel_dirty=true; break;
+                    case 18:
+                        m_vr_state.show_help_panels = !m_vr_state.show_help_panels;
+                        m_settings_panel_dirty = true;
+                        m_help_panel_dirty = true;
+                        break;
                     default: break;
                 }
                 if (m_on_vr_state_changed) {
@@ -6339,7 +6920,7 @@ void OpenXrShell::poll_actions() {
 
             int row = m_settings_panel_hovered;
             if (rtrig_rising && m_laser_hit && row >= 0) {
-                if ((row >= 0 && row <= 2) || row == 4 || row == 5 || row == 6 || row == 7 || row == 14 || row == 16 || row == 17) {
+                if ((row >= 0 && row <= 2) || row == 4 || row == 5 || row == 6 || row == 7 || row == 16 || row == 18 || row == 19 || row == 20) {
                     adjust_setting(row, 0);
                     fire_haptic(true, 0.3f, 25);
                     do_step_one();
@@ -6359,9 +6940,9 @@ void OpenXrShell::poll_actions() {
                     fire_haptic(true, 0.2f, 15);
                     do_step_one();
                     }
-                } else if (row == 13 || row == 15) {
+                } else if (row == 13 || row == 14 || row == 15) {
                     if (m_settings_panel_area == 0) {
-                        // Numeric rows only act on the visible minus/plus zones.
+                        // Numeric/cycle rows only act on the visible minus/plus zones.
                     } else {
                     int dir = (m_settings_panel_area == 1) ? -1 : 1;
                     adjust_setting(row, dir);
@@ -6369,39 +6950,39 @@ void OpenXrShell::poll_actions() {
                     do_step_one();
                     }
                 } else {
-                    // Action buttons (rows 18-23)
+                    // Action buttons (rows 19-24)
                     switch (row) {
-                        case 18:
-                            m_settings_action_pending = 5; break; // Reset
                         case 19:
+                            m_settings_action_pending = 5; break; // Reset
+                        case 20:
                             if (m_current_rom_name.empty()) {
                                 set_status("Load a ROM before saving game settings.");
                                 fire_haptic(true, 0.2f, 20);
                                 break;
                             }
                             m_settings_action_pending = 1; break; // Save Game
-                        case 20:
+                        case 21:
                             if (m_current_rom_name.empty()) {
                                 set_status("Load a ROM before saving global settings.");
                                 fire_haptic(true, 0.2f, 20);
                                 break;
                             }
                             m_settings_action_pending = 2; break; // Save Global
-                        case 21:
+                        case 22:
                             if (m_current_rom_name.empty()) {
                                 set_status("Load a ROM before loading game settings.");
                                 fire_haptic(true, 0.2f, 20);
                                 break;
                             }
                             m_settings_action_pending = 3; break; // Load Game
-                        case 22:
+                        case 23:
                             if (m_current_rom_name.empty()) {
                                 set_status("Load a ROM before loading global settings.");
                                 fire_haptic(true, 0.2f, 20);
                                 break;
                             }
                             m_settings_action_pending = 4; break; // Load Global
-                        case 23: // Back
+                        case 24: // Back
                             m_active_sub_panel        = m_settings_return_to_quick ? k_panel_quick_edit : 0;
                             m_settings_panel_hovered = -1;
                             m_settings_panel_area    = 0;
@@ -6415,7 +6996,7 @@ void OpenXrShell::poll_actions() {
                 }
             }
             // Continuous adjustment while holding trigger + stick X (only for float rows and int sliders)
-            if (rtrig_now && ((row >= 8 && row <= 11) || row == 13 || row == 15) && std::abs(rx) > 0.5f
+            if (rtrig_now && ((row >= 8 && row <= 11) || row == 13 || row == 15 || row == 17) && std::abs(rx) > 0.5f
                 && now_panel - m_last_settings_fire > k_setting_interval) {
                 m_last_settings_fire = now_panel;
                 adjust_setting(row, rx > 0 ? 1 : -1);
@@ -6818,73 +7399,6 @@ void OpenXrShell::poll_actions() {
             m_input_state.button_start  = btn_start;
             m_input_state.button_select = btn_select;
 
-            // ScummVM: raycast right controller aim against game screen quad, inject mouse coords
-            m_scummvm_laser_hit = false;
-            if (m_current_backend_kind == BackendKind::ScummVm &&
-                !m_config.layers.empty() &&
-                m_impl->raim_space != XR_NULL_HANDLE) {
-
-                XrPosef aim{};
-                if (get_controller_pose(m_impl->raim_space, aim)) {
-                    const XrVector3f& O = aim.position;
-                    const XrQuaternionf& aq = aim.orientation;
-                    XrVector3f D;
-                    D.x = -2.0f*(aq.x*aq.z + aq.w*aq.y);
-                    D.y =  2.0f*(aq.w*aq.x - aq.y*aq.z);
-                    D.z =  2.0f*aq.x*aq.x + 2.0f*aq.y*aq.y - 1.0f;
-
-                    const float depth  = m_config.layers[0].depth_meters;
-                    const float quad_w = m_config.layers[0].quad_width_meters * m_canvas_scale;
-                    const float aspect = (m_config.virtual_width > 0 && m_config.virtual_height > 0)
-                                         ? (float)m_config.virtual_height / (float)m_config.virtual_width
-                                         : 0.625f;
-                    const float quad_h = quad_w * aspect;
-
-                    const float cos_el = std::cos(m_canvas_el);
-                    const float sin_el = std::sin(m_canvas_el);
-                    const float cos_az = std::cos(m_canvas_az);
-                    const float sin_az = std::sin(m_canvas_az);
-
-                    const XrVector3f N = { sin_az * cos_el,  sin_el,  -cos_az * cos_el };
-                    const XrVector3f R = { cos_az,            0.0f,    sin_az           };
-                    const XrVector3f U = { -sin_az * sin_el,  cos_el,  -cos_az * sin_el };
-                    const XrVector3f P = {
-                        depth * sin_az * cos_el + m_canvas_x,
-                        depth * sin_el          + m_canvas_y,
-                       -depth * cos_az * cos_el
-                    };
-
-                    const float dN = D.x*N.x + D.y*N.y + D.z*N.z;
-                    m_scummvm_laser_origin = O;
-                    constexpr float k_scumm_laser_max = 5.0f;
-                    if (std::abs(dN) > 0.001f) {
-                        const float t = ((P.x-O.x)*N.x + (P.y-O.y)*N.y + (P.z-O.z)*N.z) / dN;
-                        m_scummvm_laser_end = { O.x + t*D.x, O.y + t*D.y, O.z + t*D.z };
-                        if (t > 0.01f && t < k_scumm_laser_max) {
-                            const float hx = m_scummvm_laser_end.x - P.x;
-                            const float hy = m_scummvm_laser_end.y - P.y;
-                            const float hz = m_scummvm_laser_end.z - P.z;
-                            const float u = (hx*R.x + hy*R.y + hz*R.z) / (quad_w * 0.5f) * 0.5f + 0.5f;
-                            const float v = -(hx*U.x + hy*U.y + hz*U.z) / (quad_h * 0.5f) * 0.5f + 0.5f;
-                            if (u >= 0.0f && u <= 1.0f && v >= 0.0f && v <= 1.0f) {
-                                m_scummvm_laser_hit = true;
-                                m_input_state.mouse_x = (int16_t)std::clamp(
-                                    (int)(u * (float)m_config.virtual_width),
-                                    0, m_config.virtual_width - 1);
-                                m_input_state.mouse_y = (int16_t)std::clamp(
-                                    (int)(v * (float)m_config.virtual_height),
-                                    0, m_config.virtual_height - 1);
-                                m_input_state.mouse_left_button  = qi_state[QI_RTRIG];
-                                m_input_state.mouse_right_button = qi_state[QI_A];
-                            }
-                        }
-                    } else {
-                        m_scummvm_laser_end = { O.x + D.x*k_scumm_laser_max,
-                                                O.y + D.y*k_scumm_laser_max,
-                                                O.z + D.z*k_scumm_laser_max };
-                    }
-                }
-            }
         }
 
         // Right stick click: short press → recenter, long press (≥500 ms) → randomize
@@ -7265,27 +7779,8 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
             }
         }
 
-        const bool build_object_boxes = m_vr_state.depth_mode == DepthMode::BoundingBox;
-        if (!m_cached_frame_out.native_layers.empty()) {
-            m_cached_layer_frames.resize(m_cached_frame_out.native_layers.size());
-            for (std::size_t ni = 0; ni < m_cached_frame_out.native_layers.size(); ++ni) {
-                const auto& nl = m_cached_frame_out.native_layers[ni];
-                auto& lf = m_cached_layer_frames[ni];
-                lf.id = nl.id;
-                lf.depth_meters = nl.depth_meters;
-                lf.quad_width_meters = nl.quad_width_meters;
-                lf.copies.clear();
-                lf.width = nl.width;
-                lf.height = nl.height;
-                lf.rgba = nl.rgba;
-                lf.depth_map.clear();
-                lf.has_pixels = !nl.rgba.empty();
-                lf.is_ui_bar = nl.is_ui_bar;
-                lf.wedge_eligible = false;
-                lf.bbox_eligible = false;
-                lf.object_boxes.clear();
-            }
-        } else {
+        const bool build_object_boxes   = m_vr_state.depth_mode == DepthMode::BoundingBox;
+        {
             LayerProcessor proc(m_config);
             const uint8_t* zbuf = m_cached_frame_out.zbuffer.empty() ? nullptr : m_cached_frame_out.zbuffer.data();
             proc.process_into(
@@ -7460,9 +7955,7 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         }
     }
 
-    const bool using_native_layers = !m_cached_frame_out.native_layers.empty();
-    if (!using_native_layers)
-        presentation::sync_cached_layer_geometry_from_config(m_cached_layer_frames, m_config);
+    presentation::sync_cached_layer_geometry_from_config(m_cached_layer_frames, m_config);
 
     // Keep runtime layer state aligned with the active config. This also repairs
     // legacy Genesis identity order during autoload paths that do not rebuild UI state.
@@ -7471,13 +7964,8 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         const std::vector<bool> prev_enabled = m_layer_enabled;
         const std::vector<bool> prev_ambilight = m_layer_ambilight;
         const std::size_t prev_name_count = m_layer_names.size();
-        if (using_native_layers) {
-            ensure_layer_runtime_state_matches_frames(
-                m_cached_layer_frames, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
-        } else {
-            presentation::ensure_layer_runtime_state_matches_config(
-                m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
-        }
+        presentation::ensure_layer_runtime_state_matches_config(
+            m_config, m_layer_names, m_layer_order, m_layer_enabled, m_layer_ambilight);
         if (m_layer_order != prev_order ||
             m_layer_enabled != prev_enabled ||
             m_layer_ambilight != prev_ambilight ||
@@ -7617,6 +8105,23 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         }
     }
 
+    // ---- Auto-pause the emulator while any menu/panel UI or edit mode is open ----
+    // Edge-triggered so it doesn't fight the manual play/pause button on the
+    // layer panel.
+    {
+        const bool ui_open = m_menu_open || m_ctrlmap_mode || m_edit_mode ||
+                              m_active_sub_panel != 0;
+        if (ui_open != m_auto_pause_ui_open_prev) {
+            EmuFreezeCtrl freeze_fn;
+            { std::lock_guard<std::mutex> lk(m_mutex); freeze_fn = m_emu_freeze_ctrl; }
+            if (freeze_fn) {
+                freeze_fn(ui_open);
+                m_emu_frozen_display = ui_open;
+            }
+            m_auto_pause_ui_open_prev = ui_open;
+        }
+    }
+
     // ---- Rebuild panel textures on GL thread (one per frame to avoid spike) ----
     // Throttle: JNI bitmap render is expensive; don't rebuild more than once per 100 ms.
     constexpr XrTime k_panel_rebuild_interval = 100'000'000; // 100 ms in nanoseconds
@@ -7633,7 +8138,18 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
             m_last_help_fire = m_frame_predicted_time;
         }
     }
-    if (!m_menu_open && m_active_sub_panel == 2) {
+    if (m_active_sub_panel == k_panel_manual_dashboard) {
+        if (m_dashboard_left_panel_dirty &&
+            (m_frame_predicted_time - m_last_dashboard_fire) >= k_panel_rebuild_interval) {
+            rebuild_dashboard_left_panel_texture();
+            m_last_dashboard_fire = m_frame_predicted_time;
+        }
+        if (m_layer_panel_dirty &&
+            (m_frame_predicted_time - m_last_layer_fire) >= k_panel_rebuild_interval) {
+            rebuild_layer_panel_texture();
+            m_last_layer_fire = m_frame_predicted_time;
+        }
+    } else if (!m_menu_open && m_active_sub_panel == 2) {
         // Layers panel open over live game (thumbstick shortcut, no menu)
         if (m_layer_panel_dirty &&
             (m_frame_predicted_time - m_last_layer_fire) >= k_panel_rebuild_interval) {
@@ -7739,7 +8255,7 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
     const PanelMetrics ctrlmap_metrics  = panel_metrics(PanelKind::CtrlMap);
     const PanelMetrics quick_metrics    = panel_metrics(PanelKind::QuickEdit);
     const PanelMetrics help_metrics     = panel_metrics(PanelKind::Help);
-    if (m_menu_open) {
+    if (m_menu_open && m_active_sub_panel != k_panel_manual_dashboard) {
         if (m_ctrlmap_mode) {
             // Controller map panel only
             auto& cm     = overlay.panels[0];
@@ -7868,6 +8384,30 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         overlay.laser_hit_u     = m_laser_hit_u;
         overlay.laser_hit_v     = m_laser_hit_v;
         overlay.laser_hit_panel = m_laser_panel;
+    } else if (m_active_sub_panel == k_panel_manual_dashboard) {
+        // Manual dashboard: left wing = dashboard left controls, right wing = layer management (reuses layer panel texture)
+        const PanelMetrics dashboard_left_metrics = panel_metrics(PanelKind::DashboardLeft);
+        add_dashboard_wings(overlay,
+                           m_dashboard_left_panel_tex,
+                           dashboard_left_metrics,
+                           m_layer_panel_tex,
+                           layer_metrics,
+                           m_dashboard_left_pose,
+                           m_dashboard_right_pose);
+
+        // Highlight hovered items
+        if (m_laser_panel == k_panel_manual_dashboard && m_laser_hit_has_item)
+            set_hover_highlight(overlay, 0, m_laser_hit_item, 0.16f, 0.24f, 0.39f, 0.35f);
+        else if (m_laser_panel == k_panel_layers && m_laser_hit_has_item)
+            set_hover_highlight(overlay, 1, m_laser_hit_item, 0.18f, 0.39f, 0.75f, 0.35f);
+
+        overlay.show_laser = true;
+        overlay.laser_origin = m_laser_origin;
+        overlay.laser_end = m_laser_end;
+        overlay.laser_hit = m_laser_hit;
+        overlay.laser_hit_u = m_laser_hit_u;
+        overlay.laser_hit_v = m_laser_hit_v;
+        overlay.laser_hit_panel = m_laser_panel;
     } else if (m_edit_mode) {
         // Edit mode: show both controller lasers (no panels)
         overlay.show_laser  = true;
@@ -7912,16 +8452,9 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         overlay.laser_hit_u     = m_laser_hit_u;
         overlay.laser_hit_v     = m_laser_hit_v;
         overlay.laser_hit_panel = m_laser_panel;
-    } else if (m_current_backend_kind == BackendKind::ScummVm && !m_menu_open && !m_edit_mode) {
-        // ScummVM game mode: show right-controller laser pointing at game screen
-        overlay.show_laser    = true;
-        overlay.laser_origin  = m_scummvm_laser_origin;
-        overlay.laser_end     = m_scummvm_laser_end;
-        overlay.laser_hit     = m_scummvm_laser_hit;
-        overlay.laser_hit_panel = -1;
     }
 
-    if (m_help_panel_tex) {
+    if (m_vr_state.show_help_panels && m_help_panel_tex) {
         if (overlay.panel_count > 0) {
             const PanelInfo& anchor = overlay.panels[0];
             if (anchor.tex) {
@@ -8014,6 +8547,7 @@ void OpenXrShell::render_frame(XrTime predicted_time) {
         parallax_yaw   = (m_canvas_az - hmd_yaw)   * m_vr_state.parallax_ratio;
         parallax_pitch = (hmd_pitch - m_canvas_el) * m_vr_state.parallax_ratio;
     }
+
 
     // Render each eye
     for (int eye = 0; eye < 2; ++eye) {

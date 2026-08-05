@@ -147,9 +147,6 @@ qrd::BackendKind detect_backend_kind_from_path(const std::string& rom_path) {
         return qrd::BackendKind::Sms;
     if (path_has_segment(rom_path, "/roms/gg/") || path_has_segment(rom_path, "\\roms\\gg\\"))
         return qrd::BackendKind::Sms;
-    if (path_has_segment(rom_path, "/roms/scummvm/") || path_has_segment(rom_path, "\\roms\\scummvm\\"))
-        return qrd::BackendKind::ScummVm;
-
     // Extension-based detection
     if (path_ends_with(rom_path, ".gba"))
         return qrd::BackendKind::Gba;
@@ -166,8 +163,6 @@ qrd::BackendKind detect_backend_kind_from_path(const std::string& rom_path) {
         path_ends_with(rom_path, ".gen") || path_ends_with(rom_path, ".smd")) {
         return qrd::BackendKind::Genesis;
     }
-    if (path_ends_with(rom_path, ".scummvm"))
-        return qrd::BackendKind::ScummVm;
     return qrd::BackendKind::Snes;
 }
 
@@ -184,8 +179,7 @@ qrd::BackendKind resolve_backend_kind(const std::string& raw_path, const std::st
         path_has_segment(raw_path, "/roms/gg/")  || path_has_segment(raw_path, "\\roms\\gg\\") ||
         path_has_segment(raw_path, "/roms/gba/") || path_has_segment(raw_path, "\\roms\\gba\\") ||
         path_has_segment(raw_path, "/roms/gb/")     || path_has_segment(raw_path, "\\roms\\gb\\") ||
-        path_has_segment(raw_path, "/roms/gbc/")    || path_has_segment(raw_path, "\\roms\\gbc\\") ||
-        path_has_segment(raw_path, "/roms/scummvm/") || path_has_segment(raw_path, "\\roms\\scummvm\\");
+        path_has_segment(raw_path, "/roms/gbc/")    || path_has_segment(raw_path, "\\roms\\gbc\\");
     if (raw_has_system_folder) return raw_kind;
 
     return prepared_kind;
@@ -1353,30 +1347,8 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileDrawFr
 
         const auto& frame = g_mobile_renderer.cached_frame;
         const uint8_t* zbuf = frame.zbuffer.empty() ? nullptr : frame.zbuffer.data();
-        const bool build_object_boxes = g_mobile_renderer.vr_state.depth_mode == DepthMode::BoundingBox;
-        const bool using_native_layers = !frame.native_layers.empty();
-        if (using_native_layers) {
-            // ScummVM per-actor layers: convert NativeLayerFrame → LayerFrame directly,
-            // bypassing LayerProcessor (which doesn't support dynamic layer counts).
-            g_mobile_renderer.layer_frames.resize(frame.native_layers.size());
-            for (size_t ni = 0; ni < frame.native_layers.size(); ++ni) {
-                const auto& nl = frame.native_layers[ni];
-                auto& lf = g_mobile_renderer.layer_frames[ni];
-                lf.id               = nl.id;
-                lf.depth_meters     = nl.depth_meters;
-                lf.quad_width_meters = nl.quad_width_meters;
-                lf.copies.clear();
-                lf.width            = nl.width;
-                lf.height           = nl.height;
-                lf.rgba             = nl.rgba;
-                lf.depth_map.clear();
-                lf.has_pixels       = !nl.rgba.empty();
-                lf.is_ui_bar        = nl.is_ui_bar;
-                lf.wedge_eligible   = false;
-                lf.bbox_eligible    = false;
-                lf.object_boxes.clear();
-            }
-        } else {
+        const bool build_object_boxes   = g_mobile_renderer.vr_state.depth_mode == DepthMode::BoundingBox;
+        {
             LayerProcessor proc(g_mobile_renderer.config);
             proc.process_into(
                 g_mobile_renderer.layer_frames,
@@ -1466,22 +1438,13 @@ Java_com_retrodepth_questretrodepth_QuestRetroDepthActivity_nativeOnMobileDrawFr
             }
         }
 
-        if (using_native_layers) {
-            mobile_ensure_layer_runtime_state_matches_frames(
-                g_mobile_renderer.layer_frames,
-                g_mobile_renderer.layer_names,
-                g_mobile_renderer.layer_order,
-                g_mobile_renderer.layer_enabled,
-                g_mobile_renderer.layer_ambilight);
-        } else {
-            qrd::presentation::sync_cached_layer_geometry_from_config(g_mobile_renderer.layer_frames, g_mobile_renderer.config);
-            qrd::presentation::ensure_layer_runtime_state_matches_config(
-                g_mobile_renderer.config,
-                g_mobile_renderer.layer_names,
-                g_mobile_renderer.layer_order,
-                g_mobile_renderer.layer_enabled,
-                g_mobile_renderer.layer_ambilight);
-        }
+        qrd::presentation::sync_cached_layer_geometry_from_config(g_mobile_renderer.layer_frames, g_mobile_renderer.config);
+        qrd::presentation::ensure_layer_runtime_state_matches_config(
+            g_mobile_renderer.config,
+            g_mobile_renderer.layer_names,
+            g_mobile_renderer.layer_order,
+            g_mobile_renderer.layer_enabled,
+            g_mobile_renderer.layer_ambilight);
         g_mobile_renderer.render_refs.clear();
         const std::vector<int>& order = g_mobile_renderer.layer_order;
         g_mobile_renderer.render_refs.reserve(g_mobile_renderer.layer_frames.size());

@@ -304,27 +304,28 @@ GameConfig GameConfig::make_default_sms() {
 
 GameConfig GameConfig::make_default_gba() {
     // GBA: 240x160, 5 hardware layers — BG0-3 and OBJ.
-    // mGBA renders via VisibleSourceFinal (visible_source_id: 0=BG0,1=BG1,2=BG2,3=BG3,4=OBJ).
-    // BG0 is typically the HUD/text (front), BG3 the sky/background (back).
+    // All 5 layers are direct-write PerLayerCapture (mgba_layer_capture.cpp),
+    // matching SNES's architecture — mGBA hooks the actual pixel-draw sites
+    // instead of reconstructing layer identity from the composited frame.
     GameConfig cfg;
     cfg.game           = "gba";
     cfg.virtual_width  = 240;
     cfg.virtual_height = 160;
     cfg.quad_y_meters  = 1.6f;
 
-    // far → near: BG3(sky) … BG0(HUD) … OBJ(sprites)
+    // far → near: BG3 … BG2 … BG1 … OBJ … BG0
     static const struct { const char* id; float depth; int layer_index; } k[] = {
         { "bg3",  k_genesis_default_far_depth,                                          3 },
         { "bg2",  k_genesis_default_far_depth * 0.75f + k_genesis_default_near_depth * 0.25f, 2 },
         { "bg1",  k_genesis_default_far_depth * 0.50f + k_genesis_default_near_depth * 0.50f, 1 },
-        { "bg0",  k_genesis_default_far_depth * 0.25f + k_genesis_default_near_depth * 0.75f, 0 },
-        { "obj",  k_genesis_default_near_depth,                                          4 },
+        { "obj",  k_genesis_default_far_depth * 0.25f + k_genesis_default_near_depth * 0.75f, 4 },
+        { "bg0",  k_genesis_default_near_depth,                                          0 },
     };
     for (const auto& s : k) {
         LayerConfig lc;
         lc.id               = s.id;
         lc.depth_meters     = s.depth;
-        lc.extraction_type  = ExtractionType::VisibleSourceFinal;
+        lc.extraction_type  = ExtractionType::PerLayerCapture;
         lc.layer_index      = s.layer_index;
         apply_uniform_width_and_copies(lc,
                                        k_genesis_default_quad_width,
@@ -362,28 +363,6 @@ GameConfig GameConfig::make_default_gb() {
                                        k_genesis_default_copy_step);
         cfg.layers.push_back(std::move(lc));
     }
-    return cfg;
-}
-
-GameConfig GameConfig::make_default_scummvm() {
-    // ScummVM: classic 320x200 SCUMM games rendered as a single composite frame.
-    // No hardware layers — Y-position is used as the depth proxy (zbuffer generated
-    // per-row in ScummVmBackend::step_frame): top=far(0), bottom=near(255).
-    GameConfig cfg;
-    cfg.game           = "scummvm";
-    cfg.virtual_width  = 320;
-    cfg.virtual_height = 200;
-    cfg.quad_y_meters  = 1.6f;
-
-    LayerConfig lc;
-    lc.id              = "composite";
-    lc.depth_meters    = 2.5f;
-    lc.extraction_type = ExtractionType::FullFrame;
-    apply_uniform_width_and_copies(lc,
-                                   k_genesis_default_quad_width,
-                                   k_genesis_default_copy_count,
-                                   k_genesis_default_copy_step);
-    cfg.layers.push_back(std::move(lc));
     return cfg;
 }
 

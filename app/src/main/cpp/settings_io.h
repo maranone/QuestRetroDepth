@@ -12,6 +12,34 @@
 #include <vector>
 #include <cstdio>
 #include <cstring>
+#include <dirent.h>
+#include <sys/stat.h>
+
+// ---- Wipe --------------------------------------------------------------
+
+// Recursively deletes every "*.ini" file under root_dir (settings only —
+// save data and ROM files never use the .ini extension). Returns the count
+// of files removed.
+static inline int settings_wipe_all_ini(const std::string& root_dir) {
+    int removed = 0;
+    DIR* dir = opendir(root_dir.c_str());
+    if (!dir) return removed;
+    struct dirent* entry;
+    while ((entry = readdir(dir)) != nullptr) {
+        const std::string name = entry->d_name;
+        if (name == "." || name == "..") continue;
+        const std::string path = root_dir + "/" + name;
+        struct stat st;
+        if (stat(path.c_str(), &st) != 0) continue;
+        if (S_ISDIR(st.st_mode)) {
+            removed += settings_wipe_all_ini(path);
+        } else if (name.size() > 4 && name.substr(name.size() - 4) == ".ini") {
+            if (std::remove(path.c_str()) == 0) ++removed;
+        }
+    }
+    closedir(dir);
+    return removed;
+}
 
 // ---- Serialise -------------------------------------------------------
 
@@ -39,10 +67,13 @@ static inline bool settings_save(
     float refresh_rate = 0.0f,
     bool experimental_rumble_enabled = true,
     const qrd::ButtonMap* btn_map = nullptr,
-    qrd::BackendKind btn_map_backend = qrd::BackendKind::Snes)
+    qrd::BackendKind btn_map_backend = qrd::BackendKind::Snes
+    )
 {
     qrd::ButtonMap snes_map = qrd::default_button_map_for_backend(qrd::BackendKind::Snes);
     qrd::ButtonMap genesis_map = qrd::default_button_map_for_backend(qrd::BackendKind::Genesis);
+    qrd::ButtonMap gba_map = qrd::default_button_map_for_backend(qrd::BackendKind::Gba);
+    qrd::ButtonMap gb_map = qrd::default_button_map_for_backend(qrd::BackendKind::Gb);
     if (FILE* existing = fopen(path.c_str(), "r")) {
         char line[256];
         while (fgets(line, sizeof(line), existing)) {
@@ -56,6 +87,10 @@ static inline bool settings_save(
                 snes_map[bi] = value;
             else if (sscanf(key, "btn_map_genesis_%d", &bi) == 1 && bi >= 0 && bi < qrd::SNES_BUTTON_COUNT)
                 genesis_map[bi] = value;
+            else if (sscanf(key, "btn_map_gba_%d", &bi) == 1 && bi >= 0 && bi < qrd::SNES_BUTTON_COUNT)
+                gba_map[bi] = value;
+            else if (sscanf(key, "btn_map_gb_%d", &bi) == 1 && bi >= 0 && bi < qrd::SNES_BUTTON_COUNT)
+                gb_map[bi] = value;
             else if (sscanf(key, "btn_map_%d", &bi) == 1 && bi >= 0 && bi < qrd::SNES_BUTTON_COUNT)
                 snes_map[bi] = value;
         }
@@ -64,6 +99,10 @@ static inline bool settings_save(
     if (btn_map) {
         if (btn_map_backend == qrd::BackendKind::Genesis)
             genesis_map = *btn_map;
+        else if (btn_map_backend == qrd::BackendKind::Gba)
+            gba_map = *btn_map;
+        else if (btn_map_backend == qrd::BackendKind::Gb)
+            gb_map = *btn_map;
         else
             snes_map = *btn_map;
     }
@@ -89,6 +128,7 @@ static inline bool settings_save(
     settings_write(f, "upscale",         vs.upscale);
     settings_write(f, "passthrough",     vs.shadows);
     settings_write(f, "ambilight",       vs.ambilight);
+    settings_write(f, "show_help_panels", vs.show_help_panels);
     settings_write(f, "environment_sphere_mode", (int)vs.environment_sphere_mode);
     settings_write(f, "perspective_comp",    vs.perspective_comp);
     settings_write(f, "parallax_ratio",      vs.parallax_ratio);
@@ -134,6 +174,10 @@ static inline bool settings_save(
             settings_write(f, key, snes_map[i]);
             snprintf(key, sizeof(key), "btn_map_genesis_%d", i);
             settings_write(f, key, genesis_map[i]);
+            snprintf(key, sizeof(key), "btn_map_gba_%d", i);
+            settings_write(f, key, gba_map[i]);
+            snprintf(key, sizeof(key), "btn_map_gb_%d", i);
+            settings_write(f, key, gb_map[i]);
         }
     }
 
@@ -155,7 +199,8 @@ static inline bool settings_load(
     float* refresh_rate = nullptr,
     bool* experimental_rumble_enabled = nullptr,
     qrd::ButtonMap* btn_map = nullptr,
-    qrd::BackendKind btn_map_backend = qrd::BackendKind::Snes)
+    qrd::BackendKind btn_map_backend = qrd::BackendKind::Snes
+    )
 {
     FILE* f = fopen(path.c_str(), "r");
     if (!f) return false;
@@ -218,6 +263,7 @@ static inline bool settings_load(
         else if (strcmp(key,"upscale")         == 0) readb(vs.upscale);
         else if (strcmp(key,"passthrough")     == 0) readb(vs.shadows);
         else if (strcmp(key,"ambilight")       == 0) readb(vs.ambilight);
+        else if (strcmp(key,"show_help_panels") == 0) readb(vs.show_help_panels);
         else if (strcmp(key,"environment_sphere_mode") == 0) {
             vs.environment_sphere_mode = (EnvironmentSphereMode)std::clamp(atoi(val), 0, 2);
         }
@@ -250,7 +296,7 @@ static inline bool settings_load(
                 cfg.layers[idx].quad_width_meters = (float)atof(val);
             else if (sscanf(key, "layer_copies_count_%d", &idx) == 1 && idx >= 0 && idx < (int)cfg.layers.size()) {
                 int cnt = atoi(val);
-                if (cnt >= 0 && cnt <= 32) cfg.layers[idx].copies.resize(cnt, 0.0f);
+                if (cnt >= 0 && cnt <= 100) cfg.layers[idx].copies.resize(cnt, 0.0f);
             }
             else if (sscanf(key, "layer_copy_%d_%d", &idx, &cidx) == 2
                      && idx >= 0 && idx < (int)cfg.layers.size()
@@ -267,6 +313,12 @@ static inline bool settings_load(
                 if (btn_map_backend == qrd::BackendKind::Genesis &&
                     sscanf(key, "btn_map_genesis_%d", &bi) == 1 && bi >= 0 && bi < qrd::SNES_BUTTON_COUNT) {
                     (*btn_map)[bi] = atoi(val);
+                } else if (btn_map_backend == qrd::BackendKind::Gba &&
+                    sscanf(key, "btn_map_gba_%d", &bi) == 1 && bi >= 0 && bi < qrd::SNES_BUTTON_COUNT) {
+                    (*btn_map)[bi] = atoi(val);
+                } else if (btn_map_backend == qrd::BackendKind::Gb &&
+                    sscanf(key, "btn_map_gb_%d", &bi) == 1 && bi >= 0 && bi < qrd::SNES_BUTTON_COUNT) {
+                    (*btn_map)[bi] = atoi(val);
                 } else if (btn_map_backend == qrd::BackendKind::Snes &&
                     sscanf(key, "btn_map_snes_%d", &bi) == 1 && bi >= 0 && bi < qrd::SNES_BUTTON_COUNT) {
                     (*btn_map)[bi] = atoi(val);
@@ -279,5 +331,14 @@ static inline bool settings_load(
     }
 
     fclose(f);
+
+    // Clear any all-zero copies vectors — saved with a zero copy_step (e.g. from a
+    // discarded experiment) and would collapse all depth instances to the same plane.
+    // Empty copies triggers the k_max_copies fallback in the renderer.
+    for (auto& layer : cfg.layers) {
+        if (!layer.copies.empty() && layer.copies.back() <= 0.0f)
+            layer.copies.clear();
+    }
+
     return true;
 }

@@ -15,7 +15,6 @@ enum class BackendKind {
     Nes,   // NES (FCEUmm)
     Pce,     // PC Engine / TurboGrafx-16 (beetle-pce-fast)
     Sms,     // Sega Master System / Game Gear (PicoDrive, but SMS RAM range differs from Genesis)
-    ScummVm, // Classic point-and-click adventures via ScummVM libretro
 };
 
 struct EmulatorInputState {
@@ -31,8 +30,6 @@ struct EmulatorInputState {
     bool button_r = false;
     bool button_start = false;
     bool button_select = false;
-    // Mouse / pointer input (used by ScummVM for point-and-click).
-    // Absolute game-pixel coordinates; backend converts to per-frame deltas internally.
     int16_t mouse_x = 0;
     int16_t mouse_y = 0;
     bool mouse_left_button = false;
@@ -49,19 +46,6 @@ struct LayerCapture {
     std::vector<uint8_t>  depth_map; // Y-depth hint for sprite layers; empty when unused
 };
 
-// Lightweight per-layer output for backends that build their own layer stack.
-// ScummVM backend populates FrameOutput::native_layers with these; the render side
-// converts them to LayerFrame objects, bypassing LayerProcessor.
-// This lives here (not in layer_processor.h) to avoid a circular include.
-struct NativeLayerFrame {
-    std::string id;
-    float depth_meters      = 2.5f;
-    float quad_width_meters = 2.56f;
-    int   width             = 0;
-    int   height            = 0;
-    std::vector<uint8_t> rgba; // RGBA bytes (R=byte0, G=byte1, B=byte2, A=byte3)
-    bool is_ui_bar = false; // ScummVM: render detached below game screen at front depth
-};
 
 struct FrameOutput {
     uint32_t width = 0;
@@ -72,8 +56,6 @@ struct FrameOutput {
     // OBJ ≈ 48, BG high ≈ 46-47, BG low ≈ 35-43, backdrop = 1.
     // Same dimensions as rgba8888; empty when not available.
     std::vector<uint8_t> zbuffer;
-    // Composite-frame Y-depth map for FullFrame extraction path (e.g. ScummVM).
-    // 0 = top of screen (far), 255 = bottom (near). Same dims as rgba8888; empty when unused.
     std::vector<uint8_t> depth_map;
     // Per-layer captures for the active backend.
     // SNES uses 5 captures: BG0-BG3, OBJ.
@@ -86,9 +68,6 @@ struct FrameOutput {
     // 3/4 = plane A+window low/high, 5/6 = sprites low/high.
     // 255 = none / unavailable.
     std::vector<uint8_t> visible_source_id;
-    // ScummVM per-actor native layer frames. Non-empty when ScummVmBackend builds its
-    // own layer stack (bypasses LayerProcessor on the render side).
-    std::vector<NativeLayerFrame> native_layers;
 };
 
 struct RomHeaderInfo {

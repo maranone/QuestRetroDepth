@@ -101,15 +101,15 @@ inline const char* gb_button_name(int b) {
 
 inline const char* button_name_for_backend(BackendKind kind, int b) {
     if (kind == BackendKind::Genesis) return genesis_button_name(b);
-    if (kind == BackendKind::Gba) return gba_button_name(b);
-    if (kind == BackendKind::Gb) return gb_button_name(b);
+    if (kind == BackendKind::Gba)     return gba_button_name(b);
+    if (kind == BackendKind::Gb)      return gb_button_name(b);
     return snes_button_name(b);
 }
 
 inline const char* button_map_title_for_backend(BackendKind kind) {
     if (kind == BackendKind::Genesis) return "Genesis Controller Map";
-    if (kind == BackendKind::Gba) return "GBA Controller Map";
-    if (kind == BackendKind::Gb) return "GB/GBC Controller Map";
+    if (kind == BackendKind::Gba)     return "GBA Controller Map";
+    if (kind == BackendKind::Gb)      return "GB/GBC Controller Map";
     return "SNES Controller Map";
 }
 
@@ -231,8 +231,8 @@ inline ButtonMap default_gb_button_map() {
 
 inline ButtonMap default_button_map_for_backend(BackendKind kind) {
     if (kind == BackendKind::Genesis) return default_genesis_button_map();
-    if (kind == BackendKind::Gba) return default_gba_button_map();
-    if (kind == BackendKind::Gb) return default_gb_button_map();
+    if (kind == BackendKind::Gba)     return default_gba_button_map();
+    if (kind == BackendKind::Gb)      return default_gb_button_map();
     return default_button_map();
 }
 

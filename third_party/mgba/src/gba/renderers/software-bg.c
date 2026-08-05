@@ -49,6 +49,7 @@
 		uint32_t current = *pixel; \
 		MOSAIC(COORD) \
 		if (pixelData && IS_WRITABLE(current)) { \
+			MGBA_QRD_BG_CAP(background->index, pixel, palette, pixelData); \
 			COMPOSITE_256_ ## OBJWIN (BLEND, 0); \
 		} \
 	}
@@ -128,6 +129,7 @@ void GBAVideoSoftwareRendererDrawBackgroundMode3(struct GBAVideoSoftwareRenderer
 
 		uint32_t current = *pixel;
 		if (!objwinSlowPath || (!(current & FLAG_OBJWIN)) != background->objwinOnly) {
+			MGBA_QRD_BG_CAP_RAW(background->index, pixel, color);
 			unsigned mergedFlags = flags;
 			if (current & FLAG_OBJWIN) {
 				mergedFlags = objwinFlags;
@@ -170,6 +172,7 @@ void GBAVideoSoftwareRendererDrawBackgroundMode4(struct GBAVideoSoftwareRenderer
 
 		uint32_t current = *pixel;
 		if (color && IS_WRITABLE(current)) {
+			MGBA_QRD_BG_CAP(background->index, pixel, palette, color);
 			if (!objwinSlowPath) {
 				_compositeBlendNoObjwin(renderer, pixel, palette[color] | flags, current);
 			} else if (background->objwinForceEnable || (!(current & FLAG_OBJWIN)) == background->objwinOnly) {
@@ -212,6 +215,7 @@ void GBAVideoSoftwareRendererDrawBackgroundMode5(struct GBAVideoSoftwareRenderer
 
 		uint32_t current = *pixel;
 		if (!objwinSlowPath || (!(current & FLAG_OBJWIN)) != background->objwinOnly) {
+			MGBA_QRD_BG_CAP_RAW(background->index, pixel, color);
 			unsigned mergedFlags = flags;
 			if (current & FLAG_OBJWIN) {
 				mergedFlags = objwinFlags;

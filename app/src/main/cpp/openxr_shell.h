@@ -270,10 +270,12 @@ private:
     void rebuild_ctrlmap_panel_texture();      // call Kotlin → upload GL texture
     void rebuild_help_panel_texture();         // call Kotlin → upload GL texture
     void rebuild_homebrew_panel_texture();     // call Kotlin → upload GL texture
+    void rebuild_dashboard_left_panel_texture(); // call Kotlin → upload GL texture for manual dashboard left panel
     std::string get_settings_dir();            // call Kotlin → returns settings directory path
     void save_settings(bool game_scope);       // save current state to disk
     void load_settings(bool game_scope);       // load state from disk (if file exists)
     void reset_settings();                     // reset to hardcoded defaults
+    void wipe_all_settings();                  // delete every saved .ini on disk + reset to defaults
     void apply_layer_filter_mode(LayerFilterMode mode, bool restore_saved_state);
     void sync_layer_capture_mask();
     void refresh_save_state_slots();
@@ -323,6 +325,8 @@ private:
     bool    m_main_menu_dirty     = true;
     int     m_main_menu_hovered   = -1; // row under laser (-1=none)
     XrTime  m_last_main_menu_fire = 0;
+    bool    m_wipe_settings_armed     = false; // first tap on "Wipe Settings" arms it
+    XrTime  m_wipe_settings_arm_time  = 0;     // arming expires after a few seconds
 
     // ---------- ROM browser panel ----------
     RomBrowser  m_rom_browser;
@@ -350,6 +354,7 @@ private:
     static constexpr int k_panel_ctrlmap    = 6;
     static constexpr int k_panel_quick_edit = 7;
     static constexpr int k_panel_homebrew  = 8;
+    static constexpr int k_panel_manual_dashboard = 9;
     XrPosef m_main_menu_pose       = {{0,0,0,1},{0,0,-1}};
     XrPosef m_quick_panel_pose     = {{0,0,0,1},{0,0,-1}};
     XrPosef m_panel_pose           = {{0,0,0,1},{0,0,-1}}; // browser (centre)
@@ -362,8 +367,19 @@ private:
 
     XrPosef m_homebrew_panel_pose  = {{0,0,0,1},{0,0,-1}};
 
+    // ---------- Manual editor dashboard (wing-style placement) ----------
+    XrPosef m_dashboard_left_pose  = {{0,0,0,1},{0,0,-1}};  // left wing
+    XrPosef m_dashboard_right_pose = {{0,0,0,1},{0,0,-1}};  // right wing (layer panel on right)
+    GLuint  m_dashboard_left_panel_tex     = 0;
+    bool    m_dashboard_left_panel_dirty   = true;
+    int     m_dashboard_left_panel_hovered = -1; // row under laser
+    XrTime  m_last_dashboard_fire = 0;
+    PanelLayout m_dashboard_left_panel_layout;
+    // Non-persisted in-memory duplication spacing (copy_step) for dashboard UI
+    float   m_dashboard_duplication_spacing = 0.003f;
+
     // Main menu / standalone panel tracking
-    // 0 = main menu, 1 = browser, 2 = layers, 3 = settings, 4 = save states, 5 = code, 6 = ctrlmap, 7 = quick edit, 8 = homebrew
+    // 0 = main menu, 1 = browser, 2 = layers, 3 = settings, 4 = save states, 5 = code, 6 = ctrlmap, 7 = quick edit, 8 = homebrew, 9 = manual dashboard
     int     m_active_sub_panel     = 0;
 
     // Multi-panel laser state (menu mode — right controller)
@@ -415,11 +431,6 @@ private:
     float       m_edit_raim_ref_el   = 0.0f;
     bool        m_edit_raim_ref_valid = false;
 
-    // ScummVM game-mode laser state (right controller points at game screen)
-    bool        m_scummvm_laser_hit    = false;
-    XrVector3f  m_scummvm_laser_origin = {0,0,0};
-    XrVector3f  m_scummvm_laser_end    = {0,0,0};
-
     // ROM loader callback (set by main.cpp)
     RomLoader m_rom_loader;
 
@@ -449,6 +460,7 @@ private:
     int     m_layer_depth_selected = -1; // display row in depth-edit mode (-1 = none)
     XrTime  m_last_layer_fire     = 0;
     bool    m_emu_frozen_display  = false; // frozen state for play/pause button display
+    bool    m_auto_pause_ui_open_prev = false; // edge-detect for menu-open auto-pause
     struct LayerModeSnapshot {
         bool valid = false;
         LayerFilterMode mode = LayerFilterMode::Hybrid;

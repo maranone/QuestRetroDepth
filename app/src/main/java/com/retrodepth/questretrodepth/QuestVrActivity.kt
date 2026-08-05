@@ -197,9 +197,11 @@ open class QuestVrActivity : Activity() {
         if (!vrStarted) {
             vrStarted = true
             val startupPrefs = readSaveAutomationPrefs()
-            val anyRomCandidate = findStartupRomCandidate()
-            val startupCandidate = if (startupPrefs.loadLastSaveEnabled) anyRomCandidate else null
-            val openMenuOnStartup = !startupPrefs.loadLastSaveEnabled || startupCandidate == null
+            val devRomName = intent.getStringExtra("rom")
+            val anyRomCandidate = findStartupRomCandidate(devRomName)
+            val forceLoad = devRomName != null
+            val startupCandidate = if (forceLoad || startupPrefs.loadLastSaveEnabled) anyRomCandidate else null
+            val openMenuOnStartup = startupCandidate == null
             statusView.text = nativeStartVr(
                 this,
                 openMenuOnStartup,
@@ -207,7 +209,7 @@ open class QuestVrActivity : Activity() {
                 startupPrefs.loadLastSaveEnabled
             )
             nativeSetHomebrewFeed(selectedHomebrewFeedIndex())
-            if (startupPrefs.loadLastSaveEnabled && startupCandidate != null) {
+            if ((forceLoad || startupPrefs.loadLastSaveEnabled) && startupCandidate != null) {
                 autoLoadStartupRom(startupCandidate)
             }
         }
@@ -247,8 +249,7 @@ open class QuestVrActivity : Activity() {
         if (requestCode == 1001) onResume()
     }
 
-    private fun findStartupRomCandidate(): File? {
-        val lastRomPath = prefs.getString("last_rom_path", null)
+    private fun findStartupRomCandidate(overrideName: String? = null): File? {
         val romDir = File(getRomDirectory())
         Log.i("QuestRetroDepthXR", "findStartupRomCandidate: dir=${romDir.absolutePath} exists=${romDir.exists()}")
 
@@ -264,9 +265,10 @@ open class QuestVrActivity : Activity() {
         }
         Log.i("QuestRetroDepthXR", "findStartupRomCandidate: found ${allFiles.size} ROM(s)")
 
-        // Prefer the last successfully played ROM (stored as filename only); fall back to first alphabetically.
-        return if (lastRomPath != null) {
-            val lastName = lastRomPath.substringAfterLast('/')
+        // Intent extra "rom" overrides pref; then fall back to last played; then first alphabetically.
+        val lastName = (overrideName ?: prefs.getString("last_rom_path", null))
+            ?.substringAfterLast('/')
+        return if (lastName != null) {
             allFiles.firstOrNull { it.name == lastName }
                 ?: allFiles.minByOrNull { it.name.lowercase(Locale.US) }
         } else {
@@ -431,11 +433,6 @@ open class QuestVrActivity : Activity() {
         return lower.endsWith(".a26")
     }
 
-    private fun isN64Extension(name: String): Boolean {
-        val lower = name.lowercase(Locale.US)
-        return lower.endsWith(".z64") || lower.endsWith(".n64") || lower.endsWith(".v64")
-    }
-
     private fun isDsExtension(name: String): Boolean {
         val lower = name.lowercase(Locale.US)
         return lower.endsWith(".nds")
@@ -451,17 +448,12 @@ open class QuestVrActivity : Activity() {
         return lower.endsWith(".gdi") || lower.endsWith(".cdi")
     }
 
-    private fun isScummVmExtension(name: String): Boolean {
-        val lower = name.lowercase(Locale.US)
-        return lower.endsWith(".scummvm")
-    }
-
     private fun isSupportedRomExtension(name: String): Boolean {
         return isSnesExtension(name) || isGenesisExtension(name) || isNesExtension(name) ||
                isGbExtension(name) || isGbaExtension(name) || isGgExtension(name) ||
                isPceExtension(name) || is32xExtension(name) || isAtari2600Extension(name) ||
-               isN64Extension(name) || isDsExtension(name) || isSaturnExtension(name) ||
-               isDreamcastExtension(name) || isScummVmExtension(name)
+               isDsExtension(name) || isSaturnExtension(name) ||
+               isDreamcastExtension(name)
     }
 
     private fun isSupportedOrArchiveFile(file: File): Boolean {
@@ -479,11 +471,9 @@ open class QuestVrActivity : Activity() {
         isPceExtension(name) -> RomFamily.Pce
         is32xExtension(name) -> RomFamily.Sega32x
         isAtari2600Extension(name) -> RomFamily.Atari2600
-        isN64Extension(name) -> RomFamily.N64
         isDsExtension(name) -> RomFamily.Ds
         isSaturnExtension(name) -> RomFamily.Saturn
         isDreamcastExtension(name) -> RomFamily.Dreamcast
-        isScummVmExtension(name) -> RomFamily.ScummVm
         else -> null
     }
 
@@ -499,11 +489,9 @@ open class QuestVrActivity : Activity() {
             path.contains("/roms/pce/") || path.contains("\\roms\\pce\\") -> RomFamily.Pce
             path.contains("/roms/32x/") || path.contains("\\roms\\32x\\") -> RomFamily.Sega32x
             path.contains("/roms/atari2600/") || path.contains("\\roms\\atari2600\\") -> RomFamily.Atari2600
-            path.contains("/roms/n64/") || path.contains("\\roms\\n64\\") -> RomFamily.N64
             path.contains("/roms/ds/") || path.contains("\\roms\\ds\\") -> RomFamily.Ds
             path.contains("/roms/saturn/") || path.contains("\\roms\\saturn\\") -> RomFamily.Saturn
             path.contains("/roms/dreamcast/") || path.contains("\\roms\\dreamcast\\") -> RomFamily.Dreamcast
-            path.contains("/roms/scummvm/") || path.contains("\\roms\\scummvm\\") -> RomFamily.ScummVm
             else -> romFamilyForName(file.name)
         }
     }
@@ -1093,8 +1081,8 @@ open class QuestVrActivity : Activity() {
             val isAction = (value == "ACTION")
             val isDisabledAction = (value == "DISABLED")
 
-            // Draw separator before action buttons (row 14)
-            if (i == 14) {
+            // Draw separator before action buttons
+            if (i == 19) {
                 paint.color = android.graphics.Color.argb(120, 100, 130, 200)
                 paint.strokeWidth = 2f
                 paint.style = android.graphics.Paint.Style.STROKE
@@ -1106,12 +1094,12 @@ open class QuestVrActivity : Activity() {
             if (isAction) {
                 // Full-width action buttons
                 paint.color = when (i) {
-                    14 -> android.graphics.Color.argb(170, 160, 30, 30)
-                    15 -> android.graphics.Color.argb(170, 35, 140, 65)
-                    16 -> android.graphics.Color.argb(170, 15, 85, 40)
-                    17 -> android.graphics.Color.argb(170, 35, 95, 180)
-                    18 -> android.graphics.Color.argb(170, 20, 50, 130)
-                    19 -> android.graphics.Color.argb(120, 35, 55, 45)
+                    19 -> android.graphics.Color.argb(170, 160, 30, 30)
+                    20 -> android.graphics.Color.argb(170, 35, 140, 65)
+                    21 -> android.graphics.Color.argb(170, 15, 85, 40)
+                    22 -> android.graphics.Color.argb(170, 35, 95, 180)
+                    23 -> android.graphics.Color.argb(170, 20, 50, 130)
+                    24 -> android.graphics.Color.argb(120, 35, 55, 45)
                     else -> android.graphics.Color.argb(140, 40, 70, 120)
                 }
                 canvas.drawRoundRect(6f, y + rowH * 0.12f, width - 6f, y + rowH * 0.88f, 8f, 8f, paint)
@@ -1168,6 +1156,88 @@ open class QuestVrActivity : Activity() {
                 paint.color = android.graphics.Color.WHITE
                 paint.textSize = rowH * 0.54f
                 canvas.drawText("+", width - btnW + btnW * 0.22f, y + rowH * 0.70f, paint)
+            }
+        }
+
+        val pixels = IntArray(width * height)
+        bmp.getPixels(pixels, 0, width, 0, 0, width, height)
+        bmp.recycle()
+        return pixels
+    }
+
+    fun renderDashboardLeftPanelBitmap(
+        rowNames: Array<String>,
+        rowValues: Array<String>,
+        hoveredRow: Int,
+        width: Int,
+        height: Int
+    ): IntArray {
+        val bmp = android.graphics.Bitmap.createBitmap(width, height, android.graphics.Bitmap.Config.ARGB_8888)
+        val canvas = android.graphics.Canvas(bmp)
+        val paint = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG)
+
+        // Background
+        paint.color = android.graphics.Color.argb(235, 12, 14, 24)
+        canvas.drawRect(0f, 0f, width.toFloat(), height.toFloat(), paint)
+
+        // Title bar
+        paint.color = android.graphics.Color.argb(255, 20, 50, 40)
+        canvas.drawRect(0f, 0f, width.toFloat(), 88f, paint)
+        paint.color = android.graphics.Color.WHITE
+        paint.textSize = 44f
+        paint.isFakeBoldText = true
+        canvas.drawText("Dashboard", 12f, 60f, paint)
+        paint.isFakeBoldText = false
+
+        val titleH = 88f
+        val n = rowNames.size
+        val rowH = if (n > 0) ((height - titleH) / n).toFloat().coerceIn(52f, 96f) else 72f
+        val btnW = width * 0.20f  // left/right button zones
+
+        for (i in 0 until n) {
+            val y = titleH + i * rowH
+            val name = if (i < rowNames.size) rowNames[i] else ""
+            val value = if (i < rowValues.size) rowValues[i] else ""
+
+            // Row background (alternating)
+            if (i % 2 == 0) {
+                paint.color = android.graphics.Color.argb(60, 35, 40, 60)
+                canvas.drawRect(0f, y, width.toFloat(), y + rowH, paint)
+            }
+
+            paint.textSize = rowH * 0.44f
+
+            // Row name on left
+            paint.color = android.graphics.Color.argb(215, 190, 200, 220)
+            canvas.drawText(name, 12f, y + rowH * 0.68f, paint)
+
+            // Value in center
+            paint.color = android.graphics.Color.argb(200, 140, 200, 140)
+            paint.textSize = rowH * 0.42f
+            val tw = paint.measureText(value)
+            canvas.drawText(value, width / 2f - tw / 2f, y + rowH * 0.68f, paint)
+
+            // Left minus button (static color)
+            paint.color = android.graphics.Color.argb(120, 70, 40, 40)
+            canvas.drawRoundRect(2f, y + rowH * 0.18f, btnW - 2f, y + rowH * 0.82f, 6f, 6f, paint)
+            paint.color = android.graphics.Color.WHITE
+            paint.textSize = rowH * 0.54f
+            canvas.drawText("-", btnW * 0.25f, y + rowH * 0.70f, paint)
+
+            // Right plus button (static color)
+            paint.color = android.graphics.Color.argb(120, 40, 100, 70)
+            canvas.drawRoundRect(width - btnW + 2f, y + rowH * 0.18f, width - 4f, y + rowH * 0.82f, 6f, 6f, paint)
+            paint.color = android.graphics.Color.WHITE
+            paint.textSize = rowH * 0.54f
+            canvas.drawText("+", width - btnW + btnW * 0.22f, y + rowH * 0.70f, paint)
+
+            // Hover highlight (will be overlaid by GL quad, but draw the row rect for reference)
+            if (i == hoveredRow) {
+                paint.style = android.graphics.Paint.Style.STROKE
+                paint.strokeWidth = 2f
+                paint.color = android.graphics.Color.argb(150, 120, 200, 200)
+                canvas.drawRect(4f, y + 2f, width - 4f, y + rowH - 2f, paint)
+                paint.style = android.graphics.Paint.Style.FILL
             }
         }
 
@@ -1769,7 +1839,7 @@ open class QuestVrActivity : Activity() {
     }
 
     private fun createRomSubfolders(base: File) {
-        for (name in listOf("pce", "snes", "genesis", "sms", "nes", "gb", "gg", "gba", "gbc", "scummvm")) {
+        for (name in listOf("pce", "snes", "genesis", "sms", "nes", "gb", "gg", "gba", "gbc")) {
             File(base, name).mkdirs()
         }
     }
@@ -2313,6 +2383,6 @@ open class QuestVrActivity : Activity() {
     )
 
     private enum class RomFamily {
-        Snes, Genesis, Nes, Gb, Gba, Gg, Pce, Sega32x, Atari2600, N64, Ds, Saturn, Dreamcast, ScummVm
+        Snes, Genesis, Nes, Gb, Gba, Gg, Pce, Sega32x, Atari2600, Ds, Saturn, Dreamcast
     }
 }

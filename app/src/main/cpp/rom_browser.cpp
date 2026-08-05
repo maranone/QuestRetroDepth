@@ -42,8 +42,6 @@ static bool is_supported(const char* name) {
         ci_ends_with(name, ".gbc")) return true;
     // PC Engine
     if (ci_ends_with(name, ".pce")) return true;
-    // ScummVM shortcut files
-    if (ci_ends_with(name, ".scummvm")) return true;
     // Archives
     if (ci_ends_with(name, ".zip") || ci_ends_with(name, ".7z")) return true;
     return false;

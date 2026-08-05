@@ -14,6 +14,7 @@ enum class PanelKind {
     CtrlMap,
     Help,
     Homebrew,
+    DashboardLeft,
 };
 
 enum class PanelRole {
@@ -86,3 +87,4 @@ PanelLayout make_save_state_layout();
 PanelLayout make_code_layout();
 PanelLayout make_ctrlmap_layout(int button_count, int action_count);
 PanelLayout make_homebrew_layout(int entry_count, int view);
+PanelLayout make_manual_dashboard_left_layout();

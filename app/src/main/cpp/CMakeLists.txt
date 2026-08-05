@@ -896,30 +896,6 @@ target_compile_definitions(beetle_pce_libretro PRIVATE
 
 target_compile_options(beetle_pce_libretro PRIVATE -fno-strict-aliasing)
 
-# ================================================================
-# ScummVM libretro — classic point-and-click adventure emulator
-# Checkout: third_party/scummvm_libretro  (https://github.com/scummvm/scummvm)
-# Expected libretro entrypoint:
-#   backends/platform/libretro/src/libretro-core.cpp
-# ================================================================
-set(SCUMMVM_LR_DIR "${QUESTRETRODEPTH_ROOT}/third_party/scummvm_libretro")
-set(SCUMMVM_LR_BACKEND_DIR "${SCUMMVM_LR_DIR}/backends/platform/libretro")
-
-# ScummVM is built by its own Android libretro ndk-build files and packaged as
-# libscummvm_libretro.so. The QuestRetroDepth backend loads it with dlopen() so
-# its retro_* symbols do not collide with the statically linked libretro cores.
-if (EXISTS "${SCUMMVM_LR_BACKEND_DIR}/src/libretro-core.cpp")
-    set(SCUMMVM_LIBRETRO_TARGET "")
-    set(SCUMMVM_BACKEND_SOURCE scummvm_backend.cpp)
-else()
-    # Submodule not yet populated — build the stub so the project still links.
-    # To enable real ScummVM support:
-    #   git clone https://github.com/scummvm/scummvm third_party/scummvm_libretro
-    message(STATUS "ScummVM libretro submodule not found — using stub backend.")
-    set(SCUMMVM_LIBRETRO_TARGET "")
-    set(SCUMMVM_BACKEND_SOURCE scummvm_backend_stub.cpp)
-endif()
-
 add_library(questretrodepth_native SHARED
     emulator_backend.cpp
     experimental_rumble.cpp
@@ -940,7 +916,6 @@ add_library(questretrodepth_native SHARED
     audio_processor.cpp
     snes_libretro_backend.cpp
     snes_backend_stub.cpp
-    ${SCUMMVM_BACKEND_SOURCE}
     questretrodepth_main.cpp
 )
 
@@ -974,12 +949,6 @@ target_include_directories(questretrodepth_native PRIVATE
     ${PCE_LIBRETRO_COMMON_DIR}/include
 )
 
-if (SCUMMVM_LR_BACKEND_DIR)
-    target_include_directories(questretrodepth_native PRIVATE
-        ${SCUMMVM_LR_DIR}
-        ${SCUMMVM_LR_BACKEND_DIR}/include
-    )
-endif()
 
 target_link_libraries(questretrodepth_native
     snes9x_libretro
@@ -987,7 +956,6 @@ target_link_libraries(questretrodepth_native
     mgba_libretro
     fceumm_libretro
     beetle_pce_libretro
-    ${SCUMMVM_LIBRETRO_TARGET}
     OpenXR::openxr_loader
     OpenXR::headers
     ${log-lib}

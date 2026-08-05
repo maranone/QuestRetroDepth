@@ -7,12 +7,14 @@
 
 #include <algorithm>
 #include <atomic>
+#include <cmath>
 #include <cstdarg>
 #include <cstring>
 #include <fstream>
 #include <sstream>
 #include <sys/stat.h>
 #include <unordered_map>
+#include <vector>
 
 extern "C" {
 void     mgba_retro_set_environment(retro_environment_t cb);
@@ -64,8 +66,17 @@ static int16_t g_audio_ring[kAudioRingFrames * 2];
 static std::atomic<int> g_ring_write{0};
 static std::atomic<int> g_ring_read{0};
 static AAudioStream* g_aaudio_stream = nullptr;
-static int g_audio_sample_rate = 32768; // GBA default
+static int g_audio_sample_rate = 32768; // GBA default (core's native rate)
 static retro_audio_buffer_status_callback_t g_audio_buffer_status_callback = nullptr;
+
+// GBA's native audio rate (32768 Hz) doesn't evenly divide the Quest's fixed
+// hardware mix rate (48000 Hz) — a 256:375 ratio. Rather than let AAudio's
+// own resampler handle that mismatch, we resample to 48000 Hz ourselves with
+// a simple linear interpolator and always open the stream at that rate.
+constexpr int kOutputSampleRate = 48000;
+static int    g_resample_input_rate = 32768;
+static double g_resample_phase = 0.0;   // fractional input-frame position, anchored s.t. -1 == g_resample_prev
+static int16_t g_resample_prev[2] = {0, 0};
 
 static void audio_ring_push(const int16_t* samples, int frames) {
     int w = g_ring_write.load(std::memory_order_relaxed);
@@ -77,6 +88,30 @@ static void audio_ring_push(const int16_t* samples, int frames) {
         w = next;
     }
     g_ring_write.store(w, std::memory_order_release);
+}
+
+static void resample_and_push(const int16_t* in, int in_frames) {
+    if (in_frames <= 0) return;
+    const double ratio = static_cast<double>(g_resample_input_rate) / static_cast<double>(kOutputSampleRate);
+    double pos = g_resample_phase;
+    int16_t out[2];
+    for (;;) {
+        const int i0 = static_cast<int>(std::floor(pos));
+        const int i1 = i0 + 1;
+        if (i1 >= in_frames) break;
+        const double frac = pos - i0;
+        const int16_t l0 = (i0 < 0) ? g_resample_prev[0] : in[i0 * 2 + 0];
+        const int16_t r0 = (i0 < 0) ? g_resample_prev[1] : in[i0 * 2 + 1];
+        const int16_t l1 = in[i1 * 2 + 0];
+        const int16_t r1 = in[i1 * 2 + 1];
+        out[0] = static_cast<int16_t>(l0 + (l1 - l0) * frac);
+        out[1] = static_cast<int16_t>(r0 + (r1 - r0) * frac);
+        audio_ring_push(out, 1);
+        pos += ratio;
+    }
+    g_resample_prev[0] = in[(in_frames - 1) * 2 + 0];
+    g_resample_prev[1] = in[(in_frames - 1) * 2 + 1];
+    g_resample_phase = pos - (in_frames - 1);
 }
 
 static unsigned audio_ring_occupancy_percent() {
@@ -112,22 +147,27 @@ static aaudio_data_callback_result_t audio_data_callback(
     return AAUDIO_CALLBACK_RESULT_CONTINUE;
 }
 
-static void open_aaudio_stream(int sample_rate) {
+static void open_aaudio_stream(int core_sample_rate) {
     if (g_aaudio_stream) {
         AAudioStream_close(g_aaudio_stream);
         g_aaudio_stream = nullptr;
     }
+    g_resample_input_rate = core_sample_rate > 0 ? core_sample_rate : 32768;
+    g_resample_phase = 0.0;
+    g_resample_prev[0] = 0;
+    g_resample_prev[1] = 0;
+
     AAudioStreamBuilder* builder = nullptr;
     if (AAudio_createStreamBuilder(&builder) != AAUDIO_OK) return;
     AAudioStreamBuilder_setFormat(builder, AAUDIO_FORMAT_PCM_I16);
     AAudioStreamBuilder_setChannelCount(builder, 2);
-    AAudioStreamBuilder_setSampleRate(builder, sample_rate);
+    AAudioStreamBuilder_setSampleRate(builder, kOutputSampleRate);
     AAudioStreamBuilder_setPerformanceMode(builder, AAUDIO_PERFORMANCE_MODE_LOW_LATENCY);
     AAudioStreamBuilder_setDataCallback(builder, audio_data_callback, nullptr);
     AAudioStreamBuilder_openStream(builder, &g_aaudio_stream);
     AAudioStreamBuilder_delete(builder);
     if (g_aaudio_stream) {
-        g_audio_processor.set_sample_rate(sample_rate);
+        g_audio_processor.set_sample_rate(kOutputSampleRate);
         AAudioStream_requestStart(g_aaudio_stream);
     }
 }
@@ -170,11 +210,11 @@ static void RETRO_CALLCONV frontend_video_refresh(
 
 static void RETRO_CALLCONV frontend_audio_sample(int16_t l, int16_t r) {
     int16_t buf[2] = { l, r };
-    audio_ring_push(buf, 1);
+    resample_and_push(buf, 1);
 }
 
 static std::size_t RETRO_CALLCONV frontend_audio_sample_batch(const int16_t* data, std::size_t frames) {
-    audio_ring_push(data, static_cast<int>(frames));
+    resample_and_push(data, static_cast<int>(frames));
     return frames;
 }
 
@@ -185,10 +225,27 @@ static int16_t RETRO_CALLCONV frontend_input_state(
     return g_active_backend ? g_active_backend->handle_input_state(port, device, index, id) : 0;
 }
 
+// Conventional RGB565 (Red high: bits 15-11, Green bits 10-5, Blue bits 4-0) —
+// the format libretro's RETRO_PIXEL_FORMAT_RGB565 guarantees. Used only for
+// pixels coming through the retro_video_refresh callback (write_rgb565_frame).
 static uint32_t rgba_from_rgb565(uint16_t pixel) {
     const uint8_t r = static_cast<uint8_t>(((pixel >> 11) & 0x1F) * 255 / 31);
     const uint8_t g = static_cast<uint8_t>(((pixel >> 5)  & 0x3F) * 255 / 63);
     const uint8_t b = static_cast<uint8_t>((pixel & 0x1F) * 255 / 31);
+    return 0xFF000000u | (static_cast<uint32_t>(r) << 16) |
+           (static_cast<uint32_t>(g) << 8) | static_cast<uint32_t>(b);
+}
+
+// mGBA's internal mColor with COLOR_16_BIT + COLOR_5_6_5 (see mgba-util/image.h:44-51)
+// packs Red in bits 0-4, Green in bits 5-10, Blue in bits 11-15 — despite the
+// "RGB565" name, that's the reverse of libretro's conventional RGB565 (Red high).
+// Used for the raw mColor values captured directly from mGBA's renderer
+// (mgba_lc_bg_pixel/mgba_lc_obj_pixel), which never pass through libretro's
+// pixel-format conversion.
+static uint32_t rgba_from_mgba_color(uint16_t pixel) {
+    const uint8_t r = static_cast<uint8_t>((pixel & 0x1F) * 255 / 31);
+    const uint8_t g = static_cast<uint8_t>(((pixel >> 5)  & 0x3F) * 255 / 63);
+    const uint8_t b = static_cast<uint8_t>(((pixel >> 11) & 0x1F) * 255 / 31);
     return 0xFF000000u | (static_cast<uint32_t>(r) << 16) |
            (static_cast<uint32_t>(g) << 8) | static_cast<uint32_t>(b);
 }
@@ -561,23 +618,59 @@ void MgbaBackend::handle_video_frame(
                 }
             }
         } else {
-            // GBA: source IDs 0-3=BG0-3, 4=OBJ, 5=backdrop (transparent); OBJ (li=4) gets depth_map
-            auto& dmap = m_frame.layers[4].depth_map;
+            // GBA BG0-3: direct-write per-pixel capture, uniformly across every BG mode
+            // (0/1/2 tile+affine via MGBA_QRD_BG_CAP, 3/4/5 bitmap via MGBA_QRD_BG_CAP_RAW —
+            // see software-bg.c). Every draw path captures at the exact point mGBA decides
+            // the pixel is opaque and about to composite, so the mask is ground truth —
+            // no need to infer layer identity from the composited frame's flag bits.
+            std::size_t bg_mask_count[4] = {0, 0, 0, 0};
+            for (int li = 0; li < 4; ++li) {
+                auto& layer = m_frame.layers[li];
+                if (layer.rgba.size() != npix) layer.rgba.resize(npix);
+                const uint16_t* lpix  = mgba_lc_get_bg_pixels(li);
+                const uint8_t*  lmask = mgba_lc_get_bg_mask(li);
+                for (std::size_t i = 0; i < npix; ++i) {
+                    if (lmask && lmask[i]) {
+                        layer.rgba[i] = rgba_from_mgba_color(lpix[i]);
+                        ++bg_mask_count[li];
+                    } else {
+                        layer.rgba[i] = 0u;
+                    }
+                }
+            }
+            // GBA OBJ: direct-write capture, same architecture as BG0-3 — sprite
+            // pixels are captured where mGBA actually draws them (software-obj.c's
+            // PostprocessSprite), not inferred from packed flag bits in the
+            // composited framebuffer. See mgba_lc_obj_pixel().
+            auto& obj  = m_frame.layers[4];
+            auto& dmap = obj.depth_map;
+            if (obj.rgba.size() != npix) obj.rgba.resize(npix);
             if (dmap.size() != npix) dmap.resize(npix);
+            const uint16_t* opix = mgba_lc_get_obj_pixels();
+            const uint8_t*  omask = mgba_lc_get_obj_mask();
+            std::size_t obj_pixel_count = 0;
             for (unsigned y = 0; y < height; ++y) {
                 const uint8_t depth_y = (height > 1u)
                     ? static_cast<uint8_t>(y * 255u / (height - 1u)) : 128u;
                 for (unsigned x = 0; x < width; ++x) {
                     const std::size_t i = static_cast<std::size_t>(y) * width + x;
-                    const uint8_t sid = vsid[i];
-                    const uint32_t px = (sid < 5u) ? src[i] : 0u;
-                    m_frame.layers[0].rgba[i] = (sid == 0u) ? px : 0u;
-                    m_frame.layers[1].rgba[i] = (sid == 1u) ? px : 0u;
-                    m_frame.layers[2].rgba[i] = (sid == 2u) ? px : 0u;
-                    m_frame.layers[3].rgba[i] = (sid == 3u) ? px : 0u;
-                    m_frame.layers[4].rgba[i] = (sid == 4u) ? px : 0u;
-                    dmap[i] = (sid == 4u) ? depth_y : 0u;
+                    const bool is_obj = omask && omask[i];
+                    obj.rgba[i] = is_obj ? rgba_from_mgba_color(opix[i]) : 0u;
+                    dmap[i]     = is_obj ? depth_y : 0u;
+                    if (is_obj) ++obj_pixel_count;
                 }
+            }
+
+            // Diagnostic: log GBA layer capture stats roughly once a second so we can
+            // see frame size and per-BG/OBJ pixel counts — useful for tracking down
+            // layer/content mismatches.
+            static std::uint64_t s_gba_diag_frame = 0;
+            if ((++s_gba_diag_frame % 60u) == 0u) {
+                __android_log_print(ANDROID_LOG_INFO, kLogTag,
+                    "GBA layer capture: %ux%u bg0=%zu bg1=%zu bg2=%zu bg3=%zu obj=%zu",
+                    width, height,
+                    bg_mask_count[0], bg_mask_count[1], bg_mask_count[2], bg_mask_count[3],
+                    obj_pixel_count);
             }
         }
     } else {
@@ -626,7 +719,8 @@ void MgbaBackend::ensure_frame_size(unsigned width, unsigned height) {
     const auto w = std::max(1u, width);
     const auto h = std::max(1u, height);
     if (m_frame.width == w && m_frame.height == h &&
-        m_frame.rgba8888.size() == static_cast<std::size_t>(w) * h) return;
+        m_frame.rgba8888.size() == static_cast<std::size_t>(w) * h &&
+        m_frame.visible_source_id.size() == static_cast<std::size_t>(w) * h) return;
 
     m_frame.width  = w;
     m_frame.height = h;

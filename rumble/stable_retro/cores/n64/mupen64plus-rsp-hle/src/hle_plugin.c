@@ -24,6 +24,12 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
+#ifdef __ANDROID__
+#include <android/log.h>
+#define QRD_RSP_LOG(...) __android_log_print(ANDROID_LOG_INFO, "N64RSP", __VA_ARGS__)
+#else
+#define QRD_RSP_LOG(...) ((void)0)
+#endif
 
 #include "common.h"
 #include "hle.h"
@@ -112,6 +118,10 @@ void HleCheckInterrupts(void* UNUSED(user_defined))
 
 void HleProcessDlistList(void* UNUSED(user_defined))
 {
+    static unsigned int calls = 0;
+    ++calls;
+    if (calls <= 12 || (calls % 500) == 0)
+        QRD_RSP_LOG("HLE ProcessDlistList callback=%u", calls);
     if (l_ProcessDlistList == NULL)
         return;
 
@@ -179,12 +189,20 @@ EXPORT m64p_error CALL hlePluginShutdown(void)
 
 EXPORT unsigned int CALL hleDoRspCycles(unsigned int Cycles)
 {
+    static unsigned int calls = 0;
+    ++calls;
+    if (calls <= 12 || (calls % 500) == 0)
+        QRD_RSP_LOG("HLE DoRspCycles call=%u task_type=%u", calls,
+                    *((unsigned int *)(g_hle.dmem + 0xfc0)));
     hle_execute(&g_hle);
     return Cycles;
 }
 
 EXPORT void CALL hleInitiateRSP(RSP_INFO Rsp_Info, unsigned int* CycleCount)
 {
+    QRD_RSP_LOG("HLE InitiateRSP DMEM=%p ProcessDlist=%p ProcessRDP=%p",
+                Rsp_Info.DMEM, (void *)Rsp_Info.ProcessDlistList,
+                (void *)Rsp_Info.ProcessRdpList);
     hle_init(&g_hle,
              Rsp_Info.RDRAM,
              Rsp_Info.DMEM,
@@ -215,12 +233,8 @@ EXPORT void CALL hleInitiateRSP(RSP_INFO Rsp_Info, unsigned int* CycleCount)
     l_ProcessRdpList = Rsp_Info.ProcessRdpList;
     l_ShowCFB = Rsp_Info.ShowCFB;
 
-    // Is the DoCommand really needed? It's upstream
-    m64p_rom_header rom_header;
-    CoreDoCommand(M64CMD_ROM_GET_HEADER, sizeof(rom_header), &rom_header);
-
     g_hle.hle_gfx = 1;
-    g_hle.hle_aud = 0;
+    g_hle.hle_aud = 1;
     
     /* notify fallback plugin */
     /*if (l_InitiateRSP) {
@@ -236,4 +250,37 @@ EXPORT void CALL hleRomClosed(void)
     /*if (l_RomClosed) {
         l_RomClosed();
     }*/
+}
+
+EXPORT m64p_error CALL PluginGetVersion(m64p_plugin_type *PluginType, int *PluginVersion,
+                                         int *APIVersion, const char **PluginNamePtr,
+                                         int *Capabilities)
+{
+    return hlePluginGetVersion(PluginType, PluginVersion, APIVersion, PluginNamePtr, Capabilities);
+}
+
+EXPORT m64p_error CALL PluginStartup(m64p_dynlib_handle CoreLibHandle, void *Context,
+                                     void (*DebugCallback)(void *, int, const char *))
+{
+    return hlePluginStartup(CoreLibHandle, Context, DebugCallback);
+}
+
+EXPORT m64p_error CALL PluginShutdown(void)
+{
+    return hlePluginShutdown();
+}
+
+EXPORT unsigned int CALL DoRspCycles(unsigned int Cycles)
+{
+    return hleDoRspCycles(Cycles);
+}
+
+EXPORT void CALL InitiateRSP(RSP_INFO Rsp_Info, unsigned int* CycleCount)
+{
+    hleInitiateRSP(Rsp_Info, CycleCount);
+}
+
+EXPORT void CALL RomClosed(void)
+{
+    hleRomClosed();
 }

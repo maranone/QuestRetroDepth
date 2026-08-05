@@ -30,6 +30,7 @@ PanelMetrics panel_metrics(PanelKind kind) {
     case PanelKind::CtrlMap:  return {1408, 1536, 1.20f, 1.20f * (1536.0f / 1408.0f)};
     case PanelKind::Help:     return {1024, 1536, 0.82f, 1.23f};
     case PanelKind::Homebrew: return {1024, 1536, 0.80f, 1.20f};
+    case PanelKind::DashboardLeft: return {1120, 1120, 0.88f, 0.88f};
     }
     return {};
 }
@@ -165,8 +166,10 @@ PanelLayout make_settings_layout(int row_count) {
         add_row(layout, i, i, title_v + i * row_h, title_v + (i + 1) * row_h);
         const bool has_step_buttons =
             (i == 3) ||     // Env Sphere
-            (i == 5) ||     // Depth Mode
-            (i >= 8 && i <= 13); // Gamma..VR Res Scale
+            (i == 5) ||     // Parallax
+            (i >= 8 && i <= 13) || // Gamma..VR Res Scale
+            (i == 14) ||    // Depth Mode
+            (i == 15);      // Sprite Y-depth spread
         if (has_step_buttons) {
             layout.items.push_back({{0.0f, title_v + i * row_h, 0.20f, title_v + (i + 1) * row_h}, i, i, PanelRole::Minus});
             layout.items.push_back({{0.80f, title_v + i * row_h, 1.00f, title_v + (i + 1) * row_h}, i, i, PanelRole::Plus});
@@ -256,6 +259,22 @@ PanelLayout make_ctrlmap_layout(int button_count, int action_count) {
     const float row_h = clamp_row_h((1.0f - title_v) / (float)total, 44.0f / (float)m.tex_h, 80.0f / (float)m.tex_h);
     for (int i = 0; i < total; ++i) {
         add_row(layout, i, i, title_v + i * row_h, title_v + (i + 1) * row_h);
+    }
+    return layout;
+}
+
+PanelLayout make_manual_dashboard_left_layout() {
+    PanelLayout layout;
+    layout.kind = PanelKind::DashboardLeft;
+    const int row_count = 7;  // Screen Size, Near, Far, X, Y, Dup Count, Dup Spacing
+    const auto m = panel_metrics(layout.kind);
+    const float title_v = 88.0f / (float)m.tex_h;
+    const float row_h = clamp_row_h((1.0f - title_v) / (float)row_count, 52.0f / (float)m.tex_h, 96.0f / (float)m.tex_h);
+    for (int i = 0; i < row_count; ++i) {
+        add_row(layout, i, i, title_v + i * row_h, title_v + (i + 1) * row_h);
+        // All 7 rows have +/- buttons
+        layout.items.push_back({{0.0f, title_v + i * row_h, 0.20f, title_v + (i + 1) * row_h}, i, i, PanelRole::Minus});
+        layout.items.push_back({{0.80f, title_v + i * row_h, 1.00f, title_v + (i + 1) * row_h}, i, i, PanelRole::Plus});
     }
     return layout;
 }

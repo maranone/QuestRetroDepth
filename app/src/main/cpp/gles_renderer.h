@@ -77,7 +77,6 @@ class GlesRenderer {
 public:
     static constexpr int   k_max_copies      = 20;
     static constexpr float k_default_copy_step = 0.003f;
-    static constexpr int   k_max_object_boxes = 64;
 
     GlesRenderer() = default;
     ~GlesRenderer() { shutdown(); }
@@ -127,6 +126,11 @@ private:
     GLuint m_program  = 0;
     GLuint m_vao      = 0;
     GLuint m_vbo      = 0;
+
+    // Object-box rects (bbox extrusion) — SSBO, one draw call per layer regardless
+    // of how many boxes are detected. Shared between m_program and m_immersive_program
+    // (both bind it at layout(binding=0)).
+    GLuint m_object_box_ssbo = 0;
 
     GLuint m_immersive_program = 0;
     GLuint m_curve_vao         = 0;
@@ -188,7 +192,6 @@ private:
     GLint m_u_subrect = -1;
     GLint m_u_instance_base = -1;
     GLint m_u_object_box_count = -1;
-    GLint m_u_object_boxes = -1;
 
     GLint m_i_u_vp           = -1;
     GLint m_i_u_depth        = -1;
@@ -221,7 +224,6 @@ private:
     GLint m_i_u_subrect = -1;
     GLint m_i_u_instance_base = -1;
     GLint m_i_u_object_box_count = -1;
-    GLint m_i_u_object_boxes = -1;
 
     GLint m_flat_u_vp    = -1;
     GLint m_flat_u_color = -1;

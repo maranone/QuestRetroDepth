@@ -384,6 +384,10 @@ bool SnesLibretroBackend::handle_environment(unsigned cmd, void* data) {
             var->value = m_auto_frame_skip ? "enabled" : "disabled";
             return true;
         }
+        if (std::strcmp(var->key, "snes9x_overclock_superfx") == 0) {
+            var->value = "100";
+            return true;
+        }
         return false;
     }
     case RETRO_ENVIRONMENT_GET_INPUT_BITMASKS: {

@@ -123,7 +123,7 @@ void LayerProcessor::process_into(std::vector<LayerFrame>& result,
         process_genesis_hybrid_fast(result, src, frame, w, h);
         for (auto& frame_out : result) {
             finalize_frame(frame_out);
-            if (build_object_boxes) compute_object_boxes(frame_out);
+            if (build_object_boxes)    compute_object_boxes(frame_out);
         }
         return;
     }
@@ -190,7 +190,7 @@ void LayerProcessor::process_into(std::vector<LayerFrame>& result,
 
     for (auto& frame_out : result) {
         finalize_frame(frame_out);
-        if (build_object_boxes) compute_object_boxes(frame_out);
+        if (build_object_boxes)    compute_object_boxes(frame_out);
     }
 }
 
@@ -407,7 +407,9 @@ void LayerProcessor::extract_all_zbuffer_layers(std::vector<LayerFrame>& frames,
 
 void LayerProcessor::compute_object_boxes(LayerFrame& frame) {
     constexpr int k_alpha_threshold = 5;
-    constexpr std::size_t k_max_object_boxes = 64;
+    // Not a functional limit — GPU-side rendering (SSBO) has no fixed box count.
+    // This only guards against a pathological frame with thousands of 1px blobs.
+    constexpr std::size_t k_object_box_safety_cap = 4096;
 
     if (!frame.wedge_eligible || frame.width <= 0 || frame.height <= 0) return;
 
@@ -433,7 +435,7 @@ void LayerProcessor::compute_object_boxes(LayerFrame& frame) {
         if (visited[seed]) continue;
         if (frame.rgba[seed * 4u + 3u] <= k_alpha_threshold) continue;
 
-        if (frame.object_boxes.size() >= k_max_object_boxes) {
+        if (frame.object_boxes.size() >= k_object_box_safety_cap) {
             frame.object_boxes.clear();
             frame.bbox_eligible = false;
             return;
@@ -470,3 +472,4 @@ void LayerProcessor::compute_object_boxes(LayerFrame& frame) {
 
     frame.bbox_eligible = !frame.object_boxes.empty();
 }
+
