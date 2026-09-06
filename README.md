@@ -38,19 +38,6 @@ Other project credits:
 
 If you enjoy QuestRetroDepth and would like to support development, you can [buy me a coffee on Ko-fi](https://ko-fi.com/retrodepth). Support is completely optional; the project remains free and open source.
 
-## Emulator Support
-
-| System | Core | ROM formats | Status |
-|---|---|---|---|
-| SNES | Snes9x | `.smc` `.sfc` `.fig` `.swc` | Working |
-| Genesis / Mega Drive | PicoDrive | `.md` `.gen` `.smd` `.bin` | Working |
-| SMS / Game Gear | PicoDrive | `.sms` `.gg` | Working |
-| GBA / GB / GBC | mGBA | `.gba` `.gb` `.gbc` | Work in progress |
-| NES | FCEUmm | `.nes` `.unf` `.unif` | Work in progress |
-| PC Engine | Beetle PCE | `.pce` `.sgx` | Work in progress |
-
-Archives (`.zip`, `.7z`) are extracted automatically before loading.
-
 No games or ROMs are included in the APK.
 
 ## Build
