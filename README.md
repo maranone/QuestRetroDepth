@@ -2,10 +2,6 @@
 
 QuestRetroDepth (QRD) is an open-source Meta Quest VR emulator frontend that renders retro games in stereoscopic 3D. It places emulator layers at different depths instead of displaying one flat screen. ROMs are not included; users provide their own legally owned games.
 
-This project is based on RetroDepth: https://github.com/maranone/RetroDepth
-
-Source code: https://github.com/maranone/QuestRetroDepth
-
 ## Credits and Acknowledgements
 
 QuestRetroDepth is based on and adapted from the [RetroDepth project](https://github.com/maranone/RetroDepth).
@@ -261,28 +257,5 @@ Main scripts used for the rumble pipeline:
 
 The Gradle build runs `packageRumbleAssets` before `preBuild`, so the APK assets are regenerated from the current rumble data when you build.
 
-### Notes
-
-- `libretro_database` contributes a lot of coverage, but many entries are heuristic and should be treated as `needs_review`.
-- Some titles use odd, truncated, reordered, or regional names. The importer normalizes names and applies a small alias table to avoid duplicate profiles.
-- Manual profiles are stored in `rumble/manual_profiles` when a game needs a specific hand-authored mapping.
-
-## Third-Party Code And Licenses
-
-This project includes third-party emulator code. Keep their license files with the source.
-
-- Snes9x: https://github.com/snes9xgit/snes9x
-- Snes9x license in this repo: `third_party/snes9x/LICENSE`
-- PicoDrive current fork mentioned by upstream: https://github.com/irixxxx/picodrive
-- PicoDrive original repo: https://github.com/notaz/picodrive
-- PicoDrive license in this repo: `third_party/picodrive/COPYING`
-- mGBA: https://github.com/mgba-emu/mgba
-- mGBA license in this repo: `third_party/mgba/LICENSE`
-- FCEUmm: https://github.com/libretro/libretro-fceumm
-- FCEUmm license in this repo: `third_party/fceumm/Copying`
-- Beetle PCE: https://github.com/libretro/beetle-pce-libretro
-- Beetle PCE license in this repo: `third_party/beetle-pce/COPYING`
-
-Some bundled emulator subfolders have their own extra license files too, for example `libchdr`, `zstd`, `lzma`, and `zlib` pieces under PicoDrive and some Snes9x helper code. Check the license files in `third_party/` before redistributing builds.
 
 The app is not for bundling commercial ROMs or selling emulator cores. Bring your own legally obtained games.
